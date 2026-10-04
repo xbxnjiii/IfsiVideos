@@ -2,6 +2,8 @@ import React from 'react';
 import {Composition} from 'remotion';
 import {PriseDeSang, PriseDeSangProps} from './videos/prise-de-sang/PriseDeSang';
 import {FPS, TOTAL} from './videos/prise-de-sang/timeline';
+import {Constantes, ConstantesProps} from './videos/constantes/Constantes';
+import {FPS as FPS_CONST, TOTAL as TOTAL_CONST} from './videos/constantes/cues';
 import './theme';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
@@ -18,6 +20,15 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{sfx: true} satisfies PriseDeSangProps}
+		/>
+		<Composition
+			id="Constantes"
+			component={Constantes}
+			durationInFrames={TOTAL_CONST}
+			fps={FPS_CONST}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, music: true, sfx: true, captions: true} satisfies ConstantesProps}
 		/>
 	</>
 );

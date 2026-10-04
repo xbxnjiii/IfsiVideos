@@ -7,8 +7,15 @@
     "strict": true,
     "skipLibCheck": true,
     "noEmit": true,
-    "lib": ["DOM", "ES2020"],
-    "forceConsistentCasingInFileNames": true
+    "lib": [
+      "DOM",
+      "ES2020"
+    ],
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true
   },
-  "include": ["src", "remotion.config.ts"]
+  "include": [
+    "src",
+    "remotion.config.ts"
+  ]
 }

@@ -5,10 +5,12 @@
   "description": "Mini-vidéos motion design (TikTok / Reels / Shorts) pour les cours IFSI, générées en code avec Remotion",
   "scripts": {
     "studio": "remotion studio",
+    "typecheck": "tsc --noEmit",
     "sfx": "python3 scripts/make-sfx.py",
     "render:prise-de-sang": "remotion render PriseDeSang out/01-prise-de-sang-tips.mp4",
     "cover:prise-de-sang": "remotion still PriseDeSang out/01-prise-de-sang-cover.png --frame=120",
-    "typecheck": "tsc --noEmit"
+    "render:constantes": "remotion render Constantes out/02-constantes.mp4",
+    "cover:constantes": "remotion still Constantes out/02-constantes-cover.png --frame=118"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.532",
