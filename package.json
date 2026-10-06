@@ -10,7 +10,9 @@
     "render:prise-de-sang": "remotion render PriseDeSang out/01-prise-de-sang-tips.mp4",
     "cover:prise-de-sang": "remotion still PriseDeSang out/01-prise-de-sang-cover.png --frame=120",
     "render:constantes": "remotion render Constantes out/02-constantes.mp4",
-    "cover:constantes": "remotion still Constantes out/02-constantes-cover.png --frame=118"
+    "cover:constantes": "remotion still Constantes out/02-constantes-cover.png --frame=118",
+    "render:lpi-constantes": "remotion render LPI-Constantes out/03-lpi-constantes.mp4",
+    "cover:lpi-constantes": "remotion still LPI-Constantes out/03-lpi-constantes-cover.png --frame=150"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.532",
@@ -22,8 +24,10 @@
     "remotion": "^4.0.532"
   },
   "devDependencies": {
+    "@fontsource/fredoka": "^5.3.0",
     "@fontsource/inter": "^5.3.0",
     "@fontsource/montserrat": "^5.3.0",
+    "@fontsource/nunito-sans": "^5.3.0",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "typescript": "^7.0.2"

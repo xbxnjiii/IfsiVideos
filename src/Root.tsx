@@ -4,6 +4,8 @@ import {PriseDeSang, PriseDeSangProps} from './videos/prise-de-sang/PriseDeSang'
 import {FPS, TOTAL} from './videos/prise-de-sang/timeline';
 import {Constantes, ConstantesProps} from './videos/constantes/Constantes';
 import {FPS as FPS_CONST, TOTAL as TOTAL_CONST} from './videos/constantes/cues';
+import {LpiConstantes, LpiConstantesProps} from './videos/lpi-constantes/LpiConstantes';
+import {TL as LPI_TL} from './videos/lpi-constantes/timeline';
 import './theme';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
@@ -29,6 +31,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, music: true, sfx: true, captions: true} satisfies ConstantesProps}
+		/>
+		{/* La Petite IDE — nouvelle direction artistique (référence pour la série) */}
+		<Composition
+			id="LPI-Constantes"
+			component={LpiConstantes}
+			durationInFrames={LPI_TL.total}
+			fps={LPI_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, music: true, sfx: true, captions: true} satisfies LpiConstantesProps}
 		/>
 	</>
 );

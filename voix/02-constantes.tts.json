@@ -1,0 +1,9 @@
+[
+	{"id": "intro", "rate": "-5%", "text": "Tu es étudiant infirmier ? Voici les 5 constantes que tu dois absolument connaître."},
+	{"id": "temp", "text": "Première constante : la température. Elle permet notamment d'évaluer l'état thermique du patient, et de rechercher une éventuelle fièvre ou hypothermie."},
+	{"id": "fc", "text": "Deuxième constante : la fréquence cardiaque. Elle correspond au nombre de battements du cœur par minute."},
+	{"id": "fr", "text": "Troisième constante : la fréquence respiratoire. Elle correspond au nombre de respirations effectuées par minute."},
+	{"id": "pa", "text": "Quatrième constante : la pression artérielle. Elle mesure la pression exercée par le sang sur la paroi des artères."},
+	{"id": "spo2", "text": "Et enfin, la saturation en oxygène, ou {SpO2.|S P O 2.} Elle indique le pourcentage d'hémoglobine qui transporte de l'oxygène dans le sang."},
+	{"id": "outro", "text": "Alors, retiens bien : température, fréquence cardiaque, fréquence respiratoire, pression artérielle, et {SpO2.|S P O 2.}"}
+]

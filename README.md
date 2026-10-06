@@ -10,6 +10,11 @@ pas de logiciel de montage, pas de banque d'images.
 |---|-------|-------------|-------------|
 | 01 | 8 tips pour les prises de sang | `PriseDeSang` | [voix/01-prise-de-sang.md](voix/01-prise-de-sang.md) |
 | 02 | Les 5 constantes à connaître (avec voix off) | `Constantes` | [voix/02-constantes.md](voix/02-constantes.md) |
+| 03 | **La Petite IDE** — Les 5 constantes (nouvelle identité, voix maquette) | `LPI-Constantes` | [voix/02-constantes.tts.json](voix/02-constantes.tts.json) · [storyboard](docs/lpi/storyboard-constantes.md) |
+
+> **La Petite IDE** : la charte vidéo de la marque (couleurs, typo, mascotte, animations,
+> transitions) est décrite dans [docs/lpi/charte-video.md](docs/lpi/charte-video.md) et codée dans
+> `src/brand/`. C'est la référence pour toutes les prochaines vidéos.
 
 ## Utilisation
 
@@ -19,6 +24,7 @@ npm run studio                 # aperçu interactif dans le navigateur
 npm run render:prise-de-sang   # -> out/01-prise-de-sang-tips.mp4
 npm run cover:prise-de-sang    # -> out/01-prise-de-sang-cover.png (miniature)
 npm run render:constantes      # -> out/02-constantes.mp4
+npm run render:lpi-constantes  # -> out/03-lpi-constantes.mp4 (La Petite IDE)
 npm run cover:constantes       # -> out/02-constantes-cover.png
 npm run sfx                    # regénère les bruitages (public/sfx)
 ```
@@ -28,7 +34,9 @@ npm run sfx                    # regénère les bruitages (public/sfx)
 ```
 src/
   theme.ts                    couleurs, polices, zones de sécurité TikTok
-  components/                 briques réutilisables pour toute la série
+  brand/                      LA PETITE IDE : thème, cartes, titres, mascotte officielle,
+                              pictogrammes, transition en cercle, sous-titres, timeline voix
+  components/                 briques réutilisables (premières vidéos)
     motion.tsx                Words (typo cinétique), Pop, Chip, Card, Stamp, Camera, useShake
     Background.tsx            fond animé + grain
     TipHeader.tsx             en-tête « TIP 03 »
@@ -43,10 +51,12 @@ src/
     cues.ts                   synchro voix ↔ animations (mot → frame)
     voice.json                mots horodatés (généré)
 public/
+  brand/                      mascotte (expressions, poses) et logos officiels, détourés
   voix/, music/               voix off montée et musique de fond
   fonts/                      Montserrat + Inter (embarquées, rendu hors-ligne)
   sfx/                        bruitages générés par scripts/make-sfx.py
-scripts/voice/                pipeline voix off (blancs, nettoyage, transcription)
+scripts/voice/                voix off : prepare_voice.py (vraie voix : blancs, nettoyage,
+                              transcription) · tts_maquette.py (voix maquette synthétique)
 voix/                         scripts de voix off, scène par scène
 ```
 
