@@ -102,12 +102,33 @@ def main():
             prev = next((times[k][1] for k in range(i - 1, -1, -1) if times[k]), 0.0)
             nxt = next((times[k][0] for k in range(i + 1, len(times)) if times[k]), prev + 0.3)
             times[i] = (prev, max(prev + 0.05, nxt))
-    words = [{"text": t, "start": round(s, 3), "end": round(e, 3)} for t, (s, e) in zip(script, times)]
+    words = [{"text": t, "start": s, "end": e} for t, (s, e) in zip(script, times)]
+    # recalage sur l'énergie des débuts de partie : Whisper date mal le 1er mot après une pause.
+    # On prend la pause la plus longue juste avant (ou autour) du mot, et le mot démarre à sa fin.
+    res = subprocess.run(
+        ["ffmpeg", "-hide_banner", "-i", final, "-af", "silencedetect=noise=-38dB:d=0.25", "-f", "null", "-"],
+        capture_output=True,
+        text=True,
+    ).stderr
+    st = [float(l.split("silence_start: ")[1].split()[0]) for l in res.splitlines() if "silence_start" in l]
+    en = [float(l.split("silence_end: ")[1].split()[0]) for l in res.splitlines() if "silence_end" in l]
+    pauses = list(zip(st, en))
+    for k in range(1, len(parts)):
+        i0 = owner.index(k)
+        w0 = words[i0]["start"]
+        cands = [(b - a, a, b) for a, b in pauses if w0 - 1.2 <= b <= w0 + 0.3]
+        if not cands:
+            continue
+        _, a, b = max(cands)
+        words[i0]["start"] = b
+        words[i0]["end"] = max(words[i0]["end"], b + 0.1)
+        words[i0 - 1]["end"] = min(words[i0 - 1]["end"], a)
+    for w in words:
+        w["start"], w["end"] = round(w["start"], 3), round(w["end"], 3)
     sections = []
     for k, p in enumerate(parts):
         idx = [i for i, o in enumerate(owner) if o == k]
         sections.append({"id": p["id"], "start": words[idx[0]]["start"], "end": words[idx[-1]]["end"]})
-    matched = sum(1 for x, y in zip(a, a) if x)  # noqa
     dst = os.path.join(ROOT, "src", "videos", args.episode, "voice.json")
     os.makedirs(os.path.dirname(dst), exist_ok=True)
     data = {"voice": os.path.basename(args.audio), "duration": round(sf.info(final).duration, 3), "sections": sections, "words": words}

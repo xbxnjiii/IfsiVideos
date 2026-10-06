@@ -12,7 +12,9 @@
     "render:constantes": "remotion render Constantes out/02-constantes.mp4",
     "cover:constantes": "remotion still Constantes out/02-constantes-cover.png --frame=118",
     "render:lpi-constantes": "remotion render LPI-Constantes out/04-lpi-constantes-v2.mp4",
-    "cover:lpi-constantes": "remotion still LPI-Constantes out/04-lpi-constantes-v2-cover.png --frame=199"
+    "cover:lpi-constantes": "remotion still LPI-Constantes out/04-lpi-constantes-v2-cover.png --frame=199",
+    "render:lpi-constantes-v3": "remotion render LPI-Constantes-V3 out/05-lpi-constantes-v3.mp4",
+    "cover:lpi-constantes-v3": "remotion still LPI-Constantes-V3 out/05-lpi-constantes-v3-cover.png --frame=200"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.532",

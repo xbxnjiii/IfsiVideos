@@ -11,6 +11,7 @@ pas de logiciel de montage, pas de banque d'images.
 | 01 | 8 tips pour les prises de sang | `PriseDeSang` | [voix/01-prise-de-sang.md](voix/01-prise-de-sang.md) |
 | 02 | Les 5 constantes à connaître (avec voix off) | `Constantes` | [voix/02-constantes.md](voix/02-constantes.md) |
 | 03 | **La Petite IDE** — Les 5 constantes + 16 termes techniques (test v2, voix maquette) | `LPI-Constantes` | [voix/02-constantes-v2.tts.json](voix/02-constantes-v2.tts.json) · [storyboard](docs/lpi/storyboard-constantes.md) |
+| 04 | **La Petite IDE** — Les 5 constantes, test v3 : voix IA, motion « moderne », mascotte planche v2 | `LPI-Constantes-V3` | [voix/02-constantes-v3.script.json](voix/02-constantes-v3.script.json) · [storyboard](docs/lpi/storyboard-constantes-v3.md) |
 
 > **La Petite IDE** : la charte vidéo de la marque (couleurs, typo, mascotte, animations,
 > transitions) est décrite dans [docs/lpi/charte-video.md](docs/lpi/charte-video.md) et codée dans
@@ -25,6 +26,7 @@ npm run render:prise-de-sang   # -> out/01-prise-de-sang-tips.mp4
 npm run cover:prise-de-sang    # -> out/01-prise-de-sang-cover.png (miniature)
 npm run render:constantes      # -> out/02-constantes.mp4
 npm run render:lpi-constantes  # -> out/04-lpi-constantes-v2.mp4 (La Petite IDE)
+npm run render:lpi-constantes-v3  # -> out/05-lpi-constantes-v3.mp4 (voix IA, motion v3)
 npm run cover:constantes       # -> out/02-constantes-cover.png
 npm run sfx                    # regénère les bruitages (public/sfx)
 ```
@@ -36,6 +38,8 @@ src/
   theme.ts                    couleurs, polices, zones de sécurité TikTok
   brand/                      LA PETITE IDE : thème, cartes, titres, mascotte officielle,
                               pictogrammes, transition en cercle, sous-titres, timeline voix
+    Mascot2.tsx, motion3.tsx, Lesson3.tsx   v3 : mascotte planche v2 (pop-out), termes qui
+                              claquent, caméra, compteurs, vague de transition, gabarit de notion
   components/                 briques réutilisables (premières vidéos)
     motion.tsx                Words (typo cinétique), Pop, Chip, Card, Stamp, Camera, useShake
     Background.tsx            fond animé + grain
@@ -52,15 +56,24 @@ src/
     voice.json                mots horodatés (généré)
 public/
   brand/                      mascotte (expressions, poses) et logos officiels, détourés
+    mascotte-v2/              planches v2 détourées (+ manifest.json des tailles)
+assets/planches/              planches originales fournies (sources de la découpe)
   voix/, music/               voix off montée et musique de fond
   fonts/                      Montserrat + Inter (embarquées, rendu hors-ligne)
   sfx/                        bruitages générés par scripts/make-sfx.py
 scripts/voice/                voix off : prepare_voice.py (vraie voix : blancs, nettoyage,
                               transcription) · tts_maquette.py (voix maquette synthétique)
+                              · align_voice.py (voix IA déjà propre : alignement mot à mot)
+scripts/brand/                découpe des planches : agrandissement, détourage, export webp
 voix/                         scripts de voix off, scène par scène
 ```
 
 ## Ajouter la voix off
+
+**Voix IA déjà propre (ElevenLabs…)** : une seule commande, le script fait foi pour l'orthographe.
+```bash
+python3 scripts/voice/align_voice.py VOIX.mp3 voix/<script>.json <episode>
+```
 
 Les scripts Python demandent `ffmpeg` et `pip install faster-whisper soundfile numpy`.
 

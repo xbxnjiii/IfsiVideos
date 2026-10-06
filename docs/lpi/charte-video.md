@@ -54,6 +54,29 @@ retournées en miroir, car le badge « IDE » serait inversé).
 - Elle réagit à la narration : `poses={[[at('temp','elle'), 'reflechit'], [at('temp','fièvre'), 'surprise']]}`.
 - Liseré blanc cassé « sticker » + ombre douce, flottement très léger.
 
+### Mascotte v2 (`src/brand/Mascot2.tsx`, fichiers `public/brand/mascotte-v2/`)
+
+Planches fournies en v3 : `assets/planches/v2-*.webp` (originaux), découpe reproductible avec
+`scripts/brand/export_all.py` (crops dans `scripts/brand/planche-v2-*.crops.json`). Index visuel
+de tous les fichiers : `docs/lpi/mascotte-v2-index.webp`.
+
+| Dossier | Clés |
+|---------|------|
+| `maitre/` (en pied, 6 vues) | face, trois-quarts-gauche, profil-gauche, dos, profil-droit, trois-quarts-droit |
+| `expressions/` (bustes) | neutre, sourire-leger, grand-sourire, joyeuse, surprise, questionnement, reflechit, triste, decue, stressee, en-colere, fatiguee, eureka, clin-doeil |
+| `gestes/` | bonjour, au-revoir, regardez, attention, astuce, important, erreur, bonne-reponse, ok, facile, probleme, bravo, chut, facepalm |
+| `situations/` | explique, montre-schema, lit-document, prend-notes, cherche-info, idee, corrige-erreur, valide, encourage, a-retenir, pose-question, donne-conseil, recapitule, felicite |
+| `poses/` (en pied) | debout, marche, course, assise, accroupie, bras-croises, main-levee, bras-ouverts |
+| `accessoires/` | stethoscope, seringue, tensiometre, tablette, ordinateur, fiches, clipboard, telephone, livres, schema-ecg, stethoscope-seul, baskets |
+| `elements/` | coeur-rose, coeur-bleu, etincelle, bulle, question, exclamation, sticker-lpi |
+
+- Bustes : toujours avec `bubble` (la mascotte **surgit d'une pastille** bleu clair, le bord plat
+  du buste reste caché). À chaque geste, l'ancienne pose replonge et la nouvelle ressort.
+  `<Mascot2 poses={[[at('fc','nombre'), 'accessoires/stethoscope'], [at('fc','tachycardie'), 'expressions/surprise']]} x={862} y={1340} height={420} bubble={150} />`
+- Poses en pied : sans `bubble`, ancrées par les pieds.
+- Un geste qui illustre le mot : *tensiomètre* pour la pression, *en colère* pour « trop haute »,
+  *fatiguée* pour « trop lent », *pose une question* pour l'appel au commentaire.
+
 ## Animation (`src/brand/ui.tsx`, `src/brand/motion.tsx`)
 
 - Apparition : fondu + glissement 20–40 px + scale 0,97 → 1 (`<Enter>`), ressort amorti.
@@ -66,6 +89,24 @@ retournées en miroir, car le badge « IDE » serait inversé).
 
 Cercle qui dévoile la scène suivante, bordé d'un anneau bleu clair, en 0,4 s, à partir de
 l'élément dont on va parler (ex. le picto T° de l'intro vers la scène Température).
+En v3 : **vague de marque** (`wave()` dans `src/brand/motion3.tsx`) — flash bleu puis bleu clair
+puis dévoilement, 14 frames, depuis l'endroit où l'action de la scène suivante démarre.
+
+## Motion v3 « moderne » (`src/brand/motion3.tsx`, `src/brand/Lesson3.tsx`)
+
+Validé pour la v3 de test (plus animé, plus visuel) — toujours dans la palette, sans effet lumineux :
+
+| Brique | Rôle |
+|--------|------|
+| `Lesson3` | gabarit complet d'une notion : numéro, titre 2 lignes, définition, socle, termes, mascotte, caméra |
+| `ChapterSlam` | gros numéro qui s'écrase au centre (éclats) puis file dans le coin du titre |
+| `TermSlam` | le terme « claque » en grand au centre (lettre par lettre), sa définition glisse, puis la carte file à sa place dans la fiche |
+| `Camera` | dérive très lente + petit coup de zoom (≈ 5 %) sur chaque mot clé |
+| `Stage` | socle bleu clair qui ondule ; `layers` = remplissage rose / bleu clair qui monte comme un liquide (jamais de mélange de teintes) |
+| `Odometer` | chiffres qui roulent (format français, virgule) |
+| `StatePill` | pastille d'état avec les mots du script (« trop rapide », « pas de fièvre »…) |
+| `Burst`, `Confetti`, `TapRipple` | éclats, confettis (1 fois, au récap), « tap » sur le bouton Enregistrer |
+| `LiveBackground` | blanc cassé + grille de points qui défile + 4 éléments de la planche en bordure |
 
 ## Gabarit « fiche » (`src/brand/LessonLayout.tsx`, `src/brand/learn.tsx`)
 
@@ -97,5 +138,6 @@ oublier… ») + un aperçu de ce qu'on va apprendre (ex. « + 16 termes techniq
 1. Écrire le script validé dans `voix/<n>-<sujet>.tts.json` (une entrée par scène) : accroche,
    puis pour chaque notion une définition courte et ses termes techniques, puis récap + appel.
 2. `python3 scripts/voice/tts_maquette.py voix/<…>.tts.json <episode>` → voix + `voice.json`.
-3. Copier `src/videos/lpi-constantes/` comme modèle, une scène = un composant, animations via `at(scène, mot)`.
+3. Copier `src/videos/lpi-constantes-v3/` comme modèle (gabarit `Lesson3`), une scène = un composant,
+   animations via `at(scène, mot)`. Voix IA déjà propre : `scripts/voice/align_voice.py`.
 4. `npx remotion render <Composition> out/<fichier>.mp4`.

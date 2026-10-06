@@ -5,36 +5,36 @@
   {
    "id": "intro",
    "start": 0.0,
-   "end": 7.38
+   "end": 6.952
   },
   {
    "id": "temp",
-   "start": 7.42,
-   "end": 18.88
+   "start": 7.408,
+   "end": 18.817
   },
   {
    "id": "fc",
-   "start": 19.44,
+   "start": 19.27,
    "end": 30.0
   },
   {
    "id": "fr",
-   "start": 30.76,
-   "end": 42.56
+   "start": 30.623,
+   "end": 42.313
   },
   {
    "id": "pa",
-   "start": 42.78,
-   "end": 58.38
+   "start": 42.8,
+   "end": 58.312
   },
   {
    "id": "spo2",
-   "start": 58.82,
-   "end": 72.84
+   "start": 58.725,
+   "end": 72.806
   },
   {
    "id": "outro",
-   "start": 74.14,
+   "start": 73.2,
    "end": 84.4
   }
  ],
@@ -147,11 +147,11 @@
   {
    "text": "connaître !",
    "start": 6.5,
-   "end": 7.38
+   "end": 6.952
   },
   {
    "text": "Un :",
-   "start": 7.42,
+   "start": 7.408,
    "end": 7.66
   },
   {
@@ -307,11 +307,11 @@
   {
    "text": "hypothermie.",
    "start": 18.22,
-   "end": 18.88
+   "end": 18.817
   },
   {
    "text": "Deux :",
-   "start": 19.44,
+   "start": 19.27,
    "end": 19.88
   },
   {
@@ -451,7 +451,7 @@
   },
   {
    "text": "Trois :",
-   "start": 30.76,
+   "start": 30.623,
    "end": 31.22
   },
   {
@@ -592,11 +592,11 @@
   {
    "text": "dyspnée.",
    "start": 41.9,
-   "end": 42.56
+   "end": 42.313
   },
   {
    "text": "Quatre :",
-   "start": 42.78,
+   "start": 42.8,
    "end": 43.26
   },
   {
@@ -782,11 +782,11 @@
   {
    "text": "l'hypotension.",
    "start": 57.62,
-   "end": 58.38
+   "end": 58.312
   },
   {
    "text": "Et",
-   "start": 58.82,
+   "start": 58.725,
    "end": 58.9
   },
   {
@@ -972,11 +972,11 @@
   {
    "text": "hypoxémie.",
    "start": 72.26,
-   "end": 72.84
+   "end": 72.806
   },
   {
    "text": "Récapitulons.",
-   "start": 74.14,
+   "start": 73.2,
    "end": 74.7
   },
   {
