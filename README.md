@@ -12,6 +12,7 @@ pas de logiciel de montage, pas de banque d'images.
 | 02 | Les 5 constantes à connaître (avec voix off) | `Constantes` | [voix/02-constantes.md](voix/02-constantes.md) |
 | 03 | **La Petite IDE** — Les 5 constantes + 16 termes techniques (test v2, voix maquette) | `LPI-Constantes` | [voix/02-constantes-v2.tts.json](voix/02-constantes-v2.tts.json) · [storyboard](docs/lpi/storyboard-constantes.md) |
 | 04 | **La Petite IDE** — Les 5 constantes, test v3 : voix IA, motion « moderne », mascotte planche v2 | `LPI-Constantes-V3` | [voix/02-constantes-v3.script.json](voix/02-constantes-v3.script.json) · [storyboard](docs/lpi/storyboard-constantes-v3.md) |
+| labo | Accroche + Température refaites avec **HyperFrames** (HTML + GSAP, transition shader) pour comparer | — | [labs/hyperframes-accroche](labs/hyperframes-accroche/README.md) |
 
 > **La Petite IDE** : la charte vidéo de la marque (couleurs, typo, mascotte, animations,
 > transitions) est décrite dans [docs/lpi/charte-video.md](docs/lpi/charte-video.md) et codée dans
