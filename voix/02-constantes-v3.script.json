@@ -1,0 +1,30 @@
+[
+	{
+		"id": "intro",
+		"text": "Les 5 constantes à ne surtout pas oublier quand tu es étudiant infirmier. Avec les mots techniques que tu dois absolument connaître !"
+	},
+	{
+		"id": "temp",
+		"text": "Un : la température. Elle évalue l'état thermique du patient. S'il a de la fièvre, il est fébrile. S'il n'en a pas, il est apyrétique. Et une température trop basse, c'est une hypothermie."
+	},
+	{
+		"id": "fc",
+		"text": "Deux : la fréquence cardiaque, le nombre de battements du cœur par minute. Trop rapide, c'est une tachycardie. Trop lente, une bradycardie. Et un rythme irrégulier, c'est une arythmie."
+	},
+	{
+		"id": "fr",
+		"text": "Trois : la fréquence respiratoire, le nombre de respirations par minute. Trop rapide : tachypnée. Trop lente : bradypnée. Et quand le patient a du mal à respirer, on parle de dyspnée."
+	},
+	{
+		"id": "pa",
+		"text": "Quatre : la pression artérielle, la pression du sang sur la paroi des artères. Le premier chiffre, c'est la systolique : le cœur se contracte. Le deuxième, la diastolique : le cœur se relâche. Trop haute, c'est l'hypertension. Trop basse, l'hypotension."
+	},
+	{
+		"id": "spo2",
+		"text": "Et cinq : la saturation en oxygène, ou {SpO2,|S P O 2,} mesurée avec un oxymètre de pouls. C'est le pourcentage d'hémoglobine qui transporte de l'oxygène. Quand elle chute, c'est une désaturation. Et un manque d'oxygène dans le sang, c'est une hypoxémie."
+	},
+	{
+		"id": "outro",
+		"text": "Récapitulons. température, fréquence cardiaque, fréquence respiratoire, pression artérielle et {SpO2.|S P O 2.} Enregistre la vidéo pour tes révisions, et dis-moi en commentaire le mot que tu ne connaissais pas !"
+	}
+]

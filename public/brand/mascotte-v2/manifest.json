@@ -1,0 +1,334 @@
+{
+ "maitre/dos": {
+  "w": 320,
+  "h": 900
+ },
+ "maitre/face": {
+  "w": 327,
+  "h": 900
+ },
+ "maitre/profil-droit": {
+  "w": 343,
+  "h": 900
+ },
+ "maitre/profil-gauche": {
+  "w": 346,
+  "h": 900
+ },
+ "maitre/trois-quarts-droit": {
+  "w": 320,
+  "h": 900
+ },
+ "maitre/trois-quarts-gauche": {
+  "w": 328,
+  "h": 900
+ },
+ "expressions/clin-doeil": {
+  "w": 472,
+  "h": 570
+ },
+ "expressions/decue": {
+  "w": 391,
+  "h": 548
+ },
+ "expressions/en-colere": {
+  "w": 426,
+  "h": 569
+ },
+ "expressions/eureka": {
+  "w": 418,
+  "h": 564
+ },
+ "expressions/fatiguee": {
+  "w": 421,
+  "h": 537
+ },
+ "expressions/grand-sourire": {
+  "w": 408,
+  "h": 487
+ },
+ "expressions/joyeuse": {
+  "w": 423,
+  "h": 506
+ },
+ "expressions/neutre": {
+  "w": 387,
+  "h": 493
+ },
+ "expressions/questionnement": {
+  "w": 449,
+  "h": 516
+ },
+ "expressions/reflechit": {
+  "w": 406,
+  "h": 516
+ },
+ "expressions/sourire-leger": {
+  "w": 396,
+  "h": 516
+ },
+ "expressions/stressee": {
+  "w": 416,
+  "h": 551
+ },
+ "expressions/surprise": {
+  "w": 398,
+  "h": 516
+ },
+ "expressions/triste": {
+  "w": 384,
+  "h": 546
+ },
+ "gestes/astuce": {
+  "w": 363,
+  "h": 380
+ },
+ "gestes/attention": {
+  "w": 379,
+  "h": 380
+ },
+ "gestes/au-revoir": {
+  "w": 342,
+  "h": 369
+ },
+ "gestes/bonjour": {
+  "w": 371,
+  "h": 380
+ },
+ "gestes/bonne-reponse": {
+  "w": 408,
+  "h": 452
+ },
+ "gestes/bravo": {
+  "w": 440,
+  "h": 436
+ },
+ "gestes/chut": {
+  "w": 339,
+  "h": 441
+ },
+ "gestes/erreur": {
+  "w": 344,
+  "h": 380
+ },
+ "gestes/facepalm": {
+  "w": 341,
+  "h": 452
+ },
+ "gestes/facile": {
+  "w": 360,
+  "h": 452
+ },
+ "gestes/important": {
+  "w": 379,
+  "h": 380
+ },
+ "gestes/ok": {
+  "w": 320,
+  "h": 435
+ },
+ "gestes/probleme": {
+  "w": 432,
+  "h": 451
+ },
+ "gestes/regardez": {
+  "w": 337,
+  "h": 380
+ },
+ "situations/a-retenir": {
+  "w": 397,
+  "h": 523
+ },
+ "situations/cherche-info": {
+  "w": 460,
+  "h": 480
+ },
+ "situations/corrige-erreur": {
+  "w": 361,
+  "h": 487
+ },
+ "situations/donne-conseil": {
+  "w": 353,
+  "h": 514
+ },
+ "situations/encourage": {
+  "w": 384,
+  "h": 519
+ },
+ "situations/explique": {
+  "w": 456,
+  "h": 495
+ },
+ "situations/felicite": {
+  "w": 343,
+  "h": 521
+ },
+ "situations/idee": {
+  "w": 376,
+  "h": 479
+ },
+ "situations/lit-document": {
+  "w": 395,
+  "h": 503
+ },
+ "situations/montre-schema": {
+  "w": 423,
+  "h": 531
+ },
+ "situations/pose-question": {
+  "w": 419,
+  "h": 518
+ },
+ "situations/prend-notes": {
+  "w": 431,
+  "h": 495
+ },
+ "situations/recapitule": {
+  "w": 450,
+  "h": 508
+ },
+ "situations/valide": {
+  "w": 423,
+  "h": 513
+ },
+ "poses/accroupie": {
+  "w": 355,
+  "h": 741
+ },
+ "poses/assise": {
+  "w": 485,
+  "h": 781
+ },
+ "poses/bras-croises": {
+  "w": 353,
+  "h": 821
+ },
+ "poses/bras-ouverts": {
+  "w": 606,
+  "h": 809
+ },
+ "poses/course": {
+  "w": 518,
+  "h": 813
+ },
+ "poses/debout": {
+  "w": 348,
+  "h": 839
+ },
+ "poses/main-levee": {
+  "w": 374,
+  "h": 863
+ },
+ "poses/marche": {
+  "w": 408,
+  "h": 819
+ },
+ "accessoires/baskets": {
+  "w": 760,
+  "h": 504
+ },
+ "accessoires/clipboard": {
+  "w": 340,
+  "h": 510
+ },
+ "accessoires/fiches": {
+  "w": 380,
+  "h": 512
+ },
+ "accessoires/livres": {
+  "w": 349,
+  "h": 498
+ },
+ "accessoires/ordinateur": {
+  "w": 362,
+  "h": 468
+ },
+ "accessoires/schema-ecg": {
+  "w": 341,
+  "h": 493
+ },
+ "accessoires/seringue": {
+  "w": 344,
+  "h": 504
+ },
+ "accessoires/stethoscope-seul": {
+  "w": 704,
+  "h": 510
+ },
+ "accessoires/stethoscope": {
+  "w": 334,
+  "h": 491
+ },
+ "accessoires/tablette": {
+  "w": 358,
+  "h": 496
+ },
+ "accessoires/telephone": {
+  "w": 334,
+  "h": 496
+ },
+ "accessoires/tensiometre": {
+  "w": 380,
+  "h": 478
+ },
+ "elements/bulle": {
+  "w": 126,
+  "h": 146
+ },
+ "elements/coeur-bleu": {
+  "w": 130,
+  "h": 134
+ },
+ "elements/coeur-rose": {
+  "w": 144,
+  "h": 146
+ },
+ "elements/etincelle": {
+  "w": 107,
+  "h": 141
+ },
+ "elements/exclamation": {
+  "w": 65,
+  "h": 142
+ },
+ "elements/question": {
+  "w": 90,
+  "h": 139
+ },
+ "elements/sticker-lpi": {
+  "w": 318,
+  "h": 211
+ },
+ "details/badge-maitre": {
+  "w": 844,
+  "h": 400
+ },
+ "details/badge": {
+  "w": 348,
+  "h": 308
+ },
+ "details/chignon-maitre": {
+  "w": 720,
+  "h": 480
+ },
+ "details/chignon": {
+  "w": 384,
+  "h": 308
+ },
+ "details/oeil": {
+  "w": 296,
+  "h": 308
+ },
+ "details/yeux": {
+  "w": 860,
+  "h": 476
+ },
+ "logo/tagline": {
+  "w": 831,
+  "h": 558
+ },
+ "logo/wordmark": {
+  "w": 1600,
+  "h": 205
+ }
+}

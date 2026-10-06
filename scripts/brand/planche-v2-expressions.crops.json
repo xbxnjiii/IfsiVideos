@@ -1,0 +1,427 @@
+{
+ "expressions/neutre": [
+  765,
+  38,
+  863,
+  167
+ ],
+ "expressions/sourire-leger": [
+  863,
+  38,
+  963,
+  167
+ ],
+ "expressions/grand-sourire": [
+  963,
+  38,
+  1066,
+  167
+ ],
+ "expressions/joyeuse": [
+  1066,
+  38,
+  1175,
+  167
+ ],
+ "expressions/surprise": [
+  1175,
+  38,
+  1293,
+  167
+ ],
+ "expressions/questionnement": [
+  1293,
+  38,
+  1409,
+  167
+ ],
+ "expressions/reflechit": [
+  1409,
+  38,
+  1530,
+  167
+ ],
+ "expressions/triste": [
+  765,
+  186,
+  863,
+  333
+ ],
+ "expressions/decue": [
+  863,
+  186,
+  963,
+  333
+ ],
+ "expressions/stressee": [
+  963,
+  186,
+  1068,
+  333
+ ],
+ "expressions/en-colere": [
+  1068,
+  186,
+  1175,
+  333
+ ],
+ "expressions/fatiguee": [
+  1175,
+  186,
+  1293,
+  333
+ ],
+ "expressions/eureka": [
+  1293,
+  186,
+  1409,
+  333
+ ],
+ "expressions/clin-doeil": [
+  1409,
+  186,
+  1530,
+  333
+ ],
+ "poses/debout": [
+  18,
+  408,
+  112,
+  620
+ ],
+ "poses/marche": [
+  112,
+  408,
+  214,
+  620
+ ],
+ "poses/course": [
+  192,
+  408,
+  322,
+  620
+ ],
+ "poses/assise": [
+  288,
+  408,
+  410,
+  620
+ ],
+ "poses/accroupie": [
+  410,
+  408,
+  503,
+  620
+ ],
+ "poses/bras-croises": [
+  503,
+  408,
+  597,
+  620
+ ],
+ "poses/main-levee": [
+  597,
+  400,
+  695,
+  620
+ ],
+ "poses/bras-ouverts": [
+  685,
+  408,
+  838,
+  620
+ ],
+ "gestes/bonjour": [
+  848,
+  402,
+  943,
+  497
+ ],
+ "gestes/au-revoir": [
+  943,
+  402,
+  1036,
+  497
+ ],
+ "gestes/regardez": [
+  1036,
+  402,
+  1127,
+  497
+ ],
+ "gestes/attention": [
+  1127,
+  402,
+  1229,
+  497
+ ],
+ "gestes/astuce": [
+  1229,
+  402,
+  1323,
+  497
+ ],
+ "gestes/important": [
+  1323,
+  402,
+  1423,
+  497
+ ],
+ "gestes/erreur": [
+  1423,
+  402,
+  1525,
+  497
+ ],
+ "gestes/bonne-reponse": [
+  848,
+  513,
+  954,
+  626
+ ],
+ "gestes/ok": [
+  954,
+  513,
+  1034,
+  626
+ ],
+ "gestes/facile": [
+  1034,
+  513,
+  1124,
+  626
+ ],
+ "gestes/probleme": [
+  1124,
+  513,
+  1232,
+  626
+ ],
+ "gestes/bravo": [
+  1232,
+  513,
+  1342,
+  626
+ ],
+ "gestes/chut": [
+  1342,
+  513,
+  1430,
+  626
+ ],
+ "gestes/facepalm": [
+  1430,
+  513,
+  1525,
+  626
+ ],
+ "situations/explique": [
+  10,
+  702,
+  124,
+  829
+ ],
+ "situations/montre-schema": [
+  124,
+  702,
+  231,
+  836
+ ],
+ "situations/lit-document": [
+  231,
+  702,
+  338,
+  829
+ ],
+ "situations/prend-notes": [
+  338,
+  702,
+  446,
+  829
+ ],
+ "situations/cherche-info": [
+  446,
+  702,
+  561,
+  829
+ ],
+ "situations/idee": [
+  561,
+  702,
+  655,
+  829
+ ],
+ "situations/corrige-erreur": [
+  655,
+  702,
+  760,
+  829
+ ],
+ "situations/valide": [
+  10,
+  858,
+  124,
+  989
+ ],
+ "situations/encourage": [
+  124,
+  858,
+  222,
+  989
+ ],
+ "situations/a-retenir": [
+  222,
+  858,
+  326,
+  989
+ ],
+ "situations/pose-question": [
+  326,
+  858,
+  438,
+  989
+ ],
+ "situations/donne-conseil": [
+  438,
+  858,
+  536,
+  989
+ ],
+ "situations/recapitule": [
+  536,
+  858,
+  658,
+  989
+ ],
+ "situations/felicite": [
+  658,
+  858,
+  760,
+  989
+ ],
+ "accessoires/stethoscope": [
+  780,
+  720,
+  864,
+  846
+ ],
+ "accessoires/seringue": [
+  864,
+  720,
+  950,
+  846
+ ],
+ "accessoires/tensiometre": [
+  950,
+  720,
+  1045,
+  846
+ ],
+ "accessoires/tablette": [
+  1045,
+  720,
+  1137,
+  846
+ ],
+ "accessoires/ordinateur": [
+  1137,
+  720,
+  1232,
+  846
+ ],
+ "accessoires/fiches": [
+  780,
+  862,
+  875,
+  990
+ ],
+ "accessoires/clipboard": [
+  875,
+  862,
+  960,
+  990
+ ],
+ "accessoires/telephone": [
+  960,
+  862,
+  1046,
+  990
+ ],
+ "accessoires/livres": [
+  1046,
+  862,
+  1136,
+  990
+ ],
+ "accessoires/schema-ecg": [
+  1136,
+  862,
+  1232,
+  990
+ ],
+ "elements/coeur-rose": [
+  1250,
+  838,
+  1290,
+  880
+ ],
+ "elements/coeur-bleu": [
+  1292,
+  838,
+  1328,
+  880
+ ],
+ "elements/etincelle": [
+  1328,
+  838,
+  1356,
+  880
+ ],
+ "elements/bulle": [
+  1356,
+  838,
+  1392,
+  880
+ ],
+ "elements/question": [
+  1392,
+  838,
+  1418,
+  880
+ ],
+ "elements/exclamation": [
+  1418,
+  838,
+  1440,
+  880
+ ],
+ "elements/sticker-lpi": [
+  1442,
+  832,
+  1522,
+  885,
+  4,
+  12
+ ],
+ "details/oeil": [
+  1248,
+  903,
+  1322,
+  980,
+  "tile"
+ ],
+ "details/chignon": [
+  1332,
+  903,
+  1428,
+  980,
+  "tile"
+ ],
+ "details/badge": [
+  1435,
+  903,
+  1522,
+  980,
+  "tile"
+ ]
+}

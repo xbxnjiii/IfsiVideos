@@ -1,0 +1,88 @@
+{
+ "maitre/face": [
+  20,
+  218,
+  222,
+  772
+ ],
+ "maitre/trois-quarts-gauche": [
+  222,
+  218,
+  425,
+  772
+ ],
+ "maitre/profil-gauche": [
+  425,
+  218,
+  644,
+  772
+ ],
+ "maitre/dos": [
+  644,
+  218,
+  847,
+  772
+ ],
+ "maitre/profil-droit": [
+  847,
+  218,
+  1056,
+  772
+ ],
+ "maitre/trois-quarts-droit": [
+  1056,
+  218,
+  1262,
+  772
+ ],
+ "details/chignon-maitre": [
+  1318,
+  102,
+  1498,
+  222,
+  "tile"
+ ],
+ "details/yeux": [
+  1300,
+  283,
+  1515,
+  402,
+  "tile"
+ ],
+ "details/badge-maitre": [
+  1303,
+  458,
+  1514,
+  558,
+  "tile"
+ ],
+ "accessoires/stethoscope-seul": [
+  1300,
+  610,
+  1495,
+  741,
+  14,
+  46,
+  "holes"
+ ],
+ "accessoires/baskets": [
+  1305,
+  795,
+  1495,
+  928
+ ],
+ "logo/wordmark": [
+  388,
+  18,
+  1095,
+  108
+ ],
+ "logo/tagline": [
+  22,
+  28,
+  235,
+  168,
+  4,
+  12
+ ]
+}
