@@ -24,17 +24,17 @@ Ombres et voiles = ces mêmes couleurs en transparence.
 | Titre | Nunito Sans 900, bleu nuit, **mot clé en bleu + pinceau rose** | 92–100 px |
 | Sous-titre / info | Inter 600 | 36–40 px |
 | Chiffre clé | Nunito Sans 900 + unité en bleu | 128–150 px |
-| Marque (filigrane) | Fredoka 700 | 36 px |
-| Sous-titres | Inter 700, mot prononcé en bleu | 40 px |
+| Terme technique (carte) | Nunito Sans 900 + définition Inter 600 | 46 px / 29 px |
 
 ## Grille 1080 × 1920
 
 - Marges latérales 72 px · texte aligné à gauche.
-- y 150 : filigrane (logo icône + « La Petite IDE ») à gauche, progression à droite.
-- y 300 : sur-titre, puis titre (1 à 2 lignes).
-- y 560–1130 : carte principale (l'information).
-- y 1150–1390 : chiffre clé, pastilles, mascotte.
-- y 1408 : sous-titres. Rien d'important sous 1480 px ni contre le bord droit (interface TikTok/Reels).
+- y 170 : progression (une pastille par partie), centrée.
+- y 236 : numéro de partie + sur-titre, titre (1 ligne si possible), définition courte (1 ligne).
+- puis la carte d'illustration (≈ 330 px) qui réagit à chaque terme.
+- puis les cartes « termes techniques » (650 px de large) avec la mascotte à droite.
+- Rien d'important sous 1480 px ni contre le bord droit (interface TikTok/Reels).
+- Pas de filigrane, pas de sous-titres incrustés (choix validé en phase de test).
 
 ## Hiérarchie à l'écran
 
@@ -64,25 +64,38 @@ retournées en miroir, car le badge « IDE » serait inversé).
 
 ## Transitions
 
-Cercle qui dévoile la scène suivante, bordé d'un anneau bleu clair, en 0,6 s, à partir de
+Cercle qui dévoile la scène suivante, bordé d'un anneau bleu clair, en 0,4 s, à partir de
 l'élément dont on va parler (ex. le picto T° de l'intro vers la scène Température).
+
+## Gabarit « fiche » (`src/brand/LessonLayout.tsx`, `src/brand/learn.tsx`)
+
+Chaque notion = numéro + titre + définition + illustration + **termes techniques** :
+`<TermCard at={at('fc','tachycardie')} term="Tachycardie" meaning="le cœur bat trop vite" sign="up" />`.
+Le terme apparaît quand il est prononcé, s'allume tant qu'il est courant puis reste affiché
+(la fiche de révision se construit à l'écran). Signes : ↑ trop haut (rose), ↓ trop bas (bleu clair),
+✓, rythme irrégulier, alerte, contraction / relâchement, appareil, manque.
+
+## Accroche
+
+Chaque vidéo commence par une promesse claire en 1 phrase (« Les 5 constantes à ne surtout pas
+oublier… ») + un aperçu de ce qu'on va apprendre (ex. « + 16 termes techniques »).
 
 ## Marque
 
-- Filigrane permanent : logo icône + « La Petite IDE ».
-- Carte de fin : logo principal (≈ 3 s).
+- Carte de fin : logo principal (≈ 2,5 s). Pas de filigrane pendant la vidéo.
 
 ## Son
 
 - Voix : -15 LUFS. Voix maquette = `scripts/voice/tts_maquette.py` (à remplacer par la vraie voix
   via `scripts/voice/prepare_voice.py`, même format de synchro).
-- Musique douce composée en code, baissée automatiquement sous la voix (`scripts/make-music.py`).
-- Bruitages très discrets (pop, souffle de transition, battement cardiaque).
+- Pas de musique dans le fichier exporté : elle est ajoutée sur TikTok / Instagram.
+  (`scripts/make-music.py` reste disponible pour YouTube si besoin.)
+- Bruitages très discrets calés sur l'action (pop à chaque terme, souffle de transition, battements).
 
 ## Nouvelle vidéo : recette
 
-1. Écrire le script validé dans `voix/<n>-<sujet>.tts.json` (une entrée par scène).
+1. Écrire le script validé dans `voix/<n>-<sujet>.tts.json` (une entrée par scène) : accroche,
+   puis pour chaque notion une définition courte et ses termes techniques, puis récap + appel.
 2. `python3 scripts/voice/tts_maquette.py voix/<…>.tts.json <episode>` → voix + `voice.json`.
 3. Copier `src/videos/lpi-constantes/` comme modèle, une scène = un composant, animations via `at(scène, mot)`.
-4. `python3 scripts/make-music.py public/music/<episode>.mp3 <durée> --duck public/voix/<episode>/voix.wav`.
-5. `npx remotion render <Composition> out/<fichier>.mp4`.
+4. `npx remotion render <Composition> out/<fichier>.mp4`.

@@ -11,8 +11,8 @@
     "cover:prise-de-sang": "remotion still PriseDeSang out/01-prise-de-sang-cover.png --frame=120",
     "render:constantes": "remotion render Constantes out/02-constantes.mp4",
     "cover:constantes": "remotion still Constantes out/02-constantes-cover.png --frame=118",
-    "render:lpi-constantes": "remotion render LPI-Constantes out/03-lpi-constantes.mp4",
-    "cover:lpi-constantes": "remotion still LPI-Constantes out/03-lpi-constantes-cover.png --frame=150"
+    "render:lpi-constantes": "remotion render LPI-Constantes out/04-lpi-constantes-v2.mp4",
+    "cover:lpi-constantes": "remotion still LPI-Constantes out/04-lpi-constantes-v2-cover.png --frame=199"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.532",

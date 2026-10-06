@@ -304,14 +304,16 @@ const CELLS = Array.from({length: 14}, (_, i) => ({
 }));
 
 /** Artère en coupe : sang qui circule par à-coups, flèches de pression sur la paroi. */
-export const Artery: React.FC<{width?: number; arrows: number; beatFrames?: number}> = ({
+export const Artery: React.FC<{width?: number; arrows: number; beatFrames?: number; strength?: number}> = ({
 	width = 900,
 	arrows,
 	beatFrames = 25,
+	strength = 1,
 }) => {
 	const frame = useCurrentFrame();
 	const k = frame % beatFrames;
-	const pulse = Math.exp(-k / 5);
+	// strength : 1 = normal, > 1 = pression élevée (paroi poussée plus fort), < 1 = pression basse
+	const pulse = Math.exp(-k / 5) * strength;
 	const dist = 4 * frame + 10 * (Math.floor(frame / beatFrames) * 5 * (1 - Math.exp(-5)) + 5 * (1 - Math.exp(-k / 5)));
 	return (
 		<svg width={width} height={300} viewBox={`0 0 ${width} 300`} style={{overflow: 'visible'}}>
@@ -363,13 +365,17 @@ export const Artery: React.FC<{width?: number; arrows: number; beatFrames?: numb
 };
 
 /** Saturomètre sur un doigt (doigt au trait, palette uniquement). */
-export const Oximeter: React.FC<{on: number; value: number; enter: number; clip: number; beatFrames?: number}> = ({
-	on,
-	value,
-	enter,
-	clip,
-	beatFrames = 25,
-}) => {
+export const Oximeter: React.FC<{
+	on: number;
+	value: number;
+	enter: number;
+	clip: number;
+	beatFrames?: number;
+	/** 0 → 1 : la valeur passe en rose (désaturation) */
+	alert?: number;
+	/** 0 → 1 : halo autour de l'appareil (« oxymètre de pouls ») */
+	focus?: number;
+}> = ({on, value, enter, clip, beatFrames = 25, alert = 0, focus = 0}) => {
 	const frame = useCurrentFrame();
 	const beat = Math.exp(-(frame % beatFrames) / 4);
 	return (
@@ -386,6 +392,17 @@ export const Oximeter: React.FC<{on: number; value: number; enter: number; clip:
 				<rect x="500" y="126" width="80" height="52" rx="22" fill={LPI.sky} stroke={NAVY} strokeWidth="5" />
 			</g>
 			<g transform={`translate(0 ${(1 - clip) * -220})`} opacity={Math.min(1, clip * 2)}>
+				<rect
+					x="344"
+					y="-2"
+					width="412"
+					height="156"
+					rx="62"
+					fill="none"
+					stroke={LPI.blue}
+					strokeWidth="8"
+					opacity={focus}
+				/>
 				<rect x="360" y="14" width="380" height="124" rx="48" fill={NAVY} />
 				<rect x="390" y="32" width="320" height="88" rx="20" fill={LPI.paper} />
 				<text x="410" y="66" fill={LPI.blue} fontFamily={FONT.body} fontWeight={800} fontSize="24" opacity={on}>
@@ -394,7 +411,15 @@ export const Oximeter: React.FC<{on: number; value: number; enter: number; clip:
 						2
 					</tspan>
 				</text>
-				<text x="498" y="108" fill={NAVY} fontFamily={FONT.title} fontWeight={900} fontSize="68" opacity={on}>
+				<text
+					x="498"
+					y="108"
+					fill={interpolateColors(alert, [0, 1], [NAVY, LPI.pink])}
+					fontFamily={FONT.title}
+					fontWeight={900}
+					fontSize="68"
+					opacity={on}
+				>
 					{Math.round(value)}
 					<tspan fontSize="32" fill={LPI.blue}>
 						{' '}

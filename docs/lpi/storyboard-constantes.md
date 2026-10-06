@@ -1,48 +1,46 @@
-# Storyboard — « Les 5 constantes » (refonte La Petite IDE)
+# Storyboard — « Les 5 constantes » (La Petite IDE)
 
-Version de test n°1 · 63 s · 1080 × 1920 · voix **maquette** (synthèse, voix féminine « Denise »).
+**Version de test n°2** · 1 min 38 · 1080 × 1920 · voix **maquette** (synthèse « Denise », débit +8 %).
 
-Même contenu, même ordre et mêmes intentions que la première version : seule la direction
-artistique change. Les timecodes servent de repères pour vos retours scène par scène.
+## Retours intégrés (v1 → v2)
 
-## Étapes 1 & 2 — Analyse de la vidéo existante
+- Filigrane « La Petite IDE » retiré (le logo reste sur la carte de fin).
+- Sous-titres en temps réel retirés.
+- Pastilles « à connaître / à retenir pour l'IFSI » retirées.
+- Musique de fond retirée (ajoutée ensuite sur TikTok / Instagram). Bruitages discrets conservés.
+- Nouvelle accroche : « Les 5 constantes à ne surtout pas oublier… avec les mots techniques ».
+- **16 termes techniques** ajoutés, chacun avec une explication courte (sans valeurs « normales »).
+- Plus dynamique : voix plus rapide, transitions de 0,4 s, chaque terme déclenche une carte,
+  une réaction de l'illustration et un changement d'expression de la mascotte.
+- Fond blanc cassé uni.
 
-| # | Scène | Objectif pédagogique | Ce qui fonctionnait (conservé) |
-|---|-------|---------------------|--------------------------------|
-| 0 | Intro | Accrocher l'étudiant, annoncer les 5 constantes | Question d'accroche, apparition successive des 5 constantes, transition depuis la 1re |
-| 1 | Température | État thermique, repérer fièvre / hypothermie | Thermomètre qui monte (39,2 °C) puis descend (35,0 °C), mots-clés |
-| 2 | Fréquence cardiaque | = battements du cœur par minute | Cœur qui bat, compteur 70 → 72 bpm calé sur les battements, tracé symbolique |
-| 3 | Fréquence respiratoire | = respirations par minute | Inspiration / expiration, « 16 / min » |
-| 4 | Pression artérielle | = pression du sang sur la paroi des artères | Chaîne cœur → sang → artères, coupe d'artère, 120/80 systolique/diastolique |
-| 5 | SpO₂ | = % d'hémoglobine qui transporte l'O₂ | Saturomètre 98 %, trajet poumons → globules rouges → cœur → corps |
-| 6 | Conclusion | Mémoriser les 5 constantes | Liste récapitulative, « À retenir pour l'IFSI » |
+## Déroulé
 
-Pas de valeurs « normales » (choix validé) : 36,7 °C, 72 bpm, 16/min, 120/80 et 98 % sont des exemples.
+| Timecode | Scène | Ce qui se passe à l'écran | Mascotte (planche officielle) |
+|----------|-------|---------------------------|-------------------------------|
+| 0:00 – 0:08 | **Accroche** | « Les 5 constantes / à ne surtout pas oublier », les 5 pictos en cascade, « + 16 termes techniques », aperçu de 3 termes | Donne un conseil |
+| 0:08 – 0:22 | **1 · Température** | Thermomètre + valeur : 36,7 → 39,2 °C (flamme) → 36,8 °C (✓) → 35,0 °C (flocon) | Réfléchit → Surprise → Confiante → Stressée |
+| | | **Fébrile** : a de la fièvre · **Apyrétique** : n'a pas de fièvre · **Hypothermie** : température trop basse | |
+| 0:22 – 0:35 | **2 · Fréquence cardiaque** | Cœur + tracé qui suivent le rythme : 72 → 128 bpm → 45 bpm → rythme irrégulier | Déterminée → Surprise → Fatiguée → Réfléchit |
+| | | **Tachycardie** : trop vite · **Bradycardie** : trop lentement · **Arythmie** : rythme irrégulier | |
+| 0:35 – 0:48 | **3 · Fréquence respiratoire** | Poumons qui respirent : 16 → 28/min (rapide) → 8/min (lent) → respiration difficile | Joyeuse → Stressée → Fatiguée → Surprise |
+| | | **Tachypnée** : trop rapide · **Bradypnée** : trop lente · **Dyspnée** : difficulté à respirer | |
+| 0:48 – 1:06 | **4 · Pression artérielle** | Artère en coupe + fraction PAS/PAD : 120/80 → 165/100 (paroi poussée fort) → 85/50 (pouls faible) | Réfléchit → Déterminée → Joyeuse → Stressée → Fatiguée |
+| | | **Systolique (PAS)** : 1er chiffre, le cœur se contracte · **Diastolique (PAD)** : 2e chiffre, le cœur se relâche · **Hypertension (HTA)** · **Hypotension** | |
+| 1:06 – 1:23 | **5 · SpO₂** | Oxymètre sur le doigt : 98 % → 86 % (désaturation), le globule rouge perd son O₂ (hypoxémie) | Confiante → Surprise → Stressée |
+| | | **Oxymètre de pouls** : l'appareil · **Désaturation** : la SpO₂ chute · **Hypoxémie** : manque d'O₂ dans le sang | |
+| 1:23 – 1:35 | **Récap + appel** | Les 5 constantes avec leurs termes, « Enregistre pour tes révisions », « Quel mot tu ne connaissais pas ? » | Joyeuse → Célèbre |
+| 1:35 – 1:38 | **Carte de fin** | Logo principal | — |
 
-## Étapes 3 & 4 — Réinterprétation avec la nouvelle identité
-
-| Timecode | Scène | Mascotte (planche officielle) | Ce qu'on regarde → ce qu'on comprend |
-|----------|-------|-------------------------------|---------------------------------------|
-| 0:00 – 0:07 | **Intro** | *Donne un conseil* (doigt levé) | Question « Tu es étudiant infirmier ? » → titre « Les 5 constantes » → carte des 5 pictos (T°, FC, FR, PA, SpO₂) → chip « à connaître en IFSI ». Transition : cercle qui part du picto T°. |
-| 0:07 – 0:17 | **1 · Température** | *Réfléchit* → *Surprise* sur « fièvre », derrière la carte | Thermomètre + valeur 36,7 → 39,2 °C (rose, flamme) → 35,0 °C (bleu clair, flocon). Chips : État thermique · Fièvre · Hypothermie. |
-| 0:17 – 0:24 | **2 · Fréquence cardiaque** | *Explique* (baguette pointée vers la carte) | Cœur qui bat à 72 bpm + tracé symbolique, compteur 70 → 72 bpm, chip « Battements / minute ». |
-| 0:24 – 0:33 | **3 · Fréquence respiratoire** | *Prend des notes* (on compte la FR) | Poumons qui se gonflent, sélecteur Inspiration / Expiration, « 16 / min », chip « Respirations / minute ». |
-| 0:33 – 0:41 | **4 · Pression artérielle** | *Déterminée* (réaction) | Chaîne Cœur → Sang → Artères, artère en coupe (le sang pousse sur la **paroi**), 120 / 80 mmHg, chips systolique / diastolique. |
-| 0:41 – 0:50 | **5 · SpO₂** | — (scène déjà riche) | Saturomètre 98 %, titre qui devient « SpO₂ » quand la voix le dit, trajet Poumons → Globules rouges → Cœur → Corps, chip « 98 % de l'hémoglobine transporte de l'O₂ ». |
-| 0:50 – 0:59 | **Conclusion** | *Vue de face* → *Célèbre* à la fin | Liste des 5 constantes, chaque ligne s'allume quand elle est nommée, puis « À retenir pour l'IFSI ». |
-| 0:59 – 1:03 | **Carte de fin** | (logo) | Logo principal La Petite IDE « Les soins, simplement. » |
-
-En permanence : filigrane (logo icône + « La Petite IDE ») en haut à gauche, progression
-1 → 5 en haut à droite, sous-titres mot à mot en bas (mot prononcé en bleu).
+Les chiffres (39,2 °C, 128 bpm, 165/100…) sont des **exemples** pour illustrer le terme, pas des seuils.
 
 ## Synchronisation
 
-Chaque animation est déclenchée par un mot de la voix (`at('temp', 'fièvre')`…). Le jour où la
-vraie voix est enregistrée, on relance le script de préparation et **toute la vidéo se recale**.
+Chaque carte, réaction d'illustration et expression est déclenchée par le mot prononcé
+(`at('fc', 'tachycardie')`…). La vraie voix recalera toute la vidéo automatiquement.
 
-## Points ouverts pour vos retours
+## Points ouverts
 
-- Sous-titres : à garder ? (utiles sans le son, mais ajoutent du texte à l'écran)
-- Musique de fond douce : à garder, ou son tendance ajouté dans l'appli ?
-- Mascotte absente de la scène SpO₂ (choix de lisibilité) : ok ?
-- Durée des respirations entre les parties (0,85 s) et débit de la voix maquette.
+- Durée (1 min 38) : ok, ou version plus courte (débit +12 %, termes les plus importants seulement) ?
+- Valeurs de référence adulte (ex. tachycardie > 100 bpm) : à ajouter, ou on reste sans chiffres ?
+- Formulations des définitions à valider par vos encadrants / formateurs.

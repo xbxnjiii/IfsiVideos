@@ -40,7 +40,7 @@ export const RemotionRoot: React.FC = () => (
 			fps={LPI_TL.fps}
 			width={W}
 			height={H}
-			defaultProps={{voice: true, music: true, sfx: true, captions: true} satisfies LpiConstantesProps}
+			defaultProps={{voice: true, sfx: true, decor: 'none'} satisfies LpiConstantesProps}
 		/>
 	</>
 );

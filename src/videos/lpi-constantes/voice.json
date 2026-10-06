@@ -1,603 +1,1113 @@
 {
- "voice": "MAQUETTE fr-FR-DeniseNeural (+0%)",
- "duration": 58.085,
+ "voice": "MAQUETTE fr-FR-DeniseNeural (+8%)",
+ "duration": 94.006,
  "sections": [
   {
    "id": "intro",
-   "start": 0.103,
-   "end": 6.015
+   "start": 0.096,
+   "end": 7.053
   },
   {
    "id": "temp",
-   "start": 6.965,
-   "end": 15.897
+   "start": 7.849,
+   "end": 20.93
   },
   {
    "id": "fc",
-   "start": 16.847,
-   "end": 23.417
+   "start": 21.728,
+   "end": 34.09
   },
   {
    "id": "fr",
-   "start": 24.367,
-   "end": 31.737
+   "start": 34.886,
+   "end": 47.643
   },
   {
    "id": "pa",
-   "start": 32.687,
-   "end": 39.757
+   "start": 48.44,
+   "end": 65.454
   },
   {
    "id": "spo2",
-   "start": 40.707,
-   "end": 49.227
+   "start": 66.25,
+   "end": 82.005
   },
   {
    "id": "outro",
-   "start": 50.177,
-   "end": 58.085
+   "start": 82.801,
+   "end": 94.006
   }
  ],
  "words": [
   {
-   "text": "Tu",
-   "start": 0.103,
-   "end": 0.287
-  },
-  {
-   "text": "es",
-   "start": 0.3,
-   "end": 0.366
-  },
-  {
-   "text": "étudiant",
-   "start": 0.379,
-   "end": 0.905
-  },
-  {
-   "text": "infirmier ?",
-   "start": 0.918,
-   "end": 1.603
-  },
-  {
-   "text": "Voici",
-   "start": 2.513,
-   "end": 2.974
-  },
-  {
-   "text": "les",
-   "start": 2.987,
-   "end": 3.105
+   "text": "Les",
+   "start": 0.096,
+   "end": 0.293
   },
   {
    "text": "5",
-   "start": 3.118,
-   "end": 3.434
+   "start": 0.305,
+   "end": 0.548
   },
   {
    "text": "constantes",
-   "start": 3.447,
-   "end": 4.026
+   "start": 0.559,
+   "end": 0.999
   },
   {
-   "text": "que",
-   "start": 4.039,
-   "end": 4.184
+   "text": "à",
+   "start": 1.011,
+   "end": 1.057
+  },
+  {
+   "text": "ne",
+   "start": 1.069,
+   "end": 1.196
+  },
+  {
+   "text": "surtout",
+   "start": 1.207,
+   "end": 1.531
+  },
+  {
+   "text": "pas",
+   "start": 1.543,
+   "end": 1.67
+  },
+  {
+   "text": "oublier",
+   "start": 1.682,
+   "end": 2.052
+  },
+  {
+   "text": "quand",
+   "start": 2.064,
+   "end": 2.214
   },
   {
    "text": "tu",
-   "start": 4.197,
-   "end": 4.355
+   "start": 2.226,
+   "end": 2.365
+  },
+  {
+   "text": "es",
+   "start": 2.376,
+   "end": 2.423
+  },
+  {
+   "text": "étudiant",
+   "start": 2.434,
+   "end": 2.886
+  },
+  {
+   "text": "infirmier.",
+   "start": 2.897,
+   "end": 3.464
+  },
+  {
+   "text": "Avec",
+   "start": 4.259,
+   "end": 4.572
+  },
+  {
+   "text": "les",
+   "start": 4.583,
+   "end": 4.687
+  },
+  {
+   "text": "mots",
+   "start": 4.699,
+   "end": 4.838
+  },
+  {
+   "text": "techniques",
+   "start": 4.85,
+   "end": 5.37
+  },
+  {
+   "text": "que",
+   "start": 5.382,
+   "end": 5.509
+  },
+  {
+   "text": "tu",
+   "start": 5.521,
+   "end": 5.648
   },
   {
    "text": "dois",
-   "start": 4.368,
-   "end": 4.605
+   "start": 5.66,
+   "end": 5.856
   },
   {
    "text": "absolument",
-   "start": 4.618,
-   "end": 5.276
+   "start": 5.868,
+   "end": 6.389
   },
   {
-   "text": "connaître.",
-   "start": 5.289,
-   "end": 5.895
+   "text": "connaître !",
+   "start": 6.4,
+   "end": 6.933
   },
   {
-   "text": "Première",
-   "start": 6.965,
-   "end": 7.365
-  },
-  {
-   "text": "constante :",
-   "start": 7.377,
-   "end": 8.002
+   "text": "Un :",
+   "start": 7.849,
+   "end": 8.081
   },
   {
    "text": "la",
-   "start": 8.29,
-   "end": 8.402
+   "start": 8.358,
+   "end": 8.463
   },
   {
    "text": "température.",
-   "start": 8.415,
-   "end": 9.29
+   "start": 8.474,
+   "end": 9.284
   },
   {
    "text": "Elle",
-   "start": 10.152,
-   "end": 10.352
+   "start": 10.091,
+   "end": 10.241
   },
   {
-   "text": "permet",
-   "start": 10.365,
-   "end": 10.69
-  },
-  {
-   "text": "notamment",
-   "start": 10.702,
-   "end": 11.165
-  },
-  {
-   "text": "d'évaluer",
-   "start": 11.177,
-   "end": 11.652
+   "text": "évalue",
+   "start": 10.253,
+   "end": 10.565
   },
   {
    "text": "l'état",
-   "start": 11.665,
-   "end": 11.927
+   "start": 10.577,
+   "end": 10.832
   },
   {
    "text": "thermique",
-   "start": 11.94,
-   "end": 12.365
+   "start": 10.843,
+   "end": 11.248
   },
   {
    "text": "du",
-   "start": 12.377,
-   "end": 12.49
+   "start": 11.26,
+   "end": 11.364
   },
   {
-   "text": "patient,",
-   "start": 12.502,
-   "end": 12.965
+   "text": "patient.",
+   "start": 11.376,
+   "end": 11.85
   },
   {
-   "text": "et",
-   "start": 13.352,
-   "end": 13.39
+   "text": "S'il",
+   "start": 12.661,
+   "end": 12.927
   },
   {
-   "text": "de",
-   "start": 13.402,
-   "end": 13.527
-  },
-  {
-   "text": "rechercher",
-   "start": 13.54,
-   "end": 14.015
-  },
-  {
-   "text": "une",
-   "start": 14.027,
-   "end": 14.14
-  },
-  {
-   "text": "éventuelle",
-   "start": 14.152,
-   "end": 14.602
-  },
-  {
-   "text": "fièvre",
-   "start": 14.615,
-   "end": 14.977
-  },
-  {
-   "text": "ou",
-   "start": 14.99,
-   "end": 15.052
-  },
-  {
-   "text": "hypothermie.",
-   "start": 15.065,
-   "end": 15.777
-  },
-  {
-   "text": "Deuxième",
-   "start": 16.847,
-   "end": 17.297
-  },
-  {
-   "text": "constante :",
-   "start": 17.31,
-   "end": 17.922
-  },
-  {
-   "text": "la",
-   "start": 18.222,
-   "end": 18.347
-  },
-  {
-   "text": "fréquence",
-   "start": 18.36,
-   "end": 18.81
-  },
-  {
-   "text": "cardiaque.",
-   "start": 18.822,
-   "end": 19.46
-  },
-  {
-   "text": "Elle",
-   "start": 20.322,
-   "end": 20.522
-  },
-  {
-   "text": "correspond",
-   "start": 20.535,
-   "end": 21.085
-  },
-  {
-   "text": "au",
-   "start": 21.097,
-   "end": 21.21
-  },
-  {
-   "text": "nombre",
-   "start": 21.222,
-   "end": 21.597
+   "text": "a",
+   "start": 12.939,
+   "end": 12.997
   },
   {
    "text": "de",
-   "start": 21.61,
-   "end": 21.722
-  },
-  {
-   "text": "battements",
-   "start": 21.735,
-   "end": 22.185
-  },
-  {
-   "text": "du",
-   "start": 22.197,
-   "end": 22.31
-  },
-  {
-   "text": "cœur",
-   "start": 22.322,
-   "end": 22.535
-  },
-  {
-   "text": "par",
-   "start": 22.547,
-   "end": 22.735
-  },
-  {
-   "text": "minute.",
-   "start": 22.747,
-   "end": 23.297
-  },
-  {
-   "text": "Troisième",
-   "start": 24.367,
-   "end": 24.83
-  },
-  {
-   "text": "constante :",
-   "start": 24.842,
-   "end": 25.467
+   "start": 13.008,
+   "end": 13.101
   },
   {
    "text": "la",
-   "start": 25.78,
-   "end": 25.892
+   "start": 13.113,
+   "end": 13.217
   },
   {
-   "text": "fréquence",
-   "start": 25.905,
-   "end": 26.392
+   "text": "fièvre,",
+   "start": 13.228,
+   "end": 13.61
   },
   {
-   "text": "respiratoire.",
-   "start": 26.405,
-   "end": 27.367
+   "text": "il",
+   "start": 13.853,
+   "end": 13.923
   },
   {
-   "text": "Elle",
-   "start": 28.23,
-   "end": 28.442
+   "text": "est",
+   "start": 13.934,
+   "end": 13.981
   },
   {
-   "text": "correspond",
-   "start": 28.455,
-   "end": 29.005
+   "text": "fébrile.",
+   "start": 13.992,
+   "end": 14.606
   },
   {
-   "text": "au",
-   "start": 29.017,
-   "end": 29.13
+   "text": "S'il",
+   "start": 15.403,
+   "end": 15.646
   },
   {
-   "text": "nombre",
-   "start": 29.142,
-   "end": 29.505
+   "text": "n'en",
+   "start": 15.658,
+   "end": 15.785
   },
   {
-   "text": "de",
-   "start": 29.517,
-   "end": 29.617
+   "text": "a",
+   "start": 15.797,
+   "end": 15.913
   },
   {
-   "text": "respirations",
-   "start": 29.63,
-   "end": 30.355
+   "text": "pas,",
+   "start": 15.924,
+   "end": 16.098
   },
   {
-   "text": "effectuées",
-   "start": 30.367,
-   "end": 30.855
+   "text": "il",
+   "start": 16.41,
+   "end": 16.468
   },
   {
-   "text": "par",
-   "start": 30.867,
-   "end": 31.055
+   "text": "est",
+   "start": 16.48,
+   "end": 16.526
   },
   {
-   "text": "minute.",
-   "start": 31.067,
-   "end": 31.617
-  },
-  {
-   "text": "Quatrième",
-   "start": 32.687,
-   "end": 33.225
-  },
-  {
-   "text": "constante :",
-   "start": 33.237,
-   "end": 33.837
-  },
-  {
-   "text": "la",
-   "start": 34.15,
-   "end": 34.262
-  },
-  {
-   "text": "pression",
-   "start": 34.275,
-   "end": 34.637
-  },
-  {
-   "text": "artérielle.",
-   "start": 34.65,
-   "end": 35.387
-  },
-  {
-   "text": "Elle",
-   "start": 36.25,
-   "end": 36.437
-  },
-  {
-   "text": "mesure",
-   "start": 36.45,
-   "end": 36.775
-  },
-  {
-   "text": "la",
-   "start": 36.787,
-   "end": 36.9
-  },
-  {
-   "text": "pression",
-   "start": 36.912,
-   "end": 37.3
-  },
-  {
-   "text": "exercée",
-   "start": 37.312,
-   "end": 37.812
-  },
-  {
-   "text": "par",
-   "start": 37.825,
-   "end": 37.987
-  },
-  {
-   "text": "le",
-   "start": 38.0,
-   "end": 38.112
-  },
-  {
-   "text": "sang",
-   "start": 38.125,
-   "end": 38.287
-  },
-  {
-   "text": "sur",
-   "start": 38.3,
-   "end": 38.475
-  },
-  {
-   "text": "la",
-   "start": 38.487,
-   "end": 38.6
-  },
-  {
-   "text": "paroi",
-   "start": 38.612,
-   "end": 38.912
-  },
-  {
-   "text": "des",
-   "start": 38.925,
-   "end": 39.025
-  },
-  {
-   "text": "artères.",
-   "start": 39.037,
-   "end": 39.637
+   "text": "apyrétique.",
+   "start": 16.538,
+   "end": 17.336
   },
   {
    "text": "Et",
-   "start": 40.707,
-   "end": 40.857
+   "start": 18.137,
+   "end": 18.195
   },
   {
-   "text": "enfin,",
-   "start": 40.87,
-   "end": 41.307
+   "text": "une",
+   "start": 18.206,
+   "end": 18.322
+  },
+  {
+   "text": "température",
+   "start": 18.333,
+   "end": 18.935
+  },
+  {
+   "text": "trop",
+   "start": 18.947,
+   "end": 19.12
+  },
+  {
+   "text": "basse,",
+   "start": 19.132,
+   "end": 19.526
+  },
+  {
+   "text": "c'est",
+   "start": 19.803,
+   "end": 19.942
+  },
+  {
+   "text": "une",
+   "start": 19.954,
+   "end": 20.139
+  },
+  {
+   "text": "hypothermie.",
+   "start": 20.151,
+   "end": 20.81
+  },
+  {
+   "text": "Deux :",
+   "start": 21.728,
+   "end": 21.971
   },
   {
    "text": "la",
-   "start": 41.645,
-   "end": 41.745
-  },
-  {
-   "text": "saturation",
-   "start": 41.757,
-   "end": 42.42
-  },
-  {
-   "text": "en",
-   "start": 42.432,
-   "end": 42.507
-  },
-  {
-   "text": "oxygène,",
-   "start": 42.52,
-   "end": 43.195
-  },
-  {
-   "text": "ou",
-   "start": 43.495,
-   "end": 43.57
-  },
-  {
-   "text": "SpO2.",
-   "start": 43.582,
-   "end": 44.332
-  },
-  {
-   "text": "Elle",
-   "start": 45.195,
-   "end": 45.307
-  },
-  {
-   "text": "indique",
-   "start": 45.32,
-   "end": 45.632
-  },
-  {
-   "text": "le",
-   "start": 45.645,
-   "end": 45.782
-  },
-  {
-   "text": "pourcentage",
-   "start": 45.795,
-   "end": 46.407
-  },
-  {
-   "text": "d'hémoglobine",
-   "start": 46.42,
-   "end": 47.132
-  },
-  {
-   "text": "qui",
-   "start": 47.145,
-   "end": 47.27
-  },
-  {
-   "text": "transporte",
-   "start": 47.282,
-   "end": 47.882
-  },
-  {
-   "text": "de",
-   "start": 47.895,
-   "end": 48.007
-  },
-  {
-   "text": "l'oxygène",
-   "start": 48.02,
-   "end": 48.595
-  },
-  {
-   "text": "dans",
-   "start": 48.607,
-   "end": 48.72
-  },
-  {
-   "text": "le",
-   "start": 48.732,
-   "end": 48.845
-  },
-  {
-   "text": "sang.",
-   "start": 48.857,
-   "end": 49.107
-  },
-  {
-   "text": "Alors,",
-   "start": 50.177,
-   "end": 50.615
-  },
-  {
-   "text": "retiens",
-   "start": 50.915,
-   "end": 51.265
-  },
-  {
-   "text": "bien :",
-   "start": 51.277,
-   "end": 51.565
-  },
-  {
-   "text": "température,",
-   "start": 51.827,
-   "end": 52.627
+   "start": 22.249,
+   "end": 22.353
   },
   {
    "text": "fréquence",
-   "start": 52.94,
-   "end": 53.365
+   "start": 22.365,
+   "end": 22.77
   },
   {
    "text": "cardiaque,",
-   "start": 53.377,
-   "end": 53.915
+   "start": 22.782,
+   "end": 23.268
+  },
+  {
+   "text": "le",
+   "start": 23.569,
+   "end": 23.65
+  },
+  {
+   "text": "nombre",
+   "start": 23.661,
+   "end": 23.985
+  },
+  {
+   "text": "de",
+   "start": 23.997,
+   "end": 24.101
+  },
+  {
+   "text": "battements",
+   "start": 24.113,
+   "end": 24.506
+  },
+  {
+   "text": "du",
+   "start": 24.518,
+   "end": 24.622
+  },
+  {
+   "text": "cœur",
+   "start": 24.633,
+   "end": 24.83
+  },
+  {
+   "text": "par",
+   "start": 24.842,
+   "end": 25.015
+  },
+  {
+   "text": "minute.",
+   "start": 25.027,
+   "end": 25.536
+  },
+  {
+   "text": "Trop",
+   "start": 26.329,
+   "end": 26.526
+  },
+  {
+   "text": "rapide,",
+   "start": 26.538,
+   "end": 27.012
+  },
+  {
+   "text": "c'est",
+   "start": 27.301,
+   "end": 27.452
+  },
+  {
+   "text": "une",
+   "start": 27.464,
+   "end": 27.637
+  },
+  {
+   "text": "tachycardie.",
+   "start": 27.649,
+   "end": 28.424
+  },
+  {
+   "text": "Trop",
+   "start": 29.223,
+   "end": 29.408
+  },
+  {
+   "text": "lente,",
+   "start": 29.42,
+   "end": 29.767
+  },
+  {
+   "text": "une",
+   "start": 30.045,
+   "end": 30.126
+  },
+  {
+   "text": "bradycardie.",
+   "start": 30.137,
+   "end": 30.97
+  },
+  {
+   "text": "Et",
+   "start": 31.771,
+   "end": 31.852
+  },
+  {
+   "text": "un",
+   "start": 31.864,
+   "end": 31.956
+  },
+  {
+   "text": "rythme",
+   "start": 31.968,
+   "end": 32.234
+  },
+  {
+   "text": "irrégulier,",
+   "start": 32.245,
+   "end": 32.789
+  },
+  {
+   "text": "c'est",
+   "start": 33.044,
+   "end": 33.183
+  },
+  {
+   "text": "une",
+   "start": 33.195,
+   "end": 33.38
+  },
+  {
+   "text": "arythmie.",
+   "start": 33.391,
+   "end": 33.97
+  },
+  {
+   "text": "Trois :",
+   "start": 34.886,
+   "end": 35.199
+  },
+  {
+   "text": "la",
+   "start": 35.5,
+   "end": 35.604
   },
   {
    "text": "fréquence",
-   "start": 54.165,
-   "end": 54.602
+   "start": 35.615,
+   "end": 36.044
   },
   {
    "text": "respiratoire,",
-   "start": 54.615,
-   "end": 55.502
+   "start": 36.055,
+   "end": 36.889
+  },
+  {
+   "text": "le",
+   "start": 37.224,
+   "end": 37.294
+  },
+  {
+   "text": "nombre",
+   "start": 37.305,
+   "end": 37.629
+  },
+  {
+   "text": "de",
+   "start": 37.641,
+   "end": 37.734
+  },
+  {
+   "text": "respirations",
+   "start": 37.745,
+   "end": 38.382
+  },
+  {
+   "text": "par",
+   "start": 38.393,
+   "end": 38.567
+  },
+  {
+   "text": "minute.",
+   "start": 38.578,
+   "end": 39.088
+  },
+  {
+   "text": "Trop",
+   "start": 39.883,
+   "end": 40.091
+  },
+  {
+   "text": "rapide :",
+   "start": 40.103,
+   "end": 40.589
+  },
+  {
+   "text": "tachypnée.",
+   "start": 40.843,
+   "end": 41.468
+  },
+  {
+   "text": "Trop",
+   "start": 42.267,
+   "end": 42.464
+  },
+  {
+   "text": "lente :",
+   "start": 42.475,
+   "end": 42.857
+  },
+  {
+   "text": "bradypnée.",
+   "start": 43.065,
+   "end": 43.714
+  },
+  {
+   "text": "Et",
+   "start": 44.514,
+   "end": 44.572
+  },
+  {
+   "text": "quand",
+   "start": 44.584,
+   "end": 44.746
+  },
+  {
+   "text": "le",
+   "start": 44.757,
+   "end": 44.85
+  },
+  {
+   "text": "patient",
+   "start": 44.861,
+   "end": 45.255
+  },
+  {
+   "text": "a",
+   "start": 45.266,
+   "end": 45.347
+  },
+  {
+   "text": "du",
+   "start": 45.359,
+   "end": 45.475
+  },
+  {
+   "text": "mal",
+   "start": 45.486,
+   "end": 45.671
+  },
+  {
+   "text": "à",
+   "start": 45.683,
+   "end": 45.718
+  },
+  {
+   "text": "respirer,",
+   "start": 45.729,
+   "end": 46.262
+  },
+  {
+   "text": "on",
+   "start": 46.563,
+   "end": 46.609
+  },
+  {
+   "text": "parle",
+   "start": 46.621,
+   "end": 46.875
+  },
+  {
+   "text": "de",
+   "start": 46.887,
+   "end": 46.991
+  },
+  {
+   "text": "dyspnée.",
+   "start": 47.003,
+   "end": 47.523
+  },
+  {
+   "text": "Quatre :",
+   "start": 48.44,
+   "end": 48.822
+  },
+  {
+   "text": "la",
+   "start": 49.088,
+   "end": 49.192
   },
   {
    "text": "pression",
-   "start": 55.802,
-   "end": 56.152
+   "start": 49.203,
+   "end": 49.539
   },
   {
    "text": "artérielle,",
-   "start": 56.165,
-   "end": 56.765
+   "start": 49.551,
+   "end": 50.118
+  },
+  {
+   "text": "la",
+   "start": 50.43,
+   "end": 50.535
+  },
+  {
+   "text": "pression",
+   "start": 50.546,
+   "end": 50.905
+  },
+  {
+   "text": "du",
+   "start": 50.916,
+   "end": 51.044
+  },
+  {
+   "text": "sang",
+   "start": 51.055,
+   "end": 51.194
+  },
+  {
+   "text": "sur",
+   "start": 51.206,
+   "end": 51.368
+  },
+  {
+   "text": "la",
+   "start": 51.379,
+   "end": 51.484
+  },
+  {
+   "text": "paroi",
+   "start": 51.495,
+   "end": 51.773
+  },
+  {
+   "text": "des",
+   "start": 51.785,
+   "end": 51.877
+  },
+  {
+   "text": "artères.",
+   "start": 51.889,
+   "end": 52.444
+  },
+  {
+   "text": "Le",
+   "start": 53.239,
+   "end": 53.424
+  },
+  {
+   "text": "premier",
+   "start": 53.436,
+   "end": 53.76
+  },
+  {
+   "text": "chiffre,",
+   "start": 53.772,
+   "end": 54.154
+  },
+  {
+   "text": "c'est",
+   "start": 54.408,
+   "end": 54.535
+  },
+  {
+   "text": "la",
+   "start": 54.547,
+   "end": 54.663
+  },
+  {
+   "text": "systolique :",
+   "start": 54.674,
+   "end": 55.276
+  },
+  {
+   "text": "le",
+   "start": 55.542,
+   "end": 55.635
+  },
+  {
+   "text": "cœur",
+   "start": 55.647,
+   "end": 55.855
+  },
+  {
+   "text": "se",
+   "start": 55.866,
+   "end": 55.971
+  },
+  {
+   "text": "contracte.",
+   "start": 55.982,
+   "end": 56.63
+  },
+  {
+   "text": "Le",
+   "start": 57.429,
+   "end": 57.626
+  },
+  {
+   "text": "deuxième,",
+   "start": 57.637,
+   "end": 58.135
+  },
+  {
+   "text": "la",
+   "start": 58.401,
+   "end": 58.505
+  },
+  {
+   "text": "diastolique :",
+   "start": 58.517,
+   "end": 59.142
+  },
+  {
+   "text": "le",
+   "start": 59.397,
+   "end": 59.489
+  },
+  {
+   "text": "cœur",
+   "start": 59.501,
+   "end": 59.709
+  },
+  {
+   "text": "se",
+   "start": 59.721,
+   "end": 59.825
+  },
+  {
+   "text": "relâche.",
+   "start": 59.836,
+   "end": 60.357
+  },
+  {
+   "text": "Trop",
+   "start": 61.167,
+   "end": 61.422
+  },
+  {
+   "text": "haute,",
+   "start": 61.434,
+   "end": 61.746
+  },
+  {
+   "text": "c'est",
+   "start": 61.989,
+   "end": 62.14
+  },
+  {
+   "text": "l'hypertension.",
+   "start": 62.151,
+   "end": 62.927
+  },
+  {
+   "text": "Trop",
+   "start": 63.725,
+   "end": 63.922
+  },
+  {
+   "text": "basse,",
+   "start": 63.934,
+   "end": 64.327
+  },
+  {
+   "text": "l'hypotension.",
+   "start": 64.547,
+   "end": 65.334
+  },
+  {
+   "text": "Et",
+   "start": 66.25,
+   "end": 66.343
+  },
+  {
+   "text": "cinq :",
+   "start": 66.355,
+   "end": 66.748
+  },
+  {
+   "text": "la",
+   "start": 67.026,
+   "end": 67.13
+  },
+  {
+   "text": "saturation",
+   "start": 67.142,
+   "end": 67.755
+  },
+  {
+   "text": "en",
+   "start": 67.767,
+   "end": 67.836
+  },
+  {
+   "text": "oxygène,",
+   "start": 67.848,
+   "end": 68.473
+  },
+  {
+   "text": "ou",
+   "start": 68.797,
+   "end": 68.866
+  },
+  {
+   "text": "SpO2,",
+   "start": 68.878,
+   "end": 69.561
+  },
+  {
+   "text": "mesurée",
+   "start": 69.896,
+   "end": 70.255
+  },
+  {
+   "text": "avec",
+   "start": 70.267,
+   "end": 70.51
+  },
+  {
+   "text": "un",
+   "start": 70.521,
+   "end": 70.567
+  },
+  {
+   "text": "oxymètre",
+   "start": 70.579,
+   "end": 71.135
+  },
+  {
+   "text": "de",
+   "start": 71.146,
+   "end": 71.239
+  },
+  {
+   "text": "pouls.",
+   "start": 71.25,
+   "end": 71.482
+  },
+  {
+   "text": "C'est",
+   "start": 72.277,
+   "end": 72.462
+  },
+  {
+   "text": "le",
+   "start": 72.474,
+   "end": 72.578
+  },
+  {
+   "text": "pourcentage",
+   "start": 72.589,
+   "end": 73.156
+  },
+  {
+   "text": "d'hémoglobine",
+   "start": 73.168,
+   "end": 73.828
+  },
+  {
+   "text": "qui",
+   "start": 73.839,
+   "end": 73.955
+  },
+  {
+   "text": "transporte",
+   "start": 73.967,
+   "end": 74.499
+  },
+  {
+   "text": "de",
+   "start": 74.511,
+   "end": 74.615
+  },
+  {
+   "text": "l'oxygène.",
+   "start": 74.626,
+   "end": 75.309
+  },
+  {
+   "text": "Quand",
+   "start": 76.108,
+   "end": 76.258
+  },
+  {
+   "text": "elle",
+   "start": 76.27,
+   "end": 76.467
+  },
+  {
+   "text": "chute,",
+   "start": 76.478,
+   "end": 76.825
+  },
+  {
+   "text": "c'est",
+   "start": 77.126,
+   "end": 77.265
+  },
+  {
+   "text": "une",
+   "start": 77.277,
+   "end": 77.473
+  },
+  {
+   "text": "désaturation.",
+   "start": 77.485,
+   "end": 78.353
+  },
+  {
+   "text": "Et",
+   "start": 79.154,
+   "end": 79.281
+  },
+  {
+   "text": "un",
+   "start": 79.292,
+   "end": 79.373
+  },
+  {
+   "text": "manque",
+   "start": 79.385,
+   "end": 79.628
+  },
+  {
+   "text": "d'oxygène",
+   "start": 79.64,
+   "end": 80.184
+  },
+  {
+   "text": "dans",
+   "start": 80.195,
+   "end": 80.311
+  },
+  {
+   "text": "le",
+   "start": 80.323,
+   "end": 80.427
+  },
+  {
+   "text": "sang,",
+   "start": 80.438,
+   "end": 80.647
+  },
+  {
+   "text": "c'est",
+   "start": 80.867,
+   "end": 81.005
+  },
+  {
+   "text": "une",
+   "start": 81.017,
+   "end": 81.202
+  },
+  {
+   "text": "hypoxémie.",
+   "start": 81.214,
+   "end": 81.885
+  },
+  {
+   "text": "Récap :",
+   "start": 82.801,
+   "end": 83.276
+  },
+  {
+   "text": "température,",
+   "start": 83.53,
+   "end": 84.26
+  },
+  {
+   "text": "fréquence",
+   "start": 84.549,
+   "end": 84.943
+  },
+  {
+   "text": "cardiaque,",
+   "start": 84.954,
+   "end": 85.44
+  },
+  {
+   "text": "fréquence",
+   "start": 85.649,
+   "end": 86.042
+  },
+  {
+   "text": "respiratoire,",
+   "start": 86.054,
+   "end": 86.864
+  },
+  {
+   "text": "pression",
+   "start": 87.153,
+   "end": 87.489
+  },
+  {
+   "text": "artérielle",
+   "start": 87.5,
+   "end": 88.01
   },
   {
    "text": "et",
-   "start": 57.127,
-   "end": 57.177
+   "start": 88.021,
+   "end": 88.068
   },
   {
    "text": "SpO2.",
-   "start": 57.19,
-   "end": 57.965
+   "start": 88.079,
+   "end": 88.808
+  },
+  {
+   "text": "Enregistre",
+   "start": 89.603,
+   "end": 90.17
+  },
+  {
+   "text": "la",
+   "start": 90.182,
+   "end": 90.286
+  },
+  {
+   "text": "vidéo",
+   "start": 90.298,
+   "end": 90.645
+  },
+  {
+   "text": "pour",
+   "start": 90.656,
+   "end": 90.818
+  },
+  {
+   "text": "tes",
+   "start": 90.83,
+   "end": 90.934
+  },
+  {
+   "text": "révisions,",
+   "start": 90.946,
+   "end": 91.42
+  },
+  {
+   "text": "et",
+   "start": 91.756,
+   "end": 91.791
+  },
+  {
+   "text": "dis-moi",
+   "start": 91.802,
+   "end": 92.08
+  },
+  {
+   "text": "en",
+   "start": 92.092,
+   "end": 92.184
+  },
+  {
+   "text": "commentaire",
+   "start": 92.196,
+   "end": 92.67
+  },
+  {
+   "text": "le",
+   "start": 92.682,
+   "end": 92.774
+  },
+  {
+   "text": "mot",
+   "start": 92.786,
+   "end": 92.913
+  },
+  {
+   "text": "que",
+   "start": 92.925,
+   "end": 93.041
+  },
+  {
+   "text": "tu",
+   "start": 93.052,
+   "end": 93.156
+  },
+  {
+   "text": "ne",
+   "start": 93.168,
+   "end": 93.261
+  },
+  {
+   "text": "connaissais",
+   "start": 93.272,
+   "end": 93.666
+  },
+  {
+   "text": "pas !",
+   "start": 93.677,
+   "end": 93.886
   }
  ]
 }

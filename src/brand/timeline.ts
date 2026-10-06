@@ -31,6 +31,8 @@ export const makeTimeline = (
 		endCard?: number;
 		/** durée minimale de la vidéo (frames) */
 		minTotal?: number;
+		/** la transition démarre `preRoll` s avant que la voix n'attaque la partie */
+		preRoll?: number;
 	} = {},
 ) => {
 	const fps = opts.fps ?? 30;
@@ -45,8 +47,8 @@ export const makeTimeline = (
 	const endStart = sec2f(last.end + off + (opts.tail ?? 1.3));
 	const starts = [
 		0,
-		// la transition commence 0,35 s avant que la voix n'attaque la partie
-		...voice.sections.slice(1).map((s) => sec2f(s.start + off - 0.35)),
+		// la transition commence `preRoll` s avant que la voix n'attaque la partie
+		...voice.sections.slice(1).map((s) => sec2f(s.start + off - (opts.preRoll ?? 0.35))),
 		endStart,
 	];
 	const total = Math.max(opts.minTotal ?? 0, endStart + sec2f(opts.endCard ?? 3.4));

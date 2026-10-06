@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {createContext, useContext} from 'react';
 import {AbsoluteFill, Easing, Img, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
 import {alpha, FONT, GRID, LPI, SHADOW} from './theme';
 
@@ -6,14 +6,14 @@ export const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as co
 
 /* ────────────────────────────── mouvement ────────────────────────────── */
 
-/** Spring doux (léger micro-rebond seulement si `bounce`). */
+/** Spring vif mais amorti (léger micro-rebond seulement si `bounce`). */
 export const useSoft = (at: number, bounce = false) => {
 	const frame = useCurrentFrame();
 	const {fps} = useVideoConfig();
 	return spring({
 		frame: frame - at,
 		fps,
-		config: bounce ? {damping: 14, stiffness: 120, mass: 0.9} : {damping: 22, stiffness: 120, mass: 1},
+		config: bounce ? {damping: 13, stiffness: 190, mass: 0.8} : {damping: 20, stiffness: 170, mass: 0.9},
 	});
 };
 
@@ -58,9 +58,14 @@ export const Box: React.FC<{
 const BLOB =
 	'M520 40 C700 30 860 150 870 330 C880 520 760 640 560 650 C360 660 170 600 120 420 C70 240 300 50 520 40 Z';
 
-/** Fond principal : blanc cassé + deux formes douces bleu clair qui respirent à peine. */
+/** Niveau de décor du fond : « full » (formes bleu clair), « soft » (atténuées), « none » (blanc cassé uni). */
+export type Decor = 'full' | 'soft' | 'none';
+export const DecorContext = createContext<Decor>('full');
+
+/** Fond principal : blanc cassé + formes douces bleu clair qui respirent à peine. */
 export const Background: React.FC<{variant?: 0 | 1 | 2}> = ({variant = 0}) => {
 	const frame = useCurrentFrame();
+	const decor = useContext(DecorContext);
 	const t = frame / 30;
 	const drift = (k: number) => Math.sin(t * 0.25 + k) * 10;
 	const layouts = [
@@ -77,19 +82,22 @@ export const Background: React.FC<{variant?: 0 | 1 | 2}> = ({variant = 0}) => {
 			{x: -380, y: -60, s: 0.75, r: 0},
 		],
 	][variant];
+	const strength = decor === 'full' ? 1 : decor === 'soft' ? 0.4 : 0;
 	return (
 		<AbsoluteFill style={{backgroundColor: LPI.paper}}>
-			<svg width={GRID.w} height={GRID.h} style={{position: 'absolute', inset: 0}}>
-				{layouts.map((b, i) => (
-					<path
-						key={i}
-						d={BLOB}
-						fill={LPI.sky}
-						opacity={i === 0 ? 0.5 : 0.38}
-						transform={`translate(${b.x + drift(i)} ${b.y + drift(i + 2)}) rotate(${b.r} 500 340) scale(${b.s})`}
-					/>
-				))}
-			</svg>
+			{strength > 0 ? (
+				<svg width={GRID.w} height={GRID.h} style={{position: 'absolute', inset: 0}}>
+					{layouts.map((b, i) => (
+						<path
+							key={i}
+							d={BLOB}
+							fill={LPI.sky}
+							opacity={(i === 0 ? 0.5 : 0.38) * strength}
+							transform={`translate(${b.x + drift(i)} ${b.y + drift(i + 2)}) rotate(${b.r} 500 340) scale(${b.s * (decor === 'soft' ? 0.8 : 1)})`}
+						/>
+					))}
+				</svg>
+			) : null}
 		</AbsoluteFill>
 	);
 };
