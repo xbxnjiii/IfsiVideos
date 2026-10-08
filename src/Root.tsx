@@ -8,6 +8,8 @@ import {LpiConstantes, LpiConstantesProps} from './videos/lpi-constantes/LpiCons
 import {TL as LPI_TL} from './videos/lpi-constantes/timeline';
 import {LpiConstantesV3, LpiConstantesV3Props} from './videos/lpi-constantes-v3/LpiConstantesV3';
 import {TL as LPI3_TL} from './videos/lpi-constantes-v3/timeline';
+import {AnatomyDemo} from './anatomy/Demo';
+import {AnatomyLab, LabProps} from './anatomy/Lab';
 import './theme';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
@@ -43,6 +45,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true, decor: 'none'} satisfies LpiConstantesProps}
+		/>
+		<Composition id="Anatomie-Demo" component={AnatomyDemo} durationInFrames={1440} fps={30} width={W} height={H} />
+		<Composition
+			id="Anatomie-Lab"
+			component={AnatomyLab}
+			durationInFrames={300}
+			fps={30}
+			width={W}
+			height={H}
+			defaultProps={{view: 'heart'} as LabProps}
 		/>
 		{/* v3 : voix IA, motion design « moderne » (mascotte planche v2, termes qui claquent, caméra) */}
 		<Composition

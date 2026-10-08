@@ -35,6 +35,34 @@ const currentPose = (poses: [number, Mascot2Key][], frame: number) => {
  *   (effet sticker pop-out). À chaque geste, l'ancienne pose replonge et la nouvelle surgit.
  *   Le bord plat des bustes reste caché dans la pastille.
  */
+/**
+ * Déplacements : [frame de départ, x, y] — la mascotte saute (arc) d'un point au suivant en `hop` frames.
+ * Avec `run`, elle se déplace à plat (course) au lieu de sauter.
+ */
+export type Moves = [number, number, number][];
+
+export const moveAt = (frame: number, moves: Moves, hop = 16, run = false) => {
+	let x = moves[0][1];
+	let y = moves[0][2];
+	let lift = 0;
+	let moving = false;
+	for (let i = 1; i < moves.length; i++) {
+		const [at, nx, ny] = moves[i];
+		if (frame <= at) break;
+		const t = Math.min(1, (frame - at) / hop);
+		const e = t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+		const px = x;
+		const py = y;
+		x = px + (nx - px) * e;
+		y = py + (ny - py) * e;
+		if (t < 1) {
+			moving = true;
+			lift = run ? Math.abs(Math.sin(t * Math.PI * 4)) * 14 : Math.sin(t * Math.PI) * Math.min(160, 60 + Math.hypot(nx - px, ny - py) * 0.25);
+		}
+	}
+	return {x, y, lift, moving};
+};
+
 export const Mascot2: React.FC<{
 	poses: [number, Mascot2Key][];
 	x: number;
@@ -43,9 +71,16 @@ export const Mascot2: React.FC<{
 	from?: 'left' | 'right' | 'bottom';
 	exitAt?: number;
 	bubble?: number;
-}> = ({poses, x, y, height, from = 'right', exitAt, bubble}) => {
+	/** déplacements (remplacent x / y) */
+	moves?: Moves;
+	hop?: number;
+	run?: boolean;
+}> = ({poses, x: x0, y: y0, height, from = 'right', exitAt, bubble, moves, hop = 16, run = false}) => {
 	const frame = useCurrentFrame();
 	const {fps} = useVideoConfig();
+	const mv = moves ? moveAt(frame, moves, hop, run) : {x: x0, y: y0, lift: 0, moving: false};
+	const x = mv.x;
+	const y = mv.y - mv.lift;
 	if (frame < poses[0][0] - 1) return null;
 	const enter = spring({frame: frame - poses[0][0], fps, config: {damping: 12, stiffness: 150, mass: 0.8}});
 	const exit = exitAt === undefined ? 0 : interpolate(frame, [exitAt, exitAt + 10], [0, 1], clamp);
@@ -131,7 +166,7 @@ export const Mascot2: React.FC<{
 	const offset = from === 'left' ? `translateX(${-d}px)` : from === 'right' ? `translateX(${d}px)` : `translateY(${d}px)`;
 	const cur = currentPose(poses, frame);
 	const since = frame - poses[cur][0];
-	const hop = cur === 0 ? 0 : Math.max(0, Math.sin(Math.min(1, since / 9) * Math.PI)) * 26;
+	const bounce = cur === 0 ? 0 : Math.max(0, Math.sin(Math.min(1, since / 9) * Math.PI)) * 26;
 	const squash = cur === 0 ? 1 : 1 + 0.06 * Math.exp(-since / 4) * Math.cos(since * 0.9);
 	return (
 		<div
@@ -140,7 +175,7 @@ export const Mascot2: React.FC<{
 				left: x,
 				top: y,
 				opacity: Math.min(1, enter * 1.6) * (1 - exit),
-				transform: `${offset} translateY(${float - hop}px) rotate(${tilt}deg) scale(${2 - squash}, ${squash})`,
+				transform: `${offset} translateY(${float - bounce}px) rotate(${tilt}deg) scale(${2 - squash}, ${squash})`,
 				transformOrigin: 'bottom center',
 			}}
 		>

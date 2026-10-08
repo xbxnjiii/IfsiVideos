@@ -233,29 +233,33 @@ export const TermSlam: React.FC<{
 	slamY?: number;
 	/** haut de la première place de la fiche */
 	top?: number;
-}> = ({at, index, term, meaning, sign, active = false, slamY = 840, top = SLOT.y}) => {
+	/** place explicite dans la fiche (remplace la colonne unique) */
+	slot?: {x: number; y: number; w: number};
+	/** centre horizontal du « claquement » */
+	slamX?: number;
+}> = ({at, index, term, meaning, sign, active = false, slamY = 840, top = SLOT.y, slot, slamX = 540}) => {
 	const frame = useCurrentFrame();
 	const {fps} = useVideoConfig();
 	const t = frame - at;
 	if (t < 0) return null;
 	const pop = spring({frame: t, fps, config: {damping: 10, stiffness: 230, mass: 0.7}});
 	const fly = interpolate(t, [24, 38], [0, 1], {...clamp, easing: ease});
-	const k = SLOT.w / BIG_W;
+	const target = slot ?? {x: SLOT.x, y: top + index * (SLOT.h + SLOT.gap), w: SLOT.w};
+	const k = target.w / BIG_W;
 	const scale = interpolate(fly, [0, 1], [0.35 + 0.65 * pop, k]);
-	const slotY = top + index * (SLOT.h + SLOT.gap);
 	// on interpole le CENTRE de la carte : le « pop » grandit depuis le centre de l'écran
-	const cx = interpolate(fly, [0, 1], [540, SLOT.x + SLOT.w / 2]);
-	const cy = interpolate(fly, [0, 1], [slamY, slotY + (BIG_H * k) / 2]);
+	const cx = interpolate(fly, [0, 1], [slamX, target.x + target.w / 2]);
+	const cy = interpolate(fly, [0, 1], [slamY, target.y + (BIG_H * k) / 2]);
 	const x = cx - (BIG_W * scale) / 2;
 	const y = cy - (BIG_H * scale) / 2;
 	const rot = interpolate(fly, [0, 1], [(1 - pop) * -10 - 2, 0]);
 	const wiggle = fly < 1 ? Math.sin(t / 2.2) * 0.8 * (1 - fly) : 0;
 	const on = fly < 1 || active;
 	const termSize = fit(term, 66, 0.6);
-	const meaningSize = fit(plain(meaning), 38, 0.53);
+	const meaningSize = fit(plain(meaning), slot ? 46 : 38, 0.53);
 	return (
 		<>
-			{fly < 0.05 ? <Burst at={at + 1} x={540} y={slamY} r={230} n={12} /> : null}
+			{fly < 0.05 ? <Burst at={at + 1} x={slamX} y={slamY} r={230} n={12} /> : null}
 			<div
 				style={{
 					position: 'absolute',
