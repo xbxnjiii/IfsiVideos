@@ -14,17 +14,33 @@ const ease = Easing.bezier(0.22, 1, 0.36, 1); // « easeOutQuint » : départ vi
 
 const punchCurve = (t: number) => (t < 0 ? 0 : t < 4 ? t / 4 : Math.exp(-(t - 4) / 8));
 
-export const Camera: React.FC<{punches?: number[]; children: React.ReactNode; strength?: number}> = ({
+/** secousse d'impact : amortie en ~10 frames, direction pseudo-aléatoire stable */
+export const shakeAt = (frame: number, shakes: number[], amp = 9) => {
+	let x = 0;
+	let y = 0;
+	for (const at of shakes) {
+		const t = frame - at;
+		if (t < 0 || t > 14) continue;
+		const k = amp * Math.exp(-t / 3.5);
+		x += k * Math.sin(t * 2.9 + at);
+		y += k * 0.7 * Math.cos(t * 3.7 + at * 1.3);
+	}
+	return {x, y};
+};
+
+export const Camera: React.FC<{punches?: number[]; shakes?: number[]; children: React.ReactNode; strength?: number}> = ({
 	punches = [],
+	shakes = [],
 	children,
 	strength = 0.05,
 }) => {
 	const frame = useCurrentFrame();
 	const p = punches.reduce((acc, at) => acc + punchCurve(frame - at), 0);
 	const scale = 1 + 0.01 * Math.sin(frame / 55) + strength * Math.min(1.2, p);
-	const x = Math.sin(frame / 70) * 6;
+	const sh = shakeAt(frame, shakes);
+	const x = Math.sin(frame / 70) * 6 + sh.x;
 	return (
-		<AbsoluteFill style={{transform: `translateX(${x}px) scale(${scale})`, transformOrigin: '540px 860px'}}>{children}</AbsoluteFill>
+		<AbsoluteFill style={{transform: `translate(${x}px, ${sh.y}px) scale(${scale})`, transformOrigin: '540px 860px'}}>{children}</AbsoluteFill>
 	);
 };
 

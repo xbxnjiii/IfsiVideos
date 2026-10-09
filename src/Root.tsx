@@ -13,6 +13,7 @@ import {GlTest} from './anatomy3d/GlTest';
 import {Anatomy3DLab, Lab3DProps} from './anatomy3d/Lab3D';
 import {Reel3D} from './anatomy3d/Reel3D';
 import {AnatomyLab, LabProps} from './anatomy/Lab';
+import {MascotCardsTest} from './brand/MascotCardsTest';
 import './theme';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
@@ -59,6 +60,7 @@ export const RemotionRoot: React.FC = () => (
 			defaultProps={{shot: 'full'} as Lab3DProps}
 		/>
 		<Composition id="Anatomie3D-Reel" component={Reel3D} durationInFrames={360} fps={30} width={W} height={H} />
+		<Composition id="Mascotte-Cartes" component={MascotCardsTest} durationInFrames={1} fps={30} width={W} height={H} defaultProps={{cat: 'expressions'}} />
 		<Composition id="Gl-Test" component={GlTest} durationInFrames={60} fps={30} width={W} height={H} />
 		<Composition id="Anatomie-Demo" component={AnatomyDemo} durationInFrames={1440} fps={30} width={W} height={H} />
 		<Composition

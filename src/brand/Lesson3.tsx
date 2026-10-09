@@ -36,16 +36,21 @@ export const Lesson3: React.FC<{
 	stageH?: number;
 	slotTop?: number;
 	terms: Term3[];
-	mascot: [number, Mascot2Key][];
+	/** mascotte intégrée (v3) ; en v4 la mascotte est globale et ce champ reste vide */
+	mascot?: [number, Mascot2Key][];
 	punches?: number[];
-}> = ({n, nAt, title, titleAt, definition, defAt, stage, layers, stageH = L3.stageH, slotTop = SLOT.y, terms, mascot, punches = []}) => {
+	/** côté de la fiche des termes (la mascotte prend l'autre côté) */
+	slotSide?: 'left' | 'right';
+	/** secousses d'impact (numéro, termes) */
+	shake?: boolean;
+}> = ({n, nAt, title, titleAt, definition, defAt, stage, layers, stageH = L3.stageH, slotTop = SLOT.y, terms, mascot, punches = [], slotSide = 'left', shake = false}) => {
 	const frame = useCurrentFrame();
 	const tA = Math.max(titleAt, nAt + 22);
 	const slamY = L3.stageY + stageH / 2;
 	return (
 		<AbsoluteFill>
 			<LiveBackground />
-			<Camera punches={[nAt + 2, ...terms.map((t) => t.at + 1), ...punches]}>
+			<Camera punches={[nAt + 2, ...terms.map((t) => t.at + 1), ...punches]} shakes={shake ? [nAt + 3, ...terms.map((t) => t.at + 4)] : []}>
 				<Stage y={L3.stageY} h={stageH} at={nAt + 18} layers={layers} bumps={terms.map((t) => t.at + 26)}>
 					{stage}
 				</Stage>
@@ -68,7 +73,7 @@ export const Lesson3: React.FC<{
 						</div>
 					</Enter>
 				</div>
-				<Mascot2 poses={mascot} x={L3.mascot.x} y={L3.mascot.y} height={L3.mascot.h} bubble={L3.mascot.r} />
+				{mascot && mascot.length ? <Mascot2 poses={mascot} x={L3.mascot.x} y={L3.mascot.y} height={L3.mascot.h} bubble={L3.mascot.r} /> : null}
 				{terms.map((t, i) => (
 					<TermSlam
 						key={t.term}
@@ -79,6 +84,7 @@ export const Lesson3: React.FC<{
 						sign={t.sign}
 						slamY={slamY}
 						top={slotTop}
+						slot={slotSide === 'right' ? {x: 1008 - SLOT.w, y: slotTop + i * (SLOT.h + SLOT.gap), w: SLOT.w} : undefined}
 						active={frame >= t.at && (i === terms.length - 1 || frame < terms[i + 1].at)}
 					/>
 				))}
