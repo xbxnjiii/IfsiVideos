@@ -1,24 +1,8 @@
 import React from 'react';
 import {Composition} from 'remotion';
-import {PriseDeSang, PriseDeSangProps} from './videos/prise-de-sang/PriseDeSang';
-import {FPS, TOTAL} from './videos/prise-de-sang/timeline';
-import {Constantes, ConstantesProps} from './videos/constantes/Constantes';
-import {FPS as FPS_CONST, TOTAL as TOTAL_CONST} from './videos/constantes/cues';
-import {LpiConstantes, LpiConstantesProps} from './videos/lpi-constantes/LpiConstantes';
-import {TL as LPI_TL} from './videos/lpi-constantes/timeline';
-import {LpiConstantesV3, LpiConstantesV3Props} from './videos/lpi-constantes-v3/LpiConstantesV3';
-import {TL as LPI3_TL} from './videos/lpi-constantes-v3/timeline';
-import {LpiConstantesV4, LpiConstantesV4Props} from './videos/lpi-constantes-v4/LpiConstantesV4';
-import {TL as LPI4_TL} from './videos/lpi-constantes-v4/timeline';
-import {LpiConstantesV5, LpiConstantesV5Props} from './videos/lpi-constantes-v5/LpiConstantesV5';
-import {TL as LPI5_TL} from './videos/lpi-constantes-v5/timeline';
-import {AnatomyDemo} from './anatomy/Demo';
-import {GlTest} from './anatomy3d/GlTest';
-import {Anatomy3DLab, Lab3DProps} from './anatomy3d/Lab3D';
-import {Reel3D} from './anatomy3d/Reel3D';
-import {AnatomyLab, LabProps} from './anatomy/Lab';
 import {MascotCardsTest} from './brand/MascotCardsTest';
-import './theme';
+import {Constantes, ConstantesProps} from './videos/constantes/Constantes';
+import {TL as CONSTANTES_TL} from './videos/constantes/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -26,85 +10,25 @@ const H = 1920;
 
 export const RemotionRoot: React.FC = () => (
 	<>
-		<Composition
-			id="PriseDeSang"
-			component={PriseDeSang}
-			durationInFrames={TOTAL}
-			fps={FPS}
-			width={W}
-			height={H}
-			defaultProps={{sfx: true} satisfies PriseDeSangProps}
-		/>
+		{/* 02 · Les 5 constantes (v5 : mascotte libre, symptômes, repères adultes) */}
 		<Composition
 			id="Constantes"
 			component={Constantes}
-			durationInFrames={TOTAL_CONST}
-			fps={FPS_CONST}
+			durationInFrames={CONSTANTES_TL.total}
+			fps={CONSTANTES_TL.fps}
 			width={W}
 			height={H}
-			defaultProps={{voice: true, music: true, sfx: true, captions: true} satisfies ConstantesProps}
+			defaultProps={{voice: true, sfx: true} satisfies ConstantesProps}
 		/>
-		{/* La Petite IDE — nouvelle direction artistique (référence pour la série) */}
+		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition
-			id="LPI-Constantes"
-			component={LpiConstantes}
-			durationInFrames={LPI_TL.total}
-			fps={LPI_TL.fps}
-			width={W}
-			height={H}
-			defaultProps={{voice: true, sfx: true, decor: 'none'} satisfies LpiConstantesProps}
-		/>
-		<Composition
-			id="Anatomie3D-Lab"
-			component={Anatomy3DLab}
-			durationInFrames={300}
+			id="Mascotte-Planche"
+			component={MascotCardsTest}
+			durationInFrames={1}
 			fps={30}
 			width={W}
 			height={H}
-			defaultProps={{shot: 'full'} as Lab3DProps}
-		/>
-		<Composition id="Anatomie3D-Reel" component={Reel3D} durationInFrames={360} fps={30} width={W} height={H} />
-		<Composition id="Mascotte-Cartes" component={MascotCardsTest} durationInFrames={1} fps={30} width={W} height={H} defaultProps={{cat: 'expressions'}} />
-		<Composition id="Gl-Test" component={GlTest} durationInFrames={60} fps={30} width={W} height={H} />
-		<Composition id="Anatomie-Demo" component={AnatomyDemo} durationInFrames={1440} fps={30} width={W} height={H} />
-		<Composition
-			id="Anatomie-Lab"
-			component={AnatomyLab}
-			durationInFrames={300}
-			fps={30}
-			width={W}
-			height={H}
-			defaultProps={{view: 'heart'} as LabProps}
-		/>
-		{/* v3 : voix IA, motion design « moderne » (mascotte planche v2, termes qui claquent, caméra) */}
-		<Composition
-			id="LPI-Constantes-V3"
-			component={LpiConstantesV3}
-			durationInFrames={LPI3_TL.total}
-			fps={LPI3_TL.fps}
-			width={W}
-			height={H}
-			defaultProps={{voice: true, sfx: true} satisfies LpiConstantesV3Props}
-		/>
-		{/* v4 PILOTE : mascotte actrice sur tout l'écran, transitions variées, tempo / physique de référence */}
-		<Composition
-			id="LPI-Constantes-V4"
-			component={LpiConstantesV4}
-			durationInFrames={LPI4_TL.total}
-			fps={LPI4_TL.fps}
-			width={W}
-			height={H}
-			defaultProps={{voice: true, sfx: true} satisfies LpiConstantesV4Props}
-		/>
-		{/* v5 : pilote regénéré avec les nouvelles planches (mascotte libre, symptômes) + repères adultes */}
-		<Composition
-			id="LPI-Constantes-V5"
-			component={LpiConstantesV5}
-			durationInFrames={LPI5_TL.total}
-			fps={LPI5_TL.fps}
-			width={W}
-			height={H}
-			defaultProps={{voice: true, sfx: true} satisfies LpiConstantesV5Props}
+			defaultProps={{cat: 'expressions', mode: 'free' as const}}
 		/>
 	</>
 );

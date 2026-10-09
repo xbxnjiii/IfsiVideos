@@ -1,12 +1,12 @@
 import React from 'react';
 import {Easing, interpolate, random, useCurrentFrame} from 'remotion';
-import {Lesson3, StatePill} from '../../brand/Lesson3';
+import {Lesson3, Seuil, StatePill} from '../../brand/Lesson3';
 import {Sign} from '../../brand/learn';
 import {Odometer} from '../../brand/motion3';
 import {Artery, Heart, Lungs, Oximeter, Rbc, SnowPicto, Thermometer} from '../../brand/pictos';
 import {alpha, FONT, LPI} from '../../brand/theme';
 import {clamp, useSoft} from '../../brand/ui';
-import {Sfx} from '../../components/Sfx';
+import {Sfx} from '../../brand/Sfx';
 import {at} from './timeline';
 
 const ease = {...clamp, easing: Easing.inOut(Easing.cubic)};
@@ -119,7 +119,7 @@ export const Temperature: React.FC = () => {
 	const value = interpolate(
 		frame,
 		[N + 20, N + 46, FIEVRE - 2, FIEVRE + 18, PAS - 2, PAS + 16, BASSE - 4, BASSE + 14],
-		[35.4, 36.7, 36.7, 39.2, 39.2, 36.8, 36.8, 35.0],
+		[35.4, 36.7, 36.7, 39.2, 39.2, 36.8, 36.8, 34.6],
 		ease,
 	);
 	const hot = interpolate(frame, [FIEVRE + 4, FIEVRE + 14, PAS, PAS + 8], [0, 1, 1, 0], clamp);
@@ -130,6 +130,9 @@ export const Temperature: React.FC = () => {
 	return (
 		<Lesson3
 			n={1}
+			norm={<>normale 36,5 – 37,5 °C</>}
+			slotSide="left"
+			shake
 			nAt={N}
 			title={['La', 'température']}
 			titleAt={T}
@@ -140,16 +143,10 @@ export const Temperature: React.FC = () => {
 				{color: COLD, level: coldFill},
 			]}
 			punches={[FIEVRE + 6, BASSE + 4]}
-			mascot={[
-				[D, 'situations/explique'],
-				[FEB, 'expressions/surprise'],
-				[APY, 'gestes/ok'],
-				[HYP, 'gestes/attention'],
-			]}
 			terms={[
-				{at: FEB, term: 'Fébrile', meaning: 'le patient a de la fièvre', sign: 'up'},
-				{at: APY, term: 'Apyrétique', meaning: "le patient n'a pas de fièvre", sign: 'check'},
-				{at: HYP, term: 'Hypothermie', meaning: 'température trop basse', sign: 'down'},
+				{at: FEB, term: 'Fébrile', meaning: <>le patient a de la fièvre <Seuil>&gt; 38 °C</Seuil></>, sign: 'up'},
+				{at: APY, term: 'Apyrétique', meaning: <>pas de fièvre <Seuil>&lt; 38 °C</Seuil></>, sign: 'check'},
+				{at: HYP, term: 'Hypothermie', meaning: <>température trop basse <Seuil>&lt; 35 °C</Seuil></>, sign: 'down'},
 			]}
 			stage={
 				<>
@@ -261,6 +258,9 @@ export const Cardiaque: React.FC = () => {
 		<>
 			<Lesson3
 				n={2}
+				norm={<>normale 60 – 100 bpm</>}
+				slotSide="right"
+				shake
 				nAt={N}
 				title={['Fréquence', 'cardiaque']}
 				titleAt={T}
@@ -268,15 +268,9 @@ export const Cardiaque: React.FC = () => {
 				defAt={D}
 				layers={[{color: PINK, level: fast}]}
 				punches={[RAP + 4]}
-				mascot={[
-					[D, 'accessoires/stethoscope'],
-					[TA, 'expressions/surprise'],
-					[BR, 'expressions/fatiguee'],
-					[AR, 'expressions/questionnement'],
-				]}
 				terms={[
-					{at: TA, term: 'Tachycardie', meaning: 'le cœur bat trop vite', sign: 'up'},
-					{at: BR, term: 'Bradycardie', meaning: 'le cœur bat trop lentement', sign: 'down'},
+					{at: TA, term: 'Tachycardie', meaning: <>le cœur bat trop vite <Seuil>&gt; 100 bpm</Seuil></>, sign: 'up'},
+					{at: BR, term: 'Bradycardie', meaning: <>le cœur bat trop lentement <Seuil>&lt; 60 bpm</Seuil></>, sign: 'down'},
 					{at: AR, term: 'Arythmie', meaning: 'le rythme est irrégulier', sign: 'wave'},
 				]}
 				stage={
@@ -369,6 +363,9 @@ export const Respiratoire: React.FC = () => {
 	return (
 		<Lesson3
 			n={3}
+			norm={<>normale 12 – 20 / min</>}
+			slotSide="left"
+			shake
 			nAt={N}
 			title={['Fréquence', 'respiratoire']}
 			titleAt={T}
@@ -376,15 +373,9 @@ export const Respiratoire: React.FC = () => {
 			defAt={D}
 			layers={[{color: PINK, level: Math.min(1, fast + dys)}]}
 			punches={[RAP + 4, MAL + 4]}
-			mascot={[
-				[D, 'situations/donne-conseil'],
-				[TA, 'expressions/stressee'],
-				[BR, 'expressions/fatiguee'],
-				[DY, 'gestes/attention'],
-			]}
 			terms={[
-				{at: TA, term: 'Tachypnée', meaning: 'respiration trop rapide', sign: 'up'},
-				{at: BR, term: 'Bradypnée', meaning: 'respiration trop lente', sign: 'down'},
+				{at: TA, term: 'Tachypnée', meaning: <>respiration trop rapide <Seuil>&gt; 20 / min</Seuil></>, sign: 'up'},
+				{at: BR, term: 'Bradypnée', meaning: <>respiration trop lente <Seuil>&lt; 12 / min</Seuil></>, sign: 'down'},
 				{at: DY, term: 'Dyspnée', meaning: 'difficulté à respirer', sign: 'alert'},
 			]}
 			stage={
@@ -518,6 +509,9 @@ export const Pression: React.FC = () => {
 	return (
 		<Lesson3
 			n={4}
+			norm={<>normale ≈ 120/80 mmHg</>}
+			slotSide="right"
+			shake
 			nAt={N}
 			title={['Pression', 'artérielle']}
 			titleAt={T}
@@ -530,18 +524,11 @@ export const Pression: React.FC = () => {
 				{color: COLD, level: low},
 			]}
 			punches={[HAUTE + 4, BASSE + 4]}
-			mascot={[
-				[D, 'accessoires/tensiometre'],
-				[SYS, 'gestes/important'],
-				[DIA, 'gestes/facile'],
-				[HTA, 'expressions/en-colere'],
-				[HYPO, 'expressions/triste'],
-			]}
 			terms={[
 				{at: SYS, term: 'Systolique (PAS)', meaning: '1er chiffre : le cœur se contracte', sign: 'squeeze'},
 				{at: DIA, term: 'Diastolique (PAD)', meaning: '2e chiffre : le cœur se relâche', sign: 'relax'},
-				{at: HTA, term: 'Hypertension', meaning: '(HTA) pression trop haute', sign: 'up'},
-				{at: HYPO, term: 'Hypotension', meaning: 'pression trop basse', sign: 'down'},
+				{at: HTA, term: 'Hypertension', meaning: <>(HTA) pression trop haute <Seuil>≥ 140/90</Seuil></>, sign: 'up'},
+				{at: HYPO, term: 'Hypotension', meaning: <>pression trop basse <Seuil>PAS &lt; 90</Seuil></>, sign: 'down'},
 			]}
 			stage={
 				<>
@@ -644,6 +631,9 @@ export const Saturation: React.FC = () => {
 	return (
 		<Lesson3
 			n={5}
+			norm={<>SpO<Sub2 /> normale 95 – 100 %</>}
+			slotSide="left"
+			shake
 			nAt={N}
 			title={['Saturation en', 'oxygène']}
 			titleAt={T}
@@ -659,12 +649,6 @@ export const Saturation: React.FC = () => {
 			defAt={D}
 			layers={[{color: PINK, level: alertV}]}
 			punches={[OXY + 2, CHUTE + 4]}
-			mascot={[
-				[T, 'situations/cherche-info'],
-				[OXY, 'gestes/regardez'],
-				[DES, 'expressions/surprise'],
-				[HYPX, 'gestes/probleme'],
-			]}
 			terms={[
 				{
 					at: OXY,
@@ -683,7 +667,7 @@ export const Saturation: React.FC = () => {
 					meaning: (
 						<>
 							la SpO
-							<Sub2 /> chute
+							<Sub2 /> chute <Seuil>&lt; 95 %</Seuil>
 						</>
 					),
 					sign: 'down',

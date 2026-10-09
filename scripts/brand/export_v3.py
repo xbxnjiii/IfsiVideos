@@ -1,6 +1,6 @@
 """Intègre les personnages découpés des planches v3 dans la bibliothèque de la mascotte.
 
-Usage : python3 export_v3.py dossier_png public/brand/mascotte-v2 docs/lpi/mascotte-v2-index.webp
+Usage : python3 export_v3.py dossier_png public/brand/mascotte docs/lpi/mascotte-index.webp
   - chaque PNG devient <catégorie>/<nom>.webp (900 px max), en REMPLAÇANT l'ancienne image du même nom ;
   - les anciennes images remplacées par une nouvelle d'un autre nom sont supprimées (SUPPRIMEES) ;
   - le manifeste (tailles) et l'index visuel sont régénérés à partir des fichiers présents.

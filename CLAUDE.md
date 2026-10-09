@@ -1,16 +1,18 @@
 # Mémoire du projet — vidéos « La Petite IDE »
 
 Mini-vidéos IFSI en motion design, **tout en code** (Remotion 4, React → MP4), 1080 × 1920, ≥ 1 min,
-pour TikTok / Reels / Shorts. La référence de qualité est la **vidéo pilote v4**, regénérée en **v5** avec les nouvelles planches :
-composition `LPI-Constantes-V5`, dossier `src/videos/lpi-constantes-v5/` (modèle à copier).
+pour TikTok / Reels / Shorts. La référence de qualité (tempo, physique, mascotte) est la vidéo
+**Constantes** (pilote v4 regénéré en v5) : composition `Constantes`, dossier `src/videos/constantes/`.
+Les anciennes versions (v1 à v4, labo HyperFrames, anatomie SVG / 3D) ont été retirées : elles restent
+dans l'historique git (dernier état complet : commit `ce2a0a2`).
 Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/charte-video.md`.
 
 ## Règles de marque (non négociables)
 
 - Couleurs uniquement : `#4E7AC7` bleu, `#C5D8F4` bleu clair, `#F8F9FC` fond blanc cassé, `#EAA7C1` rose,
   `#2D3A5A` bleu nuit (+ transparences). Exceptions : images officielles de la mascotte et logos.
-- Mascotte : **uniquement les images officielles** (`public/brand/mascotte-v2/`, index visuel
-  `docs/lpi/mascotte-v2-index.webp`), jamais redessinée, **jamais retournée en miroir**.
+- Mascotte : **uniquement les images officielles** (`public/brand/mascotte/`, index visuel
+  `docs/lpi/mascotte-index.webp`), jamais redessinée, **jamais retournée en miroir**.
   **Bustes libres, sans cadre** (`<MascotActor busts="free">` : sticker détouré, bas en fondu) —
   plus de carré autour. Poses en pied libres. Dossier `symptomes/` pour jouer les signes cliniques.
 - **Repères adultes** discrets mais visibles : bandeau `norm` (« ADULTE · normale … ») sous
@@ -26,7 +28,7 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   d'affilée (`src/brand/motion4.tsx` : `zoomInto`, `runWipe`, `whip`, + `wave`).
 - **Physique** : pops à ressort (~12 % de dépassement), sauts en arc centrés sur le mot avec
   accroupie / étirement / écrasement, secousse uniquement à l'impact, sorties rapides accélérées.
-- **Mascotte actrice** (`src/brand/MascotActor.tsx`, exemple `src/videos/lpi-constantes-v5/mascot.ts`) :
+- **Mascotte actrice** (`src/brand/MascotActor.tsx`, exemple `src/videos/constantes/mascot.ts`) :
   une étape par mot clé, expression qui colle au mot (lexique v5 dans la charte, symptômes compris), places qui changent
   sans cesse sur tout l'écran (`home`, `low`, `top`, `bottom`, plein écran), métaphores physiques
   (elle court sur « trop rapide », saute au ralenti sur « trop lent », grelotte, tremble de colère…),
@@ -39,8 +41,8 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
 ## Rendu et contrôle
 
 - Navigateur : `--browser-executable=/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell`
-  `--concurrency=4`. Le pilote se rend en ≈ 5 min (la 3D, ≈ 2 h/min, est en pause).
-- Avant tout rendu complet : `npm run check:mascot`, puis images clés
-  `OUT=out/stills node scripts/qa/stills.mjs <frames…>` + `python3 scripts/qa/contact_sheet.py out/stills`,
+  `--concurrency=4`. ≈ 3,5 s de calcul par seconde de vidéo (pas de 3D : trop lente).
+- Avant tout rendu complet : `npm run check:mascot -- <vidéo>`, puis images clés
+  `COMP=<Composition> OUT=out/stills node scripts/qa/stills.mjs <frames…>` + `python3 scripts/qa/contact_sheet.py out/stills`,
   relues planche par planche.
 - Livrer : MP4 complet + version web (`ffmpeg -crf 26`) + couverture PNG dans `out/` (non versionné).

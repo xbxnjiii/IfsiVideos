@@ -16,8 +16,7 @@
 //  - `fx`   : métaphores physiques du mot (souffle court, frisson, colère, lenteur, joie).
 import React from 'react';
 import {Img, spring, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
-import manifest from '../../public/brand/mascotte-v2/manifest.json';
-import {Mascot2Key} from './Mascot2';
+import manifest from '../../public/brand/mascotte/manifest.json';
 import {alpha, LPI} from './theme';
 
 export type Mood = 'pos' | 'alert' | 'calm';
@@ -28,7 +27,7 @@ export type Fx = 'pant' | 'shiver' | 'shake' | 'slow' | 'bounce';
 export type Beat = {
 	/** frame du mot : la nouvelle expression est visible à cet instant (saut centré dessus) */
 	at: number;
-	key: Mascot2Key;
+	key: MascotKey;
 	/** centre de la carte (bustes) ou point entre les pieds (poses en pied) */
 	x: number;
 	y: number;
@@ -45,9 +44,12 @@ export type Beat = {
 	arc?: number;
 };
 
-const isBody = (k: Mascot2Key) => k.startsWith('poses/') || k.startsWith('maitre/');
-const src = (k: Mascot2Key) => staticFile(`brand/mascotte-v2/${k}.webp`);
-const ratio = (k: Mascot2Key) => manifest[k].w / manifest[k].h;
+/** Toutes les images de la mascotte (clés du manifeste). */
+export type MascotKey = keyof typeof manifest;
+
+const isBody = (k: MascotKey) => k.startsWith('poses/') || k.startsWith('maitre/');
+const src = (k: MascotKey) => staticFile(`brand/mascotte/${k}.webp`);
+const ratio = (k: MascotKey) => manifest[k].w / manifest[k].h;
 
 const MOOD_BG: Record<Mood, [string, string]> = {
 	pos: [LPI.sky, LPI.paper],
@@ -57,7 +59,7 @@ const MOOD_BG: Record<Mood, [string, string]> = {
 
 const ALERT = /stressee|surprise|en-colere|triste|decue|fatiguee|attention|probleme|erreur|facepalm/;
 const POS = /joyeuse|grand-sourire|bravo|bonne-reponse|ok|valide|felicite|encourage|clin-doeil|eureka|bras-ouverts/;
-const moodOf = (k: Mascot2Key): Mood => (ALERT.test(k) ? 'alert' : POS.test(k) ? 'pos' : 'calm');
+const moodOf = (k: MascotKey): Mood => (ALERT.test(k) ? 'alert' : POS.test(k) ? 'pos' : 'calm');
 
 const STICKER = [
 	`drop-shadow(4px 0 0 ${LPI.paper})`,
@@ -67,7 +69,7 @@ const STICKER = [
 ].join(' ');
 
 /** Carte-réaction : tuile arrondie + buste dont la tête dépasse. */
-export const ReactionCard: React.FC<{k: Mascot2Key; w: number; mood: Mood}> = ({k, w, mood}) => {
+export const ReactionCard: React.FC<{k: MascotKey; w: number; mood: Mood}> = ({k, w, mood}) => {
 	const h = w * 1.02;
 	const iw = w * 1.04;
 	const ih = iw / ratio(k);
@@ -142,7 +144,7 @@ const fxOffsets = (fx: Fx | undefined, f: number) => {
 const TILT = [-4, 3, -2, 4, -3, 2];
 
 /** Place équivalente quand on passe d'un buste (centre, largeur) à une pose en pied (pieds, hauteur) ou l'inverse. */
-const asRep = (b: {key: Mascot2Key; x: number; y: number; size: number}, toBody: boolean) => {
+const asRep = (b: {key: MascotKey; x: number; y: number; size: number}, toBody: boolean) => {
 	const body = isBody(b.key);
 	if (body === toBody) return b;
 	if (body) return {...b, y: b.y - b.size * 0.5, size: b.size * 0.62};
@@ -151,7 +153,7 @@ const asRep = (b: {key: Mascot2Key; x: number; y: number; size: number}, toBody:
 
 /** Buste LIBRE (sans cadre) : détouré, liseré blanc « sticker », bas coupé adouci par un fondu.
  *  `size` garde le même encombrement qu'une carte-réaction de largeur `size`. */
-export const FreeBust: React.FC<{k: Mascot2Key; size: number; fade?: boolean}> = ({k, size, fade = true}) => {
+export const FreeBust: React.FC<{k: MascotKey; size: number; fade?: boolean}> = ({k, size, fade = true}) => {
 	const h = size * 1.2;
 	const w = h * ratio(k);
 	const mask = fade ? 'linear-gradient(to bottom, #000 0%, #000 80%, transparent 99%)' : undefined;
@@ -188,7 +190,7 @@ export const MascotActor: React.FC<{
 	const prev = plan[Math.max(0, i - 1)];
 	const next = plan[i + 1];
 
-	let key: Mascot2Key = cur.key;
+	let key: MascotKey = cur.key;
 	let x = cur.x;
 	let y = cur.y;
 	let size = cur.size;

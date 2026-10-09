@@ -4,11 +4,10 @@
 import React from 'react';
 import {AbsoluteFill, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import {Sign, SignKind} from './learn';
-import {Mascot2, Mascot2Key} from './Mascot2';
 import {Camera, ChapterSlam, LiveBackground, SLOT, Stage, TermSlam} from './motion3';
 import {alpha, FONT, LPI, SHADOW} from './theme';
 import {Enter, Title} from './ui';
-import {Sfx} from '../components/Sfx';
+import {Sfx} from './Sfx';
 
 export const L3 = {
 	badge: {x: 136, y: 313, d: 128},
@@ -17,7 +16,6 @@ export const L3 = {
 	defY: 414,
 	stageY: 478,
 	stageH: 540,
-	mascot: {x: 862, y: 1340, r: 150, h: 420},
 };
 
 export type Term3 = {at: number; term: string; meaning: React.ReactNode; sign: SignKind};
@@ -36,8 +34,6 @@ export const Lesson3: React.FC<{
 	stageH?: number;
 	slotTop?: number;
 	terms: Term3[];
-	/** mascotte intégrée (v3) ; en v4 la mascotte est globale et ce champ reste vide */
-	mascot?: [number, Mascot2Key][];
 	punches?: number[];
 	/** côté de la fiche des termes (la mascotte prend l'autre côté) */
 	slotSide?: 'left' | 'right';
@@ -46,7 +42,7 @@ export const Lesson3: React.FC<{
 	/** repère adulte discret sous l'illustration (ex. « normale 36,5 – 37,5 °C ») */
 	norm?: React.ReactNode;
 	normAt?: number;
-}> = ({n, nAt, title, titleAt, definition, defAt, stage, layers, stageH = L3.stageH, slotTop = SLOT.y, terms, mascot, punches = [], slotSide = 'left', shake = false, norm, normAt}) => {
+}> = ({n, nAt, title, titleAt, definition, defAt, stage, layers, stageH = L3.stageH, slotTop = SLOT.y, terms, punches = [], slotSide = 'left', shake = false, norm, normAt}) => {
 	const frame = useCurrentFrame();
 	const tA = Math.max(titleAt, nAt + 22);
 	const slamY = L3.stageY + stageH / 2;
@@ -77,7 +73,6 @@ export const Lesson3: React.FC<{
 						</div>
 					</Enter>
 				</div>
-				{mascot && mascot.length ? <Mascot2 poses={mascot} x={L3.mascot.x} y={L3.mascot.y} height={L3.mascot.h} bubble={L3.mascot.r} /> : null}
 				{terms.map((t, i) => (
 					<TermSlam
 						key={t.term}

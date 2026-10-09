@@ -1,8 +1,15 @@
-// Vérifie le jeu de la mascotte : départs / atterrissages, temps de pose, chevauchements.
-// Usage : npm run check:mascot   (affiche une ligne par étape ; « CHEVAUCHE » = à corriger)
+// Vérifie le jeu de la mascotte d'une vidéo : départs / atterrissages, temps de pose, chevauchements.
+// Usage : npm run check:mascot -- <dossier de la vidéo>   ex. npm run check:mascot -- besoins-fondamentaux
+// (une ligne par étape ; « CHEVAUCHE » = à corriger)
 import {planBeats} from '../../src/brand/MascotActor';
-import {MASCOT} from '../../src/videos/lpi-constantes-v5/mascot';
-import {TL} from '../../src/videos/lpi-constantes-v5/timeline';
+import * as constantes from '../../src/videos/constantes/mascot';
+import * as constantesTL from '../../src/videos/constantes/timeline';
+
+const VIDEOS: Record<string, [typeof constantes.MASCOT, typeof constantesTL.TL]> = {
+	constantes: [constantes.MASCOT, constantesTL.TL],
+};
+const name = process.argv[2] ?? 'constantes';
+const [MASCOT, TL] = VIDEOS[name];
 
 // le chargement des polices (navigateur) échoue sous Node : sans importance ici
 process.on('unhandledRejection', () => undefined);

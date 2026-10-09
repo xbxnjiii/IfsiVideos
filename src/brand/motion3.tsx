@@ -72,7 +72,7 @@ export const LiveBackground: React.FC<{deco?: boolean}> = ({deco = true}) => {
 				? DECO.map((d, i) => (
 						<Img
 							key={i}
-							src={staticFile(`brand/mascotte-v2/elements/${d.key}.webp`)}
+							src={staticFile(`brand/mascotte/elements/${d.key}.webp`)}
 							style={{
 								position: 'absolute',
 								left: d.x - d.s / 2 + Math.sin(t * 0.8 + d.ph) * 10,

@@ -1,12 +1,11 @@
 import React from 'react';
 import {AbsoluteFill, Easing, interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import {Sign, SignKind} from '../../brand/learn';
-import {Mascot2} from '../../brand/Mascot2';
 import {Burst, Camera, Confetti, LiveBackground, Odometer, TapRipple} from '../../brand/motion3';
 import {GaugePicto, HeartPicto, LungsPicto, O2Picto, PictoBadge, ThermoPicto} from '../../brand/pictos';
 import {alpha, FONT, LPI, SHADOW} from '../../brand/theme';
 import {clamp, Enter, Kicker, Title} from '../../brand/ui';
-import {Sfx} from '../../components/Sfx';
+import {Sfx} from '../../brand/Sfx';
 import {at} from './timeline';
 
 const ease = Easing.bezier(0.22, 1, 0.36, 1);
@@ -269,17 +268,6 @@ export const Hook3: React.FC = () => {
 					</div>
 				</div>
 				<Burst at={ABS} x={400} y={1130} r={260} n={12} />
-				<Mascot2
-					poses={[
-						[8, 'gestes/bonjour'],
-						[S, 'gestes/important'],
-						[ABS, 'situations/a-retenir'],
-					]}
-					x={862}
-					y={1340}
-					height={420}
-					bubble={150}
-				/>
 			</Camera>
 			<Sfx name="impact" at={FIVE} volume={0.1} />
 			<Sfx name="whoosh" at={C} volume={0.06} />
@@ -494,18 +482,6 @@ export const Recap3: React.FC = () => {
 				<div style={{position: 'absolute', left: 72, top: 1208}}>
 					<CommentBubble at={COM} text="Quel mot tu ne connaissais pas ?" />
 				</div>
-				<Mascot2
-					poses={[
-						[R + 6, 'situations/recapitule'],
-						[DONE, 'gestes/bravo'],
-						[SAVE + 4, 'gestes/bonne-reponse'],
-						[COM, 'situations/pose-question'],
-					]}
-					x={890}
-					y={1350}
-					height={370}
-					bubble={128}
-				/>
 			</Camera>
 			{named.map((t, k) => (
 				<Sfx key={k} name="pop" at={t} volume={0.11} />

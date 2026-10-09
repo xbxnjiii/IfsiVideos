@@ -1,46 +1,29 @@
-# Storyboard — « Les 5 constantes » (La Petite IDE)
+# Storyboard — « Les 5 constantes » v5 (La Petite IDE)
 
-**Version de test n°2** · 1 min 38 · 1080 × 1920 · voix **maquette** (synthèse « Denise », débit +8 %).
+1 min 28 · 1080 × 1920 · même voix IA que la v3 / v4. Composition Remotion : `Constantes` ·
+code : `src/videos/constantes/`. Même tempo et même physique que la vidéo pilote v4 (retirée du dépôt, voir l’historique git).
 
-## Retours intégrés (v1 → v2)
+## Ce qui change (v4 → v5)
 
-- Filigrane « La Petite IDE » retiré (le logo reste sur la carte de fin).
-- Sous-titres en temps réel retirés.
-- Pastilles « à connaître / à retenir pour l'IFSI » retirées.
-- Musique de fond retirée (ajoutée ensuite sur TikTok / Instagram). Bruitages discrets conservés.
-- Nouvelle accroche : « Les 5 constantes à ne surtout pas oublier… avec les mots techniques ».
-- **16 termes techniques** ajoutés, chacun avec une explication courte (sans valeurs « normales »).
-- Plus dynamique : voix plus rapide, transitions de 0,4 s, chaque terme déclenche une carte,
-  une réaction de l'illustration et un changement d'expression de la mascotte.
-- Fond blanc cassé uni.
+- **Nouvelles planches** de la mascotte (expressions, symptômes, situations, poses) découpées et
+  intégrées ; les anciennes images remplacées ont été supprimées (index : [mascotte-index.webp](mascotte-index.webp)).
+- **Mascotte libre, sans cadre** : les bustes sont des stickers détourés (liseré blanc), le bas coupé
+  s'estompe en fondu — plus de carré autour.
+- **Elle joue les symptômes** : fièvre (poche de glace + thermomètre), frissons, essoufflement,
+  douleur thoracique, vertige, malaise… ; ↑ / ↓ pour le 1er / 2e chiffre de la tension.
+- **Repères adultes** discrets mais visibles : bandeau « ADULTE · normale … » sous chaque illustration,
+  et le seuil dans chaque carte de terme (fébrile > 38 °C, tachycardie > 100 bpm, HTA ≥ 140/90…).
 
-## Déroulé
+## Déroulé (mascotte)
 
-| Timecode | Scène | Ce qui se passe à l'écran | Mascotte (planche officielle) |
-|----------|-------|---------------------------|-------------------------------|
-| 0:00 – 0:08 | **Accroche** | « Les 5 constantes / à ne surtout pas oublier », les 5 pictos en cascade, « + 16 termes techniques », aperçu de 3 termes | Donne un conseil |
-| 0:08 – 0:22 | **1 · Température** | Thermomètre + valeur : 36,7 → 39,2 °C (flamme) → 36,8 °C (✓) → 35,0 °C (flocon) | Réfléchit → Surprise → Confiante → Stressée |
-| | | **Fébrile** : a de la fièvre · **Apyrétique** : n'a pas de fièvre · **Hypothermie** : température trop basse | |
-| 0:22 – 0:35 | **2 · Fréquence cardiaque** | Cœur + tracé qui suivent le rythme : 72 → 128 bpm → 45 bpm → rythme irrégulier | Déterminée → Surprise → Fatiguée → Réfléchit |
-| | | **Tachycardie** : trop vite · **Bradycardie** : trop lentement · **Arythmie** : rythme irrégulier | |
-| 0:35 – 0:48 | **3 · Fréquence respiratoire** | Poumons qui respirent : 16 → 28/min (rapide) → 8/min (lent) → respiration difficile | Joyeuse → Stressée → Fatiguée → Surprise |
-| | | **Tachypnée** : trop rapide · **Bradypnée** : trop lente · **Dyspnée** : difficulté à respirer | |
-| 0:48 – 1:06 | **4 · Pression artérielle** | Artère en coupe + fraction PAS/PAD : 120/80 → 165/100 (paroi poussée fort) → 85/50 (pouls faible) | Réfléchit → Déterminée → Joyeuse → Stressée → Fatiguée |
-| | | **Systolique (PAS)** : 1er chiffre, le cœur se contracte · **Diastolique (PAD)** : 2e chiffre, le cœur se relâche · **Hypertension (HTA)** · **Hypotension** | |
-| 1:06 – 1:23 | **5 · SpO₂** | Oxymètre sur le doigt : 98 % → 86 % (désaturation), le globule rouge perd son O₂ (hypoxémie) | Confiante → Surprise → Stressée |
-| | | **Oxymètre de pouls** : l'appareil · **Désaturation** : la SpO₂ chute · **Hypoxémie** : manque d'O₂ dans le sang | |
-| 1:23 – 1:35 | **Récap + appel** | Les 5 constantes avec leurs termes, « Enregistre pour tes révisions », « Quel mot tu ne connaissais pas ? » | Joyeuse → Célèbre |
-| 1:35 – 1:38 | **Carte de fin** | Logo principal | — |
+| Partie | Repère adulte | Mascotte (mot → image) |
+|--------|---------------|------------------------|
+| Accroche | — | court → présente · « surtout » alerte · « étudiant » sac à dos (monte du bas) · « mots techniques » révise · « absolument » à retenir → plonge dans le picto T° |
+| 1 · Température | normale 36,5 – 37,5 °C | explique · « fièvre » fièvre · **Fébrile > 38 °C** sous la couverture · neutre · **Apyrétique < 38 °C** valide ✓ · « basse » froid · **Hypothermie < 35 °C** grelotte |
+| 2 · Fréquence cardiaque | normale 60 – 100 bpm | schéma du cœur · « trop rapide » traverse en courant · **Tachycardie > 100** douleur thoracique · « trop lente » fatiguée (ralenti) · rythme irrégulier (3 sauts) · **Arythmie** ECG |
+| 3 · Fréquence respiratoire | normale 12 – 20 / min | schéma des poumons · « trop rapide » essoufflée · **Tachypnée > 20** · « trop lente » s'endort · « du mal à respirer » oppression · **Dyspnée** attention |
+| 4 · Pression artérielle | normale ≈ 120/80 mmHg | tensiomètre · « paroi » regardez · **Systolique** ↑ · « cœur » schéma · **Diastolique** ↓ · « relâche » OK · « trop haute » colère · **HTA ≥ 140/90** mal de tête · « trop basse » étourdie · **Hypotension PAS < 90** vertige |
+| 5 · SpO₂ | normale 95 – 100 % | astuce · regardez · **Oxymètre** loupe · « pourcentage » tablette · explique · « chute » ↓ · **Désaturation < 95 %** inquiète · « manque » malaise · **Hypoxémie** attention |
+| Récap | — | récapitule · une pose par constante · bravo + confettis · « Enregistre » lit son cours · « commentaire » pose une question · main levée → repart en courant |
 
-Les chiffres (39,2 °C, 128 bpm, 165/100…) sont des **exemples** pour illustrer le terme, pas des seuils.
-
-## Synchronisation
-
-Chaque carte, réaction d'illustration et expression est déclenchée par le mot prononcé
-(`at('fc', 'tachycardie')`…). La vraie voix recalera toute la vidéo automatiquement.
-
-## Points ouverts
-
-- Durée (1 min 38) : ok, ou version plus courte (débit +12 %, termes les plus importants seulement) ?
-- Valeurs de référence adulte (ex. tachycardie > 100 bpm) : à ajouter, ou on reste sans chiffres ?
-- Formulations des définitions à valider par vos encadrants / formateurs.
+Transitions identiques au pilote : plongée, rideau tiré par la mascotte, panoramiques, vague.

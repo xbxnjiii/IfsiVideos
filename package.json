@@ -7,39 +7,20 @@
     "studio": "remotion studio",
     "typecheck": "tsc --noEmit",
     "sfx": "python3 scripts/make-sfx.py",
-    "render:prise-de-sang": "remotion render PriseDeSang out/01-prise-de-sang-tips.mp4",
-    "cover:prise-de-sang": "remotion still PriseDeSang out/01-prise-de-sang-cover.png --frame=120",
     "render:constantes": "remotion render Constantes out/02-constantes.mp4",
-    "cover:constantes": "remotion still Constantes out/02-constantes-cover.png --frame=118",
-    "render:lpi-constantes": "remotion render LPI-Constantes out/04-lpi-constantes-v2.mp4",
-    "cover:lpi-constantes": "remotion still LPI-Constantes out/04-lpi-constantes-v2-cover.png --frame=199",
-    "render:lpi-constantes-v3": "remotion render LPI-Constantes-V3 out/05-lpi-constantes-v3.mp4",
-    "cover:lpi-constantes-v3": "remotion still LPI-Constantes-V3 out/05-lpi-constantes-v3-cover.png --frame=200",
-    "render:lpi-constantes-v4": "remotion render LPI-Constantes-V4 out/10-lpi-constantes-v4-pilote.mp4",
-    "render:lpi-constantes-v5": "remotion render LPI-Constantes-V5 out/11-lpi-constantes-v5.mp4",
     "check:mascot": "esbuild scripts/qa/check-mascot.ts --bundle --platform=node --loader:.webp=empty --log-level=error --outfile=out/check-mascot.cjs && node out/check-mascot.cjs"
   },
   "dependencies": {
-    "@react-three/fiber": "^9.8.1",
     "@remotion/cli": "^4.0.532",
     "@remotion/fonts": "^4.0.532",
-    "@remotion/paths": "^4.0.532",
-    "@remotion/shapes": "^4.0.532",
-    "@remotion/three": "^4.0.532",
     "@remotion/transitions": "^4.0.532",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
-    "remotion": "^4.0.532",
-    "three": "^0.186.1"
+    "remotion": "^4.0.532"
   },
   "devDependencies": {
-    "@fontsource/fredoka": "^5.3.0",
-    "@fontsource/inter": "^5.3.0",
-    "@fontsource/montserrat": "^5.3.0",
-    "@fontsource/nunito-sans": "^5.3.0",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
-    "@types/three": "^0.186.0",
     "typescript": "^7.0.2"
   }
 }

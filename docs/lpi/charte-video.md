@@ -42,19 +42,10 @@ Ombres et voiles = ces mêmes couleurs en transparence.
 2. **Ce qu'on comprend** : titre + pastilles de mots-clés.
 3. **Ce qui accompagne** : mascotte, formes de fond.
 
-## Mascotte (`src/brand/Mascot.tsx`, fichiers `public/brand/mascotte/`)
+## Mascotte (images `public/brand/mascotte/`, index `docs/lpi/mascotte-index.webp`)
 
-Uniquement les illustrations officielles (détourées et agrandies, jamais redessinées, jamais
-retournées en miroir, car le badge « IDE » serait inversé).
-
-- Expressions (bustes) : `joyeuse`, `reflechit`, `surprise`, `stressee`, `confiante`, `fatiguee`, `determinee`.
-- Poses (en pied) : `explique`, `notes`, `revise`, `soins`, `conseil`, `celebre`, `face`.
-- Placement : sur le côté, en bas, ou **derrière une carte** (elle dépasse du bord). Jamais au
-  centre par défaut, et pas dans chaque scène.
-- Elle réagit à la narration : `poses={[[at('temp','elle'), 'reflechit'], [at('temp','fièvre'), 'surprise']]}`.
-- Liseré blanc cassé « sticker » + ombre douce, flottement très léger.
-
-### Mascotte v2 (`src/brand/Mascot2.tsx`, fichiers `public/brand/mascotte-v2/`)
+Uniquement les illustrations officielles : jamais redessinées, **jamais retournées en miroir**
+(le badge « IDE » serait inversé).
 
 **Planches v3 (octobre 2026)** : `assets/planches/v3-{expressions,symptomes,situations,poses}.webp`, déjà
 détourées. Découpe reproductible : `scripts/brand/upscale_rgba.py` (×4), puis `scripts/brand/cut_v3.py`
@@ -64,7 +55,7 @@ Nouveau dossier `symptomes/` (40 : fièvre, froid, grelotte, essoufflée, vertig
 
 Planches v2 : `assets/planches/v2-*.webp` (originaux), découpe reproductible avec
 `scripts/brand/export_all.py` (crops dans `scripts/brand/planche-v2-*.crops.json`). Index visuel
-de tous les fichiers : `docs/lpi/mascotte-v2-index.webp`.
+de tous les fichiers : `docs/lpi/mascotte-index.webp`.
 
 | Dossier | Clés |
 |---------|------|
@@ -77,14 +68,7 @@ de tous les fichiers : `docs/lpi/mascotte-v2-index.webp`.
 | `accessoires/` | baskets, clipboard, fiches, livres, seringue, stethoscope-seul, stethoscope, tablette-stylo, tablette, telephone, tensiometre |
 | `elements/` | bulle, coeur-bleu, coeur-rose, etincelle, exclamation, question, sticker-lpi |
 
-- Bustes : toujours avec `bubble` (la mascotte **surgit d'une pastille** bleu clair, le bord plat
-  du buste reste caché). À chaque geste, l'ancienne pose replonge et la nouvelle ressort.
-  `<Mascot2 poses={[[at('fc','nombre'), 'accessoires/stethoscope'], [at('fc','tachycardie'), 'expressions/surprise']]} x={862} y={1340} height={420} bubble={150} />`
-- Poses en pied : sans `bubble`, ancrées par les pieds.
-- Un geste qui illustre le mot : *tensiomètre* pour la pression, *en colère* pour « trop haute »,
-  *fatiguée* pour « trop lent », *pose une question* pour l'appel au commentaire.
-
-## Animation (`src/brand/ui.tsx`, `src/brand/motion.tsx`)
+## Animation (`src/brand/ui.tsx`, `src/brand/motion3.tsx`)
 
 - Apparition : fondu + glissement 20–40 px + scale 0,97 → 1 (`<Enter>`), ressort amorti.
 - Micro-rebond seulement pour les éléments « vivants » (mascotte, chiffres, pastilles).
@@ -95,9 +79,7 @@ de tous les fichiers : `docs/lpi/mascotte-v2-index.webp`.
 
 ## Transitions
 
-Cercle qui dévoile la scène suivante, bordé d'un anneau bleu clair, en 0,4 s, à partir de
-l'élément dont on va parler (ex. le picto T° de l'intro vers la scène Température).
-En v3 : **vague de marque** (`wave()` dans `src/brand/motion3.tsx`) — flash bleu puis bleu clair
+**Vague de marque** (`wave()` dans `src/brand/motion3.tsx`) — flash bleu puis bleu clair
 puis dévoilement, 14 frames, depuis l'endroit où l'action de la scène suivante démarre.
 
 **v4 (pilote) — jamais deux fois la même transition d'affilée** (`src/brand/motion4.tsx`), toujours
@@ -110,13 +92,13 @@ puis dévoilement, 14 frames, depuis l'endroit où l'action de la scène suivant
 | `whip('up' \| 'left')` | panoramique éclair avec flou de bougé directionnel | s'envole / file avec le mouvement |
 | `wave({x, y})` | vague de marque (v3) | saute vers sa place de la scène suivante par-dessus la vague |
 
-## Motion v3 « moderne » (`src/brand/motion3.tsx`, `src/brand/Lesson3.tsx`)
+## Briques de motion (`src/brand/motion3.tsx`, `src/brand/Lesson3.tsx`)
 
-Validé pour la v3 de test (plus animé, plus visuel) — toujours dans la palette, sans effet lumineux :
+Toujours dans la palette, sans effet lumineux :
 
 | Brique | Rôle |
 |--------|------|
-| `Lesson3` | gabarit complet d'une notion : numéro, titre 2 lignes, définition, socle, termes, mascotte, caméra |
+| `Lesson3` | gabarit complet d'une notion : numéro, titre 2 lignes, définition, socle, termes, repère adulte, caméra |
 | `ChapterSlam` | gros numéro qui s'écrase au centre (éclats) puis file dans le coin du titre |
 | `TermSlam` | le terme « claque » en grand au centre (lettre par lettre), sa définition glisse, puis la carte file à sa place dans la fiche |
 | `Camera` | dérive très lente + petit coup de zoom (≈ 5 %) sur chaque mot clé |
@@ -128,7 +110,7 @@ Validé pour la v3 de test (plus animé, plus visuel) — toujours dans la palet
 
 ## Tempo et physique — RÉFÉRENCE (vidéo pilote v4)
 
-Validé sur la vidéo pilote `LPI-Constantes-V4` : ce sont les réglages à reprendre tels quels pour
+Validé sur la vidéo pilote (v4, regénérée en v5 : composition `Constantes`) : ce sont les réglages à reprendre tels quels pour
 toutes les prochaines vidéos (30 fps, voix d'abord : **chaque mouvement est déclenché par un mot**).
 
 ### Tempo
@@ -168,18 +150,15 @@ toutes les prochaines vidéos (30 fps, voix d'abord : **chaque mouvement est dé
 | hypotension, « basse » | s'affaisse lentement vers le bas | `dur: 22, arc: 12` |
 | bravo, apyrétique (✓) | sautille de joie | `fx: 'bounce'` |
 
-## Mascotte actrice (v4, `src/brand/MascotActor.tsx`)
+## Mascotte actrice (`src/brand/MascotActor.tsx`)
 
 Une seule mascotte **globale** (au-dessus des scènes, frames absolues) pilotée par une liste
 d'étapes `Beat` : `{at: abs('fc', 'tachycardie'), key: 'expressions/surprise', via: 'pop', fx: 'pant', x, y, size}`.
-Exemple complet : `src/videos/lpi-constantes-v4/mascot.ts`. Contrôle : `npm run check:mascot`.
+Exemple complet : `src/videos/constantes/mascot.ts`. Contrôle : `npm run check:mascot -- <vidéo>`.
 
-- **Depuis la v5 : bustes LIBRES, sans cadre** (`<MascotActor busts="free">`, composant `FreeBust`) :
-  détourés, liseré blanc « sticker », le bas coupé du buste s'estompe en fondu. C'est le rendu par défaut.
-- (v4) Bustes en cartes-réaction (`ReactionCard`) : tuile arrondie dont les bords coïncident avec les
-  bords coupés du dessin (fini les épaules / mains coupées net) ; la tête dépasse en haut. Fond selon
-  l'humeur (déduite de la clé) : rose = alerte, bleu clair = positif, pâle = neutre.
-  Les fragments parasites des découpes ont été retirés (`scripts/brand/clean_strays.py`).
+- **Bustes LIBRES, sans cadre** (`<MascotActor busts="free">`, composant `FreeBust`) : détourés,
+  liseré blanc « sticker », le bas coupé du buste s'estompe en fondu. Jamais de carré autour.
+  (`ReactionCard`, la carte-réaction de la v4, reste disponible mais n'est plus utilisée.)
 - **Poses en pied** libres (pieds au sol, ombre) : course, bras ouverts, main levée… Elles regardent
   toutes vers la droite : **on ne retourne jamais l'image**, donc elle court toujours de gauche à droite.
 - **Jamais au même endroit** : elle utilise tout l'écran. Places d'une leçon (côté opposé à la fiche,
@@ -259,18 +238,10 @@ avec ces seuils (ex. l'hypothermie s'affiche sous 35 °C).
 ## Contrôle qualité (à chaque vidéo)
 
 1. `npm run check:mascot` : aucun chevauchement d'étapes, temps de pose suffisants.
-2. Images clés : `OUT=out/stills node scripts/qa/stills.mjs 10 30 60 …` (un instant par mot clé),
+2. Images clés : `COMP=<Composition> OUT=out/stills node scripts/qa/stills.mjs 10 30 60 …` (un instant par mot clé),
    puis `python3 scripts/qa/contact_sheet.py out/stills` et relecture planche par planche :
    rien de masqué, pas de coupe visible, expressions justes.
 3. Rendu complet, puis version web (`ffmpeg -crf 26`) et couverture.
-
-## Gabarit « fiche » (`src/brand/LessonLayout.tsx`, `src/brand/learn.tsx`)
-
-Chaque notion = numéro + titre + définition + illustration + **termes techniques** :
-`<TermCard at={at('fc','tachycardie')} term="Tachycardie" meaning="le cœur bat trop vite" sign="up" />`.
-Le terme apparaît quand il est prononcé, s'allume tant qu'il est courant puis reste affiché
-(la fiche de révision se construit à l'écran). Signes : ↑ trop haut (rose), ↓ trop bas (bleu clair),
-✓, rythme irrégulier, alerte, contraction / relâchement, appareil, manque.
 
 ## Accroche
 
@@ -283,44 +254,19 @@ oublier… ») + un aperçu de ce qu'on va apprendre (ex. « + 16 termes techniq
 
 ## Son
 
-- Voix : -15 LUFS. Voix maquette = `scripts/voice/tts_maquette.py` (à remplacer par la vraie voix
-  via `scripts/voice/prepare_voice.py`, même format de synchro).
+- Voix : -15 LUFS. Voix IA déjà propre (ElevenLabs…) : `scripts/voice/align_voice.py` ; vraie voix
+  enregistrée (blancs à couper, bruit) : `scripts/voice/prepare_voice.py`. Même format de synchro.
 - Pas de musique dans le fichier exporté : elle est ajoutée sur TikTok / Instagram.
-  (`scripts/make-music.py` reste disponible pour YouTube si besoin.)
 - Bruitages très discrets calés sur l'action (pop à chaque terme, souffle de transition, battements).
-
-## Anatomie 3D (`src/anatomy3d/`, modèles `public/anatomy3d/`)
-
-> **En pause** : le rendu 3D est trop long (≈ 2 h pour 1 min de vidéo sans carte graphique). On reste
-> sur le motion design 2D (v3 → v4). Le code et les modèles restent disponibles pour plus tard.
-
-Direction testée : **vrais modèles anatomiques** (BodyParts3D, données ouvertes)
-rendus en 3D avec Three.js, fond bleu nuit, et le rouge est autorisé pour le sang et les organes
-(la charte reste valable pour les textes, cartes, mascotte et décors).
-
-| Système | Rendu |
-|---------|-------|
-| Peau | verre bleuté, liseré lumineux (fresnel) ; teinte rose = fièvre, bleue = froid |
-| Squelette | ivoire translucide, discret |
-| Cœur | myocarde rouge verni, coronaires rouge vif, veines cardiaques bleues ; il bat (contraction) |
-| Artères | rouge sang, onde de pouls lumineuse qui part du cœur à chaque battement, sang qui défile |
-| Veines | bleu profond, sang qui remonte vers le cœur |
-| Poumons | verre rose, arbre bronchique blanc bleuté visible à l'intérieur ; ils respirent |
-| Gros plans | intérieur du vaisseau : globules rouges biconcaves + molécules d'O₂ |
-
-- Un plan = un sujet isolé (les autres systèmes s'effacent) ; la caméra voyage d'un organe à l'autre.
-- Rendu : `npx remotion render <Composition> --gl=angle --timeout=300000` (WebGL sans carte graphique).
-- **Crédit obligatoire** dans la description : voir `public/anatomy3d/CREDITS.md`.
-- Régénérer les modèles : `python3 scripts/anatomy3d/build_glb.py <dossier_bp3d> public/anatomy3d`.
 
 ## Nouvelle vidéo : recette
 
-1. Écrire le script validé dans `voix/<n>-<sujet>.tts.json` (une entrée par scène) : accroche,
-   puis pour chaque notion une définition courte et ses termes techniques, puis récap + appel.
-2. `python3 scripts/voice/tts_maquette.py voix/<…>.tts.json <episode>` → voix + `voice.json`.
-3. Copier `src/videos/lpi-constantes-v5/` comme modèle : gabarit `Lesson3` avec `slotSide`
-   qui alterne, `shake` et `norm` (repère adulte), une scène = un composant, animations via `at(scène, mot)`.
-   Voix IA déjà propre : `scripts/voice/align_voice.py`.
+1. Écrire le texte EXACT dit par la voix dans `voix/<n>-<sujet>.script.json` (une entrée par partie,
+   sans les balises d'émotion [excited]…).
+2. `python3 scripts/voice/align_voice.py VOIX.mp3 voix/<n>-<sujet>.script.json <dossier>` →
+   `public/voix/<dossier>/voix.wav` + `src/videos/<dossier>/voice.json`.
+3. Copier la vidéo la plus proche comme modèle : `src/videos/constantes/` (notions + termes techniques,
+   gabarit `Lesson3`) ; une scène = un composant, animations via `at(scène, mot)`.
 4. Écrire `mascot.ts` (une étape par mot clé, lexique ci-dessus) et choisir les transitions
    (jamais deux fois la même d'affilée).
 5. Contrôle qualité (ci-dessus), puis `npx remotion render <Composition> out/<fichier>.mp4`.
