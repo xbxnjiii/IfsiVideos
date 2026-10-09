@@ -7,8 +7,9 @@ import * as THREE from 'three';
 import {LPI} from '../brand/theme';
 import {Body3D, Look3D} from './Body3D';
 import {Anatomy, useAnatomy} from './useAnatomy';
+import {Vessel3D} from './Vessel3D';
 
-export type Shot = 'full' | 'heart' | 'lungs' | 'arm' | 'hand';
+export type Shot = 'full' | 'heart' | 'lungs' | 'arm' | 'hand' | 'vessel';
 export type Lab3DProps = {shot: Shot};
 
 /** caméra : position + cible (m) */
@@ -46,6 +47,20 @@ export const Anatomy3DLab: React.FC<Lab3DProps> = ({shot}) => {
 	const a = useAnatomy();
 	const t = frame % 25;
 	const beat = t < 3 ? t / 3 : Math.exp(-(t - 3) / 5);
+	if (shot === 'vessel') {
+		return (
+			<AbsoluteFill style={{background: `radial-gradient(ellipse 75% 60% at 50% 45%, #5a2a3c 0%, #2a1520 80%)`}}>
+				<ThreeCanvas width={width} height={height} gl={{antialias: true, alpha: true}} flat>
+					<CameraRig pos={new THREE.Vector3(-2.6, 0.9, 7.2)} target={new THREE.Vector3(0.8, 0, 0)} fov={40} />
+					<ambientLight intensity={0.5} />
+					<pointLight position={[0, 0, 0]} intensity={6} distance={6} color="#ffd0d8" />
+					<directionalLight position={[2, 3, 4]} intensity={2.2} />
+					<directionalLight position={[-3, -1, 2]} intensity={1.4} color="#4E7AC7" />
+					<Vessel3D shot={{time: frame / fps, travel: frame / fps * 1.2, push: beat, strength: 1, sat: 0.9}} />
+				</ThreeCanvas>
+			</AbsoluteFill>
+		);
+	}
 	const iso = {
 		full: {skin: 1, bones: 0.6, vessels: 1, heart: 1, lungs: 0.5, bronchi: 0.3},
 		heart: {skin: 0, bones: 0, vessels: 1, heart: 1, lungs: 0, bronchi: 0},

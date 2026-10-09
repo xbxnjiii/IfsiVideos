@@ -133,6 +133,27 @@ oublier… ») + un aperçu de ce qu'on va apprendre (ex. « + 16 termes techniq
   (`scripts/make-music.py` reste disponible pour YouTube si besoin.)
 - Bruitages très discrets calés sur l'action (pop à chaque terme, souffle de transition, battements).
 
+## Anatomie 3D (`src/anatomy3d/`, modèles `public/anatomy3d/`)
+
+Direction validée après les tests : **vrais modèles anatomiques** (BodyParts3D, données ouvertes)
+rendus en 3D avec Three.js, fond bleu nuit, et le rouge est autorisé pour le sang et les organes
+(la charte reste valable pour les textes, cartes, mascotte et décors).
+
+| Système | Rendu |
+|---------|-------|
+| Peau | verre bleuté, liseré lumineux (fresnel) ; teinte rose = fièvre, bleue = froid |
+| Squelette | ivoire translucide, discret |
+| Cœur | myocarde rouge verni, coronaires rouge vif, veines cardiaques bleues ; il bat (contraction) |
+| Artères | rouge sang, onde de pouls lumineuse qui part du cœur à chaque battement, sang qui défile |
+| Veines | bleu profond, sang qui remonte vers le cœur |
+| Poumons | verre rose, arbre bronchique blanc bleuté visible à l'intérieur ; ils respirent |
+| Gros plans | intérieur du vaisseau : globules rouges biconcaves + molécules d'O₂ |
+
+- Un plan = un sujet isolé (les autres systèmes s'effacent) ; la caméra voyage d'un organe à l'autre.
+- Rendu : `npx remotion render <Composition> --gl=angle --timeout=300000` (WebGL sans carte graphique).
+- **Crédit obligatoire** dans la description : voir `public/anatomy3d/CREDITS.md`.
+- Régénérer les modèles : `python3 scripts/anatomy3d/build_glb.py <dossier_bp3d> public/anatomy3d`.
+
 ## Nouvelle vidéo : recette
 
 1. Écrire le script validé dans `voix/<n>-<sujet>.tts.json` (une entrée par scène) : accroche,
