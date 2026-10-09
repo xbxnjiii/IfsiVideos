@@ -56,19 +56,26 @@ retournées en miroir, car le badge « IDE » serait inversé).
 
 ### Mascotte v2 (`src/brand/Mascot2.tsx`, fichiers `public/brand/mascotte-v2/`)
 
-Planches fournies en v3 : `assets/planches/v2-*.webp` (originaux), découpe reproductible avec
+**Planches v3 (octobre 2026)** : `assets/planches/v3-{expressions,symptomes,situations,poses}.webp`, déjà
+détourées. Découpe reproductible : `scripts/brand/upscale_rgba.py` (×4), puis `scripts/brand/cut_v3.py`
+(points d'ancrage par personnage dans `scripts/brand/planches-v3.json`), puis `scripts/brand/export_v3.py`
+(remplace les anciennes images, supprime celles qui sont remplacées, régénère manifeste + index).
+Nouveau dossier `symptomes/` (40 : fièvre, froid, grelotte, essoufflée, vertige, malaise, nausée…).
+
+Planches v2 : `assets/planches/v2-*.webp` (originaux), découpe reproductible avec
 `scripts/brand/export_all.py` (crops dans `scripts/brand/planche-v2-*.crops.json`). Index visuel
 de tous les fichiers : `docs/lpi/mascotte-v2-index.webp`.
 
 | Dossier | Clés |
 |---------|------|
-| `maitre/` (en pied, 6 vues) | face, trois-quarts-gauche, profil-gauche, dos, profil-droit, trois-quarts-droit |
-| `expressions/` (bustes) | neutre, sourire-leger, grand-sourire, joyeuse, surprise, questionnement, reflechit, triste, decue, stressee, en-colere, fatiguee, eureka, clin-doeil |
-| `gestes/` | bonjour, au-revoir, regardez, attention, astuce, important, erreur, bonne-reponse, ok, facile, probleme, bravo, chut, facepalm |
-| `situations/` | explique, montre-schema, lit-document, prend-notes, cherche-info, idee, corrige-erreur, valide, encourage, a-retenir, pose-question, donne-conseil, recapitule, felicite |
-| `poses/` (en pied) | debout, marche, course, assise, accroupie, bras-croises, main-levee, bras-ouverts |
-| `accessoires/` | stethoscope, seringue, tensiometre, tablette, ordinateur, fiches, clipboard, telephone, livres, schema-ecg, stethoscope-seul, baskets |
-| `elements/` | coeur-rose, coeur-bleu, etincelle, bulle, question, exclamation, sticker-lpi |
+| `maitre/` | dos, face, profil, trois-quarts-1, trois-quarts-2, trois-quarts-3 |
+| `poses/` | accroupie, assise-sol, assise, bras-croises, bras-ouverts, course-joie, course, debout, lit-assise, main-levee, mains-hanches, marche, montre, presente, sac-a-dos |
+| `expressions/` | alerte, cache-visage, clin-doeil, coeur-mains, ecrit, en-colere, eureka, fatiguee, genee, inquiete, joyeuse, loupe, neutre, ok, pouce, questionnement, reflechit, stressee, surprise, triste, youpi |
+| `symptomes/` | baille, cernes, coup-de-chaud, crampes, dort-oreiller, dort, douleur-poitrine, douleur, epuisee, essoufflee, eternue, etourdie, fievre-couverture, fievre-glace, fievre, froid, frotte-yeux, grelotte, lasse, mal-de-tete-2, mal-de-tete, mal-dents, mal-dos, mal-gorge, mal-nuque, mal-oreille, mal-ventre, malaise, masque, migraine, mouche, nausee-vertige, nausee, oppression, souffle, toilettes, toux-main, toux, vertige, vomit |
+| `gestes/` | astuce, attention, au-revoir, baisse, bonjour, bonne-reponse, bras-ouverts, bravo, chut, erreur, facepalm, facile, hausse, important, montre-haut, motivee, ok, presente, probleme, question, regardez |
+| `situations/` | a-retenir, checklist, cherche-info, corrige-erreur, donne-conseil, encourage, etudie, explique, idee, lit-cours, lit-document, medicament, montre-digestif, montre-document, montre-ecg, montre-poumons, montre-schema, pensive, pose-question, pouce, prend-notes, question-tablette, recapitule, reflexion, revise, schema, stylo, tablette, travaille, valide |
+| `accessoires/` | baskets, clipboard, fiches, livres, seringue, stethoscope-seul, stethoscope, tablette-stylo, tablette, telephone, tensiometre |
+| `elements/` | bulle, coeur-bleu, coeur-rose, etincelle, exclamation, question, sticker-lpi |
 
 - Bustes : toujours avec `bubble` (la mascotte **surgit d'une pastille** bleu clair, le bord plat
   du buste reste caché). À chaque geste, l'ancienne pose replonge et la nouvelle ressort.
@@ -167,7 +174,9 @@ Une seule mascotte **globale** (au-dessus des scènes, frames absolues) pilotée
 d'étapes `Beat` : `{at: abs('fc', 'tachycardie'), key: 'expressions/surprise', via: 'pop', fx: 'pant', x, y, size}`.
 Exemple complet : `src/videos/lpi-constantes-v4/mascot.ts`. Contrôle : `npm run check:mascot`.
 
-- **Bustes = cartes-réaction** (`ReactionCard`) : tuile arrondie dont les bords coïncident avec les
+- **Depuis la v5 : bustes LIBRES, sans cadre** (`<MascotActor busts="free">`, composant `FreeBust`) :
+  détourés, liseré blanc « sticker », le bas coupé du buste s'estompe en fondu. C'est le rendu par défaut.
+- (v4) Bustes en cartes-réaction (`ReactionCard`) : tuile arrondie dont les bords coïncident avec les
   bords coupés du dessin (fini les épaules / mains coupées net) ; la tête dépasse en haut. Fond selon
   l'humeur (déduite de la clé) : rose = alerte, bleu clair = positif, pâle = neutre.
   Les fragments parasites des découpes ont été retirés (`scripts/brand/clean_strays.py`).
@@ -191,35 +200,61 @@ Exemple complet : `src/videos/lpi-constantes-v4/mascot.ts`. Contrôle : `npm run
 
 ### Lexique « mot → expression » (à réutiliser)
 
-| Le script dit… | Clé mascotte |
-|----------------|--------------|
-| accueil, « Les 5… » | `poses/bras-ouverts` (arrivée en courant) |
-| « surtout », « important », « deuxième » | `gestes/important` (deux doigts levés) |
-| « premier », un conseil | `situations/donne-conseil` (un doigt levé) |
-| « étudiant » | `poses/main-levee` |
-| « mots techniques », vocabulaire | `accessoires/livres` |
+| Le script dit… | Clé mascotte (v5) |
+|----------------|-------------------|
+| accueil, « Les 5… » | `poses/course` → `poses/presente` (arrivée en courant) |
+| « surtout », alerte | `expressions/alerte` |
+| « étudiant » | `poses/sac-a-dos` (monte du bas de l'écran) |
+| « mots techniques », réviser | `situations/revise` |
 | « absolument », « à retenir » | `situations/a-retenir` |
 | définition, « évalue », « transporte » | `situations/explique` |
-| mesure au stéthoscope (pouls, battements) | `accessoires/stethoscope` |
-| compter, noter | `situations/prend-notes` |
-| pression, tension | `accessoires/tensiometre` |
-| cœur (schéma) | `situations/montre-schema` ; rythme cardiaque → `accessoires/schema-ecg` |
+| cœur, battements | `situations/montre-schema` ; rythme → `situations/montre-ecg` |
+| respiration, poumons | `situations/montre-poumons` |
+| fièvre | `symptomes/fievre` ; fébrile → `symptomes/fievre-couverture` |
+| pas de fièvre, normal, ✓ | `expressions/neutre` puis `situations/valide` |
+| froid, « trop basse » (T°), hypothermie | `symptomes/froid`, `symptomes/grelotte` |
+| « trop rapide » (cœur) | elle traverse en courant, puis `symptomes/douleur-poitrine` |
+| « trop rapide » (respiration) | `symptomes/essoufflee`, `symptomes/souffle` |
+| « trop lent » | `expressions/fatiguee` ; respiration lente → `symptomes/dort` |
+| rythme irrégulier | `expressions/questionnement` (3 petits sauts) |
+| « du mal à respirer » | `symptomes/oppression` |
+| pression, tension | `accessoires/tensiometre` ; « paroi » → `gestes/regardez` |
+| 1er chiffre / 2e chiffre | `gestes/hausse` (↑) / `gestes/baisse` (↓) |
+| se relâche | `expressions/ok` |
+| « trop haute », hypertension | `expressions/en-colere`, `symptomes/mal-de-tete-2` |
+| « trop basse » (PA), hypotension | `symptomes/etourdie`, `symptomes/vertige` (s'affaisse) |
+| dernier point, astuce | `gestes/astuce` |
+| un appareil, mesurer | `expressions/loupe` |
 | pourcentage, données | `accessoires/tablette` |
-| « regarde », un appareil à l'écran | `gestes/regardez` |
-| « Et cinq » (dernier point), astuce | `gestes/astuce` |
-| ça monte, « trop rapide », « chute » (surprise) | `expressions/surprise` |
-| fièvre, « mal à respirer », manque | `expressions/stressee` / `gestes/probleme` |
-| « trop lent », bradycardie / bradypnée | `expressions/fatiguee` |
-| « trop basse », froid | `expressions/triste` ; hypotension → `expressions/decue` |
-| « trop haute », hypertension | `expressions/en-colere` |
-| se relâche, détente | `expressions/grand-sourire` |
-| normal, « pas de fièvre », ✓ | `gestes/bonne-reponse` / `expressions/sourire-leger` |
-| alerte, terme « danger » (hypothermie, dyspnée, hypoxémie) | `gestes/attention` |
-| « Récapitulons » | `situations/recapitule` ; fin du récap → `gestes/bravo` |
-| « Enregistre » | `accessoires/telephone` ; « commentaire » → `situations/pose-question` ; fin → `gestes/au-revoir` |
+| « chute » | `gestes/baisse` ; désaturation → `expressions/inquiete` |
+| manque (d'oxygène) | `symptomes/malaise` |
+| terme « danger » (dyspnée, hypoxémie) | `gestes/attention` |
+| « Récapitulons » | `situations/recapitule` ; puis la pose de chaque constante ; fin → `gestes/bravo` |
+| « Enregistre » | `situations/lit-cours` ; « commentaire » → `situations/pose-question` ; fin → `poses/main-levee` |
 
 Mêmes familles de mots = mêmes expressions d'une partie à l'autre (« tachy- » = surprise,
 « brady- » = fatiguée) : la répétition aide à mémoriser.
+
+## Repères adultes (v5)
+
+Les valeurs de référence de l'adulte sont **visibles mais discrètes** :
+
+- un petit bandeau `NormRibbon` (« ADULTE · normale 36,5 – 37,5 °C ») à cheval sur le bas de
+  l'illustration : prop `norm` de `Lesson3` ; il apparaît avec la définition ;
+- le **seuil** de chaque terme dans sa carte, en bleu gras (`<Seuil>&gt; 38 °C</Seuil>`).
+
+Valeurs utilisées (adulte, repères usuels en IFSI ; les protocoles locaux peuvent différer) :
+
+| Constante | Normale | Seuils des termes |
+|-----------|---------|-------------------|
+| Température | 36,5 – 37,5 °C | fébrile > 38 °C · apyrétique < 38 °C · hypothermie < 35 °C |
+| Fréquence cardiaque | 60 – 100 bpm | tachycardie > 100 · bradycardie < 60 |
+| Fréquence respiratoire | 12 – 20 / min | tachypnée > 20 · bradypnée < 12 |
+| Pression artérielle | ≈ 120/80 mmHg | HTA ≥ 140/90 · hypotension PAS < 90 |
+| SpO₂ | 95 – 100 % | désaturation < 95 % |
+
+Les chiffres animés à l'écran (39,2 °C, 128 bpm…) restent des exemples et doivent être cohérents
+avec ces seuils (ex. l'hypothermie s'affiche sous 35 °C).
 
 ## Contrôle qualité (à chaque vidéo)
 
@@ -283,8 +318,8 @@ rendus en 3D avec Three.js, fond bleu nuit, et le rouge est autorisé pour le sa
 1. Écrire le script validé dans `voix/<n>-<sujet>.tts.json` (une entrée par scène) : accroche,
    puis pour chaque notion une définition courte et ses termes techniques, puis récap + appel.
 2. `python3 scripts/voice/tts_maquette.py voix/<…>.tts.json <episode>` → voix + `voice.json`.
-3. Copier `src/videos/lpi-constantes-v4/` comme modèle (pilote) : gabarit `Lesson3` avec `slotSide`
-   qui alterne et `shake`, une scène = un composant, animations via `at(scène, mot)`.
+3. Copier `src/videos/lpi-constantes-v5/` comme modèle : gabarit `Lesson3` avec `slotSide`
+   qui alterne, `shake` et `norm` (repère adulte), une scène = un composant, animations via `at(scène, mot)`.
    Voix IA déjà propre : `scripts/voice/align_voice.py`.
 4. Écrire `mascot.ts` (une étape par mot clé, lexique ci-dessus) et choisir les transitions
    (jamais deux fois la même d'affilée).

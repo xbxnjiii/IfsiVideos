@@ -60,7 +60,7 @@ export const MASCOT: Beat[] = [
 	{at: abs('temp', 'évalue'), via: 'pop', key: 'situations/explique', ...temp.low},
 	{at: abs('temp', 'fièvre'), key: 'expressions/surprise', ...temp.home},
 	{at: abs('temp', 'fébrile'), via: 'pop', key: 'expressions/stressee', fx: 'pant', ...temp.top},
-	{at: abs('temp', "n'en"), key: 'expressions/sourire-leger', ...temp.home},
+	{at: abs('temp', "n'en"), key: 'expressions/neutre', ...temp.home},
 	{at: abs('temp', 'apyrétique'), via: 'pop', key: 'gestes/bonne-reponse', fx: 'bounce', ...temp.bottom},
 	{at: abs('temp', 'basse'), key: 'expressions/triste', fx: 'shiver', ...temp.low},
 	{at: abs('temp', 'hypothermie'), key: 'gestes/attention', fx: 'shiver', ...temp.low},
@@ -78,9 +78,9 @@ export const MASCOT: Beat[] = [
 	{at: abs('fc', 'rythme') - 4, dur: 8, key: 'expressions/questionnement', x: 300, y: 1500, size: 280},
 	{at: abs('fc', 'rythme') + 6, dur: 10, key: 'expressions/questionnement', x: 200, y: 1330, size: 280},
 	{at: abs('fc', 'rythme') + 19, dur: 7, key: 'expressions/questionnement', ...fc.home},
-	{at: abs('fc', 'arythmie'), key: 'accessoires/schema-ecg', ...fc.home},
+	{at: abs('fc', 'arythmie'), key: 'situations/montre-ecg', ...fc.home},
 	// elle s'envole avec le panoramique vers le haut
-	{at: start('fr') + 2, dur: 14, key: 'accessoires/schema-ecg', x: 540, y: -520, size: 230},
+	{at: start('fr') + 2, dur: 14, key: 'situations/montre-ecg', x: 540, y: -520, size: 230},
 
 	/* ── 3. fréquence respiratoire ── */
 	{at: abs('fr', 'nombre'), via: 'pop', key: 'situations/prend-notes', ...fr.home},
@@ -99,14 +99,14 @@ export const MASCOT: Beat[] = [
 	{at: abs('pa', 'cœur'), key: 'situations/montre-schema', ...pa.home},
 	{at: abs('pa', 'deuxième'), key: 'gestes/important', ...pa.home},
 	{at: abs('pa', 'diastolique'), via: 'pop', key: 'gestes/important', ...pa.bottom},
-	{at: abs('pa', 'relâche'), key: 'expressions/grand-sourire', fx: 'slow', ...pa.home},
+	{at: abs('pa', 'relâche'), key: 'expressions/joyeuse', fx: 'slow', ...pa.home},
 	{at: abs('pa', 'trop'), key: 'expressions/en-colere', fx: 'shake', ...pa.home},
 	{at: abs('pa', "l'hypertension"), via: 'pop', key: 'expressions/en-colere', fx: 'shake', ...pa.top},
 	{at: abs('pa', 'trop', 2), key: 'expressions/triste', ...pa.home},
 	// « hypotension » : elle s'affaisse lentement vers le bas
-	{at: abs('pa', "l'hypotension"), dur: 22, arc: 12, key: 'expressions/decue', fx: 'slow', ...pa.low},
+	{at: abs('pa', "l'hypotension"), dur: 22, arc: 12, key: 'expressions/triste', fx: 'slow', ...pa.low},
 	// sortie à gauche avec le panoramique horizontal
-	{at: start('spo2') - 1, dur: 12, key: 'expressions/decue', x: -420, y: 900, size: 230},
+	{at: start('spo2') - 1, dur: 12, key: 'expressions/triste', x: -420, y: 900, size: 230},
 
 	/* ── 5. saturation ── (pas de place « haut » : la lecture de l'oxymètre est en haut à droite) */
 	{at: abs('spo2', 'saturation'), via: 'pop', key: 'gestes/astuce', ...spo2.low},

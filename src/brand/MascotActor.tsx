@@ -149,7 +149,34 @@ const asRep = (b: {key: Mascot2Key; x: number; y: number; size: number}, toBody:
 	return {...b, y: b.y + b.size * 0.8, size: b.size * 1.6};
 };
 
-export const MascotActor: React.FC<{beats: Beat[]}> = ({beats}) => {
+/** Buste LIBRE (sans cadre) : détouré, liseré blanc « sticker », bas coupé adouci par un fondu.
+ *  `size` garde le même encombrement qu'une carte-réaction de largeur `size`. */
+export const FreeBust: React.FC<{k: Mascot2Key; size: number; fade?: boolean}> = ({k, size, fade = true}) => {
+	const h = size * 1.2;
+	const w = h * ratio(k);
+	const mask = fade ? 'linear-gradient(to bottom, #000 0%, #000 80%, transparent 99%)' : undefined;
+	return (
+		<Img
+			src={src(k)}
+			style={{
+				position: 'absolute',
+				left: -w / 2,
+				top: -h / 2,
+				width: w,
+				height: h,
+				filter: STICKER,
+				WebkitMaskImage: mask,
+				maskImage: mask,
+			}}
+		/>
+	);
+};
+
+export const MascotActor: React.FC<{
+	beats: Beat[];
+	/** présentation des bustes : carte-réaction (v4) ou libre, sans cadre (v5) */
+	busts?: 'card' | 'free';
+}> = ({beats, busts = 'card'}) => {
 	const frame = useCurrentFrame();
 	const {fps} = useVideoConfig();
 	const plan = React.useMemo(() => planBeats(beats), [beats]);
@@ -276,6 +303,8 @@ export const MascotActor: React.FC<{beats: Beat[]}> = ({beats}) => {
 							filter: STICKER,
 						}}
 					/>
+				) : busts === 'free' ? (
+					<FreeBust k={key} size={size} />
 				) : (
 					<div style={{position: 'absolute', left: -size / 2, top: -(size * 1.02) / 2}}>
 						<ReactionCard k={key} w={size} mood={mood} />

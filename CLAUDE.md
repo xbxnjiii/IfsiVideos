@@ -1,16 +1,20 @@
 # Mémoire du projet — vidéos « La Petite IDE »
 
 Mini-vidéos IFSI en motion design, **tout en code** (Remotion 4, React → MP4), 1080 × 1920, ≥ 1 min,
-pour TikTok / Reels / Shorts. La référence de qualité est la **vidéo pilote v4** :
-composition `LPI-Constantes-V4`, dossier `src/videos/lpi-constantes-v4/`.
+pour TikTok / Reels / Shorts. La référence de qualité est la **vidéo pilote v4**, regénérée en **v5** avec les nouvelles planches :
+composition `LPI-Constantes-V5`, dossier `src/videos/lpi-constantes-v5/` (modèle à copier).
 Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/charte-video.md`.
 
 ## Règles de marque (non négociables)
 
 - Couleurs uniquement : `#4E7AC7` bleu, `#C5D8F4` bleu clair, `#F8F9FC` fond blanc cassé, `#EAA7C1` rose,
   `#2D3A5A` bleu nuit (+ transparences). Exceptions : images officielles de la mascotte et logos.
-- Mascotte : **uniquement les images officielles** (`public/brand/mascotte-v2/`), jamais redessinée,
-  **jamais retournée en miroir**. Bustes dans des cartes-réaction (`ReactionCard`), poses en pied libres.
+- Mascotte : **uniquement les images officielles** (`public/brand/mascotte-v2/`, index visuel
+  `docs/lpi/mascotte-v2-index.webp`), jamais redessinée, **jamais retournée en miroir**.
+  **Bustes libres, sans cadre** (`<MascotActor busts="free">` : sticker détouré, bas en fondu) —
+  plus de carré autour. Poses en pied libres. Dossier `symptomes/` pour jouer les signes cliniques.
+- **Repères adultes** discrets mais visibles : bandeau `norm` (« ADULTE · normale … ») sous
+  l'illustration + seuil de chaque terme (`<Seuil>`) — valeurs dans la charte.
 - Pas de filigrane, pas de sous-titres incrustés, pas de pastille « à connaître en IFSI », pas de
   musique dans l'export (ajoutée sur TikTok). Une accroche par vidéo. Termes techniques toujours
   accompagnés d'une explication courte.
@@ -22,13 +26,15 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   d'affilée (`src/brand/motion4.tsx` : `zoomInto`, `runWipe`, `whip`, + `wave`).
 - **Physique** : pops à ressort (~12 % de dépassement), sauts en arc centrés sur le mot avec
   accroupie / étirement / écrasement, secousse uniquement à l'impact, sorties rapides accélérées.
-- **Mascotte actrice** (`src/brand/MascotActor.tsx`, exemple `src/videos/lpi-constantes-v4/mascot.ts`) :
-  une étape par mot clé, expression qui colle au mot (lexique dans la charte), places qui changent
+- **Mascotte actrice** (`src/brand/MascotActor.tsx`, exemple `src/videos/lpi-constantes-v5/mascot.ts`) :
+  une étape par mot clé, expression qui colle au mot (lexique v5 dans la charte, symptômes compris), places qui changent
   sans cesse sur tout l'écran (`home`, `low`, `top`, `bottom`, plein écran), métaphores physiques
   (elle court sur « trop rapide », saute au ralenti sur « trop lent », grelotte, tremble de colère…),
   et elle porte les transitions. Elle ne masque jamais titre, définition, fiche ni chiffres.
 - **Gabarit de notion** : `Lesson3` (numéro qui s'écrase, termes qui claquent puis se rangent dans la
-  fiche ; `slotSide` alterne gauche / droite d'une partie à l'autre ; `shake`).
+  fiche ; `slotSide` alterne gauche / droite d'une partie à l'autre ; `shake` ; `norm`).
+- **Nouvelles planches** : déjà détourées → `scripts/brand/upscale_rgba.py`, `cut_v3.py` (ancrages dans
+  `planches-v3.json`), `export_v3.py` (remplace / supprime les anciennes, manifeste + index).
 
 ## Rendu et contrôle
 

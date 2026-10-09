@@ -13,6 +13,7 @@ pas de logiciel de montage, pas de banque d'images.
 | 03 | **La Petite IDE** — Les 5 constantes + 16 termes techniques (test v2, voix maquette) | `LPI-Constantes` | [voix/02-constantes-v2.tts.json](voix/02-constantes-v2.tts.json) · [storyboard](docs/lpi/storyboard-constantes.md) |
 | 04 | **La Petite IDE** — Les 5 constantes, test v3 : voix IA, motion « moderne », mascotte planche v2 | `LPI-Constantes-V3` | [voix/02-constantes-v3.script.json](voix/02-constantes-v3.script.json) · [storyboard](docs/lpi/storyboard-constantes-v3.md) |
 | 05 | **La Petite IDE** — Les 5 constantes, **vidéo PILOTE v4** : mascotte actrice sur tout l'écran, expressions au mot près, transitions variées (tempo / physique de référence) | `LPI-Constantes-V4` | [storyboard](docs/lpi/storyboard-constantes-v4.md) |
+| 06 | **La Petite IDE** — Les 5 constantes **v5** : pilote regénéré avec les nouvelles planches (mascotte libre sans cadre, symptômes) + repères adultes (normes, seuils) | `LPI-Constantes-V5` | [storyboard](docs/lpi/storyboard-constantes-v5.md) |
 | labo | Accroche + Température refaites avec **HyperFrames** (HTML + GSAP, transition shader) pour comparer | — | [labs/hyperframes-accroche](labs/hyperframes-accroche/README.md) |
 
 > **La Petite IDE** : la charte vidéo de la marque (couleurs, typo, mascotte, animations,
@@ -30,6 +31,7 @@ npm run render:constantes      # -> out/02-constantes.mp4
 npm run render:lpi-constantes  # -> out/04-lpi-constantes-v2.mp4 (La Petite IDE)
 npm run render:lpi-constantes-v3  # -> out/05-lpi-constantes-v3.mp4 (voix IA, motion v3)
 npm run render:lpi-constantes-v4  # -> out/10-lpi-constantes-v4-pilote.mp4 (PILOTE : référence)
+npm run render:lpi-constantes-v5  # -> out/11-lpi-constantes-v5.mp4 (nouvelles planches + repères adultes)
 npm run check:mascot           # vérifie le jeu de la mascotte (étapes, chevauchements)
 npm run cover:constantes       # -> out/02-constantes-cover.png
 npm run sfx                    # regénère les bruitages (public/sfx)

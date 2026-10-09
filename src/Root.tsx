@@ -10,6 +10,8 @@ import {LpiConstantesV3, LpiConstantesV3Props} from './videos/lpi-constantes-v3/
 import {TL as LPI3_TL} from './videos/lpi-constantes-v3/timeline';
 import {LpiConstantesV4, LpiConstantesV4Props} from './videos/lpi-constantes-v4/LpiConstantesV4';
 import {TL as LPI4_TL} from './videos/lpi-constantes-v4/timeline';
+import {LpiConstantesV5, LpiConstantesV5Props} from './videos/lpi-constantes-v5/LpiConstantesV5';
+import {TL as LPI5_TL} from './videos/lpi-constantes-v5/timeline';
 import {AnatomyDemo} from './anatomy/Demo';
 import {GlTest} from './anatomy3d/GlTest';
 import {Anatomy3DLab, Lab3DProps} from './anatomy3d/Lab3D';
@@ -93,6 +95,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies LpiConstantesV4Props}
+		/>
+		{/* v5 : pilote regénéré avec les nouvelles planches (mascotte libre, symptômes) + repères adultes */}
+		<Composition
+			id="LPI-Constantes-V5"
+			component={LpiConstantesV5}
+			durationInFrames={LPI5_TL.total}
+			fps={LPI5_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies LpiConstantesV5Props}
 		/>
 	</>
 );

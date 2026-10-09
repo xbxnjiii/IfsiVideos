@@ -84,7 +84,7 @@ const ZoomIntoComponent: React.FC<TransitionPresentationComponentProps<ZoomProps
 	if (presentationDirection === 'exiting') {
 		const z = 1 + 7 * inCubic(Math.min(1, p / 0.6));
 		// fondu rapide : aucun morceau agrandi (texte, puce) ne reste visible dans les coins
-		const fade = 1 - Math.min(1, Math.max(0, (p - 0.22) / 0.2));
+		const fade = 1 - Math.min(1, Math.max(0, (p - 0.15) / 0.15));
 		return <AbsoluteFill style={{transform: `scale(${z})`, transformOrigin: `${x}px ${y}px`, opacity: fade}}>{children}</AbsoluteFill>;
 	}
 	const R = Math.hypot(Math.max(x, GRID.w - x), Math.max(y, GRID.h - y)) + 40;

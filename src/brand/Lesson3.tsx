@@ -43,7 +43,10 @@ export const Lesson3: React.FC<{
 	slotSide?: 'left' | 'right';
 	/** secousses d'impact (numéro, termes) */
 	shake?: boolean;
-}> = ({n, nAt, title, titleAt, definition, defAt, stage, layers, stageH = L3.stageH, slotTop = SLOT.y, terms, mascot, punches = [], slotSide = 'left', shake = false}) => {
+	/** repère adulte discret sous l'illustration (ex. « normale 36,5 – 37,5 °C ») */
+	norm?: React.ReactNode;
+	normAt?: number;
+}> = ({n, nAt, title, titleAt, definition, defAt, stage, layers, stageH = L3.stageH, slotTop = SLOT.y, terms, mascot, punches = [], slotSide = 'left', shake = false, norm, normAt}) => {
 	const frame = useCurrentFrame();
 	const tA = Math.max(titleAt, nAt + 22);
 	const slamY = L3.stageY + stageH / 2;
@@ -54,6 +57,7 @@ export const Lesson3: React.FC<{
 				<Stage y={L3.stageY} h={stageH} at={nAt + 18} layers={layers} bumps={terms.map((t) => t.at + 26)}>
 					{stage}
 				</Stage>
+				{norm ? <NormRibbon at={normAt ?? defAt + 12} y={L3.stageY + stageH - 6}>{norm}</NormRibbon> : null}
 				<div style={{position: 'absolute', left: L3.titleX, top: L3.titleY, width: 1008 - L3.titleX}}>
 					<Title at={tA} text={title[0]} size={60} stagger={2} brush={false} />
 					<Title at={tA + 4} text={`*${title[1]}*`} size={96} stagger={2} />
@@ -148,3 +152,51 @@ export const StatePill: React.FC<{
 		</div>
 	);
 };
+
+/** Repère « adulte » : petit bandeau centré à cheval sur le bas du socle, discret mais lisible. */
+export const NormRibbon: React.FC<{at: number; y: number; children: React.ReactNode}> = ({at, y, children}) => {
+	const frame = useCurrentFrame();
+	const {fps} = useVideoConfig();
+	const p = spring({frame: frame - at, fps, config: {damping: 12, stiffness: 200, mass: 0.6}});
+	if (frame < at) return null;
+	return (
+		<div style={{position: 'absolute', left: 0, right: 0, top: y - 27, display: 'flex', justifyContent: 'center'}}>
+			<div
+				style={{
+					display: 'flex',
+					alignItems: 'center',
+					gap: 14,
+					padding: '9px 24px 9px 10px',
+					borderRadius: 999,
+					background: LPI.paper,
+					border: `3px solid ${LPI.sky}`,
+					boxShadow: `0 10px 24px ${alpha(LPI.navy, 0.1)}`,
+					whiteSpace: 'nowrap',
+					opacity: Math.min(1, p * 1.6),
+					transform: `translateY(${(1 - p) * 16}px) scale(${0.85 + 0.15 * p})`,
+				}}
+			>
+				<span
+					style={{
+						fontFamily: FONT.body,
+						fontWeight: 800,
+						fontSize: 19,
+						letterSpacing: 2,
+						color: LPI.paper,
+						background: LPI.blue,
+						borderRadius: 999,
+						padding: '5px 12px',
+					}}
+				>
+					ADULTE
+				</span>
+				<span style={{fontFamily: FONT.body, fontWeight: 600, fontSize: 27, color: alpha(LPI.navy, 0.8)}}>{children}</span>
+			</div>
+		</div>
+	);
+};
+
+/** Seuil chiffré dans la définition d'un terme (ex. « > 38 °C »). */
+export const Seuil: React.FC<{children: React.ReactNode}> = ({children}) => (
+	<span style={{fontWeight: 800, color: LPI.blue, whiteSpace: 'nowrap'}}>{children}</span>
+);

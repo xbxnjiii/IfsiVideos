@@ -535,7 +535,7 @@ export const Pression: React.FC = () => {
 				[SYS, 'gestes/important'],
 				[DIA, 'gestes/facile'],
 				[HTA, 'expressions/en-colere'],
-				[HYPO, 'expressions/decue'],
+				[HYPO, 'expressions/triste'],
 			]}
 			terms={[
 				{at: SYS, term: 'Systolique (PAS)', meaning: '1er chiffre : le cœur se contracte', sign: 'squeeze'},

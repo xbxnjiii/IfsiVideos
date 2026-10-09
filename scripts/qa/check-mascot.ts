@@ -1,8 +1,8 @@
 // Vérifie le jeu de la mascotte : départs / atterrissages, temps de pose, chevauchements.
 // Usage : npm run check:mascot   (affiche une ligne par étape ; « CHEVAUCHE » = à corriger)
 import {planBeats} from '../../src/brand/MascotActor';
-import {MASCOT} from '../../src/videos/lpi-constantes-v4/mascot';
-import {TL} from '../../src/videos/lpi-constantes-v4/timeline';
+import {MASCOT} from '../../src/videos/lpi-constantes-v5/mascot';
+import {TL} from '../../src/videos/lpi-constantes-v5/timeline';
 
 // le chargement des polices (navigateur) échoue sous Node : sans importance ici
 process.on('unhandledRejection', () => undefined);
