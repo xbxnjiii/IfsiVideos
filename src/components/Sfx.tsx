@@ -1,7 +1,7 @@
 import React, {createContext, useContext} from 'react';
 import {Html5Audio, Sequence, staticFile} from 'remotion';
 
-export type SfxName = 'whoosh' | 'pop' | 'tick' | 'impact' | 'ding' | 'buzz' | 'heartbeat' | 'stamp';
+export type SfxName = 'whoosh' | 'pop' | 'tick' | 'impact' | 'ding' | 'buzz' | 'heartbeat' | 'stamp' | 'hop' | 'run';
 
 const VOLUME: Record<SfxName, number> = {
 	whoosh: 0.35,
@@ -12,6 +12,8 @@ const VOLUME: Record<SfxName, number> = {
 	buzz: 0.3,
 	heartbeat: 0.55,
 	stamp: 0.55,
+	hop: 0.3,
+	run: 0.35,
 };
 
 /** Permet de couper tous les bruitages d'une vidéo (ex. version « voix seule »). */

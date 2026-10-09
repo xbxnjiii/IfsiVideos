@@ -12,6 +12,7 @@ pas de logiciel de montage, pas de banque d'images.
 | 02 | Les 5 constantes à connaître (avec voix off) | `Constantes` | [voix/02-constantes.md](voix/02-constantes.md) |
 | 03 | **La Petite IDE** — Les 5 constantes + 16 termes techniques (test v2, voix maquette) | `LPI-Constantes` | [voix/02-constantes-v2.tts.json](voix/02-constantes-v2.tts.json) · [storyboard](docs/lpi/storyboard-constantes.md) |
 | 04 | **La Petite IDE** — Les 5 constantes, test v3 : voix IA, motion « moderne », mascotte planche v2 | `LPI-Constantes-V3` | [voix/02-constantes-v3.script.json](voix/02-constantes-v3.script.json) · [storyboard](docs/lpi/storyboard-constantes-v3.md) |
+| 05 | **La Petite IDE** — Les 5 constantes, **vidéo PILOTE v4** : mascotte actrice sur tout l'écran, expressions au mot près, transitions variées (tempo / physique de référence) | `LPI-Constantes-V4` | [storyboard](docs/lpi/storyboard-constantes-v4.md) |
 | labo | Accroche + Température refaites avec **HyperFrames** (HTML + GSAP, transition shader) pour comparer | — | [labs/hyperframes-accroche](labs/hyperframes-accroche/README.md) |
 
 > **La Petite IDE** : la charte vidéo de la marque (couleurs, typo, mascotte, animations,
@@ -28,6 +29,8 @@ npm run cover:prise-de-sang    # -> out/01-prise-de-sang-cover.png (miniature)
 npm run render:constantes      # -> out/02-constantes.mp4
 npm run render:lpi-constantes  # -> out/04-lpi-constantes-v2.mp4 (La Petite IDE)
 npm run render:lpi-constantes-v3  # -> out/05-lpi-constantes-v3.mp4 (voix IA, motion v3)
+npm run render:lpi-constantes-v4  # -> out/10-lpi-constantes-v4-pilote.mp4 (PILOTE : référence)
+npm run check:mascot           # vérifie le jeu de la mascotte (étapes, chevauchements)
 npm run cover:constantes       # -> out/02-constantes-cover.png
 npm run sfx                    # regénère les bruitages (public/sfx)
 ```
@@ -41,6 +44,8 @@ src/
                               pictogrammes, transition en cercle, sous-titres, timeline voix
     Mascot2.tsx, motion3.tsx, Lesson3.tsx   v3 : mascotte planche v2 (pop-out), termes qui
                               claquent, caméra, compteurs, vague de transition, gabarit de notion
+    MascotActor.tsx, motion4.tsx            v4 (pilote) : mascotte actrice globale (cartes-réaction,
+                              sauts, course, métaphores), transitions plongée / rideau / panoramique
   components/                 briques réutilisables (premières vidéos)
     motion.tsx                Words (typo cinétique), Pop, Chip, Card, Stamp, Camera, useShake
     Background.tsx            fond animé + grain
@@ -66,6 +71,7 @@ scripts/voice/                voix off : prepare_voice.py (vraie voix : blancs, 
                               transcription) · tts_maquette.py (voix maquette synthétique)
                               · align_voice.py (voix IA déjà propre : alignement mot à mot)
 scripts/brand/                découpe des planches : agrandissement, détourage, export webp
+scripts/qa/                   contrôle qualité : images clés (stills.mjs), planches contact, check-mascot.ts
 voix/                         scripts de voix off, scène par scène
 ```
 

@@ -8,6 +8,8 @@ import {LpiConstantes, LpiConstantesProps} from './videos/lpi-constantes/LpiCons
 import {TL as LPI_TL} from './videos/lpi-constantes/timeline';
 import {LpiConstantesV3, LpiConstantesV3Props} from './videos/lpi-constantes-v3/LpiConstantesV3';
 import {TL as LPI3_TL} from './videos/lpi-constantes-v3/timeline';
+import {LpiConstantesV4, LpiConstantesV4Props} from './videos/lpi-constantes-v4/LpiConstantesV4';
+import {TL as LPI4_TL} from './videos/lpi-constantes-v4/timeline';
 import {AnatomyDemo} from './anatomy/Demo';
 import {GlTest} from './anatomy3d/GlTest';
 import {Anatomy3DLab, Lab3DProps} from './anatomy3d/Lab3D';
@@ -81,6 +83,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies LpiConstantesV3Props}
+		/>
+		{/* v4 PILOTE : mascotte actrice sur tout l'écran, transitions variées, tempo / physique de référence */}
+		<Composition
+			id="LPI-Constantes-V4"
+			component={LpiConstantesV4}
+			durationInFrames={LPI4_TL.total}
+			fps={LPI4_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies LpiConstantesV4Props}
 		/>
 	</>
 );
