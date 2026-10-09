@@ -33,7 +33,7 @@ export const DEFAULT_LOOK: BodyLook = {xray: 0, muscles: 0, vessels: 0, organs: 
 
 /* ─────────── précalculs (une seule fois) ─────────── */
 
-type VesselGeo = Vessel & {d: string; s: Sampled; offset: number};
+export type VesselGeo = Vessel & {d: string; s: Sampled; offset: number};
 
 const geo = (v: Vessel): VesselGeo => {
 	const d = smooth(v.pts);
@@ -42,8 +42,8 @@ const geo = (v: Vessel): VesselGeo => {
 	const [x, y] = v.kind === 'artery' ? v.pts[0] : v.pts[v.pts.length - 1];
 	return {...v, d, s, offset: Math.hypot(x - HEART.x, y - HEART.y) * 1.15};
 };
-const A_GEO = ARTERIES.map(geo);
-const V_GEO = VEINS.map(geo);
+export const A_GEO = ARTERIES.map(geo);
+export const V_GEO = VEINS.map(geo);
 
 /* ─────────── battements ─────────── */
 
@@ -65,7 +65,7 @@ export const heartState = (frame: number, beats: number[]) => {
 };
 
 /** distance parcourue par le sang artériel : vitesse de base + poussée à chaque systole */
-const arterialTravel = (frame: number, beats: number[], flow: number) => {
+export const arterialTravel = (frame: number, beats: number[], flow: number) => {
 	let surge = 0;
 	for (const b of beats) {
 		if (b > frame) break;

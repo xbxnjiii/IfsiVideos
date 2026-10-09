@@ -9,6 +9,9 @@ import {TL as LPI_TL} from './videos/lpi-constantes/timeline';
 import {LpiConstantesV3, LpiConstantesV3Props} from './videos/lpi-constantes-v3/LpiConstantesV3';
 import {TL as LPI3_TL} from './videos/lpi-constantes-v3/timeline';
 import {AnatomyDemo} from './anatomy/Demo';
+import {GlTest} from './anatomy3d/GlTest';
+import {Anatomy3DLab, Lab3DProps} from './anatomy3d/Lab3D';
+import {Reel3D} from './anatomy3d/Reel3D';
 import {AnatomyLab, LabProps} from './anatomy/Lab';
 import './theme';
 
@@ -46,6 +49,17 @@ export const RemotionRoot: React.FC = () => (
 			height={H}
 			defaultProps={{voice: true, sfx: true, decor: 'none'} satisfies LpiConstantesProps}
 		/>
+		<Composition
+			id="Anatomie3D-Lab"
+			component={Anatomy3DLab}
+			durationInFrames={300}
+			fps={30}
+			width={W}
+			height={H}
+			defaultProps={{shot: 'full'} as Lab3DProps}
+		/>
+		<Composition id="Anatomie3D-Reel" component={Reel3D} durationInFrames={360} fps={30} width={W} height={H} />
+		<Composition id="Gl-Test" component={GlTest} durationInFrames={60} fps={30} width={W} height={H} />
 		<Composition id="Anatomie-Demo" component={AnatomyDemo} durationInFrames={1440} fps={30} width={W} height={H} />
 		<Composition
 			id="Anatomie-Lab"

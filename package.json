@@ -17,14 +17,17 @@
     "cover:lpi-constantes-v3": "remotion still LPI-Constantes-V3 out/05-lpi-constantes-v3-cover.png --frame=200"
   },
   "dependencies": {
+    "@react-three/fiber": "^9.8.1",
     "@remotion/cli": "^4.0.532",
     "@remotion/fonts": "^4.0.532",
     "@remotion/paths": "^4.0.532",
     "@remotion/shapes": "^4.0.532",
+    "@remotion/three": "^4.0.532",
     "@remotion/transitions": "^4.0.532",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
-    "remotion": "^4.0.532"
+    "remotion": "^4.0.532",
+    "three": "^0.186.1"
   },
   "devDependencies": {
     "@fontsource/fredoka": "^5.3.0",
@@ -33,6 +36,7 @@
     "@fontsource/nunito-sans": "^5.3.0",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
+    "@types/three": "^0.186.0",
     "typescript": "^7.0.2"
   }
 }
