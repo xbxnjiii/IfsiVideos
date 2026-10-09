@@ -8,7 +8,8 @@
     "typecheck": "tsc --noEmit",
     "sfx": "python3 scripts/make-sfx.py",
     "render:constantes": "remotion render Constantes out/02-constantes.mp4",
-    "check:mascot": "esbuild scripts/qa/check-mascot.ts --bundle --platform=node --loader:.webp=empty --log-level=error --outfile=out/check-mascot.cjs && node out/check-mascot.cjs"
+    "check:mascot": "esbuild scripts/qa/check-mascot.ts --bundle --platform=node --loader:.webp=empty --log-level=error --outfile=out/check-mascot.cjs && node out/check-mascot.cjs",
+    "render:besoins": "remotion render Besoins-Fondamentaux out/03-besoins-fondamentaux.mp4"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.532",

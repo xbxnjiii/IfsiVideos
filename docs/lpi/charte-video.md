@@ -108,6 +108,29 @@ Toujours dans la palette, sans effet lumineux :
 | `Burst`, `Confetti`, `TapRipple` | éclats, confettis (1 fois, au récap), « tap » sur le bouton Enregistrer |
 | `LiveBackground` | blanc cassé + grille de points qui défile + 4 éléments de la planche en bordure |
 
+## Kit « réseaux sociaux » (`src/brand/kit.tsx`) — vidéos « liste »
+
+Validé sur « Les 14 besoins fondamentaux » (format liste numérotée, plus long : 2 min 40) :
+
+| Brique | Rôle |
+|--------|------|
+| `Sticker` | dessin posé avec un épais liseré blanc + ombre, qui claque en tournant (gag visuel) |
+| `Stamp` | tampon en capitales qui s'écrase (2,4 → 1 en 5 frames) : « Vital ! », « Noté ! », « Insuffisant »… |
+| `CheckChip` | puce dont la coche se dessine : la fiche de révision se construit (`sub` = précision, ex. « = urines ») |
+| `Strike` | trait rose qui barre (« 12 », « 15 », « ça va pas trop… ») |
+| `Tape` | ruban « scène de crime » en diagonale qui défile |
+| `GroupProgress` | progression en segments groupés par étape (5 · 4 · 5), segment courant allongé |
+| `TypingBubble` | bulle de commentaire : « … » puis le texte s'écrit (appel à commenter) |
+
+Règles du format liste :
+- **un gag par blague du script** (sticker ou tampon), placé dans la moitié droite du socle ; l'illustration
+  du point glisse à gauche juste avant (`shiftAt`) ;
+- les **énumérations du script deviennent des puces cochées** (écouter / comprendre / transmettre) ;
+- les **parties** (étapes) ont leur propre écran, court, avec un fil conducteur visuel (ici un escalier
+  que la mascotte monte) et l'aperçu en icônes de ce qui vient ;
+- un « moment spécial » avant le dernier point (roulement de tambour : écran nuit + projecteur) ;
+- le récap final est une **fiche à capturer** (tous les points, groupés), avec tampon et appel au commentaire.
+
 ## Tempo et physique — RÉFÉRENCE (vidéo pilote v4)
 
 Validé sur la vidéo pilote (v4, regénérée en v5 : composition `Constantes`) : ce sont les réglages à reprendre tels quels pour
@@ -266,7 +289,8 @@ oublier… ») + un aperçu de ce qu'on va apprendre (ex. « + 16 termes techniq
 2. `python3 scripts/voice/align_voice.py VOIX.mp3 voix/<n>-<sujet>.script.json <dossier>` →
    `public/voix/<dossier>/voix.wav` + `src/videos/<dossier>/voice.json`.
 3. Copier la vidéo la plus proche comme modèle : `src/videos/constantes/` (notions + termes techniques,
-   gabarit `Lesson3`) ; une scène = un composant, animations via `at(scène, mot)`.
+   gabarit `Lesson3`) ou `src/videos/besoins-fondamentaux/` (liste numérotée en étapes, gabarit
+   `NeedScene`, gags, puces cochées) ; une scène = un composant, animations via `at(scène, mot)`.
 4. Écrire `mascot.ts` (une étape par mot clé, lexique ci-dessus) et choisir les transitions
    (jamais deux fois la même d'affilée).
 5. Contrôle qualité (ci-dessus), puis `npx remotion render <Composition> out/<fichier>.mp4`.

@@ -3,6 +3,8 @@
 Mini-vidéos IFSI en motion design, **tout en code** (Remotion 4, React → MP4), 1080 × 1920, ≥ 1 min,
 pour TikTok / Reels / Shorts. La référence de qualité (tempo, physique, mascotte) est la vidéo
 **Constantes** (pilote v4 regénéré en v5) : composition `Constantes`, dossier `src/videos/constantes/`.
+Deuxième modèle : **Besoins-Fondamentaux** (`src/videos/besoins-fondamentaux/`) pour les vidéos « liste »
+numérotée en étapes (gags au mot près, puces cochées, kit `src/brand/kit.tsx`).
 Les anciennes versions (v1 à v4, labo HyperFrames, anatomie SVG / 3D) ont été retirées : elles restent
 dans l'historique git (dernier état complet : commit `ce2a0a2`).
 Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/charte-video.md`.
@@ -33,6 +35,9 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   sans cesse sur tout l'écran (`home`, `low`, `top`, `bottom`, plein écran), métaphores physiques
   (elle court sur « trop rapide », saute au ralenti sur « trop lent », grelotte, tremble de colère…),
   et elle porte les transitions. Elle ne masque jamais titre, définition, fiche ni chiffres.
+- **Humour du script = gag visuel** : chaque blague a son sticker ou son tampon au mot près
+  (« Pas de Wi-Fi », ruban « Enquête en cours », bonbon-médicament…) ; les énumérations deviennent
+  des puces cochées.
 - **Gabarit de notion** : `Lesson3` (numéro qui s'écrase, termes qui claquent puis se rangent dans la
   fiche ; `slotSide` alterne gauche / droite d'une partie à l'autre ; `shake` ; `norm`).
 - **Nouvelles planches** : déjà détourées → `scripts/brand/upscale_rgba.py`, `cut_v3.py` (ancrages dans

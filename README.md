@@ -13,6 +13,7 @@ pas de logiciel de montage, pas de banque d'images.
 | # | Sujet | Composition | Script voix | Storyboard |
 |---|-------|-------------|-------------|------------|
 | 02 | Les 5 constantes + 16 termes techniques (repères adultes) | `Constantes` | [voix/02-constantes.script.json](voix/02-constantes.script.json) | [storyboard](docs/lpi/storyboard-constantes.md) |
+| 03 | Les 14 besoins fondamentaux (Virginia Henderson), en 3 étapes | `Besoins-Fondamentaux` | [voix/03-besoins-fondamentaux.script.json](voix/03-besoins-fondamentaux.script.json) | [storyboard](docs/lpi/storyboard-besoins-fondamentaux.md) |
 
 ## Utilisation
 
@@ -20,6 +21,7 @@ pas de logiciel de montage, pas de banque d'images.
 npm install
 npm run studio                  # aperçu interactif dans le navigateur
 npm run render:constantes       # -> out/02-constantes.mp4
+npm run render:besoins          # -> out/03-besoins-fondamentaux.mp4
 npm run check:mascot -- constantes   # vérifie le jeu de la mascotte d'une vidéo
 npm run sfx                     # regénère les bruitages (public/sfx)
 ```
@@ -37,6 +39,7 @@ src/
     ui.tsx, learn.tsx         titres mot à mot, pinceau, cartes, signes ↑ ↓ ✓
     motion3.tsx               numéro qui s'écrase, termes qui claquent, caméra, socle, compteurs, vague
     motion4.tsx               transitions : plongée, rideau tiré par la mascotte, panoramique éclair
+    kit.tsx                   stickers, tampons, puces cochées, rubans, progression par étapes, bulle
     Lesson3.tsx               gabarit d'une notion (titre, définition, illustration, termes, repère adulte)
     MascotActor.tsx           mascotte actrice : sauts, course, expressions au mot près, bustes libres
     pictos.tsx                pictogrammes et illustrations (thermomètre, cœur, poumons, artère…)

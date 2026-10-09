@@ -4,9 +4,12 @@
 import {planBeats} from '../../src/brand/MascotActor';
 import * as constantes from '../../src/videos/constantes/mascot';
 import * as constantesTL from '../../src/videos/constantes/timeline';
+import * as besoins from '../../src/videos/besoins-fondamentaux/mascot';
+import * as besoinsTL from '../../src/videos/besoins-fondamentaux/timeline';
 
 const VIDEOS: Record<string, [typeof constantes.MASCOT, typeof constantesTL.TL]> = {
 	constantes: [constantes.MASCOT, constantesTL.TL],
+	'besoins-fondamentaux': [besoins.MASCOT, besoinsTL.TL],
 };
 const name = process.argv[2] ?? 'constantes';
 const [MASCOT, TL] = VIDEOS[name];
