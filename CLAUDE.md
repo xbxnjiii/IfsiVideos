@@ -17,8 +17,11 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   `docs/lpi/mascotte-index.webp`), jamais redessinée, **jamais retournée en miroir**.
   **Bustes libres, sans cadre** (`<MascotActor busts="free">` : sticker détouré, bas en fondu) —
   plus de carré autour. Poses en pied libres. Dossier `symptomes/` pour jouer les signes cliniques.
-- **Repères adultes** discrets mais visibles : bandeau `norm` (« ADULTE · normale … ») sous
-  l'illustration + seuil de chaque terme (`<Seuil>`) — valeurs dans la charte.
+- **Repères adultes** discrets mais visibles : échelle des normes `NormScale` (zones hypo / normo /
+  hyper + bornes, curseur qui suit la valeur animée) sous l'illustration (prop `scale` de `Lesson3`)
+  + seuil de chaque terme (`<Seuil>`) — valeurs (liste fournie pour la v6) dans la charte.
+  Une notion que la voix ne dit pas → **fiche bonus sans voix** avant le logo (modèle :
+  `src/videos/constantes/Bonus.tsx`).
 - Pas de filigrane, pas de sous-titres incrustés, pas de pastille « à connaître en IFSI », pas de
   musique dans l'export (ajoutée sur TikTok). Une accroche par vidéo. Termes techniques toujours
   accompagnés d'une explication courte.
@@ -39,7 +42,7 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   (« Pas de Wi-Fi », ruban « Enquête en cours », bonbon-médicament…) ; les énumérations deviennent
   des puces cochées.
 - **Gabarit de notion** : `Lesson3` (numéro qui s'écrase, termes qui claquent puis se rangent dans la
-  fiche ; `slotSide` alterne gauche / droite d'une partie à l'autre ; `shake` ; `norm`).
+  fiche ; `slotSide` alterne gauche / droite d'une partie à l'autre ; `shake` ; `scale`).
 - **Nouvelles planches** : déjà détourées → `scripts/brand/upscale_rgba.py`, `cut_v3.py` (ancrages dans
   `planches-v3.json`), `export_v3.py` (remplace / supprime les anciennes, manifeste + index).
 

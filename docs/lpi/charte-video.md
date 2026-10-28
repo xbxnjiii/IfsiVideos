@@ -98,7 +98,8 @@ Toujours dans la palette, sans effet lumineux :
 
 | Brique | Rôle |
 |--------|------|
-| `Lesson3` | gabarit complet d'une notion : numéro, titre 2 lignes, définition, socle, termes, repère adulte, caméra |
+| `Lesson3` | gabarit complet d'une notion : numéro, titre 2 lignes, définition, socle, termes, échelle des normes (`scale`), caméra |
+| `NormScale` | échelle des normes adulte : zones nommées + bornes, curseur qui suit la valeur, zone active, cadre cible |
 | `ChapterSlam` | gros numéro qui s'écrase au centre (éclats) puis file dans le coin du titre |
 | `TermSlam` | le terme « claque » en grand au centre (lettre par lettre), sa définition glisse, puis la carte file à sa place dans la fiche |
 | `Camera` | dérive très lente + petit coup de zoom (≈ 5 %) sur chaque mot clé |
@@ -237,26 +238,40 @@ Exemple complet : `src/videos/constantes/mascot.ts`. Contrôle : `npm run check:
 Mêmes familles de mots = mêmes expressions d'une partie à l'autre (« tachy- » = surprise,
 « brady- » = fatiguée) : la répétition aide à mémoriser.
 
-## Repères adultes (v5)
+## Repères adultes (v6)
 
 Les valeurs de référence de l'adulte sont **visibles mais discrètes** :
 
-- un petit bandeau `NormRibbon` (« ADULTE · normale 36,5 – 37,5 °C ») à cheval sur le bas de
-  l'illustration : prop `norm` de `Lesson3` ; il apparaît avec la définition ;
-- le **seuil** de chaque terme dans sa carte, en bleu gras (`<Seuil>&gt; 38 °C</Seuil>`).
+- une **échelle des normes** `NormScale` (`src/brand/NormScale.tsx`) sous l'illustration, prop `scale`
+  de `Lesson3` (placée à `y={scaleY()}`) : pastille « ADULTE », zones nommées (hypo / normo / hyper ;
+  `tone` : `low` bleu clair, `norm` bleu, `mid` rose pâle, `high` rose, `gap` = transition sans nom),
+  bornes sous chaque zone, **curseur qui suit la valeur animée** de l'illustration et zone active qui
+  s'allume. L'axe n'est pas linéaire (`w` = largeur relative, `lo`/`hi` = valeurs couvertes) ;
+  `bracket` = cadre pointillé sur une plage cible (ex. BPCO) ;
+- le **seuil** de chaque terme dans sa carte, en bleu gras (`<Seuil>≥ 38 °C</Seuil>`) ;
+- `NormRibbon` (petit bandeau « ADULTE · normale … ») reste disponible pour une valeur isolée
+  (ex. besoin n° 7 de la vidéo 03).
 
-Valeurs utilisées (adulte, repères usuels en IFSI ; les protocoles locaux peuvent différer) :
+Valeurs utilisées (adulte, fournies pour la v6 ; les protocoles locaux peuvent différer) :
 
-| Constante | Normale | Seuils des termes |
-|-----------|---------|-------------------|
-| Température | 36,5 – 37,5 °C | fébrile > 38 °C · apyrétique < 38 °C · hypothermie < 35 °C |
-| Fréquence cardiaque | 60 – 100 bpm | tachycardie > 100 · bradycardie < 60 |
-| Fréquence respiratoire | 12 – 20 / min | tachypnée > 20 · bradypnée < 12 |
-| Pression artérielle | ≈ 120/80 mmHg | HTA ≥ 140/90 · hypotension PAS < 90 |
-| SpO₂ | 95 – 100 % | désaturation < 95 % |
+| Constante | Normale | Termes et seuils |
+|-----------|---------|------------------|
+| Température | apyrétique 36,5 – 37,5 °C | fébricule 37,5 – 37,9 °C · hyperthermie (fièvre) ≥ 38 °C · hypothermie < 35 °C |
+| Voies de mesure (T°) | — | rectale · buccale · tympanique · axillaire · temporale ou frontale |
+| Fréquence cardiaque | normocardie 60 – 100 bpm | bradycardie < 60 · tachycardie ≥ 100 · arythmie = rythme irrégulier |
+| Fréquence respiratoire | eupnée 12 – 20 cycles/min | tachypnée > 20 · bradypnée < 12 · dyspnée = difficulté à respirer |
+| Pression artérielle | normotension ≈ 120/80 mmHg | hypotension < 90/60 · hypertension (HTA) > 140/90 |
+| SpO₂ | normoxie > 95 à 100 % | cible BPCO 88 – 92 % · hypoxémie < 90 % (désaturation < 95 %) |
+| Glycémie | normoglycémie 0,70 – 1,10 g/l | hyperglycémie > 1,10 · hypoglycémie < 0,70 |
+| Diurèse | normodiurèse 600 – 2000 ml/24 h | oligurie < 400 · anurie < 100 · polyurie > 2500 à 3000 ml/24 h |
 
 Les chiffres animés à l'écran (39,2 °C, 128 bpm…) restent des exemples et doivent être cohérents
-avec ces seuils (ex. l'hypothermie s'affiche sous 35 °C).
+avec ces seuils (le curseur de l'échelle tombe dans la bonne zone).
+
+**Notion non dite par la voix** (ex. glycémie, diurèse) : fiche **bonus sans voix** avant le logo
+(`src/videos/constantes/Bonus.tsx`) — section ajoutée à la timeline (`BONUS` dans `timeline.ts`),
+tempo tenu par les cartes, le curseur qui balaie les zones (petits « tic ») et la mascotte qui
+réagit à chaque zone ; finir sur « Mets pause pour noter ! ».
 
 ## Contrôle qualité (à chaque vidéo)
 
@@ -269,7 +284,7 @@ avec ces seuils (ex. l'hypothermie s'affiche sous 35 °C).
 ## Accroche
 
 Chaque vidéo commence par une promesse claire en 1 phrase (« Les 5 constantes à ne surtout pas
-oublier… ») + un aperçu de ce qu'on va apprendre (ex. « + 16 termes techniques »).
+oublier… ») + un aperçu de ce qu'on va apprendre (ex. « + 29 termes techniques »).
 
 ## Marque
 

@@ -1,5 +1,5 @@
-// v5 « Les 5 constantes » : la vidéo pilote v4 (même tempo, même physique) regénérée avec les nouvelles
-// planches de la mascotte (bustes LIBRES, sans cadre) + repères adultes discrets (normes, seuils).
+// « Les 5 constantes » v6 : la vidéo pilote (même tempo, même physique, mascotte libre) + toutes les normes
+// adulte du cours (échelles animées, seuils, voies de mesure, cible BPCO) + fiche bonus glycémie / diurèse.
 // Les règles de tempo / physique sont documentées dans docs/lpi/charte-video.md (« Tempo et physique »).
 import React from 'react';
 import {AbsoluteFill, Html5Audio, Img, interpolate, Sequence, spring, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
@@ -11,6 +11,7 @@ import {GRID, LPI} from '../../brand/theme';
 import {clamp} from '../../brand/ui';
 import {Sfx, SfxEnabled, SfxName} from '../../brand/Sfx';
 import {HOOK_ROW, Hook3, Recap3} from './Bookends';
+import {Bonus} from './Bonus';
 import {Cardiaque, Pression, Respiratoire, Saturation, Temperature} from './Lessons';
 import {MASCOT} from './mascot';
 import {SCENE_IDS, SceneId, TL} from './timeline';
@@ -46,6 +47,7 @@ const SCENES: Record<SceneId, React.FC> = {
 	pa: Pression,
 	spo2: Saturation,
 	outro: Recap3,
+	bonus: Bonus,
 	end: EndCard,
 };
 
@@ -63,6 +65,8 @@ const TRANSITIONS: Record<Exclude<SceneId, 'intro'>, {p: TransitionPresentation<
 	spo2: {p: whip('left'), sfx: 'whoosh'},
 	// vague de marque depuis le titre du récap
 	outro: {p: wave({x: 540, y: 330}), sfx: 'whoosh'},
+	// panoramique vers le haut : la fiche bonus arrive (la mascotte s'envole avec)
+	bonus: {p: whip('up'), sfx: 'whoosh'},
 	end: {p: zoomInto({x: 540, y: 840, color: LPI.sky}), sfx: 'whoosh'},
 };
 

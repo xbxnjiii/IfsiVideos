@@ -12,7 +12,7 @@ pas de logiciel de montage, pas de banque d'images.
 
 | # | Sujet | Composition | Script voix | Storyboard |
 |---|-------|-------------|-------------|------------|
-| 02 | Les 5 constantes + 16 termes techniques (repères adultes) | `Constantes` | [voix/02-constantes.script.json](voix/02-constantes.script.json) | [storyboard](docs/lpi/storyboard-constantes.md) |
+| 02 | Les 5 constantes + normes adultes (échelles animées) + bonus glycémie / diurèse | `Constantes` | [voix/02-constantes.script.json](voix/02-constantes.script.json) | [storyboard](docs/lpi/storyboard-constantes.md) |
 | 03 | Les 14 besoins fondamentaux (Virginia Henderson), en 3 étapes | `Besoins-Fondamentaux` | [voix/03-besoins-fondamentaux.script.json](voix/03-besoins-fondamentaux.script.json) | [storyboard](docs/lpi/storyboard-besoins-fondamentaux.md) |
 
 ## Utilisation
@@ -40,7 +40,8 @@ src/
     motion3.tsx               numéro qui s'écrase, termes qui claquent, caméra, socle, compteurs, vague
     motion4.tsx               transitions : plongée, rideau tiré par la mascotte, panoramique éclair
     kit.tsx                   stickers, tampons, puces cochées, rubans, progression par étapes, bulle
-    Lesson3.tsx               gabarit d'une notion (titre, définition, illustration, termes, repère adulte)
+    Lesson3.tsx               gabarit d'une notion (titre, définition, illustration, termes, échelle des normes)
+    NormScale.tsx             échelle des normes adulte (zones hypo / normo / hyper, curseur animé)
     MascotActor.tsx           mascotte actrice : sauts, course, expressions au mot près, bustes libres
     pictos.tsx                pictogrammes et illustrations (thermomètre, cœur, poumons, artère…)
     timeline.ts               voix → frames : at(scène, mot)

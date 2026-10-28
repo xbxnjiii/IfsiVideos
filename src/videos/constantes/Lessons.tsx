@@ -1,11 +1,13 @@
 import React from 'react';
 import {Easing, interpolate, random, useCurrentFrame} from 'remotion';
-import {Lesson3, Seuil, StatePill} from '../../brand/Lesson3';
+import {Lesson3, scaleY, Seuil, StatePill} from '../../brand/Lesson3';
+import {NormScale, Zone} from '../../brand/NormScale';
 import {Sign} from '../../brand/learn';
 import {Odometer} from '../../brand/motion3';
 import {Artery, Heart, Lungs, Oximeter, Rbc, SnowPicto, Thermometer} from '../../brand/pictos';
 import {alpha, FONT, LPI} from '../../brand/theme';
 import {clamp, useSoft} from '../../brand/ui';
+import {usePop} from '../../brand/kit';
 import {Sfx} from '../../brand/Sfx';
 import {at} from './timeline';
 
@@ -43,6 +45,95 @@ const breathPhase = (frame: number, segments: [number, number][]) => {
 };
 
 const PINK = alpha(LPI.pink, 0.42);
+
+/* Normes adulte (fiche de cours) : chaque échelle = zones nommées + bornes. */
+export const ZONES = {
+	temp: [
+		{name: 'hypothermie', range: '< 35 °C', tone: 'low', w: 1.15, lo: 33, hi: 35},
+		{name: '', tone: 'gap', w: 0.42, lo: 35, hi: 36.5},
+		{name: 'apyrétique', range: '36,5 – 37,5', tone: 'norm', w: 1.1, lo: 36.5, hi: 37.5},
+		{name: 'fébricule', range: '37,5 – 37,9', tone: 'mid', w: 1.0, lo: 37.5, hi: 37.95},
+		{name: 'hyperthermie', range: '≥ 38 °C', tone: 'high', w: 1.25, lo: 37.95, hi: 40.5},
+	],
+	fc: [
+		{name: 'bradycardie', range: '< 60 bpm', tone: 'low', w: 1, lo: 30, hi: 60},
+		{name: 'normocardie', range: '60 – 100 bpm', tone: 'norm', w: 1.15, lo: 60, hi: 100},
+		{name: 'tachycardie', range: '≥ 100 bpm', tone: 'high', w: 1, lo: 100, hi: 150},
+	],
+	fr: [
+		{name: 'bradypnée', range: '< 12 cycles/min', tone: 'low', w: 1, lo: 4, hi: 12},
+		{name: 'eupnée', range: '12 – 20 cycles/min', tone: 'norm', w: 1.1, lo: 12, hi: 20},
+		{name: 'tachypnée', range: '> 20 cycles/min', tone: 'high', w: 1, lo: 20, hi: 36},
+	],
+	pa: [
+		{name: 'hypotension', range: '< 90/60', tone: 'low', w: 1, lo: 60, hi: 90},
+		{name: 'normotension', range: '≈ 120/80 mmHg', tone: 'norm', w: 1.15, lo: 90, hi: 140},
+		{name: 'hypertension', range: '> 140/90', tone: 'high', w: 1, lo: 140, hi: 190},
+	],
+	spo2: [
+		{name: 'hypoxémie', range: '< 90 %', tone: 'high', w: 1, lo: 80, hi: 90},
+		{name: 'désaturation', range: '90 – 95 %', tone: 'mid', w: 1, lo: 90, hi: 95},
+		{name: 'normoxie', range: '> 95 à 100 %', tone: 'norm', w: 1.1, lo: 95, hi: 100.5},
+	],
+} satisfies Record<string, Zone[]>;
+
+const VOIES = ['rectale', 'buccale', 'tympanique', 'axillaire', 'temporale / frontale'];
+
+/** Voies de mesure de la température : la liste se construit pendant la définition. */
+const Voies: React.FC<{at: number}> = ({at: t0}) => {
+	const head = usePop(t0);
+	return (
+		<div style={{position: 'absolute', left: 628, top: 26, width: 290}}>
+			<div
+				style={{
+					fontFamily: FONT.body,
+					fontWeight: 800,
+					fontSize: 19,
+					letterSpacing: '0.14em',
+					textTransform: 'uppercase',
+					color: alpha(LPI.navy, 0.7),
+					marginBottom: 10,
+					opacity: Math.min(1, head * 2),
+				}}
+			>
+				Voies de mesure
+			</div>
+			{VOIES.map((v, i) => (
+				<Voie key={v} at={t0 + 4 + i * 5} label={v} />
+			))}
+		</div>
+	);
+};
+const Voie: React.FC<{at: number; label: string}> = ({at: t0, label}) => {
+	const p = usePop(t0);
+	return (
+		<div
+			style={{
+				display: 'flex',
+				alignItems: 'center',
+				gap: 10,
+				height: 50,
+				marginBottom: 9,
+				padding: '0 18px 0 10px',
+				borderRadius: 999,
+				background: LPI.paper,
+				border: `3px solid ${LPI.sky}`,
+				fontFamily: FONT.title,
+				fontWeight: 800,
+				fontSize: label.length > 12 ? 22 : 25,
+				color: LPI.navy,
+				whiteSpace: 'nowrap',
+				width: 'fit-content',
+				opacity: Math.min(1, p * 2),
+				transform: `translateX(${(1 - p) * 50}px) scale(${0.7 + 0.3 * p})`,
+				transformOrigin: 'left center',
+			}}
+		>
+			<div style={{width: 14, height: 14, borderRadius: 7, background: LPI.blue}} />
+			{label}
+		</div>
+	);
+};
 const COLD = alpha(LPI.sky, 0.95);
 
 /* ═══════════════════════════ 1 — TEMPÉRATURE ═══════════════════════════ */
@@ -52,10 +143,10 @@ const HeatWaves: React.FC<{on: number}> = ({on}) => {
 	const frame = useCurrentFrame();
 	if (on <= 0) return null;
 	return (
-		<svg width={936} height={540} style={{position: 'absolute', inset: 0, overflow: 'visible'}}>
+		<svg width={936} height={430} style={{position: 'absolute', inset: 0, overflow: 'visible'}}>
 			{[70, 310, 345].map((x0, k) => {
 				const pts = Array.from({length: 30}, (_, i) => {
-					const y = 420 - i * 12;
+					const y = 400 - i * 12;
 					const x = x0 + 12 * Math.sin((y + frame * 7 + k * 40) / 26);
 					return `${x},${y}`;
 				}).join(' ');
@@ -85,7 +176,7 @@ const Snowfall: React.FC<{on: number}> = ({on}) => {
 		<>
 			{Array.from({length: 9}, (_, i) => {
 				const x = 40 + random(`sx${i}`) * 850;
-				const y = ((frame * (2.4 + random(`sv${i}`) * 1.6) + random(`sy${i}`) * 560) % 580) - 40;
+				const y = ((frame * (2.4 + random(`sv${i}`) * 1.6) + random(`sy${i}`) * 440) % 470) - 40;
 				return (
 					<div
 						key={i}
@@ -130,7 +221,7 @@ export const Temperature: React.FC = () => {
 	return (
 		<Lesson3
 			n={1}
-			norm={<>normale 36,5 – 37,5 °C</>}
+			scale={<NormScale zones={ZONES.temp} value={value} at={D + 16} markerAt={D + 20} y={scaleY()} />}
 			slotSide="left"
 			shake
 			nAt={N}
@@ -144,34 +235,36 @@ export const Temperature: React.FC = () => {
 			]}
 			punches={[FIEVRE + 6, BASSE + 4]}
 			terms={[
-				{at: FEB, term: 'Fébrile', meaning: <>le patient a de la fièvre <Seuil>&gt; 38 °C</Seuil></>, sign: 'up'},
-				{at: APY, term: 'Apyrétique', meaning: <>pas de fièvre <Seuil>&lt; 38 °C</Seuil></>, sign: 'check'},
+				{at: FEB, term: 'Fébrile', meaning: <>fièvre, hyperthermie <Seuil>≥ 38 °C</Seuil></>, sign: 'up'},
+				{at: APY, term: 'Apyrétique', meaning: <>pas de fièvre <Seuil>36,5 – 37,5 °C</Seuil></>, sign: 'check'},
 				{at: HYP, term: 'Hypothermie', meaning: <>température trop basse <Seuil>&lt; 35 °C</Seuil></>, sign: 'down'},
 			]}
 			stage={
 				<>
 					<HeatWaves on={hot} />
 					<Snowfall on={cold} />
-					<div style={{position: 'absolute', left: 130, top: 26}}>
-						<Thermometer value={value} height={480} />
+					<div style={{position: 'absolute', left: 70, top: 12}}>
+						<Thermometer value={value} height={400} />
 					</div>
+					<Voies at={D} />
 					<div
 						style={{
 							position: 'absolute',
-							left: 380,
-							top: 120,
+							left: 262,
+							top: 70,
 							display: 'flex',
 							alignItems: 'baseline',
 							opacity: Math.min(1, num * 1.5),
 							transform: `translateY(${(1 - num) * 30}px)`,
 						}}
 					>
-						<Odometer value={value} decimals={1} places={2} size={170} />
-						<Unit>°C</Unit>
+						<Odometer value={value} decimals={1} places={2} size={136} />
+						<Unit size={50}>°C</Unit>
 					</div>
 					<StatePill
-						x={390}
-						y={340}
+						x={272}
+						y={262}
+						size={32}
 						states={[
 							{at: FIEVRE, kind: 'up', label: 'fièvre'},
 							{at: PAS, kind: 'check', label: 'pas de fièvre'},
@@ -258,7 +351,7 @@ export const Cardiaque: React.FC = () => {
 		<>
 			<Lesson3
 				n={2}
-				norm={<>normale 60 – 100 bpm</>}
+				scale={<NormScale zones={ZONES.fc} value={bpm} at={D + 8} markerAt={N + 46} y={scaleY()} />}
 				slotSide="right"
 				shake
 				nAt={N}
@@ -269,20 +362,20 @@ export const Cardiaque: React.FC = () => {
 				layers={[{color: PINK, level: fast}]}
 				punches={[RAP + 4]}
 				terms={[
-					{at: TA, term: 'Tachycardie', meaning: <>le cœur bat trop vite <Seuil>&gt; 100 bpm</Seuil></>, sign: 'up'},
+					{at: TA, term: 'Tachycardie', meaning: <>le cœur bat trop vite <Seuil>≥ 100 bpm</Seuil></>, sign: 'up'},
 					{at: BR, term: 'Bradycardie', meaning: <>le cœur bat trop lentement <Seuil>&lt; 60 bpm</Seuil></>, sign: 'down'},
-					{at: AR, term: 'Arythmie', meaning: 'le rythme est irrégulier', sign: 'wave'},
+					{at: AR, term: 'Arythmie', meaning: 'rythme (bpm) irrégulier', sign: 'wave'},
 				]}
 				stage={
 					<>
-						<div style={{position: 'absolute', left: 40, top: 30, transform: `rotate(${Math.sin(frame / 3) * 3 * fast}deg)`}}>
-							<Heart size={330} beat={beat} />
+						<div style={{position: 'absolute', left: 40, top: 14, transform: `rotate(${Math.sin(frame / 3) * 3 * fast}deg)`}}>
+							<Heart size={290} beat={beat} />
 						</div>
 						<div
 							style={{
 								position: 'absolute',
-								left: 420,
-								top: 90,
+								left: 400,
+								top: 50,
 								display: 'flex',
 								alignItems: 'baseline',
 								opacity: Math.min(1, num * 1.5),
@@ -290,19 +383,19 @@ export const Cardiaque: React.FC = () => {
 								transformOrigin: 'left center',
 							}}
 						>
-							<Odometer value={bpm} places={3} size={170} color={fast > 0.5 ? LPI.blue : LPI.navy} />
+							<Odometer value={bpm} places={3} size={150} color={fast > 0.5 ? LPI.blue : LPI.navy} />
 							<Unit>bpm</Unit>
 						</div>
 						<StatePill
-							x={430}
-							y={290}
+							x={410}
+							y={228}
 							states={[
 								{at: RAP, kind: 'up', label: 'trop rapide'},
 								{at: LEN, kind: 'down', label: 'trop lente'},
 								{at: IRR, kind: 'wave', label: 'rythme irrégulier'},
 							]}
 						/>
-						<div style={{position: 'absolute', left: 0, top: 400}}>
+						<div style={{position: 'absolute', left: 0, top: 318}}>
 							<PulseTrace beats={beats} width={936} />
 						</div>
 					</>
@@ -363,7 +456,7 @@ export const Respiratoire: React.FC = () => {
 	return (
 		<Lesson3
 			n={3}
-			norm={<>normale 12 – 20 / min</>}
+			scale={<NormScale zones={ZONES.fr} value={rate} at={D + 8} markerAt={N + 46} y={scaleY()} />}
 			slotSide="left"
 			shake
 			nAt={N}
@@ -374,44 +467,44 @@ export const Respiratoire: React.FC = () => {
 			layers={[{color: PINK, level: Math.min(1, fast + dys)}]}
 			punches={[RAP + 4, MAL + 4]}
 			terms={[
-				{at: TA, term: 'Tachypnée', meaning: <>respiration trop rapide <Seuil>&gt; 20 / min</Seuil></>, sign: 'up'},
-				{at: BR, term: 'Bradypnée', meaning: <>respiration trop lente <Seuil>&lt; 12 / min</Seuil></>, sign: 'down'},
+				{at: TA, term: 'Tachypnée', meaning: <>respiration trop rapide <Seuil>&gt; 20 cycles/min</Seuil></>, sign: 'up'},
+				{at: BR, term: 'Bradypnée', meaning: <>respiration trop lente <Seuil>&lt; 12 cycles/min</Seuil></>, sign: 'down'},
 				{at: DY, term: 'Dyspnée', meaning: 'difficulté à respirer', sign: 'alert'},
 			]}
 			stage={
 				<>
-					<div style={{position: 'absolute', left: 30, top: 70}}>
-						<Lungs breath={breath} inspiring={inspiring} q={q} size={420} />
+					<div style={{position: 'absolute', left: 40, top: 46}}>
+						<Lungs breath={breath} inspiring={inspiring} q={q} size={340} />
 					</div>
-					<Air q={q} inspiring={inspiring} amp={amp} x={30 + 210} y0={50} y1={190} />
+					<Air q={q} inspiring={inspiring} amp={amp} x={40 + 170} y0={30} y1={142} />
 					<div
 						style={{
 							position: 'absolute',
-							left: 500,
-							top: 110,
+							left: 470,
+							top: 70,
 							display: 'flex',
 							alignItems: 'baseline',
 							opacity: Math.min(1, num * 1.5) * (1 - dys),
 							transform: `translateY(${(1 - num) * 30}px) scale(${1 - 0.2 * dys})`,
 						}}
 					>
-						<Odometer value={rate} places={2} size={170} color={fast > 0.5 ? LPI.blue : LPI.navy} />
-						<Unit>/ min</Unit>
+						<Odometer value={rate} places={2} size={150} color={fast > 0.5 ? LPI.blue : LPI.navy} />
+						<Unit size={46}>cycles/min</Unit>
 					</div>
 					<div
 						style={{
 							position: 'absolute',
 							left: 560,
-							top: 90,
+							top: 40,
 							opacity: dys,
 							transform: `scale(${0.4 + 0.6 * alertPop}) rotate(${Math.sin(frame / 2.5) * 4 * dys}deg)`,
 						}}
 					>
-						<Sign kind="alert" size={180} />
+						<Sign kind="alert" size={160} />
 					</div>
 					<StatePill
-						x={500}
-						y={320}
+						x={480}
+						y={280}
 						states={[
 							{at: RAP, kind: 'up', label: 'trop rapide'},
 							{at: LEN, kind: 'down', label: 'trop lente'},
@@ -499,7 +592,7 @@ export const Pression: React.FC = () => {
 					transform: `scale(${hi ? 1.08 : 1})`,
 				}}
 			>
-				<Odometer value={v} places={3} size={118} color={hi ? LPI.blue : LPI.navy} />
+				<Odometer value={v} places={3} size={104} color={hi ? LPI.blue : LPI.navy} />
 			</div>
 			<div style={{fontFamily: FONT.body, fontWeight: 800, fontSize: 28, color: hi ? LPI.blue : alpha(LPI.navy, 0.55), marginTop: 4}}>
 				{label}
@@ -509,7 +602,7 @@ export const Pression: React.FC = () => {
 	return (
 		<Lesson3
 			n={4}
-			norm={<>normale ≈ 120/80 mmHg</>}
+			scale={<NormScale zones={ZONES.pa} value={sys} at={D + 10} markerAt={N + 48} y={scaleY()} />}
 			slotSide="right"
 			shake
 			nAt={N}
@@ -517,8 +610,7 @@ export const Pression: React.FC = () => {
 			titleAt={T}
 			definition="Pression du sang sur la paroi des artères"
 			defAt={D}
-			stageH={520}
-			slotTop={1026}
+			slotTop={1040}
 			layers={[
 				{color: PINK, level: high},
 				{color: COLD, level: low},
@@ -527,30 +619,30 @@ export const Pression: React.FC = () => {
 			terms={[
 				{at: SYS, term: 'Systolique (PAS)', meaning: '1er chiffre : le cœur se contracte', sign: 'squeeze'},
 				{at: DIA, term: 'Diastolique (PAD)', meaning: '2e chiffre : le cœur se relâche', sign: 'relax'},
-				{at: HTA, term: 'Hypertension', meaning: <>(HTA) pression trop haute <Seuil>≥ 140/90</Seuil></>, sign: 'up'},
-				{at: HYPO, term: 'Hypotension', meaning: <>pression trop basse <Seuil>PAS &lt; 90</Seuil></>, sign: 'down'},
+				{at: HTA, term: 'Hypertension', meaning: <>(HTA) trop haute <Seuil>&gt; 140/90 mmHg</Seuil></>, sign: 'up'},
+				{at: HYPO, term: 'Hypotension', meaning: <>pression trop basse <Seuil>&lt; 90/60 mmHg</Seuil></>, sign: 'down'},
 			]}
 			stage={
 				<>
-					<div style={{position: 'absolute', left: 0, top: 6, transform: 'scale(0.78)', transformOrigin: 'top left'}}>
-						<Artery width={1200} arrows={arrows} strength={strength} />
+					<div style={{position: 'absolute', left: 0, top: 4, transform: 'scale(0.62)', transformOrigin: 'top left'}}>
+						<Artery width={1510} arrows={arrows} strength={strength} />
 					</div>
 					<div
 						style={{
 							position: 'absolute',
 							left: 40,
-							top: 252,
+							top: 206,
 							opacity: Math.min(1, num * 1.5),
 							transform: `scale(${0.6 + 0.4 * num})`,
 						}}
 					>
-						<Manometer value={needle} size={250} tone={tone} />
+						<Manometer value={needle} size={212} tone={tone} />
 					</div>
 					<div
 						style={{
 							position: 'absolute',
-							left: 320,
-							top: 280,
+							left: 300,
+							top: 222,
 							display: 'flex',
 							alignItems: 'flex-start',
 							gap: 6,
@@ -559,7 +651,7 @@ export const Pression: React.FC = () => {
 						}}
 					>
 						{cell(sys, hiSys, 'PAS')}
-						<div style={{fontFamily: FONT.title, fontWeight: 900, fontSize: 110, color: LPI.navy, lineHeight: 1.1}}>/</div>
+						<div style={{fontFamily: FONT.title, fontWeight: 900, fontSize: 96, color: LPI.navy, lineHeight: 1.1}}>/</div>
 						{cell(dia, hiDia, 'PAD')}
 					</div>
 				</>
@@ -580,10 +672,10 @@ const BloodLane: React.FC<{o2: (i: number) => number; show: number}> = ({o2, sho
 			style={{
 				position: 'absolute',
 				left: 0,
-				top: 350,
+				top: 292,
 				width: 936,
-				height: 170,
-				borderRadius: 85,
+				height: 134,
+				borderRadius: 67,
 				background: alpha(LPI.pink, 0.28),
 				border: `5px solid ${alpha(LPI.pink, 0.8)}`,
 				overflow: 'hidden',
@@ -593,10 +685,10 @@ const BloodLane: React.FC<{o2: (i: number) => number; show: number}> = ({o2, sho
 		>
 			{Array.from({length: n}, (_, i) => {
 				const x = ((i * L) / n + frame * 3.2) % L - 60;
-				const y = 85 + Math.sin(frame / 14 + i * 1.7) * 18;
+				const y = 67 + Math.sin(frame / 14 + i * 1.7) * 14;
 				return (
-					<div key={i} style={{position: 'absolute', left: x - 50, top: y - 50}}>
-						<Rbc size={100} o2={o2(i)} />
+					<div key={i} style={{position: 'absolute', left: x - 40, top: y - 40}}>
+						<Rbc size={80} o2={o2(i)} />
 					</div>
 				);
 			})}
@@ -631,7 +723,16 @@ export const Saturation: React.FC = () => {
 	return (
 		<Lesson3
 			n={5}
-			norm={<>SpO<Sub2 /> normale 95 – 100 %</>}
+			scale={
+				<NormScale
+					zones={ZONES.spo2}
+					value={value}
+					at={D + 6}
+					markerAt={D + 8}
+					y={scaleY()}
+					bracket={{lo: 88, hi: 92, label: 'cible BPCO : 88 – 92 %', at: at('spo2', 'transporte')}}
+				/>
+			}
 			slotSide="left"
 			shake
 			nAt={N}
@@ -672,11 +773,11 @@ export const Saturation: React.FC = () => {
 					),
 					sign: 'down',
 				},
-				{at: HYPX, term: 'Hypoxémie', meaning: "manque d'oxygène dans le sang", sign: 'empty'},
+				{at: HYPX, term: 'Hypoxémie', meaning: <>manque d'O<Sub2 /> dans le sang <Seuil>&lt; 90 %</Seuil></>, sign: 'empty'},
 			]}
 			stage={
 				<>
-					<div style={{position: 'absolute', left: 40, top: 14, transform: 'scale(0.98)', transformOrigin: 'top left'}}>
+					<div style={{position: 'absolute', left: 40, top: 0, transform: 'scale(0.84)', transformOrigin: 'top left'}}>
 						<Oximeter on={on} value={value} enter={enter} clip={clip} alert={alertV} focus={focus} />
 					</div>
 					<BloodLane o2={o2} show={lane} />
@@ -684,10 +785,10 @@ export const Saturation: React.FC = () => {
 						style={{
 							position: 'absolute',
 							left: 40,
-							top: 300,
+							top: 250,
 							fontFamily: FONT.body,
 							fontWeight: 800,
-							fontSize: 28,
+							fontSize: 25,
 							color: alpha(LPI.navy, 0.7),
 							opacity: lane,
 						}}

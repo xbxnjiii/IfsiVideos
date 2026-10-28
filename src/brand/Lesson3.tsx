@@ -15,8 +15,12 @@ export const L3 = {
 	titleY: 230,
 	defY: 414,
 	stageY: 478,
-	stageH: 540,
+	/** socle de l'illustration ; dessous : l'échelle des normes (≈ 110 px), puis la fiche des termes */
+	stageH: 430,
 };
+
+/** haut de l'échelle des normes, juste sous le socle */
+export const scaleY = (stageH = L3.stageH) => L3.stageY + stageH + 4;
 
 export type Term3 = {at: number; term: string; meaning: React.ReactNode; sign: SignKind};
 
@@ -39,10 +43,9 @@ export const Lesson3: React.FC<{
 	slotSide?: 'left' | 'right';
 	/** secousses d'impact (numéro, termes) */
 	shake?: boolean;
-	/** repère adulte discret sous l'illustration (ex. « normale 36,5 – 37,5 °C ») */
-	norm?: React.ReactNode;
-	normAt?: number;
-}> = ({n, nAt, title, titleAt, definition, defAt, stage, layers, stageH = L3.stageH, slotTop = SLOT.y, terms, punches = [], slotSide = 'left', shake = false, norm, normAt}) => {
+	/** échelle des normes adulte sous l'illustration (voir NormScale), placée à `scaleY(stageH)` */
+	scale?: React.ReactNode;
+}> = ({n, nAt, title, titleAt, definition, defAt, stage, layers, stageH = L3.stageH, slotTop = SLOT.y, terms, punches = [], slotSide = 'left', shake = false, scale}) => {
 	const frame = useCurrentFrame();
 	const tA = Math.max(titleAt, nAt + 22);
 	const slamY = L3.stageY + stageH / 2;
@@ -53,7 +56,7 @@ export const Lesson3: React.FC<{
 				<Stage y={L3.stageY} h={stageH} at={nAt + 18} layers={layers} bumps={terms.map((t) => t.at + 26)}>
 					{stage}
 				</Stage>
-				{norm ? <NormRibbon at={normAt ?? defAt + 12} y={L3.stageY + stageH - 6}>{norm}</NormRibbon> : null}
+				{scale}
 				<div style={{position: 'absolute', left: L3.titleX, top: L3.titleY, width: 1008 - L3.titleX}}>
 					<Title at={tA} text={title[0]} size={60} stagger={2} brush={false} />
 					<Title at={tA + 4} text={`*${title[1]}*`} size={96} stagger={2} />

@@ -4,6 +4,7 @@
 import type {Beat} from '../../brand/MascotActor';
 import {L3} from '../../brand/Lesson3';
 import {RUN_WIPE} from '../../brand/motion4';
+import {BONUS_T} from './Bonus';
 import {HOOK_ROW} from './Bookends';
 import {abs, SCENE_IDS, SceneId, TL} from './timeline';
 
@@ -19,10 +20,10 @@ const spots = (side: 'left' | 'right', stageH = L3.stageH, homeY = 1215) => {
 		home: {x: R ? 830 : 245, y: homeY, size: 290} as Spot,
 		/** grande, qui monte du bas de l'écran (sous la fiche) */
 		low: {x: R ? 640 : 440, y: 1690, size: 420} as Spot,
-		/** posée sur le coin haut-droit du terme qui claque (seulement si la définition est courte) */
-		top: {x: 900, y: slamY - 145, size: 205} as Spot,
-		/** accrochée sous le coin du terme, côté libre */
-		bottom: {x: R ? 905 : 175, y: slamY + 238, size: 215} as Spot,
+		/** posée sur le coin haut-droit du terme qui claque (sous la définition) */
+		top: {x: 900, y: slamY - 100, size: 205} as Spot,
+		/** posée sur le coin haut-gauche du terme qui claque (l'échelle des normes reste visible dessous) */
+		bottom: {x: 180, y: slamY - 100, size: 205} as Spot,
 	};
 };
 
@@ -42,7 +43,7 @@ const temp = spots('left');
 const fc = spots('right');
 const fr = spots('left');
 // 4 termes : la fiche descend plus bas, la place « basse » se décale à gauche
-const pa = {...spots('right', 520, 1230), low: {x: 280, y: 1660, size: 380} as Spot};
+const pa = {...spots('right', undefined, 1250), low: {x: 280, y: 1680, size: 380} as Spot};
 const spo2 = spots('left');
 
 export const MASCOT: Beat[] = [
@@ -132,8 +133,19 @@ export const MASCOT: Beat[] = [
 	{at: abs('outro', 'spo2') + 16, via: 'pop', key: 'gestes/bravo', fx: 'bounce', x: 540, y: 1620, size: 480},
 	{at: abs('outro', 'enregistre'), key: 'situations/lit-cours', x: 860, y: 1340, size: 280},
 	{at: abs('outro', 'commentaire'), key: 'situations/pose-question', x: 850, y: 1480, size: 300},
-	// au revoir en pied, puis elle repart en courant avant le logo
+	// au revoir en pied (puis elle s'envole vers la fiche bonus)
 	{at: abs('outro', 'pas'), key: 'poses/main-levee', x: 850, y: 1880, size: 640},
+	/* ── bonus (sans voix) : glycémie puis diurèse ── */
+	{at: start('bonus') + 2, dur: 14, key: 'poses/main-levee', x: 540, y: -520, size: 300},
+	{at: start('bonus') + BONUS_T.stamp + 6, via: 'pop', key: 'gestes/astuce', fx: 'bounce', x: 540, y: 1700, size: 420},
+	{at: start('bonus') + BONUS_T.cardA + 6, key: 'expressions/loupe', x: 300, y: 1700, size: 400},
+	{at: start('bonus') + BONUS_T.hypo, key: 'symptomes/malaise', fx: 'shiver', x: 300, y: 1700, size: 400},
+	{at: start('bonus') + BONUS_T.hyper, key: 'expressions/surprise', x: 300, y: 1700, size: 400},
+	{at: start('bonus') + BONUS_T.cardB + 4, key: 'symptomes/toilettes', x: 780, y: 1700, size: 400},
+	{at: start('bonus') + BONUS_T.anurie, key: 'expressions/inquiete', x: 780, y: 1700, size: 400},
+	{at: start('bonus') + BONUS_T.poly, key: 'expressions/genee', x: 780, y: 1700, size: 400},
+	{at: start('bonus') + BONUS_T.hint + 2, key: 'situations/a-retenir', x: 540, y: 1720, size: 430},
+	// elle repart en courant avant le logo
 	{at: start('end') - 6, via: 'pop', key: 'poses/course', x: 640, y: 1850, size: 600},
 	{at: start('end') + 10, via: 'run', dur: 16, key: 'poses/course', x: 1460, y: 1850, size: 600},
 ];

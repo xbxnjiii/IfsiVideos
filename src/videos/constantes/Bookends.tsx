@@ -12,11 +12,11 @@ const ease = Easing.bezier(0.22, 1, 0.36, 1);
 const Sub2: React.FC = () => <sub style={{fontSize: '0.6em', verticalAlign: '-0.15em', lineHeight: 0}}>2</sub>;
 
 export const CONSTANTES = [
-	{abbr: 'T°', Picto: ThermoPicto, terms: ['Fébrile', 'Apyrétique', 'Hypothermie']},
-	{abbr: 'FC', Picto: HeartPicto, terms: ['Tachycardie', 'Bradycardie', 'Arythmie']},
-	{abbr: 'FR', Picto: LungsPicto, terms: ['Tachypnée', 'Bradypnée', 'Dyspnée']},
-	{abbr: 'PA', Picto: GaugePicto, terms: ['Systolique', 'Diastolique', 'HTA', 'Hypotension']},
-	{abbr: 'SpO2', Picto: O2Picto, terms: ['Désaturation', 'Hypoxémie', 'Oxymètre']},
+	{abbr: 'T°', Picto: ThermoPicto, terms: ['Apyrétique', 'Fébricule', 'Hyperthermie', 'Hypothermie']},
+	{abbr: 'FC', Picto: HeartPicto, terms: ['Normocardie', 'Tachycardie', 'Bradycardie', 'Arythmie']},
+	{abbr: 'FR', Picto: LungsPicto, terms: ['Eupnée', 'Tachypnée', 'Bradypnée', 'Dyspnée']},
+	{abbr: 'PA', Picto: GaugePicto, terms: ['Normotension', 'HTA', 'Hypotension', 'PAS / PAD']},
+	{abbr: 'SpO2', Picto: O2Picto, terms: ['Normoxie', 'Désaturation', 'Hypoxémie', 'BPCO 88–92 %']},
 ] as const;
 
 const Abbr: React.FC<{i: number}> = ({i}) =>
@@ -42,6 +42,9 @@ const MARQUEE: [string, SignKind][][] = [
 		['Apyrétique', 'check'],
 		['Bradypnée', 'down'],
 		['Hypotension', 'down'],
+		['Normocardie', 'check'],
+		['Fébricule', 'up'],
+		['Oligurie', 'down'],
 	],
 	[
 		['Arythmie', 'wave'],
@@ -52,6 +55,9 @@ const MARQUEE: [string, SignKind][][] = [
 		['Bradycardie', 'down'],
 		['Hypertension', 'up'],
 		['Oxymètre de pouls', 'device'],
+		['Eupnée', 'check'],
+		['Normoxie', 'check'],
+		['Hyperglycémie', 'up'],
 	],
 ];
 
@@ -134,7 +140,8 @@ export const Hook3: React.FC = () => {
 	const cy = interpolate(fly, [0, 1], [800, 320]);
 	const ring = 1 - fly;
 	const les = interpolate(frame, [0, 4, C - 2, C + 6], [0, 1, 1, 0], clamp);
-	const count = interpolate(frame, [TECH, TECH + 28], [0, 16], {...clamp, easing: ease});
+	// termes techniques à l'écran : 22 dans les 5 constantes + 7 dans la fiche bonus
+	const count = interpolate(frame, [TECH, TECH + 28], [0, 29], {...clamp, easing: ease});
 	const chip = spring({frame: frame - TECH + 2, fps, config: {damping: 12, stiffness: 190}});
 	const absPunch = frame >= ABS ? Math.exp(-(frame - ABS) / 6) * Math.sin((frame - ABS) * 0.8) : 0;
 
@@ -424,7 +431,7 @@ export const Recap3: React.FC = () => {
 								<div style={{fontFamily: FONT.title, fontWeight: 900, fontSize: 42, color: current ? LPI.blue : LPI.navy, minWidth: 100}}>
 									<Abbr i={k} />
 								</div>
-								<div style={{display: 'flex', gap: 8}}>
+								<div style={{display: 'flex', gap: 6}}>
 									{c.terms.map((t, j) => {
 										const ts = spring({frame: frame - named[k] - 5 - j * 3, fps, config: {damping: 11, stiffness: 220}});
 										return (
@@ -435,10 +442,10 @@ export const Recap3: React.FC = () => {
 													transform: `translateY(${(1 - ts) * 20}px) scale(${0.7 + 0.3 * ts})`,
 													fontFamily: FONT.body,
 													fontWeight: 700,
-													fontSize: 26,
+													fontSize: 22,
 													color: LPI.navy,
 													background: current ? LPI.paper : alpha(LPI.sky, 0.6),
-													padding: '7px 13px',
+													padding: '7px 11px',
 													borderRadius: 999,
 													whiteSpace: 'nowrap',
 												}}
