@@ -150,10 +150,11 @@ export const Odometer: React.FC<{value: number; decimals?: number; places?: numb
 	const cols: React.ReactNode[] = [];
 	for (let k = places + decimals - 1; k >= 0; k--) {
 		const unit = 10 ** k;
-		// le chiffre « roule » seulement pendant le passage du chiffre inférieur de 9 à 0
-		const below = (scaled % unit) / unit;
+		// le chiffre « roule » seulement pendant le dernier pas du chiffre le plus bas (…9 → …0),
+		// comme un vrai compteur : 39,2 affiche un « 3 » immobile, 39,95 un « 3 » à moitié passé au « 4 »
+		const below = scaled % unit;
 		const base = Math.floor(scaled / unit);
-		const roll = k === 0 ? scaled / unit : base + Math.max(0, (below - 0.9) / 0.1);
+		const roll = k === 0 ? scaled : base + Math.max(0, below - (unit - 1));
 		const leading = k >= decimals + 1 && base === 0 ? 1 : 0;
 		cols.push(<DigitColumn key={`d${k}`} pos={roll} size={size} color={color} hidden={leading} />);
 		if (k === decimals && decimals > 0) {
