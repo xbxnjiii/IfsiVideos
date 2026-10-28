@@ -73,7 +73,8 @@ export const NormScale: React.FC<{
 	};
 	const active = value === undefined ? -1 : zones.findIndex((z, i) => (value >= z.lo || i === 0) && (value < z.hi || i === zones.length - 1));
 	const tagP = spring({frame: frame - at, fps, config: {damping: 12, stiffness: 200}});
-	const mk = markerAt !== undefined ? spring({frame: frame - markerAt, fps, config: {damping: 10, stiffness: 220, mass: 0.6}}) : 0;
+	// le curseur n'arrive jamais avant sa barre
+	const mk = markerAt !== undefined ? spring({frame: frame - Math.max(markerAt, at + 6), fps, config: {damping: 10, stiffness: 220, mass: 0.6}}) : 0;
 	const barLeft = tag ? TAG_W + 12 : 0;
 	return (
 		<div style={{position: 'absolute', left: x, top: y, width, height: TOP + BAR_H + rangeSize + 14}}>
