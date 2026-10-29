@@ -95,8 +95,8 @@ export const MASCOT: Beat[] = [
 	{at: abs('outro', 'tachycardie'), key: 'symptomes/douleur-poitrine', fx: 'pant', ...L},
 	{at: abs('outro', 'bradycardie'), dur: 26, arc: 60, key: 'expressions/fatiguee', fx: 'slow', ...R},
 	{at: abs('outro', 'rythme'), key: 'situations/montre-ecg', ...L},
-	{at: abs('outro', 'pouls', 2) + 10, via: 'pop', key: 'gestes/bravo', fx: 'bounce', x: 540, y: 1690, size: 440},
+	{at: abs('outro', 'pouls', 2) + 10, via: 'pop', key: 'gestes/bravo', fx: 'bounce', x: 540, y: 1735, size: 390},
 	// elle repart en courant avant le logo
-	{at: start('end') - 6, via: 'pop', key: 'poses/course', x: 640, y: 1850, size: 600},
-	{at: start('end') + 10, via: 'run', dur: 16, key: 'poses/course', x: 1460, y: 1850, size: 600},
+	{at: start('end') - 6, via: 'pop', key: 'poses/course', x: 640, y: 1890, size: 480},
+	{at: start('end') + 10, via: 'run', dur: 16, key: 'poses/course', x: 1460, y: 1890, size: 480},
 ];

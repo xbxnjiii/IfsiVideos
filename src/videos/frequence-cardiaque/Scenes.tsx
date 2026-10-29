@@ -865,7 +865,7 @@ export const Outro: React.FC = () => {
 				{rows.map(([t, sign, label, sub], i) => (
 					<RecapRow key={i} at={t} next={i < rows.length - 1 ? rows[i + 1][0] : DONE} sign={sign} label={label} sub={sub} y={430 + i * 128} />
 				))}
-				<Stamp at={DONE} x={540} y={1300} text="Pro du pouls !" size={80} rot={-6} />
+				<Stamp at={DONE} x={540} y={1262} text="Pro du pouls !" size={76} rot={-5} />
 				<Confetti at={DONE} x={540} y={900} n={60} />
 			</Camera>
 			{rows.map(([t]) => (
