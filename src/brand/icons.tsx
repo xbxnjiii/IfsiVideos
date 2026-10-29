@@ -110,3 +110,34 @@ export const ShiverIcon: React.FC<IP> = (p) => (
 		))}
 	</Ico>
 );
+/** maux de tête : tête + éclairs aux tempes */
+export const HeadacheIcon: React.FC<IP> = (p) => (
+	<Ico {...p}>
+		<circle cx="50" cy="56" r="28" />
+		<path d="M40 52 L46 54 M60 52 L54 54 M42 70 Q50 64 58 70" />
+		<path d="M14 30 L22 20 L22 30 L30 20 M86 30 L78 20 L78 30 L70 20" stroke={LPI.pink} strokeWidth={8} />
+	</Ico>
+);
+/** bourdonnements d'oreilles : oreille + ondes */
+export const EarIcon: React.FC<IP> = (p) => (
+	<Ico {...p}>
+		<path d="M30 40 C30 22 44 12 58 14 C72 16 80 28 78 42 C76 54 64 58 62 68 C60 80 50 88 40 84" />
+		<path d="M46 42 C46 34 54 30 60 34 C64 38 62 44 58 48" />
+		<path d="M14 38 Q8 50 14 62 M22 44 Q19 50 22 56" stroke={LPI.pink} strokeWidth={7} />
+	</Ico>
+);
+/** vertiges / tête qui tourne : spirale */
+export const DizzyIcon: React.FC<IP> = (p) => (
+	<Ico {...p}>
+		<path d="M50 50 m0 -4 a4 4 0 1 1 -4 4 a10 10 0 1 1 10 10 a18 18 0 1 1 -18 -18 a26 26 0 1 1 26 26" />
+		<path d="M82 18 L85 25 L92 28 L85 31 L82 38 L79 31 L72 28 L79 25 Z" fill={alpha(LPI.pink, 0.8)} strokeWidth={4} />
+	</Ico>
+);
+/** malaise : visage, yeux fermés, gouttes */
+export const FaintIcon: React.FC<IP> = (p) => (
+	<Ico {...p}>
+		<circle cx="50" cy="54" r="32" fill={alpha(LPI.sky, 0.6)} />
+		<path d="M34 48 Q40 54 46 48 M54 48 Q60 54 66 48 M42 70 H58" />
+		<path d="M84 14 C84 14 92 24 92 29 A8 8 0 0 1 76 29 C76 24 84 14 84 14 Z" fill={alpha(LPI.sky, 0.9)} strokeWidth={4} />
+	</Ico>
+);

@@ -2,6 +2,7 @@ import React from 'react';
 import {Easing, interpolate, random, useCurrentFrame} from 'remotion';
 import {Lesson3, scaleY, Seuil, StatePill} from '../../brand/Lesson3';
 import {NormScale, Zone} from '../../brand/NormScale';
+import {Manometer} from '../../brand/pressure';
 import {Sign} from '../../brand/learn';
 import {Odometer} from '../../brand/motion3';
 import {Artery, Heart, Lungs, Oximeter, Rbc, SnowPicto, Thermometer} from '../../brand/pictos';
@@ -535,42 +536,6 @@ export const Respiratoire: React.FC = () => {
 };
 
 /* ═══════════════════════ 4 — PRESSION ARTÉRIELLE ═══════════════════════ */
-
-/** Manomètre du tensiomètre (0 → 300 mmHg). */
-const Manometer: React.FC<{value: number; size?: number; tone?: string | null}> = ({value, size = 250, tone}) => {
-	const a = interpolate(value, [0, 300], [-135, 135]);
-	return (
-		<svg width={size} height={size} viewBox="-100 -100 200 200" style={{overflow: 'visible'}}>
-			<circle r={92} fill={LPI.paper} stroke={LPI.navy} strokeWidth={8} />
-			<circle r={80} fill={tone ? alpha(tone, 0.5) : alpha(LPI.sky, 0.45)} />
-			{Array.from({length: 31}, (_, i) => {
-				const ang = ((-135 + i * 9) * Math.PI) / 180;
-				const big = i % 5 === 0;
-				const r0 = big ? 58 : 66;
-				return (
-					<line
-						key={i}
-						x1={Math.sin(ang) * r0}
-						y1={-Math.cos(ang) * r0}
-						x2={Math.sin(ang) * 76}
-						y2={-Math.cos(ang) * 76}
-						stroke={LPI.navy}
-						strokeWidth={big ? 5 : 3}
-						strokeLinecap="round"
-						opacity={big ? 0.9 : 0.5}
-					/>
-				);
-			})}
-			<text y={44} textAnchor="middle" fontFamily={FONT.body} fontWeight={800} fontSize={17} fill={alpha(LPI.navy, 0.6)}>
-				mmHg
-			</text>
-			<g transform={`rotate(${a})`}>
-				<path d="M-6 10 L0 -70 L6 10 Z" fill={LPI.navy} />
-			</g>
-			<circle r={13} fill={LPI.blue} stroke={LPI.navy} strokeWidth={4} />
-		</svg>
-	);
-};
 
 export const Pression: React.FC = () => {
 	const frame = useCurrentFrame();

@@ -70,7 +70,7 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   (ex. ample (profonde, beaucoup d'air), superficielle (peu profonde, peu d'air)).
 - Déroulé type : accroche · définition · mesure (geste + astuce) · norme adulte · trop haut · trop bas ·
   « pas que le chiffre » (rythme, amplitude…) · récap rapide · logo.
-- Modèles : `Frequence-Cardiaque`, `Frequence-Respiratoire` et `Temperature` (`src/videos/frequence-*/`, `src/videos/temperature/`,
+- Modèles : `Frequence-Cardiaque`, `Frequence-Respiratoire`, `Temperature`, `Tension-Arterielle` (`src/videos/<épisode>/`,
   storyboards dans `docs/lpi/`). Paliers de valeur qui roulent : `steps()` de `temperature/Scenes.tsx`.
 
 ## Recette express (nouvelle vidéo de constante)
@@ -79,12 +79,15 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
 2. Copier `src/videos/frequence-respiratoire/` → `timeline.ts` (ids de scènes), `Scenes.tsx`, `mascot.ts`,
    `<Video>.tsx` (scènes + transitions), puis déclarer la composition dans `src/Root.tsx` et la vidéo dans
    `scripts/qa/check-mascot.ts`.
-3. Briques prêtes (`src/brand/`) : `episode.tsx` (mise en page `LAY`, `Head`, `Unit`, `Tag`, `BigNum`,
+3. **Corps humain = `Patient`** (`src/brand/patient.tsx`, validé) : patient de face, visage qui cligne (`mood` calme / content /
+   mal), calques 0 → 1 (cœur qui bat, artères, brassard gonflé, rougeur, pâleur, sueurs, maux de tête, vertiges) et
+   points du corps `patientPoint()` pour poser repères et loupes. Ne plus utiliser l'ancien buste `Chest`.
+   Briques prêtes (`src/brand/`) : `episode.tsx` (mise en page `LAY`, `Head`, `Unit`, `Tag`, `BigNum`,
    `CauseChip`, `Stopwatch`, `RecapScene`, `EndCard`, composition `Episode`, places `SPOT`, `runAcross`),
    `cardio.tsx` (battements, ECG, cœur qui bat, onde de pouls), `breath.tsx` (respiration, poumons, thorax,
-   tracé respiratoire), `thermo.tsx` (zones de température, thermomètre + °C qui roule, jauge froid ↔ chaud,
+   tracé respiratoire), `pressure.tsx` (normes PA, manomètre, lecture 120/80 mmHg), `thermo.tsx` (zones de température, thermomètre + °C qui roule, jauge froid ↔ chaud,
    ondes de chaleur, flocons), `body.tsx` (poignet, doigts, pouce), `icons.tsx` (effort, fièvre, stress, douleur,
-   anxiété, médicament, sommeil, sportif, œil, sueurs, visage rouge, pâleur, frissons), `NormScale`, `TermSlam`, `Stage`, kit (`Stamp`, `CheckChip`…).
+   anxiété, médicament, sommeil, sportif, œil, sueurs, visage rouge, pâleur, frissons, maux de tête, oreille, vertiges, malaise), `NormScale`, `TermSlam`, `Stage`, kit (`Stamp`, `CheckChip`…).
 4. Contrôle : `npm run check:mascot -- <épisode>` → `COMP=<Composition> OUT=out/qa SCALE=0.5 node scripts/qa/stills.mjs <frames…>`
    → `npm run sheet -- out/qa` (planches ffmpeg) → relecture → rendu → `npm run sheet -- out/<vidéo>.mp4` (1 image/s).
 

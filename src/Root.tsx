@@ -12,6 +12,8 @@ import {FrequenceRespiratoire, FrequenceRespiratoireProps} from './videos/freque
 import {TL as FR_TL} from './videos/frequence-respiratoire/timeline';
 import {Temperature, TemperatureProps} from './videos/temperature/Temperature';
 import {TL as TEMP_TL} from './videos/temperature/timeline';
+import {TensionArterielle, TensionArterielleProps} from './videos/tension-arterielle/TensionArterielle';
+import {TL as TA_TL} from './videos/tension-arterielle/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -68,6 +70,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies TemperatureProps}
+		/>
+		{/* 07 · La tension artérielle */}
+		<Composition
+			id="Tension-Arterielle"
+			component={TensionArterielle}
+			durationInFrames={TA_TL.total}
+			fps={TA_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies TensionArterielleProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition
