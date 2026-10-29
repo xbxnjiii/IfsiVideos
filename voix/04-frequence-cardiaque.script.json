@@ -1,0 +1,43 @@
+[
+	{
+		"id": "intro",
+		"text": "C'est quoi, la fréquence cardiaque ? Et comment la prendre sans te tromper ? Reste jusqu'au bout : petit test à la fin !"
+	},
+	{
+		"id": "def",
+		"text": "La fréquence cardiaque, c'est le nombre de battements du cœur en une minute. On l'écrit en {bpm|B P M} : battements par minute."
+	},
+	{
+		"id": "mesure",
+		"text": "Pour la mesurer, on prend le pouls. Le plus simple : au poignet, c'est le pouls radial. Pose l'index et le majeur, jamais le pouce : il a son propre pouls ! Puis compte les battements pendant une minute entière."
+	},
+	{
+		"id": "norme",
+		"text": "Chez l'adulte au repos, la normale, c'est entre 60 et 100 battements par minute."
+	},
+	{
+		"id": "tachy",
+		"text": "Au-dessus de 100, c'est une tachycardie : le cœur s'emballe. Ça arrive avec l'effort, la fièvre, le stress ou la douleur."
+	},
+	{
+		"id": "brady",
+		"text": "En dessous de 60, c'est une bradycardie : le cœur ralentit. Chez un sportif, ou pendant le sommeil, ça peut être normal."
+	},
+	{
+		"id": "rythme",
+		"text": "Mais il n'y a pas que le chiffre ! Si les battements sont irréguliers, c'est une arythmie. Et un pouls faible et rapide, on dit qu'il est filant."
+	},
+	{
+		"id": "quiz",
+		"text": "Petit test ! Un patient au repos, à 120 battements par minute. Alors ?",
+		"pause": 2.2
+	},
+	{
+		"id": "reponse",
+		"text": "Tachycardie ! Plus de 100 au repos."
+	},
+	{
+		"id": "outro",
+		"text": "Fréquence, rythme, force du pouls : tu sais maintenant prendre un pouls comme un pro !"
+	}
+]

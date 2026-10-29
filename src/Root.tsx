@@ -6,6 +6,8 @@ import {TL as CONSTANTES_TL} from './videos/constantes/timeline';
 import {Besoins, BesoinsProps} from './videos/besoins-fondamentaux/Besoins';
 import {IconsSheet} from './videos/besoins-fondamentaux/IconsSheet';
 import {TL as BESOINS_TL} from './videos/besoins-fondamentaux/timeline';
+import {FrequenceCardiaque, FrequenceCardiaqueProps} from './videos/frequence-cardiaque/FrequenceCardiaque';
+import {TL as FC_TL} from './videos/frequence-cardiaque/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -32,6 +34,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies BesoinsProps}
+		/>
+		{/* 04 · La fréquence cardiaque (une vidéo par constante) */}
+		<Composition
+			id="Frequence-Cardiaque"
+			component={FrequenceCardiaque}
+			durationInFrames={FC_TL.total}
+			fps={FC_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies FrequenceCardiaqueProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition

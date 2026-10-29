@@ -14,6 +14,7 @@ pas de logiciel de montage, pas de banque d'images.
 |---|-------|-------------|-------------|------------|
 | 02 | Les 7 constantes (T°, FC, FR, PA, SpO₂, glycémie, diurèse) + normes adultes (échelles animées) | `Constantes` | [voix/02-constantes.script.json](voix/02-constantes.script.json) | [storyboard](docs/lpi/storyboard-constantes.md) |
 | 03 | Les 14 besoins fondamentaux (Virginia Henderson), en 3 étapes | `Besoins-Fondamentaux` | [voix/03-besoins-fondamentaux.script.json](voix/03-besoins-fondamentaux.script.json) | [storyboard](docs/lpi/storyboard-besoins-fondamentaux.md) |
+| 04 | La fréquence cardiaque (une vidéo par constante, quiz final) | `Frequence-Cardiaque` | [voix/04-frequence-cardiaque.script.json](voix/04-frequence-cardiaque.script.json) | [storyboard](docs/lpi/storyboard-frequence-cardiaque.md) |
 
 ## Utilisation
 
@@ -22,6 +23,7 @@ npm install
 npm run studio                  # aperçu interactif dans le navigateur
 npm run render:constantes       # -> out/02-constantes.mp4
 npm run render:besoins          # -> out/03-besoins-fondamentaux.mp4
+npm run render:fc               # -> out/04-frequence-cardiaque.mp4
 npm run check:mascot -- constantes   # vérifie le jeu de la mascotte d'une vidéo
 npm run sfx                     # regénère les bruitages (public/sfx)
 ```
@@ -42,6 +44,7 @@ src/
     kit.tsx                   stickers, tampons, puces cochées, rubans, progression par étapes, bulle
     Lesson3.tsx               gabarit d'une notion (titre, définition, illustration, termes, échelle des normes)
     NormScale.tsx             échelle des normes adulte (zones hypo / normo / hyper, curseur animé)
+    cardio.tsx                battements (rythme variable), impulsion du cœur, tracé ECG qui défile
     MascotActor.tsx           mascotte actrice : sauts, course, expressions au mot près, bustes libres
     pictos.tsx                pictogrammes et illustrations (thermomètre, cœur, poumons, artère…)
     timeline.ts               voix → frames : at(scène, mot)
@@ -54,7 +57,7 @@ public/
   fonts/, sfx/                polices embarquées, bruitages
 assets/planches/              planches originales de la mascotte et des logos (sources des découpes)
 scripts/
-  voice/                      align_voice.py (voix IA déjà propre) · prepare_voice.py (vraie voix) · tts_provisoire.py
+  voice/                      tts_voix.py (voix de la marque) · align_voice.py (alignement mot à mot) · prepare_voice.py (vraie voix)
   brand/                      découpe des planches (upscale_rgba, cut_v3, export_v3 ; v2 : cutout, upscale)
   qa/                         contrôle : images clés, planches contact, check-mascot
 voix/                         scripts de voix off (texte exact dit, une entrée par partie)
@@ -64,7 +67,9 @@ docs/lpi/                     charte vidéo, storyboards, index visuel de la mas
 ## Nouvelle vidéo
 
 1. Texte exact dit par la voix dans `voix/<n>-<sujet>.script.json` (une entrée par partie).
-2. `python3 scripts/voice/align_voice.py VOIX.mp3 voix/<n>-<sujet>.script.json <dossier>`
-   (dépendances : `ffmpeg`, `pip install faster-whisper soundfile`).
+2. Voix : `python3 scripts/voice/tts_voix.py voix/<n>-<sujet>.script.json <dossier_tmp>` (voix de la marque),
+   puis `python3 scripts/voice/align_voice.py <dossier_tmp>/voix.wav voix/<n>-<sujet>.script.json <dossier>`
+   (dépendances : `ffmpeg`, `pip install edge-tts faster-whisper soundfile`). Vérifier l'alignement des
+   mots clés (un chiffre mal entendu peut décaler une phrase : la recaler dans `voice.json`).
 3. Scènes dans `src/videos/<dossier>/`, chaque animation déclenchée par un mot : `at('b3', 'transmissions')`.
 4. Contrôle (charte, « Contrôle qualité ») puis rendu.

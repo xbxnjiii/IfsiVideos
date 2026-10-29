@@ -1,12 +1,13 @@
-"""Voix PROVISOIRE d'un script (synthèse edge-tts, gratuite) pour caler l'animation en attendant la vraie voix.
+"""Voix de la marque (synthèse edge-tts « Vivienne », validée pour les vidéos) à partir du script.
 
 Usage :
-  python3 scripts/voice/tts_provisoire.py voix/<script>.json <dossier_sortie>
-  python3 scripts/voice/align_voice.py <dossier_sortie>/voix-provisoire.wav voix/<script>.json <episode>
+  python3 scripts/voice/tts_voix.py voix/<script>.json <dossier_sortie>
+  python3 scripts/voice/align_voice.py <dossier_sortie>/voix.wav voix/<script>.json <episode>
 
-Une partie du script = une synthèse, puis montage avec 0,55 s de pause entre les parties. Syntaxe
-{affiché|prononcé} respectée (on prononce la 2e forme). Quand la vraie voix (ElevenLabs) arrive :
-relancer align_voice.py sur le MP3 fourni, toute la vidéo se recale (animations calées sur les mots).
+Une partie du script = une synthèse, puis montage avec 0,55 s de pause entre les parties (ou
+`"pause": secondes` dans la partie, ex. le temps de réfléchir avant la réponse d'un quiz). Syntaxe
+{affiché|prononcé} respectée (on prononce la 2e forme). Pour une voix enregistrée (ElevenLabs, studio) :
+align_voice.py directement sur le fichier reçu.
 Dépendances : ffmpeg, `pip install edge-tts`. Derrière le proxy du conteneur : CA /root/.ccr/ca-bundle.crt.
 """
 import asyncio
@@ -43,8 +44,10 @@ def main():
     script, out = sys.argv[1], os.path.abspath(sys.argv[2])
     os.makedirs(out, exist_ok=True)
     parts = json.load(open(script))
-    gap = f"{out}/gap.wav"
-    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "lavfi", "-i", "anullsrc=r=24000:cl=mono", "-t", "0.55", gap], check=True)
+    def gap(sec):
+        path = f"{out}/gap{sec:.2f}.wav"
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "lavfi", "-i", "anullsrc=r=24000:cl=mono", "-t", f"{sec:.2f}", path], check=True)
+        return path
     lst = f"{out}/list.txt"
     with open(lst, "w") as f:
         for k, p in enumerate(parts):
@@ -56,9 +59,9 @@ def main():
             subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", mp3, "-ar", "24000", "-ac", "1", wav], check=True)
             f.write(f"file '{wav}'\n")
             if k < len(parts) - 1:
-                f.write(f"file '{gap}'\n")
+                f.write(f"file '{gap(p.get('pause', 0.55))}'\n")
             print(p["id"], "ok")
-    final = f"{out}/voix-provisoire.wav"
+    final = f"{out}/voix.wav"
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", lst, "-c:a", "pcm_s16le", final], check=True)
     print("->", final)
 

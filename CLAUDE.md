@@ -3,6 +3,7 @@
 Mini-vidéos IFSI en motion design, **tout en code** (Remotion 4, React → MP4), 1080 × 1920, ≥ 1 min,
 pour TikTok / Reels / Shorts. La référence de qualité (tempo, physique, mascotte) est la vidéo
 **Constantes** (pilote v4, aujourd'hui v7 : 7 constantes) : composition `Constantes`, dossier `src/videos/constantes/`.
+Format retenu ensuite : **une vidéo par constante** (modèle `Frequence-Cardiaque`, voir plus bas).
 Deuxième modèle : **Besoins-Fondamentaux** (`src/videos/besoins-fondamentaux/`) pour les vidéos « liste »
 numérotée en étapes (gags au mot près, puces cochées, kit `src/brand/kit.tsx`).
 Les anciennes versions (v1 à v4, labo HyperFrames, anatomie SVG / 3D) ont été retirées : elles restent
@@ -48,11 +49,22 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
 
 ## Voix
 
-- Voix finale : **ElevenLabs**, voix « Chloé – Warm Friendly, UGC Ready », vitesse 1,09, stabilité 76 %,
-  similarité 75 % — générée par le propriétaire du projet (pas d'accès ElevenLabs depuis le conteneur).
-  Texte exact dans `voix/<n>-<sujet>.script.json`, puis `scripts/voice/align_voice.py` sur le MP3 reçu.
-- En attendant : voix provisoire `scripts/voice/tts_provisoire.py` (edge-tts) + `align_voice.py`,
-  pour caler et contrôler l'animation ; la vraie voix recale tout (animations calées sur les mots).
+- **Voix de la marque** (validée par le propriétaire du projet) : synthèse edge-tts
+  `fr-FR-VivienneMultilingualNeural`, débit +8 % — `scripts/voice/tts_voix.py voix/<script>.json <dossier>`
+  (pause de 0,55 s entre les parties, ou `"pause"` dans une partie, ex. 2,2 s avant la réponse d'un quiz),
+  puis `scripts/voice/align_voice.py <dossier>/voix.wav voix/<script>.json <épisode>`.
+- Après l'alignement, vérifier les mots clés : un nombre mal entendu (« 120 ») peut décaler toute une phrase ;
+  la recaler à la main dans `voice.json` (transcription Whisper du passage seul).
+- Une voix enregistrée (ElevenLabs, studio) passe directement par `align_voice.py`.
+
+## Format « une vidéo par constante »
+
+- ≈ 1 min – 1 min 15, une notion par scène, barre de progression des notions, **quiz final** annoncé dès
+  l'accroche (boucle ouverte : « petit test à la fin ! »), récap en 3 puces cochées, pas d'appel à commenter.
+- Modèle : **Frequence-Cardiaque** (`src/videos/frequence-cardiaque/`, storyboard
+  `docs/lpi/storyboard-frequence-cardiaque.md`) ; briques cœur réutilisables `src/brand/cardio.tsx`
+  (`beatSchedule`, `lastBeat`, `EcgTrace`).
+- Accroche = la question du sujet (« C'est quoi, la fréquence cardiaque ? ») + promesse + teaser du quiz.
 
 ## Rendu et contrôle
 

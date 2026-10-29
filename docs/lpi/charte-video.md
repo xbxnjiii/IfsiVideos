@@ -100,6 +100,7 @@ Toujours dans la palette, sans effet lumineux :
 |--------|------|
 | `Lesson3` | gabarit complet d'une notion : numéro, titre 2 lignes, définition, socle, termes, échelle des normes (`scale`), caméra |
 | `NormScale` | échelle des normes adulte : zones nommées + bornes, curseur qui suit la valeur, zone active, cadre cible |
+| `EcgTrace`, `beatSchedule`, `lastBeat` (`cardio.tsx`) | tracé ECG qui défile (un QRS par battement), rythme qui change sans à-coup (régulier, rapide, lent, irrégulier), impulsion du cœur |
 | `ChapterSlam` | gros numéro qui s'écrase au centre (éclats) puis file dans le coin du titre |
 | `TermSlam` | le terme « claque » en grand au centre (lettre par lettre), sa définition glisse, puis la carte file à sa place dans la fiche |
 | `Camera` | dérive très lente + petit coup de zoom (≈ 5 %) sur chaque mot clé |
@@ -293,8 +294,9 @@ Chaque vidéo commence par une promesse claire et courte (« Les 7 constantes, a
 
 ## Son
 
-- Voix : -15 LUFS. Voix IA déjà propre (ElevenLabs…) : `scripts/voice/align_voice.py` ; vraie voix
-  enregistrée (blancs à couper, bruit) : `scripts/voice/prepare_voice.py`. Même format de synchro.
+- Voix : -15 LUFS. Voix de la marque : `scripts/voice/tts_voix.py` (synthèse « Vivienne », validée)
+  puis `scripts/voice/align_voice.py` ; voix IA déjà propre (ElevenLabs…) : `align_voice.py` directement ;
+  vraie voix enregistrée (blancs à couper, bruit) : `scripts/voice/prepare_voice.py`. Même format de synchro.
 - Pas de musique dans le fichier exporté : elle est ajoutée sur TikTok / Instagram.
 - Bruitages très discrets calés sur l'action (pop à chaque terme, souffle de transition, battements).
 

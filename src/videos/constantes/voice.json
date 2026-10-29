@@ -1,5 +1,5 @@
 {
- "voice": "voix-provisoire.wav",
+ "voice": "voix.wav (tts_voix.py)",
  "duration": 98.312,
  "sections": [
   {

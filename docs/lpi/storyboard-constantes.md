@@ -3,10 +3,8 @@
 ≈ 1 min 40 · 1080 × 1920 · composition Remotion : `Constantes` · code : `src/videos/constantes/`.
 Même tempo et même physique que la vidéo pilote v4 (retirée du dépôt, voir l'historique git).
 
-> **Voix** : le texte exact est dans [voix/02-constantes.script.json](../../voix/02-constantes.script.json).
-> Tant que la voix ElevenLabs (Chloé, mêmes réglages que la v3) n'est pas fournie, la vidéo utilise une
-> voix provisoire (`scripts/voice/tts_provisoire.py`). Quand le MP3 arrive :
-> `python3 scripts/voice/align_voice.py VOIX.mp3 voix/02-constantes.script.json constantes`, puis rendu.
+> **Voix** : voix de la marque (synthèse `scripts/voice/tts_voix.py`, validée), texte exact dans
+> [voix/02-constantes.script.json](../../voix/02-constantes.script.json).
 
 ## Ce qui change (v6 → v7)
 
