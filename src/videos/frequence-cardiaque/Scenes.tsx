@@ -2,7 +2,7 @@
 import React from 'react';
 import {AbsoluteFill, Easing, Img, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
 import {beatSchedule, EcgTrace, lastBeat} from '../../brand/cardio';
-import {CheckChip, Stamp, Sticker, Strike, Tape, usePop} from '../../brand/kit';
+import {CheckChip, Stamp, Sticker, Strike, usePop} from '../../brand/kit';
 import {Seuil} from '../../brand/Lesson3';
 import {Sign, SignKind} from '../../brand/learn';
 import {Burst, Camera, Confetti, LiveBackground, Odometer, Stage, TermSlam} from '../../brand/motion3';
@@ -21,7 +21,6 @@ import {
 	PressFingers,
 	PulseWave,
 	RADIAL,
-	RestingPatient,
 	RunIcon,
 	Stopwatch,
 	StressIcon,
@@ -89,15 +88,13 @@ export const Hook: React.FC = () => {
 	const FC = at('intro', 'fréquence');
 	const COMMENT = at('intro', 'comment');
 	const SANS = at('intro', 'sans');
-	const RESTE = at('intro', 'reste');
-	const TEST = at('intro', 'test');
 	const beats = beatSchedule([[0, 25]], 6, 400);
 	const heart = spring({frame: frame - 2, fps: 30, config: {damping: 10, stiffness: 160, mass: 0.8}});
 	const qp = usePop(Q);
 	return (
 		<AbsoluteFill>
 			<LiveBackground />
-			<Camera punches={[Q + 1, FC + 1, COMMENT + 1, SANS + 1, TEST + 1]} shakes={[Q + 2]} strength={0.04}>
+			<Camera punches={[Q + 1, FC + 1, COMMENT + 1, SANS + 1]} shakes={[Q + 2]} strength={0.04}>
 				<div style={{position: 'absolute', left: 72, top: 226, width: 936}}>
 					<Title at={0} text="C'est quoi la" size={74} stagger={3} brush={false} />
 				</div>
@@ -172,14 +169,12 @@ export const Hook: React.FC = () => {
 				<div style={{position: 'absolute', left: 0, right: 0, top: 1240, display: 'flex', justifyContent: 'center'}}>
 					<CheckChip at={SANS} label="Sans te tromper" size={44} />
 				</div>
-				<Tape at={RESTE} y={1385} text="Petit test à la fin !" rot={-4} />
 			</Camera>
 			<Beats beats={beats} from={6} volume={0.07} />
 			<Sfx name="pop" at={Q} volume={0.12} />
 			<Sfx name="whoosh" at={FC} volume={0.06} />
 			<Sfx name="pop" at={COMMENT} volume={0.1} />
 			<Sfx name="ding" at={SANS + 6} volume={0.07} />
-			<Sfx name="stamp" at={RESTE} volume={0.1} />
 		</AbsoluteFill>
 	);
 };
@@ -760,11 +755,14 @@ export const Rythme: React.FC = () => {
 						opacity: Math.min(1, num * 1.5),
 					}}
 				>
-					<span style={{fontFamily: FONT.title, fontWeight: 900, fontSize: 220, color: N}}>72</span>
+					<span style={{position: 'relative', fontFamily: FONT.title, fontWeight: 900, fontSize: 220, color: N, lineHeight: 1}}>
+						72
+						{/* trait bien droit, au milieu des chiffres (police 220, interligne 1 : milieu ≈ 105 px) */}
+						<div style={{position: 'absolute', left: -18, right: -18, top: 105 - 60, height: 120}}>
+							<Strike at={CH} width={330} rot={-2} thick={24} />
+						</div>
+					</span>
 					<Unit size={70}>bpm</Unit>
-					<div style={{position: 'absolute', left: -20, top: 110}}>
-						<Strike at={CH} width={520} rot={-10} thick={22} />
-					</div>
 				</div>
 				{/* rythme irrégulier : le tracé */}
 				<div
@@ -797,12 +795,16 @@ export const Rythme: React.FC = () => {
 	);
 };
 
-/* ═══════════════════════════════ 7 · QUIZ ═══════════════════════════════ */
-const Answer: React.FC<{at: number; letter: string; label: string; sign: SignKind; y: number; state: 'idle' | 'good' | 'off'}> = ({at: t0, letter, label, sign, y, state}) => {
+/* ═══════════════════════════════ RÉCAP RAPIDE ═══════════════════════════════ */
+/** Une ligne de la fiche récap : elle s'allume sur son mot, se coche quand la suivante arrive. */
+const RecapRow: React.FC<{at: number; next: number; sign: SignKind; label: React.ReactNode; sub?: React.ReactNode; y: number}> = ({at: t0, next, sign, label, sub, y}) => {
 	const frame = useCurrentFrame();
-	const p = usePop(t0);
+	const {fps} = useVideoConfig();
+	const s = spring({frame: frame - t0, fps, config: {damping: 13, stiffness: 200, mass: 0.8}});
 	if (frame < t0) return null;
-	const good = state === 'good';
+	const current = frame < next;
+	const sweep = interpolate(frame, [t0, t0 + 12], [0, 1], ease);
+	const check = spring({frame: frame - next, fps, config: {damping: 9, stiffness: 240}});
 	return (
 		<div
 			style={{
@@ -810,169 +812,66 @@ const Answer: React.FC<{at: number; letter: string; label: string; sign: SignKin
 				left: 72,
 				top: y,
 				width: 936,
-				height: 104,
-				borderRadius: 34,
-				background: good ? LPI.blue : LPI.paper,
-				border: `5px solid ${good ? LPI.blue : LPI.sky}`,
-				boxShadow: good ? `0 22px 50px ${alpha(LPI.blue, 0.35)}` : SHADOW,
-				display: 'flex',
-				alignItems: 'center',
-				gap: 24,
-				padding: '0 26px',
-				opacity: Math.min(1, p * 2) * (state === 'off' ? 0.45 : 1),
-				transform: `translateX(${(1 - p) * 160}px) scale(${good ? 1.04 : 1})`,
+				height: 112,
+				borderRadius: 32,
+				overflow: 'hidden',
+				background: LPI.paper,
+				border: `5px solid ${current ? LPI.blue : LPI.sky}`,
+				boxShadow: current ? `0 18px 44px ${alpha(LPI.blue, 0.25)}` : SHADOW,
+				opacity: Math.min(1, s * 1.6),
+				transform: `translateX(${(1 - s) * 140}px) rotate(${(1 - s) * 3}deg) scale(${current ? 1.02 : 1})`,
 			}}
 		>
-			<div
-				style={{
-					width: 64,
-					height: 64,
-					borderRadius: 32,
-					background: good ? LPI.paper : LPI.sky,
-					display: 'flex',
-					alignItems: 'center',
-					justifyContent: 'center',
-					fontFamily: FONT.title,
-					fontWeight: 900,
-					fontSize: 38,
-					color: N,
-				}}
-			>
-				{letter}
+			<div style={{position: 'absolute', inset: 0, width: `${sweep * 100}%`, background: alpha(LPI.sky, current ? 0.6 : 0.3)}} />
+			<div style={{position: 'relative', height: '100%', display: 'flex', alignItems: 'center', gap: 22, padding: '0 22px'}}>
+				<div style={{position: 'relative'}}>
+					<Sign kind={sign} size={74} />
+					{frame >= next ? (
+						<div style={{position: 'absolute', right: -14, top: -12, transform: `scale(${check})`}}>
+							<Sign kind="check" size={38} />
+						</div>
+					) : null}
+				</div>
+				<div style={{fontFamily: FONT.title, fontWeight: 900, fontSize: 46, color: current ? LPI.blue : N, whiteSpace: 'nowrap'}}>{label}</div>
+				{sub ? <div style={{fontFamily: FONT.body, fontWeight: 700, fontSize: 30, color: alpha(N, 0.65), whiteSpace: 'nowrap'}}>{sub}</div> : null}
 			</div>
-			<div style={{flex: 1, fontFamily: FONT.title, fontWeight: 900, fontSize: 50, color: good ? LPI.paper : N}}>{label}</div>
-			<Sign kind={good ? 'check' : sign} size={64} />
 		</div>
 	);
 };
 
-export const Quiz: React.FC = () => {
-	const frame = useCurrentFrame();
-	const PT = at('quiz', 'petit');
-	const PAT = at('quiz', 'patient');
-	const REP = at('quiz', 'repos');
-	const C120 = at('quiz', '120');
-	const ALORS = at('quiz', 'alors');
-	const ANS = at('quiz', 'tachycardie');
-	const PLUS = at('quiz', 'plus');
-	const beats = beatSchedule([[0, 15]], PAT, 700);
-	const card = useSoft(PAT - 4, true);
-	const bpm = interpolate(frame, [C120 - 4, C120 + 12], [96, 120], ease);
-	const shown = interpolate(frame, [C120 - 4, C120 + 2], [0, 1], clamp);
-	const T0 = ALORS + 16;
-	const left = Math.max(0, Math.ceil((ANS - 4 - frame) / ((ANS - 4 - T0) / 3)));
-	const ring = interpolate(frame, [T0, ANS - 4], [1, 0], clamp);
-	const answered = frame >= ANS;
-	return (
-		<AbsoluteFill>
-			<LiveBackground />
-			<Camera punches={[PT + 1, PAT + 1, C120 + 1, ALORS + 1, ANS + 1]} shakes={[ANS + 2]}>
-				<Stamp at={PT} x={540} y={330} text="Petit test !" size={96} rot={-6} />
-				<div
-					style={{
-						position: 'absolute',
-						left: 72,
-						top: 450,
-						width: 936,
-						height: 360,
-						borderRadius: 48,
-						background: LPI.paper,
-						border: `5px solid ${LPI.sky}`,
-						boxShadow: SHADOW,
-						opacity: Math.min(1, card * 1.5),
-						transform: `translateY(${(1 - card) * 80}px)`,
-					}}
-				>
-					<div style={{position: 'absolute', left: 20, top: 70}}>
-						<RestingPatient size={440} />
-					</div>
-					{frame >= REP ? (
-						<div style={{position: 'absolute', left: 40, top: 24}}>
-							<Enter at={REP} distance={20} bounce>
-								<CheckChip at={REP} label="au repos" size={34} />
-							</Enter>
-						</div>
-					) : null}
-					{/* écran du moniteur */}
-					<div style={{position: 'absolute', left: 500, top: 40, width: 400, height: 280, borderRadius: 34, background: N, overflow: 'hidden'}}>
-						<div style={{position: 'absolute', left: 26, top: 18, display: 'flex', alignItems: 'baseline', opacity: shown, transform: `scale(${0.7 + 0.3 * shown})`, transformOrigin: 'left center'}}>
-							<Odometer value={bpm} places={3} size={130} color={LPI.paper} />
-							<Unit size={40} color={LPI.sky}>
-								bpm
-							</Unit>
-						</div>
-						<div style={{position: 'absolute', left: 0, top: 160}}>
-							<EcgTrace beats={beats} width={400} height={110} amp={44} id="quiz" color={LPI.sky} stroke={6} />
-						</div>
-					</div>
-				</div>
-				<Answer at={ALORS} letter="A" label="Bradycardie" sign="down" y={860} state={answered ? 'off' : 'idle'} />
-				<Answer at={ALORS + 4} letter="B" label="Normale" sign="check" y={984} state={answered ? 'off' : 'idle'} />
-				<Answer at={ALORS + 8} letter="C" label="Tachycardie" sign="up" y={1108} state={answered ? 'good' : 'idle'} />
-				{/* compte à rebours pendant que tu réfléchis */}
-				{frame >= T0 && !answered ? (
-					<div style={{position: 'absolute', left: 540 - 80, top: 1250, width: 160, height: 160}}>
-						<svg width={160} height={160} viewBox="-80 -80 160 160">
-							<circle r={68} fill={LPI.paper} stroke={LPI.sky} strokeWidth={14} />
-							<circle r={68} fill="none" stroke={LPI.pink} strokeWidth={14} strokeLinecap="round" strokeDasharray={427} strokeDashoffset={427 * (1 - ring)} transform="rotate(-90)" />
-						</svg>
-						<div style={{position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FONT.title, fontWeight: 900, fontSize: 80, color: N}}>
-							{Math.max(1, left)}
-						</div>
-					</div>
-				) : null}
-				{frame >= PLUS ? (
-					<div style={{position: 'absolute', left: 0, right: 0, top: 1262, display: 'flex', justifyContent: 'center'}}>
-						<Enter at={PLUS} distance={20} bounce>
-							<div style={{padding: '14px 30px', borderRadius: 999, background: LPI.pink, fontFamily: FONT.title, fontWeight: 900, fontSize: 44, color: N, boxShadow: SHADOW}}>
-								&gt; 100 bpm au repos
-							</div>
-						</Enter>
-					</div>
-				) : null}
-				<Confetti at={ANS} x={540} y={1160} n={56} />
-			</Camera>
-			<Beats beats={beats} from={C120} volume={0.06} />
-			<Sfx name="stamp" at={PT} volume={0.12} />
-			{[ALORS, ALORS + 4, ALORS + 8].map((t) => (
-				<Sfx key={t} name="pop" at={t} volume={0.1} />
-			))}
-			{[0, 1, 2].map((k) => (
-				<Sfx key={k} name="tick" at={Math.round(T0 + (k * (ANS - 4 - T0)) / 3)} volume={0.12} />
-			))}
-			<Sfx name="ding" at={ANS} volume={0.12} />
-		</AbsoluteFill>
-	);
-};
-
-/* ═══════════════════════════════ RÉCAP ═══════════════════════════════ */
 export const Outro: React.FC = () => {
-	const FR = at('outro', 'fréquence');
+	const R = at('outro', 'récap');
+	const BAT = at('outro', 'battements');
+	const RAD = at('outro', 'radial');
+	const NORM = at('outro', 'normale');
+	const TA = at('outro', 'tachycardie');
+	const BR = at('outro', 'bradycardie');
 	const RY = at('outro', 'rythme');
-	const FO = at('outro', 'force');
-	const PRO = at('outro', 'pro');
-	const beats = beatSchedule([[0, 25]], 0, 400);
+	const END = at('outro', 'pouls', 2);
+	const DONE = END + 10;
+	const rows: [number, SignKind, React.ReactNode, React.ReactNode][] = [
+		[BAT, 'wave', 'bpm', 'battements par minute'],
+		[RAD, 'device', 'Pouls radial', '2 doigts · 1 minute'],
+		[NORM, 'check', '60 – 100 bpm', 'normale (adulte, repos)'],
+		[TA, 'up', 'Tachycardie', '≥ 100 bpm'],
+		[BR, 'down', 'Bradycardie', '< 60 bpm'],
+		[RY, 'alert', 'Rythme + force', 'arythmie · pouls filant'],
+	];
 	return (
 		<AbsoluteFill>
 			<LiveBackground />
-			<Camera punches={[FR + 1, RY + 1, FO + 1, PRO + 1]} shakes={[PRO + 2]}>
-				<Head kicker="À retenir" kAt={Math.max(0, FR - 8)} title="Prendre un *pouls*" tAt={Math.max(2, FR - 6)} />
-				<div style={{position: 'absolute', left: 72, top: 450, display: 'flex', flexDirection: 'column', gap: 26}}>
-					<CheckChip at={FR} label="Fréquence" sub="60 – 100 bpm" size={52} />
-					<CheckChip at={RY} label="Rythme" sub="régulier ?" size={52} />
-					<CheckChip at={FO} label="Force" sub="bien frappé ou filant" size={52} />
-				</div>
-				<div style={{position: 'absolute', left: 540 - 170, top: 880}}>
-					<BeatingHeart beats={beats} size={340} />
-				</div>
-				<Stamp at={PRO} x={540} y={1265} text="Pro du pouls !" size={80} rot={-6} />
-				<Confetti at={PRO} x={540} y={1040} n={60} />
+			<Camera punches={[R + 1, ...rows.map(([t]) => t + 1), DONE]} shakes={[DONE + 1]} strength={0.03}>
+				<Head kicker="Petit récap" kAt={R - 4} title="Fréquence *cardiaque*" tAt={R} size={88} />
+				{rows.map(([t, sign, label, sub], i) => (
+					<RecapRow key={i} at={t} next={i < rows.length - 1 ? rows[i + 1][0] : DONE} sign={sign} label={label} sub={sub} y={430 + i * 128} />
+				))}
+				<Stamp at={DONE} x={540} y={1300} text="Pro du pouls !" size={80} rot={-6} />
+				<Confetti at={DONE} x={540} y={900} n={60} />
 			</Camera>
-			<Beats beats={beats} from={0} volume={0.06} />
-			<Sfx name="pop" at={FR} volume={0.11} />
-			<Sfx name="pop" at={RY} volume={0.11} />
-			<Sfx name="pop" at={FO} volume={0.11} />
-			<Sfx name="stamp" at={PRO} volume={0.12} />
+			{rows.map(([t]) => (
+				<Sfx key={t} name="pop" at={t} volume={0.11} />
+			))}
+			<Sfx name="stamp" at={DONE} volume={0.12} />
 		</AbsoluteFill>
 	);
 };

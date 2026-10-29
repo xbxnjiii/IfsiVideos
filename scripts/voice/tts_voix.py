@@ -5,7 +5,7 @@ Usage :
   python3 scripts/voice/align_voice.py <dossier_sortie>/voix.wav voix/<script>.json <episode>
 
 Une partie du script = une synthèse, puis montage avec 0,55 s de pause entre les parties (ou
-`"pause": secondes` dans la partie, ex. le temps de réfléchir avant la réponse d'un quiz). Syntaxe
+`"pause": secondes` dans la partie pour un silence voulu). Syntaxe
 {affiché|prononcé} respectée (on prononce la 2e forme). Pour une voix enregistrée (ElevenLabs, studio) :
 align_voice.py directement sur le fichier reçu.
 Dépendances : ffmpeg, `pip install edge-tts`. Derrière le proxy du conteneur : CA /root/.ccr/ca-bundle.crt.

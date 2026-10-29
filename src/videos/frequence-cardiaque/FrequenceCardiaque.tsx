@@ -1,5 +1,5 @@
 // « La fréquence cardiaque » : une vidéo par constante (≈ 1 min 10). Accroche-question, définition,
-// prise du pouls radial, norme adulte, tachycardie, bradycardie, rythme et force du pouls, quiz, récap.
+// prise du pouls radial, norme adulte, tachycardie, bradycardie, rythme et force du pouls, récap rapide.
 // Même DA que Constantes (tempo, physique, mascotte libre) ; voix de la marque (scripts/voice/tts_voix.py).
 import React from 'react';
 import {AbsoluteFill, Html5Audio, interpolate, Sequence, staticFile, useCurrentFrame} from 'remotion';
@@ -11,7 +11,7 @@ import {Sfx, SfxEnabled, SfxName} from '../../brand/Sfx';
 import {GRID, LPI} from '../../brand/theme';
 import {clamp} from '../../brand/ui';
 import {MASCOT} from './mascot';
-import {Brady, Definition, EndCard, Hook, Mesure, Norme, Outro, Quiz, Rythme, Tachy} from './Scenes';
+import {Brady, Definition, EndCard, Hook, Mesure, Norme, Outro, Rythme, Tachy} from './Scenes';
 import {SCENE_IDS, SceneId, TL} from './timeline';
 
 export type FrequenceCardiaqueProps = {voice: boolean; sfx: boolean};
@@ -24,7 +24,6 @@ const SCENES: Record<SceneId, React.FC> = {
 	tachy: Tachy,
 	brady: Brady,
 	rythme: Rythme,
-	quiz: Quiz,
 	outro: Outro,
 	end: EndCard,
 };
@@ -40,16 +39,16 @@ const TRANSITIONS: Record<Exclude<SceneId, 'intro'>, {p: TransitionPresentation<
 	tachy: {p: whip('up'), sfx: 'whoosh'},
 	brady: {p: wave({x: 540, y: 700}), sfx: 'whoosh'},
 	rythme: {p: whip('left'), sfx: 'whoosh'},
-	quiz: {p: runWipe(), sfx: 'run'},
-	outro: {p: wave({x: 540, y: 330}), sfx: 'whoosh'},
+	// la mascotte retraverse en courant vers le récap
+	outro: {p: runWipe(), sfx: 'run'},
 	end: {p: zoomInto({x: 540, y: 1050, color: LPI.sky}), sfx: 'whoosh'},
 };
 
-/** Progression des 7 notions (définition → quiz), centrée en haut. */
+/** Progression des 6 notions (définition → rythme), centrée en haut. */
 const Progress: React.FC = () => {
 	const frame = useCurrentFrame();
 	const {starts, durations, transition} = TL;
-	const n = 7;
+	const n = 6;
 	let s = 0;
 	while (s < starts.length - 1 && frame >= starts[s + 1] + transition / 2) s++;
 	const opacity = interpolate(frame, [starts[1], starts[1] + transition], [0, 1], clamp) * interpolate(frame, [starts[n + 1], starts[n + 1] + transition], [1, 0], clamp);

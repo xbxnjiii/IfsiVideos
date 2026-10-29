@@ -26,10 +26,10 @@ export const MASCOT: Beat[] = [
 	{at: abs('intro', 'quoi'), via: 'pop', key: 'expressions/questionnement', ...R},
 	// « comment la prendre » : deux doigts levés (index + majeur)
 	{at: abs('intro', 'prendre'), key: 'gestes/important', ...L},
-	{at: abs('intro', 'tromper'), key: 'gestes/erreur', ...L},
-	{at: abs('intro', 'test'), key: 'expressions/clin-doeil', ...R},
+	// « sans te tromper » : pouce levé
+	{at: abs('intro', 'tromper'), key: 'gestes/bonne-reponse', ...L},
 	// elle plonge dans le cœur (la caméra plonge avec elle : zoomInto)
-	{at: start('def') - 4, dur: 16, key: 'expressions/clin-doeil', x: 540, y: 850, size: 0},
+	{at: start('def') - 4, dur: 16, key: 'gestes/bonne-reponse', x: 540, y: 850, size: 0},
 
 	/* ── définition ── */
 	{at: abs('def', 'nombre'), via: 'pop', key: 'situations/explique', ...L},
@@ -85,18 +85,17 @@ export const MASCOT: Beat[] = [
 	{at: abs('rythme', 'arythmie'), key: 'situations/montre-ecg', ...L},
 	{at: abs('rythme', 'faible'), key: 'expressions/inquiete', ...R},
 	{at: abs('rythme', 'filant'), key: 'symptomes/malaise', ...R},
-	...runAcross('quiz'),
+	...runAcross('outro'),
 
-	/* ── quiz ── */
-	{at: abs('quiz', 'patient'), via: 'pop', key: 'gestes/question', ...R},
-	{at: abs('quiz', 'alors'), key: 'expressions/reflechit', ...R},
-	{at: abs('quiz', 'alors') + 34, key: 'situations/pensive', ...L},
-	{at: abs('quiz', 'tachycardie'), via: 'pop', key: 'gestes/bonne-reponse', fx: 'bounce', ...R},
-	// saut par-dessus la vague vers le récap
-	{at: start('outro') + 8, dur: 18, key: 'situations/checklist', ...R},
-
-	/* ── récap ── */
-	{at: abs('outro', 'pro'), via: 'pop', key: 'gestes/bravo', fx: 'bounce', x: 260, y: 1680, size: 440},
+	/* ── récap rapide ── une pose par ligne de la fiche */
+	{at: abs('outro', 'fréquence'), via: 'pop', key: 'situations/recapitule', ...R},
+	{at: abs('outro', 'battements'), key: 'situations/montre-schema', ...R},
+	{at: abs('outro', 'radial'), key: 'gestes/important', ...L},
+	{at: abs('outro', 'normale'), key: 'situations/valide', ...R},
+	{at: abs('outro', 'tachycardie'), key: 'symptomes/douleur-poitrine', fx: 'pant', ...L},
+	{at: abs('outro', 'bradycardie'), dur: 26, arc: 60, key: 'expressions/fatiguee', fx: 'slow', ...R},
+	{at: abs('outro', 'rythme'), key: 'situations/montre-ecg', ...L},
+	{at: abs('outro', 'pouls', 2) + 10, via: 'pop', key: 'gestes/bravo', fx: 'bounce', x: 540, y: 1690, size: 440},
 	// elle repart en courant avant le logo
 	{at: start('end') - 6, via: 'pop', key: 'poses/course', x: 640, y: 1850, size: 600},
 	{at: start('end') + 10, via: 'run', dur: 16, key: 'poses/course', x: 1460, y: 1850, size: 600},

@@ -146,37 +146,6 @@ export const PulseWave: React.FC<{amp: number; period: number; width?: number; h
 	);
 };
 
-/* ───────────── quiz : patient au repos + écran du moniteur ───────────── */
-
-export const RestingPatient: React.FC<{size?: number}> = ({size = 420}) => {
-	const frame = useCurrentFrame();
-	const breath = Math.sin(frame / 14) * 3;
-	return (
-		<svg width={size} height={size * 0.62} viewBox="0 0 420 260" style={{overflow: 'visible'}}>
-			{/* lit */}
-			<rect x="20" y="150" width="380" height="34" rx="14" fill={LPI.blue} stroke={N} strokeWidth={8} />
-			<path d="M28 184 V236 M392 184 V236" stroke={N} strokeWidth={10} strokeLinecap="round" />
-			<path d="M20 160 V70" stroke={N} strokeWidth={12} strokeLinecap="round" />
-			{/* oreiller + tête */}
-			<rect x="40" y="106" width="110" height="50" rx="22" fill={LPI.paper} stroke={N} strokeWidth={7} />
-			<circle cx="104" cy="104" r="38" fill={LPI.paper} stroke={N} strokeWidth={8} />
-			<path d="M88 104 Q96 110 104 104 M112 104 Q120 110 128 104" fill="none" stroke={N} strokeWidth={5} strokeLinecap="round" />
-			{/* couverture */}
-			<path d={`M138 ${118 - breath} C210 ${100 - breath} 330 ${106 - breath} 390 120 L392 156 L138 156 Z`} fill={LPI.sky} stroke={N} strokeWidth={8} strokeLinejoin="round" />
-			<path d={`M200 ${116 - breath} C250 ${110 - breath} 300 ${112 - breath} 350 120`} fill="none" stroke={alpha(N, 0.3)} strokeWidth={5} strokeLinecap="round" />
-			{/* « zzz » du repos */}
-			{[0, 1, 2].map((k) => {
-				const t = ((frame / 30 + k / 3) % 1);
-				return (
-					<text key={k} x={150 + t * 60} y={70 - t * 60} fontFamily={FONT.title} fontWeight={900} fontSize={26 + k * 6} fill={alpha(LPI.blue, 1 - t)}>
-						z
-					</text>
-				);
-			})}
-		</svg>
-	);
-};
-
 /* ───────────── petites icônes (causes, situations) ───────────── */
 
 type IP = {size?: number; color?: string};

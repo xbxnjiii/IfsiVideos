@@ -51,7 +51,7 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
 
 - **Voix de la marque** (validée par le propriétaire du projet) : synthèse edge-tts
   `fr-FR-VivienneMultilingualNeural`, débit +8 % — `scripts/voice/tts_voix.py voix/<script>.json <dossier>`
-  (pause de 0,55 s entre les parties, ou `"pause"` dans une partie, ex. 2,2 s avant la réponse d'un quiz),
+  (pause de 0,55 s entre les parties, ou `"pause": secondes` dans une partie pour un silence voulu),
   puis `scripts/voice/align_voice.py <dossier>/voix.wav voix/<script>.json <épisode>`.
 - Après l'alignement, vérifier les mots clés : un nombre mal entendu (« 120 ») peut décaler toute une phrase ;
   la recaler à la main dans `voice.json` (transcription Whisper du passage seul).
@@ -59,12 +59,13 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
 
 ## Format « une vidéo par constante »
 
-- ≈ 1 min – 1 min 15, une notion par scène, barre de progression des notions, **quiz final** annoncé dès
-  l'accroche (boucle ouverte : « petit test à la fin ! »), récap en 3 puces cochées, pas d'appel à commenter.
+- ≈ 1 min – 1 min 10, une notion par scène, barre de progression des notions, **récap rapide** à la fin
+  (la voix résume, une fiche se construit ligne par ligne, puces cochées), pas d'appel à commenter.
+- **Pas de quiz** (ni annonce « petit test à la fin ») : retiré à la demande du propriétaire, ne plus en proposer.
 - Modèle : **Frequence-Cardiaque** (`src/videos/frequence-cardiaque/`, storyboard
   `docs/lpi/storyboard-frequence-cardiaque.md`) ; briques cœur réutilisables `src/brand/cardio.tsx`
   (`beatSchedule`, `lastBeat`, `EcgTrace`).
-- Accroche = la question du sujet (« C'est quoi, la fréquence cardiaque ? ») + promesse + teaser du quiz.
+- Accroche = la question du sujet (« C'est quoi, la fréquence cardiaque ? ») + une promesse courte.
 
 ## Rendu et contrôle
 

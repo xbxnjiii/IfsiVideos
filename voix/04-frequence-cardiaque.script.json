@@ -1,7 +1,7 @@
 [
 	{
 		"id": "intro",
-		"text": "C'est quoi, la fréquence cardiaque ? Et comment la prendre sans te tromper ? Reste jusqu'au bout : petit test à la fin !"
+		"text": "C'est quoi, la fréquence cardiaque ? Et comment la prendre sans te tromper ?"
 	},
 	{
 		"id": "def",
@@ -28,16 +28,7 @@
 		"text": "Mais il n'y a pas que le chiffre ! Si les battements sont irréguliers, c'est une arythmie. Et un pouls faible et rapide, on dit qu'il est filant."
 	},
 	{
-		"id": "quiz",
-		"text": "Petit test ! Un patient au repos, à 120 battements par minute. Alors ?",
-		"pause": 2.2
-	},
-	{
-		"id": "reponse",
-		"text": "Tachycardie ! Plus de 100 au repos."
-	},
-	{
 		"id": "outro",
-		"text": "Fréquence, rythme, force du pouls : tu sais maintenant prendre un pouls comme un pro !"
+		"text": "Petit récap ! La fréquence cardiaque, c'est le nombre de battements par minute. On la prend au pouls radial : deux doigts, une minute. La normale, entre 60 et 100. Au-dessus : tachycardie. En dessous : bradycardie. Et on vérifie aussi le rythme et la force du pouls !"
 	}
 ]
