@@ -20,6 +20,8 @@ import {Diurese, DiureseProps} from './videos/diurese/Diurese';
 import {TL as DIU_TL} from './videos/diurese/timeline';
 import {Avc, AvcProps} from './videos/avc/Avc';
 import {TL as AVC_TL} from './videos/avc/timeline';
+import {ArretCardiaque, ArretCardiaqueProps} from './videos/arret-cardiaque/ArretCardiaque';
+import {TL as ACR_TL} from './videos/arret-cardiaque/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -116,6 +118,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies AvcProps}
+		/>
+		{/* 11 · L'arrêt cardiaque chez l'adulte */}
+		<Composition
+			id="Arret-Cardiaque"
+			component={ArretCardiaque}
+			durationInFrames={ACR_TL.total}
+			fps={ACR_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies ArretCardiaqueProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition

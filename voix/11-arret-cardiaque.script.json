@@ -1,0 +1,38 @@
+[
+	{
+		"id": "intro",
+		"text": "Son cœur vient de s'arrêter. Dès 3 minutes, son cerveau est en danger. Et chaque minute sans massage, c'est 10 % de chances de survie en moins. Alors, c'est quoi un arrêt cardiaque, et quels gestes faire ?",
+		"pause": 0.45
+	},
+	{
+		"id": "def",
+		"text": "Un arrêt cardiaque, c'est quand le cœur ne pompe plus le sang. Le plus souvent, il se met à trembler au lieu de battre : c'est la fibrillation ventriculaire. Le sang ne circule plus, et le cerveau n'a plus d'oxygène."
+	},
+	{
+		"id": "reconnaitre",
+		"text": "Pour le reconnaître : il ne répond pas, même quand on lui parle et qu'on le stimule. On bascule sa tête en arrière, et on regarde s'il respire, 10 secondes maximum. Il ne respire pas, ou mal : des gasps, des respirations rares et bruyantes.",
+		"rate": "+3%"
+	},
+	{
+		"id": "alerter",
+		"text": "Tout de suite, on alerte : le 15 ou le 112, et on fait chercher un défibrillateur."
+	},
+	{
+		"id": "masser",
+		"text": "Puis on masse, sans attendre : au centre de la poitrine, bras tendus, on enfonce de 5 à 6 centimètres, {100|cent} à {120|cent vingt} fois par minute. Le rythme de Staying Alive !",
+		"rate": "-3%"
+	},
+	{
+		"id": "rcp",
+		"text": "C'est la {RCP|R C P}, la réanimation cardio-pulmonaire : 30 compressions, 2 insufflations, et on ne s'arrête pas jusqu'à l'arrivée des secours.",
+		"rate": "-3%"
+	},
+	{
+		"id": "dae",
+		"text": "Dès que le défibrillateur arrive, on l'allume et on suit sa voix. Il analyse le cœur et, si besoin, délivre un choc pour arrêter la fibrillation. Pendant le choc, personne ne touche le patient !"
+	},
+	{
+		"id": "outro",
+		"text": "Petit récap ! Il ne répond pas, il ne respire pas : c'est un arrêt cardiaque. On alerte le 15, on masse, {100|cent} à {120|cent vingt} par minute, et on défibrille. Chaque minute compte !"
+	}
+]

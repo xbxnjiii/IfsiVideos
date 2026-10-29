@@ -1,0 +1,1288 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 79.35,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.048,
+   "end": 10.058
+  },
+  {
+   "id": "def",
+   "start": 10.89,
+   "end": 20.903
+  },
+  {
+   "id": "reconnaitre",
+   "start": 21.869,
+   "end": 34.516
+  },
+  {
+   "id": "alerter",
+   "start": 35.448,
+   "end": 39.418
+  },
+  {
+   "id": "masser",
+   "start": 40.348,
+   "end": 49.678
+  },
+  {
+   "id": "rcp",
+   "start": 50.654,
+   "end": 58.166
+  },
+  {
+   "id": "dae",
+   "start": 59.122,
+   "end": 68.565
+  },
+  {
+   "id": "outro",
+   "start": 69.488,
+   "end": 79.036
+  }
+ ],
+ "words": [
+  {
+   "text": "Son",
+   "start": 0.048,
+   "end": 0.268
+  },
+  {
+   "text": "cœur",
+   "start": 0.268,
+   "end": 0.523
+  },
+  {
+   "text": "vient",
+   "start": 0.523,
+   "end": 0.662
+  },
+  {
+   "text": "de",
+   "start": 0.662,
+   "end": 0.743
+  },
+  {
+   "text": "s'arrêter.",
+   "start": 0.743,
+   "end": 1.275
+  },
+  {
+   "text": "Dès",
+   "start": 1.588,
+   "end": 1.75
+  },
+  {
+   "text": "3",
+   "start": 1.75,
+   "end": 1.981
+  },
+  {
+   "text": "minutes,",
+   "start": 1.981,
+   "end": 2.341
+  },
+  {
+   "text": "son",
+   "start": 2.572,
+   "end": 2.7
+  },
+  {
+   "text": "cerveau",
+   "start": 2.7,
+   "end": 3.024
+  },
+  {
+   "text": "est",
+   "start": 3.024,
+   "end": 3.07
+  },
+  {
+   "text": "en",
+   "start": 3.07,
+   "end": 3.186
+  },
+  {
+   "text": "danger.",
+   "start": 3.186,
+   "end": 3.614
+  },
+  {
+   "text": "Et",
+   "start": 3.927,
+   "end": 4.078
+  },
+  {
+   "text": "chaque",
+   "start": 4.078,
+   "end": 4.298
+  },
+  {
+   "text": "minute",
+   "start": 4.298,
+   "end": 4.541
+  },
+  {
+   "text": "sans",
+   "start": 4.541,
+   "end": 4.645
+  },
+  {
+   "text": "massage,",
+   "start": 4.645,
+   "end": 5.166
+  },
+  {
+   "text": "c'est",
+   "start": 5.432,
+   "end": 5.559
+  },
+  {
+   "text": "10 %",
+   "start": 5.559,
+   "end": 5.904
+  },
+  {
+   "text": "de",
+   "start": 5.953,
+   "end": 6.068
+  },
+  {
+   "text": "chances",
+   "start": 6.069,
+   "end": 6.288
+  },
+  {
+   "text": "de",
+   "start": 6.288,
+   "end": 6.381
+  },
+  {
+   "text": "survie",
+   "start": 6.381,
+   "end": 6.694
+  },
+  {
+   "text": "en",
+   "start": 6.694,
+   "end": 6.751
+  },
+  {
+   "text": "moins.",
+   "start": 6.751,
+   "end": 7.029
+  },
+  {
+   "text": "Alors,",
+   "start": 7.396,
+   "end": 7.731
+  },
+  {
+   "text": "c'est",
+   "start": 7.998,
+   "end": 8.113
+  },
+  {
+   "text": "quoi",
+   "start": 8.113,
+   "end": 8.299
+  },
+  {
+   "text": "un",
+   "start": 8.299,
+   "end": 8.322
+  },
+  {
+   "text": "arrêt",
+   "start": 8.322,
+   "end": 8.518
+  },
+  {
+   "text": "cardiaque,",
+   "start": 8.518,
+   "end": 9.016
+  },
+  {
+   "text": "et",
+   "start": 9.225,
+   "end": 9.248
+  },
+  {
+   "text": "quels",
+   "start": 9.248,
+   "end": 9.387
+  },
+  {
+   "text": "gestes",
+   "start": 9.387,
+   "end": 9.676
+  },
+  {
+   "text": "faire ?",
+   "start": 9.676,
+   "end": 10.058
+  },
+  {
+   "text": "Un",
+   "start": 10.89,
+   "end": 11.041
+  },
+  {
+   "text": "arrêt",
+   "start": 11.041,
+   "end": 11.249
+  },
+  {
+   "text": "cardiaque,",
+   "start": 11.249,
+   "end": 11.781
+  },
+  {
+   "text": "c'est",
+   "start": 12.082,
+   "end": 12.186
+  },
+  {
+   "text": "quand",
+   "start": 12.186,
+   "end": 12.302
+  },
+  {
+   "text": "le",
+   "start": 12.302,
+   "end": 12.383
+  },
+  {
+   "text": "cœur",
+   "start": 12.383,
+   "end": 12.568
+  },
+  {
+   "text": "ne",
+   "start": 12.568,
+   "end": 12.661
+  },
+  {
+   "text": "pompe",
+   "start": 12.661,
+   "end": 12.927
+  },
+  {
+   "text": "plus",
+   "start": 12.927,
+   "end": 13.066
+  },
+  {
+   "text": "le",
+   "start": 13.066,
+   "end": 13.159
+  },
+  {
+   "text": "sang.",
+   "start": 13.159,
+   "end": 13.448
+  },
+  {
+   "text": "Le",
+   "start": 13.805,
+   "end": 13.909
+  },
+  {
+   "text": "plus",
+   "start": 13.909,
+   "end": 14.048
+  },
+  {
+   "text": "souvent,",
+   "start": 14.048,
+   "end": 14.453
+  },
+  {
+   "text": "il",
+   "start": 14.742,
+   "end": 14.823
+  },
+  {
+   "text": "se",
+   "start": 14.824,
+   "end": 14.939
+  },
+  {
+   "text": "met",
+   "start": 14.939,
+   "end": 15.02
+  },
+  {
+   "text": "à",
+   "start": 15.02,
+   "end": 15.09
+  },
+  {
+   "text": "trembler",
+   "start": 15.09,
+   "end": 15.448
+  },
+  {
+   "text": "au",
+   "start": 15.448,
+   "end": 15.472
+  },
+  {
+   "text": "lieu",
+   "start": 15.472,
+   "end": 15.611
+  },
+  {
+   "text": "de",
+   "start": 15.611,
+   "end": 15.715
+  },
+  {
+   "text": "battre :",
+   "start": 15.715,
+   "end": 16.073
+  },
+  {
+   "text": "c'est",
+   "start": 16.386,
+   "end": 16.467
+  },
+  {
+   "text": "la",
+   "start": 16.467,
+   "end": 16.536
+  },
+  {
+   "text": "fibrillation",
+   "start": 16.536,
+   "end": 17.104
+  },
+  {
+   "text": "ventriculaire.",
+   "start": 17.104,
+   "end": 17.856
+  },
+  {
+   "text": "Le",
+   "start": 18.171,
+   "end": 18.379
+  },
+  {
+   "text": "sang",
+   "start": 18.38,
+   "end": 18.542
+  },
+  {
+   "text": "ne",
+   "start": 18.542,
+   "end": 18.623
+  },
+  {
+   "text": "circule",
+   "start": 18.623,
+   "end": 18.935
+  },
+  {
+   "text": "plus,",
+   "start": 18.935,
+   "end": 19.224
+  },
+  {
+   "text": "et",
+   "start": 19.537,
+   "end": 19.56
+  },
+  {
+   "text": "le",
+   "start": 19.56,
+   "end": 19.653
+  },
+  {
+   "text": "cerveau",
+   "start": 19.653,
+   "end": 19.942
+  },
+  {
+   "text": "n'a",
+   "start": 19.942,
+   "end": 20.046
+  },
+  {
+   "text": "plus",
+   "start": 20.046,
+   "end": 20.197
+  },
+  {
+   "text": "d'oxygène.",
+   "start": 20.197,
+   "end": 20.903
+  },
+  {
+   "text": "Pour",
+   "start": 21.869,
+   "end": 21.966
+  },
+  {
+   "text": "le",
+   "start": 21.966,
+   "end": 22.027
+  },
+  {
+   "text": "reconnaître :",
+   "start": 22.027,
+   "end": 22.573
+  },
+  {
+   "text": "il",
+   "start": 22.949,
+   "end": 23.01
+  },
+  {
+   "text": "ne",
+   "start": 23.01,
+   "end": 23.083
+  },
+  {
+   "text": "répond",
+   "start": 23.083,
+   "end": 23.35
+  },
+  {
+   "text": "pas,",
+   "start": 23.35,
+   "end": 23.592
+  },
+  {
+   "text": "même",
+   "start": 23.896,
+   "end": 24.053
+  },
+  {
+   "text": "quand",
+   "start": 24.053,
+   "end": 24.163
+  },
+  {
+   "text": "on",
+   "start": 24.163,
+   "end": 24.284
+  },
+  {
+   "text": "lui",
+   "start": 24.284,
+   "end": 24.418
+  },
+  {
+   "text": "parle",
+   "start": 24.418,
+   "end": 24.684
+  },
+  {
+   "text": "et",
+   "start": 24.684,
+   "end": 24.709
+  },
+  {
+   "text": "qu'on",
+   "start": 24.709,
+   "end": 24.83
+  },
+  {
+   "text": "le",
+   "start": 24.83,
+   "end": 24.903
+  },
+  {
+   "text": "stimule.",
+   "start": 24.903,
+   "end": 25.461
+  },
+  {
+   "text": "On",
+   "start": 25.813,
+   "end": 25.91
+  },
+  {
+   "text": "bascule",
+   "start": 25.91,
+   "end": 26.262
+  },
+  {
+   "text": "sa",
+   "start": 26.262,
+   "end": 26.383
+  },
+  {
+   "text": "tête",
+   "start": 26.383,
+   "end": 26.602
+  },
+  {
+   "text": "en",
+   "start": 26.602,
+   "end": 26.638
+  },
+  {
+   "text": "arrière,",
+   "start": 26.638,
+   "end": 27.136
+  },
+  {
+   "text": "et",
+   "start": 27.536,
+   "end": 27.597
+  },
+  {
+   "text": "on",
+   "start": 27.597,
+   "end": 27.633
+  },
+  {
+   "text": "regarde",
+   "start": 27.633,
+   "end": 28.01
+  },
+  {
+   "text": "s'il",
+   "start": 28.01,
+   "end": 28.18
+  },
+  {
+   "text": "respire,",
+   "start": 28.18,
+   "end": 28.714
+  },
+  {
+   "text": "10",
+   "start": 28.92,
+   "end": 29.107
+  },
+  {
+   "text": "secondes",
+   "start": 29.107,
+   "end": 29.32
+  },
+  {
+   "text": "maximum.",
+   "start": 29.32,
+   "end": 29.988
+  },
+  {
+   "text": "Il",
+   "start": 30.317,
+   "end": 30.475
+  },
+  {
+   "text": "ne",
+   "start": 30.475,
+   "end": 30.548
+  },
+  {
+   "text": "respire",
+   "start": 30.548,
+   "end": 30.912
+  },
+  {
+   "text": "pas,",
+   "start": 30.912,
+   "end": 31.154
+  },
+  {
+   "text": "ou",
+   "start": 31.482,
+   "end": 31.543
+  },
+  {
+   "text": "mal :",
+   "start": 31.543,
+   "end": 31.883
+  },
+  {
+   "text": "des",
+   "start": 32.21,
+   "end": 32.307
+  },
+  {
+   "text": "gasps,",
+   "start": 32.307,
+   "end": 32.756
+  },
+  {
+   "text": "des",
+   "start": 32.938,
+   "end": 33.011
+  },
+  {
+   "text": "respirations",
+   "start": 33.011,
+   "end": 33.606
+  },
+  {
+   "text": "rares",
+   "start": 33.606,
+   "end": 33.861
+  },
+  {
+   "text": "et",
+   "start": 33.861,
+   "end": 33.897
+  },
+  {
+   "text": "bruyantes.",
+   "start": 33.897,
+   "end": 34.516
+  },
+  {
+   "text": "Tout",
+   "start": 35.448,
+   "end": 35.552
+  },
+  {
+   "text": "de",
+   "start": 35.552,
+   "end": 35.587
+  },
+  {
+   "text": "suite,",
+   "start": 35.587,
+   "end": 35.899
+  },
+  {
+   "text": "on",
+   "start": 36.05,
+   "end": 36.073
+  },
+  {
+   "text": "alerte :",
+   "start": 36.073,
+   "end": 36.547
+  },
+  {
+   "text": "le",
+   "start": 36.756,
+   "end": 36.848
+  },
+  {
+   "text": "15",
+   "start": 36.848,
+   "end": 37.138
+  },
+  {
+   "text": "ou",
+   "start": 37.138,
+   "end": 37.172
+  },
+  {
+   "text": "le",
+   "start": 37.172,
+   "end": 37.265
+  },
+  {
+   "text": "112,",
+   "start": 37.265,
+   "end": 37.728
+  },
+  {
+   "text": "et",
+   "start": 38.064,
+   "end": 38.11
+  },
+  {
+   "text": "on",
+   "start": 38.11,
+   "end": 38.156
+  },
+  {
+   "text": "fait",
+   "start": 38.156,
+   "end": 38.249
+  },
+  {
+   "text": "chercher",
+   "start": 38.249,
+   "end": 38.561
+  },
+  {
+   "text": "un",
+   "start": 38.561,
+   "end": 38.608
+  },
+  {
+   "text": "défibrillateur.",
+   "start": 38.608,
+   "end": 39.418
+  },
+  {
+   "text": "Puis",
+   "start": 40.348,
+   "end": 40.49
+  },
+  {
+   "text": "on",
+   "start": 40.49,
+   "end": 40.555
+  },
+  {
+   "text": "masse,",
+   "start": 40.555,
+   "end": 41.006
+  },
+  {
+   "text": "sans",
+   "start": 41.173,
+   "end": 41.354
+  },
+  {
+   "text": "attendre :",
+   "start": 41.354,
+   "end": 41.882
+  },
+  {
+   "text": "au",
+   "start": 42.088,
+   "end": 42.127
+  },
+  {
+   "text": "centre",
+   "start": 42.127,
+   "end": 42.436
+  },
+  {
+   "text": "de",
+   "start": 42.436,
+   "end": 42.5
+  },
+  {
+   "text": "la",
+   "start": 42.501,
+   "end": 42.578
+  },
+  {
+   "text": "poitrine,",
+   "start": 42.578,
+   "end": 43.158
+  },
+  {
+   "text": "bras",
+   "start": 43.544,
+   "end": 43.712
+  },
+  {
+   "text": "tendus,",
+   "start": 43.712,
+   "end": 44.189
+  },
+  {
+   "text": "on",
+   "start": 44.549,
+   "end": 44.575
+  },
+  {
+   "text": "enfonce",
+   "start": 44.575,
+   "end": 44.962
+  },
+  {
+   "text": "de",
+   "start": 44.962,
+   "end": 45.091
+  },
+  {
+   "text": "5",
+   "start": 45.091,
+   "end": 45.344
+  },
+  {
+   "text": "à",
+   "start": 45.344,
+   "end": 45.4
+  },
+  {
+   "text": "6",
+   "start": 45.4,
+   "end": 45.613
+  },
+  {
+   "text": "centimètres,",
+   "start": 45.613,
+   "end": 46.135
+  },
+  {
+   "text": "100",
+   "start": 46.444,
+   "end": 46.624
+  },
+  {
+   "text": "à",
+   "start": 46.624,
+   "end": 46.689
+  },
+  {
+   "text": "120",
+   "start": 46.689,
+   "end": 46.972
+  },
+  {
+   "text": "fois",
+   "start": 46.972,
+   "end": 47.153
+  },
+  {
+   "text": "par",
+   "start": 47.153,
+   "end": 47.307
+  },
+  {
+   "text": "minute.",
+   "start": 47.307,
+   "end": 47.81
+  },
+  {
+   "text": "Le",
+   "start": 48.222,
+   "end": 48.351
+  },
+  {
+   "text": "rythme",
+   "start": 48.351,
+   "end": 48.686
+  },
+  {
+   "text": "de",
+   "start": 48.686,
+   "end": 48.789
+  },
+  {
+   "text": "Staying",
+   "start": 48.789,
+   "end": 49.137
+  },
+  {
+   "text": "Alive !",
+   "start": 49.137,
+   "end": 49.678
+  },
+  {
+   "text": "C'est",
+   "start": 50.654,
+   "end": 50.86
+  },
+  {
+   "text": "la",
+   "start": 50.86,
+   "end": 50.976
+  },
+  {
+   "text": "RCP,",
+   "start": 50.976,
+   "end": 51.607
+  },
+  {
+   "text": "la",
+   "start": 51.916,
+   "end": 51.981
+  },
+  {
+   "text": "réanimation",
+   "start": 51.981,
+   "end": 52.587
+  },
+  {
+   "text": "cardio-pulmonaire :",
+   "start": 52.587,
+   "end": 53.463
+  },
+  {
+   "text": "30",
+   "start": 53.759,
+   "end": 54.096
+  },
+  {
+   "text": "compressions,",
+   "start": 54.096,
+   "end": 54.674
+  },
+  {
+   "text": "2",
+   "start": 54.945,
+   "end": 55.18
+  },
+  {
+   "text": "insufflations,",
+   "start": 55.18,
+   "end": 55.86
+  },
+  {
+   "text": "et",
+   "start": 56.272,
+   "end": 56.336
+  },
+  {
+   "text": "on",
+   "start": 56.337,
+   "end": 56.362
+  },
+  {
+   "text": "ne",
+   "start": 56.362,
+   "end": 56.427
+  },
+  {
+   "text": "s'arrête",
+   "start": 56.427,
+   "end": 56.749
+  },
+  {
+   "text": "pas",
+   "start": 56.749,
+   "end": 56.878
+  },
+  {
+   "text": "jusqu'à",
+   "start": 56.878,
+   "end": 57.161
+  },
+  {
+   "text": "l'arrivée",
+   "start": 57.161,
+   "end": 57.496
+  },
+  {
+   "text": "des",
+   "start": 57.496,
+   "end": 57.599
+  },
+  {
+   "text": "secours.",
+   "start": 57.599,
+   "end": 58.166
+  },
+  {
+   "text": "Dès",
+   "start": 59.122,
+   "end": 59.33
+  },
+  {
+   "text": "que",
+   "start": 59.33,
+   "end": 59.423
+  },
+  {
+   "text": "le",
+   "start": 59.423,
+   "end": 59.504
+  },
+  {
+   "text": "défibrillateur",
+   "start": 59.504,
+   "end": 60.164
+  },
+  {
+   "text": "arrive,",
+   "start": 60.164,
+   "end": 60.534
+  },
+  {
+   "text": "on",
+   "start": 60.835,
+   "end": 60.858
+  },
+  {
+   "text": "l'allume",
+   "start": 60.858,
+   "end": 61.205
+  },
+  {
+   "text": "et",
+   "start": 61.205,
+   "end": 61.275
+  },
+  {
+   "text": "on",
+   "start": 61.275,
+   "end": 61.321
+  },
+  {
+   "text": "suit",
+   "start": 61.321,
+   "end": 61.483
+  },
+  {
+   "text": "sa",
+   "start": 61.483,
+   "end": 61.599
+  },
+  {
+   "text": "voix.",
+   "start": 61.599,
+   "end": 61.888
+  },
+  {
+   "text": "Il",
+   "start": 62.232,
+   "end": 62.359
+  },
+  {
+   "text": "analyse",
+   "start": 62.359,
+   "end": 62.672
+  },
+  {
+   "text": "le",
+   "start": 62.672,
+   "end": 62.764
+  },
+  {
+   "text": "cœur",
+   "start": 62.764,
+   "end": 63.1
+  },
+  {
+   "text": "et,",
+   "start": 63.1,
+   "end": 63.134
+  },
+  {
+   "text": "si",
+   "start": 63.401,
+   "end": 63.551
+  },
+  {
+   "text": "besoin,",
+   "start": 63.551,
+   "end": 63.933
+  },
+  {
+   "text": "délivre",
+   "start": 64.211,
+   "end": 64.523
+  },
+  {
+   "text": "un",
+   "start": 64.523,
+   "end": 64.593
+  },
+  {
+   "text": "choc",
+   "start": 64.593,
+   "end": 64.894
+  },
+  {
+   "text": "pour",
+   "start": 64.894,
+   "end": 65.044
+  },
+  {
+   "text": "arrêter",
+   "start": 65.044,
+   "end": 65.287
+  },
+  {
+   "text": "la",
+   "start": 65.287,
+   "end": 65.368
+  },
+  {
+   "text": "fibrillation.",
+   "start": 65.368,
+   "end": 66.063
+  },
+  {
+   "text": "Pendant",
+   "start": 66.389,
+   "end": 66.643
+  },
+  {
+   "text": "le",
+   "start": 66.643,
+   "end": 66.747
+  },
+  {
+   "text": "choc,",
+   "start": 66.747,
+   "end": 67.153
+  },
+  {
+   "text": "personne",
+   "start": 67.384,
+   "end": 67.731
+  },
+  {
+   "text": "ne",
+   "start": 67.731,
+   "end": 67.824
+  },
+  {
+   "text": "touche",
+   "start": 67.824,
+   "end": 68.021
+  },
+  {
+   "text": "le",
+   "start": 68.021,
+   "end": 68.113
+  },
+  {
+   "text": "patient !",
+   "start": 68.113,
+   "end": 68.565
+  },
+  {
+   "text": "Petit",
+   "start": 69.488,
+   "end": 69.777
+  },
+  {
+   "text": "récap !",
+   "start": 69.777,
+   "end": 70.31
+  },
+  {
+   "text": "Il",
+   "start": 70.634,
+   "end": 70.796
+  },
+  {
+   "text": "ne",
+   "start": 70.796,
+   "end": 70.865
+  },
+  {
+   "text": "répond",
+   "start": 70.865,
+   "end": 71.12
+  },
+  {
+   "text": "pas,",
+   "start": 71.12,
+   "end": 71.351
+  },
+  {
+   "text": "il",
+   "start": 71.641,
+   "end": 71.687
+  },
+  {
+   "text": "ne",
+   "start": 71.687,
+   "end": 71.756
+  },
+  {
+   "text": "respire",
+   "start": 71.757,
+   "end": 72.104
+  },
+  {
+   "text": "pas :",
+   "start": 72.104,
+   "end": 72.3
+  },
+  {
+   "text": "c'est",
+   "start": 72.613,
+   "end": 72.706
+  },
+  {
+   "text": "un",
+   "start": 72.706,
+   "end": 72.798
+  },
+  {
+   "text": "arrêt",
+   "start": 72.798,
+   "end": 73.018
+  },
+  {
+   "text": "cardiaque.",
+   "start": 73.018,
+   "end": 73.608
+  },
+  {
+   "text": "On",
+   "start": 73.929,
+   "end": 74.021
+  },
+  {
+   "text": "alerte",
+   "start": 74.021,
+   "end": 74.322
+  },
+  {
+   "text": "le",
+   "start": 74.322,
+   "end": 74.415
+  },
+  {
+   "text": "15,",
+   "start": 74.415,
+   "end": 74.797
+  },
+  {
+   "text": "on",
+   "start": 75.017,
+   "end": 75.04
+  },
+  {
+   "text": "masse,",
+   "start": 75.04,
+   "end": 75.422
+  },
+  {
+   "text": "100",
+   "start": 75.642,
+   "end": 75.815
+  },
+  {
+   "text": "à",
+   "start": 75.815,
+   "end": 75.862
+  },
+  {
+   "text": "120",
+   "start": 75.862,
+   "end": 76.139
+  },
+  {
+   "text": "par",
+   "start": 76.139,
+   "end": 76.29
+  },
+  {
+   "text": "minute,",
+   "start": 76.29,
+   "end": 76.672
+  },
+  {
+   "text": "et",
+   "start": 76.961,
+   "end": 76.996
+  },
+  {
+   "text": "on",
+   "start": 76.996,
+   "end": 77.042
+  },
+  {
+   "text": "défibrille.",
+   "start": 77.042,
+   "end": 77.644
+  },
+  {
+   "text": "Chaque",
+   "start": 77.959,
+   "end": 78.283
+  },
+  {
+   "text": "minute",
+   "start": 78.283,
+   "end": 78.596
+  },
+  {
+   "text": "compte !",
+   "start": 78.596,
+   "end": 79.036
+  }
+ ]
+}

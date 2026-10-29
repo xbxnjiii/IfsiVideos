@@ -90,6 +90,11 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   `Patient` : `droop` (visage paralysé), `armL` / `armR` (bras levés, l'un retombe).
 - Équivalent vu en cours, **à l'écran seulement** (pas à la voix) : « VITE = FAST » (Face · Arm · Speech · Time),
   rangée `FastRow` qui s'allume lettre par lettre avec VITE.
+- 2e modèle « pathologie / urgence » : `Arret-Cardiaque` (`src/videos/arret-cardiaque/`) — accroche : le tracé ECG
+  devient plat et le patient s'effondre (image 0 = moniteur qui bat), 3 minutes pour le cerveau, jauge de survie
+  −10 %/minute ; puis définition (FV), reconnaître, alerter, masser, RCP 30/2, DAE. Briques `arrest.tsx` :
+  `EcgMonitor` (sinus / FV / plat / choc), `Aed`, `Pad`, `CprHands` + `DepthGauge`, `HeadTilt` ; `Patient` :
+  `eyesClosed`. Nombres collés (« 100 à 120 ») : les écrire en lettres (`{100|cent} à {120|cent vingt}`).
 
 ## Recette express (nouvelle vidéo de constante)
 

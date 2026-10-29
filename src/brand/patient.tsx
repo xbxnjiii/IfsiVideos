@@ -54,6 +54,8 @@ export type PatientProps = {
 	/** bras levés vers l'extérieur, en degrés (0 = le long du corps, 90 = à l'horizontale) */
 	armL?: number;
 	armR?: number;
+	/** yeux fermés (inconscient, 0 → 1) */
+	eyesClosed?: number;
 };
 
 const ARMS = ['M106 236 C92 290 80 340 76 400 C74 430 74 455 76 474', 'M294 236 C308 290 320 340 324 400 C326 430 326 455 324 474'];
@@ -75,10 +77,10 @@ const SkinLayers: React.FC<{flush: number; pale: number; children: (fill: string
 	</>
 );
 
-export const Patient: React.FC<PatientProps> = ({size = 360, mood = 'calme', breath = 0, heart = 0, beat = 0, flow = 0, cuff = 0, press = 0, flush = 0, pale = 0, sweat = 0, pain = 0, dizzy = 0, droop = 0, armL = 0, armR = 0}) => {
+export const Patient: React.FC<PatientProps> = ({size = 360, mood = 'calme', breath = 0, heart = 0, beat = 0, flow = 0, cuff = 0, press = 0, flush = 0, pale = 0, sweat = 0, pain = 0, dizzy = 0, droop = 0, armL = 0, armR = 0, eyesClosed = 0}) => {
 	const frame = useCurrentFrame();
 	const id = useId().replace(/:/g, '');
-	const blink = frame % 96 < 4 ? 0.15 : 1;
+	const blink = Math.min(frame % 96 < 4 ? 0.15 : 1, 1 - 0.9 * eyesClosed);
 	const lift = breath * 8;
 	const wide = 1 + breath * 0.035;
 	const unwell = mood === 'mal';
@@ -169,6 +171,7 @@ export const Patient: React.FC<PatientProps> = ({size = 360, mood = 'calme', bre
 						<circle cx={224} cy={118} r={8} fill={N} />
 					</g>
 				</g>
+				{eyesClosed > 0 ? <path d="M164 120 Q176 128 188 120 M212 120 Q224 128 236 120" fill="none" stroke={N} strokeWidth={6} strokeLinecap="round" opacity={eyesClosed} /> : null}
 				{droop > 0 ? <path d={`M212 ${104 + 4 * droop} Q224 ${106 + 6 * droop} 236 ${108 + 8 * droop}`} fill="none" stroke={N} strokeWidth={5} strokeLinecap="round" opacity={droop} /> : null}
 				<path
 					d={

@@ -21,6 +21,7 @@ pas de logiciel de montage, pas de banque d'images.
 | 08 | La glycémie (une vidéo par constante, récap rapide) | `Glycemie` | [voix/08-glycemie.script.json](voix/08-glycemie.script.json) | [storyboard](docs/lpi/storyboard-glycemie.md) |
 | 09 | La diurèse (une vidéo par constante, récap rapide) | `Diurese` | [voix/09-diurese.script.json](voix/09-diurese.script.json) | [storyboard](docs/lpi/storyboard-diurese.md) |
 | 10 | C'est quoi un AVC (pathologie : accroche-choc, VITE) | `AVC` | [voix/10-avc.script.json](voix/10-avc.script.json) | [storyboard](docs/lpi/storyboard-avc.md) |
+| 11 | L'arrêt cardiaque chez l'adulte (urgence : accroche-choc, RCP, DAE) | `Arret-Cardiaque` | [voix/11-arret-cardiaque.script.json](voix/11-arret-cardiaque.script.json) | [storyboard](docs/lpi/storyboard-arret-cardiaque.md) |
 
 ## Utilisation
 
@@ -36,6 +37,7 @@ npm run render:ta               # -> out/07-tension-arterielle.mp4
 npm run render:gly              # -> out/08-glycemie.mp4
 npm run render:diu              # -> out/09-diurese.mp4
 npm run render:avc              # -> out/10-avc.mp4
+npm run render:acr              # -> out/11-arret-cardiaque.mp4
 npm run voice -- voix/<script>.json <épisode>   # voix + timing mot à mot
 npm run sheet -- out/qa          # planches contact (ffmpeg)
 npm run check:mascot -- constantes   # vérifie le jeu de la mascotte d'une vidéo
@@ -67,6 +69,7 @@ src/
     urine.tsx                 normes de diurèse, bocal gradué, horloge 24 h, appareil urinaire (reins → vessie)
     brain.tsx                 cerveau (artères, neurones, ischémie, hémorragie) + gros plan d'artère (caillot, traitements)
     devices.tsx               téléphone (le 15), horloge murale, écran d'imagerie
+    arrest.tsx                moniteur ECG (sinus, FV, plat, choc), DAE + électrodes, mains de massage, bascule de tête
     patient.tsx               corps humain (patient de face) : expressions, cœur, artères, brassard, signes
     body.tsx, icons.tsx       poignet + doigts ; petites icônes (causes, situations)
     MascotActor.tsx           mascotte actrice : sauts, course, expressions au mot près, bustes libres

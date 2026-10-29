@@ -18,7 +18,8 @@
     "render:ta": "remotion render Tension-Arterielle out/07-tension-arterielle.mp4",
     "render:gly": "remotion render Glycemie out/08-glycemie.mp4",
     "render:diu": "remotion render Diurese out/09-diurese.mp4",
-    "render:avc": "remotion render AVC out/10-avc.mp4"
+    "render:avc": "remotion render AVC out/10-avc.mp4",
+    "render:acr": "remotion render Arret-Cardiaque out/11-arret-cardiaque.mp4"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.532",
