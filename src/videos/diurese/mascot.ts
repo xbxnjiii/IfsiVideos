@@ -32,7 +32,7 @@ export const MASCOT: Beat[] = [
 	/* ── norme ── */
 	{at: abs('norme', 'normale'), via: 'pop', key: 'situations/valide', ...R},
 	{at: abs('norme', '2000'), key: 'expressions/ok', ...R},
-	{at: abs('norme', 'normodiurèse'), key: 'expressions/joyeuse', ...L},
+	{at: abs('norme', 'normodiurèse'), key: 'expressions/joyeuse', ...R},
 	// elle s'envole avec le panoramique vers le haut
 	{at: start('poly') + 2, dur: 14, key: 'expressions/joyeuse', x: 540, y: -520, size: 230},
 
