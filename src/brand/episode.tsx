@@ -4,7 +4,7 @@
 import React from 'react';
 import {AbsoluteFill, Html5Audio, Img, interpolate, Sequence, spring, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
 import {linearTiming, TransitionPresentation, TransitionSeries} from '@remotion/transitions';
-import {Stamp} from './kit';
+import {Stamp, usePop} from './kit';
 import {Sign, SignKind} from './learn';
 import {Beat, beatMoves, MascotActor} from './MascotActor';
 import {Burst, Camera, Confetti, LiveBackground, Odometer} from './motion3';
@@ -12,10 +12,49 @@ import {RUN_WIPE} from './motion4';
 import {Sfx, SfxEnabled, SfxName} from './Sfx';
 import {alpha, FONT, GRID, LPI, SHADOW} from './theme';
 import type {Timeline} from './timeline';
-import {clamp, Kicker, Title} from './ui';
+import {clamp, Enter, Kicker, Title} from './ui';
 
 const N = LPI.navy;
 const ease = {...clamp, easing: (t: number) => (t < 0.5 ? 4 * t * t * t : 1 - (-2 * t + 2) ** 3 / 2)};
+
+/** Pastille « mot = explication » (TA = PA, mmHg…). */
+export const Pill: React.FC<{at: number; children: React.ReactNode; color?: string; size?: number}> = ({at: t0, children, color = LPI.pink, size = 60}) => {
+	const frame = useCurrentFrame();
+	const p = usePop(t0);
+	if (frame < t0) return null;
+	return (
+		<span
+			style={{
+				display: 'inline-block',
+				padding: `${size * 0.14}px ${size * 0.5}px`,
+				borderRadius: 999,
+				background: color,
+				fontFamily: FONT.title,
+				fontWeight: 900,
+				fontSize: size,
+				color: color === LPI.blue ? LPI.paper : N,
+				boxShadow: SHADOW,
+				transform: `scale(${0.5 + 0.5 * p})`,
+				opacity: Math.min(1, p * 2),
+			}}
+		>
+			{children}
+		</span>
+	);
+};
+
+/** Petit texte capitales qui annonce une liste (« parfois : »). */
+export const Lead: React.FC<{at: number; text: string; y?: number}> = ({at: t0, text, y = 1186}) => {
+	const frame = useCurrentFrame();
+	if (frame < t0) return null;
+	return (
+		<div style={{position: 'absolute', left: 80, top: y}}>
+			<Enter at={t0} distance={14}>
+				<span style={{fontFamily: FONT.body, fontWeight: 800, fontSize: 30, letterSpacing: '0.12em', textTransform: 'uppercase', color: alpha(N, 0.65)}}>{text}</span>
+			</Enter>
+		</div>
+	);
+};
 
 /* ───────────── mise en page (1080 × 1920, interface TikTok : rien d'important au-dessus de 150 ni sous 1480) ───────────── */
 

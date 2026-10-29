@@ -3,6 +3,7 @@ import {Easing, interpolate, random, useCurrentFrame} from 'remotion';
 import {Lesson3, scaleY, Seuil, StatePill} from '../../brand/Lesson3';
 import {NormScale, Zone} from '../../brand/NormScale';
 import {Manometer} from '../../brand/pressure';
+import {Finger, Glucometer, SugarRain} from '../../brand/glyco';
 import {Sign} from '../../brand/learn';
 import {Odometer} from '../../brand/motion3';
 import {Artery, Heart, Lungs, Oximeter, Rbc, SnowPicto, Thermometer} from '../../brand/pictos';
@@ -784,118 +785,6 @@ export const Saturation: React.FC = () => {
 };
 
 /* ═══════════════════════ 6 — GLYCÉMIE ═══════════════════════ */
-
-/** Doigt stylisé (vu de profil) : une goutte de sang perle au bout. */
-const Finger: React.FC<{drop: number}> = ({drop}) => (
-	<svg width={330} height={230} viewBox="0 0 330 230" style={{overflow: 'visible'}}>
-		<path d="M-40 70 H250 A40 40 0 0 1 250 150 H-40" fill={LPI.paper} stroke={LPI.navy} strokeWidth={9} strokeLinejoin="round" />
-		<path d="M224 76 H262 A14 14 0 0 1 262 104 H224 A6 6 0 0 1 218 98 V82 A6 6 0 0 1 224 76 Z" fill={alpha(LPI.sky, 0.9)} stroke={LPI.navy} strokeWidth={6} />
-		<path d="M110 90 V130 M150 90 V130" stroke={alpha(LPI.navy, 0.3)} strokeWidth={6} strokeLinecap="round" />
-		<g transform={`translate(270 146) scale(${drop})`}>
-			<path d="M0 0 C-12 16 -17 28 -17 36 A17 17 0 0 0 17 36 C17 28 12 16 0 0 Z" fill={LPI.pink} stroke={LPI.navy} strokeWidth={6} strokeLinejoin="round" />
-		</g>
-	</svg>
-);
-
-/** Lecteur de glycémie : bandelette à gauche, écran avec la valeur en g/l. */
-const Glucometer: React.FC<{value: number; strip: number; blood: number; tone: string | null; beep: number}> = ({value, strip, blood, tone, beep}) => (
-	<div style={{position: 'relative', width: 440, height: 250}}>
-		{/* bandelette qui sort vers le doigt */}
-		<div
-			style={{
-				position: 'absolute',
-				left: -150 * strip,
-				top: 124,
-				width: 160,
-				height: 30,
-				borderRadius: 8,
-				background: LPI.paper,
-				border: `6px solid ${LPI.navy}`,
-				boxSizing: 'border-box',
-			}}
-		>
-			<div style={{position: 'absolute', left: 6, top: 3, width: 26 * blood, height: 12, borderRadius: 6, background: LPI.pink}} />
-			<div style={{position: 'absolute', right: 20, top: 3, width: 40, height: 12, borderRadius: 4, background: LPI.blue}} />
-		</div>
-		<div
-			style={{
-				position: 'absolute',
-				inset: 0,
-				borderRadius: 60,
-				background: LPI.blue,
-				border: `9px solid ${LPI.navy}`,
-				boxSizing: 'border-box',
-				transform: `scale(${1 + 0.03 * beep})`,
-			}}
-		>
-			<div
-				style={{
-					position: 'absolute',
-					left: 26,
-					top: 26,
-					width: 290,
-					height: 180,
-					borderRadius: 30,
-					background: tone ? alpha(tone, 0.6) : LPI.paper,
-					border: `6px solid ${LPI.navy}`,
-					boxSizing: 'border-box',
-					display: 'flex',
-					flexDirection: 'column',
-					alignItems: 'center',
-					justifyContent: 'center',
-				}}
-			>
-				<Odometer value={value} decimals={2} places={1} size={100} />
-				<div style={{fontFamily: FONT.title, fontWeight: 800, fontSize: 34, color: LPI.blue, marginTop: -6}}>g/l</div>
-			</div>
-			<div
-				style={{
-					position: 'absolute',
-					left: 334,
-					top: 84,
-					width: 66,
-					height: 66,
-					borderRadius: 33,
-					background: LPI.sky,
-					border: `6px solid ${LPI.navy}`,
-					boxSizing: 'border-box',
-				}}
-			/>
-		</div>
-	</div>
-);
-
-/** Morceaux de sucre qui pleuvent (hyperglycémie). */
-const SugarRain: React.FC<{on: number}> = ({on}) => {
-	const frame = useCurrentFrame();
-	if (on <= 0) return null;
-	return (
-		<>
-			{Array.from({length: 10}, (_, i) => {
-				const x = 30 + random(`gx${i}`) * 860;
-				const y = ((frame * (3 + random(`gv${i}`) * 2) + random(`gy${i}`) * 440) % 480) - 50;
-				const s = 34 + random(`gs${i}`) * 18;
-				return (
-					<div
-						key={i}
-						style={{
-							position: 'absolute',
-							left: x,
-							top: y,
-							width: s,
-							height: s,
-							borderRadius: 8,
-							background: LPI.paper,
-							border: `5px solid ${LPI.navy}`,
-							opacity: on * 0.9,
-							transform: `rotate(${frame * 3 + i * 40}deg)`,
-						}}
-					/>
-				);
-			})}
-		</>
-	);
-};
 
 export const Glycemie: React.FC = () => {
 	const frame = useCurrentFrame();

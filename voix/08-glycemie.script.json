@@ -1,0 +1,9 @@
+[
+	{"id": "intro", "text": "C'est quoi, la glycémie ?"},
+	{"id": "def", "text": "La glycémie, c'est le taux de sucre dans le sang. Ce sucre, le glucose, c'est le carburant de nos cellules. Elle se mesure en grammes par litre."},
+	{"id": "mesure", "text": "Pour la mesurer, on fait une glycémie capillaire, au bout du doigt : on pique, on dépose une goutte de sang sur la bandelette, et le lecteur affiche le résultat."},
+	{"id": "norme", "text": "Chez l'adulte à jeun, c'est-à-dire sans avoir mangé, la normale, c'est entre 0,70 et 1,10 gramme par litre : c'est la normoglycémie."},
+	{"id": "hyper", "text": "Au-dessus de 1,10, c'est une hyperglycémie : trop de sucre dans le sang. Le patient peut avoir très soif, uriner beaucoup, et être fatigué. On la surveille surtout chez les patients diabétiques."},
+	{"id": "hypo", "text": "En dessous de 0,70, c'est une hypoglycémie : pas assez de sucre. Elle peut arriver vite, avec des sueurs, des tremblements, une sensation de faim, voire un malaise. C'est une urgence !"},
+	{"id": "outro", "text": "Petit récap ! La glycémie, c'est le taux de sucre dans le sang, en grammes par litre, mesuré au bout du doigt. À jeun, la normale est entre 0,70 et 1,10 : normoglycémie. Au-dessus de 1,10 : hyperglycémie. Et en dessous de 0,70 : hypoglycémie, une urgence !"}
+]

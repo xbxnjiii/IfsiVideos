@@ -18,6 +18,7 @@ pas de logiciel de montage, pas de banque d'images.
 | 05 | La fréquence respiratoire (une vidéo par constante, récap rapide) | `Frequence-Respiratoire` | [voix/05-frequence-respiratoire.script.json](voix/05-frequence-respiratoire.script.json) | [storyboard](docs/lpi/storyboard-frequence-respiratoire.md) |
 | 06 | La température corporelle (une vidéo par constante, récap rapide) | `Temperature` | [voix/06-temperature.script.json](voix/06-temperature.script.json) | [storyboard](docs/lpi/storyboard-temperature.md) |
 | 07 | La tension artérielle (une vidéo par constante, récap rapide) | `Tension-Arterielle` | [voix/07-tension-arterielle.script.json](voix/07-tension-arterielle.script.json) | [storyboard](docs/lpi/storyboard-tension-arterielle.md) |
+| 08 | La glycémie (une vidéo par constante, récap rapide) | `Glycemie` | [voix/08-glycemie.script.json](voix/08-glycemie.script.json) | [storyboard](docs/lpi/storyboard-glycemie.md) |
 
 ## Utilisation
 
@@ -30,6 +31,7 @@ npm run render:fc               # -> out/04-frequence-cardiaque.mp4
 npm run render:fr               # -> out/05-frequence-respiratoire.mp4
 npm run render:temp             # -> out/06-temperature.mp4
 npm run render:ta               # -> out/07-tension-arterielle.mp4
+npm run render:gly              # -> out/08-glycemie.mp4
 npm run voice -- voix/<script>.json <épisode>   # voix + timing mot à mot
 npm run sheet -- out/qa          # planches contact (ffmpeg)
 npm run check:mascot -- constantes   # vérifie le jeu de la mascotte d'une vidéo
@@ -57,6 +59,7 @@ src/
     breath.tsx                respiration (phase), poumons, thorax, tracé respiratoire
     thermo.tsx                zones de température, thermomètre + °C, jauge froid ↔ chaud, chaleur, flocons
     pressure.tsx              normes de pression artérielle, manomètre, lecture systolique / diastolique
+    glyco.tsx                 normes de glycémie, doigt + autopiqueur, lecteur de glycémie, sucres, cellule
     patient.tsx               corps humain (patient de face) : expressions, cœur, artères, brassard, signes
     body.tsx, icons.tsx       poignet + doigts ; petites icônes (causes, situations)
     MascotActor.tsx           mascotte actrice : sauts, course, expressions au mot près, bustes libres

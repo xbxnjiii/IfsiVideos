@@ -14,6 +14,8 @@ import {Temperature, TemperatureProps} from './videos/temperature/Temperature';
 import {TL as TEMP_TL} from './videos/temperature/timeline';
 import {TensionArterielle, TensionArterielleProps} from './videos/tension-arterielle/TensionArterielle';
 import {TL as TA_TL} from './videos/tension-arterielle/timeline';
+import {Glycemie, GlycemieProps} from './videos/glycemie/Glycemie';
+import {TL as GLY_TL} from './videos/glycemie/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -80,6 +82,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies TensionArterielleProps}
+		/>
+		{/* 08 · La glycémie */}
+		<Composition
+			id="Glycemie"
+			component={Glycemie}
+			durationInFrames={GLY_TL.total}
+			fps={GLY_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies GlycemieProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition

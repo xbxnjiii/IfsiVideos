@@ -70,7 +70,7 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   (ex. ample (profonde, beaucoup d'air), superficielle (peu profonde, peu d'air)).
 - Déroulé type : accroche · définition · mesure (geste + astuce) · norme adulte · trop haut · trop bas ·
   « pas que le chiffre » (rythme, amplitude…) · récap rapide · logo.
-- Modèles : `Frequence-Cardiaque`, `Frequence-Respiratoire`, `Temperature`, `Tension-Arterielle` (`src/videos/<épisode>/`,
+- Modèles : `Frequence-Cardiaque`, `Frequence-Respiratoire`, `Temperature`, `Tension-Arterielle`, `Glycemie` (`src/videos/<épisode>/`,
   storyboards dans `docs/lpi/`). Paliers de valeur qui roulent : `steps()` de `temperature/Scenes.tsx`.
 
 ## Recette express (nouvelle vidéo de constante)
@@ -85,9 +85,14 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
    Briques prêtes (`src/brand/`) : `episode.tsx` (mise en page `LAY`, `Head`, `Unit`, `Tag`, `BigNum`,
    `CauseChip`, `Stopwatch`, `RecapScene`, `EndCard`, composition `Episode`, places `SPOT`, `runAcross`),
    `cardio.tsx` (battements, ECG, cœur qui bat, onde de pouls), `breath.tsx` (respiration, poumons, thorax,
-   tracé respiratoire), `pressure.tsx` (normes PA, manomètre, lecture 120/80 mmHg), `thermo.tsx` (zones de température, thermomètre + °C qui roule, jauge froid ↔ chaud,
+   tracé respiratoire), `pressure.tsx` (normes PA, manomètre, lecture 120/80 mmHg), `glyco.tsx` (normes glycémie, doigt + autopiqueur,
+   lecteur de glycémie en g/l, sucres, cellule « carburant »), `thermo.tsx` (zones de température, thermomètre + °C qui roule, jauge froid ↔ chaud,
    ondes de chaleur, flocons), `body.tsx` (poignet, doigts, pouce), `icons.tsx` (effort, fièvre, stress, douleur,
-   anxiété, médicament, sommeil, sportif, œil, sueurs, visage rouge, pâleur, frissons, maux de tête, oreille, vertiges, malaise), `NormScale`, `TermSlam`, `Stage`, kit (`Stamp`, `CheckChip`…).
+   anxiété, médicament, sommeil, sportif, œil, sueurs, visage rouge, pâleur, frissons, maux de tête, oreille, vertiges, malaise,
+   soif, urines, fatigue, tremblements, faim), `NormScale`, `TermSlam`, `Stage`, kit (`Stamp`, `CheckChip`…), `Pill` (mot = explication : TA = PA, mmHg, g/l) et
+   `Lead` (« parfois : », « le patient peut avoir… » avant une liste de signes) dans `episode.tsx`.
+   Signes cliniques : pastilles `CauseChip` en 2 colonnes (72 / 560, y 1240 / 1356) et la mascotte reste d'un côté
+   (cuts, pas de saut par-dessus) ; les poses en pied (`poses/…`) sont hautes : les placer bas et plus petites.
 4. Contrôle : `npm run check:mascot -- <épisode>` → `COMP=<Composition> OUT=out/qa SCALE=0.5 node scripts/qa/stills.mjs <frames…>`
    → `npm run sheet -- out/qa` (planches ffmpeg) → relecture → rendu → `npm run sheet -- out/<vidéo>.mp4` (1 image/s).
 

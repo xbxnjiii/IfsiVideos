@@ -141,3 +141,41 @@ export const FaintIcon: React.FC<IP> = (p) => (
 		<path d="M84 14 C84 14 92 24 92 29 A8 8 0 0 1 76 29 C76 24 84 14 84 14 Z" fill={alpha(LPI.sky, 0.9)} strokeWidth={4} />
 	</Ico>
 );
+/** soif : verre d'eau */
+export const ThirstIcon: React.FC<IP> = (p) => (
+	<Ico {...p}>
+		<path d="M26 16 H74 L66 88 H34 Z" />
+		<path d="M30 46 H70 L66 84 H34 Z" fill={alpha(LPI.sky, 0.9)} stroke="none" />
+		<path d="M26 16 H74 L66 88 H34 Z" />
+	</Ico>
+);
+/** urines abondantes : goutte + flèches */
+export const UrineIcon: React.FC<IP> = (p) => (
+	<Ico {...p}>
+		<path d="M40 20 C40 20 62 46 62 60 A22 22 0 0 1 18 60 C18 46 40 20 40 20 Z" fill={alpha(LPI.sky, 0.9)} />
+		<path d="M78 24 V62 M68 52 L78 64 L88 52 M78 76 V88" />
+	</Ico>
+);
+/** fatigue : pile presque vide */
+export const TiredIcon: React.FC<IP> = (p) => (
+	<Ico {...p}>
+		<rect x="14" y="30" width="64" height="40" rx="8" />
+		<path d="M86 42 V58" />
+		<rect x="22" y="38" width="14" height="24" rx="3" fill={alpha(LPI.pink, 0.9)} stroke="none" />
+	</Ico>
+);
+/** tremblements : main + traits qui vibrent */
+export const TremorIcon: React.FC<IP> = (p) => (
+	<Ico {...p}>
+		<path d="M38 88 V48 M38 52 V24 M50 50 V18 M62 52 V24 M74 56 V36 M38 60 C30 52 22 56 26 64 L38 82 M38 88 H70 C74 80 74 70 74 56" />
+		<path d="M12 30 L18 36 L12 42 M88 20 L82 26 L88 32" stroke={LPI.pink} strokeWidth={6} />
+	</Ico>
+);
+/** faim : assiette + couverts */
+export const HungerIcon: React.FC<IP> = (p) => (
+	<Ico {...p}>
+		<circle cx="52" cy="54" r="24" />
+		<circle cx="52" cy="54" r="12" fill={alpha(LPI.sky, 0.9)} />
+		<path d="M14 20 V40 C14 46 22 46 22 40 V20 M18 44 V88 M86 20 C78 26 78 44 86 50 V88" />
+	</Ico>
+);
