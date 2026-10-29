@@ -1,6 +1,6 @@
 {
  "voice": "voix.wav (tts_voix.py)",
- "duration": 81.004,
+ "duration": 83.524,
  "sections": [
   {
    "id": "intro",
@@ -25,27 +25,27 @@
   {
    "id": "vite",
    "start": 32.15,
-   "end": 43.585
+   "end": 44.946
   },
   {
    "id": "urgence",
-   "start": 44.507,
-   "end": 49.982
+   "start": 45.9,
+   "end": 52.448
   },
   {
    "id": "traitement",
-   "start": 50.913,
-   "end": 60.204
+   "start": 53.433,
+   "end": 62.724
   },
   {
    "id": "risques",
-   "start": 61.136,
-   "end": 67.363
+   "start": 63.656,
+   "end": 69.883
   },
   {
    "id": "outro",
-   "start": 68.286,
-   "end": 80.69
+   "start": 70.806,
+   "end": 83.21
   }
  ],
  "words": [
@@ -95,7 +95,7 @@
    "end": 2.641
   },
   {
-   "text": "AVC .",
+   "text": "AVC.",
    "start": 2.641,
    "end": 3.127
   },
@@ -190,7 +190,7 @@
    "end": 8.299
   },
   {
-   "text": "AVC ,",
+   "text": "AVC,",
    "start": 8.299,
    "end": 8.866
   },
@@ -215,7 +215,7 @@
    "end": 10.15
   },
   {
-   "text": "AVC ,",
+   "text": "AVC,",
    "start": 11.019,
    "end": 11.598
   },
@@ -542,747 +542,747 @@
   {
    "text": "Pour",
    "start": 32.15,
-   "end": 32.312
+   "end": 32.33
   },
   {
    "text": "le",
-   "start": 32.312,
-   "end": 32.37
+   "start": 32.33,
+   "end": 32.408
   },
   {
    "text": "reconnaître,",
-   "start": 32.37,
-   "end": 33.006
+   "start": 32.408,
+   "end": 33.129
   },
   {
    "text": "pense",
-   "start": 33.215,
-   "end": 33.481
+   "start": 33.374,
+   "end": 33.658
   },
   {
    "text": "VITE !",
-   "start": 33.481,
-   "end": 33.886
+   "start": 33.658,
+   "end": 34.109
   },
   {
    "text": "V",
-   "start": 34.198,
-   "end": 34.406
+   "start": 34.458,
+   "end": 34.677
   },
   {
    "text": "comme",
-   "start": 34.406,
-   "end": 34.591
+   "start": 34.677,
+   "end": 34.883
   },
   {
    "text": "visage",
-   "start": 34.591,
-   "end": 34.938
+   "start": 34.883,
+   "end": 35.27
   },
   {
    "text": "paralysé :",
-   "start": 34.938,
-   "end": 35.54
+   "start": 35.27,
+   "end": 35.94
   },
   {
    "text": "la",
-   "start": 35.864,
-   "end": 35.934
+   "start": 36.301,
+   "end": 36.391
   },
   {
    "text": "bouche",
-   "start": 35.934,
-   "end": 36.177
+   "start": 36.391,
+   "end": 36.662
   },
   {
    "text": "tombe",
-   "start": 36.177,
-   "end": 36.362
+   "start": 36.662,
+   "end": 36.868
   },
   {
    "text": "d'un",
-   "start": 36.362,
-   "end": 36.478
+   "start": 36.868,
+   "end": 36.997
   },
   {
    "text": "côté.",
-   "start": 36.478,
-   "end": 36.906
+   "start": 36.997,
+   "end": 37.487
   },
   {
    "text": "I",
-   "start": 37.227,
-   "end": 37.308
+   "start": 37.834,
+   "end": 37.963
   },
   {
    "text": "comme",
-   "start": 37.308,
-   "end": 37.482
+   "start": 37.963,
+   "end": 38.156
   },
   {
    "text": "inertie",
-   "start": 37.482,
-   "end": 37.818
+   "start": 38.156,
+   "end": 38.53
   },
   {
    "text": "d'un",
-   "start": 37.818,
-   "end": 37.945
+   "start": 38.53,
+   "end": 38.671
   },
   {
    "text": "membre :",
-   "start": 37.945,
-   "end": 38.281
+   "start": 38.671,
+   "end": 39.045
   },
   {
    "text": "un",
-   "start": 38.639,
-   "end": 38.709
+   "start": 39.457,
+   "end": 39.522
   },
   {
    "text": "bras",
-   "start": 38.709,
-   "end": 38.917
+   "start": 39.522,
+   "end": 39.754
   },
   {
    "text": "ou",
-   "start": 38.917,
-   "end": 39.01
+   "start": 39.754,
+   "end": 39.857
   },
   {
    "text": "une",
-   "start": 39.01,
-   "end": 39.079
+   "start": 39.857,
+   "end": 39.947
   },
   {
    "text": "jambe",
-   "start": 39.079,
-   "end": 39.368
+   "start": 39.947,
+   "end": 40.282
   },
   {
    "text": "ne",
-   "start": 39.369,
-   "end": 39.461
+   "start": 40.282,
+   "end": 40.385
   },
   {
    "text": "répond",
-   "start": 39.461,
-   "end": 39.716
+   "start": 40.385,
+   "end": 40.669
   },
   {
    "text": "plus.",
-   "start": 39.716,
-   "end": 40.017
+   "start": 40.669,
+   "end": 41.017
   },
   {
    "text": "T",
-   "start": 40.333,
-   "end": 40.483
+   "start": 41.364,
+   "end": 41.531
   },
   {
    "text": "comme",
-   "start": 40.483,
-   "end": 40.657
+   "start": 41.531,
+   "end": 41.712
   },
   {
    "text": "trouble",
-   "start": 40.657,
-   "end": 40.923
+   "start": 41.712,
+   "end": 42.021
   },
   {
    "text": "de",
-   "start": 40.923,
-   "end": 40.993
+   "start": 42.021,
+   "end": 42.098
   },
   {
    "text": "la",
-   "start": 40.993,
-   "end": 41.074
+   "start": 42.098,
+   "end": 42.189
   },
   {
    "text": "parole :",
-   "start": 41.074,
-   "end": 41.467
+   "start": 42.189,
+   "end": 42.614
   },
   {
    "text": "il",
-   "start": 41.826,
-   "end": 41.895
+   "start": 43.001,
+   "end": 43.078
   },
   {
    "text": "parle",
-   "start": 41.895,
-   "end": 42.127
+   "start": 43.078,
+   "end": 43.336
   },
   {
    "text": "mal,",
-   "start": 42.127,
-   "end": 42.405
+   "start": 43.336,
+   "end": 43.632
   },
   {
    "text": "ou",
-   "start": 42.706,
-   "end": 42.729
+   "start": 43.967,
+   "end": 43.993
   },
   {
    "text": "ne",
-   "start": 42.729,
-   "end": 42.81
+   "start": 43.993,
+   "end": 44.083
   },
   {
    "text": "trouve",
-   "start": 42.81,
-   "end": 43.041
+   "start": 44.083,
+   "end": 44.341
   },
   {
    "text": "plus",
-   "start": 43.041,
-   "end": 43.203
+   "start": 44.341,
+   "end": 44.521
   },
   {
    "text": "ses",
-   "start": 43.203,
-   "end": 43.342
+   "start": 44.521,
+   "end": 44.676
   },
   {
    "text": "mots.",
-   "start": 43.342,
-   "end": 43.585
+   "start": 44.676,
+   "end": 44.946
   },
   {
    "text": "Et",
-   "start": 44.507,
-   "end": 44.777
+   "start": 45.9,
+   "end": 46.042
   },
   {
-   "text": "E",
-   "start": 44.777,
-   "end": 44.912
+   "text": "la",
+   "start": 46.042,
+   "end": 46.145
+  },
+  {
+   "text": "lettre",
+   "start": 46.145,
+   "end": 46.441
+  },
+  {
+   "text": "E,",
+   "start": 46.441,
+   "end": 46.609
   },
   {
    "text": "comme",
-   "start": 44.912,
-   "end": 45.051
+   "start": 46.905,
+   "end": 47.06
   },
   {
    "text": "en",
-   "start": 45.051,
-   "end": 45.097
+   "start": 47.06,
+   "end": 47.098
   },
   {
    "text": "urgence :",
-   "start": 45.097,
-   "end": 45.664
+   "start": 47.098,
+   "end": 47.717
   },
   {
    "text": "on",
-   "start": 45.942,
-   "end": 45.965
+   "start": 48.001,
+   "end": 48.026
   },
   {
    "text": "appelle",
-   "start": 45.965,
-   "end": 46.232
+   "start": 48.026,
+   "end": 48.336
   },
   {
    "text": "le",
-   "start": 46.232,
-   "end": 46.336
+   "start": 48.336,
+   "end": 48.452
   },
   {
    "text": "15 !",
-   "start": 46.336,
-   "end": 46.81
+   "start": 48.452,
+   "end": 48.98
   },
   {
    "text": "On",
-   "start": 47.123,
-   "end": 47.25
+   "start": 49.329,
+   "end": 49.432
   },
   {
    "text": "note",
-   "start": 47.25,
-   "end": 47.412
+   "start": 49.432,
+   "end": 49.613
   },
   {
    "text": "aussi",
-   "start": 47.412,
-   "end": 47.62
+   "start": 49.613,
+   "end": 49.845
   },
   {
    "text": "l'heure",
-   "start": 47.62,
-   "end": 47.759
+   "start": 49.845,
+   "end": 49.999
   },
   {
    "text": "du",
-   "start": 47.759,
-   "end": 47.852
+   "start": 49.999,
+   "end": 50.103
   },
   {
    "text": "début",
-   "start": 47.852,
-   "end": 48.049
+   "start": 50.103,
+   "end": 50.322
   },
   {
    "text": "des",
-   "start": 48.049,
-   "end": 48.164
+   "start": 50.322,
+   "end": 50.45
   },
   {
    "text": "signes,",
-   "start": 48.164,
-   "end": 48.581
+   "start": 50.451,
+   "end": 50.914
   },
   {
    "text": "car",
-   "start": 48.87,
-   "end": 49.067
+   "start": 51.249,
+   "end": 51.456
   },
   {
    "text": "chaque",
-   "start": 49.067,
-   "end": 49.264
+   "start": 51.456,
+   "end": 51.675
   },
   {
    "text": "minute",
-   "start": 49.264,
-   "end": 49.542
+   "start": 51.675,
+   "end": 51.984
   },
   {
    "text": "compte.",
-   "start": 49.542,
-   "end": 49.982
+   "start": 51.984,
+   "end": 52.448
   },
   {
    "text": "À",
-   "start": 50.913,
-   "end": 51.029
+   "start": 53.433,
+   "end": 53.549
   },
   {
    "text": "l'hôpital,",
-   "start": 51.029,
-   "end": 51.619
+   "start": 53.549,
+   "end": 54.139
   },
   {
    "text": "un",
-   "start": 51.885,
-   "end": 51.989
+   "start": 54.405,
+   "end": 54.509
   },
   {
    "text": "scanner",
-   "start": 51.989,
-   "end": 52.395
+   "start": 54.509,
+   "end": 54.915
   },
   {
    "text": "ou",
-   "start": 52.395,
-   "end": 52.464
+   "start": 54.915,
+   "end": 54.984
   },
   {
    "text": "une",
-   "start": 52.464,
-   "end": 52.591
+   "start": 54.984,
+   "end": 55.111
   },
   {
    "text": "IRM",
-   "start": 52.591,
-   "end": 53.043
+   "start": 55.111,
+   "end": 55.563
   },
   {
    "text": "montre",
-   "start": 53.043,
-   "end": 53.309
+   "start": 55.563,
+   "end": 55.829
   },
   {
    "text": "le",
-   "start": 53.309,
-   "end": 53.39
+   "start": 55.829,
+   "end": 55.91
   },
   {
    "text": "type",
-   "start": 53.39,
-   "end": 53.61
+   "start": 55.91,
+   "end": 56.13
   },
   {
-   "text": "d'{AVC|A",
-   "start": 53.61,
-   "end": 53.737
-  },
-  {
-   "text": "V",
-   "start": 53.737,
-   "end": 53.876
-  },
-  {
-   "text": "C}.",
-   "start": 53.876,
-   "end": 54.2
+   "text": "d'AVC.",
+   "start": 56.13,
+   "end": 56.72
   },
   {
    "text": "Si",
-   "start": 54.51,
-   "end": 54.683
+   "start": 57.03,
+   "end": 57.203
   },
   {
    "text": "c'est",
-   "start": 54.683,
-   "end": 54.788
+   "start": 57.203,
+   "end": 57.308
   },
   {
    "text": "un",
-   "start": 54.788,
-   "end": 54.857
+   "start": 57.308,
+   "end": 57.377
   },
   {
    "text": "caillot,",
-   "start": 54.857,
-   "end": 55.285
+   "start": 57.377,
+   "end": 57.805
   },
   {
    "text": "on",
-   "start": 55.54,
-   "end": 55.575
+   "start": 58.06,
+   "end": 58.095
   },
   {
    "text": "peut",
-   "start": 55.575,
-   "end": 55.679
+   "start": 58.095,
+   "end": 58.199
   },
   {
    "text": "le",
-   "start": 55.679,
-   "end": 55.76
+   "start": 58.199,
+   "end": 58.28
   },
   {
    "text": "dissoudre",
-   "start": 55.76,
-   "end": 56.142
+   "start": 58.28,
+   "end": 58.662
   },
   {
    "text": "avec",
-   "start": 56.142,
-   "end": 56.339
+   "start": 58.662,
+   "end": 58.859
   },
   {
    "text": "un",
-   "start": 56.339,
-   "end": 56.373
+   "start": 58.859,
+   "end": 58.893
   },
   {
    "text": "médicament,",
-   "start": 56.373,
-   "end": 56.906
+   "start": 58.893,
+   "end": 59.426
   },
   {
    "text": "c'est",
-   "start": 57.288,
-   "end": 57.369
+   "start": 59.808,
+   "end": 59.889
   },
   {
    "text": "la",
-   "start": 57.369,
-   "end": 57.438
+   "start": 59.889,
+   "end": 59.958
   },
   {
    "text": "thrombolyse,",
-   "start": 57.438,
-   "end": 58.028
+   "start": 59.958,
+   "end": 60.548
   },
   {
    "text": "ou",
-   "start": 58.318,
-   "end": 58.376
+   "start": 60.838,
+   "end": 60.896
   },
   {
    "text": "aller",
-   "start": 58.376,
-   "end": 58.526
+   "start": 60.896,
+   "end": 61.046
   },
   {
    "text": "le",
-   "start": 58.526,
-   "end": 58.619
+   "start": 61.046,
+   "end": 61.139
   },
   {
    "text": "retirer,",
-   "start": 58.619,
-   "end": 59.105
+   "start": 61.139,
+   "end": 61.625
   },
   {
    "text": "c'est",
-   "start": 59.371,
-   "end": 59.464
+   "start": 61.891,
+   "end": 61.984
   },
   {
    "text": "la",
-   "start": 59.464,
-   "end": 59.533
+   "start": 61.984,
+   "end": 62.053
   },
   {
    "text": "thrombectomie.",
-   "start": 59.533,
-   "end": 60.204
+   "start": 62.053,
+   "end": 62.724
   },
   {
    "text": "Ce",
-   "start": 61.136,
-   "end": 61.298
+   "start": 63.656,
+   "end": 63.818
   },
   {
    "text": "qui",
-   "start": 61.298,
-   "end": 61.425
+   "start": 63.818,
+   "end": 63.945
   },
   {
    "text": "augmente",
-   "start": 61.425,
-   "end": 61.703
+   "start": 63.945,
+   "end": 64.223
   },
   {
    "text": "le",
-   "start": 61.703,
-   "end": 61.807
+   "start": 64.223,
+   "end": 64.327
   },
   {
    "text": "risque :",
-   "start": 61.807,
-   "end": 62.154
+   "start": 64.327,
+   "end": 64.674
   },
   {
    "text": "l'hypertension,",
-   "start": 62.398,
-   "end": 63.115
+   "start": 64.918,
+   "end": 65.635
   },
   {
    "text": "le",
-   "start": 63.393,
-   "end": 63.451
+   "start": 65.913,
+   "end": 65.971
   },
   {
    "text": "tabac,",
-   "start": 63.451,
-   "end": 63.833
+   "start": 65.971,
+   "end": 66.353
   },
   {
    "text": "le",
-   "start": 64.076,
-   "end": 64.134
+   "start": 66.596,
+   "end": 66.654
   },
   {
    "text": "diabète,",
-   "start": 64.134,
-   "end": 64.608
+   "start": 66.654,
+   "end": 67.128
   },
   {
    "text": "le",
-   "start": 64.863,
-   "end": 64.909
+   "start": 67.383,
+   "end": 67.429
   },
   {
    "text": "cholestérol,",
-   "start": 64.909,
-   "end": 65.546
+   "start": 67.429,
+   "end": 68.066
   },
   {
    "text": "et",
-   "start": 65.916,
-   "end": 65.939
+   "start": 68.436,
+   "end": 68.459
   },
   {
    "text": "certains",
-   "start": 65.939,
-   "end": 66.217
+   "start": 68.459,
+   "end": 68.737
   },
   {
    "text": "troubles",
-   "start": 66.217,
-   "end": 66.506
+   "start": 68.737,
+   "end": 69.026
   },
   {
    "text": "du",
-   "start": 66.506,
-   "end": 66.611
+   "start": 69.026,
+   "end": 69.131
   },
   {
    "text": "rythme",
-   "start": 66.611,
-   "end": 66.854
+   "start": 69.131,
+   "end": 69.374
   },
   {
    "text": "du",
-   "start": 66.854,
-   "end": 66.958
+   "start": 69.374,
+   "end": 69.478
   },
   {
    "text": "cœur.",
-   "start": 66.958,
-   "end": 67.363
+   "start": 69.478,
+   "end": 69.883
   },
   {
    "text": "Petit",
-   "start": 68.286,
-   "end": 68.575
+   "start": 70.806,
+   "end": 71.095
   },
   {
    "text": "récap !",
-   "start": 68.575,
-   "end": 69.108
+   "start": 71.095,
+   "end": 71.628
   },
   {
    "text": "Un",
-   "start": 69.417,
-   "end": 69.555
+   "start": 71.937,
+   "end": 72.075
   },
   {
-   "text": "AVC ,",
-   "start": 69.555,
-   "end": 70.111
+   "text": "AVC,",
+   "start": 72.075,
+   "end": 72.631
   },
   {
    "text": "c'est",
-   "start": 70.377,
-   "end": 70.516
+   "start": 72.897,
+   "end": 73.036
   },
   {
    "text": "une",
-   "start": 70.516,
-   "end": 70.701
+   "start": 73.036,
+   "end": 73.221
   },
   {
    "text": "zone",
-   "start": 70.701,
-   "end": 70.886
+   "start": 73.221,
+   "end": 73.406
   },
   {
    "text": "du",
-   "start": 70.886,
-   "end": 70.956
+   "start": 73.406,
+   "end": 73.476
   },
   {
    "text": "cerveau",
-   "start": 70.956,
-   "end": 71.315
+   "start": 73.476,
+   "end": 73.835
   },
   {
    "text": "privée",
-   "start": 71.315,
-   "end": 71.558
+   "start": 73.835,
+   "end": 74.078
   },
   {
    "text": "de",
-   "start": 71.558,
-   "end": 71.662
+   "start": 74.078,
+   "end": 74.182
   },
   {
    "text": "sang.",
-   "start": 71.662,
-   "end": 71.963
+   "start": 74.182,
+   "end": 74.483
   },
   {
    "text": "Ischémique :",
-   "start": 72.291,
-   "end": 72.974
+   "start": 74.811,
+   "end": 75.493
   },
   {
    "text": "un",
-   "start": 73.298,
-   "end": 73.344
+   "start": 75.818,
+   "end": 75.864
   },
   {
    "text": "caillot",
-   "start": 73.344,
-   "end": 73.645
+   "start": 75.864,
+   "end": 76.165
   },
   {
    "text": "bouche",
-   "start": 73.645,
-   "end": 73.865
+   "start": 76.165,
+   "end": 76.385
   },
   {
    "text": "l'artère.",
-   "start": 73.865,
-   "end": 74.443
+   "start": 76.385,
+   "end": 76.963
   },
   {
    "text": "Hémorragique :",
-   "start": 74.754,
-   "end": 75.472
+   "start": 77.274,
+   "end": 77.992
   },
   {
    "text": "une",
-   "start": 75.773,
-   "end": 75.842
+   "start": 78.293,
+   "end": 78.362
   },
   {
    "text": "artère",
-   "start": 75.842,
-   "end": 76.166
+   "start": 78.362,
+   "end": 78.686
   },
   {
    "text": "saigne.",
-   "start": 76.166,
-   "end": 76.617
+   "start": 78.686,
+   "end": 79.137
   },
   {
    "text": "Pour",
-   "start": 76.928,
-   "end": 77.067
+   "start": 79.448,
+   "end": 79.587
   },
   {
    "text": "le",
-   "start": 77.067,
-   "end": 77.136
+   "start": 79.587,
+   "end": 79.656
   },
   {
    "text": "reconnaître :",
-   "start": 77.136,
-   "end": 77.738
+   "start": 79.656,
+   "end": 80.258
   },
   {
    "text": "VITE.",
-   "start": 78.074,
-   "end": 78.514
+   "start": 80.594,
+   "end": 81.034
   },
   {
    "text": "Et",
-   "start": 78.861,
-   "end": 78.954
+   "start": 81.381,
+   "end": 81.474
   },
   {
    "text": "au",
-   "start": 78.954,
-   "end": 79.0
+   "start": 81.474,
+   "end": 81.52
   },
   {
    "text": "moindre",
-   "start": 79.0,
-   "end": 79.301
+   "start": 81.52,
+   "end": 81.821
   },
   {
    "text": "doute,",
-   "start": 79.301,
-   "end": 79.625
+   "start": 81.821,
+   "end": 82.145
   },
   {
    "text": "on",
-   "start": 79.845,
-   "end": 79.868
+   "start": 82.365,
+   "end": 82.388
   },
   {
    "text": "appelle",
-   "start": 79.868,
-   "end": 80.134
+   "start": 82.388,
+   "end": 82.654
   },
   {
    "text": "le",
-   "start": 80.134,
-   "end": 80.238
+   "start": 82.654,
+   "end": 82.758
   },
   {
    "text": "15 !",
-   "start": 80.238,
-   "end": 80.69
+   "start": 82.758,
+   "end": 83.21
   }
  ]
 }

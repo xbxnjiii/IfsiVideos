@@ -464,7 +464,7 @@ const LETTERS = [
 const ViteTiles: React.FC<{at: number; active: number; done: number; y?: number}> = ({at: t0, active, done, y = 410}) => {
 	const frame = useCurrentFrame();
 	return (
-		<div style={{position: 'absolute', left: 72, top: y, display: 'flex', gap: 18}}>
+		<div style={{position: 'absolute', left: 72, top: y, display: 'flex', gap: 14}}>
 			{LETTERS.map((L, i) => {
 				const p = usePopSafe(frame, t0 + i * 3);
 				const on = i === active;
@@ -474,8 +474,8 @@ const ViteTiles: React.FC<{at: number; active: number; done: number; y?: number}
 						key={L.l}
 						style={{
 							position: 'relative',
-							width: 120,
-							height: 120,
+							width: 112,
+							height: 112,
 							borderRadius: 30,
 							background: on ? LPI.pink : ok ? LPI.blue : LPI.paper,
 							border: `6px solid ${N}`,
@@ -486,7 +486,7 @@ const ViteTiles: React.FC<{at: number; active: number; done: number; y?: number}
 							justifyContent: 'center',
 							fontFamily: FONT.title,
 							fontWeight: 900,
-							fontSize: 84,
+							fontSize: 78,
 							color: ok ? LPI.paper : N,
 							transform: `scale(${p * (on ? 1.12 + 0.03 * Math.sin(frame / 4) : 1)}) rotate(${on ? -4 : 0}deg)`,
 						}}
@@ -500,6 +500,59 @@ const ViteTiles: React.FC<{at: number; active: number; done: number; y?: number}
 					</div>
 				);
 			})}
+		</div>
+	);
+};
+
+/** Méthode FAST (vue en cours, en anglais) : même chose que VITE, lettre à lettre — à l'écran seulement. */
+const FAST = [
+	{l: 'F', w: 'Face'},
+	{l: 'A', w: 'Arm'},
+	{l: 'S', w: 'Speech'},
+	{l: 'T', w: 'Time'},
+];
+const FastRow: React.FC<{at: number; active: number; done: number; y?: number}> = ({at: t0, active, done, y = 410}) => {
+	const frame = useCurrentFrame();
+	if (frame < t0) return null;
+	const lab = usePopSafe(frame, t0);
+	return (
+		<div style={{position: 'absolute', left: 580, top: y - 34}}>
+			<div style={{display: 'flex', alignItems: 'center', gap: 8, fontFamily: FONT.body, fontWeight: 800, fontSize: 22, letterSpacing: '0.08em', textTransform: 'uppercase', color: alpha(N, 0.6), marginLeft: 52, opacity: Math.min(1, lab * 2)}}>
+				en cours : méthode <span style={{color: LPI.blue}}>FAST</span>
+			</div>
+			<div style={{display: 'flex', alignItems: 'flex-start', gap: 8, marginTop: 6}}>
+				<div style={{width: 40, height: 76, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FONT.title, fontWeight: 900, fontSize: 56, color: LPI.blue, opacity: Math.min(1, lab * 2)}}>=</div>
+				{FAST.map((F, i) => {
+					const p = usePopSafe(frame, t0 + 3 + i * 3);
+					const on = i === active;
+					const ok = i < done;
+					return (
+						<div key={F.l} style={{display: 'flex', flexDirection: 'column', alignItems: 'center', width: 76, transform: `scale(${p})`}}>
+							<div
+								style={{
+									width: 70,
+									height: 70,
+									borderRadius: 18,
+									boxSizing: 'border-box',
+									background: on ? LPI.pink : ok ? LPI.sky : LPI.paper,
+									border: `5px solid ${on ? N : alpha(N, 0.55)}`,
+									display: 'flex',
+									alignItems: 'center',
+									justifyContent: 'center',
+									fontFamily: FONT.title,
+									fontWeight: 900,
+									fontSize: 46,
+									color: N,
+									transform: `scale(${on ? 1.08 : 1})`,
+								}}
+							>
+								{F.l}
+							</div>
+							<div style={{marginTop: 4, fontFamily: FONT.body, fontWeight: 800, fontSize: 21, color: on ? LPI.blue : alpha(N, 0.6)}}>{F.w}</div>
+						</div>
+					);
+				})}
+			</div>
 		</div>
 	);
 };
@@ -579,6 +632,7 @@ export const Vite: React.FC = () => {
 			<Camera punches={[VITE + 1, V + 1, TOMBE + 1, I + 1, REP + 1, T + 1, PAROLE + 1, TROUVE + 1]} shakes={[VITE + 2, REP + 2]}>
 				<Head kicker="Reconnaître" kAt={POUR} title="Pense *VITE* !" tAt={PENSE - 2} />
 				<ViteTiles at={VITE - 2} active={idx} done={Math.max(0, idx)} />
+				<FastRow at={VITE + 12} active={idx} done={Math.max(0, idx)} />
 				<Stage y={560} h={600} at={POUR + 4} bumps={[TOMBE, REP, PAROLE]}>
 					{/* « visage » : on zoome sur la bouche qui tombe, puis on revient au patient entier */}
 					<div style={{position: 'absolute', left: 0, top: 0, width: 936, height: 600, overflow: 'hidden', borderRadius: 50}}>
@@ -653,6 +707,7 @@ export const Urgence: React.FC = () => {
 			<Camera punches={[E + 1, Q15 + 1, HEURE + 1, COMPTE + 1]} shakes={[Q15 + 2]}>
 				<Head kicker="E comme en urgence" kAt={ET} title="Appelle le *15* !" tAt={APP - 2} />
 				<ViteTiles at={ET - 6} active={frame >= E ? 3 : -1} done={3} />
+				<FastRow at={ET - 4} active={frame >= E ? 3 : -1} done={3} />
 				<Stage y={560} h={540} at={ET + 2} bumps={[Q15, HEURE]}>
 					<div style={{position: 'absolute', left: 70, top: 40, opacity: Math.min(1, phone * 1.5), transform: `translateY(${(1 - phone) * 80}px) rotate(${-6 + 6 * phone}deg)`}}>
 						<Phone digits={digits} press={press} ring={ring} size={250} />
@@ -842,7 +897,7 @@ export const Outro: React.FC = () => (
 			[at('outro', 'privée'), 'empty', 'Privée de sang', 'une zone du cerveau'],
 			[at('outro', 'ischémique'), 'down', 'Ischémique', "un caillot bouche l'artère"],
 			[at('outro', 'hémorragique'), 'alert', 'Hémorragique', 'une artère saigne'],
-			[at('outro', 'vite'), 'check', 'VITE', 'visage · inertie · parole · urgence'],
+			[at('outro', 'vite'), 'check', 'VITE = FAST', 'visage · bras · parole · urgence'],
 			[at('outro', '15'), 'device', 'Le 15', 'au moindre doute'],
 		]}
 	/>

@@ -54,7 +54,9 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   + `src/videos/<épisode>/voice.json` (timing mot à mot donné par la synthèse : pas de Whisper).
   Dépendance : `pip install --break-system-packages edge-tts` (quelques secondes, à refaire par session).
 - Script : une partie par scène (`id` = id de scène), `{affiché|prononcé}` pour les sigles (`{bpm|B P M}`),
-  `"pause": s` pour un silence voulu. Vérifier les mots clés dans voice.json (les nombres sont découpés à part).
+  `"pause": s` pour un silence voulu, `"rate": "-3%"` pour ralentir une partie dense (≈ 10 % plus lent que +8 %,
+  ex. la partie VITE de l'AVC). Lettre isolée : écrire « la lettre E » (un « E » seul est lu « è », entendu « H ») ;
+  en cas de doute, transcrire l'extrait avec faster-whisper (`pip install --break-system-packages faster-whisper`). Vérifier les mots clés dans voice.json (les nombres sont découpés à part).
 - Une voix enregistrée (ElevenLabs, studio) : `scripts/voice/align_voice.py` (Whisper, plus lent).
 
 ## Format « une vidéo par constante »
@@ -86,6 +88,8 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   zone privée de sang, caillot, hémorragie ; gros plan d'artère `ArteryZoom` : caillot qui bouche, rupture,
   thrombolyse, thrombectomie), `devices.tsx` (téléphone qui compose le 15, horloge murale, écran d'imagerie),
   `Patient` : `droop` (visage paralysé), `armL` / `armR` (bras levés, l'un retombe).
+- Équivalent vu en cours, **à l'écran seulement** (pas à la voix) : « VITE = FAST » (Face · Arm · Speech · Time),
+  rangée `FastRow` qui s'allume lettre par lettre avec VITE.
 
 ## Recette express (nouvelle vidéo de constante)
 

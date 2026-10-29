@@ -1,11 +1,41 @@
 [
-	{"id": "intro", "text": "Toutes les 4 minutes, en France, quelqu'un fait un {AVC|A V C}. Et chaque minute sans soins, son cerveau perd près de 2 millions de neurones. Alors, c'est quoi, un {AVC|A V C}, et comment le reconnaître ?", "pause": 0.45},
-	{"id": "def", "text": "{AVC|A V C}, ça veut dire accident vasculaire cérébral : un accident des vaisseaux sanguins du cerveau. Une zone du cerveau ne reçoit plus de sang, donc plus d'oxygène : ses neurones meurent."},
-	{"id": "isch", "text": "Dans 8 cas sur 10, c'est un {AVC|A V C} ischémique : un caillot bouche une artère, et le sang ne passe plus."},
-	{"id": "hemo", "text": "Sinon, c'est un {AVC|A V C} hémorragique : une artère se rompt, et le sang s'échappe dans le cerveau."},
-	{"id": "vite", "text": "Pour le reconnaître, pense VITE ! V comme visage paralysé : la bouche tombe d'un côté. I comme inertie d'un membre : un bras ou une jambe ne répond plus. T comme trouble de la parole : il parle mal, ou ne trouve plus ses mots."},
-	{"id": "urgence", "text": "Et E comme en urgence : on appelle le 15 ! On note aussi l'heure du début des signes, car chaque minute compte."},
-	{"id": "traitement", "text": "À l'hôpital, un scanner ou une {IRM|I R M} montre le type d'{AVC|A V C}. Si c'est un caillot, on peut le dissoudre avec un médicament, c'est la thrombolyse, ou aller le retirer, c'est la thrombectomie."},
-	{"id": "risques", "text": "Ce qui augmente le risque : l'hypertension, le tabac, le diabète, le cholestérol, et certains troubles du rythme du cœur."},
-	{"id": "outro", "text": "Petit récap ! Un {AVC|A V C}, c'est une zone du cerveau privée de sang. Ischémique : un caillot bouche l'artère. Hémorragique : une artère saigne. Pour le reconnaître : VITE. Et au moindre doute, on appelle le 15 !"}
+	{
+		"id": "intro",
+		"text": "Toutes les 4 minutes, en France, quelqu'un fait un {AVC|A V C}. Et chaque minute sans soins, son cerveau perd près de 2 millions de neurones. Alors, c'est quoi, un {AVC|A V C}, et comment le reconnaître ?",
+		"pause": 0.45
+	},
+	{
+		"id": "def",
+		"text": "{AVC|A V C}, ça veut dire accident vasculaire cérébral : un accident des vaisseaux sanguins du cerveau. Une zone du cerveau ne reçoit plus de sang, donc plus d'oxygène : ses neurones meurent."
+	},
+	{
+		"id": "isch",
+		"text": "Dans 8 cas sur 10, c'est un {AVC|A V C} ischémique : un caillot bouche une artère, et le sang ne passe plus."
+	},
+	{
+		"id": "hemo",
+		"text": "Sinon, c'est un {AVC|A V C} hémorragique : une artère se rompt, et le sang s'échappe dans le cerveau."
+	},
+	{
+		"id": "vite",
+		"text": "Pour le reconnaître, pense VITE ! V comme visage paralysé : la bouche tombe d'un côté. I comme inertie d'un membre : un bras ou une jambe ne répond plus. T comme trouble de la parole : il parle mal, ou ne trouve plus ses mots.",
+		"rate": "-3%"
+	},
+	{
+		"id": "urgence",
+		"text": "Et la lettre E, comme en urgence : on appelle le 15 ! On note aussi l'heure du début des signes, car chaque minute compte.",
+		"rate": "-3%"
+	},
+	{
+		"id": "traitement",
+		"text": "À l'hôpital, un scanner ou une {IRM|I R M} montre le type d'{AVC|A V C}. Si c'est un caillot, on peut le dissoudre avec un médicament, c'est la thrombolyse, ou aller le retirer, c'est la thrombectomie."
+	},
+	{
+		"id": "risques",
+		"text": "Ce qui augmente le risque : l'hypertension, le tabac, le diabète, le cholestérol, et certains troubles du rythme du cœur."
+	},
+	{
+		"id": "outro",
+		"text": "Petit récap ! Un {AVC|A V C}, c'est une zone du cerveau privée de sang. Ischémique : un caillot bouche l'artère. Hémorragique : une artère saigne. Pour le reconnaître : VITE. Et au moindre doute, on appelle le 15 !"
+	}
 ]

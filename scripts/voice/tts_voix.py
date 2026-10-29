@@ -7,8 +7,10 @@ Sorties : public/voix/<episode>/voix.wav (48 kHz, -15 LUFS) et src/videos/<episo
 (même format qu'align_voice.py : sections + mots). Le timing vient directement de la synthèse
 (événements WordBoundary) : pas de Whisper, pas d'erreur sur les nombres.
 
-Le script JSON liste les parties [{"id": "intro", "text": "...", "pause": 0.55?}, ...] ; syntaxe
-{affiché|prononcé} acceptée (ex. {bpm|B P M}) ; `pause` = silence après la partie (défaut 0,55 s).
+Le script JSON liste les parties [{"id": "intro", "text": "...", "pause": 0.55?, "rate": "-3%"?}, ...] ; syntaxe
+{affiché|prononcé} acceptée (ex. {bpm|B P M}) ; `pause` = silence après la partie (défaut 0,55 s) ;
+`rate` = débit de cette partie (défaut +8 % ; « -3% » ≈ 10 % plus lent, pour une partie dense).
+Lettre isolée : « la lettre E » (un « E » seul est lu « è » et s'entend « H »).
 Dépendances : ffmpeg, `pip install --break-system-packages edge-tts` (quelques secondes).
 Pour une voix enregistrée (ElevenLabs, studio) : scripts/voice/align_voice.py.
 """
@@ -60,13 +62,13 @@ def script_tokens(text):
     return toks
 
 
-async def synth(text, mp3):
+async def synth(text, mp3, rate=RATE):
     """Synthèse + frontières de mots [(début s, fin s, texte)] ; nouvel essai si le service ne répond pas."""
     for k in range(4):
         try:
             words = []
             with open(mp3, "wb") as f:
-                async for c in edge_tts.Communicate(text, VOICE, rate=RATE, boundary="WordBoundary").stream():
+                async for c in edge_tts.Communicate(text, VOICE, rate=rate, boundary="WordBoundary").stream():
                     if c["type"] == "audio":
                         f.write(c["data"])
                     elif c["type"] == "WordBoundary":
@@ -126,7 +128,7 @@ def main():
         for a, b in SPOKEN.items():
             spoken = spoken.replace(a, b)
         mp3, wav = f"{tmp}/p{k}.mp3", f"{tmp}/p{k}.wav"
-        heard = split_groups(asyncio.run(synth(spoken, mp3)))
+        heard = split_groups(asyncio.run(synth(spoken, mp3, p.get("rate", RATE))))
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", mp3, "-ar", str(SR), "-ac", "1", "-c:a", "pcm_s16le", wav], check=True)
         with wave.open(wav) as w:
             data = w.readframes(w.getnframes())
