@@ -714,7 +714,6 @@ export const Outro: React.FC = () => (
 		title="Fréquence *cardiaque*"
 		kAt={at('outro', 'récap') - 4}
 		done={at('outro', 'pouls', 2) + 10}
-		stamp="Pro du pouls !"
 		rows={[
 			[at('outro', 'battements'), 'wave', 'bpm', 'battements par minute'],
 			[at('outro', 'radial'), 'device', 'Pouls radial', '2 doigts · 1 minute'],

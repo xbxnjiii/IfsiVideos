@@ -27,7 +27,7 @@ Voix de la marque (`scripts/voice/tts_voix.py`, texte exact : [voix/04-frequence
 | 0:28 | Tachycardie | cœur qui s'emballe, 72 → 128 bpm, socle rose · terme **Tachycardie ≥ 100 bpm** · causes : effort, fièvre, stress, douleur | douleur thoracique · traverse en courant · essoufflée · fièvre · stressée · douleur |
 | 0:35 | Bradycardie | cœur lent, 72 → 48 bpm, socle bleu, « ralenti… » · **Bradycardie < 60 bpm** · un sportif · le sommeil · tampon « peut être normal ✓ » | fatiguée (saut au ralenti) · court joyeusement · dort · OK |
 | 0:43 | Rythme et force | « 72 » barré d'un trait droit : pas que le chiffre · ECG irrégulier → **Arythmie** · ondes « bien frappé » / « filant » → **Pouls filant** (faible et rapide) | attention · petits sauts irréguliers · montre l'ECG · inquiète · malaise |
-| 0:50 | Récap rapide | « Petit récap » : fiche qui se construit — bpm = battements par minute · pouls radial, 2 doigts, 1 minute · 60 – 100 bpm normale (adulte, repos) · tachycardie ≥ 100 · bradycardie < 60 · rythme + force (arythmie, pouls filant) · tampon « Pro du pouls ! » | récapitule · schéma du cœur · deux doigts · valide · douleur thoracique · fatiguée · ECG · bravo + confettis → repart en courant |
+| 0:50 | Récap rapide | « Petit récap » : fiche qui se construit — bpm = battements par minute · pouls radial, 2 doigts, 1 minute · 60 – 100 bpm normale (adulte, repos) · tachycardie ≥ 100 · bradycardie < 60 · rythme + force (arythmie, pouls filant) · confettis (pas de tampon) | récapitule · schéma du cœur · deux doigts · valide · douleur thoracique · fatiguée · ECG · bravo + confettis → repart en courant |
 | 1:07 | Fin | logo | — |
 
 Transitions (jamais deux fois la même d'affilée) : plongée dans le cœur · panoramique gauche · rideau tiré
