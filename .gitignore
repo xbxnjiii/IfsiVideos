@@ -5,3 +5,4 @@ out/
 labs/*/snapshots/
 labs/*/renders/
 labs/*/.hyperframes/
+__pycache__/
