@@ -50,8 +50,9 @@ def norm(w):
 def script_tokens(text):
     """Mots affichés du script (ponctuation isolée recollée au mot précédent)."""
     toks = []
-    for m in re.finditer(r"\{([^|}]*)\|([^}]*)\}|(\S+)", text):
-        disp = m.group(1) if m.group(1) is not None else m.group(3)
+    for m in re.finditer(r"(\S*?)\{([^|}]*)\|([^}]*)\}(\S*)|(\S+)", text):
+        # {affiché|prononcé}, éventuellement collé à une élision ou une ponctuation (« d'{AVC|A V C}. »)
+        disp = m.group(1) + m.group(2) + m.group(4) if m.group(2) is not None else m.group(5)
         if toks and not norm(disp):
             toks[-1] += " " + disp
         else:

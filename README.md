@@ -20,6 +20,7 @@ pas de logiciel de montage, pas de banque d'images.
 | 07 | La tension artérielle (une vidéo par constante, récap rapide) | `Tension-Arterielle` | [voix/07-tension-arterielle.script.json](voix/07-tension-arterielle.script.json) | [storyboard](docs/lpi/storyboard-tension-arterielle.md) |
 | 08 | La glycémie (une vidéo par constante, récap rapide) | `Glycemie` | [voix/08-glycemie.script.json](voix/08-glycemie.script.json) | [storyboard](docs/lpi/storyboard-glycemie.md) |
 | 09 | La diurèse (une vidéo par constante, récap rapide) | `Diurese` | [voix/09-diurese.script.json](voix/09-diurese.script.json) | [storyboard](docs/lpi/storyboard-diurese.md) |
+| 10 | C'est quoi un AVC (pathologie : accroche-choc, VITE) | `AVC` | [voix/10-avc.script.json](voix/10-avc.script.json) | [storyboard](docs/lpi/storyboard-avc.md) |
 
 ## Utilisation
 
@@ -34,6 +35,7 @@ npm run render:temp             # -> out/06-temperature.mp4
 npm run render:ta               # -> out/07-tension-arterielle.mp4
 npm run render:gly              # -> out/08-glycemie.mp4
 npm run render:diu              # -> out/09-diurese.mp4
+npm run render:avc              # -> out/10-avc.mp4
 npm run voice -- voix/<script>.json <épisode>   # voix + timing mot à mot
 npm run sheet -- out/qa          # planches contact (ffmpeg)
 npm run check:mascot -- constantes   # vérifie le jeu de la mascotte d'une vidéo
@@ -63,6 +65,8 @@ src/
     pressure.tsx              normes de pression artérielle, manomètre, lecture systolique / diastolique
     glyco.tsx                 normes de glycémie, doigt + autopiqueur, lecteur de glycémie, sucres, cellule
     urine.tsx                 normes de diurèse, bocal gradué, horloge 24 h, appareil urinaire (reins → vessie)
+    brain.tsx                 cerveau (artères, neurones, ischémie, hémorragie) + gros plan d'artère (caillot, traitements)
+    devices.tsx               téléphone (le 15), horloge murale, écran d'imagerie
     patient.tsx               corps humain (patient de face) : expressions, cœur, artères, brassard, signes
     body.tsx, icons.tsx       poignet + doigts ; petites icônes (causes, situations)
     MascotActor.tsx           mascotte actrice : sauts, course, expressions au mot près, bustes libres

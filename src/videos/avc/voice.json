@@ -1,0 +1,1288 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 81.004,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.048,
+   "end": 10.15
+  },
+  {
+   "id": "def",
+   "start": 11.019,
+   "end": 19.781
+  },
+  {
+   "id": "isch",
+   "start": 20.714,
+   "end": 25.656
+  },
+  {
+   "id": "hemo",
+   "start": 26.584,
+   "end": 31.237
+  },
+  {
+   "id": "vite",
+   "start": 32.15,
+   "end": 43.585
+  },
+  {
+   "id": "urgence",
+   "start": 44.507,
+   "end": 49.982
+  },
+  {
+   "id": "traitement",
+   "start": 50.913,
+   "end": 60.204
+  },
+  {
+   "id": "risques",
+   "start": 61.136,
+   "end": 67.363
+  },
+  {
+   "id": "outro",
+   "start": 68.286,
+   "end": 80.69
+  }
+ ],
+ "words": [
+  {
+   "text": "Toutes",
+   "start": 0.048,
+   "end": 0.233
+  },
+  {
+   "text": "les",
+   "start": 0.233,
+   "end": 0.303
+  },
+  {
+   "text": "4",
+   "start": 0.303,
+   "end": 0.57
+  },
+  {
+   "text": "minutes,",
+   "start": 0.57,
+   "end": 0.986
+  },
+  {
+   "text": "en",
+   "start": 1.171,
+   "end": 1.24
+  },
+  {
+   "text": "France,",
+   "start": 1.24,
+   "end": 1.761
+  },
+  {
+   "text": "quelqu'un",
+   "start": 1.981,
+   "end": 2.293
+  },
+  {
+   "text": "fait",
+   "start": 2.293,
+   "end": 2.502
+  },
+  {
+   "text": "un",
+   "start": 2.502,
+   "end": 2.641
+  },
+  {
+   "text": "AVC .",
+   "start": 2.641,
+   "end": 3.127
+  },
+  {
+   "text": "Et",
+   "start": 3.452,
+   "end": 3.602
+  },
+  {
+   "text": "chaque",
+   "start": 3.602,
+   "end": 3.822
+  },
+  {
+   "text": "minute",
+   "start": 3.822,
+   "end": 4.042
+  },
+  {
+   "text": "sans",
+   "start": 4.042,
+   "end": 4.169
+  },
+  {
+   "text": "soins,",
+   "start": 4.169,
+   "end": 4.505
+  },
+  {
+   "text": "son",
+   "start": 4.783,
+   "end": 4.887
+  },
+  {
+   "text": "cerveau",
+   "start": 4.887,
+   "end": 5.2
+  },
+  {
+   "text": "perd",
+   "start": 5.2,
+   "end": 5.373
+  },
+  {
+   "text": "près",
+   "start": 5.373,
+   "end": 5.535
+  },
+  {
+   "text": "de",
+   "start": 5.535,
+   "end": 5.639
+  },
+  {
+   "text": "2",
+   "start": 5.639,
+   "end": 5.773
+  },
+  {
+   "text": "millions",
+   "start": 5.773,
+   "end": 6.01
+  },
+  {
+   "text": "de",
+   "start": 6.01,
+   "end": 6.091
+  },
+  {
+   "text": "neurones.",
+   "start": 6.091,
+   "end": 6.588
+  },
+  {
+   "text": "Alors,",
+   "start": 6.944,
+   "end": 7.28
+  },
+  {
+   "text": "c'est",
+   "start": 7.523,
+   "end": 7.639
+  },
+  {
+   "text": "quoi,",
+   "start": 7.639,
+   "end": 7.917
+  },
+  {
+   "text": "un",
+   "start": 8.194,
+   "end": 8.299
+  },
+  {
+   "text": "AVC ,",
+   "start": 8.299,
+   "end": 8.866
+  },
+  {
+   "text": "et",
+   "start": 9.19,
+   "end": 9.271
+  },
+  {
+   "text": "comment",
+   "start": 9.271,
+   "end": 9.491
+  },
+  {
+   "text": "le",
+   "start": 9.491,
+   "end": 9.56
+  },
+  {
+   "text": "reconnaître ?",
+   "start": 9.56,
+   "end": 10.15
+  },
+  {
+   "text": "AVC ,",
+   "start": 11.019,
+   "end": 11.598
+  },
+  {
+   "text": "ça",
+   "start": 11.98,
+   "end": 12.072
+  },
+  {
+   "text": "veut",
+   "start": 12.072,
+   "end": 12.153
+  },
+  {
+   "text": "dire",
+   "start": 12.153,
+   "end": 12.315
+  },
+  {
+   "text": "accident",
+   "start": 12.315,
+   "end": 12.651
+  },
+  {
+   "text": "vasculaire",
+   "start": 12.651,
+   "end": 13.044
+  },
+  {
+   "text": "cérébral :",
+   "start": 13.045,
+   "end": 13.577
+  },
+  {
+   "text": "un",
+   "start": 13.994,
+   "end": 14.017
+  },
+  {
+   "text": "accident",
+   "start": 14.017,
+   "end": 14.422
+  },
+  {
+   "text": "des",
+   "start": 14.422,
+   "end": 14.503
+  },
+  {
+   "text": "vaisseaux",
+   "start": 14.503,
+   "end": 14.757
+  },
+  {
+   "text": "sanguins",
+   "start": 14.757,
+   "end": 15.081
+  },
+  {
+   "text": "du",
+   "start": 15.082,
+   "end": 15.163
+  },
+  {
+   "text": "cerveau.",
+   "start": 15.163,
+   "end": 15.625
+  },
+  {
+   "text": "Une",
+   "start": 15.961,
+   "end": 16.1
+  },
+  {
+   "text": "zone",
+   "start": 16.1,
+   "end": 16.285
+  },
+  {
+   "text": "du",
+   "start": 16.285,
+   "end": 16.366
+  },
+  {
+   "text": "cerveau",
+   "start": 16.366,
+   "end": 16.702
+  },
+  {
+   "text": "ne",
+   "start": 16.702,
+   "end": 16.794
+  },
+  {
+   "text": "reçoit",
+   "start": 16.794,
+   "end": 17.026
+  },
+  {
+   "text": "plus",
+   "start": 17.026,
+   "end": 17.188
+  },
+  {
+   "text": "de",
+   "start": 17.188,
+   "end": 17.315
+  },
+  {
+   "text": "sang,",
+   "start": 17.315,
+   "end": 17.593
+  },
+  {
+   "text": "donc",
+   "start": 17.848,
+   "end": 17.998
+  },
+  {
+   "text": "plus",
+   "start": 17.998,
+   "end": 18.137
+  },
+  {
+   "text": "d'oxygène :",
+   "start": 18.137,
+   "end": 18.75
+  },
+  {
+   "text": "ses",
+   "start": 19.017,
+   "end": 19.132
+  },
+  {
+   "text": "neurones",
+   "start": 19.132,
+   "end": 19.445
+  },
+  {
+   "text": "meurent.",
+   "start": 19.445,
+   "end": 19.781
+  },
+  {
+   "text": "Dans",
+   "start": 20.714,
+   "end": 20.899
+  },
+  {
+   "text": "8",
+   "start": 20.899,
+   "end": 21.038
+  },
+  {
+   "text": "cas",
+   "start": 21.038,
+   "end": 21.131
+  },
+  {
+   "text": "sur",
+   "start": 21.131,
+   "end": 21.304
+  },
+  {
+   "text": "10,",
+   "start": 21.304,
+   "end": 21.709
+  },
+  {
+   "text": "c'est",
+   "start": 21.929,
+   "end": 22.045
+  },
+  {
+   "text": "un",
+   "start": 22.045,
+   "end": 22.161
+  },
+  {
+   "text": "AVC",
+   "start": 22.161,
+   "end": 22.485
+  },
+  {
+   "text": "ischémique :",
+   "start": 22.485,
+   "end": 23.017
+  },
+  {
+   "text": "un",
+   "start": 23.422,
+   "end": 23.48
+  },
+  {
+   "text": "caillot",
+   "start": 23.48,
+   "end": 23.804
+  },
+  {
+   "text": "bouche",
+   "start": 23.804,
+   "end": 24.012
+  },
+  {
+   "text": "une",
+   "start": 24.012,
+   "end": 24.082
+  },
+  {
+   "text": "artère,",
+   "start": 24.082,
+   "end": 24.545
+  },
+  {
+   "text": "et",
+   "start": 24.788,
+   "end": 24.811
+  },
+  {
+   "text": "le",
+   "start": 24.811,
+   "end": 24.915
+  },
+  {
+   "text": "sang",
+   "start": 24.915,
+   "end": 25.077
+  },
+  {
+   "text": "ne",
+   "start": 25.077,
+   "end": 25.158
+  },
+  {
+   "text": "passe",
+   "start": 25.158,
+   "end": 25.355
+  },
+  {
+   "text": "plus.",
+   "start": 25.355,
+   "end": 25.656
+  },
+  {
+   "text": "Sinon,",
+   "start": 26.584,
+   "end": 27.012
+  },
+  {
+   "text": "c'est",
+   "start": 27.29,
+   "end": 27.394
+  },
+  {
+   "text": "un",
+   "start": 27.394,
+   "end": 27.51
+  },
+  {
+   "text": "AVC",
+   "start": 27.51,
+   "end": 27.927
+  },
+  {
+   "text": "hémorragique :",
+   "start": 27.927,
+   "end": 28.54
+  },
+  {
+   "text": "une",
+   "start": 28.98,
+   "end": 29.049
+  },
+  {
+   "text": "artère",
+   "start": 29.049,
+   "end": 29.315
+  },
+  {
+   "text": "se",
+   "start": 29.316,
+   "end": 29.443
+  },
+  {
+   "text": "rompt,",
+   "start": 29.443,
+   "end": 29.697
+  },
+  {
+   "text": "et",
+   "start": 29.987,
+   "end": 30.01
+  },
+  {
+   "text": "le",
+   "start": 30.01,
+   "end": 30.102
+  },
+  {
+   "text": "sang",
+   "start": 30.102,
+   "end": 30.253
+  },
+  {
+   "text": "s'échappe",
+   "start": 30.253,
+   "end": 30.635
+  },
+  {
+   "text": "dans",
+   "start": 30.635,
+   "end": 30.716
+  },
+  {
+   "text": "le",
+   "start": 30.716,
+   "end": 30.785
+  },
+  {
+   "text": "cerveau.",
+   "start": 30.785,
+   "end": 31.237
+  },
+  {
+   "text": "Pour",
+   "start": 32.15,
+   "end": 32.312
+  },
+  {
+   "text": "le",
+   "start": 32.312,
+   "end": 32.37
+  },
+  {
+   "text": "reconnaître,",
+   "start": 32.37,
+   "end": 33.006
+  },
+  {
+   "text": "pense",
+   "start": 33.215,
+   "end": 33.481
+  },
+  {
+   "text": "VITE !",
+   "start": 33.481,
+   "end": 33.886
+  },
+  {
+   "text": "V",
+   "start": 34.198,
+   "end": 34.406
+  },
+  {
+   "text": "comme",
+   "start": 34.406,
+   "end": 34.591
+  },
+  {
+   "text": "visage",
+   "start": 34.591,
+   "end": 34.938
+  },
+  {
+   "text": "paralysé :",
+   "start": 34.938,
+   "end": 35.54
+  },
+  {
+   "text": "la",
+   "start": 35.864,
+   "end": 35.934
+  },
+  {
+   "text": "bouche",
+   "start": 35.934,
+   "end": 36.177
+  },
+  {
+   "text": "tombe",
+   "start": 36.177,
+   "end": 36.362
+  },
+  {
+   "text": "d'un",
+   "start": 36.362,
+   "end": 36.478
+  },
+  {
+   "text": "côté.",
+   "start": 36.478,
+   "end": 36.906
+  },
+  {
+   "text": "I",
+   "start": 37.227,
+   "end": 37.308
+  },
+  {
+   "text": "comme",
+   "start": 37.308,
+   "end": 37.482
+  },
+  {
+   "text": "inertie",
+   "start": 37.482,
+   "end": 37.818
+  },
+  {
+   "text": "d'un",
+   "start": 37.818,
+   "end": 37.945
+  },
+  {
+   "text": "membre :",
+   "start": 37.945,
+   "end": 38.281
+  },
+  {
+   "text": "un",
+   "start": 38.639,
+   "end": 38.709
+  },
+  {
+   "text": "bras",
+   "start": 38.709,
+   "end": 38.917
+  },
+  {
+   "text": "ou",
+   "start": 38.917,
+   "end": 39.01
+  },
+  {
+   "text": "une",
+   "start": 39.01,
+   "end": 39.079
+  },
+  {
+   "text": "jambe",
+   "start": 39.079,
+   "end": 39.368
+  },
+  {
+   "text": "ne",
+   "start": 39.369,
+   "end": 39.461
+  },
+  {
+   "text": "répond",
+   "start": 39.461,
+   "end": 39.716
+  },
+  {
+   "text": "plus.",
+   "start": 39.716,
+   "end": 40.017
+  },
+  {
+   "text": "T",
+   "start": 40.333,
+   "end": 40.483
+  },
+  {
+   "text": "comme",
+   "start": 40.483,
+   "end": 40.657
+  },
+  {
+   "text": "trouble",
+   "start": 40.657,
+   "end": 40.923
+  },
+  {
+   "text": "de",
+   "start": 40.923,
+   "end": 40.993
+  },
+  {
+   "text": "la",
+   "start": 40.993,
+   "end": 41.074
+  },
+  {
+   "text": "parole :",
+   "start": 41.074,
+   "end": 41.467
+  },
+  {
+   "text": "il",
+   "start": 41.826,
+   "end": 41.895
+  },
+  {
+   "text": "parle",
+   "start": 41.895,
+   "end": 42.127
+  },
+  {
+   "text": "mal,",
+   "start": 42.127,
+   "end": 42.405
+  },
+  {
+   "text": "ou",
+   "start": 42.706,
+   "end": 42.729
+  },
+  {
+   "text": "ne",
+   "start": 42.729,
+   "end": 42.81
+  },
+  {
+   "text": "trouve",
+   "start": 42.81,
+   "end": 43.041
+  },
+  {
+   "text": "plus",
+   "start": 43.041,
+   "end": 43.203
+  },
+  {
+   "text": "ses",
+   "start": 43.203,
+   "end": 43.342
+  },
+  {
+   "text": "mots.",
+   "start": 43.342,
+   "end": 43.585
+  },
+  {
+   "text": "Et",
+   "start": 44.507,
+   "end": 44.777
+  },
+  {
+   "text": "E",
+   "start": 44.777,
+   "end": 44.912
+  },
+  {
+   "text": "comme",
+   "start": 44.912,
+   "end": 45.051
+  },
+  {
+   "text": "en",
+   "start": 45.051,
+   "end": 45.097
+  },
+  {
+   "text": "urgence :",
+   "start": 45.097,
+   "end": 45.664
+  },
+  {
+   "text": "on",
+   "start": 45.942,
+   "end": 45.965
+  },
+  {
+   "text": "appelle",
+   "start": 45.965,
+   "end": 46.232
+  },
+  {
+   "text": "le",
+   "start": 46.232,
+   "end": 46.336
+  },
+  {
+   "text": "15 !",
+   "start": 46.336,
+   "end": 46.81
+  },
+  {
+   "text": "On",
+   "start": 47.123,
+   "end": 47.25
+  },
+  {
+   "text": "note",
+   "start": 47.25,
+   "end": 47.412
+  },
+  {
+   "text": "aussi",
+   "start": 47.412,
+   "end": 47.62
+  },
+  {
+   "text": "l'heure",
+   "start": 47.62,
+   "end": 47.759
+  },
+  {
+   "text": "du",
+   "start": 47.759,
+   "end": 47.852
+  },
+  {
+   "text": "début",
+   "start": 47.852,
+   "end": 48.049
+  },
+  {
+   "text": "des",
+   "start": 48.049,
+   "end": 48.164
+  },
+  {
+   "text": "signes,",
+   "start": 48.164,
+   "end": 48.581
+  },
+  {
+   "text": "car",
+   "start": 48.87,
+   "end": 49.067
+  },
+  {
+   "text": "chaque",
+   "start": 49.067,
+   "end": 49.264
+  },
+  {
+   "text": "minute",
+   "start": 49.264,
+   "end": 49.542
+  },
+  {
+   "text": "compte.",
+   "start": 49.542,
+   "end": 49.982
+  },
+  {
+   "text": "À",
+   "start": 50.913,
+   "end": 51.029
+  },
+  {
+   "text": "l'hôpital,",
+   "start": 51.029,
+   "end": 51.619
+  },
+  {
+   "text": "un",
+   "start": 51.885,
+   "end": 51.989
+  },
+  {
+   "text": "scanner",
+   "start": 51.989,
+   "end": 52.395
+  },
+  {
+   "text": "ou",
+   "start": 52.395,
+   "end": 52.464
+  },
+  {
+   "text": "une",
+   "start": 52.464,
+   "end": 52.591
+  },
+  {
+   "text": "IRM",
+   "start": 52.591,
+   "end": 53.043
+  },
+  {
+   "text": "montre",
+   "start": 53.043,
+   "end": 53.309
+  },
+  {
+   "text": "le",
+   "start": 53.309,
+   "end": 53.39
+  },
+  {
+   "text": "type",
+   "start": 53.39,
+   "end": 53.61
+  },
+  {
+   "text": "d'{AVC|A",
+   "start": 53.61,
+   "end": 53.737
+  },
+  {
+   "text": "V",
+   "start": 53.737,
+   "end": 53.876
+  },
+  {
+   "text": "C}.",
+   "start": 53.876,
+   "end": 54.2
+  },
+  {
+   "text": "Si",
+   "start": 54.51,
+   "end": 54.683
+  },
+  {
+   "text": "c'est",
+   "start": 54.683,
+   "end": 54.788
+  },
+  {
+   "text": "un",
+   "start": 54.788,
+   "end": 54.857
+  },
+  {
+   "text": "caillot,",
+   "start": 54.857,
+   "end": 55.285
+  },
+  {
+   "text": "on",
+   "start": 55.54,
+   "end": 55.575
+  },
+  {
+   "text": "peut",
+   "start": 55.575,
+   "end": 55.679
+  },
+  {
+   "text": "le",
+   "start": 55.679,
+   "end": 55.76
+  },
+  {
+   "text": "dissoudre",
+   "start": 55.76,
+   "end": 56.142
+  },
+  {
+   "text": "avec",
+   "start": 56.142,
+   "end": 56.339
+  },
+  {
+   "text": "un",
+   "start": 56.339,
+   "end": 56.373
+  },
+  {
+   "text": "médicament,",
+   "start": 56.373,
+   "end": 56.906
+  },
+  {
+   "text": "c'est",
+   "start": 57.288,
+   "end": 57.369
+  },
+  {
+   "text": "la",
+   "start": 57.369,
+   "end": 57.438
+  },
+  {
+   "text": "thrombolyse,",
+   "start": 57.438,
+   "end": 58.028
+  },
+  {
+   "text": "ou",
+   "start": 58.318,
+   "end": 58.376
+  },
+  {
+   "text": "aller",
+   "start": 58.376,
+   "end": 58.526
+  },
+  {
+   "text": "le",
+   "start": 58.526,
+   "end": 58.619
+  },
+  {
+   "text": "retirer,",
+   "start": 58.619,
+   "end": 59.105
+  },
+  {
+   "text": "c'est",
+   "start": 59.371,
+   "end": 59.464
+  },
+  {
+   "text": "la",
+   "start": 59.464,
+   "end": 59.533
+  },
+  {
+   "text": "thrombectomie.",
+   "start": 59.533,
+   "end": 60.204
+  },
+  {
+   "text": "Ce",
+   "start": 61.136,
+   "end": 61.298
+  },
+  {
+   "text": "qui",
+   "start": 61.298,
+   "end": 61.425
+  },
+  {
+   "text": "augmente",
+   "start": 61.425,
+   "end": 61.703
+  },
+  {
+   "text": "le",
+   "start": 61.703,
+   "end": 61.807
+  },
+  {
+   "text": "risque :",
+   "start": 61.807,
+   "end": 62.154
+  },
+  {
+   "text": "l'hypertension,",
+   "start": 62.398,
+   "end": 63.115
+  },
+  {
+   "text": "le",
+   "start": 63.393,
+   "end": 63.451
+  },
+  {
+   "text": "tabac,",
+   "start": 63.451,
+   "end": 63.833
+  },
+  {
+   "text": "le",
+   "start": 64.076,
+   "end": 64.134
+  },
+  {
+   "text": "diabète,",
+   "start": 64.134,
+   "end": 64.608
+  },
+  {
+   "text": "le",
+   "start": 64.863,
+   "end": 64.909
+  },
+  {
+   "text": "cholestérol,",
+   "start": 64.909,
+   "end": 65.546
+  },
+  {
+   "text": "et",
+   "start": 65.916,
+   "end": 65.939
+  },
+  {
+   "text": "certains",
+   "start": 65.939,
+   "end": 66.217
+  },
+  {
+   "text": "troubles",
+   "start": 66.217,
+   "end": 66.506
+  },
+  {
+   "text": "du",
+   "start": 66.506,
+   "end": 66.611
+  },
+  {
+   "text": "rythme",
+   "start": 66.611,
+   "end": 66.854
+  },
+  {
+   "text": "du",
+   "start": 66.854,
+   "end": 66.958
+  },
+  {
+   "text": "cœur.",
+   "start": 66.958,
+   "end": 67.363
+  },
+  {
+   "text": "Petit",
+   "start": 68.286,
+   "end": 68.575
+  },
+  {
+   "text": "récap !",
+   "start": 68.575,
+   "end": 69.108
+  },
+  {
+   "text": "Un",
+   "start": 69.417,
+   "end": 69.555
+  },
+  {
+   "text": "AVC ,",
+   "start": 69.555,
+   "end": 70.111
+  },
+  {
+   "text": "c'est",
+   "start": 70.377,
+   "end": 70.516
+  },
+  {
+   "text": "une",
+   "start": 70.516,
+   "end": 70.701
+  },
+  {
+   "text": "zone",
+   "start": 70.701,
+   "end": 70.886
+  },
+  {
+   "text": "du",
+   "start": 70.886,
+   "end": 70.956
+  },
+  {
+   "text": "cerveau",
+   "start": 70.956,
+   "end": 71.315
+  },
+  {
+   "text": "privée",
+   "start": 71.315,
+   "end": 71.558
+  },
+  {
+   "text": "de",
+   "start": 71.558,
+   "end": 71.662
+  },
+  {
+   "text": "sang.",
+   "start": 71.662,
+   "end": 71.963
+  },
+  {
+   "text": "Ischémique :",
+   "start": 72.291,
+   "end": 72.974
+  },
+  {
+   "text": "un",
+   "start": 73.298,
+   "end": 73.344
+  },
+  {
+   "text": "caillot",
+   "start": 73.344,
+   "end": 73.645
+  },
+  {
+   "text": "bouche",
+   "start": 73.645,
+   "end": 73.865
+  },
+  {
+   "text": "l'artère.",
+   "start": 73.865,
+   "end": 74.443
+  },
+  {
+   "text": "Hémorragique :",
+   "start": 74.754,
+   "end": 75.472
+  },
+  {
+   "text": "une",
+   "start": 75.773,
+   "end": 75.842
+  },
+  {
+   "text": "artère",
+   "start": 75.842,
+   "end": 76.166
+  },
+  {
+   "text": "saigne.",
+   "start": 76.166,
+   "end": 76.617
+  },
+  {
+   "text": "Pour",
+   "start": 76.928,
+   "end": 77.067
+  },
+  {
+   "text": "le",
+   "start": 77.067,
+   "end": 77.136
+  },
+  {
+   "text": "reconnaître :",
+   "start": 77.136,
+   "end": 77.738
+  },
+  {
+   "text": "VITE.",
+   "start": 78.074,
+   "end": 78.514
+  },
+  {
+   "text": "Et",
+   "start": 78.861,
+   "end": 78.954
+  },
+  {
+   "text": "au",
+   "start": 78.954,
+   "end": 79.0
+  },
+  {
+   "text": "moindre",
+   "start": 79.0,
+   "end": 79.301
+  },
+  {
+   "text": "doute,",
+   "start": 79.301,
+   "end": 79.625
+  },
+  {
+   "text": "on",
+   "start": 79.845,
+   "end": 79.868
+  },
+  {
+   "text": "appelle",
+   "start": 79.868,
+   "end": 80.134
+  },
+  {
+   "text": "le",
+   "start": 80.134,
+   "end": 80.238
+  },
+  {
+   "text": "15 !",
+   "start": 80.238,
+   "end": 80.69
+  }
+ ]
+}

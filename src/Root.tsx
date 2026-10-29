@@ -18,6 +18,8 @@ import {Glycemie, GlycemieProps} from './videos/glycemie/Glycemie';
 import {TL as GLY_TL} from './videos/glycemie/timeline';
 import {Diurese, DiureseProps} from './videos/diurese/Diurese';
 import {TL as DIU_TL} from './videos/diurese/timeline';
+import {Avc, AvcProps} from './videos/avc/Avc';
+import {TL as AVC_TL} from './videos/avc/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -104,6 +106,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies DiureseProps}
+		/>
+		{/* 10 · C'est quoi un AVC */}
+		<Composition
+			id="AVC"
+			component={Avc}
+			durationInFrames={AVC_TL.total}
+			fps={AVC_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies AvcProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition

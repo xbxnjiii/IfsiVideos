@@ -49,6 +49,11 @@ export type PatientProps = {
 	pain?: number;
 	/** étoiles qui tournent autour de la tête */
 	dizzy?: number;
+	/** visage paralysé d'un côté (AVC) : la bouche et la paupière tombent côté droit de l'écran (0 → 1) */
+	droop?: number;
+	/** bras levés vers l'extérieur, en degrés (0 = le long du corps, 90 = à l'horizontale) */
+	armL?: number;
+	armR?: number;
 };
 
 const ARMS = ['M106 236 C92 290 80 340 76 400 C74 430 74 455 76 474', 'M294 236 C308 290 320 340 324 400 C326 430 326 455 324 474'];
@@ -70,7 +75,7 @@ const SkinLayers: React.FC<{flush: number; pale: number; children: (fill: string
 	</>
 );
 
-export const Patient: React.FC<PatientProps> = ({size = 360, mood = 'calme', breath = 0, heart = 0, beat = 0, flow = 0, cuff = 0, press = 0, flush = 0, pale = 0, sweat = 0, pain = 0, dizzy = 0}) => {
+export const Patient: React.FC<PatientProps> = ({size = 360, mood = 'calme', breath = 0, heart = 0, beat = 0, flow = 0, cuff = 0, press = 0, flush = 0, pale = 0, sweat = 0, pain = 0, dizzy = 0, droop = 0, armL = 0, armR = 0}) => {
 	const frame = useCurrentFrame();
 	const id = useId().replace(/:/g, '');
 	const blink = frame % 96 < 4 ? 0.15 : 1;
@@ -93,24 +98,15 @@ export const Patient: React.FC<PatientProps> = ({size = 360, mood = 'calme', bre
 			</defs>
 			<g mask={`url(#m${id})`}>
 				<g transform={`translate(200 ${380 - lift}) scale(${wide} 1) translate(-200 -380)`}>
-					{/* bras (contour puis peau) et mains */}
-					{ARMS.map((d) => (
-						<path key={d} d={d} fill="none" stroke={N} strokeWidth={56} strokeLinecap="round" />
-					))}
-					<SkinLayers flush={0} pale={pale}>
-						{(fill, o) => (
-							<g opacity={o}>
-								{ARMS.map((d) => (
-									<path key={d} d={d} fill="none" stroke={fill} strokeWidth={42} strokeLinecap="round" />
-								))}
-							</g>
-						)}
-					</SkinLayers>
-					{/* manches courtes */}
-					{SLEEVES.map((d) => (
-						<g key={d}>
-							<path d={d} fill="none" stroke={N} strokeWidth={66} strokeLinecap="round" />
-							<path d={d} fill="none" stroke={LPI.blue} strokeWidth={52} strokeLinecap="round" />
+					{/* bras (contour, peau, manche courte), chacun pivote à l'épaule */}
+					{ARMS.map((d, k) => (
+						<g key={d} transform={k === 0 ? `rotate(${armL} 106 236)` : `rotate(${-armR} 294 236)`}>
+							<path d={d} fill="none" stroke={N} strokeWidth={56} strokeLinecap="round" />
+							<SkinLayers flush={0} pale={pale}>
+								{(fill, o) => <path d={d} fill="none" stroke={fill} strokeWidth={42} strokeLinecap="round" opacity={o} />}
+							</SkinLayers>
+							<path d={SLEEVES[k]} fill="none" stroke={N} strokeWidth={66} strokeLinecap="round" />
+							<path d={SLEEVES[k]} fill="none" stroke={LPI.blue} strokeWidth={52} strokeLinecap="round" />
 						</g>
 					))}
 					{/* cou */}
@@ -169,10 +165,21 @@ export const Patient: React.FC<PatientProps> = ({size = 360, mood = 'calme', bre
 				<path d={unwell ? 'M164 98 L186 104 M236 98 L214 104' : 'M164 100 Q176 94 188 99 M212 99 Q224 94 236 100'} fill="none" stroke={N} strokeWidth={6} strokeLinecap="round" />
 				<g transform={`translate(0 118) scale(1 ${blink}) translate(0 -118)`}>
 					<circle cx={176} cy={118} r={8} fill={N} />
-					<circle cx={224} cy={118} r={8} fill={N} />
+					<g transform={`translate(0 ${118 + 2 * droop}) scale(1 ${1 - 0.75 * droop}) translate(0 -118)`}>
+						<circle cx={224} cy={118} r={8} fill={N} />
+					</g>
 				</g>
+				{droop > 0 ? <path d={`M212 ${104 + 4 * droop} Q224 ${106 + 6 * droop} 236 ${108 + 8 * droop}`} fill="none" stroke={N} strokeWidth={5} strokeLinecap="round" opacity={droop} /> : null}
 				<path
-					d={mood === 'content' ? 'M180 144 Q200 166 220 144' : unwell ? 'M184 156 Q192 148 200 154 Q208 160 216 152' : 'M186 148 Q200 158 214 148'}
+					d={
+						droop > 0
+							? `M184 ${148 + 2 * droop} Q200 ${156 + 4 * droop} 218 ${148 + 26 * droop}`
+							: mood === 'content'
+								? 'M180 144 Q200 166 220 144'
+								: unwell
+									? 'M184 156 Q192 148 200 154 Q208 160 216 152'
+									: 'M186 148 Q200 158 214 148'
+					}
 					fill="none"
 					stroke={N}
 					strokeWidth={6}

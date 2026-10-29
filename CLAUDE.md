@@ -73,6 +73,20 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
 - Modèles : `Frequence-Cardiaque`, `Frequence-Respiratoire`, `Temperature`, `Tension-Arterielle`, `Glycemie`, `Diurese` (`src/videos/<épisode>/`,
   storyboards dans `docs/lpi/`). Paliers de valeur qui roulent : `steps()` de `temperature/Scenes.tsx`.
 
+## Format « pathologie » (modèle `AVC`, `src/videos/avc/`)
+
+- ≈ 1 min 25. **Accroche-choc** au lieu de la simple question : un chiffre fort dès la 1re seconde (« Toutes
+  les 4 minutes, en France… »), déjà à l'écran sur l'image 0 (miniature TikTok), puis 2 rebondissements visuels
+  (le patient fait un AVC, le cerveau perd ses neurones avec un compteur), puis la question + une promesse
+  courte (« et comment le reconnaître ? »). Flash rose + secousse uniquement sur les chocs.
+- Déroulé : accroche · définition (sigle qui se déplie lettre par lettre) · types · signes (acronyme VITE joué
+  par le patient, zoom sur le visage) · conduite à tenir (le 15, l'heure) · traitements · facteurs de risque ·
+  récap rapide · logo.
+- Briques : `brain.tsx` (cerveau de profil : artères où le sang circule, neurones qui scintillent / s'éteignent,
+  zone privée de sang, caillot, hémorragie ; gros plan d'artère `ArteryZoom` : caillot qui bouche, rupture,
+  thrombolyse, thrombectomie), `devices.tsx` (téléphone qui compose le 15, horloge murale, écran d'imagerie),
+  `Patient` : `droop` (visage paralysé), `armL` / `armR` (bras levés, l'un retombe).
+
 ## Recette express (nouvelle vidéo de constante)
 
 1. `voix/<n>-<sujet>.script.json` (texte exact, une partie par scène) → `npm run voice -- …` (2 min).

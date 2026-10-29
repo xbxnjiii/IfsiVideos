@@ -179,3 +179,42 @@ export const HungerIcon: React.FC<IP> = (p) => (
 		<path d="M14 20 V40 C14 46 22 46 22 40 V20 M18 44 V88 M86 20 C78 26 78 44 86 50 V88" />
 	</Ico>
 );
+/** hypertension : manomètre aiguille dans le rouge */
+export const HypertensionIcon: React.FC<IP> = (p) => (
+	<Ico {...p}>
+		<path d="M14 66 A36 36 0 0 1 86 66" />
+		<path d="M66 40 A36 36 0 0 1 86 66" stroke={LPI.pink} strokeWidth={9} />
+		<path d="M50 66 L72 40" />
+		<circle cx="50" cy="66" r="6" fill={LPI.blue} />
+	</Ico>
+);
+/** tabac : cigarette qui fume */
+export const CigaretteIcon: React.FC<IP> = (p) => (
+	<Ico {...p}>
+		<rect x="10" y="58" width="70" height="16" rx="4" />
+		<path d="M64 58 V74" />
+		<rect x="66" y="60" width="12" height="12" fill={alpha(LPI.pink, 0.9)} stroke="none" />
+		<path d="M84 48 C78 40 90 32 84 22 M92 50 C88 44 96 38 92 30" stroke={alpha(LPI.navy, 0.6)} strokeWidth={5} />
+	</Ico>
+);
+/** diabète : goutte + morceau de sucre */
+export const DiabetesIcon: React.FC<IP> = (p) => (
+	<Ico {...p}>
+		<path d="M38 14 C38 14 60 40 60 54 A22 22 0 0 1 16 54 C16 40 38 14 38 14 Z" fill={alpha(LPI.pink, 0.8)} />
+		<rect x="58" y="56" width="28" height="28" rx="6" fill={LPI.paper} />
+	</Ico>
+);
+/** cholestérol : artère avec une plaque qui la rétrécit */
+export const CholesterolIcon: React.FC<IP> = (p) => (
+	<Ico {...p}>
+		<path d="M8 32 H92 M8 72 H92" />
+		<path d="M34 32 C40 46 62 46 68 32 Z" fill={alpha(LPI.pink, 0.9)} />
+		<path d="M30 72 C38 60 58 60 64 72 Z" fill={alpha(LPI.pink, 0.9)} />
+	</Ico>
+);
+/** troubles du rythme : tracé irrégulier */
+export const ArrhythmiaIcon: React.FC<IP> = (p) => (
+	<Ico {...p}>
+		<path d="M6 56 H20 L26 40 L32 70 L38 56 H46 L50 28 L56 80 L62 56 H70 L74 46 L78 62 L82 56 H94" />
+	</Ico>
+);
