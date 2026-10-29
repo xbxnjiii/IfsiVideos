@@ -10,7 +10,10 @@
     "render:constantes": "remotion render Constantes out/02-constantes.mp4",
     "check:mascot": "esbuild scripts/qa/check-mascot.ts --bundle --platform=node --loader:.webp=empty --log-level=error --outfile=out/check-mascot.cjs && node out/check-mascot.cjs",
     "render:besoins": "remotion render Besoins-Fondamentaux out/03-besoins-fondamentaux.mp4",
-    "render:fc": "remotion render Frequence-Cardiaque out/04-frequence-cardiaque.mp4"
+    "render:fc": "remotion render Frequence-Cardiaque out/04-frequence-cardiaque.mp4",
+    "voice": "python3 scripts/voice/tts_voix.py",
+    "sheet": "bash scripts/qa/sheet.sh",
+    "render:fr": "remotion render Frequence-Respiratoire out/05-frequence-respiratoire.mp4"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.532",

@@ -1,31 +1,17 @@
 // Scènes de « La fréquence cardiaque » : une notion = une scène, chaque mouvement part d'un mot de la voix.
 import React from 'react';
-import {AbsoluteFill, Easing, Img, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
-import {beatSchedule, EcgTrace, lastBeat} from '../../brand/cardio';
+import {AbsoluteFill, Easing, interpolate, spring, useCurrentFrame} from 'remotion';
+import {CrossedThumb, PressFingers, RADIAL, Wrist} from '../../brand/body';
+import {BeatingHeart, beatSchedule, EcgTrace, HeartSfx as Beats, lastBeat, PulseWave} from '../../brand/cardio';
+import {BigNum, CauseChip, Head, LAY, RecapScene, SLAM_Y as slamY, Stopwatch, Tag, termSlot as SLOT, Unit} from '../../brand/episode';
+import {FeverIcon, MedalIcon, MoonIcon, PainIcon, RunIcon, StressIcon} from '../../brand/icons';
 import {CheckChip, Stamp, Sticker, Strike, usePop} from '../../brand/kit';
 import {Seuil} from '../../brand/Lesson3';
-import {Sign, SignKind} from '../../brand/learn';
-import {Burst, Camera, Confetti, LiveBackground, Odometer, Stage, TermSlam} from '../../brand/motion3';
+import {Burst, Camera, LiveBackground, Odometer, Stage, TermSlam} from '../../brand/motion3';
 import {NormScale, Zone} from '../../brand/NormScale';
-import {Heart} from '../../brand/pictos';
 import {Sfx} from '../../brand/Sfx';
 import {alpha, FONT, LPI, SHADOW} from '../../brand/theme';
-import {clamp, Enter, Kicker, Title, useSoft} from '../../brand/ui';
-import {
-	CauseChip,
-	CrossedThumb,
-	FeverIcon,
-	MedalIcon,
-	MoonIcon,
-	PainIcon,
-	PressFingers,
-	PulseWave,
-	RADIAL,
-	RunIcon,
-	Stopwatch,
-	StressIcon,
-	Wrist,
-} from './art';
+import {clamp, Enter, Title, useSoft} from '../../brand/ui';
 import {at} from './timeline';
 
 const ease = {...clamp, easing: Easing.inOut(Easing.cubic)};
@@ -33,53 +19,11 @@ const N = LPI.navy;
 const PINK = alpha(LPI.pink, 0.42);
 const COLD = alpha(LPI.sky, 0.95);
 
-/** Mise en page commune (1080 × 1920, interface TikTok : rien d'important au-dessus de 150 ni sous 1480). */
-export const LAY = {kickerY: 236, titleY: 282, stageY: 440, stageH: 540, slotY: 1010, chipsY: 1250};
-const SLOT = (i = 0) => ({x: 72, y: LAY.slotY + i * 175, w: 936});
-const slamY = LAY.stageY + LAY.stageH / 2;
-
 export const FC_ZONES: Zone[] = [
 	{name: 'bradycardie', range: '< 60 bpm', tone: 'low', w: 1, lo: 30, hi: 60},
 	{name: 'normale', range: '60 – 100 bpm', tone: 'norm', w: 1.15, lo: 60, hi: 100},
 	{name: 'tachycardie', range: '≥ 100 bpm', tone: 'high', w: 1, lo: 100, hi: 150},
 ];
-
-const Head: React.FC<{kicker: string; kAt: number; title: string; tAt: number; size?: number}> = ({kicker, kAt, title, tAt, size = 92}) => (
-	<>
-		<div style={{position: 'absolute', left: 72, top: LAY.kickerY}}>
-			<Kicker at={kAt}>{kicker}</Kicker>
-		</div>
-		<div style={{position: 'absolute', left: 72, top: LAY.titleY, width: 936}}>
-			<Title at={tAt} text={title} size={size} stagger={3} />
-		</div>
-	</>
-);
-
-const Unit: React.FC<{children: React.ReactNode; size?: number; color?: string}> = ({children, size = 56, color = LPI.blue}) => (
-	<span style={{fontFamily: FONT.title, fontWeight: 800, fontSize: size, color, marginLeft: 12}}>{children}</span>
-);
-
-/** Battements sonores (très bas) + pulsation. */
-const Beats: React.FC<{beats: number[]; from: number; volume?: number}> = ({beats, from, volume = 0.08}) => (
-	<>
-		{beats
-			.filter((b) => b >= from)
-			.map((b) => (
-				<Sfx key={b} name="heartbeat" at={b} volume={volume} />
-			))}
-	</>
-);
-
-/** Cœur qui bat, avec une petite secousse quand il « s'emballe ». */
-const BeatingHeart: React.FC<{beats: number[]; size: number; shake?: number}> = ({beats, size, shake = 0}) => {
-	const frame = useCurrentFrame();
-	const {pulse} = lastBeat(beats, frame);
-	return (
-		<div style={{transform: `rotate(${Math.sin(frame / 2.2) * 4 * shake}deg) translateX(${Math.sin(frame / 1.7) * 6 * shake}px)`}}>
-			<Heart size={size} beat={pulse} />
-		</div>
-	);
-};
 
 /* ═══════════════════════════════ ACCROCHE ═══════════════════════════════ */
 export const Hook: React.FC = () => {
@@ -435,38 +379,7 @@ export const Mesure: React.FC = () => {
 	);
 };
 
-const Tag: React.FC<{label: string; tone?: string}> = ({label, tone = N}) => (
-	<div
-		style={{
-			padding: '8px 20px',
-			borderRadius: 999,
-			background: LPI.paper,
-			border: `4px solid ${tone}`,
-			fontFamily: FONT.title,
-			fontWeight: 900,
-			fontSize: 32,
-			color: N,
-			whiteSpace: 'nowrap',
-			boxShadow: SHADOW,
-		}}
-	>
-		{label}
-	</div>
-);
-
 /* ═══════════════════════════════ 3 · NORME ═══════════════════════════════ */
-const BigNum: React.FC<{at: number; children: React.ReactNode; color?: string}> = ({at: t0, children, color = N}) => {
-	const frame = useCurrentFrame();
-	const t = frame - t0;
-	if (t < 0) return null;
-	const s = t < 5 ? interpolate(t, [0, 5], [2.2, 0.94], {easing: (v) => v * v}) : 1 - 0.06 * Math.exp(-(t - 5) / 3) * Math.cos((t - 5) * 0.9);
-	return (
-		<div style={{fontFamily: FONT.title, fontWeight: 900, fontSize: 230, color, lineHeight: 1, transform: `scale(${s})`, opacity: interpolate(t, [0, 2], [0, 1], clamp)}}>
-			{children}
-		</div>
-	);
-};
-
 export const Norme: React.FC = () => {
 	const frame = useCurrentFrame();
 	const CHEZ = at('norme', 'chez');
@@ -796,102 +709,19 @@ export const Rythme: React.FC = () => {
 };
 
 /* ═══════════════════════════════ RÉCAP RAPIDE ═══════════════════════════════ */
-/** Une ligne de la fiche récap : elle s'allume sur son mot, se coche quand la suivante arrive. */
-const RecapRow: React.FC<{at: number; next: number; sign: SignKind; label: React.ReactNode; sub?: React.ReactNode; y: number}> = ({at: t0, next, sign, label, sub, y}) => {
-	const frame = useCurrentFrame();
-	const {fps} = useVideoConfig();
-	const s = spring({frame: frame - t0, fps, config: {damping: 13, stiffness: 200, mass: 0.8}});
-	if (frame < t0) return null;
-	const current = frame < next;
-	const sweep = interpolate(frame, [t0, t0 + 12], [0, 1], ease);
-	const check = spring({frame: frame - next, fps, config: {damping: 9, stiffness: 240}});
-	return (
-		<div
-			style={{
-				position: 'absolute',
-				left: 72,
-				top: y,
-				width: 936,
-				height: 112,
-				borderRadius: 32,
-				overflow: 'hidden',
-				background: LPI.paper,
-				border: `5px solid ${current ? LPI.blue : LPI.sky}`,
-				boxShadow: current ? `0 18px 44px ${alpha(LPI.blue, 0.25)}` : SHADOW,
-				opacity: Math.min(1, s * 1.6),
-				transform: `translateX(${(1 - s) * 140}px) rotate(${(1 - s) * 3}deg) scale(${current ? 1.02 : 1})`,
-			}}
-		>
-			<div style={{position: 'absolute', inset: 0, width: `${sweep * 100}%`, background: alpha(LPI.sky, current ? 0.6 : 0.3)}} />
-			<div style={{position: 'relative', height: '100%', display: 'flex', alignItems: 'center', gap: 22, padding: '0 22px'}}>
-				<div style={{position: 'relative'}}>
-					<Sign kind={sign} size={74} />
-					{frame >= next ? (
-						<div style={{position: 'absolute', right: -14, top: -12, transform: `scale(${check})`}}>
-							<Sign kind="check" size={38} />
-						</div>
-					) : null}
-				</div>
-				<div style={{fontFamily: FONT.title, fontWeight: 900, fontSize: 46, color: current ? LPI.blue : N, whiteSpace: 'nowrap'}}>{label}</div>
-				{sub ? <div style={{fontFamily: FONT.body, fontWeight: 700, fontSize: 30, color: alpha(N, 0.65), whiteSpace: 'nowrap'}}>{sub}</div> : null}
-			</div>
-		</div>
-	);
-};
-
-export const Outro: React.FC = () => {
-	const R = at('outro', 'récap');
-	const BAT = at('outro', 'battements');
-	const RAD = at('outro', 'radial');
-	const NORM = at('outro', 'normale');
-	const TA = at('outro', 'tachycardie');
-	const BR = at('outro', 'bradycardie');
-	const RY = at('outro', 'rythme');
-	const END = at('outro', 'pouls', 2);
-	const DONE = END + 10;
-	const rows: [number, SignKind, React.ReactNode, React.ReactNode][] = [
-		[BAT, 'wave', 'bpm', 'battements par minute'],
-		[RAD, 'device', 'Pouls radial', '2 doigts · 1 minute'],
-		[NORM, 'check', '60 – 100 bpm', 'normale (adulte, repos)'],
-		[TA, 'up', 'Tachycardie', '≥ 100 bpm'],
-		[BR, 'down', 'Bradycardie', '< 60 bpm'],
-		[RY, 'alert', 'Rythme + force', 'arythmie · pouls filant'],
-	];
-	return (
-		<AbsoluteFill>
-			<LiveBackground />
-			<Camera punches={[R + 1, ...rows.map(([t]) => t + 1), DONE]} shakes={[DONE + 1]} strength={0.03}>
-				<Head kicker="Petit récap" kAt={R - 4} title="Fréquence *cardiaque*" tAt={R} size={88} />
-				{rows.map(([t, sign, label, sub], i) => (
-					<RecapRow key={i} at={t} next={i < rows.length - 1 ? rows[i + 1][0] : DONE} sign={sign} label={label} sub={sub} y={430 + i * 128} />
-				))}
-				<Stamp at={DONE} x={540} y={1262} text="Pro du pouls !" size={76} rot={-5} />
-				<Confetti at={DONE} x={540} y={900} n={60} />
-			</Camera>
-			{rows.map(([t]) => (
-				<Sfx key={t} name="pop" at={t} volume={0.11} />
-			))}
-			<Sfx name="stamp" at={DONE} volume={0.12} />
-		</AbsoluteFill>
-	);
-};
-
-/* ═══════════════════════════════ LOGO ═══════════════════════════════ */
-export const EndCard: React.FC = () => {
-	const frame = useCurrentFrame();
-	const {fps} = useVideoConfig();
-	const s = spring({frame: frame - 6, fps, config: {damping: 11, stiffness: 160, mass: 0.8}});
-	return (
-		<AbsoluteFill>
-			<LiveBackground deco={false} />
-			<AbsoluteFill style={{alignItems: 'center', justifyContent: 'center', paddingBottom: 120}}>
-				<Img
-					src={staticFile('brand/logo/logo-principal.webp')}
-					style={{width: 800, height: 'auto', opacity: Math.min(1, s * 1.5), transform: `scale(${0.6 + 0.4 * s}) rotate(${(1 - s) * -6}deg)`}}
-				/>
-			</AbsoluteFill>
-			<Burst at={8} x={540} y={840} r={360} n={14} />
-		</AbsoluteFill>
-	);
-};
-
+export const Outro: React.FC = () => (
+	<RecapScene
+		title="Fréquence *cardiaque*"
+		kAt={at('outro', 'récap') - 4}
+		done={at('outro', 'pouls', 2) + 10}
+		stamp="Pro du pouls !"
+		rows={[
+			[at('outro', 'battements'), 'wave', 'bpm', 'battements par minute'],
+			[at('outro', 'radial'), 'device', 'Pouls radial', '2 doigts · 1 minute'],
+			[at('outro', 'normale'), 'check', '60 – 100 bpm', 'normale (adulte, repos)'],
+			[at('outro', 'tachycardie'), 'up', 'Tachycardie', '≥ 100 bpm'],
+			[at('outro', 'bradycardie'), 'down', 'Bradycardie', '< 60 bpm'],
+			[at('outro', 'rythme'), 'alert', 'Rythme + force', 'arythmie · pouls filant'],
+		]}
+	/>
+);

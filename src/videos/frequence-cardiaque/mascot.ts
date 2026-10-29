@@ -2,24 +2,11 @@
 // (le contenu s'arrête vers y = 1460), coin de la carte du terme pendant qu'il claque, et elle porte
 // les transitions (plongée dans le cœur, sortie avec les panoramiques, course devant le rideau).
 import type {Beat} from '../../brand/MascotActor';
-import {RUN_WIPE} from '../../brand/motion4';
-import {LAY} from './Scenes';
+import {runAcross as run, SPOT} from '../../brand/episode';
 import {abs, SceneId, start, TL} from './timeline';
 
-type Spot = Pick<Beat, 'x' | 'y' | 'size'>;
-const L: Spot = {x: 250, y: 1700, size: 380};
-const R: Spot = {x: 830, y: 1700, size: 380};
-/** sur le coin haut-droit du terme qui claque (centre du socle) */
-const CORNER: Spot = {x: 905, y: LAY.stageY + LAY.stageH / 2 - 115, size: 200};
-
-const runAcross = (id: SceneId): Beat[] => {
-	const s = start(id);
-	const run = {key: 'poses/course', y: 1830, size: 620} as const;
-	return [
-		{...run, at: s - 6, via: 'pop', x: RUN_WIPE.x0 + 60},
-		{...run, at: s + Math.round(TL.transition / 2), via: 'run', dur: TL.transition, x: RUN_WIPE.x1 + 60},
-	];
-};
+const {L, R, CORNER} = SPOT;
+const runAcross = (id: SceneId) => run(TL, start(id));
 
 export const MASCOT: Beat[] = [
 	/* ── accroche ── */

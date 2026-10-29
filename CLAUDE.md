@@ -3,7 +3,7 @@
 Mini-vidéos IFSI en motion design, **tout en code** (Remotion 4, React → MP4), 1080 × 1920, ≥ 1 min,
 pour TikTok / Reels / Shorts. La référence de qualité (tempo, physique, mascotte) est la vidéo
 **Constantes** (pilote v4, aujourd'hui v7 : 7 constantes) : composition `Constantes`, dossier `src/videos/constantes/`.
-Format retenu ensuite : **une vidéo par constante** (modèle `Frequence-Cardiaque`, voir plus bas).
+Format retenu ensuite : **une vidéo par constante** (modèles `Frequence-Cardiaque`, `Frequence-Respiratoire`, voir plus bas).
 Deuxième modèle : **Besoins-Fondamentaux** (`src/videos/besoins-fondamentaux/`) pour les vidéos « liste »
 numérotée en étapes (gags au mot près, puces cochées, kit `src/brand/kit.tsx`).
 Les anciennes versions (v1 à v4, labo HyperFrames, anatomie SVG / 3D) ont été retirées : elles restent
@@ -49,29 +49,44 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
 
 ## Voix
 
-- **Voix de la marque** (validée par le propriétaire du projet) : synthèse edge-tts
-  `fr-FR-VivienneMultilingualNeural`, débit +8 % — `scripts/voice/tts_voix.py voix/<script>.json <dossier>`
-  (pause de 0,55 s entre les parties, ou `"pause": secondes` dans une partie pour un silence voulu),
-  puis `scripts/voice/align_voice.py <dossier>/voix.wav voix/<script>.json <épisode>`.
-- Après l'alignement, vérifier les mots clés : un nombre mal entendu (« 120 ») peut décaler toute une phrase ;
-  la recaler à la main dans `voice.json` (transcription Whisper du passage seul).
-- Une voix enregistrée (ElevenLabs, studio) passe directement par `align_voice.py`.
+- **Voix de la marque** (validée) : edge-tts `fr-FR-VivienneMultilingualNeural`, débit +8 %.
+  **Une seule commande** : `npm run voice -- voix/<n>-<sujet>.script.json <épisode>` → `public/voix/<épisode>/voix.wav`
+  + `src/videos/<épisode>/voice.json` (timing mot à mot donné par la synthèse : pas de Whisper).
+  Dépendance : `pip install --break-system-packages edge-tts` (quelques secondes, à refaire par session).
+- Script : une partie par scène (`id` = id de scène), `{affiché|prononcé}` pour les sigles (`{bpm|B P M}`),
+  `"pause": s` pour un silence voulu. Vérifier les mots clés dans voice.json (les nombres sont découpés à part).
+- Une voix enregistrée (ElevenLabs, studio) : `scripts/voice/align_voice.py` (Whisper, plus lent).
 
 ## Format « une vidéo par constante »
 
-- ≈ 1 min – 1 min 10, une notion par scène, barre de progression des notions, **récap rapide** à la fin
+- ≈ 1 min – 1 min 20, une notion par scène, barre de progression des notions, **récap rapide** à la fin
   (la voix résume, une fiche se construit ligne par ligne, puces cochées), pas d'appel à commenter.
 - **Pas de quiz** (ni annonce « petit test à la fin ») : retiré à la demande du propriétaire, ne plus en proposer.
-- Modèle : **Frequence-Cardiaque** (`src/videos/frequence-cardiaque/`, storyboard
-  `docs/lpi/storyboard-frequence-cardiaque.md`) ; briques cœur réutilisables `src/brand/cardio.tsx`
-  (`beatSchedule`, `lastBeat`, `EcgTrace`).
 - Accroche = la question du sujet (« C'est quoi, la fréquence cardiaque ? ») + une promesse courte.
+- Déroulé type : accroche · définition · mesure (geste + astuce) · norme adulte · trop haut · trop bas ·
+  « pas que le chiffre » (rythme, amplitude…) · récap rapide · logo.
+- Modèles : `Frequence-Cardiaque` et `Frequence-Respiratoire` (`src/videos/frequence-*/`, storyboards dans `docs/lpi/`).
+
+## Recette express (nouvelle vidéo de constante)
+
+1. `voix/<n>-<sujet>.script.json` (texte exact, une partie par scène) → `npm run voice -- …` (2 min).
+2. Copier `src/videos/frequence-respiratoire/` → `timeline.ts` (ids de scènes), `Scenes.tsx`, `mascot.ts`,
+   `<Video>.tsx` (scènes + transitions), puis déclarer la composition dans `src/Root.tsx` et la vidéo dans
+   `scripts/qa/check-mascot.ts`.
+3. Briques prêtes (`src/brand/`) : `episode.tsx` (mise en page `LAY`, `Head`, `Unit`, `Tag`, `BigNum`,
+   `CauseChip`, `Stopwatch`, `RecapScene`, `EndCard`, composition `Episode`, places `SPOT`, `runAcross`),
+   `cardio.tsx` (battements, ECG, cœur qui bat, onde de pouls), `breath.tsx` (respiration, poumons, thorax,
+   tracé respiratoire), `body.tsx` (poignet, doigts, pouce), `icons.tsx` (effort, fièvre, stress, douleur,
+   anxiété, médicament, sommeil, sportif, œil), `NormScale`, `TermSlam`, `Stage`, kit (`Stamp`, `CheckChip`…).
+4. Contrôle : `npm run check:mascot -- <épisode>` → `COMP=<Composition> OUT=out/qa SCALE=0.5 node scripts/qa/stills.mjs <frames…>`
+   → `npm run sheet -- out/qa` (planches ffmpeg) → relecture → rendu → `npm run sheet -- out/<vidéo>.mp4` (1 image/s).
 
 ## Rendu et contrôle
 
 - Navigateur : `--browser-executable=/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell`
   `--concurrency=4`. ≈ 3,5 s de calcul par seconde de vidéo (pas de 3D : trop lente).
 - Avant tout rendu complet : `npm run check:mascot -- <vidéo>`, puis images clés
-  `COMP=<Composition> OUT=out/stills node scripts/qa/stills.mjs <frames…>` + `python3 scripts/qa/contact_sheet.py out/stills`,
+  `COMP=<Composition> OUT=out/qa SCALE=0.5 node scripts/qa/stills.mjs <frames…>` + `npm run sheet -- out/qa`,
   relues planche par planche.
-- Livrer : MP4 complet + version web (`ffmpeg -crf 26`) + couverture PNG dans `out/` (non versionné).
+- Livrer : **le MP4 seul** dans `out/` (non versionné). Plus de version web ni de couverture (demandé).
+  Faire le ménage de `out/` (QA, anciens rendus) pour ne garder que les vidéos finales.

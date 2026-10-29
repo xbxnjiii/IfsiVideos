@@ -8,6 +8,8 @@ import {IconsSheet} from './videos/besoins-fondamentaux/IconsSheet';
 import {TL as BESOINS_TL} from './videos/besoins-fondamentaux/timeline';
 import {FrequenceCardiaque, FrequenceCardiaqueProps} from './videos/frequence-cardiaque/FrequenceCardiaque';
 import {TL as FC_TL} from './videos/frequence-cardiaque/timeline';
+import {FrequenceRespiratoire, FrequenceRespiratoireProps} from './videos/frequence-respiratoire/FrequenceRespiratoire';
+import {TL as FR_TL} from './videos/frequence-respiratoire/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -44,6 +46,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies FrequenceCardiaqueProps}
+		/>
+		{/* 05 · La fréquence respiratoire */}
+		<Composition
+			id="Frequence-Respiratoire"
+			component={FrequenceRespiratoire}
+			durationInFrames={FR_TL.total}
+			fps={FR_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies FrequenceRespiratoireProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition

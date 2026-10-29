@@ -15,6 +15,7 @@ pas de logiciel de montage, pas de banque d'images.
 | 02 | Les 7 constantes (T°, FC, FR, PA, SpO₂, glycémie, diurèse) + normes adultes (échelles animées) | `Constantes` | [voix/02-constantes.script.json](voix/02-constantes.script.json) | [storyboard](docs/lpi/storyboard-constantes.md) |
 | 03 | Les 14 besoins fondamentaux (Virginia Henderson), en 3 étapes | `Besoins-Fondamentaux` | [voix/03-besoins-fondamentaux.script.json](voix/03-besoins-fondamentaux.script.json) | [storyboard](docs/lpi/storyboard-besoins-fondamentaux.md) |
 | 04 | La fréquence cardiaque (une vidéo par constante, récap rapide) | `Frequence-Cardiaque` | [voix/04-frequence-cardiaque.script.json](voix/04-frequence-cardiaque.script.json) | [storyboard](docs/lpi/storyboard-frequence-cardiaque.md) |
+| 05 | La fréquence respiratoire (une vidéo par constante, récap rapide) | `Frequence-Respiratoire` | [voix/05-frequence-respiratoire.script.json](voix/05-frequence-respiratoire.script.json) | [storyboard](docs/lpi/storyboard-frequence-respiratoire.md) |
 
 ## Utilisation
 
@@ -24,6 +25,9 @@ npm run studio                  # aperçu interactif dans le navigateur
 npm run render:constantes       # -> out/02-constantes.mp4
 npm run render:besoins          # -> out/03-besoins-fondamentaux.mp4
 npm run render:fc               # -> out/04-frequence-cardiaque.mp4
+npm run render:fr               # -> out/05-frequence-respiratoire.mp4
+npm run voice -- voix/<script>.json <épisode>   # voix + timing mot à mot
+npm run sheet -- out/qa          # planches contact (ffmpeg)
 npm run check:mascot -- constantes   # vérifie le jeu de la mascotte d'une vidéo
 npm run sfx                     # regénère les bruitages (public/sfx)
 ```
@@ -44,7 +48,10 @@ src/
     kit.tsx                   stickers, tampons, puces cochées, rubans, progression par étapes, bulle
     Lesson3.tsx               gabarit d'une notion (titre, définition, illustration, termes, échelle des normes)
     NormScale.tsx             échelle des normes adulte (zones hypo / normo / hyper, curseur animé)
-    cardio.tsx                battements (rythme variable), impulsion du cœur, tracé ECG qui défile
+    episode.tsx               kit « une vidéo par constante » : mise en page, récap, logo, composition Episode
+    cardio.tsx                battements, cœur qui bat, tracé ECG, onde de pouls
+    breath.tsx                respiration (phase), poumons, thorax, tracé respiratoire
+    body.tsx, icons.tsx       poignet + doigts ; petites icônes (causes, situations)
     MascotActor.tsx           mascotte actrice : sauts, course, expressions au mot près, bustes libres
     pictos.tsx                pictogrammes et illustrations (thermomètre, cœur, poumons, artère…)
     timeline.ts               voix → frames : at(scène, mot)
@@ -57,9 +64,9 @@ public/
   fonts/, sfx/                polices embarquées, bruitages
 assets/planches/              planches originales de la mascotte et des logos (sources des découpes)
 scripts/
-  voice/                      tts_voix.py (voix de la marque) · align_voice.py (alignement mot à mot) · prepare_voice.py (vraie voix)
+  voice/                      tts_voix.py (voix de la marque + timing) · align_voice.py (voix enregistrée) · prepare_voice.py
   brand/                      découpe des planches (upscale_rgba, cut_v3, export_v3 ; v2 : cutout, upscale)
-  qa/                         contrôle : images clés, planches contact, check-mascot
+  qa/                         contrôle : images clés (stills.mjs), planches (sheet.sh), check-mascot
 voix/                         scripts de voix off (texte exact dit, une entrée par partie)
 docs/lpi/                     charte vidéo, storyboards, index visuel de la mascotte
 ```
@@ -67,9 +74,7 @@ docs/lpi/                     charte vidéo, storyboards, index visuel de la mas
 ## Nouvelle vidéo
 
 1. Texte exact dit par la voix dans `voix/<n>-<sujet>.script.json` (une entrée par partie).
-2. Voix : `python3 scripts/voice/tts_voix.py voix/<n>-<sujet>.script.json <dossier_tmp>` (voix de la marque),
-   puis `python3 scripts/voice/align_voice.py <dossier_tmp>/voix.wav voix/<n>-<sujet>.script.json <dossier>`
-   (dépendances : `ffmpeg`, `pip install edge-tts faster-whisper soundfile`). Vérifier l'alignement des
-   mots clés (un chiffre mal entendu peut décaler une phrase : la recaler dans `voice.json`).
+2. Voix : `npm run voice -- voix/<n>-<sujet>.script.json <dossier>` (voix de la marque + timing mot à mot ;
+   dépendances : `ffmpeg`, `pip install --break-system-packages edge-tts`). Recette complète : CLAUDE.md.
 3. Scènes dans `src/videos/<dossier>/`, chaque animation déclenchée par un mot : `at('b3', 'transmissions')`.
 4. Contrôle (charte, « Contrôle qualité ») puis rendu.

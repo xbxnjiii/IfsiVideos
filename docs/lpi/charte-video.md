@@ -101,6 +101,8 @@ Toujours dans la palette, sans effet lumineux :
 | `Lesson3` | gabarit complet d'une notion : numéro, titre 2 lignes, définition, socle, termes, échelle des normes (`scale`), caméra |
 | `NormScale` | échelle des normes adulte : zones nommées + bornes, curseur qui suit la valeur, zone active, cadre cible |
 | `EcgTrace`, `beatSchedule`, `lastBeat` (`cardio.tsx`) | tracé ECG qui défile (un QRS par battement), rythme qui change sans à-coup (régulier, rapide, lent, irrégulier), impulsion du cœur |
+| `BreathingLungs`, `Chest`, `BreathTrace`, `breathAt` (`breath.tsx`) | poumons qui respirent (rythme qui change sans à-coup), buste qui se soulève, tracé respiratoire (ample / superficiel / irrégulier) |
+| `Episode`, `RecapScene`, `Head`, `BigNum`, `CauseChip`, `Stopwatch` (`episode.tsx`) | kit « une vidéo par constante » : composition complète, récap rapide, titres, gros chiffres, causes, chronomètre |
 | `ChapterSlam` | gros numéro qui s'écrase au centre (éclats) puis file dans le coin du titre |
 | `TermSlam` | le terme « claque » en grand au centre (lettre par lettre), sa définition glisse, puis la carte file à sa place dans la fiche |
 | `Camera` | dérive très lente + petit coup de zoom (≈ 5 %) sur chaque mot clé |
