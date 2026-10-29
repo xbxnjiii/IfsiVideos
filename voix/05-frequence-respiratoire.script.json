@@ -1,7 +1,7 @@
 [
 	{
 		"id": "intro",
-		"text": "C'est quoi, la fréquence respiratoire ? Et comment la compter sans que le patient s'en rende compte ?"
+		"text": "C'est quoi, la fréquence respiratoire ?"
 	},
 	{
 		"id": "def",
@@ -9,7 +9,7 @@
 	},
 	{
 		"id": "mesure",
-		"text": "Pour la compter, regarde le thorax. Il se soulève, il redescend : un cycle. Compte pendant une minute entière. L'astuce : fais-le discrètement, en faisant semblant de prendre le pouls. Sinon, le patient change sa façon de respirer !"
+		"text": "Pour la compter, regarde le thorax. Il se soulève, il redescend : un cycle. Compte pendant une minute entière."
 	},
 	{
 		"id": "norme",
@@ -29,6 +29,6 @@
 	},
 	{
 		"id": "outro",
-		"text": "Petit récap ! La fréquence respiratoire, c'est le nombre de cycles par minute. On compte les mouvements du thorax pendant une minute, discrètement. La normale, entre 12 et 20. Au-dessus : tachypnée. En dessous : bradypnée. Et du mal à respirer : dyspnée !"
+		"text": "Petit récap ! La fréquence respiratoire, c'est le nombre de cycles par minute. On compte les mouvements du thorax pendant une minute. La normale, entre 12 et 20. Au-dessus : tachypnée. En dessous : bradypnée. Et du mal à respirer : dyspnée !"
 	}
 ]

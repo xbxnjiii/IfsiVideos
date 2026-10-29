@@ -10,10 +10,8 @@ const runAcross = (id: SceneId) => run(TL, start(id));
 export const MASCOT: Beat[] = [
 	/* ── accroche ── */
 	{at: abs('intro', 'quoi'), via: 'pop', key: 'expressions/questionnement', ...R},
-	// « sans que le patient s'en rende compte » : chut !
-	{at: abs('intro', 'sans'), key: 'gestes/chut', ...L},
 	// elle plonge dans les poumons (zoomInto)
-	{at: start('def') - 4, dur: 16, key: 'gestes/chut', x: 540, y: 820, size: 0},
+	{at: start('def') - 4, dur: 16, key: 'expressions/questionnement', x: 540, y: 820, size: 0},
 
 	/* ── définition ── */
 	{at: abs('def', 'nombre'), via: 'pop', key: 'situations/explique', ...L},
@@ -28,10 +26,7 @@ export const MASCOT: Beat[] = [
 	{at: abs('mesure', 'thorax'), via: 'pop', key: 'gestes/regardez', ...R},
 	{at: abs('mesure', 'cycle'), key: 'expressions/ok', ...R},
 	{at: abs('mesure', 'compte'), key: 'situations/prend-notes', ...R},
-	{at: abs('mesure', "l'astuce"), key: 'gestes/astuce', ...R},
-	{at: abs('mesure', 'discrètement'), key: 'gestes/chut', ...R},
-	{at: abs('mesure', 'semblant'), key: 'expressions/clin-doeil', ...R},
-	{at: abs('mesure', 'change'), key: 'expressions/surprise', ...R},
+	{at: abs('mesure', 'entière'), key: 'situations/valide', ...R},
 	...runAcross('norme'),
 
 	/* ── norme ── */
@@ -76,12 +71,11 @@ export const MASCOT: Beat[] = [
 	{at: abs('outro', 'fréquence'), via: 'pop', key: 'situations/recapitule', ...R},
 	{at: abs('outro', 'cycles'), key: 'situations/montre-poumons', ...R},
 	{at: abs('outro', 'thorax'), key: 'gestes/regardez', ...L},
-	{at: abs('outro', 'discrètement'), key: 'gestes/chut', ...L},
 	{at: abs('outro', 'normale'), key: 'situations/valide', ...R},
 	{at: abs('outro', 'tachypnée'), key: 'symptomes/essoufflee', fx: 'pant', ...L},
 	{at: abs('outro', 'bradypnée'), dur: 26, arc: 60, key: 'symptomes/dort', fx: 'slow', ...R},
 	{at: abs('outro', 'dyspnée'), key: 'symptomes/oppression', ...L},
-	{at: abs('outro', 'dyspnée') + 16, via: 'pop', key: 'gestes/bravo', fx: 'bounce', x: 540, y: 1735, size: 390},
+	{at: abs('outro', 'dyspnée') + 26, via: 'pop', key: 'gestes/bravo', fx: 'bounce', x: 540, y: 1735, size: 390},
 	// elle repart en courant avant le logo
 	{at: start('end') - 6, via: 'pop', key: 'poses/course', x: 640, y: 1890, size: 480},
 	{at: start('end') + 10, via: 'run', dur: 16, key: 'poses/course', x: 1460, y: 1890, size: 480},

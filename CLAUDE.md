@@ -62,7 +62,12 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
 - ≈ 1 min – 1 min 20, une notion par scène, barre de progression des notions, **récap rapide** à la fin
   (la voix résume, une fiche se construit ligne par ligne, puces cochées), pas d'appel à commenter.
 - **Pas de quiz** (ni annonce « petit test à la fin ») : retiré à la demande du propriétaire, ne plus en proposer.
-- Accroche = la question du sujet (« C'est quoi, la fréquence cardiaque ? ») + une promesse courte.
+- Accroche = la question du sujet (« C'est quoi, la fréquence respiratoire ? »), éventuellement + une promesse
+  très courte (la FR garde la question seule : « comment la compter sans qu'il s'en rende compte » retiré).
+- Récap : **pas de tampon final** (« Pro du souffle » retiré à la demande) — confettis + mascotte suffisent.
+- Rester simple et factuel : pas d'astuces « de terrain » mises en scène (retirées de la FR : compter
+  discrètement, faire semblant de prendre le pouls). Expliquer chaque qualificatif entre parenthèses
+  (ex. ample (profonde, beaucoup d'air), superficielle (peu profonde, peu d'air)).
 - Déroulé type : accroche · définition · mesure (geste + astuce) · norme adulte · trop haut · trop bas ·
   « pas que le chiffre » (rythme, amplitude…) · récap rapide · logo.
 - Modèles : `Frequence-Cardiaque` et `Frequence-Respiratoire` (`src/videos/frequence-*/`, storyboards dans `docs/lpi/`).

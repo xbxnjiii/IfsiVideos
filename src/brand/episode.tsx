@@ -180,8 +180,8 @@ export const RecapRow: React.FC<{at: number; next: number; sign: SignKind; label
 
 export type RecapLine = [at: number, sign: SignKind, label: React.ReactNode, sub: React.ReactNode];
 
-/** Scène récap complète : titre, lignes (≤ 6) au mot près, tampon final + confettis sur `done`. */
-export const RecapScene: React.FC<{title: string; kAt: number; rows: RecapLine[]; done: number; stamp: string}> = ({title, kAt, rows, done, stamp}) => (
+/** Scène récap complète : titre, lignes (≤ 6) au mot près, confettis (+ tampon facultatif) sur `done`. */
+export const RecapScene: React.FC<{title: string; kAt: number; rows: RecapLine[]; done: number; stamp?: string}> = ({title, kAt, rows, done, stamp}) => (
 	<AbsoluteFill>
 		<LiveBackground />
 		<Camera punches={[kAt + 5, ...rows.map(([t]) => t + 1), done]} shakes={[done + 1]} strength={0.03}>
@@ -189,13 +189,13 @@ export const RecapScene: React.FC<{title: string; kAt: number; rows: RecapLine[]
 			{rows.map(([t, sign, label, sub], i) => (
 				<RecapRow key={i} at={t} next={i < rows.length - 1 ? rows[i + 1][0] : done} sign={sign} label={label} sub={sub} y={430 + i * 128} />
 			))}
-			<Stamp at={done} x={540} y={1262} text={stamp} size={76} rot={-5} />
+			{stamp ? <Stamp at={done} x={540} y={1262} text={stamp} size={76} rot={-5} /> : null}
 			<Confetti at={done} x={540} y={900} n={60} />
 		</Camera>
 		{rows.map(([t]) => (
 			<Sfx key={t} name="pop" at={t} volume={0.11} />
 		))}
-		<Sfx name="stamp" at={done} volume={0.12} />
+		<Sfx name={stamp ? 'stamp' : 'ding'} at={done} volume={0.12} />
 	</AbsoluteFill>
 );
 

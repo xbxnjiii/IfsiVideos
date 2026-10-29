@@ -1,16 +1,15 @@
 // Scènes de « La fréquence respiratoire » : une notion = une scène, chaque mouvement part d'un mot de la voix.
 import React from 'react';
 import {AbsoluteFill, Easing, interpolate, useCurrentFrame} from 'remotion';
-import {PressFingers, RADIAL, Wrist} from '../../brand/body';
-import {breathAt, BreathingLungs, BreathSegments, BreathTrace, Chest, cyclesSince} from '../../brand/breath';
+import {Air, breathAt, BreathingLungs, BreathSegments, BreathTrace, cyclesSince} from '../../brand/breath';
 import {BigNum, CauseChip, Head, LAY, RecapScene, SLAM_Y, Stopwatch, termSlot, Unit} from '../../brand/episode';
-import {AnxietyIcon, EyeIcon, FeverIcon, PainIcon, PillIcon, RunIcon} from '../../brand/icons';
-import {CheckChip, Stamp, Sticker, Strike, usePop} from '../../brand/kit';
+import {AnxietyIcon, FeverIcon, PainIcon, PillIcon, RunIcon} from '../../brand/icons';
+import {CheckChip, Stamp, Strike, usePop} from '../../brand/kit';
 import {Seuil} from '../../brand/Lesson3';
 import {Sign} from '../../brand/learn';
 import {Burst, Camera, LiveBackground, Odometer, Stage, TermSlam} from '../../brand/motion3';
 import {NormScale, Zone} from '../../brand/NormScale';
-import {LungsPicto} from '../../brand/pictos';
+import {Lungs} from '../../brand/pictos';
 import {Sfx} from '../../brand/Sfx';
 import {alpha, FONT, LPI, SHADOW} from '../../brand/theme';
 import {clamp, Enter, Title, useSoft} from '../../brand/ui';
@@ -66,15 +65,13 @@ export const Hook: React.FC = () => {
 	const frame = useCurrentFrame();
 	const Q = at('intro', 'quoi');
 	const FR = at('intro', 'fréquence');
-	const COMMENT = at('intro', 'comment');
-	const SANS = at('intro', 'sans');
 	const seg: BreathSegments = [[0, CALM]];
 	const pop = usePop(2);
 	const qp = usePop(Q);
 	return (
 		<AbsoluteFill>
 			<LiveBackground />
-			<Camera punches={[Q + 1, FR + 1, COMMENT + 1, SANS + 1]} shakes={[Q + 2]} strength={0.04}>
+			<Camera punches={[Q + 1, FR + 1]} shakes={[Q + 2]} strength={0.04}>
 				<div style={{position: 'absolute', left: 72, top: 226, width: 936}}>
 					<Title at={0} text="C'est quoi la" size={74} stagger={3} brush={false} />
 				</div>
@@ -113,22 +110,9 @@ export const Hook: React.FC = () => {
 					</div>
 				) : null}
 				<Burst at={Q} x={875} y={675} r={200} n={12} />
-				<Sticker at={COMMENT} x={540} y={1200} rot={-4}>
-					<div style={{display: 'flex', alignItems: 'center', gap: 18, padding: '14px 34px 14px 18px', borderRadius: 999, background: LPI.blue, color: LPI.paper, fontFamily: FONT.title, fontWeight: 900, fontSize: 46, whiteSpace: 'nowrap'}}>
-						<div style={{width: 70, height: 70, borderRadius: 35, background: LPI.paper, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-							<LungsPicto size={52} />
-						</div>
-						Comment la compter ?
-					</div>
-				</Sticker>
-				<div style={{position: 'absolute', left: 0, right: 0, top: 1290, display: 'flex', justifyContent: 'center'}}>
-					<CheckChip at={SANS} label="Sans qu'il s'en rende compte" size={40} />
-				</div>
 			</Camera>
 			<Sfx name="pop" at={Q} volume={0.12} />
 			<Sfx name="whoosh" at={FR} volume={0.06} />
-			<Sfx name="pop" at={COMMENT} volume={0.1} />
-			<Sfx name="ding" at={SANS + 6} volume={0.07} />
 		</AbsoluteFill>
 	);
 };
@@ -231,92 +215,52 @@ export const Mesure: React.FC = () => {
 	const CYC = at('mesure', 'cycle');
 	const COMPTE = at('mesure', 'compte');
 	const MIN = at('mesure', 'minute');
-	const AST = at('mesure', "l'astuce");
-	const DISC = at('mesure', 'discrètement');
-	const SEMB = at('mesure', 'semblant');
-	const CHANGE = at('mesure', 'change');
-	// la cage se soulève sur « soulève », redescend sur « redescend »
+	// les poumons se gonflent sur « soulève », se vident sur « redescend », puis respirent normalement
 	const seg: BreathSegments = [[0, CALM]];
 	const b = breathAt(frame, seg);
-	const lift = frame < RED + 20 ? interpolate(frame, [SOUL - 4, SOUL + 12, RED, RED + 16], [0, 1, 1, 0], ease) : b.breath;
-	const chest = useSoft(TH - 4);
+	const manual = frame < RED + 20;
+	const breath = manual ? interpolate(frame, [SOUL - 4, SOUL + 12, RED, RED + 16], [0, 1, 1, 0], ease) : b.breath;
+	const inspiring = manual ? frame < RED : b.inspiring;
+	const q = manual ? (frame % 24) / 24 : b.q;
+	const lungs = useSoft(TH - 4);
 	const counted = cyclesSince(Math.min(frame, MIN), COMPTE, seg);
 	const count = frame < MIN ? counted : interpolate(frame, [MIN, MIN + 22], [counted, 16], ease);
 	const progress = frame < MIN ? interpolate(frame, [COMPTE, MIN], [0, 0.12], clamp) : interpolate(frame, [MIN, MIN + 22], [0.12, 1], ease);
 	const watch = useSoft(COMPTE, true);
-	const labels = interpolate(frame, [AST - 6, AST + 4], [1, 0], clamp);
-	const trick = useSoft(AST, true);
-	const fingers = interpolate(frame, [SEMB - 2, SEMB + 10], [0, 1], ease);
 	const cyc = usePop(CYC);
 	return (
 		<AbsoluteFill>
 			<LiveBackground />
-			<Camera punches={[TH + 1, SOUL + 1, RED + 1, CYC + 1, COMPTE + 1, AST + 1, DISC + 1, SEMB + 1, CHANGE + 1]} shakes={[CYC + 2]}>
+			<Camera punches={[TH + 1, SOUL + 1, RED + 1, CYC + 1, COMPTE + 1, MIN + 22]} shakes={[CYC + 2]}>
 				<Head kicker="Mesure" kAt={PC - 4} title="Compter les *cycles*" tAt={PC} />
-				<Stage y={LAY.stageY} h={LAY.stageH} at={PC + 2} bumps={[CYC, AST]}>
-					<div style={{position: 'absolute', left: 30, top: 40, opacity: Math.min(1, chest * 1.5), transform: `translateY(${(1 - chest) * 60}px)`}}>
-						<Chest breath={lift} size={400} />
+				<Stage y={LAY.stageY} h={LAY.stageH} at={PC + 2} bumps={[CYC, MIN + 22]}>
+					<div style={{position: 'absolute', left: 20, top: 70, opacity: Math.min(1, lungs * 1.5), transform: `translateY(${(1 - lungs) * 60}px)`}}>
+						<Lungs breath={breath} inspiring={inspiring} q={q} size={400} />
+						<Air q={q} inspiring={inspiring} x={200} y0={-20} y1={112} />
 					</div>
 					{/* il se soulève / il redescend */}
-					<div style={{position: 'absolute', left: 470, top: 90, display: 'flex', flexDirection: 'column', gap: 22, opacity: labels}}>
-						<PhasePill at={SOUL} label="il se soulève" up on={frame >= SOUL && frame < RED} />
-						<PhasePill at={RED} label="il redescend" up={false} on={frame >= RED} />
+					<div style={{position: 'absolute', left: 470, top: 90, display: 'flex', flexDirection: 'column', gap: 22}}>
+						<PhasePill at={SOUL} label="il se soulève" up on={frame >= SOUL && (manual ? frame < RED : b.inspiring)} />
+						<PhasePill at={RED} label="il redescend" up={false} on={frame >= RED && (manual || !b.inspiring)} />
 					</div>
-					{frame >= CYC && labels > 0 ? (
-						<div style={{position: 'absolute', left: 520, top: 330, opacity: labels, transform: `scale(${0.6 + 0.4 * cyc})`}}>
+					{frame >= CYC ? (
+						<div style={{position: 'absolute', left: 520, top: 330, transform: `scale(${0.6 + 0.4 * cyc})`}}>
 							<span style={{padding: '10px 30px', borderRadius: 999, background: LPI.pink, fontFamily: FONT.title, fontWeight: 900, fontSize: 52, color: N, boxShadow: SHADOW}}>= 1 cycle</span>
 						</div>
 					) : null}
-					{/* l'astuce : faire semblant de prendre le pouls en regardant le thorax */}
-					{frame >= AST ? (
-						<div style={{position: 'absolute', left: 440, top: 40, width: 480, height: 460, opacity: Math.min(1, trick * 1.5), transform: `scale(${0.7 + 0.3 * trick})`, transformOrigin: 'center'}}>
-							<div style={{position: 'absolute', left: 150, top: 0}}>
-								<EyeIcon size={110} />
-							</div>
-							<svg width={480} height={200} style={{position: 'absolute', left: 0, top: 30, overflow: 'visible'}}>
-								<path d="M150 55 C90 50 40 80 -10 120" fill="none" stroke={LPI.blue} strokeWidth={8} strokeDasharray="14 14" strokeDashoffset={-frame * 2} strokeLinecap="round" />
-								<path d="M-10 120 L12 96 M-10 120 L22 124" stroke={LPI.blue} strokeWidth={8} strokeLinecap="round" />
-							</svg>
-							<div style={{position: 'absolute', left: 0, top: 220, transform: 'scale(0.52)', transformOrigin: 'top left'}}>
-								<Wrist artery={1} pulse={0} glow={0} />
-								<div style={{position: 'absolute', left: RADIAL.x - 100, top: RADIAL.y - 400}}>
-									<PressFingers index={fingers} middle={fingers} press={0} />
-								</div>
-							</div>
-						</div>
-					) : null}
 				</Stage>
-				<Stamp at={DISC} x={740} y={LAY.stageY + 30} text="discrètement" color={LPI.blue} size={46} rot={-6} />
-				{frame >= SEMB ? (
-					<div style={{position: 'absolute', left: 500, top: LAY.stageY + 470}}>
-						<Enter at={SEMB} distance={20} bounce>
-							<div style={{padding: '10px 24px', borderRadius: 999, background: LPI.paper, border: `4px solid ${LPI.blue}`, fontFamily: FONT.title, fontWeight: 900, fontSize: 32, color: N, boxShadow: SHADOW, whiteSpace: 'nowrap'}}>
-								« je prends ton pouls… »
-							</div>
-						</Enter>
-					</div>
-				) : null}
 				{/* compter une minute entière */}
 				<div style={{position: 'absolute', left: 72, top: 1020, opacity: Math.min(1, watch * 1.5), transform: `scale(${0.6 + 0.4 * watch})`, transformOrigin: 'left top'}}>
-					<Stopwatch progress={progress} count={count} size={270} label="cycles" />
+					<Stopwatch progress={progress} count={count} size={300} label="cycles" />
 				</div>
-				<div style={{position: 'absolute', left: 380, top: 1060}}>
-					<CheckChip at={MIN} label="1 minute entière" size={42} />
+				<div style={{position: 'absolute', left: 410, top: 1070}}>
+					<CheckChip at={MIN} label="1 minute entière" size={44} />
 				</div>
 				{frame >= MIN + 22 ? (
-					<div style={{position: 'absolute', left: 380, top: 1166}}>
+					<div style={{position: 'absolute', left: 410, top: 1180}}>
 						<Enter at={MIN + 22} from="left" distance={40} bounce>
-							<div style={{display: 'flex', alignItems: 'baseline', fontFamily: FONT.title, fontWeight: 900, fontSize: 70, color: N}}>
-								= 16<Unit size={44}>cycles/min</Unit>
-							</div>
-						</Enter>
-					</div>
-				) : null}
-				{frame >= CHANGE ? (
-					<div style={{position: 'absolute', left: 0, right: 0, top: 1340, display: 'flex', justifyContent: 'center'}}>
-						<Enter at={CHANGE} distance={24} bounce>
-							<div style={{padding: '14px 30px', borderRadius: 999, background: LPI.pink, fontFamily: FONT.title, fontWeight: 900, fontSize: 40, color: N, boxShadow: SHADOW, whiteSpace: 'nowrap'}}>
-								sinon, il respire différemment !
+							<div style={{display: 'flex', alignItems: 'baseline', fontFamily: FONT.title, fontWeight: 900, fontSize: 76, color: N}}>
+								= 16<Unit size={46}>cycles/min</Unit>
 							</div>
 						</Enter>
 					</div>
@@ -327,10 +271,6 @@ export const Mesure: React.FC = () => {
 			<Sfx name="pop" at={RED} volume={0.1} />
 			<Sfx name="impact" at={CYC} volume={0.08} />
 			<Sfx name="ding" at={MIN + 22} volume={0.09} />
-			<Sfx name="pop" at={AST} volume={0.1} />
-			<Sfx name="stamp" at={DISC} volume={0.1} />
-			<Sfx name="pop" at={SEMB} volume={0.1} />
-			<Sfx name="buzz" at={CHANGE} volume={0.06} />
 		</AbsoluteFill>
 	);
 };
@@ -520,7 +460,7 @@ export const Brady: React.FC = () => {
 };
 
 /* ═══════════════════════════════ 6 · AMPLITUDE, RYTHME, DYSPNÉE ═══════════════════════════════ */
-const Lane: React.FC<{at: number; label: string; seg: BreathSegments; amp: number; hi: boolean; y: number}> = ({at: t0, label, seg, amp, hi, y}) => {
+const Lane: React.FC<{at: number; label: string; sub?: string; seg: BreathSegments; amp: number; hi: boolean; y: number}> = ({at: t0, label, sub, seg, amp, hi, y}) => {
 	const frame = useCurrentFrame();
 	const p = usePop(t0);
 	if (frame < t0) return null;
@@ -545,8 +485,11 @@ const Lane: React.FC<{at: number; label: string; seg: BreathSegments; amp: numbe
 				overflow: 'hidden',
 			}}
 		>
-			<div style={{width: 280, fontFamily: FONT.title, fontWeight: 900, fontSize: 36, color: hi ? LPI.blue : N, whiteSpace: 'nowrap'}}>{label}</div>
-			<BreathTrace segments={seg} width={600} height={100} amp={amp} stroke={7} />
+			<div style={{width: 360, flexShrink: 0}}>
+				<div style={{fontFamily: FONT.title, fontWeight: 900, fontSize: 36, color: hi ? LPI.blue : N, whiteSpace: 'nowrap', lineHeight: 1.1}}>{label}</div>
+				{sub ? <div style={{fontFamily: FONT.body, fontWeight: 700, fontSize: 27, color: alpha(N, 0.7), whiteSpace: 'nowrap'}}>{sub}</div> : null}
+			</div>
+			<BreathTrace segments={seg} width={520} height={100} amp={amp} stroke={7} />
 		</div>
 	);
 };
@@ -598,8 +541,8 @@ export const Obs: React.FC = () => {
 					</span>
 					<Unit size={64}>cycles/min</Unit>
 				</div>
-				<Lane at={AMPLE - 4} label="ample" seg={[[0, CALM]]} amp={40} hi={frame >= AMPLE && frame < SUP} y={560} />
-				<Lane at={SUP - 4} label="superficielle" seg={[[0, 44]]} amp={11} hi={frame >= SUP && frame < RY} y={692} />
+				<Lane at={AMPLE - 4} label="ample" sub="(profonde, beaucoup d'air)" seg={[[0, CALM]]} amp={40} hi={frame >= AMPLE && frame < SUP} y={560} />
+				<Lane at={SUP - 4} label="superficielle" sub="(peu profonde, peu d'air)" seg={[[0, 44]]} amp={11} hi={frame >= SUP && frame < RY} y={692} />
 				<Lane at={RY - 2} label={frame >= PAS ? 'irrégulier' : 'régulier ?'} seg={irregular} amp={32} hi={frame >= REG && frame < DY} y={824} />
 				<TermSlam index={0} at={DY} term="Dyspnée" meaning="difficulté à respirer" sign="alert" slamY={760} slot={{x: 72, y: 1010, w: 936}} active={frame >= DY} />
 			</Camera>
@@ -617,10 +560,9 @@ export const Outro: React.FC = () => (
 		title="Fréquence *respiratoire*"
 		kAt={at('outro', 'récap') - 4}
 		done={at('outro', 'dyspnée') + 16}
-		stamp="Pro du souffle !"
 		rows={[
 			[at('outro', 'cycles'), 'wave', 'cycles/min', 'inspiration + expiration'],
-			[at('outro', 'thorax'), 'device', 'Thorax · 1 minute', 'discrètement'],
+			[at('outro', 'thorax'), 'device', 'Thorax · 1 minute', 'on compte les cycles'],
 			[at('outro', 'normale'), 'check', '12 – 20', 'normale (adulte, repos)'],
 			[at('outro', 'tachypnée'), 'up', 'Tachypnée', '> 20 cycles/min'],
 			[at('outro', 'bradypnée'), 'down', 'Bradypnée', '< 12 cycles/min'],
