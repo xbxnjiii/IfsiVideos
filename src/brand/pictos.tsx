@@ -67,6 +67,25 @@ export const O2Picto: React.FC<P> = ({size = 72, color = NAVY}) => (
 	</svg>
 );
 
+/** glycémie : goutte de sang + morceau de sucre */
+export const GlucosePicto: React.FC<P> = (p) => (
+	<Line {...p}>
+		<path d="M40 14 C40 14 64 42 64 58 A24 24 0 0 1 16 58 C16 42 40 14 40 14 Z" />
+		<rect x="56" y="56" width="30" height="30" rx="6" />
+		<circle cx="65" cy="66" r="1.5" fill={p.color ?? NAVY} />
+		<circle cx="77" cy="76" r="1.5" fill={p.color ?? NAVY} />
+	</Line>
+);
+
+/** diurèse : bocal gradué (recueil des urines sur 24 h) */
+export const JarPicto: React.FC<P> = (p) => (
+	<Line {...p}>
+		<path d="M24 14 H76 M30 14 V80 A8 8 0 0 0 38 88 H62 A8 8 0 0 0 70 80 V14" />
+		<path d="M30 52 C40 47 50 57 70 50" />
+		<path d="M58 30 H70 M58 40 H70 M58 64 H70" />
+	</Line>
+);
+
 export const BodyPicto: React.FC<P> = (p) => (
 	<Line {...p}>
 		<circle cx="50" cy="20" r="10" />

@@ -13,7 +13,7 @@ const H = 1920;
 
 export const RemotionRoot: React.FC = () => (
 	<>
-		{/* 02 · Les 5 constantes (v5 : mascotte libre, symptômes, repères adultes) */}
+		{/* 02 · Les 7 constantes (v7 : + glycémie et diurèse, normes adultes, mascotte libre) */}
 		<Composition
 			id="Constantes"
 			component={Constantes}

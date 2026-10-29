@@ -1,10 +1,9 @@
-// v5 : même jeu que le pilote v4 (tempo, places, métaphores physiques) avec les NOUVELLES planches :
+// v7 (7 constantes) : même jeu que le pilote v4 (tempo, places, métaphores physiques) avec les NOUVELLES planches :
 // symptômes (fièvre, froid, essoufflement, vertige…), situations (schéma du cœur, des poumons, ECG…),
 // gestes ↑ / ↓ pour les chiffres. Bustes LIBRES (sans cadre), bas adouci par un fondu.
 import type {Beat} from '../../brand/MascotActor';
 import {L3} from '../../brand/Lesson3';
 import {RUN_WIPE} from '../../brand/motion4';
-import {BONUS_T} from './Bonus';
 import {HOOK_ROW} from './Bookends';
 import {abs, SCENE_IDS, SceneId, TL} from './timeline';
 
@@ -45,25 +44,26 @@ const fr = spots('left');
 // 4 termes : la fiche descend plus bas, la place « basse » se décale à gauche
 const pa = {...spots('right', undefined, 1250), low: {x: 280, y: 1680, size: 380} as Spot};
 const spo2 = spots('left');
+const gly = spots('right');
+const diu = spots('left');
 
 export const MASCOT: Beat[] = [
-	/* ── accroche ── elle arrive en courant et présente « Les 5 constantes » */
-	{at: 4, key: 'poses/course', x: -260, y: 1850, size: 700},
-	{at: 17, via: 'run', dur: 22, key: 'poses/presente', x: 520, y: 1850, size: 720},
-	{at: abs('intro', 'surtout'), key: 'expressions/alerte', x: 770, y: 1480, size: 420},
-	// « étudiant » : l'étudiante au sac à dos monte du bas de l'écran
-	{at: abs('intro', 'étudiant'), key: 'poses/sac-a-dos', x: 300, y: 1990, size: 780},
+	/* ── accroche ── elle arrive en courant et présente « Les 7 constantes » */
+	{at: 2, key: 'poses/course', x: -260, y: 1850, size: 700},
+	{at: 12, via: 'run', dur: 18, key: 'poses/presente', x: 520, y: 1850, size: 720},
 	{at: abs('intro', 'mots'), key: 'situations/revise', x: 760, y: 1600, size: 440},
-	{at: abs('intro', 'absolument'), via: 'pop', key: 'situations/a-retenir', x: 560, y: 1640, size: 470},
 	// elle plonge dans le picto « T° » (la caméra plonge avec elle : transition zoomInto)
-	{at: start('temp') - 4, dur: 16, key: 'situations/a-retenir', x: HOOK_ROW.xs[0], y: HOOK_ROW.y + 62, size: 0},
+	{at: start('temp') - 4, dur: 16, key: 'situations/revise', x: HOOK_ROW.xs[0], y: HOOK_ROW.y + 56, size: 0},
 
 	/* ── 1. température ── */
 	{at: abs('temp', 'évalue'), via: 'pop', key: 'situations/explique', ...temp.low},
 	{at: abs('temp', 'fièvre'), key: 'symptomes/fievre', ...temp.home},
 	{at: abs('temp', 'fébrile'), via: 'pop', key: 'symptomes/fievre-couverture', fx: 'pant', ...temp.top},
+	// « une petite fièvre » : clin d'œil (« juste un peu »), puis le coup de chaud sur « fébricule »
+	{at: abs('temp', 'petite'), key: 'gestes/facile', ...temp.home},
+	{at: abs('temp', 'fébricule'), via: 'pop', key: 'symptomes/coup-de-chaud', ...temp.bottom},
 	{at: abs('temp', "n'en"), key: 'expressions/neutre', ...temp.home},
-	{at: abs('temp', 'apyrétique'), via: 'pop', key: 'situations/valide', fx: 'bounce', ...temp.bottom},
+	{at: abs('temp', 'apyrétique'), via: 'pop', key: 'situations/valide', fx: 'bounce', ...temp.top},
 	{at: abs('temp', 'basse'), key: 'symptomes/froid', fx: 'shiver', ...temp.low},
 	{at: abs('temp', 'hypothermie'), key: 'symptomes/grelotte', fx: 'shiver', ...temp.low},
 	...runAcross('fc'),
@@ -122,29 +122,44 @@ export const MASCOT: Beat[] = [
 	{at: abs('spo2', 'désaturation'), key: 'expressions/inquiete', fx: 'pant', ...spo2.bottom},
 	{at: abs('spo2', 'manque'), key: 'symptomes/malaise', ...spo2.home},
 	{at: abs('spo2', 'hypoxémie'), key: 'gestes/attention', fx: 'pant', ...spo2.low},
+	...runAcross('gly'),
+
+	/* ── 6. glycémie ── */
+	{at: abs('gly', 'taux'), via: 'pop', key: 'situations/explique', ...gly.low},
+	{at: abs('gly', 'sang'), key: 'gestes/montre-haut', ...gly.home},
+	// « au bout du doigt » : la piqûre
+	{at: abs('gly', 'doigt'), key: 'accessoires/seringue', ...gly.home},
+	{at: abs('gly', 'lecteur'), via: 'pop', key: 'expressions/loupe', ...gly.top},
+	{at: abs('gly', 'trop'), key: 'expressions/surprise', ...gly.home},
+	{at: abs('gly', 'hyperglycémie'), via: 'pop', key: 'symptomes/epuisee', ...gly.bottom},
+	{at: abs('gly', 'pas'), key: 'symptomes/etourdie', ...gly.home},
+	// « hypoglycémie » : malaise, sueurs, tremblements
+	{at: abs('gly', 'hypoglycémie'), key: 'symptomes/malaise', fx: 'shiver', ...gly.low},
+	// elle s'envole avec le panoramique vers le haut
+	{at: start('diu') + 2, dur: 14, key: 'symptomes/malaise', x: 540, y: -520, size: 230},
+
+	/* ── 7. diurèse ── */
+	{at: abs('diu', 'volume'), via: 'pop', key: 'situations/explique', ...diu.low},
+	{at: abs('diu', '24'), key: 'situations/prend-notes', ...diu.home},
+	{at: abs('diu', 'pas'), key: 'expressions/inquiete', ...diu.home},
+	{at: abs('diu', 'oligurie'), via: 'pop', key: 'gestes/baisse', ...diu.bottom},
+	{at: abs('diu', 'presque'), key: 'gestes/probleme', ...diu.home},
+	{at: abs('diu', 'anurie'), via: 'pop', key: 'gestes/attention', fx: 'pant', ...diu.top},
+	// « beaucoup trop » : elle file aux toilettes en courant
+	{at: abs('diu', 'beaucoup') - 4, via: 'pop', key: 'poses/course', x: -260, y: 1840, size: 560},
+	{at: abs('diu', 'beaucoup') + 8, via: 'run', dur: 12, key: 'poses/course', x: 1400, y: 1840, size: 560},
+	{at: abs('diu', 'polyurie'), via: 'pop', key: 'symptomes/toilettes', ...diu.bottom},
 
 	/* ── récap ── elle saute vers le récap pendant la vague, puis rappelle sa pose de chaque constante */
-	{at: abs('outro', 'récapitulons') + 4, dur: 18, key: 'situations/recapitule', x: 540, y: 1640, size: 440},
-	{at: abs('outro', 'température'), key: 'symptomes/fievre', x: 300, y: 1660, size: 360},
-	{at: abs('outro', 'fréquence'), key: 'situations/montre-schema', x: 540, y: 1600, size: 360},
-	{at: abs('outro', 'fréquence', 2), key: 'situations/montre-poumons', x: 780, y: 1660, size: 360},
-	{at: abs('outro', 'pression'), key: 'accessoires/tensiometre', x: 540, y: 1600, size: 360},
-	{at: abs('outro', 'spo2'), key: 'expressions/loupe', x: 540, y: 1600, size: 360},
-	{at: abs('outro', 'spo2') + 16, via: 'pop', key: 'gestes/bravo', fx: 'bounce', x: 540, y: 1620, size: 480},
-	{at: abs('outro', 'enregistre'), key: 'situations/lit-cours', x: 860, y: 1340, size: 280},
-	{at: abs('outro', 'commentaire'), key: 'situations/pose-question', x: 850, y: 1480, size: 300},
-	// au revoir en pied (puis elle s'envole vers la fiche bonus)
-	{at: abs('outro', 'pas'), key: 'poses/main-levee', x: 850, y: 1880, size: 640},
-	/* ── bonus (sans voix) : glycémie puis diurèse ── */
-	{at: start('bonus') + 2, dur: 14, key: 'poses/main-levee', x: 540, y: -520, size: 300},
-	{at: start('bonus') + BONUS_T.stamp + 6, via: 'pop', key: 'gestes/astuce', fx: 'bounce', x: 540, y: 1700, size: 420},
-	{at: start('bonus') + BONUS_T.cardA + 6, key: 'expressions/loupe', x: 300, y: 1700, size: 400},
-	{at: start('bonus') + BONUS_T.hypo, key: 'symptomes/malaise', fx: 'shiver', x: 300, y: 1700, size: 400},
-	{at: start('bonus') + BONUS_T.hyper, key: 'expressions/surprise', x: 300, y: 1700, size: 400},
-	{at: start('bonus') + BONUS_T.cardB + 4, key: 'symptomes/toilettes', x: 780, y: 1700, size: 400},
-	{at: start('bonus') + BONUS_T.anurie, key: 'expressions/inquiete', x: 780, y: 1700, size: 400},
-	{at: start('bonus') + BONUS_T.poly, key: 'expressions/genee', x: 780, y: 1700, size: 400},
-	{at: start('bonus') + BONUS_T.hint + 2, key: 'situations/a-retenir', x: 540, y: 1720, size: 430},
+	{at: abs('outro', 'récapitulons') + 4, dur: 18, key: 'situations/recapitule', x: 540, y: 1660, size: 420},
+	{at: abs('outro', 'température'), key: 'symptomes/fievre', x: 300, y: 1680, size: 340},
+	{at: abs('outro', 'fréquence'), key: 'situations/montre-schema', x: 540, y: 1640, size: 340},
+	{at: abs('outro', 'fréquence', 2), key: 'situations/montre-poumons', x: 780, y: 1680, size: 340},
+	{at: abs('outro', 'pression'), key: 'accessoires/tensiometre', x: 540, y: 1640, size: 340},
+	{at: abs('outro', 'spo2'), key: 'expressions/loupe', x: 300, y: 1680, size: 340},
+	{at: abs('outro', 'glycémie'), key: 'accessoires/seringue', x: 540, y: 1640, size: 340},
+	{at: abs('outro', 'diurèse'), via: 'pop', key: 'symptomes/toilettes', x: 780, y: 1680, size: 340},
+	{at: abs('outro', 'diurèse') + 30, via: 'pop', key: 'gestes/bravo', fx: 'bounce', x: 540, y: 1660, size: 480},
 	// elle repart en courant avant le logo
 	{at: start('end') - 6, via: 'pop', key: 'poses/course', x: 640, y: 1850, size: 600},
 	{at: start('end') + 10, via: 'run', dur: 16, key: 'poses/course', x: 1460, y: 1850, size: 600},

@@ -57,23 +57,36 @@ export const ZONES = {
 	],
 	fc: [
 		{name: 'bradycardie', range: '< 60 bpm', tone: 'low', w: 1, lo: 30, hi: 60},
-		{name: 'normocardie', range: '60 – 100 bpm', tone: 'norm', w: 1.15, lo: 60, hi: 100},
+		{name: 'normale', range: '60 – 100 bpm', tone: 'norm', w: 1.15, lo: 60, hi: 100},
 		{name: 'tachycardie', range: '≥ 100 bpm', tone: 'high', w: 1, lo: 100, hi: 150},
 	],
 	fr: [
 		{name: 'bradypnée', range: '< 12 cycles/min', tone: 'low', w: 1, lo: 4, hi: 12},
-		{name: 'eupnée', range: '12 – 20 cycles/min', tone: 'norm', w: 1.1, lo: 12, hi: 20},
+		{name: 'normale', range: '12 – 20 cycles/min', tone: 'norm', w: 1.1, lo: 12, hi: 20},
 		{name: 'tachypnée', range: '> 20 cycles/min', tone: 'high', w: 1, lo: 20, hi: 36},
 	],
 	pa: [
 		{name: 'hypotension', range: '< 90/60', tone: 'low', w: 1, lo: 60, hi: 90},
-		{name: 'normotension', range: '≈ 120/80 mmHg', tone: 'norm', w: 1.15, lo: 90, hi: 140},
+		{name: 'normale', range: '≈ 120/80 mmHg', tone: 'norm', w: 1.15, lo: 90, hi: 140},
 		{name: 'hypertension', range: '> 140/90', tone: 'high', w: 1, lo: 140, hi: 190},
 	],
 	spo2: [
 		{name: 'hypoxémie', range: '< 90 %', tone: 'high', w: 1, lo: 80, hi: 90},
 		{name: 'désaturation', range: '90 – 95 %', tone: 'mid', w: 1, lo: 90, hi: 95},
-		{name: 'normoxie', range: '> 95 à 100 %', tone: 'norm', w: 1.1, lo: 95, hi: 100.5},
+		{name: 'normale', range: '> 95 à 100 %', tone: 'norm', w: 1.1, lo: 95, hi: 100.5},
+	],
+	gly: [
+		{name: 'hypoglycémie', range: '< 0,70 g/l', tone: 'low', w: 1, lo: 0.3, hi: 0.7},
+		{name: 'normoglycémie', range: '0,70 – 1,10 g/l', tone: 'norm', w: 1.15, lo: 0.7, hi: 1.1},
+		{name: 'hyperglycémie', range: '> 1,10 g/l', tone: 'high', w: 1, lo: 1.1, hi: 2},
+	],
+	diu: [
+		{name: 'anurie', range: '< 100', tone: 'high', w: 0.95, lo: 0, hi: 100},
+		{name: 'oligurie', range: '< 400', tone: 'mid', w: 1, lo: 100, hi: 400},
+		{name: '', tone: 'gap', w: 0.3, lo: 400, hi: 600},
+		{name: 'normodiurèse', range: '600 – 2000', tone: 'norm', w: 1.35, lo: 600, hi: 2000},
+		{name: '', tone: 'gap', w: 0.3, lo: 2000, hi: 2500},
+		{name: 'polyurie', range: '> 2500 à 3000', tone: 'low', w: 1.15, lo: 2500, hi: 4000},
 	],
 } satisfies Record<string, Zone[]>;
 
@@ -203,19 +216,21 @@ export const Temperature: React.FC = () => {
 	const D = at('temp', 'évalue');
 	const FIEVRE = at('temp', 'fièvre');
 	const FEB = at('temp', 'fébrile');
+	const PETITE = at('temp', 'petite');
+	const FEBR = at('temp', 'fébricule');
 	const PAS = at('temp', 'pas');
 	const APY = at('temp', 'apyrétique');
 	const BASSE = at('temp', 'basse');
 	const HYP = at('temp', 'hypothermie');
 	const value = interpolate(
 		frame,
-		[N + 20, N + 46, FIEVRE - 2, FIEVRE + 18, PAS - 2, PAS + 16, BASSE - 4, BASSE + 14],
-		[35.4, 36.7, 36.7, 39.2, 39.2, 36.8, 36.8, 34.6],
+		[N + 20, N + 46, FIEVRE - 2, FIEVRE + 18, PETITE - 2, PETITE + 14, PAS - 2, PAS + 16, BASSE - 4, BASSE + 14],
+		[35.4, 36.7, 36.7, 39.2, 39.2, 37.7, 37.7, 36.8, 36.8, 34.6],
 		ease,
 	);
-	const hot = interpolate(frame, [FIEVRE + 4, FIEVRE + 14, PAS, PAS + 8], [0, 1, 1, 0], clamp);
+	const hot = interpolate(frame, [FIEVRE + 4, FIEVRE + 14, PETITE, PETITE + 8, PAS, PAS + 8], [0, 1, 1, 0.45, 0.45, 0], clamp);
 	const cold = interpolate(frame, [BASSE, BASSE + 10], [0, 1], clamp);
-	const hotFill = interpolate(frame, [FIEVRE + 2, FIEVRE + 18, PAS, PAS + 14], [0, 1, 1, 0], clamp);
+	const hotFill = interpolate(frame, [FIEVRE + 2, FIEVRE + 18, PETITE, PETITE + 12, PAS, PAS + 14], [0, 1, 1, 0.5, 0.5, 0], clamp);
 	const coldFill = interpolate(frame, [BASSE, BASSE + 14], [0, 1], clamp);
 	const num = useSoft(N + 24, true);
 	return (
@@ -233,9 +248,10 @@ export const Temperature: React.FC = () => {
 				{color: PINK, level: hotFill},
 				{color: COLD, level: coldFill},
 			]}
-			punches={[FIEVRE + 6, BASSE + 4]}
+			punches={[FIEVRE + 6, PETITE + 4, BASSE + 4]}
 			terms={[
 				{at: FEB, term: 'Fébrile', meaning: <>fièvre, hyperthermie <Seuil>≥ 38 °C</Seuil></>, sign: 'up'},
+				{at: FEBR, term: 'Fébricule', meaning: <>petite fièvre <Seuil>37,5 – 37,9 °C</Seuil></>, sign: 'up'},
 				{at: APY, term: 'Apyrétique', meaning: <>pas de fièvre <Seuil>36,5 – 37,5 °C</Seuil></>, sign: 'check'},
 				{at: HYP, term: 'Hypothermie', meaning: <>température trop basse <Seuil>&lt; 35 °C</Seuil></>, sign: 'down'},
 			]}
@@ -267,6 +283,7 @@ export const Temperature: React.FC = () => {
 						size={32}
 						states={[
 							{at: FIEVRE, kind: 'up', label: 'fièvre'},
+							{at: PETITE, kind: 'up', label: 'petite fièvre'},
 							{at: PAS, kind: 'check', label: 'pas de fièvre'},
 							{at: BASSE, kind: 'down', label: 'trop basse'},
 						]}
@@ -801,3 +818,354 @@ export const Saturation: React.FC = () => {
 	);
 };
 
+/* ═══════════════════════ 6 — GLYCÉMIE ═══════════════════════ */
+
+/** Doigt stylisé (vu de profil) : une goutte de sang perle au bout. */
+const Finger: React.FC<{drop: number}> = ({drop}) => (
+	<svg width={330} height={230} viewBox="0 0 330 230" style={{overflow: 'visible'}}>
+		<path d="M-40 70 H250 A40 40 0 0 1 250 150 H-40" fill={LPI.paper} stroke={LPI.navy} strokeWidth={9} strokeLinejoin="round" />
+		<path d="M224 76 H262 A14 14 0 0 1 262 104 H224 A6 6 0 0 1 218 98 V82 A6 6 0 0 1 224 76 Z" fill={alpha(LPI.sky, 0.9)} stroke={LPI.navy} strokeWidth={6} />
+		<path d="M110 90 V130 M150 90 V130" stroke={alpha(LPI.navy, 0.3)} strokeWidth={6} strokeLinecap="round" />
+		<g transform={`translate(270 146) scale(${drop})`}>
+			<path d="M0 0 C-12 16 -17 28 -17 36 A17 17 0 0 0 17 36 C17 28 12 16 0 0 Z" fill={LPI.pink} stroke={LPI.navy} strokeWidth={6} strokeLinejoin="round" />
+		</g>
+	</svg>
+);
+
+/** Lecteur de glycémie : bandelette à gauche, écran avec la valeur en g/l. */
+const Glucometer: React.FC<{value: number; strip: number; blood: number; tone: string | null; beep: number}> = ({value, strip, blood, tone, beep}) => (
+	<div style={{position: 'relative', width: 440, height: 250}}>
+		{/* bandelette qui sort vers le doigt */}
+		<div
+			style={{
+				position: 'absolute',
+				left: -150 * strip,
+				top: 124,
+				width: 160,
+				height: 30,
+				borderRadius: 8,
+				background: LPI.paper,
+				border: `6px solid ${LPI.navy}`,
+				boxSizing: 'border-box',
+			}}
+		>
+			<div style={{position: 'absolute', left: 6, top: 3, width: 26 * blood, height: 12, borderRadius: 6, background: LPI.pink}} />
+			<div style={{position: 'absolute', right: 20, top: 3, width: 40, height: 12, borderRadius: 4, background: LPI.blue}} />
+		</div>
+		<div
+			style={{
+				position: 'absolute',
+				inset: 0,
+				borderRadius: 60,
+				background: LPI.blue,
+				border: `9px solid ${LPI.navy}`,
+				boxSizing: 'border-box',
+				transform: `scale(${1 + 0.03 * beep})`,
+			}}
+		>
+			<div
+				style={{
+					position: 'absolute',
+					left: 26,
+					top: 26,
+					width: 290,
+					height: 180,
+					borderRadius: 30,
+					background: tone ? alpha(tone, 0.6) : LPI.paper,
+					border: `6px solid ${LPI.navy}`,
+					boxSizing: 'border-box',
+					display: 'flex',
+					flexDirection: 'column',
+					alignItems: 'center',
+					justifyContent: 'center',
+				}}
+			>
+				<Odometer value={value} decimals={2} places={1} size={100} />
+				<div style={{fontFamily: FONT.title, fontWeight: 800, fontSize: 34, color: LPI.blue, marginTop: -6}}>g/l</div>
+			</div>
+			<div
+				style={{
+					position: 'absolute',
+					left: 334,
+					top: 84,
+					width: 66,
+					height: 66,
+					borderRadius: 33,
+					background: LPI.sky,
+					border: `6px solid ${LPI.navy}`,
+					boxSizing: 'border-box',
+				}}
+			/>
+		</div>
+	</div>
+);
+
+/** Morceaux de sucre qui pleuvent (hyperglycémie). */
+const SugarRain: React.FC<{on: number}> = ({on}) => {
+	const frame = useCurrentFrame();
+	if (on <= 0) return null;
+	return (
+		<>
+			{Array.from({length: 10}, (_, i) => {
+				const x = 30 + random(`gx${i}`) * 860;
+				const y = ((frame * (3 + random(`gv${i}`) * 2) + random(`gy${i}`) * 440) % 480) - 50;
+				const s = 34 + random(`gs${i}`) * 18;
+				return (
+					<div
+						key={i}
+						style={{
+							position: 'absolute',
+							left: x,
+							top: y,
+							width: s,
+							height: s,
+							borderRadius: 8,
+							background: LPI.paper,
+							border: `5px solid ${LPI.navy}`,
+							opacity: on * 0.9,
+							transform: `rotate(${frame * 3 + i * 40}deg)`,
+						}}
+					/>
+				);
+			})}
+		</>
+	);
+};
+
+export const Glycemie: React.FC = () => {
+	const frame = useCurrentFrame();
+	const N = at('gly', 'six');
+	const T = at('gly', 'glycémie');
+	const D = at('gly', 'taux');
+	const DOIGT = at('gly', 'doigt');
+	const LECT = at('gly', 'lecteur');
+	const TROP = at('gly', 'trop');
+	const HYPER = at('gly', 'hyperglycémie');
+	const PAS = at('gly', 'pas');
+	const HYPO = at('gly', 'hypoglycémie');
+	const value = interpolate(frame, [LECT + 6, LECT + 26, TROP - 2, TROP + 16, PAS - 2, PAS + 14], [0, 0.95, 0.95, 1.45, 1.45, 0.55], ease);
+	const finger = useSoft(D - 4);
+	const drop = useSoft(DOIGT);
+	const device = useSoft(N + 22, true);
+	const strip = interpolate(frame, [LECT - 2, LECT + 8], [0, 1], ease);
+	const blood = interpolate(frame, [LECT + 6, LECT + 12], [0, 1], clamp);
+	const beep = frame >= LECT + 26 ? Math.exp(-(frame - LECT - 26) / 4) : 0;
+	const high = interpolate(frame, [TROP, TROP + 14, PAS, PAS + 12], [0, 1, 1, 0], clamp);
+	const low = interpolate(frame, [PAS, PAS + 14], [0, 1], clamp);
+	const tone = frame >= PAS ? LPI.sky : frame >= TROP ? LPI.pink : null;
+	return (
+		<Lesson3
+			n={6}
+			scale={<NormScale zones={ZONES.gly} value={value} at={D + 8} markerAt={LECT + 20} y={scaleY()} />}
+			slotSide="right"
+			shake
+			nAt={N}
+			title={['La', 'glycémie']}
+			titleAt={T}
+			definition="Taux de sucre dans le sang"
+			defAt={D}
+			layers={[
+				{color: PINK, level: high},
+				{color: COLD, level: low},
+			]}
+			punches={[DOIGT + 2, TROP + 4, PAS + 4]}
+			terms={[
+				{at: LECT, term: 'Lecteur de glycémie', meaning: 'une goutte de sang au bout du doigt', sign: 'device'},
+				{at: HYPER, term: 'Hyperglycémie', meaning: <>trop de sucre <Seuil>&gt; 1,10 g/l</Seuil></>, sign: 'up'},
+				{at: HYPO, term: 'Hypoglycémie', meaning: <>pas assez de sucre <Seuil>&lt; 0,70 g/l</Seuil></>, sign: 'down'},
+			]}
+			stage={
+				<>
+					<SugarRain on={high} />
+					<div style={{position: 'absolute', left: 0, top: 126, opacity: Math.min(1, finger * 1.5), transform: `translateX(${(1 - finger) * -260}px)`}}>
+						<Finger drop={drop} />
+					</div>
+					<div
+						style={{
+							position: 'absolute',
+							left: 452,
+							top: 150,
+							opacity: Math.min(1, device * 1.5),
+							transform: `translateX(${(1 - device) * 300}px) rotate(${Math.sin(frame / 3) * 2 * high}deg)`,
+						}}
+					>
+						<Glucometer value={value} strip={strip} blood={blood} tone={tone} beep={beep} />
+					</div>
+					<StatePill
+						x={470}
+						y={44}
+						size={36}
+						states={[
+							{at: TROP, kind: 'up', label: 'trop de sucre'},
+							{at: PAS, kind: 'down', label: 'pas assez'},
+						]}
+					/>
+				</>
+			}
+		/>
+	);
+};
+
+/* ═══════════════════════ 7 — DIURÈSE ═══════════════════════ */
+
+const JAR_MAX = 3500;
+
+/** Bocal gradué de recueil des urines (24 h) : le niveau suit la diurèse, les gouttes tombent du tuyau. */
+const Jar: React.FC<{value: number; drops: number[]}> = ({value, drops}) => {
+	const frame = useCurrentFrame();
+	const lvl = (v: number) => 380 - (Math.min(v, JAR_MAX) / JAR_MAX) * 316;
+	const top = lvl(value);
+	const wave = Array.from({length: 11}, (_, i) => {
+		const x = 30 + i * 20;
+		return `${x},${top + 5 * Math.sin(i / 1.3 + frame / 5)}`;
+	}).join(' ');
+	return (
+		<svg width={260} height={400} viewBox="0 0 260 400" style={{overflow: 'visible'}}>
+			<defs>
+				<clipPath id="lpi-jar">
+					<path d="M44 64 H216 V356 Q216 384 188 384 H72 Q44 384 44 356 Z" />
+				</clipPath>
+			</defs>
+			{/* tuyau qui amène les urines */}
+			<path d="M130 -24 V40" stroke={LPI.navy} strokeWidth={16} strokeLinecap="round" />
+			<path d="M130 -24 V40" stroke={LPI.sky} strokeWidth={7} strokeLinecap="round" />
+			<g clipPath="url(#lpi-jar)">
+				<polygon points={`${wave} 240,400 20,400`} fill={alpha(LPI.sky, 0.95)} />
+				<polyline points={wave} fill="none" stroke={LPI.blue} strokeWidth={6} strokeLinejoin="round" />
+			</g>
+			{drops.map((d, i) => {
+				const t = (frame - d) / 12;
+				if (t < 0 || t > 1) return null;
+				const y = 46 + t * t * (top - 46);
+				return <path key={i} d={`M130 ${y - 14} C124 ${y - 4} 120 ${y + 2} 120 ${y + 6} A10 10 0 0 0 140 ${y + 6} C140 ${y + 2} 136 ${y - 4} 130 ${y - 14} Z`} fill={LPI.blue} />;
+			})}
+			<path d="M44 64 H216 V356 Q216 384 188 384 H72 Q44 384 44 356 Z" fill="none" stroke={LPI.navy} strokeWidth={10} strokeLinejoin="round" />
+			<rect x="28" y="36" width="204" height="34" rx="12" fill={LPI.blue} stroke={LPI.navy} strokeWidth={8} />
+			{[1000, 2000, 3000].map((g) => (
+				<g key={g}>
+					<path d={`M172 ${lvl(g)} H206`} stroke={LPI.navy} strokeWidth={6} strokeLinecap="round" />
+					<text x="166" y={lvl(g) + 8} textAnchor="end" fontFamily={FONT.body} fontWeight={800} fontSize="22" fill={alpha(LPI.navy, 0.75)}>
+						{g / 1000} L
+					</text>
+				</g>
+			))}
+		</svg>
+	);
+};
+
+/** Petite horloge « 24 h » dont l'aiguille fait le tour du cadran. */
+const Clock24: React.FC<{at: number}> = ({at: t0}) => {
+	const frame = useCurrentFrame();
+	const p = usePop(t0);
+	if (frame < t0) return null;
+	const turn = interpolate(frame, [t0 + 2, t0 + 26], [0, 360], ease);
+	return (
+		<div style={{opacity: Math.min(1, p * 2), transform: `scale(${0.4 + 0.6 * p})`, display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+			<svg width={120} height={120} viewBox="-60 -60 120 120">
+				<circle r={52} fill={LPI.paper} stroke={LPI.navy} strokeWidth={8} />
+				<path d={`M0 0 L0 -36 A36 36 0 ${turn > 180 ? 1 : 0} 1 ${36 * Math.sin((turn * Math.PI) / 180)} ${-36 * Math.cos((turn * Math.PI) / 180)} Z`} fill={alpha(LPI.sky, 0.9)} />
+				<g transform={`rotate(${turn})`}>
+					<path d="M0 6 V-38" stroke={LPI.navy} strokeWidth={7} strokeLinecap="round" />
+				</g>
+				<circle r={7} fill={LPI.pink} stroke={LPI.navy} strokeWidth={3} />
+			</svg>
+			<div style={{fontFamily: FONT.title, fontWeight: 900, fontSize: 34, color: LPI.navy, marginTop: 2}}>24 h</div>
+		</div>
+	);
+};
+
+/** Instants des gouttes : la cadence suit le volume (beaucoup d'urine = goutte à goutte rapide). */
+const dropTimes = (frame: number, start: number, vAt: (f: number) => number) => {
+	const out: number[] = [];
+	let ph = 0;
+	for (let f = start; f <= frame; f++) {
+		const v = vAt(f);
+		const period = v < 120 ? 0 : interpolate(v, [120, 400, 1500, 3200], [60, 34, 16, 6], clamp);
+		if (period <= 0) continue;
+		ph += 1 / period;
+		if (ph >= 1) {
+			ph -= 1;
+			out.push(f);
+		}
+	}
+	return out.slice(-6);
+};
+
+export const Diurese: React.FC = () => {
+	const frame = useCurrentFrame();
+	const N = at('diu', 'sept');
+	const T = at('diu', 'diurèse');
+	const D = at('diu', 'volume');
+	const H24 = at('diu', '24');
+	const PAS = at('diu', 'pas');
+	const OLI = at('diu', 'oligurie');
+	const PRESQUE = at('diu', 'presque');
+	const ANU = at('diu', 'anurie');
+	const TROP = at('diu', 'beaucoup');
+	const POLY = at('diu', 'polyurie');
+	const vAt = (f: number) =>
+		interpolate(f, [N + 22, N + 50, PAS - 2, PAS + 16, PRESQUE - 2, PRESQUE + 14, TROP - 2, TROP + 18], [0, 1500, 1500, 300, 300, 60, 60, 3200], ease);
+	const value = vAt(frame);
+	const drops = dropTimes(frame, N + 22, vAt);
+	const num = useSoft(N + 24, true);
+	const jar = useSoft(N + 18, true);
+	const low = interpolate(frame, [PAS, PAS + 14, TROP, TROP + 12], [0, 1, 1, 0], clamp);
+	const high = interpolate(frame, [TROP, TROP + 14], [0, 1], clamp);
+	return (
+		<Lesson3
+			n={7}
+			scale={<NormScale zones={ZONES.diu} value={value} at={D + 8} markerAt={N + 50} y={scaleY()} nameSize={23} rangeSize={20} />}
+			slotSide="left"
+			shake
+			nAt={N}
+			title={['La', 'diurèse']}
+			titleAt={T}
+			definition="Volume d'urine sur 24 heures"
+			defAt={D}
+			layers={[
+				{color: COLD, level: low},
+				{color: PINK, level: high},
+			]}
+			punches={[H24 + 2, PAS + 4, PRESQUE + 4, TROP + 4]}
+			terms={[
+				{at: OLI, term: 'Oligurie', meaning: <>pas assez d'urine <Seuil>&lt; 400 ml/24 h</Seuil></>, sign: 'down'},
+				{at: ANU, term: 'Anurie', meaning: <>presque plus d'urine <Seuil>&lt; 100 ml/24 h</Seuil></>, sign: 'empty'},
+				{at: POLY, term: 'Polyurie', meaning: <>trop d'urine <Seuil>&gt; 2500 à 3000 ml/24 h</Seuil></>, sign: 'up'},
+			]}
+			stage={
+				<>
+					<div style={{position: 'absolute', left: 60, top: 30, opacity: Math.min(1, jar * 1.5), transform: `translateY(${(1 - jar) * 60}px)`}}>
+						<Jar value={value} drops={drops} />
+					</div>
+					<div
+						style={{
+							position: 'absolute',
+							left: 360,
+							top: 64,
+							display: 'flex',
+							alignItems: 'baseline',
+							opacity: Math.min(1, num * 1.5),
+							transform: `translateY(${(1 - num) * 30}px)`,
+						}}
+					>
+						<Odometer value={value} places={4} size={132} color={high > 0.5 ? LPI.blue : LPI.navy} />
+						<Unit size={46}>ml</Unit>
+					</div>
+					<div style={{position: 'absolute', left: 790, top: 30}}>
+						<Clock24 at={H24} />
+					</div>
+					<StatePill
+						x={372}
+						y={250}
+						size={34}
+						states={[
+							{at: PAS, kind: 'down', label: 'pas assez'},
+							{at: PRESQUE, kind: 'empty', label: 'presque plus du tout'},
+							{at: TROP, kind: 'up', label: 'beaucoup trop'},
+						]}
+					/>
+				</>
+			}
+		/>
+	);
+};

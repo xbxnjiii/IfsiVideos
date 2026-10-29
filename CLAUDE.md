@@ -2,7 +2,7 @@
 
 Mini-vidéos IFSI en motion design, **tout en code** (Remotion 4, React → MP4), 1080 × 1920, ≥ 1 min,
 pour TikTok / Reels / Shorts. La référence de qualité (tempo, physique, mascotte) est la vidéo
-**Constantes** (pilote v4 regénéré en v5) : composition `Constantes`, dossier `src/videos/constantes/`.
+**Constantes** (pilote v4, aujourd'hui v7 : 7 constantes) : composition `Constantes`, dossier `src/videos/constantes/`.
 Deuxième modèle : **Besoins-Fondamentaux** (`src/videos/besoins-fondamentaux/`) pour les vidéos « liste »
 numérotée en étapes (gags au mot près, puces cochées, kit `src/brand/kit.tsx`).
 Les anciennes versions (v1 à v4, labo HyperFrames, anatomie SVG / 3D) ont été retirées : elles restent
@@ -19,9 +19,9 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   plus de carré autour. Poses en pied libres. Dossier `symptomes/` pour jouer les signes cliniques.
 - **Repères adultes** discrets mais visibles : échelle des normes `NormScale` (zones hypo / normo /
   hyper + bornes, curseur qui suit la valeur animée) sous l'illustration (prop `scale` de `Lesson3`)
-  + seuil de chaque terme (`<Seuil>`) — valeurs (liste fournie pour la v6) dans la charte.
-  Une notion que la voix ne dit pas → **fiche bonus sans voix** avant le logo (modèle :
-  `src/videos/constantes/Bonus.tsx`).
+  + seuil de chaque terme (`<Seuil>`) — valeurs (liste fournie pour la v6) dans la charte. Zone normale
+  de FC, FR, PA, SpO₂ = « normale » (pas de normocardie / eupnée / normotension / normoxie).
+  Chaque notion a sa partie avec voix (fiche bonus sans voix seulement en dernier recours, voir charte).
 - Pas de filigrane, pas de sous-titres incrustés, pas de pastille « à connaître en IFSI », pas de
   musique dans l'export (ajoutée sur TikTok). Une accroche par vidéo. Termes techniques toujours
   accompagnés d'une explication courte.
@@ -45,6 +45,14 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   fiche ; `slotSide` alterne gauche / droite d'une partie à l'autre ; `shake` ; `scale`).
 - **Nouvelles planches** : déjà détourées → `scripts/brand/upscale_rgba.py`, `cut_v3.py` (ancrages dans
   `planches-v3.json`), `export_v3.py` (remplace / supprime les anciennes, manifeste + index).
+
+## Voix
+
+- Voix finale : **ElevenLabs**, voix « Chloé – Warm Friendly, UGC Ready », vitesse 1,09, stabilité 76 %,
+  similarité 75 % — générée par le propriétaire du projet (pas d'accès ElevenLabs depuis le conteneur).
+  Texte exact dans `voix/<n>-<sujet>.script.json`, puis `scripts/voice/align_voice.py` sur le MP3 reçu.
+- En attendant : voix provisoire `scripts/voice/tts_provisoire.py` (edge-tts) + `align_voice.py`,
+  pour caler et contrôler l'animation ; la vraie voix recale tout (animations calées sur les mots).
 
 ## Rendu et contrôle
 

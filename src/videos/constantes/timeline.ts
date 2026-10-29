@@ -1,21 +1,13 @@
-import {makeTimeline, VoiceData} from '../../brand/timeline';
+import {makeTimeline} from '../../brand/timeline';
 import voice from './voice.json';
-
-/** Fiche bonus (glycémie, diurèse) : partie SANS voix ajoutée après le récap, avant le logo. */
-export const BONUS = {gap: 0.9, duration: 9.6};
-const last = voice.sections[voice.sections.length - 1];
-const withBonus: VoiceData = {
-	...voice,
-	sections: [...voice.sections, {id: 'bonus', start: last.end + BONUS.gap, end: last.end + BONUS.gap + BONUS.duration}],
-};
 
 /** 72 bpm à 30 fps (battement toutes les 25 frames). */
 export const BEAT = 25;
 
-// Même voix que la v3 (ElevenLabs). Transitions de 14 frames, démarrées 0,25 s avant la partie.
-export const TL = makeTimeline(withBonus, {minTotal: 61 * 30, tail: 1.0, endCard: 2.6, transition: 14, preRoll: 0.25});
+// Voix : voir voix/02-constantes.script.json (texte exact dit). Transitions de 14 frames, démarrées 0,25 s avant la partie.
+export const TL = makeTimeline(voice, {minTotal: 61 * 30, tail: 1.2, endCard: 2.6, transition: 14, preRoll: 0.25});
 
-export const SCENE_IDS = ['intro', 'temp', 'fc', 'fr', 'pa', 'spo2', 'outro', 'bonus', 'end'] as const;
+export const SCENE_IDS = ['intro', 'temp', 'fc', 'fr', 'pa', 'spo2', 'gly', 'diu', 'outro', 'end'] as const;
 export type SceneId = (typeof SCENE_IDS)[number];
 
 /** Raccourci : frame locale d'un mot dans une scène. */

@@ -1,11 +1,11 @@
 [
 	{
 		"id": "intro",
-		"text": "Les 5 constantes à ne surtout pas oublier quand tu es étudiant infirmier. Avec les mots techniques que tu dois absolument connaître !"
+		"text": "Les 7 constantes, avec les mots techniques !"
 	},
 	{
 		"id": "temp",
-		"text": "Un : la température. Elle évalue l'état thermique du patient. S'il a de la fièvre, il est fébrile. S'il n'en a pas, il est apyrétique. Et une température trop basse, c'est une hypothermie."
+		"text": "Un : la température. Elle évalue l'état thermique du patient. S'il a de la fièvre, il est fébrile. Une petite fièvre, c'est une fébricule. S'il n'en a pas, il est apyrétique. Et une température trop basse, c'est une hypothermie."
 	},
 	{
 		"id": "fc",
@@ -21,10 +21,18 @@
 	},
 	{
 		"id": "spo2",
-		"text": "Et cinq : la saturation en oxygène, ou {SpO2,|S P O 2,} mesurée avec un oxymètre de pouls. C'est le pourcentage d'hémoglobine qui transporte de l'oxygène. Quand elle chute, c'est une désaturation. Et un manque d'oxygène dans le sang, c'est une hypoxémie."
+		"text": "Cinq : la saturation en oxygène, ou {SpO2,|S P O 2,} mesurée avec un oxymètre de pouls. C'est le pourcentage d'hémoglobine qui transporte de l'oxygène. Quand elle chute, c'est une désaturation. Et un manque d'oxygène dans le sang, c'est une hypoxémie."
+	},
+	{
+		"id": "gly",
+		"text": "Six : la glycémie, le taux de sucre dans le sang, mesurée au bout du doigt avec un lecteur de glycémie. Trop de sucre, c'est une hyperglycémie. Pas assez, une hypoglycémie."
+	},
+	{
+		"id": "diu",
+		"text": "Et sept : la diurèse, le volume d'urine sur 24 heures. Pas assez d'urine, c'est une oligurie. Presque plus d'urine du tout, une anurie. Et beaucoup trop, une polyurie."
 	},
 	{
 		"id": "outro",
-		"text": "Récapitulons. température, fréquence cardiaque, fréquence respiratoire, pression artérielle et {SpO2.|S P O 2.} Enregistre la vidéo pour tes révisions, et dis-moi en commentaire le mot que tu ne connaissais pas !"
+		"text": "Récapitulons : température, fréquence cardiaque, fréquence respiratoire, pression artérielle, {SpO2,|S P O 2,} glycémie et diurèse."
 	}
 ]

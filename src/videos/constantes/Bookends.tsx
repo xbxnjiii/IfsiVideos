@@ -1,8 +1,8 @@
 import React from 'react';
 import {AbsoluteFill, Easing, interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import {Sign, SignKind} from '../../brand/learn';
-import {Burst, Camera, Confetti, LiveBackground, Odometer, TapRipple} from '../../brand/motion3';
-import {GaugePicto, HeartPicto, LungsPicto, O2Picto, PictoBadge, ThermoPicto} from '../../brand/pictos';
+import {Burst, Camera, Confetti, LiveBackground, Odometer} from '../../brand/motion3';
+import {GaugePicto, GlucosePicto, HeartPicto, JarPicto, LungsPicto, O2Picto, PictoBadge, ThermoPicto} from '../../brand/pictos';
 import {alpha, FONT, LPI, SHADOW} from '../../brand/theme';
 import {clamp, Enter, Kicker, Title} from '../../brand/ui';
 import {Sfx} from '../../brand/Sfx';
@@ -12,11 +12,13 @@ const ease = Easing.bezier(0.22, 1, 0.36, 1);
 const Sub2: React.FC = () => <sub style={{fontSize: '0.6em', verticalAlign: '-0.15em', lineHeight: 0}}>2</sub>;
 
 export const CONSTANTES = [
-	{abbr: 'T°', Picto: ThermoPicto, terms: ['Apyrétique', 'Fébricule', 'Hyperthermie', 'Hypothermie']},
-	{abbr: 'FC', Picto: HeartPicto, terms: ['Normocardie', 'Tachycardie', 'Bradycardie', 'Arythmie']},
-	{abbr: 'FR', Picto: LungsPicto, terms: ['Eupnée', 'Tachypnée', 'Bradypnée', 'Dyspnée']},
-	{abbr: 'PA', Picto: GaugePicto, terms: ['Normotension', 'HTA', 'Hypotension', 'PAS / PAD']},
-	{abbr: 'SpO2', Picto: O2Picto, terms: ['Normoxie', 'Désaturation', 'Hypoxémie', 'BPCO 88–92 %']},
+	{abbr: 'T°', Picto: ThermoPicto, terms: ['Fébrile', 'Fébricule', 'Apyrétique', 'Hypothermie']},
+	{abbr: 'FC', Picto: HeartPicto, terms: ['Tachycardie', 'Bradycardie', 'Arythmie']},
+	{abbr: 'FR', Picto: LungsPicto, terms: ['Tachypnée', 'Bradypnée', 'Dyspnée']},
+	{abbr: 'PA', Picto: GaugePicto, terms: ['Systolique', 'Diastolique', 'HTA', 'Hypotension']},
+	{abbr: 'SpO2', Picto: O2Picto, terms: ['Oxymètre', 'Désaturation', 'Hypoxémie', 'BPCO 88–92 %']},
+	{abbr: 'Glycémie', Picto: GlucosePicto, terms: ['Hyperglycémie', 'Hypoglycémie', 'Lecteur']},
+	{abbr: 'Diurèse', Picto: JarPicto, terms: ['Oligurie', 'Anurie', 'Polyurie']},
 ] as const;
 
 const Abbr: React.FC<{i: number}> = ({i}) =>
@@ -29,8 +31,8 @@ const Abbr: React.FC<{i: number}> = ({i}) =>
 		<>{CONSTANTES[i].abbr}</>
 	);
 
-/** Rangée des 5 pictos de l'accroche (la vague vers la 1re constante part du picto T°). */
-export const HOOK_ROW = {y: 640, size: 124, xs: [0, 1, 2, 3, 4].map((k) => 72 + (936 * (k + 0.5)) / 5)};
+/** Rangée des 7 pictos de l'accroche (la plongée vers la 1re constante part du picto T°). */
+export const HOOK_ROW = {y: 640, size: 112, xs: CONSTANTES.map((_, k) => 72 + (936 * (k + 0.5)) / CONSTANTES.length)};
 
 const MARQUEE: [string, SignKind][][] = [
 	[
@@ -42,9 +44,9 @@ const MARQUEE: [string, SignKind][][] = [
 		['Apyrétique', 'check'],
 		['Bradypnée', 'down'],
 		['Hypotension', 'down'],
-		['Normocardie', 'check'],
 		['Fébricule', 'up'],
 		['Oligurie', 'down'],
+		['Hyperglycémie', 'up'],
 	],
 	[
 		['Arythmie', 'wave'],
@@ -55,9 +57,9 @@ const MARQUEE: [string, SignKind][][] = [
 		['Bradycardie', 'down'],
 		['Hypertension', 'up'],
 		['Oxymètre de pouls', 'device'],
-		['Eupnée', 'check'],
-		['Normoxie', 'check'],
-		['Hyperglycémie', 'up'],
+		['Hypoglycémie', 'down'],
+		['Anurie', 'empty'],
+		['Polyurie', 'up'],
 	],
 ];
 
@@ -123,16 +125,12 @@ const MarqueeRow: React.FC<{items: [string, SignKind][]; y: number; dir: 1 | -1;
 export const Hook3: React.FC = () => {
 	const frame = useCurrentFrame();
 	const {fps} = useVideoConfig();
-	const FIVE = at('intro', '5');
+	const SEVEN = at('intro', '7');
 	const C = at('intro', 'constantes');
-	const A = at('intro', 'à');
-	const S = at('intro', 'surtout');
-	const Q = at('intro', 'quand');
 	const AV = at('intro', 'avec');
 	const TECH = at('intro', 'techniques');
-	const ABS = at('intro', 'absolument');
 
-	// 1) gros « 5 » au centre, 2) il file dans le coin quand « constantes » arrive
+	// 1) gros « 7 » au centre, 2) il file dans le coin quand « constantes » arrive
 	const pop = spring({frame: frame + 4, fps, config: {damping: 10, stiffness: 200, mass: 0.7}});
 	const fly = interpolate(frame, [C - 2, C + 12], [0, 1], {...clamp, easing: ease});
 	const d = interpolate(fly, [0, 1], [460, 180]);
@@ -140,16 +138,17 @@ export const Hook3: React.FC = () => {
 	const cy = interpolate(fly, [0, 1], [800, 320]);
 	const ring = 1 - fly;
 	const les = interpolate(frame, [0, 4, C - 2, C + 6], [0, 1, 1, 0], clamp);
-	// termes techniques à l'écran : 22 dans les 5 constantes + 7 dans la fiche bonus
-	const count = interpolate(frame, [TECH, TECH + 28], [0, 29], {...clamp, easing: ease});
+	// termes techniques à l'écran : 23 cartes de termes + hyperthermie, normoglycémie, normodiurèse (échelles)
+	const count = interpolate(frame, [TECH, TECH + 24], [0, 26], {...clamp, easing: ease});
 	const chip = spring({frame: frame - TECH + 2, fps, config: {damping: 12, stiffness: 190}});
-	const absPunch = frame >= ABS ? Math.exp(-(frame - ABS) / 6) * Math.sin((frame - ABS) * 0.8) : 0;
+	const LAND = TECH + 24;
+	const landPunch = frame >= LAND ? Math.exp(-(frame - LAND) / 6) * Math.sin((frame - LAND) * 0.8) : 0;
 
 	return (
 		<AbsoluteFill>
 			<LiveBackground />
-			<Camera punches={[2, S + 1, TECH + 1, ABS + 1]} strength={0.04}>
-				{/* « Les » au-dessus du gros 5 (disparaît quand le 5 rejoint le titre) */}
+			<Camera punches={[2, AV + 1, TECH + 1, LAND + 1]} strength={0.04}>
+				{/* « Les » au-dessus du gros 7 (disparaît quand le 7 rejoint le titre) */}
 				<div
 					style={{
 						position: 'absolute',
@@ -167,8 +166,8 @@ export const Hook3: React.FC = () => {
 				>
 					Les
 				</div>
-				<Burst at={FIVE} x={540} y={800} r={280} n={14} />
-				{/* anneau pointillé qui tourne autour du 5 */}
+				<Burst at={SEVEN} x={540} y={800} r={280} n={14} />
+				{/* anneau pointillé qui tourne autour du 7 */}
 				<svg width={1080} height={1920} style={{position: 'absolute', inset: 0, opacity: ring}}>
 					<circle
 						cx={540}
@@ -202,16 +201,13 @@ export const Hook3: React.FC = () => {
 						transform: `scale(${0.3 + 0.7 * pop}) rotate(${(1 - pop) * -30}deg)`,
 					}}
 				>
-					5
+					7
 				</div>
 				<div style={{position: 'absolute', left: 276, top: 252}}>
 					<Title at={C + 4} text="constantes" size={112} stagger={1} brush={false} />
 				</div>
-				<div style={{position: 'absolute', left: 72, top: 440, width: 960}}>
-					<Title at={A} text="à ne *surtout* pas oublier" size={70} stagger={7} />
-				</div>
-				<div style={{position: 'absolute', left: 72, top: 538, width: 936}}>
-					<Title at={Q} text="quand tu es *étudiant* *infirmier*" size={46} stagger={4} brush={false} color={alpha(LPI.navy, 0.75)} />
+				<div style={{position: 'absolute', left: 72, top: 452, width: 960}}>
+					<Title at={AV} text="avec les *mots* *techniques*" size={72} stagger={3} />
 				</div>
 				{CONSTANTES.map((c, k) => (
 					<div
@@ -227,15 +223,15 @@ export const Hook3: React.FC = () => {
 							gap: 10,
 						}}
 					>
-						<Enter at={C + 10 + k * 3} distance={50} bounce>
+						<Enter at={C + 6 + k * 2} distance={50} bounce>
 							<div style={{transform: `rotate(${Math.sin(frame / 18 + k) * 4}deg)`}}>
 								<PictoBadge size={HOOK_ROW.size}>
-									<c.Picto size={72} color={LPI.navy} />
+									<c.Picto size={64} color={LPI.navy} />
 								</PictoBadge>
 							</div>
 						</Enter>
-						<Enter at={C + 13 + k * 3} distance={10}>
-							<div style={{fontFamily: FONT.title, fontWeight: 900, fontSize: 36, color: LPI.navy}}>
+						<Enter at={C + 9 + k * 2} distance={10}>
+							<div style={{fontFamily: FONT.title, fontWeight: 900, fontSize: c.abbr.length > 4 ? 25 : 34, color: LPI.navy, whiteSpace: 'nowrap'}}>
 								<Abbr i={k} />
 							</div>
 						</Enter>
@@ -249,7 +245,7 @@ export const Hook3: React.FC = () => {
 						left: 72,
 						top: 1090,
 						opacity: Math.min(1, chip * 1.5),
-						transform: `translateY(${(1 - chip) * 40}px) scale(${(0.8 + 0.2 * chip) * (1 + 0.08 * absPunch)})`,
+						transform: `translateY(${(1 - chip) * 40}px) scale(${(0.8 + 0.2 * chip) * (1 + 0.08 * landPunch)})`,
 						transformOrigin: 'left center',
 					}}
 				>
@@ -274,88 +270,26 @@ export const Hook3: React.FC = () => {
 						termes techniques
 					</div>
 				</div>
-				<Burst at={ABS} x={400} y={1130} r={260} n={12} />
+				<Burst at={LAND} x={400} y={1130} r={260} n={12} />
 			</Camera>
-			<Sfx name="impact" at={FIVE} volume={0.1} />
+			<Sfx name="impact" at={SEVEN} volume={0.1} />
 			<Sfx name="whoosh" at={C} volume={0.06} />
 			{CONSTANTES.map((_, k) => (
-				<Sfx key={k} name="pop" at={C + 10 + k * 3} volume={0.09} />
+				<Sfx key={k} name="pop" at={C + 6 + k * 2} volume={0.08} />
 			))}
-			<Sfx name="pop" at={S} volume={0.1} />
 			<Sfx name="whoosh" at={AV} volume={0.06} />
-			{[0, 7, 14, 21].map((k) => (
+			{[0, 6, 12, 18].map((k) => (
 				<Sfx key={k} name="tick" at={TECH + k} volume={0.09} />
 			))}
-			<Sfx name="ding" at={ABS} volume={0.08} />
+			<Sfx name="ding" at={LAND} volume={0.08} />
 		</AbsoluteFill>
 	);
 };
 
-/* ═══════════════════════════════ RÉCAP + APPEL ═══════════════════════════════ */
-const ROW_Y = 420;
-const ROW_H = 112;
-const ROW_GAP = 16;
-
-const Bookmark: React.FC<{fill: string}> = ({fill}) => (
-	<svg width={50} height={50} viewBox="0 0 100 100">
-		<path d="M28 12 H72 A6 6 0 0 1 78 18 V90 L50 70 L22 90 V18 A6 6 0 0 1 28 12 Z" fill={fill} stroke={LPI.paper} strokeWidth={8} strokeLinejoin="round" />
-	</svg>
-);
-
-/** Bulle de commentaire : « … » qui s'agite, puis la question s'écrit. */
-const CommentBubble: React.FC<{at: number; text: string}> = ({at: t0, text}) => {
-	const frame = useCurrentFrame();
-	const {fps} = useVideoConfig();
-	const s = spring({frame: frame - t0, fps, config: {damping: 12, stiffness: 190}});
-	if (frame < t0) return null;
-	const typing = frame - t0 < 12;
-	const n = Math.floor(interpolate(frame, [t0 + 12, t0 + 12 + text.length * 0.9], [0, text.length], clamp));
-	return (
-		<div
-			style={{
-				display: 'inline-flex',
-				alignItems: 'center',
-				gap: 16,
-				padding: '20px 30px',
-				borderRadius: '34px 34px 34px 8px',
-				background: LPI.paper,
-				border: `4px solid ${LPI.sky}`,
-				boxShadow: SHADOW,
-				fontFamily: FONT.title,
-				fontWeight: 900,
-				fontSize: 29,
-				color: LPI.navy,
-				whiteSpace: 'nowrap',
-				opacity: Math.min(1, s * 1.5),
-				transform: `scale(${0.6 + 0.4 * s})`,
-				transformOrigin: 'left bottom',
-				minHeight: 92,
-			}}
-		>
-			{typing ? (
-				<div style={{display: 'flex', gap: 10, padding: '0 6px'}}>
-					{[0, 1, 2].map((i) => (
-						<div
-							key={i}
-							style={{
-								width: 16,
-								height: 16,
-								borderRadius: 99,
-								background: LPI.blue,
-								transform: `translateY(${Math.sin((frame - t0) / 2 - i) * 6}px)`,
-							}}
-						/>
-					))}
-				</div>
-			) : (
-				<span>
-					{text.slice(0, n)}
-					<span style={{opacity: n < text.length ? 1 : 0, color: LPI.blue}}>|</span>
-				</span>
-			)}
-		</div>
-	);
-};
+/* ═══════════════════════════════ RÉCAP ═══════════════════════════════ */
+const ROW_Y = 410;
+const ROW_H = 108;
+const ROW_GAP = 14;
 
 export const Recap3: React.FC = () => {
 	const frame = useCurrentFrame();
@@ -367,29 +301,27 @@ export const Recap3: React.FC = () => {
 		at('outro', 'fréquence', 2),
 		at('outro', 'pression'),
 		at('outro', 'spo2'),
+		at('outro', 'glycémie'),
+		at('outro', 'diurèse'),
 	];
-	const SAVE = at('outro', 'enregistre');
-	const COM = at('outro', 'commentaire');
-	const DONE = named[4] + 16;
-	const tap = SAVE + 12;
-	const saved = interpolate(frame, [tap + 2, tap + 6], [0, 1], clamp);
-	const savePop = frame >= tap ? Math.exp(-(frame - tap) / 5) * Math.sin((frame - tap) * 0.9) : 0;
+	const last = named.length - 1;
+	const DONE = named[last] + 16;
 	return (
 		<AbsoluteFill>
 			<LiveBackground />
-			<Camera punches={[R + 2, ...named.map((t) => t + 1), DONE, tap]} strength={0.03}>
+			<Camera punches={[R + 2, ...named.map((t) => t + 1), DONE]} strength={0.03}>
 				<div style={{position: 'absolute', left: 72, top: 236}}>
 					<Kicker at={R}>Récap</Kicker>
 				</div>
 				<div style={{position: 'absolute', left: 72, top: 286, width: 936}}>
-					<Title at={R + 2} text={'Les *5* constantes'} size={92} stagger={2} />
+					<Title at={R + 2} text={'Les *7* constantes'} size={92} stagger={2} />
 				</div>
 				{CONSTANTES.map((c, k) => {
 					const s = spring({frame: frame - named[k], fps, config: {damping: 13, stiffness: 200, mass: 0.8}});
-					const current = frame >= named[k] && (k === 4 ? frame < SAVE : frame < named[k + 1]);
+					const current = frame >= named[k] && (k === last ? frame < DONE + 12 : frame < named[k + 1]);
 					const sweep = interpolate(frame, [named[k], named[k] + 12], [0, 1], {...clamp, easing: ease});
-					const done = k < 4 ? frame >= named[k + 1] : frame >= DONE;
-					const check = spring({frame: frame - (k < 4 ? named[k + 1] : DONE), fps, config: {damping: 9, stiffness: 240}});
+					const doneAt = k < last ? named[k + 1] : DONE;
+					const check = spring({frame: frame - doneAt, fps, config: {damping: 9, stiffness: 240}});
 					if (frame < named[k]) return null;
 					return (
 						<div
@@ -417,18 +349,27 @@ export const Recap3: React.FC = () => {
 									background: alpha(LPI.sky, current ? 0.6 : 0.3),
 								}}
 							/>
-							<div style={{position: 'relative', height: '100%', display: 'flex', alignItems: 'center', gap: 18, padding: '0 20px'}}>
+							<div style={{position: 'relative', height: '100%', display: 'flex', alignItems: 'center', gap: 16, padding: '0 20px'}}>
 								<div style={{position: 'relative'}}>
-									<PictoBadge size={78} on={current ? 1 : 0}>
-										<c.Picto size={48} color={current ? LPI.paper : LPI.navy} />
+									<PictoBadge size={74} on={current ? 1 : 0}>
+										<c.Picto size={46} color={current ? LPI.paper : LPI.navy} />
 									</PictoBadge>
-									{done ? (
+									{frame >= doneAt ? (
 										<div style={{position: 'absolute', right: -12, top: -10, transform: `scale(${check})`}}>
-											<Sign kind="check" size={40} />
+											<Sign kind="check" size={38} />
 										</div>
 									) : null}
 								</div>
-								<div style={{fontFamily: FONT.title, fontWeight: 900, fontSize: 42, color: current ? LPI.blue : LPI.navy, minWidth: 100}}>
+								<div
+									style={{
+										fontFamily: FONT.title,
+										fontWeight: 900,
+										fontSize: c.abbr.length > 4 ? 32 : 42,
+										color: current ? LPI.blue : LPI.navy,
+										minWidth: 100,
+										whiteSpace: 'nowrap',
+									}}
+								>
 									<Abbr i={k} />
 								</div>
 								<div style={{display: 'flex', gap: 6}}>
@@ -459,44 +400,12 @@ export const Recap3: React.FC = () => {
 						</div>
 					);
 				})}
-				<Confetti at={DONE} x={540} y={760} n={50} />
-				<div style={{position: 'absolute', left: 72, top: 1092}}>
-					<Enter at={SAVE} from="left" bounce distance={60}>
-						<div
-							style={{
-								display: 'inline-flex',
-								alignItems: 'center',
-								gap: 18,
-								padding: '18px 30px',
-								borderRadius: 30,
-								background: LPI.blue,
-								color: LPI.paper,
-								fontFamily: FONT.title,
-								fontWeight: 900,
-								fontSize: 30,
-								whiteSpace: 'nowrap',
-								boxShadow: `0 16px 40px ${alpha(LPI.blue, 0.3)}`,
-							}}
-						>
-							<div style={{transform: `scale(${1 + 0.25 * savePop})`}}>
-								<Bookmark fill={saved > 0.5 ? LPI.pink : LPI.blue} />
-							</div>
-							Enregistre pour tes révisions
-						</div>
-					</Enter>
-				</div>
-				<TapRipple at={tap} x={72 + 30 + 25} y={1092 + 18 + 25 + 6} />
-				<div style={{position: 'absolute', left: 72, top: 1208}}>
-					<CommentBubble at={COM} text="Quel mot tu ne connaissais pas ?" />
-				</div>
+				<Confetti at={DONE} x={540} y={820} n={60} />
 			</Camera>
 			{named.map((t, k) => (
 				<Sfx key={k} name="pop" at={t} volume={0.11} />
 			))}
 			<Sfx name="ding" at={DONE} volume={0.1} />
-			<Sfx name="pop" at={SAVE} volume={0.12} />
-			<Sfx name="tick" at={tap} volume={0.14} />
-			<Sfx name="pop" at={COM} volume={0.12} />
 		</AbsoluteFill>
 	);
 };

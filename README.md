@@ -12,7 +12,7 @@ pas de logiciel de montage, pas de banque d'images.
 
 | # | Sujet | Composition | Script voix | Storyboard |
 |---|-------|-------------|-------------|------------|
-| 02 | Les 5 constantes + normes adultes (échelles animées) + bonus glycémie / diurèse | `Constantes` | [voix/02-constantes.script.json](voix/02-constantes.script.json) | [storyboard](docs/lpi/storyboard-constantes.md) |
+| 02 | Les 7 constantes (T°, FC, FR, PA, SpO₂, glycémie, diurèse) + normes adultes (échelles animées) | `Constantes` | [voix/02-constantes.script.json](voix/02-constantes.script.json) | [storyboard](docs/lpi/storyboard-constantes.md) |
 | 03 | Les 14 besoins fondamentaux (Virginia Henderson), en 3 étapes | `Besoins-Fondamentaux` | [voix/03-besoins-fondamentaux.script.json](voix/03-besoins-fondamentaux.script.json) | [storyboard](docs/lpi/storyboard-besoins-fondamentaux.md) |
 
 ## Utilisation
@@ -54,7 +54,7 @@ public/
   fonts/, sfx/                polices embarquées, bruitages
 assets/planches/              planches originales de la mascotte et des logos (sources des découpes)
 scripts/
-  voice/                      align_voice.py (voix IA déjà propre) · prepare_voice.py (vraie voix)
+  voice/                      align_voice.py (voix IA déjà propre) · prepare_voice.py (vraie voix) · tts_provisoire.py
   brand/                      découpe des planches (upscale_rgba, cut_v3, export_v3 ; v2 : cutout, upscale)
   qa/                         contrôle : images clés, planches contact, check-mascot
 voix/                         scripts de voix off (texte exact dit, une entrée par partie)

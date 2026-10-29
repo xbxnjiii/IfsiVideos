@@ -205,7 +205,7 @@ Exemple complet : `src/videos/constantes/mascot.ts`. Contrôle : `npm run check:
 
 | Le script dit… | Clé mascotte (v5) |
 |----------------|-------------------|
-| accueil, « Les 5… » | `poses/course` → `poses/presente` (arrivée en courant) |
+| accueil, « Les 7… » | `poses/course` → `poses/presente` (arrivée en courant) |
 | « surtout », alerte | `expressions/alerte` |
 | « étudiant » | `poses/sac-a-dos` (monte du bas de l'écran) |
 | « mots techniques », réviser | `situations/revise` |
@@ -252,26 +252,27 @@ Les valeurs de référence de l'adulte sont **visibles mais discrètes** :
 - `NormRibbon` (petit bandeau « ADULTE · normale … ») reste disponible pour une valeur isolée
   (ex. besoin n° 7 de la vidéo 03).
 
-Valeurs utilisées (adulte, fournies pour la v6 ; les protocoles locaux peuvent différer) :
+Valeurs utilisées (adulte, fournies pour la v6 ; les protocoles locaux peuvent différer). Depuis la v7, la zone
+normale de FC, FR, PA et SpO₂ s'appelle simplement « normale » à l'écran (pas de normocardie, eupnée,
+normotension ni normoxie) ; température, glycémie et diurèse gardent apyrétique, normoglycémie, normodiurèse :
 
 | Constante | Normale | Termes et seuils |
 |-----------|---------|------------------|
 | Température | apyrétique 36,5 – 37,5 °C | fébricule 37,5 – 37,9 °C · hyperthermie (fièvre) ≥ 38 °C · hypothermie < 35 °C |
 | Voies de mesure (T°) | — | rectale · buccale · tympanique · axillaire · temporale ou frontale |
-| Fréquence cardiaque | normocardie 60 – 100 bpm | bradycardie < 60 · tachycardie ≥ 100 · arythmie = rythme irrégulier |
-| Fréquence respiratoire | eupnée 12 – 20 cycles/min | tachypnée > 20 · bradypnée < 12 · dyspnée = difficulté à respirer |
-| Pression artérielle | normotension ≈ 120/80 mmHg | hypotension < 90/60 · hypertension (HTA) > 140/90 |
-| SpO₂ | normoxie > 95 à 100 % | cible BPCO 88 – 92 % · hypoxémie < 90 % (désaturation < 95 %) |
+| Fréquence cardiaque | normale 60 – 100 bpm | bradycardie < 60 · tachycardie ≥ 100 · arythmie = rythme irrégulier |
+| Fréquence respiratoire | normale 12 – 20 cycles/min | tachypnée > 20 · bradypnée < 12 · dyspnée = difficulté à respirer |
+| Pression artérielle | normale ≈ 120/80 mmHg | hypotension < 90/60 · hypertension (HTA) > 140/90 |
+| SpO₂ | normale > 95 à 100 % | cible BPCO 88 – 92 % · hypoxémie < 90 % (désaturation < 95 %) |
 | Glycémie | normoglycémie 0,70 – 1,10 g/l | hyperglycémie > 1,10 · hypoglycémie < 0,70 |
 | Diurèse | normodiurèse 600 – 2000 ml/24 h | oligurie < 400 · anurie < 100 · polyurie > 2500 à 3000 ml/24 h |
 
 Les chiffres animés à l'écran (39,2 °C, 128 bpm…) restent des exemples et doivent être cohérents
 avec ces seuils (le curseur de l'échelle tombe dans la bonne zone).
 
-**Notion non dite par la voix** (ex. glycémie, diurèse) : fiche **bonus sans voix** avant le logo
-(`src/videos/constantes/Bonus.tsx`) — section ajoutée à la timeline (`BONUS` dans `timeline.ts`),
-tempo tenu par les cartes, le curseur qui balaie les zones (petits « tic ») et la mascotte qui
-réagit à chaque zone ; finir sur « Mets pause pour noter ! ».
+**Une notion = une partie avec voix** (v7 : glycémie et diurèse sont devenues les parties 6 et 7, même
+gabarit `Lesson3` que les autres). Si une notion n'a vraiment pas de voix, une fiche **bonus sans voix**
+avant le logo reste possible : modèle dans l'historique git (commit `16714ba`, `src/videos/constantes/Bonus.tsx`).
 
 ## Contrôle qualité (à chaque vidéo)
 
@@ -283,8 +284,8 @@ réagit à chaque zone ; finir sur « Mets pause pour noter ! ».
 
 ## Accroche
 
-Chaque vidéo commence par une promesse claire en 1 phrase (« Les 5 constantes à ne surtout pas
-oublier… ») + un aperçu de ce qu'on va apprendre (ex. « + 29 termes techniques »).
+Chaque vidéo commence par une promesse claire et courte (« Les 7 constantes, avec les mots techniques ! »)
++ un aperçu de ce qu'on va apprendre (ex. « + 26 termes techniques »).
 
 ## Marque
 

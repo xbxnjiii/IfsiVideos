@@ -1,5 +1,5 @@
-// « Les 5 constantes » v6 : la vidéo pilote (même tempo, même physique, mascotte libre) + toutes les normes
-// adulte du cours (échelles animées, seuils, voies de mesure, cible BPCO) + fiche bonus glycémie / diurèse.
+// « Les 7 constantes » v7 : la vidéo pilote (même tempo, même physique, mascotte libre) + les normes adulte
+// du cours (échelles animées, seuils, voies de mesure, cible BPCO), glycémie et diurèse comprises.
 // Les règles de tempo / physique sont documentées dans docs/lpi/charte-video.md (« Tempo et physique »).
 import React from 'react';
 import {AbsoluteFill, Html5Audio, Img, interpolate, Sequence, spring, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
@@ -11,8 +11,7 @@ import {GRID, LPI} from '../../brand/theme';
 import {clamp} from '../../brand/ui';
 import {Sfx, SfxEnabled, SfxName} from '../../brand/Sfx';
 import {HOOK_ROW, Hook3, Recap3} from './Bookends';
-import {Bonus} from './Bonus';
-import {Cardiaque, Pression, Respiratoire, Saturation, Temperature} from './Lessons';
+import {Cardiaque, Diurese, Glycemie, Pression, Respiratoire, Saturation, Temperature} from './Lessons';
 import {MASCOT} from './mascot';
 import {SCENE_IDS, SceneId, TL} from './timeline';
 import '../../brand/theme';
@@ -46,8 +45,9 @@ const SCENES: Record<SceneId, React.FC> = {
 	fr: Respiratoire,
 	pa: Pression,
 	spo2: Saturation,
+	gly: Glycemie,
+	diu: Diurese,
 	outro: Recap3,
-	bonus: Bonus,
 	end: EndCard,
 };
 
@@ -63,32 +63,35 @@ const TRANSITIONS: Record<Exclude<SceneId, 'intro'>, {p: TransitionPresentation<
 	pa: {p: runWipe(), sfx: 'run'},
 	// panoramique éclair vers la gauche
 	spo2: {p: whip('left'), sfx: 'whoosh'},
+	// la mascotte retraverse en courant
+	gly: {p: runWipe(), sfx: 'run'},
+	// panoramique éclair vers le haut (elle s'envole avec)
+	diu: {p: whip('up'), sfx: 'whoosh'},
 	// vague de marque depuis le titre du récap
 	outro: {p: wave({x: 540, y: 330}), sfx: 'whoosh'},
-	// panoramique vers le haut : la fiche bonus arrive (la mascotte s'envole avec)
-	bonus: {p: whip('up'), sfx: 'whoosh'},
 	end: {p: zoomInto({x: 540, y: 840, color: LPI.sky}), sfx: 'whoosh'},
 };
 
-/** Progression 1 → 5, centrée en haut, visible pendant les 5 constantes. */
+/** Progression 1 → 7, centrée en haut, visible pendant les 7 constantes. */
 const Progress: React.FC = () => {
 	const frame = useCurrentFrame();
+	const N = 7;
 	const {starts, durations, transition} = TL;
 	let s = 0;
 	while (s < starts.length - 1 && frame >= starts[s + 1] + transition / 2) s++;
 	const opacity =
 		interpolate(frame, [starts[1], starts[1] + transition], [0, 1], clamp) *
-		interpolate(frame, [starts[6], starts[6] + transition], [1, 0], clamp);
+		interpolate(frame, [starts[N + 1], starts[N + 1] + transition], [1, 0], clamp);
 	if (opacity <= 0) return null;
-	const current = Math.min(4, Math.max(0, s - 1));
+	const current = Math.min(N - 1, Math.max(0, s - 1));
 	const p = interpolate(frame, [starts[s], starts[s] + durations[s] - transition], [0, 1], clamp);
 	return (
 		<div style={{position: 'absolute', top: GRID.header + 20, left: 0, right: 0, display: 'flex', justifyContent: 'center', gap: 10, opacity}}>
-			{Array.from({length: 5}, (_, i) => (
+			{Array.from({length: N}, (_, i) => (
 				<div
 					key={i}
 					style={{
-						width: i === current ? 110 : 40,
+						width: i === current ? 100 : 34,
 						height: 12,
 						borderRadius: 6,
 						background: i < current ? LPI.blue : LPI.sky,

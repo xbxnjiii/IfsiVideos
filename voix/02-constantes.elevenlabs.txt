@@ -1,0 +1,17 @@
+Les 7 constantes, avec les mots techniques !
+
+Un : la température. Elle évalue l'état thermique du patient. S'il a de la fièvre, il est fébrile. Une petite fièvre, c'est une fébricule. S'il n'en a pas, il est apyrétique. Et une température trop basse, c'est une hypothermie.
+
+Deux : la fréquence cardiaque, le nombre de battements du cœur par minute. Trop rapide, c'est une tachycardie. Trop lente, une bradycardie. Et un rythme irrégulier, c'est une arythmie.
+
+Trois : la fréquence respiratoire, le nombre de respirations par minute. Trop rapide : tachypnée. Trop lente : bradypnée. Et quand le patient a du mal à respirer, on parle de dyspnée.
+
+Quatre : la pression artérielle, la pression du sang sur la paroi des artères. Le premier chiffre, c'est la systolique : le cœur se contracte. Le deuxième, la diastolique : le cœur se relâche. Trop haute, c'est l'hypertension. Trop basse, l'hypotension.
+
+Cinq : la saturation en oxygène, ou S P O 2, mesurée avec un oxymètre de pouls. C'est le pourcentage d'hémoglobine qui transporte de l'oxygène. Quand elle chute, c'est une désaturation. Et un manque d'oxygène dans le sang, c'est une hypoxémie.
+
+Six : la glycémie, le taux de sucre dans le sang, mesurée au bout du doigt avec un lecteur de glycémie. Trop de sucre, c'est une hyperglycémie. Pas assez, une hypoglycémie.
+
+Et sept : la diurèse, le volume d'urine sur 24 heures. Pas assez d'urine, c'est une oligurie. Presque plus d'urine du tout, une anurie. Et beaucoup trop, une polyurie.
+
+Récapitulons : température, fréquence cardiaque, fréquence respiratoire, pression artérielle, S P O 2, glycémie et diurèse.
