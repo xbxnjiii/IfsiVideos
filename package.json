@@ -13,7 +13,8 @@
     "render:fc": "remotion render Frequence-Cardiaque out/04-frequence-cardiaque.mp4",
     "voice": "python3 scripts/voice/tts_voix.py",
     "sheet": "bash scripts/qa/sheet.sh",
-    "render:fr": "remotion render Frequence-Respiratoire out/05-frequence-respiratoire.mp4"
+    "render:fr": "remotion render Frequence-Respiratoire out/05-frequence-respiratoire.mp4",
+    "render:temp": "remotion render Temperature out/06-temperature.mp4"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.532",

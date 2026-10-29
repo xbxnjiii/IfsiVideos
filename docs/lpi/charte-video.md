@@ -102,6 +102,7 @@ Toujours dans la palette, sans effet lumineux :
 | `NormScale` | échelle des normes adulte : zones nommées + bornes, curseur qui suit la valeur, zone active, cadre cible |
 | `EcgTrace`, `beatSchedule`, `lastBeat` (`cardio.tsx`) | tracé ECG qui défile (un QRS par battement), rythme qui change sans à-coup (régulier, rapide, lent, irrégulier), impulsion du cœur |
 | `BreathingLungs`, `Chest`, `BreathTrace`, `breathAt` (`breath.tsx`) | poumons qui respirent (rythme qui change sans à-coup), buste qui se soulève, tracé respiratoire (ample / superficiel / irrégulier) |
+| `TEMP_ZONES`, `ThermoReadout`, `TempGauge`, `HeatWaves`, `Snowfall` (`thermo.tsx`) | normes de température, thermomètre + valeur en °C qui roule (liquide bleu clair / bleu / rose, sans mélange), jauge froid ↔ chaud, ondes de chaleur (fièvre), flocons (froid) |
 | `Episode`, `RecapScene`, `Head`, `BigNum`, `CauseChip`, `Stopwatch` (`episode.tsx`) | kit « une vidéo par constante » : composition complète, récap rapide, titres, gros chiffres, causes, chronomètre |
 | `ChapterSlam` | gros numéro qui s'écrase au centre (éclats) puis file dans le coin du titre |
 | `TermSlam` | le terme « claque » en grand au centre (lettre par lettre), sa définition glisse, puis la carte file à sa place dans la fiche |

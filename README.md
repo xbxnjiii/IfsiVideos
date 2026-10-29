@@ -16,6 +16,7 @@ pas de logiciel de montage, pas de banque d'images.
 | 03 | Les 14 besoins fondamentaux (Virginia Henderson), en 3 étapes | `Besoins-Fondamentaux` | [voix/03-besoins-fondamentaux.script.json](voix/03-besoins-fondamentaux.script.json) | [storyboard](docs/lpi/storyboard-besoins-fondamentaux.md) |
 | 04 | La fréquence cardiaque (une vidéo par constante, récap rapide) | `Frequence-Cardiaque` | [voix/04-frequence-cardiaque.script.json](voix/04-frequence-cardiaque.script.json) | [storyboard](docs/lpi/storyboard-frequence-cardiaque.md) |
 | 05 | La fréquence respiratoire (une vidéo par constante, récap rapide) | `Frequence-Respiratoire` | [voix/05-frequence-respiratoire.script.json](voix/05-frequence-respiratoire.script.json) | [storyboard](docs/lpi/storyboard-frequence-respiratoire.md) |
+| 06 | La température corporelle (une vidéo par constante, récap rapide) | `Temperature` | [voix/06-temperature.script.json](voix/06-temperature.script.json) | [storyboard](docs/lpi/storyboard-temperature.md) |
 
 ## Utilisation
 
@@ -26,6 +27,7 @@ npm run render:constantes       # -> out/02-constantes.mp4
 npm run render:besoins          # -> out/03-besoins-fondamentaux.mp4
 npm run render:fc               # -> out/04-frequence-cardiaque.mp4
 npm run render:fr               # -> out/05-frequence-respiratoire.mp4
+npm run render:temp             # -> out/06-temperature.mp4
 npm run voice -- voix/<script>.json <épisode>   # voix + timing mot à mot
 npm run sheet -- out/qa          # planches contact (ffmpeg)
 npm run check:mascot -- constantes   # vérifie le jeu de la mascotte d'une vidéo
@@ -51,6 +53,7 @@ src/
     episode.tsx               kit « une vidéo par constante » : mise en page, récap, logo, composition Episode
     cardio.tsx                battements, cœur qui bat, tracé ECG, onde de pouls
     breath.tsx                respiration (phase), poumons, thorax, tracé respiratoire
+    thermo.tsx                zones de température, thermomètre + °C, jauge froid ↔ chaud, chaleur, flocons
     body.tsx, icons.tsx       poignet + doigts ; petites icônes (causes, situations)
     MascotActor.tsx           mascotte actrice : sauts, course, expressions au mot près, bustes libres
     pictos.tsx                pictogrammes et illustrations (thermomètre, cœur, poumons, artère…)

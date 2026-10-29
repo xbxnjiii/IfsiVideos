@@ -1,0 +1,34 @@
+[
+	{
+		"id": "intro",
+		"text": "C'est quoi, la température corporelle ?"
+	},
+	{
+		"id": "def",
+		"text": "La température corporelle, c'est la chaleur du corps. Elle évalue l'état thermique du patient, et se mesure en degrés Celsius."
+	},
+	{
+		"id": "voies",
+		"text": "Pour la prendre, il existe plusieurs voies : rectale, buccale, tympanique, axillaire, et temporale ou frontale."
+	},
+	{
+		"id": "norme",
+		"text": "Chez l'adulte, la normale, c'est entre 36,5 et 37,5 degrés. On dit que le patient est apyrétique : il n'a pas de fièvre."
+	},
+	{
+		"id": "febricule",
+		"text": "Entre 37,5 et 38, c'est une fébricule : une petite fièvre."
+	},
+	{
+		"id": "hyper",
+		"text": "À partir de 38, c'est une hyperthermie : le patient a de la fièvre, il est fébrile. On peut voir des frissons, des sueurs, ou un visage rouge."
+	},
+	{
+		"id": "hypo",
+		"text": "Et en dessous de 35, c'est une hypothermie : le corps est trop froid. Le patient grelotte, et sa peau est froide et pâle."
+	},
+	{
+		"id": "outro",
+		"text": "Petit récap ! La température se mesure en degrés Celsius, par plusieurs voies. Entre 36,5 et 37,5 : apyrétique. Entre 37,5 et 38 : fébricule. À partir de 38 : hyperthermie, le patient est fébrile. Et en dessous de 35 : hypothermie !"
+	}
+]

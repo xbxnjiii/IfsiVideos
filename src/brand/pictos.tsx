@@ -164,8 +164,8 @@ export const PictoBadge: React.FC<{size?: number; on?: number; children: React.R
 const T_MIN = 34;
 const T_MAX = 41;
 
-/** Couleur du liquide : bleu clair (froid) → bleu (référence) → rose (chaud). */
-export const tempColor = (t: number) => interpolateColors(t, [35, 36.7, 39.2], [LPI.sky, LPI.blue, LPI.pink]);
+/** Couleur du liquide, sans mélange de teintes : bleu clair (< 35,5 °C) · bleu · rose (≥ 37,5 °C, fièvre). */
+export const tempColor = (t: number) => (t < 35.5 ? LPI.sky : t < 37.5 ? LPI.blue : LPI.pink);
 
 export const Thermometer: React.FC<{value: number; height?: number}> = ({value, height = 440}) => {
 	const top = 34;

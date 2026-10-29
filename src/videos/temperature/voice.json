@@ -1,0 +1,843 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 62.674,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.048,
+   "end": 2.085
+  },
+  {
+   "id": "def",
+   "start": 3.067,
+   "end": 9.122
+  },
+  {
+   "id": "voies",
+   "start": 10.062,
+   "end": 16.219
+  },
+  {
+   "id": "norme",
+   "start": 17.156,
+   "end": 24.471
+  },
+  {
+   "id": "febricule",
+   "start": 25.406,
+   "end": 29.399
+  },
+  {
+   "id": "hyper",
+   "start": 30.328,
+   "end": 37.804
+  },
+  {
+   "id": "hypo",
+   "start": 38.725,
+   "end": 44.752
+  },
+  {
+   "id": "outro",
+   "start": 45.684,
+   "end": 62.349
+  }
+ ],
+ "words": [
+  {
+   "text": "C'est",
+   "start": 0.048,
+   "end": 0.245
+  },
+  {
+   "text": "quoi,",
+   "start": 0.245,
+   "end": 0.534
+  },
+  {
+   "text": "la",
+   "start": 0.87,
+   "end": 0.928
+  },
+  {
+   "text": "température",
+   "start": 0.928,
+   "end": 1.483
+  },
+  {
+   "text": "corporelle ?",
+   "start": 1.483,
+   "end": 2.085
+  },
+  {
+   "text": "La",
+   "start": 3.067,
+   "end": 3.171
+  },
+  {
+   "text": "température",
+   "start": 3.171,
+   "end": 3.703
+  },
+  {
+   "text": "corporelle,",
+   "start": 3.703,
+   "end": 4.282
+  },
+  {
+   "text": "c'est",
+   "start": 4.571,
+   "end": 4.675
+  },
+  {
+   "text": "la",
+   "start": 4.675,
+   "end": 4.756
+  },
+  {
+   "text": "chaleur",
+   "start": 4.756,
+   "end": 5.034
+  },
+  {
+   "text": "du",
+   "start": 5.034,
+   "end": 5.138
+  },
+  {
+   "text": "corps.",
+   "start": 5.138,
+   "end": 5.543
+  },
+  {
+   "text": "Elle",
+   "start": 5.869,
+   "end": 6.043
+  },
+  {
+   "text": "évalue",
+   "start": 6.043,
+   "end": 6.321
+  },
+  {
+   "text": "l'état",
+   "start": 6.321,
+   "end": 6.541
+  },
+  {
+   "text": "thermique",
+   "start": 6.541,
+   "end": 6.876
+  },
+  {
+   "text": "du",
+   "start": 6.876,
+   "end": 6.957
+  },
+  {
+   "text": "patient,",
+   "start": 6.957,
+   "end": 7.42
+  },
+  {
+   "text": "et",
+   "start": 7.71,
+   "end": 7.744
+  },
+  {
+   "text": "se",
+   "start": 7.744,
+   "end": 7.86
+  },
+  {
+   "text": "mesure",
+   "start": 7.86,
+   "end": 8.196
+  },
+  {
+   "text": "en",
+   "start": 8.196,
+   "end": 8.23
+  },
+  {
+   "text": "degrés",
+   "start": 8.23,
+   "end": 8.485
+  },
+  {
+   "text": "Celsius.",
+   "start": 8.485,
+   "end": 9.122
+  },
+  {
+   "text": "Pour",
+   "start": 10.062,
+   "end": 10.178
+  },
+  {
+   "text": "la",
+   "start": 10.178,
+   "end": 10.247
+  },
+  {
+   "text": "prendre,",
+   "start": 10.247,
+   "end": 10.617
+  },
+  {
+   "text": "il",
+   "start": 10.791,
+   "end": 10.86
+  },
+  {
+   "text": "existe",
+   "start": 10.861,
+   "end": 11.219
+  },
+  {
+   "text": "plusieurs",
+   "start": 11.219,
+   "end": 11.52
+  },
+  {
+   "text": "voies :",
+   "start": 11.52,
+   "end": 11.74
+  },
+  {
+   "text": "rectale,",
+   "start": 12.006,
+   "end": 12.504
+  },
+  {
+   "text": "buccale,",
+   "start": 12.77,
+   "end": 13.268
+  },
+  {
+   "text": "tympanique,",
+   "start": 13.522,
+   "end": 14.055
+  },
+  {
+   "text": "axillaire,",
+   "start": 14.275,
+   "end": 14.83
+  },
+  {
+   "text": "et",
+   "start": 15.073,
+   "end": 15.097
+  },
+  {
+   "text": "temporale",
+   "start": 15.097,
+   "end": 15.583
+  },
+  {
+   "text": "ou",
+   "start": 15.583,
+   "end": 15.606
+  },
+  {
+   "text": "frontale.",
+   "start": 15.606,
+   "end": 16.219
+  },
+  {
+   "text": "Chez",
+   "start": 17.156,
+   "end": 17.353
+  },
+  {
+   "text": "l'adulte,",
+   "start": 17.353,
+   "end": 17.85
+  },
+  {
+   "text": "la",
+   "start": 18.024,
+   "end": 18.117
+  },
+  {
+   "text": "normale,",
+   "start": 18.117,
+   "end": 18.603
+  },
+  {
+   "text": "c'est",
+   "start": 18.892,
+   "end": 19.043
+  },
+  {
+   "text": "entre",
+   "start": 19.043,
+   "end": 19.718
+  },
+  {
+   "text": "36,5",
+   "start": 19.718,
+   "end": 20.258
+  },
+  {
+   "text": "et",
+   "start": 20.258,
+   "end": 20.528
+  },
+  {
+   "text": "37,5",
+   "start": 20.528,
+   "end": 21.068
+  },
+  {
+   "text": "degrés.",
+   "start": 21.068,
+   "end": 21.473
+  },
+  {
+   "text": "On",
+   "start": 21.786,
+   "end": 21.948
+  },
+  {
+   "text": "dit",
+   "start": 21.948,
+   "end": 22.063
+  },
+  {
+   "text": "que",
+   "start": 22.063,
+   "end": 22.156
+  },
+  {
+   "text": "le",
+   "start": 22.156,
+   "end": 22.225
+  },
+  {
+   "text": "patient",
+   "start": 22.225,
+   "end": 22.573
+  },
+  {
+   "text": "est",
+   "start": 22.573,
+   "end": 22.619
+  },
+  {
+   "text": "apyrétique :",
+   "start": 22.619,
+   "end": 23.302
+  },
+  {
+   "text": "il",
+   "start": 23.603,
+   "end": 23.661
+  },
+  {
+   "text": "n'a",
+   "start": 23.661,
+   "end": 23.753
+  },
+  {
+   "text": "pas",
+   "start": 23.753,
+   "end": 23.869
+  },
+  {
+   "text": "de",
+   "start": 23.869,
+   "end": 23.973
+  },
+  {
+   "text": "fièvre.",
+   "start": 23.973,
+   "end": 24.471
+  },
+  {
+   "text": "Entre",
+   "start": 25.406,
+   "end": 25.885
+  },
+  {
+   "text": "37,5",
+   "start": 25.885,
+   "end": 26.269
+  },
+  {
+   "text": "et",
+   "start": 26.269,
+   "end": 26.46
+  },
+  {
+   "text": "38,",
+   "start": 26.46,
+   "end": 27.131
+  },
+  {
+   "text": "c'est",
+   "start": 27.42,
+   "end": 27.524
+  },
+  {
+   "text": "une",
+   "start": 27.524,
+   "end": 27.675
+  },
+  {
+   "text": "fébricule :",
+   "start": 27.675,
+   "end": 28.242
+  },
+  {
+   "text": "une",
+   "start": 28.554,
+   "end": 28.635
+  },
+  {
+   "text": "petite",
+   "start": 28.635,
+   "end": 28.913
+  },
+  {
+   "text": "fièvre.",
+   "start": 28.913,
+   "end": 29.399
+  },
+  {
+   "text": "À",
+   "start": 30.328,
+   "end": 30.467
+  },
+  {
+   "text": "partir",
+   "start": 30.467,
+   "end": 30.756
+  },
+  {
+   "text": "de",
+   "start": 30.756,
+   "end": 30.826
+  },
+  {
+   "text": "38,",
+   "start": 30.826,
+   "end": 31.358
+  },
+  {
+   "text": "c'est",
+   "start": 31.647,
+   "end": 31.752
+  },
+  {
+   "text": "une",
+   "start": 31.752,
+   "end": 31.925
+  },
+  {
+   "text": "hyperthermie :",
+   "start": 31.925,
+   "end": 32.55
+  },
+  {
+   "text": "le",
+   "start": 32.886,
+   "end": 32.944
+  },
+  {
+   "text": "patient",
+   "start": 32.944,
+   "end": 33.256
+  },
+  {
+   "text": "a",
+   "start": 33.256,
+   "end": 33.291
+  },
+  {
+   "text": "de",
+   "start": 33.291,
+   "end": 33.36
+  },
+  {
+   "text": "la",
+   "start": 33.36,
+   "end": 33.441
+  },
+  {
+   "text": "fièvre,",
+   "start": 33.441,
+   "end": 33.835
+  },
+  {
+   "text": "il",
+   "start": 34.055,
+   "end": 34.124
+  },
+  {
+   "text": "est",
+   "start": 34.124,
+   "end": 34.159
+  },
+  {
+   "text": "fébrile.",
+   "start": 34.159,
+   "end": 34.738
+  },
+  {
+   "text": "On",
+   "start": 35.061,
+   "end": 35.177
+  },
+  {
+   "text": "peut",
+   "start": 35.177,
+   "end": 35.292
+  },
+  {
+   "text": "voir",
+   "start": 35.292,
+   "end": 35.443
+  },
+  {
+   "text": "des",
+   "start": 35.443,
+   "end": 35.524
+  },
+  {
+   "text": "frissons,",
+   "start": 35.524,
+   "end": 35.987
+  },
+  {
+   "text": "des",
+   "start": 36.23,
+   "end": 36.299
+  },
+  {
+   "text": "sueurs,",
+   "start": 36.299,
+   "end": 36.774
+  },
+  {
+   "text": "ou",
+   "start": 37.017,
+   "end": 37.063
+  },
+  {
+   "text": "un",
+   "start": 37.063,
+   "end": 37.133
+  },
+  {
+   "text": "visage",
+   "start": 37.133,
+   "end": 37.445
+  },
+  {
+   "text": "rouge.",
+   "start": 37.445,
+   "end": 37.804
+  },
+  {
+   "text": "Et",
+   "start": 38.725,
+   "end": 38.876
+  },
+  {
+   "text": "en",
+   "start": 38.876,
+   "end": 38.922
+  },
+  {
+   "text": "dessous",
+   "start": 38.922,
+   "end": 39.153
+  },
+  {
+   "text": "de",
+   "start": 39.153,
+   "end": 39.234
+  },
+  {
+   "text": "35,",
+   "start": 39.234,
+   "end": 39.813
+  },
+  {
+   "text": "c'est",
+   "start": 40.079,
+   "end": 40.183
+  },
+  {
+   "text": "une",
+   "start": 40.183,
+   "end": 40.345
+  },
+  {
+   "text": "hypothermie :",
+   "start": 40.345,
+   "end": 40.924
+  },
+  {
+   "text": "le",
+   "start": 41.225,
+   "end": 41.294
+  },
+  {
+   "text": "corps",
+   "start": 41.294,
+   "end": 41.503
+  },
+  {
+   "text": "est",
+   "start": 41.503,
+   "end": 41.538
+  },
+  {
+   "text": "trop",
+   "start": 41.538,
+   "end": 41.688
+  },
+  {
+   "text": "froid.",
+   "start": 41.688,
+   "end": 42.07
+  },
+  {
+   "text": "Le",
+   "start": 42.426,
+   "end": 42.53
+  },
+  {
+   "text": "patient",
+   "start": 42.53,
+   "end": 42.843
+  },
+  {
+   "text": "grelotte,",
+   "start": 42.843,
+   "end": 43.317
+  },
+  {
+   "text": "et",
+   "start": 43.63,
+   "end": 43.653
+  },
+  {
+   "text": "sa",
+   "start": 43.653,
+   "end": 43.769
+  },
+  {
+   "text": "peau",
+   "start": 43.769,
+   "end": 43.954
+  },
+  {
+   "text": "est",
+   "start": 43.954,
+   "end": 44.0
+  },
+  {
+   "text": "froide",
+   "start": 44.0,
+   "end": 44.278
+  },
+  {
+   "text": "et",
+   "start": 44.278,
+   "end": 44.324
+  },
+  {
+   "text": "pâle.",
+   "start": 44.324,
+   "end": 44.752
+  },
+  {
+   "text": "Petit",
+   "start": 45.684,
+   "end": 45.973
+  },
+  {
+   "text": "récap !",
+   "start": 45.973,
+   "end": 46.494
+  },
+  {
+   "text": "La",
+   "start": 46.805,
+   "end": 46.967
+  },
+  {
+   "text": "température",
+   "start": 46.967,
+   "end": 47.511
+  },
+  {
+   "text": "se",
+   "start": 47.511,
+   "end": 47.627
+  },
+  {
+   "text": "mesure",
+   "start": 47.627,
+   "end": 47.951
+  },
+  {
+   "text": "en",
+   "start": 47.951,
+   "end": 47.985
+  },
+  {
+   "text": "degrés",
+   "start": 47.985,
+   "end": 48.228
+  },
+  {
+   "text": "Celsius,",
+   "start": 48.228,
+   "end": 48.842
+  },
+  {
+   "text": "par",
+   "start": 49.085,
+   "end": 49.224
+  },
+  {
+   "text": "plusieurs",
+   "start": 49.224,
+   "end": 49.571
+  },
+  {
+   "text": "voies.",
+   "start": 49.571,
+   "end": 49.895
+  },
+  {
+   "text": "Entre",
+   "start": 50.209,
+   "end": 51.003
+  },
+  {
+   "text": "36,5",
+   "start": 51.003,
+   "end": 51.639
+  },
+  {
+   "text": "et",
+   "start": 51.639,
+   "end": 51.957
+  },
+  {
+   "text": "37,5 :",
+   "start": 51.957,
+   "end": 52.593
+  },
+  {
+   "text": "apyrétique.",
+   "start": 52.836,
+   "end": 53.6
+  },
+  {
+   "text": "Entre",
+   "start": 53.912,
+   "end": 54.417
+  },
+  {
+   "text": "37,5",
+   "start": 54.417,
+   "end": 54.821
+  },
+  {
+   "text": "et",
+   "start": 54.821,
+   "end": 55.023
+  },
+  {
+   "text": "38 :",
+   "start": 55.023,
+   "end": 55.729
+  },
+  {
+   "text": "fébricule.",
+   "start": 55.996,
+   "end": 56.736
+  },
+  {
+   "text": "À",
+   "start": 57.05,
+   "end": 57.177
+  },
+  {
+   "text": "partir",
+   "start": 57.177,
+   "end": 57.478
+  },
+  {
+   "text": "de",
+   "start": 57.478,
+   "end": 57.559
+  },
+  {
+   "text": "38 :",
+   "start": 57.559,
+   "end": 58.068
+  },
+  {
+   "text": "hyperthermie,",
+   "start": 58.253,
+   "end": 58.855
+  },
+  {
+   "text": "le",
+   "start": 59.145,
+   "end": 59.202
+  },
+  {
+   "text": "patient",
+   "start": 59.203,
+   "end": 59.55
+  },
+  {
+   "text": "est",
+   "start": 59.55,
+   "end": 59.608
+  },
+  {
+   "text": "fébrile.",
+   "start": 59.608,
+   "end": 60.175
+  },
+  {
+   "text": "Et",
+   "start": 60.509,
+   "end": 60.647
+  },
+  {
+   "text": "en",
+   "start": 60.647,
+   "end": 60.705
+  },
+  {
+   "text": "dessous",
+   "start": 60.705,
+   "end": 60.937
+  },
+  {
+   "text": "de",
+   "start": 60.937,
+   "end": 61.018
+  },
+  {
+   "text": "35 :",
+   "start": 61.018,
+   "end": 61.596
+  },
+  {
+   "text": "hypothermie !",
+   "start": 61.747,
+   "end": 62.349
+  }
+ ]
+}

@@ -77,3 +77,36 @@ export const EyeIcon: React.FC<IP> = (p) => (
 		<circle cx="50" cy="50" r="14" fill={N} />
 	</Ico>
 );
+/** sueurs : gouttes */
+export const SweatIcon: React.FC<IP> = (p) => (
+	<Ico {...p}>
+		<path d="M34 18 C34 18 52 40 52 52 A18 18 0 0 1 16 52 C16 40 34 18 34 18 Z" fill={alpha(LPI.sky, 0.9)} />
+		<path d="M70 44 C70 44 84 60 84 69 A14 14 0 0 1 56 69 C56 60 70 44 70 44 Z" fill={alpha(LPI.sky, 0.9)} />
+	</Ico>
+);
+/** visage rouge (joues roses) */
+export const FlushIcon: React.FC<IP> = (p) => (
+	<Ico {...p}>
+		<circle cx="50" cy="52" r="34" />
+		<circle cx="34" cy="60" r="8" fill={alpha(LPI.pink, 0.9)} stroke="none" />
+		<circle cx="66" cy="60" r="8" fill={alpha(LPI.pink, 0.9)} stroke="none" />
+		<path d="M38 44 V46 M62 44 V46 M42 70 Q50 76 58 70" />
+	</Ico>
+);
+/** visage pâle (peau froide) */
+export const PaleIcon: React.FC<IP> = (p) => (
+	<Ico {...p}>
+		<circle cx="50" cy="52" r="34" fill={alpha(LPI.sky, 0.8)} />
+		<path d="M38 44 V46 M62 44 V46 M40 70 L46 66 L52 70 L58 66 L62 70" />
+	</Ico>
+);
+/** frissons / grelotte : flocon */
+export const ShiverIcon: React.FC<IP> = (p) => (
+	<Ico {...p}>
+		{[0, 60, 120].map((r) => (
+			<g key={r} transform={`rotate(${r} 50 50)`}>
+				<path d="M50 14 V86 M40 24 L50 34 L60 24 M40 76 L50 66 L60 76" />
+			</g>
+		))}
+	</Ico>
+);

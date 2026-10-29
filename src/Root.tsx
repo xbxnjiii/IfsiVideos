@@ -10,6 +10,8 @@ import {FrequenceCardiaque, FrequenceCardiaqueProps} from './videos/frequence-ca
 import {TL as FC_TL} from './videos/frequence-cardiaque/timeline';
 import {FrequenceRespiratoire, FrequenceRespiratoireProps} from './videos/frequence-respiratoire/FrequenceRespiratoire';
 import {TL as FR_TL} from './videos/frequence-respiratoire/timeline';
+import {Temperature, TemperatureProps} from './videos/temperature/Temperature';
+import {TL as TEMP_TL} from './videos/temperature/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -56,6 +58,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies FrequenceRespiratoireProps}
+		/>
+		{/* 06 · La température corporelle */}
+		<Composition
+			id="Temperature"
+			component={Temperature}
+			durationInFrames={TEMP_TL.total}
+			fps={TEMP_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies TemperatureProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition

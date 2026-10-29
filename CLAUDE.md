@@ -70,7 +70,8 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   (ex. ample (profonde, beaucoup d'air), superficielle (peu profonde, peu d'air)).
 - Déroulé type : accroche · définition · mesure (geste + astuce) · norme adulte · trop haut · trop bas ·
   « pas que le chiffre » (rythme, amplitude…) · récap rapide · logo.
-- Modèles : `Frequence-Cardiaque` et `Frequence-Respiratoire` (`src/videos/frequence-*/`, storyboards dans `docs/lpi/`).
+- Modèles : `Frequence-Cardiaque`, `Frequence-Respiratoire` et `Temperature` (`src/videos/frequence-*/`, `src/videos/temperature/`,
+  storyboards dans `docs/lpi/`). Paliers de valeur qui roulent : `steps()` de `temperature/Scenes.tsx`.
 
 ## Recette express (nouvelle vidéo de constante)
 
@@ -81,8 +82,9 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
 3. Briques prêtes (`src/brand/`) : `episode.tsx` (mise en page `LAY`, `Head`, `Unit`, `Tag`, `BigNum`,
    `CauseChip`, `Stopwatch`, `RecapScene`, `EndCard`, composition `Episode`, places `SPOT`, `runAcross`),
    `cardio.tsx` (battements, ECG, cœur qui bat, onde de pouls), `breath.tsx` (respiration, poumons, thorax,
-   tracé respiratoire), `body.tsx` (poignet, doigts, pouce), `icons.tsx` (effort, fièvre, stress, douleur,
-   anxiété, médicament, sommeil, sportif, œil), `NormScale`, `TermSlam`, `Stage`, kit (`Stamp`, `CheckChip`…).
+   tracé respiratoire), `thermo.tsx` (zones de température, thermomètre + °C qui roule, jauge froid ↔ chaud,
+   ondes de chaleur, flocons), `body.tsx` (poignet, doigts, pouce), `icons.tsx` (effort, fièvre, stress, douleur,
+   anxiété, médicament, sommeil, sportif, œil, sueurs, visage rouge, pâleur, frissons), `NormScale`, `TermSlam`, `Stage`, kit (`Stamp`, `CheckChip`…).
 4. Contrôle : `npm run check:mascot -- <épisode>` → `COMP=<Composition> OUT=out/qa SCALE=0.5 node scripts/qa/stills.mjs <frames…>`
    → `npm run sheet -- out/qa` (planches ffmpeg) → relecture → rendu → `npm run sheet -- out/<vidéo>.mp4` (1 image/s).
 
