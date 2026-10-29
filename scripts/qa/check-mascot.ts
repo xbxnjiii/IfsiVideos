@@ -16,6 +16,8 @@ import * as ta from '../../src/videos/tension-arterielle/mascot';
 import * as taTL from '../../src/videos/tension-arterielle/timeline';
 import * as gly from '../../src/videos/glycemie/mascot';
 import * as glyTL from '../../src/videos/glycemie/timeline';
+import * as diu from '../../src/videos/diurese/mascot';
+import * as diuTL from '../../src/videos/diurese/timeline';
 
 const VIDEOS: Record<string, [typeof constantes.MASCOT, typeof constantesTL.TL]> = {
 	constantes: [constantes.MASCOT, constantesTL.TL],
@@ -25,6 +27,7 @@ const VIDEOS: Record<string, [typeof constantes.MASCOT, typeof constantesTL.TL]>
 	temperature: [temp.MASCOT, tempTL.TL],
 	'tension-arterielle': [ta.MASCOT, taTL.TL],
 	glycemie: [gly.MASCOT, glyTL.TL],
+	diurese: [diu.MASCOT, diuTL.TL],
 };
 const name = process.argv[2] ?? 'constantes';
 const [MASCOT, TL] = VIDEOS[name];

@@ -1,0 +1,10 @@
+[
+	{"id": "intro", "text": "C'est quoi, la diurèse ?"},
+	{"id": "def", "text": "La diurèse, c'est la quantité d'urine que les reins fabriquent. Les reins filtrent le sang, et l'urine est stockée dans la vessie."},
+	{"id": "mesure", "text": "On la mesure sur 24 heures : on recueille toutes les urines dans un bocal gradué, et on lit le volume en millilitres."},
+	{"id": "norme", "text": "Chez l'adulte, la normale, c'est entre 600 et 2000 millilitres par 24 heures : c'est la normodiurèse."},
+	{"id": "poly", "text": "Au-dessus de 2500 à 3000 millilitres, c'est une polyurie : le patient urine beaucoup trop. Par exemple avec un diabète, ou des diurétiques, des médicaments qui font uriner."},
+	{"id": "oligo", "text": "En dessous de 400 millilitres, c'est une oligurie : le patient urine trop peu. Ça peut venir d'une déshydratation, quand le corps manque d'eau."},
+	{"id": "anurie", "text": "Et en dessous de 100 millilitres, c'est une anurie : il n'y a presque plus d'urine. C'est une urgence !"},
+	{"id": "outro", "text": "Petit récap ! La diurèse, c'est la quantité d'urine sur 24 heures, en millilitres. Normale : entre 600 et 2000, c'est la normodiurèse. Au-dessus de 2500 à 3000 : polyurie. En dessous de 400 : oligurie. Et en dessous de 100 : anurie, une urgence !"}
+]

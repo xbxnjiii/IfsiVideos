@@ -16,6 +16,8 @@ import {TensionArterielle, TensionArterielleProps} from './videos/tension-arteri
 import {TL as TA_TL} from './videos/tension-arterielle/timeline';
 import {Glycemie, GlycemieProps} from './videos/glycemie/Glycemie';
 import {TL as GLY_TL} from './videos/glycemie/timeline';
+import {Diurese, DiureseProps} from './videos/diurese/Diurese';
+import {TL as DIU_TL} from './videos/diurese/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -92,6 +94,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies GlycemieProps}
+		/>
+		{/* 09 · La diurèse */}
+		<Composition
+			id="Diurese"
+			component={Diurese}
+			durationInFrames={DIU_TL.total}
+			fps={DIU_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies DiureseProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition

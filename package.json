@@ -16,7 +16,8 @@
     "render:fr": "remotion render Frequence-Respiratoire out/05-frequence-respiratoire.mp4",
     "render:temp": "remotion render Temperature out/06-temperature.mp4",
     "render:ta": "remotion render Tension-Arterielle out/07-tension-arterielle.mp4",
-    "render:gly": "remotion render Glycemie out/08-glycemie.mp4"
+    "render:gly": "remotion render Glycemie out/08-glycemie.mp4",
+    "render:diu": "remotion render Diurese out/09-diurese.mp4"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.532",

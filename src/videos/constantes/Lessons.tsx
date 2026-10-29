@@ -4,6 +4,7 @@ import {Lesson3, scaleY, Seuil, StatePill} from '../../brand/Lesson3';
 import {NormScale, Zone} from '../../brand/NormScale';
 import {Manometer} from '../../brand/pressure';
 import {Finger, Glucometer, SugarRain} from '../../brand/glyco';
+import {Clock24, dropTimes, Jar} from '../../brand/urine';
 import {Sign} from '../../brand/learn';
 import {Odometer} from '../../brand/motion3';
 import {Artery, Heart, Lungs, Oximeter, Rbc, SnowPicto, Thermometer} from '../../brand/pictos';
@@ -861,89 +862,6 @@ export const Glycemie: React.FC = () => {
 };
 
 /* ═══════════════════════ 7 — DIURÈSE ═══════════════════════ */
-
-const JAR_MAX = 3500;
-
-/** Bocal gradué de recueil des urines (24 h) : le niveau suit la diurèse, les gouttes tombent du tuyau. */
-const Jar: React.FC<{value: number; drops: number[]}> = ({value, drops}) => {
-	const frame = useCurrentFrame();
-	const lvl = (v: number) => 380 - (Math.min(v, JAR_MAX) / JAR_MAX) * 316;
-	const top = lvl(value);
-	const wave = Array.from({length: 11}, (_, i) => {
-		const x = 30 + i * 20;
-		return `${x},${top + 5 * Math.sin(i / 1.3 + frame / 5)}`;
-	}).join(' ');
-	return (
-		<svg width={260} height={400} viewBox="0 0 260 400" style={{overflow: 'visible'}}>
-			<defs>
-				<clipPath id="lpi-jar">
-					<path d="M44 64 H216 V356 Q216 384 188 384 H72 Q44 384 44 356 Z" />
-				</clipPath>
-			</defs>
-			{/* tuyau qui amène les urines */}
-			<path d="M130 -24 V40" stroke={LPI.navy} strokeWidth={16} strokeLinecap="round" />
-			<path d="M130 -24 V40" stroke={LPI.sky} strokeWidth={7} strokeLinecap="round" />
-			<g clipPath="url(#lpi-jar)">
-				<polygon points={`${wave} 240,400 20,400`} fill={alpha(LPI.sky, 0.95)} />
-				<polyline points={wave} fill="none" stroke={LPI.blue} strokeWidth={6} strokeLinejoin="round" />
-			</g>
-			{drops.map((d, i) => {
-				const t = (frame - d) / 12;
-				if (t < 0 || t > 1) return null;
-				const y = 46 + t * t * (top - 46);
-				return <path key={i} d={`M130 ${y - 14} C124 ${y - 4} 120 ${y + 2} 120 ${y + 6} A10 10 0 0 0 140 ${y + 6} C140 ${y + 2} 136 ${y - 4} 130 ${y - 14} Z`} fill={LPI.blue} />;
-			})}
-			<path d="M44 64 H216 V356 Q216 384 188 384 H72 Q44 384 44 356 Z" fill="none" stroke={LPI.navy} strokeWidth={10} strokeLinejoin="round" />
-			<rect x="28" y="36" width="204" height="34" rx="12" fill={LPI.blue} stroke={LPI.navy} strokeWidth={8} />
-			{[1000, 2000, 3000].map((g) => (
-				<g key={g}>
-					<path d={`M172 ${lvl(g)} H206`} stroke={LPI.navy} strokeWidth={6} strokeLinecap="round" />
-					<text x="166" y={lvl(g) + 8} textAnchor="end" fontFamily={FONT.body} fontWeight={800} fontSize="22" fill={alpha(LPI.navy, 0.75)}>
-						{g / 1000} L
-					</text>
-				</g>
-			))}
-		</svg>
-	);
-};
-
-/** Petite horloge « 24 h » dont l'aiguille fait le tour du cadran. */
-const Clock24: React.FC<{at: number}> = ({at: t0}) => {
-	const frame = useCurrentFrame();
-	const p = usePop(t0);
-	if (frame < t0) return null;
-	const turn = interpolate(frame, [t0 + 2, t0 + 26], [0, 360], ease);
-	return (
-		<div style={{opacity: Math.min(1, p * 2), transform: `scale(${0.4 + 0.6 * p})`, display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-			<svg width={120} height={120} viewBox="-60 -60 120 120">
-				<circle r={52} fill={LPI.paper} stroke={LPI.navy} strokeWidth={8} />
-				<path d={`M0 0 L0 -36 A36 36 0 ${turn > 180 ? 1 : 0} 1 ${36 * Math.sin((turn * Math.PI) / 180)} ${-36 * Math.cos((turn * Math.PI) / 180)} Z`} fill={alpha(LPI.sky, 0.9)} />
-				<g transform={`rotate(${turn})`}>
-					<path d="M0 6 V-38" stroke={LPI.navy} strokeWidth={7} strokeLinecap="round" />
-				</g>
-				<circle r={7} fill={LPI.pink} stroke={LPI.navy} strokeWidth={3} />
-			</svg>
-			<div style={{fontFamily: FONT.title, fontWeight: 900, fontSize: 34, color: LPI.navy, marginTop: 2}}>24 h</div>
-		</div>
-	);
-};
-
-/** Instants des gouttes : la cadence suit le volume (beaucoup d'urine = goutte à goutte rapide). */
-const dropTimes = (frame: number, start: number, vAt: (f: number) => number) => {
-	const out: number[] = [];
-	let ph = 0;
-	for (let f = start; f <= frame; f++) {
-		const v = vAt(f);
-		const period = v < 120 ? 0 : interpolate(v, [120, 400, 1500, 3200], [60, 34, 16, 6], clamp);
-		if (period <= 0) continue;
-		ph += 1 / period;
-		if (ph >= 1) {
-			ph -= 1;
-			out.push(f);
-		}
-	}
-	return out.slice(-6);
-};
 
 export const Diurese: React.FC = () => {
 	const frame = useCurrentFrame();
