@@ -153,10 +153,10 @@ export const Hook: React.FC = () => {
 								transformOrigin: '190px 520px',
 							}}
 						>
-										<Patient size={380} breath={0} mood={frame >= ARR ? 'mal' : 'calme'} eyesClosed={interpolate(frame, [ARR + 2, ARR + 8], [0, 1], clamp)} pale={interpolate(frame, [FLAT, FLAT + 10], [0, 0.6], clamp)} />
-									</div>
-								) : null}
+							<Patient size={380} breath={0} mood={frame >= ARR ? 'mal' : 'calme'} eyesClosed={interpolate(frame, [ARR + 2, ARR + 8], [0, 1], clamp)} pale={interpolate(frame, [FLAT, FLAT + 10], [0, 0.6], clamp)} />
 						</div>
+					) : null}
+				</div>
 				{/* ── B · 3 minutes : le cerveau en danger ── */}
 				{frame >= DES - 2 && outB > 0 ? (
 					<div style={{opacity: outB}}>
@@ -548,12 +548,12 @@ export const Alerter: React.FC = () => {
 								<div style={{width: 290, marginTop: 14, textAlign: 'center', fontFamily: FONT.title, fontWeight: 800, fontSize: 28, color: N, lineHeight: 1.15}}>
 									défibrillateur
 									<br />
-													<span style={{color: LPI.blue}}>automatisé externe</span>
-												</div>
-											</div>
-										) : null}
-									</ZoomCam>
-								</Stage>
+									<span style={{color: LPI.blue}}>automatisé externe</span>
+								</div>
+							</div>
+						) : null}
+					</ZoomCam>
+				</Stage>
 				<div style={{position: 'absolute', left: 72, top: 1010, display: 'flex', flexDirection: 'column', gap: 18, alignItems: 'flex-start'}}>
 					<CheckChip at={Q15} label="appeler le 15 (ou le 112)" size={44} />
 					<CheckChip at={DEF} label="faire chercher un défibrillateur (DAE)" size={44} />
@@ -611,10 +611,10 @@ export const Masser: React.FC = () => {
 										<path d="M206 256 V336 M166 296 H246" stroke={LPI.pink} strokeWidth={6} strokeLinecap="round" />
 									</g>
 								) : null}
-										<CprHands press={press} on={arms} />
-									</svg>
-								</div>
-							</ZoomCam>
+								<CprHands press={press} on={arms} />
+							</svg>
+						</div>
+					</ZoomCam>
 					{frame >= CINQ - 4 ? (
 						<div style={{position: 'absolute', left: 740, top: 150, opacity: Math.min(1, gauge * 1.5), transform: `scale(${0.6 + 0.4 * gauge})`}}>
 							<DepthGauge press={press} height={300} />
@@ -808,11 +808,11 @@ export const Dae: React.FC = () => {
 						) : null}
 						{frame >= ANA - 4 ? (
 							<div style={{position: 'absolute', left: 470, top: 400, opacity: Math.min(1, mon * 1.5), transform: `scale(${0.6 + 0.4 * mon})`, transformOrigin: 'left top'}}>
-											<EcgMonitor rhythm={rhythm} width={440} height={170} readout={frame >= ARRT + 6 ? '♥' : 'FV'} alert={frame < ARRT + 6 ? 1 : 0} />
-										</div>
-									) : null}
-								</ZoomCam>
-							</Stage>
+								<EcgMonitor rhythm={rhythm} width={440} height={170} readout={frame >= ARRT + 6 ? '♥' : 'FV'} alert={frame < ARRT + 6 ? 1 : 0} />
+							</div>
+						) : null}
+					</ZoomCam>
+				</Stage>
 				<Stamp at={SHOCK} x={560} y={660} text="Choc !" size={72} rot={-8} />
 				<Stamp at={PEND} x={540} y={1110} text="Personne ne touche !" size={56} rot={-4} />
 				<div style={{position: 'absolute', left: 72, top: 1190, display: 'flex', flexDirection: 'column', gap: 16, alignItems: 'flex-start'}}>

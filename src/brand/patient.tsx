@@ -55,19 +55,19 @@ export type PatientProps = {
 	/** bras levés vers l'extérieur, en degrés (0 = le long du corps, 90 = à l'horizontale) */
 	armL?: number;
 	armR?: number;
-		/** yeux fermés (inconscient, 0 → 1) */
-		eyesClosed?: number;
-		/** le cœur tremble au lieu de battre (fibrillation, 0 → 1) */
-		quiver?: number;
-		/** cerveau vu à travers le crâne (0 → 1) ; avec `flow`, les carotides montent du cœur jusqu'à lui */
-		brain?: number;
-		/** cerveau privé d'oxygène : il pâlit, ses neurones s'éteignent (0 → 1) */
-		anoxia?: number;
-		/** le sang ne circule plus : artères vides (0 → 1) */
-		bloodless?: number;
-		/** avancée du sang dans les artères (par défaut 3 × frame ; la figer = le sang s'arrête) */
-		flowPhase?: number;
-	};
+	/** yeux fermés (inconscient, 0 → 1) */
+	eyesClosed?: number;
+	/** le cœur tremble au lieu de battre (fibrillation, 0 → 1) */
+	quiver?: number;
+	/** cerveau vu à travers le crâne (0 → 1) ; avec `flow`, les carotides montent du cœur jusqu'à lui */
+	brain?: number;
+	/** cerveau privé d'oxygène : il pâlit, ses neurones s'éteignent (0 → 1) */
+	anoxia?: number;
+	/** le sang ne circule plus : artères vides (0 → 1) */
+	bloodless?: number;
+	/** avancée du sang dans les artères (par défaut 3 × frame ; la figer = le sang s'arrête) */
+	flowPhase?: number;
+};
 
 const ARMS = ['M106 236 C92 290 80 340 76 400 C74 430 74 455 76 474', 'M294 236 C308 290 320 340 324 400 C326 430 326 455 324 474'];
 const SLEEVES = ['M110 230 C100 254 94 276 92 300', 'M290 230 C300 254 306 276 308 300'];
@@ -75,34 +75,34 @@ const TORSO = 'M112 214 C140 197 168 192 200 192 C232 192 260 197 288 214 C300 2
 const ARTERIES = [
 	'M228 300 C232 262 262 236 292 244 C306 290 318 340 322 400 C324 430 324 450 324 470',
 	'M228 300 C220 258 140 236 108 244 C94 290 82 340 78 400 C76 430 76 450 76 470',
-		'M228 300 C222 340 206 380 200 470',
-	];
-	/** carotides : du cœur au cou (sous le cœur), puis du cou au cerveau le long des joues (par-dessus la tête) */
-	const CAROTIDS_LOW = ['M228 300 C230 262 218 236 216 206', 'M228 300 C222 262 186 236 184 206'];
-	const CAROTIDS_UP = ['M216 206 C215 186 230 172 246 160 C258 150 258 120 246 92', 'M184 206 C183 186 170 172 154 160 C142 150 142 120 154 92'];
-	const CAROTID_LOW_LEN = 98;
-	const BRAIN = 'M200 40 C182 30 150 36 146 62 C142 86 162 100 186 98 C194 97 198 94 200 90 C202 94 206 97 214 98 C238 100 258 86 254 62 C250 36 218 30 200 40 Z';
-	const GYRI = 'M162 56 Q172 46 180 58 Q186 66 176 72 M158 80 Q170 72 180 84 M238 56 Q228 46 220 58 Q214 66 224 72 M242 80 Q230 72 220 84 M188 44 Q194 54 186 62 M212 44 Q206 54 214 62';
-	const NEURONS = [
-		[166, 50],
-		[176, 86],
-		[156, 68],
-		[190, 72],
-		[234, 50],
-		[224, 86],
-		[244, 68],
-		[210, 72],
-	];
+	'M228 300 C222 340 206 380 200 470',
+];
+/** carotides : du cœur au cou (sous le cœur), puis du cou au cerveau le long des joues (par-dessus la tête) */
+const CAROTIDS_LOW = ['M228 300 C230 262 218 236 216 206', 'M228 300 C222 262 186 236 184 206'];
+const CAROTIDS_UP = ['M216 206 C215 186 230 172 246 160 C258 150 258 120 246 92', 'M184 206 C183 186 170 172 154 160 C142 150 142 120 154 92'];
+const CAROTID_LOW_LEN = 98;
+const BRAIN = 'M200 40 C182 30 150 36 146 62 C142 86 162 100 186 98 C194 97 198 94 200 90 C202 94 206 97 214 98 C238 100 258 86 254 62 C250 36 218 30 200 40 Z';
+const GYRI = 'M162 56 Q172 46 180 58 Q186 66 176 72 M158 80 Q170 72 180 84 M238 56 Q228 46 220 58 Q214 66 224 72 M242 80 Q230 72 220 84 M188 44 Q194 54 186 62 M212 44 Q206 54 214 62';
+const NEURONS = [
+	[166, 50],
+	[176, 86],
+	[156, 68],
+	[190, 72],
+	[234, 50],
+	[224, 86],
+	[244, 68],
+	[210, 72],
+];
 
-	/** Artère : gaine claire, sang rose (ou vide, bleu clair) et globules qui avancent avec `phase`. */
-	const Artery: React.FC<{d: string; o: number; bloodless: number; phase: number}> = ({d, o, bloodless, phase}) => (
-		<g opacity={o}>
-			<path d={d} fill="none" stroke={alpha(LPI.paper, 0.9)} strokeWidth={14} strokeLinecap="round" />
-			<path d={d} fill="none" stroke={LPI.sky} strokeWidth={8} strokeLinecap="round" />
-			<path d={d} fill="none" stroke={LPI.pink} strokeWidth={8} strokeLinecap="round" opacity={1 - bloodless} />
-			<path d={d} fill="none" stroke={N} strokeWidth={5} strokeLinecap="round" strokeDasharray="4 26" strokeDashoffset={-phase} opacity={0.6 * (1 - 0.7 * bloodless)} />
-		</g>
-	);
+/** Artère : gaine claire, sang rose (ou vide, bleu clair) et globules qui avancent avec `phase`. */
+const Artery: React.FC<{d: string; o: number; bloodless: number; phase: number}> = ({d, o, bloodless, phase}) => (
+	<g opacity={o}>
+		<path d={d} fill="none" stroke={alpha(LPI.paper, 0.9)} strokeWidth={14} strokeLinecap="round" />
+		<path d={d} fill="none" stroke={LPI.sky} strokeWidth={8} strokeLinecap="round" />
+		<path d={d} fill="none" stroke={LPI.pink} strokeWidth={8} strokeLinecap="round" opacity={1 - bloodless} />
+		<path d={d} fill="none" stroke={N} strokeWidth={5} strokeLinecap="round" strokeDasharray="4 26" strokeDashoffset={-phase} opacity={0.6 * (1 - 0.7 * bloodless)} />
+	</g>
+);
 
 /** Calque de peau : blanc cassé + rose 30 % (+ rougeur), ou bleu clair (pâleur). */
 const SkinLayers: React.FC<{flush: number; pale: number; children: (fill: string, opacity: number) => React.ReactNode}> = ({flush, pale, children}) => (
