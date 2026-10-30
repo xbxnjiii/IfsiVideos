@@ -56,6 +56,9 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
 - Script : une partie par scène (`id` = id de scène), `{affiché|prononcé}` pour les sigles (`{bpm|B P M}`),
   `"pause": s` pour un silence voulu, `"rate": "-3%"` pour ralentir une partie dense (≈ 10 % plus lent que +8 %,
   ex. la partie VITE de l'AVC). Lettre isolée : écrire « la lettre E » (un « E » seul est lu « è », entendu « H ») ;
+  **chiffres et symboles toujours en lettres** (`{98 %|quatre-vingt-dix-huit pour cent}`) : un « 98 %. » seul en début de
+  partie a été lu **en anglais** (« ninety-eight percent ») par la voix multilingue ; contrôler la langue de chaque début
+  de partie avec faster-whisper **sans forcer la langue** (`info.language` doit être `fr`) ;
   en cas de doute, transcrire l'extrait avec faster-whisper (`pip install --break-system-packages faster-whisper`). Vérifier les mots clés dans voice.json (les nombres sont découpés à part).
 - Une voix enregistrée (ElevenLabs, studio) : `scripts/voice/align_voice.py` (Whisper, plus lent).
 
