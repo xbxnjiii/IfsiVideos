@@ -198,7 +198,9 @@ export const Title: React.FC<{
 	stagger?: number;
 	brush?: boolean;
 	color?: string;
-}> = ({at, text, size = 96, align = 'left', stagger = 3, brush = true, color = LPI.navy}) => {
+	/** couleur des mots `*accentués*` (rose sur le fond nuit) */
+	accent?: string;
+}> = ({at, text, size = 96, align = 'left', stagger = 3, brush = true, color = LPI.navy, accent = LPI.blue}) => {
 	const frame = useCurrentFrame();
 	const {fps} = useVideoConfig();
 	let i = 0;
@@ -237,7 +239,7 @@ export const Title: React.FC<{
 									display: 'inline-block',
 									opacity: Math.min(1, s * 1.5),
 									transform: `translateY(${(1 - s) * 28}px)`,
-									color: m ? LPI.blue : color,
+									color: m ? accent : color,
 									zIndex: 0,
 								}}
 							>

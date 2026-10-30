@@ -117,6 +117,20 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   dont le dossier se relève à 45°), `ChestScan` ; `Patient` : `fade={false}` ; icônes lit, avion, plâtre, bistouri,
   ruban, mollet. Dans une `ZoomCam`, le contenu doit tenir dans la fenêtre à zoom 1 (sinon il n'est jamais montré).
 
+## Format « histoire » (mystérieux, essai `AVC-Histoire`, `src/videos/avc-histoire/`)
+
+- Pour un accident ou une maladie racontés comme une histoire (pas un paramètre, pas un soin) : ≈ 1 min 20, un patient
+  prénommé (Michel, 64 ans), **fausse piste** (« juste la fatigue, ça va passer ») puis **révélation**, un « pourquoi »
+  qui intrigue (pourquoi d'un seul côté ?), fin courte et émotionnelle. Pas de récap, pas de barre de progression
+  (`<Episode progress={false}>`), mascotte discrète sous le cadre (spectatrice qui réagit, `L`/`R` à y 1730, 330 px).
+- Accroche = une phrase énigmatique déjà à l'écran sur l'image 0 (« La moitié de son sourire vient de disparaître. »)
+  + gros plan, puis retour en arrière (« 07 H 41 · UNE MINUTE AVANT »). Voix un peu plus posée (`"rate": "+2%"`).
+- Briques `night.tsx` : `NightBg` (bleu nuit, halo qui respire, grille, poussières), `ScanFrame` (cadre de scanner :
+  coins, point rose qui pulse, étiquette lieu · heure), `Glow` (lueur autour des dessins au trait), `NightFlash`,
+  `Scramble` (mots qui se mélangent). Une phrase clé à la fois en blanc, mots accentués en rose (`Title accent`).
+  Transitions : plongées `zoomInto({…, color: LPI.navy})` en alternance avec `whip`.
+- Bulles et pastilles fixes **hors** de la `ZoomCam` (sinon rognées quand la caméra s'approche).
+
 ## Recette express (nouvelle vidéo de constante)
 
 1. `voix/<n>-<sujet>.script.json` (texte exact, une partie par scène) → `npm run voice -- …` (2 min).

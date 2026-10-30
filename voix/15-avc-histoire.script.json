@@ -1,0 +1,10 @@
+[
+	{"id": "intro", "text": "La moitié de son sourire vient de disparaître. Ce matin, Michel, soixante-quatre ans, se rasait devant le miroir. Le rasoir lui a glissé des mains.", "rate": "+2%"},
+	{"id": "histoire", "text": "Sa femme l'appelle. Il veut répondre… mais les mots sortent dans le désordre. Il se dit que c'est la fatigue. Qu'il va s'allonger un peu. Que ça va passer.", "rate": "+2%"},
+	{"id": "revele", "text": "Sauf que ce n'est pas la fatigue. Dans son cerveau, une petite artère vient de se boucher. C'est un {AVC|A V C} : un accident vasculaire cérébral. Et à chaque minute, près de deux millions de neurones s'éteignent.", "rate": "+2%"},
+	{"id": "signes", "text": "Le problème, c'est que le cerveau, on ne le voit pas. Alors on regarde le corps. Et tout tient en quatre lettres : VITE.", "rate": "+2%"},
+	{"id": "vite", "text": "La lettre V, comme visage : demandez-lui de sourire. Un côté tombe. La lettre I, comme inertie : levez les deux bras. L'un retombe. La lettre T, comme trouble de la parole : faites-lui répéter une phrase. Les mots se mélangent.", "rate": "+2%"},
+	{"id": "urgence", "text": "Et la lettre E, comme en urgence : appelez le {15|quinze}. Tout de suite, même si les signes disparaissent. Et notez l'heure : elle décidera de son traitement.", "rate": "+2%"},
+	{"id": "pourquoi", "text": "Mais pourquoi d'un seul côté ? Parce que chaque moitié du cerveau commande l'autre moitié du corps. Une seule zone s'éteint… et toute une moitié du corps la suit.", "rate": "+2%"},
+	{"id": "fin", "text": "Michel a été soigné à temps. Parce que quelqu'un, ce matin-là, a reconnu quatre lettres.", "rate": "+2%"}
+]

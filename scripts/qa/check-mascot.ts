@@ -26,6 +26,8 @@ import * as spo from '../../src/videos/spo2/mascot';
 import * as spoTL from '../../src/videos/spo2/timeline';
 import * as ep from '../../src/videos/embolie-pulmonaire/mascot';
 import * as epTL from '../../src/videos/embolie-pulmonaire/timeline';
+import * as avch from '../../src/videos/avc-histoire/mascot';
+import * as avchTL from '../../src/videos/avc-histoire/timeline';
 
 const VIDEOS: Record<string, [typeof constantes.MASCOT, typeof constantesTL.TL]> = {
 	constantes: [constantes.MASCOT, constantesTL.TL],
@@ -40,6 +42,7 @@ const VIDEOS: Record<string, [typeof constantes.MASCOT, typeof constantesTL.TL]>
 	'arret-cardiaque': [acr.MASCOT, acrTL.TL],
 	spo2: [spo.MASCOT, spoTL.TL],
 	'embolie-pulmonaire': [ep.MASCOT, epTL.TL],
+	'avc-histoire': [avch.MASCOT, avchTL.TL],
 };
 const name = process.argv[2] ?? 'constantes';
 const [MASCOT, TL] = VIDEOS[name];

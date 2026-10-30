@@ -26,6 +26,8 @@ import {Spo2, Spo2Props} from './videos/spo2/Spo2';
 import {TL as SPO_TL} from './videos/spo2/timeline';
 import {EmboliePulmonaire, EmboliePulmonaireProps} from './videos/embolie-pulmonaire/EmboliePulmonaire';
 import {TL as EP_TL} from './videos/embolie-pulmonaire/timeline';
+import {AvcHistoire, AvcHistoireProps} from './videos/avc-histoire/AvcHistoire';
+import {TL as AVCH_TL} from './videos/avc-histoire/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -152,6 +154,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies EmboliePulmonaireProps}
+		/>
+		{/* 15 · AVC, format histoire (mystérieux) : l'histoire de Michel */}
+		<Composition
+			id="AVC-Histoire"
+			component={AvcHistoire}
+			durationInFrames={AVCH_TL.total}
+			fps={AVCH_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies AvcHistoireProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition
