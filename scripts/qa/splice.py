@@ -45,18 +45,16 @@ def main():
             raise SystemExit(f"segment {k} hors limites ou chevauchant : {start}+{n} (vidéo {total} images)")
         if start > cursor:
             parts.append((0, cursor, start))
-        parts.append((k, None, None))
+        parts.append((k, 0, n))
         cursor = start + n
     if cursor < total:
         parts.append((0, cursor, total))
+    # chaque morceau est coupé à l'image près, image ET son (le son AAC d'un segment dépasse un peu)
     for i, (src, a, b) in enumerate(parts):
-        if a is None:
-            chains.append(f"[{src}:v]setpts=PTS-STARTPTS[v{i}];[{src}:a]asetpts=PTS-STARTPTS[a{i}]")
-        else:
-            chains.append(
-                f"[{src}:v]trim=start_frame={a}:end_frame={b},setpts=PTS-STARTPTS[v{i}];"
-                f"[{src}:a]atrim=start={a / FPS}:end={b / FPS},asetpts=PTS-STARTPTS[a{i}]"
-            )
+        chains.append(
+            f"[{src}:v]trim=start_frame={a}:end_frame={b},setpts=PTS-STARTPTS[v{i}];"
+            f"[{src}:a]atrim=start={a / FPS}:end={b / FPS},asetpts=PTS-STARTPTS[a{i}]"
+        )
     concat = "".join(f"[v{i}][a{i}]" for i in range(len(parts))) + f"concat=n={len(parts)}:v=1:a=1[v][a]"
     tmp = tempfile.NamedTemporaryFile(suffix=".mp4", delete=False, dir=os.path.dirname(os.path.abspath(base))).name
     subprocess.run(
