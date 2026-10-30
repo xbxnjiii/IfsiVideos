@@ -9,9 +9,9 @@ import {alpha, FONT, LPI} from './theme';
 
 /** Normes adulte à jeun (liste fournie) : hypoglycémie < 0,70 · normoglycémie 0,70 – 1,10 · hyperglycémie > 1,10 g/l. */
 export const GLY_ZONES: Zone[] = [
-	{name: 'hypoglycémie', range: '< 0,70 g/l', tone: 'low', w: 1, lo: 0.3, hi: 0.7},
-	{name: 'normoglycémie', range: '0,70 – 1,10 g/l', tone: 'norm', w: 1.15, lo: 0.7, hi: 1.1},
-	{name: 'hyperglycémie', range: '> 1,10 g/l', tone: 'high', w: 1, lo: 1.1, hi: 2.6},
+	{name: 'hypoglycémie', range: '< 0,70 g/l\n(< 3,9 mmol/L)', tone: 'low', w: 1, lo: 0.3, hi: 0.7},
+	{name: 'normoglycémie', range: '0,70 – 1,10 g/l\n(3,9 – 6,1 mmol/L)', tone: 'norm', w: 1.15, lo: 0.7, hi: 1.1},
+	{name: 'hyperglycémie', range: '> 1,10 g/l\n(> 6,1 mmol/L)', tone: 'high', w: 1, lo: 1.1, hi: 2.6},
 ];
 
 /** Doigt stylisé (vu de profil) : une goutte de sang perle au bout. */

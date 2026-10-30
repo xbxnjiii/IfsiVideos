@@ -69,7 +69,7 @@ export const MASCOT: Beat[] = [
 	{at: abs('outro', 'normale'), key: 'situations/valide', ...R},
 	{at: abs('outro', 'hyperglycémie'), key: 'expressions/alerte', ...L},
 	{at: abs('outro', 'hypoglycémie'), key: 'symptomes/etourdie', ...R},
-	{at: abs('outro', 'urgence') + 24, via: 'pop', key: 'gestes/bravo', fx: 'bounce', x: 540, y: 1735, size: 390},
+	{at: abs('outro', 'hypoglycémie') + 56, via: 'pop', key: 'gestes/bravo', fx: 'bounce', x: 540, y: 1735, size: 390},
 	// elle repart en courant avant le logo
 	{at: start('end') - 6, via: 'pop', key: 'poses/course', x: 640, y: 1890, size: 480},
 	{at: start('end') + 10, via: 'run', dur: 16, key: 'poses/course', x: 1460, y: 1890, size: 480},

@@ -10,7 +10,7 @@ export type ZoneTone = 'low' | 'norm' | 'mid' | 'high' | 'gap';
 export type Zone = {
 	/** nom du terme (ex. « normocardie ») ; vide = zone de transition sans nom */
 	name: string;
-	/** bornes affichées sous la zone (ex. « 60 – 100 bpm ») */
+	/** bornes affichées sous la zone (ex. « 60 – 100 bpm ») ; « \n » = deuxième ligne (ex. l'unité en mmol/L) */
 	range?: string;
 	tone: ZoneTone;
 	/** largeur relative de la zone */
@@ -151,7 +151,8 @@ export const NormScale: React.FC<{
 								fontWeight: 700,
 								fontSize: rangeSize,
 								color: i === active ? LPI.navy : alpha(LPI.navy, 0.66),
-								whiteSpace: 'nowrap',
+								whiteSpace: 'pre',
+								lineHeight: 1.2,
 								opacity: interpolate(frame, [at + 8 + i * 3, at + 14 + i * 3], [0, 1], clamp),
 							}}
 						>

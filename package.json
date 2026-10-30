@@ -12,6 +12,7 @@
     "render:besoins": "remotion render Besoins-Fondamentaux out/03-besoins-fondamentaux.mp4",
     "render:fc": "remotion render Frequence-Cardiaque out/04-frequence-cardiaque.mp4",
     "voice": "python3 scripts/voice/tts_voix.py",
+    "splice": "python3 scripts/qa/splice.py",
     "sheet": "bash scripts/qa/sheet.sh",
     "render:fr": "remotion render Frequence-Respiratoire out/05-frequence-respiratoire.mp4",
     "render:temp": "remotion render Temperature out/06-temperature.mp4",

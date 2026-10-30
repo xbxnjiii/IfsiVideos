@@ -331,7 +331,7 @@ export const Norme: React.FC = () => {
 					term="Normoglycémie"
 					meaning={
 						<>
-							taux de sucre normal <Seuil>0,70 – 1,10 g/l</Seuil>
+							taux de sucre normal <Seuil>0,70 – 1,10 g/l (3,9 – 6,1 mmol/L)</Seuil>
 						</>
 					}
 					sign="check"
@@ -408,7 +408,7 @@ export const Hyper: React.FC = () => {
 					term="Hyperglycémie"
 					meaning={
 						<>
-							trop de sucre dans le sang <Seuil>&gt; 1,10 g/l</Seuil>
+							trop de sucre dans le sang <Seuil>&gt; 1,10 g/l (&gt; 6,1 mmol/L)</Seuil>
 						</>
 					}
 					sign="up"
@@ -484,7 +484,7 @@ export const Hypo: React.FC = () => {
 					term="Hypoglycémie"
 					meaning={
 						<>
-							pas assez de sucre <Seuil>&lt; 0,70 g/l</Seuil>
+							pas assez de sucre <Seuil>&lt; 0,70 g/l (&lt; 3,9 mmol/L)</Seuil>
 						</>
 					}
 					sign="down"
@@ -514,13 +514,13 @@ export const Outro: React.FC = () => (
 	<RecapScene
 		title="La *glycémie*"
 		kAt={at('outro', 'récap') - 4}
-		done={at('outro', 'urgence') + 16}
+		done={at('outro', 'hypoglycémie') + 48}
 		rows={[
 			[at('outro', 'sucre'), 'device', 'Taux de sucre', 'dans le sang · en g/l'],
 			[at('outro', 'doigt'), 'check', 'Au bout du doigt', 'glycémie capillaire'],
-			[at('outro', 'normale'), 'check', 'Normoglycémie', '0,70 – 1,10 g/l (à jeun)'],
-			[at('outro', 'hyperglycémie'), 'up', 'Hyperglycémie', '> 1,10 g/l'],
-			[at('outro', 'hypoglycémie'), 'down', 'Hypoglycémie', '< 0,70 g/l · urgence'],
+			[at('outro', 'normale'), 'check', 'Normoglycémie', <>0,70 – 1,10 g/l à jeun<br />(3,9 – 6,1 mmol/L)</>],
+			[at('outro', 'hyperglycémie'), 'up', 'Hyperglycémie', <>&gt; 1,10 g/l<br />(&gt; 6,1 mmol/L)</>],
+			[at('outro', 'hypoglycémie'), 'down', 'Hypoglycémie', <>&lt; 0,70 g/l<br />(&lt; 3,9 mmol/L)</>],
 		]}
 	/>
 );

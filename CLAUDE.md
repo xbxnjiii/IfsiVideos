@@ -59,6 +59,7 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   **chiffres et symboles toujours en lettres** (`{98 %|quatre-vingt-dix-huit pour cent}`) : un « 98 %. » seul en début de
   partie a été lu **en anglais** (« ninety-eight percent ») par la voix multilingue ; contrôler la langue de chaque début
   de partie avec faster-whisper **sans forcer la langue** (`info.language` doit être `fr`) ;
+  « à jeun » est lu « à jeune » : écrire `{jeun|jun}` (entendu « AJ1 ») ;
   en cas de doute, transcrire l'extrait avec faster-whisper (`pip install --break-system-packages faster-whisper`). Vérifier les mots clés dans voice.json (les nombres sont découpés à part).
 - Une voix enregistrée (ElevenLabs, studio) : `scripts/voice/align_voice.py` (Whisper, plus lent).
 
@@ -152,5 +153,11 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
 - Avant tout rendu complet : `npm run check:mascot -- <vidéo>`, puis images clés
   `COMP=<Composition> OUT=out/qa SCALE=0.5 node scripts/qa/stills.mjs <frames…>` + `npm run sheet -- out/qa`,
   relues planche par planche.
+- **Retouche d'une vidéo déjà livrée** (demandé) : ne recalculer que les images qui changent puis les recoller.
+  Voix : remplacer le mot dans son créneau (nouvelle prise edge-tts du passage, même niveau, sans décaler la suite ;
+  garder les fins de partie de voice.json pour ne pas changer la durée) ; `npx remotion render <Comp> seg.mp4
+  --frames=<début>-<fin>` pour chaque portion où le texte ou le son change (un élément qui reste affiché jusqu'à la
+  fin de sa scène compte jusqu'à la fin de la transition suivante) ; puis `npm run splice -- out/<vidéo>.mp4
+  seg.mp4@<début> …` (image + son, durée inchangée, vérifie le nombre d'images).
 - Livrer : **le MP4 seul** dans `out/` (non versionné). Plus de version web ni de couverture (demandé).
   Faire le ménage de `out/` (QA, anciens rendus) pour ne garder que les vidéos finales.
