@@ -1,0 +1,9 @@
+[
+	{"id": "intro", "text": "98 %. Tu le vois sur tous les saturomètres. Mais 98 % de quoi ? C'est quoi, la {SpO₂|S P O 2}, et quand faut-il s'inquiéter ?"},
+	{"id": "def", "text": "La {SpO₂|S P O 2}, c'est la saturation pulsée en oxygène. Quand on respire, l'oxygène passe des poumons dans le sang. Là, il se fixe sur l'hémoglobine des globules rouges, qui le transportent dans tout le corps. La {SpO₂|S P O 2}, c'est le pourcentage d'hémoglobine chargée en oxygène."},
+	{"id": "mesure", "text": "On la mesure avec un saturomètre, aussi appelé oxymètre de pouls : une pince au bout du doigt. Sa lumière traverse le doigt à chaque battement du pouls : c'est pour ça qu'on dit pulsée. Pour une valeur fiable : pas de vernis, une main bien chaude, et une courbe régulière."},
+	{"id": "norme", "text": "Chez l'adulte, la normale, c'est entre 95 et 100 %. Mais chez un patient {BPCO|B P C O}, une maladie chronique des poumons, le médecin fixe souvent une cible plus basse : entre 88 et 92 %."},
+	{"id": "bas", "text": "En dessous de 95 %, c'est une désaturation. Et en dessous de 90 %, c'est une hypoxémie : il manque d'oxygène dans le sang. C'est une urgence, on prévient tout de suite !"},
+	{"id": "signes", "text": "Le patient peut être essoufflé, avoir les lèvres et les ongles bleutés : c'est la cyanose. Il peut aussi être agité, ou confus. Alors on ne regarde pas que le chiffre : on regarde toujours le patient !"},
+	{"id": "outro", "text": "Petit récap ! La {SpO₂|S P O 2}, c'est l'hémoglobine chargée en oxygène, mesurée au doigt. Normale : entre 95 et 100 %. En dessous de 95 : désaturation. En dessous de 90 : hypoxémie, une urgence !"}
+]

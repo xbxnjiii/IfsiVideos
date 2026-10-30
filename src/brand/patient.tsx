@@ -1,8 +1,8 @@
 // Modèle de corps humain réutilisable : patient vu de face, de la tête aux hanches (bas en fondu).
 // Style plat de la marque (trait bleu nuit, tenue bleue, peau = rose 30 % sur blanc cassé), visage simple
 // qui cligne, et des calques à doser 0 → 1 : cœur qui bat (ou tremble), artères (sang qui s'arrête), cerveau vu à
-// travers le crâne (privé d'oxygène), brassard, rougeur, pâleur, sueurs, maux de tête, vertiges. Les points du corps
-// (PATIENT_PTS) servent à poser repères, traits et loupes.
+// travers le crâne (privé d'oxygène), poumons, lèvres bleutées (cyanose), brassard, rougeur, pâleur, sueurs, maux de
+// tête, vertiges. Les points du corps (PATIENT_PTS) servent à poser repères, traits et loupes.
 import React, {useId} from 'react';
 import {useCurrentFrame} from 'remotion';
 import {alpha, LPI} from './theme';
@@ -67,6 +67,10 @@ export type PatientProps = {
 	bloodless?: number;
 	/** avancée du sang dans les artères (par défaut 3 × frame ; la figer = le sang s'arrête) */
 	flowPhase?: number;
+	/** poumons vus à travers le thorax (0 → 1) ; ils se gonflent avec `breath` */
+	lungs?: number;
+	/** lèvres bleutées : cyanose, manque d'oxygène (0 → 1) */
+	cyanosis?: number;
 };
 
 const ARMS = ['M106 236 C92 290 80 340 76 400 C74 430 74 455 76 474', 'M294 236 C308 290 320 340 324 400 C326 430 326 455 324 474'];
@@ -81,6 +85,7 @@ const ARTERIES = [
 const CAROTIDS_LOW = ['M228 300 C230 262 218 236 216 206', 'M228 300 C222 262 186 236 184 206'];
 const CAROTIDS_UP = ['M216 206 C215 186 230 172 246 160 C258 150 258 120 246 92', 'M184 206 C183 186 170 172 154 160 C142 150 142 120 154 92'];
 const CAROTID_LOW_LEN = 98;
+const LUNGS = ['M188 238 C150 236 124 282 122 344 C120 384 142 396 172 388 C186 384 192 364 192 334 Z', 'M212 238 C250 236 276 282 278 344 C280 384 258 396 228 388 C214 384 208 364 208 334 Z'];
 const BRAIN = 'M200 40 C182 30 150 36 146 62 C142 86 162 100 186 98 C194 97 198 94 200 90 C202 94 206 97 214 98 C238 100 258 86 254 62 C250 36 218 30 200 40 Z';
 const GYRI = 'M162 56 Q172 46 180 58 Q186 66 176 72 M158 80 Q170 72 180 84 M238 56 Q228 46 220 58 Q214 66 224 72 M242 80 Q230 72 220 84 M188 44 Q194 54 186 62 M212 44 Q206 54 214 62';
 const NEURONS = [
@@ -114,13 +119,21 @@ const SkinLayers: React.FC<{flush: number; pale: number; children: (fill: string
 	</>
 );
 
-export const Patient: React.FC<PatientProps> = ({size = 360, mood = 'calme', breath = 0, heart = 0, beat = 0, flow = 0, cuff = 0, press = 0, flush = 0, pale = 0, sweat = 0, pain = 0, dizzy = 0, droop = 0, armL = 0, armR = 0, eyesClosed = 0, quiver = 0, brain = 0, anoxia = 0, bloodless = 0, flowPhase}) => {
+export const Patient: React.FC<PatientProps> = ({size = 360, mood = 'calme', breath = 0, heart = 0, beat = 0, flow = 0, cuff = 0, press = 0, flush = 0, pale = 0, sweat = 0, pain = 0, dizzy = 0, droop = 0, armL = 0, armR = 0, eyesClosed = 0, quiver = 0, brain = 0, anoxia = 0, bloodless = 0, flowPhase, lungs = 0, cyanosis = 0}) => {
 	const frame = useCurrentFrame();
 	const id = useId().replace(/:/g, '');
 	const blink = Math.min(frame % 96 < 4 ? 0.15 : 1, 1 - 0.9 * eyesClosed);
 	const lift = breath * 8;
 	const wide = 1 + breath * 0.035;
 	const unwell = mood === 'mal';
+	const mouth =
+		droop > 0
+			? `M184 ${148 + 2 * droop} Q200 ${156 + 4 * droop} 218 ${148 + 26 * droop}`
+			: mood === 'content'
+				? 'M180 144 Q200 166 220 144'
+				: unwell
+					? 'M184 156 Q192 148 200 154 Q208 160 216 152'
+					: 'M186 148 Q200 158 214 148';
 	const [hx, hy] = PATIENT_PTS.heart;
 	const [cx, cy] = PATIENT_PTS.upperArm;
 	const phase = flowPhase ?? frame * 3;
@@ -163,6 +176,16 @@ export const Patient: React.FC<PatientProps> = ({size = 360, mood = 'calme', bre
 					<path d="M172 194 L200 234 L228 194" fill="none" stroke={N} strokeWidth={7} strokeLinejoin="round" strokeLinecap="round" />
 					<rect x={126} y={262} width={46} height={40} rx={8} fill="none" stroke={alpha(LPI.sky, 0.9)} strokeWidth={5} />
 					<path d="M200 236 V560" stroke={alpha(N, 0.25)} strokeWidth={4} />
+					{/* poumons (trachée, bronches), qui se gonflent avec la respiration */}
+					{lungs > 0 ? (
+						<g opacity={lungs} transform={`translate(200 300) scale(${1 + 0.06 * breath}) translate(-200 -300)`}>
+							<path d="M200 196 V238 M200 238 L184 254 M200 238 L216 254" fill="none" stroke={N} strokeWidth={14} strokeLinecap="round" />
+							<path d="M200 196 V238 M200 238 L184 254 M200 238 L216 254" fill="none" stroke={LPI.sky} strokeWidth={6} strokeLinecap="round" />
+							{LUNGS.map((d) => (
+								<path key={d} d={d} fill={LPI.sky} stroke={N} strokeWidth={6} strokeLinejoin="round" />
+							))}
+						</g>
+					) : null}
 					{/* artères */}
 					{flow > 0 ? ARTERIES.map((d) => <Artery key={d} d={d} o={flow} bloodless={bloodless} phase={phase} />) : null}
 					{brain > 0 && flow > 0 ? CAROTIDS_LOW.map((d) => <Artery key={d} d={d} o={Math.min(brain, flow)} bloodless={bloodless} phase={phase} />) : null}
@@ -211,21 +234,8 @@ export const Patient: React.FC<PatientProps> = ({size = 360, mood = 'calme', bre
 				</g>
 				{eyesClosed > 0 ? <path d="M164 120 Q176 128 188 120 M212 120 Q224 128 236 120" fill="none" stroke={N} strokeWidth={6} strokeLinecap="round" opacity={eyesClosed} /> : null}
 				{droop > 0 ? <path d={`M212 ${104 + 4 * droop} Q224 ${106 + 6 * droop} 236 ${108 + 8 * droop}`} fill="none" stroke={N} strokeWidth={5} strokeLinecap="round" opacity={droop} /> : null}
-				<path
-					d={
-						droop > 0
-							? `M184 ${148 + 2 * droop} Q200 ${156 + 4 * droop} 218 ${148 + 26 * droop}`
-							: mood === 'content'
-								? 'M180 144 Q200 166 220 144'
-								: unwell
-									? 'M184 156 Q192 148 200 154 Q208 160 216 152'
-									: 'M186 148 Q200 158 214 148'
-					}
-					fill="none"
-					stroke={N}
-					strokeWidth={6}
-					strokeLinecap="round"
-				/>
+				<path d={mouth} fill="none" stroke={N} strokeWidth={6} strokeLinecap="round" />
+				{cyanosis > 0 ? <path d={mouth} fill="none" stroke={LPI.blue} strokeWidth={11} strokeLinecap="round" opacity={cyanosis} /> : null}
 				{/* cerveau vu à travers le crâne, carotides qui l'irriguent */}
 				{brain > 0 ? (
 					<g opacity={brain}>

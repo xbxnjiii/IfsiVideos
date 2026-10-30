@@ -74,6 +74,12 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   « pas que le chiffre » (rythme, amplitude…) · récap rapide · logo.
 - Modèles : `Frequence-Cardiaque`, `Frequence-Respiratoire`, `Temperature`, `Tension-Arterielle`, `Glycemie`, `Diurese` (`src/videos/<épisode>/`,
   storyboards dans `docs/lpi/`). Paliers de valeur qui roulent : `steps()` de `temperature/Scenes.tsx`.
+- **Dernier modèle = `SpO2`** (`src/videos/spo2/`) : même format, mais avec la dynamique de l'arrêt cardiaque (demandé) :
+  accroche-chiffre dès l'image 0 (« 98 %… mais 98 % de quoi ? » + question + promesse courte), tout dans le corps
+  (poumons → plongée dans le vaisseau → globules rouges → grille de 100), gros plans par plongée + fondu, `ZoomCam`
+  dans chaque scène. Briques `oxygen.tsx` : `SPO_ZONES`, `PulseOx` (pince au doigt : écran, courbe, lumière, vernis,
+  doigt froid, ongle bleuté), `Vessel` (globules rouges, hémoglobine chargée d'O₂, alvéole), `HemoGrid` ;
+  `Patient` : `lungs`, `cyanosis` ; icône `CyanosisIcon`.
 
 ## Format « pathologie » (modèle `AVC`, `src/videos/avc/`)
 

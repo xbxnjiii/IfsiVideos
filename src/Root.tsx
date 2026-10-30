@@ -22,6 +22,8 @@ import {Avc, AvcProps} from './videos/avc/Avc';
 import {TL as AVC_TL} from './videos/avc/timeline';
 import {ArretCardiaque, ArretCardiaqueProps} from './videos/arret-cardiaque/ArretCardiaque';
 import {TL as ACR_TL} from './videos/arret-cardiaque/timeline';
+import {Spo2, Spo2Props} from './videos/spo2/Spo2';
+import {TL as SPO_TL} from './videos/spo2/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -128,6 +130,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies ArretCardiaqueProps}
+		/>
+		{/* 12 · C'est quoi la SpO₂ */}
+		<Composition
+			id="SpO2"
+			component={Spo2}
+			durationInFrames={SPO_TL.total}
+			fps={SPO_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies Spo2Props}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition

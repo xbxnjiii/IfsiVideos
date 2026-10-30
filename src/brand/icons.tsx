@@ -218,3 +218,10 @@ export const ArrhythmiaIcon: React.FC<IP> = (p) => (
 		<path d="M6 56 H20 L26 40 L32 70 L38 56 H46 L50 28 L56 80 L62 56 H70 L74 46 L78 62 L82 56 H94" />
 	</Ico>
 );
+/** cyanose : lèvres bleutées */
+export const CyanosisIcon: React.FC<IP> = (p) => (
+	<Ico {...p}>
+		<path d="M14 52 C26 34 40 34 50 42 C60 34 74 34 86 52 C72 72 28 72 14 52 Z" fill={alpha(LPI.blue, 0.75)} />
+		<path d="M16 52 C36 58 64 58 84 52" />
+	</Ico>
+);
