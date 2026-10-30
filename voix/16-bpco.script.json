@@ -1,0 +1,11 @@
+[
+	{"id": "intro", "text": "Et si chaque respiration devenait un véritable effort ? Trois… deux… un… Que se passe-t-il ? C'est la {BPCO|B P C O}. Mais c'est quoi, exactement ?"},
+	{"id": "def", "text": "La {BPCO|B P C O}, c'est la bronchopneumopathie chronique obstructive. Broncho : les bronches. Pneumopathie : une maladie du poumon. Chronique : elle dure toute la vie. Et obstructive : l'air passe mal."},
+	{"id": "dedans", "text": "À l'intérieur, les bronches s'enflamment, se remplissent de mucus et rétrécissent. Au bout, les alvéoles, les petits sacs où passe l'oxygène, se détruisent : c'est l'emphysème. Résultat : l'air entre… mais ressort mal. Il reste piégé."},
+	{"id": "cause", "text": "Le grand coupable : le tabac, dans huit cas sur dix. Mais aussi les poussières et les produits chimiques au travail, ou la pollution."},
+	{"id": "signes", "text": "Les signes ? Un essoufflement, d'abord à l'effort, puis pour un rien. Une toux qui dure, avec des crachats, surtout le matin. Et des bronchites qui reviennent chaque hiver. Beaucoup pensent que c'est juste la toux du fumeur…"},
+	{"id": "diag", "text": "Pour la confirmer : la spirométrie. Le patient souffle le plus fort possible dans un tube. Si, en une seconde, il vide moins de soixante-dix pour cent de son air, les bronches sont obstruées."},
+	{"id": "traitement", "text": "Elle ne se guérit pas, mais on peut la freiner. D'abord : arrêter de fumer. Puis les bronchodilatateurs : des inhalateurs qui ouvrent les bronches. La réhabilitation respiratoire, pour réentraîner le souffle. Et les vaccins."},
+	{"id": "oxygene", "text": "Au stade avancé, on donne de l'oxygène, mais à petit débit : on vise une saturation entre quatre-vingt-huit et quatre-vingt-douze pour cent. Et si tout s'aggrave d'un coup : c'est une exacerbation, une poussée de la maladie. On consulte vite !"},
+	{"id": "outro", "text": "Petit récap ! La {BPCO|B P C O} : des bronches qui rétrécissent, l'air reste piégé. Cause numéro un : le tabac. On la confirme par la spirométrie. Et on la freine : arrêt du tabac, inhalateurs."}
+]

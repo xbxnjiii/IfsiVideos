@@ -116,6 +116,15 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   trajet `clotAt(t)`, zone du poumon privée de sang, mollet gonflé, bas de contention, douleurs), `SemiSitting` (lit
   dont le dossier se relève à 45°), `ChestScan` ; `Patient` : `fade={false}` ; icônes lit, avion, plâtre, bistouri,
   ruban, mollet. Dans une `ZoomCam`, le contenu doit tenir dans la fenêtre à zoom 1 (sinon il n'est jamais montré).
+- 4e modèle « pathologie » : `BPCO` (`src/videos/bpco/`) — accroche voulue par le propriétaire : « Et si chaque respiration
+  devenait un véritable effort ? » (image 0, homme essoufflé), **compte à rebours 3 · 2 · 1** (la caméra plonge dans le
+  thorax à chaque chiffre), « Que se passe-t-il ? C'est la BPCO. » ; sigle sur 4 lignes, bronche en gros plan, cause,
+  signes, spirométrie (VEMS / CVF < 70 %), traitement, oxygène (cible 88 – 92 %) + exacerbation, récap.
+  Briques `copd.tsx` : `Bronchus` (paroi enflammée, mucus, rétrécissement, alvéoles → emphysème, air qui entre / piégé,
+  brume de bronchodilatateur), `Spirometer` + `exhaled()`, `Inhaler` ; `Patient` : `bronchi`, `narrow`, `trapped`,
+  `cannula` (lunettes à oxygène) ; icônes poussières, pollution, toux, crachats, soleil levant, seringue, inhalateur.
+  Sigle en début de partie : « La {BPCO|B P C O}, c'est la… » (un « B P C O : bronchopneumopathie… » seul a été lu
+  avec un accent étranger : détecté par la vérification de langue).
 
 ## Format « histoire » (mystérieux, essai `AVC-Histoire`, `src/videos/avc-histoire/`)
 

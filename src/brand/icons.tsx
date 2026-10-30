@@ -266,3 +266,55 @@ export const LegIcon: React.FC<IP> = (p) => (
 		<path d="M38 6 V40 C24 50 24 70 36 80 L34 92 H64 L60 80 C70 66 68 46 58 38 V6" fill={alpha(LPI.pink, 0.6)} />
 	</Ico>
 );
+/** travail : usine qui rejette des poussières */
+export const DustIcon: React.FC<IP> = (p) => (
+	<Ico {...p}>
+		<path d="M10 88 V52 L32 64 V52 L54 64 V30 H70 V88 Z" fill={alpha(LPI.sky, 0.9)} />
+		<path d="M64 22 C60 14 70 10 68 4" strokeWidth={5} />
+		<circle cx="82" cy="22" r="4" fill={N} stroke="none" />
+		<circle cx="88" cy="38" r="3" fill={N} stroke="none" />
+		<circle cx="78" cy="48" r="3.5" fill={N} stroke="none" />
+	</Ico>
+);
+/** pollution : nuage gris de fumées au-dessus de la ville */
+export const SmogIcon: React.FC<IP> = (p) => (
+	<Ico {...p}>
+		<path d="M22 50 C10 50 10 32 24 32 C26 18 46 16 52 28 C58 20 76 24 74 38 C88 38 88 50 76 50 Z" fill={alpha(N, 0.35)} />
+		<path d="M14 90 V68 H30 V90 M38 90 V60 H54 V90 M62 90 V72 H82 V90" fill={alpha(LPI.sky, 0.9)} />
+	</Ico>
+);
+/** toux : bouche ouverte et traits de toux */
+export const CoughIcon: React.FC<IP> = (p) => (
+	<Ico {...p}>
+		<path d="M14 30 C14 14 50 12 52 34 L58 48 L50 52 C52 66 44 72 34 70 L30 86" />
+		<path d="M66 40 L84 34 M68 52 L90 52 M66 64 L84 70" stroke={LPI.pink} strokeWidth={8} />
+	</Ico>
+);
+/** crachats (expectorations) */
+export const SputumIcon: React.FC<IP> = (p) => (
+	<Ico {...p}>
+		<path d="M50 16 C70 16 84 34 80 54 C78 70 64 84 48 82 C30 80 18 66 20 50 C22 32 32 16 50 16 Z" fill={alpha(LPI.blue, 0.45)} />
+		<circle cx="40" cy="40" r="7" fill={alpha(LPI.paper, 0.9)} stroke="none" />
+	</Ico>
+);
+/** le matin : soleil qui se lève */
+export const SunriseIcon: React.FC<IP> = (p) => (
+	<Ico {...p}>
+		<path d="M24 70 A26 26 0 0 1 76 70 Z" fill={alpha(LPI.pink, 0.8)} />
+		<path d="M10 82 H90 M50 30 V18 M22 44 L14 36 M78 44 L86 36" />
+	</Ico>
+);
+/** vaccin : seringue */
+export const SyringeIcon: React.FC<IP> = (p) => (
+	<Ico {...p}>
+		<path d="M30 70 L70 30 L82 42 L42 82 Z" fill={alpha(LPI.sky, 0.9)} />
+		<path d="M76 24 L90 38 M83 31 L94 20 M30 70 L12 88 M48 52 L56 60 M58 42 L66 50" />
+	</Ico>
+);
+/** inhalateur (bronchodilatateur) */
+export const InhalerIcon: React.FC<IP> = (p) => (
+	<Ico {...p}>
+		<rect x="30" y="8" width="24" height="44" rx="8" fill={alpha(LPI.sky, 0.9)} />
+		<path d="M24 40 H60 V64 H84 V84 H24 Z" fill={alpha(LPI.blue, 0.8)} />
+	</Ico>
+);

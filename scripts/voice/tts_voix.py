@@ -64,7 +64,7 @@ def script_tokens(text):
 
 async def synth(text, mp3, rate=RATE):
     """Synthèse + frontières de mots [(début s, fin s, texte)] ; nouvel essai si le service ne répond pas."""
-    for k in range(4):
+    for k in range(8):
         try:
             words = []
             with open(mp3, "wb") as f:
@@ -75,7 +75,7 @@ async def synth(text, mp3, rate=RATE):
                         words.append((c["offset"] / 1e7, (c["offset"] + c["duration"]) / 1e7, c["text"]))
             return words
         except edge_tts.exceptions.NoAudioReceived:
-            await asyncio.sleep(2 + 2 * k)
+            await asyncio.sleep(2 + 3 * k)
     raise SystemExit("échec de la synthèse : " + text[:60])
 
 

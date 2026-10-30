@@ -28,6 +28,8 @@ import {EmboliePulmonaire, EmboliePulmonaireProps} from './videos/embolie-pulmon
 import {TL as EP_TL} from './videos/embolie-pulmonaire/timeline';
 import {AvcHistoire, AvcHistoireProps} from './videos/avc-histoire/AvcHistoire';
 import {TL as AVCH_TL} from './videos/avc-histoire/timeline';
+import {Bpco, BpcoProps} from './videos/bpco/Bpco';
+import {TL as BPCO_TL} from './videos/bpco/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -164,6 +166,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies AvcHistoireProps}
+		/>
+		{/* 16 · C'est quoi la BPCO */}
+		<Composition
+			id="BPCO"
+			component={Bpco}
+			durationInFrames={BPCO_TL.total}
+			fps={BPCO_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies BpcoProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition

@@ -71,6 +71,14 @@ export type PatientProps = {
 	lungs?: number;
 	/** lèvres bleutées : cyanose, manque d'oxygène (0 → 1) */
 	cyanosis?: number;
+	/** arbre bronchique dans les poumons (0 → 1, avec `lungs`) */
+	bronchi?: number;
+	/** BPCO : bronches enflammées, rétrécies, mucus (0 → 1) */
+	narrow?: number;
+	/** air piégé : bulles qui restent dans les poumons, poumons distendus (0 → 1) */
+	trapped?: number;
+	/** lunettes à oxygène (sonde nasale) ; l'oxygène y circule (0 → 1) */
+	cannula?: number;
 	/** bas du corps en fondu (par défaut) ; false pour poser des jambes dessous (`FullBody`) */
 	fade?: boolean;
 };
@@ -89,6 +97,31 @@ const CAROTIDS_UP = ['M216 206 C215 186 230 172 246 160 C258 150 258 120 246 92'
 const CAROTID_LOW_LEN = 98;
 /** poumons (vus de face, espace 400 × 560) */
 export const LUNGS = ['M188 238 C150 236 124 282 122 344 C120 384 142 396 172 388 C186 384 192 364 192 334 Z', 'M212 238 C250 236 276 282 278 344 C280 384 258 396 228 388 C214 384 208 364 208 334 Z'];
+/** bronches de la moitié gauche de l'écran (tracés continus, [chemin, largeur]) ; l'autre moitié est symétrique */
+const BRONCHI: [number[], number][] = [
+	[[184, 254, 168, 284, 150, 322, 136, 350, 132, 374], 6],
+	[[168, 284, 180, 326, 172, 368, 170, 386], 5],
+	[[150, 322, 156, 364, 150, 384], 4],
+	[[180, 326, 190, 352], 4],
+];
+const BRONCHI_ALL = [...BRONCHI, ...BRONCHI.map(([pts, w]) => [pts.map((v, i) => (i % 2 ? v : 400 - v)), w] as [number[], number])].map(
+	([pts, w]) => [`M${pts.slice(0, 2).join(' ')} L${pts.slice(2).join(' ')}`, w] as [string, number],
+);
+/** bouchons de mucus et bulles d'air piégé (poumon gauche de l'écran ; symétriques à droite) */
+const MUCUS = [
+	[160, 302],
+	[143, 337],
+	[176, 347],
+];
+const TRAPPED = [
+	[140, 300],
+	[134, 330],
+	[150, 352],
+	[166, 336],
+	[144, 376],
+	[176, 378],
+	[162, 274],
+];
 const BRAIN = 'M200 40 C182 30 150 36 146 62 C142 86 162 100 186 98 C194 97 198 94 200 90 C202 94 206 97 214 98 C238 100 258 86 254 62 C250 36 218 30 200 40 Z';
 const GYRI = 'M162 56 Q172 46 180 58 Q186 66 176 72 M158 80 Q170 72 180 84 M238 56 Q228 46 220 58 Q214 66 224 72 M242 80 Q230 72 220 84 M188 44 Q194 54 186 62 M212 44 Q206 54 214 62';
 const NEURONS = [
@@ -122,7 +155,7 @@ const SkinLayers: React.FC<{flush: number; pale: number; children: (fill: string
 	</>
 );
 
-export const Patient: React.FC<PatientProps> = ({size = 360, mood = 'calme', breath = 0, heart = 0, beat = 0, flow = 0, cuff = 0, press = 0, flush = 0, pale = 0, sweat = 0, pain = 0, dizzy = 0, droop = 0, armL = 0, armR = 0, eyesClosed = 0, quiver = 0, brain = 0, anoxia = 0, bloodless = 0, flowPhase, lungs = 0, cyanosis = 0, fade = true}) => {
+export const Patient: React.FC<PatientProps> = ({size = 360, mood = 'calme', breath = 0, heart = 0, beat = 0, flow = 0, cuff = 0, press = 0, flush = 0, pale = 0, sweat = 0, pain = 0, dizzy = 0, droop = 0, armL = 0, armR = 0, eyesClosed = 0, quiver = 0, brain = 0, anoxia = 0, bloodless = 0, flowPhase, lungs = 0, cyanosis = 0, bronchi = 0, narrow = 0, trapped = 0, cannula = 0, fade = true}) => {
 	const frame = useCurrentFrame();
 	const id = useId().replace(/:/g, '');
 	const blink = Math.min(frame % 96 < 4 ? 0.15 : 1, 1 - 0.9 * eyesClosed);
@@ -181,12 +214,37 @@ export const Patient: React.FC<PatientProps> = ({size = 360, mood = 'calme', bre
 					<path d="M200 236 V560" stroke={alpha(N, 0.25)} strokeWidth={4} />
 					{/* poumons (trachée, bronches), qui se gonflent avec la respiration */}
 					{lungs > 0 ? (
-						<g opacity={lungs} transform={`translate(200 300) scale(${1 + 0.06 * breath}) translate(-200 -300)`}>
+						<g opacity={lungs} transform={`translate(200 300) scale(${1 + 0.06 * breath + 0.06 * trapped}) translate(-200 -300)`}>
 							<path d="M200 196 V238 M200 238 L184 254 M200 238 L216 254" fill="none" stroke={N} strokeWidth={14} strokeLinecap="round" />
 							<path d="M200 196 V238 M200 238 L184 254 M200 238 L216 254" fill="none" stroke={LPI.sky} strokeWidth={6} strokeLinecap="round" />
 							{LUNGS.map((d) => (
 								<path key={d} d={d} fill={LPI.sky} stroke={N} strokeWidth={6} strokeLinejoin="round" />
 							))}
+							{/* bronches : paroi (rose quand elle s'enflamme) et passage de l'air (blanc) qui rétrécit */}
+							{bronchi > 0 ? (
+								<g opacity={bronchi}>
+									{BRONCHI_ALL.map(([d, w], i) => (
+										<g key={i} fill="none" strokeLinecap="round" strokeLinejoin="round">
+											<path d={d} stroke={N} strokeWidth={w + 3.5 + 3 * narrow} />
+											<path d={d} stroke={LPI.pink} strokeWidth={w + 1 + 3 * narrow} opacity={narrow} />
+											<path d={d} stroke={LPI.paper} strokeWidth={Math.max(1.2, w * (1 - 0.65 * narrow))} />
+										</g>
+									))}
+									{narrow > 0
+										? [...MUCUS, ...MUCUS.map(([x, y]) => [400 - x, y])].map(([x, y], i) => (
+												<ellipse key={i} cx={x} cy={y} rx={6 * narrow} ry={4.5 * narrow} fill={alpha(LPI.blue, 0.55)} stroke={N} strokeWidth={2} />
+											))
+										: null}
+								</g>
+							) : null}
+							{/* air piégé : bulles qui restent coincées */}
+							{trapped > 0
+								? [...TRAPPED, ...TRAPPED.map(([x, y]) => [400 - x, y])].map(([x, y], i) => {
+										const k = i % TRAPPED.length;
+										const o = Math.min(1, Math.max(0, trapped * TRAPPED.length - k));
+										return <circle key={i} cx={x + Math.sin(frame / 6 + i) * 1.5} cy={y + Math.cos(frame / 7 + i) * 1.5} r={5.5} fill={LPI.paper} stroke={LPI.blue} strokeWidth={2.5} opacity={o} />;
+									})
+								: null}
 						</g>
 					) : null}
 					{/* artères */}
@@ -239,6 +297,24 @@ export const Patient: React.FC<PatientProps> = ({size = 360, mood = 'calme', bre
 				{droop > 0 ? <path d={`M212 ${104 + 4 * droop} Q224 ${106 + 6 * droop} 236 ${108 + 8 * droop}`} fill="none" stroke={N} strokeWidth={5} strokeLinecap="round" opacity={droop} /> : null}
 				<path d={mouth} fill="none" stroke={N} strokeWidth={6} strokeLinecap="round" />
 				{cyanosis > 0 ? <path d={mouth} fill="none" stroke={LPI.blue} strokeWidth={11} strokeLinecap="round" opacity={cyanosis} /> : null}
+				{/* lunettes à oxygène : embouts dans le nez, tubulure derrière les oreilles, sous le menton puis vers le bas */}
+				{cannula > 0 ? (
+					<g opacity={cannula}>
+						{[N, alpha(LPI.sky, 1)].map((c, k) => (
+							<path
+								key={k}
+								d="M200 214 L176 198 C128 168 116 140 134 122 C150 140 172 140 194 138 M200 214 L224 198 C272 168 284 140 266 122 C250 140 228 140 206 138 M200 214 C214 300 236 420 250 560"
+								fill="none"
+								stroke={c}
+								strokeWidth={k ? 4 : 9}
+								strokeLinecap="round"
+								strokeLinejoin="round"
+							/>
+						))}
+						<path d="M200 214 C214 300 236 420 250 560" fill="none" stroke={LPI.blue} strokeWidth={4} strokeLinecap="round" strokeDasharray="3 18" strokeDashoffset={frame * 2} />
+						<path d="M192 138 V130 M208 138 V130" stroke={N} strokeWidth={6} strokeLinecap="round" />
+					</g>
+				) : null}
 				{/* cerveau vu à travers le crâne, carotides qui l'irriguent */}
 				{brain > 0 ? (
 					<g opacity={brain}>
