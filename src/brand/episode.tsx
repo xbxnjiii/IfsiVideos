@@ -56,6 +56,36 @@ export const Lead: React.FC<{at: number; text: string; y?: number}> = ({at: t0, 
 	);
 };
 
+/* ───────────── caméra : on s'approche de ce dont on parle (patient, cœur, mains…) ───────────── */
+
+/** Clé de caméra : à la frame `at`, elle glisse en `dur` frames (14 par défaut) vers le point (x, y) du contenu, au zoom `s` (1 = plan large). */
+export type CamKey = {at: number; s: number; x?: number; y?: number; dur?: number};
+
+/** État de la caméra à une frame : zoom, point visé (jamais de vide au bord) et `view(x, y)` = position à l'écran d'un point du contenu. */
+export const camAt = (frame: number, keys: CamKey[], w: number, h: number) => {
+	let cur = {s: 1, x: w / 2, y: h / 2};
+	for (const k of keys) {
+		if (frame < k.at) break;
+		const p = interpolate(frame, [k.at, k.at + (k.dur ?? 14)], [0, 1], ease);
+		cur = {s: cur.s + (k.s - cur.s) * p, x: cur.x + ((k.x ?? w / 2) - cur.x) * p, y: cur.y + ((k.y ?? h / 2) - cur.y) * p};
+	}
+	const s = Math.max(1, cur.s);
+	const x = Math.min(w - w / (2 * s), Math.max(w / (2 * s), cur.x));
+	const y = Math.min(h - h / (2 * s), Math.max(h / (2 * s), cur.y));
+	return {s, x, y, view: (px: number, py: number) => ({x: w / 2 + (px - x) * s, y: h / 2 + (py - y) * s})};
+};
+
+/** Fenêtre (w × h) dont le contenu est filmé par la caméra `keys` ; à poser dans un `Stage`, les pastilles par-dessus restent fixes. */
+export const ZoomCam: React.FC<{keys: CamKey[]; w: number; h: number; x?: number; y?: number; radius?: number; children: React.ReactNode}> = ({keys, w, h, x = 0, y = 0, radius = 50, children}) => {
+	const frame = useCurrentFrame();
+	const c = camAt(frame, keys, w, h);
+	return (
+		<div style={{position: 'absolute', left: x, top: y, width: w, height: h, overflow: 'hidden', borderRadius: radius}}>
+			<div style={{position: 'absolute', left: 0, top: 0, width: w, height: h, transformOrigin: '0 0', transform: `translate(${w / 2}px, ${h / 2}px) scale(${c.s}) translate(${-c.x}px, ${-c.y}px)`}}>{children}</div>
+		</div>
+	);
+};
+
 /* ───────────── mise en page (1080 × 1920, interface TikTok : rien d'important au-dessus de 150 ni sous 1480) ───────────── */
 
 export const LAY = {kickerY: 236, titleY: 282, stageY: 440, stageH: 540, slotY: 1010};

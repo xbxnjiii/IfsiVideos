@@ -93,8 +93,11 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
 - 2e modèle « pathologie / urgence » : `Arret-Cardiaque` (`src/videos/arret-cardiaque/`) — accroche : le tracé ECG
   devient plat et le patient s'effondre (image 0 = moniteur qui bat), 3 minutes pour le cerveau, jauge de survie
   −10 %/minute ; puis définition (FV), reconnaître, alerter, masser, RCP 30/2, DAE. Briques `arrest.tsx` :
-  `EcgMonitor` (sinus / FV / plat / choc), `Aed`, `Pad`, `CprHands` + `DepthGauge`, `HeadTilt` ; `Patient` :
-  `eyesClosed`. Nombres collés (« 100 à 120 ») : les écrire en lettres (`{100|cent} à {120|cent vingt}`).
+  `EcgMonitor` (sinus / FV / plat / choc), `Aed`, `Pad`, `CprHands` + `DepthGauge`, `HeadTilt` (gros plan de profil,
+  plein cadre : main sur le front, deux doigts sous le menton) ; `Patient` : `eyesClosed`, `quiver` (cœur qui tremble),
+  `brain` (cerveau vu à travers le crâne + carotides), `anoxia`, `bloodless` + `flowPhase` (le sang s'arrête).
+  Une définition se montre **dans le corps** (cœur, artères, cerveau du `Patient`), jamais d'organes « dans le vide ».
+  Nombres collés (« 100 à 120 ») : les écrire en lettres (`{100|cent} à {120|cent vingt}`).
 
 ## Recette express (nouvelle vidéo de constante)
 
@@ -118,6 +121,10 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
    Signes cliniques : pastilles `CauseChip` en 2 colonnes (72 / 560, y 1240 / 1356) et la mascotte reste d'un côté
    (cuts, pas de saut par-dessus) ; les poses en pied (`poses/…`) sont hautes : les placer bas et plus petites.
    Titres : l'accent `*mot*` se met **mot par mot** (`Sur *24* *heures*`, pas `*24 heures*`).
+   **Caméra** (demandé) : on s'approche de ce dont parle la voix (visage, cœur, mains, écran du DAE…) avec
+   `ZoomCam` + clés `CamKey` (`episode.tsx` : `{at, s, x, y, dur}`, jamais de vide au bord) posé dans le `Stage` ;
+   pastilles, chrono, moniteur restent fixes par-dessus ; `camAt(...).view()` fait suivre une étiquette à l'organe.
+   Pour changer de point de vue (face → profil) : plonger (zoom ×3) puis fondu enchaîné sur le gros plan.
 4. Contrôle : `npm run check:mascot -- <épisode>` → `COMP=<Composition> OUT=out/qa SCALE=0.5 node scripts/qa/stills.mjs <frames…>`
    → `npm run sheet -- out/qa` (planches ffmpeg) → relecture → rendu → `npm run sheet -- out/<vidéo>.mp4` (1 image/s).
 

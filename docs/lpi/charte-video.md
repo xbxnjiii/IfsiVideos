@@ -114,6 +114,7 @@ Toujours dans la palette, sans effet lumineux :
 | `ChapterSlam` | gros numéro qui s'écrase au centre (éclats) puis file dans le coin du titre |
 | `TermSlam` | le terme « claque » en grand au centre (lettre par lettre), sa définition glisse, puis la carte file à sa place dans la fiche |
 | `Camera` | dérive très lente + petit coup de zoom (≈ 5 %) sur chaque mot clé |
+| `ZoomCam` (`episode.tsx`) | la vue s'approche de ce dont parle la voix (visage, cœur, mains, écran) : clés `{at, s, x, y, dur}`, ×1,2 à ×2,6, glissé de 10 à 18 frames, jamais de vide au bord ; pastilles fixes par-dessus |
 | `Stage` | socle bleu clair qui ondule ; `layers` = remplissage rose / bleu clair qui monte comme un liquide (jamais de mélange de teintes) |
 | `Odometer` | chiffres qui roulent (format français, virgule) |
 | `StatePill` | pastille d'état avec les mots du script (« trop rapide », « pas de fièvre »…) |

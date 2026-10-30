@@ -6,7 +6,7 @@ import {AbsoluteFill, Easing, interpolate, spring, useCurrentFrame, useVideoConf
 import {Aed, CprHands, DepthGauge, EcgMonitor, HeadTilt, Pad, Rhythm} from '../../brand/arrest';
 import {Brain} from '../../brand/brain';
 import {Phone} from '../../brand/devices';
-import {BigNum, Head, LAY, Pill, RecapScene, SLAM_Y, Stopwatch, termSlot} from '../../brand/episode';
+import {BigNum, CamKey, camAt, Head, LAY, Pill, RecapScene, SLAM_Y, Stopwatch, Tag, termSlot, ZoomCam} from '../../brand/episode';
 import {CheckChip, Stamp, usePop} from '../../brand/kit';
 import {Burst, Camera, LiveBackground, Stage, TermSlam} from '../../brand/motion3';
 import {Patient} from '../../brand/patient';
@@ -120,40 +120,43 @@ export const Hook: React.FC = () => {
 	const shown = interpolate(frame, [ET + 6, ET + 6 + STEP * 6], [100, 40], clamp);
 	const heartIn = spring({frame: frame - (ALORS + 5), fps, config: {damping: 12, stiffness: 160}});
 	const sweep = ((frame - DES) % 30) / 30;
+	const dolly = interpolate(frame, [ARR - 6, ARR + 18, DES - 4, DES + 8], [1, 1.06, 1.06, 1], ease);
 	return (
 		<AbsoluteFill>
 			<LiveBackground />
 			<Camera punches={[ARR + 1, FLAT + 1, DES + 1, DANGER + 1, DIX + 1, MOINS + 1, QUOI + 1, ARR2 + 1]} shakes={[FLAT + 2, DANGER + 2]} strength={0.05}>
-				{/* ── A · le tracé s'arrête, il s'effondre ── */}
+				{/* ── A · le tracé s'arrête, il s'effondre (la caméra s'approche) ── */}
 				<div style={{position: 'absolute', left: 72, top: 170, opacity: 1 - toB}}>
 					<Title at={0} text="Son *cœur* s'arrête…" size={84} stagger={3} brush={false} />
 				</div>
-				<div
-					style={{
-						position: 'absolute',
-						left: 72,
-						top: 300,
-						transform: `translate(${toB * 520}px, ${toB * -60}px) scale(${1 - 0.55 * toB})`,
-						transformOrigin: 'left top',
-						opacity: outC,
-					}}
-				>
-					<EcgMonitor rhythm={rhythm} width={936} height={300} readout={frame < ARR - 2 ? '♥ 72' : frame < FLAT ? 'FV' : '0'} alert={frame >= FLAT ? 1 : 0} />
-				</div>
-				{frame < DES + 10 ? (
+				<div style={{position: 'absolute', inset: 0, transform: `scale(${dolly})`, transformOrigin: '540px 760px'}}>
 					<div
 						style={{
 							position: 'absolute',
-							left: 540 - 190,
-							top: 680,
-							opacity: 1 - toB,
-							transform: `translateY(${fall * 260}px) rotate(${-84 * fall}deg)`,
-							transformOrigin: '190px 520px',
+							left: 72,
+							top: 300,
+							transform: `translate(${toB * 520}px, ${toB * -60}px) scale(${1 - 0.55 * toB})`,
+							transformOrigin: 'left top',
+							opacity: outC,
 						}}
 					>
-						<Patient size={380} breath={0} mood={frame >= ARR ? 'mal' : 'calme'} eyesClosed={interpolate(frame, [ARR + 2, ARR + 8], [0, 1], clamp)} pale={interpolate(frame, [FLAT, FLAT + 10], [0, 0.6], clamp)} />
+						<EcgMonitor rhythm={rhythm} width={936} height={300} readout={frame < ARR - 2 ? '♥ 72' : frame < FLAT ? 'FV' : '0'} alert={frame >= FLAT ? 1 : 0} />
 					</div>
-				) : null}
+					{frame < DES + 10 ? (
+						<div
+							style={{
+								position: 'absolute',
+								left: 540 - 190,
+								top: 680,
+								opacity: 1 - toB,
+								transform: `translateY(${fall * 260}px) rotate(${-84 * fall}deg)`,
+								transformOrigin: '190px 520px',
+							}}
+						>
+										<Patient size={380} breath={0} mood={frame >= ARR ? 'mal' : 'calme'} eyesClosed={interpolate(frame, [ARR + 2, ARR + 8], [0, 1], clamp)} pale={interpolate(frame, [FLAT, FLAT + 10], [0, 0.6], clamp)} />
+									</div>
+								) : null}
+						</div>
 				{/* ── B · 3 minutes : le cerveau en danger ── */}
 				{frame >= DES - 2 && outB > 0 ? (
 					<div style={{opacity: outB}}>
@@ -246,66 +249,149 @@ export const Hook: React.FC = () => {
 };
 
 /* ═══════════════════════════════ 1 · DÉFINITION ═══════════════════════════════ */
+// Dans le corps : le cœur pompe le sang (artères jusqu'aux bras et, par les carotides, jusqu'au cerveau) ; la caméra
+// plonge sur le cœur qui pompe puis tremble (FV), recule quand le sang s'arrête, puis monte au cerveau qui s'éteint.
+const DEF_WIN = {x: 24, y: 20, w: 888, h: 500};
+const DEF_PAT = {x: 264, y: 22, size: 360};
+const defPt = (x: number, y: number) => ({x: DEF_PAT.x + (x * DEF_PAT.size) / 400, y: DEF_PAT.y + (y * DEF_PAT.size) / 400});
+
 export const Definition: React.FC = () => {
 	const frame = useCurrentFrame();
 	const ARR = at('def', 'arrêt');
+	const COEUR = at('def', 'cœur');
 	const POMPE = at('def', 'pompe');
+	const SANG = at('def', 'sang');
 	const TREMB = at('def', 'trembler');
 	const FIB = at('def', 'fibrillation');
+	const SANG2 = at('def', 'sang', 2);
 	const CIRC = at('def', 'circule');
 	const CERV = at('def', 'cerveau');
 	const OXY = at('def', "d'oxygène");
+	const heartPt = defPt(228, 300);
+	const brainPt = defPt(200, 66);
+	const keys: CamKey[] = [
+		{at: COEUR - 2, s: 2.3, x: heartPt.x, y: heartPt.y - 14, dur: 16},
+		{at: SANG, s: 1.45, x: heartPt.x - 16, y: heartPt.y - 50, dur: 18},
+		{at: TREMB - 2, s: 2.6, x: heartPt.x, y: heartPt.y - 6, dur: 10},
+		{at: SANG2 - 2, s: 1, dur: 16},
+		{at: CERV - 4, s: 2.5, x: brainPt.x, y: brainPt.y + 14, dur: 14},
+	];
+	const cam = camAt(frame, keys, DEF_WIN.w, DEF_WIN.h);
+	const toStage = (p: {x: number; y: number}) => {
+		const v = cam.view(p.x, p.y);
+		return {x: DEF_WIN.x + v.x, y: DEF_WIN.y + v.y};
+	};
 	const quiver = interpolate(frame, [TREMB - 2, TREMB + 6], [0, 1], clamp);
+	// le sang avance vite (le cœur pompe), à peine quand il tremble, plus du tout ensuite
+	const phase = 3 * Math.min(frame, TREMB) + 0.8 * Math.max(0, Math.min(frame, CIRC) - TREMB);
 	const rhythm = (t: number): Rhythm => (t < TREMB ? 'sinus' : 'fv');
-	const mon = useSoft(ARR + 4, true);
-	const brain = useSoft(CERV - 4, true);
-	const flowing = frame < CIRC;
+	const mon = useSoft(POMPE - 4, true);
+	const monOut = interpolate(frame, [SANG2 - 6, SANG2 + 2], [1, 0], clamp);
+	const hTag = toStage(heartPt);
+	const bTag = toStage(brainPt);
 	return (
 		<AbsoluteFill>
 			<LiveBackground />
-			<Camera punches={[POMPE + 1, TREMB + 1, FIB + 1, CIRC + 1, OXY + 1]} shakes={[TREMB + 2]}>
+			<Camera punches={[TREMB + 1, FIB + 1, OXY + 1]} shakes={[TREMB + 2]}>
 				<Head kicker="Définition" kAt={ARR} title="Arrêt *cardiaque*" tAt={ARR + 2} />
 				<Stage y={LAY.stageY} h={540} at={ARR + 4} bumps={[TREMB, CIRC]}>
-					<div style={{position: 'absolute', left: 30, top: 110}}>
-						<LiveHeart size={280} quiver={quiver} />
-					</div>
-					<div style={{position: 'absolute', left: 30, top: 30}}>
-						<Pill at={POMPE} size={34} color={frame >= TREMB ? LPI.pink : LPI.blue}>
-							{frame >= TREMB ? 'il tremble' : 'il pompe'}
-						</Pill>
-					</div>
-					<div style={{position: 'absolute', left: 340, top: 30, opacity: Math.min(1, mon * 1.5), transform: `scale(${0.6 + 0.4 * mon})`, transformOrigin: 'left top'}}>
-						<EcgMonitor rhythm={rhythm} width={566} height={220} readout={frame >= FIB ? 'FV' : '72'} alert={frame >= FIB ? 1 : 0} />
-					</div>
-					{/* sang pompé vers le corps → plus rien */}
-					<svg width={936} height={540} style={{position: 'absolute', inset: 0, overflow: 'visible'}}>
-						<path d="M300 300 C380 320 440 360 520 380" fill="none" stroke={flowing ? LPI.pink : alpha(LPI.sky, 1)} strokeWidth={16} strokeLinecap="round" />
-						{flowing ? <path d="M300 300 C380 320 440 360 520 380" fill="none" stroke={LPI.paper} strokeWidth={6} strokeLinecap="round" strokeDasharray="4 22" strokeDashoffset={-frame * 4 * (1 - quiver * 0.8)} /> : null}
-					</svg>
-					{frame >= CIRC - 2 ? (
-						<div style={{position: 'absolute', left: 300, top: 400}}>
+					<ZoomCam keys={keys} {...DEF_WIN}>
+						<div style={{position: 'absolute', left: DEF_PAT.x, top: DEF_PAT.y}}>
+							<Patient
+								size={DEF_PAT.size}
+								mood={frame >= TREMB ? 'mal' : 'calme'}
+								heart={1}
+								beat={frame < TREMB ? pulseAt(frame, 22) : 0}
+								quiver={quiver}
+								flow={interpolate(frame, [ARR + 4, ARR + 16], [0, 1], clamp)}
+								brain={interpolate(frame, [ARR + 10, ARR + 22], [0, 1], clamp)}
+								flowPhase={phase}
+								bloodless={interpolate(frame, [CIRC - 4, CIRC + 10], [0, 1], clamp)}
+								pale={interpolate(frame, [CIRC, CIRC + 20], [0, 0.5], clamp)}
+								anoxia={interpolate(frame, [OXY - 4, OXY + 24], [0, 1], ease)}
+								eyesClosed={interpolate(frame, [OXY + 8, OXY + 16], [0, 1], clamp)}
+							/>
+						</div>
+					</ZoomCam>
+					{/* repères qui suivent la caméra */}
+					{frame >= COEUR && frame < SANG2 - 2 ? (
+						<div style={{position: 'absolute', left: hTag.x - 250, top: hTag.y - 30, transform: `scale(${popAt(frame, COEUR)})`}}>
+							<Tag label="le cœur" tone={LPI.pink} />
+						</div>
+					) : null}
+					{frame >= CERV ? (
+						<div style={{position: 'absolute', left: bTag.x + 140, top: bTag.y - 40, transform: `scale(${popAt(frame, CERV)})`}}>
+							<Tag label="le cerveau" tone={LPI.pink} />
+						</div>
+					) : null}
+					{frame >= OXY ? (
+						<div style={{position: 'absolute', left: bTag.x - 290, top: bTag.y - 70, width: 120, height: 120, transform: `scale(${popAt(frame, OXY)})`}}>
+							<svg width={120} height={120} viewBox="0 0 120 120">
+								<circle cx={60} cy={60} r={52} fill={LPI.paper} stroke={N} strokeWidth={7} />
+								<text x={60} y={74} textAnchor="middle" fontFamily={FONT.title} fontWeight={900} fontSize={52} fill={LPI.blue}>
+									O₂
+								</text>
+								<path d="M24 96 L96 24" stroke={LPI.pink} strokeWidth={9} strokeLinecap="round" opacity={0.9} />
+							</svg>
+						</div>
+					) : null}
+					{/* le moniteur : rythme normal → fibrillation */}
+					{frame >= POMPE - 4 && monOut > 0 ? (
+						<div style={{position: 'absolute', left: 600, top: 26, opacity: Math.min(1, mon * 1.5) * monOut, transform: `scale(${0.6 + 0.4 * mon})`, transformOrigin: 'right top'}}>
+							<EcgMonitor rhythm={rhythm} width={310} height={130} readout={frame >= TREMB ? 'FV' : '72'} alert={frame >= TREMB ? 1 : 0} />
+						</div>
+					) : null}
+					{frame >= POMPE && frame < SANG2 - 4 ? (
+						<div style={{position: 'absolute', left: 30, top: 446}}>
+							{frame >= TREMB ? (
+								<Pill at={TREMB} size={34}>
+									il tremble
+								</Pill>
+							) : (
+								<Pill at={POMPE} size={34} color={LPI.blue}>
+									il pompe le sang
+								</Pill>
+							)}
+						</div>
+					) : null}
+					{frame >= CIRC - 2 && frame < CERV - 2 ? (
+						<div style={{position: 'absolute', left: 640, top: 360, textAlign: 'center'}}>
 							<Pill at={CIRC - 2} size={32} color={LPI.sky}>
-								le sang ne circule plus
+								le sang ne
+								<br />
+								circule plus
 							</Pill>
 						</div>
 					) : null}
-					{frame >= CERV - 4 ? (
-						<div style={{position: 'absolute', left: 560, top: 270, transform: `scale(${0.4 + 0.6 * brain})`, transformOrigin: 'center'}}>
-							<Brain size={330} dead={interpolate(frame, [OXY - 4, OXY + 24], [0, 0.85], ease)} everywhere flow={0.2} alert={interpolate(frame, [OXY, OXY + 8], [0, 1], clamp)} />
+					{frame >= OXY - 2 ? (
+						<div style={{position: 'absolute', left: 30, top: 446}}>
+							<Pill at={OXY - 2} size={34}>
+								plus d'oxygène
+							</Pill>
 						</div>
 					) : null}
 				</Stage>
 				<TermSlam index={0} at={FIB} term="Fibrillation ventriculaire" meaning="le cœur tremble au lieu de battre" sign="alert" slamY={SLAM_Y} slot={termSlot(0)} active={frame >= FIB} />
 			</Camera>
+			<Sfx name="heartbeat" at={ARR} volume={0.08} />
+			<Sfx name="whoosh" at={COEUR - 2} volume={0.06} />
 			<Sfx name="heartbeat" at={POMPE - 4} volume={0.09} />
 			<Sfx name="buzz" at={TREMB} volume={0.06} dur={20} />
 			<Sfx name="impact" at={FIB} volume={0.08} />
-			<Sfx name="pop" at={CERV} volume={0.1} />
+			<Sfx name="whoosh" at={SANG2 - 2} volume={0.06} />
+			<Sfx name="whoosh" at={CERV - 4} volume={0.06} />
+			<Sfx name="pop" at={OXY} volume={0.1} />
 		</AbsoluteFill>
 	);
 };
 
 /* ═══════════════════════════════ 2 · RECONNAÎTRE ═══════════════════════════════ */
+// On s'approche du visage (il ne répond pas), on recule pour le stimuler, on plonge dans la tête → gros plan de profil
+// (main sur le front, deux doigts sous le menton : la tête bascule), puis retour sur le thorax qui ne se soulève pas.
+const REC_WIN = {x: 24, y: 20, w: 888, h: 520};
+const REC_PAT = {x: 274, y: 24, size: 340};
+const recPt = (x: number, y: number) => ({x: REC_PAT.x + (x * REC_PAT.size) / 400, y: REC_PAT.y + (y * REC_PAT.size) / 400});
+
 export const Reconnaitre: React.FC = () => {
 	const frame = useCurrentFrame();
 	const POUR = at('reconnaitre', 'pour');
@@ -318,59 +404,87 @@ export const Reconnaitre: React.FC = () => {
 	const DIX = at('reconnaitre', '10');
 	const RESP2 = at('reconnaitre', 'respire', 2);
 	const GASPS = at('reconnaitre', 'gasps');
+	const face = recPt(200, 108);
+	const shoulders = recPt(200, 230);
+	const chest = recPt(200, 300);
+	const front: CamKey[] = [
+		{at: REP - 2, s: 1.7, x: face.x + 76, y: face.y + 30, dur: 14},
+		{at: STIM - 4, s: 1.3, x: shoulders.x, y: shoulders.y - 20, dur: 10},
+		{at: BASC - 4, s: 3.2, x: face.x, y: face.y, dur: 10},
+		{at: RESP2 - 8, s: 2.4, x: chest.x, y: chest.y, dur: 1},
+		{at: RESP2 - 6, s: 1.6, x: chest.x, y: chest.y - 20, dur: 14},
+		{at: GASPS + 20, s: 1.15, x: chest.x, y: chest.y - 40, dur: 20},
+	];
+	const side: CamKey[] = [
+		{at: 0, s: 1.3, dur: 1},
+		{at: BASC - 2, s: 1, dur: 16},
+		{at: REG - 2, s: 1.4, x: 480, y: 260, dur: 14},
+	];
+	const sideO = interpolate(frame, [BASC - 2, BASC + 6], [0, 1], clamp) * interpolate(frame, [RESP2 - 6, RESP2 + 2], [1, 0], clamp);
 	const shake = frame >= STIM && frame < STIM + 22 ? Math.sin(frame * 1.8) * 8 : 0;
-	const tiltIn = useSoft(BASC - 4, true);
-	const tilt = interpolate(frame, [TETE - 2, TETE + 14], [0, 1], ease);
+	const tilt = interpolate(frame, [TETE - 2, TETE + 16], [0, 1], ease);
 	const watch = useSoft(DIX - 4, true);
+	const watchOut = interpolate(frame, [RESP2 - 8, RESP2 - 2], [1, 0], clamp);
 	const progress = interpolate(frame, [DIX, DIX + 30], [0, 1], clamp);
 	const count = Math.max(0, Math.ceil(10 - progress * 10));
 	const gasp = frame >= GASPS ? Math.exp(-((frame - GASPS) % 40) / 4) : 0;
 	return (
 		<AbsoluteFill>
 			<LiveBackground />
-			<Camera punches={[REP + 1, STIM + 1, BASC + 1, DIX + 1, RESP2 + 1, GASPS + 1]} shakes={[STIM + 2]}>
+			<Camera punches={[REP + 1, STIM + 1, DIX + 1, RESP2 + 1, GASPS + 1]} shakes={[STIM + 2]}>
 				<Head kicker="Reconnaître" kAt={POUR} title="Il ne *répond* pas ?" tAt={REP - 4} />
 				<Stage y={LAY.stageY} h={560} at={POUR + 2} bumps={[STIM, RESP2]}>
-					{/* patient allongé (vu de dessus) */}
-					<div style={{position: 'absolute', left: 40, top: 70, transform: `translateX(${shake}px) rotate(${shake * 0.3}deg)`}}>
-						<Patient size={320} breath={gasp * 0.8} mood="calme" eyesClosed={1} pale={0.4} />
-						{frame >= STIM - 2 && frame < STIM + 26 ? (
-							<svg width={320} height={448} viewBox="0 0 400 560" style={{position: 'absolute', inset: 0, overflow: 'visible'}}>
-								{[110, 290].map((x) => (
-									<ellipse key={x} cx={x} cy={222} rx={40} ry={30} fill={LPI.paper} stroke={N} strokeWidth={7} />
-								))}
-							</svg>
-						) : null}
-					</div>
-					<div style={{position: 'absolute', left: 40, top: 20}}>
-						<Pill at={REP} size={34}>
-							✗ ne répond pas
-						</Pill>
-					</div>
+					{/* de face, allongé : visage, épaules, puis thorax */}
+					{sideO < 1 ? (
+						<div style={{position: 'absolute', inset: 0, opacity: 1 - sideO}}>
+							<ZoomCam keys={front} {...REC_WIN}>
+								<div style={{position: 'absolute', left: REC_PAT.x, top: REC_PAT.y, transform: `translateX(${shake}px) rotate(${shake * 0.3}deg)`}}>
+									<Patient size={REC_PAT.size} breath={gasp * 0.8} mood="calme" eyesClosed={1} pale={0.4} />
+									{frame >= STIM - 2 && frame < STIM + 26 ? (
+										<svg width={REC_PAT.size} height={REC_PAT.size * 1.4} viewBox="0 0 400 560" style={{position: 'absolute', inset: 0, overflow: 'visible'}}>
+											{[110, 290].map((x) => (
+												<ellipse key={x} cx={x} cy={222} rx={40} ry={30} fill={LPI.paper} stroke={N} strokeWidth={7} />
+											))}
+										</svg>
+									) : null}
+								</div>
+							</ZoomCam>
+						</div>
+					) : null}
+					{/* gros plan de profil : on bascule la tête en arrière */}
+					{sideO > 0 ? (
+						<div style={{position: 'absolute', inset: 0, opacity: sideO}}>
+							<ZoomCam keys={side} {...REC_WIN}>
+								<HeadTilt tilt={tilt} width={REC_WIN.w} />
+							</ZoomCam>
+						</div>
+					) : null}
+					{frame < BASC - 2 ? (
+						<div style={{position: 'absolute', left: 24, top: 18}}>
+							<Pill at={REP} size={34}>
+								✗ ne répond pas
+							</Pill>
+						</div>
+					) : null}
 					{frame < BASC - 4 ? (
-						<Bubble at={PARLE - 2} x={420} y={90} size={42}>
+						<Bubble at={PARLE - 2} x={548} y={66} size={36}>
 							Vous m'entendez ?
 						</Bubble>
 					) : null}
-					{frame >= BASC - 4 ? (
-						<div style={{position: 'absolute', left: 500, top: 0, opacity: Math.min(1, tiltIn * 1.5), transform: `scale(${0.6 + 0.4 * tiltIn})`, transformOrigin: 'center'}}>
-							<HeadTilt tilt={tilt} size={280} />
-						</div>
-					) : null}
-					{frame >= DIX - 4 ? (
-						<div style={{position: 'absolute', left: 610, top: 340, opacity: Math.min(1, watch * 1.5), transform: `scale(${0.6 + 0.4 * watch})`, transformOrigin: 'center'}}>
-							<Stopwatch progress={progress} count={count} size={200} label="secondes" />
-						</div>
-					) : null}
-					{frame >= REG - 2 ? (
-						<div style={{position: 'absolute', left: 420, top: 282}}>
-							<Pill at={REG - 2} size={28} color={LPI.sky}>
+					{frame >= REG - 2 && frame < RESP2 - 6 ? (
+						<div style={{position: 'absolute', left: 24, top: 476}}>
+							<Pill at={REG - 2} size={30} color={LPI.sky}>
 								regarder · écouter · sentir
 							</Pill>
 						</div>
 					) : null}
+					{frame >= DIX - 4 && watchOut > 0 ? (
+						<div style={{position: 'absolute', left: 716, top: 14, opacity: Math.min(1, watch * 1.5) * watchOut, transform: `scale(${0.6 + 0.4 * watch})`, transformOrigin: 'right top'}}>
+							<Stopwatch progress={progress} count={count} size={190} label="secondes" />
+						</div>
+					) : null}
 					{frame >= RESP2 - 2 ? (
-						<div style={{position: 'absolute', left: 40, top: 500}}>
+						<div style={{position: 'absolute', left: 24, top: 470}}>
 							<Pill at={RESP2 - 2} size={34}>
 								✗ ne respire pas
 							</Pill>
@@ -386,8 +500,9 @@ export const Reconnaitre: React.FC = () => {
 			<Sfx name="pop" at={REP} volume={0.1} />
 			<Sfx name="pop" at={PARLE - 2} volume={0.09} />
 			<Sfx name="hop" at={STIM} volume={0.08} />
-			<Sfx name="whoosh" at={BASC - 4} volume={0.06} />
+			<Sfx name="whoosh" at={BASC - 4} volume={0.07} />
 			<Sfx name="tick" at={DIX} volume={0.08} />
+			<Sfx name="whoosh" at={RESP2 - 6} volume={0.06} />
 			<Sfx name="pop" at={RESP2 - 2} volume={0.1} />
 			<Sfx name="buzz" at={GASPS} volume={0.05} dur={14} />
 		</AbsoluteFill>
@@ -406,31 +521,39 @@ export const Alerter: React.FC = () => {
 	const digits = frame >= Q15 ? '15' : frame >= Q15 - 5 ? '1' : '';
 	const ring = interpolate(frame, [Q15 + 6, Q15 + 12], [0, 1], clamp);
 	const aed = useSoft(DEF - 6, true);
+	const keys: CamKey[] = [
+		{at: AL - 2, s: 1.5, x: 205, y: 200, dur: 14},
+		{at: Q112 - 2, s: 1.25, x: 250, y: 330, dur: 12},
+		{at: DEF - 6, s: 1.2, x: 705, y: 280, dur: 14},
+		{at: DEF + 24, s: 1, dur: 16},
+	];
 	return (
 		<AbsoluteFill>
 			<LiveBackground />
 			<Camera punches={[AL + 1, Q15 + 1, Q112 + 1, DEF + 1]} shakes={[Q15 + 2]}>
 				<Head kicker="Alerter" kAt={TOUT} title="Appelle le *15* !" tAt={AL - 2} />
 				<Stage y={LAY.stageY} h={540} at={TOUT + 2} bumps={[Q15, DEF]}>
-					<div style={{position: 'absolute', left: 80, top: 40, opacity: Math.min(1, phone * 1.5), transform: `translateY(${(1 - phone) * 80}px)`}}>
-						<Phone digits={digits} ring={ring} size={250} />
-					</div>
-					<div style={{position: 'absolute', left: 90, top: 480}}>
-						<Pill at={Q112} size={34} color={LPI.blue}>
-							ou le 112
-						</Pill>
-					</div>
-					{frame >= DEF - 6 ? (
-						<div style={{position: 'absolute', left: 560, top: 70, opacity: Math.min(1, aed * 1.5), transform: `translateX(${(1 - aed) * 300}px) rotate(${(1 - aed) * 12}deg)`}}>
-							<Aed msg="DAE" size={290} />
-							<div style={{width: 290, marginTop: 14, textAlign: 'center', fontFamily: FONT.title, fontWeight: 800, fontSize: 28, color: N, lineHeight: 1.15}}>
-								défibrillateur
-								<br />
-								<span style={{color: LPI.blue}}>automatisé externe</span>
-							</div>
+					<ZoomCam keys={keys} w={936} h={540}>
+						<div style={{position: 'absolute', left: 80, top: 40, opacity: Math.min(1, phone * 1.5), transform: `translateY(${(1 - phone) * 80}px)`}}>
+							<Phone digits={digits} ring={ring} size={250} />
 						</div>
-					) : null}
-				</Stage>
+						<div style={{position: 'absolute', left: 90, top: 480}}>
+							<Pill at={Q112} size={34} color={LPI.blue}>
+								ou le 112
+							</Pill>
+						</div>
+						{frame >= DEF - 6 ? (
+							<div style={{position: 'absolute', left: 560, top: 70, opacity: Math.min(1, aed * 1.5), transform: `translateX(${(1 - aed) * 300}px) rotate(${(1 - aed) * 12}deg)`}}>
+								<Aed msg="DAE" size={290} />
+								<div style={{width: 290, marginTop: 14, textAlign: 'center', fontFamily: FONT.title, fontWeight: 800, fontSize: 28, color: N, lineHeight: 1.15}}>
+									défibrillateur
+									<br />
+													<span style={{color: LPI.blue}}>automatisé externe</span>
+												</div>
+											</div>
+										) : null}
+									</ZoomCam>
+								</Stage>
 				<div style={{position: 'absolute', left: 72, top: 1010, display: 'flex', flexDirection: 'column', gap: 18, alignItems: 'flex-start'}}>
 					<CheckChip at={Q15} label="appeler le 15 (ou le 112)" size={44} />
 					<CheckChip at={DEF} label="faire chercher un défibrillateur (DAE)" size={44} />
@@ -465,24 +588,33 @@ export const Masser: React.FC = () => {
 	const target = interpolate(frame, [CENTRE - 2, CENTRE + 8], [0, 1], clamp);
 	const gauge = useSoft(CINQ - 4, true);
 	const rate = useSoft(CENT - 4, true);
+	const keys: CamKey[] = [
+		{at: CENTRE - 2, s: 1.8, x: 305, y: 336, dur: 16},
+		{at: BRAS - 4, s: 1.25, x: 420, y: 330, dur: 14},
+		{at: ENF, s: 1.5, x: 360, y: 330, dur: 14},
+		{at: CENT - 4, s: 1.15, x: 420, y: 320, dur: 16},
+		{at: STAY - 2, s: 1, dur: 20},
+	];
 	return (
 		<AbsoluteFill>
 			<LiveBackground />
 			<Camera punches={[MASSE + 1, CENTRE + 1, TENDUS + 1, CINQ + 1, CENT + 1, STAY + 1]} shakes={[STAY + 2]}>
 				<Head kicker="Masser" kAt={PUIS} title="On *masse* !" tAt={MASSE - 2} />
 				<Stage y={LAY.stageY} h={600} at={PUIS + 2} bumps={[CENTRE, STAY]}>
-					<div style={{position: 'absolute', left: 120, top: 70}}>
-						<Patient size={360} breath={-press * 0.6} mood="calme" eyesClosed={1} pale={0.4} />
-						<svg width={360} height={504} viewBox="0 0 400 560" style={{position: 'absolute', inset: 0, overflow: 'visible'}}>
-							{target > 0 ? (
-								<g opacity={target * (arms > 0.8 ? 0.4 : 1)}>
-									<circle cx={206} cy={296} r={70 + 6 * Math.sin(frame / 4)} fill="none" stroke={LPI.pink} strokeWidth={7} strokeDasharray="14 10" strokeDashoffset={frame * 2} />
-									<path d="M206 256 V336 M166 296 H246" stroke={LPI.pink} strokeWidth={6} strokeLinecap="round" />
-								</g>
-							) : null}
-							<CprHands press={press} on={arms} />
-						</svg>
-					</div>
+					<ZoomCam keys={keys} w={936} h={600}>
+						<div style={{position: 'absolute', left: 120, top: 70}}>
+							<Patient size={360} breath={-press * 0.6} mood="calme" eyesClosed={1} pale={0.4} />
+							<svg width={360} height={504} viewBox="0 0 400 560" style={{position: 'absolute', inset: 0, overflow: 'visible'}}>
+								{target > 0 ? (
+									<g opacity={target * (arms > 0.8 ? 0.4 : 1)}>
+										<circle cx={206} cy={296} r={70 + 6 * Math.sin(frame / 4)} fill="none" stroke={LPI.pink} strokeWidth={7} strokeDasharray="14 10" strokeDashoffset={frame * 2} />
+										<path d="M206 256 V336 M166 296 H246" stroke={LPI.pink} strokeWidth={6} strokeLinecap="round" />
+									</g>
+								) : null}
+										<CprHands press={press} on={arms} />
+									</svg>
+								</div>
+							</ZoomCam>
 					{frame >= CINQ - 4 ? (
 						<div style={{position: 'absolute', left: 740, top: 150, opacity: Math.min(1, gauge * 1.5), transform: `scale(${0.6 + 0.4 * gauge})`}}>
 							<DepthGauge press={press} height={300} />
@@ -640,38 +772,47 @@ export const Dae: React.FC = () => {
 	const jolt = frame >= SHOCK && frame < SHOCK + 10 ? Math.sin((frame - SHOCK) * 2.2) * 14 * Math.exp(-(frame - SHOCK) / 4) : 0;
 	const mon = useSoft(ANA - 4, true);
 	const zone = interpolate(frame, [PEND - 2, PEND + 8], [0, 1], clamp);
+	const keys: CamKey[] = [
+		{at: ALL - 2, s: 1.6, x: 750, y: 221, dur: 14},
+		{at: VOIX + 2, s: 1.15, x: 480, y: 280, dur: 14},
+		{at: ANA - 4, s: 1, dur: 16},
+		{at: BES - 2, s: 1.4, x: 720, y: 240, dur: 12},
+		{at: SHOCK - 4, s: 1, dur: 6},
+	];
 	return (
 		<AbsoluteFill>
 			<LiveBackground />
 			<Camera punches={[ARR + 1, VOIX + 1, ANA + 1, SHOCK + 1, PEND + 1]} shakes={[SHOCK + 1]}>
 				<Head kicker="Défibriller" kAt={DES} title="Le *défibrillateur*" tAt={DEF - 2} size={84} />
 				<Stage y={LAY.stageY} h={600} at={DES + 2} bumps={[ARR, SHOCK]}>
-					<div style={{position: 'absolute', left: 40, top: 60, transform: `translateY(${jolt}px)`}}>
-						<Patient size={330} breath={0} mood="calme" eyesClosed={1} pale={frame >= ARRT + 6 ? 0.15 : 0.4} />
-						<svg width={330} height={462} viewBox="0 0 400 560" style={{position: 'absolute', inset: 0, overflow: 'visible'}}>
-							<Pad x={150} y={262} rot={-10} on={pads} />
-							<Pad x={272} y={372} rot={20} on={interpolate(frame, [VOIX + 4, VOIX + 16], [0, 1], ease)} />
-							{zone > 0 ? <ellipse cx={200} cy={300} rx={250} ry={300} fill="none" stroke={LPI.pink} strokeWidth={10} strokeDasharray="22 14" strokeDashoffset={frame * 3} opacity={zone} /> : null}
-						</svg>
-					</div>
-					{/* câbles électrodes → DAE */}
-					{pads > 0 ? (
-						<svg width={936} height={600} style={{position: 'absolute', inset: 0, overflow: 'visible'}}>
-							<path d={`M${40 + 150 * 0.825} ${60 + 262 * 0.825} C300 160 520 120 640 180`} fill="none" stroke={N} strokeWidth={6} pathLength={1} strokeDasharray={`${pads} 1`} />
-							<path d={`M${40 + 272 * 0.825} ${60 + 372 * 0.825} C380 380 560 300 650 260`} fill="none" stroke={N} strokeWidth={6} pathLength={1} strokeDasharray={`${pads} 1`} />
-						</svg>
-					) : null}
-					{frame >= ARR - 6 ? (
-						<div style={{position: 'absolute', left: 610, top: 30, opacity: Math.min(1, aed * 1.5), transform: `translateX(${(1 - aed) * 300}px)`}}>
-							<Aed msg={msg} ready={frame >= BES && frame < SHOCK ? 1 : 0} press={interpolate(frame, [SHOCK - 3, SHOCK, SHOCK + 4], [0, 1, 0], clamp)} size={280} />
+					<ZoomCam keys={keys} w={936} h={600}>
+						<div style={{position: 'absolute', left: 40, top: 60, transform: `translateY(${jolt}px)`}}>
+							<Patient size={330} breath={0} mood="calme" eyesClosed={1} pale={frame >= ARRT + 6 ? 0.15 : 0.4} />
+							<svg width={330} height={462} viewBox="0 0 400 560" style={{position: 'absolute', inset: 0, overflow: 'visible'}}>
+								<Pad x={150} y={262} rot={-10} on={pads} />
+								<Pad x={272} y={372} rot={20} on={interpolate(frame, [VOIX + 4, VOIX + 16], [0, 1], ease)} />
+								{zone > 0 ? <ellipse cx={200} cy={300} rx={250} ry={300} fill="none" stroke={LPI.pink} strokeWidth={10} strokeDasharray="22 14" strokeDashoffset={frame * 3} opacity={zone} /> : null}
+							</svg>
 						</div>
-					) : null}
-					{frame >= ANA - 4 ? (
-						<div style={{position: 'absolute', left: 470, top: 400, opacity: Math.min(1, mon * 1.5), transform: `scale(${0.6 + 0.4 * mon})`, transformOrigin: 'left top'}}>
-							<EcgMonitor rhythm={rhythm} width={440} height={170} readout={frame >= ARRT + 6 ? '♥' : 'FV'} alert={frame < ARRT + 6 ? 1 : 0} />
-						</div>
-					) : null}
-				</Stage>
+						{/* câbles électrodes → DAE */}
+						{pads > 0 ? (
+							<svg width={936} height={600} style={{position: 'absolute', inset: 0, overflow: 'visible'}}>
+								<path d={`M${40 + 150 * 0.825} ${60 + 262 * 0.825} C300 160 520 120 640 180`} fill="none" stroke={N} strokeWidth={6} pathLength={1} strokeDasharray={`${pads} 1`} />
+								<path d={`M${40 + 272 * 0.825} ${60 + 372 * 0.825} C380 380 560 300 650 260`} fill="none" stroke={N} strokeWidth={6} pathLength={1} strokeDasharray={`${pads} 1`} />
+							</svg>
+						) : null}
+						{frame >= ARR - 6 ? (
+							<div style={{position: 'absolute', left: 610, top: 30, opacity: Math.min(1, aed * 1.5), transform: `translateX(${(1 - aed) * 300}px)`}}>
+								<Aed msg={msg} ready={frame >= BES && frame < SHOCK ? 1 : 0} press={interpolate(frame, [SHOCK - 3, SHOCK, SHOCK + 4], [0, 1, 0], clamp)} size={280} />
+							</div>
+						) : null}
+						{frame >= ANA - 4 ? (
+							<div style={{position: 'absolute', left: 470, top: 400, opacity: Math.min(1, mon * 1.5), transform: `scale(${0.6 + 0.4 * mon})`, transformOrigin: 'left top'}}>
+											<EcgMonitor rhythm={rhythm} width={440} height={170} readout={frame >= ARRT + 6 ? '♥' : 'FV'} alert={frame < ARRT + 6 ? 1 : 0} />
+										</div>
+									) : null}
+								</ZoomCam>
+							</Stage>
 				<Stamp at={SHOCK} x={560} y={660} text="Choc !" size={72} rot={-8} />
 				<Stamp at={PEND} x={540} y={1110} text="Personne ne touche !" size={56} rot={-4} />
 				<div style={{position: 'absolute', left: 72, top: 1190, display: 'flex', flexDirection: 'column', gap: 16, alignItems: 'flex-start'}}>

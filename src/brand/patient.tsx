@@ -1,7 +1,8 @@
 // Modèle de corps humain réutilisable : patient vu de face, de la tête aux hanches (bas en fondu).
 // Style plat de la marque (trait bleu nuit, tenue bleue, peau = rose 30 % sur blanc cassé), visage simple
-// qui cligne, et des calques à doser 0 → 1 : cœur qui bat, artères, brassard, rougeur, pâleur, sueurs,
-// maux de tête, vertiges. Les points du corps (PATIENT_PTS) servent à poser repères, traits et loupes.
+// qui cligne, et des calques à doser 0 → 1 : cœur qui bat (ou tremble), artères (sang qui s'arrête), cerveau vu à
+// travers le crâne (privé d'oxygène), brassard, rougeur, pâleur, sueurs, maux de tête, vertiges. Les points du corps
+// (PATIENT_PTS) servent à poser repères, traits et loupes.
 import React, {useId} from 'react';
 import {useCurrentFrame} from 'remotion';
 import {alpha, LPI} from './theme';
@@ -54,9 +55,19 @@ export type PatientProps = {
 	/** bras levés vers l'extérieur, en degrés (0 = le long du corps, 90 = à l'horizontale) */
 	armL?: number;
 	armR?: number;
-	/** yeux fermés (inconscient, 0 → 1) */
-	eyesClosed?: number;
-};
+		/** yeux fermés (inconscient, 0 → 1) */
+		eyesClosed?: number;
+		/** le cœur tremble au lieu de battre (fibrillation, 0 → 1) */
+		quiver?: number;
+		/** cerveau vu à travers le crâne (0 → 1) ; avec `flow`, les carotides montent du cœur jusqu'à lui */
+		brain?: number;
+		/** cerveau privé d'oxygène : il pâlit, ses neurones s'éteignent (0 → 1) */
+		anoxia?: number;
+		/** le sang ne circule plus : artères vides (0 → 1) */
+		bloodless?: number;
+		/** avancée du sang dans les artères (par défaut 3 × frame ; la figer = le sang s'arrête) */
+		flowPhase?: number;
+	};
 
 const ARMS = ['M106 236 C92 290 80 340 76 400 C74 430 74 455 76 474', 'M294 236 C308 290 320 340 324 400 C326 430 326 455 324 474'];
 const SLEEVES = ['M110 230 C100 254 94 276 92 300', 'M290 230 C300 254 306 276 308 300'];
@@ -64,8 +75,34 @@ const TORSO = 'M112 214 C140 197 168 192 200 192 C232 192 260 197 288 214 C300 2
 const ARTERIES = [
 	'M228 300 C232 262 262 236 292 244 C306 290 318 340 322 400 C324 430 324 450 324 470',
 	'M228 300 C220 258 140 236 108 244 C94 290 82 340 78 400 C76 430 76 450 76 470',
-	'M228 300 C222 340 206 380 200 470',
-];
+		'M228 300 C222 340 206 380 200 470',
+	];
+	/** carotides : du cœur au cou (sous le cœur), puis du cou au cerveau le long des joues (par-dessus la tête) */
+	const CAROTIDS_LOW = ['M228 300 C230 262 218 236 216 206', 'M228 300 C222 262 186 236 184 206'];
+	const CAROTIDS_UP = ['M216 206 C215 186 230 172 246 160 C258 150 258 120 246 92', 'M184 206 C183 186 170 172 154 160 C142 150 142 120 154 92'];
+	const CAROTID_LOW_LEN = 98;
+	const BRAIN = 'M200 40 C182 30 150 36 146 62 C142 86 162 100 186 98 C194 97 198 94 200 90 C202 94 206 97 214 98 C238 100 258 86 254 62 C250 36 218 30 200 40 Z';
+	const GYRI = 'M162 56 Q172 46 180 58 Q186 66 176 72 M158 80 Q170 72 180 84 M238 56 Q228 46 220 58 Q214 66 224 72 M242 80 Q230 72 220 84 M188 44 Q194 54 186 62 M212 44 Q206 54 214 62';
+	const NEURONS = [
+		[166, 50],
+		[176, 86],
+		[156, 68],
+		[190, 72],
+		[234, 50],
+		[224, 86],
+		[244, 68],
+		[210, 72],
+	];
+
+	/** Artère : gaine claire, sang rose (ou vide, bleu clair) et globules qui avancent avec `phase`. */
+	const Artery: React.FC<{d: string; o: number; bloodless: number; phase: number}> = ({d, o, bloodless, phase}) => (
+		<g opacity={o}>
+			<path d={d} fill="none" stroke={alpha(LPI.paper, 0.9)} strokeWidth={14} strokeLinecap="round" />
+			<path d={d} fill="none" stroke={LPI.sky} strokeWidth={8} strokeLinecap="round" />
+			<path d={d} fill="none" stroke={LPI.pink} strokeWidth={8} strokeLinecap="round" opacity={1 - bloodless} />
+			<path d={d} fill="none" stroke={N} strokeWidth={5} strokeLinecap="round" strokeDasharray="4 26" strokeDashoffset={-phase} opacity={0.6 * (1 - 0.7 * bloodless)} />
+		</g>
+	);
 
 /** Calque de peau : blanc cassé + rose 30 % (+ rougeur), ou bleu clair (pâleur). */
 const SkinLayers: React.FC<{flush: number; pale: number; children: (fill: string, opacity: number) => React.ReactNode}> = ({flush, pale, children}) => (
@@ -77,7 +114,7 @@ const SkinLayers: React.FC<{flush: number; pale: number; children: (fill: string
 	</>
 );
 
-export const Patient: React.FC<PatientProps> = ({size = 360, mood = 'calme', breath = 0, heart = 0, beat = 0, flow = 0, cuff = 0, press = 0, flush = 0, pale = 0, sweat = 0, pain = 0, dizzy = 0, droop = 0, armL = 0, armR = 0, eyesClosed = 0}) => {
+export const Patient: React.FC<PatientProps> = ({size = 360, mood = 'calme', breath = 0, heart = 0, beat = 0, flow = 0, cuff = 0, press = 0, flush = 0, pale = 0, sweat = 0, pain = 0, dizzy = 0, droop = 0, armL = 0, armR = 0, eyesClosed = 0, quiver = 0, brain = 0, anoxia = 0, bloodless = 0, flowPhase}) => {
 	const frame = useCurrentFrame();
 	const id = useId().replace(/:/g, '');
 	const blink = Math.min(frame % 96 < 4 ? 0.15 : 1, 1 - 0.9 * eyesClosed);
@@ -86,6 +123,9 @@ export const Patient: React.FC<PatientProps> = ({size = 360, mood = 'calme', bre
 	const unwell = mood === 'mal';
 	const [hx, hy] = PATIENT_PTS.heart;
 	const [cx, cy] = PATIENT_PTS.upperArm;
+	const phase = flowPhase ?? frame * 3;
+	const jx = Math.sin(frame * 2.7) * 4 * quiver;
+	const jy = Math.cos(frame * 3.3) * 3 * quiver;
 	return (
 		<svg width={size} height={size * 1.4} viewBox={`0 0 ${VB.w} ${VB.h}`} style={{overflow: 'visible'}}>
 			<defs>
@@ -124,20 +164,18 @@ export const Patient: React.FC<PatientProps> = ({size = 360, mood = 'calme', bre
 					<rect x={126} y={262} width={46} height={40} rx={8} fill="none" stroke={alpha(LPI.sky, 0.9)} strokeWidth={5} />
 					<path d="M200 236 V560" stroke={alpha(N, 0.25)} strokeWidth={4} />
 					{/* artères */}
-					{flow > 0
-						? ARTERIES.map((d) => (
-								<g key={d} opacity={flow}>
-									<path d={d} fill="none" stroke={alpha(LPI.paper, 0.9)} strokeWidth={14} strokeLinecap="round" />
-									<path d={d} fill="none" stroke={LPI.pink} strokeWidth={8} strokeLinecap="round" />
-									<path d={d} fill="none" stroke={N} strokeWidth={5} strokeLinecap="round" strokeDasharray="4 26" strokeDashoffset={-frame * 3} opacity={0.6} />
-								</g>
-							))
-						: null}
-					{/* cœur */}
+					{flow > 0 ? ARTERIES.map((d) => <Artery key={d} d={d} o={flow} bloodless={bloodless} phase={phase} />) : null}
+					{brain > 0 && flow > 0 ? CAROTIDS_LOW.map((d) => <Artery key={d} d={d} o={Math.min(brain, flow)} bloodless={bloodless} phase={phase} />) : null}
+					{/* cœur (qui tremble : il frémit sur place, petits éclairs de chaque côté) */}
 					{heart > 0 ? (
-						<g transform={`translate(${hx} ${hy}) scale(${(0.55 + 0.45 * heart) * (1 + 0.14 * beat)})`} opacity={Math.min(1, heart * 1.5)}>
+						<g transform={`translate(${hx + jx} ${hy + jy}) scale(${(0.55 + 0.45 * heart) * (1 + 0.14 * beat + 0.05 * quiver * Math.sin(frame * 3.1))})`} opacity={Math.min(1, heart * 1.5)}>
 							<circle r={34 + 16 * beat} fill={alpha(LPI.pink, 0.35 * (1 - beat))} />
 							<path d="M0 24 C-38 -4 -26 -42 0 -22 C26 -42 38 -4 0 24 Z" fill={LPI.pink} stroke={N} strokeWidth={6} strokeLinejoin="round" />
+							{quiver > 0
+								? [-1, 1].map((k) => (
+										<path key={k} d={`M${k * 44} -18 l${k * 9} 7 l${-k * 9} 7 l${k * 9} 7`} fill="none" stroke={N} strokeWidth={5} strokeLinecap="round" strokeLinejoin="round" opacity={quiver * (0.6 + 0.4 * Math.sin(frame))} />
+									))
+								: null}
 						</g>
 					) : null}
 					{/* brassard (bras droit du patient, à gauche de l'écran… ici côté droit de l'écran) */}
@@ -188,6 +226,20 @@ export const Patient: React.FC<PatientProps> = ({size = 360, mood = 'calme', bre
 					strokeWidth={6}
 					strokeLinecap="round"
 				/>
+				{/* cerveau vu à travers le crâne, carotides qui l'irriguent */}
+				{brain > 0 ? (
+					<g opacity={brain}>
+						<ellipse cx={200} cy={66} rx={70} ry={46} fill={alpha(LPI.paper, 0.85)} stroke={alpha(LPI.sky, 0.9)} strokeWidth={4} strokeDasharray="10 8" />
+						<path d={BRAIN} fill={LPI.pink} stroke={N} strokeWidth={6} strokeLinejoin="round" />
+						{anoxia > 0 ? <path d={BRAIN} fill={LPI.sky} opacity={0.85 * anoxia} /> : null}
+						<path d={GYRI} fill="none" stroke={alpha(N, 0.45)} strokeWidth={4} strokeLinecap="round" />
+						<path d="M200 42 V90" stroke={alpha(N, 0.55)} strokeWidth={4} strokeLinecap="round" />
+						{NEURONS.map(([x, y], i) => (
+							<circle key={i} cx={x} cy={y} r={4.5} fill={LPI.paper} opacity={Math.max(0, 1 - Math.min(1, anoxia * 1.6 - (i % 3) * 0.2)) * (0.55 + 0.45 * Math.sin(frame / 4 + i * 1.7))} />
+						))}
+					</g>
+				) : null}
+				{brain > 0 && flow > 0 ? CAROTIDS_UP.map((d) => <Artery key={d} d={d} o={Math.min(brain, flow)} bloodless={bloodless} phase={phase - CAROTID_LOW_LEN} />) : null}
 				{/* sueurs */}
 				{sweat > 0
 					? [
