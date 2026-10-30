@@ -797,7 +797,7 @@ export const Outro: React.FC = () => (
 		done={at('outro', 'urgence') + 16}
 		rows={[
 			[at('outro', "l'hémoglobine"), 'device', 'SpO₂', "% d'hémoglobine chargée en O₂"],
-			[at('outro', 'doigt'), 'device', 'Au bout du doigt', 'saturomètre · sans vernis · main chaude'],
+			[at('outro', 'doigt'), 'device', 'Au bout du doigt', 'sans vernis · main chaude'],
 			[at('outro', 'normale'), 'check', 'Normale', '95 – 100 % (BPCO : 88 – 92 %)'],
 			[at('outro', 'désaturation'), 'down', 'Désaturation', '< 95 %'],
 			[at('outro', 'hypoxémie'), 'empty', 'Hypoxémie', '< 90 % · urgence'],
