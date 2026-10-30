@@ -601,6 +601,11 @@ export const Fin: React.FC = () => {
 	const MICHEL = at('fin', 'michel');
 	const SOIGNE = at('fin', 'soigné');
 	const QUATRE = at('fin', 'quatre');
+	// la caméra s'approche lentement du sourire retrouvé, puis recule quand VITE s'allume
+	const keys: CamKey[] = [
+		{at: SOIGNE - 4, s: 1.9, x: FACE.x, y: FACE.y + 50, dur: 60},
+		{at: QUATRE - 4, s: 1.2, x: 468, y: 360, dur: 18},
+	];
 	return (
 		<AbsoluteFill>
 			<NightBg />
@@ -609,7 +614,9 @@ export const Fin: React.FC = () => {
 				<Line at={QUATRE - 4} text={'Grâce à *4* lettres.'} y={250} />
 				<LetterRow at={QUATRE} stagger={4} y={380} size={120} lit={1} />
 				<ScanFrame y={FR.y} h={FR.h} label="MICHEL · SOIGNÉ À TEMPS" tone={LPI.pink}>
-					<Michel breath={idle(frame)} mood="content" />
+					<ZoomCam keys={keys} w={FR.w} h={FR.h} radius={0}>
+						<Michel breath={idle(frame)} mood="content" />
+					</ZoomCam>
 				</ScanFrame>
 				<Burst at={QUATRE + 12} x={540} y={440} r={380} n={18} />
 			</Camera>

@@ -28,5 +28,5 @@ const TRANSITIONS: Record<Exclude<SceneId, 'intro'>, EpisodeTransition> = {
 };
 
 export const AvcHistoire: React.FC<AvcHistoireProps> = ({voice, sfx}) => (
-	<Episode tl={TL} ids={SCENE_IDS} scenes={SCENES} transitions={TRANSITIONS} mascot={MASCOT} voice={voice ? 'voix/avc-histoire/voix.wav' : null} sfx={sfx} progress={false} />
+	<Episode tl={TL} ids={SCENE_IDS} scenes={SCENES} transitions={TRANSITIONS} mascot={MASCOT} voice={voice ? 'voix/avc-histoire/voix.wav' : null} sfx={sfx} progress={false} bg={LPI.navy} />
 );

@@ -346,6 +346,7 @@ export const Episode = <Id extends string>({
 	voice,
 	sfx,
 	progress = true,
+	bg = LPI.paper,
 }: {
 	tl: Timeline;
 	ids: readonly Id[];
@@ -353,15 +354,17 @@ export const Episode = <Id extends string>({
 	transitions: Record<Exclude<Id, 'intro'>, EpisodeTransition>;
 	mascot: Beat[];
 	/** fichier voix dans public/ (ex. 'voix/frequence-cardiaque/voix.wav'), null = muet */
-		voice: string | null;
+	voice: string | null;
 	sfx: boolean;
 	/** barre de progression des notions (false pour une vidéo « histoire ») */
 	progress?: boolean;
+	/** fond derrière les scènes, visible pendant les transitions (bleu nuit pour une vidéo « histoire ») */
+	bg?: string;
 }) => {
 	const tr = transitions as Record<string, EpisodeTransition>;
 	return (
 		<SfxEnabled.Provider value={sfx}>
-			<AbsoluteFill style={{backgroundColor: LPI.paper}}>
+			<AbsoluteFill style={{backgroundColor: bg}}>
 				<TransitionSeries>
 					{ids.map((id, i) => {
 						const Scene = scenes[id] as React.FC;
