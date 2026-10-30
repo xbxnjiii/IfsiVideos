@@ -1,0 +1,9 @@
+[
+	{"id": "intro", "text": "Après l'infarctus et l'{AVC|A V C}, c'est la troisième cause de mort cardiovasculaire. Et tout commence par un petit caillot, dans une jambe… qui remonte jusqu'aux poumons. C'est quoi, une embolie pulmonaire, et comment la reconnaître ?"},
+	{"id": "def", "text": "Une embolie pulmonaire, c'est un caillot qui bouche une artère du poumon. Le plus souvent, il vient d'une phlébite : un caillot dans une veine profonde de la jambe. Il se détache, remonte jusqu'au cœur, puis se coince dans le poumon. Là, le sang ne passe plus : il manque d'oxygène."},
+	{"id": "signes", "text": "Les signes arrivent souvent d'un coup : un essoufflement brutal, une douleur dans la poitrine, qui augmente quand on inspire, et un cœur qui s'accélère. Parfois, il crache du sang, et la saturation chute. Et on regarde les jambes : un mollet gonflé et douloureux fait penser à une phlébite."},
+	{"id": "urgence", "text": "C'est une urgence ! On alerte tout de suite : le {15|quinze}, ou le médecin à l'hôpital. On installe le patient en position demi-assise, au repos, et on surveille sa saturation, son pouls et sa tension."},
+	{"id": "traitement", "text": "Pour la confirmer, on fait un scanner des poumons. Le traitement, ce sont les anticoagulants : ils empêchent le caillot de grossir. Et dans les cas graves, on peut dissoudre le caillot : c'est la thrombolyse."},
+	{"id": "risques", "text": "Les facteurs de risque : rester longtemps immobile, alité, plâtré, ou en avion. Une opération récente, un cancer, la pilule ou la grossesse. Après une opération, on fait donc marcher les patients tôt, avec des bas de contention."},
+	{"id": "outro", "text": "Petit récap ! L'embolie pulmonaire : un caillot, souvent venu d'une phlébite, bouche une artère du poumon. Essoufflement brutal, douleur dans la poitrine, cœur rapide : on alerte ! Traitement : les anticoagulants. Et pour la prévenir, on bouge !"}
+]

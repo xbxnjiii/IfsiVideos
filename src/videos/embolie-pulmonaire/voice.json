@@ -1,0 +1,1393 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 90.492,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.048,
+   "end": 10.868
+  },
+  {
+   "id": "def",
+   "start": 11.783,
+   "end": 25.669
+  },
+  {
+   "id": "signes",
+   "start": 26.613,
+   "end": 40.36
+  },
+  {
+   "id": "urgence",
+   "start": 41.275,
+   "end": 51.191
+  },
+  {
+   "id": "traitement",
+   "start": 52.141,
+   "end": 61.914
+  },
+  {
+   "id": "risques",
+   "start": 62.832,
+   "end": 75.336
+  },
+  {
+   "id": "outro",
+   "start": 76.293,
+   "end": 90.174
+  }
+ ],
+ "words": [
+  {
+   "text": "Après",
+   "start": 0.048,
+   "end": 0.349
+  },
+  {
+   "text": "l'infarctus",
+   "start": 0.349,
+   "end": 0.905
+  },
+  {
+   "text": "et",
+   "start": 0.905,
+   "end": 0.928
+  },
+  {
+   "text": "l'AVC,",
+   "start": 0.928,
+   "end": 1.437
+  },
+  {
+   "text": "c'est",
+   "start": 1.75,
+   "end": 1.854
+  },
+  {
+   "text": "la",
+   "start": 1.854,
+   "end": 1.935
+  },
+  {
+   "text": "troisième",
+   "start": 1.935,
+   "end": 2.317
+  },
+  {
+   "text": "cause",
+   "start": 2.317,
+   "end": 2.548
+  },
+  {
+   "text": "de",
+   "start": 2.548,
+   "end": 2.641
+  },
+  {
+   "text": "mort",
+   "start": 2.641,
+   "end": 2.791
+  },
+  {
+   "text": "cardiovasculaire.",
+   "start": 2.791,
+   "end": 3.636
+  },
+  {
+   "text": "Et",
+   "start": 3.95,
+   "end": 4.077
+  },
+  {
+   "text": "tout",
+   "start": 4.077,
+   "end": 4.193
+  },
+  {
+   "text": "commence",
+   "start": 4.193,
+   "end": 4.563
+  },
+  {
+   "text": "par",
+   "start": 4.563,
+   "end": 4.702
+  },
+  {
+   "text": "un",
+   "start": 4.702,
+   "end": 4.748
+  },
+  {
+   "text": "petit",
+   "start": 4.748,
+   "end": 4.991
+  },
+  {
+   "text": "caillot,",
+   "start": 4.991,
+   "end": 5.373
+  },
+  {
+   "text": "dans",
+   "start": 5.651,
+   "end": 5.732
+  },
+  {
+   "text": "une",
+   "start": 5.732,
+   "end": 5.894
+  },
+  {
+   "text": "jambe…",
+   "start": 5.894,
+   "end": 6.264
+  },
+  {
+   "text": "qui",
+   "start": 6.403,
+   "end": 6.531
+  },
+  {
+   "text": "remonte",
+   "start": 6.531,
+   "end": 6.901
+  },
+  {
+   "text": "jusqu'aux",
+   "start": 6.901,
+   "end": 7.179
+  },
+  {
+   "text": "poumons.",
+   "start": 7.179,
+   "end": 7.549
+  },
+  {
+   "text": "C'est",
+   "start": 7.882,
+   "end": 8.044
+  },
+  {
+   "text": "quoi,",
+   "start": 8.044,
+   "end": 8.322
+  },
+  {
+   "text": "une",
+   "start": 8.611,
+   "end": 8.692
+  },
+  {
+   "text": "embolie",
+   "start": 8.692,
+   "end": 8.981
+  },
+  {
+   "text": "pulmonaire,",
+   "start": 8.982,
+   "end": 9.607
+  },
+  {
+   "text": "et",
+   "start": 9.919,
+   "end": 9.942
+  },
+  {
+   "text": "comment",
+   "start": 9.942,
+   "end": 10.185
+  },
+  {
+   "text": "la",
+   "start": 10.185,
+   "end": 10.266
+  },
+  {
+   "text": "reconnaître ?",
+   "start": 10.266,
+   "end": 10.868
+  },
+  {
+   "text": "Une",
+   "start": 11.783,
+   "end": 11.98
+  },
+  {
+   "text": "embolie",
+   "start": 11.98,
+   "end": 12.269
+  },
+  {
+   "text": "pulmonaire,",
+   "start": 12.269,
+   "end": 12.883
+  },
+  {
+   "text": "c'est",
+   "start": 13.23,
+   "end": 13.334
+  },
+  {
+   "text": "un",
+   "start": 13.334,
+   "end": 13.45
+  },
+  {
+   "text": "caillot",
+   "start": 13.45,
+   "end": 13.785
+  },
+  {
+   "text": "qui",
+   "start": 13.797,
+   "end": 13.924
+  },
+  {
+   "text": "bouche",
+   "start": 13.924,
+   "end": 14.144
+  },
+  {
+   "text": "une",
+   "start": 14.144,
+   "end": 14.237
+  },
+  {
+   "text": "artère",
+   "start": 14.237,
+   "end": 14.515
+  },
+  {
+   "text": "du",
+   "start": 14.515,
+   "end": 14.607
+  },
+  {
+   "text": "poumon.",
+   "start": 14.607,
+   "end": 14.943
+  },
+  {
+   "text": "Le",
+   "start": 15.31,
+   "end": 15.415
+  },
+  {
+   "text": "plus",
+   "start": 15.415,
+   "end": 15.553
+  },
+  {
+   "text": "souvent,",
+   "start": 15.553,
+   "end": 15.947
+  },
+  {
+   "text": "il",
+   "start": 16.248,
+   "end": 16.329
+  },
+  {
+   "text": "vient",
+   "start": 16.329,
+   "end": 16.456
+  },
+  {
+   "text": "d'une",
+   "start": 16.456,
+   "end": 16.595
+  },
+  {
+   "text": "phlébite :",
+   "start": 16.595,
+   "end": 17.081
+  },
+  {
+   "text": "un",
+   "start": 17.382,
+   "end": 17.428
+  },
+  {
+   "text": "caillot",
+   "start": 17.428,
+   "end": 17.729
+  },
+  {
+   "text": "dans",
+   "start": 17.729,
+   "end": 17.834
+  },
+  {
+   "text": "une",
+   "start": 17.834,
+   "end": 17.996
+  },
+  {
+   "text": "veine",
+   "start": 17.996,
+   "end": 18.158
+  },
+  {
+   "text": "profonde",
+   "start": 18.158,
+   "end": 18.528
+  },
+  {
+   "text": "de",
+   "start": 18.528,
+   "end": 18.597
+  },
+  {
+   "text": "la",
+   "start": 18.597,
+   "end": 18.69
+  },
+  {
+   "text": "jambe.",
+   "start": 18.69,
+   "end": 19.107
+  },
+  {
+   "text": "Il",
+   "start": 19.421,
+   "end": 19.595
+  },
+  {
+   "text": "se",
+   "start": 19.595,
+   "end": 19.687
+  },
+  {
+   "text": "détache,",
+   "start": 19.687,
+   "end": 20.208
+  },
+  {
+   "text": "remonte",
+   "start": 20.451,
+   "end": 20.764
+  },
+  {
+   "text": "jusqu'au",
+   "start": 20.764,
+   "end": 21.018
+  },
+  {
+   "text": "cœur,",
+   "start": 21.018,
+   "end": 21.389
+  },
+  {
+   "text": "puis",
+   "start": 21.643,
+   "end": 21.771
+  },
+  {
+   "text": "se",
+   "start": 21.771,
+   "end": 21.875
+  },
+  {
+   "text": "coince",
+   "start": 21.875,
+   "end": 22.176
+  },
+  {
+   "text": "dans",
+   "start": 22.176,
+   "end": 22.257
+  },
+  {
+   "text": "le",
+   "start": 22.257,
+   "end": 22.338
+  },
+  {
+   "text": "poumon.",
+   "start": 22.338,
+   "end": 22.708
+  },
+  {
+   "text": "Là,",
+   "start": 23.053,
+   "end": 23.32
+  },
+  {
+   "text": "le",
+   "start": 23.597,
+   "end": 23.678
+  },
+  {
+   "text": "sang",
+   "start": 23.678,
+   "end": 23.817
+  },
+  {
+   "text": "ne",
+   "start": 23.817,
+   "end": 23.898
+  },
+  {
+   "text": "passe",
+   "start": 23.898,
+   "end": 24.107
+  },
+  {
+   "text": "plus :",
+   "start": 24.107,
+   "end": 24.373
+  },
+  {
+   "text": "il",
+   "start": 24.674,
+   "end": 24.766
+  },
+  {
+   "text": "manque",
+   "start": 24.766,
+   "end": 24.963
+  },
+  {
+   "text": "d'oxygène.",
+   "start": 24.963,
+   "end": 25.669
+  },
+  {
+   "text": "Les",
+   "start": 26.613,
+   "end": 26.798
+  },
+  {
+   "text": "signes",
+   "start": 26.798,
+   "end": 27.064
+  },
+  {
+   "text": "arrivent",
+   "start": 27.064,
+   "end": 27.284
+  },
+  {
+   "text": "souvent",
+   "start": 27.284,
+   "end": 27.539
+  },
+  {
+   "text": "d'un",
+   "start": 27.539,
+   "end": 27.689
+  },
+  {
+   "text": "coup :",
+   "start": 27.689,
+   "end": 27.932
+  },
+  {
+   "text": "un",
+   "start": 28.28,
+   "end": 28.372
+  },
+  {
+   "text": "essoufflement",
+   "start": 28.372,
+   "end": 28.858
+  },
+  {
+   "text": "brutal,",
+   "start": 28.858,
+   "end": 29.345
+  },
+  {
+   "text": "une",
+   "start": 29.518,
+   "end": 29.588
+  },
+  {
+   "text": "douleur",
+   "start": 29.588,
+   "end": 29.831
+  },
+  {
+   "text": "dans",
+   "start": 29.831,
+   "end": 29.9
+  },
+  {
+   "text": "la",
+   "start": 29.9,
+   "end": 29.981
+  },
+  {
+   "text": "poitrine,",
+   "start": 29.981,
+   "end": 30.467
+  },
+  {
+   "text": "qui",
+   "start": 30.722,
+   "end": 30.838
+  },
+  {
+   "text": "augmente",
+   "start": 30.838,
+   "end": 31.127
+  },
+  {
+   "text": "quand",
+   "start": 31.127,
+   "end": 31.22
+  },
+  {
+   "text": "on",
+   "start": 31.22,
+   "end": 31.335
+  },
+  {
+   "text": "inspire,",
+   "start": 31.335,
+   "end": 31.833
+  },
+  {
+   "text": "et",
+   "start": 32.03,
+   "end": 32.088
+  },
+  {
+   "text": "un",
+   "start": 32.088,
+   "end": 32.169
+  },
+  {
+   "text": "cœur",
+   "start": 32.169,
+   "end": 32.354
+  },
+  {
+   "text": "qui",
+   "start": 32.354,
+   "end": 32.481
+  },
+  {
+   "text": "s'accélère.",
+   "start": 32.481,
+   "end": 33.106
+  },
+  {
+   "text": "Parfois,",
+   "start": 33.416,
+   "end": 33.902
+  },
+  {
+   "text": "il",
+   "start": 34.203,
+   "end": 34.272
+  },
+  {
+   "text": "crache",
+   "start": 34.272,
+   "end": 34.504
+  },
+  {
+   "text": "du",
+   "start": 34.504,
+   "end": 34.62
+  },
+  {
+   "text": "sang,",
+   "start": 34.62,
+   "end": 34.932
+  },
+  {
+   "text": "et",
+   "start": 35.233,
+   "end": 35.256
+  },
+  {
+   "text": "la",
+   "start": 35.256,
+   "end": 35.349
+  },
+  {
+   "text": "saturation",
+   "start": 35.349,
+   "end": 35.893
+  },
+  {
+   "text": "chute.",
+   "start": 35.893,
+   "end": 36.367
+  },
+  {
+   "text": "Et",
+   "start": 36.691,
+   "end": 36.795
+  },
+  {
+   "text": "on",
+   "start": 36.796,
+   "end": 36.83
+  },
+  {
+   "text": "regarde",
+   "start": 36.83,
+   "end": 37.154
+  },
+  {
+   "text": "les",
+   "start": 37.154,
+   "end": 37.27
+  },
+  {
+   "text": "jambes :",
+   "start": 37.27,
+   "end": 37.594
+  },
+  {
+   "text": "un",
+   "start": 37.953,
+   "end": 37.999
+  },
+  {
+   "text": "mollet",
+   "start": 37.999,
+   "end": 38.219
+  },
+  {
+   "text": "gonflé",
+   "start": 38.219,
+   "end": 38.694
+  },
+  {
+   "text": "et",
+   "start": 38.694,
+   "end": 38.798
+  },
+  {
+   "text": "douloureux",
+   "start": 38.798,
+   "end": 39.226
+  },
+  {
+   "text": "fait",
+   "start": 39.226,
+   "end": 39.342
+  },
+  {
+   "text": "penser",
+   "start": 39.342,
+   "end": 39.654
+  },
+  {
+   "text": "à",
+   "start": 39.654,
+   "end": 39.689
+  },
+  {
+   "text": "une",
+   "start": 39.689,
+   "end": 39.782
+  },
+  {
+   "text": "phlébite.",
+   "start": 39.782,
+   "end": 40.36
+  },
+  {
+   "text": "C'est",
+   "start": 41.275,
+   "end": 41.46
+  },
+  {
+   "text": "une",
+   "start": 41.46,
+   "end": 41.634
+  },
+  {
+   "text": "urgence !",
+   "start": 41.634,
+   "end": 42.224
+  },
+  {
+   "text": "On",
+   "start": 42.538,
+   "end": 42.676
+  },
+  {
+   "text": "alerte",
+   "start": 42.676,
+   "end": 43.047
+  },
+  {
+   "text": "tout",
+   "start": 43.047,
+   "end": 43.139
+  },
+  {
+   "text": "de",
+   "start": 43.139,
+   "end": 43.186
+  },
+  {
+   "text": "suite :",
+   "start": 43.186,
+   "end": 43.533
+  },
+  {
+   "text": "le",
+   "start": 43.857,
+   "end": 43.938
+  },
+  {
+   "text": "15,",
+   "start": 43.938,
+   "end": 44.32
+  },
+  {
+   "text": "ou",
+   "start": 44.609,
+   "end": 44.632
+  },
+  {
+   "text": "le",
+   "start": 44.633,
+   "end": 44.702
+  },
+  {
+   "text": "médecin",
+   "start": 44.702,
+   "end": 44.98
+  },
+  {
+   "text": "à",
+   "start": 44.98,
+   "end": 45.003
+  },
+  {
+   "text": "l'hôpital.",
+   "start": 45.003,
+   "end": 45.628
+  },
+  {
+   "text": "On",
+   "start": 45.948,
+   "end": 46.041
+  },
+  {
+   "text": "installe",
+   "start": 46.041,
+   "end": 46.365
+  },
+  {
+   "text": "le",
+   "start": 46.365,
+   "end": 46.434
+  },
+  {
+   "text": "patient",
+   "start": 46.434,
+   "end": 46.758
+  },
+  {
+   "text": "en",
+   "start": 46.758,
+   "end": 46.793
+  },
+  {
+   "text": "position",
+   "start": 46.793,
+   "end": 47.175
+  },
+  {
+   "text": "demi-assise,",
+   "start": 47.175,
+   "end": 47.87
+  },
+  {
+   "text": "au",
+   "start": 48.032,
+   "end": 48.055
+  },
+  {
+   "text": "repos,",
+   "start": 48.055,
+   "end": 48.483
+  },
+  {
+   "text": "et",
+   "start": 48.853,
+   "end": 48.9
+  },
+  {
+   "text": "on",
+   "start": 48.9,
+   "end": 48.946
+  },
+  {
+   "text": "surveille",
+   "start": 48.946,
+   "end": 49.235
+  },
+  {
+   "text": "sa",
+   "start": 49.235,
+   "end": 49.339
+  },
+  {
+   "text": "saturation,",
+   "start": 49.339,
+   "end": 49.953
+  },
+  {
+   "text": "son",
+   "start": 50.184,
+   "end": 50.335
+  },
+  {
+   "text": "pouls",
+   "start": 50.335,
+   "end": 50.532
+  },
+  {
+   "text": "et",
+   "start": 50.532,
+   "end": 50.589
+  },
+  {
+   "text": "sa",
+   "start": 50.589,
+   "end": 50.694
+  },
+  {
+   "text": "tension.",
+   "start": 50.694,
+   "end": 51.191
+  },
+  {
+   "text": "Pour",
+   "start": 52.141,
+   "end": 52.234
+  },
+  {
+   "text": "la",
+   "start": 52.234,
+   "end": 52.303
+  },
+  {
+   "text": "confirmer,",
+   "start": 52.303,
+   "end": 52.894
+  },
+  {
+   "text": "on",
+   "start": 53.218,
+   "end": 53.264
+  },
+  {
+   "text": "fait",
+   "start": 53.264,
+   "end": 53.403
+  },
+  {
+   "text": "un",
+   "start": 53.403,
+   "end": 53.472
+  },
+  {
+   "text": "scanner",
+   "start": 53.472,
+   "end": 53.797
+  },
+  {
+   "text": "des",
+   "start": 53.797,
+   "end": 53.878
+  },
+  {
+   "text": "poumons.",
+   "start": 53.878,
+   "end": 54.248
+  },
+  {
+   "text": "Le",
+   "start": 54.562,
+   "end": 54.724
+  },
+  {
+   "text": "traitement,",
+   "start": 54.724,
+   "end": 55.199
+  },
+  {
+   "text": "ce",
+   "start": 55.465,
+   "end": 55.581
+  },
+  {
+   "text": "sont",
+   "start": 55.581,
+   "end": 55.708
+  },
+  {
+   "text": "les",
+   "start": 55.708,
+   "end": 55.789
+  },
+  {
+   "text": "anticoagulants :",
+   "start": 55.789,
+   "end": 56.599
+  },
+  {
+   "text": "ils",
+   "start": 56.889,
+   "end": 56.97
+  },
+  {
+   "text": "empêchent",
+   "start": 56.97,
+   "end": 57.34
+  },
+  {
+   "text": "le",
+   "start": 57.34,
+   "end": 57.409
+  },
+  {
+   "text": "caillot",
+   "start": 57.41,
+   "end": 57.629
+  },
+  {
+   "text": "de",
+   "start": 57.629,
+   "end": 57.71
+  },
+  {
+   "text": "grossir.",
+   "start": 57.71,
+   "end": 58.301
+  },
+  {
+   "text": "Et",
+   "start": 58.615,
+   "end": 58.754
+  },
+  {
+   "text": "dans",
+   "start": 58.754,
+   "end": 58.87
+  },
+  {
+   "text": "les",
+   "start": 58.87,
+   "end": 58.939
+  },
+  {
+   "text": "cas",
+   "start": 58.939,
+   "end": 59.09
+  },
+  {
+   "text": "graves,",
+   "start": 59.09,
+   "end": 59.46
+  },
+  {
+   "text": "on",
+   "start": 59.726,
+   "end": 59.749
+  },
+  {
+   "text": "peut",
+   "start": 59.761,
+   "end": 59.877
+  },
+  {
+   "text": "dissoudre",
+   "start": 59.877,
+   "end": 60.282
+  },
+  {
+   "text": "le",
+   "start": 60.282,
+   "end": 60.374
+  },
+  {
+   "text": "caillot :",
+   "start": 60.374,
+   "end": 60.768
+  },
+  {
+   "text": "c'est",
+   "start": 61.046,
+   "end": 61.15
+  },
+  {
+   "text": "la",
+   "start": 61.15,
+   "end": 61.231
+  },
+  {
+   "text": "thrombolyse.",
+   "start": 61.231,
+   "end": 61.914
+  },
+  {
+   "text": "Les",
+   "start": 62.832,
+   "end": 62.959
+  },
+  {
+   "text": "facteurs",
+   "start": 62.959,
+   "end": 63.248
+  },
+  {
+   "text": "de",
+   "start": 63.249,
+   "end": 63.364
+  },
+  {
+   "text": "risque :",
+   "start": 63.364,
+   "end": 63.746
+  },
+  {
+   "text": "rester",
+   "start": 64.001,
+   "end": 64.255
+  },
+  {
+   "text": "longtemps",
+   "start": 64.255,
+   "end": 64.522
+  },
+  {
+   "text": "immobile,",
+   "start": 64.522,
+   "end": 65.008
+  },
+  {
+   "text": "alité,",
+   "start": 65.482,
+   "end": 65.934
+  },
+  {
+   "text": "plâtré,",
+   "start": 66.177,
+   "end": 66.663
+  },
+  {
+   "text": "ou",
+   "start": 66.941,
+   "end": 66.987
+  },
+  {
+   "text": "en",
+   "start": 66.987,
+   "end": 67.056
+  },
+  {
+   "text": "avion.",
+   "start": 67.056,
+   "end": 67.485
+  },
+  {
+   "text": "Une",
+   "start": 67.809,
+   "end": 67.959
+  },
+  {
+   "text": "opération",
+   "start": 67.959,
+   "end": 68.399
+  },
+  {
+   "text": "récente,",
+   "start": 68.399,
+   "end": 68.931
+  },
+  {
+   "text": "un",
+   "start": 69.174,
+   "end": 69.221
+  },
+  {
+   "text": "cancer,",
+   "start": 69.221,
+   "end": 69.753
+  },
+  {
+   "text": "la",
+   "start": 69.996,
+   "end": 70.054
+  },
+  {
+   "text": "pilule",
+   "start": 70.054,
+   "end": 70.39
+  },
+  {
+   "text": "ou",
+   "start": 70.39,
+   "end": 70.413
+  },
+  {
+   "text": "la",
+   "start": 70.413,
+   "end": 70.505
+  },
+  {
+   "text": "grossesse.",
+   "start": 70.505,
+   "end": 71.13
+  },
+  {
+   "text": "Après",
+   "start": 71.447,
+   "end": 71.748
+  },
+  {
+   "text": "une",
+   "start": 71.748,
+   "end": 71.817
+  },
+  {
+   "text": "opération,",
+   "start": 71.817,
+   "end": 72.419
+  },
+  {
+   "text": "on",
+   "start": 72.743,
+   "end": 72.778
+  },
+  {
+   "text": "fait",
+   "start": 72.778,
+   "end": 72.882
+  },
+  {
+   "text": "donc",
+   "start": 72.882,
+   "end": 73.09
+  },
+  {
+   "text": "marcher",
+   "start": 73.09,
+   "end": 73.345
+  },
+  {
+   "text": "les",
+   "start": 73.345,
+   "end": 73.414
+  },
+  {
+   "text": "patients",
+   "start": 73.414,
+   "end": 73.738
+  },
+  {
+   "text": "tôt,",
+   "start": 73.738,
+   "end": 74.005
+  },
+  {
+   "text": "avec",
+   "start": 74.271,
+   "end": 74.468
+  },
+  {
+   "text": "des",
+   "start": 74.468,
+   "end": 74.549
+  },
+  {
+   "text": "bas",
+   "start": 74.549,
+   "end": 74.664
+  },
+  {
+   "text": "de",
+   "start": 74.664,
+   "end": 74.734
+  },
+  {
+   "text": "contention.",
+   "start": 74.734,
+   "end": 75.336
+  },
+  {
+   "text": "Petit",
+   "start": 76.293,
+   "end": 76.513
+  },
+  {
+   "text": "récap !",
+   "start": 76.513,
+   "end": 77.045
+  },
+  {
+   "text": "L'embolie",
+   "start": 77.404,
+   "end": 77.786
+  },
+  {
+   "text": "pulmonaire :",
+   "start": 77.786,
+   "end": 78.353
+  },
+  {
+   "text": "un",
+   "start": 78.793,
+   "end": 78.839
+  },
+  {
+   "text": "caillot,",
+   "start": 78.839,
+   "end": 79.268
+  },
+  {
+   "text": "souvent",
+   "start": 79.499,
+   "end": 79.742
+  },
+  {
+   "text": "venu",
+   "start": 79.742,
+   "end": 79.95
+  },
+  {
+   "text": "d'une",
+   "start": 79.95,
+   "end": 80.101
+  },
+  {
+   "text": "phlébite,",
+   "start": 80.101,
+   "end": 80.622
+  },
+  {
+   "text": "bouche",
+   "start": 80.946,
+   "end": 81.154
+  },
+  {
+   "text": "une",
+   "start": 81.154,
+   "end": 81.235
+  },
+  {
+   "text": "artère",
+   "start": 81.235,
+   "end": 81.501
+  },
+  {
+   "text": "du",
+   "start": 81.501,
+   "end": 81.594
+  },
+  {
+   "text": "poumon.",
+   "start": 81.594,
+   "end": 81.953
+  },
+  {
+   "text": "Essoufflement",
+   "start": 82.277,
+   "end": 82.763
+  },
+  {
+   "text": "brutal,",
+   "start": 82.763,
+   "end": 83.318
+  },
+  {
+   "text": "douleur",
+   "start": 83.619,
+   "end": 83.862
+  },
+  {
+   "text": "dans",
+   "start": 83.862,
+   "end": 83.955
+  },
+  {
+   "text": "la",
+   "start": 83.955,
+   "end": 84.024
+  },
+  {
+   "text": "poitrine,",
+   "start": 84.025,
+   "end": 84.557
+  },
+  {
+   "text": "cœur",
+   "start": 84.8,
+   "end": 84.939
+  },
+  {
+   "text": "rapide :",
+   "start": 84.939,
+   "end": 85.379
+  },
+  {
+   "text": "on",
+   "start": 85.691,
+   "end": 85.714
+  },
+  {
+   "text": "alerte !",
+   "start": 85.714,
+   "end": 86.293
+  },
+  {
+   "text": "Traitement :",
+   "start": 86.617,
+   "end": 87.115
+  },
+  {
+   "text": "les",
+   "start": 87.427,
+   "end": 87.497
+  },
+  {
+   "text": "anticoagulants.",
+   "start": 87.497,
+   "end": 88.353
+  },
+  {
+   "text": "Et",
+   "start": 88.669,
+   "end": 88.797
+  },
+  {
+   "text": "pour",
+   "start": 88.797,
+   "end": 88.924
+  },
+  {
+   "text": "la",
+   "start": 88.924,
+   "end": 88.993
+  },
+  {
+   "text": "prévenir,",
+   "start": 88.993,
+   "end": 89.549
+  },
+  {
+   "text": "on",
+   "start": 89.723,
+   "end": 89.78
+  },
+  {
+   "text": "bouge !",
+   "start": 89.781,
+   "end": 90.174
+  }
+ ]
+}

@@ -24,6 +24,8 @@ import {ArretCardiaque, ArretCardiaqueProps} from './videos/arret-cardiaque/Arre
 import {TL as ACR_TL} from './videos/arret-cardiaque/timeline';
 import {Spo2, Spo2Props} from './videos/spo2/Spo2';
 import {TL as SPO_TL} from './videos/spo2/timeline';
+import {EmboliePulmonaire, EmboliePulmonaireProps} from './videos/embolie-pulmonaire/EmboliePulmonaire';
+import {TL as EP_TL} from './videos/embolie-pulmonaire/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -140,6 +142,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies Spo2Props}
+		/>
+		{/* 13 · C'est quoi une embolie pulmonaire */}
+		<Composition
+			id="Embolie-Pulmonaire"
+			component={EmboliePulmonaire}
+			durationInFrames={EP_TL.total}
+			fps={EP_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies EmboliePulmonaireProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition

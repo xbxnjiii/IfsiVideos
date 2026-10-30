@@ -69,16 +69,24 @@ export const camAt = (frame: number, keys: CamKey[], w: number, h: number) => {
 		const p = interpolate(frame, [k.at, k.at + (k.dur ?? 14)], [0, 1], ease);
 		cur = {s: cur.s + (k.s - cur.s) * p, x: cur.x + ((k.x ?? w / 2) - cur.x) * p, y: cur.y + ((k.y ?? h / 2) - cur.y) * p};
 	}
-	const s = Math.max(1, cur.s);
-	const x = Math.min(w - w / (2 * s), Math.max(w / (2 * s), cur.x));
-	const y = Math.min(h - h / (2 * s), Math.max(h / (2 * s), cur.y));
-	return {s, x, y, view: (px: number, py: number) => ({x: w / 2 + (px - x) * s, y: h / 2 + (py - y) * s})};
-};
+		return camClamp(cur, w, h);
+	};
 
-/** Fenêtre (w × h) dont le contenu est filmé par la caméra `keys` ; à poser dans un `Stage`, les pastilles par-dessus restent fixes. */
-export const ZoomCam: React.FC<{keys: CamKey[]; w: number; h: number; x?: number; y?: number; radius?: number; children: React.ReactNode}> = ({keys, w, h, x = 0, y = 0, radius = 50, children}) => {
+	/** Cadrage (zoom s ≥ 1, point visé x, y) ramené dans le contenu : jamais de vide au bord. */
+	export const camClamp = (c: {s: number; x: number; y: number}, w: number, h: number) => {
+		const s = Math.max(1, c.s);
+		const x = Math.min(w - w / (2 * s), Math.max(w / (2 * s), c.x));
+		const y = Math.min(h - h / (2 * s), Math.max(h / (2 * s), c.y));
+		return {s, x, y, view: (px: number, py: number) => ({x: w / 2 + (px - x) * s, y: h / 2 + (py - y) * s})};
+	};
+
+	/** Caméra pilotée frame par frame (ex. elle suit un caillot qui remonte) : (frame) → {s, x, y}. */
+	export type CamFollow = (frame: number) => {s: number; x: number; y: number};
+
+/** Fenêtre (w × h) dont le contenu est filmé par la caméra `keys` (clés, ou fonction qui suit un objet) ; à poser dans un `Stage`, les pastilles par-dessus restent fixes. */
+export const ZoomCam: React.FC<{keys: CamKey[] | CamFollow; w: number; h: number; x?: number; y?: number; radius?: number; children: React.ReactNode}> = ({keys, w, h, x = 0, y = 0, radius = 50, children}) => {
 	const frame = useCurrentFrame();
-	const c = camAt(frame, keys, w, h);
+	const c = typeof keys === 'function' ? camClamp(keys(frame), w, h) : camAt(frame, keys, w, h);
 	return (
 		<div style={{position: 'absolute', left: x, top: y, width: w, height: h, overflow: 'hidden', borderRadius: radius}}>
 			<div style={{position: 'absolute', left: 0, top: 0, width: w, height: h, transformOrigin: '0 0', transform: `translate(${w / 2}px, ${h / 2}px) scale(${c.s}) translate(${-c.x}px, ${-c.y}px)`}}>{children}</div>

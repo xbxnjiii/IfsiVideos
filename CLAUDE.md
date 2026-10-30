@@ -107,6 +107,14 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   `brain` (cerveau vu à travers le crâne + carotides), `anoxia`, `bloodless` + `flowPhase` (le sang s'arrête).
   Une définition se montre **dans le corps** (cœur, artères, cerveau du `Patient`), jamais d'organes « dans le vide ».
   Nombres collés (« 100 à 120 ») : les écrire en lettres (`{100|cent} à {120|cent vingt}`).
+- 3e modèle « pathologie / urgence » : `Embolie-Pulmonaire` (`src/videos/embolie-pulmonaire/`) — accroche : podium
+  « 3e cause de mort cardiovasculaire » (image 0), puis le caillot né dans le mollet remonte jusqu'au poumon, **la caméra
+  le suit** (`ZoomCam` avec une fonction `CamFollow` : (frame) → {s, x, y}) ; définition (embolie, phlébite), signes,
+  conduite à tenir, traitement (anticoagulants, thrombolyse via `ArteryZoom`), facteurs de risque + prévention.
+  Briques `embolism.tsx` : `FullBody` (le `Patient` + jambes, veine profonde, artères pulmonaires, caillot qui suit le
+  trajet `clotAt(t)`, zone du poumon privée de sang, mollet gonflé, bas de contention, douleurs), `SemiSitting` (lit
+  dont le dossier se relève à 45°), `ChestScan` ; `Patient` : `fade={false}` ; icônes lit, avion, plâtre, bistouri,
+  ruban, mollet. Dans une `ZoomCam`, le contenu doit tenir dans la fenêtre à zoom 1 (sinon il n'est jamais montré).
 
 ## Recette express (nouvelle vidéo de constante)
 

@@ -71,6 +71,8 @@ export type PatientProps = {
 	lungs?: number;
 	/** lèvres bleutées : cyanose, manque d'oxygène (0 → 1) */
 	cyanosis?: number;
+	/** bas du corps en fondu (par défaut) ; false pour poser des jambes dessous (`FullBody`) */
+	fade?: boolean;
 };
 
 const ARMS = ['M106 236 C92 290 80 340 76 400 C74 430 74 455 76 474', 'M294 236 C308 290 320 340 324 400 C326 430 326 455 324 474'];
@@ -85,7 +87,8 @@ const ARTERIES = [
 const CAROTIDS_LOW = ['M228 300 C230 262 218 236 216 206', 'M228 300 C222 262 186 236 184 206'];
 const CAROTIDS_UP = ['M216 206 C215 186 230 172 246 160 C258 150 258 120 246 92', 'M184 206 C183 186 170 172 154 160 C142 150 142 120 154 92'];
 const CAROTID_LOW_LEN = 98;
-const LUNGS = ['M188 238 C150 236 124 282 122 344 C120 384 142 396 172 388 C186 384 192 364 192 334 Z', 'M212 238 C250 236 276 282 278 344 C280 384 258 396 228 388 C214 384 208 364 208 334 Z'];
+/** poumons (vus de face, espace 400 × 560) */
+export const LUNGS = ['M188 238 C150 236 124 282 122 344 C120 384 142 396 172 388 C186 384 192 364 192 334 Z', 'M212 238 C250 236 276 282 278 344 C280 384 258 396 228 388 C214 384 208 364 208 334 Z'];
 const BRAIN = 'M200 40 C182 30 150 36 146 62 C142 86 162 100 186 98 C194 97 198 94 200 90 C202 94 206 97 214 98 C238 100 258 86 254 62 C250 36 218 30 200 40 Z';
 const GYRI = 'M162 56 Q172 46 180 58 Q186 66 176 72 M158 80 Q170 72 180 84 M238 56 Q228 46 220 58 Q214 66 224 72 M242 80 Q230 72 220 84 M188 44 Q194 54 186 62 M212 44 Q206 54 214 62';
 const NEURONS = [
@@ -119,7 +122,7 @@ const SkinLayers: React.FC<{flush: number; pale: number; children: (fill: string
 	</>
 );
 
-export const Patient: React.FC<PatientProps> = ({size = 360, mood = 'calme', breath = 0, heart = 0, beat = 0, flow = 0, cuff = 0, press = 0, flush = 0, pale = 0, sweat = 0, pain = 0, dizzy = 0, droop = 0, armL = 0, armR = 0, eyesClosed = 0, quiver = 0, brain = 0, anoxia = 0, bloodless = 0, flowPhase, lungs = 0, cyanosis = 0}) => {
+export const Patient: React.FC<PatientProps> = ({size = 360, mood = 'calme', breath = 0, heart = 0, beat = 0, flow = 0, cuff = 0, press = 0, flush = 0, pale = 0, sweat = 0, pain = 0, dizzy = 0, droop = 0, armL = 0, armR = 0, eyesClosed = 0, quiver = 0, brain = 0, anoxia = 0, bloodless = 0, flowPhase, lungs = 0, cyanosis = 0, fade = true}) => {
 	const frame = useCurrentFrame();
 	const id = useId().replace(/:/g, '');
 	const blink = Math.min(frame % 96 < 4 ? 0.15 : 1, 1 - 0.9 * eyesClosed);
@@ -151,7 +154,7 @@ export const Patient: React.FC<PatientProps> = ({size = 360, mood = 'calme', bre
 					<rect x={-200} y={0} width={800} height={VB.h} fill={`url(#fade${id})`} />
 				</mask>
 			</defs>
-			<g mask={`url(#m${id})`}>
+			<g mask={fade ? `url(#m${id})` : undefined}>
 				<g transform={`translate(200 ${380 - lift}) scale(${wide} 1) translate(-200 -380)`}>
 					{/* bras (contour, peau, manche courte), chacun pivote à l'épaule */}
 					{ARMS.map((d, k) => (

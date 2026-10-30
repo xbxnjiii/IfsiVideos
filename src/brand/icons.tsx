@@ -225,3 +225,44 @@ export const CyanosisIcon: React.FC<IP> = (p) => (
 		<path d="M16 52 C36 58 64 58 84 52" />
 	</Ico>
 );
+/** alité : lit */
+export const BedIcon: React.FC<IP> = (p) => (
+	<Ico {...p}>
+		<path d="M10 30 V80 M10 64 H90 V80 M10 52 H90" />
+		<circle cx="26" cy="44" r="8" fill={alpha(LPI.sky, 0.9)} />
+		<path d="M38 52 V40 H84 C88 40 90 44 90 52" fill={alpha(LPI.blue, 0.35)} />
+	</Ico>
+);
+/** en avion */
+export const PlaneIcon: React.FC<IP> = (p) => (
+	<Ico {...p}>
+		<path d="M50 8 C56 8 58 16 58 24 V40 L90 58 V66 L58 58 V76 L70 86 V92 L50 86 L30 92 V86 L42 76 V58 L10 66 V58 L42 40 V24 C42 16 44 8 50 8 Z" fill={alpha(LPI.sky, 0.9)} />
+	</Ico>
+);
+/** plâtré : jambe dans un plâtre */
+export const CastIcon: React.FC<IP> = (p) => (
+	<Ico {...p}>
+		<path d="M38 8 H58 V60 L78 74 C84 78 82 90 74 90 H40 C36 90 34 86 34 82 Z" fill={alpha(LPI.paper, 1)} />
+		<path d="M36 30 H58 M36 46 H58 M40 66 H62" strokeWidth={5} />
+	</Ico>
+);
+/** opération : bistouri */
+export const ScalpelIcon: React.FC<IP> = (p) => (
+	<Ico {...p}>
+		<path d="M14 86 L56 44" strokeWidth={10} />
+		<path d="M56 44 C68 30 80 18 90 12 C88 26 78 44 64 54 Z" fill={alpha(LPI.sky, 0.9)} />
+	</Ico>
+);
+/** cancer : ruban */
+export const RibbonIcon: React.FC<IP> = (p) => (
+	<Ico {...p}>
+		<path d="M50 50 C36 36 34 14 50 12 C66 14 64 36 50 50 Z" fill={alpha(LPI.pink, 0.6)} />
+		<path d="M50 50 L28 90 M50 50 L72 90" strokeWidth={9} />
+	</Ico>
+);
+/** mollet gonflé */
+export const LegIcon: React.FC<IP> = (p) => (
+	<Ico {...p}>
+		<path d="M38 6 V40 C24 50 24 70 36 80 L34 92 H64 L60 80 C70 66 68 46 58 38 V6" fill={alpha(LPI.pink, 0.6)} />
+	</Ico>
+);
