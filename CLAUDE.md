@@ -59,7 +59,8 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   **chiffres et symboles toujours en lettres** (`{98 %|quatre-vingt-dix-huit pour cent}`) : un « 98 %. » seul en début de
   partie a été lu **en anglais** (« ninety-eight percent ») par la voix multilingue ; contrôler la langue de chaque début
   de partie avec faster-whisper **sans forcer la langue** (`info.language` doit être `fr`) ;
-  « à jeun » est lu « à jeune » : écrire `{jeun|jun}` (entendu « AJ1 ») ;
+  « à jeun » est lu « à jeune » : écrire `{jeun|jun}` (entendu « AJ1 ») ; une phrase courte qui commence par un mot
+  aussi anglais (« Verdict : hypoglycémie ! ») part **en anglais** → « Le verdict ? Une hypoglycémie ! » ;
   en cas de doute, transcrire l'extrait avec faster-whisper (`pip install --break-system-packages faster-whisper`). Vérifier les mots clés dans voice.json (les nombres sont découpés à part).
 - Une voix enregistrée (ElevenLabs, studio) : `scripts/voice/align_voice.py` (Whisper, plus lent).
 
@@ -230,6 +231,10 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   --frames=<début>-<fin>` pour chaque portion où le texte ou le son change (un élément qui reste affiché jusqu'à la
   fin de sa scène compte jusqu'à la fin de la transition suivante) ; puis `npm run splice -- out/<vidéo>.mp4
   seg.mp4@<début> …` (image + son, durée inchangée, vérifie le nombre d'images).
+- **Corriger une phrase de la voix** (mot mal lu, passage en anglais) : `npm run voice -- voix/<n>-x.script.json
+  <épisode> --swap <partie> "ancienne phrase" "nouvelle"` (nouvelle prise dans le même créneau, même niveau, durée
+  inchangée ; affiche les images dont le son change) → recalculer de la fin du mot d'avant au silence suivant, puis
+  `npm run splice -- out/<vidéo>.mp4 seg.mp4@<début>`.
 - **Nouvelle accroche sur une vidéo déjà rendue** (fait pour la TA) : `npm run voice -- voix/<n>-x.script.json <épisode>
   --only intro` refait la voix de cette seule partie (même niveau) ; le reste du son est gardé à l'échantillon près et
   décalé d'un nombre entier d'images N (affiché). Réécrire `Hook` + les étapes de mascotte de l'accroche, puis rendre la

@@ -3,6 +3,8 @@
 Usage :
   python3 scripts/voice/tts_voix.py voix/<n>-<sujet>.script.json <episode>
   python3 scripts/voice/tts_voix.py voix/<n>-<sujet>.script.json <episode> --only intro   (retouche d'UNE partie)
+  python3 scripts/voice/tts_voix.py voix/<n>-<sujet>.script.json <episode> --swap intro "ancienne phrase" "nouvelle"
+      (retouche au mot près, dans le créneau de l'ancienne phrase : durée inchangée)
 
 Sorties : public/voix/<episode>/voix.wav (48 kHz, -15 LUFS) et src/videos/<episode>/voice.json
 (même format qu'align_voice.py : sections + mots). Le timing vient directement de la synthèse
@@ -186,8 +188,76 @@ def replace_part(parts, episode, pid, fps=30):
     print(f"{pid} : {secs[k]['start']:.2f} -> {secs[k]['end']:.2f} s ; la suite est décalée de {shift:+d} images ({d:+.2f} s)")
 
 
+def swap_phrase(script, parts, episode, pid, old_txt, new_txt, fps=30):
+    """Retouche au mot près : remplace la phrase `old_txt` de la partie `pid` par `new_txt`, DANS SON CRÉNEAU (entre le mot
+    d'avant et le mot d'après) : la durée et tout le reste du son ne bougent pas. Si la nouvelle prise est un peu plus
+    longue, elle est accélérée (≤ 10 %). Met à jour voice.json et le script, puis affiche les images à recalculer."""
+    sr = 48000
+    dst = os.path.join(ROOT, "src", "videos", episode, "voice.json")
+    wav_path = os.path.join(ROOT, "public", "voix", episode, "voix.wav")
+    data = json.load(open(dst))
+    sec = next(s for s in data["sections"] if s["id"] == pid)
+    words = data["words"]
+    idx = [i for i, w in enumerate(words) if sec["start"] - 1e-6 <= w["start"] <= sec["end"] + 1e-6]
+    want = [norm(t) for t in script_tokens(old_txt)]
+    seq = [norm(words[i]["text"]) for i in idx]
+    k = next((j for j in range(len(seq) - len(want) + 1) if seq[j : j + len(want)] == want), None)
+    if k is None:
+        raise SystemExit(f"« {old_txt} » introuvable dans la partie {pid}")
+    a, b = idx[k], idx[k + len(want) - 1]
+    slot_a = words[a - 1]["end"] + 0.15 if a > 0 else words[a]["start"] - 0.05
+    slot_b = words[b + 1]["start"] - 0.12 if b + 1 < len(words) else words[b]["end"] + 0.3
+    p = next(x for x in parts if x["id"] == pid)
+    tmp = tempfile.mkdtemp()
+    spoken = re.sub(r"\{([^|}]*)\|([^}]*)\}", r"\2", new_txt)
+    heard = split_groups(asyncio.run(synth(spoken, f"{tmp}/p.mp3", p.get("rate", RATE))))
+    toks = script_tokens(new_txt)
+    times = align(toks, heard)
+    s0, s1 = times[0][0], times[-1][1]
+    tempo = max(1.0, (s1 - s0) / (slot_b - slot_a))
+    if tempo > 1.1:
+        raise SystemExit(f"la nouvelle phrase est trop longue pour le créneau ({s1 - s0:.2f} s pour {slot_b - slot_a:.2f} s)")
+    pad0, pad1 = 0.03, 0.05
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-ss", f"{max(0, s0 - pad0):.3f}", "-to", f"{s1 + pad1:.3f}", "-i", f"{tmp}/p.mp3", "-af", f"highpass=f=70,atempo={tempo:.4f}", "-ar", str(sr), "-ac", "1", f"{tmp}/raw.wav"], check=True)
+    gain = loudness(wav_path) - loudness(f"{tmp}/raw.wav")
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", f"{tmp}/raw.wav", "-af", f"volume={gain:.2f}dB,alimiter=limit=0.84:level=false,afade=t=in:d=0.02,areverse,afade=t=in:d=0.03,areverse", "-c:a", "pcm_s16le", f"{tmp}/p.wav"], check=True)
+    with wave.open(f"{tmp}/p.wav") as w:
+        clip = w.readframes(w.getnframes())
+    with wave.open(wav_path) as w:
+        pcm = bytearray(w.readframes(w.getnframes()))
+    # la phrase commence au même endroit que l'ancienne si elle tient, sinon plus tôt dans le créneau
+    t0 = max(slot_a, min(words[a]["start"], slot_b - (s1 - s0) / tempo))
+    za, zb = int(slot_a * sr) * 2, int(slot_b * sr) * 2
+    pcm[za:zb] = bytes(zb - za)
+    c0 = int(round((t0 - pad0 / tempo) * sr)) * 2
+    pcm[c0 : c0 + len(clip)] = clip
+    with wave.open(wav_path, "wb") as w:
+        w.setnchannels(1)
+        w.setsampwidth(2)
+        w.setframerate(sr)
+        w.writeframes(bytes(pcm))
+    new = [{"text": t, "start": round(t0 + (s - s0) / tempo, 3), "end": round(t0 + (e - s0) / tempo, 3)} for t, (s, e) in zip(toks, times)]
+    data["words"] = words[:a] + new + words[b + 1 :]
+    if a == idx[0]:
+        sec["start"] = new[0]["start"]
+    if b == idx[-1]:
+        sec["end"] = new[-1]["end"]
+    json.dump(data, open(dst, "w"), ensure_ascii=False, indent=1)
+    if old_txt in p["text"]:
+        p["text"] = p["text"].replace(old_txt, new_txt)
+        open(script, "w").write("[\n" + ",\n".join("\t" + json.dumps(x, ensure_ascii=False) for x in parts) + "\n]\n")
+    off = 8 / fps  # décalage de la voix dans la vidéo (Episode)
+    print(f"« {new_txt} » : {new[0]['start'] + off:.2f} -> {new[-1]['end'] + off:.2f} s (vidéo), accéléré ×{tempo:.2f}")
+    print(f"son changé de l'image {int((slot_a + off) * fps)} à {int((slot_b + off) * fps) + 1} : recalculer ces images (+ les animations calées sur ces mots), puis npm run splice")
+
+
 def main():
     args = sys.argv[1:]
+    if "--swap" in args:
+        i = args.index("--swap")
+        pid, old_txt, new_txt = args[i + 1 : i + 4]
+        script, episode = args[0], args[1]
+        return swap_phrase(script, json.load(open(script)), episode, pid, old_txt, new_txt)
     only = None
     if "--only" in args:
         i = args.index("--only")
