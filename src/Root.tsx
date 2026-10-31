@@ -28,6 +28,8 @@ import {EmboliePulmonaire, EmboliePulmonaireProps} from './videos/embolie-pulmon
 import {TL as EP_TL} from './videos/embolie-pulmonaire/timeline';
 import {AvcHistoire, AvcHistoireProps} from './videos/avc-histoire/AvcHistoire';
 import {TL as AVCH_TL} from './videos/avc-histoire/timeline';
+import {Plaies, PlaiesProps} from './videos/plaies/Plaies';
+import {TL as PL_TL} from './videos/plaies/timeline';
 import {Bpco, BpcoProps} from './videos/bpco/Bpco';
 import {TL as BPCO_TL} from './videos/bpco/timeline';
 
@@ -176,6 +178,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies BpcoProps}
+		/>
+		{/* 17 · Les différents types de plaies */}
+		<Composition
+			id="Plaies"
+			component={Plaies}
+			durationInFrames={PL_TL.total}
+			fps={PL_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies PlaiesProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition

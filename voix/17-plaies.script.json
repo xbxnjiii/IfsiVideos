@@ -1,0 +1,11 @@
+[
+	{"id": "intro", "text": "Une coupure de papier ? Guérie en trois jours. Une escarre ? Parfois des mois. Pourtant, ce sont deux plaies. Alors, quels sont les différents types de plaies ?"},
+	{"id": "def", "text": "Une plaie, c'est une ouverture de la peau : la barrière contre les microbes est rompue. Et plus elle est profonde, plus elle touche de couches : l'épiderme, le derme, la graisse, le muscle… jusqu'à l'os."},
+	{"id": "familles", "text": "Il existe deux grandes familles. Les plaies aiguës guérissent en quelques jours à quelques semaines. Les plaies chroniques, elles, ne sont toujours pas fermées après quatre à six semaines."},
+	{"id": "aigues", "text": "Les plaies aiguës, d'abord. L'excoriation : une éraflure, en surface. La coupure, aux bords nets. La lacération : une déchirure, aux bords irréguliers. La piqûre : petite, mais profonde. La morsure, pleine de microbes. Et la plaie chirurgicale, faite au bloc."},
+	{"id": "brulures", "text": "Les brûlures aussi sont des plaies aiguës. Premier degré : une rougeur douloureuse, comme un coup de soleil. Deuxième degré : des cloques, appelées phlyctènes. Troisième degré : la peau est détruite… et ne fait plus mal, car les nerfs sont brûlés."},
+	{"id": "chroniques", "text": "Les plaies chroniques, maintenant. L'escarre : la peau est écrasée entre l'os et le matelas, souvent au sacrum ou aux talons. L'ulcère de jambe, quand le sang circule mal. Et le pied diabétique : une petite plaie qu'on ne sent pas… et qui s'aggrave en silence."},
+	{"id": "escarre", "text": "L'escarre se classe en quatre stades. {Stade 1|Stade un} : une rougeur qui ne blanchit pas quand on appuie. {Stade 2|Stade deux} : une cloque, ou la peau abîmée. {Stade 3|Stade trois} : un creux jusqu'à la graisse. {Stade 4|Stade quatre} : jusqu'au muscle, voire l'os."},
+	{"id": "gravite", "text": "Enfin, une plaie est grave si elle est profonde, étendue, souillée, c'est-à-dire sale, ou sur une zone à risque : le visage, la main, une articulation. Là, on demande un avis médical. Et on vérifie toujours le vaccin contre le tétanos."},
+	{"id": "outro", "text": "Petit récap ! Une plaie, c'est une ouverture de la peau. Aiguë, elle guérit vite. Chronique, elle traîne : escarre, ulcère, pied diabétique. Et on cherche toujours les signes de gravité."}
+]

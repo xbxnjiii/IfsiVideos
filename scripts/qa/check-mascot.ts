@@ -28,6 +28,8 @@ import * as ep from '../../src/videos/embolie-pulmonaire/mascot';
 import * as epTL from '../../src/videos/embolie-pulmonaire/timeline';
 import * as avch from '../../src/videos/avc-histoire/mascot';
 import * as avchTL from '../../src/videos/avc-histoire/timeline';
+import * as pl from '../../src/videos/plaies/mascot';
+import * as plTL from '../../src/videos/plaies/timeline';
 import * as bpco from '../../src/videos/bpco/mascot';
 import * as bpcoTL from '../../src/videos/bpco/timeline';
 
@@ -45,6 +47,7 @@ const VIDEOS: Record<string, [typeof constantes.MASCOT, typeof constantesTL.TL]>
 	spo2: [spo.MASCOT, spoTL.TL],
 	'embolie-pulmonaire': [ep.MASCOT, epTL.TL],
 	'avc-histoire': [avch.MASCOT, avchTL.TL],
+	plaies: [pl.MASCOT, plTL.TL],
 	bpco: [bpco.MASCOT, bpcoTL.TL],
 };
 const name = process.argv[2] ?? 'constantes';

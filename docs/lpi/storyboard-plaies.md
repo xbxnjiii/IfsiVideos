@@ -1,0 +1,22 @@
+# Storyboard — « Les différents types de plaies » (La Petite IDE)
+
+≈ 1 min 57 · 1080 × 1920 · composition `Plaies` · code : `src/videos/plaies/`.
+Format normal (notion / classification) avec la dynamique des vidéos pathologie : accroche-contraste dès l'image 0,
+tout se passe dans une **coupe de peau** (`SkinBlock`, `src/brand/wound.tsx`) que la caméra suit en profondeur
+(`ZoomCam`). Voix de la marque (+8 %), texte exact : [voix/17-plaies.script.json](../../voix/17-plaies.script.json).
+Couleurs : la plaie est rose, la nécrose et la peau carbonisée sont bleu nuit (pas de rouge, jaune ni noir).
+
+| Partie | À l'écran | Mascotte (mot → image) |
+|--------|-----------|------------------------|
+| Accroche | image 0 : « **3 jours**… ou des **mois** ? », deux cartes : un doigt avec une coupure de papier (J 0), un talon avec une escarre (?) · « coupure » : la caméra s'approche, la coupure se referme J + 1… J + 3 ✓ · « escarre » : la caméra passe au talon, 1 mois, 2 mois, 3 mois… · « Pourtant… **deux plaies**. » (tampons « Plaie ») · « Les différents **types** de **plaies** ? » : 6 pastilles (coupure, brûlure, morsure, piqûre, escarre, ulcère) | aïe · OK · inquiète · fatiguée · attention · question → plonge dans la peau |
+| Définition | coupe de peau intacte, les microbes tournent au-dessus (« la peau = une barrière ») · « ouverture » : la peau s'ouvre, « barrière rompue : les microbes entrent » · carte **Plaie** (une ouverture de la peau) · la plaie s'enfonce mot par mot, la caméra descend : épiderme › derme › graisse › muscle › os (chaîne sous la carte), puis toutes les couches nommées | explique · stressée · loupe · surprise → sort à gauche |
+| Deux familles | ligne du temps en semaines, zone 4 – 6 semaines : la plaie **aiguë** avance et se referme vite (✓) ; la **chronique** dépasse la zone, « toujours ouverte » · cartes **Plaie aiguë** (guérit en quelques jours à quelques semaines), **Plaie chronique** (pas fermée après 4 à 6 semaines) | OK · fatiguée · important → saute par-dessus la vague |
+| Plaies aiguës | la même coupe de peau, l'objet blesse : graviers → **excoriation** (éraflure, en surface) · couteau → **coupure** (bords nets) · déchirure → **lacération** (bords irréguliers) · clou → **piqûre** (gros plan : minuscule… la caméra recule : profonde) · dents → **morsure**, les microbes entrent (risque d'infection) · bistouri → **plaie chirurgicale**, refermée par des points · 6 pastilles | aïe · surprise · stressée · attention · alerte · masque · validé → traverse en courant |
+| Brûlures | flamme au-dessus de la coupe, nerfs visibles · **1er degré** : l'épiderme rougit, les nerfs « crient » (soleil : coup de soleil) · **2e degré** : la peau se soulève en cloque (phlyctène) · **3e degré** : toute l'épaisseur carbonisée (bleu nuit), « ne fait plus mal… nerfs détruits » (gros plan des nerfs coupés) · 3 cartes | coup de chaud · surprise · alerte · explique → plonge |
+| Plaies chroniques | patient couché, points d'appui · plongée sur le sacrum : **schéma** os (sacrum) / peau et graisse / matelas, la peau s'écrase, les globules ne passent plus, une zone meurt · retour : sacrum · talons · jambe de profil : varices, le sang stagne, **ulcère** à la cheville · le pied : petite plaie sous le pied, la douleur ne remonte plus (✕), elle grandit « en silence » · pictos diabète · 3 pastilles | dort · mal au dos · inquiète · réfléchit · **chut** → s'envole |
+| 4 stades d'escarre | coupe de peau : stade 1 rougeur, le doigt appuie, « elle reste rouge » · stade 2 cloque puis peau abîmée · stade 3 creux jusqu'à la graisse · stade 4 muscle puis os (couches nommées) · rangée des 4 stades qui s'allument | présente · regardez · inquiète · stressée · alerte → saute par-dessus la vague |
+| Signes de gravité | à gauche la plaie devient **profonde**, **étendue**, **souillée** (microbes, saleté) ; à droite le patient et les **zones à risque** (gros plans visage, mains, coudes) · 4 pastilles · tampon « Avis médical ! » · « Tétanos : vaccin à jour ? » coché | loupe · gênée · **se cache le visage** sur « visage » · stéthoscope · seringue → sort à gauche |
+| Récap rapide | une plaie · aiguë (guérit vite) · chronique (escarre · ulcère · pied diabétique) · gravité · confettis | une pose par ligne · bravo → repart en courant |
+
+Transitions : plongée dans la peau · panoramique gauche · vague · rideau · plongée · panoramique haut · vague ·
+panoramique gauche · plongée vers le logo.

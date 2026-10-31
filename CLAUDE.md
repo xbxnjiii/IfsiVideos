@@ -126,6 +126,16 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   Sigle en début de partie : « La {BPCO|B P C O}, c'est la… » (un « B P C O : bronchopneumopathie… » seul a été lu
   avec un accent étranger : détecté par la vérification de langue).
 
+- Modèle « classification » : `Plaies` (`src/videos/plaies/`, « Les différents types de plaies ») — accroche-contraste dès
+  l'image 0 (« 3 jours… ou des mois ? » : coupure de papier / escarre du talon), puis tout se passe dans une **coupe de
+  peau** que la caméra suit en profondeur. Briques `wound.tsx` : `SkinBlock` (épiderme, derme, hypoderme, muscle, os ;
+  plaie `shape` éraflure / coupure / déchirure / piqûre / morsure / cratère, `depth` 0 → 5, sutures, microbes, saleté,
+  nerfs + douleur, brûlure 0 → 3, cloque, rougeur + doigt qui appuie) + `SkinLabels`, `WoundTool` (graviers, couteau,
+  déchirure, clou, dents, bistouri), `Squeeze` (escarre entre l'os et le matelas), `LyingBody` (points d'appui),
+  `LowerLeg` (varices, ulcère, pied diabétique, escarre du talon), `Finger` (coupure de papier), pictos de gravité.
+  Plaie = rose, nécrose / peau carbonisée = bleu nuit (pas de rouge, jaune ni noir). Pour un doigt ou un objet au-dessus
+  de la coupe, laisser de la place au-dessus de la peau (la caméra ne montre rien au-dessus du contenu).
+
 ## Format « histoire » (mystérieux, essai `AVC-Histoire`, `src/videos/avc-histoire/`)
 
 - Pour un accident ou une maladie racontés comme une histoire (pas un paramètre, pas un soin) : ≈ 1 min 20, un patient
