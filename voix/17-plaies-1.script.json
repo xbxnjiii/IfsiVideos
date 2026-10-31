@@ -1,0 +1,9 @@
+[
+	{"id": "intro", "rate": "+0%", "text": "Une coupure de papier ? Guérie en trois jours. Une escarre ? Parfois des mois. Et pourtant… ce sont deux plaies."},
+	{"id": "serie", "rate": "+0%", "text": "Nous voilà dans la partie un de notre série sur les plaies ! Aujourd'hui, on pose les bases."},
+	{"id": "def", "rate": "+0%", "text": "Une plaie, c'est une ouverture de la peau. Or, la peau est une barrière : elle empêche les microbes d'entrer. Quand elle s'ouvre, ils peuvent passer… et la plaie peut s'infecter."},
+	{"id": "couches", "rate": "+0%", "text": "La peau a plusieurs couches. En surface, l'épiderme. Dessous, le derme, avec les vaisseaux et les nerfs. Puis l'hypoderme : la graisse. Plus la plaie est profonde, plus elle traverse de couches… jusqu'au muscle, parfois jusqu'à l'os."},
+	{"id": "familles", "rate": "+0%", "text": "On classe les plaies en deux familles. Les plaies aiguës guérissent normalement, en quelques jours à quelques semaines. Les plaies chroniques, elles, ne sont toujours pas refermées après quatre à six semaines."},
+	{"id": "gravite", "rate": "+0%", "text": "Et une plaie peut être simple… ou grave. Elle est grave si elle est profonde, étendue, souillée, c'est-à-dire sale, ou sur une zone à risque : le visage, la main, une articulation. Là, on demande un avis médical. Et on vérifie toujours le vaccin contre le tétanos."},
+	{"id": "outro", "rate": "+0%", "text": "Petit récap : une plaie, c'est une ouverture de la peau. Elle est aiguë ou chronique, simple ou grave. Dans la partie deux : les plaies aiguës… et la brûlure qui ne fait pas mal. Pourtant, c'est la plus grave !"}
+]

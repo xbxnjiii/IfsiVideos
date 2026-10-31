@@ -126,15 +126,29 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   Sigle en début de partie : « La {BPCO|B P C O}, c'est la… » (un « B P C O : bronchopneumopathie… » seul a été lu
   avec un accent étranger : détecté par la vérification de langue).
 
-- Modèle « classification » : `Plaies` (`src/videos/plaies/`, « Les différents types de plaies ») — accroche-contraste dès
-  l'image 0 (« 3 jours… ou des mois ? » : coupure de papier / escarre du talon), puis tout se passe dans une **coupe de
-  peau** que la caméra suit en profondeur. Briques `wound.tsx` : `SkinBlock` (épiderme, derme, hypoderme, muscle, os ;
-  plaie `shape` éraflure / coupure / déchirure / piqûre / morsure / cratère, `depth` 0 → 5, sutures, microbes, saleté,
-  nerfs + douleur, brûlure 0 → 3, cloque, rougeur + doigt qui appuie) + `SkinLabels`, `WoundTool` (graviers, couteau,
-  déchirure, clou, dents, bistouri), `Squeeze` (escarre entre l'os et le matelas), `LyingBody` (points d'appui),
-  `LowerLeg` (varices, ulcère, pied diabétique, escarre du talon), `Finger` (coupure de papier), pictos de gravité.
-  Plaie = rose, nécrose / peau carbonisée = bleu nuit (pas de rouge, jaune ni noir). Pour un doigt ou un objet au-dessus
-  de la coupe, laisser de la place au-dessus de la peau (la caméra ne montre rien au-dessus du contenu).
+## Format « série » (demandé : un sujet trop long = plusieurs parties, modèle `Plaies-1/2/3`)
+
+- Un sujet riche se découpe en **parties de ≈ 1 min 10 – 1 min 30** (jamais < 1 min) : `src/videos/plaies-1/`, `-2/`,
+  `-3/` (« Les plaies » : les bases · les plaies aiguës · les plaies chroniques), storyboard `docs/lpi/storyboard-plaies-serie.md`.
+- **Rythme d'apprentissage** (demandé : « on apprend ou on réapprend la notion ») : voix `"rate": "+0%"` (au lieu de +8 %),
+  une notion par scène, chaque terme technique suivi tout de suite d'une explication simple (« l'excoriation : c'est une
+  éraflure »), le visuel montre ce que dit la phrase, peu de mots par seconde.
+- Chaque partie : **accroche propre** (elle doit tenir seule : « 3 jours… ou des mois ? », « Ce petit trou… plus
+  dangereux qu'une grande coupure ? », « Cette plaie… ne fait pas mal ») → **annonce de la partie** juste après
+  (« Nous voilà dans la partie un de notre série sur les plaies ! ») avec la carte `SeriesParts` (`src/brand/series.tsx` :
+  parties vues cochées, partie en cours « ICI », suivantes avec cadenas) → notions → récap + carte `NextUp` « À suivre ·
+  partie N » avec une phrase qui donne envie (« … et la brûlure qui ne fait pas mal ») ; dernière partie : « série
+  terminée ». Étiquette `SeriesTag` (« LES PLAIES 1/3 ») sur la ligne du sur-titre pendant les notions.
+- Briques plaies `wound.tsx` : `SkinBlock` / `SkinAt` + `skinPt` (coupe de peau : épiderme, derme, hypoderme, muscle,
+  os ; plaie `shape` éraflure / coupure / déchirure / piqûre / morsure / cratère, `depth` 0 → 5, sutures, microbes,
+  saleté, nerfs + douleur, brûlure 0 → 3, cloque, rougeur + doigt qui appuie), `SkinLabels`, `WoundTool` (graviers qui
+  frottent, couteau, déchirure, clou, dents, bistouri), `Squeeze` (escarre entre l'os et le matelas, étiquetée),
+  `LyingBody` (points d'appui), `LowerLeg` (varices, ulcère, pied diabétique, escarre du talon), `Finger`, pictos de
+  gravité ; `StagePill` (pastille dans le socle) exportée par `episode.tsx`. Plaie = rose, nécrose / peau carbonisée =
+  bleu nuit (pas de rouge, jaune ni noir). Laisser de la place au-dessus de la peau pour un doigt ou un objet (la caméra
+  ne montre rien au-dessus du contenu).
+- Voix : « Cette plaie ne fait pas mal » est entendu « Cette **plaine** fait pas mal » → « Cette plaie… ne fait pas mal »
+  (une pause casse la liaison) ; relire l'accroche au modèle `medium` de faster-whisper.
 
 ## Format « histoire » (mystérieux, essai `AVC-Histoire`, `src/videos/avc-histoire/`)
 

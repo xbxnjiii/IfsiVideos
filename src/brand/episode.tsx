@@ -96,6 +96,19 @@ export const ZoomCam: React.FC<{keys: CamKey[] | CamFollow; w: number; h: number
 
 /* ───────────── mise en page (1080 × 1920, interface TikTok : rien d'important au-dessus de 150 ni sous 1480) ───────────── */
 
+/** Pastille posée dans le socle (bas gauche par défaut), visible de `from` à `to`. */
+export const StagePill: React.FC<{from: number; to?: number; children: React.ReactNode; color?: string; x?: number; y?: number}> = ({from, to = 1e9, children, color, x = 30, y = 460}) => {
+	const frame = useCurrentFrame();
+	if (frame < from || frame >= to) return null;
+	return (
+		<div style={{position: 'absolute', left: x, top: y}}>
+			<Pill at={from} size={34} color={color}>
+				{children}
+			</Pill>
+		</div>
+	);
+};
+
 export const LAY = {kickerY: 236, titleY: 282, stageY: 440, stageH: 540, slotY: 1010};
 /** centre vertical du socle : là où les termes « claquent » */
 export const SLAM_Y = LAY.stageY + LAY.stageH / 2;

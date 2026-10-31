@@ -1,0 +1,1053 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 67.884,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.05,
+   "end": 3.95
+  },
+  {
+   "id": "serie",
+   "start": 4.958,
+   "end": 12.245
+  },
+  {
+   "id": "escarre",
+   "start": 13.198,
+   "end": 24.935
+  },
+  {
+   "id": "stades",
+   "start": 25.892,
+   "end": 39.179
+  },
+  {
+   "id": "ulcere",
+   "start": 40.122,
+   "end": 47.885
+  },
+  {
+   "id": "pied",
+   "start": 48.832,
+   "end": 59.207
+  },
+  {
+   "id": "outro",
+   "start": 60.158,
+   "end": 67.533
+  }
+ ],
+ "words": [
+  {
+   "text": "Cette",
+   "start": 0.05,
+   "end": 0.362
+  },
+  {
+   "text": "plaie…",
+   "start": 0.362,
+   "end": 0.65
+  },
+  {
+   "text": "ne",
+   "start": 0.988,
+   "end": 1.062
+  },
+  {
+   "text": "fait",
+   "start": 1.062,
+   "end": 1.163
+  },
+  {
+   "text": "pas",
+   "start": 1.163,
+   "end": 1.3
+  },
+  {
+   "text": "mal.",
+   "start": 1.3,
+   "end": 1.7
+  },
+  {
+   "text": "Et",
+   "start": 2.038,
+   "end": 2.188
+  },
+  {
+   "text": "c'est",
+   "start": 2.188,
+   "end": 2.325
+  },
+  {
+   "text": "justement",
+   "start": 2.325,
+   "end": 2.712
+  },
+  {
+   "text": "ça,",
+   "start": 2.712,
+   "end": 3.013
+  },
+  {
+   "text": "le",
+   "start": 3.3,
+   "end": 3.362
+  },
+  {
+   "text": "problème.",
+   "start": 3.362,
+   "end": 3.95
+  },
+  {
+   "text": "Nous",
+   "start": 4.958,
+   "end": 5.083
+  },
+  {
+   "text": "voilà",
+   "start": 5.083,
+   "end": 5.308
+  },
+  {
+   "text": "dans",
+   "start": 5.308,
+   "end": 5.407
+  },
+  {
+   "text": "la",
+   "start": 5.407,
+   "end": 5.495
+  },
+  {
+   "text": "partie",
+   "start": 5.495,
+   "end": 5.782
+  },
+  {
+   "text": "trois,",
+   "start": 5.782,
+   "end": 6.133
+  },
+  {
+   "text": "la",
+   "start": 6.42,
+   "end": 6.482
+  },
+  {
+   "text": "dernière",
+   "start": 6.482,
+   "end": 6.82
+  },
+  {
+   "text": "de",
+   "start": 6.82,
+   "end": 6.908
+  },
+  {
+   "text": "notre",
+   "start": 6.908,
+   "end": 7.183
+  },
+  {
+   "text": "série",
+   "start": 7.183,
+   "end": 7.433
+  },
+  {
+   "text": "sur",
+   "start": 7.433,
+   "end": 7.558
+  },
+  {
+   "text": "les",
+   "start": 7.558,
+   "end": 7.645
+  },
+  {
+   "text": "plaies :",
+   "start": 7.645,
+   "end": 7.92
+  },
+  {
+   "text": "les",
+   "start": 8.22,
+   "end": 8.295
+  },
+  {
+   "text": "plaies",
+   "start": 8.295,
+   "end": 8.47
+  },
+  {
+   "text": "chroniques.",
+   "start": 8.47,
+   "end": 9.107
+  },
+  {
+   "text": "Celles",
+   "start": 9.457,
+   "end": 9.758
+  },
+  {
+   "text": "qui",
+   "start": 9.758,
+   "end": 9.87
+  },
+  {
+   "text": "ne",
+   "start": 9.87,
+   "end": 9.957
+  },
+  {
+   "text": "sont",
+   "start": 9.957,
+   "end": 10.082
+  },
+  {
+   "text": "toujours",
+   "start": 10.082,
+   "end": 10.37
+  },
+  {
+   "text": "pas",
+   "start": 10.37,
+   "end": 10.495
+  },
+  {
+   "text": "refermées",
+   "start": 10.495,
+   "end": 11.008
+  },
+  {
+   "text": "après",
+   "start": 11.008,
+   "end": 11.282
+  },
+  {
+   "text": "quatre",
+   "start": 11.282,
+   "end": 11.532
+  },
+  {
+   "text": "à",
+   "start": 11.532,
+   "end": 11.57
+  },
+  {
+   "text": "six",
+   "start": 11.57,
+   "end": 11.732
+  },
+  {
+   "text": "semaines.",
+   "start": 11.732,
+   "end": 12.245
+  },
+  {
+   "text": "La",
+   "start": 13.198,
+   "end": 13.373
+  },
+  {
+   "text": "plus",
+   "start": 13.373,
+   "end": 13.535
+  },
+  {
+   "text": "connue :",
+   "start": 13.535,
+   "end": 13.948
+  },
+  {
+   "text": "l'escarre.",
+   "start": 14.348,
+   "end": 14.986
+  },
+  {
+   "text": "Quand",
+   "start": 15.323,
+   "end": 15.435
+  },
+  {
+   "text": "on",
+   "start": 15.435,
+   "end": 15.573
+  },
+  {
+   "text": "reste",
+   "start": 15.573,
+   "end": 15.798
+  },
+  {
+   "text": "allongé",
+   "start": 15.798,
+   "end": 16.148
+  },
+  {
+   "text": "longtemps",
+   "start": 16.148,
+   "end": 16.46
+  },
+  {
+   "text": "sans",
+   "start": 16.46,
+   "end": 16.66
+  },
+  {
+   "text": "bouger,",
+   "start": 16.66,
+   "end": 17.061
+  },
+  {
+   "text": "la",
+   "start": 17.398,
+   "end": 17.473
+  },
+  {
+   "text": "peau",
+   "start": 17.473,
+   "end": 17.636
+  },
+  {
+   "text": "est",
+   "start": 17.636,
+   "end": 17.673
+  },
+  {
+   "text": "écrasée",
+   "start": 17.673,
+   "end": 18.173
+  },
+  {
+   "text": "entre",
+   "start": 18.173,
+   "end": 18.435
+  },
+  {
+   "text": "l'os",
+   "start": 18.435,
+   "end": 18.71
+  },
+  {
+   "text": "et",
+   "start": 18.71,
+   "end": 18.736
+  },
+  {
+   "text": "le",
+   "start": 18.736,
+   "end": 18.81
+  },
+  {
+   "text": "matelas.",
+   "start": 18.81,
+   "end": 19.261
+  },
+  {
+   "text": "Le",
+   "start": 19.598,
+   "end": 19.798
+  },
+  {
+   "text": "sang",
+   "start": 19.798,
+   "end": 19.96
+  },
+  {
+   "text": "ne",
+   "start": 19.96,
+   "end": 20.048
+  },
+  {
+   "text": "passe",
+   "start": 20.048,
+   "end": 20.285
+  },
+  {
+   "text": "plus…",
+   "start": 20.285,
+   "end": 20.573
+  },
+  {
+   "text": "et",
+   "start": 20.898,
+   "end": 20.923
+  },
+  {
+   "text": "la",
+   "start": 20.923,
+   "end": 21.023
+  },
+  {
+   "text": "peau",
+   "start": 21.023,
+   "end": 21.185
+  },
+  {
+   "text": "meurt.",
+   "start": 21.185,
+   "end": 21.573
+  },
+  {
+   "text": "On",
+   "start": 21.91,
+   "end": 22.023
+  },
+  {
+   "text": "la",
+   "start": 22.023,
+   "end": 22.123
+  },
+  {
+   "text": "trouve",
+   "start": 22.123,
+   "end": 22.386
+  },
+  {
+   "text": "surtout",
+   "start": 22.386,
+   "end": 22.673
+  },
+  {
+   "text": "au",
+   "start": 22.673,
+   "end": 22.736
+  },
+  {
+   "text": "sacrum,",
+   "start": 22.736,
+   "end": 23.285
+  },
+  {
+   "text": "en",
+   "start": 23.573,
+   "end": 23.611
+  },
+  {
+   "text": "bas",
+   "start": 23.611,
+   "end": 23.723
+  },
+  {
+   "text": "du",
+   "start": 23.723,
+   "end": 23.861
+  },
+  {
+   "text": "dos,",
+   "start": 23.861,
+   "end": 24.136
+  },
+  {
+   "text": "et",
+   "start": 24.435,
+   "end": 24.498
+  },
+  {
+   "text": "aux",
+   "start": 24.498,
+   "end": 24.535
+  },
+  {
+   "text": "talons.",
+   "start": 24.535,
+   "end": 24.935
+  },
+  {
+   "text": "On",
+   "start": 25.892,
+   "end": 26.029
+  },
+  {
+   "text": "la",
+   "start": 26.029,
+   "end": 26.13
+  },
+  {
+   "text": "classe",
+   "start": 26.13,
+   "end": 26.429
+  },
+  {
+   "text": "en",
+   "start": 26.429,
+   "end": 26.479
+  },
+  {
+   "text": "quatre",
+   "start": 26.479,
+   "end": 26.792
+  },
+  {
+   "text": "stades.",
+   "start": 26.792,
+   "end": 27.267
+  },
+  {
+   "text": "Stade 1 :",
+   "start": 27.604,
+   "end": 28.204
+  },
+  {
+   "text": "une",
+   "start": 28.617,
+   "end": 28.704
+  },
+  {
+   "text": "rougeur",
+   "start": 28.704,
+   "end": 29.092
+  },
+  {
+   "text": "qui",
+   "start": 29.092,
+   "end": 29.217
+  },
+  {
+   "text": "ne",
+   "start": 29.217,
+   "end": 29.292
+  },
+  {
+   "text": "blanchit",
+   "start": 29.292,
+   "end": 29.604
+  },
+  {
+   "text": "pas",
+   "start": 29.604,
+   "end": 29.742
+  },
+  {
+   "text": "quand",
+   "start": 29.742,
+   "end": 29.854
+  },
+  {
+   "text": "on",
+   "start": 29.854,
+   "end": 29.967
+  },
+  {
+   "text": "appuie.",
+   "start": 29.967,
+   "end": 30.429
+  },
+  {
+   "text": "Stade 2 :",
+   "start": 30.817,
+   "end": 31.429
+  },
+  {
+   "text": "une",
+   "start": 31.767,
+   "end": 31.867
+  },
+  {
+   "text": "cloque,",
+   "start": 31.867,
+   "end": 32.279
+  },
+  {
+   "text": "ou",
+   "start": 32.617,
+   "end": 32.642
+  },
+  {
+   "text": "la",
+   "start": 32.642,
+   "end": 32.755
+  },
+  {
+   "text": "peau",
+   "start": 32.755,
+   "end": 32.917
+  },
+  {
+   "text": "abîmée.",
+   "start": 32.917,
+   "end": 33.442
+  },
+  {
+   "text": "Stade 3 :",
+   "start": 33.792,
+   "end": 34.529
+  },
+  {
+   "text": "un",
+   "start": 34.867,
+   "end": 34.98
+  },
+  {
+   "text": "creux",
+   "start": 34.98,
+   "end": 35.217
+  },
+  {
+   "text": "jusqu'à",
+   "start": 35.217,
+   "end": 35.492
+  },
+  {
+   "text": "la",
+   "start": 35.492,
+   "end": 35.592
+  },
+  {
+   "text": "graisse.",
+   "start": 35.592,
+   "end": 36.117
+  },
+  {
+   "text": "Stade 4 :",
+   "start": 36.454,
+   "end": 37.242
+  },
+  {
+   "text": "jusqu'au",
+   "start": 37.554,
+   "end": 37.829
+  },
+  {
+   "text": "muscle,",
+   "start": 37.829,
+   "end": 38.255
+  },
+  {
+   "text": "voire",
+   "start": 38.517,
+   "end": 38.73
+  },
+  {
+   "text": "l'os.",
+   "start": 38.73,
+   "end": 39.179
+  },
+  {
+   "text": "Deuxième",
+   "start": 40.122,
+   "end": 40.559
+  },
+  {
+   "text": "plaie",
+   "start": 40.559,
+   "end": 40.684
+  },
+  {
+   "text": "chronique :",
+   "start": 40.684,
+   "end": 41.21
+  },
+  {
+   "text": "l'ulcère",
+   "start": 41.522,
+   "end": 41.91
+  },
+  {
+   "text": "de",
+   "start": 41.91,
+   "end": 42.022
+  },
+  {
+   "text": "jambe.",
+   "start": 42.022,
+   "end": 42.497
+  },
+  {
+   "text": "Le",
+   "start": 42.835,
+   "end": 43.022
+  },
+  {
+   "text": "sang",
+   "start": 43.022,
+   "end": 43.147
+  },
+  {
+   "text": "circule",
+   "start": 43.147,
+   "end": 43.485
+  },
+  {
+   "text": "mal",
+   "start": 43.485,
+   "end": 43.66
+  },
+  {
+   "text": "dans",
+   "start": 43.66,
+   "end": 43.747
+  },
+  {
+   "text": "les",
+   "start": 43.747,
+   "end": 43.86
+  },
+  {
+   "text": "jambes,",
+   "start": 43.86,
+   "end": 44.21
+  },
+  {
+   "text": "la",
+   "start": 44.51,
+   "end": 44.597
+  },
+  {
+   "text": "peau",
+   "start": 44.597,
+   "end": 44.785
+  },
+  {
+   "text": "est",
+   "start": 44.785,
+   "end": 44.847
+  },
+  {
+   "text": "mal",
+   "start": 44.847,
+   "end": 45.059
+  },
+  {
+   "text": "nourrie…",
+   "start": 45.059,
+   "end": 45.447
+  },
+  {
+   "text": "et",
+   "start": 45.772,
+   "end": 45.86
+  },
+  {
+   "text": "une",
+   "start": 45.86,
+   "end": 45.972
+  },
+  {
+   "text": "plaie",
+   "start": 45.972,
+   "end": 46.147
+  },
+  {
+   "text": "s'ouvre,",
+   "start": 46.147,
+   "end": 46.572
+  },
+  {
+   "text": "souvent",
+   "start": 46.76,
+   "end": 47.035
+  },
+  {
+   "text": "près",
+   "start": 47.035,
+   "end": 47.184
+  },
+  {
+   "text": "de",
+   "start": 47.184,
+   "end": 47.26
+  },
+  {
+   "text": "la",
+   "start": 47.26,
+   "end": 47.335
+  },
+  {
+   "text": "cheville.",
+   "start": 47.335,
+   "end": 47.885
+  },
+  {
+   "text": "Et",
+   "start": 48.832,
+   "end": 48.969
+  },
+  {
+   "text": "le",
+   "start": 48.969,
+   "end": 49.057
+  },
+  {
+   "text": "pied",
+   "start": 49.057,
+   "end": 49.232
+  },
+  {
+   "text": "diabétique.",
+   "start": 49.232,
+   "end": 49.994
+  },
+  {
+   "text": "Le",
+   "start": 50.382,
+   "end": 50.507
+  },
+  {
+   "text": "diabète",
+   "start": 50.507,
+   "end": 50.894
+  },
+  {
+   "text": "abîme",
+   "start": 50.894,
+   "end": 51.144
+  },
+  {
+   "text": "les",
+   "start": 51.144,
+   "end": 51.244
+  },
+  {
+   "text": "nerfs :",
+   "start": 51.244,
+   "end": 51.619
+  },
+  {
+   "text": "on",
+   "start": 51.982,
+   "end": 52.007
+  },
+  {
+   "text": "ne",
+   "start": 52.007,
+   "end": 52.094
+  },
+  {
+   "text": "sent",
+   "start": 52.094,
+   "end": 52.232
+  },
+  {
+   "text": "plus",
+   "start": 52.232,
+   "end": 52.407
+  },
+  {
+   "text": "la",
+   "start": 52.407,
+   "end": 52.507
+  },
+  {
+   "text": "douleur.",
+   "start": 52.507,
+   "end": 53.032
+  },
+  {
+   "text": "Une",
+   "start": 53.382,
+   "end": 53.557
+  },
+  {
+   "text": "petite",
+   "start": 53.557,
+   "end": 53.857
+  },
+  {
+   "text": "plaie",
+   "start": 53.857,
+   "end": 54.069
+  },
+  {
+   "text": "sous",
+   "start": 54.069,
+   "end": 54.207
+  },
+  {
+   "text": "le",
+   "start": 54.207,
+   "end": 54.294
+  },
+  {
+   "text": "pied",
+   "start": 54.294,
+   "end": 54.532
+  },
+  {
+   "text": "passe",
+   "start": 54.532,
+   "end": 54.757
+  },
+  {
+   "text": "inaperçue…",
+   "start": 54.757,
+   "end": 55.407
+  },
+  {
+   "text": "et",
+   "start": 55.769,
+   "end": 55.819
+  },
+  {
+   "text": "s'aggrave",
+   "start": 55.819,
+   "end": 56.232
+  },
+  {
+   "text": "en",
+   "start": 56.232,
+   "end": 56.282
+  },
+  {
+   "text": "silence.",
+   "start": 56.282,
+   "end": 56.907
+  },
+  {
+   "text": "Voilà",
+   "start": 57.257,
+   "end": 57.532
+  },
+  {
+   "text": "pourquoi",
+   "start": 57.532,
+   "end": 57.869
+  },
+  {
+   "text": "on",
+   "start": 57.869,
+   "end": 57.919
+  },
+  {
+   "text": "regarde",
+   "start": 57.919,
+   "end": 58.319
+  },
+  {
+   "text": "ses",
+   "start": 58.319,
+   "end": 58.432
+  },
+  {
+   "text": "pieds",
+   "start": 58.432,
+   "end": 58.607
+  },
+  {
+   "text": "tous",
+   "start": 58.607,
+   "end": 58.719
+  },
+  {
+   "text": "les",
+   "start": 58.719,
+   "end": 58.832
+  },
+  {
+   "text": "jours.",
+   "start": 58.832,
+   "end": 59.207
+  },
+  {
+   "text": "Petit",
+   "start": 60.158,
+   "end": 60.408
+  },
+  {
+   "text": "récap :",
+   "start": 60.408,
+   "end": 60.845
+  },
+  {
+   "text": "l'escarre",
+   "start": 61.17,
+   "end": 61.583
+  },
+  {
+   "text": "et",
+   "start": 61.583,
+   "end": 61.633
+  },
+  {
+   "text": "ses",
+   "start": 61.633,
+   "end": 61.733
+  },
+  {
+   "text": "quatre",
+   "start": 61.733,
+   "end": 62.045
+  },
+  {
+   "text": "stades,",
+   "start": 62.045,
+   "end": 62.445
+  },
+  {
+   "text": "l'ulcère",
+   "start": 62.733,
+   "end": 63.07
+  },
+  {
+   "text": "de",
+   "start": 63.07,
+   "end": 63.195
+  },
+  {
+   "text": "jambe,",
+   "start": 63.195,
+   "end": 63.558
+  },
+  {
+   "text": "le",
+   "start": 63.833,
+   "end": 63.895
+  },
+  {
+   "text": "pied",
+   "start": 63.895,
+   "end": 64.083
+  },
+  {
+   "text": "diabétique.",
+   "start": 64.083,
+   "end": 64.833
+  },
+  {
+   "text": "Et",
+   "start": 65.183,
+   "end": 65.296
+  },
+  {
+   "text": "voilà :",
+   "start": 65.296,
+   "end": 65.671
+  },
+  {
+   "text": "la",
+   "start": 66.058,
+   "end": 66.133
+  },
+  {
+   "text": "série",
+   "start": 66.133,
+   "end": 66.433
+  },
+  {
+   "text": "sur",
+   "start": 66.433,
+   "end": 66.558
+  },
+  {
+   "text": "les",
+   "start": 66.558,
+   "end": 66.645
+  },
+  {
+   "text": "plaies",
+   "start": 66.645,
+   "end": 66.87
+  },
+  {
+   "text": "est",
+   "start": 66.87,
+   "end": 66.933
+  },
+  {
+   "text": "terminée !",
+   "start": 66.933,
+   "end": 67.533
+  }
+ ]
+}

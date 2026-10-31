@@ -1,0 +1,9 @@
+[
+	{"id": "intro", "rate": "+0%", "text": "Cette plaie… ne fait pas mal. Et c'est justement ça, le problème."},
+	{"id": "serie", "rate": "+0%", "text": "Nous voilà dans la partie trois, la dernière de notre série sur les plaies : les plaies chroniques. Celles qui ne sont toujours pas refermées après quatre à six semaines."},
+	{"id": "escarre", "rate": "+0%", "text": "La plus connue : l'escarre. Quand on reste allongé longtemps sans bouger, la peau est écrasée entre l'os et le matelas. Le sang ne passe plus… et la peau meurt. On la trouve surtout au sacrum, en bas du dos, et aux talons."},
+	{"id": "stades", "rate": "+0%", "text": "On la classe en quatre stades. {Stade 1|Stade un} : une rougeur qui ne blanchit pas quand on appuie. {Stade 2|Stade deux} : une cloque, ou la peau abîmée. {Stade 3|Stade trois} : un creux jusqu'à la graisse. {Stade 4|Stade quatre} : jusqu'au muscle, voire l'os."},
+	{"id": "ulcere", "rate": "+0%", "text": "Deuxième plaie chronique : l'ulcère de jambe. Le sang circule mal dans les jambes, la peau est mal nourrie… et une plaie s'ouvre, souvent près de la cheville."},
+	{"id": "pied", "rate": "+0%", "text": "Et le pied diabétique. Le diabète abîme les nerfs : on ne sent plus la douleur. Une petite plaie sous le pied passe inaperçue… et s'aggrave en silence. Voilà pourquoi on regarde ses pieds tous les jours."},
+	{"id": "outro", "rate": "+0%", "text": "Petit récap : l'escarre et ses quatre stades, l'ulcère de jambe, le pied diabétique. Et voilà : la série sur les plaies est terminée !"}
+]

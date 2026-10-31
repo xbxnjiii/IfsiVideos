@@ -28,8 +28,12 @@ import * as ep from '../../src/videos/embolie-pulmonaire/mascot';
 import * as epTL from '../../src/videos/embolie-pulmonaire/timeline';
 import * as avch from '../../src/videos/avc-histoire/mascot';
 import * as avchTL from '../../src/videos/avc-histoire/timeline';
-import * as pl from '../../src/videos/plaies/mascot';
-import * as plTL from '../../src/videos/plaies/timeline';
+import * as pl1 from '../../src/videos/plaies-1/mascot';
+import * as pl1TL from '../../src/videos/plaies-1/timeline';
+import * as pl2 from '../../src/videos/plaies-2/mascot';
+import * as pl2TL from '../../src/videos/plaies-2/timeline';
+import * as pl3 from '../../src/videos/plaies-3/mascot';
+import * as pl3TL from '../../src/videos/plaies-3/timeline';
 import * as bpco from '../../src/videos/bpco/mascot';
 import * as bpcoTL from '../../src/videos/bpco/timeline';
 
@@ -47,7 +51,9 @@ const VIDEOS: Record<string, [typeof constantes.MASCOT, typeof constantesTL.TL]>
 	spo2: [spo.MASCOT, spoTL.TL],
 	'embolie-pulmonaire': [ep.MASCOT, epTL.TL],
 	'avc-histoire': [avch.MASCOT, avchTL.TL],
-	plaies: [pl.MASCOT, plTL.TL],
+	'plaies-1': [pl1.MASCOT, pl1TL.TL],
+	'plaies-2': [pl2.MASCOT, pl2TL.TL],
+	'plaies-3': [pl3.MASCOT, pl3TL.TL],
 	bpco: [bpco.MASCOT, bpcoTL.TL],
 };
 const name = process.argv[2] ?? 'constantes';

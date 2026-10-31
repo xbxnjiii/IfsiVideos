@@ -28,8 +28,12 @@ import {EmboliePulmonaire, EmboliePulmonaireProps} from './videos/embolie-pulmon
 import {TL as EP_TL} from './videos/embolie-pulmonaire/timeline';
 import {AvcHistoire, AvcHistoireProps} from './videos/avc-histoire/AvcHistoire';
 import {TL as AVCH_TL} from './videos/avc-histoire/timeline';
-import {Plaies, PlaiesProps} from './videos/plaies/Plaies';
-import {TL as PL_TL} from './videos/plaies/timeline';
+import {Plaies1, Plaies1Props} from './videos/plaies-1/Plaies1';
+import {TL as PL1_TL} from './videos/plaies-1/timeline';
+import {Plaies2, Plaies2Props} from './videos/plaies-2/Plaies2';
+import {TL as PL2_TL} from './videos/plaies-2/timeline';
+import {Plaies3, Plaies3Props} from './videos/plaies-3/Plaies3';
+import {TL as PL3_TL} from './videos/plaies-3/timeline';
 import {Bpco, BpcoProps} from './videos/bpco/Bpco';
 import {TL as BPCO_TL} from './videos/bpco/timeline';
 
@@ -179,15 +183,35 @@ export const RemotionRoot: React.FC = () => (
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies BpcoProps}
 		/>
-		{/* 17 · Les différents types de plaies */}
+		{/* 17 · Série « Les plaies », partie 1 / 3 : les bases */}
 		<Composition
-			id="Plaies"
-			component={Plaies}
-			durationInFrames={PL_TL.total}
-			fps={PL_TL.fps}
+			id="Plaies-1"
+			component={Plaies1}
+			durationInFrames={PL1_TL.total}
+			fps={PL1_TL.fps}
 			width={W}
 			height={H}
-			defaultProps={{voice: true, sfx: true} satisfies PlaiesProps}
+			defaultProps={{voice: true, sfx: true} satisfies Plaies1Props}
+		/>
+		{/* 18 · Série « Les plaies », partie 2 / 3 : les plaies aiguës */}
+		<Composition
+			id="Plaies-2"
+			component={Plaies2}
+			durationInFrames={PL2_TL.total}
+			fps={PL2_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies Plaies2Props}
+		/>
+		{/* 19 · Série « Les plaies », partie 3 / 3 : les plaies chroniques */}
+		<Composition
+			id="Plaies-3"
+			component={Plaies3}
+			durationInFrames={PL3_TL.total}
+			fps={PL3_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies Plaies3Props}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition

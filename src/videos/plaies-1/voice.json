@@ -1,0 +1,1133 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 76.836,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.05,
+   "end": 6.975
+  },
+  {
+   "id": "serie",
+   "start": 7.958,
+   "end": 12.308
+  },
+  {
+   "id": "def",
+   "start": 13.258,
+   "end": 22.659
+  },
+  {
+   "id": "couches",
+   "start": 23.649,
+   "end": 37.65
+  },
+  {
+   "id": "familles",
+   "start": 38.586,
+   "end": 48.324
+  },
+  {
+   "id": "gravite",
+   "start": 49.264,
+   "end": 64.114
+  },
+  {
+   "id": "outro",
+   "start": 65.067,
+   "end": 76.492
+  }
+ ],
+ "words": [
+  {
+   "text": "Une",
+   "start": 0.05,
+   "end": 0.25
+  },
+  {
+   "text": "coupure",
+   "start": 0.25,
+   "end": 0.637
+  },
+  {
+   "text": "de",
+   "start": 0.637,
+   "end": 0.75
+  },
+  {
+   "text": "papier ?",
+   "start": 0.75,
+   "end": 1.288
+  },
+  {
+   "text": "Guérie",
+   "start": 1.637,
+   "end": 2.062
+  },
+  {
+   "text": "en",
+   "start": 2.062,
+   "end": 2.112
+  },
+  {
+   "text": "trois",
+   "start": 2.112,
+   "end": 2.312
+  },
+  {
+   "text": "jours.",
+   "start": 2.312,
+   "end": 2.737
+  },
+  {
+   "text": "Une",
+   "start": 3.075,
+   "end": 3.275
+  },
+  {
+   "text": "escarre ?",
+   "start": 3.275,
+   "end": 3.875
+  },
+  {
+   "text": "Parfois",
+   "start": 4.213,
+   "end": 4.6
+  },
+  {
+   "text": "des",
+   "start": 4.6,
+   "end": 4.713
+  },
+  {
+   "text": "mois.",
+   "start": 4.713,
+   "end": 5.075
+  },
+  {
+   "text": "Et",
+   "start": 5.412,
+   "end": 5.537
+  },
+  {
+   "text": "pourtant…",
+   "start": 5.537,
+   "end": 6.025
+  },
+  {
+   "text": "ce",
+   "start": 6.188,
+   "end": 6.325
+  },
+  {
+   "text": "sont",
+   "start": 6.325,
+   "end": 6.487
+  },
+  {
+   "text": "deux",
+   "start": 6.487,
+   "end": 6.625
+  },
+  {
+   "text": "plaies.",
+   "start": 6.625,
+   "end": 6.975
+  },
+  {
+   "text": "Nous",
+   "start": 7.958,
+   "end": 8.07
+  },
+  {
+   "text": "voilà",
+   "start": 8.07,
+   "end": 8.32
+  },
+  {
+   "text": "dans",
+   "start": 8.32,
+   "end": 8.42
+  },
+  {
+   "text": "la",
+   "start": 8.42,
+   "end": 8.508
+  },
+  {
+   "text": "partie",
+   "start": 8.508,
+   "end": 8.87
+  },
+  {
+   "text": "un",
+   "start": 8.87,
+   "end": 8.945
+  },
+  {
+   "text": "de",
+   "start": 8.945,
+   "end": 9.02
+  },
+  {
+   "text": "notre",
+   "start": 9.02,
+   "end": 9.295
+  },
+  {
+   "text": "série",
+   "start": 9.295,
+   "end": 9.607
+  },
+  {
+   "text": "sur",
+   "start": 9.607,
+   "end": 9.758
+  },
+  {
+   "text": "les",
+   "start": 9.758,
+   "end": 9.845
+  },
+  {
+   "text": "plaies !",
+   "start": 9.845,
+   "end": 10.183
+  },
+  {
+   "text": "Aujourd'hui,",
+   "start": 10.545,
+   "end": 11.17
+  },
+  {
+   "text": "on",
+   "start": 11.482,
+   "end": 11.52
+  },
+  {
+   "text": "pose",
+   "start": 11.52,
+   "end": 11.758
+  },
+  {
+   "text": "les",
+   "start": 11.758,
+   "end": 11.845
+  },
+  {
+   "text": "bases.",
+   "start": 11.845,
+   "end": 12.308
+  },
+  {
+   "text": "Une",
+   "start": 13.258,
+   "end": 13.471
+  },
+  {
+   "text": "plaie,",
+   "start": 13.471,
+   "end": 13.771
+  },
+  {
+   "text": "c'est",
+   "start": 14.121,
+   "end": 14.233
+  },
+  {
+   "text": "une",
+   "start": 14.233,
+   "end": 14.409
+  },
+  {
+   "text": "ouverture",
+   "start": 14.409,
+   "end": 14.821
+  },
+  {
+   "text": "de",
+   "start": 14.821,
+   "end": 14.896
+  },
+  {
+   "text": "la",
+   "start": 14.896,
+   "end": 14.996
+  },
+  {
+   "text": "peau.",
+   "start": 14.996,
+   "end": 15.334
+  },
+  {
+   "text": "Or,",
+   "start": 15.671,
+   "end": 16.046
+  },
+  {
+   "text": "la",
+   "start": 16.396,
+   "end": 16.483
+  },
+  {
+   "text": "peau",
+   "start": 16.483,
+   "end": 16.633
+  },
+  {
+   "text": "est",
+   "start": 16.633,
+   "end": 16.671
+  },
+  {
+   "text": "une",
+   "start": 16.671,
+   "end": 16.846
+  },
+  {
+   "text": "barrière :",
+   "start": 16.846,
+   "end": 17.334
+  },
+  {
+   "text": "elle",
+   "start": 17.709,
+   "end": 17.771
+  },
+  {
+   "text": "empêche",
+   "start": 17.771,
+   "end": 18.121
+  },
+  {
+   "text": "les",
+   "start": 18.121,
+   "end": 18.196
+  },
+  {
+   "text": "microbes",
+   "start": 18.196,
+   "end": 18.546
+  },
+  {
+   "text": "d'entrer.",
+   "start": 18.546,
+   "end": 19.071
+  },
+  {
+   "text": "Quand",
+   "start": 19.409,
+   "end": 19.571
+  },
+  {
+   "text": "elle",
+   "start": 19.571,
+   "end": 19.746
+  },
+  {
+   "text": "s'ouvre,",
+   "start": 19.746,
+   "end": 20.171
+  },
+  {
+   "text": "ils",
+   "start": 20.409,
+   "end": 20.471
+  },
+  {
+   "text": "peuvent",
+   "start": 20.471,
+   "end": 20.709
+  },
+  {
+   "text": "passer…",
+   "start": 20.709,
+   "end": 21.209
+  },
+  {
+   "text": "et",
+   "start": 21.508,
+   "end": 21.584
+  },
+  {
+   "text": "la",
+   "start": 21.584,
+   "end": 21.684
+  },
+  {
+   "text": "plaie",
+   "start": 21.684,
+   "end": 21.871
+  },
+  {
+   "text": "peut",
+   "start": 21.871,
+   "end": 22.008
+  },
+  {
+   "text": "s'infecter.",
+   "start": 22.008,
+   "end": 22.659
+  },
+  {
+   "text": "La",
+   "start": 23.649,
+   "end": 23.787
+  },
+  {
+   "text": "peau",
+   "start": 23.787,
+   "end": 24.0
+  },
+  {
+   "text": "a",
+   "start": 24.0,
+   "end": 24.075
+  },
+  {
+   "text": "plusieurs",
+   "start": 24.075,
+   "end": 24.45
+  },
+  {
+   "text": "couches.",
+   "start": 24.45,
+   "end": 24.912
+  },
+  {
+   "text": "En",
+   "start": 25.262,
+   "end": 25.362
+  },
+  {
+   "text": "surface,",
+   "start": 25.362,
+   "end": 26.062
+  },
+  {
+   "text": "l'épiderme.",
+   "start": 26.362,
+   "end": 27.1
+  },
+  {
+   "text": "Dessous,",
+   "start": 27.437,
+   "end": 27.987
+  },
+  {
+   "text": "le",
+   "start": 28.349,
+   "end": 28.45
+  },
+  {
+   "text": "derme,",
+   "start": 28.45,
+   "end": 28.812
+  },
+  {
+   "text": "avec",
+   "start": 29.075,
+   "end": 29.25
+  },
+  {
+   "text": "les",
+   "start": 29.25,
+   "end": 29.325
+  },
+  {
+   "text": "vaisseaux",
+   "start": 29.325,
+   "end": 29.65
+  },
+  {
+   "text": "et",
+   "start": 29.65,
+   "end": 29.687
+  },
+  {
+   "text": "les",
+   "start": 29.687,
+   "end": 29.787
+  },
+  {
+   "text": "nerfs.",
+   "start": 29.787,
+   "end": 30.212
+  },
+  {
+   "text": "Puis",
+   "start": 30.55,
+   "end": 30.762
+  },
+  {
+   "text": "l'hypoderme :",
+   "start": 30.762,
+   "end": 31.437
+  },
+  {
+   "text": "la",
+   "start": 31.787,
+   "end": 31.875
+  },
+  {
+   "text": "graisse.",
+   "start": 31.875,
+   "end": 32.45
+  },
+  {
+   "text": "Plus",
+   "start": 32.825,
+   "end": 33.037
+  },
+  {
+   "text": "la",
+   "start": 33.037,
+   "end": 33.137
+  },
+  {
+   "text": "plaie",
+   "start": 33.137,
+   "end": 33.349
+  },
+  {
+   "text": "est",
+   "start": 33.349,
+   "end": 33.4
+  },
+  {
+   "text": "profonde,",
+   "start": 33.4,
+   "end": 34.012
+  },
+  {
+   "text": "plus",
+   "start": 34.275,
+   "end": 34.45
+  },
+  {
+   "text": "elle",
+   "start": 34.45,
+   "end": 34.525
+  },
+  {
+   "text": "traverse",
+   "start": 34.525,
+   "end": 34.95
+  },
+  {
+   "text": "de",
+   "start": 34.95,
+   "end": 35.062
+  },
+  {
+   "text": "couches…",
+   "start": 35.062,
+   "end": 35.437
+  },
+  {
+   "text": "jusqu'au",
+   "start": 35.575,
+   "end": 35.849
+  },
+  {
+   "text": "muscle,",
+   "start": 35.849,
+   "end": 36.362
+  },
+  {
+   "text": "parfois",
+   "start": 36.587,
+   "end": 36.912
+  },
+  {
+   "text": "jusqu'à",
+   "start": 36.912,
+   "end": 37.212
+  },
+  {
+   "text": "l'os.",
+   "start": 37.212,
+   "end": 37.65
+  },
+  {
+   "text": "On",
+   "start": 38.586,
+   "end": 38.736
+  },
+  {
+   "text": "classe",
+   "start": 38.736,
+   "end": 39.049
+  },
+  {
+   "text": "les",
+   "start": 39.049,
+   "end": 39.148
+  },
+  {
+   "text": "plaies",
+   "start": 39.148,
+   "end": 39.424
+  },
+  {
+   "text": "en",
+   "start": 39.424,
+   "end": 39.523
+  },
+  {
+   "text": "deux",
+   "start": 39.523,
+   "end": 39.648
+  },
+  {
+   "text": "familles.",
+   "start": 39.648,
+   "end": 40.224
+  },
+  {
+   "text": "Les",
+   "start": 40.599,
+   "end": 40.736
+  },
+  {
+   "text": "plaies",
+   "start": 40.736,
+   "end": 40.911
+  },
+  {
+   "text": "aiguës",
+   "start": 40.911,
+   "end": 41.161
+  },
+  {
+   "text": "guérissent",
+   "start": 41.161,
+   "end": 41.536
+  },
+  {
+   "text": "normalement,",
+   "start": 41.536,
+   "end": 42.136
+  },
+  {
+   "text": "en",
+   "start": 42.474,
+   "end": 42.511
+  },
+  {
+   "text": "quelques",
+   "start": 42.511,
+   "end": 42.824
+  },
+  {
+   "text": "jours",
+   "start": 42.824,
+   "end": 43.036
+  },
+  {
+   "text": "à",
+   "start": 43.036,
+   "end": 43.074
+  },
+  {
+   "text": "quelques",
+   "start": 43.074,
+   "end": 43.373
+  },
+  {
+   "text": "semaines.",
+   "start": 43.373,
+   "end": 43.911
+  },
+  {
+   "text": "Les",
+   "start": 44.248,
+   "end": 44.436
+  },
+  {
+   "text": "plaies",
+   "start": 44.436,
+   "end": 44.586
+  },
+  {
+   "text": "chroniques,",
+   "start": 44.586,
+   "end": 45.111
+  },
+  {
+   "text": "elles,",
+   "start": 45.411,
+   "end": 45.648
+  },
+  {
+   "text": "ne",
+   "start": 46.011,
+   "end": 46.099
+  },
+  {
+   "text": "sont",
+   "start": 46.099,
+   "end": 46.211
+  },
+  {
+   "text": "toujours",
+   "start": 46.211,
+   "end": 46.511
+  },
+  {
+   "text": "pas",
+   "start": 46.511,
+   "end": 46.636
+  },
+  {
+   "text": "refermées",
+   "start": 46.636,
+   "end": 47.111
+  },
+  {
+   "text": "après",
+   "start": 47.111,
+   "end": 47.361
+  },
+  {
+   "text": "quatre",
+   "start": 47.361,
+   "end": 47.623
+  },
+  {
+   "text": "à",
+   "start": 47.623,
+   "end": 47.661
+  },
+  {
+   "text": "six",
+   "start": 47.661,
+   "end": 47.811
+  },
+  {
+   "text": "semaines.",
+   "start": 47.811,
+   "end": 48.324
+  },
+  {
+   "text": "Et",
+   "start": 49.264,
+   "end": 49.414
+  },
+  {
+   "text": "une",
+   "start": 49.414,
+   "end": 49.539
+  },
+  {
+   "text": "plaie",
+   "start": 49.539,
+   "end": 49.701
+  },
+  {
+   "text": "peut",
+   "start": 49.701,
+   "end": 49.801
+  },
+  {
+   "text": "être",
+   "start": 49.801,
+   "end": 50.089
+  },
+  {
+   "text": "simple…",
+   "start": 50.089,
+   "end": 50.489
+  },
+  {
+   "text": "ou",
+   "start": 50.689,
+   "end": 50.739
+  },
+  {
+   "text": "grave.",
+   "start": 50.739,
+   "end": 51.239
+  },
+  {
+   "text": "Elle",
+   "start": 51.576,
+   "end": 51.739
+  },
+  {
+   "text": "est",
+   "start": 51.739,
+   "end": 51.776
+  },
+  {
+   "text": "grave",
+   "start": 51.776,
+   "end": 52.076
+  },
+  {
+   "text": "si",
+   "start": 52.076,
+   "end": 52.227
+  },
+  {
+   "text": "elle",
+   "start": 52.227,
+   "end": 52.301
+  },
+  {
+   "text": "est",
+   "start": 52.301,
+   "end": 52.326
+  },
+  {
+   "text": "profonde,",
+   "start": 52.326,
+   "end": 52.889
+  },
+  {
+   "text": "étendue,",
+   "start": 53.064,
+   "end": 53.539
+  },
+  {
+   "text": "souillée,",
+   "start": 53.739,
+   "end": 54.201
+  },
+  {
+   "text": "c'est-à-dire",
+   "start": 54.464,
+   "end": 54.864
+  },
+  {
+   "text": "sale,",
+   "start": 54.864,
+   "end": 55.214
+  },
+  {
+   "text": "ou",
+   "start": 55.502,
+   "end": 55.539
+  },
+  {
+   "text": "sur",
+   "start": 55.539,
+   "end": 55.701
+  },
+  {
+   "text": "une",
+   "start": 55.701,
+   "end": 55.789
+  },
+  {
+   "text": "zone",
+   "start": 55.789,
+   "end": 55.964
+  },
+  {
+   "text": "à",
+   "start": 55.964,
+   "end": 56.014
+  },
+  {
+   "text": "risque :",
+   "start": 56.026,
+   "end": 56.389
+  },
+  {
+   "text": "le",
+   "start": 56.689,
+   "end": 56.752
+  },
+  {
+   "text": "visage,",
+   "start": 56.752,
+   "end": 57.289
+  },
+  {
+   "text": "la",
+   "start": 57.464,
+   "end": 57.564
+  },
+  {
+   "text": "main,",
+   "start": 57.564,
+   "end": 57.839
+  },
+  {
+   "text": "une",
+   "start": 58.089,
+   "end": 58.164
+  },
+  {
+   "text": "articulation.",
+   "start": 58.164,
+   "end": 58.977
+  },
+  {
+   "text": "Là,",
+   "start": 59.352,
+   "end": 59.651
+  },
+  {
+   "text": "on",
+   "start": 59.989,
+   "end": 60.026
+  },
+  {
+   "text": "demande",
+   "start": 60.026,
+   "end": 60.377
+  },
+  {
+   "text": "un",
+   "start": 60.377,
+   "end": 60.414
+  },
+  {
+   "text": "avis",
+   "start": 60.414,
+   "end": 60.651
+  },
+  {
+   "text": "médical.",
+   "start": 60.651,
+   "end": 61.326
+  },
+  {
+   "text": "Et",
+   "start": 61.664,
+   "end": 61.839
+  },
+  {
+   "text": "on",
+   "start": 61.839,
+   "end": 61.889
+  },
+  {
+   "text": "vérifie",
+   "start": 61.889,
+   "end": 62.301
+  },
+  {
+   "text": "toujours",
+   "start": 62.301,
+   "end": 62.614
+  },
+  {
+   "text": "le",
+   "start": 62.614,
+   "end": 62.689
+  },
+  {
+   "text": "vaccin",
+   "start": 62.689,
+   "end": 63.064
+  },
+  {
+   "text": "contre",
+   "start": 63.064,
+   "end": 63.339
+  },
+  {
+   "text": "le",
+   "start": 63.339,
+   "end": 63.414
+  },
+  {
+   "text": "tétanos.",
+   "start": 63.414,
+   "end": 64.114
+  },
+  {
+   "text": "Petit",
+   "start": 65.067,
+   "end": 65.317
+  },
+  {
+   "text": "récap :",
+   "start": 65.317,
+   "end": 65.729
+  },
+  {
+   "text": "une",
+   "start": 66.154,
+   "end": 66.254
+  },
+  {
+   "text": "plaie,",
+   "start": 66.254,
+   "end": 66.541
+  },
+  {
+   "text": "c'est",
+   "start": 66.892,
+   "end": 67.004
+  },
+  {
+   "text": "une",
+   "start": 67.004,
+   "end": 67.179
+  },
+  {
+   "text": "ouverture",
+   "start": 67.179,
+   "end": 67.604
+  },
+  {
+   "text": "de",
+   "start": 67.604,
+   "end": 67.679
+  },
+  {
+   "text": "la",
+   "start": 67.679,
+   "end": 67.779
+  },
+  {
+   "text": "peau.",
+   "start": 67.779,
+   "end": 68.117
+  },
+  {
+   "text": "Elle",
+   "start": 68.454,
+   "end": 68.642
+  },
+  {
+   "text": "est",
+   "start": 68.642,
+   "end": 68.679
+  },
+  {
+   "text": "aiguë",
+   "start": 68.679,
+   "end": 69.041
+  },
+  {
+   "text": "ou",
+   "start": 69.041,
+   "end": 69.092
+  },
+  {
+   "text": "chronique,",
+   "start": 69.092,
+   "end": 69.629
+  },
+  {
+   "text": "simple",
+   "start": 69.904,
+   "end": 70.254
+  },
+  {
+   "text": "ou",
+   "start": 70.254,
+   "end": 70.279
+  },
+  {
+   "text": "grave.",
+   "start": 70.279,
+   "end": 70.791
+  },
+  {
+   "text": "Dans",
+   "start": 71.142,
+   "end": 71.279
+  },
+  {
+   "text": "la",
+   "start": 71.279,
+   "end": 71.367
+  },
+  {
+   "text": "partie",
+   "start": 71.367,
+   "end": 71.692
+  },
+  {
+   "text": "deux :",
+   "start": 71.692,
+   "end": 71.954
+  },
+  {
+   "text": "les",
+   "start": 72.267,
+   "end": 72.354
+  },
+  {
+   "text": "plaies",
+   "start": 72.354,
+   "end": 72.554
+  },
+  {
+   "text": "aiguës…",
+   "start": 72.554,
+   "end": 72.942
+  },
+  {
+   "text": "et",
+   "start": 73.317,
+   "end": 73.342
+  },
+  {
+   "text": "la",
+   "start": 73.342,
+   "end": 73.429
+  },
+  {
+   "text": "brûlure",
+   "start": 73.429,
+   "end": 73.791
+  },
+  {
+   "text": "qui",
+   "start": 73.791,
+   "end": 73.916
+  },
+  {
+   "text": "ne",
+   "start": 73.916,
+   "end": 73.967
+  },
+  {
+   "text": "fait",
+   "start": 73.967,
+   "end": 74.079
+  },
+  {
+   "text": "pas",
+   "start": 74.079,
+   "end": 74.204
+  },
+  {
+   "text": "mal.",
+   "start": 74.204,
+   "end": 74.604
+  },
+  {
+   "text": "Pourtant,",
+   "start": 74.954,
+   "end": 75.379
+  },
+  {
+   "text": "c'est",
+   "start": 75.666,
+   "end": 75.791
+  },
+  {
+   "text": "la",
+   "start": 75.791,
+   "end": 75.867
+  },
+  {
+   "text": "plus",
+   "start": 75.867,
+   "end": 76.017
+  },
+  {
+   "text": "grave !",
+   "start": 76.017,
+   "end": 76.492
+  }
+ ]
+}

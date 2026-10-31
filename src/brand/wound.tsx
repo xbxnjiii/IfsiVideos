@@ -630,3 +630,15 @@ export const ZoneGlyph: React.FC<{size?: number}> = ({size = 56}) => (
 		<circle cx={50} cy={50} r={13} fill={LPI.pink} stroke={N} strokeWidth={6} />
 	</svg>
 );
+
+/* ───────────── mise en place dans un socle ───────────── */
+
+/** Coupe de peau posée en (x, y), largeur w. */
+export type SkinBox = {x: number; y: number; w: number};
+/** point de la coupe (repère 900 × 500) → coordonnées du socle */
+export const skinPt = (b: SkinBox, x: number, y: number) => ({x: b.x + (x * b.w) / SKIN.w, y: b.y + (y * b.w) / SKIN.w});
+export const SkinAt: React.FC<{b: SkinBox} & SkinBlockProps> = ({b, ...p}) => (
+	<div style={{position: 'absolute', left: b.x, top: b.y}}>
+		<SkinBlock width={b.w} {...p} />
+	</div>
+);

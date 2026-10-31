@@ -1,0 +1,1048 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 74.894,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.05,
+   "end": 3.987
+  },
+  {
+   "id": "serie",
+   "start": 4.982,
+   "end": 10.732
+  },
+  {
+   "id": "trauma1",
+   "start": 11.698,
+   "end": 25.536
+  },
+  {
+   "id": "trauma2",
+   "start": 26.542,
+   "end": 43.717
+  },
+  {
+   "id": "brulures",
+   "start": 44.708,
+   "end": 62.445
+  },
+  {
+   "id": "outro",
+   "start": 63.413,
+   "end": 74.537
+  }
+ ],
+ "words": [
+  {
+   "text": "Ce",
+   "start": 0.05,
+   "end": 0.263
+  },
+  {
+   "text": "petit",
+   "start": 0.263,
+   "end": 0.512
+  },
+  {
+   "text": "trou…",
+   "start": 0.512,
+   "end": 0.85
+  },
+  {
+   "text": "peut",
+   "start": 1.262,
+   "end": 1.35
+  },
+  {
+   "text": "être",
+   "start": 1.35,
+   "end": 1.625
+  },
+  {
+   "text": "plus",
+   "start": 1.625,
+   "end": 1.775
+  },
+  {
+   "text": "dangereux",
+   "start": 1.775,
+   "end": 2.138
+  },
+  {
+   "text": "qu'une",
+   "start": 2.138,
+   "end": 2.312
+  },
+  {
+   "text": "grande",
+   "start": 2.312,
+   "end": 2.538
+  },
+  {
+   "text": "coupure.",
+   "start": 2.538,
+   "end": 3.087
+  },
+  {
+   "text": "Pourquoi ?",
+   "start": 3.425,
+   "end": 3.987
+  },
+  {
+   "text": "Nous",
+   "start": 4.982,
+   "end": 5.094
+  },
+  {
+   "text": "voilà",
+   "start": 5.094,
+   "end": 5.344
+  },
+  {
+   "text": "dans",
+   "start": 5.344,
+   "end": 5.444
+  },
+  {
+   "text": "la",
+   "start": 5.444,
+   "end": 5.532
+  },
+  {
+   "text": "partie",
+   "start": 5.532,
+   "end": 5.857
+  },
+  {
+   "text": "deux",
+   "start": 5.857,
+   "end": 5.982
+  },
+  {
+   "text": "de",
+   "start": 5.982,
+   "end": 6.069
+  },
+  {
+   "text": "notre",
+   "start": 6.069,
+   "end": 6.369
+  },
+  {
+   "text": "série",
+   "start": 6.369,
+   "end": 6.631
+  },
+  {
+   "text": "sur",
+   "start": 6.631,
+   "end": 6.769
+  },
+  {
+   "text": "les",
+   "start": 6.769,
+   "end": 6.869
+  },
+  {
+   "text": "plaies :",
+   "start": 6.869,
+   "end": 7.169
+  },
+  {
+   "text": "les",
+   "start": 7.482,
+   "end": 7.569
+  },
+  {
+   "text": "plaies",
+   "start": 7.569,
+   "end": 7.769
+  },
+  {
+   "text": "aiguës.",
+   "start": 7.769,
+   "end": 8.131
+  },
+  {
+   "text": "Celles",
+   "start": 8.482,
+   "end": 8.782
+  },
+  {
+   "text": "qui",
+   "start": 8.782,
+   "end": 8.907
+  },
+  {
+   "text": "guérissent",
+   "start": 8.907,
+   "end": 9.269
+  },
+  {
+   "text": "en",
+   "start": 9.269,
+   "end": 9.332
+  },
+  {
+   "text": "quelques",
+   "start": 9.332,
+   "end": 9.631
+  },
+  {
+   "text": "jours",
+   "start": 9.631,
+   "end": 9.881
+  },
+  {
+   "text": "à",
+   "start": 9.881,
+   "end": 9.907
+  },
+  {
+   "text": "quelques",
+   "start": 9.907,
+   "end": 10.207
+  },
+  {
+   "text": "semaines.",
+   "start": 10.207,
+   "end": 10.732
+  },
+  {
+   "text": "D'abord,",
+   "start": 11.698,
+   "end": 12.261
+  },
+  {
+   "text": "l'excoriation :",
+   "start": 12.548,
+   "end": 13.411
+  },
+  {
+   "text": "c'est",
+   "start": 13.698,
+   "end": 13.798
+  },
+  {
+   "text": "une",
+   "start": 13.798,
+   "end": 13.986
+  },
+  {
+   "text": "éraflure.",
+   "start": 13.986,
+   "end": 14.648
+  },
+  {
+   "text": "La",
+   "start": 14.998,
+   "end": 15.173
+  },
+  {
+   "text": "peau",
+   "start": 15.173,
+   "end": 15.311
+  },
+  {
+   "text": "frotte,",
+   "start": 15.311,
+   "end": 15.773
+  },
+  {
+   "text": "et",
+   "start": 16.073,
+   "end": 16.111
+  },
+  {
+   "text": "seule",
+   "start": 16.111,
+   "end": 16.311
+  },
+  {
+   "text": "la",
+   "start": 16.311,
+   "end": 16.411
+  },
+  {
+   "text": "surface",
+   "start": 16.411,
+   "end": 16.836
+  },
+  {
+   "text": "s'arrache.",
+   "start": 16.836,
+   "end": 17.423
+  },
+  {
+   "text": "Ensuite,",
+   "start": 17.798,
+   "end": 18.349
+  },
+  {
+   "text": "la",
+   "start": 18.511,
+   "end": 18.586
+  },
+  {
+   "text": "coupure :",
+   "start": 18.586,
+   "end": 19.136
+  },
+  {
+   "text": "un",
+   "start": 19.523,
+   "end": 19.548
+  },
+  {
+   "text": "objet",
+   "start": 19.548,
+   "end": 19.823
+  },
+  {
+   "text": "tranchant,",
+   "start": 19.823,
+   "end": 20.361
+  },
+  {
+   "text": "et",
+   "start": 20.648,
+   "end": 20.673
+  },
+  {
+   "text": "des",
+   "start": 20.673,
+   "end": 20.773
+  },
+  {
+   "text": "bords",
+   "start": 20.773,
+   "end": 20.986
+  },
+  {
+   "text": "nets.",
+   "start": 20.986,
+   "end": 21.423
+  },
+  {
+   "text": "Puis",
+   "start": 21.761,
+   "end": 21.974
+  },
+  {
+   "text": "la",
+   "start": 21.974,
+   "end": 22.061
+  },
+  {
+   "text": "lacération :",
+   "start": 22.061,
+   "end": 22.786
+  },
+  {
+   "text": "c'est",
+   "start": 23.186,
+   "end": 23.286
+  },
+  {
+   "text": "une",
+   "start": 23.286,
+   "end": 23.474
+  },
+  {
+   "text": "déchirure,",
+   "start": 23.474,
+   "end": 24.099
+  },
+  {
+   "text": "avec",
+   "start": 24.373,
+   "end": 24.548
+  },
+  {
+   "text": "des",
+   "start": 24.548,
+   "end": 24.648
+  },
+  {
+   "text": "bords",
+   "start": 24.648,
+   "end": 24.849
+  },
+  {
+   "text": "irréguliers.",
+   "start": 24.849,
+   "end": 25.536
+  },
+  {
+   "text": "La",
+   "start": 26.542,
+   "end": 26.642
+  },
+  {
+   "text": "piqûre :",
+   "start": 26.642,
+   "end": 27.204
+  },
+  {
+   "text": "un",
+   "start": 27.579,
+   "end": 27.617
+  },
+  {
+   "text": "objet",
+   "start": 27.617,
+   "end": 27.904
+  },
+  {
+   "text": "pointu,",
+   "start": 27.904,
+   "end": 28.442
+  },
+  {
+   "text": "comme",
+   "start": 28.692,
+   "end": 28.867
+  },
+  {
+   "text": "un",
+   "start": 28.867,
+   "end": 28.93
+  },
+  {
+   "text": "clou.",
+   "start": 28.93,
+   "end": 29.267
+  },
+  {
+   "text": "Le",
+   "start": 29.654,
+   "end": 29.767
+  },
+  {
+   "text": "trou",
+   "start": 29.767,
+   "end": 30.017
+  },
+  {
+   "text": "est",
+   "start": 30.017,
+   "end": 30.067
+  },
+  {
+   "text": "petit…",
+   "start": 30.067,
+   "end": 30.555
+  },
+  {
+   "text": "mais",
+   "start": 30.992,
+   "end": 31.067
+  },
+  {
+   "text": "profond,",
+   "start": 31.067,
+   "end": 31.617
+  },
+  {
+   "text": "et",
+   "start": 31.954,
+   "end": 31.98
+  },
+  {
+   "text": "les",
+   "start": 31.98,
+   "end": 32.054
+  },
+  {
+   "text": "microbes",
+   "start": 32.054,
+   "end": 32.455
+  },
+  {
+   "text": "entrent",
+   "start": 32.455,
+   "end": 32.642
+  },
+  {
+   "text": "avec",
+   "start": 32.642,
+   "end": 32.842
+  },
+  {
+   "text": "lui.",
+   "start": 32.842,
+   "end": 33.142
+  },
+  {
+   "text": "Voilà",
+   "start": 33.505,
+   "end": 33.792
+  },
+  {
+   "text": "pourquoi",
+   "start": 33.792,
+   "end": 34.154
+  },
+  {
+   "text": "il",
+   "start": 34.154,
+   "end": 34.267
+  },
+  {
+   "text": "est",
+   "start": 34.267,
+   "end": 34.304
+  },
+  {
+   "text": "dangereux !",
+   "start": 34.304,
+   "end": 34.842
+  },
+  {
+   "text": "La",
+   "start": 35.255,
+   "end": 35.367
+  },
+  {
+   "text": "morsure :",
+   "start": 35.367,
+   "end": 35.904
+  },
+  {
+   "text": "la",
+   "start": 36.404,
+   "end": 36.492
+  },
+  {
+   "text": "bouche",
+   "start": 36.492,
+   "end": 36.742
+  },
+  {
+   "text": "est",
+   "start": 36.742,
+   "end": 36.779
+  },
+  {
+   "text": "pleine",
+   "start": 36.779,
+   "end": 37.017
+  },
+  {
+   "text": "de",
+   "start": 37.017,
+   "end": 37.105
+  },
+  {
+   "text": "microbes,",
+   "start": 37.105,
+   "end": 37.592
+  },
+  {
+   "text": "elle",
+   "start": 37.805,
+   "end": 37.88
+  },
+  {
+   "text": "s'infecte",
+   "start": 37.88,
+   "end": 38.355
+  },
+  {
+   "text": "facilement.",
+   "start": 38.355,
+   "end": 38.954
+  },
+  {
+   "text": "Et",
+   "start": 39.292,
+   "end": 39.417
+  },
+  {
+   "text": "la",
+   "start": 39.417,
+   "end": 39.529
+  },
+  {
+   "text": "plaie",
+   "start": 39.529,
+   "end": 39.717
+  },
+  {
+   "text": "chirurgicale :",
+   "start": 39.717,
+   "end": 40.517
+  },
+  {
+   "text": "faite",
+   "start": 40.954,
+   "end": 41.167
+  },
+  {
+   "text": "au",
+   "start": 41.167,
+   "end": 41.204
+  },
+  {
+   "text": "bloc,",
+   "start": 41.204,
+   "end": 41.63
+  },
+  {
+   "text": "propre,",
+   "start": 41.842,
+   "end": 42.305
+  },
+  {
+   "text": "puis",
+   "start": 42.567,
+   "end": 42.692
+  },
+  {
+   "text": "refermée",
+   "start": 42.692,
+   "end": 43.092
+  },
+  {
+   "text": "par",
+   "start": 43.092,
+   "end": 43.23
+  },
+  {
+   "text": "des",
+   "start": 43.23,
+   "end": 43.329
+  },
+  {
+   "text": "points.",
+   "start": 43.329,
+   "end": 43.717
+  },
+  {
+   "text": "Les",
+   "start": 44.708,
+   "end": 44.82
+  },
+  {
+   "text": "brûlures",
+   "start": 44.82,
+   "end": 45.208
+  },
+  {
+   "text": "aussi",
+   "start": 45.208,
+   "end": 45.483
+  },
+  {
+   "text": "sont",
+   "start": 45.483,
+   "end": 45.62
+  },
+  {
+   "text": "des",
+   "start": 45.62,
+   "end": 45.72
+  },
+  {
+   "text": "plaies",
+   "start": 45.72,
+   "end": 45.908
+  },
+  {
+   "text": "aiguës.",
+   "start": 45.908,
+   "end": 46.345
+  },
+  {
+   "text": "Premier",
+   "start": 46.683,
+   "end": 46.97
+  },
+  {
+   "text": "degré :",
+   "start": 46.97,
+   "end": 47.42
+  },
+  {
+   "text": "seule",
+   "start": 47.82,
+   "end": 48.008
+  },
+  {
+   "text": "la",
+   "start": 48.008,
+   "end": 48.108
+  },
+  {
+   "text": "surface",
+   "start": 48.108,
+   "end": 48.508
+  },
+  {
+   "text": "est",
+   "start": 48.508,
+   "end": 48.545
+  },
+  {
+   "text": "touchée.",
+   "start": 48.545,
+   "end": 49.033
+  },
+  {
+   "text": "C'est",
+   "start": 49.37,
+   "end": 49.595
+  },
+  {
+   "text": "rouge,",
+   "start": 49.595,
+   "end": 50.008
+  },
+  {
+   "text": "ça",
+   "start": 50.295,
+   "end": 50.433
+  },
+  {
+   "text": "fait",
+   "start": 50.433,
+   "end": 50.57
+  },
+  {
+   "text": "mal,",
+   "start": 50.57,
+   "end": 50.933
+  },
+  {
+   "text": "comme",
+   "start": 51.158,
+   "end": 51.333
+  },
+  {
+   "text": "un",
+   "start": 51.333,
+   "end": 51.383
+  },
+  {
+   "text": "coup",
+   "start": 51.383,
+   "end": 51.508
+  },
+  {
+   "text": "de",
+   "start": 51.508,
+   "end": 51.558
+  },
+  {
+   "text": "soleil.",
+   "start": 51.558,
+   "end": 52.058
+  },
+  {
+   "text": "Deuxième",
+   "start": 52.42,
+   "end": 52.82
+  },
+  {
+   "text": "degré :",
+   "start": 52.82,
+   "end": 53.258
+  },
+  {
+   "text": "des",
+   "start": 53.658,
+   "end": 53.733
+  },
+  {
+   "text": "cloques",
+   "start": 53.733,
+   "end": 53.983
+  },
+  {
+   "text": "apparaissent,",
+   "start": 53.983,
+   "end": 54.596
+  },
+  {
+   "text": "on",
+   "start": 54.808,
+   "end": 54.833
+  },
+  {
+   "text": "les",
+   "start": 54.833,
+   "end": 54.92
+  },
+  {
+   "text": "appelle",
+   "start": 54.92,
+   "end": 55.27
+  },
+  {
+   "text": "des",
+   "start": 55.27,
+   "end": 55.37
+  },
+  {
+   "text": "phlyctènes.",
+   "start": 55.37,
+   "end": 56.058
+  },
+  {
+   "text": "Troisième",
+   "start": 56.408,
+   "end": 56.795
+  },
+  {
+   "text": "degré :",
+   "start": 56.795,
+   "end": 57.208
+  },
+  {
+   "text": "toute",
+   "start": 57.483,
+   "end": 57.645
+  },
+  {
+   "text": "la",
+   "start": 57.645,
+   "end": 57.745
+  },
+  {
+   "text": "peau",
+   "start": 57.745,
+   "end": 57.933
+  },
+  {
+   "text": "est",
+   "start": 57.933,
+   "end": 57.983
+  },
+  {
+   "text": "détruite…",
+   "start": 57.983,
+   "end": 58.483
+  },
+  {
+   "text": "et",
+   "start": 58.833,
+   "end": 58.87
+  },
+  {
+   "text": "ça",
+   "start": 58.87,
+   "end": 58.983
+  },
+  {
+   "text": "ne",
+   "start": 58.983,
+   "end": 59.058
+  },
+  {
+   "text": "fait",
+   "start": 59.058,
+   "end": 59.145
+  },
+  {
+   "text": "plus",
+   "start": 59.145,
+   "end": 59.308
+  },
+  {
+   "text": "mal,",
+   "start": 59.308,
+   "end": 59.62
+  },
+  {
+   "text": "car",
+   "start": 59.833,
+   "end": 59.983
+  },
+  {
+   "text": "les",
+   "start": 59.983,
+   "end": 60.07
+  },
+  {
+   "text": "nerfs",
+   "start": 60.07,
+   "end": 60.283
+  },
+  {
+   "text": "sont",
+   "start": 60.283,
+   "end": 60.408
+  },
+  {
+   "text": "brûlés.",
+   "start": 60.408,
+   "end": 60.858
+  },
+  {
+   "text": "C'est",
+   "start": 61.195,
+   "end": 61.395
+  },
+  {
+   "text": "pourtant",
+   "start": 61.395,
+   "end": 61.721
+  },
+  {
+   "text": "la",
+   "start": 61.721,
+   "end": 61.808
+  },
+  {
+   "text": "plus",
+   "start": 61.808,
+   "end": 61.958
+  },
+  {
+   "text": "grave.",
+   "start": 61.958,
+   "end": 62.445
+  },
+  {
+   "text": "Petit",
+   "start": 63.413,
+   "end": 63.663
+  },
+  {
+   "text": "récap :",
+   "start": 63.663,
+   "end": 64.062
+  },
+  {
+   "text": "excoriation,",
+   "start": 64.425,
+   "end": 65.25
+  },
+  {
+   "text": "coupure,",
+   "start": 65.525,
+   "end": 66.037
+  },
+  {
+   "text": "lacération,",
+   "start": 66.375,
+   "end": 67.075
+  },
+  {
+   "text": "piqûre,",
+   "start": 67.35,
+   "end": 67.862
+  },
+  {
+   "text": "morsure,",
+   "start": 68.263,
+   "end": 68.825
+  },
+  {
+   "text": "plaie",
+   "start": 69.112,
+   "end": 69.263
+  },
+  {
+   "text": "chirurgicale",
+   "start": 69.263,
+   "end": 69.912
+  },
+  {
+   "text": "et",
+   "start": 69.912,
+   "end": 69.95
+  },
+  {
+   "text": "brûlure.",
+   "start": 69.95,
+   "end": 70.5
+  },
+  {
+   "text": "Dans",
+   "start": 70.85,
+   "end": 70.987
+  },
+  {
+   "text": "la",
+   "start": 70.987,
+   "end": 71.075
+  },
+  {
+   "text": "partie",
+   "start": 71.075,
+   "end": 71.362
+  },
+  {
+   "text": "trois :",
+   "start": 71.362,
+   "end": 71.7
+  },
+  {
+   "text": "les",
+   "start": 72.037,
+   "end": 72.125
+  },
+  {
+   "text": "plaies",
+   "start": 72.125,
+   "end": 72.3
+  },
+  {
+   "text": "qui",
+   "start": 72.3,
+   "end": 72.412
+  },
+  {
+   "text": "ne",
+   "start": 72.412,
+   "end": 72.5
+  },
+  {
+   "text": "guérissent",
+   "start": 72.5,
+   "end": 72.85
+  },
+  {
+   "text": "pas…",
+   "start": 72.85,
+   "end": 73.075
+  },
+  {
+   "text": "dont",
+   "start": 73.45,
+   "end": 73.562
+  },
+  {
+   "text": "une",
+   "start": 73.562,
+   "end": 73.75
+  },
+  {
+   "text": "qu'on",
+   "start": 73.75,
+   "end": 73.862
+  },
+  {
+   "text": "ne",
+   "start": 73.862,
+   "end": 73.95
+  },
+  {
+   "text": "sent",
+   "start": 73.95,
+   "end": 74.112
+  },
+  {
+   "text": "même",
+   "start": 74.112,
+   "end": 74.3
+  },
+  {
+   "text": "pas.",
+   "start": 74.3,
+   "end": 74.537
+  }
+ ]
+}

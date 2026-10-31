@@ -1,0 +1,8 @@
+[
+	{"id": "intro", "rate": "+0%", "text": "Ce petit trou… peut être plus dangereux qu'une grande coupure. Pourquoi ?"},
+	{"id": "serie", "rate": "+0%", "text": "Nous voilà dans la partie deux de notre série sur les plaies : les plaies aiguës. Celles qui guérissent en quelques jours à quelques semaines."},
+	{"id": "trauma1", "rate": "+0%", "text": "D'abord, l'excoriation : c'est une éraflure. La peau frotte, et seule la surface s'arrache. Ensuite, la coupure : un objet tranchant, et des bords nets. Puis la lacération : c'est une déchirure, avec des bords irréguliers."},
+	{"id": "trauma2", "rate": "+0%", "text": "La piqûre : un objet pointu, comme un clou. Le trou est petit… mais profond, et les microbes entrent avec lui. Voilà pourquoi il est dangereux ! La morsure : la bouche est pleine de microbes, elle s'infecte facilement. Et la plaie chirurgicale : faite au bloc, propre, puis refermée par des points."},
+	{"id": "brulures", "rate": "+0%", "text": "Les brûlures aussi sont des plaies aiguës. Premier degré : seule la surface est touchée. C'est rouge, ça fait mal, comme un coup de soleil. Deuxième degré : des cloques apparaissent, on les appelle des phlyctènes. Troisième degré : toute la peau est détruite… et ça ne fait plus mal, car les nerfs sont brûlés. C'est pourtant la plus grave."},
+	{"id": "outro", "rate": "+0%", "text": "Petit récap : excoriation, coupure, lacération, piqûre, morsure, plaie chirurgicale et brûlure. Dans la partie trois : les plaies qui ne guérissent pas… dont une qu'on ne sent même pas."}
+]

@@ -24,7 +24,9 @@
     "render:spo2": "remotion render SpO2 out/12-spo2.mp4",
     "render:ep": "remotion render Embolie-Pulmonaire out/14-embolie-pulmonaire.mp4",
     "render:avch": "remotion render AVC-Histoire out/15-avc-histoire.mp4",
-    "render:plaies": "remotion render Plaies out/17-plaies.mp4",
+    "render:plaies1": "remotion render Plaies-1 out/17-plaies-1.mp4",
+    "render:plaies2": "remotion render Plaies-2 out/18-plaies-2.mp4",
+    "render:plaies3": "remotion render Plaies-3 out/19-plaies-3.mp4",
     "render:bpco": "remotion render BPCO out/16-bpco.mp4"
   },
   "dependencies": {
