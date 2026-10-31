@@ -1,958 +1,1198 @@
 {
  "voice": "voix.wav (tts_voix.py)",
- "duration": 66.036,
+ "duration": 81.169,
  "sections": [
   {
    "id": "intro",
-   "start": 0.048,
-   "end": 1.437
+   "start": 0.058,
+   "end": 16.563
   },
   {
    "id": "def",
-   "start": 2.515,
-   "end": 9.752
+   "start": 17.649,
+   "end": 24.886
   },
   {
    "id": "mesure",
-   "start": 10.678,
-   "end": 17.819
+   "start": 25.812,
+   "end": 32.953
   },
   {
    "id": "norme",
-   "start": 18.74,
-   "end": 26.032
+   "start": 33.874,
+   "end": 41.166
   },
   {
    "id": "hyper",
-   "start": 27.001,
-   "end": 36.877
+   "start": 42.135,
+   "end": 52.011
   },
   {
    "id": "hypo",
-   "start": 37.788,
-   "end": 47.93
+   "start": 52.922,
+   "end": 63.064
   },
   {
    "id": "outro",
-   "start": 48.854,
-   "end": 65.714
+   "start": 63.988,
+   "end": 80.848
   }
  ],
  "words": [
   {
-   "text": "C'est",
-   "start": 0.048,
-   "end": 0.233
-  },
-  {
-   "text": "quoi,",
-   "start": 0.233,
-   "end": 0.511
-  },
-  {
-   "text": "la",
-   "start": 0.8,
-   "end": 0.87
-  },
-  {
-   "text": "glycémie ?",
-   "start": 0.87,
-   "end": 1.437
-  },
-  {
-   "text": "La",
-   "start": 2.515,
-   "end": 2.63
-  },
-  {
-   "text": "glycémie,",
-   "start": 2.63,
-   "end": 3.174
-  },
-  {
-   "text": "c'est",
-   "start": 3.475,
-   "end": 3.591
-  },
-  {
-   "text": "le",
-   "start": 3.591,
-   "end": 3.672
-  },
-  {
-   "text": "taux",
-   "start": 3.672,
-   "end": 3.788
-  },
-  {
-   "text": "de",
-   "start": 3.788,
-   "end": 3.846
-  },
-  {
-   "text": "sucre",
-   "start": 3.846,
-   "end": 4.158
-  },
-  {
-   "text": "dans",
-   "start": 4.158,
-   "end": 4.251
-  },
-  {
-   "text": "le",
-   "start": 4.251,
-   "end": 4.343
-  },
-  {
-   "text": "sang.",
-   "start": 4.343,
-   "end": 4.633
-  },
-  {
-   "text": "Ce",
-   "start": 4.948,
-   "end": 5.156
-  },
-  {
-   "text": "sucre,",
-   "start": 5.156,
-   "end": 5.538
-  },
-  {
-   "text": "le",
-   "start": 5.816,
-   "end": 5.862
-  },
-  {
-   "text": "glucose,",
-   "start": 5.862,
-   "end": 6.395
-  },
-  {
-   "text": "c'est",
-   "start": 6.672,
-   "end": 6.788
-  },
-  {
-   "text": "le",
-   "start": 6.788,
-   "end": 6.858
-  },
-  {
-   "text": "carburant",
-   "start": 6.858,
-   "end": 7.286
-  },
-  {
-   "text": "de",
-   "start": 7.286,
-   "end": 7.367
-  },
-  {
-   "text": "nos",
-   "start": 7.367,
-   "end": 7.471
-  },
-  {
-   "text": "cellules.",
-   "start": 7.471,
-   "end": 7.98
-  },
-  {
-   "text": "Elle",
-   "start": 8.294,
-   "end": 8.467
-  },
-  {
-   "text": "se",
-   "start": 8.467,
-   "end": 8.583
-  },
-  {
-   "text": "mesure",
-   "start": 8.583,
-   "end": 8.884
-  },
-  {
-   "text": "en",
-   "start": 8.884,
-   "end": 8.942
-  },
-  {
-   "text": "grammes",
-   "start": 8.942,
-   "end": 9.185
-  },
-  {
-   "text": "par",
-   "start": 9.185,
-   "end": 9.335
-  },
-  {
-   "text": "litre.",
-   "start": 9.335,
-   "end": 9.752
-  },
-  {
-   "text": "Pour",
-   "start": 10.678,
-   "end": 10.863
-  },
-  {
-   "text": "la",
-   "start": 10.863,
-   "end": 10.933
-  },
-  {
-   "text": "mesurer,",
-   "start": 10.933,
-   "end": 11.419
-  },
-  {
-   "text": "on",
-   "start": 11.731,
-   "end": 11.778
-  },
-  {
-   "text": "fait",
-   "start": 11.778,
-   "end": 11.905
-  },
-  {
-   "text": "une",
-   "start": 11.905,
-   "end": 11.974
-  },
-  {
-   "text": "glycémie",
-   "start": 11.974,
-   "end": 12.321
-  },
-  {
-   "text": "capillaire,",
-   "start": 12.322,
-   "end": 12.854
-  },
-  {
-   "text": "au",
-   "start": 13.028,
-   "end": 13.062
-  },
-  {
-   "text": "bout",
-   "start": 13.062,
-   "end": 13.155
-  },
-  {
-   "text": "du",
-   "start": 13.155,
-   "end": 13.259
-  },
-  {
-   "text": "doigt :",
-   "start": 13.259,
-   "end": 13.502
-  },
-  {
-   "text": "on",
-   "start": 13.919,
-   "end": 13.988
-  },
-  {
-   "text": "pique,",
-   "start": 13.988,
-   "end": 14.301
-  },
-  {
-   "text": "on",
-   "start": 14.625,
-   "end": 14.648
-  },
-  {
-   "text": "dépose",
-   "start": 14.648,
-   "end": 14.949
-  },
-  {
-   "text": "une",
-   "start": 14.949,
-   "end": 15.053
-  },
-  {
-   "text": "goutte",
-   "start": 15.053,
-   "end": 15.203
-  },
-  {
-   "text": "de",
-   "start": 15.203,
-   "end": 15.331
-  },
-  {
-   "text": "sang",
-   "start": 15.331,
-   "end": 15.47
-  },
-  {
-   "text": "sur",
-   "start": 15.47,
-   "end": 15.597
-  },
-  {
-   "text": "la",
-   "start": 15.597,
-   "end": 15.678
-  },
-  {
-   "text": "bandelette,",
-   "start": 15.678,
-   "end": 16.141
-  },
-  {
-   "text": "et",
-   "start": 16.5,
-   "end": 16.523
-  },
-  {
-   "text": "le",
-   "start": 16.523,
-   "end": 16.592
-  },
-  {
-   "text": "lecteur",
-   "start": 16.592,
-   "end": 16.94
-  },
-  {
-   "text": "affiche",
-   "start": 16.94,
-   "end": 17.217
-  },
-  {
-   "text": "le",
-   "start": 17.217,
-   "end": 17.298
-  },
-  {
-   "text": "résultat.",
-   "start": 17.298,
-   "end": 17.819
-  },
-  {
-   "text": "Chez",
-   "start": 18.74,
-   "end": 18.914
-  },
-  {
-   "text": "l'adulte",
-   "start": 18.914,
-   "end": 19.249
-  },
-  {
-   "text": "à",
-   "start": 19.249,
-   "end": 19.296
-  },
-  {
-   "text": "jeun,",
-   "start": 19.296,
-   "end": 19.677
-  },
-  {
-   "text": "c'est-à-dire",
-   "start": 19.921,
-   "end": 20.36
-  },
-  {
-   "text": "sans",
-   "start": 20.36,
-   "end": 20.488
-  },
-  {
-   "text": "avoir",
-   "start": 20.488,
-   "end": 20.754
-  },
-  {
-   "text": "mangé,",
-   "start": 20.754,
-   "end": 21.147
-  },
-  {
-   "text": "la",
-   "start": 21.402,
-   "end": 21.448
-  },
-  {
-   "text": "normale,",
-   "start": 21.448,
-   "end": 21.9
-  },
-  {
-   "text": "c'est",
-   "start": 22.201,
-   "end": 22.316
-  },
-  {
-   "text": "entre",
-   "start": 22.316,
-   "end": 22.899
-  },
-  {
-   "text": "0,70",
-   "start": 22.899,
-   "end": 23.365
-  },
-  {
-   "text": "et",
-   "start": 23.365,
-   "end": 23.598
-  },
-  {
-   "text": "1,10",
-   "start": 23.598,
-   "end": 24.064
-  },
-  {
-   "text": "gramme",
-   "start": 24.064,
-   "end": 24.296
-  },
-  {
-   "text": "par",
-   "start": 24.296,
-   "end": 24.446
-  },
-  {
-   "text": "litre :",
-   "start": 24.446,
-   "end": 24.724
-  },
-  {
-   "text": "c'est",
-   "start": 25.036,
-   "end": 25.117
-  },
-  {
-   "text": "la",
-   "start": 25.117,
-   "end": 25.187
-  },
-  {
-   "text": "normoglycémie.",
-   "start": 25.187,
-   "end": 26.032
-  },
-  {
-   "text": "Au-dessus",
-   "start": 27.001,
-   "end": 27.348
-  },
-  {
-   "text": "de",
-   "start": 27.348,
-   "end": 27.476
-  },
-  {
-   "text": "1,10,",
-   "start": 27.476,
-   "end": 28.297
-  },
-  {
-   "text": "c'est",
-   "start": 28.552,
-   "end": 28.656
-  },
-  {
-   "text": "une",
-   "start": 28.656,
-   "end": 28.841
-  },
-  {
-   "text": "hyperglycémie :",
-   "start": 28.841,
-   "end": 29.559
-  },
-  {
-   "text": "trop",
-   "start": 29.802,
-   "end": 29.941
-  },
-  {
-   "text": "de",
-   "start": 29.941,
-   "end": 29.987
-  },
-  {
-   "text": "sucre",
-   "start": 29.987,
-   "end": 30.265
-  },
-  {
-   "text": "dans",
-   "start": 30.277,
-   "end": 30.369
-  },
-  {
-   "text": "le",
-   "start": 30.369,
-   "end": 30.462
-  },
-  {
-   "text": "sang.",
-   "start": 30.462,
-   "end": 30.751
-  },
-  {
-   "text": "Le",
-   "start": 31.075,
-   "end": 31.202
+   "text": "Ton",
+   "start": 0.058,
+   "end": 0.208
   },
   {
    "text": "patient",
-   "start": 31.202,
-   "end": 31.515
+   "start": 0.208,
+   "end": 0.533
   },
   {
-   "text": "peut",
-   "start": 31.515,
-   "end": 31.596
+   "text": "se",
+   "start": 0.533,
+   "end": 0.683
   },
   {
-   "text": "avoir",
-   "start": 31.596,
-   "end": 31.816
-  },
-  {
-   "text": "très",
-   "start": 31.816,
-   "end": 31.989
-  },
-  {
-   "text": "soif,",
-   "start": 31.989,
-   "end": 32.429
-  },
-  {
-   "text": "uriner",
-   "start": 32.742,
-   "end": 32.973
-  },
-  {
-   "text": "beaucoup,",
-   "start": 32.973,
-   "end": 33.39
+   "text": "lève…",
+   "start": 0.683,
+   "end": 0.996
   },
   {
    "text": "et",
-   "start": 33.737,
-   "end": 33.783
+   "start": 1.25,
+   "end": 1.285
   },
   {
-   "text": "être",
-   "start": 33.783,
-   "end": 33.992
+   "text": "s'effondre.",
+   "start": 1.285,
+   "end": 1.933
   },
   {
-   "text": "fatigué.",
-   "start": 33.992,
-   "end": 34.547
+   "text": "Que",
+   "start": 2.247,
+   "end": 2.409
   },
   {
-   "text": "On",
-   "start": 34.864,
-   "end": 34.991
+   "text": "s'est-il",
+   "start": 2.409,
+   "end": 2.699
   },
   {
-   "text": "la",
-   "start": 34.991,
-   "end": 35.072
+   "text": "passé ?",
+   "start": 2.699,
+   "end": 3.162
   },
   {
-   "text": "surveille",
-   "start": 35.072,
-   "end": 35.396
+   "text": "Trente",
+   "start": 3.482,
+   "end": 3.702
   },
   {
-   "text": "surtout",
-   "start": 35.396,
-   "end": 35.72
+   "text": "minutes",
+   "start": 3.702,
+   "end": 3.91
   },
   {
-   "text": "chez",
-   "start": 35.72,
-   "end": 35.824
+   "text": "plus",
+   "start": 3.91,
+   "end": 4.049
   },
   {
-   "text": "les",
-   "start": 35.824,
-   "end": 35.894
+   "text": "tôt,",
+   "start": 4.049,
+   "end": 4.327
   },
   {
-   "text": "patients",
-   "start": 35.894,
-   "end": 36.183
+   "text": "il",
+   "start": 4.582,
+   "end": 4.651
   },
   {
-   "text": "diabétiques.",
-   "start": 36.183,
-   "end": 36.877
+   "text": "avait",
+   "start": 4.651,
+   "end": 4.778
   },
   {
-   "text": "En",
-   "start": 37.788,
-   "end": 37.892
+   "text": "fait",
+   "start": 4.778,
+   "end": 4.894
   },
   {
-   "text": "dessous",
-   "start": 37.892,
-   "end": 38.159
+   "text": "son",
+   "start": 4.894,
+   "end": 5.01
   },
   {
-   "text": "de",
-   "start": 38.159,
-   "end": 38.251
-  },
-  {
-   "text": "0,70,",
-   "start": 38.251,
-   "end": 39.443
-  },
-  {
-   "text": "c'est",
-   "start": 39.721,
-   "end": 39.837
-  },
-  {
-   "text": "une",
-   "start": 39.837,
-   "end": 40.034
-  },
-  {
-   "text": "hypoglycémie :",
-   "start": 40.034,
-   "end": 40.74
-  },
-  {
-   "text": "pas",
-   "start": 40.994,
-   "end": 41.075
-  },
-  {
-   "text": "assez",
-   "start": 41.075,
-   "end": 41.284
-  },
-  {
-   "text": "de",
-   "start": 41.284,
-   "end": 41.365
-  },
-  {
-   "text": "sucre.",
-   "start": 41.365,
-   "end": 41.828
-  },
-  {
-   "text": "Elle",
-   "start": 42.154,
-   "end": 42.305
-  },
-  {
-   "text": "peut",
-   "start": 42.305,
-   "end": 42.409
-  },
-  {
-   "text": "arriver",
-   "start": 42.409,
-   "end": 42.687
-  },
-  {
-   "text": "vite,",
-   "start": 42.687,
-   "end": 43.023
-  },
-  {
-   "text": "avec",
-   "start": 43.219,
-   "end": 43.347
-  },
-  {
-   "text": "des",
-   "start": 43.347,
-   "end": 43.439
-  },
-  {
-   "text": "sueurs,",
-   "start": 43.439,
-   "end": 43.902
-  },
-  {
-   "text": "des",
-   "start": 44.11,
-   "end": 44.168
-  },
-  {
-   "text": "tremblements,",
-   "start": 44.168,
-   "end": 44.701
-  },
-  {
-   "text": "une",
-   "start": 44.979,
-   "end": 45.036
-  },
-  {
-   "text": "sensation",
-   "start": 45.036,
-   "end": 45.442
-  },
-  {
-   "text": "de",
-   "start": 45.442,
-   "end": 45.546
-  },
-  {
-   "text": "faim,",
-   "start": 45.546,
-   "end": 45.823
-  },
-  {
-   "text": "voire",
-   "start": 46.055,
-   "end": 46.194
-  },
-  {
-   "text": "un",
-   "start": 46.194,
-   "end": 46.229
-  },
-  {
-   "text": "malaise.",
-   "start": 46.229,
-   "end": 46.703
-  },
-  {
-   "text": "C'est",
-   "start": 47.016,
-   "end": 47.189
-  },
-  {
-   "text": "une",
-   "start": 47.189,
-   "end": 47.351
-  },
-  {
-   "text": "urgence !",
-   "start": 47.351,
-   "end": 47.93
-  },
-  {
-   "text": "Petit",
-   "start": 48.854,
-   "end": 49.143
-  },
-  {
-   "text": "récap !",
-   "start": 49.143,
-   "end": 49.687
-  },
-  {
-   "text": "La",
-   "start": 50.042,
-   "end": 50.17
-  },
-  {
-   "text": "glycémie,",
-   "start": 50.17,
-   "end": 50.691
-  },
-  {
-   "text": "c'est",
-   "start": 51.015,
-   "end": 51.119
-  },
-  {
-   "text": "le",
-   "start": 51.119,
-   "end": 51.2
-  },
-  {
-   "text": "taux",
-   "start": 51.2,
-   "end": 51.316
-  },
-  {
-   "text": "de",
-   "start": 51.316,
-   "end": 51.397
-  },
-  {
-   "text": "sucre",
-   "start": 51.397,
-   "end": 51.697
-  },
-  {
-   "text": "dans",
-   "start": 51.698,
-   "end": 51.813
-  },
-  {
-   "text": "le",
-   "start": 51.813,
-   "end": 51.906
-  },
-  {
-   "text": "sang,",
-   "start": 51.906,
-   "end": 52.184
-  },
-  {
-   "text": "en",
-   "start": 52.346,
-   "end": 52.369
-  },
-  {
-   "text": "grammes",
-   "start": 52.369,
-   "end": 52.577
-  },
-  {
-   "text": "par",
-   "start": 52.577,
-   "end": 52.739
-  },
-  {
-   "text": "litre,",
-   "start": 52.739,
-   "end": 53.063
-  },
-  {
-   "text": "mesuré",
-   "start": 53.364,
-   "end": 53.723
-  },
-  {
-   "text": "au",
-   "start": 53.723,
-   "end": 53.769
-  },
-  {
-   "text": "bout",
-   "start": 53.769,
-   "end": 53.873
-  },
-  {
-   "text": "du",
-   "start": 53.873,
-   "end": 53.978
-  },
-  {
-   "text": "doigt.",
-   "start": 53.978,
-   "end": 54.279
-  },
-  {
-   "text": "À",
-   "start": 54.626,
-   "end": 54.695
-  },
-  {
-   "text": "jeun,",
-   "start": 54.695,
-   "end": 55.042
-  },
-  {
-   "text": "la",
-   "start": 55.309,
-   "end": 55.367
-  },
-  {
-   "text": "normale",
-   "start": 55.367,
-   "end": 55.725
-  },
-  {
-   "text": "est",
-   "start": 55.725,
-   "end": 55.783
-  },
-  {
-   "text": "entre",
-   "start": 55.783,
-   "end": 56.489
-  },
-  {
-   "text": "0,70",
-   "start": 56.489,
-   "end": 57.054
+   "text": "insuline,",
+   "start": 5.01,
+   "end": 5.519
   },
   {
    "text": "et",
-   "start": 57.054,
-   "end": 57.336
+   "start": 5.808,
+   "end": 5.832
   },
   {
-   "text": "1,10 :",
-   "start": 57.336,
-   "end": 57.901
+   "text": "il",
+   "start": 5.832,
+   "end": 5.889
   },
   {
-   "text": "normoglycémie.",
-   "start": 58.133,
-   "end": 59.035
+   "text": "t'avait",
+   "start": 5.889,
+   "end": 6.109
   },
   {
-   "text": "Au-dessus",
-   "start": 59.362,
-   "end": 59.779
+   "text": "dit :",
+   "start": 6.109,
+   "end": 6.329
   },
   {
-   "text": "de",
-   "start": 59.779,
-   "end": 59.918
+   "text": "ce",
+   "start": 6.665,
+   "end": 6.769
   },
   {
-   "text": "1,10 :",
-   "start": 59.918,
-   "end": 60.728
+   "text": "matin,",
+   "start": 6.769,
+   "end": 7.163
   },
   {
-   "text": "hyperglycémie.",
-   "start": 60.96,
-   "end": 61.747
+   "text": "je",
+   "start": 7.359,
+   "end": 7.429
   },
   {
-   "text": "Et",
-   "start": 62.091,
-   "end": 62.184
+   "text": "n'ai",
+   "start": 7.429,
+   "end": 7.521
   },
   {
-   "text": "en",
-   "start": 62.184,
-   "end": 62.242
+   "text": "rien",
+   "start": 7.521,
+   "end": 7.707
   },
   {
-   "text": "dessous",
-   "start": 62.242,
-   "end": 62.508
+   "text": "mangé.",
+   "start": 7.707,
+   "end": 8.135
   },
   {
-   "text": "de",
-   "start": 62.508,
-   "end": 62.6
-  },
-  {
-   "text": "0,70 :",
-   "start": 62.6,
-   "end": 63.804
+   "text": "Verdict :",
+   "start": 8.448,
+   "end": 8.981
   },
   {
    "text": "hypoglycémie !",
-   "start": 64.082,
-   "end": 64.788
+   "start": 9.235,
+   "end": 10.103
+  },
+  {
+   "text": "Il",
+   "start": 10.419,
+   "end": 10.615
+  },
+  {
+   "text": "manque",
+   "start": 10.615,
+   "end": 10.777
+  },
+  {
+   "text": "de",
+   "start": 10.777,
+   "end": 10.882
+  },
+  {
+   "text": "sucre",
+   "start": 10.882,
+   "end": 11.171
+  },
+  {
+   "text": "dans",
+   "start": 11.171,
+   "end": 11.275
+  },
+  {
+   "text": "le",
+   "start": 11.275,
+   "end": 11.356
+  },
+  {
+   "text": "sang.",
+   "start": 11.356,
+   "end": 11.657
+  },
+  {
+   "text": "Une",
+   "start": 11.97,
+   "end": 12.166
+  },
+  {
+   "text": "simple",
+   "start": 12.166,
+   "end": 12.502
+  },
+  {
+   "text": "glycémie",
+   "start": 12.502,
+   "end": 12.988
+  },
+  {
+   "text": "aurait",
+   "start": 12.988,
+   "end": 13.127
+  },
+  {
+   "text": "pu",
+   "start": 13.127,
+   "end": 13.266
+  },
+  {
+   "text": "éviter",
+   "start": 13.266,
+   "end": 13.544
+  },
+  {
+   "text": "sa",
+   "start": 13.544,
+   "end": 13.671
+  },
+  {
+   "text": "chute.",
+   "start": 13.671,
+   "end": 14.122
+  },
+  {
+   "text": "Mais",
+   "start": 14.445,
+   "end": 14.618
+  },
+  {
+   "text": "au",
+   "start": 14.618,
+   "end": 14.699
+  },
+  {
+   "text": "fait…",
+   "start": 14.699,
+   "end": 15.058
+  },
+  {
+   "text": "c'est",
+   "start": 15.243,
+   "end": 15.371
+  },
+  {
+   "text": "quoi,",
+   "start": 15.371,
+   "end": 15.66
+  },
+  {
+   "text": "la",
+   "start": 15.972,
+   "end": 16.042
+  },
+  {
+   "text": "glycémie ?",
+   "start": 16.042,
+   "end": 16.563
+  },
+  {
+   "text": "La",
+   "start": 17.649,
+   "end": 17.764
+  },
+  {
+   "text": "glycémie,",
+   "start": 17.764,
+   "end": 18.308
+  },
+  {
+   "text": "c'est",
+   "start": 18.609,
+   "end": 18.725
+  },
+  {
+   "text": "le",
+   "start": 18.725,
+   "end": 18.806
+  },
+  {
+   "text": "taux",
+   "start": 18.806,
+   "end": 18.922
+  },
+  {
+   "text": "de",
+   "start": 18.922,
+   "end": 18.98
+  },
+  {
+   "text": "sucre",
+   "start": 18.98,
+   "end": 19.292
+  },
+  {
+   "text": "dans",
+   "start": 19.292,
+   "end": 19.385
+  },
+  {
+   "text": "le",
+   "start": 19.385,
+   "end": 19.477
+  },
+  {
+   "text": "sang.",
+   "start": 19.477,
+   "end": 19.767
+  },
+  {
+   "text": "Ce",
+   "start": 20.082,
+   "end": 20.29
+  },
+  {
+   "text": "sucre,",
+   "start": 20.29,
+   "end": 20.672
+  },
+  {
+   "text": "le",
+   "start": 20.95,
+   "end": 20.996
+  },
+  {
+   "text": "glucose,",
+   "start": 20.996,
+   "end": 21.529
+  },
+  {
+   "text": "c'est",
+   "start": 21.806,
+   "end": 21.922
+  },
+  {
+   "text": "le",
+   "start": 21.922,
+   "end": 21.992
+  },
+  {
+   "text": "carburant",
+   "start": 21.992,
+   "end": 22.42
+  },
+  {
+   "text": "de",
+   "start": 22.42,
+   "end": 22.501
+  },
+  {
+   "text": "nos",
+   "start": 22.501,
+   "end": 22.605
+  },
+  {
+   "text": "cellules.",
+   "start": 22.605,
+   "end": 23.114
+  },
+  {
+   "text": "Elle",
+   "start": 23.428,
+   "end": 23.601
+  },
+  {
+   "text": "se",
+   "start": 23.601,
+   "end": 23.717
+  },
+  {
+   "text": "mesure",
+   "start": 23.717,
+   "end": 24.018
+  },
+  {
+   "text": "en",
+   "start": 24.018,
+   "end": 24.076
+  },
+  {
+   "text": "grammes",
+   "start": 24.076,
+   "end": 24.319
+  },
+  {
+   "text": "par",
+   "start": 24.319,
+   "end": 24.469
+  },
+  {
+   "text": "litre.",
+   "start": 24.469,
+   "end": 24.886
+  },
+  {
+   "text": "Pour",
+   "start": 25.812,
+   "end": 25.997
+  },
+  {
+   "text": "la",
+   "start": 25.997,
+   "end": 26.067
+  },
+  {
+   "text": "mesurer,",
+   "start": 26.067,
+   "end": 26.553
+  },
+  {
+   "text": "on",
+   "start": 26.865,
+   "end": 26.912
+  },
+  {
+   "text": "fait",
+   "start": 26.912,
+   "end": 27.039
+  },
+  {
+   "text": "une",
+   "start": 27.039,
+   "end": 27.108
+  },
+  {
+   "text": "glycémie",
+   "start": 27.108,
+   "end": 27.455
+  },
+  {
+   "text": "capillaire,",
+   "start": 27.456,
+   "end": 27.988
+  },
+  {
+   "text": "au",
+   "start": 28.162,
+   "end": 28.196
+  },
+  {
+   "text": "bout",
+   "start": 28.196,
+   "end": 28.289
+  },
+  {
+   "text": "du",
+   "start": 28.289,
+   "end": 28.393
+  },
+  {
+   "text": "doigt :",
+   "start": 28.393,
+   "end": 28.636
+  },
+  {
+   "text": "on",
+   "start": 29.053,
+   "end": 29.122
+  },
+  {
+   "text": "pique,",
+   "start": 29.122,
+   "end": 29.435
+  },
+  {
+   "text": "on",
+   "start": 29.759,
+   "end": 29.782
+  },
+  {
+   "text": "dépose",
+   "start": 29.782,
+   "end": 30.083
+  },
+  {
+   "text": "une",
+   "start": 30.083,
+   "end": 30.187
+  },
+  {
+   "text": "goutte",
+   "start": 30.187,
+   "end": 30.337
+  },
+  {
+   "text": "de",
+   "start": 30.337,
+   "end": 30.465
+  },
+  {
+   "text": "sang",
+   "start": 30.465,
+   "end": 30.604
+  },
+  {
+   "text": "sur",
+   "start": 30.604,
+   "end": 30.731
+  },
+  {
+   "text": "la",
+   "start": 30.731,
+   "end": 30.812
+  },
+  {
+   "text": "bandelette,",
+   "start": 30.812,
+   "end": 31.275
+  },
+  {
+   "text": "et",
+   "start": 31.634,
+   "end": 31.657
+  },
+  {
+   "text": "le",
+   "start": 31.657,
+   "end": 31.726
+  },
+  {
+   "text": "lecteur",
+   "start": 31.726,
+   "end": 32.074
+  },
+  {
+   "text": "affiche",
+   "start": 32.074,
+   "end": 32.351
+  },
+  {
+   "text": "le",
+   "start": 32.351,
+   "end": 32.432
+  },
+  {
+   "text": "résultat.",
+   "start": 32.432,
+   "end": 32.953
+  },
+  {
+   "text": "Chez",
+   "start": 33.874,
+   "end": 34.048
+  },
+  {
+   "text": "l'adulte",
+   "start": 34.048,
+   "end": 34.383
+  },
+  {
+   "text": "à",
+   "start": 34.383,
+   "end": 34.43
+  },
+  {
+   "text": "jeun,",
+   "start": 34.43,
+   "end": 34.811
+  },
+  {
+   "text": "c'est-à-dire",
+   "start": 35.055,
+   "end": 35.494
+  },
+  {
+   "text": "sans",
+   "start": 35.494,
+   "end": 35.622
+  },
+  {
+   "text": "avoir",
+   "start": 35.622,
+   "end": 35.888
+  },
+  {
+   "text": "mangé,",
+   "start": 35.888,
+   "end": 36.281
+  },
+  {
+   "text": "la",
+   "start": 36.536,
+   "end": 36.582
+  },
+  {
+   "text": "normale,",
+   "start": 36.582,
+   "end": 37.034
+  },
+  {
+   "text": "c'est",
+   "start": 37.335,
+   "end": 37.45
+  },
+  {
+   "text": "entre",
+   "start": 37.45,
+   "end": 38.033
+  },
+  {
+   "text": "0,70",
+   "start": 38.033,
+   "end": 38.499
+  },
+  {
+   "text": "et",
+   "start": 38.499,
+   "end": 38.732
+  },
+  {
+   "text": "1,10",
+   "start": 38.732,
+   "end": 39.198
+  },
+  {
+   "text": "gramme",
+   "start": 39.198,
+   "end": 39.43
+  },
+  {
+   "text": "par",
+   "start": 39.43,
+   "end": 39.58
+  },
+  {
+   "text": "litre :",
+   "start": 39.58,
+   "end": 39.858
+  },
+  {
+   "text": "c'est",
+   "start": 40.17,
+   "end": 40.251
+  },
+  {
+   "text": "la",
+   "start": 40.251,
+   "end": 40.321
+  },
+  {
+   "text": "normoglycémie.",
+   "start": 40.321,
+   "end": 41.166
+  },
+  {
+   "text": "Au-dessus",
+   "start": 42.135,
+   "end": 42.482
+  },
+  {
+   "text": "de",
+   "start": 42.482,
+   "end": 42.61
+  },
+  {
+   "text": "1,10,",
+   "start": 42.61,
+   "end": 43.431
+  },
+  {
+   "text": "c'est",
+   "start": 43.686,
+   "end": 43.79
+  },
+  {
+   "text": "une",
+   "start": 43.79,
+   "end": 43.975
+  },
+  {
+   "text": "hyperglycémie :",
+   "start": 43.975,
+   "end": 44.693
+  },
+  {
+   "text": "trop",
+   "start": 44.936,
+   "end": 45.075
+  },
+  {
+   "text": "de",
+   "start": 45.075,
+   "end": 45.121
+  },
+  {
+   "text": "sucre",
+   "start": 45.121,
+   "end": 45.399
+  },
+  {
+   "text": "dans",
+   "start": 45.411,
+   "end": 45.503
+  },
+  {
+   "text": "le",
+   "start": 45.503,
+   "end": 45.596
+  },
+  {
+   "text": "sang.",
+   "start": 45.596,
+   "end": 45.885
+  },
+  {
+   "text": "Le",
+   "start": 46.209,
+   "end": 46.336
+  },
+  {
+   "text": "patient",
+   "start": 46.336,
+   "end": 46.649
+  },
+  {
+   "text": "peut",
+   "start": 46.649,
+   "end": 46.73
+  },
+  {
+   "text": "avoir",
+   "start": 46.73,
+   "end": 46.95
+  },
+  {
+   "text": "très",
+   "start": 46.95,
+   "end": 47.123
+  },
+  {
+   "text": "soif,",
+   "start": 47.123,
+   "end": 47.563
+  },
+  {
+   "text": "uriner",
+   "start": 47.876,
+   "end": 48.107
+  },
+  {
+   "text": "beaucoup,",
+   "start": 48.107,
+   "end": 48.524
+  },
+  {
+   "text": "et",
+   "start": 48.871,
+   "end": 48.917
+  },
+  {
+   "text": "être",
+   "start": 48.917,
+   "end": 49.126
+  },
+  {
+   "text": "fatigué.",
+   "start": 49.126,
+   "end": 49.681
+  },
+  {
+   "text": "On",
+   "start": 49.998,
+   "end": 50.125
+  },
+  {
+   "text": "la",
+   "start": 50.125,
+   "end": 50.206
+  },
+  {
+   "text": "surveille",
+   "start": 50.206,
+   "end": 50.53
+  },
+  {
+   "text": "surtout",
+   "start": 50.53,
+   "end": 50.854
+  },
+  {
+   "text": "chez",
+   "start": 50.854,
+   "end": 50.958
+  },
+  {
+   "text": "les",
+   "start": 50.958,
+   "end": 51.028
+  },
+  {
+   "text": "patients",
+   "start": 51.028,
+   "end": 51.317
+  },
+  {
+   "text": "diabétiques.",
+   "start": 51.317,
+   "end": 52.011
+  },
+  {
+   "text": "En",
+   "start": 52.922,
+   "end": 53.026
+  },
+  {
+   "text": "dessous",
+   "start": 53.026,
+   "end": 53.293
+  },
+  {
+   "text": "de",
+   "start": 53.293,
+   "end": 53.385
+  },
+  {
+   "text": "0,70,",
+   "start": 53.385,
+   "end": 54.577
+  },
+  {
+   "text": "c'est",
+   "start": 54.855,
+   "end": 54.971
+  },
+  {
+   "text": "une",
+   "start": 54.971,
+   "end": 55.168
+  },
+  {
+   "text": "hypoglycémie :",
+   "start": 55.168,
+   "end": 55.874
+  },
+  {
+   "text": "pas",
+   "start": 56.128,
+   "end": 56.209
+  },
+  {
+   "text": "assez",
+   "start": 56.209,
+   "end": 56.418
+  },
+  {
+   "text": "de",
+   "start": 56.418,
+   "end": 56.499
+  },
+  {
+   "text": "sucre.",
+   "start": 56.499,
+   "end": 56.962
+  },
+  {
+   "text": "Elle",
+   "start": 57.288,
+   "end": 57.439
+  },
+  {
+   "text": "peut",
+   "start": 57.439,
+   "end": 57.543
+  },
+  {
+   "text": "arriver",
+   "start": 57.543,
+   "end": 57.821
+  },
+  {
+   "text": "vite,",
+   "start": 57.821,
+   "end": 58.157
+  },
+  {
+   "text": "avec",
+   "start": 58.353,
+   "end": 58.481
+  },
+  {
+   "text": "des",
+   "start": 58.481,
+   "end": 58.573
+  },
+  {
+   "text": "sueurs,",
+   "start": 58.573,
+   "end": 59.036
+  },
+  {
+   "text": "des",
+   "start": 59.244,
+   "end": 59.302
+  },
+  {
+   "text": "tremblements,",
+   "start": 59.302,
+   "end": 59.835
+  },
+  {
+   "text": "une",
+   "start": 60.113,
+   "end": 60.17
+  },
+  {
+   "text": "sensation",
+   "start": 60.17,
+   "end": 60.576
+  },
+  {
+   "text": "de",
+   "start": 60.576,
+   "end": 60.68
+  },
+  {
+   "text": "faim,",
+   "start": 60.68,
+   "end": 60.957
+  },
+  {
+   "text": "voire",
+   "start": 61.189,
+   "end": 61.328
+  },
+  {
+   "text": "un",
+   "start": 61.328,
+   "end": 61.363
+  },
+  {
+   "text": "malaise.",
+   "start": 61.363,
+   "end": 61.837
+  },
+  {
+   "text": "C'est",
+   "start": 62.15,
+   "end": 62.323
+  },
+  {
+   "text": "une",
+   "start": 62.323,
+   "end": 62.485
+  },
+  {
+   "text": "urgence !",
+   "start": 62.485,
+   "end": 63.064
+  },
+  {
+   "text": "Petit",
+   "start": 63.988,
+   "end": 64.277
+  },
+  {
+   "text": "récap !",
+   "start": 64.277,
+   "end": 64.821
+  },
+  {
+   "text": "La",
+   "start": 65.176,
+   "end": 65.304
+  },
+  {
+   "text": "glycémie,",
+   "start": 65.304,
+   "end": 65.825
+  },
+  {
+   "text": "c'est",
+   "start": 66.149,
+   "end": 66.253
+  },
+  {
+   "text": "le",
+   "start": 66.253,
+   "end": 66.334
+  },
+  {
+   "text": "taux",
+   "start": 66.334,
+   "end": 66.45
+  },
+  {
+   "text": "de",
+   "start": 66.45,
+   "end": 66.531
+  },
+  {
+   "text": "sucre",
+   "start": 66.531,
+   "end": 66.831
+  },
+  {
+   "text": "dans",
+   "start": 66.832,
+   "end": 66.947
+  },
+  {
+   "text": "le",
+   "start": 66.947,
+   "end": 67.04
+  },
+  {
+   "text": "sang,",
+   "start": 67.04,
+   "end": 67.318
+  },
+  {
+   "text": "en",
+   "start": 67.48,
+   "end": 67.503
+  },
+  {
+   "text": "grammes",
+   "start": 67.503,
+   "end": 67.711
+  },
+  {
+   "text": "par",
+   "start": 67.711,
+   "end": 67.873
+  },
+  {
+   "text": "litre,",
+   "start": 67.873,
+   "end": 68.197
+  },
+  {
+   "text": "mesuré",
+   "start": 68.498,
+   "end": 68.857
+  },
+  {
+   "text": "au",
+   "start": 68.857,
+   "end": 68.903
+  },
+  {
+   "text": "bout",
+   "start": 68.903,
+   "end": 69.007
+  },
+  {
+   "text": "du",
+   "start": 69.007,
+   "end": 69.112
+  },
+  {
+   "text": "doigt.",
+   "start": 69.112,
+   "end": 69.413
+  },
+  {
+   "text": "À",
+   "start": 69.76,
+   "end": 69.829
+  },
+  {
+   "text": "jeun,",
+   "start": 69.829,
+   "end": 70.176
+  },
+  {
+   "text": "la",
+   "start": 70.443,
+   "end": 70.501
+  },
+  {
+   "text": "normale",
+   "start": 70.501,
+   "end": 70.859
+  },
+  {
+   "text": "est",
+   "start": 70.859,
+   "end": 70.917
+  },
+  {
+   "text": "entre",
+   "start": 70.917,
+   "end": 71.623
+  },
+  {
+   "text": "0,70",
+   "start": 71.623,
+   "end": 72.188
+  },
+  {
+   "text": "et",
+   "start": 72.188,
+   "end": 72.47
+  },
+  {
+   "text": "1,10 :",
+   "start": 72.47,
+   "end": 73.035
+  },
+  {
+   "text": "normoglycémie.",
+   "start": 73.267,
+   "end": 74.169
+  },
+  {
+   "text": "Au-dessus",
+   "start": 74.496,
+   "end": 74.913
+  },
+  {
+   "text": "de",
+   "start": 74.913,
+   "end": 75.052
+  },
+  {
+   "text": "1,10 :",
+   "start": 75.052,
+   "end": 75.862
+  },
+  {
+   "text": "hyperglycémie.",
+   "start": 76.094,
+   "end": 76.881
+  },
+  {
+   "text": "Et",
+   "start": 77.225,
+   "end": 77.318
+  },
+  {
+   "text": "en",
+   "start": 77.318,
+   "end": 77.376
+  },
+  {
+   "text": "dessous",
+   "start": 77.376,
+   "end": 77.642
+  },
+  {
+   "text": "de",
+   "start": 77.642,
+   "end": 77.734
+  },
+  {
+   "text": "0,70 :",
+   "start": 77.734,
+   "end": 78.938
+  },
+  {
+   "text": "hypoglycémie !",
+   "start": 79.216,
+   "end": 79.922
   }
  ]
 }

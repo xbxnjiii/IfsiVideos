@@ -74,6 +74,10 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   Modèle : accroche de `Tension-Arterielle` (« Ton patient a mal à la tête, des vertiges… et ses oreilles bourdonnent.
   Qu'est-ce qu'il a ? Une hypertension : sa tension est trop haute ! Et un simple brassard te l'aurait dit. Mais au
   fait… c'est quoi, la tension artérielle ? »). Les vidéos déjà publiées gardent leur accroche.
+  Variante **mini-histoire / enquête** (`Glycemie`) : « Ton patient se lève… et s'effondre. Que s'est-il passé ? »
+  (image 0), retour en arrière (bandeau « ◀◀ 30 MIN PLUS TÔT », image bleutée, horloge qui recule, la chute se
+  rembobine), indices en pastilles + bulle du patient, « Verdict : hypoglycémie ! » (tampon), le geste qui l'aurait
+  évité, puis la question. Rester exact (hypoglycémie = diabétique sous insuline qui n'a pas mangé).
 - Récap : **pas de tampon final** (« Pro du souffle », « Pro du pouls » retirés à la demande) — confettis + mascotte suffisent.
 - Rester simple et factuel : pas d'astuces « de terrain » mises en scène (retirées de la FR : compter
   discrètement, faire semblant de prendre le pouls). Expliquer chaque qualificatif entre parenthèses
@@ -231,6 +235,8 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   décalé d'un nombre entier d'images N (affiché). Réécrire `Hook` + les étapes de mascotte de l'accroche, puis rendre la
   tête jusqu'à ~15 images après le début de la scène 2 (transition finie, mascotte cachée) : `--frames=0-<début2+15>`,
   et `npm run splice -- out/<vidéo>.mp4 tete.mp4@0:<ancien début2+16>` (la suite de l'ancienne vidéo est gardée ;
-  vérifier le raccord : PSNR ≈ 50 dB entre la nouvelle image et l'ancienne).
+  vérifier le raccord : PSNR ≈ 50 dB entre la nouvelle image et l'ancienne). Le léger balancement de la mascotte suit
+  l'horloge globale : si elle est visible au raccord (PSNR < 45 dB), couper plus loin, quand elle est hors écran (ex.
+  glycémie : après sa sortie au début de « mesure », `tete.mp4@0:92 suite.mp4@92:349`).
 - Livrer : **le MP4 seul** dans `out/` (non versionné). Plus de version web ni de couverture (demandé).
   Faire le ménage de `out/` (QA, anciens rendus) pour ne garder que les vidéos finales.

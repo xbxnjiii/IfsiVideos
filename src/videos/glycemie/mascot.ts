@@ -9,8 +9,16 @@ const {L, R} = SPOT;
 const runAcross = (id: SceneId) => run(TL, start(id));
 
 export const MASCOT: Beat[] = [
-	/* ── accroche ── */
-	{at: abs('intro', 'quoi'), via: 'pop', key: 'expressions/questionnement', ...R},
+	/* ── accroche : la mini-enquête ── choc à la chute, loupe, souvenir, seringue, inquiétude, eurêka, alerte */
+	{at: abs('intro', "s'effondre") + 9, via: 'pop', key: 'expressions/surprise', fx: 'shake', ...L},
+	{at: abs('intro', 'passé'), key: 'expressions/loupe', ...L},
+	{at: abs('intro', 'trente'), key: 'situations/pensive', ...R},
+	{at: abs('intro', 'insuline'), key: 'accessoires/seringue', ...R},
+	{at: abs('intro', 'rien'), key: 'expressions/inquiete', ...R},
+	{at: abs('intro', 'verdict'), key: 'expressions/eureka', ...R},
+	{at: abs('intro', 'hypoglycémie'), key: 'gestes/attention', fx: 'shake', ...R},
+	{at: abs('intro', 'glycémie'), key: 'accessoires/telephone', ...R},
+	{at: abs('intro', 'quoi'), key: 'expressions/questionnement', ...R},
 	// elle plonge dans l'écran du lecteur (zoomInto)
 	{at: start('def') - 4, dur: 16, key: 'expressions/questionnement', x: 476, y: 791, size: 0},
 

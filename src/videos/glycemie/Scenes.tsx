@@ -2,9 +2,10 @@
 // Le patient (src/brand/patient.tsx) joue les signes ; le lecteur de glycémie roule en g/l (src/brand/glyco.tsx).
 import React from 'react';
 import {AbsoluteFill, Easing, interpolate, useCurrentFrame} from 'remotion';
-import {BigNum, CauseChip, Head, LAY, Lead, Pill, RecapScene, SLAM_Y, termSlot} from '../../brand/episode';
+import {BigNum, camAt, CamKey, CauseChip, Head, LAY, Lead, Pill, RecapScene, SLAM_Y, termSlot, ZoomCam} from '../../brand/episode';
+import {WallClock} from '../../brand/devices';
 import {Cell, Finger, GLY_ZONES, Glucometer, Lancet, SugarCube, SugarFlow, SugarRain} from '../../brand/glyco';
-import {FaintIcon, HungerIcon, SweatIcon, ThirstIcon, TiredIcon, TremorIcon, UrineIcon} from '../../brand/icons';
+import {FaintIcon, HungerIcon, SweatIcon, SyringeIcon, ThirstIcon, TiredIcon, TremorIcon, UrineIcon} from '../../brand/icons';
 import {CheckChip, Stamp, usePop} from '../../brand/kit';
 import {Seuil} from '../../brand/Lesson3';
 import {Burst, Camera, LiveBackground, Stage, TermSlam} from '../../brand/motion3';
@@ -33,60 +34,278 @@ const steps = (frame: number, keys: [number, number][]) =>
 	);
 
 /* ═══════════════════════════════ ACCROCHE ═══════════════════════════════ */
+// Mini-enquête. Image 0 (miniature) : « Que s'est-il passé ? » déjà à l'écran, le patient un peu pâle et en sueur.
+// Il se lève, vacille et s'effondre (impact, flash) ; « Que s'est-il passé ? » : la caméra s'approche. Retour en arrière
+// (« trente minutes plus tôt ») : la chute se rembobine, image bleutée, horloge qui recule, deux indices (insuline faite,
+// rien mangé) et sa phrase dans une bulle. « Verdict » : retour au présent, tampon HYPOGLYCÉMIE ; « sucre » : les sucres
+// quittent le corps ; « glycémie » : le lecteur tombe à 0,45 g/l ; la question finit comme l'ancienne accroche (lecteur
+// en HOOK_METER : la transition plonge dans son écran).
 const HOOK_METER = {x: 254, y: 640, k: 1.3};
+const HOOK_WIN = {y: 480, w: 1080, h: 980};
+const HP = 420;
+/** patient debout : coin (330, 120) de la fenêtre ; pivot de la chute = milieu du bas */
+const STAND = {x: 330, y: 120};
+const PIVOT = {x: STAND.x + HP / 2, y: STAND.y + HP * 1.4};
+/** point du patient (viewBox 400 × 560) : debout, ou couché (chute `f` = 1 : rotation −90°, décalage LIE) */
+const LIE = {dx: 294, dy: -198};
+const standPt = (x: number, y: number) => ({x: STAND.x + (x * HP) / 400, y: STAND.y + (y * HP) / 400});
+const liePt = (x: number, y: number) => ({x: PIVOT.x + LIE.dx + ((y - 560) * HP) / 400, y: PIVOT.y + LIE.dy - ((x - 200) * HP) / 400});
+
+/** Flash plein écran (choc) qui retombe. */
+const Flash: React.FC<{at: number; color?: string; max?: number}> = ({at: t0, color = LPI.pink, max = 0.5}) => {
+	const frame = useCurrentFrame();
+	const o = interpolate(frame, [t0, t0 + 2, t0 + 16], [0, max, 0], clamp);
+	if (o <= 0) return null;
+	return <AbsoluteFill style={{background: `radial-gradient(circle at 50% 50%, ${alpha(color, o * 0.4)} 20%, ${alpha(color, o)} 100%)`}} />;
+};
+
+/** Pastille ronde « ? » qui tangue, de `at` à `out`. */
+const QMark: React.FC<{at: number; out?: number; x: number; y: number; size?: number}> = ({at: t0, out = 1e9, x, y, size = 170}) => {
+	const frame = useCurrentFrame();
+	const p = usePop(t0);
+	const o = interpolate(frame, [out, out + 6], [1, 0], clamp);
+	if (frame < t0 || o <= 0) return null;
+	return (
+		<div
+			style={{
+				position: 'absolute',
+				left: x,
+				top: y,
+				width: size,
+				height: size,
+				borderRadius: size / 2,
+				background: LPI.pink,
+				border: `8px solid ${LPI.paper}`,
+				boxShadow: SHADOW,
+				display: 'flex',
+				alignItems: 'center',
+				justifyContent: 'center',
+				fontFamily: FONT.title,
+				fontWeight: 900,
+				fontSize: size * 0.76,
+				color: N,
+				transform: `scale(${p * o}) rotate(${Math.sin(frame / 6) * 8}deg)`,
+			}}
+		>
+			?
+		</div>
+	);
+};
+
+/** Bandeau « ◀◀ 30 MIN PLUS TÔT » du retour en arrière. */
+const Rewind: React.FC<{at: number; out: number}> = ({at: t0, out}) => {
+	const frame = useCurrentFrame();
+	const p = usePop(t0);
+	const o = interpolate(frame, [out - 4, out + 2], [1, 0], clamp);
+	if (frame < t0 || o <= 0) return null;
+	const blink = 0.55 + 0.45 * Math.round(0.5 + 0.5 * Math.cos(frame / 4));
+	return (
+		<div style={{display: 'flex', alignItems: 'center', gap: 16, padding: '12px 30px 12px 22px', borderRadius: 999, background: N, boxShadow: SHADOW, opacity: o, transform: `scale(${0.5 + 0.5 * p})`, transformOrigin: 'left center'}}>
+			<svg width={58} height={34} viewBox="0 0 58 34" style={{opacity: blink}}>
+				<path d="M28 2 L2 17 L28 32 Z M56 2 L30 17 L56 32 Z" fill={LPI.pink} />
+			</svg>
+			<span style={{fontFamily: FONT.title, fontWeight: 900, fontSize: 44, color: LPI.paper, letterSpacing: '0.04em'}}>30 MIN PLUS TÔT</span>
+		</div>
+	);
+};
+
+/** Bulle de parole (queue en bas à gauche, vers la bouche). */
+const Bubble: React.FC<{at: number; out: number; x: number; y: number; children: React.ReactNode}> = ({at: t0, out, x, y, children}) => {
+	const frame = useCurrentFrame();
+	const p = usePop(t0);
+	const o = interpolate(frame, [out - 4, out + 2], [1, 0], clamp);
+	if (frame < t0 || o <= 0) return null;
+	return (
+		<div style={{position: 'absolute', left: x, top: y, transform: `scale(${p})`, transformOrigin: '0% 100%', opacity: o}}>
+			<div style={{position: 'relative', width: 400, padding: '22px 30px', borderRadius: 40, background: LPI.paper, border: `6px solid ${N}`, boxShadow: SHADOW, fontFamily: FONT.title, fontWeight: 900, fontSize: 42, lineHeight: 1.12, color: N}}>
+				{children}
+				<svg width={60} height={50} viewBox="0 0 60 50" style={{position: 'absolute', left: 30, bottom: -44, overflow: 'visible'}}>
+					<path d="M0 0 L8 46 L44 0" fill={LPI.paper} stroke={N} strokeWidth={6} strokeLinejoin="round" />
+					<path d="M-2 -6 H48" stroke={LPI.paper} strokeWidth={8} />
+				</svg>
+			</div>
+		</div>
+	);
+};
+
 export const Hook: React.FC = () => {
 	const frame = useCurrentFrame();
-	const Q = at('intro', 'quoi');
-	const G = at('intro', 'glycémie');
-	const pop = usePop(2);
-	const qp = usePop(Q);
-	const value = interpolate(frame, [6, 44], [0, 1], ease);
+	const LEVE = at('intro', 'lève');
+	const EFF = at('intro', "s'effondre");
+	const PASSE = at('intro', 'passé');
+	const QUE = at('intro', 'que');
+	const TRENTE = at('intro', 'trente');
+	const INSU = at('intro', 'insuline');
+	const DIT = at('intro', 'dit');
+	const RIEN = at('intro', 'rien');
+	const VERD = at('intro', 'verdict');
+	const HYPO = at('intro', 'hypoglycémie');
+	const MANQUE = at('intro', 'manque');
+	const SUCRE = at('intro', 'sucre');
+	const GLY = at('intro', 'glycémie');
+	const MAIS = at('intro', 'mais');
+	const CEST = at('intro', "c'est");
+	const QUOI = at('intro', 'quoi');
+	const GLY2 = at('intro', 'glycémie', 2);
+	const IMPACT = EFF + 9;
+	const clockPop = usePop(TRENTE + 2);
+	const easeIn = {...clamp, easing: Easing.in(Easing.quad)};
+	const flashback = frame >= TRENTE - 2 && frame < VERD - 2;
+	// chute (0 debout → 1 couché) : tombe, se rembobine, retombe au retour dans le présent
+	const f = frame < TRENTE - 2 ? interpolate(frame, [EFF - 1, IMPACT], [0, 1], easeIn) : flashback ? interpolate(frame, [TRENTE - 2, TRENTE + 12], [1, 0], ease) : interpolate(frame, [VERD - 2, VERD + 6], [0, 1], easeIn);
+	const rise = frame < EFF ? interpolate(frame, [LEVE - 10, LEVE + 4], [150, 0], ease) : 0;
+	const wobble = frame < TRENTE - 2 ? interpolate(frame, [LEVE + 2, EFF - 1], [0, 1], clamp) * (1 - f) : 0;
+	const leave = interpolate(frame, [MAIS, MAIS + 12], [0, 1], easeIn);
+	const unwell = !flashback;
+	const out = interpolate(frame, [MAIS - 2, MAIS + 8], [1, 0], clamp);
+	const qOut = interpolate(frame, [MAIS + 4, MAIS + 12], [0, 1], ease);
+	const qPunch = frame >= QUE ? 1 + 0.1 * Math.exp(-(frame - QUE) / 4) : 1;
+	const tint = interpolate(frame, [TRENTE - 2, TRENTE + 4, VERD - 4, VERD + 2], [0, 1, 1, 0], clamp);
+	// le lecteur : surgit au-dessus du patient, chute à 0,45 g/l, puis se range comme l'ancienne accroche
+	const mPop = usePop(GLY);
+	const place = interpolate(frame, [MAIS + 4, MAIS + 20], [0, 1], ease);
+	const mx = interpolate(place, [0, 1], [320, HOOK_METER.x]);
+	const my = interpolate(place, [0, 1], [530, HOOK_METER.y]);
+	const mk = interpolate(place, [0, 1], [1, HOOK_METER.k]);
+	const value = interpolate(frame, [GLY + 2, GLY + 8, GLY + 24], [0, 1, 0.45], ease);
+	const cam: CamKey[] = [
+		{at: -1, s: 1},
+		{at: PASSE - 8, s: 1.3, x: 420, y: 520, dur: 16},
+		{at: TRENTE - 2, s: 1, dur: 12},
+		{at: DIT - 6, s: 1.3, x: 540, y: 330, dur: 16},
+		{at: VERD - 4, s: 1, dur: 10},
+	];
+	const c = camAt(frame, cam, HOOK_WIN.w, HOOK_WIN.h);
+	const mouth = c.view(standPt(200, 150).x, standPt(200, 150).y);
+	const clues: [number, React.ReactNode, string, number][] = [
+		[INSU, <SyringeIcon key="i" size={56} />, 'insuline faite', 72],
+		[RIEN, <HungerIcon key="r" size={56} />, 'rien mangé', 560],
+	];
 	return (
 		<AbsoluteFill>
 			<LiveBackground />
-			<Camera punches={[Q + 1, G + 1]} shakes={[Q + 2]} strength={0.04}>
-				<div style={{position: 'absolute', left: 72, top: 226, width: 936}}>
-					<Title at={0} text="C'est quoi la" size={74} stagger={3} brush={false} />
-				</div>
-				<div style={{position: 'absolute', left: 72, top: 312, width: 936}}>
-					<Title at={G} text="*glycémie* ?" size={130} stagger={4} />
-				</div>
-				<div style={{position: 'absolute', left: 72, top: 520, width: 936, height: 560, overflow: 'hidden', opacity: pop}}>
-					<SugarRain on={0.8} />
-				</div>
-				<div style={{position: 'absolute', left: HOOK_METER.x, top: HOOK_METER.y, transform: `scale(${HOOK_METER.k * (0.4 + 0.6 * pop)})`, transformOrigin: 'left top'}}>
-					<Glucometer value={value} strip={0} blood={0} tone={null} beep={frame >= 44 ? Math.exp(-(frame - 44) / 4) : 0} />
-				</div>
-				{frame >= Q ? (
-					<div
-						style={{
-							position: 'absolute',
-							left: 836,
-							top: 500,
-							width: 170,
-							height: 170,
-							borderRadius: 85,
-							background: LPI.pink,
-							border: `8px solid ${LPI.paper}`,
-							boxShadow: SHADOW,
-							display: 'flex',
-							alignItems: 'center',
-							justifyContent: 'center',
-							fontFamily: FONT.title,
-							fontWeight: 900,
-							fontSize: 130,
-							color: N,
-							transform: `scale(${qp}) rotate(${Math.sin(frame / 6) * 8}deg)`,
-						}}
-					>
-						?
+			<Camera punches={[LEVE + 1, PASSE + 1, TRENTE + 1, INSU + 1, RIEN + 1, HYPO + 1, SUCRE + 1, GLY + 1, CEST + 1, GLY2 + 1]} shakes={[IMPACT, HYPO + 2]} strength={0.04}>
+				{/* « Que s'est-il passé ? » : déjà là sur l'image 0, claque sur la question, s'efface sur « Mais au fait » */}
+				{qOut < 1 ? (
+					<div style={{position: 'absolute', left: 72, top: 226, width: 936, opacity: 1 - qOut, transform: `translateY(${-40 * qOut}px) scale(${qPunch})`, transformOrigin: '0 50%'}}>
+						<Title at={-60} text={"Que s'est-il\n*passé* ?"} size={110} />
 					</div>
 				) : null}
-				<Burst at={Q} x={921} y={585} r={200} n={12} />
+				{frame >= CEST - 2 ? (
+					<>
+						<div style={{position: 'absolute', left: 72, top: 226, width: 936}}>
+							<Title at={CEST} text="C'est quoi la" size={74} stagger={3} brush={false} />
+						</div>
+						<div style={{position: 'absolute', left: 72, top: 312, width: 936}}>
+							<Title at={GLY2} text="*glycémie* ?" size={130} stagger={4} />
+						</div>
+					</>
+				) : null}
+				<ZoomCam keys={cam} w={HOOK_WIN.w} h={HOOK_WIN.h} y={HOOK_WIN.y} radius={0}>
+					{leave < 1 ? (
+						<>
+							{/* ombre au sol quand il est couché */}
+							<div style={{position: 'absolute', left: PIVOT.x + LIE.dx - 600, top: PIVOT.y + LIE.dy + 196, width: 620, height: 36, borderRadius: '50%', background: alpha(N, 0.12 * f), opacity: 1 - leave}} />
+							<div
+								style={{
+									position: 'absolute',
+									left: STAND.x,
+									top: STAND.y,
+									opacity: 1 - leave,
+									transformOrigin: `${HP / 2}px ${HP * 1.4}px`,
+									transform: `translate(${LIE.dx * f}px, ${LIE.dy * f + rise + 160 * leave}px) rotate(${-90 * f + Math.sin(frame / 5) * 6 * wobble}deg)`,
+								}}
+							>
+								<Patient
+									size={HP}
+									mood={unwell && frame >= LEVE ? 'mal' : 'calme'}
+									breath={idle(frame)}
+									pale={unwell ? interpolate(frame, [LEVE, EFF], [0.3, 0.8], clamp) : 0}
+									sweat={unwell ? interpolate(frame, [LEVE, EFF], [0.4, 1], clamp) : 0}
+									dizzy={unwell ? wobble : 0}
+									eyesClosed={unwell ? interpolate(f, [0.6, 1], [0, 1], clamp) : 0}
+								/>
+							</div>
+							{/* « il manque de sucre » : les sucres quittent le corps */}
+							{[0, 1, 2, 3, 4].map((i) => {
+								const t0 = SUCRE - 4 + i * 4;
+								const t = frame - t0;
+								if (t < 0 || t > 26) return null;
+								const p = liePt(300 + i * 40, 250 + (i % 2) * 120);
+								return (
+									<div key={i} style={{position: 'absolute', left: p.x - 24, top: p.y - 24 - t * 7, opacity: interpolate(t, [0, 3, 18, 26], [0, 1, 1, 0], clamp), transform: `scale(${interpolate(t, [0, 4, 26], [0.3, 1.1, 0.6], clamp)})`}}>
+										<SugarCube size={52} rot={-14 + i * 9 + t * 2} />
+									</div>
+								);
+							})}
+						</>
+					) : null}
+				</ZoomCam>
+				{/* retour en arrière : image bleutée, bandeau, horloge qui recule */}
+				{tint > 0 ? <AbsoluteFill style={{background: `radial-gradient(circle at 50% 45%, ${alpha(LPI.sky, 0.18 * tint)} 30%, ${alpha(N, 0.28 * tint)} 100%)`}} /> : null}
+				<div style={{position: 'absolute', left: 72, top: 486}}>
+					<Rewind at={TRENTE} out={VERD - 2} />
+				</div>
+				{flashback ? (
+					<div style={{position: 'absolute', left: 64, top: 600, transform: `scale(${clockPop})`}}>
+						<WallClock h={8} m={0} size={180} spin={interpolate(frame, [TRENTE + 2, TRENTE + 20], [0, -0.5], ease)} />
+					</div>
+				) : null}
+				<Bubble at={DIT + 2} out={VERD - 2} x={mouth.x + 70} y={HOOK_WIN.y + mouth.y - 330}>
+					« Ce matin, je n'ai <span style={{color: LPI.blue}}>rien mangé</span>… »
+				</Bubble>
+				{frame < MAIS + 8 ? (
+					<div style={{position: 'absolute', inset: 0, opacity: out}}>
+						<Lead at={INSU} text="les indices :" />
+						{clues.map(([t, icon, label, x]) => (
+							<div key={label} style={{position: 'absolute', left: x, top: 1240}}>
+								<CauseChip at={t} icon={icon} label={label} />
+							</div>
+						))}
+					</div>
+				) : null}
+				<Stamp at={HYPO + 2} x={540} y={650} text="Hypoglycémie" size={62} rot={-6} out={GLY - 6} />
+				{frame < GLY - 4 ? (
+					<div style={{position: 'absolute', left: 0, right: 0, top: 712, textAlign: 'center'}}>
+						<Pill at={MANQUE} color={LPI.sky} size={46}>
+							pas assez de sucre dans le sang
+						</Pill>
+					</div>
+				) : null}
+				{frame >= GLY ? (
+					<div style={{position: 'absolute', left: mx, top: my, transform: `scale(${mk * (0.4 + 0.6 * mPop)})`, transformOrigin: 'left top'}}>
+						<Glucometer value={value} strip={0} blood={0} tone={value < 0.7 && frame > GLY + 10 ? LPI.sky : null} beep={frame >= GLY + 24 ? Math.exp(-(frame - GLY - 24) / 4) : 0} />
+					</div>
+				) : null}
+				<QMark at={QUE} out={TRENTE - 4} x={820} y={640} size={150} />
+				<QMark at={QUOI} x={836} y={500} />
+				<Burst at={IMPACT} x={540} y={1150} r={300} n={14} />
+				<Burst at={QUE} x={895} y={715} r={190} n={12} />
+				<Burst at={HYPO + 2} x={540} y={650} r={320} n={14} />
+				<Burst at={QUOI} x={921} y={585} r={200} n={12} />
 			</Camera>
-			<Sfx name="pop" at={Q} volume={0.12} />
-			<Sfx name="whoosh" at={G} volume={0.06} />
-			<Sfx name="ding" at={44} volume={0.06} />
+			<Flash at={IMPACT} />
+			<Flash at={VERD - 2} color={LPI.paper} max={0.7} />
+			<Flash at={HYPO + 2} />
+			<Sfx name="heartbeat" at={0} volume={0.1} />
+			<Sfx name="whoosh" at={EFF} volume={0.07} />
+			<Sfx name="impact" at={IMPACT} volume={0.12} />
+			<Sfx name="pop" at={QUE} volume={0.12} />
+			<Sfx name="whoosh" at={TRENTE - 3} volume={0.08} />
+			{[0, 5, 10, 15].map((k) => (
+				<Sfx key={k} name="tick" at={TRENTE + 3 + k} volume={0.06} />
+			))}
+			{clues.map(([t]) => (
+				<Sfx key={t} name="pop" at={t} volume={0.1} />
+			))}
+			<Sfx name="pop" at={DIT + 2} volume={0.08} />
+			<Sfx name="drumroll" at={VERD} volume={0.07} dur={HYPO - VERD + 2} />
+			<Sfx name="stamp" at={HYPO + 2} volume={0.1} />
+			<Sfx name="pop" at={SUCRE} volume={0.08} />
+			<Sfx name="ding" at={GLY + 24} volume={0.06} />
+			<Sfx name="whoosh" at={MAIS} volume={0.06} />
+			<Sfx name="pop" at={QUOI} volume={0.12} />
+			<Sfx name="whoosh" at={GLY2} volume={0.06} />
 		</AbsoluteFill>
 	);
 };

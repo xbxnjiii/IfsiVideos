@@ -1,5 +1,5 @@
 [
-	{"id": "intro", "text": "C'est quoi, la glycémie ?"},
+	{"id": "intro", "text": "Ton patient se lève… et s'effondre. Que s'est-il passé ? Trente minutes plus tôt, il avait fait son insuline, et il t'avait dit : ce matin, je n'ai rien mangé. Verdict : hypoglycémie ! Il manque de sucre dans le sang. Une simple glycémie aurait pu éviter sa chute. Mais au fait… c'est quoi, la glycémie ?"},
 	{"id": "def", "text": "La glycémie, c'est le taux de sucre dans le sang. Ce sucre, le glucose, c'est le carburant de nos cellules. Elle se mesure en grammes par litre."},
 	{"id": "mesure", "text": "Pour la mesurer, on fait une glycémie capillaire, au bout du doigt : on pique, on dépose une goutte de sang sur la bandelette, et le lecteur affiche le résultat."},
 	{"id": "norme", "text": "Chez l'adulte à {jeun|jun}, c'est-à-dire sans avoir mangé, la normale, c'est entre 0,70 et 1,10 gramme par litre : c'est la normoglycémie."},
