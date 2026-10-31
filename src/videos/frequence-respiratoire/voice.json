@@ -1,908 +1,1063 @@
 {
  "voice": "voix.wav (tts_voix.py)",
- "duration": 66.13,
+ "duration": 75.33,
  "sections": [
   {
    "id": "intro",
    "start": 0.049,
-   "end": 2.121
+   "end": 11.309
   },
   {
    "id": "def",
-   "start": 3.046,
-   "end": 11.901
+   "start": 12.246,
+   "end": 21.101
   },
   {
    "id": "mesure",
-   "start": 12.845,
-   "end": 19.581
+   "start": 22.045,
+   "end": 28.781
   },
   {
    "id": "norme",
-   "start": 20.516,
-   "end": 24.254
+   "start": 29.716,
+   "end": 33.454
   },
   {
    "id": "tachy",
-   "start": 25.169,
-   "end": 32.16
+   "start": 34.369,
+   "end": 41.36
   },
   {
    "id": "brady",
-   "start": 33.107,
-   "end": 39.373
+   "start": 42.307,
+   "end": 48.573
   },
   {
    "id": "obs",
-   "start": 40.305,
-   "end": 50.378
+   "start": 49.505,
+   "end": 59.578
   },
   {
    "id": "outro",
-   "start": 51.3,
-   "end": 65.814
+   "start": 60.5,
+   "end": 75.014
   }
  ],
  "words": [
   {
-   "text": "C'est",
+   "text": "Vingt",
    "start": 0.049,
-   "end": 0.257
+   "end": 0.28
   },
   {
-   "text": "quoi,",
-   "start": 0.257,
-   "end": 0.535
+   "text": "mille.",
+   "start": 0.28,
+   "end": 0.686
   },
   {
-   "text": "la",
-   "start": 0.871,
-   "end": 0.94
-  },
-  {
-   "text": "fréquence",
-   "start": 0.94,
-   "end": 1.322
-  },
-  {
-   "text": "respiratoire ?",
-   "start": 1.322,
-   "end": 2.121
-  },
-  {
-   "text": "La",
-   "start": 3.046,
-   "end": 3.208
-  },
-  {
-   "text": "fréquence",
-   "start": 3.208,
-   "end": 3.532
-  },
-  {
-   "text": "respiratoire,",
-   "start": 3.532,
-   "end": 4.25
-  },
-  {
-   "text": "c'est",
-   "start": 4.562,
-   "end": 4.666
+   "text": "C'est",
+   "start": 1.012,
+   "end": 1.208
   },
   {
    "text": "le",
-   "start": 4.667,
-   "end": 4.736
+   "start": 1.208,
+   "end": 1.278
   },
   {
    "text": "nombre",
-   "start": 4.736,
-   "end": 5.002
+   "start": 1.278,
+   "end": 1.532
   },
   {
    "text": "de",
-   "start": 5.002,
-   "end": 5.083
+   "start": 1.532,
+   "end": 1.637
   },
   {
-   "text": "respirations",
-   "start": 5.083,
-   "end": 5.708
+   "text": "fois",
+   "start": 1.637,
+   "end": 1.868
   },
   {
-   "text": "en",
-   "start": 5.708,
-   "end": 5.789
+   "text": "où",
+   "start": 1.868,
+   "end": 1.926
   },
   {
-   "text": "une",
-   "start": 5.789,
-   "end": 5.94
+   "text": "tu",
+   "start": 1.926,
+   "end": 2.042
   },
   {
-   "text": "minute.",
-   "start": 5.94,
-   "end": 6.449
+   "text": "respires…",
+   "start": 2.042,
+   "end": 2.551
   },
   {
-   "text": "Une",
-   "start": 6.763,
-   "end": 6.948
+   "text": "chaque",
+   "start": 2.829,
+   "end": 3.025
   },
   {
-   "text": "inspiration,",
-   "start": 6.948,
-   "end": 7.631
+   "text": "jour.",
+   "start": 3.025,
+   "end": 3.407
+  },
+  {
+   "text": "Sans",
+   "start": 3.719,
+   "end": 3.939
+  },
+  {
+   "text": "même",
+   "start": 3.939,
+   "end": 4.101
+  },
+  {
+   "text": "y",
+   "start": 4.101,
+   "end": 4.147
+  },
+  {
+   "text": "penser.",
+   "start": 4.147,
+   "end": 4.622
+  },
+  {
+   "text": "Et",
+   "start": 4.943,
+   "end": 5.036
+  },
+  {
+   "text": "pourtant,",
+   "start": 5.036,
+   "end": 5.475
+  },
+  {
+   "text": "à",
+   "start": 5.626,
+   "end": 5.695
+  },
+  {
+   "text": "l'hôpital,",
+   "start": 5.695,
+   "end": 6.251
+  },
+  {
+   "text": "c'est",
+   "start": 6.552,
+   "end": 6.656
+  },
+  {
+   "text": "la",
+   "start": 6.656,
+   "end": 6.725
+  },
+  {
+   "text": "constante",
+   "start": 6.725,
+   "end": 7.177
+  },
+  {
+   "text": "qu'on",
+   "start": 7.177,
+   "end": 7.293
+  },
+  {
+   "text": "oublie",
+   "start": 7.293,
+   "end": 7.512
+  },
+  {
+   "text": "le",
+   "start": 7.512,
+   "end": 7.582
   },
   {
    "text": "plus",
-   "start": 7.898,
-   "end": 8.106
+   "start": 7.582,
+   "end": 7.721
   },
   {
-   "text": "une",
-   "start": 8.106,
-   "end": 8.187
-  },
-  {
-   "text": "expiration :",
-   "start": 8.187,
-   "end": 8.858
-  },
-  {
-   "text": "ça",
-   "start": 9.148,
-   "end": 9.252
-  },
-  {
-   "text": "fait",
-   "start": 9.252,
-   "end": 9.367
-  },
-  {
-   "text": "un",
-   "start": 9.367,
-   "end": 9.46
-  },
-  {
-   "text": "cycle.",
-   "start": 9.46,
-   "end": 9.911
-  },
-  {
-   "text": "On",
-   "start": 10.223,
-   "end": 10.362
-  },
-  {
-   "text": "parle",
-   "start": 10.362,
-   "end": 10.593
-  },
-  {
-   "text": "donc",
-   "start": 10.593,
-   "end": 10.848
-  },
-  {
-   "text": "de",
-   "start": 10.848,
-   "end": 10.952
-  },
-  {
-   "text": "cycles",
-   "start": 10.952,
-   "end": 11.253
-  },
-  {
-   "text": "par",
-   "start": 11.253,
-   "end": 11.415
-  },
-  {
-   "text": "minute.",
-   "start": 11.415,
-   "end": 11.901
-  },
-  {
-   "text": "Pour",
-   "start": 12.845,
-   "end": 12.949
-  },
-  {
-   "text": "la",
-   "start": 12.949,
-   "end": 13.019
-  },
-  {
-   "text": "compter,",
-   "start": 13.019,
-   "end": 13.435
-  },
-  {
-   "text": "regarde",
-   "start": 13.806,
-   "end": 14.141
-  },
-  {
-   "text": "le",
-   "start": 14.141,
-   "end": 14.234
-  },
-  {
-   "text": "thorax.",
-   "start": 14.234,
-   "end": 14.824
-  },
-  {
-   "text": "Il",
-   "start": 15.152,
-   "end": 15.349
-  },
-  {
-   "text": "se",
-   "start": 15.349,
-   "end": 15.511
-  },
-  {
-   "text": "soulève,",
-   "start": 15.511,
-   "end": 15.916
-  },
-  {
-   "text": "il",
-   "start": 16.275,
-   "end": 16.356
-  },
-  {
-   "text": "redescend :",
-   "start": 16.356,
-   "end": 16.934
-  },
-  {
-   "text": "un",
-   "start": 17.27,
-   "end": 17.397
-  },
-  {
-   "text": "cycle.",
-   "start": 17.397,
-   "end": 17.849
-  },
-  {
-   "text": "Compte",
-   "start": 18.157,
-   "end": 18.47
-  },
-  {
-   "text": "pendant",
-   "start": 18.47,
-   "end": 18.713
-  },
-  {
-   "text": "une",
-   "start": 18.713,
-   "end": 18.794
-  },
-  {
-   "text": "minute",
-   "start": 18.794,
-   "end": 19.06
-  },
-  {
-   "text": "entière.",
-   "start": 19.06,
-   "end": 19.581
-  },
-  {
-   "text": "Chez",
-   "start": 20.516,
-   "end": 20.701
-  },
-  {
-   "text": "l'adulte",
-   "start": 20.701,
-   "end": 21.072
-  },
-  {
-   "text": "au",
-   "start": 21.072,
-   "end": 21.095
-  },
-  {
-   "text": "repos,",
-   "start": 21.095,
-   "end": 21.477
-  },
-  {
-   "text": "la",
-   "start": 21.766,
-   "end": 21.812
-  },
-  {
-   "text": "normale,",
-   "start": 21.812,
-   "end": 22.264
-  },
-  {
-   "text": "c'est",
-   "start": 22.541,
-   "end": 22.669
-  },
-  {
-   "text": "entre",
-   "start": 22.669,
-   "end": 22.845
-  },
-  {
-   "text": "12",
-   "start": 22.845,
-   "end": 23.091
-  },
-  {
-   "text": "et",
-   "start": 23.091,
-   "end": 23.161
-  },
-  {
-   "text": "20",
-   "start": 23.161,
-   "end": 23.407
-  },
-  {
-   "text": "cycles",
-   "start": 23.407,
-   "end": 23.618
-  },
-  {
-   "text": "par",
-   "start": 23.618,
-   "end": 23.768
-  },
-  {
-   "text": "minute.",
-   "start": 23.768,
-   "end": 24.254
-  },
-  {
-   "text": "Au-dessus",
-   "start": 25.169,
-   "end": 25.539
-  },
-  {
-   "text": "de",
-   "start": 25.539,
-   "end": 25.667
-  },
-  {
-   "text": "20,",
-   "start": 25.667,
-   "end": 25.921
-  },
-  {
-   "text": "c'est",
-   "start": 26.234,
-   "end": 26.326
-  },
-  {
-   "text": "une",
-   "start": 26.326,
-   "end": 26.5
-  },
-  {
-   "text": "tachypnée :",
-   "start": 26.5,
-   "end": 27.044
-  },
-  {
-   "text": "la",
-   "start": 27.322,
-   "end": 27.38
-  },
-  {
-   "text": "respiration",
-   "start": 27.38,
-   "end": 27.935
-  },
-  {
-   "text": "s'accélère.",
-   "start": 27.935,
-   "end": 28.583
-  },
-  {
-   "text": "Ça",
-   "start": 28.896,
-   "end": 29.093
-  },
-  {
-   "text": "arrive",
-   "start": 29.093,
-   "end": 29.324
-  },
-  {
-   "text": "avec",
-   "start": 29.324,
-   "end": 29.509
-  },
-  {
-   "text": "l'effort,",
-   "start": 29.509,
-   "end": 29.972
-  },
-  {
-   "text": "la",
-   "start": 30.308,
-   "end": 30.389
-  },
-  {
-   "text": "fièvre,",
-   "start": 30.389,
-   "end": 30.829
-  },
-  {
-   "text": "l'anxiété",
-   "start": 31.072,
-   "end": 31.546
-  },
-  {
-   "text": "ou",
-   "start": 31.546,
-   "end": 31.593
-  },
-  {
-   "text": "la",
-   "start": 31.593,
-   "end": 31.697
-  },
-  {
-   "text": "douleur.",
-   "start": 31.697,
-   "end": 32.16
-  },
-  {
-   "text": "En",
-   "start": 33.107,
-   "end": 33.2
-  },
-  {
-   "text": "dessous",
-   "start": 33.2,
-   "end": 33.443
-  },
-  {
-   "text": "de",
-   "start": 33.443,
-   "end": 33.57
-  },
-  {
-   "text": "12,",
-   "start": 33.57,
-   "end": 33.952
-  },
-  {
-   "text": "c'est",
-   "start": 34.149,
-   "end": 34.253
-  },
-  {
-   "text": "une",
-   "start": 34.253,
-   "end": 34.427
-  },
-  {
-   "text": "bradypnée :",
-   "start": 34.427,
-   "end": 34.982
-  },
-  {
-   "text": "la",
-   "start": 35.272,
-   "end": 35.33
-  },
-  {
-   "text": "respiration",
-   "start": 35.33,
-   "end": 35.897
-  },
-  {
-   "text": "ralentit.",
-   "start": 35.897,
-   "end": 36.464
-  },
-  {
-   "text": "Attention",
-   "start": 36.78,
-   "end": 37.289
-  },
-  {
-   "text": "aux",
-   "start": 37.289,
-   "end": 37.324
-  },
-  {
-   "text": "médicaments",
-   "start": 37.324,
-   "end": 37.764
-  },
-  {
-   "text": "qui",
-   "start": 37.764,
-   "end": 37.926
-  },
-  {
-   "text": "endorment,",
-   "start": 37.926,
-   "end": 38.377
-  },
-  {
-   "text": "comme",
-   "start": 38.632,
-   "end": 38.759
-  },
-  {
-   "text": "la",
-   "start": 38.759,
-   "end": 38.829
-  },
-  {
-   "text": "morphine !",
-   "start": 38.829,
-   "end": 39.373
+   "text": "souvent.",
+   "start": 7.721,
+   "end": 8.114
   },
   {
    "text": "Mais",
-   "start": 40.305,
-   "end": 40.41
+   "start": 8.45,
+   "end": 8.6
   },
   {
-   "text": "il",
-   "start": 40.41,
-   "end": 40.537
+   "text": "au",
+   "start": 8.6,
+   "end": 8.67
   },
   {
-   "text": "n'y",
-   "start": 40.537,
-   "end": 40.618
-  },
-  {
-   "text": "a",
-   "start": 40.618,
-   "end": 40.653
-  },
-  {
-   "text": "pas",
-   "start": 40.653,
-   "end": 40.768
-  },
-  {
-   "text": "que",
-   "start": 40.768,
-   "end": 40.873
-  },
-  {
-   "text": "le",
-   "start": 40.873,
-   "end": 40.965
-  },
-  {
-   "text": "chiffre !",
-   "start": 40.965,
-   "end": 41.44
-  },
-  {
-   "text": "On",
-   "start": 41.766,
-   "end": 41.893
-  },
-  {
-   "text": "regarde",
-   "start": 41.893,
-   "end": 42.252
-  },
-  {
-   "text": "l'amplitude :",
-   "start": 42.252,
-   "end": 42.842
-  },
-  {
-   "text": "une",
-   "start": 43.178,
-   "end": 43.247
-  },
-  {
-   "text": "respiration",
-   "start": 43.247,
-   "end": 43.837
-  },
-  {
-   "text": "ample,",
-   "start": 43.837,
-   "end": 44.173
-  },
-  {
-   "text": "ou",
-   "start": 44.486,
-   "end": 44.52
-  },
-  {
-   "text": "superficielle.",
-   "start": 44.52,
-   "end": 45.388
-  },
-  {
-   "text": "Le",
-   "start": 45.734,
-   "end": 45.861
-  },
-  {
-   "text": "rythme :",
-   "start": 45.861,
-   "end": 46.231
-  },
-  {
-   "text": "régulier",
-   "start": 46.579,
-   "end": 47.053
-  },
-  {
-   "text": "ou",
-   "start": 47.053,
-   "end": 47.111
-  },
-  {
-   "text": "pas.",
-   "start": 47.111,
-   "end": 47.389
-  },
-  {
-   "text": "Et",
-   "start": 47.704,
-   "end": 47.831
-  },
-  {
-   "text": "quand",
-   "start": 47.831,
-   "end": 47.97
-  },
-  {
-   "text": "le",
-   "start": 47.97,
-   "end": 48.04
-  },
-  {
-   "text": "patient",
-   "start": 48.04,
-   "end": 48.352
-  },
-  {
-   "text": "a",
-   "start": 48.352,
-   "end": 48.387
-  },
-  {
-   "text": "du",
-   "start": 48.387,
-   "end": 48.491
-  },
-  {
-   "text": "mal",
-   "start": 48.491,
-   "end": 48.653
-  },
-  {
-   "text": "à",
-   "start": 48.653,
-   "end": 48.688
-  },
-  {
-   "text": "respirer,",
-   "start": 48.688,
-   "end": 49.22
+   "text": "fait…",
+   "start": 8.67,
+   "end": 9.04
   },
   {
    "text": "c'est",
-   "start": 49.556,
-   "end": 49.66
+   "start": 9.353,
+   "end": 9.492
   },
   {
-   "text": "une",
-   "start": 49.66,
-   "end": 49.834
+   "text": "quoi,",
+   "start": 9.492,
+   "end": 9.781
   },
   {
-   "text": "dyspnée.",
-   "start": 49.834,
-   "end": 50.378
-  },
-  {
-   "text": "Petit",
-   "start": 51.3,
-   "end": 51.589
-  },
-  {
-   "text": "récap !",
-   "start": 51.589,
-   "end": 52.122
-  },
-  {
-   "text": "La",
-   "start": 52.433,
-   "end": 52.607
+   "text": "la",
+   "start": 10.093,
+   "end": 10.151
   },
   {
    "text": "fréquence",
-   "start": 52.607,
-   "end": 52.931
+   "start": 10.151,
+   "end": 10.522
   },
   {
-   "text": "respiratoire,",
-   "start": 52.931,
-   "end": 53.649
-  },
-  {
-   "text": "c'est",
-   "start": 53.961,
-   "end": 54.077
-  },
-  {
-   "text": "le",
-   "start": 54.077,
-   "end": 54.158
-  },
-  {
-   "text": "nombre",
-   "start": 54.158,
-   "end": 54.424
-  },
-  {
-   "text": "de",
-   "start": 54.424,
-   "end": 54.528
-  },
-  {
-   "text": "cycles",
-   "start": 54.528,
-   "end": 54.841
-  },
-  {
-   "text": "par",
-   "start": 54.841,
-   "end": 55.014
-  },
-  {
-   "text": "minute.",
-   "start": 55.014,
-   "end": 55.512
-  },
-  {
-   "text": "On",
-   "start": 55.825,
-   "end": 55.975
-  },
-  {
-   "text": "compte",
-   "start": 55.975,
-   "end": 56.206
-  },
-  {
-   "text": "les",
-   "start": 56.206,
-   "end": 56.288
-  },
-  {
-   "text": "mouvements",
-   "start": 56.288,
-   "end": 56.554
-  },
-  {
-   "text": "du",
-   "start": 56.554,
-   "end": 56.646
-  },
-  {
-   "text": "thorax",
-   "start": 56.646,
-   "end": 57.098
-  },
-  {
-   "text": "pendant",
-   "start": 57.098,
-   "end": 57.318
-  },
-  {
-   "text": "une",
-   "start": 57.318,
-   "end": 57.399
-  },
-  {
-   "text": "minute.",
-   "start": 57.399,
-   "end": 57.896
+   "text": "respiratoire ?",
+   "start": 10.522,
+   "end": 11.309
   },
   {
    "text": "La",
-   "start": 58.218,
-   "end": 58.345
+   "start": 12.246,
+   "end": 12.408
+  },
+  {
+   "text": "fréquence",
+   "start": 12.408,
+   "end": 12.732
+  },
+  {
+   "text": "respiratoire,",
+   "start": 12.732,
+   "end": 13.45
+  },
+  {
+   "text": "c'est",
+   "start": 13.762,
+   "end": 13.866
+  },
+  {
+   "text": "le",
+   "start": 13.867,
+   "end": 13.936
+  },
+  {
+   "text": "nombre",
+   "start": 13.936,
+   "end": 14.202
+  },
+  {
+   "text": "de",
+   "start": 14.202,
+   "end": 14.283
+  },
+  {
+   "text": "respirations",
+   "start": 14.283,
+   "end": 14.908
+  },
+  {
+   "text": "en",
+   "start": 14.908,
+   "end": 14.989
+  },
+  {
+   "text": "une",
+   "start": 14.989,
+   "end": 15.14
+  },
+  {
+   "text": "minute.",
+   "start": 15.14,
+   "end": 15.649
+  },
+  {
+   "text": "Une",
+   "start": 15.963,
+   "end": 16.148
+  },
+  {
+   "text": "inspiration,",
+   "start": 16.148,
+   "end": 16.831
+  },
+  {
+   "text": "plus",
+   "start": 17.098,
+   "end": 17.306
+  },
+  {
+   "text": "une",
+   "start": 17.306,
+   "end": 17.387
+  },
+  {
+   "text": "expiration :",
+   "start": 17.387,
+   "end": 18.058
+  },
+  {
+   "text": "ça",
+   "start": 18.348,
+   "end": 18.452
+  },
+  {
+   "text": "fait",
+   "start": 18.452,
+   "end": 18.567
+  },
+  {
+   "text": "un",
+   "start": 18.567,
+   "end": 18.66
+  },
+  {
+   "text": "cycle.",
+   "start": 18.66,
+   "end": 19.111
+  },
+  {
+   "text": "On",
+   "start": 19.423,
+   "end": 19.562
+  },
+  {
+   "text": "parle",
+   "start": 19.562,
+   "end": 19.793
+  },
+  {
+   "text": "donc",
+   "start": 19.793,
+   "end": 20.048
+  },
+  {
+   "text": "de",
+   "start": 20.048,
+   "end": 20.152
+  },
+  {
+   "text": "cycles",
+   "start": 20.152,
+   "end": 20.453
+  },
+  {
+   "text": "par",
+   "start": 20.453,
+   "end": 20.615
+  },
+  {
+   "text": "minute.",
+   "start": 20.615,
+   "end": 21.101
+  },
+  {
+   "text": "Pour",
+   "start": 22.045,
+   "end": 22.149
+  },
+  {
+   "text": "la",
+   "start": 22.149,
+   "end": 22.219
+  },
+  {
+   "text": "compter,",
+   "start": 22.219,
+   "end": 22.635
+  },
+  {
+   "text": "regarde",
+   "start": 23.006,
+   "end": 23.341
+  },
+  {
+   "text": "le",
+   "start": 23.341,
+   "end": 23.434
+  },
+  {
+   "text": "thorax.",
+   "start": 23.434,
+   "end": 24.024
+  },
+  {
+   "text": "Il",
+   "start": 24.352,
+   "end": 24.549
+  },
+  {
+   "text": "se",
+   "start": 24.549,
+   "end": 24.711
+  },
+  {
+   "text": "soulève,",
+   "start": 24.711,
+   "end": 25.116
+  },
+  {
+   "text": "il",
+   "start": 25.475,
+   "end": 25.556
+  },
+  {
+   "text": "redescend :",
+   "start": 25.556,
+   "end": 26.134
+  },
+  {
+   "text": "un",
+   "start": 26.47,
+   "end": 26.597
+  },
+  {
+   "text": "cycle.",
+   "start": 26.597,
+   "end": 27.049
+  },
+  {
+   "text": "Compte",
+   "start": 27.357,
+   "end": 27.67
+  },
+  {
+   "text": "pendant",
+   "start": 27.67,
+   "end": 27.913
+  },
+  {
+   "text": "une",
+   "start": 27.913,
+   "end": 27.994
+  },
+  {
+   "text": "minute",
+   "start": 27.994,
+   "end": 28.26
+  },
+  {
+   "text": "entière.",
+   "start": 28.26,
+   "end": 28.781
+  },
+  {
+   "text": "Chez",
+   "start": 29.716,
+   "end": 29.901
+  },
+  {
+   "text": "l'adulte",
+   "start": 29.901,
+   "end": 30.272
+  },
+  {
+   "text": "au",
+   "start": 30.272,
+   "end": 30.295
+  },
+  {
+   "text": "repos,",
+   "start": 30.295,
+   "end": 30.677
+  },
+  {
+   "text": "la",
+   "start": 30.966,
+   "end": 31.012
   },
   {
    "text": "normale,",
-   "start": 58.345,
-   "end": 58.819
+   "start": 31.012,
+   "end": 31.464
+  },
+  {
+   "text": "c'est",
+   "start": 31.741,
+   "end": 31.869
   },
   {
    "text": "entre",
-   "start": 59.144,
-   "end": 59.325
+   "start": 31.869,
+   "end": 32.045
   },
   {
    "text": "12",
-   "start": 59.325,
-   "end": 59.58
+   "start": 32.045,
+   "end": 32.291
   },
   {
    "text": "et",
-   "start": 59.58,
-   "end": 59.653
+   "start": 32.291,
+   "end": 32.361
   },
   {
-   "text": "20.",
-   "start": 59.653,
-   "end": 59.907
+   "text": "20",
+   "start": 32.361,
+   "end": 32.607
   },
   {
-   "text": "Au-dessus :",
-   "start": 60.224,
-   "end": 60.86
+   "text": "cycles",
+   "start": 32.607,
+   "end": 32.818
   },
   {
-   "text": "tachypnée.",
-   "start": 61.138,
-   "end": 61.74
+   "text": "par",
+   "start": 32.818,
+   "end": 32.968
+  },
+  {
+   "text": "minute.",
+   "start": 32.968,
+   "end": 33.454
+  },
+  {
+   "text": "Au-dessus",
+   "start": 34.369,
+   "end": 34.739
+  },
+  {
+   "text": "de",
+   "start": 34.739,
+   "end": 34.867
+  },
+  {
+   "text": "20,",
+   "start": 34.867,
+   "end": 35.121
+  },
+  {
+   "text": "c'est",
+   "start": 35.434,
+   "end": 35.526
+  },
+  {
+   "text": "une",
+   "start": 35.526,
+   "end": 35.7
+  },
+  {
+   "text": "tachypnée :",
+   "start": 35.7,
+   "end": 36.244
+  },
+  {
+   "text": "la",
+   "start": 36.522,
+   "end": 36.58
+  },
+  {
+   "text": "respiration",
+   "start": 36.58,
+   "end": 37.135
+  },
+  {
+   "text": "s'accélère.",
+   "start": 37.135,
+   "end": 37.783
+  },
+  {
+   "text": "Ça",
+   "start": 38.096,
+   "end": 38.293
+  },
+  {
+   "text": "arrive",
+   "start": 38.293,
+   "end": 38.524
+  },
+  {
+   "text": "avec",
+   "start": 38.524,
+   "end": 38.709
+  },
+  {
+   "text": "l'effort,",
+   "start": 38.709,
+   "end": 39.172
+  },
+  {
+   "text": "la",
+   "start": 39.508,
+   "end": 39.589
+  },
+  {
+   "text": "fièvre,",
+   "start": 39.589,
+   "end": 40.029
+  },
+  {
+   "text": "l'anxiété",
+   "start": 40.272,
+   "end": 40.746
+  },
+  {
+   "text": "ou",
+   "start": 40.746,
+   "end": 40.793
+  },
+  {
+   "text": "la",
+   "start": 40.793,
+   "end": 40.897
+  },
+  {
+   "text": "douleur.",
+   "start": 40.897,
+   "end": 41.36
   },
   {
    "text": "En",
-   "start": 62.049,
-   "end": 62.176
+   "start": 42.307,
+   "end": 42.4
   },
   {
-   "text": "dessous :",
-   "start": 62.176,
-   "end": 62.627
+   "text": "dessous",
+   "start": 42.4,
+   "end": 42.643
   },
   {
-   "text": "bradypnée.",
-   "start": 62.998,
-   "end": 63.646
+   "text": "de",
+   "start": 42.643,
+   "end": 42.77
+  },
+  {
+   "text": "12,",
+   "start": 42.77,
+   "end": 43.152
+  },
+  {
+   "text": "c'est",
+   "start": 43.349,
+   "end": 43.453
+  },
+  {
+   "text": "une",
+   "start": 43.453,
+   "end": 43.627
+  },
+  {
+   "text": "bradypnée :",
+   "start": 43.627,
+   "end": 44.182
+  },
+  {
+   "text": "la",
+   "start": 44.472,
+   "end": 44.53
+  },
+  {
+   "text": "respiration",
+   "start": 44.53,
+   "end": 45.097
+  },
+  {
+   "text": "ralentit.",
+   "start": 45.097,
+   "end": 45.664
+  },
+  {
+   "text": "Attention",
+   "start": 45.98,
+   "end": 46.489
+  },
+  {
+   "text": "aux",
+   "start": 46.489,
+   "end": 46.524
+  },
+  {
+   "text": "médicaments",
+   "start": 46.524,
+   "end": 46.964
+  },
+  {
+   "text": "qui",
+   "start": 46.964,
+   "end": 47.126
+  },
+  {
+   "text": "endorment,",
+   "start": 47.126,
+   "end": 47.577
+  },
+  {
+   "text": "comme",
+   "start": 47.832,
+   "end": 47.959
+  },
+  {
+   "text": "la",
+   "start": 47.959,
+   "end": 48.029
+  },
+  {
+   "text": "morphine !",
+   "start": 48.029,
+   "end": 48.573
+  },
+  {
+   "text": "Mais",
+   "start": 49.505,
+   "end": 49.61
+  },
+  {
+   "text": "il",
+   "start": 49.61,
+   "end": 49.737
+  },
+  {
+   "text": "n'y",
+   "start": 49.737,
+   "end": 49.818
+  },
+  {
+   "text": "a",
+   "start": 49.818,
+   "end": 49.853
+  },
+  {
+   "text": "pas",
+   "start": 49.853,
+   "end": 49.968
+  },
+  {
+   "text": "que",
+   "start": 49.968,
+   "end": 50.073
+  },
+  {
+   "text": "le",
+   "start": 50.073,
+   "end": 50.165
+  },
+  {
+   "text": "chiffre !",
+   "start": 50.165,
+   "end": 50.64
+  },
+  {
+   "text": "On",
+   "start": 50.966,
+   "end": 51.093
+  },
+  {
+   "text": "regarde",
+   "start": 51.093,
+   "end": 51.452
+  },
+  {
+   "text": "l'amplitude :",
+   "start": 51.452,
+   "end": 52.042
+  },
+  {
+   "text": "une",
+   "start": 52.378,
+   "end": 52.447
+  },
+  {
+   "text": "respiration",
+   "start": 52.447,
+   "end": 53.037
+  },
+  {
+   "text": "ample,",
+   "start": 53.037,
+   "end": 53.373
+  },
+  {
+   "text": "ou",
+   "start": 53.686,
+   "end": 53.72
+  },
+  {
+   "text": "superficielle.",
+   "start": 53.72,
+   "end": 54.588
+  },
+  {
+   "text": "Le",
+   "start": 54.934,
+   "end": 55.061
+  },
+  {
+   "text": "rythme :",
+   "start": 55.061,
+   "end": 55.431
+  },
+  {
+   "text": "régulier",
+   "start": 55.779,
+   "end": 56.253
+  },
+  {
+   "text": "ou",
+   "start": 56.253,
+   "end": 56.311
+  },
+  {
+   "text": "pas.",
+   "start": 56.311,
+   "end": 56.589
   },
   {
    "text": "Et",
-   "start": 63.962,
-   "end": 64.089
+   "start": 56.904,
+   "end": 57.031
+  },
+  {
+   "text": "quand",
+   "start": 57.031,
+   "end": 57.17
+  },
+  {
+   "text": "le",
+   "start": 57.17,
+   "end": 57.24
+  },
+  {
+   "text": "patient",
+   "start": 57.24,
+   "end": 57.552
+  },
+  {
+   "text": "a",
+   "start": 57.552,
+   "end": 57.587
   },
   {
    "text": "du",
-   "start": 64.089,
-   "end": 64.193
+   "start": 57.587,
+   "end": 57.691
   },
   {
    "text": "mal",
-   "start": 64.194,
-   "end": 64.367
+   "start": 57.691,
+   "end": 57.853
   },
   {
    "text": "à",
-   "start": 64.367,
-   "end": 64.413
+   "start": 57.853,
+   "end": 57.888
+  },
+  {
+   "text": "respirer,",
+   "start": 57.888,
+   "end": 58.42
+  },
+  {
+   "text": "c'est",
+   "start": 58.756,
+   "end": 58.86
+  },
+  {
+   "text": "une",
+   "start": 58.86,
+   "end": 59.034
+  },
+  {
+   "text": "dyspnée.",
+   "start": 59.034,
+   "end": 59.578
+  },
+  {
+   "text": "Petit",
+   "start": 60.5,
+   "end": 60.789
+  },
+  {
+   "text": "récap !",
+   "start": 60.789,
+   "end": 61.322
+  },
+  {
+   "text": "La",
+   "start": 61.633,
+   "end": 61.807
+  },
+  {
+   "text": "fréquence",
+   "start": 61.807,
+   "end": 62.131
+  },
+  {
+   "text": "respiratoire,",
+   "start": 62.131,
+   "end": 62.849
+  },
+  {
+   "text": "c'est",
+   "start": 63.161,
+   "end": 63.277
+  },
+  {
+   "text": "le",
+   "start": 63.277,
+   "end": 63.358
+  },
+  {
+   "text": "nombre",
+   "start": 63.358,
+   "end": 63.624
+  },
+  {
+   "text": "de",
+   "start": 63.624,
+   "end": 63.728
+  },
+  {
+   "text": "cycles",
+   "start": 63.728,
+   "end": 64.041
+  },
+  {
+   "text": "par",
+   "start": 64.041,
+   "end": 64.214
+  },
+  {
+   "text": "minute.",
+   "start": 64.214,
+   "end": 64.712
+  },
+  {
+   "text": "On",
+   "start": 65.025,
+   "end": 65.175
+  },
+  {
+   "text": "compte",
+   "start": 65.175,
+   "end": 65.406
+  },
+  {
+   "text": "les",
+   "start": 65.406,
+   "end": 65.488
+  },
+  {
+   "text": "mouvements",
+   "start": 65.488,
+   "end": 65.754
+  },
+  {
+   "text": "du",
+   "start": 65.754,
+   "end": 65.846
+  },
+  {
+   "text": "thorax",
+   "start": 65.846,
+   "end": 66.298
+  },
+  {
+   "text": "pendant",
+   "start": 66.298,
+   "end": 66.518
+  },
+  {
+   "text": "une",
+   "start": 66.518,
+   "end": 66.599
+  },
+  {
+   "text": "minute.",
+   "start": 66.599,
+   "end": 67.096
+  },
+  {
+   "text": "La",
+   "start": 67.418,
+   "end": 67.545
+  },
+  {
+   "text": "normale,",
+   "start": 67.545,
+   "end": 68.019
+  },
+  {
+   "text": "entre",
+   "start": 68.344,
+   "end": 68.525
+  },
+  {
+   "text": "12",
+   "start": 68.525,
+   "end": 68.78
+  },
+  {
+   "text": "et",
+   "start": 68.78,
+   "end": 68.853
+  },
+  {
+   "text": "20.",
+   "start": 68.853,
+   "end": 69.107
+  },
+  {
+   "text": "Au-dessus :",
+   "start": 69.424,
+   "end": 70.06
+  },
+  {
+   "text": "tachypnée.",
+   "start": 70.338,
+   "end": 70.94
+  },
+  {
+   "text": "En",
+   "start": 71.249,
+   "end": 71.376
+  },
+  {
+   "text": "dessous :",
+   "start": 71.376,
+   "end": 71.827
+  },
+  {
+   "text": "bradypnée.",
+   "start": 72.198,
+   "end": 72.846
+  },
+  {
+   "text": "Et",
+   "start": 73.162,
+   "end": 73.289
+  },
+  {
+   "text": "du",
+   "start": 73.289,
+   "end": 73.393
+  },
+  {
+   "text": "mal",
+   "start": 73.394,
+   "end": 73.567
+  },
+  {
+   "text": "à",
+   "start": 73.567,
+   "end": 73.613
   },
   {
    "text": "respirer :",
-   "start": 64.413,
-   "end": 64.969
+   "start": 73.613,
+   "end": 74.169
   },
   {
    "text": "dyspnée !",
-   "start": 65.281,
-   "end": 65.814
+   "start": 74.481,
+   "end": 75.014
   }
  ]
 }

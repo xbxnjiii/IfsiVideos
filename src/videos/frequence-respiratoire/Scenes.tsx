@@ -61,29 +61,167 @@ const PhasePill: React.FC<{at: number; label: string; up: boolean; on: boolean}>
 };
 
 /* ═══════════════════════════════ ACCROCHE ═══════════════════════════════ */
+// Chiffre-choc. Image 0 (miniature) : « 20 000 » en énorme au-dessus des poumons qui respirent. « respires… chaque
+// jour » : chaque inspiration lâche un « +1 », un soleil traverse la journée et devient lune ; « sans même y penser » :
+// la mascotte dort. « à l'hôpital » : une fiche de surveillance glisse, les constantes se cochent une à une… la ligne FR
+// reste vide ; « oublie » : tampon OUBLIÉE. « Mais au fait » : la fiche repart, on retrouve l'ancienne accroche (titre,
+// poumons en (540, 820) : la transition plonge dedans).
+/** Flash plein écran (choc) qui retombe. */
+const Flash: React.FC<{at: number}> = ({at: t0}) => {
+	const frame = useCurrentFrame();
+	const o = interpolate(frame, [t0, t0 + 2, t0 + 16], [0, 0.5, 0], clamp);
+	if (o <= 0) return null;
+	return <AbsoluteFill style={{background: `radial-gradient(circle at 50% 50%, ${alpha(LPI.pink, o * 0.4)} 20%, ${alpha(LPI.pink, o)} 100%)`}} />;
+};
+
+/** Soleil qui traverse la journée (0 h → 24 h) et devient lune. */
+const DayBar: React.FC<{at: number; out: number}> = ({at: t0, out}) => {
+	const frame = useCurrentFrame();
+	const o = interpolate(frame, [t0 - 6, t0, out, out + 8], [0, 1, 1, 0], clamp);
+	if (o <= 0) return null;
+	const p = interpolate(frame, [t0, t0 + 30], [0, 1], ease);
+	const x = 170 + p * 740;
+	const y = 1210 - Math.sin(p * Math.PI) * 60;
+	const moon = interpolate(p, [0.65, 0.9], [0, 1], clamp);
+	return (
+		<svg width={1080} height={200} viewBox="0 1120 1080 200" style={{position: 'absolute', left: 0, top: 1120, opacity: o, overflow: 'visible'}}>
+			<path d="M170 1210 Q540 1090 910 1210" fill="none" stroke={alpha(N, 0.4)} strokeWidth={8} strokeDasharray="4 18" strokeLinecap="round" />
+			<text x={170} y={1278} textAnchor="middle" fontFamily={FONT.title} fontWeight={900} fontSize={42} fill={N}>
+				0 h
+			</text>
+			<text x={910} y={1278} textAnchor="middle" fontFamily={FONT.title} fontWeight={900} fontSize={42} fill={N}>
+				24 h
+			</text>
+			<g transform={`translate(${x} ${y}) scale(1.6)`} opacity={1 - moon}>
+				{Array.from({length: 8}, (_, i) => (
+					<path key={i} d="M0 -38 V-50" transform={`rotate(${i * 45 + p * 90})`} stroke={N} strokeWidth={6} strokeLinecap="round" />
+				))}
+				<circle r={26} fill={LPI.pink} stroke={N} strokeWidth={5} />
+			</g>
+			<g transform={`translate(${x} ${y}) scale(1.6)`} opacity={moon}>
+				<path d="M8 -30 A30 30 0 1 0 8 30 A22 22 0 1 1 8 -30 Z" fill={LPI.sky} stroke={N} strokeWidth={5} strokeLinejoin="round" />
+			</g>
+		</svg>
+	);
+};
+
+/** Fiche de surveillance : les constantes se cochent, la ligne FR reste vide (« ? » qui clignote). */
+const VITALS: [string, string][] = [
+	['FC', '72 bpm'],
+	['TA', '120/80'],
+	['T°', '37,0 °C'],
+	['SpO₂', '98 %'],
+];
+const CARD = {x: 150, y: 560, w: 780, row: 92};
+const VitalsCard: React.FC<{at: number; fr: number; out: number}> = ({at: t0, fr, out}) => {
+	const frame = useCurrentFrame();
+	const inP = interpolate(frame, [t0, t0 + 12], [0, 1], ease);
+	const outP = interpolate(frame, [out, out + 12], [0, 1], {...clamp, easing: Easing.in(Easing.cubic)});
+	if (inP <= 0 || outP >= 1) return null;
+	const row = (i: number, label: string, value: React.ReactNode, check: React.ReactNode) => (
+		<div key={label} style={{position: 'absolute', left: 0, right: 0, top: 96 + i * CARD.row, height: CARD.row, display: 'flex', alignItems: 'center', padding: '0 40px', borderTop: `3px solid ${alpha(N, 0.08)}`}}>
+			<div style={{width: 170, fontFamily: FONT.title, fontWeight: 900, fontSize: 48, color: N}}>{label}</div>
+			<div style={{flex: 1, fontFamily: FONT.title, fontWeight: 800, fontSize: 48, color: LPI.blue}}>{value}</div>
+			{check}
+		</div>
+	);
+	const tick = (t: number) => {
+		const p = usePopAt(frame, t);
+		return (
+			<svg width={64} height={64} viewBox="0 0 64 64" style={{transform: `scale(${p})`}}>
+				<circle cx={32} cy={32} r={28} fill={LPI.blue} />
+				<path d="M19 33 L28 42 L45 24" fill="none" stroke={LPI.paper} strokeWidth={8} strokeLinecap="round" strokeLinejoin="round" />
+			</svg>
+		);
+	};
+	const blink = frame >= fr ? 0.45 + 0.55 * Math.round(0.5 + 0.5 * Math.cos((frame - fr) / 3)) : 0;
+	return (
+		<div style={{position: 'absolute', left: CARD.x + 980 * (1 - inP) + 980 * outP, top: CARD.y, width: CARD.w, height: 96 + 5 * CARD.row + 20, borderRadius: 40, background: LPI.paper, border: `6px solid ${N}`, boxShadow: SHADOW, transform: `rotate(${2 - 2 * inP}deg)`}}>
+			<div style={{position: 'absolute', left: CARD.w / 2 - 90, top: -26, width: 180, height: 46, borderRadius: 14, background: N}} />
+			<div style={{position: 'absolute', left: 40, top: 30, fontFamily: FONT.body, fontWeight: 900, fontSize: 32, letterSpacing: '0.14em', color: alpha(N, 0.6)}}>SURVEILLANCE</div>
+			{VITALS.map(([l, v], i) => (frame >= t0 + 8 + i * 7 ? row(i, l, v, tick(t0 + 8 + i * 7)) : null))}
+			{frame >= fr
+				? row(
+						4,
+						'FR',
+						<div style={{display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 150, height: 64, borderRadius: 18, border: `5px dashed ${LPI.pink}`, background: alpha(LPI.pink, 0.2 * blink), fontSize: 50, color: N}}>?</div>,
+						<div style={{width: 64}} />,
+					)
+				: null}
+		</div>
+	);
+};
+const usePopAt = (frame: number, t0: number) => (frame < t0 ? 0 : 1 + 0.12 * Math.exp(-(frame - t0) / 3) * Math.cos((frame - t0) * 0.9) - Math.exp(-(frame - t0) / 2));
+
 export const Hook: React.FC = () => {
 	const frame = useCurrentFrame();
+	const VINGT = at('intro', 'vingt');
+	const MILLE = at('intro', 'mille');
+	const RESP = at('intro', 'respires');
+	const JOUR = at('intro', 'jour');
+	const PENSER = at('intro', 'penser');
+	const POURTANT = at('intro', 'pourtant');
+	const HOP = at('intro', "l'hôpital");
+	const CONST = at('intro', 'constante');
+	const OUBLIE = at('intro', 'oublie');
+	const MAIS = at('intro', 'mais');
+	const CEST = at('intro', "c'est", 3);
 	const Q = at('intro', 'quoi');
 	const FR = at('intro', 'fréquence');
 	const seg: BreathSegments = [[0, CALM]];
-	const pop = usePop(2);
 	const qp = usePop(Q);
+	// le « 20 000 » : là dès l'image 0, claque sur « vingt » et « mille », s'efface sur « Et pourtant »
+	const numOut = interpolate(frame, [POURTANT, POURTANT + 10], [0, 1], ease);
+	const punch = (t: number) => (frame >= t ? 0.08 * Math.exp(-(frame - t) / 4) : 0);
+	const numScale = 1 + punch(VINGT) + punch(MILLE);
+	// les poumons s'effacent derrière la fiche, puis reviennent
+	const dim = interpolate(frame, [HOP - 4, HOP + 6, MAIS + 2, MAIS + 14], [1, 0.18, 0.18, 1], clamp);
 	return (
 		<AbsoluteFill>
 			<LiveBackground />
-			<Camera punches={[Q + 1, FR + 1]} shakes={[Q + 2]} strength={0.04}>
-				<div style={{position: 'absolute', left: 72, top: 226, width: 936}}>
-					<Title at={0} text="C'est quoi la" size={74} stagger={3} brush={false} />
+			<Camera punches={[VINGT + 1, MILLE + 1, RESP + 1, JOUR + 1, HOP + 1, CONST + 1, OUBLIE + 1, CEST + 1, FR + 1]} shakes={[OUBLIE + 3]} strength={0.04}>
+				{numOut < 1 ? (
+					<div style={{position: 'absolute', left: 0, right: 0, top: 240, display: 'flex', flexDirection: 'column', alignItems: 'center', opacity: 1 - numOut, transform: `translateY(${-50 * numOut}px) scale(${numScale * (1 - 0.2 * numOut)})`}}>
+						<BigNum at={-30} size={250}>
+							20 000
+						</BigNum>
+						<div style={{display: 'flex', gap: 22, marginTop: 6}}>
+							<Title at={RESP} text="respirations" size={64} brush={false} />
+							<Title at={JOUR} text="*par* *jour*" size={64} />
+						</div>
+					</div>
+				) : null}
+				{frame >= CEST - 2 ? (
+					<>
+						<div style={{position: 'absolute', left: 72, top: 226, width: 936}}>
+							<Title at={CEST} text="C'est quoi la" size={74} stagger={3} brush={false} />
+						</div>
+						<div style={{position: 'absolute', left: 72, top: 312, width: 936}}>
+							<Title at={FR} text={'*fréquence*\n*respiratoire* ?'} size={112} stagger={4} />
+						</div>
+					</>
+				) : null}
+				<div style={{position: 'absolute', inset: 0, opacity: dim}}>
+					<div style={{position: 'absolute', left: 0, top: 1010}}>
+						<BreathTrace segments={seg} width={1080} height={120} amp={40} color={alpha(LPI.blue, 0.8)} />
+					</div>
+					<div style={{position: 'absolute', left: 540 - 200, top: 620}}>
+						<BreathingLungs segments={seg} size={400} />
+					</div>
 				</div>
-				<div style={{position: 'absolute', left: 72, top: 312, width: 936}}>
-					<Title at={FR} text={'*fréquence*\n*respiratoire* ?'} size={112} stagger={4} />
-				</div>
-				<div style={{position: 'absolute', left: 0, top: 1010, opacity: Math.min(1, pop * 1.5)}}>
-					<BreathTrace segments={seg} width={1080} height={120} amp={40} color={alpha(LPI.blue, 0.8)} />
-				</div>
-				<div style={{position: 'absolute', left: 540 - 200, top: 620, transform: `scale(${0.4 + 0.6 * pop})`}}>
-					<BreathingLungs segments={seg} size={400} />
-				</div>
+				{/* chaque inspiration : « +1 » qui s'envole de la trachée */}
+				{[CALM, 2 * CALM].map((t0) => {
+					const t = frame - t0;
+					if (t < 0 || t > 30 || frame > POURTANT) return null;
+					return (
+						<div key={t0} style={{position: 'absolute', left: 600 + t * 4, top: 640 - t * 3, opacity: interpolate(t, [0, 4, 22, 30], [0, 1, 1, 0], clamp), transform: `scale(${usePopAt(frame, t0)})`, fontFamily: FONT.title, fontWeight: 900, fontSize: 56, color: LPI.blue}}>
+							+1
+						</div>
+					);
+				})}
+				<DayBar at={JOUR - 2} out={POURTANT} />
+				<VitalsCard at={HOP - 4} fr={CONST} out={MAIS} />
+				<Stamp at={OUBLIE + 2} x={720} y={CARD.y + 96 + 4 * CARD.row + 46} text="Oubliée" size={60} rot={-8} out={MAIS} />
 				{frame >= Q ? (
 					<div
 						style={{
@@ -109,13 +247,26 @@ export const Hook: React.FC = () => {
 						?
 					</div>
 				) : null}
+				<Burst at={VINGT} x={540} y={360} r={330} n={14} />
+				<Burst at={OUBLIE + 2} x={720} y={CARD.y + 96 + 4 * CARD.row + 46} r={260} n={12} />
 				<Burst at={Q} x={875} y={675} r={200} n={12} />
 			</Camera>
+			<Flash at={OUBLIE + 2} />
+			<Sfx name="impact" at={VINGT} volume={0.09} />
+			<Sfx name="whoosh" at={JOUR - 2} volume={0.06} />
+			<Sfx name="whoosh" at={HOP - 4} volume={0.07} />
+			{VITALS.map((_, i) => (
+				<Sfx key={i} name="tick" at={HOP + 4 + i * 7} volume={0.07} />
+			))}
+			<Sfx name="buzz" at={CONST} volume={0.04} dur={14} />
+			<Sfx name="stamp" at={OUBLIE + 2} volume={0.1} />
+			<Sfx name="whoosh" at={MAIS} volume={0.06} />
 			<Sfx name="pop" at={Q} volume={0.12} />
 			<Sfx name="whoosh" at={FR} volume={0.06} />
 		</AbsoluteFill>
 	);
 };
+
 
 /* ═══════════════════════════════ 1 · DÉFINITION ═══════════════════════════════ */
 export const Definition: React.FC = () => {

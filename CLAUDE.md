@@ -79,6 +79,10 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   (image 0), retour en arrière (bandeau « ◀◀ 30 MIN PLUS TÔT », image bleutée, horloge qui recule, la chute se
   rembobine), indices en pastilles + bulle du patient, « Verdict : hypoglycémie ! » (tampon), le geste qui l'aurait
   évité, puis la question. Rester exact (hypoglycémie = diabétique sous insuline qui n'a pas mangé).
+  Variante **chiffre-choc** (`Frequence-Respiratoire`, choisie par le propriétaire) : « Vingt mille. C'est le nombre de
+  fois où tu respires… chaque jour. Sans même y penser. Et pourtant, à l'hôpital, c'est la constante qu'on oublie le plus
+  souvent. » (« 20 000 » énorme sur l'image 0, « +1 » à chaque inspiration, soleil → lune, fiche de surveillance qui se
+  coche sauf la ligne FR, tampon OUBLIÉE). Proposer 2 – 3 accroches au choix quand le propriétaire n'a pas d'idée.
 - Récap : **pas de tampon final** (« Pro du souffle », « Pro du pouls » retirés à la demande) — confettis + mascotte suffisent.
 - Rester simple et factuel : pas d'astuces « de terrain » mises en scène (retirées de la FR : compter
   discrètement, faire semblant de prendre le pouls). Expliquer chaque qualificatif entre parenthèses

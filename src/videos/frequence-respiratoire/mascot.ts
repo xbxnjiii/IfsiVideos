@@ -8,8 +8,13 @@ const {L, R, CORNER} = SPOT;
 const runAcross = (id: SceneId) => run(TL, start(id));
 
 export const MASCOT: Beat[] = [
-	/* ── accroche ── */
-	{at: abs('intro', 'quoi'), via: 'pop', key: 'expressions/questionnement', ...R},
+	/* ── accroche : 20 000 par jour… et pourtant oubliée ── surprise, souffle, elle dort (« sans y penser »), fiche, facepalm */
+	{at: abs('intro', 'mille'), via: 'pop', key: 'expressions/surprise', ...R},
+	{at: abs('intro', 'respires'), key: 'symptomes/souffle', ...R},
+	{at: abs('intro', 'penser'), via: 'pop', key: 'symptomes/dort', ...L},
+	{at: abs('intro', "l'hôpital"), key: 'accessoires/clipboard', ...R},
+	{at: abs('intro', 'oublie'), key: 'gestes/facepalm', fx: 'shake', ...R},
+	{at: abs('intro', 'quoi'), key: 'expressions/questionnement', ...R},
 	// elle plonge dans les poumons (zoomInto)
 	{at: start('def') - 4, dur: 16, key: 'expressions/questionnement', x: 540, y: 820, size: 0},
 
