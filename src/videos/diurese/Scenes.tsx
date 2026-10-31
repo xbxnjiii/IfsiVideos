@@ -3,7 +3,8 @@
 import React from 'react';
 import {AbsoluteFill, Easing, interpolate, useCurrentFrame} from 'remotion';
 import {BigNum, CauseChip, Head, LAY, Lead, Pill, RecapScene, SLAM_Y, termSlot, Unit} from '../../brand/episode';
-import {PillIcon, ThirstIcon} from '../../brand/icons';
+import {PillIcon, ThirstIcon, UrineIcon} from '../../brand/icons';
+import {WallClock} from '../../brand/devices';
 import {CheckChip, Stamp, usePop} from '../../brand/kit';
 import {Seuil} from '../../brand/Lesson3';
 import {Burst, Camera, LiveBackground, Odometer, Stage, TermSlam} from '../../brand/motion3';
@@ -46,26 +47,128 @@ const Note: React.FC<{at: number; x: number; y: number; children: React.ReactNod
 };
 
 /* ═══════════════════════════════ ACCROCHE ═══════════════════════════════ */
+// Accéléré + dilemme. Image 0 (miniature) : « 08:00 », l'horloge, le bocal des 24 h vide (« 0 mL »). Les heures défilent
+// au mot (midi, seize heures, vingt heures : les aiguilles tournent, la lumière baisse), le bocal reste vide ; « pas une
+// goutte » : on s'approche, une goutte se forme au bout du tuyau… et remonte. « Un simple oubli… ou des reins qui ne
+// fabriquent plus d'urine ? » : deux cartes, la 2e claque (URGENCE ?). « Mais au fait » : tout s'efface, la question ; le
+// bocal est à la place de l'ancienne accroche (la transition plonge dedans).
+const KIDNEY_PATH = 'M0 -62 C40 -62 56 -26 50 6 C44 40 20 64 -6 58 C-26 54 -22 30 -14 14 C-8 2 -20 -8 -30 -16 C-46 -30 -32 -62 0 -62 Z';
+const Kidneys: React.FC<{size?: number}> = ({size = 80}) => (
+	<svg width={size} height={size} viewBox="-100 -80 200 160">
+		{[-1, 1].map((d) => (
+			<path key={d} d={KIDNEY_PATH} transform={`translate(${d * 46} 0) scale(${d * 0.9} 0.9)`} fill={LPI.pink} stroke={N} strokeWidth={10} strokeLinejoin="round" />
+		))}
+	</svg>
+);
+
+/** Flash plein écran (choc) qui retombe. */
+const Flash: React.FC<{at: number}> = ({at: t0}) => {
+	const frame = useCurrentFrame();
+	const o = interpolate(frame, [t0, t0 + 2, t0 + 16], [0, 0.5, 0], clamp);
+	if (o <= 0) return null;
+	return <AbsoluteFill style={{background: `radial-gradient(circle at 50% 50%, ${alpha(LPI.pink, o * 0.4)} 20%, ${alpha(LPI.pink, o)} 100%)`}} />;
+};
+
+const popAt = (frame: number, t0: number) => (frame < t0 ? 0 : 1 + 0.12 * Math.exp(-(frame - t0) / 3) * Math.cos((frame - t0) * 0.9) - Math.exp(-(frame - t0) / 2));
+
+/** Carte du dilemme (« oubli du bocal ? » / « reins à l'arrêt ? »). */
+const Dilemma: React.FC<{at: number; out: number; x: number; icon: React.ReactNode; label: string; tone: string; dim?: number}> = ({at: t0, out, x, icon, label, tone, dim = 1}) => {
+	const frame = useCurrentFrame();
+	const p = popAt(frame, t0);
+	const o = interpolate(frame, [out, out + 8], [1, 0], clamp);
+	if (frame < t0 || o <= 0) return null;
+	return (
+		<div style={{position: 'absolute', left: x, top: 1130, width: 448, height: 156, borderRadius: 36, background: LPI.paper, border: `6px solid ${tone}`, boxShadow: SHADOW, display: 'flex', alignItems: 'center', gap: 18, padding: '0 22px', boxSizing: 'border-box', opacity: o * dim, transform: `scale(${p * (0.6 + 0.4 * o)}) rotate(${interpolate(frame - t0, [0, 8], [-6, 0], clamp)}deg)`}}>
+			<div style={{width: 104, height: 104, flex: 'none', borderRadius: 52, background: alpha(tone, 0.35), display: 'flex', alignItems: 'center', justifyContent: 'center'}}>{icon}</div>
+			<div style={{fontFamily: FONT.title, fontWeight: 900, fontSize: 42, lineHeight: 1.08, color: N, whiteSpace: 'pre-line'}}>{label}</div>
+		</div>
+	);
+};
+
+const pad2 = (n: number) => String(n).padStart(2, '0');
+
 export const Hook: React.FC = () => {
 	const frame = useCurrentFrame();
+	const MIDI = at('intro', 'midi');
+	const SEIZE = at('intro', 'seize');
+	const VINGT = at('intro', 'vingt');
+	const GOUTTE = at('intro', 'goutte');
+	const BOCAL = at('intro', 'bocal');
+	const OUBLI = at('intro', 'oubli');
+	const OU = at('intro', 'ou');
+	const REINS = at('intro', 'reins');
+	const URINE = at('intro', "d'urine");
+	const MAIS = at('intro', 'mais');
+	const CEST = at('intro', "c'est");
 	const Q = at('intro', 'quoi');
 	const D = at('intro', 'diurèse');
-	const pop = usePop(2);
 	const qp = usePop(Q);
-	const vAt = (f: number) => interpolate(f, [4, 70], [300, 1500], clamp);
+	// l'accéléré : 8 h → midi → 16 h → 20 h, au mot
+	const hv = interpolate(frame, [MIDI - 2, MIDI + 12, SEIZE - 2, SEIZE + 12, VINGT - 2, VINGT + 12], [8, 12, 12, 16, 16, 20], ease);
+	const out = interpolate(frame, [MAIS, MAIS + 10], [0, 1], ease);
+	const dusk = ((hv - 8) / 12) * (1 - out);
+	// « pas une goutte » : on s'approche du tuyau ; une goutte se forme… et remonte
+	const zoom = interpolate(frame, [GOUTTE - 4, GOUTTE + 10, OUBLI - 6, OUBLI + 6], [1, 1.28, 1.28, 1], ease);
+	const drop = interpolate(frame, [GOUTTE, GOUTTE + 10, GOUTTE + 18, GOUTTE + 28], [0, 1, 1, 0], ease);
+	const wob = 1 + 0.08 * Math.sin(frame / 2) * drop;
+	const zeroPunch = frame >= BOCAL ? 0.15 * Math.exp(-(frame - BOCAL) / 5) : 0;
+	const slam = URINE + 2;
 	return (
 		<AbsoluteFill>
 			<LiveBackground />
-			<Camera punches={[Q + 1, D + 1]} shakes={[Q + 2]} strength={0.04}>
-				<div style={{position: 'absolute', left: 72, top: 226, width: 936}}>
-					<Title at={0} text="C'est quoi la" size={74} stagger={3} brush={false} />
+			{/* la journée passe : la lumière baisse */}
+			{dusk > 0 ? <AbsoluteFill style={{background: `linear-gradient(180deg, ${alpha(N, 0.14 * dusk)} 0%, ${alpha(N, 0.04 * dusk)} 100%)`}} /> : null}
+			<Camera punches={[MIDI + 1, SEIZE + 1, VINGT + 1, GOUTTE + 1, BOCAL + 1, OUBLI + 1, REINS + 1, CEST + 1, D + 1]} shakes={[slam + 1]} strength={0.04}>
+				{out < 1 ? (
+					<div style={{position: 'absolute', left: 0, right: 0, top: 220, display: 'flex', flexDirection: 'column', alignItems: 'center', opacity: 1 - out, transform: `translateY(${-40 * out}px)`}}>
+						<div style={{display: 'flex', alignItems: 'center', gap: 34}}>
+							<WallClock h={Math.floor(hv)} m={(hv % 1) * 60} size={150} />
+							<div style={{display: 'flex', fontFamily: FONT.title, fontWeight: 900, fontSize: 170, color: N, lineHeight: 1}}>
+								{`${pad2(Math.floor(hv))}:${pad2(Math.floor((hv % 1) * 60))}`.split('').map((c, i) => (
+									<span key={i} style={{display: 'inline-block', width: c === ':' ? '0.32em' : '0.6em', textAlign: 'center'}}>
+										{c}
+									</span>
+								))}
+							</div>
+						</div>
+						<div style={{marginTop: 10, fontFamily: FONT.body, fontWeight: 900, fontSize: 30, letterSpacing: '0.14em', color: alpha(N, 0.6)}}>BOCAL DES URINES · 24 H</div>
+					</div>
+				) : null}
+				{frame >= CEST - 2 ? (
+					<>
+						<div style={{position: 'absolute', left: 72, top: 226, width: 936}}>
+							<Title at={CEST} text="C'est quoi la" size={74} stagger={3} brush={false} />
+						</div>
+						<div style={{position: 'absolute', left: 72, top: 312, width: 936}}>
+							<Title at={D} text="*diurèse* ?" size={130} stagger={4} />
+						</div>
+					</>
+				) : null}
+				{/* le bocal, à la place exacte de l'ancienne accroche ; il reste vide */}
+				<div style={{position: 'absolute', left: 540 - 169, top: 560, transform: 'scale(1.3)', transformOrigin: 'left top'}}>
+					<div style={{transform: `scale(${zoom})`, transformOrigin: '130px 60px'}}>
+						{/* vide : avec -120 mL, la surface passe sous le fond (aucun liseré bleu) */}
+						<Jar value={-120} drops={[]} />
+						{drop > 0 ? (
+							<svg width={260} height={400} viewBox="0 0 260 400" style={{position: 'absolute', left: 0, top: 0, overflow: 'visible'}}>
+								<g transform={`translate(130 72) scale(${drop} ${drop * wob}) translate(-130 -72)`}>
+									<path d="M130 72 C124 82 120 88 120 92 A10 10 0 0 0 140 92 C140 88 136 82 130 72 Z" fill={LPI.blue} />
+								</g>
+							</svg>
+						) : null}
+					</div>
 				</div>
-				<div style={{position: 'absolute', left: 72, top: 312, width: 936}}>
-					<Title at={D} text="*diurèse* ?" size={130} stagger={4} />
-				</div>
-				<div style={{position: 'absolute', left: 540 - 169, top: 560, transform: `scale(${1.3 * (0.4 + 0.6 * pop)})`, transformOrigin: 'left top'}}>
-					<Jar value={vAt(frame)} drops={dropTimes(frame, 2, () => 3200)} />
-				</div>
+				{out < 1 ? (
+					<div style={{position: 'absolute', left: 770, top: 860, opacity: 1 - out, transform: `scale(${1 + zeroPunch})`}}>
+						<div style={{padding: '10px 30px', borderRadius: 999, background: frame >= BOCAL ? LPI.pink : LPI.paper, border: `5px solid ${N}`, boxShadow: SHADOW, fontFamily: FONT.title, fontWeight: 900, fontSize: 58, color: N}}>0 mL</div>
+					</div>
+				) : null}
+				<Dilemma at={OUBLI} out={MAIS} x={60} icon={<UrineIcon size={64} />} label={'oubli\ndu bocal ?'} tone={LPI.sky} dim={interpolate(frame, [slam, slam + 6], [1, 0.55], clamp)} />
+				<Dilemma at={REINS} out={MAIS} x={572} icon={<Kidneys size={84} />} label={'reins\nà l’arrêt ?'} tone={LPI.pink} />
+				{frame >= OU && frame < MAIS + 8 ? (
+					<div style={{position: 'absolute', left: 540 - 46, top: 1162, width: 92, height: 92, borderRadius: 46, background: N, color: LPI.paper, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FONT.title, fontWeight: 900, fontSize: 40, transform: `scale(${popAt(frame, OU) * (1 - interpolate(frame, [MAIS, MAIS + 8], [0, 1], clamp))})`}}>ou</div>
+				) : null}
+				<Stamp at={slam} x={800} y={1330} text="Urgence ?" size={56} rot={-6} out={MAIS} />
 				{frame >= Q ? (
 					<div
 						style={{
@@ -91,13 +194,28 @@ export const Hook: React.FC = () => {
 						?
 					</div>
 				) : null}
+				<Burst at={BOCAL} x={890} y={905} r={170} n={10} />
+				<Burst at={slam} x={800} y={1290} r={260} n={14} />
 				<Burst at={Q} x={885} y={645} r={200} n={12} />
 			</Camera>
+			<Flash at={slam} />
+			{[MIDI, SEIZE, VINGT].map((t) => (
+				<Sfx key={t} name="tick" at={t - 2} volume={0.08} />
+			))}
+			<Sfx name="whoosh" at={GOUTTE - 4} volume={0.05} />
+			<Sfx name="pop" at={GOUTTE + 4} volume={0.06} />
+			<Sfx name="buzz" at={BOCAL} volume={0.04} dur={12} />
+			<Sfx name="pop" at={OUBLI} volume={0.1} />
+			<Sfx name="pop" at={REINS} volume={0.1} />
+			<Sfx name="stamp" at={slam} volume={0.1} />
+			<Sfx name="impact" at={slam} volume={0.08} />
+			<Sfx name="whoosh" at={MAIS} volume={0.06} />
 			<Sfx name="pop" at={Q} volume={0.12} />
 			<Sfx name="whoosh" at={D} volume={0.06} />
 		</AbsoluteFill>
 	);
 };
+
 
 /* ═══════════════════════════════ 1 · DÉFINITION ═══════════════════════════════ */
 const CARD = {x: 330, y: 20, w: 586, h: 480};

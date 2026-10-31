@@ -1,908 +1,1063 @@
 {
  "voice": "voix.wav (tts_voix.py)",
- "duration": 61.114,
+ "duration": 69.447,
  "sections": [
   {
    "id": "intro",
-   "start": 0.046,
-   "end": 1.47
+   "start": 0.069,
+   "end": 9.792
   },
   {
    "id": "def",
-   "start": 2.515,
-   "end": 8.143
+   "start": 10.848,
+   "end": 16.476
   },
   {
    "id": "mesure",
-   "start": 9.07,
-   "end": 14.278
+   "start": 17.403,
+   "end": 22.611
   },
   {
    "id": "norme",
-   "start": 15.212,
-   "end": 20.524
+   "start": 23.545,
+   "end": 28.857
   },
   {
    "id": "poly",
-   "start": 21.446,
-   "end": 30.212
+   "start": 29.779,
+   "end": 38.545
   },
   {
    "id": "oligo",
-   "start": 31.175,
-   "end": 37.984
+   "start": 39.508,
+   "end": 46.317
   },
   {
    "id": "anurie",
-   "start": 38.892,
-   "end": 43.674
+   "start": 47.225,
+   "end": 52.007
   },
   {
    "id": "outro",
-   "start": 44.603,
-   "end": 60.773
+   "start": 52.936,
+   "end": 69.106
   }
  ],
  "words": [
   {
-   "text": "C'est",
-   "start": 0.046,
-   "end": 0.22
-  },
-  {
-   "text": "quoi,",
-   "start": 0.22,
-   "end": 0.486
-  },
-  {
-   "text": "la",
-   "start": 0.799,
-   "end": 0.88
-  },
-  {
-   "text": "diurèse ?",
-   "start": 0.88,
-   "end": 1.47
-  },
-  {
-   "text": "La",
-   "start": 2.515,
-   "end": 2.63
-  },
-  {
-   "text": "diurèse,",
-   "start": 2.63,
-   "end": 3.14
-  },
-  {
-   "text": "c'est",
-   "start": 3.406,
-   "end": 3.522
-  },
-  {
-   "text": "la",
-   "start": 3.522,
-   "end": 3.591
-  },
-  {
-   "text": "quantité",
-   "start": 3.591,
-   "end": 3.95
-  },
-  {
-   "text": "d'urine",
-   "start": 3.95,
-   "end": 4.297
-  },
-  {
-   "text": "que",
-   "start": 4.297,
-   "end": 4.378
-  },
-  {
-   "text": "les",
-   "start": 4.378,
-   "end": 4.459
-  },
-  {
-   "text": "reins",
-   "start": 4.459,
-   "end": 4.586
-  },
-  {
-   "text": "fabriquent.",
-   "start": 4.586,
-   "end": 5.153
-  },
-  {
-   "text": "Les",
-   "start": 5.47,
-   "end": 5.666
-  },
-  {
-   "text": "reins",
-   "start": 5.666,
-   "end": 5.84
-  },
-  {
-   "text": "filtrent",
-   "start": 5.84,
-   "end": 6.153
-  },
-  {
-   "text": "le",
-   "start": 6.153,
-   "end": 6.257
-  },
-  {
-   "text": "sang,",
-   "start": 6.257,
-   "end": 6.569
-  },
-  {
-   "text": "et",
-   "start": 6.847,
-   "end": 6.893
-  },
-  {
-   "text": "l'urine",
-   "start": 6.893,
-   "end": 7.183
-  },
-  {
-   "text": "est",
-   "start": 7.183,
-   "end": 7.217
-  },
-  {
-   "text": "stockée",
-   "start": 7.217,
-   "end": 7.518
-  },
-  {
-   "text": "dans",
-   "start": 7.518,
-   "end": 7.611
-  },
-  {
-   "text": "la",
-   "start": 7.611,
-   "end": 7.692
-  },
-  {
-   "text": "vessie.",
-   "start": 7.692,
-   "end": 8.143
-  },
-  {
-   "text": "On",
-   "start": 9.07,
-   "end": 9.197
-  },
-  {
-   "text": "la",
-   "start": 9.197,
-   "end": 9.29
-  },
-  {
-   "text": "mesure",
-   "start": 9.29,
-   "end": 9.591
-  },
-  {
-   "text": "sur",
-   "start": 9.591,
-   "end": 9.741
-  },
-  {
-   "text": "24",
-   "start": 9.741,
-   "end": 10.158
-  },
-  {
-   "text": "heures :",
-   "start": 10.158,
-   "end": 10.355
-  },
-  {
-   "text": "on",
-   "start": 10.829,
-   "end": 10.852
-  },
-  {
-   "text": "recueille",
-   "start": 10.852,
-   "end": 11.176
-  },
-  {
-   "text": "toutes",
-   "start": 11.176,
-   "end": 11.35
-  },
-  {
-   "text": "les",
-   "start": 11.35,
-   "end": 11.431
-  },
-  {
-   "text": "urines",
-   "start": 11.431,
-   "end": 11.709
-  },
-  {
-   "text": "dans",
-   "start": 11.709,
-   "end": 11.778
-  },
-  {
-   "text": "un",
-   "start": 11.778,
-   "end": 11.906
-  },
-  {
-   "text": "bocal",
-   "start": 11.906,
-   "end": 12.183
-  },
-  {
-   "text": "gradué,",
-   "start": 12.183,
-   "end": 12.704
-  },
-  {
-   "text": "et",
-   "start": 13.005,
-   "end": 13.098
-  },
-  {
-   "text": "on",
-   "start": 13.098,
-   "end": 13.132
-  },
-  {
-   "text": "lit",
-   "start": 13.133,
-   "end": 13.248
-  },
-  {
-   "text": "le",
-   "start": 13.248,
-   "end": 13.329
-  },
-  {
-   "text": "volume",
-   "start": 13.329,
-   "end": 13.63
-  },
-  {
-   "text": "en",
-   "start": 13.63,
-   "end": 13.676
-  },
-  {
-   "text": "millilitres.",
-   "start": 13.677,
-   "end": 14.278
-  },
-  {
-   "text": "Chez",
-   "start": 15.212,
-   "end": 15.42
-  },
-  {
-   "text": "l'adulte,",
-   "start": 15.42,
-   "end": 15.906
-  },
-  {
-   "text": "la",
-   "start": 16.069,
-   "end": 16.161
-  },
-  {
-   "text": "normale,",
-   "start": 16.161,
-   "end": 16.636
-  },
-  {
-   "text": "c'est",
-   "start": 16.937,
-   "end": 17.064
-  },
-  {
-   "text": "entre",
-   "start": 17.064,
-   "end": 17.231
-  },
-  {
-   "text": "600",
-   "start": 17.231,
-   "end": 17.548
-  },
-  {
-   "text": "et",
-   "start": 17.548,
-   "end": 17.615
-  },
-  {
-   "text": "2000",
-   "start": 17.615,
-   "end": 18.016
-  },
-  {
-   "text": "millilitres",
-   "start": 18.016,
-   "end": 18.383
-  },
-  {
-   "text": "par",
-   "start": 18.383,
-   "end": 18.545
-  },
-  {
-   "text": "24",
-   "start": 18.545,
-   "end": 18.974
-  },
-  {
-   "text": "heures :",
-   "start": 18.974,
-   "end": 19.159
-  },
-  {
-   "text": "c'est",
-   "start": 19.506,
-   "end": 19.61
-  },
-  {
-   "text": "la",
-   "start": 19.61,
-   "end": 19.68
-  },
-  {
-   "text": "normodiurèse.",
-   "start": 19.68,
-   "end": 20.524
-  },
-  {
-   "text": "Au-dessus",
-   "start": 21.446,
-   "end": 21.817
-  },
-  {
-   "text": "de",
-   "start": 21.817,
-   "end": 21.909
-  },
-  {
-   "text": "2500",
-   "start": 21.909,
-   "end": 22.443
-  },
-  {
-   "text": "à",
-   "start": 22.443,
-   "end": 22.488
-  },
-  {
-   "text": "3000",
-   "start": 22.488,
-   "end": 22.893
-  },
-  {
-   "text": "millilitres,",
-   "start": 22.893,
-   "end": 23.263
-  },
-  {
-   "text": "c'est",
-   "start": 23.564,
-   "end": 23.645
-  },
-  {
-   "text": "une",
-   "start": 23.645,
-   "end": 23.819
-  },
-  {
-   "text": "polyurie :",
-   "start": 23.819,
-   "end": 24.375
-  },
-  {
-   "text": "le",
-   "start": 24.745,
-   "end": 24.803
-  },
-  {
-   "text": "patient",
-   "start": 24.803,
-   "end": 25.104
-  },
-  {
-   "text": "urine",
-   "start": 25.104,
-   "end": 25.439
-  },
-  {
-   "text": "beaucoup",
-   "start": 25.451,
-   "end": 25.682
-  },
-  {
-   "text": "trop.",
-   "start": 25.682,
-   "end": 26.03
-  },
-  {
-   "text": "Par",
-   "start": 26.346,
-   "end": 26.519
-  },
-  {
-   "text": "exemple",
-   "start": 26.519,
-   "end": 26.843
-  },
-  {
-   "text": "avec",
-   "start": 26.843,
-   "end": 27.04
-  },
-  {
-   "text": "un",
-   "start": 27.04,
-   "end": 27.087
-  },
-  {
-   "text": "diabète,",
-   "start": 27.087,
-   "end": 27.573
-  },
-  {
-   "text": "ou",
-   "start": 27.908,
-   "end": 27.943
-  },
-  {
-   "text": "des",
-   "start": 27.943,
-   "end": 28.036
-  },
-  {
-   "text": "diurétiques,",
-   "start": 28.036,
-   "end": 28.707
-  },
-  {
-   "text": "des",
-   "start": 28.938,
-   "end": 29.008
-  },
-  {
-   "text": "médicaments",
-   "start": 29.008,
-   "end": 29.482
-  },
-  {
-   "text": "qui",
-   "start": 29.482,
-   "end": 29.61
-  },
-  {
-   "text": "font",
-   "start": 29.61,
-   "end": 29.725
-  },
-  {
-   "text": "uriner.",
-   "start": 29.725,
-   "end": 30.212
-  },
-  {
-   "text": "En",
-   "start": 31.175,
-   "end": 31.256
-  },
-  {
-   "text": "dessous",
-   "start": 31.256,
-   "end": 31.511
-  },
-  {
-   "text": "de",
-   "start": 31.511,
-   "end": 31.603
-  },
-  {
-   "text": "400",
-   "start": 31.603,
-   "end": 32.0
-  },
-  {
-   "text": "millilitres,",
-   "start": 32.0,
-   "end": 32.46
-  },
-  {
-   "text": "c'est",
-   "start": 32.714,
-   "end": 32.807
-  },
-  {
-   "text": "une",
-   "start": 32.807,
-   "end": 32.981
-  },
-  {
-   "text": "oligurie :",
-   "start": 32.981,
-   "end": 33.478
-  },
-  {
-   "text": "le",
-   "start": 33.802,
-   "end": 33.86
-  },
-  {
-   "text": "patient",
-   "start": 33.86,
-   "end": 34.173
-  },
-  {
-   "text": "urine",
-   "start": 34.173,
-   "end": 34.485
-  },
-  {
-   "text": "trop",
-   "start": 34.485,
-   "end": 34.659
-  },
-  {
-   "text": "peu.",
-   "start": 34.659,
-   "end": 34.96
-  },
-  {
-   "text": "Ça",
-   "start": 35.276,
-   "end": 35.45
-  },
-  {
-   "text": "peut",
-   "start": 35.45,
-   "end": 35.565
-  },
-  {
-   "text": "venir",
-   "start": 35.565,
-   "end": 35.866
-  },
-  {
-   "text": "d'une",
-   "start": 35.866,
-   "end": 36.005
-  },
-  {
-   "text": "déshydratation,",
-   "start": 36.005,
-   "end": 36.815
-  },
-  {
-   "text": "quand",
-   "start": 37.07,
-   "end": 37.162
-  },
-  {
-   "text": "le",
-   "start": 37.163,
-   "end": 37.243
-  },
-  {
-   "text": "corps",
-   "start": 37.244,
-   "end": 37.452
-  },
-  {
-   "text": "manque",
-   "start": 37.452,
-   "end": 37.695
-  },
-  {
-   "text": "d'eau.",
-   "start": 37.695,
-   "end": 37.984
-  },
-  {
-   "text": "Et",
-   "start": 38.892,
-   "end": 39.031
-  },
-  {
-   "text": "en",
-   "start": 39.031,
-   "end": 39.089
-  },
-  {
-   "text": "dessous",
-   "start": 39.089,
-   "end": 39.332
-  },
-  {
-   "text": "de",
-   "start": 39.332,
-   "end": 39.448
-  },
-  {
-   "text": "100",
-   "start": 39.448,
-   "end": 39.753
-  },
-  {
-   "text": "millilitres,",
-   "start": 39.753,
-   "end": 40.107
-  },
-  {
-   "text": "c'est",
-   "start": 40.374,
-   "end": 40.455
-  },
-  {
-   "text": "une",
-   "start": 40.455,
-   "end": 40.628
-  },
-  {
-   "text": "anurie :",
-   "start": 40.628,
-   "end": 41.033
-  },
-  {
-   "text": "il",
-   "start": 41.288,
-   "end": 41.381
-  },
-  {
-   "text": "n'y",
-   "start": 41.381,
-   "end": 41.438
-  },
-  {
-   "text": "a",
-   "start": 41.438,
-   "end": 41.473
-  },
-  {
-   "text": "presque",
-   "start": 41.473,
-   "end": 41.797
-  },
-  {
-   "text": "plus",
-   "start": 41.797,
-   "end": 41.936
-  },
-  {
-   "text": "d'urine.",
-   "start": 41.936,
-   "end": 42.434
-  },
-  {
-   "text": "C'est",
-   "start": 42.748,
-   "end": 42.922
-  },
-  {
-   "text": "une",
-   "start": 42.922,
-   "end": 43.095
-  },
-  {
-   "text": "urgence !",
-   "start": 43.095,
-   "end": 43.674
-  },
-  {
-   "text": "Petit",
-   "start": 44.603,
-   "end": 44.881
-  },
-  {
-   "text": "récap !",
-   "start": 44.881,
-   "end": 45.413
-  },
-  {
-   "text": "La",
-   "start": 45.769,
-   "end": 45.897
-  },
-  {
-   "text": "diurèse,",
-   "start": 45.897,
-   "end": 46.417
-  },
-  {
-   "text": "c'est",
-   "start": 46.672,
-   "end": 46.788
-  },
-  {
-   "text": "la",
-   "start": 46.788,
-   "end": 46.869
-  },
-  {
-   "text": "quantité",
-   "start": 46.869,
-   "end": 47.216
-  },
-  {
-   "text": "d'urine",
-   "start": 47.216,
-   "end": 47.54
-  },
-  {
-   "text": "sur",
-   "start": 47.54,
-   "end": 47.714
-  },
-  {
-   "text": "24",
-   "start": 47.714,
-   "end": 48.154
+   "text": "Huit",
+   "start": 0.069,
+   "end": 0.243
   },
   {
    "text": "heures,",
-   "start": 48.154,
-   "end": 48.362
+   "start": 0.243,
+   "end": 0.59
   },
   {
-   "text": "en",
-   "start": 48.582,
-   "end": 48.616
+   "text": "midi,",
+   "start": 0.799,
+   "end": 1.157
   },
   {
-   "text": "millilitres.",
-   "start": 48.617,
-   "end": 49.265
+   "text": "seize",
+   "start": 1.366,
+   "end": 1.632
   },
   {
-   "text": "Normale :",
-   "start": 49.589,
-   "end": 50.11
+   "text": "heures,",
+   "start": 1.632,
+   "end": 1.84
   },
   {
-   "text": "entre",
-   "start": 50.503,
-   "end": 50.668
+   "text": "vingt",
+   "start": 2.025,
+   "end": 2.164
   },
   {
-   "text": "600",
-   "start": 50.668,
-   "end": 50.98
+   "text": "heures…",
+   "start": 2.164,
+   "end": 2.477
   },
   {
    "text": "et",
-   "start": 50.98,
-   "end": 51.046
+   "start": 2.743,
+   "end": 2.766
   },
   {
-   "text": "2000,",
-   "start": 51.046,
-   "end": 51.441
+   "text": "toujours",
+   "start": 2.766,
+   "end": 3.021
   },
   {
-   "text": "c'est",
-   "start": 51.718,
-   "end": 51.846
-  },
-  {
-   "text": "la",
-   "start": 51.846,
-   "end": 51.915
-  },
-  {
-   "text": "normodiurèse.",
-   "start": 51.915,
-   "end": 52.748
-  },
-  {
-   "text": "Au-dessus",
-   "start": 53.063,
-   "end": 53.468
-  },
-  {
-   "text": "de",
-   "start": 53.468,
-   "end": 53.56
-  },
-  {
-   "text": "2500",
-   "start": 53.561,
-   "end": 54.223
-  },
-  {
-   "text": "à",
-   "start": 54.223,
-   "end": 54.278
-  },
-  {
-   "text": "3000 :",
-   "start": 54.278,
-   "end": 54.787
-  },
-  {
-   "text": "polyurie.",
-   "start": 55.03,
-   "end": 55.609
-  },
-  {
-   "text": "En",
-   "start": 55.943,
-   "end": 56.047
-  },
-  {
-   "text": "dessous",
-   "start": 56.047,
-   "end": 56.325
-  },
-  {
-   "text": "de",
-   "start": 56.325,
-   "end": 56.417
-  },
-  {
-   "text": "400 :",
-   "start": 56.417,
-   "end": 57.147
-  },
-  {
-   "text": "oligurie.",
-   "start": 57.436,
-   "end": 58.003
-  },
-  {
-   "text": "Et",
-   "start": 58.319,
-   "end": 58.47
-  },
-  {
-   "text": "en",
-   "start": 58.47,
-   "end": 58.528
-  },
-  {
-   "text": "dessous",
-   "start": 58.528,
-   "end": 58.782
-  },
-  {
-   "text": "de",
-   "start": 58.782,
-   "end": 58.91
-  },
-  {
-   "text": "100 :",
-   "start": 58.91,
-   "end": 59.199
-  },
-  {
-   "text": "anurie,",
-   "start": 59.419,
-   "end": 59.905
+   "text": "pas",
+   "start": 3.021,
+   "end": 3.125
   },
   {
    "text": "une",
-   "start": 60.113,
-   "end": 60.194
+   "start": 3.125,
+   "end": 3.218
+  },
+  {
+   "text": "goutte",
+   "start": 3.218,
+   "end": 3.426
+  },
+  {
+   "text": "dans",
+   "start": 3.426,
+   "end": 3.507
+  },
+  {
+   "text": "le",
+   "start": 3.507,
+   "end": 3.565
+  },
+  {
+   "text": "bocal !",
+   "start": 3.565,
+   "end": 4.039
+  },
+  {
+   "text": "Un",
+   "start": 4.352,
+   "end": 4.491
+  },
+  {
+   "text": "simple",
+   "start": 4.491,
+   "end": 4.78
+  },
+  {
+   "text": "oubli",
+   "start": 4.78,
+   "end": 4.965
+  },
+  {
+   "text": "du",
+   "start": 4.965,
+   "end": 5.058
+  },
+  {
+   "text": "patient…",
+   "start": 5.058,
+   "end": 5.544
+  },
+  {
+   "text": "ou",
+   "start": 5.868,
+   "end": 5.937
+  },
+  {
+   "text": "des",
+   "start": 5.938,
+   "end": 6.042
+  },
+  {
+   "text": "reins",
+   "start": 6.042,
+   "end": 6.192
+  },
+  {
+   "text": "qui",
+   "start": 6.192,
+   "end": 6.296
+  },
+  {
+   "text": "ne",
+   "start": 6.296,
+   "end": 6.389
+  },
+  {
+   "text": "fabriquent",
+   "start": 6.389,
+   "end": 6.701
+  },
+  {
+   "text": "plus",
+   "start": 6.701,
+   "end": 6.829
+  },
+  {
+   "text": "d'urine ?",
+   "start": 6.829,
+   "end": 7.303
+  },
+  {
+   "text": "Mais",
+   "start": 7.616,
+   "end": 7.766
+  },
+  {
+   "text": "au",
+   "start": 7.766,
+   "end": 7.836
+  },
+  {
+   "text": "fait…",
+   "start": 7.836,
+   "end": 8.206
+  },
+  {
+   "text": "c'est",
+   "start": 8.426,
+   "end": 8.553
+  },
+  {
+   "text": "quoi,",
+   "start": 8.553,
+   "end": 8.843
+  },
+  {
+   "text": "la",
+   "start": 9.178,
+   "end": 9.248
+  },
+  {
+   "text": "diurèse ?",
+   "start": 9.248,
+   "end": 9.792
+  },
+  {
+   "text": "La",
+   "start": 10.848,
+   "end": 10.963
+  },
+  {
+   "text": "diurèse,",
+   "start": 10.963,
+   "end": 11.473
+  },
+  {
+   "text": "c'est",
+   "start": 11.739,
+   "end": 11.855
+  },
+  {
+   "text": "la",
+   "start": 11.855,
+   "end": 11.924
+  },
+  {
+   "text": "quantité",
+   "start": 11.924,
+   "end": 12.283
+  },
+  {
+   "text": "d'urine",
+   "start": 12.283,
+   "end": 12.63
+  },
+  {
+   "text": "que",
+   "start": 12.63,
+   "end": 12.711
+  },
+  {
+   "text": "les",
+   "start": 12.711,
+   "end": 12.792
+  },
+  {
+   "text": "reins",
+   "start": 12.792,
+   "end": 12.919
+  },
+  {
+   "text": "fabriquent.",
+   "start": 12.919,
+   "end": 13.486
+  },
+  {
+   "text": "Les",
+   "start": 13.803,
+   "end": 13.999
+  },
+  {
+   "text": "reins",
+   "start": 13.999,
+   "end": 14.173
+  },
+  {
+   "text": "filtrent",
+   "start": 14.173,
+   "end": 14.486
+  },
+  {
+   "text": "le",
+   "start": 14.486,
+   "end": 14.59
+  },
+  {
+   "text": "sang,",
+   "start": 14.59,
+   "end": 14.902
+  },
+  {
+   "text": "et",
+   "start": 15.18,
+   "end": 15.226
+  },
+  {
+   "text": "l'urine",
+   "start": 15.226,
+   "end": 15.516
+  },
+  {
+   "text": "est",
+   "start": 15.516,
+   "end": 15.55
+  },
+  {
+   "text": "stockée",
+   "start": 15.55,
+   "end": 15.851
+  },
+  {
+   "text": "dans",
+   "start": 15.851,
+   "end": 15.944
+  },
+  {
+   "text": "la",
+   "start": 15.944,
+   "end": 16.025
+  },
+  {
+   "text": "vessie.",
+   "start": 16.025,
+   "end": 16.476
+  },
+  {
+   "text": "On",
+   "start": 17.403,
+   "end": 17.53
+  },
+  {
+   "text": "la",
+   "start": 17.53,
+   "end": 17.623
+  },
+  {
+   "text": "mesure",
+   "start": 17.623,
+   "end": 17.924
+  },
+  {
+   "text": "sur",
+   "start": 17.924,
+   "end": 18.074
+  },
+  {
+   "text": "24",
+   "start": 18.074,
+   "end": 18.491
+  },
+  {
+   "text": "heures :",
+   "start": 18.491,
+   "end": 18.688
+  },
+  {
+   "text": "on",
+   "start": 19.162,
+   "end": 19.185
+  },
+  {
+   "text": "recueille",
+   "start": 19.185,
+   "end": 19.509
+  },
+  {
+   "text": "toutes",
+   "start": 19.509,
+   "end": 19.683
+  },
+  {
+   "text": "les",
+   "start": 19.683,
+   "end": 19.764
+  },
+  {
+   "text": "urines",
+   "start": 19.764,
+   "end": 20.042
+  },
+  {
+   "text": "dans",
+   "start": 20.042,
+   "end": 20.111
+  },
+  {
+   "text": "un",
+   "start": 20.111,
+   "end": 20.239
+  },
+  {
+   "text": "bocal",
+   "start": 20.239,
+   "end": 20.516
+  },
+  {
+   "text": "gradué,",
+   "start": 20.516,
+   "end": 21.037
+  },
+  {
+   "text": "et",
+   "start": 21.338,
+   "end": 21.431
+  },
+  {
+   "text": "on",
+   "start": 21.431,
+   "end": 21.465
+  },
+  {
+   "text": "lit",
+   "start": 21.466,
+   "end": 21.581
+  },
+  {
+   "text": "le",
+   "start": 21.581,
+   "end": 21.662
+  },
+  {
+   "text": "volume",
+   "start": 21.662,
+   "end": 21.963
+  },
+  {
+   "text": "en",
+   "start": 21.963,
+   "end": 22.009
+  },
+  {
+   "text": "millilitres.",
+   "start": 22.01,
+   "end": 22.611
+  },
+  {
+   "text": "Chez",
+   "start": 23.545,
+   "end": 23.753
+  },
+  {
+   "text": "l'adulte,",
+   "start": 23.753,
+   "end": 24.239
+  },
+  {
+   "text": "la",
+   "start": 24.402,
+   "end": 24.494
+  },
+  {
+   "text": "normale,",
+   "start": 24.494,
+   "end": 24.969
+  },
+  {
+   "text": "c'est",
+   "start": 25.27,
+   "end": 25.397
+  },
+  {
+   "text": "entre",
+   "start": 25.397,
+   "end": 25.564
+  },
+  {
+   "text": "600",
+   "start": 25.564,
+   "end": 25.881
+  },
+  {
+   "text": "et",
+   "start": 25.881,
+   "end": 25.948
+  },
+  {
+   "text": "2000",
+   "start": 25.948,
+   "end": 26.349
+  },
+  {
+   "text": "millilitres",
+   "start": 26.349,
+   "end": 26.716
+  },
+  {
+   "text": "par",
+   "start": 26.716,
+   "end": 26.878
+  },
+  {
+   "text": "24",
+   "start": 26.878,
+   "end": 27.307
+  },
+  {
+   "text": "heures :",
+   "start": 27.307,
+   "end": 27.492
+  },
+  {
+   "text": "c'est",
+   "start": 27.839,
+   "end": 27.943
+  },
+  {
+   "text": "la",
+   "start": 27.943,
+   "end": 28.013
+  },
+  {
+   "text": "normodiurèse.",
+   "start": 28.013,
+   "end": 28.857
+  },
+  {
+   "text": "Au-dessus",
+   "start": 29.779,
+   "end": 30.15
+  },
+  {
+   "text": "de",
+   "start": 30.15,
+   "end": 30.242
+  },
+  {
+   "text": "2500",
+   "start": 30.242,
+   "end": 30.776
+  },
+  {
+   "text": "à",
+   "start": 30.776,
+   "end": 30.821
+  },
+  {
+   "text": "3000",
+   "start": 30.821,
+   "end": 31.226
+  },
+  {
+   "text": "millilitres,",
+   "start": 31.226,
+   "end": 31.596
+  },
+  {
+   "text": "c'est",
+   "start": 31.897,
+   "end": 31.978
+  },
+  {
+   "text": "une",
+   "start": 31.978,
+   "end": 32.152
+  },
+  {
+   "text": "polyurie :",
+   "start": 32.152,
+   "end": 32.708
+  },
+  {
+   "text": "le",
+   "start": 33.078,
+   "end": 33.136
+  },
+  {
+   "text": "patient",
+   "start": 33.136,
+   "end": 33.437
+  },
+  {
+   "text": "urine",
+   "start": 33.437,
+   "end": 33.772
+  },
+  {
+   "text": "beaucoup",
+   "start": 33.784,
+   "end": 34.015
+  },
+  {
+   "text": "trop.",
+   "start": 34.015,
+   "end": 34.363
+  },
+  {
+   "text": "Par",
+   "start": 34.679,
+   "end": 34.852
+  },
+  {
+   "text": "exemple",
+   "start": 34.852,
+   "end": 35.176
+  },
+  {
+   "text": "avec",
+   "start": 35.176,
+   "end": 35.373
+  },
+  {
+   "text": "un",
+   "start": 35.373,
+   "end": 35.42
+  },
+  {
+   "text": "diabète,",
+   "start": 35.42,
+   "end": 35.906
+  },
+  {
+   "text": "ou",
+   "start": 36.241,
+   "end": 36.276
+  },
+  {
+   "text": "des",
+   "start": 36.276,
+   "end": 36.369
+  },
+  {
+   "text": "diurétiques,",
+   "start": 36.369,
+   "end": 37.04
+  },
+  {
+   "text": "des",
+   "start": 37.271,
+   "end": 37.341
+  },
+  {
+   "text": "médicaments",
+   "start": 37.341,
+   "end": 37.815
+  },
+  {
+   "text": "qui",
+   "start": 37.815,
+   "end": 37.943
+  },
+  {
+   "text": "font",
+   "start": 37.943,
+   "end": 38.058
+  },
+  {
+   "text": "uriner.",
+   "start": 38.058,
+   "end": 38.545
+  },
+  {
+   "text": "En",
+   "start": 39.508,
+   "end": 39.589
+  },
+  {
+   "text": "dessous",
+   "start": 39.589,
+   "end": 39.844
+  },
+  {
+   "text": "de",
+   "start": 39.844,
+   "end": 39.936
+  },
+  {
+   "text": "400",
+   "start": 39.936,
+   "end": 40.333
+  },
+  {
+   "text": "millilitres,",
+   "start": 40.333,
+   "end": 40.793
+  },
+  {
+   "text": "c'est",
+   "start": 41.047,
+   "end": 41.14
+  },
+  {
+   "text": "une",
+   "start": 41.14,
+   "end": 41.314
+  },
+  {
+   "text": "oligurie :",
+   "start": 41.314,
+   "end": 41.811
+  },
+  {
+   "text": "le",
+   "start": 42.135,
+   "end": 42.193
+  },
+  {
+   "text": "patient",
+   "start": 42.193,
+   "end": 42.506
+  },
+  {
+   "text": "urine",
+   "start": 42.506,
+   "end": 42.818
+  },
+  {
+   "text": "trop",
+   "start": 42.818,
+   "end": 42.992
+  },
+  {
+   "text": "peu.",
+   "start": 42.992,
+   "end": 43.293
+  },
+  {
+   "text": "Ça",
+   "start": 43.609,
+   "end": 43.783
+  },
+  {
+   "text": "peut",
+   "start": 43.783,
+   "end": 43.898
+  },
+  {
+   "text": "venir",
+   "start": 43.898,
+   "end": 44.199
+  },
+  {
+   "text": "d'une",
+   "start": 44.199,
+   "end": 44.338
+  },
+  {
+   "text": "déshydratation,",
+   "start": 44.338,
+   "end": 45.148
+  },
+  {
+   "text": "quand",
+   "start": 45.403,
+   "end": 45.495
+  },
+  {
+   "text": "le",
+   "start": 45.496,
+   "end": 45.576
+  },
+  {
+   "text": "corps",
+   "start": 45.577,
+   "end": 45.785
+  },
+  {
+   "text": "manque",
+   "start": 45.785,
+   "end": 46.028
+  },
+  {
+   "text": "d'eau.",
+   "start": 46.028,
+   "end": 46.317
+  },
+  {
+   "text": "Et",
+   "start": 47.225,
+   "end": 47.364
+  },
+  {
+   "text": "en",
+   "start": 47.364,
+   "end": 47.422
+  },
+  {
+   "text": "dessous",
+   "start": 47.422,
+   "end": 47.665
+  },
+  {
+   "text": "de",
+   "start": 47.665,
+   "end": 47.781
+  },
+  {
+   "text": "100",
+   "start": 47.781,
+   "end": 48.086
+  },
+  {
+   "text": "millilitres,",
+   "start": 48.086,
+   "end": 48.44
+  },
+  {
+   "text": "c'est",
+   "start": 48.707,
+   "end": 48.788
+  },
+  {
+   "text": "une",
+   "start": 48.788,
+   "end": 48.961
+  },
+  {
+   "text": "anurie :",
+   "start": 48.961,
+   "end": 49.366
+  },
+  {
+   "text": "il",
+   "start": 49.621,
+   "end": 49.714
+  },
+  {
+   "text": "n'y",
+   "start": 49.714,
+   "end": 49.771
+  },
+  {
+   "text": "a",
+   "start": 49.771,
+   "end": 49.806
+  },
+  {
+   "text": "presque",
+   "start": 49.806,
+   "end": 50.13
+  },
+  {
+   "text": "plus",
+   "start": 50.13,
+   "end": 50.269
+  },
+  {
+   "text": "d'urine.",
+   "start": 50.269,
+   "end": 50.767
+  },
+  {
+   "text": "C'est",
+   "start": 51.081,
+   "end": 51.255
+  },
+  {
+   "text": "une",
+   "start": 51.255,
+   "end": 51.428
   },
   {
    "text": "urgence !",
-   "start": 60.194,
-   "end": 60.773
+   "start": 51.428,
+   "end": 52.007
+  },
+  {
+   "text": "Petit",
+   "start": 52.936,
+   "end": 53.214
+  },
+  {
+   "text": "récap !",
+   "start": 53.214,
+   "end": 53.746
+  },
+  {
+   "text": "La",
+   "start": 54.102,
+   "end": 54.23
+  },
+  {
+   "text": "diurèse,",
+   "start": 54.23,
+   "end": 54.75
+  },
+  {
+   "text": "c'est",
+   "start": 55.005,
+   "end": 55.121
+  },
+  {
+   "text": "la",
+   "start": 55.121,
+   "end": 55.202
+  },
+  {
+   "text": "quantité",
+   "start": 55.202,
+   "end": 55.549
+  },
+  {
+   "text": "d'urine",
+   "start": 55.549,
+   "end": 55.873
+  },
+  {
+   "text": "sur",
+   "start": 55.873,
+   "end": 56.047
+  },
+  {
+   "text": "24",
+   "start": 56.047,
+   "end": 56.487
+  },
+  {
+   "text": "heures,",
+   "start": 56.487,
+   "end": 56.695
+  },
+  {
+   "text": "en",
+   "start": 56.915,
+   "end": 56.949
+  },
+  {
+   "text": "millilitres.",
+   "start": 56.95,
+   "end": 57.598
+  },
+  {
+   "text": "Normale :",
+   "start": 57.922,
+   "end": 58.443
+  },
+  {
+   "text": "entre",
+   "start": 58.836,
+   "end": 59.001
+  },
+  {
+   "text": "600",
+   "start": 59.001,
+   "end": 59.313
+  },
+  {
+   "text": "et",
+   "start": 59.313,
+   "end": 59.379
+  },
+  {
+   "text": "2000,",
+   "start": 59.379,
+   "end": 59.774
+  },
+  {
+   "text": "c'est",
+   "start": 60.051,
+   "end": 60.179
+  },
+  {
+   "text": "la",
+   "start": 60.179,
+   "end": 60.248
+  },
+  {
+   "text": "normodiurèse.",
+   "start": 60.248,
+   "end": 61.081
+  },
+  {
+   "text": "Au-dessus",
+   "start": 61.396,
+   "end": 61.801
+  },
+  {
+   "text": "de",
+   "start": 61.801,
+   "end": 61.893
+  },
+  {
+   "text": "2500",
+   "start": 61.894,
+   "end": 62.556
+  },
+  {
+   "text": "à",
+   "start": 62.556,
+   "end": 62.611
+  },
+  {
+   "text": "3000 :",
+   "start": 62.611,
+   "end": 63.12
+  },
+  {
+   "text": "polyurie.",
+   "start": 63.363,
+   "end": 63.942
+  },
+  {
+   "text": "En",
+   "start": 64.276,
+   "end": 64.38
+  },
+  {
+   "text": "dessous",
+   "start": 64.38,
+   "end": 64.658
+  },
+  {
+   "text": "de",
+   "start": 64.658,
+   "end": 64.75
+  },
+  {
+   "text": "400 :",
+   "start": 64.75,
+   "end": 65.48
+  },
+  {
+   "text": "oligurie.",
+   "start": 65.769,
+   "end": 66.336
+  },
+  {
+   "text": "Et",
+   "start": 66.652,
+   "end": 66.803
+  },
+  {
+   "text": "en",
+   "start": 66.803,
+   "end": 66.861
+  },
+  {
+   "text": "dessous",
+   "start": 66.861,
+   "end": 67.115
+  },
+  {
+   "text": "de",
+   "start": 67.115,
+   "end": 67.243
+  },
+  {
+   "text": "100 :",
+   "start": 67.243,
+   "end": 67.532
+  },
+  {
+   "text": "anurie,",
+   "start": 67.752,
+   "end": 68.238
+  },
+  {
+   "text": "une",
+   "start": 68.446,
+   "end": 68.527
+  },
+  {
+   "text": "urgence !",
+   "start": 68.527,
+   "end": 69.106
   }
  ]
 }

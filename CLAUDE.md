@@ -86,7 +86,13 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   fois où tu respires… chaque jour. Sans même y penser. Et pourtant, à l'hôpital, c'est la constante qu'on oublie le plus
   souvent. » (compteur qui **roule de 0 à 20 000** pendant « Vingt mille », impact à l'arrivée ; les poumons
   n'apparaissent **que** sur « respires… chaque jour » ; « +1 » à chaque inspiration ; fiche de surveillance qui se
-  coche sauf la ligne FR, tampon OUBLIÉE ; pas de soleil / lune : retirés à la demande). Proposer 2 – 3 accroches au choix quand le propriétaire n'a pas d'idée.
+  coche sauf la ligne FR, tampon OUBLIÉE ; pas de soleil / lune : retirés à la demande).
+  Variante **accéléré + dilemme** (`Diurese`) : « Huit heures, midi, seize heures, vingt heures… et toujours pas une goutte
+  dans le bocal ! Un simple oubli du patient… ou des reins qui ne fabriquent plus d'urine ? » (image 0 : « 08:00 »,
+  horloge, bocal vide « 0 mL » ; les heures défilent au mot, la lumière baisse ; une goutte se forme au bout du tuyau… et
+  remonte ; deux cartes « oubli du bocal ? » / « reins à l'arrêt ? », la 2e claque « URGENCE ? ») : l'accroche annonce la
+  fin de la vidéo (anurie = urgence), ce qui retient jusqu'au bout. **Varier le style d'une vidéo à l'autre** (signes →
+  révélation, enquête, chiffre-choc, accéléré + dilemme…). Proposer 2 – 3 accroches au choix quand le propriétaire n'a pas d'idée.
 - Récap : **pas de tampon final** (« Pro du souffle », « Pro du pouls » retirés à la demande) — confettis + mascotte suffisent.
 - Rester simple et factuel : pas d'astuces « de terrain » mises en scène (retirées de la FR : compter
   discrètement, faire semblant de prendre le pouls). Expliquer chaque qualificatif entre parenthèses

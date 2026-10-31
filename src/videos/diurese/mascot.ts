@@ -9,8 +9,15 @@ const {L, R} = SPOT;
 const runAcross = (id: SceneId) => run(TL, start(id));
 
 export const MASCOT: Beat[] = [
-	/* ── accroche ── */
-	{at: abs('intro', 'quoi'), via: 'pop', key: 'expressions/questionnement', ...R},
+	/* ── accroche : la journée passe, toujours rien ── elle attend, bâille le soir, inspecte le bocal, gênée (oubli ?),
+	   inquiète (les reins ?), alerte (urgence) */
+	{at: abs('intro', 'midi'), via: 'pop', key: 'expressions/reflechit', ...R},
+	{at: abs('intro', 'vingt'), key: 'symptomes/baille', ...R},
+	{at: abs('intro', 'goutte'), key: 'expressions/loupe', ...L},
+	{at: abs('intro', 'oubli'), key: 'expressions/genee', ...L},
+	{at: abs('intro', 'reins'), key: 'expressions/inquiete', ...L},
+	{at: abs('intro', "d'urine"), key: 'expressions/alerte', fx: 'shake', ...L},
+	{at: abs('intro', 'quoi'), key: 'expressions/questionnement', ...R},
 	// elle plonge dans le bocal (zoomInto)
 	{at: start('def') - 4, dur: 16, key: 'expressions/questionnement', x: 540, y: 900, size: 0},
 

@@ -1,5 +1,5 @@
 [
-	{"id": "intro", "text": "C'est quoi, la diurèse ?"},
+	{"id": "intro", "text": "Huit heures, midi, seize heures, vingt heures… et toujours pas une goutte dans le bocal ! Un simple oubli du patient… ou des reins qui ne fabriquent plus d'urine ? Mais au fait… c'est quoi, la diurèse ?"},
 	{"id": "def", "text": "La diurèse, c'est la quantité d'urine que les reins fabriquent. Les reins filtrent le sang, et l'urine est stockée dans la vessie."},
 	{"id": "mesure", "text": "On la mesure sur 24 heures : on recueille toutes les urines dans un bocal gradué, et on lit le volume en millilitres."},
 	{"id": "norme", "text": "Chez l'adulte, la normale, c'est entre 600 et 2000 millilitres par 24 heures : c'est la normodiurèse."},
