@@ -148,6 +148,29 @@ const GROUPS: {n: number; title: string; tone: string; items: TrayItem[]}[] = [
 ];
 const PANEL = {x: 40, w: 1000, h: 340, y0: 430, gap: 24};
 
+/** La famille `g` du plateau en rangée au centre du socle (début de scène), qui s'efface avant le 1er objet. */
+const FamilyStrip: React.FC<{g: number; at: number; until: number}> = ({g, at: t0, until}) => {
+	const frame = useCurrentFrame();
+	const o = interpolate(frame, [until - 6, until], [1, 0], clamp);
+	if (frame < t0 || o <= 0) return null;
+	const {items, n, title, tone} = GROUPS[g];
+	return (
+		<div style={{position: 'absolute', left: 0, right: 0, top: 40, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 22, opacity: o}}>
+			<div style={{transform: `scale(${popAt(frame, t0)})`}}>
+				<GroupBadge n={n} title={title} tone={tone} />
+			</div>
+			<div style={{display: 'flex', alignItems: 'flex-end', gap: 30}}>
+				{items.map((it, i) => (
+					<div key={it.label} style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, transform: `scale(${popAt(frame, t0 + 3 + i * 4) * 1.1})`}}>
+						{it.node}
+						<div style={{fontFamily: FONT.body, fontWeight: 900, fontSize: 26, color: alpha(N, 0.8), whiteSpace: 'nowrap'}}>{it.label}</div>
+					</div>
+				))}
+			</div>
+		</div>
+	);
+};
+
 const GroupBadge: React.FC<{n: number; title: string; tone: string; glow?: number}> = ({n, title, tone, glow = 0}) => (
 	<div style={{display: 'flex', alignItems: 'center', gap: 16}}>
 		<div style={{width: 64, height: 64, borderRadius: 32, background: tone, border: `5px solid ${N}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FONT.title, fontWeight: 900, fontSize: 40, color: tone === N ? LPI.paper : N, boxShadow: glow > 0 ? `0 0 ${30 * glow}px ${alpha(LPI.pink, 0.9)}` : 'none', transform: `scale(${1 + 0.15 * glow})`}}>{n}</div>
@@ -273,6 +296,7 @@ export const Prelevement: React.FC = () => {
 							</div>
 						) : null}
 					</ZoomCam>
+					<FamilyStrip g={0} at={UN - 2} until={AIG - 2} />
 					<StagePill from={VEINE - 2} to={TUBE - 4} x={520} y={40}>
 						pointe côté veine
 					</StagePill>
@@ -456,6 +480,7 @@ export const Mains: React.FC = () => {
 							</div>
 						) : null}
 					</ZoomCam>
+					<FamilyStrip g={1} at={DEUX - 2} until={DAB - 2} />
 					<StagePill from={SHA - 2} to={MAINS - 4} color={LPI.sky}>
 						SHA = solution hydroalcoolique
 					</StagePill>
@@ -709,6 +734,7 @@ export const Dechets: React.FC = () => {
 							</div>
 						) : null}
 					</ZoomCam>
+					<FamilyStrip g={2} at={0} until={COLL - 4} />
 					<StagePill from={OPCT - 2} to={AIG - 4} x={420} y={40} color={LPI.blue}>
 						OPCT = objets piquants, coupants, tranchants
 					</StagePill>
