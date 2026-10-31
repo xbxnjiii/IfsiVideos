@@ -1,34 +1,10 @@
 [
-	{
-		"id": "intro",
-		"text": "Vingt mille. C'est le nombre de fois où tu respires… chaque jour. Sans même y penser. Et pourtant, à l'hôpital, c'est la constante qu'on oublie le plus souvent. Mais au fait… c'est quoi, la fréquence respiratoire ?"
-	},
-	{
-		"id": "def",
-		"text": "La fréquence respiratoire, c'est le nombre de respirations en une minute. Une inspiration, plus une expiration : ça fait un cycle. On parle donc de cycles par minute."
-	},
-	{
-		"id": "mesure",
-		"text": "Pour la compter, regarde le thorax. Il se soulève, il redescend : un cycle. Compte pendant une minute entière."
-	},
-	{
-		"id": "norme",
-		"text": "Chez l'adulte au repos, la normale, c'est entre 12 et 20 cycles par minute."
-	},
-	{
-		"id": "tachy",
-		"text": "Au-dessus de 20, c'est une tachypnée : la respiration s'accélère. Ça arrive avec l'effort, la fièvre, l'anxiété ou la douleur."
-	},
-	{
-		"id": "brady",
-		"text": "En dessous de 12, c'est une bradypnée : la respiration ralentit. Attention aux médicaments qui endorment, comme la morphine !"
-	},
-	{
-		"id": "obs",
-		"text": "Mais il n'y a pas que le chiffre ! On regarde l'amplitude : une respiration ample, ou superficielle. Le rythme : régulier ou pas. Et quand le patient a du mal à respirer, c'est une dyspnée."
-	},
-	{
-		"id": "outro",
-		"text": "Petit récap ! La fréquence respiratoire, c'est le nombre de cycles par minute. On compte les mouvements du thorax pendant une minute. La normale, entre 12 et 20. Au-dessus : tachypnée. En dessous : bradypnée. Et du mal à respirer : dyspnée !"
-	}
+	{"id": "intro", "text": "Vingt mille. C'est le nombre de fois où tu respires… chaque jour. Sans même y penser. Et pourtant, à l'hôpital, c'est la constante qu'on oublie le plus souvent. Mais au fait… c'est quoi, la fréquence respiratoire ?"},
+	{"id": "def", "text": "La fréquence respiratoire, c'est le nombre de respirations en une minute. Une inspiration, plus une expiration : ça fait un cycle. On parle donc de cycles par minute."},
+	{"id": "mesure", "text": "Pour la compter, regarde le thorax. Il se soulève, puis il redescend : ça fait un cycle. Compte pendant une minute entière."},
+	{"id": "norme", "text": "Chez l'adulte au repos, la normale, c'est entre 12 et 20 cycles par minute."},
+	{"id": "tachy", "text": "Au-dessus de 20, c'est une tachypnée : la respiration s'accélère. Ça arrive avec l'effort, la fièvre, l'anxiété ou la douleur."},
+	{"id": "brady", "text": "En dessous de 12, c'est une bradypnée : la respiration ralentit. Attention aux médicaments qui endorment, comme la morphine !"},
+	{"id": "obs", "text": "Mais il n'y a pas que le chiffre ! On regarde l'amplitude : une respiration ample, ou superficielle. Le rythme : régulier ou pas. Et quand le patient a du mal à respirer, c'est une dyspnée."},
+	{"id": "outro", "text": "Petit récap ! La fréquence respiratoire, c'est le nombre de cycles par minute. On compte les mouvements du thorax pendant une minute. La normale, entre 12 et 20. Au-dessus : tachypnée. En dessous : bradypnée. Et du mal à respirer : dyspnée !"}
 ]

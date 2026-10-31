@@ -392,37 +392,52 @@
   {
    "text": "Il",
    "start": 24.352,
-   "end": 24.549
+   "end": 24.537
   },
   {
    "text": "se",
-   "start": 24.549,
-   "end": 24.711
+   "start": 24.537,
+   "end": 24.653
   },
   {
    "text": "soulève,",
-   "start": 24.711,
-   "end": 25.116
+   "start": 24.653,
+   "end": 25.151
+  },
+  {
+   "text": "puis",
+   "start": 25.347,
+   "end": 25.486
   },
   {
    "text": "il",
-   "start": 25.475,
+   "start": 25.486,
    "end": 25.556
   },
   {
    "text": "redescend :",
    "start": 25.556,
-   "end": 26.134
+   "end": 26.053
+  },
+  {
+   "text": "ça",
+   "start": 26.366,
+   "end": 26.47
+  },
+  {
+   "text": "fait",
+   "start": 26.47,
+   "end": 26.586
   },
   {
    "text": "un",
-   "start": 26.47,
-   "end": 26.597
+   "start": 26.586,
+   "end": 26.69
   },
   {
    "text": "cycle.",
-   "start": 26.597,
-   "end": 27.049
+   "start": 26.69,
+   "end": 27.141
   },
   {
    "text": "Compte",

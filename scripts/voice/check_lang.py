@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Contrôle de la voix : langue détectée et transcription de chaque partie (faster-whisper, langue NON forcée).
+"""Contrôle de la voix : langue détectée et transcription de chaque partie (faster-whisper, langue NON forcée), puis
+de CHAQUE PHRASE : la voix multilingue prend parfois un accent étranger sur une phrase courte au milieu d'une partie
+(« Verdict : hypoglycémie ! » en anglais, « Il se soulève, il redescend : un cycle. » avec un accent italien) alors que
+la partie entière passe en « fr ». Corriger avec `npm run voice -- … --swap <partie> "phrase" "nouvelle phrase"`.
 
 Usage : npm run check:voice -- <épisode> [--model medium] [--parts intro,serie]
 Chaque ligne doit dire « fr » ; relire les mots clés (sigles, chiffres, « à jeun »…). Le modèle `small` se trompe
@@ -33,3 +36,19 @@ for s in v["sections"]:
     flag = "" if info.language == "fr" else "   <<< PAS EN FRANÇAIS"
     print(f"{s['id']:12} {info.language} {info.language_probability:.2f} | {text}{flag}", flush=True)
     os.remove(tmp)
+    # phrase par phrase (fin de phrase = . ! ? … ou fin de partie)
+    words = [w for w in v["words"] if s["start"] - 1e-6 <= w["start"] <= s["end"] + 1e-6]
+    sent = []
+    for i, w in enumerate(words):
+        sent.append(w)
+        if w["text"].rstrip().endswith((".", "!", "?", "…")) or i == len(words) - 1:
+            a0, a1 = sent[0]["start"] - 0.05, sent[-1]["end"] + 0.1
+            if a1 - a0 >= 0.8:
+                tmp = tempfile.mktemp(suffix=".wav")
+                subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", wav, "-ss", f"{max(0, a0):.3f}", "-to", f"{a1:.3f}", tmp], check=True)
+                _, inf = model.transcribe(tmp, beam_size=1)
+                os.remove(tmp)
+                if inf.language != "fr" or inf.language_probability < 0.8:
+                    t0 = a0 + 8 / 30
+                    print(f"{'':12}   <<< phrase à {t0:.1f} s (vidéo) : {inf.language} {inf.language_probability:.2f} | {' '.join(x['text'] for x in sent)}", flush=True)
+            sent = []

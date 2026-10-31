@@ -61,9 +61,9 @@ const PhasePill: React.FC<{at: number; label: string; up: boolean; on: boolean}>
 };
 
 /* ═══════════════════════════════ ACCROCHE ═══════════════════════════════ */
-// Chiffre-choc. Image 0 (miniature) : « 20 000 » en énorme au-dessus des poumons qui respirent. « respires… chaque
-// jour » : chaque inspiration lâche un « +1 », un soleil traverse la journée et devient lune ; « sans même y penser » :
-// la mascotte dort. « à l'hôpital » : une fiche de surveillance glisse, les constantes se cochent une à une… la ligne FR
+// Chiffre-choc. Un compteur roule de 0 à 20 000 sur « Vingt mille » (roulement, impact à l'arrivée). « respires… chaque
+// jour » : les poumons apparaissent (et seulement là), chaque inspiration lâche un « +1 » ; « sans même y penser » : la
+// mascotte dort. « à l'hôpital » : une fiche de surveillance glisse, les constantes se cochent une à une… la ligne FR
 // reste vide ; « oublie » : tampon OUBLIÉE. « Mais au fait » : la fiche repart, on retrouve l'ancienne accroche (titre,
 // poumons en (540, 820) : la transition plonge dedans).
 /** Flash plein écran (choc) qui retombe. */
@@ -74,34 +74,17 @@ const Flash: React.FC<{at: number}> = ({at: t0}) => {
 	return <AbsoluteFill style={{background: `radial-gradient(circle at 50% 50%, ${alpha(LPI.pink, o * 0.4)} 20%, ${alpha(LPI.pink, o)} 100%)`}} />;
 };
 
-/** Soleil qui traverse la journée (0 h → 24 h) et devient lune. */
-const DayBar: React.FC<{at: number; out: number}> = ({at: t0, out}) => {
-	const frame = useCurrentFrame();
-	const o = interpolate(frame, [t0 - 6, t0, out, out + 8], [0, 1, 1, 0], clamp);
-	if (o <= 0) return null;
-	const p = interpolate(frame, [t0, t0 + 30], [0, 1], ease);
-	const x = 170 + p * 740;
-	const y = 1210 - Math.sin(p * Math.PI) * 60;
-	const moon = interpolate(p, [0.65, 0.9], [0, 1], clamp);
+/** Compteur qui roule (chiffres à chasse fixe, espace des milliers). */
+const Counter: React.FC<{value: number; size: number}> = ({value, size}) => {
+	const txt = String(Math.round(value)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
 	return (
-		<svg width={1080} height={200} viewBox="0 1120 1080 200" style={{position: 'absolute', left: 0, top: 1120, opacity: o, overflow: 'visible'}}>
-			<path d="M170 1210 Q540 1090 910 1210" fill="none" stroke={alpha(N, 0.4)} strokeWidth={8} strokeDasharray="4 18" strokeLinecap="round" />
-			<text x={170} y={1278} textAnchor="middle" fontFamily={FONT.title} fontWeight={900} fontSize={42} fill={N}>
-				0 h
-			</text>
-			<text x={910} y={1278} textAnchor="middle" fontFamily={FONT.title} fontWeight={900} fontSize={42} fill={N}>
-				24 h
-			</text>
-			<g transform={`translate(${x} ${y}) scale(1.6)`} opacity={1 - moon}>
-				{Array.from({length: 8}, (_, i) => (
-					<path key={i} d="M0 -38 V-50" transform={`rotate(${i * 45 + p * 90})`} stroke={N} strokeWidth={6} strokeLinecap="round" />
-				))}
-				<circle r={26} fill={LPI.pink} stroke={N} strokeWidth={5} />
-			</g>
-			<g transform={`translate(${x} ${y}) scale(1.6)`} opacity={moon}>
-				<path d="M8 -30 A30 30 0 1 0 8 30 A22 22 0 1 1 8 -30 Z" fill={LPI.sky} stroke={N} strokeWidth={5} strokeLinejoin="round" />
-			</g>
-		</svg>
+		<div style={{display: 'flex', fontFamily: FONT.title, fontWeight: 900, fontSize: size, color: N, lineHeight: 1}}>
+			{txt.split('').map((c, i) => (
+				<span key={i} style={{display: 'inline-block', width: c === ' ' ? '0.26em' : '0.6em', textAlign: 'center'}}>
+					{c}
+				</span>
+			))}
+		</div>
 	);
 };
 
@@ -155,7 +138,6 @@ const usePopAt = (frame: number, t0: number) => (frame < t0 ? 0 : 1 + 0.12 * Mat
 
 export const Hook: React.FC = () => {
 	const frame = useCurrentFrame();
-	const VINGT = at('intro', 'vingt');
 	const MILLE = at('intro', 'mille');
 	const RESP = at('intro', 'respires');
 	const JOUR = at('intro', 'jour');
@@ -170,21 +152,22 @@ export const Hook: React.FC = () => {
 	const FR = at('intro', 'fréquence');
 	const seg: BreathSegments = [[0, CALM]];
 	const qp = usePop(Q);
-	// le « 20 000 » : là dès l'image 0, claque sur « vingt » et « mille », s'efface sur « Et pourtant »
+	// le compteur roule de 0 à 20 000 pendant « Vingt mille », claque à l'arrivée, s'efface sur « Et pourtant »
+	const LAND = MILLE + 22;
+	const count = 20000 * (1 - Math.pow(1 - interpolate(frame, [0, LAND], [0, 1], clamp), 3));
 	const numOut = interpolate(frame, [POURTANT, POURTANT + 10], [0, 1], ease);
-	const punch = (t: number) => (frame >= t ? 0.08 * Math.exp(-(frame - t) / 4) : 0);
-	const numScale = 1 + punch(VINGT) + punch(MILLE);
+	const numScale = 1 + (frame >= LAND ? 0.1 * Math.exp(-(frame - LAND) / 4) : 0);
+	// les poumons n'apparaissent qu'avec « respires… chaque jour »
+	const lungsIn = usePop(RESP - 2);
 	// les poumons s'effacent derrière la fiche, puis reviennent
 	const dim = interpolate(frame, [HOP - 4, HOP + 6, MAIS + 2, MAIS + 14], [1, 0.18, 0.18, 1], clamp);
 	return (
 		<AbsoluteFill>
 			<LiveBackground />
-			<Camera punches={[VINGT + 1, MILLE + 1, RESP + 1, JOUR + 1, HOP + 1, CONST + 1, OUBLIE + 1, CEST + 1, FR + 1]} shakes={[OUBLIE + 3]} strength={0.04}>
+			<Camera punches={[LAND + 1, RESP + 1, JOUR + 1, HOP + 1, CONST + 1, OUBLIE + 1, CEST + 1, FR + 1]} shakes={[OUBLIE + 3]} strength={0.04}>
 				{numOut < 1 ? (
 					<div style={{position: 'absolute', left: 0, right: 0, top: 240, display: 'flex', flexDirection: 'column', alignItems: 'center', opacity: 1 - numOut, transform: `translateY(${-50 * numOut}px) scale(${numScale * (1 - 0.2 * numOut)})`}}>
-						<BigNum at={-30} size={250}>
-							20 000
-						</BigNum>
+						<Counter value={count} size={250} />
 						<div style={{display: 'flex', gap: 22, marginTop: 6}}>
 							<Title at={RESP} text="respirations" size={64} brush={false} />
 							<Title at={JOUR} text="*par* *jour*" size={64} />
@@ -201,11 +184,11 @@ export const Hook: React.FC = () => {
 						</div>
 					</>
 				) : null}
-				<div style={{position: 'absolute', inset: 0, opacity: dim}}>
+				<div style={{position: 'absolute', inset: 0, opacity: dim * Math.min(1, lungsIn * 1.5)}}>
 					<div style={{position: 'absolute', left: 0, top: 1010}}>
 						<BreathTrace segments={seg} width={1080} height={120} amp={40} color={alpha(LPI.blue, 0.8)} />
 					</div>
-					<div style={{position: 'absolute', left: 540 - 200, top: 620}}>
+					<div style={{position: 'absolute', left: 540 - 200, top: 620, transform: `scale(${0.3 + 0.7 * lungsIn})`}}>
 						<BreathingLungs segments={seg} size={400} />
 					</div>
 				</div>
@@ -219,7 +202,6 @@ export const Hook: React.FC = () => {
 						</div>
 					);
 				})}
-				<DayBar at={JOUR - 2} out={POURTANT} />
 				<VitalsCard at={HOP - 4} fr={CONST} out={MAIS} />
 				<Stamp at={OUBLIE + 2} x={720} y={CARD.y + 96 + 4 * CARD.row + 46} text="Oubliée" size={60} rot={-8} out={MAIS} />
 				{frame >= Q ? (
@@ -247,13 +229,15 @@ export const Hook: React.FC = () => {
 						?
 					</div>
 				) : null}
-				<Burst at={VINGT} x={540} y={360} r={330} n={14} />
+				<Burst at={LAND} x={540} y={360} r={330} n={14} />
+				<Burst at={RESP - 2} x={540} y={820} r={260} n={12} />
 				<Burst at={OUBLIE + 2} x={720} y={CARD.y + 96 + 4 * CARD.row + 46} r={260} n={12} />
 				<Burst at={Q} x={875} y={675} r={200} n={12} />
 			</Camera>
 			<Flash at={OUBLIE + 2} />
-			<Sfx name="impact" at={VINGT} volume={0.09} />
-			<Sfx name="whoosh" at={JOUR - 2} volume={0.06} />
+			<Sfx name="drumroll" at={0} volume={0.06} dur={LAND} />
+			<Sfx name="impact" at={LAND} volume={0.09} />
+			<Sfx name="pop" at={RESP - 2} volume={0.09} />
 			<Sfx name="whoosh" at={HOP - 4} volume={0.07} />
 			{VITALS.map((_, i) => (
 				<Sfx key={i} name="tick" at={HOP + 4 + i * 7} volume={0.07} />
