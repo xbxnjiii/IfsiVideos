@@ -2,7 +2,4 @@ node_modules/
 out/
 .DS_Store
 *.log
-labs/*/snapshots/
-labs/*/renders/
-labs/*/.hyperframes/
 __pycache__/

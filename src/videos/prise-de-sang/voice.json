@@ -1,0 +1,1153 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 80.338,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.05,
+   "end": 6.8
+  },
+  {
+   "id": "prelevement",
+   "start": 7.79,
+   "end": 20.44
+  },
+  {
+   "id": "tubes",
+   "start": 21.419,
+   "end": 29.944
+  },
+  {
+   "id": "mains",
+   "start": 30.884,
+   "end": 41.172
+  },
+  {
+   "id": "bras",
+   "start": 42.164,
+   "end": 51.552
+  },
+  {
+   "id": "fin",
+   "start": 52.529,
+   "end": 59.666
+  },
+  {
+   "id": "dechets",
+   "start": 60.614,
+   "end": 73.352
+  },
+  {
+   "id": "outro",
+   "start": 74.305,
+   "end": 79.98
+  }
+ ],
+ "words": [
+  {
+   "text": "Ça,",
+   "start": 0.05,
+   "end": 0.425
+  },
+  {
+   "text": "c'est",
+   "start": 0.8,
+   "end": 0.925
+  },
+  {
+   "text": "le",
+   "start": 0.925,
+   "end": 1.0
+  },
+  {
+   "text": "matériel",
+   "start": 1.0,
+   "end": 1.425
+  },
+  {
+   "text": "qu'il",
+   "start": 1.425,
+   "end": 1.575
+  },
+  {
+   "text": "te",
+   "start": 1.575,
+   "end": 1.712
+  },
+  {
+   "text": "faut",
+   "start": 1.712,
+   "end": 1.9
+  },
+  {
+   "text": "pour",
+   "start": 1.9,
+   "end": 2.05
+  },
+  {
+   "text": "faire",
+   "start": 2.05,
+   "end": 2.2
+  },
+  {
+   "text": "une",
+   "start": 2.2,
+   "end": 2.288
+  },
+  {
+   "text": "prise",
+   "start": 2.288,
+   "end": 2.487
+  },
+  {
+   "text": "de",
+   "start": 2.487,
+   "end": 2.612
+  },
+  {
+   "text": "sang.",
+   "start": 2.612,
+   "end": 2.938
+  },
+  {
+   "text": "Ça",
+   "start": 3.288,
+   "end": 3.45
+  },
+  {
+   "text": "fait",
+   "start": 3.45,
+   "end": 3.587
+  },
+  {
+   "text": "beaucoup ?",
+   "start": 3.587,
+   "end": 4.037
+  },
+  {
+   "text": "Pas",
+   "start": 4.375,
+   "end": 4.513
+  },
+  {
+   "text": "de",
+   "start": 4.513,
+   "end": 4.612
+  },
+  {
+   "text": "panique :",
+   "start": 4.612,
+   "end": 5.062
+  },
+  {
+   "text": "on",
+   "start": 5.35,
+   "end": 5.375
+  },
+  {
+   "text": "reprend",
+   "start": 5.375,
+   "end": 5.7
+  },
+  {
+   "text": "tout,",
+   "start": 5.7,
+   "end": 5.975
+  },
+  {
+   "text": "un",
+   "start": 6.263,
+   "end": 6.362
+  },
+  {
+   "text": "par",
+   "start": 6.362,
+   "end": 6.588
+  },
+  {
+   "text": "un.",
+   "start": 6.588,
+   "end": 6.8
+  },
+  {
+   "text": "Un :",
+   "start": 7.79,
+   "end": 8.04
+  },
+  {
+   "text": "le",
+   "start": 8.415,
+   "end": 8.489
+  },
+  {
+   "text": "prélèvement.",
+   "start": 8.489,
+   "end": 9.114
+  },
+  {
+   "text": "L'aiguille",
+   "start": 9.502,
+   "end": 9.864
+  },
+  {
+   "text": "Vacutainer",
+   "start": 9.864,
+   "end": 10.402
+  },
+  {
+   "text": "a",
+   "start": 10.402,
+   "end": 10.489
+  },
+  {
+   "text": "deux",
+   "start": 10.489,
+   "end": 10.652
+  },
+  {
+   "text": "pointes :",
+   "start": 10.652,
+   "end": 11.077
+  },
+  {
+   "text": "une",
+   "start": 11.452,
+   "end": 11.564
+  },
+  {
+   "text": "pour",
+   "start": 11.564,
+   "end": 11.689
+  },
+  {
+   "text": "la",
+   "start": 11.689,
+   "end": 11.79
+  },
+  {
+   "text": "veine,",
+   "start": 11.79,
+   "end": 12.127
+  },
+  {
+   "text": "une",
+   "start": 12.377,
+   "end": 12.489
+  },
+  {
+   "text": "pour",
+   "start": 12.489,
+   "end": 12.614
+  },
+  {
+   "text": "le",
+   "start": 12.614,
+   "end": 12.702
+  },
+  {
+   "text": "tube.",
+   "start": 12.702,
+   "end": 13.152
+  },
+  {
+   "text": "Elle",
+   "start": 13.489,
+   "end": 13.689
+  },
+  {
+   "text": "se",
+   "start": 13.689,
+   "end": 13.827
+  },
+  {
+   "text": "visse",
+   "start": 13.827,
+   "end": 14.064
+  },
+  {
+   "text": "sur",
+   "start": 14.064,
+   "end": 14.189
+  },
+  {
+   "text": "le",
+   "start": 14.189,
+   "end": 14.277
+  },
+  {
+   "text": "corps",
+   "start": 14.277,
+   "end": 14.452
+  },
+  {
+   "text": "de",
+   "start": 14.452,
+   "end": 14.54
+  },
+  {
+   "text": "prélèvement,",
+   "start": 14.54,
+   "end": 15.114
+  },
+  {
+   "text": "le",
+   "start": 15.452,
+   "end": 15.514
+  },
+  {
+   "text": "porte-tube.",
+   "start": 15.514,
+   "end": 16.19
+  },
+  {
+   "text": "Et",
+   "start": 16.527,
+   "end": 16.652
+  },
+  {
+   "text": "pour",
+   "start": 16.652,
+   "end": 16.815
+  },
+  {
+   "text": "une",
+   "start": 16.815,
+   "end": 16.902
+  },
+  {
+   "text": "veine",
+   "start": 16.902,
+   "end": 17.102
+  },
+  {
+   "text": "fine",
+   "start": 17.102,
+   "end": 17.352
+  },
+  {
+   "text": "ou",
+   "start": 17.352,
+   "end": 17.389
+  },
+  {
+   "text": "fragile :",
+   "start": 17.389,
+   "end": 17.977
+  },
+  {
+   "text": "l'unité",
+   "start": 18.389,
+   "end": 18.752
+  },
+  {
+   "text": "à",
+   "start": 18.752,
+   "end": 18.815
+  },
+  {
+   "text": "ailettes,",
+   "start": 18.815,
+   "end": 19.252
+  },
+  {
+   "text": "dite",
+   "start": 19.465,
+   "end": 19.639
+  },
+  {
+   "text": "épicrânienne.",
+   "start": 19.639,
+   "end": 20.44
+  },
+  {
+   "text": "Les",
+   "start": 21.419,
+   "end": 21.606
+  },
+  {
+   "text": "tubes :",
+   "start": 21.606,
+   "end": 21.981
+  },
+  {
+   "text": "ceux",
+   "start": 22.294,
+   "end": 22.481
+  },
+  {
+   "text": "de",
+   "start": 22.481,
+   "end": 22.569
+  },
+  {
+   "text": "la",
+   "start": 22.569,
+   "end": 22.644
+  },
+  {
+   "text": "prescription.",
+   "start": 22.644,
+   "end": 23.419
+  },
+  {
+   "text": "Chaque",
+   "start": 23.756,
+   "end": 24.069
+  },
+  {
+   "text": "couleur",
+   "start": 24.069,
+   "end": 24.369
+  },
+  {
+   "text": "de",
+   "start": 24.369,
+   "end": 24.469
+  },
+  {
+   "text": "bouchon,",
+   "start": 24.469,
+   "end": 24.919
+  },
+  {
+   "text": "son",
+   "start": 25.269,
+   "end": 25.406
+  },
+  {
+   "text": "analyse.",
+   "start": 25.406,
+   "end": 26.069
+  },
+  {
+   "text": "Et",
+   "start": 26.406,
+   "end": 26.544
+  },
+  {
+   "text": "dedans,",
+   "start": 26.544,
+   "end": 26.956
+  },
+  {
+   "text": "il",
+   "start": 27.169,
+   "end": 27.244
+  },
+  {
+   "text": "y",
+   "start": 27.244,
+   "end": 27.294
+  },
+  {
+   "text": "a",
+   "start": 27.294,
+   "end": 27.319
+  },
+  {
+   "text": "du",
+   "start": 27.319,
+   "end": 27.456
+  },
+  {
+   "text": "vide :",
+   "start": 27.456,
+   "end": 27.781
+  },
+  {
+   "text": "il",
+   "start": 28.144,
+   "end": 28.219
+  },
+  {
+   "text": "aspire",
+   "start": 28.219,
+   "end": 28.531
+  },
+  {
+   "text": "tout",
+   "start": 28.531,
+   "end": 28.669
+  },
+  {
+   "text": "seul",
+   "start": 28.669,
+   "end": 28.881
+  },
+  {
+   "text": "la",
+   "start": 28.881,
+   "end": 28.969
+  },
+  {
+   "text": "bonne",
+   "start": 28.969,
+   "end": 29.156
+  },
+  {
+   "text": "quantité",
+   "start": 29.156,
+   "end": 29.531
+  },
+  {
+   "text": "de",
+   "start": 29.531,
+   "end": 29.644
+  },
+  {
+   "text": "sang.",
+   "start": 29.644,
+   "end": 29.944
+  },
+  {
+   "text": "Deux :",
+   "start": 30.884,
+   "end": 31.284
+  },
+  {
+   "text": "l'hygiène",
+   "start": 31.709,
+   "end": 32.121
+  },
+  {
+   "text": "et",
+   "start": 32.121,
+   "end": 32.147
+  },
+  {
+   "text": "l'antisepsie.",
+   "start": 32.147,
+   "end": 32.996
+  },
+  {
+   "text": "D'abord,",
+   "start": 33.334,
+   "end": 33.884
+  },
+  {
+   "text": "la",
+   "start": 34.209,
+   "end": 34.272
+  },
+  {
+   "text": "solution",
+   "start": 34.272,
+   "end": 34.697
+  },
+  {
+   "text": "hydroalcoolique,",
+   "start": 34.697,
+   "end": 35.471
+  },
+  {
+   "text": "la",
+   "start": 35.772,
+   "end": 35.859
+  },
+  {
+   "text": "SHA,",
+   "start": 35.859,
+   "end": 36.471
+  },
+  {
+   "text": "pour",
+   "start": 36.734,
+   "end": 36.884
+  },
+  {
+   "text": "les",
+   "start": 36.884,
+   "end": 36.971
+  },
+  {
+   "text": "mains.",
+   "start": 36.971,
+   "end": 37.246
+  },
+  {
+   "text": "Puis",
+   "start": 37.621,
+   "end": 37.759
+  },
+  {
+   "text": "des",
+   "start": 37.759,
+   "end": 37.897
+  },
+  {
+   "text": "gants",
+   "start": 37.897,
+   "end": 38.109
+  },
+  {
+   "text": "à",
+   "start": 38.109,
+   "end": 38.172
+  },
+  {
+   "text": "usage",
+   "start": 38.172,
+   "end": 38.484
+  },
+  {
+   "text": "unique,",
+   "start": 38.484,
+   "end": 38.897
+  },
+  {
+   "text": "non",
+   "start": 39.197,
+   "end": 39.322
+  },
+  {
+   "text": "stériles :",
+   "start": 39.322,
+   "end": 39.822
+  },
+  {
+   "text": "ils",
+   "start": 40.197,
+   "end": 40.259
+  },
+  {
+   "text": "te",
+   "start": 40.259,
+   "end": 40.359
+  },
+  {
+   "text": "protègent",
+   "start": 40.359,
+   "end": 40.709
+  },
+  {
+   "text": "du",
+   "start": 40.709,
+   "end": 40.834
+  },
+  {
+   "text": "sang.",
+   "start": 40.834,
+   "end": 41.172
+  },
+  {
+   "text": "Le",
+   "start": 42.164,
+   "end": 42.276
+  },
+  {
+   "text": "garrot",
+   "start": 42.276,
+   "end": 42.539
+  },
+  {
+   "text": "se",
+   "start": 42.539,
+   "end": 42.689
+  },
+  {
+   "text": "serre",
+   "start": 42.689,
+   "end": 42.889
+  },
+  {
+   "text": "au-dessus",
+   "start": 42.889,
+   "end": 43.252
+  },
+  {
+   "text": "du",
+   "start": 43.252,
+   "end": 43.352
+  },
+  {
+   "text": "point",
+   "start": 43.352,
+   "end": 43.502
+  },
+  {
+   "text": "de",
+   "start": 43.502,
+   "end": 43.551
+  },
+  {
+   "text": "ponction,",
+   "start": 43.551,
+   "end": 44.051
+  },
+  {
+   "text": "là",
+   "start": 44.352,
+   "end": 44.539
+  },
+  {
+   "text": "où",
+   "start": 44.539,
+   "end": 44.564
+  },
+  {
+   "text": "on",
+   "start": 44.564,
+   "end": 44.639
+  },
+  {
+   "text": "va",
+   "start": 44.639,
+   "end": 44.752
+  },
+  {
+   "text": "piquer :",
+   "start": 44.752,
+   "end": 45.164
+  },
+  {
+   "text": "la",
+   "start": 45.477,
+   "end": 45.539
+  },
+  {
+   "text": "veine",
+   "start": 45.539,
+   "end": 45.727
+  },
+  {
+   "text": "gonfle,",
+   "start": 45.727,
+   "end": 46.114
+  },
+  {
+   "text": "elle",
+   "start": 46.301,
+   "end": 46.352
+  },
+  {
+   "text": "est",
+   "start": 46.352,
+   "end": 46.389
+  },
+  {
+   "text": "plus",
+   "start": 46.389,
+   "end": 46.526
+  },
+  {
+   "text": "facile",
+   "start": 46.526,
+   "end": 46.864
+  },
+  {
+   "text": "à",
+   "start": 46.864,
+   "end": 46.901
+  },
+  {
+   "text": "trouver.",
+   "start": 46.901,
+   "end": 47.377
+  },
+  {
+   "text": "Puis",
+   "start": 47.727,
+   "end": 47.901
+  },
+  {
+   "text": "l'antiseptique,",
+   "start": 47.901,
+   "end": 48.739
+  },
+  {
+   "text": "sur",
+   "start": 49.089,
+   "end": 49.252
+  },
+  {
+   "text": "une",
+   "start": 49.252,
+   "end": 49.339
+  },
+  {
+   "text": "compresse",
+   "start": 49.339,
+   "end": 49.727
+  },
+  {
+   "text": "stérile,",
+   "start": 49.727,
+   "end": 50.252
+  },
+  {
+   "text": "désinfecte",
+   "start": 50.564,
+   "end": 51.076
+  },
+  {
+   "text": "la",
+   "start": 51.076,
+   "end": 51.214
+  },
+  {
+   "text": "peau.",
+   "start": 51.214,
+   "end": 51.552
+  },
+  {
+   "text": "Trois :",
+   "start": 52.529,
+   "end": 52.879
+  },
+  {
+   "text": "pour",
+   "start": 53.154,
+   "end": 53.304
+  },
+  {
+   "text": "terminer",
+   "start": 53.304,
+   "end": 53.679
+  },
+  {
+   "text": "le",
+   "start": 53.679,
+   "end": 53.791
+  },
+  {
+   "text": "soin.",
+   "start": 53.791,
+   "end": 54.191
+  },
+  {
+   "text": "Une",
+   "start": 54.529,
+   "end": 54.704
+  },
+  {
+   "text": "compresse,",
+   "start": 54.704,
+   "end": 55.379
+  },
+  {
+   "text": "pour",
+   "start": 55.642,
+   "end": 55.791
+  },
+  {
+   "text": "appuyer",
+   "start": 55.791,
+   "end": 56.166
+  },
+  {
+   "text": "quand",
+   "start": 56.166,
+   "end": 56.291
+  },
+  {
+   "text": "on",
+   "start": 56.291,
+   "end": 56.416
+  },
+  {
+   "text": "retire",
+   "start": 56.416,
+   "end": 56.742
+  },
+  {
+   "text": "l'aiguille.",
+   "start": 56.742,
+   "end": 57.267
+  },
+  {
+   "text": "Puis",
+   "start": 57.604,
+   "end": 57.779
+  },
+  {
+   "text": "un",
+   "start": 57.779,
+   "end": 57.867
+  },
+  {
+   "text": "pansement,",
+   "start": 57.867,
+   "end": 58.429
+  },
+  {
+   "text": "ou",
+   "start": 58.742,
+   "end": 58.779
+  },
+  {
+   "text": "du",
+   "start": 58.779,
+   "end": 58.879
+  },
+  {
+   "text": "sparadrap.",
+   "start": 58.879,
+   "end": 59.666
+  },
+  {
+   "text": "Et",
+   "start": 60.614,
+   "end": 60.752
+  },
+  {
+   "text": "le",
+   "start": 60.752,
+   "end": 60.839
+  },
+  {
+   "text": "plus",
+   "start": 60.839,
+   "end": 60.989
+  },
+  {
+   "text": "important :",
+   "start": 60.989,
+   "end": 61.577
+  },
+  {
+   "text": "le",
+   "start": 62.002,
+   "end": 62.064
+  },
+  {
+   "text": "collecteur",
+   "start": 62.064,
+   "end": 62.589
+  },
+  {
+   "text": "à",
+   "start": 62.589,
+   "end": 62.664
+  },
+  {
+   "text": "OPCT,",
+   "start": 62.664,
+   "end": 63.377
+  },
+  {
+   "text": "pour",
+   "start": 63.639,
+   "end": 63.764
+  },
+  {
+   "text": "les",
+   "start": 63.764,
+   "end": 63.839
+  },
+  {
+   "text": "objets",
+   "start": 63.839,
+   "end": 64.102
+  },
+  {
+   "text": "piquants,",
+   "start": 64.102,
+   "end": 64.539
+  },
+  {
+   "text": "coupants,",
+   "start": 64.826,
+   "end": 65.276
+  },
+  {
+   "text": "tranchants.",
+   "start": 65.501,
+   "end": 66.001
+  },
+  {
+   "text": "L'aiguille",
+   "start": 66.376,
+   "end": 66.789
+  },
+  {
+   "text": "y",
+   "start": 66.789,
+   "end": 66.826
+  },
+  {
+   "text": "va",
+   "start": 66.826,
+   "end": 66.927
+  },
+  {
+   "text": "tout",
+   "start": 66.927,
+   "end": 67.064
+  },
+  {
+   "text": "de",
+   "start": 67.064,
+   "end": 67.102
+  },
+  {
+   "text": "suite,",
+   "start": 67.102,
+   "end": 67.489
+  },
+  {
+   "text": "sans",
+   "start": 67.764,
+   "end": 67.927
+  },
+  {
+   "text": "jamais",
+   "start": 67.927,
+   "end": 68.214
+  },
+  {
+   "text": "la",
+   "start": 68.214,
+   "end": 68.314
+  },
+  {
+   "text": "recapuchonner !",
+   "start": 68.314,
+   "end": 69.139
+  },
+  {
+   "text": "Les",
+   "start": 69.489,
+   "end": 69.677
+  },
+  {
+   "text": "autres",
+   "start": 69.677,
+   "end": 69.964
+  },
+  {
+   "text": "déchets",
+   "start": 69.964,
+   "end": 70.264
+  },
+  {
+   "text": "souillés",
+   "start": 70.264,
+   "end": 70.589
+  },
+  {
+   "text": "vont",
+   "start": 70.589,
+   "end": 70.739
+  },
+  {
+   "text": "dans",
+   "start": 70.739,
+   "end": 70.839
+  },
+  {
+   "text": "le",
+   "start": 70.839,
+   "end": 70.927
+  },
+  {
+   "text": "sac",
+   "start": 70.927,
+   "end": 71.139
+  },
+  {
+   "text": "DASRI,",
+   "start": 71.139,
+   "end": 71.639
+  },
+  {
+   "text": "pour",
+   "start": 71.939,
+   "end": 72.064
+  },
+  {
+   "text": "les",
+   "start": 72.064,
+   "end": 72.126
+  },
+  {
+   "text": "déchets",
+   "start": 72.126,
+   "end": 72.414
+  },
+  {
+   "text": "à",
+   "start": 72.414,
+   "end": 72.501
+  },
+  {
+   "text": "risque",
+   "start": 72.501,
+   "end": 72.739
+  },
+  {
+   "text": "infectieux.",
+   "start": 72.739,
+   "end": 73.352
+  },
+  {
+   "text": "Petit",
+   "start": 74.305,
+   "end": 74.555
+  },
+  {
+   "text": "récap :",
+   "start": 74.555,
+   "end": 75.067
+  },
+  {
+   "text": "prélèvement,",
+   "start": 75.355,
+   "end": 75.98
+  },
+  {
+   "text": "hygiène,",
+   "start": 76.305,
+   "end": 76.779
+  },
+  {
+   "text": "fin",
+   "start": 77.055,
+   "end": 77.205
+  },
+  {
+   "text": "du",
+   "start": 77.205,
+   "end": 77.305
+  },
+  {
+   "text": "soin.",
+   "start": 77.305,
+   "end": 77.717
+  },
+  {
+   "text": "Trois",
+   "start": 78.08,
+   "end": 78.242
+  },
+  {
+   "text": "familles…",
+   "start": 78.242,
+   "end": 78.73
+  },
+  {
+   "text": "et",
+   "start": 79.067,
+   "end": 79.092
+  },
+  {
+   "text": "ton",
+   "start": 79.092,
+   "end": 79.23
+  },
+  {
+   "text": "plateau",
+   "start": 79.23,
+   "end": 79.542
+  },
+  {
+   "text": "est",
+   "start": 79.542,
+   "end": 79.605
+  },
+  {
+   "text": "prêt !",
+   "start": 79.605,
+   "end": 79.98
+  }
+ ]
+}

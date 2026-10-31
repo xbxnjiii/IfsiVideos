@@ -150,6 +150,21 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
 - Voix : « Cette plaie ne fait pas mal » est entendu « Cette **plaine** fait pas mal » → « Cette plaie… ne fait pas mal »
   (une pause casse la liaison) ; relire l'accroche au modèle `medium` de faster-whisper.
 
+## Format « inventaire » (le matériel d'un soin, modèle `Prise-De-Sang`, `src/videos/prise-de-sang/`)
+
+- Demandé : l'accroche pose **tout le matériel devant nos yeux** (plateau en 3 familles numérotées, les 13 objets tombent
+  à leur place en 1,5 s, chacun avec son nom), « Ça, c'est le matériel qu'il te faut pour… », « 13 objets ! », « on
+  reprend tout, un par un » (les familles s'allument), puis plongée dans la famille 1.
+- Ensuite **un objet = un gros plan + une phrase simple** (à quoi il sert, un détail qui fait retenir : « deux pointes :
+  une pour la veine, une pour le tube », « dedans, il y a du vide », « jamais recapuchonner ! »), une famille ou deux
+  objets par scène, la liste `Checklist` qui se coche sous le socle, compteur « MATÉRIEL n / 13 » (`ItemCounter`) sur
+  la ligne du sur-titre ; amusant mais sérieux, rythme d'apprentissage (voix +0 %), ≈ 1 min 25.
+- Briques `sampling.tsx` : `VacuNeedle` (2 pointes, manchon, capuchon), `Holder` (porte-tube), `Butterfly` (ailettes qui
+  battent), `BloodTube` (bouchon de couleur, sang qui monte, flèches du vide, trait de remplissage), `ShaBottle`, `Hand`
+  (gantée ou non), `AntisepticBottle`, `Gauze` (stérile : sachet), `Plaster`, `TourniquetStrap`, `SharpsBox` (aiguille
+  qui tombe dedans), `DasriBag`, `Arm` (veine qui gonfle, garrot au-dessus du point de ponction, désinfection, aiguille,
+  compresse, pansement). Couleurs : bouchons et collecteur aux couleurs de la marque (pas de jaune ni de violet).
+
 ## Format « histoire » (mystérieux, essai `AVC-Histoire`, `src/videos/avc-histoire/`)
 
 - Pour un accident ou une maladie racontés comme une histoire (pas un paramètre, pas un soin) : ≈ 1 min 20, un patient
@@ -164,12 +179,14 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   Transitions : plongées `zoomInto({…, color: LPI.navy})` en alternance avec `whip`.
 - Bulles et pastilles fixes **hors** de la `ZoomCam` (sinon rognées quand la caméra s'approche).
 
-## Recette express (nouvelle vidéo de constante)
+## Recette express (toute nouvelle vidéo)
 
-1. `voix/<n>-<sujet>.script.json` (texte exact, une partie par scène) → `npm run voice -- …` (2 min).
-2. Copier `src/videos/frequence-respiratoire/` → `timeline.ts` (ids de scènes), `Scenes.tsx`, `mascot.ts`,
-   `<Video>.tsx` (scènes + transitions), puis déclarer la composition dans `src/Root.tsx` et la vidéo dans
-   `scripts/qa/check-mascot.ts`.
+1. `voix/<n>-<sujet>.script.json` (texte exact, une partie par scène) → `npm run voice -- voix/… <épisode>` (2 min)
+   → `npm run check:voice -- <épisode>` (langue + transcription de chaque partie ; `--model medium --parts intro`
+   pour un passage douteux).
+2. `npm run new -- <épisode> <Composition> <Composant> <n>` : dossier `src/videos/<épisode>/` (timeline, composition
+   avec transitions en alternance, scènes et mascotte à remplir) + déclarations (Root.tsx, check-mascot, `render:<épisode>`).
+   `npm run cues -- <épisode>` donne les frames de chaque mot (= `at(scène, mot)`) : plus besoin de les calculer.
 3. **Corps humain = `Patient`** (`src/brand/patient.tsx`, validé) : patient de face, visage qui cligne (`mood` calme / content /
    mal), calques 0 → 1 (cœur qui bat, artères, brassard gonflé, rougeur, pâleur, sueurs, maux de tête, vertiges) et
    points du corps `patientPoint()` pour poser repères et loupes. Ne plus utiliser l'ancien buste `Chest`.
@@ -190,16 +207,15 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
    `ZoomCam` + clés `CamKey` (`episode.tsx` : `{at, s, x, y, dur}`, jamais de vide au bord) posé dans le `Stage` ;
    pastilles, chrono, moniteur restent fixes par-dessus ; `camAt(...).view()` fait suivre une étiquette à l'organe.
    Pour changer de point de vue (face → profil) : plonger (zoom ×3) puis fondu enchaîné sur le gros plan.
-4. Contrôle : `npm run check:mascot -- <épisode>` → `COMP=<Composition> OUT=out/qa SCALE=0.5 node scripts/qa/stills.mjs <frames…>`
-   → `npm run sheet -- out/qa` (planches ffmpeg) → relecture → rendu → `npm run sheet -- out/<vidéo>.mp4` (1 image/s).
+4. Contrôle : `npm run check:mascot -- <épisode>` → `npm run qa -- <Composition> <frames…>` (images clés + planches
+   `out/qa/sheet*.jpg`) → relecture → `npm run render:<épisode>` → `npm run sheet -- out/<vidéo>.mp4` (1 image/s).
 
 ## Rendu et contrôle
 
-- Navigateur : `--browser-executable=/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell`
-  `--concurrency=4`. ≈ 3,5 s de calcul par seconde de vidéo (pas de 3D : trop lente).
-- Avant tout rendu complet : `npm run check:mascot -- <vidéo>`, puis images clés
-  `COMP=<Composition> OUT=out/qa SCALE=0.5 node scripts/qa/stills.mjs <frames…>` + `npm run sheet -- out/qa`,
-  relues planche par planche.
+- Navigateur sans interface et 4 rendus en parallèle réglés dans `remotion.config.ts` : `npm run render:<vidéo>` ou
+  `npx remotion render <Comp> …` suffisent. ≈ 3,5 s de calcul par seconde de vidéo (pas de 3D : trop lente).
+- Avant tout rendu complet : `npm run check:mascot -- <vidéo>`, puis `npm run qa -- <Composition> <frames…>`,
+  planches relues une par une.
 - **Retouche d'une vidéo déjà livrée** (demandé) : ne recalculer que les images qui changent puis les recoller.
   Voix : remplacer le mot dans son créneau (nouvelle prise edge-tts du passage, même niveau, sans décaler la suite ;
   garder les fins de partie de voice.json pour ne pas changer la durée) ; `npx remotion render <Comp> seg.mp4

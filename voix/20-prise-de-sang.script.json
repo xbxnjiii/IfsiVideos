@@ -1,0 +1,10 @@
+[
+	{"id": "intro", "rate": "+0%", "text": "Ça, c'est le matériel qu'il te faut pour faire une prise de sang. Ça fait beaucoup ? Pas de panique : on reprend tout, un par un."},
+	{"id": "prelevement", "rate": "+0%", "text": "Un : le prélèvement. L'aiguille Vacutainer a deux pointes : une pour la veine, une pour le tube. Elle se visse sur le corps de prélèvement, le porte-tube. Et pour une veine fine ou fragile : l'unité à ailettes, dite épicrânienne."},
+	{"id": "tubes", "rate": "+0%", "text": "Les tubes : ceux de la prescription. Chaque couleur de bouchon, son analyse. Et dedans, il y a du vide : il aspire tout seul la bonne quantité de sang."},
+	{"id": "mains", "rate": "+0%", "text": "Deux : l'hygiène et l'antisepsie. D'abord, la solution hydroalcoolique, la {SHA|S H A}, pour les mains. Puis des gants à usage unique, non stériles : ils te protègent du sang."},
+	{"id": "bras", "rate": "+0%", "text": "Le garrot se serre au-dessus du point de ponction, là où on va piquer : la veine gonfle, elle est plus facile à trouver. Puis l'antiseptique, sur une compresse stérile, désinfecte la peau."},
+	{"id": "fin", "rate": "+0%", "text": "Trois : pour terminer le soin. Une compresse, pour appuyer quand on retire l'aiguille. Puis un pansement, ou du sparadrap."},
+	{"id": "dechets", "rate": "+0%", "text": "Et le plus important : le collecteur à {OPCT|O P C T}, pour les objets piquants, coupants, tranchants. L'aiguille y va tout de suite, sans jamais la recapuchonner ! Les autres déchets souillés vont dans le sac {DASRI|dasri}, pour les déchets à risque infectieux."},
+	{"id": "outro", "rate": "+0%", "text": "Petit récap : prélèvement, hygiène, fin du soin. Trois familles… et ton plateau est prêt !"}
+]

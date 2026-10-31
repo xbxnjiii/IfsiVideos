@@ -1,6 +1,6 @@
 // Timeline générique « voix → scènes → animations » pour les vidéos La Petite IDE.
-// voice.json est produit par scripts/voice/tts_maquette.py (voix maquette) ou
-// scripts/voice/prepare_voice.py (vraie voix) : remplacer la voix recale toute la vidéo.
+// voice.json est produit par scripts/voice/tts_voix.py (voix de la marque) ou scripts/voice/align_voice.py
+// (voix enregistrée) : remplacer la voix recale toute la vidéo.
 
 export type VoiceData = {
 	duration: number;

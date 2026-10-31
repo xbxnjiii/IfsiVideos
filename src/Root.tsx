@@ -36,6 +36,8 @@ import {Plaies3, Plaies3Props} from './videos/plaies-3/Plaies3';
 import {TL as PL3_TL} from './videos/plaies-3/timeline';
 import {Bpco, BpcoProps} from './videos/bpco/Bpco';
 import {TL as BPCO_TL} from './videos/bpco/timeline';
+import {PriseDeSang, PriseDeSangProps} from './videos/prise-de-sang/PriseDeSang';
+import {TL as PRISE_DE_SANG_TL} from './videos/prise-de-sang/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -212,6 +214,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies Plaies3Props}
+		/>
+		{/* 20 · Prise-De-Sang */}
+		<Composition
+			id="Prise-De-Sang"
+			component={PriseDeSang}
+			durationInFrames={PRISE_DE_SANG_TL.total}
+			fps={PRISE_DE_SANG_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies PriseDeSangProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition

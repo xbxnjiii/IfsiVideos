@@ -27,7 +27,12 @@
     "render:plaies1": "remotion render Plaies-1 out/17-plaies-1.mp4",
     "render:plaies2": "remotion render Plaies-2 out/18-plaies-2.mp4",
     "render:plaies3": "remotion render Plaies-3 out/19-plaies-3.mp4",
-    "render:bpco": "remotion render BPCO out/16-bpco.mp4"
+    "render:bpco": "remotion render BPCO out/16-bpco.mp4",
+    "cues": "python3 scripts/voice/cues.py",
+    "check:voice": "python3 scripts/voice/check_lang.py",
+    "qa": "bash scripts/qa/qa.sh",
+    "new": "python3 scripts/new-video.py",
+    "render:prise-de-sang": "remotion render Prise-De-Sang out/20-prise-de-sang.mp4"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.532",

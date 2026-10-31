@@ -12,40 +12,43 @@ pas de logiciel de montage, pas de banque d'images.
 
 | # | Sujet | Composition | Script voix | Storyboard |
 |---|-------|-------------|-------------|------------|
-| 02 | Les 7 constantes (T°, FC, FR, PA, SpO₂, glycémie, diurèse) + normes adultes (échelles animées) | `Constantes` | [voix/02-constantes.script.json](voix/02-constantes.script.json) | [storyboard](docs/lpi/storyboard-constantes.md) |
+| 02 | Les 7 constantes (T°, FC, FR, PA, SpO₂, glycémie, diurèse) + normes adultes | `Constantes` | [voix/02-constantes.script.json](voix/02-constantes.script.json) | [storyboard](docs/lpi/storyboard-constantes.md) |
 | 03 | Les 14 besoins fondamentaux (Virginia Henderson), en 3 étapes | `Besoins-Fondamentaux` | [voix/03-besoins-fondamentaux.script.json](voix/03-besoins-fondamentaux.script.json) | [storyboard](docs/lpi/storyboard-besoins-fondamentaux.md) |
-| 04 | La fréquence cardiaque (une vidéo par constante, récap rapide) | `Frequence-Cardiaque` | [voix/04-frequence-cardiaque.script.json](voix/04-frequence-cardiaque.script.json) | [storyboard](docs/lpi/storyboard-frequence-cardiaque.md) |
-| 05 | La fréquence respiratoire (une vidéo par constante, récap rapide) | `Frequence-Respiratoire` | [voix/05-frequence-respiratoire.script.json](voix/05-frequence-respiratoire.script.json) | [storyboard](docs/lpi/storyboard-frequence-respiratoire.md) |
-| 06 | La température corporelle (une vidéo par constante, récap rapide) | `Temperature` | [voix/06-temperature.script.json](voix/06-temperature.script.json) | [storyboard](docs/lpi/storyboard-temperature.md) |
-| 07 | La tension artérielle (une vidéo par constante, récap rapide) | `Tension-Arterielle` | [voix/07-tension-arterielle.script.json](voix/07-tension-arterielle.script.json) | [storyboard](docs/lpi/storyboard-tension-arterielle.md) |
-| 08 | La glycémie (une vidéo par constante, récap rapide) | `Glycemie` | [voix/08-glycemie.script.json](voix/08-glycemie.script.json) | [storyboard](docs/lpi/storyboard-glycemie.md) |
-| 09 | La diurèse (une vidéo par constante, récap rapide) | `Diurese` | [voix/09-diurese.script.json](voix/09-diurese.script.json) | [storyboard](docs/lpi/storyboard-diurese.md) |
+| 04 | La fréquence cardiaque | `Frequence-Cardiaque` | [voix/04-frequence-cardiaque.script.json](voix/04-frequence-cardiaque.script.json) | [storyboard](docs/lpi/storyboard-frequence-cardiaque.md) |
+| 05 | La fréquence respiratoire | `Frequence-Respiratoire` | [voix/05-frequence-respiratoire.script.json](voix/05-frequence-respiratoire.script.json) | [storyboard](docs/lpi/storyboard-frequence-respiratoire.md) |
+| 06 | La température corporelle | `Temperature` | [voix/06-temperature.script.json](voix/06-temperature.script.json) | [storyboard](docs/lpi/storyboard-temperature.md) |
+| 07 | La tension artérielle | `Tension-Arterielle` | [voix/07-tension-arterielle.script.json](voix/07-tension-arterielle.script.json) | [storyboard](docs/lpi/storyboard-tension-arterielle.md) |
+| 08 | La glycémie | `Glycemie` | [voix/08-glycemie.script.json](voix/08-glycemie.script.json) | [storyboard](docs/lpi/storyboard-glycemie.md) |
+| 09 | La diurèse | `Diurese` | [voix/09-diurese.script.json](voix/09-diurese.script.json) | [storyboard](docs/lpi/storyboard-diurese.md) |
 | 10 | C'est quoi un AVC (pathologie : accroche-choc, VITE) | `AVC` | [voix/10-avc.script.json](voix/10-avc.script.json) | [storyboard](docs/lpi/storyboard-avc.md) |
-| 11 | L'arrêt cardiaque chez l'adulte (urgence : accroche-choc, RCP, DAE) | `Arret-Cardiaque` | [voix/11-arret-cardiaque.script.json](voix/11-arret-cardiaque.script.json) | [storyboard](docs/lpi/storyboard-arret-cardiaque.md) |
+| 11 | L'arrêt cardiaque chez l'adulte (RCP, DAE) | `Arret-Cardiaque` | [voix/11-arret-cardiaque.script.json](voix/11-arret-cardiaque.script.json) | [storyboard](docs/lpi/storyboard-arret-cardiaque.md) |
+| 12 | C'est quoi la SpO₂ | `SpO2` | [voix/12-spo2.script.json](voix/12-spo2.script.json) | [storyboard](docs/lpi/storyboard-spo2.md) |
+| 14 | C'est quoi une embolie pulmonaire | `Embolie-Pulmonaire` | [voix/14-embolie-pulmonaire.script.json](voix/14-embolie-pulmonaire.script.json) | [storyboard](docs/lpi/storyboard-embolie-pulmonaire.md) |
+| 15 | AVC, format histoire (Michel, mystérieux) | `AVC-Histoire` | [voix/15-avc-histoire.script.json](voix/15-avc-histoire.script.json) | [storyboard](docs/lpi/storyboard-avc-histoire.md) |
+| 16 | C'est quoi la BPCO | `BPCO` | [voix/16-bpco.script.json](voix/16-bpco.script.json) | [storyboard](docs/lpi/storyboard-bpco.md) |
+| 17 | Série « Les plaies » 1/3 : les bases | `Plaies-1` | [voix/17-plaies-1.script.json](voix/17-plaies-1.script.json) | [storyboard](docs/lpi/storyboard-plaies-serie.md) |
+| 18 | Série « Les plaies » 2/3 : les plaies aiguës | `Plaies-2` | [voix/18-plaies-2.script.json](voix/18-plaies-2.script.json) | [storyboard](docs/lpi/storyboard-plaies-serie.md) |
+| 19 | Série « Les plaies » 3/3 : les plaies chroniques | `Plaies-3` | [voix/19-plaies-3.script.json](voix/19-plaies-3.script.json) | [storyboard](docs/lpi/storyboard-plaies-serie.md) |
+| 20 | Le matériel pour une prise de sang (format inventaire) | `Prise-De-Sang` | [voix/20-prise-de-sang.script.json](voix/20-prise-de-sang.script.json) | [storyboard](docs/lpi/storyboard-prise-de-sang.md) |
 
 ## Utilisation
 
 ```bash
 npm install
-npm run studio                  # aperçu interactif dans le navigateur
-npm run render:constantes       # -> out/02-constantes.mp4
-npm run render:besoins          # -> out/03-besoins-fondamentaux.mp4
-npm run render:fc               # -> out/04-frequence-cardiaque.mp4
-npm run render:fr               # -> out/05-frequence-respiratoire.mp4
-npm run render:temp             # -> out/06-temperature.mp4
-npm run render:ta               # -> out/07-tension-arterielle.mp4
-npm run render:gly              # -> out/08-glycemie.mp4
-npm run render:diu              # -> out/09-diurese.mp4
-npm run render:avc              # -> out/10-avc.mp4
-npm run render:acr              # -> out/11-arret-cardiaque.mp4
-npm run voice -- voix/<script>.json <épisode>   # voix + timing mot à mot
-npm run sheet -- out/qa          # planches contact (ffmpeg)
-npm run check:mascot -- constantes   # vérifie le jeu de la mascotte d'une vidéo
-npm run sfx                     # regénère les bruitages (public/sfx)
+npm run studio                                   # aperçu interactif dans le navigateur
+npm run render:<vidéo>                           # -> out/<n>-<vidéo>.mp4 (liste : package.json)
+npm run voice -- voix/<n>-<sujet>.script.json <épisode>   # voix de la marque + timing mot à mot
+npm run check:voice -- <épisode> [--model medium]         # langue et transcription de chaque partie
+npm run new -- <épisode> <Composition> <Composant> <n>    # squelette d'une nouvelle vidéo + déclarations
+npm run cues -- <épisode>                        # frames des mots, scène par scène (= at(scène, mot))
+npm run check:mascot -- <épisode>                # vérifie le jeu de la mascotte
+npm run qa -- <Composition> <frame> <frame> …    # images clés + planches -> out/qa/sheet*.jpg
+npm run sheet -- out/<vidéo>.mp4                 # planches 1 image/s d'une vidéo rendue
+npm run splice -- out/<vidéo>.mp4 seg.mp4@<début> …       # recolle des portions recalculées
+npm run sfx                                      # regénère les bruitages (public/sfx)
 ```
 
-Rendu dans le conteneur de travail : ajouter
-`--browser-executable=/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell --concurrency=4`.
+Le navigateur sans interface du conteneur de travail et 4 rendus en parallèle sont réglés dans `remotion.config.ts`.
 
 ## Organisation
 
@@ -72,6 +75,13 @@ src/
     arrest.tsx                moniteur ECG (sinus, FV, plat, choc), DAE + électrodes, mains de massage, bascule de tête
     patient.tsx               corps humain (patient de face) : expressions, cœur, artères, brassard, signes
     body.tsx, icons.tsx       poignet + doigts ; petites icônes (causes, situations)
+    oxygen.tsx                saturomètre, vaisseau et globules rouges, grille de 100
+    embolism.tsx              corps entier (jambes, veine profonde, caillot qui remonte), lit demi-assis, scanner
+    copd.tsx                  bronche (inflammation, mucus, emphysème, air piégé), spiromètre, inhalateur
+    wound.tsx                 coupe de peau (couches, plaies, brûlures, cloque, microbes, nerfs), escarre, jambe, doigt
+    sampling.tsx              matériel de prise de sang (aiguille, porte-tube, ailettes, tubes, SHA, gants, garrot…), bras
+    night.tsx                 format histoire : fond nuit, cadre de scanner, lueur, mots qui se mélangent
+    series.tsx                vidéos en série : carte des parties, étiquette « 1/3 », « à suivre »
     MascotActor.tsx           mascotte actrice : sauts, course, expressions au mot près, bustes libres
     pictos.tsx                pictogrammes et illustrations (thermomètre, cœur, poumons, artère…)
     timeline.ts               voix → frames : at(scène, mot)
@@ -82,19 +92,19 @@ public/
   brand/logo/                 logos officiels
   voix/<vidéo>/voix.wav       voix montée et normalisée
   fonts/, sfx/                polices embarquées, bruitages
-assets/planches/              planches originales de la mascotte et des logos (sources des découpes)
+assets/planches/              planches v3 de la mascotte (sources des découpes)
 scripts/
-  voice/                      tts_voix.py (voix de la marque + timing) · align_voice.py (voix enregistrée) · prepare_voice.py
-  brand/                      découpe des planches (upscale_rgba, cut_v3, export_v3 ; v2 : cutout, upscale)
-  qa/                         contrôle : images clés (stills.mjs), planches (sheet.sh), check-mascot
+  voice/                      tts_voix.py (voix + timing) · check_lang.py · cues.py · align_voice.py, prepare_voice.py (voix enregistrée)
+  brand/                      découpe des planches v3 (upscale_rgba, cut_v3, export_v3)
+  qa/                         contrôle : images clés (stills.mjs, qa.sh), planches (sheet.sh), check-mascot, splice.py
+  new-video.py                squelette d'une nouvelle vidéo
 voix/                         scripts de voix off (texte exact dit, une entrée par partie)
 docs/lpi/                     charte vidéo, storyboards, index visuel de la mascotte
 ```
 
 ## Nouvelle vidéo
 
-1. Texte exact dit par la voix dans `voix/<n>-<sujet>.script.json` (une entrée par partie).
-2. Voix : `npm run voice -- voix/<n>-<sujet>.script.json <dossier>` (voix de la marque + timing mot à mot ;
-   dépendances : `ffmpeg`, `pip install --break-system-packages edge-tts`). Recette complète : CLAUDE.md.
-3. Scènes dans `src/videos/<dossier>/`, chaque animation déclenchée par un mot : `at('b3', 'transmissions')`.
-4. Contrôle (charte, « Contrôle qualité ») puis rendu.
+Recette complète (formats, règles de la marque, pièges de la voix) : [CLAUDE.md](CLAUDE.md).
+1. `voix/<n>-<sujet>.script.json` (texte exact, une partie par scène) → `npm run voice` → `npm run check:voice`.
+2. `npm run new` (dossier, composition, déclarations) → `npm run cues` → scènes et mascotte.
+3. `npm run check:mascot` → `npm run qa` (relire les planches) → `npm run render:<vidéo>` → `npm run sheet`.
