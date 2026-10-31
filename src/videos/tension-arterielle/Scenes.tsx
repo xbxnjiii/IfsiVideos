@@ -2,7 +2,7 @@
 // Le patient (src/brand/patient.tsx) joue la mesure et les signes ; le manomètre et la lecture 120/80 roulent.
 import React from 'react';
 import {AbsoluteFill, Easing, interpolate, useCurrentFrame} from 'remotion';
-import {BigNum, CauseChip, Head, LAY, Lead, Pill, RecapScene, SLAM_Y, termSlot} from '../../brand/episode';
+import {BigNum, CamKey, CauseChip, Head, LAY, Lead, Pill, RecapScene, SLAM_Y, termSlot, ZoomCam} from '../../brand/episode';
 import {DizzyIcon, EarIcon, FaintIcon, HeadacheIcon, PaleIcon} from '../../brand/icons';
 import {CheckChip, Stamp, usePop} from '../../brand/kit';
 import {Seuil} from '../../brand/Lesson3';
@@ -25,59 +25,235 @@ const pulseAt = (frame: number, period = 25) => Math.exp(-(frame % period) / 5);
 const idle = (frame: number) => 0.5 - 0.5 * Math.cos(frame / 22);
 
 /* ═══════════════════════════════ ACCROCHE ═══════════════════════════════ */
+// Image 0 (miniature) : le patient ne va pas bien, « Qu'est-ce qu'il a ? » est déjà à l'écran. Les signes arrivent au mot
+// (maux de tête, vertiges, oreilles qui bourdonnent) ; la question claque ; « hypertension » : le patient glisse à gauche,
+// le manomètre surgit et s'affole (180/110), flash rose ; « brassard » : le brassard se gonfle, relié au manomètre, et la
+// caméra s'approche ; « Mais au fait » : on recule, tout s'efface ; « c'est quoi, la tension artérielle ? » : le manomètre
+// se centre en (540, 800), là où la transition plonge vers la définition.
+const HOOK_WIN = {y: 400, w: 1080, h: 820};
+const HP = 470;
+/** point du patient (unités du viewBox 400 × 560) dans la fenêtre de l'accroche, patient posé en (left, 30) */
+const hookPt = (x: number, y: number, left: number) => ({x: left + (x * HP) / 400, y: 30 + (y * HP) / 400});
+
+/** Flash plein écran (choc) qui retombe. */
+const Flash: React.FC<{at: number}> = ({at: t0}) => {
+	const frame = useCurrentFrame();
+	const o = interpolate(frame, [t0, t0 + 2, t0 + 16], [0, 0.5, 0], clamp);
+	if (o <= 0) return null;
+	return <AbsoluteFill style={{background: `radial-gradient(circle at 50% 50%, ${alpha(LPI.pink, o * 0.4)} 20%, ${alpha(LPI.pink, o)} 100%)`}} />;
+};
+
+/** Pastille ronde « ? » qui tangue, de `at` à `out`. */
+const QMark: React.FC<{at: number; out?: number; x: number; y: number; size?: number}> = ({at: t0, out = 1e9, x, y, size = 170}) => {
+	const frame = useCurrentFrame();
+	const p = usePop(t0);
+	const o = interpolate(frame, [out, out + 6], [1, 0], clamp);
+	if (frame < t0 || o <= 0) return null;
+	return (
+		<div
+			style={{
+				position: 'absolute',
+				left: x,
+				top: y,
+				width: size,
+				height: size,
+				borderRadius: size / 2,
+				background: LPI.pink,
+				border: `8px solid ${LPI.paper}`,
+				boxShadow: SHADOW,
+				display: 'flex',
+				alignItems: 'center',
+				justifyContent: 'center',
+				fontFamily: FONT.title,
+				fontWeight: 900,
+				fontSize: size * 0.76,
+				color: N,
+				transform: `scale(${p * o}) rotate(${Math.sin(frame / 6) * 8}deg)`,
+			}}
+		>
+			?
+		</div>
+	);
+};
+
+/** Oreille qui bourdonne : ondes qui partent de l'oreille (`dir` = côté) + « bzz ». */
+const Buzz: React.FC<{at: number; x: number; y: number; dir: 1 | -1; o: number}> = ({at: t0, x, y, dir, o}) => {
+	const frame = useCurrentFrame();
+	if (frame < t0 || o <= 0) return null;
+	const t = frame - t0;
+	const c = Math.cos(0.7);
+	const s = Math.sin(0.7);
+	return (
+		<svg width={180} height={180} viewBox="-90 -90 180 180" style={{position: 'absolute', left: x - 90, top: y - 90, overflow: 'visible', opacity: o * Math.min(1, t / 4)}}>
+			{[0, 1, 2].map((i) => {
+				const ph = ((t + i * 6) % 18) / 18;
+				const r = 18 + ph * 48;
+				return <path key={i} d={`M ${dir * r * c} ${-r * s} A ${r} ${r} 0 0 ${dir > 0 ? 1 : 0} ${dir * r * c} ${r * s}`} fill="none" stroke={LPI.blue} strokeWidth={7} strokeLinecap="round" opacity={1 - ph} />;
+			})}
+			<text x={dir * 70} y={-52} textAnchor="middle" fontFamily={FONT.title} fontWeight={900} fontSize={30} fill={N} transform={`rotate(${dir * 14} ${dir * 70} -52)`}>
+				bzz
+			</text>
+		</svg>
+	);
+};
+
 export const Hook: React.FC = () => {
 	const frame = useCurrentFrame();
-	const Q = at('intro', 'quoi');
-	const T = at('intro', 'tension');
-	const pop = usePop(2);
-	const qp = usePop(Q);
-	const roll = interpolate(frame, [4, 40], [0, 1], ease);
-	const pulse = pulseAt(frame);
+	const TETE = at('intro', 'tête');
+	const VERT = at('intro', 'vertiges');
+	const OREI = at('intro', 'oreilles');
+	const QU = at('intro', "qu'est-ce");
+	const HYP = at('intro', 'hypertension');
+	const SA = at('intro', 'tension'); // « sa tension est trop haute »
+	const TROP = at('intro', 'trop');
+	const BRAS = at('intro', 'brassard');
+	const MAIS = at('intro', 'mais');
+	const CEST = at('intro', "c'est");
+	const QUOI = at('intro', 'quoi');
+	const TENS = at('intro', 'tension', 2);
+	const slide = interpolate(frame, [HYP - 2, HYP + 10], [0, 1], ease);
+	const leave = interpolate(frame, [MAIS, MAIS + 12], [0, 1], {...clamp, easing: Easing.in(Easing.cubic)});
+	const left = 305 - 275 * slide - 640 * leave;
+	const dizzy = interpolate(frame, [VERT - 2, VERT + 8], [0, 1], clamp);
+	const cuff = interpolate(frame, [BRAS - 2, BRAS + 6], [0, 1], clamp);
+	const pipe = interpolate(frame, [BRAS + 2, BRAS + 14], [0, 1], clamp);
+	const rise = interpolate(frame, [HYP, HYP + 14], [0, 1], ease);
+	const pulse = pulseAt(frame, 16);
+	const sys = 180 * rise;
+	const dia = 110 * rise;
+	const mPop = usePop(HYP);
+	// le manomètre : à droite du patient, puis au centre (on y plonge vers la définition)
+	const center = interpolate(frame, [MAIS + 4, MAIS + 20], [0, 1], ease);
+	const mSize = 300 + 80 * center;
+	const mx = 760 - 220 * center;
+	const my = 190 + 210 * center;
+	const rx = 760 - 220 * center;
+	const ry = 352 + 258 * center;
+	const arm = hookPt(309, 300, left);
+	const out = interpolate(frame, [MAIS - 2, MAIS + 8], [1, 0], clamp);
+	const qOut = interpolate(frame, [MAIS + 4, MAIS + 12], [0, 1], ease);
+	const qPunch = frame >= QU ? 1 + 0.1 * Math.exp(-(frame - QU) / 4) : 1;
+	const cam: CamKey[] = [
+		{at: -1, s: 1},
+		{at: BRAS - 2, s: 1.3, x: 600, y: 320, dur: 16},
+		{at: MAIS, s: 1, dur: 14},
+	];
+	const signs: [number, React.ReactNode, string, number, number][] = [
+		[TETE, <HeadacheIcon key="t" size={56} />, 'maux de tête', 72, 1240],
+		[VERT, <DizzyIcon key="v" size={56} />, 'vertiges', 560, 1240],
+		[OREI, <EarIcon key="o" size={56} />, "bourdonnements d'oreilles", 72, 1356],
+	];
 	return (
 		<AbsoluteFill>
 			<LiveBackground />
-			<Camera punches={[Q + 1, T + 1]} shakes={[Q + 2]} strength={0.04}>
-				<div style={{position: 'absolute', left: 72, top: 226, width: 936}}>
-					<Title at={0} text="C'est quoi la" size={74} stagger={3} brush={false} />
-				</div>
-				<div style={{position: 'absolute', left: 72, top: 312, width: 936}}>
-					<Title at={T} text={'*tension*\n*artérielle* ?'} size={112} stagger={4} />
-				</div>
-				<div style={{position: 'absolute', left: 540 - 190, top: 610, transform: `scale(${(0.4 + 0.6 * pop) * (1 + 0.03 * pulse)})`}}>
-					<Manometer value={roll * (80 + 40 * pulse)} size={380} />
-				</div>
-				<div style={{position: 'absolute', left: 0, right: 0, top: 1030, display: 'flex', justifyContent: 'center', opacity: Math.min(1, pop * 1.5)}}>
-					<BPReadout sys={120 * roll} dia={80 * roll} size={120} labels={false} />
-				</div>
-				{frame >= Q ? (
-					<div
-						style={{
-							position: 'absolute',
-							left: 800,
-							top: 560,
-							width: 170,
-							height: 170,
-							borderRadius: 85,
-							background: LPI.pink,
-							border: `8px solid ${LPI.paper}`,
-							boxShadow: SHADOW,
-							display: 'flex',
-							alignItems: 'center',
-							justifyContent: 'center',
-							fontFamily: FONT.title,
-							fontWeight: 900,
-							fontSize: 130,
-							color: N,
-							transform: `scale(${qp}) rotate(${Math.sin(frame / 6) * 8}deg)`,
-						}}
-					>
-						?
+			<Camera punches={[TETE + 1, VERT + 1, OREI + 1, QU + 1, HYP + 1, TROP + 1, BRAS + 1, CEST + 1, TENS + 1]} shakes={[QU + 2, HYP + 2]} strength={0.04}>
+				{/* « Qu'est-ce qu'il a ? » : déjà là sur l'image 0, claque sur la question, s'efface sur « Mais au fait » */}
+				{qOut < 1 ? (
+					<div style={{position: 'absolute', left: 72, top: 250, width: 936, opacity: 1 - qOut, transform: `translateY(${-40 * qOut}px) scale(${qPunch})`, transformOrigin: '0 50%'}}>
+						<Title at={-60} text={"Qu'est-ce *qu'il* *a* ?"} size={92} />
 					</div>
 				) : null}
-				<Burst at={Q} x={885} y={645} r={200} n={12} />
+				{frame >= CEST - 2 ? (
+					<>
+						<div style={{position: 'absolute', left: 72, top: 226, width: 936}}>
+							<Title at={CEST} text="C'est quoi la" size={74} stagger={3} brush={false} />
+						</div>
+						<div style={{position: 'absolute', left: 72, top: 312, width: 936}}>
+							<Title at={TENS} text={'*tension*\n*artérielle* ?'} size={112} stagger={4} />
+						</div>
+					</>
+				) : null}
+				<ZoomCam keys={cam} w={HOOK_WIN.w} h={HOOK_WIN.h} y={HOOK_WIN.y} radius={0}>
+					{leave < 1 ? (
+						<div style={{position: 'absolute', left, top: 30, opacity: 1 - leave, transform: `rotate(${Math.sin(frame / 9) * 4 * dizzy * (1 - 0.6 * slide)}deg)`, transformOrigin: `${HP / 2}px ${HP * 1.2}px`}}>
+							<Patient
+								size={HP}
+								mood="mal"
+								breath={idle(frame)}
+								pain={interpolate(frame, [TETE - 2, TETE + 6], [0.45, 1], clamp)}
+								dizzy={dizzy}
+								flush={interpolate(frame, [HYP, HYP + 10], [0, 0.7], clamp)}
+								heart={interpolate(frame, [SA - 2, SA + 8], [0, 1], clamp)}
+								beat={pulse}
+								flow={interpolate(frame, [SA, SA + 20], [0, 1], clamp)}
+								cuff={cuff}
+								press={interpolate(frame, [BRAS + 2, BRAS + 16], [0, 1], clamp) * (0.85 + 0.15 * pulse)}
+							/>
+						</div>
+					) : null}
+					{/* le tuyau du brassard rejoint le manomètre (par la gauche : il ne croise pas les chiffres) */}
+					{pipe > 0 && leave < 1 ? (
+						<svg width={HOOK_WIN.w} height={HOOK_WIN.h} style={{position: 'absolute', left: 0, top: 0, overflow: 'visible', opacity: 1 - leave}}>
+							<path
+								d={`M ${arm.x + 20} ${arm.y + 6} C ${arm.x + 140} ${arm.y + 46}, ${mx - mSize * 0.33 - 90} ${my + mSize * 0.33 + 20}, ${mx - mSize * 0.33} ${my + mSize * 0.33}`}
+								fill="none"
+								stroke={N}
+								strokeWidth={9}
+								strokeLinecap="round"
+								pathLength={1}
+								strokeDasharray={1}
+								strokeDashoffset={1 - pipe}
+							/>
+						</svg>
+					) : null}
+					{(
+						[
+							[hookPt(276, 116, left), 1],
+							[hookPt(124, 116, left), -1],
+						] as const
+					).map(([p, dir]) => (
+						<Buzz key={dir} at={OREI} x={p.x} y={p.y} dir={dir} o={1 - leave} />
+					))}
+					{frame >= HYP ? (
+						<>
+							<div style={{position: 'absolute', left: mx - mSize / 2, top: my - mSize / 2, transform: `scale(${mPop})`}}>
+								<Manometer value={dia + (sys - dia) * pulse} size={mSize} tone={LPI.pink} />
+							</div>
+							<div style={{position: 'absolute', left: rx, top: ry, transform: `translateX(-50%) scale(${(0.6 + 0.4 * mPop) * (1 + 0.2 * center)})`, transformOrigin: '50% 0', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+								<BPReadout sys={sys} dia={dia} size={96} labels={false} unit={false} tone={LPI.pink} diaPlaces={3} />
+								<div style={{fontFamily: FONT.title, fontWeight: 800, fontSize: 40, color: LPI.blue}}>mmHg</div>
+							</div>
+						</>
+					) : null}
+				</ZoomCam>
+				{signs.map(([t, icon, label, x, y]) => (
+					<div key={label} style={{position: 'absolute', left: x, top: y, opacity: out, transform: `scale(${0.6 + 0.4 * out})`}}>
+						<CauseChip at={t} icon={icon} label={label} />
+					</div>
+				))}
+				<Stamp at={HYP + 3} x={770} y={1000} text="Hypertension" size={58} rot={-7} out={BRAS - 4} />
+				{frame < BRAS - 2 ? (
+					<div style={{position: 'absolute', left: 590, top: 1092}}>
+						<Pill at={TROP}>trop haute !</Pill>
+					</div>
+				) : null}
+				{frame < MAIS ? (
+					<div style={{position: 'absolute', left: 72, top: 1110}}>
+						<Pill at={BRAS + 2} color={LPI.sky} size={52}>
+							un simple brassard
+						</Pill>
+					</div>
+				) : null}
+				<QMark at={QU} out={HYP - 4} x={770} y={440} size={150} />
+				<QMark at={QUOI} x={800} y={560} />
+				<Burst at={QU} x={845} y={515} r={190} n={12} />
+				<Burst at={HYP} x={760} y={590} r={260} n={14} />
+				<Burst at={QUOI} x={885} y={645} r={200} n={12} />
 			</Camera>
-			<Sfx name="pop" at={Q} volume={0.12} />
-			<Sfx name="whoosh" at={T} volume={0.06} />
+			<Flash at={HYP + 2} />
+			<Sfx name="heartbeat" at={0} volume={0.1} />
+			{signs.map(([t]) => (
+				<Sfx key={t} name="pop" at={t} volume={0.1} />
+			))}
+			<Sfx name="buzz" at={OREI + 2} volume={0.035} dur={18} />
+			<Sfx name="pop" at={QU} volume={0.12} />
+			<Sfx name="impact" at={HYP} volume={0.1} />
+			<Sfx name="stamp" at={HYP + 4} volume={0.09} />
+			<Sfx name="tick" at={TROP} volume={0.08} />
+			<Sfx name="whoosh" at={BRAS - 2} volume={0.06} />
+			<Sfx name="whoosh" at={MAIS} volume={0.06} />
+			<Sfx name="pop" at={QUOI} volume={0.12} />
+			<Sfx name="whoosh" at={TENS} volume={0.06} />
 		</AbsoluteFill>
 	);
 };

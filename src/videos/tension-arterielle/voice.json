@@ -1,1043 +1,1208 @@
 {
  "voice": "voix.wav (tts_voix.py)",
- "duration": 70.042,
+ "duration": 79.442,
  "sections": [
   {
    "id": "intro",
    "start": 0.049,
-   "end": 1.866
+   "end": 11.276
   },
   {
    "id": "def",
-   "start": 2.782,
-   "end": 9.231
+   "start": 12.182,
+   "end": 18.631
   },
   {
    "id": "mesure",
-   "start": 10.158,
-   "end": 15.841
+   "start": 19.558,
+   "end": 25.241
   },
   {
    "id": "chiffres",
-   "start": 16.771,
-   "end": 25.576
+   "start": 26.171,
+   "end": 34.976
   },
   {
    "id": "norme",
-   "start": 26.49,
-   "end": 32.844
+   "start": 35.89,
+   "end": 42.244
   },
   {
    "id": "hyper",
-   "start": 33.768,
-   "end": 43.191
+   "start": 43.168,
+   "end": 52.591
   },
   {
    "id": "hypo",
-   "start": 44.134,
-   "end": 51.761
+   "start": 53.534,
+   "end": 61.161
   },
   {
    "id": "outro",
-   "start": 52.692,
-   "end": 69.714
+   "start": 62.092,
+   "end": 79.114
   }
  ],
  "words": [
   {
-   "text": "C'est",
+   "text": "Ton",
    "start": 0.049,
-   "end": 0.257
-  },
-  {
-   "text": "quoi,",
-   "start": 0.257,
-   "end": 0.558
-  },
-  {
-   "text": "la",
-   "start": 0.906,
-   "end": 0.975
-  },
-  {
-   "text": "tension",
-   "start": 0.975,
-   "end": 1.288
-  },
-  {
-   "text": "artérielle ?",
-   "start": 1.288,
-   "end": 1.866
-  },
-  {
-   "text": "La",
-   "start": 2.782,
-   "end": 2.944
-  },
-  {
-   "text": "tension",
-   "start": 2.944,
-   "end": 3.222
-  },
-  {
-   "text": "artérielle,",
-   "start": 3.222,
-   "end": 3.766
-  },
-  {
-   "text": "ou",
-   "start": 3.963,
-   "end": 3.986
-  },
-  {
-   "text": "pression",
-   "start": 3.986,
-   "end": 4.275
-  },
-  {
-   "text": "artérielle,",
-   "start": 4.275,
-   "end": 4.819
-  },
-  {
-   "text": "c'est",
-   "start": 5.201,
-   "end": 5.282
-  },
-  {
-   "text": "la",
-   "start": 5.282,
-   "end": 5.352
-  },
-  {
-   "text": "pression",
-   "start": 5.352,
-   "end": 5.652
-  },
-  {
-   "text": "du",
-   "start": 5.652,
-   "end": 5.78
-  },
-  {
-   "text": "sang",
-   "start": 5.78,
-   "end": 5.977
-  },
-  {
-   "text": "sur",
-   "start": 5.977,
-   "end": 6.115
-  },
-  {
-   "text": "la",
-   "start": 6.115,
-   "end": 6.197
-  },
-  {
-   "text": "paroi",
-   "start": 6.197,
-   "end": 6.428
-  },
-  {
-   "text": "des",
-   "start": 6.428,
-   "end": 6.521
-  },
-  {
-   "text": "artères.",
-   "start": 6.521,
-   "end": 7.065
-  },
-  {
-   "text": "Elle",
-   "start": 7.379,
-   "end": 7.564
-  },
-  {
-   "text": "se",
-   "start": 7.564,
-   "end": 7.68
-  },
-  {
-   "text": "mesure",
-   "start": 7.68,
-   "end": 8.027
-  },
-  {
-   "text": "en",
-   "start": 8.027,
-   "end": 8.073
-  },
-  {
-   "text": "millimètres",
-   "start": 8.073,
-   "end": 8.559
-  },
-  {
-   "text": "de",
-   "start": 8.559,
-   "end": 8.64
-  },
-  {
-   "text": "mercure.",
-   "start": 8.64,
-   "end": 9.231
-  },
-  {
-   "text": "Pour",
-   "start": 10.158,
-   "end": 10.262
-  },
-  {
-   "text": "la",
-   "start": 10.262,
-   "end": 10.331
-  },
-  {
-   "text": "prendre,",
-   "start": 10.332,
-   "end": 10.69
-  },
-  {
-   "text": "on",
-   "start": 10.887,
-   "end": 10.91
-  },
-  {
-   "text": "utilise",
-   "start": 10.91,
-   "end": 11.281
-  },
-  {
-   "text": "un",
-   "start": 11.281,
-   "end": 11.327
-  },
-  {
-   "text": "tensiomètre :",
-   "start": 11.327,
-   "end": 11.94
-  },
-  {
-   "text": "le",
-   "start": 12.299,
-   "end": 12.345
-  },
-  {
-   "text": "brassard",
-   "start": 12.345,
-   "end": 12.739
-  },
-  {
-   "text": "se",
-   "start": 12.739,
-   "end": 12.831
-  },
-  {
-   "text": "place",
-   "start": 12.832,
-   "end": 13.051
-  },
-  {
-   "text": "autour",
-   "start": 13.051,
-   "end": 13.248
-  },
-  {
-   "text": "du",
-   "start": 13.248,
-   "end": 13.341
-  },
-  {
-   "text": "bras,",
-   "start": 13.341,
-   "end": 13.607
-  },
-  {
-   "text": "au",
-   "start": 13.885,
-   "end": 13.908
-  },
-  {
-   "text": "niveau",
-   "start": 13.908,
-   "end": 14.116
-  },
-  {
-   "text": "du",
-   "start": 14.116,
-   "end": 14.232
-  },
-  {
-   "text": "cœur,",
-   "start": 14.232,
-   "end": 14.556
-  },
-  {
-   "text": "chez",
-   "start": 14.869,
-   "end": 14.95
-  },
-  {
-   "text": "un",
-   "start": 14.95,
-   "end": 15.065
+   "end": 0.165
   },
   {
    "text": "patient",
-   "start": 15.065,
-   "end": 15.412
+   "start": 0.165,
+   "end": 0.5
   },
   {
-   "text": "au",
-   "start": 15.412,
-   "end": 15.459
+   "text": "a",
+   "start": 0.5,
+   "end": 0.535
   },
   {
-   "text": "repos.",
-   "start": 15.459,
-   "end": 15.841
+   "text": "mal",
+   "start": 0.535,
+   "end": 0.697
   },
   {
-   "text": "Le",
-   "start": 16.771,
-   "end": 16.933
-  },
-  {
-   "text": "tensiomètre",
-   "start": 16.933,
-   "end": 17.512
-  },
-  {
-   "text": "donne",
-   "start": 17.512,
-   "end": 17.732
-  },
-  {
-   "text": "deux",
-   "start": 17.732,
-   "end": 17.836
-  },
-  {
-   "text": "chiffres.",
-   "start": 17.836,
-   "end": 18.322
-  },
-  {
-   "text": "Le",
-   "start": 18.678,
-   "end": 18.782
-  },
-  {
-   "text": "premier,",
-   "start": 18.782,
-   "end": 19.199
-  },
-  {
-   "text": "c'est",
-   "start": 19.477,
-   "end": 19.592
+   "text": "à",
+   "start": 0.697,
+   "end": 0.72
   },
   {
    "text": "la",
-   "start": 19.592,
-   "end": 19.685
-  },
-  {
-   "text": "systolique :",
-   "start": 19.685,
-   "end": 20.298
-  },
-  {
-   "text": "la",
-   "start": 20.611,
-   "end": 20.68
-  },
-  {
-   "text": "pression",
-   "start": 20.68,
-   "end": 21.028
-  },
-  {
-   "text": "quand",
-   "start": 21.028,
-   "end": 21.132
-  },
-  {
-   "text": "le",
-   "start": 21.132,
-   "end": 21.224
-  },
-  {
-   "text": "cœur",
-   "start": 21.224,
-   "end": 21.421
-  },
-  {
-   "text": "se",
-   "start": 21.433,
-   "end": 21.514
-  },
-  {
-   "text": "contracte.",
-   "start": 21.514,
-   "end": 22.15
-  },
-  {
-   "text": "Le",
-   "start": 22.474,
-   "end": 22.613
-  },
-  {
-   "text": "deuxième,",
-   "start": 22.613,
-   "end": 23.088
-  },
-  {
-   "text": "c'est",
-   "start": 23.377,
-   "end": 23.493
-  },
-  {
-   "text": "la",
-   "start": 23.493,
-   "end": 23.574
-  },
-  {
-   "text": "diastolique :",
-   "start": 23.574,
-   "end": 24.268
-  },
-  {
-   "text": "quand",
-   "start": 24.511,
-   "end": 24.615
-  },
-  {
-   "text": "le",
-   "start": 24.616,
-   "end": 24.708
-  },
-  {
-   "text": "cœur",
-   "start": 24.708,
-   "end": 24.928
-  },
-  {
-   "text": "se",
-   "start": 24.928,
-   "end": 25.032
-  },
-  {
-   "text": "relâche.",
-   "start": 25.032,
-   "end": 25.576
-  },
-  {
-   "text": "Chez",
-   "start": 26.49,
-   "end": 26.687
-  },
-  {
-   "text": "l'adulte",
-   "start": 26.687,
-   "end": 27.022
-  },
-  {
-   "text": "au",
-   "start": 27.022,
-   "end": 27.046
-  },
-  {
-   "text": "repos,",
-   "start": 27.046,
-   "end": 27.427
-  },
-  {
-   "text": "la",
-   "start": 27.671,
-   "end": 27.728
-  },
-  {
-   "text": "normale,",
-   "start": 27.728,
-   "end": 28.18
-  },
-  {
-   "text": "c'est",
-   "start": 28.469,
-   "end": 28.573
-  },
-  {
-   "text": "autour",
-   "start": 28.573,
-   "end": 28.863
-  },
-  {
-   "text": "de",
-   "start": 28.863,
-   "end": 28.967
-  },
-  {
-   "text": "120",
-   "start": 28.967,
-   "end": 29.256
-  },
-  {
-   "text": "sur",
-   "start": 29.256,
-   "end": 29.418
-  },
-  {
-   "text": "80 :",
-   "start": 29.418,
-   "end": 29.893
-  },
-  {
-   "text": "120",
-   "start": 30.24,
-   "end": 30.574
-  },
-  {
-   "text": "pour",
-   "start": 30.574,
-   "end": 30.715
-  },
-  {
-   "text": "la",
-   "start": 30.715,
-   "end": 30.796
-  },
-  {
-   "text": "systolique,",
-   "start": 30.796,
-   "end": 31.374
-  },
-  {
-   "text": "80",
-   "start": 31.583,
-   "end": 31.914
-  },
-  {
-   "text": "pour",
-   "start": 31.914,
-   "end": 32.103
-  },
-  {
-   "text": "la",
-   "start": 32.103,
-   "end": 32.173
-  },
-  {
-   "text": "diastolique.",
-   "start": 32.173,
-   "end": 32.844
-  },
-  {
-   "text": "Au-dessus",
-   "start": 33.768,
-   "end": 34.115
-  },
-  {
-   "text": "de",
-   "start": 34.115,
-   "end": 34.242
-  },
-  {
-   "text": "140",
-   "start": 34.242,
-   "end": 34.647
-  },
-  {
-   "text": "sur",
-   "start": 34.648,
-   "end": 34.752
-  },
-  {
-   "text": "90,",
-   "start": 34.752,
-   "end": 35.481
-  },
-  {
-   "text": "c'est",
-   "start": 35.735,
-   "end": 35.84
-  },
-  {
-   "text": "une",
-   "start": 35.84,
-   "end": 36.013
-  },
-  {
-   "text": "hypertension,",
-   "start": 36.013,
-   "end": 36.673
-  },
-  {
-   "text": "qu'on",
-   "start": 36.893,
-   "end": 36.985
-  },
-  {
-   "text": "appelle",
-   "start": 36.985,
-   "end": 37.252
-  },
-  {
-   "text": "aussi",
-   "start": 37.252,
-   "end": 37.61
-  },
-  {
-   "text": "HTA .",
-   "start": 37.61,
-   "end": 38.212
-  },
-  {
-   "text": "Elle",
-   "start": 38.527,
-   "end": 38.689
-  },
-  {
-   "text": "passe",
-   "start": 38.689,
-   "end": 38.909
-  },
-  {
-   "text": "souvent",
-   "start": 38.909,
-   "end": 39.152
-  },
-  {
-   "text": "inaperçue,",
-   "start": 39.152,
-   "end": 39.719
-  },
-  {
-   "text": "mais",
-   "start": 40.089,
-   "end": 40.147
-  },
-  {
-   "text": "elle",
-   "start": 40.147,
-   "end": 40.228
-  },
-  {
-   "text": "peut",
-   "start": 40.228,
-   "end": 40.321
-  },
-  {
-   "text": "donner",
-   "start": 40.321,
-   "end": 40.529
-  },
-  {
-   "text": "des",
-   "start": 40.529,
-   "end": 40.622
-  },
-  {
-   "text": "maux",
-   "start": 40.622,
-   "end": 40.726
-  },
-  {
-   "text": "de",
-   "start": 40.726,
-   "end": 40.842
+   "start": 0.72,
+   "end": 0.836
   },
   {
    "text": "tête,",
-   "start": 40.842,
-   "end": 41.212
+   "start": 0.836,
+   "end": 1.23
   },
   {
    "text": "des",
-   "start": 41.374,
-   "end": 41.432
+   "start": 1.461,
+   "end": 1.531
   },
   {
-   "text": "bourdonnements",
-   "start": 41.432,
-   "end": 41.814
+   "text": "vertiges…",
+   "start": 1.531,
+   "end": 2.04
   },
   {
-   "text": "d'oreilles,",
-   "start": 41.814,
-   "end": 42.219
+   "text": "et",
+   "start": 2.248,
+   "end": 2.271
   },
   {
-   "text": "ou",
-   "start": 42.485,
-   "end": 42.508
+   "text": "ses",
+   "start": 2.271,
+   "end": 2.399
   },
   {
-   "text": "des",
-   "start": 42.508,
-   "end": 42.601
+   "text": "oreilles",
+   "start": 2.399,
+   "end": 2.665
   },
   {
-   "text": "vertiges.",
-   "start": 42.601,
-   "end": 43.191
+   "text": "bourdonnent.",
+   "start": 2.665,
+   "end": 3.186
   },
   {
-   "text": "En",
-   "start": 44.134,
-   "end": 44.238
+   "text": "Qu'est-ce",
+   "start": 3.502,
+   "end": 3.768
   },
   {
-   "text": "dessous",
-   "start": 44.238,
-   "end": 44.481
+   "text": "qu'il",
+   "start": 3.768,
+   "end": 3.965
   },
   {
-   "text": "de",
-   "start": 44.481,
-   "end": 44.562
+   "text": "a ?",
+   "start": 3.965,
+   "end": 4.173
   },
   {
-   "text": "90",
-   "start": 44.562,
-   "end": 45.071
+   "text": "Une",
+   "start": 4.486,
+   "end": 4.671
   },
   {
-   "text": "sur",
-   "start": 45.071,
-   "end": 45.21
+   "text": "hypertension :",
+   "start": 4.671,
+   "end": 5.319
   },
   {
-   "text": "60,",
-   "start": 45.21,
-   "end": 45.754
+   "text": "sa",
+   "start": 5.608,
+   "end": 5.712
   },
   {
-   "text": "c'est",
-   "start": 45.997,
-   "end": 46.09
-  },
-  {
-   "text": "une",
-   "start": 46.101,
-   "end": 46.275
-  },
-  {
-   "text": "hypotension :",
-   "start": 46.275,
-   "end": 46.865
-  },
-  {
-   "text": "la",
-   "start": 47.166,
-   "end": 47.224
-  },
-  {
-   "text": "pression",
-   "start": 47.224,
-   "end": 47.571
+   "text": "tension",
+   "start": 5.712,
+   "end": 6.048
   },
   {
    "text": "est",
-   "start": 47.571,
-   "end": 47.629
+   "start": 6.048,
+   "end": 6.094
   },
   {
    "text": "trop",
-   "start": 47.629,
-   "end": 47.803
+   "start": 6.094,
+   "end": 6.28
   },
   {
-   "text": "basse.",
-   "start": 47.803,
-   "end": 48.243
-  },
-  {
-   "text": "Le",
-   "start": 48.613,
-   "end": 48.706
-  },
-  {
-   "text": "patient",
-   "start": 48.706,
-   "end": 49.018
-  },
-  {
-   "text": "peut",
-   "start": 49.018,
-   "end": 49.111
-  },
-  {
-   "text": "avoir",
-   "start": 49.111,
-   "end": 49.296
-  },
-  {
-   "text": "la",
-   "start": 49.296,
-   "end": 49.388
-  },
-  {
-   "text": "tête",
-   "start": 49.389,
-   "end": 49.574
-  },
-  {
-   "text": "qui",
-   "start": 49.574,
-   "end": 49.689
-  },
-  {
-   "text": "tourne,",
-   "start": 49.689,
-   "end": 50.048
-  },
-  {
-   "text": "être",
-   "start": 50.187,
-   "end": 50.407
-  },
-  {
-   "text": "pâle,",
-   "start": 50.407,
-   "end": 50.696
-  },
-  {
-   "text": "ou",
-   "start": 51.02,
-   "end": 51.044
-  },
-  {
-   "text": "faire",
-   "start": 51.044,
-   "end": 51.252
-  },
-  {
-   "text": "un",
-   "start": 51.252,
-   "end": 51.287
-  },
-  {
-   "text": "malaise.",
-   "start": 51.287,
-   "end": 51.761
-  },
-  {
-   "text": "Petit",
-   "start": 52.692,
-   "end": 52.981
-  },
-  {
-   "text": "récap !",
-   "start": 52.981,
-   "end": 53.525
-  },
-  {
-   "text": "La",
-   "start": 53.836,
-   "end": 53.998
-  },
-  {
-   "text": "tension,",
-   "start": 53.998,
-   "end": 54.461
-  },
-  {
-   "text": "c'est",
-   "start": 54.785,
-   "end": 54.901
-  },
-  {
-   "text": "la",
-   "start": 54.901,
-   "end": 54.97
-  },
-  {
-   "text": "pression",
-   "start": 54.97,
-   "end": 55.271
-  },
-  {
-   "text": "du",
-   "start": 55.271,
-   "end": 55.387
-  },
-  {
-   "text": "sang",
-   "start": 55.387,
-   "end": 55.572
-  },
-  {
-   "text": "dans",
-   "start": 55.572,
-   "end": 55.665
-  },
-  {
-   "text": "les",
-   "start": 55.665,
-   "end": 55.746
-  },
-  {
-   "text": "artères,",
-   "start": 55.746,
-   "end": 56.232
-  },
-  {
-   "text": "en",
-   "start": 56.521,
-   "end": 56.556
-  },
-  {
-   "text": "millimètres",
-   "start": 56.556,
-   "end": 57.042
-  },
-  {
-   "text": "de",
-   "start": 57.042,
-   "end": 57.111
-  },
-  {
-   "text": "mercure.",
-   "start": 57.111,
-   "end": 57.667
-  },
-  {
-   "text": "Deux",
-   "start": 58.001,
-   "end": 58.198
-  },
-  {
-   "text": "chiffres :",
-   "start": 58.198,
-   "end": 58.66
-  },
-  {
-   "text": "la",
-   "start": 59.042,
-   "end": 59.112
-  },
-  {
-   "text": "systolique,",
-   "start": 59.112,
-   "end": 59.783
-  },
-  {
-   "text": "puis",
-   "start": 60.038,
-   "end": 60.165
-  },
-  {
-   "text": "la",
-   "start": 60.165,
-   "end": 60.258
-  },
-  {
-   "text": "diastolique.",
-   "start": 60.258,
-   "end": 60.999
-  },
-  {
-   "text": "Normale :",
-   "start": 61.323,
-   "end": 61.855
-  },
-  {
-   "text": "autour",
-   "start": 62.225,
-   "end": 62.48
-  },
-  {
-   "text": "de",
-   "start": 62.48,
-   "end": 62.596
-  },
-  {
-   "text": "120",
-   "start": 62.596,
-   "end": 62.897
-  },
-  {
-   "text": "sur",
-   "start": 62.897,
-   "end": 63.059
-  },
-  {
-   "text": "80.",
-   "start": 63.059,
-   "end": 63.591
-  },
-  {
-   "text": "Au-dessus",
-   "start": 63.915,
-   "end": 64.332
-  },
-  {
-   "text": "de",
-   "start": 64.332,
-   "end": 64.471
-  },
-  {
-   "text": "140",
-   "start": 64.471,
-   "end": 64.91
-  },
-  {
-   "text": "sur",
-   "start": 64.91,
-   "end": 65.038
-  },
-  {
-   "text": "90 :",
-   "start": 65.038,
-   "end": 65.802
-  },
-  {
-   "text": "hypertension.",
-   "start": 66.056,
-   "end": 66.762
+   "text": "haute !",
+   "start": 6.28,
+   "end": 6.615
   },
   {
    "text": "Et",
-   "start": 67.11,
-   "end": 67.202
+   "start": 6.927,
+   "end": 7.077
   },
   {
-   "text": "en",
-   "start": 67.202,
-   "end": 67.26
+   "text": "un",
+   "start": 7.077,
+   "end": 7.147
   },
   {
-   "text": "dessous",
-   "start": 67.26,
-   "end": 67.538
+   "text": "simple",
+   "start": 7.147,
+   "end": 7.448
   },
   {
-   "text": "de",
-   "start": 67.538,
-   "end": 67.63
+   "text": "brassard",
+   "start": 7.448,
+   "end": 7.853
   },
   {
-   "text": "90",
-   "start": 67.63,
-   "end": 68.198
+   "text": "te",
+   "start": 7.853,
+   "end": 7.957
+  },
+  {
+   "text": "l'aurait",
+   "start": 7.957,
+   "end": 8.165
+  },
+  {
+   "text": "dit.",
+   "start": 8.165,
+   "end": 8.455
+  },
+  {
+   "text": "Mais",
+   "start": 8.776,
+   "end": 8.926
+  },
+  {
+   "text": "au",
+   "start": 8.926,
+   "end": 8.996
+  },
+  {
+   "text": "fait…",
+   "start": 8.996,
+   "end": 9.378
+  },
+  {
+   "text": "c'est",
+   "start": 9.586,
+   "end": 9.725
+  },
+  {
+   "text": "quoi,",
+   "start": 9.725,
+   "end": 10.037
+  },
+  {
+   "text": "la",
+   "start": 10.35,
+   "end": 10.408
+  },
+  {
+   "text": "tension",
+   "start": 10.408,
+   "end": 10.697
+  },
+  {
+   "text": "artérielle ?",
+   "start": 10.697,
+   "end": 11.276
+  },
+  {
+   "text": "La",
+   "start": 12.182,
+   "end": 12.344
+  },
+  {
+   "text": "tension",
+   "start": 12.344,
+   "end": 12.622
+  },
+  {
+   "text": "artérielle,",
+   "start": 12.622,
+   "end": 13.166
+  },
+  {
+   "text": "ou",
+   "start": 13.363,
+   "end": 13.386
+  },
+  {
+   "text": "pression",
+   "start": 13.386,
+   "end": 13.675
+  },
+  {
+   "text": "artérielle,",
+   "start": 13.675,
+   "end": 14.219
+  },
+  {
+   "text": "c'est",
+   "start": 14.601,
+   "end": 14.682
+  },
+  {
+   "text": "la",
+   "start": 14.682,
+   "end": 14.752
+  },
+  {
+   "text": "pression",
+   "start": 14.752,
+   "end": 15.052
+  },
+  {
+   "text": "du",
+   "start": 15.052,
+   "end": 15.18
+  },
+  {
+   "text": "sang",
+   "start": 15.18,
+   "end": 15.377
   },
   {
    "text": "sur",
-   "start": 68.198,
-   "end": 68.336
+   "start": 15.377,
+   "end": 15.515
+  },
+  {
+   "text": "la",
+   "start": 15.515,
+   "end": 15.597
+  },
+  {
+   "text": "paroi",
+   "start": 15.597,
+   "end": 15.828
+  },
+  {
+   "text": "des",
+   "start": 15.828,
+   "end": 15.921
+  },
+  {
+   "text": "artères.",
+   "start": 15.921,
+   "end": 16.465
+  },
+  {
+   "text": "Elle",
+   "start": 16.779,
+   "end": 16.964
+  },
+  {
+   "text": "se",
+   "start": 16.964,
+   "end": 17.08
+  },
+  {
+   "text": "mesure",
+   "start": 17.08,
+   "end": 17.427
+  },
+  {
+   "text": "en",
+   "start": 17.427,
+   "end": 17.473
+  },
+  {
+   "text": "millimètres",
+   "start": 17.473,
+   "end": 17.959
+  },
+  {
+   "text": "de",
+   "start": 17.959,
+   "end": 18.04
+  },
+  {
+   "text": "mercure.",
+   "start": 18.04,
+   "end": 18.631
+  },
+  {
+   "text": "Pour",
+   "start": 19.558,
+   "end": 19.662
+  },
+  {
+   "text": "la",
+   "start": 19.662,
+   "end": 19.731
+  },
+  {
+   "text": "prendre,",
+   "start": 19.732,
+   "end": 20.09
+  },
+  {
+   "text": "on",
+   "start": 20.287,
+   "end": 20.31
+  },
+  {
+   "text": "utilise",
+   "start": 20.31,
+   "end": 20.681
+  },
+  {
+   "text": "un",
+   "start": 20.681,
+   "end": 20.727
+  },
+  {
+   "text": "tensiomètre :",
+   "start": 20.727,
+   "end": 21.34
+  },
+  {
+   "text": "le",
+   "start": 21.699,
+   "end": 21.745
+  },
+  {
+   "text": "brassard",
+   "start": 21.745,
+   "end": 22.139
+  },
+  {
+   "text": "se",
+   "start": 22.139,
+   "end": 22.231
+  },
+  {
+   "text": "place",
+   "start": 22.232,
+   "end": 22.451
+  },
+  {
+   "text": "autour",
+   "start": 22.451,
+   "end": 22.648
+  },
+  {
+   "text": "du",
+   "start": 22.648,
+   "end": 22.741
+  },
+  {
+   "text": "bras,",
+   "start": 22.741,
+   "end": 23.007
+  },
+  {
+   "text": "au",
+   "start": 23.285,
+   "end": 23.308
+  },
+  {
+   "text": "niveau",
+   "start": 23.308,
+   "end": 23.516
+  },
+  {
+   "text": "du",
+   "start": 23.516,
+   "end": 23.632
+  },
+  {
+   "text": "cœur,",
+   "start": 23.632,
+   "end": 23.956
+  },
+  {
+   "text": "chez",
+   "start": 24.269,
+   "end": 24.35
+  },
+  {
+   "text": "un",
+   "start": 24.35,
+   "end": 24.465
+  },
+  {
+   "text": "patient",
+   "start": 24.465,
+   "end": 24.812
+  },
+  {
+   "text": "au",
+   "start": 24.812,
+   "end": 24.859
+  },
+  {
+   "text": "repos.",
+   "start": 24.859,
+   "end": 25.241
+  },
+  {
+   "text": "Le",
+   "start": 26.171,
+   "end": 26.333
+  },
+  {
+   "text": "tensiomètre",
+   "start": 26.333,
+   "end": 26.912
+  },
+  {
+   "text": "donne",
+   "start": 26.912,
+   "end": 27.132
+  },
+  {
+   "text": "deux",
+   "start": 27.132,
+   "end": 27.236
+  },
+  {
+   "text": "chiffres.",
+   "start": 27.236,
+   "end": 27.722
+  },
+  {
+   "text": "Le",
+   "start": 28.078,
+   "end": 28.182
+  },
+  {
+   "text": "premier,",
+   "start": 28.182,
+   "end": 28.599
+  },
+  {
+   "text": "c'est",
+   "start": 28.877,
+   "end": 28.992
+  },
+  {
+   "text": "la",
+   "start": 28.992,
+   "end": 29.085
+  },
+  {
+   "text": "systolique :",
+   "start": 29.085,
+   "end": 29.698
+  },
+  {
+   "text": "la",
+   "start": 30.011,
+   "end": 30.08
+  },
+  {
+   "text": "pression",
+   "start": 30.08,
+   "end": 30.428
+  },
+  {
+   "text": "quand",
+   "start": 30.428,
+   "end": 30.532
+  },
+  {
+   "text": "le",
+   "start": 30.532,
+   "end": 30.624
+  },
+  {
+   "text": "cœur",
+   "start": 30.624,
+   "end": 30.821
+  },
+  {
+   "text": "se",
+   "start": 30.833,
+   "end": 30.914
+  },
+  {
+   "text": "contracte.",
+   "start": 30.914,
+   "end": 31.55
+  },
+  {
+   "text": "Le",
+   "start": 31.874,
+   "end": 32.013
+  },
+  {
+   "text": "deuxième,",
+   "start": 32.013,
+   "end": 32.488
+  },
+  {
+   "text": "c'est",
+   "start": 32.777,
+   "end": 32.893
+  },
+  {
+   "text": "la",
+   "start": 32.893,
+   "end": 32.974
+  },
+  {
+   "text": "diastolique :",
+   "start": 32.974,
+   "end": 33.668
+  },
+  {
+   "text": "quand",
+   "start": 33.911,
+   "end": 34.015
+  },
+  {
+   "text": "le",
+   "start": 34.016,
+   "end": 34.108
+  },
+  {
+   "text": "cœur",
+   "start": 34.108,
+   "end": 34.328
+  },
+  {
+   "text": "se",
+   "start": 34.328,
+   "end": 34.432
+  },
+  {
+   "text": "relâche.",
+   "start": 34.432,
+   "end": 34.976
+  },
+  {
+   "text": "Chez",
+   "start": 35.89,
+   "end": 36.087
+  },
+  {
+   "text": "l'adulte",
+   "start": 36.087,
+   "end": 36.422
+  },
+  {
+   "text": "au",
+   "start": 36.422,
+   "end": 36.446
+  },
+  {
+   "text": "repos,",
+   "start": 36.446,
+   "end": 36.827
+  },
+  {
+   "text": "la",
+   "start": 37.071,
+   "end": 37.128
+  },
+  {
+   "text": "normale,",
+   "start": 37.128,
+   "end": 37.58
+  },
+  {
+   "text": "c'est",
+   "start": 37.869,
+   "end": 37.973
+  },
+  {
+   "text": "autour",
+   "start": 37.973,
+   "end": 38.263
+  },
+  {
+   "text": "de",
+   "start": 38.263,
+   "end": 38.367
+  },
+  {
+   "text": "120",
+   "start": 38.367,
+   "end": 38.656
+  },
+  {
+   "text": "sur",
+   "start": 38.656,
+   "end": 38.818
+  },
+  {
+   "text": "80 :",
+   "start": 38.818,
+   "end": 39.293
+  },
+  {
+   "text": "120",
+   "start": 39.64,
+   "end": 39.974
+  },
+  {
+   "text": "pour",
+   "start": 39.974,
+   "end": 40.115
+  },
+  {
+   "text": "la",
+   "start": 40.115,
+   "end": 40.196
+  },
+  {
+   "text": "systolique,",
+   "start": 40.196,
+   "end": 40.774
+  },
+  {
+   "text": "80",
+   "start": 40.983,
+   "end": 41.314
+  },
+  {
+   "text": "pour",
+   "start": 41.314,
+   "end": 41.503
+  },
+  {
+   "text": "la",
+   "start": 41.503,
+   "end": 41.573
+  },
+  {
+   "text": "diastolique.",
+   "start": 41.573,
+   "end": 42.244
+  },
+  {
+   "text": "Au-dessus",
+   "start": 43.168,
+   "end": 43.515
+  },
+  {
+   "text": "de",
+   "start": 43.515,
+   "end": 43.642
+  },
+  {
+   "text": "140",
+   "start": 43.642,
+   "end": 44.047
+  },
+  {
+   "text": "sur",
+   "start": 44.048,
+   "end": 44.152
+  },
+  {
+   "text": "90,",
+   "start": 44.152,
+   "end": 44.881
+  },
+  {
+   "text": "c'est",
+   "start": 45.135,
+   "end": 45.24
+  },
+  {
+   "text": "une",
+   "start": 45.24,
+   "end": 45.413
+  },
+  {
+   "text": "hypertension,",
+   "start": 45.413,
+   "end": 46.073
+  },
+  {
+   "text": "qu'on",
+   "start": 46.293,
+   "end": 46.385
+  },
+  {
+   "text": "appelle",
+   "start": 46.385,
+   "end": 46.652
+  },
+  {
+   "text": "aussi",
+   "start": 46.652,
+   "end": 47.01
+  },
+  {
+   "text": "HTA .",
+   "start": 47.01,
+   "end": 47.612
+  },
+  {
+   "text": "Elle",
+   "start": 47.927,
+   "end": 48.089
+  },
+  {
+   "text": "passe",
+   "start": 48.089,
+   "end": 48.309
+  },
+  {
+   "text": "souvent",
+   "start": 48.309,
+   "end": 48.552
+  },
+  {
+   "text": "inaperçue,",
+   "start": 48.552,
+   "end": 49.119
+  },
+  {
+   "text": "mais",
+   "start": 49.489,
+   "end": 49.547
+  },
+  {
+   "text": "elle",
+   "start": 49.547,
+   "end": 49.628
+  },
+  {
+   "text": "peut",
+   "start": 49.628,
+   "end": 49.721
+  },
+  {
+   "text": "donner",
+   "start": 49.721,
+   "end": 49.929
+  },
+  {
+   "text": "des",
+   "start": 49.929,
+   "end": 50.022
+  },
+  {
+   "text": "maux",
+   "start": 50.022,
+   "end": 50.126
+  },
+  {
+   "text": "de",
+   "start": 50.126,
+   "end": 50.242
+  },
+  {
+   "text": "tête,",
+   "start": 50.242,
+   "end": 50.612
+  },
+  {
+   "text": "des",
+   "start": 50.774,
+   "end": 50.832
+  },
+  {
+   "text": "bourdonnements",
+   "start": 50.832,
+   "end": 51.214
+  },
+  {
+   "text": "d'oreilles,",
+   "start": 51.214,
+   "end": 51.619
+  },
+  {
+   "text": "ou",
+   "start": 51.885,
+   "end": 51.908
+  },
+  {
+   "text": "des",
+   "start": 51.908,
+   "end": 52.001
+  },
+  {
+   "text": "vertiges.",
+   "start": 52.001,
+   "end": 52.591
+  },
+  {
+   "text": "En",
+   "start": 53.534,
+   "end": 53.638
+  },
+  {
+   "text": "dessous",
+   "start": 53.638,
+   "end": 53.881
+  },
+  {
+   "text": "de",
+   "start": 53.881,
+   "end": 53.962
+  },
+  {
+   "text": "90",
+   "start": 53.962,
+   "end": 54.471
+  },
+  {
+   "text": "sur",
+   "start": 54.471,
+   "end": 54.61
+  },
+  {
+   "text": "60,",
+   "start": 54.61,
+   "end": 55.154
+  },
+  {
+   "text": "c'est",
+   "start": 55.397,
+   "end": 55.49
+  },
+  {
+   "text": "une",
+   "start": 55.501,
+   "end": 55.675
+  },
+  {
+   "text": "hypotension :",
+   "start": 55.675,
+   "end": 56.265
+  },
+  {
+   "text": "la",
+   "start": 56.566,
+   "end": 56.624
+  },
+  {
+   "text": "pression",
+   "start": 56.624,
+   "end": 56.971
+  },
+  {
+   "text": "est",
+   "start": 56.971,
+   "end": 57.029
+  },
+  {
+   "text": "trop",
+   "start": 57.029,
+   "end": 57.203
+  },
+  {
+   "text": "basse.",
+   "start": 57.203,
+   "end": 57.643
+  },
+  {
+   "text": "Le",
+   "start": 58.013,
+   "end": 58.106
+  },
+  {
+   "text": "patient",
+   "start": 58.106,
+   "end": 58.418
+  },
+  {
+   "text": "peut",
+   "start": 58.418,
+   "end": 58.511
+  },
+  {
+   "text": "avoir",
+   "start": 58.511,
+   "end": 58.696
+  },
+  {
+   "text": "la",
+   "start": 58.696,
+   "end": 58.788
+  },
+  {
+   "text": "tête",
+   "start": 58.789,
+   "end": 58.974
+  },
+  {
+   "text": "qui",
+   "start": 58.974,
+   "end": 59.089
+  },
+  {
+   "text": "tourne,",
+   "start": 59.089,
+   "end": 59.448
+  },
+  {
+   "text": "être",
+   "start": 59.587,
+   "end": 59.807
+  },
+  {
+   "text": "pâle,",
+   "start": 59.807,
+   "end": 60.096
+  },
+  {
+   "text": "ou",
+   "start": 60.42,
+   "end": 60.444
+  },
+  {
+   "text": "faire",
+   "start": 60.444,
+   "end": 60.652
+  },
+  {
+   "text": "un",
+   "start": 60.652,
+   "end": 60.687
+  },
+  {
+   "text": "malaise.",
+   "start": 60.687,
+   "end": 61.161
+  },
+  {
+   "text": "Petit",
+   "start": 62.092,
+   "end": 62.381
+  },
+  {
+   "text": "récap !",
+   "start": 62.381,
+   "end": 62.925
+  },
+  {
+   "text": "La",
+   "start": 63.236,
+   "end": 63.398
+  },
+  {
+   "text": "tension,",
+   "start": 63.398,
+   "end": 63.861
+  },
+  {
+   "text": "c'est",
+   "start": 64.185,
+   "end": 64.301
+  },
+  {
+   "text": "la",
+   "start": 64.301,
+   "end": 64.37
+  },
+  {
+   "text": "pression",
+   "start": 64.37,
+   "end": 64.671
+  },
+  {
+   "text": "du",
+   "start": 64.671,
+   "end": 64.787
+  },
+  {
+   "text": "sang",
+   "start": 64.787,
+   "end": 64.972
+  },
+  {
+   "text": "dans",
+   "start": 64.972,
+   "end": 65.065
+  },
+  {
+   "text": "les",
+   "start": 65.065,
+   "end": 65.146
+  },
+  {
+   "text": "artères,",
+   "start": 65.146,
+   "end": 65.632
+  },
+  {
+   "text": "en",
+   "start": 65.921,
+   "end": 65.956
+  },
+  {
+   "text": "millimètres",
+   "start": 65.956,
+   "end": 66.442
+  },
+  {
+   "text": "de",
+   "start": 66.442,
+   "end": 66.511
+  },
+  {
+   "text": "mercure.",
+   "start": 66.511,
+   "end": 67.067
+  },
+  {
+   "text": "Deux",
+   "start": 67.401,
+   "end": 67.598
+  },
+  {
+   "text": "chiffres :",
+   "start": 67.598,
+   "end": 68.06
+  },
+  {
+   "text": "la",
+   "start": 68.442,
+   "end": 68.512
+  },
+  {
+   "text": "systolique,",
+   "start": 68.512,
+   "end": 69.183
+  },
+  {
+   "text": "puis",
+   "start": 69.438,
+   "end": 69.565
+  },
+  {
+   "text": "la",
+   "start": 69.565,
+   "end": 69.658
+  },
+  {
+   "text": "diastolique.",
+   "start": 69.658,
+   "end": 70.399
+  },
+  {
+   "text": "Normale :",
+   "start": 70.723,
+   "end": 71.255
+  },
+  {
+   "text": "autour",
+   "start": 71.625,
+   "end": 71.88
+  },
+  {
+   "text": "de",
+   "start": 71.88,
+   "end": 71.996
+  },
+  {
+   "text": "120",
+   "start": 71.996,
+   "end": 72.297
+  },
+  {
+   "text": "sur",
+   "start": 72.297,
+   "end": 72.459
+  },
+  {
+   "text": "80.",
+   "start": 72.459,
+   "end": 72.991
+  },
+  {
+   "text": "Au-dessus",
+   "start": 73.315,
+   "end": 73.732
+  },
+  {
+   "text": "de",
+   "start": 73.732,
+   "end": 73.871
+  },
+  {
+   "text": "140",
+   "start": 73.871,
+   "end": 74.31
+  },
+  {
+   "text": "sur",
+   "start": 74.31,
+   "end": 74.438
+  },
+  {
+   "text": "90 :",
+   "start": 74.438,
+   "end": 75.202
+  },
+  {
+   "text": "hypertension.",
+   "start": 75.456,
+   "end": 76.162
+  },
+  {
+   "text": "Et",
+   "start": 76.51,
+   "end": 76.602
+  },
+  {
+   "text": "en",
+   "start": 76.602,
+   "end": 76.66
+  },
+  {
+   "text": "dessous",
+   "start": 76.66,
+   "end": 76.938
+  },
+  {
+   "text": "de",
+   "start": 76.938,
+   "end": 77.03
+  },
+  {
+   "text": "90",
+   "start": 77.03,
+   "end": 77.598
+  },
+  {
+   "text": "sur",
+   "start": 77.598,
+   "end": 77.736
   },
   {
    "text": "60 :",
-   "start": 68.336,
-   "end": 68.846
+   "start": 77.736,
+   "end": 78.246
   },
   {
    "text": "hypotension !",
-   "start": 69.066,
-   "end": 69.714
+   "start": 78.466,
+   "end": 79.114
   }
  ]
 }

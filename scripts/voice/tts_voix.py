@@ -2,6 +2,7 @@
 
 Usage :
   python3 scripts/voice/tts_voix.py voix/<n>-<sujet>.script.json <episode>
+  python3 scripts/voice/tts_voix.py voix/<n>-<sujet>.script.json <episode> --only intro   (retouche d'UNE partie)
 
 Sorties : public/voix/<episode>/voix.wav (48 kHz, -15 LUFS) et src/videos/<episode>/voice.json
 (même format qu'align_voice.py : sections + mots). Le timing vient directement de la synthèse
@@ -117,9 +118,85 @@ def align(tokens, heard):
     return times
 
 
+def loudness(path):
+    """Sonie intégrée (LUFS) d'un fichier audio."""
+    err = subprocess.run(["ffmpeg", "-nostats", "-i", path, "-af", "ebur128", "-f", "null", "-"], capture_output=True, text=True).stderr
+    return float(re.findall(r"I:\s+(-?[\d.]+) LUFS", err)[-1])
+
+
+def replace_part(parts, episode, pid, fps=30):
+    """Retouche : refait la voix d'UNE partie et la recolle dans voix.wav / voice.json déjà là. Le son des autres parties
+    ne change pas ; tout ce qui suit est décalé d'un nombre ENTIER d'images (affiché), pour recoller la vidéo déjà rendue
+    sans la recalculer : `npm run splice -- out/<vidéo>.mp4 tete.mp4@0:<ancienne frame de coupe>`."""
+    sr = 48000
+    p = next(x for x in parts if x["id"] == pid)
+    dst = os.path.join(ROOT, "src", "videos", episode, "voice.json")
+    wav_path = os.path.join(ROOT, "public", "voix", episode, "voix.wav")
+    data = json.load(open(dst))
+    secs, words = data["sections"], data["words"]
+    k = next(i for i, s in enumerate(secs) if s["id"] == pid)
+    with wave.open(wav_path) as w:
+        assert w.getframerate() == sr and w.getnchannels() == 1 and w.getsampwidth() == 2
+        old = w.readframes(w.getnframes())
+    tmp = tempfile.mkdtemp()
+    spoken = re.sub(r"\{([^|}]*)\|([^}]*)\}", r"\2", p["text"])
+    for a, b in SPOKEN.items():
+        spoken = spoken.replace(a, b)
+    heard = split_groups(asyncio.run(synth(spoken, f"{tmp}/p.mp3", p.get("rate", RATE))))
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", f"{tmp}/p.mp3", "-af", "highpass=f=70", "-ar", str(sr), "-ac", "1", f"{tmp}/raw.wav"], check=True)
+    # même niveau que le reste de la voix
+    gain = loudness(wav_path) - loudness(f"{tmp}/raw.wav")
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", f"{tmp}/raw.wav", "-af", f"volume={gain:.2f}dB,alimiter=limit=0.84:level=false", "-c:a", "pcm_s16le", f"{tmp}/p.wav"], check=True)
+    with wave.open(f"{tmp}/p.wav") as w:
+        clip = w.readframes(w.getnframes())
+    toks = script_tokens(p["text"])
+    times = align(toks, heard)
+    # le premier mot garde sa place, la fin de la partie et le blanc qui suit se recalent
+    floor = secs[k - 1]["end"] + 0.15 if k > 0 else 0.0
+    t0 = max(floor, secs[k]["start"] - times[0][0])
+    new_end = t0 + times[-1][1]
+    if k + 1 < len(secs):
+        nxt = secs[k + 1]
+        shift = round((new_end + (nxt["start"] - secs[k]["end"]) - nxt["start"]) * fps)
+        cut = int(round((nxt["start"] - 0.12) * sr))  # dans le blanc avant la partie suivante
+    else:
+        shift = round((new_end - secs[k]["end"]) * fps)
+        cut = len(old) // 2
+    a = int(round(t0 * sr))
+    region = cut + shift * (sr // fps) - a
+    if t0 + times[-1][1] > (a + region) / sr - 0.05:
+        raise SystemExit("la nouvelle partie déborde sur la suivante")
+    body = clip[: region * 2].ljust(region * 2, b"\0")
+    pcm = old[: a * 2] + body + old[cut * 2 :]
+    with wave.open(wav_path, "wb") as w:
+        w.setnchannels(1)
+        w.setsampwidth(2)
+        w.setframerate(sr)
+        w.writeframes(pcm)
+    d = shift / fps
+    first = next(i for i, w in enumerate(words) if w["start"] >= secs[k]["start"] - 1e-6)
+    last = next((i for i, w in enumerate(words) if k + 1 < len(secs) and w["start"] >= secs[k + 1]["start"] - 1e-6), len(words))
+    mid = [{"text": t, "start": round(t0 + s, 3), "end": round(t0 + e, 3)} for t, (s, e) in zip(toks, times)]
+    data["words"] = words[:first] + mid + [{**w, "start": round(w["start"] + d, 3), "end": round(w["end"] + d, 3)} for w in words[last:]]
+    secs[k] = {"id": pid, "start": mid[0]["start"], "end": mid[-1]["end"]}
+    for s in secs[k + 1 :]:
+        s["start"], s["end"] = round(s["start"] + d, 3), round(s["end"] + d, 3)
+    data["duration"] = round(len(pcm) / 2 / sr, 3)
+    json.dump(data, open(dst, "w"), ensure_ascii=False, indent=1)
+    print(f"{pid} : {secs[k]['start']:.2f} -> {secs[k]['end']:.2f} s ; la suite est décalée de {shift:+d} images ({d:+.2f} s)")
+
+
 def main():
-    script, episode = sys.argv[1], sys.argv[2]
+    args = sys.argv[1:]
+    only = None
+    if "--only" in args:
+        i = args.index("--only")
+        only = args[i + 1]
+        del args[i : i + 2]
+    script, episode = args[0], args[1]
     parts = json.load(open(script))
+    if only:
+        return replace_part(parts, episode, only)
     tmp = tempfile.mkdtemp()
     pcm = bytearray()
     words, sections = [], []

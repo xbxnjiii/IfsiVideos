@@ -1,4 +1,4 @@
-// Jeu de la mascotte : une étape par mot clé, places en bas de l'écran (SPOT), gags au mot près (tensiomètre,
+// Jeu de la mascotte : une étape par mot clé, places en bas de l'écran (SPOT), gags au mot près (signes de l'accroche, tensiomètre,
 // cœur avec les mains sur « cœur », « chut » sur « inaperçue », assise par terre sur « malaise »…) ; elle reste
 // d'un côté quand les signes apparaissent et porte les transitions (plongée dans le manomètre, panoramiques, rideau).
 import type {Beat} from '../../brand/MascotActor';
@@ -9,8 +9,14 @@ const {L, R} = SPOT;
 const runAcross = (id: SceneId) => run(TL, start(id));
 
 export const MASCOT: Beat[] = [
-	/* ── accroche ── */
-	{at: abs('intro', 'quoi'), via: 'pop', key: 'expressions/questionnement', ...R},
+	/* ── accroche ── elle joue chaque signe, la question, le choc de l'hypertension, le brassard */
+	{at: abs('intro', 'tête'), via: 'pop', key: 'symptomes/mal-de-tete-2', fx: 'shake', ...R},
+	{at: abs('intro', 'vertiges'), key: 'symptomes/vertige', ...R},
+	{at: abs('intro', 'oreilles'), key: 'symptomes/mal-oreille', ...R},
+	{at: abs('intro', "qu'est-ce"), key: 'expressions/questionnement', ...R},
+	{at: abs('intro', 'hypertension'), key: 'expressions/surprise', fx: 'shake', ...R},
+	{at: abs('intro', 'brassard'), key: 'accessoires/tensiometre', ...R},
+	{at: abs('intro', 'quoi'), key: 'expressions/questionnement', ...R},
 	// elle plonge dans le manomètre (zoomInto)
 	{at: start('def') - 4, dur: 16, key: 'expressions/questionnement', x: 540, y: 800, size: 0},
 

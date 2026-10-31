@@ -3,11 +3,13 @@
 
 Usage :
   npm run splice -- out/08-glycemie.mp4 seg1.mp4@563 seg2.mp4@1640
+  npm run splice -- out/07-tension-arterielle.mp4 tete.mp4@0:100
 
-Chaque segment est un rendu Remotion de la même composition (`--frames=<début>-<fin>`), image ET son : il remplace
-les images [début, début + durée du segment) de la vidéo d'origine. La vidéo est réécrite en place (h264 CRF 18,
-yuv420p, AAC 320 k), la durée totale ne change pas. Les retouches de voix doivent garder le même minutage
-(remplacer un mot dans son créneau) pour que le reste reste synchrone.
+Chaque segment est un rendu Remotion de la même composition (`--frames=<début>-<fin>`), image ET son : `seg@début`
+remplace les images [début, début + durée du segment) de la vidéo d'origine (durée inchangée) ; `seg@début:fin`
+remplace les images [début, fin) par tout le segment, quelle que soit sa durée (ex. nouvelle accroche plus longue :
+la suite de l'ancienne vidéo est gardée telle quelle, voir `npm run voice -- … --only intro`). La vidéo est réécrite
+en place (h264 CRF 18, yuv420p, AAC 320 k) et le nombre d'images final est vérifié.
 """
 import json
 import os
@@ -34,19 +36,22 @@ def main():
     base = sys.argv[1]
     segs = []
     for arg in sys.argv[2:]:
-        path, start = arg.rsplit("@", 1)
-        segs.append((int(start), path, probe_frames(path)))
+        path, rng = arg.rsplit("@", 1)
+        n = probe_frames(path)
+        start, _, end = rng.partition(":")
+        segs.append((int(start), int(end) if end else int(start) + n, path, n))
     segs.sort()
     total = probe_frames(base)
-    inputs = ["-i", base] + [x for _, p, _ in segs for x in ("-i", p)]
+    expected = total + sum(n - (end - start) for start, end, _, n in segs)
+    inputs = ["-i", base] + [x for _, _, p, _ in segs for x in ("-i", p)]
     parts, cursor, chains = [], 0, []
-    for k, (start, _, n) in enumerate(segs, start=1):
-        if start < cursor or start + n > total:
-            raise SystemExit(f"segment {k} hors limites ou chevauchant : {start}+{n} (vidéo {total} images)")
+    for k, (start, end, _, n) in enumerate(segs, start=1):
+        if start < cursor or end > total or end < start:
+            raise SystemExit(f"segment {k} hors limites ou chevauchant : [{start}, {end}) (vidéo {total} images)")
         if start > cursor:
             parts.append((0, cursor, start))
         parts.append((k, 0, n))
-        cursor = start + n
+        cursor = end
     if cursor < total:
         parts.append((0, cursor, total))
     # chaque morceau est coupé à l'image près, image ET son (le son AAC d'un segment dépasse un peu)
@@ -64,11 +69,11 @@ def main():
         check=True,
     )
     after = probe_frames(tmp)
-    if after != total:
+    if after != expected:
         os.remove(tmp)
-        raise SystemExit(f"nombre d'images différent ({after} au lieu de {total}) : vidéo d'origine conservée")
+        raise SystemExit(f"nombre d'images différent ({after} au lieu de {expected}) : vidéo d'origine conservée")
     os.replace(tmp, base)
-    print(f"{base} : {len(segs)} portion(s) recollée(s), {total} images")
+    print(f"{base} : {len(segs)} portion(s) recollée(s), {after} images")
 
 
 if __name__ == "__main__":

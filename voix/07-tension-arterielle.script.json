@@ -1,5 +1,5 @@
 [
-	{"id": "intro", "text": "C'est quoi, la tension artérielle ?"},
+	{"id": "intro", "text": "Ton patient a mal à la tête, des vertiges… et ses oreilles bourdonnent. Qu'est-ce qu'il a ? Une hypertension : sa tension est trop haute ! Et un simple brassard te l'aurait dit. Mais au fait… c'est quoi, la tension artérielle ?"},
 	{"id": "def", "text": "La tension artérielle, ou pression artérielle, c'est la pression du sang sur la paroi des artères. Elle se mesure en millimètres de mercure."},
 	{"id": "mesure", "text": "Pour la prendre, on utilise un tensiomètre : le brassard se place autour du bras, au niveau du cœur, chez un patient au repos."},
 	{"id": "chiffres", "text": "Le tensiomètre donne deux chiffres. Le premier, c'est la systolique : la pression quand le cœur se contracte. Le deuxième, c'est la diastolique : quand le cœur se relâche."},

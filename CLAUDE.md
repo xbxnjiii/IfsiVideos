@@ -68,8 +68,12 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
 - ≈ 1 min – 1 min 20, une notion par scène, barre de progression des notions, **récap rapide** à la fin
   (la voix résume, une fiche se construit ligne par ligne, puces cochées), pas d'appel à commenter.
 - **Pas de quiz** (ni annonce « petit test à la fin ») : retiré à la demande du propriétaire, ne plus en proposer.
-- Accroche = la question du sujet (« C'est quoi, la fréquence respiratoire ? »), éventuellement + une promesse
-  très courte (la FR garde la question seule : « comment la compter sans qu'il s'en rende compte » retiré).
+- **Accroche : ne plus commencer par « C'est quoi… ? »** (demandé : trop de vidéos démarraient pareil). Partir d'une
+  situation : le patient a des signes (au mot près, pastilles `CauseChip`), « Qu'est-ce qu'il a ? » déjà à l'écran sur
+  l'image 0, révélation (flash rose + secousse), le geste qui l'aurait montré, **puis** « Mais au fait… c'est quoi … ? ».
+  Modèle : accroche de `Tension-Arterielle` (« Ton patient a mal à la tête, des vertiges… et ses oreilles bourdonnent.
+  Qu'est-ce qu'il a ? Une hypertension : sa tension est trop haute ! Et un simple brassard te l'aurait dit. Mais au
+  fait… c'est quoi, la tension artérielle ? »). Les vidéos déjà publiées gardent leur accroche.
 - Récap : **pas de tampon final** (« Pro du souffle », « Pro du pouls » retirés à la demande) — confettis + mascotte suffisent.
 - Rester simple et factuel : pas d'astuces « de terrain » mises en scène (retirées de la FR : compter
   discrètement, faire semblant de prendre le pouls). Expliquer chaque qualificatif entre parenthèses
@@ -222,5 +226,11 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   --frames=<début>-<fin>` pour chaque portion où le texte ou le son change (un élément qui reste affiché jusqu'à la
   fin de sa scène compte jusqu'à la fin de la transition suivante) ; puis `npm run splice -- out/<vidéo>.mp4
   seg.mp4@<début> …` (image + son, durée inchangée, vérifie le nombre d'images).
+- **Nouvelle accroche sur une vidéo déjà rendue** (fait pour la TA) : `npm run voice -- voix/<n>-x.script.json <épisode>
+  --only intro` refait la voix de cette seule partie (même niveau) ; le reste du son est gardé à l'échantillon près et
+  décalé d'un nombre entier d'images N (affiché). Réécrire `Hook` + les étapes de mascotte de l'accroche, puis rendre la
+  tête jusqu'à ~15 images après le début de la scène 2 (transition finie, mascotte cachée) : `--frames=0-<début2+15>`,
+  et `npm run splice -- out/<vidéo>.mp4 tete.mp4@0:<ancien début2+16>` (la suite de l'ancienne vidéo est gardée ;
+  vérifier le raccord : PSNR ≈ 50 dB entre la nouvelle image et l'ancienne).
 - Livrer : **le MP4 seul** dans `out/` (non versionné). Plus de version web ni de couverture (demandé).
   Faire le ménage de `out/` (QA, anciens rendus) pour ne garder que les vidéos finales.

@@ -50,10 +50,11 @@ export const Manometer: React.FC<{value: number; size?: number; tone?: string | 
 };
 
 /** Lecture du tensiomètre : « 120 / 80 mmHg », chiffre expliqué en surbrillance (`hi` = 'sys' | 'dia'). */
-export const BPReadout: React.FC<{sys: number; dia: number; size?: number; hi?: 'sys' | 'dia' | null; tone?: string | null; labels?: boolean; unit?: boolean}> = ({
+export const BPReadout: React.FC<{sys: number; dia: number; size?: number; hi?: 'sys' | 'dia' | null; tone?: string | null; labels?: boolean; unit?: boolean; diaPlaces?: number}> = ({
 	sys,
 	dia,
 	size = 130,
+	diaPlaces = 2,
 	hi = null,
 	tone = null,
 	labels = true,
@@ -71,7 +72,7 @@ export const BPReadout: React.FC<{sys: number; dia: number; size?: number; hi?: 
 		<div style={{display: 'flex', alignItems: 'flex-start', gap: size * 0.05}}>
 			{cell(sys, hi === 'sys', 'systolique', 3)}
 			<div style={{fontFamily: FONT.title, fontWeight: 900, fontSize: size * 0.92, color: LPI.navy, lineHeight: 1.1}}>/</div>
-			{cell(dia, hi === 'dia', 'diastolique', 2)}
+			{cell(dia, hi === 'dia', 'diastolique', diaPlaces)}
 			{unit ? <div style={{fontFamily: FONT.title, fontWeight: 800, fontSize: size * 0.3, color: LPI.blue, marginTop: size * 0.62, marginLeft: 8}}>mmHg</div> : null}
 		</div>
 	);
