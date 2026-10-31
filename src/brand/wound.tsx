@@ -556,11 +556,11 @@ export const WoundTool: React.FC<{kind: ToolKind; size?: number; bite?: number}>
 	const body = {
 		gravel: (
 			<>
-				<path d="M10 120 Q100 96 190 120 V170 H10 Z" fill={alpha(N, 0.75)} {...s} />
-				{[30, 62, 96, 130, 160, 46, 112, 148].map((x, i) => (
-					<circle key={i} cx={x} cy={i < 5 ? 132 : 154} r={9 + (i % 3) * 3} fill={i % 2 ? LPI.sky : LPI.paper} stroke={N} strokeWidth={4} />
-				))}
-				<path d="M30 70 H110 M50 90 H140" stroke={LPI.blue} strokeWidth={8} strokeLinecap="round" />
+				<path d="M40 66 H150 M134 50 L152 66 L134 82" fill="none" stroke={N} strokeWidth={9} strokeLinecap="round" strokeLinejoin="round" />
+				<path d="M8 120 H48 M0 146 H36 M14 170 H44" stroke={alpha(N, 0.4)} strokeWidth={7} strokeLinecap="round" />
+				<path d="M58 176 L64 140 L92 126 L114 146 L108 178 Z" fill={LPI.sky} {...s} />
+				<path d="M114 178 L122 150 L148 144 L162 166 L152 180 Z" fill={LPI.paper} {...s} />
+				<path d="M162 180 L170 160 L190 158 L198 180 Z" fill={LPI.sky} {...s} />
 			</>
 		),
 		knife: (
