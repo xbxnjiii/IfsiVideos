@@ -1,0 +1,11 @@
+[
+	{"id": "intro", "rate": "+6%", "text": "Deux patients. L'un tousse… l'autre a l'air en pleine forme. Lequel peut te transmettre un microbe ? Les deux ! Et impossible de le voir. Alors, avec tout patient et à chaque soin, on applique les mêmes règles : les précautions standard !"},
+	{"id": "regle", "rate": "+0%", "text": "Ce sont six réflexes, avec tous les patients, même ceux qui ont l'air en pleine forme. Ils protègent le patient… et ils te protègent, toi."},
+	{"id": "mains", "rate": "+0%", "text": "Un : l'hygiène des mains. Une friction hydro-alcoolique, les avant-bras dégagés, les ongles courts et sans vernis, et aucun bijou."},
+	{"id": "epi", "rate": "+0%", "text": "Deux : les équipements de protection. Des gants s'il y a un risque de contact avec du sang, ou un autre liquide du corps. Un tablier si le soin mouille ou salit. Et un masque avec des lunettes, s'il y a un risque de projection, quand ça peut gicler."},
+	{"id": "toux", "rate": "+0%", "text": "Trois : un patient qui tousse porte un masque. Il tousse dans son coude, et il jette son mouchoir tout de suite."},
+	{"id": "aes", "rate": "+0%", "text": "Quatre : les piqûres. On ne recapuchonne jamais une aiguille : elle va directement dans le collecteur, posé à portée de main. Et si tu te piques : tu laves, tu désinfectes, et tu consultes très vite."},
+	{"id": "excreta", "rate": "+0%", "text": "Cinq : les urines et les selles. Des gants et un tablier, et jamais de douchette pour rincer le bassin : ça éclabousse partout."},
+	{"id": "env", "rate": "+0%", "text": "Six : l'environnement. Les surfaces et le matériel sont nettoyés et désinfectés, et le linge sale comme les déchets partent dans la bonne filière."},
+	{"id": "outro", "rate": "+0%", "text": "Petit récap ! Les mains, les protections, et le masque pour celui qui tousse. Les aiguilles au collecteur, les urines et les selles sans éclaboussures, et un environnement propre. Six réflexes, pour tous les patients, à chaque soin !"}
+]

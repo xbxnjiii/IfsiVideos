@@ -40,6 +40,8 @@ import * as prisedesang from '../../src/videos/prise-de-sang/mascot';
 import * as prisedesangTL from '../../src/videos/prise-de-sang/timeline';
 import * as hygienemains from '../../src/videos/hygiene-mains/mascot';
 import * as hygienemainsTL from '../../src/videos/hygiene-mains/timeline';
+import * as precautionsstandard from '../../src/videos/precautions-standard/mascot';
+import * as precautionsstandardTL from '../../src/videos/precautions-standard/timeline';
 
 const VIDEOS: Record<string, [typeof constantes.MASCOT, typeof constantesTL.TL]> = {
 	constantes: [constantes.MASCOT, constantesTL.TL],
@@ -61,6 +63,7 @@ const VIDEOS: Record<string, [typeof constantes.MASCOT, typeof constantesTL.TL]>
 	bpco: [bpco.MASCOT, bpcoTL.TL],
 	'prise-de-sang': [prisedesang.MASCOT, prisedesangTL.TL],
 	'hygiene-mains': [hygienemains.MASCOT, hygienemainsTL.TL],
+	'precautions-standard': [precautionsstandard.MASCOT, precautionsstandardTL.TL],
 };
 const name = process.argv[2] ?? 'constantes';
 const [MASCOT, TL] = VIDEOS[name];

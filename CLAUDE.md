@@ -187,6 +187,19 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   qui arrive / disparaît), `Sparkles` (mains propres), `Loupe`, `Drop` (sang / urines / salive), `Bed`, `BedTable`,
   `IvPump`, `Faucet` (eau + savon), `StepTracker` ; + `Hand` (gantée ou non), `ShaBottle`, `Arm` de `sampling.tsx`.
 
+- 2e modèle « liste à retenir » : `Precautions-Standard` (`src/videos/precautions-standard/`, SF2H 2017) — accroche
+  **« deux patients »** : « L'un tousse… l'autre a l'air en pleine forme. Lequel peut te transmettre un microbe ? Les
+  deux ! Et impossible de le voir. » (image 0 : les deux patients + « Lequel peut te contaminer ? » ; microbes révélés sur
+  les deux, flash ; même bouclier pour chacun) → « 6 réflexes, pour tous » (même ceux en pleine forme ; protège le patient
+  et toi) → un réflexe par scène (gabarit `Reflex` + suivi `ReflexTracker` des 6) : mains (SHA, avant-bras dégagés,
+  ongles courts sans vernis, aucun bijou), EPI (gants si sang / liquide du corps, tablier si soin mouillant ou souillant,
+  masque + lunettes si risque de projection), patient qui tousse (masque, coude, mouchoir jeté), piqûres / AES (jamais
+  recapuchonner, collecteur à portée de main ; si piqûre : laver, désinfecter, consulter vite), excreta (gants, tablier,
+  pas de douchette : lave-bassin), environnement (surfaces + matériel nettoyés et désinfectés, linge et déchets dans la
+  bonne filière) → récap. Briques `precautions.tsx` : `Wear` (masque, lunettes, tablier enfilés sur le `Patient`),
+  `CoughSpray`, `Syringe` + `NeedleCap`, `Bedpan`, `ShowerHead`, `SprayBottle`, `LaundryBag`, `Tissue`, `Bin`,
+  `WatchShape` / `RingShape` (sur `Hand`), `ReflexIcon`, `ReflexTracker`.
+
 ## Format « inventaire » (le matériel d'un soin, modèle `Prise-De-Sang`, `src/videos/prise-de-sang/`)
 
 - Demandé : l'accroche pose **tout le matériel devant nos yeux** (plateau en 3 familles numérotées, les 13 objets tombent

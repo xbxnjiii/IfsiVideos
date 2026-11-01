@@ -40,6 +40,8 @@ import {PriseDeSang, PriseDeSangProps} from './videos/prise-de-sang/PriseDeSang'
 import {TL as PRISE_DE_SANG_TL} from './videos/prise-de-sang/timeline';
 import {HygieneMains, HygieneMainsProps} from './videos/hygiene-mains/HygieneMains';
 import {TL as HYGIENE_MAINS_TL} from './videos/hygiene-mains/timeline';
+import {PrecautionsStandard, PrecautionsStandardProps} from './videos/precautions-standard/PrecautionsStandard';
+import {TL as PRECAUTIONS_STANDARD_TL} from './videos/precautions-standard/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -236,6 +238,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies HygieneMainsProps}
+		/>
+		{/* 22 · Precautions-Standard */}
+		<Composition
+			id="Precautions-Standard"
+			component={PrecautionsStandard}
+			durationInFrames={PRECAUTIONS_STANDARD_TL.total}
+			fps={PRECAUTIONS_STANDARD_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies PrecautionsStandardProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition
