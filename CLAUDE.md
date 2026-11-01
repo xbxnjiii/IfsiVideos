@@ -173,6 +173,20 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
 - Voix : « Cette plaie ne fait pas mal » est entendu « Cette **plaine** fait pas mal » → « Cette plaie… ne fait pas mal »
   (une pause casse la liaison) ; relire l'accroche au modèle `medium` de faster-whisper.
 
+## Format « liste à retenir » (des règles numérotées, modèle `Hygiene-Mains`, `src/videos/hygiene-mains/`)
+
+- « Les 5 indications de l'hygiène des mains » (OMS) : accroche-choc proposée par le propriétaire (« Tes mains transportent
+  des milliers de microbes… et tu ne vois absolument rien. ») + révélation (une loupe glisse sur la main, la caméra plonge
+  dedans : « les voilà ! »), transmission au patient, STOP, « 1 · 2 · 3 · 4 · 5 », titre. Puis une **astuce pour retenir**
+  avant la liste (« 2 avant · 3 après » : deux cartes bleue / rose), **une scène par élément** avec le même gabarit
+  (`Indication` dans `Scenes.tsx` : titre, socle illustré, pastille AVANT / APRÈS + « protège : … », suivi `StepTracker`
+  des 5 en bas), le bon geste (friction SHA 20 – 30 s jusqu'à mains sèches, eau + savon si mains visiblement sales), récap.
+  Voix : accroche `+6%`, notions `+0%` (rythme d'apprentissage), ≈ 1 min 32. « On zoome » était entendu « On boom » →
+  « On regarde de plus près ».
+- Briques `hands.tsx` : `Microbe` (rond, cils, yeux : rose = les tiens, bleu clair = ceux du patient), `Swarm` (essaim
+  qui arrive / disparaît), `Sparkles` (mains propres), `Loupe`, `Drop` (sang / urines / salive), `Bed`, `BedTable`,
+  `IvPump`, `Faucet` (eau + savon), `StepTracker` ; + `Hand` (gantée ou non), `ShaBottle`, `Arm` de `sampling.tsx`.
+
 ## Format « inventaire » (le matériel d'un soin, modèle `Prise-De-Sang`, `src/videos/prise-de-sang/`)
 
 - Demandé : l'accroche pose **tout le matériel devant nos yeux** (plateau en 3 familles numérotées, les 13 objets tombent

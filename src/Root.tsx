@@ -38,6 +38,8 @@ import {Bpco, BpcoProps} from './videos/bpco/Bpco';
 import {TL as BPCO_TL} from './videos/bpco/timeline';
 import {PriseDeSang, PriseDeSangProps} from './videos/prise-de-sang/PriseDeSang';
 import {TL as PRISE_DE_SANG_TL} from './videos/prise-de-sang/timeline';
+import {HygieneMains, HygieneMainsProps} from './videos/hygiene-mains/HygieneMains';
+import {TL as HYGIENE_MAINS_TL} from './videos/hygiene-mains/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -224,6 +226,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies PriseDeSangProps}
+		/>
+		{/* 21 · Hygiene-Mains */}
+		<Composition
+			id="Hygiene-Mains"
+			component={HygieneMains}
+			durationInFrames={HYGIENE_MAINS_TL.total}
+			fps={HYGIENE_MAINS_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies HygieneMainsProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition

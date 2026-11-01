@@ -32,7 +32,8 @@
     "check:voice": "python3 scripts/voice/check_lang.py",
     "qa": "bash scripts/qa/qa.sh",
     "new": "python3 scripts/new-video.py",
-    "render:prise-de-sang": "remotion render Prise-De-Sang out/20-prise-de-sang.mp4"
+    "render:prise-de-sang": "remotion render Prise-De-Sang out/20-prise-de-sang.mp4",
+    "render:hygiene-mains": "remotion render Hygiene-Mains out/21-hygiene-mains.mp4"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.532",

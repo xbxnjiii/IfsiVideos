@@ -1,0 +1,1328 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 88.568,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.059,
+   "end": 12.288
+  },
+  {
+   "id": "regle",
+   "start": 13.249,
+   "end": 20.787
+  },
+  {
+   "id": "un",
+   "start": 21.742,
+   "end": 29.217
+  },
+  {
+   "id": "deux",
+   "start": 30.214,
+   "end": 39.239
+  },
+  {
+   "id": "trois",
+   "start": 40.194,
+   "end": 50.081
+  },
+  {
+   "id": "quatre",
+   "start": 51.04,
+   "end": 57.128
+  },
+  {
+   "id": "cinq",
+   "start": 58.083,
+   "end": 64.358
+  },
+  {
+   "id": "geste",
+   "start": 65.316,
+   "end": 75.091
+  },
+  {
+   "id": "outro",
+   "start": 76.042,
+   "end": 88.23
+  }
+ ],
+ "words": [
+  {
+   "text": "Tes",
+   "start": 0.059,
+   "end": 0.177
+  },
+  {
+   "text": "mains",
+   "start": 0.177,
+   "end": 0.342
+  },
+  {
+   "text": "transportent",
+   "start": 0.342,
+   "end": 0.861
+  },
+  {
+   "text": "des",
+   "start": 0.861,
+   "end": 0.955
+  },
+  {
+   "text": "milliers",
+   "start": 0.955,
+   "end": 1.191
+  },
+  {
+   "text": "de",
+   "start": 1.191,
+   "end": 1.285
+  },
+  {
+   "text": "microbes…",
+   "start": 1.285,
+   "end": 1.745
+  },
+  {
+   "text": "et",
+   "start": 2.087,
+   "end": 2.111
+  },
+  {
+   "text": "tu",
+   "start": 2.111,
+   "end": 2.217
+  },
+  {
+   "text": "ne",
+   "start": 2.217,
+   "end": 2.288
+  },
+  {
+   "text": "vois",
+   "start": 2.288,
+   "end": 2.417
+  },
+  {
+   "text": "absolument",
+   "start": 2.417,
+   "end": 2.901
+  },
+  {
+   "text": "rien.",
+   "start": 2.901,
+   "end": 3.231
+  },
+  {
+   "text": "On",
+   "start": 3.552,
+   "end": 3.706
+  },
+  {
+   "text": "regarde",
+   "start": 3.706,
+   "end": 4.083
+  },
+  {
+   "text": "de",
+   "start": 4.083,
+   "end": 4.166
+  },
+  {
+   "text": "plus",
+   "start": 4.166,
+   "end": 4.319
+  },
+  {
+   "text": "près…",
+   "start": 4.319,
+   "end": 4.637
+  },
+  {
+   "text": "et",
+   "start": 4.956,
+   "end": 5.026
+  },
+  {
+   "text": "les",
+   "start": 5.026,
+   "end": 5.109
+  },
+  {
+   "text": "voilà !",
+   "start": 5.109,
+   "end": 5.486
+  },
+  {
+   "text": "À",
+   "start": 5.805,
+   "end": 5.946
+  },
+  {
+   "text": "chaque",
+   "start": 5.946,
+   "end": 6.17
+  },
+  {
+   "text": "soin,",
+   "start": 6.17,
+   "end": 6.489
+  },
+  {
+   "text": "ils",
+   "start": 6.772,
+   "end": 6.842
+  },
+  {
+   "text": "peuvent",
+   "start": 6.842,
+   "end": 7.031
+  },
+  {
+   "text": "passer",
+   "start": 7.031,
+   "end": 7.291
+  },
+  {
+   "text": "à",
+   "start": 7.291,
+   "end": 7.338
+  },
+  {
+   "text": "ton",
+   "start": 7.338,
+   "end": 7.467
+  },
+  {
+   "text": "patient.",
+   "start": 7.467,
+   "end": 7.916
+  },
+  {
+   "text": "Pour",
+   "start": 8.267,
+   "end": 8.361
+  },
+  {
+   "text": "les",
+   "start": 8.361,
+   "end": 8.432
+  },
+  {
+   "text": "arrêter,",
+   "start": 8.432,
+   "end": 8.962
+  },
+  {
+   "text": "il",
+   "start": 9.316,
+   "end": 9.399
+  },
+  {
+   "text": "y",
+   "start": 9.399,
+   "end": 9.446
+  },
+  {
+   "text": "a",
+   "start": 9.446,
+   "end": 9.493
+  },
+  {
+   "text": "cinq",
+   "start": 9.493,
+   "end": 9.752
+  },
+  {
+   "text": "moments",
+   "start": 9.752,
+   "end": 9.988
+  },
+  {
+   "text": "à",
+   "start": 9.988,
+   "end": 10.024
+  },
+  {
+   "text": "connaître :",
+   "start": 10.024,
+   "end": 10.483
+  },
+  {
+   "text": "les",
+   "start": 10.743,
+   "end": 10.814
+  },
+  {
+   "text": "cinq",
+   "start": 10.814,
+   "end": 11.061
+  },
+  {
+   "text": "indications",
+   "start": 11.061,
+   "end": 11.533
+  },
+  {
+   "text": "de",
+   "start": 11.533,
+   "end": 11.616
+  },
+  {
+   "text": "l'hygiène",
+   "start": 11.616,
+   "end": 11.934
+  },
+  {
+   "text": "des",
+   "start": 11.934,
+   "end": 12.028
+  },
+  {
+   "text": "mains !",
+   "start": 12.028,
+   "end": 12.288
+  },
+  {
+   "text": "Pour",
+   "start": 13.249,
+   "end": 13.361
+  },
+  {
+   "text": "les",
+   "start": 13.361,
+   "end": 13.424
+  },
+  {
+   "text": "retenir,",
+   "start": 13.424,
+   "end": 13.974
+  },
+  {
+   "text": "c'est",
+   "start": 14.199,
+   "end": 14.336
+  },
+  {
+   "text": "simple :",
+   "start": 14.336,
+   "end": 14.824
+  },
+  {
+   "text": "deux",
+   "start": 15.124,
+   "end": 15.261
+  },
+  {
+   "text": "avant,",
+   "start": 15.261,
+   "end": 15.711
+  },
+  {
+   "text": "pour",
+   "start": 15.961,
+   "end": 16.074
+  },
+  {
+   "text": "protéger",
+   "start": 16.074,
+   "end": 16.424
+  },
+  {
+   "text": "le",
+   "start": 16.424,
+   "end": 16.499
+  },
+  {
+   "text": "patient.",
+   "start": 16.499,
+   "end": 16.974
+  },
+  {
+   "text": "Et",
+   "start": 17.337,
+   "end": 17.436
+  },
+  {
+   "text": "trois",
+   "start": 17.436,
+   "end": 17.649
+  },
+  {
+   "text": "après,",
+   "start": 17.649,
+   "end": 18.149
+  },
+  {
+   "text": "pour",
+   "start": 18.412,
+   "end": 18.549
+  },
+  {
+   "text": "te",
+   "start": 18.549,
+   "end": 18.662
+  },
+  {
+   "text": "protéger,",
+   "start": 18.662,
+   "end": 19.249
+  },
+  {
+   "text": "toi,",
+   "start": 19.486,
+   "end": 19.787
+  },
+  {
+   "text": "et",
+   "start": 20.099,
+   "end": 20.124
+  },
+  {
+   "text": "l'environnement.",
+   "start": 20.124,
+   "end": 20.787
+  },
+  {
+   "text": "Un :",
+   "start": 21.742,
+   "end": 22.055
+  },
+  {
+   "text": "avant",
+   "start": 22.305,
+   "end": 22.542
+  },
+  {
+   "text": "de",
+   "start": 22.542,
+   "end": 22.642
+  },
+  {
+   "text": "toucher",
+   "start": 22.642,
+   "end": 22.892
+  },
+  {
+   "text": "le",
+   "start": 22.892,
+   "end": 22.98
+  },
+  {
+   "text": "patient.",
+   "start": 22.98,
+   "end": 23.492
+  },
+  {
+   "text": "Tes",
+   "start": 23.829,
+   "end": 23.98
+  },
+  {
+   "text": "mains",
+   "start": 23.98,
+   "end": 24.154
+  },
+  {
+   "text": "arrivent",
+   "start": 24.154,
+   "end": 24.404
+  },
+  {
+   "text": "du",
+   "start": 24.404,
+   "end": 24.492
+  },
+  {
+   "text": "couloir,",
+   "start": 24.492,
+   "end": 25.055
+  },
+  {
+   "text": "des",
+   "start": 25.417,
+   "end": 25.492
+  },
+  {
+   "text": "poignées",
+   "start": 25.492,
+   "end": 25.779
+  },
+  {
+   "text": "de",
+   "start": 25.779,
+   "end": 25.892
+  },
+  {
+   "text": "porte,",
+   "start": 25.892,
+   "end": 26.342
+  },
+  {
+   "text": "de",
+   "start": 26.579,
+   "end": 26.654
+  },
+  {
+   "text": "ton",
+   "start": 26.654,
+   "end": 26.779
+  },
+  {
+   "text": "téléphone…",
+   "start": 26.779,
+   "end": 27.454
+  },
+  {
+   "text": "Elles",
+   "start": 27.792,
+   "end": 27.967
+  },
+  {
+   "text": "ne",
+   "start": 27.967,
+   "end": 28.067
+  },
+  {
+   "text": "doivent",
+   "start": 28.067,
+   "end": 28.317
+  },
+  {
+   "text": "rien",
+   "start": 28.317,
+   "end": 28.517
+  },
+  {
+   "text": "lui",
+   "start": 28.517,
+   "end": 28.667
+  },
+  {
+   "text": "apporter.",
+   "start": 28.667,
+   "end": 29.217
+  },
+  {
+   "text": "Deux :",
+   "start": 30.214,
+   "end": 30.552
+  },
+  {
+   "text": "avant",
+   "start": 30.752,
+   "end": 31.014
+  },
+  {
+   "text": "un",
+   "start": 31.014,
+   "end": 31.076
+  },
+  {
+   "text": "geste",
+   "start": 31.076,
+   "end": 31.314
+  },
+  {
+   "text": "aseptique,",
+   "start": 31.314,
+   "end": 31.864
+  },
+  {
+   "text": "c'est-à-dire",
+   "start": 32.164,
+   "end": 32.589
+  },
+  {
+   "text": "un",
+   "start": 32.589,
+   "end": 32.664
+  },
+  {
+   "text": "soin",
+   "start": 32.664,
+   "end": 32.889
+  },
+  {
+   "text": "qui",
+   "start": 32.889,
+   "end": 33.052
+  },
+  {
+   "text": "entre",
+   "start": 33.052,
+   "end": 33.276
+  },
+  {
+   "text": "dans",
+   "start": 33.276,
+   "end": 33.364
+  },
+  {
+   "text": "le",
+   "start": 33.364,
+   "end": 33.464
+  },
+  {
+   "text": "corps :",
+   "start": 33.464,
+   "end": 33.764
+  },
+  {
+   "text": "une",
+   "start": 34.252,
+   "end": 34.327
+  },
+  {
+   "text": "injection,",
+   "start": 34.327,
+   "end": 34.889
+  },
+  {
+   "text": "un",
+   "start": 35.102,
+   "end": 35.164
+  },
+  {
+   "text": "pansement,",
+   "start": 35.164,
+   "end": 35.677
+  },
+  {
+   "text": "une",
+   "start": 35.852,
+   "end": 35.952
+  },
+  {
+   "text": "sonde.",
+   "start": 35.952,
+   "end": 36.452
+  },
+  {
+   "text": "Aucun",
+   "start": 36.789,
+   "end": 37.102
+  },
+  {
+   "text": "microbe",
+   "start": 37.102,
+   "end": 37.552
+  },
+  {
+   "text": "ne",
+   "start": 37.552,
+   "end": 37.651
+  },
+  {
+   "text": "doit",
+   "start": 37.651,
+   "end": 37.776
+  },
+  {
+   "text": "entrer,",
+   "start": 37.776,
+   "end": 38.252
+  },
+  {
+   "text": "même",
+   "start": 38.577,
+   "end": 38.752
+  },
+  {
+   "text": "les",
+   "start": 38.752,
+   "end": 38.852
+  },
+  {
+   "text": "siens !",
+   "start": 38.852,
+   "end": 39.239
+  },
+  {
+   "text": "Trois :",
+   "start": 40.194,
+   "end": 40.532
+  },
+  {
+   "text": "après",
+   "start": 40.944,
+   "end": 41.219
+  },
+  {
+   "text": "un",
+   "start": 41.219,
+   "end": 41.306
+  },
+  {
+   "text": "risque",
+   "start": 41.306,
+   "end": 41.556
+  },
+  {
+   "text": "de",
+   "start": 41.556,
+   "end": 41.644
+  },
+  {
+   "text": "contact",
+   "start": 41.644,
+   "end": 42.094
+  },
+  {
+   "text": "avec",
+   "start": 42.094,
+   "end": 42.306
+  },
+  {
+   "text": "un",
+   "start": 42.306,
+   "end": 42.344
+  },
+  {
+   "text": "liquide",
+   "start": 42.344,
+   "end": 42.669
+  },
+  {
+   "text": "biologique :",
+   "start": 42.669,
+   "end": 43.319
+  },
+  {
+   "text": "du",
+   "start": 43.756,
+   "end": 43.856
+  },
+  {
+   "text": "sang,",
+   "start": 43.856,
+   "end": 44.206
+  },
+  {
+   "text": "des",
+   "start": 44.494,
+   "end": 44.594
+  },
+  {
+   "text": "urines,",
+   "start": 44.594,
+   "end": 45.094
+  },
+  {
+   "text": "de",
+   "start": 45.319,
+   "end": 45.381
+  },
+  {
+   "text": "la",
+   "start": 45.381,
+   "end": 45.481
+  },
+  {
+   "text": "salive…",
+   "start": 45.481,
+   "end": 46.044
+  },
+  {
+   "text": "Même",
+   "start": 46.419,
+   "end": 46.619
+  },
+  {
+   "text": "si",
+   "start": 46.619,
+   "end": 46.731
+  },
+  {
+   "text": "tu",
+   "start": 46.731,
+   "end": 46.844
+  },
+  {
+   "text": "portais",
+   "start": 46.844,
+   "end": 47.119
+  },
+  {
+   "text": "des",
+   "start": 47.119,
+   "end": 47.244
+  },
+  {
+   "text": "gants :",
+   "start": 47.244,
+   "end": 47.532
+  },
+  {
+   "text": "tu",
+   "start": 47.782,
+   "end": 47.881
+  },
+  {
+   "text": "les",
+   "start": 47.881,
+   "end": 47.969
+  },
+  {
+   "text": "retires,",
+   "start": 47.969,
+   "end": 48.507
+  },
+  {
+   "text": "et",
+   "start": 48.844,
+   "end": 48.869
+  },
+  {
+   "text": "tu",
+   "start": 48.869,
+   "end": 48.981
+  },
+  {
+   "text": "te",
+   "start": 48.981,
+   "end": 49.094
+  },
+  {
+   "text": "désinfectes",
+   "start": 49.094,
+   "end": 49.656
+  },
+  {
+   "text": "les",
+   "start": 49.656,
+   "end": 49.794
+  },
+  {
+   "text": "mains.",
+   "start": 49.794,
+   "end": 50.081
+  },
+  {
+   "text": "Quatre :",
+   "start": 51.04,
+   "end": 51.49
+  },
+  {
+   "text": "après",
+   "start": 51.815,
+   "end": 51.99
+  },
+  {
+   "text": "avoir",
+   "start": 51.99,
+   "end": 52.227
+  },
+  {
+   "text": "touché",
+   "start": 52.227,
+   "end": 52.503
+  },
+  {
+   "text": "le",
+   "start": 52.503,
+   "end": 52.602
+  },
+  {
+   "text": "patient.",
+   "start": 52.602,
+   "end": 53.128
+  },
+  {
+   "text": "Cette",
+   "start": 53.477,
+   "end": 53.715
+  },
+  {
+   "text": "fois,",
+   "start": 53.715,
+   "end": 54.003
+  },
+  {
+   "text": "c'est",
+   "start": 54.328,
+   "end": 54.44
+  },
+  {
+   "text": "pour",
+   "start": 54.44,
+   "end": 54.578
+  },
+  {
+   "text": "te",
+   "start": 54.578,
+   "end": 54.665
+  },
+  {
+   "text": "protéger,",
+   "start": 54.665,
+   "end": 55.253
+  },
+  {
+   "text": "toi…",
+   "start": 55.465,
+   "end": 55.765
+  },
+  {
+   "text": "et",
+   "start": 56.09,
+   "end": 56.178
+  },
+  {
+   "text": "tous",
+   "start": 56.178,
+   "end": 56.29
+  },
+  {
+   "text": "les",
+   "start": 56.29,
+   "end": 56.378
+  },
+  {
+   "text": "patients",
+   "start": 56.378,
+   "end": 56.678
+  },
+  {
+   "text": "suivants.",
+   "start": 56.678,
+   "end": 57.128
+  },
+  {
+   "text": "Cinq :",
+   "start": 58.083,
+   "end": 58.533
+  },
+  {
+   "text": "après",
+   "start": 58.758,
+   "end": 58.933
+  },
+  {
+   "text": "avoir",
+   "start": 58.933,
+   "end": 59.12
+  },
+  {
+   "text": "touché",
+   "start": 59.12,
+   "end": 59.408
+  },
+  {
+   "text": "son",
+   "start": 59.408,
+   "end": 59.52
+  },
+  {
+   "text": "environnement :",
+   "start": 59.52,
+   "end": 60.083
+  },
+  {
+   "text": "son",
+   "start": 60.52,
+   "end": 60.683
+  },
+  {
+   "text": "lit,",
+   "start": 60.683,
+   "end": 60.97
+  },
+  {
+   "text": "sa",
+   "start": 61.27,
+   "end": 61.395
+  },
+  {
+   "text": "table,",
+   "start": 61.395,
+   "end": 61.808
+  },
+  {
+   "text": "sa",
+   "start": 62.033,
+   "end": 62.17
+  },
+  {
+   "text": "pompe…",
+   "start": 62.17,
+   "end": 62.558
+  },
+  {
+   "text": "même",
+   "start": 62.808,
+   "end": 63.02
+  },
+  {
+   "text": "si",
+   "start": 63.02,
+   "end": 63.133
+  },
+  {
+   "text": "tu",
+   "start": 63.133,
+   "end": 63.245
+  },
+  {
+   "text": "ne",
+   "start": 63.258,
+   "end": 63.295
+  },
+  {
+   "text": "l'as",
+   "start": 63.295,
+   "end": 63.358
+  },
+  {
+   "text": "pas",
+   "start": 63.358,
+   "end": 63.47
+  },
+  {
+   "text": "touché,",
+   "start": 63.47,
+   "end": 63.895
+  },
+  {
+   "text": "lui.",
+   "start": 64.07,
+   "end": 64.358
+  },
+  {
+   "text": "Et",
+   "start": 65.316,
+   "end": 65.466
+  },
+  {
+   "text": "le",
+   "start": 65.479,
+   "end": 65.579
+  },
+  {
+   "text": "bon",
+   "start": 65.579,
+   "end": 65.716
+  },
+  {
+   "text": "geste ?",
+   "start": 65.716,
+   "end": 66.329
+  },
+  {
+   "text": "Une",
+   "start": 66.666,
+   "end": 66.854
+  },
+  {
+   "text": "friction",
+   "start": 66.854,
+   "end": 67.266
+  },
+  {
+   "text": "avec",
+   "start": 67.266,
+   "end": 67.454
+  },
+  {
+   "text": "la",
+   "start": 67.454,
+   "end": 67.541
+  },
+  {
+   "text": "solution",
+   "start": 67.541,
+   "end": 67.954
+  },
+  {
+   "text": "hydro-alcoolique,",
+   "start": 67.954,
+   "end": 68.803
+  },
+  {
+   "text": "pendant",
+   "start": 69.066,
+   "end": 69.341
+  },
+  {
+   "text": "vingt",
+   "start": 69.341,
+   "end": 69.466
+  },
+  {
+   "text": "à",
+   "start": 69.466,
+   "end": 69.516
+  },
+  {
+   "text": "trente",
+   "start": 69.516,
+   "end": 69.754
+  },
+  {
+   "text": "secondes,",
+   "start": 69.754,
+   "end": 70.166
+  },
+  {
+   "text": "jusqu'à",
+   "start": 70.441,
+   "end": 70.766
+  },
+  {
+   "text": "ce",
+   "start": 70.766,
+   "end": 70.816
+  },
+  {
+   "text": "que",
+   "start": 70.816,
+   "end": 70.879
+  },
+  {
+   "text": "les",
+   "start": 70.879,
+   "end": 70.979
+  },
+  {
+   "text": "mains",
+   "start": 70.979,
+   "end": 71.178
+  },
+  {
+   "text": "soient",
+   "start": 71.178,
+   "end": 71.329
+  },
+  {
+   "text": "bien",
+   "start": 71.329,
+   "end": 71.504
+  },
+  {
+   "text": "sèches.",
+   "start": 71.504,
+   "end": 71.991
+  },
+  {
+   "text": "Et",
+   "start": 72.329,
+   "end": 72.466
+  },
+  {
+   "text": "si",
+   "start": 72.466,
+   "end": 72.616
+  },
+  {
+   "text": "elles",
+   "start": 72.616,
+   "end": 72.691
+  },
+  {
+   "text": "sont",
+   "start": 72.691,
+   "end": 72.829
+  },
+  {
+   "text": "visiblement",
+   "start": 72.829,
+   "end": 73.341
+  },
+  {
+   "text": "sales :",
+   "start": 73.341,
+   "end": 73.779
+  },
+  {
+   "text": "de",
+   "start": 74.141,
+   "end": 74.241
+  },
+  {
+   "text": "l'eau",
+   "start": 74.241,
+   "end": 74.454
+  },
+  {
+   "text": "et",
+   "start": 74.454,
+   "end": 74.504
+  },
+  {
+   "text": "du",
+   "start": 74.504,
+   "end": 74.629
+  },
+  {
+   "text": "savon.",
+   "start": 74.629,
+   "end": 75.091
+  },
+  {
+   "text": "Petit",
+   "start": 76.042,
+   "end": 76.342
+  },
+  {
+   "text": "récap !",
+   "start": 76.342,
+   "end": 76.917
+  },
+  {
+   "text": "Deux",
+   "start": 77.305,
+   "end": 77.517
+  },
+  {
+   "text": "avant :",
+   "start": 77.517,
+   "end": 77.967
+  },
+  {
+   "text": "avant",
+   "start": 78.192,
+   "end": 78.417
+  },
+  {
+   "text": "le",
+   "start": 78.417,
+   "end": 78.505
+  },
+  {
+   "text": "patient,",
+   "start": 78.505,
+   "end": 79.005
+  },
+  {
+   "text": "et",
+   "start": 79.317,
+   "end": 79.38
+  },
+  {
+   "text": "avant",
+   "start": 79.38,
+   "end": 79.63
+  },
+  {
+   "text": "un",
+   "start": 79.63,
+   "end": 79.68
+  },
+  {
+   "text": "geste",
+   "start": 79.68,
+   "end": 79.93
+  },
+  {
+   "text": "aseptique.",
+   "start": 79.93,
+   "end": 80.63
+  },
+  {
+   "text": "Trois",
+   "start": 81.005,
+   "end": 81.217
+  },
+  {
+   "text": "après :",
+   "start": 81.217,
+   "end": 81.617
+  },
+  {
+   "text": "après",
+   "start": 81.98,
+   "end": 82.279
+  },
+  {
+   "text": "un",
+   "start": 82.279,
+   "end": 82.317
+  },
+  {
+   "text": "liquide",
+   "start": 82.317,
+   "end": 82.63
+  },
+  {
+   "text": "biologique,",
+   "start": 82.63,
+   "end": 83.267
+  },
+  {
+   "text": "après",
+   "start": 83.48,
+   "end": 83.654
+  },
+  {
+   "text": "le",
+   "start": 83.654,
+   "end": 83.73
+  },
+  {
+   "text": "patient,",
+   "start": 83.73,
+   "end": 84.217
+  },
+  {
+   "text": "et",
+   "start": 84.555,
+   "end": 84.605
+  },
+  {
+   "text": "après",
+   "start": 84.605,
+   "end": 84.842
+  },
+  {
+   "text": "son",
+   "start": 84.842,
+   "end": 84.967
+  },
+  {
+   "text": "environnement.",
+   "start": 84.967,
+   "end": 85.63
+  },
+  {
+   "text": "Cinq",
+   "start": 85.98,
+   "end": 86.292
+  },
+  {
+   "text": "moments…",
+   "start": 86.292,
+   "end": 86.705
+  },
+  {
+   "text": "et",
+   "start": 87.042,
+   "end": 87.105
+  },
+  {
+   "text": "les",
+   "start": 87.105,
+   "end": 87.192
+  },
+  {
+   "text": "microbes",
+   "start": 87.192,
+   "end": 87.592
+  },
+  {
+   "text": "ne",
+   "start": 87.592,
+   "end": 87.68
+  },
+  {
+   "text": "passent",
+   "start": 87.68,
+   "end": 87.904
+  },
+  {
+   "text": "plus !",
+   "start": 87.904,
+   "end": 88.23
+  }
+ ]
+}

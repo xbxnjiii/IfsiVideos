@@ -1,0 +1,11 @@
+[
+	{"id": "intro", "rate": "+6%", "text": "Tes mains transportent des milliers de microbes… et tu ne vois absolument rien. On regarde de plus près… et les voilà ! À chaque soin, ils peuvent passer à ton patient. Pour les arrêter, il y a cinq moments à connaître : les cinq indications de l'hygiène des mains !"},
+	{"id": "regle", "rate": "+0%", "text": "Pour les retenir, c'est simple : deux avant, pour protéger le patient. Et trois après, pour te protéger, toi, et l'environnement."},
+	{"id": "un", "rate": "+0%", "text": "Un : avant de toucher le patient. Tes mains arrivent du couloir, des poignées de porte, de ton téléphone… Elles ne doivent rien lui apporter."},
+	{"id": "deux", "rate": "+0%", "text": "Deux : avant un geste aseptique, c'est-à-dire un soin qui entre dans le corps : une injection, un pansement, une sonde. Aucun microbe ne doit entrer, même les siens !"},
+	{"id": "trois", "rate": "+0%", "text": "Trois : après un risque de contact avec un liquide biologique : du sang, des urines, de la salive… Même si tu portais des gants : tu les retires, et tu te désinfectes les mains."},
+	{"id": "quatre", "rate": "+0%", "text": "Quatre : après avoir touché le patient. Cette fois, c'est pour te protéger, toi… et tous les patients suivants."},
+	{"id": "cinq", "rate": "+0%", "text": "Cinq : après avoir touché son environnement : son lit, sa table, sa pompe… même si tu ne l'as pas touché, lui."},
+	{"id": "geste", "rate": "+0%", "text": "Et le bon geste ? Une friction avec la solution hydro-alcoolique, pendant vingt à trente secondes, jusqu'à ce que les mains soient bien sèches. Et si elles sont visiblement sales : de l'eau et du savon."},
+	{"id": "outro", "rate": "+0%", "text": "Petit récap ! Deux avant : avant le patient, et avant un geste aseptique. Trois après : après un liquide biologique, après le patient, et après son environnement. Cinq moments… et les microbes ne passent plus !"}
+]
