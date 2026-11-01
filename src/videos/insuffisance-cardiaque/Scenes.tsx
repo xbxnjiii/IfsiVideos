@@ -477,7 +477,7 @@ export const Def: React.FC = () => {
 		<AbsoluteFill>
 			<LiveBackground />
 			<Camera punches={[COEUR + 1, POMPER + 1, CORPS + 1, INFARCTUS + 1, HTA + 1]} strength={0.03}>
-				<Head kicker="L'insuffisance cardiaque" kAt={INSUF} title="Un cœur qui *pompe* *mal*" tAt={COEUR - 4} />
+				<Head kicker="L'insuffisance cardiaque" kAt={INSUF} title="Un cœur qui *pompe* *mal*" tAt={10} />
 				<Stage y={440} h={540} at={4} bumps={[POMPER, CORPS, INFARCTUS, HTA]}>
 					<ZoomCam keys={keys} w={936} h={540}>
 						<Man
@@ -774,10 +774,10 @@ export const Role: React.FC = () => {
 		<AbsoluteFill>
 			<LiveBackground />
 			<Camera punches={[PESER + 1, HEURE + 1, DEUX + 1, TROIS + 1, JOURS + 1, OEDEMES + 1, ESSOUF + 1]} shakes={[ALERTE + 1]} strength={0.03}>
-				<Head kicker="Ton réflexe" kAt={REFLEXE - 4} title="La *pesée* de chaque *jour*" tAt={PESER - 6} />
+				<Head kicker="Ton réflexe" kAt={REFLEXE - 4} title="La *pesée* de chaque *jour*" tAt={REFLEXE + 4} />
 				<Stage y={440} h={540} at={4} bumps={[PESER, DEUX, TROIS, ALERTE]}>
 					<ZoomCam keys={keys} w={936} h={540}>
-						<div style={{position: 'absolute', left: 40, top: 150, transform: `scale(${popAt(frame, PESER - 8)})`}}>
+						<div style={{position: 'absolute', left: 40, top: 150, transform: `scale(${popAt(frame, REFLEXE + 6)})`}}>
 							<BathScale value={kg} width={380} alert={frame >= JOURS ? 1 : 0} />
 						</div>
 						{frame >= JOUR - 4 ? (
@@ -814,7 +814,7 @@ export const Role: React.FC = () => {
 					<CheckChip at={ESSOUF - 2} label="l'essoufflement" size={40} />
 				</div>
 			</Camera>
-			<Sfx name="pop" at={PESER - 8} volume={0.1} />
+			<Sfx name="pop" at={REFLEXE + 6} volume={0.1} />
 			<Sfx name="tick" at={PESER + 16} volume={0.08} />
 			<Sfx name="tick" at={DEUX + 8} volume={0.08} />
 			<Sfx name="tick" at={TROIS + 8} volume={0.08} />
@@ -875,7 +875,7 @@ export const Traitement: React.FC = () => {
 		<AbsoluteFill>
 			<LiveBackground />
 			<Camera punches={[DIUR + 1, URINER + 1, MEDOC + 1, SOULAGENT + 1, PEU + 1, RETIENT + 1]} strength={0.03}>
-				<Head kicker="Le traitement" kAt={TRAIT - 2} title="*Vider* l'eau, *soulager* le cœur" tAt={DIUR - 8} size={84} />
+				<Head kicker="Le traitement" kAt={TRAIT - 2} title="*Vider* l'eau, *soulager* le cœur" tAt={TRAIT + 2} size={84} />
 				<Stage y={440} h={540} at={4} bumps={[DIUR, MEDOC, PEU]}>
 					<Box3 i={0} from={DIUR - 4} on={cur === 0 || all}>
 						<div style={{position: 'absolute', left: 0, right: 0, top: 18, display: 'flex', justifyContent: 'center', transform: `rotate(${Math.sin(frame / 8) * 8}deg)`}}>
@@ -977,7 +977,7 @@ export const Urgence: React.FC = () => {
 		<AbsoluteFill>
 			<LiveBackground />
 			<Camera punches={[OEDEME + 1, POUMON + 1, ETOUFFE + 1, MOUSSE + 1, ASSOIT + 1, OXY + 1, APPELLE + 1]} shakes={[INONDE + 2]} strength={0.04}>
-				<Head kicker="L'urgence" kAt={URG} title="L'œdème *aigu* du *poumon*" tAt={OEDEME - 6} size={84} />
+				<Head kicker="L'urgence" kAt={URG} title="L'œdème *aigu* du *poumon*" tAt={12} size={84} />
 				<Stage y={440} h={540} at={4} bumps={[INONDE, ETOUFFE, ASSOIT, OXY, APPELLE]}>
 					<ZoomCam keys={keys} w={936} h={540}>
 						<Man
