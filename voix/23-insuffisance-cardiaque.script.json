@@ -1,0 +1,10 @@
+[
+	{"id": "intro", "text": "Trois kilos en une semaine… alors qu'il mange moins. Il dort assis, avec trois oreillers. Et le soir, ses chevilles gonflent. Ce n'est pas l'âge : c'est son cœur qui s'épuise. C'est l'insuffisance cardiaque. Et si personne ne voit ces signes… ses poumons peuvent se noyer."},
+	{"id": "def", "text": "L'insuffisance cardiaque, c'est un cœur qui n'arrive plus à pomper assez de sang pour le corps. Souvent, il a été abîmé par un infarctus, ou épuisé par des années d'hypertension."},
+	{"id": "gauche", "text": "Quand le cœur gauche faiblit, le sang reflue vers les poumons : le patient s'essouffle, surtout allongé. On appelle ça l'orthopnée : il ne respire bien qu'assis."},
+	{"id": "droite", "text": "Quand le cœur droit faiblit, l'eau s'accumule dans le corps : les chevilles et les jambes gonflent, ce sont des œdèmes. Et le poids monte."},
+	{"id": "role", "text": "Ton réflexe : peser le patient chaque jour, à la même heure. Deux kilos de plus en trois jours ? On alerte ! Et tu surveilles aussi les œdèmes et l'essoufflement."},
+	{"id": "traitement", "text": "Le traitement : des diurétiques, pour faire uriner l'eau en trop, des médicaments qui soulagent le cœur, et peu de sel, parce que le sel retient l'eau."},
+	{"id": "urgence", "text": "L'urgence, c'est l'œdème aigu du poumon : l'eau inonde les poumons. Le patient étouffe, et crache une mousse rosée. On l'assoit, les jambes pendantes, on donne de l'oxygène, et on appelle tout de suite."},
+	{"id": "outro", "text": "Petit récap ! Un cœur qui pompe mal. À gauche, le patient s'essouffle ; à droite, il gonfle. Ton réflexe : la pesée de chaque jour. Et s'il étouffe, c'est l'urgence !"}
+]

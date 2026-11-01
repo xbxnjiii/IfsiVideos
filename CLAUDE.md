@@ -148,6 +148,16 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   `cannula` (lunettes à oxygène) ; icônes poussières, pollution, toux, crachats, soleil levant, seringue, inhalateur.
   Sigle en début de partie : « La {BPCO|B P C O}, c'est la… » (un « B P C O : bronchopneumopathie… » seul a été lu
   avec un accent étranger : détecté par la vérification de langue).
+- 5e modèle « pathologie » : `Insuffisance-Cardiaque` (`src/videos/insuffisance-cardiaque/`) — accroche **« 3 indices »** (style
+  nouveau, demandé : « qui préoccupe ») : « Trois kilos en une semaine… alors qu'il mange moins. Il dort assis, avec trois
+  oreillers. Et le soir, ses chevilles gonflent. Ce n'est pas l'âge : c'est son cœur qui s'épuise. C'est l'insuffisance
+  cardiaque. Et si personne ne voit ces signes… ses poumons peuvent se noyer. » (image 0 : pèse-personne « +3,0 kg » + « ? » ;
+  chaque indice « pop » puis file se ranger en pastille `CauseChip` ; fausse piste barrée ; les pastilles pointent vers le
+  cœur ; la menace finale = plongée dans le thorax, l'eau monte). Puis définition, cœur gauche (orthopnée), cœur droit
+  (œdèmes, godet, poids), la pesée quotidienne (+2 kg en 3 jours → alerte), traitement, OAP, récap. Briques `heartfail.tsx` :
+  `BathScale`, `PropUp` (0 → 3 oreillers), `Ankles` (`swell`, `press`, `dent`), `SaltShaker`, `Battery`, `SitLegsDown`,
+  `Foam` ; `Patient` : `flood` (œdème pulmonaire, avec `lungs`). Dans `Scenes.tsx` : `Man` (patient + calques : moitié du
+  cœur qui faiblit `side` G/D, reflux vers les poumons, gouttes qui descendent, mousse, cicatrice d'infarctus, pression).
 
 ## Format « série » (demandé : un sujet trop long = plusieurs parties, modèle `Plaies-1/2/3`)
 

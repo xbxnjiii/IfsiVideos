@@ -79,6 +79,8 @@ export type PatientProps = {
 	trapped?: number;
 	/** lunettes à oxygène (sonde nasale) ; l'oxygène y circule (0 → 1) */
 	cannula?: number;
+	/** œdème pulmonaire : l'eau monte dans les poumons (0 → 1, avec `lungs`) */
+	flood?: number;
 	/** bas du corps en fondu (par défaut) ; false pour poser des jambes dessous (`FullBody`) */
 	fade?: boolean;
 };
@@ -155,7 +157,7 @@ const SkinLayers: React.FC<{flush: number; pale: number; children: (fill: string
 	</>
 );
 
-export const Patient: React.FC<PatientProps> = ({size = 360, mood = 'calme', breath = 0, heart = 0, beat = 0, flow = 0, cuff = 0, press = 0, flush = 0, pale = 0, sweat = 0, pain = 0, dizzy = 0, droop = 0, armL = 0, armR = 0, eyesClosed = 0, quiver = 0, brain = 0, anoxia = 0, bloodless = 0, flowPhase, lungs = 0, cyanosis = 0, bronchi = 0, narrow = 0, trapped = 0, cannula = 0, fade = true}) => {
+export const Patient: React.FC<PatientProps> = ({size = 360, mood = 'calme', breath = 0, heart = 0, beat = 0, flow = 0, cuff = 0, press = 0, flush = 0, pale = 0, sweat = 0, pain = 0, dizzy = 0, droop = 0, armL = 0, armR = 0, eyesClosed = 0, quiver = 0, brain = 0, anoxia = 0, bloodless = 0, flowPhase, lungs = 0, cyanosis = 0, bronchi = 0, narrow = 0, trapped = 0, cannula = 0, flood = 0, fade = true}) => {
 	const frame = useCurrentFrame();
 	const id = useId().replace(/:/g, '');
 	const blink = Math.min(frame % 96 < 4 ? 0.15 : 1, 1 - 0.9 * eyesClosed);
@@ -182,6 +184,11 @@ export const Patient: React.FC<PatientProps> = ({size = 360, mood = 'calme', bre
 					<stop offset="0.8" stopColor="#fff" stopOpacity={1} />
 					<stop offset="1" stopColor="#fff" stopOpacity={0} />
 				</linearGradient>
+				<clipPath id={`lu${id}`}>
+					{LUNGS.map((d) => (
+						<path key={d} d={d} />
+					))}
+				</clipPath>
 				<mask id={`m${id}`} maskUnits="userSpaceOnUse" x={-200} y={-200} width={800} height={VB.h + 200}>
 					<rect x={-200} y={-200} width={800} height={200} fill="#fff" />
 					<rect x={-200} y={0} width={800} height={VB.h} fill={`url(#fade${id})`} />
@@ -220,6 +227,24 @@ export const Patient: React.FC<PatientProps> = ({size = 360, mood = 'calme', bre
 							{LUNGS.map((d) => (
 								<path key={d} d={d} fill={LPI.sky} stroke={N} strokeWidth={6} strokeLinejoin="round" />
 							))}
+							{/* œdème pulmonaire : l'eau monte (vagues, bulles), les contours restent par-dessus */}
+							{flood > 0 ? (
+								<g clipPath={`url(#lu${id})`}>
+									<polygon
+										points={`${Array.from({length: 18}, (_, i) => {
+											const x = 116 + i * 10;
+											return `${x},${398 - 150 * flood + 4 * Math.sin(x / 11 + frame / 4)}`;
+										}).join(' ')} 290,400 110,400`}
+										fill={alpha(LPI.blue, 0.8)}
+									/>
+									{Array.from({length: 8}, (_, i) => {
+										const t = ((frame * 1.5 + i * 13) % 60) / 60;
+										const x = i < 4 ? 140 + i * 12 : 222 + (i - 4) * 12;
+										return <circle key={i} cx={x} cy={396 - t * 150 * flood} r={3 + (i % 3)} fill={LPI.paper} opacity={(1 - t) * flood} />;
+									})}
+								</g>
+							) : null}
+							{flood > 0 ? LUNGS.map((d) => <path key={`o${d}`} d={d} fill="none" stroke={N} strokeWidth={6} strokeLinejoin="round" />) : null}
 							{/* bronches : paroi (rose quand elle s'enflamme) et passage de l'air (blanc) qui rétrécit */}
 							{bronchi > 0 ? (
 								<g opacity={bronchi}>

@@ -42,6 +42,8 @@ import {HygieneMains, HygieneMainsProps} from './videos/hygiene-mains/HygieneMai
 import {TL as HYGIENE_MAINS_TL} from './videos/hygiene-mains/timeline';
 import {PrecautionsStandard, PrecautionsStandardProps} from './videos/precautions-standard/PrecautionsStandard';
 import {TL as PRECAUTIONS_STANDARD_TL} from './videos/precautions-standard/timeline';
+import {InsuffisanceCardiaque, InsuffisanceCardiaqueProps} from './videos/insuffisance-cardiaque/InsuffisanceCardiaque';
+import {TL as INSUFFISANCE_CARDIAQUE_TL} from './videos/insuffisance-cardiaque/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -248,6 +250,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies PrecautionsStandardProps}
+		/>
+		{/* 23 · Insuffisance-Cardiaque */}
+		<Composition
+			id="Insuffisance-Cardiaque"
+			component={InsuffisanceCardiaque}
+			durationInFrames={INSUFFISANCE_CARDIAQUE_TL.total}
+			fps={INSUFFISANCE_CARDIAQUE_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies InsuffisanceCardiaqueProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition

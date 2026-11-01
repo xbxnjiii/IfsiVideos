@@ -32,6 +32,7 @@ pas de logiciel de montage, pas de banque d'images.
 | 20 | Le matériel pour une prise de sang (format inventaire) | `Prise-De-Sang` | [voix/20-prise-de-sang.script.json](voix/20-prise-de-sang.script.json) | [storyboard](docs/lpi/storyboard-prise-de-sang.md) |
 | 21 | Les 5 indications de l'hygiène des mains (liste à retenir) | `Hygiene-Mains` | [voix/21-hygiene-mains.script.json](voix/21-hygiene-mains.script.json) | [storyboard](docs/lpi/storyboard-hygiene-mains.md) |
 | 22 | Les précautions standard (liste à retenir) | `Precautions-Standard` | [voix/22-precautions-standard.script.json](voix/22-precautions-standard.script.json) | [storyboard](docs/lpi/storyboard-precautions-standard.md) |
+| 23 | L'insuffisance cardiaque (pathologie) | `Insuffisance-Cardiaque` | [voix/23-insuffisance-cardiaque.script.json](voix/23-insuffisance-cardiaque.script.json) | [storyboard](docs/lpi/storyboard-insuffisance-cardiaque.md) |
 
 ## Utilisation
 

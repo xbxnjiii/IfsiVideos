@@ -1,0 +1,1243 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 77.53,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.048,
+   "end": 14.089
+  },
+  {
+   "id": "def",
+   "start": 15.008,
+   "end": 23.283
+  },
+  {
+   "id": "gauche",
+   "start": 24.214,
+   "end": 31.895
+  },
+  {
+   "id": "droite",
+   "start": 32.828,
+   "end": 38.881
+  },
+  {
+   "id": "role",
+   "start": 39.806,
+   "end": 47.622
+  },
+  {
+   "id": "traitement",
+   "start": 48.587,
+   "end": 55.161
+  },
+  {
+   "id": "urgence",
+   "start": 56.109,
+   "end": 66.225
+  },
+  {
+   "id": "outro",
+   "start": 67.14,
+   "end": 77.208
+  }
+ ],
+ "words": [
+  {
+   "text": "Trois",
+   "start": 0.048,
+   "end": 0.233
+  },
+  {
+   "text": "kilos",
+   "start": 0.233,
+   "end": 0.5
+  },
+  {
+   "text": "en",
+   "start": 0.5,
+   "end": 0.569
+  },
+  {
+   "text": "une",
+   "start": 0.569,
+   "end": 0.708
+  },
+  {
+   "text": "semaine…",
+   "start": 0.708,
+   "end": 1.113
+  },
+  {
+   "text": "alors",
+   "start": 1.53,
+   "end": 1.703
+  },
+  {
+   "text": "qu'il",
+   "start": 1.703,
+   "end": 1.865
+  },
+  {
+   "text": "mange",
+   "start": 1.865,
+   "end": 2.062
+  },
+  {
+   "text": "moins.",
+   "start": 2.062,
+   "end": 2.351
+  },
+  {
+   "text": "Il",
+   "start": 2.662,
+   "end": 2.824
+  },
+  {
+   "text": "dort",
+   "start": 2.824,
+   "end": 3.009
+  },
+  {
+   "text": "assis,",
+   "start": 3.009,
+   "end": 3.414
+  },
+  {
+   "text": "avec",
+   "start": 3.669,
+   "end": 3.877
+  },
+  {
+   "text": "trois",
+   "start": 3.877,
+   "end": 4.062
+  },
+  {
+   "text": "oreillers.",
+   "start": 4.062,
+   "end": 4.572
+  },
+  {
+   "text": "Et",
+   "start": 4.9,
+   "end": 5.038
+  },
+  {
+   "text": "le",
+   "start": 5.038,
+   "end": 5.154
+  },
+  {
+   "text": "soir,",
+   "start": 5.154,
+   "end": 5.582
+  },
+  {
+   "text": "ses",
+   "start": 5.825,
+   "end": 5.953
+  },
+  {
+   "text": "chevilles",
+   "start": 5.953,
+   "end": 6.265
+  },
+  {
+   "text": "gonflent.",
+   "start": 6.265,
+   "end": 6.775
+  },
+  {
+   "text": "Ce",
+   "start": 7.085,
+   "end": 7.27
+  },
+  {
+   "text": "n'est",
+   "start": 7.27,
+   "end": 7.363
+  },
+  {
+   "text": "pas",
+   "start": 7.363,
+   "end": 7.49
+  },
+  {
+   "text": "l'âge :",
+   "start": 7.49,
+   "end": 7.872
+  },
+  {
+   "text": "c'est",
+   "start": 8.138,
+   "end": 8.266
+  },
+  {
+   "text": "son",
+   "start": 8.266,
+   "end": 8.416
+  },
+  {
+   "text": "cœur",
+   "start": 8.416,
+   "end": 8.625
+  },
+  {
+   "text": "qui",
+   "start": 8.625,
+   "end": 8.74
+  },
+  {
+   "text": "s'épuise.",
+   "start": 8.74,
+   "end": 9.365
+  },
+  {
+   "text": "C'est",
+   "start": 9.68,
+   "end": 9.888
+  },
+  {
+   "text": "l'insuffisance",
+   "start": 9.888,
+   "end": 10.501
+  },
+  {
+   "text": "cardiaque.",
+   "start": 10.501,
+   "end": 11.115
+  },
+  {
+   "text": "Et",
+   "start": 11.427,
+   "end": 11.566
+  },
+  {
+   "text": "si",
+   "start": 11.566,
+   "end": 11.693
+  },
+  {
+   "text": "personne",
+   "start": 11.694,
+   "end": 12.029
+  },
+  {
+   "text": "ne",
+   "start": 12.029,
+   "end": 12.11
+  },
+  {
+   "text": "voit",
+   "start": 12.11,
+   "end": 12.226
+  },
+  {
+   "text": "ces",
+   "start": 12.226,
+   "end": 12.353
+  },
+  {
+   "text": "signes…",
+   "start": 12.353,
+   "end": 12.747
+  },
+  {
+   "text": "ses",
+   "start": 12.978,
+   "end": 13.094
+  },
+  {
+   "text": "poumons",
+   "start": 13.094,
+   "end": 13.395
+  },
+  {
+   "text": "peuvent",
+   "start": 13.395,
+   "end": 13.58
+  },
+  {
+   "text": "se",
+   "start": 13.58,
+   "end": 13.673
+  },
+  {
+   "text": "noyer.",
+   "start": 13.673,
+   "end": 14.089
+  },
+  {
+   "text": "L'insuffisance",
+   "start": 15.008,
+   "end": 15.598
+  },
+  {
+   "text": "cardiaque,",
+   "start": 15.598,
+   "end": 16.096
+  },
+  {
+   "text": "c'est",
+   "start": 16.42,
+   "end": 16.524
+  },
+  {
+   "text": "un",
+   "start": 16.524,
+   "end": 16.651
+  },
+  {
+   "text": "cœur",
+   "start": 16.651,
+   "end": 16.837
+  },
+  {
+   "text": "qui",
+   "start": 16.837,
+   "end": 16.952
+  },
+  {
+   "text": "n'arrive",
+   "start": 16.952,
+   "end": 17.242
+  },
+  {
+   "text": "plus",
+   "start": 17.242,
+   "end": 17.392
+  },
+  {
+   "text": "à",
+   "start": 17.392,
+   "end": 17.473
+  },
+  {
+   "text": "pomper",
+   "start": 17.473,
+   "end": 17.751
+  },
+  {
+   "text": "assez",
+   "start": 17.751,
+   "end": 17.936
+  },
+  {
+   "text": "de",
+   "start": 17.936,
+   "end": 18.052
+  },
+  {
+   "text": "sang",
+   "start": 18.052,
+   "end": 18.191
+  },
+  {
+   "text": "pour",
+   "start": 18.191,
+   "end": 18.318
+  },
+  {
+   "text": "le",
+   "start": 18.318,
+   "end": 18.376
+  },
+  {
+   "text": "corps.",
+   "start": 18.376,
+   "end": 18.781
+  },
+  {
+   "text": "Souvent,",
+   "start": 19.093,
+   "end": 19.556
+  },
+  {
+   "text": "il",
+   "start": 19.846,
+   "end": 19.938
+  },
+  {
+   "text": "a",
+   "start": 19.938,
+   "end": 19.962
+  },
+  {
+   "text": "été",
+   "start": 19.962,
+   "end": 20.124
+  },
+  {
+   "text": "abîmé",
+   "start": 20.124,
+   "end": 20.436
+  },
+  {
+   "text": "par",
+   "start": 20.436,
+   "end": 20.587
+  },
+  {
+   "text": "un",
+   "start": 20.587,
+   "end": 20.621
+  },
+  {
+   "text": "infarctus,",
+   "start": 20.621,
+   "end": 21.35
+  },
+  {
+   "text": "ou",
+   "start": 21.663,
+   "end": 21.698
+  },
+  {
+   "text": "épuisé",
+   "start": 21.698,
+   "end": 22.08
+  },
+  {
+   "text": "par",
+   "start": 22.08,
+   "end": 22.207
+  },
+  {
+   "text": "des",
+   "start": 22.207,
+   "end": 22.288
+  },
+  {
+   "text": "années",
+   "start": 22.288,
+   "end": 22.531
+  },
+  {
+   "text": "d'hypertension.",
+   "start": 22.531,
+   "end": 23.283
+  },
+  {
+   "text": "Quand",
+   "start": 24.214,
+   "end": 24.364
+  },
+  {
+   "text": "le",
+   "start": 24.364,
+   "end": 24.434
+  },
+  {
+   "text": "cœur",
+   "start": 24.434,
+   "end": 24.607
+  },
+  {
+   "text": "gauche",
+   "start": 24.608,
+   "end": 24.827
+  },
+  {
+   "text": "faiblit,",
+   "start": 24.827,
+   "end": 25.221
+  },
+  {
+   "text": "le",
+   "start": 25.499,
+   "end": 25.58
+  },
+  {
+   "text": "sang",
+   "start": 25.58,
+   "end": 25.73
+  },
+  {
+   "text": "reflue",
+   "start": 25.73,
+   "end": 26.02
+  },
+  {
+   "text": "vers",
+   "start": 26.02,
+   "end": 26.147
+  },
+  {
+   "text": "les",
+   "start": 26.147,
+   "end": 26.216
+  },
+  {
+   "text": "poumons :",
+   "start": 26.216,
+   "end": 26.564
+  },
+  {
+   "text": "le",
+   "start": 26.969,
+   "end": 27.027
+  },
+  {
+   "text": "patient",
+   "start": 27.027,
+   "end": 27.327
+  },
+  {
+   "text": "s'essouffle,",
+   "start": 27.327,
+   "end": 27.895
+  },
+  {
+   "text": "surtout",
+   "start": 28.103,
+   "end": 28.427
+  },
+  {
+   "text": "allongé.",
+   "start": 28.427,
+   "end": 28.936
+  },
+  {
+   "text": "On",
+   "start": 29.245,
+   "end": 29.338
+  },
+  {
+   "text": "appelle",
+   "start": 29.338,
+   "end": 29.627
+  },
+  {
+   "text": "ça",
+   "start": 29.627,
+   "end": 29.743
+  },
+  {
+   "text": "l'orthopnée :",
+   "start": 29.743,
+   "end": 30.368
+  },
+  {
+   "text": "il",
+   "start": 30.669,
+   "end": 30.773
+  },
+  {
+   "text": "ne",
+   "start": 30.773,
+   "end": 30.854
+  },
+  {
+   "text": "respire",
+   "start": 30.854,
+   "end": 31.247
+  },
+  {
+   "text": "bien",
+   "start": 31.247,
+   "end": 31.421
+  },
+  {
+   "text": "qu'assis.",
+   "start": 31.421,
+   "end": 31.895
+  },
+  {
+   "text": "Quand",
+   "start": 32.828,
+   "end": 32.978
+  },
+  {
+   "text": "le",
+   "start": 32.978,
+   "end": 33.048
+  },
+  {
+   "text": "cœur",
+   "start": 33.048,
+   "end": 33.198
+  },
+  {
+   "text": "droit",
+   "start": 33.198,
+   "end": 33.36
+  },
+  {
+   "text": "faiblit,",
+   "start": 33.36,
+   "end": 33.777
+  },
+  {
+   "text": "l'eau",
+   "start": 34.078,
+   "end": 34.171
+  },
+  {
+   "text": "s'accumule",
+   "start": 34.171,
+   "end": 34.564
+  },
+  {
+   "text": "dans",
+   "start": 34.564,
+   "end": 34.657
+  },
+  {
+   "text": "le",
+   "start": 34.657,
+   "end": 34.749
+  },
+  {
+   "text": "corps :",
+   "start": 34.749,
+   "end": 35.062
+  },
+  {
+   "text": "les",
+   "start": 35.548,
+   "end": 35.617
+  },
+  {
+   "text": "chevilles",
+   "start": 35.617,
+   "end": 35.965
+  },
+  {
+   "text": "et",
+   "start": 35.965,
+   "end": 35.988
+  },
+  {
+   "text": "les",
+   "start": 35.988,
+   "end": 36.092
+  },
+  {
+   "text": "jambes",
+   "start": 36.092,
+   "end": 36.312
+  },
+  {
+   "text": "gonflent,",
+   "start": 36.312,
+   "end": 36.705
+  },
+  {
+   "text": "ce",
+   "start": 36.902,
+   "end": 37.006
+  },
+  {
+   "text": "sont",
+   "start": 37.006,
+   "end": 37.122
+  },
+  {
+   "text": "des",
+   "start": 37.122,
+   "end": 37.215
+  },
+  {
+   "text": "œdèmes.",
+   "start": 37.215,
+   "end": 37.724
+  },
+  {
+   "text": "Et",
+   "start": 38.036,
+   "end": 38.164
+  },
+  {
+   "text": "le",
+   "start": 38.164,
+   "end": 38.256
+  },
+  {
+   "text": "poids",
+   "start": 38.256,
+   "end": 38.43
+  },
+  {
+   "text": "monte.",
+   "start": 38.43,
+   "end": 38.881
+  },
+  {
+   "text": "Ton",
+   "start": 39.806,
+   "end": 39.934
+  },
+  {
+   "text": "réflexe :",
+   "start": 39.934,
+   "end": 40.547
+  },
+  {
+   "text": "peser",
+   "start": 40.813,
+   "end": 41.01
+  },
+  {
+   "text": "le",
+   "start": 41.01,
+   "end": 41.091
+  },
+  {
+   "text": "patient",
+   "start": 41.091,
+   "end": 41.392
+  },
+  {
+   "text": "chaque",
+   "start": 41.392,
+   "end": 41.6
+  },
+  {
+   "text": "jour,",
+   "start": 41.6,
+   "end": 41.936
+  },
+  {
+   "text": "à",
+   "start": 42.121,
+   "end": 42.133
+  },
+  {
+   "text": "la",
+   "start": 42.133,
+   "end": 42.214
+  },
+  {
+   "text": "même",
+   "start": 42.214,
+   "end": 42.399
+  },
+  {
+   "text": "heure.",
+   "start": 42.399,
+   "end": 42.688
+  },
+  {
+   "text": "Deux",
+   "start": 43.012,
+   "end": 43.174
+  },
+  {
+   "text": "kilos",
+   "start": 43.174,
+   "end": 43.406
+  },
+  {
+   "text": "de",
+   "start": 43.406,
+   "end": 43.498
+  },
+  {
+   "text": "plus",
+   "start": 43.498,
+   "end": 43.695
+  },
+  {
+   "text": "en",
+   "start": 43.695,
+   "end": 43.741
+  },
+  {
+   "text": "trois",
+   "start": 43.741,
+   "end": 43.927
+  },
+  {
+   "text": "jours ?",
+   "start": 43.927,
+   "end": 44.309
+  },
+  {
+   "text": "On",
+   "start": 44.635,
+   "end": 44.763
+  },
+  {
+   "text": "alerte !",
+   "start": 44.763,
+   "end": 45.365
+  },
+  {
+   "text": "Et",
+   "start": 45.678,
+   "end": 45.817
+  },
+  {
+   "text": "tu",
+   "start": 45.817,
+   "end": 45.921
+  },
+  {
+   "text": "surveilles",
+   "start": 45.921,
+   "end": 46.28
+  },
+  {
+   "text": "aussi",
+   "start": 46.28,
+   "end": 46.5
+  },
+  {
+   "text": "les",
+   "start": 46.5,
+   "end": 46.592
+  },
+  {
+   "text": "œdèmes",
+   "start": 46.592,
+   "end": 46.951
+  },
+  {
+   "text": "et",
+   "start": 46.951,
+   "end": 46.986
+  },
+  {
+   "text": "l'essoufflement.",
+   "start": 46.986,
+   "end": 47.622
+  },
+  {
+   "text": "Le",
+   "start": 48.587,
+   "end": 48.679
+  },
+  {
+   "text": "traitement :",
+   "start": 48.679,
+   "end": 49.131
+  },
+  {
+   "text": "des",
+   "start": 49.374,
+   "end": 49.466
+  },
+  {
+   "text": "diurétiques,",
+   "start": 49.466,
+   "end": 50.137
+  },
+  {
+   "text": "pour",
+   "start": 50.334,
+   "end": 50.462
+  },
+  {
+   "text": "faire",
+   "start": 50.462,
+   "end": 50.612
+  },
+  {
+   "text": "uriner",
+   "start": 50.612,
+   "end": 50.878
+  },
+  {
+   "text": "l'eau",
+   "start": 50.878,
+   "end": 50.994
+  },
+  {
+   "text": "en",
+   "start": 50.994,
+   "end": 51.087
+  },
+  {
+   "text": "trop,",
+   "start": 51.087,
+   "end": 51.422
+  },
+  {
+   "text": "des",
+   "start": 51.746,
+   "end": 51.804
+  },
+  {
+   "text": "médicaments",
+   "start": 51.804,
+   "end": 52.244
+  },
+  {
+   "text": "qui",
+   "start": 52.244,
+   "end": 52.348
+  },
+  {
+   "text": "soulagent",
+   "start": 52.348,
+   "end": 52.626
+  },
+  {
+   "text": "le",
+   "start": 52.626,
+   "end": 52.707
+  },
+  {
+   "text": "cœur,",
+   "start": 52.707,
+   "end": 53.043
+  },
+  {
+   "text": "et",
+   "start": 53.39,
+   "end": 53.413
+  },
+  {
+   "text": "peu",
+   "start": 53.413,
+   "end": 53.529
+  },
+  {
+   "text": "de",
+   "start": 53.529,
+   "end": 53.61
+  },
+  {
+   "text": "sel,",
+   "start": 53.61,
+   "end": 53.945
+  },
+  {
+   "text": "parce",
+   "start": 54.119,
+   "end": 54.246
+  },
+  {
+   "text": "que",
+   "start": 54.246,
+   "end": 54.327
+  },
+  {
+   "text": "le",
+   "start": 54.327,
+   "end": 54.408
+  },
+  {
+   "text": "sel",
+   "start": 54.408,
+   "end": 54.605
+  },
+  {
+   "text": "retient",
+   "start": 54.605,
+   "end": 54.929
+  },
+  {
+   "text": "l'eau.",
+   "start": 54.929,
+   "end": 55.161
+  },
+  {
+   "text": "L'urgence,",
+   "start": 56.109,
+   "end": 56.734
+  },
+  {
+   "text": "c'est",
+   "start": 56.965,
+   "end": 57.093
+  },
+  {
+   "text": "l'œdème",
+   "start": 57.093,
+   "end": 57.359
+  },
+  {
+   "text": "aigu",
+   "start": 57.359,
+   "end": 57.544
+  },
+  {
+   "text": "du",
+   "start": 57.544,
+   "end": 57.637
+  },
+  {
+   "text": "poumon :",
+   "start": 57.637,
+   "end": 57.996
+  },
+  {
+   "text": "l'eau",
+   "start": 58.354,
+   "end": 58.505
+  },
+  {
+   "text": "inonde",
+   "start": 58.505,
+   "end": 58.806
+  },
+  {
+   "text": "les",
+   "start": 58.806,
+   "end": 58.887
+  },
+  {
+   "text": "poumons.",
+   "start": 58.887,
+   "end": 59.257
+  },
+  {
+   "text": "Le",
+   "start": 59.628,
+   "end": 59.732
+  },
+  {
+   "text": "patient",
+   "start": 59.732,
+   "end": 60.033
+  },
+  {
+   "text": "étouffe,",
+   "start": 60.033,
+   "end": 60.507
+  },
+  {
+   "text": "et",
+   "start": 60.82,
+   "end": 60.843
+  },
+  {
+   "text": "crache",
+   "start": 60.843,
+   "end": 61.132
+  },
+  {
+   "text": "une",
+   "start": 61.132,
+   "end": 61.225
+  },
+  {
+   "text": "mousse",
+   "start": 61.225,
+   "end": 61.433
+  },
+  {
+   "text": "rosée.",
+   "start": 61.433,
+   "end": 61.861
+  },
+  {
+   "text": "On",
+   "start": 62.185,
+   "end": 62.278
+  },
+  {
+   "text": "l'assoit,",
+   "start": 62.278,
+   "end": 62.764
+  },
+  {
+   "text": "les",
+   "start": 63.053,
+   "end": 63.134
+  },
+  {
+   "text": "jambes",
+   "start": 63.134,
+   "end": 63.331
+  },
+  {
+   "text": "pendantes,",
+   "start": 63.331,
+   "end": 63.84
+  },
+  {
+   "text": "on",
+   "start": 64.084,
+   "end": 64.118
+  },
+  {
+   "text": "donne",
+   "start": 64.118,
+   "end": 64.28
+  },
+  {
+   "text": "de",
+   "start": 64.28,
+   "end": 64.338
+  },
+  {
+   "text": "l'oxygène,",
+   "start": 64.338,
+   "end": 64.917
+  },
+  {
+   "text": "et",
+   "start": 65.241,
+   "end": 65.287
+  },
+  {
+   "text": "on",
+   "start": 65.287,
+   "end": 65.322
+  },
+  {
+   "text": "appelle",
+   "start": 65.322,
+   "end": 65.611
+  },
+  {
+   "text": "tout",
+   "start": 65.611,
+   "end": 65.727
+  },
+  {
+   "text": "de",
+   "start": 65.727,
+   "end": 65.773
+  },
+  {
+   "text": "suite.",
+   "start": 65.773,
+   "end": 66.225
+  },
+  {
+   "text": "Petit",
+   "start": 67.14,
+   "end": 67.429
+  },
+  {
+   "text": "récap !",
+   "start": 67.429,
+   "end": 67.973
+  },
+  {
+   "text": "Un",
+   "start": 68.286,
+   "end": 68.459
+  },
+  {
+   "text": "cœur",
+   "start": 68.459,
+   "end": 68.691
+  },
+  {
+   "text": "qui",
+   "start": 68.691,
+   "end": 68.807
+  },
+  {
+   "text": "pompe",
+   "start": 68.807,
+   "end": 69.027
+  },
+  {
+   "text": "mal.",
+   "start": 69.027,
+   "end": 69.432
+  },
+  {
+   "text": "À",
+   "start": 69.754,
+   "end": 69.893
+  },
+  {
+   "text": "gauche,",
+   "start": 69.893,
+   "end": 70.309
+  },
+  {
+   "text": "le",
+   "start": 70.564,
+   "end": 70.622
+  },
+  {
+   "text": "patient",
+   "start": 70.622,
+   "end": 70.923
+  },
+  {
+   "text": "s'essouffle ;",
+   "start": 70.923,
+   "end": 71.455
+  },
+  {
+   "text": "à",
+   "start": 71.698,
+   "end": 71.733
+  },
+  {
+   "text": "droite,",
+   "start": 71.733,
+   "end": 72.08
+  },
+  {
+   "text": "il",
+   "start": 72.277,
+   "end": 72.358
+  },
+  {
+   "text": "gonfle.",
+   "start": 72.358,
+   "end": 72.844
+  },
+  {
+   "text": "Ton",
+   "start": 73.158,
+   "end": 73.308
+  },
+  {
+   "text": "réflexe :",
+   "start": 73.308,
+   "end": 73.91
+  },
+  {
+   "text": "la",
+   "start": 74.176,
+   "end": 74.246
+  },
+  {
+   "text": "pesée",
+   "start": 74.246,
+   "end": 74.512
+  },
+  {
+   "text": "de",
+   "start": 74.512,
+   "end": 74.627
+  },
+  {
+   "text": "chaque",
+   "start": 74.627,
+   "end": 74.801
+  },
+  {
+   "text": "jour.",
+   "start": 74.801,
+   "end": 75.195
+  },
+  {
+   "text": "Et",
+   "start": 75.506,
+   "end": 75.633
+  },
+  {
+   "text": "s'il",
+   "start": 75.633,
+   "end": 75.842
+  },
+  {
+   "text": "étouffe,",
+   "start": 75.842,
+   "end": 76.247
+  },
+  {
+   "text": "c'est",
+   "start": 76.478,
+   "end": 76.606
+  },
+  {
+   "text": "l'urgence !",
+   "start": 76.606,
+   "end": 77.208
+  }
+ ]
+}
