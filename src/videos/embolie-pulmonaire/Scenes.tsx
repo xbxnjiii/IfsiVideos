@@ -315,7 +315,7 @@ export const Definition: React.FC = () => {
 					) : null}
 				</Stage>
 				<TermSlam index={0} at={BOU} term="Embolie pulmonaire" meaning="un caillot bouche une artère du poumon" sign="empty" slamY={SLAM_Y + 30} slot={{x: 72, y: 1062, w: 936}} active={frame >= BOU} />
-				<TermSlam index={1} at={PHL} term="Phlébite" meaning="un caillot dans une veine profonde de la jambe" sign="alert" slamY={SLAM_Y + 30} slot={{x: 72, y: 1237, w: 936}} active={frame >= PHL} />
+				<TermSlam index={1} at={PHL} term="Phlébite (TVP)" meaning="thrombose veineuse profonde" sign="alert" slamY={SLAM_Y + 30} slot={{x: 72, y: 1237, w: 936}} active={frame >= PHL} />
 			</Camera>
 			<Flash at={COINCE + 2} max={0.35} />
 			<Sfx name="pop" at={CAIL} volume={0.09} />
@@ -409,7 +409,7 @@ export const Signes: React.FC = () => {
 					{frame >= PHL - 2 ? (
 						<div style={{position: 'absolute', left: 30, top: 470}}>
 							<Pill at={PHL - 2} size={34} color={LPI.blue}>
-								phlébite ?
+								phlébite (TVP) ?
 							</Pill>
 						</div>
 					) : null}
@@ -598,7 +598,7 @@ export const Traitement: React.FC = () => {
 
 /* ═══════════════════════════════ 5 · FACTEURS DE RISQUE ═══════════════════════════════ */
 // Les jambes en gros plan : immobile, le sang stagne et un caillot se forme ; après une opération on fait marcher
-// (le sang circule), bas de contention.
+// (le sang circule), bas de compression.
 const RISK_WIN = {x: 24, y: 20, w: 888, h: 420};
 const RB = {size: 178, x: 355, y: 0};
 const riskPt = (x: number, y: number) => ({x: RB.x + (x * RB.size) / 400, y: RB.y + (y * RB.size) / 400});
@@ -617,7 +617,7 @@ export const Risques: React.FC = () => {
 	const IMMO = at('risques', 'immobile');
 	const APRES = at('risques', 'après');
 	const MARCH = at('risques', 'marcher');
-	const CONT = at('risques', 'contention');
+	const CONT = at('risques', 'compression');
 	const legs = riskPt(200, 790);
 	const keys: CamKey[] = [
 		{at: FACT, s: 1.9, x: legs.x, y: legs.y - 20, dur: 16},
@@ -657,7 +657,7 @@ export const Risques: React.FC = () => {
 					{frame >= CONT - 4 ? (
 						<div style={{position: 'absolute', left: 30, top: 380}}>
 							<Pill at={CONT - 4} size={34} color={LPI.blue}>
-								bas de contention
+								bas de compression
 							</Pill>
 						</div>
 					) : null}
@@ -686,10 +686,10 @@ export const Outro: React.FC = () => (
 		done={at('outro', 'bouge') + 16}
 		rows={[
 			[at('outro', 'caillot'), 'empty', 'Embolie pulmonaire', 'caillot dans le poumon'],
-			[at('outro', 'phlébite'), 'down', 'Souvent une phlébite', 'veine de la jambe'],
+			[at('outro', 'phlébite'), 'down', 'Phlébite (TVP)', 'thrombose veineuse profonde'],
 			[at('outro', 'essoufflement'), 'alert', 'Signes', 'essoufflement · douleur · cœur rapide'],
 			[at('outro', 'anticoagulants'), 'check', 'Traitement', 'anticoagulants'],
-			[at('outro', 'bouge'), 'up', 'Prévention', 'on bouge, bas de contention'],
+			[at('outro', 'bouge'), 'up', 'Prévention', 'on bouge, bas de compression'],
 		]}
 	/>
 );

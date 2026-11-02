@@ -30,7 +30,7 @@
   {
    "id": "risques",
    "start": 62.832,
-   "end": 75.336
+   "end": 75.509
   },
   {
    "id": "outro",
@@ -1197,27 +1197,27 @@
   {
    "text": "avec",
    "start": 74.271,
-   "end": 74.468
+   "end": 74.572
   },
   {
    "text": "des",
-   "start": 74.468,
-   "end": 74.549
-  },
-  {
-   "text": "bas",
-   "start": 74.549,
+   "start": 74.572,
    "end": 74.664
   },
   {
-   "text": "de",
-   "start": 74.664,
-   "end": 74.734
+   "text": "bas",
+   "start": 74.665,
+   "end": 74.78
   },
   {
-   "text": "contention.",
-   "start": 74.734,
-   "end": 75.336
+   "text": "de",
+   "start": 74.78,
+   "end": 74.861
+  },
+  {
+   "text": "compression.",
+   "start": 74.861,
+   "end": 75.509
   },
   {
    "text": "Petit",

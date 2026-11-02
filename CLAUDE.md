@@ -133,10 +133,10 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   Nombres collés (« 100 à 120 ») : les écrire en lettres (`{100|cent} à {120|cent vingt}`).
 - 3e modèle « pathologie / urgence » : `Embolie-Pulmonaire` (`src/videos/embolie-pulmonaire/`) — accroche : podium
   « 3e cause de mort cardiovasculaire » (image 0), puis le caillot né dans le mollet remonte jusqu'au poumon, **la caméra
-  le suit** (`ZoomCam` avec une fonction `CamFollow` : (frame) → {s, x, y}) ; définition (embolie, phlébite), signes,
+  le suit** (`ZoomCam` avec une fonction `CamFollow` : (frame) → {s, x, y}) ; définition (embolie, phlébite (TVP)), signes,
   conduite à tenir, traitement (anticoagulants, thrombolyse via `ArteryZoom`), facteurs de risque + prévention.
   Briques `embolism.tsx` : `FullBody` (le `Patient` + jambes, veine profonde, artères pulmonaires, caillot qui suit le
-  trajet `clotAt(t)`, zone du poumon privée de sang, mollet gonflé, bas de contention, douleurs), `SemiSitting` (lit
+  trajet `clotAt(t)`, zone du poumon privée de sang, mollet gonflé, bas de compression (on ne dit pas « de contention »), douleurs), `SemiSitting` (lit
   dont le dossier se relève à 45°), `ChestScan` ; `Patient` : `fade={false}` ; icônes lit, avion, plâtre, bistouri,
   ruban, mollet. Dans une `ZoomCam`, le contenu doit tenir dans la fenêtre à zoom 1 (sinon il n'est jamais montré).
 - 4e modèle « pathologie » : `BPCO` (`src/videos/bpco/`) — accroche voulue par le propriétaire : « Et si chaque respiration

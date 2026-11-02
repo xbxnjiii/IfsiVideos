@@ -56,7 +56,7 @@ export const MASCOT: Beat[] = [
 	{at: abs('risques', 'avion'), key: 'expressions/reflechit', ...R},
 	{at: abs('risques', 'cancer'), key: 'expressions/inquiete', ...R},
 	{at: abs('risques', 'marcher'), key: 'poses/marche', x: 830, y: 1880, size: 420},
-	{at: abs('risques', 'contention'), key: 'expressions/ok', ...R},
+	{at: abs('risques', 'compression'), key: 'expressions/ok', ...R},
 	// saut par-dessus la vague
 	{at: start('outro') + 8, dur: 18, key: 'expressions/ok', ...L},
 

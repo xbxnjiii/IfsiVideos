@@ -1,6 +1,6 @@
 // Briques « embolie pulmonaire » réutilisables : corps entier (le `Patient` + des jambes), veine profonde de la
 // jambe, caillot qui remonte (veine → cœur droit → artère pulmonaire) et se coince dans le poumon (zone privée de
-// sang), mollet gonflé, bas de contention ; position demi-assise ; scanner des poumons.
+// sang), mollet gonflé, bas de compression ; position demi-assise ; scanner des poumons.
 import React from 'react';
 import {useCurrentFrame} from 'remotion';
 import {LUNGS, Patient, PatientProps} from './patient';
@@ -88,7 +88,7 @@ export type FullBodyProps = {
 	swell?: number;
 	calfPain?: number;
 	chestPain?: number;
-	/** bas de contention (0 → 1) */
+	/** bas de compression (0 → 1) */
 	stocking?: number;
 };
 
