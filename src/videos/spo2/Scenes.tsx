@@ -377,6 +377,44 @@ const MES_PAT = {x: 150, y: 30, size: 300};
 const OX_W = 780;
 const oxPt = (x: number, y: number) => ({x: 54 + (x * OX_W) / 900, y: (y * OX_W) / 900});
 
+/** Encart rond : gros plan sur l'oreille du patient, un capteur se pince au lobe (son câble descend). */
+const EAR_D = 330;
+const EarInset: React.FC<{from: number; to: number; clipAt: number}> = ({from, to, clipAt}) => {
+	const frame = useCurrentFrame();
+	if (frame < from || frame > to + 8) return null;
+	const k = 2.7;
+	const c = {x: 258 * k, y: 124 * k};
+	const lobe = {x: 268 * k - c.x + EAR_D / 2, y: 130 * k - c.y + EAR_D / 2};
+	const out = interpolate(frame, [to, to + 8], [1, 0], {...clamp, easing: Easing.in(Easing.cubic)});
+	const pin = popAt(frame, clipAt);
+	const dim = fadeIn(frame, from, 6) * out;
+	return (
+		<>
+			<div style={{position: 'absolute', left: 0, top: 0, width: 936, height: 560, borderRadius: 50, background: alpha(LPI.paper, 0.6 * dim)}} />
+			<div style={{position: 'absolute', left: 468 - EAR_D / 2, top: 30, width: EAR_D, height: EAR_D, transform: `scale(${popAt(frame, from) * (0.6 + 0.4 * out)})`, opacity: out}}>
+				<div style={{position: 'absolute', inset: 0, borderRadius: EAR_D / 2, overflow: 'hidden', background: LPI.sky, border: `8px solid ${LPI.blue}`, boxShadow: SHADOW, boxSizing: 'border-box'}}>
+					<div style={{position: 'absolute', left: EAR_D / 2 - c.x, top: EAR_D / 2 - c.y}}>
+						<Patient size={400 * k} breath={0} />
+					</div>
+					{pin > 0 ? (
+						<svg width={EAR_D} height={EAR_D} style={{position: 'absolute', inset: 0, overflow: 'visible'}}>
+							<path d={`M${lobe.x + 6} ${lobe.y + 24} C${lobe.x + 20} ${lobe.y + 90} ${lobe.x - 10} ${lobe.y + 120} ${lobe.x + 10} ${EAR_D + 20}`} fill="none" stroke={N} strokeWidth={10} strokeLinecap="round" opacity={Math.min(1, pin)} />
+							<g transform={`translate(${lobe.x} ${lobe.y}) scale(${pin})`}>
+								<rect x={-30} y={-22} width={60} height={46} rx={14} fill={N} />
+								<rect x={-22} y={-14} width={18} height={30} rx={6} fill={LPI.paper} opacity={0.9} />
+								<circle cx={12} cy={1} r={8 + 2 * Math.sin(frame / 3)} fill={LPI.pink} opacity={0.9} />
+							</g>
+						</svg>
+					) : null}
+				</div>
+				<div style={{position: 'absolute', left: -18, top: -10, width: 96, height: 96, borderRadius: 48, background: LPI.pink, border: `6px solid ${LPI.paper}`, boxShadow: SHADOW, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FONT.title, fontWeight: 900, fontSize: 40, color: N, transform: `rotate(${Math.sin(frame / 6) * 8}deg)`}}>
+					ou
+				</div>
+			</div>
+		</>
+	);
+};
+
 export const Mesure: React.FC = () => {
 	const frame = useCurrentFrame();
 	const ME = at('mesure', 'mesure');
@@ -384,6 +422,9 @@ export const Mesure: React.FC = () => {
 	const OXYM = at('mesure', 'oxymètre');
 	const PINCE = at('mesure', 'pince');
 	const DOIGT = at('mesure', 'doigt');
+	const OU = at('mesure', 'ou');
+	const LOBE = at('mesure', 'lobe');
+	const OREILLE = at('mesure', "l'oreille");
 	const LUM = at('mesure', 'lumière');
 	const BATT = at('mesure', 'battement');
 	const PUL = at('mesure', 'pulsée');
@@ -474,6 +515,15 @@ export const Mesure: React.FC = () => {
 							</Pill>
 						</div>
 					) : null}
+					{/* … ou au lobe de l'oreille : encart sur le visage, capteur pincé au lobe */}
+					<EarInset from={OU - 2} to={LUM - 4} clipAt={LOBE - 2} />
+					{frame >= OU - 2 && frame < LUM - 4 ? (
+						<div style={{position: 'absolute', left: 30, top: 470}}>
+							<Pill at={OU - 2} size={34} color={LPI.blue}>
+								ou au lobe de l'oreille
+							</Pill>
+						</div>
+					) : null}
 					{frame >= BATT && frame < FIA - 2 ? (
 						<div style={{position: 'absolute', left: 30, top: 470}}>
 							<Pill at={PUL - 2 > BATT ? PUL - 2 : BATT} size={34}>
@@ -493,6 +543,8 @@ export const Mesure: React.FC = () => {
 			<Sfx name="whoosh" at={PINCE - 6} volume={0.07} />
 			<Sfx name="tick" at={PINCE + 6} volume={0.09} />
 			<Sfx name="ding" at={DOIGT} volume={0.07} />
+			<Sfx name="whoosh" at={OU - 2} volume={0.06} />
+			<Sfx name="tick" at={OREILLE} volume={0.09} />
 			<Sfx name="heartbeat" at={BATT - 4} volume={0.1} />
 			<Sfx name="pop" at={VER} volume={0.1} />
 			<Sfx name="buzz" at={VER + 2} volume={0.05} dur={10} />
@@ -514,7 +566,7 @@ export const Norme: React.FC = () => {
 	const MED = at('norme', 'médecin');
 	const CIB = at('norme', 'cible');
 	const S88 = at('norme', '88');
-	const S92 = at('norme', '92');
+	const S92 = at('norme', '95', 2);
 	const band = useSoft(NORM - 4);
 	const pat = useSoft(BPCO - 2, true);
 	const value = interpolate(frame, [S100 + 4, S100 + 24, S88 - 2, S92 + 10], [95, 98, 98, 90], ease);
@@ -545,7 +597,7 @@ export const Norme: React.FC = () => {
 					at={NORM + 4}
 					markerAt={S100 + 4}
 					y={790}
-					bracket={{lo: 88, hi: 92, label: 'cible BPCO', at: CIB}}
+					bracket={{lo: 88, hi: 95, label: 'cible BPCO', at: CIB}}
 				/>
 				{/* BPCO : maladie chronique des poumons, cible fixée par le médecin */}
 				<div style={{position: 'absolute', left: 72, top: 1070, width: 600, display: 'flex', flexDirection: 'column', gap: 14, alignItems: 'flex-start'}}>
@@ -572,7 +624,7 @@ export const Norme: React.FC = () => {
 						</BigNum>
 						{frame >= S92 - 3 ? <div style={{fontFamily: FONT.title, fontWeight: 900, fontSize: 80, color: LPI.blue}}>–</div> : null}
 						<BigNum at={S92} size={100} color={LPI.pink}>
-							92
+							95
 						</BigNum>
 						{frame >= S92 + 2 ? <div style={{fontFamily: FONT.title, fontWeight: 900, fontSize: 64, color: LPI.blue}}>%</div> : null}
 					</div>
@@ -798,7 +850,7 @@ export const Outro: React.FC = () => (
 		rows={[
 			[at('outro', "l'hémoglobine"), 'device', 'SpO₂', "% d'hémoglobine chargée en O₂"],
 			[at('outro', 'doigt'), 'device', 'Au bout du doigt', 'sans vernis · main chaude'],
-			[at('outro', 'normale'), 'check', 'Normale', '95 – 100 % (BPCO : 88 – 92 %)'],
+			[at('outro', 'normale'), 'check', 'Normale', '95 – 100 % (BPCO : 88 – 95 %)'],
 			[at('outro', 'désaturation'), 'down', 'Désaturation', '< 95 %'],
 			[at('outro', 'hypoxémie'), 'empty', 'Hypoxémie', '< 90 % · urgence'],
 		]}

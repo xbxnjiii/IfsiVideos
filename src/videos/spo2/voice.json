@@ -1,6 +1,6 @@
 {
  "voice": "voix.wav (tts_voix.py)",
- "duration": 84.444,
+ "duration": 85.577,
  "sections": [
   {
    "id": "intro",
@@ -15,27 +15,27 @@
   {
    "id": "mesure",
    "start": 24.309,
-   "end": 36.864
+   "end": 37.99
   },
   {
    "id": "norme",
-   "start": 37.796,
-   "end": 48.171
+   "start": 38.929,
+   "end": 49.82
   },
   {
    "id": "bas",
-   "start": 49.168,
-   "end": 58.892
+   "start": 50.301,
+   "end": 60.025
   },
   {
    "id": "signes",
-   "start": 59.823,
-   "end": 69.334
+   "start": 60.956,
+   "end": 70.467
   },
   {
    "id": "outro",
-   "start": 70.262,
-   "end": 84.127
+   "start": 71.395,
+   "end": 85.26
   }
  ],
  "words": [
@@ -357,862 +357,892 @@
   {
    "text": "On",
    "start": 24.309,
-   "end": 24.425
+   "end": 24.402
   },
   {
    "text": "la",
-   "start": 24.425,
-   "end": 24.517
+   "start": 24.402,
+   "end": 24.483
   },
   {
    "text": "mesure",
-   "start": 24.517,
-   "end": 24.841
+   "start": 24.483,
+   "end": 24.807
   },
   {
    "text": "avec",
-   "start": 24.841,
-   "end": 25.05
+   "start": 24.807,
+   "end": 25.003
   },
   {
    "text": "un",
-   "start": 25.05,
-   "end": 25.108
+   "start": 25.003,
+   "end": 25.061
   },
   {
    "text": "saturomètre,",
-   "start": 25.108,
-   "end": 25.791
+   "start": 25.061,
+   "end": 25.733
   },
   {
    "text": "aussi",
-   "start": 26.115,
-   "end": 26.323
+   "start": 25.964,
+   "end": 26.149
   },
   {
    "text": "appelé",
-   "start": 26.323,
-   "end": 26.578
+   "start": 26.149,
+   "end": 26.392
   },
   {
    "text": "oxymètre",
-   "start": 26.578,
-   "end": 27.075
+   "start": 26.392,
+   "end": 26.89
   },
   {
    "text": "de",
-   "start": 27.075,
-   "end": 27.179
+   "start": 26.89,
+   "end": 27.006
   },
   {
    "text": "pouls :",
-   "start": 27.179,
-   "end": 27.446
+   "start": 27.006,
+   "end": 27.272
   },
   {
    "text": "une",
-   "start": 27.828,
-   "end": 27.92
+   "start": 27.677,
+   "end": 27.758
   },
   {
    "text": "pince",
-   "start": 27.92,
-   "end": 28.163
+   "start": 27.758,
+   "end": 27.99
   },
   {
    "text": "au",
-   "start": 28.163,
-   "end": 28.221
+   "start": 27.99,
+   "end": 28.036
   },
   {
    "text": "bout",
-   "start": 28.221,
-   "end": 28.325
+   "start": 28.036,
+   "end": 28.14
   },
   {
    "text": "du",
-   "start": 28.325,
-   "end": 28.429
+   "start": 28.14,
+   "end": 28.244
   },
   {
-   "text": "doigt.",
-   "start": 28.429,
-   "end": 28.73
-  },
-  {
-   "text": "Sa",
-   "start": 29.052,
-   "end": 29.214
-  },
-  {
-   "text": "lumière",
-   "start": 29.214,
-   "end": 29.515
-  },
-  {
-   "text": "traverse",
-   "start": 29.515,
-   "end": 29.873
-  },
-  {
-   "text": "le",
-   "start": 29.873,
-   "end": 29.989
-  },
-  {
-   "text": "doigt",
-   "start": 29.989,
-   "end": 30.174
-  },
-  {
-   "text": "à",
-   "start": 30.174,
-   "end": 30.244
-  },
-  {
-   "text": "chaque",
-   "start": 30.244,
-   "end": 30.452
-  },
-  {
-   "text": "battement",
-   "start": 30.452,
-   "end": 30.73
-  },
-  {
-   "text": "du",
-   "start": 30.73,
-   "end": 30.857
-  },
-  {
-   "text": "pouls :",
-   "start": 30.857,
-   "end": 31.112
-  },
-  {
-   "text": "c'est",
-   "start": 31.505,
-   "end": 31.598
-  },
-  {
-   "text": "pour",
-   "start": 31.598,
-   "end": 31.76
-  },
-  {
-   "text": "ça",
-   "start": 31.76,
-   "end": 31.864
-  },
-  {
-   "text": "qu'on",
-   "start": 31.864,
-   "end": 31.991
-  },
-  {
-   "text": "dit",
-   "start": 31.992,
-   "end": 32.107
-  },
-  {
-   "text": "pulsée.",
-   "start": 32.107,
-   "end": 32.605
-  },
-  {
-   "text": "Pour",
-   "start": 32.952,
-   "end": 33.056
-  },
-  {
-   "text": "une",
-   "start": 33.056,
-   "end": 33.126
-  },
-  {
-   "text": "valeur",
-   "start": 33.126,
-   "end": 33.346
-  },
-  {
-   "text": "fiable :",
-   "start": 33.346,
-   "end": 33.774
-  },
-  {
-   "text": "pas",
-   "start": 34.04,
-   "end": 34.121
-  },
-  {
-   "text": "de",
-   "start": 34.121,
-   "end": 34.202
-  },
-  {
-   "text": "vernis,",
-   "start": 34.202,
-   "end": 34.607
-  },
-  {
-   "text": "une",
-   "start": 34.966,
-   "end": 35.035
-  },
-  {
-   "text": "main",
-   "start": 35.035,
-   "end": 35.14
-  },
-  {
-   "text": "bien",
-   "start": 35.14,
-   "end": 35.302
-  },
-  {
-   "text": "chaude,",
-   "start": 35.302,
-   "end": 35.637
-  },
-  {
-   "text": "et",
-   "start": 35.904,
-   "end": 35.915
-  },
-  {
-   "text": "une",
-   "start": 35.915,
-   "end": 36.019
-  },
-  {
-   "text": "courbe",
-   "start": 36.019,
-   "end": 36.262
-  },
-  {
-   "text": "régulière.",
-   "start": 36.262,
-   "end": 36.864
-  },
-  {
-   "text": "Chez",
-   "start": 37.796,
-   "end": 37.993
-  },
-  {
-   "text": "l'adulte,",
-   "start": 37.993,
-   "end": 38.479
-  },
-  {
-   "text": "la",
-   "start": 38.629,
-   "end": 38.71
-  },
-  {
-   "text": "normale,",
-   "start": 38.71,
-   "end": 39.185
-  },
-  {
-   "text": "c'est",
-   "start": 39.44,
-   "end": 39.578
-  },
-  {
-   "text": "entre",
-   "start": 39.578,
-   "end": 39.895
-  },
-  {
-   "text": "95",
-   "start": 39.895,
-   "end": 40.338
-  },
-  {
-   "text": "et",
-   "start": 40.338,
-   "end": 40.465
-  },
-  {
-   "text": "100 %.",
-   "start": 40.465,
-   "end": 41.066
-  },
-  {
-   "text": "Mais",
-   "start": 41.442,
-   "end": 41.581
-  },
-  {
-   "text": "chez",
-   "start": 41.581,
-   "end": 41.696
-  },
-  {
-   "text": "un",
-   "start": 41.696,
-   "end": 41.801
-  },
-  {
-   "text": "patient",
-   "start": 41.801,
-   "end": 42.159
-  },
-  {
-   "text": "BPCO,",
-   "start": 42.159,
-   "end": 42.854
-  },
-  {
-   "text": "une",
-   "start": 43.19,
-   "end": 43.259
-  },
-  {
-   "text": "maladie",
-   "start": 43.259,
-   "end": 43.525
-  },
-  {
-   "text": "chronique",
-   "start": 43.525,
-   "end": 43.838
-  },
-  {
-   "text": "des",
-   "start": 43.838,
-   "end": 43.907
-  },
-  {
-   "text": "poumons,",
-   "start": 43.907,
-   "end": 44.254
-  },
-  {
-   "text": "le",
-   "start": 44.602,
-   "end": 44.648
-  },
-  {
-   "text": "médecin",
-   "start": 44.648,
-   "end": 44.949
-  },
-  {
-   "text": "fixe",
-   "start": 44.949,
-   "end": 45.203
-  },
-  {
-   "text": "souvent",
-   "start": 45.203,
-   "end": 45.493
-  },
-  {
-   "text": "une",
-   "start": 45.493,
-   "end": 45.574
-  },
-  {
-   "text": "cible",
-   "start": 45.574,
-   "end": 45.828
-  },
-  {
-   "text": "plus",
-   "start": 45.828,
-   "end": 45.967
-  },
-  {
-   "text": "basse :",
-   "start": 45.967,
-   "end": 46.326
-  },
-  {
-   "text": "entre",
-   "start": 46.569,
-   "end": 46.951
-  },
-  {
-   "text": "88",
-   "start": 46.951,
-   "end": 47.485
-  },
-  {
-   "text": "et",
-   "start": 47.485,
-   "end": 47.637
-  },
-  {
-   "text": "92 %.",
-   "start": 47.637,
-   "end": 48.171
-  },
-  {
-   "text": "En",
-   "start": 49.168,
-   "end": 49.307
-  },
-  {
-   "text": "dessous",
-   "start": 49.307,
-   "end": 49.573
-  },
-  {
-   "text": "de",
-   "start": 49.573,
-   "end": 49.666
-  },
-  {
-   "text": "95 %,",
-   "start": 49.666,
-   "end": 50.557
-  },
-  {
-   "text": "c'est",
-   "start": 50.997,
-   "end": 51.101
-  },
-  {
-   "text": "une",
-   "start": 51.101,
-   "end": 51.275
-  },
-  {
-   "text": "désaturation.",
-   "start": 51.275,
-   "end": 52.073
-  },
-  {
-   "text": "Et",
-   "start": 52.407,
-   "end": 52.5
-  },
-  {
-   "text": "en",
-   "start": 52.5,
-   "end": 52.557
-  },
-  {
-   "text": "dessous",
-   "start": 52.557,
-   "end": 52.789
-  },
-  {
-   "text": "de",
-   "start": 52.789,
-   "end": 52.87
-  },
-  {
-   "text": "90 %,",
-   "start": 52.87,
-   "end": 53.67
-  },
-  {
-   "text": "c'est",
-   "start": 54.132,
-   "end": 54.213
-  },
-  {
-   "text": "une",
-   "start": 54.213,
-   "end": 54.386
-  },
-  {
-   "text": "hypoxémie :",
-   "start": 54.386,
-   "end": 54.988
-  },
-  {
-   "text": "il",
-   "start": 55.312,
-   "end": 55.428
-  },
-  {
-   "text": "manque",
-   "start": 55.428,
-   "end": 55.625
-  },
-  {
-   "text": "d'oxygène",
-   "start": 55.625,
-   "end": 56.088
-  },
-  {
-   "text": "dans",
-   "start": 56.088,
-   "end": 56.18
-  },
-  {
-   "text": "le",
-   "start": 56.18,
-   "end": 56.261
-  },
-  {
-   "text": "sang.",
-   "start": 56.261,
-   "end": 56.551
-  },
-  {
-   "text": "C'est",
-   "start": 56.878,
-   "end": 57.052
-  },
-  {
-   "text": "une",
-   "start": 57.052,
-   "end": 57.226
-  },
-  {
-   "text": "urgence,",
-   "start": 57.226,
-   "end": 57.735
-  },
-  {
-   "text": "on",
-   "start": 57.932,
-   "end": 57.955
-  },
-  {
-   "text": "prévient",
-   "start": 57.955,
-   "end": 58.29
-  },
-  {
-   "text": "tout",
-   "start": 58.29,
-   "end": 58.406
-  },
-  {
-   "text": "de",
-   "start": 58.406,
-   "end": 58.441
-  },
-  {
-   "text": "suite !",
-   "start": 58.441,
-   "end": 58.892
-  },
-  {
-   "text": "Le",
-   "start": 59.823,
-   "end": 59.985
-  },
-  {
-   "text": "patient",
-   "start": 59.985,
-   "end": 60.286
-  },
-  {
-   "text": "peut",
-   "start": 60.286,
-   "end": 60.379
-  },
-  {
-   "text": "être",
-   "start": 60.379,
-   "end": 60.564
-  },
-  {
-   "text": "essoufflé,",
-   "start": 60.564,
-   "end": 61.061
-  },
-  {
-   "text": "avoir",
-   "start": 61.27,
-   "end": 61.501
-  },
-  {
-   "text": "les",
-   "start": 61.501,
-   "end": 61.582
-  },
-  {
-   "text": "lèvres",
-   "start": 61.582,
-   "end": 61.849
-  },
-  {
-   "text": "et",
-   "start": 61.849,
-   "end": 61.872
-  },
-  {
-   "text": "les",
-   "start": 61.872,
-   "end": 61.964
-  },
-  {
-   "text": "ongles",
-   "start": 61.964,
-   "end": 62.242
-  },
-  {
-   "text": "bleutés :",
-   "start": 62.242,
-   "end": 62.682
-  },
-  {
-   "text": "c'est",
-   "start": 63.052,
-   "end": 63.156
-  },
-  {
-   "text": "la",
-   "start": 63.156,
-   "end": 63.249
-  },
-  {
-   "text": "cyanose.",
-   "start": 63.249,
-   "end": 63.839
-  },
-  {
-   "text": "Il",
-   "start": 64.152,
-   "end": 64.314
-  },
-  {
-   "text": "peut",
-   "start": 64.314,
-   "end": 64.406
-  },
-  {
-   "text": "aussi",
-   "start": 64.406,
-   "end": 64.649
-  },
-  {
-   "text": "être",
-   "start": 64.649,
-   "end": 64.811
-  },
-  {
-   "text": "agité,",
-   "start": 64.811,
-   "end": 65.286
+   "text": "doigt…",
+   "start": 28.244,
+   "end": 28.522
   },
   {
    "text": "ou",
-   "start": 65.564,
-   "end": 65.622
+   "start": 28.869,
+   "end": 28.962
   },
   {
-   "text": "confus.",
-   "start": 65.622,
-   "end": 66.096
-  },
-  {
-   "text": "Alors",
-   "start": 66.464,
-   "end": 66.672
-  },
-  {
-   "text": "on",
-   "start": 66.672,
-   "end": 66.707
-  },
-  {
-   "text": "ne",
-   "start": 66.707,
-   "end": 66.776
-  },
-  {
-   "text": "regarde",
-   "start": 66.776,
-   "end": 67.124
-  },
-  {
-   "text": "pas",
-   "start": 67.124,
-   "end": 67.239
-  },
-  {
-   "text": "que",
-   "start": 67.239,
-   "end": 67.343
+   "text": "sur",
+   "start": 28.962,
+   "end": 29.089
   },
   {
    "text": "le",
-   "start": 67.343,
-   "end": 67.436
+   "start": 29.089,
+   "end": 29.17
   },
   {
-   "text": "chiffre :",
-   "start": 67.436,
-   "end": 67.795
+   "text": "lobe",
+   "start": 29.17,
+   "end": 29.321
   },
   {
-   "text": "on",
-   "start": 68.084,
-   "end": 68.107
+   "text": "de",
+   "start": 29.321,
+   "end": 29.413
   },
   {
-   "text": "regarde",
-   "start": 68.107,
-   "end": 68.524
+   "text": "l'oreille.",
+   "start": 29.413,
+   "end": 29.888
   },
   {
-   "text": "toujours",
-   "start": 68.524,
-   "end": 68.802
+   "text": "Sa",
+   "start": 30.2,
+   "end": 30.362
+  },
+  {
+   "text": "lumière",
+   "start": 30.362,
+   "end": 30.652
+  },
+  {
+   "text": "traverse",
+   "start": 30.652,
+   "end": 30.999
   },
   {
    "text": "le",
-   "start": 68.802,
-   "end": 68.871
+   "start": 30.999,
+   "end": 31.103
   },
   {
-   "text": "patient !",
-   "start": 68.871,
-   "end": 69.334
+   "text": "doigt",
+   "start": 31.103,
+   "end": 31.3
   },
   {
-   "text": "Petit",
-   "start": 70.262,
-   "end": 70.551
+   "text": "à",
+   "start": 31.3,
+   "end": 31.381
   },
   {
-   "text": "récap !",
-   "start": 70.551,
-   "end": 71.107
+   "text": "chaque",
+   "start": 31.381,
+   "end": 31.589
   },
   {
-   "text": "La",
-   "start": 71.45,
-   "end": 71.601
+   "text": "battement",
+   "start": 31.589,
+   "end": 31.867
   },
   {
-   "text": "SpO₂,",
-   "start": 71.601,
-   "end": 72.318
+   "text": "du",
+   "start": 31.867,
+   "end": 31.994
+  },
+  {
+   "text": "pouls :",
+   "start": 31.994,
+   "end": 32.249
   },
   {
    "text": "c'est",
-   "start": 72.677,
-   "end": 72.805
+   "start": 32.631,
+   "end": 32.723
   },
   {
-   "text": "l'hémoglobine",
-   "start": 72.805,
-   "end": 73.337
+   "text": "pour",
+   "start": 32.723,
+   "end": 32.885
   },
   {
-   "text": "chargée",
-   "start": 73.337,
-   "end": 73.65
+   "text": "ça",
+   "start": 32.885,
+   "end": 32.978
   },
   {
-   "text": "en",
-   "start": 73.65,
-   "end": 73.707
+   "text": "qu'on",
+   "start": 32.978,
+   "end": 33.105
   },
   {
-   "text": "oxygène,",
-   "start": 73.707,
-   "end": 74.309
+   "text": "dit",
+   "start": 33.105,
+   "end": 33.221
   },
   {
-   "text": "mesurée",
-   "start": 74.61,
-   "end": 74.969
+   "text": "pulsée.",
+   "start": 33.221,
+   "end": 33.719
   },
   {
-   "text": "au",
-   "start": 74.969,
-   "end": 75.038
-  },
-  {
-   "text": "doigt.",
-   "start": 75.038,
-   "end": 75.374
-  },
-  {
-   "text": "Normale :",
-   "start": 75.687,
-   "end": 76.231
-  },
-  {
-   "text": "entre",
-   "start": 76.578,
-   "end": 76.89
-  },
-  {
-   "text": "95",
-   "start": 76.89,
-   "end": 77.326
-  },
-  {
-   "text": "et",
-   "start": 77.326,
-   "end": 77.451
-  },
-  {
-   "text": "100 %.",
-   "start": 77.451,
-   "end": 78.043
-  },
-  {
-   "text": "En",
-   "start": 78.422,
-   "end": 78.584
-  },
-  {
-   "text": "dessous",
-   "start": 78.584,
-   "end": 78.862
-  },
-  {
-   "text": "de",
-   "start": 78.862,
-   "end": 78.943
-  },
-  {
-   "text": "95 :",
-   "start": 78.943,
-   "end": 79.741
-  },
-  {
-   "text": "désaturation.",
-   "start": 79.984,
-   "end": 80.829
-  },
-  {
-   "text": "En",
-   "start": 81.152,
-   "end": 81.291
-  },
-  {
-   "text": "dessous",
-   "start": 81.291,
-   "end": 81.557
-  },
-  {
-   "text": "de",
-   "start": 81.557,
-   "end": 81.638
-  },
-  {
-   "text": "90 :",
-   "start": 81.638,
-   "end": 82.368
-  },
-  {
-   "text": "hypoxémie,",
-   "start": 82.599,
-   "end": 83.201
+   "text": "Pour",
+   "start": 34.043,
+   "end": 34.159
   },
   {
    "text": "une",
-   "start": 83.479,
-   "end": 83.56
+   "start": 34.159,
+   "end": 34.228
+  },
+  {
+   "text": "valeur",
+   "start": 34.228,
+   "end": 34.459
+  },
+  {
+   "text": "fiable :",
+   "start": 34.459,
+   "end": 34.899
+  },
+  {
+   "text": "pas",
+   "start": 35.154,
+   "end": 35.247
+  },
+  {
+   "text": "de",
+   "start": 35.247,
+   "end": 35.328
+  },
+  {
+   "text": "vernis,",
+   "start": 35.328,
+   "end": 35.744
+  },
+  {
+   "text": "une",
+   "start": 36.08,
+   "end": 36.149
+  },
+  {
+   "text": "main",
+   "start": 36.149,
+   "end": 36.253
+  },
+  {
+   "text": "bien",
+   "start": 36.253,
+   "end": 36.404
+  },
+  {
+   "text": "chaude,",
+   "start": 36.404,
+   "end": 36.751
+  },
+  {
+   "text": "et",
+   "start": 37.006,
+   "end": 37.029
+  },
+  {
+   "text": "une",
+   "start": 37.029,
+   "end": 37.122
+  },
+  {
+   "text": "courbe",
+   "start": 37.122,
+   "end": 37.365
+  },
+  {
+   "text": "régulière.",
+   "start": 37.365,
+   "end": 37.99
+  },
+  {
+   "text": "Chez",
+   "start": 38.929,
+   "end": 39.126
+  },
+  {
+   "text": "l'adulte,",
+   "start": 39.126,
+   "end": 39.612
+  },
+  {
+   "text": "la",
+   "start": 39.762,
+   "end": 39.843
+  },
+  {
+   "text": "normale,",
+   "start": 39.843,
+   "end": 40.318
+  },
+  {
+   "text": "c'est",
+   "start": 40.573,
+   "end": 40.711
+  },
+  {
+   "text": "entre",
+   "start": 40.711,
+   "end": 41.028
+  },
+  {
+   "text": "95",
+   "start": 41.028,
+   "end": 41.471
+  },
+  {
+   "text": "et",
+   "start": 41.471,
+   "end": 41.598
+  },
+  {
+   "text": "100 %.",
+   "start": 41.598,
+   "end": 42.199
+  },
+  {
+   "text": "Mais",
+   "start": 42.575,
+   "end": 42.714
+  },
+  {
+   "text": "chez",
+   "start": 42.714,
+   "end": 42.829
+  },
+  {
+   "text": "un",
+   "start": 42.829,
+   "end": 42.934
+  },
+  {
+   "text": "patient",
+   "start": 42.934,
+   "end": 43.292
+  },
+  {
+   "text": "BPCO,",
+   "start": 43.292,
+   "end": 43.987
+  },
+  {
+   "text": "une",
+   "start": 44.323,
+   "end": 44.392
+  },
+  {
+   "text": "maladie",
+   "start": 44.392,
+   "end": 44.658
+  },
+  {
+   "text": "chronique",
+   "start": 44.658,
+   "end": 44.971
+  },
+  {
+   "text": "des",
+   "start": 44.971,
+   "end": 45.04
+  },
+  {
+   "text": "poumons,",
+   "start": 45.04,
+   "end": 45.387
+  },
+  {
+   "text": "le",
+   "start": 45.735,
+   "end": 45.781
+  },
+  {
+   "text": "médecin",
+   "start": 45.781,
+   "end": 46.082
+  },
+  {
+   "text": "fixe",
+   "start": 46.082,
+   "end": 46.336
+  },
+  {
+   "text": "souvent",
+   "start": 46.336,
+   "end": 46.626
+  },
+  {
+   "text": "une",
+   "start": 46.626,
+   "end": 46.707
+  },
+  {
+   "text": "cible",
+   "start": 46.707,
+   "end": 46.961
+  },
+  {
+   "text": "plus",
+   "start": 46.961,
+   "end": 47.1
+  },
+  {
+   "text": "basse :",
+   "start": 47.1,
+   "end": 47.459
+  },
+  {
+   "text": "entre",
+   "start": 47.702,
+   "end": 48.014
+  },
+  {
+   "text": "88",
+   "start": 48.014,
+   "end": 48.674
+  },
+  {
+   "text": "et",
+   "start": 48.686,
+   "end": 48.72
+  },
+  {
+   "text": "95 %.",
+   "start": 48.721,
+   "end": 49.82
+  },
+  {
+   "text": "En",
+   "start": 50.301,
+   "end": 50.44
+  },
+  {
+   "text": "dessous",
+   "start": 50.44,
+   "end": 50.706
+  },
+  {
+   "text": "de",
+   "start": 50.706,
+   "end": 50.799
+  },
+  {
+   "text": "95 %,",
+   "start": 50.799,
+   "end": 51.69
+  },
+  {
+   "text": "c'est",
+   "start": 52.13,
+   "end": 52.234
+  },
+  {
+   "text": "une",
+   "start": 52.234,
+   "end": 52.408
+  },
+  {
+   "text": "désaturation.",
+   "start": 52.408,
+   "end": 53.206
+  },
+  {
+   "text": "Et",
+   "start": 53.54,
+   "end": 53.633
+  },
+  {
+   "text": "en",
+   "start": 53.633,
+   "end": 53.69
+  },
+  {
+   "text": "dessous",
+   "start": 53.69,
+   "end": 53.922
+  },
+  {
+   "text": "de",
+   "start": 53.922,
+   "end": 54.003
+  },
+  {
+   "text": "90 %,",
+   "start": 54.003,
+   "end": 54.803
+  },
+  {
+   "text": "c'est",
+   "start": 55.265,
+   "end": 55.346
+  },
+  {
+   "text": "une",
+   "start": 55.346,
+   "end": 55.519
+  },
+  {
+   "text": "hypoxémie :",
+   "start": 55.519,
+   "end": 56.121
+  },
+  {
+   "text": "il",
+   "start": 56.445,
+   "end": 56.561
+  },
+  {
+   "text": "manque",
+   "start": 56.561,
+   "end": 56.758
+  },
+  {
+   "text": "d'oxygène",
+   "start": 56.758,
+   "end": 57.221
+  },
+  {
+   "text": "dans",
+   "start": 57.221,
+   "end": 57.313
+  },
+  {
+   "text": "le",
+   "start": 57.313,
+   "end": 57.394
+  },
+  {
+   "text": "sang.",
+   "start": 57.394,
+   "end": 57.684
+  },
+  {
+   "text": "C'est",
+   "start": 58.011,
+   "end": 58.185
+  },
+  {
+   "text": "une",
+   "start": 58.185,
+   "end": 58.359
+  },
+  {
+   "text": "urgence,",
+   "start": 58.359,
+   "end": 58.868
+  },
+  {
+   "text": "on",
+   "start": 59.065,
+   "end": 59.088
+  },
+  {
+   "text": "prévient",
+   "start": 59.088,
+   "end": 59.423
+  },
+  {
+   "text": "tout",
+   "start": 59.423,
+   "end": 59.539
+  },
+  {
+   "text": "de",
+   "start": 59.539,
+   "end": 59.574
+  },
+  {
+   "text": "suite !",
+   "start": 59.574,
+   "end": 60.025
+  },
+  {
+   "text": "Le",
+   "start": 60.956,
+   "end": 61.118
+  },
+  {
+   "text": "patient",
+   "start": 61.118,
+   "end": 61.419
+  },
+  {
+   "text": "peut",
+   "start": 61.419,
+   "end": 61.512
+  },
+  {
+   "text": "être",
+   "start": 61.512,
+   "end": 61.697
+  },
+  {
+   "text": "essoufflé,",
+   "start": 61.697,
+   "end": 62.194
+  },
+  {
+   "text": "avoir",
+   "start": 62.403,
+   "end": 62.634
+  },
+  {
+   "text": "les",
+   "start": 62.634,
+   "end": 62.715
+  },
+  {
+   "text": "lèvres",
+   "start": 62.715,
+   "end": 62.982
+  },
+  {
+   "text": "et",
+   "start": 62.982,
+   "end": 63.005
+  },
+  {
+   "text": "les",
+   "start": 63.005,
+   "end": 63.097
+  },
+  {
+   "text": "ongles",
+   "start": 63.097,
+   "end": 63.375
+  },
+  {
+   "text": "bleutés :",
+   "start": 63.375,
+   "end": 63.815
+  },
+  {
+   "text": "c'est",
+   "start": 64.185,
+   "end": 64.289
+  },
+  {
+   "text": "la",
+   "start": 64.289,
+   "end": 64.382
+  },
+  {
+   "text": "cyanose.",
+   "start": 64.382,
+   "end": 64.972
+  },
+  {
+   "text": "Il",
+   "start": 65.285,
+   "end": 65.447
+  },
+  {
+   "text": "peut",
+   "start": 65.447,
+   "end": 65.539
+  },
+  {
+   "text": "aussi",
+   "start": 65.539,
+   "end": 65.782
+  },
+  {
+   "text": "être",
+   "start": 65.782,
+   "end": 65.944
+  },
+  {
+   "text": "agité,",
+   "start": 65.944,
+   "end": 66.419
+  },
+  {
+   "text": "ou",
+   "start": 66.697,
+   "end": 66.755
+  },
+  {
+   "text": "confus.",
+   "start": 66.755,
+   "end": 67.229
+  },
+  {
+   "text": "Alors",
+   "start": 67.597,
+   "end": 67.805
+  },
+  {
+   "text": "on",
+   "start": 67.805,
+   "end": 67.84
+  },
+  {
+   "text": "ne",
+   "start": 67.84,
+   "end": 67.909
+  },
+  {
+   "text": "regarde",
+   "start": 67.909,
+   "end": 68.257
+  },
+  {
+   "text": "pas",
+   "start": 68.257,
+   "end": 68.372
+  },
+  {
+   "text": "que",
+   "start": 68.372,
+   "end": 68.476
+  },
+  {
+   "text": "le",
+   "start": 68.476,
+   "end": 68.569
+  },
+  {
+   "text": "chiffre :",
+   "start": 68.569,
+   "end": 68.928
+  },
+  {
+   "text": "on",
+   "start": 69.217,
+   "end": 69.24
+  },
+  {
+   "text": "regarde",
+   "start": 69.24,
+   "end": 69.657
+  },
+  {
+   "text": "toujours",
+   "start": 69.657,
+   "end": 69.935
+  },
+  {
+   "text": "le",
+   "start": 69.935,
+   "end": 70.004
+  },
+  {
+   "text": "patient !",
+   "start": 70.004,
+   "end": 70.467
+  },
+  {
+   "text": "Petit",
+   "start": 71.395,
+   "end": 71.684
+  },
+  {
+   "text": "récap !",
+   "start": 71.684,
+   "end": 72.24
+  },
+  {
+   "text": "La",
+   "start": 72.583,
+   "end": 72.734
+  },
+  {
+   "text": "SpO₂,",
+   "start": 72.734,
+   "end": 73.451
+  },
+  {
+   "text": "c'est",
+   "start": 73.81,
+   "end": 73.938
+  },
+  {
+   "text": "l'hémoglobine",
+   "start": 73.938,
+   "end": 74.47
+  },
+  {
+   "text": "chargée",
+   "start": 74.47,
+   "end": 74.783
+  },
+  {
+   "text": "en",
+   "start": 74.783,
+   "end": 74.84
+  },
+  {
+   "text": "oxygène,",
+   "start": 74.84,
+   "end": 75.442
+  },
+  {
+   "text": "mesurée",
+   "start": 75.743,
+   "end": 76.102
+  },
+  {
+   "text": "au",
+   "start": 76.102,
+   "end": 76.171
+  },
+  {
+   "text": "doigt.",
+   "start": 76.171,
+   "end": 76.507
+  },
+  {
+   "text": "Normale :",
+   "start": 76.82,
+   "end": 77.364
+  },
+  {
+   "text": "entre",
+   "start": 77.711,
+   "end": 78.023
+  },
+  {
+   "text": "95",
+   "start": 78.023,
+   "end": 78.459
+  },
+  {
+   "text": "et",
+   "start": 78.459,
+   "end": 78.584
+  },
+  {
+   "text": "100 %.",
+   "start": 78.584,
+   "end": 79.176
+  },
+  {
+   "text": "En",
+   "start": 79.555,
+   "end": 79.717
+  },
+  {
+   "text": "dessous",
+   "start": 79.717,
+   "end": 79.995
+  },
+  {
+   "text": "de",
+   "start": 79.995,
+   "end": 80.076
+  },
+  {
+   "text": "95 :",
+   "start": 80.076,
+   "end": 80.874
+  },
+  {
+   "text": "désaturation.",
+   "start": 81.117,
+   "end": 81.962
+  },
+  {
+   "text": "En",
+   "start": 82.285,
+   "end": 82.424
+  },
+  {
+   "text": "dessous",
+   "start": 82.424,
+   "end": 82.69
+  },
+  {
+   "text": "de",
+   "start": 82.69,
+   "end": 82.771
+  },
+  {
+   "text": "90 :",
+   "start": 82.771,
+   "end": 83.501
+  },
+  {
+   "text": "hypoxémie,",
+   "start": 83.732,
+   "end": 84.334
+  },
+  {
+   "text": "une",
+   "start": 84.612,
+   "end": 84.693
   },
   {
    "text": "urgence !",
-   "start": 83.56,
-   "end": 84.127
+   "start": 84.693,
+   "end": 85.26
   }
  ]
 }

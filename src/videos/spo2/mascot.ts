@@ -29,6 +29,7 @@ export const MASCOT: Beat[] = [
 	/* ── mesure ── */
 	{at: abs('mesure', 'saturomètre'), via: 'pop', key: 'gestes/presente', ...R},
 	{at: abs('mesure', 'pince'), key: 'gestes/regardez', ...R},
+	{at: abs('mesure', 'lobe'), key: 'situations/idee', ...R},
 	{at: abs('mesure', 'battement'), key: 'expressions/coeur-mains', ...R},
 	{at: abs('mesure', 'fiable'), key: 'gestes/astuce', ...R},
 	{at: abs('mesure', 'vernis'), key: 'gestes/erreur', ...R},
