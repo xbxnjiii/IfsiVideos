@@ -580,25 +580,25 @@ export const Masser: React.FC = () => {
 	const ENF = at('masser', 'enfonce');
 	const CINQ = at('masser', '5');
 	const CM = at('masser', 'centimètres');
-	const CENT = at('masser', '100');
-	const C120 = at('masser', '120');
+	const ADULTE = at('masser', "l'adulte");
+	const CHANSON = at('masser', 'chanson');
 	const STAY = at('masser', 'staying');
 	const press = compress(frame, ENF);
 	const arms = frame < BRAS - 4 ? 0 : spring({frame: frame - (BRAS - 4), fps, config: {damping: 14, stiffness: 140}});
 	const target = interpolate(frame, [CENTRE - 2, CENTRE + 8], [0, 1], clamp);
 	const gauge = useSoft(CINQ - 4, true);
-	const rate = useSoft(CENT - 4, true);
+	const rate = useSoft(ADULTE - 4, true);
 	const keys: CamKey[] = [
 		{at: CENTRE - 2, s: 1.8, x: 305, y: 336, dur: 16},
 		{at: BRAS - 4, s: 1.25, x: 420, y: 330, dur: 14},
 		{at: ENF, s: 1.5, x: 360, y: 330, dur: 14},
-		{at: CENT - 4, s: 1.15, x: 420, y: 320, dur: 16},
+		{at: ADULTE - 4, s: 1.15, x: 420, y: 320, dur: 16},
 		{at: STAY - 2, s: 1, dur: 20},
 	];
 	return (
 		<AbsoluteFill>
 			<LiveBackground />
-			<Camera punches={[MASSE + 1, CENTRE + 1, TENDUS + 1, CINQ + 1, CENT + 1, STAY + 1]} shakes={[STAY + 2]}>
+			<Camera punches={[MASSE + 1, CENTRE + 1, TENDUS + 1, CINQ + 1, ADULTE + 1, STAY + 1]} shakes={[STAY + 2]}>
 				<Head kicker="Masser" kAt={PUIS} title="On *masse* !" tAt={MASSE - 2} />
 				<Stage y={LAY.stageY} h={600} at={PUIS + 2} bumps={[CENTRE, STAY]}>
 					<ZoomCam keys={keys} w={936} h={600}>
@@ -620,12 +620,15 @@ export const Masser: React.FC = () => {
 							<DepthGauge press={press} height={300} />
 						</div>
 					) : null}
-					{frame >= CENT - 4 ? (
-						<div style={{position: 'absolute', left: 540, top: 34, opacity: Math.min(1, rate * 1.5), transform: `scale(${0.6 + 0.4 * rate})`, transformOrigin: 'left top'}}>
-							<div style={{display: 'flex', alignItems: 'center', gap: 14, padding: '10px 24px 10px 12px', borderRadius: 999, background: LPI.paper, border: `5px solid ${N}`, boxShadow: SHADOW}}>
-								<div style={{width: 46, height: 46, borderRadius: 23, background: LPI.pink, transform: `scale(${1 + 0.3 * press})`}} />
-								<span style={{fontFamily: FONT.title, fontWeight: 900, fontSize: 46, color: N}}>100–120</span>
-								<span style={{fontFamily: FONT.title, fontWeight: 800, fontSize: 30, color: LPI.blue}}>/min</span>
+					{/* ces gestes (5 à 6 cm, bras tendus) sont ceux de l'adulte */}
+					{frame >= ADULTE - 4 ? (
+						<div style={{position: 'absolute', left: 520, top: 34, opacity: Math.min(1, rate * 1.5), transform: `scale(${0.6 + 0.4 * rate})`, transformOrigin: 'left top'}}>
+							<div style={{display: 'flex', alignItems: 'center', gap: 14, padding: '10px 26px 10px 12px', borderRadius: 999, background: LPI.paper, border: `5px solid ${N}`, boxShadow: SHADOW}}>
+								<svg width={50} height={50} viewBox="0 0 40 40">
+									<circle cx={20} cy={20} r={19} fill={LPI.blue} />
+									<path d="M11 21 L17.5 27 L29 14" fill="none" stroke={LPI.paper} strokeWidth={5} strokeLinecap="round" strokeLinejoin="round" />
+								</svg>
+								<span style={{fontFamily: FONT.title, fontWeight: 900, fontSize: 44, color: N, whiteSpace: 'nowrap'}}>chez l'adulte</span>
 							</div>
 						</div>
 					) : null}
@@ -646,7 +649,7 @@ export const Masser: React.FC = () => {
 					<CheckChip at={CENTRE} label="centre de la poitrine" size={40} />
 					<CheckChip at={TENDUS} label="bras tendus" size={40} />
 					<CheckChip at={CM} label="5 à 6 cm" size={40} />
-					<CheckChip at={C120} label="100 à 120 / min" size={40} />
+					<CheckChip at={CHANSON} label="♪ Staying Alive" size={40} />
 				</div>
 			</Camera>
 			<Sfx name="whoosh" at={BRAS - 4} volume={0.07} />
@@ -655,7 +658,7 @@ export const Masser: React.FC = () => {
 			))}
 			<Sfx name="pop" at={CENTRE} volume={0.1} />
 			<Sfx name="pop" at={CINQ} volume={0.1} />
-			<Sfx name="pop" at={CENT} volume={0.1} />
+			<Sfx name="pop" at={ADULTE} volume={0.1} />
 			<Sfx name="stamp" at={STAY} volume={0.11} />
 		</AbsoluteFill>
 	);

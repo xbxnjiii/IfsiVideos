@@ -25,7 +25,7 @@
   {
    "id": "masser",
    "start": 40.348,
-   "end": 49.678
+   "end": 49.627
   },
   {
    "id": "rcp",
@@ -810,59 +810,54 @@
    "end": 46.135
   },
   {
-   "text": "100",
+   "text": "chez",
    "start": 46.444,
-   "end": 46.624
+   "end": 46.676
   },
   {
-   "text": "à",
-   "start": 46.624,
-   "end": 46.689
+   "text": "l'adulte,",
+   "start": 46.676,
+   "end": 47.294
   },
   {
-   "text": "120",
-   "start": 46.689,
-   "end": 46.972
+   "text": "sur",
+   "start": 47.565,
+   "end": 47.733
   },
   {
-   "text": "fois",
-   "start": 46.972,
-   "end": 47.153
-  },
-  {
-   "text": "par",
-   "start": 47.153,
-   "end": 47.307
-  },
-  {
-   "text": "minute.",
-   "start": 47.307,
+   "text": "le",
+   "start": 47.733,
    "end": 47.81
   },
   {
-   "text": "Le",
-   "start": 48.222,
-   "end": 48.351
-  },
-  {
    "text": "rythme",
-   "start": 48.351,
-   "end": 48.686
+   "start": 47.81,
+   "end": 48.081
   },
   {
    "text": "de",
-   "start": 48.686,
-   "end": 48.789
+   "start": 48.081,
+   "end": 48.158
+  },
+  {
+   "text": "la",
+   "start": 48.158,
+   "end": 48.248
+  },
+  {
+   "text": "chanson",
+   "start": 48.248,
+   "end": 48.686
   },
   {
    "text": "Staying",
-   "start": 48.789,
-   "end": 49.137
+   "start": 48.686,
+   "end": 49.111
   },
   {
    "text": "Alive !",
-   "start": 49.137,
-   "end": 49.678
+   "start": 49.112,
+   "end": 49.627
   },
   {
    "text": "C'est",
