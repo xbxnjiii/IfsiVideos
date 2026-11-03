@@ -33,6 +33,8 @@ pas de logiciel de montage, pas de banque d'images.
 | 21 | Les 5 indications de l'hygiène des mains (liste à retenir) | `Hygiene-Mains` | [voix/21-hygiene-mains.script.json](voix/21-hygiene-mains.script.json) | [storyboard](docs/lpi/storyboard-hygiene-mains.md) |
 | 22 | Les précautions standard (liste à retenir) | `Precautions-Standard` | [voix/22-precautions-standard.script.json](voix/22-precautions-standard.script.json) | [storyboard](docs/lpi/storyboard-precautions-standard.md) |
 | 23 | L'insuffisance cardiaque (pathologie) | `Insuffisance-Cardiaque` | [voix/23-insuffisance-cardiaque.script.json](voix/23-insuffisance-cardiaque.script.json) | [storyboard](docs/lpi/storyboard-insuffisance-cardiaque.md) |
+| 24 | La douleur 1/2 : l'auto-évaluation (série) | `Douleur-1` | [voix/24-douleur-1.script.json](voix/24-douleur-1.script.json) | [storyboard](docs/lpi/storyboard-douleur-serie.md) |
+| 25 | La douleur 2/2 : l'hétéro-évaluation (série) | `Douleur-2` | [voix/25-douleur-2.script.json](voix/25-douleur-2.script.json) | [storyboard](docs/lpi/storyboard-douleur-serie.md) |
 
 ## Utilisation
 

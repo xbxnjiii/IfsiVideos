@@ -9,7 +9,18 @@ const frames = process.argv.slice(2).map(Number);
 const out = process.env.OUT ?? 'out/stills';
 const id = process.env.COMP ?? "Constantes";
 const scale = Number(process.env.SCALE ?? 0.4);
-const browserExecutable = process.env.BROWSER ?? '/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell';
+// navigateur sans interface préinstallé, quelle que soit sa version (BROWSER=… pour en forcer un autre)
+const findHeadless = () => {
+	const root = '/opt/pw-browsers';
+	if (!fs.existsSync(root)) return null;
+	for (const d of fs.readdirSync(root).filter((n) => n.startsWith('chromium_headless_shell-')).sort().reverse()) {
+		for (const exe of ['chrome-linux/headless_shell', 'chrome-headless-shell-linux64/chrome-headless-shell']) {
+			if (fs.existsSync(`${root}/${d}/${exe}`)) return `${root}/${d}/${exe}`;
+		}
+	}
+	return null;
+};
+const browserExecutable = process.env.BROWSER ?? findHeadless();
 fs.mkdirSync(out, {recursive: true});
 const serveUrl = await bundle({entryPoint: path.resolve('src/index.ts')});
 const composition = await selectComposition({serveUrl, id, browserExecutable});

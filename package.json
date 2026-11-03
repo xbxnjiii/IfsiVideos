@@ -35,7 +35,9 @@
     "render:prise-de-sang": "remotion render Prise-De-Sang out/20-prise-de-sang.mp4",
     "render:hygiene-mains": "remotion render Hygiene-Mains out/21-hygiene-mains.mp4",
     "render:precautions-standard": "remotion render Precautions-Standard out/22-precautions-standard.mp4",
-    "render:insuffisance-cardiaque": "remotion render Insuffisance-Cardiaque out/23-insuffisance-cardiaque.mp4"
+    "render:insuffisance-cardiaque": "remotion render Insuffisance-Cardiaque out/23-insuffisance-cardiaque.mp4",
+    "render:douleur-1": "remotion render Douleur-1 out/24-douleur-1.mp4",
+    "render:douleur-2": "remotion render Douleur-2 out/25-douleur-2.mp4"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.532",

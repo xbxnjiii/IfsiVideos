@@ -1,0 +1,1358 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 90.25,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.05,
+   "end": 9.978
+  },
+  {
+   "id": "serie",
+   "start": 10.934,
+   "end": 16.209
+  },
+  {
+   "id": "hetero",
+   "start": 17.158,
+   "end": 25.745
+  },
+  {
+   "id": "algoplus",
+   "start": 26.684,
+   "end": 40.434
+  },
+  {
+   "id": "doloplus",
+   "start": 41.37,
+   "end": 52.883
+  },
+  {
+   "id": "bps",
+   "start": 53.824,
+   "end": 62.087
+  },
+  {
+   "id": "evendol",
+   "start": 63.038,
+   "end": 74.025
+  },
+  {
+   "id": "outro",
+   "start": 74.964,
+   "end": 89.889
+  }
+ ],
+ "words": [
+  {
+   "text": "Il",
+   "start": 0.05,
+   "end": 0.23
+  },
+  {
+   "text": "ne",
+   "start": 0.23,
+   "end": 0.314
+  },
+  {
+   "text": "peut",
+   "start": 0.314,
+   "end": 0.423
+  },
+  {
+   "text": "plus",
+   "start": 0.423,
+   "end": 0.567
+  },
+  {
+   "text": "parler.",
+   "start": 0.567,
+   "end": 1.024
+  },
+  {
+   "text": "Il",
+   "start": 1.348,
+   "end": 1.516
+  },
+  {
+   "text": "ne",
+   "start": 1.516,
+   "end": 1.576
+  },
+  {
+   "text": "peut",
+   "start": 1.576,
+   "end": 1.672
+  },
+  {
+   "text": "pas",
+   "start": 1.672,
+   "end": 1.78
+  },
+  {
+   "text": "te",
+   "start": 1.78,
+   "end": 1.912
+  },
+  {
+   "text": "dire",
+   "start": 1.913,
+   "end": 2.093
+  },
+  {
+   "text": "qu'il",
+   "start": 2.093,
+   "end": 2.261
+  },
+  {
+   "text": "a",
+   "start": 2.261,
+   "end": 2.297
+  },
+  {
+   "text": "mal…",
+   "start": 2.297,
+   "end": 2.586
+  },
+  {
+   "text": "et",
+   "start": 2.766,
+   "end": 2.802
+  },
+  {
+   "text": "pourtant,",
+   "start": 2.802,
+   "end": 3.259
+  },
+  {
+   "text": "il",
+   "start": 3.487,
+   "end": 3.595
+  },
+  {
+   "text": "souffre.",
+   "start": 3.595,
+   "end": 4.076
+  },
+  {
+   "text": "Comment",
+   "start": 4.401,
+   "end": 4.689
+  },
+  {
+   "text": "le",
+   "start": 4.689,
+   "end": 4.774
+  },
+  {
+   "text": "savoir ?",
+   "start": 4.774,
+   "end": 5.387
+  },
+  {
+   "text": "Avec",
+   "start": 5.723,
+   "end": 6.024
+  },
+  {
+   "text": "la",
+   "start": 6.024,
+   "end": 6.108
+  },
+  {
+   "text": "bonne",
+   "start": 6.108,
+   "end": 6.288
+  },
+  {
+   "text": "échelle !",
+   "start": 6.288,
+   "end": 6.793
+  },
+  {
+   "text": "Car",
+   "start": 7.117,
+   "end": 7.322
+  },
+  {
+   "text": "la",
+   "start": 7.322,
+   "end": 7.406
+  },
+  {
+   "text": "douleur,",
+   "start": 7.406,
+   "end": 7.838
+  },
+  {
+   "text": "ça",
+   "start": 8.139,
+   "end": 8.247
+  },
+  {
+   "text": "ne",
+   "start": 8.247,
+   "end": 8.319
+  },
+  {
+   "text": "se",
+   "start": 8.319,
+   "end": 8.415
+  },
+  {
+   "text": "devine",
+   "start": 8.415,
+   "end": 8.728
+  },
+  {
+   "text": "pas :",
+   "start": 8.728,
+   "end": 8.908
+  },
+  {
+   "text": "ça",
+   "start": 9.221,
+   "end": 9.341
+  },
+  {
+   "text": "se",
+   "start": 9.341,
+   "end": 9.473
+  },
+  {
+   "text": "mesure.",
+   "start": 9.473,
+   "end": 9.978
+  },
+  {
+   "text": "Nous",
+   "start": 10.934,
+   "end": 11.046
+  },
+  {
+   "text": "voilà",
+   "start": 11.046,
+   "end": 11.296
+  },
+  {
+   "text": "dans",
+   "start": 11.296,
+   "end": 11.383
+  },
+  {
+   "text": "la",
+   "start": 11.383,
+   "end": 11.471
+  },
+  {
+   "text": "partie",
+   "start": 11.471,
+   "end": 11.821
+  },
+  {
+   "text": "deux",
+   "start": 11.821,
+   "end": 11.971
+  },
+  {
+   "text": "de",
+   "start": 11.971,
+   "end": 12.059
+  },
+  {
+   "text": "notre",
+   "start": 12.059,
+   "end": 12.358
+  },
+  {
+   "text": "série",
+   "start": 12.358,
+   "end": 12.709
+  },
+  {
+   "text": "sur",
+   "start": 12.709,
+   "end": 12.858
+  },
+  {
+   "text": "la",
+   "start": 12.858,
+   "end": 12.946
+  },
+  {
+   "text": "douleur !",
+   "start": 12.946,
+   "end": 13.446
+  },
+  {
+   "text": "Aujourd'hui :",
+   "start": 13.796,
+   "end": 14.409
+  },
+  {
+   "text": "quand",
+   "start": 14.696,
+   "end": 14.796
+  },
+  {
+   "text": "le",
+   "start": 14.796,
+   "end": 14.883
+  },
+  {
+   "text": "patient",
+   "start": 14.883,
+   "end": 15.233
+  },
+  {
+   "text": "ne",
+   "start": 15.233,
+   "end": 15.309
+  },
+  {
+   "text": "peut",
+   "start": 15.309,
+   "end": 15.421
+  },
+  {
+   "text": "pas",
+   "start": 15.421,
+   "end": 15.521
+  },
+  {
+   "text": "te",
+   "start": 15.521,
+   "end": 15.633
+  },
+  {
+   "text": "répondre.",
+   "start": 15.633,
+   "end": 16.209
+  },
+  {
+   "text": "Quand",
+   "start": 17.158,
+   "end": 17.308
+  },
+  {
+   "text": "il",
+   "start": 17.308,
+   "end": 17.471
+  },
+  {
+   "text": "ne",
+   "start": 17.471,
+   "end": 17.546
+  },
+  {
+   "text": "peut",
+   "start": 17.546,
+   "end": 17.646
+  },
+  {
+   "text": "pas",
+   "start": 17.646,
+   "end": 17.771
+  },
+  {
+   "text": "s'exprimer,",
+   "start": 17.771,
+   "end": 18.408
+  },
+  {
+   "text": "c'est",
+   "start": 18.771,
+   "end": 18.87
+  },
+  {
+   "text": "toi",
+   "start": 18.87,
+   "end": 19.033
+  },
+  {
+   "text": "qui",
+   "start": 19.033,
+   "end": 19.183
+  },
+  {
+   "text": "évalues",
+   "start": 19.183,
+   "end": 19.471
+  },
+  {
+   "text": "sa",
+   "start": 19.471,
+   "end": 19.596
+  },
+  {
+   "text": "douleur,",
+   "start": 19.596,
+   "end": 20.021
+  },
+  {
+   "text": "en",
+   "start": 20.32,
+   "end": 20.346
+  },
+  {
+   "text": "l'observant :",
+   "start": 20.346,
+   "end": 20.958
+  },
+  {
+   "text": "c'est",
+   "start": 21.27,
+   "end": 21.408
+  },
+  {
+   "text": "l'hétéro-évaluation.",
+   "start": 21.408,
+   "end": 22.683
+  },
+  {
+   "text": "Son",
+   "start": 23.033,
+   "end": 23.221
+  },
+  {
+   "text": "visage,",
+   "start": 23.221,
+   "end": 23.783
+  },
+  {
+   "text": "ses",
+   "start": 24.046,
+   "end": 24.196
+  },
+  {
+   "text": "gestes",
+   "start": 24.196,
+   "end": 24.495
+  },
+  {
+   "text": "et",
+   "start": 24.495,
+   "end": 24.533
+  },
+  {
+   "text": "ses",
+   "start": 24.533,
+   "end": 24.658
+  },
+  {
+   "text": "plaintes",
+   "start": 24.658,
+   "end": 25.008
+  },
+  {
+   "text": "parlent",
+   "start": 25.008,
+   "end": 25.27
+  },
+  {
+   "text": "pour",
+   "start": 25.27,
+   "end": 25.458
+  },
+  {
+   "text": "lui.",
+   "start": 25.458,
+   "end": 25.745
+  },
+  {
+   "text": "Chez",
+   "start": 26.684,
+   "end": 26.896
+  },
+  {
+   "text": "la",
+   "start": 26.896,
+   "end": 26.984
+  },
+  {
+   "text": "personne",
+   "start": 26.984,
+   "end": 27.359
+  },
+  {
+   "text": "âgée",
+   "start": 27.359,
+   "end": 27.609
+  },
+  {
+   "text": "qui",
+   "start": 27.609,
+   "end": 27.721
+  },
+  {
+   "text": "ne",
+   "start": 27.721,
+   "end": 27.784
+  },
+  {
+   "text": "communique",
+   "start": 27.784,
+   "end": 28.197
+  },
+  {
+   "text": "pas,",
+   "start": 28.197,
+   "end": 28.447
+  },
+  {
+   "text": "on",
+   "start": 28.822,
+   "end": 28.846
+  },
+  {
+   "text": "utilise",
+   "start": 28.846,
+   "end": 29.297
+  },
+  {
+   "text": "l'échelle",
+   "start": 29.297,
+   "end": 29.584
+  },
+  {
+   "text": "Algoplus.",
+   "start": 29.584,
+   "end": 30.146
+  },
+  {
+   "text": "Cinq",
+   "start": 30.497,
+   "end": 30.759
+  },
+  {
+   "text": "questions,",
+   "start": 30.759,
+   "end": 31.259
+  },
+  {
+   "text": "oui",
+   "start": 31.484,
+   "end": 31.659
+  },
+  {
+   "text": "ou",
+   "start": 31.659,
+   "end": 31.709
+  },
+  {
+   "text": "non :",
+   "start": 31.709,
+   "end": 31.934
+  },
+  {
+   "text": "son",
+   "start": 32.309,
+   "end": 32.434
+  },
+  {
+   "text": "visage,",
+   "start": 32.434,
+   "end": 32.996
+  },
+  {
+   "text": "son",
+   "start": 33.184,
+   "end": 33.346
+  },
+  {
+   "text": "regard,",
+   "start": 33.346,
+   "end": 33.784
+  },
+  {
+   "text": "ses",
+   "start": 34.009,
+   "end": 34.121
+  },
+  {
+   "text": "plaintes,",
+   "start": 34.121,
+   "end": 34.559
+  },
+  {
+   "text": "son",
+   "start": 34.759,
+   "end": 34.934
+  },
+  {
+   "text": "corps,",
+   "start": 34.934,
+   "end": 35.284
+  },
+  {
+   "text": "et",
+   "start": 35.509,
+   "end": 35.534
+  },
+  {
+   "text": "son",
+   "start": 35.534,
+   "end": 35.659
+  },
+  {
+   "text": "comportement.",
+   "start": 35.659,
+   "end": 36.297
+  },
+  {
+   "text": "Un",
+   "start": 36.647,
+   "end": 36.822
+  },
+  {
+   "text": "point",
+   "start": 36.822,
+   "end": 37.034
+  },
+  {
+   "text": "par",
+   "start": 37.034,
+   "end": 37.246
+  },
+  {
+   "text": "oui.",
+   "start": 37.246,
+   "end": 37.534
+  },
+  {
+   "text": "Dès",
+   "start": 37.871,
+   "end": 38.072
+  },
+  {
+   "text": "deux",
+   "start": 38.072,
+   "end": 38.197
+  },
+  {
+   "text": "sur",
+   "start": 38.197,
+   "end": 38.397
+  },
+  {
+   "text": "cinq,",
+   "start": 38.397,
+   "end": 38.772
+  },
+  {
+   "text": "il",
+   "start": 38.984,
+   "end": 39.059
+  },
+  {
+   "text": "a",
+   "start": 39.059,
+   "end": 39.109
+  },
+  {
+   "text": "mal :",
+   "start": 39.109,
+   "end": 39.422
+  },
+  {
+   "text": "on",
+   "start": 39.734,
+   "end": 39.772
+  },
+  {
+   "text": "le",
+   "start": 39.772,
+   "end": 39.871
+  },
+  {
+   "text": "soulage.",
+   "start": 39.871,
+   "end": 40.434
+  },
+  {
+   "text": "Si",
+   "start": 41.37,
+   "end": 41.583
+  },
+  {
+   "text": "la",
+   "start": 41.583,
+   "end": 41.67
+  },
+  {
+   "text": "douleur",
+   "start": 41.67,
+   "end": 41.958
+  },
+  {
+   "text": "dure",
+   "start": 41.958,
+   "end": 42.17
+  },
+  {
+   "text": "dans",
+   "start": 42.17,
+   "end": 42.282
+  },
+  {
+   "text": "le",
+   "start": 42.282,
+   "end": 42.407
+  },
+  {
+   "text": "temps,",
+   "start": 42.407,
+   "end": 42.695
+  },
+  {
+   "text": "on",
+   "start": 43.02,
+   "end": 43.045
+  },
+  {
+   "text": "utilise",
+   "start": 43.045,
+   "end": 43.47
+  },
+  {
+   "text": "plutôt",
+   "start": 43.47,
+   "end": 43.795
+  },
+  {
+   "text": "Doloplus.",
+   "start": 43.795,
+   "end": 44.57
+  },
+  {
+   "text": "Dix",
+   "start": 44.907,
+   "end": 45.133
+  },
+  {
+   "text": "questions,",
+   "start": 45.133,
+   "end": 45.67
+  },
+  {
+   "text": "plus",
+   "start": 45.858,
+   "end": 45.995
+  },
+  {
+   "text": "complètes :",
+   "start": 45.995,
+   "end": 46.557
+  },
+  {
+   "text": "sur",
+   "start": 46.858,
+   "end": 47.07
+  },
+  {
+   "text": "son",
+   "start": 47.07,
+   "end": 47.208
+  },
+  {
+   "text": "corps,",
+   "start": 47.208,
+   "end": 47.545
+  },
+  {
+   "text": "ses",
+   "start": 47.782,
+   "end": 47.895
+  },
+  {
+   "text": "mouvements,",
+   "start": 47.895,
+   "end": 48.37
+  },
+  {
+   "text": "et",
+   "start": 48.695,
+   "end": 48.733
+  },
+  {
+   "text": "sa",
+   "start": 48.733,
+   "end": 48.858
+  },
+  {
+   "text": "relation",
+   "start": 48.858,
+   "end": 49.27
+  },
+  {
+   "text": "aux",
+   "start": 49.27,
+   "end": 49.345
+  },
+  {
+   "text": "autres.",
+   "start": 49.345,
+   "end": 49.82
+  },
+  {
+   "text": "À",
+   "start": 50.17,
+   "end": 50.32
+  },
+  {
+   "text": "partir",
+   "start": 50.32,
+   "end": 50.683
+  },
+  {
+   "text": "de",
+   "start": 50.683,
+   "end": 50.795
+  },
+  {
+   "text": "cinq",
+   "start": 50.795,
+   "end": 50.983
+  },
+  {
+   "text": "sur",
+   "start": 50.983,
+   "end": 51.133
+  },
+  {
+   "text": "trente,",
+   "start": 51.133,
+   "end": 51.582
+  },
+  {
+   "text": "la",
+   "start": 51.832,
+   "end": 51.92
+  },
+  {
+   "text": "douleur",
+   "start": 51.92,
+   "end": 52.22
+  },
+  {
+   "text": "est",
+   "start": 52.22,
+   "end": 52.258
+  },
+  {
+   "text": "présente.",
+   "start": 52.258,
+   "end": 52.883
+  },
+  {
+   "text": "En",
+   "start": 53.824,
+   "end": 53.974
+  },
+  {
+   "text": "réanimation,",
+   "start": 53.974,
+   "end": 54.724
+  },
+  {
+   "text": "chez",
+   "start": 55.062,
+   "end": 55.162
+  },
+  {
+   "text": "le",
+   "start": 55.162,
+   "end": 55.236
+  },
+  {
+   "text": "patient",
+   "start": 55.236,
+   "end": 55.574
+  },
+  {
+   "text": "intubé",
+   "start": 55.574,
+   "end": 55.962
+  },
+  {
+   "text": "et",
+   "start": 55.962,
+   "end": 56.074
+  },
+  {
+   "text": "endormi,",
+   "start": 56.074,
+   "end": 56.574
+  },
+  {
+   "text": "on",
+   "start": 56.962,
+   "end": 56.999
+  },
+  {
+   "text": "utilise",
+   "start": 56.999,
+   "end": 57.386
+  },
+  {
+   "text": "la",
+   "start": 57.386,
+   "end": 57.474
+  },
+  {
+   "text": "BPS.",
+   "start": 57.474,
+   "end": 58.074
+  },
+  {
+   "text": "On",
+   "start": 58.074,
+   "end": 58.111
+  },
+  {
+   "text": "observe",
+   "start": 58.111,
+   "end": 58.499
+  },
+  {
+   "text": "son",
+   "start": 58.499,
+   "end": 58.636
+  },
+  {
+   "text": "visage,",
+   "start": 58.636,
+   "end": 59.162
+  },
+  {
+   "text": "ses",
+   "start": 59.337,
+   "end": 59.486
+  },
+  {
+   "text": "bras,",
+   "start": 59.486,
+   "end": 59.787
+  },
+  {
+   "text": "et",
+   "start": 60.149,
+   "end": 60.174
+  },
+  {
+   "text": "la",
+   "start": 60.174,
+   "end": 60.274
+  },
+  {
+   "text": "façon",
+   "start": 60.274,
+   "end": 60.562
+  },
+  {
+   "text": "dont",
+   "start": 60.562,
+   "end": 60.649
+  },
+  {
+   "text": "il",
+   "start": 60.649,
+   "end": 60.812
+  },
+  {
+   "text": "supporte",
+   "start": 60.812,
+   "end": 61.212
+  },
+  {
+   "text": "le",
+   "start": 61.212,
+   "end": 61.299
+  },
+  {
+   "text": "respirateur.",
+   "start": 61.299,
+   "end": 62.087
+  },
+  {
+   "text": "Et",
+   "start": 63.038,
+   "end": 63.175
+  },
+  {
+   "text": "chez",
+   "start": 63.175,
+   "end": 63.3
+  },
+  {
+   "text": "l'enfant",
+   "start": 63.3,
+   "end": 63.6
+  },
+  {
+   "text": "de",
+   "start": 63.6,
+   "end": 63.7
+  },
+  {
+   "text": "moins",
+   "start": 63.7,
+   "end": 63.825
+  },
+  {
+   "text": "de",
+   "start": 63.825,
+   "end": 63.863
+  },
+  {
+   "text": "sept",
+   "start": 63.863,
+   "end": 64.126
+  },
+  {
+   "text": "ans,",
+   "start": 64.126,
+   "end": 64.3
+  },
+  {
+   "text": "on",
+   "start": 64.6,
+   "end": 64.638
+  },
+  {
+   "text": "utilise",
+   "start": 64.638,
+   "end": 65.05
+  },
+  {
+   "text": "l'échelle",
+   "start": 65.05,
+   "end": 65.35
+  },
+  {
+   "text": "EVENDOL :",
+   "start": 65.35,
+   "end": 65.838
+  },
+  {
+   "text": "on",
+   "start": 66.363,
+   "end": 66.388
+  },
+  {
+   "text": "observe",
+   "start": 66.388,
+   "end": 66.751
+  },
+  {
+   "text": "sa",
+   "start": 66.751,
+   "end": 66.888
+  },
+  {
+   "text": "voix,",
+   "start": 66.888,
+   "end": 67.188
+  },
+  {
+   "text": "son",
+   "start": 67.438,
+   "end": 67.538
+  },
+  {
+   "text": "visage,",
+   "start": 67.538,
+   "end": 68.1
+  },
+  {
+   "text": "ses",
+   "start": 68.313,
+   "end": 68.425
+  },
+  {
+   "text": "mouvements,",
+   "start": 68.425,
+   "end": 68.85
+  },
+  {
+   "text": "sa",
+   "start": 69.05,
+   "end": 69.138
+  },
+  {
+   "text": "position,",
+   "start": 69.138,
+   "end": 69.763
+  },
+  {
+   "text": "et",
+   "start": 70.1,
+   "end": 70.175
+  },
+  {
+   "text": "sa",
+   "start": 70.175,
+   "end": 70.3
+  },
+  {
+   "text": "relation",
+   "start": 70.3,
+   "end": 70.751
+  },
+  {
+   "text": "avec",
+   "start": 70.751,
+   "end": 70.938
+  },
+  {
+   "text": "ce",
+   "start": 70.938,
+   "end": 71.013
+  },
+  {
+   "text": "qui",
+   "start": 71.013,
+   "end": 71.126
+  },
+  {
+   "text": "l'entoure.",
+   "start": 71.126,
+   "end": 71.688
+  },
+  {
+   "text": "Dès",
+   "start": 72.025,
+   "end": 72.213
+  },
+  {
+   "text": "quatre",
+   "start": 72.213,
+   "end": 72.513
+  },
+  {
+   "text": "sur",
+   "start": 72.513,
+   "end": 72.675
+  },
+  {
+   "text": "quinze,",
+   "start": 72.675,
+   "end": 73.088
+  },
+  {
+   "text": "on",
+   "start": 73.326,
+   "end": 73.35
+  },
+  {
+   "text": "le",
+   "start": 73.35,
+   "end": 73.451
+  },
+  {
+   "text": "soulage.",
+   "start": 73.451,
+   "end": 74.025
+  },
+  {
+   "text": "Petit",
+   "start": 74.964,
+   "end": 75.264
+  },
+  {
+   "text": "récap !",
+   "start": 75.264,
+   "end": 75.839
+  },
+  {
+   "text": "S'il",
+   "start": 76.177,
+   "end": 76.401
+  },
+  {
+   "text": "ne",
+   "start": 76.401,
+   "end": 76.489
+  },
+  {
+   "text": "peut",
+   "start": 76.489,
+   "end": 76.589
+  },
+  {
+   "text": "pas",
+   "start": 76.589,
+   "end": 76.701
+  },
+  {
+   "text": "répondre,",
+   "start": 76.701,
+   "end": 77.201
+  },
+  {
+   "text": "c'est",
+   "start": 77.489,
+   "end": 77.602
+  },
+  {
+   "text": "toi",
+   "start": 77.602,
+   "end": 77.752
+  },
+  {
+   "text": "qui",
+   "start": 77.752,
+   "end": 77.901
+  },
+  {
+   "text": "observes :",
+   "start": 77.901,
+   "end": 78.427
+  },
+  {
+   "text": "c'est",
+   "start": 78.714,
+   "end": 78.852
+  },
+  {
+   "text": "l'hétéro-évaluation.",
+   "start": 78.852,
+   "end": 80.064
+  },
+  {
+   "text": "Algoplus",
+   "start": 80.401,
+   "end": 81.039
+  },
+  {
+   "text": "chez",
+   "start": 81.039,
+   "end": 81.139
+  },
+  {
+   "text": "la",
+   "start": 81.139,
+   "end": 81.214
+  },
+  {
+   "text": "personne",
+   "start": 81.214,
+   "end": 81.564
+  },
+  {
+   "text": "âgée,",
+   "start": 81.564,
+   "end": 81.914
+  },
+  {
+   "text": "Doloplus",
+   "start": 82.227,
+   "end": 82.677
+  },
+  {
+   "text": "si",
+   "start": 82.677,
+   "end": 82.789
+  },
+  {
+   "text": "la",
+   "start": 82.789,
+   "end": 82.877
+  },
+  {
+   "text": "douleur",
+   "start": 82.877,
+   "end": 83.151
+  },
+  {
+   "text": "dure,",
+   "start": 83.151,
+   "end": 83.489
+  },
+  {
+   "text": "la",
+   "start": 83.826,
+   "end": 83.889
+  },
+  {
+   "text": "BPS",
+   "start": 83.889,
+   "end": 84.414
+  },
+  {
+   "text": "en",
+   "start": 84.414,
+   "end": 84.464
+  },
+  {
+   "text": "réanimation,",
+   "start": 84.464,
+   "end": 85.177
+  },
+  {
+   "text": "et",
+   "start": 85.589,
+   "end": 85.664
+  },
+  {
+   "text": "EVENDOL",
+   "start": 85.664,
+   "end": 86.177
+  },
+  {
+   "text": "chez",
+   "start": 86.177,
+   "end": 86.302
+  },
+  {
+   "text": "le",
+   "start": 86.302,
+   "end": 86.389
+  },
+  {
+   "text": "jeune",
+   "start": 86.389,
+   "end": 86.564
+  },
+  {
+   "text": "enfant.",
+   "start": 86.564,
+   "end": 86.964
+  },
+  {
+   "text": "Et",
+   "start": 87.302,
+   "end": 87.451
+  },
+  {
+   "text": "toujours :",
+   "start": 87.451,
+   "end": 87.951
+  },
+  {
+   "text": "on",
+   "start": 88.201,
+   "end": 88.239
+  },
+  {
+   "text": "soulage,",
+   "start": 88.239,
+   "end": 88.839
+  },
+  {
+   "text": "puis",
+   "start": 89.089,
+   "end": 89.264
+  },
+  {
+   "text": "on",
+   "start": 89.264,
+   "end": 89.302
+  },
+  {
+   "text": "réévalue !",
+   "start": 89.302,
+   "end": 89.889
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+[
+	{"id": "intro", "rate": "+4%", "text": "De zéro à dix… tu as mal à combien, là, maintenant ? Tu as un chiffre en tête ? Bravo : tu viens d'évaluer ta douleur ! Mais à l'hôpital, il existe plusieurs échelles. Laquelle choisir ?"},
+	{"id": "serie", "rate": "+0%", "text": "Nous voilà dans la partie un de notre série sur la douleur ! Aujourd'hui : quand le patient peut te répondre."},
+	{"id": "auto", "rate": "+0%", "text": "La douleur, c'est le patient qui la ressent : s'il peut s'exprimer, c'est donc lui qui l'évalue. C'est l'auto-évaluation, et on le croit, toujours."},
+	{"id": "en", "rate": "+0%", "text": "La plus simple, c'est l'échelle numérique : de zéro à dix, à combien avez-vous mal ? Zéro, c'est aucune douleur, et dix, la pire douleur imaginable."},
+	{"id": "eva", "rate": "+0%", "text": "Il y a aussi l'{EVA|É V A}, l'échelle visuelle analogique : une réglette. Côté patient, une ligne, de pas de douleur à douleur maximale : il fait glisser le curseur, sans voir de chiffres. Côté soignant, tu lis le score, de zéro à dix."},
+	{"id": "evs", "rate": "+0%", "text": "Si les chiffres sont difficiles, on utilise des mots : c'est l'échelle verbale simple. Pas de douleur, faible, modérée, intense, ou extrêmement intense."},
+	{"id": "visages", "rate": "+0%", "text": "Chez l'enfant, dès quatre ans, on utilise l'échelle des visages : il montre le visage qui a aussi mal que lui."},
+	{"id": "seuil", "rate": "+0%", "text": "À partir de quatre sur dix, la douleur doit être soulagée : on applique la prescription, ou on prévient le médecin. Puis on réévalue après l'antalgique, avec la même échelle, et on note tout."},
+	{"id": "outro", "rate": "+0%", "text": "Petit récap ! S'il peut répondre, c'est lui qui évalue : des chiffres, une réglette, des mots, ou des visages chez l'enfant. Dès quatre, on soulage, et on réévalue. Dans la partie deux : comment savoir qu'il a mal… quand il ne peut pas le dire ?"}
+]

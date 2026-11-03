@@ -81,6 +81,8 @@ export type PatientProps = {
 	cannula?: number;
 	/** œdème pulmonaire : l'eau monte dans les poumons (0 → 1, avec `lungs`) */
 	flood?: number;
+	/** personne âgée : cheveux blancs, rides (0 → 1) */
+	elder?: number;
 	/** bas du corps en fondu (par défaut) ; false pour poser des jambes dessous (`FullBody`) */
 	fade?: boolean;
 };
@@ -157,7 +159,7 @@ const SkinLayers: React.FC<{flush: number; pale: number; children: (fill: string
 	</>
 );
 
-export const Patient: React.FC<PatientProps> = ({size = 360, mood = 'calme', breath = 0, heart = 0, beat = 0, flow = 0, cuff = 0, press = 0, flush = 0, pale = 0, sweat = 0, pain = 0, dizzy = 0, droop = 0, armL = 0, armR = 0, eyesClosed = 0, quiver = 0, brain = 0, anoxia = 0, bloodless = 0, flowPhase, lungs = 0, cyanosis = 0, bronchi = 0, narrow = 0, trapped = 0, cannula = 0, flood = 0, fade = true}) => {
+export const Patient: React.FC<PatientProps> = ({size = 360, mood = 'calme', breath = 0, heart = 0, beat = 0, flow = 0, cuff = 0, press = 0, flush = 0, pale = 0, sweat = 0, pain = 0, dizzy = 0, droop = 0, armL = 0, armR = 0, eyesClosed = 0, quiver = 0, brain = 0, anoxia = 0, bloodless = 0, flowPhase, lungs = 0, cyanosis = 0, bronchi = 0, narrow = 0, trapped = 0, cannula = 0, flood = 0, elder = 0, fade = true}) => {
 	const frame = useCurrentFrame();
 	const id = useId().replace(/:/g, '');
 	const blink = Math.min(frame % 96 < 4 ? 0.15 : 1, 1 - 0.9 * eyesClosed);
@@ -306,7 +308,15 @@ export const Patient: React.FC<PatientProps> = ({size = 360, mood = 'calme', bre
 						</g>
 					)}
 				</SkinLayers>
-				<path d="M134 110 C126 58 162 28 204 28 C246 28 276 60 266 110 C256 86 238 70 214 64 C194 80 166 90 134 110 Z" fill={N} />
+				<path d="M134 110 C126 58 162 28 204 28 C246 28 276 60 266 110 C256 86 238 70 214 64 C194 80 166 90 134 110 Z" fill={elder > 0.5 ? LPI.paper : N} stroke={N} strokeWidth={elder > 0.5 ? 6 : 0} strokeLinejoin="round" />
+				{elder > 0 ? (
+					<g opacity={elder} fill="none" stroke={alpha(N, 0.45)} strokeWidth={3.5} strokeLinecap="round">
+						<path d="M150 60 C170 48 196 44 214 52 M168 84 C178 74 196 68 212 66" stroke={alpha(N, 0.25)} />
+						<path d="M184 86 Q200 82 216 86" />
+						<path d="M166 134 Q160 144 166 154 M234 134 Q240 144 234 154" />
+						<path d="M160 126 l-8 -2 M240 126 l8 -2" />
+					</g>
+				) : null}
 				{/* joues */}
 				<ellipse cx={160} cy={140} rx={14} ry={8} fill={LPI.pink} opacity={0.55 * (1 - pale) + 0.3 * flush} />
 				<ellipse cx={240} cy={140} rx={14} ry={8} fill={LPI.pink} opacity={0.55 * (1 - pale) + 0.3 * flush} />

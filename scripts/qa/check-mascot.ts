@@ -44,6 +44,10 @@ import * as precautionsstandard from '../../src/videos/precautions-standard/masc
 import * as precautionsstandardTL from '../../src/videos/precautions-standard/timeline';
 import * as insuffisancecardiaque from '../../src/videos/insuffisance-cardiaque/mascot';
 import * as insuffisancecardiaqueTL from '../../src/videos/insuffisance-cardiaque/timeline';
+import * as douleur1 from '../../src/videos/douleur-1/mascot';
+import * as douleur1TL from '../../src/videos/douleur-1/timeline';
+import * as douleur2 from '../../src/videos/douleur-2/mascot';
+import * as douleur2TL from '../../src/videos/douleur-2/timeline';
 
 const VIDEOS: Record<string, [typeof constantes.MASCOT, typeof constantesTL.TL]> = {
 	constantes: [constantes.MASCOT, constantesTL.TL],
@@ -67,6 +71,8 @@ const VIDEOS: Record<string, [typeof constantes.MASCOT, typeof constantesTL.TL]>
 	'hygiene-mains': [hygienemains.MASCOT, hygienemainsTL.TL],
 	'precautions-standard': [precautionsstandard.MASCOT, precautionsstandardTL.TL],
 	'insuffisance-cardiaque': [insuffisancecardiaque.MASCOT, insuffisancecardiaqueTL.TL],
+	'douleur-1': [douleur1.MASCOT, douleur1TL.TL],
+	'douleur-2': [douleur2.MASCOT, douleur2TL.TL],
 };
 const name = process.argv[2] ?? 'constantes';
 const [MASCOT, TL] = VIDEOS[name];

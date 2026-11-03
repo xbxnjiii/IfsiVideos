@@ -182,6 +182,18 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   ne montre rien au-dessus du contenu).
 - Voix : « Cette plaie ne fait pas mal » est entendu « Cette **plaine** fait pas mal » → « Cette plaie… ne fait pas mal »
   (une pause casse la liaison) ; relire l'accroche au modèle `medium` de faster-whisper.
+- 2e série : « La douleur : échelles d'évaluation » (`src/videos/douleur-1/`, `-2/`, storyboard
+  `docs/lpi/storyboard-douleur-serie.md`) — partie 1 l'auto-évaluation (EN, EVA recto / verso, EVS, visages dès 4 ans, seuil
+  ≥ 4/10 → on soulage, on réévalue avec la même échelle, on note), partie 2 l'hétéro-évaluation (Algoplus ≥ 2/5, Doloplus
+  ≥ 5/30, BPS en réanimation, EVENDOL < 7 ans ≥ 4/15). Deux accroches nouvelles : **« question au spectateur »** (« De zéro à
+  dix… tu as mal à combien, là, maintenant ? », le doigt hésite sur l'échelle, « 4 ! », tampon ÉVALUÉE) et **« patient
+  muet »** (choisie par le propriétaire : « Il ne peut plus parler… et pourtant, il souffre. Comment le savoir ? », bulle
+  vide barrée, tampon « Ça se mesure ! »). Briques `pain.tsx` : `NumScale`, `Ruler` (`pos`, `flip`), `WordScale`,
+  `FacesScale` / `PainFace` (sans sourire ni larmes), `Kid` (enfant : pleure, montre, s'agite, se recroqueville), `Ventilator`,
+  `ObsSheet` (grille oui / non ou points + score), `ScoreBar` (seuil), `Bubble`, `TalkIcon` / `MuteIcon`, `PAIN_PARTS` ;
+  `Patient` : `elder` (personne âgée). Voix : « l'{EVA|É V A} » (un « E V A » était entendu « le VA »), « on utilise
+  l'échelle {EVENDOL|Évendol} » (après « utilise » seul, la liaison donnait « les vandales »), « À partir de cinq sur
+  trente » (« Dès cinq » était entendu « dessin »).
 
 ## Format « liste à retenir » (des règles numérotées, modèle `Hygiene-Mains`, `src/videos/hygiene-mains/`)
 
@@ -272,8 +284,10 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
 
 ## Rendu et contrôle
 
-- Navigateur sans interface et 4 rendus en parallèle réglés dans `remotion.config.ts` : `npm run render:<vidéo>` ou
-  `npx remotion render <Comp> …` suffisent. ≈ 3,5 s de calcul par seconde de vidéo (pas de 3D : trop lente).
+- Navigateur sans interface et 4 rendus en parallèle réglés dans `remotion.config.ts` (le navigateur est cherché dans
+  `/opt/pw-browsers`, quelle que soit sa version ; idem pour `npm run qa`) : `npm run render:<vidéo>` ou
+  `npx remotion render <Comp> …` suffisent. Nouveau conteneur : `npm ci` puis `pip install --break-system-packages edge-tts
+  faster-whisper` avant tout. ≈ 3,5 s de calcul par seconde de vidéo (pas de 3D : trop lente).
 - Avant tout rendu complet : `npm run check:mascot -- <vidéo>`, puis `npm run qa -- <Composition> <frames…>`,
   planches relues une par une.
 - **Retouche d'une vidéo déjà livrée** (demandé) : ne recalculer que les images qui changent puis les recoller.

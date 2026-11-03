@@ -44,6 +44,10 @@ import {PrecautionsStandard, PrecautionsStandardProps} from './videos/precaution
 import {TL as PRECAUTIONS_STANDARD_TL} from './videos/precautions-standard/timeline';
 import {InsuffisanceCardiaque, InsuffisanceCardiaqueProps} from './videos/insuffisance-cardiaque/InsuffisanceCardiaque';
 import {TL as INSUFFISANCE_CARDIAQUE_TL} from './videos/insuffisance-cardiaque/timeline';
+import {Douleur1, Douleur1Props} from './videos/douleur-1/Douleur1';
+import {TL as DOULEUR_1_TL} from './videos/douleur-1/timeline';
+import {Douleur2, Douleur2Props} from './videos/douleur-2/Douleur2';
+import {TL as DOULEUR_2_TL} from './videos/douleur-2/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -260,6 +264,26 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies InsuffisanceCardiaqueProps}
+		/>
+		{/* 24 · Douleur-1 */}
+		<Composition
+			id="Douleur-1"
+			component={Douleur1}
+			durationInFrames={DOULEUR_1_TL.total}
+			fps={DOULEUR_1_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies Douleur1Props}
+		/>
+		{/* 25 · Douleur-2 */}
+		<Composition
+			id="Douleur-2"
+			component={Douleur2}
+			durationInFrames={DOULEUR_2_TL.total}
+			fps={DOULEUR_2_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies Douleur2Props}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition
