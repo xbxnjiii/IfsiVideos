@@ -348,7 +348,7 @@ export const Eva: React.FC = () => {
 		{at: LIS - 4, s: 1.55, x: RX + ((90 + 700 * 0.65) * RW) / 880, y: RY + 90, dur: 14},
 		{at: ZERO - 4, s: 1, dur: 14},
 	];
-	const rul = popAt(frame, REG - 2);
+	const rul = popAt(frame, EVA - 2);
 	return (
 		<AbsoluteFill>
 			<LiveBackground />

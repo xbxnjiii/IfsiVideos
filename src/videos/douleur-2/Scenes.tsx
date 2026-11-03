@@ -328,6 +328,7 @@ export const Hetero: React.FC = () => {
 export const Algoplus: React.FC = () => {
 	const frame = useCurrentFrame();
 	const PERS = at('algoplus', 'personne');
+	const COMMU = at('algoplus', 'communique');
 	const ALGO = at('algoplus', 'algoplus');
 	const CINQ = at('algoplus', 'cinq');
 	const VIS = at('algoplus', 'visage');
@@ -339,7 +340,7 @@ export const Algoplus: React.FC = () => {
 	const DES = at('algoplus', 'dès');
 	const MAL = at('algoplus', 'mal');
 	const SOUL = at('algoplus', 'soulage');
-	const sheet = popAt(frame, CINQ - 4);
+	const sheet = popAt(frame, ALGO - 2);
 	return (
 		<AbsoluteFill>
 			<LiveBackground />
@@ -357,6 +358,11 @@ export const Algoplus: React.FC = () => {
 						guard={interpolate(frame, [CORPS - 2, CORPS + 6, COMP, COMP + 6], [0, 1, 1, 0], clamp)}
 						agit={interpolate(frame, [COMP - 2, COMP + 4, COMP + 24, COMP + 30], [0, 1, 1, 0], clamp)}
 					/>
+					{frame >= COMMU - 2 && frame < ALGO + 6 ? (
+						<div style={{position: 'absolute', left: 200, top: 10, opacity: 1 - fadeIn(frame, ALGO - 2, 8), transform: `scale(${popAt(frame, COMMU - 2)})`}}>
+							<MuteBubble size={170} cross={fadeIn(frame, COMMU + 4, 8)} />
+						</div>
+					) : null}
 					{sheet > 0 ? (
 						<div style={{position: 'absolute', left: 330, top: 6, transform: `scale(${sheet})`, transformOrigin: 'right top'}}>
 							<ObsSheet
@@ -390,7 +396,8 @@ export const Algoplus: React.FC = () => {
 					<CheckChip at={SOUL - 2} label="on le soulage" size={44} />
 				</div>
 			</Camera>
-			<Sfx name="pop" at={CINQ - 4} volume={0.09} />
+			<Sfx name="pop" at={COMMU - 2} volume={0.08} />
+			<Sfx name="pop" at={ALGO - 2} volume={0.09} />
 			{[VIS, REG, PLAI, CORPS, COMP].map((t) => (
 				<Sfx key={t} name="tick" at={t - 2} volume={0.06} />
 			))}
