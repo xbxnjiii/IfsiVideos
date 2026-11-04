@@ -158,6 +158,18 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   `BathScale`, `PropUp` (0 → 3 oreillers), `Ankles` (`swell`, `press`, `dent`), `SaltShaker`, `Battery`, `SitLegsDown`,
   `Foam` ; `Patient` : `flood` (œdème pulmonaire, avec `lungs`). Dans `Scenes.tsx` : `Man` (patient + calques : moitié du
   cœur qui faiblit `side` G/D, reflux vers les poumons, gouttes qui descendent, mousse, cicatrice d'infarctus, pression).
+- 6e modèle « pathologie » : `Diabete` (`src/videos/diabete/`) — accroche **« le paradoxe »** (choisie par le propriétaire) :
+  « Son sang est rempli de sucre… et pourtant, ses cellules meurent de faim. […] Il lui manque une clé : l'insuline. » (image 0 :
+  « Du sucre partout… et elles ont faim ? », bande « LE SANG » pleine de sucres, cellules « LES CELLULES » porte fermée).
+  **Renvoi à une vidéo déjà publiée** (demandé, pour ne pas répéter) : la voix dit « Comme on l'a vu dans la vidéo sur la
+  glycémie… » et la pastille `VideoLink` (« DÉJÀ VU EN VIDÉO · La glycémie ») s'affiche. Puis principe (clé / porte),
+  type 1 / type 2, le découvrir (souvent silencieux, ≥ 1,26 g/L à jeun deux fois), complications (caméra d'organe en organe),
+  traitement + HbA1c, ton rôle (glycémies, insuline en changeant de site, pieds, resucrer), récap. Briques `diabetes.tsx` :
+  `BloodBand`, `GCell` (porte, cadenas, jauge, faim / rassasiée, refus), `InsulinKey` (`ghost`, `jam`, `turn`), `Pancreas`
+  (`make`, `dead`), `InsulinPen`, `InjectionSites`, `GlycatedCell`, `Plate`, `KidneysIcon`, `BrainIcon`, `VideoLink`.
+  Attention : dans un attribut JSX `text="…\n…"` le `\n` n'est pas un retour à la ligne → `text={'…\n…'}` ; un accent de
+  titre sur un mot avec apostrophe s'écrit `*l'hygiène*` (pas `l'*hygiène*`) ; `accessoires/baskets` n'est qu'une chaussure
+  (pas la mascotte) : ne pas l'utiliser comme étape.
 
 ## Format « série » (demandé : un sujet trop long = plusieurs parties, modèle `Plaies-1/2/3`)
 

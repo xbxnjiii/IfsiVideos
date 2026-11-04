@@ -35,6 +35,7 @@ pas de logiciel de montage, pas de banque d'images.
 | 23 | L'insuffisance cardiaque (pathologie) | `Insuffisance-Cardiaque` | [voix/23-insuffisance-cardiaque.script.json](voix/23-insuffisance-cardiaque.script.json) | [storyboard](docs/lpi/storyboard-insuffisance-cardiaque.md) |
 | 24 | La douleur 1/2 : l'auto-évaluation (série) | `Douleur-1` | [voix/24-douleur-1.script.json](voix/24-douleur-1.script.json) | [storyboard](docs/lpi/storyboard-douleur-serie.md) |
 | 25 | La douleur 2/2 : l'hétéro-évaluation (série) | `Douleur-2` | [voix/25-douleur-2.script.json](voix/25-douleur-2.script.json) | [storyboard](docs/lpi/storyboard-douleur-serie.md) |
+| 26 | Le diabète (pathologie, accroche « paradoxe ») | `Diabete` | [voix/26-diabete.script.json](voix/26-diabete.script.json) | [storyboard](docs/lpi/storyboard-diabete.md) |
 
 ## Utilisation
 
@@ -87,6 +88,8 @@ src/
     sampling.tsx              matériel de prise de sang (aiguille, porte-tube, ailettes, tubes, SHA, gants, garrot…), bras
     night.tsx                 format histoire : fond nuit, cadre de scanner, lueur, mots qui se mélangent
     series.tsx                vidéos en série : carte des parties, étiquette « 1/3 », « à suivre »
+    pain.tsx                  échelles de douleur (EN, réglette EVA, EVS, visages), enfant, respirateur, grilles de score
+    diabetes.tsx              diabète : sang chargé de sucres, cellule à porte + cadenas, clé insuline, pancréas, stylo, sites
     MascotActor.tsx           mascotte actrice : sauts, course, expressions au mot près, bustes libres
     pictos.tsx                pictogrammes et illustrations (thermomètre, cœur, poumons, artère…)
     timeline.ts               voix → frames : at(scène, mot)

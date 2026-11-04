@@ -1,0 +1,10 @@
+[
+	{"id": "intro", "text": "Son sang est rempli de sucre… et pourtant, ses cellules meurent de faim. Le sucre est là, juste devant la porte… mais impossible d'entrer. Il lui manque une clé : l'insuline. Et cette maladie, c'est le diabète."},
+	{"id": "def", "text": "Comme on l'a vu dans la vidéo sur la glycémie, le sucre est le carburant de nos cellules. Pour y entrer, il lui faut une clé : l'insuline, fabriquée par le pancréas."},
+	{"id": "types", "text": "Dans le type un, la clé manque : le pancréas ne fabrique plus d'insuline. Il touche souvent les jeunes, et se soigne par l'insuline, à vie. Dans le type deux, le plus fréquent, la clé marche mal, souvent à cause du surpoids et du manque d'activité."},
+	{"id": "diag", "text": "Il peut donner très soif, beaucoup d'urines et de la fatigue. Mais le type deux est souvent silencieux : c'est la prise de sang qui le révèle. On parle de diabète si, à {jeun|jun}, la glycémie atteint un gramme vingt-six par litre, deux fois."},
+	{"id": "compli", "text": "Le sucre en trop, pendant des années, abîme les vaisseaux et les nerfs : les yeux, les reins, le cœur, le cerveau… et les pieds, où une petite plaie qu'on ne sent pas peut mener à l'amputation."},
+	{"id": "trait", "text": "Le traitement : une alimentation équilibrée, de l'activité physique, puis des comprimés ou de l'insuline. Et pour le suivi, l'hémoglobine glyquée : le reflet du sucre sur trois mois."},
+	{"id": "role", "text": "Ton rôle : contrôler les glycémies capillaires, faire les injections d'insuline en changeant de site à chaque fois, et regarder les pieds tous les jours. Et en cas d'hypoglycémie, comme on l'a vu dans la vidéo sur la glycémie : on resucre tout de suite !"},
+	{"id": "outro", "text": "Petit récap ! Le diabète, c'est trop de sucre dans le sang : la clé insuline manque dans le type un, elle marche mal dans le type deux. Il abîme les yeux, les reins, le cœur et les pieds. Ton rôle : glycémies, insuline, pieds… et resucrer en cas d'hypo !"}
+]

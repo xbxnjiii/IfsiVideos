@@ -48,6 +48,8 @@ import {Douleur1, Douleur1Props} from './videos/douleur-1/Douleur1';
 import {TL as DOULEUR_1_TL} from './videos/douleur-1/timeline';
 import {Douleur2, Douleur2Props} from './videos/douleur-2/Douleur2';
 import {TL as DOULEUR_2_TL} from './videos/douleur-2/timeline';
+import {Diabete, DiabeteProps} from './videos/diabete/Diabete';
+import {TL as DIABETE_TL} from './videos/diabete/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -284,6 +286,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies Douleur2Props}
+		/>
+		{/* 26 · Diabete */}
+		<Composition
+			id="Diabete"
+			component={Diabete}
+			durationInFrames={DIABETE_TL.total}
+			fps={DIABETE_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies DiabeteProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition
