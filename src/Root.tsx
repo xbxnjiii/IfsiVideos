@@ -50,6 +50,7 @@ import {Douleur2, Douleur2Props} from './videos/douleur-2/Douleur2';
 import {TL as DOULEUR_2_TL} from './videos/douleur-2/timeline';
 import {Diabete, DiabeteProps} from './videos/diabete/Diabete';
 import {TL as DIABETE_TL} from './videos/diabete/timeline';
+import {PlanchePoumons} from './videos/planches/PlanchePoumons';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -307,6 +308,8 @@ export const RemotionRoot: React.FC = () => (
 			height={H}
 			defaultProps={{cat: 'expressions', mode: 'free' as const}}
 		/>
+		{/* contrôle : planche anatomique des poumons (page 1 : anatomie, sain / BPCO, alvéoles ; page 2 : bronche, radio, loupe) */}
+		<Composition id="Planche-Poumons" component={PlanchePoumons} durationInFrames={60} fps={30} width={W} height={H} defaultProps={{page: 1}} />
 		{/* contrôle : illustrations et gags de la vidéo des 14 besoins */}
 		<Composition id="Besoins-Illustrations" component={IconsSheet} durationInFrames={60} fps={30} width={W} height={H} />
 	</>
