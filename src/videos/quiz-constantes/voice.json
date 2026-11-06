@@ -1,0 +1,773 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 66.72,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.059,
+   "end": 40.491
+  },
+  {
+   "id": "serie",
+   "start": 41.379,
+   "end": 53.375
+  },
+  {
+   "id": "quiz",
+   "start": 54.292,
+   "end": 62.404
+  },
+  {
+   "id": "outro",
+   "start": 63.384,
+   "end": 66.401
+  }
+ ],
+ "words": [
+  {
+   "text": "Quatre",
+   "start": 0.059,
+   "end": 0.342
+  },
+  {
+   "text": "questions,",
+   "start": 0.342,
+   "end": 0.873
+  },
+  {
+   "text": "trois",
+   "start": 1.167,
+   "end": 1.321
+  },
+  {
+   "text": "secondes",
+   "start": 1.321,
+   "end": 1.651
+  },
+  {
+   "text": "pour",
+   "start": 1.651,
+   "end": 1.804
+  },
+  {
+   "text": "chacune :",
+   "start": 1.804,
+   "end": 2.276
+  },
+  {
+   "text": "tu",
+   "start": 2.5,
+   "end": 2.606
+  },
+  {
+   "text": "es",
+   "start": 2.606,
+   "end": 2.63
+  },
+  {
+   "text": "prêt ?",
+   "start": 2.63,
+   "end": 2.96
+  },
+  {
+   "text": "Première",
+   "start": 3.302,
+   "end": 3.573
+  },
+  {
+   "text": "question :",
+   "start": 3.573,
+   "end": 4.08
+  },
+  {
+   "text": "trente-huit",
+   "start": 4.469,
+   "end": 4.858
+  },
+  {
+   "text": "et",
+   "start": 4.859,
+   "end": 4.894
+  },
+  {
+   "text": "demi",
+   "start": 4.894,
+   "end": 5.118
+  },
+  {
+   "text": "de",
+   "start": 5.118,
+   "end": 5.224
+  },
+  {
+   "text": "température,",
+   "start": 5.224,
+   "end": 5.932
+  },
+  {
+   "text": "c'est",
+   "start": 6.25,
+   "end": 6.344
+  },
+  {
+   "text": "de",
+   "start": 6.344,
+   "end": 6.415
+  },
+  {
+   "text": "la",
+   "start": 6.415,
+   "end": 6.509
+  },
+  {
+   "text": "fièvre ?",
+   "start": 6.509,
+   "end": 6.958
+  },
+  {
+   "text": "Oui !",
+   "start": 9.955,
+   "end": 10.262
+  },
+  {
+   "text": "Dès",
+   "start": 10.583,
+   "end": 10.771
+  },
+  {
+   "text": "trente-huit",
+   "start": 10.771,
+   "end": 11.09
+  },
+  {
+   "text": "degrés,",
+   "start": 11.09,
+   "end": 11.503
+  },
+  {
+   "text": "c'est",
+   "start": 11.786,
+   "end": 11.892
+  },
+  {
+   "text": "de",
+   "start": 11.892,
+   "end": 11.974
+  },
+  {
+   "text": "la",
+   "start": 11.974,
+   "end": 12.069
+  },
+  {
+   "text": "fièvre.",
+   "start": 12.069,
+   "end": 12.564
+  },
+  {
+   "text": "Question",
+   "start": 12.903,
+   "end": 13.257
+  },
+  {
+   "text": "deux :",
+   "start": 13.257,
+   "end": 13.516
+  },
+  {
+   "text": "un",
+   "start": 13.87,
+   "end": 13.988
+  },
+  {
+   "text": "cœur",
+   "start": 13.988,
+   "end": 14.224
+  },
+  {
+   "text": "qui",
+   "start": 14.224,
+   "end": 14.365
+  },
+  {
+   "text": "bat",
+   "start": 14.365,
+   "end": 14.507
+  },
+  {
+   "text": "à",
+   "start": 14.507,
+   "end": 14.554
+  },
+  {
+   "text": "cent",
+   "start": 14.554,
+   "end": 14.731
+  },
+  {
+   "text": "vingt",
+   "start": 14.731,
+   "end": 14.872
+  },
+  {
+   "text": "par",
+   "start": 14.872,
+   "end": 15.026
+  },
+  {
+   "text": "minute,",
+   "start": 15.026,
+   "end": 15.415
+  },
+  {
+   "text": "au",
+   "start": 15.627,
+   "end": 15.651
+  },
+  {
+   "text": "repos ?",
+   "start": 15.651,
+   "end": 16.052
+  },
+  {
+   "text": "C'est",
+   "start": 19.025,
+   "end": 19.202
+  },
+  {
+   "text": "une",
+   "start": 19.202,
+   "end": 19.379
+  },
+  {
+   "text": "tachycardie :",
+   "start": 19.379,
+   "end": 20.075
+  },
+  {
+   "text": "au-dessus",
+   "start": 20.393,
+   "end": 20.676
+  },
+  {
+   "text": "de",
+   "start": 20.676,
+   "end": 20.806
+  },
+  {
+   "text": "cent,",
+   "start": 20.806,
+   "end": 21.101
+  },
+  {
+   "text": "le",
+   "start": 21.36,
+   "end": 21.431
+  },
+  {
+   "text": "cœur",
+   "start": 21.431,
+   "end": 21.643
+  },
+  {
+   "text": "bat",
+   "start": 21.643,
+   "end": 21.738
+  },
+  {
+   "text": "trop",
+   "start": 21.738,
+   "end": 21.914
+  },
+  {
+   "text": "vite.",
+   "start": 21.914,
+   "end": 22.327
+  },
+  {
+   "text": "Question",
+   "start": 22.643,
+   "end": 22.985
+  },
+  {
+   "text": "trois :",
+   "start": 22.985,
+   "end": 23.363
+  },
+  {
+   "text": "une",
+   "start": 23.799,
+   "end": 23.87
+  },
+  {
+   "text": "saturation",
+   "start": 23.87,
+   "end": 24.483
+  },
+  {
+   "text": "à",
+   "start": 24.483,
+   "end": 24.542
+  },
+  {
+   "text": "quatre-vingt-dix-huit",
+   "start": 24.542,
+   "end": 25.25
+  },
+  {
+   "text": "pour",
+   "start": 25.25,
+   "end": 25.426
+  },
+  {
+   "text": "cent ?",
+   "start": 25.426,
+   "end": 25.686
+  },
+  {
+   "text": "Eh",
+   "start": 28.657,
+   "end": 28.786
+  },
+  {
+   "text": "non,",
+   "start": 28.786,
+   "end": 28.999
+  },
+  {
+   "text": "c'est",
+   "start": 29.341,
+   "end": 29.447
+  },
+  {
+   "text": "un",
+   "start": 29.447,
+   "end": 29.588
+  },
+  {
+   "text": "piège :",
+   "start": 29.588,
+   "end": 30.025
+  },
+  {
+   "text": "c'est",
+   "start": 30.249,
+   "end": 30.355
+  },
+  {
+   "text": "tout",
+   "start": 30.355,
+   "end": 30.461
+  },
+  {
+   "text": "à",
+   "start": 30.461,
+   "end": 30.579
+  },
+  {
+   "text": "fait",
+   "start": 30.579,
+   "end": 30.697
+  },
+  {
+   "text": "normal !",
+   "start": 30.697,
+   "end": 31.227
+  },
+  {
+   "text": "Et",
+   "start": 31.556,
+   "end": 31.627
+  },
+  {
+   "text": "la",
+   "start": 31.627,
+   "end": 31.721
+  },
+  {
+   "text": "dernière :",
+   "start": 31.721,
+   "end": 32.205
+  },
+  {
+   "text": "une",
+   "start": 32.724,
+   "end": 32.806
+  },
+  {
+   "text": "glycémie",
+   "start": 32.806,
+   "end": 33.29
+  },
+  {
+   "text": "à",
+   "start": 33.29,
+   "end": 33.349
+  },
+  {
+   "text": "zéro",
+   "start": 33.349,
+   "end": 33.584
+  },
+  {
+   "text": "virgule",
+   "start": 33.584,
+   "end": 33.891
+  },
+  {
+   "text": "cinquante-cinq",
+   "start": 33.891,
+   "end": 34.374
+  },
+  {
+   "text": "gramme",
+   "start": 34.374,
+   "end": 34.599
+  },
+  {
+   "text": "par",
+   "start": 34.599,
+   "end": 34.752
+  },
+  {
+   "text": "litre ?",
+   "start": 34.752,
+   "end": 35.141
+  },
+  {
+   "text": "Hypoglycémie :",
+   "start": 38.121,
+   "end": 39.017
+  },
+  {
+   "text": "on",
+   "start": 39.371,
+   "end": 39.406
+  },
+  {
+   "text": "resucre",
+   "start": 39.406,
+   "end": 39.878
+  },
+  {
+   "text": "tout",
+   "start": 39.878,
+   "end": 39.984
+  },
+  {
+   "text": "de",
+   "start": 39.984,
+   "end": 40.019
+  },
+  {
+   "text": "suite !",
+   "start": 40.019,
+   "end": 40.491
+  },
+  {
+   "text": "Si",
+   "start": 41.379,
+   "end": 41.532
+  },
+  {
+   "text": "tu",
+   "start": 41.532,
+   "end": 41.65
+  },
+  {
+   "text": "as",
+   "start": 41.65,
+   "end": 41.686
+  },
+  {
+   "text": "hésité,",
+   "start": 41.686,
+   "end": 42.169
+  },
+  {
+   "text": "bonne",
+   "start": 42.393,
+   "end": 42.547
+  },
+  {
+   "text": "nouvelle :",
+   "start": 42.547,
+   "end": 42.936
+  },
+  {
+   "text": "les",
+   "start": 43.219,
+   "end": 43.278
+  },
+  {
+   "text": "sept",
+   "start": 43.278,
+   "end": 43.443
+  },
+  {
+   "text": "paramètres",
+   "start": 43.443,
+   "end": 43.891
+  },
+  {
+   "text": "vitaux",
+   "start": 43.891,
+   "end": 44.221
+  },
+  {
+   "text": "ont",
+   "start": 44.221,
+   "end": 44.315
+  },
+  {
+   "text": "tous",
+   "start": 44.316,
+   "end": 44.54
+  },
+  {
+   "text": "leur",
+   "start": 44.54,
+   "end": 44.669
+  },
+  {
+   "text": "vidéo.",
+   "start": 44.669,
+   "end": 45.094
+  },
+  {
+   "text": "La",
+   "start": 45.427,
+   "end": 45.592
+  },
+  {
+   "text": "fréquence",
+   "start": 45.592,
+   "end": 45.946
+  },
+  {
+   "text": "respiratoire,",
+   "start": 45.946,
+   "end": 46.7
+  },
+  {
+   "text": "la",
+   "start": 47.007,
+   "end": 47.066
+  },
+  {
+   "text": "fréquence",
+   "start": 47.066,
+   "end": 47.396
+  },
+  {
+   "text": "cardiaque,",
+   "start": 47.396,
+   "end": 47.868
+  },
+  {
+   "text": "la",
+   "start": 48.198,
+   "end": 48.269
+  },
+  {
+   "text": "température,",
+   "start": 48.269,
+   "end": 48.976
+  },
+  {
+   "text": "la",
+   "start": 49.33,
+   "end": 49.389
+  },
+  {
+   "text": "tension",
+   "start": 49.389,
+   "end": 49.66
+  },
+  {
+   "text": "artérielle,",
+   "start": 49.66,
+   "end": 50.191
+  },
+  {
+   "text": "la",
+   "start": 50.58,
+   "end": 50.651
+  },
+  {
+   "text": "glycémie,",
+   "start": 50.651,
+   "end": 51.217
+  },
+  {
+   "text": "la",
+   "start": 51.5,
+   "end": 51.559
+  },
+  {
+   "text": "saturation…",
+   "start": 51.559,
+   "end": 52.278
+  },
+  {
+   "text": "et",
+   "start": 52.667,
+   "end": 52.726
+  },
+  {
+   "text": "la",
+   "start": 52.726,
+   "end": 52.809
+  },
+  {
+   "text": "diurèse.",
+   "start": 52.809,
+   "end": 53.375
+  },
+  {
+   "text": "Et",
+   "start": 54.292,
+   "end": 54.427
+  },
+  {
+   "text": "maintenant,",
+   "start": 54.427,
+   "end": 54.917
+  },
+  {
+   "text": "place",
+   "start": 55.113,
+   "end": 55.346
+  },
+  {
+   "text": "au",
+   "start": 55.346,
+   "end": 55.395
+  },
+  {
+   "text": "vrai",
+   "start": 55.395,
+   "end": 55.554
+  },
+  {
+   "text": "test :",
+   "start": 55.554,
+   "end": 55.958
+  },
+  {
+   "text": "un",
+   "start": 56.375,
+   "end": 56.436
+  },
+  {
+   "text": "quiz",
+   "start": 56.436,
+   "end": 56.657
+  },
+  {
+   "text": "gratuit,",
+   "start": 56.657,
+   "end": 57.159
+  },
+  {
+   "text": "sur",
+   "start": 57.466,
+   "end": 57.576
+  },
+  {
+   "text": "notre",
+   "start": 57.576,
+   "end": 57.87
+  },
+  {
+   "text": "site,",
+   "start": 57.87,
+   "end": 58.226
+  },
+  {
+   "text": "lapetiteide.fr.",
+   "start": 58.446,
+   "end": 61.056
+  },
+  {
+   "text": "Le",
+   "start": 61.436,
+   "end": 61.546
+  },
+  {
+   "text": "lien",
+   "start": 61.546,
+   "end": 61.803
+  },
+  {
+   "text": "est",
+   "start": 61.803,
+   "end": 61.852
+  },
+  {
+   "text": "dans",
+   "start": 61.852,
+   "end": 61.963
+  },
+  {
+   "text": "la",
+   "start": 61.963,
+   "end": 62.061
+  },
+  {
+   "text": "bio !",
+   "start": 62.061,
+   "end": 62.404
+  },
+  {
+   "text": "Alors,",
+   "start": 63.384,
+   "end": 63.805
+  },
+  {
+   "text": "tu",
+   "start": 64.033,
+   "end": 64.165
+  },
+  {
+   "text": "vas",
+   "start": 64.165,
+   "end": 64.262
+  },
+  {
+   "text": "en",
+   "start": 64.262,
+   "end": 64.322
+  },
+  {
+   "text": "avoir",
+   "start": 64.322,
+   "end": 64.61
+  },
+  {
+   "text": "combien ?",
+   "start": 64.61,
+   "end": 65.031
+  },
+  {
+   "text": "Va",
+   "start": 65.391,
+   "end": 65.548
+  },
+  {
+   "text": "vite",
+   "start": 65.548,
+   "end": 65.812
+  },
+  {
+   "text": "te",
+   "start": 65.812,
+   "end": 65.908
+  },
+  {
+   "text": "tester !",
+   "start": 65.908,
+   "end": 66.401
+  }
+ ]
+}

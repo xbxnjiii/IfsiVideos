@@ -11,7 +11,8 @@ Sorties : public/voix/<episode>/voix.wav (48 kHz, -15 LUFS) et src/videos/<episo
 (événements WordBoundary) : pas de Whisper, pas d'erreur sur les nombres.
 
 Le script JSON liste les parties [{"id": "intro", "text": "...", "pause": 0.55?, "rate": "-3%"?}, ...] ; syntaxe
-{affiché|prononcé} acceptée (ex. {bpm|B P M}) ; `pause` = silence après la partie (défaut 0,55 s) ;
+{affiché|prononcé} acceptée (ex. {bpm|B P M}) ; `pause` = silence après la partie (défaut 0,55 s) ; « [pause 2.5] » dans
+le texte = silence au milieu de la partie (ex. le temps de répondre à une question ; pas avec --only / --swap) ;
 `rate` = débit de cette partie (défaut +8 % ; « -3% » ≈ 10 % plus lent, pour une partie dense).
 Lettre isolée : « la lettre E » (un « E » seul est lu « è » et s'entend « H »).
 Dépendances : ffmpeg, `pip install --break-system-packages edge-tts` (quelques secondes).
@@ -271,20 +272,27 @@ def main():
     pcm = bytearray()
     words, sections = [], []
     for k, p in enumerate(parts):
-        spoken = re.sub(r"\{([^|}]*)\|([^}]*)\}", r"\2", p["text"])
-        for a, b in SPOKEN.items():
-            spoken = spoken.replace(a, b)
-        mp3, wav = f"{tmp}/p{k}.mp3", f"{tmp}/p{k}.wav"
-        heard = split_groups(asyncio.run(synth(spoken, mp3, p.get("rate", RATE))))
-        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", mp3, "-ar", str(SR), "-ac", "1", "-c:a", "pcm_s16le", wav], check=True)
-        with wave.open(wav) as w:
-            data = w.readframes(w.getnframes())
-        t0 = len(pcm) / 2 / SR
-        toks = script_tokens(p["text"])
-        for t, (s, e) in zip(toks, align(toks, heard)):
-            words.append({"text": t, "start": round(t0 + s, 3), "end": round(t0 + e, 3)})
-        sections.append({"id": p["id"], "start": words[-len(toks)]["start"], "end": words[-1]["end"]})
-        pcm += data
+        # « [pause 2.5] » dans le texte : silence voulu au milieu de la partie (ex. le temps de répondre à un quiz)
+        chunks = re.split(r"\s*\[pause ([\d.]+)\]\s*", p["text"])
+        first = len(words)
+        for c in range(0, len(chunks), 2):
+            text = chunks[c]
+            spoken = re.sub(r"\{([^|}]*)\|([^}]*)\}", r"\2", text)
+            for a, b in SPOKEN.items():
+                spoken = spoken.replace(a, b)
+            mp3, wav = f"{tmp}/p{k}_{c}.mp3", f"{tmp}/p{k}_{c}.wav"
+            heard = split_groups(asyncio.run(synth(spoken, mp3, p.get("rate", RATE))))
+            subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", mp3, "-ar", str(SR), "-ac", "1", "-c:a", "pcm_s16le", wav], check=True)
+            with wave.open(wav) as w:
+                data = w.readframes(w.getnframes())
+            t0 = len(pcm) / 2 / SR
+            toks = script_tokens(text)
+            for t, (s, e) in zip(toks, align(toks, heard)):
+                words.append({"text": t, "start": round(t0 + s, 3), "end": round(t0 + e, 3)})
+            pcm += data
+            if c + 1 < len(chunks):
+                pcm += b"\0\0" * int(SR * float(chunks[c + 1]))
+        sections.append({"id": p["id"], "start": words[first]["start"], "end": words[-1]["end"]})
         if k < len(parts) - 1:
             pcm += b"\0\0" * int(SR * p.get("pause", 0.55))
         print(f"{p['id']:8s} {sections[-1]['start']:6.2f} -> {sections[-1]['end']:6.2f}")

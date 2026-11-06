@@ -51,6 +51,8 @@ import {TL as DOULEUR_2_TL} from './videos/douleur-2/timeline';
 import {Diabete, DiabeteProps} from './videos/diabete/Diabete';
 import {TL as DIABETE_TL} from './videos/diabete/timeline';
 import {PlanchePoumons} from './videos/planches/PlanchePoumons';
+import {QuizConstantes, QuizConstantesProps} from './videos/quiz-constantes/QuizConstantes';
+import {TL as QUIZ_CONSTANTES_TL} from './videos/quiz-constantes/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -297,6 +299,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies DiabeteProps}
+		/>
+		{/* 27 · Quiz-Constantes */}
+		<Composition
+			id="Quiz-Constantes"
+			component={QuizConstantes}
+			durationInFrames={QUIZ_CONSTANTES_TL.total}
+			fps={QUIZ_CONSTANTES_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies QuizConstantesProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition

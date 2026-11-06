@@ -54,7 +54,8 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   + `src/videos/<épisode>/voice.json` (timing mot à mot donné par la synthèse : pas de Whisper).
   Dépendance : `pip install --break-system-packages edge-tts` (quelques secondes, à refaire par session).
 - Script : une partie par scène (`id` = id de scène), `{affiché|prononcé}` pour les sigles (`{bpm|B P M}`),
-  `"pause": s` pour un silence voulu, `"rate": "-3%"` pour ralentir une partie dense (≈ 10 % plus lent que +8 %,
+  `"pause": s` pour un silence voulu après la partie, « [pause 2.5] » dans le texte pour un silence au milieu (le temps
+  de répondre à une question), `"rate": "-3%"` pour ralentir une partie dense (≈ 10 % plus lent que +8 %,
   ex. la partie VITE de l'AVC). Lettre isolée : écrire « la lettre E » (un « E » seul est lu « è », entendu « H ») ;
   **chiffres et symboles toujours en lettres** (`{98 %|quatre-vingt-dix-huit pour cent}`) : un « 98 %. » seul en début de
   partie a été lu **en anglais** (« ninety-eight percent ») par la voix multilingue ; contrôler la langue de chaque début
@@ -179,6 +180,19 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   Attention : dans un attribut JSX `text="…\n…"` le `\n` n'est pas un retour à la ligne → `text={'…\n…'}` ; un accent de
   titre sur un mot avec apostrophe s'écrit `*l'hygiène*` (pas `l'*hygiène*`) ; `accessoires/baskets` n'est qu'une chaussure
   (pas la mascotte) : ne pas l'utiliser comme étape.
+
+## Vidéo promo (modèle `Quiz-Constantes`, `src/videos/quiz-constantes/`)
+
+- Demandé : annoncer que les vidéos d'une série sont toutes sorties et envoyer vers le **quiz gratuit du site
+  lapetiteide.fr (lien en bio)**. ≈ 1 min 10, sans barre de progression (`progress={false}`). La règle « pas de quiz dans
+  les vidéos » vaut pour les vidéos de cours : ici le propriétaire a demandé de faire la promo de son quiz.
+- Accroche **« quiz éclair »** : 4 questions, 3 secondes chacune, le spectateur répond dans sa tête pendant un vrai
+  silence de la voix (`[pause 2.6]` au milieu d'une partie : `tts_voix.py` coupe la partie, insère le silence, garde le
+  timing mot à mot) ; chrono 3 · 2 · 1 (tic), bonne réponse bleue ✓ (ding), l'autre rose ✕, explication ; une question
+  piège (une valeur normale). Puis les 7 vidéos (tuiles qui se cochent, « n / 7 »), un téléphone qui ouvre le quiz du site
+  (le doigt touche la bonne réponse), « lapetiteide.fr » en grand + flèche « lien en bio », défi « tu vas en avoir
+  combien ? ». Voix : « {lapetiteide.fr|la petite I, D, E, point F R} » ; « Piège ! » seul était entendu « Peach » →
+  « Eh non, c'est un piège : … » ; « Tu as hésité ? » seul partait en anglais → « Si tu as hésité, … ».
 
 ## Planches anatomiques « La Petite IDE » (demandé : dessiner les organes à notre façon, un organe à la fois)
 

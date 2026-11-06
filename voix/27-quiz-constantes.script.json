@@ -1,0 +1,6 @@
+[
+	{"id": "intro", "text": "Quatre questions, trois secondes pour chacune : tu es prêt ? Première question : trente-huit et demi de température, c'est de la fièvre ? [pause 2.6] Oui ! Dès trente-huit degrés, c'est de la fièvre. Question deux : un cœur qui bat à cent vingt par minute, au repos ? [pause 2.6] C'est une tachycardie : au-dessus de cent, le cœur bat trop vite. Question trois : une saturation à quatre-vingt-dix-huit pour cent ? [pause 2.6] Eh non, c'est un piège : c'est tout à fait normal ! Et la dernière : une glycémie à zéro virgule cinquante-cinq gramme par litre ? [pause 2.6] Hypoglycémie : on resucre tout de suite !", "rate": "+6%", "pause": 0.5},
+	{"id": "serie", "text": "Si tu as hésité, bonne nouvelle : les sept paramètres vitaux ont tous leur vidéo. La fréquence respiratoire, la fréquence cardiaque, la température, la tension artérielle, la glycémie, la saturation… et la diurèse.", "rate": "+6%"},
+	{"id": "quiz", "text": "Et maintenant, place au vrai test : un quiz gratuit, sur notre site, {lapetiteide.fr|la petite I, D, E, point F R}. Le lien est dans la bio !", "rate": "+2%"},
+	{"id": "outro", "text": "Alors, tu vas en avoir combien ? Va vite te tester !", "rate": "+4%"}
+]

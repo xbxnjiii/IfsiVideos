@@ -50,6 +50,8 @@ import * as douleur2 from '../../src/videos/douleur-2/mascot';
 import * as douleur2TL from '../../src/videos/douleur-2/timeline';
 import * as diabete from '../../src/videos/diabete/mascot';
 import * as diabeteTL from '../../src/videos/diabete/timeline';
+import * as quizconstantes from '../../src/videos/quiz-constantes/mascot';
+import * as quizconstantesTL from '../../src/videos/quiz-constantes/timeline';
 
 const VIDEOS: Record<string, [typeof constantes.MASCOT, typeof constantesTL.TL]> = {
 	constantes: [constantes.MASCOT, constantesTL.TL],
@@ -76,6 +78,7 @@ const VIDEOS: Record<string, [typeof constantes.MASCOT, typeof constantesTL.TL]>
 	'douleur-1': [douleur1.MASCOT, douleur1TL.TL],
 	'douleur-2': [douleur2.MASCOT, douleur2TL.TL],
 	'diabete': [diabete.MASCOT, diabeteTL.TL],
+	'quiz-constantes': [quizconstantes.MASCOT, quizconstantesTL.TL],
 };
 const name = process.argv[2] ?? 'constantes';
 const [MASCOT, TL] = VIDEOS[name];
