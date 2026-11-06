@@ -8,17 +8,17 @@ import {wave} from '../../brand/motion3';
 import {runWipe, whip, zoomInto} from '../../brand/motion4';
 import {LPI} from '../../brand/theme';
 import {MASCOT} from './mascot';
-import {Cause, Dedans, Definition, Diagnostic, Hook, Outro, Oxygene, Signes, Traitement} from './Scenes';
+import {Cause, Definition, Diagnostic, Hook, Outro, Oxygene, Radio, Signes, Traitement} from './Scenes';
 import {SCENE_IDS, SceneId, TL} from './timeline';
 
 export type BpcoProps = {voice: boolean; sfx: boolean};
 
-const SCENES: Record<SceneId, React.FC> = {intro: Hook, def: Definition, dedans: Dedans, cause: Cause, signes: Signes, diag: Diagnostic, traitement: Traitement, oxygene: Oxygene, outro: Outro, end: EndCard};
+const SCENES: Record<SceneId, React.FC> = {intro: Hook, def: Definition, radio: Radio, cause: Cause, signes: Signes, diag: Diagnostic, traitement: Traitement, oxygene: Oxygene, outro: Outro, end: EndCard};
 
 /** Transition VERS chaque scène : jamais deux fois la même d'affilée ; la mascotte la porte (mascot.ts). */
 const TRANSITIONS: Record<Exclude<SceneId, 'intro'>, EpisodeTransition> = {
 	def: {p: zoomInto({x: 540, y: 1000}), sfx: 'whoosh'}, // on plonge dans ses poumons
-	dedans: {p: wave({x: 540, y: 760}), sfx: 'whoosh'},
+	radio: {p: wave({x: 540, y: 760}), sfx: 'whoosh'},
 	cause: {p: whip('left'), sfx: 'whoosh'},
 	signes: {p: runWipe(), sfx: 'run'},
 	diag: {p: zoomInto({x: 540, y: 700}), sfx: 'whoosh'},

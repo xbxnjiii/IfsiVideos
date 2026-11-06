@@ -36,7 +36,7 @@ export const LUNG_R =
 /** Poumon gauche du patient (à droite de l'image) : 2 lobes + encoche du cœur. */
 export const LUNG_L =
 	'M386 96 C422 98 468 168 494 252 C516 330 534 440 534 530 C534 556 516 566 496 558 C456 542 414 532 376 538 C360 540 352 528 358 512 C366 494 384 474 382 452 C380 430 356 428 344 416 C336 396 334 360 336 334 C338 304 340 282 344 258 C350 178 356 96 386 96 Z';
-const FISSURES = [
+export const FISSURES = [
 	'M72 352 C140 340 206 336 271 344',
 	'M270 398 C212 420 142 470 90 548',
 	'M340 300 C402 350 470 440 520 548',
@@ -51,9 +51,9 @@ const LOBE_NAMES: [number, number, string, string][] = [
 /** Point central (gonflement, distension). */
 const CENTER: [number, number] = [300, 340];
 
-type Seg = {pts: number[]; w: number; lvl: number; tip?: boolean};
+export type Seg = {pts: number[]; w: number; lvl: number; tip?: boolean};
 /** Bronches principales puis lobaires et segmentaires (dessinées à la main). */
-const MAIN: Seg[] = [
+export const MAIN: Seg[] = [
 	// bronches souches (droite plus courte et plus verticale)
 	{pts: [298, 236, 280, 266, 240, 292], w: 28, lvl: 0},
 	{pts: [302, 236, 326, 268, 378, 300], w: 24, lvl: 0},
@@ -161,7 +161,7 @@ const growTree = () => {
 	}
 	return {segs, tips};
 };
-const TREE = growTree();
+export const TREE = growTree();
 const LEVELS = 7;
 /** Bout de bronchiole le plus proche d'un point (pour poser une étiquette sur une vraie grappe). */
 const nearestTip = (x: number, y: number): [number, number] =>
@@ -171,11 +171,11 @@ const nearestTwig = (x: number, y: number): [number, number] => {
 	return mids.reduce((b, t) => (Math.hypot(t[0] - x, t[1] - y) < Math.hypot(b[0] - x, b[1] - y) ? t : b), mids[0]);
 };
 
-const segPath = (p: number[]) =>
+export const segPath = (p: number[]) =>
 	p.length >= 6 ? `M${p[0]} ${p[1]} Q${p[2]} ${p[3]} ${p[4]} ${p[5]}` : `M${p[0]} ${p[1]} L${p[2]} ${p[3]}`;
 
 /** Bulles d'emphysème (poumons vus de face). */
-const BULLAE: [number, number, number][] = [
+export const BULLAE: [number, number, number][] = [
 	[176, 168, 20],
 	[138, 262, 15],
 	[198, 128, 11],
@@ -186,7 +186,7 @@ const BULLAE: [number, number, number][] = [
 	[488, 410, 13],
 ];
 /** Bouchons de mucus (sur les bronches lobaires). */
-const PLUGS: [number, number][] = [
+export const PLUGS: [number, number][] = [
 	[226, 262],
 	[232, 330],
 	[186, 376],
@@ -198,7 +198,7 @@ const PLUGS: [number, number][] = [
 ];
 
 /** Tube de bronche : contour bleu nuit, paroi claire (rose si elle s'enflamme), passage d'air (bleu clair). */
-const Tube: React.FC<{d: string; w: number; prog: number; copd: number}> = ({d, w, prog, copd}) => {
+export const Tube: React.FC<{d: string; w: number; prog: number; copd: number}> = ({d, w, prog, copd}) => {
 	if (prog <= 0.001) return null;
 	const dash = {pathLength: 1, strokeDasharray: '1 1', strokeDashoffset: 1 - prog};
 	return (

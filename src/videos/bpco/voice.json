@@ -1,1428 +1,1588 @@
 {
  "voice": "voix.wav (tts_voix.py)",
- "duration": 102.896,
+ "duration": 97.536,
  "sections": [
   {
    "id": "intro",
-   "start": 0.049,
-   "end": 8.681
+   "start": 0.05,
+   "end": 13.232
   },
   {
    "id": "def",
-   "start": 9.643,
-   "end": 21.647
+   "start": 14.003,
+   "end": 20.634
   },
   {
-   "id": "dedans",
-   "start": 22.558,
-   "end": 35.729
+   "id": "radio",
+   "start": 21.566,
+   "end": 38.958
   },
   {
    "id": "cause",
-   "start": 36.676,
-   "end": 42.627
+   "start": 39.884,
+   "end": 45.835
   },
   {
    "id": "signes",
-   "start": 43.597,
-   "end": 54.584
+   "start": 46.781,
+   "end": 55.234
   },
   {
    "id": "diag",
-   "start": 55.535,
-   "end": 64.945
+   "start": 56.175,
+   "end": 64.948
   },
   {
    "id": "traitement",
-   "start": 65.87,
-   "end": 77.595
+   "start": 65.886,
+   "end": 73.571
   },
   {
    "id": "oxygene",
-   "start": 78.515,
-   "end": 90.052
+   "start": 74.5,
+   "end": 85.749
   },
   {
    "id": "outro",
-   "start": 90.97,
-   "end": 102.566
+   "start": 86.665,
+   "end": 97.209
   }
  ],
  "words": [
   {
-   "text": "Et",
-   "start": 0.049,
-   "end": 0.188
-  },
-  {
-   "text": "si",
-   "start": 0.188,
-   "end": 0.35
-  },
-  {
-   "text": "chaque",
-   "start": 0.35,
-   "end": 0.547
-  },
-  {
-   "text": "respiration",
-   "start": 0.547,
-   "end": 1.183
-  },
-  {
-   "text": "devenait",
-   "start": 1.183,
-   "end": 1.473
-  },
-  {
-   "text": "un",
-   "start": 1.473,
-   "end": 1.554
-  },
-  {
-   "text": "véritable",
-   "start": 1.554,
-   "end": 1.982
-  },
-  {
-   "text": "effort ?",
-   "start": 1.982,
-   "end": 2.445
-  },
-  {
-   "text": "Trois…",
-   "start": 2.789,
-   "end": 3.102
-  },
-  {
-   "text": "deux…",
-   "start": 3.518,
-   "end": 3.75
-  },
-  {
-   "text": "un…",
-   "start": 4.086,
-   "end": 4.329
-  },
-  {
-   "text": "Que",
-   "start": 4.645,
-   "end": 4.807
-  },
-  {
-   "text": "se",
-   "start": 4.807,
-   "end": 4.911
-  },
-  {
-   "text": "passe-t-il ?",
-   "start": 4.911,
-   "end": 5.513
-  },
-  {
-   "text": "C'est",
-   "start": 5.825,
-   "end": 6.034
-  },
-  {
-   "text": "la",
-   "start": 6.034,
-   "end": 6.126
-  },
-  {
-   "text": "BPCO.",
-   "start": 6.126,
-   "end": 6.89
-  },
-  {
-   "text": "Mais",
-   "start": 7.245,
-   "end": 7.35
-  },
-  {
-   "text": "c'est",
-   "start": 7.35,
-   "end": 7.477
-  },
-  {
-   "text": "quoi,",
-   "start": 7.477,
-   "end": 7.766
-  },
-  {
-   "text": "exactement ?",
-   "start": 8.032,
-   "end": 8.681
-  },
-  {
-   "text": "La",
-   "start": 9.643,
-   "end": 9.781
-  },
-  {
-   "text": "BPCO,",
-   "start": 9.782,
-   "end": 10.499
-  },
-  {
-   "text": "c'est",
-   "start": 10.846,
-   "end": 10.974
-  },
-  {
-   "text": "la",
-   "start": 10.974,
-   "end": 11.043
-  },
-  {
-   "text": "bronchopneumopathie",
-   "start": 11.043,
-   "end": 11.934
-  },
-  {
-   "text": "chronique",
-   "start": 11.934,
-   "end": 12.328
-  },
-  {
-   "text": "obstructive.",
-   "start": 12.328,
-   "end": 13.08
-  },
-  {
-   "text": "Broncho :",
-   "start": 13.395,
-   "end": 13.951
+   "text": "Tous",
+   "start": 0.05,
+   "end": 0.2
   },
   {
    "text": "les",
-   "start": 14.275,
-   "end": 14.356
+   "start": 0.2,
+   "end": 0.293
   },
   {
-   "text": "bronches.",
-   "start": 14.356,
-   "end": 14.865
-  },
-  {
-   "text": "Pneumopathie :",
-   "start": 15.21,
-   "end": 15.939
-  },
-  {
-   "text": "une",
-   "start": 16.309,
-   "end": 16.379
-  },
-  {
-   "text": "maladie",
-   "start": 16.379,
-   "end": 16.726
-  },
-  {
-   "text": "du",
-   "start": 16.726,
-   "end": 16.818
-  },
-  {
-   "text": "poumon.",
-   "start": 16.819,
-   "end": 17.212
-  },
-  {
-   "text": "Chronique :",
-   "start": 17.54,
-   "end": 18.107
-  },
-  {
-   "text": "elle",
-   "start": 18.408,
-   "end": 18.489
-  },
-  {
-   "text": "dure",
-   "start": 18.489,
-   "end": 18.709
-  },
-  {
-   "text": "toute",
-   "start": 18.709,
-   "end": 18.894
-  },
-  {
-   "text": "la",
-   "start": 18.894,
-   "end": 18.987
-  },
-  {
-   "text": "vie.",
-   "start": 18.987,
-   "end": 19.253
-  },
-  {
-   "text": "Et",
-   "start": 19.563,
-   "end": 19.714
-  },
-  {
-   "text": "obstructive :",
-   "start": 19.714,
-   "end": 20.431
-  },
-  {
-   "text": "l'air",
-   "start": 20.825,
-   "end": 20.999
-  },
-  {
-   "text": "passe",
-   "start": 20.999,
-   "end": 21.23
-  },
-  {
-   "text": "mal.",
-   "start": 21.23,
-   "end": 21.647
-  },
-  {
-   "text": "À",
-   "start": 22.558,
-   "end": 22.697
-  },
-  {
-   "text": "l'intérieur,",
-   "start": 22.697,
-   "end": 23.287
-  },
-  {
-   "text": "les",
-   "start": 23.588,
-   "end": 23.646
-  },
-  {
-   "text": "bronches",
-   "start": 23.646,
-   "end": 23.935
-  },
-  {
-   "text": "s'enflamment,",
-   "start": 23.935,
-   "end": 24.445
-  },
-  {
-   "text": "se",
-   "start": 24.745,
-   "end": 24.873
-  },
-  {
-   "text": "remplissent",
-   "start": 24.873,
-   "end": 25.174
-  },
-  {
-   "text": "de",
-   "start": 25.174,
-   "end": 25.266
-  },
-  {
-   "text": "mucus",
-   "start": 25.266,
-   "end": 25.695
-  },
-  {
-   "text": "et",
-   "start": 25.695,
-   "end": 25.741
-  },
-  {
-   "text": "rétrécissent.",
-   "start": 25.741,
-   "end": 26.493
-  },
-  {
-   "text": "Au",
-   "start": 26.817,
-   "end": 26.968
-  },
-  {
-   "text": "bout,",
-   "start": 26.968,
-   "end": 27.211
-  },
-  {
-   "text": "les",
-   "start": 27.5,
-   "end": 27.558
-  },
-  {
-   "text": "alvéoles,",
-   "start": 27.558,
-   "end": 28.114
-  },
-  {
-   "text": "les",
-   "start": 28.357,
-   "end": 28.415
-  },
-  {
-   "text": "petits",
-   "start": 28.415,
-   "end": 28.646
-  },
-  {
-   "text": "sacs",
-   "start": 28.646,
-   "end": 28.877
-  },
-  {
-   "text": "où",
-   "start": 28.877,
-   "end": 28.912
-  },
-  {
-   "text": "passe",
-   "start": 28.912,
-   "end": 29.12
-  },
-  {
-   "text": "l'oxygène,",
-   "start": 29.12,
-   "end": 29.699
-  },
-  {
-   "text": "se",
-   "start": 30.0,
-   "end": 30.116
-  },
-  {
-   "text": "détruisent :",
-   "start": 30.116,
-   "end": 30.637
-  },
-  {
-   "text": "c'est",
-   "start": 30.833,
-   "end": 30.961
-  },
-  {
-   "text": "l'emphysème.",
-   "start": 30.961,
-   "end": 31.655
-  },
-  {
-   "text": "Résultat :",
-   "start": 31.987,
-   "end": 32.577
-  },
-  {
-   "text": "l'air",
-   "start": 32.89,
-   "end": 33.087
-  },
-  {
-   "text": "entre…",
-   "start": 33.087,
-   "end": 33.399
-  },
-  {
-   "text": "mais",
-   "start": 33.7,
-   "end": 33.77
-  },
-  {
-   "text": "ressort",
-   "start": 33.77,
-   "end": 34.082
-  },
-  {
-   "text": "mal.",
-   "start": 34.082,
-   "end": 34.429
-  },
-  {
-   "text": "Il",
-   "start": 34.745,
-   "end": 34.942
-  },
-  {
-   "text": "reste",
-   "start": 34.942,
-   "end": 35.243
-  },
-  {
-   "text": "piégé.",
-   "start": 35.243,
-   "end": 35.729
-  },
-  {
-   "text": "Le",
-   "start": 36.676,
-   "end": 36.792
-  },
-  {
-   "text": "grand",
-   "start": 36.792,
-   "end": 36.954
-  },
-  {
-   "text": "coupable :",
-   "start": 36.954,
-   "end": 37.451
-  },
-  {
-   "text": "le",
-   "start": 37.706,
-   "end": 37.775
-  },
-  {
-   "text": "tabac,",
-   "start": 37.775,
-   "end": 38.157
-  },
-  {
-   "text": "dans",
-   "start": 38.424,
-   "end": 38.528
-  },
-  {
-   "text": "huit",
-   "start": 38.528,
-   "end": 38.655
-  },
-  {
-   "text": "cas",
-   "start": 38.655,
-   "end": 38.782
-  },
-  {
-   "text": "sur",
-   "start": 38.782,
-   "end": 38.956
-  },
-  {
-   "text": "dix.",
-   "start": 38.956,
-   "end": 39.373
-  },
-  {
-   "text": "Mais",
-   "start": 39.687,
-   "end": 39.837
-  },
-  {
-   "text": "aussi",
-   "start": 39.837,
-   "end": 40.046
-  },
-  {
-   "text": "les",
-   "start": 40.046,
-   "end": 40.115
-  },
-  {
-   "text": "poussières",
-   "start": 40.115,
-   "end": 40.543
-  },
-  {
-   "text": "et",
-   "start": 40.543,
-   "end": 40.567
-  },
-  {
-   "text": "les",
-   "start": 40.567,
-   "end": 40.636
-  },
-  {
-   "text": "produits",
-   "start": 40.636,
-   "end": 40.925
-  },
-  {
-   "text": "chimiques",
-   "start": 40.925,
-   "end": 41.226
-  },
-  {
-   "text": "au",
-   "start": 41.226,
-   "end": 41.249
-  },
-  {
-   "text": "travail,",
-   "start": 41.25,
-   "end": 41.712
-  },
-  {
-   "text": "ou",
-   "start": 41.967,
-   "end": 41.99
-  },
-  {
-   "text": "la",
-   "start": 41.99,
-   "end": 42.083
-  },
-  {
-   "text": "pollution.",
-   "start": 42.083,
-   "end": 42.627
-  },
-  {
-   "text": "Les",
-   "start": 43.597,
-   "end": 43.735
-  },
-  {
-   "text": "signes ?",
-   "start": 43.735,
-   "end": 44.175
-  },
-  {
-   "text": "Un",
-   "start": 44.491,
-   "end": 44.642
-  },
-  {
-   "text": "essoufflement,",
-   "start": 44.642,
-   "end": 45.302
-  },
-  {
-   "text": "d'abord",
-   "start": 45.603,
-   "end": 45.857
-  },
-  {
-   "text": "à",
-   "start": 45.857,
-   "end": 45.88
-  },
-  {
-   "text": "l'effort,",
-   "start": 45.88,
-   "end": 46.378
-  },
-  {
-   "text": "puis",
-   "start": 46.621,
-   "end": 46.76
-  },
-  {
-   "text": "pour",
-   "start": 46.76,
-   "end": 46.945
-  },
-  {
-   "text": "un",
-   "start": 46.945,
-   "end": 46.98
-  },
-  {
-   "text": "rien.",
-   "start": 46.98,
-   "end": 47.292
-  },
-  {
-   "text": "Une",
-   "start": 47.624,
-   "end": 47.786
-  },
-  {
-   "text": "toux",
-   "start": 47.786,
-   "end": 47.891
-  },
-  {
-   "text": "qui",
-   "start": 47.891,
-   "end": 48.041
-  },
-  {
-   "text": "dure,",
-   "start": 48.041,
-   "end": 48.388
-  },
-  {
-   "text": "avec",
-   "start": 48.631,
-   "end": 48.77
-  },
-  {
-   "text": "des",
-   "start": 48.77,
-   "end": 48.851
-  },
-  {
-   "text": "crachats,",
-   "start": 48.851,
-   "end": 49.291
-  },
-  {
-   "text": "surtout",
-   "start": 49.58,
-   "end": 49.847
-  },
-  {
-   "text": "le",
-   "start": 49.847,
-   "end": 49.904
-  },
-  {
-   "text": "matin.",
-   "start": 49.904,
-   "end": 50.298
-  },
-  {
-   "text": "Et",
-   "start": 50.614,
-   "end": 50.753
-  },
-  {
-   "text": "des",
-   "start": 50.753,
-   "end": 50.834
-  },
-  {
-   "text": "bronchites",
-   "start": 50.834,
-   "end": 51.297
-  },
-  {
-   "text": "qui",
-   "start": 51.297,
-   "end": 51.401
-  },
-  {
-   "text": "reviennent",
-   "start": 51.401,
-   "end": 51.714
-  },
-  {
-   "text": "chaque",
-   "start": 51.714,
-   "end": 51.957
-  },
-  {
-   "text": "hiver.",
-   "start": 51.957,
-   "end": 52.397
-  },
-  {
-   "text": "Beaucoup",
-   "start": 52.709,
-   "end": 53.022
-  },
-  {
-   "text": "pensent",
-   "start": 53.022,
-   "end": 53.253
-  },
-  {
-   "text": "que",
-   "start": 53.253,
-   "end": 53.357
-  },
-  {
-   "text": "c'est",
-   "start": 53.357,
-   "end": 53.473
-  },
-  {
-   "text": "juste",
-   "start": 53.473,
-   "end": 53.751
-  },
-  {
-   "text": "la",
-   "start": 53.751,
-   "end": 53.855
-  },
-  {
-   "text": "toux",
-   "start": 53.855,
-   "end": 53.971
-  },
-  {
-   "text": "du",
-   "start": 53.971,
-   "end": 54.063
-  },
-  {
-   "text": "fumeur…",
-   "start": 54.063,
-   "end": 54.584
-  },
-  {
-   "text": "Pour",
-   "start": 55.535,
-   "end": 55.628
-  },
-  {
-   "text": "la",
-   "start": 55.628,
-   "end": 55.697
-  },
-  {
-   "text": "confirmer :",
-   "start": 55.697,
-   "end": 56.299
-  },
-  {
-   "text": "la",
-   "start": 56.658,
-   "end": 56.727
-  },
-  {
-   "text": "spirométrie.",
-   "start": 56.727,
-   "end": 57.491
-  },
-  {
-   "text": "Le",
-   "start": 57.85,
-   "end": 57.954
-  },
-  {
-   "text": "patient",
-   "start": 57.954,
-   "end": 58.336
-  },
-  {
-   "text": "souffle",
-   "start": 58.336,
-   "end": 58.648
-  },
-  {
-   "text": "le",
-   "start": 58.648,
-   "end": 58.718
-  },
-  {
-   "text": "plus",
-   "start": 58.718,
-   "end": 58.834
-  },
-  {
-   "text": "fort",
-   "start": 58.834,
-   "end": 59.019
-  },
-  {
-   "text": "possible",
-   "start": 59.019,
-   "end": 59.447
-  },
-  {
-   "text": "dans",
-   "start": 59.447,
-   "end": 59.528
-  },
-  {
-   "text": "un",
-   "start": 59.528,
-   "end": 59.667
-  },
-  {
-   "text": "tube.",
-   "start": 59.667,
-   "end": 60.084
-  },
-  {
-   "text": "Si,",
-   "start": 60.408,
-   "end": 60.743
-  },
-  {
-   "text": "en",
-   "start": 60.917,
-   "end": 60.998
-  },
-  {
-   "text": "une",
-   "start": 60.998,
-   "end": 61.125
-  },
-  {
-   "text": "seconde,",
-   "start": 61.125,
-   "end": 61.542
+   "text": "matins,",
+   "start": 0.293,
+   "end": 0.698
   },
   {
    "text": "il",
-   "start": 61.843,
-   "end": 61.935
+   "start": 1.034,
+   "end": 1.138
   },
   {
-   "text": "vide",
-   "start": 61.935,
-   "end": 62.109
+   "text": "tousse…",
+   "start": 1.138,
+   "end": 1.497
   },
   {
-   "text": "moins",
-   "start": 62.109,
-   "end": 62.26
+   "text": "il",
+   "start": 1.636,
+   "end": 1.717
   },
   {
-   "text": "de",
-   "start": 62.26,
-   "end": 62.364
-  },
-  {
-   "text": "soixante-dix",
-   "start": 62.364,
-   "end": 62.838
-  },
-  {
-   "text": "pour",
-   "start": 62.838,
-   "end": 63.0
-  },
-  {
-   "text": "cent",
-   "start": 63.0,
-   "end": 63.104
-  },
-  {
-   "text": "de",
-   "start": 63.104,
-   "end": 63.197
-  },
-  {
-   "text": "son",
-   "start": 63.197,
-   "end": 63.336
-  },
-  {
-   "text": "air,",
-   "start": 63.336,
-   "end": 63.625
-  },
-  {
-   "text": "les",
-   "start": 63.892,
-   "end": 63.949
-  },
-  {
-   "text": "bronches",
-   "start": 63.949,
-   "end": 64.227
-  },
-  {
-   "text": "sont",
-   "start": 64.227,
-   "end": 64.32
-  },
-  {
-   "text": "obstruées.",
-   "start": 64.32,
-   "end": 64.945
-  },
-  {
-   "text": "Elle",
-   "start": 65.87,
-   "end": 66.032
-  },
-  {
-   "text": "ne",
-   "start": 66.032,
-   "end": 66.125
-  },
-  {
-   "text": "se",
-   "start": 66.125,
-   "end": 66.229
-  },
-  {
-   "text": "guérit",
-   "start": 66.229,
-   "end": 66.472
-  },
-  {
-   "text": "pas,",
-   "start": 66.472,
-   "end": 66.703
-  },
-  {
-   "text": "mais",
-   "start": 67.016,
-   "end": 67.074
-  },
-  {
-   "text": "on",
-   "start": 67.074,
-   "end": 67.143
-  },
-  {
-   "text": "peut",
-   "start": 67.143,
-   "end": 67.259
-  },
-  {
-   "text": "la",
-   "start": 67.259,
-   "end": 67.351
-  },
-  {
-   "text": "freiner.",
-   "start": 67.351,
-   "end": 67.791
-  },
-  {
-   "text": "D'abord :",
-   "start": 68.114,
-   "end": 68.624
-  },
-  {
-   "text": "arrêter",
-   "start": 68.913,
-   "end": 69.168
-  },
-  {
-   "text": "de",
-   "start": 69.168,
-   "end": 69.26
-  },
-  {
-   "text": "fumer.",
-   "start": 69.26,
-   "end": 69.665
-  },
-  {
-   "text": "Puis",
-   "start": 70.01,
-   "end": 70.149
-  },
-  {
-   "text": "les",
-   "start": 70.149,
-   "end": 70.23
-  },
-  {
-   "text": "bronchodilatateurs :",
-   "start": 70.23,
-   "end": 71.271
-  },
-  {
-   "text": "des",
-   "start": 71.665,
-   "end": 71.734
-  },
-  {
-   "text": "inhalateurs",
-   "start": 71.734,
-   "end": 72.348
-  },
-  {
-   "text": "qui",
-   "start": 72.348,
-   "end": 72.521
-  },
-  {
-   "text": "ouvrent",
-   "start": 72.521,
-   "end": 72.695
-  },
-  {
-   "text": "les",
-   "start": 72.695,
-   "end": 72.776
-  },
-  {
-   "text": "bronches.",
-   "start": 72.776,
-   "end": 73.262
-  },
-  {
-   "text": "La",
-   "start": 73.621,
-   "end": 73.748
-  },
-  {
-   "text": "réhabilitation",
-   "start": 73.748,
-   "end": 74.396
-  },
-  {
-   "text": "respiratoire,",
-   "start": 74.396,
-   "end": 75.195
-  },
-  {
-   "text": "pour",
-   "start": 75.473,
-   "end": 75.588
-  },
-  {
-   "text": "réentraîner",
-   "start": 75.588,
-   "end": 76.005
-  },
-  {
-   "text": "le",
-   "start": 76.005,
-   "end": 76.098
-  },
-  {
-   "text": "souffle.",
-   "start": 76.098,
-   "end": 76.584
+   "text": "crache…",
+   "start": 1.717,
+   "end": 2.249
   },
   {
    "text": "Et",
-   "start": 76.9,
-   "end": 77.027
+   "start": 2.562,
+   "end": 2.7
   },
   {
-   "text": "les",
-   "start": 77.027,
-   "end": 77.108
+   "text": "dans",
+   "start": 2.7,
+   "end": 2.816
   },
   {
-   "text": "vaccins.",
-   "start": 77.108,
-   "end": 77.595
+   "text": "l'escalier,",
+   "start": 2.816,
+   "end": 3.383
   },
   {
-   "text": "Au",
-   "start": 78.515,
-   "end": 78.654
+   "text": "il",
+   "start": 3.661,
+   "end": 3.754
   },
   {
-   "text": "stade",
-   "start": 78.654,
-   "end": 78.862
-  },
-  {
-   "text": "avancé,",
-   "start": 78.862,
-   "end": 79.36
-  },
-  {
-   "text": "on",
-   "start": 79.649,
-   "end": 79.684
-  },
-  {
-   "text": "donne",
-   "start": 79.684,
-   "end": 79.846
-  },
-  {
-   "text": "de",
-   "start": 79.846,
-   "end": 79.916
-  },
-  {
-   "text": "l'oxygène,",
-   "start": 79.916,
-   "end": 80.541
-  },
-  {
-   "text": "mais",
-   "start": 80.841,
-   "end": 80.899
+   "text": "s'arrête",
+   "start": 3.754,
+   "end": 4.066
   },
   {
    "text": "à",
-   "start": 80.899,
-   "end": 80.957
+   "start": 4.066,
+   "end": 4.112
   },
   {
-   "text": "petit",
-   "start": 80.957,
-   "end": 81.189
+   "text": "chaque",
+   "start": 4.112,
+   "end": 4.309
   },
   {
-   "text": "débit :",
-   "start": 81.189,
-   "end": 81.536
+   "text": "étage.",
+   "start": 4.309,
+   "end": 4.819
   },
   {
-   "text": "on",
-   "start": 81.906,
-   "end": 81.929
+   "text": "Lui,",
+   "start": 5.174,
+   "end": 5.486
   },
   {
-   "text": "vise",
-   "start": 81.929,
-   "end": 82.103
+   "text": "il",
+   "start": 5.694,
+   "end": 5.799
   },
   {
-   "text": "une",
-   "start": 82.103,
-   "end": 82.196
+   "text": "se",
+   "start": 5.799,
+   "end": 5.926
   },
   {
-   "text": "saturation",
-   "start": 82.196,
-   "end": 82.797
-  },
-  {
-   "text": "entre",
-   "start": 82.797,
-   "end": 83.017
-  },
-  {
-   "text": "quatre-vingt-huit",
-   "start": 83.017,
-   "end": 83.619
-  },
-  {
-   "text": "et",
-   "start": 83.619,
-   "end": 83.642
-  },
-  {
-   "text": "quatre-vingt-douze",
-   "start": 83.642,
-   "end": 84.175
-  },
-  {
-   "text": "pour",
-   "start": 84.175,
-   "end": 84.348
-  },
-  {
-   "text": "cent.",
-   "start": 84.348,
-   "end": 84.603
-  },
-  {
-   "text": "Et",
-   "start": 84.915,
-   "end": 85.042
-  },
-  {
-   "text": "si",
-   "start": 85.042,
-   "end": 85.181
-  },
-  {
-   "text": "tout",
-   "start": 85.181,
-   "end": 85.297
-  },
-  {
-   "text": "s'aggrave",
-   "start": 85.297,
-   "end": 85.632
-  },
-  {
-   "text": "d'un",
-   "start": 85.632,
-   "end": 85.783
-  },
-  {
-   "text": "coup :",
-   "start": 85.783,
-   "end": 86.072
+   "text": "dit :",
+   "start": 5.926,
+   "end": 6.169
   },
   {
    "text": "c'est",
-   "start": 86.396,
-   "end": 86.477
+   "start": 6.424,
+   "end": 6.539
   },
   {
-   "text": "une",
-   "start": 86.477,
-   "end": 86.651
+   "text": "juste",
+   "start": 6.539,
+   "end": 6.806
   },
   {
-   "text": "exacerbation,",
-   "start": 86.651,
-   "end": 87.461
+   "text": "la",
+   "start": 6.806,
+   "end": 6.91
   },
   {
-   "text": "une",
-   "start": 87.727,
-   "end": 87.797
+   "text": "cigarette.",
+   "start": 6.91,
+   "end": 7.546
   },
   {
-   "text": "poussée",
-   "start": 87.797,
-   "end": 88.086
+   "text": "Faux !",
+   "start": 7.862,
+   "end": 8.233
+  },
+  {
+   "text": "Ce",
+   "start": 8.556,
+   "end": 8.73
+  },
+  {
+   "text": "n'est",
+   "start": 8.73,
+   "end": 8.822
+  },
+  {
+   "text": "pas",
+   "start": 8.822,
+   "end": 8.938
+  },
+  {
+   "text": "qu'une",
+   "start": 8.938,
+   "end": 9.112
+  },
+  {
+   "text": "toux",
+   "start": 9.112,
+   "end": 9.216
   },
   {
    "text": "de",
-   "start": 88.086,
-   "end": 88.167
+   "start": 9.216,
+   "end": 9.274
+  },
+  {
+   "text": "fumeur :",
+   "start": 9.274,
+   "end": 9.725
+  },
+  {
+   "text": "c'est",
+   "start": 10.014,
+   "end": 10.13
   },
   {
    "text": "la",
-   "start": 88.167,
-   "end": 88.248
+   "start": 10.13,
+   "end": 10.211
   },
   {
-   "text": "maladie.",
-   "start": 88.248,
-   "end": 88.757
-  },
-  {
-   "text": "On",
-   "start": 89.103,
-   "end": 89.184
-  },
-  {
-   "text": "consulte",
-   "start": 89.184,
-   "end": 89.647
-  },
-  {
-   "text": "vite !",
-   "start": 89.647,
-   "end": 90.052
-  },
-  {
-   "text": "Petit",
-   "start": 90.97,
-   "end": 91.259
-  },
-  {
-   "text": "récap !",
-   "start": 91.259,
-   "end": 91.815
-  },
-  {
-   "text": "La",
-   "start": 92.147,
-   "end": 92.286
-  },
-  {
-   "text": "BPCO :",
-   "start": 92.286,
-   "end": 92.992
-  },
-  {
-   "text": "des",
-   "start": 93.408,
-   "end": 93.478
-  },
-  {
-   "text": "bronches",
-   "start": 93.478,
-   "end": 93.756
-  },
-  {
-   "text": "qui",
-   "start": 93.756,
-   "end": 93.86
-  },
-  {
-   "text": "rétrécissent,",
-   "start": 93.86,
-   "end": 94.531
-  },
-  {
-   "text": "l'air",
-   "start": 94.774,
-   "end": 94.971
-  },
-  {
-   "text": "reste",
-   "start": 94.971,
-   "end": 95.226
-  },
-  {
-   "text": "piégé.",
-   "start": 95.226,
-   "end": 95.712
-  },
-  {
-   "text": "Cause",
-   "start": 96.07,
-   "end": 96.279
-  },
-  {
-   "text": "numéro",
-   "start": 96.279,
-   "end": 96.672
-  },
-  {
-   "text": "un :",
-   "start": 96.672,
-   "end": 96.881
-  },
-  {
-   "text": "le",
-   "start": 97.251,
-   "end": 97.32
-  },
-  {
-   "text": "tabac.",
-   "start": 97.32,
-   "end": 97.702
-  },
-  {
-   "text": "On",
-   "start": 98.03,
-   "end": 98.157
-  },
-  {
-   "text": "la",
-   "start": 98.157,
-   "end": 98.239
-  },
-  {
-   "text": "confirme",
-   "start": 98.239,
-   "end": 98.782
-  },
-  {
-   "text": "par",
-   "start": 98.782,
-   "end": 98.91
-  },
-  {
-   "text": "la",
-   "start": 98.91,
-   "end": 98.979
-  },
-  {
-   "text": "spirométrie.",
-   "start": 98.979,
-   "end": 99.708
+   "text": "BPCO.",
+   "start": 10.211,
+   "end": 10.94
   },
   {
    "text": "Et",
-   "start": 100.02,
-   "end": 100.159
+   "start": 11.253,
+   "end": 11.403
   },
   {
-   "text": "on",
-   "start": 100.159,
-   "end": 100.205
+   "text": "au",
+   "start": 11.403,
+   "end": 11.45
+  },
+  {
+   "text": "moins",
+   "start": 11.45,
+   "end": 11.623
+  },
+  {
+   "text": "deux",
+   "start": 11.623,
+   "end": 11.727
+  },
+  {
+   "text": "malades",
+   "start": 11.727,
+   "end": 12.063
+  },
+  {
+   "text": "sur",
+   "start": 12.063,
+   "end": 12.202
+  },
+  {
+   "text": "trois",
+   "start": 12.202,
+   "end": 12.399
+  },
+  {
+   "text": "ne",
+   "start": 12.399,
+   "end": 12.48
+  },
+  {
+   "text": "le",
+   "start": 12.48,
+   "end": 12.572
+  },
+  {
+   "text": "savent",
+   "start": 12.572,
+   "end": 12.792
+  },
+  {
+   "text": "même",
+   "start": 12.792,
+   "end": 12.977
+  },
+  {
+   "text": "pas.",
+   "start": 12.977,
+   "end": 13.232
+  },
+  {
+   "text": "La",
+   "start": 14.003,
+   "end": 14.13
+  },
+  {
+   "text": "BPCO,",
+   "start": 14.13,
+   "end": 14.848
+  },
+  {
+   "text": "c'est",
+   "start": 15.16,
+   "end": 15.276
   },
   {
    "text": "la",
-   "start": 100.205,
-   "end": 100.309
+   "start": 15.276,
+   "end": 15.345
   },
   {
-   "text": "freine :",
-   "start": 100.309,
-   "end": 100.714
+   "text": "bronchopneumopathie",
+   "start": 15.345,
+   "end": 16.19
   },
   {
-   "text": "arrêt",
-   "start": 100.981,
-   "end": 101.12
+   "text": "chronique",
+   "start": 16.19,
+   "end": 16.56
   },
   {
-   "text": "du",
-   "start": 101.12,
-   "end": 101.224
+   "text": "obstructive :",
+   "start": 16.56,
+   "end": 17.162
+  },
+  {
+   "text": "une",
+   "start": 17.614,
+   "end": 17.672
+  },
+  {
+   "text": "maladie",
+   "start": 17.672,
+   "end": 17.938
+  },
+  {
+   "text": "des",
+   "start": 17.938,
+   "end": 18.019
+  },
+  {
+   "text": "bronches,",
+   "start": 18.019,
+   "end": 18.459
+  },
+  {
+   "text": "qui",
+   "start": 18.655,
+   "end": 18.748
+  },
+  {
+   "text": "dure",
+   "start": 18.748,
+   "end": 18.91
+  },
+  {
+   "text": "toute",
+   "start": 18.91,
+   "end": 19.072
+  },
+  {
+   "text": "la",
+   "start": 19.072,
+   "end": 19.188
+  },
+  {
+   "text": "vie,",
+   "start": 19.188,
+   "end": 19.442
+  },
+  {
+   "text": "et",
+   "start": 19.697,
+   "end": 19.801
+  },
+  {
+   "text": "où",
+   "start": 19.801,
+   "end": 19.836
+  },
+  {
+   "text": "l'air",
+   "start": 19.836,
+   "end": 20.021
+  },
+  {
+   "text": "passe",
+   "start": 20.021,
+   "end": 20.241
+  },
+  {
+   "text": "mal.",
+   "start": 20.241,
+   "end": 20.634
+  },
+  {
+   "text": "Passons-le",
+   "start": 21.566,
+   "end": 22.102
+  },
+  {
+   "text": "à",
+   "start": 22.102,
+   "end": 22.185
+  },
+  {
+   "text": "la",
+   "start": 22.185,
+   "end": 22.28
+  },
+  {
+   "text": "radio.",
+   "start": 22.28,
+   "end": 22.756
+  },
+  {
+   "text": "Sous",
+   "start": 23.078,
+   "end": 23.28
+  },
+  {
+   "text": "les",
+   "start": 23.28,
+   "end": 23.399
+  },
+  {
+   "text": "côtes,",
+   "start": 23.399,
+   "end": 23.78
+  },
+  {
+   "text": "il",
+   "start": 24.054,
+   "end": 24.114
+  },
+  {
+   "text": "y",
+   "start": 24.114,
+   "end": 24.161
+  },
+  {
+   "text": "a",
+   "start": 24.161,
+   "end": 24.185
+  },
+  {
+   "text": "les",
+   "start": 24.185,
+   "end": 24.28
+  },
+  {
+   "text": "poumons.",
+   "start": 24.28,
+   "end": 24.661
+  },
+  {
+   "text": "À",
+   "start": 24.983,
+   "end": 25.126
+  },
+  {
+   "text": "l'intérieur,",
+   "start": 25.126,
+   "end": 25.697
+  },
+  {
+   "text": "l'air",
+   "start": 25.947,
+   "end": 26.066
+  },
+  {
+   "text": "descend",
+   "start": 26.066,
+   "end": 26.328
+  },
+  {
+   "text": "par",
+   "start": 26.328,
+   "end": 26.435
+  },
+  {
+   "text": "la",
+   "start": 26.435,
+   "end": 26.506
+  },
+  {
+   "text": "trachée",
+   "start": 26.506,
+   "end": 26.852
+  },
+  {
+   "text": "et",
+   "start": 26.852,
+   "end": 26.875
+  },
+  {
+   "text": "les",
+   "start": 26.876,
+   "end": 26.971
+  },
+  {
+   "text": "bronches,",
+   "start": 26.971,
+   "end": 27.399
+  },
+  {
+   "text": "jusqu'aux",
+   "start": 27.626,
+   "end": 27.876
+  },
+  {
+   "text": "alvéoles :",
+   "start": 27.876,
+   "end": 28.471
+  },
+  {
+   "text": "des",
+   "start": 28.756,
+   "end": 28.828
+  },
+  {
+   "text": "petits",
+   "start": 28.828,
+   "end": 29.09
+  },
+  {
+   "text": "sacs",
+   "start": 29.09,
+   "end": 29.34
+  },
+  {
+   "text": "où",
+   "start": 29.34,
+   "end": 29.375
+  },
+  {
+   "text": "l'oxygène",
+   "start": 29.376,
+   "end": 29.911
+  },
+  {
+   "text": "passe",
+   "start": 29.911,
+   "end": 30.126
+  },
+  {
+   "text": "dans",
+   "start": 30.126,
+   "end": 30.233
+  },
+  {
+   "text": "le",
+   "start": 30.233,
+   "end": 30.316
+  },
+  {
+   "text": "sang.",
+   "start": 30.316,
+   "end": 30.614
+  },
+  {
+   "text": "Mais",
+   "start": 30.956,
+   "end": 31.064
+  },
+  {
+   "text": "chez",
+   "start": 31.076,
+   "end": 31.23
+  },
+  {
+   "text": "lui,",
+   "start": 31.23,
+   "end": 31.504
+  },
+  {
+   "text": "les",
+   "start": 31.826,
+   "end": 31.897
+  },
+  {
+   "text": "bronches",
+   "start": 31.897,
+   "end": 32.171
+  },
+  {
+   "text": "s'enflamment,",
+   "start": 32.171,
+   "end": 32.706
+  },
+  {
+   "text": "se",
+   "start": 32.992,
+   "end": 33.135
+  },
+  {
+   "text": "remplissent",
+   "start": 33.135,
+   "end": 33.433
+  },
+  {
+   "text": "de",
+   "start": 33.433,
+   "end": 33.528
+  },
+  {
+   "text": "mucus",
+   "start": 33.528,
+   "end": 33.992
+  },
+  {
+   "text": "et",
+   "start": 33.992,
+   "end": 34.04
+  },
+  {
+   "text": "rétrécissent.",
+   "start": 34.04,
+   "end": 34.814
+  },
+  {
+   "text": "Les",
+   "start": 35.137,
+   "end": 35.316
+  },
+  {
+   "text": "alvéoles",
+   "start": 35.316,
+   "end": 35.768
+  },
+  {
+   "text": "se",
+   "start": 35.768,
+   "end": 35.899
+  },
+  {
+   "text": "cassent :",
+   "start": 35.899,
+   "end": 36.364
+  },
+  {
+   "text": "c'est",
+   "start": 36.614,
+   "end": 36.745
+  },
+  {
+   "text": "l'emphysème.",
+   "start": 36.745,
+   "end": 37.447
+  },
+  {
+   "text": "Et",
+   "start": 37.767,
+   "end": 37.91
+  },
+  {
+   "text": "l'air",
+   "start": 37.91,
+   "end": 38.172
+  },
+  {
+   "text": "reste",
+   "start": 38.172,
+   "end": 38.458
+  },
+  {
+   "text": "piégé.",
+   "start": 38.458,
+   "end": 38.958
+  },
+  {
+   "text": "Le",
+   "start": 39.884,
+   "end": 40.0
+  },
+  {
+   "text": "grand",
+   "start": 40.0,
+   "end": 40.162
+  },
+  {
+   "text": "coupable :",
+   "start": 40.162,
+   "end": 40.659
+  },
+  {
+   "text": "le",
+   "start": 40.914,
+   "end": 40.983
   },
   {
    "text": "tabac,",
-   "start": 101.224,
-   "end": 101.582
+   "start": 40.983,
+   "end": 41.365
+  },
+  {
+   "text": "dans",
+   "start": 41.632,
+   "end": 41.736
+  },
+  {
+   "text": "huit",
+   "start": 41.736,
+   "end": 41.863
+  },
+  {
+   "text": "cas",
+   "start": 41.863,
+   "end": 41.99
+  },
+  {
+   "text": "sur",
+   "start": 41.99,
+   "end": 42.164
+  },
+  {
+   "text": "dix.",
+   "start": 42.164,
+   "end": 42.581
+  },
+  {
+   "text": "Mais",
+   "start": 42.895,
+   "end": 43.045
+  },
+  {
+   "text": "aussi",
+   "start": 43.045,
+   "end": 43.254
+  },
+  {
+   "text": "les",
+   "start": 43.254,
+   "end": 43.323
+  },
+  {
+   "text": "poussières",
+   "start": 43.323,
+   "end": 43.751
+  },
+  {
+   "text": "et",
+   "start": 43.751,
+   "end": 43.775
+  },
+  {
+   "text": "les",
+   "start": 43.775,
+   "end": 43.844
+  },
+  {
+   "text": "produits",
+   "start": 43.844,
+   "end": 44.133
+  },
+  {
+   "text": "chimiques",
+   "start": 44.133,
+   "end": 44.434
+  },
+  {
+   "text": "au",
+   "start": 44.434,
+   "end": 44.457
+  },
+  {
+   "text": "travail,",
+   "start": 44.458,
+   "end": 44.92
+  },
+  {
+   "text": "ou",
+   "start": 45.175,
+   "end": 45.198
+  },
+  {
+   "text": "la",
+   "start": 45.198,
+   "end": 45.291
+  },
+  {
+   "text": "pollution.",
+   "start": 45.291,
+   "end": 45.835
+  },
+  {
+   "text": "Les",
+   "start": 46.781,
+   "end": 46.92
+  },
+  {
+   "text": "signes",
+   "start": 46.92,
+   "end": 47.187
+  },
+  {
+   "text": "s'installent",
+   "start": 47.187,
+   "end": 47.568
+  },
+  {
+   "text": "doucement :",
+   "start": 47.569,
+   "end": 47.997
+  },
+  {
+   "text": "un",
+   "start": 48.344,
+   "end": 48.437
+  },
+  {
+   "text": "essoufflement,",
+   "start": 48.437,
+   "end": 49.096
+  },
+  {
+   "text": "d'abord",
+   "start": 49.27,
+   "end": 49.525
+  },
+  {
+   "text": "à",
+   "start": 49.525,
+   "end": 49.548
+  },
+  {
+   "text": "l'effort,",
+   "start": 49.548,
+   "end": 50.034
+  },
+  {
+   "text": "puis",
+   "start": 50.231,
+   "end": 50.369
+  },
+  {
+   "text": "pour",
+   "start": 50.369,
+   "end": 50.555
+  },
+  {
+   "text": "un",
+   "start": 50.555,
+   "end": 50.601
+  },
+  {
+   "text": "rien.",
+   "start": 50.601,
+   "end": 50.913
+  },
+  {
+   "text": "Une",
+   "start": 51.23,
+   "end": 51.449
+  },
+  {
+   "text": "toux",
+   "start": 51.45,
+   "end": 51.623
+  },
+  {
+   "text": "et",
+   "start": 51.623,
+   "end": 51.669
+  },
+  {
+   "text": "des",
+   "start": 51.669,
+   "end": 51.75
+  },
+  {
+   "text": "crachats,",
+   "start": 51.75,
+   "end": 52.19
+  },
+  {
+   "text": "surtout",
+   "start": 52.456,
+   "end": 52.711
+  },
+  {
+   "text": "le",
+   "start": 52.711,
+   "end": 52.746
+  },
+  {
+   "text": "matin.",
+   "start": 52.746,
+   "end": 53.139
+  },
+  {
+   "text": "Et",
+   "start": 53.452,
+   "end": 53.579
+  },
+  {
+   "text": "des",
+   "start": 53.579,
+   "end": 53.672
+  },
+  {
+   "text": "bronchites",
+   "start": 53.672,
+   "end": 54.135
+  },
+  {
+   "text": "qui",
+   "start": 54.135,
+   "end": 54.239
+  },
+  {
+   "text": "reviennent",
+   "start": 54.239,
+   "end": 54.551
+  },
+  {
+   "text": "chaque",
+   "start": 54.551,
+   "end": 54.783
+  },
+  {
+   "text": "hiver.",
+   "start": 54.783,
+   "end": 55.234
+  },
+  {
+   "text": "Pour",
+   "start": 56.175,
+   "end": 56.268
+  },
+  {
+   "text": "la",
+   "start": 56.268,
+   "end": 56.337
+  },
+  {
+   "text": "confirmer :",
+   "start": 56.337,
+   "end": 56.939
+  },
+  {
+   "text": "la",
+   "start": 57.309,
+   "end": 57.379
+  },
+  {
+   "text": "spirométrie.",
+   "start": 57.379,
+   "end": 58.166
+  },
+  {
+   "text": "Le",
+   "start": 58.48,
+   "end": 58.642
+  },
+  {
+   "text": "patient",
+   "start": 58.642,
+   "end": 59.024
+  },
+  {
+   "text": "souffle",
+   "start": 59.024,
+   "end": 59.371
+  },
+  {
+   "text": "le",
+   "start": 59.371,
+   "end": 59.452
+  },
+  {
+   "text": "plus",
+   "start": 59.452,
+   "end": 59.568
+  },
+  {
+   "text": "fort",
+   "start": 59.568,
+   "end": 59.742
+  },
+  {
+   "text": "possible",
+   "start": 59.742,
+   "end": 60.158
+  },
+  {
+   "text": "dans",
+   "start": 60.158,
+   "end": 60.251
+  },
+  {
+   "text": "un",
+   "start": 60.251,
+   "end": 60.39
+  },
+  {
+   "text": "tube.",
+   "start": 60.39,
+   "end": 60.806
+  },
+  {
+   "text": "S'il",
+   "start": 61.117,
+   "end": 61.372
+  },
+  {
+   "text": "vide",
+   "start": 61.372,
+   "end": 61.545
+  },
+  {
+   "text": "moins",
+   "start": 61.545,
+   "end": 61.707
+  },
+  {
+   "text": "de",
+   "start": 61.707,
+   "end": 61.812
+  },
+  {
+   "text": "soixante-dix",
+   "start": 61.812,
+   "end": 62.263
+  },
+  {
+   "text": "pour",
+   "start": 62.263,
+   "end": 62.425
+  },
+  {
+   "text": "cent",
+   "start": 62.425,
+   "end": 62.529
+  },
+  {
+   "text": "de",
+   "start": 62.529,
+   "end": 62.622
+  },
+  {
+   "text": "son",
+   "start": 62.622,
+   "end": 62.749
+  },
+  {
+   "text": "air",
+   "start": 62.749,
+   "end": 62.946
+  },
+  {
+   "text": "en",
+   "start": 62.946,
+   "end": 62.992
+  },
+  {
+   "text": "une",
+   "start": 62.992,
+   "end": 63.131
+  },
+  {
+   "text": "seconde,",
+   "start": 63.131,
+   "end": 63.571
+  },
+  {
+   "text": "ses",
+   "start": 63.837,
+   "end": 63.964
+  },
+  {
+   "text": "bronches",
+   "start": 63.964,
+   "end": 64.242
+  },
+  {
+   "text": "sont",
+   "start": 64.242,
+   "end": 64.335
+  },
+  {
+   "text": "obstruées.",
+   "start": 64.335,
+   "end": 64.948
+  },
+  {
+   "text": "Elle",
+   "start": 65.886,
+   "end": 66.036
+  },
+  {
+   "text": "ne",
+   "start": 66.036,
+   "end": 66.117
+  },
+  {
+   "text": "se",
+   "start": 66.117,
+   "end": 66.21
+  },
+  {
+   "text": "guérit",
+   "start": 66.21,
+   "end": 66.43
+  },
+  {
+   "text": "pas,",
+   "start": 66.43,
+   "end": 66.638
+  },
+  {
+   "text": "mais",
+   "start": 66.939,
+   "end": 66.997
+  },
+  {
+   "text": "on",
+   "start": 66.997,
+   "end": 67.043
+  },
+  {
+   "text": "peut",
+   "start": 67.043,
+   "end": 67.159
+  },
+  {
+   "text": "la",
+   "start": 67.159,
+   "end": 67.252
+  },
+  {
+   "text": "freiner :",
+   "start": 67.252,
+   "end": 67.645
+  },
+  {
+   "text": "arrêter",
+   "start": 67.9,
+   "end": 68.201
+  },
+  {
+   "text": "de",
+   "start": 68.201,
+   "end": 68.293
+  },
+  {
+   "text": "fumer,",
+   "start": 68.293,
+   "end": 68.698
+  },
+  {
+   "text": "des",
+   "start": 68.93,
+   "end": 68.999
+  },
+  {
+   "text": "inhalateurs",
+   "start": 68.999,
+   "end": 69.52
+  },
+  {
+   "text": "qui",
+   "start": 69.52,
+   "end": 69.682
+  },
+  {
+   "text": "ouvrent",
+   "start": 69.682,
+   "end": 69.833
+  },
+  {
+   "text": "les",
+   "start": 69.833,
+   "end": 69.914
+  },
+  {
+   "text": "bronches,",
+   "start": 69.914,
+   "end": 70.33
+  },
+  {
+   "text": "la",
+   "start": 70.573,
+   "end": 70.643
+  },
+  {
+   "text": "réhabilitation",
+   "start": 70.643,
+   "end": 71.279
+  },
+  {
+   "text": "respiratoire",
+   "start": 71.279,
+   "end": 71.904
+  },
+  {
+   "text": "pour",
+   "start": 71.904,
+   "end": 72.043
+  },
+  {
+   "text": "réentraîner",
+   "start": 72.043,
+   "end": 72.414
+  },
+  {
+   "text": "le",
+   "start": 72.414,
+   "end": 72.495
+  },
+  {
+   "text": "souffle,",
+   "start": 72.495,
+   "end": 72.842
+  },
+  {
+   "text": "et",
+   "start": 73.039,
+   "end": 73.062
+  },
+  {
+   "text": "les",
+   "start": 73.062,
+   "end": 73.131
+  },
+  {
+   "text": "vaccins.",
+   "start": 73.131,
+   "end": 73.571
+  },
+  {
+   "text": "Au",
+   "start": 74.5,
+   "end": 74.65
+  },
+  {
+   "text": "stade",
+   "start": 74.65,
+   "end": 74.87
+  },
+  {
+   "text": "avancé,",
+   "start": 74.87,
+   "end": 75.356
+  },
+  {
+   "text": "on",
+   "start": 75.611,
+   "end": 75.646
+  },
+  {
+   "text": "donne",
+   "start": 75.646,
+   "end": 75.819
+  },
+  {
+   "text": "de",
+   "start": 75.819,
+   "end": 75.889
+  },
+  {
+   "text": "l'oxygène,",
+   "start": 75.889,
+   "end": 76.502
+  },
+  {
+   "text": "mais",
+   "start": 76.769,
+   "end": 76.826
+  },
+  {
+   "text": "à",
+   "start": 76.826,
+   "end": 76.884
+  },
+  {
+   "text": "petit",
+   "start": 76.884,
+   "end": 77.116
+  },
+  {
+   "text": "débit :",
+   "start": 77.116,
+   "end": 77.463
+  },
+  {
+   "text": "on",
+   "start": 77.845,
+   "end": 77.868
+  },
+  {
+   "text": "vise",
+   "start": 77.868,
+   "end": 78.053
+  },
+  {
+   "text": "une",
+   "start": 78.053,
+   "end": 78.134
+  },
+  {
+   "text": "saturation",
+   "start": 78.134,
+   "end": 78.736
+  },
+  {
+   "text": "entre",
+   "start": 78.736,
+   "end": 78.956
+  },
+  {
+   "text": "quatre-vingt-huit",
+   "start": 78.956,
+   "end": 79.558
+  },
+  {
+   "text": "et",
+   "start": 79.558,
+   "end": 79.581
+  },
+  {
+   "text": "quatre-vingt-quinze",
+   "start": 79.581,
+   "end": 80.16
+  },
+  {
+   "text": "pour",
+   "start": 80.16,
+   "end": 80.322
+  },
+  {
+   "text": "cent.",
+   "start": 80.322,
+   "end": 80.576
+  },
+  {
+   "text": "Et",
+   "start": 80.9,
+   "end": 81.027
+  },
+  {
+   "text": "si",
+   "start": 81.027,
+   "end": 81.166
+  },
+  {
+   "text": "tout",
+   "start": 81.166,
+   "end": 81.282
+  },
+  {
+   "text": "s'aggrave",
+   "start": 81.282,
+   "end": 81.606
+  },
+  {
+   "text": "d'un",
+   "start": 81.606,
+   "end": 81.756
+  },
+  {
+   "text": "coup,",
+   "start": 81.756,
+   "end": 82.022
+  },
+  {
+   "text": "c'est",
+   "start": 82.358,
+   "end": 82.439
+  },
+  {
+   "text": "une",
+   "start": 82.439,
+   "end": 82.612
+  },
+  {
+   "text": "exacerbation,",
+   "start": 82.612,
+   "end": 83.4
+  },
+  {
+   "text": "une",
+   "start": 83.654,
+   "end": 83.735
+  },
+  {
+   "text": "poussée",
+   "start": 83.735,
+   "end": 83.99
+  },
+  {
+   "text": "de",
+   "start": 83.99,
+   "end": 84.059
+  },
+  {
+   "text": "la",
+   "start": 84.059,
+   "end": 84.14
+  },
+  {
+   "text": "maladie :",
+   "start": 84.14,
+   "end": 84.592
+  },
+  {
+   "text": "on",
+   "start": 84.858,
+   "end": 84.904
+  },
+  {
+   "text": "consulte",
+   "start": 84.904,
+   "end": 85.356
+  },
+  {
+   "text": "vite !",
+   "start": 85.356,
+   "end": 85.749
+  },
+  {
+   "text": "Petit",
+   "start": 86.665,
+   "end": 86.943
+  },
+  {
+   "text": "récap !",
+   "start": 86.943,
+   "end": 87.487
+  },
+  {
+   "text": "La",
+   "start": 87.798,
+   "end": 87.995
+  },
+  {
+   "text": "BPCO,",
+   "start": 87.995,
+   "end": 88.713
+  },
+  {
+   "text": "ce",
+   "start": 89.002,
+   "end": 89.129
+  },
+  {
+   "text": "sont",
+   "start": 89.129,
+   "end": 89.234
+  },
+  {
+   "text": "des",
+   "start": 89.234,
+   "end": 89.315
+  },
+  {
+   "text": "bronches",
+   "start": 89.315,
+   "end": 89.592
+  },
+  {
+   "text": "qui",
+   "start": 89.592,
+   "end": 89.697
+  },
+  {
+   "text": "se",
+   "start": 89.697,
+   "end": 89.824
+  },
+  {
+   "text": "bouchent",
+   "start": 89.824,
+   "end": 90.113
+  },
+  {
+   "text": "et",
+   "start": 90.113,
+   "end": 90.148
+  },
+  {
+   "text": "de",
+   "start": 90.148,
+   "end": 90.241
+  },
+  {
+   "text": "l'air",
+   "start": 90.241,
+   "end": 90.403
+  },
+  {
+   "text": "piégé.",
+   "start": 90.403,
+   "end": 90.877
+  },
+  {
+   "text": "Cause",
+   "start": 91.222,
+   "end": 91.431
+  },
+  {
+   "text": "numéro",
+   "start": 91.431,
+   "end": 91.824
+  },
+  {
+   "text": "un :",
+   "start": 91.824,
+   "end": 92.021
+  },
+  {
+   "text": "le",
+   "start": 92.391,
+   "end": 92.461
+  },
+  {
+   "text": "tabac.",
+   "start": 92.461,
+   "end": 92.866
+  },
+  {
+   "text": "On",
+   "start": 93.181,
+   "end": 93.297
+  },
+  {
+   "text": "la",
+   "start": 93.297,
+   "end": 93.39
+  },
+  {
+   "text": "confirme",
+   "start": 93.39,
+   "end": 93.829
+  },
+  {
+   "text": "par",
+   "start": 93.829,
+   "end": 93.945
+  },
+  {
+   "text": "la",
+   "start": 93.945,
+   "end": 94.015
+  },
+  {
+   "text": "spirométrie,",
+   "start": 94.015,
+   "end": 94.709
+  },
+  {
+   "text": "et",
+   "start": 95.022,
+   "end": 95.114
+  },
+  {
+   "text": "on",
+   "start": 95.114,
+   "end": 95.149
+  },
+  {
+   "text": "la",
+   "start": 95.149,
+   "end": 95.253
+  },
+  {
+   "text": "freine :",
+   "start": 95.253,
+   "end": 95.623
+  },
+  {
+   "text": "arrêt",
+   "start": 95.89,
+   "end": 96.052
+  },
+  {
+   "text": "du",
+   "start": 96.052,
+   "end": 96.156
+  },
+  {
+   "text": "tabac",
+   "start": 96.156,
+   "end": 96.503
+  },
+  {
+   "text": "et",
+   "start": 96.503,
+   "end": 96.538
   },
   {
    "text": "inhalateurs.",
-   "start": 101.883,
-   "end": 102.566
+   "start": 96.538,
+   "end": 97.209
   }
  ]
 }
