@@ -140,9 +140,15 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   dont le dossier se relève à 45°), `ChestScan` ; `Patient` : `fade={false}` ; icônes lit, avion, plâtre, bistouri,
   ruban, mollet. Dans une `ZoomCam`, le contenu doit tenir dans la fenêtre à zoom 1 (sinon il n'est jamais montré).
 - 4e modèle « pathologie » : `BPCO` (`src/videos/bpco/`, **v2** qui remplace la v1 — v1 au commit `adb22b2`) — accroche
-  **« Juste une toux de fumeur ? »** (choisie par le propriétaire) : « Tous les matins, il tousse… il crache… Et dans
-  l'escalier, il s'arrête à chaque étage. Lui, il se dit : c'est juste la cigarette. Faux ! … c'est la BPCO. Et au moins
-  deux malades sur trois ne le savent même pas. » (fausse piste barrée, tampon FAUX !) ; sigle, **la radio couche par
+  **« Juste une toux de fumeur ? »** (choisie par le propriétaire) : « Tous les matins, la même toux. Il crache… et dans
+  l'escalier, il doit s'arrêter à chaque étage. Lui, il se dit : c'est juste la cigarette. Faux ! Regarde ses poumons :
+  ses bronches se bouchent… C'est la BPCO. Et au moins deux malades sur trois ne le savent même pas. » (image 0 : gros
+  plan + aperçu de la radio dans le thorax, qui se referme ; fausse piste barrée, tampon FAUX ! ; la radio passe sur
+  « Regarde ses poumons » : le résultat visuel arrive dès l'accroche, demandé : « donner envie de rester dès les
+  premières secondes »). **Barrer un texte** : poser `Strike` DANS un conteneur `position: relative` qui a la taille du
+  texte (il se centre sur son parent), une ligne de titre à la fois ; sur une `Bubble`, le mettre dans un calque
+  `zIndex: 3` (la bulle est en `zIndex: 1`). Voix plus lente sur les explications (radio −2 %, définition et
+  spirométrie +0 %) ; sigle, **la radio couche par
   couche** (voir « Planches anatomiques » plus bas), cause, signes, spirométrie (VEMS / CVF < 70 %), traitement,
   oxygène (**cible 88 – 95 %**, choix du propriétaire, comme la vidéo SpO₂) + exacerbation, récap. Storyboard
   `docs/lpi/storyboard-bpco.md`.

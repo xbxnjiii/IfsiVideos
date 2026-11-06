@@ -189,7 +189,7 @@ const StagePill: React.FC<{
 	if (frame < from || frame >= to) return null;
 	return (
 		<div style={{position: 'absolute', left: x, top: y}}>
-			<Pill at={from} size={34} color={color}>
+			<Pill at={from} size={38} color={color}>
 				{children}
 			</Pill>
 		</div>
@@ -267,10 +267,12 @@ const Man: React.FC<PatientProps & {x: number; y: number; puffs?: number; cough?
 };
 
 /* ═══════════════════════════════ ACCROCHE ═══════════════════════════════ */
-// Image 0 : « Juste une toux de fumeur ? » et l'homme qui tousse (soleil du matin). « il crache » : mouchoir ;
-// « l'escalier » : il monte… et s'arrête au palier, essoufflé ; bulle « C'est juste la cigarette… » ; « Faux ! » :
-// bulle barrée, flash ; « pas qu'une toux de fumeur » : le titre est barré ; « c'est la BPCO » (carton, flash,
-// secousse) ; « deux malades sur trois ne le savent pas » : 3 patients, 2 avec un « ? ».
+// Image 0 : « Juste une toux de fumeur ? » (2 lignes) + gros plan de l'homme qui tousse, le haut de son thorax déjà vu
+// « à la radio » (bronches abîmées) : l'aperçu se referme aussitôt. « Tous les matins, la même toux » : les jours
+// claquent (LUN → VEN) ; « il crache » : mouchoir ; l'escalier : il s'arrête au palier ; bulle « c'est juste la
+// cigarette… » ; « Faux ! » : la bulle et le titre sont barrés au milieu de chaque ligne, tampon ; « Regarde ses
+// poumons » : la radio descend (côtes → poumons → bronches bouchées, air coincé) ; « C'est la BPCO » (carton, flash) ;
+// « deux malades sur trois ne le savent pas » : 3 patients, 2 avec un « ? ».
 const HP = {size: 520, x: 90, y: 560};
 const hookPt = (x: number, y: number) => ({x: HP.x + (x * HP.size) / 400, y: HP.y + (y * HP.size) / 400});
 
@@ -367,10 +369,70 @@ const Badge: React.FC<{at: number; x: number; y: number; text: string; tone?: st
 	);
 };
 
+/** Rangée des jours (« tous les matins ») : chaque jour claque avec une petite quinte. */
+const Days: React.FC<{from: number; to: number}> = ({from, to}) => {
+	const frame = useCurrentFrame();
+	if (frame < from || frame > to + 8) return null;
+	const o = interpolate(frame, [to, to + 8], [1, 0], clamp);
+	return (
+		<div style={{position: 'absolute', left: 72, top: 470, display: 'flex', gap: 14, opacity: o}}>
+			{['LUN', 'MAR', 'MER', 'JEU', 'VEN'].map((d, i) => {
+				const t = from + i * 4;
+				const on = frame >= t;
+				return (
+					<div
+						key={d}
+						style={{
+							width: 160,
+							height: 92,
+							borderRadius: 26,
+							background: on ? LPI.pink : LPI.paper,
+							border: `5px solid ${N}`,
+							boxShadow: SHADOW,
+							display: 'flex',
+							alignItems: 'center',
+							justifyContent: 'center',
+							gap: 6,
+							fontFamily: FONT.title,
+							fontWeight: 900,
+							fontSize: 36,
+							color: N,
+							transform: `scale(${on ? popAt(frame, t) : 0.001})`,
+						}}
+					>
+						{d}
+						<CoughIcon size={38} />
+					</div>
+				);
+			})}
+		</div>
+	);
+};
+
+/** Titre de l'image 0 sur deux lignes, chaque ligne barrée à sa place sur « Faux ! ». */
+const HookTitle: React.FC<{strike: number; out: number}> = ({strike, out}) => {
+	const frame = useCurrentFrame();
+	if (frame > out + 8) return null;
+	const o = interpolate(frame, [out, out + 8], [1, 0], clamp);
+	return (
+		<div
+			style={{position: 'absolute', left: 72, top: 220, opacity: o, display: 'flex', flexDirection: 'column', gap: 4}}
+		>
+			{['Juste une *toux*', 'de *fumeur* ?'].map((line) => (
+				<div key={line} style={{position: 'relative', alignSelf: 'flex-start'}}>
+					<Title at={-60} text={line} size={100} stagger={0} />
+					{line.includes('fumeur') ? null : <Strike at={strike} width={line.length * 50} rot={-4} />}
+					{line.includes('fumeur') ? <Strike at={strike + 4} width={380} rot={-4} /> : null}
+				</div>
+			))}
+		</div>
+	);
+};
+
 export const Hook: React.FC = () => {
 	const frame = useCurrentFrame();
 	const MATINS = at('intro', 'matins');
-	const TOUSSE = at('intro', 'tousse');
+	const TOUX = at('intro', 'toux');
 	const CRACHE = at('intro', 'crache');
 	const ESC = at('intro', "l'escalier");
 	const ETAGE = at('intro', 'étage');
@@ -378,25 +440,40 @@ export const Hook: React.FC = () => {
 	const DIT = at('intro', 'dit');
 	const CIG = at('intro', 'cigarette');
 	const FAUX = at('intro', 'faux');
-	const TOUX = at('intro', 'toux');
+	const REG = at('intro', 'regarde');
+	const POUM = at('intro', 'poumons');
+	const BOUCH = at('intro', 'bouchent');
+	const COINC = at('intro', 'coincé');
 	const BPCO = at('intro', 'bpco');
-	const ET = at('intro', 'et', 2);
+	const ET = at('intro', 'et', 3);
 	const DEUX = at('intro', 'deux');
 	const TROIS = at('intro', 'trois');
 	const SAVENT = at('intro', 'savent');
 	const face = hookPt(200, 150);
+	const chest = hookPt(200, 300);
 	const keys: CamKey[] = [
-		{at: CRACHE - 4, s: 1.35, x: face.x + 60, y: face.y + 80, dur: 12},
+		{at: -1, s: 1.45, x: face.x + 30, y: face.y + 120, dur: 1},
+		{at: CRACHE - 4, s: 1.75, x: face.x + 40, y: face.y + 90, dur: 12},
 		{at: ESC - 4, s: 1, dur: 14},
+		{at: REG - 4, s: 1.8, x: chest.x, y: chest.y + 20, dur: 16},
+		{at: BPCO - 6, s: 1.15, x: chest.x, y: chest.y - 60, dur: 14},
 	];
+	// image 0 : un aperçu de la radio (le haut du thorax déjà « ouvert »), qui se referme aussitôt ; puis la vraie radio
+	// sur « Regarde ses poumons »
+	const peel =
+		frame < REG - 2
+			? interpolate(frame, [0, 10], [2.45, 0], ease)
+			: interpolate(frame, [REG - 2, POUM + 8], [0, 3], ease);
+	const trapped = interpolate(frame, [COINC - 4, COINC + 14], [0, 1], clamp);
 	const main = 1 - fadeIn(frame, ET - 6, 8);
-	const coughing = (frame < 22 || (frame >= TOUSSE - 2 && frame < TOUSSE + 18)) && frame < CRACHE - 2;
+	const coughing =
+		frame < 18 || (frame >= TOUX - 2 && frame < TOUX + 20) || (frame >= MATINS - 4 && frame < MATINS + 22);
 	return (
 		<AbsoluteFill>
 			<LiveBackground />
 			<Camera
-				punches={[TOUSSE + 1, CRACHE + 1, ESC + 1, ETAGE + 1, FAUX + 1, BPCO + 1]}
-				shakes={[TOUSSE + 2, FAUX + 2, BPCO + 2]}
+				punches={[TOUX + 1, CRACHE + 1, ESC + 1, ETAGE + 1, FAUX + 1, POUM + 1, BPCO + 1]}
+				shakes={[2, TOUX + 2, FAUX + 2, BPCO + 2]}
 				strength={0.04}
 			>
 				{main > 0 ? (
@@ -408,24 +485,20 @@ export const Hook: React.FC = () => {
 								size={HP.size}
 								mood="mal"
 								breath={frame >= ETAGE ? pant(frame, 3.5) : idle(frame, 40)}
-								sweat={fadeIn(frame, ETAGE, 8)}
-								cough={coughing ? 1 : 0}
+								sweat={fadeIn(frame, ETAGE, 8) * (1 - fadeIn(frame, REG, 8))}
+								cough={coughing && frame < CRACHE - 2 ? 1 : 0}
 								sputum={frame >= CRACHE - 2 && frame < ESC - 4 ? 1 : 0}
 								puffs={frame >= ETAGE && frame < FAUX ? 1 : 0}
 							/>
-							{frame >= MATINS - 2 && frame < ESC - 4 ? (
-								<div
-									style={{position: 'absolute', left: 700, top: 560, transform: `scale(${popAt(frame, MATINS - 2)})`}}
-								>
-									<SunriseIcon size={220} />
-								</div>
-							) : null}
+							<div style={{position: 'absolute', left: HP.x, top: HP.y}}>
+								<ChestPeel size={HP.size} peel={peel} copd={1} trapped={trapped} air={frame >= REG ? frame : null} />
+							</div>
 							{frame >= CRACHE - 2 && frame < ESC - 4 ? (
 								<div
 									style={{
 										position: 'absolute',
 										left: face.x + 150,
-										top: face.y + 120,
+										top: face.y + 110,
 										transform: `scale(${popAt(frame, CRACHE - 2)}) rotate(-10deg)`,
 									}}
 								>
@@ -433,7 +506,8 @@ export const Hook: React.FC = () => {
 								</div>
 							) : null}
 						</ZoomCam>
-						{frame >= ESC - 2 && frame < BPCO ? (
+						<Days from={MATINS - 4} to={CRACHE - 8} />
+						{frame >= ESC - 2 && frame < REG ? (
 							<div
 								style={{
 									position: 'absolute',
@@ -441,49 +515,51 @@ export const Hook: React.FC = () => {
 									top: 760,
 									transform: `scale(${popAt(frame, ESC - 2)})`,
 									transformOrigin: '50% 100%',
+									opacity: 1 - fadeIn(frame, REG - 6, 6),
 								}}
 							>
 								<Stairs from={ESC} stop={ETAGE} size={380} />
 							</div>
 						) : null}
-						<PillAt from={MATINS - 2} to={ESC - 6} x={72} y={470} color={LPI.sky}>
-							tous les matins
-						</PillAt>
 						<PillAt from={ETAGE - 2} to={LUI - 4} x={640} y={1160} color={LPI.pink}>
 							à chaque étage
 						</PillAt>
-						{/* ce qu'il se dit */}
-						{frame >= DIT - 4 && frame < BPCO ? (
+						{/* ce qu'il se dit : la bulle est barrée en son milieu */}
+						{frame >= DIT - 4 && frame < REG ? (
 							<div
 								style={{
 									position: 'absolute',
-									left: 420,
+									left: 410,
 									top: 520,
 									transform: `scale(${popAt(frame, DIT - 4)})`,
 									transformOrigin: 'left bottom',
+									opacity: 1 - fadeIn(frame, REG - 6, 6),
 								}}
 							>
-								<Bubble tail="left" think>
-									<span style={{display: 'flex', alignItems: 'center', gap: 14, fontSize: 40}}>
-										<CigaretteIcon size={70} />
-										{frame >= CIG - 2 ? "c'est juste la cigarette…" : "c'est juste…"}
-									</span>
-								</Bubble>
-								<div style={{position: 'absolute', left: 30, top: 40}}>
-									<Strike at={FAUX} width={560} rot={-8} />
+								<div style={{position: 'relative', display: 'inline-block'}}>
+									<Bubble tail="left" think>
+										<span style={{display: 'flex', alignItems: 'center', gap: 14, fontSize: 42, width: 560}}>
+											<CigaretteIcon size={70} />
+											{frame >= CIG - 2 ? "c'est juste la cigarette…" : "c'est juste…"}
+										</span>
+									</Bubble>
+									<div style={{position: 'absolute', inset: 0, zIndex: 3}}>
+										<Strike at={FAUX} width={640} rot={-7} thick={18} />
+									</div>
 								</div>
 							</div>
 						) : null}
-						<Stamp at={FAUX} x={760} y={760} text="FAUX !" size={70} rot={-10} out={BPCO - 6} />
+						<Stamp at={FAUX} x={720} y={760} text="FAUX !" size={74} rot={-10} out={REG - 6} />
+						<PillAt from={BOUCH - 2} to={BPCO - 6} x={72} y={1330} color={LPI.pink} size={44}>
+							les bronches se bouchent
+						</PillAt>
+						<PillAt from={COINC - 2} to={BPCO - 6} x={72} y={1420} color={LPI.sky} size={44}>
+							l'air reste coincé
+						</PillAt>
 					</div>
 				) : null}
-				{/* titre de l'image 0, barré sur « pas qu'une toux de fumeur » */}
-				<TitleAt from={-60} to={BPCO - 6} text="Juste une *toux* de *fumeur* ?" size={92} stagger={0} y={236} />
-				{frame >= TOUX - 2 && frame < BPCO ? (
-					<div style={{position: 'absolute', left: 300, top: 300}}>
-						<Strike at={TOUX - 2} width={640} rot={-4} />
-					</div>
-				) : null}
+				<HookTitle strike={FAUX} out={REG - 6} />
+				<TitleAt from={REG - 2} to={BPCO - 6} text="Regarde ses *poumons*…" size={90} plate />
 				{/* révélation */}
 				{frame >= BPCO - 4 && frame < ET + 4 ? (
 					<div
@@ -561,8 +637,9 @@ export const Hook: React.FC = () => {
 			</Camera>
 			<Flash at={FAUX} max={0.3} />
 			<Flash at={BPCO} />
-			<Sfx name="cough" at={0} volume={0.4} />
-			<Sfx name="cough-2" at={TOUSSE} volume={0.45} />
+			<Sfx name="cough" at={0} volume={0.45} />
+			<Sfx name="whoosh" at={2} volume={0.06} />
+			<Sfx name="cough-2" at={TOUX - 2} volume={0.45} />
 			<Sfx name="cough-1" at={CRACHE} volume={0.4} />
 			<Sfx name="stairs" at={ESC - 2} volume={0.25} dur={ETAGE - ESC + 6} />
 			<Sfx name="gasp" at={ETAGE} volume={0.35} />
@@ -570,6 +647,8 @@ export const Hook: React.FC = () => {
 			<Sfx name="smoke" at={CIG} volume={0.3} />
 			<Sfx name="stamp" at={FAUX} volume={0.12} />
 			<Sfx name="buzz" at={FAUX + 2} volume={0.05} dur={14} />
+			<Sfx name="whoosh" at={REG - 2} volume={0.09} />
+			<Sfx name="gasp" at={COINC} volume={0.25} />
 			<Sfx name="impact" at={BPCO} volume={0.13} />
 			<Sfx name="pop" at={DEUX - 2} volume={0.08} />
 			<Sfx name="pop" at={DEUX + 4} volume={0.08} />
@@ -845,7 +924,7 @@ export const Radio: React.FC = () => {
 	const OXY = at('radio', "l'oxygène");
 	const SANG = at('radio', 'sang');
 	const MAIS = at('radio', 'mais');
-	const ENFL = at('radio', "s'enflamment");
+	const ENFL = at('radio', 'enflammées');
 	const MUCUS = at('radio', 'mucus');
 	const RETR = at('radio', 'rétrécissent');
 	const ALV2 = at('radio', 'alvéoles', 2);
@@ -906,7 +985,7 @@ export const Radio: React.FC = () => {
 					</div>
 				</ZoomCam>
 				{/* gros plans : les alvéoles, puis une alvéole et son vaisseau */}
-				<Medallion from={ALV + 2} to={OXY - 4}>
+				<Medallion from={ALV + 2} to={OXY - 12}>
 					<AlveoliZoom size={760} o2={frame} airIn={frame} />
 				</Medallion>
 				<Medallion from={OXY - 4} to={MAIS - 4}>
@@ -1541,7 +1620,7 @@ export const Traitement: React.FC = () => {
 						réentraîner le souffle
 					</StagePill>
 				</Stage>
-				<Stamp at={GUER} x={800} y={380} text="Ne se guérit pas" size={46} rot={-7} out={FREIN + 10} />
+				<Stamp at={GUER} x={640} y={380} text="Ne se guérit pas" size={46} rot={-7} out={FREIN + 10} />
 				<div
 					style={{
 						position: 'absolute',
@@ -1653,7 +1732,7 @@ export const Oxygene: React.FC = () => {
 					slot={termSlot(1)}
 					active={frame >= EXA}
 				/>
-				<Stamp at={CONS} x={480} y={1440} text="On consulte vite !" size={54} rot={-6} />
+				<Stamp at={CONS} x={600} y={1380} text="On consulte vite !" size={54} rot={-6} />
 			</Camera>
 			<Flash at={AGG} max={0.35} />
 			<Sfx name="whoosh" at={OXY - 2} volume={0.06} />
