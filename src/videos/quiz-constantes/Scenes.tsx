@@ -370,7 +370,7 @@ export const Serie: React.FC = () => {
 	const VIDEO = at('serie', 'vidéo');
 	const DIU = at('serie', 'diurèse');
 	const ats = TILES.map((t) => at('serie', t.word));
-	const all = DIU + 14;
+	const all = DIU + 2;
 	return (
 		<AbsoluteFill>
 			<LiveBackground />
@@ -386,7 +386,7 @@ export const Serie: React.FC = () => {
 						<span style={{fontFamily: FONT.title, fontWeight: 900, fontSize: 60, color: LPI.sky}}>/ 7</span>
 					</div>
 				) : null}
-				<Stamp at={all} x={540} y={1330} text="Toutes disponibles !" size={58} rot={-6} />
+				<Stamp at={all} x={540} y={1330} text="Toutes disponibles !" size={50} rot={-6} />
 				<Burst at={all} x={784} y={1170} r={260} n={16} />
 			</Camera>
 			<Sfx name="ding" at={BONNE} volume={0.08} />
