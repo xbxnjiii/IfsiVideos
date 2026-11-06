@@ -1,23 +1,29 @@
-# Storyboard — « C'est quoi la BPCO ? » (La Petite IDE)
+# Storyboard — « La BPCO » v2 (La Petite IDE)
 
-≈ 1 min 47 · 1080 × 1920 · composition `BPCO` · code : `src/videos/bpco/`.
-Format « pathologie » (comme l'AVC, l'arrêt cardiaque et l'embolie pulmonaire) : accroche dès l'image 0, tout se
-passe dans le corps (poumons et bronches vus à travers le thorax du `Patient`, gros plan d'une bronche), zooms
-caméra (`ZoomCam`). Voix de la marque, texte exact : [voix/16-bpco.script.json](../../voix/16-bpco.script.json).
-Repères : tabac en cause dans 8 cas sur 10 (Ameli, Inserm) ; diagnostic VEMS / CVF < 70 % après bronchodilatateur
-(spirométrie) ; cible SpO₂ 88 – 92 % sous oxygène (risque d'hypercapnie).
+≈ 1 min 41 · 1080 × 1920 · composition `BPCO` · code : `src/videos/bpco/` (la v1, accroche « Et si chaque respiration
+devenait un véritable effort ? » + compte à rebours, reste dans l'historique git, commit `adb22b2`).
+Format « pathologie ». Voix de la marque, texte exact : [voix/16-bpco.script.json](../../voix/16-bpco.script.json).
+Repères : tabac en cause dans 8 cas sur 10 ; au moins 2 malades sur 3 ne sont pas diagnostiqués (HAS : 2/3 à 90 %) ;
+diagnostic VEMS / CVF < 70 % (spirométrie) ; cible SpO₂ **88 – 95 %** sous oxygène (choix du propriétaire, comme la
+vidéo SpO₂).
 
-| Partie | À l'écran | Mascotte (mot → image) |
-|--------|-----------|------------------------|
-| Accroche | image 0 : « Et si chaque **respiration** devenait un **véritable** **effort** ? », un homme essoufflé (souffle court, bouffées devant la bouche, sueurs) · compte à rebours **3 · 2 · 1** (cercle bleu nuit, anneau rose qui se vide) : à chaque chiffre la caméra s'approche du thorax et les poumons apparaissent · « Que se **passe-t-il** ? » : les bronches s'enflamment et rétrécissent · « C'est la **BPCO** » (flash, éclats), l'air reste piégé · « C'est quoi la **BPCO** ? » | essoufflée · surprise · loupe · important · question → plonge dans les poumons |
-| Définition | « La **BPCO** », « Bronchopneumopathie chronique obstructive » · 4 lignes : **B** Broncho · les bronches, **P** Pneumopathie · maladie du poumon, **C** Chronique · toute la vie (horloge qui tourne), **O** Obstructive · l'air passe mal · dans le socle : zoom sur les bronches, les poumons (halo rose), puis les bronches qui rétrécissent | montre les poumons · réfléchit · essoufflée |
-| Dans les bronches | gros plan du thorax, plongée dans une bronche (fondu) : la paroi s'enflamme (rose, bosselée), mucus, le passage rétrécit (**Obstruction**) · au bout, les alvéoles (« petits sacs où passe l'O₂ ») se détruisent : grands sacs (**Emphysème**) · l'air entre… mais ressort mal : bulles coincées, tampon « Air piégé ! » | loupe · inquiète · stressée · oppression → sort à gauche |
-| Cause | « Le grand **coupable** » : la cigarette enfume les poumons · 10 poumons, 8 s'allument en rose : « 8 / 10 » · pastilles : tabac, poussières au travail, produits chimiques, pollution | erreur · surprise · masque → traverse en courant |
-| Signes | « Petit à **petit** » : essoufflement (d'abord à l'effort, puis pour un rien) · toux qui dure (gros plan bouche) · crachats, surtout le matin (soleil levant) · bronchites chaque hiver (flocons) · ruban « Juste la toux du fumeur ? » + tampon « Non : un signe ! » | essoufflée · toux · toux (main) · grelotte · erreur → plonge dans le spiromètre |
-| Diagnostic | « La **spirométrie** » : il souffle dans le tube, la courbe se trace ; courbe normale en pointillés, repère 1 s, seuil 70 % : « lui : 56 % en 1 s » · **VEMS / CVF < 70 %** (en 1 seconde, il vide moins de 70 % de son air) · tampon « Obstruées ! » | souffle · loupe · important → s'envole |
-| Traitement | tampon « Ne se guérit pas » (patient aux bronches abîmées) · « On la **freine** » : cigarette barrée · inhalateur : la bouffée rouvre la bronche · réhabilitation : la respiration redevient ample · vaccins · 4 puces cochées | erreur · médicament · marche · seringue |
-| Oxygène | « Oxygène à **petit** **débit** » : lunettes à oxygène (gros plan), SpO₂ qui remonte à 90 %, échelle des normes adulte + cadre « cible BPCO : 88 – 92 % » · **SpO₂ : 88 – 92 %** (pas plus : trop d'O₂ peut être dangereux) · tout s'aggrave d'un coup (flash) : il tousse, crache, lèvres bleutées, SpO₂ 84 % · **Exacerbation** (une poussée) · « On consulte vite ! » | stéthoscope · attention · alerte · téléphone → sort à gauche |
-| Récap rapide | BPCO (bronches rétrécies, air piégé) · cause n° 1 : le tabac · spirométrie VEMS / CVF < 70 % · on la freine · confettis | une pose par ligne · bravo → repart en courant |
+Nouveautés de la v2 :
+- **Poumons dessinés « La Petite IDE », couche par couche** (demandé : une image simple par étape, comme si on enlevait
+  un calque) : `src/brand/chest.tsx` — patient → cage thoracique (`RibsLayer`) → poumons vus de l'extérieur
+  (`LungsOutLayer`) → l'intérieur, trachée et bronches (`LungsInLayer`) → les alvéoles (`AlveoliZoom`) → une alvéole et
+  son vaisseau (`AlveolusExchange`). `ChestPeel` les empile sur le `Patient` : la ligne de la radio descend et enlève
+  une couche à chaque mot. Planches de contrôle : composition `Planche-Poumons` (pages 1 à 3).
+- **Vrais bruitages** (La Sonothèque, gratuits, usage commercial) : toux (prise fournie par le propriétaire),
+  essoufflement, briquet, bouffée de cigarette, inhalateur, souffle fort, soupir, escalier (`public/sfx/SOURCES.md`).
 
-Transitions : plongée dans les poumons · vague · panoramique gauche · rideau · plongée · panoramique haut · vague ·
-panoramique gauche · plongée vers le logo.
+| Partie | Voix (résumé) | À l'écran | Sons |
+| --- | --- | --- | --- |
+| Accroche | « Tous les matins, il tousse… il crache… Et dans l'escalier, il s'arrête à chaque étage. Lui, il se dit : c'est juste la cigarette. Faux ! Ce n'est pas qu'une toux de fumeur : c'est la BPCO. Et au moins deux malades sur trois ne le savent même pas. » | Image 0 : « Juste une **toux** de **fumeur** ? » + l'homme qui tousse ; soleil (« tous les matins ») ; mouchoir ; escalier : le bonhomme monte et s'arrête, « ! », il souffle ; bulle « c'est juste la cigarette… » barrée, tampon FAUX ! ; le titre est barré ; carton « C'est la **BPCO** » (flash, secousse) ; « **2** malades sur **3**… » : 3 patients, 2 « ? » | toux ×3, escalier, essoufflement, briquet, bouffée |
+| Définition | bronchopneumopathie chronique obstructive : une maladie des bronches, toute la vie, l'air passe mal | Sigle lettre par lettre (B · P · C · O), puis chaque explication ; poumons, horloge, il s'essouffle | essoufflement |
+| La radio | Passons-le à la radio. Sous les côtes, il y a les poumons. À l'intérieur, l'air descend par la trachée et les bronches, jusqu'aux alvéoles : des petits sacs où l'oxygène passe dans le sang. Mais chez lui, les bronches s'enflamment, se remplissent de mucus et rétrécissent. Les alvéoles se cassent : c'est l'emphysème. Et l'air reste piégé. | Zoom lent sur le thorax ; la radio enlève les couches au mot : côtes → poumons → intérieur (l'air descend) ; plongée : médaillon des alvéoles, puis une alvéole et son vaisseau (O₂ → sang, CO₂ → air) ; retour : les bronches deviennent roses et étroites, mucus ; loupe : bronche en coupe qui s'enflamme, mucus qui coule, passage en étoile ; loupe : alvéoles qui cassent (emphysème) ; bulles d'air piégé, tampon « Air piégé ! » | soupir (l'air), toux, essoufflement |
+| Cause | le tabac, 8 cas sur 10 ; poussières, produits chimiques, pollution | cigarette qui enfume les poumons ; 10 poumons, 8 s'allument ; pastilles | briquet, bouffée |
+| Signes | essoufflement (effort, puis pour un rien), toux et crachats le matin, bronchites chaque hiver | « Ça s'installe **doucement** » : patient essoufflé, toux, crachats, soleil levant, flocons ; pastilles | essoufflement, toux |
+| Spirométrie | souffler le plus fort possible ; < 70 % de l'air en 1 seconde = obstruées | spiromètre, courbe, repère 1 s, « lui : 56 % en 1 s », VEMS / CVF < 70 %, tampon « Obstruées ! » | souffle fort |
+| Traitement | ne se guérit pas, on la freine : arrêt du tabac, inhalateurs (bronchodilatateurs), réhabilitation, vaccins | tampon « Ne se guérit pas », cigarette barrée, inhalateur qui rouvre la bronche, souffle réentraîné, seringue ; 4 puces cochées | pschitt |
+| Oxygène | petit débit, cible 88 – 95 % ; exacerbation = une poussée : on consulte vite | lunettes à oxygène, SpO₂ qui remonte, échelle + cadre « cible BPCO : 88 – 95 % » ; tout s'aggrave (flash), SpO₂ 84 %, « On consulte vite ! » | toux |
+| Récap rapide | bronches bouchées + air piégé ; tabac ; spirométrie ; on la freine | 4 lignes cochées, confettis | |

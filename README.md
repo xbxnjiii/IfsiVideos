@@ -25,7 +25,7 @@ pas de logiciel de montage, pas de banque d'images.
 | 12 | C'est quoi la SpO₂ | `SpO2` | [voix/12-spo2.script.json](voix/12-spo2.script.json) | [storyboard](docs/lpi/storyboard-spo2.md) |
 | 14 | C'est quoi une embolie pulmonaire | `Embolie-Pulmonaire` | [voix/14-embolie-pulmonaire.script.json](voix/14-embolie-pulmonaire.script.json) | [storyboard](docs/lpi/storyboard-embolie-pulmonaire.md) |
 | 15 | AVC, format histoire (Michel, mystérieux) | `AVC-Histoire` | [voix/15-avc-histoire.script.json](voix/15-avc-histoire.script.json) | [storyboard](docs/lpi/storyboard-avc-histoire.md) |
-| 16 | C'est quoi la BPCO | `BPCO` | [voix/16-bpco.script.json](voix/16-bpco.script.json) | [storyboard](docs/lpi/storyboard-bpco.md) |
+| 16 | La BPCO (v2 : « Juste une toux de fumeur ? », radio couche par couche) | `BPCO` | [voix/16-bpco.script.json](voix/16-bpco.script.json) | [storyboard](docs/lpi/storyboard-bpco.md) |
 | 17 | Série « Les plaies » 1/3 : les bases | `Plaies-1` | [voix/17-plaies-1.script.json](voix/17-plaies-1.script.json) | [storyboard](docs/lpi/storyboard-plaies-serie.md) |
 | 18 | Série « Les plaies » 2/3 : les plaies aiguës | `Plaies-2` | [voix/18-plaies-2.script.json](voix/18-plaies-2.script.json) | [storyboard](docs/lpi/storyboard-plaies-serie.md) |
 | 19 | Série « Les plaies » 3/3 : les plaies chroniques | `Plaies-3` | [voix/19-plaies-3.script.json](voix/19-plaies-3.script.json) | [storyboard](docs/lpi/storyboard-plaies-serie.md) |
@@ -90,6 +90,7 @@ src/
     series.tsx                vidéos en série : carte des parties, étiquette « 1/3 », « à suivre »
     pain.tsx                  échelles de douleur (EN, réglette EVA, EVS, visages), enfant, respirateur, grilles de score
     diabetes.tsx              diabète : sang chargé de sucres, cellule à porte + cadenas, clé insuline, pancréas, stylo, sites
+    lungs.tsx, chest.tsx      planche « poumons » : thorax couche par couche (côtes, poumons, bronches), alvéoles, radio
     MascotActor.tsx           mascotte actrice : sauts, course, expressions au mot près, bustes libres
     pictos.tsx                pictogrammes et illustrations (thermomètre, cœur, poumons, artère…)
     timeline.ts               voix → frames : at(scène, mot)

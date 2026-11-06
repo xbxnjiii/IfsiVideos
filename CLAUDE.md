@@ -139,10 +139,13 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   trajet `clotAt(t)`, zone du poumon privée de sang, mollet gonflé, bas de compression (on ne dit pas « de contention »), douleurs), `SemiSitting` (lit
   dont le dossier se relève à 45°), `ChestScan` ; `Patient` : `fade={false}` ; icônes lit, avion, plâtre, bistouri,
   ruban, mollet. Dans une `ZoomCam`, le contenu doit tenir dans la fenêtre à zoom 1 (sinon il n'est jamais montré).
-- 4e modèle « pathologie » : `BPCO` (`src/videos/bpco/`) — accroche voulue par le propriétaire : « Et si chaque respiration
-  devenait un véritable effort ? » (image 0, homme essoufflé), **compte à rebours 3 · 2 · 1** (la caméra plonge dans le
-  thorax à chaque chiffre), « Que se passe-t-il ? C'est la BPCO. » ; sigle sur 4 lignes, bronche en gros plan, cause,
-  signes, spirométrie (VEMS / CVF < 70 %), traitement, oxygène (cible 88 – 92 %) + exacerbation, récap.
+- 4e modèle « pathologie » : `BPCO` (`src/videos/bpco/`, **v2** qui remplace la v1 — v1 au commit `adb22b2`) — accroche
+  **« Juste une toux de fumeur ? »** (choisie par le propriétaire) : « Tous les matins, il tousse… il crache… Et dans
+  l'escalier, il s'arrête à chaque étage. Lui, il se dit : c'est juste la cigarette. Faux ! … c'est la BPCO. Et au moins
+  deux malades sur trois ne le savent même pas. » (fausse piste barrée, tampon FAUX !) ; sigle, **la radio couche par
+  couche** (voir « Planches anatomiques » plus bas), cause, signes, spirométrie (VEMS / CVF < 70 %), traitement,
+  oxygène (**cible 88 – 95 %**, choix du propriétaire, comme la vidéo SpO₂) + exacerbation, récap. Storyboard
+  `docs/lpi/storyboard-bpco.md`.
   Briques `copd.tsx` : `Bronchus` (paroi enflammée, mucus, rétrécissement, alvéoles → emphysème, air qui entre / piégé,
   brume de bronchodilatateur), `Spirometer` + `exhaled()`, `Inhaler` ; `Patient` : `bronchi`, `narrow`, `trapped`,
   `cannula` (lunettes à oxygène) ; icônes poussières, pollution, toux, crachats, soleil levant, seringue, inhalateur.
@@ -170,6 +173,30 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   Attention : dans un attribut JSX `text="…\n…"` le `\n` n'est pas un retour à la ligne → `text={'…\n…'}` ; un accent de
   titre sur un mot avec apostrophe s'écrit `*l'hygiène*` (pas `l'*hygiène*`) ; `accessoires/baskets` n'est qu'une chaussure
   (pas la mascotte) : ne pas l'utiliser comme étape.
+
+## Planches anatomiques « La Petite IDE » (demandé : dessiner les organes à notre façon, un organe à la fois)
+
+- **Une image simple par étape, comme si on enlevait un calque à chaque fois** (le propriétaire a refusé une première
+  version qui mettait tout dans un seul dessin). Poumons (`src/brand/chest.tsx` + `lungs.tsx`) : 1 le patient →
+  2 la cage thoracique `RibsLayer` → 3 les poumons vus de l'extérieur `LungsOutLayer` (lobes, plèvre brillante, trachée
+  + larynx, cœur, diaphragme) → 4 l'intérieur `LungsInLayer` (trachée, bronches, bronchioles, grappes d'alvéoles, l'air
+  qui descend) → 5 `AlveoliZoom` (grappes + vaisseaux, O₂) → 6 `AlveolusExchange` (une alvéole + son vaisseau : O₂ dans
+  le sang, CO₂ dans l'air). Chaque couche est dans le repère du `Patient` (400 × 560) : posée sur lui, à la même taille.
+  `ChestPeel` (`peel` 0 → 3) : la ligne de la « radio » descend et enlève une couche par unité, au mot près.
+  BPCO : `copd` (poumons distendus et plus sombres, bulles d'emphysème, bronches roses épaissies, mucus, air piégé),
+  `AirwayCross` (bronche en coupe : saine → enflammée, muscle contracté, mucus qui coule), `ZoomBubble` (loupe reliée
+  au point grossi, ancrée à l'écran avec `camAt(...).view()`).
+- Planches de contrôle : composition `Planche-Poumons` (`--props='{"page":1}'` étapes, `2` avec la BPCO, `3` la radio).
+- Prochaines planches demandées, même principe : le cerveau, le cœur, etc.
+
+## Bruitages réels (demandé : « tes bruitages ne sont pas réalistes »)
+
+- Les bruits du corps et des objets sont de **vrais enregistrements** : La Sonothèque (gratuits, libres de droits, usage
+  commercial, attribution non obligatoire) + la toux fournie par le propriétaire. `public/sfx/SOURCES.md`,
+  `npm run sfx:import` (retélécharge, coupe, met à -1 dBFS). Noms : `cough` (quinte), `cough-1`, `cough-2`, `gasp`
+  (essoufflement), `puff` (inhalateur), `lighter`, `smoke` (bouffée), `blow` (souffle fort), `sigh`, `stairs`. Les sons
+  synthétisés ne servent qu'aux effets d'interface (whoosh, pop, tick, stamp…). Un bruitage plus long qu'une seconde
+  n'est plus coupé par défaut (`LENGTH` dans `Sfx.tsx`). Ne pas resynthétiser un bruit du corps : en chercher un vrai.
 
 ## Format « série » (demandé : un sujet trop long = plusieurs parties, modèle `Plaies-1/2/3`)
 
