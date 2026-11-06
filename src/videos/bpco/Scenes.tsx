@@ -1620,7 +1620,7 @@ export const Traitement: React.FC = () => {
 						réentraîner le souffle
 					</StagePill>
 				</Stage>
-				<Stamp at={GUER} x={640} y={380} text="Ne se guérit pas" size={46} rot={-7} out={FREIN + 10} />
+				<Stamp at={GUER} x={640} y={380} text="Ne se guérit pas" size={46} rot={-7} out={FREIN - 8} />
 				<div
 					style={{
 						position: 'absolute',
