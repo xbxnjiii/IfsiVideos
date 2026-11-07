@@ -7,10 +7,25 @@ import React from 'react';
 import {AbsoluteFill, Easing, interpolate, useCurrentFrame} from 'remotion';
 import {CamKey, Head, RecapScene, StagePill, ZoomCam} from '../../brand/episode';
 import {ScalpelIcon} from '../../brand/icons';
-import {Stamp, Strike} from '../../brand/kit';
+import {Stamp} from '../../brand/kit';
 import {Burst, Camera, LiveBackground, Stage} from '../../brand/motion3';
 import {Sfx} from '../../brand/Sfx';
-import {AntisepticBottle, Arm, ARM_PT, BloodTube, Butterfly, DasriBag, Gauze, Hand, Holder, Plaster, ShaBottle, SharpsBox, TourniquetStrap, VacuNeedle} from '../../brand/sampling';
+import {
+	AntisepticBottle,
+	Arm,
+	ARM_PT,
+	BloodTube,
+	Butterfly,
+	DasriBag,
+	Gauze,
+	Hand,
+	Holder,
+	Plaster,
+	ShaBottle,
+	SharpsBox,
+	TourniquetStrap,
+	VacuNeedle,
+} from '../../brand/sampling';
 import {alpha, FONT, LPI, SHADOW} from '../../brand/theme';
 import {clamp, Title} from '../../brand/ui';
 import {abs, at} from './timeline';
@@ -18,14 +33,36 @@ import {abs, at} from './timeline';
 const ease = {...clamp, easing: Easing.inOut(Easing.cubic)};
 const N = LPI.navy;
 const fadeIn = (frame: number, a: number, d = 8) => interpolate(frame, [a, a + d], [0, 1], clamp);
-const popAt = (frame: number, t0: number) => (frame < t0 ? 0 : 1 + 0.12 * Math.exp(-(frame - t0) / 3) * Math.cos((frame - t0) * 0.9) - Math.exp(-(frame - t0) / 2));
+const popAt = (frame: number, t0: number) =>
+	frame < t0 ? 0 : 1 + 0.12 * Math.exp(-(frame - t0) / 3) * Math.cos((frame - t0) * 0.9) - Math.exp(-(frame - t0) / 2);
 const CAPS = [LPI.blue, LPI.pink, LPI.sky, N, LPI.blue];
 
 /** Objet posé (x, y, échelle) qui apparaît en ressort à `at`. */
-const Pop: React.FC<{at: number; x: number; y: number; children: React.ReactNode; s?: number; rot?: number; o?: number}> = ({at: t0, x, y, children, s = 1, rot = 0, o = 1}) => {
+const Pop: React.FC<{
+	at: number;
+	x: number;
+	y: number;
+	children: React.ReactNode;
+	s?: number;
+	rot?: number;
+	o?: number;
+}> = ({at: t0, x, y, children, s = 1, rot = 0, o = 1}) => {
 	const frame = useCurrentFrame();
 	if (frame < t0 || o <= 0) return null;
-	return <div style={{position: 'absolute', left: x, top: y, opacity: o, transform: `scale(${popAt(frame, t0) * s}) rotate(${rot}deg)`, transformOrigin: '50% 50%'}}>{children}</div>;
+	return (
+		<div
+			style={{
+				position: 'absolute',
+				left: x,
+				top: y,
+				opacity: o,
+				transform: `scale(${popAt(frame, t0) * s}) rotate(${rot}deg)`,
+				transformOrigin: '50% 50%',
+			}}
+		>
+			{children}
+		</div>
+	);
 };
 
 /* ═══════════════════════════════ LA LISTE QUI SE COCHE ═══════════════════════════════ */
@@ -40,16 +77,92 @@ const Checklist: React.FC<{rows: Row[]; y?: number}> = ({rows, y = 1010}) => {
 				const s = interpolate(t, [0, 8], [0, 1], {...clamp, easing: Easing.out(Easing.back(1.6))});
 				const tick = fadeIn(frame, r.at + 10, 6);
 				return (
-					<div key={r.label} style={{position: 'absolute', left: 72, top: y + i * 112, width: 936, height: 98, borderRadius: 30, background: LPI.paper, border: `5px solid ${LPI.sky}`, boxShadow: SHADOW, display: 'flex', alignItems: 'center', gap: 18, padding: '0 20px', boxSizing: 'border-box', opacity: s, transform: `translateX(${(1 - s) * 120}px)`}}>
-						<div style={{width: 74, height: 74, borderRadius: 37, background: alpha(LPI.sky, 0.6), display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, overflow: 'hidden'}}>{r.icon}</div>
-						<div style={{flex: 1, minWidth: 0}}>
-							<div style={{fontFamily: FONT.title, fontWeight: 900, fontSize: 40, color: N, lineHeight: 1.05, whiteSpace: 'nowrap'}}>{r.label}</div>
-							<div style={{fontFamily: FONT.body, fontWeight: 800, fontSize: 28, color: alpha(N, 0.7), whiteSpace: 'nowrap'}}>{r.sub}</div>
+					<div
+						key={r.label}
+						style={{
+							position: 'absolute',
+							left: 72,
+							top: y + i * 112,
+							width: 936,
+							height: 98,
+							borderRadius: 30,
+							background: LPI.paper,
+							border: `5px solid ${LPI.sky}`,
+							boxShadow: SHADOW,
+							display: 'flex',
+							alignItems: 'center',
+							gap: 18,
+							padding: '0 20px',
+							boxSizing: 'border-box',
+							opacity: s,
+							transform: `translateX(${(1 - s) * 120}px)`,
+						}}
+					>
+						<div
+							style={{
+								width: 74,
+								height: 74,
+								borderRadius: 37,
+								background: alpha(LPI.sky, 0.6),
+								display: 'flex',
+								alignItems: 'center',
+								justifyContent: 'center',
+								flexShrink: 0,
+								overflow: 'hidden',
+							}}
+						>
+							{r.icon}
 						</div>
-						<div style={{width: 58, height: 58, borderRadius: 16, border: `5px solid ${N}`, background: tick > 0 ? LPI.pink : LPI.paper, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0}}>
+						<div style={{flex: 1, minWidth: 0}}>
+							<div
+								style={{
+									fontFamily: FONT.title,
+									fontWeight: 900,
+									fontSize: 40,
+									color: N,
+									lineHeight: 1.05,
+									whiteSpace: 'nowrap',
+								}}
+							>
+								{r.label}
+							</div>
+							<div
+								style={{
+									fontFamily: FONT.body,
+									fontWeight: 800,
+									fontSize: 28,
+									color: alpha(N, 0.7),
+									whiteSpace: 'nowrap',
+								}}
+							>
+								{r.sub}
+							</div>
+						</div>
+						<div
+							style={{
+								width: 58,
+								height: 58,
+								borderRadius: 16,
+								border: `5px solid ${N}`,
+								background: tick > 0 ? LPI.pink : LPI.paper,
+								display: 'flex',
+								alignItems: 'center',
+								justifyContent: 'center',
+								flexShrink: 0,
+							}}
+						>
 							{tick > 0 ? (
 								<svg width={42} height={42} viewBox="0 0 100 100">
-									<path d="M22 52 L42 72 L78 30" fill="none" stroke={N} strokeWidth={13} strokeLinecap="round" strokeLinejoin="round" pathLength={1} strokeDasharray={`${tick} 1`} />
+									<path
+										d="M22 52 L42 72 L78 30"
+										fill="none"
+										stroke={N}
+										strokeWidth={13}
+										strokeLinecap="round"
+										strokeLinejoin="round"
+										pathLength={1}
+										strokeDasharray={`${tick} 1`}
+									/>
 								</svg>
 							) : null}
 						</div>
@@ -87,9 +200,38 @@ export const ItemCounter: React.FC<{from: number; to: number}> = ({from, to}) =>
 	const last = marks[Math.max(0, n - 1)];
 	const bump = n > 0 && frame - last < 10 ? 1 + 0.25 * Math.exp(-(frame - last) / 3) : 1;
 	return (
-		<div style={{position: 'absolute', right: 60, top: 222, opacity: o, display: 'flex', alignItems: 'center', gap: 10, padding: '6px 18px', borderRadius: 999, background: LPI.paper, border: `4px solid ${LPI.sky}`, fontFamily: FONT.body, fontWeight: 900, fontSize: 26, letterSpacing: '0.1em', color: N}}>
+		<div
+			style={{
+				position: 'absolute',
+				right: 60,
+				top: 222,
+				opacity: o,
+				display: 'flex',
+				alignItems: 'center',
+				gap: 10,
+				padding: '6px 18px',
+				borderRadius: 999,
+				background: LPI.paper,
+				border: `4px solid ${LPI.sky}`,
+				fontFamily: FONT.body,
+				fontWeight: 900,
+				fontSize: 26,
+				letterSpacing: '0.1em',
+				color: N,
+			}}
+		>
 			MATÉRIEL
-			<span style={{display: 'inline-block', padding: '2px 12px', borderRadius: 999, background: LPI.pink, color: N, transform: `scale(${bump})`, fontVariantNumeric: 'tabular-nums'}}>
+			<span
+				style={{
+					display: 'inline-block',
+					padding: '2px 12px',
+					borderRadius: 999,
+					background: LPI.pink,
+					color: N,
+					transform: `scale(${bump})`,
+					fontVariantNumeric: 'tabular-nums',
+				}}
+			>
 				{n} / 13
 			</span>
 		</div>
@@ -155,15 +297,40 @@ const FamilyStrip: React.FC<{g: number; at: number; until: number}> = ({g, at: t
 	if (frame < t0 || o <= 0) return null;
 	const {items, n, title, tone} = GROUPS[g];
 	return (
-		<div style={{position: 'absolute', left: 0, right: 0, top: 40, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 22, opacity: o}}>
+		<div
+			style={{
+				position: 'absolute',
+				left: 0,
+				right: 0,
+				top: 40,
+				display: 'flex',
+				flexDirection: 'column',
+				alignItems: 'center',
+				gap: 22,
+				opacity: o,
+			}}
+		>
 			<div style={{transform: `scale(${popAt(frame, t0)})`}}>
 				<GroupBadge n={n} title={title} tone={tone} />
 			</div>
 			<div style={{display: 'flex', alignItems: 'flex-end', gap: 30}}>
 				{items.map((it, i) => (
-					<div key={it.label} style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, transform: `scale(${popAt(frame, t0 + 3 + i * 4) * 1.1})`}}>
+					<div
+						key={it.label}
+						style={{
+							display: 'flex',
+							flexDirection: 'column',
+							alignItems: 'center',
+							gap: 8,
+							transform: `scale(${popAt(frame, t0 + 3 + i * 4) * 1.1})`,
+						}}
+					>
 						{it.node}
-						<div style={{fontFamily: FONT.body, fontWeight: 900, fontSize: 26, color: alpha(N, 0.8), whiteSpace: 'nowrap'}}>{it.label}</div>
+						<div
+							style={{fontFamily: FONT.body, fontWeight: 900, fontSize: 26, color: alpha(N, 0.8), whiteSpace: 'nowrap'}}
+						>
+							{it.label}
+						</div>
 					</div>
 				))}
 			</div>
@@ -173,7 +340,26 @@ const FamilyStrip: React.FC<{g: number; at: number; until: number}> = ({g, at: t
 
 const GroupBadge: React.FC<{n: number; title: string; tone: string; glow?: number}> = ({n, title, tone, glow = 0}) => (
 	<div style={{display: 'flex', alignItems: 'center', gap: 16}}>
-		<div style={{width: 64, height: 64, borderRadius: 32, background: tone, border: `5px solid ${N}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FONT.title, fontWeight: 900, fontSize: 40, color: tone === N ? LPI.paper : N, boxShadow: glow > 0 ? `0 0 ${30 * glow}px ${alpha(LPI.pink, 0.9)}` : 'none', transform: `scale(${1 + 0.15 * glow})`}}>{n}</div>
+		<div
+			style={{
+				width: 64,
+				height: 64,
+				borderRadius: 32,
+				background: tone,
+				border: `5px solid ${N}`,
+				display: 'flex',
+				alignItems: 'center',
+				justifyContent: 'center',
+				fontFamily: FONT.title,
+				fontWeight: 900,
+				fontSize: 40,
+				color: tone === N ? LPI.paper : N,
+				boxShadow: glow > 0 ? `0 0 ${30 * glow}px ${alpha(LPI.pink, 0.9)}` : 'none',
+				transform: `scale(${1 + 0.15 * glow})`,
+			}}
+		>
+			{n}
+		</div>
 		<div style={{fontFamily: FONT.title, fontWeight: 900, fontSize: 44, color: N}}>{title}</div>
 	</div>
 );
@@ -190,7 +376,8 @@ export const Hook: React.FC = () => {
 	const UN2 = at('intro', 'un', 2);
 	const lights = [REPR + 8, PAR - 2, UN2 + 4];
 	let k = 0;
-	const wiggle = frame >= BEAU && frame < BEAU + 26 ? Math.sin((frame - BEAU) * 1.4) * 4 * Math.exp(-(frame - BEAU) / 10) : 0;
+	const wiggle =
+		frame >= BEAU && frame < BEAU + 26 ? Math.sin((frame - BEAU) * 1.4) * 4 * Math.exp(-(frame - BEAU) / 10) : 0;
 	return (
 		<AbsoluteFill>
 			<LiveBackground />
@@ -205,7 +392,20 @@ export const Hook: React.FC = () => {
 					const gapX = (PANEL.w - 80 - total) / (g.items.length - 1);
 					let x = 40;
 					return (
-						<div key={g.n} style={{position: 'absolute', left: PANEL.x, top: y, width: PANEL.w, height: PANEL.h, borderRadius: 44, background: LPI.paper, border: `6px solid ${glow > 0.1 ? LPI.pink : alpha(g.tone, 0.6)}`, boxShadow: glow > 0 ? `0 0 ${40 * glow}px ${alpha(LPI.pink, 0.6)}` : SHADOW}}>
+						<div
+							key={g.n}
+							style={{
+								position: 'absolute',
+								left: PANEL.x,
+								top: y,
+								width: PANEL.w,
+								height: PANEL.h,
+								borderRadius: 44,
+								background: LPI.paper,
+								border: `6px solid ${glow > 0.1 ? LPI.pink : alpha(g.tone, 0.6)}`,
+								boxShadow: glow > 0 ? `0 0 ${40 * glow}px ${alpha(LPI.pink, 0.6)}` : SHADOW,
+							}}
+						>
 							<div style={{position: 'absolute', left: 26, top: 18}}>
 								<GroupBadge n={g.n} title={g.title} tone={g.tone} glow={glow} />
 							</div>
@@ -213,13 +413,40 @@ export const Hook: React.FC = () => {
 								const land = -6 + k++ * 3;
 								const t = frame - land;
 								// chute qui accélère (12 images) puis petits rebonds à l'atterrissage
-								const drop = t < 0 ? -420 * (t / 12) ** 2 : t < 14 ? -24 * Math.exp(-t / 2.5) * Math.abs(Math.sin(t * 0.9)) : 0;
+								const drop =
+									t < 0 ? -420 * (t / 12) ** 2 : t < 14 ? -24 * Math.exp(-t / 2.5) * Math.abs(Math.sin(t * 0.9)) : 0;
 								const left = x;
 								x += it.w + gapX;
 								return (
-									<div key={it.label} style={{position: 'absolute', left, top: 96, width: it.w, height: 220, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-end', transform: `translateY(${drop}px) rotate(${wiggle * (k % 2 ? 1 : -1)}deg)`, opacity: t < -12 ? 0 : 1}}>
+									<div
+										key={it.label}
+										style={{
+											position: 'absolute',
+											left,
+											top: 96,
+											width: it.w,
+											height: 220,
+											display: 'flex',
+											flexDirection: 'column',
+											alignItems: 'center',
+											justifyContent: 'flex-end',
+											transform: `translateY(${drop}px) rotate(${wiggle * (k % 2 ? 1 : -1)}deg)`,
+											opacity: t < -12 ? 0 : 1,
+										}}
+									>
 										<div style={{flex: 1, display: 'flex', alignItems: 'center'}}>{it.node}</div>
-										<div style={{fontFamily: FONT.body, fontWeight: 900, fontSize: 26, color: alpha(N, 0.8), opacity: fadeIn(frame, land + 4, 6), whiteSpace: 'nowrap'}}>{it.label}</div>
+										<div
+											style={{
+												fontFamily: FONT.body,
+												fontWeight: 900,
+												fontSize: 26,
+												color: alpha(N, 0.8),
+												opacity: fadeIn(frame, land + 4, 6),
+												whiteSpace: 'nowrap',
+											}}
+										>
+											{it.label}
+										</div>
 									</div>
 								);
 							})}
@@ -280,8 +507,20 @@ export const Prelevement: React.FC = () => {
 					<ZoomCam keys={keys} w={936} h={540}>
 						<div style={{position: 'absolute', inset: 0, opacity: setO}}>
 							{frame >= AIG - 4 ? (
-								<div style={{position: 'absolute', left: nx, top: ny, transform: `scale(${popAt(frame, AIG - 4)}) rotate(${screw}deg)`, transformOrigin: '40% 50%'}}>
-									<VacuNeedle size={ns} glowVein={fadeIn(frame, VEINE - 4, 6) * (1 - fadeIn(frame, TUBE - 4, 6))} glowTube={fadeIn(frame, TUBE - 4, 6) * (1 - fadeIn(frame, VISSE - 6, 6))} />
+								<div
+									style={{
+										position: 'absolute',
+										left: nx,
+										top: ny,
+										transform: `scale(${popAt(frame, AIG - 4)}) rotate(${screw}deg)`,
+										transformOrigin: '40% 50%',
+									}}
+								>
+									<VacuNeedle
+										size={ns}
+										glowVein={fadeIn(frame, VEINE - 4, 6) * (1 - fadeIn(frame, TUBE - 4, 6))}
+										glowTube={fadeIn(frame, TUBE - 4, 6) * (1 - fadeIn(frame, VISSE - 6, 6))}
+									/>
 								</div>
 							) : null}
 							{frame >= VISSE - 6 ? (
@@ -304,7 +543,7 @@ export const Prelevement: React.FC = () => {
 						pointe côté tube, sous le manchon
 					</StagePill>
 					<StagePill from={CORPS - 2} to={PT - 2} x={40} y={40} color={LPI.sky}>
-						corps de prélèvement
+						corps de pompe
 					</StagePill>
 					<StagePill from={PT - 2} to={FINE - 4} x={40} y={40} color={LPI.blue}>
 						= le porte-tube, qu'on tient en main
@@ -318,9 +557,19 @@ export const Prelevement: React.FC = () => {
 				</Stage>
 				<Checklist
 					rows={[
-						{at: AIG, icon: <VacuNeedle size={70} />, label: 'Aiguille Vacutainer', sub: '2 pointes : une veine, une tube'},
-						{at: CORPS, icon: <Holder size={64} />, label: 'Corps de prélèvement', sub: 'le porte-tube'},
-						{at: UNITE, icon: <Butterfly size={66} />, label: 'Unité à ailettes', sub: 'épicrânienne : veine fine ou fragile'},
+						{
+							at: AIG,
+							icon: <VacuNeedle size={70} />,
+							label: 'Aiguille Vacutainer',
+							sub: '2 pointes : une veine, une tube',
+						},
+						{at: CORPS, icon: <Holder size={64} />, label: 'Corps de pompe', sub: 'le porte-tube'},
+						{
+							at: UNITE,
+							icon: <Butterfly size={66} />,
+							label: 'Unité à ailettes',
+							sub: 'épicrânienne : veine fine ou fragile',
+						},
 					]}
 				/>
 			</Camera>
@@ -365,11 +614,30 @@ export const Tubes: React.FC = () => {
 					<ZoomCam keys={keys} w={936} h={540}>
 						{/* la prescription */}
 						<Pop at={PRESC - 4} x={40} y={70}>
-							<div style={{width: 260, height: 380, borderRadius: 18, background: LPI.paper, border: `5px solid ${N}`, boxShadow: SHADOW, padding: '22px 22px', boxSizing: 'border-box'}}>
+							<div
+								style={{
+									width: 260,
+									height: 380,
+									borderRadius: 18,
+									background: LPI.paper,
+									border: `5px solid ${N}`,
+									boxShadow: SHADOW,
+									padding: '22px 22px',
+									boxSizing: 'border-box',
+								}}
+							>
 								<div style={{fontFamily: FONT.title, fontWeight: 900, fontSize: 30, color: N}}>Prescription</div>
 								{CAPS.slice(0, 4).map((c, i) => (
 									<div key={i} style={{display: 'flex', alignItems: 'center', gap: 12, marginTop: 24}}>
-										<div style={{width: 30, height: 30, borderRadius: 8, border: `4px solid ${N}`, background: frame >= PRESC + 6 + i * 5 ? c : LPI.paper}} />
+										<div
+											style={{
+												width: 30,
+												height: 30,
+												borderRadius: 8,
+												border: `4px solid ${N}`,
+												background: frame >= PRESC + 6 + i * 5 ? c : LPI.paper,
+											}}
+										/>
 										<div style={{height: 10, width: 140 - (i % 2) * 40, borderRadius: 5, background: alpha(N, 0.2)}} />
 									</div>
 								))}
@@ -380,14 +648,37 @@ export const Tubes: React.FC = () => {
 							const lit = frame >= COUL + i * 5 && frame < ANAL + 20;
 							const focus = i === sel && frame >= DEDANS - 4;
 							return (
-								<div key={i} style={{position: 'absolute', left: T.x + i * T.gap, top: T.y, transform: `scale(${popAt(frame, TUBES - 2 + i * 3) * (lit ? 1.08 : 1)})`, opacity: frame >= DEDANS - 4 && !focus ? 0.35 : 1}}>
-									<BloodTube size={T.size} cap={c} vacuum={focus ? fadeIn(frame, VIDE - 2, 6) * (1 - fadeIn(frame, ASP, 6)) : 0} level={focus ? interpolate(frame, [ASP, QTE + 10], [0, 0.72], ease) : 0} mark={focus ? fadeIn(frame, QTE - 4, 6) : 0} />
+								<div
+									key={i}
+									style={{
+										position: 'absolute',
+										left: T.x + i * T.gap,
+										top: T.y,
+										transform: `scale(${popAt(frame, TUBES - 2 + i * 3) * (lit ? 1.08 : 1)})`,
+										opacity: frame >= DEDANS - 4 && !focus ? 0.35 : 1,
+									}}
+								>
+									<BloodTube
+										size={T.size}
+										cap={c}
+										vacuum={focus ? fadeIn(frame, VIDE - 2, 6) * (1 - fadeIn(frame, ASP, 6)) : 0}
+										level={focus ? interpolate(frame, [ASP, QTE + 10], [0, 0.72], ease) : 0}
+										mark={focus ? fadeIn(frame, QTE - 4, 6) : 0}
+									/>
 								</div>
 							);
 						})}
 						{/* l'aiguille (côté tube) perce le bouchon */}
 						{frame >= ASP - 12 ? (
-							<div style={{position: 'absolute', left: sx - 32, top: T.y - 210 + 64 * pierce, transform: 'rotate(90deg)', transformOrigin: '0 0'}}>
+							<div
+								style={{
+									position: 'absolute',
+									left: sx - 32,
+									top: T.y - 210 + 64 * pierce,
+									transform: 'rotate(90deg)',
+									transformOrigin: '0 0',
+								}}
+							>
 								<div style={{transform: 'translate(-6px, -40px)'}}>
 									<VacuNeedle size={160} />
 								</div>
@@ -410,8 +701,18 @@ export const Tubes: React.FC = () => {
 				<Checklist
 					rows={[
 						{at: TUBES, icon: <BloodTube size={30} cap={LPI.blue} />, label: 'Tubes', sub: 'ceux de la prescription'},
-						{at: BOUCH, icon: <BloodTube size={30} cap={LPI.pink} />, label: 'Couleur du bouchon', sub: '= le type d’analyse'},
-						{at: VIDE, icon: <BloodTube size={30} cap={N} level={0.6} />, label: 'Tube sous vide', sub: 'il aspire la bonne quantité'},
+						{
+							at: BOUCH,
+							icon: <BloodTube size={30} cap={LPI.pink} />,
+							label: 'Couleur du bouchon',
+							sub: '= le type d’analyse',
+						},
+						{
+							at: VIDE,
+							icon: <BloodTube size={30} cap={N} level={0.6} />,
+							label: 'Tube sous vide',
+							sub: 'il aspire la bonne quantité',
+						},
 					]}
 				/>
 			</Camera>
@@ -456,7 +757,20 @@ export const Mains: React.FC = () => {
 						<Pop at={SOL - 4} x={150} y={110}>
 							<ShaBottle size={190} press={frame >= MAINS - 12 && frame < MAINS ? 1 : 0} />
 						</Pop>
-						{drip > 0 && drip < 1 ? <div style={{position: 'absolute', left: 445 + 150 * drip, top: 150 + 150 * drip * drip, width: 22, height: 30, borderRadius: '50% 50% 50% 50% / 60% 60% 40% 40%', background: LPI.sky, border: `4px solid ${N}`}} /> : null}
+						{drip > 0 && drip < 1 ? (
+							<div
+								style={{
+									position: 'absolute',
+									left: 445 + 150 * drip,
+									top: 150 + 150 * drip * drip,
+									width: 22,
+									height: 30,
+									borderRadius: '50% 50% 50% 50% / 60% 60% 40% 40%',
+									background: LPI.sky,
+									border: `4px solid ${N}`,
+								}}
+							/>
+						) : null}
 						<Pop at={DAB} x={470 + rub} y={150}>
 							<div style={{transform: 'scaleX(-1)'}}>
 								<Hand size={170} gloved={gloved} />
@@ -468,14 +782,39 @@ export const Mains: React.FC = () => {
 						{frame >= MAINS && frame < GANTS
 							? Array.from({length: 6}, (_, i) => {
 									const t = ((frame - MAINS) / 18 + i / 6) % 1;
-									return <div key={i} style={{position: 'absolute', left: 560 + Math.cos(i * 1.7) * 160 * t, top: 260 - 120 * t + Math.sin(i * 2.3) * 40, width: 16, height: 16, borderRadius: 8, background: i % 2 ? LPI.sky : LPI.pink, opacity: 1 - t}} />;
+									return (
+										<div
+											key={i}
+											style={{
+												position: 'absolute',
+												left: 560 + Math.cos(i * 1.7) * 160 * t,
+												top: 260 - 120 * t + Math.sin(i * 2.3) * 40,
+												width: 16,
+												height: 16,
+												borderRadius: 8,
+												background: i % 2 ? LPI.sky : LPI.pink,
+												opacity: 1 - t,
+											}}
+										/>
+									);
 								})
 							: null}
 						{frame >= PROT - 2 ? (
 							<div style={{position: 'absolute', left: 590, top: 40, transform: `scale(${popAt(frame, PROT - 2)})`}}>
 								<svg width={140} height={160} viewBox="0 0 100 114">
-									<path d="M50 4 L92 20 V54 C92 82 72 100 50 110 C28 100 8 82 8 54 V20 Z" fill={LPI.blue} stroke={N} strokeWidth={6} strokeLinejoin="round" />
-									<path d="M50 34 C50 34 64 52 64 62 A14 14 0 0 1 36 62 C36 52 50 34 50 34 Z" fill={LPI.pink} stroke={N} strokeWidth={4} />
+									<path
+										d="M50 4 L92 20 V54 C92 82 72 100 50 110 C28 100 8 82 8 54 V20 Z"
+										fill={LPI.blue}
+										stroke={N}
+										strokeWidth={6}
+										strokeLinejoin="round"
+									/>
+									<path
+										d="M50 34 C50 34 64 52 64 62 A14 14 0 0 1 36 62 C36 52 50 34 50 34 Z"
+										fill={LPI.pink}
+										stroke={N}
+										strokeWidth={4}
+									/>
 								</svg>
 							</div>
 						) : null}
@@ -497,7 +836,12 @@ export const Mains: React.FC = () => {
 				<Checklist
 					rows={[
 						{at: SOL, icon: <ShaBottle size={40} />, label: 'Solution hydroalcoolique', sub: 'la SHA, pour les mains'},
-						{at: GANTS, icon: <Hand size={52} gloved={1} />, label: 'Gants à usage unique', sub: 'non stériles : te protègent du sang'},
+						{
+							at: GANTS,
+							icon: <Hand size={52} gloved={1} />,
+							label: 'Gants à usage unique',
+							sub: 'non stériles : te protègent du sang',
+						},
 					]}
 				/>
 			</Camera>
@@ -533,30 +877,79 @@ export const Bras: React.FC = () => {
 		{at: DESINF - 4, s: 1.7, x: pt.x, y: pt.y, dur: 14},
 	];
 	const wipeT = interpolate(frame, [DESINF - 4, DESINF + 24], [0, 1], ease);
-	const gz = frame >= COMP ? {x: pt.x - 60 + Math.cos(frame / 3) * 40 * wipeT, y: pt.y - 60 + Math.sin(frame / 3) * 26 * wipeT} : {x: 700, y: 30};
+	const gz =
+		frame >= COMP
+			? {x: pt.x - 60 + Math.cos(frame / 3) * 40 * wipeT, y: pt.y - 60 + Math.sin(frame / 3) * 26 * wipeT}
+			: {x: 700, y: 30};
 	return (
 		<AbsoluteFill>
 			<LiveBackground />
 			<Camera punches={[GARROT + 1, SERRE + 1, POINT + 1, GONFLE + 1, ANTI + 1, DESINF + 1]} shakes={[SERRE + 2]}>
-				<Head kicker="2 · Hygiène et antisepsie" kAt={GARROT - 8} title="Préparer le *bras*" tAt={GARROT - 4} size={84} />
+				<Head
+					kicker="2 · Hygiène et antisepsie"
+					kAt={GARROT - 8}
+					title="Préparer le *bras*"
+					tAt={GARROT - 4}
+					size={84}
+				/>
 				<Stage y={440} h={540} at={GARROT - 6} bumps={[SERRE, GONFLE, DESINF]}>
 					<ZoomCam keys={keys} w={936} h={540}>
 						<div style={{position: 'absolute', left: AB.x, top: AB.y}}>
-							<Arm width={AB.w} tourniquet={fadeIn(frame, GARROT - 4, 10)} tight={fadeIn(frame, SERRE, 8)} mark={fadeIn(frame, POINT - 2, 8)} swell={interpolate(frame, [GONFLE - 4, GONFLE + 14], [0, 1], ease)} wipe={wipeT} />
+							<Arm
+								width={AB.w}
+								tourniquet={fadeIn(frame, GARROT - 4, 10)}
+								tight={fadeIn(frame, SERRE, 8)}
+								mark={fadeIn(frame, POINT - 2, 8)}
+								swell={interpolate(frame, [GONFLE - 4, GONFLE + 14], [0, 1], ease)}
+								wipe={wipeT}
+							/>
 						</div>
 						{frame >= DESSUS - 2 && frame < VEINE ? (
-							<svg width={936} height={540} style={{position: 'absolute', inset: 0, overflow: 'visible', opacity: fadeIn(frame, DESSUS - 2, 6)}}>
-								<path d={`M${pt.x - 30} ${AB.y + 20} C${pt.x - 70} ${AB.y - 30} ${AB.x + 320} ${AB.y - 40} ${AB.x + 310} ${AB.y + 20}`} fill="none" stroke={LPI.pink} strokeWidth={8} strokeLinecap="round" strokeDasharray="14 10" />
-								<path d={`M${AB.x + 296} ${AB.y + 4} L${AB.x + 310} ${AB.y + 24} L${AB.x + 328} ${AB.y + 8}`} fill="none" stroke={LPI.pink} strokeWidth={8} strokeLinecap="round" strokeLinejoin="round" />
+							<svg
+								width={936}
+								height={540}
+								style={{position: 'absolute', inset: 0, overflow: 'visible', opacity: fadeIn(frame, DESSUS - 2, 6)}}
+							>
+								<path
+									d={`M${pt.x - 30} ${AB.y + 20} C${pt.x - 70} ${AB.y - 30} ${AB.x + 320} ${AB.y - 40} ${AB.x + 310} ${AB.y + 20}`}
+									fill="none"
+									stroke={LPI.pink}
+									strokeWidth={8}
+									strokeLinecap="round"
+									strokeDasharray="14 10"
+								/>
+								<path
+									d={`M${AB.x + 296} ${AB.y + 4} L${AB.x + 310} ${AB.y + 24} L${AB.x + 328} ${AB.y + 8}`}
+									fill="none"
+									stroke={LPI.pink}
+									strokeWidth={8}
+									strokeLinecap="round"
+									strokeLinejoin="round"
+								/>
 							</svg>
 						) : null}
 						{frame >= ANTI - 4 ? (
-							<div style={{position: 'absolute', left: 560, top: 20, transform: `scale(${popAt(frame, ANTI - 4)})`, opacity: 1 - fadeIn(frame, DESINF + 40, 8)}}>
+							<div
+								style={{
+									position: 'absolute',
+									left: 560,
+									top: 20,
+									transform: `scale(${popAt(frame, ANTI - 4)})`,
+									opacity: 1 - fadeIn(frame, DESINF + 40, 8),
+								}}
+							>
 								<AntisepticBottle size={110} />
 							</div>
 						) : null}
 						{frame >= COMP - 4 ? (
-							<div style={{position: 'absolute', left: gz.x, top: gz.y, transform: `scale(${popAt(frame, COMP - 4) * (frame >= COMP ? 0.85 : 1)})`}}>
+							<div
+								style={{
+									position: 'absolute',
+									left: gz.x,
+									top: gz.y,
+									transform: `scale(${popAt(frame, COMP - 4) * (frame >= COMP ? 0.85 : 1)})`,
+								}}
+							>
 								<Gauze size={120} sterile={frame < COMP + 6} />
 							</div>
 						) : null}
@@ -578,8 +971,30 @@ export const Bras: React.FC = () => {
 					</StagePill>
 				</Stage>
 				{frame >= LA - 2 && frame < VEINE + 10 ? (
-					<div style={{position: 'absolute', left: 0, right: 0, top: 1370, display: 'flex', justifyContent: 'center', opacity: fadeIn(frame, LA - 2, 6)}}>
-						<div style={{padding: '8px 24px', borderRadius: 999, background: N, color: LPI.paper, fontFamily: FONT.title, fontWeight: 900, fontSize: 34}}>point de ponction = là où on va piquer</div>
+					<div
+						style={{
+							position: 'absolute',
+							left: 0,
+							right: 0,
+							top: 1370,
+							display: 'flex',
+							justifyContent: 'center',
+							opacity: fadeIn(frame, LA - 2, 6),
+						}}
+					>
+						<div
+							style={{
+								padding: '8px 24px',
+								borderRadius: 999,
+								background: N,
+								color: LPI.paper,
+								fontFamily: FONT.title,
+								fontWeight: 900,
+								fontSize: 34,
+							}}
+						>
+							point de ponction = là où on va piquer
+						</div>
 					</div>
 				) : null}
 				<Checklist
@@ -587,7 +1002,12 @@ export const Bras: React.FC = () => {
 					rows={[
 						{at: GARROT, icon: <TourniquetStrap size={68} />, label: 'Garrot', sub: 'au-dessus du point de ponction'},
 						{at: ANTI, icon: <AntisepticBottle size={38} />, label: 'Antiseptique cutané', sub: 'désinfecte la peau'},
-						{at: COMP, icon: <Gauze size={60} sterile />, label: 'Compresses stériles', sub: 'pour appliquer l’antiseptique'},
+						{
+							at: COMP,
+							icon: <Gauze size={60} sterile />,
+							label: 'Compresses stériles',
+							sub: 'pour appliquer l’antiseptique',
+						},
 					]}
 				/>
 			</Camera>
@@ -625,15 +1045,34 @@ export const Fin: React.FC = () => {
 				<Stage y={440} h={540} at={TROIS} bumps={[COMP, RET, PANS]}>
 					<ZoomCam keys={keys} w={936} h={540}>
 						<div style={{position: 'absolute', left: AB.x, top: AB.y}}>
-							<Arm width={AB.w} needle={1 - interpolate(frame, [RET - 2, RET + 12], [0, 1], ease)} gauze={frame >= PANS + 2 ? 0 : popAt(frame, APP - 2)} plaster={popAt(frame, PANS + 2)} />
+							<Arm
+								width={AB.w}
+								needle={1 - interpolate(frame, [RET - 2, RET + 12], [0, 1], ease)}
+								gauze={frame >= PANS + 2 ? 0 : popAt(frame, APP - 2)}
+								plaster={popAt(frame, PANS + 2)}
+							/>
 						</div>
 						{frame >= COMP - 4 && frame < APP - 2 ? (
-							<div style={{position: 'absolute', left: pt.x - 60, top: pt.y - 220, transform: `scale(${popAt(frame, COMP - 4)})`}}>
+							<div
+								style={{
+									position: 'absolute',
+									left: pt.x - 60,
+									top: pt.y - 220,
+									transform: `scale(${popAt(frame, COMP - 4)})`,
+								}}
+							>
 								<Gauze size={120} />
 							</div>
 						) : null}
 						{frame >= APP - 2 && frame < PANS ? (
-							<div style={{position: 'absolute', left: pt.x - 40, top: pt.y - 150 + 8 * Math.sin(frame / 3), transform: 'rotate(180deg)'}}>
+							<div
+								style={{
+									position: 'absolute',
+									left: pt.x - 40,
+									top: pt.y - 150 + 8 * Math.sin(frame / 3),
+									transform: 'rotate(180deg)',
+								}}
+							>
 								<svg width={80} height={110} viewBox="0 0 80 110">
 									<path d="M14 0 V70 C14 100 66 100 66 70 V0" fill={LPI.paper} stroke={N} strokeWidth={6} />
 									<path d="M14 0 V70 C14 100 66 100 66 70 V0" fill={alpha(LPI.pink, 0.28)} />
@@ -641,7 +1080,14 @@ export const Fin: React.FC = () => {
 							</div>
 						) : null}
 						{frame >= SPAR - 2 ? (
-							<div style={{position: 'absolute', left: 640, top: 40, transform: `scale(${popAt(frame, SPAR - 2)}) rotate(-8deg)`}}>
+							<div
+								style={{
+									position: 'absolute',
+									left: 640,
+									top: 40,
+									transform: `scale(${popAt(frame, SPAR - 2)}) rotate(-8deg)`,
+								}}
+							>
 								<svg width={170} height={120} viewBox="0 0 170 120">
 									<circle cx={60} cy={60} r={52} fill={LPI.sky} stroke={N} strokeWidth={6} />
 									<circle cx={60} cy={60} r={22} fill={LPI.paper} stroke={N} strokeWidth={5} />
@@ -676,6 +1122,52 @@ export const Fin: React.FC = () => {
 };
 
 /* ═══════════════════════════════ 3 · FIN DU SOIN : LES DÉCHETS ═══════════════════════════════ */
+// Le tri, en deux colonnes qui ne se cachent jamais. À gauche le collecteur à OPCT (« collecteur à OPCT » dessous) ;
+// à droite, trois cartes qui décodent le sigle : P · piquants (aiguille), C · coupants (lame), T · tranchants (verre
+// cassé). « L'aiguille y va tout de suite » : l'aiguille s'envole en grand dans le collecteur (le couvercle sursaute),
+// les deux autres suivent. « Sans jamais la recapuchonner » : à droite, le capuchon glisse vers l'aiguille… et le panneau
+// d'interdiction (rond + barre, centré sur la scène) l'arrête, le capuchon repart. « Les autres déchets souillés » : le
+// sac DASRI arrive à droite, la compresse et le gant tombent dedans ; « DASRI = déchets à risque infectieux ».
+const BOX = {x: 40, y: 110, size: 300};
+const SLOT = {x: BOX.x + BOX.size / 2, y: BOX.y + (78 * BOX.size) / 240};
+const BAG = {x: 540, y: 110, size: 300};
+const MOUTH = {x: BAG.x + BAG.size / 2, y: BAG.y + (70 * BAG.size) / 240};
+
+/** Verre cassé (ampoule) : objet tranchant (100 × 100). */
+const BrokenAmpoule: React.FC<{size?: number}> = ({size = 90}) => (
+	<svg width={size} height={size} viewBox="0 0 100 100" style={{overflow: 'visible'}}>
+		<path
+			d="M34 96 V54 Q34 40 44 34 V20 L38 12 L48 16 L52 6 L58 18 L64 12 V34 Q74 40 74 54 V96 Z"
+			fill={alpha(LPI.sky, 0.7)}
+			stroke={N}
+			strokeWidth={6}
+			strokeLinejoin="round"
+		/>
+		<path d="M44 60 V86" stroke={LPI.paper} strokeWidth={6} strokeLinecap="round" />
+	</svg>
+);
+
+/** Panneau d'interdiction (rond + barre), centré sur son point (cx, cy). */
+const NoSign: React.FC<{at: number; cx: number; cy: number; r: number}> = ({at: t0, cx, cy, r}) => {
+	const frame = useCurrentFrame();
+	if (frame < t0) return null;
+	const s = popAt(frame, t0);
+	const d = r * 0.7;
+	return (
+		<svg
+			width={2 * r + 40}
+			height={2 * r + 40}
+			viewBox={`${-r - 20} ${-r - 20} ${2 * r + 40} ${2 * r + 40}`}
+			style={{position: 'absolute', left: cx - r - 20, top: cy - r - 20, overflow: 'visible', transform: `scale(${s})`}}
+		>
+			<circle r={r} fill="none" stroke={N} strokeWidth={34} />
+			<circle r={r} fill="none" stroke={LPI.pink} strokeWidth={24} />
+			<path d={`M${-d} ${-d} L${d} ${d}`} stroke={N} strokeWidth={34} strokeLinecap="round" />
+			<path d={`M${-d} ${-d} L${d} ${d}`} stroke={LPI.pink} strokeWidth={24} strokeLinecap="round" />
+		</svg>
+	);
+};
+
 export const Dechets: React.FC = () => {
 	const frame = useCurrentFrame();
 	const IMP = at('dechets', 'important');
@@ -687,90 +1179,268 @@ export const Dechets: React.FC = () => {
 	const AIG = at('dechets', "l'aiguille");
 	const JAMAIS = at('dechets', 'jamais');
 	const RECAP = at('dechets', 'recapuchonner');
-	const DECH = at('dechets', 'déchets', 2);
+	const DECH = at('dechets', 'déchets');
+	const SOUIL = at('dechets', 'souillés');
+	const VONT = at('dechets', 'vont');
 	const SAC = at('dechets', 'sac');
 	const RISQ = at('dechets', 'risque');
-	const keys: CamKey[] = [
-		{at: AIG - 4, s: 1.4, x: 250, y: 230, dur: 14},
-		{at: DECH - 6, s: 1, dur: 16},
+	const CARDS = [
+		{letter: 'P', word: 'piquants', ex: 'aiguille', icon: <VacuNeedle size={170} />, at: PIQ - 2, fly: AIG - 2},
+		{letter: 'C', word: 'coupants', ex: 'lame', icon: <ScalpelIcon size={90} />, at: COUP - 2, fly: AIG + 12},
+		{
+			letter: 'T',
+			word: 'tranchants',
+			ex: 'verre cassé',
+			icon: <BrokenAmpoule size={90} />,
+			at: TRANCH - 2,
+			fly: AIG + 22,
+		},
 	];
-	const icon = (node: React.ReactNode, t0: number, i: number) => {
-		if (frame < t0) return null;
-		const fall = interpolate(frame, [t0 + 14, t0 + 26], [0, 1], {...clamp, easing: Easing.in(Easing.quad)});
-		if (fall >= 1) return null;
-		return (
-			<div key={i} style={{position: 'absolute', left: 120 + i * 110, top: 20 + 150 * fall, transform: `scale(${popAt(frame, t0) * (1 - 0.6 * fall)})`, opacity: 1 - fall}}>
-				{node}
-			</div>
-		);
-	};
+	const landed = CARDS.map((c) => c.fly + 16);
+	const boxBump = landed.reduce((a, t) => a + (frame >= t ? 0.08 * Math.exp(-(frame - t) / 4) : 0), 0);
+	// panneau « jamais recapuchonner » (colonne de droite)
+	const panelOn = interpolate(frame, [JAMAIS - 8, JAMAIS - 2, DECH - 10, DECH - 4], [0, 1, 1, 0], clamp);
+	const capX =
+		frame < RECAP
+			? interpolate(frame, [JAMAIS - 4, RECAP], [430, 250], ease)
+			: interpolate(frame, [RECAP + 2, RECAP + 14], [250, 430], ease);
+	const bagIn = DECH - 4;
+	const bagBump = [VONT + 14, VONT + 22].reduce((a, t) => a + (frame >= t ? 0.07 * Math.exp(-(frame - t) / 4) : 0), 0);
+	const ITEMS = [
+		{node: <Gauze size={120} />, x: 560, pop: DECH - 2, fall: VONT - 2},
+		{node: <Hand size={110} gloved={1} />, x: 720, pop: SOUIL - 2, fall: VONT + 6},
+	];
 	return (
 		<AbsoluteFill>
 			<LiveBackground />
-			<Camera punches={[IMP + 1, COLL + 1, PIQ + 1, COUP + 1, TRANCH + 1, AIG + 1, RECAP + 1, SAC + 1]} shakes={[RECAP + 2]}>
+			<Camera
+				punches={[IMP + 1, COLL + 1, PIQ + 1, COUP + 1, TRANCH + 1, AIG + 1, RECAP + 1, SAC + 1]}
+				shakes={[RECAP + 2]}
+			>
 				<Head kicker="3 · Fin du soin" kAt={IMP - 8} title="Les *déchets*" tAt={IMP - 4} />
-				<Stage y={440} h={540} at={IMP - 6} bumps={[COLL, AIG, SAC]}>
-					<ZoomCam keys={keys} w={936} h={540}>
-						<Pop at={COLL - 4} x={120} y={170}>
-							<SharpsBox size={260} drop={interpolate(frame, [AIG + 4, AIG + 22], [0, 1], clamp)} />
-						</Pop>
-						{icon(<VacuNeedle size={110} />, PIQ - 2, 0)}
-						{icon(<ScalpelIcon size={90} />, COUP - 2, 1)}
-						{icon(
-							<svg width={90} height={90} viewBox="0 0 100 100">
-								<path d="M20 80 L70 20 L84 34 L34 90 Z" fill={LPI.paper} stroke={N} strokeWidth={6} strokeLinejoin="round" />
-								<path d="M70 20 L84 34" stroke={LPI.pink} strokeWidth={8} />
-							</svg>,
-							TRANCH - 2,
-							2,
-						)}
-						<Pop at={SAC - 4} x={560} y={170}>
-							<DasriBag size={260} fill={interpolate(frame, [SAC + 6, SAC + 26], [0, 1], clamp)} />
-						</Pop>
-						{frame >= DECH - 2 && frame < SAC + 6 ? (
-							<div style={{position: 'absolute', left: 600, top: 40, transform: `scale(${popAt(frame, DECH - 2)})`, display: 'flex', gap: 14}}>
-								<Gauze size={90} />
-								<Hand size={70} gloved={1} />
+				<Stage y={440} h={540} at={IMP - 6} bumps={[COLL, AIG, RECAP, SAC]}>
+					{/* ── colonne de gauche : le collecteur à OPCT ── */}
+					{frame >= COLL - 4 ? (
+						<div
+							style={{
+								position: 'absolute',
+								left: BOX.x,
+								top: BOX.y,
+								transform: `scale(${popAt(frame, COLL - 4) * (1 + boxBump)})`,
+								transformOrigin: '50% 100%',
+							}}
+						>
+							<SharpsBox size={BOX.size} />
+						</div>
+					) : null}
+					{/* ── colonne de droite : P · C · T, puis ils s'envolent dans le collecteur ── */}
+					{CARDS.map((c, i) => {
+						if (frame < c.at) return null;
+						const p = interpolate(frame, [c.fly, c.fly + 16], [0, 1], {...clamp, easing: Easing.in(Easing.quad)});
+						const cy = 70 + i * 140;
+						if (p <= 0)
+							return (
+								<div
+									key={c.letter}
+									style={{
+										position: 'absolute',
+										left: 440,
+										top: cy,
+										width: 470,
+										height: 124,
+										borderRadius: 30,
+										background: LPI.paper,
+										border: `5px solid ${N}`,
+										boxShadow: SHADOW,
+										display: 'flex',
+										alignItems: 'center',
+										gap: 16,
+										padding: '0 18px',
+										boxSizing: 'border-box',
+										transform: `scale(${popAt(frame, c.at)})`,
+										transformOrigin: 'left center',
+									}}
+								>
+									<div
+										style={{
+											width: 64,
+											height: 64,
+											borderRadius: 32,
+											background: LPI.pink,
+											border: `5px solid ${N}`,
+											display: 'flex',
+											alignItems: 'center',
+											justifyContent: 'center',
+											fontFamily: FONT.title,
+											fontWeight: 900,
+											fontSize: 38,
+											color: N,
+											flexShrink: 0,
+										}}
+									>
+										{c.letter}
+									</div>
+									<div style={{width: 170, display: 'flex', justifyContent: 'center', flexShrink: 0}}>{c.icon}</div>
+									<div>
+										<div style={{fontFamily: FONT.title, fontWeight: 900, fontSize: 40, color: N, lineHeight: 1}}>
+											{c.word}
+										</div>
+										<div style={{fontFamily: FONT.body, fontWeight: 800, fontSize: 24, color: alpha(N, 0.65)}}>
+											{c.ex}
+										</div>
+									</div>
+								</div>
+							);
+						if (p >= 1) return null;
+						const sx = 440 + 82 + 85;
+						const sy = cy + 62;
+						const x = sx + (SLOT.x - sx) * p;
+						const y = sy + (SLOT.y - sy) * p - 160 * Math.sin(Math.PI * p);
+						return (
+							<div
+								key={c.letter}
+								style={{
+									position: 'absolute',
+									left: x,
+									top: y,
+									transform: `translate(-50%, -50%) rotate(${-40 - 60 * p}deg) scale(${1 - 0.45 * p})`,
+								}}
+							>
+								{c.icon}
 							</div>
-						) : null}
-					</ZoomCam>
+						);
+					})}
+					{/* ── « jamais recapuchonner » ── */}
+					{panelOn > 0 ? (
+						<div
+							style={{
+								position: 'absolute',
+								left: 440,
+								top: 70,
+								width: 470,
+								height: 440,
+								borderRadius: 40,
+								background: LPI.paper,
+								border: `6px solid ${LPI.sky}`,
+								boxShadow: SHADOW,
+								overflow: 'hidden',
+								opacity: panelOn,
+								transform: `scale(${0.9 + 0.1 * panelOn})`,
+							}}
+						>
+							<div style={{position: 'absolute', left: 20, top: 150}}>
+								<VacuNeedle size={340} />
+							</div>
+							{/* le capuchon qui glisse vers la pointe */}
+							<svg width={190} height={44} viewBox="0 0 190 44" style={{position: 'absolute', left: capX, top: 169}}>
+								<path
+									d="M4 6 H164 Q186 22 164 38 H4 Z"
+									fill={alpha(LPI.pink, 0.85)}
+									stroke={N}
+									strokeWidth={5}
+									strokeLinejoin="round"
+								/>
+							</svg>
+							<NoSign at={RECAP} cx={235} cy={190} r={150} />
+							{frame >= RECAP + 4 ? (
+								<div
+									style={{position: 'absolute', left: 0, right: 0, top: 364, display: 'flex', justifyContent: 'center'}}
+								>
+									<div
+										style={{
+											padding: '8px 24px',
+											borderRadius: 999,
+											background: LPI.pink,
+											border: `5px solid ${N}`,
+											fontFamily: FONT.title,
+											fontWeight: 900,
+											fontSize: 36,
+											color: N,
+											transform: `scale(${popAt(frame, RECAP + 4)})`,
+											whiteSpace: 'nowrap',
+										}}
+									>
+										jamais recapuchonner !
+									</div>
+								</div>
+							) : null}
+						</div>
+					) : null}
+					{/* ── le sac DASRI : les déchets souillés tombent dedans (dessinés derrière le sac) ── */}
+					{ITEMS.map((it) => {
+						if (frame < it.pop) return null;
+						const f = interpolate(frame, [it.fall, it.fall + 14], [0, 1], {...clamp, easing: Easing.in(Easing.quad)});
+						if (f >= 1) return null;
+						const x = it.x + (MOUTH.x - 60 - it.x) * f;
+						const y = 20 + (MOUTH.y + 10 - 20) * f;
+						return (
+							<div
+								key={it.x}
+								style={{
+									position: 'absolute',
+									left: x,
+									top: y,
+									transform: `scale(${popAt(frame, it.pop) * (1 - 0.3 * f)}) rotate(${f * 40}deg)`,
+								}}
+							>
+								{it.node}
+							</div>
+						);
+					})}
+					{frame >= bagIn ? (
+						<div
+							style={{
+								position: 'absolute',
+								left: BAG.x,
+								top: BAG.y,
+								transform: `scale(${popAt(frame, bagIn) * (1 + bagBump)})`,
+								transformOrigin: '50% 100%',
+							}}
+						>
+							<DasriBag size={BAG.size} />
+						</div>
+					) : null}
 					<FamilyStrip g={2} at={0} until={COLL - 4} />
-					<StagePill from={OPCT - 2} to={AIG - 4} x={420} y={40} color={LPI.blue}>
+					<StagePill from={OPCT - 2} to={DECH - 8} x={30} y={10} color={LPI.blue}>
 						OPCT = objets piquants, coupants, tranchants
 					</StagePill>
-					<StagePill from={AIG} to={JAMAIS - 2} x={420} y={40}>
-						l'aiguille y va tout de suite
+					<StagePill from={COLL} x={60} y={472}>
+						collecteur à OPCT
 					</StagePill>
-					<StagePill from={RISQ - 2} x={420} y={40} color={LPI.blue}>
-						DASRI : déchets à risque infectieux
+					<StagePill from={SAC - 2} x={600} y={472}>
+						sac DASRI
+					</StagePill>
+					<StagePill from={RISQ - 2} x={30} y={10} color={LPI.blue}>
+						DASRI = déchets à risque infectieux
 					</StagePill>
 				</Stage>
-				{frame >= JAMAIS - 2 && frame < DECH - 6 ? (
-					<div style={{position: 'absolute', left: 300, top: 560, transform: `scale(${popAt(frame, JAMAIS - 2)}) rotate(-12deg)`, opacity: 1 - fadeIn(frame, DECH - 12, 6)}}>
-						<VacuNeedle size={420} cap={1} />
-						<div style={{position: 'absolute', left: -20, top: 40}}>
-							<Strike at={RECAP} width={460} rot={-6} />
-						</div>
-					</div>
-				) : null}
-				<Stamp at={RECAP} x={540} y={820} text="Jamais recapuchonner !" size={56} rot={-6} out={DECH - 8} />
 				<Checklist
 					rows={[
-						{at: COLL, icon: <SharpsBox size={52} />, label: 'Collecteur à OPCT', sub: 'piquants · coupants · tranchants'},
+						{
+							at: COLL,
+							icon: <SharpsBox size={52} />,
+							label: 'Collecteur à OPCT',
+							sub: 'piquants · coupants · tranchants',
+						},
 						{at: SAC, icon: <DasriBag size={52} />, label: 'Sac DASRI', sub: 'déchets à risque infectieux'},
 					]}
 				/>
-				<Burst at={RECAP} x={540} y={820} r={300} n={14} />
 			</Camera>
 			<Sfx name="pop" at={COLL} volume={0.09} />
 			{[PIQ, COUP, TRANCH].map((t) => (
-				<Sfx key={t} name="pop" at={t} volume={0.07} />
+				<Sfx key={t} name="pop" at={t - 2} volume={0.07} />
 			))}
-			<Sfx name="whoosh" at={AIG + 4} volume={0.06} />
-			<Sfx name="impact" at={AIG + 22} volume={0.07} />
-			<Sfx name="stamp" at={RECAP} volume={0.11} />
+			<Sfx name="whoosh" at={AIG - 2} volume={0.07} />
+			{landed.map((t) => (
+				<Sfx key={t} name="impact" at={t} volume={0.06} />
+			))}
+			<Sfx name="whoosh" at={JAMAIS - 4} volume={0.05} />
+			<Sfx name="buzz" at={RECAP} volume={0.06} dur={14} />
+			<Sfx name="stamp" at={RECAP} volume={0.1} />
+			<Sfx name="pop" at={DECH - 2} volume={0.08} />
+			<Sfx name="pop" at={SOUIL - 2} volume={0.08} />
+			<Sfx name="whoosh" at={VONT - 2} volume={0.06} />
 			<Sfx name="pop" at={SAC} volume={0.09} />
-			<Sfx name="impact" at={SAC + 26} volume={0.06} />
 		</AbsoluteFill>
 	);
 };

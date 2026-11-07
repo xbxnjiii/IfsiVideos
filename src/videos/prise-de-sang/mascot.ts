@@ -63,6 +63,7 @@ export const MASCOT: Beat[] = [
 	{at: abs('dechets', 'important'), via: 'pop', key: 'gestes/important', ...R},
 	{at: abs('dechets', "l'aiguille"), key: 'gestes/regardez', ...R},
 	{at: abs('dechets', 'jamais'), key: 'gestes/erreur', fx: 'shake', ...R},
+	{at: abs('dechets', 'autres'), key: 'gestes/montre-haut', ...R},
 	{at: abs('dechets', 'sac'), key: 'gestes/presente', ...R},
 	// sortie à gauche avec le panoramique
 	{at: start('outro') - 1, dur: 12, key: 'gestes/presente', x: -420, y: 1500, size: 230},

@@ -275,7 +275,7 @@ normotension ni normoxie) ; température, glycémie et diurèse gardent apyréti
 | Fréquence cardiaque | normale 60 – 100 bpm | bradycardie < 60 · tachycardie ≥ 100 · arythmie = rythme irrégulier |
 | Fréquence respiratoire | normale 12 – 20 cycles/min | tachypnée > 20 · bradypnée < 12 · dyspnée = difficulté à respirer |
 | Pression artérielle | normale ≈ 120/80 mmHg | hypotension < 90/60 · hypertension (HTA) > 140/90 |
-| SpO₂ | normale > 95 à 100 % | cible BPCO 88 – 95 % (vidéo SpO₂ ; la vidéo BPCO dit 88 – 92 %) · hypoxémie < 90 % (désaturation < 95 %) |
+| SpO₂ | normale > 95 à 100 % | cible BPCO 88 – 95 % (vidéos SpO₂ et BPCO) · hypoxémie < 90 % (désaturation < 95 %) |
 | Glycémie | normoglycémie 0,70 – 1,10 g/l | hyperglycémie > 1,10 · hypoglycémie < 0,70 |
 | Diurèse | normodiurèse 600 – 2000 ml/24 h | oligurie < 400 · anurie < 100 · polyurie > 2500 à 3000 ml/24 h |
 

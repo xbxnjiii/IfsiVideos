@@ -1,4 +1,4 @@
-// Matériel de soins (prise de sang) : aiguille Vacutainer (2 pointes, manchon), corps de prélèvement (porte-tube),
+// Matériel de soins (prise de sang) : aiguille Vacutainer (2 pointes, manchon), corps de pompe (porte-tube),
 // unité à ailettes (épicrânienne), tube sous vide (bouchon coloré, sang qui monte), solution hydroalcoolique, main
 // (nue ou gantée), flacon d'antiseptique, compresse (stérile : sachet), pansement, collecteur à OPCT, sac DASRI, et
 // le bras (veine, garrot, point de ponction, désinfection, compresse qui appuie, aiguille, pansement).
@@ -41,7 +41,7 @@ export const VacuNeedle: React.FC<{size?: number; cap?: number; glowVein?: numbe
 		</>,
 	);
 
-/** Corps de prélèvement / porte-tube (300 × 140) : cylindre transparent, collerette à gauche, embout vissé à droite. */
+/** Corps de pompe / porte-tube (300 × 140) : cylindre transparent, collerette à gauche, embout vissé à droite. */
 export const Holder: React.FC<{size?: number}> = ({size = 300}) =>
 	svg(
 		size,

@@ -295,6 +295,10 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   (gantée ou non), `AntisepticBottle`, `Gauze` (stérile : sachet), `Plaster`, `TourniquetStrap`, `SharpsBox` (aiguille
   qui tombe dedans), `DasriBag`, `Arm` (veine qui gonfle, garrot au-dessus du point de ponction, désinfection, aiguille,
   compresse, pansement). Couleurs : bouchons et collecteur aux couleurs de la marque (pas de jaune ni de violet).
+- Vocabulaire (demandé) : **corps de pompe** (= le porte-tube), jamais « corps de prélèvement ». Déchets (refaits à la
+  demande : barre mal placée, sac DASRI caché par les objets) : deux colonnes collecteur à OPCT / sac DASRI, cartes P · C · T
+  qui volent dans la fente, panneau d'interdiction centré sur le capuchon (pas de barre), objets dessinés **avant** le sac
+  et qui tombent depuis le haut du socle (jamais par-dessus le sac ni sous une pastille).
 
 ## Format « histoire » (mystérieux, essai `AVC-Histoire`, `src/videos/avc-histoire/`)
 
