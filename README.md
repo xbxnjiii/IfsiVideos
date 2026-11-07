@@ -35,7 +35,8 @@ pas de logiciel de montage, pas de banque d'images.
 | 23 | L'insuffisance cardiaque (pathologie) | `Insuffisance-Cardiaque` | [voix/23-insuffisance-cardiaque.script.json](voix/23-insuffisance-cardiaque.script.json) | [storyboard](docs/lpi/storyboard-insuffisance-cardiaque.md) |
 | 24 | La douleur 1/2 : l'auto-évaluation (série) | `Douleur-1` | [voix/24-douleur-1.script.json](voix/24-douleur-1.script.json) | [storyboard](docs/lpi/storyboard-douleur-serie.md) |
 | 25 | La douleur 2/2 : l'hétéro-évaluation (série) | `Douleur-2` | [voix/25-douleur-2.script.json](voix/25-douleur-2.script.json) | [storyboard](docs/lpi/storyboard-douleur-serie.md) |
-| 26 | Le diabète (pathologie, accroche « paradoxe ») | `Diabete` | [voix/26-diabete.script.json](voix/26-diabete.script.json) | [storyboard](docs/lpi/storyboard-diabete.md) |
+| 26 | Le diabète 1/2 : les 3 types (série, accroche « paradoxe ») | `Diabete-1` | [voix/26-diabete-1.script.json](voix/26-diabete-1.script.json) | [storyboard](docs/lpi/storyboard-diabete-serie.md) |
+| 26 | Le diabète 2/2 : le découvrir et le soigner (série) | `Diabete-2` | [voix/26-diabete-2.script.json](voix/26-diabete-2.script.json) | [storyboard](docs/lpi/storyboard-diabete-serie.md) |
 | 27 | Promo : quiz éclair + les 7 vidéos des constantes → quiz gratuit lapetiteide.fr | `Quiz-Constantes` | [voix/27-quiz-constantes.script.json](voix/27-quiz-constantes.script.json) | [storyboard](docs/lpi/storyboard-quiz-constantes.md) |
 
 ## Utilisation

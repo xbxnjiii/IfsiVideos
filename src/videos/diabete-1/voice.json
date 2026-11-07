@@ -1,0 +1,1478 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 100.208,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.06,
+   "end": 11.492
+  },
+  {
+   "id": "serie",
+   "start": 12.482,
+   "end": 17.732
+  },
+  {
+   "id": "def",
+   "start": 18.67,
+   "end": 28.683
+  },
+  {
+   "id": "type1",
+   "start": 29.398,
+   "end": 45.724
+  },
+  {
+   "id": "type2",
+   "start": 46.55,
+   "end": 63.288
+  },
+  {
+   "id": "gesta",
+   "start": 64.123,
+   "end": 84.285
+  },
+  {
+   "id": "outro",
+   "start": 85.09,
+   "end": 99.853
+  }
+ ],
+ "words": [
+  {
+   "text": "Son",
+   "start": 0.06,
+   "end": 0.252
+  },
+  {
+   "text": "sang",
+   "start": 0.252,
+   "end": 0.433
+  },
+  {
+   "text": "est",
+   "start": 0.433,
+   "end": 0.493
+  },
+  {
+   "text": "rempli",
+   "start": 0.493,
+   "end": 0.769
+  },
+  {
+   "text": "de",
+   "start": 0.769,
+   "end": 0.889
+  },
+  {
+   "text": "sucre…",
+   "start": 0.889,
+   "end": 1.25
+  },
+  {
+   "text": "et",
+   "start": 1.478,
+   "end": 1.514
+  },
+  {
+   "text": "pourtant,",
+   "start": 1.514,
+   "end": 1.983
+  },
+  {
+   "text": "ses",
+   "start": 2.26,
+   "end": 2.38
+  },
+  {
+   "text": "cellules",
+   "start": 2.38,
+   "end": 2.716
+  },
+  {
+   "text": "meurent",
+   "start": 2.716,
+   "end": 2.897
+  },
+  {
+   "text": "de",
+   "start": 2.897,
+   "end": 3.005
+  },
+  {
+   "text": "faim.",
+   "start": 3.005,
+   "end": 3.329
+  },
+  {
+   "text": "Le",
+   "start": 3.666,
+   "end": 3.822
+  },
+  {
+   "text": "sucre",
+   "start": 3.822,
+   "end": 4.111
+  },
+  {
+   "text": "est",
+   "start": 4.111,
+   "end": 4.159
+  },
+  {
+   "text": "là,",
+   "start": 4.159,
+   "end": 4.351
+  },
+  {
+   "text": "juste",
+   "start": 4.639,
+   "end": 4.892
+  },
+  {
+   "text": "devant",
+   "start": 4.892,
+   "end": 5.084
+  },
+  {
+   "text": "la",
+   "start": 5.084,
+   "end": 5.18
+  },
+  {
+   "text": "porte…",
+   "start": 5.18,
+   "end": 5.565
+  },
+  {
+   "text": "mais",
+   "start": 5.865,
+   "end": 5.925
+  },
+  {
+   "text": "impossible",
+   "start": 5.926,
+   "end": 6.418
+  },
+  {
+   "text": "d'entrer.",
+   "start": 6.418,
+   "end": 6.887
+  },
+  {
+   "text": "Il",
+   "start": 7.213,
+   "end": 7.406
+  },
+  {
+   "text": "lui",
+   "start": 7.406,
+   "end": 7.514
+  },
+  {
+   "text": "manque",
+   "start": 7.514,
+   "end": 7.706
+  },
+  {
+   "text": "une",
+   "start": 7.706,
+   "end": 7.838
+  },
+  {
+   "text": "clé :",
+   "start": 7.838,
+   "end": 8.163
+  },
+  {
+   "text": "l'insuline.",
+   "start": 8.512,
+   "end": 9.221
+  },
+  {
+   "text": "Et",
+   "start": 9.557,
+   "end": 9.713
+  },
+  {
+   "text": "cette",
+   "start": 9.713,
+   "end": 9.906
+  },
+  {
+   "text": "maladie,",
+   "start": 9.906,
+   "end": 10.411
+  },
+  {
+   "text": "c'est",
+   "start": 10.675,
+   "end": 10.795
+  },
+  {
+   "text": "le",
+   "start": 10.795,
+   "end": 10.879
+  },
+  {
+   "text": "diabète.",
+   "start": 10.879,
+   "end": 11.492
+  },
+  {
+   "text": "Nous",
+   "start": 12.482,
+   "end": 12.607
+  },
+  {
+   "text": "voilà",
+   "start": 12.607,
+   "end": 12.87
+  },
+  {
+   "text": "dans",
+   "start": 12.87,
+   "end": 12.957
+  },
+  {
+   "text": "la",
+   "start": 12.957,
+   "end": 13.044
+  },
+  {
+   "text": "partie",
+   "start": 13.044,
+   "end": 13.432
+  },
+  {
+   "text": "un",
+   "start": 13.432,
+   "end": 13.507
+  },
+  {
+   "text": "de",
+   "start": 13.507,
+   "end": 13.595
+  },
+  {
+   "text": "notre",
+   "start": 13.595,
+   "end": 13.882
+  },
+  {
+   "text": "série",
+   "start": 13.882,
+   "end": 14.269
+  },
+  {
+   "text": "sur",
+   "start": 14.269,
+   "end": 14.432
+  },
+  {
+   "text": "le",
+   "start": 14.432,
+   "end": 14.52
+  },
+  {
+   "text": "diabète !",
+   "start": 14.52,
+   "end": 15.157
+  },
+  {
+   "text": "Aujourd'hui :",
+   "start": 15.494,
+   "end": 16.119
+  },
+  {
+   "text": "les",
+   "start": 16.494,
+   "end": 16.557
+  },
+  {
+   "text": "trois",
+   "start": 16.557,
+   "end": 16.757
+  },
+  {
+   "text": "types",
+   "start": 16.757,
+   "end": 16.994
+  },
+  {
+   "text": "de",
+   "start": 16.994,
+   "end": 17.095
+  },
+  {
+   "text": "diabète.",
+   "start": 17.095,
+   "end": 17.732
+  },
+  {
+   "text": "Comme",
+   "start": 18.67,
+   "end": 18.858
+  },
+  {
+   "text": "on",
+   "start": 18.858,
+   "end": 18.895
+  },
+  {
+   "text": "l'a",
+   "start": 18.895,
+   "end": 19.008
+  },
+  {
+   "text": "vu",
+   "start": 19.008,
+   "end": 19.145
+  },
+  {
+   "text": "dans",
+   "start": 19.145,
+   "end": 19.245
+  },
+  {
+   "text": "la",
+   "start": 19.245,
+   "end": 19.332
+  },
+  {
+   "text": "vidéo",
+   "start": 19.332,
+   "end": 19.683
+  },
+  {
+   "text": "sur",
+   "start": 19.683,
+   "end": 19.82
+  },
+  {
+   "text": "la",
+   "start": 19.82,
+   "end": 19.908
+  },
+  {
+   "text": "glycémie,",
+   "start": 19.908,
+   "end": 20.457
+  },
+  {
+   "text": "le",
+   "start": 20.858,
+   "end": 20.945
+  },
+  {
+   "text": "sucre",
+   "start": 20.945,
+   "end": 21.283
+  },
+  {
+   "text": "est",
+   "start": 21.283,
+   "end": 21.308
+  },
+  {
+   "text": "le",
+   "start": 21.308,
+   "end": 21.383
+  },
+  {
+   "text": "carburant",
+   "start": 21.383,
+   "end": 21.845
+  },
+  {
+   "text": "de",
+   "start": 21.845,
+   "end": 21.933
+  },
+  {
+   "text": "nos",
+   "start": 21.933,
+   "end": 22.045
+  },
+  {
+   "text": "cellules.",
+   "start": 22.045,
+   "end": 22.595
+  },
+  {
+   "text": "Pour",
+   "start": 22.933,
+   "end": 23.108
+  },
+  {
+   "text": "entrer,",
+   "start": 23.108,
+   "end": 23.532
+  },
+  {
+   "text": "il",
+   "start": 23.87,
+   "end": 23.958
+  },
+  {
+   "text": "lui",
+   "start": 23.958,
+   "end": 24.083
+  },
+  {
+   "text": "faut",
+   "start": 24.083,
+   "end": 24.233
+  },
+  {
+   "text": "une",
+   "start": 24.233,
+   "end": 24.37
+  },
+  {
+   "text": "clé :",
+   "start": 24.37,
+   "end": 24.695
+  },
+  {
+   "text": "l'insuline.",
+   "start": 25.008,
+   "end": 25.733
+  },
+  {
+   "text": "Et",
+   "start": 26.07,
+   "end": 26.245
+  },
+  {
+   "text": "cette",
+   "start": 26.245,
+   "end": 26.458
+  },
+  {
+   "text": "clé,",
+   "start": 26.458,
+   "end": 26.77
+  },
+  {
+   "text": "c'est",
+   "start": 27.133,
+   "end": 27.245
+  },
+  {
+   "text": "le",
+   "start": 27.245,
+   "end": 27.333
+  },
+  {
+   "text": "pancréas",
+   "start": 27.333,
+   "end": 27.87
+  },
+  {
+   "text": "qui",
+   "start": 27.87,
+   "end": 27.97
+  },
+  {
+   "text": "la",
+   "start": 27.97,
+   "end": 28.07
+  },
+  {
+   "text": "fabrique.",
+   "start": 28.07,
+   "end": 28.683
+  },
+  {
+   "text": "Premier",
+   "start": 29.398,
+   "end": 29.698
+  },
+  {
+   "text": "type :",
+   "start": 29.698,
+   "end": 30.048
+  },
+  {
+   "text": "le",
+   "start": 30.373,
+   "end": 30.448
+  },
+  {
+   "text": "diabète",
+   "start": 30.448,
+   "end": 30.923
+  },
+  {
+   "text": "de",
+   "start": 30.923,
+   "end": 31.023
+  },
+  {
+   "text": "type",
+   "start": 31.023,
+   "end": 31.261
+  },
+  {
+   "text": "un.",
+   "start": 31.261,
+   "end": 31.498
+  },
+  {
+   "text": "Les",
+   "start": 31.873,
+   "end": 31.998
+  },
+  {
+   "text": "défenses",
+   "start": 31.998,
+   "end": 32.323
+  },
+  {
+   "text": "du",
+   "start": 32.323,
+   "end": 32.436
+  },
+  {
+   "text": "corps",
+   "start": 32.436,
+   "end": 32.711
+  },
+  {
+   "text": "attaquent",
+   "start": 32.711,
+   "end": 32.986
+  },
+  {
+   "text": "le",
+   "start": 32.986,
+   "end": 33.073
+  },
+  {
+   "text": "pancréas,",
+   "start": 33.073,
+   "end": 33.798
+  },
+  {
+   "text": "qui",
+   "start": 34.023,
+   "end": 34.123
+  },
+  {
+   "text": "ne",
+   "start": 34.123,
+   "end": 34.211
+  },
+  {
+   "text": "fabrique",
+   "start": 34.211,
+   "end": 34.561
+  },
+  {
+   "text": "plus",
+   "start": 34.561,
+   "end": 34.711
+  },
+  {
+   "text": "d'insuline :",
+   "start": 34.711,
+   "end": 35.311
+  },
+  {
+   "text": "la",
+   "start": 35.611,
+   "end": 35.686
+  },
+  {
+   "text": "clé",
+   "start": 35.686,
+   "end": 35.873
+  },
+  {
+   "text": "manque.",
+   "start": 35.873,
+   "end": 36.311
+  },
+  {
+   "text": "On",
+   "start": 36.686,
+   "end": 36.761
+  },
+  {
+   "text": "l'appelle",
+   "start": 36.761,
+   "end": 37.048
+  },
+  {
+   "text": "aussi",
+   "start": 37.048,
+   "end": 37.286
+  },
+  {
+   "text": "le",
+   "start": 37.286,
+   "end": 37.386
+  },
+  {
+   "text": "diabète",
+   "start": 37.386,
+   "end": 37.798
+  },
+  {
+   "text": "insulinodépendant :",
+   "start": 37.798,
+   "end": 38.823
+  },
+  {
+   "text": "sans",
+   "start": 39.186,
+   "end": 39.349
+  },
+  {
+   "text": "insuline,",
+   "start": 39.349,
+   "end": 39.936
+  },
+  {
+   "text": "le",
+   "start": 40.261,
+   "end": 40.323
+  },
+  {
+   "text": "patient",
+   "start": 40.323,
+   "end": 40.648
+  },
+  {
+   "text": "ne",
+   "start": 40.648,
+   "end": 40.711
+  },
+  {
+   "text": "peut",
+   "start": 40.711,
+   "end": 40.811
+  },
+  {
+   "text": "pas",
+   "start": 40.811,
+   "end": 40.911
+  },
+  {
+   "text": "vivre.",
+   "start": 40.911,
+   "end": 41.373
+  },
+  {
+   "text": "Il",
+   "start": 41.711,
+   "end": 41.911
+  },
+  {
+   "text": "touche",
+   "start": 41.911,
+   "end": 42.148
+  },
+  {
+   "text": "surtout",
+   "start": 42.148,
+   "end": 42.398
+  },
+  {
+   "text": "les",
+   "start": 42.398,
+   "end": 42.511
+  },
+  {
+   "text": "enfants",
+   "start": 42.511,
+   "end": 42.823
+  },
+  {
+   "text": "et",
+   "start": 42.823,
+   "end": 42.886
+  },
+  {
+   "text": "les",
+   "start": 42.886,
+   "end": 43.023
+  },
+  {
+   "text": "jeunes,",
+   "start": 43.023,
+   "end": 43.336
+  },
+  {
+   "text": "et",
+   "start": 43.686,
+   "end": 43.711
+  },
+  {
+   "text": "il",
+   "start": 43.711,
+   "end": 43.811
+  },
+  {
+   "text": "se",
+   "start": 43.811,
+   "end": 43.936
+  },
+  {
+   "text": "soigne",
+   "start": 43.936,
+   "end": 44.211
+  },
+  {
+   "text": "par",
+   "start": 44.211,
+   "end": 44.373
+  },
+  {
+   "text": "l'insuline,",
+   "start": 44.373,
+   "end": 44.936
+  },
+  {
+   "text": "toute",
+   "start": 45.136,
+   "end": 45.298
+  },
+  {
+   "text": "sa",
+   "start": 45.298,
+   "end": 45.436
+  },
+  {
+   "text": "vie.",
+   "start": 45.436,
+   "end": 45.724
+  },
+  {
+   "text": "Deuxième",
+   "start": 46.55,
+   "end": 46.95
+  },
+  {
+   "text": "type,",
+   "start": 46.95,
+   "end": 47.288
+  },
+  {
+   "text": "le",
+   "start": 47.526,
+   "end": 47.575
+  },
+  {
+   "text": "plus",
+   "start": 47.575,
+   "end": 47.7
+  },
+  {
+   "text": "fréquent :",
+   "start": 47.7,
+   "end": 48.188
+  },
+  {
+   "text": "le",
+   "start": 48.538,
+   "end": 48.613
+  },
+  {
+   "text": "diabète",
+   "start": 48.613,
+   "end": 49.088
+  },
+  {
+   "text": "de",
+   "start": 49.088,
+   "end": 49.188
+  },
+  {
+   "text": "type",
+   "start": 49.188,
+   "end": 49.425
+  },
+  {
+   "text": "deux.",
+   "start": 49.425,
+   "end": 49.713
+  },
+  {
+   "text": "Ici,",
+   "start": 50.063,
+   "end": 50.513
+  },
+  {
+   "text": "le",
+   "start": 50.813,
+   "end": 50.876
+  },
+  {
+   "text": "pancréas",
+   "start": 50.876,
+   "end": 51.376
+  },
+  {
+   "text": "fabrique",
+   "start": 51.376,
+   "end": 51.7
+  },
+  {
+   "text": "encore",
+   "start": 51.7,
+   "end": 51.938
+  },
+  {
+   "text": "de",
+   "start": 51.938,
+   "end": 52.013
+  },
+  {
+   "text": "l'insuline…",
+   "start": 52.013,
+   "end": 52.6
+  },
+  {
+   "text": "mais",
+   "start": 53.038,
+   "end": 53.113
+  },
+  {
+   "text": "la",
+   "start": 53.113,
+   "end": 53.2
+  },
+  {
+   "text": "clé",
+   "start": 53.2,
+   "end": 53.388
+  },
+  {
+   "text": "marche",
+   "start": 53.388,
+   "end": 53.663
+  },
+  {
+   "text": "mal.",
+   "start": 53.663,
+   "end": 54.1
+  },
+  {
+   "text": "On",
+   "start": 54.45,
+   "end": 54.538
+  },
+  {
+   "text": "l'appelle",
+   "start": 54.538,
+   "end": 54.838
+  },
+  {
+   "text": "le",
+   "start": 54.838,
+   "end": 54.938
+  },
+  {
+   "text": "diabète",
+   "start": 54.938,
+   "end": 55.401
+  },
+  {
+   "text": "non",
+   "start": 55.401,
+   "end": 55.575
+  },
+  {
+   "text": "insulinodépendant :",
+   "start": 55.575,
+   "end": 56.675
+  },
+  {
+   "text": "au",
+   "start": 57.063,
+   "end": 57.113
+  },
+  {
+   "text": "début,",
+   "start": 57.113,
+   "end": 57.501
+  },
+  {
+   "text": "on",
+   "start": 57.825,
+   "end": 57.863
+  },
+  {
+   "text": "peut",
+   "start": 57.863,
+   "end": 57.988
+  },
+  {
+   "text": "se",
+   "start": 57.988,
+   "end": 58.1
+  },
+  {
+   "text": "passer",
+   "start": 58.1,
+   "end": 58.376
+  },
+  {
+   "text": "d'insuline.",
+   "start": 58.376,
+   "end": 59.05
+  },
+  {
+   "text": "Il",
+   "start": 59.388,
+   "end": 59.588
+  },
+  {
+   "text": "touche",
+   "start": 59.588,
+   "end": 59.825
+  },
+  {
+   "text": "surtout",
+   "start": 59.825,
+   "end": 60.063
+  },
+  {
+   "text": "les",
+   "start": 60.063,
+   "end": 60.163
+  },
+  {
+   "text": "adultes,",
+   "start": 60.163,
+   "end": 60.688
+  },
+  {
+   "text": "souvent",
+   "start": 60.95,
+   "end": 61.263
+  },
+  {
+   "text": "avec",
+   "start": 61.263,
+   "end": 61.413
+  },
+  {
+   "text": "du",
+   "start": 61.413,
+   "end": 61.513
+  },
+  {
+   "text": "surpoids",
+   "start": 61.513,
+   "end": 62.026
+  },
+  {
+   "text": "et",
+   "start": 62.026,
+   "end": 62.126
+  },
+  {
+   "text": "peu",
+   "start": 62.126,
+   "end": 62.251
+  },
+  {
+   "text": "d'activité",
+   "start": 62.251,
+   "end": 62.725
+  },
+  {
+   "text": "physique.",
+   "start": 62.725,
+   "end": 63.288
+  },
+  {
+   "text": "Troisième",
+   "start": 64.123,
+   "end": 64.548
+  },
+  {
+   "text": "type :",
+   "start": 64.548,
+   "end": 64.936
+  },
+  {
+   "text": "le",
+   "start": 65.248,
+   "end": 65.348
+  },
+  {
+   "text": "diabète",
+   "start": 65.348,
+   "end": 65.823
+  },
+  {
+   "text": "gestationnel.",
+   "start": 65.823,
+   "end": 66.773
+  },
+  {
+   "text": "Il",
+   "start": 67.123,
+   "end": 67.323
+  },
+  {
+   "text": "apparaît",
+   "start": 67.323,
+   "end": 67.611
+  },
+  {
+   "text": "pendant",
+   "start": 67.611,
+   "end": 67.835
+  },
+  {
+   "text": "la",
+   "start": 67.835,
+   "end": 67.923
+  },
+  {
+   "text": "grossesse :",
+   "start": 67.923,
+   "end": 68.561
+  },
+  {
+   "text": "les",
+   "start": 68.848,
+   "end": 68.936
+  },
+  {
+   "text": "hormones",
+   "start": 68.936,
+   "end": 69.261
+  },
+  {
+   "text": "du",
+   "start": 69.261,
+   "end": 69.323
+  },
+  {
+   "text": "placenta",
+   "start": 69.323,
+   "end": 69.898
+  },
+  {
+   "text": "empêchent",
+   "start": 69.898,
+   "end": 70.285
+  },
+  {
+   "text": "l'insuline",
+   "start": 70.285,
+   "end": 70.798
+  },
+  {
+   "text": "de",
+   "start": 70.798,
+   "end": 70.886
+  },
+  {
+   "text": "bien",
+   "start": 70.886,
+   "end": 71.061
+  },
+  {
+   "text": "marcher.",
+   "start": 71.061,
+   "end": 71.561
+  },
+  {
+   "text": "On",
+   "start": 71.898,
+   "end": 72.048
+  },
+  {
+   "text": "le",
+   "start": 72.048,
+   "end": 72.148
+  },
+  {
+   "text": "recherche",
+   "start": 72.148,
+   "end": 72.535
+  },
+  {
+   "text": "entre",
+   "start": 72.535,
+   "end": 72.736
+  },
+  {
+   "text": "la",
+   "start": 72.736,
+   "end": 72.823
+  },
+  {
+   "text": "vingt-quatrième",
+   "start": 72.823,
+   "end": 73.436
+  },
+  {
+   "text": "et",
+   "start": 73.436,
+   "end": 73.46
+  },
+  {
+   "text": "la",
+   "start": 73.46,
+   "end": 73.548
+  },
+  {
+   "text": "vingt-huitième",
+   "start": 73.548,
+   "end": 73.998
+  },
+  {
+   "text": "semaine,",
+   "start": 73.998,
+   "end": 74.423
+  },
+  {
+   "text": "avec",
+   "start": 74.798,
+   "end": 74.986
+  },
+  {
+   "text": "une",
+   "start": 74.986,
+   "end": 75.061
+  },
+  {
+   "text": "prise",
+   "start": 75.061,
+   "end": 75.261
+  },
+  {
+   "text": "de",
+   "start": 75.261,
+   "end": 75.398
+  },
+  {
+   "text": "sang",
+   "start": 75.398,
+   "end": 75.673
+  },
+  {
+   "text": "après",
+   "start": 75.673,
+   "end": 75.936
+  },
+  {
+   "text": "une",
+   "start": 75.936,
+   "end": 75.998
+  },
+  {
+   "text": "boisson",
+   "start": 75.998,
+   "end": 76.298
+  },
+  {
+   "text": "sucrée.",
+   "start": 76.298,
+   "end": 76.835
+  },
+  {
+   "text": "Le",
+   "start": 77.186,
+   "end": 77.386
+  },
+  {
+   "text": "risque :",
+   "start": 77.386,
+   "end": 77.811
+  },
+  {
+   "text": "un",
+   "start": 78.098,
+   "end": 78.16
+  },
+  {
+   "text": "bébé",
+   "start": 78.16,
+   "end": 78.386
+  },
+  {
+   "text": "trop",
+   "start": 78.386,
+   "end": 78.573
+  },
+  {
+   "text": "gros.",
+   "start": 78.573,
+   "end": 78.936
+  },
+  {
+   "text": "En",
+   "start": 79.273,
+   "end": 79.386
+  },
+  {
+   "text": "général,",
+   "start": 79.386,
+   "end": 79.91
+  },
+  {
+   "text": "il",
+   "start": 80.248,
+   "end": 80.311
+  },
+  {
+   "text": "disparaît",
+   "start": 80.311,
+   "end": 80.71
+  },
+  {
+   "text": "après",
+   "start": 80.71,
+   "end": 80.923
+  },
+  {
+   "text": "l'accouchement…",
+   "start": 80.923,
+   "end": 81.498
+  },
+  {
+   "text": "mais",
+   "start": 81.96,
+   "end": 82.023
+  },
+  {
+   "text": "la",
+   "start": 82.023,
+   "end": 82.098
+  },
+  {
+   "text": "maman",
+   "start": 82.098,
+   "end": 82.373
+  },
+  {
+   "text": "garde",
+   "start": 82.373,
+   "end": 82.623
+  },
+  {
+   "text": "un",
+   "start": 82.623,
+   "end": 82.698
+  },
+  {
+   "text": "risque",
+   "start": 82.698,
+   "end": 82.973
+  },
+  {
+   "text": "de",
+   "start": 82.973,
+   "end": 83.073
+  },
+  {
+   "text": "type",
+   "start": 83.073,
+   "end": 83.311
+  },
+  {
+   "text": "deux,",
+   "start": 83.311,
+   "end": 83.535
+  },
+  {
+   "text": "plus",
+   "start": 83.71,
+   "end": 83.861
+  },
+  {
+   "text": "tard.",
+   "start": 83.861,
+   "end": 84.285
+  },
+  {
+   "text": "Petit",
+   "start": 85.09,
+   "end": 85.403
+  },
+  {
+   "text": "récap !",
+   "start": 85.403,
+   "end": 85.978
+  },
+  {
+   "text": "Le",
+   "start": 86.365,
+   "end": 86.49
+  },
+  {
+   "text": "type",
+   "start": 86.49,
+   "end": 86.74
+  },
+  {
+   "text": "un,",
+   "start": 86.74,
+   "end": 86.978
+  },
+  {
+   "text": "insulinodépendant :",
+   "start": 87.315,
+   "end": 88.365
+  },
+  {
+   "text": "la",
+   "start": 88.778,
+   "end": 88.853
+  },
+  {
+   "text": "clé",
+   "start": 88.853,
+   "end": 89.04
+  },
+  {
+   "text": "manque.",
+   "start": 89.04,
+   "end": 89.515
+  },
+  {
+   "text": "Le",
+   "start": 89.903,
+   "end": 90.028
+  },
+  {
+   "text": "type",
+   "start": 90.028,
+   "end": 90.265
+  },
+  {
+   "text": "deux,",
+   "start": 90.265,
+   "end": 90.54
+  },
+  {
+   "text": "non",
+   "start": 90.903,
+   "end": 91.015
+  },
+  {
+   "text": "insulinodépendant :",
+   "start": 91.015,
+   "end": 92.04
+  },
+  {
+   "text": "elle",
+   "start": 92.415,
+   "end": 92.54
+  },
+  {
+   "text": "marche",
+   "start": 92.54,
+   "end": 92.828
+  },
+  {
+   "text": "mal.",
+   "start": 92.828,
+   "end": 93.265
+  },
+  {
+   "text": "Le",
+   "start": 93.665,
+   "end": 93.803
+  },
+  {
+   "text": "diabète",
+   "start": 93.803,
+   "end": 94.178
+  },
+  {
+   "text": "gestationnel :",
+   "start": 94.178,
+   "end": 95.028
+  },
+  {
+   "text": "pendant",
+   "start": 95.315,
+   "end": 95.515
+  },
+  {
+   "text": "la",
+   "start": 95.515,
+   "end": 95.603
+  },
+  {
+   "text": "grossesse.",
+   "start": 95.603,
+   "end": 96.303
+  },
+  {
+   "text": "Dans",
+   "start": 96.64,
+   "end": 96.803
+  },
+  {
+   "text": "la",
+   "start": 96.803,
+   "end": 96.89
+  },
+  {
+   "text": "partie",
+   "start": 96.89,
+   "end": 97.24
+  },
+  {
+   "text": "deux :",
+   "start": 97.24,
+   "end": 97.515
+  },
+  {
+   "text": "comment",
+   "start": 97.778,
+   "end": 98.015
+  },
+  {
+   "text": "on",
+   "start": 98.015,
+   "end": 98.065
+  },
+  {
+   "text": "le",
+   "start": 98.065,
+   "end": 98.153
+  },
+  {
+   "text": "découvre…",
+   "start": 98.153,
+   "end": 98.678
+  },
+  {
+   "text": "et",
+   "start": 98.915,
+   "end": 98.953
+  },
+  {
+   "text": "comment",
+   "start": 98.953,
+   "end": 99.215
+  },
+  {
+   "text": "on",
+   "start": 99.215,
+   "end": 99.265
+  },
+  {
+   "text": "le",
+   "start": 99.265,
+   "end": 99.365
+  },
+  {
+   "text": "soigne.",
+   "start": 99.365,
+   "end": 99.853
+  }
+ ]
+}

@@ -1,0 +1,1493 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 92.768,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.061,
+   "end": 12.464
+  },
+  {
+   "id": "serie",
+   "start": 13.43,
+   "end": 19.055
+  },
+  {
+   "id": "diag",
+   "start": 20.04,
+   "end": 33.065
+  },
+  {
+   "id": "compli",
+   "start": 33.904,
+   "end": 44.992
+  },
+  {
+   "id": "trait",
+   "start": 45.81,
+   "end": 61.085
+  },
+  {
+   "id": "role",
+   "start": 61.907,
+   "end": 73.469
+  },
+  {
+   "id": "outro",
+   "start": 74.17,
+   "end": 92.42
+  }
+ ],
+ "words": [
+  {
+   "text": "Il",
+   "start": 0.061,
+   "end": 0.194
+  },
+  {
+   "text": "n'a",
+   "start": 0.194,
+   "end": 0.291
+  },
+  {
+   "text": "jamais",
+   "start": 0.291,
+   "end": 0.534
+  },
+  {
+   "text": "soif,",
+   "start": 0.534,
+   "end": 1.007
+  },
+  {
+   "text": "il",
+   "start": 1.311,
+   "end": 1.359
+  },
+  {
+   "text": "n'est",
+   "start": 1.359,
+   "end": 1.444
+  },
+  {
+   "text": "jamais",
+   "start": 1.444,
+   "end": 1.723
+  },
+  {
+   "text": "fatigué…",
+   "start": 1.723,
+   "end": 2.294
+  },
+  {
+   "text": "il",
+   "start": 2.585,
+   "end": 2.682
+  },
+  {
+   "text": "se",
+   "start": 2.682,
+   "end": 2.803
+  },
+  {
+   "text": "sent",
+   "start": 2.803,
+   "end": 2.961
+  },
+  {
+   "text": "en",
+   "start": 2.961,
+   "end": 3.022
+  },
+  {
+   "text": "pleine",
+   "start": 3.022,
+   "end": 3.24
+  },
+  {
+   "text": "forme.",
+   "start": 3.24,
+   "end": 3.738
+  },
+  {
+   "text": "Et",
+   "start": 4.067,
+   "end": 4.2
+  },
+  {
+   "text": "pourtant,",
+   "start": 4.2,
+   "end": 4.673
+  },
+  {
+   "text": "depuis",
+   "start": 4.94,
+   "end": 5.147
+  },
+  {
+   "text": "des",
+   "start": 5.147,
+   "end": 5.244
+  },
+  {
+   "text": "années,",
+   "start": 5.244,
+   "end": 5.62
+  },
+  {
+   "text": "le",
+   "start": 5.911,
+   "end": 5.996
+  },
+  {
+   "text": "sucre",
+   "start": 5.996,
+   "end": 6.312
+  },
+  {
+   "text": "en",
+   "start": 6.312,
+   "end": 6.348
+  },
+  {
+   "text": "trop",
+   "start": 6.348,
+   "end": 6.554
+  },
+  {
+   "text": "abîme",
+   "start": 6.554,
+   "end": 6.809
+  },
+  {
+   "text": "ses",
+   "start": 6.809,
+   "end": 6.967
+  },
+  {
+   "text": "yeux,",
+   "start": 6.967,
+   "end": 7.258
+  },
+  {
+   "text": "ses",
+   "start": 7.537,
+   "end": 7.695
+  },
+  {
+   "text": "reins",
+   "start": 7.695,
+   "end": 7.865
+  },
+  {
+   "text": "et",
+   "start": 7.865,
+   "end": 7.914
+  },
+  {
+   "text": "ses",
+   "start": 7.914,
+   "end": 8.035
+  },
+  {
+   "text": "pieds.",
+   "start": 8.035,
+   "end": 8.423
+  },
+  {
+   "text": "Son",
+   "start": 8.762,
+   "end": 8.956
+  },
+  {
+   "text": "diabète",
+   "start": 8.956,
+   "end": 9.454
+  },
+  {
+   "text": "ne",
+   "start": 9.454,
+   "end": 9.587
+  },
+  {
+   "text": "fait",
+   "start": 9.587,
+   "end": 9.733
+  },
+  {
+   "text": "aucun",
+   "start": 9.733,
+   "end": 10.036
+  },
+  {
+   "text": "bruit…",
+   "start": 10.036,
+   "end": 10.4
+  },
+  {
+   "text": "Alors,",
+   "start": 10.777,
+   "end": 11.214
+  },
+  {
+   "text": "comment",
+   "start": 11.42,
+   "end": 11.65
+  },
+  {
+   "text": "le",
+   "start": 11.65,
+   "end": 11.723
+  },
+  {
+   "text": "repérer",
+   "start": 11.723,
+   "end": 12.099
+  },
+  {
+   "text": "à",
+   "start": 12.1,
+   "end": 12.172
+  },
+  {
+   "text": "temps ?",
+   "start": 12.172,
+   "end": 12.464
+  },
+  {
+   "text": "Nous",
+   "start": 13.43,
+   "end": 13.542
+  },
+  {
+   "text": "voilà",
+   "start": 13.542,
+   "end": 13.792
+  },
+  {
+   "text": "dans",
+   "start": 13.792,
+   "end": 13.88
+  },
+  {
+   "text": "la",
+   "start": 13.88,
+   "end": 13.967
+  },
+  {
+   "text": "partie",
+   "start": 13.967,
+   "end": 14.305
+  },
+  {
+   "text": "deux",
+   "start": 14.305,
+   "end": 14.455
+  },
+  {
+   "text": "de",
+   "start": 14.455,
+   "end": 14.542
+  },
+  {
+   "text": "notre",
+   "start": 14.542,
+   "end": 14.83
+  },
+  {
+   "text": "série",
+   "start": 14.83,
+   "end": 15.217
+  },
+  {
+   "text": "sur",
+   "start": 15.217,
+   "end": 15.38
+  },
+  {
+   "text": "le",
+   "start": 15.38,
+   "end": 15.467
+  },
+  {
+   "text": "diabète !",
+   "start": 15.467,
+   "end": 16.117
+  },
+  {
+   "text": "Aujourd'hui :",
+   "start": 16.467,
+   "end": 17.055
+  },
+  {
+   "text": "le",
+   "start": 17.442,
+   "end": 17.505
+  },
+  {
+   "text": "découvrir…",
+   "start": 17.505,
+   "end": 18.167
+  },
+  {
+   "text": "et",
+   "start": 18.454,
+   "end": 18.48
+  },
+  {
+   "text": "le",
+   "start": 18.48,
+   "end": 18.567
+  },
+  {
+   "text": "soigner.",
+   "start": 18.567,
+   "end": 19.055
+  },
+  {
+   "text": "Parfois,",
+   "start": 20.04,
+   "end": 20.515
+  },
+  {
+   "text": "il",
+   "start": 20.853,
+   "end": 20.915
+  },
+  {
+   "text": "donne",
+   "start": 20.915,
+   "end": 21.078
+  },
+  {
+   "text": "très",
+   "start": 21.078,
+   "end": 21.253
+  },
+  {
+   "text": "soif,",
+   "start": 21.253,
+   "end": 21.74
+  },
+  {
+   "text": "beaucoup",
+   "start": 21.928,
+   "end": 22.152
+  },
+  {
+   "text": "d'urines",
+   "start": 22.152,
+   "end": 22.54
+  },
+  {
+   "text": "et",
+   "start": 22.54,
+   "end": 22.565
+  },
+  {
+   "text": "une",
+   "start": 22.565,
+   "end": 22.652
+  },
+  {
+   "text": "grande",
+   "start": 22.652,
+   "end": 22.865
+  },
+  {
+   "text": "fatigue.",
+   "start": 22.865,
+   "end": 23.465
+  },
+  {
+   "text": "Mais",
+   "start": 23.803,
+   "end": 23.977
+  },
+  {
+   "text": "le",
+   "start": 23.977,
+   "end": 24.065
+  },
+  {
+   "text": "type",
+   "start": 24.065,
+   "end": 24.29
+  },
+  {
+   "text": "deux",
+   "start": 24.29,
+   "end": 24.49
+  },
+  {
+   "text": "est",
+   "start": 24.49,
+   "end": 24.59
+  },
+  {
+   "text": "souvent",
+   "start": 24.59,
+   "end": 24.878
+  },
+  {
+   "text": "silencieux :",
+   "start": 24.878,
+   "end": 25.503
+  },
+  {
+   "text": "c'est",
+   "start": 25.94,
+   "end": 26.053
+  },
+  {
+   "text": "la",
+   "start": 26.053,
+   "end": 26.128
+  },
+  {
+   "text": "prise",
+   "start": 26.128,
+   "end": 26.352
+  },
+  {
+   "text": "de",
+   "start": 26.352,
+   "end": 26.477
+  },
+  {
+   "text": "sang",
+   "start": 26.477,
+   "end": 26.653
+  },
+  {
+   "text": "qui",
+   "start": 26.653,
+   "end": 26.778
+  },
+  {
+   "text": "le",
+   "start": 26.778,
+   "end": 26.84
+  },
+  {
+   "text": "révèle.",
+   "start": 26.84,
+   "end": 27.365
+  },
+  {
+   "text": "On",
+   "start": 27.74,
+   "end": 27.84
+  },
+  {
+   "text": "parle",
+   "start": 27.84,
+   "end": 28.09
+  },
+  {
+   "text": "de",
+   "start": 28.09,
+   "end": 28.19
+  },
+  {
+   "text": "diabète",
+   "start": 28.19,
+   "end": 28.64
+  },
+  {
+   "text": "quand,",
+   "start": 28.64,
+   "end": 28.928
+  },
+  {
+   "text": "à",
+   "start": 29.227,
+   "end": 29.328
+  },
+  {
+   "text": "jeun,",
+   "start": 29.328,
+   "end": 29.727
+  },
+  {
+   "text": "la",
+   "start": 29.99,
+   "end": 30.053
+  },
+  {
+   "text": "glycémie",
+   "start": 30.053,
+   "end": 30.503
+  },
+  {
+   "text": "atteint",
+   "start": 30.503,
+   "end": 30.74
+  },
+  {
+   "text": "un",
+   "start": 30.74,
+   "end": 30.79
+  },
+  {
+   "text": "gramme",
+   "start": 30.79,
+   "end": 31.04
+  },
+  {
+   "text": "vingt-six",
+   "start": 31.04,
+   "end": 31.403
+  },
+  {
+   "text": "par",
+   "start": 31.403,
+   "end": 31.578
+  },
+  {
+   "text": "litre…",
+   "start": 31.578,
+   "end": 31.903
+  },
+  {
+   "text": "sur",
+   "start": 32.153,
+   "end": 32.328
+  },
+  {
+   "text": "deux",
+   "start": 32.328,
+   "end": 32.44
+  },
+  {
+   "text": "prises",
+   "start": 32.44,
+   "end": 32.653
+  },
+  {
+   "text": "de",
+   "start": 32.653,
+   "end": 32.765
+  },
+  {
+   "text": "sang.",
+   "start": 32.765,
+   "end": 33.065
+  },
+  {
+   "text": "Le",
+   "start": 33.904,
+   "end": 34.041
+  },
+  {
+   "text": "sucre",
+   "start": 34.041,
+   "end": 34.342
+  },
+  {
+   "text": "en",
+   "start": 34.342,
+   "end": 34.392
+  },
+  {
+   "text": "trop,",
+   "start": 34.392,
+   "end": 34.754
+  },
+  {
+   "text": "pendant",
+   "start": 35.017,
+   "end": 35.229
+  },
+  {
+   "text": "des",
+   "start": 35.229,
+   "end": 35.329
+  },
+  {
+   "text": "années,",
+   "start": 35.329,
+   "end": 35.742
+  },
+  {
+   "text": "abîme",
+   "start": 36.029,
+   "end": 36.329
+  },
+  {
+   "text": "les",
+   "start": 36.329,
+   "end": 36.404
+  },
+  {
+   "text": "vaisseaux",
+   "start": 36.404,
+   "end": 36.729
+  },
+  {
+   "text": "et",
+   "start": 36.729,
+   "end": 36.767
+  },
+  {
+   "text": "les",
+   "start": 36.767,
+   "end": 36.867
+  },
+  {
+   "text": "nerfs.",
+   "start": 36.867,
+   "end": 37.291
+  },
+  {
+   "text": "Il",
+   "start": 37.629,
+   "end": 37.829
+  },
+  {
+   "text": "touche",
+   "start": 37.829,
+   "end": 38.041
+  },
+  {
+   "text": "les",
+   "start": 38.041,
+   "end": 38.192
+  },
+  {
+   "text": "yeux,",
+   "start": 38.192,
+   "end": 38.479
+  },
+  {
+   "text": "les",
+   "start": 38.679,
+   "end": 38.767
+  },
+  {
+   "text": "reins,",
+   "start": 38.767,
+   "end": 39.054
+  },
+  {
+   "text": "le",
+   "start": 39.291,
+   "end": 39.379
+  },
+  {
+   "text": "cœur,",
+   "start": 39.379,
+   "end": 39.742
+  },
+  {
+   "text": "le",
+   "start": 39.967,
+   "end": 40.041
+  },
+  {
+   "text": "cerveau…",
+   "start": 40.041,
+   "end": 40.541
+  },
+  {
+   "text": "et",
+   "start": 40.879,
+   "end": 40.916
+  },
+  {
+   "text": "les",
+   "start": 40.916,
+   "end": 41.017
+  },
+  {
+   "text": "pieds :",
+   "start": 41.017,
+   "end": 41.329
+  },
+  {
+   "text": "une",
+   "start": 41.867,
+   "end": 41.942
+  },
+  {
+   "text": "petite",
+   "start": 41.942,
+   "end": 42.217
+  },
+  {
+   "text": "plaie",
+   "start": 42.217,
+   "end": 42.416
+  },
+  {
+   "text": "qu'on",
+   "start": 42.416,
+   "end": 42.541
+  },
+  {
+   "text": "ne",
+   "start": 42.541,
+   "end": 42.629
+  },
+  {
+   "text": "sent",
+   "start": 42.629,
+   "end": 42.742
+  },
+  {
+   "text": "pas",
+   "start": 42.742,
+   "end": 42.854
+  },
+  {
+   "text": "peut",
+   "start": 42.854,
+   "end": 42.992
+  },
+  {
+   "text": "s'infecter,",
+   "start": 42.992,
+   "end": 43.604
+  },
+  {
+   "text": "et",
+   "start": 43.892,
+   "end": 43.954
+  },
+  {
+   "text": "mener",
+   "start": 43.954,
+   "end": 44.192
+  },
+  {
+   "text": "à",
+   "start": 44.192,
+   "end": 44.242
+  },
+  {
+   "text": "l'amputation.",
+   "start": 44.242,
+   "end": 44.992
+  },
+  {
+   "text": "Le",
+   "start": 45.81,
+   "end": 45.948
+  },
+  {
+   "text": "traitement",
+   "start": 45.948,
+   "end": 46.323
+  },
+  {
+   "text": "commence",
+   "start": 46.323,
+   "end": 46.673
+  },
+  {
+   "text": "par",
+   "start": 46.673,
+   "end": 46.81
+  },
+  {
+   "text": "une",
+   "start": 46.81,
+   "end": 46.91
+  },
+  {
+   "text": "alimentation",
+   "start": 46.91,
+   "end": 47.46
+  },
+  {
+   "text": "équilibrée",
+   "start": 47.46,
+   "end": 48.085
+  },
+  {
+   "text": "et",
+   "start": 48.085,
+   "end": 48.185
+  },
+  {
+   "text": "de",
+   "start": 48.185,
+   "end": 48.273
+  },
+  {
+   "text": "l'activité",
+   "start": 48.273,
+   "end": 48.761
+  },
+  {
+   "text": "physique.",
+   "start": 48.761,
+   "end": 49.373
+  },
+  {
+   "text": "Dans",
+   "start": 49.71,
+   "end": 49.91
+  },
+  {
+   "text": "le",
+   "start": 49.91,
+   "end": 49.998
+  },
+  {
+   "text": "type",
+   "start": 49.998,
+   "end": 50.223
+  },
+  {
+   "text": "deux,",
+   "start": 50.223,
+   "end": 50.485
+  },
+  {
+   "text": "on",
+   "start": 50.823,
+   "end": 50.848
+  },
+  {
+   "text": "ajoute",
+   "start": 50.848,
+   "end": 51.136
+  },
+  {
+   "text": "des",
+   "start": 51.136,
+   "end": 51.223
+  },
+  {
+   "text": "comprimés…",
+   "start": 51.223,
+   "end": 51.823
+  },
+  {
+   "text": "et",
+   "start": 52.173,
+   "end": 52.261
+  },
+  {
+   "text": "parfois",
+   "start": 52.261,
+   "end": 52.585
+  },
+  {
+   "text": "de",
+   "start": 52.585,
+   "end": 52.673
+  },
+  {
+   "text": "l'insuline.",
+   "start": 52.673,
+   "end": 53.335
+  },
+  {
+   "text": "Dans",
+   "start": 53.673,
+   "end": 53.873
+  },
+  {
+   "text": "le",
+   "start": 53.873,
+   "end": 53.96
+  },
+  {
+   "text": "type",
+   "start": 53.96,
+   "end": 54.198
+  },
+  {
+   "text": "un,",
+   "start": 54.198,
+   "end": 54.41
+  },
+  {
+   "text": "c'est",
+   "start": 54.71,
+   "end": 54.835
+  },
+  {
+   "text": "l'insuline,",
+   "start": 54.835,
+   "end": 55.486
+  },
+  {
+   "text": "toujours.",
+   "start": 55.673,
+   "end": 56.21
+  },
+  {
+   "text": "Et",
+   "start": 56.548,
+   "end": 56.685
+  },
+  {
+   "text": "pour",
+   "start": 56.685,
+   "end": 56.835
+  },
+  {
+   "text": "le",
+   "start": 56.835,
+   "end": 56.91
+  },
+  {
+   "text": "suivi,",
+   "start": 56.91,
+   "end": 57.361
+  },
+  {
+   "text": "on",
+   "start": 57.698,
+   "end": 57.748
+  },
+  {
+   "text": "dose",
+   "start": 57.748,
+   "end": 57.998
+  },
+  {
+   "text": "l'hémoglobine",
+   "start": 57.998,
+   "end": 58.548
+  },
+  {
+   "text": "glyquée :",
+   "start": 58.548,
+   "end": 58.998
+  },
+  {
+   "text": "le",
+   "start": 59.335,
+   "end": 59.398
+  },
+  {
+   "text": "reflet",
+   "start": 59.398,
+   "end": 59.673
+  },
+  {
+   "text": "du",
+   "start": 59.673,
+   "end": 59.773
+  },
+  {
+   "text": "sucre",
+   "start": 59.773,
+   "end": 60.16
+  },
+  {
+   "text": "sur",
+   "start": 60.16,
+   "end": 60.26
+  },
+  {
+   "text": "les",
+   "start": 60.26,
+   "end": 60.335
+  },
+  {
+   "text": "trois",
+   "start": 60.335,
+   "end": 60.498
+  },
+  {
+   "text": "derniers",
+   "start": 60.498,
+   "end": 60.76
+  },
+  {
+   "text": "mois.",
+   "start": 60.76,
+   "end": 61.085
+  },
+  {
+   "text": "Ton",
+   "start": 61.907,
+   "end": 62.069
+  },
+  {
+   "text": "rôle :",
+   "start": 62.069,
+   "end": 62.394
+  },
+  {
+   "text": "contrôler",
+   "start": 62.632,
+   "end": 63.044
+  },
+  {
+   "text": "les",
+   "start": 63.044,
+   "end": 63.132
+  },
+  {
+   "text": "glycémies",
+   "start": 63.132,
+   "end": 63.519
+  },
+  {
+   "text": "capillaires,",
+   "start": 63.519,
+   "end": 64.094
+  },
+  {
+   "text": "faire",
+   "start": 64.431,
+   "end": 64.544
+  },
+  {
+   "text": "les",
+   "start": 64.544,
+   "end": 64.606
+  },
+  {
+   "text": "injections",
+   "start": 64.606,
+   "end": 65.031
+  },
+  {
+   "text": "d'insuline",
+   "start": 65.031,
+   "end": 65.494
+  },
+  {
+   "text": "en",
+   "start": 65.494,
+   "end": 65.531
+  },
+  {
+   "text": "changeant",
+   "start": 65.531,
+   "end": 65.856
+  },
+  {
+   "text": "de",
+   "start": 65.856,
+   "end": 65.969
+  },
+  {
+   "text": "site",
+   "start": 65.969,
+   "end": 66.169
+  },
+  {
+   "text": "à",
+   "start": 66.169,
+   "end": 66.219
+  },
+  {
+   "text": "chaque",
+   "start": 66.219,
+   "end": 66.419
+  },
+  {
+   "text": "fois,",
+   "start": 66.419,
+   "end": 66.707
+  },
+  {
+   "text": "et",
+   "start": 67.106,
+   "end": 67.132
+  },
+  {
+   "text": "regarder",
+   "start": 67.132,
+   "end": 67.507
+  },
+  {
+   "text": "les",
+   "start": 67.507,
+   "end": 67.606
+  },
+  {
+   "text": "pieds",
+   "start": 67.606,
+   "end": 67.781
+  },
+  {
+   "text": "tous",
+   "start": 67.781,
+   "end": 67.882
+  },
+  {
+   "text": "les",
+   "start": 67.882,
+   "end": 67.994
+  },
+  {
+   "text": "jours.",
+   "start": 67.994,
+   "end": 68.369
+  },
+  {
+   "text": "Et",
+   "start": 68.707,
+   "end": 68.832
+  },
+  {
+   "text": "en",
+   "start": 68.832,
+   "end": 68.906
+  },
+  {
+   "text": "cas",
+   "start": 68.906,
+   "end": 69.056
+  },
+  {
+   "text": "d'hypoglycémie,",
+   "start": 69.056,
+   "end": 69.919
+  },
+  {
+   "text": "comme",
+   "start": 70.181,
+   "end": 70.356
+  },
+  {
+   "text": "on",
+   "start": 70.356,
+   "end": 70.394
+  },
+  {
+   "text": "l'a",
+   "start": 70.394,
+   "end": 70.507
+  },
+  {
+   "text": "vu",
+   "start": 70.507,
+   "end": 70.644
+  },
+  {
+   "text": "dans",
+   "start": 70.644,
+   "end": 70.757
+  },
+  {
+   "text": "la",
+   "start": 70.757,
+   "end": 70.844
+  },
+  {
+   "text": "vidéo",
+   "start": 70.844,
+   "end": 71.219
+  },
+  {
+   "text": "sur",
+   "start": 71.219,
+   "end": 71.356
+  },
+  {
+   "text": "la",
+   "start": 71.356,
+   "end": 71.444
+  },
+  {
+   "text": "glycémie :",
+   "start": 71.444,
+   "end": 71.981
+  },
+  {
+   "text": "on",
+   "start": 72.319,
+   "end": 72.356
+  },
+  {
+   "text": "resucre",
+   "start": 72.356,
+   "end": 72.832
+  },
+  {
+   "text": "tout",
+   "start": 72.832,
+   "end": 72.944
+  },
+  {
+   "text": "de",
+   "start": 72.944,
+   "end": 72.981
+  },
+  {
+   "text": "suite !",
+   "start": 72.981,
+   "end": 73.469
+  },
+  {
+   "text": "Petit",
+   "start": 74.17,
+   "end": 74.483
+  },
+  {
+   "text": "récap !",
+   "start": 74.483,
+   "end": 75.045
+  },
+  {
+   "text": "Souvent",
+   "start": 75.383,
+   "end": 75.733
+  },
+  {
+   "text": "silencieux,",
+   "start": 75.733,
+   "end": 76.407
+  },
+  {
+   "text": "il",
+   "start": 76.72,
+   "end": 76.795
+  },
+  {
+   "text": "se",
+   "start": 76.795,
+   "end": 76.895
+  },
+  {
+   "text": "découvre",
+   "start": 76.895,
+   "end": 77.37
+  },
+  {
+   "text": "par",
+   "start": 77.37,
+   "end": 77.495
+  },
+  {
+   "text": "la",
+   "start": 77.495,
+   "end": 77.57
+  },
+  {
+   "text": "prise",
+   "start": 77.57,
+   "end": 77.795
+  },
+  {
+   "text": "de",
+   "start": 77.795,
+   "end": 77.92
+  },
+  {
+   "text": "sang.",
+   "start": 77.92,
+   "end": 78.233
+  },
+  {
+   "text": "Il",
+   "start": 78.57,
+   "end": 78.77
+  },
+  {
+   "text": "abîme",
+   "start": 78.77,
+   "end": 79.008
+  },
+  {
+   "text": "les",
+   "start": 79.008,
+   "end": 79.133
+  },
+  {
+   "text": "yeux,",
+   "start": 79.133,
+   "end": 79.433
+  },
+  {
+   "text": "les",
+   "start": 79.733,
+   "end": 79.82
+  },
+  {
+   "text": "reins,",
+   "start": 79.82,
+   "end": 80.108
+  },
+  {
+   "text": "le",
+   "start": 80.383,
+   "end": 80.47
+  },
+  {
+   "text": "cœur",
+   "start": 80.47,
+   "end": 80.733
+  },
+  {
+   "text": "et",
+   "start": 80.733,
+   "end": 80.758
+  },
+  {
+   "text": "les",
+   "start": 80.758,
+   "end": 80.858
+  },
+  {
+   "text": "pieds.",
+   "start": 80.858,
+   "end": 81.245
+  },
+  {
+   "text": "On",
+   "start": 81.583,
+   "end": 81.708
+  },
+  {
+   "text": "le",
+   "start": 81.708,
+   "end": 81.833
+  },
+  {
+   "text": "soigne",
+   "start": 81.833,
+   "end": 82.145
+  },
+  {
+   "text": "par",
+   "start": 82.145,
+   "end": 82.295
+  },
+  {
+   "text": "l'hygiène",
+   "start": 82.295,
+   "end": 82.608
+  },
+  {
+   "text": "de",
+   "start": 82.608,
+   "end": 82.72
+  },
+  {
+   "text": "vie,",
+   "start": 82.72,
+   "end": 83.02
+  },
+  {
+   "text": "des",
+   "start": 83.333,
+   "end": 83.395
+  },
+  {
+   "text": "comprimés",
+   "start": 83.395,
+   "end": 83.97
+  },
+  {
+   "text": "ou",
+   "start": 83.97,
+   "end": 84.032
+  },
+  {
+   "text": "l'insuline.",
+   "start": 84.032,
+   "end": 84.758
+  },
+  {
+   "text": "Et",
+   "start": 85.095,
+   "end": 85.233
+  },
+  {
+   "text": "ton",
+   "start": 85.233,
+   "end": 85.407
+  },
+  {
+   "text": "rôle :",
+   "start": 85.407,
+   "end": 85.782
+  },
+  {
+   "text": "glycémies,",
+   "start": 86.07,
+   "end": 86.657
+  },
+  {
+   "text": "insuline,",
+   "start": 86.933,
+   "end": 87.558
+  },
+  {
+   "text": "pieds…",
+   "start": 87.795,
+   "end": 88.133
+  },
+  {
+   "text": "et",
+   "start": 88.458,
+   "end": 88.545
+  },
+  {
+   "text": "resucrer",
+   "start": 88.545,
+   "end": 89.02
+  },
+  {
+   "text": "en",
+   "start": 89.02,
+   "end": 89.083
+  },
+  {
+   "text": "cas",
+   "start": 89.083,
+   "end": 89.195
+  },
+  {
+   "text": "d'hypo !",
+   "start": 89.195,
+   "end": 89.657
+  },
+  {
+   "text": "Et",
+   "start": 89.995,
+   "end": 90.108
+  },
+  {
+   "text": "voilà :",
+   "start": 90.108,
+   "end": 90.47
+  },
+  {
+   "text": "la",
+   "start": 90.845,
+   "end": 90.92
+  },
+  {
+   "text": "série",
+   "start": 90.92,
+   "end": 91.22
+  },
+  {
+   "text": "sur",
+   "start": 91.22,
+   "end": 91.345
+  },
+  {
+   "text": "le",
+   "start": 91.345,
+   "end": 91.42
+  },
+  {
+   "text": "diabète",
+   "start": 91.42,
+   "end": 91.782
+  },
+  {
+   "text": "est",
+   "start": 91.782,
+   "end": 91.82
+  },
+  {
+   "text": "terminée !",
+   "start": 91.82,
+   "end": 92.42
+  }
+ ]
+}

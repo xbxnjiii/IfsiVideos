@@ -39,8 +39,9 @@
     "render:insuffisance-cardiaque": "remotion render Insuffisance-Cardiaque out/23-insuffisance-cardiaque.mp4",
     "render:douleur-1": "remotion render Douleur-1 out/24-douleur-1.mp4",
     "render:douleur-2": "remotion render Douleur-2 out/25-douleur-2.mp4",
-    "render:diabete": "remotion render Diabete out/26-diabete.mp4",
-    "render:quiz-constantes": "remotion render Quiz-Constantes out/27-quiz-constantes.mp4"
+    "render:quiz-constantes": "remotion render Quiz-Constantes out/27-quiz-constantes.mp4",
+    "render:diabete-1": "remotion render Diabete-1 out/26-diabete-1.mp4",
+    "render:diabete-2": "remotion render Diabete-2 out/26-diabete-2.mp4"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.532",

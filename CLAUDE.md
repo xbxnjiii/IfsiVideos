@@ -168,18 +168,32 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   `BathScale`, `PropUp` (0 → 3 oreillers), `Ankles` (`swell`, `press`, `dent`), `SaltShaker`, `Battery`, `SitLegsDown`,
   `Foam` ; `Patient` : `flood` (œdème pulmonaire, avec `lungs`). Dans `Scenes.tsx` : `Man` (patient + calques : moitié du
   cœur qui faiblit `side` G/D, reflux vers les poumons, gouttes qui descendent, mousse, cicatrice d'infarctus, pression).
-- 6e modèle « pathologie » : `Diabete` (`src/videos/diabete/`) — accroche **« le paradoxe »** (choisie par le propriétaire) :
-  « Son sang est rempli de sucre… et pourtant, ses cellules meurent de faim. […] Il lui manque une clé : l'insuline. » (image 0 :
-  « Du sucre partout… et elles ont faim ? », bande « LE SANG » pleine de sucres, cellules « LES CELLULES » porte fermée).
+- 6e modèle « pathologie », devenu une **série en 2 parties** : `Diabete-1` / `Diabete-2` (`src/videos/diabete-1/`, `-2/`,
+  storyboard `docs/lpi/storyboard-diabete-serie.md` ; la v1 `Diabete` en une vidéo reste dans l'historique git). Demandé :
+  « ça va un peu vite, ralentis et prends le temps (voix et animations) », parler du type 1 **insulinodépendant (DID)**, du
+  type 2 **non insulinodépendant (DNID)** et du **diabète gestationnel** ; une seule vidéo aurait duré ≈ 2 min 45 → série
+  (choix du propriétaire). Voix **+0 %** (accroches +3 / +4 %), `popAt` au ressort plus lent, caméra 16 – 20 images.
+  Partie 1 « les 3 types » : accroche **« le paradoxe »** (« Son sang est rempli de sucre… et pourtant, ses cellules meurent de
+  faim. […] Il lui manque une clé : l'insuline. », image 0 : « Du sucre partout… et elles ont faim ? »), carte de série,
+  principe (clé / porte), type 1 (les défenses attaquent le pancréas, carte sigle **DID** lettre par lettre, l'insuline le
+  garde en vie), type 2 (la clé coince, carte **DNID**, « au début : pas besoin d'insuline »), gestationnel (hormones du
+  placenta, 24 – 28 SA, HGPO, bébé > 4 kg, disparaît après l'accouchement, risque de type 2 plus tard), récap + `NextUp`.
+  Partie 2 « découvrir et soigner » : accroche nouvelle **« il va très bien… »** (« Il n'a jamais soif, il n'est jamais
+  fatigué… Et pourtant, depuis des années, le sucre en trop abîme ses yeux, ses reins et ses pieds. Son diabète ne fait
+  aucun bruit… Alors, comment le repérer à temps ? »), diagnostic (≥ 1,26 g/L à jeun sur deux prises de sang),
+  complications, traitement selon le type + HbA1c, ton rôle, récap + « série terminée ».
   **Renvoi à une vidéo déjà publiée** (demandé, pour ne pas répéter) : la voix dit « Comme on l'a vu dans la vidéo sur la
-  glycémie… » et la pastille `VideoLink` (« DÉJÀ VU EN VIDÉO · La glycémie ») s'affiche. Puis principe (clé / porte),
-  type 1 / type 2, le découvrir (souvent silencieux, ≥ 1,26 g/L à jeun deux fois), complications (caméra d'organe en organe),
-  traitement + HbA1c, ton rôle (glycémies, insuline en changeant de site, pieds, resucrer), récap. Briques `diabetes.tsx` :
-  `BloodBand`, `GCell` (porte, cadenas, jauge, faim / rassasiée, refus), `InsulinKey` (`ghost`, `jam`, `turn`), `Pancreas`
-  (`make`, `dead`), `InsulinPen`, `InjectionSites`, `GlycatedCell`, `Plate`, `KidneysIcon`, `BrainIcon`, `VideoLink`.
+  glycémie… » et la pastille `VideoLink` (« DÉJÀ VU EN VIDÉO · La glycémie ») s'affiche.
+  Briques `diabetes.tsx` : `BloodBand`, `GCell` (porte, cadenas, jauge, faim / rassasiée, refus), `InsulinKey` (`ghost`,
+  `jam`, `turn`), `Pancreas` (`make`, `dead`), `InsulinPen`, `InjectionSites`, `GlycatedCell`, `Plate`, `KidneysIcon`,
+  `BrainIcon`, `VideoLink`, `DIABETE_PARTS`, `Defender` (défense du corps), `MomToBe` (future maman de profil : `belly`,
+  `inside` (utérus, bébé, placenta, cordon, découpés dans la robe), `big`, `hormones` + `to`, `born`), `WeeksBar` (0 → 40 SA,
+  fenêtre 24 – 28), `SweetDrink`. Carte sigle `SigleCard` (dans `diabete-1/Scenes.tsx`) : sigle en grand, initiales roses,
+  explication en dessous.
   Attention : dans un attribut JSX `text="…\n…"` le `\n` n'est pas un retour à la ligne → `text={'…\n…'}` ; un accent de
   titre sur un mot avec apostrophe s'écrit `*l'hygiène*` (pas `l'*hygiène*`) ; `accessoires/baskets` n'est qu'une chaussure
-  (pas la mascotte) : ne pas l'utiliser comme étape.
+  (pas la mascotte) : ne pas l'utiliser comme étape. Voix : « se soigne par l'insuline… à vie » était entendu « à la vie » →
+  « il se soigne par l'insuline, toute sa vie ».
 
 ## Vidéo promo (modèle `Quiz-Constantes`, `src/videos/quiz-constantes/`)
 

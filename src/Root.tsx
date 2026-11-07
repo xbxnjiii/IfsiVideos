@@ -48,11 +48,13 @@ import {Douleur1, Douleur1Props} from './videos/douleur-1/Douleur1';
 import {TL as DOULEUR_1_TL} from './videos/douleur-1/timeline';
 import {Douleur2, Douleur2Props} from './videos/douleur-2/Douleur2';
 import {TL as DOULEUR_2_TL} from './videos/douleur-2/timeline';
-import {Diabete, DiabeteProps} from './videos/diabete/Diabete';
-import {TL as DIABETE_TL} from './videos/diabete/timeline';
 import {PlanchePoumons} from './videos/planches/PlanchePoumons';
 import {QuizConstantes, QuizConstantesProps} from './videos/quiz-constantes/QuizConstantes';
 import {TL as QUIZ_CONSTANTES_TL} from './videos/quiz-constantes/timeline';
+import {Diabete1, Diabete1Props} from './videos/diabete-1/Diabete1';
+import {TL as DIABETE_1_TL} from './videos/diabete-1/timeline';
+import {Diabete2, Diabete2Props} from './videos/diabete-2/Diabete2';
+import {TL as DIABETE_2_TL} from './videos/diabete-2/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -290,16 +292,6 @@ export const RemotionRoot: React.FC = () => (
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies Douleur2Props}
 		/>
-		{/* 26 · Diabete */}
-		<Composition
-			id="Diabete"
-			component={Diabete}
-			durationInFrames={DIABETE_TL.total}
-			fps={DIABETE_TL.fps}
-			width={W}
-			height={H}
-			defaultProps={{voice: true, sfx: true} satisfies DiabeteProps}
-		/>
 		{/* 27 · Quiz-Constantes */}
 		<Composition
 			id="Quiz-Constantes"
@@ -309,6 +301,26 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies QuizConstantesProps}
+		/>
+		{/* 26 · Diabete-1 */}
+		<Composition
+			id="Diabete-1"
+			component={Diabete1}
+			durationInFrames={DIABETE_1_TL.total}
+			fps={DIABETE_1_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies Diabete1Props}
+		/>
+		{/* 26 · Diabete-2 */}
+		<Composition
+			id="Diabete-2"
+			component={Diabete2}
+			durationInFrames={DIABETE_2_TL.total}
+			fps={DIABETE_2_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies Diabete2Props}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition
