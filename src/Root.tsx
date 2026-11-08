@@ -48,6 +48,7 @@ import {Douleur1, Douleur1Props} from './videos/douleur-1/Douleur1';
 import {TL as DOULEUR_1_TL} from './videos/douleur-1/timeline';
 import {Douleur2, Douleur2Props} from './videos/douleur-2/Douleur2';
 import {TL as DOULEUR_2_TL} from './videos/douleur-2/timeline';
+import {PlancheEnfant} from './videos/planches/PlancheEnfant';
 import {PlanchePoumons} from './videos/planches/PlanchePoumons';
 import {QuizConstantes, QuizConstantesProps} from './videos/quiz-constantes/QuizConstantes';
 import {TL as QUIZ_CONSTANTES_TL} from './videos/quiz-constantes/timeline';
@@ -55,6 +56,8 @@ import {Diabete1, Diabete1Props} from './videos/diabete-1/Diabete1';
 import {TL as DIABETE_1_TL} from './videos/diabete-1/timeline';
 import {Diabete2, Diabete2Props} from './videos/diabete-2/Diabete2';
 import {TL as DIABETE_2_TL} from './videos/diabete-2/timeline';
+import {ConstantesEnfant, ConstantesEnfantProps} from './videos/constantes-enfant/ConstantesEnfant';
+import {TL as CONSTANTES_ENFANT_TL} from './videos/constantes-enfant/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -322,6 +325,16 @@ export const RemotionRoot: React.FC = () => (
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies Diabete2Props}
 		/>
+		{/* 28 · Constantes-Enfant */}
+		<Composition
+			id="Constantes-Enfant"
+			component={ConstantesEnfant}
+			durationInFrames={CONSTANTES_ENFANT_TL.total}
+			fps={CONSTANTES_ENFANT_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies ConstantesEnfantProps}
+		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition
 			id="Mascotte-Planche"
@@ -334,6 +347,7 @@ export const RemotionRoot: React.FC = () => (
 		/>
 		{/* contrôle : planche anatomique des poumons (page 1 : anatomie, sain / BPCO, alvéoles ; page 2 : bronche, radio, loupe) */}
 		<Composition id="Planche-Poumons" component={PlanchePoumons} durationInFrames={60} fps={30} width={W} height={H} defaultProps={{page: 1}} />
+		<Composition id="Planche-Enfant" component={PlancheEnfant} durationInFrames={60} fps={30} width={W} height={H} defaultProps={{page: 1}} />
 		{/* contrôle : illustrations et gags de la vidéo des 14 besoins */}
 		<Composition id="Besoins-Illustrations" component={IconsSheet} durationInFrames={60} fps={30} width={W} height={H} />
 	</>

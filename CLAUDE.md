@@ -109,6 +109,26 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   doigt froid, ongle bleuté), `Vessel` (globules rouges, hémoglobine chargée d'O₂, alvéole), `HemoGrid` ;
   `Patient` : `lungs`, `cyanosis` ; icône `CyanosisIcon`.
 
+## Format « condensé enfant » (modèle `Constantes-Enfant`, `src/videos/constantes-enfant/`)
+
+- Demandé : les 7 constantes de la naissance à 17 ans en **3 tranches (0 – 2 · 2 – 11 · 12 – 17 ans)**, en ne parlant
+  **que de ce qui change** chez l'enfant (ne pas répéter les vidéos adultes) ; ≈ 3 min, plus long que d'habitude (accepté).
+  Valeurs validées par le propriétaire (PALS 2015 + référentiel des pédiatres) : FC 100–160 / 70–120 / 60–100, FR 30–50 /
+  18–30 / 12–20, PAS 70–100 / 90–120 / 110–130, diurèse ≈ 2 / 1 / 0,5–1 mL/kg/h ; T° et SpO₂ = mêmes seuils que l'adulte
+  (montré par une seule pastille posée sur les 3 cartes : « ça ne change pas ») ; glycémie : seuils propres au
+  nouveau-né (sans chiffre : ils varient selon les maternités), piqûre au talon. Storyboard `docs/lpi/storyboard-constantes-enfant.md`.
+- Accroche **« le piège »** (choisie par le propriétaire) : « Ce bébé respire quarante-cinq fois par minute… et son cœur bat
+  à cent quarante. Tu appelles le médecin ? [pause 2.2] Pas besoin ! » (moniteur rose qui clignote → bleu, deux boutons,
+  chrono 3 · 2 · 1, tampon NORMAL) puis « pas un adulte en miniature » (adulte rapetissé barré) et la frise 0 → 17 ans.
+  Voix : « Eh non ! » était entendu « Anon » → « Pas besoin ! » ; « le geignement » → « un petit geignement, comme une
+  plainte » (l'explication aide aussi à l'oreille).
+- Gabarit de scène : `Head` (kicker = nom complet de la constante, titre court sur une ligne), `AgeTable` (3 cartes bébé ·
+  enfant · ado, portraits, valeur qui claque au mot ; `same` pour une valeur commune), puis un `Stage` « ce qui change ».
+  Briques `kids.tsx` : `Baby` (assis de face : `breath` ventre, `retract` tirage, `flare` ailes du nez, `moan`
+  geignement, `snot`, `shake`, `limp`, `bonnet`, `steth`, `sensor` au pied, `fever`, `mood` pleure), `BabyFoot` (talon :
+  zones, lancette, goutte), `Diaper` + `KitchenScale`, `Cuff`, `CompChart` (FC ↑ d'abord, PA ↓ en dernier), `ThermoStick`,
+  `Bottle`, `Pleth` (courbe propre / brouillée), `KidMonitor`, `AgeTable`, `AGES`. Planches : composition `Planche-Enfant`.
+
 ## Format « pathologie » (modèle `AVC`, `src/videos/avc/`)
 
 - ≈ 1 min 25. **Accroche-choc** au lieu de la simple question : un chiffre fort dès la 1re seconde (« Toutes

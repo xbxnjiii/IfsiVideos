@@ -41,7 +41,8 @@
     "render:douleur-2": "remotion render Douleur-2 out/25-douleur-2.mp4",
     "render:quiz-constantes": "remotion render Quiz-Constantes out/27-quiz-constantes.mp4",
     "render:diabete-1": "remotion render Diabete-1 out/26-diabete-1.mp4",
-    "render:diabete-2": "remotion render Diabete-2 out/26-diabete-2.mp4"
+    "render:diabete-2": "remotion render Diabete-2 out/26-diabete-2.mp4",
+    "render:constantes-enfant": "remotion render Constantes-Enfant out/28-constantes-enfant.mp4"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.532",

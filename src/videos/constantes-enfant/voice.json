@@ -1,0 +1,2928 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 177.258,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.06,
+   "end": 16.458
+  },
+  {
+   "id": "ages",
+   "start": 17.403,
+   "end": 29.156
+  },
+  {
+   "id": "fc",
+   "start": 29.836,
+   "end": 47.636
+  },
+  {
+   "id": "fr",
+   "start": 48.452,
+   "end": 69.34
+  },
+  {
+   "id": "ta",
+   "start": 70.165,
+   "end": 90.99
+  },
+  {
+   "id": "temp",
+   "start": 91.842,
+   "end": 110.654
+  },
+  {
+   "id": "gly",
+   "start": 111.452,
+   "end": 128.364
+  },
+  {
+   "id": "spo2",
+   "start": 129.194,
+   "end": 143.506
+  },
+  {
+   "id": "diurese",
+   "start": 144.342,
+   "end": 158.279
+  },
+  {
+   "id": "outro",
+   "start": 159.092,
+   "end": 176.917
+  }
+ ],
+ "words": [
+  {
+   "text": "Ce",
+   "start": 0.06,
+   "end": 0.228
+  },
+  {
+   "text": "bébé",
+   "start": 0.228,
+   "end": 0.481
+  },
+  {
+   "text": "respire",
+   "start": 0.481,
+   "end": 0.853
+  },
+  {
+   "text": "quarante-cinq",
+   "start": 0.853,
+   "end": 1.286
+  },
+  {
+   "text": "fois",
+   "start": 1.286,
+   "end": 1.418
+  },
+  {
+   "text": "par",
+   "start": 1.418,
+   "end": 1.562
+  },
+  {
+   "text": "minute…",
+   "start": 1.562,
+   "end": 1.971
+  },
+  {
+   "text": "et",
+   "start": 2.332,
+   "end": 2.368
+  },
+  {
+   "text": "son",
+   "start": 2.368,
+   "end": 2.512
+  },
+  {
+   "text": "cœur",
+   "start": 2.512,
+   "end": 2.764
+  },
+  {
+   "text": "bat",
+   "start": 2.764,
+   "end": 2.957
+  },
+  {
+   "text": "à",
+   "start": 2.957,
+   "end": 3.065
+  },
+  {
+   "text": "cent",
+   "start": 3.065,
+   "end": 3.221
+  },
+  {
+   "text": "quarante.",
+   "start": 3.221,
+   "end": 3.762
+  },
+  {
+   "text": "Tu",
+   "start": 4.147,
+   "end": 4.243
+  },
+  {
+   "text": "appelles",
+   "start": 4.243,
+   "end": 4.483
+  },
+  {
+   "text": "le",
+   "start": 4.483,
+   "end": 4.579
+  },
+  {
+   "text": "médecin ?",
+   "start": 4.579,
+   "end": 5.048
+  },
+  {
+   "text": "Pas",
+   "start": 7.625,
+   "end": 7.77
+  },
+  {
+   "text": "besoin !",
+   "start": 7.77,
+   "end": 8.25
+  },
+  {
+   "text": "Pour",
+   "start": 8.575,
+   "end": 8.779
+  },
+  {
+   "text": "lui,",
+   "start": 8.779,
+   "end": 9.043
+  },
+  {
+   "text": "c'est",
+   "start": 9.356,
+   "end": 9.464
+  },
+  {
+   "text": "tout",
+   "start": 9.464,
+   "end": 9.572
+  },
+  {
+   "text": "à",
+   "start": 9.572,
+   "end": 9.704
+  },
+  {
+   "text": "fait",
+   "start": 9.704,
+   "end": 9.825
+  },
+  {
+   "text": "normal.",
+   "start": 9.825,
+   "end": 10.377
+  },
+  {
+   "text": "Un",
+   "start": 10.703,
+   "end": 10.871
+  },
+  {
+   "text": "enfant,",
+   "start": 10.871,
+   "end": 11.328
+  },
+  {
+   "text": "ce",
+   "start": 11.652,
+   "end": 11.761
+  },
+  {
+   "text": "n'est",
+   "start": 11.761,
+   "end": 11.845
+  },
+  {
+   "text": "pas",
+   "start": 11.845,
+   "end": 11.965
+  },
+  {
+   "text": "un",
+   "start": 11.965,
+   "end": 12.025
+  },
+  {
+   "text": "adulte",
+   "start": 12.025,
+   "end": 12.422
+  },
+  {
+   "text": "en",
+   "start": 12.422,
+   "end": 12.458
+  },
+  {
+   "text": "miniature.",
+   "start": 12.458,
+   "end": 13.143
+  },
+  {
+   "text": "Alors,",
+   "start": 13.514,
+   "end": 13.91
+  },
+  {
+   "text": "de",
+   "start": 14.175,
+   "end": 14.247
+  },
+  {
+   "text": "la",
+   "start": 14.247,
+   "end": 14.331
+  },
+  {
+   "text": "naissance",
+   "start": 14.331,
+   "end": 14.703
+  },
+  {
+   "text": "à",
+   "start": 14.703,
+   "end": 14.751
+  },
+  {
+   "text": "dix-sept",
+   "start": 14.752,
+   "end": 15.124
+  },
+  {
+   "text": "ans,",
+   "start": 15.124,
+   "end": 15.304
+  },
+  {
+   "text": "qu'est-ce",
+   "start": 15.545,
+   "end": 15.701
+  },
+  {
+   "text": "qui",
+   "start": 15.701,
+   "end": 15.821
+  },
+  {
+   "text": "change",
+   "start": 15.821,
+   "end": 16.086
+  },
+  {
+   "text": "vraiment ?",
+   "start": 16.086,
+   "end": 16.458
+  },
+  {
+   "text": "On",
+   "start": 17.403,
+   "end": 17.489
+  },
+  {
+   "text": "retient",
+   "start": 17.489,
+   "end": 17.759
+  },
+  {
+   "text": "trois",
+   "start": 17.759,
+   "end": 17.955
+  },
+  {
+   "text": "âges :",
+   "start": 17.955,
+   "end": 18.322
+  },
+  {
+   "text": "le",
+   "start": 18.555,
+   "end": 18.616
+  },
+  {
+   "text": "bébé,",
+   "start": 18.616,
+   "end": 19.009
+  },
+  {
+   "text": "jusqu'à",
+   "start": 19.205,
+   "end": 19.462
+  },
+  {
+   "text": "deux",
+   "start": 19.462,
+   "end": 19.621
+  },
+  {
+   "text": "ans ;",
+   "start": 19.621,
+   "end": 19.879
+  },
+  {
+   "text": "l'enfant,",
+   "start": 20.21,
+   "end": 20.651
+  },
+  {
+   "text": "de",
+   "start": 20.871,
+   "end": 20.957
+  },
+  {
+   "text": "deux",
+   "start": 20.957,
+   "end": 21.104
+  },
+  {
+   "text": "à",
+   "start": 21.104,
+   "end": 21.202
+  },
+  {
+   "text": "onze",
+   "start": 21.202,
+   "end": 21.423
+  },
+  {
+   "text": "ans ;",
+   "start": 21.423,
+   "end": 21.594
+  },
+  {
+   "text": "et",
+   "start": 21.938,
+   "end": 21.962
+  },
+  {
+   "text": "l'ado,",
+   "start": 21.962,
+   "end": 22.354
+  },
+  {
+   "text": "de",
+   "start": 22.538,
+   "end": 22.624
+  },
+  {
+   "text": "douze",
+   "start": 22.624,
+   "end": 22.832
+  },
+  {
+   "text": "à",
+   "start": 22.832,
+   "end": 22.869
+  },
+  {
+   "text": "dix-sept",
+   "start": 22.869,
+   "end": 23.249
+  },
+  {
+   "text": "ans.",
+   "start": 23.249,
+   "end": 23.433
+  },
+  {
+   "text": "Et",
+   "start": 23.776,
+   "end": 23.862
+  },
+  {
+   "text": "une",
+   "start": 23.862,
+   "end": 23.96
+  },
+  {
+   "text": "règle",
+   "start": 23.96,
+   "end": 24.217
+  },
+  {
+   "text": "d'or :",
+   "start": 24.217,
+   "end": 24.56
+  },
+  {
+   "text": "plus",
+   "start": 24.842,
+   "end": 25.001
+  },
+  {
+   "text": "il",
+   "start": 25.001,
+   "end": 25.099
+  },
+  {
+   "text": "est",
+   "start": 25.099,
+   "end": 25.136
+  },
+  {
+   "text": "petit,",
+   "start": 25.136,
+   "end": 25.626
+  },
+  {
+   "text": "plus",
+   "start": 25.859,
+   "end": 26.043
+  },
+  {
+   "text": "son",
+   "start": 26.043,
+   "end": 26.178
+  },
+  {
+   "text": "cœur",
+   "start": 26.178,
+   "end": 26.411
+  },
+  {
+   "text": "et",
+   "start": 26.411,
+   "end": 26.447
+  },
+  {
+   "text": "sa",
+   "start": 26.447,
+   "end": 26.558
+  },
+  {
+   "text": "respiration",
+   "start": 26.558,
+   "end": 27.097
+  },
+  {
+   "text": "vont",
+   "start": 27.097,
+   "end": 27.244
+  },
+  {
+   "text": "vite…",
+   "start": 27.244,
+   "end": 27.575
+  },
+  {
+   "text": "et",
+   "start": 27.906,
+   "end": 27.942
+  },
+  {
+   "text": "plus",
+   "start": 27.942,
+   "end": 28.175
+  },
+  {
+   "text": "sa",
+   "start": 28.175,
+   "end": 28.273
+  },
+  {
+   "text": "tension",
+   "start": 28.273,
+   "end": 28.616
+  },
+  {
+   "text": "est",
+   "start": 28.616,
+   "end": 28.69
+  },
+  {
+   "text": "basse.",
+   "start": 28.69,
+   "end": 29.156
+  },
+  {
+   "text": "Le",
+   "start": 29.836,
+   "end": 30.036
+  },
+  {
+   "text": "cœur",
+   "start": 30.036,
+   "end": 30.261
+  },
+  {
+   "text": "bat",
+   "start": 30.261,
+   "end": 30.373
+  },
+  {
+   "text": "de",
+   "start": 30.373,
+   "end": 30.511
+  },
+  {
+   "text": "cent",
+   "start": 30.511,
+   "end": 30.699
+  },
+  {
+   "text": "à",
+   "start": 30.699,
+   "end": 30.761
+  },
+  {
+   "text": "cent",
+   "start": 30.761,
+   "end": 30.886
+  },
+  {
+   "text": "soixante",
+   "start": 30.886,
+   "end": 31.236
+  },
+  {
+   "text": "fois",
+   "start": 31.236,
+   "end": 31.461
+  },
+  {
+   "text": "par",
+   "start": 31.461,
+   "end": 31.636
+  },
+  {
+   "text": "minute",
+   "start": 31.636,
+   "end": 31.924
+  },
+  {
+   "text": "chez",
+   "start": 31.924,
+   "end": 32.023
+  },
+  {
+   "text": "le",
+   "start": 32.023,
+   "end": 32.111
+  },
+  {
+   "text": "bébé,",
+   "start": 32.111,
+   "end": 32.511
+  },
+  {
+   "text": "de",
+   "start": 32.849,
+   "end": 32.936
+  },
+  {
+   "text": "soixante-dix",
+   "start": 32.936,
+   "end": 33.424
+  },
+  {
+   "text": "à",
+   "start": 33.424,
+   "end": 33.486
+  },
+  {
+   "text": "cent",
+   "start": 33.486,
+   "end": 33.661
+  },
+  {
+   "text": "vingt",
+   "start": 33.661,
+   "end": 33.786
+  },
+  {
+   "text": "chez",
+   "start": 33.786,
+   "end": 33.898
+  },
+  {
+   "text": "l'enfant,",
+   "start": 33.898,
+   "end": 34.336
+  },
+  {
+   "text": "et",
+   "start": 34.711,
+   "end": 34.786
+  },
+  {
+   "text": "de",
+   "start": 34.786,
+   "end": 34.898
+  },
+  {
+   "text": "soixante",
+   "start": 34.898,
+   "end": 35.248
+  },
+  {
+   "text": "à",
+   "start": 35.248,
+   "end": 35.311
+  },
+  {
+   "text": "cent",
+   "start": 35.311,
+   "end": 35.486
+  },
+  {
+   "text": "chez",
+   "start": 35.486,
+   "end": 35.648
+  },
+  {
+   "text": "l'ado.",
+   "start": 35.648,
+   "end": 36.049
+  },
+  {
+   "text": "Chez",
+   "start": 36.386,
+   "end": 36.611
+  },
+  {
+   "text": "le",
+   "start": 36.611,
+   "end": 36.699
+  },
+  {
+   "text": "bébé,",
+   "start": 36.699,
+   "end": 37.111
+  },
+  {
+   "text": "on",
+   "start": 37.411,
+   "end": 37.436
+  },
+  {
+   "text": "ne",
+   "start": 37.436,
+   "end": 37.498
+  },
+  {
+   "text": "prend",
+   "start": 37.498,
+   "end": 37.661
+  },
+  {
+   "text": "pas",
+   "start": 37.661,
+   "end": 37.773
+  },
+  {
+   "text": "le",
+   "start": 37.773,
+   "end": 37.873
+  },
+  {
+   "text": "pouls",
+   "start": 37.873,
+   "end": 38.011
+  },
+  {
+   "text": "au",
+   "start": 38.011,
+   "end": 38.086
+  },
+  {
+   "text": "poignet :",
+   "start": 38.086,
+   "end": 38.511
+  },
+  {
+   "text": "on",
+   "start": 38.949,
+   "end": 38.974
+  },
+  {
+   "text": "écoute",
+   "start": 38.974,
+   "end": 39.261
+  },
+  {
+   "text": "son",
+   "start": 39.261,
+   "end": 39.386
+  },
+  {
+   "text": "cœur",
+   "start": 39.386,
+   "end": 39.599
+  },
+  {
+   "text": "au",
+   "start": 39.599,
+   "end": 39.648
+  },
+  {
+   "text": "stéthoscope,",
+   "start": 39.648,
+   "end": 40.386
+  },
+  {
+   "text": "pendant",
+   "start": 40.636,
+   "end": 40.861
+  },
+  {
+   "text": "une",
+   "start": 40.861,
+   "end": 40.936
+  },
+  {
+   "text": "minute",
+   "start": 40.936,
+   "end": 41.211
+  },
+  {
+   "text": "entière.",
+   "start": 41.211,
+   "end": 41.761
+  },
+  {
+   "text": "Et",
+   "start": 42.136,
+   "end": 42.224
+  },
+  {
+   "text": "attention :",
+   "start": 42.224,
+   "end": 42.761
+  },
+  {
+   "text": "chez",
+   "start": 43.186,
+   "end": 43.336
+  },
+  {
+   "text": "lui,",
+   "start": 43.336,
+   "end": 43.611
+  },
+  {
+   "text": "un",
+   "start": 43.886,
+   "end": 43.998
+  },
+  {
+   "text": "cœur",
+   "start": 43.998,
+   "end": 44.199
+  },
+  {
+   "text": "qui",
+   "start": 44.199,
+   "end": 44.324
+  },
+  {
+   "text": "ralentit,",
+   "start": 44.324,
+   "end": 44.861
+  },
+  {
+   "text": "c'est",
+   "start": 45.099,
+   "end": 45.211
+  },
+  {
+   "text": "grave.",
+   "start": 45.211,
+   "end": 45.686
+  },
+  {
+   "text": "C'est",
+   "start": 46.036,
+   "end": 46.261
+  },
+  {
+   "text": "souvent",
+   "start": 46.261,
+   "end": 46.611
+  },
+  {
+   "text": "un",
+   "start": 46.611,
+   "end": 46.674
+  },
+  {
+   "text": "manque",
+   "start": 46.674,
+   "end": 46.911
+  },
+  {
+   "text": "d'oxygène.",
+   "start": 46.911,
+   "end": 47.636
+  },
+  {
+   "text": "Il",
+   "start": 48.452,
+   "end": 48.627
+  },
+  {
+   "text": "respire",
+   "start": 48.627,
+   "end": 48.977
+  },
+  {
+   "text": "de",
+   "start": 48.977,
+   "end": 49.077
+  },
+  {
+   "text": "trente",
+   "start": 49.077,
+   "end": 49.302
+  },
+  {
+   "text": "à",
+   "start": 49.302,
+   "end": 49.352
+  },
+  {
+   "text": "cinquante",
+   "start": 49.352,
+   "end": 49.69
+  },
+  {
+   "text": "fois",
+   "start": 49.69,
+   "end": 49.877
+  },
+  {
+   "text": "par",
+   "start": 49.877,
+   "end": 50.052
+  },
+  {
+   "text": "minute",
+   "start": 50.052,
+   "end": 50.34
+  },
+  {
+   "text": "chez",
+   "start": 50.34,
+   "end": 50.44
+  },
+  {
+   "text": "le",
+   "start": 50.44,
+   "end": 50.54
+  },
+  {
+   "text": "bébé,",
+   "start": 50.54,
+   "end": 50.94
+  },
+  {
+   "text": "de",
+   "start": 51.264,
+   "end": 51.34
+  },
+  {
+   "text": "dix-huit",
+   "start": 51.34,
+   "end": 51.652
+  },
+  {
+   "text": "à",
+   "start": 51.652,
+   "end": 51.702
+  },
+  {
+   "text": "trente",
+   "start": 51.702,
+   "end": 51.94
+  },
+  {
+   "text": "chez",
+   "start": 51.94,
+   "end": 52.014
+  },
+  {
+   "text": "l'enfant,",
+   "start": 52.014,
+   "end": 52.477
+  },
+  {
+   "text": "et",
+   "start": 52.827,
+   "end": 52.852
+  },
+  {
+   "text": "de",
+   "start": 52.852,
+   "end": 52.965
+  },
+  {
+   "text": "douze",
+   "start": 52.965,
+   "end": 53.152
+  },
+  {
+   "text": "à",
+   "start": 53.152,
+   "end": 53.215
+  },
+  {
+   "text": "vingt",
+   "start": 53.215,
+   "end": 53.389
+  },
+  {
+   "text": "chez",
+   "start": 53.389,
+   "end": 53.514
+  },
+  {
+   "text": "l'ado.",
+   "start": 53.514,
+   "end": 53.927
+  },
+  {
+   "text": "Le",
+   "start": 54.327,
+   "end": 54.452
+  },
+  {
+   "text": "bébé",
+   "start": 54.452,
+   "end": 54.702
+  },
+  {
+   "text": "respire",
+   "start": 54.702,
+   "end": 55.102
+  },
+  {
+   "text": "avec",
+   "start": 55.102,
+   "end": 55.277
+  },
+  {
+   "text": "son",
+   "start": 55.277,
+   "end": 55.415
+  },
+  {
+   "text": "ventre,",
+   "start": 55.415,
+   "end": 55.802
+  },
+  {
+   "text": "et",
+   "start": 56.102,
+   "end": 56.127
+  },
+  {
+   "text": "de",
+   "start": 56.127,
+   "end": 56.227
+  },
+  {
+   "text": "façon",
+   "start": 56.227,
+   "end": 56.514
+  },
+  {
+   "text": "irrégulière :",
+   "start": 56.514,
+   "end": 57.215
+  },
+  {
+   "text": "on",
+   "start": 57.652,
+   "end": 57.69
+  },
+  {
+   "text": "compte",
+   "start": 57.69,
+   "end": 58.002
+  },
+  {
+   "text": "donc",
+   "start": 58.002,
+   "end": 58.252
+  },
+  {
+   "text": "sur",
+   "start": 58.252,
+   "end": 58.415
+  },
+  {
+   "text": "une",
+   "start": 58.415,
+   "end": 58.514
+  },
+  {
+   "text": "minute",
+   "start": 58.514,
+   "end": 58.802
+  },
+  {
+   "text": "entière.",
+   "start": 58.802,
+   "end": 59.364
+  },
+  {
+   "text": "Les",
+   "start": 59.727,
+   "end": 59.84
+  },
+  {
+   "text": "premiers",
+   "start": 59.84,
+   "end": 60.127
+  },
+  {
+   "text": "mois,",
+   "start": 60.127,
+   "end": 60.427
+  },
+  {
+   "text": "il",
+   "start": 60.739,
+   "end": 60.815
+  },
+  {
+   "text": "respire",
+   "start": 60.815,
+   "end": 61.177
+  },
+  {
+   "text": "surtout",
+   "start": 61.177,
+   "end": 61.465
+  },
+  {
+   "text": "par",
+   "start": 61.465,
+   "end": 61.627
+  },
+  {
+   "text": "le",
+   "start": 61.627,
+   "end": 61.702
+  },
+  {
+   "text": "nez :",
+   "start": 61.702,
+   "end": 61.952
+  },
+  {
+   "text": "un",
+   "start": 62.327,
+   "end": 62.44
+  },
+  {
+   "text": "nez",
+   "start": 62.44,
+   "end": 62.552
+  },
+  {
+   "text": "bouché",
+   "start": 62.552,
+   "end": 62.852
+  },
+  {
+   "text": "le",
+   "start": 62.852,
+   "end": 62.965
+  },
+  {
+   "text": "gêne",
+   "start": 62.965,
+   "end": 63.19
+  },
+  {
+   "text": "vraiment.",
+   "start": 63.19,
+   "end": 63.627
+  },
+  {
+   "text": "Et",
+   "start": 64.002,
+   "end": 64.115
+  },
+  {
+   "text": "on",
+   "start": 64.115,
+   "end": 64.177
+  },
+  {
+   "text": "guette",
+   "start": 64.177,
+   "end": 64.402
+  },
+  {
+   "text": "les",
+   "start": 64.402,
+   "end": 64.502
+  },
+  {
+   "text": "signes",
+   "start": 64.502,
+   "end": 64.777
+  },
+  {
+   "text": "de",
+   "start": 64.777,
+   "end": 64.889
+  },
+  {
+   "text": "lutte :",
+   "start": 64.889,
+   "end": 65.227
+  },
+  {
+   "text": "le",
+   "start": 65.502,
+   "end": 65.565
+  },
+  {
+   "text": "tirage,",
+   "start": 65.565,
+   "end": 66.127
+  },
+  {
+   "text": "les",
+   "start": 66.315,
+   "end": 66.415
+  },
+  {
+   "text": "ailes",
+   "start": 66.415,
+   "end": 66.577
+  },
+  {
+   "text": "du",
+   "start": 66.577,
+   "end": 66.69
+  },
+  {
+   "text": "nez",
+   "start": 66.69,
+   "end": 66.802
+  },
+  {
+   "text": "qui",
+   "start": 66.802,
+   "end": 66.952
+  },
+  {
+   "text": "battent,",
+   "start": 66.952,
+   "end": 67.29
+  },
+  {
+   "text": "et",
+   "start": 67.59,
+   "end": 67.627
+  },
+  {
+   "text": "un",
+   "start": 67.627,
+   "end": 67.677
+  },
+  {
+   "text": "petit",
+   "start": 67.677,
+   "end": 67.927
+  },
+  {
+   "text": "geignement,",
+   "start": 67.927,
+   "end": 68.415
+  },
+  {
+   "text": "comme",
+   "start": 68.577,
+   "end": 68.727
+  },
+  {
+   "text": "une",
+   "start": 68.727,
+   "end": 68.852
+  },
+  {
+   "text": "plainte.",
+   "start": 68.852,
+   "end": 69.34
+  },
+  {
+   "text": "Pour",
+   "start": 70.165,
+   "end": 70.265
+  },
+  {
+   "text": "la",
+   "start": 70.265,
+   "end": 70.353
+  },
+  {
+   "text": "tension,",
+   "start": 70.353,
+   "end": 70.853
+  },
+  {
+   "text": "on",
+   "start": 71.078,
+   "end": 71.103
+  },
+  {
+   "text": "regarde",
+   "start": 71.103,
+   "end": 71.465
+  },
+  {
+   "text": "le",
+   "start": 71.465,
+   "end": 71.565
+  },
+  {
+   "text": "chiffre",
+   "start": 71.565,
+   "end": 71.865
+  },
+  {
+   "text": "du",
+   "start": 71.865,
+   "end": 72.04
+  },
+  {
+   "text": "haut,",
+   "start": 72.04,
+   "end": 72.228
+  },
+  {
+   "text": "la",
+   "start": 72.465,
+   "end": 72.54
+  },
+  {
+   "text": "systolique :",
+   "start": 72.54,
+   "end": 73.19
+  },
+  {
+   "text": "de",
+   "start": 73.615,
+   "end": 73.69
+  },
+  {
+   "text": "soixante-dix",
+   "start": 73.69,
+   "end": 74.228
+  },
+  {
+   "text": "à",
+   "start": 74.228,
+   "end": 74.303
+  },
+  {
+   "text": "cent",
+   "start": 74.303,
+   "end": 74.49
+  },
+  {
+   "text": "chez",
+   "start": 74.49,
+   "end": 74.653
+  },
+  {
+   "text": "le",
+   "start": 74.653,
+   "end": 74.728
+  },
+  {
+   "text": "bébé,",
+   "start": 74.728,
+   "end": 75.127
+  },
+  {
+   "text": "de",
+   "start": 75.502,
+   "end": 75.553
+  },
+  {
+   "text": "quatre-vingt-dix",
+   "start": 75.553,
+   "end": 76.115
+  },
+  {
+   "text": "à",
+   "start": 76.115,
+   "end": 76.178
+  },
+  {
+   "text": "cent",
+   "start": 76.178,
+   "end": 76.353
+  },
+  {
+   "text": "vingt",
+   "start": 76.353,
+   "end": 76.478
+  },
+  {
+   "text": "chez",
+   "start": 76.478,
+   "end": 76.578
+  },
+  {
+   "text": "l'enfant,",
+   "start": 76.578,
+   "end": 77.015
+  },
+  {
+   "text": "et",
+   "start": 77.403,
+   "end": 77.465
+  },
+  {
+   "text": "de",
+   "start": 77.465,
+   "end": 77.59
+  },
+  {
+   "text": "cent",
+   "start": 77.59,
+   "end": 77.752
+  },
+  {
+   "text": "dix",
+   "start": 77.752,
+   "end": 77.965
+  },
+  {
+   "text": "à",
+   "start": 77.965,
+   "end": 78.028
+  },
+  {
+   "text": "cent",
+   "start": 78.028,
+   "end": 78.165
+  },
+  {
+   "text": "trente",
+   "start": 78.165,
+   "end": 78.428
+  },
+  {
+   "text": "chez",
+   "start": 78.428,
+   "end": 78.502
+  },
+  {
+   "text": "l'ado.",
+   "start": 78.502,
+   "end": 78.915
+  },
+  {
+   "text": "Le",
+   "start": 79.303,
+   "end": 79.403
+  },
+  {
+   "text": "brassard",
+   "start": 79.403,
+   "end": 79.79
+  },
+  {
+   "text": "doit",
+   "start": 79.79,
+   "end": 79.903
+  },
+  {
+   "text": "être",
+   "start": 79.903,
+   "end": 80.127
+  },
+  {
+   "text": "adapté",
+   "start": 80.127,
+   "end": 80.453
+  },
+  {
+   "text": "à",
+   "start": 80.453,
+   "end": 80.502
+  },
+  {
+   "text": "son",
+   "start": 80.502,
+   "end": 80.678
+  },
+  {
+   "text": "bras :",
+   "start": 80.678,
+   "end": 80.953
+  },
+  {
+   "text": "trop",
+   "start": 81.328,
+   "end": 81.49
+  },
+  {
+   "text": "petit,",
+   "start": 81.49,
+   "end": 81.965
+  },
+  {
+   "text": "il",
+   "start": 82.278,
+   "end": 82.39
+  },
+  {
+   "text": "donne",
+   "start": 82.39,
+   "end": 82.553
+  },
+  {
+   "text": "une",
+   "start": 82.553,
+   "end": 82.627
+  },
+  {
+   "text": "tension",
+   "start": 82.627,
+   "end": 82.94
+  },
+  {
+   "text": "trop",
+   "start": 82.94,
+   "end": 83.127
+  },
+  {
+   "text": "haute.",
+   "start": 83.127,
+   "end": 83.502
+  },
+  {
+   "text": "Et",
+   "start": 83.84,
+   "end": 83.99
+  },
+  {
+   "text": "chez",
+   "start": 83.99,
+   "end": 84.127
+  },
+  {
+   "text": "l'enfant,",
+   "start": 84.127,
+   "end": 84.603
+  },
+  {
+   "text": "la",
+   "start": 84.89,
+   "end": 84.965
+  },
+  {
+   "text": "tension",
+   "start": 84.965,
+   "end": 85.365
+  },
+  {
+   "text": "baisse",
+   "start": 85.365,
+   "end": 85.59
+  },
+  {
+   "text": "en",
+   "start": 85.59,
+   "end": 85.64
+  },
+  {
+   "text": "dernier :",
+   "start": 85.64,
+   "end": 86.078
+  },
+  {
+   "text": "son",
+   "start": 86.465,
+   "end": 86.603
+  },
+  {
+   "text": "cœur",
+   "start": 86.603,
+   "end": 86.79
+  },
+  {
+   "text": "accélère",
+   "start": 86.79,
+   "end": 87.178
+  },
+  {
+   "text": "d'abord",
+   "start": 87.178,
+   "end": 87.553
+  },
+  {
+   "text": "pour",
+   "start": 87.553,
+   "end": 87.703
+  },
+  {
+   "text": "compenser.",
+   "start": 87.703,
+   "end": 88.315
+  },
+  {
+   "text": "Une",
+   "start": 88.665,
+   "end": 88.877
+  },
+  {
+   "text": "tension",
+   "start": 88.877,
+   "end": 89.228
+  },
+  {
+   "text": "basse,",
+   "start": 89.228,
+   "end": 89.653
+  },
+  {
+   "text": "c'est",
+   "start": 89.877,
+   "end": 90.028
+  },
+  {
+   "text": "donc",
+   "start": 90.028,
+   "end": 90.278
+  },
+  {
+   "text": "déjà",
+   "start": 90.278,
+   "end": 90.515
+  },
+  {
+   "text": "grave.",
+   "start": 90.515,
+   "end": 90.99
+  },
+  {
+   "text": "Pour",
+   "start": 91.842,
+   "end": 91.929
+  },
+  {
+   "text": "la",
+   "start": 91.929,
+   "end": 92.004
+  },
+  {
+   "text": "température,",
+   "start": 92.004,
+   "end": 92.779
+  },
+  {
+   "text": "les",
+   "start": 93.079,
+   "end": 93.166
+  },
+  {
+   "text": "chiffres",
+   "start": 93.166,
+   "end": 93.492
+  },
+  {
+   "text": "ne",
+   "start": 93.492,
+   "end": 93.604
+  },
+  {
+   "text": "changent",
+   "start": 93.604,
+   "end": 93.867
+  },
+  {
+   "text": "pas :",
+   "start": 93.867,
+   "end": 94.092
+  },
+  {
+   "text": "il",
+   "start": 94.541,
+   "end": 94.654
+  },
+  {
+   "text": "y",
+   "start": 94.654,
+   "end": 94.717
+  },
+  {
+   "text": "a",
+   "start": 94.717,
+   "end": 94.754
+  },
+  {
+   "text": "fièvre",
+   "start": 94.754,
+   "end": 95.092
+  },
+  {
+   "text": "dès",
+   "start": 95.092,
+   "end": 95.179
+  },
+  {
+   "text": "trente-huit",
+   "start": 95.179,
+   "end": 95.479
+  },
+  {
+   "text": "degrés.",
+   "start": 95.479,
+   "end": 95.929
+  },
+  {
+   "text": "Ce",
+   "start": 96.279,
+   "end": 96.467
+  },
+  {
+   "text": "qui",
+   "start": 96.467,
+   "end": 96.617
+  },
+  {
+   "text": "change,",
+   "start": 96.617,
+   "end": 97.041
+  },
+  {
+   "text": "c'est",
+   "start": 97.229,
+   "end": 97.367
+  },
+  {
+   "text": "la",
+   "start": 97.367,
+   "end": 97.454
+  },
+  {
+   "text": "mesure :",
+   "start": 97.454,
+   "end": 97.929
+  },
+  {
+   "text": "chez",
+   "start": 98.317,
+   "end": 98.429
+  },
+  {
+   "text": "le",
+   "start": 98.429,
+   "end": 98.529
+  },
+  {
+   "text": "bébé,",
+   "start": 98.529,
+   "end": 98.929
+  },
+  {
+   "text": "la",
+   "start": 99.254,
+   "end": 99.317
+  },
+  {
+   "text": "référence,",
+   "start": 99.317,
+   "end": 99.979
+  },
+  {
+   "text": "c'est",
+   "start": 100.204,
+   "end": 100.329
+  },
+  {
+   "text": "le",
+   "start": 100.329,
+   "end": 100.416
+  },
+  {
+   "text": "thermomètre",
+   "start": 100.416,
+   "end": 100.954
+  },
+  {
+   "text": "rectal.",
+   "start": 100.954,
+   "end": 101.592
+  },
+  {
+   "text": "Le",
+   "start": 101.979,
+   "end": 102.092
+  },
+  {
+   "text": "nouveau-né",
+   "start": 102.092,
+   "end": 102.492
+  },
+  {
+   "text": "se",
+   "start": 102.492,
+   "end": 102.617
+  },
+  {
+   "text": "refroidit",
+   "start": 102.617,
+   "end": 103.054
+  },
+  {
+   "text": "très",
+   "start": 103.054,
+   "end": 103.267
+  },
+  {
+   "text": "vite :",
+   "start": 103.267,
+   "end": 103.617
+  },
+  {
+   "text": "on",
+   "start": 104.004,
+   "end": 104.029
+  },
+  {
+   "text": "le",
+   "start": 104.029,
+   "end": 104.129
+  },
+  {
+   "text": "couvre,",
+   "start": 104.129,
+   "end": 104.541
+  },
+  {
+   "text": "avec",
+   "start": 104.704,
+   "end": 104.904
+  },
+  {
+   "text": "un",
+   "start": 104.904,
+   "end": 104.967
+  },
+  {
+   "text": "bonnet.",
+   "start": 104.967,
+   "end": 105.354
+  },
+  {
+   "text": "Et",
+   "start": 105.692,
+   "end": 105.829
+  },
+  {
+   "text": "une",
+   "start": 105.829,
+   "end": 105.929
+  },
+  {
+   "text": "fièvre",
+   "start": 105.929,
+   "end": 106.254
+  },
+  {
+   "text": "avant",
+   "start": 106.254,
+   "end": 106.404
+  },
+  {
+   "text": "trois",
+   "start": 106.404,
+   "end": 106.592
+  },
+  {
+   "text": "mois,",
+   "start": 106.592,
+   "end": 106.854
+  },
+  {
+   "text": "c'est",
+   "start": 107.179,
+   "end": 107.291
+  },
+  {
+   "text": "un",
+   "start": 107.291,
+   "end": 107.442
+  },
+  {
+   "text": "signe",
+   "start": 107.442,
+   "end": 107.679
+  },
+  {
+   "text": "de",
+   "start": 107.679,
+   "end": 107.767
+  },
+  {
+   "text": "gravité :",
+   "start": 107.767,
+   "end": 108.329
+  },
+  {
+   "text": "on",
+   "start": 108.754,
+   "end": 108.792
+  },
+  {
+   "text": "demande",
+   "start": 108.792,
+   "end": 109.117
+  },
+  {
+   "text": "un",
+   "start": 109.117,
+   "end": 109.154
+  },
+  {
+   "text": "avis",
+   "start": 109.154,
+   "end": 109.367
+  },
+  {
+   "text": "médical",
+   "start": 109.367,
+   "end": 109.854
+  },
+  {
+   "text": "sans",
+   "start": 109.854,
+   "end": 110.017
+  },
+  {
+   "text": "attendre.",
+   "start": 110.017,
+   "end": 110.654
+  },
+  {
+   "text": "Pour",
+   "start": 111.452,
+   "end": 111.615
+  },
+  {
+   "text": "la",
+   "start": 111.615,
+   "end": 111.689
+  },
+  {
+   "text": "glycémie,",
+   "start": 111.689,
+   "end": 112.29
+  },
+  {
+   "text": "l'enfant",
+   "start": 112.677,
+   "end": 112.99
+  },
+  {
+   "text": "et",
+   "start": 112.99,
+   "end": 113.064
+  },
+  {
+   "text": "l'ado",
+   "start": 113.064,
+   "end": 113.415
+  },
+  {
+   "text": "gardent",
+   "start": 113.415,
+   "end": 113.677
+  },
+  {
+   "text": "les",
+   "start": 113.677,
+   "end": 113.764
+  },
+  {
+   "text": "mêmes",
+   "start": 113.764,
+   "end": 113.952
+  },
+  {
+   "text": "repères",
+   "start": 113.952,
+   "end": 114.29
+  },
+  {
+   "text": "que",
+   "start": 114.29,
+   "end": 114.389
+  },
+  {
+   "text": "l'adulte.",
+   "start": 114.389,
+   "end": 115.014
+  },
+  {
+   "text": "Ce",
+   "start": 115.365,
+   "end": 115.514
+  },
+  {
+   "text": "qui",
+   "start": 115.514,
+   "end": 115.665
+  },
+  {
+   "text": "change,",
+   "start": 115.665,
+   "end": 116.115
+  },
+  {
+   "text": "c'est",
+   "start": 116.314,
+   "end": 116.452
+  },
+  {
+   "text": "le",
+   "start": 116.452,
+   "end": 116.54
+  },
+  {
+   "text": "nouveau-né :",
+   "start": 116.54,
+   "end": 117.052
+  },
+  {
+   "text": "les",
+   "start": 117.365,
+   "end": 117.427
+  },
+  {
+   "text": "premiers",
+   "start": 117.427,
+   "end": 117.74
+  },
+  {
+   "text": "jours,",
+   "start": 117.74,
+   "end": 118.077
+  },
+  {
+   "text": "il",
+   "start": 118.327,
+   "end": 118.389
+  },
+  {
+   "text": "a",
+   "start": 118.389,
+   "end": 118.427
+  },
+  {
+   "text": "ses",
+   "start": 118.427,
+   "end": 118.54
+  },
+  {
+   "text": "propres",
+   "start": 118.54,
+   "end": 118.889
+  },
+  {
+   "text": "seuils,",
+   "start": 118.889,
+   "end": 119.252
+  },
+  {
+   "text": "plus",
+   "start": 119.415,
+   "end": 119.577
+  },
+  {
+   "text": "bas.",
+   "start": 119.577,
+   "end": 119.877
+  },
+  {
+   "text": "On",
+   "start": 120.227,
+   "end": 120.365
+  },
+  {
+   "text": "ne",
+   "start": 120.365,
+   "end": 120.439
+  },
+  {
+   "text": "le",
+   "start": 120.439,
+   "end": 120.527
+  },
+  {
+   "text": "pique",
+   "start": 120.527,
+   "end": 120.74
+  },
+  {
+   "text": "pas",
+   "start": 120.74,
+   "end": 120.852
+  },
+  {
+   "text": "au",
+   "start": 120.852,
+   "end": 120.952
+  },
+  {
+   "text": "doigt,",
+   "start": 120.952,
+   "end": 121.264
+  },
+  {
+   "text": "mais",
+   "start": 121.602,
+   "end": 121.677
+  },
+  {
+   "text": "sur",
+   "start": 121.677,
+   "end": 121.827
+  },
+  {
+   "text": "le",
+   "start": 121.827,
+   "end": 121.902
+  },
+  {
+   "text": "côté",
+   "start": 121.902,
+   "end": 122.152
+  },
+  {
+   "text": "du",
+   "start": 122.152,
+   "end": 122.264
+  },
+  {
+   "text": "talon.",
+   "start": 122.264,
+   "end": 122.665
+  },
+  {
+   "text": "Et",
+   "start": 123.014,
+   "end": 123.127
+  },
+  {
+   "text": "chez",
+   "start": 123.127,
+   "end": 123.29
+  },
+  {
+   "text": "lui,",
+   "start": 123.29,
+   "end": 123.577
+  },
+  {
+   "text": "une",
+   "start": 124.002,
+   "end": 124.09
+  },
+  {
+   "text": "hypoglycémie",
+   "start": 124.09,
+   "end": 124.752
+  },
+  {
+   "text": "se",
+   "start": 124.752,
+   "end": 124.877
+  },
+  {
+   "text": "voit",
+   "start": 124.877,
+   "end": 125.002
+  },
+  {
+   "text": "autrement :",
+   "start": 125.002,
+   "end": 125.452
+  },
+  {
+   "text": "il",
+   "start": 125.865,
+   "end": 125.977
+  },
+  {
+   "text": "tremble,",
+   "start": 125.977,
+   "end": 126.427
+  },
+  {
+   "text": "il",
+   "start": 126.59,
+   "end": 126.665
+  },
+  {
+   "text": "tète",
+   "start": 126.665,
+   "end": 126.889
+  },
+  {
+   "text": "mal,",
+   "start": 126.889,
+   "end": 127.202
+  },
+  {
+   "text": "ou",
+   "start": 127.527,
+   "end": 127.577
+  },
+  {
+   "text": "il",
+   "start": 127.577,
+   "end": 127.652
+  },
+  {
+   "text": "devient",
+   "start": 127.652,
+   "end": 127.94
+  },
+  {
+   "text": "tout",
+   "start": 127.94,
+   "end": 128.102
+  },
+  {
+   "text": "mou.",
+   "start": 128.102,
+   "end": 128.364
+  },
+  {
+   "text": "Pour",
+   "start": 129.194,
+   "end": 129.293
+  },
+  {
+   "text": "la",
+   "start": 129.293,
+   "end": 129.368
+  },
+  {
+   "text": "saturation,",
+   "start": 129.368,
+   "end": 130.131
+  },
+  {
+   "text": "la",
+   "start": 130.431,
+   "end": 130.493
+  },
+  {
+   "text": "norme",
+   "start": 130.493,
+   "end": 130.781
+  },
+  {
+   "text": "reste",
+   "start": 130.781,
+   "end": 131.043
+  },
+  {
+   "text": "la",
+   "start": 131.043,
+   "end": 131.156
+  },
+  {
+   "text": "même :",
+   "start": 131.156,
+   "end": 131.456
+  },
+  {
+   "text": "au-dessus",
+   "start": 131.893,
+   "end": 132.231
+  },
+  {
+   "text": "de",
+   "start": 132.231,
+   "end": 132.331
+  },
+  {
+   "text": "95 %.",
+   "start": 132.331,
+   "end": 133.431
+  },
+  {
+   "text": "Ce",
+   "start": 133.781,
+   "end": 133.969
+  },
+  {
+   "text": "qui",
+   "start": 133.969,
+   "end": 134.118
+  },
+  {
+   "text": "change,",
+   "start": 134.118,
+   "end": 134.543
+  },
+  {
+   "text": "c'est",
+   "start": 134.719,
+   "end": 134.831
+  },
+  {
+   "text": "le",
+   "start": 134.831,
+   "end": 134.906
+  },
+  {
+   "text": "capteur :",
+   "start": 134.906,
+   "end": 135.444
+  },
+  {
+   "text": "chez",
+   "start": 135.844,
+   "end": 135.944
+  },
+  {
+   "text": "le",
+   "start": 135.944,
+   "end": 136.043
+  },
+  {
+   "text": "bébé,",
+   "start": 136.043,
+   "end": 136.444
+  },
+  {
+   "text": "il",
+   "start": 136.793,
+   "end": 136.893
+  },
+  {
+   "text": "s'enroule",
+   "start": 136.893,
+   "end": 137.231
+  },
+  {
+   "text": "autour",
+   "start": 137.231,
+   "end": 137.469
+  },
+  {
+   "text": "du",
+   "start": 137.469,
+   "end": 137.569
+  },
+  {
+   "text": "pied",
+   "start": 137.569,
+   "end": 137.868
+  },
+  {
+   "text": "ou",
+   "start": 137.868,
+   "end": 137.906
+  },
+  {
+   "text": "de",
+   "start": 137.906,
+   "end": 138.006
+  },
+  {
+   "text": "la",
+   "start": 138.006,
+   "end": 138.106
+  },
+  {
+   "text": "main.",
+   "start": 138.106,
+   "end": 138.393
+  },
+  {
+   "text": "Et",
+   "start": 138.743,
+   "end": 138.881
+  },
+  {
+   "text": "s'il",
+   "start": 138.881,
+   "end": 139.106
+  },
+  {
+   "text": "bouge",
+   "start": 139.106,
+   "end": 139.344
+  },
+  {
+   "text": "ou",
+   "start": 139.344,
+   "end": 139.381
+  },
+  {
+   "text": "s'il",
+   "start": 139.381,
+   "end": 139.569
+  },
+  {
+   "text": "pleure,",
+   "start": 139.569,
+   "end": 139.944
+  },
+  {
+   "text": "la",
+   "start": 140.243,
+   "end": 140.293
+  },
+  {
+   "text": "valeur",
+   "start": 140.293,
+   "end": 140.556
+  },
+  {
+   "text": "peut",
+   "start": 140.556,
+   "end": 140.656
+  },
+  {
+   "text": "être",
+   "start": 140.656,
+   "end": 140.931
+  },
+  {
+   "text": "fausse :",
+   "start": 140.931,
+   "end": 141.368
+  },
+  {
+   "text": "on",
+   "start": 141.781,
+   "end": 141.806
+  },
+  {
+   "text": "vérifie",
+   "start": 141.806,
+   "end": 142.194
+  },
+  {
+   "text": "que",
+   "start": 142.194,
+   "end": 142.281
+  },
+  {
+   "text": "la",
+   "start": 142.281,
+   "end": 142.368
+  },
+  {
+   "text": "courbe",
+   "start": 142.368,
+   "end": 142.643
+  },
+  {
+   "text": "est",
+   "start": 142.643,
+   "end": 142.681
+  },
+  {
+   "text": "bien",
+   "start": 142.681,
+   "end": 142.856
+  },
+  {
+   "text": "régulière.",
+   "start": 142.856,
+   "end": 143.506
+  },
+  {
+   "text": "La",
+   "start": 144.342,
+   "end": 144.467
+  },
+  {
+   "text": "diurèse,",
+   "start": 144.467,
+   "end": 144.954
+  },
+  {
+   "text": "elle,",
+   "start": 145.105,
+   "end": 145.355
+  },
+  {
+   "text": "se",
+   "start": 145.454,
+   "end": 145.567
+  },
+  {
+   "text": "calcule",
+   "start": 145.567,
+   "end": 145.942
+  },
+  {
+   "text": "selon",
+   "start": 145.942,
+   "end": 146.142
+  },
+  {
+   "text": "le",
+   "start": 146.142,
+   "end": 146.242
+  },
+  {
+   "text": "poids,",
+   "start": 146.242,
+   "end": 146.542
+  },
+  {
+   "text": "en",
+   "start": 146.804,
+   "end": 146.829
+  },
+  {
+   "text": "millilitres",
+   "start": 146.829,
+   "end": 147.317
+  },
+  {
+   "text": "par",
+   "start": 147.317,
+   "end": 147.48
+  },
+  {
+   "text": "kilo",
+   "start": 147.48,
+   "end": 147.73
+  },
+  {
+   "text": "et",
+   "start": 147.73,
+   "end": 147.779
+  },
+  {
+   "text": "par",
+   "start": 147.779,
+   "end": 147.967
+  },
+  {
+   "text": "heure :",
+   "start": 147.967,
+   "end": 148.179
+  },
+  {
+   "text": "environ",
+   "start": 148.692,
+   "end": 149.029
+  },
+  {
+   "text": "deux",
+   "start": 149.029,
+   "end": 149.167
+  },
+  {
+   "text": "chez",
+   "start": 149.167,
+   "end": 149.317
+  },
+  {
+   "text": "le",
+   "start": 149.317,
+   "end": 149.404
+  },
+  {
+   "text": "bébé,",
+   "start": 149.404,
+   "end": 149.804
+  },
+  {
+   "text": "un",
+   "start": 150.117,
+   "end": 150.23
+  },
+  {
+   "text": "chez",
+   "start": 150.23,
+   "end": 150.342
+  },
+  {
+   "text": "l'enfant,",
+   "start": 150.342,
+   "end": 150.817
+  },
+  {
+   "text": "et",
+   "start": 151.167,
+   "end": 151.254
+  },
+  {
+   "text": "un",
+   "start": 151.254,
+   "end": 151.317
+  },
+  {
+   "text": "demi",
+   "start": 151.317,
+   "end": 151.605
+  },
+  {
+   "text": "à",
+   "start": 151.605,
+   "end": 151.717
+  },
+  {
+   "text": "un",
+   "start": 151.717,
+   "end": 151.804
+  },
+  {
+   "text": "chez",
+   "start": 151.804,
+   "end": 151.942
+  },
+  {
+   "text": "l'ado.",
+   "start": 151.942,
+   "end": 152.355
+  },
+  {
+   "text": "Et",
+   "start": 152.704,
+   "end": 152.867
+  },
+  {
+   "text": "pour",
+   "start": 152.867,
+   "end": 153.067
+  },
+  {
+   "text": "un",
+   "start": 153.067,
+   "end": 153.117
+  },
+  {
+   "text": "bébé",
+   "start": 153.117,
+   "end": 153.367
+  },
+  {
+   "text": "en",
+   "start": 153.367,
+   "end": 153.454
+  },
+  {
+   "text": "couche ?",
+   "start": 153.454,
+   "end": 153.942
+  },
+  {
+   "text": "On",
+   "start": 154.279,
+   "end": 154.429
+  },
+  {
+   "text": "pèse",
+   "start": 154.429,
+   "end": 154.654
+  },
+  {
+   "text": "la",
+   "start": 154.654,
+   "end": 154.742
+  },
+  {
+   "text": "couche :",
+   "start": 154.742,
+   "end": 155.179
+  },
+  {
+   "text": "un",
+   "start": 155.517,
+   "end": 155.567
+  },
+  {
+   "text": "gramme",
+   "start": 155.567,
+   "end": 155.804
+  },
+  {
+   "text": "de",
+   "start": 155.804,
+   "end": 155.904
+  },
+  {
+   "text": "plus,",
+   "start": 155.904,
+   "end": 156.367
+  },
+  {
+   "text": "c'est",
+   "start": 156.579,
+   "end": 156.704
+  },
+  {
+   "text": "environ",
+   "start": 156.704,
+   "end": 157.142
+  },
+  {
+   "text": "un",
+   "start": 157.142,
+   "end": 157.23
+  },
+  {
+   "text": "millilitre",
+   "start": 157.23,
+   "end": 157.73
+  },
+  {
+   "text": "d'urine.",
+   "start": 157.73,
+   "end": 158.279
+  },
+  {
+   "text": "Petit",
+   "start": 159.092,
+   "end": 159.405
+  },
+  {
+   "text": "récap !",
+   "start": 159.405,
+   "end": 159.992
+  },
+  {
+   "text": "Plus",
+   "start": 160.342,
+   "end": 160.492
+  },
+  {
+   "text": "il",
+   "start": 160.492,
+   "end": 160.642
+  },
+  {
+   "text": "est",
+   "start": 160.642,
+   "end": 160.679
+  },
+  {
+   "text": "petit,",
+   "start": 160.679,
+   "end": 161.155
+  },
+  {
+   "text": "plus",
+   "start": 161.429,
+   "end": 161.617
+  },
+  {
+   "text": "son",
+   "start": 161.617,
+   "end": 161.755
+  },
+  {
+   "text": "cœur",
+   "start": 161.755,
+   "end": 161.98
+  },
+  {
+   "text": "et",
+   "start": 161.98,
+   "end": 162.017
+  },
+  {
+   "text": "sa",
+   "start": 162.017,
+   "end": 162.142
+  },
+  {
+   "text": "respiration",
+   "start": 162.142,
+   "end": 162.692
+  },
+  {
+   "text": "vont",
+   "start": 162.692,
+   "end": 162.842
+  },
+  {
+   "text": "vite,",
+   "start": 162.842,
+   "end": 163.179
+  },
+  {
+   "text": "et",
+   "start": 163.53,
+   "end": 163.567
+  },
+  {
+   "text": "plus",
+   "start": 163.567,
+   "end": 163.78
+  },
+  {
+   "text": "sa",
+   "start": 163.78,
+   "end": 163.867
+  },
+  {
+   "text": "tension",
+   "start": 163.867,
+   "end": 164.217
+  },
+  {
+   "text": "est",
+   "start": 164.217,
+   "end": 164.292
+  },
+  {
+   "text": "basse.",
+   "start": 164.292,
+   "end": 164.78
+  },
+  {
+   "text": "Chez",
+   "start": 165.117,
+   "end": 165.355
+  },
+  {
+   "text": "le",
+   "start": 165.355,
+   "end": 165.442
+  },
+  {
+   "text": "bébé :",
+   "start": 165.442,
+   "end": 165.792
+  },
+  {
+   "text": "stéthoscope,",
+   "start": 166.192,
+   "end": 166.842
+  },
+  {
+   "text": "une",
+   "start": 167.067,
+   "end": 167.142
+  },
+  {
+   "text": "minute",
+   "start": 167.142,
+   "end": 167.417
+  },
+  {
+   "text": "entière,",
+   "start": 167.417,
+   "end": 167.905
+  },
+  {
+   "text": "brassard",
+   "start": 168.179,
+   "end": 168.53
+  },
+  {
+   "text": "adapté,",
+   "start": 168.53,
+   "end": 169.054
+  },
+  {
+   "text": "thermomètre",
+   "start": 169.329,
+   "end": 169.842
+  },
+  {
+   "text": "rectal,",
+   "start": 169.842,
+   "end": 170.367
+  },
+  {
+   "text": "le",
+   "start": 170.655,
+   "end": 170.717
+  },
+  {
+   "text": "talon",
+   "start": 170.717,
+   "end": 170.992
+  },
+  {
+   "text": "pour",
+   "start": 170.992,
+   "end": 171.092
+  },
+  {
+   "text": "la",
+   "start": 171.092,
+   "end": 171.179
+  },
+  {
+   "text": "glycémie,",
+   "start": 171.179,
+   "end": 171.717
+  },
+  {
+   "text": "le",
+   "start": 171.992,
+   "end": 172.042
+  },
+  {
+   "text": "capteur",
+   "start": 172.042,
+   "end": 172.392
+  },
+  {
+   "text": "au",
+   "start": 172.392,
+   "end": 172.442
+  },
+  {
+   "text": "pied…",
+   "start": 172.442,
+   "end": 172.817
+  },
+  {
+   "text": "et",
+   "start": 173.142,
+   "end": 173.217
+  },
+  {
+   "text": "la",
+   "start": 173.217,
+   "end": 173.317
+  },
+  {
+   "text": "couche",
+   "start": 173.317,
+   "end": 173.579
+  },
+  {
+   "text": "sur",
+   "start": 173.579,
+   "end": 173.692
+  },
+  {
+   "text": "la",
+   "start": 173.692,
+   "end": 173.767
+  },
+  {
+   "text": "balance.",
+   "start": 173.767,
+   "end": 174.292
+  },
+  {
+   "text": "Et",
+   "start": 174.63,
+   "end": 174.742
+  },
+  {
+   "text": "l'ado ?",
+   "start": 174.742,
+   "end": 175.179
+  },
+  {
+   "text": "Il",
+   "start": 175.517,
+   "end": 175.704
+  },
+  {
+   "text": "est",
+   "start": 175.704,
+   "end": 175.742
+  },
+  {
+   "text": "presque",
+   "start": 175.742,
+   "end": 176.13
+  },
+  {
+   "text": "comme",
+   "start": 176.13,
+   "end": 176.304
+  },
+  {
+   "text": "l'adulte !",
+   "start": 176.304,
+   "end": 176.917
+  }
+ ]
+}

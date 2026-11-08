@@ -38,6 +38,7 @@ pas de logiciel de montage, pas de banque d'images.
 | 26 | Le diabète 1/2 : les 3 types (série, accroche « paradoxe ») | `Diabete-1` | [voix/26-diabete-1.script.json](voix/26-diabete-1.script.json) | [storyboard](docs/lpi/storyboard-diabete-serie.md) |
 | 26 | Le diabète 2/2 : le découvrir et le soigner (série) | `Diabete-2` | [voix/26-diabete-2.script.json](voix/26-diabete-2.script.json) | [storyboard](docs/lpi/storyboard-diabete-serie.md) |
 | 27 | Promo : quiz éclair + les 7 vidéos des constantes → quiz gratuit lapetiteide.fr | `Quiz-Constantes` | [voix/27-quiz-constantes.script.json](voix/27-quiz-constantes.script.json) | [storyboard](docs/lpi/storyboard-quiz-constantes.md) |
+| 28 | Les constantes de l'enfant (0 – 2 · 2 – 11 · 12 – 17 ans) : seulement ce qui change | `Constantes-Enfant` | [voix/28-constantes-enfant.script.json](voix/28-constantes-enfant.script.json) | [storyboard](docs/lpi/storyboard-constantes-enfant.md) |
 
 ## Utilisation
 
