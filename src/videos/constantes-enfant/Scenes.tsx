@@ -13,7 +13,9 @@ import {CauseChip, Head, Pill, RecapScene, Stopwatch} from '../../brand/episode'
 import {AgeTable, Baby, BabyFoot, Bottle, CompChart, Cuff, Diaper, KidMonitor, KitchenScale, Pleth, ThermoStick} from '../../brand/kids';
 import {Stamp} from '../../brand/kit';
 import {Burst, Camera, LiveBackground, Stage} from '../../brand/motion3';
+import {Glucometer} from '../../brand/glyco';
 import {Patient} from '../../brand/patient';
+import {BPReadout} from '../../brand/pressure';
 import {Sfx} from '../../brand/Sfx';
 import {alpha, FONT, LPI, SHADOW} from '../../brand/theme';
 import {clamp, Title} from '../../brand/ui';
@@ -106,6 +108,38 @@ const O2Bubble: React.FC<{size?: number; fill: number}> = ({size = 120, fill}) =
 		</text>
 	</svg>
 );
+
+/** Sous les cartes, pendant que la voix lit les valeurs : un cœur (ou des poumons) au rythme de l'âge en cours. */
+const AgeRhythm: React.FC<{from: number; to: number; ats: number[]; periods: number[]; kind: 'heart' | 'lungs'}> = ({from, to, ats, periods, kind}) => {
+	const frame = useCurrentFrame();
+	if (frame < from || frame > to + 10) return null;
+	const k = frame < ats[1] ? 0 : frame < ats[2] ? 1 : 2;
+	const o = fadeIn(frame, from, 8) * (1 - fadeIn(frame, to, 10));
+	const labels = ['bébé', 'enfant', 'ado'];
+	const tones = [LPI.pink, LPI.sky, LPI.blue];
+	const b = 0.5 - 0.5 * Math.cos(((frame - ats[k]) / periods[k]) * Math.PI * 2);
+	return (
+		<div style={{position: 'absolute', left: 72, top: 820, width: 936, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 20, opacity: o}}>
+			<div style={{height: 300, display: 'flex', alignItems: 'center'}}>
+				{kind === 'heart' ? (
+					<HeartBeat size={300} period={periods[k]} />
+				) : (
+					<div style={{transform: `scale(${1.15 + 0.35 * b})`}}>
+						<svg width={200} height={200} viewBox="0 0 100 100">
+							<path d="M50 10 V44 M50 44 L36 56 M50 44 L64 56" stroke={N} strokeWidth={6} strokeLinecap="round" fill="none" />
+							<path d="M40 30 C22 30 12 56 12 76 C12 90 26 92 36 86 C42 82 44 74 44 64 Z M60 30 C78 30 88 56 88 76 C88 90 74 92 64 86 C58 82 56 74 56 64 Z" fill={LPI.sky} stroke={N} strokeWidth={4} strokeLinejoin="round" />
+						</svg>
+					</div>
+				)}
+			</div>
+			{frame >= ats[0] ? (
+				<div key={k} style={{padding: '10px 34px', borderRadius: 999, background: tones[k], border: `5px solid ${N}`, fontFamily: FONT.title, fontWeight: 900, fontSize: 48, color: k === 2 ? LPI.paper : N, transform: `scale(${popAt(frame, ats[k])})`}}>
+					{kind === 'heart' ? `le cœur d'un ${labels[k]}` : `le souffle d'un ${labels[k]}`}
+				</div>
+			) : null}
+		</div>
+	);
+};
 
 /* ═══════════════════════════════ ACCROCHE « LE PIÈGE » ═══════════════════════════════ */
 // Image 0 : « Tu appelles le médecin ? », le bébé respire vite, le moniteur clignote en rose (FR 45 · FC 140). Deux
@@ -356,6 +390,7 @@ export const Fc: React.FC = () => {
 			<Camera punches={[CENT + 1, S70 + 1, S60 + 1, POIG + 1, STETH + 1, GRAVE + 1]} strength={0.025}>
 				<Head kicker="1 · La fréquence cardiaque" kAt={2} title="Le *cœur*" tAt={8} size={96} />
 				<AgeTable at={[CENT - 3, S70 - 3, S60 - 3]} values={['100 – 160', '70 – 120', '60 – 100']} unit="battements par minute" unitAt={CENT + 20} />
+				<AgeRhythm from={CENT - 6} to={BEBE2 - 10} ats={[CENT - 3, S70 - 3, S60 - 3]} periods={[14, 20, 26]} kind="heart" />
 				<Stage y={780} h={640} at={BEBE2 - 6} bumps={[POIG, STETH, GRAVE]}>
 					<div style={{position: 'absolute', left: 30, top: 70}}>
 						<Baby size={420} breath={breathAt(frame, 40)} steth={fadeIn(frame, ECOUTE - 4, 10)} mood={frame >= RAL ? 'mal' : 'calme'} />
@@ -456,6 +491,7 @@ export const Fr: React.FC = () => {
 			<Camera punches={[T30 + 1, D18 + 1, D12 + 1, VENTRE + 1, NEZ + 1, LUTTE + 1]} strength={0.025}>
 				<Head kicker="2 · La fréquence respiratoire" kAt={2} title="La *respiration*" tAt={8} size={96} />
 				<AgeTable at={[T30 - 3, D18 - 3, D12 - 3]} values={['30 – 50', '18 – 30', '12 – 20']} unit="respirations par minute" unitAt={T30 + 20} />
+				<AgeRhythm from={T30 - 6} to={BEBE2 - 10} ats={[T30 - 3, D18 - 3, D12 - 3]} periods={[45, 75, 110]} kind="lungs" />
 				<Stage y={780} h={640} at={BEBE2 - 6} bumps={[VENTRE, NEZ, LUTTE]}>
 					<div style={{position: 'absolute', left: 20, top: 40}}>
 						<Baby size={420} breath={irregular} snot={fadeIn(frame, BOUCHE - 4, 8) * (1 - fadeIn(frame, SIGNES - 6, 8))} retract={fadeIn(frame, TIRAGE - 2, 8)} flare={fadeIn(frame, AILES - 2, 8)} moan={fadeIn(frame, GEIGN - 2, 8)} mood={frame >= SIGNES ? 'mal' : 'calme'} />
@@ -564,6 +600,18 @@ export const Ta: React.FC = () => {
 			<Camera punches={[S70 + 1, Q90 + 1, C110 + 1, ADAPT + 1, HAUTE + 1, DERN + 1, GRAVE + 1]} strength={0.025}>
 				<Head kicker="3 · La pression artérielle" kAt={2} title="La *tension*" tAt={8} size={96} />
 				<AgeTable at={[S70 - 3, Q90 - 3, C110 - 3]} values={['70 – 100', '90 – 120', '110 – 130']} unit="mmHg · la systolique (le chiffre du haut)" unitAt={SYST - 2} />
+				{frame >= SYST - 6 && frame < BRAS ? (
+					<div style={{position: 'absolute', left: 72, top: 860, width: 936, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 30, opacity: fadeIn(frame, SYST - 6, 8) * (1 - fadeIn(frame, BRAS - 10, 8))}}>
+						<div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 24}}>
+							<BPReadout sys={110} dia={70} size={120} hi="sys" />
+							<div style={{transform: `scale(${popAt(frame, SYST)})`}}>
+								<Pill at={SYST} size={44} color={LPI.pink}>
+									systolique = le chiffre du haut
+								</Pill>
+							</div>
+						</div>
+					</div>
+				) : null}
 				<Stage y={780} h={660} at={BRAS - 6} bumps={[ADAPT, HAUTE, DERN]}>
 					{/* les brassards */}
 					{cuffsOut < 1 ? (
@@ -744,6 +792,18 @@ export const Gly: React.FC = () => {
 				<PillAt from={SEUILS - 2} x={72} y={730} color={LPI.pink} size={34}>
 					nouveau-né, premiers jours : seuils plus bas
 				</PillAt>
+				{frame >= ENF - 6 && frame < PIQUE ? (
+					<div style={{position: 'absolute', left: 72, top: 800, width: 936, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 30, opacity: fadeIn(frame, ENF - 6, 8) * (1 - fadeIn(frame, PIQUE - 10, 8))}}>
+						<div style={{transform: 'scale(0.85)'}}>
+							<Glucometer value={interpolate(frame, [ENF, ENF + 24], [0, 0.95], clamp)} strip={1} blood={1} tone={null} beep={0} />
+						</div>
+						<div style={{fontFamily: FONT.title, fontWeight: 900, fontSize: 52, color: N, lineHeight: 1.1, opacity: fadeIn(frame, ADULTE - 4, 8)}}>
+							enfant, ado :
+							<br />
+							<span style={{color: LPI.blue}}>comme l'adulte</span>
+						</div>
+					</div>
+				) : null}
 				<Stage y={820} h={620} at={PIQUE - 8} bumps={[DOIGT, TALON, MOU]}>
 					{/* au talon, pas au doigt */}
 					{footOut < 1 && frame >= PIQUE - 6 ? (
@@ -906,11 +966,20 @@ export const Diurese: React.FC = () => {
 				<PillAt from={POIDS - 2} to={DEUX - 6} x={72} y={760} color={LPI.pink}>
 					on calcule selon le poids
 				</PillAt>
+				{frame >= DEUX - 4 && frame < COUCHE ? (
+					<div style={{position: 'absolute', left: 72, top: 860, width: 936, display: 'flex', justifyContent: 'center', opacity: fadeIn(frame, DEUX - 4, 8) * (1 - fadeIn(frame, COUCHE - 10, 8))}}>
+						<div style={{padding: '26px 40px', borderRadius: 40, background: LPI.paper, border: `6px solid ${LPI.pink}`, boxShadow: SHADOW, fontFamily: FONT.title, fontWeight: 900, fontSize: 50, color: N, lineHeight: 1.2, textAlign: 'center', transform: `scale(${popAt(frame, DEUX - 4)})`}}>
+							<div style={{fontFamily: FONT.body, fontSize: 28, letterSpacing: '0.14em', color: alpha(N, 0.7)}}>EXEMPLE</div>
+							bébé de <span style={{color: LPI.pink}}>5 kg</span> × 2 mL/kg/h
+							<br />≈ <span style={{color: LPI.blue}}>10 mL</span> d'urine par heure
+						</div>
+					</div>
+				) : null}
 				<Stage y={820} h={620} at={COUCHE - 6} bumps={[PESE, GRAMME, MILLI]}>
 					{frame >= COUCHE - 4 ? (
 						<div style={{position: 'absolute', left: 60, top: 80, transform: `scale(${popAt(frame, COUCHE - 4)})`, transformOrigin: '50% 100%'}}>
 							<KitchenScale width={460} grams={grams} tone={frame >= GRAMME ? LPI.pink : N}>
-								<div style={{transform: `translateY(${interpolate(frame, [PESE - 6, PESE + 4], [-160, 0], {...clamp, easing: Easing.in(Easing.quad)})}px)`, opacity: fadeIn(frame, COUCHE - 4, 6)}}>
+								<div style={{transform: `translateY(${interpolate(frame, [PESE - 6, PESE + 4], [-70, 0], {...clamp, easing: Easing.in(Easing.quad)})}px)`, opacity: fadeIn(frame, COUCHE - 4, 6)}}>
 									<Diaper width={240} wet={wet} />
 								</div>
 							</KitchenScale>
