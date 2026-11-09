@@ -1,6 +1,7 @@
 // « Comment mettre un suppositoire ? » — 1er essai du format COURT (info + humour, ≈ 40 s), avec les nouveautés 2026 :
 // gros texte plein cadre (une idée par plan), fonds en aplats francs (écran coupé en deux pour le « match »), flou de
-// mouvement (`CameraMotionBlur` de @remotion/motion-blur) sur ce qui bouge vite, voix ElevenLabs (Laura).
+// mouvement (`Blur` + `Live` de src/brand/bold.tsx : les positions sont calculées DANS le calque flou) sur ce qui
+// bouge vite, voix ElevenLabs (Laura).
 // Accroche « le match » : « Le suppositoire : côté pointu… ou côté plat ? Sur internet, c'est la guerre ! » (image 0 :
 // ÉQUIPE POINTE vs ÉQUIPE PLAT) → l'idée reçue (une seule petite étude de 1991, jamais confirmée) → on suit la notice :
 // la plupart disent « par la pointe » (le suppositoire = une fusée) → le bon geste en 5 cartes → « décollage réussi ! ».
@@ -9,7 +10,7 @@
 // (d'où « on suit la notice » et « la plupart »). Briques : src/brand/suppo.tsx.
 import React from 'react';
 import {AbsoluteFill, Easing, interpolate, useCurrentFrame} from 'remotion';
-import {CameraMotionBlur} from '@remotion/motion-blur';
+import {Blur, Live} from '../../brand/bold';
 import {Pill} from '../../brand/episode';
 import {Sparkles} from '../../brand/hands';
 import {Stamp, Strike} from '../../brand/kit';
@@ -56,8 +57,6 @@ export const Hook: React.FC = () => {
 	const INTER = at('intro', 'internet');
 	const GUERRE = at('intro', 'guerre');
 	// le suppositoire regarde d'abord la pointe (à droite = équipe pointe), puis se retourne vers l'équipe plat
-	const flip = interpolate(frame, [PLAT - 6, PLAT + 2], [1, -1], ease);
-	const wiggle = Math.sin(frame / 5) * 4;
 	const comments = [
 		{name: 'infirmiere_2a', text: 'C’EST LA POINTE, point.', tone: LPI.sky, x: 60, y: 470, rot: -3},
 		{name: 'tonton_bricolo', text: 'Côté plat, évidemment\u00a0!', tone: LPI.pink, x: 160, y: 660, rot: 2},
@@ -84,15 +83,17 @@ export const Hook: React.FC = () => {
 				{/* VS */}
 				<div style={{position: 'absolute', left: 540 - 85, top: 820 - 85, width: 170, height: 170, borderRadius: 85, opacity: matchOut, background: N, border: `8px solid ${LPI.paper}`, boxShadow: SHADOW, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FONT.title, fontWeight: 900, fontSize: 80, color: LPI.paper, transform: `rotate(${-8 + Math.sin(frame / 7) * 3}deg) scale(${1 + 0.15 * Math.exp(-Math.max(0, frame - PLAT) / 4) * (frame >= PLAT ? 1 : 0)})`}}>VS</div>
 				{/* le suppositoire, qui se retourne (flou de mouvement) */}
-				<div style={{position: 'absolute', left: 540 - 350, top: 1060 - 175, opacity: matchOut}}>
-					<CameraMotionBlur shutterAngle={180} samples={6}>
-						<AbsoluteFill style={{width: 700, height: 350}}>
-							<div style={{transform: `scaleX(${flip}) rotate(${wiggle}deg)`, transformOrigin: '350px 175px', width: 700}}>
-								<Suppo width={700} mood={frame >= PLAT ? 'inquiet' : 'content'} />
+				<Blur on={frame >= PLAT - 8 && frame <= PLAT + 4} shutter={200}>
+					<Live
+						render={(f) => (
+							<div style={{position: 'absolute', left: 540 - 350, top: 1060 - 175, opacity: 1 - fadeIn(f, INTER - 6, 8)}}>
+								<div style={{transform: `scaleX(${interpolate(f, [PLAT - 6, PLAT + 2], [1, -1], ease)}) rotate(${Math.sin(f / 5) * 4}deg)`, transformOrigin: '350px 175px', width: 700}}>
+									<Suppo width={700} mood={f >= PLAT ? 'inquiet' : 'content'} />
+								</div>
 							</div>
-						</AbsoluteFill>
-					</CameraMotionBlur>
-				</div>
+						)}
+					/>
+				</Blur>
 				{/* internet s'enflamme */}
 				{comments.map((c, i) => {
 					const t0 = INTER - 4 + i * 5;
@@ -137,7 +138,6 @@ export const Mythe: React.FC = () => {
 	const IDEE = at('mythe', 'idée');
 	const part1 = 1 - fadeIn(frame, SAUF - 2, 6);
 	// le suppositoire part « côté plat devant » (vers la gauche)… et remonte tout seul, comme par magie
-	const drift = interpolate(frame, [REMONTE - 4, SAUF], [0, -1], ease);
 	return (
 		<AbsoluteFill>
 			<AbsoluteFill style={{background: alpha(LPI.pink, 0.55)}} />
@@ -156,15 +156,20 @@ export const Mythe: React.FC = () => {
 								</div>
 							</div>
 						) : null}
-						<div style={{position: 'absolute', left: 240 + drift * 120, top: 980 - drift * 160}}>
-							<CameraMotionBlur shutterAngle={180} samples={6}>
-								<AbsoluteFill style={{width: 600, height: 300}}>
-									<div style={{transform: `scaleX(-1) rotate(${-20 * drift}deg)`, transformOrigin: '300px 150px', width: 600}}>
-										<Suppo width={600} mood="fier" />
-									</div>
-								</AbsoluteFill>
-							</CameraMotionBlur>
-						</div>
+						<Blur on={frame >= REMONTE - 5 && frame <= SAUF + 1} shutter={220}>
+							<Live
+								render={(f) => {
+									const d = interpolate(f, [REMONTE - 4, SAUF], [0, -1], ease);
+									return (
+										<div style={{position: 'absolute', left: 240 + d * 120, top: 980 - d * 160}}>
+											<div style={{transform: `scaleX(-1) rotate(${-20 * d}deg)`, transformOrigin: '300px 150px', width: 600}}>
+												<Suppo width={600} mood="fier" />
+											</div>
+										</div>
+									);
+								}}
+							/>
+						</Blur>
 						<Sparkles at={REMONTE} x={540} y={1060} r={300} n={9} />
 					</div>
 				) : null}
@@ -239,15 +244,17 @@ export const Verite: React.FC = () => {
 				<Big from={2} to={SUIT - 4} text={'Alors, on fait *quoi*\u00a0?'} size={110} y={200} />
 				{/* le suppositoire hésite : il se tourne d'un côté, de l'autre… */}
 				{frame < SUIT + 4 ? (
-					<div style={{position: 'absolute', left: 540 - 300, top: 860 - 150, opacity: 1 - fadeIn(frame, SUIT - 4, 6)}}>
-						<CameraMotionBlur shutterAngle={180} samples={6}>
-							<AbsoluteFill style={{width: 600, height: 300}}>
-								<div style={{transform: `scaleX(${Math.cos(frame * 0.22)}) scale(${popAt(frame, 0)})`, transformOrigin: '300px 150px', width: 600}}>
-									<Suppo width={600} mood="inquiet" />
+					<Blur shutter={200}>
+						<Live
+							render={(f) => (
+								<div style={{position: 'absolute', left: 540 - 300, top: 860 - 150, opacity: 1 - fadeIn(f, SUIT - 4, 6)}}>
+									<div style={{transform: `scaleX(${Math.cos(f * 0.22)}) scale(${popAt(f, 0)})`, transformOrigin: '300px 150px', width: 600}}>
+										<Suppo width={600} mood="inquiet" />
+									</div>
 								</div>
-							</AbsoluteFill>
-						</CameraMotionBlur>
-					</div>
+							)}
+						/>
+					</Blur>
 				) : null}
 				{frame >= QUOI - 2 && frame < SUIT + 4 ? (
 					<div style={{position: 'absolute', left: 780, top: 520, fontFamily: FONT.title, fontWeight: 900, fontSize: 200, color: LPI.pink, WebkitTextStroke: `6px ${N}`, transform: `scale(${popAt(frame, QUOI - 2)}) rotate(${12 + Math.sin(frame / 4) * 6}deg)`, opacity: 1 - fadeIn(frame, SUIT - 4, 6)}}>?</div>
@@ -277,15 +284,21 @@ export const Verite: React.FC = () => {
 					<>
 						<Big from={SUPPO - 4} to={POINTE2 - 6} text={'Comme une *fusée*'} size={120} y={200} />
 						<Big from={POINTE2 - 2} text={'La *pointe* devant !'} size={124} y={200} />
-						<div style={{position: 'absolute', left: 800 - 300, top: 1000 - rise * 1300, opacity: fadeIn(frame, SUPPO - 6, 8)}}>
-							<CameraMotionBlur shutterAngle={240} samples={8}>
-								<AbsoluteFill style={{width: 600, height: 300}}>
-									<div style={{transform: `rotate(${interpolate(frame, [SUPPO - 4, FUSEE + 4], [0, -90], ease) + Math.sin(frame * 1.4) * 1.5 * rocket}deg) scale(${popAt(frame, SUPPO - 6)})`, transformOrigin: '300px 150px', width: 600}}>
-										<Suppo width={600} rocket={rocket} mood={rise > 0.05 ? 'fier' : 'content'} />
-									</div>
-								</AbsoluteFill>
-							</CameraMotionBlur>
-						</div>
+						<Blur on={(frame >= SUPPO - 6 && frame <= FUSEE + 6) || rise > 0} shutter={240} samples={8}>
+							<Live
+								render={(f) => {
+									const r = interpolate(f, [POINTE2 - 4, DEVANT + 16], [0, 1], {...clamp, easing: Easing.in(Easing.cubic)});
+									const k = fadeIn(f, FUSEE - 4, 10);
+									return (
+										<div style={{position: 'absolute', left: 800 - 300, top: 1000 - r * 1300, opacity: fadeIn(f, SUPPO - 6, 8)}}>
+											<div style={{transform: `rotate(${interpolate(f, [SUPPO - 4, FUSEE + 4], [0, -90], ease) + Math.sin(f * 1.4) * 1.5 * k}deg) scale(${popAt(f, SUPPO - 6)})`, transformOrigin: '300px 150px', width: 600}}>
+												<Suppo width={600} rocket={k} mood={r > 0.05 ? 'fier' : 'content'} />
+											</div>
+										</div>
+									);
+								}}
+							/>
+						</Blur>
 						{/* fumée au décollage */}
 						{rise > 0
 							? Array.from({length: 7}, (_, i) => {
@@ -394,15 +407,20 @@ export const Fin: React.FC = () => {
 			<AbsoluteFill style={{background: alpha(LPI.sky, 0.6)}} />
 			<LiveBackground deco={false} />
 			<Camera punches={[DECO + 1]} shakes={[REUSSI + 2]} strength={0.04}>
-				<div style={{position: 'absolute', left: -300 + fly * 1500, top: 1100 - fly * 900}}>
-					<CameraMotionBlur shutterAngle={260} samples={8}>
-						<AbsoluteFill style={{width: 600, height: 300}}>
-							<div style={{transform: 'rotate(-34deg)', transformOrigin: '300px 150px', width: 600}}>
-								<Suppo width={600} rocket={1} mood="fier" />
-							</div>
-						</AbsoluteFill>
-					</CameraMotionBlur>
-				</div>
+				<Blur on={fly > 0 && fly < 1} shutter={260} samples={8}>
+					<Live
+						render={(f) => {
+							const k = interpolate(f, [VOILA - 4, REUSSI + 20], [0, 1], {...clamp, easing: Easing.in(Easing.quad)});
+							return (
+								<div style={{position: 'absolute', left: -300 + k * 1500, top: 1100 - k * 900}}>
+									<div style={{transform: 'rotate(-34deg)', transformOrigin: '300px 150px', width: 600}}>
+										<Suppo width={600} rocket={1} mood="fier" />
+									</div>
+								</div>
+							);
+						}}
+					/>
+				</Blur>
 				<Big from={VOILA - 2} text={'Et *voilà* !'} size={140} y={220} center />
 				<Stamp at={REUSSI - 2} x={540} y={820} text="DÉCOLLAGE RÉUSSI !" size={88} rot={-6} />
 				<Confetti at={REUSSI} x={540} y={820} n={60} />

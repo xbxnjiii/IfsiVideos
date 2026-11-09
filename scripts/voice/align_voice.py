@@ -51,6 +51,7 @@ def main():
     ap.add_argument("script")
     ap.add_argument("episode")
     ap.add_argument("--model", default="medium")
+    ap.add_argument("--prompt", action="store_true", help="amorcer Whisper avec le texte du script (peut lui faire sauter tout un passage)")
     args = ap.parse_args()
 
     parts = json.load(open(args.script))
@@ -69,7 +70,9 @@ def main():
     tmp = os.path.join(tempfile.mkdtemp(), "v16.wav")
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", final, "-ac", "1", "-ar", "16000", tmp], check=True)
     model = WhisperModel(args.model, device="cpu", compute_type="int8")
-    segs, _ = model.transcribe(tmp, language="fr", beam_size=5, word_timestamps=True, initial_prompt=vocab[:900])
+    # Sans amorce par défaut : avec `initial_prompt`, Whisper a sauté les 25 premières secondes d'une voix ElevenLabs
+    # (il « croit » avoir déjà entendu le texte de l'amorce). Le script donne déjà l'orthographe.
+    segs, _ = model.transcribe(tmp, language="fr", beam_size=5, word_timestamps=True, initial_prompt=vocab[:900] if args.prompt else None)
     heard = []
     for s in segs:
         for w in s.words:
@@ -89,7 +92,10 @@ def main():
     a = [norm(t) for t in script]
     b = [norm(h["text"]) for h in heard]
     times = [None] * len(script)
+    matched = 0
     for tag, i1, i2, j1, j2 in difflib.SequenceMatcher(a=a, b=b, autojunk=False).get_opcodes():
+        if tag == "equal":
+            matched += i2 - i1
         if tag in ("equal", "replace") and j2 > j1:
             n = i2 - i1
             for k in range(n):
@@ -135,7 +141,9 @@ def main():
     json.dump(data, open(dst, "w"), ensure_ascii=False, indent=1)
     for s in sections:
         print(f"{s['id']:8s} {s['start']:6.2f} -> {s['end']:6.2f}")
-    print(f"{len(words)} mots alignés -> {dst}")
+    print(f"{len(words)} mots alignés ({100 * matched / len(script):.0f} % reconnus mot pour mot) -> {dst}")
+    if matched < 0.8 * len(script):
+        print("ATTENTION : moins de 80 % des mots reconnus, vérifier l'alignement (npm run cues).")
 
 
 if __name__ == "__main__":

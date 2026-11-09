@@ -229,10 +229,19 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
 - Durée libre : `episodeTimeline(voice, ids, {minTotal: 0})`. Par défaut, une vidéo de cours dure au moins 61 s ;
   `npm run cues` affiche encore 61 s, c'est sans effet.
 - Look 2026 : gros titres plein cadre (une idée par plan), fonds en aplats francs, **flou de mouvement** sur ce qui bouge
-  vite. Pour le flou : `CameraMotionBlur` de `@remotion/motion-blur`, avec dedans un `<AbsoluteFill style={{width,
-  height}}>` de la taille de l'objet. `HtmlInCanvasMotionBlur` demande Chrome 149+, notre navigateur est trop ancien.
-  `@remotion/effects` (fuites de lumière, flou de zoom, lueur) est installé : ce sont des effets WebGL, à n'utiliser
-  que dans les couleurs de la marque.
+  vite. Kit **`src/brand/bold.tsx`** :
+  - `Blur` (calque `CameraMotionBlur`, coupé quand rien ne bouge) ;
+  - `Live` (rendu en fonction de l'image), `Posed`, `Fly` / `flyPose` (entrée en trombe avec léger dépassement, sortie
+    qui accélère, déplacements `move`) ;
+  - `FlatBg` (aplat + deux grands disques qui respirent), `Big` (grand titre), `Note` (pastille d'explication),
+    `BigNumber` (chiffre géant + titre).
+- **Règle du flou** (`CameraMotionBlur` rejoue ses enfants à des images légèrement passées) : une position doit être
+  calculée **dans** le calque, avec `useCurrentFrame()` (via `Live`, `Posed` ou `Fly`). Une position calculée dans le
+  composant parent est la même pour tous les échantillons, donc aucun flou : c'était le cas dans la 1re version du
+  suppositoire, corrigée depuis.
+- `HtmlInCanvasMotionBlur` demande Chrome 149+, notre navigateur est trop ancien.
+- `@remotion/effects` (fuites de lumière, flou de zoom, lueur) est installé : ce sont des effets WebGL, à n'utiliser que
+  dans les couleurs de la marque.
 - Briques `suppo.tsx` : `Suppo` (torpille à visage : `mood`, `rocket` ailerons + flamme, `drop` goutte d'eau), `Notice`
   (ligne surlignée), `SideLying` (patient sur le côté gauche, `bend` jambe du dessus), `Sphincter` (`open`), `Squeeze`,
   `Comment` (commentaire de réseau social). Dans un commentaire ou un titre, mettre une espace insécable devant « ! » et
@@ -249,9 +258,18 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   --model medium`.
 - Coût : ≈ 1 crédit par caractère et par prise (2 prises par défaut). « Free generations are busy » signifie qu'une
   prise n'a pas démarré et n'a rien coûté. **Ne jamais relancer dans le même tour** (chaque appel est facturé).
-- Demandé : épeler **plus vite** les sigles lus lettre par lettre (« SpO2 » : trop de blanc entre les lettres). À
-  tester sur la prochaine vidéo qui en contient : sigle collé (« SPO2 ») contre lettres séparées, puis garder la
-  graphie la plus rapide et la noter ici.
+- Demandé : épeler **plus vite** les sigles lus lettre par lettre (« SpO2 » : trop de blanc entre les lettres).
+  - Testé : **sigle collé en majuscules** (SHA 0,56 s, OPCT 0,74 s, SPO2 1,0 s). C'est le plus rapide, contre 0,6 / 0,8
+    / 1,5 s avec des points (S.H.A.) et 0,9 / 1,3 / 1,3 s avec des tirets (S-H-A).
+  - Un sigle qui se dit comme un mot s'écrit en minuscules dans le texte envoyé (« sac Dasri »).
+- `[pause]` ne laisse que 0,3 à 0,45 s entre deux parties, alors qu'une transition dure 14 images (0,47 s). Allonger les
+  blancs à 0,8 s :
+  1. aligner une première fois ;
+  2. `python3 scripts/voice/pad_parts.py voix48.wav src/videos/<épisode>/voice.json voix-allongee.wav 0.8` ;
+  3. réaligner `voix-allongee.wav`.
+- **`align_voice.py` n'amorce plus Whisper avec le script** (`--prompt` pour le remettre). Avec l'amorce, Whisper avait
+  sauté les 25 premières secondes de la voix Laura. L'outil affiche maintenant le taux de mots reconnus et prévient
+  sous 80 %.
 - Skills installés (`.claude/skills/`, `skills-lock.json`) : `remotion-best-practices` (règles Remotion, effets,
   flou de mouvement, transitions, voix off…) et `motion-design` (LottieFiles). Le propriétaire autorise à installer
   les skills utiles sans demander.
@@ -357,6 +375,18 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   `WatchShape` / `RingShape` (sur `Hand`), `ReflexIcon`, `ReflexTracker`.
 
 ## Format « inventaire » (le matériel d'un soin, modèle `Prise-De-Sang`, `src/videos/prise-de-sang/`)
+
+- **v2 (demandée : « refaire avec les nouveaux modules »)**, même contenu que la v1, qui reste au commit `05ef5c9`.
+  - Look 2026 : une idée par plan, objets en plein cadre, aplat de couleur par famille (1 bleu clair, 2 rose, 3 bleu avec
+    titres blanc cassé et accent bleu nuit).
+  - Carte « chiffre géant » (`BigNumber`) au début de chaque famille ; vrai flou de mouvement sur ce qui entre, sort ou
+    tombe.
+  - Un 13 géant qui compte puis claque sur « Ça fait beaucoup ? ».
+  - En haut : pastille de la famille en cours + compteur MATÉRIEL n / 13 (`TopBar` dans `PriseDeSang.tsx`), sans barre
+    de progression.
+  - Récap : le plateau revient et chaque bande se coche.
+  - Voix Laura. Storyboard `docs/lpi/storyboard-prise-de-sang.md`.
+  - Ce qui suit décrit la v1 (déroulé et vocabulaire toujours valables).
 
 - Demandé : l'accroche pose **tout le matériel devant nos yeux** (plateau en 3 familles numérotées, les 13 objets tombent
   à leur place en 1,5 s, chacun avec son nom), « Ça, c'est le matériel qu'il te faut pour… », « 13 objets ! », « on

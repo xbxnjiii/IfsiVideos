@@ -29,7 +29,7 @@ pas de logiciel de montage, pas de banque d'images.
 | 17 | Série « Les plaies » 1/3 : les bases | `Plaies-1` | [voix/17-plaies-1.script.json](voix/17-plaies-1.script.json) | [storyboard](docs/lpi/storyboard-plaies-serie.md) |
 | 18 | Série « Les plaies » 2/3 : les plaies aiguës | `Plaies-2` | [voix/18-plaies-2.script.json](voix/18-plaies-2.script.json) | [storyboard](docs/lpi/storyboard-plaies-serie.md) |
 | 19 | Série « Les plaies » 3/3 : les plaies chroniques | `Plaies-3` | [voix/19-plaies-3.script.json](voix/19-plaies-3.script.json) | [storyboard](docs/lpi/storyboard-plaies-serie.md) |
-| 20 | Le matériel pour une prise de sang (format inventaire) | `Prise-De-Sang` | [voix/20-prise-de-sang.script.json](voix/20-prise-de-sang.script.json) | [storyboard](docs/lpi/storyboard-prise-de-sang.md) |
+| 20 | Le matériel pour une prise de sang (format inventaire, v2 look 2026 + voix Laura) | `Prise-De-Sang` | [voix/20-prise-de-sang.script.json](voix/20-prise-de-sang.script.json) | [storyboard](docs/lpi/storyboard-prise-de-sang.md) |
 | 21 | Les 5 indications de l'hygiène des mains (liste à retenir) | `Hygiene-Mains` | [voix/21-hygiene-mains.script.json](voix/21-hygiene-mains.script.json) | [storyboard](docs/lpi/storyboard-hygiene-mains.md) |
 | 22 | Les précautions standard (liste à retenir) | `Precautions-Standard` | [voix/22-precautions-standard.script.json](voix/22-precautions-standard.script.json) | [storyboard](docs/lpi/storyboard-precautions-standard.md) |
 | 23 | L'insuffisance cardiaque (pathologie) | `Insuffisance-Cardiaque` | [voix/23-insuffisance-cardiaque.script.json](voix/23-insuffisance-cardiaque.script.json) | [storyboard](docs/lpi/storyboard-insuffisance-cardiaque.md) |
