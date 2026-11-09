@@ -1,0 +1,7 @@
+[
+	{"id": "intro", "rate": "+6%", "text": "Le suppositoire : côté pointu… ou côté plat ? Sur internet, c'est la guerre !"},
+	{"id": "mythe", "rate": "+4%", "text": "L'équipe côté plat jure qu'il remonte tout seul. Sauf que cette astuce vient d'une seule petite étude de {1991|mille neuf cent quatre-vingt-onze}… jamais confirmée. C'est une idée reçue !"},
+	{"id": "verite", "rate": "+4%", "text": "Alors, on fait quoi ? On suit la notice. Et la plupart disent : par la pointe. Un suppositoire, c'est comme une fusée : la pointe devant !"},
+	{"id": "geste", "rate": "+2%", "text": "Mains lavées, gants. Le patient sur le côté gauche, la jambe du dessus pliée. Un peu d'eau sur la pointe, on pousse doucement, juste après le sphincter… et on serre les fesses quelques minutes."},
+	{"id": "fin", "rate": "+4%", "text": "Et voilà : décollage réussi !"}
+]

@@ -85,8 +85,9 @@ export type Timeline = ReturnType<typeof makeTimeline>;
  * Timeline d'un épisode « une vidéo par constante » : scènes = parties de la voix + carte logo.
  * Renvoie TL et les raccourcis `at` (frame locale d'un mot), `start` (début de scène), `abs` (frame absolue).
  */
-export const episodeTimeline = <Id extends string>(voice: VoiceData, ids: readonly Id[]) => {
-	const TL = makeTimeline(voice, {minTotal: 61 * 30, tail: 1.2, endCard: 2.6, transition: 14, preRoll: 0.25});
+export const episodeTimeline = <Id extends string>(voice: VoiceData, ids: readonly Id[], opts: {minTotal?: number} = {}) => {
+	// vidéos de cours : ≥ 1 min ; format court (humour / info) : `minTotal: 0`
+	const TL = makeTimeline(voice, {minTotal: opts.minTotal ?? 61 * 30, tail: 1.2, endCard: 2.6, transition: 14, preRoll: 0.25});
 	const start = (id: Id) => TL.starts[ids.indexOf(id)];
 	return {
 		TL,

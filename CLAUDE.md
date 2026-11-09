@@ -49,7 +49,8 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
 
 ## Voix
 
-- **Voix de la marque** (validée) : edge-tts `fr-FR-VivienneMultilingualNeural`, débit +8 %.
+- **Voix des nouvelles vidéos : ElevenLabs « Laura »** (voir la section dédiée). Voix des vidéos 1 à 28 (et repli si
+  ElevenLabs est indisponible) : edge-tts `fr-FR-VivienneMultilingualNeural`, débit +8 %.
   **Une seule commande** : `npm run voice -- voix/<n>-<sujet>.script.json <épisode>` → `public/voix/<épisode>/voix.wav`
   + `src/videos/<épisode>/voice.json` (timing mot à mot donné par la synthèse : pas de Whisper).
   Dépendance : `pip install --break-system-packages edge-tts` (quelques secondes, à refaire par session).
@@ -214,6 +215,46 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   titre sur un mot avec apostrophe s'écrit `*l'hygiène*` (pas `l'*hygiène*`) ; `accessoires/baskets` n'est qu'une chaussure
   (pas la mascotte) : ne pas l'utiliser comme étape. Voix : « se soigne par l'insuline… à vie » était entendu « à la vie » →
   « il se soigne par l'insuline, toute sa vie ».
+
+## Format « court info + humour » (≈ 40 s, modèle `Suppositoire`, `src/videos/suppositoire/`)
+
+- Demandé : des vidéos courtes, informatives et drôles, sur une **idée reçue** que l'on corrige. 1er essai : « Comment
+  mettre un suppositoire ? » (le « côté plat d'abord » vient d'une seule étude de 1991, jamais confirmée ; on suit la
+  notice, et la plupart disent : par la pointe). Storyboard `docs/lpi/storyboard-suppositoire.md`.
+- Déroulé : accroche **« le match »** (image 0 : écran coupé en deux, ÉQUIPE POINTE vs ÉQUIPE PLAT, la question à
+  l'écran ; commentaires d'internet qui pleuvent, « c'est la guerre ! ») → l'idée reçue (tampon IDÉE REÇUE !, la
+  croyance barrée) → la vérité, avec une image qui fait retenir (« comme une fusée : la pointe devant ! ») → le bon geste
+  en cartes numérotées au mot → chute drôle (« décollage réussi ! »). Pas de récap ni de barre de progression
+  (`progress={false}`).
+- Durée libre : `episodeTimeline(voice, ids, {minTotal: 0})`. Par défaut, une vidéo de cours dure au moins 61 s ;
+  `npm run cues` affiche encore 61 s, c'est sans effet.
+- Look 2026 : gros titres plein cadre (une idée par plan), fonds en aplats francs, **flou de mouvement** sur ce qui bouge
+  vite. Pour le flou : `CameraMotionBlur` de `@remotion/motion-blur`, avec dedans un `<AbsoluteFill style={{width,
+  height}}>` de la taille de l'objet. `HtmlInCanvasMotionBlur` demande Chrome 149+, notre navigateur est trop ancien.
+  `@remotion/effects` (fuites de lumière, flou de zoom, lueur) est installé : ce sont des effets WebGL, à n'utiliser
+  que dans les couleurs de la marque.
+- Briques `suppo.tsx` : `Suppo` (torpille à visage : `mood`, `rocket` ailerons + flamme, `drop` goutte d'eau), `Notice`
+  (ligne surlignée), `SideLying` (patient sur le côté gauche, `bend` jambe du dessus), `Sphincter` (`open`), `Squeeze`,
+  `Comment` (commentaire de réseau social). Dans un commentaire ou un titre, mettre une espace insécable devant « ! » et
+  « ? » (`\u00a0`), sinon ils se retrouvent seuls à la ligne.
+
+## Voix ElevenLabs « Laura » (choisie par le propriétaire pour les nouvelles vidéos)
+
+- Connecteur ElevenLabs : voix `Laura` (`MmafIMKg28Wr0yMh8CEB`), modèle `eleven_v4`, flow `6O4tHaBowSG52722wkdC`.
+  `creative_generate_speech` avec **tout le texte en une fois**. Balises de jeu `[amused]`, `[sarcastic]`,
+  `[confident]`, `[warmly]`, `[excited]`. `[pause]` entre les parties. Nombres en lettres.
+- Puis `creative_get_flow_run_status` pour récupérer la prise, et `curl` de `content_url`. Alignement :
+  `python3 scripts/voice/align_voice.py laura.mp3 voix/<n>.script.json <épisode> --model medium` (dépendances :
+  `pip install --break-system-packages soundfile faster-whisper`). Contrôle : `npm run check:voice -- <épisode>
+  --model medium`.
+- Coût : ≈ 1 crédit par caractère et par prise (2 prises par défaut). « Free generations are busy » signifie qu'une
+  prise n'a pas démarré et n'a rien coûté. **Ne jamais relancer dans le même tour** (chaque appel est facturé).
+- Demandé : épeler **plus vite** les sigles lus lettre par lettre (« SpO2 » : trop de blanc entre les lettres). À
+  tester sur la prochaine vidéo qui en contient : sigle collé (« SPO2 ») contre lettres séparées, puis garder la
+  graphie la plus rapide et la noter ici.
+- Skills installés (`.claude/skills/`, `skills-lock.json`) : `remotion-best-practices` (règles Remotion, effets,
+  flou de mouvement, transitions, voix off…) et `motion-design` (LottieFiles). Le propriétaire autorise à installer
+  les skills utiles sans demander.
 
 ## Vidéo promo (modèle `Quiz-Constantes`, `src/videos/quiz-constantes/`)
 

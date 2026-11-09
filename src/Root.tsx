@@ -58,6 +58,8 @@ import {Diabete2, Diabete2Props} from './videos/diabete-2/Diabete2';
 import {TL as DIABETE_2_TL} from './videos/diabete-2/timeline';
 import {ConstantesEnfant, ConstantesEnfantProps} from './videos/constantes-enfant/ConstantesEnfant';
 import {TL as CONSTANTES_ENFANT_TL} from './videos/constantes-enfant/timeline';
+import {Suppositoire, SuppositoireProps} from './videos/suppositoire/Suppositoire';
+import {TL as SUPPOSITOIRE_TL} from './videos/suppositoire/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -334,6 +336,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies ConstantesEnfantProps}
+		/>
+		{/* 29 · Suppositoire */}
+		<Composition
+			id="Suppositoire"
+			component={Suppositoire}
+			durationInFrames={SUPPOSITOIRE_TL.total}
+			fps={SUPPOSITOIRE_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies SuppositoireProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition

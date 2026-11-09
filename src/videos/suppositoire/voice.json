@@ -1,0 +1,528 @@
+{
+ "voice": "laura.mp3",
+ "duration": 36.8,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.0,
+   "end": 5.8
+  },
+  {
+   "id": "mythe",
+   "start": 6.28,
+   "end": 15.212
+  },
+  {
+   "id": "verite",
+   "start": 15.637,
+   "end": 23.363
+  },
+  {
+   "id": "geste",
+   "start": 23.817,
+   "end": 34.54
+  },
+  {
+   "id": "fin",
+   "start": 34.855,
+   "end": 36.52
+  }
+ ],
+ "words": [
+  {
+   "text": "Le",
+   "start": 0.0,
+   "end": 0.46
+  },
+  {
+   "text": "suppositoire :",
+   "start": 0.46,
+   "end": 1.52
+  },
+  {
+   "text": "côté",
+   "start": 1.74,
+   "end": 2.0
+  },
+  {
+   "text": "pointu…",
+   "start": 2.0,
+   "end": 2.8
+  },
+  {
+   "text": "ou",
+   "start": 2.8,
+   "end": 3.06
+  },
+  {
+   "text": "côté",
+   "start": 3.06,
+   "end": 3.46
+  },
+  {
+   "text": "plat ?",
+   "start": 3.46,
+   "end": 3.62
+  },
+  {
+   "text": "Sur",
+   "start": 4.0,
+   "end": 4.26
+  },
+  {
+   "text": "internet,",
+   "start": 4.26,
+   "end": 4.78
+  },
+  {
+   "text": "c'est",
+   "start": 5.06,
+   "end": 5.18
+  },
+  {
+   "text": "la",
+   "start": 5.18,
+   "end": 5.5
+  },
+  {
+   "text": "guerre !",
+   "start": 5.5,
+   "end": 5.8
+  },
+  {
+   "text": "L'équipe",
+   "start": 6.28,
+   "end": 6.72
+  },
+  {
+   "text": "côté",
+   "start": 6.72,
+   "end": 7.0
+  },
+  {
+   "text": "plat",
+   "start": 7.0,
+   "end": 7.32
+  },
+  {
+   "text": "jure",
+   "start": 7.32,
+   "end": 7.68
+  },
+  {
+   "text": "qu'il",
+   "start": 7.68,
+   "end": 7.96
+  },
+  {
+   "text": "remonte",
+   "start": 7.96,
+   "end": 8.18
+  },
+  {
+   "text": "tout",
+   "start": 8.18,
+   "end": 8.46
+  },
+  {
+   "text": "seul.",
+   "start": 8.46,
+   "end": 8.72
+  },
+  {
+   "text": "Sauf",
+   "start": 9.14,
+   "end": 9.32
+  },
+  {
+   "text": "que",
+   "start": 9.32,
+   "end": 9.48
+  },
+  {
+   "text": "cette",
+   "start": 9.48,
+   "end": 9.68
+  },
+  {
+   "text": "astuce",
+   "start": 9.68,
+   "end": 10.04
+  },
+  {
+   "text": "vient",
+   "start": 10.04,
+   "end": 10.28
+  },
+  {
+   "text": "d'une",
+   "start": 10.28,
+   "end": 10.74
+  },
+  {
+   "text": "seule",
+   "start": 10.74,
+   "end": 10.9
+  },
+  {
+   "text": "petite",
+   "start": 10.9,
+   "end": 11.24
+  },
+  {
+   "text": "étude",
+   "start": 11.24,
+   "end": 11.52
+  },
+  {
+   "text": "de",
+   "start": 11.52,
+   "end": 11.78
+  },
+  {
+   "text": "1991 …",
+   "start": 11.78,
+   "end": 13.26
+  },
+  {
+   "text": "jamais",
+   "start": 13.26,
+   "end": 13.5
+  },
+  {
+   "text": "confirmée.",
+   "start": 13.5,
+   "end": 14.18
+  },
+  {
+   "text": "C'est",
+   "start": 14.32,
+   "end": 14.52
+  },
+  {
+   "text": "une",
+   "start": 14.52,
+   "end": 14.66
+  },
+  {
+   "text": "idée",
+   "start": 14.66,
+   "end": 14.86
+  },
+  {
+   "text": "reçue !",
+   "start": 14.86,
+   "end": 15.212
+  },
+  {
+   "text": "Alors,",
+   "start": 15.637,
+   "end": 15.98
+  },
+  {
+   "text": "on",
+   "start": 16.1,
+   "end": 16.24
+  },
+  {
+   "text": "fait",
+   "start": 16.24,
+   "end": 16.38
+  },
+  {
+   "text": "quoi ?",
+   "start": 16.38,
+   "end": 16.6
+  },
+  {
+   "text": "On",
+   "start": 16.94,
+   "end": 17.3
+  },
+  {
+   "text": "suit",
+   "start": 17.3,
+   "end": 17.4
+  },
+  {
+   "text": "la",
+   "start": 17.4,
+   "end": 17.6
+  },
+  {
+   "text": "notice.",
+   "start": 17.6,
+   "end": 17.96
+  },
+  {
+   "text": "Et",
+   "start": 18.34,
+   "end": 18.5
+  },
+  {
+   "text": "la",
+   "start": 18.5,
+   "end": 18.64
+  },
+  {
+   "text": "plupart",
+   "start": 18.64,
+   "end": 18.92
+  },
+  {
+   "text": "disent :",
+   "start": 18.92,
+   "end": 19.3
+  },
+  {
+   "text": "par",
+   "start": 19.62,
+   "end": 19.76
+  },
+  {
+   "text": "la",
+   "start": 19.76,
+   "end": 19.96
+  },
+  {
+   "text": "pointe.",
+   "start": 19.96,
+   "end": 20.32
+  },
+  {
+   "text": "Un",
+   "start": 20.48,
+   "end": 20.76
+  },
+  {
+   "text": "suppositoire,",
+   "start": 20.76,
+   "end": 21.46
+  },
+  {
+   "text": "c'est",
+   "start": 21.52,
+   "end": 21.72
+  },
+  {
+   "text": "comme",
+   "start": 21.72,
+   "end": 21.94
+  },
+  {
+   "text": "une",
+   "start": 21.94,
+   "end": 22.18
+  },
+  {
+   "text": "fusée :",
+   "start": 22.18,
+   "end": 22.5
+  },
+  {
+   "text": "la",
+   "start": 22.58,
+   "end": 22.84
+  },
+  {
+   "text": "pointe",
+   "start": 22.84,
+   "end": 23.18
+  },
+  {
+   "text": "devant !",
+   "start": 23.18,
+   "end": 23.363
+  },
+  {
+   "text": "Mains",
+   "start": 23.817,
+   "end": 24.1
+  },
+  {
+   "text": "lavées,",
+   "start": 24.1,
+   "end": 24.66
+  },
+  {
+   "text": "gants.",
+   "start": 24.8,
+   "end": 25.16
+  },
+  {
+   "text": "Le",
+   "start": 25.46,
+   "end": 25.66
+  },
+  {
+   "text": "patient",
+   "start": 25.66,
+   "end": 25.98
+  },
+  {
+   "text": "sur",
+   "start": 25.98,
+   "end": 26.24
+  },
+  {
+   "text": "le",
+   "start": 26.24,
+   "end": 26.38
+  },
+  {
+   "text": "côté",
+   "start": 26.38,
+   "end": 26.58
+  },
+  {
+   "text": "gauche,",
+   "start": 26.58,
+   "end": 26.98
+  },
+  {
+   "text": "la",
+   "start": 27.18,
+   "end": 27.38
+  },
+  {
+   "text": "jambe",
+   "start": 27.38,
+   "end": 27.52
+  },
+  {
+   "text": "du",
+   "start": 27.52,
+   "end": 27.68
+  },
+  {
+   "text": "dessus",
+   "start": 27.68,
+   "end": 28.0
+  },
+  {
+   "text": "pliée.",
+   "start": 28.0,
+   "end": 28.7
+  },
+  {
+   "text": "Un",
+   "start": 28.7,
+   "end": 28.98
+  },
+  {
+   "text": "peu",
+   "start": 28.98,
+   "end": 29.12
+  },
+  {
+   "text": "d'eau",
+   "start": 29.12,
+   "end": 29.28
+  },
+  {
+   "text": "sur",
+   "start": 29.28,
+   "end": 29.46
+  },
+  {
+   "text": "la",
+   "start": 29.46,
+   "end": 29.68
+  },
+  {
+   "text": "pointe,",
+   "start": 29.68,
+   "end": 30.12
+  },
+  {
+   "text": "on",
+   "start": 30.3,
+   "end": 30.42
+  },
+  {
+   "text": "pousse",
+   "start": 30.42,
+   "end": 30.64
+  },
+  {
+   "text": "doucement,",
+   "start": 30.64,
+   "end": 31.44
+  },
+  {
+   "text": "juste",
+   "start": 31.62,
+   "end": 31.76
+  },
+  {
+   "text": "après",
+   "start": 31.76,
+   "end": 31.96
+  },
+  {
+   "text": "le",
+   "start": 31.96,
+   "end": 32.14
+  },
+  {
+   "text": "sphincter…",
+   "start": 32.14,
+   "end": 33.2
+  },
+  {
+   "text": "et",
+   "start": 33.2,
+   "end": 33.24
+  },
+  {
+   "text": "on",
+   "start": 33.24,
+   "end": 33.38
+  },
+  {
+   "text": "serre",
+   "start": 33.38,
+   "end": 33.52
+  },
+  {
+   "text": "les",
+   "start": 33.52,
+   "end": 33.66
+  },
+  {
+   "text": "fesses",
+   "start": 33.66,
+   "end": 33.88
+  },
+  {
+   "text": "quelques",
+   "start": 33.88,
+   "end": 34.18
+  },
+  {
+   "text": "minutes.",
+   "start": 34.18,
+   "end": 34.54
+  },
+  {
+   "text": "Et",
+   "start": 34.855,
+   "end": 35.14
+  },
+  {
+   "text": "voilà :",
+   "start": 35.14,
+   "end": 35.46
+  },
+  {
+   "text": "décollage",
+   "start": 35.7,
+   "end": 36.16
+  },
+  {
+   "text": "réussi !",
+   "start": 36.16,
+   "end": 36.52
+  }
+ ]
+}
