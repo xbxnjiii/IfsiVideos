@@ -1,54 +1,43 @@
-// Série « La douleur : échelles d'évaluation », partie 2 / 2 : l'hétéro-évaluation (rythme d'apprentissage, voix +0 %).
-// Accroche « patient muet » choisie par le propriétaire (image 0 : une personne âgée, sa bulle reste vide, « Comment
-// savoir s'il a mal ? » ; il souffre : grimace, gémit, se protège ; « avec la bonne échelle » ; « ça ne se devine pas »
-// barré, tampon « Ça se mesure ! »), carte de la série, le principe (c'est toi qui observes), Algoplus, Doloplus, la BPS
-// en réanimation, EVENDOL chez l'enfant, récap + « série terminée ». Briques : pain.tsx, `Patient` (`elder`).
+// Série « La douleur : échelles d'évaluation », partie 2 / 2 : l'hétéro-évaluation — v2 (look 2026, voix Laura).
+// Accroche « elle ne se plaint jamais » (choisie par le propriétaire) : image 0 = Madame Martin, 87 ans, et « Elle ne se
+// plaint jamais » ; sa bulle reste vide ; « Donc, elle n'a pas mal ? » → tampon FAUX ! (flash, secousse) ; « Regarde
+// mieux » : on s'approche, son visage se crispe, sa main protège sa hanche (étiquettes au mot) ; « Sa douleur ne se dit
+// pas : elle se voit ». Puis la carte de la série, le principe (c'est toi qui observes), Algoplus (grille oui / non en
+// plein cadre, 2 / 5), Doloplus (la douleur dure : 10 questions, 8 / 30), la BPS en réanimation, EVENDOL chez l'enfant
+// (5 / 15), récap ; à la fin, Madame Martin est enfin soulagée + « série terminée ». Un aplat par scène, une idée par
+// plan, vrai flou de mouvement (src/brand/bold.tsx). La v1 reste dans l'historique git (commit bcf0f1d).
 import React from 'react';
-import {AbsoluteFill, Easing, interpolate, useCurrentFrame} from 'remotion';
+import {AbsoluteFill, interpolate, useCurrentFrame} from 'remotion';
+import {Big, ease, fadeIn, Flash, Fly, Live, Note, PointTag, popAt, RowCard, ToneBg} from '../../brand/bold';
 import {WallClock} from '../../brand/devices';
-import {CamKey, CauseChip, Head, Pill, RecapScene, StagePill, ZoomCam} from '../../brand/episode';
-import {CheckChip, Stamp, Strike} from '../../brand/kit';
-import {Burst, Camera, LiveBackground, Stage, TermSlam} from '../../brand/motion3';
-import {Bubble, Kid, ObsSheet, PAIN_PARTS, PainFace, ScoreBar, TalkIcon, Ventilator} from '../../brand/pain';
+import {Stamp} from '../../brand/kit';
+import {Burst, Camera, Confetti} from '../../brand/motion3';
+import {Bubble, Kid, ObsRow, PAIN_PARTS, PainFace, ScoreBar, TalkIcon, Ventilator} from '../../brand/pain';
 import {Patient, PatientProps} from '../../brand/patient';
 import {NextUp, SeriesParts} from '../../brand/series';
 import {Sfx} from '../../brand/Sfx';
-import {alpha, FONT, LPI, SHADOW} from '../../brand/theme';
-import {clamp, Title} from '../../brand/ui';
+import {alpha, FONT, LPI} from '../../brand/theme';
+import {clamp} from '../../brand/ui';
 import {at} from './timeline';
 
-const ease = {...clamp, easing: Easing.inOut(Easing.cubic)};
 const N = LPI.navy;
+const SKY = LPI.sky;
+const ROSE = alpha(LPI.pink, 0.6);
+const ON_BLUE = {color: LPI.paper, accent: N};
 const idle = (frame: number, period = 70) => 0.5 - 0.5 * Math.cos((frame / period) * Math.PI * 2);
-const fadeIn = (frame: number, a: number, d = 8) => interpolate(frame, [a, a + d], [0, 1], clamp);
-const popAt = (frame: number, t0: number) => (frame < t0 ? 0 : 1 + 0.12 * Math.exp(-(frame - t0) / 3) * Math.cos((frame - t0) * 0.9) - Math.exp(-(frame - t0) / 2));
 
-/** Flash plein écran (choc) qui retombe. */
-const Flash: React.FC<{at: number; max?: number}> = ({at: t0, max = 0.45}) => {
-	const frame = useCurrentFrame();
-	const o = interpolate(frame, [t0, t0 + 2, t0 + 16], [0, max, 0], clamp);
-	if (o <= 0) return null;
-	return <AbsoluteFill style={{background: `radial-gradient(circle at 50% 50%, ${alpha(LPI.pink, o * 0.4)} 20%, ${alpha(LPI.pink, o)} 100%)`}} />;
-};
-
-/** Titre affiché de `from` à `to` (fondu de sortie). */
-const TitleAt: React.FC<{from: number; to?: number; text: string; size?: number; y?: number; stagger?: number}> = ({from, to = 1e9, text, size = 92, y = 236, stagger = 3}) => {
-	const frame = useCurrentFrame();
-	if (frame >= to + 6) return null;
-	return (
-		<div style={{position: 'absolute', left: 72, top: y, width: 936, opacity: interpolate(frame, [to, to + 6], [1, 0], clamp)}}>
-			<Title at={from} text={text} size={size} stagger={stagger} />
-		</div>
-	);
-};
-
-/** Élément qui « pop » à `from` et s'efface à `to` (posé en x, y). */
-const Pop: React.FC<{from: number; to?: number; x: number; y: number; children: React.ReactNode; origin?: string}> = ({from, to = 1e9, x, y, children, origin = 'center'}) => {
+/** Élément posé (coin haut-gauche en x, y) qui « pop » à `from` et s'efface à `to`. */
+const Pop: React.FC<{from: number; to?: number; x: number; y: number; children: React.ReactNode; origin?: string}> = ({from, to = 1e9, x, y, children, origin = 'left bottom'}) => {
 	const frame = useCurrentFrame();
 	if (frame < from || frame > to + 6) return null;
 	const out = interpolate(frame, [to, to + 6], [1, 0], clamp);
 	return <div style={{position: 'absolute', left: x, top: y, transform: `scale(${popAt(frame, from) * (0.7 + 0.3 * out)})`, transformOrigin: origin, opacity: out}}>{children}</div>;
 };
+
+/** Patient (Elder) dans une boîte à sa taille, pour être centré par `Fly`. */
+const Box: React.FC<{size: number; children: React.ReactNode}> = ({size, children}) => <div style={{position: 'relative', width: size, height: size * 1.4}}>{children}</div>;
+/** Point du patient (repère 400 × 560) quand il est centré en (cx, cy) à la taille `size`. */
+const pt = (cx: number, cy: number, size: number, px: number, py: number) => ({x: cx - size / 2 + (px * size) / 400, y: cy - size * 0.7 + (py * size) / 400});
 
 /** Bulle vide (« … ») : il ne peut pas parler ; `cross` : barrée. */
 const MuteBubble: React.FC<{size?: number; cross?: number}> = ({size = 200, cross = 0}) => {
@@ -128,122 +117,91 @@ const LinkIco: React.FC = () => (
 );
 const MiniFace: React.FC<{level?: number}> = ({level = 4}) => <PainFace level={level} size={42} />;
 
-/* ═══════════════════════════════ ACCROCHE ═══════════════════════════════ */
-// Image 0 : une personne âgée, sa bulle « … » reste vide, « Comment savoir s'il a mal ? ». « parler » : la bulle se
-// barre ; « il souffre » : grimace, éclairs (flash, secousse), 3 pastilles (grimace · gémit · se protège) ; « avec la
-// bonne échelle » : une grille d'observation arrive ; « ça ne se devine pas » barré ; tampon « Ça se mesure ! ».
-const HP = {x: 320, y: 500, size: 440};
-const hpPt = (px: number, py: number) => ({x: HP.x + (px * HP.size) / 400, y: HP.y + (py * HP.size) / 400});
+/* ═══════════════════════════════ ACCROCHE : ELLE NE SE PLAINT JAMAIS ═══════════════════════════════ */
+const HK = {cx: 540, cy: 960, size: 560};
+const HK2 = {cx: 540, cy: 1000, size: 700};
 
 export const Hook: React.FC = () => {
 	const frame = useCurrentFrame();
-	const PARLER = at('intro', 'parler');
-	const MAL = at('intro', 'mal');
-	const POUR = at('intro', 'pourtant');
-	const SOUF = at('intro', 'souffre');
-	const COMM = at('intro', 'comment');
-	const AVEC = at('intro', 'avec');
-	const ECH = at('intro', 'échelle');
-	const CAR = at('intro', 'car');
-	const DEVINE = at('intro', 'devine');
-	const MES = at('intro', 'mesure');
-	const face = hpPt(200, 140);
-	const keys: CamKey[] = [
-		{at: POUR - 2, s: 1.35, x: face.x, y: face.y + 160, dur: 14},
-		{at: COMM - 2, s: 1, dur: 14},
-	];
-	const slide = interpolate(frame, [AVEC - 6, AVEC + 8], [0, 1], ease);
-	const bad = frame >= POUR - 2;
+	const MARTIN = at('intro', 'martin,');
+	const JAMAIS = at('intro', 'jamais');
+	const MOT = at('intro', 'mot,');
+	const CRI = at('intro', 'cri.');
+	const DONC = at('intro', 'donc,');
+	const FAUX = at('intro', 'faux');
+	const REG = at('intro', 'regarde');
+	const CRISPE = at('intro', 'crispe,');
+	const MAIN = at('intro', 'main');
+	const HANCHE = at('intro', 'hanche…');
+	const DOUL = at('intro', 'douleur');
+	const VOIT = at('intro', 'voit.');
+	const face = pt(HK2.cx, HK2.cy, HK2.size, 200, 108);
+	const hip = pt(HK2.cx, HK2.cy, HK2.size, 200, 420);
 	return (
 		<AbsoluteFill>
-			<LiveBackground />
-			<Camera punches={[PARLER + 1, MAL + 1, COMM + 1, ECH + 1, DEVINE + 1, MES + 1]} shakes={[SOUF + 2, MES + 2]} strength={0.04}>
-				<ZoomCam keys={keys} w={1080} h={1920} radius={0}>
-					<div style={{transform: `translateX(${-200 * slide}px)`}}>
-						<Elder x={HP.x} y={HP.y} size={HP.size} breath={idle(frame, 40)} mood={bad ? 'mal' : 'calme'} pain={fadeIn(frame, SOUF - 2, 6)} sweat={0.5 * fadeIn(frame, SOUF, 10)} moan={fadeIn(frame, SOUF + 10, 6)} guard={fadeIn(frame, SOUF + 18, 8)} />
-						<div style={{position: 'absolute', left: HP.x + 300, top: HP.y - 120, opacity: 1 - fadeIn(frame, AVEC - 8, 8), transform: `rotate(${Math.sin(frame / 9) * 3}deg)`}}>
-							<MuteBubble size={210} cross={interpolate(frame, [PARLER - 2, PARLER + 6], [0, 1], ease)} />
-						</div>
-					</div>
-				</ZoomCam>
-				{/* les signes qu'on peut observer */}
-				<div style={{position: 'absolute', left: 72, top: 1240}}>
-					<CauseChip at={SOUF + 4} icon={<MiniFace level={4} />} label="grimace" />
-				</div>
-				<div style={{position: 'absolute', left: 560, top: 1240}}>
-					<CauseChip at={SOUF + 12} icon={<SoundIcon />} label="gémit" />
-				</div>
-				<div style={{position: 'absolute', left: 72, top: 1356}}>
-					<CauseChip at={SOUF + 20} icon={<BodyIco />} label="se protège" />
-				</div>
-				{/* la bonne échelle : une grille d'observation */}
-				{frame >= ECH - 4 ? (
-					<div style={{position: 'absolute', left: 600, top: 560, transform: `translateX(${(1 - popAt(frame, ECH - 4)) * 400}px) rotate(4deg)`}}>
-						<ObsSheet
-							title="ÉCHELLE"
-							mode="yesno"
-							width={420}
-							rowH={66}
-							rows={[
-								{label: 'visage', at: ECH - 4, points: 1, pointsAt: ECH + 4},
-								{label: 'plaintes', at: ECH - 4, points: 1, pointsAt: ECH + 10},
-								{label: 'corps', at: ECH - 4, points: 1, pointsAt: ECH + 16},
-							]}
+			<ToneBg tone={ROSE} />
+			<Camera punches={[MARTIN + 1, JAMAIS + 1, CRI + 1, FAUX + 1, REG + 1, CRISPE + 1, HANCHE + 1, VOIT + 1]} shakes={[FAUX + 2]} strength={0.04}>
+				<Fly at={-60} x={HK.cx} y={HK.cy} move={[{at: REG - 2, x: HK2.cx, y: HK2.cy, s: HK2.size / HK.size, dur: 16}]}>
+					<Box size={HK.size}>
+						<Live
+							render={(f) => (
+								<Elder x={0} y={0} size={HK.size} woman breath={idle(f)} mood={f >= CRISPE - 2 ? 'mal' : 'calme'} pain={fadeIn(f, CRISPE - 2, 8) * 0.7} guard={fadeIn(f, MAIN - 2, 8)} />
+							)}
 						/>
-					</div>
-				) : null}
-				{frame >= CAR - 2 ? (
-					<div style={{position: 'absolute', left: 0, right: 0, top: 1010, display: 'flex', justifyContent: 'center'}}>
-						<div style={{position: 'relative', transform: `scale(${popAt(frame, CAR - 2)})`}}>
-							<Pill at={CAR - 2} size={56} color={LPI.paper}>
-								ça se devine
-							</Pill>
-							<Strike at={DEVINE + 2} width={420} rot={-8} thick={14} />
-						</div>
-					</div>
-				) : null}
-				<Stamp at={MES - 1} x={540} y={900} text="Ça se mesure !" size={84} rot={-7} />
-				<Burst at={MES - 1} x={540} y={900} r={320} n={16} />
-				{/* titres */}
-				<TitleAt from={-60} to={AVEC - 4} text="Comment savoir s'il a *mal* ?" size={92} stagger={0} />
-				<TitleAt from={AVEC - 2} text={'Avec la *bonne*\n*échelle* !'} size={92} />
+					</Box>
+				</Fly>
+				<Note at={MARTIN - 2} to={REG - 6} y={430} size={40} tone={LPI.paper}>
+					Mme Martin · 87 ans
+				</Note>
+				<Pop from={MOT - 4} to={FAUX - 4} x={720} y={520}>
+					<MuteBubble size={210} cross={fadeIn(frame, CRI - 2, 8)} />
+				</Pop>
+				<Stamp at={FAUX} x={540} y={1180} text="FAUX !" size={130} rot={-8} out={REG + 6} />
+				<Burst at={FAUX} x={540} y={1180} r={420} n={18} />
+				<PointTag at={CRISPE - 2} x={830} y={520} px={face.x + 40} py={face.y}>
+					son visage se crispe
+				</PointTag>
+				<PointTag at={HANCHE - 4} x={330} y={1430} px={hip.x - 40} py={hip.y}>
+					elle protège sa hanche
+				</PointTag>
+				<Big from={-60} to={DONC - 6} text={'Elle ne se plaint\n*jamais*'} size={116} y={150} />
+				<Big from={DONC - 4} to={REG - 6} text={"Donc… elle n'a\npas *mal* ?"} size={116} y={150} />
+				<Big from={REG - 4} to={DOUL - 6} text={'Regarde\n*mieux*'} size={130} y={150} />
+				<Big from={DOUL - 4} text={'Elle ne se dit pas…\nelle se *voit*'} size={110} y={150} />
 			</Camera>
-			<Flash at={SOUF} />
-			<Sfx name="heartbeat" at={0} volume={0.07} />
-			<Sfx name="buzz" at={PARLER} volume={0.05} dur={12} />
-			<Sfx name="impact" at={SOUF} volume={0.11} />
-			{[4, 12, 20].map((d) => (
-				<Sfx key={d} name="pop" at={SOUF + d} volume={0.08} />
-			))}
-			<Sfx name="whoosh" at={ECH - 4} volume={0.07} />
-			<Sfx name="stamp" at={DEVINE + 2} volume={0.08} />
-			<Sfx name="stamp" at={MES - 1} volume={0.13} />
+			<Flash at={FAUX} max={0.35} />
+			<Sfx name="pop" at={MARTIN - 2} volume={0.07} />
+			<Sfx name="pop" at={MOT - 4} volume={0.07} />
+			<Sfx name="tick" at={CRI - 2} volume={0.07} />
+			<Sfx name="stamp" at={FAUX} volume={0.13} />
+			<Sfx name="whoosh" at={REG - 2} volume={0.08} />
+			<Sfx name="pop" at={CRISPE - 2} volume={0.08} />
+			<Sfx name="pop" at={HANCHE - 4} volume={0.08} />
+			<Sfx name="ding" at={VOIT} volume={0.08} />
 		</AbsoluteFill>
 	);
 };
 
 /* ═══════════════════════════════ LA SÉRIE ═══════════════════════════════ */
 export const Serie: React.FC = () => {
-	const frame = useCurrentFrame();
 	const NOUS = at('serie', 'nous');
 	const PART = at('serie', 'partie');
 	const DEUX = at('serie', 'deux');
 	const SERIE = at('serie', 'série');
 	const AUJ = at('serie', "aujourd'hui");
-	const REP = at('serie', 'répondre');
+	const REP = at('serie', 'répondre.');
 	return (
 		<AbsoluteFill>
-			<LiveBackground />
+			<ToneBg tone={ROSE} />
 			<Camera punches={[DEUX + 1, SERIE + 1, REP + 1]} shakes={[DEUX + 2]}>
-				<Head kicker="Série · La douleur" kAt={NOUS - 4} title="Partie *2* sur 2" tAt={PART - 2} size={92} />
-				<SeriesParts parts={PAIN_PARTS} current={1} at={DEUX - 2} />
-				{frame >= AUJ - 2 ? (
-					<div style={{position: 'absolute', left: 0, right: 0, top: 920, display: 'flex', justifyContent: 'center', transform: `scale(${popAt(frame, AUJ - 2)})`}}>
-						<div style={{padding: '14px 34px', borderRadius: 999, background: LPI.paper, border: `6px solid ${LPI.blue}`, boxShadow: SHADOW, fontFamily: FONT.title, fontWeight: 900, fontSize: 46, color: N}}>
-							Aujourd'hui : <span style={{color: LPI.blue}}>il ne répond pas</span>
-						</div>
-					</div>
-				) : null}
+				<Note at={NOUS - 4} y={150} size={34} tone={N}>
+					SÉRIE · LA DOULEUR
+				</Note>
+				<Big from={PART - 2} text={'Partie *2* sur 2'} size={124} y={250} center />
+				<SeriesParts parts={PAIN_PARTS} current={1} at={DEUX - 2} y={520} />
+				<Note at={AUJ - 2} y={960} size={50}>
+					Aujourd&apos;hui : <span style={{color: LPI.blue}}>il ne peut pas répondre</span>
+				</Note>
 			</Camera>
 			{[0, 1].map((i) => (
 				<Sfx key={i} name="pop" at={DEUX - 2 + i * 6} volume={0.09} />
@@ -253,241 +211,179 @@ export const Serie: React.FC = () => {
 	);
 };
 
-/* ═══════════════════════════════ 1 · LE PRINCIPE ═══════════════════════════════ */
-// Il ne peut pas parler (bulle vide) ; c'est toi qui observes : la caméra (avec un viseur rond) va du visage aux gestes
-// puis à la bouche (« aïe… ») ; le terme « Hétéro-évaluation » claque et se range ; 3 puces cochées.
-const TP = {x: 303, y: 30, size: 330};
-const tPt = (px: number, py: number) => ({x: TP.x + (px * TP.size) / 400, y: TP.y + (py * TP.size) / 400});
+/* ═══════════════════════════════ LE PRINCIPE : C'EST TOI QUI OBSERVES ═══════════════════════════════ */
+const HT = {cx: 540, cy: 960, size: 520};
 
 export const Hetero: React.FC = () => {
 	const frame = useCurrentFrame();
-	const EXPR = at('hetero', "s'exprimer");
+	const EXPR = at('hetero', "s'exprimer,");
 	const TOI = at('hetero', 'toi');
 	const OBS = at('hetero', "l'observant");
-	const HET = at('hetero', "l'hétéro-évaluation");
-	const VIS = at('hetero', 'visage');
+	const HET = at('hetero', "l'hétéro-évaluation.");
+	const VIS = at('hetero', 'visage,');
 	const GEST = at('hetero', 'gestes');
 	const PLAI = at('hetero', 'plaintes');
 	const PARL = at('hetero', 'parlent');
-	const face = tPt(200, 120);
-	const body = tPt(200, 380);
-	const mouth = tPt(210, 150);
-	const keys: CamKey[] = [
-		{at: VIS - 4, s: 2, x: face.x, y: face.y, dur: 12},
-		{at: GEST - 4, s: 1.5, x: body.x, y: body.y, dur: 12},
-		{at: PLAI - 2, s: 2.1, x: mouth.x + 30, y: mouth.y, dur: 10},
-		{at: PARL + 6, s: 1, dur: 14},
-	];
-	const ring = frame >= VIS - 2 && frame < PARL + 6 ? 1 : 0;
+	const face = pt(HT.cx, HT.cy, HT.size, 200, 108);
+	const hip = pt(HT.cx, HT.cy, HT.size, 200, 420);
+	const mouth = pt(HT.cx, HT.cy, HT.size, 220, 150);
 	return (
 		<AbsoluteFill>
-			<LiveBackground />
-			<Camera punches={[TOI + 1, OBS + 1, HET + 1, VIS + 1, GEST + 1, PLAI + 1]} strength={0.03}>
-				<Head kicker="Le principe" kAt={2} title="C'est *toi* qui *observes*" tAt={8} />
-				<Stage y={440} h={540} at={4} bumps={[TOI, OBS, VIS]}>
-					<ZoomCam keys={keys} w={936} h={540}>
-						<Elder x={TP.x} y={TP.y} size={TP.size} breath={idle(frame, 40)} mood="mal" pain={0.5} moan={fadeIn(frame, PLAI - 2, 6)} guard={interpolate(frame, [GEST - 2, GEST + 6, PLAI, PLAI + 6], [0, 1, 1, 0], clamp)} />
-					</ZoomCam>
-					<div style={{position: 'absolute', left: 640, top: 30, opacity: 1 - fadeIn(frame, VIS - 6, 6)}}>
-						<MuteBubble size={170} cross={fadeIn(frame, EXPR - 2, 8)} />
-					</div>
-					{ring > 0 ? (
-						<svg width={936} height={540} style={{position: 'absolute', inset: 0, pointerEvents: 'none'}}>
-							<circle cx={468} cy={270} r={180 + 6 * Math.sin(frame / 4)} fill="none" stroke={LPI.pink} strokeWidth={8} strokeDasharray="22 14" strokeDashoffset={frame * 2} />
-						</svg>
-					) : null}
-					<StagePill from={TOI - 2} to={HET - 4} color={LPI.blue}>
-						c'est toi qui évalues
-					</StagePill>
-					{frame >= PLAI ? (
-						<div style={{position: 'absolute', left: 640, top: 40, transform: `scale(${popAt(frame, PLAI)})`}}>
-							<Bubble tail="left" tone={alpha(LPI.pink, 0.9)}>
-								<span style={{fontSize: 52}}>aïe…</span>
-							</Bubble>
-						</div>
-					) : null}
-				</Stage>
-				<TermSlam index={0} at={HET} term="Hétéro-évaluation" meaning="le soignant évalue en observant" sign="device" slamY={710} slot={{x: 72, y: 1012, w: 936}} active={frame >= HET} />
-				<div style={{position: 'absolute', left: 72, top: 1210, display: 'flex', gap: 18}}>
-					<CheckChip at={VIS - 2} label="visage" size={42} />
-					<CheckChip at={GEST - 2} label="gestes" size={42} />
-					<CheckChip at={PLAI - 2} label="plaintes" size={42} />
-				</div>
+			<ToneBg tone={SKY} />
+			<Camera punches={[EXPR + 1, TOI + 1, OBS + 1, HET + 1, VIS + 1, GEST + 1, PLAI + 1]} strength={0.03}>
+				<Big from={-2} to={TOI - 6} text={'Il ne peut pas\nle *dire*'} size={120} />
+				<Big from={TOI - 4} to={HET - 6} text={"C'est *toi*\nqui *observes*"} size={120} />
+				<Big from={HET - 4} text={"*L'hétéro-*\n*évaluation*"} size={120} />
+				<Fly at={-4} x={HT.cx} y={HT.cy} from="bottom" dist={1100}>
+					<Box size={HT.size}>
+						<Live render={(f) => <Elder x={0} y={0} size={HT.size} breath={idle(f, 40)} mood="mal" pain={0.5} moan={fadeIn(f, PLAI - 2, 6)} guard={interpolate(f, [GEST - 2, GEST + 6], [0, 1], clamp)} />} />
+					</Box>
+				</Fly>
+				<Pop from={2} to={TOI - 6} x={720} y={560}>
+					<MuteBubble size={200} cross={fadeIn(frame, EXPR - 2, 8)} />
+				</Pop>
+				{/* le viseur : c'est toi qui regardes */}
+				{frame >= OBS - 2 && frame < VIS - 4 ? (
+					<svg width={1080} height={1920} style={{position: 'absolute', inset: 0, opacity: fadeIn(frame, OBS - 2, 6)}}>
+						<circle cx={HT.cx} cy={900} r={330 + 8 * Math.sin(frame / 4)} fill="none" stroke={LPI.pink} strokeWidth={10} strokeDasharray="26 16" strokeDashoffset={frame * 2} />
+					</svg>
+				) : null}
+				<PointTag at={VIS - 2} x={840} y={560} px={face.x + 40} py={face.y}>
+					son visage
+				</PointTag>
+				<PointTag at={GEST - 2} x={270} y={1310} px={hip.x - 40} py={hip.y}>
+					ses gestes
+				</PointTag>
+				<PointTag at={PLAI - 2} x={850} y={980} px={mouth.x + 20} py={mouth.y}>
+					ses plaintes
+				</PointTag>
+				<Note at={HET + 4} to={VIS - 6} y={1330} size={46}>
+					le soignant évalue en observant
+				</Note>
 			</Camera>
-			<Sfx name="pop" at={TOI - 2} volume={0.08} />
-			<Sfx name="whoosh" at={VIS - 4} volume={0.06} />
-			<Sfx name="whoosh" at={GEST - 4} volume={0.06} />
-			<Sfx name="pop" at={PLAI} volume={0.09} />
+			<Sfx name="tick" at={EXPR - 2} volume={0.07} />
+			<Sfx name="whoosh" at={OBS - 2} volume={0.06} />
+			<Sfx name="pop" at={HET + 4} volume={0.07} />
+			{[VIS, GEST, PLAI].map((t) => (
+				<Sfx key={t} name="pop" at={t - 2} volume={0.08} />
+			))}
+			<Sfx name="ding" at={PARL} volume={0.07} />
 		</AbsoluteFill>
 	);
 };
 
-/* ═══════════════════════════════ 2 · ALGOPLUS ═══════════════════════════════ */
-// La grille Algoplus (5 questions, oui / non) arrive ligne par ligne pendant que le patient montre chaque signe ; « un
-// point par oui » : visage oui, regard non, plaintes oui, corps non, comportement non → 2 / 5 → il a mal, on le soulage.
+/* ═══════════════════════════════ 1 · ALGOPLUS ═══════════════════════════════ */
+const ROW_Y = 410;
+const ROW_STEP = 128;
+const SMALL = {x: 160, y: 1400, s: 0.45};
+
 export const Algoplus: React.FC = () => {
 	const frame = useCurrentFrame();
-	const PERS = at('algoplus', 'personne');
 	const COMMU = at('algoplus', 'communique');
-	const ALGO = at('algoplus', 'algoplus');
+	const ALGO = at('algoplus', 'algoplus.');
 	const CINQ = at('algoplus', 'cinq');
-	const VIS = at('algoplus', 'visage');
-	const REG = at('algoplus', 'regard');
-	const PLAI = at('algoplus', 'plaintes');
-	const CORPS = at('algoplus', 'corps');
-	const COMP = at('algoplus', 'comportement');
+	const VIS = at('algoplus', 'visage,');
+	const REG = at('algoplus', 'regard,');
+	const PLAI = at('algoplus', 'plaintes,');
+	const CORPS = at('algoplus', 'corps,');
+	const COMP = at('algoplus', 'comportement.');
 	const UN = at('algoplus', 'un');
 	const DES = at('algoplus', 'dès');
-	const MAL = at('algoplus', 'mal');
-	const SOUL = at('algoplus', 'soulage');
-	const sheet = popAt(frame, ALGO - 2);
+	const SOUL = at('algoplus', 'soulage.');
+	const items: [number, React.ReactNode, string, number][] = [
+		[VIS, <MiniFace key="v" />, 'son visage', 1],
+		[REG, <EyeIco key="r" />, 'son regard', 0],
+		[PLAI, <SoundIcon key="p" />, 'ses plaintes', 0],
+		[CORPS, <BodyIco key="c" />, 'son corps', 1],
+		[COMP, <MoveIco key="m" />, 'son comportement', 0],
+	];
 	return (
 		<AbsoluteFill>
-			<LiveBackground />
-			<Camera punches={[ALGO + 1, CINQ + 1, VIS + 1, PLAI + 1, UN + 1, DES + 1]} shakes={[MAL + 1]} strength={0.03}>
-				<Head kicker="Personne âgée" kAt={PERS - 4} title="L'échelle *Algoplus*" tAt={8} />
-				<Stage y={440} h={560} at={4} bumps={[ALGO, UN, DES]}>
-					<Elder
-						x={0}
-						y={70}
-						size={310}
-						breath={idle(frame, 40)}
-						mood={frame >= VIS - 2 ? 'mal' : 'calme'}
-						eyesClosed={interpolate(frame, [REG - 2, REG + 6, PLAI, PLAI + 6], [0, 0.6, 0.6, 0], clamp)}
-						moan={interpolate(frame, [PLAI - 2, PLAI + 4, CORPS, CORPS + 6], [0, 1, 1, 0], clamp)}
-						guard={interpolate(frame, [CORPS - 2, CORPS + 6, COMP, COMP + 6], [0, 1, 1, 0], clamp)}
-						agit={interpolate(frame, [COMP - 2, COMP + 4, COMP + 24, COMP + 30], [0, 1, 1, 0], clamp)}
-					/>
-					{frame >= COMMU - 2 && frame < ALGO + 6 ? (
-						<div style={{position: 'absolute', left: 200, top: 10, opacity: 1 - fadeIn(frame, ALGO - 2, 8), transform: `scale(${popAt(frame, COMMU - 2)})`}}>
-							<MuteBubble size={170} cross={fadeIn(frame, COMMU + 4, 8)} />
-						</div>
-					) : null}
-					{sheet > 0 ? (
-						<div style={{position: 'absolute', left: 330, top: 6, transform: `scale(${sheet})`, transformOrigin: 'right top'}}>
-							<ObsSheet
-								title="ALGOPLUS"
-								mode="yesno"
-								width={590}
-								rowH={68}
-								rows={[
-									{label: 'visage', icon: <MiniFace level={4} />, at: VIS - 2, points: 1, pointsAt: UN - 2},
-									{label: 'regard', icon: <EyeIco />, at: REG - 2, points: 0, pointsAt: UN + 1},
-									{label: 'plaintes', icon: <SoundIcon />, at: PLAI - 2, points: 1, pointsAt: UN + 4},
-									{label: 'corps', icon: <BodyIco />, at: CORPS - 2, points: 0, pointsAt: UN + 7},
-									{label: 'comportement', icon: <MoveIco />, at: COMP - 2, points: 0, pointsAt: UN + 10},
-								]}
-								total={{at: UN - 2, of: 5}}
-							/>
-						</div>
-					) : null}
-					<StagePill from={ALGO - 2} to={VIS - 4} color={LPI.sky} y={480}>
-						5 questions · oui ou non
-					</StagePill>
-				</Stage>
-				{frame >= DES - 2 ? (
-					<div style={{position: 'absolute', left: 72, top: 1030}}>
-						<Pill at={DES - 2} size={44} color={LPI.pink}>
-							dès 2 / 5 : il a mal
-						</Pill>
-					</div>
-				) : null}
-				<div style={{position: 'absolute', left: 72, top: 1140}}>
-					<CheckChip at={SOUL - 2} label="on le soulage" size={44} />
-				</div>
+			<ToneBg tone={ROSE} />
+			<Camera punches={[COMMU + 1, ALGO + 1, CINQ + 1, ...items.map((r) => r[0] + 1), UN + 1, DES + 1]} shakes={[DES + 2]} strength={0.03}>
+				<Big from={-2} to={ALGO - 6} text={'Elle ne\n*communique* pas'} size={116} />
+				<Big from={ALGO - 4} text={'*Algoplus*'} size={150} />
+				<Fly at={-4} x={540} y={960} from="bottom" dist={1100} move={[{at: ALGO - 4, x: SMALL.x, y: SMALL.y, s: SMALL.s, dur: 12}]}>
+					<Box size={520}>
+						<Live render={(f) => <Elder x={0} y={0} size={520} woman breath={idle(f)} mood="mal" pain={0.4} guard={interpolate(f, [CORPS - 2, CORPS + 6], [0, 1], clamp)} />} />
+					</Box>
+				</Fly>
+				<Pop from={COMMU - 2} to={ALGO - 6} x={720} y={560}>
+					<MuteBubble size={200} cross={fadeIn(frame, COMMU + 4, 8)} />
+				</Pop>
+				<Note at={CINQ - 2} to={VIS - 4} y={340} size={40}>
+					5 questions · oui ou non
+				</Note>
+				{items.map(([t, icon, label, v], i) => (
+					<ObsRow key={label} at={t - 2} y={ROW_Y + i * ROW_STEP} h={112} icon={icon} label={label} mode="yesno" value={v} answerAt={UN - 2 + i * 3} from={i % 2 ? 'left' : 'right'} />
+				))}
+				<Note at={UN + 14} y={1062} size={66} tone={LPI.pink}>
+					2 / 5
+				</Note>
+				<Note at={DES - 2} y={1170} size={44}>
+					dès 2 sur 5 : elle a mal
+				</Note>
+				<Note at={SOUL - 2} y={1268} size={44} tone={LPI.sky}>
+					on la soulage
+				</Note>
 			</Camera>
-			<Sfx name="pop" at={COMMU - 2} volume={0.08} />
-			<Sfx name="pop" at={ALGO - 2} volume={0.09} />
-			{[VIS, REG, PLAI, CORPS, COMP].map((t) => (
-				<Sfx key={t} name="tick" at={t - 2} volume={0.06} />
+			<Sfx name="pop" at={COMMU - 2} volume={0.07} />
+			<Sfx name="whoosh" at={ALGO - 4} volume={0.08} />
+			{items.map(([t]) => (
+				<Sfx key={t} name="pop" at={t - 2} volume={0.07} />
 			))}
-			<Sfx name="ding" at={UN} volume={0.08} />
+			{items.map((_, i) => (
+				<Sfx key={`a${i}`} name="tick" at={UN - 2 + i * 3} volume={0.06} />
+			))}
+			<Sfx name="ding" at={UN + 14} volume={0.08} />
 			<Sfx name="impact" at={DES} volume={0.08} />
-			<Sfx name="pop" at={SOUL - 2} volume={0.08} />
+			<Sfx name="pop" at={SOUL - 2} volume={0.07} />
 		</AbsoluteFill>
 	);
 };
 
-/* ═══════════════════════════════ 3 · DOLOPLUS ═══════════════════════════════ */
-// La douleur dure (l'horloge tourne) ; Doloplus : 10 questions en 3 familles (son corps · 5, ses mouvements · 2, sa
-// relation aux autres · 3), chacune notée de 0 à 3 ; la barre de score monte à 8 / 30, au-delà du seuil de 5.
-const Group: React.FC<{at: number; litAt: number; x: number; title: string; n: number; icon: React.ReactNode; fill?: number[]}> = ({at: t0, litAt, x, title, n, icon, fill = []}) => {
-	const frame = useCurrentFrame();
-	if (frame < t0) return null;
-	const lit = frame >= litAt;
-	const bump = lit ? 1 + 0.08 * Math.exp(-(frame - litAt) / 4) : 1;
-	return (
-		<div style={{position: 'absolute', left: x, top: 160, width: 284, borderRadius: 30, background: LPI.paper, border: `6px solid ${lit ? LPI.blue : alpha(N, 0.3)}`, boxShadow: lit ? `0 18px 44px ${alpha(LPI.blue, 0.25)}` : SHADOW, padding: '12px 16px 16px', boxSizing: 'border-box', opacity: lit ? 1 : 0.55, transform: `scale(${popAt(frame, t0) * bump})`}}>
-			<div style={{display: 'flex', alignItems: 'center', gap: 10}}>
-				<div style={{width: 54, height: 54, borderRadius: 27, background: alpha(LPI.sky, 0.8), border: `4px solid ${N}`, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0}}>{icon}</div>
-				<div style={{fontFamily: FONT.title, fontWeight: 900, fontSize: 30, color: N, lineHeight: 1.05, whiteSpace: 'pre-line'}}>{title}</div>
-			</div>
-			<div style={{display: 'flex', flexDirection: 'column', gap: 8, marginTop: 12}}>
-				{Array.from({length: n}, (_, i) => (
-					<div key={i} style={{display: 'flex', alignItems: 'center', gap: 8, opacity: interpolate(frame, [t0 + i * 2, t0 + i * 2 + 5], [0, 1], clamp)}}>
-						<div style={{flex: 1, height: 10, borderRadius: 5, background: alpha(N, 0.12)}} />
-						{[0, 1, 2].map((d) => (
-							<div key={d} style={{width: 18, height: 18, borderRadius: 9, background: d < (fill[i] ?? 0) ? LPI.pink : 'transparent', border: `3px solid ${d < (fill[i] ?? 0) ? N : alpha(N, 0.25)}`}} />
-						))}
-					</div>
-				))}
-			</div>
-		</div>
-	);
-};
-
+/* ═══════════════════════════════ 2 · DOLOPLUS ═══════════════════════════════ */
 export const Doloplus: React.FC = () => {
 	const frame = useCurrentFrame();
 	const DURE = at('doloplus', 'dure');
-	const DOLO = at('doloplus', 'doloplus');
+	const DOLO = at('doloplus', 'doloplus.');
 	const DIX = at('doloplus', 'dix');
-	const CORPS = at('doloplus', 'corps');
-	const MOUV = at('doloplus', 'mouvements');
+	const CORPS = at('doloplus', 'corps,');
+	const MOUV = at('doloplus', 'mouvements,');
 	const REL = at('doloplus', 'relation');
 	const PART = at('doloplus', 'partir');
-	const TRENTE = at('doloplus', 'trente');
-	const PRES = at('doloplus', 'présente');
-	const scored = frame >= PART - 2;
+	const TRENTE = at('doloplus', 'trente,');
+	const PRES = at('doloplus', 'présente.');
 	const value = interpolate(frame, [PART - 2, TRENTE + 12], [0, 8], ease);
 	return (
 		<AbsoluteFill>
-			<LiveBackground />
+			<ToneBg tone={SKY} />
 			<Camera punches={[DURE + 1, DOLO + 1, DIX + 1, CORPS + 1, MOUV + 1, REL + 1, TRENTE + 1]} strength={0.03}>
-				<Head kicker="Douleur qui dure" kAt={2} title="L'échelle *Doloplus*" tAt={8} />
-				<Stage y={440} h={560} at={4} bumps={[DOLO, DIX, TRENTE]}>
-					{frame >= DURE - 4 ? (
-						<div style={{position: 'absolute', left: 30, top: 20, display: 'flex', alignItems: 'center', gap: 16, transform: `scale(${popAt(frame, DURE - 4)})`, transformOrigin: 'left top'}}>
-							<WallClock h={8} m={0} size={110} spin={interpolate(frame, [DURE - 4, DOLO + 20], [0, 14], clamp)} />
-							<Pill at={DURE - 4} size={36} color={LPI.sky}>
-								elle dure dans le temps
-							</Pill>
-						</div>
-					) : null}
-					{frame >= DIX - 2 ? (
-						<div style={{position: 'absolute', left: 640, top: 14, transform: `scale(${popAt(frame, DIX - 2)})`}}>
-							<Pill at={DIX - 2} size={40} color={LPI.blue}>
-								10 questions
-							</Pill>
-						</div>
-					) : null}
-					<Group at={DIX + 2} litAt={CORPS - 2} x={18} title="son corps" n={5} icon={<BodyIco />} fill={scored ? [2, 1, 1, 1, 0] : []} />
-					<Group at={DIX + 7} litAt={MOUV - 2} x={326} title="ses mouvements" n={2} icon={<MoveIco />} fill={scored ? [1, 1] : []} />
-					<Group at={DIX + 12} litAt={REL - 2} x={634} title={'sa relation\naux autres'} n={3} icon={<LinkIco />} fill={scored ? [1, 0, 0] : []} />
-				</Stage>
+				<Big from={-2} to={DOLO - 6} text={'Si la douleur\n*dure*…'} size={124} />
+				<Big from={DOLO - 4} text={'*Doloplus*'} size={150} />
+				<Fly at={-4} out={DIX - 6} x={540} y={860} from="bottom" to="top" dist={1100}>
+					<Live render={(f) => <WallClock h={8} m={0} size={460} spin={interpolate(f, [DURE - 4, DOLO + 20], [0, 18], clamp)} />} />
+				</Fly>
+				<Note at={DIX - 2} y={350} size={44}>
+					10 questions, plus complètes
+				</Note>
+				<RowCard at={CORPS - 2} y={470} h={190} badge={<BodyIco />} badgeTone={LPI.sky} title="Son corps" sub="5 questions" subAt={CORPS + 4} />
+				<RowCard at={MOUV - 2} y={686} h={190} badge={<MoveIco />} badgeTone={LPI.sky} title="Ses mouvements" sub="2 questions" subAt={MOUV + 4} from="left" />
+				<RowCard at={REL - 2} y={902} h={190} badge={<LinkIco />} badgeTone={LPI.sky} title="Sa relation aux autres" sub="3 questions" subAt={REL + 4} />
 				{frame >= PART - 4 ? (
-					<div style={{position: 'absolute', left: 72, top: 1010, opacity: fadeIn(frame, PART - 4, 6)}}>
+					<div style={{position: 'absolute', left: 72, top: 1180, opacity: fadeIn(frame, PART - 4, 6)}}>
 						<ScoreBar value={value} max={30} threshold={5} label="dès 5 / 30" />
-						<div style={{position: 'absolute', right: 0, top: -54, fontFamily: FONT.title, fontWeight: 900, fontSize: 56, color: N}}>
+						<div style={{position: 'absolute', right: 0, top: -58, fontFamily: FONT.title, fontWeight: 900, fontSize: 60, color: N}}>
 							<span style={{color: value >= 5 ? LPI.pink : N}}>{Math.round(value)}</span> / 30
 						</div>
 					</div>
 				) : null}
-				<div style={{position: 'absolute', left: 72, top: 1180}}>
-					<CheckChip at={PRES - 2} label="la douleur est présente" size={42} />
-				</div>
+				<Note at={PRES - 2} y={1350} size={46} tone={LPI.pink}>
+					la douleur est présente
+				</Note>
 			</Camera>
 			<Sfx name="tick" at={DURE} volume={0.07} />
-			<Sfx name="pop" at={DIX - 2} volume={0.08} />
+			<Sfx name="whoosh" at={DIX - 6} volume={0.07} />
 			{[CORPS, MOUV, REL].map((t) => (
 				<Sfx key={t} name="pop" at={t - 2} volume={0.08} />
 			))}
@@ -497,169 +393,140 @@ export const Doloplus: React.FC = () => {
 	);
 };
 
-/* ═══════════════════════════════ 4 · LA BPS (RÉANIMATION) ═══════════════════════════════ */
-// Le patient intubé (tube jusqu'au respirateur), endormi (yeux fermés, « z ») ; on observe son visage, ses bras (crispés),
-// puis le respirateur (la courbe devient irrégulière : il le supporte mal).
-const BP = {x: 120, y: 50, size: 300};
-const bPt = (px: number, py: number) => ({x: BP.x + (px * BP.size) / 400, y: BP.y + (py * BP.size) / 400});
-const VENT = {x: 640, y: 140, w: 230};
+/* ═══════════════════════════════ 3 · LA BPS (RÉANIMATION) ═══════════════════════════════ */
+const BP = {cx: 330, cy: 900, size: 440};
+const VENT = {cx: 830, cy: 900, w: 300};
 
 export const Bps: React.FC = () => {
 	const frame = useCurrentFrame();
-	const REA = at('bps', 'réanimation');
+	const REA = at('bps', 'réanimation,');
 	const INTU = at('bps', 'intubé');
-	const ENDO = at('bps', 'endormi');
-	const BPS = at('bps', 'bps');
-	const VIS = at('bps', 'visage');
-	const BRAS = at('bps', 'bras');
+	const ENDO = at('bps', 'endormi,');
+	const BPS = at('bps', 'bps.');
+	const VIS = at('bps', 'visage,');
+	const BRAS = at('bps', 'bras,');
 	const SUPP = at('bps', 'supporte');
-	const RESP = at('bps', 'respirateur');
-	const mouth = bPt(200, 152);
-	const face = bPt(200, 120);
-	const arms = bPt(200, 380);
-	const keys: CamKey[] = [
-		{at: VIS - 4, s: 2, x: face.x + 20, y: face.y + 20, dur: 12},
-		{at: BRAS - 4, s: 1.45, x: arms.x + 40, y: arms.y - 40, dur: 12},
-		{at: SUPP - 4, s: 1.6, x: VENT.x + VENT.w / 2, y: VENT.y + 140, dur: 14},
-		{at: RESP + 26, s: 1, dur: 14},
-	];
+	const RESP = at('bps', 'respirateur.');
+	const mouth = pt(BP.cx, BP.cy, BP.size, 200, 152);
+	const face = pt(BP.cx, BP.cy, BP.size, 200, 108);
+	const arm = pt(BP.cx, BP.cy, BP.size, 80, 380);
 	const tube = fadeIn(frame, INTU - 2, 10);
 	const tense = interpolate(frame, [BRAS - 2, BRAS + 6], [0, 1], clamp);
+	const vx = VENT.cx - VENT.w / 2;
+	const vy = VENT.cy - (VENT.w * 300) / 240 / 2;
+	const tubeD = `M${mouth.x} ${mouth.y} C${mouth.x + 160} ${mouth.y + 20} ${vx - 60} ${vy + 260} ${vx + 30} ${vy + 250}`;
 	return (
 		<AbsoluteFill>
-			<LiveBackground />
+			<ToneBg tone={LPI.blue} light={0.1} />
 			<Camera punches={[REA + 1, INTU + 1, BPS + 1, VIS + 1, BRAS + 1, RESP + 1]} strength={0.03}>
-				<Head kicker="En réanimation" kAt={2} title="La *BPS*" tAt={8} size={100} />
-				<Stage y={440} h={560} at={4} bumps={[INTU, BPS, RESP]}>
-					<ZoomCam keys={keys} w={936} h={560}>
-						<div style={{position: 'absolute', left: BP.x, top: BP.y}}>
-							<Patient size={BP.size} breath={idle(frame, 50) * 0.6} eyesClosed={fadeIn(frame, ENDO - 4, 8)} mood={frame >= VIS - 2 ? 'mal' : 'calme'} armL={8 * tense} armR={8 * tense} />
-						</div>
-						{tube > 0 ? (
-							<svg width={936} height={560} style={{position: 'absolute', inset: 0, overflow: 'visible'}}>
-								<path d={`M${mouth.x} ${mouth.y} C${mouth.x + 120} ${mouth.y + 10} ${VENT.x - 80} ${VENT.y + 220} ${VENT.x + 20} ${VENT.y + 210}`} fill="none" stroke={N} strokeWidth={16} strokeLinecap="round" pathLength={1} strokeDasharray={`${tube} 1`} />
-								<path d={`M${mouth.x} ${mouth.y} C${mouth.x + 120} ${mouth.y + 10} ${VENT.x - 80} ${VENT.y + 220} ${VENT.x + 20} ${VENT.y + 210}`} fill="none" stroke={LPI.sky} strokeWidth={8} strokeLinecap="round" pathLength={1} strokeDasharray={`${tube} 1`} />
-								{tense > 0
-									? [-1, 1].map((k) => <path key={k} d={`M${bPt(200 + k * 150, 300).x} ${bPt(200, 300).y} l${k * 14} 8 l${-k * 14} 8 l${k * 14} 8`} fill="none" stroke={LPI.pink} strokeWidth={5} strokeLinecap="round" opacity={tense * (0.6 + 0.4 * Math.sin(frame))} />)
-									: null}
-								{frame >= ENDO - 2
-									? [0, 1].map((i) => (
-											<text key={i} x={bPt(290, 70).x + i * 30} y={bPt(290, 70).y - i * 28 - ((frame / 3) % 10)} fontFamily={FONT.title} fontWeight={900} fontSize={34 - i * 6} fill={LPI.blue} opacity={fadeIn(frame, ENDO - 2 + i * 6, 6)}>
-												z
-											</text>
-										))
-									: null}
-							</svg>
-						) : null}
-						{frame >= INTU - 6 ? (
-							<div style={{position: 'absolute', left: VENT.x, top: VENT.y, transform: `scale(${popAt(frame, INTU - 6)})`}}>
-								<Ventilator width={VENT.w} fight={interpolate(frame, [SUPP - 2, SUPP + 8], [0, 1], clamp)} />
-							</div>
-						) : null}
-					</ZoomCam>
-					<StagePill from={INTU - 2} to={ENDO - 2} color={LPI.blue}>
-						intubé : un tube pour respirer
-					</StagePill>
-					<StagePill from={ENDO - 2} to={VIS - 4} color={LPI.sky}>
-						endormi : il ne peut pas parler
-					</StagePill>
-				</Stage>
-				{frame >= BPS - 2 ? (
-					<div style={{position: 'absolute', left: 72, top: 1030}}>
-						<Pill at={BPS - 2} size={40} color={LPI.sky}>
-							BPS = échelle du comportement
-						</Pill>
-					</div>
+				<Big from={-2} to={BPS - 6} text={'En\n*réanimation*'} size={124} {...ON_BLUE} />
+				<Big from={BPS - 4} text={'La *BPS*'} size={160} {...ON_BLUE} />
+				<Fly at={-4} x={BP.cx} y={BP.cy} from="left">
+					<Live render={(f) => <Patient size={BP.size} breath={idle(f, 50) * 0.6} eyesClosed={fadeIn(f, ENDO - 4, 8)} mood={f >= VIS - 2 ? 'mal' : 'calme'} armL={8 * interpolate(f, [BRAS - 2, BRAS + 6], [0, 1], clamp)} armR={8 * interpolate(f, [BRAS - 2, BRAS + 6], [0, 1], clamp)} />} />
+				</Fly>
+				<Fly at={INTU - 8} x={VENT.cx} y={VENT.cy} from="right">
+					<Live render={(f) => <Ventilator width={VENT.w} fight={interpolate(f, [SUPP - 2, SUPP + 8], [0, 1], clamp)} />} />
+				</Fly>
+				{tube > 0 ? (
+					<svg width={1080} height={1920} style={{position: 'absolute', inset: 0, overflow: 'visible'}}>
+						<path d={tubeD} fill="none" stroke={N} strokeWidth={18} strokeLinecap="round" pathLength={1} strokeDasharray={`${tube} 1`} />
+						<path d={tubeD} fill="none" stroke={LPI.sky} strokeWidth={9} strokeLinecap="round" pathLength={1} strokeDasharray={`${tube} 1`} />
+						{tense > 0
+							? [-1, 1].map((k) => <path key={k} d={`M${BP.cx + k * 190} 860 l${k * 18} 10 l${-k * 18} 10 l${k * 18} 10`} fill="none" stroke={LPI.pink} strokeWidth={6} strokeLinecap="round" opacity={tense * (0.6 + 0.4 * Math.sin(frame))} />)
+							: null}
+						{frame >= ENDO - 2
+							? [0, 1].map((i) => (
+									<text key={i} x={face.x + 120 + i * 36} y={face.y - 70 - i * 34 - ((frame / 3) % 10)} fontFamily={FONT.title} fontWeight={900} fontSize={52 - i * 10} fill={LPI.paper} opacity={fadeIn(frame, ENDO - 2 + i * 6, 6)}>
+										z
+									</text>
+								))
+							: null}
+					</svg>
 				) : null}
-				<div style={{position: 'absolute', left: 72, top: 1130, display: 'flex', gap: 18}}>
-					<CheckChip at={VIS - 2} label="visage" size={42} />
-					<CheckChip at={BRAS - 2} label="bras" size={42} />
-					<CheckChip at={RESP - 2} label="respirateur" size={42} />
-				</div>
+				<Note at={INTU - 2} to={ENDO - 4} y={1250} size={46}>
+					intubé : un tube pour respirer
+				</Note>
+				<Note at={ENDO - 2} to={BPS - 4} y={1250} size={46}>
+					endormi : il ne peut pas parler
+				</Note>
+				<PointTag at={VIS - 2} x={260} y={520} px={face.x} py={face.y - 20} dark>
+					son visage
+				</PointTag>
+				<PointTag at={BRAS - 2} x={260} y={1270} px={arm.x} py={arm.y} dark>
+					ses bras
+				</PointTag>
+				<PointTag at={RESP - 4} x={790} y={1270} px={VENT.cx} py={vy + 360} dark>
+					le respirateur
+				</PointTag>
 			</Camera>
-			<Sfx name="pop" at={INTU - 6} volume={0.09} />
-			<Sfx name="whoosh" at={VIS - 4} volume={0.06} />
-			<Sfx name="whoosh" at={BRAS - 4} volume={0.06} />
+			<Sfx name="whoosh" at={INTU - 8} volume={0.08} />
+			<Sfx name="pop" at={BPS - 4} volume={0.08} />
+			{[VIS, BRAS].map((t) => (
+				<Sfx key={t} name="pop" at={t - 2} volume={0.08} />
+			))}
 			<Sfx name="buzz" at={SUPP} volume={0.05} dur={16} />
+			<Sfx name="pop" at={RESP - 4} volume={0.08} />
 		</AbsoluteFill>
 	);
 };
 
-/* ═══════════════════════════════ 5 · EVENDOL (ENFANT) ═══════════════════════════════ */
-// L'enfant montre chaque signe au mot près (il pleure, grimace, s'agite, se recroqueville, se détourne) ; la grille
-// EVENDOL (5 items notés 0 → 3) se remplit : 5 / 15, au-dessus du seuil de 4 → on le soulage.
+/* ═══════════════════════════════ 4 · EVENDOL (ENFANT) ═══════════════════════════════ */
 export const Evendol: React.FC = () => {
 	const frame = useCurrentFrame();
 	const ENF = at('evendol', "l'enfant");
 	const SEPT = at('evendol', 'sept');
 	const EVEN = at('evendol', 'evendol');
-	const VOIX = at('evendol', 'voix');
-	const VIS = at('evendol', 'visage');
-	const MOUV = at('evendol', 'mouvements');
-	const POS = at('evendol', 'position');
+	const VOIX = at('evendol', 'voix,');
+	const VIS = at('evendol', 'visage,');
+	const MOUV = at('evendol', 'mouvements,');
+	const POS = at('evendol', 'position,');
 	const REL = at('evendol', 'relation');
 	const DES = at('evendol', 'dès');
-	const SOUL = at('evendol', 'soulage');
-	const sheet = popAt(frame, EVEN - 4);
+	const SOUL = at('evendol', 'soulage.');
+	const items: [number, React.ReactNode, string, number][] = [
+		[VOIX, <SoundIcon key="v" />, 'sa voix', 2],
+		[VIS, <MiniFace key="f" />, 'son visage', 1],
+		[MOUV, <MoveIco key="m" />, 'ses mouvements', 1],
+		[POS, <BodyIco key="p" />, 'sa position', 1],
+		[REL, <LinkIco key="r" />, 'sa relation', 0],
+	];
 	return (
 		<AbsoluteFill>
-			<LiveBackground />
-			<Camera punches={[ENF + 1, EVEN + 1, VOIX + 1, MOUV + 1, DES + 1]} strength={0.03}>
-				<Head kicker="Chez l'enfant" kAt={2} title="L'échelle *EVENDOL*" tAt={8} />
-				<Stage y={440} h={560} at={4} bumps={[EVEN, VOIX, DES]}>
-					{frame >= ENF - 4 ? (
-						<div style={{position: 'absolute', left: 20, top: 150, transform: `scale(${popAt(frame, ENF - 4)})`, transformOrigin: '50% 100%'}}>
+			<ToneBg tone={SKY} />
+			<Camera punches={[ENF + 1, SEPT + 1, EVEN + 1, ...items.map((r) => r[0] + 1), DES + 1]} strength={0.03}>
+				<Big from={-2} to={EVEN - 6} text={"Chez\n*l'enfant*"} size={136} />
+				<Big from={EVEN - 4} text={'*EVENDOL*'} size={150} />
+				<Fly at={ENF - 8} x={540} y={900} from="bottom" dist={1100} move={[{at: EVEN - 4, x: SMALL.x, y: SMALL.y + 20, s: 0.5, dur: 12}]}>
+					<Live
+						render={(f) => (
 							<Kid
-								size={270}
-								mood={frame >= VIS - 2 ? 'mal' : 'calme'}
-								cry={interpolate(frame, [VOIX - 2, VOIX + 4, VIS + 10, VIS + 16], [0, 1, 1, 0.3], clamp)}
-								shake={interpolate(frame, [MOUV - 2, MOUV + 4, MOUV + 20, MOUV + 26], [0, 1, 1, 0], clamp)}
-								curl={fadeIn(frame, POS - 2, 8)}
-								turn={fadeIn(frame, REL - 2, 8)}
+								size={440}
+								mood={f >= VIS - 2 ? 'mal' : 'calme'}
+								cry={interpolate(f, [VOIX - 2, VOIX + 4, VIS + 10, VIS + 16], [0, 1, 1, 0.3], clamp)}
+								shake={interpolate(f, [MOUV - 2, MOUV + 4, MOUV + 20, MOUV + 26], [0, 1, 1, 0], clamp)}
+								curl={fadeIn(f, POS - 2, 8)}
+								turn={fadeIn(f, REL - 2, 8)}
 							/>
-						</div>
-					) : null}
-					{frame >= SEPT - 2 ? (
-						<div style={{position: 'absolute', left: 24, top: 488, transform: `scale(${popAt(frame, SEPT - 2)})`, transformOrigin: 'left top'}}>
-							<Pill at={SEPT - 2} size={36} color={LPI.blue}>
-								moins de 7 ans
-							</Pill>
-						</div>
-					) : null}
-					{sheet > 0 ? (
-						<div style={{position: 'absolute', left: 330, top: 6, transform: `scale(${sheet})`, transformOrigin: 'right top'}}>
-							<ObsSheet
-								title="EVENDOL"
-								mode="points"
-								max={3}
-								width={590}
-								rowH={68}
-								rows={[
-									{label: 'voix', icon: <SoundIcon />, at: VOIX - 2, points: 2, pointsAt: VOIX + 6},
-									{label: 'visage', icon: <MiniFace level={4} />, at: VIS - 2, points: 1, pointsAt: VIS + 6},
-									{label: 'mouvements', icon: <MoveIco />, at: MOUV - 2, points: 1, pointsAt: MOUV + 6},
-									{label: 'position', icon: <BodyIco />, at: POS - 2, points: 1, pointsAt: POS + 6},
-									{label: 'relation', icon: <LinkIco />, at: REL - 2, points: 0, pointsAt: REL + 6},
-								]}
-								total={{at: VOIX + 6, of: 15}}
-							/>
-						</div>
-					) : null}
-				</Stage>
-				{frame >= DES - 2 ? (
-					<div style={{position: 'absolute', left: 72, top: 1030}}>
-						<Pill at={DES - 2} size={44} color={LPI.pink}>
-							dès 4 / 15 : il a mal
-						</Pill>
-					</div>
-				) : null}
-				<div style={{position: 'absolute', left: 72, top: 1140}}>
-					<CheckChip at={SOUL - 2} label="on le soulage" size={44} />
-				</div>
+						)}
+					/>
+				</Fly>
+				<Note at={SEPT - 2} to={EVEN - 6} y={1230} size={70} tone={LPI.pink}>
+					moins de 7 ans
+				</Note>
+				{items.map(([t, icon, label, v], i) => (
+					<ObsRow key={label} at={t - 2} y={ROW_Y + i * ROW_STEP} h={112} icon={icon} label={label} mode="points" value={v} answerAt={t + 6} from={i % 2 ? 'left' : 'right'} />
+				))}
+				<Note at={DES - 6} y={1062} size={66} tone={LPI.pink}>
+					5 / 15
+				</Note>
+				<Note at={DES - 2} y={1170} size={44}>
+					dès 4 sur 15 : on le soulage
+				</Note>
 			</Camera>
-			<Sfx name="pop" at={ENF - 4} volume={0.09} />
-			<Sfx name="pop" at={EVEN - 4} volume={0.09} />
-			{[VOIX, VIS, MOUV, POS, REL].map((t) => (
+			<Sfx name="whoosh" at={ENF - 8} volume={0.08} />
+			<Sfx name="pop" at={SEPT - 2} volume={0.08} />
+			<Sfx name="whoosh" at={EVEN - 4} volume={0.07} />
+			{items.map(([t]) => (
 				<Sfx key={t} name="tick" at={t + 6} volume={0.06} />
 			))}
 			<Sfx name="impact" at={DES} volume={0.08} />
@@ -668,27 +535,54 @@ export const Evendol: React.FC = () => {
 	);
 };
 
-/* ═══════════════════════════════ RÉCAP ═══════════════════════════════ */
+/* ═══════════════════════════════ RÉCAP : MADAME MARTIN EST SOULAGÉE ═══════════════════════════════ */
 export const Outro: React.FC = () => {
-	const DONE = at('outro', 'réévalue') + 10;
+	const frame = useCurrentFrame();
+	const REP = at('outro', 'répondre,');
+	const ALGO = at('outro', 'algoplus');
+	const DOLO = at('outro', 'doloplus');
+	const BPS = at('outro', 'bps');
+	const EVEN = at('outro', 'evendol');
+	const TOUJ = at('outro', 'toujours');
+	const MAD = at('outro', 'madame');
+	const SOUL = at('outro', 'soulagée.');
+	const rows: [number, React.ReactNode, string, string][] = [
+		[REP - 2, <TalkIcon key="t" size={50} />, "C'est toi qui observes", "s'il ne peut pas répondre"],
+		[ALGO - 2, '1', 'Algoplus', 'personne âgée · dès 2 / 5'],
+		[DOLO - 2, '2', 'Doloplus', 'douleur qui dure · dès 5 / 30'],
+		[BPS - 2, '3', 'BPS', 'en réanimation'],
+		[EVEN - 2, '4', 'EVENDOL', 'enfant de moins de 7 ans · dès 4 / 15'],
+		[TOUJ - 2, '!', 'Toujours', 'on soulage, puis on réévalue'],
+	];
+	const out = 1 - fadeIn(frame, MAD - 6, 8);
 	return (
 		<AbsoluteFill>
-			<RecapScene
-				title="*L'hétéro-évaluation*"
-				kAt={at('outro', 'récap') - 4}
-				done={DONE}
-				rows={[
-					[at('outro', 'répondre'), 'alert', 'Il ne répond pas', "c'est toi qui observes"],
-					[at('outro', 'algoplus'), 'check', 'Algoplus', 'personne âgée · dès 2 / 5'],
-					[at('outro', 'doloplus'), 'wave', 'Doloplus', 'douleur qui dure · dès 5 / 30'],
-					[at('outro', 'bps'), 'device', 'BPS', 'en réanimation'],
-					[at('outro', 'evendol'), 'check', 'EVENDOL', 'enfant < 7 ans · dès 4 / 15'],
-					[at('outro', 'toujours'), 'up', 'Toujours', 'on soulage, puis on réévalue'],
-				]}
-			/>
-			<NextUp at={DONE + 6} part={2} done title="Tu sais l'évaluer !" teaser="qu'il puisse parler… ou non" icon={<TalkIcon size={96} />} y={1210} />
-			<Sfx name="whoosh" at={DONE + 6} volume={0.07} />
+			<ToneBg tone={LPI.paper} />
+			<Camera punches={[...rows.map((r) => r[0] + 3), MAD + 1, SOUL + 1]} strength={0.03}>
+				<Big from={-2} to={MAD - 6} text={"*L'hétéro-évaluation*"} size={96} y={170} center />
+				{out > 0 ? (
+					<div style={{position: 'absolute', inset: 0, opacity: out}}>
+						{rows.map(([t, badge, title, sub], i) => (
+							<RowCard key={title} at={t} y={360 + i * 144} h={128} size={46} badge={badge} badgeTone={i === 0 ? LPI.sky : i === 5 ? LPI.blue : LPI.pink} title={title} sub={sub} check={t + 12} from={i % 2 ? 'left' : 'right'} />
+						))}
+					</div>
+				) : null}
+				<Big from={MAD - 4} text={'Et *Mme* *Martin* ?'} size={110} y={170} center />
+				<Fly at={MAD - 4} x={540} y={800} from="bottom" dist={1100}>
+					<Live render={(f) => <Patient size={420} elder={1} woman breath={idle(f)} mood={f >= SOUL - 2 ? 'content' : 'calme'} />} />
+				</Fly>
+				<Note at={SOUL - 2} y={1120} size={60} tone={LPI.sky}>
+					enfin soulagée
+				</Note>
+				<Confetti at={SOUL} x={540} y={800} n={70} />
+				<NextUp at={SOUL + 8} part={2} done title="Tu sais l'évaluer !" teaser="qu'il puisse parler… ou non" icon={<TalkIcon size={96} />} y={1236} />
+			</Camera>
+			{rows.map(([t]) => (
+				<Sfx key={t} name="pop" at={t} volume={0.08} />
+			))}
+			<Sfx name="whoosh" at={MAD - 4} volume={0.08} />
+			<Sfx name="ding" at={SOUL} volume={0.09} />
+			<Sfx name="whoosh" at={SOUL + 8} volume={0.06} />
 		</AbsoluteFill>
 	);
 };
-

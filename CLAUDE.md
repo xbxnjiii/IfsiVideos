@@ -267,6 +267,8 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   1. aligner une première fois ;
   2. `python3 scripts/voice/pad_parts.py voix48.wav src/videos/<épisode>/voice.json voix-allongee.wav 0.8` ;
   3. réaligner `voix-allongee.wav`.
+- `align_voice.py` remplace les `{affiché|prononcé}` **avant** de découper le texte : un sigle collé à une apostrophe
+  (« l'{EVA|É V A}, ») était coupé en faux mots et `at(scène, "l'eva")` plantait le rendu.
 - **`align_voice.py` n'amorce plus Whisper avec le script** (`--prompt` pour le remettre). Avec l'amorce, Whisper avait
   sauté les 25 premières secondes de la voix Laura. L'outil affiche maintenant le taux de mots reconnus et prévient
   sous 80 %.
@@ -334,6 +336,10 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   ne montre rien au-dessus du contenu).
 - Voix : « Cette plaie ne fait pas mal » est entendu « Cette **plaine** fait pas mal » → « Cette plaie… ne fait pas mal »
   (une pause casse la liaison) ; relire l'accroche au modèle `medium` de faster-whisper.
+- 2e série, **v2** (accroches refaites, voix Laura, look 2026, voir le storyboard) : partie 1 accroche **« trois soignants,
+  trois avis »** (« Pour l'un, il a un peu mal. Pour l'autre, il exagère… Et lui ? Personne ne lui a demandé ! »), partie 2
+  accroche **« elle ne se plaint jamais »** (Madame Martin, 87 ans ; « Donc, elle n'a pas mal ? Faux ! Regarde mieux… »,
+  elle revient soulagée à la fin). Ce qui suit décrit la v1.
 - 2e série : « La douleur : échelles d'évaluation » (`src/videos/douleur-1/`, `-2/`, storyboard
   `docs/lpi/storyboard-douleur-serie.md`) — partie 1 l'auto-évaluation (EN, EVA recto / verso, EVS, visages dès 4 ans, seuil
   ≥ 4/10 → on soulage, on réévalue avec la même échelle, on note), partie 2 l'hétéro-évaluation (Algoplus ≥ 2/5, Doloplus

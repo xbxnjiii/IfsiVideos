@@ -1,3 +1,42 @@
+# Storyboard — série « La douleur : échelles d'évaluation » v2 (2 parties, ≈ 1 min 37 chacune)
+
+**v2 (demandée : accroches plus prenantes, voix Laura, nouvelles animations).** La v1 (voix edge-tts, accroches
+« question au spectateur » et « patient muet ») reste dans l'historique git (commit `bcf0f1d`).
+
+- Look 2026 (kit `src/brand/bold.tsx`) : un aplat de couleur par scène (bleu clair, rose, bleu), une idée par plan en très
+  grand, vrai flou de mouvement ; en haut pendant les notions, le chapitre en cours (à gauche) et « LA DOULEUR 1/2 » (à
+  droite), sans barre de progression.
+- Briques : `src/brand/pain.tsx` (+ `Carer` : soignant dans un rond ; `PainBars` : échelle numérique en barres ;
+  `ObsRow` : ligne d'une grille d'observation en plein cadre), `Patient` (`elder`, `woman` : dame âgée à permanente).
+- Voix Laura, une seule prise par partie (≈ 1 700 – 1 800 crédits), blancs entre les parties allongés à 0,8 s.
+
+## Accroche partie 1 — « trois soignants, trois avis » (choisie par le propriétaire)
+
+« Pour l'un, il a un peu mal. Pour l'autre, il exagère. Pour le troisième, ça va très bien. Et lui ? Personne ne lui a
+demandé ! Pourtant, sa douleur, il est le seul à la sentir. Alors, comment la mesurer ? »
+Image 0 : le patient et « Il a mal à combien ? ». Les trois avis claquent par-dessus lui et le cachent ; « Et lui ? » : ils
+s'envolent ; tampon « Personne ne lui a demandé ! » (flash, secousse) ; ondes de douleur roses autour de lui, sa bulle
+« ? / 10 ». Rappel dans le principe : les trois soignants reviennent et sont barrés quand il donne lui-même sa note.
+Ensuite : échelle numérique en barres (0 → 10, la mascotte pose la question, il répond « 6 ! »), réglette EVA plein cadre,
+EVS en 5 grandes pastilles, visages en deux rangées (l'enfant montre le sien), « Dès 4 sur 10 » (chiffre géant) puis
+4 cartes (soulager, réévaluer 6 → 2, même échelle, noter), récap + « à suivre ».
+
+## Accroche partie 2 — « elle ne se plaint jamais » (choisie par le propriétaire)
+
+« Madame Martin, quatre-vingt-sept ans, ne parle presque plus. Elle ne se plaint jamais : pas un mot, pas un cri. Donc,
+elle n'a pas mal ? Faux ! Regarde mieux : son visage se crispe, sa main protège sa hanche… Sa douleur ne se dit pas : elle
+se voit. »
+Image 0 : Madame Martin et « Elle ne se plaint jamais » ; sa bulle reste vide puis se barre ; tampon FAUX ! ; on
+s'approche, étiquettes « son visage se crispe », « elle protège sa hanche ». Elle revient dans Algoplus (grille oui / non
+plein cadre : visage oui, corps oui → 2 / 5, « on la soulage ») et à la fin du récap : « Et Madame Martin ? Elle est enfin
+soulagée » + carte « série terminée ». Doloplus : horloge qui tourne, 3 cartes, barre 8 / 30 ; BPS : patient intubé
+endormi relié au respirateur, étiquettes visage · bras · respirateur ; EVENDOL : l'enfant joue chaque signe, grille en
+points 5 / 15.
+
+---
+
+# v1 (pour mémoire)
+
 # Storyboard — série « La douleur : échelles d'évaluation » (2 parties, ≈ 1 min 35 chacune)
 
 Format « série » (modèle `Plaies-1/2/3`) : accroche propre à chaque partie, carte `SeriesParts` (« Il peut répondre » ·
