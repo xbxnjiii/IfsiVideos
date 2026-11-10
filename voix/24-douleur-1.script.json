@@ -1,5 +1,5 @@
 [
-	{"id": "intro", "rate": "+4%", "text": "De zéro à dix… tu as mal à combien, là, maintenant ? Tu as un chiffre en tête ? Bravo : tu viens d'évaluer ta douleur ! Mais à l'hôpital, il existe plusieurs échelles. Laquelle choisir ?"},
+	{"id": "intro", "rate": "+4%", "text": "Pour l'un, il a un peu mal. Pour l'autre, il exagère. Pour le troisième, ça va très bien. Et lui ? Personne ne lui a demandé ! Pourtant, sa douleur, il est le seul à la sentir. Alors, comment la mesurer ?"},
 	{"id": "serie", "rate": "+0%", "text": "Nous voilà dans la partie un de notre série sur la douleur ! Aujourd'hui : quand le patient peut te répondre."},
 	{"id": "auto", "rate": "+0%", "text": "La douleur, c'est le patient qui la ressent : s'il peut s'exprimer, c'est donc lui qui l'évalue. C'est l'auto-évaluation, et on le croit, toujours."},
 	{"id": "en", "rate": "+0%", "text": "La plus simple, c'est l'échelle numérique : de zéro à dix, à combien avez-vous mal ? Zéro, c'est aucune douleur, et dix, la pire douleur imaginable."},

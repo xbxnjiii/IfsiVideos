@@ -36,8 +36,11 @@ def norm(w):
 def script_tokens(text):
     """Mots affichés du script (ponctuation isolée recollée au mot précédent)."""
     toks = []
-    for m in re.finditer(r"\{([^|}]*)\|([^}]*)\}|(\S+)", text):
-        disp = m.group(1) if m.group(1) is not None else m.group(3)
+    # {affiché|prononcé} → affiché, AVANT de découper : sinon un sigle collé à une apostrophe (« l'{EVA|É V A}, »)
+    # était coupé en trois faux mots et `at(scène, "l'eva")` ne trouvait plus rien.
+    text = re.sub(r"\{([^|}]*)\|[^}]*\}", r"\1", text)
+    for m in re.finditer(r"(\S+)", text):
+        disp = m.group(1)
         if toks and not norm(disp):
             toks[-1] += " " + disp
         else:

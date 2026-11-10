@@ -5,7 +5,7 @@
 // (PriseDeSang.tsx). Dessins : src/brand/sampling.tsx. La v1 reste dans l'historique git (commit 05ef5c9).
 import React from 'react';
 import {AbsoluteFill, Easing, interpolate, useCurrentFrame} from 'remotion';
-import {BigNumber, Big, Blur, fadeIn, FlatBg, Fly, Live, moving, Note, popAt, Posed, ease} from '../../brand/bold';
+import {BigNumber, Big, Blur, fadeIn, Flash, FlatBg, Fly, Live, moving, Note, PointTag as Tag, popAt, Posed, ease} from '../../brand/bold';
 import {Sparkles} from '../../brand/hands';
 import {ScalpelIcon} from '../../brand/icons';
 import {Burst, Camera, Confetti} from '../../brand/motion3';
@@ -28,31 +28,6 @@ const Bg: React.FC<{fam: 0 | 1 | 2 | 3}> = ({fam}) => (
 		<FlatBg tone={FAMILY_TONE[fam]} light={fam === 0 ? 0 : fam === 3 ? 0.1 : 0.22} />
 	</>
 );
-
-/** Flash plein écran (choc) qui retombe. */
-const Flash: React.FC<{at: number; max?: number; color?: string}> = ({at: t0, max = 0.35, color = LPI.pink}) => {
-	const frame = useCurrentFrame();
-	const o = interpolate(frame, [t0, t0 + 2, t0 + 14], [0, max, 0], clamp);
-	return o > 0 ? <AbsoluteFill style={{background: alpha(color, o)}} /> : null;
-};
-
-/** Étiquette reliée à un point (trait pointillé). */
-const Tag: React.FC<{at: number; to?: number; x: number; y: number; px: number; py: number; children: React.ReactNode; dark?: boolean}> = ({at: t0, to = 1e9, x, y, px, py, children, dark}) => {
-	const frame = useCurrentFrame();
-	if (frame < t0 || frame >= to + 8) return null;
-	const o = interpolate(frame, [to, to + 7], [1, 0], clamp) * fadeIn(frame, t0, 5);
-	return (
-		<>
-			<svg width={1080} height={1920} style={{position: 'absolute', inset: 0, opacity: o, overflow: 'visible'}}>
-				<line x1={x} y1={y} x2={px} y2={py} stroke={dark ? LPI.paper : N} strokeWidth={5} strokeDasharray="10 9" strokeLinecap="round" />
-				<circle cx={px} cy={py} r={9} fill={LPI.pink} stroke={N} strokeWidth={4} />
-			</svg>
-			<div style={{position: 'absolute', left: x, top: y, transform: `translate(-50%, -50%) scale(${popAt(frame, t0)})`, opacity: o}}>
-				<div style={{padding: '10px 26px', borderRadius: 999, background: LPI.paper, border: `5px solid ${N}`, boxShadow: SHADOW, fontFamily: FONT.title, fontWeight: 900, fontSize: 42, color: N, whiteSpace: 'nowrap'}}>{children}</div>
-			</div>
-		</>
-	);
-};
 
 /* ═══════════════════════════════ LE PLATEAU (accroche et récap) ═══════════════════════════════ */
 type TrayItem = {label: string; w: number; node: React.ReactNode};

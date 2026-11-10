@@ -441,3 +441,112 @@ export const ScoreBar: React.FC<{value: number; max: number; threshold: number; 
 		</div>
 	);
 };
+
+/* ───────────── look 2026 : soignants (accroche) et échelle en barres ───────────── */
+
+/** Soignant (buste dans un rond) : tunique `tone`, coiffure `hair` 0 → 2. Ce n'est pas la mascotte. */
+export const Carer: React.FC<{size?: number; tone?: string; hair?: 0 | 1 | 2}> = ({size = 130, tone = LPI.sky, hair = 0}) => {
+	const id = React.useId().replace(/:/g, '');
+	return (
+		<svg width={size} height={size} viewBox="0 0 100 100" style={{display: 'block'}}>
+			<defs>
+				<clipPath id={`cr${id}`}>
+					<circle cx={50} cy={50} r={46} />
+				</clipPath>
+			</defs>
+			<circle cx={50} cy={50} r={46} fill={LPI.paper} />
+			<g clipPath={`url(#cr${id})`}>
+				{/* tunique à col en V */}
+				<path d="M12 104 Q14 70 38 66 L50 80 L62 66 Q86 70 88 104 Z" fill={tone} stroke={N} strokeWidth={4} strokeLinejoin="round" />
+				<path d="M38 66 L50 80 L62 66" fill={LPI.paper} stroke={N} strokeWidth={4} strokeLinejoin="round" />
+				{hair === 1 ? <path d="M26 46 C22 18 78 18 74 46 L76 64 L64 60 L64 40 L36 40 L36 60 L24 64 Z" fill={N} /> : null}
+				{/* tête */}
+				<circle cx={50} cy={44} r={20} fill={LPI.paper} stroke={N} strokeWidth={4} />
+				<circle cx={50} cy={44} r={20} fill={alpha(LPI.pink, 0.3)} />
+				{hair === 0 ? <path d="M30 42 C28 20 72 20 70 42 C62 32 40 30 30 42 Z" fill={N} /> : null}
+				{hair === 1 ? <path d="M30 44 C30 24 70 24 70 44 C60 34 44 36 30 44 Z" fill={N} /> : null}
+				{hair === 2 ? (
+					<>
+						<path d="M31 38 C34 26 66 26 69 38" fill="none" stroke={N} strokeWidth={5} strokeLinecap="round" />
+						<circle cx={42} cy={45} r={6} fill="none" stroke={N} strokeWidth={3} />
+						<circle cx={58} cy={45} r={6} fill="none" stroke={N} strokeWidth={3} />
+						<path d="M48 45 H52" stroke={N} strokeWidth={3} />
+					</>
+				) : (
+					<>
+						<circle cx={43} cy={45} r={2.6} fill={N} />
+						<circle cx={57} cy={45} r={2.6} fill={N} />
+					</>
+				)}
+				<path d="M44 54 Q50 57 56 54" fill="none" stroke={N} strokeWidth={3} strokeLinecap="round" />
+			</g>
+			<circle cx={50} cy={50} r={46} fill="none" stroke={N} strokeWidth={6} />
+		</svg>
+	);
+};
+
+/** Échelle numérique en barres (plein cadre) : 11 barres de plus en plus hautes, de 0 à 10, la case du chiffre dessous.
+ * Elles poussent l'une après l'autre (`at`, `stagger`), les chiffres à `numsAt` ; `glow` : cases allumées ; `pick` à `pickAt` : la note choisie. */
+export const PainBars: React.FC<{at: number; width?: number; maxH?: number; minH?: number; stagger?: number; numsAt?: number; numStagger?: number; pick?: number | null; pickAt?: number; glow?: number[]}> = ({at: t0, width = 960, maxH = 440, minH = 90, stagger = 2, numsAt, numStagger = 2, pick = null, pickAt = 0, glow = []}) => {
+	const frame = useCurrentFrame();
+	const gap = 8;
+	const cw = (width - gap * 10) / 11;
+	const picked = pick !== null && frame >= pickAt;
+	return (
+		<div style={{position: 'relative', width, height: maxH + 14 + cw}}>
+			{Array.from({length: 11}, (_, v) => {
+				const t = t0 + v * stagger;
+				if (frame < t) return null;
+				const h = minH + ((maxH - minH) * v) / 10;
+				const on = picked && v === pick;
+				const lit = glow.includes(v) || on;
+				const grow = popAt(frame, t);
+				// les cases des chiffres peuvent arriver plus tard que les barres (`numsAt`)
+				const tn = numsAt === undefined ? t : numsAt + v * numStagger;
+				const dim = picked && !on ? 0.5 : 1;
+				return (
+					<React.Fragment key={v}>
+						<div style={{position: 'absolute', left: v * (cw + gap), top: maxH - h, width: cw, height: h, boxSizing: 'border-box', borderRadius: '20px 20px 8px 8px', background: painTone(v), border: `${lit ? 7 : 5}px solid ${N}`, transform: `scaleY(${grow}) scaleX(${on ? 1.14 : 1})`, transformOrigin: '50% 100%', boxShadow: lit ? `0 0 0 8px ${alpha(on ? LPI.paper : LPI.blue, on ? 0.9 : 0.45)}` : 'none', opacity: dim, zIndex: on ? 2 : 1}} />
+						<div style={{position: 'absolute', left: v * (cw + gap), top: maxH + 14, width: cw, height: cw, boxSizing: 'border-box', borderRadius: 20, background: on ? N : LPI.paper, border: `5px solid ${N}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FONT.title, fontWeight: 900, fontSize: cw * 0.52, color: on ? LPI.paper : N, transform: `scale(${popAt(frame, tn) * (on ? 1.22 : 1)})`, opacity: frame < tn ? 0 : dim, zIndex: on ? 2 : 1}}>{v}</div>
+					</React.Fragment>
+				);
+			})}
+		</div>
+	);
+};
+
+/** Ligne d'une grille d'observation, en plein cadre (look 2026) : picto, ce qu'on observe, puis la réponse à
+ * `answerAt` — `yesno` : oui / non (Algoplus) ; `points` : 0 → `max` points (EVENDOL). */
+export const ObsRow: React.FC<{at: number; y: number; h?: number; icon: React.ReactNode; label: string; mode: 'yesno' | 'points'; value: number; answerAt: number; max?: number; from?: 'left' | 'right'}> = ({at: t0, y, h = 118, icon, label, mode, value, answerAt, max = 3, from = 'right'}) => {
+	const frame = useCurrentFrame();
+	if (frame < t0) return null;
+	const k = Math.min(1, (frame - t0) / 9);
+	const ans = frame >= answerAt;
+	const hot = ans && value > 0;
+	return (
+		<div style={{position: 'absolute', left: 50, top: y, width: 980, height: h, boxSizing: 'border-box', borderRadius: 36, background: LPI.paper, border: `6px solid ${N}`, boxShadow: hot ? `0 0 0 7px ${alpha(LPI.pink, 0.75)}` : SHADOW, display: 'flex', alignItems: 'center', gap: 22, padding: '0 24px', transform: `translateX(${(from === 'right' ? 1 : -1) * (1 - (1 - (1 - k) ** 3)) * 420}px) scale(${popAt(frame, t0)})`, opacity: 0.4 + 0.6 * k}}>
+			<div style={{width: 84, height: 84, borderRadius: 42, background: hot ? LPI.pink : alpha(LPI.sky, 0.8), border: `5px solid ${N}`, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0}}>{icon}</div>
+			<div style={{flex: 1, fontFamily: FONT.title, fontWeight: 900, fontSize: 50, color: N, whiteSpace: 'nowrap'}}>{label}</div>
+			{mode === 'yesno' ? (
+				<div style={{display: 'flex', gap: 10}}>
+					{['oui', 'non'].map((o) => {
+						const pick = ans && (o === 'oui') === value > 0;
+						return (
+							<div key={o} style={{padding: '6px 22px', borderRadius: 999, fontFamily: FONT.title, fontWeight: 900, fontSize: 38, color: pick ? (o === 'oui' ? N : LPI.paper) : alpha(N, 0.35), background: pick ? (o === 'oui' ? LPI.pink : LPI.blue) : 'transparent', border: `5px solid ${pick ? N : alpha(N, 0.22)}`, transform: `scale(${pick ? popAt(frame, answerAt) : 1})`}}>
+								{o}
+							</div>
+						);
+					})}
+				</div>
+			) : (
+				<div style={{display: 'flex', gap: 10, alignItems: 'center'}}>
+					{Array.from({length: max}, (_, i) => {
+						const on = ans && i < value;
+						return <div key={i} style={{width: 40, height: 40, borderRadius: 20, boxSizing: 'border-box', background: on ? LPI.pink : 'transparent', border: `5px solid ${on ? N : alpha(N, 0.25)}`, transform: `scale(${on ? popAt(frame, answerAt + i * 2) : 1})`}} />;
+					})}
+					<div style={{width: 54, textAlign: 'right', fontFamily: FONT.title, fontWeight: 900, fontSize: 44, color: ans ? N : alpha(N, 0.3)}}>{ans ? value : '–'}</div>
+				</div>
+			)}
+		</div>
+	);
+};

@@ -83,10 +83,14 @@ export type PatientProps = {
 	flood?: number;
 	/** personne âgée : cheveux blancs, rides (0 → 1) */
 	elder?: number;
+	/** dame : permanente bouclée et boucles d'oreilles (avec `elder` : cheveux blancs) */
+	woman?: boolean;
 	/** bas du corps en fondu (par défaut) ; false pour poser des jambes dessous (`FullBody`) */
 	fade?: boolean;
 };
 
+/** Centres des boucles de la permanente (`woman`). */
+const PERM: [number, number][] = [[128, 98], [136, 66], [158, 42], [186, 28], [216, 28], [244, 42], [264, 66], [272, 98]];
 const ARMS = ['M106 236 C92 290 80 340 76 400 C74 430 74 455 76 474', 'M294 236 C308 290 320 340 324 400 C326 430 326 455 324 474'];
 const SLEEVES = ['M110 230 C100 254 94 276 92 300', 'M290 230 C300 254 306 276 308 300'];
 export const TORSO = 'M112 214 C140 197 168 192 200 192 C232 192 260 197 288 214 C300 222 304 236 302 252 L294 560 H106 L98 252 C96 236 100 222 112 214 Z';
@@ -159,7 +163,7 @@ const SkinLayers: React.FC<{flush: number; pale: number; children: (fill: string
 	</>
 );
 
-export const Patient: React.FC<PatientProps> = ({size = 360, mood = 'calme', breath = 0, heart = 0, beat = 0, flow = 0, cuff = 0, press = 0, flush = 0, pale = 0, sweat = 0, pain = 0, dizzy = 0, droop = 0, armL = 0, armR = 0, eyesClosed = 0, quiver = 0, brain = 0, anoxia = 0, bloodless = 0, flowPhase, lungs = 0, cyanosis = 0, bronchi = 0, narrow = 0, trapped = 0, cannula = 0, flood = 0, elder = 0, fade = true}) => {
+export const Patient: React.FC<PatientProps> = ({size = 360, mood = 'calme', breath = 0, heart = 0, beat = 0, flow = 0, cuff = 0, press = 0, flush = 0, pale = 0, sweat = 0, pain = 0, dizzy = 0, droop = 0, armL = 0, armR = 0, eyesClosed = 0, quiver = 0, brain = 0, anoxia = 0, bloodless = 0, flowPhase, lungs = 0, cyanosis = 0, bronchi = 0, narrow = 0, trapped = 0, cannula = 0, flood = 0, elder = 0, woman = false, fade = true}) => {
 	const frame = useCurrentFrame();
 	const id = useId().replace(/:/g, '');
 	const blink = Math.min(frame % 96 < 4 ? 0.15 : 1, 1 - 0.9 * eyesClosed);
@@ -308,7 +312,22 @@ export const Patient: React.FC<PatientProps> = ({size = 360, mood = 'calme', bre
 						</g>
 					)}
 				</SkinLayers>
-				<path d="M134 110 C126 58 162 28 204 28 C246 28 276 60 266 110 C256 86 238 70 214 64 C194 80 166 90 134 110 Z" fill={elder > 0.5 ? LPI.paper : N} stroke={N} strokeWidth={elder > 0.5 ? 6 : 0} strokeLinejoin="round" />
+				{woman ? (
+					<g>
+						{/* permanente : un nuage de boucles (contour, puis remplissage) */}
+						{PERM.map(([x, y]) => (
+							<circle key={`o${x}`} cx={x} cy={y} r={29} fill={N} />
+						))}
+						<path d="M134 112 C126 58 162 30 204 30 C246 30 276 60 266 112 C250 92 226 84 200 84 C174 84 150 92 134 112 Z" fill={elder > 0.5 ? LPI.paper : N} stroke={N} strokeWidth={6} strokeLinejoin="round" />
+						{PERM.map(([x, y]) => (
+							<circle key={`i${x}`} cx={x} cy={y} r={23} fill={elder > 0.5 ? LPI.paper : N} />
+						))}
+						<circle cx={134} cy={140} r={6} fill={LPI.pink} stroke={N} strokeWidth={3} />
+						<circle cx={266} cy={140} r={6} fill={LPI.pink} stroke={N} strokeWidth={3} />
+					</g>
+				) : (
+					<path d="M134 110 C126 58 162 28 204 28 C246 28 276 60 266 110 C256 86 238 70 214 64 C194 80 166 90 134 110 Z" fill={elder > 0.5 ? LPI.paper : N} stroke={N} strokeWidth={elder > 0.5 ? 6 : 0} strokeLinejoin="round" />
+				)}
 				{elder > 0 ? (
 					<g opacity={elder} fill="none" stroke={alpha(N, 0.45)} strokeWidth={3.5} strokeLinecap="round">
 						<path d="M150 60 C170 48 196 44 214 52 M168 84 C178 74 196 68 212 66" stroke={alpha(N, 0.25)} />
