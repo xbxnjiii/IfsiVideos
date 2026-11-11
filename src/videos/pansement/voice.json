@@ -1,0 +1,693 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 41.56,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.05,
+   "end": 8.379
+  },
+  {
+   "id": "prep",
+   "start": 9.311,
+   "end": 19.508
+  },
+  {
+   "id": "pose",
+   "start": 20.483,
+   "end": 33.409
+  },
+  {
+   "id": "garder",
+   "start": 34.364,
+   "end": 36.9
+  },
+  {
+   "id": "fin",
+   "start": 37.876,
+   "end": 41.218
+  }
+ ],
+ "words": [
+  {
+   "text": "Une",
+   "start": 0.05,
+   "end": 0.266
+  },
+  {
+   "text": "petite",
+   "start": 0.266,
+   "end": 0.543
+  },
+  {
+   "text": "coupure",
+   "start": 0.543,
+   "end": 0.903
+  },
+  {
+   "text": "au",
+   "start": 0.903,
+   "end": 0.963
+  },
+  {
+   "text": "doigt.",
+   "start": 0.963,
+   "end": 1.312
+  },
+  {
+   "text": "Tu",
+   "start": 1.671,
+   "end": 1.755
+  },
+  {
+   "text": "attrapes",
+   "start": 1.755,
+   "end": 2.019
+  },
+  {
+   "text": "un",
+   "start": 2.019,
+   "end": 2.079
+  },
+  {
+   "text": "pansement,",
+   "start": 2.079,
+   "end": 2.596
+  },
+  {
+   "text": "tu",
+   "start": 2.861,
+   "end": 2.969
+  },
+  {
+   "text": "le",
+   "start": 2.969,
+   "end": 3.029
+  },
+  {
+   "text": "colles",
+   "start": 3.029,
+   "end": 3.221
+  },
+  {
+   "text": "vite",
+   "start": 3.221,
+   "end": 3.425
+  },
+  {
+   "text": "fait…",
+   "start": 3.425,
+   "end": 3.726
+  },
+  {
+   "text": "et",
+   "start": 4.026,
+   "end": 4.111
+  },
+  {
+   "text": "raté !",
+   "start": 4.111,
+   "end": 4.555
+  },
+  {
+   "text": "Le",
+   "start": 4.881,
+   "end": 5.062
+  },
+  {
+   "text": "petit",
+   "start": 5.062,
+   "end": 5.29
+  },
+  {
+   "text": "carré",
+   "start": 5.29,
+   "end": 5.542
+  },
+  {
+   "text": "blanc",
+   "start": 5.542,
+   "end": 5.759
+  },
+  {
+   "text": "est",
+   "start": 5.759,
+   "end": 5.807
+  },
+  {
+   "text": "à",
+   "start": 5.807,
+   "end": 5.915
+  },
+  {
+   "text": "côté,",
+   "start": 5.915,
+   "end": 6.372
+  },
+  {
+   "text": "et",
+   "start": 6.684,
+   "end": 6.756
+  },
+  {
+   "text": "la",
+   "start": 6.756,
+   "end": 6.84
+  },
+  {
+   "text": "partie",
+   "start": 6.84,
+   "end": 7.129
+  },
+  {
+   "text": "qui",
+   "start": 7.129,
+   "end": 7.249
+  },
+  {
+   "text": "colle",
+   "start": 7.249,
+   "end": 7.429
+  },
+  {
+   "text": "est",
+   "start": 7.429,
+   "end": 7.465
+  },
+  {
+   "text": "en",
+   "start": 7.465,
+   "end": 7.61
+  },
+  {
+   "text": "plein",
+   "start": 7.61,
+   "end": 7.814
+  },
+  {
+   "text": "sur",
+   "start": 7.814,
+   "end": 7.958
+  },
+  {
+   "text": "la",
+   "start": 7.958,
+   "end": 8.042
+  },
+  {
+   "text": "plaie.",
+   "start": 8.042,
+   "end": 8.379
+  },
+  {
+   "text": "On",
+   "start": 9.311,
+   "end": 9.421
+  },
+  {
+   "text": "reprend",
+   "start": 9.421,
+   "end": 9.764
+  },
+  {
+   "text": "depuis",
+   "start": 9.764,
+   "end": 9.997
+  },
+  {
+   "text": "le",
+   "start": 9.997,
+   "end": 10.071
+  },
+  {
+   "text": "début.",
+   "start": 10.071,
+   "end": 10.463
+  },
+  {
+   "text": "Lave-toi",
+   "start": 10.843,
+   "end": 11.211
+  },
+  {
+   "text": "les",
+   "start": 11.211,
+   "end": 11.309
+  },
+  {
+   "text": "mains.",
+   "start": 11.309,
+   "end": 11.603
+  },
+  {
+   "text": "Nettoie",
+   "start": 11.958,
+   "end": 12.277
+  },
+  {
+   "text": "la",
+   "start": 12.277,
+   "end": 12.375
+  },
+  {
+   "text": "plaie",
+   "start": 12.375,
+   "end": 12.571
+  },
+  {
+   "text": "à",
+   "start": 12.571,
+   "end": 12.657
+  },
+  {
+   "text": "l'eau",
+   "start": 12.657,
+   "end": 12.914
+  },
+  {
+   "text": "et",
+   "start": 12.914,
+   "end": 12.987
+  },
+  {
+   "text": "au",
+   "start": 12.988,
+   "end": 13.049
+  },
+  {
+   "text": "savon,",
+   "start": 13.049,
+   "end": 13.478
+  },
+  {
+   "text": "ou",
+   "start": 13.821,
+   "end": 13.858
+  },
+  {
+   "text": "avec",
+   "start": 13.858,
+   "end": 14.066
+  },
+  {
+   "text": "du",
+   "start": 14.066,
+   "end": 14.152
+  },
+  {
+   "text": "sérum",
+   "start": 14.152,
+   "end": 14.495
+  },
+  {
+   "text": "physiologique.",
+   "start": 14.495,
+   "end": 15.304
+  },
+  {
+   "text": "Désinfecte",
+   "start": 15.648,
+   "end": 16.285
+  },
+  {
+   "text": "avec",
+   "start": 16.285,
+   "end": 16.493
+  },
+  {
+   "text": "un",
+   "start": 16.493,
+   "end": 16.53
+  },
+  {
+   "text": "antiseptique,",
+   "start": 16.53,
+   "end": 17.351
+  },
+  {
+   "text": "puis",
+   "start": 17.633,
+   "end": 17.78
+  },
+  {
+   "text": "sèche",
+   "start": 17.78,
+   "end": 18.025
+  },
+  {
+   "text": "en",
+   "start": 18.025,
+   "end": 18.087
+  },
+  {
+   "text": "tamponnant",
+   "start": 18.087,
+   "end": 18.54
+  },
+  {
+   "text": "avec",
+   "start": 18.54,
+   "end": 18.748
+  },
+  {
+   "text": "une",
+   "start": 18.748,
+   "end": 18.834
+  },
+  {
+   "text": "compresse.",
+   "start": 18.834,
+   "end": 19.508
+  },
+  {
+   "text": "Prends",
+   "start": 20.483,
+   "end": 20.659
+  },
+  {
+   "text": "un",
+   "start": 20.659,
+   "end": 20.696
+  },
+  {
+   "text": "pansement",
+   "start": 20.696,
+   "end": 21.084
+  },
+  {
+   "text": "assez",
+   "start": 21.084,
+   "end": 21.309
+  },
+  {
+   "text": "grand",
+   "start": 21.309,
+   "end": 21.571
+  },
+  {
+   "text": "pour",
+   "start": 21.571,
+   "end": 21.733
+  },
+  {
+   "text": "couvrir",
+   "start": 21.733,
+   "end": 22.146
+  },
+  {
+   "text": "toute",
+   "start": 22.146,
+   "end": 22.346
+  },
+  {
+   "text": "la",
+   "start": 22.346,
+   "end": 22.434
+  },
+  {
+   "text": "plaie.",
+   "start": 22.434,
+   "end": 22.796
+  },
+  {
+   "text": "Décolle",
+   "start": 23.134,
+   "end": 23.521
+  },
+  {
+   "text": "la",
+   "start": 23.521,
+   "end": 23.608
+  },
+  {
+   "text": "première",
+   "start": 23.608,
+   "end": 23.959
+  },
+  {
+   "text": "languette,",
+   "start": 23.959,
+   "end": 24.471
+  },
+  {
+   "text": "sans",
+   "start": 24.746,
+   "end": 24.896
+  },
+  {
+   "text": "toucher",
+   "start": 24.896,
+   "end": 25.196
+  },
+  {
+   "text": "le",
+   "start": 25.196,
+   "end": 25.284
+  },
+  {
+   "text": "carré",
+   "start": 25.284,
+   "end": 25.534
+  },
+  {
+   "text": "blanc.",
+   "start": 25.534,
+   "end": 25.834
+  },
+  {
+   "text": "Colle",
+   "start": 26.171,
+   "end": 26.421
+  },
+  {
+   "text": "ce",
+   "start": 26.421,
+   "end": 26.521
+  },
+  {
+   "text": "côté",
+   "start": 26.521,
+   "end": 26.784
+  },
+  {
+   "text": "sur",
+   "start": 26.784,
+   "end": 26.934
+  },
+  {
+   "text": "la",
+   "start": 26.934,
+   "end": 27.034
+  },
+  {
+   "text": "peau,",
+   "start": 27.034,
+   "end": 27.346
+  },
+  {
+   "text": "et",
+   "start": 27.709,
+   "end": 27.746
+  },
+  {
+   "text": "place",
+   "start": 27.746,
+   "end": 28.021
+  },
+  {
+   "text": "bien",
+   "start": 28.021,
+   "end": 28.209
+  },
+  {
+   "text": "le",
+   "start": 28.209,
+   "end": 28.284
+  },
+  {
+   "text": "carré",
+   "start": 28.284,
+   "end": 28.534
+  },
+  {
+   "text": "blanc",
+   "start": 28.534,
+   "end": 28.709
+  },
+  {
+   "text": "sur",
+   "start": 28.709,
+   "end": 28.871
+  },
+  {
+   "text": "la",
+   "start": 28.871,
+   "end": 28.971
+  },
+  {
+   "text": "plaie.",
+   "start": 28.971,
+   "end": 29.321
+  },
+  {
+   "text": "Ensuite,",
+   "start": 29.671,
+   "end": 30.209
+  },
+  {
+   "text": "retire",
+   "start": 30.496,
+   "end": 30.809
+  },
+  {
+   "text": "la",
+   "start": 30.809,
+   "end": 30.884
+  },
+  {
+   "text": "deuxième",
+   "start": 30.884,
+   "end": 31.184
+  },
+  {
+   "text": "languette",
+   "start": 31.184,
+   "end": 31.546
+  },
+  {
+   "text": "en",
+   "start": 31.546,
+   "end": 31.596
+  },
+  {
+   "text": "lissant,",
+   "start": 31.596,
+   "end": 32.059
+  },
+  {
+   "text": "et",
+   "start": 32.471,
+   "end": 32.534
+  },
+  {
+   "text": "appuie",
+   "start": 32.534,
+   "end": 32.771
+  },
+  {
+   "text": "sur",
+   "start": 32.771,
+   "end": 32.909
+  },
+  {
+   "text": "les",
+   "start": 32.909,
+   "end": 32.996
+  },
+  {
+   "text": "bords.",
+   "start": 32.996,
+   "end": 33.409
+  },
+  {
+   "text": "Change-le",
+   "start": 34.364,
+   "end": 34.817
+  },
+  {
+   "text": "chaque",
+   "start": 34.817,
+   "end": 35.038
+  },
+  {
+   "text": "jour,",
+   "start": 35.038,
+   "end": 35.393
+  },
+  {
+   "text": "ou",
+   "start": 35.712,
+   "end": 35.748
+  },
+  {
+   "text": "dès",
+   "start": 35.748,
+   "end": 35.859
+  },
+  {
+   "text": "qu'il",
+   "start": 35.859,
+   "end": 36.03
+  },
+  {
+   "text": "est",
+   "start": 36.03,
+   "end": 36.067
+  },
+  {
+   "text": "mouillé",
+   "start": 36.067,
+   "end": 36.361
+  },
+  {
+   "text": "ou",
+   "start": 36.361,
+   "end": 36.422
+  },
+  {
+   "text": "sale.",
+   "start": 36.422,
+   "end": 36.9
+  },
+  {
+   "text": "Et",
+   "start": 37.876,
+   "end": 37.948
+  },
+  {
+   "text": "voilà :",
+   "start": 37.948,
+   "end": 38.273
+  },
+  {
+   "text": "ce",
+   "start": 38.633,
+   "end": 38.729
+  },
+  {
+   "text": "pansement-là,",
+   "start": 38.73,
+   "end": 39.33
+  },
+  {
+   "text": "il",
+   "start": 39.631,
+   "end": 39.727
+  },
+  {
+   "text": "est",
+   "start": 39.727,
+   "end": 39.763
+  },
+  {
+   "text": "posé…",
+   "start": 39.763,
+   "end": 40.196
+  },
+  {
+   "text": "pas",
+   "start": 40.388,
+   "end": 40.508
+  },
+  {
+   "text": "juste",
+   "start": 40.508,
+   "end": 40.833
+  },
+  {
+   "text": "collé !",
+   "start": 40.833,
+   "end": 41.218
+  }
+ ]
+}

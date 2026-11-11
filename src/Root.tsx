@@ -78,6 +78,8 @@ import {PiedDiabetique, PiedDiabetiqueProps} from './videos/pied-diabetique/Pied
 import {TL as PIED_DIABETIQUE_TL} from './videos/pied-diabetique/timeline';
 import {TrousseSecours, TrousseSecoursProps} from './videos/trousse-secours/TrousseSecours';
 import {TL as TROUSSE_SECOURS_TL} from './videos/trousse-secours/timeline';
+import {Pansement, PansementProps} from './videos/pansement/Pansement';
+import {TL as PANSEMENT_TL} from './videos/pansement/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -454,6 +456,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies TrousseSecoursProps}
+		/>
+		{/* 39 · Pansement */}
+		<Composition
+			id="Pansement"
+			component={Pansement}
+			durationInFrames={PANSEMENT_TL.total}
+			fps={PANSEMENT_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies PansementProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition

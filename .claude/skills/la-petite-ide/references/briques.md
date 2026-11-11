@@ -57,6 +57,18 @@ Briques « arrêt cardiaque » réutilisables : moniteur ECG (rythme normal, fib
 - `DepthGauge` — Jauge de profondeur « 5 – 6 cm » : le curseur descend avec `press`.
 - `HeadTilt` — Bascule de la tête en arrière, vue de profil : patient allongé sur le dos (tête à gauche, visage vers le haut).
 
+## `bandage.tsx`
+« Comment bien mettre un pansement » : grand doigt vu de dessus (rendu soigné : peau opaque en dégradé, ongle, plis, ombre douce), petite coupure, goutte, eau / mousse, compresse qui tamponne ; pansement adhésif vu de dessus (bande microperforée, carré blanc = compresse, deux languettes de protection qui se décollent l'une après l'autre, enroulé autour du doigt) ; doigt de l'autre main qui lisse et appuie ; anneau-cible pointillé. Couleurs de la marque uniquement.
+
+- `FINGER` — Repère 1000 × 400 du grand doigt : axe du doigt, bords, coupure (sur la 2e phalange).
+- `fingerPt` — Point du repère du doigt → écran, pour un `BigFinger` de largeur `width` posé en (`left`, `top`).
+- `BigFinger` — Grand index vu de dessus, pointé vers la droite (repère 1000 × 400, la main sort du cadre à gauche).
+- `BandageG` — Pansement adhésif vu de dessus, à dessiner DANS un `BigFinger` (même repère) : grand axe vertical, centre (`x`, `y`), `rot` degrés.
+- `Presser` — Doigt de l'autre main qui arrive d'en haut (dessiné dans le repère d'un `BigFinger`) : bout en (`x`, `y`), `press` 0 → 1 il appuie (il s'écrase un peu, anneau sur la peau).
+- `TargetRing` — Anneau-cible pointillé qui tourne et respire (dans un repère SVG) ; `tone` rose (plaie) ou bleu (compresse).
+- `WashFx` — Mousse de savon + gouttes d'eau qui tombent sur la coupure (repère d'un `BigFinger`), `on` 0 → 1.
+- `DabPad` — Compresse tenue entre deux doigts qui tamponne la coupure (repère d'un `BigFinger`) : `dab` 0 → 1 (descend / remonte).
+
 ## `body.tsx`
 Corps (trait bleu nuit, aplats de la palette) : poignet paume vers le haut avec artère radiale, doigts de l'examinateur qui prennent le pouls, pouce barré. Réutilisés d'une vidéo à l'autre.
 
@@ -217,8 +229,8 @@ Trousse de secours de la maison : la trousse (couvercle qui s'ouvre, cases qui s
 - `KIT_SLOTS` — Les cases de la trousse (5 × 3), dans le repère de `FirstAidKit` (900 × 640).
 - `FirstAidKit` — Trousse de secours (repère 900 × 640) : boîte rose à croix blanche ; `open` 0 → 1 le couvercle se lève (on voit l'intérieur) ; `items` posés dans les cases ; `empty` : vide (poussière, papillon de nuit qui s'envole) ; `shake`.
 - `Padlock` — Cadenas (hors de portée), repère 200 × 200.
-- `CUT_TIP` — Point de l'index (bout du doigt) où le couteau dérape, dans le repère 1000 × 1000 de `CuttingCloseUp`.
-- `CuttingCloseUp` — Gros plan vu du dessus (repère 1000 × 1000) : planche à découper, tomate et ses tranches (`slices` 0 → 4), main gauche en griffe qui tient la tomate, couteau tenu par la main droite (`knifeX` position de la lame, `saw` va-et-vient).
+- `CUT_TIP` — Point de l'entaille sur l'index une fois la main reculée (`jerk` 0,5), repère 1000 × 1000 de `CuttingCloseUp`.
+- `CuttingCloseUp` — Gros plan « comme si c'était tes mains » (repère 1000 × 1000, vue de haut en perspective) : plan de travail, planche en bois, tomate qui se coupe en tranches (`slices` 0 → 3 : la lame descend, la tranche tombe à plat), main gauche en…
 
 ## `glyco.tsx`
 Briques « glycémie » réutilisables : normes adulte (zones), doigt + autopiqueur + goutte, lecteur de glycémie (bandelette, valeur en g/l), sucres qui pleuvent, morceaux de sucre qui circulent dans l'artère, cellule qui « brûle » le glucose (carburant).

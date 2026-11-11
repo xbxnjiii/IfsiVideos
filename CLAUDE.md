@@ -290,6 +290,14 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   (gros plan + rôle, il file dans sa case), les bons réflexes, chute « tout est là ». Briques `src/brand/firstaid.tsx` :
   `FirstAidKit` (`open`, `items`, `empty`, `shine`, cases `KIT_SLOTS`), `KitItem` (13 objets), `EmergencyCard`,
   `CuttingCloseUp` + `CUT_TIP`, `Padlock`.
+- `Pansement` (n° 39, ≈ 43 s, voix gratuite edge-tts, demandé : « décoller la 1re partie, la coller, bien mettre le bout
+  blanc sur la plaie, décoller la 2e, tout ça en ayant désinfecté ») : accroche sans texte au début (le pansement collé
+  vite fait : carré blanc à côté, colle sur la plaie), préparer (mains, nettoyer, désinfecter, sécher en tamponnant),
+  poser étape par étape, le changer chaque jour ou s'il est mouillé / sale, chute « posé… pas juste collé ! ». Même rendu
+  soigné que la trousse. Briques `src/brand/bandage.tsx` : `BigFinger` (index vu de dessus, repère 1000 × 400 : `cut`,
+  `bleed`, `clean`, `wet`, `tint`, calques en `children`), `BandageG` (pansement dans le repère du doigt : `tab1` / `tab2`,
+  `wrapTop` / `wrapBottom`, `lift`, `sloppy`, `wet`, `dirt`, `glow`), `Presser` (doigt qui lisse / appuie), `TargetRing`,
+  `WashFx`, `DabPad`, `FINGER`, `fingerPt`. Storyboard `docs/lpi/storyboard-pansement.md`.
 
 ## Voix ElevenLabs « Laura » (choisie par le propriétaire pour les nouvelles vidéos)
 

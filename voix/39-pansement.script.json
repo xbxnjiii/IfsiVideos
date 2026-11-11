@@ -1,0 +1,7 @@
+[
+ {"id": "intro", "rate": "+4%", "text": "Une petite coupure au doigt. Tu attrapes un pansement, tu le colles vite fait… et raté ! Le petit carré blanc est à côté, et la partie qui colle est en plein sur la plaie."},
+ {"id": "prep", "rate": "+2%", "text": "On reprend depuis le début. Lave-toi les mains. Nettoie la plaie à l'eau et au savon, ou avec du sérum physiologique. Désinfecte avec un antiseptique, puis sèche en tamponnant avec une compresse."},
+ {"id": "pose", "rate": "+0%", "text": "Prends un pansement assez grand pour couvrir toute la plaie. Décolle la première languette, sans toucher le carré blanc. Colle ce côté sur la peau, et place bien le carré blanc sur la plaie. Ensuite, retire la deuxième languette en lissant, et appuie sur les bords."},
+ {"id": "garder", "rate": "+2%", "text": "Change-le chaque jour, ou dès qu'il est mouillé ou sale."},
+ {"id": "fin", "rate": "+4%", "text": "Et voilà : ce pansement-là, il est posé… pas juste collé !"}
+]
