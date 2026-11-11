@@ -1,0 +1,8 @@
+[
+ {"id": "intro", "rate": "+4%", "text": "Tu passes la main sur une vieille planche… et aïe ! Une écharde, plantée dans le doigt."},
+ {"id": "ongles", "rate": "+2%", "text": "Premier réflexe : appuyer dessus avec les ongles. Mauvaise idée ! Tu la pousses plus loin, et elle peut se casser sous la peau."},
+ {"id": "methode", "rate": "+0%", "text": "La bonne méthode : lave tes mains et la peau à l'eau et au savon. Désinfecte une pince à écharde. Attrape l'écharde au ras de la peau, et tire doucement, dans le sens où elle est entrée."},
+ {"id": "apres", "rate": "+2%", "text": "Une fois sortie, lave, désinfecte, et mets un pansement si besoin."},
+ {"id": "consulter", "rate": "+2%", "text": "Consulte si elle est profonde, cassée sous la peau ou près de l'œil, ou si, les jours suivants, la peau devient rouge, gonflée, ou qu'il y a du pus. Et vérifie que ton vaccin contre le tétanos est à jour."},
+ {"id": "fin", "rate": "+4%", "text": "Et voilà : sortie dans le bon sens… sans y laisser un bout !"}
+]

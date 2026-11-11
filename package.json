@@ -54,7 +54,8 @@
     "render:pied-diabetique": "remotion render Pied-Diabetique out/37-pied-diabetique.mp4",
     "render:trousse-secours": "remotion render Trousse-Secours out/38-trousse-secours.mp4",
     "render:pansement": "remotion render Pansement out/39-pansement.mp4",
-    "render:brulure": "remotion render Brulure out/40-brulure.mp4"
+    "render:brulure": "remotion render Brulure out/40-brulure.mp4",
+    "render:echarde": "remotion render Echarde out/41-echarde.mp4"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.532",

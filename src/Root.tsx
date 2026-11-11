@@ -82,6 +82,8 @@ import {Pansement, PansementProps} from './videos/pansement/Pansement';
 import {TL as PANSEMENT_TL} from './videos/pansement/timeline';
 import {Brulure, BrulureProps} from './videos/brulure/Brulure';
 import {TL as BRULURE_TL} from './videos/brulure/timeline';
+import {Echarde, EchardeProps} from './videos/echarde/Echarde';
+import {TL as ECHARDE_TL} from './videos/echarde/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -478,6 +480,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies BrulureProps}
+		/>
+		{/* 41 · Echarde */}
+		<Composition
+			id="Echarde"
+			component={Echarde}
+			durationInFrames={ECHARDE_TL.total}
+			fps={ECHARDE_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies EchardeProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition

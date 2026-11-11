@@ -1,0 +1,723 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 42.062,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.084,
+   "end": 4.28
+  },
+  {
+   "id": "ongles",
+   "start": 5.244,
+   "end": 11.715
+  },
+  {
+   "id": "methode",
+   "start": 12.696,
+   "end": 21.809
+  },
+  {
+   "id": "apres",
+   "start": 22.747,
+   "end": 26.73
+  },
+  {
+   "id": "consulter",
+   "start": 27.666,
+   "end": 37.789
+  },
+  {
+   "id": "fin",
+   "start": 38.762,
+   "end": 41.719
+  }
+ ],
+ "words": [
+  {
+   "text": "Tu",
+   "start": 0.084,
+   "end": 0.168
+  },
+  {
+   "text": "passes",
+   "start": 0.168,
+   "end": 0.385
+  },
+  {
+   "text": "la",
+   "start": 0.385,
+   "end": 0.469
+  },
+  {
+   "text": "main",
+   "start": 0.469,
+   "end": 0.649
+  },
+  {
+   "text": "sur",
+   "start": 0.649,
+   "end": 0.805
+  },
+  {
+   "text": "une",
+   "start": 0.805,
+   "end": 0.889
+  },
+  {
+   "text": "vieille",
+   "start": 0.889,
+   "end": 1.07
+  },
+  {
+   "text": "planche…",
+   "start": 1.07,
+   "end": 1.514
+  },
+  {
+   "text": "et",
+   "start": 1.719,
+   "end": 1.791
+  },
+  {
+   "text": "aïe !",
+   "start": 1.791,
+   "end": 2.139
+  },
+  {
+   "text": "Une",
+   "start": 2.477,
+   "end": 2.682
+  },
+  {
+   "text": "écharde,",
+   "start": 2.682,
+   "end": 3.211
+  },
+  {
+   "text": "plantée",
+   "start": 3.451,
+   "end": 3.751
+  },
+  {
+   "text": "dans",
+   "start": 3.751,
+   "end": 3.86
+  },
+  {
+   "text": "le",
+   "start": 3.86,
+   "end": 3.956
+  },
+  {
+   "text": "doigt.",
+   "start": 3.956,
+   "end": 4.28
+  },
+  {
+   "text": "Premier",
+   "start": 5.244,
+   "end": 5.513
+  },
+  {
+   "text": "réflexe :",
+   "start": 5.513,
+   "end": 6.126
+  },
+  {
+   "text": "appuyer",
+   "start": 6.42,
+   "end": 6.727
+  },
+  {
+   "text": "dessus",
+   "start": 6.727,
+   "end": 7.045
+  },
+  {
+   "text": "avec",
+   "start": 7.045,
+   "end": 7.254
+  },
+  {
+   "text": "les",
+   "start": 7.254,
+   "end": 7.352
+  },
+  {
+   "text": "ongles.",
+   "start": 7.352,
+   "end": 7.817
+  },
+  {
+   "text": "Mauvaise",
+   "start": 8.185,
+   "end": 8.553
+  },
+  {
+   "text": "idée !",
+   "start": 8.553,
+   "end": 8.92
+  },
+  {
+   "text": "Tu",
+   "start": 9.264,
+   "end": 9.411
+  },
+  {
+   "text": "la",
+   "start": 9.411,
+   "end": 9.497
+  },
+  {
+   "text": "pousses",
+   "start": 9.497,
+   "end": 9.718
+  },
+  {
+   "text": "plus",
+   "start": 9.718,
+   "end": 9.889
+  },
+  {
+   "text": "loin,",
+   "start": 9.889,
+   "end": 10.184
+  },
+  {
+   "text": "et",
+   "start": 10.514,
+   "end": 10.563
+  },
+  {
+   "text": "elle",
+   "start": 10.563,
+   "end": 10.637
+  },
+  {
+   "text": "peut",
+   "start": 10.637,
+   "end": 10.772
+  },
+  {
+   "text": "se",
+   "start": 10.772,
+   "end": 10.894
+  },
+  {
+   "text": "casser",
+   "start": 10.894,
+   "end": 11.188
+  },
+  {
+   "text": "sous",
+   "start": 11.188,
+   "end": 11.311
+  },
+  {
+   "text": "la",
+   "start": 11.311,
+   "end": 11.397
+  },
+  {
+   "text": "peau.",
+   "start": 11.397,
+   "end": 11.715
+  },
+  {
+   "text": "La",
+   "start": 12.696,
+   "end": 12.796
+  },
+  {
+   "text": "bonne",
+   "start": 12.796,
+   "end": 12.983
+  },
+  {
+   "text": "méthode :",
+   "start": 12.983,
+   "end": 13.496
+  },
+  {
+   "text": "lave",
+   "start": 13.921,
+   "end": 14.071
+  },
+  {
+   "text": "tes",
+   "start": 14.071,
+   "end": 14.196
+  },
+  {
+   "text": "mains",
+   "start": 14.196,
+   "end": 14.371
+  },
+  {
+   "text": "et",
+   "start": 14.371,
+   "end": 14.396
+  },
+  {
+   "text": "la",
+   "start": 14.396,
+   "end": 14.496
+  },
+  {
+   "text": "peau",
+   "start": 14.496,
+   "end": 14.684
+  },
+  {
+   "text": "à",
+   "start": 14.684,
+   "end": 14.746
+  },
+  {
+   "text": "l'eau",
+   "start": 14.746,
+   "end": 14.996
+  },
+  {
+   "text": "et",
+   "start": 14.996,
+   "end": 15.071
+  },
+  {
+   "text": "au",
+   "start": 15.071,
+   "end": 15.133
+  },
+  {
+   "text": "savon.",
+   "start": 15.133,
+   "end": 15.584
+  },
+  {
+   "text": "Désinfecte",
+   "start": 15.934,
+   "end": 16.521
+  },
+  {
+   "text": "une",
+   "start": 16.521,
+   "end": 16.633
+  },
+  {
+   "text": "pince",
+   "start": 16.633,
+   "end": 16.883
+  },
+  {
+   "text": "à",
+   "start": 16.883,
+   "end": 16.946
+  },
+  {
+   "text": "écharde.",
+   "start": 16.946,
+   "end": 17.546
+  },
+  {
+   "text": "Attrape",
+   "start": 17.883,
+   "end": 18.284
+  },
+  {
+   "text": "l'écharde",
+   "start": 18.284,
+   "end": 18.696
+  },
+  {
+   "text": "au",
+   "start": 18.696,
+   "end": 18.733
+  },
+  {
+   "text": "ras",
+   "start": 18.733,
+   "end": 18.846
+  },
+  {
+   "text": "de",
+   "start": 18.846,
+   "end": 18.921
+  },
+  {
+   "text": "la",
+   "start": 18.921,
+   "end": 19.034
+  },
+  {
+   "text": "peau,",
+   "start": 19.046,
+   "end": 19.346
+  },
+  {
+   "text": "et",
+   "start": 19.709,
+   "end": 19.733
+  },
+  {
+   "text": "tire",
+   "start": 19.733,
+   "end": 19.934
+  },
+  {
+   "text": "doucement,",
+   "start": 19.934,
+   "end": 20.421
+  },
+  {
+   "text": "dans",
+   "start": 20.608,
+   "end": 20.709
+  },
+  {
+   "text": "le",
+   "start": 20.709,
+   "end": 20.809
+  },
+  {
+   "text": "sens",
+   "start": 20.809,
+   "end": 21.108
+  },
+  {
+   "text": "où",
+   "start": 21.108,
+   "end": 21.159
+  },
+  {
+   "text": "elle",
+   "start": 21.159,
+   "end": 21.221
+  },
+  {
+   "text": "est",
+   "start": 21.221,
+   "end": 21.258
+  },
+  {
+   "text": "entrée.",
+   "start": 21.258,
+   "end": 21.809
+  },
+  {
+   "text": "Une",
+   "start": 22.747,
+   "end": 22.919
+  },
+  {
+   "text": "fois",
+   "start": 22.919,
+   "end": 23.066
+  },
+  {
+   "text": "sortie,",
+   "start": 23.066,
+   "end": 23.605
+  },
+  {
+   "text": "lave,",
+   "start": 23.936,
+   "end": 24.341
+  },
+  {
+   "text": "désinfecte,",
+   "start": 24.561,
+   "end": 25.198
+  },
+  {
+   "text": "et",
+   "start": 25.578,
+   "end": 25.603
+  },
+  {
+   "text": "mets",
+   "start": 25.603,
+   "end": 25.689
+  },
+  {
+   "text": "un",
+   "start": 25.689,
+   "end": 25.75
+  },
+  {
+   "text": "pansement",
+   "start": 25.75,
+   "end": 26.142
+  },
+  {
+   "text": "si",
+   "start": 26.142,
+   "end": 26.289
+  },
+  {
+   "text": "besoin.",
+   "start": 26.289,
+   "end": 26.73
+  },
+  {
+   "text": "Consulte",
+   "start": 27.666,
+   "end": 28.217
+  },
+  {
+   "text": "si",
+   "start": 28.217,
+   "end": 28.352
+  },
+  {
+   "text": "elle",
+   "start": 28.352,
+   "end": 28.414
+  },
+  {
+   "text": "est",
+   "start": 28.414,
+   "end": 28.438
+  },
+  {
+   "text": "profonde,",
+   "start": 28.438,
+   "end": 29.026
+  },
+  {
+   "text": "cassée",
+   "start": 29.222,
+   "end": 29.504
+  },
+  {
+   "text": "sous",
+   "start": 29.504,
+   "end": 29.627
+  },
+  {
+   "text": "la",
+   "start": 29.627,
+   "end": 29.737
+  },
+  {
+   "text": "peau",
+   "start": 29.737,
+   "end": 29.982
+  },
+  {
+   "text": "ou",
+   "start": 29.982,
+   "end": 30.043
+  },
+  {
+   "text": "près",
+   "start": 30.043,
+   "end": 30.215
+  },
+  {
+   "text": "de",
+   "start": 30.215,
+   "end": 30.313
+  },
+  {
+   "text": "l'œil,",
+   "start": 30.313,
+   "end": 30.619
+  },
+  {
+   "text": "ou",
+   "start": 31.036,
+   "end": 31.085
+  },
+  {
+   "text": "si,",
+   "start": 31.085,
+   "end": 31.416
+  },
+  {
+   "text": "les",
+   "start": 31.686,
+   "end": 31.747
+  },
+  {
+   "text": "jours",
+   "start": 31.747,
+   "end": 31.894
+  },
+  {
+   "text": "suivants,",
+   "start": 31.894,
+   "end": 32.298
+  },
+  {
+   "text": "la",
+   "start": 32.568,
+   "end": 32.629
+  },
+  {
+   "text": "peau",
+   "start": 32.629,
+   "end": 32.752
+  },
+  {
+   "text": "devient",
+   "start": 32.752,
+   "end": 33.009
+  },
+  {
+   "text": "rouge,",
+   "start": 33.009,
+   "end": 33.364
+  },
+  {
+   "text": "gonflée,",
+   "start": 33.524,
+   "end": 34.002
+  },
+  {
+   "text": "ou",
+   "start": 34.247,
+   "end": 34.308
+  },
+  {
+   "text": "qu'il",
+   "start": 34.308,
+   "end": 34.48
+  },
+  {
+   "text": "y",
+   "start": 34.48,
+   "end": 34.529
+  },
+  {
+   "text": "a",
+   "start": 34.529,
+   "end": 34.566
+  },
+  {
+   "text": "du",
+   "start": 34.566,
+   "end": 34.688
+  },
+  {
+   "text": "pus.",
+   "start": 34.688,
+   "end": 34.97
+  },
+  {
+   "text": "Et",
+   "start": 35.301,
+   "end": 35.448
+  },
+  {
+   "text": "vérifie",
+   "start": 35.448,
+   "end": 35.803
+  },
+  {
+   "text": "que",
+   "start": 35.803,
+   "end": 35.901
+  },
+  {
+   "text": "ton",
+   "start": 35.901,
+   "end": 36.024
+  },
+  {
+   "text": "vaccin",
+   "start": 36.024,
+   "end": 36.355
+  },
+  {
+   "text": "contre",
+   "start": 36.355,
+   "end": 36.6
+  },
+  {
+   "text": "le",
+   "start": 36.6,
+   "end": 36.686
+  },
+  {
+   "text": "tétanos",
+   "start": 36.686,
+   "end": 37.225
+  },
+  {
+   "text": "est",
+   "start": 37.225,
+   "end": 37.262
+  },
+  {
+   "text": "à",
+   "start": 37.262,
+   "end": 37.384
+  },
+  {
+   "text": "jour.",
+   "start": 37.384,
+   "end": 37.789
+  },
+  {
+   "text": "Et",
+   "start": 38.762,
+   "end": 38.834
+  },
+  {
+   "text": "voilà :",
+   "start": 38.834,
+   "end": 39.171
+  },
+  {
+   "text": "sortie",
+   "start": 39.603,
+   "end": 39.904
+  },
+  {
+   "text": "dans",
+   "start": 39.904,
+   "end": 40.0
+  },
+  {
+   "text": "le",
+   "start": 40.0,
+   "end": 40.072
+  },
+  {
+   "text": "bon",
+   "start": 40.072,
+   "end": 40.216
+  },
+  {
+   "text": "sens…",
+   "start": 40.216,
+   "end": 40.673
+  },
+  {
+   "text": "sans",
+   "start": 40.841,
+   "end": 40.986
+  },
+  {
+   "text": "y",
+   "start": 40.986,
+   "end": 41.118
+  },
+  {
+   "text": "laisser",
+   "start": 41.118,
+   "end": 41.382
+  },
+  {
+   "text": "un",
+   "start": 41.382,
+   "end": 41.49
+  },
+  {
+   "text": "bout !",
+   "start": 41.49,
+   "end": 41.719
+  }
+ ]
+}

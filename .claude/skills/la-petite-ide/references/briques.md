@@ -573,6 +573,17 @@ Vidéos en série (« partie 1 / 3 ») : carte de la série juste après l'accro
 - `Chair` — Chaise (160 × 200).
 - `ErIcon` — Hôpital (urgences) 200 × 180.
 
+## `splinter.tsx`
+« Comment retirer une écharde ? » : vieille planche vue de dessus (veines, nœud, fente, fibres qui dépassent), écharde plantée dans le grand doigt (partie qui dépasse + partie vue par transparence sous la peau, poussée plus loin, cassée, retirée dans son axe), pince à écharde qui s'ouvre / se ferme. À dessiner dans le repère d'un `BigFinger`. Même rendu soigné que bandage.tsx. Couleurs de la marque uniquement.
+
+- `SPLINTER` — L'écharde dans le repère du doigt : point d'entrée, direction (vers l'intérieur : vers la main), longueurs.
+- `splinterAt` — Point à `d` unités le long de l'écharde (d > 0 : sous la peau ; d < 0 : la partie qui dépasse).
+- `PlankG` — Vieille planche vue de dessus, sous le doigt (repère d'un `BigFinger`) : grandes veines, un nœud, une fente, des fibres soulevées (l'une d'elles accroche le doigt en (`hookX`, ~236)).
+- `SplinterG` — Écharde plantée (repère d'un `BigFinger`) : `on` apparition ; `push` 0 → 1 enfoncée plus loin (la partie qui dépasse rentre) ; `broken` 0 → 1 le bout qui dépassait casse et s'envole, le morceau reste sous la peau ; `pull` 0 → 1 elle…
+- `TweezersG` — Pince à écharde vue de dessus (repère d'un `BigFinger`) : pointes en (`x`, `y`), corps orienté selon `ang` (degrés, direction pointes → charnière), `close` 0 → 1 les pointes se rejoignent ; `tint` voile d'antiseptique (désinfectée).
+- `PullArrowG` — Flèche pointillée qui montre le sens de sortie (dans l'axe de l'écharde, vers l'extérieur).
+- `DeepSplinterIcon` — Petite écharde sous la peau, en coupe (icône 160 × 110) : la peau, l'écharde cassée en dessous.
+
 ## `suppo.tsx`
 Vidéo courte « Comment mettre un suppositoire » : le suppositoire (`Suppo` : torpille blanc cassé, pointe arrondie à droite, base plate à gauche, petit visage, mode fusée avec ailerons + flamme), la notice (`Notice`, ligne surlignée), le patient couché sur le côté gauche (`SideLying`, jambe du dessus pliée), l'anneau du sphincter (`Sphincter`), les fesses qui se serrent (`Squeeze`), un commentaire de réseau social (`Comment`). Couleurs de la marque uniquement.
 

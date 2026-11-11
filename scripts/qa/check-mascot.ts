@@ -80,6 +80,8 @@ import * as pansement from '../../src/videos/pansement/mascot';
 import * as pansementTL from '../../src/videos/pansement/timeline';
 import * as brulure from '../../src/videos/brulure/mascot';
 import * as brulureTL from '../../src/videos/brulure/timeline';
+import * as echarde from '../../src/videos/echarde/mascot';
+import * as echardeTL from '../../src/videos/echarde/timeline';
 
 const VIDEOS: Record<string, [typeof constantes.MASCOT, typeof constantesTL.TL]> = {
 	constantes: [constantes.MASCOT, constantesTL.TL],
@@ -121,6 +123,7 @@ const VIDEOS: Record<string, [typeof constantes.MASCOT, typeof constantesTL.TL]>
 	'trousse-secours': [troussesecours.MASCOT, troussesecoursTL.TL],
 	'pansement': [pansement.MASCOT, pansementTL.TL],
 	'brulure': [brulure.MASCOT, brulureTL.TL],
+	'echarde': [echarde.MASCOT, echardeTL.TL],
 };
 const name = process.argv[2] ?? 'constantes';
 const [MASCOT, TL] = VIDEOS[name];

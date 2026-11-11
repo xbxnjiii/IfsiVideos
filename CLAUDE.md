@@ -307,6 +307,11 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   reçues barrées (glaçon, beurre, dentifrice), eau du robinet 15 min + règle des 3 × 15, cloque qu'on ne perce pas,
   compresse ou pansement gras, paracétamol, quand consulter, chute « merci ! ». Briques `src/brand/burn.tsx` + `BigFinger`
   (`burn`, `heat`, `blister`). Storyboard `docs/lpi/storyboard-brulure.md`.
+- `Echarde` (n° 41, ≈ 46 s, voix gratuite d'abord, **thème choisi librement** à la demande) : accroche sans texte (le doigt
+  glisse sur une vieille planche, aïe), idée reçue (presser avec les ongles : elle s'enfonce, se casse), la bonne méthode
+  (laver, désinfecter la pince, au ras de la peau, tirer dans le sens où elle est entrée), après, quand consulter + tétanos.
+  Briques `src/brand/splinter.tsx`. Voix : « ça rougit, ça gonfle » → « la peau devient rouge, gonflée ». Storyboard
+  `docs/lpi/storyboard-echarde.md`.
 
 ## Voix ElevenLabs « Laura » (choisie par le propriétaire pour les nouvelles vidéos)
 
