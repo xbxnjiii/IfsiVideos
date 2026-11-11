@@ -5,6 +5,10 @@
 `npm ci` puis `pip install --break-system-packages edge-tts faster-whisper soundfile`. Le navigateur sans interface est
 trouvé tout seul dans `/opt/pw-browsers` (`remotion.config.ts`, `npm run qa`). ≈ 3,5 s de calcul par seconde de vidéo.
 
+**Disque** : chaque rendu ou `npm run qa` copie `public/` (≈ 270 Mo) dans `/tmp/remotion-webpack-bundle-*` sans la
+supprimer ; 90 copies = 25 Go et le rendu plante (« Page crashed! », `ENOSPC`). Après les rendus :
+`rm -rf /tmp/remotion-webpack-bundle-*` (autorisé par le propriétaire). Scène lourde (grands flous SVG) : `--concurrency=2`.
+
 ## Recette
 
 1. **Storyboard** `docs/lpi/storyboard-<épisode>.md` : tableau partie · voix · image. Proposer 2 – 3 accroches si besoin.
