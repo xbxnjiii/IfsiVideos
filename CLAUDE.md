@@ -247,6 +247,16 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   `Comment` (commentaire de réseau social). Dans un commentaire ou un titre, mettre une espace insécable devant « ! » et
   « ? » (`\u00a0`), sinon ils se retrouvent seuls à la ligne.
 
+- 2e court : `Objet-Plante` (`src/videos/objet-plante/`, ≈ 46 s) — « Pourquoi ne jamais retirer un objet planté ? ».
+  Demandé : une **situation vécue** (« on se reconnaît = on regarde ») : la vaisselle, le verre éclate dans l'évier, un
+  éclat dans la main ; « Premier réflexe : le retirer. Stop ! ». Puis sous la peau (l'éclat bouche le vaisseau coupé →
+  hémorragie si on le retire), écharde vs éclat planté, le bon geste (caler avec des compresses, s'asseoir, le 15), chute
+  « Pas dans ta cuisine ! ». Briques `src/brand/shard.tsx` : `Sink`, `DrinkGlass`, `ShardBurst`, `HandShard`, `Pinch`,
+  `ShardSection` (calque sur `SkinBlock`), `Splinter`, `Chair`, `ErIcon` ; `bold.tsx` : `RowCard`, `PointTag`, `ToneBg`.
+- Bruitages : l'API Openverse sert à chercher, mais les fichiers Freesound renvoient 403 depuis le conteneur (ne pas
+  contourner) → La Sonothèque (`npm run sfx:import`) : `dishes`, `tap`, `glass`, `heart`, `dtmf-1`, `dtmf-5`, `ring`.
+  « Real SFX » introuvable ; `@remotion/sfx` = sons de mèmes seulement.
+
 ## Voix ElevenLabs « Laura » (choisie par le propriétaire pour les nouvelles vidéos)
 
 - Connecteur ElevenLabs : voix `Laura` (`MmafIMKg28Wr0yMh8CEB`), modèle `eleven_v4`, flow `6O4tHaBowSG52722wkdC`.
