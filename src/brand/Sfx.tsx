@@ -3,7 +3,8 @@ import {Html5Audio, Sequence, staticFile} from 'remotion';
 
 export type SfxName = 'whoosh' | 'pop' | 'tick' | 'impact' | 'ding' | 'buzz' | 'heartbeat' | 'stamp' | 'hop' | 'run' | 'drumroll'
 	// vrais enregistrements (La Sonothèque, scripts/import-sfx.py, public/sfx/SOURCES.md)
-	| 'cough' | 'cough-1' | 'cough-2' | 'gasp' | 'puff' | 'lighter' | 'smoke' | 'blow' | 'sigh' | 'stairs';
+	| 'cough' | 'cough-1' | 'cough-2' | 'gasp' | 'puff' | 'lighter' | 'smoke' | 'blow' | 'sigh' | 'stairs'
+	| 'dishes' | 'tap' | 'glass' | 'heart' | 'dtmf-1' | 'dtmf-5' | 'ring';
 
 const VOLUME: Record<SfxName, number> = {
 	whoosh: 0.35,
@@ -27,10 +28,17 @@ const VOLUME: Record<SfxName, number> = {
 	blow: 0.35,
 	sigh: 0.3,
 	stairs: 0.3,
+	dishes: 0.3,
+	tap: 0.25,
+	glass: 0.55,
+	heart: 0.5,
+	'dtmf-1': 0.25,
+	'dtmf-5': 0.25,
+	ring: 0.3,
 };
 
 /** Durée (frames à 30 i/s) des bruitages plus longs qu'une seconde : ils ne sont pas coupés par défaut. */
-const LENGTH: Partial<Record<SfxName, number>> = {cough: 47, gasp: 83, lighter: 44, smoke: 54, blow: 35, sigh: 119, stairs: 120};
+const LENGTH: Partial<Record<SfxName, number>> = {cough: 47, gasp: 83, lighter: 44, smoke: 54, blow: 35, sigh: 119, stairs: 120, dishes: 120, tap: 90, glass: 57, heart: 120, ring: 42};
 
 /** Permet de couper tous les bruitages d'une vidéo (ex. version « voix seule »). */
 export const SfxEnabled = createContext(true);

@@ -16,3 +16,10 @@ autorisé, attribution non obligatoire. Refaits par `python3 scripts/import-sfx.
 | `blow.wav` | Souffler fort #2 | [1603](https://lasonotheque.org/search?q=1603) | 0.30 s → 1.45 s |
 | `sigh.wav` | Soupirer par la bouche | [1405](https://lasonotheque.org/search?q=1405) | 0.40 s → 4.35 s |
 | `stairs.wav` | Pas, escalier en bois #1 (montée) | [3212](https://lasonotheque.org/search?q=3212) | 0.00 s → 4.00 s |
+| `dishes.wav` | Vaisselle faite à la main | [0391](https://lasonotheque.org/search?q=0391) | 2.00 s → 6.00 s |
+| `tap.wav` | Robinet #3 | [0652](https://lasonotheque.org/search?q=0652) | 2.00 s → 5.00 s |
+| `glass.wav` | Verre qui éclate | [0148](https://lasonotheque.org/search?q=0148) | 0.00 s → 1.90 s |
+| `heart.wav` | Battements de cœur | [0218](https://lasonotheque.org/search?q=0218) | 0.00 s → 4.00 s |
+| `dtmf-1.wav` | Touche 1 en DTMF | [3392](https://lasonotheque.org/search?q=3392) | 0.00 s → 0.26 s |
+| `dtmf-5.wav` | Touche 5 en DTMF | [3396](https://lasonotheque.org/search?q=3396) | 0.00 s → 0.26 s |
+| `ring.wav` | Tonalité téléphonique, appel (une sonnerie) | [0767](https://lasonotheque.org/search?q=0767) | 8.00 s → 9.40 s |

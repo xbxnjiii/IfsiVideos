@@ -1,0 +1,673 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 41.584,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.071,
+   "end": 9.366
+  },
+  {
+   "id": "pourquoi",
+   "start": 10.296,
+   "end": 21.84
+  },
+  {
+   "id": "nuance",
+   "start": 22.774,
+   "end": 28.41
+  },
+  {
+   "id": "geste",
+   "start": 29.396,
+   "end": 37.596
+  },
+  {
+   "id": "fin",
+   "start": 38.514,
+   "end": 41.266
+  }
+ ],
+ "words": [
+  {
+   "text": "Tu",
+   "start": 0.071,
+   "end": 0.165
+  },
+  {
+   "text": "fais",
+   "start": 0.165,
+   "end": 0.283
+  },
+  {
+   "text": "la",
+   "start": 0.283,
+   "end": 0.366
+  },
+  {
+   "text": "vaisselle,",
+   "start": 0.366,
+   "end": 0.814
+  },
+  {
+   "text": "le",
+   "start": 1.061,
+   "end": 1.12
+  },
+  {
+   "text": "verre",
+   "start": 1.12,
+   "end": 1.285
+  },
+  {
+   "text": "glisse,",
+   "start": 1.285,
+   "end": 1.686
+  },
+  {
+   "text": "il",
+   "start": 1.875,
+   "end": 1.934
+  },
+  {
+   "text": "éclate",
+   "start": 1.934,
+   "end": 2.276
+  },
+  {
+   "text": "dans",
+   "start": 2.276,
+   "end": 2.37
+  },
+  {
+   "text": "l'évier…",
+   "start": 2.37,
+   "end": 2.771
+  },
+  {
+   "text": "et",
+   "start": 3.125,
+   "end": 3.208
+  },
+  {
+   "text": "un",
+   "start": 3.208,
+   "end": 3.255
+  },
+  {
+   "text": "éclat",
+   "start": 3.255,
+   "end": 3.526
+  },
+  {
+   "text": "se",
+   "start": 3.526,
+   "end": 3.644
+  },
+  {
+   "text": "plante",
+   "start": 3.644,
+   "end": 3.962
+  },
+  {
+   "text": "dans",
+   "start": 3.962,
+   "end": 4.057
+  },
+  {
+   "text": "ta",
+   "start": 4.057,
+   "end": 4.174
+  },
+  {
+   "text": "main.",
+   "start": 4.175,
+   "end": 4.446
+  },
+  {
+   "text": "Premier",
+   "start": 4.811,
+   "end": 5.059
+  },
+  {
+   "text": "réflexe :",
+   "start": 5.059,
+   "end": 5.672
+  },
+  {
+   "text": "le",
+   "start": 5.955,
+   "end": 6.026
+  },
+  {
+   "text": "retirer.",
+   "start": 6.026,
+   "end": 6.568
+  },
+  {
+   "text": "Stop !",
+   "start": 6.888,
+   "end": 7.406
+  },
+  {
+   "text": "C'est",
+   "start": 7.727,
+   "end": 7.916
+  },
+  {
+   "text": "exactement",
+   "start": 7.916,
+   "end": 8.434
+  },
+  {
+   "text": "ce",
+   "start": 8.434,
+   "end": 8.529
+  },
+  {
+   "text": "qu'il",
+   "start": 8.529,
+   "end": 8.647
+  },
+  {
+   "text": "ne",
+   "start": 8.647,
+   "end": 8.729
+  },
+  {
+   "text": "faut",
+   "start": 8.729,
+   "end": 8.835
+  },
+  {
+   "text": "pas",
+   "start": 8.835,
+   "end": 8.941
+  },
+  {
+   "text": "faire.",
+   "start": 8.941,
+   "end": 9.366
+  },
+  {
+   "text": "Regarde",
+   "start": 10.296,
+   "end": 10.835
+  },
+  {
+   "text": "sous",
+   "start": 10.835,
+   "end": 10.958
+  },
+  {
+   "text": "la",
+   "start": 10.958,
+   "end": 11.056
+  },
+  {
+   "text": "peau.",
+   "start": 11.056,
+   "end": 11.387
+  },
+  {
+   "text": "L'éclat",
+   "start": 11.741,
+   "end": 12.096
+  },
+  {
+   "text": "a",
+   "start": 12.109,
+   "end": 12.158
+  },
+  {
+   "text": "coupé",
+   "start": 12.158,
+   "end": 12.44
+  },
+  {
+   "text": "un",
+   "start": 12.44,
+   "end": 12.489
+  },
+  {
+   "text": "petit",
+   "start": 12.489,
+   "end": 12.746
+  },
+  {
+   "text": "vaisseau…",
+   "start": 12.746,
+   "end": 13.163
+  },
+  {
+   "text": "mais",
+   "start": 13.616,
+   "end": 13.677
+  },
+  {
+   "text": "il",
+   "start": 13.677,
+   "end": 13.775
+  },
+  {
+   "text": "le",
+   "start": 13.775,
+   "end": 13.873
+  },
+  {
+   "text": "bouche,",
+   "start": 13.873,
+   "end": 14.266
+  },
+  {
+   "text": "comme",
+   "start": 14.425,
+   "end": 14.596
+  },
+  {
+   "text": "un",
+   "start": 14.597,
+   "end": 14.646
+  },
+  {
+   "text": "bouchon.",
+   "start": 14.646,
+   "end": 15.099
+  },
+  {
+   "text": "Si",
+   "start": 15.431,
+   "end": 15.627
+  },
+  {
+   "text": "tu",
+   "start": 15.627,
+   "end": 15.749
+  },
+  {
+   "text": "le",
+   "start": 15.749,
+   "end": 15.835
+  },
+  {
+   "text": "retires,",
+   "start": 15.835,
+   "end": 16.313
+  },
+  {
+   "text": "le",
+   "start": 16.57,
+   "end": 16.656
+  },
+  {
+   "text": "sang",
+   "start": 16.656,
+   "end": 16.815
+  },
+  {
+   "text": "coule",
+   "start": 16.815,
+   "end": 17.024
+  },
+  {
+   "text": "d'un",
+   "start": 17.024,
+   "end": 17.171
+  },
+  {
+   "text": "coup :",
+   "start": 17.171,
+   "end": 17.416
+  },
+  {
+   "text": "ça",
+   "start": 17.808,
+   "end": 17.906
+  },
+  {
+   "text": "peut",
+   "start": 17.906,
+   "end": 18.004
+  },
+  {
+   "text": "devenir",
+   "start": 18.004,
+   "end": 18.335
+  },
+  {
+   "text": "une",
+   "start": 18.335,
+   "end": 18.421
+  },
+  {
+   "text": "hémorragie.",
+   "start": 18.421,
+   "end": 19.009
+  },
+  {
+   "text": "Et",
+   "start": 19.34,
+   "end": 19.499
+  },
+  {
+   "text": "en",
+   "start": 19.499,
+   "end": 19.56
+  },
+  {
+   "text": "ressortant,",
+   "start": 19.56,
+   "end": 20.148
+  },
+  {
+   "text": "l'éclat",
+   "start": 20.467,
+   "end": 20.724
+  },
+  {
+   "text": "peut",
+   "start": 20.724,
+   "end": 20.847
+  },
+  {
+   "text": "encore",
+   "start": 20.847,
+   "end": 21.141
+  },
+  {
+   "text": "abîmer",
+   "start": 21.141,
+   "end": 21.398
+  },
+  {
+   "text": "la",
+   "start": 21.398,
+   "end": 21.496
+  },
+  {
+   "text": "peau.",
+   "start": 21.497,
+   "end": 21.84
+  },
+  {
+   "text": "Une",
+   "start": 22.774,
+   "end": 22.982
+  },
+  {
+   "text": "toute",
+   "start": 22.982,
+   "end": 23.141
+  },
+  {
+   "text": "petite",
+   "start": 23.141,
+   "end": 23.435
+  },
+  {
+   "text": "écharde,",
+   "start": 23.436,
+   "end": 23.913
+  },
+  {
+   "text": "juste",
+   "start": 24.183,
+   "end": 24.416
+  },
+  {
+   "text": "en",
+   "start": 24.416,
+   "end": 24.465
+  },
+  {
+   "text": "surface,",
+   "start": 24.465,
+   "end": 25.09
+  },
+  {
+   "text": "ça",
+   "start": 25.286,
+   "end": 25.421
+  },
+  {
+   "text": "s'enlève.",
+   "start": 25.421,
+   "end": 25.972
+  },
+  {
+   "text": "Mais",
+   "start": 26.339,
+   "end": 26.462
+  },
+  {
+   "text": "un",
+   "start": 26.462,
+   "end": 26.523
+  },
+  {
+   "text": "éclat",
+   "start": 26.523,
+   "end": 26.805
+  },
+  {
+   "text": "bien",
+   "start": 26.805,
+   "end": 26.976
+  },
+  {
+   "text": "planté :",
+   "start": 26.976,
+   "end": 27.479
+  },
+  {
+   "text": "on",
+   "start": 27.81,
+   "end": 27.834
+  },
+  {
+   "text": "n'y",
+   "start": 27.834,
+   "end": 27.932
+  },
+  {
+   "text": "touche",
+   "start": 27.932,
+   "end": 28.165
+  },
+  {
+   "text": "pas.",
+   "start": 28.165,
+   "end": 28.41
+  },
+  {
+   "text": "Alors,",
+   "start": 29.396,
+   "end": 29.776
+  },
+  {
+   "text": "on",
+   "start": 29.96,
+   "end": 29.996
+  },
+  {
+   "text": "fait",
+   "start": 29.997,
+   "end": 30.131
+  },
+  {
+   "text": "quoi ?",
+   "start": 30.131,
+   "end": 30.45
+  },
+  {
+   "text": "On",
+   "start": 30.793,
+   "end": 30.903
+  },
+  {
+   "text": "cale",
+   "start": 30.903,
+   "end": 31.112
+  },
+  {
+   "text": "l'éclat",
+   "start": 31.112,
+   "end": 31.455
+  },
+  {
+   "text": "avec",
+   "start": 31.455,
+   "end": 31.614
+  },
+  {
+   "text": "des",
+   "start": 31.614,
+   "end": 31.688
+  },
+  {
+   "text": "compresses",
+   "start": 31.688,
+   "end": 32.104
+  },
+  {
+   "text": "tout",
+   "start": 32.104,
+   "end": 32.202
+  },
+  {
+   "text": "autour,",
+   "start": 32.202,
+   "end": 32.68
+  },
+  {
+   "text": "sans",
+   "start": 32.974,
+   "end": 33.121
+  },
+  {
+   "text": "appuyer",
+   "start": 33.122,
+   "end": 33.477
+  },
+  {
+   "text": "dessus.",
+   "start": 33.477,
+   "end": 33.894
+  },
+  {
+   "text": "On",
+   "start": 34.225,
+   "end": 34.385
+  },
+  {
+   "text": "s'assoit,",
+   "start": 34.385,
+   "end": 34.887
+  },
+  {
+   "text": "on",
+   "start": 35.206,
+   "end": 35.23
+  },
+  {
+   "text": "ne",
+   "start": 35.23,
+   "end": 35.341
+  },
+  {
+   "text": "bouge",
+   "start": 35.341,
+   "end": 35.598
+  },
+  {
+   "text": "plus",
+   "start": 35.598,
+   "end": 35.757
+  },
+  {
+   "text": "la",
+   "start": 35.757,
+   "end": 35.868
+  },
+  {
+   "text": "main.",
+   "start": 35.868,
+   "end": 36.137
+  },
+  {
+   "text": "Et",
+   "start": 36.468,
+   "end": 36.627
+  },
+  {
+   "text": "on",
+   "start": 36.627,
+   "end": 36.664
+  },
+  {
+   "text": "appelle",
+   "start": 36.664,
+   "end": 36.946
+  },
+  {
+   "text": "le",
+   "start": 36.946,
+   "end": 37.069
+  },
+  {
+   "text": "15.",
+   "start": 37.081,
+   "end": 37.596
+  },
+  {
+   "text": "C'est",
+   "start": 38.514,
+   "end": 38.694
+  },
+  {
+   "text": "aux",
+   "start": 38.694,
+   "end": 38.802
+  },
+  {
+   "text": "urgences",
+   "start": 38.802,
+   "end": 39.235
+  },
+  {
+   "text": "qu'on",
+   "start": 39.235,
+   "end": 39.343
+  },
+  {
+   "text": "le",
+   "start": 39.343,
+   "end": 39.427
+  },
+  {
+   "text": "retire.",
+   "start": 39.427,
+   "end": 39.968
+  },
+  {
+   "text": "Pas",
+   "start": 40.293,
+   "end": 40.449
+  },
+  {
+   "text": "dans",
+   "start": 40.449,
+   "end": 40.545
+  },
+  {
+   "text": "ta",
+   "start": 40.545,
+   "end": 40.653
+  },
+  {
+   "text": "cuisine !",
+   "start": 40.653,
+   "end": 41.266
+  }
+ ]
+}

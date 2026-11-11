@@ -43,7 +43,8 @@
     "render:diabete-1": "remotion render Diabete-1 out/26-diabete-1.mp4",
     "render:diabete-2": "remotion render Diabete-2 out/26-diabete-2.mp4",
     "render:constantes-enfant": "remotion render Constantes-Enfant out/28-constantes-enfant.mp4",
-    "render:suppositoire": "remotion render Suppositoire out/29-suppositoire.mp4"
+    "render:suppositoire": "remotion render Suppositoire out/29-suppositoire.mp4",
+    "render:objet-plante": "remotion render Objet-Plante out/30-objet-plante.mp4"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.532",

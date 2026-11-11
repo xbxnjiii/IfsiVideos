@@ -60,6 +60,8 @@ import {ConstantesEnfant, ConstantesEnfantProps} from './videos/constantes-enfan
 import {TL as CONSTANTES_ENFANT_TL} from './videos/constantes-enfant/timeline';
 import {Suppositoire, SuppositoireProps} from './videos/suppositoire/Suppositoire';
 import {TL as SUPPOSITOIRE_TL} from './videos/suppositoire/timeline';
+import {ObjetPlante, ObjetPlanteProps} from './videos/objet-plante/ObjetPlante';
+import {TL as OBJET_PLANTE_TL} from './videos/objet-plante/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -346,6 +348,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies SuppositoireProps}
+		/>
+		{/* 30 · Objet-Plante */}
+		<Composition
+			id="Objet-Plante"
+			component={ObjetPlante}
+			durationInFrames={OBJET_PLANTE_TL.total}
+			fps={OBJET_PLANTE_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies ObjetPlanteProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition

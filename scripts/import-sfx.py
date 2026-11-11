@@ -23,6 +23,14 @@ SOUNDS = [
     ("blow", "1603", "Souffler fort #2", 0.30, 1.15),
     ("sigh", "1405", "Soupirer par la bouche", 0.40, 3.95),
     ("stairs", "3212", "Pas, escalier en bois #1 (montée)", 0.0, 4.0),
+    # « Pourquoi ne jamais retirer un objet planté ? » (vaisselle, verre, cœur, appel du 15)
+    ("dishes", "0391", "Vaisselle faite à la main", 2.0, 4.0),
+    ("tap", "0652", "Robinet #3", 2.0, 3.0),
+    ("glass", "0148", "Verre qui éclate", 0.0, 1.9),
+    ("heart", "0218", "Battements de cœur", 0.0, 4.0),
+    ("dtmf-1", "3392", "Touche 1 en DTMF", 0.0, 0.26),
+    ("dtmf-5", "3396", "Touche 5 en DTMF", 0.0, 0.26),
+    ("ring", "0767", "Tonalité téléphonique, appel (une sonnerie)", 8.0, 1.4),
 ]
 
 

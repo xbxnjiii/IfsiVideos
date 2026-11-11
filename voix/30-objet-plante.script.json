@@ -1,0 +1,7 @@
+[
+	{"id": "intro", "rate": "+6%", "text": "Tu fais la vaisselle, le verre glisse, il éclate dans l'évier… et un éclat se plante dans ta main. Premier réflexe : le retirer. Stop ! C'est exactement ce qu'il ne faut pas faire."},
+	{"id": "pourquoi", "rate": "+2%", "text": "Regarde sous la peau. L'éclat a coupé un petit vaisseau… mais il le bouche, comme un bouchon. Si tu le retires, le sang coule d'un coup : ça peut devenir une hémorragie. Et en ressortant, l'éclat peut encore abîmer la peau."},
+	{"id": "nuance", "rate": "+2%", "text": "Une toute petite écharde, juste en surface, ça s'enlève. Mais un éclat bien planté : on n'y touche pas."},
+	{"id": "geste", "rate": "+2%", "text": "Alors, on fait quoi ? On cale l'éclat avec des compresses tout autour, sans appuyer dessus. On s'assoit, on ne bouge plus la main. Et on appelle le {15|quinze}."},
+	{"id": "fin", "rate": "+4%", "text": "C'est aux urgences qu'on le retire. Pas dans ta cuisine !"}
+]
