@@ -275,7 +275,7 @@ export const CarDoor: React.FC<{width?: number; close: number; crush?: number}> 
  * contuse (`ragged` : bords déchiquetés). `open` 0 → 1 ouverture ; `sutures` 0 → 1 ; `bruise` : tissus écrasés autour
  * (bleuté) ; `necrosis` : îlots bleu nuit qui gagnent les bords ; `edges` : les bords surlignés (repère visuel).
  */
-export const WoundTop: React.FC<{width?: number; kind: 'clean' | 'ragged'; open?: number; sutures?: number; bruise?: number; necrosis?: number; edges?: number}> = ({width = 700, kind, open = 1, sutures = 0, bruise = 0, necrosis = 0, edges = 0}) => {
+export const WoundTop: React.FC<{width?: number; kind: 'clean' | 'ragged'; open?: number; sutures?: number; bruise?: number; necrosis?: number; edges?: number; heal?: number}> = ({width = 700, kind, open = 1, sutures = 0, bruise = 0, necrosis = 0, edges = 0, heal = 0}) => {
 	const id = React.useId().replace(/:/g, '');
 	const o = cl(open);
 	const cx = 350;
@@ -308,9 +308,12 @@ export const WoundTop: React.FC<{width?: number; kind: 'clean' | 'ragged'; open?
 						<ellipse cx={cx} cy={cy} rx={250} ry={110} fill={alpha(LPI.blue, 0.3 * bruise)} />
 					</>
 				) : null}
-				{/* la plaie */}
-				<path d={d} fill={LPI.pink} stroke={N} strokeWidth={6} strokeLinejoin="round" />
-				<path d={d} fill={alpha(N, 0.12)} transform={`translate(0 ${6 * o})`} />
+				{/* la plaie (elle s'efface quand elle guérit : `heal`, il reste une fine cicatrice) */}
+				<g opacity={1 - cl(heal)}>
+					<path d={d} fill={LPI.pink} stroke={N} strokeWidth={6} strokeLinejoin="round" />
+					<path d={d} fill={alpha(N, 0.12)} transform={`translate(0 ${6 * o})`} />
+				</g>
+				{heal > 0 ? <path d={`M140 ${cy} H560`} stroke={alpha(LPI.pink, 0.8)} strokeWidth={8} strokeLinecap="round" opacity={cl(heal)} /> : null}
 				{/* nécrose : îlots bleu nuit sur les bords */}
 				{necrosis > 0
 					? [180, 260, 340, 420, 500].map((x, i) => (
@@ -328,6 +331,283 @@ export const WoundTop: React.FC<{width?: number; kind: 'clean' | 'ragged'; open?
 					: null}
 			</g>
 			<rect x={10} y={10} width={680} height={400} rx={60} fill="none" {...S} />
+		</svg>
+	);
+};
+
+/* ───────────── clou, moustique, carnet de vaccination, stéthoscope ───────────── */
+
+/** Repère 520 × 220 : planche de bois avec un clou qui dépasse, pointe en l'air (pointe à x 260, y 30). */
+export const NailBoard: React.FC<{width?: number}> = ({width = 520}) => (
+	<svg width={width} height={(width * 220) / 520} viewBox="0 0 520 220" style={{overflow: 'visible', display: 'block'}}>
+		<rect x={10} y={130} width={500} height={80} rx={18} fill={LPI.sky} {...S} />
+		<path d="M40 160 C140 150 220 176 320 162 C400 150 450 168 490 160 M60 190 C160 182 300 198 470 186" fill="none" stroke={alpha(N, 0.3)} strokeWidth={4} strokeLinecap="round" />
+		<path d="M252 132 V58 L260 26 L268 58 V132 Z" fill={LPI.paper} {...S} strokeWidth={6} />
+		<path d="M236 132 H284" stroke={N} strokeWidth={10} strokeLinecap="round" />
+	</svg>
+);
+
+/** Moustique (repère 200 × 160), ailes qui battent. */
+export const Mosquito: React.FC<{size?: number}> = ({size = 200}) => {
+	const frame = useCurrentFrame();
+	const flap = Math.sin(frame * 2.2) * 18;
+	return (
+		<svg width={size} height={(size * 160) / 200} viewBox="0 0 200 160" style={{overflow: 'visible', display: 'block'}}>
+			<g transform={`rotate(${-20 + flap} 100 70)`}>
+				<ellipse cx={80} cy={40} rx={50} ry={20} fill={alpha(LPI.sky, 0.8)} stroke={N} strokeWidth={5} />
+			</g>
+			<g transform={`rotate(${20 - flap} 100 70)`}>
+				<ellipse cx={128} cy={38} rx={46} ry={18} fill={alpha(LPI.sky, 0.8)} stroke={N} strokeWidth={5} />
+			</g>
+			<path d="M60 92 L30 140 M90 96 L80 150 M120 96 L140 150 M140 90 L176 132" stroke={N} strokeWidth={5} strokeLinecap="round" fill="none" />
+			<ellipse cx={100} cy={82} rx={52} ry={18} fill={LPI.blue} {...S} strokeWidth={6} />
+			<circle cx={156} cy={74} r={16} fill={LPI.blue} {...S} strokeWidth={6} />
+			<path d="M170 80 L198 104" stroke={N} strokeWidth={5} strokeLinecap="round" />
+			<circle cx={160} cy={70} r={4} fill={LPI.paper} />
+		</svg>
+	);
+};
+
+/** Carnet de vaccination (repère 260 × 200) avec une ligne cochée à `check` (0 → 1). */
+export const VaxBook: React.FC<{size?: number; check?: number}> = ({size = 260, check = 0}) => (
+	<svg width={size} height={(size * 200) / 260} viewBox="0 0 260 200" style={{overflow: 'visible', display: 'block'}}>
+		<rect x={20} y={10} width={220} height={180} rx={16} fill={LPI.pink} {...S} />
+		<rect x={40} y={30} width={180} height={140} rx={10} fill={LPI.paper} stroke={N} strokeWidth={5} />
+		<path d="M60 64 H160 M60 100 H160 M60 136 H140" stroke={alpha(N, 0.35)} strokeWidth={8} strokeLinecap="round" />
+		<rect x={170} y={84} width={34} height={34} rx={8} fill={check > 0 ? LPI.blue : LPI.paper} stroke={N} strokeWidth={5} />
+		<path d="M176 100 L186 110 L200 90" fill="none" stroke={LPI.paper} strokeWidth={7} strokeLinecap="round" strokeLinejoin="round" pathLength={1} strokeDasharray={`${cl(check)} 1`} />
+	</svg>
+);
+
+/** Stéthoscope (consulter un médecin), repère 220 × 220. */
+export const Stetho: React.FC<{size?: number}> = ({size = 220}) => (
+	<svg width={size} height={size} viewBox="0 0 220 220" style={{overflow: 'visible', display: 'block'}}>
+		<path d="M60 20 V90 C60 140 150 140 150 90 V20" fill="none" stroke={N} strokeWidth={12} strokeLinecap="round" />
+		<path d="M105 130 V160 C105 200 170 200 170 160 V140" fill="none" stroke={LPI.blue} strokeWidth={14} strokeLinecap="round" />
+		<circle cx={170} cy={124} r={26} fill={LPI.sky} {...S} />
+		<circle cx={170} cy={124} r={10} fill={LPI.paper} stroke={N} strokeWidth={4} />
+		<circle cx={60} cy={20} r={10} fill={LPI.pink} stroke={N} strokeWidth={5} />
+		<circle cx={150} cy={20} r={10} fill={LPI.pink} stroke={N} strokeWidth={5} />
+	</svg>
+);
+
+/* ───────────── animaux qui mordent, main mordue ───────────── */
+
+/** Tête de chat (repère 320 × 300) : `open` 0 → 1 la gueule s'ouvre (crocs), `angry` : yeux plissés, oreilles en arrière. */
+export const Cat: React.FC<{size?: number; open?: number; angry?: number}> = ({size = 320, open = 0, angry = 0}) => {
+	const frame = useCurrentFrame();
+	const blink = frame % 90 < 4 && angry < 0.5 ? 0.15 : 1;
+	const ear = -14 * angry;
+	return (
+		<svg width={size} height={(size * 300) / 320} viewBox="0 0 320 300" style={{overflow: 'visible', display: 'block'}}>
+			<g transform={`rotate(${ear} 90 90)`}>
+				<path d="M44 120 L60 20 L130 80 Z" fill={LPI.sky} {...S} />
+				<path d="M64 96 L70 48 L106 82 Z" fill={LPI.pink} />
+			</g>
+			<g transform={`rotate(${-ear} 230 90)`}>
+				<path d="M276 120 L260 20 L190 80 Z" fill={LPI.sky} {...S} />
+				<path d="M256 96 L250 48 L214 82 Z" fill={LPI.pink} />
+			</g>
+			<ellipse cx={160} cy={170} rx={130} ry={112} fill={LPI.sky} {...S} />
+			<path d="M120 76 Q160 66 200 76" fill="none" stroke={alpha(N, 0.35)} strokeWidth={6} strokeLinecap="round" />
+			{/* yeux */}
+			{[110, 210].map((x, i) => (
+				<g key={x} transform={`translate(${x} 150) scale(1 ${blink * (1 - 0.55 * angry)})`}>
+					<ellipse rx={22} ry={26} fill={LPI.paper} stroke={N} strokeWidth={5} />
+					<ellipse rx={8} ry={20} fill={N} />
+				</g>
+			))}
+			{angry > 0 ? <path d="M84 118 L136 132 M236 118 L184 132" stroke={N} strokeWidth={7 * angry} strokeLinecap="round" /> : null}
+			{/* nez, bouche, crocs */}
+			<path d="M148 188 H172 L160 202 Z" fill={LPI.pink} stroke={N} strokeWidth={4} strokeLinejoin="round" />
+			<path d={`M160 202 V210 M160 210 Q140 ${226 + 30 * open} 120 ${212 + 10 * open} M160 210 Q180 ${226 + 30 * open} 200 ${212 + 10 * open}`} fill="none" stroke={N} strokeWidth={5} strokeLinecap="round" />
+			{open > 0 ? (
+				<g>
+					<path d={`M128 ${216 + 6 * open} Q160 ${226 + 70 * open} 192 ${216 + 6 * open} Z`} fill={LPI.pink} stroke={N} strokeWidth={5} strokeLinejoin="round" />
+					<path d={`M134 ${218 + 6 * open} l8 ${26 * open} l6 ${-24 * open} Z M186 ${218 + 6 * open} l-8 ${26 * open} l-6 ${-24 * open} Z`} fill={LPI.paper} stroke={N} strokeWidth={3} strokeLinejoin="round" />
+				</g>
+			) : null}
+			{/* moustaches */}
+			<path d="M40 196 L110 202 M44 222 L112 212 M280 196 L210 202 M276 222 L208 212" stroke={N} strokeWidth={4} strokeLinecap="round" />
+		</svg>
+	);
+};
+
+/** Tête de chien (repère 320 × 300), oreilles tombantes, langue. */
+export const Dog: React.FC<{size?: number}> = ({size = 320}) => (
+	<svg width={size} height={(size * 300) / 320} viewBox="0 0 320 300" style={{overflow: 'visible', display: 'block'}}>
+		<path d="M70 70 C20 70 10 180 50 210 C70 200 80 140 96 110 Z" fill={LPI.blue} {...S} />
+		<path d="M250 70 C300 70 310 180 270 210 C250 200 240 140 224 110 Z" fill={LPI.blue} {...S} />
+		<ellipse cx={160} cy={150} rx={110} ry={110} fill={LPI.paper} {...S} />
+		<ellipse cx={160} cy={210} rx={66} ry={50} fill={LPI.sky} stroke={N} strokeWidth={6} />
+		<ellipse cx={120} cy={140} rx={14} ry={18} fill={N} />
+		<ellipse cx={200} cy={140} rx={14} ry={18} fill={N} />
+		<circle cx={124} cy={134} r={4} fill={LPI.paper} />
+		<circle cx={204} cy={134} r={4} fill={LPI.paper} />
+		<ellipse cx={160} cy={190} rx={22} ry={15} fill={N} />
+		<path d="M160 206 V222 M136 228 Q160 244 184 228" fill="none" stroke={N} strokeWidth={5} strokeLinecap="round" />
+		<path d="M150 236 Q160 270 172 236 Z" fill={LPI.pink} stroke={N} strokeWidth={4} />
+	</svg>
+);
+
+/**
+ * Dos de la main (repère 300 × 400, doigts en haut). `marks` 0 → 1 : deux petits trous de crocs ; `swell` 0 → 1 : la
+ * main gonfle (plus grosse, rose, chaude) ; `heat` : ondes de chaleur.
+ */
+export const BittenHand: React.FC<{width?: number; marks?: number; swell?: number}> = ({width = 300, marks = 0, swell = 0}) => {
+	const frame = useCurrentFrame();
+	const sw = cl(swell);
+	const fat = 1 + 0.32 * sw;
+	const fingers = [
+		[96, 150, 118],
+		[136, 120, 140],
+		[176, 126, 136],
+		[214, 160, 112],
+	];
+	return (
+		<svg width={width} height={(width * 400) / 300} viewBox="0 0 300 400" style={{overflow: 'visible', display: 'block'}}>
+			{sw > 0 ? <ellipse cx={156} cy={250} rx={150 * fat} ry={130 * fat} fill={alpha(LPI.pink, 0.35 * sw)} /> : null}
+			<g transform={`translate(156 260) scale(${fat} ${1 + 0.12 * sw}) translate(-156 -260)`}>
+				{/* pouce */}
+				<path d="M74 280 C40 260 26 220 40 196 C52 176 78 190 90 214 L110 250 Z" fill={LPI.paper} {...S} />
+				{fingers.map(([x, top, len], i) => (
+					<rect key={i} x={x - 18 - 3 * sw} y={top} width={36 + 6 * sw} height={len + 40} rx={18 + 3 * sw} fill={LPI.paper} {...S} />
+				))}
+				<path d="M72 250 C70 200 90 190 156 190 C222 190 240 210 236 260 L230 380 L84 380 Z" fill={LPI.paper} {...S} />
+				<path d="M72 250 C70 200 90 190 156 190 C222 190 240 210 236 260 L230 380 L84 380 Z" fill={alpha(LPI.pink, 0.2 + 0.55 * sw)} />
+				{fingers.map(([x, top], i) => (
+					<path key={i} d={`M${x - 10} ${top + 26} q10 6 20 0`} fill="none" stroke={alpha(N, 0.3)} strokeWidth={4} strokeLinecap="round" />
+				))}
+				{/* traces de crocs */}
+				{marks > 0
+					? [
+							[134, 270],
+							[184, 262],
+						].map(([x, y], i) => (
+							<g key={i} transform={`translate(${x} ${y}) scale(${cl(marks * 2 - i * 0.5)})`}>
+								<circle r={11 + 4 * sw} fill={alpha(LPI.pink, 0.6)} />
+								<circle r={6} fill={N} />
+							</g>
+						))
+					: null}
+			</g>
+			{sw > 0.3
+				? [0, 1, 2].map((i) => {
+						const t = (frame * 0.04 + i / 3) % 1;
+						return <path key={i} d={`M${100 + i * 56} ${120 - t * 60} q12 -14 0 -28 q-12 -14 0 -28`} fill="none" stroke={LPI.pink} strokeWidth={7} strokeLinecap="round" opacity={(sw - 0.3) * (1 - t)} />;
+					})
+				: null}
+		</svg>
+	);
+};
+
+/* ───────────── frise des semaines ───────────── */
+
+/**
+ * Frise 0 → `max` semaines (largeur 960) : zone colorée [`zone`], curseur à `pos` semaines (rond + étiquette), cadenas
+ * sur le curseur quand `lock` > 0 (la cicatrisation bloque).
+ */
+export const WeeksBar: React.FC<{pos: number; max?: number; zone?: [number, number, string]; lock?: number; width?: number}> = ({pos, max = 8, zone, lock = 0, width = 960}) => {
+	const x = (w: number) => 40 + (cl(w, 0, max) / max) * (width - 80);
+	return (
+		<svg width={width} height={210} viewBox={`0 0 ${width} 210`} style={{overflow: 'visible', display: 'block'}}>
+			<rect x={20} y={70} width={width - 40} height={56} rx={28} fill={LPI.paper} {...S} />
+			{zone ? <rect x={x(zone[0])} y={78} width={x(zone[1]) - x(zone[0])} height={40} rx={20} fill={zone[2]} /> : null}
+			{Array.from({length: max + 1}, (_, i) => (
+				<g key={i}>
+					<line x1={x(i)} x2={x(i)} y1={126} y2={i % 2 ? 142 : 152} stroke={N} strokeWidth={5} strokeLinecap="round" />
+					{i % 2 === 0 ? (
+						<text x={x(i)} y={192} textAnchor="middle" fontFamily={FONT.title} fontWeight={900} fontSize={34} fill={N}>
+							{i}
+						</text>
+					) : null}
+				</g>
+			))}
+			<text x={width - 20} y={36} textAnchor="end" fontFamily={FONT.title} fontWeight={900} fontSize={30} fill={alpha(N, 0.7)}>
+				semaines
+			</text>
+			<g transform={`translate(${x(pos)} 98)`}>
+				<circle r={36} fill={LPI.pink} {...S} />
+				{lock > 0 ? (
+					<g opacity={cl(lock)} transform={`scale(${0.6 + 0.4 * cl(lock)})`}>
+						<rect x={-18} y={-6} width={36} height={28} rx={6} fill={N} />
+						<path d="M-11 -6 V-16 A11 11 0 0 1 11 -16 V-6" fill="none" stroke={N} strokeWidth={6} />
+					</g>
+				) : null}
+			</g>
+		</svg>
+	);
+};
+
+/* ───────────── prévention de l'escarre ───────────── */
+
+/** Matelas à air (repère 360 × 160) : les boudins se gonflent l'un après l'autre (pression alternée). */
+export const AirMattress: React.FC<{width?: number}> = ({width = 360}) => {
+	const frame = useCurrentFrame();
+	return (
+		<svg width={width} height={(width * 160) / 360} viewBox="0 0 360 160" style={{overflow: 'visible', display: 'block'}}>
+			<rect x={6} y={96} width={348} height={50} rx={16} fill={LPI.blue} {...S} strokeWidth={6} />
+			{Array.from({length: 8}, (_, i) => {
+				const up = 0.5 + 0.5 * Math.sin(frame / 6 + (i % 2) * Math.PI);
+				return <rect key={i} x={14 + i * 42} y={64 - 18 * up} width={38} height={46 + 18 * up} rx={19} fill={i % 2 ? LPI.sky : LPI.paper} stroke={N} strokeWidth={5} />;
+			})}
+		</svg>
+	);
+};
+
+/** Deux flèches qui tournent (changer de position), repère 200 × 200. */
+export const TurnArrows: React.FC<{size?: number}> = ({size = 200}) => {
+	const frame = useCurrentFrame();
+	return (
+		<svg width={size} height={size} viewBox="0 0 200 200" style={{overflow: 'visible', display: 'block'}}>
+			<g transform={`rotate(${frame * 3} 100 100)`}>
+				<path d="M40 100 A60 60 0 0 1 150 66" fill="none" stroke={LPI.blue} strokeWidth={18} strokeLinecap="round" />
+				<path d="M136 40 L162 70 L124 82 Z" fill={LPI.blue} stroke={N} strokeWidth={5} strokeLinejoin="round" />
+				<path d="M160 100 A60 60 0 0 1 50 134" fill="none" stroke={LPI.pink} strokeWidth={18} strokeLinecap="round" />
+				<path d="M64 160 L38 130 L76 118 Z" fill={LPI.pink} stroke={N} strokeWidth={5} strokeLinejoin="round" />
+			</g>
+		</svg>
+	);
+};
+
+/* ───────────── pied vu de dessus / de dessous ───────────── */
+
+/**
+ * Pied droit vu de dessus (`view` 'top') ou de dessous (`view` 'sole'), repère 260 × 400, orteils en haut. `sore` :
+ * petite plaie sous l'avant du pied ; `gaps` 0 → 1 : les espaces entre les orteils s'allument (on regarde aussi là).
+ */
+export const FootTop: React.FC<{width?: number; view?: 'top' | 'sole'; sore?: number; gaps?: number}> = ({width = 260, view = 'top', sore = 0, gaps = 0}) => {
+	const FOOT = 'M70 120 C60 70 90 56 130 58 C190 60 220 90 216 150 C212 220 196 270 196 320 C196 370 170 392 132 392 C92 392 72 366 76 320 C80 270 78 190 70 120 Z';
+	const toes: [number, number, number][] = [
+		[96, 52, 26],
+		[138, 38, 19],
+		[170, 42, 17],
+		[196, 56, 15],
+		[216, 76, 13],
+	];
+	return (
+		<svg width={width} height={(width * 400) / 260} viewBox="0 0 260 400" style={{overflow: 'visible', display: 'block'}}>
+			<path d={FOOT} fill={LPI.paper} {...S} />
+			<path d={FOOT} fill={alpha(LPI.pink, view === 'sole' ? 0.38 : 0.22)} />
+			{toes.map(([x, y, r], i) => (
+				<g key={i}>
+					<ellipse cx={x} cy={y} rx={r} ry={r * 1.25} fill={LPI.paper} {...S} strokeWidth={6} />
+					{view === 'top' ? <ellipse cx={x} cy={y - r * 0.45} rx={r * 0.55} ry={r * 0.45} fill={alpha(LPI.sky, 0.9)} stroke={N} strokeWidth={3} /> : <ellipse cx={x} cy={y} rx={r} ry={r * 1.25} fill={alpha(LPI.pink, 0.3)} />}
+				</g>
+			))}
+			{gaps > 0
+				? toes.slice(0, 4).map(([x, y, r], i) => {
+						const [x2, y2] = toes[i + 1];
+						return <circle key={i} cx={(x + x2) / 2 + 2} cy={(y + y2) / 2 + r} r={9} fill={LPI.pink} stroke={N} strokeWidth={3} opacity={cl(gaps * 4 - i)} />;
+					})
+				: null}
+			{view === 'top' ? <path d="M110 150 C130 170 150 230 140 320" fill="none" stroke={alpha(N, 0.2)} strokeWidth={5} strokeLinecap="round" /> : <path d="M100 330 C120 350 160 350 176 324" fill="none" stroke={alpha(N, 0.25)} strokeWidth={5} strokeLinecap="round" />}
+			{sore > 0 && view === 'sole' ? (
+				<g transform={`translate(150 130) scale(${sore})`}>
+					<ellipse rx={26} ry={20} fill={LPI.pink} stroke={N} strokeWidth={5} />
+					<ellipse rx={10} ry={8} fill={N} opacity={0.6} />
+				</g>
+			) : null}
 		</svg>
 	);
 };

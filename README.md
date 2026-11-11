@@ -41,6 +41,13 @@ pas de logiciel de montage, pas de banque d'images.
 | 28 | Les constantes de l'enfant (0 – 2 · 2 – 11 · 12 – 17 ans) : seulement ce qui change | `Constantes-Enfant` | [voix/28-constantes-enfant.script.json](voix/28-constantes-enfant.script.json) | [storyboard](docs/lpi/storyboard-constantes-enfant.md) |
 | 29 | Court info + humour : comment mettre un suppositoire (idée reçue « côté plat »), voix Laura | `Suppositoire` | [voix/29-suppositoire.script.json](voix/29-suppositoire.script.json) | [storyboard](docs/lpi/storyboard-suppositoire.md) |
 | 30 | Court info : pourquoi ne jamais retirer un objet planté (l'éclat de verre de la vaisselle), voix Laura, bruitages réels | `Objet-Plante` | [voix/30-objet-plante.script.json](voix/30-objet-plante.script.json) | [storyboard](docs/lpi/storyboard-objet-plante.md) |
+| 31 | Série courte « Les plaies » : superficielle ou profonde (genou râpé), voix Laura | `Plaie-Profondeur` | [voix/31-plaie-profondeur.script.json](voix/31-plaie-profondeur.script.json) | [storyboard](docs/lpi/storyboard-plaies-courtes.md) |
+| 32 | Série courte « Les plaies » : franche ou contuse (couteau ou portière), voix Laura | `Plaie-Contuse` | [voix/32-plaie-contuse.script.json](voix/32-plaie-contuse.script.json) | [storyboard](docs/lpi/storyboard-plaies-courtes.md) |
+| 33 | Série courte « Les plaies » : la piqûre (le clou), voix Laura | `Plaie-Piqure` | [voix/33-plaie-piqure.script.json](voix/33-plaie-piqure.script.json) | [storyboard](docs/lpi/storyboard-plaies-courtes.md) |
+| 34 | Série courte « Les plaies » : la morsure (le chat), voix Laura | `Plaie-Morsure` | [voix/34-plaie-morsure.script.json](voix/34-plaie-morsure.script.json) | [storyboard](docs/lpi/storyboard-plaies-courtes.md) |
+| 35 | Série courte « Les plaies » : aiguë ou chronique, voix Laura | `Plaie-Chronique` | [voix/35-plaie-chronique.script.json](voix/35-plaie-chronique.script.json) | [storyboard](docs/lpi/storyboard-plaies-courtes.md) |
+| 36 | Série courte « Les plaies » : l'escarre, voix Laura | `Escarre` | [voix/36-escarre.script.json](voix/36-escarre.script.json) | [storyboard](docs/lpi/storyboard-plaies-courtes.md) |
+| 37 | Série courte « Les plaies » : pied diabétique et ulcère de jambe, voix Laura | `Pied-Diabetique` | [voix/37-pied-diabetique.script.json](voix/37-pied-diabetique.script.json) | [storyboard](docs/lpi/storyboard-plaies-courtes.md) |
 
 ## Utilisation
 

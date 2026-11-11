@@ -1,33 +1,239 @@
-// Scènes de Plaie-Piqure (à écrire) : chaque animation part d'un mot, at(scène, mot) — voir `npm run cues -- plaie-piqure`.
+// « La plaie par piqûre » — série courte « Les plaies » (≈ 37 s, voix Laura, vrais bruitages).
+// Accroche « le clou » (situation vécue) : image 0 = « Juste un petit trou… rien de grave ? » + la planche et son clou ;
+// le pied descend et se plante au mot (impact, flash) ; loupe sur la plante du pied : un point minuscule. Puis la coupe
+// de peau : le clou entre (entrée minuscule) et va très loin, il ressort et laisse les microbes au fond, là où l'air
+// (bulles) n'arrive pas ; les 3 causes (objet pointu, insecte, aiguille pendant un soin = iatrogène) ; le bon réflexe
+// (laver, désinfecter, vaccin antitétanique à jour, consulter si c'est profond).
 import React from 'react';
-import {AbsoluteFill} from 'remotion';
-import {Head} from '../../brand/episode';
-import {LiveBackground} from '../../brand/motion3';
+import {AbsoluteFill, Easing, interpolate, useCurrentFrame} from 'remotion';
+import {Big, Blur, ease, fadeIn, Flash, Fly, Live, Note, PointTag, popAt, Posed, RowCard} from '../../brand/bold';
+import {AntisepticBottle} from '../../brand/sampling';
+import {Faucet} from '../../brand/hands';
+import {Mosquito, NailBoard, Stetho, VaxBook} from '../../brand/injury';
+import {Burst, Camera} from '../../brand/motion3';
+import {Syringe} from '../../brand/precautions';
+import {Sfx} from '../../brand/Sfx';
+import {alpha, FONT, LPI} from '../../brand/theme';
+import {clamp} from '../../brand/ui';
+import {depthY, LowerLeg, SKIN, SkinBlock, WoundTool} from '../../brand/wound';
+import {at} from './timeline';
 
-export const Hook: React.FC = () => (
-	<AbsoluteFill>
-		<LiveBackground />
-		<Head kicker="intro" kAt={0} title="À *faire*" tAt={4} />
-	</AbsoluteFill>
-);
+const N = LPI.navy;
+const ON_BLUE = {color: LPI.paper, accent: N};
 
-export const Dessous: React.FC = () => (
-	<AbsoluteFill>
-		<LiveBackground />
-		<Head kicker="dessous" kAt={0} title="À *faire*" tAt={4} />
-	</AbsoluteFill>
-);
+/* ═══════════════════════════════ ACCROCHE : LE CLOU ═══════════════════════════════ */
+const TIP = {x: 540, y: 1108};
+const LEG = 0.84;
 
-export const Piqure: React.FC = () => (
-	<AbsoluteFill>
-		<LiveBackground />
-		<Head kicker="piqure" kAt={0} title="À *faire*" tAt={4} />
-	</AbsoluteFill>
-);
+export const Hook: React.FC = () => {
+	const frame = useCurrentFrame();
+	const CLOU = at('intro', 'clou.');
+	const PETIT = at('intro', 'petit');
+	const TROU = at('intro', 'trou…');
+	const GRAVE = at('intro', 'grave');
+	const HIT = CLOU + 2;
+	const legX = TIP.x - (372 - 250) * LEG;
+	const legY = TIP.y - (662 - 350) * LEG;
+	return (
+		<AbsoluteFill>
+			<AbsoluteFill style={{background: LPI.paper}} />
+			<Camera punches={[HIT + 1, TROU + 1, GRAVE + 1]} shakes={[HIT + 2]} strength={0.045}>
+				<Big from={-60} text={'Juste un *petit* trou…\nrien de *grave* ?'} size={100} y={140} />
+				<Fly at={-60} x={540} y={1200} from="bottom">
+					<NailBoard width={600} />
+				</Fly>
+				{/* le pied descend… et se plante */}
+				<Blur on={frame >= 4 && frame <= HIT + 16}>
+					<Posed
+						pose={(f) => {
+							const down = interpolate(f, [6, HIT], [0, 1], {...clamp, easing: Easing.in(Easing.quad)});
+							const jump = interpolate(f, [HIT + 1, HIT + 12], [0, 1], {...clamp, easing: Easing.out(Easing.cubic)});
+							return {x: legX - 60 * jump, y: legY - 1400 * (1 - down) - 120 * jump, rot: -8 * jump, s: LEG};
+						}}
+					>
+						<Live render={(f) => <LowerLeg width={500} footSore={fadeIn(f, HIT, 3) * 0.5} />} />
+					</Posed>
+				</Blur>
+				<Burst at={HIT} x={TIP.x} y={TIP.y - 10} r={240} n={14} />
+				{/* la loupe : un point minuscule */}
+				<Live
+					render={(f) =>
+						f >= PETIT - 4 ? (
+							<div style={{position: 'absolute', left: 800 - 150, top: 640 - 150, transform: `scale(${popAt(f, PETIT - 4) * (1 + 0.04 * Math.sin(f / 5))})`}}>
+								<div style={{position: 'relative', width: 300, height: 300, borderRadius: 150, overflow: 'hidden', background: LPI.paper, border: `12px solid ${N}`, boxSizing: 'border-box'}}>
+									<div style={{position: 'absolute', inset: 0, background: alpha(LPI.pink, 0.3)}} />
+									{Array.from({length: 6}, (_, i) => (
+										<div key={i} style={{position: 'absolute', left: 40 + ((i * 53) % 220), top: 50 + ((i * 71) % 200), width: 26, height: 6, borderRadius: 3, background: alpha(N, 0.15)}} />
+									))}
+									<div style={{position: 'absolute', left: 138 - 9, top: 138 - 9, width: 18, height: 18, borderRadius: 9, background: LPI.pink, border: `4px solid ${N}`, transform: `scale(${popAt(f, TROU)})`}} />
+								</div>
+								<div style={{position: 'absolute', left: 250, top: 250, width: 130, height: 36, borderRadius: 18, background: LPI.blue, border: `6px solid ${N}`, transform: 'rotate(45deg)', transformOrigin: 'left center'}} />
+							</div>
+						) : null
+					}
+				/>
+			</Camera>
+			<Flash at={HIT} max={0.35} />
+			<Sfx name="whoosh" at={HIT - 10} volume={0.08} />
+			<Sfx name="impact" at={HIT} volume={0.16} />
+			<Sfx name="buzz" at={HIT + 1} volume={0.06} dur={12} />
+			<Sfx name="pop" at={PETIT - 4} volume={0.08} />
+			<Sfx name="ding" at={TROU} volume={0.06} />
+		</AbsoluteFill>
+	);
+};
 
-export const Fin: React.FC = () => (
-	<AbsoluteFill>
-		<LiveBackground />
-		<Head kicker="fin" kAt={0} title="À *faire*" tAt={4} />
-	</AbsoluteFill>
-);
+/* ═══════════════════════════════ SOUS LA PEAU ═══════════════════════════════ */
+const SK = {x: 40, y: 690, w: 1000};
+const k = SK.w / SKIN.w;
+const NAIL = 1.6; // échelle du clou (repère 200 : pointe à y 192, centre à y 100)
+
+export const Dessous: React.FC = () => {
+	const frame = useCurrentFrame();
+	const PEAU = at('dessous', 'peau');
+	const MINUSC = at('dessous', 'minuscule,');
+	const MAIS = at('dessous', 'mais');
+	const LOIN = at('dessous', 'loin.');
+	const EMMENE = at('dessous', 'emmené');
+	const MICROBES = at('dessous', 'microbes');
+	const FOND = at('dessous', 'fond,');
+	const AIR = at('dessous', "l'air");
+	const depthAt = (f: number) => interpolate(f, [PEAU - 4, MINUSC, MAIS, LOIN + 4], [0, 1.1, 1.1, 4.3], ease);
+	const surface = SK.y + SKIN.top * k;
+	return (
+		<AbsoluteFill>
+			<AbsoluteFill style={{background: alpha(LPI.pink, 0.35)}} />
+			<Camera punches={[PEAU + 1, MINUSC + 1, LOIN + 1, MICROBES + 1, AIR + 1]} strength={0.03}>
+				<Big from={-2} to={MAIS - 6} text={'Une entrée\n*minuscule*…'} size={124} />
+				<Big from={MAIS - 4} to={EMMENE - 6} text={'…mais *très*\n*profond* !'} size={124} />
+				<Big from={EMMENE - 4} text={'Des *microbes*\ntout au fond'} size={124} />
+				<Fly at={-4} x={SK.x + SK.w / 2} y={SK.y + (SK.w * 500) / 900 / 2} from="bottom" dist={1100}>
+					<Live render={(f) => <SkinBlock width={SK.w} shape="pin" open={1.4} depth={depthAt(f)} germs={fadeIn(f, EMMENE - 8, 8)} microbes={interpolate(f, [MICROBES - 4, FOND + 4], [0, 1], ease)} />} />
+				</Fly>
+				{/* le clou entre, puis ressort */}
+				<Blur on={frame >= PEAU - 6 && frame <= EMMENE + 10}>
+					<Posed
+						pose={(f) => {
+							const tip = SK.y + depthY(depthAt(f)) * k;
+							const out = interpolate(f, [EMMENE - 10, EMMENE + 4], [0, 1], {...clamp, easing: Easing.in(Easing.cubic)});
+							if (out >= 1) return null;
+							return {x: SK.x + SKIN.cx * k, y: tip - 92 * NAIL - 1100 * out - 400 * (1 - fadeIn(f, PEAU - 8, 6))};
+						}}
+					>
+						<WoundTool kind="nail" size={200 * NAIL} />
+					</Posed>
+				</Blur>
+				{/* l'air reste en surface */}
+				<Live
+					render={(f) =>
+						f >= AIR - 12
+							? Array.from({length: 6}, (_, i) => {
+									const t = (f - (AIR - 12) - i * 3) / 14;
+									if (t < 0) return null;
+									const y = Math.min(surface - 34, 420 + t * 220) - Math.abs(Math.sin(f / 6 + i)) * 8;
+									return (
+										<div key={i} style={{position: 'absolute', left: 120 + i * 150, top: y - 28, width: 56, height: 56, borderRadius: 28, background: alpha(LPI.sky, 0.95), border: `4px solid ${N}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FONT.title, fontWeight: 900, fontSize: 22, color: N}}>
+											air
+										</div>
+									);
+								})
+							: null
+					}
+				/>
+				<PointTag at={MINUSC - 4} to={MAIS - 6} x={780} y={1300} px={SK.x + SKIN.cx * k + 12} py={surface} size={44}>
+					entrée minuscule
+				</PointTag>
+				<PointTag at={FOND - 4} to={AIR - 8} x={760} y={1300} px={SK.x + SKIN.cx * k} py={SK.y + depthY(4.1) * k} size={44}>
+					les microbes, au fond
+				</PointTag>
+				<Note at={AIR + 4} y={1290} size={46}>
+					au fond, pas d&apos;air : les microbes s&apos;y plaisent
+				</Note>
+			</Camera>
+			<Sfx name="impact" at={PEAU} volume={0.08} />
+			<Sfx name="pop" at={MINUSC - 4} volume={0.07} />
+			<Sfx name="whoosh" at={MAIS} volume={0.07} />
+			<Sfx name="impact" at={LOIN} volume={0.1} />
+			<Sfx name="whoosh" at={EMMENE - 10} volume={0.08} />
+			<Sfx name="pop" at={FOND - 4} volume={0.07} />
+			<Sfx name="pop" at={AIR - 10} volume={0.06} />
+		</AbsoluteFill>
+	);
+};
+
+/* ═══════════════════════════════ LES PIQÛRES ═══════════════════════════════ */
+export const Piqure: React.FC = () => {
+	const frame = useCurrentFrame();
+	const PIQURE = at('piqure', 'piqûre');
+	const OBJET = at('piqure', 'objet');
+	const INSECTE = at('piqure', 'insecte…');
+	const AIGUILLE = at('piqure', 'aiguille');
+	const SOIN = at('piqure', 'soin.');
+	const IATRO = at('piqure', 'iatrogène');
+	const CAUSEE = at('piqure', 'causée');
+	const dim = fadeIn(frame, IATRO - 4, 8);
+	return (
+		<AbsoluteFill>
+			<AbsoluteFill style={{background: LPI.sky}} />
+			<Camera punches={[PIQURE + 1, OBJET + 1, INSECTE + 1, AIGUILLE + 1, IATRO + 1]} strength={0.03}>
+				<Big from={-2} to={IATRO - 6} text={'Plaie par\n*piqûre*'} size={128} />
+				<Big from={IATRO - 4} text={'*Iatrogène*'} size={136} />
+				<RowCard at={OBJET - 4} y={440} h={280} art={300} title="Un objet pointu" dim={dim} size={58}>
+					<NailBoard width={280} />
+				</RowCard>
+				<RowCard at={INSECTE - 4} y={750} h={280} art={300} title="Un insecte" from="left" dim={dim} size={58}>
+					<Mosquito size={220} />
+				</RowCard>
+				<RowCard at={AIGUILLE - 4} y={1060} h={300} art={300} title="Une aiguille pendant un soin" sub="= iatrogène : causée par un soin" subAt={CAUSEE - 4} badge={frame >= IATRO ? '!' : undefined} size={56}>
+					<div style={{transform: 'rotate(-30deg)'}}>
+						<Syringe width={290} />
+					</div>
+				</RowCard>
+			</Camera>
+			<Sfx name="pop" at={OBJET - 4} volume={0.08} />
+			<Sfx name="pop" at={INSECTE - 4} volume={0.08} />
+			<Sfx name="pop" at={AIGUILLE - 4} volume={0.08} />
+			<Sfx name="ding" at={SOIN} volume={0.06} />
+			<Sfx name="stamp" at={IATRO} volume={0.1} />
+		</AbsoluteFill>
+	);
+};
+
+/* ═══════════════════════════════ LE BON RÉFLEXE ═══════════════════════════════ */
+export const Fin: React.FC = () => {
+	const LAVE = at('fin', 'lave,');
+	const DESINF = at('fin', 'désinfecte…');
+	const VACCIN = at('fin', 'vaccin');
+	const TETANOS = at('fin', 'tétanos');
+	const JOUR = at('fin', 'jour');
+	const TROU = at('fin', 'trou');
+	const PROFOND = at('fin', 'profond,');
+	const CONSULTE = at('fin', 'consulte.');
+	return (
+		<AbsoluteFill>
+			<AbsoluteFill style={{background: LPI.blue}} />
+			<Camera punches={[LAVE + 1, DESINF + 1, VACCIN + 1, JOUR + 1, CONSULTE + 1]} strength={0.03}>
+				<Big from={-2} text={'Le bon *réflexe*'} size={130} {...ON_BLUE} />
+				<RowCard at={LAVE - 4} y={400} h={230} art={220} badge={1} title="On lave" size={58}>
+					<Live render={(f) => <Faucet width={190} flow={fadeIn(f, LAVE, 6)} />} />
+				</RowCard>
+				<RowCard at={DESINF - 4} y={650} h={230} art={220} badge={2} title="On désinfecte" from="left" size={58}>
+					<AntisepticBottle size={150} />
+				</RowCard>
+				<RowCard at={VACCIN - 4} y={900} h={250} art={220} badge={3} title="Vaccin contre le tétanos" sub="bien à jour ?" subAt={JOUR - 4} size={54}>
+					<Live render={(f) => <VaxBook size={200} check={fadeIn(f, JOUR, 8)} />} />
+				</RowCard>
+				<RowCard at={TROU - 4} y={1170} h={250} art={220} badge={4} title="Trou profond ?" sub="on consulte" subAt={CONSULTE - 4} from="left" badgeTone={LPI.sky} size={58}>
+					<Stetho size={170} />
+				</RowCard>
+			</Camera>
+			<Flash at={TETANOS} max={0.15} color={LPI.paper} />
+			<Sfx name="tap" at={LAVE - 2} volume={0.15} dur={30} />
+			<Sfx name="puff" at={DESINF + 2} volume={0.3} />
+			<Sfx name="pop" at={VACCIN - 4} volume={0.08} />
+			<Sfx name="ding" at={JOUR} volume={0.08} />
+			<Sfx name="pop" at={TROU - 4} volume={0.08} />
+			<Sfx name="pop" at={PROFOND} volume={0.05} />
+		</AbsoluteFill>
+	);
+};

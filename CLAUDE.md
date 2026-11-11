@@ -257,6 +257,18 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   contourner) → La Sonothèque (`npm run sfx:import`) : `dishes`, `tap`, `glass`, `heart`, `dtmf-1`, `dtmf-5`, `ring`.
   « Real SFX » introuvable ; `@remotion/sfx` = sons de mèmes seulement.
 
+- **Série courte « Les plaies »** (7 vidéos de 33 à 37 s, n° 31 à 37, storyboard `docs/lpi/storyboard-plaies-courtes.md`) :
+  demandé « plusieurs vidéos prenantes, courtes et virales », chacune ouverte par une **situation vécue** (genou râpé,
+  couteau ou portière, clou, chat, deux plaies le même jour, quelques heures allongé, trou sous le pied), tout animé et
+  illustré. **Ne pas nommer les parties** (ni « partie 1 », ni carte de série) : chaque vidéo tient seule. Même gabarit
+  que `Objet-Plante` (accroche · 2 – 3 notions · chute, `progress={false}`, `{minTotal: 0}`). Briques
+  `src/brand/injury.tsx` : `Bike`, `Stone`, `Knee` (genou qui se râpe, guérit), `Meter` (jauge), `DeepBits` (vaisseau,
+  nerf, tendon dans `SkinBlock`), `DepthRuler`, `DayChip`, `CarDoor`, `WoundTop` (plaie vue de dessus franche / contuse,
+  sutures, écrasement, nécrose, `heal`), `NailBoard`, `Mosquito`, `VaxBook`, `Stetho`, `Cat`, `Dog`, `BittenHand`
+  (traces de crocs, main qui gonfle), `WeeksBar` (frise des semaines, cadenas), `AirMattress`, `TurnArrows`, `FootTop`.
+  Bruitages ajoutés : `bike`, `skid`, `fall`, `car-door`, `chop`, `meow`, `hiss`. Attention : `at()` ignore les accents,
+  « là » = « la » (prendre le mot suivant).
+
 ## Voix ElevenLabs « Laura » (choisie par le propriétaire pour les nouvelles vidéos)
 
 - Connecteur ElevenLabs : voix `Laura` (`MmafIMKg28Wr0yMh8CEB`), modèle `eleven_v4`, flow `6O4tHaBowSG52722wkdC`.

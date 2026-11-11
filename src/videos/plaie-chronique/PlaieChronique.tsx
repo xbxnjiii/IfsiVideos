@@ -1,4 +1,5 @@
-// Plaie-Chronique : (décrire l'accroche et le déroulé).
+// « Plaie aiguë ou chronique ? » — série courte « Les plaies » (≈ 38 s, sans barre de progression), accroche « deux
+// plaies, le même jour ». Storyboard : docs/lpi/storyboard-plaies-courtes.md.
 import React from 'react';
 import {EndCard, Episode, EpisodeTransition} from '../../brand/episode';
 import {wave} from '../../brand/motion3';
@@ -14,13 +15,13 @@ const SCENES: Record<SceneId, React.FC> = {intro: Hook, aigue: Aigue, chronique:
 
 /** Transition VERS chaque scène : jamais deux fois la même d'affilée ; la mascotte la porte (mascot.ts). */
 const TRANSITIONS: Record<Exclude<SceneId, 'intro'>, EpisodeTransition> = {
-	aigue: {p: zoomInto({x: 540, y: 700}), sfx: 'whoosh'},
+	aigue: {p: zoomInto({x: 290, y: 780, color: LPI.sky}), sfx: 'whoosh'}, // on plonge dans la plaie 1
 	chronique: {p: whip('left'), sfx: 'whoosh'},
-	exemples: {p: wave({x: 540, y: 760}), sfx: 'whoosh'},
+	exemples: {p: wave({x: 540, y: 1010}), sfx: 'whoosh'},
 	fin: {p: runWipe(), sfx: 'run'},
 	end: {p: zoomInto({x: 540, y: 1260, color: LPI.sky}), sfx: 'whoosh'},
 };
 
 export const PlaieChronique: React.FC<PlaieChroniqueProps> = ({voice, sfx}) => (
-	<Episode tl={TL} ids={SCENE_IDS} scenes={SCENES} transitions={TRANSITIONS} mascot={MASCOT} voice={voice ? 'voix/plaie-chronique/voix.wav' : null} sfx={sfx} />
+	<Episode tl={TL} ids={SCENE_IDS} scenes={SCENES} transitions={TRANSITIONS} mascot={MASCOT} progress={false} voice={voice ? 'voix/plaie-chronique/voix.wav' : null} sfx={sfx} />
 );
