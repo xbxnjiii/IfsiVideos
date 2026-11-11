@@ -611,3 +611,137 @@ export const FootTop: React.FC<{width?: number; view?: 'top' | 'sole'; sore?: nu
 		</svg>
 	);
 };
+
+/* ───────────── le garçon à vélo ───────────── */
+
+const SKIN_FILL = LPI.paper;
+const limb = (pts: [number, number][], w: number, fill: string, key?: string) => (
+	<g key={key}>
+		<polyline points={pts.map((p) => p.join(',')).join(' ')} fill="none" stroke={N} strokeWidth={w + 12} strokeLinecap="round" strokeLinejoin="round" />
+		<polyline points={pts.map((p) => p.join(',')).join(' ')} fill="none" stroke={fill} strokeWidth={w} strokeLinecap="round" strokeLinejoin="round" />
+	</g>
+);
+/** Genou par cinématique inverse (cuisse et jambe de longueur L), plié vers l'avant (x croissant). */
+const kneeIK = (h: [number, number], p: [number, number], L = 118): [number, number] => {
+	const dx = p[0] - h[0];
+	const dy = p[1] - h[1];
+	const d = Math.min(Math.hypot(dx, dy), 2 * L - 1);
+	const a = d / 2;
+	const hh = Math.sqrt(Math.max(0, L * L - a * a));
+	const bx = h[0] + (a * dx) / d;
+	const by = h[1] + (a * dy) / d;
+	const px = -dy / d;
+	const py = dx / d;
+	const k1: [number, number] = [bx + hh * px, by + hh * py];
+	const k2: [number, number] = [bx - hh * px, by - hh * py];
+	return k1[0] > k2[0] ? k1 : k2;
+};
+const Head: React.FC<{x: number; y: number; cry?: number; rot?: number}> = ({x, y, cry = 0, rot = 0}) => {
+	const frame = useCurrentFrame();
+	return (
+		<g transform={`translate(${x} ${y}) rotate(${rot})`}>
+			<circle r={46} fill={SKIN_FILL} stroke={N} strokeWidth={6} />
+			<circle r={46} fill={alpha(LPI.pink, 0.22)} />
+			{/* cheveux */}
+			<path d="M-44 -6 C-50 -50 10 -66 40 -30 C30 -40 10 -42 -4 -34 C-14 -22 -30 -18 -44 -6 Z" fill={N} />
+			<circle cx={-26} cy={8} r={10} fill={SKIN_FILL} stroke={N} strokeWidth={4} />
+			{/* œil, bouche */}
+			{cry > 0.5 ? <path d="M14 -6 l14 6 M14 6 l14 -6" stroke={N} strokeWidth={5} strokeLinecap="round" /> : <circle cx={22} cy={-2} r={5.5} fill={N} />}
+			{cry > 0.5 ? <ellipse cx={26} cy={24} rx={10} ry={8} fill={N} /> : <path d="M16 22 Q26 30 36 20" fill="none" stroke={N} strokeWidth={5} strokeLinecap="round" />}
+			<circle cx={10} cy={14} r={7} fill={alpha(LPI.pink, 0.6)} />
+			{cry > 0
+				? [0, 1].map((i) => {
+						const t = ((frame * 0.06 + i * 0.5) % 1) as number;
+						return <path key={i} d="M0 0 q6 10 0 16 q-6 -6 0 -16 Z" transform={`translate(${30 + i * 6} ${4 + t * 40})`} fill={LPI.sky} stroke={N} strokeWidth={2.5} opacity={cry * (1 - t)} />;
+					})
+				: null}
+		</g>
+	);
+};
+
+/**
+ * Garçon (vue de profil, vers la droite) dans le repère du vélo `Bike` (520 × 330, sol à y 326).
+ * `pose` : 'ride' (sur le vélo : pédale avec `spin`, à poser par-dessus `Bike`), 'fly' (éjecté, bras en avant),
+ * 'sit' (assis par terre, se tient le genou écorché ; genou à x 330, y 190). `scrape`, `cry`, `pain` pour 'sit'.
+ */
+export const Boy: React.FC<{width?: number; pose: 'ride' | 'fly' | 'sit'; spin?: number; scrape?: number; cry?: number; pain?: number}> = ({width = 520, pose, spin = 0, scrape = 0, cry = 0, pain = 0}) => {
+	const frame = useCurrentFrame();
+	const SHIRT = LPI.sky;
+	const SHORTS = LPI.blue;
+	let body: React.ReactNode;
+	if (pose === 'sit') {
+		const H: [number, number] = [214, 292];
+		const K: [number, number] = [330, 188];
+		const F: [number, number] = [424, 300];
+		const S2: [number, number] = [236, 156];
+		body = (
+			<>
+				{/* jambe du fond, allongée */}
+				{limb([H, [330, 304], [440, 312]], 30, alpha(LPI.pink, 0.45))}
+				<ellipse cx={458} cy={312} rx={26} ry={13} fill={N} />
+				{/* torse */}
+				{limb([H, S2], 70, SHIRT)}
+				{/* jambe : cuisse (short) puis jambe */}
+				{limb([H, [272, 240]], 46, SHORTS)}
+				{limb([[268, 244], K, F], 30, SKIN_FILL)}
+				<ellipse cx={F[0] + 16} cy={F[1] + 6} rx={30} ry={15} fill={N} />
+				{/* éraflure sur le genou */}
+				{scrape > 0 ? (
+					<g transform={`translate(${K[0] + 4} ${K[1] - 4}) scale(${scrape})`}>
+						<ellipse rx={24} ry={18} fill={LPI.pink} stroke={N} strokeWidth={3} />
+						<path d="M-14 -6 L12 -10 M-16 4 L14 0 M-10 12 L10 9" stroke={alpha(N, 0.5)} strokeWidth={3} strokeLinecap="round" />
+					</g>
+				) : null}
+				{/* bras : les mains tiennent la jambe sous le genou */}
+				{limb([S2, [292, 226], [356, 236]], 24, SKIN_FILL)}
+				<circle cx={360} cy={236} r={15} fill={SKIN_FILL} stroke={N} strokeWidth={5} />
+				<Head x={250} y={98} cry={cry} rot={8} />
+				{pain > 0
+					? [0, 1, 2].map((i) => {
+							const f = 0.5 + 0.5 * Math.sin(frame * 0.9 + i * 2);
+							const a = (-80 + i * 50) * (Math.PI / 180);
+							const x = K[0] + 54 * Math.cos(a);
+							const y = K[1] + 54 * Math.sin(a);
+							return <path key={i} d={`M${x} ${y} l${10 * Math.cos(a)} ${10 * Math.sin(a) - 12} l8 10 l${12 * Math.cos(a)} ${12 * Math.sin(a) - 12}`} fill="none" stroke={LPI.pink} strokeWidth={7} strokeLinecap="round" strokeLinejoin="round" opacity={pain * (0.4 + 0.6 * f)} />;
+						})
+					: null}
+			</>
+		);
+	} else {
+		const th = ((pose === 'ride' ? spin * 0.6 : 40) * Math.PI) / 180;
+		const H: [number, number] = [196, 64];
+		const S2: [number, number] = [288, -34];
+		const crank = (s: number): [number, number] => [250 + s * 40 * Math.sin(th), 240 - s * 40 * Math.cos(th)];
+		const Pn = crank(1);
+		const Pf = crank(-1);
+		const Kn = kneeIK(H, Pn);
+		const Kf = kneeIK(H, Pf);
+		const hand: [number, number] = pose === 'ride' ? [400, 54] : [430, -60];
+		const elbow: [number, number] = pose === 'ride' ? [352, 8] : [362, -60];
+		body = (
+			<>
+				{/* jambe et bras du fond */}
+				{limb([Kf, Pf], 26, alpha(LPI.pink, 0.45))}
+				{limb([H, Kf], 40, alpha(SHORTS, 0.7))}
+				<ellipse cx={Pf[0] + 10} cy={Pf[1] + 4} rx={24} ry={12} fill={N} />
+				{limb([S2, [elbow[0] - 10, elbow[1] + 10], [hand[0] - 14, hand[1] + 6]], 20, alpha(LPI.pink, 0.45))}
+				{/* torse */}
+				{limb([H, S2], 66, SHIRT)}
+				{/* jambe du devant */}
+				{limb([Kn, Pn], 28, SKIN_FILL)}
+				{limb([H, [H[0] + (Kn[0] - H[0]) * 0.75, H[1] + (Kn[1] - H[1]) * 0.75]], 44, SHORTS)}
+				<circle cx={Kn[0]} cy={Kn[1]} r={15} fill={SKIN_FILL} stroke={N} strokeWidth={5} />
+				<ellipse cx={Pn[0] + 10} cy={Pn[1] + 4} rx={26} ry={13} fill={N} />
+				{/* bras du devant */}
+				{limb([S2, elbow, hand], 22, SKIN_FILL)}
+				<circle cx={hand[0]} cy={hand[1]} r={13} fill={SKIN_FILL} stroke={N} strokeWidth={5} />
+				<Head x={322} y={-96} cry={pose === 'fly' ? 1 : 0} />
+			</>
+		);
+	}
+	return (
+		<svg width={width} height={(width * 330) / 520} viewBox="0 0 520 330" style={{overflow: 'visible', display: 'block'}}>
+			{body}
+		</svg>
+	);
+};

@@ -1,6 +1,7 @@
 // « Plaie superficielle ou profonde ? » — série courte « Les plaies » (≈ 35 s, voix Laura, vrais bruitages).
-// Accroche « le genou râpé » (situation vécue) : image 0 = « Genou râpé… grave ? » ; le vélo roule, tape un caillou et
-// se renverse ; gros plan du genou qui se râpe au mot, ça pique (jauge DOULEUR au max)… et pourtant la jauge GRAVITÉ
+// Accroche « le genou râpé » (situation vécue) : image 0 = « Genou râpé… grave ? » + le garçon à vélo ; il tape un
+// caillou, vole par-dessus le guidon et tombe, assis, il se tient le genou et pleure ; la caméra plonge sur son genou ;
+// gros plan du genou qui se râpe au mot, ça pique (jauge DOULEUR au max)… et pourtant la jauge GRAVITÉ
 // reste basse : LA MOINS GRAVE. Puis la coupe de peau : l'écorchure s'arrête à l'épiderme / au derme (les nerfs sont
 // tout près : ça pique), elle cicatrise en quelques jours ; la plaie profonde passe sous le derme, touche graisse,
 // muscle, tendon, nerf, vaisseau (qui saigne), points de suture ; chute : « ce n'est pas la douleur qui compte : c'est
@@ -8,7 +9,7 @@
 import React from 'react';
 import {AbsoluteFill, Easing, interpolate, useCurrentFrame} from 'remotion';
 import {Big, Blur, ease, fadeIn, Flash, Fly, Live, Note, PointTag, Posed} from '../../brand/bold';
-import {Bike, DayChip, DeepBits, DepthRuler, Knee, Meter, Stone} from '../../brand/injury';
+import {Bike, Boy, DayChip, DeepBits, DepthRuler, Knee, Meter, Stone} from '../../brand/injury';
 import {Stamp, Strike} from '../../brand/kit';
 import {Burst, Camera} from '../../brand/motion3';
 import {Sfx} from '../../brand/Sfx';
@@ -20,7 +21,15 @@ import {at} from './timeline';
 const ON_BLUE = {color: LPI.paper, accent: LPI.navy};
 
 /* ═══════════════════════════════ ACCROCHE : LE GENOU RÂPÉ ═══════════════════════════════ */
-const STONE = {x: 660, y: 1126};
+const STONE = {x: 820, y: 1126};
+/** Vélo et garçon dans le repère 520 × 330 agrandi à BW px ; centre posé à y CY (sol à y 1150). */
+const BW = 700;
+const BS = BW / 520;
+const CY = 1150 - 326 * BS + (330 * BS) / 2;
+const RIDE_X = STONE.x - 55 - (506 - 260) * BS; // la roue avant touche le caillou
+/** Le garçon assis après la chute et son genou à l'écran. */
+const SIT = {x: 520, y: CY};
+const KNEE = {x: SIT.x + (330 - 260) * BS, y: SIT.y + (188 - 165) * BS};
 
 export const Hook: React.FC = () => {
 	const frame = useCurrentFrame();
@@ -33,36 +42,72 @@ export const Hook: React.FC = () => {
 	const MOINS = at('intro', 'moins');
 	const GRAVE = at('intro', 'grave.');
 	const HIT = VELO + 6;
+	const LAND = HIT + 12;
 	return (
 		<AbsoluteFill>
 			<AbsoluteFill style={{background: LPI.paper}} />
 			<Camera punches={[HIT + 1, RAPE + 1, PIQUE + 1, ENORM + 1, GRAVE + 1]} shakes={[HIT + 2, RAPE + 3, ENORM + 2]} strength={0.04}>
-				{/* le sol */}
-				<Live render={(f) => (f < GENOU + 4 ? <div style={{position: 'absolute', left: 0, right: 0, top: 1150, height: 10, borderRadius: 5, background: alpha(LPI.navy, 0.25), opacity: 1 - fadeIn(f, GENOU - 6, 8)}} /> : null)} />
-				<Fly at={-60} out={GENOU - 8} x={STONE.x} y={STONE.y} to="bottom">
-					<Stone size={130} />
-				</Fly>
-				{/* le vélo roule, tape le caillou et se renverse */}
-				<Blur on={frame <= GENOU + 4}>
-					<Posed
-						pose={(f) => {
-							if (f > GENOU + 2) return null;
-							if (f < HIT) {
-								const k = interpolate(f, [0, HIT], [0, 1], clamp);
-								return {x: 40 + (330 - 40) * k, y: 987, rot: 0};
-							}
-							const t = interpolate(f, [HIT, GENOU + 2], [0, 1], {...clamp, easing: Easing.out(Easing.quad)});
-							return {x: 330 + 420 * t, y: 987 - 260 * Math.sin(t * Math.PI * 0.8) + 300 * t * t, rot: 170 * t, o: 1 - t * 0.3};
-						}}
-					>
-						<Live render={(f) => <Bike width={520} spin={f * 14} />} />
-					</Posed>
-				</Blur>
-				<Burst at={HIT} x={STONE.x - 40} y={STONE.y - 30} r={200} n={12} />
+				{/* la scène : le garçon roule, tape le caillou, vole et tombe ; puis la caméra plonge sur son genou */}
+				<Live
+					render={(f) => {
+						const zoom = interpolate(f, [GENOU - 2, RAPE - 4], [1, 3.4], {...clamp, easing: Easing.in(Easing.cubic)});
+						const fade = 1 - fadeIn(f, RAPE - 8, 6);
+						if (fade <= 0) return null;
+						return (
+							<AbsoluteFill style={{transform: `scale(${zoom})`, transformOrigin: `${KNEE.x}px ${KNEE.y}px`, opacity: fade}}>
+								<div style={{position: 'absolute', left: 0, right: 0, top: 1150, height: 10, borderRadius: 5, background: alpha(LPI.navy, 0.25)}} />
+								{/* le caillou, projeté au choc */}
+								<div style={{position: 'absolute', left: STONE.x - 65 + 360 * fadeIn(f, HIT, 14), top: STONE.y - 42 - 160 * Math.sin(Math.PI * fadeIn(f, HIT, 14)), opacity: 1 - fadeIn(f, HIT + 8, 6), transform: `rotate(${f >= HIT ? (f - HIT) * 30 : 0}deg)`}}>
+									<Stone size={130} />
+								</div>
+								<Blur on={f >= HIT - 4 && f <= HIT + 24}>
+									{/* le vélo : avec le garçon jusqu'au choc, puis il se renverse seul */}
+									<Posed
+										pose={(g) => {
+											if (g < HIT) return {x: 180 + (RIDE_X - 180) * interpolate(g, [0, HIT], [0, 1], clamp), y: CY};
+											const t = interpolate(g, [HIT, HIT + 22], [0, 1], {...clamp, easing: Easing.out(Easing.quad)});
+											return {x: RIDE_X + 160 * t, y: CY - 140 * Math.sin(t * Math.PI), rot: -150 * t, o: 1 - fadeIn(g, HIT + 18, 6)};
+										}}
+									>
+										<div style={{position: 'relative'}}>
+											<Live render={(g) => <Bike width={BW} spin={Math.min(g, HIT) * 14} />} />
+											<Live render={(g) => (g < HIT ? <div style={{position: 'absolute', left: 0, top: 0}}><Boy width={BW} pose="ride" spin={g * 14} /></div> : null)} />
+										</div>
+									</Posed>
+									{/* le garçon vole par-dessus le guidon… */}
+									<Posed
+										pose={(g) => {
+											if (g < HIT || g >= LAND) return null;
+											const t = interpolate(g, [HIT, LAND], [0, 1], clamp);
+											return {x: RIDE_X + (SIT.x - RIDE_X) * t, y: CY - 260 * Math.sin(t * Math.PI), rot: 70 * t};
+										}}
+									>
+										<Boy width={BW} pose="fly" />
+									</Posed>
+								</Blur>
+								{/* … et tombe, assis, il se tient le genou */}
+								{f >= LAND ? (
+									<div style={{position: 'absolute', left: SIT.x - BW / 2, top: SIT.y - (330 * BS) / 2, transform: `translateY(${-14 * Math.max(0, Math.sin(((f - LAND) / 8) * Math.PI)) * (f < LAND + 8 ? 1 : 0)}px)`}}>
+										<Boy width={BW} pose="sit" scrape={fadeIn(f, LAND, 4)} cry={fadeIn(f, LAND + 2, 4)} pain={fadeIn(f, LAND + 4, 6)} />
+									</div>
+								) : null}
+							</AbsoluteFill>
+						);
+					}}
+				/>
+				<Burst at={HIT} x={STONE.x - 50} y={STONE.y - 30} r={200} n={12} />
+				<Burst at={LAND} x={SIT.x} y={1140} r={220} n={12} />
 				{/* gros plan : le genou se râpe */}
-				<Fly at={GENOU - 4} x={540} y={900} from="bottom" dist={1200} move={[{at: ENORM - 8, y: 740, s: 0.72, dur: 10}]}>
+				<Posed
+					pose={(f) => {
+						if (f < RAPE - 8) return null;
+						const inK = interpolate(f, [RAPE - 8, RAPE - 1], [0, 1], ease);
+						const mv = interpolate(f, [ENORM - 8, ENORM + 2], [0, 1], ease);
+						return {x: 540, y: 900 - 160 * mv, s: (0.5 + 0.5 * inK) * (1 - 0.28 * mv), o: inK};
+					}}
+				>
 					<Live render={(f) => <Knee width={560} scrape={interpolate(f, [RAPE - 6, RAPE + 8], [0, 1], clamp)} blood={fadeIn(f, RAPE + 6, 14)} pain={fadeIn(f, PIQUE - 2, 6)} />} />
-				</Fly>
+				</Posed>
 				{/* les graviers frottent */}
 				<Blur on={frame >= RAPE - 10 && frame <= RAPE + 12}>
 					<Posed pose={(f) => (f < RAPE - 8 || f > RAPE + 10 ? null : {x: interpolate(f, [RAPE - 8, RAPE + 10], [300, 820], clamp), y: 880, o: 1 - fadeIn(f, RAPE + 4, 6)})}>
@@ -80,11 +125,12 @@ export const Hook: React.FC = () => {
 				<Big from={-60} to={POURTANT - 6} text={'Genou *râpé*…\nc’est *grave* ?'} size={124} y={150} />
 				<Big from={POURTANT - 4} text={'Et *pourtant*…'} size={130} y={170} />
 			</Camera>
-			<Flash at={HIT} max={0.25} />
+			<Flash at={LAND} max={0.25} />
 			<Flash at={ENORM} max={0.3} />
 			<Sfx name="bike" at={0} volume={0.3} />
 			<Sfx name="skid" at={HIT - 12} volume={0.25} />
-			<Sfx name="fall" at={HIT} volume={0.45} />
+			<Sfx name="impact" at={HIT} volume={0.1} />
+			<Sfx name="fall" at={LAND - 2} volume={0.5} />
 			<Sfx name="whoosh" at={GENOU - 4} volume={0.07} />
 			<Sfx name="bike" at={RAPE - 8} volume={0.2} dur={16} />
 			<Sfx name="buzz" at={ENORM} volume={0.06} dur={12} />

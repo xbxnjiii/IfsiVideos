@@ -262,7 +262,7 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   couteau ou portière, clou, chat, deux plaies le même jour, quelques heures allongé, trou sous le pied), tout animé et
   illustré. **Ne pas nommer les parties** (ni « partie 1 », ni carte de série) : chaque vidéo tient seule. Même gabarit
   que `Objet-Plante` (accroche · 2 – 3 notions · chute, `progress={false}`, `{minTotal: 0}`). Briques
-  `src/brand/injury.tsx` : `Bike`, `Stone`, `Knee` (genou qui se râpe, guérit), `Meter` (jauge), `DeepBits` (vaisseau,
+  `src/brand/injury.tsx` : `Bike`, `Boy` (garçon de profil : `ride` sur le vélo, `fly` éjecté, `sit` assis qui se tient le genou écorché), `Stone`, `Knee` (genou qui se râpe, guérit), `Meter` (jauge), `DeepBits` (vaisseau,
   nerf, tendon dans `SkinBlock`), `DepthRuler`, `DayChip`, `CarDoor`, `WoundTop` (plaie vue de dessus franche / contuse,
   sutures, écrasement, nécrose, `heal`), `NailBoard`, `Mosquito`, `VaxBook`, `Stetho`, `Cat`, `Dog`, `BittenHand`
   (traces de crocs, main qui gonfle), `WeeksBar` (frise des semaines, cadenas), `AirMattress`, `TurnArrows`, `FootTop`.
