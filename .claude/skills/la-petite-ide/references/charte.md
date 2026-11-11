@@ -61,6 +61,16 @@ Accent de titre **mot par mot** : `Sur *24* *heures*` (pas `*24 heures*`), `*l'h
 - Look 2026 (`bold.tsx`) : une idée par plan, objets en plein cadre, aplats francs (`FlatBg`, `ToneBg`), vrai flou de
   mouvement (`Blur` + positions calculées dans `Live` / `Posed` / `Fly`).
 
+## Rendu « soigné » (validé : gros plan de la trousse, « elle est superbe »)
+
+- Gros plan « comme si c'étaient tes mains », une idée par plan, pas de bonhomme en bâtons.
+- Peau **opaque** en dégradé (blanc cassé → rose mélangé, fonction `mix`), jamais de remplissage transparent sur un
+  objet (on verrait à travers) ; contours fins (`alpha(navy, 0.72)`, 3,5 px) ; ombres douces floutées (`feGaussianBlur`) ;
+  reflets blanc cassé ; métal = dégradé bleu clair → blanc cassé.
+- Pas d'éclairs de douleur ni de traits de BD : une vraie goutte qui perle, un geste qui se voit.
+- Éléments difficiles à dessiner (une main qui tient un manche) : les laisser hors champ.
+- Exemples : `CuttingCloseUp` (`firstaid.tsx`), `BigFinger` / `BandageG` (`bandage.tsx`).
+
 ## Son
 
 - Voix seule + bruitages ; pas de musique. Bruits du corps et des objets = **vrais enregistrements**

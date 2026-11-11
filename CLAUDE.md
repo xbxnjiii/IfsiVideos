@@ -283,7 +283,8 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   rendu soigné (peau opaque en dégradé, ombres douces floutées, contours fins `LINE`, lame métal, mur carrelé, planche),
   main gauche en griffe qui recule à chaque coupe, la main droite hors champ (le manche sort du cadre), tranches qui
   basculent à plat, au mot « glisse » la lame dérape sur la phalange de l'index, le couteau est retiré, une goutte perle
-  puis tombe sur la planche ; à la fin, pansement autour du doigt. Test non retenu : clip IA `public/clips/couteau-seedance.mp4` (Seedance 2.5 via ElevenLabs,
+  puis tombe sur la planche ; à la fin, pansement autour du doigt. **Validé par le propriétaire (« elle est superbe »)** :
+  ce rendu soigné est la référence des prochaines animations. Test non retenu : clip IA `public/clips/couteau-seedance.mp4` (Seedance 2.5 via ElevenLabs,
   ≈ 14 000 crédits, **trop cher** selon le propriétaire ; sorti en 16:9 720p malgré « vertical » ; le couteau ne touche
   pas le doigt à l'image). Toujours **annoncer le prix (`estimate_only`) avant une génération vidéo** : Kling 2.5 Turbo
   ≈ 2 100, LTX v2 Fast ≈ 1 450 crédits pour 5 s. Higgsfield : 0 crédit. Ensuite la trousse se remplit objet par objet
