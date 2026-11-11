@@ -397,21 +397,6 @@ export const Confetti: React.FC<{at: number; x?: number; y?: number; n?: number}
 	);
 };
 
-/* ───────────────── tap : ondulation façon interface mobile ───────────────── */
-
-export const TapRipple: React.FC<{at: number; x: number; y: number}> = ({at, x, y}) => {
-	const frame = useCurrentFrame();
-	const t = frame - at;
-	if (t < 0 || t > 24) return null;
-	const p = ease(t / 24);
-	return (
-		<svg width={GRID.w} height={GRID.h} style={{position: 'absolute', inset: 0, pointerEvents: 'none'}}>
-			<circle cx={x} cy={y} r={20 + 90 * p} fill="none" stroke={LPI.blue} strokeWidth={8} opacity={1 - p} />
-			<circle cx={x} cy={y} r={26 * (1 - p * 0.5)} fill={alpha(LPI.navy, 0.25 * (1 - p))} />
-		</svg>
-	);
-};
-
 /* ───────────────── scène : socle bleu clair qui ondule sous l'illustration ───────────────── */
 
 export const Stage: React.FC<{

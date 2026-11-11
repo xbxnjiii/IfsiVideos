@@ -3,10 +3,9 @@
 // sourire ni larmes, comme la FPS-R), bulles de parole, enfant (Kid), respirateur, grilles d'observation (Algoplus,
 // EVENDOL, BPS) et barre de score avec seuil. Couleurs de la marque uniquement.
 import React from 'react';
-import {interpolate, useCurrentFrame} from 'remotion';
+import {useCurrentFrame} from 'remotion';
 import type {SeriesPart} from './series';
 import {alpha, FONT, LPI, SHADOW} from './theme';
-import {clamp} from './ui';
 
 const N = LPI.navy;
 const SK = {stroke: N, strokeWidth: 7, strokeLinejoin: 'round' as const, strokeLinecap: 'round' as const};
@@ -14,7 +13,6 @@ const popAt = (frame: number, t0: number) => (frame < t0 ? 0 : 1 + 0.12 * Math.e
 
 /** Teinte d'une note de douleur 0 → 10 : blanc (aucune), bleu clair (légère), bleu (modérée), rose (intense). */
 export const painTone = (v: number) => (v <= 0 ? LPI.paper : v <= 3 ? LPI.sky : v <= 6 ? LPI.blue : LPI.pink);
-const painInk = (v: number) => (v >= 4 && v <= 6 ? LPI.paper : N);
 
 /* ───────────── icônes de la série ───────────── */
 
@@ -62,56 +60,6 @@ export const Bubble: React.FC<{children: React.ReactNode; tail?: 'left' | 'right
 		)}
 	</div>
 );
-
-/* ───────────── EN : échelle numérique 0 → 10 ───────────── */
-
-/** Échelle numérique : 11 cases qui arrivent l'une après l'autre (`at`, `stagger`), `pick` = la note choisie (grossie,
- * entourée) à partir de `pickAt` ; `hover` (0 → 10, continu) = doigt qui hésite au-dessus ; `ends` = étiquettes des bouts. */
-export const NumScale: React.FC<{at: number; width?: number; stagger?: number; pick?: number | null; pickAt?: number; hover?: number | null; ends?: [number, number] | null; glow?: number[]}> = ({at: t0, width = 936, stagger = 2, pick = null, pickAt = 0, hover = null, ends = null, glow = []}) => {
-	const frame = useCurrentFrame();
-	const gap = 8;
-	const cw = (width - gap * 10) / 11;
-	const picked = pick !== null && frame >= pickAt;
-	return (
-		<div style={{position: 'relative', width, height: cw + 150}}>
-			{Array.from({length: 11}, (_, v) => {
-				const t = t0 + v * stagger;
-				if (frame < t) return null;
-				const on = picked && v === pick;
-				const lit = glow.includes(v);
-				const s = popAt(frame, t) * (on ? 1 + 0.22 * Math.min(1, (frame - pickAt) / 5) : 1);
-				return (
-					<div key={v} style={{position: 'absolute', left: v * (cw + gap), top: 60, width: cw, height: cw, borderRadius: 22, background: painTone(v), border: `${on || lit ? 7 : 5}px solid ${N}`, boxSizing: 'border-box', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FONT.title, fontWeight: 900, fontSize: cw * 0.5, color: painInk(v), transform: `scale(${s})`, boxShadow: on ? `0 0 0 8px ${alpha(LPI.pink, 0.55)}` : lit ? `0 0 0 7px ${alpha(LPI.blue, 0.4)}` : 'none', zIndex: on ? 2 : 1}}>
-						{v}
-					</div>
-				);
-			})}
-			{hover !== null ? (
-				<svg width={84} height={84} viewBox="0 0 60 60" style={{position: 'absolute', left: hover * (cw + gap) + cw / 2 - 42, top: -30, overflow: 'visible'}}>
-					<path d="M30 56 L8 22 H22 V2 H38 V22 H52 Z" fill={LPI.pink} {...SK} strokeWidth={5} />
-				</svg>
-			) : null}
-			{ends ? (
-				<>
-					{frame >= ends[0] ? (
-						<div style={{position: 'absolute', left: -6, top: cw + 76, width: 300, fontFamily: FONT.body, fontWeight: 800, fontSize: 30, color: N, lineHeight: 1.1, opacity: interpolate(frame, [ends[0], ends[0] + 6], [0, 1], clamp)}}>
-							0 = aucune
-							<br />
-							douleur
-						</div>
-					) : null}
-					{frame >= ends[1] ? (
-						<div style={{position: 'absolute', right: -6, top: cw + 76, width: 360, textAlign: 'right', fontFamily: FONT.body, fontWeight: 800, fontSize: 30, color: N, lineHeight: 1.1, opacity: interpolate(frame, [ends[1], ends[1] + 6], [0, 1], clamp)}}>
-							10 = la pire douleur
-							<br />
-							imaginable
-						</div>
-					) : null}
-				</>
-			) : null}
-		</div>
-	);
-};
 
 /* ───────────── EVA : la réglette ───────────── */
 
@@ -201,32 +149,6 @@ export const Ruler: React.FC<{pos: number; flip: number; width?: number; ends?: 
 
 export const EVS_WORDS = ['pas de douleur', 'faible', 'modérée', 'intense', 'extrêmement intense'];
 
-/** Échelle verbale simple : 5 mots (du plus léger au plus fort) qui arrivent à `ats[i]`, `pick` entouré à `pickAt`. */
-export const WordScale: React.FC<{ats: number[]; pick?: number | null; pickAt?: number; width?: number; from?: number}> = ({ats, pick = null, pickAt = 0, width = 560, from}) => {
-	const frame = useCurrentFrame();
-	return (
-		<div style={{display: 'flex', flexDirection: 'column', gap: 12, width}}>
-			{EVS_WORDS.map((w, i) => {
-				const t = ats[i];
-				if (frame < t)
-					return <div key={w} style={{height: 84, borderRadius: 999, border: `4px dashed ${alpha(N, 0.25)}`, boxSizing: 'border-box', opacity: from !== undefined && frame >= from ? interpolate(frame, [from + i * 3, from + i * 3 + 6], [0, 1], clamp) : 0}} />;
-				const on = pick === i && frame >= pickAt;
-				const v = [0, 2, 5, 7, 10][i];
-				return (
-					<div key={w} style={{height: 84, display: 'flex', alignItems: 'center', gap: 16, padding: '0 20px', boxSizing: 'border-box', borderRadius: 999, background: on ? painTone(v) : LPI.paper, border: `${on ? 7 : 5}px solid ${on ? N : alpha(N, 0.35)}`, boxShadow: SHADOW, transform: `translateX(${(1 - popAt(frame, t)) * 60}px) scale(${on ? 1.05 : 1})`, opacity: Math.min(1, (frame - t) / 4)}}>
-						<div style={{display: 'flex', gap: 5}}>
-							{[0, 1, 2, 3].map((b) => (
-								<div key={b} style={{width: 14, height: 16 + b * 8, alignSelf: 'flex-end', borderRadius: 4, background: b < i ? painTone(v) : alpha(N, 0.12), border: `3px solid ${b < i ? N : 'transparent'}`}} />
-							))}
-						</div>
-						<div style={{fontFamily: FONT.title, fontWeight: 900, fontSize: 40, color: on && v >= 4 && v <= 6 ? LPI.paper : N, whiteSpace: 'nowrap'}}>{w}</div>
-					</div>
-				);
-			})}
-		</div>
-	);
-};
-
 /* ───────────── échelle des visages ───────────── */
 
 /** Un visage de l'échelle (niveau 0 → 5) : de détendu à très douloureux, sans sourire ni larmes (comme la FPS-R). */
@@ -257,27 +179,6 @@ export const PainFace: React.FC<{level: number; size?: number}> = ({level, size 
 				<path d={`M-18 ${24 + (l > 1 ? 2 : 0)} Q0 ${24 - down} 18 ${24 + (l > 1 ? 2 : 0)}`} fill="none" stroke={N} strokeWidth={5} strokeLinecap="round" />
 			)}
 		</svg>
-	);
-};
-
-/** Les 6 visages (scores 0, 2, 4, 6, 8, 10), qui arrivent à `at` ; `pick` entouré à `pickAt`. */
-export const FacesScale: React.FC<{at: number; pick?: number | null; pickAt?: number; size?: number; gap?: number}> = ({at: t0, pick = null, pickAt = 0, size = 130, gap = 22}) => {
-	const frame = useCurrentFrame();
-	return (
-		<div style={{display: 'flex', gap}}>
-			{[0, 1, 2, 3, 4, 5].map((i) => {
-				const t = t0 + i * 4;
-				const on = pick === i && frame >= pickAt;
-				return (
-					<div key={i} style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6, opacity: frame < t ? 0 : 1, transform: `scale(${frame < t ? 0 : popAt(frame, t) * (on ? 1.18 : 1)}) translateY(${on ? -10 : 0}px)`}}>
-						<div style={{borderRadius: '50%', boxShadow: on ? `0 0 0 10px ${alpha(LPI.pink, 0.7)}` : 'none'}}>
-							<PainFace level={i} size={size} />
-						</div>
-						<div style={{fontFamily: FONT.title, fontWeight: 900, fontSize: 34, color: on ? LPI.blue : alpha(N, 0.6)}}>{i * 2}</div>
-					</div>
-				);
-			})}
-		</div>
 	);
 };
 
@@ -367,60 +268,6 @@ export const Ventilator: React.FC<{width?: number; fight?: number}> = ({width = 
 			<rect x={40} y={216} width={160} height={30} rx={10} fill={alpha(LPI.blue, 0.5)} stroke={N} strokeWidth={5} />
 			<path d="M60 270 V292 M180 270 V292" stroke={N} strokeWidth={8} strokeLinecap="round" />
 		</svg>
-	);
-};
-
-/* ───────────── grilles d'observation ───────────── */
-
-export type SheetRow = {label: string; icon?: React.ReactNode; at: number; points?: number; pointsAt?: number};
-
-/** Grille d'observation (Algoplus : `mode` oui / non ; EVENDOL ou BPS : points 0 → `max`) : chaque ligne arrive à
- * son mot, la réponse s'allume à `pointsAt` ; le total se lit en bas (`total`). */
-export const ObsSheet: React.FC<{title: string; rows: SheetRow[]; mode: 'yesno' | 'points'; max?: number; width?: number; rowH?: number; total?: {at: number; of: number; label?: string}}> = ({title, rows, mode, max = 3, width = 560, rowH = 74, total}) => {
-	const frame = useCurrentFrame();
-	const score = rows.reduce((s, r) => s + (r.pointsAt !== undefined && frame >= r.pointsAt ? r.points ?? 0 : 0), 0);
-	return (
-		<div style={{width, borderRadius: 34, background: LPI.paper, border: `6px solid ${N}`, boxShadow: SHADOW, overflow: 'hidden'}}>
-			<div style={{background: N, color: LPI.paper, fontFamily: FONT.title, fontWeight: 900, fontSize: 38, padding: '12px 24px'}}>{title}</div>
-			<div style={{padding: '10px 16px', display: 'flex', flexDirection: 'column', gap: 8}}>
-				{rows.map((r) => {
-					const on = frame >= r.at;
-					const ans = r.pointsAt !== undefined && frame >= r.pointsAt;
-					return (
-						<div key={r.label} style={{height: rowH, display: 'flex', alignItems: 'center', gap: 12, padding: '0 10px', borderRadius: 18, background: on ? (ans && (r.points ?? 0) > 0 ? alpha(LPI.pink, 0.35) : alpha(LPI.sky, 0.45)) : alpha(LPI.sky, 0.15), opacity: on ? 1 : 0.35, transform: `scale(${on ? popAt(frame, r.at) : 1})`}}>
-							{r.icon ? <div style={{width: 54, height: 54, borderRadius: 27, background: LPI.paper, border: `4px solid ${N}`, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0}}>{r.icon}</div> : null}
-							<div style={{flex: 1, fontFamily: FONT.title, fontWeight: 900, fontSize: 36, color: N, whiteSpace: 'nowrap'}}>{r.label}</div>
-							{mode === 'yesno' ? (
-								<div style={{display: 'flex', gap: 6}}>
-									{['oui', 'non'].map((o) => {
-										const pick = ans && ((o === 'oui') === (r.points ?? 0) > 0);
-										return (
-											<div key={o} style={{padding: '4px 14px', borderRadius: 999, fontFamily: FONT.body, fontWeight: 900, fontSize: 26, color: pick ? (o === 'oui' ? N : LPI.paper) : alpha(N, 0.4), background: pick ? (o === 'oui' ? LPI.pink : LPI.blue) : 'transparent', border: `3px solid ${pick ? N : alpha(N, 0.25)}`, transform: `scale(${pick ? popAt(frame, r.pointsAt ?? 0) : 1})`}}>
-												{o}
-											</div>
-										);
-									})}
-								</div>
-							) : (
-								<div style={{display: 'flex', gap: 6}}>
-									{Array.from({length: max}, (_, i) => (
-										<div key={i} style={{width: 24, height: 24, borderRadius: 12, background: ans && i < (r.points ?? 0) ? LPI.pink : 'transparent', border: `4px solid ${ans && i < (r.points ?? 0) ? N : alpha(N, 0.25)}`}} />
-									))}
-								</div>
-							)}
-						</div>
-					);
-				})}
-			</div>
-			{total && frame >= total.at ? (
-				<div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '8px 24px 14px', borderTop: `4px dashed ${alpha(N, 0.2)}`}}>
-					<div style={{fontFamily: FONT.body, fontWeight: 900, fontSize: 28, color: alpha(N, 0.7), letterSpacing: '0.08em'}}>{total.label ?? 'SCORE'}</div>
-					<div style={{fontFamily: FONT.title, fontWeight: 900, fontSize: 50, color: N, transform: `scale(${popAt(frame, total.at)})`}}>
-						<span style={{color: score > 0 ? LPI.pink : N}}>{score}</span> / {total.of}
-					</div>
-				</div>
-			) : null}
-		</div>
 	);
 };
 

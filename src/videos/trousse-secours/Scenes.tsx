@@ -11,7 +11,6 @@ import React from 'react';
 import {AbsoluteFill, Easing, interpolate, useCurrentFrame} from 'remotion';
 import {Big, Blur, ease, fadeIn, Flash, Fly, Live, Note, popAt, Posed, RowCard} from '../../brand/bold';
 import {CUT_TIP, CuttingCloseUp, EmergencyCard, FirstAidKit, KIT_SLOTS, KitItem, KitKind, Padlock} from '../../brand/firstaid';
-import {Drop} from '../../brand/hands';
 import {DayChip} from '../../brand/injury';
 import {Burst, Camera} from '../../brand/motion3';
 import {Sfx} from '../../brand/Sfx';
@@ -69,7 +68,6 @@ const KitchenScene: React.FC<{slip: number; bleed: number; zoom: number; out: nu
 
 /* ═══════════════════════════════ ACCROCHE : LA TROUSSE EST VIDE ═══════════════════════════════ */
 export const Hook: React.FC = () => {
-	const GLISSE = at('intro', 'glisse…');
 	const DOIGT = at('intro', 'doigt');
 	const SAIGNE = at('intro', 'saigne');
 	const VITE = at('intro', 'vite,');

@@ -311,10 +311,3 @@ export const SyringeIcon: React.FC<IP> = (p) => (
 		<path d="M76 24 L90 38 M83 31 L94 20 M30 70 L12 88 M48 52 L56 60 M58 42 L66 50" />
 	</Ico>
 );
-/** inhalateur (bronchodilatateur) */
-export const InhalerIcon: React.FC<IP> = (p) => (
-	<Ico {...p}>
-		<rect x="30" y="8" width="24" height="44" rx="8" fill={alpha(LPI.sky, 0.9)} />
-		<path d="M24 40 H60 V64 H84 V84 H24 Z" fill={alpha(LPI.blue, 0.8)} />
-	</Ico>
-);

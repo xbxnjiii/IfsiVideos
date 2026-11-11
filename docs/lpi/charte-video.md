@@ -118,7 +118,7 @@ Toujours dans la palette, sans effet lumineux :
 | `Stage` | socle bleu clair qui ondule ; `layers` = remplissage rose / bleu clair qui monte comme un liquide (jamais de mélange de teintes) |
 | `Odometer` | chiffres qui roulent (format français, virgule) |
 | `StatePill` | pastille d'état avec les mots du script (« trop rapide », « pas de fièvre »…) |
-| `Burst`, `Confetti`, `TapRipple` | éclats, confettis (1 fois, au récap), « tap » sur le bouton Enregistrer |
+| `Burst`, `Confetti` | éclats, confettis (1 fois, au récap) |
 | `LiveBackground` | blanc cassé + grille de points qui défile + 4 éléments de la planche en bordure |
 
 ## Kit « réseaux sociaux » (`src/brand/kit.tsx`) — vidéos « liste »

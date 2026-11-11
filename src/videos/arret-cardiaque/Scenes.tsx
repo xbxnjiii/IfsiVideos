@@ -7,7 +7,7 @@ import {Aed, CprHands, DepthGauge, EcgMonitor, HeadTilt, Pad, Rhythm} from '../.
 import {Brain} from '../../brand/brain';
 import {Phone} from '../../brand/devices';
 import {BigNum, CamKey, camAt, Head, LAY, Pill, RecapScene, SLAM_Y, Stopwatch, Tag, termSlot, ZoomCam} from '../../brand/episode';
-import {CheckChip, Stamp, usePop} from '../../brand/kit';
+import {CheckChip, Stamp} from '../../brand/kit';
 import {Burst, Camera, LiveBackground, Stage, TermSlam} from '../../brand/motion3';
 import {Patient} from '../../brand/patient';
 import {Heart, Lungs} from '../../brand/pictos';
@@ -17,7 +17,6 @@ import {clamp, Enter, Title, useSoft} from '../../brand/ui';
 import {at} from './timeline';
 
 const ease = {...clamp, easing: Easing.inOut(Easing.cubic)};
-const easeIn = {...clamp, easing: Easing.in(Easing.cubic)};
 const N = LPI.navy;
 const pulseAt = (frame: number, period = 25) => Math.exp(-(frame % period) / 5);
 /** ressort sans hook (utilisable dans une boucle) */
@@ -766,7 +765,6 @@ export const Dae: React.FC = () => {
 	const CHOC = at('dae', 'choc');
 	const ARRT = at('dae', 'arrêter');
 	const PEND = at('dae', 'pendant');
-	const PERS = at('dae', 'personne');
 	const aed = useSoft(ARR - 6, true);
 	const pads = interpolate(frame, [VOIX - 2, VOIX + 10], [0, 1], ease);
 	const SHOCK = CHOC + 2;

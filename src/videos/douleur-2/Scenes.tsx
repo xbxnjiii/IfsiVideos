@@ -12,7 +12,7 @@ import {Big, ease, fadeIn, Flash, Fly, Live, Note, PointTag, popAt, RowCard, Ton
 import {WallClock} from '../../brand/devices';
 import {Stamp} from '../../brand/kit';
 import {Burst, Camera, Confetti} from '../../brand/motion3';
-import {Bubble, Kid, ObsRow, PAIN_PARTS, PainFace, ScoreBar, TalkIcon, Ventilator} from '../../brand/pain';
+import {Kid, ObsRow, PAIN_PARTS, PainFace, ScoreBar, TalkIcon, Ventilator} from '../../brand/pain';
 import {Patient, PatientProps} from '../../brand/patient';
 import {NextUp, SeriesParts} from '../../brand/series';
 import {Sfx} from '../../brand/Sfx';
@@ -472,7 +472,6 @@ export const Bps: React.FC = () => {
 
 /* ═══════════════════════════════ 4 · EVENDOL (ENFANT) ═══════════════════════════════ */
 export const Evendol: React.FC = () => {
-	const frame = useCurrentFrame();
 	const ENF = at('evendol', "l'enfant");
 	const SEPT = at('evendol', 'sept');
 	const EVEN = at('evendol', 'evendol');

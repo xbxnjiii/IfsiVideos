@@ -7,7 +7,7 @@ import {AbsoluteFill, Easing, interpolate, useCurrentFrame} from 'remotion';
 import {Head, LAY, Pill, RecapScene, StagePill, Stopwatch} from '../../brand/episode';
 import {Bed, BedTable, Drop, Faucet, IvPump, Loupe, Microbe, rnd, Sparkles, StepTracker, Swarm} from '../../brand/hands';
 import {EyeIcon, SyringeIcon} from '../../brand/icons';
-import {CheckChip, Stamp, usePop} from '../../brand/kit';
+import {CheckChip} from '../../brand/kit';
 import {Burst, Camera, LiveBackground, Stage} from '../../brand/motion3';
 import {Patient} from '../../brand/patient';
 import {Arm, ARM_PT, Hand, Plaster, ShaBottle} from '../../brand/sampling';

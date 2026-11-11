@@ -6,7 +6,7 @@ import React from 'react';
 import {AbsoluteFill, Easing, interpolate, useCurrentFrame} from 'remotion';
 import {ArteryZoom, Brain} from '../../brand/brain';
 import {Phone, ScanMonitor} from '../../brand/devices';
-import {bodyPx, ChestScan, CLOT_T, clotAt, FullBody, SemiSitting} from '../../brand/embolism';
+import {ChestScan, CLOT_T, clotAt, FullBody, SemiSitting} from '../../brand/embolism';
 import {CamFollow, CamKey, camAt, camClamp, CauseChip, Head, LAY, Pill, RecapScene, SLAM_Y, Tag, termSlot, ZoomCam} from '../../brand/episode';
 import {BedIcon, CastIcon, LegIcon, PainIcon, PillIcon, PlaneIcon, RibbonIcon, ScalpelIcon} from '../../brand/icons';
 import {CheckChip, Stamp} from '../../brand/kit';

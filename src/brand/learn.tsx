@@ -1,8 +1,6 @@
 // Briques pédagogiques La Petite IDE : numéro de partie, carte « terme technique », signes.
 import React from 'react';
-import {interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
-import {alpha, FONT, LPI, SHADOW} from './theme';
-import {clamp} from './ui';
+import {LPI} from './theme';
 
 /* ─────────── signes (sens du terme) ─────────── */
 
@@ -82,96 +80,6 @@ export const Sign: React.FC<{kind: SignKind; size?: number}> = ({kind, size = 76
 			<svg width={size * 0.78} height={size * 0.78} viewBox="0 0 100 100">
 				{glyph}
 			</svg>
-		</div>
-	);
-};
-
-/* ─────────── carte « terme technique » ─────────── */
-
-/**
- * Le terme apparaît au moment où la voix le prononce (`at`), reste affiché ensuite
- * (on construit la fiche de révision), et s'allume tant qu'il est le terme courant.
- */
-export const TermCard: React.FC<{
-	at: number;
-	until?: number;
-	term: React.ReactNode;
-	meaning: React.ReactNode;
-	sign: SignKind;
-	width?: number;
-}> = ({at, until = Infinity, term, meaning, sign, width = 650}) => {
-	const frame = useCurrentFrame();
-	const {fps} = useVideoConfig();
-	const s = spring({frame: frame - at, fps, config: {damping: 14, stiffness: 200, mass: 0.8}});
-	const on = frame >= at && frame < until ? 1 : 0;
-	const glow = interpolate(frame, [at, at + 8], [0, 1], clamp) * on;
-	const pop = on ? 1 + 0.025 * Math.max(0, 1 - (frame - at) / 10) : 1;
-	if (frame < at - 1) return <div style={{height: 108}} />;
-	return (
-		<div
-			style={{
-				width,
-				height: 108,
-				display: 'flex',
-				alignItems: 'center',
-				gap: 24,
-				padding: '0 28px',
-				borderRadius: 32,
-				background: LPI.paper,
-				border: `3px solid ${glow > 0.5 ? LPI.blue : LPI.sky}`,
-				boxShadow: glow > 0.5 ? `0 16px 40px ${alpha(LPI.blue, 0.22)}` : SHADOW,
-				opacity: Math.min(1, s * 1.6) * (on ? 1 : 0.88),
-				transform: `translateX(${(1 - s) * 90}px) scale(${pop})`,
-				transformOrigin: 'left center',
-			}}
-		>
-			<Sign kind={sign} size={74} />
-			<div>
-				<div
-					style={{
-						fontFamily: FONT.title,
-						fontWeight: 900,
-						fontSize: 46,
-						lineHeight: 1.02,
-						color: glow > 0.5 ? LPI.blue : LPI.navy,
-					}}
-				>
-					{term}
-				</div>
-				<div style={{fontFamily: FONT.body, fontWeight: 600, fontSize: 29, color: alpha(LPI.navy, 0.72), marginTop: 4}}>
-					{meaning}
-				</div>
-			</div>
-		</div>
-	);
-};
-
-/* ─────────── numéro de partie ─────────── */
-
-export const NumberBadge: React.FC<{n: number; at: number; size?: number}> = ({n, at, size = 96}) => {
-	const frame = useCurrentFrame();
-	const {fps} = useVideoConfig();
-	const s = spring({frame: frame - at, fps, config: {damping: 11, stiffness: 220, mass: 0.7}});
-	return (
-		<div
-			style={{
-				width: size,
-				height: size,
-				borderRadius: 999,
-				background: LPI.blue,
-				color: LPI.paper,
-				fontFamily: FONT.title,
-				fontWeight: 900,
-				fontSize: size * 0.58,
-				display: 'flex',
-				alignItems: 'center',
-				justifyContent: 'center',
-				boxShadow: `0 12px 30px ${alpha(LPI.blue, 0.35)}`,
-				transform: `scale(${s}) rotate(${(1 - s) * -30}deg)`,
-				flexShrink: 0,
-			}}
-		>
-			{n}
 		</div>
 	);
 };

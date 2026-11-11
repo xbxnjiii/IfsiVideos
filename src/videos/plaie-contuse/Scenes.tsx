@@ -14,19 +14,11 @@ import {Burst, Camera} from '../../brand/motion3';
 import {Sfx} from '../../brand/Sfx';
 import {alpha, FONT, LPI, SHADOW} from '../../brand/theme';
 import {clamp} from '../../brand/ui';
-import {Finger, WoundTool} from '../../brand/wound';
+import {WoundTool} from '../../brand/wound';
 import {at} from './timeline';
 
 const N = LPI.navy;
 const ON_BLUE = {color: LPI.paper, accent: N};
-
-/** Carte blanche avec une étiquette en haut à gauche ; `hl` 0 → 1 : bordure rose (mise en avant), `dim` : s'efface. */
-const Panel: React.FC<{w: number; h: number; label: string; hl?: number; dim?: number; children: React.ReactNode}> = ({w, h, label, hl = 0, dim = 0, children}) => (
-	<div style={{position: 'relative', width: w, height: h, borderRadius: 44, background: LPI.paper, border: `${6 + 6 * hl}px solid ${hl > 0.5 ? LPI.pink : N}`, boxShadow: SHADOW, overflow: 'hidden', opacity: 1 - 0.55 * dim, boxSizing: 'border-box'}}>
-		<div style={{position: 'absolute', left: 22, top: 18, padding: '6px 20px', borderRadius: 999, background: LPI.sky, border: `4px solid ${N}`, fontFamily: FONT.title, fontWeight: 900, fontSize: 34, color: N, letterSpacing: '0.04em', zIndex: 2}}>{label}</div>
-		<div style={{position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>{children}</div>
-	</div>
-);
 
 /* ═══════════════════════════════ ACCROCHE : LA CHUTE SUR LE TROTTOIR ═══════════════════════════════ */
 /** Le marcheur (repère 300 × 600) affiché à WW px, sol à y GROUND ; il pivote autour de ses pieds (FOOT) en tombant. */

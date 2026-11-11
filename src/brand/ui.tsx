@@ -1,5 +1,5 @@
-import React, {createContext, useContext} from 'react';
-import {AbsoluteFill, Easing, Img, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
+import React from 'react';
+import {Easing, interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import {alpha, FONT, GRID, LPI, SHADOW} from './theme';
 
 export const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
@@ -52,85 +52,6 @@ export const Box: React.FC<{
 }> = ({x, y, w, children, style}) => (
 	<div style={{position: 'absolute', left: x, top: y, width: w, ...style}}>{children}</div>
 );
-
-/* ────────────────────────────── décor ────────────────────────────── */
-
-const BLOB =
-	'M520 40 C700 30 860 150 870 330 C880 520 760 640 560 650 C360 660 170 600 120 420 C70 240 300 50 520 40 Z';
-
-/** Niveau de décor du fond : « full » (formes bleu clair), « soft » (atténuées), « none » (blanc cassé uni). */
-export type Decor = 'full' | 'soft' | 'none';
-export const DecorContext = createContext<Decor>('full');
-
-/** Fond principal : blanc cassé + formes douces bleu clair qui respirent à peine. */
-export const Background: React.FC<{variant?: 0 | 1 | 2}> = ({variant = 0}) => {
-	const frame = useCurrentFrame();
-	const decor = useContext(DecorContext);
-	const t = frame / 30;
-	const drift = (k: number) => Math.sin(t * 0.25 + k) * 10;
-	const layouts = [
-		[
-			{x: 520, y: -170, s: 0.9, r: 12},
-			{x: -360, y: 1320, s: 1.0, r: -8},
-		],
-		[
-			{x: -330, y: -120, s: 0.85, r: -14},
-			{x: 560, y: 1400, s: 0.9, r: 10},
-		],
-		[
-			{x: 560, y: 980, s: 0.8, r: 20},
-			{x: -380, y: -60, s: 0.75, r: 0},
-		],
-	][variant];
-	const strength = decor === 'full' ? 1 : decor === 'soft' ? 0.4 : 0;
-	return (
-		<AbsoluteFill style={{backgroundColor: LPI.paper}}>
-			{strength > 0 ? (
-				<svg width={GRID.w} height={GRID.h} style={{position: 'absolute', inset: 0}}>
-					{layouts.map((b, i) => (
-						<path
-							key={i}
-							d={BLOB}
-							fill={LPI.sky}
-							opacity={(i === 0 ? 0.5 : 0.38) * strength}
-							transform={`translate(${b.x + drift(i)} ${b.y + drift(i + 2)}) rotate(${b.r} 500 340) scale(${b.s * (decor === 'soft' ? 0.8 : 1)})`}
-						/>
-					))}
-				</svg>
-			) : null}
-		</AbsoluteFill>
-	);
-};
-
-/** Trois petits traits « éclat » (élément graphique de la charte). */
-export const Dashes: React.FC<{size?: number; color?: string; at?: number}> = ({
-	size = 46,
-	color = LPI.blue,
-	at = 0,
-}) => {
-	const frame = useCurrentFrame();
-	const p = interpolate(frame, [at, at + 12], [0, 1], {...clamp, easing: Easing.out(Easing.cubic)});
-	return (
-		<svg width={size} height={size} viewBox="0 0 50 50" style={{overflow: 'visible'}}>
-			{[
-				[8, 36, 2, 46],
-				[20, 24, 16, 12],
-				[34, 30, 44, 22],
-			].map(([x1, y1, x2, y2], i) => (
-				<line
-					key={i}
-					x1={x1}
-					y1={y1}
-					x2={x1 + (x2 - x1) * p}
-					y2={y1 + (y2 - y1) * p}
-					stroke={color}
-					strokeWidth={6}
-					strokeLinecap="round"
-				/>
-			))}
-		</svg>
-	);
-};
 
 /** Coup de pinceau rose (surlignage de la charte), révélé de gauche à droite. */
 export const Brush: React.FC<{at: number; width: number; height?: number; color?: string; opacity?: number}> = ({
@@ -257,39 +178,6 @@ export const Title: React.FC<{
 	);
 };
 
-export const Subtitle: React.FC<{at: number; children: React.ReactNode; size?: number}> = ({
-	at,
-	children,
-	size = 40,
-}) => (
-	<Enter at={at} distance={20}>
-		<div
-			style={{fontFamily: FONT.body, fontWeight: 600, fontSize: size, color: alpha(LPI.navy, 0.72), lineHeight: 1.3}}
-		>
-			{children}
-		</div>
-	</Enter>
-);
-
-/** Grand chiffre clé + unité. */
-export const Readout: React.FC<{value: React.ReactNode; unit?: React.ReactNode; size?: number; color?: string}> = ({
-	value,
-	unit,
-	size = 132,
-	color = LPI.navy,
-}) => (
-	<div style={{display: 'flex', alignItems: 'baseline', gap: 14, whiteSpace: 'nowrap'}}>
-		<span
-			style={{fontFamily: FONT.title, fontWeight: 900, fontSize: size, lineHeight: 1, color, letterSpacing: '-0.02em'}}
-		>
-			{value}
-		</span>
-		{unit ? (
-			<span style={{fontFamily: FONT.title, fontWeight: 800, fontSize: size * 0.34, color: LPI.blue}}>{unit}</span>
-		) : null}
-	</div>
-);
-
 /* ────────────────────────────── surfaces ────────────────────────────── */
 
 /** Carte : surface blanc cassé, bord bleu clair, ombre douce. */
@@ -351,20 +239,6 @@ export const Chip: React.FC<{
 		</div>
 	);
 };
-
-/* ────────────────────────────── marque ────────────────────────────── */
-
-/** Filigrane : logo icône + nom de la marque (en haut à gauche). */
-export const Watermark: React.FC<{opacity?: number}> = ({opacity = 1}) => (
-	<div
-		style={{position: 'absolute', left: 56, top: GRID.header, display: 'flex', alignItems: 'center', gap: 16, opacity}}
-	>
-		<Img src={staticFile('brand/logo/logo-icone.webp')} style={{width: 84, height: 'auto'}} />
-		<div style={{fontFamily: FONT.brand, fontWeight: 700, fontSize: 36, color: LPI.navy, letterSpacing: '-0.01em'}}>
-			La <span style={{color: LPI.blue}}>Petite</span> IDE
-		</div>
-	</div>
-);
 
 /** Progression : une pastille par étape, la courante s'allonge. */
 export const Progress: React.FC<{count: number; current: number; progress: number; opacity?: number}> = ({

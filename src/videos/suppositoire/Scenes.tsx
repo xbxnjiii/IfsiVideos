@@ -233,7 +233,6 @@ export const Verite: React.FC = () => {
 	const POINTE2 = at('verite', 'pointe', 2);
 	const DEVANT = at('verite', 'devant');
 	const noticeOut = fadeIn(frame, SUPPO - 6, 8);
-	const rocket = fadeIn(frame, FUSEE - 4, 10);
 	const rise = interpolate(frame, [POINTE2 - 4, DEVANT + 16], [0, 1], {...clamp, easing: Easing.in(Easing.cubic)});
 	return (
 		<AbsoluteFill>

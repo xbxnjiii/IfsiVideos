@@ -237,8 +237,6 @@ export const Prelevement: React.FC = () => {
 	const DITE = at('prelevement', 'dite');
 	const CARD_OUT = AIG - 6;
 	const ASM_OUT = ET - 2;
-	// l'aiguille se visse : elle glisse vers le corps de pompe en tremblotant (pas de vis)
-	const screw = interpolate(frame, [VISSE, VISSE + 22], [0, 1], ease);
 	return (
 		<AbsoluteFill>
 			<Bg fam={1} />
@@ -638,7 +636,6 @@ const TapeRoll: React.FC<{size?: number}> = ({size = 200}) => (
 );
 
 export const Fin: React.FC = () => {
-	const frame = useCurrentFrame();
 	const TERM = at('fin', 'terminer');
 	const UNE = at('fin', 'une');
 	const COMP = at('fin', 'compresse,');

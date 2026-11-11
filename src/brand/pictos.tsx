@@ -1,7 +1,6 @@
 import React from 'react';
 import {interpolate, interpolateColors, useCurrentFrame} from 'remotion';
 import {alpha, FONT, LPI} from './theme';
-import {clamp} from './ui';
 
 const NAVY = LPI.navy;
 const SW = 6; // épaisseur de trait standard des pictos
@@ -86,23 +85,9 @@ export const JarPicto: React.FC<P> = (p) => (
 	</Line>
 );
 
-export const BodyPicto: React.FC<P> = (p) => (
-	<Line {...p}>
-		<circle cx="50" cy="20" r="10" />
-		<path d="M30 40 H70 M50 34 V64 M50 64 L36 90 M50 64 L64 90 M30 40 L22 62 M70 40 L78 62" />
-	</Line>
-);
-
 export const DropPicto: React.FC<P> = (p) => (
 	<Line {...p}>
 		<path d="M50 12 C50 12 78 46 78 64 A28 28 0 0 1 22 64 C22 46 50 12 50 12 Z" fill={LPI.pink} />
-	</Line>
-);
-
-export const ArteryPicto: React.FC<P> = (p) => (
-	<Line {...p}>
-		<rect x="8" y="30" width="84" height="40" rx="20" fill={LPI.sky} />
-		<path d="M14 50 H86" stroke={LPI.pink} strokeWidth="12" />
 	</Line>
 );
 
@@ -203,9 +188,6 @@ export const Thermometer: React.FC<{value: number; height?: number}> = ({value, 
 	);
 };
 
-/** 36.7 → « 36,7 » */
-export const fr1 = (v: number) => v.toFixed(1).replace('.', ',');
-
 const HEART = 'M0 22 C-34 -6 -22 -40 0 -24 C22 -40 34 -6 0 22 Z';
 
 export const Heart: React.FC<{size?: number; beat: number}> = ({size = 300, beat}) => (
@@ -226,36 +208,6 @@ export const Heart: React.FC<{size?: number; beat: number}> = ({size = 300, beat
 		</g>
 	</svg>
 );
-
-/** Tracé de pouls symbolique (bosses arrondies, volontairement non réaliste). */
-export const PulseLine: React.FC<{width: number; beatFrames: number; startAt: number; y?: number}> = ({
-	width,
-	beatFrames,
-	startAt,
-	y = 60,
-}) => {
-	const frame = useCurrentFrame();
-	const spacing = 230;
-	const shift = (frame - startAt) * (spacing / beatFrames);
-	const pts = Array.from({length: Math.ceil(width / 6) + 1}, (_, i) => {
-		const x = i * 6;
-		const local = ((((x + shift - width / 2) % spacing) + spacing) % spacing) - spacing / 2;
-		const bump = -56 * Math.exp(-((local / 18) ** 2)) + 14 * Math.exp(-(((local - 34) / 16) ** 2));
-		return `${x},${y + bump}`;
-	}).join(' ');
-	return (
-		<svg width={width} height={y + 40} style={{overflow: 'visible'}}>
-			<polyline
-				points={pts}
-				fill="none"
-				stroke={LPI.blue}
-				strokeWidth={7}
-				strokeLinecap="round"
-				strokeLinejoin="round"
-			/>
-		</svg>
-	);
-};
 
 /** Poumons qui se gonflent (breath 0→1) + flèches d'air entrantes / sortantes. */
 export const Lungs: React.FC<{breath: number; inspiring: boolean; q: number; size?: number}> = ({
@@ -473,5 +425,3 @@ export const Rbc: React.FC<{o2?: number; size?: number}> = ({o2 = 0, size = 70})
 		</svg>
 	);
 };
-
-export const drawOn = (frame: number, at: number, len = 20) => interpolate(frame, [at, at + len], [0, 1], clamp);

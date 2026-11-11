@@ -136,7 +136,6 @@ export const Pourquoi: React.FC = () => {
 
 /* ═══════════════════════════════ LE RISQUE ═══════════════════════════════ */
 export const Risque: React.FC = () => {
-	const frame = useCurrentFrame();
 	const MORSURE = at('risque', 'morsure');
 	const RISQUE = at('risque', 'risque');
 	const INFECT = at('risque', "d'infection");

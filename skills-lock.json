@@ -13,12 +13,6 @@
       "skillPath": "skills/remotion-best-practices/SKILL.md",
       "computedHash": "0a9ce51911ea54ec99dd85280b6e7fb98f3096548719a14c3ea3a8911eec1031"
     },
-    "remotion-captions": {
-      "source": "remotion-dev/skills",
-      "sourceType": "github",
-      "skillPath": "skills/remotion-captions/SKILL.md",
-      "computedHash": "0cb1beaaa123c7f9b637b09c614da1b37b811fb7b2c0b5bbf7e56c9e23373b9a"
-    },
     "remotion-create": {
       "source": "remotion-dev/skills",
       "sourceType": "github",
@@ -30,24 +24,6 @@
       "sourceType": "github",
       "skillPath": "skills/remotion-docs/SKILL.md",
       "computedHash": "ddc9c9ba1ec8498f8803eff5e8e50d6e8d382b1d1f6938239f39f3fcbf5f08f4"
-    },
-    "remotion-interactivity": {
-      "source": "remotion-dev/skills",
-      "sourceType": "github",
-      "skillPath": "skills/remotion-interactivity/SKILL.md",
-      "computedHash": "e181fdd93dc3ac7e65280d48c1c3db1de55b21b8ba2f93371e02a1176d7442d4"
-    },
-    "remotion-license": {
-      "source": "remotion-dev/skills",
-      "sourceType": "github",
-      "skillPath": "skills/remotion-license/SKILL.md",
-      "computedHash": "eb1dacdc75d9df9a950566fcc509b7aa0460772922a912eb98bac8e362b73314"
-    },
-    "remotion-maps": {
-      "source": "remotion-dev/skills",
-      "sourceType": "github",
-      "skillPath": "skills/remotion-maps/SKILL.md",
-      "computedHash": "98948e75ce0a458e398bbfd99dea409c0b2dd2972b3a1dbd4f831ce3c1743e7f"
     },
     "remotion-markup": {
       "source": "remotion-dev/skills",
@@ -66,12 +42,6 @@
       "sourceType": "github",
       "skillPath": "skills/remotion-render/SKILL.md",
       "computedHash": "766c89563d6e7f00c8e1fc3134e10703e73575abc91306770c94df5126e0afb1"
-    },
-    "remotion-saas": {
-      "source": "remotion-dev/skills",
-      "sourceType": "github",
-      "skillPath": "skills/remotion-saas/SKILL.md",
-      "computedHash": "73961158fe42e135695cc10c1ccc3d52223cbb922ed9c393d9f459f58186ccc9"
     },
     "remotion-studio": {
       "source": "remotion-dev/skills",

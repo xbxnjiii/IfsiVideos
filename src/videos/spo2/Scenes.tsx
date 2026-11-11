@@ -430,7 +430,6 @@ export const Mesure: React.FC = () => {
 	const PUL = at('mesure', 'pulsée');
 	const FIA = at('mesure', 'fiable');
 	const VER = at('mesure', 'vernis');
-	const MAIN = at('mesure', 'main');
 	const CHAU = at('mesure', 'chaude');
 	const COUR = at('mesure', 'courbe');
 	const REG = at('mesure', 'régulière');

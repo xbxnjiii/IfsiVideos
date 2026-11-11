@@ -71,12 +71,15 @@ Le navigateur sans interface du conteneur de travail et 4 rendus en parallèle s
 
 ## Organisation
 
+Mode d'emploi complet pour fabriquer une vidéo (charte, mascotte, formats, accroches, voix, briques, contrôle) :
+skill `.claude/skills/la-petite-ide/` (catalogue des briques régénéré par `python3 scripts/brand/catalog.py`).
+
 ```
 src/
   Root.tsx                    liste des compositions
   brand/                      LA PETITE IDE : briques réutilisables par toutes les vidéos
     theme.ts                  couleurs, polices, grille
-    ui.tsx, learn.tsx         titres mot à mot, pinceau, cartes, signes ↑ ↓ ✓
+    ui.tsx, learn.tsx         titres mot à mot, pinceau, signes ↑ ↓ ✓
     motion3.tsx               numéro qui s'écrase, termes qui claquent, caméra, socle, compteurs, vague
     motion4.tsx               transitions : plongée, rideau tiré par la mascotte, panoramique éclair
     kit.tsx                   stickers, tampons, puces cochées, rubans, progression par étapes, bulle

@@ -139,7 +139,6 @@ export const Escarre: React.FC = () => {
 	const MEURT = at('escarre', 'meurt');
 	const TROUVE = at('escarre', 'trouve');
 	const SACR = at('escarre', 'sacrum');
-	const BAS = at('escarre', 'bas');
 	const TAL = at('escarre', 'talons');
 	const sacrum = lyPt('sacrum');
 	const heel = lyPt('heel');

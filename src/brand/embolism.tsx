@@ -10,7 +10,6 @@ const N = LPI.navy;
 
 /** Espace du corps entier : 400 × 940 (le `Patient` occupe 400 × 560 en haut, les jambes dessous). */
 export const BODY = {w: 400, h: 940};
-export const bodyPx = (x: number, y: number, size: number) => ({x: (x * size) / BODY.w, y: (y * size) / BODY.w});
 
 /** Trajet du caillot : mollet → veine profonde → veine cave → cœur droit → artère pulmonaire → coincé dans le poumon. */
 const PATH: [number, number][] = [

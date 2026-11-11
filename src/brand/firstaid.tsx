@@ -228,26 +228,6 @@ const Moth: React.FC<{x: number; y: number; o: number}> = ({x, y, o}) => {
 	);
 };
 
-/** Planche à découper avec une tomate (en tranches au fil du couteau : `sliced` 0 → 1). Repère 700 × 300. */
-export const CuttingBoard: React.FC<{width?: number; sliced?: number}> = ({width = 700, sliced = 0}) => (
-	<svg width={width} height={(width * 300) / 700} viewBox="0 0 700 300" style={{overflow: 'visible', display: 'block'}}>
-		<rect x={10} y={150} width={680} height={130} rx={36} fill={LPI.sky} {...S} />
-		<circle cx={640} cy={215} r={18} fill={LPI.paper} stroke={N} strokeWidth={5} />
-		<path d="M60 200 H560 M60 240 H520" stroke={alpha(N, 0.15)} strokeWidth={6} strokeLinecap="round" />
-		<circle cx={300} cy={120} r={90} fill={LPI.pink} {...S} strokeWidth={7} />
-		<path d="M270 40 Q300 20 330 40 L300 55 Z" fill={LPI.blue} stroke={N} strokeWidth={5} />
-		<path d="M250 90 Q262 76 278 74" fill="none" stroke={LPI.paper} strokeWidth={9} strokeLinecap="round" />
-		{sliced > 0
-			? [0, 1, 2].map((i) => (
-					<g key={i} opacity={cl(sliced * 3 - i)}>
-						<ellipse cx={420 + i * 46} cy={190} rx={20} ry={44} fill={LPI.pink} stroke={N} strokeWidth={5} />
-						<ellipse cx={420 + i * 46} cy={190} rx={9} ry={28} fill={alpha(LPI.paper, 0.6)} />
-					</g>
-				))
-			: null}
-	</svg>
-);
-
 /** Cadenas (hors de portée), repère 200 × 200. */
 export const Padlock: React.FC<{size?: number}> = ({size = 160}) => (
 	<svg width={size} height={size} viewBox="0 0 200 200" style={{overflow: 'visible', display: 'block'}}>

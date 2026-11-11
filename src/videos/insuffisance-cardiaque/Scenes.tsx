@@ -456,7 +456,6 @@ export const Def: React.FC = () => {
 	const COEUR = at('def', 'cœur');
 	const POMPER = at('def', 'pomper');
 	const ASSEZ = at('def', 'assez');
-	const SANG = at('def', 'sang');
 	const CORPS = at('def', 'corps');
 	const SOUVENT = at('def', 'souvent');
 	const ABIME = at('def', 'abîmé');

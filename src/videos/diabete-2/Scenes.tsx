@@ -486,7 +486,6 @@ export const Trait: React.FC = () => {
 	const ALIM = at('trait', 'alimentation');
 	const ACTI = at('trait', "l'activité");
 	const DEUX = at('trait', 'deux,');
-	const COMP = at('trait', 'comprimés…');
 	const PARF = at('trait', 'parfois');
 	const UN = at('trait', 'un,');
 	const TOUJ = at('trait', 'toujours');

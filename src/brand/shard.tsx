@@ -64,14 +64,6 @@ export const DrinkGlass: React.FC<{size?: number}> = ({size = 120}) => (
 	</svg>
 );
 
-/** Éclat de verre (100 × 160), pointe en bas. */
-export const Shard: React.FC<{size?: number}> = ({size = 100}) => (
-	<svg width={size} height={(size * 160) / 100} viewBox="0 0 100 160" style={{overflow: 'visible', display: 'block'}}>
-		<path d="M10 6 L92 20 L66 152 Z" fill={alpha(LPI.sky, 0.8)} {...SK} />
-		<path d="M30 20 L58 120" stroke={LPI.paper} strokeWidth={7} strokeLinecap="round" />
-	</svg>
-);
-
 /** Éclats qui volent quand le verre éclate (repère du parent, centrés en 0, 0) ; `t` 0 → 1. */
 export const ShardBurst: React.FC<{t: number; scale?: number}> = ({t, scale = 1}) => {
 	if (t <= 0 || t >= 1) return null;

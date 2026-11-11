@@ -223,51 +223,6 @@ export const DayChip: React.FC<{text: string; tone?: string; size?: number}> = (
 	</div>
 );
 
-/* ───────────── portière qui se referme sur les doigts ───────────── */
-
-/**
- * Repère 600 × 520 : montant de la voiture à droite, portière qui arrive de la gauche (`close` 0 → 1) et des doigts
- * glissés dans l'interstice ; `crush` 0 → 1 : les doigts s'écrasent (rose), éclairs de douleur.
- */
-export const CarDoor: React.FC<{width?: number; close: number; crush?: number}> = ({width = 600, close, crush = 0}) => {
-	const frame = useCurrentFrame();
-	const edge = 120 + 300 * cl(close);
-	const fingers = [150, 230, 310, 390];
-	return (
-		<svg width={width} height={(width * 520) / 600} viewBox="0 0 600 520" style={{overflow: 'visible', display: 'block'}}>
-			{/* carrosserie (montant) */}
-			<rect x={440} y={20} width={140} height={480} rx={26} fill={LPI.blue} {...S} />
-			<rect x={466} y={50} width={88} height={160} rx={16} fill={LPI.sky} stroke={N} strokeWidth={5} />
-			{/* doigts (main à droite, derrière le montant) */}
-			{fingers.map((y, i) => {
-				const sq = crush * (0.55 - i * 0.04);
-				const x0 = Math.max(edge - 30, 320);
-				return (
-					<g key={i} transform={`translate(0 ${y})`}>
-						<rect x={x0 + 40 * sq} y={-26 - 6 * sq} width={480 - x0 - 40 * sq} height={52 + 12 * sq} rx={26 - 10 * sq} fill={LPI.paper} {...S} strokeWidth={6} />
-						<rect x={x0 + 40 * sq} y={-26 - 6 * sq} width={60} height={52 + 12 * sq} rx={20} fill={alpha(LPI.pink, 0.25 + 0.7 * crush)} />
-						<path d={`M${x0 + 20 + 40 * sq} ${-12} q10 12 0 24`} fill="none" stroke={alpha(N, 0.35)} strokeWidth={4} />
-					</g>
-				);
-			})}
-			{/* portière */}
-			<g transform={`translate(${edge - 420} 0)`}>
-				<path d="M0 30 H400 Q420 30 420 50 V480 Q420 500 400 500 H0 Z" fill={LPI.blue} {...S} />
-				<path d="M40 60 H370 Q390 60 390 80 V220 H40 Z" fill={LPI.sky} stroke={N} strokeWidth={5} />
-				<path d="M90 90 L170 190 M150 80 L240 190" stroke={alpha(LPI.paper, 0.8)} strokeWidth={10} strokeLinecap="round" />
-				<rect x={280} y={290} width={90} height={26} rx={13} fill={LPI.paper} stroke={N} strokeWidth={5} />
-			</g>
-			{/* douleur */}
-			{crush > 0
-				? [0, 1, 2].map((i) => {
-						const f = 0.5 + 0.5 * Math.sin(frame * 0.9 + i * 2);
-						return <path key={i} d={`M${edge + 20 + i * 30} ${110 + i * 120} l24 -26 l6 18 l26 -24`} fill="none" stroke={LPI.pink} strokeWidth={8} strokeLinecap="round" strokeLinejoin="round" opacity={crush * (0.4 + 0.6 * f)} />;
-					})
-				: null}
-		</svg>
-	);
-};
-
 /* ───────────── plaie vue de dessus ───────────── */
 
 /**
@@ -782,7 +737,7 @@ export const walkerLegs = (phase: number) => {
  * à faire pivoter par le parent). `hair` : 'man' | 'old' | 'kid' ; `cry` ; `chin` : plaie au menton ; `legWound` : plaie
  * sur le tibia avant ; `size` : 1 = adulte, 0.75 = enfant (tout rapetisse, la tête reste grosse).
  */
-export const Walker: React.FC<{width?: number; pose?: 'walk' | 'hop' | 'fall' | 'cut' | 'hurt'; phase?: number; hair?: 'man' | 'old' | 'kid'; cry?: number; chin?: number; pain?: number; legWound?: number; shirt?: string; chop?: number; bandage?: number}> = ({width = 300, pose = 'walk', phase = 0, hair = 'man', cry = 0, chin = 0, pain = 0, legWound = 0, shirt = LPI.sky, chop = 0, bandage = 0}) => {
+export const Walker: React.FC<{width?: number; pose?: 'walk' | 'hop' | 'fall'; phase?: number; hair?: 'man' | 'old' | 'kid'; cry?: number; chin?: number; pain?: number; legWound?: number; shirt?: string}> = ({width = 300, pose = 'walk', phase = 0, hair = 'man', cry = 0, chin = 0, pain = 0, legWound = 0, shirt = LPI.sky}) => {
 	const frame = useCurrentFrame();
 	const SHORTS = hair === 'old' ? N : LPI.blue;
 	const S2: [number, number] = [160, 176];
@@ -790,54 +745,7 @@ export const Walker: React.FC<{width?: number; pose?: 'walk' | 'hop' | 'fall' | 
 	let arms: React.ReactNode;
 	let farArm: React.ReactNode = null;
 	const shoe = (F: [number, number], dark = false, rot = 0) => <ellipse cx={F[0] + 14} cy={F[1] + 2} rx={36} ry={16} fill={dark ? alpha(N, 0.7) : N} transform={`rotate(${rot} ${F[0]} ${F[1]})`} />;
-	if (pose === 'cut' || pose === 'hurt') {
-		/* debout au plan de travail : il coupe (`chop` 0 → 1, couteau qui monte et descend) ou se tient la main blessée */
-		const H: [number, number] = [150, 330];
-		legs = (
-			<>
-				{limb([H, [140, 460], [134, 586]], 44, alpha(LPI.pink, 0.45))}
-				{shoe([134, 588], true)}
-				{limb([H, [160, 460], [158, 586]], 44, SKIN_FILL)}
-				{limb([H, [156, 410]], 64, SHORTS)}
-				{shoe([158, 588])}
-			</>
-		);
-		if (pose === 'cut') {
-			const hy = 300 + 34 * chop;
-			const hd: [number, number] = [300, hy];
-			farArm = (
-				<>
-					{limb([S2, [236, 272], [336, 318]], 28, alpha(LPI.pink, 0.45))}
-				</>
-			);
-			arms = (
-				<>
-					{limb([S2, [226, 276], hd], 32, SKIN_FILL)}
-					{/* couteau tenu dans la main */}
-					<path d={`M${hd[0] + 6} ${hd[1] + 4} L${hd[0] + 104} ${hd[1] + 40} L${hd[0] + 10} ${hd[1] + 30} Z`} fill={LPI.paper} {...S} strokeWidth={5} />
-					<rect x={hd[0] - 34} y={hd[1] - 10} width={44} height={22} rx={8} fill={N} transform={`rotate(20 ${hd[0]} ${hd[1]})`} />
-					<circle cx={hd[0]} cy={hd[1]} r={16} fill={SKIN_FILL} stroke={N} strokeWidth={5} />
-				</>
-			);
-		} else {
-			const hd: [number, number] = [228, 176];
-			arms = (
-				<>
-					{limb([S2, [232, 250], hd], 32, SKIN_FILL)}
-					{limb([S2, [196, 262], [222, 206]], 30, SKIN_FILL)}
-					<circle cx={222} cy={206} r={14} fill={SKIN_FILL} stroke={N} strokeWidth={5} />
-					<circle cx={hd[0]} cy={hd[1]} r={18} fill={SKIN_FILL} stroke={N} strokeWidth={5} />
-					{/* le doigt coupé (ou déjà pansé) */}
-					<rect x={hd[0] - 6} y={hd[1] - 46} width={14} height={34} rx={7} fill={SKIN_FILL} stroke={N} strokeWidth={4} />
-					{bandage > 0 ? (
-						<rect x={hd[0] - 9} y={hd[1] - 36} width={20} height={16} rx={4} fill={LPI.pink} stroke={N} strokeWidth={3} opacity={bandage} />
-					) : (
-						<rect x={hd[0] - 5} y={hd[1] - 32} width={12} height={6} rx={3} fill={LPI.pink} />
-					)}
-				</>
-			);
-		}
-	} else 	if (pose === 'hop') {
+	if (pose === 'hop') {
 		const H: [number, number] = [150, 330];
 		const K: [number, number] = [232, 404];
 		const F: [number, number] = [196, 500];
@@ -855,7 +763,7 @@ export const Walker: React.FC<{width?: number; pose?: 'walk' | 'hop' | 'fall' | 
 		);
 		arms = (
 			<>
-				{limb([S2, [214, 280], [200, 470]], 32, shirt === LPI.sky ? SKIN_FILL : SKIN_FILL)}
+				{limb([S2, [214, 280], [200, 470]], 32, SKIN_FILL)}
 				<circle cx={200} cy={474} r={15} fill={SKIN_FILL} stroke={N} strokeWidth={5} />
 			</>
 		);

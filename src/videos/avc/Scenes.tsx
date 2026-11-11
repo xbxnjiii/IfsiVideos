@@ -19,7 +19,6 @@ import {at} from './timeline';
 const ease = {...clamp, easing: Easing.inOut(Easing.cubic)};
 const easeIn = {...clamp, easing: Easing.in(Easing.cubic)};
 const N = LPI.navy;
-const pulseAt = (frame: number, period = 25) => Math.exp(-(frame % period) / 5);
 const idle = (frame: number) => 0.5 - 0.5 * Math.cos(frame / 22);
 /** 1900000 → « 1 900 000 » (espaces fines) */
 const fmt = (v: number) => Math.round(v).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
@@ -108,7 +107,6 @@ export const Hook: React.FC = () => {
 	const AVC = at('intro', 'avc');
 	const ET = at('intro', 'et');
 	const MIN = at('intro', 'minute');
-	const CERV = at('intro', 'cerveau');
 	const DEUX = at('intro', '2');
 	const NEUR = at('intro', 'neurones');
 	const ALORS = at('intro', 'alors');
@@ -605,7 +603,6 @@ export const Vite: React.FC = () => {
 	const TOMBE = at('vite', 'tombe');
 	const I = at('vite', 'i');
 	const INER = at('vite', 'inertie');
-	const BRAS = at('vite', 'bras');
 	const REP = at('vite', 'répond');
 	const T = at('vite', 't');
 	const PAROLE = at('vite', 'parole');
@@ -693,7 +690,6 @@ export const Urgence: React.FC = () => {
 	const Q15 = at('urgence', '15');
 	const HEURE = at('urgence', "l'heure");
 	const DEBUT = at('urgence', 'début');
-	const CHAQUE = at('urgence', 'chaque');
 	const COMPTE = at('urgence', 'compte');
 	const phone = useSoft(E, true);
 	const digits = frame >= Q15 ? '15' : frame >= Q15 - 6 ? '1' : '';

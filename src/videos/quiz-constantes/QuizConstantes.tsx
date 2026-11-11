@@ -4,7 +4,7 @@
 import React from 'react';
 import {EndCard, Episode, EpisodeTransition} from '../../brand/episode';
 import {wave} from '../../brand/motion3';
-import {runWipe, whip, zoomInto} from '../../brand/motion4';
+import {whip, zoomInto} from '../../brand/motion4';
 import {LPI} from '../../brand/theme';
 import {MASCOT} from './mascot';
 import {Hook, Outro, Quiz, Serie} from './Scenes';

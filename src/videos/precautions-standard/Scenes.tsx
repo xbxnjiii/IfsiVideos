@@ -108,7 +108,6 @@ export const Hook: React.FC = () => {
 	const MICROBE = at('intro', 'microbe');
 	const DEUX = at('intro', 'deux', 2);
 	const IMP = at('intro', 'impossible');
-	const VOIR = at('intro', 'voir');
 	const TOUT = at('intro', 'tout');
 	const MEMES = at('intro', 'mêmes');
 	const REGLES = at('intro', 'règles');
@@ -224,7 +223,6 @@ export const Regle: React.FC = () => {
 	const SIX = at('regle', 'six');
 	const TOUS = at('regle', 'tous');
 	const MEME = at('regle', 'même');
-	const PROT = at('regle', 'protègent');
 	const PAT = at('regle', 'patient');
 	const TOI = at('regle', 'toi');
 	const row = interpolate(frame, [TOUS - 4, TOUS + 8], [0, 1], ease);
@@ -294,11 +292,8 @@ export const Regle: React.FC = () => {
 /* ═══════════════════════════════ 1 · HYGIÈNE DES MAINS ═══════════════════════════════ */
 export const Mains: React.FC = () => {
 	const frame = useCurrentFrame();
-	const MAINS = at('mains', 'mains');
 	const FRI = at('mains', 'friction');
-	const AVB = at('mains', 'avant-bras');
 	const DEG = at('mains', 'dégagés');
-	const ONG = at('mains', 'ongles');
 	const COURTS = at('mains', 'courts');
 	const VER = at('mains', 'vernis');
 	const BIJ = at('mains', 'bijou');
@@ -381,9 +376,7 @@ export const Epi: React.FC = () => {
 	const frame = useCurrentFrame();
 	const EQ = at('epi', 'équipements');
 	const GANTS = at('epi', 'gants');
-	const SANG = at('epi', 'sang');
 	const TAB = at('epi', 'tablier');
-	const MOU = at('epi', 'mouille');
 	const MASQ = at('epi', 'masque');
 	const LUN = at('epi', 'lunettes');
 	const PROJ = at('epi', 'projection');
@@ -450,7 +443,6 @@ export const Toux: React.FC = () => {
 	const MASQ = at('toux', 'masque');
 	const COUDE = at('toux', 'coude');
 	const JETTE = at('toux', 'jette');
-	const MOU = at('toux', 'mouchoir');
 	const SUITE = at('toux', 'suite');
 	const P = {x: 60, y: 40, size: 330};
 	const mask = fadeIn(frame, MASQ - 2, 10);
@@ -593,7 +585,6 @@ export const Excreta: React.FC = () => {
 	const TAB = at('excreta', 'tablier');
 	const JAM = at('excreta', 'jamais');
 	const DOU = at('excreta', 'douchette');
-	const BAS = at('excreta', 'bassin');
 	const ECL = at('excreta', 'éclabousse');
 	const PART = at('excreta', 'partout');
 	const spray = fadeIn(frame, DOU, 6) * (1 - fadeIn(frame, PART + 10, 8));

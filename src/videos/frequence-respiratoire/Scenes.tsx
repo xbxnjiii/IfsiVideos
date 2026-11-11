@@ -141,7 +141,6 @@ export const Hook: React.FC = () => {
 	const MILLE = at('intro', 'mille');
 	const RESP = at('intro', 'respires');
 	const JOUR = at('intro', 'jour');
-	const PENSER = at('intro', 'penser');
 	const POURTANT = at('intro', 'pourtant');
 	const HOP = at('intro', "l'hôpital");
 	const CONST = at('intro', 'constante');

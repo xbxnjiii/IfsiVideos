@@ -23,7 +23,6 @@ import {at} from './timeline';
 
 const ease = {...clamp, easing: Easing.inOut(Easing.cubic)};
 const N = LPI.navy;
-const idle = (frame: number, period = 70) => 0.5 - 0.5 * Math.cos((frame / period) * Math.PI * 2);
 const fadeIn = (frame: number, a: number, d = 10) => interpolate(frame, [a, a + d], [0, 1], clamp);
 /** Pop plus posé que d'habitude (ressort plus lent, ~10 % de dépassement). */
 const popAt = (frame: number, t0: number) => (frame < t0 ? 0 : 1 + 0.1 * Math.exp(-(frame - t0) / 5) * Math.cos((frame - t0) * 0.55) - Math.exp(-(frame - t0) / 3.2));
@@ -111,7 +110,6 @@ export const Hook: React.FC = () => {
 	const ENTR = at('intro', "d'entrer");
 	const MANQ = at('intro', 'manque');
 	const CLE = at('intro', 'clé');
-	const INSU = at('intro', "l'insuline");
 	const MAL = at('intro', 'maladie');
 	const DIAB = at('intro', 'diabète');
 	const keys: CamKey[] = [

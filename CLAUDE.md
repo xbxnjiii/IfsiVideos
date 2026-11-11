@@ -9,6 +9,9 @@ numérotée en étapes (gags au mot près, puces cochées, kit `src/brand/kit.ts
 Les anciennes versions (v1 à v4, labo HyperFrames, anatomie SVG / 3D) ont été retirées : elles restent
 dans l'historique git (dernier état complet : commit `ce2a0a2`).
 Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/charte-video.md`.
+**Skill `la-petite-ide`** (`.claude/skills/la-petite-ide/`) : le mode d'emploi réutilisable (charte, mascotte, formats et
+accroches, voix, catalogue des briques `references/briques.md`, recette et contrôle). Le charger avant toute vidéo ;
+ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
 
 ## Règles de marque (non négociables)
 
@@ -268,17 +271,22 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   que `Objet-Plante` (accroche · 2 – 3 notions · chute, `progress={false}`, `{minTotal: 0}`). Briques
   `src/brand/injury.tsx` : `Walker` (adulte de profil : `walk` avec `phase`, `hop` sautille en tenant son pied, `fall` tombe en pivotant
   autour des pieds ; `hair` man / old / kid, `chin` plaie au menton, `legWound`), `Bike`, `Boy` (garçon de profil : `ride` sur le vélo, `fly` éjecté, `sit` assis qui se tient le genou écorché), `Stone`, `Knee` (genou qui se râpe, guérit), `Meter` (jauge), `DeepBits` (vaisseau,
-  nerf, tendon dans `SkinBlock`), `DepthRuler`, `DayChip`, `CarDoor`, `WoundTop` (plaie vue de dessus franche / contuse,
+  nerf, tendon dans `SkinBlock`), `DepthRuler`, `DayChip`, `WoundTop` (plaie vue de dessus franche / contuse,
   sutures, écrasement, nécrose, `heal`), `NailBoard`, `Mosquito`, `VaxBook`, `Stetho`, `Cat`, `Dog`, `BittenHand`
   (traces de crocs, main qui gonfle), `WeeksBar` (frise des semaines, cadenas), `AirMattress`, `TurnArrows`, `FootTop`.
   Bruitages ajoutés : `bike`, `skid`, `fall`, `car-door`, `chop`, `meow`, `hiss`. Attention : `at()` ignore les accents,
   « là » = « la » (prendre le mot suivant).
 
-- `Trousse-Secours` (n° 38, ≈ 48 s, **voix gratuite edge-tts**, demandé) : même règle d'accroche (scène sans texte, « plus réaliste » demandé : un
-  monsieur coupe une tomate dans sa cuisine, le couteau glisse, il se tient la main, la trousse est vide ; la fin rejoue la
-  même cuisine avec la trousse pleine et le doigt pansé ; `Walker` poses `cut` / `hurt`), puis la trousse se remplit objet par objet (gros plan + rôle, il file dans sa
-  case), les bons réflexes, chute « tout est là ». Briques `src/brand/firstaid.tsx` : `FirstAidKit` (`open`, `items`,
-  `empty`, `shine`, cases `KIT_SLOTS`), `KitItem` (13 objets), `EmergencyCard`, `CuttingBoard`, `Padlock`.
+- `Trousse-Secours` (n° 38, ≈ 48 s, **voix gratuite edge-tts**, demandé) : même règle d'accroche (scène sans texte). Le
+  bonhomme dans sa cuisine (« mal fait ») puis le gros plan dessiné vu de dessus (`CuttingCloseUp` : planche, tomate,
+  main, couteau qui glisse sur l'index, pansement à la fin) ont été jugés « trop illustrés » : le propriétaire veut du
+  **réaliste sans faute visuelle**. Test : clip IA `public/clips/couteau-seedance.mp4` (Seedance 2.5 via ElevenLabs,
+  ≈ 14 000 crédits, **trop cher** selon le propriétaire ; sorti en 16:9 720p malgré « vertical » ; le couteau ne touche
+  pas le doigt à l'image). Toujours **annoncer le prix (`estimate_only`) avant une génération vidéo** : Kling 2.5 Turbo
+  ≈ 2 100, LTX v2 Fast ≈ 1 450 crédits pour 5 s. Higgsfield : 0 crédit. Ensuite la trousse se remplit objet par objet
+  (gros plan + rôle, il file dans sa case), les bons réflexes, chute « tout est là ». Briques `src/brand/firstaid.tsx` :
+  `FirstAidKit` (`open`, `items`, `empty`, `shine`, cases `KIT_SLOTS`), `KitItem` (13 objets), `EmergencyCard`,
+  `CuttingCloseUp` + `CUT_TIP`, `Padlock`.
 
 ## Voix ElevenLabs « Laura » (choisie par le propriétaire pour les nouvelles vidéos)
 
@@ -379,9 +387,9 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   ≥ 5/30, BPS en réanimation, EVENDOL < 7 ans ≥ 4/15). Deux accroches nouvelles : **« question au spectateur »** (« De zéro à
   dix… tu as mal à combien, là, maintenant ? », le doigt hésite sur l'échelle, « 4 ! », tampon ÉVALUÉE) et **« patient
   muet »** (choisie par le propriétaire : « Il ne peut plus parler… et pourtant, il souffre. Comment le savoir ? », bulle
-  vide barrée, tampon « Ça se mesure ! »). Briques `pain.tsx` : `NumScale`, `Ruler` (`pos`, `flip`), `WordScale`,
-  `FacesScale` / `PainFace` (sans sourire ni larmes), `Kid` (enfant : pleure, montre, s'agite, se recroqueville), `Ventilator`,
-  `ObsSheet` (grille oui / non ou points + score), `ScoreBar` (seuil), `Bubble`, `TalkIcon` / `MuteIcon`, `PAIN_PARTS` ;
+  vide barrée, tampon « Ça se mesure ! »). Briques `pain.tsx` (v2) : `Ruler` (`pos`, `flip`),
+  `PainFace` (sans sourire ni larmes), `Kid` (enfant : pleure, montre, s'agite, se recroqueville), `Ventilator`,
+  `ScoreBar` (seuil), `Bubble`, `TalkIcon` / `MuteIcon`, `PAIN_PARTS` ;
   `Patient` : `elder` (personne âgée). Voix : « l'{EVA|É V A} » (un « E V A » était entendu « le VA »), « on utilise
   l'échelle {EVENDOL|Évendol} » (après « utilise » seul, la liaison donnait « les vandales »), « À partir de cinq sur
   trente » (« Dès cinq » était entendu « dessin »).

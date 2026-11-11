@@ -176,7 +176,6 @@ export const RingShape: React.FC = () => (
 
 export type ReflexKind = 'mains' | 'epi' | 'toux' | 'aes' | 'excreta' | 'env';
 export const REFLEXES: ReflexKind[] = ['mains', 'epi', 'toux', 'aes', 'excreta', 'env'];
-export const REFLEX_LABEL: Record<ReflexKind, string> = {mains: 'mains', epi: 'protections', toux: 'toux', aes: 'piqûres', excreta: 'excreta', env: 'environnement'};
 
 export const ReflexIcon: React.FC<{kind: ReflexKind; size?: number}> = ({kind, size = 60}) => {
 	if (kind === 'mains') return <Hand size={size * 0.72} />;

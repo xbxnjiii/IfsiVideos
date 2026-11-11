@@ -79,11 +79,9 @@ const lk = LEG.w / 500;
 const legPt = (p: readonly [number, number]) => ({x: LEG.x - LEG.w / 2 + p[0] * lk, y: LEG.y - (700 * lk) / 2 + p[1] * lk});
 
 export const Pied: React.FC = () => {
-	const frame = useCurrentFrame();
 	const DIAB = at('pied', 'diabétique,');
 	const SUCRE = at('pied', 'sucre');
 	const ABIME = at('pied', 'abîme');
-	const NERFS = at('pied', 'nerfs');
 	const DOULEUR = at('pied', 'douleur');
 	const REMONTE = at('pied', 'remonte');
 	const PETITE = at('pied', 'petite');

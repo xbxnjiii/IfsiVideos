@@ -1,9 +1,6 @@
 import {makeTimeline} from '../../brand/timeline';
 import voice from './voice.json';
 
-/** 72 bpm à 30 fps (battement toutes les 25 frames). */
-export const BEAT = 25;
-
 // Voix : voir voix/02-constantes.script.json (texte exact dit). Transitions de 14 frames, démarrées 0,25 s avant la partie.
 export const TL = makeTimeline(voice, {minTotal: 61 * 30, tail: 1.2, endCard: 2.6, transition: 14, preRoll: 0.25});
 
