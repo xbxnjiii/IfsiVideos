@@ -301,7 +301,9 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   `bleed`, `clean`, `wet`, `tint`, calques en `children`), `BandageG` (pansement dans le repère du doigt : `tab1` / `tab2`,
   `wrapTop` / `wrapBottom`, `lift`, `sloppy`, `wet`, `dirt`, `glow`), `Presser` (doigt qui lisse / appuie), `TargetRing`,
   `WashFx`, `DabPad`, `FINGER`, `fingerPt`. Storyboard `docs/lpi/storyboard-pansement.md`.
-- `Brulure` (n° 40, ≈ 47 s, voix gratuite d'abord) : accroche sans texte (le doigt touche le bord d'une casserole), idées
+- `Brulure` (n° 40, ≈ 47 s, voix gratuite d'abord) : accroche sans texte, **mise en situation demandée** : plan large sur
+  la plaque vitrocéramique (foyer allumé qui rougeoie, bandeau tactile), la casserole avec son manche (`CooktopG`,
+  `HotPanG` `handle`), le doigt touche le bord de la casserole ; idées
   reçues barrées (glaçon, beurre, dentifrice), eau du robinet 15 min + règle des 3 × 15, cloque qu'on ne perce pas,
   compresse ou pansement gras, paracétamol, quand consulter, chute « merci ! ». Briques `src/brand/burn.tsx` + `BigFinger`
   (`burn`, `heat`, `blister`). Storyboard `docs/lpi/storyboard-brulure.md`.

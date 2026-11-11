@@ -2,7 +2,7 @@
 
 | Partie | Voix | Image |
 |---|---|---|
-| intro | Aïe ! Ton doigt touche le bord de la casserole. Ça chauffe, ça rougit… Alors, tu fais quoi ? | Sans texte : grand doigt au-dessus d'une casserole qui frémit (vapeur) ; il touche le bord (image 3), flash, il remonte ; la peau rougit, ondes de chaleur ; « ? » |
+| intro | Aïe ! Ton doigt touche le bord de la casserole. Ça chauffe, ça rougit… Alors, tu fais quoi ? | Sans texte : plan large sur la plaque de cuisson (foyer allumé qui rougeoie, bandeau tactile), la casserole qui frémit et son manche ; le doigt passe au-dessus ; il touche le bord (image 3), flash, il remonte ; la peau rougit, ondes de chaleur ; « ? » |
 | idees | Un glaçon ? Du beurre ? Du dentifrice ? Surtout pas ! Le glaçon abîme encore plus la peau, et le reste garde la chaleur et peut infecter la brûlure. | Trois tuiles au mot (glaçon, beurre, dentifrice), barrées d'une croix rose sur « Surtout pas ! » ; deux cartes qui expliquent pourquoi |
 | eau | Le bon réflexe : passe-la sous l'eau du robinet, pendant quinze minutes. Retiens la règle des trois quinze : une eau à environ quinze degrés, à quinze centimètres du robinet, pendant quinze minutes. | Le doigt sous le filet d'eau (éclaboussures), la rougeur s'atténue ; chrono qui monte jusqu'à 15 min ; « La règle des 3 × 15 » ; cartes 15 °C · 15 cm · 15 min au mot |
 | proteger | Une cloque ? On ne la perce pas : elle protège la peau en dessous. Couvre avec une compresse stérile ou un pansement gras, et prends du paracétamol si ça fait mal. | La cloque gonfle ; une épingle approche, croix, elle repart ; « elle protège la peau » ; compresse stérile puis pansement gras posés dessus ; carte paracétamol |

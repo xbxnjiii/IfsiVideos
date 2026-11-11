@@ -19,7 +19,7 @@ const LINE = {stroke: alpha(N, 0.72), strokeWidth: 3.5, strokeLinejoin: 'round' 
  * Casserole vue de dessus, dans le repère d'un `BigFinger` (centre (`x`, `y`), rayon `r`) : bord en inox épais, fond
  * plus sombre, eau qui frémit et vapeur ; `hot` 0 → 1 le bord rougit légèrement, ondes de chaleur.
  */
-export const HotPanG: React.FC<{x: number; y: number; r: number; hot?: number}> = ({x, y, r, hot = 1}) => {
+export const HotPanG: React.FC<{x: number; y: number; r: number; hot?: number; handle?: number}> = ({x, y, r, hot = 1, handle}) => {
 	const frame = useCurrentFrame();
 	const id = React.useId().replace(/:/g, '');
 	return (
@@ -39,6 +39,18 @@ export const HotPanG: React.FC<{x: number; y: number; r: number; hot?: number}> 
 				</filter>
 			</defs>
 			<circle cx={x + 20} cy={y + 34} r={r} fill={alpha(N, 0.25)} filter={`url(#ps${id})`} />
+			{/* le manche (angle `handle` en degrés), avec sa plaque rivetée */}
+			{handle !== undefined ? (
+				<g transform={`translate(${x} ${y}) rotate(${handle})`}>
+					<rect x={r * 0.9} y={-34} width={r * 1.25} height={68} rx={34} fill={alpha(N, 0.22)} filter={`url(#ps${id})`} transform="translate(16 26)" />
+					<rect x={r * 0.86} y={-22} width={110} height={44} rx={10} fill={mix(LPI.paper, LPI.sky, 0.6)} {...LINE} />
+					<circle cx={r * 0.86 + 30} cy={0} r={7} fill={alpha(N, 0.5)} />
+					<circle cx={r * 0.86 + 76} cy={0} r={7} fill={alpha(N, 0.5)} />
+					<rect x={r * 0.86 + 90} y={-34} width={r * 1.2} height={68} rx={34} fill={LPI.blue} stroke={LPI.paper} strokeWidth={5} />
+					<path d={`M${r * 0.86 + 120} -14 L${r * 0.86 + 70 + r * 1.2} -14`} stroke={alpha(LPI.paper, 0.55)} strokeWidth={10} strokeLinecap="round" />
+					<circle cx={r * 0.86 + 60 + r * 1.2} cy={0} r={12} fill={mix(LPI.paper, LPI.sky, 0.5)} stroke={alpha(LPI.paper, 0.4)} strokeWidth={3} />
+				</g>
+			) : null}
 			<circle cx={x} cy={y} r={r} fill={`url(#rim${id})`} {...LINE} />
 			<circle cx={x} cy={y} r={r * 0.86} fill={`url(#bot${id})`} stroke={alpha(N, 0.5)} strokeWidth={3} />
 			{/* bulles qui frémissent */}
@@ -56,6 +68,52 @@ export const HotPanG: React.FC<{x: number; y: number; r: number; hot?: number}> 
 				const yy = y - t * r * 0.9;
 				return <path key={i} d={`M${xx} ${yy} q-30 -40 0 -80 q30 -40 0 -80`} fill="none" stroke={alpha(LPI.paper, 0.85)} strokeWidth={18} strokeLinecap="round" opacity={Math.sin(t * Math.PI) * cl(hot)} />;
 			})}
+		</g>
+	);
+};
+
+/**
+ * Plaque de cuisson vitrocéramique vue de dessus, dans le repère d'un `BigFinger` : verre bleu nuit avec reflet, rebord,
+ * deux foyers (celui du dessous de la casserole, en (`x`, `y`), rougeoie si `on`), un foyer éteint, bandeau tactile.
+ */
+export const CooktopG: React.FC<{x: number; y: number; on?: number}> = ({x, y, on = 1}) => {
+	const frame = useCurrentFrame();
+	const id = React.useId().replace(/:/g, '');
+	const glow = cl(on) * (0.75 + 0.25 * Math.sin(frame / 7));
+	return (
+		<g>
+			<defs>
+				<linearGradient id={`hob${id}`} x1="0" y1="0" x2="1" y2="1">
+					<stop offset="0" stopColor={mix(N, LPI.blue, 0.22)} />
+					<stop offset="1" stopColor={N} />
+				</linearGradient>
+				<radialGradient id={`fire${id}`} cx="0.5" cy="0.5" r="0.5">
+					<stop offset="0.62" stopColor={alpha(LPI.pink, 0)} />
+					<stop offset="0.8" stopColor={alpha(LPI.pink, 0.75)} />
+					<stop offset="1" stopColor={alpha(LPI.pink, 0)} />
+				</radialGradient>
+			</defs>
+			{/* plan de travail autour */}
+			<rect x={-700} y={-900} width={2400} height={3200} fill={mix(LPI.paper, LPI.sky, 0.35)} />
+			{/* la plaque */}
+			<rect x={-420} y={60} width={1840} height={1500} rx={40} fill={alpha(N, 0.3)} transform="translate(0 20)" />
+			<rect x={-420} y={60} width={1840} height={1500} rx={40} fill={`url(#hob${id})`} stroke={mix(LPI.sky, LPI.paper, 0.4)} strokeWidth={14} />
+			<path d="M-380 120 L1300 120" stroke={alpha(LPI.paper, 0.12)} strokeWidth={30} strokeLinecap="round" />
+			<path d="M-300 260 L60 100" stroke={alpha(LPI.paper, 0.08)} strokeWidth={60} strokeLinecap="round" />
+			{/* foyer éteint, à gauche */}
+			<circle cx={x - 620} cy={y + 60} r={210} fill="none" stroke={alpha(LPI.paper, 0.18)} strokeWidth={6} />
+			<circle cx={x - 620} cy={y + 60} r={150} fill="none" stroke={alpha(LPI.paper, 0.1)} strokeWidth={4} />
+			{/* foyer allumé : halo rose qui dépasse de la casserole */}
+			<circle cx={x} cy={y} r={400} fill={`url(#fire${id})`} opacity={glow} />
+			<circle cx={x} cy={y} r={360} fill="none" stroke={alpha(LPI.pink, 0.7 * cl(on))} strokeWidth={10} />
+			{/* bandeau tactile */}
+			<g transform={`translate(${x - 40} ${y + 470})`} opacity={0.9}>
+				{[0, 1, 2, 3].map((i) => (
+					<circle key={i} cx={i * 120} cy={0} r={30} fill="none" stroke={alpha(LPI.paper, 0.45)} strokeWidth={5} />
+				))}
+				<rect x={490} y={-26} width={90} height={52} rx={10} fill={alpha(LPI.pink, 0.25 + 0.5 * cl(on))} />
+				<text x={535} y={14} textAnchor="middle" fontFamily={FONT.title} fontWeight={900} fontSize={40} fill={LPI.paper}>9</text>
+			</g>
 		</g>
 	);
 };

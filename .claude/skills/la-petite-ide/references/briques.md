@@ -128,6 +128,7 @@ Briques « respiration » réutilisables : rythme respiratoire qui change sans �
 « Comment soigner une petite brûlure ? » : casserole vue de dessus (bord en inox, fond, vapeur), eau du robinet qui coule sur le doigt (dans le repère d'un `BigFinger`), glaçon, beurre, tube de dentifrice, carte « 15 » de la règle des trois quinze, compresse posée sur la brûlure, épingle. Même rendu soigné que bandage.tsx. Couleurs de la marque.
 
 - `HotPanG` — Casserole vue de dessus, dans le repère d'un `BigFinger` (centre (`x`, `y`), rayon `r`) : bord en inox épais, fond plus sombre, eau qui frémit et vapeur ; `hot` 0 → 1 le bord rougit légèrement, ondes de chaleur.
+- `CooktopG` — Plaque de cuisson vitrocéramique vue de dessus, dans le repère d'un `BigFinger` : verre bleu nuit avec reflet, rebord, deux foyers (celui du dessous de la casserole, en (`x`, `y`), rougeoie si `on`), un foyer éteint, bandeau tactile.
 - `WaterStreamG` — Eau du robinet qui coule sur la brûlure (repère d'un `BigFinger`) : bec de robinet en haut, filet, éclaboussures.
 - `GauzeOnG` — Compresse (ou pansement gras) posée à plat sur la brûlure (repère d'un `BigFinger`) ; `greasy` : tulle gras.
 - `PinG` — Épingle qui s'approche de la cloque (repère d'un `BigFinger`), `t` 0 → 1.

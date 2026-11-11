@@ -5,7 +5,7 @@ import React from 'react';
 import {AbsoluteFill, Easing, interpolate, useCurrentFrame} from 'remotion';
 import {BigFinger, FINGER, fingerPt} from '../../brand/bandage';
 import {Big, fadeIn, Flash, Fly, PointTag, popAt, RowCard} from '../../brand/bold';
-import {ButterPat, FifteenCard, GauzeOnG, HotPanG, IceCube, PinG, ToothpasteTube, WaterStreamG} from '../../brand/burn';
+import {ButterPat, CooktopG, FifteenCard, GauzeOnG, HotPanG, IceCube, PinG, ToothpasteTube, WaterStreamG} from '../../brand/burn';
 import {Stopwatch} from '../../brand/episode';
 import {KitItem} from '../../brand/firstaid';
 import {Kid, PainFace} from '../../brand/pain';
@@ -61,6 +61,9 @@ const Cross: React.FC<{at: number; size?: number}> = ({at: t0, size = 240}) => {
 	);
 };
 
+/** La casserole sur le feu (repère du doigt) : son bord du haut touche le côté du doigt. */
+const PAN = {x: B.x, y: FINGER.bottom + 330, r: 320};
+
 /* ═══════════════════════════════ ACCROCHE : LE BORD DE LA CASSEROLE ═══════════════════════════════ */
 export const Hook: React.FC = () => {
 	const frame = useCurrentFrame();
@@ -68,7 +71,10 @@ export const Hook: React.FC = () => {
 	const CHAUFFE = at('intro', 'chauffe,');
 	const ROUGIT = at('intro', 'rougit…');
 	const ALORS = at('intro', 'alors,');
-	const FT = topFor(640);
+	// plan large : on voit toute la plaque, la casserole et son manche
+	const W = 900;
+	const L = 540 - (B.x * W) / 1000;
+	const FT = 400 - (FINGER.axis * W) / 1000;
 	// le doigt descend, touche le bord (image 3), sursaute et remonte
 	const dy = frame < AIE ? interpolate(frame, [0, AIE], [-30, 6], clamp) : 6 - 150 * lin(frame, AIE, AIE + 8) + 6 * Math.exp(-(frame - AIE - 8) / 5) * Math.cos((frame - AIE - 8) * 0.9) * (frame > AIE + 8 ? 1 : 0);
 	const burn = interpolate(frame, [AIE, AIE + 30, ROUGIT, ROUGIT + 14], [0, 0.45, 0.55, 1], clamp);
@@ -76,14 +82,15 @@ export const Hook: React.FC = () => {
 		<AbsoluteFill>
 			<Bg tone={LPI.pink} />
 			<Camera punches={[AIE + 1, CHAUFFE + 1, ROUGIT + 1, ALORS + 1]} shakes={[AIE + 1]} strength={0.04}>
-				{/* la casserole, dans le même repère que le doigt */}
-				<svg width={FW} height={(FW * 400) / 1000} viewBox="0 0 1000 400" style={{position: 'absolute', left: FL, top: FT, overflow: 'visible'}}>
-					<HotPanG x={B.x} y={FINGER.bottom + 440} r={430} />
+				{/* la plaque de cuisson, le feu allumé, la casserole et son manche, dans le même repère que le doigt */}
+				<svg width={W} height={(W * 400) / 1000} viewBox="0 0 1000 400" style={{position: 'absolute', left: L, top: FT, overflow: 'visible'}}>
+					<CooktopG x={PAN.x} y={PAN.y} />
+					<HotPanG x={PAN.x} y={PAN.y} r={PAN.r} handle={118} />
 				</svg>
-				<div style={{position: 'absolute', left: FL, top: FT + (dy * FW) / 1000}}>
-					<BigFinger width={FW} cut={0} burn={burn} heat={fadeIn(frame, CHAUFFE - 4, 8)} />
+				<div style={{position: 'absolute', left: L, top: FT + (dy * W) / 1000}}>
+					<BigFinger width={W} cut={0} burn={burn} heat={fadeIn(frame, CHAUFFE - 4, 8)} />
 				</div>
-				<Question at={ALORS} x={540} y={250} />
+				<Question at={ALORS} x={540} y={170} />
 			</Camera>
 			<Flash at={AIE} max={0.3} />
 			<Sfx name="hiss" at={AIE - 1} volume={0.25} dur={18} />
