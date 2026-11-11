@@ -24,7 +24,7 @@ pour la vidéo concernée.
    l'autre ; proposer 2 – 3 accroches quand le propriétaire n'a pas d'idée.
 5. Chaque terme technique est suivi tout de suite d'une explication simple. Rester exact et factuel.
 6. Chaque mouvement part d'un **mot de la voix** (`at(scène, mot)`) ; un événement visible toutes les 0,5 – 1 s.
-7. Tout coût externe (ElevenLabs, Higgsfield) : **donner le prix avant** (`estimate_only`), ne jamais relancer une
+7. **Voix gratuite (edge-tts) d'abord** ; Laura seulement quand la vidéo est validée. Tout coût externe (ElevenLabs, Higgsfield) : **donner le prix avant** (`estimate_only`), ne jamais relancer une
    génération dans le même tour, `generations_count: 1`.
 8. Livrer **le MP4 seul** dans `out/`, faire le ménage de `out/` (QA, anciens rendus), commit + push sur `main`.
 

@@ -50,6 +50,7 @@ pas de logiciel de montage, pas de banque d'images.
 | 37 | Série courte « Les plaies » : pied diabétique et ulcère de jambe, voix Laura | `Pied-Diabetique` | [voix/37-pied-diabetique.script.json](voix/37-pied-diabetique.script.json) | [storyboard](docs/lpi/storyboard-plaies-courtes.md) |
 | 38 | Court info : que doit contenir une trousse de secours à la maison (voix gratuite, accroche animée sans texte) | `Trousse-Secours` | [voix/38-trousse-secours.script.json](voix/38-trousse-secours.script.json) | [storyboard](docs/lpi/storyboard-trousse-secours.md) |
 | 39 | Court info : comment bien mettre un pansement (voix gratuite, accroche animée sans texte) | `Pansement` | [voix/39-pansement.script.json](voix/39-pansement.script.json) | [storyboard](docs/lpi/storyboard-pansement.md) |
+| 40 | Court info : comment soigner une petite brûlure (voix gratuite, accroche animée sans texte) | `Brulure` | [voix/40-brulure.script.json](voix/40-brulure.script.json) | [storyboard](docs/lpi/storyboard-brulure.md) |
 
 ## Utilisation
 

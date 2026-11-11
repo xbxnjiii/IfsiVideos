@@ -52,7 +52,9 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
 
 ## Voix
 
-- **Voix des nouvelles vidéos : ElevenLabs « Laura »** (voir la section dédiée). Voix des vidéos 1 à 28 (et repli si
+- **Règle (demandée) : toute nouvelle vidéo se fait d'abord avec la voix gratuite edge-tts** ; quand le propriétaire la
+  valide, on génère la voix Laura (prix annoncé avant), on réaligne et on refait le rendu.
+- Voix finale des vidéos validées : ElevenLabs « Laura » (voir la section dédiée). Voix des vidéos 1 à 28 (et repli si
   ElevenLabs est indisponible) : edge-tts `fr-FR-VivienneMultilingualNeural`, débit +8 %.
   **Une seule commande** : `npm run voice -- voix/<n>-<sujet>.script.json <épisode>` → `public/voix/<épisode>/voix.wav`
   + `src/videos/<épisode>/voice.json` (timing mot à mot donné par la synthèse : pas de Whisper).
@@ -299,6 +301,10 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   `bleed`, `clean`, `wet`, `tint`, calques en `children`), `BandageG` (pansement dans le repère du doigt : `tab1` / `tab2`,
   `wrapTop` / `wrapBottom`, `lift`, `sloppy`, `wet`, `dirt`, `glow`), `Presser` (doigt qui lisse / appuie), `TargetRing`,
   `WashFx`, `DabPad`, `FINGER`, `fingerPt`. Storyboard `docs/lpi/storyboard-pansement.md`.
+- `Brulure` (n° 40, ≈ 47 s, voix gratuite d'abord) : accroche sans texte (le doigt touche le bord d'une casserole), idées
+  reçues barrées (glaçon, beurre, dentifrice), eau du robinet 15 min + règle des 3 × 15, cloque qu'on ne perce pas,
+  compresse ou pansement gras, paracétamol, quand consulter, chute « merci ! ». Briques `src/brand/burn.tsx` + `BigFinger`
+  (`burn`, `heat`, `blister`). Storyboard `docs/lpi/storyboard-brulure.md`.
 
 ## Voix ElevenLabs « Laura » (choisie par le propriétaire pour les nouvelles vidéos)
 

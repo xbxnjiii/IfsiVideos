@@ -124,6 +124,18 @@ Briques « respiration » réutilisables : rythme respiratoire qui change sans �
 - `Chest` — Buste de patient vu de face : la cage thoracique se soulève et s'élargit à l'inspiration.
 - `BreathTrace` — Tracé respiratoire qui défile : une ondulation par cycle, amplitude modulable (ample / superficielle).
 
+## `burn.tsx`
+« Comment soigner une petite brûlure ? » : casserole vue de dessus (bord en inox, fond, vapeur), eau du robinet qui coule sur le doigt (dans le repère d'un `BigFinger`), glaçon, beurre, tube de dentifrice, carte « 15 » de la règle des trois quinze, compresse posée sur la brûlure, épingle. Même rendu soigné que bandage.tsx. Couleurs de la marque.
+
+- `HotPanG` — Casserole vue de dessus, dans le repère d'un `BigFinger` (centre (`x`, `y`), rayon `r`) : bord en inox épais, fond plus sombre, eau qui frémit et vapeur ; `hot` 0 → 1 le bord rougit légèrement, ondes de chaleur.
+- `WaterStreamG` — Eau du robinet qui coule sur la brûlure (repère d'un `BigFinger`) : bec de robinet en haut, filet, éclaboussures.
+- `GauzeOnG` — Compresse (ou pansement gras) posée à plat sur la brûlure (repère d'un `BigFinger`) ; `greasy` : tulle gras.
+- `PinG` — Épingle qui s'approche de la cloque (repère d'un `BigFinger`), `t` 0 → 1.
+- `IceCube` — Glaçon (repère 200 × 200) : cube translucide bleu clair, reflets, petite goutte.
+- `ButterPat` — Plaquette de beurre (repère 220 × 160) dans son papier.
+- `ToothpasteTube` — Tube de dentifrice (repère 260 × 120) avec un petit ruban de pâte.
+- `FifteenCard` — Carte « 15 » de la règle des trois quinze : gros 15 + unité, petite légende ; elle « claque » à `pop`.
+
 ## `cardio.tsx`
 Briques « cœur » réutilisables : calendrier des battements (rythme qui change sans à-coup), impulsion du dernier battement, tracé ECG qui défile (chaque battement = un QRS).
 

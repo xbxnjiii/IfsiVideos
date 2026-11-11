@@ -10,6 +10,9 @@
 
 ## Deux voix
 
+**Règle du propriétaire : on fait toujours la vidéo d'abord avec la voix gratuite (edge-tts). Une fois la vidéo
+validée, on annonce le prix et on génère Laura, puis on réaligne et on refait le rendu (les animations suivent les mots).**
+
 | Voix | Quand | Commande |
 |---|---|---|
 | edge-tts `fr-FR-VivienneMultilingualNeural`, +8 % | gratuite ; vidéos 1 à 28 et quand le propriétaire demande « la voix gratuite » | `npm run voice -- voix/<n>-x.script.json <épisode>` → `public/voix/<épisode>/voix.wav` + `src/videos/<épisode>/voice.json` |

@@ -80,6 +80,8 @@ import {TrousseSecours, TrousseSecoursProps} from './videos/trousse-secours/Trou
 import {TL as TROUSSE_SECOURS_TL} from './videos/trousse-secours/timeline';
 import {Pansement, PansementProps} from './videos/pansement/Pansement';
 import {TL as PANSEMENT_TL} from './videos/pansement/timeline';
+import {Brulure, BrulureProps} from './videos/brulure/Brulure';
+import {TL as BRULURE_TL} from './videos/brulure/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -466,6 +468,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies PansementProps}
+		/>
+		{/* 40 · Brulure */}
+		<Composition
+			id="Brulure"
+			component={Brulure}
+			durationInFrames={BRULURE_TL.total}
+			fps={BRULURE_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies BrulureProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition

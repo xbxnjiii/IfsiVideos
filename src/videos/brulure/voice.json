@@ -1,0 +1,813 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 45.806,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.048,
+   "end": 5.706
+  },
+  {
+   "id": "idees",
+   "start": 6.623,
+   "end": 14.884
+  },
+  {
+   "id": "eau",
+   "start": 15.857,
+   "end": 25.197
+  },
+  {
+   "id": "proteger",
+   "start": 26.131,
+   "end": 33.848
+  },
+  {
+   "id": "consulter",
+   "start": 34.778,
+   "end": 42.394
+  },
+  {
+   "id": "fin",
+   "start": 43.308,
+   "end": 45.473
+  }
+ ],
+ "words": [
+  {
+   "text": "Aïe !",
+   "start": 0.048,
+   "end": 0.523
+  },
+  {
+   "text": "Ton",
+   "start": 0.837,
+   "end": 1.045
+  },
+  {
+   "text": "doigt",
+   "start": 1.045,
+   "end": 1.184
+  },
+  {
+   "text": "touche",
+   "start": 1.184,
+   "end": 1.416
+  },
+  {
+   "text": "le",
+   "start": 1.416,
+   "end": 1.52
+  },
+  {
+   "text": "bord",
+   "start": 1.52,
+   "end": 1.705
+  },
+  {
+   "text": "de",
+   "start": 1.705,
+   "end": 1.775
+  },
+  {
+   "text": "la",
+   "start": 1.775,
+   "end": 1.844
+  },
+  {
+   "text": "casserole.",
+   "start": 1.844,
+   "end": 2.457
+  },
+  {
+   "text": "Ça",
+   "start": 2.769,
+   "end": 2.966
+  },
+  {
+   "text": "chauffe,",
+   "start": 2.966,
+   "end": 3.382
+  },
+  {
+   "text": "ça",
+   "start": 3.637,
+   "end": 3.776
+  },
+  {
+   "text": "rougit…",
+   "start": 3.776,
+   "end": 4.216
+  },
+  {
+   "text": "Alors,",
+   "start": 4.56,
+   "end": 4.977
+  },
+  {
+   "text": "tu",
+   "start": 5.185,
+   "end": 5.289
+  },
+  {
+   "text": "fais",
+   "start": 5.289,
+   "end": 5.405
+  },
+  {
+   "text": "quoi ?",
+   "start": 5.405,
+   "end": 5.706
+  },
+  {
+   "text": "Un",
+   "start": 6.623,
+   "end": 6.774
+  },
+  {
+   "text": "glaçon ?",
+   "start": 6.774,
+   "end": 7.271
+  },
+  {
+   "text": "Du",
+   "start": 7.584,
+   "end": 7.78
+  },
+  {
+   "text": "beurre ?",
+   "start": 7.78,
+   "end": 8.22
+  },
+  {
+   "text": "Du",
+   "start": 8.576,
+   "end": 8.704
+  },
+  {
+   "text": "dentifrice ?",
+   "start": 8.704,
+   "end": 9.479
+  },
+  {
+   "text": "Surtout",
+   "start": 9.794,
+   "end": 10.199
+  },
+  {
+   "text": "pas !",
+   "start": 10.199,
+   "end": 10.477
+  },
+  {
+   "text": "Le",
+   "start": 10.799,
+   "end": 10.914
+  },
+  {
+   "text": "glaçon",
+   "start": 10.914,
+   "end": 11.238
+  },
+  {
+   "text": "abîme",
+   "start": 11.238,
+   "end": 11.493
+  },
+  {
+   "text": "encore",
+   "start": 11.493,
+   "end": 11.736
+  },
+  {
+   "text": "plus",
+   "start": 11.736,
+   "end": 11.933
+  },
+  {
+   "text": "la",
+   "start": 11.933,
+   "end": 12.037
+  },
+  {
+   "text": "peau,",
+   "start": 12.037,
+   "end": 12.315
+  },
+  {
+   "text": "et",
+   "start": 12.65,
+   "end": 12.674
+  },
+  {
+   "text": "le",
+   "start": 12.674,
+   "end": 12.755
+  },
+  {
+   "text": "reste",
+   "start": 12.755,
+   "end": 13.032
+  },
+  {
+   "text": "garde",
+   "start": 13.032,
+   "end": 13.275
+  },
+  {
+   "text": "la",
+   "start": 13.275,
+   "end": 13.356
+  },
+  {
+   "text": "chaleur",
+   "start": 13.356,
+   "end": 13.808
+  },
+  {
+   "text": "et",
+   "start": 13.808,
+   "end": 13.842
+  },
+  {
+   "text": "peut",
+   "start": 13.843,
+   "end": 13.947
+  },
+  {
+   "text": "infecter",
+   "start": 13.947,
+   "end": 14.305
+  },
+  {
+   "text": "la",
+   "start": 14.305,
+   "end": 14.386
+  },
+  {
+   "text": "brûlure.",
+   "start": 14.386,
+   "end": 14.884
+  },
+  {
+   "text": "Le",
+   "start": 15.857,
+   "end": 15.984
+  },
+  {
+   "text": "bon",
+   "start": 15.984,
+   "end": 16.1
+  },
+  {
+   "text": "réflexe :",
+   "start": 16.1,
+   "end": 16.713
+  },
+  {
+   "text": "passe-la",
+   "start": 16.979,
+   "end": 17.315
+  },
+  {
+   "text": "sous",
+   "start": 17.315,
+   "end": 17.442
+  },
+  {
+   "text": "l'eau",
+   "start": 17.442,
+   "end": 17.535
+  },
+  {
+   "text": "du",
+   "start": 17.535,
+   "end": 17.627
+  },
+  {
+   "text": "robinet,",
+   "start": 17.627,
+   "end": 18.079
+  },
+  {
+   "text": "pendant",
+   "start": 18.38,
+   "end": 18.6
+  },
+  {
+   "text": "quinze",
+   "start": 18.6,
+   "end": 18.831
+  },
+  {
+   "text": "minutes.",
+   "start": 18.831,
+   "end": 19.294
+  },
+  {
+   "text": "Retiens",
+   "start": 19.618,
+   "end": 19.942
+  },
+  {
+   "text": "la",
+   "start": 19.942,
+   "end": 20.023
+  },
+  {
+   "text": "règle",
+   "start": 20.023,
+   "end": 20.255
+  },
+  {
+   "text": "des",
+   "start": 20.255,
+   "end": 20.324
+  },
+  {
+   "text": "trois",
+   "start": 20.324,
+   "end": 20.486
+  },
+  {
+   "text": "quinze :",
+   "start": 20.486,
+   "end": 20.857
+  },
+  {
+   "text": "une",
+   "start": 21.239,
+   "end": 21.354
+  },
+  {
+   "text": "eau",
+   "start": 21.354,
+   "end": 21.435
+  },
+  {
+   "text": "à",
+   "start": 21.435,
+   "end": 21.482
+  },
+  {
+   "text": "environ",
+   "start": 21.482,
+   "end": 21.817
+  },
+  {
+   "text": "quinze",
+   "start": 21.817,
+   "end": 22.037
+  },
+  {
+   "text": "degrés,",
+   "start": 22.037,
+   "end": 22.431
+  },
+  {
+   "text": "à",
+   "start": 22.697,
+   "end": 22.789
+  },
+  {
+   "text": "quinze",
+   "start": 22.789,
+   "end": 23.009
+  },
+  {
+   "text": "centimètres",
+   "start": 23.009,
+   "end": 23.495
+  },
+  {
+   "text": "du",
+   "start": 23.495,
+   "end": 23.565
+  },
+  {
+   "text": "robinet,",
+   "start": 23.565,
+   "end": 23.993
+  },
+  {
+   "text": "pendant",
+   "start": 24.259,
+   "end": 24.479
+  },
+  {
+   "text": "quinze",
+   "start": 24.479,
+   "end": 24.722
+  },
+  {
+   "text": "minutes.",
+   "start": 24.722,
+   "end": 25.197
+  },
+  {
+   "text": "Une",
+   "start": 26.131,
+   "end": 26.328
+  },
+  {
+   "text": "cloque ?",
+   "start": 26.339,
+   "end": 26.849
+  },
+  {
+   "text": "On",
+   "start": 27.161,
+   "end": 27.277
+  },
+  {
+   "text": "ne",
+   "start": 27.277,
+   "end": 27.346
+  },
+  {
+   "text": "la",
+   "start": 27.346,
+   "end": 27.427
+  },
+  {
+   "text": "perce",
+   "start": 27.427,
+   "end": 27.705
+  },
+  {
+   "text": "pas :",
+   "start": 27.705,
+   "end": 27.925
+  },
+  {
+   "text": "elle",
+   "start": 28.319,
+   "end": 28.434
+  },
+  {
+   "text": "protège",
+   "start": 28.434,
+   "end": 28.77
+  },
+  {
+   "text": "la",
+   "start": 28.77,
+   "end": 28.851
+  },
+  {
+   "text": "peau",
+   "start": 28.851,
+   "end": 28.99
+  },
+  {
+   "text": "en",
+   "start": 28.99,
+   "end": 29.059
+  },
+  {
+   "text": "dessous.",
+   "start": 29.059,
+   "end": 29.488
+  },
+  {
+   "text": "Couvre",
+   "start": 29.809,
+   "end": 30.052
+  },
+  {
+   "text": "avec",
+   "start": 30.052,
+   "end": 30.237
+  },
+  {
+   "text": "une",
+   "start": 30.237,
+   "end": 30.318
+  },
+  {
+   "text": "compresse",
+   "start": 30.318,
+   "end": 30.677
+  },
+  {
+   "text": "stérile",
+   "start": 30.677,
+   "end": 31.105
+  },
+  {
+   "text": "ou",
+   "start": 31.105,
+   "end": 31.163
+  },
+  {
+   "text": "un",
+   "start": 31.163,
+   "end": 31.209
+  },
+  {
+   "text": "pansement",
+   "start": 31.209,
+   "end": 31.545
+  },
+  {
+   "text": "gras,",
+   "start": 31.545,
+   "end": 31.811
+  },
+  {
+   "text": "et",
+   "start": 32.17,
+   "end": 32.193
+  },
+  {
+   "text": "prends",
+   "start": 32.193,
+   "end": 32.367
+  },
+  {
+   "text": "du",
+   "start": 32.367,
+   "end": 32.459
+  },
+  {
+   "text": "paracétamol",
+   "start": 32.459,
+   "end": 33.142
+  },
+  {
+   "text": "si",
+   "start": 33.142,
+   "end": 33.258
+  },
+  {
+   "text": "ça",
+   "start": 33.258,
+   "end": 33.374
+  },
+  {
+   "text": "fait",
+   "start": 33.374,
+   "end": 33.489
+  },
+  {
+   "text": "mal.",
+   "start": 33.489,
+   "end": 33.848
+  },
+  {
+   "text": "Et",
+   "start": 34.778,
+   "end": 34.894
+  },
+  {
+   "text": "on",
+   "start": 34.894,
+   "end": 34.928
+  },
+  {
+   "text": "consulte",
+   "start": 34.928,
+   "end": 35.31
+  },
+  {
+   "text": "un",
+   "start": 35.31,
+   "end": 35.357
+  },
+  {
+   "text": "médecin",
+   "start": 35.357,
+   "end": 35.704
+  },
+  {
+   "text": "si",
+   "start": 35.704,
+   "end": 35.82
+  },
+  {
+   "text": "la",
+   "start": 35.82,
+   "end": 35.901
+  },
+  {
+   "text": "brûlure",
+   "start": 35.901,
+   "end": 36.236
+  },
+  {
+   "text": "est",
+   "start": 36.236,
+   "end": 36.271
+  },
+  {
+   "text": "plus",
+   "start": 36.271,
+   "end": 36.41
+  },
+  {
+   "text": "grande",
+   "start": 36.41,
+   "end": 36.664
+  },
+  {
+   "text": "que",
+   "start": 36.664,
+   "end": 36.745
+  },
+  {
+   "text": "la",
+   "start": 36.745,
+   "end": 36.815
+  },
+  {
+   "text": "moitié",
+   "start": 36.815,
+   "end": 37.093
+  },
+  {
+   "text": "de",
+   "start": 37.093,
+   "end": 37.162
+  },
+  {
+   "text": "la",
+   "start": 37.162,
+   "end": 37.243
+  },
+  {
+   "text": "paume",
+   "start": 37.243,
+   "end": 37.428
+  },
+  {
+   "text": "de",
+   "start": 37.428,
+   "end": 37.486
+  },
+  {
+   "text": "la",
+   "start": 37.486,
+   "end": 37.579
+  },
+  {
+   "text": "main,",
+   "start": 37.579,
+   "end": 37.81
+  },
+  {
+   "text": "si",
+   "start": 38.157,
+   "end": 38.273
+  },
+  {
+   "text": "elle",
+   "start": 38.273,
+   "end": 38.331
+  },
+  {
+   "text": "touche",
+   "start": 38.331,
+   "end": 38.528
+  },
+  {
+   "text": "le",
+   "start": 38.528,
+   "end": 38.62
+  },
+  {
+   "text": "visage",
+   "start": 38.62,
+   "end": 39.037
+  },
+  {
+   "text": "ou",
+   "start": 39.037,
+   "end": 39.06
+  },
+  {
+   "text": "les",
+   "start": 39.06,
+   "end": 39.141
+  },
+  {
+   "text": "parties",
+   "start": 39.141,
+   "end": 39.396
+  },
+  {
+   "text": "intimes,",
+   "start": 39.396,
+   "end": 39.836
+  },
+  {
+   "text": "si",
+   "start": 40.137,
+   "end": 40.229
+  },
+  {
+   "text": "c'est",
+   "start": 40.229,
+   "end": 40.31
+  },
+  {
+   "text": "un",
+   "start": 40.31,
+   "end": 40.414
+  },
+  {
+   "text": "enfant,",
+   "start": 40.414,
+   "end": 40.831
+  },
+  {
+   "text": "ou",
+   "start": 41.051,
+   "end": 41.109
+  },
+  {
+   "text": "si",
+   "start": 41.109,
+   "end": 41.213
+  },
+  {
+   "text": "la",
+   "start": 41.213,
+   "end": 41.306
+  },
+  {
+   "text": "peau",
+   "start": 41.306,
+   "end": 41.433
+  },
+  {
+   "text": "devient",
+   "start": 41.433,
+   "end": 41.688
+  },
+  {
+   "text": "blanche",
+   "start": 41.688,
+   "end": 41.954
+  },
+  {
+   "text": "ou",
+   "start": 41.954,
+   "end": 42.0
+  },
+  {
+   "text": "noire.",
+   "start": 42.0,
+   "end": 42.394
+  },
+  {
+   "text": "Quinze",
+   "start": 43.308,
+   "end": 43.54
+  },
+  {
+   "text": "minutes",
+   "start": 43.54,
+   "end": 43.783
+  },
+  {
+   "text": "sous",
+   "start": 43.783,
+   "end": 43.933
+  },
+  {
+   "text": "l'eau…",
+   "start": 43.933,
+   "end": 44.176
+  },
+  {
+   "text": "et",
+   "start": 44.477,
+   "end": 44.512
+  },
+  {
+   "text": "ton",
+   "start": 44.512,
+   "end": 44.639
+  },
+  {
+   "text": "doigt",
+   "start": 44.639,
+   "end": 44.778
+  },
+  {
+   "text": "te",
+   "start": 44.778,
+   "end": 44.894
+  },
+  {
+   "text": "dit",
+   "start": 44.894,
+   "end": 45.01
+  },
+  {
+   "text": "merci !",
+   "start": 45.01,
+   "end": 45.473
+  }
+ ]
+}
