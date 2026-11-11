@@ -782,7 +782,7 @@ export const walkerLegs = (phase: number) => {
  * à faire pivoter par le parent). `hair` : 'man' | 'old' | 'kid' ; `cry` ; `chin` : plaie au menton ; `legWound` : plaie
  * sur le tibia avant ; `size` : 1 = adulte, 0.75 = enfant (tout rapetisse, la tête reste grosse).
  */
-export const Walker: React.FC<{width?: number; pose?: 'walk' | 'hop' | 'fall'; phase?: number; hair?: 'man' | 'old' | 'kid'; cry?: number; chin?: number; pain?: number; legWound?: number; shirt?: string}> = ({width = 300, pose = 'walk', phase = 0, hair = 'man', cry = 0, chin = 0, pain = 0, legWound = 0, shirt = LPI.sky}) => {
+export const Walker: React.FC<{width?: number; pose?: 'walk' | 'hop' | 'fall' | 'cut' | 'hurt'; phase?: number; hair?: 'man' | 'old' | 'kid'; cry?: number; chin?: number; pain?: number; legWound?: number; shirt?: string; chop?: number; bandage?: number}> = ({width = 300, pose = 'walk', phase = 0, hair = 'man', cry = 0, chin = 0, pain = 0, legWound = 0, shirt = LPI.sky, chop = 0, bandage = 0}) => {
 	const frame = useCurrentFrame();
 	const SHORTS = hair === 'old' ? N : LPI.blue;
 	const S2: [number, number] = [160, 176];
@@ -790,7 +790,54 @@ export const Walker: React.FC<{width?: number; pose?: 'walk' | 'hop' | 'fall'; p
 	let arms: React.ReactNode;
 	let farArm: React.ReactNode = null;
 	const shoe = (F: [number, number], dark = false, rot = 0) => <ellipse cx={F[0] + 14} cy={F[1] + 2} rx={36} ry={16} fill={dark ? alpha(N, 0.7) : N} transform={`rotate(${rot} ${F[0]} ${F[1]})`} />;
-	if (pose === 'hop') {
+	if (pose === 'cut' || pose === 'hurt') {
+		/* debout au plan de travail : il coupe (`chop` 0 → 1, couteau qui monte et descend) ou se tient la main blessée */
+		const H: [number, number] = [150, 330];
+		legs = (
+			<>
+				{limb([H, [140, 460], [134, 586]], 44, alpha(LPI.pink, 0.45))}
+				{shoe([134, 588], true)}
+				{limb([H, [160, 460], [158, 586]], 44, SKIN_FILL)}
+				{limb([H, [156, 410]], 64, SHORTS)}
+				{shoe([158, 588])}
+			</>
+		);
+		if (pose === 'cut') {
+			const hy = 300 + 34 * chop;
+			const hd: [number, number] = [300, hy];
+			farArm = (
+				<>
+					{limb([S2, [236, 272], [336, 318]], 28, alpha(LPI.pink, 0.45))}
+				</>
+			);
+			arms = (
+				<>
+					{limb([S2, [226, 276], hd], 32, SKIN_FILL)}
+					{/* couteau tenu dans la main */}
+					<path d={`M${hd[0] + 6} ${hd[1] + 4} L${hd[0] + 104} ${hd[1] + 40} L${hd[0] + 10} ${hd[1] + 30} Z`} fill={LPI.paper} {...S} strokeWidth={5} />
+					<rect x={hd[0] - 34} y={hd[1] - 10} width={44} height={22} rx={8} fill={N} transform={`rotate(20 ${hd[0]} ${hd[1]})`} />
+					<circle cx={hd[0]} cy={hd[1]} r={16} fill={SKIN_FILL} stroke={N} strokeWidth={5} />
+				</>
+			);
+		} else {
+			const hd: [number, number] = [228, 176];
+			arms = (
+				<>
+					{limb([S2, [232, 250], hd], 32, SKIN_FILL)}
+					{limb([S2, [196, 262], [222, 206]], 30, SKIN_FILL)}
+					<circle cx={222} cy={206} r={14} fill={SKIN_FILL} stroke={N} strokeWidth={5} />
+					<circle cx={hd[0]} cy={hd[1]} r={18} fill={SKIN_FILL} stroke={N} strokeWidth={5} />
+					{/* le doigt coupé (ou déjà pansé) */}
+					<rect x={hd[0] - 6} y={hd[1] - 46} width={14} height={34} rx={7} fill={SKIN_FILL} stroke={N} strokeWidth={4} />
+					{bandage > 0 ? (
+						<rect x={hd[0] - 9} y={hd[1] - 36} width={20} height={16} rx={4} fill={LPI.pink} stroke={N} strokeWidth={3} opacity={bandage} />
+					) : (
+						<rect x={hd[0] - 5} y={hd[1] - 32} width={12} height={6} rx={3} fill={LPI.pink} />
+					)}
+				</>
+			);
+		}
+	} else 	if (pose === 'hop') {
 		const H: [number, number] = [150, 330];
 		const K: [number, number] = [232, 404];
 		const F: [number, number] = [196, 500];

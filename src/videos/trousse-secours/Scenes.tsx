@@ -1,22 +1,22 @@
 // « Que doit contenir une trousse de secours à la maison ? » — format court (≈ 47 s, voix gratuite edge-tts, sans barre
 // de progression). Accroche SANS texte (règle de la série courte) : on coupe une tomate, le couteau glisse, le doigt
-// saigne ; on attrape la trousse, on l'ouvre… elle est vide (poussière, papillon de nuit) ; « ? ». Puis la trousse se
+// saigne (un monsieur coupe une tomate au plan de travail, le couteau glisse, il lève la main, le sang coule, la caméra
+// s'approche) ; on attrape la trousse, on l'ouvre… elle est vide (poussière, papillon de nuit) ; « ? ». Puis la trousse se
 // remplit, un objet à la fois au mot (gros plan + nom, puis il file dans sa case) : soigner une plaie (sérum
 // physiologique, antiseptique, compresses stériles, pansements), tenir et se protéger (bande, sparadrap, gants, ciseaux
 // à bouts arrondis, pince à écharde), et aussi (thermomètre, paracétamol, couverture de survie) ; les bons réflexes (hors
-// de portée des enfants, dates de péremption chaque année, numéros d'urgence 15 · 18 · 112 · antipoison) ; chute : le
-// couteau glisse à nouveau… et tout est là.
+// de portée des enfants, dates de péremption chaque année, numéros d'urgence 15 · 18 · 112 · antipoison) ; chute : même
+// cuisine, le couteau glisse à nouveau… la trousse pleine arrive sur le plan de travail, le doigt est pansé : tout est là.
 import React from 'react';
 import {AbsoluteFill, Easing, interpolate, useCurrentFrame} from 'remotion';
 import {Big, Blur, ease, fadeIn, Flash, Fly, Live, Note, popAt, Posed, RowCard} from '../../brand/bold';
 import {CuttingBoard, EmergencyCard, FirstAidKit, KIT_SLOTS, KitItem, KitKind, Padlock} from '../../brand/firstaid';
 import {Drop} from '../../brand/hands';
-import {DayChip} from '../../brand/injury';
+import {DayChip, Walker} from '../../brand/injury';
 import {Burst, Camera} from '../../brand/motion3';
 import {Sfx} from '../../brand/Sfx';
 import {alpha, FONT, LPI, SHADOW} from '../../brand/theme';
 import {clamp} from '../../brand/ui';
-import {Finger, WoundTool} from '../../brand/wound';
 import {at, SceneId} from './timeline';
 
 const N = LPI.navy;
@@ -37,39 +37,58 @@ const Question: React.FC<{at: number; x: number; y: number}> = ({at: t0, x, y}) 
 	);
 };
 
-/** Le doigt sur la planche et le couteau qui coupe… puis glisse sur le doigt à `slip`. */
-const Kitchen: React.FC<{slip: number; bleed: number}> = ({slip, bleed}) => {
+/* ─── la cuisine : un monsieur coupe une tomate au plan de travail… et le couteau glisse ─── */
+const GROUND = 1560;
+const WW = 460;
+const WS = WW / 300;
+const MAN_X = 330;
+const MAN_TOP = GROUND - 590 * WS;
+const COUNTER_Y = 1120;
+/** La main blessée (pose « hurt ») à l'écran : la caméra s'en approche. */
+const HURT_HAND = {x: MAN_X + (228 - 150) * WS, y: MAN_TOP + 150 * WS};
+
+const KitchenScene: React.FC<{slip: number; bleed: number; zoom: number; out: number; bandage?: number}> = ({slip, bleed, zoom, out, bandage = 0}) => {
 	const frame = useCurrentFrame();
+	const cutting = frame < slip;
+	const chop = cutting ? Math.abs(Math.sin((frame / 7) * Math.PI)) : 0;
 	return (
-		<div style={{position: 'relative', width: 1000, height: 700}}>
-			<div style={{position: 'absolute', left: 50, top: 300}}>
-				<CuttingBoard width={900} sliced={interpolate(frame, [0, slip - 6], [0, 1], clamp)} />
+		<AbsoluteFill style={{transform: `translateX(${-1200 * out}px) scale(${zoom})`, transformOrigin: `${HURT_HAND.x}px ${HURT_HAND.y}px`}}>
+			{/* mur carrelé, placards hauts */}
+			<AbsoluteFill style={{background: LPI.paper}} />
+			{Array.from({length: 8}, (_, i) => (
+				<div key={`h${i}`} style={{position: 'absolute', left: 0, right: 0, top: 560 + i * 70, height: 3, background: alpha(LPI.sky, 0.9)}} />
+			))}
+			{Array.from({length: 9}, (_, i) => (
+				<div key={`v${i}`} style={{position: 'absolute', top: 560, height: 560, left: i * 135 + ((i % 2) * 0), width: 3, background: alpha(LPI.sky, 0.9)}} />
+			))}
+			<div style={{position: 'absolute', left: 520, top: 230, width: 600, height: 280, borderRadius: 20, background: LPI.sky, border: `7px solid ${N}`}} />
+			<div style={{position: 'absolute', left: 810, top: 230, width: 7, height: 280, background: N}} />
+			<div style={{position: 'absolute', left: 770, top: 440, width: 20, height: 50, borderRadius: 10, background: N}} />
+			<div style={{position: 'absolute', left: 840, top: 440, width: 20, height: 50, borderRadius: 10, background: N}} />
+			{/* le plan de travail */}
+			<div style={{position: 'absolute', left: 500, top: COUNTER_Y, width: 640, height: GROUND - COUNTER_Y, background: LPI.blue, border: `7px solid ${N}`, borderRadius: 14}} />
+			<div style={{position: 'absolute', left: 480, top: COUNTER_Y - 14, width: 660, height: 34, background: LPI.paper, border: `7px solid ${N}`, borderRadius: 12}} />
+			<div style={{position: 'absolute', left: 0, right: 0, top: GROUND, height: 400, background: alpha(LPI.sky, 0.6), borderTop: `7px solid ${N}`}} />
+			{/* la planche et la tomate */}
+			<div style={{position: 'absolute', left: 510, top: COUNTER_Y - 14 - 280 * 0.6}}>
+				<CuttingBoard width={420} sliced={interpolate(frame, [0, slip - 6], [0, 1], clamp)} />
 			</div>
-			<div style={{position: 'absolute', left: 10, top: 330}}>
-				<Finger width={430} cut={fadeIn(frame, slip, 4)} />
+			{/* le monsieur */}
+			<div style={{position: 'absolute', left: MAN_X - WW / 2, top: MAN_TOP + (cutting ? 0 : -14 * Math.max(0, Math.sin(((frame - slip) / 8) * Math.PI)) * (frame < slip + 8 ? 1 : 0))}}>
+				<Walker width={WW} pose={cutting ? 'cut' : 'hurt'} chop={chop} cry={cutting ? 0 : 1 - bandage} bandage={bandage} />
 			</div>
-			<Blur on={frame <= slip + 10}>
-				<Posed
-					pose={(f) => {
-						const chop = f < slip - 8 ? Math.abs(Math.sin((f / 7) * Math.PI)) : 0;
-						const sl = interpolate(f, [slip - 8, slip], [0, 1], {...clamp, easing: Easing.in(Easing.quad)});
-						return {x: 640 - 230 * sl, y: 340 - 110 * chop + 80 * sl, rot: -20 + 10 * sl, s: 1.5};
-					}}
-				>
-					<WoundTool kind="knife" size={260} />
-				</Posed>
-			</Blur>
+			{/* le sang coule de la main */}
 			{bleed > 0
 				? [0, 1, 2].map((i) => {
-						const t = ((frame * 0.04 + i / 3) % 1) as number;
+						const t = ((frame * 0.035 + i / 3) % 1) as number;
 						return (
-							<div key={i} style={{position: 'absolute', left: 350 + i * 18, top: 470 + t * 160, opacity: bleed * (1 - t)}}>
-								<Drop size={34} />
+							<div key={i} style={{position: 'absolute', left: HURT_HAND.x - 6 + i * 10, top: HURT_HAND.y - 50 + t * 220, opacity: bleed * (1 - t)}}>
+								<Drop size={26} />
 							</div>
 						);
 					})
 				: null}
-		</div>
+		</AbsoluteFill>
 	);
 };
 
@@ -88,9 +107,13 @@ export const Hook: React.FC = () => {
 		<AbsoluteFill>
 			<AbsoluteFill style={{background: LPI.paper}} />
 			<Camera punches={[SLIP + 1, SAIGNE + 1, TROUSSE + 1, OUVRES + 1, VIDE + 1, ALORS + 1]} shakes={[SLIP + 2, VIDE + 2]} strength={0.04}>
-				<Fly at={-60} out={VITE - 4} x={540} y={900} from="bottom" to="left">
-					<Live render={(f) => <Kitchen slip={SLIP} bleed={fadeIn(f, SAIGNE - 2, 6)} />} />
-				</Fly>
+				<Live
+					render={(f) =>
+						f < VITE + 6 ? (
+							<KitchenScene slip={SLIP} bleed={fadeIn(f, SAIGNE - 2, 6)} zoom={1 + 0.7 * interpolate(f, [SLIP + 2, SAIGNE + 10], [0, 1], ease)} out={interpolate(f, [VITE - 4, VITE + 6], [0, 1], {...clamp, easing: Easing.in(Easing.cubic)})} />
+						) : null
+					}
+				/>
 				<Fly at={VITE + 2} x={KIT.x} y={KIT.y - 120} from="right">
 					<Live
 						render={(f) => (
@@ -234,19 +257,20 @@ export const Fin: React.FC = () => {
 		<AbsoluteFill>
 			<AbsoluteFill style={{background: LPI.paper}} />
 			<Camera punches={[SLIP + 1, TOUT + 1]} shakes={[TOUT + 2]} strength={0.04}>
-				<Fly at={-4} out={TOUT - 6} x={540} y={900} from="bottom" to="left">
-					<Live render={(f) => <Kitchen slip={SLIP} bleed={fadeIn(f, SLIP + 2, 6)} />} />
+				{/* même cuisine : le couteau glisse… mais cette fois la trousse est pleine, et le doigt est pansé */}
+				<Live render={(f) => <KitchenScene slip={SLIP} bleed={fadeIn(f, SLIP + 2, 6) * (1 - fadeIn(f, TOUT + 4, 6))} zoom={1} out={0} bandage={fadeIn(f, TOUT + 8, 6)} />} />
+				<Fly at={TOUT - 6} x={800} y={820} from="right">
+					<Live render={(f) => <FirstAidKit width={540} open={interpolate(f, [TOUT - 2, TOUT + 6], [0, 1], ease)} items={ALL} shine={fadeIn(f, TOUT + 4, 8)} />} />
 				</Fly>
-				<Fly at={TOUT - 6} x={KIT.x} y={KIT.y - 120} from="right">
-					<Live render={(f) => <FirstAidKit width={KIT.w} open={interpolate(f, [TOUT - 2, TOUT + 6], [0, 1], ease)} items={ALL} shine={fadeIn(f, TOUT + 4, 8)} />} />
-				</Fly>
-				<Big from={TOUT - 4} text={'Tout est *là* !'} size={140} y={200} />
-				<Burst at={TOUT + 4} x={KIT.x} y={KIT.y - 120} r={520} n={20} />
+				<Big from={TOUT - 4} text={'Tout est *là*\u00a0!'} size={130} y={90} />
+				<Burst at={TOUT + 4} x={800} y={820} r={360} n={18} />
 			</Camera>
 			<Flash at={SLIP} max={0.2} />
+			{[3, 10, 17, 24, 31].map((t) => (t < SLIP - 6 ? <Sfx key={t} name="chop" at={t} volume={0.22} /> : null))}
 			<Sfx name="impact" at={SLIP} volume={0.1} />
 			<Sfx name="whoosh" at={TOUT - 6} volume={0.08} />
 			<Sfx name="ding" at={TOUT + 2} volume={0.1} />
+			<Sfx name="pop" at={TOUT + 8} volume={0.08} />
 		</AbsoluteFill>
 	);
 };
