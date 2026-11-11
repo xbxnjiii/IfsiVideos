@@ -15,7 +15,7 @@ export const MASCOT: Beat[] = [
 	{at: abs('intro', 'six'), key: 'situations/reflexion', ...L},
 	{at: abs('intro', 'guéri'), key: 'gestes/bravo', fx: 'bounce', ...L},
 	{at: abs('intro', 'toujours'), key: 'expressions/surprise', fx: 'shake', ...L},
-	{at: start('aigue') - 4, dur: 16, key: 'expressions/surprise', x: 797, y: 1288, size: 0},
+	{at: start('aigue') - 4, dur: 16, key: 'expressions/surprise', x: 904, y: 1288, size: 0},
 	{at: start('aigue') + 14, via: 'pop', key: 'gestes/ok', ...R},
 
 	/* ── aiguë ── */

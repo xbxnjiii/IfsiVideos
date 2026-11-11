@@ -15,7 +15,7 @@ const SCENES: Record<SceneId, React.FC> = {intro: Hook, aigue: Aigue, chronique:
 
 /** Transition VERS chaque scène : jamais deux fois la même d'affilée ; la mascotte la porte (mascot.ts). */
 const TRANSITIONS: Record<Exclude<SceneId, 'intro'>, EpisodeTransition> = {
-	aigue: {p: zoomInto({x: 797, y: 1288, color: LPI.sky}), sfx: 'whoosh'}, // on plonge dans la jambe du petit
+	aigue: {p: zoomInto({x: 904, y: 1288, color: LPI.sky}), sfx: 'whoosh'}, // on plonge dans la jambe du petit
 	chronique: {p: whip('left'), sfx: 'whoosh'},
 	exemples: {p: wave({x: 540, y: 1010}), sfx: 'whoosh'},
 	fin: {p: runWipe(), sfx: 'run'},

@@ -1,6 +1,7 @@
 // « Plaie aiguë ou chronique ? » — série courte « Les plaies » (≈ 37 s, voix Laura).
-// Accroche « papi et son petit-fils » (choisie par le propriétaire ; SANS texte au début) : ils jardinent près du rosier
-// et s'écorchent la jambe au mot ; les jours défilent jusqu'à J + 42 (tic-tac), la plaie du petit s'efface (✓), celle
+// Accroche « papi et son petit-fils » (choisie par le propriétaire ; SANS texte au début) : ils traversent le jardin,
+// une branche d'épines du rosier dépasse au ras des tibias : le petit, puis papi, s'y griffent la jambe au mot (sursaut,
+// éclats) ; les jours défilent jusqu'à J + 42 (tic-tac), la plaie du petit s'efface (✓), celle
 // de papi reste et grandit (!, cercle rose). La v1 (« deux plaies, le même jour ») reste dans l'historique git. Puis la plaie aiguë (frise des semaines : le curseur avance, la plaie guérit avant 4 semaines ;
 // exemples : coupure, cicatrice d'opération), la plaie chronique (le curseur ralentit, se bloque (cadenas), dépasse
 // 4 à 6 semaines), les 3 grands exemples (ulcère de jambe, escarre, pied diabétique), chute : une plaie qui traîne
@@ -36,8 +37,35 @@ const person = (x: number, w: number) => {
 	const top = GROUND - 590 * s;
 	return {left: x - w / 2, top, s, wound: {x: x + 6 * s, y: top + 525 * s}, head: {x: x + 22 * s, y: top + 100 * s}};
 };
-const PAPI = person(300, 470);
-const KID = person(790, 330);
+/** Rosier au milieu du jardin, une branche d'épines de chaque côté au ras des tibias. */
+const BUSH_X = 600;
+const TIP_L = 400;
+const TIP_R = 790;
+const BRANCH_Y = GROUND - 120;
+/** Papi arrive par la gauche (s'arrête juste avant la branche), le petit par la droite (dessiné retourné). */
+const PAPI_W = 470;
+const KID_W = 330;
+const PAPI_END = TIP_L - 165;
+const KID_END = TIP_R + 120;
+const PAPI = person(PAPI_END, PAPI_W);
+const KID = {...person(KID_END, KID_W), wound: {x: KID_END - 6 * (KID_W / 300), y: person(KID_END, KID_W).wound.y}, head: {x: KID_END - 22 * (KID_W / 300), y: person(KID_END, KID_W).head.y}};
+
+/** Branche d'épines (repère écran) de la base (x0) à la pointe (tip), qui fouette quand on la heurte (`shake`). */
+const ThornBranch: React.FC<{x0: number; tip: number; shake: number}> = ({x0, tip, shake}) => (
+	<svg width={1080} height={1920} style={{position: 'absolute', left: 0, top: 0, overflow: 'visible'}}>
+		<g transform={`rotate(${shake * 6 * Math.sign(tip - x0)} ${x0} ${BRANCH_Y + 20})`}>
+			<path d={`M${x0} ${BRANCH_Y + 20} Q${(x0 + tip) / 2} ${BRANCH_Y - 30} ${tip} ${BRANCH_Y}`} fill="none" stroke={N} strokeWidth={20} strokeLinecap="round" />
+			{Array.from({length: 6}, (_, i) => {
+				const t = (i + 1) / 7;
+				const x = x0 + (tip - x0) * t;
+				const y = BRANCH_Y + 20 - 50 * t * (1 - t) * 2 - 20 * t;
+				const d = i % 2 ? 1 : -1;
+				return <path key={i} d={`M${x} ${y} l${10 * Math.sign(tip - x0)} ${d * 30}`} stroke={N} strokeWidth={8} strokeLinecap="round" />;
+			})}
+			<ellipse cx={x0 + (tip - x0) * 0.45} cy={BRANCH_Y - 22} rx={28} ry={15} fill={LPI.sky} stroke={N} strokeWidth={5} />
+		</g>
+	</svg>
+);
 
 /** Rosier (repère 260 × 300) : feuillage bleuté, roses roses, épines. */
 const RoseBush: React.FC<{shake?: number}> = ({shake = 0}) => (
@@ -62,15 +90,6 @@ const RoseBush: React.FC<{shake?: number}> = ({shake = 0}) => (
 				<path d="M-8 0 Q0 -10 8 0 Q0 8 -8 0" fill="none" stroke={N} strokeWidth={3} />
 			</g>
 		))}
-		{[
-			[118, 250, -1],
-			[142, 236, 1],
-			[118, 196, -1],
-			[100, 180, -1],
-			[164, 166, 1],
-		].map(([x, y, d], i) => (
-			<path key={i} d={`M${x} ${y} l${d * 16} -6`} stroke={N} strokeWidth={5} strokeLinecap="round" />
-		))}
 	</svg>
 );
 
@@ -94,36 +113,67 @@ export const Hook: React.FC = () => {
 	const GUERI = at('intro', 'guéri');
 	const LONGTEMPS = at('intro', 'longtemps…');
 	const TOUJOURS = at('intro', 'toujours');
+	const KHIT = BLESSENT - 2; // le petit se griffe sur la branche de droite…
+	const PHIT = JAMBE - 2; // … puis papi sur celle de gauche
 	const day = Math.round(interpolate(frame, [SIX - 4, TARD + 12], [0, 42], clamp));
-	const bob = (k: number) => 10 * Math.sin(frame / 7 + k);
-	const ouch = fadeIn(frame, BLESSENT, 3) * (1 - fadeIn(frame, JAMBE + 20, 10));
+	/** Marche jusqu'à la branche (contact à `hit`), puis petit recul après la griffure. */
+	const walk = (f: number, x0: number, contact: number, hit: number, back: number) =>
+		f < hit ? x0 + ((contact - x0) * f) / hit : contact + back * Math.min(1, (f - hit) / 8);
+	const papiX = (f: number) => walk(f, -120, PAPI_END + 30, PHIT, -30);
+	const kidX = (f: number) => walk(f, 1180, KID_END - 30, KHIT, 30);
+	/** Petit coup de zoom sur la branche à chaque griffure. */
+	const punchK = Math.max(0, 1 - Math.abs(frame - KHIT - 2) / 12);
+	const punchP = Math.max(0, 1 - Math.abs(frame - PHIT - 2) / 12);
+	const punch = punchK + punchP;
+	const zx = punchK > punchP ? TIP_R : TIP_L;
+	const hop = (f: number, t0: number) => (f >= t0 && f < t0 + 10 ? -34 * Math.sin(((f - t0) / 10) * Math.PI) : 0);
+	const shakeK = (f: number) => Math.sin(f * 1.6) * Math.max(0, 1 - Math.abs(f - KHIT) / 8);
+	const shakeP = (f: number) => Math.sin(f * 1.6) * Math.max(0, 1 - Math.abs(f - PHIT) / 8);
 	return (
 		<AbsoluteFill>
 			<AbsoluteFill style={{background: LPI.paper}} />
-			<Camera punches={[BLESSENT + 1, SIX + 1, GUERI + 1, TOUJOURS + 1]} shakes={[BLESSENT + 2, TOUJOURS + 2]} strength={0.035}>
+			<Camera punches={[KHIT + 1, PHIT + 1, SIX + 1, GUERI + 1, TOUJOURS + 1]} shakes={[KHIT + 2, PHIT + 2, TOUJOURS + 2]} strength={0.035}>
+				<AbsoluteFill style={{transform: `scale(${1 + 0.22 * punch})`, transformOrigin: `${zx}px ${BRANCH_Y}px`}}>
 				{/* le jardin */}
 				<div style={{position: 'absolute', left: -20, right: -20, top: GROUND, height: 600, background: alpha(LPI.sky, 0.55), borderTop: `8px solid ${N}`}} />
 				{Array.from({length: 14}, (_, i) => (
 					<div key={i} style={{position: 'absolute', left: 30 + i * 76, top: GROUND - 18, width: 8, height: 26, borderRadius: 4, background: LPI.blue, transform: `rotate(${(i % 3) * 12 - 12}deg)`}} />
 				))}
-				<div style={{position: 'absolute', left: 545 - 130, top: GROUND - 300}}>
-					<Live render={(f) => <RoseBush shake={Math.sin(f) * fadeIn(f, BLESSENT - 4, 2) * (1 - fadeIn(f, BLESSENT + 8, 4))} />} />
+				<div style={{position: 'absolute', left: BUSH_X - 130, top: GROUND - 300, transform: 'scale(1.1)', transformOrigin: '130px 300px'}}>
+					<Live render={(f) => <RoseBush shake={shakeK(f) + shakeP(f)} />} />
 				</div>
-				{/* papi et le petit jardinent… et s'écorchent la jambe sur le rosier */}
-				<div style={{position: 'absolute', left: PAPI.left, top: PAPI.top + bob(0)}}>
-					<Live render={(f) => <Walker width={470} pose="walk" phase={0.25 * Math.sin(f / 7)} hair="old" shirt={LPI.sky} cry={ouch} legWound={popAt(f, BLESSENT) * (1 + 0.5 * fadeIn(f, SIX, 60))} />} />
-				</div>
-				<div style={{position: 'absolute', left: KID.left, top: KID.top + bob(2)}}>
-					<Live render={(f) => <Walker width={330} pose="walk" phase={0.25 * Math.sin(f / 7 + 2)} hair="kid" shirt={LPI.pink} cry={ouch} legWound={popAt(f, BLESSENT) * (1 - interpolate(f, [SIX, GUERI], [0, 1], clamp))} />} />
-				</div>
-				<Burst at={BLESSENT} x={PAPI.wound.x} y={PAPI.wound.y} r={170} n={10} />
-				<Burst at={BLESSENT} x={KID.wound.x} y={KID.wound.y} r={150} n={10} />
+				{/* papi arrive par la gauche, le petit par la droite… et chacun se griffe le tibia sur une branche */}
+				<Live
+					render={(f) => {
+						const x = papiX(f);
+						return (
+							<div style={{position: 'absolute', left: x - PAPI_W / 2, top: PAPI.top + hop(f, PHIT)}}>
+								<Walker width={PAPI_W} pose="walk" phase={f < PHIT ? x / 60 : 0} hair="old" shirt={LPI.sky} cry={fadeIn(f, PHIT, 3) * (1 - fadeIn(f, PHIT + 26, 8))} legWound={popAt(f, PHIT) * (1 + 0.5 * fadeIn(f, SIX, 60))} />
+							</div>
+						);
+					}}
+				/>
+				<Live
+					render={(f) => {
+						const x = kidX(f);
+						return (
+							<div style={{position: 'absolute', left: x - KID_W / 2, top: KID.top + hop(f, KHIT), transform: 'scaleX(-1)'}}>
+								<Walker width={KID_W} pose="walk" phase={f < KHIT ? -x / 45 : 0} hair="kid" shirt={LPI.pink} cry={fadeIn(f, KHIT, 3) * (1 - fadeIn(f, KHIT + 26, 8))} legWound={popAt(f, KHIT) * (1 - interpolate(f, [SIX, GUERI], [0, 1], clamp))} />
+							</div>
+						);
+					}}
+				/>
+				<Live render={(f) => <ThornBranch x0={BUSH_X - 20} tip={TIP_L} shake={shakeP(f)} />} />
+				<Live render={(f) => <ThornBranch x0={BUSH_X + 20} tip={TIP_R} shake={shakeK(f)} />} />
+				<Burst at={KHIT} x={TIP_R} y={BRANCH_Y} r={150} n={10} />
+				<Burst at={PHIT} x={TIP_L} y={BRANCH_Y} r={170} n={12} />
+				</AbsoluteFill>
 				{/* les semaines passent */}
-				<Fly at={SIX - 6} x={540} y={430} from="top">
+				<Fly at={SIX - 6} x={690} y={430} from="top">
 					<DayChip text={`J + ${day}`} size={230} />
 				</Fly>
-				<Badge at={GUERI} x={KID.head.x + 110} y={KID.head.y - 120} text="✓" tone={LPI.sky} />
-				<Badge at={TOUJOURS} x={PAPI.head.x - 120} y={PAPI.head.y - 130} text="!" tone={LPI.pink} />
+				<Badge at={GUERI} x={KID.head.x + 60} y={KID.head.y - 120} text="✓" tone={LPI.sky} />
+				<Badge at={TOUJOURS} x={PAPI.head.x + 150} y={PAPI.head.y - 120} text="!" tone={LPI.pink} />
 				<Live
 					render={(f) =>
 						f >= LONGTEMPS ? (
@@ -132,9 +182,14 @@ export const Hook: React.FC = () => {
 					}
 				/>
 			</Camera>
+			<Flash at={KHIT} max={0.2} />
+			<Flash at={PHIT} max={0.25} />
 			<Flash at={TOUJOURS} max={0.25} />
-			<Sfx name="impact" at={BLESSENT} volume={0.1} />
-			<Sfx name="pop" at={BLESSENT + 2} volume={0.07} />
+			<Sfx name="stairs" at={0} volume={0.18} dur={PHIT + 8} />
+			<Sfx name="skid" at={KHIT - 2} volume={0.2} dur={12} />
+			<Sfx name="impact" at={KHIT} volume={0.08} />
+			<Sfx name="skid" at={PHIT - 2} volume={0.22} dur={12} />
+			<Sfx name="impact" at={PHIT} volume={0.1} />
 			{Array.from({length: 9}, (_, i) => (
 				<Sfx key={i} name="tick" at={SIX - 2 + i * 4} volume={0.07} />
 			))}
