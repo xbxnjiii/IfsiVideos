@@ -1,0 +1,22 @@
+[
+ {
+  "id": "intro",
+  "rate": "+6%",
+  "text": "Tu marches sur un clou. Juste un tout petit trou… Rien de grave ?"
+ },
+ {
+  "id": "dessous",
+  "rate": "+2%",
+  "text": "Regarde sous la peau ! L'entrée est minuscule, mais le clou est allé très loin. Et il a emmené des microbes tout au fond, là où l'air n'arrive pas."
+ },
+ {
+  "id": "piqure",
+  "rate": "+2%",
+  "text": "C'est une plaie par piqûre : un objet pointu, un insecte… ou une aiguille pendant un soin. Dans ce cas, on dit qu'elle est iatrogène : causée par un soin."
+ },
+ {
+  "id": "fin",
+  "rate": "+4%",
+  "text": "Alors, on lave, on désinfecte… et on vérifie que le vaccin contre le tétanos est bien à jour ! Et si le trou est profond, on consulte."
+ }
+]

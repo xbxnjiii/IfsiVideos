@@ -23,3 +23,10 @@ autorisé, attribution non obligatoire. Refaits par `python3 scripts/import-sfx.
 | `dtmf-1.wav` | Touche 1 en DTMF | [3392](https://lasonotheque.org/search?q=3392) | 0.00 s → 0.26 s |
 | `dtmf-5.wav` | Touche 5 en DTMF | [3396](https://lasonotheque.org/search?q=3396) | 0.00 s → 0.26 s |
 | `ring.wav` | Tonalité téléphonique, appel (une sonnerie) | [0767](https://lasonotheque.org/search?q=0767) | 8.00 s → 9.40 s |
+| `bike.wav` | Vélo VTT sur graviers #1 | [1284](https://lasonotheque.org/search?q=1284) | 1.00 s → 2.60 s |
+| `skid.wav` | Frein de vélo #1 | [1087](https://lasonotheque.org/search?q=1087) | 0.08 s → 1.48 s |
+| `fall.wav` | Chute de corps #1 | [2452](https://lasonotheque.org/search?q=2452) | 0.08 s → 1.38 s |
+| `car-door.wav` | Portière de voiture #4 | [1526](https://lasonotheque.org/search?q=1526) | 0.07 s → 0.72 s |
+| `chop.wav` | Planche à découper, courgette #3 | [2070](https://lasonotheque.org/search?q=2070) | 0.22 s → 0.72 s |
+| `meow.wav` | Miaulement chat #2 | [1890](https://lasonotheque.org/search?q=1890) | 0.06 s → 2.01 s |
+| `hiss.wav` | Feulement chat #1 | [1881](https://lasonotheque.org/search?q=1881) | 0.00 s → 1.00 s |

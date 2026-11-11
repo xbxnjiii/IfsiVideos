@@ -1,0 +1,27 @@
+[
+ {
+  "id": "intro",
+  "rate": "+6%",
+  "text": "Deux plaies, le même jour. Trois semaines plus tard, l'une a disparu… et l'autre est toujours là."
+ },
+ {
+  "id": "aigue",
+  "rate": "+2%",
+  "text": "La première est une plaie aiguë : elle guérit normalement, en moins de quatre semaines. Comme une coupure, ou une cicatrice après une opération."
+ },
+ {
+  "id": "chronique",
+  "rate": "+2%",
+  "text": "La deuxième est une plaie chronique : sa cicatrisation est ralentie, ou bloquée, souvent au-delà de quatre à six semaines."
+ },
+ {
+  "id": "exemples",
+  "rate": "+2%",
+  "text": "Les trois grands exemples ? L'ulcère de jambe, l'escarre… et la plaie du pied diabétique."
+ },
+ {
+  "id": "fin",
+  "rate": "+4%",
+  "text": "Une plaie qui traîne, ce n'est jamais normal : on cherche toujours pourquoi !"
+ }
+]

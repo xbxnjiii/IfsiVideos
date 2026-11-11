@@ -31,6 +31,14 @@ SOUNDS = [
     ("dtmf-1", "3392", "Touche 1 en DTMF", 0.0, 0.26),
     ("dtmf-5", "3396", "Touche 5 en DTMF", 0.0, 0.26),
     ("ring", "0767", "Tonalité téléphonique, appel (une sonnerie)", 8.0, 1.4),
+    # série courte « Les plaies » (vélo, portière, couteau, chat)
+    ("bike", "1284", "Vélo VTT sur graviers #1", 1.0, 1.6),
+    ("skid", "1087", "Frein de vélo #1", 0.08, 1.4),
+    ("fall", "2452", "Chute de corps #1", 0.08, 1.3),
+    ("car-door", "1526", "Portière de voiture #4", 0.07, 0.65),
+    ("chop", "2070", "Planche à découper, courgette #3", 0.22, 0.5),
+    ("meow", "1890", "Miaulement chat #2", 0.06, 1.95),
+    ("hiss", "1881", "Feulement chat #1", 0.0, 1.0),
 ]
 
 

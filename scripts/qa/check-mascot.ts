@@ -60,6 +60,20 @@ import * as suppositoire from '../../src/videos/suppositoire/mascot';
 import * as suppositoireTL from '../../src/videos/suppositoire/timeline';
 import * as objetplante from '../../src/videos/objet-plante/mascot';
 import * as objetplanteTL from '../../src/videos/objet-plante/timeline';
+import * as plaieprofondeur from '../../src/videos/plaie-profondeur/mascot';
+import * as plaieprofondeurTL from '../../src/videos/plaie-profondeur/timeline';
+import * as plaiecontuse from '../../src/videos/plaie-contuse/mascot';
+import * as plaiecontuseTL from '../../src/videos/plaie-contuse/timeline';
+import * as plaiepiqure from '../../src/videos/plaie-piqure/mascot';
+import * as plaiepiqureTL from '../../src/videos/plaie-piqure/timeline';
+import * as plaiemorsure from '../../src/videos/plaie-morsure/mascot';
+import * as plaiemorsureTL from '../../src/videos/plaie-morsure/timeline';
+import * as plaiechronique from '../../src/videos/plaie-chronique/mascot';
+import * as plaiechroniqueTL from '../../src/videos/plaie-chronique/timeline';
+import * as escarre from '../../src/videos/escarre/mascot';
+import * as escarreTL from '../../src/videos/escarre/timeline';
+import * as pieddiabetique from '../../src/videos/pied-diabetique/mascot';
+import * as pieddiabetiqueTL from '../../src/videos/pied-diabetique/timeline';
 
 const VIDEOS: Record<string, [typeof constantes.MASCOT, typeof constantesTL.TL]> = {
 	constantes: [constantes.MASCOT, constantesTL.TL],
@@ -91,6 +105,13 @@ const VIDEOS: Record<string, [typeof constantes.MASCOT, typeof constantesTL.TL]>
 	'constantes-enfant': [constantesenfant.MASCOT, constantesenfantTL.TL],
 	'suppositoire': [suppositoire.MASCOT, suppositoireTL.TL],
 	'objet-plante': [objetplante.MASCOT, objetplanteTL.TL],
+	'plaie-profondeur': [plaieprofondeur.MASCOT, plaieprofondeurTL.TL],
+	'plaie-contuse': [plaiecontuse.MASCOT, plaiecontuseTL.TL],
+	'plaie-piqure': [plaiepiqure.MASCOT, plaiepiqureTL.TL],
+	'plaie-morsure': [plaiemorsure.MASCOT, plaiemorsureTL.TL],
+	'plaie-chronique': [plaiechronique.MASCOT, plaiechroniqueTL.TL],
+	'escarre': [escarre.MASCOT, escarreTL.TL],
+	'pied-diabetique': [pieddiabetique.MASCOT, pieddiabetiqueTL.TL],
 };
 const name = process.argv[2] ?? 'constantes';
 const [MASCOT, TL] = VIDEOS[name];

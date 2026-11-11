@@ -1,0 +1,503 @@
+{
+ "voice": "plaie-piqure-p.wav",
+ "duration": 30.978,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.0,
+   "end": 4.14
+  },
+  {
+   "id": "dessous",
+   "start": 4.979,
+   "end": 12.499
+  },
+  {
+   "id": "piqure",
+   "start": 13.201,
+   "end": 22.077
+  },
+  {
+   "id": "fin",
+   "start": 22.848,
+   "end": 30.9
+  }
+ ],
+ "words": [
+  {
+   "text": "Tu",
+   "start": 0.0,
+   "end": 0.26
+  },
+  {
+   "text": "marches",
+   "start": 0.26,
+   "end": 0.6
+  },
+  {
+   "text": "sur",
+   "start": 0.6,
+   "end": 0.78
+  },
+  {
+   "text": "un",
+   "start": 0.78,
+   "end": 1.06
+  },
+  {
+   "text": "clou.",
+   "start": 1.06,
+   "end": 1.4
+  },
+  {
+   "text": "Juste",
+   "start": 1.72,
+   "end": 2.04
+  },
+  {
+   "text": "un",
+   "start": 2.04,
+   "end": 2.34
+  },
+  {
+   "text": "tout",
+   "start": 2.34,
+   "end": 2.54
+  },
+  {
+   "text": "petit",
+   "start": 2.54,
+   "end": 2.86
+  },
+  {
+   "text": "trou…",
+   "start": 2.86,
+   "end": 3.2
+  },
+  {
+   "text": "Rien",
+   "start": 3.6,
+   "end": 3.8
+  },
+  {
+   "text": "de",
+   "start": 3.8,
+   "end": 3.98
+  },
+  {
+   "text": "grave ?",
+   "start": 3.98,
+   "end": 4.14
+  },
+  {
+   "text": "Regarde",
+   "start": 4.979,
+   "end": 5.44
+  },
+  {
+   "text": "sous",
+   "start": 5.44,
+   "end": 5.62
+  },
+  {
+   "text": "la",
+   "start": 5.62,
+   "end": 5.82
+  },
+  {
+   "text": "peau !",
+   "start": 5.82,
+   "end": 6.28
+  },
+  {
+   "text": "L'entrée",
+   "start": 6.4,
+   "end": 6.78
+  },
+  {
+   "text": "est",
+   "start": 6.78,
+   "end": 7.04
+  },
+  {
+   "text": "minuscule,",
+   "start": 7.04,
+   "end": 7.66
+  },
+  {
+   "text": "mais",
+   "start": 7.76,
+   "end": 7.88
+  },
+  {
+   "text": "le",
+   "start": 7.88,
+   "end": 8.1
+  },
+  {
+   "text": "clou",
+   "start": 8.1,
+   "end": 8.22
+  },
+  {
+   "text": "est",
+   "start": 8.22,
+   "end": 8.42
+  },
+  {
+   "text": "allé",
+   "start": 8.42,
+   "end": 8.68
+  },
+  {
+   "text": "très",
+   "start": 8.68,
+   "end": 8.98
+  },
+  {
+   "text": "loin.",
+   "start": 8.98,
+   "end": 9.22
+  },
+  {
+   "text": "Et",
+   "start": 9.62,
+   "end": 9.72
+  },
+  {
+   "text": "il",
+   "start": 9.72,
+   "end": 9.84
+  },
+  {
+   "text": "a",
+   "start": 9.84,
+   "end": 9.88
+  },
+  {
+   "text": "emmené",
+   "start": 9.88,
+   "end": 10.1
+  },
+  {
+   "text": "des",
+   "start": 10.1,
+   "end": 10.32
+  },
+  {
+   "text": "microbes",
+   "start": 10.32,
+   "end": 10.62
+  },
+  {
+   "text": "tout",
+   "start": 10.62,
+   "end": 10.92
+  },
+  {
+   "text": "au",
+   "start": 10.92,
+   "end": 11.16
+  },
+  {
+   "text": "fond,",
+   "start": 11.16,
+   "end": 11.34
+  },
+  {
+   "text": "là",
+   "start": 11.52,
+   "end": 11.66
+  },
+  {
+   "text": "où",
+   "start": 11.66,
+   "end": 11.74
+  },
+  {
+   "text": "l'air",
+   "start": 11.74,
+   "end": 11.94
+  },
+  {
+   "text": "n'arrive",
+   "start": 11.94,
+   "end": 12.28
+  },
+  {
+   "text": "pas.",
+   "start": 12.28,
+   "end": 12.499
+  },
+  {
+   "text": "C'est",
+   "start": 13.201,
+   "end": 13.48
+  },
+  {
+   "text": "une",
+   "start": 13.48,
+   "end": 13.72
+  },
+  {
+   "text": "plaie",
+   "start": 13.72,
+   "end": 13.86
+  },
+  {
+   "text": "par",
+   "start": 13.86,
+   "end": 14.1
+  },
+  {
+   "text": "piqûre :",
+   "start": 14.1,
+   "end": 14.68
+  },
+  {
+   "text": "un",
+   "start": 14.88,
+   "end": 15.06
+  },
+  {
+   "text": "objet",
+   "start": 15.06,
+   "end": 15.26
+  },
+  {
+   "text": "pointu,",
+   "start": 15.26,
+   "end": 15.88
+  },
+  {
+   "text": "un",
+   "start": 16.1,
+   "end": 16.34
+  },
+  {
+   "text": "insecte…",
+   "start": 16.34,
+   "end": 17.04
+  },
+  {
+   "text": "ou",
+   "start": 17.22,
+   "end": 17.34
+  },
+  {
+   "text": "une",
+   "start": 17.34,
+   "end": 17.52
+  },
+  {
+   "text": "aiguille",
+   "start": 17.52,
+   "end": 17.82
+  },
+  {
+   "text": "pendant",
+   "start": 17.82,
+   "end": 18.08
+  },
+  {
+   "text": "un",
+   "start": 18.08,
+   "end": 18.34
+  },
+  {
+   "text": "soin.",
+   "start": 18.34,
+   "end": 18.7
+  },
+  {
+   "text": "Dans",
+   "start": 18.88,
+   "end": 19.04
+  },
+  {
+   "text": "ce",
+   "start": 19.04,
+   "end": 19.24
+  },
+  {
+   "text": "cas,",
+   "start": 19.24,
+   "end": 19.44
+  },
+  {
+   "text": "on",
+   "start": 19.56,
+   "end": 19.7
+  },
+  {
+   "text": "dit",
+   "start": 19.7,
+   "end": 19.8
+  },
+  {
+   "text": "qu'elle",
+   "start": 19.8,
+   "end": 20.04
+  },
+  {
+   "text": "est",
+   "start": 20.04,
+   "end": 20.16
+  },
+  {
+   "text": "iatrogène :",
+   "start": 20.16,
+   "end": 21.0
+  },
+  {
+   "text": "causée",
+   "start": 21.3,
+   "end": 21.56
+  },
+  {
+   "text": "par",
+   "start": 21.56,
+   "end": 21.76
+  },
+  {
+   "text": "un",
+   "start": 21.76,
+   "end": 22.0
+  },
+  {
+   "text": "soin.",
+   "start": 22.0,
+   "end": 22.077
+  },
+  {
+   "text": "Alors,",
+   "start": 22.848,
+   "end": 23.28
+  },
+  {
+   "text": "on",
+   "start": 23.46,
+   "end": 23.62
+  },
+  {
+   "text": "lave,",
+   "start": 23.62,
+   "end": 24.06
+  },
+  {
+   "text": "on",
+   "start": 24.2,
+   "end": 24.46
+  },
+  {
+   "text": "désinfecte…",
+   "start": 24.46,
+   "end": 25.24
+  },
+  {
+   "text": "et",
+   "start": 25.34,
+   "end": 25.48
+  },
+  {
+   "text": "on",
+   "start": 25.48,
+   "end": 25.7
+  },
+  {
+   "text": "vérifie",
+   "start": 25.7,
+   "end": 25.98
+  },
+  {
+   "text": "que",
+   "start": 25.98,
+   "end": 26.12
+  },
+  {
+   "text": "le",
+   "start": 26.12,
+   "end": 26.3
+  },
+  {
+   "text": "vaccin",
+   "start": 26.3,
+   "end": 26.54
+  },
+  {
+   "text": "contre",
+   "start": 26.54,
+   "end": 26.82
+  },
+  {
+   "text": "le",
+   "start": 26.82,
+   "end": 27.02
+  },
+  {
+   "text": "tétanos",
+   "start": 27.02,
+   "end": 27.44
+  },
+  {
+   "text": "est",
+   "start": 27.44,
+   "end": 27.78
+  },
+  {
+   "text": "bien",
+   "start": 27.78,
+   "end": 28.02
+  },
+  {
+   "text": "à",
+   "start": 28.02,
+   "end": 28.2
+  },
+  {
+   "text": "jour !",
+   "start": 28.2,
+   "end": 28.4
+  },
+  {
+   "text": "Et",
+   "start": 28.4,
+   "end": 28.9
+  },
+  {
+   "text": "si",
+   "start": 28.9,
+   "end": 29.1
+  },
+  {
+   "text": "le",
+   "start": 29.1,
+   "end": 29.28
+  },
+  {
+   "text": "trou",
+   "start": 29.28,
+   "end": 29.34
+  },
+  {
+   "text": "est",
+   "start": 29.34,
+   "end": 29.52
+  },
+  {
+   "text": "profond,",
+   "start": 29.52,
+   "end": 29.96
+  },
+  {
+   "text": "on",
+   "start": 30.2,
+   "end": 30.32
+  },
+  {
+   "text": "consulte.",
+   "start": 30.32,
+   "end": 30.9
+  }
+ ]
+}

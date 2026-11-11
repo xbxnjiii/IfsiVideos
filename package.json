@@ -44,7 +44,14 @@
     "render:diabete-2": "remotion render Diabete-2 out/26-diabete-2.mp4",
     "render:constantes-enfant": "remotion render Constantes-Enfant out/28-constantes-enfant.mp4",
     "render:suppositoire": "remotion render Suppositoire out/29-suppositoire.mp4",
-    "render:objet-plante": "remotion render Objet-Plante out/30-objet-plante.mp4"
+    "render:objet-plante": "remotion render Objet-Plante out/30-objet-plante.mp4",
+    "render:plaie-profondeur": "remotion render Plaie-Profondeur out/31-plaie-profondeur.mp4",
+    "render:plaie-contuse": "remotion render Plaie-Contuse out/32-plaie-contuse.mp4",
+    "render:plaie-piqure": "remotion render Plaie-Piqure out/33-plaie-piqure.mp4",
+    "render:plaie-morsure": "remotion render Plaie-Morsure out/34-plaie-morsure.mp4",
+    "render:plaie-chronique": "remotion render Plaie-Chronique out/35-plaie-chronique.mp4",
+    "render:escarre": "remotion render Escarre out/36-escarre.mp4",
+    "render:pied-diabetique": "remotion render Pied-Diabetique out/37-pied-diabetique.mp4"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.532",

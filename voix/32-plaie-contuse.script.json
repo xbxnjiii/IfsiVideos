@@ -1,0 +1,22 @@
+[
+ {
+  "id": "intro",
+  "rate": "+6%",
+  "text": "Le couteau de cuisine… ou la portière sur les doigts. À ton avis, laquelle est la pire ?"
+ },
+ {
+  "id": "franche",
+  "rate": "+2%",
+  "text": "Le couteau fait une plaie franche : des bords nets, bien réguliers. Ils se recollent facilement : souvent, quelques points de suture suffisent."
+ },
+ {
+  "id": "contuse",
+  "rate": "+2%",
+  "text": "La portière, elle, écrase. C'est une plaie contuse : des bords irréguliers, des tissus écrasés… qui peuvent mourir. On appelle ça la nécrose."
+ },
+ {
+  "id": "fin",
+  "rate": "+4%",
+  "text": "Alors, c'est la portière ! Une plaie qui écrase est souvent plus grave qu'une plaie qui coupe."
+ }
+]

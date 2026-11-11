@@ -1,0 +1,458 @@
+{
+ "voice": "plaie-chronique-p.wav",
+ "duration": 32.285,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.0,
+   "end": 6.541
+  },
+  {
+   "id": "aigue",
+   "start": 7.136,
+   "end": 14.199
+  },
+  {
+   "id": "chronique",
+   "start": 14.913,
+   "end": 21.94
+  },
+  {
+   "id": "exemples",
+   "start": 22.715,
+   "end": 27.66
+  },
+  {
+   "id": "fin",
+   "start": 27.66,
+   "end": 32.08
+  }
+ ],
+ "words": [
+  {
+   "text": "Deux",
+   "start": 0.0,
+   "end": 0.66
+  },
+  {
+   "text": "plaies,",
+   "start": 0.66,
+   "end": 0.9
+  },
+  {
+   "text": "le",
+   "start": 0.9,
+   "end": 1.36
+  },
+  {
+   "text": "même",
+   "start": 1.36,
+   "end": 1.58
+  },
+  {
+   "text": "jour.",
+   "start": 1.58,
+   "end": 2.14
+  },
+  {
+   "text": "Trois",
+   "start": 2.46,
+   "end": 2.7
+  },
+  {
+   "text": "semaines",
+   "start": 2.7,
+   "end": 2.8
+  },
+  {
+   "text": "plus",
+   "start": 2.8,
+   "end": 3.16
+  },
+  {
+   "text": "tard,",
+   "start": 3.16,
+   "end": 3.54
+  },
+  {
+   "text": "l'une",
+   "start": 3.74,
+   "end": 3.9
+  },
+  {
+   "text": "a",
+   "start": 3.9,
+   "end": 4.18
+  },
+  {
+   "text": "disparu…",
+   "start": 4.18,
+   "end": 4.96
+  },
+  {
+   "text": "et",
+   "start": 4.96,
+   "end": 5.2
+  },
+  {
+   "text": "l'autre",
+   "start": 5.2,
+   "end": 5.6
+  },
+  {
+   "text": "est",
+   "start": 5.6,
+   "end": 5.96
+  },
+  {
+   "text": "toujours",
+   "start": 5.96,
+   "end": 6.24
+  },
+  {
+   "text": "là.",
+   "start": 6.24,
+   "end": 6.541
+  },
+  {
+   "text": "La",
+   "start": 7.136,
+   "end": 7.42
+  },
+  {
+   "text": "première",
+   "start": 7.42,
+   "end": 7.64
+  },
+  {
+   "text": "est",
+   "start": 7.64,
+   "end": 7.8
+  },
+  {
+   "text": "une",
+   "start": 7.8,
+   "end": 8.06
+  },
+  {
+   "text": "plaie",
+   "start": 8.06,
+   "end": 8.32
+  },
+  {
+   "text": "aiguë :",
+   "start": 8.32,
+   "end": 8.9
+  },
+  {
+   "text": "elle",
+   "start": 8.98,
+   "end": 9.14
+  },
+  {
+   "text": "guérit",
+   "start": 9.14,
+   "end": 9.4
+  },
+  {
+   "text": "normalement,",
+   "start": 9.4,
+   "end": 10.04
+  },
+  {
+   "text": "en",
+   "start": 10.12,
+   "end": 10.26
+  },
+  {
+   "text": "moins",
+   "start": 10.26,
+   "end": 10.4
+  },
+  {
+   "text": "de",
+   "start": 10.4,
+   "end": 10.6
+  },
+  {
+   "text": "quatre",
+   "start": 10.6,
+   "end": 10.84
+  },
+  {
+   "text": "semaines.",
+   "start": 10.84,
+   "end": 11.2
+  },
+  {
+   "text": "Comme",
+   "start": 11.64,
+   "end": 11.78
+  },
+  {
+   "text": "une",
+   "start": 11.78,
+   "end": 11.96
+  },
+  {
+   "text": "coupure,",
+   "start": 11.96,
+   "end": 12.4
+  },
+  {
+   "text": "ou",
+   "start": 12.4,
+   "end": 12.62
+  },
+  {
+   "text": "une",
+   "start": 12.62,
+   "end": 12.86
+  },
+  {
+   "text": "cicatrice",
+   "start": 12.86,
+   "end": 13.34
+  },
+  {
+   "text": "après",
+   "start": 13.34,
+   "end": 13.54
+  },
+  {
+   "text": "une",
+   "start": 13.54,
+   "end": 13.76
+  },
+  {
+   "text": "opération.",
+   "start": 13.76,
+   "end": 14.199
+  },
+  {
+   "text": "La",
+   "start": 14.913,
+   "end": 15.18
+  },
+  {
+   "text": "deuxième",
+   "start": 15.18,
+   "end": 15.56
+  },
+  {
+   "text": "est",
+   "start": 15.56,
+   "end": 15.86
+  },
+  {
+   "text": "une",
+   "start": 15.86,
+   "end": 16.08
+  },
+  {
+   "text": "plaie",
+   "start": 16.08,
+   "end": 16.32
+  },
+  {
+   "text": "chronique :",
+   "start": 16.32,
+   "end": 16.96
+  },
+  {
+   "text": "sa",
+   "start": 17.24,
+   "end": 17.34
+  },
+  {
+   "text": "cicatrisation",
+   "start": 17.34,
+   "end": 18.12
+  },
+  {
+   "text": "est",
+   "start": 18.12,
+   "end": 18.34
+  },
+  {
+   "text": "ralentie,",
+   "start": 18.34,
+   "end": 18.92
+  },
+  {
+   "text": "ou",
+   "start": 18.92,
+   "end": 19.14
+  },
+  {
+   "text": "bloquée,",
+   "start": 19.14,
+   "end": 19.78
+  },
+  {
+   "text": "souvent",
+   "start": 20.02,
+   "end": 20.24
+  },
+  {
+   "text": "au-delà",
+   "start": 20.24,
+   "end": 20.78
+  },
+  {
+   "text": "de",
+   "start": 20.78,
+   "end": 21.02
+  },
+  {
+   "text": "quatre",
+   "start": 21.02,
+   "end": 21.28
+  },
+  {
+   "text": "à",
+   "start": 21.28,
+   "end": 21.42
+  },
+  {
+   "text": "six",
+   "start": 21.42,
+   "end": 21.66
+  },
+  {
+   "text": "semaines.",
+   "start": 21.66,
+   "end": 21.94
+  },
+  {
+   "text": "Les",
+   "start": 22.715,
+   "end": 22.94
+  },
+  {
+   "text": "trois",
+   "start": 22.94,
+   "end": 23.06
+  },
+  {
+   "text": "grands",
+   "start": 23.06,
+   "end": 23.28
+  },
+  {
+   "text": "exemples ?",
+   "start": 23.28,
+   "end": 23.92
+  },
+  {
+   "text": "L'ulcère",
+   "start": 24.2,
+   "end": 24.54
+  },
+  {
+   "text": "de",
+   "start": 24.54,
+   "end": 24.8
+  },
+  {
+   "text": "jambe,",
+   "start": 24.8,
+   "end": 25.14
+  },
+  {
+   "text": "l'escarre…",
+   "start": 25.32,
+   "end": 25.96
+  },
+  {
+   "text": "et",
+   "start": 25.96,
+   "end": 26.34
+  },
+  {
+   "text": "la",
+   "start": 26.34,
+   "end": 26.62
+  },
+  {
+   "text": "plaie",
+   "start": 26.62,
+   "end": 26.7
+  },
+  {
+   "text": "du",
+   "start": 26.7,
+   "end": 26.88
+  },
+  {
+   "text": "pied",
+   "start": 26.88,
+   "end": 27.08
+  },
+  {
+   "text": "diabétique.",
+   "start": 27.08,
+   "end": 27.66
+  },
+  {
+   "text": "Une",
+   "start": 27.66,
+   "end": 28.64
+  },
+  {
+   "text": "plaie",
+   "start": 28.64,
+   "end": 28.88
+  },
+  {
+   "text": "qui",
+   "start": 28.88,
+   "end": 29.1
+  },
+  {
+   "text": "traîne,",
+   "start": 29.1,
+   "end": 29.4
+  },
+  {
+   "text": "ce",
+   "start": 29.5,
+   "end": 29.68
+  },
+  {
+   "text": "n'est",
+   "start": 29.68,
+   "end": 29.94
+  },
+  {
+   "text": "jamais",
+   "start": 29.94,
+   "end": 30.28
+  },
+  {
+   "text": "normal :",
+   "start": 30.28,
+   "end": 30.68
+  },
+  {
+   "text": "on",
+   "start": 30.94,
+   "end": 31.06
+  },
+  {
+   "text": "cherche",
+   "start": 31.06,
+   "end": 31.32
+  },
+  {
+   "text": "toujours",
+   "start": 31.32,
+   "end": 31.72
+  },
+  {
+   "text": "pourquoi !",
+   "start": 31.72,
+   "end": 32.08
+  }
+ ]
+}

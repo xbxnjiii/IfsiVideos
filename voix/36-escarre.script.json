@@ -1,0 +1,27 @@
+[
+ {
+  "id": "intro",
+  "rate": "+6%",
+  "text": "Il n'est resté allongé que quelques heures… et pourtant, sa peau a commencé à mourir."
+ },
+ {
+  "id": "pression",
+  "rate": "+2%",
+  "text": "Regarde sous la peau. Entre l'os et le matelas, les tissus sont écrasés. Le sang ne passe plus… et les cellules meurent. C'est l'escarre."
+ },
+ {
+  "id": "ou",
+  "rate": "+2%",
+  "text": "Elle apparaît là où le corps appuie : les talons, le bas du dos, l'arrière de la tête…"
+ },
+ {
+  "id": "geste",
+  "rate": "+2%",
+  "text": "Pour l'éviter, on change de position souvent, on utilise un matelas adapté… et on surveille la peau."
+ },
+ {
+  "id": "fin",
+  "rate": "+4%",
+  "text": "Une rougeur qui ne disparaît pas quand on appuie dessus ? Alerte : c'est le début d'une escarre !"
+ }
+]

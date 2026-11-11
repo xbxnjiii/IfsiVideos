@@ -1,0 +1,22 @@
+[
+ {
+  "id": "intro",
+  "rate": "+6%",
+  "text": "Un trou sous le pied… et il ne sent rien. Il continue à marcher dessus, tous les jours."
+ },
+ {
+  "id": "pied",
+  "rate": "+2%",
+  "text": "Chez le diabétique, le sucre en trop abîme les nerfs : la douleur ne remonte plus. Alors, une petite plaie grandit en silence. C'est le mal perforant plantaire."
+ },
+ {
+  "id": "ulcere",
+  "rate": "+2%",
+  "text": "Et sur la jambe ? Un ulcère : une plaie qui ne guérit pas, à cause des veines, des artères… ou des deux. On dit alors qu'il est mixte."
+ },
+ {
+  "id": "fin",
+  "rate": "+4%",
+  "text": "Ton patient est diabétique ? Alors, tu regardes ses pieds, tous les jours : dessus, dessous… et entre les orteils !"
+ }
+]

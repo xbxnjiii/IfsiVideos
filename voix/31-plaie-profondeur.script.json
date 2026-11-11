@@ -1,0 +1,22 @@
+[
+ {
+  "id": "intro",
+  "rate": "+6%",
+  "text": "Tu tombes à vélo, le genou tout râpé… et ça pique énormément ! Et pourtant, c'est la plaie la moins grave."
+ },
+ {
+  "id": "superficielle",
+  "rate": "+2%",
+  "text": "Regarde sous la peau. Une écorchure, c'est une plaie superficielle : elle s'arrête à l'épiderme ou au derme, les premières couches de la peau. Elle cicatrise vite."
+ },
+ {
+  "id": "profonde",
+  "rate": "+2%",
+  "text": "Une plaie profonde, elle, passe sous le derme. Elle peut toucher la graisse, les muscles, les tendons, les nerfs… ou les vaisseaux. Là, il faut souvent des points de suture."
+ },
+ {
+  "id": "fin",
+  "rate": "+4%",
+  "text": "Alors, ce n'est pas la douleur qui compte : c'est la profondeur !"
+ }
+]

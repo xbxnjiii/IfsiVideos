@@ -1,0 +1,463 @@
+{
+ "voice": "plaie-profondeur-p.wav",
+ "duration": 31.258,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.0,
+   "end": 7.06
+  },
+  {
+   "id": "superficielle",
+   "start": 7.909,
+   "end": 16.59
+  },
+  {
+   "id": "profonde",
+   "start": 17.34,
+   "end": 27.153
+  },
+  {
+   "id": "fin",
+   "start": 27.85,
+   "end": 31.12
+  }
+ ],
+ "words": [
+  {
+   "text": "Tu",
+   "start": 0.0,
+   "end": 0.28
+  },
+  {
+   "text": "tombes",
+   "start": 0.28,
+   "end": 0.6
+  },
+  {
+   "text": "à",
+   "start": 0.6,
+   "end": 0.8
+  },
+  {
+   "text": "vélo,",
+   "start": 0.8,
+   "end": 1.2
+  },
+  {
+   "text": "le",
+   "start": 1.34,
+   "end": 1.52
+  },
+  {
+   "text": "genou",
+   "start": 1.52,
+   "end": 1.82
+  },
+  {
+   "text": "tout",
+   "start": 1.82,
+   "end": 2.1
+  },
+  {
+   "text": "râpé…",
+   "start": 2.1,
+   "end": 2.78
+  },
+  {
+   "text": "et",
+   "start": 2.98,
+   "end": 3.06
+  },
+  {
+   "text": "ça",
+   "start": 3.06,
+   "end": 3.3
+  },
+  {
+   "text": "pique",
+   "start": 3.3,
+   "end": 3.7
+  },
+  {
+   "text": "énormément !",
+   "start": 3.7,
+   "end": 4.58
+  },
+  {
+   "text": "Et",
+   "start": 5.0,
+   "end": 5.22
+  },
+  {
+   "text": "pourtant,",
+   "start": 5.22,
+   "end": 5.66
+  },
+  {
+   "text": "c'est",
+   "start": 5.98,
+   "end": 6.16
+  },
+  {
+   "text": "la",
+   "start": 6.16,
+   "end": 6.3
+  },
+  {
+   "text": "plaie",
+   "start": 6.3,
+   "end": 6.42
+  },
+  {
+   "text": "la",
+   "start": 6.42,
+   "end": 6.62
+  },
+  {
+   "text": "moins",
+   "start": 6.62,
+   "end": 6.78
+  },
+  {
+   "text": "grave.",
+   "start": 6.78,
+   "end": 7.06
+  },
+  {
+   "text": "Regarde",
+   "start": 7.909,
+   "end": 8.3
+  },
+  {
+   "text": "sous",
+   "start": 8.3,
+   "end": 8.48
+  },
+  {
+   "text": "la",
+   "start": 8.48,
+   "end": 8.7
+  },
+  {
+   "text": "peau.",
+   "start": 8.7,
+   "end": 9.0
+  },
+  {
+   "text": "Une",
+   "start": 9.24,
+   "end": 9.4
+  },
+  {
+   "text": "écorchure,",
+   "start": 9.4,
+   "end": 10.08
+  },
+  {
+   "text": "c'est",
+   "start": 10.12,
+   "end": 10.38
+  },
+  {
+   "text": "une",
+   "start": 10.38,
+   "end": 10.54
+  },
+  {
+   "text": "plaie",
+   "start": 10.54,
+   "end": 10.82
+  },
+  {
+   "text": "superficielle :",
+   "start": 10.82,
+   "end": 11.62
+  },
+  {
+   "text": "elle",
+   "start": 11.84,
+   "end": 11.98
+  },
+  {
+   "text": "s'arrête",
+   "start": 11.98,
+   "end": 12.34
+  },
+  {
+   "text": "à",
+   "start": 12.34,
+   "end": 12.48
+  },
+  {
+   "text": "l'épiderme",
+   "start": 12.48,
+   "end": 13.08
+  },
+  {
+   "text": "ou",
+   "start": 13.08,
+   "end": 13.3
+  },
+  {
+   "text": "au",
+   "start": 13.3,
+   "end": 13.5
+  },
+  {
+   "text": "derme,",
+   "start": 13.5,
+   "end": 13.9
+  },
+  {
+   "text": "les",
+   "start": 14.08,
+   "end": 14.22
+  },
+  {
+   "text": "premières",
+   "start": 14.22,
+   "end": 14.58
+  },
+  {
+   "text": "couches",
+   "start": 14.58,
+   "end": 14.74
+  },
+  {
+   "text": "de",
+   "start": 14.74,
+   "end": 14.94
+  },
+  {
+   "text": "la",
+   "start": 14.94,
+   "end": 15.1
+  },
+  {
+   "text": "peau.",
+   "start": 15.1,
+   "end": 15.5
+  },
+  {
+   "text": "Elle",
+   "start": 15.6,
+   "end": 15.76
+  },
+  {
+   "text": "cicatrise",
+   "start": 15.76,
+   "end": 16.26
+  },
+  {
+   "text": "vite.",
+   "start": 16.26,
+   "end": 16.59
+  },
+  {
+   "text": "Une",
+   "start": 17.34,
+   "end": 17.56
+  },
+  {
+   "text": "plaie",
+   "start": 17.56,
+   "end": 17.8
+  },
+  {
+   "text": "profonde,",
+   "start": 17.8,
+   "end": 18.36
+  },
+  {
+   "text": "elle,",
+   "start": 18.44,
+   "end": 18.88
+  },
+  {
+   "text": "passe",
+   "start": 18.96,
+   "end": 19.16
+  },
+  {
+   "text": "sous",
+   "start": 19.16,
+   "end": 19.44
+  },
+  {
+   "text": "le",
+   "start": 19.44,
+   "end": 19.66
+  },
+  {
+   "text": "derme.",
+   "start": 19.66,
+   "end": 20.1
+  },
+  {
+   "text": "Elle",
+   "start": 20.26,
+   "end": 20.42
+  },
+  {
+   "text": "peut",
+   "start": 20.42,
+   "end": 20.58
+  },
+  {
+   "text": "toucher",
+   "start": 20.58,
+   "end": 20.88
+  },
+  {
+   "text": "la",
+   "start": 20.88,
+   "end": 21.14
+  },
+  {
+   "text": "graisse,",
+   "start": 21.14,
+   "end": 21.5
+  },
+  {
+   "text": "les",
+   "start": 21.66,
+   "end": 21.9
+  },
+  {
+   "text": "muscles,",
+   "start": 21.9,
+   "end": 22.32
+  },
+  {
+   "text": "les",
+   "start": 22.5,
+   "end": 22.72
+  },
+  {
+   "text": "tendons,",
+   "start": 22.72,
+   "end": 23.12
+  },
+  {
+   "text": "les",
+   "start": 23.28,
+   "end": 23.5
+  },
+  {
+   "text": "nerfs…",
+   "start": 23.5,
+   "end": 24.04
+  },
+  {
+   "text": "ou",
+   "start": 24.04,
+   "end": 24.28
+  },
+  {
+   "text": "les",
+   "start": 24.28,
+   "end": 24.46
+  },
+  {
+   "text": "vaisseaux.",
+   "start": 24.46,
+   "end": 25.06
+  },
+  {
+   "text": "Là,",
+   "start": 25.22,
+   "end": 25.52
+  },
+  {
+   "text": "il",
+   "start": 25.7,
+   "end": 25.82
+  },
+  {
+   "text": "faut",
+   "start": 25.82,
+   "end": 25.98
+  },
+  {
+   "text": "souvent",
+   "start": 25.98,
+   "end": 26.34
+  },
+  {
+   "text": "des",
+   "start": 26.34,
+   "end": 26.52
+  },
+  {
+   "text": "points",
+   "start": 26.52,
+   "end": 26.66
+  },
+  {
+   "text": "de",
+   "start": 26.66,
+   "end": 26.8
+  },
+  {
+   "text": "suture.",
+   "start": 26.8,
+   "end": 27.153
+  },
+  {
+   "text": "Alors,",
+   "start": 27.85,
+   "end": 28.26
+  },
+  {
+   "text": "ce",
+   "start": 28.5,
+   "end": 28.6
+  },
+  {
+   "text": "n'est",
+   "start": 28.6,
+   "end": 28.78
+  },
+  {
+   "text": "pas",
+   "start": 28.78,
+   "end": 28.92
+  },
+  {
+   "text": "la",
+   "start": 28.92,
+   "end": 29.06
+  },
+  {
+   "text": "douleur",
+   "start": 29.06,
+   "end": 29.32
+  },
+  {
+   "text": "qui",
+   "start": 29.32,
+   "end": 29.52
+  },
+  {
+   "text": "compte :",
+   "start": 29.52,
+   "end": 29.84
+  },
+  {
+   "text": "c'est",
+   "start": 30.12,
+   "end": 30.28
+  },
+  {
+   "text": "la",
+   "start": 30.28,
+   "end": 30.58
+  },
+  {
+   "text": "profondeur !",
+   "start": 30.58,
+   "end": 31.12
+  }
+ ]
+}

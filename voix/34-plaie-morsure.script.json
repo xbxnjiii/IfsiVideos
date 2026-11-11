@@ -1,0 +1,27 @@
+[
+ {
+  "id": "intro",
+  "rate": "+6%",
+  "text": "Ton chat t'a mordu. Deux petits trous, rien de méchant… Et le lendemain, ta main a doublé de volume !"
+ },
+ {
+  "id": "pourquoi",
+  "rate": "+2%",
+  "text": "La bouche est pleine de microbes. En mordant, les dents les ont enfoncés profondément sous la peau."
+ },
+ {
+  "id": "risque",
+  "rate": "+2%",
+  "text": "C'est une plaie par morsure : le risque d'infection est élevé, même quand elle a l'air toute petite."
+ },
+ {
+  "id": "geste",
+  "rate": "+2%",
+  "text": "Alors, on lave longuement à l'eau et au savon, on désinfecte… et on consulte un médecin le jour même."
+ },
+ {
+  "id": "fin",
+  "rate": "+4%",
+  "text": "Un chat, un chien, ou même un humain : toute morsure doit être montrée au médecin !"
+ }
+]

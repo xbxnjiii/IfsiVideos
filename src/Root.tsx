@@ -62,6 +62,20 @@ import {Suppositoire, SuppositoireProps} from './videos/suppositoire/Suppositoir
 import {TL as SUPPOSITOIRE_TL} from './videos/suppositoire/timeline';
 import {ObjetPlante, ObjetPlanteProps} from './videos/objet-plante/ObjetPlante';
 import {TL as OBJET_PLANTE_TL} from './videos/objet-plante/timeline';
+import {PlaieProfondeur, PlaieProfondeurProps} from './videos/plaie-profondeur/PlaieProfondeur';
+import {TL as PLAIE_PROFONDEUR_TL} from './videos/plaie-profondeur/timeline';
+import {PlaieContuse, PlaieContuseProps} from './videos/plaie-contuse/PlaieContuse';
+import {TL as PLAIE_CONTUSE_TL} from './videos/plaie-contuse/timeline';
+import {PlaiePiqure, PlaiePiqureProps} from './videos/plaie-piqure/PlaiePiqure';
+import {TL as PLAIE_PIQURE_TL} from './videos/plaie-piqure/timeline';
+import {PlaieMorsure, PlaieMorsureProps} from './videos/plaie-morsure/PlaieMorsure';
+import {TL as PLAIE_MORSURE_TL} from './videos/plaie-morsure/timeline';
+import {PlaieChronique, PlaieChroniqueProps} from './videos/plaie-chronique/PlaieChronique';
+import {TL as PLAIE_CHRONIQUE_TL} from './videos/plaie-chronique/timeline';
+import {Escarre, EscarreProps} from './videos/escarre/Escarre';
+import {TL as ESCARRE_TL} from './videos/escarre/timeline';
+import {PiedDiabetique, PiedDiabetiqueProps} from './videos/pied-diabetique/PiedDiabetique';
+import {TL as PIED_DIABETIQUE_TL} from './videos/pied-diabetique/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -358,6 +372,76 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies ObjetPlanteProps}
+		/>
+		{/* 31 · Plaie-Profondeur */}
+		<Composition
+			id="Plaie-Profondeur"
+			component={PlaieProfondeur}
+			durationInFrames={PLAIE_PROFONDEUR_TL.total}
+			fps={PLAIE_PROFONDEUR_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies PlaieProfondeurProps}
+		/>
+		{/* 32 · Plaie-Contuse */}
+		<Composition
+			id="Plaie-Contuse"
+			component={PlaieContuse}
+			durationInFrames={PLAIE_CONTUSE_TL.total}
+			fps={PLAIE_CONTUSE_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies PlaieContuseProps}
+		/>
+		{/* 33 · Plaie-Piqure */}
+		<Composition
+			id="Plaie-Piqure"
+			component={PlaiePiqure}
+			durationInFrames={PLAIE_PIQURE_TL.total}
+			fps={PLAIE_PIQURE_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies PlaiePiqureProps}
+		/>
+		{/* 34 · Plaie-Morsure */}
+		<Composition
+			id="Plaie-Morsure"
+			component={PlaieMorsure}
+			durationInFrames={PLAIE_MORSURE_TL.total}
+			fps={PLAIE_MORSURE_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies PlaieMorsureProps}
+		/>
+		{/* 35 · Plaie-Chronique */}
+		<Composition
+			id="Plaie-Chronique"
+			component={PlaieChronique}
+			durationInFrames={PLAIE_CHRONIQUE_TL.total}
+			fps={PLAIE_CHRONIQUE_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies PlaieChroniqueProps}
+		/>
+		{/* 36 · Escarre */}
+		<Composition
+			id="Escarre"
+			component={Escarre}
+			durationInFrames={ESCARRE_TL.total}
+			fps={ESCARRE_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies EscarreProps}
+		/>
+		{/* 37 · Pied-Diabetique */}
+		<Composition
+			id="Pied-Diabetique"
+			component={PiedDiabetique}
+			durationInFrames={PIED_DIABETIQUE_TL.total}
+			fps={PIED_DIABETIQUE_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies PiedDiabetiqueProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition
