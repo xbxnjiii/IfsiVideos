@@ -1,698 +1,698 @@
 {
- "voice": "voix.wav (tts_voix.py)",
- "duration": 44.318,
+ "voice": "allongee.wav",
+ "duration": 46.54,
  "sections": [
   {
    "id": "intro",
-   "start": 0.05,
-   "end": 7.728
+   "start": 0.0,
+   "end": 7.7
   },
   {
    "id": "soigner",
-   "start": 8.675,
-   "end": 16.592
+   "start": 8.621,
+   "end": 17.39
   },
   {
    "id": "tenir",
-   "start": 17.541,
-   "end": 24.747
+   "start": 18.191,
+   "end": 26.096
   },
   {
    "id": "plus",
-   "start": 25.676,
-   "end": 30.48
+   "start": 26.896,
+   "end": 32.04
   },
   {
    "id": "regles",
-   "start": 31.421,
-   "end": 40.723
+   "start": 32.839,
+   "end": 43.042
   },
   {
    "id": "fin",
-   "start": 41.656,
-   "end": 43.988
+   "start": 43.857,
+   "end": 46.38
   }
  ],
  "words": [
   {
    "text": "Le",
-   "start": 0.05,
-   "end": 0.23
+   "start": 0.0,
+   "end": 0.22
   },
   {
    "text": "couteau",
-   "start": 0.23,
-   "end": 0.53
+   "start": 0.22,
+   "end": 0.5
   },
   {
    "text": "glisse…",
-   "start": 0.53,
-   "end": 0.963
+   "start": 0.5,
+   "end": 1.0
   },
   {
    "text": "et",
-   "start": 1.239,
-   "end": 1.263
+   "start": 1.22,
+   "end": 1.4
   },
   {
    "text": "ton",
-   "start": 1.263,
-   "end": 1.408
+   "start": 1.4,
+   "end": 1.52
   },
   {
    "text": "doigt",
-   "start": 1.408,
-   "end": 1.54
+   "start": 1.52,
+   "end": 1.78
   },
   {
-   "text": "saigne !",
-   "start": 1.54,
-   "end": 1.997
+   "text": "saigne !",
+   "start": 1.78,
+   "end": 2.14
   },
   {
    "text": "Vite,",
-   "start": 2.322,
-   "end": 2.79
+   "start": 2.48,
+   "end": 2.82
   },
   {
    "text": "la",
-   "start": 3.043,
-   "end": 3.103
+   "start": 2.88,
+   "end": 3.08
   },
   {
    "text": "trousse",
-   "start": 3.103,
-   "end": 3.343
+   "start": 3.08,
+   "end": 3.2
   },
   {
    "text": "de",
-   "start": 3.343,
-   "end": 3.451
+   "start": 3.2,
+   "end": 3.46
   },
   {
-   "text": "secours !",
-   "start": 3.451,
-   "end": 4.004
+   "text": "secours !",
+   "start": 3.46,
+   "end": 3.88
   },
   {
    "text": "Tu",
-   "start": 4.363,
-   "end": 4.459
+   "start": 4.04,
+   "end": 4.2
   },
   {
    "text": "l'ouvres…",
-   "start": 4.459,
+   "start": 4.2,
    "end": 4.82
   },
   {
    "text": "et",
-   "start": 5.096,
-   "end": 5.144
+   "start": 5.02,
+   "end": 5.18
   },
   {
    "text": "elle",
-   "start": 5.144,
-   "end": 5.228
+   "start": 5.18,
+   "end": 5.32
   },
   {
    "text": "est",
-   "start": 5.228,
-   "end": 5.264
+   "start": 5.32,
+   "end": 5.5
   },
   {
    "text": "vide.",
-   "start": 5.264,
-   "end": 5.673
+   "start": 5.5,
+   "end": 5.7
   },
   {
    "text": "Alors,",
-   "start": 6.046,
-   "end": 6.43
+   "start": 6.28,
+   "end": 6.62
   },
   {
    "text": "qu'est-ce",
-   "start": 6.635,
-   "end": 6.803
+   "start": 6.82,
+   "end": 6.94
   },
   {
    "text": "qu'il",
-   "start": 6.803,
-   "end": 6.959
+   "start": 6.94,
+   "end": 7.08
   },
   {
    "text": "faut",
-   "start": 6.959,
-   "end": 7.079
+   "start": 7.08,
+   "end": 7.18
   },
   {
    "text": "mettre",
-   "start": 7.079,
-   "end": 7.356
+   "start": 7.18,
+   "end": 7.42
   },
   {
-   "text": "dedans ?",
-   "start": 7.356,
-   "end": 7.728
+   "text": "dedans ?",
+   "start": 7.42,
+   "end": 7.7
   },
   {
    "text": "D'abord,",
-   "start": 8.675,
-   "end": 9.165
+   "start": 8.621,
+   "end": 9.2
   },
   {
    "text": "de",
-   "start": 9.411,
-   "end": 9.484
+   "start": 9.46,
+   "end": 9.62
   },
   {
    "text": "quoi",
-   "start": 9.484,
-   "end": 9.631
+   "start": 9.62,
+   "end": 9.74
   },
   {
    "text": "soigner",
-   "start": 9.631,
-   "end": 9.888
+   "start": 9.74,
+   "end": 10.04
   },
   {
    "text": "une",
-   "start": 9.889,
-   "end": 10.023
+   "start": 10.04,
+   "end": 10.3
   },
   {
-   "text": "plaie :",
-   "start": 10.023,
-   "end": 10.268
+   "text": "plaie :",
+   "start": 10.3,
+   "end": 10.62
   },
   {
    "text": "du",
-   "start": 10.587,
-   "end": 10.661
+   "start": 10.96,
+   "end": 10.96
   },
   {
    "text": "sérum",
-   "start": 10.661,
-   "end": 10.967
+   "start": 10.96,
+   "end": 11.3
   },
   {
    "text": "physiologique",
-   "start": 10.967,
-   "end": 11.482
+   "start": 11.3,
+   "end": 11.9
   },
   {
    "text": "pour",
-   "start": 11.482,
-   "end": 11.616
+   "start": 11.9,
+   "end": 12.12
   },
   {
    "text": "laver,",
-   "start": 11.616,
-   "end": 11.996
+   "start": 12.12,
+   "end": 12.54
   },
   {
    "text": "un",
-   "start": 12.254,
-   "end": 12.339
+   "start": 12.84,
+   "end": 13.02
   },
   {
    "text": "antiseptique",
-   "start": 12.34,
-   "end": 13.001
+   "start": 13.02,
+   "end": 13.68
   },
   {
    "text": "pour",
-   "start": 13.001,
-   "end": 13.124
+   "start": 13.68,
+   "end": 13.86
   },
   {
    "text": "désinfecter,",
-   "start": 13.124,
-   "end": 13.798
+   "start": 13.86,
+   "end": 14.72
   },
   {
    "text": "des",
-   "start": 14.092,
-   "end": 14.141
+   "start": 14.9,
+   "end": 15.08
   },
   {
    "text": "compresses",
-   "start": 14.141,
-   "end": 14.496
+   "start": 15.08,
+   "end": 15.42
   },
   {
    "text": "stériles,",
-   "start": 14.496,
-   "end": 14.962
+   "start": 15.42,
+   "end": 15.86
   },
   {
    "text": "et",
-   "start": 15.305,
-   "end": 15.33
+   "start": 15.86,
+   "end": 16.08
   },
   {
    "text": "des",
-   "start": 15.33,
-   "end": 15.415
+   "start": 16.08,
+   "end": 16.26
   },
   {
    "text": "pansements",
-   "start": 15.415,
-   "end": 15.783
+   "start": 16.26,
+   "end": 16.54
   },
   {
    "text": "de",
-   "start": 15.783,
-   "end": 15.857
+   "start": 16.54,
+   "end": 16.8
   },
   {
    "text": "plusieurs",
-   "start": 15.857,
-   "end": 16.163
+   "start": 16.8,
+   "end": 17.0
   },
   {
    "text": "tailles.",
-   "start": 16.163,
-   "end": 16.592
+   "start": 17.0,
+   "end": 17.39
   },
   {
    "text": "Ensuite,",
-   "start": 17.541,
-   "end": 18.032
+   "start": 18.191,
+   "end": 18.72
   },
   {
    "text": "une",
-   "start": 18.191,
-   "end": 18.301
+   "start": 18.96,
+   "end": 19.14
   },
   {
    "text": "bande",
-   "start": 18.301,
-   "end": 18.522
+   "start": 19.14,
+   "end": 19.44
   },
   {
    "text": "et",
-   "start": 18.522,
-   "end": 18.559
+   "start": 19.44,
+   "end": 19.6
   },
   {
    "text": "du",
-   "start": 18.559,
-   "end": 18.657
+   "start": 19.6,
+   "end": 19.78
   },
   {
    "text": "sparadrap",
-   "start": 18.657,
-   "end": 19.245
+   "start": 19.78,
+   "end": 20.24
   },
   {
    "text": "pour",
-   "start": 19.245,
-   "end": 19.38
+   "start": 20.24,
+   "end": 20.44
   },
   {
    "text": "tenir",
-   "start": 19.38,
-   "end": 19.625
+   "start": 20.44,
+   "end": 20.72
   },
   {
    "text": "le",
-   "start": 19.625,
-   "end": 19.698
+   "start": 20.72,
+   "end": 20.94
   },
   {
    "text": "pansement,",
-   "start": 19.698,
-   "end": 20.201
+   "start": 20.94,
+   "end": 21.34
   },
   {
    "text": "des",
-   "start": 20.544,
-   "end": 20.617
+   "start": 21.68,
+   "end": 21.82
   },
   {
    "text": "gants",
-   "start": 20.617,
-   "end": 20.728
+   "start": 21.82,
+   "end": 21.94
   },
   {
    "text": "jetables",
-   "start": 20.728,
-   "end": 21.144
+   "start": 21.94,
+   "end": 22.38
   },
   {
    "text": "pour",
-   "start": 21.144,
-   "end": 21.255
+   "start": 22.38,
+   "end": 22.52
   },
   {
    "text": "te",
-   "start": 21.255,
-   "end": 21.341
+   "start": 22.52,
+   "end": 22.82
   },
   {
    "text": "protéger,",
-   "start": 21.341,
-   "end": 21.892
+   "start": 22.82,
+   "end": 23.2
   },
   {
    "text": "des",
-   "start": 22.235,
-   "end": 22.321
+   "start": 23.48,
+   "end": 23.74
   },
   {
    "text": "ciseaux",
-   "start": 22.321,
-   "end": 22.64
+   "start": 23.74,
+   "end": 24.1
   },
   {
    "text": "aux",
-   "start": 22.64,
-   "end": 22.701
+   "start": 24.1,
+   "end": 24.28
   },
   {
    "text": "bouts",
-   "start": 22.701,
-   "end": 22.811
+   "start": 24.28,
+   "end": 24.44
   },
   {
    "text": "arrondis,",
-   "start": 22.811,
-   "end": 23.375
+   "start": 24.44,
+   "end": 24.94
   },
   {
    "text": "et",
-   "start": 23.681,
-   "end": 23.742
+   "start": 24.94,
+   "end": 25.18
   },
   {
    "text": "une",
-   "start": 23.742,
-   "end": 23.841
+   "start": 25.18,
+   "end": 25.38
   },
   {
    "text": "pince",
-   "start": 23.841,
-   "end": 24.098
+   "start": 25.38,
+   "end": 25.56
   },
   {
    "text": "à",
-   "start": 24.098,
-   "end": 24.184
+   "start": 25.56,
+   "end": 25.74
   },
   {
    "text": "écharde.",
-   "start": 24.184,
-   "end": 24.747
+   "start": 25.74,
+   "end": 26.096
   },
   {
    "text": "Ajoute",
-   "start": 25.676,
-   "end": 26.056
+   "start": 26.896,
+   "end": 27.34
   },
   {
    "text": "un",
-   "start": 26.056,
-   "end": 26.105
+   "start": 27.34,
+   "end": 27.62
   },
   {
    "text": "thermomètre,",
-   "start": 26.105,
-   "end": 26.779
+   "start": 27.62,
+   "end": 28.18
   },
   {
    "text": "du",
-   "start": 27.049,
-   "end": 27.122
+   "start": 28.18,
+   "end": 28.5
   },
   {
    "text": "paracétamol",
-   "start": 27.122,
-   "end": 27.821
+   "start": 28.5,
+   "end": 29.18
   },
   {
    "text": "contre",
-   "start": 27.821,
-   "end": 28.078
+   "start": 29.18,
+   "end": 29.42
   },
   {
    "text": "la",
-   "start": 28.078,
-   "end": 28.176
+   "start": 29.42,
+   "end": 29.62
   },
   {
    "text": "douleur",
-   "start": 28.176,
-   "end": 28.47
+   "start": 29.62,
+   "end": 29.96
   },
   {
    "text": "et",
-   "start": 28.47,
-   "end": 28.495
+   "start": 29.96,
+   "end": 30.12
   },
   {
    "text": "la",
-   "start": 28.495,
-   "end": 28.593
+   "start": 30.12,
+   "end": 30.34
   },
   {
    "text": "fièvre,",
-   "start": 28.593,
-   "end": 28.997
+   "start": 30.34,
+   "end": 30.66
   },
   {
    "text": "et",
-   "start": 29.365,
-   "end": 29.389
+   "start": 30.66,
+   "end": 30.92
   },
   {
    "text": "une",
-   "start": 29.389,
-   "end": 29.463
+   "start": 30.92,
+   "end": 31.04
   },
   {
    "text": "couverture",
-   "start": 29.463,
-   "end": 29.904
+   "start": 31.04,
+   "end": 31.48
   },
   {
    "text": "de",
-   "start": 29.904,
-   "end": 29.99
+   "start": 31.48,
+   "end": 31.7
   },
   {
    "text": "survie.",
-   "start": 29.99,
-   "end": 30.48
+   "start": 31.7,
+   "end": 32.04
   },
   {
    "text": "Range-la",
-   "start": 31.421,
-   "end": 31.899
+   "start": 32.839,
+   "end": 33.4
   },
   {
    "text": "hors",
-   "start": 31.899,
-   "end": 32.034
+   "start": 33.4,
+   "end": 33.6
   },
   {
    "text": "de",
-   "start": 32.034,
-   "end": 32.108
+   "start": 33.6,
+   "end": 33.78
   },
   {
    "text": "portée",
-   "start": 32.108,
-   "end": 32.353
+   "start": 33.78,
+   "end": 33.98
   },
   {
    "text": "des",
-   "start": 32.353,
-   "end": 32.438
+   "start": 33.98,
+   "end": 34.26
   },
   {
    "text": "enfants,",
-   "start": 32.438,
-   "end": 32.88
+   "start": 34.26,
+   "end": 34.58
   },
   {
    "text": "vérifie",
-   "start": 33.223,
-   "end": 33.541
+   "start": 34.94,
+   "end": 35.24
   },
   {
    "text": "les",
-   "start": 33.541,
-   "end": 33.615
+   "start": 35.24,
+   "end": 35.4
   },
   {
    "text": "dates",
-   "start": 33.615,
-   "end": 33.774
+   "start": 35.4,
+   "end": 35.52
   },
   {
    "text": "de",
-   "start": 33.774,
-   "end": 33.86
+   "start": 35.52,
+   "end": 35.76
   },
   {
    "text": "péremption",
-   "start": 33.86,
-   "end": 34.277
+   "start": 35.76,
+   "end": 36.22
   },
   {
    "text": "chaque",
-   "start": 34.277,
-   "end": 34.522
+   "start": 36.22,
+   "end": 36.58
   },
   {
    "text": "année,",
-   "start": 34.522,
-   "end": 34.804
+   "start": 36.58,
+   "end": 36.82
   },
   {
    "text": "et",
-   "start": 35.159,
-   "end": 35.257
+   "start": 36.82,
+   "end": 37.3
   },
   {
    "text": "glisse",
-   "start": 35.257,
-   "end": 35.478
+   "start": 37.3,
+   "end": 37.56
   },
   {
    "text": "dedans",
-   "start": 35.478,
-   "end": 35.674
+   "start": 37.56,
+   "end": 37.8
   },
   {
    "text": "les",
-   "start": 35.674,
-   "end": 35.747
+   "start": 37.8,
+   "end": 38.0
   },
   {
    "text": "numéros",
-   "start": 35.747,
-   "end": 36.029
+   "start": 38.0,
+   "end": 38.26
   },
   {
-   "text": "d'urgence :",
-   "start": 36.029,
-   "end": 36.617
+   "text": "d'urgence :",
+   "start": 38.26,
+   "end": 38.74
   },
   {
    "text": "le",
-   "start": 36.924,
-   "end": 36.997
+   "start": 39.2,
+   "end": 39.26
   },
   {
    "text": "15,",
-   "start": 36.997,
-   "end": 37.438
+   "start": 39.26,
+   "end": 39.64
   },
   {
    "text": "le",
-   "start": 37.61,
-   "end": 37.671
+   "start": 39.88,
+   "end": 40.1
   },
   {
    "text": "18,",
-   "start": 37.671,
-   "end": 38.161
+   "start": 40.1,
+   "end": 40.34
   },
   {
    "text": "le",
-   "start": 38.345,
-   "end": 38.419
+   "start": 40.72,
+   "end": 40.9
   },
   {
    "text": "112,",
-   "start": 38.419,
-   "end": 38.934
+   "start": 40.9,
+   "end": 41.22
   },
   {
    "text": "et",
-   "start": 39.301,
-   "end": 39.326
+   "start": 41.22,
+   "end": 41.74
   },
   {
    "text": "le",
-   "start": 39.326,
-   "end": 39.399
+   "start": 41.74,
+   "end": 41.92
   },
   {
    "text": "numéro",
-   "start": 39.399,
-   "end": 39.73
+   "start": 41.92,
+   "end": 42.16
   },
   {
    "text": "du",
-   "start": 39.73,
-   "end": 39.84
+   "start": 42.16,
+   "end": 42.34
   },
   {
    "text": "centre",
-   "start": 39.84,
-   "end": 40.11
+   "start": 42.34,
+   "end": 42.56
   },
   {
    "text": "antipoison.",
-   "start": 40.11,
-   "end": 40.723
+   "start": 42.56,
+   "end": 43.042
   },
   {
    "text": "Et",
-   "start": 41.656,
-   "end": 41.788
+   "start": 43.857,
+   "end": 44.16
   },
   {
    "text": "la",
-   "start": 41.788,
-   "end": 41.872
+   "start": 44.16,
+   "end": 44.34
   },
   {
    "text": "prochaine",
-   "start": 41.872,
-   "end": 42.221
+   "start": 44.34,
+   "end": 44.58
   },
   {
    "text": "fois",
-   "start": 42.221,
-   "end": 42.389
+   "start": 44.58,
+   "end": 44.72
   },
   {
    "text": "que",
-   "start": 42.389,
-   "end": 42.485
+   "start": 44.72,
+   "end": 44.86
   },
   {
    "text": "le",
-   "start": 42.485,
-   "end": 42.557
+   "start": 44.86,
+   "end": 45.0
   },
   {
    "text": "couteau",
-   "start": 42.557,
-   "end": 42.822
+   "start": 45.0,
+   "end": 45.24
   },
   {
    "text": "glisse…",
-   "start": 42.822,
-   "end": 43.255
+   "start": 45.24,
+   "end": 45.72
   },
   {
    "text": "tout",
-   "start": 43.507,
-   "end": 43.615
+   "start": 46.04,
+   "end": 46.06
   },
   {
    "text": "est",
-   "start": 43.615,
-   "end": 43.735
+   "start": 46.06,
+   "end": 46.26
   },
   {
-   "text": "là !",
-   "start": 43.735,
-   "end": 43.988
+   "text": "là !",
+   "start": 46.26,
+   "end": 46.38
   }
  ]
 }

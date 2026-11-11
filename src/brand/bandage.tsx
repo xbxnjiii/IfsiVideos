@@ -20,7 +20,7 @@ const SKIN_LO = mix(LPI.paper, LPI.pink, 0.55);
 const STRIP = mix(LPI.paper, LPI.sky, 0.75);
 
 /** Repère 1000 × 400 du grand doigt : axe du doigt, bords, coupure (sur la 2e phalange). */
-export const FINGER = {axis: 200, top: 62, bottom: 338, cut: {x: 560, y: 198}, w: 1000, h: 400};
+export const FINGER = {axis: 200, top: 62, bottom: 338, cut: {x: 560, y: 198}, burn: {x: 620, y: 200}, w: 1000, h: 400};
 
 /** Point du repère du doigt → écran, pour un `BigFinger` de largeur `width` posé en (`left`, `top`). */
 export const fingerPt = (p: {x: number; y: number}, left: number, top: number, width: number) => ({x: left + (p.x * width) / 1000, y: top + (p.y * width) / 1000});
@@ -28,9 +28,12 @@ export const fingerPt = (p: {x: number; y: number}, left: number, top: number, w
 /**
  * Grand index vu de dessus, pointé vers la droite (repère 1000 × 400, la main sort du cadre à gauche). `cut` 0 → 1 la
  * coupure ; `bleed` la goutte qui perle ; `clean` 0 → 1 la plaie nettoyée (plus de sang) ; `wet` reflets d'eau ;
- * `tint` voile d'antiseptique ; `children` : calques dessinés dans le même repère (pansement, eau, compresse, doigt…).
+ * `tint` voile d'antiseptique ; `burn` 0 → 1 rougeur de brûlure (en `FINGER.burn`), `heat` ondes de chaleur, `blister`
+ * cloque ; `children` : calques dessinés dans le même repère (pansement, eau, compresse, doigt…).
  */
-export const BigFinger: React.FC<{width?: number; cut?: number; bleed?: number; clean?: number; wet?: number; tint?: number; children?: React.ReactNode}> = ({width = 1300, cut = 1, bleed = 0, clean = 0, wet = 0, tint = 0, children}) => {
+export const BigFinger: React.FC<{width?: number; cut?: number; bleed?: number; clean?: number; wet?: number; tint?: number; burn?: number; heat?: number; blister?: number; children?: React.ReactNode}> = ({width = 1300, cut = 1, bleed = 0, clean = 0, wet = 0, tint = 0, burn = 0, heat = 0, blister = 0, children}) => {
+	const frame = useCurrentFrame();
+	const B = FINGER.burn;
 	const id = React.useId().replace(/:/g, '');
 	const C = FINGER.cut;
 	const blood = cl(bleed) * (1 - cl(clean));
@@ -76,6 +79,28 @@ export const BigFinger: React.FC<{width?: number; cut?: number; bleed?: number; 
 				</g>
 			) : null}
 			{tint > 0 ? <ellipse cx={C.x} cy={C.y} rx={92} ry={70} fill={alpha(LPI.blue, 0.16 * cl(tint))} /> : null}
+			{/* brûlure : rougeur floue, plus foncée au centre ; cloque brillante ; ondes de chaleur */}
+			{burn > 0 ? (
+				<g opacity={cl(burn)}>
+					<ellipse cx={B.x} cy={B.y} rx={150} ry={110} fill={alpha(LPI.pink, 0.55)} filter={`url(#fs${id})`} />
+					<ellipse cx={B.x + 10} cy={B.y} rx={92} ry={70} fill={alpha(LPI.pink, 0.7)} filter={`url(#fs${id})`} />
+				</g>
+			) : null}
+			{blister > 0 ? (
+				<g transform={`translate(${B.x + 10} ${B.y + 4}) scale(${cl(blister)})`}>
+					<ellipse rx={58} ry={44} fill={alpha(LPI.paper, 0.7)} stroke={alpha(N, 0.5)} strokeWidth={3} />
+					<ellipse cx={-18} cy={-16} rx={20} ry={10} fill={LPI.paper} transform="rotate(-20 -18 -16)" />
+					<ellipse cx={12} cy={18} rx={30} ry={12} fill={alpha(LPI.pink, 0.35)} />
+				</g>
+			) : null}
+			{heat > 0
+				? [0, 1, 2].map((i) => {
+						const t = ((frame * 0.035 + i / 3) % 1) as number;
+						const x0 = B.x - 60 + i * 60;
+						const y0 = B.y - 60 - t * 220;
+						return <path key={i} d={`M${x0} ${y0} q-18 -24 0 -48 q18 -24 0 -48`} fill="none" stroke={LPI.pink} strokeWidth={9} strokeLinecap="round" opacity={cl(heat) * Math.sin(t * Math.PI)} />;
+					})
+				: null}
 			{/* goutte qui perle */}
 			{blood > 0 ? (
 				<g transform={`translate(${C.x + 30} ${C.y + 20}) scale(${blood})`}>

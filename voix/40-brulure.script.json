@@ -1,0 +1,8 @@
+[
+ {"id": "intro", "text": "Aïe ! Ton doigt touche le bord de la casserole. Ça chauffe, ça rougit… Alors, tu fais quoi ?"},
+ {"id": "idees", "text": "Un glaçon ? Du beurre ? Du dentifrice ? Surtout pas ! Le glaçon abîme encore plus la peau, et le reste garde la chaleur et peut infecter la brûlure."},
+ {"id": "eau", "text": "Le bon réflexe : passe-la sous l'eau du robinet, pendant quinze minutes. Retiens la règle des trois quinze : une eau à environ quinze degrés, à quinze centimètres du robinet, pendant quinze minutes."},
+ {"id": "proteger", "text": "Une cloque ? On ne la perce pas : elle protège la peau en dessous. Couvre avec une compresse stérile ou un pansement gras, et prends du paracétamol si ça fait mal."},
+ {"id": "consulter", "text": "Et on consulte un médecin si la brûlure est plus grande que la moitié de la paume de la main, si elle touche le visage ou les parties intimes, si c'est un enfant, ou si la peau devient blanche ou noire."},
+ {"id": "fin", "text": "Quinze minutes sous l'eau… et ton doigt te dit merci !"}
+]
