@@ -278,9 +278,12 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   « là » = « la » (prendre le mot suivant).
 
 - `Trousse-Secours` (n° 38, ≈ 48 s, **voix gratuite edge-tts**, demandé) : même règle d'accroche (scène sans texte). Le
-  bonhomme dans sa cuisine (« mal fait ») puis le gros plan dessiné vu de dessus (`CuttingCloseUp` : planche, tomate,
-  main, couteau qui glisse sur l'index, pansement à la fin) ont été jugés « trop illustrés » : le propriétaire veut du
-  **réaliste sans faute visuelle**. Test : clip IA `public/clips/couteau-seedance.mp4` (Seedance 2.5 via ElevenLabs,
+  bonhomme dans sa cuisine (« mal fait ») puis un 1er gros plan vu de dessus (« trop illustré ») ont été refaits :
+  **`CuttingCloseUp` v2** « comme si c'étaient tes mains » (demandé : « refais par toi-même, sans faute visuelle ») :
+  rendu soigné (peau opaque en dégradé, ombres douces floutées, contours fins `LINE`, lame métal, mur carrelé, planche),
+  main gauche en griffe qui recule à chaque coupe, la main droite hors champ (le manche sort du cadre), tranches qui
+  basculent à plat, au mot « glisse » la lame dérape sur la phalange de l'index, le couteau est retiré, une goutte perle
+  puis tombe sur la planche ; à la fin, pansement autour du doigt. Test non retenu : clip IA `public/clips/couteau-seedance.mp4` (Seedance 2.5 via ElevenLabs,
   ≈ 14 000 crédits, **trop cher** selon le propriétaire ; sorti en 16:9 720p malgré « vertical » ; le couteau ne touche
   pas le doigt à l'image). Toujours **annoncer le prix (`estimate_only`) avant une génération vidéo** : Kling 2.5 Turbo
   ≈ 2 100, LTX v2 Fast ≈ 1 450 crédits pour 5 s. Higgsfield : 0 crédit. Ensuite la trousse se remplit objet par objet

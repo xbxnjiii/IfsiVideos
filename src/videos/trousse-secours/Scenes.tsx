@@ -37,25 +37,24 @@ const Question: React.FC<{at: number; x: number; y: number}> = ({at: t0, x, y}) 
 };
 
 /* ─── gros plan vu du dessus : on coupe une tomate… et le couteau dérape sur l'index ─── */
-const CU = {w: 1080, top: 380};
+const CU = {w: 1700, left: 540 - 470 * 1.7, top: 255};
 const CU_K = CU.w / 1000;
 /** Le bout de l'index à l'écran : la caméra s'en approche. */
-const HURT_HAND = {x: CUT_TIP.x * CU_K, y: CU.top + CUT_TIP.y * CU_K};
+const HURT_HAND = {x: CU.left + CUT_TIP.x * CU_K, y: CU.top + CUT_TIP.y * CU_K};
 
 const KitchenScene: React.FC<{slip: number; bleed: number; zoom: number; out: number; bandage?: number}> = ({slip, bleed, zoom, out, bandage = 0}) => {
 	const frame = useCurrentFrame();
-	const slices = interpolate(frame, [4, slip - 6], [0, 3], clamp);
-	const saw = frame < slip - 4 ? Math.sin(frame / 2.6) : 0;
+	const slices = interpolate(frame, [0, slip - 4], [1, 3], clamp);
+	const saw = frame < slip - 4 ? Math.sin(frame / 1.6) : 0;
 	return (
 		<AbsoluteFill style={{transform: `translateX(${-1200 * out}px) scale(${zoom})`, transformOrigin: `${HURT_HAND.x}px ${HURT_HAND.y}px`}}>
-			<AbsoluteFill style={{background: alpha(LPI.sky, 0.35)}} />
-			<div style={{position: 'absolute', left: 0, top: CU.top}}>
+			<AbsoluteFill style={{background: alpha(LPI.sky, 0.5)}} />
+			<div style={{position: 'absolute', left: CU.left, top: CU.top}}>
 				<CuttingCloseUp
 					width={CU.w}
 					slices={slices}
-					knifeX={640 + 30 * (slices % 1)}
 					saw={saw}
-					slip={interpolate(frame, [slip - 4, slip + 1], [0, 1], {...clamp, easing: Easing.in(Easing.quad)})}
+					slip={interpolate(frame, [slip - 6, slip + 1], [0, 1], {...clamp, easing: Easing.in(Easing.quad)})}
 					cut={fadeIn(frame, slip + 1, 3)}
 					jerk={interpolate(frame, [slip + 1, slip + 6, slip + 22], [0, 1, 0.5], clamp)}
 					bleed={bleed}
@@ -68,14 +67,14 @@ const KitchenScene: React.FC<{slip: number; bleed: number; zoom: number; out: nu
 
 /* ═══════════════════════════════ ACCROCHE : LA TROUSSE EST VIDE ═══════════════════════════════ */
 export const Hook: React.FC = () => {
-	const DOIGT = at('intro', 'doigt');
+	const GLISSE = at('intro', 'glisse…');
 	const SAIGNE = at('intro', 'saigne');
 	const VITE = at('intro', 'vite,');
 	const TROUSSE = at('intro', 'trousse');
 	const OUVRES = at('intro', "l'ouvres…");
 	const VIDE = at('intro', 'vide.');
 	const ALORS = at('intro', 'alors,');
-	const SLIP = DOIGT - 2;
+	const SLIP = GLISSE + 6;
 	return (
 		<AbsoluteFill>
 			<AbsoluteFill style={{background: LPI.paper}} />
@@ -83,7 +82,7 @@ export const Hook: React.FC = () => {
 				<Live
 					render={(f) =>
 						f < VITE + 6 ? (
-							<KitchenScene slip={SLIP} bleed={fadeIn(f, SAIGNE - 2, 6)} zoom={1 + 0.8 * interpolate(f, [SLIP + 2, SAIGNE + 12], [0, 1], ease)} out={interpolate(f, [VITE - 4, VITE + 6], [0, 1], {...clamp, easing: Easing.in(Easing.cubic)})} />
+							<KitchenScene slip={SLIP} bleed={fadeIn(f, SAIGNE - 2, 6)} zoom={1 + 0.5 * interpolate(f, [SLIP + 2, SAIGNE + 12], [0, 1], ease)} out={interpolate(f, [VITE - 4, VITE + 6], [0, 1], {...clamp, easing: Easing.in(Easing.cubic)})} />
 						) : null
 					}
 				/>
@@ -223,9 +222,8 @@ export const Regles: React.FC = () => {
 
 /* ═══════════════════════════════ CHUTE : TOUT EST LÀ ═══════════════════════════════ */
 export const Fin: React.FC = () => {
-	const COUTEAU = at('fin', 'couteau');
 	const TOUT = at('fin', 'tout');
-	const SLIP = COUTEAU + 6;
+	const SLIP = at('fin', 'glisse…') + 2;
 	return (
 		<AbsoluteFill>
 			<AbsoluteFill style={{background: LPI.paper}} />

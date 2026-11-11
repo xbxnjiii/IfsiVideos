@@ -238,172 +238,316 @@ export const Padlock: React.FC<{size?: number}> = ({size = 160}) => (
 	</svg>
 );
 
-/* ───────────── gros plan vu du dessus : la planche, la tomate, les deux mains, le couteau ───────────── */
+/* ───────────── gros plan « vu par celui qui coupe » : planche, tomate, main en griffe, couteau ───────────── */
 
-const SKIN_C = '#F8F9FC';
-/** Point de l'index (bout du doigt) où le couteau dérape, dans le repère 1000 × 1000 de `CuttingCloseUp`. */
-export const CUT_TIP = {x: 452, y: 352};
+/** Peau dans la palette : blanc cassé teinté de rose (dégradés), contours bleu nuit fins. */
+const LINE = {stroke: alpha(LPI.navy, 0.72), strokeWidth: 3.5, strokeLinejoin: 'round' as const, strokeLinecap: 'round' as const};
+/** Tomate : centre et rayons (repère 1000 × 1000). */
+const TOM = {x: 470, y: 520, rx: 170, ry: 150};
+/** Plans de coupe successifs (x) : 3 tranches, puis la 4e coupe… qui dérape. */
+const CUTS = [600, 572, 544, 516];
+/** Recul de la main gauche quand elle sursaute (à `jerk` = 1). */
+const JERK = {x: -60, y: 40};
+/** Phalange de l'index (côté lame) dans la main au repos. */
+const KNUCKLE = {x: 500, y: 614};
+/** Point de l'entaille sur l'index une fois la main reculée (`jerk` 0,5), repère 1000 × 1000 de `CuttingCloseUp`. */
+export const CUT_TIP = {x: KNUCKLE.x + JERK.x / 2, y: KNUCKLE.y + JERK.y / 2};
+
+/** Mélange opaque de deux couleurs de la marque (une couleur de la marque posée en transparence sur une autre). */
+const mix = (a: string, b: string, t: number) => {
+	const p = (h: string) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16));
+	const [x, y] = [p(a), p(b)];
+	return '#' + x.map((v, i) => Math.round(v + (y[i] - v) * t).toString(16).padStart(2, '0')).join('');
+};
+const SKIN_HI = LPI.paper;
+const SKIN_LO = mix(LPI.paper, LPI.pink, 0.55);
+const chord = (x: number) => TOM.ry * Math.sqrt(Math.max(0, 1 - ((x - TOM.x) / TOM.rx) ** 2));
+const lerp = (a: number, b: number, t: number) => a + (b - a) * t;
+const seg = (v: number, a: number, b: number) => cl((v - a) / (b - a));
+
+/** Une tranche posée à plat, face coupée vers le haut (peau, chair, loges et pépins, cœur). */
+const Slice: React.FC<{r: number; id: string}> = ({r, id}) => (
+	<g>
+		<ellipse rx={r} ry={r * 0.58} fill={`url(#skin-t${id})`} {...LINE} />
+		<ellipse rx={r * 0.86} ry={r * 0.5} fill={`url(#flesh${id})`} />
+		{[0, 1, 2, 3].map((i) => {
+			const a = (i * Math.PI) / 2 + Math.PI / 4;
+			const cx = Math.cos(a) * r * 0.46;
+			const cy = Math.sin(a) * r * 0.27;
+			return (
+				<g key={i} transform={`translate(${cx} ${cy})`}>
+					<ellipse rx={r * 0.24} ry={r * 0.14} fill={alpha(LPI.pink, 0.75)} transform={`rotate(${(a * 180) / Math.PI} 0 0) scale(1 0.9)`} />
+					{[-1, 0, 1].map((k) => (
+						<ellipse key={k} cx={k * r * 0.09} cy={k * r * 0.02} rx={r * 0.035} ry={r * 0.022} fill={LPI.paper} opacity={0.9} />
+					))}
+				</g>
+			);
+		})}
+		<ellipse rx={r * 0.16} ry={r * 0.1} fill={alpha(LPI.paper, 0.85)} />
+		<ellipse cx={-r * 0.3} cy={-r * 0.3} rx={r * 0.3} ry={r * 0.06} fill={alpha(LPI.paper, 0.55)} />
+	</g>
+);
+
+/** Doigt replié vu de dessus : de l'articulation de la main (`a`) à la 2e phalange (`b`), le bout rentré dessous. */
+const Finger: React.FC<{a: [number, number]; b: [number, number]; w: number; id: string}> = ({a, b, w, id}) => {
+	const ang = (Math.atan2(b[1] - a[1], b[0] - a[0]) * 180) / Math.PI;
+	const len = Math.hypot(b[0] - a[0], b[1] - a[1]) + w * 0.55;
+	return (
+		<g transform={`translate(${a[0]} ${a[1]}) rotate(${ang})`}>
+			<rect x={-w * 0.4} y={-w / 2} width={len + w * 0.4} height={w} rx={w / 2} fill={`url(#skin-f${id})`} {...LINE} />
+			{/* pli de la 2e articulation + petit relief de la phalange */}
+			<path d={`M${len - w * 0.62} ${-w * 0.3} q${w * 0.1} ${w * 0.3} 0 ${w * 0.6}`} fill="none" stroke={alpha(LPI.navy, 0.3)} strokeWidth={2.5} strokeLinecap="round" />
+			<path d={`M${len - w * 0.78} ${-w * 0.22} q${w * 0.08} ${w * 0.22} 0 ${w * 0.44}`} fill="none" stroke={alpha(LPI.navy, 0.2)} strokeWidth={2} strokeLinecap="round" />
+			<path d={`M${w * 0.1} ${-w * 0.32} L${len - w * 0.4} ${-w * 0.34}`} stroke={alpha(LPI.paper, 0.85)} strokeWidth={w * 0.16} strokeLinecap="round" />
+		</g>
+	);
+};
 
 /**
- * Gros plan vu du dessus (repère 1000 × 1000) : planche à découper, tomate et ses tranches (`slices` 0 → 4), main gauche
- * en griffe qui tient la tomate, couteau tenu par la main droite (`knifeX` position de la lame, `saw` va-et-vient).
- * `slip` 0 → 1 : la lame dérape sur le bout de l'index ; `cut` l'entaille ; `jerk` 0 → 1 la main recule ; `bleed`
- * gouttes et petite flaque ; `plaster` 0 → 1 un pansement vient se coller sur le doigt (et le sang s'en va).
+ * Gros plan « comme si c'était tes mains » (repère 1000 × 1000, vue de haut en perspective) : plan de travail, planche
+ * en bois, tomate qui se coupe en tranches (`slices` 0 → 3 : la lame descend, la tranche tombe à plat), main gauche en
+ * griffe qui recule à chaque coupe, couteau tenu par la main droite (`saw` va-et-vient). `slip` 0 → 1 : à la 4e coupe la
+ * lame dérape sur la phalange de l'index ; `cut` l'entaille ; `jerk` 0 → 1 la main sursaute et recule (0,5 = au repos,
+ * entaille en `CUT_TIP`) ; `bleed` la goutte qui perle puis tombe sur la planche ; `plaster` le pansement autour du doigt.
  */
-export const CuttingCloseUp: React.FC<{width?: number; slices?: number; knifeX?: number; saw?: number; slip?: number; cut?: number; jerk?: number; bleed?: number; plaster?: number}> = ({width = 1000, slices = 0, knifeX = 700, saw = 0, slip = 0, cut = 0, jerk = 0, bleed = 0, plaster = 0}) => {
+export const CuttingCloseUp: React.FC<{width?: number; slices?: number; saw?: number; slip?: number; cut?: number; jerk?: number; bleed?: number; plaster?: number}> = ({width = 1000, slices = 0, saw = 0, slip = 0, cut = 0, jerk = 0, bleed = 0, plaster = 0}) => {
 	const frame = useCurrentFrame();
 	const id = React.useId().replace(/:/g, '');
 	const sl = cl(slip);
-	// la lame : verticale, à droite de la tomate ; au dérapage elle part vers le bout de l'index en pivotant
-	const kx = knifeX + (CUT_TIP.x + 40 - knifeX) * sl;
-	const ky = saw * 14 + (CUT_TIP.y - 330) * sl;
-	const krot = -28 * sl;
-	const hx = -46 * cl(jerk);
-	const hy = 18 * cl(jerk);
+	const k = Math.min(3, Math.floor(slices));
+	const u = slices >= 3 ? 0 : slices - k;
+	const done = Math.min(3, Math.floor(slices + 0.2));
+	// la lame : passe d'un plan de coupe au suivant (u 0 → 0,15), descend (→ 0,8), remonte pendant que la tranche tombe
+	const kxBase = k === 0 ? CUTS[0] : lerp(CUTS[k - 1], CUTS[k], seg(u, 0, 0.15));
+	const depth = slices >= 3 ? 0 : u < 0.15 ? 0 : u < 0.8 ? seg(u, 0.15, 0.8) : 1 - seg(u, 0.8, 1);
+	const j = cl(jerk);
+	// après le dérapage, le couteau est retiré (il ne cache plus le doigt)
+	const back = cl(j * 1.6);
+	const kx = kxBase - 34 * sl + 110 * back;
+	const ky = -46 + 46 * depth + 8 * saw + 40 * sl - 90 * back;
+	const krot = -8 * sl + 10 * back;
+	// la main gauche suit les coupes (elle recule de 28 px par tranche), puis sursaute
+	const handDx = interpolate3(slices) + JERK.x * j;
+	const handDy = JERK.y * j;
+	const handRot = -6 * j;
 	const blood = cl(bleed) * (1 - cl(plaster));
-	const fingers: [number, number, number, number][] = [
-		// y, longueur, largeur, angle
-		[352, 150, 62, -10],
-		[424, 158, 66, -3],
-		[494, 150, 62, 4],
-		[558, 126, 52, 12],
+	const cutX = done > 0 ? CUTS[done - 1] : TOM.x + TOM.rx + 10;
+	const slicesPos: [number, number, number][] = [
+		[712, 640, chord(CUTS[0]) * 0.72],
+		[690, 760, chord(CUTS[1]) * 0.72],
+		[742, 860, chord(CUTS[2]) * 0.7],
 	];
+	// goutte : elle perle sur la phalange (dans la main), puis une goutte tombe et s'étale sur la planche
+	const bead = 1.4 * cl(blood * 1.6);
+	const dropT = seg(blood, 0.45, 0.8);
+	const puddle = seg(blood, 0.75, 1);
+	const tipNow = {x: KNUCKLE.x + handDx, y: KNUCKLE.y + handDy};
 	return (
 		<svg width={width} height={width} viewBox="0 0 1000 1000" style={{overflow: 'visible', display: 'block'}}>
 			<defs>
-				<linearGradient id={`tom${id}`} x1="0" y1="0" x2="1" y2="1">
-					<stop offset="0" stopColor={alpha(LPI.pink, 0.75)} />
-					<stop offset="1" stopColor={LPI.pink} />
-				</linearGradient>
-				<linearGradient id={`bl${id}`} x1="0" y1="0" x2="1" y2="0">
+				<filter id={`soft${id}`} x="-30%" y="-30%" width="160%" height="160%">
+					<feGaussianBlur stdDeviation="10" />
+				</filter>
+				<filter id={`soft2${id}`} x="-30%" y="-30%" width="160%" height="160%">
+					<feGaussianBlur stdDeviation="4" />
+				</filter>
+				<linearGradient id={`counter${id}`} x1="0" y1="0" x2="0.3" y2="1">
 					<stop offset="0" stopColor={LPI.paper} />
-					<stop offset="0.55" stopColor={LPI.paper} />
-					<stop offset="1" stopColor={alpha(LPI.sky, 0.95)} />
+					<stop offset="1" stopColor={alpha(LPI.sky, 0.55)} />
 				</linearGradient>
+				<linearGradient id={`board${id}`} x1="0" y1="0" x2="1" y2="1">
+					<stop offset="0" stopColor={mix(LPI.paper, LPI.sky, 0.7)} />
+					<stop offset="1" stopColor={LPI.sky} />
+				</linearGradient>
+				<radialGradient id={`tom${id}`} cx="0.36" cy="0.3" r="0.8">
+					<stop offset="0" stopColor={mix(LPI.paper, LPI.pink, 0.45)} />
+					<stop offset="0.45" stopColor={LPI.pink} />
+					<stop offset="1" stopColor={LPI.pink} />
+				</radialGradient>
+				<radialGradient id={`tomShade${id}`} cx="0.36" cy="0.3" r="0.85">
+					<stop offset="0.55" stopColor={alpha(LPI.navy, 0)} />
+					<stop offset="1" stopColor={alpha(LPI.navy, 0.28)} />
+				</radialGradient>
+				<radialGradient id={`flesh${id}`} cx="0.5" cy="0.5" r="0.6">
+					<stop offset="0" stopColor={LPI.paper} />
+					<stop offset="1" stopColor={mix(LPI.paper, LPI.pink, 0.6)} />
+				</radialGradient>
+				<linearGradient id={`skin-t${id}`} x1="0" y1="0" x2="0" y2="1">
+					<stop offset="0" stopColor={LPI.pink} />
+					<stop offset="1" stopColor={mix(LPI.pink, LPI.navy, 0.12)} />
+				</linearGradient>
+				<linearGradient id={`skin-f${id}`} x1="0" y1="0" x2="0" y2="1">
+					<stop offset="0" stopColor={SKIN_HI} />
+					<stop offset="1" stopColor={SKIN_LO} />
+				</linearGradient>
+				<linearGradient id={`skin${id}`} x1="0" y1="0" x2="1" y2="1">
+					<stop offset="0" stopColor={SKIN_HI} />
+					<stop offset="1" stopColor={SKIN_LO} />
+				</linearGradient>
+				<linearGradient id={`steel${id}`} x1="0" y1="0" x2="1" y2="0">
+					<stop offset="0" stopColor={LPI.paper} />
+					<stop offset="0.35" stopColor={mix(LPI.paper, LPI.sky, 0.7)} />
+					<stop offset="0.75" stopColor={LPI.sky} />
+					<stop offset="1" stopColor={mix(LPI.sky, LPI.blue, 0.55)} />
+				</linearGradient>
+				<linearGradient id={`handle${id}`} x1="0" y1="0" x2="1" y2="0">
+					<stop offset="0" stopColor={mix(LPI.navy, LPI.blue, 0.3)} />
+					<stop offset="0.4" stopColor={LPI.navy} />
+					<stop offset="1" stopColor={LPI.navy} />
+				</linearGradient>
+				<linearGradient id={`sleeve${id}`} x1="0" y1="0" x2="1" y2="1">
+					<stop offset="0" stopColor={LPI.blue} />
+					<stop offset="1" stopColor={mix(LPI.blue, LPI.navy, 0.2)} />
+				</linearGradient>
+				<clipPath id={`cut${id}`}>
+					<rect x={0} y={0} width={cutX} height={1000} />
+				</clipPath>
 			</defs>
-			{/* plan de travail + planche */}
-			<rect x={-200} y={-200} width={1400} height={1400} fill={alpha(LPI.sky, 0.35)} />
-			<rect x={90} y={150} width={860} height={720} rx={48} fill={alpha(N, 0.12)} transform="translate(12 16)" />
-			<rect x={90} y={150} width={860} height={720} rx={48} fill={LPI.sky} stroke={N} strokeWidth={8} />
-			{Array.from({length: 9}, (_, i) => (
-				<path key={i} d={`M${130 + i * 6} ${200 + i * 74} C${380} ${190 + i * 76} ${620} ${214 + i * 72} ${910 - i * 4} ${196 + i * 74}`} fill="none" stroke={alpha(N, 0.1)} strokeWidth={4} strokeLinecap="round" />
+
+			{/* mur carrelé, plan de travail */}
+			<rect x={-200} y={-500} width={1400} height={620} fill={alpha(LPI.sky, 0.5)} />
+			{Array.from({length: 12}, (_, i) => (
+				<line key={`v${i}`} x1={-200 + i * 120} y1={-500} x2={-200 + i * 120} y2={120} stroke={alpha(LPI.paper, 0.9)} strokeWidth={5} />
 			))}
-			<circle cx={890} cy={810} r={22} fill={alpha(LPI.paper, 0.9)} stroke={N} strokeWidth={6} />
-			{/* tranches déjà coupées (à droite) */}
-			{Array.from({length: 4}, (_, i) => {
-				const o = cl(slices - i);
-				if (o <= 0) return null;
-				const cx = 760 + i * 40;
+			{Array.from({length: 6}, (_, i) => (
+				<line key={`h${i}`} x1={-200} y1={-500 + i * 120} x2={1200} y2={-500 + i * 120} stroke={alpha(LPI.paper, 0.9)} strokeWidth={5} />
+			))}
+			<rect x={-200} y={110} width={1400} height={1500} fill={`url(#counter${id})`} />
+			<rect x={-200} y={106} width={1400} height={10} fill={alpha(LPI.navy, 0.12)} />
+
+			{/* planche en bois : ombre, chant, dessus, veines */}
+			<path d="M170 270 L870 270 L970 860 L70 860 Z" fill={alpha(LPI.navy, 0.22)} filter={`url(#soft${id})`} transform="translate(14 24)" />
+			<path d="M60 820 L940 820 L940 856 Q940 866 930 866 L70 866 Q60 866 60 856 Z" fill={alpha(LPI.blue, 0.55)} {...LINE} />
+			<path d="M160 250 L840 250 Q856 250 858 264 L940 806 Q942 820 926 820 L74 820 Q58 820 60 806 L142 264 Q144 250 160 250 Z" fill={`url(#board${id})`} {...LINE} />
+			{Array.from({length: 10}, (_, i) => {
+				const y = 284 + i * 56;
+				return <path key={i} d={`M${150 - i * 8} ${y} C${360} ${y - 14} ${600} ${y + 18} ${852 + i * 8} ${y - 4}`} fill="none" stroke={alpha(LPI.blue, 0.16)} strokeWidth={3} strokeLinecap="round" />;
+			})}
+
+			{/* tranches posées à plat (elles basculent depuis le plan de coupe) */}
+			{slicesPos.map(([x, y, r], i) => {
+				const p = seg(slices, i + 0.8, i + 1);
+				if (p <= 0) return null;
+				const sx = lerp(CUTS[i] + 10, x, p);
+				const sy = lerp(TOM.y, y, p);
 				return (
-					<g key={i} opacity={o} transform={`translate(${cx} 470) rotate(${(i % 2 ? 1 : -1) * 6})`}>
-						<ellipse rx={26} ry={128} fill={LPI.pink} stroke={N} strokeWidth={5} />
-						<ellipse rx={12} ry={100} fill={alpha(LPI.paper, 0.75)} />
-						{[-60, -20, 20, 60].map((y) => (
-							<ellipse key={y} cx={0} cy={y} rx={4} ry={7} fill={alpha(LPI.pink, 0.9)} />
-						))}
+					<g key={i} transform={`translate(${sx} ${sy}) rotate(${lerp(-70, (i - 1) * 8, p)}) scale(${lerp(0.25, 1, p)} 1)`}>
+						<ellipse cx={10} cy={14} rx={r} ry={r * 0.58} fill={alpha(LPI.navy, 0.2)} filter={`url(#soft2${id})`} />
+						<Slice r={r} id={id} />
 					</g>
 				);
 			})}
-			{/* la tomate (coupée net du côté droit) */}
-			<g>
-				<path d="M600 330 C540 300 440 316 420 400 C400 480 430 590 520 612 C570 624 600 612 612 600 Z" fill={`url(#tom${id})`} stroke={N} strokeWidth={8} strokeLinejoin="round" />
-				<path d="M612 334 V600" stroke={N} strokeWidth={8} strokeLinecap="round" />
-				<path d="M598 352 V584" stroke={alpha(LPI.paper, 0.7)} strokeWidth={10} strokeLinecap="round" />
-				<path d="M470 380 Q490 352 526 346" fill="none" stroke={alpha(LPI.paper, 0.85)} strokeWidth={12} strokeLinecap="round" />
-				{/* pédoncule */}
-				<g transform="translate(520 460)">
+
+			{/* la tomate : ombre portée, sphère ombrée, tranche nette du côté de la lame */}
+			<ellipse cx={TOM.x + 30} cy={TOM.y + TOM.ry - 6} rx={TOM.rx * 0.95} ry={34} fill={alpha(LPI.navy, 0.3)} filter={`url(#soft${id})`} />
+			<g clipPath={`url(#cut${id})`}>
+				<ellipse cx={TOM.x} cy={TOM.y} rx={TOM.rx} ry={TOM.ry} fill={`url(#tom${id})`} />
+				<ellipse cx={TOM.x} cy={TOM.y} rx={TOM.rx} ry={TOM.ry} fill={`url(#tomShade${id})`} {...LINE} />
+				<ellipse cx={TOM.x - 70} cy={TOM.y - 78} rx={46} ry={20} fill={alpha(LPI.paper, 0.75)} transform={`rotate(-24 ${TOM.x - 70} ${TOM.y - 78})`} />
+				<ellipse cx={TOM.x - 100} cy={TOM.y - 46} rx={10} ry={6} fill={alpha(LPI.paper, 0.8)} />
+				{/* là où était la tige : petite cicatrice étoilée */}
+				<g transform={`translate(${TOM.x - 40} ${TOM.y - 104})`}>
 					{[0, 72, 144, 216, 288].map((a) => (
-						<path key={a} d="M0 0 Q10 -14 0 -34 Q-10 -14 0 0" fill={LPI.blue} stroke={N} strokeWidth={3} transform={`rotate(${a})`} />
+						<path key={a} d="M0 0 L12 0" stroke={alpha(LPI.navy, 0.25)} strokeWidth={3} strokeLinecap="round" transform={`rotate(${a}) scale(1 0.6)`} />
 					))}
-					<circle r={7} fill={N} />
+					<ellipse rx={7} ry={5} fill={mix(LPI.pink, LPI.navy, 0.3)} />
 				</g>
 			</g>
-			{/* main gauche en griffe : avant-bras qui vient d'en bas à gauche, dos de la main, doigts repliés sur la tomate */}
-			<g transform={`translate(${hx} ${hy})`}>
-				<path d="M-120 1040 C40 860 150 720 230 610 L330 650 C260 760 170 900 60 1080 Z" fill={SKIN_C} stroke={N} strokeWidth={8} strokeLinejoin="round" />
-				<path d="M-120 1040 C40 860 150 720 230 610 L330 650 C260 760 170 900 60 1080 Z" fill={alpha(LPI.pink, 0.22)} />
-				<path d="M130 760 C170 720 210 690 260 660" fill="none" stroke={alpha(N, 0.15)} strokeWidth={6} strokeLinecap="round" />
-				{/* pouce, sous la tomate */}
-				<g transform="translate(300 600) rotate(28)">
-					<rect x={0} y={-30} width={150} height={60} rx={30} fill={SKIN_C} stroke={N} strokeWidth={7} />
-					<rect x={0} y={-30} width={150} height={60} rx={30} fill={alpha(LPI.pink, 0.22)} />
-					<rect x={102} y={-20} width={36} height={40} rx={14} fill={alpha(LPI.paper, 0.9)} stroke={alpha(N, 0.5)} strokeWidth={3} />
-				</g>
-				{/* dos de la main */}
-				<path d="M196 330 C270 300 330 320 340 380 C350 450 352 540 336 610 C320 660 250 670 210 640 C170 600 160 480 168 400 C172 360 180 340 196 330 Z" fill={SKIN_C} stroke={N} strokeWidth={8} strokeLinejoin="round" />
-				<path d="M196 330 C270 300 330 320 340 380 C350 450 352 540 336 610 C320 660 250 670 210 640 C170 600 160 480 168 400 C172 360 180 340 196 330 Z" fill={alpha(LPI.pink, 0.22)} />
-				{[400, 460, 520].map((y) => (
-					<path key={y} d={`M226 ${y} C250 ${y - 4} 280 ${y - 2} 310 ${y + 4}`} fill="none" stroke={alpha(N, 0.12)} strokeWidth={5} strokeLinecap="round" />
-				))}
-				{/* doigts repliés (on voit le dessus des phalanges) */}
-				{fingers.map(([y, len, w, a], i) => (
-					<g key={i} transform={`translate(306 ${y}) rotate(${a})`}>
-						<rect x={0} y={-w / 2} width={len} height={w} rx={w / 2} fill={SKIN_C} stroke={N} strokeWidth={7} />
-						<rect x={0} y={-w / 2} width={len} height={w} rx={w / 2} fill={alpha(LPI.pink, 0.24)} />
-						<path d={`M${len * 0.42} ${-w / 2 + 8} Q${len * 0.46} 0 ${len * 0.42} ${w / 2 - 8}`} fill="none" stroke={alpha(N, 0.28)} strokeWidth={4} strokeLinecap="round" />
-						<path d={`M${len * 0.74} ${-w / 2 + 10} Q${len * 0.78} 0 ${len * 0.74} ${w / 2 - 10}`} fill="none" stroke={alpha(N, 0.22)} strokeWidth={4} strokeLinecap="round" />
-						<circle cx={len * 0.18} cy={0} r={w * 0.16} fill={alpha(N, 0.08)} />
-					</g>
-				))}
-				{/* l'entaille au bout de l'index */}
-				{cut > 0 ? (
-					<g opacity={cl(cut) * (1 - cl(plaster))}>
-						<ellipse cx={CUT_TIP.x - 6} cy={CUT_TIP.y} rx={30} ry={40} fill={alpha(LPI.pink, 0.45)} />
-						<path d={`M${CUT_TIP.x - 22} ${CUT_TIP.y - 32} L${CUT_TIP.x + 8} ${CUT_TIP.y + 32}`} stroke={LPI.pink} strokeWidth={20} strokeLinecap="round" />
-						<path d={`M${CUT_TIP.x - 22} ${CUT_TIP.y - 32} L${CUT_TIP.x + 8} ${CUT_TIP.y + 32}`} stroke={N} strokeWidth={5} strokeLinecap="round" />
-					</g>
-				) : null}
-				{/* le pansement */}
-				{plaster > 0 ? (
-					<g transform={`translate(${CUT_TIP.x - 6} ${CUT_TIP.y}) rotate(-80) scale(${0.6 + 0.4 * cl(plaster)})`} opacity={cl(plaster * 2)}>
-						<rect x={-80} y={-34} width={160} height={68} rx={34} fill={LPI.pink} stroke={N} strokeWidth={6} />
-						<rect x={-34} y={-26} width={68} height={52} rx={10} fill={LPI.paper} stroke={N} strokeWidth={4} />
-						{[-58, 58].map((x) => [-12, 0, 12].map((y) => <circle key={`${x}${y}`} cx={x} cy={y} r={3} fill={alpha(N, 0.4)} />))}
-					</g>
-				) : null}
-			</g>
-			{/* gouttes de sang et petite flaque sur la planche */}
-			{blood > 0 ? (
-				<g opacity={blood}>
-					<ellipse cx={CUT_TIP.x + 30} cy={CUT_TIP.y - 60} rx={70 * blood} ry={36 * blood} fill={LPI.pink} stroke={N} strokeWidth={5} />
-					<circle cx={CUT_TIP.x + 100} cy={CUT_TIP.y - 40} r={14 * blood} fill={LPI.pink} stroke={N} strokeWidth={4} />
-					{[0, 1, 2].map((i) => {
-						const t = ((frame * 0.05 + i / 3) % 1) as number;
-						return <circle key={i} cx={CUT_TIP.x - 10 - i * 10} cy={CUT_TIP.y - 20 - t * 50} r={10 - t * 4} fill={LPI.pink} stroke={N} strokeWidth={3} opacity={1 - t} />;
-					})}
+			{done > 0 ? (
+				<g>
+					<ellipse cx={cutX} cy={TOM.y} rx={13} ry={chord(cutX)} fill={`url(#flesh${id})`} {...LINE} />
+					<ellipse cx={cutX + 2} cy={TOM.y - chord(cutX) * 0.3} rx={4} ry={chord(cutX) * 0.18} fill={alpha(LPI.pink, 0.7)} />
+					<ellipse cx={cutX + 2} cy={TOM.y + chord(cutX) * 0.32} rx={4} ry={chord(cutX) * 0.18} fill={alpha(LPI.pink, 0.7)} />
 				</g>
 			) : null}
-			{/* douleur */}
-			{cut > 0 && plaster < 1
-				? [0, 1, 2].map((i) => {
-						const f = 0.5 + 0.5 * Math.sin(frame * 0.9 + i * 2);
-						const a = (-150 + i * 40) * (Math.PI / 180);
-						const x = CUT_TIP.x + 90 * Math.cos(a) + hx;
-						const y = CUT_TIP.y + 90 * Math.sin(a) + hy;
-						return <path key={i} d={`M${x} ${y} l${14 * Math.cos(a)} ${14 * Math.sin(a) - 10} l10 8 l${16 * Math.cos(a)} ${16 * Math.sin(a) - 12}`} fill="none" stroke={LPI.pink} strokeWidth={9} strokeLinecap="round" strokeLinejoin="round" opacity={cl(cut) * (1 - cl(plaster)) * (0.4 + 0.6 * f)} />;
-					})
-				: null}
-			{/* le couteau (lame verticale) et la main droite qui tient le manche, en haut */}
-			<g transform={`translate(${kx} ${ky}) rotate(${krot} 0 330)`}>
-				<path d="M-6 330 L-6 650 Q-6 700 30 700 L34 700 L40 330 Z" fill={`url(#bl${id})`} stroke={N} strokeWidth={7} strokeLinejoin="round" />
-				<path d="M6 360 V640" stroke={alpha(LPI.paper, 0.9)} strokeWidth={6} strokeLinecap="round" />
-				<rect x={-14} y={140} width={62} height={200} rx={20} fill={N} />
-				{[190, 250, 300].map((y) => (
-					<circle key={y} cx={17} cy={y} r={7} fill={alpha(LPI.paper, 0.85)} />
+
+			{/* une goutte de sang tombée sur la planche */}
+			{puddle > 0 ? (
+				<g>
+					<ellipse cx={CUT_TIP.x + 6} cy={CUT_TIP.y + 128} rx={26 * puddle} ry={14 * puddle} fill={LPI.pink} stroke={alpha(LPI.navy, 0.55)} strokeWidth={2.5} />
+					<ellipse cx={CUT_TIP.x - 2} cy={CUT_TIP.y + 124} rx={8 * puddle} ry={3 * puddle} fill={alpha(LPI.paper, 0.7)} />
+				</g>
+			) : null}
+
+			{/* main gauche en griffe */}
+			<g transform={`translate(${handDx} ${handDy}) rotate(${handRot} 230 620)`}>
+				{/* ombre de la main sur la tomate et la planche */}
+				<path d="M240 470 C300 430 380 420 420 446 L520 470 L530 640 L420 690 C330 720 250 720 210 680 Z" fill={alpha(LPI.navy, 0.2)} filter={`url(#soft${id})`} transform="translate(16 22)" />
+				{/* avant-bras + manche */}
+				<path d="M250 482 L-240 860 L-110 1120 L262 700 Z" fill={`url(#skin${id})`} {...LINE} />
+				<path d="M60 640 L-240 860 L-110 1120 L130 860 Z" fill={`url(#sleeve${id})`} {...LINE} />
+				<path d="M60 640 L130 860" stroke={alpha(LPI.paper, 0.5)} strokeWidth={6} strokeLinecap="round" />
+				{/* pouce, rentré du côté de la planche */}
+				<g transform="translate(262 692) rotate(-4)">
+					<rect x={0} y={-24} width={150} height={48} rx={24} fill={`url(#skin-f${id})`} {...LINE} />
+					<path d="M110 -15 q24 0 30 15 q-6 15 -30 15 Z" fill={alpha(LPI.paper, 0.95)} stroke={alpha(LPI.navy, 0.4)} strokeWidth={2} />
+				</g>
+				{/* doigts repliés : auriculaire (au fond) → index (devant), phalanges contre la lame */}
+				<Finger a={[372, 456]} b={[438, 452]} w={42} id={id} />
+				<Finger a={[392, 504]} b={[470, 500]} w={50} id={id} />
+				<Finger a={[402, 556]} b={[484, 556]} w={54} id={id} />
+				<Finger a={[398, 614]} b={[476, 618]} w={52} id={id} />
+				{/* dos de la main, articulations en relief */}
+				<path d="M236 470 C280 440 340 426 372 434 C394 440 402 470 404 500 C410 520 414 540 412 560 C416 590 418 610 410 640 C396 668 330 690 262 700 C220 660 206 540 236 470 Z" fill={`url(#skin${id})`} {...LINE} />
+				{[[380, 452], [398, 502], [408, 556], [404, 612]].map(([x, y], i) => (
+					<g key={i}>
+						<ellipse cx={x - 8} cy={y - 8} rx={12} ry={6} fill={alpha(LPI.paper, 0.6)} />
+						<path d={`M${x - 14} ${y + 10} q10 4 18 -2`} fill="none" stroke={alpha(LPI.navy, 0.22)} strokeWidth={2.5} strokeLinecap="round" />
+					</g>
 				))}
-				{/* avant-bras qui monte hors du cadre */}
-				<path d="M-36 120 L-56 -400 L104 -400 L84 120 Z" fill={SKIN_C} stroke={N} strokeWidth={8} strokeLinejoin="round" />
-				<path d="M-36 120 L-56 -400 L104 -400 L84 120 Z" fill={alpha(LPI.pink, 0.22)} />
-				{/* main droite : poing fermé sur le manche */}
-				<path d="M-60 120 C-80 170 -70 250 -40 290 L90 290 C110 250 116 170 96 120 C80 80 -40 80 -60 120 Z" fill={SKIN_C} stroke={N} strokeWidth={8} strokeLinejoin="round" />
-				<path d="M-60 120 C-80 170 -70 250 -40 290 L90 290 C110 250 116 170 96 120 C80 80 -40 80 -60 120 Z" fill={alpha(LPI.pink, 0.22)} />
-				{[160, 200, 240].map((y) => (
-					<path key={y} d={`M-50 ${y} Q20 ${y + 10} 92 ${y}`} fill="none" stroke={alpha(N, 0.25)} strokeWidth={5} strokeLinecap="round" />
+				{[[372, 456], [392, 506], [400, 558], [394, 612]].map(([x, y], i) => (
+					<path key={i} d={`M${x - 26} ${y + 2} Q${x - 60} ${y + (600 - y) * 0.2} 306 ${560 + i * 22}`} fill="none" stroke={alpha(LPI.navy, 0.07)} strokeWidth={3} strokeLinecap="round" />
 				))}
-				{/* pouce posé le long du manche */}
-				<rect x={66} y={150} width={44} height={120} rx={22} fill={SKIN_C} stroke={N} strokeWidth={7} />
-				<rect x={74} y={232} width={28} height={30} rx={10} fill={alpha(LPI.paper, 0.9)} stroke={alpha(N, 0.5)} strokeWidth={3} />
+				{/* l'entaille sur la phalange de l'index */}
+				{cut > 0 ? (
+					<g opacity={cl(cut) * (1 - cl(plaster))}>
+						<ellipse cx={KNUCKLE.x - 2} cy={KNUCKLE.y} rx={16} ry={26} fill={alpha(LPI.pink, 0.6)} />
+						<path d={`M${KNUCKLE.x - 7} ${KNUCKLE.y - 21} L${KNUCKLE.x + 3} ${KNUCKLE.y + 21}`} stroke={mix(LPI.pink, LPI.navy, 0.15)} strokeWidth={10} strokeLinecap="round" />
+						<path d={`M${KNUCKLE.x - 7} ${KNUCKLE.y - 21} L${KNUCKLE.x + 3} ${KNUCKLE.y + 21}`} stroke={alpha(LPI.navy, 0.8)} strokeWidth={3} strokeLinecap="round" />
+					</g>
+				) : null}
+				{/* la goutte qui perle */}
+				{bead > 0 ? (
+					<g transform={`translate(${KNUCKLE.x + 8} ${KNUCKLE.y + 10})`}>
+						<path d={`M0 ${-14 * bead} C${12 * bead} ${-2 * bead} ${12 * bead} ${12 * bead} 0 ${14 * bead} C${-12 * bead} ${12 * bead} ${-12 * bead} ${-2 * bead} 0 ${-14 * bead} Z`} fill={LPI.pink} stroke={alpha(LPI.navy, 0.6)} strokeWidth={2.5} />
+						<ellipse cx={-4 * bead} cy={-2 * bead} rx={3 * bead} ry={5 * bead} fill={alpha(LPI.paper, 0.85)} />
+					</g>
+				) : null}
+				{/* pansement enroulé autour de l'index */}
+				{plaster > 0 ? (
+					<g transform={`translate(${KNUCKLE.x - 14} ${KNUCKLE.y + 2}) scale(${0.7 + 0.3 * cl(plaster)})`} opacity={cl(plaster * 2)}>
+						<rect x={-24} y={-34} width={48} height={68} rx={12} fill={alpha(LPI.pink, 0.9)} {...LINE} />
+						<rect x={-14} y={-20} width={28} height={40} rx={6} fill={LPI.paper} stroke={alpha(LPI.navy, 0.4)} strokeWidth={2} />
+						{[-27, 27].map((y) => [-12, 0, 12].map((x) => <circle key={`${x}${y}`} cx={x} cy={y} r={2} fill={alpha(LPI.navy, 0.35)} />))}
+					</g>
+				) : null}
+			</g>
+
+			{/* la goutte qui tombe de la phalange sur la planche */}
+			{dropT > 0 && dropT < 1 ? (
+				<ellipse cx={lerp(tipNow.x + 8, CUT_TIP.x + 6, dropT)} cy={lerp(tipNow.y + 24, CUT_TIP.y + 124, dropT * dropT)} rx={7} ry={10} fill={LPI.pink} stroke={alpha(LPI.navy, 0.6)} strokeWidth={2} />
+			) : null}
+
+			{/* le couteau et la main droite (elle vient d'en bas à droite) */}
+			<g transform={`translate(${kx} ${ky}) rotate(${krot} 10 760)`}>
+				<path d="M-14 250 L44 1200 L80 1200 L30 250 Z" fill={alpha(LPI.navy, 0.18)} filter={`url(#soft2${id})`} transform="translate(22 30)" />
+				{/* lame : face visible, tranchant à gauche, dos à droite */}
+				<path d="M8 236 C-10 270 -30 330 -34 420 L-32 640 L16 640 L14 252 Q13 240 8 236 Z" fill={`url(#steel${id})`} {...LINE} />
+				<path d="M-28 430 L-27 632" stroke={alpha(LPI.paper, 0.95)} strokeWidth={3} strokeLinecap="round" />
+				<path d="M10 270 L12 630" stroke={alpha(LPI.paper, 0.9)} strokeWidth={3} strokeLinecap="round" />
+				{/* mitre et manche, qui sort du cadre vers toi (la main droite est hors champ) */}
+				<rect x={-38} y={634} width={58} height={30} rx={8} fill={mix(LPI.blue, LPI.sky, 0.3)} {...LINE} />
+				<path d="M-34 662 L18 662 L60 1200 L-6 1200 Z" fill={`url(#handle${id})`} {...LINE} />
+				<path d="M-22 676 L18 1190" stroke={alpha(LPI.paper, 0.25)} strokeWidth={5} strokeLinecap="round" />
+				{[730, 830].map((y) => (
+					<circle key={y} cx={-8 + (y - 662) * 0.075} cy={y} r={6} fill={mix(LPI.paper, LPI.sky, 0.4)} stroke={alpha(LPI.navy, 0.5)} strokeWidth={2} />
+				))}
 			</g>
 		</svg>
 	);
 };
+
+/** Recul progressif de la main gauche pendant les coupes : 84 → 0 px pour 0 → 3 tranches. */
+function interpolate3(s: number) {
+	return lerp(84, 0, cl(s / 3));
+}

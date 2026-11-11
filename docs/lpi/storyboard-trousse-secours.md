@@ -2,7 +2,7 @@
 
 | Partie | Voix | Image |
 |---|---|---|
-| intro | Le couteau glisse… et ton doigt saigne ! Vite, la trousse de secours ! Tu l'ouvres… et elle est vide. Alors, qu'est-ce qu'il faut mettre dedans ? | Sans texte : gros plan vu de dessus (`CuttingCloseUp`) : la main coupe une tomate (vrais bruits de couteau), le couteau glisse sur l'index, le sang coule, la caméra s'approche (à remplacer par un clip réaliste : demandé « plus réaliste, sans faute visuelle ») ; la trousse arrive en tremblant, s'ouvre : vide, poussière, papillon de nuit ; « ? » |
+| intro | Le couteau glisse… et ton doigt saigne ! Vite, la trousse de secours ! Tu l'ouvres… et elle est vide. Alors, qu'est-ce qu'il faut mettre dedans ? | Sans texte : gros plan « comme si c'étaient tes mains » (`CuttingCloseUp` v2) : la main en griffe tient la tomate, le couteau coupe des tranches (vrais bruits), au mot « glisse » la lame dérape sur la phalange de l'index, la main sursaute, une goutte perle puis tombe sur la planche, la caméra s'approche ; la trousse arrive en tremblant, s'ouvre : vide, poussière, papillon de nuit ; « ? » |
 | soigner | D'abord, de quoi soigner une plaie : sérum physiologique, antiseptique, compresses stériles, pansements | Chaque objet en gros plan + son rôle, puis il file dans sa case de la trousse |
 | tenir | Une bande et du sparadrap, des gants jetables, des ciseaux aux bouts arrondis, une pince à écharde | Idem, la trousse se remplit |
 | plus | Un thermomètre, du paracétamol (douleur, fièvre), une couverture de survie | Idem |
