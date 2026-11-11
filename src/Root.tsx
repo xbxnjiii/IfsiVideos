@@ -76,6 +76,8 @@ import {Escarre, EscarreProps} from './videos/escarre/Escarre';
 import {TL as ESCARRE_TL} from './videos/escarre/timeline';
 import {PiedDiabetique, PiedDiabetiqueProps} from './videos/pied-diabetique/PiedDiabetique';
 import {TL as PIED_DIABETIQUE_TL} from './videos/pied-diabetique/timeline';
+import {TrousseSecours, TrousseSecoursProps} from './videos/trousse-secours/TrousseSecours';
+import {TL as TROUSSE_SECOURS_TL} from './videos/trousse-secours/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -442,6 +444,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies PiedDiabetiqueProps}
+		/>
+		{/* 38 · Trousse-Secours */}
+		<Composition
+			id="Trousse-Secours"
+			component={TrousseSecours}
+			durationInFrames={TROUSSE_SECOURS_TL.total}
+			fps={TROUSSE_SECOURS_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies TrousseSecoursProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition

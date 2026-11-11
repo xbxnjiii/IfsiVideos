@@ -1,0 +1,8 @@
+[
+ {"id": "intro", "rate": "+4%", "text": "Le couteau glisse… et ton doigt saigne ! Vite, la trousse de secours ! Tu l'ouvres… et elle est vide. Alors, qu'est-ce qu'il faut mettre dedans ?"},
+ {"id": "soigner", "rate": "+2%", "text": "D'abord, de quoi soigner une plaie : du sérum physiologique pour laver, un antiseptique pour désinfecter, des compresses stériles, et des pansements de plusieurs tailles."},
+ {"id": "tenir", "rate": "+2%", "text": "Ensuite, une bande et du sparadrap pour tenir le pansement, des gants jetables pour te protéger, des ciseaux aux bouts arrondis, et une pince à écharde."},
+ {"id": "plus", "rate": "+2%", "text": "Ajoute un thermomètre, du paracétamol contre la douleur et la fièvre, et une couverture de survie."},
+ {"id": "regles", "rate": "+2%", "text": "Range-la hors de portée des enfants, vérifie les dates de péremption chaque année, et glisse dedans les numéros d'urgence : le {15|quinze}, le {18|dix-huit}, le {112|cent douze}, et le numéro du centre antipoison."},
+ {"id": "fin", "rate": "+4%", "text": "Et la prochaine fois que le couteau glisse… tout est là !"}
+]

@@ -274,6 +274,11 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
   Bruitages ajoutés : `bike`, `skid`, `fall`, `car-door`, `chop`, `meow`, `hiss`. Attention : `at()` ignore les accents,
   « là » = « la » (prendre le mot suivant).
 
+- `Trousse-Secours` (n° 38, ≈ 48 s, **voix gratuite edge-tts**, demandé) : même règle d'accroche (scène sans texte : le
+  couteau glisse, la trousse est vide), puis la trousse se remplit objet par objet (gros plan + rôle, il file dans sa
+  case), les bons réflexes, chute « tout est là ». Briques `src/brand/firstaid.tsx` : `FirstAidKit` (`open`, `items`,
+  `empty`, `shine`, cases `KIT_SLOTS`), `KitItem` (13 objets), `EmergencyCard`, `CuttingBoard`, `Padlock`.
+
 ## Voix ElevenLabs « Laura » (choisie par le propriétaire pour les nouvelles vidéos)
 
 - Connecteur ElevenLabs : voix `Laura` (`MmafIMKg28Wr0yMh8CEB`), modèle `eleven_v4`, flow `6O4tHaBowSG52722wkdC`.

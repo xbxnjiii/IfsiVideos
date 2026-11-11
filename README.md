@@ -48,6 +48,7 @@ pas de logiciel de montage, pas de banque d'images.
 | 35 | Série courte « Les plaies » : aiguë ou chronique, voix Laura | `Plaie-Chronique` | [voix/35-plaie-chronique.script.json](voix/35-plaie-chronique.script.json) | [storyboard](docs/lpi/storyboard-plaies-courtes.md) |
 | 36 | Série courte « Les plaies » : l'escarre, voix Laura | `Escarre` | [voix/36-escarre.script.json](voix/36-escarre.script.json) | [storyboard](docs/lpi/storyboard-plaies-courtes.md) |
 | 37 | Série courte « Les plaies » : pied diabétique et ulcère de jambe, voix Laura | `Pied-Diabetique` | [voix/37-pied-diabetique.script.json](voix/37-pied-diabetique.script.json) | [storyboard](docs/lpi/storyboard-plaies-courtes.md) |
+| 38 | Court info : que doit contenir une trousse de secours à la maison (voix gratuite, accroche animée sans texte) | `Trousse-Secours` | [voix/38-trousse-secours.script.json](voix/38-trousse-secours.script.json) | [storyboard](docs/lpi/storyboard-trousse-secours.md) |
 
 ## Utilisation
 
