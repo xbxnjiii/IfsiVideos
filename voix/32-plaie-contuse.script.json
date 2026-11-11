@@ -2,7 +2,7 @@
  {
   "id": "intro",
   "rate": "+6%",
-  "text": "Le couteau de cuisine… ou la portière sur les doigts. À ton avis, laquelle est la pire ?"
+  "text": "Il trébuche sur le trottoir… et boum, le menton par terre ! Sa plaie ne ressemble pas du tout à une coupure de couteau. Pourquoi ?"
  },
  {
   "id": "franche",
@@ -12,11 +12,11 @@
  {
   "id": "contuse",
   "rate": "+2%",
-  "text": "La portière, elle, écrase. C'est une plaie contuse : des bords irréguliers, des tissus écrasés… qui peuvent mourir. On appelle ça la nécrose."
+  "text": "Le trottoir, lui, écrase la peau. C'est une plaie contuse : des bords irréguliers, des tissus écrasés… qui peuvent mourir. On appelle ça la nécrose."
  },
  {
   "id": "fin",
   "rate": "+4%",
-  "text": "Alors, c'est la portière ! Une plaie qui écrase est souvent plus grave qu'une plaie qui coupe."
+  "text": "Alors, une plaie qui écrase est souvent plus grave qu'une plaie qui coupe : elle cicatrise moins bien."
  }
 ]

@@ -14,7 +14,7 @@ const SCENES: Record<SceneId, React.FC> = {intro: Hook, franche: Franche, contus
 
 /** Transition VERS chaque scène : jamais deux fois la même d'affilée ; la mascotte la porte (mascot.ts). */
 const TRANSITIONS: Record<Exclude<SceneId, 'intro'>, EpisodeTransition> = {
-	franche: {p: zoomInto({x: 540, y: 680, color: LPI.sky}), sfx: 'whoosh'}, // on plonge dans la carte du couteau
+	franche: {p: zoomInto({x: 540, y: 1180, color: LPI.sky}), sfx: 'whoosh'}, // on plonge dans la coupure du couteau
 	contuse: {p: whip('left'), sfx: 'whoosh'},
 	fin: {p: runWipe(), sfx: 'run'},
 	end: {p: zoomInto({x: 540, y: 1260, color: LPI.sky}), sfx: 'whoosh'},

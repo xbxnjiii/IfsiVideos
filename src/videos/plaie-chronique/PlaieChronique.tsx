@@ -1,5 +1,5 @@
-// « Plaie aiguë ou chronique ? » — série courte « Les plaies » (≈ 38 s, sans barre de progression), accroche « deux
-// plaies, le même jour ». Storyboard : docs/lpi/storyboard-plaies-courtes.md.
+// « Plaie aiguë ou chronique ? » — série courte « Les plaies » (≈ 38 s, sans barre de progression), accroche « papi et
+// son petit-fils ». Storyboard : docs/lpi/storyboard-plaies-courtes.md.
 import React from 'react';
 import {EndCard, Episode, EpisodeTransition} from '../../brand/episode';
 import {wave} from '../../brand/motion3';
@@ -15,7 +15,7 @@ const SCENES: Record<SceneId, React.FC> = {intro: Hook, aigue: Aigue, chronique:
 
 /** Transition VERS chaque scène : jamais deux fois la même d'affilée ; la mascotte la porte (mascot.ts). */
 const TRANSITIONS: Record<Exclude<SceneId, 'intro'>, EpisodeTransition> = {
-	aigue: {p: zoomInto({x: 290, y: 780, color: LPI.sky}), sfx: 'whoosh'}, // on plonge dans la plaie 1
+	aigue: {p: zoomInto({x: 797, y: 1288, color: LPI.sky}), sfx: 'whoosh'}, // on plonge dans la jambe du petit
 	chronique: {p: whip('left'), sfx: 'whoosh'},
 	exemples: {p: wave({x: 540, y: 1010}), sfx: 'whoosh'},
 	fin: {p: runWipe(), sfx: 'run'},

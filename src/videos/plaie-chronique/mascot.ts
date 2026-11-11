@@ -1,19 +1,22 @@
-// Jeu de la mascotte : réfléchit devant les deux plaies, bravo sur « disparu », surprise sur « toujours là » ; OK pour
+// Jeu de la mascotte (à gauche dans l'accroche, le petit est à droite) : douleur quand ils s'écorchent, réfléchit
+// pendant les semaines, bravo sur « guéri », surprise sur « toujours là » ; OK pour
 // la plaie aiguë ; inquiète sur la plaie chronique, triste sur « bloquée » ; elle présente les 3 exemples ; chute :
 // loupe sur « on cherche pourquoi ». En bas à droite (le contenu s'arrête vers y 1460).
 import type {Beat} from '../../brand/MascotActor';
 import {runAcross as run, SPOT} from '../../brand/episode';
 import {abs, SceneId, start, TL} from './timeline';
 
-const {R} = SPOT;
+const {L, R} = SPOT;
 const runAcross = (id: SceneId) => run(TL, start(id));
 
 export const MASCOT: Beat[] = [
 	/* ── accroche ── */
-	{at: abs('intro', 'jour.'), via: 'pop', key: 'situations/reflexion', ...R},
-	{at: abs('intro', 'disparu…'), key: 'gestes/bravo', fx: 'bounce', ...R},
-	{at: abs('intro', 'toujours'), key: 'expressions/surprise', fx: 'shake', ...R},
-	{at: start('aigue') - 4, dur: 16, key: 'expressions/surprise', x: 290, y: 780, size: 0},
+	{at: abs('intro', 'blessent'), via: 'pop', key: 'symptomes/douleur', fx: 'shake', ...L},
+	{at: abs('intro', 'six'), key: 'situations/reflexion', ...L},
+	{at: abs('intro', 'guéri'), key: 'gestes/bravo', fx: 'bounce', ...L},
+	{at: abs('intro', 'toujours'), key: 'expressions/surprise', fx: 'shake', ...L},
+	{at: start('aigue') - 4, dur: 16, key: 'expressions/surprise', x: 797, y: 1288, size: 0},
+	{at: start('aigue') + 14, via: 'pop', key: 'gestes/ok', ...R},
 
 	/* ── aiguë ── */
 	{at: abs('aigue', 'guérit'), via: 'pop', key: 'gestes/ok', ...R},

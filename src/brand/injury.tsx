@@ -636,14 +636,28 @@ const kneeIK = (h: [number, number], p: [number, number], L = 118): [number, num
 	const k2: [number, number] = [bx - hh * px, by - hh * py];
 	return k1[0] > k2[0] ? k1 : k2;
 };
-const Head: React.FC<{x: number; y: number; cry?: number; rot?: number}> = ({x, y, cry = 0, rot = 0}) => {
+const Head: React.FC<{x: number; y: number; cry?: number; rot?: number; hair?: 'kid' | 'man' | 'old'; chin?: number; r?: number}> = ({x, y, cry = 0, rot = 0, hair = 'kid', chin = 0, r = 46}) => {
 	const frame = useCurrentFrame();
 	return (
-		<g transform={`translate(${x} ${y}) rotate(${rot})`}>
+		<g transform={`translate(${x} ${y}) rotate(${rot}) scale(${r / 46})`}>
 			<circle r={46} fill={SKIN_FILL} stroke={N} strokeWidth={6} />
 			<circle r={46} fill={alpha(LPI.pink, 0.22)} />
 			{/* cheveux */}
-			<path d="M-44 -6 C-50 -50 10 -66 40 -30 C30 -40 10 -42 -4 -34 C-14 -22 -30 -18 -44 -6 Z" fill={N} />
+			{hair === 'kid' ? <path d="M-44 -6 C-50 -50 10 -66 40 -30 C30 -40 10 -42 -4 -34 C-14 -22 -30 -18 -44 -6 Z" fill={N} /> : null}
+			{hair === 'man' ? <path d="M-46 0 C-52 -46 0 -60 38 -36 C34 -30 20 -30 4 -30 C-16 -28 -30 -20 -46 0 Z" fill={N} /> : null}
+			{hair === 'old' ? (
+				<>
+					<path d="M-46 4 C-50 -20 -40 -34 -26 -38 C-30 -24 -34 -10 -36 8 Z" fill={LPI.sky} stroke={N} strokeWidth={4} />
+					<path d="M14 26 Q26 20 40 26" fill="none" stroke={LPI.sky} strokeWidth={9} strokeLinecap="round" />
+					<circle cx={22} cy={-2} r={13} fill="none" stroke={N} strokeWidth={4} />
+				</>
+			) : null}
+			{chin > 0 ? (
+				<g transform={`translate(30 38) scale(${chin})`}>
+					<ellipse rx={14} ry={10} fill={LPI.pink} stroke={N} strokeWidth={3} />
+					<path d="M-8 -2 L8 -4 M-6 4 L6 2" stroke={alpha(N, 0.5)} strokeWidth={2.5} strokeLinecap="round" />
+				</g>
+			) : null}
 			<circle cx={-26} cy={8} r={10} fill={SKIN_FILL} stroke={N} strokeWidth={4} />
 			{/* œil, bouche */}
 			{cry > 0.5 ? <path d="M14 -6 l14 6 M14 6 l14 -6" stroke={N} strokeWidth={5} strokeLinecap="round" /> : <circle cx={22} cy={-2} r={5.5} fill={N} />}
@@ -742,6 +756,130 @@ export const Boy: React.FC<{width?: number; pose: 'ride' | 'fly' | 'sit'; spin?:
 	return (
 		<svg width={width} height={(width * 330) / 520} viewBox="0 0 520 330" style={{overflow: 'visible', display: 'block'}}>
 			{body}
+		</svg>
+	);
+};
+
+/* ───────────── un adulte qui marche (profil) ───────────── */
+
+/** Pieds du marcheur (repère 300 × 600, hanche en 150, 330) pour une phase de marche donnée (radians). */
+export const walkerLegs = (phase: number) => {
+	const H: [number, number] = [150, 330];
+	const L = 130;
+	const leg = (ph: number) => {
+		const a = 0.5 * Math.sin(ph);
+		const b = 0.45 * Math.max(0, -Math.cos(ph));
+		const K: [number, number] = [H[0] + L * Math.sin(a), H[1] + L * Math.cos(a)];
+		const F: [number, number] = [K[0] + L * Math.sin(a - b), K[1] + L * Math.cos(a - b)];
+		return {K, F};
+	};
+	return {H, front: leg(phase), back: leg(phase + Math.PI)};
+};
+
+/**
+ * Adulte de profil (vers la droite), repère 300 × 600 (pieds au sol à y ≈ 590). `pose` : 'walk' (marche, `phase` en
+ * radians), 'hop' (sautille sur un pied et tient l'autre : il s'est planté un clou), 'fall' (bras en avant, il tombe :
+ * à faire pivoter par le parent). `hair` : 'man' | 'old' | 'kid' ; `cry` ; `chin` : plaie au menton ; `legWound` : plaie
+ * sur le tibia avant ; `size` : 1 = adulte, 0.75 = enfant (tout rapetisse, la tête reste grosse).
+ */
+export const Walker: React.FC<{width?: number; pose?: 'walk' | 'hop' | 'fall'; phase?: number; hair?: 'man' | 'old' | 'kid'; cry?: number; chin?: number; pain?: number; legWound?: number; shirt?: string}> = ({width = 300, pose = 'walk', phase = 0, hair = 'man', cry = 0, chin = 0, pain = 0, legWound = 0, shirt = LPI.sky}) => {
+	const frame = useCurrentFrame();
+	const SHORTS = hair === 'old' ? N : LPI.blue;
+	const S2: [number, number] = [160, 176];
+	let legs: React.ReactNode;
+	let arms: React.ReactNode;
+	let farArm: React.ReactNode = null;
+	const shoe = (F: [number, number], dark = false, rot = 0) => <ellipse cx={F[0] + 14} cy={F[1] + 2} rx={36} ry={16} fill={dark ? alpha(N, 0.7) : N} transform={`rotate(${rot} ${F[0]} ${F[1]})`} />;
+	if (pose === 'hop') {
+		const H: [number, number] = [150, 330];
+		const K: [number, number] = [232, 404];
+		const F: [number, number] = [196, 500];
+		legs = (
+			<>
+				{limb([H, [152, 460], [150, 586]], 44, SKIN_FILL)}
+				{limb([H, [151, 410]], 64, SHORTS)}
+				{shoe([150, 588])}
+				{limb([H, K, F], 44, SKIN_FILL)}
+				{limb([H, [H[0] + (K[0] - H[0]) * 0.6, H[1] + (K[1] - H[1]) * 0.6]], 64, SHORTS)}
+				{/* plante du pied levée : un point rouge (le clou) */}
+				<ellipse cx={F[0] - 6} cy={F[1] + 10} rx={30} ry={14} fill={SKIN_FILL} stroke={N} strokeWidth={6} transform={`rotate(-30 ${F[0]} ${F[1]})`} />
+				<circle cx={F[0] - 10} cy={F[1] + 16} r={6} fill={LPI.pink} stroke={N} strokeWidth={3} />
+			</>
+		);
+		arms = (
+			<>
+				{limb([S2, [214, 280], [200, 470]], 32, shirt === LPI.sky ? SKIN_FILL : SKIN_FILL)}
+				<circle cx={200} cy={474} r={15} fill={SKIN_FILL} stroke={N} strokeWidth={5} />
+			</>
+		);
+		farArm = limb([S2, [110, 120], [80, 70]], 28, alpha(LPI.pink, 0.45));
+	} else if (pose === 'fall') {
+		const H: [number, number] = [150, 330];
+		legs = (
+			<>
+				{limb([H, [100, 440], [40, 540]], 44, alpha(LPI.pink, 0.45))}
+				{limb([H, [170, 450], [120, 570]], 44, SKIN_FILL)}
+				{limb([H, [160, 410]], 64, SHORTS)}
+				{shoe([120, 572])}
+			</>
+		);
+		arms = (
+			<>
+				{limb([S2, [236, 110], [270, 40]], 32, SKIN_FILL)}
+				<circle cx={272} cy={36} r={14} fill={SKIN_FILL} stroke={N} strokeWidth={5} />
+			</>
+		);
+		farArm = limb([S2, [226, 96], [250, 24]], 28, alpha(LPI.pink, 0.45));
+	} else {
+		const {H, front, back} = walkerLegs(phase);
+		const sw = 0.45 * Math.sin(phase);
+		const arm = (s: number): [number, number][] => {
+			const E: [number, number] = [S2[0] + 92 * Math.sin(-s * sw), S2[1] + 92 * Math.cos(-s * sw)];
+			const Hd: [number, number] = [E[0] + 84 * Math.sin(-s * sw + 0.5), E[1] + 84 * Math.cos(-s * sw + 0.5)];
+			return [S2, E, Hd];
+		};
+		const legDraw = (l: {K: [number, number]; F: [number, number]}, far: boolean) => (
+			<>
+				{limb([l.K, l.F], 44, far ? alpha(LPI.pink, 0.45) : SKIN_FILL)}
+				{limb([H, [H[0] + (l.K[0] - H[0]) * 0.7, H[1] + (l.K[1] - H[1]) * 0.7]], 64, far ? alpha(SHORTS, 0.7) : SHORTS)}
+				{shoe(l.F, far)}
+			</>
+		);
+		legs = (
+			<>
+				{legDraw(back, true)}
+				{legDraw(front, false)}
+				{legWound > 0 ? (
+					<g transform={`translate(${(front.K[0] + front.F[0]) / 2 + 6} ${(front.K[1] + front.F[1]) / 2}) scale(${legWound})`}>
+						<ellipse rx={20} ry={14} fill={LPI.pink} stroke={N} strokeWidth={3} />
+						<ellipse rx={8} ry={5} fill={alpha(N, 0.45 * legWound)} />
+					</g>
+				) : null}
+			</>
+		);
+		const fa = arm(-1);
+		farArm = limb(fa, 28, alpha(LPI.pink, 0.45));
+		const na = arm(1);
+		arms = (
+			<>
+				{limb(na, 32, SKIN_FILL)}
+				<circle cx={na[2][0]} cy={na[2][1]} r={14} fill={SKIN_FILL} stroke={N} strokeWidth={5} />
+			</>
+		);
+	}
+	return (
+		<svg width={width} height={width * 2} viewBox="0 0 300 600" style={{overflow: 'visible', display: 'block'}}>
+			{farArm}
+			{legs}
+			{limb([[150, 330], S2], 100, shirt)}
+			{arms}
+			<Head x={172} y={100} cry={cry} hair={hair} chin={chin} r={60} rot={pose === 'fall' ? 10 : 0} />
+			{pain > 0 && pose === 'hop'
+				? [0, 1, 2].map((i) => {
+						const f = 0.5 + 0.5 * Math.sin(frame * 0.9 + i * 2);
+						return <path key={i} d={`M${160 + i * 34} ${560 - i * 10} l10 -24 l10 10 l10 -26`} fill="none" stroke={LPI.pink} strokeWidth={7} strokeLinecap="round" strokeLinejoin="round" opacity={pain * (0.4 + 0.6 * f)} />;
+					})
+				: null}
 		</svg>
 	);
 };

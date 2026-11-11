@@ -2,17 +2,17 @@
  {
   "id": "intro",
   "rate": "+6%",
-  "text": "Deux plaies, le même jour. Trois semaines plus tard, l'une a disparu… et l'autre est toujours là."
+  "text": "Papi et son petit-fils se blessent à la jambe, le même jour, en jardinant. Six semaines plus tard, le petit est guéri depuis longtemps… mais la plaie de papi est toujours là."
  },
  {
   "id": "aigue",
   "rate": "+2%",
-  "text": "La première est une plaie aiguë : elle guérit normalement, en moins de quatre semaines. Comme une coupure, ou une cicatrice après une opération."
+  "text": "Celle du petit est une plaie aiguë : elle guérit normalement, en moins de quatre semaines. Comme une coupure, ou une cicatrice après une opération."
  },
  {
   "id": "chronique",
   "rate": "+2%",
-  "text": "La deuxième est une plaie chronique : sa cicatrisation est ralentie, ou bloquée, souvent au-delà de quatre à six semaines."
+  "text": "Celle de papi est une plaie chronique : sa cicatrisation est ralentie, ou bloquée, souvent au-delà de quatre à six semaines."
  },
  {
   "id": "exemples",

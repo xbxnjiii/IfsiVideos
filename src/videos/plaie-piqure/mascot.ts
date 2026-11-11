@@ -12,7 +12,7 @@ export const MASCOT: Beat[] = [
 	/* ── accroche ── */
 	{at: abs('intro', 'clou.') + 2, via: 'pop', key: 'symptomes/douleur', fx: 'shake', ...R},
 	{at: abs('intro', 'rien'), key: 'gestes/question', ...R},
-	{at: start('dessous') - 4, dur: 16, key: 'gestes/question', x: 540, y: 1108, size: 0},
+	{at: start('dessous') - 4, dur: 16, key: 'gestes/question', x: 830, y: 640, size: 0},
 
 	/* ── sous la peau ── */
 	{at: abs('dessous', 'minuscule,'), via: 'pop', key: 'expressions/loupe', ...R},

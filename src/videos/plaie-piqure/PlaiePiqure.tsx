@@ -14,7 +14,7 @@ const SCENES: Record<SceneId, React.FC> = {intro: Hook, dessous: Dessous, piqure
 
 /** Transition VERS chaque scène : jamais deux fois la même d'affilée ; la mascotte la porte (mascot.ts). */
 const TRANSITIONS: Record<Exclude<SceneId, 'intro'>, EpisodeTransition> = {
-	dessous: {p: zoomInto({x: 540, y: 1108, color: LPI.pink}), sfx: 'whoosh'}, // on plonge là où le clou est entré
+	dessous: {p: zoomInto({x: 830, y: 640, color: LPI.pink}), sfx: 'whoosh'}, // on plonge là où le clou est entré
 	piqure: {p: whip('left'), sfx: 'whoosh'},
 	fin: {p: runWipe(), sfx: 'run'},
 	end: {p: zoomInto({x: 540, y: 1260, color: LPI.sky}), sfx: 'whoosh'},

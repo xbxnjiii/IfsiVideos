@@ -1,408 +1,458 @@
 {
- "voice": "plaie-contuse-p.wav",
- "duration": 29.04,
+ "voice": "c2-p2.wav",
+ "duration": 32.739,
  "sections": [
   {
    "id": "intro",
    "start": 0.0,
-   "end": 5.34
+   "end": 8.2
   },
   {
    "id": "franche",
-   "start": 6.382,
-   "end": 13.609
+   "start": 9.029,
+   "end": 16.306
   },
   {
    "id": "contuse",
-   "start": 14.374,
-   "end": 23.418
+   "start": 17.049,
+   "end": 26.78
   },
   {
    "id": "fin",
-   "start": 24.213,
-   "end": 28.84
+   "start": 27.558,
+   "end": 32.56
   }
  ],
  "words": [
   {
-   "text": "Le",
+   "text": "Il",
    "start": 0.0,
-   "end": 0.34
+   "end": 0.3
   },
   {
-   "text": "couteau",
-   "start": 0.34,
-   "end": 0.68
-  },
-  {
-   "text": "de",
-   "start": 0.68,
-   "end": 0.82
-  },
-  {
-   "text": "cuisine…",
-   "start": 0.82,
-   "end": 1.2
-  },
-  {
-   "text": "ou",
-   "start": 1.86,
-   "end": 2.02
-  },
-  {
-   "text": "la",
-   "start": 2.02,
-   "end": 2.3
-  },
-  {
-   "text": "portière",
-   "start": 2.3,
-   "end": 2.54
+   "text": "trébuche",
+   "start": 0.3,
+   "end": 0.72
   },
   {
    "text": "sur",
-   "start": 2.54,
-   "end": 2.78
+   "start": 0.72,
+   "end": 0.94
   },
   {
-   "text": "les",
-   "start": 2.78,
-   "end": 2.96
+   "text": "le",
+   "start": 0.94,
+   "end": 1.12
   },
   {
-   "text": "doigts.",
-   "start": 2.96,
-   "end": 3.2
+   "text": "trottoir…",
+   "start": 1.12,
+   "end": 1.78
   },
   {
-   "text": "À",
-   "start": 3.58,
-   "end": 3.78
+   "text": "et",
+   "start": 2.12,
+   "end": 2.38
   },
   {
-   "text": "ton",
-   "start": 3.78,
-   "end": 3.9
+   "text": "boum,",
+   "start": 2.38,
+   "end": 2.8
   },
   {
-   "text": "avis,",
-   "start": 3.9,
-   "end": 4.32
+   "text": "le",
+   "start": 2.86,
+   "end": 3.16
   },
   {
-   "text": "laquelle",
-   "start": 4.56,
-   "end": 4.74
+   "text": "menton",
+   "start": 3.16,
+   "end": 3.48
   },
   {
-   "text": "est",
-   "start": 4.74,
+   "text": "par",
+   "start": 3.48,
+   "end": 3.8
+  },
+  {
+   "text": "terre !",
+   "start": 3.8,
+   "end": 4.08
+  },
+  {
+   "text": "Sa",
+   "start": 4.6,
    "end": 4.88
   },
   {
-   "text": "la",
+   "text": "plaie",
    "start": 4.88,
    "end": 5.12
   },
   {
-   "text": "pire ?",
+   "text": "ne",
    "start": 5.12,
-   "end": 5.34
+   "end": 5.24
   },
   {
-   "text": "Le",
-   "start": 6.382,
-   "end": 6.6
+   "text": "ressemble",
+   "start": 5.24,
+   "end": 5.72
   },
   {
-   "text": "couteau",
-   "start": 6.6,
-   "end": 6.88
+   "text": "pas",
+   "start": 5.72,
+   "end": 6.02
   },
   {
-   "text": "fait",
-   "start": 6.88,
-   "end": 7.02
+   "text": "du",
+   "start": 6.02,
+   "end": 6.26
+  },
+  {
+   "text": "tout",
+   "start": 6.26,
+   "end": 6.36
+  },
+  {
+   "text": "à",
+   "start": 6.36,
+   "end": 6.5
   },
   {
    "text": "une",
-   "start": 7.02,
-   "end": 7.24
+   "start": 6.5,
+   "end": 6.64
   },
   {
-   "text": "plaie",
-   "start": 7.24,
-   "end": 7.4
-  },
-  {
-   "text": "franche :",
-   "start": 7.4,
-   "end": 8.0
-  },
-  {
-   "text": "des",
-   "start": 8.24,
-   "end": 8.38
-  },
-  {
-   "text": "bords",
-   "start": 8.38,
-   "end": 8.6
-  },
-  {
-   "text": "nets,",
-   "start": 8.6,
-   "end": 9.06
-  },
-  {
-   "text": "bien",
-   "start": 9.2,
-   "end": 9.28
-  },
-  {
-   "text": "réguliers.",
-   "start": 9.28,
-   "end": 9.84
-  },
-  {
-   "text": "Ils",
-   "start": 10.16,
-   "end": 10.28
-  },
-  {
-   "text": "se",
-   "start": 10.28,
-   "end": 10.54
-  },
-  {
-   "text": "recollent",
-   "start": 10.54,
-   "end": 10.9
-  },
-  {
-   "text": "facilement :",
-   "start": 10.9,
-   "end": 11.4
-  },
-  {
-   "text": "souvent,",
-   "start": 11.62,
-   "end": 12.1
-  },
-  {
-   "text": "quelques",
-   "start": 12.34,
-   "end": 12.44
-  },
-  {
-   "text": "points",
-   "start": 12.44,
-   "end": 12.6
+   "text": "coupure",
+   "start": 6.64,
+   "end": 6.9
   },
   {
    "text": "de",
-   "start": 12.6,
-   "end": 12.74
+   "start": 6.9,
+   "end": 7.14
   },
   {
-   "text": "suture",
-   "start": 12.74,
-   "end": 13.02
+   "text": "couteau.",
+   "start": 7.14,
+   "end": 7.66
   },
   {
-   "text": "suffisent.",
-   "start": 13.02,
-   "end": 13.609
+   "text": "Pourquoi ?",
+   "start": 7.82,
+   "end": 8.2
   },
   {
-   "text": "La",
-   "start": 14.374,
-   "end": 14.58
+   "text": "Le",
+   "start": 9.029,
+   "end": 9.22
   },
   {
-   "text": "portière,",
-   "start": 14.58,
-   "end": 15.22
+   "text": "couteau",
+   "start": 9.22,
+   "end": 9.5
   },
   {
-   "text": "elle,",
-   "start": 15.22,
-   "end": 15.64
-  },
-  {
-   "text": "écrase.",
-   "start": 16.04,
-   "end": 16.3
-  },
-  {
-   "text": "C'est",
-   "start": 16.76,
-   "end": 16.94
+   "text": "fait",
+   "start": 9.5,
+   "end": 9.66
   },
   {
    "text": "une",
-   "start": 16.94,
-   "end": 17.1
+   "start": 9.66,
+   "end": 9.88
   },
   {
    "text": "plaie",
-   "start": 17.1,
-   "end": 17.32
+   "start": 9.88,
+   "end": 10.08
   },
   {
-   "text": "contuse :",
-   "start": 17.32,
-   "end": 17.82
+   "text": "franche :",
+   "start": 10.08,
+   "end": 10.64
   },
   {
    "text": "des",
-   "start": 18.22,
-   "end": 18.36
+   "start": 10.88,
+   "end": 11.04
   },
   {
    "text": "bords",
-   "start": 18.36,
-   "end": 18.6
+   "start": 11.04,
+   "end": 11.28
   },
   {
-   "text": "irréguliers,",
-   "start": 18.6,
-   "end": 19.34
+   "text": "nets,",
+   "start": 11.28,
+   "end": 11.74
   },
   {
-   "text": "des",
-   "start": 19.58,
-   "end": 19.72
+   "text": "bien",
+   "start": 11.86,
+   "end": 11.98
   },
   {
-   "text": "tissus",
-   "start": 19.72,
-   "end": 20.06
+   "text": "réguliers.",
+   "start": 11.98,
+   "end": 12.56
   },
   {
-   "text": "écrasés…",
-   "start": 20.06,
-   "end": 20.88
+   "text": "Ils",
+   "start": 12.9,
+   "end": 13.02
   },
   {
-   "text": "qui",
-   "start": 21.1,
-   "end": 21.26
+   "text": "se",
+   "start": 13.02,
+   "end": 13.24
   },
   {
-   "text": "peuvent",
-   "start": 21.26,
-   "end": 21.46
+   "text": "recollent",
+   "start": 13.24,
+   "end": 13.62
   },
   {
-   "text": "mourir.",
-   "start": 21.46,
-   "end": 22.0
+   "text": "facilement :",
+   "start": 13.62,
+   "end": 14.16
   },
   {
-   "text": "On",
-   "start": 22.24,
-   "end": 22.42
+   "text": "souvent,",
+   "start": 14.32,
+   "end": 14.8
   },
   {
-   "text": "appelle",
-   "start": 22.42,
-   "end": 22.62
+   "text": "quelques",
+   "start": 15.06,
+   "end": 15.18
   },
   {
-   "text": "ça",
-   "start": 22.62,
-   "end": 22.82
+   "text": "points",
+   "start": 15.18,
+   "end": 15.34
   },
   {
-   "text": "la",
-   "start": 22.82,
-   "end": 22.98
+   "text": "de",
+   "start": 15.34,
+   "end": 15.56
   },
   {
-   "text": "nécrose.",
-   "start": 22.98,
-   "end": 23.418
+   "text": "suture",
+   "start": 15.56,
+   "end": 15.82
   },
   {
-   "text": "Alors,",
-   "start": 24.213,
-   "end": 24.6
+   "text": "suffisent.",
+   "start": 15.82,
+   "end": 16.306
   },
   {
-   "text": "c'est",
-   "start": 24.74,
-   "end": 24.9
+   "text": "Le",
+   "start": 17.049,
+   "end": 17.26
   },
   {
-   "text": "la",
-   "start": 24.9,
-   "end": 25.06
+   "text": "trottoir,",
+   "start": 17.26,
+   "end": 17.78
   },
   {
-   "text": "portière !",
-   "start": 25.06,
-   "end": 25.52
-  },
-  {
-   "text": "Une",
-   "start": 25.88,
-   "end": 26.14
-  },
-  {
-   "text": "plaie",
-   "start": 26.14,
-   "end": 26.32
-  },
-  {
-   "text": "qui",
-   "start": 26.32,
-   "end": 26.6
+   "text": "lui,",
+   "start": 17.8,
+   "end": 18.14
   },
   {
    "text": "écrase",
-   "start": 26.6,
-   "end": 26.96
+   "start": 18.54,
+   "end": 18.8
   },
   {
-   "text": "est",
-   "start": 26.96,
-   "end": 27.2
+   "text": "la",
+   "start": 18.8,
+   "end": 19.0
   },
   {
-   "text": "souvent",
-   "start": 27.2,
-   "end": 27.48
+   "text": "peau.",
+   "start": 19.0,
+   "end": 19.4
   },
   {
-   "text": "plus",
-   "start": 27.48,
-   "end": 27.74
+   "text": "C'est",
+   "start": 19.6,
+   "end": 19.78
   },
   {
-   "text": "grave",
-   "start": 27.74,
-   "end": 27.96
-  },
-  {
-   "text": "qu'une",
-   "start": 27.96,
-   "end": 28.24
+   "text": "une",
+   "start": 19.78,
+   "end": 19.98
   },
   {
    "text": "plaie",
-   "start": 28.24,
-   "end": 28.4
+   "start": 19.98,
+   "end": 20.18
+  },
+  {
+   "text": "contuse :",
+   "start": 20.18,
+   "end": 20.76
+  },
+  {
+   "text": "des",
+   "start": 21.18,
+   "end": 21.32
+  },
+  {
+   "text": "bords",
+   "start": 21.32,
+   "end": 21.58
+  },
+  {
+   "text": "irréguliers,",
+   "start": 21.58,
+   "end": 22.38
+  },
+  {
+   "text": "des",
+   "start": 22.56,
+   "end": 22.74
+  },
+  {
+   "text": "tissus",
+   "start": 22.74,
+   "end": 23.1
+  },
+  {
+   "text": "écrasés…",
+   "start": 23.1,
+   "end": 24.0
   },
   {
    "text": "qui",
-   "start": 28.4,
-   "end": 28.68
+   "start": 24.12,
+   "end": 24.28
   },
   {
-   "text": "coupe.",
-   "start": 28.68,
-   "end": 28.84
+   "text": "peuvent",
+   "start": 24.28,
+   "end": 24.5
+  },
+  {
+   "text": "mourir.",
+   "start": 24.5,
+   "end": 25.16
+  },
+  {
+   "text": "On",
+   "start": 25.28,
+   "end": 25.48
+  },
+  {
+   "text": "appelle",
+   "start": 25.48,
+   "end": 25.68
+  },
+  {
+   "text": "ça",
+   "start": 25.68,
+   "end": 26.06
+  },
+  {
+   "text": "la",
+   "start": 26.06,
+   "end": 26.22
+  },
+  {
+   "text": "nécrose.",
+   "start": 26.22,
+   "end": 26.78
+  },
+  {
+   "text": "Alors,",
+   "start": 27.558,
+   "end": 27.92
+  },
+  {
+   "text": "une",
+   "start": 28.3,
+   "end": 28.42
+  },
+  {
+   "text": "plaie",
+   "start": 28.42,
+   "end": 28.6
+  },
+  {
+   "text": "qui",
+   "start": 28.6,
+   "end": 28.86
+  },
+  {
+   "text": "écrase",
+   "start": 28.86,
+   "end": 29.28
+  },
+  {
+   "text": "est",
+   "start": 29.28,
+   "end": 29.52
+  },
+  {
+   "text": "souvent",
+   "start": 29.52,
+   "end": 29.8
+  },
+  {
+   "text": "plus",
+   "start": 29.8,
+   "end": 30.08
+  },
+  {
+   "text": "grave",
+   "start": 30.08,
+   "end": 30.3
+  },
+  {
+   "text": "qu'une",
+   "start": 30.3,
+   "end": 30.58
+  },
+  {
+   "text": "plaie",
+   "start": 30.58,
+   "end": 30.78
+  },
+  {
+   "text": "qui",
+   "start": 30.78,
+   "end": 31.04
+  },
+  {
+   "text": "coupe :",
+   "start": 31.04,
+   "end": 31.24
+  },
+  {
+   "text": "elle",
+   "start": 31.52,
+   "end": 31.66
+  },
+  {
+   "text": "cicatrise",
+   "start": 31.66,
+   "end": 32.16
+  },
+  {
+   "text": "moins",
+   "start": 32.16,
+   "end": 32.38
+  },
+  {
+   "text": "bien.",
+   "start": 32.38,
+   "end": 32.56
   }
  ]
 }

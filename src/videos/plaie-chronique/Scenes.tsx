@@ -1,16 +1,16 @@
 // « Plaie aiguë ou chronique ? » — série courte « Les plaies » (≈ 37 s, voix Laura).
-// Accroche « deux plaies, le même jour » : image 0 = deux plaies côte à côte, « Deux plaies, le même jour… » et le
-// calendrier J 0 ; les jours défilent jusqu'à J + 21 (tic-tac), la plaie 1 s'efface (GUÉRIE), la plaie 2 reste
-// (TOUJOURS LÀ). Puis la plaie aiguë (frise des semaines : le curseur avance, la plaie guérit avant 4 semaines ;
+// Accroche « papi et son petit-fils » (choisie par le propriétaire ; SANS texte au début) : ils jardinent près du rosier
+// et s'écorchent la jambe au mot ; les jours défilent jusqu'à J + 42 (tic-tac), la plaie du petit s'efface (✓), celle
+// de papi reste et grandit (!, cercle rose). La v1 (« deux plaies, le même jour ») reste dans l'historique git. Puis la plaie aiguë (frise des semaines : le curseur avance, la plaie guérit avant 4 semaines ;
 // exemples : coupure, cicatrice d'opération), la plaie chronique (le curseur ralentit, se bloque (cadenas), dépasse
 // 4 à 6 semaines), les 3 grands exemples (ulcère de jambe, escarre, pied diabétique), chute : une plaie qui traîne
 // n'est jamais normale, la loupe cherche pourquoi (circulation, appui, diabète, infection).
 import React from 'react';
 import {AbsoluteFill, interpolate, useCurrentFrame} from 'remotion';
 import {Big, Blur, ease, fadeIn, Flash, Fly, Live, Note, popAt, Posed} from '../../brand/bold';
-import {DayChip, WeeksBar, WoundTop} from '../../brand/injury';
+import {DayChip, Walker, WeeksBar, WoundTop} from '../../brand/injury';
 import {Stamp} from '../../brand/kit';
-import {Camera} from '../../brand/motion3';
+import {Burst, Camera} from '../../brand/motion3';
 import {Sfx} from '../../brand/Sfx';
 import {alpha, FONT, LPI, SHADOW} from '../../brand/theme';
 import {clamp} from '../../brand/ui';
@@ -28,49 +28,118 @@ const Tile: React.FC<{label: string; w?: number; h?: number; hl?: number; childr
 	</div>
 );
 
-/* ═══════════════════════════════ ACCROCHE : DEUX PLAIES, LE MÊME JOUR ═══════════════════════════════ */
+/* ═══════════════════════════════ ACCROCHE : PAPI ET SON PETIT-FILS ═══════════════════════════════ */
+const GROUND = 1360;
+/** Un personnage (repère 300 × 600) affiché à w px, centré en x, pieds au sol. */
+const person = (x: number, w: number) => {
+	const s = w / 300;
+	const top = GROUND - 590 * s;
+	return {left: x - w / 2, top, s, wound: {x: x + 6 * s, y: top + 525 * s}, head: {x: x + 22 * s, y: top + 100 * s}};
+};
+const PAPI = person(300, 470);
+const KID = person(790, 330);
+
+/** Rosier (repère 260 × 300) : feuillage bleuté, roses roses, épines. */
+const RoseBush: React.FC<{shake?: number}> = ({shake = 0}) => (
+	<svg width={260} height={300} viewBox="0 0 260 300" style={{overflow: 'visible', display: 'block', transform: `rotate(${shake * 4}deg)`, transformOrigin: '130px 300px'}}>
+		<path d="M130 300 V170 M130 220 L80 150 M130 200 L190 130" stroke={N} strokeWidth={10} strokeLinecap="round" />
+		{[
+			[70, 140, 58],
+			[180, 120, 60],
+			[125, 80, 66],
+			[130, 170, 54],
+		].map(([x, y, r], i) => (
+			<circle key={i} cx={x} cy={y} r={r} fill={i % 2 ? LPI.sky : alpha(LPI.blue, 0.75)} stroke={N} strokeWidth={6} />
+		))}
+		{[
+			[78, 112],
+			[176, 98],
+			[132, 56],
+			[150, 160],
+		].map(([x, y], i) => (
+			<g key={i} transform={`translate(${x} ${y})`}>
+				<circle r={20} fill={LPI.pink} stroke={N} strokeWidth={5} />
+				<path d="M-8 0 Q0 -10 8 0 Q0 8 -8 0" fill="none" stroke={N} strokeWidth={3} />
+			</g>
+		))}
+		{[
+			[118, 250, -1],
+			[142, 236, 1],
+			[118, 196, -1],
+			[100, 180, -1],
+			[164, 166, 1],
+		].map(([x, y, d], i) => (
+			<path key={i} d={`M${x} ${y} l${d * 16} -6`} stroke={N} strokeWidth={5} strokeLinecap="round" />
+		))}
+	</svg>
+);
+
+/** Pastille ronde (✓ guéri, ! toujours là) qui saute au-dessus d'un personnage. */
+const Badge: React.FC<{at: number; x: number; y: number; text: string; tone: string}> = ({at: t0, x, y, text, tone}) => {
+	const frame = useCurrentFrame();
+	if (frame < t0) return null;
+	return (
+		<div style={{position: 'absolute', left: x, top: y, transform: `translate(-50%, -50%) scale(${popAt(frame, t0) * (1 + 0.05 * Math.sin(frame / 4))})`}}>
+			<div style={{width: 150, height: 150, borderRadius: 75, background: tone, border: `7px solid ${N}`, boxShadow: SHADOW, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FONT.title, fontWeight: 900, fontSize: 96, color: N}}>{text}</div>
+		</div>
+	);
+};
+
 export const Hook: React.FC = () => {
 	const frame = useCurrentFrame();
-	const PLAIES = at('intro', 'plaies,');
-	const JOUR = at('intro', 'jour.');
-	const TROIS = at('intro', 'trois');
+	const BLESSENT = at('intro', 'blessent');
+	const JAMBE = at('intro', 'jambe,');
+	const SIX = at('intro', 'six');
 	const TARD = at('intro', 'tard,');
-	const DISPARU = at('intro', 'disparu…');
-	const AUTRE = at('intro', "l'autre");
+	const GUERI = at('intro', 'guéri');
+	const LONGTEMPS = at('intro', 'longtemps…');
 	const TOUJOURS = at('intro', 'toujours');
-	const day = Math.round(interpolate(frame, [TROIS - 4, TARD + 8], [0, 21], clamp));
-	const heal = interpolate(frame, [TROIS, TARD + 12], [0, 1], ease);
+	const day = Math.round(interpolate(frame, [SIX - 4, TARD + 12], [0, 42], clamp));
+	const bob = (k: number) => 10 * Math.sin(frame / 7 + k);
+	const ouch = fadeIn(frame, BLESSENT, 3) * (1 - fadeIn(frame, JAMBE + 20, 10));
 	return (
 		<AbsoluteFill>
 			<AbsoluteFill style={{background: LPI.paper}} />
-			<Camera punches={[PLAIES + 1, JOUR + 1, TROIS + 1, DISPARU + 1, TOUJOURS + 1]} shakes={[TOUJOURS + 2]} strength={0.035}>
-				<Big from={-60} to={TROIS - 6} text={'Deux plaies,\nle *même* jour…'} size={124} y={150} />
-				<Big from={TROIS - 4} text={'*3* *semaines*\nplus tard…'} size={124} y={150} />
-				<Fly at={-60} x={290} y={780} from="left" move={[{at: DISPARU, s: 1.06, dur: 6}, {at: DISPARU + 8, s: 1, dur: 6}]}>
-					<Tile label="plaie 1" w={480} h={440} hl={fadeIn(frame, DISPARU, 4)}>
-						<WoundTop width={400} kind="clean" heal={heal} />
-					</Tile>
+			<Camera punches={[BLESSENT + 1, SIX + 1, GUERI + 1, TOUJOURS + 1]} shakes={[BLESSENT + 2, TOUJOURS + 2]} strength={0.035}>
+				{/* le jardin */}
+				<div style={{position: 'absolute', left: -20, right: -20, top: GROUND, height: 600, background: alpha(LPI.sky, 0.55), borderTop: `8px solid ${N}`}} />
+				{Array.from({length: 14}, (_, i) => (
+					<div key={i} style={{position: 'absolute', left: 30 + i * 76, top: GROUND - 18, width: 8, height: 26, borderRadius: 4, background: LPI.blue, transform: `rotate(${(i % 3) * 12 - 12}deg)`}} />
+				))}
+				<div style={{position: 'absolute', left: 545 - 130, top: GROUND - 300}}>
+					<Live render={(f) => <RoseBush shake={Math.sin(f) * fadeIn(f, BLESSENT - 4, 2) * (1 - fadeIn(f, BLESSENT + 8, 4))} />} />
+				</div>
+				{/* papi et le petit jardinent… et s'écorchent la jambe sur le rosier */}
+				<div style={{position: 'absolute', left: PAPI.left, top: PAPI.top + bob(0)}}>
+					<Live render={(f) => <Walker width={470} pose="walk" phase={0.25 * Math.sin(f / 7)} hair="old" shirt={LPI.sky} cry={ouch} legWound={popAt(f, BLESSENT) * (1 + 0.5 * fadeIn(f, SIX, 60))} />} />
+				</div>
+				<div style={{position: 'absolute', left: KID.left, top: KID.top + bob(2)}}>
+					<Live render={(f) => <Walker width={330} pose="walk" phase={0.25 * Math.sin(f / 7 + 2)} hair="kid" shirt={LPI.pink} cry={ouch} legWound={popAt(f, BLESSENT) * (1 - interpolate(f, [SIX, GUERI], [0, 1], clamp))} />} />
+				</div>
+				<Burst at={BLESSENT} x={PAPI.wound.x} y={PAPI.wound.y} r={170} n={10} />
+				<Burst at={BLESSENT} x={KID.wound.x} y={KID.wound.y} r={150} n={10} />
+				{/* les semaines passent */}
+				<Fly at={SIX - 6} x={540} y={430} from="top">
+					<DayChip text={`J + ${day}`} size={230} />
 				</Fly>
-				<Fly at={-60} x={790} y={780} from="right" move={[{at: TOUJOURS, s: 1.06, dur: 6}, {at: TOUJOURS + 8, s: 1, dur: 6}]}>
-					<Tile label="plaie 2" w={480} h={440}>
-						<Live render={(f) => <WoundTop width={400} kind="ragged" bruise={0.3 + 0.4 * fadeIn(f, AUTRE, 20)} necrosis={0.5 * fadeIn(f, TOUJOURS, 10)} />} />
-					</Tile>
-				</Fly>
-				<Fly at={-60} x={540} y={1250} from="bottom">
-					<div style={{transform: `scale(${day > 0 && day < 21 ? 1 + 0.04 * Math.sin(frame) : 1})`}}>
-						<DayChip text={day === 0 ? 'J 0' : `J + ${day}`} size={230} />
-					</div>
-				</Fly>
-				<Stamp at={DISPARU} x={290} y={940} text="GUÉRIE ✓" size={66} rot={-8} />
-				<Stamp at={TOUJOURS} x={790} y={940} text="TOUJOURS LÀ" size={56} rot={6} />
+				<Badge at={GUERI} x={KID.head.x + 110} y={KID.head.y - 120} text="✓" tone={LPI.sky} />
+				<Badge at={TOUJOURS} x={PAPI.head.x - 120} y={PAPI.head.y - 130} text="!" tone={LPI.pink} />
+				<Live
+					render={(f) =>
+						f >= LONGTEMPS ? (
+							<div style={{position: 'absolute', left: PAPI.wound.x - 70, top: PAPI.wound.y - 70, width: 140, height: 140, borderRadius: 70, border: `9px solid ${LPI.pink}`, transform: `scale(${popAt(f, LONGTEMPS) * (1 + 0.06 * Math.sin(f / 4))})`}} />
+						) : null
+					}
+				/>
 			</Camera>
 			<Flash at={TOUJOURS} max={0.25} />
-			<Sfx name="pop" at={PLAIES - 2} volume={0.07} />
-			{Array.from({length: 8}, (_, i) => (
-				<Sfx key={i} name="tick" at={TROIS - 2 + i * 4} volume={0.07} />
+			<Sfx name="impact" at={BLESSENT} volume={0.1} />
+			<Sfx name="pop" at={BLESSENT + 2} volume={0.07} />
+			{Array.from({length: 9}, (_, i) => (
+				<Sfx key={i} name="tick" at={SIX - 2 + i * 4} volume={0.07} />
 			))}
-			<Sfx name="ding" at={DISPARU} volume={0.08} />
-			<Sfx name="stamp" at={TOUJOURS} volume={0.12} />
+			<Sfx name="ding" at={GUERI} volume={0.08} />
+			<Sfx name="buzz" at={TOUJOURS} volume={0.06} dur={12} />
 		</AbsoluteFill>
 	);
 };

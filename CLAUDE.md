@@ -260,9 +260,14 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
 - **Série courte « Les plaies »** (7 vidéos de 33 à 37 s, n° 31 à 37, storyboard `docs/lpi/storyboard-plaies-courtes.md`) :
   demandé « plusieurs vidéos prenantes, courtes et virales », chacune ouverte par une **situation vécue** (genou râpé,
   couteau ou portière, clou, chat, deux plaies le même jour, quelques heures allongé, trou sous le pied), tout animé et
-  illustré. **Ne pas nommer les parties** (ni « partie 1 », ni carte de série) : chaque vidéo tient seule. Même gabarit
+  illustré. **Ne pas nommer les parties** (ni « partie 1 », ni carte de série) : chaque vidéo tient seule.
+  **Accroche = une scène animée avec des personnages, SANS texte au début** (demandé : le texte attire l'œil et on ne
+  regarde plus l'animation ; trop d'éléments = on perd le spectateur). Le garçon à vélo qui tombe « donne envie de rester » ;
+  les accroches à base de cartes / jauges / titres étaient trop « swipables » (couteau ou portière : 3/10, et une portière
+  ne fait pas de plaie en général → remplacée par la chute sur le trottoir). Même gabarit
   que `Objet-Plante` (accroche · 2 – 3 notions · chute, `progress={false}`, `{minTotal: 0}`). Briques
-  `src/brand/injury.tsx` : `Bike`, `Boy` (garçon de profil : `ride` sur le vélo, `fly` éjecté, `sit` assis qui se tient le genou écorché), `Stone`, `Knee` (genou qui se râpe, guérit), `Meter` (jauge), `DeepBits` (vaisseau,
+  `src/brand/injury.tsx` : `Walker` (adulte de profil : `walk` avec `phase`, `hop` sautille en tenant son pied, `fall` tombe en pivotant
+  autour des pieds ; `hair` man / old / kid, `chin` plaie au menton, `legWound`), `Bike`, `Boy` (garçon de profil : `ride` sur le vélo, `fly` éjecté, `sit` assis qui se tient le genou écorché), `Stone`, `Knee` (genou qui se râpe, guérit), `Meter` (jauge), `DeepBits` (vaisseau,
   nerf, tendon dans `SkinBlock`), `DepthRuler`, `DayChip`, `CarDoor`, `WoundTop` (plaie vue de dessus franche / contuse,
   sutures, écrasement, nécrose, `heal`), `NailBoard`, `Mosquito`, `VaxBook`, `Stetho`, `Cat`, `Dog`, `BittenHand`
   (traces de crocs, main qui gonfle), `WeeksBar` (frise des semaines, cadenas), `AirMattress`, `TurnArrows`, `FootTop`.

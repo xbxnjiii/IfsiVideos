@@ -1,6 +1,7 @@
 // « La plaie par piqûre » — série courte « Les plaies » (≈ 37 s, voix Laura, vrais bruitages).
-// Accroche « le clou » (situation vécue) : image 0 = « Juste un petit trou… rien de grave ? » + la planche et son clou ;
-// le pied descend et se plante au mot (impact, flash) ; loupe sur la plante du pied : un point minuscule. Puis la coupe
+// Accroche « le clou » (situation vécue, SANS texte au début : on regarde l'animation) : un monsieur marche, son pied
+// se pose sur le clou d'une planche au mot (impact, flash), il sautille en se tenant le pied ; la caméra s'approche,
+// loupe sur la plante du pied : un point minuscule, « ? ». Puis la coupe
 // de peau : le clou entre (entrée minuscule) et va très loin, il ressort et laisse les microbes au fond, là où l'air
 // (bulles) n'arrive pas ; les 3 causes (objet pointu, insecte, aiguille pendant un soin = iatrogène) ; le bon réflexe
 // (laver, désinfecter, vaccin antitétanique à jour, consulter si c'est profond).
@@ -9,76 +10,104 @@ import {AbsoluteFill, Easing, interpolate, useCurrentFrame} from 'remotion';
 import {Big, Blur, ease, fadeIn, Flash, Fly, Live, Note, PointTag, popAt, Posed, RowCard} from '../../brand/bold';
 import {AntisepticBottle} from '../../brand/sampling';
 import {Faucet} from '../../brand/hands';
-import {Mosquito, NailBoard, Stetho, VaxBook} from '../../brand/injury';
+import {Mosquito, NailBoard, Stetho, VaxBook, Walker} from '../../brand/injury';
 import {Burst, Camera} from '../../brand/motion3';
 import {Syringe} from '../../brand/precautions';
 import {Sfx} from '../../brand/Sfx';
-import {alpha, FONT, LPI} from '../../brand/theme';
+import {alpha, FONT, LPI, SHADOW} from '../../brand/theme';
 import {clamp} from '../../brand/ui';
-import {depthY, LowerLeg, SKIN, SkinBlock, WoundTool} from '../../brand/wound';
+import {depthY, SKIN, SkinBlock, WoundTool} from '../../brand/wound';
 import {at} from './timeline';
 
 const N = LPI.navy;
 const ON_BLUE = {color: LPI.paper, accent: N};
 
 /* ═══════════════════════════════ ACCROCHE : LE CLOU ═══════════════════════════════ */
-const TIP = {x: 540, y: 1108};
-const LEG = 0.84;
+/** Le marcheur (repère 300 × 600) affiché à WW px : sol à y GROUND. */
+const WW = 460;
+const WS = WW / 300;
+const GROUND = 1320;
+const WY = GROUND - (590 - 300) * WS;
+const HITX = 360;
+const NAILPOS = {x: HITX + (288 - 150) * WS, y: GROUND + 23};
+const HOPX = HITX + (288 - 196) * WS; // après le clou : le pied levé reste au-dessus du clou
+const SOLE = {x: HOPX + (190 - 150) * WS, y: WY + (516 - 300) * WS};
 
 export const Hook: React.FC = () => {
 	const frame = useCurrentFrame();
 	const CLOU = at('intro', 'clou.');
+	const JUSTE = at('intro', 'juste');
 	const PETIT = at('intro', 'petit');
 	const TROU = at('intro', 'trou…');
 	const GRAVE = at('intro', 'grave');
 	const HIT = CLOU + 2;
-	const legX = TIP.x - (372 - 250) * LEG;
-	const legY = TIP.y - (662 - 350) * LEG;
+	const zoom = interpolate(frame, [JUSTE, PETIT - 4], [1, 1.6], ease);
 	return (
 		<AbsoluteFill>
 			<AbsoluteFill style={{background: LPI.paper}} />
 			<Camera punches={[HIT + 1, TROU + 1, GRAVE + 1]} shakes={[HIT + 2]} strength={0.045}>
-				<Big from={-60} text={'Juste un *petit* trou…\nrien de *grave* ?'} size={100} y={140} />
-				<Fly at={-60} x={540} y={1200} from="bottom">
-					<NailBoard width={600} />
-				</Fly>
-				{/* le pied descend… et se plante */}
-				<Blur on={frame >= 4 && frame <= HIT + 16}>
-					<Posed
-						pose={(f) => {
-							const down = interpolate(f, [6, HIT], [0, 1], {...clamp, easing: Easing.in(Easing.quad)});
-							const jump = interpolate(f, [HIT + 1, HIT + 12], [0, 1], {...clamp, easing: Easing.out(Easing.cubic)});
-							return {x: legX - 60 * jump, y: legY - 1400 * (1 - down) - 120 * jump, rot: -8 * jump, s: LEG};
+				{/* la scène : il marche… et pose le pied sur le clou */}
+				<AbsoluteFill style={{transform: `scale(${zoom})`, transformOrigin: `${SOLE.x}px ${SOLE.y}px`}}>
+					<div style={{position: 'absolute', left: 0, right: 0, top: GROUND, height: 12, borderRadius: 6, background: alpha(N, 0.22)}} />
+					<div style={{position: 'absolute', left: NAILPOS.x - 150, top: NAILPOS.y - 64}}>
+						<NailBoard width={300} />
+					</div>
+					<Live
+						render={(f) => {
+							if (f < HIT) {
+								const ph = Math.PI / 2 + ((f - HIT) * 2 * Math.PI) / 30;
+								return (
+									<div style={{position: 'absolute', left: HITX - 7 * (HIT - f) - WW / 2, top: WY - WW}}>
+										<Walker width={WW} pose="walk" phase={ph} />
+									</div>
+								);
+							}
+							const hop = f < HIT + 30 ? Math.abs(Math.sin(((f - HIT) / 10) * Math.PI)) : 0;
+							return (
+								<div style={{position: 'absolute', left: HOPX - WW / 2, top: WY - WW - 50 * hop}}>
+									<Walker width={WW} pose="hop" cry={fadeIn(f, HIT + 1, 3)} pain={fadeIn(f, HIT + 2, 6)} />
+								</div>
+							);
 						}}
-					>
-						<Live render={(f) => <LowerLeg width={500} footSore={fadeIn(f, HIT, 3) * 0.5} />} />
-					</Posed>
-				</Blur>
-				<Burst at={HIT} x={TIP.x} y={TIP.y - 10} r={240} n={14} />
-				{/* la loupe : un point minuscule */}
+					/>
+				</AbsoluteFill>
+				<Burst at={HIT} x={NAILPOS.x} y={NAILPOS.y - 40} r={240} n={14} />
+				{/* la loupe : un point minuscule sous le pied */}
 				<Live
 					render={(f) =>
 						f >= PETIT - 4 ? (
-							<div style={{position: 'absolute', left: 800 - 150, top: 640 - 150, transform: `scale(${popAt(f, PETIT - 4) * (1 + 0.04 * Math.sin(f / 5))})`}}>
-								<div style={{position: 'relative', width: 300, height: 300, borderRadius: 150, overflow: 'hidden', background: LPI.paper, border: `12px solid ${N}`, boxSizing: 'border-box'}}>
-									<div style={{position: 'absolute', inset: 0, background: alpha(LPI.pink, 0.3)}} />
-									{Array.from({length: 6}, (_, i) => (
-										<div key={i} style={{position: 'absolute', left: 40 + ((i * 53) % 220), top: 50 + ((i * 71) % 200), width: 26, height: 6, borderRadius: 3, background: alpha(N, 0.15)}} />
+							<div style={{position: 'absolute', left: 830 - 180, top: 640 - 180, transform: `scale(${popAt(f, PETIT - 4) * (1 + 0.04 * Math.sin(f / 5))})`}}>
+								<div style={{position: 'relative', width: 360, height: 360, borderRadius: 180, overflow: 'hidden', background: LPI.paper, border: `14px solid ${N}`, boxSizing: 'border-box', boxShadow: SHADOW}}>
+									<div style={{position: 'absolute', inset: 0, background: alpha(LPI.pink, 0.32)}} />
+									{Array.from({length: 7}, (_, i) => (
+										<div key={i} style={{position: 'absolute', left: 40 + ((i * 53) % 250), top: 50 + ((i * 71) % 240), width: 30, height: 7, borderRadius: 3, background: alpha(N, 0.15)}} />
 									))}
-									<div style={{position: 'absolute', left: 138 - 9, top: 138 - 9, width: 18, height: 18, borderRadius: 9, background: LPI.pink, border: `4px solid ${N}`, transform: `scale(${popAt(f, TROU)})`}} />
+									<div style={{position: 'absolute', left: 166 - 10, top: 166 - 10, width: 20, height: 20, borderRadius: 10, background: LPI.pink, border: `4px solid ${N}`, transform: `scale(${popAt(f, TROU)})`}} />
 								</div>
-								<div style={{position: 'absolute', left: 250, top: 250, width: 130, height: 36, borderRadius: 18, background: LPI.blue, border: `6px solid ${N}`, transform: 'rotate(45deg)', transformOrigin: 'left center'}} />
+								<div style={{position: 'absolute', left: 300, top: 300, width: 150, height: 40, borderRadius: 20, background: LPI.blue, border: `6px solid ${N}`, transform: 'rotate(45deg)', transformOrigin: 'left center'}} />
+							</div>
+						) : null
+					}
+				/>
+				{/* « ? » : rien de grave ? */}
+				<Live
+					render={(f) =>
+						f >= GRAVE - 4 ? (
+							<div style={{position: 'absolute', left: 960, top: 380, transform: `translate(-50%, -50%) scale(${popAt(f, GRAVE - 4) * (1 + 0.06 * Math.sin(f / 4))})`}}>
+								<div style={{width: 170, height: 170, borderRadius: 85, background: LPI.pink, border: `7px solid ${N}`, boxShadow: SHADOW, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FONT.title, fontWeight: 900, fontSize: 120, color: N}}>?</div>
 							</div>
 						) : null
 					}
 				/>
 			</Camera>
 			<Flash at={HIT} max={0.35} />
-			<Sfx name="whoosh" at={HIT - 10} volume={0.08} />
+			<Sfx name="stairs" at={0} volume={0.25} dur={HIT} />
 			<Sfx name="impact" at={HIT} volume={0.16} />
 			<Sfx name="buzz" at={HIT + 1} volume={0.06} dur={12} />
+			<Sfx name="whoosh" at={JUSTE} volume={0.06} />
 			<Sfx name="pop" at={PETIT - 4} volume={0.08} />
 			<Sfx name="ding" at={TROU} volume={0.06} />
+			<Sfx name="pop" at={GRAVE - 4} volume={0.07} />
 		</AbsoluteFill>
 	);
 };
