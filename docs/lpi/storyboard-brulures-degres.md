@@ -3,7 +3,9 @@
 Demandé : « mets les différents stades des brûlures, une vidéo par degré », avec le contenu fourni par le propriétaire
 (couche touchée, aspect, évolution ; 2e degré superficiel et profond ; 3e degré : destruction totale, cartonnée, indolore).
 La « gravité » du 3e degré, laissée vide dans la demande, a été complétée : toujours une urgence (le 15), pas de
-cicatrisation spontanée, greffe le plus souvent. Chaque vidéo tient seule (pas de « partie »). Mises en situation
+cicatrisation spontanée, greffe le plus souvent.
+Conduite à tenir ajoutée ensuite à la demande (« tu as oublié les conduites à tenir : mettre sous l'eau… ») : une scène
+`geste` par vidéo (et `consulter` pour le 2e degré), cohérente avec la vidéo n° 40 (eau 15 min, on ne perce pas les cloques). Chaque vidéo tient seule (pas de « partie »). Mises en situation
 réalistes (règle du propriétaire) ; la coupe de peau reste aux couleurs de la marque (explication).
 
 ## 46 · `Brulure-1` — 1er degré (≈ 29 s)
@@ -14,6 +16,7 @@ réalistes (règle du propriétaire) ; la coupe de peau reste aux couleurs de la
 | couche | C'est une brûlure du premier degré. Seul l'épiderme est touché : la couche tout en surface de la peau. | « 1er degré » ; coupe de peau : seule la bande de l'épiderme se colore (hachures roses), étiquette épiderme en rose ; « seulement la surface » |
 | aspect | La peau est rouge, sèche et douloureuse… mais il n'y a aucune cloque. Exactement comme un coup de soleil. | Peau en gros plan (couleur réelle) : rougeur diffuse ; « rouge », « sèche », « douloureuse » ; pastille « cloque ✕ » ; « Comme un coup de soleil » |
 | evolution | Elle cicatrise toute seule, en trois à cinq jours, sans laisser aucune trace. | « Toute seule » : la rougeur s'efface, la peau pèle un peu ; J+1 → J+5 ; « sans trace ✓ » |
+| geste | Le bon geste : une douche fraîche, tout de suite, pendant quinze minutes. Puis une crème hydratante sur la peau, beaucoup d'eau à boire, et on reste à l'abri du soleil. Si ça fait mal : du paracétamol. | « Le bon geste » : sur la peau, une douche fraîche (pommeau, pluie), « douche fraîche », « 15' » ; puis cartes : crème hydratante, boire beaucoup d'eau, à l'abri du soleil (soleil barré), paracétamol si ça fait mal |
 | fin | Premier degré : c'est rouge, ça fait mal… mais il n'y a pas de cloque ! | « 1er degré » : rouge ✓ · ça fait mal ✓ · pas de cloque ✕, étincelles |
 
 ## 47 · `Brulure-2` — 2e degré superficiel / profond (≈ 50 s)
@@ -25,6 +28,8 @@ réalistes (règle du propriétaire) ; la coupe de peau reste aux couleurs de la
 | superficiel | La peau est rouge, elle suinte, elle fait très mal… avec des cloques remplies d'un liquide clair : ce sont des phlyctènes. Elle guérit en deux semaines environ, le plus souvent sans grosse cicatrice. | Peau : rouge, suintante (reflets, gouttelettes), traits de douleur, cloques tendues au liquide clair ; « Des phlyctènes » ; « 2 sem. » ; « sans grosse cicatrice ✓ » |
 | profond | Le deuxième degré profond, lui, touche le derme en profondeur. Sous des cloques souvent molles, la peau est pâle, presque blanche… et pourtant, elle fait peu mal : les nerfs sont abîmés. | Coupe : la bande descend jusqu'au bas du derme, les nerfs abîmés ; puis la peau : pâle, presque blanche, marbrures, cloques molles et plissées ; « peu de douleur ✕ », « nerfs abîmés ✕ » |
 | evolution | Elle cicatrise lentement, souvent plus de trois semaines, avec un risque de séquelles… et parfois, il faut greffer de la peau. | « Plus de 3 semaines » ; la plaie cicatrise à peine ; « séquelles ✕ », « greffe ✕ » |
+| geste | Le bon geste : de l'eau tempérée sur la brûlure, pendant quinze minutes. Retire tes bagues et ton bracelet, avant que ça gonfle. Et surtout, ne perce jamais les cloques : couvre-les avec une compresse stérile. | « Le bon geste » : le robinet coule sur la brûlure, « eau tempérée », « 15' » ; cartes : retire bagues et bracelet (avant que ça gonfle), ne perce jamais les cloques (barré), une compresse stérile |
+| consulter | Puis montre-la à un médecin. Et c'est une urgence si elle est plus grande que la moitié de ta main, ou si elle touche le visage, les mains ou les parties intimes. | « Chez le médecin » (stéthoscope) puis « Urgence si… » : plus grande qu'une demi-main, le visage, les mains, les parties intimes |
 | fin | Retiens bien : très douloureuse, c'est superficiel. Presque plus de douleur… c'est plus grave ! | « Retiens bien » : 1 très douloureuse → superficiel ; 2 presque plus de douleur → plus grave ! |
 
 ## 48 · `Brulure-3` — 3e degré (≈ 41 s)
@@ -36,6 +41,7 @@ réalistes (règle du propriétaire) ; la coupe de peau reste aux couleurs de la
 | aspect | La plaie est cartonnée, sèche, de couleur blanche, brune ou noire, comme carbonisée… et sans aucune cloque. | Peau : plaie cartonnée, blanche, brune et noire, craquelée, halo rouge ; « Une peau cartonnée » ; « sèche », « blanche », « brune », « noire » ; « aucune cloque ✕ » |
 | douleur | Et le piège : elle ne fait pas mal ! Les nerfs sont détruits. La douleur, on ne la sent que tout autour. | « Elle ne fait pas mal ! », tampon LE PIÈGE ; « nerfs détruits ✕ » ; traits de douleur seulement autour ; « douleur autour ✓ » |
 | gravite | C'est toujours une urgence : appelle le quinze. Elle ne peut pas cicatriser toute seule : le plus souvent, il faut lui greffer de la peau. | « Toujours une urgence » ; téléphone qui compose le 15 ; « Une greffe de peau » ; « pas de cicatrisation seule ✕ », « greffe de peau ✓ » |
+| geste | En attendant les secours : arrose la brûlure à l'eau tempérée, en suivant les conseils du quinze. Retire les vêtements qui ne collent pas, mais jamais ceux qui collent à la peau. Et couvre la personne : elle ne doit pas avoir froid. | « En attendant les secours » : l'eau tempérée coule sur la brûlure, téléphone 15 (« selon les conseils du 15 ») ; cartes : retire les vêtements qui ne collent pas, jamais ceux qui collent (barré), couvre la personne (couverture de survie) |
 | fin | Et pour rallumer un barbecue ? Jamais d'alcool ! | Le barbecue flouté ; « Pour rallumer ? » puis « Jamais d'alcool ! », tampon ✕ ALCOOL |
 
 Briques : `src/brand/burnstage.tsx` (`BurnPatch` `deg` 1 / 2 / 2.5 / 3, `DepthBand`, `CutView` + `CUT_Y`, `SkinClose` +

@@ -367,7 +367,13 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   douloureux (nerfs abîmés), > 3 semaines, séquelles, greffe ; chute « très douloureuse = superficiel, presque plus de
   douleur = plus grave »), `Brulure-3` (barbecue rallumé à l'alcool ; toute la peau détruite, parfois graisse / muscles
   / os ; cartonnée, sèche, blanche / brune / noire, sans cloque ; indolore, douleur autour ; urgence (15), greffe —
-  « gravité » complétée car laissée vide ; chute « jamais d'alcool »). Brique `src/brand/burnstage.tsx` (`BurnPatch`,
+  « gravité » complétée car laissée vide ; chute « jamais d'alcool »). **Conduites à tenir ajoutées à la demande**
+  (scène `geste` dans chaque vidéo, + `consulter` au 2e degré) : 1er = douche fraîche 15 min, crème hydratante, boire,
+  à l'abri du soleil, paracétamol ; 2e = eau tempérée 15 min, retirer bagues / bracelet, ne jamais percer les cloques,
+  compresse stérile, médecin (urgence si > moitié de la main, visage, mains, parties intimes) ; 3e = en attendant les
+  secours : arroser à l'eau tempérée selon les conseils du 15, retirer les vêtements qui ne collent pas (jamais ceux qui
+  collent), couvrir la personne. `TapWater` (robinet / `shower`), pictos `CreamIcon`, `GlassIcon`, `SunIcon`, `RingIcon`,
+  `BlisterIcon`, `GauzeIcon`, `PalmIcon`, `ShirtIcon`, `BlanketIcon`, `NoMark`. Brique `src/brand/burnstage.tsx` (`BurnPatch`,
   `CutView`, `BeachTop`, `PastaPour`, `Barbecue`). La vidéo `Brulure` (n° 40, les bons gestes) reste à part.
   Storyboard `docs/lpi/storyboard-brulures-degres.md`.
 

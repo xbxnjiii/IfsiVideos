@@ -4,8 +4,8 @@
 // 15, greffe), chute (jamais d'alcool).
 import React from 'react';
 import {AbsoluteFill, Easing, interpolate, useCurrentFrame} from 'remotion';
-import {Big, fadeIn, Flash, PointTag, popAt} from '../../brand/bold';
-import {Barbecue, BurnPatch, CUT_Y, CutView, SkinClose, skinClosePt} from '../../brand/burnstage';
+import {Big, fadeIn, Flash, PointTag, popAt, RowCard} from '../../brand/bold';
+import {Barbecue, BlanketIcon, BurnPatch, CUT_Y, CutView, NoMark, ShirtIcon, SkinClose, skinClosePt, TapWater} from '../../brand/burnstage';
 import {Phone} from '../../brand/devices';
 import {Stamp} from '../../brand/kit';
 import {Sfx} from '../../brand/Sfx';
@@ -181,6 +181,63 @@ export const Gravite: React.FC = () => {
 			<Sfx name="dtmf-5" at={APPELLE + 8} volume={0.15} />
 			<Sfx name="ring" at={QUINZE + 4} volume={0.12} />
 			<Sfx name="pop" at={GREFFER - 4} volume={0.07} />
+		</AbsoluteFill>
+	);
+};
+
+/* ═══════════════════════════════ EN ATTENDANT LES SECOURS : ARROSER, VÊTEMENTS, COUVRIR ═══════════════════════════════ */
+export const Geste: React.FC = () => {
+	const frame = useCurrentFrame();
+	const SECOURS = at('geste', 'secours :');
+	const ARROSE = at('geste', 'arrose');
+	const TEMPEREE = at('geste', 'tempérée,');
+	const CONSEILS = at('geste', 'conseils');
+	const RETIRE = at('geste', 'retire');
+	const JAMAIS = at('geste', 'jamais');
+	const COUVRE = at('geste', 'couvre');
+	const FROID = at('geste', 'froid.');
+	const swap = lin(frame, RETIRE - 10, RETIRE + 4);
+	const c = skinClosePt(500, 500);
+	return (
+		<AbsoluteFill>
+			{swap < 1 ? (
+				<AbsoluteFill style={{opacity: 1 - swap}}>
+					<SkinClose>
+						<BurnPatch deg={3} k={1} />
+					</SkinClose>
+					<TapWater on={fadeIn(frame, ARROSE - 6, 8)} x={c.x} y={c.y} />
+					<PointTag at={TEMPEREE - 4} x={300} y={1500} px={c.x - 60} py={c.y + 80} size={46} tone={LPI.sky}>
+						eau tempérée
+					</PointTag>
+					{frame >= CONSEILS - 8 ? (
+						<div style={{position: 'absolute', left: 760 - 40, top: 1250, transform: `scale(${popAt(frame, CONSEILS - 8)})`}}>
+							<Phone digits="15" size={200} />
+						</div>
+					) : null}
+				</AbsoluteFill>
+			) : null}
+			{swap > 0 ? (
+				<AbsoluteFill style={{opacity: swap}}>
+					<Bg />
+				</AbsoluteFill>
+			) : null}
+			<Big from={SECOURS - 12} text={'En attendant les *secours*'} size={88} y={180} center />
+			<RowCard at={RETIRE - 4} y={460} h={210} art={180} badge={1} title="Retire les vêtements" sub="qui ne collent pas" subAt={RETIRE + 20} size={48}>
+				<ShirtIcon size={140} />
+			</RowCard>
+			<RowCard at={JAMAIS - 6} y={690} h={210} art={180} badge={2} title="Jamais ceux qui collent" from="left" size={48}>
+				<div style={{position: 'relative'}}>
+					<ShirtIcon size={140} />
+					<NoMark at={JAMAIS} />
+				</div>
+			</RowCard>
+			<RowCard at={COUVRE - 6} y={920} h={210} art={180} badge={3} title="Couvre la personne" sub="elle ne doit pas avoir froid" subAt={FROID - 14} size={48}>
+				<BlanketIcon size={140} />
+			</RowCard>
+			<Sfx name="tap" at={ARROSE - 6} volume={0.12} dur={RETIRE - ARROSE} />
+			{[RETIRE - 4, JAMAIS - 6, COUVRE - 6].map((t) => (
+				<Sfx key={t} name="pop" at={t} volume={0.08} />
+			))}
 		</AbsoluteFill>
 	);
 };

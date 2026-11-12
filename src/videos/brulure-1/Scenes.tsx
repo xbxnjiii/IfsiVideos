@@ -3,9 +3,12 @@
 // douloureuse, sans cloque, comme un coup de soleil), l'évolution (3 à 5 jours, sans trace), chute.
 import React from 'react';
 import {AbsoluteFill, Easing, interpolate, useCurrentFrame} from 'remotion';
-import {Big, fadeIn, Note, PointTag, popAt} from '../../brand/bold';
+import {Big, fadeIn, Note, PointTag, popAt, RowCard} from '../../brand/bold';
 import {BeachTop, BurnPatch, CUT_Y, CutView, SkinClose, skinClosePt} from '../../brand/burnstage';
 import {DayChip} from '../../brand/injury';
+import {PillIcon} from '../../brand/icons';
+import {CreamIcon, GlassIcon, NoMark, SunIcon, TapWater} from '../../brand/burnstage';
+
 import {Burst} from '../../brand/motion3';
 import {Sfx} from '../../brand/Sfx';
 import {alpha, FONT, LPI, SHADOW} from '../../brand/theme';
@@ -147,6 +150,65 @@ export const Evolution: React.FC = () => {
 			</Chip>
 			<Sfx name="tick" at={TROIS} volume={0.08} />
 			<Sfx name="ding" at={TRACE} volume={0.08} />
+		</AbsoluteFill>
+	);
+};
+
+/* ═══════════════════════════════ LE BON GESTE : DOUCHE FRAÎCHE, CRÈME, BOIRE, SOLEIL, PARACÉTAMOL ═══════════════════════════════ */
+export const Geste: React.FC = () => {
+	const frame = useCurrentFrame();
+	const DOUCHE = at('geste', 'douche');
+	const QUINZE = at('geste', 'quinze');
+	const PUIS = at('geste', 'puis');
+	const CREME = at('geste', 'crème');
+	const EAU = at('geste', "d'eau");
+	const SOLEIL = at('geste', 'soleil.');
+	const PARA = at('geste', 'paracétamol.');
+	const swap = lin(frame, PUIS - 10, PUIS + 4);
+	const c = skinClosePt(500, 500);
+	return (
+		<AbsoluteFill>
+			{swap < 1 ? (
+				<AbsoluteFill style={{opacity: 1 - swap}}>
+					<SkinClose>
+						<BurnPatch deg={1} k={1} />
+					</SkinClose>
+					<TapWater shower on={fadeIn(frame, DOUCHE - 6, 8)} x={c.x} y={c.y} />
+					<PointTag at={DOUCHE + 4} x={300} y={1500} px={c.x - 60} py={c.y + 80} size={46} tone={LPI.sky}>
+						douche fraîche
+					</PointTag>
+					{frame >= QUINZE - 6 ? (
+						<div style={{position: 'absolute', left: 760, top: 1300, transform: `scale(${popAt(frame, QUINZE - 6)})`}}>
+							<DayChip text="15'" size={200} />
+						</div>
+					) : null}
+				</AbsoluteFill>
+			) : null}
+			{swap > 0 ? (
+				<AbsoluteFill style={{opacity: swap}}>
+					<Bg />
+				</AbsoluteFill>
+			) : null}
+			<Big from={0} text={'Le bon *geste*'} size={110} y={180} center />
+			<RowCard at={CREME - 4} y={440} h={200} art={180} badge={1} title="Une crème hydratante" size={50}>
+				<CreamIcon size={140} />
+			</RowCard>
+			<RowCard at={EAU - 4} y={660} h={200} art={180} badge={2} title="Boire beaucoup d'eau" from="left" size={50}>
+				<GlassIcon size={140} />
+			</RowCard>
+			<RowCard at={SOLEIL - 10} y={880} h={200} art={180} badge={3} title="À l'abri du soleil" size={50}>
+				<div style={{position: 'relative'}}>
+					<SunIcon size={140} />
+					<NoMark at={SOLEIL - 2} />
+				</div>
+			</RowCard>
+			<RowCard at={PARA - 6} y={1100} h={200} art={180} badge={4} title="Du paracétamol" sub="si ça fait mal" subAt={PARA + 4} from="left" size={50}>
+				<PillIcon size={130} />
+			</RowCard>
+			<Sfx name="tap" at={DOUCHE} volume={0.12} dur={QUINZE + 30 - DOUCHE} />
+			{[CREME - 4, EAU - 4, SOLEIL - 10, PARA - 6].map((t) => (
+				<Sfx key={t} name="pop" at={t} volume={0.08} />
+			))}
 		</AbsoluteFill>
 	);
 };

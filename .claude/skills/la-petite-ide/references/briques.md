@@ -178,6 +178,17 @@ Série « les degrés de brûlure » (1er, 2e superficiel / profond, 3e) : aspec
 - `skinClosePt` — Point du repère de `SkinClose` → écran.
 - `CUT_Y` — Repère de la coupe : y des couches (voir `SKIN` de wound.tsx).
 - `CutView` — Coupe de peau (couches étiquetées) avec la zone touchée par la brûlure : bande hachurée de `y0` à `y1` (`CUT_Y`), rose (touchée) ou bleu nuit (`destroyed`).
+- `TapWater` — De l'eau qui coule sur la brûlure (plein écran 1080 × 1920, par-dessus `SkinClose`) : bec de robinet en inox en haut à droite et filet d'eau, ou pommeau de douche (`shower`) et pluie de gouttes ; éclaboussures et reflets frais au point…
+- `CreamIcon` — Tube de crème hydratante.
+- `GlassIcon` — Verre d'eau.
+- `SunIcon` — Soleil (à éviter : on le barre dans la scène).
+- `RingIcon` — Bague + bracelet.
+- `BlisterIcon` — Cloque + épingle (on ne la perce pas : barrée dans la scène).
+- `GauzeIcon` — Compresse stérile.
+- `PalmIcon` — Moitié de la paume de la main (la taille repère).
+- `ShirtIcon` — T-shirt (vêtements).
+- `BlanketIcon` — Couverture de survie (on couvre la personne).
+- `NoMark` — Grande croix rose qui barre un picto (centrée sur son parent), qui claque à `at`.
 
 ## `cardio.tsx`
 Briques « cœur » réutilisables : calendrier des battements (rythme qui change sans à-coup), impulsion du dernier battement, tracé ECG qui défile (chaque battement = un QRS).

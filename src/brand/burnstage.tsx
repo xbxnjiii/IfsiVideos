@@ -512,3 +512,155 @@ export const CutView: React.FC<{box?: {x: number; y: number; w: number}; y0: num
 		</div>
 	</>
 );
+
+/* ─────────────────────────────── Conduite à tenir : l'eau, les pictos ─────────────────────────────── */
+
+/**
+ * De l'eau qui coule sur la brûlure (plein écran 1080 × 1920, par-dessus `SkinClose`) : bec de robinet en inox en haut
+ * à droite et filet d'eau, ou pommeau de douche (`shower`) et pluie de gouttes ; éclaboussures et reflets frais au point
+ * d'impact (`x`, `y`). `on` 0 → 1.
+ */
+export const TapWater: React.FC<{on: number; shower?: boolean; x?: number; y?: number}> = ({on, shower = false, x = 540, y = 1000}) => {
+	const frame = useCurrentFrame();
+	const o = cl(on);
+	if (o <= 0) return null;
+	return (
+		<svg width={1080} height={1920} style={{position: 'absolute', inset: 0, opacity: o}}>
+			{shower ? (
+				<g>
+					<path d="M1200 290 L760 390" stroke={R.steelDk} strokeWidth={40} strokeLinecap="round" />
+					<path d="M1200 290 L760 390" stroke={R.steel} strokeWidth={28} strokeLinecap="round" />
+					<ellipse cx={680} cy={420} rx={150} ry={60} transform="rotate(-14 680 420)" fill={R.steel} stroke={R.steelDk} strokeWidth={6} />
+					{Array.from({length: 22}, (_, i) => {
+						const t = ((frame / 12 + i / 22) % 1);
+						const sx = 560 + (i % 11) * 24;
+						const ex = x - 300 + (i % 11) * 60;
+						return <line key={i} x1={sx + (ex - sx) * t} y1={460 + (y - 460) * t} x2={sx + (ex - sx) * (t + 0.06)} y2={460 + (y - 460) * (t + 0.06)} stroke={alpha('#9CC8EE', 0.85)} strokeWidth={6} strokeLinecap="round" />;
+					})}
+				</g>
+			) : (
+				<g>
+					<path d="M1140 350 L860 350 C800 350 780 390 780 440 L780 490" fill="none" stroke={R.steelDk} strokeWidth={64} strokeLinecap="round" />
+					<path d="M1140 350 L860 350 C800 350 780 390 780 440 L780 490" fill="none" stroke={R.steel} strokeWidth={50} strokeLinecap="round" />
+					<path d="M1140 330 L860 330" stroke={alpha('#FFFFFF', 0.7)} strokeWidth={10} strokeLinecap="round" />
+					<path d={`M780 500 C780 650 ${x + 60} ${y - 380} ${x} ${y - 40}`} fill="none" stroke={alpha('#CFE6F7', 0.85)} strokeWidth={46} strokeLinecap="round" />
+					<path d={`M770 530 C770 650 ${x + 50} ${y - 380} ${x - 10} ${y - 60}`} fill="none" stroke={alpha('#FFFFFF', 0.7)} strokeWidth={8} strokeLinecap="round" strokeDasharray="30 40" strokeDashoffset={-frame * 12} />
+				</g>
+			)}
+			{/* nappe d'eau + éclaboussures au point d'impact */}
+			<ellipse cx={x} cy={y} rx={300} ry={220} fill={alpha('#BFE0F7', 0.35)} />
+			{Array.from({length: 8}, (_, i) => {
+				const a = (i / 8) * Math.PI * 2;
+				const t = ((frame / 14 + i / 8) % 1);
+				return <circle key={i} cx={x + Math.cos(a) * (40 + t * 200)} cy={y + Math.sin(a) * (30 + t * 150) - Math.sin(t * Math.PI) * 40} r={9 * (1 - t)} fill={alpha('#9CC8EE', 0.9)} />;
+			})}
+			{[0, 1, 2].map((i) => {
+				const t = ((frame / 30 + i / 3) % 1);
+				return <ellipse key={`r${i}`} cx={x} cy={y} rx={60 + t * 260} ry={44 + t * 190} fill="none" stroke={alpha('#FFFFFF', 0.6 * (1 - t))} strokeWidth={5} />;
+			})}
+		</svg>
+	);
+};
+
+type IP = {size?: number};
+const Ico: React.FC<IP & {children: React.ReactNode}> = ({size = 130, children}) => (
+	<svg width={size} height={size} viewBox="0 0 100 100" style={{overflow: 'visible'}}>
+		{children}
+	</svg>
+);
+/** Tube de crème hydratante. */
+export const CreamIcon: React.FC<IP> = (p) => (
+	<Ico {...p}>
+		<path d="M24 20 L76 20 L68 82 C67 88 62 90 56 90 L44 90 C38 90 33 88 32 82 Z" fill={LPI.paper} stroke={N} strokeWidth={5} strokeLinejoin="round" />
+		<rect x={38} y={6} width={24} height={16} rx={4} fill={LPI.blue} stroke={N} strokeWidth={4} />
+		<path d="M36 46 h28 M38 58 h24" stroke={LPI.sky} strokeWidth={7} strokeLinecap="round" />
+		<path d="M50 6 q-6 -8 0 -12 q6 4 0 12" fill={LPI.paper} stroke={N} strokeWidth={3} />
+	</Ico>
+);
+/** Verre d'eau. */
+export const GlassIcon: React.FC<IP> = (p) => (
+	<Ico {...p}>
+		<path d="M24 12 L76 12 L68 88 L32 88 Z" fill={alpha(LPI.sky, 0.4)} stroke={N} strokeWidth={5} strokeLinejoin="round" />
+		<path d="M28 40 L72 40 L68 84 L32 84 Z" fill={LPI.sky} />
+		<path d="M36 50 L38 76" stroke={LPI.paper} strokeWidth={5} strokeLinecap="round" />
+	</Ico>
+);
+/** Soleil (à éviter : on le barre dans la scène). */
+export const SunIcon: React.FC<IP> = (p) => (
+	<Ico {...p}>
+		<circle cx={50} cy={50} r={20} fill={LPI.pink} stroke={N} strokeWidth={5} />
+		{Array.from({length: 8}, (_, i) => {
+			const a = (i / 8) * Math.PI * 2;
+			return <line key={i} x1={50 + Math.cos(a) * 30} y1={50 + Math.sin(a) * 30} x2={50 + Math.cos(a) * 42} y2={50 + Math.sin(a) * 42} stroke={N} strokeWidth={6} strokeLinecap="round" />;
+		})}
+	</Ico>
+);
+/** Bague + bracelet. */
+export const RingIcon: React.FC<IP> = (p) => (
+	<Ico {...p}>
+		<ellipse cx={38} cy={60} rx={26} ry={18} fill="none" stroke={N} strokeWidth={9} />
+		<ellipse cx={38} cy={60} rx={26} ry={18} fill="none" stroke={LPI.sky} strokeWidth={4} />
+		<circle cx={72} cy={30} r={14} fill="none" stroke={N} strokeWidth={7} />
+		<path d="M66 14 l6 -8 l6 8 z" fill={LPI.pink} stroke={N} strokeWidth={3} />
+	</Ico>
+);
+/** Cloque + épingle (on ne la perce pas : barrée dans la scène). */
+export const BlisterIcon: React.FC<IP> = (p) => (
+	<Ico {...p}>
+		<rect x={6} y={60} width={88} height={24} rx={10} fill={R.skin} stroke={N} strokeWidth={4} />
+		<ellipse cx={46} cy={60} rx={26} ry={18} fill={R.fluid} stroke={R.fluidLine} strokeWidth={4} />
+		<ellipse cx={38} cy={54} rx={8} ry={4} fill="#FFFFFF" />
+		<line x1={92} y1={8} x2={60} y2={46} stroke={N} strokeWidth={5} strokeLinecap="round" />
+		<circle cx={92} cy={8} r={6} fill={LPI.pink} stroke={N} strokeWidth={3} />
+	</Ico>
+);
+/** Compresse stérile. */
+export const GauzeIcon: React.FC<IP> = (p) => (
+	<Ico {...p}>
+		<rect x={16} y={16} width={68} height={68} rx={6} fill={LPI.paper} stroke={N} strokeWidth={5} />
+		{[30, 44, 58, 72].map((v) => (
+			<React.Fragment key={v}>
+				<line x1={v - 8} y1={18} x2={v - 8} y2={82} stroke={alpha(LPI.sky, 0.9)} strokeWidth={3} />
+				<line x1={18} y1={v - 8} x2={82} y2={v - 8} stroke={alpha(LPI.sky, 0.9)} strokeWidth={3} />
+			</React.Fragment>
+		))}
+	</Ico>
+);
+/** Moitié de la paume de la main (la taille repère). */
+export const PalmIcon: React.FC<IP> = (p) => (
+	<Ico {...p}>
+		<path d="M30 92 L30 50 L22 30 C20 24 28 20 32 26 L38 40 L38 14 C38 8 46 8 46 14 L46 38 L50 10 C50 4 58 4 58 10 L56 38 L62 14 C62 8 70 8 70 14 L66 42 L74 30 C78 24 86 28 82 36 L70 64 L70 92 Z" fill={LPI.paper} stroke={N} strokeWidth={4} strokeLinejoin="round" />
+		<path d="M30 92 L30 50 L50 50 L50 92 Z" fill={alpha(LPI.pink, 0.7)} />
+	</Ico>
+);
+/** T-shirt (vêtements). */
+export const ShirtIcon: React.FC<IP> = (p) => (
+	<Ico {...p}>
+		<path d="M34 10 L14 22 L22 40 L30 36 L30 90 L70 90 L70 36 L78 40 L86 22 L66 10 C62 18 38 18 34 10 Z" fill={LPI.sky} stroke={N} strokeWidth={5} strokeLinejoin="round" />
+	</Ico>
+);
+/** Couverture de survie (on couvre la personne). */
+export const BlanketIcon: React.FC<IP> = (p) => (
+	<Ico {...p}>
+		<path d="M10 30 L90 22 L86 86 L14 80 Z" fill="#D9B44A" stroke={N} strokeWidth={5} strokeLinejoin="round" />
+		<path d="M10 30 L90 22 L70 50 L28 52 Z" fill="#E9EEF2" stroke={N} strokeWidth={4} strokeLinejoin="round" />
+		<path d="M24 64 L76 58" stroke={alpha('#FFFFFF', 0.6)} strokeWidth={5} />
+	</Ico>
+);
+
+/** Grande croix rose qui barre un picto (centrée sur son parent), qui claque à `at`. */
+export const NoMark: React.FC<{at: number; size?: number}> = ({at: t0, size = 150}) => {
+	const frame = useCurrentFrame();
+	if (frame < t0) return null;
+	const k = cl((frame - t0) / 6);
+	return (
+		<svg width={size} height={size} viewBox="0 0 100 100" style={{position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%, -50%)', overflow: 'visible'}}>
+			{[
+				[18, 18, 82, 82],
+				[82, 18, 18, 82],
+			].map(([a, b, c, d], i) => (
+				<line key={i} x1={a} y1={b} x2={a + (c - a) * k} y2={b + (d - b) * k} stroke={LPI.pink} strokeWidth={13} strokeLinecap="round" />
+			))}
+		</svg>
+	);
+};

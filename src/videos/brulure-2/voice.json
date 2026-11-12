@@ -1,6 +1,6 @@
 {
  "voice": "voix.wav (tts_voix.py)",
- "duration": 48.614,
+ "duration": 68.626,
  "sections": [
   {
    "id": "intro",
@@ -28,9 +28,19 @@
    "end": 42.21
   },
   {
+   "id": "geste",
+   "start": 43.194,
+   "end": 54.519
+  },
+  {
+   "id": "consulter",
+   "start": 55.502,
+   "end": 62.218
+  },
+  {
    "id": "fin",
-   "start": 43.142,
-   "end": 48.288
+   "start": 63.154,
+   "end": 68.3
   }
  ],
  "words": [
@@ -675,69 +685,399 @@
    "end": 42.21
   },
   {
-   "text": "Retiens",
-   "start": 43.142,
-   "end": 43.503
+   "text": "Le",
+   "start": 43.194,
+   "end": 43.319
   },
   {
-   "text": "bien :",
-   "start": 43.503,
-   "end": 43.791
+   "text": "bon",
+   "start": 43.319,
+   "end": 43.444
   },
   {
-   "text": "très",
-   "start": 44.044,
-   "end": 44.224
-  },
-  {
-   "text": "douloureuse,",
-   "start": 44.224,
-   "end": 44.801
-  },
-  {
-   "text": "c'est",
-   "start": 44.993,
-   "end": 45.101
-  },
-  {
-   "text": "superficiel.",
-   "start": 45.101,
-   "end": 45.955
-  },
-  {
-   "text": "Presque",
-   "start": 46.281,
-   "end": 46.654
-  },
-  {
-   "text": "plus",
-   "start": 46.654,
-   "end": 46.87
+   "text": "geste :",
+   "start": 43.444,
+   "end": 43.969
   },
   {
    "text": "de",
-   "start": 46.87,
-   "end": 46.978
+   "start": 44.344,
+   "end": 44.431
   },
   {
-   "text": "douleur…",
-   "start": 46.978,
-   "end": 47.387
+   "text": "l'eau",
+   "start": 44.431,
+   "end": 44.544
+  },
+  {
+   "text": "tempérée",
+   "start": 44.544,
+   "end": 44.956
+  },
+  {
+   "text": "sur",
+   "start": 44.956,
+   "end": 45.094
+  },
+  {
+   "text": "la",
+   "start": 45.094,
+   "end": 45.181
+  },
+  {
+   "text": "brûlure,",
+   "start": 45.181,
+   "end": 45.694
+  },
+  {
+   "text": "pendant",
+   "start": 45.969,
+   "end": 46.219
+  },
+  {
+   "text": "quinze",
+   "start": 46.219,
+   "end": 46.469
+  },
+  {
+   "text": "minutes.",
+   "start": 46.469,
+   "end": 47.007
+  },
+  {
+   "text": "Retire",
+   "start": 47.344,
+   "end": 47.744
+  },
+  {
+   "text": "tes",
+   "start": 47.744,
+   "end": 47.869
+  },
+  {
+   "text": "bagues",
+   "start": 47.869,
+   "end": 48.119
+  },
+  {
+   "text": "et",
+   "start": 48.119,
+   "end": 48.157
+  },
+  {
+   "text": "ton",
+   "start": 48.157,
+   "end": 48.282
+  },
+  {
+   "text": "bracelet,",
+   "start": 48.282,
+   "end": 48.782
+  },
+  {
+   "text": "avant",
+   "start": 49.094,
+   "end": 49.294
+  },
+  {
+   "text": "que",
+   "start": 49.294,
+   "end": 49.382
+  },
+  {
+   "text": "ça",
+   "start": 49.382,
+   "end": 49.519
+  },
+  {
+   "text": "gonfle.",
+   "start": 49.519,
+   "end": 50.019
+  },
+  {
+   "text": "Et",
+   "start": 50.357,
+   "end": 50.494
+  },
+  {
+   "text": "surtout,",
+   "start": 50.494,
+   "end": 50.982
+  },
+  {
+   "text": "ne",
+   "start": 51.319,
+   "end": 51.394
+  },
+  {
+   "text": "perce",
+   "start": 51.394,
+   "end": 51.707
+  },
+  {
+   "text": "jamais",
+   "start": 51.707,
+   "end": 51.994
+  },
+  {
+   "text": "les",
+   "start": 51.994,
+   "end": 52.082
+  },
+  {
+   "text": "cloques :",
+   "start": 52.082,
+   "end": 52.519
+  },
+  {
+   "text": "couvre-les",
+   "start": 52.794,
+   "end": 53.194
+  },
+  {
+   "text": "avec",
+   "start": 53.194,
+   "end": 53.419
+  },
+  {
+   "text": "une",
+   "start": 53.419,
+   "end": 53.494
+  },
+  {
+   "text": "compresse",
+   "start": 53.494,
+   "end": 53.919
+  },
+  {
+   "text": "stérile.",
+   "start": 53.919,
+   "end": 54.519
+  },
+  {
+   "text": "Puis",
+   "start": 55.502,
+   "end": 55.649
+  },
+  {
+   "text": "montre-la",
+   "start": 55.649,
+   "end": 56.102
+  },
+  {
+   "text": "à",
+   "start": 56.102,
+   "end": 56.188
+  },
+  {
+   "text": "un",
+   "start": 56.188,
+   "end": 56.225
+  },
+  {
+   "text": "médecin.",
+   "start": 56.225,
+   "end": 56.715
+  },
+  {
+   "text": "Et",
+   "start": 57.046,
+   "end": 57.181
   },
   {
    "text": "c'est",
-   "start": 47.567,
-   "end": 47.675
+   "start": 57.181,
+   "end": 57.279
+  },
+  {
+   "text": "une",
+   "start": 57.279,
+   "end": 57.439
+  },
+  {
+   "text": "urgence",
+   "start": 57.439,
+   "end": 57.818
+  },
+  {
+   "text": "si",
+   "start": 57.818,
+   "end": 57.953
+  },
+  {
+   "text": "elle",
+   "start": 57.953,
+   "end": 58.014
+  },
+  {
+   "text": "est",
+   "start": 58.014,
+   "end": 58.051
   },
   {
    "text": "plus",
-   "start": 47.675,
-   "end": 47.831
+   "start": 58.051,
+   "end": 58.198
+  },
+  {
+   "text": "grande",
+   "start": 58.198,
+   "end": 58.48
+  },
+  {
+   "text": "que",
+   "start": 58.48,
+   "end": 58.578
+  },
+  {
+   "text": "la",
+   "start": 58.578,
+   "end": 58.664
+  },
+  {
+   "text": "moitié",
+   "start": 58.664,
+   "end": 58.921
+  },
+  {
+   "text": "de",
+   "start": 58.921,
+   "end": 59.007
+  },
+  {
+   "text": "ta",
+   "start": 59.007,
+   "end": 59.142
+  },
+  {
+   "text": "main,",
+   "start": 59.142,
+   "end": 59.399
+  },
+  {
+   "text": "ou",
+   "start": 59.73,
+   "end": 59.779
+  },
+  {
+   "text": "si",
+   "start": 59.779,
+   "end": 59.902
+  },
+  {
+   "text": "elle",
+   "start": 59.902,
+   "end": 59.963
+  },
+  {
+   "text": "touche",
+   "start": 59.963,
+   "end": 60.159
+  },
+  {
+   "text": "le",
+   "start": 60.159,
+   "end": 60.245
+  },
+  {
+   "text": "visage,",
+   "start": 60.245,
+   "end": 60.747
+  },
+  {
+   "text": "les",
+   "start": 60.919,
+   "end": 61.005
+  },
+  {
+   "text": "mains",
+   "start": 61.005,
+   "end": 61.238
+  },
+  {
+   "text": "ou",
+   "start": 61.238,
+   "end": 61.287
+  },
+  {
+   "text": "les",
+   "start": 61.287,
+   "end": 61.372
+  },
+  {
+   "text": "parties",
+   "start": 61.372,
+   "end": 61.642
+  },
+  {
+   "text": "intimes.",
+   "start": 61.642,
+   "end": 62.218
+  },
+  {
+   "text": "Retiens",
+   "start": 63.154,
+   "end": 63.515
+  },
+  {
+   "text": "bien :",
+   "start": 63.515,
+   "end": 63.803
+  },
+  {
+   "text": "très",
+   "start": 64.055,
+   "end": 64.236
+  },
+  {
+   "text": "douloureuse,",
+   "start": 64.236,
+   "end": 64.813
+  },
+  {
+   "text": "c'est",
+   "start": 65.005,
+   "end": 65.113
+  },
+  {
+   "text": "superficiel.",
+   "start": 65.113,
+   "end": 65.967
+  },
+  {
+   "text": "Presque",
+   "start": 66.293,
+   "end": 66.666
+  },
+  {
+   "text": "plus",
+   "start": 66.666,
+   "end": 66.882
+  },
+  {
+   "text": "de",
+   "start": 66.882,
+   "end": 66.99
+  },
+  {
+   "text": "douleur…",
+   "start": 66.99,
+   "end": 67.399
+  },
+  {
+   "text": "c'est",
+   "start": 67.579,
+   "end": 67.687
+  },
+  {
+   "text": "plus",
+   "start": 67.687,
+   "end": 67.844
   },
   {
    "text": "grave !",
-   "start": 47.831,
-   "end": 48.288
+   "start": 67.844,
+   "end": 68.3
   }
  ]
 }

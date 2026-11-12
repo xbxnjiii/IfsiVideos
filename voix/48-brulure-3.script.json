@@ -1,8 +1,37 @@
 [
- {"id": "intro", "rate": "+4%", "text": "Le barbecue a du mal à démarrer… alors il verse de l'alcool dessus. Et là, une flamme jaillit sur son bras."},
- {"id": "couche", "rate": "+0%", "text": "C'est une brûlure du troisième degré. Toute l'épaisseur de la peau est détruite : l'épiderme et le derme. Elle peut même atteindre la graisse sous la peau, les muscles, ou les os."},
- {"id": "aspect", "rate": "+0%", "text": "La plaie est cartonnée, sèche, de couleur blanche, brune ou noire, comme carbonisée… et sans aucune cloque."},
- {"id": "douleur", "rate": "+0%", "text": "Et le piège : elle ne fait pas mal ! Les nerfs sont détruits. La douleur, on ne la sent que tout autour."},
- {"id": "gravite", "rate": "+2%", "text": "C'est toujours une urgence : appelle le quinze. Elle ne peut pas cicatriser toute seule : le plus souvent, il faut lui greffer de la peau."},
- {"id": "fin", "rate": "+4%", "text": "Et pour rallumer un barbecue ? Jamais d'alcool !"}
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Le barbecue a du mal à démarrer… alors il verse de l'alcool dessus. Et là, une flamme jaillit sur son bras."
+ },
+ {
+  "id": "couche",
+  "rate": "+0%",
+  "text": "C'est une brûlure du troisième degré. Toute l'épaisseur de la peau est détruite : l'épiderme et le derme. Elle peut même atteindre la graisse sous la peau, les muscles, ou les os."
+ },
+ {
+  "id": "aspect",
+  "rate": "+0%",
+  "text": "La plaie est cartonnée, sèche, de couleur blanche, brune ou noire, comme carbonisée… et sans aucune cloque."
+ },
+ {
+  "id": "douleur",
+  "rate": "+0%",
+  "text": "Et le piège : elle ne fait pas mal ! Les nerfs sont détruits. La douleur, on ne la sent que tout autour."
+ },
+ {
+  "id": "gravite",
+  "rate": "+2%",
+  "text": "C'est toujours une urgence : appelle le quinze. Elle ne peut pas cicatriser toute seule : le plus souvent, il faut lui greffer de la peau."
+ },
+ {
+  "id": "geste",
+  "rate": "+0%",
+  "text": "En attendant les secours : arrose la brûlure à l'eau tempérée, en suivant les conseils du quinze. Retire les vêtements qui ne collent pas, mais jamais ceux qui collent à la peau. Et couvre la personne : elle ne doit pas avoir froid."
+ },
+ {
+  "id": "fin",
+  "rate": "+4%",
+  "text": "Et pour rallumer un barbecue ? Jamais d'alcool !"
+ }
 ]

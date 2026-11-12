@@ -6,7 +6,9 @@ import React from 'react';
 import {AbsoluteFill, Easing, interpolate, useCurrentFrame} from 'remotion';
 import {Big, fadeIn, Note, PointTag, popAt, RowCard} from '../../brand/bold';
 import {BurnPatch, CUT_Y, CutView, PastaPour, SkinClose, skinClosePt} from '../../brand/burnstage';
-import {DayChip} from '../../brand/injury';
+import {DayChip, Stetho} from '../../brand/injury';
+import {BlisterIcon, GauzeIcon, NoMark, PalmIcon, RingIcon, TapWater} from '../../brand/burnstage';
+
 import {Burst} from '../../brand/motion3';
 import {Sfx} from '../../brand/Sfx';
 import {alpha, FONT, LPI, SHADOW} from '../../brand/theme';
@@ -238,6 +240,95 @@ export const Evolution: React.FC = () => {
 			<Sfx name="tick" at={TROIS} volume={0.08} />
 			<Sfx name="pop" at={SEQUELLES - 4} volume={0.07} />
 			<Sfx name="stamp" at={GREFFER - 4} volume={0.07} />
+		</AbsoluteFill>
+	);
+};
+
+/* ═══════════════════════════════ LE BON GESTE : EAU TEMPÉRÉE, BAGUES, CLOQUES, COMPRESSE ═══════════════════════════════ */
+export const Geste: React.FC = () => {
+	const frame = useCurrentFrame();
+	const TEMPEREE = at('geste', 'tempérée');
+	const QUINZE = at('geste', 'quinze');
+	const RETIRE = at('geste', 'retire');
+	const GONFLE = at('geste', 'gonfle.');
+	const PERCE = at('geste', 'perce');
+	const COMPRESSE = at('geste', 'compresse');
+	const swap = lin(frame, RETIRE - 10, RETIRE + 4);
+	const c = skinClosePt(500, 500);
+	return (
+		<AbsoluteFill>
+			{swap < 1 ? (
+				<AbsoluteFill style={{opacity: 1 - swap}}>
+					<SkinClose>
+						<BurnPatch deg={2} k={1} />
+					</SkinClose>
+					<TapWater on={fadeIn(frame, TEMPEREE - 12, 8)} x={c.x} y={c.y} />
+					<PointTag at={TEMPEREE - 2} x={300} y={1500} px={c.x - 60} py={c.y + 80} size={46} tone={LPI.sky}>
+						eau tempérée
+					</PointTag>
+					{frame >= QUINZE - 6 ? (
+						<div style={{position: 'absolute', left: 760, top: 1300, transform: `scale(${popAt(frame, QUINZE - 6)})`}}>
+							<DayChip text="15'" size={200} />
+						</div>
+					) : null}
+				</AbsoluteFill>
+			) : null}
+			{swap > 0 ? (
+				<AbsoluteFill style={{opacity: swap}}>
+					<Bg />
+				</AbsoluteFill>
+			) : null}
+			<Big from={0} text={'Le bon *geste*'} size={110} y={180} center />
+			<RowCard at={RETIRE - 4} y={460} h={210} art={180} badge={1} title="Retire bagues et bracelet" sub="avant que ça gonfle" subAt={GONFLE - 6} size={48}>
+				<RingIcon size={140} />
+			</RowCard>
+			<RowCard at={PERCE - 6} y={690} h={210} art={180} badge={2} title="Ne perce jamais les cloques" from="left" size={48}>
+				<div style={{position: 'relative'}}>
+					<BlisterIcon size={140} />
+					<NoMark at={PERCE + 2} />
+				</div>
+			</RowCard>
+			<RowCard at={COMPRESSE - 8} y={920} h={210} art={180} badge={3} title="Une compresse stérile" size={48}>
+				<GauzeIcon size={140} />
+			</RowCard>
+			<Sfx name="tap" at={TEMPEREE - 12} volume={0.12} dur={QUINZE + 30 - TEMPEREE} />
+			{[RETIRE - 4, PERCE - 6, COMPRESSE - 8].map((t) => (
+				<Sfx key={t} name="pop" at={t} volume={0.08} />
+			))}
+		</AbsoluteFill>
+	);
+};
+
+/* ═══════════════════════════════ CONSULTER : LE MÉDECIN, L'URGENCE ═══════════════════════════════ */
+export const Consulter: React.FC = () => {
+	const frame = useCurrentFrame();
+	const MEDECIN = at('consulter', 'médecin.');
+	const URGENCE = at('consulter', 'urgence');
+	const MOITIE = at('consulter', 'moitié');
+	const VISAGE = at('consulter', 'visage,');
+	const MAINS = at('consulter', 'mains');
+	const INTIMES = at('consulter', 'intimes.');
+	return (
+		<AbsoluteFill>
+			<Bg tone={LPI.pink} />
+			<Big from={0} to={URGENCE - 4} text={'Chez le *médecin*'} size={104} y={190} center />
+			<Big from={URGENCE - 2} text={'*Urgence* si…'} size={110} y={190} center />
+			{frame >= MEDECIN - 8 && frame < URGENCE + 6 ? (
+				<div style={{position: 'absolute', left: 540 - 150, top: 600, transform: `scale(${popAt(frame, MEDECIN - 8)})`, opacity: 1 - fadeIn(frame, URGENCE, 6)}}>
+					<Stetho size={300} />
+				</div>
+			) : null}
+			<RowCard at={MOITIE - 6} y={460} h={200} art={170} badge="!" title="Plus grande qu'une demi-main" size={46}>
+				<PalmIcon size={130} />
+			</RowCard>
+			<RowCard at={VISAGE - 4} y={680} h={160} art={0} badge="!" title="Le visage" from="left" size={50} />
+			<RowCard at={MAINS - 4} y={860} h={160} art={0} badge="!" title="Les mains" size={50} />
+			<RowCard at={INTIMES - 8} y={1040} h={160} art={0} badge="!" title="Les parties intimes" from="left" size={50} />
+			<Sfx name="pop" at={MEDECIN - 8} volume={0.08} />
+			<Sfx name="stamp" at={URGENCE} volume={0.08} />
+			{[MOITIE - 6, VISAGE - 4, MAINS - 4, INTIMES - 8].map((t) => (
+				<Sfx key={t} name="pop" at={t} volume={0.08} />
+			))}
 		</AbsoluteFill>
 	);
 };

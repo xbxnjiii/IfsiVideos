@@ -1,6 +1,6 @@
 {
  "voice": "voix.wav (tts_voix.py)",
- "duration": 27.712,
+ "duration": 39.734,
  "sections": [
   {
    "id": "intro",
@@ -23,9 +23,14 @@
    "end": 22.874
   },
   {
+   "id": "geste",
+   "start": 23.852,
+   "end": 34.877
+  },
+  {
    "id": "fin",
-   "start": 23.836,
-   "end": 27.382
+   "start": 35.858,
+   "end": 39.404
   }
  ],
  "words": [
@@ -385,74 +390,254 @@
    "end": 22.874
   },
   {
-   "text": "Premier",
-   "start": 23.836,
-   "end": 24.101
+   "text": "Le",
+   "start": 23.852,
+   "end": 23.989
   },
   {
-   "text": "degré :",
-   "start": 24.101,
-   "end": 24.497
+   "text": "bon",
+   "start": 23.989,
+   "end": 24.127
   },
   {
-   "text": "c'est",
-   "start": 24.822,
-   "end": 24.954
+   "text": "geste :",
+   "start": 24.127,
+   "end": 24.589
   },
   {
-   "text": "rouge,",
-   "start": 24.954,
-   "end": 25.351
+   "text": "une",
+   "start": 25.027,
+   "end": 25.139
   },
   {
-   "text": "ça",
-   "start": 25.543,
-   "end": 25.675
+   "text": "douche",
+   "start": 25.139,
+   "end": 25.364
   },
   {
-   "text": "fait",
-   "start": 25.675,
-   "end": 25.795
+   "text": "fraîche,",
+   "start": 25.364,
+   "end": 25.864
   },
   {
-   "text": "mal…",
-   "start": 25.795,
-   "end": 26.108
-  },
-  {
-   "text": "mais",
-   "start": 26.48,
-   "end": 26.54
-  },
-  {
-   "text": "il",
-   "start": 26.54,
-   "end": 26.625
-  },
-  {
-   "text": "n'y",
-   "start": 26.625,
-   "end": 26.685
-  },
-  {
-   "text": "a",
-   "start": 26.685,
-   "end": 26.721
-  },
-  {
-   "text": "pas",
-   "start": 26.721,
-   "end": 26.829
+   "text": "tout",
+   "start": 26.064,
+   "end": 26.165
   },
   {
    "text": "de",
-   "start": 26.829,
-   "end": 26.913
+   "start": 26.165,
+   "end": 26.214
+  },
+  {
+   "text": "suite,",
+   "start": 26.214,
+   "end": 26.665
+  },
+  {
+   "text": "pendant",
+   "start": 26.902,
+   "end": 27.152
+  },
+  {
+   "text": "quinze",
+   "start": 27.152,
+   "end": 27.415
+  },
+  {
+   "text": "minutes.",
+   "start": 27.415,
+   "end": 27.952
+  },
+  {
+   "text": "Puis",
+   "start": 28.34,
+   "end": 28.465
+  },
+  {
+   "text": "une",
+   "start": 28.465,
+   "end": 28.552
+  },
+  {
+   "text": "crème",
+   "start": 28.552,
+   "end": 28.777
+  },
+  {
+   "text": "hydratante",
+   "start": 28.777,
+   "end": 29.215
+  },
+  {
+   "text": "sur",
+   "start": 29.215,
+   "end": 29.34
+  },
+  {
+   "text": "la",
+   "start": 29.34,
+   "end": 29.439
+  },
+  {
+   "text": "peau,",
+   "start": 29.439,
+   "end": 29.752
+  },
+  {
+   "text": "beaucoup",
+   "start": 30.077,
+   "end": 30.302
+  },
+  {
+   "text": "d'eau",
+   "start": 30.302,
+   "end": 30.414
+  },
+  {
+   "text": "à",
+   "start": 30.414,
+   "end": 30.489
+  },
+  {
+   "text": "boire,",
+   "start": 30.489,
+   "end": 30.889
+  },
+  {
+   "text": "et",
+   "start": 31.189,
+   "end": 31.252
+  },
+  {
+   "text": "on",
+   "start": 31.252,
+   "end": 31.302
+  },
+  {
+   "text": "reste",
+   "start": 31.302,
+   "end": 31.552
+  },
+  {
+   "text": "à",
+   "start": 31.552,
+   "end": 31.577
+  },
+  {
+   "text": "l'abri",
+   "start": 31.577,
+   "end": 31.84
+  },
+  {
+   "text": "du",
+   "start": 31.84,
+   "end": 31.939
+  },
+  {
+   "text": "soleil.",
+   "start": 31.939,
+   "end": 32.465
+  },
+  {
+   "text": "Si",
+   "start": 32.814,
+   "end": 33.027
+  },
+  {
+   "text": "ça",
+   "start": 33.027,
+   "end": 33.152
+  },
+  {
+   "text": "fait",
+   "start": 33.152,
+   "end": 33.277
+  },
+  {
+   "text": "mal :",
+   "start": 33.277,
+   "end": 33.639
+  },
+  {
+   "text": "du",
+   "start": 33.902,
+   "end": 33.989
+  },
+  {
+   "text": "paracétamol.",
+   "start": 33.989,
+   "end": 34.877
+  },
+  {
+   "text": "Premier",
+   "start": 35.858,
+   "end": 36.123
+  },
+  {
+   "text": "degré :",
+   "start": 36.123,
+   "end": 36.519
+  },
+  {
+   "text": "c'est",
+   "start": 36.844,
+   "end": 36.976
+  },
+  {
+   "text": "rouge,",
+   "start": 36.976,
+   "end": 37.373
+  },
+  {
+   "text": "ça",
+   "start": 37.565,
+   "end": 37.697
+  },
+  {
+   "text": "fait",
+   "start": 37.697,
+   "end": 37.817
+  },
+  {
+   "text": "mal…",
+   "start": 37.817,
+   "end": 38.13
+  },
+  {
+   "text": "mais",
+   "start": 38.502,
+   "end": 38.562
+  },
+  {
+   "text": "il",
+   "start": 38.562,
+   "end": 38.647
+  },
+  {
+   "text": "n'y",
+   "start": 38.647,
+   "end": 38.707
+  },
+  {
+   "text": "a",
+   "start": 38.707,
+   "end": 38.743
+  },
+  {
+   "text": "pas",
+   "start": 38.743,
+   "end": 38.851
+  },
+  {
+   "text": "de",
+   "start": 38.851,
+   "end": 38.935
   },
   {
    "text": "cloque !",
-   "start": 26.913,
-   "end": 27.382
+   "start": 38.935,
+   "end": 39.404
   }
  ]
 }

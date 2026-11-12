@@ -1,6 +1,6 @@
 {
  "voice": "voix.wav (tts_voix.py)",
- "duration": 39.998,
+ "duration": 51.612,
  "sections": [
   {
    "id": "intro",
@@ -28,9 +28,14 @@
    "end": 36.172
   },
   {
+   "id": "geste",
+   "start": 37.12,
+   "end": 47.795
+  },
+  {
    "id": "fin",
-   "start": 37.119,
-   "end": 39.666
+   "start": 48.733,
+   "end": 51.28
   }
  ],
  "words": [
@@ -605,39 +610,244 @@
    "end": 36.172
   },
   {
+   "text": "En",
+   "start": 37.12,
+   "end": 37.282
+  },
+  {
+   "text": "attendant",
+   "start": 37.282,
+   "end": 37.657
+  },
+  {
+   "text": "les",
+   "start": 37.657,
+   "end": 37.758
+  },
+  {
+   "text": "secours :",
+   "start": 37.758,
+   "end": 38.282
+  },
+  {
+   "text": "arrose",
+   "start": 38.657,
+   "end": 38.92
+  },
+  {
+   "text": "la",
+   "start": 38.92,
+   "end": 38.995
+  },
+  {
+   "text": "brûlure",
+   "start": 38.995,
+   "end": 39.37
+  },
+  {
+   "text": "à",
+   "start": 39.37,
+   "end": 39.395
+  },
+  {
+   "text": "l'eau",
+   "start": 39.395,
+   "end": 39.495
+  },
+  {
+   "text": "tempérée,",
+   "start": 39.495,
+   "end": 40.032
+  },
+  {
+   "text": "en",
+   "start": 40.345,
+   "end": 40.407
+  },
+  {
+   "text": "suivant",
+   "start": 40.407,
+   "end": 40.733
+  },
+  {
+   "text": "les",
+   "start": 40.733,
+   "end": 40.807
+  },
+  {
+   "text": "conseils",
+   "start": 40.807,
+   "end": 41.12
+  },
+  {
+   "text": "du",
+   "start": 41.12,
+   "end": 41.22
+  },
+  {
+   "text": "quinze.",
+   "start": 41.22,
+   "end": 41.72
+  },
+  {
+   "text": "Retire",
+   "start": 42.095,
+   "end": 42.483
+  },
+  {
+   "text": "les",
+   "start": 42.483,
+   "end": 42.557
+  },
+  {
+   "text": "vêtements",
+   "start": 42.557,
+   "end": 42.883
+  },
+  {
+   "text": "qui",
+   "start": 42.883,
+   "end": 43.008
+  },
+  {
+   "text": "ne",
+   "start": 43.008,
+   "end": 43.07
+  },
+  {
+   "text": "collent",
+   "start": 43.07,
+   "end": 43.258
+  },
+  {
+   "text": "pas,",
+   "start": 43.258,
+   "end": 43.483
+  },
+  {
+   "text": "mais",
+   "start": 43.845,
+   "end": 43.92
+  },
+  {
+   "text": "jamais",
+   "start": 43.92,
+   "end": 44.195
+  },
+  {
+   "text": "ceux",
+   "start": 44.195,
+   "end": 44.37
+  },
+  {
+   "text": "qui",
+   "start": 44.37,
+   "end": 44.495
+  },
+  {
+   "text": "collent",
+   "start": 44.495,
+   "end": 44.657
+  },
+  {
+   "text": "à",
+   "start": 44.657,
+   "end": 44.682
+  },
+  {
+   "text": "la",
+   "start": 44.682,
+   "end": 44.782
+  },
+  {
+   "text": "peau.",
+   "start": 44.782,
+   "end": 45.095
+  },
+  {
    "text": "Et",
-   "start": 37.119,
-   "end": 37.239
+   "start": 45.445,
+   "end": 45.595
+  },
+  {
+   "text": "couvre",
+   "start": 45.595,
+   "end": 45.883
+  },
+  {
+   "text": "la",
+   "start": 45.883,
+   "end": 45.97
+  },
+  {
+   "text": "personne :",
+   "start": 45.97,
+   "end": 46.508
+  },
+  {
+   "text": "elle",
+   "start": 46.845,
+   "end": 46.895
+  },
+  {
+   "text": "ne",
+   "start": 46.895,
+   "end": 46.983
+  },
+  {
+   "text": "doit",
+   "start": 46.983,
+   "end": 47.108
+  },
+  {
+   "text": "pas",
+   "start": 47.108,
+   "end": 47.22
+  },
+  {
+   "text": "avoir",
+   "start": 47.22,
+   "end": 47.42
+  },
+  {
+   "text": "froid.",
+   "start": 47.42,
+   "end": 47.795
+  },
+  {
+   "text": "Et",
+   "start": 48.733,
+   "end": 48.853
   },
   {
    "text": "pour",
-   "start": 37.239,
-   "end": 37.407
+   "start": 48.853,
+   "end": 49.021
   },
   {
    "text": "rallumer",
-   "start": 37.407,
-   "end": 37.756
+   "start": 49.021,
+   "end": 49.37
   },
   {
    "text": "un",
-   "start": 37.756,
-   "end": 37.816
+   "start": 49.37,
+   "end": 49.43
   },
   {
    "text": "barbecue ?",
-   "start": 37.816,
-   "end": 38.417
+   "start": 49.43,
+   "end": 50.031
   },
   {
    "text": "Jamais",
-   "start": 38.765,
-   "end": 39.065
+   "start": 50.379,
+   "end": 50.679
   },
   {
    "text": "d'alcool !",
-   "start": 39.065,
-   "end": 39.666
+   "start": 50.679,
+   "end": 51.28
   }
  ]
 }

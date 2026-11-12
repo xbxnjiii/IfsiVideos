@@ -12,6 +12,7 @@ export const MASCOT: Beat[] = [
 	{at: start('aspect') + 8, via: 'hop', dur: 18, key: 'expressions/inquiete', ...L, ...LOW},
 	{at: start('douleur') + 8, via: 'hop', dur: 18, key: 'gestes/attention', ...L, ...LOW},
 	{at: start('gravite') + 8, via: 'hop', dur: 18, key: 'gestes/important', ...L, ...LOW},
+	{at: start('geste') + 8, via: 'hop', dur: 18, key: 'gestes/astuce', ...R, ...LOW},
 	{at: start('fin') + 8, via: 'hop', dur: 18, key: 'gestes/erreur', ...L, ...LOW},
 	{at: start('end') - 6, via: 'pop', key: 'poses/course', x: 640, y: 1890, size: 480},
 	{at: start('end') + 10, via: 'run', dur: 16, key: 'poses/course', x: 1460, y: 1890, size: 480},

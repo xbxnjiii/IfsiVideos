@@ -9,12 +9,12 @@ import {wave} from '../../brand/motion3';
 import {runWipe, whip, zoomInto} from '../../brand/motion4';
 import {LPI} from '../../brand/theme';
 import {MASCOT} from './mascot';
-import {Couche, Evolution, Fin, Hook, Profond, Superficiel} from './Scenes';
+import {Couche, Evolution, Fin, Hook, Profond, Superficiel, Geste, Consulter} from './Scenes';
 import {SCENE_IDS, SceneId, TL} from './timeline';
 
 export type Brulure2Props = {voice: boolean; sfx: boolean};
 
-const SCENES: Record<SceneId, React.FC> = {intro: Hook, couche: Couche, superficiel: Superficiel, profond: Profond, evolution: Evolution, fin: Fin, end: EndCard};
+const SCENES: Record<SceneId, React.FC> = {intro: Hook, couche: Couche, superficiel: Superficiel, profond: Profond, evolution: Evolution, geste: Geste, consulter: Consulter, fin: Fin, end: EndCard};
 
 /** Transition VERS chaque scène : jamais deux fois la même d'affilée ; la mascotte la porte (mascot.ts). */
 const TRANSITIONS: Record<Exclude<SceneId, 'intro'>, EpisodeTransition> = {
@@ -22,6 +22,8 @@ const TRANSITIONS: Record<Exclude<SceneId, 'intro'>, EpisodeTransition> = {
 	superficiel: {p: whip('left'), sfx: 'whoosh'},
 	profond: {p: wave({x: 540, y: 760}), sfx: 'whoosh'},
 	evolution: {p: runWipe(), sfx: 'run'},
+	geste: {p: zoomInto({x: 540, y: 1000}), sfx: 'whoosh'},
+	consulter: {p: wave({x: 540, y: 900}), sfx: 'whoosh'},
 	fin: {p: whip('up'), sfx: 'whoosh'},
 	end: {p: zoomInto({x: 540, y: 1260, color: LPI.sky}), sfx: 'whoosh'},
 };
