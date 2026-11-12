@@ -165,6 +165,20 @@ Briques « respiration » réutilisables : rythme respiratoire qui change sans �
 - `ToothpasteTube` — Tube de dentifrice (repère 260 × 120) avec un petit ruban de pâte.
 - `FifteenCard` — Carte « 15 » de la règle des trois quinze : gros 15 + unité, petite légende ; elle « claque » à `pop`.
 
+## `burnstage.tsx`
+Série « les degrés de brûlure » (1er, 2e superficiel / profond, 3e) : aspect de la brûlure vue de dessus sur une vraie peau (`BurnPatch`, couleurs réalistes : mise en situation, règle du propriétaire), bande de profondeur sur la coupe de peau (`DepthBand`), et trois mises en situation réalistes plein écran : la plage (`BeachTop`), les pâtes qu'on égoutte (`PastaPour`), le barbecue qu'on rallume à l'alcool (`Barbecue`).
+
+- `BURN_COLORS`
+- `BurnPatch` — Brûlure vue de dessus, dans le repère 1000 × 1000 d'une peau en gros plan (`SkinG real`), centrée en (500, 500).
+- `DepthBand` — Bande de profondeur sur la coupe de peau (`SkinAt`, repère 900 × 500) : la zone touchée de `y0` à `y1` (repère de la coupe), en rose hachuré (`tone` pink) ou bleu nuit (`destroyed`, tissu détruit).
+- `BeachTop` — La plage vue de dessus (plein écran 1080 × 1920) : sable, serviette rayée, ombre du parasol, quelqu'un allongé sur le ventre.
+- `PastaPour` — On égoutte les pâtes, vu de côté (plein écran 1080 × 1920) : mur carrelé, plan de travail, évier en inox, passoire, casserole tenue par un avant-bras qui la penche (`tilt` 0 → 1), filet d'eau bouillante + vapeur ; `splash` 0 → 1 : des…
+- `Barbecue` — Le barbecue au jardin, vu de côté (plein écran 1080 × 1920) : pelouse, haie, barbecue boule, braises ; une main verse une bouteille d'alcool (`pour` 0 → 1) ; `fire` 0 → 1 : une boule de feu jaillit vers le bras ; `back` 0 → 1 : le bras…
+- `SkinClose` — Peau (couleur réelle) en très gros plan centrée en (cx, cy) sur W pixels, avec une brûlure `BurnPatch` en `children`.
+- `skinClosePt` — Point du repère de `SkinClose` → écran.
+- `CUT_Y` — Repère de la coupe : y des couches (voir `SKIN` de wound.tsx).
+- `CutView` — Coupe de peau (couches étiquetées) avec la zone touchée par la brûlure : bande hachurée de `y0` à `y1` (`CUT_Y`), rose (touchée) ou bleu nuit (`destroyed`).
+
 ## `cardio.tsx`
 Briques « cœur » réutilisables : calendrier des battements (rythme qui change sans à-coup), impulsion du dernier battement, tracé ECG qui défile (chaque battement = un QRS).
 

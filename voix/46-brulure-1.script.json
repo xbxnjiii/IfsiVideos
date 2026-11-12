@@ -1,0 +1,7 @@
+[
+ {"id": "intro", "rate": "+4%", "text": "Toute la journée à la plage… et le soir, tes épaules sont rouges, brûlantes, et le moindre contact te fait mal."},
+ {"id": "couche", "rate": "+0%", "text": "C'est une brûlure du premier degré. Seul l'épiderme est touché : la couche tout en surface de la peau."},
+ {"id": "aspect", "rate": "+0%", "text": "La peau est rouge, sèche et douloureuse… mais il n'y a aucune cloque. Exactement comme un coup de soleil."},
+ {"id": "evolution", "rate": "+2%", "text": "Elle cicatrise toute seule, en trois à cinq jours, sans laisser aucune trace."},
+ {"id": "fin", "rate": "+4%", "text": "Premier degré : c'est rouge, ça fait mal… mais il n'y a pas de cloque !"}
+]

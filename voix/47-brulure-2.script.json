@@ -1,0 +1,8 @@
+[
+ {"id": "intro", "rate": "+4%", "text": "Tu égouttes les pâtes… et l'eau bouillante éclabousse ton bras. Quelques minutes plus tard, des cloques apparaissent."},
+ {"id": "couche", "rate": "+0%", "text": "C'est une brûlure du deuxième degré. Et il en existe deux sortes. Le deuxième degré superficiel touche le haut du derme, la couche juste sous l'épiderme."},
+ {"id": "superficiel", "rate": "+0%", "text": "La peau est rouge, elle suinte, elle fait très mal… avec des cloques remplies d'un liquide clair : ce sont des phlyctènes. Elle guérit en deux semaines environ, le plus souvent sans grosse cicatrice."},
+ {"id": "profond", "rate": "+0%", "text": "Le deuxième degré profond, lui, touche le derme en profondeur. Sous des cloques souvent molles, la peau est pâle, presque blanche… et pourtant, elle fait peu mal : les nerfs sont abîmés."},
+ {"id": "evolution", "rate": "+2%", "text": "Elle cicatrise lentement, souvent plus de trois semaines, avec un risque de séquelles… et parfois, il faut greffer de la peau."},
+ {"id": "fin", "rate": "+4%", "text": "Retiens bien : très douloureuse, c'est superficiel. Presque plus de douleur… c'est plus grave !"}
+]

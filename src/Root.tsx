@@ -92,6 +92,12 @@ import {PiqureAbeille, PiqureAbeilleProps} from './videos/piqure-abeille/PiqureA
 import {TL as PIQURE_ABEILLE_TL} from './videos/piqure-abeille/timeline';
 import {Entorse, EntorseProps} from './videos/entorse/Entorse';
 import {TL as ENTORSE_TL} from './videos/entorse/timeline';
+import {Brulure1, Brulure1Props} from './videos/brulure-1/Brulure1';
+import {TL as BRULURE_1_TL} from './videos/brulure-1/timeline';
+import {Brulure2, Brulure2Props} from './videos/brulure-2/Brulure2';
+import {TL as BRULURE_2_TL} from './videos/brulure-2/timeline';
+import {Brulure3, Brulure3Props} from './videos/brulure-3/Brulure3';
+import {TL as BRULURE_3_TL} from './videos/brulure-3/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -538,6 +544,36 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies EntorseProps}
+		/>
+		{/* 46 · Brulure-1 */}
+		<Composition
+			id="Brulure-1"
+			component={Brulure1}
+			durationInFrames={BRULURE_1_TL.total}
+			fps={BRULURE_1_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies Brulure1Props}
+		/>
+		{/* 47 · Brulure-2 */}
+		<Composition
+			id="Brulure-2"
+			component={Brulure2}
+			durationInFrames={BRULURE_2_TL.total}
+			fps={BRULURE_2_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies Brulure2Props}
+		/>
+		{/* 48 · Brulure-3 */}
+		<Composition
+			id="Brulure-3"
+			component={Brulure3}
+			durationInFrames={BRULURE_3_TL.total}
+			fps={BRULURE_3_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies Brulure3Props}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition

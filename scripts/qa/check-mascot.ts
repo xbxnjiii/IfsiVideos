@@ -90,6 +90,12 @@ import * as piqureabeille from '../../src/videos/piqure-abeille/mascot';
 import * as piqureabeilleTL from '../../src/videos/piqure-abeille/timeline';
 import * as entorse from '../../src/videos/entorse/mascot';
 import * as entorseTL from '../../src/videos/entorse/timeline';
+import * as brulure1 from '../../src/videos/brulure-1/mascot';
+import * as brulure1TL from '../../src/videos/brulure-1/timeline';
+import * as brulure2 from '../../src/videos/brulure-2/mascot';
+import * as brulure2TL from '../../src/videos/brulure-2/timeline';
+import * as brulure3 from '../../src/videos/brulure-3/mascot';
+import * as brulure3TL from '../../src/videos/brulure-3/timeline';
 
 const VIDEOS: Record<string, [typeof constantes.MASCOT, typeof constantesTL.TL]> = {
 	constantes: [constantes.MASCOT, constantesTL.TL],
@@ -136,6 +142,9 @@ const VIDEOS: Record<string, [typeof constantes.MASCOT, typeof constantesTL.TL]>
 	'saignement-nez': [saignementnez.MASCOT, saignementnezTL.TL],
 	'piqure-abeille': [piqureabeille.MASCOT, piqureabeilleTL.TL],
 	'entorse': [entorse.MASCOT, entorseTL.TL],
+	'brulure-1': [brulure1.MASCOT, brulure1TL.TL],
+	'brulure-2': [brulure2.MASCOT, brulure2TL.TL],
+	'brulure-3': [brulure3.MASCOT, brulure3TL.TL],
 };
 const name = process.argv[2] ?? 'constantes';
 const [MASCOT, TL] = VIDEOS[name];

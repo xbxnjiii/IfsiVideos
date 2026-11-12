@@ -1,0 +1,743 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 48.614,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.084,
+   "end": 5.314
+  },
+  {
+   "id": "couche",
+   "start": 6.253,
+   "end": 14.49
+  },
+  {
+   "id": "superficiel",
+   "start": 15.48,
+   "end": 24.73
+  },
+  {
+   "id": "profond",
+   "start": 25.726,
+   "end": 35.489
+  },
+  {
+   "id": "evolution",
+   "start": 36.425,
+   "end": 42.21
+  },
+  {
+   "id": "fin",
+   "start": 43.142,
+   "end": 48.288
+  }
+ ],
+ "words": [
+  {
+   "text": "Tu",
+   "start": 0.084,
+   "end": 0.204
+  },
+  {
+   "text": "égouttes",
+   "start": 0.204,
+   "end": 0.445
+  },
+  {
+   "text": "les",
+   "start": 0.445,
+   "end": 0.553
+  },
+  {
+   "text": "pâtes…",
+   "start": 0.553,
+   "end": 0.925
+  },
+  {
+   "text": "et",
+   "start": 1.238,
+   "end": 1.262
+  },
+  {
+   "text": "l'eau",
+   "start": 1.262,
+   "end": 1.382
+  },
+  {
+   "text": "bouillante",
+   "start": 1.382,
+   "end": 1.707
+  },
+  {
+   "text": "éclabousse",
+   "start": 1.707,
+   "end": 2.139
+  },
+  {
+   "text": "ton",
+   "start": 2.139,
+   "end": 2.272
+  },
+  {
+   "text": "bras.",
+   "start": 2.272,
+   "end": 2.548
+  },
+  {
+   "text": "Quelques",
+   "start": 2.874,
+   "end": 3.199
+  },
+  {
+   "text": "minutes",
+   "start": 3.199,
+   "end": 3.463
+  },
+  {
+   "text": "plus",
+   "start": 3.463,
+   "end": 3.607
+  },
+  {
+   "text": "tard,",
+   "start": 3.607,
+   "end": 3.992
+  },
+  {
+   "text": "des",
+   "start": 4.352,
+   "end": 4.424
+  },
+  {
+   "text": "cloques",
+   "start": 4.425,
+   "end": 4.665
+  },
+  {
+   "text": "apparaissent.",
+   "start": 4.665,
+   "end": 5.314
+  },
+  {
+   "text": "C'est",
+   "start": 6.253,
+   "end": 6.403
+  },
+  {
+   "text": "une",
+   "start": 6.403,
+   "end": 6.578
+  },
+  {
+   "text": "brûlure",
+   "start": 6.578,
+   "end": 7.003
+  },
+  {
+   "text": "du",
+   "start": 7.003,
+   "end": 7.115
+  },
+  {
+   "text": "deuxième",
+   "start": 7.115,
+   "end": 7.465
+  },
+  {
+   "text": "degré.",
+   "start": 7.465,
+   "end": 7.928
+  },
+  {
+   "text": "Et",
+   "start": 8.277,
+   "end": 8.365
+  },
+  {
+   "text": "il",
+   "start": 8.365,
+   "end": 8.478
+  },
+  {
+   "text": "en",
+   "start": 8.478,
+   "end": 8.515
+  },
+  {
+   "text": "existe",
+   "start": 8.515,
+   "end": 9.015
+  },
+  {
+   "text": "deux",
+   "start": 9.015,
+   "end": 9.152
+  },
+  {
+   "text": "sortes.",
+   "start": 9.152,
+   "end": 9.703
+  },
+  {
+   "text": "Le",
+   "start": 10.103,
+   "end": 10.227
+  },
+  {
+   "text": "deuxième",
+   "start": 10.227,
+   "end": 10.527
+  },
+  {
+   "text": "degré",
+   "start": 10.527,
+   "end": 10.803
+  },
+  {
+   "text": "superficiel",
+   "start": 10.803,
+   "end": 11.59
+  },
+  {
+   "text": "touche",
+   "start": 11.59,
+   "end": 11.815
+  },
+  {
+   "text": "le",
+   "start": 11.815,
+   "end": 11.94
+  },
+  {
+   "text": "haut",
+   "start": 11.94,
+   "end": 12.04
+  },
+  {
+   "text": "du",
+   "start": 12.04,
+   "end": 12.178
+  },
+  {
+   "text": "derme,",
+   "start": 12.178,
+   "end": 12.565
+  },
+  {
+   "text": "la",
+   "start": 12.89,
+   "end": 12.953
+  },
+  {
+   "text": "couche",
+   "start": 12.953,
+   "end": 13.277
+  },
+  {
+   "text": "juste",
+   "start": 13.277,
+   "end": 13.678
+  },
+  {
+   "text": "sous",
+   "start": 13.678,
+   "end": 13.803
+  },
+  {
+   "text": "l'épiderme.",
+   "start": 13.803,
+   "end": 14.49
+  },
+  {
+   "text": "La",
+   "start": 15.48,
+   "end": 15.605
+  },
+  {
+   "text": "peau",
+   "start": 15.605,
+   "end": 15.78
+  },
+  {
+   "text": "est",
+   "start": 15.78,
+   "end": 15.855
+  },
+  {
+   "text": "rouge,",
+   "start": 15.855,
+   "end": 16.242
+  },
+  {
+   "text": "elle",
+   "start": 16.43,
+   "end": 16.505
+  },
+  {
+   "text": "suinte,",
+   "start": 16.505,
+   "end": 16.992
+  },
+  {
+   "text": "elle",
+   "start": 17.205,
+   "end": 17.268
+  },
+  {
+   "text": "fait",
+   "start": 17.268,
+   "end": 17.355
+  },
+  {
+   "text": "très",
+   "start": 17.355,
+   "end": 17.555
+  },
+  {
+   "text": "mal…",
+   "start": 17.555,
+   "end": 17.855
+  },
+  {
+   "text": "avec",
+   "start": 18.043,
+   "end": 18.193
+  },
+  {
+   "text": "des",
+   "start": 18.193,
+   "end": 18.268
+  },
+  {
+   "text": "cloques",
+   "start": 18.268,
+   "end": 18.53
+  },
+  {
+   "text": "remplies",
+   "start": 18.53,
+   "end": 18.805
+  },
+  {
+   "text": "d'un",
+   "start": 18.805,
+   "end": 18.905
+  },
+  {
+   "text": "liquide",
+   "start": 18.905,
+   "end": 19.218
+  },
+  {
+   "text": "clair :",
+   "start": 19.218,
+   "end": 19.58
+  },
+  {
+   "text": "ce",
+   "start": 19.893,
+   "end": 19.992
+  },
+  {
+   "text": "sont",
+   "start": 19.992,
+   "end": 20.117
+  },
+  {
+   "text": "des",
+   "start": 20.117,
+   "end": 20.218
+  },
+  {
+   "text": "phlyctènes.",
+   "start": 20.218,
+   "end": 20.893
+  },
+  {
+   "text": "Elle",
+   "start": 21.23,
+   "end": 21.43
+  },
+  {
+   "text": "guérit",
+   "start": 21.43,
+   "end": 21.742
+  },
+  {
+   "text": "en",
+   "start": 21.742,
+   "end": 21.83
+  },
+  {
+   "text": "deux",
+   "start": 21.83,
+   "end": 21.943
+  },
+  {
+   "text": "semaines",
+   "start": 21.943,
+   "end": 22.218
+  },
+  {
+   "text": "environ,",
+   "start": 22.218,
+   "end": 22.668
+  },
+  {
+   "text": "le",
+   "start": 22.992,
+   "end": 23.055
+  },
+  {
+   "text": "plus",
+   "start": 23.055,
+   "end": 23.18
+  },
+  {
+   "text": "souvent",
+   "start": 23.18,
+   "end": 23.505
+  },
+  {
+   "text": "sans",
+   "start": 23.505,
+   "end": 23.68
+  },
+  {
+   "text": "grosse",
+   "start": 23.68,
+   "end": 23.93
+  },
+  {
+   "text": "cicatrice.",
+   "start": 23.93,
+   "end": 24.73
+  },
+  {
+   "text": "Le",
+   "start": 25.726,
+   "end": 25.864
+  },
+  {
+   "text": "deuxième",
+   "start": 25.864,
+   "end": 26.189
+  },
+  {
+   "text": "degré",
+   "start": 26.189,
+   "end": 26.463
+  },
+  {
+   "text": "profond,",
+   "start": 26.463,
+   "end": 26.963
+  },
+  {
+   "text": "lui,",
+   "start": 27.376,
+   "end": 27.651
+  },
+  {
+   "text": "touche",
+   "start": 27.989,
+   "end": 28.176
+  },
+  {
+   "text": "le",
+   "start": 28.176,
+   "end": 28.289
+  },
+  {
+   "text": "derme",
+   "start": 28.289,
+   "end": 28.539
+  },
+  {
+   "text": "en",
+   "start": 28.539,
+   "end": 28.576
+  },
+  {
+   "text": "profondeur.",
+   "start": 28.576,
+   "end": 29.301
+  },
+  {
+   "text": "Sous",
+   "start": 29.651,
+   "end": 29.839
+  },
+  {
+   "text": "des",
+   "start": 29.839,
+   "end": 29.926
+  },
+  {
+   "text": "cloques",
+   "start": 29.926,
+   "end": 30.201
+  },
+  {
+   "text": "souvent",
+   "start": 30.201,
+   "end": 30.489
+  },
+  {
+   "text": "molles,",
+   "start": 30.489,
+   "end": 30.801
+  },
+  {
+   "text": "la",
+   "start": 31.101,
+   "end": 31.189
+  },
+  {
+   "text": "peau",
+   "start": 31.189,
+   "end": 31.351
+  },
+  {
+   "text": "est",
+   "start": 31.351,
+   "end": 31.413
+  },
+  {
+   "text": "pâle,",
+   "start": 31.413,
+   "end": 31.776
+  },
+  {
+   "text": "presque",
+   "start": 32.014,
+   "end": 32.339
+  },
+  {
+   "text": "blanche…",
+   "start": 32.339,
+   "end": 32.764
+  },
+  {
+   "text": "et",
+   "start": 33.001,
+   "end": 33.026
+  },
+  {
+   "text": "pourtant,",
+   "start": 33.026,
+   "end": 33.489
+  },
+  {
+   "text": "elle",
+   "start": 33.663,
+   "end": 33.776
+  },
+  {
+   "text": "fait",
+   "start": 33.776,
+   "end": 33.864
+  },
+  {
+   "text": "peu",
+   "start": 33.864,
+   "end": 34.001
+  },
+  {
+   "text": "mal :",
+   "start": 34.001,
+   "end": 34.301
+  },
+  {
+   "text": "les",
+   "start": 34.564,
+   "end": 34.639
+  },
+  {
+   "text": "nerfs",
+   "start": 34.639,
+   "end": 34.851
+  },
+  {
+   "text": "sont",
+   "start": 34.851,
+   "end": 34.964
+  },
+  {
+   "text": "abîmés.",
+   "start": 34.964,
+   "end": 35.489
+  },
+  {
+   "text": "Elle",
+   "start": 36.425,
+   "end": 36.609
+  },
+  {
+   "text": "cicatrise",
+   "start": 36.609,
+   "end": 37.136
+  },
+  {
+   "text": "lentement,",
+   "start": 37.136,
+   "end": 37.577
+  },
+  {
+   "text": "souvent",
+   "start": 37.847,
+   "end": 38.08
+  },
+  {
+   "text": "plus",
+   "start": 38.08,
+   "end": 38.227
+  },
+  {
+   "text": "de",
+   "start": 38.227,
+   "end": 38.313
+  },
+  {
+   "text": "trois",
+   "start": 38.313,
+   "end": 38.484
+  },
+  {
+   "text": "semaines,",
+   "start": 38.484,
+   "end": 38.889
+  },
+  {
+   "text": "avec",
+   "start": 39.183,
+   "end": 39.379
+  },
+  {
+   "text": "un",
+   "start": 39.379,
+   "end": 39.452
+  },
+  {
+   "text": "risque",
+   "start": 39.452,
+   "end": 39.71
+  },
+  {
+   "text": "de",
+   "start": 39.71,
+   "end": 39.82
+  },
+  {
+   "text": "séquelles…",
+   "start": 39.82,
+   "end": 40.286
+  },
+  {
+   "text": "et",
+   "start": 40.506,
+   "end": 40.543
+  },
+  {
+   "text": "parfois,",
+   "start": 40.543,
+   "end": 41.021
+  },
+  {
+   "text": "il",
+   "start": 41.327,
+   "end": 41.401
+  },
+  {
+   "text": "faut",
+   "start": 41.401,
+   "end": 41.499
+  },
+  {
+   "text": "greffer",
+   "start": 41.499,
+   "end": 41.781
+  },
+  {
+   "text": "de",
+   "start": 41.781,
+   "end": 41.83
+  },
+  {
+   "text": "la",
+   "start": 41.83,
+   "end": 41.903
+  },
+  {
+   "text": "peau.",
+   "start": 41.903,
+   "end": 42.21
+  },
+  {
+   "text": "Retiens",
+   "start": 43.142,
+   "end": 43.503
+  },
+  {
+   "text": "bien :",
+   "start": 43.503,
+   "end": 43.791
+  },
+  {
+   "text": "très",
+   "start": 44.044,
+   "end": 44.224
+  },
+  {
+   "text": "douloureuse,",
+   "start": 44.224,
+   "end": 44.801
+  },
+  {
+   "text": "c'est",
+   "start": 44.993,
+   "end": 45.101
+  },
+  {
+   "text": "superficiel.",
+   "start": 45.101,
+   "end": 45.955
+  },
+  {
+   "text": "Presque",
+   "start": 46.281,
+   "end": 46.654
+  },
+  {
+   "text": "plus",
+   "start": 46.654,
+   "end": 46.87
+  },
+  {
+   "text": "de",
+   "start": 46.87,
+   "end": 46.978
+  },
+  {
+   "text": "douleur…",
+   "start": 46.978,
+   "end": 47.387
+  },
+  {
+   "text": "c'est",
+   "start": 47.567,
+   "end": 47.675
+  },
+  {
+   "text": "plus",
+   "start": 47.675,
+   "end": 47.831
+  },
+  {
+   "text": "grave !",
+   "start": 47.831,
+   "end": 48.288
+  }
+ ]
+}

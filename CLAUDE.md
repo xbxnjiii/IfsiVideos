@@ -360,6 +360,16 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   hanche, `LegRest`) · contention (bande en huit, sans trop serrer), radio si 4 pas impossibles / douleur sur l'os / cheville
   déformée, chute (il saute la racine). Brique `src/brand/ankle.tsx` (`AnkleSide`) ; `Walker` a maintenant `skin` (vraie
   couleur de peau). Storyboard `docs/lpi/storyboard-entorse.md`.
+- **Série « les degrés de brûlure »** (n° 46 · 47 · 48, demandée : « une vidéo par degré », contenu fourni par le
+  propriétaire ; voix gratuite d'abord ; chaque vidéo tient seule) : `Brulure-1` (plage : coup de soleil ; épiderme ;
+  rouge, sèche, douloureuse, sans cloque ; 3 – 5 jours sans trace), `Brulure-2` (eau des pâtes ; superficiel : haut du
+  derme, rouge, suintant, très douloureux, phlyctènes, ≈ 2 semaines ; profond : derme profond, pâle, cloques molles, peu
+  douloureux (nerfs abîmés), > 3 semaines, séquelles, greffe ; chute « très douloureuse = superficiel, presque plus de
+  douleur = plus grave »), `Brulure-3` (barbecue rallumé à l'alcool ; toute la peau détruite, parfois graisse / muscles
+  / os ; cartonnée, sèche, blanche / brune / noire, sans cloque ; indolore, douleur autour ; urgence (15), greffe —
+  « gravité » complétée car laissée vide ; chute « jamais d'alcool »). Brique `src/brand/burnstage.tsx` (`BurnPatch`,
+  `CutView`, `BeachTop`, `PastaPour`, `Barbecue`). La vidéo `Brulure` (n° 40, les bons gestes) reste à part.
+  Storyboard `docs/lpi/storyboard-brulures-degres.md`.
 
 ## Voix ElevenLabs « Laura » (choisie par le propriétaire pour les nouvelles vidéos)
 

@@ -56,6 +56,9 @@ pas de logiciel de montage, pas de banque d'images.
 | 43 | Court info : saignement de nez, tête en avant (voix gratuite, accroche animée sans texte) | `Saignement-Nez` | [voix/43-saignement-nez.script.json](voix/43-saignement-nez.script.json) | [storyboard](docs/lpi/storyboard-saignement-nez.md) |
 | 44 | Court info : piqûre d'abeille, gratter le dard avec une carte (voix gratuite, accroche animée sans texte) | `Piqure-Abeille` | [voix/44-piqure-abeille.script.json](voix/44-piqure-abeille.script.json) | [storyboard](docs/lpi/storyboard-piqure-abeille.md) |
 | 45 | Court info : entorse de la cheville, glace · repos · élévation · contention (voix gratuite, accroche animée sans texte) | `Entorse` | [voix/45-entorse.script.json](voix/45-entorse.script.json) | [storyboard](docs/lpi/storyboard-entorse.md) |
+| 46 | Court info : brûlure du 1er degré (voix gratuite, accroche plage réaliste) | `Brulure-1` | [voix/46-brulure-1.script.json](voix/46-brulure-1.script.json) | [storyboard](docs/lpi/storyboard-brulures-degres.md) |
+| 47 | Court info : brûlure du 2e degré superficiel / profond (voix gratuite, accroche pâtes réaliste) | `Brulure-2` | [voix/47-brulure-2.script.json](voix/47-brulure-2.script.json) | [storyboard](docs/lpi/storyboard-brulures-degres.md) |
+| 48 | Court info : brûlure du 3e degré (voix gratuite, accroche barbecue réaliste) | `Brulure-3` | [voix/48-brulure-3.script.json](voix/48-brulure-3.script.json) | [storyboard](docs/lpi/storyboard-brulures-degres.md) |
 
 ## Utilisation
 
