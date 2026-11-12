@@ -16,8 +16,10 @@ export const MASCOT: Beat[] = [
 	{at: abs('idees', 'vomir.'), key: 'symptomes/nausee', ...R, ...LOW},
 	// le bon geste
 	{at: start('methode') + 8, via: 'hop', dur: 18, key: 'gestes/bonne-reponse', ...R, ...LOW},
-	{at: abs('methode', 'mouche-toi'), key: 'symptomes/mouche', ...R, ...LOW},
+	{at: abs('methode', 'comprime'), key: 'gestes/astuce', ...R, ...LOW},
 	{at: abs('methode', 'tiens'), key: 'gestes/important', ...R, ...LOW},
+	// la mèche
+	{at: start('meche') + 8, via: 'hop', dur: 18, key: 'gestes/bonne-reponse', ...R, ...LOW},
 	// après
 	{at: start('apres') + 8, via: 'hop', dur: 18, key: 'gestes/attention', ...R},
 	// quand consulter
@@ -25,7 +27,7 @@ export const MASCOT: Beat[] = [
 	{at: abs('consulter', 'appelle'), key: 'gestes/important', ...L, ...LOW},
 	// chute
 	{at: start('fin') + 8, via: 'hop', dur: 18, key: 'expressions/joyeuse', ...R, ...LOW},
-	{at: abs('fin', 'pince !'), key: 'gestes/bravo', ...R, ...LOW},
+	{at: abs('fin', 'comprime !'), key: 'gestes/bravo', ...R, ...LOW},
 	// elle repart en courant avant le logo
 	{at: start('end') - 6, via: 'pop', key: 'poses/course', x: 640, y: 1890, size: 480},
 	{at: start('end') + 10, via: 'run', dur: 16, key: 'poses/course', x: 1460, y: 1890, size: 480},

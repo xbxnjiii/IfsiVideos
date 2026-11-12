@@ -55,13 +55,15 @@ export const HeadSide: React.FC<{
 	throat?: number;
 	bone?: number;
 	pinch?: number;
+	pad?: boolean;
+	wick?: number;
 	tissue?: number;
 	breathe?: number;
 	mood?: 'calm' | 'worried' | 'sick' | 'happy';
 	eyes?: 'open' | 'up' | 'down';
 	shirt?: string;
 	children?: React.ReactNode;
-}> = ({width = 1000, tilt = 0, bleed = 0, cut = 0, throat = 0, bone = 0, pinch = 0, tissue = 0, breathe = 0, mood = 'calm', eyes = 'open', shirt = LPI.blue, children}) => {
+}> = ({width = 1000, tilt = 0, bleed = 0, cut = 0, throat = 0, bone = 0, pinch = 0, pad = false, wick = 0, tissue = 0, breathe = 0, mood = 'calm', eyes = 'open', shirt = LPI.blue, children}) => {
 	const frame = useCurrentFrame();
 	const id = React.useId().replace(/:/g, '');
 	const P = HEAD.pivot;
@@ -180,6 +182,13 @@ export const HeadSide: React.FC<{
 					</g>
 				) : null}
 				{/* la main qui pince le bas du nez : index posé en travers de la partie molle, la main sous le menton */}
+				{/* mèche : petit tampon de coton enfoncé dans la narine (le bout dépasse) */}
+				{wick > 0 ? (
+					<g opacity={Math.min(1, wick * 3)} transform={`translate(${(1 - Math.min(1, wick)) * 30} ${(1 - Math.min(1, wick)) * 40})`}>
+						<rect x={716} y={524} width={22} height={44} rx={10} fill={LPI.paper} stroke={alpha(N, 0.55)} strokeWidth={3} transform="rotate(-30 727 546)" />
+						<path d="M720 556 l6 -18 M728 560 l6 -18" stroke={alpha(N, 0.2)} strokeWidth={2} transform="rotate(-30 727 546)" />
+					</g>
+				) : null}
 				{pz > 0 ? (
 					<g transform={`translate(${(1 - pz) * 160} ${(1 - pz) * 220})`} opacity={cl(pz * 2)}>
 						{/* avant-bras, poing fermé, index replié sur l'aile du nez (le pouce est de l'autre côté) */}
@@ -190,6 +199,13 @@ export const HeadSide: React.FC<{
 						{[0, 1, 2].map((i) => (
 							<path key={i} d={`M${790 + i * 4} ${650 + i * 26} q30 ${-10} 52 6`} fill="none" stroke={alpha(N, 0.45)} strokeWidth={4} strokeLinecap="round" />
 						))}
+						{pad ? (
+							<g>
+								{/* compresse (ou mouchoir) entre les doigts et le nez : on comprime à travers elle */}
+								<path d="M700 488 C730 470 780 474 800 500 C812 530 806 580 780 600 C750 616 712 606 700 584 C688 556 688 510 700 488 Z" fill={LPI.paper} stroke={alpha(N, 0.6)} strokeWidth={3.5} />
+								<path d="M712 510 L792 520 M708 540 L798 552 M712 570 L790 580" stroke={alpha(LPI.sky, 0.9)} strokeWidth={3} />
+							</g>
+						) : null}
 						<line x1={746} y1={530} x2={826} y2={612} stroke={alpha(N, 0.72)} strokeWidth={46} strokeLinecap="round" />
 						<line x1={746} y1={530} x2={826} y2={612} stroke={SKIN_MID} strokeWidth={39} strokeLinecap="round" />
 						<line x1={752} y1={528} x2={816} y2={594} stroke={alpha(LPI.paper, 0.7)} strokeWidth={8} strokeLinecap="round" />

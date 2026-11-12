@@ -12,7 +12,12 @@
  {
   "id": "methode",
   "rate": "+0%",
-  "text": "Le bon geste : assieds-toi, et penche la tête en avant. Mouche-toi une fois, doucement, pour vider les caillots. Puis pince le bas du nez, la partie molle, juste sous l'os. Et tiens dix minutes, sans relâcher, en respirant par la bouche."
+  "text": "Le bon geste : assieds-toi, et penche la tête en avant. Puis comprime le bas du nez, la partie molle, juste sous l'os, avec un mouchoir ou une compresse. Et tiens de cinq à quinze minutes, sans relâcher, en respirant par la bouche."
+ },
+ {
+  "id": "meche",
+  "rate": "+2%",
+  "text": "Si ça saigne encore, on peut aussi mettre une mèche dans la narine : un petit tampon qui aide le sang à former un caillot."
  },
  {
   "id": "apres",
@@ -27,6 +32,6 @@
  {
   "id": "fin",
   "rate": "+4%",
-  "text": "Alors, la prochaine fois : la tête en avant… et on pince !"
+  "text": "Alors, la prochaine fois : la tête en avant… et on comprime !"
  }
 ]

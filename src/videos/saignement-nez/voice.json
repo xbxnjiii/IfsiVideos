@@ -1,6 +1,6 @@
 {
  "voice": "voix.wav (tts_voix.py)",
- "duration": 50.678,
+ "duration": 55.788,
  "sections": [
   {
    "id": "intro",
@@ -15,22 +15,27 @@
   {
    "id": "methode",
    "start": 17.472,
-   "end": 30.997
+   "end": 30.035
+  },
+  {
+   "id": "meche",
+   "start": 30.98,
+   "end": 36.066
   },
   {
    "id": "apres",
-   "start": 32.012,
-   "end": 38.005
+   "start": 37.05,
+   "end": 43.043
   },
   {
    "id": "consulter",
-   "start": 38.946,
-   "end": 46.09
+   "start": 43.984,
+   "end": 51.128
   },
   {
    "id": "fin",
-   "start": 47.078,
-   "end": 50.347
+   "start": 52.116,
+   "end": 55.457
   }
  ],
  "words": [
@@ -327,517 +332,642 @@
   {
    "text": "Le",
    "start": 17.472,
-   "end": 17.597
+   "end": 17.622
   },
   {
    "text": "bon",
-   "start": 17.597,
-   "end": 17.747
+   "start": 17.622,
+   "end": 17.759
   },
   {
    "text": "geste :",
-   "start": 17.747,
-   "end": 18.209
+   "start": 17.759,
+   "end": 18.222
   },
   {
    "text": "assieds-toi,",
-   "start": 18.559,
-   "end": 19.134
+   "start": 18.547,
+   "end": 19.122
   },
   {
    "text": "et",
-   "start": 19.459,
-   "end": 19.522
+   "start": 19.485,
+   "end": 19.535
   },
   {
    "text": "penche",
-   "start": 19.522,
-   "end": 19.772
+   "start": 19.535,
+   "end": 19.785
   },
   {
    "text": "la",
-   "start": 19.772,
-   "end": 19.872
+   "start": 19.785,
+   "end": 19.884
   },
   {
    "text": "tête",
-   "start": 19.872,
-   "end": 20.097
+   "start": 19.884,
+   "end": 20.11
   },
   {
    "text": "en",
-   "start": 20.097,
-   "end": 20.147
+   "start": 20.11,
+   "end": 20.16
   },
   {
    "text": "avant.",
-   "start": 20.147,
-   "end": 20.547
-  },
-  {
-   "text": "Mouche-toi",
-   "start": 20.922,
-   "end": 21.259
-  },
-  {
-   "text": "une",
-   "start": 21.259,
-   "end": 21.372
-  },
-  {
-   "text": "fois,",
-   "start": 21.372,
-   "end": 21.722
-  },
-  {
-   "text": "doucement,",
-   "start": 22.097,
-   "end": 22.61
-  },
-  {
-   "text": "pour",
-   "start": 22.834,
-   "end": 22.972
-  },
-  {
-   "text": "vider",
-   "start": 22.972,
-   "end": 23.184
-  },
-  {
-   "text": "les",
-   "start": 23.184,
-   "end": 23.272
-  },
-  {
-   "text": "caillots.",
-   "start": 23.272,
-   "end": 23.697
+   "start": 20.16,
+   "end": 20.559
   },
   {
    "text": "Puis",
-   "start": 24.097,
-   "end": 24.209
+   "start": 20.91,
+   "end": 21.022
   },
   {
-   "text": "pince",
-   "start": 24.209,
-   "end": 24.472
+   "text": "comprime",
+   "start": 21.022,
+   "end": 21.41
   },
   {
    "text": "le",
-   "start": 24.472,
-   "end": 24.572
+   "start": 21.41,
+   "end": 21.485
   },
   {
    "text": "bas",
-   "start": 24.572,
-   "end": 24.684
+   "start": 21.485,
+   "end": 21.597
   },
   {
    "text": "du",
-   "start": 24.684,
-   "end": 24.822
+   "start": 21.597,
+   "end": 21.735
   },
   {
    "text": "nez,",
-   "start": 24.822,
-   "end": 25.059
+   "start": 21.735,
+   "end": 21.985
   },
   {
    "text": "la",
-   "start": 25.397,
-   "end": 25.459
+   "start": 22.247,
+   "end": 22.309
   },
   {
    "text": "partie",
-   "start": 25.459,
-   "end": 25.772
+   "start": 22.309,
+   "end": 22.634
   },
   {
    "text": "molle,",
-   "start": 25.772,
-   "end": 26.097
+   "start": 22.634,
+   "end": 22.959
   },
   {
    "text": "juste",
-   "start": 26.347,
-   "end": 26.66
+   "start": 23.222,
+   "end": 23.547
   },
   {
    "text": "sous",
-   "start": 26.66,
-   "end": 26.797
+   "start": 23.547,
+   "end": 23.684
   },
   {
-   "text": "l'os.",
-   "start": 26.797,
-   "end": 27.222
+   "text": "l'os,",
+   "start": 23.684,
+   "end": 24.059
+  },
+  {
+   "text": "avec",
+   "start": 24.259,
+   "end": 24.459
+  },
+  {
+   "text": "un",
+   "start": 24.459,
+   "end": 24.509
+  },
+  {
+   "text": "mouchoir",
+   "start": 24.509,
+   "end": 24.934
+  },
+  {
+   "text": "ou",
+   "start": 24.934,
+   "end": 24.985
+  },
+  {
+   "text": "une",
+   "start": 24.985,
+   "end": 25.072
+  },
+  {
+   "text": "compresse.",
+   "start": 25.072,
+   "end": 25.735
   },
   {
    "text": "Et",
-   "start": 27.559,
-   "end": 27.697
+   "start": 26.084,
+   "end": 26.222
   },
   {
    "text": "tiens",
-   "start": 27.697,
-   "end": 27.897
+   "start": 26.222,
+   "end": 26.447
   },
   {
-   "text": "dix",
-   "start": 27.897,
-   "end": 28.022
+   "text": "de",
+   "start": 26.447,
+   "end": 26.559
+  },
+  {
+   "text": "cinq",
+   "start": 26.559,
+   "end": 26.785
+  },
+  {
+   "text": "à",
+   "start": 26.785,
+   "end": 26.834
+  },
+  {
+   "text": "quinze",
+   "start": 26.834,
+   "end": 27.097
   },
   {
    "text": "minutes,",
-   "start": 28.022,
-   "end": 28.485
+   "start": 27.097,
+   "end": 27.547
   },
   {
    "text": "sans",
-   "start": 28.785,
-   "end": 28.959
+   "start": 27.872,
+   "end": 28.047
   },
   {
    "text": "relâcher,",
-   "start": 28.959,
-   "end": 29.509
+   "start": 28.047,
+   "end": 28.584
   },
   {
    "text": "en",
-   "start": 29.847,
-   "end": 29.884
+   "start": 28.897,
+   "end": 28.947
   },
   {
    "text": "respirant",
-   "start": 29.884,
-   "end": 30.334
+   "start": 28.947,
+   "end": 29.372
   },
   {
    "text": "par",
-   "start": 30.334,
-   "end": 30.485
+   "start": 29.372,
+   "end": 29.522
   },
   {
    "text": "la",
-   "start": 30.485,
-   "end": 30.559
+   "start": 29.522,
+   "end": 29.597
   },
   {
    "text": "bouche.",
-   "start": 30.559,
-   "end": 30.997
+   "start": 29.597,
+   "end": 30.035
   },
   {
-   "text": "Ensuite,",
-   "start": 32.012,
-   "end": 32.576
-  },
-  {
-   "text": "pendant",
-   "start": 32.723,
-   "end": 32.931
-  },
-  {
-   "text": "quelques",
-   "start": 32.931,
-   "end": 33.213
-  },
-  {
-   "text": "heures :",
-   "start": 33.213,
-   "end": 33.556
-  },
-  {
-   "text": "on",
-   "start": 33.973,
-   "end": 33.997
-  },
-  {
-   "text": "ne",
-   "start": 33.997,
-   "end": 34.083
-  },
-  {
-   "text": "se",
-   "start": 34.083,
-   "end": 34.206
-  },
-  {
-   "text": "mouche",
-   "start": 34.206,
-   "end": 34.402
-  },
-  {
-   "text": "pas",
-   "start": 34.402,
-   "end": 34.524
-  },
-  {
-   "text": "fort,",
-   "start": 34.524,
-   "end": 34.916
-  },
-  {
-   "text": "et",
-   "start": 35.247,
-   "end": 35.309
-  },
-  {
-   "text": "on",
-   "start": 35.309,
-   "end": 35.358
-  },
-  {
-   "text": "évite",
-   "start": 35.358,
-   "end": 35.639
-  },
-  {
-   "text": "le",
-   "start": 35.639,
-   "end": 35.738
-  },
-  {
-   "text": "sport.",
-   "start": 35.738,
-   "end": 36.203
-  },
-  {
-   "text": "Le",
-   "start": 36.535,
-   "end": 36.706
-  },
-  {
-   "text": "petit",
-   "start": 36.706,
-   "end": 36.939
-  },
-  {
-   "text": "caillot",
-   "start": 36.939,
-   "end": 37.258
-  },
-  {
-   "text": "doit",
-   "start": 37.258,
-   "end": 37.38
-  },
-  {
-   "text": "bien",
-   "start": 37.38,
-   "end": 37.539
-  },
-  {
-   "text": "tenir.",
-   "start": 37.54,
-   "end": 38.005
-  },
-  {
-   "text": "Et",
-   "start": 38.946,
-   "end": 39.093
-  },
-  {
-   "text": "si",
-   "start": 39.093,
-   "end": 39.228
+   "text": "Si",
+   "start": 30.98,
+   "end": 31.176
   },
   {
    "text": "ça",
-   "start": 39.228,
-   "end": 39.35
+   "start": 31.176,
+   "end": 31.298
   },
   {
    "text": "saigne",
-   "start": 39.35,
-   "end": 39.595
+   "start": 31.298,
+   "end": 31.556
   },
   {
-   "text": "encore",
-   "start": 39.595,
-   "end": 39.84
-  },
-  {
-   "text": "après",
-   "start": 39.84,
-   "end": 40.049
-  },
-  {
-   "text": "vingt",
-   "start": 40.049,
-   "end": 40.183
-  },
-  {
-   "text": "minutes,",
-   "start": 40.184,
-   "end": 40.588
-  },
-  {
-   "text": "après",
-   "start": 40.796,
-   "end": 40.98
-  },
-  {
-   "text": "un",
-   "start": 40.98,
-   "end": 41.054
-  },
-  {
-   "text": "choc",
-   "start": 41.054,
-   "end": 41.262
-  },
-  {
-   "text": "sur",
-   "start": 41.262,
-   "end": 41.36
-  },
-  {
-   "text": "la",
-   "start": 41.36,
-   "end": 41.458
-  },
-  {
-   "text": "tête,",
-   "start": 41.458,
-   "end": 41.789
-  },
-  {
-   "text": "ou",
-   "start": 42.181,
-   "end": 42.218
-  },
-  {
-   "text": "si",
-   "start": 42.218,
-   "end": 42.316
-  },
-  {
-   "text": "tu",
-   "start": 42.316,
-   "end": 42.426
-  },
-  {
-   "text": "prends",
-   "start": 42.426,
-   "end": 42.61
-  },
-  {
-   "text": "un",
-   "start": 42.61,
-   "end": 42.647
-  },
-  {
-   "text": "traitement",
-   "start": 42.647,
-   "end": 43.002
-  },
-  {
-   "text": "qui",
-   "start": 43.002,
-   "end": 43.137
-  },
-  {
-   "text": "fluidifie",
-   "start": 43.137,
-   "end": 43.566
-  },
-  {
-   "text": "le",
-   "start": 43.566,
-   "end": 43.676
-  },
-  {
-   "text": "sang :",
-   "start": 43.676,
-   "end": 43.983
-  },
-  {
-   "text": "consulte",
-   "start": 44.252,
-   "end": 44.693
-  },
-  {
-   "text": "vite,",
-   "start": 44.693,
-   "end": 45.0
-  },
-  {
-   "text": "ou",
-   "start": 45.208,
-   "end": 45.257
-  },
-  {
-   "text": "appelle",
-   "start": 45.257,
-   "end": 45.502
-  },
-  {
-   "text": "le",
-   "start": 45.502,
-   "end": 45.612
-  },
-  {
-   "text": "quinze.",
-   "start": 45.612,
-   "end": 46.09
-  },
-  {
-   "text": "Alors,",
-   "start": 47.078,
-   "end": 47.415
-  },
-  {
-   "text": "la",
-   "start": 47.607,
-   "end": 47.667
-  },
-  {
-   "text": "prochaine",
-   "start": 47.667,
-   "end": 48.016
-  },
-  {
-   "text": "fois :",
-   "start": 48.016,
-   "end": 48.304
-  },
-  {
-   "text": "la",
-   "start": 48.653,
-   "end": 48.737
-  },
-  {
-   "text": "tête",
-   "start": 48.737,
-   "end": 48.953
-  },
-  {
-   "text": "en",
-   "start": 48.953,
-   "end": 49.001
-  },
-  {
-   "text": "avant…",
-   "start": 49.001,
-   "end": 49.374
-  },
-  {
-   "text": "et",
-   "start": 49.722,
-   "end": 49.794
+   "text": "encore,",
+   "start": 31.556,
+   "end": 31.948
   },
   {
    "text": "on",
-   "start": 49.794,
-   "end": 49.879
+   "start": 32.242,
+   "end": 32.267
   },
   {
-   "text": "pince !",
-   "start": 49.879,
-   "end": 50.347
+   "text": "peut",
+   "start": 32.267,
+   "end": 32.365
+  },
+  {
+   "text": "aussi",
+   "start": 32.365,
+   "end": 32.561
+  },
+  {
+   "text": "mettre",
+   "start": 32.561,
+   "end": 32.781
+  },
+  {
+   "text": "une",
+   "start": 32.781,
+   "end": 32.855
+  },
+  {
+   "text": "mèche",
+   "start": 32.855,
+   "end": 33.039
+  },
+  {
+   "text": "dans",
+   "start": 33.039,
+   "end": 33.124
+  },
+  {
+   "text": "la",
+   "start": 33.124,
+   "end": 33.198
+  },
+  {
+   "text": "narine :",
+   "start": 33.198,
+   "end": 33.615
+  },
+  {
+   "text": "un",
+   "start": 34.031,
+   "end": 34.105
+  },
+  {
+   "text": "petit",
+   "start": 34.105,
+   "end": 34.338
+  },
+  {
+   "text": "tampon",
+   "start": 34.338,
+   "end": 34.693
+  },
+  {
+   "text": "qui",
+   "start": 34.693,
+   "end": 34.852
+  },
+  {
+   "text": "aide",
+   "start": 34.852,
+   "end": 34.938
+  },
+  {
+   "text": "le",
+   "start": 34.938,
+   "end": 35.048
+  },
+  {
+   "text": "sang",
+   "start": 35.048,
+   "end": 35.257
+  },
+  {
+   "text": "à",
+   "start": 35.257,
+   "end": 35.306
+  },
+  {
+   "text": "former",
+   "start": 35.306,
+   "end": 35.575
+  },
+  {
+   "text": "un",
+   "start": 35.575,
+   "end": 35.649
+  },
+  {
+   "text": "caillot.",
+   "start": 35.649,
+   "end": 36.066
+  },
+  {
+   "text": "Ensuite,",
+   "start": 37.05,
+   "end": 37.614
+  },
+  {
+   "text": "pendant",
+   "start": 37.761,
+   "end": 37.969
+  },
+  {
+   "text": "quelques",
+   "start": 37.969,
+   "end": 38.251
+  },
+  {
+   "text": "heures :",
+   "start": 38.251,
+   "end": 38.594
+  },
+  {
+   "text": "on",
+   "start": 39.011,
+   "end": 39.035
+  },
+  {
+   "text": "ne",
+   "start": 39.035,
+   "end": 39.121
+  },
+  {
+   "text": "se",
+   "start": 39.121,
+   "end": 39.244
+  },
+  {
+   "text": "mouche",
+   "start": 39.244,
+   "end": 39.44
+  },
+  {
+   "text": "pas",
+   "start": 39.44,
+   "end": 39.562
+  },
+  {
+   "text": "fort,",
+   "start": 39.562,
+   "end": 39.954
+  },
+  {
+   "text": "et",
+   "start": 40.285,
+   "end": 40.347
+  },
+  {
+   "text": "on",
+   "start": 40.347,
+   "end": 40.396
+  },
+  {
+   "text": "évite",
+   "start": 40.396,
+   "end": 40.677
+  },
+  {
+   "text": "le",
+   "start": 40.677,
+   "end": 40.776
+  },
+  {
+   "text": "sport.",
+   "start": 40.776,
+   "end": 41.241
+  },
+  {
+   "text": "Le",
+   "start": 41.573,
+   "end": 41.744
+  },
+  {
+   "text": "petit",
+   "start": 41.744,
+   "end": 41.977
+  },
+  {
+   "text": "caillot",
+   "start": 41.977,
+   "end": 42.296
+  },
+  {
+   "text": "doit",
+   "start": 42.296,
+   "end": 42.418
+  },
+  {
+   "text": "bien",
+   "start": 42.418,
+   "end": 42.577
+  },
+  {
+   "text": "tenir.",
+   "start": 42.578,
+   "end": 43.043
+  },
+  {
+   "text": "Et",
+   "start": 43.984,
+   "end": 44.131
+  },
+  {
+   "text": "si",
+   "start": 44.131,
+   "end": 44.266
+  },
+  {
+   "text": "ça",
+   "start": 44.266,
+   "end": 44.388
+  },
+  {
+   "text": "saigne",
+   "start": 44.388,
+   "end": 44.633
+  },
+  {
+   "text": "encore",
+   "start": 44.633,
+   "end": 44.878
+  },
+  {
+   "text": "après",
+   "start": 44.878,
+   "end": 45.087
+  },
+  {
+   "text": "vingt",
+   "start": 45.087,
+   "end": 45.221
+  },
+  {
+   "text": "minutes,",
+   "start": 45.221,
+   "end": 45.626
+  },
+  {
+   "text": "après",
+   "start": 45.834,
+   "end": 46.018
+  },
+  {
+   "text": "un",
+   "start": 46.018,
+   "end": 46.092
+  },
+  {
+   "text": "choc",
+   "start": 46.092,
+   "end": 46.3
+  },
+  {
+   "text": "sur",
+   "start": 46.3,
+   "end": 46.398
+  },
+  {
+   "text": "la",
+   "start": 46.398,
+   "end": 46.496
+  },
+  {
+   "text": "tête,",
+   "start": 46.496,
+   "end": 46.827
+  },
+  {
+   "text": "ou",
+   "start": 47.219,
+   "end": 47.256
+  },
+  {
+   "text": "si",
+   "start": 47.256,
+   "end": 47.354
+  },
+  {
+   "text": "tu",
+   "start": 47.354,
+   "end": 47.464
+  },
+  {
+   "text": "prends",
+   "start": 47.464,
+   "end": 47.648
+  },
+  {
+   "text": "un",
+   "start": 47.648,
+   "end": 47.685
+  },
+  {
+   "text": "traitement",
+   "start": 47.685,
+   "end": 48.04
+  },
+  {
+   "text": "qui",
+   "start": 48.04,
+   "end": 48.175
+  },
+  {
+   "text": "fluidifie",
+   "start": 48.175,
+   "end": 48.604
+  },
+  {
+   "text": "le",
+   "start": 48.604,
+   "end": 48.714
+  },
+  {
+   "text": "sang :",
+   "start": 48.714,
+   "end": 49.021
+  },
+  {
+   "text": "consulte",
+   "start": 49.29,
+   "end": 49.731
+  },
+  {
+   "text": "vite,",
+   "start": 49.731,
+   "end": 50.038
+  },
+  {
+   "text": "ou",
+   "start": 50.246,
+   "end": 50.295
+  },
+  {
+   "text": "appelle",
+   "start": 50.295,
+   "end": 50.54
+  },
+  {
+   "text": "le",
+   "start": 50.54,
+   "end": 50.65
+  },
+  {
+   "text": "quinze.",
+   "start": 50.65,
+   "end": 51.128
+  },
+  {
+   "text": "Alors,",
+   "start": 52.116,
+   "end": 52.465
+  },
+  {
+   "text": "la",
+   "start": 52.669,
+   "end": 52.729
+  },
+  {
+   "text": "prochaine",
+   "start": 52.729,
+   "end": 53.09
+  },
+  {
+   "text": "fois :",
+   "start": 53.09,
+   "end": 53.39
+  },
+  {
+   "text": "la",
+   "start": 53.727,
+   "end": 53.799
+  },
+  {
+   "text": "tête",
+   "start": 53.799,
+   "end": 54.015
+  },
+  {
+   "text": "en",
+   "start": 54.015,
+   "end": 54.063
+  },
+  {
+   "text": "avant…",
+   "start": 54.063,
+   "end": 54.448
+  },
+  {
+   "text": "et",
+   "start": 54.772,
+   "end": 54.844
+  },
+  {
+   "text": "on",
+   "start": 54.845,
+   "end": 54.893
+  },
+  {
+   "text": "comprime !",
+   "start": 54.893,
+   "end": 55.457
   }
  ]
 }

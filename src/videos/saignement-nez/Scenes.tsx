@@ -1,6 +1,7 @@
 // Scènes de « Saignement de nez » (format court). Accroche sans texte : il lit, une goutte de sang tombe sur la page, le
 // nez saigne… et il bascule la tête en arrière. Puis l'idée reçue (vue en coupe : le sang file dans la gorge), le bon
-// geste (assis, tête en avant, se moucher une fois, pincer la partie molle 10 min, respirer par la bouche), après, quand
+// geste (assis, tête en avant, comprimer la partie molle avec un mouchoir ou une compresse 5 – 15 min en respirant par la
+// bouche, une mèche si ça saigne encore), après, quand
 // consulter, chute. Tout part d'un mot de la voix (`at`).
 import React from 'react';
 import {AbsoluteFill, Easing, interpolate, useCurrentFrame} from 'remotion';
@@ -172,7 +173,7 @@ export const Idees: React.FC = () => {
 	);
 };
 
-/** Minuteur rond « 10 min » qui se remplit. */
+/** Minuteur rond « 5 – 15 min » qui se remplit. */
 const Timer: React.FC<{at: number; fill: number}> = ({at: t0, fill}) => {
 	const frame = useCurrentFrame();
 	if (frame < t0) return null;
@@ -184,8 +185,8 @@ const Timer: React.FC<{at: number; fill: number}> = ({at: t0, fill}) => {
 				<circle cx={120} cy={120} r={112} fill={LPI.paper} stroke={N} strokeWidth={8} />
 				<circle cx={120} cy={120} r={r} fill="none" stroke={alpha(LPI.sky, 0.9)} strokeWidth={22} />
 				<circle cx={120} cy={120} r={r} fill="none" stroke={LPI.blue} strokeWidth={22} strokeDasharray={`${c * fill} ${c}`} transform="rotate(-90 120 120)" strokeLinecap="round" />
-				<text x={120} y={128} textAnchor="middle" fontFamily={FONT.title} fontWeight={900} fontSize={64} fill={N}>
-					10
+				<text x={120} y={126} textAnchor="middle" fontFamily={FONT.title} fontWeight={900} fontSize={50} fill={N}>
+					5 – 15
 				</text>
 				<text x={120} y={166} textAnchor="middle" fontFamily={FONT.title} fontWeight={800} fontSize={30} fill={N}>
 					min
@@ -201,14 +202,13 @@ export const Methode: React.FC = () => {
 	const ASSIEDS = at('methode', 'assieds-toi,');
 	const PENCHE = at('methode', 'penche');
 	const AVANT = at('methode', 'avant.');
-	const MOUCHE = at('methode', 'mouche-toi');
-	const CAILLOTS = at('methode', 'caillots.');
-	const PINCE = at('methode', 'pince');
+	const COMPRIME = at('methode', 'comprime');
 	const BAS = at('methode', 'bas');
 	const MOLLE = at('methode', 'molle,');
-	const OS = at('methode', "l'os.");
+	const OS = at('methode', "l'os,");
+	const MOUCHOIR = at('methode', 'mouchoir');
 	const TIENS = at('methode', 'tiens');
-	const DIX = at('methode', 'dix');
+	const CINQ = at('methode', 'cinq');
 	const RELACHER = at('methode', 'relâcher,');
 	const RESPIRANT = at('methode', 'respirant');
 	const HX = 0;
@@ -217,30 +217,29 @@ export const Methode: React.FC = () => {
 	const up = lin(frame, ASSIEDS - 6, ASSIEDS + 12);
 	const fwd = lin(frame, PENCHE - 2, AVANT + 6);
 	const tilt = -30 * (1 - up) + 24 * fwd;
-	const tissue = lin(frame, MOUCHE - 4, MOUCHE + 8) * (1 - lin(frame, CAILLOTS + 2, CAILLOTS + 14));
 	const bone = fadeIn(frame, BAS, 8);
-	const pinch = lin(frame, OS + 8, OS + 22);
+	// on comprime à travers une compresse (pas les doigts nus) : la main arrive au mot « mouchoir »
+	const pinch = lin(frame, MOUCHOIR - 8, MOUCHOIR + 8);
 	const breathe = fadeIn(frame, RESPIRANT - 2, 8);
-	const bleed = 1 - lin(frame, MOUCHE + 4, MOUCHE + 12) * 0.6 - pinch * 0.4;
+	const bleed = 1 - pinch * 0.7;
 	const nose = headPt(HEAD.nostril, tilt);
 	const soft = headPt(HEAD.soft, tilt);
 	const boneP = headPt(HEAD.bone, tilt);
 	const mouth = headPt(HEAD.mouth, tilt);
-	// gouttes qui tombent en avant (on voit que ça saigne encore) jusqu'au mouchoir
-	const drips = [AVANT - 4, AVANT + 12].map((t) => <Falling key={t} t0={t} t1={t + 16} x0={HX + nose.x} y0={HY + nose.y + 20} x1={HX + nose.x + 20} y1={1920} r={12} />);
+	// gouttes qui tombent en avant (on voit que ça saigne encore), puis plus rien une fois comprimé
+	const drips = [AVANT - 4, AVANT + 12, AVANT + 28].map((t) => <Falling key={t} t0={t} t1={t + 16} x0={HX + nose.x} y0={HY + nose.y + 20} x1={HX + nose.x + 20} y1={1920} r={12} />);
 	const titles: [number, number, string][] = [
 		[0, PENCHE - 4, 'Assieds-toi'],
-		[PENCHE - 4, MOUCHE - 4, 'Tête en *avant*'],
-		[MOUCHE - 4, PINCE - 4, 'Mouche-toi *une* *fois*'],
-		[PINCE - 4, TIENS - 4, 'Pince la partie *molle*'],
-		[TIENS - 4, 1e9, '*10* *minutes*'],
+		[PENCHE - 4, COMPRIME - 4, 'Tête en *avant*'],
+		[COMPRIME - 4, TIENS - 4, 'Comprime la partie *molle*'],
+		[TIENS - 4, 1e9, '*5* à *15* *minutes*'],
 	];
 	return (
 		<AbsoluteFill>
 			<Bg />
 			{drips}
 			<div style={{position: 'absolute', left: HX, top: HY}}>
-				<HeadSide width={1000} tilt={tilt} bleed={bleed} tissue={tissue} bone={bone * (1 - pinch * 0.3)} pinch={pinch} breathe={breathe} eyes="down" mood={frame >= TIENS ? 'calm' : 'worried'} shirt={LPI.pink} />
+				<HeadSide width={1000} tilt={tilt} bleed={bleed} bone={bone * (1 - pinch * 0.5)} pinch={pinch} pad breathe={breathe} eyes="down" mood={frame >= TIENS ? 'calm' : 'worried'} shirt={LPI.pink} />
 			</div>
 			<svg width={1080} height={1920} style={{position: 'absolute', inset: 0, overflow: 'visible'}}>
 				<g transform={`translate(${HX} ${HY})`}>
@@ -248,15 +247,18 @@ export const Methode: React.FC = () => {
 				</g>
 			</svg>
 			{titles.map(([a, b, t], i) => (
-				<Big key={t} from={i === 0 ? a : a + 6} to={b} text={t} size={100} y={150} center />
+				<Big key={t} from={i === 0 ? a : a + 6} to={b} text={t} size={96} y={150} center />
 			))}
-			<PointTag at={MOLLE - 2} to={TIENS - 4} x={880} y={1500} px={HX + soft.x} py={HY + soft.y} size={44} tone={LPI.pink}>
+			<PointTag at={MOLLE - 2} to={MOUCHOIR - 6} x={880} y={1500} px={HX + soft.x} py={HY + soft.y} size={44} tone={LPI.pink}>
 				partie molle
 			</PointTag>
-			<PointTag at={OS - 2} to={TIENS - 4} x={900} y={420} px={HX + boneP.x} py={HY + boneP.y} size={44} tone={LPI.paper}>
+			<PointTag at={OS - 2} to={MOUCHOIR - 6} x={900} y={420} px={HX + boneP.x} py={HY + boneP.y} size={44} tone={LPI.paper}>
 				l'os
 			</PointTag>
-			<Timer at={DIX - 2} fill={lin(frame, DIX, RELACHER + 30)} />
+			<PointTag at={MOUCHOIR - 2} to={TIENS - 4} x={640} y={1500} px={HX + soft.x + 40} py={HY + soft.y + 30} size={44} tone={LPI.sky}>
+				mouchoir ou compresse
+			</PointTag>
+			<Timer at={CINQ - 2} fill={lin(frame, CINQ, RELACHER + 30)} />
 			{frame >= RELACHER - 4 && frame < RESPIRANT - 2 ? (
 				<Note at={RELACHER - 4} to={RESPIRANT - 4} y={1560} size={46} tone={LPI.sky}>
 					sans relâcher
@@ -266,10 +268,44 @@ export const Methode: React.FC = () => {
 				par la bouche
 			</PointTag>
 			<Sfx name="whoosh" at={PENCHE} volume={0.05} />
-			<Sfx name="blow" at={MOUCHE + 6} volume={0.4} />
-			<Sfx name="pop" at={OS + 14} volume={0.08} />
-			<Sfx name="tick" at={DIX} volume={0.08} />
+			<Sfx name="pop" at={MOUCHOIR} volume={0.08} />
+			<Sfx name="tick" at={CINQ} volume={0.08} />
 			<Sfx name="ding" at={RELACHER + 30} volume={0.06} />
+		</AbsoluteFill>
+	);
+};
+
+/* ═══════════════════════════════ LA MÈCHE ═══════════════════════════════ */
+export const Meche: React.FC = () => {
+	const frame = useCurrentFrame();
+	const MECHE = at('meche', 'mèche');
+	const NARINE = at('meche', 'narine :');
+	const TAMPON = at('meche', 'tampon');
+	const CAILLOT = at('meche', 'caillot.');
+	const HX = -140;
+	const HY = 300;
+	const W = 1500;
+	const k = W / 1000;
+	const wick = lin(frame, MECHE - 4, NARINE + 6);
+	const nostril = {x: HX + HEAD.nostril.x * k, y: HY + HEAD.nostril.y * k};
+	return (
+		<AbsoluteFill>
+			<Bg tone={LPI.pink} />
+			<div style={{position: 'absolute', left: HX, top: HY}}>
+				<HeadSide width={W} tilt={0} bleed={0.5 * (1 - lin(frame, TAMPON, CAILLOT + 10))} wick={wick} eyes="open" mood="calm" shirt={LPI.pink} />
+			</div>
+			<Big from={0} to={MECHE - 6} text={'Ça saigne *encore*\u00a0?'} size={96} y={150} center />
+			<Big from={MECHE - 2} text={'Une *mèche*'} size={104} y={150} center />
+			<PointTag at={TAMPON - 4} x={300} y={1600} px={nostril.x - 6} py={nostril.y - 10} size={44} tone={LPI.sky}>
+				un petit tampon
+			</PointTag>
+			{frame >= CAILLOT - 6 ? (
+				<Note at={CAILLOT - 6} y={1720} size={44} tone={LPI.pink}>
+					il aide à former un caillot
+				</Note>
+			) : null}
+			<Sfx name="pop" at={MECHE} volume={0.08} />
+			<Sfx name="ding" at={CAILLOT + 8} volume={0.06} />
 		</AbsoluteFill>
 	);
 };
@@ -354,19 +390,19 @@ export const Fin: React.FC = () => {
 	const frame = useCurrentFrame();
 	const TETE = at('fin', 'tête');
 	const AVANT = at('fin', 'avant…');
-	const PINCE = at('fin', 'pince !');
+	const PINCE = at('fin', 'comprime !');
 	const HX = 0;
 	const HY = 560;
 	const tilt = 24 * lin(frame, TETE - 4, AVANT + 6);
-	const pinch = lin(frame, PINCE - 6, PINCE + 6);
+	const pinch = lin(frame, PINCE - 6, PINCE + 6); // à travers une compresse
 	return (
 		<AbsoluteFill>
 			<Bg />
 			<div style={{position: 'absolute', left: HX, top: HY}}>
-				<HeadSide width={1000} tilt={tilt} pinch={pinch} eyes="down" mood="happy" shirt={LPI.pink} />
+				<HeadSide width={1000} tilt={tilt} pinch={pinch} pad eyes="down" mood="happy" shirt={LPI.pink} />
 			</div>
 			<Big from={TETE - 4} to={PINCE - 6} text={'Tête en *avant*…'} size={104} y={200} center />
-			<Big from={PINCE - 4} text={'…et on *pince* !'} size={104} y={200} center />
+			<Big from={PINCE - 4} text={'…et on *comprime*\u00a0!'} size={104} y={200} center />
 			<Burst at={PINCE} x={HX + headPt(HEAD.soft, 24).x} y={HY + headPt(HEAD.soft, 24).y} r={200} n={12} />
 			<Sfx name="whoosh" at={TETE - 4} volume={0.05} />
 			<Sfx name="ding" at={PINCE} volume={0.08} />
