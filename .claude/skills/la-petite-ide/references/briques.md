@@ -74,14 +74,15 @@ Briques « arrêt cardiaque » réutilisables : moniteur ECG (rythme normal, fib
 
 - `BeeG` — Abeille vue de dessus, tête vers +x (longueur ≈ 150 à `s` = 1) : ailes qui battent si `fly` > 0, abdomen rayé, dard.
 - `HAND` — Repère 1000 × 1000 de la main posée à plat : point de la piqûre (dos de la main).
-- `HandTopG` — Main droite posée à plat, vue de dessus (dos de la main, doigts vers le haut, repère 1000 × 1000, le poignet sort en bas).
+- `HandTopG` — Main droite posée à plat (`real` : vraie couleur de peau), vue de dessus (dos de la main, doigts vers le haut, repère 1000 × 1000, le poignet sort en bas).
 - `StingerG` — Dard planté dans la peau, vu de dessus (repère de la peau, point d'entrée en `x`, `y`, taille `s`) : tige barbelée en biais, poche de venin au bout qui pulse.
 - `VenomSpread` — Venin qui se répand dans la peau autour de (x, y) : petits points roses qui s'éloignent (`spread` 0 → 1).
 - `WhealG` — Papule : gonflement rose surélevé autour de (x, y) (`k` 0 → 1).
 - `CardG` — Carte (type carte bancaire) vue de dessus, bord gauche en (`x`, `y` = milieu du bord), largeur `w`.
 - `PinchTipsG` — Deux bouts de doigts (pouce + index) qui descendent pincer en (`x`, `y`) ; `gap` écart entre les deux (0 = serrés).
 - `IceCloth` — Glaçon enveloppé dans un linge (repère 300 × 220), petits flocons de froid.
-- `PicnicBg` — Nappe de pique-nique vue de dessus (vichy rose), assiette, verre de jus, lumière de soleil.
+- `REAL_COLORS`
+- `PicnicBg` — Pique-nique du dimanche vu de dessus, en couleurs réalistes : herbe, nappe vichy rouge et blanc (plis), panier en osier brun, pomme rouge, sandwich-baguette, verres de jus d'orange, assiettes avec fraises, ombres de feuillage.
 - `SwellFaceIcon` — Visage qui gonfle (lèvres et paupières).
 - `BreathAlertIcon` — Respirer difficilement : poumons + « ! ».
 - `MouthStingIcon` — Piqûre dans la bouche : bouche ouverte + petite abeille.
@@ -650,7 +651,7 @@ Briques « température » réutilisables : normes adulte (zones), thermomètre 
 ## `tick.tsx`
 « Une tique : comment bien la retirer ? » : peau en très gros plan (grain, pores, fins poils, ombre douce), tique vue de dessus (rostre, écusson, 8 pattes articulées qui bougent, gorgée de sang ou non), tire-tique (crochet fendu qui se glisse dessous et tourne), plaque rouge qui s'étend (érythème migrant), petits flacons et pictos. Même rendu soigné que bandage.tsx (peau opaque en dégradé, contours fins, ombres floutées). Couleurs de la marque uniquement.
 
-- `SkinG` — Peau en très gros plan (repère 1000 × 1000, déborde largement pour remplir l'écran) : dégradé, grain en losanges, pores, fins poils.
+- `SkinG` — Peau en très gros plan (`real` : vraie couleur de peau, pour une mise en situation ; repère 1000 × 1000, déborde largement pour remplir l'écran) : dégradé, grain en losanges, pores, fins poils.
 - `TickG` — Tique vue de dessus, centre (`x`, `y`), longueur ≈ 40 × `s` unités, tête vers `ang` (degrés, 0 = vers le haut) : rostre, écusson brillant, corps, 8 pattes articulées (`walk` : elles bougent).
 - `TickHookG` — Tire-tique façon « Tick Twister » (crochet plat en plastique blanc, ≈ 5 cm) vu de dessus, dans le repère de la peau : la fourche fendue en V est en (`x`, `y`) (le fond du V attrape la tique au ras de la peau), le corps part selon `ang`…
 - `LabelBottle` — Petit flacon étiqueté (repère 120 × 200) : `label` en capitales, `tone` couleur du bouchon.

@@ -22,7 +22,7 @@ const lin = (f: number, a: number, b: number) => interpolate(f, [a, b], [0, 1], 
 /** Peau en très gros plan centrée en (cx, cy), repère 1000 × 1000 affiché sur W pixels. */
 const Skin: React.FC<{cx: number; cy: number; W?: number; children?: React.ReactNode; red?: number}> = ({cx, cy, W = 1600, children, red = 0}) => (
 	<svg width={W} height={W} viewBox="0 0 1000 1000" style={{position: 'absolute', left: cx - W / 2, top: cy - W / 2, overflow: 'visible'}}>
-		<SkinG red={red}>{children}</SkinG>
+		<SkinG red={red} real>{children}</SkinG>
 	</svg>
 );
 /** Point du repère de la peau → écran, pour une `Skin` en (cx, cy) de largeur W. */
@@ -58,7 +58,7 @@ export const Hook: React.FC = () => {
 	const ABEILLE = at('intro', 'abeille');
 	const POSE = at('intro', 'pose');
 	const AIE = at('intro', 'aïe !');
-	const PIQUER = at('intro', 'piquer…');
+	const PIQUER = at('intro', 'pique…');
 	const DARD = at('intro', 'dard');
 	const PLANTE = at('intro', 'planté.');
 	const HX = 40;
@@ -83,13 +83,13 @@ export const Hook: React.FC = () => {
 				<AbsoluteFill style={{transform: `translate(${(540 - S.x) * dive}px, ${(1000 - S.y) * dive}px) scale(${zoom})`, transformOrigin: `${S.x}px ${S.y}px`}}>
 					<PicnicBg />
 					<svg width={1000} height={1000} viewBox="0 0 1000 1000" style={{position: 'absolute', left: HX + jerk, top: HY - jerk * 0.5, overflow: 'visible'}}>
-						<HandTopG>
+						<HandTopG real>
 							{frame >= AIE ? <circle cx={HAND.sting.x} cy={HAND.sting.y} r={8} fill={alpha(LPI.pink, 0.95)} /> : null}
 						</HandTopG>
 					</svg>
 					{frame >= ABEILLE - 30 && leave < 1 ? (
 						<svg width={1080} height={1920} style={{position: 'absolute', inset: 0, overflow: 'visible'}}>
-							<BeeG x={bx + (landed ? Math.sin(frame / 3) * 2 : 0)} y={by} s={1.5} ang={landed ? -70 + Math.sin(frame / 7) * 6 : bang} fly={landed ? 0.15 : 1} />
+							<BeeG x={bx + (landed ? Math.sin(frame / 3) * 2 : 0)} y={by} s={1.5} ang={landed ? -70 + Math.sin(frame / 7) * 6 : bang} fly={landed ? 0.15 : 1} real />
 						</svg>
 					) : null}
 				</AbsoluteFill>
@@ -97,7 +97,7 @@ export const Hook: React.FC = () => {
 			{skinIn > 0 ? (
 				<AbsoluteFill style={{opacity: skinIn}}>
 					<Skin cx={540} cy={1000} red={0.5 + 0.3 * lin(frame, DARD, PLANTE)}>
-						<StingerG x={500} y={500} s={3.2} />
+						<StingerG x={500} y={500} s={3.2} real />
 						{frame >= DARD - 2 ? <circle cx={560} cy={420} r={150 + 8 * Math.sin(frame / 5)} fill="none" stroke={LPI.pink} strokeWidth={8} strokeDasharray="20 14" opacity={fadeIn(frame, DARD - 2, 6)} /> : null}
 					</Skin>
 				</AbsoluteFill>
@@ -131,9 +131,9 @@ export const Idees: React.FC = () => {
 		<AbsoluteFill>
 			<Skin cx={540} cy={1000} red={0.6 + 0.4 * spread}>
 				<VenomSpread x={500} y={500} spread={spread} r={260} />
-				<StingerG x={500} y={500} s={3.2} squeeze={squeeze} />
+				<StingerG x={500} y={500} s={3.2} squeeze={squeeze} real />
 				<g transform={`translate(0 ${-(1 - down) * 700})`}>
-					<PinchTipsG x={SAC.x} y={SAC.y + 30} gap={interpolate(squeeze, [0, 1], [110, 6])} s={1.6} />
+					<PinchTipsG x={SAC.x} y={SAC.y + 30} gap={interpolate(squeeze, [0, 1], [110, 6])} s={1.6} real />
 				</g>
 			</Skin>
 			<Big from={SURTOUT - 2} text={'Surtout *pas* !'} size={116} y={150} center />
@@ -175,7 +175,7 @@ export const Methode: React.FC = () => {
 		<AbsoluteFill>
 			<Skin cx={540} cy={1000} red={0.6}>
 				{/* le dard reste planté jusqu'au passage de la carte, puis il est poussé dehors (StingerOverlay) */}
-				{out <= 0 ? <StingerG x={500} y={500} s={3.2} /> : <circle cx={500} cy={500} r={22} fill={alpha(LPI.pink, 0.9)} />}
+				{out <= 0 ? <StingerG x={500} y={500} s={3.2} real /> : <circle cx={500} cy={500} r={22} fill={alpha(LPI.pink, 0.9)} />}
 				<CardG x={edge} y={480} w={620} />
 			</Skin>
 			<StingerOverlay push={push} />
@@ -205,7 +205,7 @@ const StingerOverlay: React.FC<{push: number}> = ({push}) => {
 	return (
 		<svg width={1600} height={1600} viewBox="0 0 1000 1000" style={{position: 'absolute', left: 540 - 800, top: 1000 - 800, overflow: 'visible'}}>
 			<g transform={`translate(${push} ${k * 30}) rotate(${-k * 70} 500 500)`} opacity={1 - Math.max(0, (k - 0.75) / 0.25)}>
-				<StingerG x={500} y={500} s={3.2} />
+				<StingerG x={500} y={500} s={3.2} real />
 			</g>
 		</svg>
 	);
@@ -225,7 +225,7 @@ export const Soins: React.FC = () => {
 			<Bg />
 			<div style={{position: 'absolute', left: 540 - 210, top: 190}}>
 				<SkinMedallion size={420}>
-					<SkinG red={0.6 * (1 - 0.5 * fadeIn(frame, FROID + 6, 30))} tint={fadeIn(frame, LAVE + 4, 10) * (1 - fadeIn(frame, FROID, 10))}>
+					<SkinG real red={0.6 * (1 - 0.5 * fadeIn(frame, FROID + 6, 30))} tint={fadeIn(frame, LAVE + 4, 10) * (1 - fadeIn(frame, FROID, 10))}>
 						<circle cx={500} cy={500} r={12} fill={alpha(LPI.pink, 0.95)} stroke={alpha(N, 0.4)} strokeWidth={2} />
 					</SkinG>
 				</SkinMedallion>
@@ -353,12 +353,12 @@ export const Fin: React.FC = () => {
 			<Big from={LAISSE + 2} to={BESOIN - 4} text={'Pas de *dard*'} size={108} y={180} center />
 			<Big from={BESOIN + 2} text={'Pas besoin de *gratter* !'} size={92} y={180} center />
 			<svg width={1080} height={1920} style={{position: 'absolute', inset: 0, overflow: 'visible'}}>
-				<BeeG x={wx} y={wy} s={2.2} ang={160 + Math.sin(frame / 8) * 10} wasp />
+				<BeeG x={wx} y={wy} s={2.2} ang={160 + Math.sin(frame / 8) * 10} wasp real />
 			</svg>
 			{frame >= DARD - 6 ? (
 				<div style={{position: 'absolute', left: 540 - 230, top: 820, transform: `scale(${popAt(frame, DARD - 6)})`}}>
 					<SkinMedallion size={460}>
-						<SkinG red={0.5}>
+						<SkinG real red={0.5}>
 							<circle cx={500} cy={500} r={10} fill={alpha(LPI.pink, 0.95)} />
 						</SkinG>
 					</SkinMedallion>

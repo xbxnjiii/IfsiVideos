@@ -17,6 +17,11 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
 
 - Couleurs uniquement : `#4E7AC7` bleu, `#C5D8F4` bleu clair, `#F8F9FC` fond blanc cassé, `#EAA7C1` rose,
   `#2D3A5A` bleu nuit (+ transparences). Exceptions : images officielles de la mascotte et logos.
+- **Mise en situation = le plus réaliste possible** (demandé, règle générale) : tout ce qui pose la situation vécue
+  (décor, objets, nourriture, insectes, peau de la personne) prend ses **vraies couleurs** (nappe vichy rouge et blanc,
+  panier en osier brun, pomme rouge, abeille jaune et noir, peau couleur chair…). Les 5 couleurs restent pour les
+  explications (titres, cartes, pastilles, schémas). Briques : `REAL_COLORS` / `PicnicBg` de `bee.tsx`, props `real`
+  (`BeeG`, `HandTopG`, `PinchTipsG`, `StingerG`, `SkinG`).
 - Mascotte : **uniquement les images officielles** (`public/brand/mascotte/`, index visuel
   `docs/lpi/mascotte-index.webp`), jamais redessinée, **jamais retournée en miroir**.
   **Bustes libres, sans cadre** (`<MascotActor busts="free">` : sticker détouré, bas en fondu) —
@@ -337,12 +342,14 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   saigne ! » ; dans un titre, l'accent ne marche pas sur un mot à trait d'union (« Assieds-\*toi\* » s'affichait tel quel).
   Storyboard `docs/lpi/storyboard-saignement-nez.md`.
   En attente : le propriétaire fait regarder la vidéo à quelqu'un avant de passer à la voix Laura.
-- `Piqure-Abeille` (n° 44, ≈ 49 s, voix gratuite d'abord, thème libre) : accroche sans texte (pique-nique vu de dessus, une
+- `Piqure-Abeille` (n° 44, ≈ 49 s, voix gratuite d'abord, thème libre) : accroche sans texte, voix « Petit pique-nique du
+  dimanche, en famille… et là, une abeille se pose sur ta main… et aïe ! Elle te pique… » (demandée) ; pique-nique refait
+  **réaliste** à la demande (herbe, nappe vichy rouge et blanc, panier en osier brun, pomme rouge, sandwich-baguette, jus
+  d'orange, fraises, ombres de feuillage ; abeille jaune et noir, main et peau couleur chair, dard brun) ; une
   abeille se pose sur la main et pique, plongée sur la peau : le dard planté avec sa poche de venin), idée reçue (le pincer
   avec les doigts : on presse le venin), gratter avec le bord d'une carte (le bord pousse le dard), eau + savon, froid dans
   un linge ≈ 10 min, ce qui est normal (rougeur, gonflement, douleur, quelques jours), le 15 (visage / gorge qui gonfle, mal
-  à respirer, piqûre dans la bouche), chute « la guêpe ne laisse pas son dard ». L'abeille reste aux couleurs de la marque
-  (rayures rose / bleu nuit, pas de jaune). Brique `src/brand/bee.tsx`. Voix : « Aïe ! » seul était lu « Rahé », « Ouille ! »
+  à respirer, piqûre dans la bouche), chute « la guêpe ne laisse pas son dard ». Brique `src/brand/bee.tsx`. Voix : « Aïe ! » seul était lu « Rahé », « Ouille ! »
   « Will » → « …sur ta main… et aïe ! » (entendu « et aille », même son). Storyboard `docs/lpi/storyboard-piqure-abeille.md`.
 
 ## Voix ElevenLabs « Laura » (choisie par le propriétaire pour les nouvelles vidéos)

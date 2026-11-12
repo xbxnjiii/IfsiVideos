@@ -23,19 +23,19 @@ const rnd = (i: number) => {
 };
 
 /**
- * Peau en très gros plan (repère 1000 × 1000, déborde largement pour remplir l'écran) : dégradé, grain en losanges,
+ * Peau en très gros plan (`real` : vraie couleur de peau, pour une mise en situation ; repère 1000 × 1000, déborde largement pour remplir l'écran) : dégradé, grain en losanges,
  * pores, fins poils. `red` 0 → 1 : petite rougeur au centre ; `ring` 0 → 1 : plaque rouge qui s'étend (érythème migrant,
  * centre plus clair) ; `tint` voile d'antiseptique. `children` : calques dans le même repère (tique, outil…).
  */
-export const SkinG: React.FC<{red?: number; ring?: number; tint?: number; children?: React.ReactNode}> = ({red = 0, ring = 0, tint = 0, children}) => {
+export const SkinG: React.FC<{red?: number; ring?: number; tint?: number; real?: boolean; children?: React.ReactNode}> = ({red = 0, ring = 0, tint = 0, real = false, children}) => {
 	const id = React.useId().replace(/:/g, '');
 	const R = 60 + 380 * cl(ring);
 	return (
 		<g>
 			<defs>
 				<radialGradient id={`sk${id}`} cx="0.45" cy="0.4" r="0.8">
-					<stop offset="0" stopColor={SKIN_HI} />
-					<stop offset="1" stopColor={SKIN_LO} />
+					<stop offset="0" stopColor={real ? '#F7D8C0' : SKIN_HI} />
+					<stop offset="1" stopColor={real ? '#E2AC88' : SKIN_LO} />
 				</radialGradient>
 				<radialGradient id={`em${id}`} cx="0.5" cy="0.5" r="0.5">
 					<stop offset="0" stopColor={alpha(LPI.pink, 0.55)} />
