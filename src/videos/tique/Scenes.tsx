@@ -7,7 +7,8 @@ import {Presser} from '../../brand/bandage';
 import {Big, fadeIn, Flash, Fly, Note, PointTag, popAt, RowCard} from '../../brand/bold';
 import {Faucet, Microbe} from '../../brand/hands';
 import {FeverIcon} from '../../brand/icons';
-import {DayChip} from '../../brand/injury';
+import {DayChip, Walker, walkerArm} from '../../brand/injury';
+import {ForestBg} from '../../brand/forest';
 import {Burst, Camera} from '../../brand/motion3';
 import {AntisepticBottle} from '../../brand/sampling';
 import {Sfx} from '../../brand/Sfx';
@@ -53,39 +54,100 @@ const Cross: React.FC<{at: number; size?: number}> = ({at: t0, size = 240}) => {
 	);
 };
 
-/* ═══════════════════════════════ ACCROCHE : LE PETIT POINT NOIR ═══════════════════════════════ */
+/* ═══════════════════════════════ ACCROCHE : LA BALADE, PUIS LE PETIT POINT NOIR ═══════════════════════════════ */
+/** Le promeneur (Walker de 420 px) : il s'arrête pile sous la branche, bras le long du corps. */
+const MAN = {W: 420, ground: 1500, x0: -460, x1: 300};
+const MAN_K = MAN.W / 300;
+const MAN_TOP = MAN.ground - 590 * MAN_K;
+const PHASE_END = 5 * Math.PI;
+const arm = walkerArm(PHASE_END);
+/** Le point du bras où tombe la tique (milieu de l'avant-bras), à l'écran une fois l'homme arrêté. */
+const LAND = {x: MAN.x1 + ((arm[1][0] + arm[2][0]) / 2) * MAN_K, y: MAN_TOP + ((arm[1][1] + arm[2][1]) / 2) * MAN_K};
+const BRANCH = {x: LAND.x, y: 700};
+
 export const Hook: React.FC = () => {
 	const frame = useCurrentFrame();
+	const QUELQUE = at('intro', 'quelque');
+	const BRAS = at('intro', 'bras.');
+	const QUOI = at('intro', 'quoi ?');
 	const POINT = at('intro', 'point');
-	const FROTTES = at('intro', 'frottes.');
+	const FROTTES = at('intro', 'frottes…');
 	const TIQUE = at('intro', 'tique !');
+	// 1. il marche sur le sentier et s'arrête sous la branche
+	const walk = interpolate(frame, [0, QUELQUE + 6], [0, 1], {...clamp, easing: Easing.out(Easing.quad)});
+	const manX = interpolate(walk, [0, 1], [MAN.x0, MAN.x1]);
+	const phase = walk * PHASE_END;
+	// 2. la tique tombe de la feuille sur son bras
+	const fall = interpolate(frame, [QUELQUE, BRAS], [0, 1], {...clamp, easing: Easing.in(Easing.quad)});
+	const tx = BRANCH.x + 14 * Math.sin(fall * 9) * (1 - fall);
+	const ty = interpolate(fall, [0, 1], [BRANCH.y, LAND.y - 6]);
+	// 3. « C'est quoi ? » : la caméra plonge sur le bras… et on arrive sur la peau
+	const dive = lin(frame, QUOI - 4, QUOI + 20);
+	const zf = 1 + 7 * dive * dive;
+	const skinIn = lin(frame, QUOI + 12, QUOI + 22);
+	// 4. sur la peau : le point noir, le doigt qui frotte, puis le zoom sur la tique
 	const z = 1 + 6 * lin(frame, TIQUE - 8, TIQUE + 16);
-	// le doigt frotte… le point ne bouge pas
 	const rubOn = frame >= FROTTES - 22 && frame < TIQUE - 4;
 	const rubX = 500 + 70 * Math.sin((frame - FROTTES) / 3);
 	return (
 		<AbsoluteFill>
-			<AbsoluteFill style={{transform: `scale(${z})`, transformOrigin: '540px 960px'}}>
-				<Skin cx={540} cy={960} red={fadeIn(frame, TIQUE, 10)}>
-					<TickG x={500} y={500} walk={frame > TIQUE ? 0.7 : 0} buried={1} fed={0.15} />
-					{rubOn ? (
-						<g opacity={fadeIn(frame, FROTTES - 22, 5) * (1 - fadeIn(frame, TIQUE - 10, 5))}>
-							<Presser x={rubX} y={530} press={0.5 + 0.5 * Math.sin((frame - FROTTES) / 1.5)} rot={-14} />
-						</g>
+			{skinIn < 1 ? (
+				<AbsoluteFill style={{transform: `translate(${(540 - LAND.x) * dive}px, ${(960 - LAND.y) * dive}px) scale(${zf})`, transformOrigin: `${LAND.x}px ${LAND.y}px`}}>
+					<ForestBg ground={MAN.ground} branch={BRANCH} drift={walk} />
+					<div style={{position: 'absolute', left: manX, top: MAN_TOP}}>
+						<Walker width={MAN.W} pose="walk" phase={phase} hair="man" shirt={LPI.pink} tee jeans />
+					</div>
+					{fall > 0 ? (
+						<svg width={1080} height={1920} style={{position: 'absolute', inset: 0, overflow: 'visible'}}>
+							{fall < 1 ? <line x1={tx} y1={ty - 70 * fall} x2={tx} y2={ty - 8} stroke={alpha(N, 0.25)} strokeWidth={5} strokeLinecap="round" strokeDasharray="8 8" /> : null}
+							<g transform={`translate(${tx} ${ty}) scale(2.2)`}>
+								{[-1, 1].map((sd) => [0, 1, 2, 3].map((i) => <path key={`${sd}${i}`} d={`M0 0 l${sd * 7} ${-4 + i * 3}`} stroke={N} strokeWidth={1.5} />))}
+								<ellipse rx={4.5} ry={5.5} fill={N} />
+							</g>
+						</svg>
 					) : null}
-				</Skin>
-			</AbsoluteFill>
-			{/* le petit point, désigné sans texte : un anneau qui pulse */}
-			{frame >= POINT - 2 && frame < FROTTES - 22 ? (
-				<svg width={1080} height={1920} style={{position: 'absolute', inset: 0}}>
-					<circle cx={540} cy={960} r={60 + 8 * Math.sin(frame / 3)} fill="none" stroke={LPI.pink} strokeWidth={7} strokeDasharray="16 12" opacity={fadeIn(frame, POINT - 2, 6)} />
-				</svg>
+					<Question at={QUOI - 2} x={LAND.x + 90} y={LAND.y - 120} />
+				</AbsoluteFill>
+			) : null}
+			{skinIn > 0 ? (
+				<AbsoluteFill style={{opacity: skinIn}}>
+					<AbsoluteFill style={{transform: `scale(${z})`, transformOrigin: '540px 960px'}}>
+						<Skin cx={540} cy={960} red={fadeIn(frame, TIQUE, 10)}>
+							<TickG x={500} y={500} walk={frame > TIQUE ? 0.7 : 0} buried={1} fed={0.15} />
+							{rubOn ? (
+								<g opacity={fadeIn(frame, FROTTES - 22, 5) * (1 - fadeIn(frame, TIQUE - 10, 5))}>
+									<Presser x={rubX} y={530} press={0.5 + 0.5 * Math.sin((frame - FROTTES) / 1.5)} rot={-14} />
+								</g>
+							) : null}
+						</Skin>
+					</AbsoluteFill>
+					{frame >= POINT - 2 && frame < FROTTES - 22 ? (
+						<svg width={1080} height={1920} style={{position: 'absolute', inset: 0}}>
+							<circle cx={540} cy={960} r={60 + 8 * Math.sin(frame / 3)} fill="none" stroke={LPI.pink} strokeWidth={7} strokeDasharray="16 12" opacity={fadeIn(frame, POINT - 2, 6)} />
+						</svg>
+					) : null}
+				</AbsoluteFill>
 			) : null}
 			<Flash at={TIQUE} max={0.25} />
+			<Sfx name="stairs" at={2} volume={0.12} dur={QUELQUE} />
+			<Sfx name="whoosh" at={QUELQUE} volume={0.05} />
+			<Sfx name="tap" at={BRAS} volume={0.08} dur={4} />
+			<Sfx name="pop" at={QUOI - 2} volume={0.08} />
+			<Sfx name="whoosh" at={QUOI - 4} volume={0.08} />
 			<Sfx name="pop" at={POINT - 2} volume={0.07} />
 			<Sfx name="whoosh" at={TIQUE - 8} volume={0.08} />
 			<Sfx name="impact" at={TIQUE + 2} volume={0.1} />
 		</AbsoluteFill>
+	);
+};
+
+const Question: React.FC<{at: number; x: number; y: number}> = ({at: t0, x, y}) => {
+	const frame = useCurrentFrame();
+	if (frame < t0) return null;
+	return (
+		<div style={{position: 'absolute', left: x, top: y, transform: `translate(-50%, -50%) scale(${popAt(frame, t0) * (1 + 0.06 * Math.sin(frame / 4))})`}}>
+			<div style={{width: 120, height: 120, borderRadius: 60, background: LPI.pink, border: `6px solid ${N}`, boxShadow: SHADOW, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FONT.title, fontWeight: 900, fontSize: 84, color: N}}>?</div>
+		</div>
 	);
 };
 
@@ -152,6 +214,9 @@ export const Idees: React.FC = () => {
 };
 const cl01 = (v: number) => Math.min(1, Math.max(0, v));
 
+/** Hauteur de la tête de la tique (rostre) dans le repère de la peau, pour une tique `s={6}` centrée en (500, 500). */
+const HEAD_Y = 500 - 17 * 6;
+
 /* ═══════════════════════════════ LE BON GESTE : LE TIRE-TIQUE ═══════════════════════════════ */
 export const Methode: React.FC = () => {
 	const frame = useCurrentFrame();
@@ -166,7 +231,7 @@ export const Methode: React.FC = () => {
 	const spin = 360 * lin(frame, TOURNE, COUP + 14);
 	const off = lin(frame, DECROCHE - 2, DECROCHE + 14);
 	const hookIn = lin(frame, TIRE - 4, TIRE + 10);
-	const tipX = interpolate(slide, [0, 1], [820, 530]);
+	const tipX = interpolate(slide, [0, 1], [900, 508]);
 	const titles: [number, number, string][] = [
 		[TIRE - 4, GLISSE - 4, 'Un *tire-tique*'],
 		[GLISSE - 4, TOURNE - 4, 'Glisse-le *dessous*'],
@@ -176,9 +241,10 @@ export const Methode: React.FC = () => {
 	return (
 		<AbsoluteFill>
 			<Skin cx={540} cy={1060} red={0.7} tint={0}>
-				{/* le crochet passe SOUS la tique ; on tourne l'ensemble autour de la tique, puis on la soulève */}
-				<g transform={`translate(${140 * off} ${-240 * off}) rotate(${spin} 500 500)`}>
-					<TickHookG x={tipX} y={515} ang={0} scale={1.5} opacity={hookIn} />
+				{/* le crochet arrive par le côté, sa fourche attrape la tique au ras de la peau (la tête dans le fond du V) ;
+				    on tourne autour de ce point, puis on soulève */}
+				<g transform={`translate(${140 * off} ${-240 * off}) rotate(${spin} 500 ${HEAD_Y})`}>
+					<TickHookG x={tipX} y={HEAD_Y} ang={0} scale={0.95} opacity={hookIn} />
 					<TickG x={500} y={500} s={6} buried={1 - off} fed={0.3} walk={off > 0 ? 0.5 : 0.15} ang={0} />
 				</g>
 				{off > 0.3 ? <circle cx={500} cy={490} r={14} fill={alpha(LPI.pink, 0.9)} stroke={alpha(N, 0.4)} strokeWidth={2} /> : null}

@@ -315,8 +315,11 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   ongle, plis de flexion, empreinte) pour la montrer ; le reste de la vidéo est côté pulpe.
   Briques `src/brand/splinter.tsx`. Voix : « ça rougit, ça gonfle » → « la peau devient rouge, gonflée ». Storyboard
   `docs/lpi/storyboard-echarde.md`.
-- `Tique` (n° 42, ≈ 47 s, voix gratuite d'abord, thème libre) : accroche sans texte (peau en très gros plan, un point noir
-  que le doigt frotte sans le faire partir, zoom ×7 : une tique), idée reçue barrée (éther, alcool, huile : elle recrache
+- `Tique` (n° 42, ≈ 48 s, voix gratuite d'abord, thème libre) : accroche refaite à la demande : « Tu te balades en forêt…
+  et quelque chose tombe sur ton bras. C'est quoi ? » (homme en t-shirt et jean sur un sentier, `ForestBg` de
+  `src/brand/forest.tsx`, `Walker` `tee` + `jeans` ; la tique tombe d'une branche sur l'avant-bras, la caméra plonge sur le
+  bras) puis la peau en très gros plan (plus de poils, demandé), le point noir que le doigt frotte, zoom ×7 : une tique ;
+  tire-tique redessiné d'après le vrai Tick Twister (demandé : « plus réaliste ») ; idée reçue barrée (éther, alcool, huile : elle recrache
   des microbes), tire-tique (dessous, on tourne, elle sort avec sa tête), désinfecter / se laver les mains / noter la date,
   surveiller un mois (plaque rouge qui s'étend, fièvre → médecin, maladie de Lyme), chute (manches longues, pantalon,
   inspection). Briques `src/brand/tick.tsx` (`SkinG` peau en gros plan avec `ring` érythème migrant, `TickG`, `TickHookG`).

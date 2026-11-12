@@ -718,6 +718,22 @@ export const Boy: React.FC<{width?: number; pose: 'ride' | 'fly' | 'sit'; spin?:
 /* ───────────── un adulte qui marche (profil) ───────────── */
 
 /** Pieds du marcheur (repère 300 × 600, hanche en 150, 330) pour une phase de marche donnée (radians). */
+/** Mélange opaque de deux couleurs de la marque. */
+const mix2 = (a: string, b: string, t: number) => {
+	const p = (h: string) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16));
+	const [x, y] = [p(a), p(b)];
+	return '#' + x.map((v, i) => Math.round(v + (y[i] - v) * t).toString(16).padStart(2, '0')).join('');
+};
+
+/** Bras du côté visible du `Walker` en marche (épaule, coude, main), repère 300 × 600. */
+export const walkerArm = (phase: number): [number, number][] => {
+	const S2: [number, number] = [160, 176];
+	const sw = 0.45 * Math.sin(phase);
+	const E: [number, number] = [S2[0] + 92 * Math.sin(-sw), S2[1] + 92 * Math.cos(-sw)];
+	const Hd: [number, number] = [E[0] + 84 * Math.sin(-sw + 0.5), E[1] + 84 * Math.cos(-sw + 0.5)];
+	return [S2, E, Hd];
+};
+
 export const walkerLegs = (phase: number) => {
 	const H: [number, number] = [150, 330];
 	const L = 130;
@@ -735,9 +751,9 @@ export const walkerLegs = (phase: number) => {
  * Adulte de profil (vers la droite), repère 300 × 600 (pieds au sol à y ≈ 590). `pose` : 'walk' (marche, `phase` en
  * radians), 'hop' (sautille sur un pied et tient l'autre : il s'est planté un clou), 'fall' (bras en avant, il tombe :
  * à faire pivoter par le parent). `hair` : 'man' | 'old' | 'kid' ; `cry` ; `chin` : plaie au menton ; `legWound` : plaie
- * sur le tibia avant ; `size` : 1 = adulte, 0.75 = enfant (tout rapetisse, la tête reste grosse).
+ * sur le tibia avant ; `tee` t-shirt à manches courtes, `jeans` jean jusqu'aux chaussures ; `size` : 1 = adulte, 0.75 = enfant (tout rapetisse, la tête reste grosse).
  */
-export const Walker: React.FC<{width?: number; pose?: 'walk' | 'hop' | 'fall'; phase?: number; hair?: 'man' | 'old' | 'kid'; cry?: number; chin?: number; pain?: number; legWound?: number; shirt?: string}> = ({width = 300, pose = 'walk', phase = 0, hair = 'man', cry = 0, chin = 0, pain = 0, legWound = 0, shirt = LPI.sky}) => {
+export const Walker: React.FC<{width?: number; pose?: 'walk' | 'hop' | 'fall'; phase?: number; hair?: 'man' | 'old' | 'kid'; cry?: number; chin?: number; pain?: number; legWound?: number; shirt?: string; jeans?: boolean; tee?: boolean}> = ({width = 300, pose = 'walk', phase = 0, hair = 'man', cry = 0, chin = 0, pain = 0, legWound = 0, shirt = LPI.sky, jeans = false, tee = false}) => {
 	const frame = useCurrentFrame();
 	const SHORTS = hair === 'old' ? N : LPI.blue;
 	const S2: [number, number] = [160, 176];
@@ -793,13 +809,21 @@ export const Walker: React.FC<{width?: number; pose?: 'walk' | 'hop' | 'fall'; p
 			const Hd: [number, number] = [E[0] + 84 * Math.sin(-s * sw + 0.5), E[1] + 84 * Math.cos(-s * sw + 0.5)];
 			return [S2, E, Hd];
 		};
-		const legDraw = (l: {K: [number, number]; F: [number, number]}, far: boolean) => (
-			<>
-				{limb([l.K, l.F], 44, far ? alpha(LPI.pink, 0.45) : SKIN_FILL)}
-				{limb([H, [H[0] + (l.K[0] - H[0]) * 0.7, H[1] + (l.K[1] - H[1]) * 0.7]], 64, far ? alpha(SHORTS, 0.7) : SHORTS)}
-				{shoe(l.F, far)}
-			</>
-		);
+		const JEAN = mix2(LPI.blue, N, 0.25);
+		const legDraw = (l: {K: [number, number]; F: [number, number]}, far: boolean) =>
+			jeans ? (
+				<>
+					{limb([H, l.K, l.F], 54, far ? mix2(JEAN, N, 0.35) : JEAN)}
+					{!far ? <polyline points={[H, l.K, l.F].map((p) => `${p[0] + 10},${p[1]}`).join(' ')} fill="none" stroke={alpha(LPI.paper, 0.22)} strokeWidth={6} strokeLinecap="round" strokeLinejoin="round" /> : null}
+					{shoe(l.F, far)}
+				</>
+			) : (
+				<>
+					{limb([l.K, l.F], 44, far ? alpha(LPI.pink, 0.45) : SKIN_FILL)}
+					{limb([H, [H[0] + (l.K[0] - H[0]) * 0.7, H[1] + (l.K[1] - H[1]) * 0.7]], 64, far ? alpha(SHORTS, 0.7) : SHORTS)}
+					{shoe(l.F, far)}
+				</>
+			);
 		legs = (
 			<>
 				{legDraw(back, true)}
@@ -813,11 +837,18 @@ export const Walker: React.FC<{width?: number; pose?: 'walk' | 'hop' | 'fall'; p
 			</>
 		);
 		const fa = arm(-1);
-		farArm = limb(fa, 28, alpha(LPI.pink, 0.45));
+		const half = (a: [number, number][]): [number, number][] => [a[0], [a[0][0] + (a[1][0] - a[0][0]) * 0.6, a[0][1] + (a[1][1] - a[0][1]) * 0.6]];
+		farArm = (
+			<>
+				{limb(fa, 28, alpha(LPI.pink, 0.45))}
+				{tee ? limb(half(fa), 40, mix2(shirt, N, 0.3)) : null}
+			</>
+		);
 		const na = arm(1);
 		arms = (
 			<>
 				{limb(na, 32, SKIN_FILL)}
+				{tee ? limb(half(na), 44, shirt) : null}
 				<circle cx={na[2][0]} cy={na[2][1]} r={14} fill={SKIN_FILL} stroke={N} strokeWidth={5} />
 			</>
 		);

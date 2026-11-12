@@ -56,15 +56,17 @@ export const SkinG: React.FC<{red?: number; ring?: number; tint?: number; childr
 			{Array.from({length: 40}, (_, i) => (
 				<path key={`b${i}`} d={`M${-1500 + i * 100} 2500 L${-1500 + i * 100 + 3000} -500`} stroke={alpha(N, 0.035)} strokeWidth={2} />
 			))}
-			{/* pores et fins poils */}
-			{Array.from({length: 70}, (_, i) => {
-				const x = -500 + rnd(i) * 2000;
-				const y = -500 + rnd(i + 99) * 2000;
-				const a = -30 + rnd(i + 7) * 30;
+			{/* pores et poils : nombreux, couchés dans le même sens, longueurs et teintes variées */}
+			{Array.from({length: 230}, (_, i) => {
+				const x = -600 + rnd(i) * 2200;
+				const y = -600 + rnd(i + 99) * 2200;
+				const a = -24 + rnd(i + 7) * 16;
+				const len = 34 + rnd(i + 3) * 46;
+				const bend = 6 + rnd(i + 5) * 10;
 				return (
 					<g key={i} transform={`translate(${x} ${y}) rotate(${a})`}>
-						<circle r={3.5} fill={alpha(N, 0.18)} />
-						{i % 2 ? <path d={`M0 0 q18 -6 38 -2`} fill="none" stroke={alpha(N, 0.28)} strokeWidth={2.2} strokeLinecap="round" /> : null}
+						<circle r={3.2} fill={alpha(N, 0.2)} />
+						{i % 5 !== 0 ? <path d={`M0 0 q${len * 0.5} ${-bend} ${len} ${-bend * 0.4}`} fill="none" stroke={alpha(N, 0.22 + 0.2 * rnd(i + 11))} strokeWidth={1.6 + rnd(i + 13) * 1.2} strokeLinecap="round" /> : null}
 					</g>
 				);
 			})}
@@ -126,24 +128,38 @@ export const TickG: React.FC<{x: number; y: number; s?: number; ang?: number; wa
 };
 
 /**
- * Tire-tique (crochet) vu de dessus, pointe fendue en (`x`, `y`), corps orienté selon `ang` (degrés, direction pointe →
- * poignée), `scale`. Plastique bleu, fente en V.
+ * Tire-tique façon « Tick Twister » (crochet plat en plastique blanc, ≈ 5 cm) vu de dessus, dans le repère de la peau :
+ * la fourche fendue en V est en (`x`, `y`) (le fond du V attrape la tique au ras de la peau), le corps part selon `ang`
+ * (degrés, direction pointe → poignée), légèrement cambré, avec sa tranche visible, des stries de prise et, au bout, la
+ * palette percée. `scale` : 1 = la taille d'une tique « ×6 » de `TickG`.
  */
 export const TickHookG: React.FC<{x: number; y: number; ang?: number; scale?: number; opacity?: number}> = ({x, y, ang = 0, scale = 1, opacity = 1}) => {
 	const id = React.useId().replace(/:/g, '');
+	// contour (pointe à gauche, en 0 ; deux dents de part et d'autre du V)
+	const outline = 'M-70 -30 Q-82 -26 -74 -14 L-8 -4 L-8 4 L-74 14 Q-82 26 -70 30 L120 52 C400 70 900 76 1300 60 C1380 56 1430 30 1430 0 C1430 -30 1380 -56 1300 -60 C900 -76 400 -70 120 -52 Z';
 	return (
 		<g transform={`translate(${x} ${y}) rotate(${ang}) scale(${scale})`} opacity={opacity}>
 			<defs>
 				<linearGradient id={`th${id}`} x1="0" y1="0" x2="0" y2="1">
-					<stop offset="0" stopColor={mix(LPI.blue, LPI.paper, 0.35)} />
-					<stop offset="1" stopColor={mix(LPI.blue, N, 0.15)} />
+					<stop offset="0" stopColor={LPI.paper} />
+					<stop offset="0.65" stopColor={mix(LPI.paper, LPI.sky, 0.55)} />
+					<stop offset="1" stopColor={mix(LPI.sky, LPI.blue, 0.25)} />
 				</linearGradient>
 			</defs>
-			<path d="M-6 -34 L60 -40 L420 -46 Q460 -46 460 0 Q460 46 420 46 L60 40 L-6 34 L18 0 Z" fill={alpha(N, 0.22)} transform="translate(12 18)" />
-			{/* fourche fendue (la fente en V attrape la tique au ras de la peau) */}
-			<path d="M-6 -34 L60 -40 L420 -46 Q460 -46 460 0 Q460 46 420 46 L60 40 L-6 34 L18 0 Z" fill={`url(#th${id})`} {...LINE} strokeWidth={3} />
-			<path d="M60 -26 L400 -32" stroke={alpha(LPI.paper, 0.55)} strokeWidth={8} strokeLinecap="round" />
-			<circle cx={400} cy={0} r={16} fill={mix(LPI.sky, LPI.paper, 0.4)} stroke={alpha(N, 0.5)} strokeWidth={2} />
+			{/* ombre portée sur la peau */}
+			<path d={outline} fill={alpha(N, 0.2)} transform="translate(14 22)" />
+			{/* tranche (épaisseur du plastique) */}
+			<path d={outline} fill={mix(LPI.sky, LPI.blue, 0.3)} transform="translate(0 10)" stroke={alpha(N, 0.5)} strokeWidth={2} />
+			<path d={outline} fill={`url(#th${id})`} {...LINE} strokeWidth={3} />
+			{/* le V de la fourche, plus fin vers le fond */}
+			<path d="M-74 -14 L-8 -4 M-74 14 L-8 4" stroke={alpha(N, 0.55)} strokeWidth={2.5} />
+			<path d="M-60 -22 Q40 -40 200 -44" fill="none" stroke={alpha(LPI.paper, 0.95)} strokeWidth={8} strokeLinecap="round" />
+			{/* stries de prise */}
+			{[700, 740, 780, 820, 860].map((xx) => (
+				<path key={xx} d={`M${xx} -46 L${xx} 46`} stroke={alpha(N, 0.18)} strokeWidth={4} strokeLinecap="round" />
+			))}
+			{/* palette percée */}
+			<circle cx={1330} cy={0} r={26} fill={mix(LPI.sky, LPI.paper, 0.3)} stroke={alpha(N, 0.55)} strokeWidth={3} />
 		</g>
 	);
 };

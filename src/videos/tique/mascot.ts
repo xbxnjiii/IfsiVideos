@@ -8,7 +8,7 @@ const LOW = {y: 1790, size: 300};
 
 export const MASCOT: Beat[] = [
 	// accroche
-	{at: abs('intro', 'point'), via: 'pop', key: 'expressions/questionnement', ...R, ...LOW},
+	{at: abs('intro', 'quoi ?'), via: 'pop', key: 'expressions/questionnement', ...R, ...LOW},
 	{at: abs('intro', 'tique !'), key: 'expressions/surprise', ...R, ...LOW},
 	// idée reçue
 	{at: start('idees') + 8, via: 'hop', dur: 18, key: 'expressions/reflechit', ...L, ...LOW},

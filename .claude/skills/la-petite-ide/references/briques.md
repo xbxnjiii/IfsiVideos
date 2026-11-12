@@ -245,6 +245,11 @@ Trousse de secours de la maison : la trousse (couvercle qui s'ouvre, cases qui s
 - `CUT_TIP` — Point de l'entaille sur l'index une fois la main reculée (`jerk` 0,5), repère 1000 × 1000 de `CuttingCloseUp`.
 - `CuttingCloseUp` — Gros plan « comme si c'était tes mains » (repère 1000 × 1000, vue de haut en perspective) : plan de travail, planche en bois, tomate qui se coupe en tranches (`slices` 0 → 3 : la lame descend, la tranche tombe à plat), main gauche en…
 
+## `forest.tsx`
+Balade en forêt, vue de côté, plein écran (repère 1080 × 1920) : ciel clair, rangée d'arbres lointains, grands arbres au premier plan (troncs en vrai bois brun comme la planche de l'écharde, feuillage en bleus de la marque), sentier, une branche qui passe au-dessus du sentier (la tique tombe d'une de ses feuilles). `drift` fait glisser le décor (parallaxe).
+
+- `ForestBg` — Forêt plein écran.
+
 ## `glyco.tsx`
 Briques « glycémie » réutilisables : normes adulte (zones), doigt + autopiqueur + goutte, lecteur de glycémie (bandelette, valeur en g/l), sucres qui pleuvent, morceaux de sucre qui circulent dans l'artère, cellule qui « brûle » le glucose (carburant).
 
@@ -350,7 +355,8 @@ Série courte « Les plaies » (30 – 40 s par vidéo, une situation vécue en 
 - `TurnArrows` — Deux flèches qui tournent (changer de position), repère 200 × 200.
 - `FootTop` — Pied droit vu de dessus (`view` 'top') ou de dessous (`view` 'sole'), repère 260 × 400, orteils en haut.
 - `Boy` — Garçon (vue de profil, vers la droite) dans le repère du vélo `Bike` (520 × 330, sol à y 326).
-- `walkerLegs` — Pieds du marcheur (repère 300 × 600, hanche en 150, 330) pour une phase de marche donnée (radians).
+- `walkerArm` — Bras du côté visible du `Walker` en marche (épaule, coude, main), repère 300 × 600.
+- `walkerLegs`
 - `Walker` — Adulte de profil (vers la droite), repère 300 × 600 (pieds au sol à y ≈ 590).
 
 ## `kids.tsx`
@@ -618,7 +624,7 @@ Briques « température » réutilisables : normes adulte (zones), thermomètre 
 
 - `SkinG` — Peau en très gros plan (repère 1000 × 1000, déborde largement pour remplir l'écran) : dégradé, grain en losanges, pores, fins poils.
 - `TickG` — Tique vue de dessus, centre (`x`, `y`), longueur ≈ 40 × `s` unités, tête vers `ang` (degrés, 0 = vers le haut) : rostre, écusson brillant, corps, 8 pattes articulées (`walk` : elles bougent).
-- `TickHookG` — Tire-tique (crochet) vu de dessus, pointe fendue en (`x`, `y`), corps orienté selon `ang` (degrés, direction pointe → poignée), `scale`.
+- `TickHookG` — Tire-tique façon « Tick Twister » (crochet plat en plastique blanc, ≈ 5 cm) vu de dessus, dans le repère de la peau : la fourche fendue en V est en (`x`, `y`) (le fond du V attrape la tique au ras de la peau), le corps part selon `ang`…
 - `LabelBottle` — Petit flacon étiqueté (repère 120 × 200) : `label` en capitales, `tone` couleur du bouchon.
 - `SkinMedallion` — Médaillon rond (peau vue à travers un hublot) : `children` = un `SkinG` déjà posé dans le repère 1000 × 1000.
 - `WalkIcon` — Pictos des bons réflexes de balade (repère 160 × 120) : manches longues, pantalon, inspection à la loupe.
