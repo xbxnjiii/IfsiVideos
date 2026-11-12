@@ -84,6 +84,8 @@ import {Brulure, BrulureProps} from './videos/brulure/Brulure';
 import {TL as BRULURE_TL} from './videos/brulure/timeline';
 import {Echarde, EchardeProps} from './videos/echarde/Echarde';
 import {TL as ECHARDE_TL} from './videos/echarde/timeline';
+import {Tique, TiqueProps} from './videos/tique/Tique';
+import {TL as TIQUE_TL} from './videos/tique/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -490,6 +492,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies EchardeProps}
+		/>
+		{/* 42 · Tique */}
+		<Composition
+			id="Tique"
+			component={Tique}
+			durationInFrames={TIQUE_TL.total}
+			fps={TIQUE_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies TiqueProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition

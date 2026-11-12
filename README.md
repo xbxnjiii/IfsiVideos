@@ -52,6 +52,7 @@ pas de logiciel de montage, pas de banque d'images.
 | 39 | Court info : comment bien mettre un pansement (voix gratuite, accroche animée sans texte) | `Pansement` | [voix/39-pansement.script.json](voix/39-pansement.script.json) | [storyboard](docs/lpi/storyboard-pansement.md) |
 | 40 | Court info : comment soigner une petite brûlure (voix gratuite, accroche animée sans texte) | `Brulure` | [voix/40-brulure.script.json](voix/40-brulure.script.json) | [storyboard](docs/lpi/storyboard-brulure.md) |
 | 41 | Court info : comment retirer une écharde (voix gratuite, accroche animée sans texte) | `Echarde` | [voix/41-echarde.script.json](voix/41-echarde.script.json) | [storyboard](docs/lpi/storyboard-echarde.md) |
+| 42 | Court info : une tique, comment bien la retirer (voix gratuite, accroche animée sans texte) | `Tique` | [voix/42-tique.script.json](voix/42-tique.script.json) | [storyboard](docs/lpi/storyboard-tique.md) |
 
 ## Utilisation
 

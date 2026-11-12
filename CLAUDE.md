@@ -315,6 +315,12 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   ongle, plis de flexion, empreinte) pour la montrer ; le reste de la vidéo est côté pulpe.
   Briques `src/brand/splinter.tsx`. Voix : « ça rougit, ça gonfle » → « la peau devient rouge, gonflée ». Storyboard
   `docs/lpi/storyboard-echarde.md`.
+- `Tique` (n° 42, ≈ 47 s, voix gratuite d'abord, thème libre) : accroche sans texte (peau en très gros plan, un point noir
+  que le doigt frotte sans le faire partir, zoom ×7 : une tique), idée reçue barrée (éther, alcool, huile : elle recrache
+  des microbes), tire-tique (dessous, on tourne, elle sort avec sa tête), désinfecter / se laver les mains / noter la date,
+  surveiller un mois (plaque rouge qui s'étend, fièvre → médecin, maladie de Lyme), chute (manches longues, pantalon,
+  inspection). Briques `src/brand/tick.tsx` (`SkinG` peau en gros plan avec `ring` érythème migrant, `TickG`, `TickHookG`).
+  Storyboard `docs/lpi/storyboard-tique.md`.
 
 ## Voix ElevenLabs « Laura » (choisie par le propriétaire pour les nouvelles vidéos)
 

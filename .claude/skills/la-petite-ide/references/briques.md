@@ -613,6 +613,16 @@ Briques « température » réutilisables : normes adulte (zones), thermomètre 
 - `Snowfall` — Flocons qui tombent sur le socle (`on` 0 → 1).
 - `TempGauge` — Jauge froid ↔ chaud (3 segments de la palette, sans mélange) + curseur qui suit `value` (34 → 41 °C).
 
+## `tick.tsx`
+« Une tique : comment bien la retirer ? » : peau en très gros plan (grain, pores, fins poils, ombre douce), tique vue de dessus (rostre, écusson, 8 pattes articulées qui bougent, gorgée de sang ou non), tire-tique (crochet fendu qui se glisse dessous et tourne), plaque rouge qui s'étend (érythème migrant), petits flacons et pictos. Même rendu soigné que bandage.tsx (peau opaque en dégradé, contours fins, ombres floutées). Couleurs de la marque uniquement.
+
+- `SkinG` — Peau en très gros plan (repère 1000 × 1000, déborde largement pour remplir l'écran) : dégradé, grain en losanges, pores, fins poils.
+- `TickG` — Tique vue de dessus, centre (`x`, `y`), longueur ≈ 40 × `s` unités, tête vers `ang` (degrés, 0 = vers le haut) : rostre, écusson brillant, corps, 8 pattes articulées (`walk` : elles bougent).
+- `TickHookG` — Tire-tique (crochet) vu de dessus, pointe fendue en (`x`, `y`), corps orienté selon `ang` (degrés, direction pointe → poignée), `scale`.
+- `LabelBottle` — Petit flacon étiqueté (repère 120 × 200) : `label` en capitales, `tone` couleur du bouchon.
+- `SkinMedallion` — Médaillon rond (peau vue à travers un hublot) : `children` = un `SkinG` déjà posé dans le repère 1000 × 1000.
+- `WalkIcon` — Pictos des bons réflexes de balade (repère 160 × 120) : manches longues, pantalon, inspection à la loupe.
+
 ## `timeline.ts`
 Timeline générique « voix → scènes → animations » pour les vidéos La Petite IDE. voice.json est produit par scripts/voice/tts_voix.py (voix de la marque) ou scripts/voice/align_voice.py (voix enregistrée) : remplacer la voix recale toute la vidéo.
 

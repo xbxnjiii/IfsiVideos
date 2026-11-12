@@ -1,0 +1,8 @@
+[
+ {"id": "intro", "rate": "+4%", "text": "Belle balade en forêt. Le soir, un petit point noir sur ta peau… qui ne part pas quand tu frottes. Une tique !"},
+ {"id": "idees", "rate": "+2%", "text": "Premier réflexe : de l'éther, de l'alcool ou de l'huile pour l'endormir ? Surtout pas ! Elle peut recracher dans ta peau ce qu'elle a dans le ventre… et des microbes avec."},
+ {"id": "methode", "rate": "+0%", "text": "Le bon geste : un tire-tique. Glisse-le sous la tique, tout près de la peau. Tourne doucement, sans tirer d'un coup… et elle se décroche, avec sa tête."},
+ {"id": "apres", "rate": "+2%", "text": "Ensuite, désinfecte la piqûre, lave-toi les mains, et note la date dans ton téléphone."},
+ {"id": "surveiller", "rate": "+2%", "text": "Pendant un mois, surveille ta peau. Si une plaque rouge apparaît et s'agrandit autour de la piqûre, ou si tu as de la fièvre, consulte un médecin : c'est peut-être la maladie de Lyme."},
+ {"id": "fin", "rate": "+4%", "text": "Et à la prochaine balade : manches longues, pantalon… et on s'inspecte bien en rentrant !"}
+]
