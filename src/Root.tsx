@@ -86,6 +86,8 @@ import {Echarde, EchardeProps} from './videos/echarde/Echarde';
 import {TL as ECHARDE_TL} from './videos/echarde/timeline';
 import {Tique, TiqueProps} from './videos/tique/Tique';
 import {TL as TIQUE_TL} from './videos/tique/timeline';
+import {SaignementNez, SaignementNezProps} from './videos/saignement-nez/SaignementNez';
+import {TL as SAIGNEMENT_NEZ_TL} from './videos/saignement-nez/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -502,6 +504,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies TiqueProps}
+		/>
+		{/* 43 · Saignement-Nez */}
+		<Composition
+			id="Saignement-Nez"
+			component={SaignementNez}
+			durationInFrames={SAIGNEMENT_NEZ_TL.total}
+			fps={SAIGNEMENT_NEZ_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies SaignementNezProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition

@@ -452,6 +452,17 @@ Format « histoire » (mystérieux) : fond bleu nuit qui respire, grille et pous
 - `NightFlash` — Flash de choc (plein écran) qui retombe.
 - `Scramble` — Mots qui sortent dans le désordre : chaque lettre tremble et se mélange, puis se remet (ou non) en place.
 
+## `nose.tsx`
+« Saignement de nez » : tête de profil (tournée vers la droite) en rendu soigné (peau opaque en dégradé, ombres douces, contours fins), qui se penche en arrière ou en avant ; vue en coupe (fosse nasale → arrière-gorge → œsophage) avec le sang qui file dans la gorge ; filet de sang au bord de la narine ; os du nez / partie molle ; main qui pince le bas du nez ; mouchoir ; bouche ouverte qui respire (petits souffles). Livre ouvert tenu à deux mains. Couleurs de la marque.
+
+- `HEAD` — Repère 1000 × 1000 de la tête : pivot de la tête (le cou), bout de la narine (d'où coule le sang), bouche.
+- `headPt` — Point du repère de la tête (avant inclinaison) → repère 1000 × 1000 une fois la tête penchée de `tilt` degrés.
+- `HeadSide` — Tête de profil tournée vers la droite (repère 1000 × 1000, épaules en bas).
+- `BreathPuffs` — Petits souffles qui sortent de la bouche (respirer par la bouche), dans le repère de la tête une fois penchée.
+- `OpenBook` — Livre ouvert vu de côté-dessus (repère 600 × 300), tenu à deux mains ; `spots` taches de sang sur la page de droite.
+- `BloodDrop` — Goutte de sang (repère centré, hauteur ≈ 2,4 r).
+- `BlowIcon` — Pictogramme « se moucher » : mouchoir + petit souffle.
+
 ## `oxygen.tsx`
 Briques « SpO₂ » réutilisables : normes, saturomètre en gros plan (pince au bout du doigt : écran, courbe de pouls, lumière qui traverse le doigt, vernis, doigt froid, ongle bleuté), vaisseau sanguin vu de près (globules rouges dont l'hémoglobine se charge en O₂ au contact du poumon) et grille de 100 hémoglobines (le pourcentage).
 

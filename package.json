@@ -56,7 +56,8 @@
     "render:pansement": "remotion render Pansement out/39-pansement.mp4",
     "render:brulure": "remotion render Brulure out/40-brulure.mp4",
     "render:echarde": "remotion render Echarde out/41-echarde.mp4",
-    "render:tique": "remotion render Tique out/42-tique.mp4"
+    "render:tique": "remotion render Tique out/42-tique.mp4",
+    "render:saignement-nez": "remotion render Saignement-Nez out/43-saignement-nez.mp4"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.532",

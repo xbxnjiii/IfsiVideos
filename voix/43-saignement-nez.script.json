@@ -1,0 +1,32 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Tu lis tranquillement… et tout à coup, une goutte de sang tombe sur ta page. C'est ton nez qui saigne ! Ton premier réflexe : basculer la tête en arrière ?"
+ },
+ {
+  "id": "idees",
+  "rate": "+2%",
+  "text": "Surtout pas ! Le sang coule alors dans ta gorge : tu l'avales, et ça peut te donner envie de vomir. Et en plus, tu ne vois plus si ça saigne encore."
+ },
+ {
+  "id": "methode",
+  "rate": "+0%",
+  "text": "Le bon geste : assieds-toi, et penche la tête en avant. Mouche-toi une fois, doucement, pour vider les caillots. Puis pince le bas du nez, la partie molle, juste sous l'os. Et tiens dix minutes, sans relâcher, en respirant par la bouche."
+ },
+ {
+  "id": "apres",
+  "rate": "+2%",
+  "text": "Ensuite, pendant quelques heures : on ne se mouche pas fort, et on évite le sport. Le petit caillot doit bien tenir."
+ },
+ {
+  "id": "consulter",
+  "rate": "+2%",
+  "text": "Et si ça saigne encore après vingt minutes, après un choc sur la tête, ou si tu prends un traitement qui fluidifie le sang : consulte vite, ou appelle le quinze."
+ },
+ {
+  "id": "fin",
+  "rate": "+4%",
+  "text": "Alors, la prochaine fois : la tête en avant… et on pince !"
+ }
+]

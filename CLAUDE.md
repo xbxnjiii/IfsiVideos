@@ -328,6 +328,14 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   surveiller un mois (plaque rouge qui s'étend, fièvre → médecin, maladie de Lyme), chute (manches longues, pantalon,
   inspection). Briques `src/brand/tick.tsx` (`SkinG` peau en gros plan avec `ring` érythème migrant, `TickG`, `TickHookG`).
   Storyboard `docs/lpi/storyboard-tique.md`.
+- `Saignement-Nez` (n° 43, ≈ 52 s, voix gratuite d'abord, thème libre) : accroche sans texte (il lit, une goutte de sang
+  tombe sur la page, il bascule la tête en arrière, « ? »), idée reçue en coupe (le sang file dans la gorge : il l'avale,
+  nausée, il ne voit plus si ça saigne), bon geste (assis, tête en avant, se moucher une fois, pincer la partie molle sous
+  l'os 10 min sans relâcher, respirer par la bouche), après (pas de mouchage fort ni de sport), quand consulter (20 min,
+  choc sur la tête, traitement qui fluidifie le sang, le 15), chute « tête en avant… et on pince ! ». Brique
+  `src/brand/nose.tsx` (`HeadSide`). Voix : « Ton nez saigne ! » était entendu « ton essaigne » → « C'est ton nez qui
+  saigne ! » ; dans un titre, l'accent ne marche pas sur un mot à trait d'union (« Assieds-\*toi\* » s'affichait tel quel).
+  Storyboard `docs/lpi/storyboard-saignement-nez.md`.
 
 ## Voix ElevenLabs « Laura » (choisie par le propriétaire pour les nouvelles vidéos)
 
