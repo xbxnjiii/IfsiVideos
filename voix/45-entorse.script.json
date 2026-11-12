@@ -1,0 +1,32 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Petit footing du matin, au parc… et là, ton pied se tord sur une racine… et aïe ! Ta cheville gonfle à vue d'œil."
+ },
+ {
+  "id": "idees",
+  "rate": "+2%",
+  "text": "Premier réflexe : tu arrives à bouger le pied, donc ce n'est pas cassé ? Faux ! On peut très bien bouger le pied… avec un os fêlé."
+ },
+ {
+  "id": "methode",
+  "rate": "+0%",
+  "text": "Le bon geste tient en quatre mots. La glace : quinze à vingt minutes, toujours dans un linge. Le repos : tu ne forces pas dessus."
+ },
+ {
+  "id": "suite",
+  "rate": "+0%",
+  "text": "L'élévation : le pied posé plus haut que la hanche. Et la contention : une bande élastique, sans trop serrer."
+ },
+ {
+  "id": "consulter",
+  "rate": "+2%",
+  "text": "Mais si tu ne peux pas faire quatre pas, si ça fait mal quand on appuie sur l'os de la cheville, ou si elle est déformée : il faut une radio."
+ },
+ {
+  "id": "fin",
+  "rate": "+4%",
+  "text": "Et au prochain footing… regarde aussi où tu mets les pieds !"
+ }
+]

@@ -58,7 +58,8 @@
     "render:echarde": "remotion render Echarde out/41-echarde.mp4",
     "render:tique": "remotion render Tique out/42-tique.mp4",
     "render:saignement-nez": "remotion render Saignement-Nez out/43-saignement-nez.mp4",
-    "render:piqure-abeille": "remotion render Piqure-Abeille out/44-piqure-abeille.mp4"
+    "render:piqure-abeille": "remotion render Piqure-Abeille out/44-piqure-abeille.mp4",
+    "render:entorse": "remotion render Entorse out/45-entorse.mp4"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.532",

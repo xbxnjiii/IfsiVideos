@@ -591,11 +591,11 @@ const kneeIK = (h: [number, number], p: [number, number], L = 118): [number, num
 	const k2: [number, number] = [bx - hh * px, by - hh * py];
 	return k1[0] > k2[0] ? k1 : k2;
 };
-const Head: React.FC<{x: number; y: number; cry?: number; rot?: number; hair?: 'kid' | 'man' | 'old'; chin?: number; r?: number}> = ({x, y, cry = 0, rot = 0, hair = 'kid', chin = 0, r = 46}) => {
+const Head: React.FC<{x: number; y: number; cry?: number; rot?: number; hair?: 'kid' | 'man' | 'old'; chin?: number; r?: number; skin?: string}> = ({x, y, cry = 0, rot = 0, hair = 'kid', chin = 0, r = 46, skin = SKIN_FILL}) => {
 	const frame = useCurrentFrame();
 	return (
 		<g transform={`translate(${x} ${y}) rotate(${rot}) scale(${r / 46})`}>
-			<circle r={46} fill={SKIN_FILL} stroke={N} strokeWidth={6} />
+			<circle r={46} fill={skin} stroke={N} strokeWidth={6} />
 			<circle r={46} fill={alpha(LPI.pink, 0.22)} />
 			{/* cheveux */}
 			{hair === 'kid' ? <path d="M-44 -6 C-50 -50 10 -66 40 -30 C30 -40 10 -42 -4 -34 C-14 -22 -30 -18 -44 -6 Z" fill={N} /> : null}
@@ -613,7 +613,7 @@ const Head: React.FC<{x: number; y: number; cry?: number; rot?: number; hair?: '
 					<path d="M-8 -2 L8 -4 M-6 4 L6 2" stroke={alpha(N, 0.5)} strokeWidth={2.5} strokeLinecap="round" />
 				</g>
 			) : null}
-			<circle cx={-26} cy={8} r={10} fill={SKIN_FILL} stroke={N} strokeWidth={4} />
+			<circle cx={-26} cy={8} r={10} fill={skin} stroke={N} strokeWidth={4} />
 			{/* œil, bouche */}
 			{cry > 0.5 ? <path d="M14 -6 l14 6 M14 6 l14 -6" stroke={N} strokeWidth={5} strokeLinecap="round" /> : <circle cx={22} cy={-2} r={5.5} fill={N} />}
 			{cry > 0.5 ? <ellipse cx={26} cy={24} rx={10} ry={8} fill={N} /> : <path d="M16 22 Q26 30 36 20" fill="none" stroke={N} strokeWidth={5} strokeLinecap="round" />}
@@ -751,10 +751,13 @@ export const walkerLegs = (phase: number) => {
  * Adulte de profil (vers la droite), repère 300 × 600 (pieds au sol à y ≈ 590). `pose` : 'walk' (marche, `phase` en
  * radians), 'hop' (sautille sur un pied et tient l'autre : il s'est planté un clou), 'fall' (bras en avant, il tombe :
  * à faire pivoter par le parent). `hair` : 'man' | 'old' | 'kid' ; `cry` ; `chin` : plaie au menton ; `legWound` : plaie
- * sur le tibia avant ; `tee` t-shirt à manches courtes, `jeans` jean jusqu'aux chaussures ; `size` : 1 = adulte, 0.75 = enfant (tout rapetisse, la tête reste grosse).
+ * sur le tibia avant ; `tee` t-shirt à manches courtes, `jeans` jean jusqu'aux chaussures, `skin` vraie couleur de peau ; `size` : 1 = adulte, 0.75 = enfant (tout rapetisse, la tête reste grosse).
  */
-export const Walker: React.FC<{width?: number; pose?: 'walk' | 'hop' | 'fall'; phase?: number; hair?: 'man' | 'old' | 'kid'; cry?: number; chin?: number; pain?: number; legWound?: number; shirt?: string; jeans?: boolean; tee?: boolean}> = ({width = 300, pose = 'walk', phase = 0, hair = 'man', cry = 0, chin = 0, pain = 0, legWound = 0, shirt = LPI.sky, jeans = false, tee = false}) => {
+export const Walker: React.FC<{width?: number; pose?: 'walk' | 'hop' | 'fall'; phase?: number; hair?: 'man' | 'old' | 'kid'; cry?: number; chin?: number; pain?: number; legWound?: number; shirt?: string; jeans?: boolean; tee?: boolean; skin?: string}> = ({skin,width = 300, pose = 'walk', phase = 0, hair = 'man', cry = 0, chin = 0, pain = 0, legWound = 0, shirt = LPI.sky, jeans = false, tee = false}) => {
 	const frame = useCurrentFrame();
+	// `skin` : vraie couleur de peau (mise en situation réaliste) ; sinon blanc cassé de la marque
+	const SKIN = skin ?? SKIN_FILL;
+	const FAR = skin ? mix2(skin, N, 0.18) : alpha(LPI.pink, 0.45);
 	const SHORTS = hair === 'old' ? N : LPI.blue;
 	const S2: [number, number] = [160, 176];
 	let legs: React.ReactNode;
@@ -767,40 +770,40 @@ export const Walker: React.FC<{width?: number; pose?: 'walk' | 'hop' | 'fall'; p
 		const F: [number, number] = [196, 500];
 		legs = (
 			<>
-				{limb([H, [152, 460], [150, 586]], 44, SKIN_FILL)}
+				{limb([H, [152, 460], [150, 586]], 44, SKIN)}
 				{limb([H, [151, 410]], 64, SHORTS)}
 				{shoe([150, 588])}
-				{limb([H, K, F], 44, SKIN_FILL)}
+				{limb([H, K, F], 44, SKIN)}
 				{limb([H, [H[0] + (K[0] - H[0]) * 0.6, H[1] + (K[1] - H[1]) * 0.6]], 64, SHORTS)}
 				{/* plante du pied levée : un point rouge (le clou) */}
-				<ellipse cx={F[0] - 6} cy={F[1] + 10} rx={30} ry={14} fill={SKIN_FILL} stroke={N} strokeWidth={6} transform={`rotate(-30 ${F[0]} ${F[1]})`} />
+				<ellipse cx={F[0] - 6} cy={F[1] + 10} rx={30} ry={14} fill={SKIN} stroke={N} strokeWidth={6} transform={`rotate(-30 ${F[0]} ${F[1]})`} />
 				<circle cx={F[0] - 10} cy={F[1] + 16} r={6} fill={LPI.pink} stroke={N} strokeWidth={3} />
 			</>
 		);
 		arms = (
 			<>
-				{limb([S2, [214, 280], [200, 470]], 32, SKIN_FILL)}
-				<circle cx={200} cy={474} r={15} fill={SKIN_FILL} stroke={N} strokeWidth={5} />
+				{limb([S2, [214, 280], [200, 470]], 32, SKIN)}
+				<circle cx={200} cy={474} r={15} fill={SKIN} stroke={N} strokeWidth={5} />
 			</>
 		);
-		farArm = limb([S2, [110, 120], [80, 70]], 28, alpha(LPI.pink, 0.45));
+		farArm = limb([S2, [110, 120], [80, 70]], 28, FAR);
 	} else if (pose === 'fall') {
 		const H: [number, number] = [150, 330];
 		legs = (
 			<>
-				{limb([H, [100, 440], [40, 540]], 44, alpha(LPI.pink, 0.45))}
-				{limb([H, [170, 450], [120, 570]], 44, SKIN_FILL)}
+				{limb([H, [100, 440], [40, 540]], 44, FAR)}
+				{limb([H, [170, 450], [120, 570]], 44, SKIN)}
 				{limb([H, [160, 410]], 64, SHORTS)}
 				{shoe([120, 572])}
 			</>
 		);
 		arms = (
 			<>
-				{limb([S2, [236, 110], [270, 40]], 32, SKIN_FILL)}
-				<circle cx={272} cy={36} r={14} fill={SKIN_FILL} stroke={N} strokeWidth={5} />
+				{limb([S2, [236, 110], [270, 40]], 32, SKIN)}
+				<circle cx={272} cy={36} r={14} fill={SKIN} stroke={N} strokeWidth={5} />
 			</>
 		);
-		farArm = limb([S2, [226, 96], [250, 24]], 28, alpha(LPI.pink, 0.45));
+		farArm = limb([S2, [226, 96], [250, 24]], 28, FAR);
 	} else {
 		const {H, front, back} = walkerLegs(phase);
 		const sw = 0.45 * Math.sin(phase);
@@ -819,7 +822,7 @@ export const Walker: React.FC<{width?: number; pose?: 'walk' | 'hop' | 'fall'; p
 				</>
 			) : (
 				<>
-					{limb([l.K, l.F], 44, far ? alpha(LPI.pink, 0.45) : SKIN_FILL)}
+					{limb([l.K, l.F], 44, far ? FAR : SKIN)}
 					{limb([H, [H[0] + (l.K[0] - H[0]) * 0.7, H[1] + (l.K[1] - H[1]) * 0.7]], 64, far ? alpha(SHORTS, 0.7) : SHORTS)}
 					{shoe(l.F, far)}
 				</>
@@ -840,16 +843,16 @@ export const Walker: React.FC<{width?: number; pose?: 'walk' | 'hop' | 'fall'; p
 		const half = (a: [number, number][]): [number, number][] => [a[0], [a[0][0] + (a[1][0] - a[0][0]) * 0.6, a[0][1] + (a[1][1] - a[0][1]) * 0.6]];
 		farArm = (
 			<>
-				{limb(fa, 28, alpha(LPI.pink, 0.45))}
+				{limb(fa, 28, FAR)}
 				{tee ? limb(half(fa), 40, mix2(shirt, N, 0.3)) : null}
 			</>
 		);
 		const na = arm(1);
 		arms = (
 			<>
-				{limb(na, 32, SKIN_FILL)}
+				{limb(na, 32, SKIN)}
 				{tee ? limb(half(na), 44, shirt) : null}
-				<circle cx={na[2][0]} cy={na[2][1]} r={14} fill={SKIN_FILL} stroke={N} strokeWidth={5} />
+				<circle cx={na[2][0]} cy={na[2][1]} r={14} fill={SKIN} stroke={N} strokeWidth={5} />
 			</>
 		);
 	}
@@ -859,7 +862,7 @@ export const Walker: React.FC<{width?: number; pose?: 'walk' | 'hop' | 'fall'; p
 			{legs}
 			{limb([[150, 330], S2], 100, shirt)}
 			{arms}
-			<Head x={172} y={100} cry={cry} hair={hair} chin={chin} r={60} rot={pose === 'fall' ? 10 : 0} />
+			<Head x={172} y={100} cry={cry} hair={hair} chin={chin} r={60} rot={pose === 'fall' ? 10 : 0} skin={SKIN} />
 			{pain > 0 && pose === 'hop'
 				? [0, 1, 2].map((i) => {
 						const f = 0.5 + 0.5 * Math.sin(frame * 0.9 + i * 2);

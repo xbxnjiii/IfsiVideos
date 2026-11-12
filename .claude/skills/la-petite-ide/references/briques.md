@@ -46,6 +46,16 @@ Planche de contrôle : toutes les expressions en cartes-réactions (vérifier qu
 - `SfxEnabled` — Permet de couper tous les bruitages d'une vidéo (ex. version « voix seule »).
 - `Sfx` — Joue un bruitage à une frame donnée (relative à la scène).
 
+## `ankle.tsx`
+« Entorse de la cheville » : bas de jambe + pied de profil (côté extérieur, orteils vers la droite), en vraies couleurs (mise en situation réaliste, demandé) : peau couleur chair, malléole, chaussette, basket blanche ; le pied se tord (`roll`), bouge (`flex`), la cheville gonfle (`swell`) et bleuit (`bruise`) ; vue radio (`xray`) avec l'os fêlé (`crack`) ; poche de glace dans un linge (`ice`), bande de contention en huit (`wrap`), doigt qui appuie sur l'os (`press`), sol de terre + racine (`ground`). Jambe surélevée sur des coussins (`LegRest`), pictos 4 pas et radio.
+
+- `ANKLE` — Repère 1000 × 1000 : pivot de la cheville, malléole externe (l'os qu'on palpe), sol.
+- `AnkleSide` — Bas de jambe + pied de profil (repère 1000 × 1000, le pied pose sur `ANKLE.ground`).
+- `RootG` — Racine qui traverse le sentier (repère de `AnkleSide`, sous le pied, ou n'importe où avec `x`, `y`).
+- `LegRest` — Jambe allongée sur un canapé, vue de côté (repère 1000 × 700) : `e` 0 → 1 le pied monte sur deux coussins, plus haut que la hanche (traits pointillés des deux niveaux).
+- `StepsIcon` — Pictogramme « 4 pas » : quatre empreintes de pied en quinconce.
+- `XrayIcon` — Pictogramme « radio » : cliché de cheville (os clairs sur fond bleu nuit).
+
 ## `arrest.tsx`
 Briques « arrêt cardiaque » réutilisables : moniteur ECG (rythme normal, fibrillation ventriculaire, tracé plat, choc), défibrillateur (DAE) et électrodes, mains du sauveteur qui massent + jauge de profondeur, bascule de la tête en arrière (vue de profil : main sur le front, deux doigts sous le menton).
 

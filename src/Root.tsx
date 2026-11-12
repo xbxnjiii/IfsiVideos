@@ -90,6 +90,8 @@ import {SaignementNez, SaignementNezProps} from './videos/saignement-nez/Saignem
 import {TL as SAIGNEMENT_NEZ_TL} from './videos/saignement-nez/timeline';
 import {PiqureAbeille, PiqureAbeilleProps} from './videos/piqure-abeille/PiqureAbeille';
 import {TL as PIQURE_ABEILLE_TL} from './videos/piqure-abeille/timeline';
+import {Entorse, EntorseProps} from './videos/entorse/Entorse';
+import {TL as ENTORSE_TL} from './videos/entorse/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -526,6 +528,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies PiqureAbeilleProps}
+		/>
+		{/* 45 · Entorse */}
+		<Composition
+			id="Entorse"
+			component={Entorse}
+			durationInFrames={ENTORSE_TL.total}
+			fps={ENTORSE_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies EntorseProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition

@@ -1,0 +1,693 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 40.43,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.048,
+   "end": 6.42
+  },
+  {
+   "id": "idees",
+   "start": 7.355,
+   "end": 14.305
+  },
+  {
+   "id": "methode",
+   "start": 15.276,
+   "end": 22.376
+  },
+  {
+   "id": "suite",
+   "start": 23.374,
+   "end": 29.611
+  },
+  {
+   "id": "consulter",
+   "start": 30.57,
+   "end": 36.513
+  },
+  {
+   "id": "fin",
+   "start": 37.502,
+   "end": 40.098
+  }
+ ],
+ "words": [
+  {
+   "text": "Petit",
+   "start": 0.048,
+   "end": 0.288
+  },
+  {
+   "text": "footing",
+   "start": 0.288,
+   "end": 0.625
+  },
+  {
+   "text": "du",
+   "start": 0.625,
+   "end": 0.721
+  },
+  {
+   "text": "matin,",
+   "start": 0.721,
+   "end": 1.142
+  },
+  {
+   "text": "au",
+   "start": 1.442,
+   "end": 1.478
+  },
+  {
+   "text": "parc…",
+   "start": 1.478,
+   "end": 1.851
+  },
+  {
+   "text": "et",
+   "start": 2.26,
+   "end": 2.296
+  },
+  {
+   "text": "là,",
+   "start": 2.296,
+   "end": 2.512
+  },
+  {
+   "text": "ton",
+   "start": 2.8,
+   "end": 2.897
+  },
+  {
+   "text": "pied",
+   "start": 2.897,
+   "end": 3.041
+  },
+  {
+   "text": "se",
+   "start": 3.041,
+   "end": 3.161
+  },
+  {
+   "text": "tord",
+   "start": 3.161,
+   "end": 3.365
+  },
+  {
+   "text": "sur",
+   "start": 3.365,
+   "end": 3.486
+  },
+  {
+   "text": "une",
+   "start": 3.486,
+   "end": 3.582
+  },
+  {
+   "text": "racine…",
+   "start": 3.582,
+   "end": 4.026
+  },
+  {
+   "text": "et",
+   "start": 4.207,
+   "end": 4.279
+  },
+  {
+   "text": "aïe !",
+   "start": 4.291,
+   "end": 4.627
+  },
+  {
+   "text": "Ta",
+   "start": 4.965,
+   "end": 5.122
+  },
+  {
+   "text": "cheville",
+   "start": 5.122,
+   "end": 5.518
+  },
+  {
+   "text": "gonfle",
+   "start": 5.518,
+   "end": 5.819
+  },
+  {
+   "text": "à",
+   "start": 5.819,
+   "end": 5.855
+  },
+  {
+   "text": "vue",
+   "start": 5.855,
+   "end": 5.987
+  },
+  {
+   "text": "d'œil.",
+   "start": 5.987,
+   "end": 6.42
+  },
+  {
+   "text": "Premier",
+   "start": 7.355,
+   "end": 7.625
+  },
+  {
+   "text": "réflexe :",
+   "start": 7.625,
+   "end": 8.262
+  },
+  {
+   "text": "tu",
+   "start": 8.532,
+   "end": 8.654
+  },
+  {
+   "text": "arrives",
+   "start": 8.654,
+   "end": 8.912
+  },
+  {
+   "text": "à",
+   "start": 8.912,
+   "end": 8.961
+  },
+  {
+   "text": "bouger",
+   "start": 8.961,
+   "end": 9.193
+  },
+  {
+   "text": "le",
+   "start": 9.194,
+   "end": 9.279
+  },
+  {
+   "text": "pied,",
+   "start": 9.279,
+   "end": 9.635
+  },
+  {
+   "text": "donc",
+   "start": 9.929,
+   "end": 10.076
+  },
+  {
+   "text": "ce",
+   "start": 10.076,
+   "end": 10.162
+  },
+  {
+   "text": "n'est",
+   "start": 10.162,
+   "end": 10.247
+  },
+  {
+   "text": "pas",
+   "start": 10.247,
+   "end": 10.358
+  },
+  {
+   "text": "cassé ?",
+   "start": 10.358,
+   "end": 10.811
+  },
+  {
+   "text": "Faux !",
+   "start": 11.143,
+   "end": 11.523
+  },
+  {
+   "text": "On",
+   "start": 11.854,
+   "end": 11.988
+  },
+  {
+   "text": "peut",
+   "start": 11.988,
+   "end": 12.099
+  },
+  {
+   "text": "très",
+   "start": 12.099,
+   "end": 12.295
+  },
+  {
+   "text": "bien",
+   "start": 12.295,
+   "end": 12.466
+  },
+  {
+   "text": "bouger",
+   "start": 12.466,
+   "end": 12.687
+  },
+  {
+   "text": "le",
+   "start": 12.687,
+   "end": 12.773
+  },
+  {
+   "text": "pied…",
+   "start": 12.773,
+   "end": 13.128
+  },
+  {
+   "text": "avec",
+   "start": 13.41,
+   "end": 13.667
+  },
+  {
+   "text": "un",
+   "start": 13.667,
+   "end": 13.716
+  },
+  {
+   "text": "os",
+   "start": 13.716,
+   "end": 13.925
+  },
+  {
+   "text": "fêlé.",
+   "start": 13.925,
+   "end": 14.305
+  },
+  {
+   "text": "Le",
+   "start": 15.276,
+   "end": 15.438
+  },
+  {
+   "text": "bon",
+   "start": 15.438,
+   "end": 15.613
+  },
+  {
+   "text": "geste",
+   "start": 15.613,
+   "end": 15.95
+  },
+  {
+   "text": "tient",
+   "start": 15.95,
+   "end": 16.163
+  },
+  {
+   "text": "en",
+   "start": 16.163,
+   "end": 16.238
+  },
+  {
+   "text": "quatre",
+   "start": 16.238,
+   "end": 16.55
+  },
+  {
+   "text": "mots.",
+   "start": 16.55,
+   "end": 16.826
+  },
+  {
+   "text": "La",
+   "start": 17.175,
+   "end": 17.326
+  },
+  {
+   "text": "glace :",
+   "start": 17.326,
+   "end": 17.838
+  },
+  {
+   "text": "quinze",
+   "start": 18.05,
+   "end": 18.288
+  },
+  {
+   "text": "à",
+   "start": 18.288,
+   "end": 18.326
+  },
+  {
+   "text": "vingt",
+   "start": 18.326,
+   "end": 18.451
+  },
+  {
+   "text": "minutes,",
+   "start": 18.451,
+   "end": 18.938
+  },
+  {
+   "text": "toujours",
+   "start": 19.163,
+   "end": 19.463
+  },
+  {
+   "text": "dans",
+   "start": 19.463,
+   "end": 19.563
+  },
+  {
+   "text": "un",
+   "start": 19.563,
+   "end": 19.738
+  },
+  {
+   "text": "linge.",
+   "start": 19.738,
+   "end": 20.151
+  },
+  {
+   "text": "Le",
+   "start": 20.488,
+   "end": 20.675
+  },
+  {
+   "text": "repos :",
+   "start": 20.675,
+   "end": 21.126
+  },
+  {
+   "text": "tu",
+   "start": 21.388,
+   "end": 21.501
+  },
+  {
+   "text": "ne",
+   "start": 21.501,
+   "end": 21.563
+  },
+  {
+   "text": "forces",
+   "start": 21.563,
+   "end": 21.8
+  },
+  {
+   "text": "pas",
+   "start": 21.8,
+   "end": 21.925
+  },
+  {
+   "text": "dessus.",
+   "start": 21.925,
+   "end": 22.376
+  },
+  {
+   "text": "L'élévation :",
+   "start": 23.374,
+   "end": 24.149
+  },
+  {
+   "text": "le",
+   "start": 24.524,
+   "end": 24.587
+  },
+  {
+   "text": "pied",
+   "start": 24.587,
+   "end": 24.749
+  },
+  {
+   "text": "posé",
+   "start": 24.749,
+   "end": 25.024
+  },
+  {
+   "text": "plus",
+   "start": 25.024,
+   "end": 25.224
+  },
+  {
+   "text": "haut",
+   "start": 25.224,
+   "end": 25.274
+  },
+  {
+   "text": "que",
+   "start": 25.274,
+   "end": 25.387
+  },
+  {
+   "text": "la",
+   "start": 25.387,
+   "end": 25.512
+  },
+  {
+   "text": "hanche.",
+   "start": 25.512,
+   "end": 25.962
+  },
+  {
+   "text": "Et",
+   "start": 26.299,
+   "end": 26.424
+  },
+  {
+   "text": "la",
+   "start": 26.424,
+   "end": 26.512
+  },
+  {
+   "text": "contention :",
+   "start": 26.512,
+   "end": 27.174
+  },
+  {
+   "text": "une",
+   "start": 27.587,
+   "end": 27.687
+  },
+  {
+   "text": "bande",
+   "start": 27.687,
+   "end": 27.912
+  },
+  {
+   "text": "élastique,",
+   "start": 27.912,
+   "end": 28.524
+  },
+  {
+   "text": "sans",
+   "start": 28.787,
+   "end": 28.962
+  },
+  {
+   "text": "trop",
+   "start": 28.962,
+   "end": 29.137
+  },
+  {
+   "text": "serrer.",
+   "start": 29.137,
+   "end": 29.611
+  },
+  {
+   "text": "Mais",
+   "start": 30.57,
+   "end": 30.754
+  },
+  {
+   "text": "si",
+   "start": 30.754,
+   "end": 30.876
+  },
+  {
+   "text": "tu",
+   "start": 30.876,
+   "end": 30.986
+  },
+  {
+   "text": "ne",
+   "start": 30.986,
+   "end": 31.023
+  },
+  {
+   "text": "peux",
+   "start": 31.023,
+   "end": 31.109
+  },
+  {
+   "text": "pas",
+   "start": 31.109,
+   "end": 31.231
+  },
+  {
+   "text": "faire",
+   "start": 31.232,
+   "end": 31.415
+  },
+  {
+   "text": "quatre",
+   "start": 31.415,
+   "end": 31.722
+  },
+  {
+   "text": "pas,",
+   "start": 31.722,
+   "end": 31.942
+  },
+  {
+   "text": "si",
+   "start": 32.31,
+   "end": 32.42
+  },
+  {
+   "text": "ça",
+   "start": 32.42,
+   "end": 32.543
+  },
+  {
+   "text": "fait",
+   "start": 32.543,
+   "end": 32.665
+  },
+  {
+   "text": "mal",
+   "start": 32.665,
+   "end": 32.861
+  },
+  {
+   "text": "quand",
+   "start": 32.861,
+   "end": 32.972
+  },
+  {
+   "text": "on",
+   "start": 32.972,
+   "end": 33.082
+  },
+  {
+   "text": "appuie",
+   "start": 33.082,
+   "end": 33.388
+  },
+  {
+   "text": "sur",
+   "start": 33.388,
+   "end": 33.548
+  },
+  {
+   "text": "l'os",
+   "start": 33.548,
+   "end": 33.682
+  },
+  {
+   "text": "de",
+   "start": 33.682,
+   "end": 33.756
+  },
+  {
+   "text": "la",
+   "start": 33.756,
+   "end": 33.842
+  },
+  {
+   "text": "cheville,",
+   "start": 33.842,
+   "end": 34.283
+  },
+  {
+   "text": "ou",
+   "start": 34.663,
+   "end": 34.7
+  },
+  {
+   "text": "si",
+   "start": 34.7,
+   "end": 34.822
+  },
+  {
+   "text": "elle",
+   "start": 34.822,
+   "end": 34.883
+  },
+  {
+   "text": "est",
+   "start": 34.883,
+   "end": 34.92
+  },
+  {
+   "text": "déformée :",
+   "start": 34.92,
+   "end": 35.496
+  },
+  {
+   "text": "il",
+   "start": 35.717,
+   "end": 35.839
+  },
+  {
+   "text": "faut",
+   "start": 35.839,
+   "end": 35.962
+  },
+  {
+   "text": "une",
+   "start": 35.962,
+   "end": 36.048
+  },
+  {
+   "text": "radio.",
+   "start": 36.048,
+   "end": 36.513
+  },
+  {
+   "text": "Et",
+   "start": 37.502,
+   "end": 37.574
+  },
+  {
+   "text": "au",
+   "start": 37.574,
+   "end": 37.61
+  },
+  {
+   "text": "prochain",
+   "start": 37.61,
+   "end": 37.935
+  },
+  {
+   "text": "footing…",
+   "start": 37.935,
+   "end": 38.452
+  },
+  {
+   "text": "regarde",
+   "start": 38.824,
+   "end": 39.125
+  },
+  {
+   "text": "aussi",
+   "start": 39.125,
+   "end": 39.413
+  },
+  {
+   "text": "où",
+   "start": 39.413,
+   "end": 39.449
+  },
+  {
+   "text": "tu",
+   "start": 39.449,
+   "end": 39.581
+  },
+  {
+   "text": "mets",
+   "start": 39.581,
+   "end": 39.666
+  },
+  {
+   "text": "les",
+   "start": 39.666,
+   "end": 39.738
+  },
+  {
+   "text": "pieds !",
+   "start": 39.738,
+   "end": 40.098
+  }
+ ]
+}

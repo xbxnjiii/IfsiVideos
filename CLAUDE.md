@@ -351,6 +351,13 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   un linge ≈ 10 min, ce qui est normal (rougeur, gonflement, douleur, quelques jours), le 15 (visage / gorge qui gonfle, mal
   à respirer, piqûre dans la bouche), chute « la guêpe ne laisse pas son dard ». Brique `src/brand/bee.tsx`. Voix : « Aïe ! » seul était lu « Rahé », « Ouille ! »
   « Will » → « …sur ta main… et aïe ! » (entendu « et aille », même son). Storyboard `docs/lpi/storyboard-piqure-abeille.md`.
+  En attente (43 et 44) : le propriétaire les fait vérifier avant la voix Laura ; les garder dans le dépôt.
+- `Entorse` (n° 45, ≈ 42 s, voix gratuite d'abord, thème libre) : accroche sans texte réaliste (footing au parc, le pied se
+  tord sur une racine, gros plan sur la cheville : basket, la cheville gonfle et bleuit), idée reçue « je bouge le pied,
+  donc pas cassé » (vue radio, péroné fêlé), 4 mots glace (15 – 20 min, dans un linge) · repos · élévation (plus haut que la
+  hanche, `LegRest`) · contention (bande en huit, sans trop serrer), radio si 4 pas impossibles / douleur sur l'os / cheville
+  déformée, chute (il saute la racine). Brique `src/brand/ankle.tsx` (`AnkleSide`) ; `Walker` a maintenant `skin` (vraie
+  couleur de peau). Storyboard `docs/lpi/storyboard-entorse.md`.
 
 ## Voix ElevenLabs « Laura » (choisie par le propriétaire pour les nouvelles vidéos)
 
