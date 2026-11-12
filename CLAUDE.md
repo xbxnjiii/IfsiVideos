@@ -315,7 +315,7 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   ongle, plis de flexion, empreinte) pour la montrer ; le reste de la vidéo est côté pulpe.
   Briques `src/brand/splinter.tsx`. Voix : « ça rougit, ça gonfle » → « la peau devient rouge, gonflée ». Storyboard
   `docs/lpi/storyboard-echarde.md`.
-- `Tique` (n° 42, ≈ 48 s, voix gratuite d'abord, thème libre) : accroche refaite à la demande : « Tu te balades en forêt…
+- `Tique` (n° 42, ≈ 53 s, voix Laura après validation (995 crédits), thème libre) : accroche refaite à la demande : « Tu te balades en forêt…
   et quelque chose tombe sur ton bras. C'est quoi ? » (homme en t-shirt et jean sur un sentier, `ForestBg` de
   `src/brand/forest.tsx`, `Walker` `tee` + `jeans` ; la tique tombe d'une branche sur l'avant-bras, la caméra plonge sur le
   bras) puis la peau en très gros plan (plus de poils, demandé), le point noir que le doigt frotte, zoom ×7 : une tique ;
