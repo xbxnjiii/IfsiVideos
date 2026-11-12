@@ -54,6 +54,7 @@ pas de logiciel de montage, pas de banque d'images.
 | 41 | Court info : comment retirer une écharde (voix gratuite, accroche animée sans texte) | `Echarde` | [voix/41-echarde.script.json](voix/41-echarde.script.json) | [storyboard](docs/lpi/storyboard-echarde.md) |
 | 42 | Court info : une tique, comment bien la retirer (voix Laura, accroche animée sans texte) | `Tique` | [voix/42-tique.script.json](voix/42-tique.script.json) | [storyboard](docs/lpi/storyboard-tique.md) |
 | 43 | Court info : saignement de nez, tête en avant (voix gratuite, accroche animée sans texte) | `Saignement-Nez` | [voix/43-saignement-nez.script.json](voix/43-saignement-nez.script.json) | [storyboard](docs/lpi/storyboard-saignement-nez.md) |
+| 44 | Court info : piqûre d'abeille, gratter le dard avec une carte (voix gratuite, accroche animée sans texte) | `Piqure-Abeille` | [voix/44-piqure-abeille.script.json](voix/44-piqure-abeille.script.json) | [storyboard](docs/lpi/storyboard-piqure-abeille.md) |
 
 ## Utilisation
 

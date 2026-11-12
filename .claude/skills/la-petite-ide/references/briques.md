@@ -69,6 +69,23 @@ Briques « arrêt cardiaque » réutilisables : moniteur ECG (rythme normal, fib
 - `WashFx` — Mousse de savon + gouttes d'eau qui tombent sur la coupure (repère d'un `BigFinger`), `on` 0 → 1.
 - `DabPad` — Compresse tenue entre deux doigts qui tamponne la coupure (repère d'un `BigFinger`) : `dab` 0 → 1 (descend / remonte).
 
+## `bee.tsx`
+« Piqûre d'abeille » : abeille et guêpe vues de dessus (ailes qui battent), main posée à plat vue de dessus (rendu soigné : peau opaque en dégradé, ombre douce, ongles, plis), nappe de pique-nique, dard planté dans la peau avec sa poche de venin qui pulse (pincée : le venin se répand), carte qui gratte, bouts de doigts qui pincent, glaçon dans un linge, papule (gonflement rose). Couleurs de la marque uniquement (l'abeille est rayée rose et bleu nuit).
+
+- `BeeG` — Abeille vue de dessus, tête vers +x (longueur ≈ 150 à `s` = 1) : ailes qui battent si `fly` > 0, abdomen rayé, dard.
+- `HAND` — Repère 1000 × 1000 de la main posée à plat : point de la piqûre (dos de la main).
+- `HandTopG` — Main droite posée à plat, vue de dessus (dos de la main, doigts vers le haut, repère 1000 × 1000, le poignet sort en bas).
+- `StingerG` — Dard planté dans la peau, vu de dessus (repère de la peau, point d'entrée en `x`, `y`, taille `s`) : tige barbelée en biais, poche de venin au bout qui pulse.
+- `VenomSpread` — Venin qui se répand dans la peau autour de (x, y) : petits points roses qui s'éloignent (`spread` 0 → 1).
+- `WhealG` — Papule : gonflement rose surélevé autour de (x, y) (`k` 0 → 1).
+- `CardG` — Carte (type carte bancaire) vue de dessus, bord gauche en (`x`, `y` = milieu du bord), largeur `w`.
+- `PinchTipsG` — Deux bouts de doigts (pouce + index) qui descendent pincer en (`x`, `y`) ; `gap` écart entre les deux (0 = serrés).
+- `IceCloth` — Glaçon enveloppé dans un linge (repère 300 × 220), petits flocons de froid.
+- `PicnicBg` — Nappe de pique-nique vue de dessus (vichy rose), assiette, verre de jus, lumière de soleil.
+- `SwellFaceIcon` — Visage qui gonfle (lèvres et paupières).
+- `BreathAlertIcon` — Respirer difficilement : poumons + « ! ».
+- `MouthStingIcon` — Piqûre dans la bouche : bouche ouverte + petite abeille.
+
 ## `body.tsx`
 Corps (trait bleu nuit, aplats de la palette) : poignet paume vers le haut avec artère radiale, doigts de l'examinateur qui prennent le pouls, pouce barré. Réutilisés d'une vidéo à l'autre.
 

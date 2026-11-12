@@ -1,0 +1,37 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Un pique-nique au soleil… et tout à coup, une abeille se pose sur ta main… et aïe ! Elle vient de te piquer… et son dard est resté planté."
+ },
+ {
+  "id": "idees",
+  "rate": "+2%",
+  "text": "Premier réflexe : l'attraper avec les doigts ? Surtout pas ! Tu presses la petite poche de venin… et tu en injectes encore plus."
+ },
+ {
+  "id": "methode",
+  "rate": "+0%",
+  "text": "Le bon geste : gratte le dard avec le bord d'une carte, comme une carte bancaire. Il sort tout seul, sans être pressé."
+ },
+ {
+  "id": "soins",
+  "rate": "+0%",
+  "text": "Ensuite, lave à l'eau et au savon. Puis pose du froid : un glaçon dans un linge, une dizaine de minutes."
+ },
+ {
+  "id": "normal",
+  "rate": "+2%",
+  "text": "Rougeur, gonflement, douleur autour de la piqûre : c'est normal. Ça passe en quelques jours."
+ },
+ {
+  "id": "urgence",
+  "rate": "+2%",
+  "text": "Mais si ton visage ou ta gorge gonfle, si tu as du mal à respirer, ou si tu as été piqué dans la bouche : appelle le quinze, tout de suite."
+ },
+ {
+  "id": "fin",
+  "rate": "+4%",
+  "text": "Et la guêpe ? Elle, elle ne laisse pas son dard… donc pas besoin de gratter !"
+ }
+]

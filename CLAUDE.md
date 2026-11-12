@@ -336,6 +336,14 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   `src/brand/nose.tsx` (`HeadSide`). Voix : « Ton nez saigne ! » était entendu « ton essaigne » → « C'est ton nez qui
   saigne ! » ; dans un titre, l'accent ne marche pas sur un mot à trait d'union (« Assieds-\*toi\* » s'affichait tel quel).
   Storyboard `docs/lpi/storyboard-saignement-nez.md`.
+  En attente : le propriétaire fait regarder la vidéo à quelqu'un avant de passer à la voix Laura.
+- `Piqure-Abeille` (n° 44, ≈ 49 s, voix gratuite d'abord, thème libre) : accroche sans texte (pique-nique vu de dessus, une
+  abeille se pose sur la main et pique, plongée sur la peau : le dard planté avec sa poche de venin), idée reçue (le pincer
+  avec les doigts : on presse le venin), gratter avec le bord d'une carte (le bord pousse le dard), eau + savon, froid dans
+  un linge ≈ 10 min, ce qui est normal (rougeur, gonflement, douleur, quelques jours), le 15 (visage / gorge qui gonfle, mal
+  à respirer, piqûre dans la bouche), chute « la guêpe ne laisse pas son dard ». L'abeille reste aux couleurs de la marque
+  (rayures rose / bleu nuit, pas de jaune). Brique `src/brand/bee.tsx`. Voix : « Aïe ! » seul était lu « Rahé », « Ouille ! »
+  « Will » → « …sur ta main… et aïe ! » (entendu « et aille », même son). Storyboard `docs/lpi/storyboard-piqure-abeille.md`.
 
 ## Voix ElevenLabs « Laura » (choisie par le propriétaire pour les nouvelles vidéos)
 

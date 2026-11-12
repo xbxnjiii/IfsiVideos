@@ -88,6 +88,8 @@ import {Tique, TiqueProps} from './videos/tique/Tique';
 import {TL as TIQUE_TL} from './videos/tique/timeline';
 import {SaignementNez, SaignementNezProps} from './videos/saignement-nez/SaignementNez';
 import {TL as SAIGNEMENT_NEZ_TL} from './videos/saignement-nez/timeline';
+import {PiqureAbeille, PiqureAbeilleProps} from './videos/piqure-abeille/PiqureAbeille';
+import {TL as PIQURE_ABEILLE_TL} from './videos/piqure-abeille/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -514,6 +516,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies SaignementNezProps}
+		/>
+		{/* 44 · Piqure-Abeille */}
+		<Composition
+			id="Piqure-Abeille"
+			component={PiqureAbeille}
+			durationInFrames={PIQURE_ABEILLE_TL.total}
+			fps={PIQURE_ABEILLE_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies PiqureAbeilleProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition
