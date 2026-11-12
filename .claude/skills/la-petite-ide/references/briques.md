@@ -246,7 +246,7 @@ Trousse de secours de la maison : la trousse (couvercle qui s'ouvre, cases qui s
 - `CuttingCloseUp` — Gros plan « comme si c'était tes mains » (repère 1000 × 1000, vue de haut en perspective) : plan de travail, planche en bois, tomate qui se coupe en tranches (`slices` 0 → 3 : la lame descend, la tranche tombe à plat), main gauche en…
 
 ## `forest.tsx`
-Balade en forêt, vue de côté, plein écran (repère 1080 × 1920) : ciel clair, rangée d'arbres lointains, grands arbres au premier plan (troncs en vrai bois brun, feuillage vert : exceptions à la palette demandées par le propriétaire pour « une forêt réaliste », comme la planche de l'écharde), buissons, herbe, sentier, une branche qui passe au-dessus du sentier (la tique tombe d'une de ses feuilles). `drift` fait glisser le décor (parallaxe).
+Balade en forêt, vue de côté, plein écran (repère 1080 × 1920) : ciel clair, rangée d'arbres lointains, grands arbres au premier plan (troncs en vrai bois brun, feuillage vert : exceptions à la palette demandées par le propriétaire pour « une forêt réaliste », comme la planche de l'écharde), buissons, herbe, sentier, un arbre dont le feuillage couvre le point `branch` (la tique tombe de ses feuilles). `drift` fait glisser le décor (parallaxe).
 
 - `ForestBg` — Forêt plein écran.
 

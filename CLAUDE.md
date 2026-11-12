@@ -319,11 +319,12 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   et quelque chose tombe sur ton bras. C'est quoi ? » (homme en t-shirt et jean sur un sentier, `ForestBg` de
   `src/brand/forest.tsx`, `Walker` `tee` + `jeans` ; la tique tombe d'une branche sur l'avant-bras, la caméra plonge sur le
   bras) puis la peau en très gros plan (plus de poils, demandé), le point noir que le doigt frotte, zoom ×7 : une tique ;
-  tire-tique redessiné d'après le vrai Tick Twister (demandé : « plus réaliste ») ; on glisse **le cran** (fond du V) sous la
-  tique pour qu'elle s'y coince (cercle sur le cran, « la tique est coincée ✓ »), puis on **vérifie qu'elle est entière, avec
-  sa tête** (loupe, demandé) ; forêt **réaliste : feuillage vert, buissons, herbe** (exception à la palette demandée, comme
-  le bois brun) ; idée reçue barrée (éther, alcool, huile : elle recrache
-  des microbes), tire-tique (dessous, on tourne, elle sort avec sa tête), désinfecter / se laver les mains / noter la date,
+  tire-tique redessiné d'après le vrai Tick Twister (demandé : « plus réaliste ») ; le crochet arrive par le bas et passe **sous** la
+  tique (comme la 1re version, demandé : pas « à côté »), son **cran** (fond du V) contre la tête, + carte « vu au ras de la
+  peau » (profil : le rostre planté entre dans le cran), puis on **vérifie qu'elle est entière, avec
+  sa tête** (loupe, demandé) ; forêt **réaliste : feuillage vert, buissons, herbe**, la tique tombe du feuillage d'un arbre (pas de branche isolée) (exception à la palette demandée, comme
+  le bois brun) ; idées reçues barrées (alcool, la gratter, l'enlever avec
+  les doigts, demandé : elle recrache des microbes), tire-tique (dessous, on tourne, elle sort avec sa tête), désinfecter / se laver les mains / noter la date,
   surveiller un mois (plaque rouge qui s'étend, fièvre → médecin, maladie de Lyme), chute (manches longues, pantalon,
   inspection). Briques `src/brand/tick.tsx` (`SkinG` peau en gros plan avec `ring` érythème migrant, `TickG`, `TickHookG`).
   Storyboard `docs/lpi/storyboard-tique.md`.

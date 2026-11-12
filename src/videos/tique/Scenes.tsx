@@ -152,24 +152,65 @@ const Question: React.FC<{at: number; x: number; y: number}> = ({at: t0, x, y}) 
 };
 
 /* ═══════════════════════════════ L'IDÉE REÇUE : ÉTHER, ALCOOL, HUILE ═══════════════════════════════ */
-const Tile: React.FC<{at: number; x: number; cross: number; label: string; tone: string}> = ({at: t0, x, cross, label, tone}) => {
+const Tile: React.FC<{at: number; x: number; cross: number; label: string; children: React.ReactNode}> = ({at: t0, x, cross, label, children}) => {
 	const frame = useCurrentFrame();
 	if (frame < t0) return null;
 	return (
-		<div style={{position: 'absolute', left: x - 140, top: 330, width: 280, height: 300, transform: `scale(${popAt(frame, t0)})`}}>
-			<div style={{position: 'absolute', inset: 0, borderRadius: 44, background: LPI.paper, border: `6px solid ${N}`, boxShadow: SHADOW, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-				<LabelBottle label={label} tone={tone} size={130} />
+		<div style={{position: 'absolute', left: x - 150, top: 320, width: 300, height: 330, transform: `scale(${popAt(frame, t0)})`}}>
+			<div style={{position: 'absolute', inset: 0, borderRadius: 44, background: LPI.paper, border: `6px solid ${N}`, boxShadow: SHADOW, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 10}}>
+				<div style={{height: 210, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>{children}</div>
+				<div style={{fontFamily: FONT.title, fontWeight: 900, fontSize: label.length > 12 ? 30 : 38, color: N, textAlign: 'center', lineHeight: 1.05}}>{label}</div>
 			</div>
-			<Cross at={cross} size={250} />
+			<Cross at={cross} size={260} />
 		</div>
+	);
+};
+
+// peau = blanc cassé teinté de rose (mélange des couleurs de la marque)
+const SKIN_C = '#F4E0EA';
+/** Pictogramme « gratter » : un doigt, l'ongle qui gratte la tique (traits de grattage). */
+const ScratchIcon: React.FC = () => {
+	const frame = useCurrentFrame();
+	const w = Math.sin(frame / 2.2) * 10;
+	return (
+		<svg width={210} height={210} viewBox="0 0 210 210" style={{overflow: 'visible'}}>
+			<rect x={10} y={150} width={190} height={50} rx={18} fill={SKIN_C} stroke={N} strokeWidth={4} />
+			<g transform="translate(105 150) scale(2.6)"><TickG x={0} y={-2} s={1} buried={1} fed={0.3} /></g>
+			{[0, 1, 2].map((i) => (
+				<path key={i} d={`M${60 + i * 26} 166 l22 -18`} stroke={LPI.pink} strokeWidth={5} strokeLinecap="round" />
+			))}
+			<g transform={`translate(${w} 0) rotate(-35 120 120)`}>
+				<rect x={92} y={10} width={64} height={150} rx={32} fill={SKIN_C} stroke={N} strokeWidth={4} />
+				<rect x={102} y={112} width={44} height={40} rx={16} fill={LPI.paper} stroke={alpha(N, 0.7)} strokeWidth={3} />
+			</g>
+		</svg>
+	);
+};
+/** Pictogramme « avec les doigts » : le pouce et l'index qui pincent et écrasent la tique. */
+const PinchIcon: React.FC = () => {
+	const frame = useCurrentFrame();
+	const p = 0.5 + 0.5 * Math.sin(frame / 4);
+	return (
+		<svg width={210} height={210} viewBox="0 0 210 210" style={{overflow: 'visible'}}>
+			<rect x={10} y={160} width={190} height={40} rx={16} fill={SKIN_C} stroke={N} strokeWidth={4} />
+			<g transform="translate(105 158) scale(2.6)"><TickG x={0} y={-2} s={1} buried={1} fed={0.3} /></g>
+			<g transform={`translate(${-8 * p} 0) rotate(28 60 150)`}>
+				<rect x={36} y={30} width={56} height={130} rx={28} fill={SKIN_C} stroke={N} strokeWidth={4} />
+				<rect x={44} y={128} width={38} height={26} rx={12} fill={LPI.paper} stroke={alpha(N, 0.7)} strokeWidth={3} />
+			</g>
+			<g transform={`translate(${8 * p} 0) rotate(-28 150 150)`}>
+				<rect x={118} y={30} width={56} height={130} rx={28} fill={SKIN_C} stroke={N} strokeWidth={4} />
+				<rect x={126} y={128} width={38} height={26} rx={12} fill={LPI.paper} stroke={alpha(N, 0.7)} strokeWidth={3} />
+			</g>
+		</svg>
 	);
 };
 
 export const Idees: React.FC = () => {
 	const frame = useCurrentFrame();
-	const ETHER = at('idees', "l'éther,");
-	const ALCOOL = at('idees', "l'alcool");
-	const HUILE = at('idees', "l'huile");
+	const ETHER = at('idees', "l'alcool,");
+	const ALCOOL = at('idees', 'gratter,');
+	const HUILE = at('idees', 'doigts');
 	const SURTOUT = at('idees', 'surtout');
 	const PAS = at('idees', 'pas !');
 	const RECR = at('idees', 'recracher');
@@ -184,9 +225,15 @@ export const Idees: React.FC = () => {
 			</Skin>
 			<Camera punches={[ETHER + 1, ALCOOL + 1, HUILE + 1, PAS + 1]} shakes={[PAS + 1]} strength={0.04}>
 				<Big from={SURTOUT - 2} text={'Surtout *pas* !'} size={116} y={130} center />
-				<Tile at={ETHER - 2} x={200} cross={PAS - 2} label="ÉTHER" tone={LPI.sky} />
-				<Tile at={ALCOOL - 2} x={540} cross={PAS} label="ALCOOL" tone={LPI.blue} />
-				<Tile at={HUILE - 2} x={880} cross={PAS + 2} label="HUILE" tone={LPI.pink} />
+				<Tile at={ETHER - 2} x={195} cross={PAS - 2} label="l'alcool">
+					<LabelBottle label="ALCOOL" tone={LPI.blue} size={120} />
+				</Tile>
+				<Tile at={ALCOOL - 2} x={540} cross={PAS} label="la gratter">
+					<ScratchIcon />
+				</Tile>
+				<Tile at={HUILE - 2} x={885} cross={PAS + 2} label="avec les doigts">
+					<PinchIcon />
+				</Tile>
 				{/* elle recrache… des microbes qui partent dans la peau */}
 				{spread > 0
 					? Array.from({length: 9}, (_, i) => {
@@ -218,6 +265,77 @@ const cl01 = (v: number) => Math.min(1, Math.max(0, v));
 const HEAD_Y = 500 - 17 * 6;
 
 /* ═══════════════════════════════ LE BON GESTE : LE TIRE-TIQUE ═══════════════════════════════ */
+/**
+ * Vue de profil, au ras de la peau (carte 960 × 400) : le crochet glisse à plat sur la peau, PASSE SOUS la tique, et le
+ * rostre (planté dans la peau) entre dans le cran. `slide` 0 → 1 ; `jam` : petit sursaut quand elle se coince ; `ok` 0 → 1 :
+ * cercle « coincée » autour du rostre.
+ */
+const ProfileCut: React.FC<{slide: number; jam: number; ok: number}> = ({slide, jam, ok}) => {
+	const frame = useCurrentFrame();
+	const SK = 250;
+	const tip = interpolate(slide, [0, 1], [-60, 660]);
+	const rx = 604;
+	return (
+		<svg width={960} height={400} viewBox="0 0 960 400" style={{display: 'block'}}>
+			<defs>
+				<linearGradient id="pcSkin" x1="0" y1="0" x2="0" y2="1">
+					<stop offset="0" stopColor={SKIN_C} />
+					<stop offset="1" stopColor={alpha(LPI.pink, 0.55)} />
+				</linearGradient>
+				<radialGradient id="pcBody" cx="0.4" cy="0.3" r="0.8">
+					<stop offset="0" stopColor={alpha(LPI.blue, 0.9)} />
+					<stop offset="1" stopColor={N} />
+				</radialGradient>
+				<linearGradient id="pcTool" x1="0" y1="0" x2="0" y2="1">
+					<stop offset="0" stopColor={LPI.paper} />
+					<stop offset="1" stopColor={LPI.sky} />
+				</linearGradient>
+			</defs>
+			<rect width={960} height={400} fill={LPI.paper} />
+			<rect y={SK} width={960} height={400 - SK} fill="url(#pcSkin)" />
+			<line x1={0} y1={SK} x2={960} y2={SK} stroke={alpha(N, 0.6)} strokeWidth={4} />
+			<line x1={0} y1={SK + 36} x2={960} y2={SK + 36} stroke={alpha(N, 0.15)} strokeWidth={3} strokeDasharray="14 10" />
+			{[90, 170, 790, 870].map((x, i) => (
+				<path key={i} d={`M${x} ${SK} q${10 + i * 2} -40 ${30} -70`} fill="none" stroke={alpha(N, 0.45)} strokeWidth={3} strokeLinecap="round" />
+			))}
+			{/* le crochet, à plat sur la peau : il passe SOUS le corps de la tique */}
+			<g>
+				<path d={`M${tip - 1300} ${SK - 42} L${tip - 40} ${SK - 40} Q${tip} ${SK - 36} ${tip + 6} ${SK - 4} L${tip - 1300} ${SK - 2} Z`} fill="url(#pcTool)" stroke={N} strokeWidth={5} strokeLinejoin="round" />
+				<line x1={tip - 1300} y1={SK - 30} x2={tip - 70} y2={SK - 28} stroke={alpha(LPI.paper, 0.95)} strokeWidth={6} strokeLinecap="round" />
+			</g>
+			<g transform={`translate(${jam} 0)`}>
+				{/* rostre planté dans la peau : il traverse le cran du crochet */}
+				<path d={`M${rx - 12} ${SK - 44} L${rx + 12} ${SK - 44} L${rx + 10} ${SK + 30} L${rx} ${SK + 52} L${rx - 8} ${SK + 30} Z`} fill={mix(N, LPI.blue, 0.25)} stroke={N} strokeWidth={4} strokeLinejoin="round" />
+				{[0, 1, 2].map((i) => (
+					<path key={i} d={`M${rx - 8} ${SK + 4 + i * 14} l-8 -6 M${rx + 8} ${SK + 4 + i * 14} l8 -6`} stroke={N} strokeWidth={3} strokeLinecap="round" />
+				))}
+				{/* pattes (devant le crochet, posées sur la peau) */}
+				{[330, 400, 470, 530].map((x, i) => (
+					<path key={i} d={`M${x} ${SK - 70} L${x - 34 + i * 8} ${SK - 44} L${x - 50 + i * 12} ${SK - 2}`} fill="none" stroke={N} strokeWidth={8} strokeLinecap="round" strokeLinejoin="round" />
+				))}
+				{/* corps, au-dessus du crochet */}
+				<ellipse cx={420} cy={SK - 118} rx={170} ry={70} transform={`rotate(8 420 ${SK - 118})`} fill="url(#pcBody)" stroke={N} strokeWidth={5} />
+				<ellipse cx={505} cy={SK - 142} rx={78} ry={32} transform={`rotate(12 505 ${SK - 142})`} fill={alpha(N, 0.55)} />
+				<ellipse cx={360} cy={SK - 156} rx={60} ry={16} fill={alpha(LPI.paper, 0.3)} />
+				<path d={`M${562} ${SK - 104} Q${604} ${SK - 94} ${rx + 10} ${SK - 44} L${rx - 14} ${SK - 44} Q${574} ${SK - 70} ${548} ${SK - 80} Z`} fill={mix(N, LPI.blue, 0.2)} stroke={N} strokeWidth={4} strokeLinejoin="round" />
+			</g>
+			{ok > 0 ? (
+				<g opacity={ok}>
+					<circle cx={rx + jam} cy={SK - 22} r={60 + 5 * Math.sin(frame / 5)} fill="none" stroke={LPI.pink} strokeWidth={8} strokeDasharray="16 10" />
+				</g>
+			) : null}
+			{/* flèche du geste */}
+			{slide > 0 && slide < 1 ? <path d={`M${Math.max(40, tip - 260)} ${SK + 90} l140 0 m-26 -18 l26 18 l-26 18`} fill="none" stroke={N} strokeWidth={7} strokeLinecap="round" strokeLinejoin="round" opacity={0.7} /> : null}
+		</svg>
+	);
+};
+
+const mix = (a: string, b: string, t: number) => {
+	const p = (h: string) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16));
+	const [x, y] = [p(a), p(b)];
+	return '#' + x.map((v, i) => Math.round(v + (y[i] - v) * t).toString(16).padStart(2, '0')).join('');
+};
+
 export const Methode: React.FC = () => {
 	const frame = useCurrentFrame();
 	const TIRE = at('methode', 'tire-tique.');
@@ -235,14 +353,17 @@ export const Methode: React.FC = () => {
 	const spin = 360 * lin(frame, TOURNE, COUP + 14);
 	const off = lin(frame, DECROCHE - 2, DECROCHE + 14);
 	const hookIn = lin(frame, TIRE - 4, TIRE + 10);
-	const tipX = interpolate(slide, [0, 1], [900, 508]);
-	// la tique se coince dans le cran : petit sursaut au mot « coince »
+	// le crochet arrive par le bas (côté du corps) et passe SOUS la tique ; le fond du V finit contre la tête
+	const tipY = interpolate(slide, [0, 1], [1000, 422]);
 	const jam = frame >= COINCE && frame < COINCE + 12 ? Math.sin((frame - COINCE) * 1.6) * 5 * (1 - (frame - COINCE) / 12) : 0;
-	// cercle qui montre le cran (le fond du V), il suit le crochet, puis entoure la tête coincée
 	const cranO = fadeIn(frame, CRAN - 2, 6) * (1 - lin(frame, TOURNE - 6, TOURNE + 4));
-	const cranX = tipX - 34;
-	// vérification : loupe sur la tique sortie
+	// carte « vu de profil »
+	const card = fadeIn(frame, GLISSE + 2, 8) * (1 - lin(frame, TOURNE - 2, TOURNE + 8));
+	const ok = fadeIn(frame, COINCE + 2, 6);
 	const lens = popAt(frame, VERIFIE - 2);
+	const CY = 1120;
+	const sx = (x: number) => 540 - 800 + 1.6 * x;
+	const sy = (y: number) => CY - 800 + 1.6 * y;
 	const titles: [number, number, string][] = [
 		[TIRE - 4, GLISSE - 4, 'Un *tire-tique*'],
 		[GLISSE - 4, COINCE - 4, 'Le *cran* dessous'],
@@ -253,20 +374,18 @@ export const Methode: React.FC = () => {
 	];
 	return (
 		<AbsoluteFill>
-			<Skin cx={540} cy={1060} red={0.7} tint={0}>
-				{/* le crochet arrive par le côté : son cran (le fond du V) se glisse sous la tique, au ras de la peau, et la
-				    tête se coince dedans ; on tourne autour de ce point, puis on soulève */}
-				<g transform={`translate(${140 * off + jam} ${-240 * off}) rotate(${spin} 500 ${HEAD_Y})`}>
-					<TickHookG x={tipX} y={HEAD_Y} ang={0} scale={0.95} opacity={hookIn} />
+			<Skin cx={540} cy={CY} red={0.7} tint={0}>
+				<g transform={`translate(${140 * off + jam} ${-240 * off}) rotate(${spin} 500 410)`}>
+					<TickHookG x={500} y={tipY} ang={90} scale={1.5} opacity={hookIn} />
 					<TickG x={500} y={500} s={6} buried={1 - off} fed={0.3} walk={off > 0 ? 0.5 : 0.15} ang={0} />
 				</g>
 				{cranO > 0 ? (
 					<g opacity={cranO}>
-						<circle cx={cranX + jam} cy={HEAD_Y} r={62 + 6 * Math.sin(frame / 5)} fill="none" stroke={LPI.pink} strokeWidth={9} strokeDasharray="18 12" />
-						<circle cx={cranX + jam} cy={HEAD_Y} r={74 + 6 * Math.sin(frame / 5)} fill="none" stroke={alpha(N, 0.5)} strokeWidth={3} />
+						<circle cx={500 + jam} cy={tipY - 56} r={70 + 6 * Math.sin(frame / 5)} fill="none" stroke={LPI.pink} strokeWidth={9} strokeDasharray="18 12" />
+						<circle cx={500 + jam} cy={tipY - 56} r={82 + 6 * Math.sin(frame / 5)} fill="none" stroke={alpha(N, 0.5)} strokeWidth={3} />
 					</g>
 				) : null}
-				{off > 0.3 ? <circle cx={500} cy={490} r={14} fill={alpha(LPI.pink, 0.9)} stroke={alpha(N, 0.4)} strokeWidth={2} /> : null}
+				{off > 0.3 ? <circle cx={500} cy={410} r={14} fill={alpha(LPI.pink, 0.9)} stroke={alpha(N, 0.4)} strokeWidth={2} /> : null}
 				{lens > 0.01 ? (
 					<g transform={`translate(640 250) scale(${lens})`}>
 						<circle r={175} fill="none" stroke={N} strokeWidth={14} />
@@ -275,27 +394,33 @@ export const Methode: React.FC = () => {
 					</g>
 				) : null}
 			</Skin>
+			{card > 0.01 ? (
+				<div style={{position: 'absolute', left: 60, top: 290, width: 960, height: 400, borderRadius: 40, overflow: 'hidden', border: `6px solid ${N}`, boxShadow: SHADOW, opacity: card, transform: `scale(${0.92 + 0.08 * card})`}}>
+					<ProfileCut slide={slide} jam={jam} ok={ok} />
+					<div style={{position: 'absolute', left: 22, top: 18, padding: '6px 20px', borderRadius: 999, background: LPI.sky, border: `4px solid ${N}`, fontFamily: FONT.title, fontWeight: 900, fontSize: 32, color: N}}>vu au ras de la peau</div>
+					{ok > 0 ? (
+						<div style={{position: 'absolute', right: 22, top: 18, padding: '6px 20px', borderRadius: 999, background: LPI.pink, border: `4px solid ${N}`, fontFamily: FONT.title, fontWeight: 900, fontSize: 32, color: N, transform: `scale(${popAt(frame, COINCE + 2)})`}}>dans le cran ✓</div>
+					) : null}
+				</div>
+			) : null}
 			{titles.map(([a, b, t], i) => (
 				<Big key={t} from={i === 0 ? a : a + 6} to={b} text={t} size={100} y={150} center />
 			))}
-			<PointTag at={CRAN} to={COINCE - 6} x={540} y={1460} px={540 - 800 + 1.6 * 500} py={260 + 1.6 * HEAD_Y + 100} size={46} tone={LPI.sky}>
-				le cran (le fond du V)
-			</PointTag>
-			<PointTag at={COINCE + 4} to={TOURNE - 6} x={540} y={1460} px={540} py={260 + 1.6 * HEAD_Y + 100} size={46} tone={LPI.sky}>
-				la tique est coincée ✓
+			<PointTag at={CRAN} to={COINCE - 6} x={250} y={1560} px={sx(468)} py={sy(tipY - 56)} size={46} tone={LPI.sky}>
+				le cran
 			</PointTag>
 			{frame >= COUP - 26 && frame < DECROCHE ? (
-				<Note at={COUP - 26} to={DECROCHE - 6} y={1500} size={44} tone={LPI.sky}>
+				<Note at={COUP - 26} to={DECROCHE - 6} y={1560} size={44} tone={LPI.sky}>
 					sans tirer d'un coup
 				</Note>
 			) : null}
-			<PointTag at={ENTIERE - 2} x={260} y={1180} px={540 - 800 + 1.6 * 640} py={260 + 1.6 * 300} size={44} tone={LPI.sky}>
+			<PointTag at={ENTIERE - 2} x={250} y={1240} px={sx(640)} py={sy(300)} size={44} tone={LPI.sky}>
 				entière ✓
 			</PointTag>
-			<PointTag at={TETE - 4} x={300} y={420} px={540 - 800 + 1.6 * 640} py={260 + 1.6 * 160} size={44} tone={LPI.sky}>
+			<PointTag at={TETE - 4} x={290} y={470} px={sx(640)} py={sy(160)} size={44} tone={LPI.sky}>
 				la tête est là ✓
 			</PointTag>
-			<Burst at={TETE} x={764} y={660} r={260} n={12} />
+			<Burst at={TETE} x={sx(640)} y={sy(250)} r={260} n={12} />
 			<Sfx name="whoosh" at={TIRE - 4} volume={0.07} />
 			<Sfx name="tick" at={CRAN} volume={0.08} />
 			<Sfx name="tick" at={COINCE} volume={0.1} />

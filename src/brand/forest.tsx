@@ -1,7 +1,7 @@
 // Balade en forêt, vue de côté, plein écran (repère 1080 × 1920) : ciel clair, rangée d'arbres lointains, grands arbres
 // au premier plan (troncs en vrai bois brun, feuillage vert : exceptions à la palette demandées par le propriétaire pour
-// « une forêt réaliste », comme la planche de l'écharde), buissons, herbe, sentier, une branche qui passe au-dessus du
-// sentier (la tique tombe d'une de ses feuilles). `drift` fait glisser le décor (parallaxe).
+// « une forêt réaliste », comme la planche de l'écharde), buissons, herbe, sentier, un arbre dont le
+// feuillage couvre le point `branch` (la tique tombe de ses feuilles). `drift` fait glisser le décor (parallaxe).
 import React from 'react';
 import {useCurrentFrame} from 'remotion';
 import {alpha, LPI} from './theme';
@@ -96,8 +96,8 @@ const Tree: React.FC<{x: number; ground: number; h: number; w: number; seed: num
 };
 
 /**
- * Forêt plein écran. `ground` : niveau du sentier ; `branch` : point (x, y) de la feuille d'où tombe la tique (une branche
- * part de l'arbre de droite jusqu'à elle) ; `drift` 0 → 1 : le décor glisse vers la gauche (on avance).
+ * Forêt plein écran. `ground` : niveau du sentier ; `branch` : point (x, y) d'où tombe la tique, sous le feuillage d'un
+ * arbre posé juste à droite (en fin de marche, `drift` = 1) ; `drift` 0 → 1 : le décor glisse vers la gauche (on avance).
  */
 export const ForestBg: React.FC<{ground?: number; branch?: {x: number; y: number}; drift?: number}> = ({ground = 1500, branch = {x: 560, y: 700}, drift = 0}) => {
 	const frame = useCurrentFrame();
@@ -140,15 +140,8 @@ export const ForestBg: React.FC<{ground?: number; branch?: {x: number; y: number
 			<g transform={`translate(${-d} 0)`}>
 				<Tree x={-60} ground={ground - 20} h={1200} w={520} seed={2} />
 				<Tree x={1180} ground={ground - 20} h={1150} w={520} seed={5} />
-				{/* la branche qui passe au-dessus du sentier */}
-				<path d={`M1150 ${branch.y - 160} C980 ${branch.y - 120} 760 ${branch.y - 40} ${branch.x + d} ${branch.y - 20}`} fill="none" stroke={BARK} strokeWidth={26} strokeLinecap="round" />
-				<path d={`M1150 ${branch.y - 160} C980 ${branch.y - 120} 760 ${branch.y - 40} ${branch.x + d} ${branch.y - 20}`} fill="none" stroke={alpha(N, 0.5)} strokeWidth={30} strokeLinecap="round" opacity={0.25} />
-				{[0, 1, 2, 3, 4].map((i) => {
-					const lx = branch.x + d + 40 + i * 110;
-					const ly = branch.y - 30 - i * 22 + Math.sin(frame / 25 + i) * 4;
-					return <path key={i} d={`M${lx} ${ly} q30 -40 70 -10 q-30 40 -70 10 Z`} fill={LEAF[i % 3]} stroke={alpha(N, 0.5)} strokeWidth={3} transform={`rotate(${30 + i * 15} ${lx} ${ly})`} />;
-				})}
-				<path d={`M${branch.x + d} ${branch.y - 20} q-10 10 -4 20 q24 10 30 -12 q-6 -14 -26 -8 Z`} fill={LEAF[1]} stroke={alpha(N, 0.5)} strokeWidth={3} />
+				{/* l'arbre d'où tombe la tique : en fin de marche (drift = 1), son feuillage couvre le point `branch` */}
+				<Tree x={branch.x + 260 + 230} ground={ground - 20} h={ground - 20 - (branch.y - 170)} w={560} seed={3} />
 			</g>
 		</svg>
 	);

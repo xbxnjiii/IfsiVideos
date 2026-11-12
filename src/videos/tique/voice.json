@@ -1,6 +1,6 @@
 {
  "voice": "voix.wav (tts_voix.py)",
- "duration": 50.534,
+ "duration": 51.038,
  "sections": [
   {
    "id": "intro",
@@ -9,28 +9,28 @@
   },
   {
    "id": "idees",
-   "start": 8.328,
-   "end": 16.711
+   "start": 8.34,
+   "end": 17.213
   },
   {
    "id": "methode",
-   "start": 17.712,
-   "end": 29.562
+   "start": 18.216,
+   "end": 30.066
   },
   {
    "id": "apres",
-   "start": 30.524,
-   "end": 35.266
+   "start": 31.028,
+   "end": 35.77
   },
   {
    "id": "surveiller",
-   "start": 36.221,
-   "end": 44.948
+   "start": 36.725,
+   "end": 45.452
   },
   {
    "id": "fin",
-   "start": 45.88,
-   "end": 50.194
+   "start": 46.384,
+   "end": 50.698
   }
  ],
  "words": [
@@ -171,648 +171,653 @@
   },
   {
    "text": "Premier",
-   "start": 8.328,
-   "end": 8.585
+   "start": 8.34,
+   "end": 8.597
   },
   {
    "text": "réflexe :",
-   "start": 8.585,
-   "end": 9.198
+   "start": 8.597,
+   "end": 9.222
+  },
+  {
+   "text": "mettre",
+   "start": 9.528,
+   "end": 9.81
   },
   {
    "text": "de",
-   "start": 9.479,
-   "end": 9.553
+   "start": 9.81,
+   "end": 9.896
   },
   {
-   "text": "l'éther,",
-   "start": 9.553,
-   "end": 10.068
+   "text": "l'alcool,",
+   "start": 9.896,
+   "end": 10.423
   },
   {
-   "text": "de",
-   "start": 10.399,
-   "end": 10.46
+   "text": "la",
+   "start": 10.693,
+   "end": 10.766
   },
   {
-   "text": "l'alcool",
-   "start": 10.46,
-   "end": 10.864
+   "text": "gratter,",
+   "start": 10.766,
+   "end": 11.281
   },
   {
    "text": "ou",
-   "start": 10.864,
-   "end": 10.901
+   "start": 11.575,
+   "end": 11.649
   },
   {
-   "text": "de",
-   "start": 10.901,
-   "end": 11.011
-  },
-  {
-   "text": "l'huile",
-   "start": 11.011,
-   "end": 11.293
-  },
-  {
-   "text": "pour",
-   "start": 11.293,
-   "end": 11.453
-  },
-  {
-   "text": "l'endormir ?",
-   "start": 11.453,
-   "end": 12.053
-  },
-  {
-   "text": "Surtout",
-   "start": 12.385,
-   "end": 12.826
-  },
-  {
-   "text": "pas !",
-   "start": 12.826,
-   "end": 13.12
-  },
-  {
-   "text": "Elle",
-   "start": 13.451,
-   "end": 13.623
-  },
-  {
-   "text": "peut",
-   "start": 13.623,
-   "end": 13.745
-  },
-  {
-   "text": "recracher",
-   "start": 13.745,
-   "end": 14.15
-  },
-  {
-   "text": "dans",
-   "start": 14.15,
-   "end": 14.248
-  },
-  {
-   "text": "ta",
-   "start": 14.248,
-   "end": 14.37
-  },
-  {
-   "text": "peau",
-   "start": 14.37,
-   "end": 14.566
-  },
-  {
-   "text": "ce",
-   "start": 14.566,
-   "end": 14.689
-  },
-  {
-   "text": "qu'elle",
-   "start": 14.689,
-   "end": 14.848
-  },
-  {
-   "text": "a",
-   "start": 14.848,
-   "end": 14.885
-  },
-  {
-   "text": "dans",
-   "start": 14.885,
-   "end": 14.995
-  },
-  {
-   "text": "le",
-   "start": 14.995,
-   "end": 15.081
-  },
-  {
-   "text": "ventre…",
-   "start": 15.081,
-   "end": 15.449
-  },
-  {
-   "text": "et",
-   "start": 15.73,
-   "end": 15.755
-  },
-  {
-   "text": "des",
-   "start": 15.755,
-   "end": 15.853
-  },
-  {
-   "text": "microbes",
-   "start": 15.853,
-   "end": 16.233
-  },
-  {
-   "text": "avec.",
-   "start": 16.233,
-   "end": 16.711
-  },
-  {
-   "text": "Le",
-   "start": 17.712,
-   "end": 17.849
-  },
-  {
-   "text": "bon",
-   "start": 17.849,
-   "end": 17.987
-  },
-  {
-   "text": "geste :",
-   "start": 17.987,
-   "end": 18.449
-  },
-  {
-   "text": "un",
-   "start": 18.737,
-   "end": 18.774
-  },
-  {
-   "text": "tire-tique.",
-   "start": 18.774,
-   "end": 19.474
-  },
-  {
-   "text": "Glisse",
-   "start": 19.812,
-   "end": 20.149
-  },
-  {
-   "text": "son",
-   "start": 20.149,
-   "end": 20.274
-  },
-  {
-   "text": "cran",
-   "start": 20.274,
-   "end": 20.487
-  },
-  {
-   "text": "sous",
-   "start": 20.487,
-   "end": 20.624
-  },
-  {
-   "text": "la",
-   "start": 20.624,
-   "end": 20.737
-  },
-  {
-   "text": "tique,",
-   "start": 20.737,
-   "end": 21.149
-  },
-  {
-   "text": "tout",
-   "start": 21.349,
-   "end": 21.449
-  },
-  {
-   "text": "près",
-   "start": 21.449,
-   "end": 21.612
-  },
-  {
-   "text": "de",
-   "start": 21.612,
-   "end": 21.687
-  },
-  {
-   "text": "la",
-   "start": 21.687,
-   "end": 21.799
-  },
-  {
-   "text": "peau,",
-   "start": 21.799,
-   "end": 22.087
-  },
-  {
-   "text": "pour",
-   "start": 22.325,
-   "end": 22.437
-  },
-  {
-   "text": "qu'elle",
-   "start": 22.437,
-   "end": 22.587
-  },
-  {
-   "text": "se",
-   "start": 22.587,
-   "end": 22.7
-  },
-  {
-   "text": "coince",
-   "start": 22.7,
-   "end": 22.95
-  },
-  {
-   "text": "dedans.",
-   "start": 22.95,
-   "end": 23.337
-  },
-  {
-   "text": "Tourne",
-   "start": 23.674,
-   "end": 23.962
-  },
-  {
-   "text": "doucement,",
-   "start": 23.962,
-   "end": 24.45
-  },
-  {
-   "text": "sans",
-   "start": 24.737,
-   "end": 24.862
-  },
-  {
-   "text": "tirer",
-   "start": 24.862,
-   "end": 25.112
-  },
-  {
-   "text": "d'un",
-   "start": 25.112,
-   "end": 25.274
-  },
-  {
-   "text": "coup…",
-   "start": 25.274,
-   "end": 25.587
-  },
-  {
-   "text": "et",
-   "start": 25.912,
-   "end": 25.962
-  },
-  {
-   "text": "elle",
-   "start": 25.962,
-   "end": 26.049
-  },
-  {
-   "text": "se",
-   "start": 26.049,
-   "end": 26.162
-  },
-  {
-   "text": "décroche.",
-   "start": 26.162,
-   "end": 26.774
-  },
-  {
-   "text": "Vérifie",
-   "start": 27.112,
-   "end": 27.649
-  },
-  {
-   "text": "qu'elle",
-   "start": 27.649,
-   "end": 27.812
-  },
-  {
-   "text": "est",
-   "start": 27.812,
-   "end": 27.849
-  },
-  {
-   "text": "bien",
-   "start": 27.849,
-   "end": 28.012
-  },
-  {
-   "text": "entière,",
-   "start": 28.012,
-   "end": 28.599
+   "text": "l'enlever",
+   "start": 11.649,
+   "end": 11.992
   },
   {
    "text": "avec",
-   "start": 28.799,
-   "end": 28.974
-  },
-  {
-   "text": "sa",
-   "start": 28.974,
-   "end": 29.087
-  },
-  {
-   "text": "tête.",
-   "start": 29.087,
-   "end": 29.562
-  },
-  {
-   "text": "Ensuite,",
-   "start": 30.524,
-   "end": 31.1
-  },
-  {
-   "text": "désinfecte",
-   "start": 31.32,
-   "end": 31.786
-  },
-  {
-   "text": "la",
-   "start": 31.786,
-   "end": 31.896
-  },
-  {
-   "text": "piqûre,",
-   "start": 31.896,
-   "end": 32.423
-  },
-  {
-   "text": "lave-toi",
-   "start": 32.827,
-   "end": 33.109
+   "start": 11.992,
+   "end": 12.2
   },
   {
    "text": "les",
-   "start": 33.109,
-   "end": 33.207
+   "start": 12.2,
+   "end": 12.286
   },
   {
-   "text": "mains,",
-   "start": 33.207,
-   "end": 33.465
+   "text": "doigts ?",
+   "start": 12.286,
+   "end": 12.592
   },
   {
-   "text": "et",
-   "start": 33.82,
-   "end": 33.845
+   "text": "Surtout",
+   "start": 12.924,
+   "end": 13.365
   },
   {
-   "text": "note",
-   "start": 33.845,
-   "end": 34.028
+   "text": "pas !",
+   "start": 13.365,
+   "end": 13.659
   },
   {
-   "text": "la",
-   "start": 34.028,
-   "end": 34.126
+   "text": "Elle",
+   "start": 13.99,
+   "end": 14.162
   },
   {
-   "text": "date",
-   "start": 34.126,
-   "end": 34.421
+   "text": "peut",
+   "start": 14.162,
+   "end": 14.284
+  },
+  {
+   "text": "recracher",
+   "start": 14.284,
+   "end": 14.677
   },
   {
    "text": "dans",
-   "start": 34.421,
-   "end": 34.519
-  },
-  {
-   "text": "ton",
-   "start": 34.519,
-   "end": 34.629
-  },
-  {
-   "text": "téléphone.",
-   "start": 34.629,
-   "end": 35.266
-  },
-  {
-   "text": "Pendant",
-   "start": 36.221,
-   "end": 36.503
-  },
-  {
-   "text": "un",
-   "start": 36.503,
-   "end": 36.54
-  },
-  {
-   "text": "mois,",
-   "start": 36.54,
-   "end": 36.822
-  },
-  {
-   "text": "surveille",
-   "start": 37.128,
-   "end": 37.471
+   "start": 14.677,
+   "end": 14.775
   },
   {
    "text": "ta",
-   "start": 37.471,
-   "end": 37.582
+   "start": 14.775,
+   "end": 14.897
   },
   {
-   "text": "peau.",
-   "start": 37.582,
-   "end": 37.9
+   "text": "peau",
+   "start": 14.897,
+   "end": 15.081
   },
   {
-   "text": "Si",
-   "start": 38.244,
-   "end": 38.477
+   "text": "ce",
+   "start": 15.081,
+   "end": 15.179
   },
   {
-   "text": "une",
-   "start": 38.477,
-   "end": 38.551
+   "text": "qu'elle",
+   "start": 15.179,
+   "end": 15.338
   },
   {
-   "text": "plaque",
-   "start": 38.551,
-   "end": 38.771
+   "text": "a",
+   "start": 15.338,
+   "end": 15.375
   },
   {
-   "text": "rouge",
-   "start": 38.771,
-   "end": 38.992
+   "text": "dans",
+   "start": 15.375,
+   "end": 15.485
   },
   {
-   "text": "apparaît",
-   "start": 38.992,
-   "end": 39.384
+   "text": "le",
+   "start": 15.485,
+   "end": 15.559
+  },
+  {
+   "text": "ventre…",
+   "start": 15.559,
+   "end": 15.927
   },
   {
    "text": "et",
-   "start": 39.384,
-   "end": 39.482
+   "start": 16.233,
+   "end": 16.257
   },
   {
-   "text": "s'agrandit",
-   "start": 39.482,
-   "end": 39.935
+   "text": "des",
+   "start": 16.257,
+   "end": 16.355
   },
   {
-   "text": "autour",
-   "start": 39.935,
-   "end": 40.119
+   "text": "microbes",
+   "start": 16.355,
+   "end": 16.735
   },
   {
-   "text": "de",
-   "start": 40.119,
-   "end": 40.181
+   "text": "avec.",
+   "start": 16.735,
+   "end": 17.213
   },
   {
-   "text": "la",
-   "start": 40.181,
-   "end": 40.254
+   "text": "Le",
+   "start": 18.216,
+   "end": 18.354
   },
   {
-   "text": "piqûre,",
-   "start": 40.254,
-   "end": 40.744
+   "text": "bon",
+   "start": 18.354,
+   "end": 18.491
   },
   {
-   "text": "ou",
-   "start": 41.1,
-   "end": 41.136
-  },
-  {
-   "text": "si",
-   "start": 41.136,
-   "end": 41.247
-  },
-  {
-   "text": "tu",
-   "start": 41.247,
-   "end": 41.382
-  },
-  {
-   "text": "as",
-   "start": 41.382,
-   "end": 41.418
-  },
-  {
-   "text": "de",
-   "start": 41.418,
-   "end": 41.492
-  },
-  {
-   "text": "la",
-   "start": 41.492,
-   "end": 41.578
-  },
-  {
-   "text": "fièvre,",
-   "start": 41.578,
-   "end": 42.043
-  },
-  {
-   "text": "consulte",
-   "start": 42.252,
-   "end": 42.644
+   "text": "geste :",
+   "start": 18.491,
+   "end": 18.953
   },
   {
    "text": "un",
-   "start": 42.644,
-   "end": 42.693
+   "start": 19.241,
+   "end": 19.279
   },
   {
-   "text": "médecin :",
-   "start": 42.693,
-   "end": 43.122
+   "text": "tire-tique.",
+   "start": 19.279,
+   "end": 19.979
   },
   {
-   "text": "c'est",
-   "start": 43.551,
-   "end": 43.649
+   "text": "Glisse",
+   "start": 20.316,
+   "end": 20.654
   },
   {
-   "text": "peut-être",
-   "start": 43.649,
-   "end": 44.041
+   "text": "son",
+   "start": 20.654,
+   "end": 20.779
+  },
+  {
+   "text": "cran",
+   "start": 20.779,
+   "end": 20.991
+  },
+  {
+   "text": "sous",
+   "start": 20.991,
+   "end": 21.128
   },
   {
    "text": "la",
-   "start": 44.041,
-   "end": 44.127
+   "start": 21.128,
+   "end": 21.241
   },
   {
-   "text": "maladie",
-   "start": 44.127,
-   "end": 44.445
+   "text": "tique,",
+   "start": 21.241,
+   "end": 21.654
+  },
+  {
+   "text": "tout",
+   "start": 21.854,
+   "end": 21.953
+  },
+  {
+   "text": "près",
+   "start": 21.953,
+   "end": 22.116
   },
   {
    "text": "de",
-   "start": 44.445,
-   "end": 44.531
-  },
-  {
-   "text": "Lyme.",
-   "start": 44.531,
-   "end": 44.948
-  },
-  {
-   "text": "Et",
-   "start": 45.88,
-   "end": 46.012
-  },
-  {
-   "text": "à",
-   "start": 46.012,
-   "end": 46.036
+   "start": 22.116,
+   "end": 22.191
   },
   {
    "text": "la",
-   "start": 46.036,
-   "end": 46.108
+   "start": 22.191,
+   "end": 22.303
   },
   {
-   "text": "prochaine",
-   "start": 46.108,
-   "end": 46.456
+   "text": "peau,",
+   "start": 22.303,
+   "end": 22.591
   },
   {
-   "text": "balade :",
-   "start": 46.456,
-   "end": 46.865
+   "text": "pour",
+   "start": 22.828,
+   "end": 22.941
   },
   {
-   "text": "manches",
-   "start": 47.154,
-   "end": 47.382
+   "text": "qu'elle",
+   "start": 22.941,
+   "end": 23.091
   },
   {
-   "text": "longues,",
-   "start": 47.382,
-   "end": 47.742
+   "text": "se",
+   "start": 23.091,
+   "end": 23.203
   },
   {
-   "text": "pantalon…",
-   "start": 47.971,
-   "end": 48.464
+   "text": "coince",
+   "start": 23.203,
+   "end": 23.453
+  },
+  {
+   "text": "dedans.",
+   "start": 23.453,
+   "end": 23.841
+  },
+  {
+   "text": "Tourne",
+   "start": 24.178,
+   "end": 24.466
+  },
+  {
+   "text": "doucement,",
+   "start": 24.466,
+   "end": 24.953
+  },
+  {
+   "text": "sans",
+   "start": 25.241,
+   "end": 25.366
+  },
+  {
+   "text": "tirer",
+   "start": 25.366,
+   "end": 25.616
+  },
+  {
+   "text": "d'un",
+   "start": 25.616,
+   "end": 25.779
+  },
+  {
+   "text": "coup…",
+   "start": 25.779,
+   "end": 26.091
   },
   {
    "text": "et",
-   "start": 48.896,
-   "end": 48.968
+   "start": 26.416,
+   "end": 26.466
   },
   {
-   "text": "on",
-   "start": 48.968,
-   "end": 49.017
+   "text": "elle",
+   "start": 26.466,
+   "end": 26.553
   },
   {
-   "text": "s'inspecte",
-   "start": 49.017,
-   "end": 49.521
+   "text": "se",
+   "start": 26.553,
+   "end": 26.666
+  },
+  {
+   "text": "décroche.",
+   "start": 26.666,
+   "end": 27.279
+  },
+  {
+   "text": "Vérifie",
+   "start": 27.616,
+   "end": 28.154
+  },
+  {
+   "text": "qu'elle",
+   "start": 28.154,
+   "end": 28.316
+  },
+  {
+   "text": "est",
+   "start": 28.316,
+   "end": 28.354
   },
   {
    "text": "bien",
+   "start": 28.354,
+   "end": 28.516
+  },
+  {
+   "text": "entière,",
+   "start": 28.516,
+   "end": 29.104
+  },
+  {
+   "text": "avec",
+   "start": 29.303,
+   "end": 29.479
+  },
+  {
+   "text": "sa",
+   "start": 29.479,
+   "end": 29.591
+  },
+  {
+   "text": "tête.",
+   "start": 29.591,
+   "end": 30.066
+  },
+  {
+   "text": "Ensuite,",
+   "start": 31.028,
+   "end": 31.604
+  },
+  {
+   "text": "désinfecte",
+   "start": 31.824,
+   "end": 32.29
+  },
+  {
+   "text": "la",
+   "start": 32.29,
+   "end": 32.4
+  },
+  {
+   "text": "piqûre,",
+   "start": 32.4,
+   "end": 32.927
+  },
+  {
+   "text": "lave-toi",
+   "start": 33.331,
+   "end": 33.613
+  },
+  {
+   "text": "les",
+   "start": 33.613,
+   "end": 33.711
+  },
+  {
+   "text": "mains,",
+   "start": 33.711,
+   "end": 33.969
+  },
+  {
+   "text": "et",
+   "start": 34.324,
+   "end": 34.349
+  },
+  {
+   "text": "note",
+   "start": 34.349,
+   "end": 34.532
+  },
+  {
+   "text": "la",
+   "start": 34.532,
+   "end": 34.63
+  },
+  {
+   "text": "date",
+   "start": 34.63,
+   "end": 34.925
+  },
+  {
+   "text": "dans",
+   "start": 34.925,
+   "end": 35.023
+  },
+  {
+   "text": "ton",
+   "start": 35.023,
+   "end": 35.133
+  },
+  {
+   "text": "téléphone.",
+   "start": 35.133,
+   "end": 35.77
+  },
+  {
+   "text": "Pendant",
+   "start": 36.725,
+   "end": 37.007
+  },
+  {
+   "text": "un",
+   "start": 37.007,
+   "end": 37.044
+  },
+  {
+   "text": "mois,",
+   "start": 37.044,
+   "end": 37.326
+  },
+  {
+   "text": "surveille",
+   "start": 37.632,
+   "end": 37.975
+  },
+  {
+   "text": "ta",
+   "start": 37.975,
+   "end": 38.086
+  },
+  {
+   "text": "peau.",
+   "start": 38.086,
+   "end": 38.404
+  },
+  {
+   "text": "Si",
+   "start": 38.748,
+   "end": 38.981
+  },
+  {
+   "text": "une",
+   "start": 38.981,
+   "end": 39.055
+  },
+  {
+   "text": "plaque",
+   "start": 39.055,
+   "end": 39.275
+  },
+  {
+   "text": "rouge",
+   "start": 39.275,
+   "end": 39.496
+  },
+  {
+   "text": "apparaît",
+   "start": 39.496,
+   "end": 39.888
+  },
+  {
+   "text": "et",
+   "start": 39.888,
+   "end": 39.986
+  },
+  {
+   "text": "s'agrandit",
+   "start": 39.986,
+   "end": 40.439
+  },
+  {
+   "text": "autour",
+   "start": 40.44,
+   "end": 40.623
+  },
+  {
+   "text": "de",
+   "start": 40.623,
+   "end": 40.685
+  },
+  {
+   "text": "la",
+   "start": 40.685,
+   "end": 40.758
+  },
+  {
+   "text": "piqûre,",
+   "start": 40.758,
+   "end": 41.248
+  },
+  {
+   "text": "ou",
+   "start": 41.604,
+   "end": 41.64
+  },
+  {
+   "text": "si",
+   "start": 41.64,
+   "end": 41.751
+  },
+  {
+   "text": "tu",
+   "start": 41.751,
+   "end": 41.886
+  },
+  {
+   "text": "as",
+   "start": 41.886,
+   "end": 41.922
+  },
+  {
+   "text": "de",
+   "start": 41.922,
+   "end": 41.996
+  },
+  {
+   "text": "la",
+   "start": 41.996,
+   "end": 42.082
+  },
+  {
+   "text": "fièvre,",
+   "start": 42.082,
+   "end": 42.547
+  },
+  {
+   "text": "consulte",
+   "start": 42.756,
+   "end": 43.148
+  },
+  {
+   "text": "un",
+   "start": 43.148,
+   "end": 43.197
+  },
+  {
+   "text": "médecin :",
+   "start": 43.197,
+   "end": 43.626
+  },
+  {
+   "text": "c'est",
+   "start": 44.055,
+   "end": 44.153
+  },
+  {
+   "text": "peut-être",
+   "start": 44.153,
+   "end": 44.545
+  },
+  {
+   "text": "la",
+   "start": 44.545,
+   "end": 44.631
+  },
+  {
+   "text": "maladie",
+   "start": 44.631,
+   "end": 44.949
+  },
+  {
+   "text": "de",
+   "start": 44.949,
+   "end": 45.035
+  },
+  {
+   "text": "Lyme.",
+   "start": 45.035,
+   "end": 45.452
+  },
+  {
+   "text": "Et",
+   "start": 46.384,
+   "end": 46.516
+  },
+  {
+   "text": "à",
+   "start": 46.516,
+   "end": 46.54
+  },
+  {
+   "text": "la",
+   "start": 46.54,
+   "end": 46.612
+  },
+  {
+   "text": "prochaine",
+   "start": 46.612,
+   "end": 46.96
+  },
+  {
+   "text": "balade :",
+   "start": 46.96,
+   "end": 47.369
+  },
+  {
+   "text": "manches",
+   "start": 47.658,
+   "end": 47.886
+  },
+  {
+   "text": "longues,",
+   "start": 47.886,
+   "end": 48.246
+  },
+  {
+   "text": "pantalon…",
+   "start": 48.475,
+   "end": 48.968
+  },
+  {
+   "text": "et",
+   "start": 49.4,
+   "end": 49.472
+  },
+  {
+   "text": "on",
+   "start": 49.472,
+   "end": 49.521
+  },
+  {
+   "text": "s'inspecte",
    "start": 49.521,
-   "end": 49.678
+   "end": 50.025
+  },
+  {
+   "text": "bien",
+   "start": 50.025,
+   "end": 50.182
   },
   {
    "text": "en",
-   "start": 49.678,
-   "end": 49.75
+   "start": 50.182,
+   "end": 50.254
   },
   {
    "text": "rentrant !",
-   "start": 49.75,
-   "end": 50.194
+   "start": 50.254,
+   "end": 50.698
   }
  ]
 }
