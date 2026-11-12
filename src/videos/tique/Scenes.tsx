@@ -221,52 +221,90 @@ const HEAD_Y = 500 - 17 * 6;
 export const Methode: React.FC = () => {
 	const frame = useCurrentFrame();
 	const TIRE = at('methode', 'tire-tique.');
-	const GLISSE = at('methode', 'glisse-le');
-	const PEAU = at('methode', 'peau.');
+	const GLISSE = at('methode', 'glisse');
+	const CRAN = at('methode', 'cran');
+	const PEAU = at('methode', 'peau,');
+	const COINCE = at('methode', 'coince');
 	const TOURNE = at('methode', 'tourne');
 	const COUP = at('methode', 'coup…');
-	const DECROCHE = at('methode', 'décroche,');
+	const DECROCHE = at('methode', 'décroche.');
+	const VERIFIE = at('methode', 'vérifie');
+	const ENTIERE = at('methode', 'entière,');
 	const TETE = at('methode', 'tête.');
 	const slide = lin(frame, GLISSE, PEAU);
 	const spin = 360 * lin(frame, TOURNE, COUP + 14);
 	const off = lin(frame, DECROCHE - 2, DECROCHE + 14);
 	const hookIn = lin(frame, TIRE - 4, TIRE + 10);
 	const tipX = interpolate(slide, [0, 1], [900, 508]);
+	// la tique se coince dans le cran : petit sursaut au mot « coince »
+	const jam = frame >= COINCE && frame < COINCE + 12 ? Math.sin((frame - COINCE) * 1.6) * 5 * (1 - (frame - COINCE) / 12) : 0;
+	// cercle qui montre le cran (le fond du V), il suit le crochet, puis entoure la tête coincée
+	const cranO = fadeIn(frame, CRAN - 2, 6) * (1 - lin(frame, TOURNE - 6, TOURNE + 4));
+	const cranX = tipX - 34;
+	// vérification : loupe sur la tique sortie
+	const lens = popAt(frame, VERIFIE - 2);
 	const titles: [number, number, string][] = [
 		[TIRE - 4, GLISSE - 4, 'Un *tire-tique*'],
-		[GLISSE - 4, TOURNE - 4, 'Glisse-le *dessous*'],
-		[TOURNE - 4, DECROCHE - 4, 'Tourne *doucement*'],
-		[DECROCHE - 4, 1e9, 'Avec sa *tête* !'],
+		[GLISSE - 4, COINCE - 4, 'Le *cran* dessous'],
+		[COINCE - 4, TOURNE - 4, 'Coincée *dedans*'],
+		[TOURNE - 4, VERIFIE - 4, 'Tourne *doucement*'],
+		[VERIFIE - 4, TETE - 4, 'Elle est *entière*\u00a0?'],
+		[TETE - 4, 1e9, 'Avec sa *tête*\u00a0!'],
 	];
 	return (
 		<AbsoluteFill>
 			<Skin cx={540} cy={1060} red={0.7} tint={0}>
-				{/* le crochet arrive par le côté, sa fourche attrape la tique au ras de la peau (la tête dans le fond du V) ;
-				    on tourne autour de ce point, puis on soulève */}
-				<g transform={`translate(${140 * off} ${-240 * off}) rotate(${spin} 500 ${HEAD_Y})`}>
+				{/* le crochet arrive par le côté : son cran (le fond du V) se glisse sous la tique, au ras de la peau, et la
+				    tête se coince dedans ; on tourne autour de ce point, puis on soulève */}
+				<g transform={`translate(${140 * off + jam} ${-240 * off}) rotate(${spin} 500 ${HEAD_Y})`}>
 					<TickHookG x={tipX} y={HEAD_Y} ang={0} scale={0.95} opacity={hookIn} />
 					<TickG x={500} y={500} s={6} buried={1 - off} fed={0.3} walk={off > 0 ? 0.5 : 0.15} ang={0} />
 				</g>
+				{cranO > 0 ? (
+					<g opacity={cranO}>
+						<circle cx={cranX + jam} cy={HEAD_Y} r={62 + 6 * Math.sin(frame / 5)} fill="none" stroke={LPI.pink} strokeWidth={9} strokeDasharray="18 12" />
+						<circle cx={cranX + jam} cy={HEAD_Y} r={74 + 6 * Math.sin(frame / 5)} fill="none" stroke={alpha(N, 0.5)} strokeWidth={3} />
+					</g>
+				) : null}
 				{off > 0.3 ? <circle cx={500} cy={490} r={14} fill={alpha(LPI.pink, 0.9)} stroke={alpha(N, 0.4)} strokeWidth={2} /> : null}
+				{lens > 0.01 ? (
+					<g transform={`translate(640 250) scale(${lens})`}>
+						<circle r={175} fill="none" stroke={N} strokeWidth={14} />
+						<circle r={163} fill="none" stroke={alpha(LPI.sky, 0.9)} strokeWidth={6} />
+						<path d="M124 124 L230 230" stroke={N} strokeWidth={30} strokeLinecap="round" />
+					</g>
+				) : null}
 			</Skin>
 			{titles.map(([a, b, t], i) => (
 				<Big key={t} from={i === 0 ? a : a + 6} to={b} text={t} size={100} y={150} center />
 			))}
+			<PointTag at={CRAN} to={COINCE - 6} x={540} y={1460} px={540 - 800 + 1.6 * 500} py={260 + 1.6 * HEAD_Y + 100} size={46} tone={LPI.sky}>
+				le cran (le fond du V)
+			</PointTag>
+			<PointTag at={COINCE + 4} to={TOURNE - 6} x={540} y={1460} px={540} py={260 + 1.6 * HEAD_Y + 100} size={46} tone={LPI.sky}>
+				la tique est coincée ✓
+			</PointTag>
 			{frame >= COUP - 26 && frame < DECROCHE ? (
 				<Note at={COUP - 26} to={DECROCHE - 6} y={1500} size={44} tone={LPI.sky}>
 					sans tirer d'un coup
 				</Note>
 			) : null}
-			<PointTag at={TETE - 4} x={330} y={420} px={540 + 140 * 1.6} py={1060 - 240 * 1.6 - 150} size={44} tone={LPI.sky}>
-				la tête est sortie ✓
+			<PointTag at={ENTIERE - 2} x={260} y={1180} px={540 - 800 + 1.6 * 640} py={260 + 1.6 * 300} size={44} tone={LPI.sky}>
+				entière ✓
 			</PointTag>
-			<Burst at={TETE} x={700} y={560} r={220} n={12} />
+			<PointTag at={TETE - 4} x={300} y={420} px={540 - 800 + 1.6 * 640} py={260 + 1.6 * 160} size={44} tone={LPI.sky}>
+				la tête est là ✓
+			</PointTag>
+			<Burst at={TETE} x={764} y={660} r={260} n={12} />
 			<Sfx name="whoosh" at={TIRE - 4} volume={0.07} />
-			<Sfx name="tick" at={PEAU} volume={0.1} />
+			<Sfx name="tick" at={CRAN} volume={0.08} />
+			<Sfx name="tick" at={COINCE} volume={0.1} />
 			{[0, 1, 2, 3].map((i) => (
 				<Sfx key={i} name="tick" at={TOURNE + i * 12} volume={0.06} />
 			))}
 			<Sfx name="pop" at={DECROCHE} volume={0.1} />
+			<Sfx name="whoosh" at={VERIFIE - 2} volume={0.05} />
+			<Sfx name="ding" at={ENTIERE} volume={0.06} />
 			<Sfx name="ding" at={TETE} volume={0.08} />
 		</AbsoluteFill>
 	);

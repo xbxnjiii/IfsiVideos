@@ -14,7 +14,8 @@ pour la vidéo concernée.
 
 1. **5 couleurs seulement** (+ transparences via `alpha()`) : `LPI.blue #4E7AC7`, `LPI.sky #C5D8F4`,
    `LPI.paper #F8F9FC`, `LPI.pink #EAA7C1`, `LPI.navy #2D3A5A` (`src/brand/theme.ts`). Pas de rouge, jaune, vert,
-   violet ni noir : sang / plaie = rose, nécrose = bleu nuit. Exceptions : images de la mascotte, logos.
+   violet ni noir : sang / plaie = rose, nécrose = bleu nuit. Exceptions : images de la mascotte, logos, et décors réalistes demandés par le propriétaire (bois brun de la planche,
+   forêt au feuillage vert : `forest.tsx`, `splinter.tsx`).
 2. **Mascotte = images officielles uniquement** (`public/brand/mascotte/`, index `docs/lpi/mascotte-index.webp`),
    jamais redessinée, **jamais retournée en miroir**, bustes libres sans cadre, elle ne cache jamais titre, chiffres ni fiche.
 3. Pas de filigrane, pas de sous-titres incrustés, pas de musique (ajoutée sur TikTok), pas de quiz ni d'appel à commenter

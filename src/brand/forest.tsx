@@ -1,6 +1,7 @@
 // Balade en forêt, vue de côté, plein écran (repère 1080 × 1920) : ciel clair, rangée d'arbres lointains, grands arbres
-// au premier plan (troncs en vrai bois brun comme la planche de l'écharde, feuillage en bleus de la marque), sentier, une
-// branche qui passe au-dessus du sentier (la tique tombe d'une de ses feuilles). `drift` fait glisser le décor (parallaxe).
+// au premier plan (troncs en vrai bois brun, feuillage vert : exceptions à la palette demandées par le propriétaire pour
+// « une forêt réaliste », comme la planche de l'écharde), buissons, herbe, sentier, une branche qui passe au-dessus du
+// sentier (la tique tombe d'une de ses feuilles). `drift` fait glisser le décor (parallaxe).
 import React from 'react';
 import {useCurrentFrame} from 'remotion';
 import {alpha, LPI} from './theme';
@@ -15,9 +16,49 @@ const mix = (a: string, b: string, t: number) => {
 const BARK = '#8A5A35';
 const BARK_DK = '#5E3B22';
 const PATH = '#D9B88F';
-const LEAF = [mix(LPI.blue, N, 0.15), LPI.blue, mix(LPI.blue, LPI.sky, 0.45)];
+/** Verts de feuillage (exception demandée : « arbre vert, buisson »), du plus sombre au plus clair. */
+const LEAF = ['#3F7A45', '#5A9650', '#7DB066'];
+const LEAF_FAR = '#A8C99A';
+const GRASS = '#9CC583';
+const GRASS_DK = '#6E9E5A';
 
-/** Un grand arbre : tronc brun texturé, houppier en grappes de feuillage (bleus de la marque, contours fins). */
+/** Un buisson : grappe de boules de feuillage, ombre au sol, reflets. */
+const Bush: React.FC<{x: number; y: number; w: number; seed: number; far?: boolean}> = ({x, y, w, seed, far}) => {
+	const frame = useCurrentFrame();
+	const n = 6;
+	const blobs = Array.from({length: n}, (_, i) => {
+		const t = i / (n - 1);
+		const r = w * (0.2 + 0.07 * ((i + seed) % 3)) * (1 - Math.abs(t - 0.5) * 0.6);
+		return {cx: x - w / 2 + t * w + Math.sin(frame / 35 + i + seed) * 2, cy: y - r * 0.7 - (1 - Math.abs(t - 0.5) * 2) * w * 0.12, r};
+	});
+	if (far) {
+		return <g opacity={0.6}>{blobs.map((b, i) => <circle key={i} cx={b.cx} cy={b.cy} r={b.r} fill={LEAF_FAR} />)}</g>;
+	}
+	return (
+		<g>
+			<ellipse cx={x} cy={y + 6} rx={w * 0.6} ry={18} fill={alpha(N, 0.18)} />
+			{blobs.map((b, i) => (
+				<circle key={i} cx={b.cx} cy={b.cy} r={b.r} fill={LEAF[(i + seed) % 3]} stroke={alpha(N, 0.45)} strokeWidth={3} />
+			))}
+			{blobs.filter((_, i) => i % 2 === 1).map((b, i) => (
+				<ellipse key={`h${i}`} cx={b.cx - b.r * 0.3} cy={b.cy - b.r * 0.4} rx={b.r * 0.32} ry={b.r * 0.16} fill={alpha(LPI.paper, 0.3)} />
+			))}
+		</g>
+	);
+};
+
+/** Touffes d'herbe le long d'une ligne. */
+const Grass: React.FC<{y: number; d: number; n: number; h: number; seed: number}> = ({y, d, n, h, seed}) => (
+	<g>
+		{Array.from({length: n}, (_, i) => {
+			const x = (((i * 83 + seed * 37) - d) % 1200 + 1200) % 1200 - 60;
+			const k = h * (0.7 + 0.3 * ((i + seed) % 3) / 2);
+			return <path key={i} d={`M${x - 14} ${y} q4 ${-k * 0.6} -6 ${-k} q12 ${k * 0.5} 10 ${k} q2 ${-k * 0.8} 12 ${-k * 1.1} q0 ${k * 0.7} -6 ${k * 1.1} q10 ${-k * 0.5} 18 ${-k * 0.7} q-6 ${k * 0.4} -6 ${k * 0.7} Z`} fill={(i + seed) % 2 ? GRASS_DK : LEAF[1]} />;
+		})}
+	</g>
+);
+
+/** Un grand arbre : tronc brun texturé, houppier en grappes de feuillage vert, contours fins. */
 const Tree: React.FC<{x: number; ground: number; h: number; w: number; seed: number; far?: boolean}> = ({x, ground, h, w, seed, far}) => {
 	const frame = useCurrentFrame();
 	const sway = Math.sin(frame / 40 + seed) * 4;
@@ -30,7 +71,7 @@ const Tree: React.FC<{x: number; ground: number; h: number; w: number; seed: num
 			<g opacity={0.45}>
 				<rect x={x - 10} y={ground - h * 0.6} width={20} height={h * 0.6} fill={mix(BARK, LPI.sky, 0.5)} />
 				{blobs.map((b, i) => (
-					<circle key={i} cx={b.cx} cy={b.cy} r={b.r} fill={mix(LPI.sky, LPI.blue, 0.35)} />
+					<circle key={i} cx={b.cx} cy={b.cy} r={b.r} fill={LEAF_FAR} />
 				))}
 			</g>
 		);
@@ -80,7 +121,18 @@ export const ForestBg: React.FC<{ground?: number; branch?: {x: number; y: number
 				))}
 			</g>
 			{/* sol, sentier */}
-			<rect x={0} y={ground - 70} width={1080} height={1920 - ground + 70} fill={mix(LPI.sky, LPI.paper, 0.4)} />
+			<rect x={0} y={ground - 70} width={1080} height={1920 - ground + 70} fill={GRASS} />
+				<g transform={`translate(${-d * 0.6} 0)`}>
+					{[-40, 300, 640, 980, 1320].map((x, i) => (
+						<Bush key={i} x={x} y={ground - 66} w={260 + (i % 2) * 80} seed={i} far />
+					))}
+				</g>
+				<g transform={`translate(${-d * 0.8} 0)`}>
+					{[60, 470, 900, 1260].map((x, i) => (
+						<Bush key={i} x={x} y={ground - 40} w={220 + (i % 3) * 60} seed={i + 3} />
+					))}
+				</g>
+				<Grass y={ground - 34} d={d * 0.8} n={16} h={34} seed={1} />
 			<path d={`M0 ${ground - 30} Q540 ${ground - 60} 1080 ${ground - 30} L1080 ${ground + 120} Q540 ${ground + 90} 0 ${ground + 120} Z`} fill={PATH} stroke={alpha(N, 0.3)} strokeWidth={3} />
 			{Array.from({length: 14}, (_, i) => (
 				<ellipse key={i} cx={((i * 97 - d) % 1200 + 1200) % 1200 - 60} cy={ground + 20 + (i % 3) * 22} rx={10 + (i % 3) * 4} ry={5} fill={alpha(BARK_DK, 0.35)} />
