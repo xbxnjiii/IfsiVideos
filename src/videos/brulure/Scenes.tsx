@@ -67,7 +67,7 @@ const PAN = {x: B.x, y: FINGER.bottom + 330, r: 320};
 /* ═══════════════════════════════ ACCROCHE : LE BORD DE LA CASSEROLE ═══════════════════════════════ */
 export const Hook: React.FC = () => {
 	const frame = useCurrentFrame();
-	const AIE = 3;
+	const AIE = Math.max(3, at('intro', 'aïe !'));
 	const CHAUFFE = at('intro', 'chauffe,');
 	const ROUGIT = at('intro', 'rougit…');
 	const ALORS = at('intro', 'alors,');
