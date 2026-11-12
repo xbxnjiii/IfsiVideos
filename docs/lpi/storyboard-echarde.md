@@ -4,7 +4,7 @@ Choix libre (demandé : « une vidéo courte, prenante, bien animée et illustr�
 
 | Partie | Voix | Image |
 |---|---|---|
-| intro | Tu passes la main sur une vieille planche… et aïe ! Une écharde, plantée dans le doigt. | Sans texte : le doigt glisse sur une vieille planche (veines, nœud, fente, fibres soulevées), s'arrête net : flash, l'écharde plantée, rougeur ; la caméra s'approche |
+| intro | Tu passes la main sur une vieille planche… et aïe ! Une écharde, plantée dans le doigt. | Sans texte : le doigt glisse sur une vieille planche en bois brun (veines, nœud, fente, fibres soulevées), s'arrête net : flash ; il se retourne sur lui-même et l'on découvre l'écharde plantée côté pulpe, rougeur ; la caméra s'approche |
 | ongles | Premier réflexe : appuyer dessus avec les ongles. Mauvaise idée ! Tu la pousses plus loin, et elle peut se casser sous la peau. | Deux pouces pressent de chaque côté ; « Mauvaise idée ! » ; l'écharde s'enfonce (« elle s'enfonce »), le bout casse et s'envole, « un bout reste dedans » |
 | methode | La bonne méthode : lave tes mains et la peau à l'eau et au savon. Désinfecte une pince à écharde. Attrape l'écharde au ras de la peau, et tire doucement, dans le sens où elle est entrée. | 4 cartes numérotées qui se cochent ; eau + mousse ; la pince désinfectée arrive, pince au ras de la peau ; flèche pointillée dans l'axe ; l'écharde sort entière |
 | apres | Une fois sortie, lave, désinfecte, et mets un pansement si besoin. | Eau, compresse d'antiseptique qui tamponne, pansement |

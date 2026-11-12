@@ -45,6 +45,10 @@ export const Hook: React.FC = () => {
 	const jolt = frame >= AIE ? 10 * Math.exp(-(frame - AIE) / 3) * Math.cos((frame - AIE) * 1.2) : 0;
 	const spl = fingerPt(SPLINTER, FL, FT, FW);
 	const z = 1 + 0.55 * lin(frame, ECHARDE - 6, ECHARDE + 20);
+	// au « aïe », le doigt se retourne (rotation sur son axe) : on découvre l'écharde, plantée côté pulpe
+	const turn = lin(frame, AIE + 2, AIE + 14);
+	const palm = turn >= 0.5;
+	const flipS = Math.max(0.04, Math.abs(Math.cos(turn * Math.PI)));
 	return (
 		<AbsoluteFill>
 			<Bg />
@@ -55,9 +59,9 @@ export const Hook: React.FC = () => {
 							<PlankG />
 						</g>
 					</svg>
-					<div style={{position: 'absolute', left: FL + (slide + jolt) * K, top: FT}}>
-						<BigFinger width={FW} cut={0}>
-							<SplinterG on={frame >= AIE ? 1 : 0} red={fadeIn(frame, AIE + 4, 20)} />
+					<div style={{position: 'absolute', left: FL + (slide + jolt) * K, top: FT, transform: `scaleY(${flipS})`, transformOrigin: `0px ${FINGER.axis * K}px`}}>
+						<BigFinger width={FW} cut={0} palm={palm}>
+							<SplinterG on={palm ? 1 : 0} red={fadeIn(frame, AIE + 10, 16)} />
 						</BigFinger>
 					</div>
 				</Zoom>
@@ -89,7 +93,7 @@ export const Ongles: React.FC = () => {
 			<Camera punches={[APPUYER + 4, MAUVAISE + 1, POUSSES + 4, CASSER + 1]} shakes={[MAUVAISE + 1, CASSER + 1]} strength={0.04}>
 				<Big from={MAUVAISE - 2} text="Mauvaise *idée* !" size={110} y={170} center />
 				<div style={{position: 'absolute', left: FL, top: FT}}>
-					<BigFinger width={FW} cut={0}>
+					<BigFinger width={FW} cut={0} palm>
 						<SplinterG red={1} push={lin(frame, POUSSES, POUSSES + 14)} broken={lin(frame, CASSER, CASSER + 10)} />
 						{/* deux pouces qui pressent de chaque côté */}
 						{frame >= APPUYER - 6 && frame < PEAU + 10 ? (
@@ -136,7 +140,7 @@ export const Methode: React.FC = () => {
 		<AbsoluteFill>
 			<Bg />
 			<div style={{position: 'absolute', left: FL, top: FT}}>
-				<BigFinger width={FW} cut={0} wet={fadeIn(frame, LAVE + 6, 8) * (1 - fadeIn(frame, DESINF, 20))}>
+				<BigFinger width={FW} cut={0} palm wet={fadeIn(frame, LAVE + 6, 8) * (1 - fadeIn(frame, DESINF, 20))}>
 					<SplinterG red={0.6} pull={pull} />
 					<WashFx on={fadeIn(frame, LAVE, 6) * (1 - fadeIn(frame, SAVON + 14, 8))} foam={fadeIn(frame, SAVON - 10, 10)} />
 					<PullArrowG on={fadeIn(frame, SENS - 4, 6) * (1 - fadeIn(frame, ENTREE + 16, 6))} />
@@ -184,7 +188,7 @@ export const Apres: React.FC = () => {
 			<Bg tone={LPI.pink} />
 			<Big from={SORTIE - 4} text="Une fois *sortie*" size={104} y={200} center />
 			<div style={{position: 'absolute', left: FL, top: FT}}>
-				<BigFinger width={FW} cut={0} wet={fadeIn(frame, LAVE, 6) * (1 - fadeIn(frame, DESINF, 10))} tint={fadeIn(frame, DESINF + 6, 10)}>
+				<BigFinger width={FW} cut={0} palm wet={fadeIn(frame, LAVE, 6) * (1 - fadeIn(frame, DESINF, 10))} tint={fadeIn(frame, DESINF + 6, 10)}>
 					{frame < PANS ? <ellipse cx={entry.x} cy={entry.y} rx={12} ry={9} fill={alpha(LPI.pink, 0.8)} stroke={alpha(LPI.navy, 0.5)} strokeWidth={2} /> : null}
 					<WashFx on={fadeIn(frame, LAVE, 4) * (1 - fadeIn(frame, DESINF - 4, 6))} />
 					<g transform={`translate(${entry.x - FINGER.cut.x} ${entry.y - FINGER.cut.y})`}>
@@ -255,7 +259,7 @@ export const Fin: React.FC = () => {
 			<Bg />
 			<Camera punches={[VOILA + 1, SENS + 1, BOUT + 1]} shakes={[BOUT + 1]} strength={0.04}>
 				<div style={{position: 'absolute', left: FL, top: FT}}>
-					<BigFinger width={FW} cut={0}>
+					<BigFinger width={FW} cut={0} palm>
 						<BandageG x={splinterAt(0).x} y={FINGER.axis} wrapTop={1} wrapBottom={1} tab1={1} tab2={1} />
 						{/* la pince montre fièrement l'écharde entière */}
 						<g transform={`translate(${-300 * lift} ${-330 * lift})`}>

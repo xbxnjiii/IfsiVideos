@@ -574,7 +574,7 @@ Vidéos en série (« partie 1 / 3 ») : carte de la série juste après l'accro
 - `ErIcon` — Hôpital (urgences) 200 × 180.
 
 ## `splinter.tsx`
-« Comment retirer une écharde ? » : vieille planche vue de dessus (veines, nœud, fente, fibres qui dépassent), écharde plantée dans le grand doigt (partie qui dépasse + partie vue par transparence sous la peau, poussée plus loin, cassée, retirée dans son axe), pince à écharde qui s'ouvre / se ferme. À dessiner dans le repère d'un `BigFinger`. Même rendu soigné que bandage.tsx. Couleurs de la marque uniquement.
+« Comment retirer une écharde ? » : vieille planche vue de dessus (veines, nœud, fente, fibres qui dépassent), écharde plantée dans le grand doigt (partie qui dépasse + partie vue par transparence sous la peau, poussée plus loin, cassée, retirée dans son axe), pince à écharde qui s'ouvre / se ferme. À dessiner dans le repère d'un `BigFinger`. Même rendu soigné que bandage.tsx. Couleurs de la marque, sauf le bois : brun naturel (demandé).
 
 - `SPLINTER` — L'écharde dans le repère du doigt : point d'entrée, direction (vers l'intérieur : vers la main), longueurs.
 - `splinterAt` — Point à `d` unités le long de l'écharde (d > 0 : sous la peau ; d < 0 : la partie qui dépasse).

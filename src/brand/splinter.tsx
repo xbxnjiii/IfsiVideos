@@ -1,7 +1,7 @@
 // « Comment retirer une écharde ? » : vieille planche vue de dessus (veines, nœud, fente, fibres qui dépassent), écharde
 // plantée dans le grand doigt (partie qui dépasse + partie vue par transparence sous la peau, poussée plus loin, cassée,
 // retirée dans son axe), pince à écharde qui s'ouvre / se ferme. À dessiner dans le repère d'un `BigFinger`. Même rendu
-// soigné que bandage.tsx. Couleurs de la marque uniquement.
+// soigné que bandage.tsx. Couleurs de la marque, sauf le bois : brun naturel (demandé).
 import React from 'react';
 import {useCurrentFrame} from 'remotion';
 import {alpha, LPI} from './theme';
@@ -14,7 +14,10 @@ const mix = (a: string, b: string, t: number) => {
 	return '#' + x.map((v, i) => Math.round(v + (y[i] - v) * t).toString(16).padStart(2, '0')).join('');
 };
 const LINE = {stroke: alpha(N, 0.72), strokeWidth: 3.5, strokeLinejoin: 'round' as const, strokeLinecap: 'round' as const};
-const WOOD = mix(LPI.blue, N, 0.35);
+/** Bois : brun naturel (demandé par le propriétaire : « une vraie planche », exception à la palette). */
+const WOOD_LIGHT = '#D2A679';
+const WOOD_MID = '#B07A4A';
+const WOOD = '#7A4E2D';
 
 /** L'écharde dans le repère du doigt : point d'entrée, direction (vers l'intérieur : vers la main), longueurs. */
 export const SPLINTER = {x: 640, y: 236, ang: 196, inLen: 130, outLen: 70};
@@ -32,8 +35,8 @@ export const PlankG: React.FC<{hookX?: number}> = ({hookX = 640}) => {
 		<g>
 			<defs>
 				<linearGradient id={`pk${id}`} x1="0" y1="0" x2="0" y2="1">
-					<stop offset="0" stopColor={mix(LPI.sky, LPI.paper, 0.2)} />
-					<stop offset="1" stopColor={mix(LPI.sky, LPI.blue, 0.25)} />
+					<stop offset="0" stopColor={WOOD_LIGHT} />
+					<stop offset="1" stopColor={WOOD_MID} />
 				</linearGradient>
 			</defs>
 			<rect x={-800} y={-900} width={2800} height={3000} fill={mix(LPI.paper, LPI.sky, 0.3)} />
@@ -41,7 +44,7 @@ export const PlankG: React.FC<{hookX?: number}> = ({hookX = 640}) => {
 			<rect x={-800} y={-120} width={2800} height={760} fill={`url(#pk${id})`} {...LINE} />
 			{Array.from({length: 14}, (_, i) => {
 				const y = -90 + i * 52;
-				return <path key={i} d={`M-800 ${y} C-300 ${y - 16} 200 ${y + 20} 700 ${y - 6} S1600 ${y + 14} 2000 ${y}`} fill="none" stroke={alpha(WOOD, 0.22)} strokeWidth={4} strokeLinecap="round" />;
+				return <path key={i} d={`M-800 ${y} C-300 ${y - 16} 200 ${y + 20} 700 ${y - 6} S1600 ${y + 14} 2000 ${y}`} fill="none" stroke={alpha(WOOD, 0.35)} strokeWidth={4} strokeLinecap="round" />;
 			})}
 			{/* nœud du bois */}
 			<g transform="translate(180 470)">

@@ -28,10 +28,10 @@ export const fingerPt = (p: {x: number; y: number}, left: number, top: number, w
 /**
  * Grand index vu de dessus, pointé vers la droite (repère 1000 × 400, la main sort du cadre à gauche). `cut` 0 → 1 la
  * coupure ; `bleed` la goutte qui perle ; `clean` 0 → 1 la plaie nettoyée (plus de sang) ; `wet` reflets d'eau ;
- * `tint` voile d'antiseptique ; `burn` 0 → 1 rougeur de brûlure (en `FINGER.burn`), `heat` ondes de chaleur, `blister`
+ * `tint` voile d'antiseptique ; `palm` : vu côté pulpe (pas d'ongle, plis de flexion) ; `burn` 0 → 1 rougeur de brûlure (en `FINGER.burn`), `heat` ondes de chaleur, `blister`
  * cloque ; `children` : calques dessinés dans le même repère (pansement, eau, compresse, doigt…).
  */
-export const BigFinger: React.FC<{width?: number; cut?: number; bleed?: number; clean?: number; wet?: number; tint?: number; burn?: number; heat?: number; blister?: number; children?: React.ReactNode}> = ({width = 1300, cut = 1, bleed = 0, clean = 0, wet = 0, tint = 0, burn = 0, heat = 0, blister = 0, children}) => {
+export const BigFinger: React.FC<{width?: number; cut?: number; bleed?: number; clean?: number; wet?: number; tint?: number; burn?: number; heat?: number; blister?: number; palm?: boolean; children?: React.ReactNode}> = ({width = 1300, cut = 1, bleed = 0, clean = 0, wet = 0, tint = 0, burn = 0, heat = 0, blister = 0, palm = false, children}) => {
 	const frame = useCurrentFrame();
 	const B = FINGER.burn;
 	const id = React.useId().replace(/:/g, '');
@@ -58,18 +58,36 @@ export const BigFinger: React.FC<{width?: number; cut?: number; bleed?: number; 
 			{/* le doigt */}
 			<path d="M-400 56 L700 66 C880 72 975 130 975 200 C975 270 880 328 700 334 L-400 344 Z" fill={`url(#fk${id})`} {...LINE} />
 			<path d="M-400 92 L690 100 C800 104 880 124 920 150" fill="none" stroke={alpha(LPI.paper, 0.9)} strokeWidth={16} strokeLinecap="round" />
-			{/* plis des articulations (dessus du doigt) */}
-			{[300, 700].map((x) => (
-				<g key={x}>
-					{[-26, 0, 26].map((d, i) => (
-						<path key={i} d={`M${x + d} ${130 + Math.abs(d) * 0.6} Q${x + d + 14} 200 ${x + d} ${270 - Math.abs(d) * 0.6}`} fill="none" stroke={alpha(N, i === 1 ? 0.2 : 0.12)} strokeWidth={3} strokeLinecap="round" />
+			{palm ? (
+				<g>
+					{/* côté pulpe (paume) : plis de flexion bien marqués, pulpe arrondie au bout, empreinte */}
+					{[300, 700].map((x) => (
+						<g key={x}>
+							<path d={`M${x - 8} 96 Q${x + 6} 200 ${x - 8} 304`} fill="none" stroke={alpha(N, 0.28)} strokeWidth={4} strokeLinecap="round" />
+							<path d={`M${x + 12} 104 Q${x + 24} 200 ${x + 12} 296`} fill="none" stroke={alpha(N, 0.16)} strokeWidth={3} strokeLinecap="round" />
+						</g>
+					))}
+					<ellipse cx={850} cy={204} rx={100} ry={92} fill={alpha(LPI.pink, 0.16)} />
+					{[30, 50, 70].map((r, i) => (
+						<path key={i} d={`M${850 - r} ${210} A${r} ${r * 0.85} 0 0 1 ${850 + r} ${210}`} fill="none" stroke={alpha(N, 0.12)} strokeWidth={2.5} />
 					))}
 				</g>
-			))}
-			{/* ongle */}
-			<path d="M800 132 L896 136 C936 142 950 172 950 200 C950 228 936 258 896 264 L800 268 C784 226 784 174 800 132 Z" fill={`url(#fn${id})`} {...LINE} />
-			<path d="M806 146 C796 180 796 220 806 254" fill="none" stroke={alpha(LPI.paper, 0.95)} strokeWidth={10} strokeLinecap="round" />
-			<path d="M840 150 L900 152" stroke={alpha(LPI.paper, 0.8)} strokeWidth={8} strokeLinecap="round" />
+			) : (
+				<g>
+					{/* plis des articulations (dessus du doigt) */}
+					{[300, 700].map((x) => (
+						<g key={x}>
+							{[-26, 0, 26].map((d, i) => (
+										<path key={i} d={`M${x + d} ${130 + Math.abs(d) * 0.6} Q${x + d + 14} 200 ${x + d} ${270 - Math.abs(d) * 0.6}`} fill="none" stroke={alpha(N, i === 1 ? 0.2 : 0.12)} strokeWidth={3} strokeLinecap="round" />
+							))}
+						</g>
+					))}
+					{/* ongle */}
+					<path d="M800 132 L896 136 C936 142 950 172 950 200 C950 228 936 258 896 264 L800 268 C784 226 784 174 800 132 Z" fill={`url(#fn${id})`} {...LINE} />
+					<path d="M806 146 C796 180 796 220 806 254" fill="none" stroke={alpha(LPI.paper, 0.95)} strokeWidth={10} strokeLinecap="round" />
+					<path d="M840 150 L900 152" stroke={alpha(LPI.paper, 0.8)} strokeWidth={8} strokeLinecap="round" />
+				</g>
+			)}
 			{/* la coupure */}
 			{cut > 0 ? (
 				<g opacity={cl(cut)}>

@@ -310,6 +310,9 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
 - `Echarde` (n° 41, ≈ 46 s, voix gratuite d'abord, **thème choisi librement** à la demande) : accroche sans texte (le doigt
   glisse sur une vieille planche, aïe), idée reçue (presser avec les ongles : elle s'enfonce, se casse), la bonne méthode
   (laver, désinfecter la pince, au ras de la peau, tirer dans le sens où elle est entrée), après, quand consulter + tétanos.
+  Corrections demandées : la planche est en **vrai bois brun** (exception à la palette, demandée : « une vraie planche »),
+  et l'écharde se plante côté pulpe : au « aïe » le doigt **se retourne** (`BigFinger` `palm` : vu côté pulpe, sans
+  ongle, plis de flexion, empreinte) pour la montrer ; le reste de la vidéo est côté pulpe.
   Briques `src/brand/splinter.tsx`. Voix : « ça rougit, ça gonfle » → « la peau devient rouge, gonflée ». Storyboard
   `docs/lpi/storyboard-echarde.md`.
 
