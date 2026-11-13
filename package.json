@@ -62,7 +62,8 @@
     "render:entorse": "remotion render Entorse out/45-entorse.mp4",
     "render:brulure-1": "remotion render Brulure-1 out/46-brulure-1.mp4",
     "render:brulure-2": "remotion render Brulure-2 out/47-brulure-2.mp4",
-    "render:brulure-3": "remotion render Brulure-3 out/48-brulure-3.mp4"
+    "render:brulure-3": "remotion render Brulure-3 out/48-brulure-3.mp4",
+    "render:cancer-prostate": "remotion render Cancer-Prostate out/49-cancer-prostate.mp4"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.532",
