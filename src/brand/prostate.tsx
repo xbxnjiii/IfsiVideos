@@ -189,14 +189,14 @@ export const Bedroom: React.FC<{lamp?: number; door?: number; asleep?: number; t
 
 /** Points du bassin (repère 800 × 900) pour poser étiquettes et loupes. */
 export const PELVIS = {
-	bladder: [430, 300],
-	prostate: [440, 530],
-	urethra: [640, 652],
-	prostUrethra: [444, 590],
-	rectum: [300, 560],
-	pubis: [600, 500],
-	tumor: [392, 556],
-	back: [372, 548],
+	bladder: [490, 230],
+	prostate: [446, 428],
+	urethra: [600, 566],
+	prostUrethra: [450, 440],
+	rectum: [262, 430],
+	pubis: [624, 424],
+	tumor: [406, 446],
+	back: [392, 440],
 } as const;
 
 /** Convertit un point du bassin en pixels pour un dessin posé en (left, top) sur `W` pixels de large. */
@@ -231,36 +231,70 @@ const sampleSegs = (segs: Seg[], step = 6) => {
 	return {d, at};
 };
 
-// urètre : col de la vessie → prostate → sous le pubis → le long de la verge → gland
+/** Vraies couleurs du schéma d'anatomie (exception à la palette, demandée : « qu'on distingue bien l'appareil génital »). */
+export const ANAT = {
+	skin: '#F2B38A',
+	skinDark: '#D98E62',
+	thigh: '#F7C7A3',
+	fat: '#FCEDA4',
+	fatDark: '#EFD46A',
+	bone: '#EFE8DE',
+	boneDark: '#C7B8A6',
+	muscle: '#C9545F',
+	peritoneum: '#6F86B8',
+	rectum: '#B5303F',
+	rectumDark: '#7C1C29',
+	bladder: '#F58A1F',
+	bladderDark: '#C2620E',
+	urine: '#F8D35A',
+	prostate: '#80538F',
+	prostateDark: '#5B3868',
+	vesicle: '#EE6767',
+	vas: '#DD4646',
+	cav: '#9B78EE',
+	cavDark: '#7353D2',
+	spongy: '#F5A3B6',
+	glans: '#EF8EA6',
+	urethra: '#8C1E33',
+	testis: '#F1EAE3',
+	testisDark: '#C6B8AC',
+	epid: '#F05A5A',
+	tunica: '#B5303F',
+	glove: '#7FB3E6',
+	steel: '#B9C3CD',
+	tumor: '#3E2347',
+} as const;
+
+// urètre : col de la vessie → prostate → diaphragme → bulbe → sous le pubis → verge qui pend → méat
 const URETHRA = sampleSegs([
-	[430, 418, 440, 530],
-	[440, 530, 446, 612],
-	[446, 612, 452, 662, 512, 662],
-	[512, 662, 640, 650],
-	[640, 650, 742, 642, 752, 736],
-	[752, 736, 750, 860],
+	[446, 352, 444, 420, 450, 500],
+	[450, 500, 452, 528],
+	[452, 528, 456, 574, 510, 574],
+	[510, 574, 652, 566],
+	[652, 566, 722, 566, 724, 640],
+	[724, 640, 726, 846],
 ]);
-// canal déférent : de l'épididyme, remonte devant le pubis, passe au-dessus de la vessie, redescend derrière elle
+// canal déférent : épididyme → remonte devant le pubis → par-dessus la vessie → derrière → ampoule → prostate
 const VAS = sampleSegs([
-	[566, 742, 548, 640, 600, 560],
-	[600, 560, 660, 470, 600, 250],
-	[600, 250, 560, 150, 450, 160],
-	[450, 160, 320, 170, 326, 300],
-	[326, 300, 330, 380, 372, 430],
-	[372, 430, 404, 470, 426, 520],
+	[598, 690, 630, 600, 676, 470],
+	[676, 470, 720, 300, 660, 150],
+	[660, 150, 600, 64, 486, 82],
+	[486, 82, 362, 100, 352, 200],
+	[352, 200, 346, 280, 382, 318],
+	[382, 318, 412, 352, 444, 418],
 ]);
 
 /**
- * Appareil génital et urinaire de l'homme, coupe de profil (face vers la droite), dessiné comme un schéma de manuel
- * (demandé : « vraiment le schéma de l'appareil masculin ») : colonne et sacrum, intestin, vessie (paroi plissée,
- * uretère, urine), vésicule séminale, prostate (capsule, zone de transition autour de l'urètre, zone périphérique à
- * l'arrière), rectum jusqu'à l'anus, symphyse pubienne, verge (corps caverneux, corps spongieux, urètre, gland), bourse
- * avec testicule et épididyme, canal déférent qui remonte jusqu'à la prostate ; dégradés et ombres douces, une teinte
- * de la marque par organe. `grow` 0 → 1 : adénome (la zone de transition grossit et serre l'urètre) ; `flow` 0 → 1 :
- * l'urine descend jusqu'au bout de la verge (plus lentement si l'urètre est serré) ; `fill` : niveau d'urine ;
- * `tumor` 0 → 1 : tumeur dans la zone périphérique (côté rectum) ; `spread` 0 → 1 : cellules qui s'échappent ;
- * `finger` 0 → 1 : doigt ganté du toucher rectal ; `needle` 0 → 1 : aiguille de biopsie ; `glow` / `bladderGlow` /
- * `urethraGlow` : halos ; `body={false}` : organes du petit bassin seuls (loupe).
+ * Petit bassin de l'homme en coupe sagittale (face vers la droite), dessiné comme un schéma de cours d'IFSI / de
+ * médecine, en vraies couleurs (`ANAT`), cadré sur la prostate : 5e vertèbre lombaire, sacrum et coccyx, rectum (ampoule,
+ * canal anal, sphincters, anus), vessie (dôme, paroi musculaire, uretère, col), péritoine (cul-de-sac entre vessie et
+ * rectum), vésicule séminale, canal déférent et son ampoule, prostate (base sous la vessie, apex en bas, zone de
+ * transition autour de l'urètre, zone périphérique côté rectum), diaphragme uro-génital, symphyse pubienne, muscle de la
+ * paroi abdominale, verge (bulbe, corps spongieux, corps caverneux, gland plus large avec sa couronne et le méat),
+ * bourse avec testicule et épididyme. `grow` 0 → 1 : adénome (la zone de transition grossit et serre l'urètre) ;
+ * `flow` : l'urine descend jusqu'au méat (plus lentement si l'urètre est serré) ; `fill` : niveau d'urine ; `tumor` :
+ * tumeur dans la zone périphérique ; `spread` : cellules qui s'échappent ; `finger` : doigt ganté du toucher rectal ;
+ * `needle` : aiguille de biopsie ; `glow` / `bladderGlow` / `urethraGlow` : halos ; `body={false}` : organes seuls.
  */
 export const Pelvis: React.FC<{
 	width?: number;
@@ -280,243 +314,237 @@ export const Pelvis: React.FC<{
 	const uid = React.useId().replace(/[^a-zA-Z0-9]/g, '');
 	const id = (k: string) => `pv${uid}${k}`;
 	const url = (k: string) => `url(#${id(k)})`;
+	const A = ANAT;
 	const [px, py] = PELVIS.prostate;
-	const rx = 74 + 40 * grow;
-	const ry = 62 + 32 * grow;
-	const lumen = 13 - 8 * grow;
+	const g = 1 + 0.34 * grow;
+	const lumen = 10 - 6 * grow;
 	const URE = URETHRA.d;
 	const pulse = 0.5 + 0.5 * Math.sin(frame / 6);
 	const speed = 1 - 0.65 * grow;
 	const drops = flow > 0 ? [0, 1, 2, 3, 4, 5, 6] : [];
-	const fy = 300 + 104 - 196 * fill;
-	const RECT = 'M228 160 Q210 360 262 520 Q290 620 300 740 Q304 772 322 786 L356 786 Q368 770 368 740 Q366 620 344 520 Q300 360 318 160 Z';
-	const RECT_IN = 'M248 170 Q234 360 280 520 Q306 620 316 740 Q318 766 330 778 L346 778 Q354 766 352 740 Q350 620 328 520 Q290 360 300 170 Z';
-	// silhouette : dos et fesse à gauche, cuisse en bas, ventre et pubis à droite
-	const OUT = 'M176 0 Q132 250 138 420 Q140 610 232 726 Q282 790 336 806 L344 900 L610 900 L604 700 Q626 640 690 600 Q744 530 738 400 Q728 220 700 0 Z';
-	const tzx = rx * (0.42 + 0.3 * grow);
-	const tzy = ry * (0.46 + 0.28 * grow);
-	const lobules: [number, number][] = [[-0.62, -0.1], [-0.5, 0.35], [-0.3, 0.62], [0.05, 0.7], [0.4, 0.55], [0.6, 0.18], [0.55, -0.35], [0.25, -0.62], [-0.2, -0.6], [-0.55, -0.42]];
-	const shade = (c: string, t: number) => mix(c, N, t);
+	const fy = 340 - 210 * fill;
+	// silhouette : dos et fesse à gauche, périnée en bas, ventre et pubis à droite (pas de cuisse : on cible la prostate)
+	const OUT = 'M40 0 Q-4 240 50 460 Q120 640 268 704 L320 704 Q430 696 520 664 L560 640 Q640 610 686 572 Q740 500 736 420 Q728 300 756 0 Z';
+	const SACRUM = 'M50 40 Q28 262 128 440 Q180 522 248 566 L266 548 Q216 490 196 424 Q134 270 168 40 Z';
+	const RECT = 'M212 0 Q178 200 230 350 Q258 430 260 500 Q264 556 300 598 L282 704 L322 704 L340 600 Q368 560 366 500 Q374 420 350 334 Q314 190 316 0 Z';
+	const RECT_IN = 'M236 0 Q204 200 252 350 Q280 430 282 500 Q286 552 314 590 L296 700 L308 700 L322 594 Q342 556 340 500 Q346 420 326 336 Q292 190 292 0 Z';
+	const BLAD = 'M384 254 Q370 150 470 120 Q584 96 626 160 Q650 214 600 284 Q548 346 452 354 Q390 342 384 254 Z';
+	const PRO = 'M386 362 Q442 340 508 360 Q526 410 490 470 Q468 508 448 510 Q420 506 398 470 Q368 410 386 362 Z';
+	// le doigt entre par l'anus et remonte le long du canal vers l'arrière de la prostate
+	const fBase: [number, number] = [292, 760];
+	const fTip: [number, number] = [372, 452];
+	const fLen = Math.hypot(fTip[0] - fBase[0], fTip[1] - fBase[1]);
+	const fAng = (Math.atan2(fTip[1] - fBase[1], fTip[0] - fBase[0]) * 180) / Math.PI;
+	const scaleAt = (k: number, cx: number, cy: number) => `translate(${cx} ${cy}) scale(${k}) translate(${-cx} ${-cy})`;
 	return (
 		<svg width={width} height={(width * 900) / 800} viewBox="0 0 800 900" style={{overflow: 'visible'}}>
 			<defs>
 				<filter id={id('sh')} x="-30%" y="-30%" width="160%" height="160%">
-					<feDropShadow dx={0} dy={7} stdDeviation={8} floodColor={N} floodOpacity={0.26} />
+					<feDropShadow dx={0} dy={5} stdDeviation={6} floodColor="#3A1A12" floodOpacity={0.26} />
 				</filter>
 				<filter id={id('soft')} x="-20%" y="-20%" width="140%" height="140%">
 					<feGaussianBlur stdDeviation={6} />
 				</filter>
-				<linearGradient id={id('fat')} x1="0" y1="0" x2="1" y2="0">
-					<stop offset="0" stopColor={mixA(LPI.pink, 0.2)} />
-					<stop offset="0.5" stopColor={mixA(LPI.pink, 0.1)} />
-					<stop offset="1" stopColor={mixA(LPI.pink, 0.22)} />
+				<radialGradient id={id('fat')} cx="0.55" cy="0.4" r="0.85">
+					<stop offset="0" stopColor="#FFF6C8" />
+					<stop offset="1" stopColor={A.fat} />
+				</radialGradient>
+				<linearGradient id={id('bone')} x1="0" y1="0" x2="1" y2="1">
+					<stop offset="0" stopColor="#FFFFFF" />
+					<stop offset="1" stopColor={A.bone} />
 				</linearGradient>
 				<linearGradient id={id('mus')} x1="0" y1="0" x2="1" y2="0">
-					<stop offset="0" stopColor={mixA(LPI.pink, 0.75)} />
-					<stop offset="0.5" stopColor={mixA(LPI.pink, 0.95)} />
-					<stop offset="1" stopColor={mixA(LPI.pink, 0.7)} />
+					<stop offset="0" stopColor="#B4434F" />
+					<stop offset="0.5" stopColor={A.muscle} />
+					<stop offset="1" stopColor="#B4434F" />
 				</linearGradient>
-				<radialGradient id={id('bone')} cx="0.35" cy="0.3" r="0.8">
-					<stop offset="0" stopColor={LPI.paper} />
-					<stop offset="0.6" stopColor={mixA(LPI.sky, 0.55)} />
-					<stop offset="1" stopColor={mixA(N, 0.4)} />
-				</radialGradient>
-				<radialGradient id={id('blad')} cx="0.4" cy="0.35" r="0.75">
-					<stop offset="0" stopColor={mixA(LPI.blue, 0.55)} />
-					<stop offset="1" stopColor={shade(LPI.blue, 0.15)} />
-				</radialGradient>
-				<linearGradient id={id('urine')} x1="0" y1="0" x2="0" y2="1">
-					<stop offset="0" stopColor={mixA(LPI.sky, 0.95)} />
-					<stop offset="1" stopColor={mixA(LPI.blue, 0.5)} />
+				<linearGradient id={id('rec')} x1="0" y1="0" x2="1" y2="0">
+					<stop offset="0" stopColor={A.rectumDark} />
+					<stop offset="0.5" stopColor={A.rectum} />
+					<stop offset="1" stopColor={A.rectumDark} />
 				</linearGradient>
-				<radialGradient id={id('pro')} cx="0.38" cy="0.32" r="0.8">
-					<stop offset="0" stopColor={mixA(LPI.pink, 0.6)} />
-					<stop offset="0.6" stopColor={LPI.pink} />
-					<stop offset="1" stopColor={shade(LPI.pink, 0.35)} />
+				<radialGradient id={id('blad')} cx="0.38" cy="0.3" r="0.85">
+					<stop offset="0" stopColor="#FFB45C" />
+					<stop offset="0.6" stopColor={A.bladder} />
+					<stop offset="1" stopColor={A.bladderDark} />
+				</radialGradient>
+				<radialGradient id={id('pro')} cx="0.4" cy="0.3" r="0.85">
+					<stop offset="0" stopColor="#A57BB5" />
+					<stop offset="0.6" stopColor={A.prostate} />
+					<stop offset="1" stopColor={A.prostateDark} />
 				</radialGradient>
 				<radialGradient id={id('tz')} cx="0.5" cy="0.45" r="0.6">
-					<stop offset="0" stopColor={mixA(LPI.pink, 0.35)} />
-					<stop offset="1" stopColor={mixA(LPI.pink, 0.8)} />
+					<stop offset="0" stopColor="#C29FCE" />
+					<stop offset="1" stopColor="#9C73AC" />
 				</radialGradient>
-				<linearGradient id={id('rec')} x1="0" y1="0" x2="1" y2="0">
-					<stop offset="0" stopColor={shade(LPI.pink, 0.4)} />
-					<stop offset="0.5" stopColor={shade(LPI.pink, 0.18)} />
-					<stop offset="1" stopColor={shade(LPI.pink, 0.42)} />
+				<linearGradient id={id('cav')} x1="0" y1="0" x2="1" y2="0">
+					<stop offset="0" stopColor={A.cavDark} />
+					<stop offset="0.5" stopColor="#B49BF5" />
+					<stop offset="1" stopColor={A.cavDark} />
 				</linearGradient>
-				<linearGradient id={id('cav')} x1="0" y1="0" x2="0" y2="1">
-					<stop offset="0" stopColor={mixA(LPI.blue, 0.75)} />
-					<stop offset="1" stopColor={shade(LPI.blue, 0.2)} />
-				</linearGradient>
+				<radialGradient id={id('glans')} cx="0.4" cy="0.3" r="0.8">
+					<stop offset="0" stopColor="#F9B9C9" />
+					<stop offset="1" stopColor="#D9738E" />
+				</radialGradient>
 				<radialGradient id={id('testis')} cx="0.38" cy="0.32" r="0.8">
-					<stop offset="0" stopColor={LPI.paper} />
-					<stop offset="1" stopColor={mixA(LPI.sky, 0.95)} />
+					<stop offset="0" stopColor="#FFFFFF" />
+					<stop offset="0.7" stopColor={A.testis} />
+					<stop offset="1" stopColor={A.testisDark} />
 				</radialGradient>
-				<linearGradient id={id('glove')} x1="0" y1="0" x2="1" y2="0">
-					<stop offset="0" stopColor={mix(LPI.sky, N, 0.12)} />
-					<stop offset="0.45" stopColor={LPI.paper} />
-					<stop offset="1" stopColor={mix(LPI.sky, N, 0.2)} />
+				<linearGradient id={id('glove')} x1="0" y1="0" x2="0" y2="1">
+					<stop offset="0" stopColor="#5E95CF" />
+					<stop offset="0.45" stopColor="#A9CDF2" />
+					<stop offset="1" stopColor="#5E95CF" />
 				</linearGradient>
 				<radialGradient id={id('tum')} cx="0.4" cy="0.35" r="0.7">
-					<stop offset="0" stopColor={mix(N, LPI.pink, 0.35)} />
-					<stop offset="1" stopColor={N} />
+					<stop offset="0" stopColor="#6B3E78" />
+					<stop offset="1" stopColor={A.tumor} />
 				</radialGradient>
 				<clipPath id={id('bc')}>
-					<ellipse cx={430} cy={300} rx={124} ry={102} />
+					<path d={BLAD} transform={scaleAt(0.84, 500, 232)} />
 				</clipPath>
 				<clipPath id={id('rc')}>
 					<path d={RECT} />
 				</clipPath>
-				<clipPath id={id('body')}>
-					<path d={OUT} />
-				</clipPath>
 			</defs>
-			{/* coupe : peau, graisse, colonne lombaire, intestin, muscle du ventre, fesse */}
 			{body ? (
 				<g>
 					<path d={OUT} fill={url('fat')} />
-					<g clipPath={url('body')}>
-						{Array.from({length: 46}, (_, i) => (
-							<ellipse key={i} cx={140 + ((i * 97) % 600)} cy={50 + ((i * 173) % 840)} rx={22} ry={16} fill="none" stroke={mixA(LPI.pink, 0.24)} strokeWidth={2} />
-						))}
-						{[[330, 104, 70, 44], [460, 86, 80, 46], [590, 126, 66, 50], [400, 168, 60, 34], [540, 190, 54, 30]].map(([x, y, a, b2], i) => (
-							<g key={i} filter={url('sh')}>
-								<ellipse cx={x} cy={y} rx={a} ry={b2} fill={mixA(LPI.pink, 0.4)} stroke={mixA(N, 0.35)} strokeWidth={3} />
-								<ellipse cx={x} cy={y} rx={a * 0.55} ry={b2 * 0.45} fill="none" stroke={mixA(LPI.pink, 0.75)} strokeWidth={3} />
-							</g>
-						))}
-						<path d="M680 0 Q714 200 702 330 Q690 420 648 446 L622 430 Q656 390 662 320 Q668 190 640 0 Z" fill={url('mus')} stroke={mixA(N, 0.4)} strokeWidth={3} />
-						{Array.from({length: 10}, (_, i) => (
-							<path key={i} d={`M${646 + i * 3} ${20 + i * 40} Q${672 + i * 2} ${30 + i * 40} ${694 - i} ${26 + i * 40}`} fill="none" stroke={mixA(N, 0.18)} strokeWidth={2} />
-						))}
-						<path d="M146 540 Q130 690 236 800 L320 860 Q240 720 236 600 Z" fill={url('mus')} opacity={0.75} />
-					</g>
-					<path d={OUT} fill="none" stroke={mixA(LPI.pink, 0.9)} strokeWidth={14} />
-					<path d={OUT} fill="none" stroke={mixA(N, 0.55)} strokeWidth={3} />
-					{/* bourse + testicule + épididyme */}
-					<g filter={url('sh')}>
-						<path d="M552 680 Q520 700 518 790 Q520 880 590 892 Q660 884 668 800 Q668 712 640 690 Z" fill={mixA(LPI.pink, 0.55)} stroke={mixA(N, 0.6)} strokeWidth={4} />
-						<path d="M552 680 Q520 700 518 790 Q520 880 590 892 Q660 884 668 800 Q668 712 640 690" fill="none" stroke={mixA(LPI.pink, 0.95)} strokeWidth={10} />
-						<ellipse cx={596} cy={808} rx={46} ry={58} fill={url('testis')} stroke={mixA(N, 0.55)} strokeWidth={3} />
-						{Array.from({length: 5}, (_, i) => (
-							<path key={i} d={`M${572 + i * 10} ${770 + (i % 2) * 6} q6 14 0 28 q-6 14 0 28`} fill="none" stroke={mixA(LPI.blue, 0.35)} strokeWidth={2.5} />
-						))}
-						<path d="M560 752 Q548 790 556 836 Q566 864 586 868 Q562 840 566 800 Q568 768 584 752 Q574 742 560 752 Z" fill={LPI.pink} stroke={mixA(N, 0.55)} strokeWidth={3} />
-					</g>
+					<path d={OUT} fill="none" stroke={A.skin} strokeWidth={24} strokeLinejoin="round" />
+					<path d={OUT} fill="none" stroke={A.skinDark} strokeWidth={2} />
+					{/* muscle grand droit (paroi du ventre) */}
+					<path d="M706 0 Q732 180 716 300 Q704 370 664 404 L640 392 Q676 352 684 296 Q696 170 670 0 Z" fill={url('mus')} />
+					{/* muscles de la fesse (grand fessier) */}
+					<path d="M44 300 Q40 480 150 610 Q210 660 262 690 Q170 600 120 470 Q90 390 96 300 Z" fill={url('mus')} opacity={0.85} />
 				</g>
 			) : null}
-			{/* colonne lombaire, sacrum, coccyx */}
+			{/* 5e vertèbre lombaire + disque, sacrum (vertèbres soudées), coccyx */}
 			<g filter={url('sh')}>
-				{(body ? [[182, 46, -6]] : []).concat([[176, 110, -4], [170, 172, -2], [170, 234, 2], [178, 296, 8], [192, 356, 16], [208, 410, 24], [220, 456, 32], [228, 492, 40]]).map(([x, y, r], i, arr) => {
-					const k = i - (arr.length - 8);
-					const big = k < 0;
-					const w = big ? 66 : 52 - k * 3;
-					const h = big ? 56 : 48 - k * 4;
-					return (
-						<g key={i} transform={`rotate(${r} ${x} ${y})`}>
-							<rect x={x - w / 2} y={y - h / 2} width={w} height={h} rx={14} fill={url('bone')} stroke={mixA(N, 0.6)} strokeWidth={3} />
-							<circle cx={x - 6} cy={y - 4} r={2.5} fill={mixA(N, 0.3)} />
-							<circle cx={x + 7} cy={y + 6} r={2} fill={mixA(N, 0.3)} />
-						</g>
-					);
+				{body ? (
+					<>
+						<rect x={58} y={-30} width={104} height={50} rx={12} fill={url('bone')} stroke={A.boneDark} strokeWidth={3} transform="rotate(8 110 0)" />
+						<rect x={62} y={22} width={98} height={14} rx={6} fill="#BFD6EE" transform="rotate(10 110 30)" />
+					</>
+				) : null}
+				<path d={SACRUM} fill={url('bone')} stroke={A.boneDark} strokeWidth={3} />
+				{[90, 160, 230, 296, 356, 410, 460, 504].map((y, i) => {
+					const x0 = 60 + i * i * 2.2 + i * 2;
+					return <path key={y} d={`M${x0} ${y} L${x0 + 82 - i * 4} ${y + 6 + i * 3}`} stroke={A.boneDark} strokeWidth={2.5} opacity={0.8} />;
 				})}
 			</g>
-			{/* symphyse pubienne */}
-			<g transform="rotate(-18 600 500)" filter={url('sh')}>
-				<ellipse cx={600} cy={500} rx={36} ry={82} fill={url('bone')} stroke={mixA(N, 0.65)} strokeWidth={4} />
-				<path d="M600 430 L600 570" stroke={mixA(LPI.sky, 0.9)} strokeWidth={5} strokeDasharray="6 6" />
-				{[[588, 470], [612, 500], [590, 530], [608, 455], [596, 552]].map(([x, y], i) => (
-					<circle key={i} cx={x} cy={y} r={3} fill={mixA(N, 0.28)} />
-				))}
-			</g>
-			{/* rectum jusqu'à l'anus : paroi, plis, sphincter */}
+			{/* péritoine : recouvre la vessie et descend entre la vessie et le rectum (cul-de-sac) */}
+			{body ? <path d="M720 120 Q620 80 520 104 Q420 110 388 190 Q370 260 352 292 Q330 260 318 160 Q306 80 300 0" fill="none" stroke={A.peritoneum} strokeWidth={3} strokeDasharray="10 6" /> : null}
+			{/* rectum : ampoule, canal anal, sphincters */}
 			<g filter={url('sh')}>
-				<path d={RECT} fill={url('rec')} stroke={mixA(N, 0.7)} strokeWidth={4} />
-				<path d={RECT_IN} fill={shade(LPI.pink, 0.55)} opacity={0.8} />
-				{[[262, 260], [282, 360], [300, 450]].map(([x, y], i) => (
-					<path key={i} d={`M${x - 30 + i * 6} ${y} Q${x} ${y - 16} ${x + 34 - i * 2} ${y + 6}`} fill="none" stroke={mixA(LPI.pink, 0.6)} strokeWidth={5} strokeLinecap="round" />
+				<path d={RECT} fill={url('rec')} />
+				<path d={RECT_IN} fill="#6A1622" opacity={0.55} />
+				{[[236, 150], [256, 270], [290, 400]].map(([x, y], i) => (
+					<path key={i} d={`M${x - 18} ${y} Q${x + 10} ${y - 14} ${x + 46} ${y + 6}`} fill="none" stroke="#D45A68" strokeWidth={6} strokeLinecap="round" />
 				))}
-				{[[300, 734], [366, 734]].map(([x, y], i) => (
-					<ellipse key={i} cx={x} cy={y} rx={12} ry={24} fill={url('mus')} stroke={mixA(N, 0.45)} strokeWidth={3} />
+				{[[284, 640], [336, 640], [282, 686], [330, 690]].map(([x, y], i) => (
+					<ellipse key={i} cx={x} cy={y} rx={13} ry={22} fill={url('mus')} />
 				))}
 			</g>
 			{finger > 0 ? (
 				<g clipPath={url('rc')}>
-					<g transform={`translate(${-6 * finger} ${300 - 300 * finger})`}>
-						<path d="M318 880 L318 600 Q320 548 344 546 Q368 548 368 600 L368 880 Z" fill={url('glove')} stroke={mixA(N, 0.75)} strokeWidth={4} />
-						<path d="M326 590 Q344 566 362 590" fill="none" stroke={mixA(N, 0.35)} strokeWidth={3} />
-						{[680, 760].map((y) => (
-							<path key={y} d={`M322 ${y} Q343 ${y + 8} 364 ${y}`} fill="none" stroke={mixA(N, 0.3)} strokeWidth={3} />
+					<g transform={`translate(${fBase[0] + (fTip[0] - fBase[0]) * (finger - 1) * 0.9} ${fBase[1] + (fTip[1] - fBase[1]) * (finger - 1) * 0.9}) rotate(${fAng})`}>
+						<rect x={-120} y={-22} width={fLen + 120} height={44} rx={22} fill={url('glove')} stroke="#3F6E9E" strokeWidth={3} />
+						<path d={`M${fLen - 30} -14 Q${fLen - 12} 0 ${fLen - 30} 14`} fill="none" stroke="#3F6E9E" strokeWidth={3} />
+						{[0.45, 0.75].map((k) => (
+							<path key={k} d={`M${fLen * k} -18 q6 18 0 36`} fill="none" stroke="#3F6E9E" strokeWidth={2.5} opacity={0.6} />
 						))}
-						<path d="M332 620 L332 800" stroke={alpha(LPI.paper, 0.8)} strokeWidth={5} strokeLinecap="round" />
 					</g>
 				</g>
 			) : null}
-			{/* verge : corps caverneux (dessus), corps spongieux autour de l'urètre, gland */}
+			{/* diaphragme uro-génital (sous la prostate) */}
+			{body ? <path d="M392 506 Q470 520 586 500 L590 530 Q470 552 388 534 Z" fill={url('mus')} opacity={0.9} /> : null}
+			{/* symphyse pubienne */}
+			<g filter={url('sh')}>
+				<path d="M600 330 Q640 320 650 380 Q662 460 640 512 Q616 532 598 508 Q586 450 588 390 Q586 340 600 330 Z" fill={url('bone')} stroke={A.boneDark} strokeWidth={3} />
+				<path d="M612 350 Q628 420 620 500" fill="none" stroke="#BFD6EE" strokeWidth={5} />
+			</g>
+			{/* bourse : testicule, épididyme */}
 			{body ? (
 				<g filter={url('sh')}>
-					<path d="M560 618 Q640 596 712 604 Q790 616 796 700 L796 830 Q794 884 760 892 Q724 890 720 840 L722 720 Q718 690 690 684 L560 690 Z" fill={mixA(LPI.pink, 0.45)} stroke={mixA(N, 0.6)} strokeWidth={4} />
-					<path d="M574 630 Q640 612 708 620 Q774 632 778 700 L778 800 Q770 812 760 800 L760 712 Q756 668 712 662 L580 664 Z" fill={url('cav')} stroke={mixA(N, 0.5)} strokeWidth={3} />
-					<path d="M540 652 Q600 676 700 668 Q742 668 748 720 L748 836 Q746 850 738 836 L736 726 Q730 690 700 688 L560 690 Q536 684 540 652 Z" fill={mixA(LPI.pink, 0.85)} stroke={mixA(N, 0.4)} strokeWidth={2.5} />
-					<path d="M722 812 Q728 790 756 788 Q788 790 794 820 L794 840 Q790 886 758 890 Q724 886 722 840 Z" fill={LPI.pink} stroke={mixA(N, 0.6)} strokeWidth={3} />
+					<path d="M520 640 Q492 712 516 790 Q552 852 616 844 Q676 830 680 760 Q684 680 650 630 Q590 620 520 640 Z" fill={A.skin} />
+					<path d="M534 656 Q510 720 530 784 Q560 834 614 828 Q662 816 664 760 Q666 692 640 648 Q590 638 534 656 Z" fill={A.tunica} />
+					<ellipse cx={596} cy={748} rx={48} ry={62} fill={url('testis')} transform="rotate(-14 596 748)" />
+					<path d="M556 690 Q536 744 548 796 Q560 820 580 826 Q556 790 560 748 Q564 708 592 686 Q572 678 556 690 Z" fill={A.epid} />
 				</g>
 			) : null}
-			{/* canal déférent (de l'épididyme à la prostate) */}
+			{/* verge : bulbe, corps spongieux, corps caverneux, gland plus large avec sa couronne, méat */}
+			{body ? (
+				<g filter={url('sh')}>
+					{/* peau de la verge */}
+					<path d="M600 520 Q700 500 744 540 Q776 572 774 640 L772 764 Q770 778 756 780 L694 780 Q680 778 680 764 L682 640 Q678 600 650 592 L560 600 Z" fill={A.skin} />
+					{/* corps caverneux (dessus) */}
+					<path d="M584 534 Q690 516 734 552 Q760 580 760 640 L758 770 L742 770 L742 650 Q740 610 712 602 Q660 596 590 566 Z" fill={url('cav')} />
+					{/* corps spongieux (dessous) + bulbe */}
+					<ellipse cx={478} cy={588} rx={46} ry={26} fill={A.spongy} />
+					<path d="M470 566 Q560 556 652 552 Q712 552 716 610 L714 776 L700 776 L698 620 Q696 586 652 584 Q560 590 474 610 Z" fill={A.spongy} />
+					{/* gland : plus large que la tige, couronne, méat */}
+					<path d="M674 772 Q672 750 700 748 L752 748 Q784 752 786 776 Q790 812 772 846 Q752 872 728 872 Q702 872 684 846 Q666 812 674 772 Z" fill={url('glans')} />
+					<path d="M672 776 Q728 760 788 776" fill="none" stroke="#B85872" strokeWidth={5} strokeLinecap="round" />
+					<path d="M720 856 Q726 868 732 856" fill="none" stroke="#8C1E33" strokeWidth={4} strokeLinecap="round" />
+					<ellipse cx={712} cy={798} rx={14} ry={22} fill="#FFFFFF" opacity={0.25} />
+				</g>
+			) : null}
+			{/* canal déférent */}
 			{body ? (
 				<g>
-					<path d={VAS.d} fill="none" stroke={mixA(N, 0.6)} strokeWidth={9} strokeLinecap="round" strokeLinejoin="round" />
-					<path d={VAS.d} fill="none" stroke={shade(LPI.pink, 0.15)} strokeWidth={5} strokeLinecap="round" strokeLinejoin="round" />
+					<path d={VAS.d} fill="none" stroke="#9E2A2A" strokeWidth={9} strokeLinecap="round" strokeLinejoin="round" />
+					<path d={VAS.d} fill="none" stroke={A.vas} strokeWidth={5} strokeLinecap="round" strokeLinejoin="round" />
 				</g>
 			) : null}
-			{/* vésicule séminale */}
-			<g filter={url('sh')}>
-				<path d="M336 392 Q318 380 326 362 Q340 350 352 366 Q366 352 380 368 Q392 384 380 398 Q392 414 376 428 Q360 440 350 426 Q334 434 330 418 Q320 404 336 392 Z" fill={url('pro')} stroke={mixA(N, 0.55)} strokeWidth={3} />
-				<path d="M340 380 Q352 392 366 378 M344 410 Q358 400 372 414" fill="none" stroke={mixA(N, 0.3)} strokeWidth={3} />
-			</g>
 			{/* uretère */}
-			<path d="M300 60 Q296 160 330 250" fill="none" stroke={mixA(N, 0.6)} strokeWidth={14} strokeLinecap="round" />
-			<path d="M300 60 Q296 160 330 250" fill="none" stroke={mixA(LPI.blue, 0.7)} strokeWidth={8} strokeLinecap="round" />
-			{/* vessie */}
-			{bladderGlow > 0 ? <ellipse cx={430} cy={300} rx={172} ry={150} fill={alpha(LPI.sky, 0.8 * bladderGlow)} filter={url('soft')} /> : null}
+			<path d="M336 0 Q330 150 398 286" fill="none" stroke="#C2620E" strokeWidth={13} strokeLinecap="round" />
+			<path d="M336 0 Q330 150 398 286" fill="none" stroke="#F7B061" strokeWidth={7} strokeLinecap="round" />
+			{/* vésicule séminale (entre la vessie et le rectum, au-dessus de la prostate) */}
 			<g filter={url('sh')}>
-				<ellipse cx={430} cy={300} rx={140} ry={118} fill={url('blad')} stroke={mixA(N, 0.75)} strokeWidth={4} />
-				<ellipse cx={430} cy={300} rx={124} ry={102} fill={alpha(LPI.paper, 0.96)} />
-				<g clipPath={url('bc')}>
-					<rect x={290} y={fy + Math.sin(frame / 8) * 3} width={280} height={300} fill={url('urine')} />
-					<path d={`M290 ${fy + Math.sin(frame / 8) * 3} Q360 ${fy - 6} 430 ${fy + 2} Q500 ${fy + 8} 570 ${fy}`} fill="none" stroke={alpha(LPI.paper, 0.8)} strokeWidth={4} />
-				</g>
-				{Array.from({length: 16}, (_, i) => {
-					const a = (i / 16) * Math.PI * 2;
-					const x1 = 430 + Math.cos(a) * 124;
-					const y1 = 300 + Math.sin(a) * 102;
-					const x2 = 430 + Math.cos(a) * 112;
-					const y2 = 300 + Math.sin(a) * 91;
-					return <path key={i} d={`M${x1} ${y1} Q${(x1 + x2) / 2 + 5} ${(y1 + y2) / 2 - 5} ${x2} ${y2}`} stroke={mixA(LPI.blue, 0.75)} strokeWidth={4} strokeLinecap="round" />;
-				})}
-				<ellipse cx={392} cy={238} rx={46} ry={20} fill={alpha(LPI.paper, 0.5)} transform="rotate(-20 392 238)" />
-			</g>
-			{/* prostate */}
-			{glow > 0 ? <ellipse cx={px} cy={py} rx={rx + 40} ry={ry + 36} fill={alpha(LPI.pink, (0.45 + 0.3 * pulse) * glow)} filter={url('soft')} /> : null}
-			<g filter={url('sh')}>
-				<ellipse cx={px} cy={py} rx={rx} ry={ry} fill={url('pro')} stroke={mixA(N, 0.8)} strokeWidth={4} />
-				<ellipse cx={px} cy={py} rx={rx - 7} ry={ry - 7} fill="none" stroke={alpha(LPI.paper, 0.35)} strokeWidth={3} />
-				{lobules.map(([lx, ly], i) => (
-					<path key={i} d={`M${px + lx * rx - 9} ${py + ly * ry} q9 -10 18 0`} fill="none" stroke={mixA(N, 0.3)} strokeWidth={2.5} strokeLinecap="round" />
+				<path d="M330 236 Q322 216 340 210 Q356 210 360 228 Q378 222 384 242 Q400 246 398 266 Q414 278 404 298 Q412 318 394 330 Q376 334 368 316 Q348 318 348 298 Q330 292 336 274 Q318 264 326 248 Z" fill={A.vesicle} />
+				{[[344, 236], [362, 262], [378, 290], [390, 316]].map(([x, y], i) => (
+					<path key={i} d={`M${x - 9} ${y} q9 -11 18 0`} fill="none" stroke="#C04848" strokeWidth={3} strokeLinecap="round" />
 				))}
-				<ellipse cx={px + 4} cy={py - 6} rx={tzx} ry={tzy} fill={url('tz')} stroke={mixA(N, 0.35)} strokeWidth={2.5} strokeDasharray="5 5" />
-				<path d={`M${px - rx * 0.6} ${py - ry * 0.55} Q${px - rx * 0.2} ${py - ry * 0.85} ${px + rx * 0.3} ${py - ry * 0.65}`} fill="none" stroke={alpha(LPI.paper, 0.7)} strokeWidth={7} strokeLinecap="round" />
+			</g>
+			{/* vessie : dôme, paroi musculaire, urine, col */}
+			{bladderGlow > 0 ? <path d={BLAD} fill={alpha(LPI.sky, 0.85 * bladderGlow)} stroke={alpha(LPI.sky, 0.85 * bladderGlow)} strokeWidth={50} filter={url('soft')} /> : null}
+			<g filter={url('sh')}>
+				<path d={BLAD} fill={url('blad')} />
+				<g clipPath={url('bc')}>
+					<rect x={360} y={90} width={300} height={280} fill="#FFD9A6" />
+					<rect x={360} y={fy + Math.sin(frame / 8) * 3} width={300} height={300} fill={A.urine} />
+					<path d={`M360 ${fy + Math.sin(frame / 8) * 3} Q440 ${fy - 6} 510 ${fy + 2} Q590 ${fy + 8} 660 ${fy}`} fill="none" stroke="#FFF2B8" strokeWidth={4} />
+				</g>
+				{Array.from({length: 12}, (_, i) => {
+					const t = i / 12;
+					const x = 400 + 210 * t;
+					return <path key={i} d={`M${x} ${150 - 30 * Math.sin(t * Math.PI)} q6 6 0 12`} fill="none" stroke={A.bladderDark} strokeWidth={3} opacity={0.6} />;
+				})}
+				<ellipse cx={460} cy={150} rx={46} ry={16} fill="#FFFFFF" opacity={0.35} transform="rotate(-14 460 150)" />
+			</g>
+			{/* prostate : base sous la vessie, apex en bas ; zone de transition autour de l'urètre */}
+			{glow > 0 ? <ellipse cx={px} cy={py} rx={96 * g} ry={100 * g} fill={alpha(LPI.pink, (0.5 + 0.3 * pulse) * glow)} filter={url('soft')} /> : null}
+			<g filter={url('sh')} transform={scaleAt(g, px, py - 20)}>
+				<path d={PRO} fill={url('pro')} />
+				<ellipse cx={px + 6} cy={py - 18} rx={30 + 18 * grow} ry={42 + 14 * grow} fill={url('tz')} />
+				{Array.from({length: 9}, (_, i) => {
+					const a = (i / 9) * Math.PI * 2;
+					return <path key={i} d={`M${px + Math.cos(a) * 40 - 7} ${py - 8 + Math.sin(a) * 46} q7 -8 14 0`} fill="none" stroke="#4B2C57" strokeWidth={2.5} strokeLinecap="round" opacity={0.6} />;
+				})}
+				<path d={`M${px - 40} ${py - 52} Q${px} ${py - 74} ${px + 44} ${py - 54}`} fill="none" stroke="#FFFFFF" strokeWidth={6} strokeLinecap="round" opacity={0.3} />
 			</g>
 			{grow > 0.3
 				? [-1, 1].map((sg) => (
-						<path key={sg} d={`M${px + sg * (rx + 52)} ${py - 18} L${px + sg * (rx + 16)} ${py} L${px + sg * (rx + 52)} ${py + 18} Z`} fill={N} opacity={(grow - 0.3) / 0.7} transform={`translate(${sg * 6 * Math.sin(frame / 4)} 0)`} />
+						<path key={sg} d={`M${px + sg * 120} ${py - 36} L${px + sg * 84} ${py - 20} L${px + sg * 120} ${py - 4} Z`} fill={N} opacity={(grow - 0.3) / 0.7} transform={`translate(${sg * 6 * Math.sin(frame / 4)} 0)`} />
 					))
 				: null}
 			{tumor > 0 ? (
-				<g transform={`translate(${PELVIS.tumor[0]} ${PELVIS.tumor[1]}) scale(${tumor})`} filter={url('sh')}>
-					<path d="M-34 -6 Q-36 -30 -14 -32 Q-2 -42 14 -32 Q32 -30 30 -12 Q44 4 30 20 Q22 38 2 34 Q-14 42 -26 28 Q-44 16 -34 -6 Z" fill={url('tum')} stroke={mix(N, LPI.pink, 0.2)} strokeWidth={3} />
+				<g transform={`translate(${PELVIS.tumor[0]} ${PELVIS.tumor[1]}) scale(${tumor * 0.75})`} filter={url('sh')}>
+					<path d="M-34 -6 Q-36 -30 -14 -32 Q-2 -42 14 -32 Q32 -30 30 -12 Q44 4 30 20 Q22 38 2 34 Q-14 42 -26 28 Q-44 16 -34 -6 Z" fill={url('tum')} stroke="#2A1430" strokeWidth={3} />
 					{[[-14, -12, 7], [8, -18, 6], [16, 8, 7], [-10, 14, 6], [2, -2, 5]].map(([x, y, r], i) => (
 						<g key={i}>
-							<circle cx={x} cy={y} r={r} fill={mixA(LPI.pink, 0.85)} />
-							<circle cx={x + 1} cy={y + 1} r={r * 0.4} fill={N} />
+							<circle cx={x} cy={y} r={r} fill="#C98BD6" />
+							<circle cx={x + 1} cy={y + 1} r={r * 0.4} fill="#2A1430" />
 						</g>
 					))}
 				</g>
@@ -525,25 +553,23 @@ export const Pelvis: React.FC<{
 				? [[-1, -1], [-1, 0.4], [1, -0.6], [0.6, 1], [-0.3, 1]].map(([dx, dy], i) => {
 						const k = Math.min(1, spread * 1.3 - i * 0.06);
 						if (k <= 0) return null;
-						return <circle key={i} cx={PELVIS.tumor[0] + dx * 210 * k} cy={PELVIS.tumor[1] + dy * 210 * k} r={11} fill={url('tum')} stroke={LPI.pink} strokeWidth={4} opacity={1 - 0.3 * k} />;
+						return <circle key={i} cx={PELVIS.tumor[0] + dx * 200 * k} cy={PELVIS.tumor[1] + dy * 200 * k} r={11} fill={url('tum')} stroke="#C98BD6" strokeWidth={4} opacity={1 - 0.3 * k} />;
 					})
 				: null}
 			{/* urètre */}
-			{urethraGlow > 0 ? <path d={URE} fill="none" stroke={alpha(LPI.blue, 0.5 * urethraGlow)} strokeWidth={lumen + 34} strokeLinecap="round" strokeLinejoin="round" filter={url('soft')} /> : null}
-			<path d={URE} fill="none" stroke={mixA(N, 0.75)} strokeWidth={lumen + 12} strokeLinecap="round" strokeLinejoin="round" />
-			<path d={URE} fill="none" stroke={mixA(LPI.pink, 0.95)} strokeWidth={lumen + 6} strokeLinecap="round" strokeLinejoin="round" />
-			<path d={URE} fill="none" stroke={LPI.paper} strokeWidth={lumen} strokeLinecap="round" strokeLinejoin="round" />
+			{urethraGlow > 0 ? <path d={URE} fill="none" stroke={alpha(LPI.blue, 0.55 * urethraGlow)} strokeWidth={lumen + 34} strokeLinecap="round" strokeLinejoin="round" filter={url('soft')} /> : null}
+			<path d={URE} fill="none" stroke={A.urethra} strokeWidth={lumen + 8} strokeLinecap="round" strokeLinejoin="round" />
+			<path d={URE} fill="none" stroke="#D9576B" strokeWidth={lumen} strokeLinecap="round" strokeLinejoin="round" />
 			{drops.map((i) => {
 				const t = (((frame * 0.012 * speed + i / 7) % 1) + 1) % 1;
 				const [x, y] = URETHRA.at(t);
-				return <circle key={i} cx={x} cy={y} r={Math.max(3, lumen * 0.42)} fill={LPI.blue} opacity={flow} />;
+				return <circle key={i} cx={x} cy={y} r={Math.max(3, lumen * 0.5)} fill={A.urine} stroke="#C9A22A" strokeWidth={1.5} opacity={flow} />;
 			})}
 			{needle > 0 ? (
 				<g filter={url('sh')}>
-					<line x1={360} y1={840} x2={360 + (PELVIS.prostate[0] - 10 - 360) * needle} y2={840 + (PELVIS.prostate[1] + 10 - 840) * needle} stroke={mixA(N, 0.9)} strokeWidth={7} strokeLinecap="round" />
-					<line x1={360} y1={840} x2={360 + (PELVIS.prostate[0] - 10 - 360) * needle} y2={840 + (PELVIS.prostate[1] + 10 - 840) * needle} stroke={LPI.paper} strokeWidth={2.5} strokeLinecap="round" />
-					<rect x={326} y={836} width={68} height={74} rx={16} fill={url('glove')} stroke={mixA(N, 0.75)} strokeWidth={4} />
-					<rect x={340} y={854} width={40} height={10} rx={5} fill={mixA(LPI.blue, 0.6)} />
+					<line x1={326} y1={660} x2={326 + (px - 36 - 326) * needle} y2={660 + (py + 18 - 660) * needle} stroke="#5E6B78" strokeWidth={6} strokeLinecap="round" />
+					<line x1={326} y1={660} x2={326 + (px - 36 - 326) * needle} y2={660 + (py + 18 - 660) * needle} stroke={A.steel} strokeWidth={2.5} strokeLinecap="round" />
+					<rect x={296} y={656} width={56} height={84} rx={16} fill={url('glove')} stroke="#3F6E9E" strokeWidth={3} />
 				</g>
 			) : null}
 		</svg>

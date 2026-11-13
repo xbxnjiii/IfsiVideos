@@ -131,7 +131,7 @@ export const Hook: React.FC = () => {
 				{/* loupe « rayons X » sur le bas-ventre : la vessie et la prostate */}
 				{lens > 0.01 && manX !== null ? (
 					<div style={{position: 'absolute', left: belly.x - 120, top: belly.y - 120, width: 240, height: 240, borderRadius: 120, overflow: 'hidden', border: `8px solid ${LPI.paper}`, boxShadow: `0 0 40px ${alpha(LPI.sky, 0.8)}`, background: alpha(LPI.navy, 0.85), transform: `scale(${lens})`}}>
-						<div style={{position: 'absolute', left: -78, top: -74}}>
+						<div style={{position: 'absolute', left: -88, top: -22}}>
 							<Pelvis width={360} body={false} fill={0.8} glow={fadeIn(frame, PROST - 2, 6)} />
 						</div>
 					</div>

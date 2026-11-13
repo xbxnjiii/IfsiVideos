@@ -391,7 +391,16 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   peau, graisse, muscle grand droit, anses d'intestin, sacrum en vertèbres, symphyse pubienne, vessie à paroi plissée +
   uretère, vésicule séminale, prostate avec capsule / zone de transition (qui grossit dans l'adénome) / zone
   périphérique (où naît la tumeur) / lobules, rectum avec plis et sphincter, verge ; dégradés et ombres douces, palette
-  de la marque) ; cellules ombrées. Puis, sur un exemple fourni (schéma de manuel « L'appareil génital masculin »), **`Pelvis` refait en vrai schéma de l'appareil masculin** (coupe de profil classique : colonne + sacrum, intestin, vessie + uretère, vésicule séminale, prostate, rectum jusqu'à l'anus, pubis, verge avec corps caverneux / spongieux / gland, bourse + testicule + épididyme, canal déférent qui remonte au-dessus de la vessie jusqu'à la prostate ; l'urine coule jusqu'au bout de la verge), dessiné par nous (pas copié), une teinte de la marque par organe. Pour les prochains organes : partir de la disposition d'un schéma de manuel. **Parler au spectateur pour la rétention** (demandé) : « tu » pour les sujets qui
+  de la marque) ; cellules ombrées. Puis, sur un exemple fourni (schéma de manuel « L'appareil génital masculin »), **`Pelvis` refait en vrai schéma de l'appareil masculin** (coupe de profil classique : colonne + sacrum, intestin, vessie + uretère, vésicule séminale, prostate, rectum jusqu'à l'anus, pubis, verge avec corps caverneux / spongieux / gland, bourse + testicule + épididyme, canal déférent qui remonte au-dessus de la vessie jusqu'à la prostate ; l'urine coule jusqu'au bout de la verge), dessiné par nous (pas copié), une teinte de la marque par organe. Pour les prochains organes : partir de la disposition d'un schéma de manuel.
+  **Règle des schémas d'anatomie (demandée, v3 de `Pelvis`)** : des schémas 2D **réalistes comme dans les cours d'IFSI /
+  de médecine** (on doit identifier chaque organe et chaque os), on peut garder une touche cartoon (aplats, dégradés,
+  ombres douces) et des **couleurs de manuel** (`ANAT` dans `prostate.tsx` : peau chair, graisse jaune, os blanc cassé,
+  muscle et rectum rouges, vessie orange, urine jaune, prostate violette, vésicule séminale saumon, corps caverneux violet
+  clair, corps spongieux / gland roses, testicule blanc ; **exception à la palette, validée** par le propriétaire). Formes
+  vraies (prostate en cône inversé sous la vessie, sacrum courbe, rectum qui suit le sacrum puis canal anal, gland plus
+  large que la tige avec couronne et méat…). **Cadrer sur ce dont on parle** (ici la prostate et ses voisins : pas de
+  cuisse) et montrer correctement les éléments du corps autour (péritoine, diaphragme uro-génital, symphyse, canal
+  déférent…). **Parler au spectateur pour la rétention** (demandé) : « tu » pour les sujets qui
   concernent tout le monde ; pour un sujet qui ne touche pas directement le public (étudiants infirmiers, jeunes), passer
   par un proche : ici **« ton père »** (« …ton père se lève pour aller aux toilettes… Et il te dit : c'est l'âge… »,
   chute « Alors, va lui en parler : à partir de cinquante ans… »). Ne jamais promettre un diagnostic faux pour faire peur

@@ -613,7 +613,8 @@ Briques « cancer de la prostate » (vidéo n° 49). Mise en situation réaliste
 - `Bedroom` — La chambre la nuit, plein cadre 1080 × 1920 (vraies couleurs).
 - `PELVIS` — Points du bassin (repère 800 × 900) pour poser étiquettes et loupes.
 - `pelvisPt` — Convertit un point du bassin en pixels pour un dessin posé en (left, top) sur `W` pixels de large.
-- `Pelvis` — Appareil génital et urinaire de l'homme, coupe de profil (face vers la droite), dessiné comme un schéma de manuel (demandé : « vraiment le schéma de l'appareil masculin ») : colonne et sacrum, intestin, vessie (paroi plissée, uretère,…
+- `ANAT` — Vraies couleurs du schéma d'anatomie (exception à la palette, demandée : « qu'on distingue bien l'appareil génital »).
+- `Pelvis` — Petit bassin de l'homme en coupe sagittale (face vers la droite), dessiné comme un schéma de cours d'IFSI / de médecine, en vraies couleurs (`ANAT`), cadré sur la prostate : 5e vertèbre lombaire, sacrum et coccyx, rectum (ampoule, canal…
 - `Chestnut` — Châtaigne (vraies couleurs, repère 200 × 200) : la taille de la prostate.
 - `CellField` — Champ de cellules (repère 900 × 640) : des cellules saines (bleu clair) ; `k` 0 → 1 : les cellules cancéreuses (rose, noyau bleu nuit irrégulier) se multiplient depuis le centre et poussent les autres ; `split` : la cellule du centre se…
 - `BonePain` — Os qui fait mal (repère 300 × 200) : os + éclairs de douleur roses qui clignotent (`pain` 0 → 1).
