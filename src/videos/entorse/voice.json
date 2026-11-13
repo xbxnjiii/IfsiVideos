@@ -1,693 +1,693 @@
 {
- "voice": "voix.wav (tts_voix.py)",
- "duration": 40.43,
+ "voice": "pad-entorse.wav",
+ "duration": 41.825,
  "sections": [
   {
    "id": "intro",
-   "start": 0.048,
-   "end": 6.42
+   "start": 0.0,
+   "end": 7.675
   },
   {
    "id": "idees",
-   "start": 7.355,
-   "end": 14.305
+   "start": 8.476,
+   "end": 15.477
   },
   {
    "id": "methode",
-   "start": 15.276,
-   "end": 22.376
+   "start": 16.294,
+   "end": 23.92
   },
   {
    "id": "suite",
-   "start": 23.374,
-   "end": 29.611
+   "start": 24.729,
+   "end": 30.679
   },
   {
    "id": "consulter",
-   "start": 30.57,
-   "end": 36.513
+   "start": 31.482,
+   "end": 38.132
   },
   {
    "id": "fin",
-   "start": 37.502,
-   "end": 40.098
+   "start": 38.948,
+   "end": 41.8
   }
  ],
  "words": [
   {
    "text": "Petit",
-   "start": 0.048,
-   "end": 0.288
+   "start": 0.0,
+   "end": 0.42
   },
   {
    "text": "footing",
-   "start": 0.288,
-   "end": 0.625
+   "start": 0.42,
+   "end": 0.66
   },
   {
    "text": "du",
-   "start": 0.625,
-   "end": 0.721
+   "start": 0.66,
+   "end": 0.88
   },
   {
    "text": "matin,",
-   "start": 0.721,
-   "end": 1.142
+   "start": 0.88,
+   "end": 1.2
   },
   {
    "text": "au",
-   "start": 1.442,
-   "end": 1.478
+   "start": 1.5,
+   "end": 1.66
   },
   {
    "text": "parc…",
-   "start": 1.478,
-   "end": 1.851
+   "start": 1.66,
+   "end": 2.0
   },
   {
    "text": "et",
-   "start": 2.26,
-   "end": 2.296
+   "start": 2.44,
+   "end": 2.54
   },
   {
    "text": "là,",
-   "start": 2.296,
-   "end": 2.512
+   "start": 2.54,
+   "end": 2.84
   },
   {
    "text": "ton",
-   "start": 2.8,
-   "end": 2.897
+   "start": 2.94,
+   "end": 3.06
   },
   {
    "text": "pied",
-   "start": 2.897,
-   "end": 3.041
+   "start": 3.06,
+   "end": 3.26
   },
   {
    "text": "se",
-   "start": 3.041,
-   "end": 3.161
+   "start": 3.26,
+   "end": 3.58
   },
   {
    "text": "tord",
-   "start": 3.161,
-   "end": 3.365
+   "start": 3.58,
+   "end": 3.72
   },
   {
    "text": "sur",
-   "start": 3.365,
-   "end": 3.486
+   "start": 3.72,
+   "end": 3.92
   },
   {
    "text": "une",
-   "start": 3.486,
-   "end": 3.582
+   "start": 3.92,
+   "end": 4.06
   },
   {
    "text": "racine…",
-   "start": 3.582,
-   "end": 4.026
+   "start": 4.06,
+   "end": 4.54
   },
   {
    "text": "et",
-   "start": 4.207,
-   "end": 4.279
+   "start": 5.02,
+   "end": 5.14
   },
   {
-   "text": "aïe !",
-   "start": 4.291,
-   "end": 4.627
+   "text": "aïe !",
+   "start": 5.14,
+   "end": 5.8
   },
   {
    "text": "Ta",
-   "start": 4.965,
-   "end": 5.122
+   "start": 5.96,
+   "end": 6.14
   },
   {
    "text": "cheville",
-   "start": 5.122,
-   "end": 5.518
+   "start": 6.14,
+   "end": 6.54
   },
   {
    "text": "gonfle",
-   "start": 5.518,
-   "end": 5.819
+   "start": 6.54,
+   "end": 6.94
   },
   {
    "text": "à",
-   "start": 5.819,
-   "end": 5.855
+   "start": 6.94,
+   "end": 7.14
   },
   {
    "text": "vue",
-   "start": 5.855,
-   "end": 5.987
+   "start": 7.14,
+   "end": 7.26
   },
   {
    "text": "d'œil.",
-   "start": 5.987,
-   "end": 6.42
+   "start": 7.26,
+   "end": 7.675
   },
   {
    "text": "Premier",
-   "start": 7.355,
-   "end": 7.625
+   "start": 8.476,
+   "end": 8.78
   },
   {
-   "text": "réflexe :",
-   "start": 7.625,
-   "end": 8.262
+   "text": "réflexe :",
+   "start": 8.78,
+   "end": 9.46
   },
   {
    "text": "tu",
-   "start": 8.532,
-   "end": 8.654
+   "start": 9.54,
+   "end": 9.74
   },
   {
    "text": "arrives",
-   "start": 8.654,
-   "end": 8.912
+   "start": 9.74,
+   "end": 9.98
   },
   {
    "text": "à",
-   "start": 8.912,
-   "end": 8.961
+   "start": 9.98,
+   "end": 10.12
   },
   {
    "text": "bouger",
-   "start": 8.961,
-   "end": 9.193
+   "start": 10.12,
+   "end": 10.3
   },
   {
    "text": "le",
-   "start": 9.194,
-   "end": 9.279
+   "start": 10.3,
+   "end": 10.5
   },
   {
    "text": "pied,",
-   "start": 9.279,
-   "end": 9.635
+   "start": 10.5,
+   "end": 10.64
   },
   {
    "text": "donc",
-   "start": 9.929,
-   "end": 10.076
+   "start": 10.86,
+   "end": 11.12
   },
   {
    "text": "ce",
-   "start": 10.076,
-   "end": 10.162
+   "start": 11.12,
+   "end": 11.28
   },
   {
    "text": "n'est",
-   "start": 10.162,
-   "end": 10.247
+   "start": 11.28,
+   "end": 11.38
   },
   {
    "text": "pas",
-   "start": 10.247,
-   "end": 10.358
+   "start": 11.38,
+   "end": 11.54
   },
   {
-   "text": "cassé ?",
-   "start": 10.358,
-   "end": 10.811
+   "text": "cassé ?",
+   "start": 11.54,
+   "end": 12.04
   },
   {
-   "text": "Faux !",
-   "start": 11.143,
-   "end": 11.523
+   "text": "Faux !",
+   "start": 12.3,
+   "end": 12.62
   },
   {
    "text": "On",
-   "start": 11.854,
-   "end": 11.988
+   "start": 12.86,
+   "end": 12.98
   },
   {
    "text": "peut",
-   "start": 11.988,
-   "end": 12.099
+   "start": 12.98,
+   "end": 13.32
   },
   {
    "text": "très",
-   "start": 12.099,
-   "end": 12.295
+   "start": 13.32,
+   "end": 13.6
   },
   {
    "text": "bien",
-   "start": 12.295,
-   "end": 12.466
+   "start": 13.6,
+   "end": 13.74
   },
   {
    "text": "bouger",
-   "start": 12.466,
-   "end": 12.687
+   "start": 13.74,
+   "end": 14.02
   },
   {
    "text": "le",
-   "start": 12.687,
-   "end": 12.773
+   "start": 14.02,
+   "end": 14.2
   },
   {
    "text": "pied…",
-   "start": 12.773,
-   "end": 13.128
+   "start": 14.2,
+   "end": 14.44
   },
   {
    "text": "avec",
-   "start": 13.41,
-   "end": 13.667
+   "start": 14.44,
+   "end": 14.86
   },
   {
    "text": "un",
-   "start": 13.667,
-   "end": 13.716
+   "start": 14.86,
+   "end": 15.06
   },
   {
    "text": "os",
-   "start": 13.716,
-   "end": 13.925
+   "start": 15.06,
+   "end": 15.26
   },
   {
    "text": "fêlé.",
-   "start": 13.925,
-   "end": 14.305
+   "start": 15.26,
+   "end": 15.477
   },
   {
    "text": "Le",
-   "start": 15.276,
-   "end": 15.438
+   "start": 16.294,
+   "end": 16.5
   },
   {
    "text": "bon",
-   "start": 15.438,
-   "end": 15.613
+   "start": 16.5,
+   "end": 16.72
   },
   {
    "text": "geste",
-   "start": 15.613,
-   "end": 15.95
+   "start": 16.72,
+   "end": 17.2
   },
   {
    "text": "tient",
-   "start": 15.95,
-   "end": 16.163
+   "start": 17.2,
+   "end": 17.4
   },
   {
    "text": "en",
-   "start": 16.163,
-   "end": 16.238
+   "start": 17.4,
+   "end": 17.64
   },
   {
    "text": "quatre",
-   "start": 16.238,
-   "end": 16.55
+   "start": 17.64,
+   "end": 17.98
   },
   {
    "text": "mots.",
-   "start": 16.55,
-   "end": 16.826
+   "start": 17.98,
+   "end": 18.2
   },
   {
    "text": "La",
-   "start": 17.175,
-   "end": 17.326
+   "start": 18.6,
+   "end": 18.76
   },
   {
-   "text": "glace :",
-   "start": 17.326,
-   "end": 17.838
+   "text": "glace :",
+   "start": 18.76,
+   "end": 19.24
   },
   {
    "text": "quinze",
-   "start": 18.05,
-   "end": 18.288
+   "start": 19.44,
+   "end": 19.64
   },
   {
    "text": "à",
-   "start": 18.288,
-   "end": 18.326
+   "start": 19.64,
+   "end": 19.78
   },
   {
    "text": "vingt",
-   "start": 18.326,
-   "end": 18.451
+   "start": 19.78,
+   "end": 19.96
   },
   {
    "text": "minutes,",
-   "start": 18.451,
-   "end": 18.938
+   "start": 19.96,
+   "end": 20.32
   },
   {
    "text": "toujours",
-   "start": 19.163,
-   "end": 19.463
+   "start": 20.32,
+   "end": 20.8
   },
   {
    "text": "dans",
-   "start": 19.463,
-   "end": 19.563
+   "start": 20.8,
+   "end": 20.98
   },
   {
    "text": "un",
-   "start": 19.563,
-   "end": 19.738
+   "start": 20.98,
+   "end": 21.18
   },
   {
    "text": "linge.",
-   "start": 19.738,
-   "end": 20.151
+   "start": 21.18,
+   "end": 21.48
   },
   {
    "text": "Le",
-   "start": 20.488,
-   "end": 20.675
+   "start": 21.78,
+   "end": 22.02
   },
   {
-   "text": "repos :",
-   "start": 20.675,
-   "end": 21.126
+   "text": "repos :",
+   "start": 22.02,
+   "end": 22.52
   },
   {
    "text": "tu",
-   "start": 21.388,
-   "end": 21.501
+   "start": 22.64,
+   "end": 22.86
   },
   {
    "text": "ne",
-   "start": 21.501,
-   "end": 21.563
+   "start": 22.86,
+   "end": 23.06
   },
   {
    "text": "forces",
-   "start": 21.563,
-   "end": 21.8
+   "start": 23.06,
+   "end": 23.36
   },
   {
    "text": "pas",
-   "start": 21.8,
-   "end": 21.925
+   "start": 23.36,
+   "end": 23.6
   },
   {
    "text": "dessus.",
-   "start": 21.925,
-   "end": 22.376
+   "start": 23.6,
+   "end": 23.92
   },
   {
-   "text": "L'élévation :",
-   "start": 23.374,
-   "end": 24.149
+   "text": "L'élévation :",
+   "start": 24.729,
+   "end": 25.46
   },
   {
    "text": "le",
-   "start": 24.524,
-   "end": 24.587
+   "start": 25.76,
+   "end": 25.92
   },
   {
    "text": "pied",
-   "start": 24.587,
-   "end": 24.749
+   "start": 25.92,
+   "end": 26.1
   },
   {
    "text": "posé",
-   "start": 24.749,
-   "end": 25.024
+   "start": 26.1,
+   "end": 26.56
   },
   {
    "text": "plus",
-   "start": 25.024,
-   "end": 25.224
+   "start": 26.56,
+   "end": 26.78
   },
   {
    "text": "haut",
-   "start": 25.224,
-   "end": 25.274
+   "start": 26.78,
+   "end": 26.84
   },
   {
    "text": "que",
-   "start": 25.274,
-   "end": 25.387
+   "start": 26.84,
+   "end": 27.0
   },
   {
    "text": "la",
-   "start": 25.387,
-   "end": 25.512
+   "start": 27.0,
+   "end": 27.24
   },
   {
    "text": "hanche.",
-   "start": 25.512,
-   "end": 25.962
+   "start": 27.24,
+   "end": 27.54
   },
   {
    "text": "Et",
-   "start": 26.299,
-   "end": 26.424
+   "start": 27.54,
+   "end": 27.94
   },
   {
    "text": "la",
-   "start": 26.424,
-   "end": 26.512
+   "start": 27.94,
+   "end": 28.16
   },
   {
-   "text": "contention :",
-   "start": 26.512,
-   "end": 27.174
+   "text": "contention :",
+   "start": 28.16,
+   "end": 28.72
   },
   {
    "text": "une",
-   "start": 27.587,
-   "end": 27.687
+   "start": 29.08,
+   "end": 29.16
   },
   {
    "text": "bande",
-   "start": 27.687,
-   "end": 27.912
+   "start": 29.16,
+   "end": 29.34
   },
   {
    "text": "élastique,",
-   "start": 27.912,
-   "end": 28.524
+   "start": 29.34,
+   "end": 30.06
   },
   {
    "text": "sans",
-   "start": 28.787,
-   "end": 28.962
+   "start": 30.06,
+   "end": 30.3
   },
   {
    "text": "trop",
-   "start": 28.962,
-   "end": 29.137
+   "start": 30.3,
+   "end": 30.5
   },
   {
    "text": "serrer.",
-   "start": 29.137,
-   "end": 29.611
+   "start": 30.5,
+   "end": 30.679
   },
   {
    "text": "Mais",
-   "start": 30.57,
-   "end": 30.754
+   "start": 31.482,
+   "end": 31.64
   },
   {
    "text": "si",
-   "start": 30.754,
-   "end": 30.876
+   "start": 31.64,
+   "end": 31.8
   },
   {
    "text": "tu",
-   "start": 30.876,
-   "end": 30.986
+   "start": 31.8,
+   "end": 31.9
   },
   {
    "text": "ne",
-   "start": 30.986,
-   "end": 31.023
+   "start": 31.9,
+   "end": 32.02
   },
   {
    "text": "peux",
-   "start": 31.023,
-   "end": 31.109
+   "start": 32.02,
+   "end": 32.18
   },
   {
    "text": "pas",
-   "start": 31.109,
-   "end": 31.231
+   "start": 32.18,
+   "end": 32.3
   },
   {
    "text": "faire",
-   "start": 31.232,
-   "end": 31.415
+   "start": 32.3,
+   "end": 32.46
   },
   {
    "text": "quatre",
-   "start": 31.415,
-   "end": 31.722
+   "start": 32.46,
+   "end": 32.82
   },
   {
    "text": "pas,",
-   "start": 31.722,
-   "end": 31.942
+   "start": 32.82,
+   "end": 33.08
   },
   {
    "text": "si",
-   "start": 32.31,
-   "end": 32.42
+   "start": 33.4,
+   "end": 33.46
   },
   {
    "text": "ça",
-   "start": 32.42,
-   "end": 32.543
+   "start": 33.46,
+   "end": 33.62
   },
   {
    "text": "fait",
-   "start": 32.543,
-   "end": 32.665
+   "start": 33.62,
+   "end": 33.82
   },
   {
    "text": "mal",
-   "start": 32.665,
-   "end": 32.861
+   "start": 33.82,
+   "end": 34.04
   },
   {
    "text": "quand",
-   "start": 32.861,
-   "end": 32.972
+   "start": 34.04,
+   "end": 34.24
   },
   {
    "text": "on",
-   "start": 32.972,
-   "end": 33.082
+   "start": 34.24,
+   "end": 34.44
   },
   {
    "text": "appuie",
-   "start": 33.082,
-   "end": 33.388
+   "start": 34.44,
+   "end": 34.68
   },
   {
    "text": "sur",
-   "start": 33.388,
-   "end": 33.548
+   "start": 34.68,
+   "end": 34.82
   },
   {
    "text": "l'os",
-   "start": 33.548,
-   "end": 33.682
+   "start": 34.82,
+   "end": 34.96
   },
   {
    "text": "de",
-   "start": 33.682,
-   "end": 33.756
+   "start": 34.96,
+   "end": 35.16
   },
   {
    "text": "la",
-   "start": 33.756,
-   "end": 33.842
+   "start": 35.16,
+   "end": 35.32
   },
   {
    "text": "cheville,",
-   "start": 33.842,
-   "end": 34.283
+   "start": 35.32,
+   "end": 35.7
   },
   {
    "text": "ou",
-   "start": 34.663,
-   "end": 34.7
+   "start": 35.96,
+   "end": 36.08
   },
   {
    "text": "si",
-   "start": 34.7,
-   "end": 34.822
+   "start": 36.08,
+   "end": 36.18
   },
   {
    "text": "elle",
-   "start": 34.822,
-   "end": 34.883
+   "start": 36.18,
+   "end": 36.28
   },
   {
    "text": "est",
-   "start": 34.883,
-   "end": 34.92
+   "start": 36.28,
+   "end": 36.54
   },
   {
-   "text": "déformée :",
-   "start": 34.92,
-   "end": 35.496
+   "text": "déformée :",
+   "start": 36.54,
+   "end": 37.16
   },
   {
    "text": "il",
-   "start": 35.717,
-   "end": 35.839
+   "start": 37.44,
+   "end": 37.5
   },
   {
    "text": "faut",
-   "start": 35.839,
-   "end": 35.962
+   "start": 37.5,
+   "end": 37.68
   },
   {
    "text": "une",
-   "start": 35.962,
-   "end": 36.048
+   "start": 37.68,
+   "end": 37.82
   },
   {
    "text": "radio.",
-   "start": 36.048,
-   "end": 36.513
+   "start": 37.82,
+   "end": 38.132
   },
   {
    "text": "Et",
-   "start": 37.502,
-   "end": 37.574
+   "start": 38.948,
+   "end": 39.12
   },
   {
    "text": "au",
-   "start": 37.574,
-   "end": 37.61
+   "start": 39.12,
+   "end": 39.24
   },
   {
    "text": "prochain",
-   "start": 37.61,
-   "end": 37.935
+   "start": 39.24,
+   "end": 39.5
   },
   {
    "text": "footing…",
-   "start": 37.935,
-   "end": 38.452
+   "start": 39.5,
+   "end": 39.92
   },
   {
    "text": "regarde",
-   "start": 38.824,
-   "end": 39.125
+   "start": 40.46,
+   "end": 40.66
   },
   {
    "text": "aussi",
-   "start": 39.125,
-   "end": 39.413
+   "start": 40.66,
+   "end": 40.94
   },
   {
    "text": "où",
-   "start": 39.413,
-   "end": 39.449
+   "start": 40.94,
+   "end": 41.04
   },
   {
    "text": "tu",
-   "start": 39.449,
-   "end": 39.581
+   "start": 41.04,
+   "end": 41.2
   },
   {
    "text": "mets",
-   "start": 39.581,
-   "end": 39.666
+   "start": 41.2,
+   "end": 41.28
   },
   {
    "text": "les",
-   "start": 39.666,
-   "end": 39.738
+   "start": 41.28,
+   "end": 41.5
   },
   {
-   "text": "pieds !",
-   "start": 39.738,
-   "end": 40.098
+   "text": "pieds !",
+   "start": 41.5,
+   "end": 41.8
   }
  ]
 }

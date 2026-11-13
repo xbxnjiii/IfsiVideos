@@ -320,7 +320,7 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   ongle, plis de flexion, empreinte) pour la montrer ; le reste de la vidéo est côté pulpe.
   Briques `src/brand/splinter.tsx`. Voix : « ça rougit, ça gonfle » → « la peau devient rouge, gonflée ». Storyboard
   `docs/lpi/storyboard-echarde.md`.
-- `Tique` (n° 42, ≈ 53 s, voix Laura après validation (995 crédits), thème libre) : accroche refaite à la demande : « Tu te balades en forêt…
+- `Tique` (n° 42, ≈ 53 s, voix Laura après validation (995 crédits + 283 pour refaire la partie `methode` seule, recollée dans la voix), thème libre) : accroche refaite à la demande : « Tu te balades en forêt…
   et quelque chose tombe sur ton bras. C'est quoi ? » (homme en t-shirt et jean sur un sentier, `ForestBg` de
   `src/brand/forest.tsx`, `Walker` `tee` + `jeans` ; la tique tombe d'une branche sur l'avant-bras, la caméra plonge sur le
   bras) puis la peau en très gros plan (plus de poils, demandé), le point noir que le doigt frotte, zoom ×7 : une tique ;
@@ -329,11 +329,11 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   peau » (profil : le rostre planté entre dans le cran), puis on **vérifie qu'elle est entière, avec
   sa tête** (loupe, demandé) ; forêt **réaliste : feuillage vert, buissons, herbe**, la tique tombe du feuillage d'un arbre (pas de branche isolée) (exception à la palette demandée, comme
   le bois brun) ; idées reçues barrées (alcool, la gratter, l'enlever avec
-  les doigts, demandé : elle recrache des microbes), tire-tique (dessous, on tourne, elle sort avec sa tête), désinfecter / se laver les mains / noter la date,
+  les doigts, demandé : elle recrache des microbes), tire-tique (dessous, on tourne **dans le sens inverse des aiguilles d'une montre** (demandé, flèche ↺), elle sort avec sa tête), désinfecter / se laver les mains / noter la date,
   surveiller un mois (plaque rouge qui s'étend, fièvre → médecin, maladie de Lyme), chute (manches longues, pantalon,
   inspection). Briques `src/brand/tick.tsx` (`SkinG` peau en gros plan avec `ring` érythème migrant, `TickG`, `TickHookG`).
   Storyboard `docs/lpi/storyboard-tique.md`.
-- `Saignement-Nez` (n° 43, ≈ 52 s, voix gratuite d'abord, thème libre) : accroche sans texte (il lit, une goutte de sang
+- `Saignement-Nez` (n° 43, ≈ 59 s, voix Laura après validation (1 127 crédits), thème libre) : accroche sans texte (il lit, une goutte de sang
   tombe sur la page, il bascule la tête en arrière, « ? »), idée reçue en coupe (le sang file dans la gorge : il l'avale,
   nausée, il ne voit plus si ça saigne), bon geste **corrigé à la demande** (assis, tête en avant, **pas de mouchage**,
   on **comprime** (pas « pince ») la partie molle sous l'os **avec un mouchoir ou une compresse, pas les doigts nus**,
@@ -343,8 +343,7 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   `src/brand/nose.tsx` (`HeadSide`). Voix : « Ton nez saigne ! » était entendu « ton essaigne » → « C'est ton nez qui
   saigne ! » ; dans un titre, l'accent ne marche pas sur un mot à trait d'union (« Assieds-\*toi\* » s'affichait tel quel).
   Storyboard `docs/lpi/storyboard-saignement-nez.md`.
-  En attente : le propriétaire fait regarder la vidéo à quelqu'un avant de passer à la voix Laura.
-- `Piqure-Abeille` (n° 44, ≈ 49 s, voix gratuite d'abord, thème libre) : accroche sans texte, voix « Petit pique-nique du
+- `Piqure-Abeille` (n° 44, ≈ 49 s, voix Laura après validation (927 crédits), thème libre) : accroche sans texte, voix « Petit pique-nique du
   dimanche, en famille… et là, une abeille se pose sur ta main… et aïe ! Elle te pique… » (demandée) ; pique-nique refait
   **réaliste** à la demande (herbe, nappe vichy rouge et blanc, panier en osier brun, pomme rouge, sandwich-baguette, jus
   d'orange, fraises, ombres de feuillage ; abeille jaune et noir, main et peau couleur chair, dard brun) ; une
@@ -353,15 +352,14 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   un linge ≈ 10 min, ce qui est normal (rougeur, gonflement, douleur, quelques jours), le 15 (visage / gorge qui gonfle, mal
   à respirer, piqûre dans la bouche), chute « la guêpe ne laisse pas son dard ». Brique `src/brand/bee.tsx`. Voix : « Aïe ! » seul était lu « Rahé », « Ouille ! »
   « Will » → « …sur ta main… et aïe ! » (entendu « et aille », même son). Storyboard `docs/lpi/storyboard-piqure-abeille.md`.
-  En attente (43 et 44) : le propriétaire les fait vérifier avant la voix Laura ; les garder dans le dépôt.
-- `Entorse` (n° 45, ≈ 42 s, voix gratuite d'abord, thème libre) : accroche sans texte réaliste (footing au parc, le pied se
+- `Entorse` (n° 45, ≈ 42 s, voix Laura après validation (794 crédits), thème libre) : accroche sans texte réaliste (footing au parc, le pied se
   tord sur une racine, gros plan sur la cheville : basket, la cheville gonfle et bleuit), idée reçue « je bouge le pied,
   donc pas cassé » (vue radio, péroné fêlé), 4 mots glace (15 – 20 min, dans un linge) · repos · élévation (plus haut que la
   hanche, `LegRest`) · contention (bande en huit, sans trop serrer), radio si 4 pas impossibles / douleur sur l'os / cheville
   déformée, chute (il saute la racine). Brique `src/brand/ankle.tsx` (`AnkleSide`) ; `Walker` a maintenant `skin` (vraie
   couleur de peau). Storyboard `docs/lpi/storyboard-entorse.md`.
 - **Série « les degrés de brûlure »** (n° 46 · 47 · 48, demandée : « une vidéo par degré », contenu fourni par le
-  propriétaire ; voix gratuite d'abord ; chaque vidéo tient seule) : `Brulure-1` (plage : coup de soleil ; épiderme ;
+  propriétaire ; voix Laura après validation : 779 · 1 401 · 936 crédits ; chaque vidéo tient seule) : `Brulure-1` (plage : coup de soleil ; épiderme ;
   rouge, sèche, douloureuse, sans cloque ; 3 – 5 jours sans trace), `Brulure-2` (eau des pâtes ; superficiel : haut du
   derme, rouge, suintant, très douloureux, phlyctènes, ≈ 2 semaines ; profond : derme profond, pâle, cloques molles, peu
   douloureux (nerfs abîmés), > 3 semaines, séquelles, greffe ; chute « très douloureuse = superficiel, presque plus de
@@ -371,8 +369,7 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   (scène `geste` dans chaque vidéo, + `consulter` au 2e degré) : 1er = douche fraîche 15 min, crème hydratante, boire,
   à l'abri du soleil, paracétamol ; 2e = eau tempérée 15 min, retirer bagues / bracelet, ne jamais percer les cloques,
   compresse stérile, médecin (urgence si > moitié de la main, visage, mains, parties intimes) ; 3e = en attendant les
-  secours : arroser à l'eau tempérée selon les conseils du 15, retirer les vêtements qui ne collent pas (jamais ceux qui
-  collent), couvrir la personne. `TapWater` (robinet / `shower`), pictos `CreamIcon`, `GlassIcon`, `SunIcon`, `RingIcon`,
+  secours, **suivre simplement les indications du 15** (simplifié à la demande : plus de consignes détaillées). `TapWater` (robinet / `shower`), pictos `CreamIcon`, `GlassIcon`, `SunIcon`, `RingIcon`,
   `BlisterIcon`, `GauzeIcon`, `PalmIcon`, `ShirtIcon`, `BlanketIcon`, `NoMark`. Brique `src/brand/burnstage.tsx` (`BurnPatch`,
   `CutView`, `BeachTop`, `PastaPour`, `Barbecue`). La vidéo `Brulure` (n° 40, les bons gestes) reste à part.
   Storyboard `docs/lpi/storyboard-brulures-degres.md`.
@@ -397,6 +394,11 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   1. aligner une première fois ;
   2. `python3 scripts/voice/pad_parts.py voix48.wav src/videos/<épisode>/voice.json voix-allongee.wav 0.8` ;
   3. réaligner `voix-allongee.wav`.
+- **Changer une seule partie d'une voix Laura déjà calée** (fait pour la tique) : générer la partie seule (≈ 1 crédit par
+  caractère), couper ses blancs, la mettre au niveau (RMS) de l'ancienne, remplacer le créneau `sections` de la partie dans
+  `public/voix/<épisode>/voix.wav` (les blancs autour restent), puis réaligner tout le wav avec `align_voice.py`.
+- Plusieurs générations lancées d'un coup : ElevenLabs en met une partie en attente (« concurrency limit ») et les relance
+  tout seul, sans rien facturer de plus : il suffit d'attendre.
 - `align_voice.py` remplace les `{affiché|prononcé}` **avant** de découper le texte : un sigle collé à une apostrophe
   (« l'{EVA|É V A}, ») était coupé en faux mots et `at(scène, "l'eva")` plantait le rendu.
 - **`align_voice.py` n'amorce plus Whisper avec le script** (`--prompt` pour le remettre). Avec l'amorce, Whisper avait

@@ -350,7 +350,11 @@ export const Methode: React.FC = () => {
 	const ENTIERE = at('methode', 'entière,');
 	const TETE = at('methode', 'tête.');
 	const slide = lin(frame, GLISSE, PEAU);
-	const spin = 360 * lin(frame, TOURNE, COUP + 14);
+	const SENS = at('methode', 'sens');
+	const spin = -360 * lin(frame, TOURNE, COUP + 14);
+	// flèche ↺ : on tourne dans le sens inverse des aiguilles d'une montre
+	const arrowO = fadeIn(frame, TOURNE - 2, 8) * (1 - lin(frame, DECROCHE - 6, DECROCHE + 4));
+	const arrowDraw = lin(frame, TOURNE - 2, TOURNE + 16);
 	const off = lin(frame, DECROCHE - 2, DECROCHE + 14);
 	const hookIn = lin(frame, TIRE - 4, TIRE + 10);
 	// le crochet arrive par le bas (côté du corps) et passe SOUS la tique ; le fond du V finit contre la tête
@@ -385,6 +389,13 @@ export const Methode: React.FC = () => {
 						<circle cx={500 + jam} cy={tipY - 56} r={82 + 6 * Math.sin(frame / 5)} fill="none" stroke={alpha(N, 0.5)} strokeWidth={3} />
 					</g>
 				) : null}
+				{arrowO > 0.01 ? (
+					<g opacity={arrowO} transform={`rotate(${-40 * lin(frame, TOURNE, COUP + 14)} 500 470)`}>
+						<path d="M790 470 A290 290 0 1 0 500 760" fill="none" stroke={N} strokeWidth={30} strokeLinecap="round" pathLength={1} strokeDasharray={`${arrowDraw} 1`} />
+						<path d="M790 470 A290 290 0 1 0 500 760" fill="none" stroke={LPI.pink} strokeWidth={18} strokeLinecap="round" pathLength={1} strokeDasharray={`${arrowDraw} 1`} />
+						{arrowDraw > 0.95 ? <path d="M548 760 L486 722 L486 798 Z" fill={LPI.pink} stroke={N} strokeWidth={6} strokeLinejoin="round" /> : null}
+					</g>
+				) : null}
 				{off > 0.3 ? <circle cx={500} cy={410} r={14} fill={alpha(LPI.pink, 0.9)} stroke={alpha(N, 0.4)} strokeWidth={2} /> : null}
 				{lens > 0.01 ? (
 					<g transform={`translate(640 250) scale(${lens})`}>
@@ -409,6 +420,11 @@ export const Methode: React.FC = () => {
 			<PointTag at={CRAN} to={COINCE - 6} x={250} y={1560} px={sx(468)} py={sy(tipY - 56)} size={46} tone={LPI.sky}>
 				le cran
 			</PointTag>
+			{frame >= SENS - 4 && frame < COUP - 26 ? (
+				<Note at={SENS - 4} to={COUP - 30} y={1560} size={44} tone={LPI.sky}>
+					↺ sens inverse des aiguilles d'une montre
+				</Note>
+			) : null}
 			{frame >= COUP - 26 && frame < DECROCHE ? (
 				<Note at={COUP - 26} to={DECROCHE - 6} y={1560} size={44} tone={LPI.sky}>
 					sans tirer d'un coup

@@ -1,643 +1,643 @@
 {
- "voice": "voix.wav (tts_voix.py)",
- "duration": 39.734,
+ "voice": "pad-brulure-1.wav",
+ "duration": 40.842,
  "sections": [
   {
    "id": "intro",
-   "start": 0.049,
-   "end": 5.494
+   "start": 0.0,
+   "end": 6.72
   },
   {
    "id": "couche",
-   "start": 6.457,
-   "end": 11.645
+   "start": 7.57,
+   "end": 12.515
   },
   {
    "id": "aspect",
-   "start": 12.661,
-   "end": 18.173
+   "start": 13.313,
+   "end": 19.08
   },
   {
    "id": "evolution",
-   "start": 19.124,
-   "end": 22.874
+   "start": 19.885,
+   "end": 23.88
   },
   {
    "id": "geste",
-   "start": 23.852,
-   "end": 34.877
+   "start": 24.725,
+   "end": 35.968
   },
   {
    "id": "fin",
-   "start": 35.858,
-   "end": 39.404
+   "start": 36.818,
+   "end": 40.7
   }
  ],
  "words": [
   {
    "text": "Toute",
-   "start": 0.049,
-   "end": 0.241
+   "start": 0.0,
+   "end": 0.34
   },
   {
    "text": "la",
-   "start": 0.241,
-   "end": 0.325
+   "start": 0.34,
+   "end": 0.56
   },
   {
    "text": "journée",
-   "start": 0.326,
-   "end": 0.554
+   "start": 0.56,
+   "end": 0.74
   },
   {
    "text": "à",
-   "start": 0.554,
-   "end": 0.59
+   "start": 0.74,
+   "end": 0.9
   },
   {
    "text": "la",
-   "start": 0.59,
-   "end": 0.686
+   "start": 0.9,
+   "end": 1.12
   },
   {
    "text": "plage…",
-   "start": 0.686,
-   "end": 1.095
+   "start": 1.12,
+   "end": 1.74
   },
   {
    "text": "et",
-   "start": 1.275,
-   "end": 1.299
+   "start": 1.92,
+   "end": 2.0
   },
   {
    "text": "le",
-   "start": 1.299,
-   "end": 1.395
+   "start": 2.0,
+   "end": 2.28
   },
   {
    "text": "soir,",
-   "start": 1.395,
-   "end": 1.792
+   "start": 2.28,
+   "end": 2.58
   },
   {
    "text": "tes",
-   "start": 2.068,
-   "end": 2.152
+   "start": 2.78,
+   "end": 2.96
   },
   {
    "text": "épaules",
-   "start": 2.152,
-   "end": 2.465
+   "start": 2.96,
+   "end": 3.24
   },
   {
    "text": "sont",
-   "start": 2.465,
-   "end": 2.621
+   "start": 3.24,
+   "end": 3.52
   },
   {
    "text": "rouges,",
-   "start": 2.621,
-   "end": 3.018
+   "start": 3.52,
+   "end": 4.04
   },
   {
    "text": "brûlantes,",
-   "start": 3.21,
-   "end": 3.703
+   "start": 4.22,
+   "end": 4.64
   },
   {
    "text": "et",
-   "start": 4.027,
-   "end": 4.051
+   "start": 4.64,
+   "end": 4.94
   },
   {
    "text": "le",
-   "start": 4.051,
-   "end": 4.136
+   "start": 4.94,
+   "end": 5.18
   },
   {
    "text": "moindre",
-   "start": 4.136,
-   "end": 4.436
+   "start": 5.18,
+   "end": 5.58
   },
   {
    "text": "contact",
-   "start": 4.436,
-   "end": 4.869
+   "start": 5.58,
+   "end": 5.96
   },
   {
    "text": "te",
-   "start": 4.869,
-   "end": 4.989
+   "start": 5.96,
+   "end": 6.18
   },
   {
    "text": "fait",
-   "start": 4.989,
-   "end": 5.109
+   "start": 6.18,
+   "end": 6.38
   },
   {
    "text": "mal.",
-   "start": 5.109,
-   "end": 5.494
+   "start": 6.38,
+   "end": 6.72
   },
   {
    "text": "C'est",
-   "start": 6.457,
-   "end": 6.607
+   "start": 7.57,
+   "end": 7.82
   },
   {
    "text": "une",
-   "start": 6.607,
-   "end": 6.794
+   "start": 7.82,
+   "end": 7.98
   },
   {
    "text": "brûlure",
-   "start": 6.794,
-   "end": 7.232
+   "start": 7.98,
+   "end": 8.28
   },
   {
    "text": "du",
-   "start": 7.232,
-   "end": 7.332
+   "start": 8.28,
+   "end": 8.56
   },
   {
    "text": "premier",
-   "start": 7.332,
-   "end": 7.632
+   "start": 8.56,
+   "end": 8.78
   },
   {
    "text": "degré.",
-   "start": 7.632,
-   "end": 8.107
+   "start": 8.78,
+   "end": 9.18
   },
   {
    "text": "Seul",
-   "start": 8.444,
-   "end": 8.732
+   "start": 9.56,
+   "end": 9.68
   },
   {
    "text": "l'épiderme",
-   "start": 8.732,
-   "end": 9.232
+   "start": 9.68,
+   "end": 10.18
   },
   {
    "text": "est",
-   "start": 9.232,
-   "end": 9.27
+   "start": 10.18,
+   "end": 10.36
   },
   {
-   "text": "touché :",
-   "start": 9.27,
-   "end": 9.744
+   "text": "touché :",
+   "start": 10.36,
+   "end": 10.8
   },
   {
    "text": "la",
-   "start": 10.119,
-   "end": 10.207
+   "start": 11.0,
+   "end": 11.18
   },
   {
    "text": "couche",
-   "start": 10.207,
-   "end": 10.482
+   "start": 11.18,
+   "end": 11.38
   },
   {
    "text": "tout",
-   "start": 10.482,
-   "end": 10.595
+   "start": 11.38,
+   "end": 11.58
   },
   {
    "text": "en",
-   "start": 10.595,
-   "end": 10.72
+   "start": 11.58,
+   "end": 11.8
   },
   {
    "text": "surface",
-   "start": 10.72,
-   "end": 11.132
+   "start": 11.8,
+   "end": 12.04
   },
   {
    "text": "de",
-   "start": 11.132,
-   "end": 11.207
+   "start": 12.04,
+   "end": 12.24
   },
   {
    "text": "la",
-   "start": 11.207,
-   "end": 11.307
+   "start": 12.24,
+   "end": 12.4
   },
   {
    "text": "peau.",
-   "start": 11.307,
-   "end": 11.645
+   "start": 12.4,
+   "end": 12.515
   },
   {
    "text": "La",
-   "start": 12.661,
-   "end": 12.786
+   "start": 13.313,
+   "end": 13.54
   },
   {
    "text": "peau",
-   "start": 12.786,
-   "end": 12.986
+   "start": 13.54,
+   "end": 13.68
   },
   {
    "text": "est",
-   "start": 12.986,
-   "end": 13.048
+   "start": 13.68,
+   "end": 13.9
   },
   {
    "text": "rouge,",
-   "start": 13.048,
-   "end": 13.473
+   "start": 13.9,
+   "end": 14.28
   },
   {
    "text": "sèche",
-   "start": 13.71,
-   "end": 13.998
+   "start": 14.6,
+   "end": 14.9
   },
   {
    "text": "et",
-   "start": 13.998,
-   "end": 14.036
+   "start": 14.9,
+   "end": 15.12
   },
   {
    "text": "douloureuse…",
-   "start": 14.036,
-   "end": 14.648
+   "start": 15.12,
+   "end": 15.8
   },
   {
    "text": "mais",
-   "start": 14.986,
-   "end": 15.073
+   "start": 16.0,
+   "end": 16.18
   },
   {
    "text": "il",
-   "start": 15.073,
-   "end": 15.16
+   "start": 16.18,
+   "end": 16.3
   },
   {
    "text": "n'y",
-   "start": 15.16,
-   "end": 15.248
+   "start": 16.3,
+   "end": 16.42
   },
   {
    "text": "a",
-   "start": 15.248,
-   "end": 15.298
+   "start": 16.42,
+   "end": 16.54
   },
   {
    "text": "aucune",
-   "start": 15.298,
-   "end": 15.561
+   "start": 16.54,
+   "end": 16.84
   },
   {
    "text": "cloque.",
-   "start": 15.561,
-   "end": 16.048
+   "start": 16.84,
+   "end": 17.34
   },
   {
    "text": "Exactement",
-   "start": 16.386,
-   "end": 17.111
+   "start": 17.8,
+   "end": 18.14
   },
   {
    "text": "comme",
-   "start": 17.111,
-   "end": 17.323
+   "start": 18.14,
+   "end": 18.38
   },
   {
    "text": "un",
-   "start": 17.323,
-   "end": 17.373
+   "start": 18.38,
+   "end": 18.5
   },
   {
    "text": "coup",
-   "start": 17.373,
-   "end": 17.511
+   "start": 18.5,
+   "end": 18.6
   },
   {
    "text": "de",
-   "start": 17.511,
-   "end": 17.623
+   "start": 18.6,
+   "end": 18.74
   },
   {
    "text": "soleil.",
-   "start": 17.623,
-   "end": 18.173
+   "start": 18.74,
+   "end": 19.08
   },
   {
    "text": "Elle",
-   "start": 19.124,
-   "end": 19.32
+   "start": 19.885,
+   "end": 20.08
   },
   {
    "text": "cicatrise",
-   "start": 19.32,
-   "end": 19.822
+   "start": 20.08,
+   "end": 20.58
   },
   {
    "text": "toute",
-   "start": 19.822,
-   "end": 20.031
+   "start": 20.58,
+   "end": 20.88
   },
   {
    "text": "seule,",
-   "start": 20.031,
-   "end": 20.374
+   "start": 20.88,
+   "end": 21.1
   },
   {
    "text": "en",
-   "start": 20.656,
-   "end": 20.692
+   "start": 21.32,
+   "end": 21.48
   },
   {
    "text": "trois",
-   "start": 20.692,
-   "end": 20.901
+   "start": 21.48,
+   "end": 21.64
   },
   {
    "text": "à",
-   "start": 20.901,
-   "end": 20.95
+   "start": 21.64,
+   "end": 21.76
   },
   {
    "text": "cinq",
-   "start": 20.95,
-   "end": 21.146
+   "start": 21.76,
+   "end": 22.0
   },
   {
    "text": "jours,",
-   "start": 21.146,
-   "end": 21.464
+   "start": 22.0,
+   "end": 22.36
   },
   {
    "text": "sans",
-   "start": 21.734,
-   "end": 21.857
+   "start": 22.6,
+   "end": 22.7
   },
   {
    "text": "laisser",
-   "start": 21.857,
-   "end": 22.126
+   "start": 22.7,
+   "end": 23.06
   },
   {
    "text": "aucune",
-   "start": 22.126,
-   "end": 22.347
+   "start": 23.06,
+   "end": 23.5
   },
   {
    "text": "trace.",
-   "start": 22.347,
-   "end": 22.874
+   "start": 23.5,
+   "end": 23.88
   },
   {
    "text": "Le",
-   "start": 23.852,
-   "end": 23.989
+   "start": 24.725,
+   "end": 24.94
   },
   {
    "text": "bon",
-   "start": 23.989,
-   "end": 24.127
+   "start": 24.94,
+   "end": 25.14
   },
   {
-   "text": "geste :",
-   "start": 24.127,
-   "end": 24.589
+   "text": "geste :",
+   "start": 25.14,
+   "end": 25.8
   },
   {
    "text": "une",
-   "start": 25.027,
-   "end": 25.139
+   "start": 25.94,
+   "end": 26.08
   },
   {
    "text": "douche",
-   "start": 25.139,
-   "end": 25.364
+   "start": 26.08,
+   "end": 26.36
   },
   {
    "text": "fraîche,",
-   "start": 25.364,
-   "end": 25.864
+   "start": 26.36,
+   "end": 26.88
   },
   {
    "text": "tout",
-   "start": 26.064,
-   "end": 26.165
+   "start": 26.88,
+   "end": 27.14
   },
   {
    "text": "de",
-   "start": 26.165,
-   "end": 26.214
+   "start": 27.14,
+   "end": 27.24
   },
   {
    "text": "suite,",
-   "start": 26.214,
-   "end": 26.665
+   "start": 27.24,
+   "end": 27.48
   },
   {
    "text": "pendant",
-   "start": 26.902,
-   "end": 27.152
+   "start": 27.48,
+   "end": 27.82
   },
   {
    "text": "quinze",
-   "start": 27.152,
-   "end": 27.415
+   "start": 27.82,
+   "end": 28.1
   },
   {
    "text": "minutes.",
-   "start": 27.415,
-   "end": 27.952
+   "start": 28.1,
+   "end": 28.58
   },
   {
    "text": "Puis",
-   "start": 28.34,
-   "end": 28.465
+   "start": 29.22,
+   "end": 29.3
   },
   {
    "text": "une",
-   "start": 28.465,
-   "end": 28.552
+   "start": 29.3,
+   "end": 29.52
   },
   {
    "text": "crème",
-   "start": 28.552,
-   "end": 28.777
+   "start": 29.52,
+   "end": 29.74
   },
   {
    "text": "hydratante",
-   "start": 28.777,
-   "end": 29.215
+   "start": 29.74,
+   "end": 30.16
   },
   {
    "text": "sur",
-   "start": 29.215,
-   "end": 29.34
+   "start": 30.16,
+   "end": 30.34
   },
   {
    "text": "la",
-   "start": 29.34,
-   "end": 29.439
+   "start": 30.34,
+   "end": 30.58
   },
   {
    "text": "peau,",
-   "start": 29.439,
-   "end": 29.752
+   "start": 30.58,
+   "end": 30.9
   },
   {
    "text": "beaucoup",
-   "start": 30.077,
-   "end": 30.302
+   "start": 31.18,
+   "end": 31.3
   },
   {
    "text": "d'eau",
-   "start": 30.302,
-   "end": 30.414
+   "start": 31.3,
+   "end": 31.52
   },
   {
    "text": "à",
-   "start": 30.414,
-   "end": 30.489
+   "start": 31.52,
+   "end": 31.62
   },
   {
    "text": "boire,",
-   "start": 30.489,
-   "end": 30.889
+   "start": 31.62,
+   "end": 32.02
   },
   {
    "text": "et",
-   "start": 31.189,
-   "end": 31.252
+   "start": 32.02,
+   "end": 32.32
   },
   {
    "text": "on",
-   "start": 31.252,
-   "end": 31.302
+   "start": 32.32,
+   "end": 32.42
   },
   {
    "text": "reste",
-   "start": 31.302,
-   "end": 31.552
+   "start": 32.42,
+   "end": 32.6
   },
   {
    "text": "à",
-   "start": 31.552,
-   "end": 31.577
+   "start": 32.6,
+   "end": 32.72
   },
   {
    "text": "l'abri",
-   "start": 31.577,
-   "end": 31.84
+   "start": 32.72,
+   "end": 32.94
   },
   {
    "text": "du",
-   "start": 31.84,
-   "end": 31.939
+   "start": 32.94,
+   "end": 33.14
   },
   {
    "text": "soleil.",
-   "start": 31.939,
-   "end": 32.465
+   "start": 33.14,
+   "end": 33.76
   },
   {
    "text": "Si",
-   "start": 32.814,
-   "end": 33.027
+   "start": 33.96,
+   "end": 34.06
   },
   {
    "text": "ça",
-   "start": 33.027,
-   "end": 33.152
+   "start": 34.06,
+   "end": 34.24
   },
   {
    "text": "fait",
-   "start": 33.152,
-   "end": 33.277
+   "start": 34.24,
+   "end": 34.4
   },
   {
-   "text": "mal :",
-   "start": 33.277,
-   "end": 33.639
+   "text": "mal :",
+   "start": 34.4,
+   "end": 34.74
   },
   {
    "text": "du",
-   "start": 33.902,
-   "end": 33.989
+   "start": 35.08,
+   "end": 35.24
   },
   {
    "text": "paracétamol.",
-   "start": 33.989,
-   "end": 34.877
+   "start": 35.24,
+   "end": 35.968
   },
   {
    "text": "Premier",
-   "start": 35.858,
-   "end": 36.123
+   "start": 36.818,
+   "end": 37.16
   },
   {
-   "text": "degré :",
-   "start": 36.123,
-   "end": 36.519
+   "text": "degré :",
+   "start": 37.16,
+   "end": 37.56
   },
   {
    "text": "c'est",
-   "start": 36.844,
-   "end": 36.976
+   "start": 38.0,
+   "end": 38.26
   },
   {
    "text": "rouge,",
-   "start": 36.976,
-   "end": 37.373
+   "start": 38.26,
+   "end": 38.58
   },
   {
    "text": "ça",
-   "start": 37.565,
-   "end": 37.697
+   "start": 38.86,
+   "end": 38.96
   },
   {
    "text": "fait",
-   "start": 37.697,
-   "end": 37.817
+   "start": 38.96,
+   "end": 39.16
   },
   {
    "text": "mal…",
-   "start": 37.817,
-   "end": 38.13
+   "start": 39.16,
+   "end": 39.46
   },
   {
    "text": "mais",
-   "start": 38.502,
-   "end": 38.562
+   "start": 39.8,
+   "end": 39.92
   },
   {
    "text": "il",
-   "start": 38.562,
-   "end": 38.647
+   "start": 39.92,
+   "end": 40.04
   },
   {
    "text": "n'y",
-   "start": 38.647,
-   "end": 38.707
+   "start": 40.04,
+   "end": 40.1
   },
   {
    "text": "a",
-   "start": 38.707,
-   "end": 38.743
+   "start": 40.1,
+   "end": 40.16
   },
   {
    "text": "pas",
-   "start": 38.743,
-   "end": 38.851
+   "start": 40.16,
+   "end": 40.32
   },
   {
    "text": "de",
-   "start": 38.851,
-   "end": 38.935
+   "start": 40.32,
+   "end": 40.48
   },
   {
-   "text": "cloque !",
-   "start": 38.935,
-   "end": 39.404
+   "text": "cloque !",
+   "start": 40.48,
+   "end": 40.7
   }
  ]
 }

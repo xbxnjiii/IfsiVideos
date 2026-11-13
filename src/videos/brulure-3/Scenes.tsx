@@ -4,8 +4,8 @@
 // 15, greffe), chute (jamais d'alcool).
 import React from 'react';
 import {AbsoluteFill, Easing, interpolate, useCurrentFrame} from 'remotion';
-import {Big, fadeIn, Flash, PointTag, popAt, RowCard} from '../../brand/bold';
-import {Barbecue, BlanketIcon, BurnPatch, CUT_Y, CutView, NoMark, ShirtIcon, SkinClose, skinClosePt, TapWater} from '../../brand/burnstage';
+import {Big, fadeIn, Flash, PointTag, popAt} from '../../brand/bold';
+import {Barbecue, BurnPatch, CUT_Y, CutView, SkinClose, skinClosePt} from '../../brand/burnstage';
 import {Phone} from '../../brand/devices';
 import {Stamp} from '../../brand/kit';
 import {Sfx} from '../../brand/Sfx';
@@ -189,15 +189,13 @@ export const Gravite: React.FC = () => {
 export const Geste: React.FC = () => {
 	const frame = useCurrentFrame();
 	const SECOURS = at('geste', 'secours :');
-	const ARROSE = at('geste', 'arrose');
-	const TEMPEREE = at('geste', 'tempérée,');
-	const CONSEILS = at('geste', 'conseils');
-	const RETIRE = at('geste', 'retire');
-	const JAMAIS = at('geste', 'jamais');
-	const COUVRE = at('geste', 'couvre');
-	const FROID = at('geste', 'froid.');
-	const swap = lin(frame, RETIRE - 10, RETIRE + 4);
-	const c = skinClosePt(500, 500);
+	const SUIS = at('geste', 'suis');
+	const INDICATIONS = at('geste', 'indications');
+	const QUINZE = at('geste', 'quinze.');
+	const TELEPHONE = at('geste', 'téléphone,');
+	const EXACTEMENT = at('geste', 'exactement');
+	const swap = lin(frame, SUIS - 10, SUIS + 4);
+	const ph = popAt(frame, SUIS - 6);
 	return (
 		<AbsoluteFill>
 			{swap < 1 ? (
@@ -205,15 +203,6 @@ export const Geste: React.FC = () => {
 					<SkinClose>
 						<BurnPatch deg={3} k={1} />
 					</SkinClose>
-					<TapWater on={fadeIn(frame, ARROSE - 6, 8)} x={c.x} y={c.y} />
-					<PointTag at={TEMPEREE - 4} x={300} y={1500} px={c.x - 60} py={c.y + 80} size={46} tone={LPI.sky}>
-						eau tempérée
-					</PointTag>
-					{frame >= CONSEILS - 8 ? (
-						<div style={{position: 'absolute', left: 760 - 40, top: 1250, transform: `scale(${popAt(frame, CONSEILS - 8)})`}}>
-							<Phone digits="15" size={200} />
-						</div>
-					) : null}
 				</AbsoluteFill>
 			) : null}
 			{swap > 0 ? (
@@ -221,23 +210,22 @@ export const Geste: React.FC = () => {
 					<Bg />
 				</AbsoluteFill>
 			) : null}
-			<Big from={SECOURS - 12} text={'En attendant les *secours*'} size={88} y={180} center />
-			<RowCard at={RETIRE - 4} y={460} h={210} art={180} badge={1} title="Retire les vêtements" sub="qui ne collent pas" subAt={RETIRE + 20} size={48}>
-				<ShirtIcon size={140} />
-			</RowCard>
-			<RowCard at={JAMAIS - 6} y={690} h={210} art={180} badge={2} title="Jamais ceux qui collent" from="left" size={48}>
-				<div style={{position: 'relative'}}>
-					<ShirtIcon size={140} />
-					<NoMark at={JAMAIS} />
+			<Big from={SECOURS - 12} to={SUIS - 6} text={'En attendant les *secours*'} size={88} y={180} center />
+			<Big from={SUIS} text={'Suis les indications du *15*'} size={88} y={180} center />
+			{frame >= SUIS - 6 ? (
+				<div style={{position: 'absolute', left: 540 - 165, top: 470, transform: `scale(${ph})`}}>
+					<Phone digits="15" ring={fadeIn(frame, QUINZE, 4) * (1 - lin(frame, TELEPHONE, TELEPHONE + 8))} size={330} />
 				</div>
-			</RowCard>
-			<RowCard at={COUVRE - 6} y={920} h={210} art={180} badge={3} title="Couvre la personne" sub="elle ne doit pas avoir froid" subAt={FROID - 14} size={48}>
-				<BlanketIcon size={140} />
-			</RowCard>
-			<Sfx name="tap" at={ARROSE - 6} volume={0.12} dur={RETIRE - ARROSE} />
-			{[RETIRE - 4, JAMAIS - 6, COUVRE - 6].map((t) => (
-				<Sfx key={t} name="pop" at={t} volume={0.08} />
-			))}
+			) : null}
+			<Chip at={INDICATIONS - 2} x={650} y={1260}>
+				suis ses indications
+			</Chip>
+			<Chip at={EXACTEMENT - 4} x={650} y={1420}>
+				il te dit quoi faire
+			</Chip>
+			<Sfx name="ring" at={QUINZE + 4} volume={0.12} />
+			<Sfx name="pop" at={INDICATIONS - 2} volume={0.08} />
+			<Sfx name="ding" at={EXACTEMENT - 4} volume={0.07} />
 		</AbsoluteFill>
 	);
 };
