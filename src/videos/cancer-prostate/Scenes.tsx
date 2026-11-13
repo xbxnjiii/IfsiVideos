@@ -14,7 +14,7 @@ import {Stetho, Walker} from '../../brand/injury';
 import {Stamp} from '../../brand/kit';
 import {Burst} from '../../brand/motion3';
 import {Bubble} from '../../brand/pain';
-import {AgeIcon, AlarmClock, BonePain, Bedroom, CellField, Chestnut, FamilyIcon, GlobeIcon, NIGHT, Pelvis, PELVIS, pelvisPt, RayIcon, ROOM, WatchIcon} from '../../brand/prostate';
+import {AgeIcon, AlarmClock, BonePain, Bedroom, Chestnut, FamilyIcon, GlobeIcon, NIGHT, RayIcon, ROOM, WatchIcon} from '../../brand/prostate';
 import {BloodTube} from '../../brand/sampling';
 import {Sfx} from '../../brand/Sfx';
 import {alpha, FONT, LPI, SHADOW} from '../../brand/theme';
@@ -30,14 +30,6 @@ const Bg: React.FC<{tone?: string}> = ({tone = LPI.sky}) => (
 		<AbsoluteFill style={{background: `radial-gradient(circle at 50% 55%, ${alpha(tone, 0.25)} 0%, ${alpha(tone, 0.75)} 75%)`}} />
 	</>
 );
-
-/** Bassin posé en (left, top) sur W pixels. */
-const PelvisAt: React.FC<{left?: number; top?: number; W?: number; o?: number} & React.ComponentProps<typeof Pelvis>> = ({left = 90, top = 280, W = 900, o = 1, ...p}) => (
-	<div style={{position: 'absolute', left, top, opacity: o}}>
-		<Pelvis width={W} {...p} />
-	</div>
-);
-const pp = (k: keyof typeof PELVIS, left = 90, top = 280, W = 900) => pelvisPt(PELVIS[k], left, top, W);
 
 /** Petite pastille de texte (sans coche), centrée sur (x, y). */
 const Pill: React.FC<{at: number; x: number; y: number; tone?: string; size?: number; children: React.ReactNode}> = ({at: t0, x, y, tone = LPI.sky, size = 44, children}) => {
@@ -229,6 +221,55 @@ const Diagram: React.FC<{keys: CamK[]; rings?: Ring[]; o?: number; focus?: numbe
 	);
 };
 
+/* ── Les deux dessins de prostate du schéma fourni (calque « focus »), découpés et posés seuls ── */
+const REG = {healthy: {x: 905, y: 328, w: 280, h: 236}, cancer: {x: 1203, y: 328, w: 282, h: 236}} as const;
+/** Repères dans chaque dessin (pixels de la découpe) : urètre (x), tumeur. */
+const ART = {urethra: 140, uTop: 0, uBot: 236, tumor: [198, 142] as const};
+/** Un dessin de prostate (saine ou avec cancer) du schéma fourni, à l'échelle uniforme `s` (jamais déformé), centré en
+ * (cx, cy) ; `children` : calques SVG dans le repère de la découpe. */
+const ProstateArt: React.FC<{which: keyof typeof REG; cx: number; cy: number; s: number; o?: number; children?: React.ReactNode}> = ({which, cx, cy, s, o = 1, children}) => {
+	const r = REG[which];
+	return (
+		<div style={{position: 'absolute', left: cx - (r.w * s) / 2, top: cy - (r.h * s) / 2, width: r.w, height: r.h, transformOrigin: '0 0', transform: `scale(${s})`, opacity: o}}>
+			<div style={{position: 'absolute', inset: 0, overflow: 'hidden'}}>
+				<Img src={staticFile(IMG.focus)} style={{position: 'absolute', left: -r.x, top: -r.y, width: IMG.w, height: IMG.h}} />
+			</div>
+			<svg width={r.w} height={r.h} viewBox={`0 0 ${r.w} ${r.h}`} style={{position: 'absolute', left: 0, top: 0, overflow: 'visible'}}>
+				{children}
+			</svg>
+		</div>
+	);
+};
+/** Carte blanche (même style que le schéma). */
+const ArtCard: React.FC<{top?: number; h?: number; o?: number}> = ({top = 290, h = 960, o = 1}) => (
+	<div style={{position: 'absolute', left: 40, top, width: 1000, height: h, borderRadius: 48, background: '#FFFFFF', boxShadow: `0 18px 50px ${alpha(N, 0.18)}`, opacity: o}} />
+);
+/** Cercle rose qui pulse (dans le repère d'un dessin). */
+const PulseRing: React.FC<{x: number; y: number; r: number; from: number; to?: number; sw?: number}> = ({x, y, r, from, to = 1e9, sw = 2.5}) => {
+	const frame = useCurrentFrame();
+	const k = fadeIn(frame, from, 6) * (1 - lin(frame, to, to + 8));
+	if (k <= 0) return null;
+	const p = 0.5 + 0.5 * Math.sin((frame - from) / 5);
+	return (
+		<g opacity={k}>
+			<circle cx={x} cy={y} r={r + 4 + 3 * p} fill="none" stroke={alpha(LPI.pink, 0.45)} strokeWidth={sw * 2} />
+			<circle cx={x} cy={y} r={r} fill="none" stroke={LPI.pink} strokeWidth={sw} strokeDasharray={`${sw * 3} ${sw * 2}`} />
+		</g>
+	);
+};
+/** Gouttes d'urine qui descendent l'urètre (repère d'un dessin) ; `speed` < 1 : le jet ralentit. */
+const UrineDrops: React.FC<{speed: number; o?: number}> = ({speed, o = 1}) => {
+	const frame = useCurrentFrame();
+	return (
+		<g opacity={o}>
+			{[0, 1, 2, 3, 4].map((i) => {
+				const t = (((frame * 0.02 * speed + i / 5) % 1) + 1) % 1;
+				return <circle key={i} cx={ART.urethra} cy={ART.uTop + (ART.uBot - ART.uTop) * t} r={4.5} fill="#F8D35A" stroke="#C9A22A" strokeWidth={1.2} />;
+			})}
+		</g>
+	);
+};
+
 /* ═══════════════════════════════ LA PROSTATE ═══════════════════════════════ */
 export const Prostate: React.FC = () => {
 	const frame = useCurrentFrame();
@@ -318,28 +359,46 @@ export const Adenome: React.FC = () => {
 			<Bg tone={LPI.pink} />
 			<Big from={0} to={ADENOME - 6} text={'Avec *l\'âge*…'} size={110} y={150} center />
 			<Big from={ADENOME} text={"*L'adénome*"} size={110} y={150} center />
-			<PelvisAt grow={grow} flow={1} glow={fadeIn(frame, GROSSIT, 8) * (1 - lin(frame, SERRE - 4, SERRE + 6))} urethraGlow={fadeIn(frame, SERRE - 2, 6)} />
+			<ArtCard />
+			<ProstateArt which="healthy" cx={540} cy={760} s={2.7 * (1 + 0.24 * grow)}>
+				<UrineDrops speed={1 - 0.7 * lin(frame, SERRE - 2, SERRE + 20)} />
+				{frame >= SERRE - 2
+					? [-1, 1].map((sg) => {
+							const k = fadeIn(frame, SERRE - 2, 6);
+							const w = Math.sin(frame / 4) * 2;
+							return <path key={sg} d={`M${ART.urethra + sg * (40 + w)} 150 l${sg * 16} -12 l0 24 Z`} fill={N} opacity={k} />;
+						})
+					: null}
+				<PulseRing x={ART.urethra} y={150} r={22} from={SERRE + 2} sw={2} />
+			</ProstateArt>
+			{/* taille normale (pointillés) : la prostate a grossi d'un bloc */}
+			<svg width={1080} height={1920} style={{position: 'absolute', left: 0, top: 0, opacity: fadeIn(frame, GROSSIT + 8, 8)}}>
+				<path d="M240 560 Q240 520 300 520 L780 520 Q840 520 840 560 Q850 760 700 900 Q620 975 540 990 Q460 975 380 900 Q230 760 240 560 Z" fill="none" stroke={N} strokeWidth={6} strokeDasharray="18 12" opacity={0.8} />
+			</svg>
+			<Note at={GROSSIT + 8} to={GROSSE - 6} y={1300} size={42} tone={LPI.paper}>
+				pointillés : la taille normale
+			</Note>
 			{frame < SERRE + 4 ? (
 				<AbsoluteFill style={{opacity: 1 - lin(frame, SERRE - 6, SERRE + 2)}}>
-					<Pill at={GROSSE - 2} x={540} y={1390} tone={LPI.paper}>
+					<Pill at={GROSSE - 2} x={540} y={1340} tone={LPI.paper}>
 						une grosse prostate
 					</Pill>
-					<Pill at={GRAVITE - 2} x={540} y={1500} tone={LPI.sky}>
+					<Pill at={GRAVITE - 2} x={540} y={1450} tone={LPI.sky}>
 						sans gravité ✓
 					</Pill>
 				</AbsoluteFill>
 			) : null}
 			{frame >= SERRE - 2 ? (
-				<PointTag at={SERRE - 2} x={540} y={1400} px={pp('prostUrethra').x} py={pp('prostUrethra').y} size={44} tone={LPI.pink}>
+				<Note at={SERRE - 2} to={ENVIES - 6} y={1400} size={44} tone={LPI.pink}>
 					l'urètre est serré
-				</PointTag>
+				</Note>
 			) : null}
 			{frame >= ENVIES - 4 ? (
 				<AbsoluteFill style={{opacity: fadeIn(frame, ENVIES - 4, 6)}}>
-					<Pill at={ENVIES - 4} x={300} y={1530} tone={LPI.paper}>
+					<Pill at={ENVIES - 4} x={300} y={1420} tone={LPI.paper}>
 						<MoonIcon size={56} /> levers la nuit
 					</Pill>
-					<Pill at={JET - 2} x={790} y={1530} tone={LPI.paper}>
+					<Pill at={JET - 2} x={790} y={1420} tone={LPI.paper}>
 						jet faible
 					</Pill>
 				</AbsoluteFill>
@@ -448,7 +507,17 @@ export const Signes: React.FC = () => {
 				<BonePain size={190} pain={fadeIn(frame, OS, 6)} />
 			</RowCard>
 			{frame >= ETENDU - 8 ? (
-				<PelvisAt o={fadeIn(frame, ETENDU - 8, 8)} left={250} top={890} W={580} flow={1} tumor={1} spread={lin(frame, ETENDU - 4, ETENDU + 30)} />
+				<AbsoluteFill style={{opacity: fadeIn(frame, ETENDU - 8, 8)}}>
+					<ArtCard top={900} h={560} />
+					<ProstateArt which="cancer" cx={540} cy={1180} s={1.9}>
+						<PulseRing x={ART.tumor[0]} y={ART.tumor[1]} r={30} from={ETENDU - 6} sw={2.5} />
+						{[[1, -0.7], [1.2, 0.3], [0.6, 1], [-0.4, 1.1], [-1.2, 0.5], [-1, -0.8]].map(([dx, dy], i) => {
+							const k = lin(frame, ETENDU - 2 + i * 3, ETENDU + 34 + i * 3);
+							if (k <= 0) return null;
+							return <circle key={i} cx={ART.tumor[0] + dx * 120 * k} cy={ART.tumor[1] + dy * 100 * k} r={6} fill="#C0304A" stroke="#7A1426" strokeWidth={1.5} opacity={1 - 0.4 * k} />;
+						})}
+					</ProstateArt>
+				</AbsoluteFill>
 			) : null}
 			<Sfx name="pop" at={SANG - 4} volume={0.08} />
 			<Sfx name="pop" at={DOUL - 4} volume={0.08} />
@@ -483,12 +552,21 @@ export const Examens: React.FC = () => {
 			{aO > 0 ? (
 				<AbsoluteFill style={{opacity: aO}}>
 					<Big from={TOUCHER - 4} to={PRISE - 10} text={'Le toucher *rectal*'} size={96} y={150} center />
-					<PelvisAt flow={1} tumor={1} finger={lin(frame, TOUCHER, PALPE + 6)} glow={fadeIn(frame, PALPE + 4, 6)} />
-					<PointTag at={DOIGT - 4} x={250} y={1380} px={pp('back').x - 30} py={pp('back').y + 120} size={44} tone={LPI.sky}>
-						le doigt (ganté)
-					</PointTag>
-					<Note at={PALPE + 4} y={1500} size={44} tone={LPI.pink}>
-						il sent l'arrière de la prostate
+					<ArtCard />
+					<ProstateArt which="cancer" cx={540} cy={740} s={2.7}>
+						{/* doigt ganté qui vient appuyer sous le lobe (par le rectum, juste derrière la prostate) */}
+						<g transform={`translate(${ART.tumor[0] + 4} ${ART.tumor[1] + 58 + 60 * (1 - lin(frame, TOUCHER, PALPE + 6))}) rotate(-20)`} opacity={fadeIn(frame, TOUCHER - 2, 6)}>
+							<rect x={-15} y={0} width={30} height={64} rx={15} fill="#8FBCEB" stroke="#3F6E9E" strokeWidth={2.5} />
+							<path d="M-8 12 Q0 3 8 12" fill="none" stroke="#3F6E9E" strokeWidth={2} />
+							<path d="M-9 44 q9 5 18 0" fill="none" stroke="#3F6E9E" strokeWidth={1.6} opacity={0.6} />
+						</g>
+						<PulseRing x={ART.tumor[0]} y={ART.tumor[1]} r={32} from={PALPE + 4} sw={2.5} />
+					</ProstateArt>
+					<Note at={DOIGT - 4} y={1330} size={42} tone={LPI.sky}>
+						doigt ganté, par le rectum
+					</Note>
+					<Note at={PALPE + 4} y={1450} size={44} tone={LPI.pink}>
+						il sent une zone dure
 					</Note>
 				</AbsoluteFill>
 			) : null}
@@ -513,9 +591,9 @@ export const Examens: React.FC = () => {
 			{cO > 0 ? (
 				<div style={{position: 'absolute', left: 540 - 300, top: 470, opacity: cO, transform: `scale(${popAt(frame, IRM - 4)})`}}>
 					<ScanMonitor label="IRM" scan={lin(frame, IRM, IRM + 50)} width={600} height={600}>
-						<div style={{position: 'absolute', left: 60, top: 30}}>
-							<Pelvis width={480} body={false} tumor={1} glow={fadeIn(frame, IRM + 20, 8)} />
-						</div>
+						<ProstateArt which="cancer" cx={300} cy={290} s={1.9}>
+							<PulseRing x={ART.tumor[0]} y={ART.tumor[1]} r={32} from={IRM + 20} sw={3} />
+						</ProstateArt>
 					</ScanMonitor>
 				</div>
 			) : null}
@@ -523,11 +601,28 @@ export const Examens: React.FC = () => {
 			{dO > 0 ? (
 				<AbsoluteFill style={{opacity: dO}}>
 					<Big from={BIOPSIE} text={'La *biopsie*'} size={110} y={150} center />
-					<PelvisAt flow={1} tumor={1} needle={lin(frame, BIOPSIE + 4, PRELEV + 6)} glow={fadeIn(frame, CONFIRME - 2, 6)} />
-					<Note at={PRELEV - 2} y={1390} size={44} tone={LPI.paper}>
+					<ArtCard />
+					<ProstateArt which="cancer" cx={540} cy={740} s={2.7}>
+						{(() => {
+							const k = lin(frame, BIOPSIE + 4, PRELEV + 6);
+							const sx = ART.tumor[0] + 62;
+							const sy = ART.tumor[1] + 62;
+							const ex = sx + (ART.tumor[0] + 6 - sx) * k;
+							const ey = sy + (ART.tumor[1] + 6 - sy) * k;
+							return (
+								<g>
+									<line x1={sx + 14} y1={sy + 14} x2={ex} y2={ey} stroke="#5E6B78" strokeWidth={3} strokeLinecap="round" />
+									<line x1={sx + 14} y1={sy + 14} x2={ex} y2={ey} stroke="#D7DEE6" strokeWidth={1.2} strokeLinecap="round" />
+									<rect x={sx + 8} y={sy + 8} width={16} height={30} rx={6} fill="#8FBCEB" stroke="#3F6E9E" strokeWidth={1.6} transform={`rotate(-45 ${sx + 16} ${sy + 23})`} />
+								</g>
+							);
+						})()}
+						<PulseRing x={ART.tumor[0]} y={ART.tumor[1]} r={32} from={CONFIRME - 2} sw={2.5} />
+					</ProstateArt>
+					<Note at={PRELEV - 2} y={1330} size={44} tone={LPI.paper}>
 						un petit prélèvement
 					</Note>
-					<Stamp at={CONFIRME + 2} x={560} y={1530} text="CONFIRMÉ" size={66} />
+					<Stamp at={CONFIRME + 2} x={580} y={1470} text="CONFIRMÉ" size={66} />
 				</AbsoluteFill>
 			) : null}
 			<Sfx name="whoosh" at={TOUCHER} volume={0.05} />

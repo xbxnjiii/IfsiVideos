@@ -421,7 +421,13 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   « dé-mélangé ») et écrit deux calques dans le même repère : `appareil-propre-anatomie.png` et
   `appareil-propre-focus.png` (prostate saine / cancer), en fondu l'un vers l'autre dans `Diagram` (`focus`) ; carte
   blanche sans bordure, ombre douce, vue d'ensemble centrée (572, 572). Les explications passent par nos pastilles et
-  les cercles qui pulsent, pas par les annotations de l'image.
+  les cercles qui pulsent, pas par les annotations de l'image. Puis (demandé : « remplace tes schémas par les miens pour
+  que tout soit pareil ») **toute la vidéo utilise ce schéma** : `ProstateArt` découpe la prostate saine ou avec cancer
+  du calque « focus », à l'échelle uniforme (jamais déformée), sur une carte blanche (`ArtCard`), avec calques SVG :
+  adénome (la prostate saine grossit d'un bloc, pointillés = taille normale, flèches qui serrent l'urètre, gouttes
+  d'urine `UrineDrops` qui ralentissent), signes (cellules qui s'échappent de la tumeur), toucher rectal (doigt ganté
+  sous le lobe, la tumeur entourée), IRM (dessin dans l'écran), biopsie (aiguille jusqu'à la tumeur). La coupe de profil
+  `Pelvis` n'est plus utilisée dans cette vidéo (elle reste dans `prostate.tsx`).
 
 ## Voix ElevenLabs « Laura » (choisie par le propriétaire pour les nouvelles vidéos)
 
