@@ -189,17 +189,17 @@ export const Prostate: React.FC = () => {
 				une petite glande
 			</PointTag>
 			{frame >= CHAT - 2 ? (
-				<div style={{position: 'absolute', left: 380, top: 1270, transform: `scale(${popAt(frame, CHAT - 2)})`}}>
+				<div style={{position: 'absolute', left: 170, top: 1270, transform: `scale(${popAt(frame, CHAT - 2)})`}}>
 					<Chestnut size={170} />
 				</div>
 			) : null}
-			<PointTag at={CHAT + 4} to={SOUS - 2} x={790} y={1360} px={560} py={1350} size={42}>
+			<PointTag at={CHAT + 4} to={SOUS - 2} x={560} y={1360} px={350} py={1350} size={42}>
 				une châtaigne
 			</PointTag>
 			<PointTag at={VESSIE - 2} to={ENTOURE - 4} x={250} y={330} px={pp('bladder').x - 40} py={pp('bladder').y - 40} size={46} tone={LPI.sky}>
 				la vessie
 			</PointTag>
-			<PointTag at={URETRE - 2} x={790} y={1300} px={pp('urethra').x} py={pp('urethra').y + 60} size={46} tone={LPI.sky}>
+			<PointTag at={URETRE - 2} x={760} y={1330} px={pp('urethra').x} py={pp('urethra').y} size={46} tone={LPI.sky}>
 				l'urètre : l'urine sort
 			</PointTag>
 			<Note at={FABRIQUE} y={1520} size={46} tone={LPI.pink}>
@@ -242,7 +242,7 @@ export const Adenome: React.FC = () => {
 				</AbsoluteFill>
 			) : null}
 			{frame >= SERRE - 2 ? (
-				<PointTag at={SERRE - 2} x={540} y={1400} px={pp('urethra').x} py={pp('urethra').y - 50} size={44} tone={LPI.pink}>
+				<PointTag at={SERRE - 2} x={540} y={1400} px={pp('prostUrethra').x} py={pp('prostUrethra').y} size={44} tone={LPI.pink}>
 					l'urètre est serré
 				</PointTag>
 			) : null}
