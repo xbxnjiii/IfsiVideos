@@ -132,7 +132,7 @@ export const Hook: React.FC = () => {
 				{lens > 0.01 && manX !== null ? (
 					<div style={{position: 'absolute', left: belly.x - 120, top: belly.y - 120, width: 240, height: 240, borderRadius: 120, overflow: 'hidden', border: `8px solid ${LPI.paper}`, boxShadow: `0 0 40px ${alpha(LPI.sky, 0.8)}`, background: '#FFFFFF', transform: `scale(${lens})`}}>
 						<div style={{position: 'absolute', left: 120 - 565 * 0.55, top: 120 - 470 * 0.55, width: 1536, height: 1024, transformOrigin: '0 0', transform: 'scale(0.55)'}}>
-							<Img src={staticFile('images/prostate/appareil-masculin.webp')} style={{width: 1536, height: 1024}} />
+							<Img src={staticFile('images/prostate/appareil-propre-anatomie.png')} style={{width: 1536, height: 1024}} />
 						</div>
 						<div style={{position: 'absolute', left: 120 - 50, top: 120 + (548 - 470) * 0.55 - 40, width: 100, height: 80, borderRadius: 50, border: `5px solid ${LPI.pink}`, opacity: fadeIn(frame, PROST - 2, 6)}} />
 					</div>
@@ -169,10 +169,10 @@ export const Hook: React.FC = () => {
 /* ═══════════════════════════════ SCHÉMA FOURNI : CAMÉRA QUI GLISSE ET ZOOME DEDANS ═══════════════════════════════ */
 // Schéma « Appareil génital masculin » fourni par le propriétaire (1536 × 1024), gardé tel quel (couleurs, annotations) :
 // on se déplace dedans au mot près et on entoure la structure dont parle la voix.
-const IMG = {src: 'images/prostate/appareil-masculin.webp', w: 1536, h: 1024};
+const IMG = {anat: 'images/prostate/appareil-propre-anatomie.png', focus: 'images/prostate/appareil-propre-focus.png', w: 1536, h: 1024};
 /** Repères du schéma (pixels de l'image). */
 const DG = {
-	all: {x: 445, y: 565, s: 1.23},
+	all: {x: 572, y: 572, s: 1.24},
 	bladder: [560, 315],
 	vesL: [395, 455],
 	vesR: [745, 455],
@@ -199,15 +199,16 @@ const camOf = (frame: number, keys: CamK[], dur = 18) => {
 };
 /** Cercle rose qui pulse sur une structure du schéma (repère de l'image), visible de `from` à `to`. */
 type Ring = {from: number; to?: number; x: number; y: number; r: number; ry?: number};
-const Diagram: React.FC<{keys: CamK[]; rings?: Ring[]; o?: number; children?: React.ReactNode}> = ({keys, rings = [], o = 1, children}) => {
+const Diagram: React.FC<{keys: CamK[]; rings?: Ring[]; o?: number; focus?: number; children?: React.ReactNode}> = ({keys, rings = [], o = 1, focus = 0, children}) => {
 	const frame = useCurrentFrame();
 	const c = camOf(frame, keys);
 	const tx = CARD.w / 2 - c.x * c.s;
 	const ty = CARD.h / 2 - c.y * c.s;
 	return (
-		<div style={{position: 'absolute', left: CARD.left, top: CARD.top, width: CARD.w, height: CARD.h, borderRadius: 40, overflow: 'hidden', background: '#FFFFFF', border: `6px solid ${N}`, boxShadow: SHADOW, opacity: o}}>
+		<div style={{position: 'absolute', left: CARD.left, top: CARD.top, width: CARD.w, height: CARD.h, borderRadius: 48, overflow: 'hidden', background: '#FFFFFF', boxShadow: `0 18px 50px ${alpha(N, 0.18)}`, opacity: o}}>
 			<div style={{position: 'absolute', left: 0, top: 0, width: IMG.w, height: IMG.h, transformOrigin: '0 0', transform: `translate(${tx}px, ${ty}px) scale(${c.s})`}}>
-				<Img src={staticFile(IMG.src)} style={{width: IMG.w, height: IMG.h, display: 'block'}} />
+				<Img src={staticFile(IMG.anat)} style={{position: 'absolute', width: IMG.w, height: IMG.h, display: 'block', opacity: 1 - focus}} />
+				<Img src={staticFile(IMG.focus)} style={{position: 'absolute', width: IMG.w, height: IMG.h, display: 'block', opacity: focus}} />
 				<svg width={IMG.w} height={IMG.h} viewBox={`0 0 ${IMG.w} ${IMG.h}`} style={{position: 'absolute', left: 0, top: 0, overflow: 'visible'}}>
 					{rings.map((r, i) => {
 						const k = fadeIn(frame, r.from, 6) * (r.to === undefined ? 1 : 1 - lin(frame, r.to, r.to + 8));
@@ -242,9 +243,9 @@ export const Prostate: React.FC = () => {
 	const SPERME = at('prostate', 'sperme');
 	const keys: CamK[] = [
 		{at: 0, ...DG.all},
-		{at: PR, x: 470, y: 548, s: 2.2},
-		{at: SOUS - 4, x: 470, y: 420, s: 1.7},
-		{at: ENTOURE - 2, x: 470, y: 690, s: 1.7},
+		{at: PR, x: 569, y: 545, s: 2.3},
+		{at: SOUS - 4, x: 569, y: 430, s: 1.7},
+		{at: ENTOURE - 2, x: 569, y: 700, s: 1.6},
 		{at: FABRIQUE - 4, ...DG.all},
 	];
 	return (
@@ -368,8 +369,8 @@ export const Cancer: React.FC = () => {
 	const diagO = fadeIn(frame, 0, 8) * (1 - lin(frame, CEST - 8, CEST)) + fadeIn(frame, PIEGE - 4, 8);
 	const numO = fadeIn(frame, CEST, 6) * (1 - lin(frame, PIEGE - 8, PIEGE));
 	const keys: CamK[] = [
-		{at: 0, x: 470, y: 548, s: 2.2},
-		{at: CELL - 8, x: DG.panel[0], y: DG.panel[1], s: 1.55},
+		{at: 0, x: 569, y: 545, s: 2.3},
+		{at: CELL - 8, x: DG.panel[0], y: 442, s: 1.65},
 		{at: MULTI, x: DG.cancer[0] + 20, y: DG.cancer[1] + 30, s: 2.6},
 		{at: PIEGE - 6, x: DG.cancer[0] + 20, y: DG.cancer[1] + 30, s: 2.4},
 	];
@@ -382,6 +383,7 @@ export const Cancer: React.FC = () => {
 			{diagO > 0.01 ? (
 				<Diagram
 					o={Math.min(1, diagO)}
+					focus={fadeIn(frame, CELL - 6, 14)}
 					keys={keys}
 					rings={[
 						{from: 6, to: CELL - 10, x: DG.prostate[0], y: DG.prostate[1], r: 125, ry: 92},

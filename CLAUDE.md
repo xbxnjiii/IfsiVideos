@@ -415,7 +415,13 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   + testicules ; scène `cancer` : zoom prostate → comparaison saine / cancer → la tumeur entourée ; « le piège » revient sur
   la tumeur ; la loupe de l'accroche montre ce schéma. La coupe de profil `Pelvis` reste pour l'adénome, le toucher
   rectal, la biopsie et les signes. Quand le propriétaire fournit un schéma : l'utiliser tel quel, l'animer par la
-  caméra et des surlignages, sans le redessiner.
+  caméra et des surlignages, sans le redessiner. Retour : « plus propre, enlève les annotations, cadre bien » →
+  `scripts/brand/clean_prostate_diagram.py` retire titre, étiquettes, traits, points, cône rose, cadre et encadré
+  (traits recopiés du côté symétrique, axe x = 569 ; bord courbe de la prostate reconstruit ligne par ligne ; cône rose
+  « dé-mélangé ») et écrit deux calques dans le même repère : `appareil-propre-anatomie.png` et
+  `appareil-propre-focus.png` (prostate saine / cancer), en fondu l'un vers l'autre dans `Diagram` (`focus`) ; carte
+  blanche sans bordure, ombre douce, vue d'ensemble centrée (572, 572). Les explications passent par nos pastilles et
+  les cercles qui pulsent, pas par les annotations de l'image.
 
 ## Voix ElevenLabs « Laura » (choisie par le propriétaire pour les nouvelles vidéos)
 
