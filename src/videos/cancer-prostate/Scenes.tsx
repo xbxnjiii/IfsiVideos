@@ -185,7 +185,7 @@ export const Prostate: React.FC = () => {
 			<Big from={0} to={ENTOURE - 6} text={'La *prostate*'} size={110} y={150} center />
 			<Big from={ENTOURE} text={"Autour de *l'urètre*"} size={96} y={150} center />
 			<PelvisAt o={fadeIn(frame, 0, 8)} glow={fadeIn(frame, PR, 8) * (1 - 0.6 * lin(frame, VESSIE, VESSIE + 10))} bladderGlow={fadeIn(frame, VESSIE - 2, 6) * (1 - lin(frame, ENTOURE, ENTOURE + 8))} urethraGlow={fadeIn(frame, CANAL - 2, 8)} flow={fadeIn(frame, CANAL, 8)} />
-			<PointTag at={GLANDE - 2} to={CHAT - 4} x={330} y={1360} px={P.x} py={P.y + 40} size={44} tone={LPI.pink}>
+			<PointTag at={GLANDE - 2} to={CHAT - 4} x={760} y={1330} px={P.x} py={P.y + 40} size={44} tone={LPI.pink}>
 				une petite glande
 			</PointTag>
 			{frame >= CHAT - 2 ? (
@@ -535,7 +535,8 @@ export const Fin: React.FC = () => {
 	return (
 		<AbsoluteFill>
 			<Bg tone={LPI.pink} />
-			<Big from={0} to={MEME - 6} text={'Dès *50* *ans*…'} size={130} y={170} center />
+			<Big from={0} to={CINQ - 8} text={'Va lui en *parler*'} size={110} y={170} center />
+			<Big from={CINQ - 2} to={MEME - 6} text={'Dès *50* *ans*…'} size={130} y={170} center />
 			<Big from={MEME} text={'…même quand *tout* *va* *bien* !'} size={92} y={170} center />
 			{frame >= CINQ - 4 ? (
 				<div style={{position: 'absolute', left: 540 - 150, top: 480, transform: `scale(${popAt(frame, CINQ - 4)})`}}>

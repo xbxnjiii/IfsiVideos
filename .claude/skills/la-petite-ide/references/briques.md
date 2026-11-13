@@ -613,7 +613,7 @@ Briques « cancer de la prostate » (vidéo n° 49). Mise en situation réaliste
 - `Bedroom` — La chambre la nuit, plein cadre 1080 × 1920 (vraies couleurs).
 - `PELVIS` — Points du bassin (repère 800 × 900) pour poser étiquettes et loupes.
 - `pelvisPt` — Convertit un point du bassin en pixels pour un dessin posé en (left, top) sur `W` pixels de large.
-- `Pelvis` — Bassin de l'homme vu de profil (schéma, couleurs de la marque) : vessie (`fill` urine), prostate sous la vessie, urètre qui la traverse, rectum derrière, os du pubis devant.
+- `Pelvis` — Bassin de l'homme vu de profil, rendu détaillé (demandé : « moins cartoon, plus réaliste ») : coupe du bas du tronc (peau, graisse, muscle grand droit, anses d'intestin), sacrum et coccyx en vertèbres, symphyse pubienne, vessie à paroi…
 - `Chestnut` — Châtaigne (vraies couleurs, repère 200 × 200) : la taille de la prostate.
 - `CellField` — Champ de cellules (repère 900 × 640) : des cellules saines (bleu clair) ; `k` 0 → 1 : les cellules cancéreuses (rose, noyau bleu nuit irrégulier) se multiplient depuis le centre et poussent les autres ; `split` : la cellule du centre se…
 - `BonePain` — Os qui fait mal (repère 300 × 200) : os + éclairs de douleur roses qui clignotent (`pain` 0 → 1).

@@ -387,8 +387,16 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   vient d'Afrique ou des Antilles ». Storyboard `docs/lpi/storyboard-cancer-prostate.md`.
   Retour du propriétaire (« c'est super ») : **à l'avenir, détailler davantage l'intérieur du corps, moins cartoon, plus
   réaliste** (le bassin en schéma simple était trop plat : vraies formes d'organes, volumes, dégradés, ombres douces,
-  textures, tissus autour, dans l'esprit du rendu soigné de `CuttingCloseUp`). Idée à trancher : parler **au spectateur**
-  (« tu ») plutôt que d'un patient, pour plus de rétention.
+  textures, tissus autour, dans l'esprit du rendu soigné de `CuttingCloseUp`) → **`Pelvis` refait** dans ce sens (coupe :
+  peau, graisse, muscle grand droit, anses d'intestin, sacrum en vertèbres, symphyse pubienne, vessie à paroi plissée +
+  uretère, vésicule séminale, prostate avec capsule / zone de transition (qui grossit dans l'adénome) / zone
+  périphérique (où naît la tumeur) / lobules, rectum avec plis et sphincter, verge ; dégradés et ombres douces, palette
+  de la marque) ; cellules ombrées. **Parler au spectateur pour la rétention** (demandé) : « tu » pour les sujets qui
+  concernent tout le monde ; pour un sujet qui ne touche pas directement le public (étudiants infirmiers, jeunes), passer
+  par un proche : ici **« ton père »** (« …ton père se lève pour aller aux toilettes… Et il te dit : c'est l'âge… »,
+  chute « Alors, va lui en parler : à partir de cinquante ans… »). Ne jamais promettre un diagnostic faux pour faire peur
+  (les levers la nuit = le plus souvent un adénome). Voix : « parles-en avec lui » était entendu « parlons avec lui » →
+  « va lui en parler ».
 
 ## Voix ElevenLabs « Laura » (choisie par le propriétaire pour les nouvelles vidéos)
 

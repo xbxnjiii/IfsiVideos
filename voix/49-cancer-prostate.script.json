@@ -2,7 +2,7 @@
  {
   "id": "intro",
   "rate": "+4%",
-  "text": "Une heure du matin… il se lève pour aller aux toilettes. Trois heures… encore. Cinq heures… encore ! Et il se dit : c'est l'âge. Peut-être… mais il vaut mieux faire vérifier sa prostate."
+  "text": "Une heure du matin… ton père se lève pour aller aux toilettes. Trois heures… encore. Cinq heures… encore ! Et il te dit : c'est l'âge. Peut-être… mais il vaut mieux qu'il fasse vérifier sa prostate."
  },
  {
   "id": "prostate",
@@ -42,6 +42,6 @@
  {
   "id": "fin",
   "rate": "+2%",
-  "text": "Alors, à partir de cinquante ans, on en parle à son médecin… même quand tout va bien !"
+  "text": "Alors, va lui en parler : à partir de cinquante ans, on en parle à son médecin… même quand tout va bien !"
  }
 ]
