@@ -406,6 +406,16 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   chute « Alors, va lui en parler : à partir de cinquante ans… »). Ne jamais promettre un diagnostic faux pour faire peur
   (les levers la nuit = le plus souvent un adénome). Voix : « parles-en avec lui » était entendu « parlons avec lui » →
   « va lui en parler ».
+  **Schéma fourni par le propriétaire = support visuel principal** (demandé) : `public/images/prostate/appareil-masculin.webp`
+  (1536 × 1024, « Appareil génital masculin » de face + « Focus : la prostate » saine / cancer + encadré), gardé **tel
+  quel** (couleurs, annotations, jamais déformé). Dans `Scenes.tsx` : `Diagram` (carte blanche 1000 × 1140, caméra qui
+  glisse et zoome dans l'image au mot près, clés `CamK` {at, x, y, s} en pixels de l'image, relais de 18 images) +
+  cercles roses qui pulsent sur la structure dont parle la voix ; repères `DG` (vessie, vésicules, prostate, urètre,
+  testicules, prostate saine, cancer, tumeur). Scène `prostate` : vue d'ensemble → prostate → vessie → urètre → vésicules
+  + testicules ; scène `cancer` : zoom prostate → comparaison saine / cancer → la tumeur entourée ; « le piège » revient sur
+  la tumeur ; la loupe de l'accroche montre ce schéma. La coupe de profil `Pelvis` reste pour l'adénome, le toucher
+  rectal, la biopsie et les signes. Quand le propriétaire fournit un schéma : l'utiliser tel quel, l'animer par la
+  caméra et des surlignages, sans le redessiner.
 
 ## Voix ElevenLabs « Laura » (choisie par le propriétaire pour les nouvelles vidéos)
 

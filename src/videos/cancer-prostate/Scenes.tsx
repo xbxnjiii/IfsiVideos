@@ -5,7 +5,7 @@
 // signes tardifs, les examens (toucher rectal, PSA, IRM, biopsie), les risques, les traitements, chute « dès 50 ans ».
 // Storyboard : docs/lpi/storyboard-cancer-prostate.md.
 import React from 'react';
-import {AbsoluteFill, Easing, interpolate, useCurrentFrame} from 'remotion';
+import {AbsoluteFill, Easing, Img, interpolate, staticFile, useCurrentFrame} from 'remotion';
 import {Big, fadeIn, Note, PointTag, popAt, RowCard} from '../../brand/bold';
 import {ScanMonitor} from '../../brand/devices';
 import {Drop} from '../../brand/hands';
@@ -130,10 +130,11 @@ export const Hook: React.FC = () => {
 				</Bedroom>
 				{/* loupe « rayons X » sur le bas-ventre : la vessie et la prostate */}
 				{lens > 0.01 && manX !== null ? (
-					<div style={{position: 'absolute', left: belly.x - 120, top: belly.y - 120, width: 240, height: 240, borderRadius: 120, overflow: 'hidden', border: `8px solid ${LPI.paper}`, boxShadow: `0 0 40px ${alpha(LPI.sky, 0.8)}`, background: alpha(LPI.navy, 0.85), transform: `scale(${lens})`}}>
-						<div style={{position: 'absolute', left: -88, top: -22}}>
-							<Pelvis width={360} body={false} fill={0.8} glow={fadeIn(frame, PROST - 2, 6)} />
+					<div style={{position: 'absolute', left: belly.x - 120, top: belly.y - 120, width: 240, height: 240, borderRadius: 120, overflow: 'hidden', border: `8px solid ${LPI.paper}`, boxShadow: `0 0 40px ${alpha(LPI.sky, 0.8)}`, background: '#FFFFFF', transform: `scale(${lens})`}}>
+						<div style={{position: 'absolute', left: 120 - 565 * 0.55, top: 120 - 470 * 0.55, width: 1536, height: 1024, transformOrigin: '0 0', transform: 'scale(0.55)'}}>
+							<Img src={staticFile('images/prostate/appareil-masculin.webp')} style={{width: 1536, height: 1024}} />
 						</div>
+						<div style={{position: 'absolute', left: 120 - 50, top: 120 + (548 - 470) * 0.55 - 40, width: 100, height: 80, borderRadius: 50, border: `5px solid ${LPI.pink}`, opacity: fadeIn(frame, PROST - 2, 6)}} />
 					</div>
 				) : null}
 			</AbsoluteFill>
@@ -165,6 +166,68 @@ export const Hook: React.FC = () => {
 	);
 };
 
+/* ═══════════════════════════════ SCHÉMA FOURNI : CAMÉRA QUI GLISSE ET ZOOME DEDANS ═══════════════════════════════ */
+// Schéma « Appareil génital masculin » fourni par le propriétaire (1536 × 1024), gardé tel quel (couleurs, annotations) :
+// on se déplace dedans au mot près et on entoure la structure dont parle la voix.
+const IMG = {src: 'images/prostate/appareil-masculin.webp', w: 1536, h: 1024};
+/** Repères du schéma (pixels de l'image). */
+const DG = {
+	all: {x: 445, y: 565, s: 1.23},
+	bladder: [560, 315],
+	vesL: [395, 455],
+	vesR: [745, 455],
+	prostate: [570, 548],
+	urethra: [565, 760],
+	testisL: [440, 860],
+	testisR: [700, 860],
+	healthy: [1045, 450],
+	cancer: [1345, 450],
+	tumor: [1401, 470],
+	panel: [1197, 455],
+	info: [1182, 835],
+} as const;
+type CamK = {at: number; x: number; y: number; s: number};
+const CARD = {left: 40, top: 290, w: 1000, h: 1140};
+/** Position de la caméra : chaque clé prend le relais en douceur (18 images). */
+const camOf = (frame: number, keys: CamK[], dur = 18) => {
+	let c = {x: keys[0].x, y: keys[0].y, s: keys[0].s};
+	for (const k of keys.slice(1)) {
+		const t = interpolate(frame, [k.at, k.at + dur], [0, 1], {...clamp, easing: Easing.inOut(Easing.cubic)});
+		c = {x: c.x + (k.x - c.x) * t, y: c.y + (k.y - c.y) * t, s: c.s + (k.s - c.s) * t};
+	}
+	return c;
+};
+/** Cercle rose qui pulse sur une structure du schéma (repère de l'image), visible de `from` à `to`. */
+type Ring = {from: number; to?: number; x: number; y: number; r: number; ry?: number};
+const Diagram: React.FC<{keys: CamK[]; rings?: Ring[]; o?: number; children?: React.ReactNode}> = ({keys, rings = [], o = 1, children}) => {
+	const frame = useCurrentFrame();
+	const c = camOf(frame, keys);
+	const tx = CARD.w / 2 - c.x * c.s;
+	const ty = CARD.h / 2 - c.y * c.s;
+	return (
+		<div style={{position: 'absolute', left: CARD.left, top: CARD.top, width: CARD.w, height: CARD.h, borderRadius: 40, overflow: 'hidden', background: '#FFFFFF', border: `6px solid ${N}`, boxShadow: SHADOW, opacity: o}}>
+			<div style={{position: 'absolute', left: 0, top: 0, width: IMG.w, height: IMG.h, transformOrigin: '0 0', transform: `translate(${tx}px, ${ty}px) scale(${c.s})`}}>
+				<Img src={staticFile(IMG.src)} style={{width: IMG.w, height: IMG.h, display: 'block'}} />
+				<svg width={IMG.w} height={IMG.h} viewBox={`0 0 ${IMG.w} ${IMG.h}`} style={{position: 'absolute', left: 0, top: 0, overflow: 'visible'}}>
+					{rings.map((r, i) => {
+						const k = fadeIn(frame, r.from, 6) * (r.to === undefined ? 1 : 1 - lin(frame, r.to, r.to + 8));
+						if (k <= 0) return null;
+						const p = 0.5 + 0.5 * Math.sin((frame - r.from) / 5);
+						const sc = 0.8 + 0.2 * popAt(frame, r.from);
+						return (
+							<g key={i} opacity={k} transform={`translate(${r.x} ${r.y}) scale(${sc})`}>
+								<ellipse rx={r.r + 10 + 6 * p} ry={(r.ry ?? r.r) + 10 + 6 * p} fill="none" stroke={alpha(LPI.pink, 0.45)} strokeWidth={14 / c.s} />
+								<ellipse rx={r.r} ry={r.ry ?? r.r} fill="none" stroke={LPI.pink} strokeWidth={7 / c.s + 3} strokeDasharray={`${14 / c.s + 6} ${8 / c.s + 4}`} />
+							</g>
+						);
+					})}
+				</svg>
+				{children}
+			</div>
+		</div>
+	);
+};
+
 /* ═══════════════════════════════ LA PROSTATE ═══════════════════════════════ */
 export const Prostate: React.FC = () => {
 	const frame = useCurrentFrame();
@@ -174,42 +237,66 @@ export const Prostate: React.FC = () => {
 	const SOUS = at('prostate', 'sous');
 	const VESSIE = at('prostate', 'vessie');
 	const ENTOURE = at('prostate', 'entoure');
-	const CANAL = at('prostate', 'canal');
 	const URETRE = at('prostate', "l'urètre");
 	const FABRIQUE = at('prostate', 'fabrique');
 	const SPERME = at('prostate', 'sperme');
-	const P = pp('prostate');
+	const keys: CamK[] = [
+		{at: 0, ...DG.all},
+		{at: PR, x: 470, y: 548, s: 2.2},
+		{at: SOUS - 4, x: 470, y: 420, s: 1.7},
+		{at: ENTOURE - 2, x: 470, y: 690, s: 1.7},
+		{at: FABRIQUE - 4, ...DG.all},
+	];
 	return (
 		<AbsoluteFill>
 			<Bg />
 			<Big from={0} to={ENTOURE - 6} text={'La *prostate*'} size={110} y={150} center />
-			<Big from={ENTOURE} text={"Autour de *l'urètre*"} size={96} y={150} center />
-			<PelvisAt o={fadeIn(frame, 0, 8)} glow={fadeIn(frame, PR, 8) * (1 - 0.6 * lin(frame, VESSIE, VESSIE + 10))} bladderGlow={fadeIn(frame, VESSIE - 2, 6) * (1 - lin(frame, ENTOURE, ENTOURE + 8))} urethraGlow={fadeIn(frame, CANAL - 2, 8)} flow={fadeIn(frame, CANAL, 8)} />
-			<PointTag at={GLANDE - 2} to={CHAT - 4} x={760} y={1330} px={P.x} py={P.y + 40} size={44} tone={LPI.pink}>
-				une petite glande
-			</PointTag>
-			{frame >= CHAT - 2 ? (
-				<div style={{position: 'absolute', left: 170, top: 1270, transform: `scale(${popAt(frame, CHAT - 2)})`}}>
-					<Chestnut size={170} />
+			<Big from={ENTOURE} to={FABRIQUE - 6} text={"Autour de *l'urètre*"} size={96} y={150} center />
+			<Big from={FABRIQUE} text={'+ une partie du *sperme*'} size={88} y={150} center />
+			<Diagram
+				o={fadeIn(frame, 0, 8)}
+				keys={keys}
+				rings={[
+					{from: PR + 4, to: SOUS - 4, x: DG.prostate[0], y: DG.prostate[1], r: 125, ry: 92},
+					{from: VESSIE - 2, to: ENTOURE - 4, x: DG.bladder[0], y: DG.bladder[1], r: 180, ry: 140},
+					{from: URETRE - 4, to: FABRIQUE - 4, x: DG.urethra[0], y: DG.urethra[1], r: 34, ry: 240},
+					{from: SPERME - 6, x: DG.vesL[0], y: DG.vesL[1], r: 60, ry: 75},
+					{from: SPERME - 6, x: DG.vesR[0], y: DG.vesR[1], r: 60, ry: 75},
+					{from: SPERME, x: DG.testisL[0], y: DG.testisL[1], r: 75},
+					{from: SPERME, x: DG.testisR[0], y: DG.testisR[1], r: 75},
+				]}
+			/>
+			{frame < CHAT + 2 ? (
+				<AbsoluteFill style={{opacity: 1 - lin(frame, CHAT - 6, CHAT)}}>
+					<Pill at={GLANDE - 2} x={540} y={1500} tone={LPI.pink}>
+						une petite glande
+					</Pill>
+				</AbsoluteFill>
+			) : null}
+			{frame >= CHAT - 2 && frame < SOUS + 4 ? (
+				<div style={{position: 'absolute', left: 770, top: 1420, transform: `scale(${popAt(frame, CHAT - 2) * (1 - lin(frame, SOUS - 4, SOUS + 4))})`}}>
+					<Chestnut size={190} />
 				</div>
 			) : null}
-			<PointTag at={CHAT + 4} to={SOUS - 2} x={560} y={1360} px={350} py={1350} size={42}>
-				une châtaigne
-			</PointTag>
-			<PointTag at={VESSIE - 2} to={ENTOURE - 4} x={250} y={330} px={pp('bladder').x - 40} py={pp('bladder').y - 40} size={46} tone={LPI.sky}>
-				la vessie
-			</PointTag>
-			<PointTag at={URETRE - 2} x={760} y={1330} px={pp('urethra').x} py={pp('urethra').y} size={46} tone={LPI.sky}>
-				l'urètre : l'urine sort
-			</PointTag>
-			<Note at={FABRIQUE} y={1520} size={46} tone={LPI.pink}>
-				+ une partie du sperme
+			{frame >= CHAT ? (
+				<div style={{position: 'absolute', left: 0, right: 0, top: 1470, display: 'flex', justifyContent: 'center', opacity: 1 - lin(frame, SOUS - 4, SOUS + 4)}}>
+					<Pill at={CHAT} x={420} y={30} tone={LPI.paper}>
+						la taille d'une châtaigne
+					</Pill>
+				</div>
+			) : null}
+			<Note at={VESSIE - 2} to={ENTOURE - 6} y={1500} size={46} tone={LPI.sky}>
+				juste sous la vessie
 			</Note>
+			<Note at={URETRE - 2} to={FABRIQUE - 6} y={1500} size={46} tone={LPI.sky}>
+				l'urètre : l'urine sort par là
+			</Note>
+			<Sfx name="whoosh" at={PR} volume={0.06} />
 			<Sfx name="pop" at={GLANDE - 2} volume={0.07} />
 			<Sfx name="pop" at={CHAT - 2} volume={0.08} />
-			<Sfx name="pop" at={VESSIE - 2} volume={0.07} />
-			<Sfx name="pop" at={URETRE - 2} volume={0.07} />
-			<Sfx name="pop" at={SPERME - 8} volume={0.06} />
+			<Sfx name="whoosh" at={SOUS - 4} volume={0.05} />
+			<Sfx name="whoosh" at={ENTOURE - 2} volume={0.05} />
+			<Sfx name="pop" at={SPERME - 6} volume={0.06} />
 		</AbsoluteFill>
 	);
 };
@@ -277,24 +364,35 @@ export const Cancer: React.FC = () => {
 	const PIEGE = at('cancer', 'piège');
 	const DEBUT = at('cancer', 'début');
 	const AUCUN = at('cancer', 'aucun');
-	const cellsO = fadeIn(frame, 2, 8) * (1 - lin(frame, CEST - 8, CEST));
-	const k = lin(frame, MULTI - 4, CONTROLE + 24);
+	// le schéma : zoom sur la prostate → saine / cancer → la tumeur → l'encadré ; il revient pour « le piège »
+	const diagO = fadeIn(frame, 0, 8) * (1 - lin(frame, CEST - 8, CEST)) + fadeIn(frame, PIEGE - 4, 8);
 	const numO = fadeIn(frame, CEST, 6) * (1 - lin(frame, PIEGE - 8, PIEGE));
-	const pelO = fadeIn(frame, PIEGE - 2, 8);
+	const keys: CamK[] = [
+		{at: 0, x: 470, y: 548, s: 2.2},
+		{at: CELL - 8, x: DG.panel[0], y: DG.panel[1], s: 1.55},
+		{at: MULTI, x: DG.cancer[0] + 20, y: DG.cancer[1] + 30, s: 2.6},
+		{at: PIEGE - 6, x: DG.cancer[0] + 20, y: DG.cancer[1] + 30, s: 2.4},
+	];
 	return (
 		<AbsoluteFill>
 			<Bg tone={LPI.pink} />
-			<Big from={0} to={CEST - 8} text={'Le *cancer*'} size={110} y={150} center />
-			{cellsO > 0 ? (
-				<div style={{position: 'absolute', left: 90, top: 520, opacity: cellsO}}>
-					<CellField k={k} width={900} />
-				</div>
+			<Big from={0} to={CELL - 10} text={'Le *cancer*'} size={110} y={150} center />
+			<Big from={CELL - 6} to={MULTI - 6} text={'Saine… ou *cancer* ?'} size={96} y={150} center />
+			<Big from={MULTI} to={CEST - 8} text={'Une *tumeur*'} size={110} y={150} center />
+			{diagO > 0.01 ? (
+				<Diagram
+					o={Math.min(1, diagO)}
+					keys={keys}
+					rings={[
+						{from: 6, to: CELL - 10, x: DG.prostate[0], y: DG.prostate[1], r: 125, ry: 92},
+						{from: CELL - 2, to: MULTI - 4, x: DG.healthy[0], y: DG.healthy[1] + 10, r: 140, ry: 120},
+						{from: MULTI + 6, to: CEST - 10, x: DG.tumor[0], y: DG.tumor[1], r: 52},
+						{from: PIEGE + 4, x: DG.tumor[0], y: DG.tumor[1], r: 52},
+					]}
+				/>
 			) : null}
-			<Note at={CELL} to={CEST - 10} y={1300} size={46} tone={LPI.paper}>
-				des cellules…
-			</Note>
-			<Note at={MULTI} to={CEST - 10} y={1420} size={46} tone={LPI.pink}>
-				qui se multiplient sans contrôle
+			<Note at={MULTI + 8} to={CEST - 10} y={1490} size={42} tone={LPI.pink}>
+				des cellules qui se multiplient sans contrôle
 			</Note>
 			{numO > 0 ? (
 				<AbsoluteFill style={{opacity: numO}}>
@@ -312,19 +410,15 @@ export const Cancer: React.FC = () => {
 					</Pill>
 				</AbsoluteFill>
 			) : null}
-			{pelO > 0 ? (
-				<>
-					<Big from={PIEGE} text={'Le *piège*'} size={110} y={150} center />
-					<PelvisAt o={pelO} flow={1} tumor={lin(frame, DEBUT - 6, DEBUT + 10)} />
-					<PointTag at={DEBUT + 4} x={260} y={1330} px={pp('tumor').x} py={pp('tumor').y} size={44} tone={LPI.pink}>
-						une tumeur
-					</PointTag>
-					<Stamp at={AUCUN} x={600} y={1500} text="AUCUN SIGNE" size={66} />
-				</>
-			) : null}
+			<Big from={PIEGE} text={'Le *piège*'} size={110} y={150} center />
+			<Note at={DEBUT + 2} y={1460} size={44} tone={LPI.paper}>
+				au début : rien ne se sent
+			</Note>
+			<Stamp at={AUCUN} x={640} y={1600} text="AUCUN SIGNE" size={62} />
 			<Burst at={CEST} x={540} y={560} r={260} n={12} />
-			<Sfx name="pop" at={CELL} volume={0.06} />
+			<Sfx name="whoosh" at={CELL - 8} volume={0.06} />
 			<Sfx name="whoosh" at={MULTI} volume={0.06} />
+			<Sfx name="pop" at={MULTI + 6} volume={0.07} />
 			<Sfx name="impact" at={CEST} volume={0.12} />
 			<Sfx name="pop" at={CINQ - 2} volume={0.07} />
 			<Sfx name="whoosh" at={PIEGE - 2} volume={0.06} />

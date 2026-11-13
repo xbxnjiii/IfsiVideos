@@ -19,3 +19,5 @@ Briques : `src/brand/prostate.tsx` (`Bedroom`, `AlarmClock`, `Pelvis`, `CellFiel
 | fin | Alors, va lui en parler : à partir de cinquante ans, on en parle à son médecin… même quand tout va bien ! | « Va lui en parler » → « Dès 50 ans… » calendrier 50+, stéthoscope, « on en parle à son médecin » → « …même quand tout va bien ! » |
 
 Bassin redessiné en version détaillée (demandé : « moins cartoon, plus réaliste ») : voir `Pelvis` dans `src/brand/prostate.tsx`.
+
+Schéma fourni par le propriétaire (`public/images/prostate/appareil-masculin.webp`) : support principal des scènes `prostate` et `cancer` (caméra qui zoome au mot près, cercles roses qui pulsent ; comparaison prostate saine / cancer, tumeur entourée) et de la loupe de l'accroche.
