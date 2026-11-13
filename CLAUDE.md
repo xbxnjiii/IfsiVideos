@@ -385,6 +385,10 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   `Pelvis` : `grow` adénome, `tumor`, `spread`, `finger` toucher rectal, `needle` biopsie, `flow`, `glow`…). Voix : « Il y
   a plus de risques » était entendu « il n'y a plus de risque » → « Le risque augmente… » ; « antillaises » → « ta famille
   vient d'Afrique ou des Antilles ». Storyboard `docs/lpi/storyboard-cancer-prostate.md`.
+  Retour du propriétaire (« c'est super ») : **à l'avenir, détailler davantage l'intérieur du corps, moins cartoon, plus
+  réaliste** (le bassin en schéma simple était trop plat : vraies formes d'organes, volumes, dégradés, ombres douces,
+  textures, tissus autour, dans l'esprit du rendu soigné de `CuttingCloseUp`). Idée à trancher : parler **au spectateur**
+  (« tu ») plutôt que d'un patient, pour plus de rétention.
 
 ## Voix ElevenLabs « Laura » (choisie par le propriétaire pour les nouvelles vidéos)
 
