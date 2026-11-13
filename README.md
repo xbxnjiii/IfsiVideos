@@ -59,6 +59,7 @@ pas de logiciel de montage, pas de banque d'images.
 | 46 | Court info : brûlure du 1er degré (voix gratuite, accroche plage réaliste) | `Brulure-1` | [voix/46-brulure-1.script.json](voix/46-brulure-1.script.json) | [storyboard](docs/lpi/storyboard-brulures-degres.md) |
 | 47 | Court info : brûlure du 2e degré superficiel / profond (voix gratuite, accroche pâtes réaliste) | `Brulure-2` | [voix/47-brulure-2.script.json](voix/47-brulure-2.script.json) | [storyboard](docs/lpi/storyboard-brulures-degres.md) |
 | 48 | Court info : brûlure du 3e degré (voix gratuite, accroche barbecue réaliste) | `Brulure-3` | [voix/48-brulure-3.script.json](voix/48-brulure-3.script.json) | [storyboard](docs/lpi/storyboard-brulures-degres.md) |
+| 49 | Pathologie : le cancer de la prostate (voix gratuite, accroche « il se lève la nuit ») | `Cancer-Prostate` | [voix/49-cancer-prostate.script.json](voix/49-cancer-prostate.script.json) | [storyboard](docs/lpi/storyboard-cancer-prostate.md) |
 
 ## Utilisation
 

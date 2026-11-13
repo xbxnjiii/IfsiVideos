@@ -1,0 +1,47 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Une heure du matin… il se lève pour aller aux toilettes. Trois heures… encore. Cinq heures… encore ! Et il se dit : c'est l'âge. Peut-être… mais il vaut mieux faire vérifier sa prostate."
+ },
+ {
+  "id": "prostate",
+  "rate": "+0%",
+  "text": "La prostate, c'est une petite glande, de la taille d'une châtaigne, juste sous la vessie. Elle entoure le canal qui évacue l'urine : l'urètre. Et elle fabrique une partie du sperme."
+ },
+ {
+  "id": "adenome",
+  "rate": "+0%",
+  "text": "Avec l'âge, elle grossit souvent : c'est l'adénome, une grosse prostate, sans gravité. Elle serre l'urètre… d'où les envies d'uriner la nuit, et un jet plus faible."
+ },
+ {
+  "id": "cancer",
+  "rate": "+0%",
+  "text": "Le cancer, lui, ce sont des cellules qui se multiplient sans contrôle. C'est le cancer le plus fréquent chez l'homme, surtout après cinquante ans. Et le piège : au début, il ne donne souvent aucun signe."
+ },
+ {
+  "id": "signes",
+  "rate": "+0%",
+  "text": "Plus tard, il peut y avoir du sang dans les urines ou dans le sperme… et des douleurs dans les os, quand il s'est étendu."
+ },
+ {
+  "id": "examens",
+  "rate": "+0%",
+  "text": "Pour le rechercher : le toucher rectal, le médecin palpe la prostate avec un doigt. Et une prise de sang : le dosage du {PSA|P S A}, une protéine fabriquée par la prostate. Si c'est suspect : une {IRM|I R M}, puis une biopsie, un petit prélèvement qui confirme le cancer."
+ },
+ {
+  "id": "risques",
+  "rate": "+0%",
+  "text": "Le risque augmente avec l'âge, si ton père ou ton frère a été touché, ou si ta famille vient d'Afrique ou des Antilles."
+ },
+ {
+  "id": "traitement",
+  "rate": "+0%",
+  "text": "Un petit cancer qui évolue lentement ? On le surveille, tout simplement. Sinon : la chirurgie, la radiothérapie, ou un traitement hormonal. Avec parfois, après, des fuites urinaires ou des troubles de l'érection."
+ },
+ {
+  "id": "fin",
+  "rate": "+2%",
+  "text": "Alors, à partir de cinquante ans, on en parle à son médecin… même quand tout va bien !"
+ }
+]

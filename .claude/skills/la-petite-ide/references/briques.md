@@ -604,6 +604,25 @@ Briques « pression artérielle » réutilisables : normes adulte (zones), manom
 - `Manometer` — Manomètre du tensiomètre (0 → 300 mmHg).
 - `BPReadout` — Lecture du tensiomètre : « 120 / 80 mmHg », chiffre expliqué en surbrillance (`hi` = 'sys' | 'dia').
 
+## `prostate.tsx`
+Briques « cancer de la prostate » (vidéo n° 49). Mise en situation réaliste (demandé) : la chambre la nuit (mur sombre, fenêtre et lune, lit en bois, couette, table de nuit, réveil à chiffres rouges, lampe de chevet, porte des toilettes qui laisse passer la lumière) et l'homme endormi. Explications aux couleurs de la marque : le bassin de l'homme vu de profil (vessie, prostate, urètre, rectum, os du pubis) avec l'adénome qui serre l'urètre, la tumeur, le doigt du toucher rectal, l'aiguille de la biopsie ; cellules qui se multiplient ; châtaigne (taille réelle) ; pictos.
+
+- `NIGHT` — Vraies couleurs de la chambre la nuit (mise en situation réaliste).
+- `ROOM` — Repères de la chambre (pixels, cadre 1080 × 1920).
+- `AlarmClock` — Réveil numérique (repère 220 × 110) : `time` « 01:00 », `pop` fait sauter les chiffres quand l'heure change.
+- `Bedroom` — La chambre la nuit, plein cadre 1080 × 1920 (vraies couleurs).
+- `PELVIS` — Points du bassin (repère 800 × 900) pour poser étiquettes et loupes.
+- `pelvisPt` — Convertit un point du bassin en pixels pour un dessin posé en (left, top) sur `W` pixels de large.
+- `Pelvis` — Bassin de l'homme vu de profil (schéma, couleurs de la marque) : vessie (`fill` urine), prostate sous la vessie, urètre qui la traverse, rectum derrière, os du pubis devant.
+- `Chestnut` — Châtaigne (vraies couleurs, repère 200 × 200) : la taille de la prostate.
+- `CellField` — Champ de cellules (repère 900 × 640) : des cellules saines (bleu clair) ; `k` 0 → 1 : les cellules cancéreuses (rose, noyau bleu nuit irrégulier) se multiplient depuis le centre et poussent les autres ; `split` : la cellule du centre se…
+- `BonePain` — Os qui fait mal (repère 300 × 200) : os + éclairs de douleur roses qui clignotent (`pain` 0 → 1).
+- `FamilyIcon` — Famille (repère 100 × 100, trait bleu nuit) : un père et son fils, le père entouré (antécédent familial).
+- `GlobeIcon` — Globe (repère 100 × 100) : les origines (famille venue d'Afrique ou des Antilles).
+- `AgeIcon` — Calendrier « 50 + » (repère 100 × 100) : l'âge.
+- `RayIcon` — Radiothérapie (repère 100 × 100) : faisceaux qui convergent sur une cible.
+- `WatchIcon` — Surveillance active (repère 100 × 100) : un œil sur un calendrier coché (on surveille, sans traiter tout de suite).
+
 ## `sampling.tsx`
 Matériel de soins (prise de sang) : aiguille Vacutainer (2 pointes, manchon), corps de pompe (porte-tube), unité à ailettes (épicrânienne), tube sous vide (bouchon coloré, sang qui monte), solution hydroalcoolique, main (nue ou gantée), flacon d'antiseptique, compresse (stérile : sachet), pansement, collecteur à OPCT, sac DASRI, et le bras (veine, garrot, point de ponction, désinfection, compresse qui appuie, aiguille, pansement). Couleurs de la marque uniquement (le sang = rose, les bouchons = bleu, bleu clair, rose, bleu nuit).
 

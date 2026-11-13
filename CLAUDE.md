@@ -373,6 +373,18 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   `BlisterIcon`, `GauzeIcon`, `PalmIcon`, `ShirtIcon`, `BlanketIcon`, `NoMark`. Brique `src/brand/burnstage.tsx` (`BurnPatch`,
   `CutView`, `BeachTop`, `PastaPour`, `Barbecue`). La vidéo `Brulure` (n° 40, les bons gestes) reste à part.
   Storyboard `docs/lpi/storyboard-brulures-degres.md`.
+- `Cancer-Prostate` (n° 49, ≈ 1 min 34, format « pathologie », voix gratuite d'abord, sans barre de progression) : accroche
+  **« il se lève la nuit »** (choisie par le propriétaire parmi 3) : chambre la nuit en vraies couleurs, réveil en gros plan
+  01:00 → 03:00 → 05:00, il se lève, la porte des toilettes s'ouvre ; « c'est l'âge… ? » puis plongée vers sa prostate
+  (loupe). Puis prostate (châtaigne, sous la vessie, autour de l'urètre, une partie du sperme), adénome (sans gravité,
+  serre l'urètre : levers la nuit, jet faible), cancer (cellules qui se multiplient, 1er cancer de l'homme, après 50 ans,
+  souvent aucun signe au début), signes tardifs (sang dans les urines / le sperme, douleurs osseuses), examens (toucher
+  rectal, PSA, IRM, biopsie), risques (âge, père ou frère, famille venue d'Afrique ou des Antilles), traitements
+  (surveillance, chirurgie, radiothérapie, hormonal ; parfois fuites urinaires, troubles de l'érection), chute « dès 50
+  ans, on en parle à son médecin… même quand tout va bien ». Briques `src/brand/prostate.tsx` (`Bedroom`, `AlarmClock`,
+  `Pelvis` : `grow` adénome, `tumor`, `spread`, `finger` toucher rectal, `needle` biopsie, `flow`, `glow`…). Voix : « Il y
+  a plus de risques » était entendu « il n'y a plus de risque » → « Le risque augmente… » ; « antillaises » → « ta famille
+  vient d'Afrique ou des Antilles ». Storyboard `docs/lpi/storyboard-cancer-prostate.md`.
 
 ## Voix ElevenLabs « Laura » (choisie par le propriétaire pour les nouvelles vidéos)
 
