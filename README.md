@@ -64,6 +64,7 @@ pas de logiciel de montage, pas de banque d'images.
 | 51 | Pathologie : le cancer du poumon (voix Laura, accroche « le mouchoir sur le balcon », schéma fourni sans annotations) | `Cancer-Poumon` | [voix/51-cancer-poumon.script.json](voix/51-cancer-poumon.script.json) | [storyboard](docs/lpi/storyboard-cancer-poumon.md) |
 | 52 | Pathologie : le cancer colorectal (voix Laura, accroche « la lettre dans le tiroir », schéma fourni sans annotations) | `Cancer-Colorectal` | [voix/52-cancer-colorectal.script.json](voix/52-cancer-colorectal.script.json) | [storyboard](docs/lpi/storyboard-cancer-colorectal.md) |
 | 53 | Pathologie : le cancer de la vessie (voix gratuite, accroche « l'eau qui rougit », schéma fourni sans annotations) | `Cancer-Vessie` | [voix/53-cancer-vessie.script.json](voix/53-cancer-vessie.script.json) | [storyboard](docs/lpi/storyboard-cancer-vessie.md) |
+| 54 | Pathologie : le cancer du pancréas (voix gratuite, accroche « le jaune dans le miroir », schéma fourni sans annotations) | `Cancer-Pancreas` | [voix/54-cancer-pancreas.script.json](voix/54-cancer-pancreas.script.json) | [storyboard](docs/lpi/storyboard-cancer-pancreas.md) |
 
 ## Utilisation
 

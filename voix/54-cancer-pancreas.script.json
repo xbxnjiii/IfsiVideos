@@ -1,0 +1,47 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Ce matin, ton père se regarde dans le miroir… et le blanc de ses yeux est devenu jaune. Il a aussi maigri, sans faire de régime. Il se dit : c'est la fatigue. Pourtant, une jaunisse, même sans douleur, ça se montre vite à un médecin."
+ },
+ {
+  "id": "pancreas",
+  "rate": "+0%",
+  "text": "Le pancréas est caché derrière l'estomac, collé au duodénum, le début de l'intestin. Il a deux rôles : il fabrique un liquide qui aide à digérer, versé dans le duodénum. Et il fabrique l'insuline, qui règle le sucre dans le sang."
+ },
+ {
+  "id": "cancer",
+  "rate": "+0%",
+  "text": "Le cancer du pancréas, ce sont des cellules du pancréas qui se multiplient sans contrôle. Elles forment une tumeur. Il est moins fréquent que d'autres cancers… mais c'est l'un des plus graves, car on le découvre souvent tard."
+ },
+ {
+  "id": "jaunisse",
+  "rate": "+0%",
+  "text": "Pourquoi ce jaune ? La bile, fabriquée par le foie, descend par un petit canal qui traverse le pancréas. Si la tumeur appuie dessus, la bile ne passe plus : elle repart dans le sang. La peau et les yeux jaunissent, les urines foncent, et les selles deviennent claires."
+ },
+ {
+  "id": "signes",
+  "rate": "+0%",
+  "text": "Les autres signes : une perte de poids sans raison, une douleur au ventre qui part dans le dos, une grande fatigue, ou un diabète qui apparaît d'un coup."
+ },
+ {
+  "id": "risques",
+  "rate": "+0%",
+  "text": "Le risque augmente avec l'âge, le tabac, le surpoids, l'alcool en excès, un diabète ancien, ou une pancréatite qui dure : une inflammation du pancréas."
+ },
+ {
+  "id": "examens",
+  "rate": "+0%",
+  "text": "Pour le trouver : une prise de sang, puis un scanner. Et parfois, une petite caméra passe par la bouche jusqu'à l'estomac, pour regarder le pancréas de tout près, et faire une biopsie, un petit prélèvement."
+ },
+ {
+  "id": "traitement",
+  "rate": "+0%",
+  "text": "Pour le soigner : la chirurgie quand c'est possible, la chimiothérapie, parfois la radiothérapie. Et si la bile est bloquée, on pose une prothèse, un petit tube qui la laisse passer."
+ },
+ {
+  "id": "fin",
+  "rate": "+2%",
+  "text": "Alors, va lui en parler : des yeux jaunes, ou une perte de poids sans raison, on consulte vite. Et arrêter de fumer protège aussi son pancréas !"
+ }
+]

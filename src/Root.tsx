@@ -108,6 +108,8 @@ import {CancerColorectal, CancerColorectalProps} from './videos/cancer-colorecta
 import {TL as CANCER_COLORECTAL_TL} from './videos/cancer-colorectal/timeline';
 import {CancerVessie, CancerVessieProps} from './videos/cancer-vessie/CancerVessie';
 import {TL as CANCER_VESSIE_TL} from './videos/cancer-vessie/timeline';
+import {CancerPancreas, CancerPancreasProps} from './videos/cancer-pancreas/CancerPancreas';
+import {TL as CANCER_PANCREAS_TL} from './videos/cancer-pancreas/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -634,6 +636,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies CancerVessieProps}
+		/>
+		{/* 54 · Cancer-Pancreas */}
+		<Composition
+			id="Cancer-Pancreas"
+			component={CancerPancreas}
+			durationInFrames={CANCER_PANCREAS_TL.total}
+			fps={CANCER_PANCREAS_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies CancerPancreasProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition

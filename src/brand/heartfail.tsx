@@ -11,7 +11,7 @@ const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
 const SK = {stroke: N, strokeWidth: 7, strokeLinejoin: 'round' as const, strokeLinecap: 'round' as const};
 
 /** Pèse-personne vu de face (360 × 300) ; `value` en kg (une décimale), `delta` : affiche « + » devant, `alert` : écran rose. */
-export const BathScale: React.FC<{value: number; width?: number; delta?: boolean; alert?: number}> = ({value, width = 360, delta = false, alert = 0}) => {
+export const BathScale: React.FC<{value: number; width?: number; delta?: boolean; alert?: number; minus?: boolean}> = ({value, width = 360, delta = false, alert = 0, minus = false}) => {
 	const k = width / 360;
 	return (
 		<div style={{position: 'relative', width, height: 300 * k}}>
@@ -24,7 +24,7 @@ export const BathScale: React.FC<{value: number; width?: number; delta?: boolean
 				))}
 			</svg>
 			<div style={{position: 'absolute', left: 80 * k, top: 58 * k, width: 200 * k, height: 84 * k, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 4 * k, color: alert > 0.5 ? N : LPI.paper, fontFamily: FONT.title, fontWeight: 900}}>
-				{delta ? <span style={{fontSize: 52 * k, lineHeight: 1}}>+</span> : null}
+				{delta ? <span style={{fontSize: 52 * k, lineHeight: 1}}>{minus ? '−' : '+'}</span> : null}
 				<Odometer value={value} decimals={1} places={delta ? 1 : 2} size={58 * k} color={alert > 0.5 ? N : LPI.paper} />
 				<span style={{fontSize: 30 * k, marginLeft: 4 * k}}>kg</span>
 			</div>

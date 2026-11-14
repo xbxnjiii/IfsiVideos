@@ -503,6 +503,22 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   (résection par l'urètre, lavages de la vessie, ablation ; pris tôt, il se soigne très bien), chute « du sang dans les
   urines, même une seule fois, on consulte… arrêter de fumer protège aussi sa vessie ». Briques `src/brand/bladder.tsx`.
   Storyboard `docs/lpi/storyboard-cancer-vessie.md`.
+- `Cancer-Pancreas` (n° 54, ≈ 1 min 45, format « pathologie », voix gratuite d'abord, sans barre de progression) : demandé
+  « pareil, à l'aide de ce schéma, sans les annotations ». Schéma fourni `public/images/pancreas/pancreas-cancer.webp`
+  (foie, vésicule, estomac, duodénum, pancréas + « focus » pancréas sain / avec cancer) nettoyé par
+  `scripts/brand/clean_pancreas_diagram.py` → `-anatomie.png`, `-focus.png` et **chaque pancréas seul** (`-sain.png`,
+  `-cancer.png` : composantes séparées, car les deux dessins se touchent presque). Méthodes : traits et points comblés
+  **en travers du trait** (direction perpendiculaire au trait : le bord d'organe croisé est gardé) ; pastille posée sur un
+  organe comblée le long de son bord ; bout d'organe caché par une pastille repris le long de sa courbe ; ailleurs, seule
+  la pastille et son liseré blanc sont touchés (pas l'organe voisin). Accroche **« le jaune dans le miroir »** avec
+  **« ton père »** : salle de bain, gros plan sur ses yeux qui jaunissent (`DadBalcony` `jaundice`), balance « −6,0 kg »
+  (`BathScale` `minus`), « C'est la fatigue… », plongée et loupe sur le pancréas. Puis le pancréas (caché derrière
+  l'estomac, collé au duodénum, liquide qui aide à digérer, insuline), le cancer (souvent découvert tard), **pourquoi le
+  jaune** (la tumeur de la tête écrase le canal de la bile, elle repart dans le sang : peau / yeux jaunes, urines foncées,
+  selles claires), les autres signes, les risques, les examens (scanner, petite caméra par la bouche + biopsie), les
+  traitements (chirurgie, chimio, radiothérapie, prothèse biliaire), chute « des yeux jaunes, maigrir sans raison : on
+  consulte vite ». Briques `src/brand/pancreas.tsx` (`TumorBlob`, `Stent`, `Sparkle`, pictos). Voix : « un suc » était
+  entendu « un sucre » → « un liquide qui aide à digérer ». Storyboard `docs/lpi/storyboard-cancer-pancreas.md`.
 
 ## Voix ElevenLabs « Laura » (choisie par le propriétaire pour les nouvelles vidéos)
 

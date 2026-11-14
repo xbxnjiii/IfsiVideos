@@ -134,7 +134,7 @@ const Fist: React.FC<{at: [number, number]; r?: number}> = ({at: [x, y], r = 34}
  * fermés) dans son mouchoir (main gauche à la bouche) ; `show` 0 → 1 il baisse le mouchoir devant lui, ouvert, `blood`
  * 0 → 1 la tache de sang ; `worry` sourcils ; `shrug` petit sourire « ce n'est rien ».
  */
-export const DadBalcony: React.FC<{width?: number; smoke?: number; puff?: number; cough?: number; show?: number; blood?: number; worry?: number; shrug?: number; cig?: boolean}> = ({
+export const DadBalcony: React.FC<{width?: number; smoke?: number; puff?: number; cough?: number; show?: number; blood?: number; worry?: number; shrug?: number; cig?: boolean; jaundice?: number}> = ({
 	width = 600,
 	smoke = 0,
 	puff = 0,
@@ -144,6 +144,7 @@ export const DadBalcony: React.FC<{width?: number; smoke?: number; puff?: number
 	worry = 0,
 	shrug = 0,
 	cig = true,
+	jaundice = 0,
 }) => {
 	const frame = useCurrentFrame();
 	const shake = cough * Math.sin(frame * 1.7) * 7;
@@ -181,6 +182,8 @@ export const DadBalcony: React.FC<{width?: number; smoke?: number; puff?: number
 				<ellipse cx={188} cy={228} rx={18} ry={30} fill={DUSK.skin} stroke={DUSK.skinLine} strokeWidth={3} />
 				<ellipse cx={412} cy={228} rx={18} ry={30} fill={DUSK.skin} stroke={DUSK.skinLine} strokeWidth={3} />
 				<path d="M190 200 Q188 100 300 92 Q412 100 410 200 L408 280 Q400 350 300 362 Q200 350 192 280 Z" fill={DUSK.skin} stroke={DUSK.skinLine} strokeWidth={3} />
+				{/* jaunisse (`jaundice` 0 → 1) : le visage prend une teinte jaune */}
+				{jaundice > 0 ? <path d="M190 200 Q188 100 300 92 Q412 100 410 200 L408 280 Q400 350 300 362 Q200 350 192 280 Z" fill="#E3C23A" opacity={0.32 * jaundice} /> : null}
 				{/* barbe de quelques jours */}
 				<path d="M206 270 Q214 346 300 356 Q386 346 394 270 Q370 318 300 322 Q230 318 206 270 Z" fill={DUSK.stubble} opacity={0.45} />
 				{/* cheveux gris courts, tempes dégarnies */}
@@ -193,6 +196,7 @@ export const DadBalcony: React.FC<{width?: number; smoke?: number; puff?: number
 				{[256, 344].map((x) => (
 					<g key={x}>
 						<ellipse cx={x} cy={210} rx={16} ry={10 * eyesShut} fill="#FFFFFF" />
+						{jaundice > 0 ? <ellipse cx={x} cy={210} rx={16} ry={10 * eyesShut} fill="#E9C53A" opacity={0.85 * jaundice} /> : null}
 						{eyesShut > 0.3 ? <circle cx={x} cy={212 + 4 * show} r={7.5} fill="#3A2A22" /> : null}
 						<path d={`M${x - 18} 206 Q${x} ${198} ${x + 18} 206`} fill="none" stroke={DUSK.skinLine} strokeWidth={3} strokeLinecap="round" />
 						<path d={`M${x - 16} 228 Q${x} 234 ${x + 16} 228`} fill="none" stroke={DUSK.skinShade} strokeWidth={3} strokeLinecap="round" />
