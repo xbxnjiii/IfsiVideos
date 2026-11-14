@@ -428,7 +428,7 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   d'urine `UrineDrops` qui ralentissent), signes (cellules qui s'échappent de la tumeur), toucher rectal (doigt ganté
   sous le lobe, la tumeur entourée), IRM (dessin dans l'écran), biopsie (aiguille jusqu'à la tumeur). La coupe de profil
   `Pelvis` n'est plus utilisée dans cette vidéo (elle reste dans `prostate.tsx`).
-- `Cancer-Sein` (n° 50, ≈ 1 min 35, format « pathologie », voix gratuite d'abord, sans barre de progression) : demandé « pareil que
+- `Cancer-Sein` (n° 50, ≈ 1 min 37, format « pathologie », voix Laura après validation (1 835 crédits), sans barre de progression) : demandé « pareil que
   la prostate, à l'aide de ce schéma, **sans les annotations** ». Schéma fourni `public/images/sein/sein-cancer.webp` (sein
   en coupe : muscle pectoral, graisse, lobules, canaux galactophores, mamelon + « focus » sein sain / cancer) nettoyé par
   `scripts/brand/clean_sein_diagram.py` (étiquettes, traits, points, titre, cône, cadre, légendes, encadré et traits roses
