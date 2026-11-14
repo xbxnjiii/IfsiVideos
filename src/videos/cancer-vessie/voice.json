@@ -1,0 +1,1528 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 94.856,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.06,
+   "end": 10.312
+  },
+  {
+   "id": "vessie",
+   "start": 11.232,
+   "end": 21.069
+  },
+  {
+   "id": "cancer",
+   "start": 22.056,
+   "end": 33.493
+  },
+  {
+   "id": "signes",
+   "start": 34.472,
+   "end": 46.21
+  },
+  {
+   "id": "tabac",
+   "start": 47.178,
+   "end": 58.391
+  },
+  {
+   "id": "examens",
+   "start": 59.369,
+   "end": 66.981
+  },
+  {
+   "id": "risques",
+   "start": 67.984,
+   "end": 73.947
+  },
+  {
+   "id": "traitement",
+   "start": 74.916,
+   "end": 86.778
+  },
+  {
+   "id": "fin",
+   "start": 87.766,
+   "end": 94.518
+  }
+ ],
+ "words": [
+  {
+   "text": "Ce",
+   "start": 0.06,
+   "end": 0.24
+  },
+  {
+   "text": "matin,",
+   "start": 0.24,
+   "end": 0.685
+  },
+  {
+   "text": "ton",
+   "start": 0.938,
+   "end": 1.058
+  },
+  {
+   "text": "grand-père",
+   "start": 1.058,
+   "end": 1.43
+  },
+  {
+   "text": "voit",
+   "start": 1.43,
+   "end": 1.587
+  },
+  {
+   "text": "que",
+   "start": 1.587,
+   "end": 1.707
+  },
+  {
+   "text": "ses",
+   "start": 1.707,
+   "end": 1.827
+  },
+  {
+   "text": "urines",
+   "start": 1.827,
+   "end": 2.127
+  },
+  {
+   "text": "sont",
+   "start": 2.127,
+   "end": 2.284
+  },
+  {
+   "text": "rouges.",
+   "start": 2.284,
+   "end": 2.692
+  },
+  {
+   "text": "Ça",
+   "start": 3.029,
+   "end": 3.185
+  },
+  {
+   "text": "ne",
+   "start": 3.185,
+   "end": 3.269
+  },
+  {
+   "text": "fait",
+   "start": 3.269,
+   "end": 3.365
+  },
+  {
+   "text": "pas",
+   "start": 3.365,
+   "end": 3.498
+  },
+  {
+   "text": "mal…",
+   "start": 3.498,
+   "end": 3.786
+  },
+  {
+   "text": "alors",
+   "start": 4.147,
+   "end": 4.363
+  },
+  {
+   "text": "il",
+   "start": 4.363,
+   "end": 4.459
+  },
+  {
+   "text": "se",
+   "start": 4.459,
+   "end": 4.591
+  },
+  {
+   "text": "dit :",
+   "start": 4.591,
+   "end": 4.856
+  },
+  {
+   "text": "ce",
+   "start": 5.096,
+   "end": 5.204
+  },
+  {
+   "text": "n'est",
+   "start": 5.204,
+   "end": 5.312
+  },
+  {
+   "text": "rien.",
+   "start": 5.312,
+   "end": 5.673
+  },
+  {
+   "text": "Pourtant,",
+   "start": 6.046,
+   "end": 6.49
+  },
+  {
+   "text": "du",
+   "start": 6.683,
+   "end": 6.779
+  },
+  {
+   "text": "sang",
+   "start": 6.779,
+   "end": 6.947
+  },
+  {
+   "text": "dans",
+   "start": 6.947,
+   "end": 7.043
+  },
+  {
+   "text": "les",
+   "start": 7.043,
+   "end": 7.139
+  },
+  {
+   "text": "urines,",
+   "start": 7.139,
+   "end": 7.596
+  },
+  {
+   "text": "même",
+   "start": 7.945,
+   "end": 8.113
+  },
+  {
+   "text": "sans",
+   "start": 8.113,
+   "end": 8.257
+  },
+  {
+   "text": "douleur,",
+   "start": 8.257,
+   "end": 8.678
+  },
+  {
+   "text": "ça",
+   "start": 8.954,
+   "end": 9.05
+  },
+  {
+   "text": "se",
+   "start": 9.05,
+   "end": 9.159
+  },
+  {
+   "text": "montre",
+   "start": 9.159,
+   "end": 9.435
+  },
+  {
+   "text": "toujours",
+   "start": 9.435,
+   "end": 9.784
+  },
+  {
+   "text": "à",
+   "start": 9.784,
+   "end": 9.808
+  },
+  {
+   "text": "un",
+   "start": 9.808,
+   "end": 9.844
+  },
+  {
+   "text": "médecin.",
+   "start": 9.844,
+   "end": 10.312
+  },
+  {
+   "text": "Les",
+   "start": 11.232,
+   "end": 11.444
+  },
+  {
+   "text": "reins",
+   "start": 11.444,
+   "end": 11.645
+  },
+  {
+   "text": "filtrent",
+   "start": 11.645,
+   "end": 11.97
+  },
+  {
+   "text": "le",
+   "start": 11.97,
+   "end": 12.082
+  },
+  {
+   "text": "sang",
+   "start": 12.082,
+   "end": 12.357
+  },
+  {
+   "text": "et",
+   "start": 12.357,
+   "end": 12.457
+  },
+  {
+   "text": "fabriquent",
+   "start": 12.457,
+   "end": 12.832
+  },
+  {
+   "text": "l'urine.",
+   "start": 12.832,
+   "end": 13.357
+  },
+  {
+   "text": "Elle",
+   "start": 13.695,
+   "end": 13.87
+  },
+  {
+   "text": "descend",
+   "start": 13.87,
+   "end": 14.182
+  },
+  {
+   "text": "par",
+   "start": 14.182,
+   "end": 14.357
+  },
+  {
+   "text": "deux",
+   "start": 14.357,
+   "end": 14.457
+  },
+  {
+   "text": "petits",
+   "start": 14.457,
+   "end": 14.695
+  },
+  {
+   "text": "tuyaux,",
+   "start": 14.695,
+   "end": 15.132
+  },
+  {
+   "text": "les",
+   "start": 15.419,
+   "end": 15.47
+  },
+  {
+   "text": "uretères,",
+   "start": 15.47,
+   "end": 16.02
+  },
+  {
+   "text": "jusqu'à",
+   "start": 16.32,
+   "end": 16.57
+  },
+  {
+   "text": "la",
+   "start": 16.57,
+   "end": 16.645
+  },
+  {
+   "text": "vessie :",
+   "start": 16.645,
+   "end": 17.07
+  },
+  {
+   "text": "un",
+   "start": 17.419,
+   "end": 17.544
+  },
+  {
+   "text": "réservoir",
+   "start": 17.544,
+   "end": 18.082
+  },
+  {
+   "text": "qui",
+   "start": 18.082,
+   "end": 18.195
+  },
+  {
+   "text": "se",
+   "start": 18.195,
+   "end": 18.307
+  },
+  {
+   "text": "remplit.",
+   "start": 18.307,
+   "end": 18.807
+  },
+  {
+   "text": "Puis",
+   "start": 19.145,
+   "end": 19.307
+  },
+  {
+   "text": "l'urètre",
+   "start": 19.307,
+   "end": 19.72
+  },
+  {
+   "text": "l'évacue",
+   "start": 19.72,
+   "end": 20.182
+  },
+  {
+   "text": "vers",
+   "start": 20.182,
+   "end": 20.319
+  },
+  {
+   "text": "l'extérieur.",
+   "start": 20.319,
+   "end": 21.069
+  },
+  {
+   "text": "Le",
+   "start": 22.056,
+   "end": 22.168
+  },
+  {
+   "text": "cancer",
+   "start": 22.168,
+   "end": 22.506
+  },
+  {
+   "text": "de",
+   "start": 22.506,
+   "end": 22.593
+  },
+  {
+   "text": "la",
+   "start": 22.593,
+   "end": 22.681
+  },
+  {
+   "text": "vessie,",
+   "start": 22.681,
+   "end": 23.093
+  },
+  {
+   "text": "ce",
+   "start": 23.418,
+   "end": 23.531
+  },
+  {
+   "text": "sont",
+   "start": 23.531,
+   "end": 23.643
+  },
+  {
+   "text": "des",
+   "start": 23.643,
+   "end": 23.744
+  },
+  {
+   "text": "cellules",
+   "start": 23.744,
+   "end": 24.056
+  },
+  {
+   "text": "de",
+   "start": 24.056,
+   "end": 24.131
+  },
+  {
+   "text": "la",
+   "start": 24.131,
+   "end": 24.231
+  },
+  {
+   "text": "paroi",
+   "start": 24.231,
+   "end": 24.556
+  },
+  {
+   "text": "qui",
+   "start": 24.556,
+   "end": 24.694
+  },
+  {
+   "text": "se",
+   "start": 24.694,
+   "end": 24.819
+  },
+  {
+   "text": "multiplient",
+   "start": 24.819,
+   "end": 25.331
+  },
+  {
+   "text": "sans",
+   "start": 25.331,
+   "end": 25.481
+  },
+  {
+   "text": "contrôle.",
+   "start": 25.481,
+   "end": 26.093
+  },
+  {
+   "text": "Elles",
+   "start": 26.444,
+   "end": 26.631
+  },
+  {
+   "text": "forment",
+   "start": 26.631,
+   "end": 26.868
+  },
+  {
+   "text": "une",
+   "start": 26.868,
+   "end": 26.968
+  },
+  {
+   "text": "tumeur,",
+   "start": 26.968,
+   "end": 27.456
+  },
+  {
+   "text": "le",
+   "start": 27.768,
+   "end": 27.831
+  },
+  {
+   "text": "plus",
+   "start": 27.831,
+   "end": 27.968
+  },
+  {
+   "text": "souvent",
+   "start": 27.968,
+   "end": 28.268
+  },
+  {
+   "text": "sur",
+   "start": 28.268,
+   "end": 28.419
+  },
+  {
+   "text": "la",
+   "start": 28.419,
+   "end": 28.506
+  },
+  {
+   "text": "couche",
+   "start": 28.506,
+   "end": 28.756
+  },
+  {
+   "text": "qui",
+   "start": 28.756,
+   "end": 28.856
+  },
+  {
+   "text": "tapisse",
+   "start": 28.856,
+   "end": 29.218
+  },
+  {
+   "text": "l'intérieur",
+   "start": 29.218,
+   "end": 29.706
+  },
+  {
+   "text": "de",
+   "start": 29.706,
+   "end": 29.781
+  },
+  {
+   "text": "la",
+   "start": 29.781,
+   "end": 29.868
+  },
+  {
+   "text": "vessie.",
+   "start": 29.868,
+   "end": 30.356
+  },
+  {
+   "text": "Il",
+   "start": 30.694,
+   "end": 30.893
+  },
+  {
+   "text": "touche",
+   "start": 30.893,
+   "end": 31.143
+  },
+  {
+   "text": "surtout",
+   "start": 31.143,
+   "end": 31.393
+  },
+  {
+   "text": "les",
+   "start": 31.393,
+   "end": 31.518
+  },
+  {
+   "text": "hommes,",
+   "start": 31.518,
+   "end": 31.868
+  },
+  {
+   "text": "le",
+   "start": 32.144,
+   "end": 32.206
+  },
+  {
+   "text": "plus",
+   "start": 32.206,
+   "end": 32.343
+  },
+  {
+   "text": "souvent",
+   "start": 32.343,
+   "end": 32.656
+  },
+  {
+   "text": "après",
+   "start": 32.656,
+   "end": 32.868
+  },
+  {
+   "text": "soixante",
+   "start": 32.868,
+   "end": 33.294
+  },
+  {
+   "text": "ans.",
+   "start": 33.294,
+   "end": 33.493
+  },
+  {
+   "text": "Le",
+   "start": 34.472,
+   "end": 34.647
+  },
+  {
+   "text": "signe",
+   "start": 34.647,
+   "end": 34.91
+  },
+  {
+   "text": "le",
+   "start": 34.91,
+   "end": 34.985
+  },
+  {
+   "text": "plus",
+   "start": 34.985,
+   "end": 35.11
+  },
+  {
+   "text": "fréquent :",
+   "start": 35.11,
+   "end": 35.585
+  },
+  {
+   "text": "du",
+   "start": 35.897,
+   "end": 35.997
+  },
+  {
+   "text": "sang",
+   "start": 35.997,
+   "end": 36.172
+  },
+  {
+   "text": "dans",
+   "start": 36.172,
+   "end": 36.272
+  },
+  {
+   "text": "les",
+   "start": 36.272,
+   "end": 36.36
+  },
+  {
+   "text": "urines,",
+   "start": 36.36,
+   "end": 36.822
+  },
+  {
+   "text": "souvent",
+   "start": 37.11,
+   "end": 37.41
+  },
+  {
+   "text": "sans",
+   "start": 37.41,
+   "end": 37.597
+  },
+  {
+   "text": "douleur.",
+   "start": 37.597,
+   "end": 38.097
+  },
+  {
+   "text": "Et",
+   "start": 38.447,
+   "end": 38.572
+  },
+  {
+   "text": "le",
+   "start": 38.572,
+   "end": 38.672
+  },
+  {
+   "text": "piège :",
+   "start": 38.672,
+   "end": 39.135
+  },
+  {
+   "text": "il",
+   "start": 39.497,
+   "end": 39.56
+  },
+  {
+   "text": "peut",
+   "start": 39.56,
+   "end": 39.66
+  },
+  {
+   "text": "disparaître…",
+   "start": 39.66,
+   "end": 40.36
+  },
+  {
+   "text": "puis",
+   "start": 40.56,
+   "end": 40.71
+  },
+  {
+   "text": "revenir.",
+   "start": 40.71,
+   "end": 41.335
+  },
+  {
+   "text": "Parfois",
+   "start": 41.697,
+   "end": 41.972
+  },
+  {
+   "text": "aussi :",
+   "start": 41.972,
+   "end": 42.397
+  },
+  {
+   "text": "envie",
+   "start": 42.847,
+   "end": 43.035
+  },
+  {
+   "text": "d'uriner",
+   "start": 43.035,
+   "end": 43.372
+  },
+  {
+   "text": "souvent,",
+   "start": 43.372,
+   "end": 43.797
+  },
+  {
+   "text": "envie",
+   "start": 44.135,
+   "end": 44.297
+  },
+  {
+   "text": "pressante,",
+   "start": 44.297,
+   "end": 44.897
+  },
+  {
+   "text": "ou",
+   "start": 45.16,
+   "end": 45.185
+  },
+  {
+   "text": "des",
+   "start": 45.185,
+   "end": 45.285
+  },
+  {
+   "text": "brûlures",
+   "start": 45.285,
+   "end": 45.685
+  },
+  {
+   "text": "en",
+   "start": 45.685,
+   "end": 45.735
+  },
+  {
+   "text": "urinant.",
+   "start": 45.735,
+   "end": 46.21
+  },
+  {
+   "text": "Le",
+   "start": 47.178,
+   "end": 47.353
+  },
+  {
+   "text": "premier",
+   "start": 47.353,
+   "end": 47.641
+  },
+  {
+   "text": "responsable :",
+   "start": 47.641,
+   "end": 48.403
+  },
+  {
+   "text": "le",
+   "start": 48.778,
+   "end": 48.853
+  },
+  {
+   "text": "tabac.",
+   "start": 48.853,
+   "end": 49.266
+  },
+  {
+   "text": "Les",
+   "start": 49.603,
+   "end": 49.778
+  },
+  {
+   "text": "produits",
+   "start": 49.778,
+   "end": 50.066
+  },
+  {
+   "text": "toxiques",
+   "start": 50.066,
+   "end": 50.416
+  },
+  {
+   "text": "de",
+   "start": 50.416,
+   "end": 50.49
+  },
+  {
+   "text": "la",
+   "start": 50.49,
+   "end": 50.59
+  },
+  {
+   "text": "fumée",
+   "start": 50.59,
+   "end": 50.878
+  },
+  {
+   "text": "passent",
+   "start": 50.878,
+   "end": 51.103
+  },
+  {
+   "text": "dans",
+   "start": 51.103,
+   "end": 51.215
+  },
+  {
+   "text": "le",
+   "start": 51.215,
+   "end": 51.316
+  },
+  {
+   "text": "sang,",
+   "start": 51.316,
+   "end": 51.615
+  },
+  {
+   "text": "les",
+   "start": 51.928,
+   "end": 52.003
+  },
+  {
+   "text": "reins",
+   "start": 52.003,
+   "end": 52.153
+  },
+  {
+   "text": "les",
+   "start": 52.153,
+   "end": 52.253
+  },
+  {
+   "text": "filtrent…",
+   "start": 52.253,
+   "end": 52.703
+  },
+  {
+   "text": "et",
+   "start": 52.928,
+   "end": 52.953
+  },
+  {
+   "text": "ils",
+   "start": 52.953,
+   "end": 53.066
+  },
+  {
+   "text": "restent",
+   "start": 53.066,
+   "end": 53.353
+  },
+  {
+   "text": "dans",
+   "start": 53.353,
+   "end": 53.478
+  },
+  {
+   "text": "l'urine,",
+   "start": 53.478,
+   "end": 53.878
+  },
+  {
+   "text": "au",
+   "start": 54.191,
+   "end": 54.215
+  },
+  {
+   "text": "contact",
+   "start": 54.215,
+   "end": 54.678
+  },
+  {
+   "text": "de",
+   "start": 54.678,
+   "end": 54.753
+  },
+  {
+   "text": "la",
+   "start": 54.753,
+   "end": 54.828
+  },
+  {
+   "text": "paroi",
+   "start": 54.828,
+   "end": 55.115
+  },
+  {
+   "text": "de",
+   "start": 55.115,
+   "end": 55.191
+  },
+  {
+   "text": "la",
+   "start": 55.191,
+   "end": 55.266
+  },
+  {
+   "text": "vessie.",
+   "start": 55.266,
+   "end": 55.74
+  },
+  {
+   "text": "Le",
+   "start": 56.09,
+   "end": 56.278
+  },
+  {
+   "text": "tabac",
+   "start": 56.278,
+   "end": 56.566
+  },
+  {
+   "text": "est",
+   "start": 56.566,
+   "end": 56.615
+  },
+  {
+   "text": "en",
+   "start": 56.615,
+   "end": 56.766
+  },
+  {
+   "text": "cause",
+   "start": 56.766,
+   "end": 57.016
+  },
+  {
+   "text": "dans",
+   "start": 57.016,
+   "end": 57.115
+  },
+  {
+   "text": "environ",
+   "start": 57.115,
+   "end": 57.603
+  },
+  {
+   "text": "un",
+   "start": 57.603,
+   "end": 57.728
+  },
+  {
+   "text": "cas",
+   "start": 57.728,
+   "end": 57.891
+  },
+  {
+   "text": "sur",
+   "start": 57.891,
+   "end": 58.103
+  },
+  {
+   "text": "deux.",
+   "start": 58.103,
+   "end": 58.391
+  },
+  {
+   "text": "Pour",
+   "start": 59.369,
+   "end": 59.481
+  },
+  {
+   "text": "le",
+   "start": 59.481,
+   "end": 59.544
+  },
+  {
+   "text": "trouver :",
+   "start": 59.544,
+   "end": 59.956
+  },
+  {
+   "text": "une",
+   "start": 60.419,
+   "end": 60.494
+  },
+  {
+   "text": "analyse",
+   "start": 60.494,
+   "end": 60.806
+  },
+  {
+   "text": "d'urine,",
+   "start": 60.806,
+   "end": 61.256
+  },
+  {
+   "text": "une",
+   "start": 61.444,
+   "end": 61.519
+  },
+  {
+   "text": "échographie,",
+   "start": 61.519,
+   "end": 62.244
+  },
+  {
+   "text": "puis",
+   "start": 62.531,
+   "end": 62.656
+  },
+  {
+   "text": "la",
+   "start": 62.656,
+   "end": 62.744
+  },
+  {
+   "text": "cystoscopie :",
+   "start": 62.744,
+   "end": 63.544
+  },
+  {
+   "text": "une",
+   "start": 63.956,
+   "end": 64.031
+  },
+  {
+   "text": "petite",
+   "start": 64.031,
+   "end": 64.294
+  },
+  {
+   "text": "caméra",
+   "start": 64.294,
+   "end": 64.681
+  },
+  {
+   "text": "entre",
+   "start": 64.681,
+   "end": 64.969
+  },
+  {
+   "text": "par",
+   "start": 64.969,
+   "end": 65.119
+  },
+  {
+   "text": "l'urètre",
+   "start": 65.119,
+   "end": 65.519
+  },
+  {
+   "text": "et",
+   "start": 65.519,
+   "end": 65.544
+  },
+  {
+   "text": "regarde",
+   "start": 65.544,
+   "end": 65.894
+  },
+  {
+   "text": "l'intérieur",
+   "start": 65.894,
+   "end": 66.344
+  },
+  {
+   "text": "de",
+   "start": 66.344,
+   "end": 66.419
+  },
+  {
+   "text": "la",
+   "start": 66.419,
+   "end": 66.494
+  },
+  {
+   "text": "vessie.",
+   "start": 66.494,
+   "end": 66.981
+  },
+  {
+   "text": "Le",
+   "start": 67.984,
+   "end": 68.121
+  },
+  {
+   "text": "risque",
+   "start": 68.121,
+   "end": 68.371
+  },
+  {
+   "text": "augmente",
+   "start": 68.371,
+   "end": 68.709
+  },
+  {
+   "text": "aussi",
+   "start": 68.709,
+   "end": 68.947
+  },
+  {
+   "text": "avec",
+   "start": 68.947,
+   "end": 69.134
+  },
+  {
+   "text": "l'âge,",
+   "start": 69.134,
+   "end": 69.496
+  },
+  {
+   "text": "et",
+   "start": 69.809,
+   "end": 69.834
+  },
+  {
+   "text": "avec",
+   "start": 69.834,
+   "end": 70.009
+  },
+  {
+   "text": "certains",
+   "start": 70.009,
+   "end": 70.284
+  },
+  {
+   "text": "produits",
+   "start": 70.284,
+   "end": 70.559
+  },
+  {
+   "text": "chimiques",
+   "start": 70.559,
+   "end": 70.884
+  },
+  {
+   "text": "au",
+   "start": 70.884,
+   "end": 70.921
+  },
+  {
+   "text": "travail :",
+   "start": 70.921,
+   "end": 71.459
+  },
+  {
+   "text": "dans",
+   "start": 71.746,
+   "end": 71.822
+  },
+  {
+   "text": "la",
+   "start": 71.822,
+   "end": 71.909
+  },
+  {
+   "text": "peinture,",
+   "start": 71.909,
+   "end": 72.459
+  },
+  {
+   "text": "les",
+   "start": 72.709,
+   "end": 72.759
+  },
+  {
+   "text": "teintures",
+   "start": 72.759,
+   "end": 73.259
+  },
+  {
+   "text": "ou",
+   "start": 73.259,
+   "end": 73.284
+  },
+  {
+   "text": "le",
+   "start": 73.284,
+   "end": 73.359
+  },
+  {
+   "text": "caoutchouc.",
+   "start": 73.359,
+   "end": 73.947
+  },
+  {
+   "text": "Pour",
+   "start": 74.916,
+   "end": 75.103
+  },
+  {
+   "text": "le",
+   "start": 75.103,
+   "end": 75.191
+  },
+  {
+   "text": "soigner :",
+   "start": 75.191,
+   "end": 75.641
+  },
+  {
+   "text": "souvent,",
+   "start": 76.091,
+   "end": 76.528
+  },
+  {
+   "text": "on",
+   "start": 76.766,
+   "end": 76.791
+  },
+  {
+   "text": "retire",
+   "start": 76.791,
+   "end": 77.103
+  },
+  {
+   "text": "la",
+   "start": 77.103,
+   "end": 77.191
+  },
+  {
+   "text": "tumeur",
+   "start": 77.191,
+   "end": 77.528
+  },
+  {
+   "text": "en",
+   "start": 77.528,
+   "end": 77.579
+  },
+  {
+   "text": "passant",
+   "start": 77.579,
+   "end": 77.853
+  },
+  {
+   "text": "par",
+   "start": 77.853,
+   "end": 78.016
+  },
+  {
+   "text": "l'urètre,",
+   "start": 78.016,
+   "end": 78.454
+  },
+  {
+   "text": "sans",
+   "start": 78.678,
+   "end": 78.841
+  },
+  {
+   "text": "ouvrir",
+   "start": 78.841,
+   "end": 79.166
+  },
+  {
+   "text": "le",
+   "start": 79.166,
+   "end": 79.254
+  },
+  {
+   "text": "ventre.",
+   "start": 79.254,
+   "end": 79.728
+  },
+  {
+   "text": "Parfois,",
+   "start": 80.066,
+   "end": 80.566
+  },
+  {
+   "text": "des",
+   "start": 80.903,
+   "end": 80.978
+  },
+  {
+   "text": "lavages",
+   "start": 80.978,
+   "end": 81.291
+  },
+  {
+   "text": "de",
+   "start": 81.291,
+   "end": 81.379
+  },
+  {
+   "text": "la",
+   "start": 81.379,
+   "end": 81.466
+  },
+  {
+   "text": "vessie",
+   "start": 81.466,
+   "end": 81.803
+  },
+  {
+   "text": "avec",
+   "start": 81.803,
+   "end": 82.016
+  },
+  {
+   "text": "un",
+   "start": 82.016,
+   "end": 82.053
+  },
+  {
+   "text": "médicament,",
+   "start": 82.053,
+   "end": 82.641
+  },
+  {
+   "text": "ou",
+   "start": 83.016,
+   "end": 83.091
+  },
+  {
+   "text": "il",
+   "start": 83.091,
+   "end": 83.178
+  },
+  {
+   "text": "faut",
+   "start": 83.178,
+   "end": 83.291
+  },
+  {
+   "text": "retirer",
+   "start": 83.291,
+   "end": 83.704
+  },
+  {
+   "text": "toute",
+   "start": 83.704,
+   "end": 83.903
+  },
+  {
+   "text": "la",
+   "start": 83.903,
+   "end": 83.991
+  },
+  {
+   "text": "vessie.",
+   "start": 83.991,
+   "end": 84.454
+  },
+  {
+   "text": "Et",
+   "start": 84.791,
+   "end": 84.941
+  },
+  {
+   "text": "pris",
+   "start": 84.941,
+   "end": 85.141
+  },
+  {
+   "text": "tôt,",
+   "start": 85.141,
+   "end": 85.441
+  },
+  {
+   "text": "il",
+   "start": 85.728,
+   "end": 85.816
+  },
+  {
+   "text": "se",
+   "start": 85.816,
+   "end": 85.941
+  },
+  {
+   "text": "soigne",
+   "start": 85.941,
+   "end": 86.228
+  },
+  {
+   "text": "très",
+   "start": 86.228,
+   "end": 86.428
+  },
+  {
+   "text": "bien.",
+   "start": 86.428,
+   "end": 86.778
+  },
+  {
+   "text": "Alors,",
+   "start": 87.766,
+   "end": 88.146
+  },
+  {
+   "text": "va",
+   "start": 88.379,
+   "end": 88.452
+  },
+  {
+   "text": "lui",
+   "start": 88.452,
+   "end": 88.599
+  },
+  {
+   "text": "en",
+   "start": 88.599,
+   "end": 88.66
+  },
+  {
+   "text": "parler :",
+   "start": 88.66,
+   "end": 89.102
+  },
+  {
+   "text": "du",
+   "start": 89.383,
+   "end": 89.481
+  },
+  {
+   "text": "sang",
+   "start": 89.481,
+   "end": 89.653
+  },
+  {
+   "text": "dans",
+   "start": 89.653,
+   "end": 89.751
+  },
+  {
+   "text": "les",
+   "start": 89.751,
+   "end": 89.837
+  },
+  {
+   "text": "urines,",
+   "start": 89.837,
+   "end": 90.278
+  },
+  {
+   "text": "même",
+   "start": 90.633,
+   "end": 90.78
+  },
+  {
+   "text": "une",
+   "start": 90.781,
+   "end": 90.866
+  },
+  {
+   "text": "seule",
+   "start": 90.866,
+   "end": 91.062
+  },
+  {
+   "text": "fois,",
+   "start": 91.062,
+   "end": 91.356
+  },
+  {
+   "text": "on",
+   "start": 91.516,
+   "end": 91.553
+  },
+  {
+   "text": "consulte.",
+   "start": 91.553,
+   "end": 92.214
+  },
+  {
+   "text": "Et",
+   "start": 92.545,
+   "end": 92.668
+  },
+  {
+   "text": "arrêter",
+   "start": 92.668,
+   "end": 92.962
+  },
+  {
+   "text": "de",
+   "start": 92.962,
+   "end": 93.072
+  },
+  {
+   "text": "fumer",
+   "start": 93.072,
+   "end": 93.329
+  },
+  {
+   "text": "protège",
+   "start": 93.33,
+   "end": 93.746
+  },
+  {
+   "text": "aussi",
+   "start": 93.746,
+   "end": 93.942
+  },
+  {
+   "text": "sa",
+   "start": 93.942,
+   "end": 94.053
+  },
+  {
+   "text": "vessie !",
+   "start": 94.053,
+   "end": 94.518
+  }
+ ]
+}

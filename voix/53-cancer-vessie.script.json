@@ -1,0 +1,47 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Ce matin, ton grand-père voit que ses urines sont rouges. Ça ne fait pas mal… alors il se dit : ce n'est rien. Pourtant, du sang dans les urines, même sans douleur, ça se montre toujours à un médecin."
+ },
+ {
+  "id": "vessie",
+  "rate": "+0%",
+  "text": "Les reins filtrent le sang et fabriquent l'urine. Elle descend par deux petits tuyaux, les uretères, jusqu'à la vessie : un réservoir qui se remplit. Puis l'urètre l'évacue vers l'extérieur."
+ },
+ {
+  "id": "cancer",
+  "rate": "+0%",
+  "text": "Le cancer de la vessie, ce sont des cellules de la paroi qui se multiplient sans contrôle. Elles forment une tumeur, le plus souvent sur la couche qui tapisse l'intérieur de la vessie. Il touche surtout les hommes, le plus souvent après soixante ans."
+ },
+ {
+  "id": "signes",
+  "rate": "+0%",
+  "text": "Le signe le plus fréquent : du sang dans les urines, souvent sans douleur. Et le piège : il peut disparaître… puis revenir. Parfois aussi : envie d'uriner souvent, envie pressante, ou des brûlures en urinant."
+ },
+ {
+  "id": "tabac",
+  "rate": "+0%",
+  "text": "Le premier responsable : le tabac. Les produits toxiques de la fumée passent dans le sang, les reins les filtrent… et ils restent dans l'urine, au contact de la paroi de la vessie. Le tabac est en cause dans environ un cas sur deux."
+ },
+ {
+  "id": "examens",
+  "rate": "+0%",
+  "text": "Pour le trouver : une analyse d'urine, une échographie, puis la cystoscopie : une petite caméra entre par l'urètre et regarde l'intérieur de la vessie."
+ },
+ {
+  "id": "risques",
+  "rate": "+0%",
+  "text": "Le risque augmente aussi avec l'âge, et avec certains produits chimiques au travail : dans la peinture, les teintures ou le caoutchouc."
+ },
+ {
+  "id": "traitement",
+  "rate": "+0%",
+  "text": "Pour le soigner : souvent, on retire la tumeur en passant par l'urètre, sans ouvrir le ventre. Parfois, des lavages de la vessie avec un médicament, ou il faut retirer toute la vessie. Et pris tôt, il se soigne très bien."
+ },
+ {
+  "id": "fin",
+  "rate": "+2%",
+  "text": "Alors, va lui en parler : du sang dans les urines, même une seule fois, on consulte. Et arrêter de fumer protège aussi sa vessie !"
+ }
+]

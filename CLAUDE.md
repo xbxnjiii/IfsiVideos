@@ -485,6 +485,24 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   `flip`, `drawer`, `inside`, `onTop` ; `Envelope` `open` ; `Polyp` ; pictos `KitIcon`, `MeatIcon`, `TransitIcon`,
   `BellyIcon`) ; le père = `DadBalcony` `cig={false}`. Voix : « cæcum » était lu de travers → `{cæcum|cécum}` ; « il la
   range » était entendu « il arrange » → « il la glisse ». Storyboard `docs/lpi/storyboard-cancer-colorectal.md`.
+- `Cancer-Vessie` (n° 53, ≈ 1 min 39, format « pathologie », voix gratuite d'abord, sans barre de progression) : demandé
+  « pareil, à l'aide de ce schéma, sans les annotations ». Schéma fourni `public/images/vessie/vessie-cancer.webp` (reins,
+  uretères, vessie, urètre dans le corps + « focus » vessie saine / avec cancer) nettoyé par
+  `scripts/brand/clean_vessie_diagram.py` → `vessie-propre-anatomie.png` / `-focus.png`. Méthodes : les 4 étiquettes sont
+  trouvées seules (composantes bleutées collées au bord gauche) ; fond comblé de haut en bas ; là où un point touche un
+  organe : **miroir avec un axe mesuré** (rein 461 ; vessie 454 → 451,5, l'axe glisse d'une ligne à l'autre :
+  `axis_rows`), uretère et urètre comblés **le long de leur direction** ; traits roses autour de la tumeur repris en
+  miroir de la paroi gauche de la même vessie (la vessie saine voisine, décalée, ne collait pas partout). Accroche
+  **« l'eau qui rougit »** avec **« ton grand-père »** : toilettes vues d'en haut en vraies couleurs (`ToiletTop`), l'eau
+  se teinte de rouge, glissé vers la salle de bain (`Bathroom` + `DadBalcony` `cig={false}`, cheveux gris), « Ce n'est
+  rien… », plongée et loupe sur la vessie. Puis l'appareil urinaire (gouttes d'urine qui descendent), le cancer (cellules
+  qui se divisent sur la paroi → tumeur ; surtout les hommes, après 60 ans), les signes (sang dans les urines souvent sans
+  douleur, qui disparaît puis revient ; envies fréquentes, brûlures), le tabac (les toxiques suivent le sang → les reins →
+  l'urine → la paroi : 1 cas sur 2), les examens (analyse d'urine, échographie, cystoscopie : la caméra monte par le col
+  jusqu'à la tumeur), les autres risques (âge, produits chimiques : peinture, teintures, caoutchouc), les traitements
+  (résection par l'urètre, lavages de la vessie, ablation ; pris tôt, il se soigne très bien), chute « du sang dans les
+  urines, même une seule fois, on consulte… arrêter de fumer protège aussi sa vessie ». Briques `src/brand/bladder.tsx`.
+  Storyboard `docs/lpi/storyboard-cancer-vessie.md`.
 
 ## Voix ElevenLabs « Laura » (choisie par le propriétaire pour les nouvelles vidéos)
 
