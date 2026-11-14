@@ -466,7 +466,7 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   `src/brand/lungcancer.tsx` (`Balcony`, `DadBalcony` : `smoke`, `puff`, `cough`, `show`, `blood`, `worry`, `shrug` ;
   pictos `WeightLossIcon`, `RadonIcon`, `HelmetIcon`, `ImmunoIcon`, `TargetIcon`, `PassiveSmokeIcon`, `NoSmokeIcon`).
   Storyboard `docs/lpi/storyboard-cancer-poumon.md`.
-- `Cancer-Colorectal` (n° 52, ≈ 1 min 40, format « pathologie », voix gratuite d'abord, sans barre de progression) : demandé
+- `Cancer-Colorectal` (n° 52, ≈ 1 min 40, format « pathologie », voix Laura après validation (1 875 crédits), sans barre de progression) : demandé
   « pareil, à l'aide de ce schéma, sans les annotations ». Schéma fourni `public/images/colon/colon-cancer.webp` (côlon dans
   la silhouette du ventre + « focus » côlon sain / avec cancer) nettoyé par `scripts/brand/clean_colon_diagram.py` →
   `colon-propre-anatomie.png` / `-focus.png`. Ici les étiquettes sont posées sur la **silhouette chair** (pas sur du blanc) :
