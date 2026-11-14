@@ -100,6 +100,8 @@ import {Brulure3, Brulure3Props} from './videos/brulure-3/Brulure3';
 import {TL as BRULURE_3_TL} from './videos/brulure-3/timeline';
 import {CancerProstate, CancerProstateProps} from './videos/cancer-prostate/CancerProstate';
 import {TL as CANCER_PROSTATE_TL} from './videos/cancer-prostate/timeline';
+import {CancerSein, CancerSeinProps} from './videos/cancer-sein/CancerSein';
+import {TL as CANCER_SEIN_TL} from './videos/cancer-sein/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -586,6 +588,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies CancerProstateProps}
+		/>
+		{/* 50 · Cancer-Sein */}
+		<Composition
+			id="Cancer-Sein"
+			component={CancerSein}
+			durationInFrames={CANCER_SEIN_TL.total}
+			fps={CANCER_SEIN_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies CancerSeinProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition

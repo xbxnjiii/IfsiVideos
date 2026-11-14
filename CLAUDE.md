@@ -428,6 +428,24 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   d'urine `UrineDrops` qui ralentissent), signes (cellules qui s'échappent de la tumeur), toucher rectal (doigt ganté
   sous le lobe, la tumeur entourée), IRM (dessin dans l'écran), biopsie (aiguille jusqu'à la tumeur). La coupe de profil
   `Pelvis` n'est plus utilisée dans cette vidéo (elle reste dans `prostate.tsx`).
+- `Cancer-Sein` (n° 50, ≈ 1 min 35, format « pathologie », voix gratuite d'abord, sans barre de progression) : demandé « pareil que
+  la prostate, à l'aide de ce schéma, **sans les annotations** ». Schéma fourni `public/images/sein/sein-cancer.webp` (sein
+  en coupe : muscle pectoral, graisse, lobules, canaux galactophores, mamelon + « focus » sein sain / cancer) nettoyé par
+  `scripts/brand/clean_sein_diagram.py` (étiquettes, traits, points, titre, cône, cadre, légendes, encadré et traits roses
+  autour de la tumeur retirés ; chaque pixel caché est recomposé en suivant la direction des structures : fibres du muscle,
+  bord de la peau, canaux ; bord du dessin redessiné sous les traits roses) → `sein-propre-anatomie.png` et
+  `sein-propre-focus.png`, même repère, jamais déformés. Même mécanique que la prostate : `Diagram` (caméra au mot près +
+  cercles roses), `BreastArt` (découpe sain / cancer, filtre « imagerie » pour la mammographie et l'échographie).
+  Accroche **« la boule dans la salle de bain »** avec **« ta mère »** : salle de bain le matin en vraies couleurs, la maman
+  de face en serviette lève le bras et palpe le haut de son sein côté aisselle, « ! », « Ce n'est rien… ? », loupe sur le
+  sein. Puis le sein, le cancer (≈ 1 femme sur 8), les signes (boule, peau qui se creuse / peau d'orange, mamelon qui
+  rentre ou coule, boule sous le bras), le dépistage (palpation chaque mois, médecin ou sage-femme 1 fois par an dès 25 ans,
+  mammographie tous les 2 ans de 50 à 74 ans, prise en charge à 100 %), les examens (mammographie, échographie, biopsie),
+  les risques, les traitements (détecté tôt : guérit dans 9 cas sur 10), chute « la palpation chaque mois, la
+  mammographie dès 50 ans… même quand tout va bien ». Briques `src/brand/breast.tsx` (`Bathroom`, `MumTowel`, `MUM`,
+  pictos `LumpIcon`, `OrangeSkinIcon`, `NippleIcon`, `ArmpitIcon`, `PalpationIcon`, `MammoIcon`, `EchoIcon`,
+  `WomenFamilyIcon`, `WineSmokeIcon`, `ScaleSofaIcon`, `ChemoIcon`, `OneInEight`). Voix : « sous l'aisselle » était
+  entendu « sous les selles » → « sous le bras ». Storyboard `docs/lpi/storyboard-cancer-sein.md`.
 
 ## Voix ElevenLabs « Laura » (choisie par le propriétaire pour les nouvelles vidéos)
 

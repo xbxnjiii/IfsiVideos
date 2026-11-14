@@ -1,0 +1,47 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Ce matin, dans la salle de bain… ta mère sent une petite boule dans son sein. Et elle se dit : ce n'est rien, ça va passer. Peut-être… mais une boule dans le sein, ça se montre toujours à un médecin."
+ },
+ {
+  "id": "sein",
+  "rate": "+0%",
+  "text": "Le sein, c'est surtout de la graisse… et une glande qui fabrique le lait : les lobules. Le lait passe dans de petits canaux, les canaux galactophores, jusqu'au mamelon. Et le tout est posé sur un muscle : le pectoral."
+ },
+ {
+  "id": "cancer",
+  "rate": "+0%",
+  "text": "Le cancer du sein, ce sont des cellules qui se multiplient sans contrôle, le plus souvent dans un canal ou un lobule. Elles forment une tumeur. C'est le cancer le plus fréquent chez la femme : environ une femme sur huit."
+ },
+ {
+  "id": "signes",
+  "rate": "+0%",
+  "text": "Les signes qui doivent alerter : une boule, une peau qui se creuse ou qui ressemble à une peau d'orange, un mamelon qui rentre ou qui coule, ou une boule sous le bras."
+ },
+ {
+  "id": "depistage",
+  "rate": "+0%",
+  "text": "Pour le repérer tôt : la palpation, une fois par mois. Un examen par un médecin ou une sage-femme, une fois par an, dès vingt-cinq ans. Et de cinquante à soixante-quatorze ans, une mammographie tous les deux ans, prise en charge à cent pour cent : c'est le dépistage organisé."
+ },
+ {
+  "id": "examens",
+  "rate": "+0%",
+  "text": "Si quelque chose est suspect : une mammographie, une échographie, puis une biopsie, un petit prélèvement qui confirme le cancer."
+ },
+ {
+  "id": "risques",
+  "rate": "+0%",
+  "text": "Le risque augmente avec l'âge, quand une proche de la famille a été touchée, avec l'alcool, le tabac, le surpoids et le manque d'activité physique."
+ },
+ {
+  "id": "traitement",
+  "rate": "+0%",
+  "text": "Pour le soigner : la chirurgie, qui retire la tumeur ou parfois tout le sein, la radiothérapie, la chimiothérapie, ou un traitement hormonal. Et détecté tôt, il guérit dans neuf cas sur dix."
+ },
+ {
+  "id": "fin",
+  "rate": "+2%",
+  "text": "Alors, va lui en parler : la palpation chaque mois, et dès cinquante ans, la mammographie… même quand tout va bien !"
+ }
+]

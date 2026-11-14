@@ -140,6 +140,26 @@ Briques « cerveau / AVC » réutilisables : cerveau de profil (artères où le 
 - `ArteryZoomProps`
 - `ArteryZoom`
 
+## `breast.tsx`
+Briques « cancer du sein » (vidéo n° 50). Mise en situation réaliste (demandé) : la salle de bain le matin (carrelage, fenêtre dépolie, étagère, plante, buée, lavabo au premier plan) et la maman, vue de face comme dans le miroir, enroulée dans sa serviette, qui lève le bras et palpe le haut de son sein, côté aisselle (là où naissent la plupart des cancers). Explications aux couleurs de la marque : pictos des signes (boule, peau qui se creuse / peau d'orange, mamelon qui rentre, boule sous le bras), de la palpation, de la mammographie, de l'échographie, des risques et des traitements ; rangée « une femme sur huit ».
+
+- `BATH` — Vraies couleurs de la salle de bain et de la maman (mise en situation réaliste).
+- `Bathroom` — La salle de bain le matin, plein cadre 1080 × 1920 (vraies couleurs) : carrelage, fenêtre dépolie et rayon de soleil, étagère (verre à dents, savon, plante), porte-serviette, buée qui monte.
+- `MUM` — Points de la maman (repère 600 × 1000) : le haut du sein côté aisselle (là où elle palpe), le visage.
+- `MumTowel` — La maman, vue de face comme dans le miroir (repère 600 × 1000, vraies couleurs), enroulée dans sa serviette.
+- `LumpIcon` — Une boule dans le sein.
+- `OrangeSkinIcon` — La peau qui se creuse ou prend l'aspect d'une peau d'orange (pores marqués).
+- `NippleIcon` — Le mamelon qui rentre (ou qui coule).
+- `ArmpitIcon` — Une boule sous le bras (aisselle) : buste de face, bras levé, point rose.
+- `PalpationIcon` — La palpation : trois doigts qui tournent en petits cercles sur le sein.
+- `MammoIcon` — La mammographie : l'appareil (colonne, deux plaques qui serrent doucement le sein).
+- `EchoIcon` — L'échographie : la sonde et ses ondes.
+- `WomenFamilyIcon` — Une proche touchée : deux femmes, l'une entourée.
+- `WineSmokeIcon` — Un verre de vin + une cigarette : l'alcool et le tabac.
+- `ScaleSofaIcon` — Le surpoids et le manque d'activité : un pèse-personne et un canapé.
+- `ChemoIcon` — La chimiothérapie : une poche de perfusion qui goutte.
+- `OneInEight` — « Une femme sur huit » : 8 silhouettes sur deux rangées de 4 qui arrivent une à une (`n` 0 → 8), la dernière devient rose quand `hit` 0 → 1.
+
 ## `breath.tsx`
 Briques « respiration » réutilisables : rythme respiratoire qui change sans à-coup (phase intégrée), poumons qui respirent, particules d'air, thorax qui se soulève, tracé respiratoire qui défile.
 
