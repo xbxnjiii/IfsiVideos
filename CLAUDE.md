@@ -373,7 +373,7 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   `BlisterIcon`, `GauzeIcon`, `PalmIcon`, `ShirtIcon`, `BlanketIcon`, `NoMark`. Brique `src/brand/burnstage.tsx` (`BurnPatch`,
   `CutView`, `BeachTop`, `PastaPour`, `Barbecue`). La vidéo `Brulure` (n° 40, les bons gestes) reste à part.
   Storyboard `docs/lpi/storyboard-brulures-degres.md`.
-- `Cancer-Prostate` (n° 49, ≈ 1 min 34, format « pathologie », voix gratuite d'abord, sans barre de progression) : accroche
+- `Cancer-Prostate` (n° 49, ≈ 1 min 33, format « pathologie », voix Laura après validation (1 733 crédits), sans barre de progression) : accroche
   **« il se lève la nuit »** (choisie par le propriétaire parmi 3) : chambre la nuit en vraies couleurs, réveil en gros plan
   01:00 → 03:00 → 05:00, il se lève, la porte des toilettes s'ouvre ; « c'est l'âge… ? » puis plongée vers sa prostate
   (loupe). Puis prostate (châtaigne, sous la vessie, autour de l'urètre, une partie du sperme), adénome (sans gravité,
