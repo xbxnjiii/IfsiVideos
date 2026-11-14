@@ -519,6 +519,21 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   traitements (chirurgie, chimio, radiothérapie, prothèse biliaire), chute « des yeux jaunes, maigrir sans raison : on
   consulte vite ». Briques `src/brand/pancreas.tsx` (`TumorBlob`, `Stent`, `Sparkle`, pictos). Voix : « un suc » était
   entendu « un sucre » → « un liquide qui aide à digérer ». Storyboard `docs/lpi/storyboard-cancer-pancreas.md`.
+- `Cancer-Estomac` (n° 55, ≈ 1 min 47, format « pathologie », voix gratuite d'abord, sans barre de progression) : demandé
+  « pareil, à l'aide de ce schéma, sans les annotations ». Schéma fourni `public/images/estomac/estomac-cancer.webp`
+  (œsophage, estomac, duodénum + « focus » paroi saine / avec cancer) nettoyé par `scripts/brand/clean_estomac_diagram.py`
+  → `-anatomie.png`, `-sain.png`, `-cancer.png`. Méthode nouvelle : **cône rose posé sur une paroi courbe** = bord
+  extérieur mesuré au-dessus et au-dessous du cône, ajusté par un polynôme, chaque pixel caché repris en montant /
+  descendant **à la même distance du bord** (les bandes de la paroi suivent la courbe). Accroche **« l'assiette
+  repoussée »** avec **« ton grand-père »** : cuisine (`Kitchen`), l'assiette glisse (`DinnerPlate`, vraies couleurs),
+  éclairs de douleur (`PainBolts`), balance « −5,0 kg », sachet de pansement gastrique (`GelSachet`) « ça passe… puis ça
+  revient », plongée et loupe sur la paroi. Puis l'estomac (aliments qui descendent, liquide acide, duodénum, muqueuse et
+  plis), le cancer (cellules de la muqueuse, tumeur qui s'enfonce ; après 60 ans, plus souvent les hommes), **la bactérie
+  Helicobacter pylori** (`Bacterium` sur les plis, la muqueuse rougit, une gélule l'élimine), les signes (souvent aucun au
+  début ; douleurs, vite rassasié, perte de poids, vomissements, selles noires, fatigue), les risques, la fibroscopie
+  (+ biopsies, scanner), les traitements (chirurgie, chimiothérapie avant / après ; très tôt : retrait par la caméra, sans
+  opérer), chute « on consulte… au lieu de prendre des pansements pendant des mois ». Briques `src/brand/stomach.tsx`.
+  Voix : « {Helicobacter pylori|hélicobactère pilori} ». Storyboard `docs/lpi/storyboard-cancer-estomac.md`.
 
 ## Voix ElevenLabs « Laura » (choisie par le propriétaire pour les nouvelles vidéos)
 

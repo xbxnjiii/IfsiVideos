@@ -1,0 +1,1593 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 102.944,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.05,
+   "end": 14.772
+  },
+  {
+   "id": "estomac",
+   "start": 15.696,
+   "end": 27.684
+  },
+  {
+   "id": "cancer",
+   "start": 28.68,
+   "end": 39.18
+  },
+  {
+   "id": "bacterie",
+   "start": 40.136,
+   "end": 50.661
+  },
+  {
+   "id": "signes",
+   "start": 51.618,
+   "end": 62.493
+  },
+  {
+   "id": "risques",
+   "start": 63.498,
+   "end": 70.323
+  },
+  {
+   "id": "examens",
+   "start": 71.308,
+   "end": 82.933
+  },
+  {
+   "id": "traitement",
+   "start": 83.868,
+   "end": 94.493
+  },
+  {
+   "id": "fin",
+   "start": 95.433,
+   "end": 102.603
+  }
+ ],
+ "words": [
+  {
+   "text": "Au",
+   "start": 0.05,
+   "end": 0.182
+  },
+  {
+   "text": "repas,",
+   "start": 0.182,
+   "end": 0.578
+  },
+  {
+   "text": "ton",
+   "start": 0.843,
+   "end": 0.951
+  },
+  {
+   "text": "grand-père",
+   "start": 0.951,
+   "end": 1.299
+  },
+  {
+   "text": "repousse",
+   "start": 1.3,
+   "end": 1.636
+  },
+  {
+   "text": "son",
+   "start": 1.636,
+   "end": 1.72
+  },
+  {
+   "text": "assiette :",
+   "start": 1.72,
+   "end": 2.213
+  },
+  {
+   "text": "il",
+   "start": 2.501,
+   "end": 2.562
+  },
+  {
+   "text": "n'a",
+   "start": 2.562,
+   "end": 2.658
+  },
+  {
+   "text": "plus",
+   "start": 2.658,
+   "end": 2.814
+  },
+  {
+   "text": "faim.",
+   "start": 2.814,
+   "end": 3.126
+  },
+  {
+   "text": "Depuis",
+   "start": 3.451,
+   "end": 3.764
+  },
+  {
+   "text": "des",
+   "start": 3.764,
+   "end": 3.872
+  },
+  {
+   "text": "semaines,",
+   "start": 3.872,
+   "end": 4.293
+  },
+  {
+   "text": "il",
+   "start": 4.641,
+   "end": 4.713
+  },
+  {
+   "text": "a",
+   "start": 4.713,
+   "end": 4.749
+  },
+  {
+   "text": "mal",
+   "start": 4.75,
+   "end": 4.918
+  },
+  {
+   "text": "au",
+   "start": 4.918,
+   "end": 4.966
+  },
+  {
+   "text": "ventre",
+   "start": 4.966,
+   "end": 5.242
+  },
+  {
+   "text": "après",
+   "start": 5.242,
+   "end": 5.411
+  },
+  {
+   "text": "manger…",
+   "start": 5.411,
+   "end": 5.855
+  },
+  {
+   "text": "et",
+   "start": 6.24,
+   "end": 6.312
+  },
+  {
+   "text": "il",
+   "start": 6.312,
+   "end": 6.408
+  },
+  {
+   "text": "a",
+   "start": 6.408,
+   "end": 6.444
+  },
+  {
+   "text": "maigri.",
+   "start": 6.444,
+   "end": 6.889
+  },
+  {
+   "text": "Il",
+   "start": 7.213,
+   "end": 7.381
+  },
+  {
+   "text": "prend",
+   "start": 7.381,
+   "end": 7.562
+  },
+  {
+   "text": "un",
+   "start": 7.562,
+   "end": 7.598
+  },
+  {
+   "text": "pansement",
+   "start": 7.598,
+   "end": 7.97
+  },
+  {
+   "text": "pour",
+   "start": 7.97,
+   "end": 8.102
+  },
+  {
+   "text": "l'estomac :",
+   "start": 8.102,
+   "end": 8.535
+  },
+  {
+   "text": "ça",
+   "start": 8.872,
+   "end": 8.992
+  },
+  {
+   "text": "passe…",
+   "start": 8.992,
+   "end": 9.449
+  },
+  {
+   "text": "puis",
+   "start": 9.677,
+   "end": 9.821
+  },
+  {
+   "text": "ça",
+   "start": 9.821,
+   "end": 9.941
+  },
+  {
+   "text": "revient.",
+   "start": 9.941,
+   "end": 10.35
+  },
+  {
+   "text": "Pourtant,",
+   "start": 10.709,
+   "end": 11.13
+  },
+  {
+   "text": "une",
+   "start": 11.406,
+   "end": 11.49
+  },
+  {
+   "text": "douleur",
+   "start": 11.49,
+   "end": 11.743
+  },
+  {
+   "text": "qui",
+   "start": 11.743,
+   "end": 11.887
+  },
+  {
+   "text": "dure,",
+   "start": 11.887,
+   "end": 12.248
+  },
+  {
+   "text": "avec",
+   "start": 12.5,
+   "end": 12.68
+  },
+  {
+   "text": "une",
+   "start": 12.68,
+   "end": 12.776
+  },
+  {
+   "text": "perte",
+   "start": 12.776,
+   "end": 13.029
+  },
+  {
+   "text": "de",
+   "start": 13.029,
+   "end": 13.125
+  },
+  {
+   "text": "poids,",
+   "start": 13.125,
+   "end": 13.425
+  },
+  {
+   "text": "ça",
+   "start": 13.75,
+   "end": 13.858
+  },
+  {
+   "text": "se",
+   "start": 13.858,
+   "end": 13.99
+  },
+  {
+   "text": "montre",
+   "start": 13.99,
+   "end": 14.255
+  },
+  {
+   "text": "à",
+   "start": 14.255,
+   "end": 14.279
+  },
+  {
+   "text": "un",
+   "start": 14.279,
+   "end": 14.315
+  },
+  {
+   "text": "médecin.",
+   "start": 14.315,
+   "end": 14.772
+  },
+  {
+   "text": "L'estomac",
+   "start": 15.696,
+   "end": 16.271
+  },
+  {
+   "text": "reçoit",
+   "start": 16.271,
+   "end": 16.571
+  },
+  {
+   "text": "les",
+   "start": 16.571,
+   "end": 16.659
+  },
+  {
+   "text": "aliments",
+   "start": 16.659,
+   "end": 17.084
+  },
+  {
+   "text": "par",
+   "start": 17.084,
+   "end": 17.233
+  },
+  {
+   "text": "l'œsophage.",
+   "start": 17.233,
+   "end": 17.971
+  },
+  {
+   "text": "Il",
+   "start": 18.309,
+   "end": 18.483
+  },
+  {
+   "text": "les",
+   "start": 18.483,
+   "end": 18.546
+  },
+  {
+   "text": "mélange",
+   "start": 18.546,
+   "end": 18.871
+  },
+  {
+   "text": "avec",
+   "start": 18.871,
+   "end": 19.096
+  },
+  {
+   "text": "un",
+   "start": 19.096,
+   "end": 19.134
+  },
+  {
+   "text": "liquide",
+   "start": 19.134,
+   "end": 19.446
+  },
+  {
+   "text": "acide",
+   "start": 19.446,
+   "end": 19.784
+  },
+  {
+   "text": "pour",
+   "start": 19.784,
+   "end": 19.896
+  },
+  {
+   "text": "les",
+   "start": 19.896,
+   "end": 19.959
+  },
+  {
+   "text": "digérer,",
+   "start": 19.959,
+   "end": 20.509
+  },
+  {
+   "text": "puis",
+   "start": 20.809,
+   "end": 20.921
+  },
+  {
+   "text": "les",
+   "start": 20.921,
+   "end": 20.996
+  },
+  {
+   "text": "envoie",
+   "start": 20.996,
+   "end": 21.284
+  },
+  {
+   "text": "dans",
+   "start": 21.284,
+   "end": 21.384
+  },
+  {
+   "text": "le",
+   "start": 21.384,
+   "end": 21.471
+  },
+  {
+   "text": "duodénum,",
+   "start": 21.471,
+   "end": 22.134
+  },
+  {
+   "text": "le",
+   "start": 22.396,
+   "end": 22.471
+  },
+  {
+   "text": "début",
+   "start": 22.471,
+   "end": 22.721
+  },
+  {
+   "text": "de",
+   "start": 22.721,
+   "end": 22.821
+  },
+  {
+   "text": "l'intestin.",
+   "start": 22.821,
+   "end": 23.459
+  },
+  {
+   "text": "À",
+   "start": 23.796,
+   "end": 23.946
+  },
+  {
+   "text": "l'intérieur,",
+   "start": 23.946,
+   "end": 24.584
+  },
+  {
+   "text": "sa",
+   "start": 24.921,
+   "end": 25.034
+  },
+  {
+   "text": "paroi",
+   "start": 25.034,
+   "end": 25.321
+  },
+  {
+   "text": "est",
+   "start": 25.321,
+   "end": 25.358
+  },
+  {
+   "text": "tapissée",
+   "start": 25.358,
+   "end": 25.746
+  },
+  {
+   "text": "d'une",
+   "start": 25.746,
+   "end": 25.896
+  },
+  {
+   "text": "muqueuse,",
+   "start": 25.896,
+   "end": 26.434
+  },
+  {
+   "text": "pleine",
+   "start": 26.671,
+   "end": 26.946
+  },
+  {
+   "text": "de",
+   "start": 26.946,
+   "end": 27.034
+  },
+  {
+   "text": "petits",
+   "start": 27.034,
+   "end": 27.309
+  },
+  {
+   "text": "plis.",
+   "start": 27.309,
+   "end": 27.684
+  },
+  {
+   "text": "Le",
+   "start": 28.68,
+   "end": 28.792
+  },
+  {
+   "text": "cancer",
+   "start": 28.792,
+   "end": 29.155
+  },
+  {
+   "text": "de",
+   "start": 29.155,
+   "end": 29.242
+  },
+  {
+   "text": "l'estomac,",
+   "start": 29.242,
+   "end": 29.755
+  },
+  {
+   "text": "ce",
+   "start": 30.13,
+   "end": 30.242
+  },
+  {
+   "text": "sont",
+   "start": 30.242,
+   "end": 30.355
+  },
+  {
+   "text": "des",
+   "start": 30.355,
+   "end": 30.455
+  },
+  {
+   "text": "cellules",
+   "start": 30.455,
+   "end": 30.767
+  },
+  {
+   "text": "de",
+   "start": 30.767,
+   "end": 30.842
+  },
+  {
+   "text": "la",
+   "start": 30.842,
+   "end": 30.93
+  },
+  {
+   "text": "muqueuse",
+   "start": 30.93,
+   "end": 31.392
+  },
+  {
+   "text": "qui",
+   "start": 31.392,
+   "end": 31.517
+  },
+  {
+   "text": "se",
+   "start": 31.517,
+   "end": 31.642
+  },
+  {
+   "text": "multiplient",
+   "start": 31.642,
+   "end": 32.18
+  },
+  {
+   "text": "sans",
+   "start": 32.18,
+   "end": 32.33
+  },
+  {
+   "text": "contrôle.",
+   "start": 32.33,
+   "end": 32.98
+  },
+  {
+   "text": "Elles",
+   "start": 33.317,
+   "end": 33.53
+  },
+  {
+   "text": "forment",
+   "start": 33.53,
+   "end": 33.78
+  },
+  {
+   "text": "une",
+   "start": 33.78,
+   "end": 33.867
+  },
+  {
+   "text": "tumeur,",
+   "start": 33.867,
+   "end": 34.392
+  },
+  {
+   "text": "qui",
+   "start": 34.642,
+   "end": 34.742
+  },
+  {
+   "text": "peut",
+   "start": 34.742,
+   "end": 34.867
+  },
+  {
+   "text": "s'enfoncer",
+   "start": 34.867,
+   "end": 35.367
+  },
+  {
+   "text": "dans",
+   "start": 35.367,
+   "end": 35.468
+  },
+  {
+   "text": "la",
+   "start": 35.468,
+   "end": 35.555
+  },
+  {
+   "text": "paroi.",
+   "start": 35.555,
+   "end": 36.005
+  },
+  {
+   "text": "Il",
+   "start": 36.343,
+   "end": 36.542
+  },
+  {
+   "text": "touche",
+   "start": 36.542,
+   "end": 36.755
+  },
+  {
+   "text": "surtout",
+   "start": 36.755,
+   "end": 37.08
+  },
+  {
+   "text": "après",
+   "start": 37.08,
+   "end": 37.305
+  },
+  {
+   "text": "soixante",
+   "start": 37.305,
+   "end": 37.73
+  },
+  {
+   "text": "ans,",
+   "start": 37.73,
+   "end": 37.917
+  },
+  {
+   "text": "et",
+   "start": 38.205,
+   "end": 38.267
+  },
+  {
+   "text": "plus",
+   "start": 38.267,
+   "end": 38.43
+  },
+  {
+   "text": "souvent",
+   "start": 38.43,
+   "end": 38.68
+  },
+  {
+   "text": "les",
+   "start": 38.68,
+   "end": 38.78
+  },
+  {
+   "text": "hommes.",
+   "start": 38.78,
+   "end": 39.18
+  },
+  {
+   "text": "Une",
+   "start": 40.136,
+   "end": 40.299
+  },
+  {
+   "text": "cause",
+   "start": 40.299,
+   "end": 40.536
+  },
+  {
+   "text": "fréquente :",
+   "start": 40.536,
+   "end": 41.099
+  },
+  {
+   "text": "une",
+   "start": 41.511,
+   "end": 41.599
+  },
+  {
+   "text": "bactérie,",
+   "start": 41.599,
+   "end": 42.199
+  },
+  {
+   "text": "Helicobacter pylori.",
+   "start": 42.511,
+   "end": 43.861
+  },
+  {
+   "text": "Elle",
+   "start": 44.199,
+   "end": 44.411
+  },
+  {
+   "text": "vit",
+   "start": 44.411,
+   "end": 44.536
+  },
+  {
+   "text": "dans",
+   "start": 44.536,
+   "end": 44.636
+  },
+  {
+   "text": "l'estomac",
+   "start": 44.636,
+   "end": 45.136
+  },
+  {
+   "text": "et",
+   "start": 45.136,
+   "end": 45.174
+  },
+  {
+   "text": "irrite",
+   "start": 45.174,
+   "end": 45.499
+  },
+  {
+   "text": "la",
+   "start": 45.499,
+   "end": 45.574
+  },
+  {
+   "text": "muqueuse",
+   "start": 45.574,
+   "end": 46.036
+  },
+  {
+   "text": "pendant",
+   "start": 46.036,
+   "end": 46.249
+  },
+  {
+   "text": "des",
+   "start": 46.249,
+   "end": 46.349
+  },
+  {
+   "text": "années.",
+   "start": 46.349,
+   "end": 46.761
+  },
+  {
+   "text": "Bonne",
+   "start": 47.111,
+   "end": 47.349
+  },
+  {
+   "text": "nouvelle :",
+   "start": 47.349,
+   "end": 47.749
+  },
+  {
+   "text": "on",
+   "start": 48.124,
+   "end": 48.161
+  },
+  {
+   "text": "peut",
+   "start": 48.161,
+   "end": 48.286
+  },
+  {
+   "text": "la",
+   "start": 48.286,
+   "end": 48.374
+  },
+  {
+   "text": "chercher,",
+   "start": 48.374,
+   "end": 48.924
+  },
+  {
+   "text": "et",
+   "start": 49.224,
+   "end": 49.299
+  },
+  {
+   "text": "des",
+   "start": 49.299,
+   "end": 49.399
+  },
+  {
+   "text": "antibiotiques",
+   "start": 49.399,
+   "end": 50.049
+  },
+  {
+   "text": "l'éliminent.",
+   "start": 50.049,
+   "end": 50.661
+  },
+  {
+   "text": "Au",
+   "start": 51.618,
+   "end": 51.73
+  },
+  {
+   "text": "début,",
+   "start": 51.73,
+   "end": 52.143
+  },
+  {
+   "text": "il",
+   "start": 52.493,
+   "end": 52.568
+  },
+  {
+   "text": "ne",
+   "start": 52.568,
+   "end": 52.655
+  },
+  {
+   "text": "donne",
+   "start": 52.655,
+   "end": 52.818
+  },
+  {
+   "text": "souvent",
+   "start": 52.818,
+   "end": 53.13
+  },
+  {
+   "text": "aucun",
+   "start": 53.13,
+   "end": 53.38
+  },
+  {
+   "text": "signe.",
+   "start": 53.38,
+   "end": 53.868
+  },
+  {
+   "text": "Puis",
+   "start": 54.255,
+   "end": 54.368
+  },
+  {
+   "text": "viennent :",
+   "start": 54.368,
+   "end": 54.743
+  },
+  {
+   "text": "des",
+   "start": 54.993,
+   "end": 55.068
+  },
+  {
+   "text": "douleurs",
+   "start": 55.068,
+   "end": 55.355
+  },
+  {
+   "text": "au",
+   "start": 55.355,
+   "end": 55.405
+  },
+  {
+   "text": "creux",
+   "start": 55.405,
+   "end": 55.593
+  },
+  {
+   "text": "de",
+   "start": 55.593,
+   "end": 55.668
+  },
+  {
+   "text": "l'estomac",
+   "start": 55.668,
+   "end": 56.018
+  },
+  {
+   "text": "qui",
+   "start": 56.018,
+   "end": 56.18
+  },
+  {
+   "text": "durent,",
+   "start": 56.18,
+   "end": 56.518
+  },
+  {
+   "text": "la",
+   "start": 56.855,
+   "end": 56.918
+  },
+  {
+   "text": "sensation",
+   "start": 56.918,
+   "end": 57.355
+  },
+  {
+   "text": "d'être",
+   "start": 57.355,
+   "end": 57.63
+  },
+  {
+   "text": "vite",
+   "start": 57.63,
+   "end": 57.805
+  },
+  {
+   "text": "rassasié,",
+   "start": 57.805,
+   "end": 58.405
+  },
+  {
+   "text": "une",
+   "start": 58.718,
+   "end": 58.793
+  },
+  {
+   "text": "perte",
+   "start": 58.793,
+   "end": 59.043
+  },
+  {
+   "text": "de",
+   "start": 59.043,
+   "end": 59.155
+  },
+  {
+   "text": "poids,",
+   "start": 59.155,
+   "end": 59.505
+  },
+  {
+   "text": "des",
+   "start": 59.805,
+   "end": 59.868
+  },
+  {
+   "text": "vomissements,",
+   "start": 59.868,
+   "end": 60.468
+  },
+  {
+   "text": "des",
+   "start": 60.668,
+   "end": 60.743
+  },
+  {
+   "text": "selles",
+   "start": 60.743,
+   "end": 60.943
+  },
+  {
+   "text": "noires,",
+   "start": 60.943,
+   "end": 61.293
+  },
+  {
+   "text": "ou",
+   "start": 61.555,
+   "end": 61.593
+  },
+  {
+   "text": "une",
+   "start": 61.593,
+   "end": 61.655
+  },
+  {
+   "text": "grande",
+   "start": 61.655,
+   "end": 61.868
+  },
+  {
+   "text": "fatigue.",
+   "start": 61.868,
+   "end": 62.493
+  },
+  {
+   "text": "Le",
+   "start": 63.498,
+   "end": 63.623
+  },
+  {
+   "text": "risque",
+   "start": 63.623,
+   "end": 63.848
+  },
+  {
+   "text": "augmente",
+   "start": 63.848,
+   "end": 64.16
+  },
+  {
+   "text": "avec",
+   "start": 64.16,
+   "end": 64.373
+  },
+  {
+   "text": "l'âge,",
+   "start": 64.373,
+   "end": 64.773
+  },
+  {
+   "text": "cette",
+   "start": 64.973,
+   "end": 65.148
+  },
+  {
+   "text": "bactérie,",
+   "start": 65.148,
+   "end": 65.673
+  },
+  {
+   "text": "le",
+   "start": 65.91,
+   "end": 65.973
+  },
+  {
+   "text": "tabac,",
+   "start": 65.973,
+   "end": 66.348
+  },
+  {
+   "text": "l'alcool,",
+   "start": 66.611,
+   "end": 67.085
+  },
+  {
+   "text": "une",
+   "start": 67.398,
+   "end": 67.473
+  },
+  {
+   "text": "alimentation",
+   "start": 67.473,
+   "end": 68.023
+  },
+  {
+   "text": "trop",
+   "start": 68.023,
+   "end": 68.21
+  },
+  {
+   "text": "salée,",
+   "start": 68.21,
+   "end": 68.623
+  },
+  {
+   "text": "et",
+   "start": 68.948,
+   "end": 69.035
+  },
+  {
+   "text": "quand",
+   "start": 69.035,
+   "end": 69.148
+  },
+  {
+   "text": "un",
+   "start": 69.148,
+   "end": 69.236
+  },
+  {
+   "text": "proche",
+   "start": 69.236,
+   "end": 69.511
+  },
+  {
+   "text": "a",
+   "start": 69.511,
+   "end": 69.585
+  },
+  {
+   "text": "eu",
+   "start": 69.585,
+   "end": 69.66
+  },
+  {
+   "text": "ce",
+   "start": 69.66,
+   "end": 69.761
+  },
+  {
+   "text": "cancer.",
+   "start": 69.761,
+   "end": 70.323
+  },
+  {
+   "text": "Pour",
+   "start": 71.308,
+   "end": 71.433
+  },
+  {
+   "text": "le",
+   "start": 71.433,
+   "end": 71.507
+  },
+  {
+   "text": "trouver :",
+   "start": 71.507,
+   "end": 71.983
+  },
+  {
+   "text": "la",
+   "start": 72.332,
+   "end": 72.407
+  },
+  {
+   "text": "fibroscopie.",
+   "start": 72.407,
+   "end": 73.245
+  },
+  {
+   "text": "Une",
+   "start": 73.595,
+   "end": 73.782
+  },
+  {
+   "text": "petite",
+   "start": 73.782,
+   "end": 74.045
+  },
+  {
+   "text": "caméra",
+   "start": 74.045,
+   "end": 74.407
+  },
+  {
+   "text": "passe",
+   "start": 74.407,
+   "end": 74.62
+  },
+  {
+   "text": "par",
+   "start": 74.62,
+   "end": 74.757
+  },
+  {
+   "text": "la",
+   "start": 74.757,
+   "end": 74.858
+  },
+  {
+   "text": "bouche,",
+   "start": 74.858,
+   "end": 75.245
+  },
+  {
+   "text": "descend",
+   "start": 75.52,
+   "end": 75.77
+  },
+  {
+   "text": "l'œsophage",
+   "start": 75.77,
+   "end": 76.358
+  },
+  {
+   "text": "et",
+   "start": 76.358,
+   "end": 76.395
+  },
+  {
+   "text": "regarde",
+   "start": 76.395,
+   "end": 76.757
+  },
+  {
+   "text": "l'intérieur",
+   "start": 76.757,
+   "end": 77.233
+  },
+  {
+   "text": "de",
+   "start": 77.233,
+   "end": 77.32
+  },
+  {
+   "text": "l'estomac.",
+   "start": 77.32,
+   "end": 77.845
+  },
+  {
+   "text": "Elle",
+   "start": 78.183,
+   "end": 78.382
+  },
+  {
+   "text": "fait",
+   "start": 78.382,
+   "end": 78.507
+  },
+  {
+   "text": "aussi",
+   "start": 78.507,
+   "end": 78.757
+  },
+  {
+   "text": "des",
+   "start": 78.757,
+   "end": 78.858
+  },
+  {
+   "text": "biopsies,",
+   "start": 78.858,
+   "end": 79.433
+  },
+  {
+   "text": "de",
+   "start": 79.757,
+   "end": 79.832
+  },
+  {
+   "text": "petits",
+   "start": 79.832,
+   "end": 80.082
+  },
+  {
+   "text": "prélèvements.",
+   "start": 80.082,
+   "end": 80.695
+  },
+  {
+   "text": "Puis",
+   "start": 81.095,
+   "end": 81.207
+  },
+  {
+   "text": "un",
+   "start": 81.207,
+   "end": 81.27
+  },
+  {
+   "text": "scanner",
+   "start": 81.27,
+   "end": 81.707
+  },
+  {
+   "text": "montre",
+   "start": 81.707,
+   "end": 82.095
+  },
+  {
+   "text": "s'il",
+   "start": 82.095,
+   "end": 82.257
+  },
+  {
+   "text": "s'est",
+   "start": 82.257,
+   "end": 82.358
+  },
+  {
+   "text": "étendu.",
+   "start": 82.358,
+   "end": 82.933
+  },
+  {
+   "text": "Pour",
+   "start": 83.868,
+   "end": 84.055
+  },
+  {
+   "text": "le",
+   "start": 84.055,
+   "end": 84.13
+  },
+  {
+   "text": "soigner :",
+   "start": 84.13,
+   "end": 84.555
+  },
+  {
+   "text": "la",
+   "start": 84.868,
+   "end": 84.93
+  },
+  {
+   "text": "chirurgie,",
+   "start": 84.93,
+   "end": 85.568
+  },
+  {
+   "text": "qui",
+   "start": 85.818,
+   "end": 85.93
+  },
+  {
+   "text": "retire",
+   "start": 85.93,
+   "end": 86.218
+  },
+  {
+   "text": "une",
+   "start": 86.218,
+   "end": 86.318
+  },
+  {
+   "text": "partie",
+   "start": 86.318,
+   "end": 86.718
+  },
+  {
+   "text": "ou",
+   "start": 86.718,
+   "end": 86.781
+  },
+  {
+   "text": "tout",
+   "start": 86.781,
+   "end": 86.918
+  },
+  {
+   "text": "l'estomac,",
+   "start": 86.918,
+   "end": 87.418
+  },
+  {
+   "text": "souvent",
+   "start": 87.805,
+   "end": 88.068
+  },
+  {
+   "text": "avec",
+   "start": 88.068,
+   "end": 88.268
+  },
+  {
+   "text": "une",
+   "start": 88.268,
+   "end": 88.355
+  },
+  {
+   "text": "chimiothérapie",
+   "start": 88.355,
+   "end": 89.168
+  },
+  {
+   "text": "avant",
+   "start": 89.168,
+   "end": 89.505
+  },
+  {
+   "text": "et",
+   "start": 89.505,
+   "end": 89.605
+  },
+  {
+   "text": "après.",
+   "start": 89.605,
+   "end": 90.068
+  },
+  {
+   "text": "Et",
+   "start": 90.406,
+   "end": 90.543
+  },
+  {
+   "text": "pris",
+   "start": 90.543,
+   "end": 90.718
+  },
+  {
+   "text": "très",
+   "start": 90.718,
+   "end": 90.918
+  },
+  {
+   "text": "tôt,",
+   "start": 90.918,
+   "end": 91.218
+  },
+  {
+   "text": "on",
+   "start": 91.555,
+   "end": 91.581
+  },
+  {
+   "text": "peut",
+   "start": 91.581,
+   "end": 91.693
+  },
+  {
+   "text": "parfois",
+   "start": 91.693,
+   "end": 91.993
+  },
+  {
+   "text": "retirer",
+   "start": 91.993,
+   "end": 92.331
+  },
+  {
+   "text": "la",
+   "start": 92.331,
+   "end": 92.43
+  },
+  {
+   "text": "tumeur",
+   "start": 92.43,
+   "end": 92.805
+  },
+  {
+   "text": "avec",
+   "start": 92.805,
+   "end": 92.98
+  },
+  {
+   "text": "la",
+   "start": 92.98,
+   "end": 93.055
+  },
+  {
+   "text": "caméra,",
+   "start": 93.055,
+   "end": 93.505
+  },
+  {
+   "text": "sans",
+   "start": 93.768,
+   "end": 93.93
+  },
+  {
+   "text": "opérer.",
+   "start": 93.93,
+   "end": 94.493
+  },
+  {
+   "text": "Alors,",
+   "start": 95.433,
+   "end": 95.826
+  },
+  {
+   "text": "va",
+   "start": 96.046,
+   "end": 96.12
+  },
+  {
+   "text": "lui",
+   "start": 96.12,
+   "end": 96.23
+  },
+  {
+   "text": "en",
+   "start": 96.23,
+   "end": 96.279
+  },
+  {
+   "text": "parler :",
+   "start": 96.279,
+   "end": 96.696
+  },
+  {
+   "text": "des",
+   "start": 97.027,
+   "end": 97.088
+  },
+  {
+   "text": "douleurs",
+   "start": 97.088,
+   "end": 97.321
+  },
+  {
+   "text": "d'estomac",
+   "start": 97.321,
+   "end": 97.688
+  },
+  {
+   "text": "qui",
+   "start": 97.688,
+   "end": 97.848
+  },
+  {
+   "text": "durent,",
+   "start": 97.848,
+   "end": 98.215
+  },
+  {
+   "text": "ou",
+   "start": 98.534,
+   "end": 98.583
+  },
+  {
+   "text": "une",
+   "start": 98.583,
+   "end": 98.681
+  },
+  {
+   "text": "perte",
+   "start": 98.681,
+   "end": 98.975
+  },
+  {
+   "text": "de",
+   "start": 98.975,
+   "end": 99.073
+  },
+  {
+   "text": "poids",
+   "start": 99.073,
+   "end": 99.257
+  },
+  {
+   "text": "sans",
+   "start": 99.257,
+   "end": 99.404
+  },
+  {
+   "text": "raison,",
+   "start": 99.404,
+   "end": 99.772
+  },
+  {
+   "text": "on",
+   "start": 100.115,
+   "end": 100.139
+  },
+  {
+   "text": "consulte…",
+   "start": 100.139,
+   "end": 100.679
+  },
+  {
+   "text": "au",
+   "start": 101.034,
+   "end": 101.058
+  },
+  {
+   "text": "lieu",
+   "start": 101.058,
+   "end": 101.206
+  },
+  {
+   "text": "de",
+   "start": 101.206,
+   "end": 101.291
+  },
+  {
+   "text": "prendre",
+   "start": 101.291,
+   "end": 101.573
+  },
+  {
+   "text": "des",
+   "start": 101.573,
+   "end": 101.647
+  },
+  {
+   "text": "pansements",
+   "start": 101.647,
+   "end": 101.99
+  },
+  {
+   "text": "pendant",
+   "start": 101.99,
+   "end": 102.198
+  },
+  {
+   "text": "des",
+   "start": 102.198,
+   "end": 102.296
+  },
+  {
+   "text": "mois !",
+   "start": 102.296,
+   "end": 102.603
+  }
+ ]
+}

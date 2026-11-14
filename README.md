@@ -65,6 +65,7 @@ pas de logiciel de montage, pas de banque d'images.
 | 52 | Pathologie : le cancer colorectal (voix Laura, accroche « la lettre dans le tiroir », schéma fourni sans annotations) | `Cancer-Colorectal` | [voix/52-cancer-colorectal.script.json](voix/52-cancer-colorectal.script.json) | [storyboard](docs/lpi/storyboard-cancer-colorectal.md) |
 | 53 | Pathologie : le cancer de la vessie (voix gratuite, accroche « l'eau qui rougit », schéma fourni sans annotations) | `Cancer-Vessie` | [voix/53-cancer-vessie.script.json](voix/53-cancer-vessie.script.json) | [storyboard](docs/lpi/storyboard-cancer-vessie.md) |
 | 54 | Pathologie : le cancer du pancréas (voix gratuite, accroche « le jaune dans le miroir », schéma fourni sans annotations) | `Cancer-Pancreas` | [voix/54-cancer-pancreas.script.json](voix/54-cancer-pancreas.script.json) | [storyboard](docs/lpi/storyboard-cancer-pancreas.md) |
+| 55 | Pathologie : le cancer de l'estomac (voix gratuite, accroche « l'assiette repoussée », schéma fourni sans annotations) | `Cancer-Estomac` | [voix/55-cancer-estomac.script.json](voix/55-cancer-estomac.script.json) | [storyboard](docs/lpi/storyboard-cancer-estomac.md) |
 
 ## Utilisation
 

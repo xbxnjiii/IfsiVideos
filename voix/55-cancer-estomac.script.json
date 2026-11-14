@@ -1,0 +1,47 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Au repas, ton grand-père repousse son assiette : il n'a plus faim. Depuis des semaines, il a mal au ventre après manger… et il a maigri. Il prend un pansement pour l'estomac : ça passe… puis ça revient. Pourtant, une douleur qui dure, avec une perte de poids, ça se montre à un médecin."
+ },
+ {
+  "id": "estomac",
+  "rate": "+0%",
+  "text": "L'estomac reçoit les aliments par l'œsophage. Il les mélange avec un liquide acide pour les digérer, puis les envoie dans le duodénum, le début de l'intestin. À l'intérieur, sa paroi est tapissée d'une muqueuse, pleine de petits plis."
+ },
+ {
+  "id": "cancer",
+  "rate": "+0%",
+  "text": "Le cancer de l'estomac, ce sont des cellules de la muqueuse qui se multiplient sans contrôle. Elles forment une tumeur, qui peut s'enfoncer dans la paroi. Il touche surtout après soixante ans, et plus souvent les hommes."
+ },
+ {
+  "id": "bacterie",
+  "rate": "+0%",
+  "text": "Une cause fréquente : une bactérie, {Helicobacter pylori|hélicobactère pilori}. Elle vit dans l'estomac et irrite la muqueuse pendant des années. Bonne nouvelle : on peut la chercher, et des antibiotiques l'éliminent."
+ },
+ {
+  "id": "signes",
+  "rate": "+0%",
+  "text": "Au début, il ne donne souvent aucun signe. Puis viennent : des douleurs au creux de l'estomac qui durent, la sensation d'être vite rassasié, une perte de poids, des vomissements, des selles noires, ou une grande fatigue."
+ },
+ {
+  "id": "risques",
+  "rate": "+0%",
+  "text": "Le risque augmente avec l'âge, cette bactérie, le tabac, l'alcool, une alimentation trop salée, et quand un proche a eu ce cancer."
+ },
+ {
+  "id": "examens",
+  "rate": "+0%",
+  "text": "Pour le trouver : la fibroscopie. Une petite caméra passe par la bouche, descend l'œsophage et regarde l'intérieur de l'estomac. Elle fait aussi des biopsies, de petits prélèvements. Puis un scanner montre s'il s'est étendu."
+ },
+ {
+  "id": "traitement",
+  "rate": "+0%",
+  "text": "Pour le soigner : la chirurgie, qui retire une partie ou tout l'estomac, souvent avec une chimiothérapie avant et après. Et pris très tôt, on peut parfois retirer la tumeur avec la caméra, sans opérer."
+ },
+ {
+  "id": "fin",
+  "rate": "+2%",
+  "text": "Alors, va lui en parler : des douleurs d'estomac qui durent, ou une perte de poids sans raison, on consulte… au lieu de prendre des pansements pendant des mois !"
+ }
+]
