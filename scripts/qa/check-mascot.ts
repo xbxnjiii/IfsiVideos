@@ -102,6 +102,8 @@ import * as cancersein from '../../src/videos/cancer-sein/mascot';
 import * as cancerseinTL from '../../src/videos/cancer-sein/timeline';
 import * as cancerpoumon from '../../src/videos/cancer-poumon/mascot';
 import * as cancerpoumonTL from '../../src/videos/cancer-poumon/timeline';
+import * as cancercolorectal from '../../src/videos/cancer-colorectal/mascot';
+import * as cancercolorectalTL from '../../src/videos/cancer-colorectal/timeline';
 
 const VIDEOS: Record<string, [typeof constantes.MASCOT, typeof constantesTL.TL]> = {
 	constantes: [constantes.MASCOT, constantesTL.TL],
@@ -154,6 +156,7 @@ const VIDEOS: Record<string, [typeof constantes.MASCOT, typeof constantesTL.TL]>
 	'cancer-prostate': [cancerprostate.MASCOT, cancerprostateTL.TL],
 	'cancer-sein': [cancersein.MASCOT, cancerseinTL.TL],
 	'cancer-poumon': [cancerpoumon.MASCOT, cancerpoumonTL.TL],
+	'cancer-colorectal': [cancercolorectal.MASCOT, cancercolorectalTL.TL],
 };
 const name = process.argv[2] ?? 'constantes';
 const [MASCOT, TL] = VIDEOS[name];

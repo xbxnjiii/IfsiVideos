@@ -65,7 +65,8 @@
     "render:brulure-3": "remotion render Brulure-3 out/48-brulure-3.mp4",
     "render:cancer-prostate": "remotion render Cancer-Prostate out/49-cancer-prostate.mp4",
     "render:cancer-sein": "remotion render Cancer-Sein out/50-cancer-sein.mp4",
-    "render:cancer-poumon": "remotion render Cancer-Poumon out/51-cancer-poumon.mp4"
+    "render:cancer-poumon": "remotion render Cancer-Poumon out/51-cancer-poumon.mp4",
+    "render:cancer-colorectal": "remotion render Cancer-Colorectal out/52-cancer-colorectal.mp4"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.532",

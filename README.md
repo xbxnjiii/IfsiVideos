@@ -62,6 +62,7 @@ pas de logiciel de montage, pas de banque d'images.
 | 49 | Pathologie : le cancer de la prostate (voix Laura, accroche « il se lève la nuit ») | `Cancer-Prostate` | [voix/49-cancer-prostate.script.json](voix/49-cancer-prostate.script.json) | [storyboard](docs/lpi/storyboard-cancer-prostate.md) |
 | 50 | Pathologie : le cancer du sein (voix gratuite, accroche « la boule dans la salle de bain », schéma fourni sans annotations) | `Cancer-Sein` | [voix/50-cancer-sein.script.json](voix/50-cancer-sein.script.json) | [storyboard](docs/lpi/storyboard-cancer-sein.md) |
 | 51 | Pathologie : le cancer du poumon (voix gratuite, accroche « le mouchoir sur le balcon », schéma fourni sans annotations) | `Cancer-Poumon` | [voix/51-cancer-poumon.script.json](voix/51-cancer-poumon.script.json) | [storyboard](docs/lpi/storyboard-cancer-poumon.md) |
+| 52 | Pathologie : le cancer colorectal (voix gratuite, accroche « la lettre dans le tiroir », schéma fourni sans annotations) | `Cancer-Colorectal` | [voix/52-cancer-colorectal.script.json](voix/52-cancer-colorectal.script.json) | [storyboard](docs/lpi/storyboard-cancer-colorectal.md) |
 
 ## Utilisation
 

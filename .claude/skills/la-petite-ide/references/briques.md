@@ -231,6 +231,20 @@ Le thorax « couche par couche » (demandé : une image simple par étape, comme
 - `ChestPeel` — Les couches du thorax posées sur le `Patient` (même `size`, même position) : `peel` 0 → 3 enlève une couche par unité (0 : rien, le patient habillé ; 1 : la cage thoracique ; 2 : les poumons ; 3 : l'intérieur).
 - `ChestStep` — Une étape seule (planches, gros plans) : 1 patient, 2 côtes, 3 poumons, 4 intérieur ; cadrée sur le thorax.
 
+## `colorectal.tsx`
+Briques « cancer colorectal » (vidéo n° 52). Mise en situation réaliste (demandé) : la cuisine le matin (carrelage, fenêtre, placards, calendrier mural dont l'année change), le plan de travail en bois avec son tiroir qui s'ouvre et garde les lettres, l'enveloppe du dépistage. Explications aux couleurs de la marque : pictos (kit de dépistage, viande rouge et charcuterie, transit qui change, mal au ventre), polype.
+
+- `KITCHEN` — Vraies couleurs de la cuisine (mise en situation réaliste).
+- `KIT` — Repères de la cuisine (pixels, cadre 1080 × 1920).
+- `Envelope` — Enveloppe (repère 260 × 170, vraies couleurs) : `open` 0 → 1 soulève le rabat.
+- `Kitchen` — La cuisine, plein cadre 1080 × 1920 (vraies couleurs) : mur, crédence carrelée, fenêtre, placards hauts, calendrier mural (`year`, `flip` 0 → 1 : la page s'envole), puis `children` (le père, derrière le plan de travail), et devant : le…
+- `KitIcon` — Le kit de dépistage à faire chez soi : le tube et sa tige, l'enveloppe retour.
+- `MeatIcon` — La viande rouge et la charcuterie : un steak, un saucisson.
+- `TransitIcon` — Le transit qui change : deux flèches qui partent dans des sens opposés.
+- `BellyIcon` — Mal au ventre : le ventre et des éclairs de douleur.
+- `Polyp` — Polype (repère du dessin où il est posé) : petite boule rose sur un pied, qui pousse avec `grow` 0 → 1.
+- `Glow` — Halo autour d'un objet qu'on veut montrer (repère libre).
+
 ## `copd.tsx`
 Briques « BPCO » réutilisables : gros plan d'une bronche (paroi qui s'enflamme, mucus, passage qui rétrécit, alvéoles au bout qui se détruisent = emphysème, air qui entre puis reste piégé, bronchodilatateur qui la rouvre), spiromètre (on souffle dans un tube : courbe du volume soufflé, repère à 1 seconde, seuil de 70 %) et inhalateur. L'arbre bronchique vu à travers le thorax est dans le `Patient` (`bronchi`, `narrow`, `trapped`, `cannula`).
 

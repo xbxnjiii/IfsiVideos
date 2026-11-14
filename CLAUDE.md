@@ -466,6 +466,25 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   `src/brand/lungcancer.tsx` (`Balcony`, `DadBalcony` : `smoke`, `puff`, `cough`, `show`, `blood`, `worry`, `shrug` ;
   pictos `WeightLossIcon`, `RadonIcon`, `HelmetIcon`, `ImmunoIcon`, `TargetIcon`, `PassiveSmokeIcon`, `NoSmokeIcon`).
   Storyboard `docs/lpi/storyboard-cancer-poumon.md`.
+- `Cancer-Colorectal` (n° 52, ≈ 1 min 40, format « pathologie », voix gratuite d'abord, sans barre de progression) : demandé
+  « pareil, à l'aide de ce schéma, sans les annotations ». Schéma fourni `public/images/colon/colon-cancer.webp` (côlon dans
+  la silhouette du ventre + « focus » côlon sain / avec cancer) nettoyé par `scripts/brand/clean_colon_diagram.py` →
+  `colon-propre-anatomie.png` / `-focus.png`. Ici les étiquettes sont posées sur la **silhouette chair** (pas sur du blanc) :
+  comblées en suivant la direction du fond mais **seulement avec des pixels de fond** (`directional_bg` : si un côté tombe
+  sur l'intestin, seul l'autre est recopié ; sinon diffusion), en ne touchant que la pastille (pixels bleutés + leur
+  liseré) ; l'étiquette posée sur l'intestin grêle est recouverte par le morceau d'intestin juste en dessous (décalé de 80
+  lignes, fondu court) ; traits = diffusion après les pastilles. Accroche **« la lettre dans le tiroir »** avec **« ton
+  père »** : cuisine en vraies couleurs, la lettre du dépistage glisse dans le tiroir, « Plus tard… », le calendrier passe
+  de 2024 à 2026, la 2e lettre rejoint la 1re, loupe sur le ventre ; l'accroche annonce le message clé (le test à faire chez
+  soi). Puis le côlon (des billes avancent du cæcum jusqu'à l'anus), le polype qui pousse sur la paroi du côlon sain puis le
+  fondu vers le côlon avec cancer (2e cancer qui tue le plus en France), les signes, le dépistage (50 – 74 ans, tous les 2
+  ans, test à faire chez soi, sang invisible dans les selles, gratuit), la coloscopie (le coloscope remonte le schéma,
+  l'anse retire le polype), les risques (âge, proche, viande rouge et charcuterie, alcool, tabac, surpoids, manque
+  d'activité), les traitements (chirurgie, parfois chimio / radiothérapie ; détecté tôt : 9 cas sur 10), chute « cette
+  lettre, il faut l'ouvrir… et faire le test ». Briques `src/brand/colorectal.tsx` (`Kitchen` : `year` / `nextYear` /
+  `flip`, `drawer`, `inside`, `onTop` ; `Envelope` `open` ; `Polyp` ; pictos `KitIcon`, `MeatIcon`, `TransitIcon`,
+  `BellyIcon`) ; le père = `DadBalcony` `cig={false}`. Voix : « cæcum » était lu de travers → `{cæcum|cécum}` ; « il la
+  range » était entendu « il arrange » → « il la glisse ». Storyboard `docs/lpi/storyboard-cancer-colorectal.md`.
 
 ## Voix ElevenLabs « Laura » (choisie par le propriétaire pour les nouvelles vidéos)
 

@@ -1,0 +1,47 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Ton père reçoit une lettre : un petit test à faire chez lui. Il la glisse dans un tiroir… plus tard. Deux ans après, une nouvelle lettre… et encore le tiroir. Pourtant, ce simple test aurait pu repérer très tôt un cancer : le cancer colorectal."
+ },
+ {
+  "id": "colon",
+  "rate": "+0%",
+  "text": "Après l'intestin grêle, ce qu'on mange arrive dans le côlon, le gros intestin. Il commence par le {cæcum|cécum}, avec l'appendice. Puis il monte, traverse le ventre, redescend, fait une boucle, le sigmoïde, et se termine par le rectum et l'anus."
+ },
+ {
+  "id": "cancer",
+  "rate": "+0%",
+  "text": "Le cancer colorectal commence souvent par un polype : une petite boule sur la paroi, au début sans danger. Mais avec les années, certains polypes deviennent un cancer. C'est le deuxième cancer qui tue le plus en France."
+ },
+ {
+  "id": "signes",
+  "rate": "+0%",
+  "text": "Le piège : au début, il ne donne souvent aucun signe. Plus tard : du sang dans les selles, un transit qui change, diarrhée ou constipation qui dure, des douleurs au ventre, de la fatigue et une perte de poids."
+ },
+ {
+  "id": "depistage",
+  "rate": "+0%",
+  "text": "La bonne nouvelle : on peut le repérer tôt. De cinquante à soixante-quatorze ans, tous les deux ans, un test à faire chez soi cherche du sang invisible dans les selles. Il est gratuit, et ça ne prend que quelques minutes."
+ },
+ {
+  "id": "examens",
+  "rate": "+0%",
+  "text": "Si le test est positif : une coloscopie. Une petite caméra passe dans le côlon, regarde la paroi… et retire les polypes, avant qu'ils ne deviennent un cancer."
+ },
+ {
+  "id": "risques",
+  "rate": "+0%",
+  "text": "Le risque augmente avec l'âge, quand un proche a eu ce cancer, avec beaucoup de viande rouge et de charcuterie, l'alcool, le tabac, le surpoids et le manque d'activité physique."
+ },
+ {
+  "id": "traitement",
+  "rate": "+0%",
+  "text": "Pour le soigner : la chirurgie, qui retire la partie malade, et parfois la chimiothérapie ou la radiothérapie. Et détecté tôt, il guérit dans neuf cas sur dix."
+ },
+ {
+  "id": "fin",
+  "rate": "+2%",
+  "text": "Alors, va lui en parler : cette lettre, il faut l'ouvrir… et faire le test !"
+ }
+]
