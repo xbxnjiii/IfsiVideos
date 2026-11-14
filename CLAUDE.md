@@ -446,7 +446,7 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   pictos `LumpIcon`, `OrangeSkinIcon`, `NippleIcon`, `ArmpitIcon`, `PalpationIcon`, `MammoIcon`, `EchoIcon`,
   `WomenFamilyIcon`, `WineSmokeIcon`, `ScaleSofaIcon`, `ChemoIcon`, `OneInEight`). Voix : « sous l'aisselle » était
   entendu « sous les selles » → « sous le bras ». Storyboard `docs/lpi/storyboard-cancer-sein.md`.
-- `Cancer-Poumon` (n° 51, ≈ 1 min 48, format « pathologie », voix gratuite d'abord, sans barre de progression) : demandé « pareil,
+- `Cancer-Poumon` (n° 51, ≈ 1 min 52, format « pathologie », voix Laura après validation (2 046 crédits), sans barre de progression) : demandé « pareil,
   à l'aide de ce schéma, sans les annotations ». Schéma fourni `public/images/poumon/poumon-cancer.webp` (trachée, poumons,
   bronches, bronchioles, alvéoles dans leur loupe, diaphragme + « focus » poumon sain / cancer et alvéoles saines /
   touchées) nettoyé par `scripts/brand/clean_poumon_diagram.py` → `poumon-propre-anatomie.png` / `-focus.png`. Méthodes de
