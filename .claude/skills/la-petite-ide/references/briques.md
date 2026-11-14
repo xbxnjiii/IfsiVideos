@@ -469,6 +469,21 @@ Briques pédagogiques La Petite IDE : numéro de partie, carte « terme techniqu
 - `SignKind`
 - `Sign`
 
+## `lungcancer.tsx`
+Briques « cancer du poumon » (vidéo n° 51). Mise en situation réaliste (demandé) : le balcon le soir (ciel du crépuscule, immeubles aux fenêtres allumées, rambarde en métal, plante, cendrier) et le père, vu de face, qui fume, tousse dans son mouchoir et découvre un peu de sang. Explications aux couleurs de la marque : pictos (perte de poids, radon, travail / amiante, immunothérapie, thérapie ciblée, tabagisme passif, cigarette barrée), fibroscope.
+
+- `DUSK` — Vraies couleurs du balcon le soir et du père (mise en situation réaliste).
+- `Balcony` — Le balcon au crépuscule, plein cadre 1080 × 1920 (vraies couleurs) : ciel, immeubles et fenêtres allumées, `children` (le père) puis, au premier plan, la rambarde (main courante à `rail`), une plante et le cendrier.
+- `DAD` — Points du père (repère 600 × 1000) : la bouche, le mouchoir tenu devant la poitrine.
+- `DadBalcony` — Le père, vu de face (repère 600 × 1000, vraies couleurs), cheveux gris, barbe de quelques jours, pull.
+- `WeightLossIcon` — La perte de poids : une balance, la flèche qui descend.
+- `RadonIcon` — Le radon : une maison, le gaz qui monte du sol.
+- `HelmetIcon` — Au travail : un casque de chantier (amiante, produits respirés).
+- `ImmunoIcon` — L'immunothérapie : un bouclier (les défenses) face à une cellule tumorale.
+- `TargetIcon` — Les traitements ciblés : une cible et sa flèche.
+- `PassiveSmokeIcon` — Le tabagisme passif : quelqu'un fume, la fumée va vers l'autre.
+- `NoSmokeIcon` — Arrêter de fumer : la cigarette barrée.
+
 ## `lungs.tsx`
 Planche anatomique « La Petite IDE » n° 1 : LES POUMONS (dessin maison, palette de la marque, contours bleu nuit). Réutilisable dans toutes les vidéos (BPCO, asthme, pneumonie, embolie…). Les planches suivantes (cerveau, cœur…) suivront le même principe : un dessin `…Art` (groupe SVG dans un repère fixe), un svg autonome avec étiquettes, des gros plans dans une loupe `ZoomBubble`, et un calque calé sur le `Patient` pour les voir « à travers » le corps. - `LungsArt` (repère 600 × 640) / `Lungs` (svg autonome, étiquettes `labels`) : trachée et ses anneaux, bronches → bronchioles (arbre qui se dessine `tree`), alvéoles au bout, lobes et scissures, plèvre, diaphragme, côtes, air qui circule ; BPCO `copd` (paroi rose épaissie, passage étroit, mucus, poumons distendus et plus sombres, diaphragme aplati) + emphysème `emph` (bulles) + air piégé `trapped`. - `AlveoliZoom` : grappes d'alvéoles + vaisseaux, O₂ qui passe dans le sang ; emphysème (les parois cassent : grands sacs), air emprisonné. - `AirwayCross` : bronche en coupe (anneaux de cartilage, muscle, muqueuse) : ouverte → enflammée, muscle contracté, passage en étoile, mucus qui coule. - `ZoomBubble` : loupe ronde reliée au point qu'elle grossit (comme les planches de cours). - `ChestXRay` : radio du thorax calée sur le `Patient` (même repère 400 × 560, même taille) : film bleu nuit, côtes, colonne, clavicules, poumons sombres ; ligne de balayage `scan`, puis les poumons en couleur se découvrent `reveal`.
 

@@ -1,0 +1,47 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Le soir, sur le balcon, ton père allume sa cigarette… comme tous les soirs depuis trente ans. Il tousse… encore. Et ce soir, dans son mouchoir… un peu de sang. Il te dit : ce n'est rien, c'est la cigarette. Peut-être… mais du sang quand on tousse, ça se montre vite à un médecin."
+ },
+ {
+  "id": "poumons",
+  "rate": "+0%",
+  "text": "L'air entre par la trachée, puis passe dans les bronches, qui se divisent en bronchioles, de plus en plus petites. Au bout, il y a les alvéoles, de minuscules sacs d'air : c'est là que l'oxygène passe dans le sang. Et dessous, le diaphragme, le muscle qui nous fait respirer."
+ },
+ {
+  "id": "cancer",
+  "rate": "+0%",
+  "text": "Le cancer du poumon, ce sont des cellules qui se multiplient sans contrôle, le plus souvent dans une bronche. Elles forment une tumeur, qui prend la place de l'air. En France, c'est le cancer qui tue le plus."
+ },
+ {
+  "id": "tabac",
+  "rate": "+0%",
+  "text": "Et dans huit cas sur dix, le coupable, c'est le tabac. Chaque bouffée envoie des produits toxiques jusqu'au fond des bronches. Et la fumée des autres aussi : c'est le tabagisme passif."
+ },
+ {
+  "id": "signes",
+  "rate": "+0%",
+  "text": "Le piège : au début, il ne donne souvent aucun signe. Plus tard, il peut y avoir une toux qui ne passe pas ou qui change, du sang dans les crachats, un essoufflement, une douleur dans la poitrine, de la fatigue et une perte de poids."
+ },
+ {
+  "id": "examens",
+  "rate": "+0%",
+  "text": "Pour le rechercher : une radio, puis un scanner du thorax. Et une fibroscopie : un petit tube avec une caméra, qui descend dans les bronches pour faire une biopsie, un petit prélèvement qui confirme le cancer."
+ },
+ {
+  "id": "risques",
+  "rate": "+0%",
+  "text": "En plus du tabac, le risque augmente avec l'amiante et certains produits respirés au travail, avec le radon, un gaz qui sort du sol, et avec la pollution de l'air."
+ },
+ {
+  "id": "traitement",
+  "rate": "+0%",
+  "text": "Pour le soigner : la chirurgie, qui retire une partie du poumon, la radiothérapie, la chimiothérapie, l'immunothérapie, qui aide les défenses du corps à attaquer la tumeur, ou des traitements ciblés."
+ },
+ {
+  "id": "fin",
+  "rate": "+2%",
+  "text": "Alors, va lui en parler : arrêter de fumer protège ses poumons, à tout âge… et il n'est jamais trop tard pour commencer !"
+ }
+]

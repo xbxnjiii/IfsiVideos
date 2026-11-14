@@ -446,6 +446,26 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   pictos `LumpIcon`, `OrangeSkinIcon`, `NippleIcon`, `ArmpitIcon`, `PalpationIcon`, `MammoIcon`, `EchoIcon`,
   `WomenFamilyIcon`, `WineSmokeIcon`, `ScaleSofaIcon`, `ChemoIcon`, `OneInEight`). Voix : « sous l'aisselle » était
   entendu « sous les selles » → « sous le bras ». Storyboard `docs/lpi/storyboard-cancer-sein.md`.
+- `Cancer-Poumon` (n° 51, ≈ 1 min 48, format « pathologie », voix gratuite d'abord, sans barre de progression) : demandé « pareil,
+  à l'aide de ce schéma, sans les annotations ». Schéma fourni `public/images/poumon/poumon-cancer.webp` (trachée, poumons,
+  bronches, bronchioles, alvéoles dans leur loupe, diaphragme + « focus » poumon sain / cancer et alvéoles saines /
+  touchées) nettoyé par `scripts/brand/clean_poumon_diagram.py` → `poumon-propre-anatomie.png` / `-focus.png`. Méthodes de
+  nettoyage (réutilisables) : étiquettes posées sur le fond blanc = pixels bleutés passés en blanc (le dessin rose / rouge
+  n'est pas touché) ; étiquettes sur le bord du poumon = chaque ligne recopiée des lignes propres au-dessus / au-dessous,
+  **décalée pour suivre le contour** (`rowshift`), puis texture reprise **en miroir de l'autre poumon** (axe de la trachée
+  x = 462,5 : les bords extérieurs sont symétriques) ; traits dans le tissu = diffusion (`cv2.inpaint`) ; cône rose posé
+  sur le poumon = zone reprise en miroir de l'autre poumon, en fondu. Accroche **« le mouchoir sur le balcon »** avec
+  **« ton père »** : balcon au crépuscule en vraies couleurs, il fume, tousse dans son mouchoir, une tache de sang, « Ce
+  n'est rien… ? », loupe sur la poitrine. Puis le trajet de l'air (bulles d'air qui descendent jusqu'aux alvéoles),
+  le cancer (le plus souvent dans une bronche, prend la place de l'air, 1re cause de mort par cancer en France), le tabac
+  (8 cas sur 10, la fumée descend dans les bronches, tabagisme passif), les signes (souvent aucun au début ; toux qui ne
+  passe pas ou change, sang dans les crachats, essoufflement, douleur thoracique, fatigue + perte de poids), les examens
+  (radio, scanner, fibroscopie : le tube à caméra descend la bronche du schéma jusqu'à la tumeur, biopsie), les risques
+  (tabac, amiante / travail, radon, pollution), les traitements (chirurgie, radiothérapie, chimiothérapie, immunothérapie,
+  traitements ciblés), chute « arrêter de fumer protège ses poumons, à tout âge… jamais trop tard ». Briques
+  `src/brand/lungcancer.tsx` (`Balcony`, `DadBalcony` : `smoke`, `puff`, `cough`, `show`, `blood`, `worry`, `shrug` ;
+  pictos `WeightLossIcon`, `RadonIcon`, `HelmetIcon`, `ImmunoIcon`, `TargetIcon`, `PassiveSmokeIcon`, `NoSmokeIcon`).
+  Storyboard `docs/lpi/storyboard-cancer-poumon.md`.
 
 ## Voix ElevenLabs « Laura » (choisie par le propriétaire pour les nouvelles vidéos)
 
