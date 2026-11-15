@@ -485,7 +485,7 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   `flip`, `drawer`, `inside`, `onTop` ; `Envelope` `open` ; `Polyp` ; pictos `KitIcon`, `MeatIcon`, `TransitIcon`,
   `BellyIcon`) ; le père = `DadBalcony` `cig={false}`. Voix : « cæcum » était lu de travers → `{cæcum|cécum}` ; « il la
   range » était entendu « il arrange » → « il la glisse ». Storyboard `docs/lpi/storyboard-cancer-colorectal.md`.
-- `Cancer-Vessie` (n° 53, ≈ 1 min 39, format « pathologie », voix gratuite d'abord, sans barre de progression) : demandé
+- `Cancer-Vessie` (n° 53, ≈ 1 min 42, format « pathologie », voix Laura après validation (1 892 crédits), sans barre de progression) : demandé
   « pareil, à l'aide de ce schéma, sans les annotations ». Schéma fourni `public/images/vessie/vessie-cancer.webp` (reins,
   uretères, vessie, urètre dans le corps + « focus » vessie saine / avec cancer) nettoyé par
   `scripts/brand/clean_vessie_diagram.py` → `vessie-propre-anatomie.png` / `-focus.png`. Méthodes : les 4 étiquettes sont
