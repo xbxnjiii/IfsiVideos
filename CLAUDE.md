@@ -503,7 +503,7 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   (résection par l'urètre, lavages de la vessie, ablation ; pris tôt, il se soigne très bien), chute « du sang dans les
   urines, même une seule fois, on consulte… arrêter de fumer protège aussi sa vessie ». Briques `src/brand/bladder.tsx`.
   Storyboard `docs/lpi/storyboard-cancer-vessie.md`.
-- `Cancer-Pancreas` (n° 54, ≈ 1 min 45, format « pathologie », voix gratuite d'abord, sans barre de progression) : demandé
+- `Cancer-Pancreas` (n° 54, ≈ 1 min 50, format « pathologie », voix Laura après validation (1 966 crédits), sans barre de progression) : demandé
   « pareil, à l'aide de ce schéma, sans les annotations ». Schéma fourni `public/images/pancreas/pancreas-cancer.webp`
   (foie, vésicule, estomac, duodénum, pancréas + « focus » pancréas sain / avec cancer) nettoyé par
   `scripts/brand/clean_pancreas_diagram.py` → `-anatomie.png`, `-focus.png` et **chaque pancréas seul** (`-sain.png`,
