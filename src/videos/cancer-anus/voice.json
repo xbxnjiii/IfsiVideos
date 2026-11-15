@@ -1,0 +1,1798 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 115.904,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.05,
+   "end": 13.45
+  },
+  {
+   "id": "anus",
+   "start": 14.426,
+   "end": 30.764
+  },
+  {
+   "id": "cancer",
+   "start": 31.763,
+   "end": 42.576
+  },
+  {
+   "id": "hpv",
+   "start": 43.532,
+   "end": 56.669
+  },
+  {
+   "id": "signes",
+   "start": 57.63,
+   "end": 67.805
+  },
+  {
+   "id": "risques",
+   "start": 68.764,
+   "end": 79.752
+  },
+  {
+   "id": "examens",
+   "start": 80.74,
+   "end": 91.915
+  },
+  {
+   "id": "traitement",
+   "start": 92.88,
+   "end": 104.781
+  },
+  {
+   "id": "fin",
+   "start": 105.766,
+   "end": 115.558
+  }
+ ],
+ "words": [
+  {
+   "text": "Depuis",
+   "start": 0.05,
+   "end": 0.374
+  },
+  {
+   "text": "des",
+   "start": 0.374,
+   "end": 0.482
+  },
+  {
+   "text": "semaines,",
+   "start": 0.482,
+   "end": 0.939
+  },
+  {
+   "text": "ta",
+   "start": 1.227,
+   "end": 1.324
+  },
+  {
+   "text": "mère",
+   "start": 1.324,
+   "end": 1.528
+  },
+  {
+   "text": "voit",
+   "start": 1.528,
+   "end": 1.672
+  },
+  {
+   "text": "un",
+   "start": 1.672,
+   "end": 1.708
+  },
+  {
+   "text": "peu",
+   "start": 1.708,
+   "end": 1.84
+  },
+  {
+   "text": "de",
+   "start": 1.84,
+   "end": 1.961
+  },
+  {
+   "text": "sang",
+   "start": 1.961,
+   "end": 2.153
+  },
+  {
+   "text": "sur",
+   "start": 2.153,
+   "end": 2.297
+  },
+  {
+   "text": "le",
+   "start": 2.297,
+   "end": 2.369
+  },
+  {
+   "text": "papier",
+   "start": 2.369,
+   "end": 2.622
+  },
+  {
+   "text": "toilette.",
+   "start": 2.622,
+   "end": 3.187
+  },
+  {
+   "text": "Ça",
+   "start": 3.51,
+   "end": 3.69
+  },
+  {
+   "text": "gratte,",
+   "start": 3.69,
+   "end": 4.135
+  },
+  {
+   "text": "ça",
+   "start": 4.351,
+   "end": 4.483
+  },
+  {
+   "text": "fait",
+   "start": 4.483,
+   "end": 4.615
+  },
+  {
+   "text": "mal…",
+   "start": 4.615,
+   "end": 5.012
+  },
+  {
+   "text": "Elle",
+   "start": 5.351,
+   "end": 5.543
+  },
+  {
+   "text": "se",
+   "start": 5.543,
+   "end": 5.687
+  },
+  {
+   "text": "dit :",
+   "start": 5.687,
+   "end": 5.963
+  },
+  {
+   "text": "ce",
+   "start": 6.228,
+   "end": 6.348
+  },
+  {
+   "text": "sont",
+   "start": 6.348,
+   "end": 6.48
+  },
+  {
+   "text": "des",
+   "start": 6.48,
+   "end": 6.588
+  },
+  {
+   "text": "hémorroïdes.",
+   "start": 6.588,
+   "end": 7.322
+  },
+  {
+   "text": "Et",
+   "start": 7.658,
+   "end": 7.79
+  },
+  {
+   "text": "surtout,",
+   "start": 7.79,
+   "end": 8.271
+  },
+  {
+   "text": "elle",
+   "start": 8.523,
+   "end": 8.595
+  },
+  {
+   "text": "n'ose",
+   "start": 8.595,
+   "end": 8.775
+  },
+  {
+   "text": "pas",
+   "start": 8.775,
+   "end": 8.872
+  },
+  {
+   "text": "en",
+   "start": 8.872,
+   "end": 8.968
+  },
+  {
+   "text": "parler :",
+   "start": 8.968,
+   "end": 9.328
+  },
+  {
+   "text": "c'est",
+   "start": 9.629,
+   "end": 9.749
+  },
+  {
+   "text": "gênant.",
+   "start": 9.749,
+   "end": 10.146
+  },
+  {
+   "text": "Pourtant,",
+   "start": 10.505,
+   "end": 10.925
+  },
+  {
+   "text": "un",
+   "start": 11.238,
+   "end": 11.346
+  },
+  {
+   "text": "saignement",
+   "start": 11.346,
+   "end": 11.659
+  },
+  {
+   "text": "qui",
+   "start": 11.659,
+   "end": 11.815
+  },
+  {
+   "text": "dure,",
+   "start": 11.815,
+   "end": 12.151
+  },
+  {
+   "text": "ça",
+   "start": 12.428,
+   "end": 12.524
+  },
+  {
+   "text": "se",
+   "start": 12.524,
+   "end": 12.656
+  },
+  {
+   "text": "montre",
+   "start": 12.656,
+   "end": 12.921
+  },
+  {
+   "text": "à",
+   "start": 12.921,
+   "end": 12.945
+  },
+  {
+   "text": "un",
+   "start": 12.945,
+   "end": 12.981
+  },
+  {
+   "text": "médecin.",
+   "start": 12.981,
+   "end": 13.45
+  },
+  {
+   "text": "L'anus,",
+   "start": 14.426,
+   "end": 15.014
+  },
+  {
+   "text": "c'est",
+   "start": 15.239,
+   "end": 15.376
+  },
+  {
+   "text": "la",
+   "start": 15.376,
+   "end": 15.476
+  },
+  {
+   "text": "toute",
+   "start": 15.476,
+   "end": 15.664
+  },
+  {
+   "text": "fin",
+   "start": 15.664,
+   "end": 15.826
+  },
+  {
+   "text": "du",
+   "start": 15.826,
+   "end": 15.926
+  },
+  {
+   "text": "tube",
+   "start": 15.926,
+   "end": 16.176
+  },
+  {
+   "text": "digestif.",
+   "start": 16.176,
+   "end": 16.976
+  },
+  {
+   "text": "Au-dessus,",
+   "start": 17.314,
+   "end": 17.901
+  },
+  {
+   "text": "le",
+   "start": 18.239,
+   "end": 18.288
+  },
+  {
+   "text": "rectum",
+   "start": 18.288,
+   "end": 18.701
+  },
+  {
+   "text": "garde",
+   "start": 18.701,
+   "end": 18.939
+  },
+  {
+   "text": "les",
+   "start": 18.939,
+   "end": 19.051
+  },
+  {
+   "text": "selles.",
+   "start": 19.051,
+   "end": 19.501
+  },
+  {
+   "text": "Puis",
+   "start": 19.838,
+   "end": 20.026
+  },
+  {
+   "text": "le",
+   "start": 20.026,
+   "end": 20.101
+  },
+  {
+   "text": "canal",
+   "start": 20.101,
+   "end": 20.389
+  },
+  {
+   "text": "anal,",
+   "start": 20.389,
+   "end": 20.801
+  },
+  {
+   "text": "long",
+   "start": 21.088,
+   "end": 21.189
+  },
+  {
+   "text": "de",
+   "start": 21.189,
+   "end": 21.288
+  },
+  {
+   "text": "trois",
+   "start": 21.288,
+   "end": 21.489
+  },
+  {
+   "text": "à",
+   "start": 21.489,
+   "end": 21.514
+  },
+  {
+   "text": "quatre",
+   "start": 21.514,
+   "end": 21.826
+  },
+  {
+   "text": "centimètres,",
+   "start": 21.826,
+   "end": 22.439
+  },
+  {
+   "text": "les",
+   "start": 22.689,
+   "end": 22.751
+  },
+  {
+   "text": "conduit",
+   "start": 22.751,
+   "end": 23.051
+  },
+  {
+   "text": "vers",
+   "start": 23.051,
+   "end": 23.189
+  },
+  {
+   "text": "l'extérieur.",
+   "start": 23.189,
+   "end": 23.876
+  },
+  {
+   "text": "Autour,",
+   "start": 24.213,
+   "end": 24.764
+  },
+  {
+   "text": "deux",
+   "start": 25.126,
+   "end": 25.239
+  },
+  {
+   "text": "muscles",
+   "start": 25.239,
+   "end": 25.526
+  },
+  {
+   "text": "en",
+   "start": 25.526,
+   "end": 25.576
+  },
+  {
+   "text": "anneau,",
+   "start": 25.576,
+   "end": 25.963
+  },
+  {
+   "text": "les",
+   "start": 26.239,
+   "end": 26.314
+  },
+  {
+   "text": "sphincters,",
+   "start": 26.314,
+   "end": 26.926
+  },
+  {
+   "text": "le",
+   "start": 27.288,
+   "end": 27.338
+  },
+  {
+   "text": "gardent",
+   "start": 27.338,
+   "end": 27.614
+  },
+  {
+   "text": "fermé :",
+   "start": 27.614,
+   "end": 28.051
+  },
+  {
+   "text": "l'un",
+   "start": 28.451,
+   "end": 28.576
+  },
+  {
+   "text": "sans",
+   "start": 28.576,
+   "end": 28.701
+  },
+  {
+   "text": "qu'on",
+   "start": 28.701,
+   "end": 28.826
+  },
+  {
+   "text": "y",
+   "start": 28.826,
+   "end": 28.926
+  },
+  {
+   "text": "pense,",
+   "start": 28.926,
+   "end": 29.351
+  },
+  {
+   "text": "l'autre",
+   "start": 29.576,
+   "end": 29.851
+  },
+  {
+   "text": "quand",
+   "start": 29.851,
+   "end": 29.963
+  },
+  {
+   "text": "on",
+   "start": 29.963,
+   "end": 30.076
+  },
+  {
+   "text": "le",
+   "start": 30.076,
+   "end": 30.176
+  },
+  {
+   "text": "décide.",
+   "start": 30.176,
+   "end": 30.764
+  },
+  {
+   "text": "Le",
+   "start": 31.763,
+   "end": 31.888
+  },
+  {
+   "text": "cancer",
+   "start": 31.888,
+   "end": 32.213
+  },
+  {
+   "text": "de",
+   "start": 32.213,
+   "end": 32.301
+  },
+  {
+   "text": "l'anus,",
+   "start": 32.301,
+   "end": 32.813
+  },
+  {
+   "text": "ce",
+   "start": 33.076,
+   "end": 33.226
+  },
+  {
+   "text": "sont",
+   "start": 33.226,
+   "end": 33.338
+  },
+  {
+   "text": "des",
+   "start": 33.338,
+   "end": 33.438
+  },
+  {
+   "text": "cellules",
+   "start": 33.438,
+   "end": 33.751
+  },
+  {
+   "text": "de",
+   "start": 33.751,
+   "end": 33.826
+  },
+  {
+   "text": "la",
+   "start": 33.826,
+   "end": 33.926
+  },
+  {
+   "text": "paroi",
+   "start": 33.926,
+   "end": 34.201
+  },
+  {
+   "text": "du",
+   "start": 34.201,
+   "end": 34.301
+  },
+  {
+   "text": "canal",
+   "start": 34.301,
+   "end": 34.588
+  },
+  {
+   "text": "anal",
+   "start": 34.588,
+   "end": 34.963
+  },
+  {
+   "text": "qui",
+   "start": 34.963,
+   "end": 35.101
+  },
+  {
+   "text": "se",
+   "start": 35.101,
+   "end": 35.226
+  },
+  {
+   "text": "multiplient",
+   "start": 35.226,
+   "end": 35.713
+  },
+  {
+   "text": "sans",
+   "start": 35.713,
+   "end": 35.864
+  },
+  {
+   "text": "contrôle.",
+   "start": 35.864,
+   "end": 36.489
+  },
+  {
+   "text": "Elles",
+   "start": 36.826,
+   "end": 37.038
+  },
+  {
+   "text": "forment",
+   "start": 37.038,
+   "end": 37.288
+  },
+  {
+   "text": "une",
+   "start": 37.288,
+   "end": 37.389
+  },
+  {
+   "text": "tumeur.",
+   "start": 37.389,
+   "end": 37.938
+  },
+  {
+   "text": "C'est",
+   "start": 38.288,
+   "end": 38.451
+  },
+  {
+   "text": "un",
+   "start": 38.451,
+   "end": 38.601
+  },
+  {
+   "text": "cancer",
+   "start": 38.601,
+   "end": 39.001
+  },
+  {
+   "text": "rare,",
+   "start": 39.001,
+   "end": 39.364
+  },
+  {
+   "text": "mais",
+   "start": 39.701,
+   "end": 39.764
+  },
+  {
+   "text": "de",
+   "start": 39.764,
+   "end": 39.851
+  },
+  {
+   "text": "plus",
+   "start": 39.851,
+   "end": 40.001
+  },
+  {
+   "text": "en",
+   "start": 40.001,
+   "end": 40.126
+  },
+  {
+   "text": "plus",
+   "start": 40.126,
+   "end": 40.264
+  },
+  {
+   "text": "fréquent,",
+   "start": 40.264,
+   "end": 40.713
+  },
+  {
+   "text": "surtout",
+   "start": 41.014,
+   "end": 41.288
+  },
+  {
+   "text": "chez",
+   "start": 41.288,
+   "end": 41.401
+  },
+  {
+   "text": "les",
+   "start": 41.401,
+   "end": 41.501
+  },
+  {
+   "text": "femmes",
+   "start": 41.501,
+   "end": 41.713
+  },
+  {
+   "text": "après",
+   "start": 41.713,
+   "end": 41.938
+  },
+  {
+   "text": "cinquante",
+   "start": 41.938,
+   "end": 42.376
+  },
+  {
+   "text": "ans.",
+   "start": 42.376,
+   "end": 42.576
+  },
+  {
+   "text": "Sa",
+   "start": 43.532,
+   "end": 43.732
+  },
+  {
+   "text": "cause",
+   "start": 43.732,
+   "end": 43.969
+  },
+  {
+   "text": "principale :",
+   "start": 43.969,
+   "end": 44.582
+  },
+  {
+   "text": "un",
+   "start": 44.969,
+   "end": 45.032
+  },
+  {
+   "text": "virus,",
+   "start": 45.032,
+   "end": 45.607
+  },
+  {
+   "text": "le",
+   "start": 45.844,
+   "end": 45.907
+  },
+  {
+   "text": "papillomavirus.",
+   "start": 45.907,
+   "end": 46.932
+  },
+  {
+   "text": "Il",
+   "start": 47.27,
+   "end": 47.444
+  },
+  {
+   "text": "se",
+   "start": 47.444,
+   "end": 47.532
+  },
+  {
+   "text": "transmet",
+   "start": 47.532,
+   "end": 47.957
+  },
+  {
+   "text": "lors",
+   "start": 47.957,
+   "end": 48.094
+  },
+  {
+   "text": "des",
+   "start": 48.107,
+   "end": 48.182
+  },
+  {
+   "text": "relations",
+   "start": 48.182,
+   "end": 48.544
+  },
+  {
+   "text": "intimes,",
+   "start": 48.544,
+   "end": 48.957
+  },
+  {
+   "text": "il",
+   "start": 49.282,
+   "end": 49.344
+  },
+  {
+   "text": "est",
+   "start": 49.344,
+   "end": 49.382
+  },
+  {
+   "text": "très",
+   "start": 49.382,
+   "end": 49.557
+  },
+  {
+   "text": "fréquent,",
+   "start": 49.557,
+   "end": 50.02
+  },
+  {
+   "text": "et",
+   "start": 50.357,
+   "end": 50.382
+  },
+  {
+   "text": "le",
+   "start": 50.382,
+   "end": 50.457
+  },
+  {
+   "text": "plus",
+   "start": 50.457,
+   "end": 50.607
+  },
+  {
+   "text": "souvent,",
+   "start": 50.607,
+   "end": 51.007
+  },
+  {
+   "text": "le",
+   "start": 51.194,
+   "end": 51.257
+  },
+  {
+   "text": "corps",
+   "start": 51.257,
+   "end": 51.469
+  },
+  {
+   "text": "l'élimine",
+   "start": 51.469,
+   "end": 51.87
+  },
+  {
+   "text": "tout",
+   "start": 51.87,
+   "end": 52.007
+  },
+  {
+   "text": "seul.",
+   "start": 52.007,
+   "end": 52.457
+  },
+  {
+   "text": "Mais",
+   "start": 52.807,
+   "end": 52.919
+  },
+  {
+   "text": "parfois,",
+   "start": 52.919,
+   "end": 53.444
+  },
+  {
+   "text": "il",
+   "start": 53.757,
+   "end": 53.882
+  },
+  {
+   "text": "reste…",
+   "start": 53.882,
+   "end": 54.282
+  },
+  {
+   "text": "et",
+   "start": 54.607,
+   "end": 54.632
+  },
+  {
+   "text": "pendant",
+   "start": 54.632,
+   "end": 54.882
+  },
+  {
+   "text": "des",
+   "start": 54.882,
+   "end": 54.982
+  },
+  {
+   "text": "années,",
+   "start": 54.982,
+   "end": 55.37
+  },
+  {
+   "text": "il",
+   "start": 55.657,
+   "end": 55.782
+  },
+  {
+   "text": "abîme",
+   "start": 55.782,
+   "end": 56.032
+  },
+  {
+   "text": "les",
+   "start": 56.032,
+   "end": 56.12
+  },
+  {
+   "text": "cellules.",
+   "start": 56.12,
+   "end": 56.669
+  },
+  {
+   "text": "Les",
+   "start": 57.63,
+   "end": 57.78
+  },
+  {
+   "text": "signes",
+   "start": 57.78,
+   "end": 58.081
+  },
+  {
+   "text": "ressemblent",
+   "start": 58.081,
+   "end": 58.443
+  },
+  {
+   "text": "à",
+   "start": 58.443,
+   "end": 58.493
+  },
+  {
+   "text": "ceux",
+   "start": 58.493,
+   "end": 58.63
+  },
+  {
+   "text": "des",
+   "start": 58.63,
+   "end": 58.73
+  },
+  {
+   "text": "hémorroïdes :",
+   "start": 58.73,
+   "end": 59.38
+  },
+  {
+   "text": "du",
+   "start": 59.618,
+   "end": 59.693
+  },
+  {
+   "text": "sang",
+   "start": 59.693,
+   "end": 59.831
+  },
+  {
+   "text": "sur",
+   "start": 59.831,
+   "end": 59.98
+  },
+  {
+   "text": "le",
+   "start": 59.98,
+   "end": 60.068
+  },
+  {
+   "text": "papier",
+   "start": 60.068,
+   "end": 60.48
+  },
+  {
+   "text": "ou",
+   "start": 60.48,
+   "end": 60.505
+  },
+  {
+   "text": "dans",
+   "start": 60.505,
+   "end": 60.63
+  },
+  {
+   "text": "les",
+   "start": 60.63,
+   "end": 60.73
+  },
+  {
+   "text": "selles,",
+   "start": 60.73,
+   "end": 61.093
+  },
+  {
+   "text": "une",
+   "start": 61.48,
+   "end": 61.568
+  },
+  {
+   "text": "douleur,",
+   "start": 61.568,
+   "end": 62.005
+  },
+  {
+   "text": "des",
+   "start": 62.331,
+   "end": 62.405
+  },
+  {
+   "text": "démangeaisons,",
+   "start": 62.405,
+   "end": 63.043
+  },
+  {
+   "text": "une",
+   "start": 63.43,
+   "end": 63.505
+  },
+  {
+   "text": "petite",
+   "start": 63.505,
+   "end": 63.805
+  },
+  {
+   "text": "boule",
+   "start": 63.805,
+   "end": 63.993
+  },
+  {
+   "text": "près",
+   "start": 63.993,
+   "end": 64.156
+  },
+  {
+   "text": "de",
+   "start": 64.156,
+   "end": 64.23
+  },
+  {
+   "text": "l'anus,",
+   "start": 64.23,
+   "end": 64.706
+  },
+  {
+   "text": "ou",
+   "start": 64.906,
+   "end": 64.93
+  },
+  {
+   "text": "un",
+   "start": 64.93,
+   "end": 64.98
+  },
+  {
+   "text": "écoulement.",
+   "start": 64.98,
+   "end": 65.543
+  },
+  {
+   "text": "C'est",
+   "start": 65.88,
+   "end": 66.081
+  },
+  {
+   "text": "pour",
+   "start": 66.081,
+   "end": 66.255
+  },
+  {
+   "text": "ça",
+   "start": 66.255,
+   "end": 66.38
+  },
+  {
+   "text": "qu'on",
+   "start": 66.38,
+   "end": 66.518
+  },
+  {
+   "text": "le",
+   "start": 66.518,
+   "end": 66.593
+  },
+  {
+   "text": "découvre",
+   "start": 66.593,
+   "end": 67.043
+  },
+  {
+   "text": "parfois",
+   "start": 67.043,
+   "end": 67.368
+  },
+  {
+   "text": "tard.",
+   "start": 67.368,
+   "end": 67.805
+  },
+  {
+   "text": "Le",
+   "start": 68.764,
+   "end": 68.927
+  },
+  {
+   "text": "risque",
+   "start": 68.927,
+   "end": 69.152
+  },
+  {
+   "text": "augmente",
+   "start": 69.152,
+   "end": 69.514
+  },
+  {
+   "text": "avec",
+   "start": 69.514,
+   "end": 69.715
+  },
+  {
+   "text": "le",
+   "start": 69.715,
+   "end": 69.777
+  },
+  {
+   "text": "papillomavirus,",
+   "start": 69.777,
+   "end": 70.752
+  },
+  {
+   "text": "le",
+   "start": 71.002,
+   "end": 71.077
+  },
+  {
+   "text": "tabac,",
+   "start": 71.077,
+   "end": 71.489
+  },
+  {
+   "text": "des",
+   "start": 71.715,
+   "end": 71.79
+  },
+  {
+   "text": "défenses",
+   "start": 71.79,
+   "end": 72.139
+  },
+  {
+   "text": "immunitaires",
+   "start": 72.139,
+   "end": 72.564
+  },
+  {
+   "text": "affaiblies,",
+   "start": 72.564,
+   "end": 73.077
+  },
+  {
+   "text": "par",
+   "start": 73.34,
+   "end": 73.477
+  },
+  {
+   "text": "exemple",
+   "start": 73.477,
+   "end": 73.802
+  },
+  {
+   "text": "avec",
+   "start": 73.802,
+   "end": 73.989
+  },
+  {
+   "text": "le",
+   "start": 73.989,
+   "end": 74.077
+  },
+  {
+   "text": "VIH",
+   "start": 74.077,
+   "end": 74.665
+  },
+  {
+   "text": "ou",
+   "start": 74.665,
+   "end": 74.739
+  },
+  {
+   "text": "après",
+   "start": 74.739,
+   "end": 74.965
+  },
+  {
+   "text": "une",
+   "start": 74.965,
+   "end": 75.04
+  },
+  {
+   "text": "greffe,",
+   "start": 75.04,
+   "end": 75.452
+  },
+  {
+   "text": "de",
+   "start": 75.752,
+   "end": 75.827
+  },
+  {
+   "text": "nombreux",
+   "start": 75.827,
+   "end": 76.102
+  },
+  {
+   "text": "partenaires",
+   "start": 76.102,
+   "end": 76.577
+  },
+  {
+   "text": "sans",
+   "start": 76.577,
+   "end": 76.689
+  },
+  {
+   "text": "préservatif,",
+   "start": 76.689,
+   "end": 77.427
+  },
+  {
+   "text": "et",
+   "start": 77.84,
+   "end": 77.877
+  },
+  {
+   "text": "certaines",
+   "start": 77.877,
+   "end": 78.189
+  },
+  {
+   "text": "maladies",
+   "start": 78.189,
+   "end": 78.489
+  },
+  {
+   "text": "inflammatoires",
+   "start": 78.489,
+   "end": 79.052
+  },
+  {
+   "text": "de",
+   "start": 79.052,
+   "end": 79.139
+  },
+  {
+   "text": "l'intestin.",
+   "start": 79.139,
+   "end": 79.752
+  },
+  {
+   "text": "Pour",
+   "start": 80.74,
+   "end": 80.852
+  },
+  {
+   "text": "le",
+   "start": 80.852,
+   "end": 80.915
+  },
+  {
+   "text": "trouver :",
+   "start": 80.915,
+   "end": 81.34
+  },
+  {
+   "text": "le",
+   "start": 81.715,
+   "end": 81.764
+  },
+  {
+   "text": "médecin",
+   "start": 81.764,
+   "end": 82.115
+  },
+  {
+   "text": "fait",
+   "start": 82.115,
+   "end": 82.227
+  },
+  {
+   "text": "un",
+   "start": 82.227,
+   "end": 82.302
+  },
+  {
+   "text": "toucher",
+   "start": 82.302,
+   "end": 82.577
+  },
+  {
+   "text": "rectal,",
+   "start": 82.577,
+   "end": 83.139
+  },
+  {
+   "text": "puis",
+   "start": 83.389,
+   "end": 83.49
+  },
+  {
+   "text": "il",
+   "start": 83.49,
+   "end": 83.615
+  },
+  {
+   "text": "regarde",
+   "start": 83.615,
+   "end": 83.939
+  },
+  {
+   "text": "le",
+   "start": 83.939,
+   "end": 84.014
+  },
+  {
+   "text": "canal",
+   "start": 84.014,
+   "end": 84.365
+  },
+  {
+   "text": "avec",
+   "start": 84.365,
+   "end": 84.59
+  },
+  {
+   "text": "un",
+   "start": 84.59,
+   "end": 84.652
+  },
+  {
+   "text": "petit",
+   "start": 84.652,
+   "end": 84.902
+  },
+  {
+   "text": "tube",
+   "start": 84.902,
+   "end": 85.115
+  },
+  {
+   "text": "éclairé :",
+   "start": 85.115,
+   "end": 85.577
+  },
+  {
+   "text": "c'est",
+   "start": 85.852,
+   "end": 85.952
+  },
+  {
+   "text": "l'anuscopie.",
+   "start": 85.952,
+   "end": 86.727
+  },
+  {
+   "text": "Il",
+   "start": 87.064,
+   "end": 87.264
+  },
+  {
+   "text": "fait",
+   "start": 87.264,
+   "end": 87.377
+  },
+  {
+   "text": "une",
+   "start": 87.377,
+   "end": 87.465
+  },
+  {
+   "text": "biopsie,",
+   "start": 87.465,
+   "end": 88.027
+  },
+  {
+   "text": "un",
+   "start": 88.327,
+   "end": 88.415
+  },
+  {
+   "text": "petit",
+   "start": 88.415,
+   "end": 88.665
+  },
+  {
+   "text": "prélèvement.",
+   "start": 88.665,
+   "end": 89.264
+  },
+  {
+   "text": "Puis",
+   "start": 89.639,
+   "end": 89.777
+  },
+  {
+   "text": "une",
+   "start": 89.777,
+   "end": 89.889
+  },
+  {
+   "text": "IRM",
+   "start": 89.889,
+   "end": 90.377
+  },
+  {
+   "text": "et",
+   "start": 90.377,
+   "end": 90.452
+  },
+  {
+   "text": "un",
+   "start": 90.452,
+   "end": 90.514
+  },
+  {
+   "text": "scanner",
+   "start": 90.514,
+   "end": 90.977
+  },
+  {
+   "text": "montrent",
+   "start": 90.977,
+   "end": 91.277
+  },
+  {
+   "text": "son",
+   "start": 91.277,
+   "end": 91.389
+  },
+  {
+   "text": "étendue.",
+   "start": 91.389,
+   "end": 91.915
+  },
+  {
+   "text": "Pour",
+   "start": 92.88,
+   "end": 93.005
+  },
+  {
+   "text": "le",
+   "start": 93.005,
+   "end": 93.093
+  },
+  {
+   "text": "soigner :",
+   "start": 93.093,
+   "end": 93.555
+  },
+  {
+   "text": "le",
+   "start": 93.93,
+   "end": 93.993
+  },
+  {
+   "text": "plus",
+   "start": 93.993,
+   "end": 94.156
+  },
+  {
+   "text": "souvent,",
+   "start": 94.156,
+   "end": 94.593
+  },
+  {
+   "text": "la",
+   "start": 94.906,
+   "end": 94.968
+  },
+  {
+   "text": "radiothérapie,",
+   "start": 94.968,
+   "end": 95.793
+  },
+  {
+   "text": "associée",
+   "start": 96.105,
+   "end": 96.555
+  },
+  {
+   "text": "à",
+   "start": 96.555,
+   "end": 96.605
+  },
+  {
+   "text": "une",
+   "start": 96.605,
+   "end": 96.706
+  },
+  {
+   "text": "chimiothérapie.",
+   "start": 96.706,
+   "end": 97.555
+  },
+  {
+   "text": "Elle",
+   "start": 97.906,
+   "end": 98.105
+  },
+  {
+   "text": "guérit",
+   "start": 98.105,
+   "end": 98.368
+  },
+  {
+   "text": "souvent",
+   "start": 98.368,
+   "end": 98.63
+  },
+  {
+   "text": "ce",
+   "start": 98.63,
+   "end": 98.755
+  },
+  {
+   "text": "cancer,",
+   "start": 98.755,
+   "end": 99.343
+  },
+  {
+   "text": "tout",
+   "start": 99.618,
+   "end": 99.718
+  },
+  {
+   "text": "en",
+   "start": 99.718,
+   "end": 99.831
+  },
+  {
+   "text": "gardant",
+   "start": 99.831,
+   "end": 100.143
+  },
+  {
+   "text": "le",
+   "start": 100.143,
+   "end": 100.23
+  },
+  {
+   "text": "sphincter.",
+   "start": 100.23,
+   "end": 100.918
+  },
+  {
+   "text": "La",
+   "start": 101.305,
+   "end": 101.418
+  },
+  {
+   "text": "chirurgie",
+   "start": 101.418,
+   "end": 101.93
+  },
+  {
+   "text": "est",
+   "start": 101.93,
+   "end": 101.968
+  },
+  {
+   "text": "réservée",
+   "start": 101.968,
+   "end": 102.393
+  },
+  {
+   "text": "aux",
+   "start": 102.393,
+   "end": 102.43
+  },
+  {
+   "text": "petites",
+   "start": 102.43,
+   "end": 102.718
+  },
+  {
+   "text": "tumeurs,",
+   "start": 102.718,
+   "end": 103.193
+  },
+  {
+   "text": "ou",
+   "start": 103.543,
+   "end": 103.568
+  },
+  {
+   "text": "quand",
+   "start": 103.568,
+   "end": 103.706
+  },
+  {
+   "text": "ce",
+   "start": 103.706,
+   "end": 103.818
+  },
+  {
+   "text": "traitement",
+   "start": 103.818,
+   "end": 104.168
+  },
+  {
+   "text": "ne",
+   "start": 104.168,
+   "end": 104.255
+  },
+  {
+   "text": "suffit",
+   "start": 104.255,
+   "end": 104.531
+  },
+  {
+   "text": "pas.",
+   "start": 104.531,
+   "end": 104.781
+  },
+  {
+   "text": "Alors,",
+   "start": 105.766,
+   "end": 106.133
+  },
+  {
+   "text": "va",
+   "start": 106.415,
+   "end": 106.489
+  },
+  {
+   "text": "lui",
+   "start": 106.489,
+   "end": 106.636
+  },
+  {
+   "text": "en",
+   "start": 106.636,
+   "end": 106.697
+  },
+  {
+   "text": "parler :",
+   "start": 106.697,
+   "end": 107.151
+  },
+  {
+   "text": "du",
+   "start": 107.432,
+   "end": 107.53
+  },
+  {
+   "text": "sang",
+   "start": 107.531,
+   "end": 107.69
+  },
+  {
+   "text": "qui",
+   "start": 107.69,
+   "end": 107.849
+  },
+  {
+   "text": "dure,",
+   "start": 107.849,
+   "end": 108.156
+  },
+  {
+   "text": "ce",
+   "start": 108.45,
+   "end": 108.535
+  },
+  {
+   "text": "n'est",
+   "start": 108.535,
+   "end": 108.621
+  },
+  {
+   "text": "pas",
+   "start": 108.621,
+   "end": 108.731
+  },
+  {
+   "text": "toujours",
+   "start": 108.731,
+   "end": 109.013
+  },
+  {
+   "text": "des",
+   "start": 109.013,
+   "end": 109.099
+  },
+  {
+   "text": "hémorroïdes,",
+   "start": 109.099,
+   "end": 109.675
+  },
+  {
+   "text": "on",
+   "start": 109.847,
+   "end": 109.871
+  },
+  {
+   "text": "consulte.",
+   "start": 109.871,
+   "end": 110.533
+  },
+  {
+   "text": "Et",
+   "start": 110.865,
+   "end": 110.987
+  },
+  {
+   "text": "le",
+   "start": 110.987,
+   "end": 111.061
+  },
+  {
+   "text": "vaccin",
+   "start": 111.061,
+   "end": 111.392
+  },
+  {
+   "text": "contre",
+   "start": 111.392,
+   "end": 111.661
+  },
+  {
+   "text": "le",
+   "start": 111.661,
+   "end": 111.747
+  },
+  {
+   "text": "papillomavirus,",
+   "start": 111.747,
+   "end": 112.691
+  },
+  {
+   "text": "pour",
+   "start": 112.948,
+   "end": 113.07
+  },
+  {
+   "text": "les",
+   "start": 113.07,
+   "end": 113.168
+  },
+  {
+   "text": "filles",
+   "start": 113.169,
+   "end": 113.365
+  },
+  {
+   "text": "comme",
+   "start": 113.365,
+   "end": 113.524
+  },
+  {
+   "text": "pour",
+   "start": 113.524,
+   "end": 113.634
+  },
+  {
+   "text": "les",
+   "start": 113.634,
+   "end": 113.695
+  },
+  {
+   "text": "garçons,",
+   "start": 113.695,
+   "end": 114.124
+  },
+  {
+   "text": "protège",
+   "start": 114.419,
+   "end": 114.786
+  },
+  {
+   "text": "de",
+   "start": 114.786,
+   "end": 114.884
+  },
+  {
+   "text": "ce",
+   "start": 114.884,
+   "end": 114.982
+  },
+  {
+   "text": "cancer !",
+   "start": 114.982,
+   "end": 115.558
+  }
+ ]
+}

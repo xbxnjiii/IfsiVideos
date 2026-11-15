@@ -578,6 +578,18 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   puis liquide…), les risques, la fibroscopie (+ biopsies, scanner), les traitements (chirurgie, chimio + radiothérapie,
   par la caméra si très tôt, prothèse), chute « du mal à avaler qui dure, on consulte vite ». Briques
   `src/brand/oesophagus.tsx`. Storyboard `docs/lpi/storyboard-cancer-oesophage.md`.
+- `Cancer-Anus` (n° 59, ≈ 1 min 58, format « pathologie », voix gratuite d'abord, sans barre de progression) : demandé
+  « pareil, à l'aide de ce schéma, sans les annotations ». Schéma fourni `public/images/anus/anus-cancer.webp` nettoyé par
+  `scripts/brand/clean_anus_diagram.py` → `-anatomie.png`, `-sain.png`, `-cancer.png`. Étiquettes posées sur la graisse et
+  les muscles des côtés : on garde **la bande centrale** (rectum, canal, sphincters, anus), en fondu sur les côtés.
+  Accroche **« le papier toilette »** avec **« ta mère »** : le rouleau en gros plan (`ToiletPaperWall`, vraies couleurs),
+  une tache de sang, puis la salle de bain (`MumTowel`), bulles « Des hémorroïdes… » / « C'est gênant… », loupe sur le
+  canal. Puis l'anus (rectum, canal anal 3 – 4 cm, sphincters interne / externe), le cancer (rare mais en hausse, femmes
+  après 50 ans), le papillomavirus (`Hpv`, `WallCell` : le corps l'élimine le plus souvent, parfois il reste et abîme les
+  cellules), les signes (comme des hémorroïdes), les risques (HPV, tabac, VIH / greffe, partenaires sans préservatif,
+  MICI), les examens (toucher rectal, anuscopie, biopsie, IRM + scanner), les traitements (radiochimiothérapie qui garde le
+  sphincter, chirurgie), chute « du sang qui dure, on consulte… le vaccin HPV, filles et garçons ». Briques
+  `src/brand/anal.tsx`. Storyboard `docs/lpi/storyboard-cancer-anus.md`.
 
 ## Voix ElevenLabs « Laura » (choisie par le propriétaire pour les nouvelles vidéos)
 

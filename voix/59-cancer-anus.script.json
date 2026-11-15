@@ -1,0 +1,47 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Depuis des semaines, ta mère voit un peu de sang sur le papier toilette. Ça gratte, ça fait mal… Elle se dit : ce sont des hémorroïdes. Et surtout, elle n'ose pas en parler : c'est gênant. Pourtant, un saignement qui dure, ça se montre à un médecin."
+ },
+ {
+  "id": "anus",
+  "rate": "+0%",
+  "text": "L'anus, c'est la toute fin du tube digestif. Au-dessus, le rectum garde les selles. Puis le canal anal, long de trois à quatre centimètres, les conduit vers l'extérieur. Autour, deux muscles en anneau, les sphincters, le gardent fermé : l'un sans qu'on y pense, l'autre quand on le décide."
+ },
+ {
+  "id": "cancer",
+  "rate": "+0%",
+  "text": "Le cancer de l'anus, ce sont des cellules de la paroi du canal anal qui se multiplient sans contrôle. Elles forment une tumeur. C'est un cancer rare, mais de plus en plus fréquent, surtout chez les femmes après cinquante ans."
+ },
+ {
+  "id": "hpv",
+  "rate": "+0%",
+  "text": "Sa cause principale : un virus, le papillomavirus. Il se transmet lors des relations intimes, il est très fréquent, et le plus souvent, le corps l'élimine tout seul. Mais parfois, il reste… et pendant des années, il abîme les cellules."
+ },
+ {
+  "id": "signes",
+  "rate": "+0%",
+  "text": "Les signes ressemblent à ceux des hémorroïdes : du sang sur le papier ou dans les selles, une douleur, des démangeaisons, une petite boule près de l'anus, ou un écoulement. C'est pour ça qu'on le découvre parfois tard."
+ },
+ {
+  "id": "risques",
+  "rate": "+0%",
+  "text": "Le risque augmente avec le papillomavirus, le tabac, des défenses immunitaires affaiblies, par exemple avec le {VIH|V I H} ou après une greffe, de nombreux partenaires sans préservatif, et certaines maladies inflammatoires de l'intestin."
+ },
+ {
+  "id": "examens",
+  "rate": "+0%",
+  "text": "Pour le trouver : le médecin fait un toucher rectal, puis il regarde le canal avec un petit tube éclairé : c'est l'anuscopie. Il fait une biopsie, un petit prélèvement. Puis une {IRM|I R M} et un scanner montrent son étendue."
+ },
+ {
+  "id": "traitement",
+  "rate": "+0%",
+  "text": "Pour le soigner : le plus souvent, la radiothérapie, associée à une chimiothérapie. Elle guérit souvent ce cancer, tout en gardant le sphincter. La chirurgie est réservée aux petites tumeurs, ou quand ce traitement ne suffit pas."
+ },
+ {
+  "id": "fin",
+  "rate": "+2%",
+  "text": "Alors, va lui en parler : du sang qui dure, ce n'est pas toujours des hémorroïdes, on consulte. Et le vaccin contre le papillomavirus, pour les filles comme pour les garçons, protège de ce cancer !"
+ }
+]
