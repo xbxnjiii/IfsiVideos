@@ -1,1618 +1,1618 @@
 {
- "voice": "voix.wav (tts_voix.py)",
- "duration": 100.808,
+ "voice": "pad-cancer-pancreas.wav",
+ "duration": 105.822,
  "sections": [
   {
    "id": "intro",
-   "start": 0.06,
-   "end": 12.849
+   "start": 0.0,
+   "end": 13.419
   },
   {
    "id": "pancreas",
-   "start": 13.789,
-   "end": 26.114
+   "start": 14.505,
+   "end": 27.56
   },
   {
    "id": "cancer",
-   "start": 27.12,
-   "end": 37.883
+   "start": 27.56,
+   "end": 39.269
   },
   {
    "id": "jaunisse",
-   "start": 38.889,
-   "end": 52.952
+   "start": 40.085,
+   "end": 55.1
   },
   {
    "id": "signes",
-   "start": 53.959,
-   "end": 60.972
+   "start": 55.91,
+   "end": 63.941
   },
   {
    "id": "risques",
-   "start": 61.962,
-   "end": 70.325
+   "start": 64.741,
+   "end": 73.72
   },
   {
    "id": "examens",
-   "start": 71.27,
-   "end": 81.895
+   "start": 74.542,
+   "end": 84.578
   },
   {
    "id": "traitement",
-   "start": 82.886,
-   "end": 92.174
+   "start": 85.378,
+   "end": 96.746
   },
   {
    "id": "fin",
-   "start": 93.154,
-   "end": 100.471
+   "start": 97.589,
+   "end": 105.64
   }
  ],
  "words": [
   {
    "text": "Ce",
-   "start": 0.06,
-   "end": 0.228
+   "start": 0.0,
+   "end": 0.28
   },
   {
    "text": "matin,",
-   "start": 0.228,
-   "end": 0.661
+   "start": 0.28,
+   "end": 0.6
   },
   {
    "text": "ton",
-   "start": 0.889,
-   "end": 1.01
+   "start": 1.0,
+   "end": 1.1
   },
   {
    "text": "père",
-   "start": 1.01,
-   "end": 1.202
+   "start": 1.1,
+   "end": 1.34
   },
   {
    "text": "se",
-   "start": 1.202,
-   "end": 1.298
+   "start": 1.34,
+   "end": 1.62
   },
   {
    "text": "regarde",
-   "start": 1.298,
-   "end": 1.671
+   "start": 1.62,
+   "end": 1.76
   },
   {
    "text": "dans",
-   "start": 1.671,
-   "end": 1.767
+   "start": 1.76,
+   "end": 1.94
   },
   {
    "text": "le",
-   "start": 1.767,
-   "end": 1.839
+   "start": 1.94,
+   "end": 2.08
   },
   {
    "text": "miroir…",
-   "start": 1.839,
-   "end": 2.308
+   "start": 2.08,
+   "end": 2.56
   },
   {
    "text": "et",
-   "start": 2.692,
-   "end": 2.716
+   "start": 2.8,
+   "end": 2.92
   },
   {
    "text": "le",
-   "start": 2.716,
-   "end": 2.8
+   "start": 2.92,
+   "end": 3.14
   },
   {
    "text": "blanc",
-   "start": 2.8,
-   "end": 2.981
+   "start": 3.14,
+   "end": 3.28
   },
   {
    "text": "de",
-   "start": 2.981,
-   "end": 3.077
+   "start": 3.28,
+   "end": 3.46
   },
   {
    "text": "ses",
-   "start": 3.077,
-   "end": 3.233
+   "start": 3.46,
+   "end": 3.58
   },
   {
    "text": "yeux",
-   "start": 3.233,
-   "end": 3.462
+   "start": 3.58,
+   "end": 3.74
   },
   {
    "text": "est",
-   "start": 3.462,
-   "end": 3.51
+   "start": 3.74,
+   "end": 3.92
   },
   {
    "text": "devenu",
-   "start": 3.51,
-   "end": 3.834
+   "start": 3.92,
+   "end": 4.22
   },
   {
    "text": "jaune.",
-   "start": 3.834,
-   "end": 4.255
+   "start": 4.22,
+   "end": 4.88
   },
   {
    "text": "Il",
-   "start": 4.581,
-   "end": 4.774
+   "start": 5.04,
+   "end": 5.18
   },
   {
    "text": "a",
-   "start": 4.774,
-   "end": 4.81
+   "start": 5.18,
+   "end": 5.28
   },
   {
    "text": "aussi",
-   "start": 4.81,
-   "end": 5.026
+   "start": 5.28,
+   "end": 5.52
   },
   {
    "text": "maigri,",
-   "start": 5.026,
-   "end": 5.435
+   "start": 5.52,
+   "end": 5.92
   },
   {
    "text": "sans",
-   "start": 5.699,
-   "end": 5.819
+   "start": 6.1,
+   "end": 6.24
   },
   {
    "text": "faire",
-   "start": 5.819,
-   "end": 5.987
+   "start": 6.24,
+   "end": 6.36
   },
   {
    "text": "de",
-   "start": 5.987,
-   "end": 6.084
+   "start": 6.36,
+   "end": 6.58
   },
   {
    "text": "régime.",
-   "start": 6.084,
-   "end": 6.6
+   "start": 6.58,
+   "end": 6.94
   },
   {
    "text": "Il",
-   "start": 6.925,
-   "end": 7.129
+   "start": 7.28,
+   "end": 7.44
   },
   {
    "text": "se",
-   "start": 7.129,
-   "end": 7.262
+   "start": 7.44,
+   "end": 7.7
   },
   {
-   "text": "dit :",
-   "start": 7.262,
-   "end": 7.526
+   "text": "dit :",
+   "start": 7.7,
+   "end": 7.94
   },
   {
    "text": "c'est",
-   "start": 7.802,
-   "end": 7.911
+   "start": 8.3,
+   "end": 8.48
   },
   {
    "text": "la",
-   "start": 7.911,
-   "end": 8.007
+   "start": 8.48,
+   "end": 8.64
   },
   {
    "text": "fatigue.",
-   "start": 8.007,
-   "end": 8.608
+   "start": 8.64,
+   "end": 8.96
   },
   {
    "text": "Pourtant,",
-   "start": 8.978,
-   "end": 9.399
+   "start": 9.72,
+   "end": 10.12
   },
   {
    "text": "une",
-   "start": 9.663,
-   "end": 9.724
+   "start": 10.32,
+   "end": 10.46
   },
   {
    "text": "jaunisse,",
-   "start": 9.724,
-   "end": 10.288
+   "start": 10.46,
+   "end": 10.94
   },
   {
    "text": "même",
-   "start": 10.517,
-   "end": 10.709
+   "start": 11.08,
+   "end": 11.32
   },
   {
    "text": "sans",
-   "start": 10.709,
-   "end": 10.853
+   "start": 11.32,
+   "end": 11.52
   },
   {
    "text": "douleur,",
-   "start": 10.853,
-   "end": 11.262
+   "start": 11.52,
+   "end": 12.0
   },
   {
    "text": "ça",
-   "start": 11.575,
-   "end": 11.671
+   "start": 12.16,
+   "end": 12.26
   },
   {
    "text": "se",
-   "start": 11.671,
-   "end": 11.791
+   "start": 12.26,
+   "end": 12.42
   },
   {
    "text": "montre",
-   "start": 11.791,
-   "end": 12.067
+   "start": 12.42,
+   "end": 12.64
   },
   {
    "text": "vite",
-   "start": 12.067,
-   "end": 12.284
+   "start": 12.64,
+   "end": 12.88
   },
   {
    "text": "à",
-   "start": 12.284,
-   "end": 12.332
+   "start": 12.88,
+   "end": 13.02
   },
   {
    "text": "un",
-   "start": 12.332,
-   "end": 12.368
+   "start": 13.02,
+   "end": 13.16
   },
   {
    "text": "médecin.",
-   "start": 12.368,
-   "end": 12.849
+   "start": 13.16,
+   "end": 13.419
   },
   {
    "text": "Le",
-   "start": 13.789,
-   "end": 13.926
+   "start": 14.505,
+   "end": 14.7
   },
   {
    "text": "pancréas",
-   "start": 13.926,
-   "end": 14.414
+   "start": 14.7,
+   "end": 15.28
   },
   {
    "text": "est",
-   "start": 14.414,
-   "end": 14.451
+   "start": 15.28,
+   "end": 15.46
   },
   {
    "text": "caché",
-   "start": 14.451,
-   "end": 14.739
+   "start": 15.46,
+   "end": 15.8
   },
   {
    "text": "derrière",
-   "start": 14.739,
-   "end": 15.014
+   "start": 15.8,
+   "end": 16.18
   },
   {
    "text": "l'estomac,",
-   "start": 15.014,
-   "end": 15.539
+   "start": 16.18,
+   "end": 16.8
   },
   {
    "text": "collé",
-   "start": 15.826,
-   "end": 16.088
+   "start": 17.02,
+   "end": 17.16
   },
   {
    "text": "au",
-   "start": 16.088,
-   "end": 16.139
+   "start": 17.16,
+   "end": 17.3
   },
   {
    "text": "duodénum,",
-   "start": 16.139,
-   "end": 16.826
+   "start": 17.3,
+   "end": 17.88
   },
   {
    "text": "le",
-   "start": 17.139,
-   "end": 17.201
+   "start": 18.08,
+   "end": 18.34
   },
   {
    "text": "début",
-   "start": 17.201,
-   "end": 17.439
+   "start": 18.34,
+   "end": 18.48
   },
   {
    "text": "de",
-   "start": 17.439,
-   "end": 17.538
+   "start": 18.48,
+   "end": 18.66
   },
   {
    "text": "l'intestin.",
-   "start": 17.538,
-   "end": 18.176
+   "start": 18.66,
+   "end": 19.24
   },
   {
    "text": "Il",
-   "start": 18.514,
-   "end": 18.689
+   "start": 19.56,
+   "end": 19.68
   },
   {
    "text": "a",
-   "start": 18.689,
-   "end": 18.739
+   "start": 19.68,
+   "end": 19.84
   },
   {
    "text": "deux",
-   "start": 18.739,
-   "end": 18.901
+   "start": 19.84,
+   "end": 20.04
   },
   {
-   "text": "rôles :",
-   "start": 18.901,
-   "end": 19.176
+   "text": "rôles :",
+   "start": 20.04,
+   "end": 20.54
   },
   {
    "text": "il",
-   "start": 19.663,
-   "end": 19.726
+   "start": 20.7,
+   "end": 20.88
   },
   {
    "text": "fabrique",
-   "start": 19.726,
-   "end": 20.076
+   "start": 20.88,
+   "end": 21.18
   },
   {
    "text": "un",
-   "start": 20.076,
-   "end": 20.126
+   "start": 21.18,
+   "end": 21.42
   },
   {
    "text": "liquide",
-   "start": 20.126,
-   "end": 20.526
+   "start": 21.42,
+   "end": 21.78
   },
   {
    "text": "qui",
-   "start": 20.526,
-   "end": 20.676
+   "start": 21.78,
+   "end": 21.98
   },
   {
    "text": "aide",
-   "start": 20.676,
-   "end": 20.776
+   "start": 21.98,
+   "end": 22.14
   },
   {
    "text": "à",
-   "start": 20.776,
-   "end": 20.826
+   "start": 22.14,
+   "end": 22.34
   },
   {
    "text": "digérer,",
-   "start": 20.826,
-   "end": 21.351
+   "start": 22.34,
+   "end": 22.78
   },
   {
    "text": "versé",
-   "start": 21.701,
-   "end": 21.989
+   "start": 23.08,
+   "end": 23.28
   },
   {
    "text": "dans",
-   "start": 21.989,
-   "end": 22.101
+   "start": 23.28,
+   "end": 23.42
   },
   {
    "text": "le",
-   "start": 22.101,
-   "end": 22.201
+   "start": 23.42,
+   "end": 23.58
   },
   {
    "text": "duodénum.",
-   "start": 22.201,
-   "end": 22.964
+   "start": 23.58,
+   "end": 24.16
   },
   {
    "text": "Et",
-   "start": 23.314,
-   "end": 23.451
+   "start": 24.52,
+   "end": 24.76
   },
   {
    "text": "il",
-   "start": 23.451,
-   "end": 23.551
+   "start": 24.76,
+   "end": 24.96
   },
   {
    "text": "fabrique",
-   "start": 23.551,
-   "end": 23.901
+   "start": 24.96,
+   "end": 25.36
   },
   {
    "text": "l'insuline,",
-   "start": 23.901,
-   "end": 24.514
+   "start": 25.36,
+   "end": 26.04
   },
   {
    "text": "qui",
-   "start": 24.764,
-   "end": 24.889
+   "start": 26.16,
+   "end": 26.34
   },
   {
    "text": "règle",
-   "start": 24.889,
-   "end": 25.151
+   "start": 26.34,
+   "end": 26.58
   },
   {
    "text": "le",
-   "start": 25.151,
-   "end": 25.264
+   "start": 26.58,
+   "end": 26.88
   },
   {
    "text": "sucre",
-   "start": 25.264,
-   "end": 25.576
+   "start": 26.88,
+   "end": 27.1
   },
   {
    "text": "dans",
-   "start": 25.576,
-   "end": 25.689
+   "start": 27.1,
+   "end": 27.28
   },
   {
    "text": "le",
-   "start": 25.689,
-   "end": 25.788
+   "start": 27.28,
+   "end": 27.46
   },
   {
    "text": "sang.",
-   "start": 25.788,
-   "end": 26.114
+   "start": 27.46,
+   "end": 27.56
   },
   {
    "text": "Le",
-   "start": 27.12,
-   "end": 27.22
+   "start": 27.56,
+   "end": 28.22
   },
   {
    "text": "cancer",
-   "start": 27.22,
-   "end": 27.545
+   "start": 28.22,
+   "end": 28.56
   },
   {
    "text": "du",
-   "start": 27.545,
-   "end": 27.633
+   "start": 28.56,
+   "end": 28.74
   },
   {
    "text": "pancréas,",
-   "start": 27.633,
-   "end": 28.357
+   "start": 28.74,
+   "end": 29.38
   },
   {
    "text": "ce",
-   "start": 28.595,
-   "end": 28.745
+   "start": 29.58,
+   "end": 29.66
   },
   {
    "text": "sont",
-   "start": 28.745,
-   "end": 28.845
+   "start": 29.66,
+   "end": 29.84
   },
   {
    "text": "des",
-   "start": 28.845,
-   "end": 28.957
+   "start": 29.84,
+   "end": 30.12
   },
   {
    "text": "cellules",
-   "start": 28.957,
-   "end": 29.245
+   "start": 30.12,
+   "end": 30.38
   },
   {
    "text": "du",
-   "start": 29.245,
-   "end": 29.332
+   "start": 30.38,
+   "end": 30.54
   },
   {
    "text": "pancréas",
-   "start": 29.332,
-   "end": 29.895
+   "start": 30.54,
+   "end": 31.02
   },
   {
    "text": "qui",
-   "start": 29.895,
-   "end": 30.02
+   "start": 31.02,
+   "end": 31.18
   },
   {
    "text": "se",
-   "start": 30.02,
-   "end": 30.133
+   "start": 31.18,
+   "end": 31.44
   },
   {
    "text": "multiplient",
-   "start": 30.133,
-   "end": 30.62
+   "start": 31.44,
+   "end": 32.04
   },
   {
    "text": "sans",
-   "start": 30.62,
-   "end": 30.77
+   "start": 32.04,
+   "end": 32.3
   },
   {
    "text": "contrôle.",
-   "start": 30.77,
-   "end": 31.407
+   "start": 32.3,
+   "end": 32.76
   },
   {
    "text": "Elles",
-   "start": 31.745,
-   "end": 31.957
+   "start": 33.06,
+   "end": 33.3
   },
   {
    "text": "forment",
-   "start": 31.957,
-   "end": 32.22
+   "start": 33.3,
+   "end": 33.44
   },
   {
    "text": "une",
-   "start": 32.22,
-   "end": 32.32
+   "start": 33.44,
+   "end": 33.68
   },
   {
    "text": "tumeur.",
-   "start": 32.32,
-   "end": 32.87
+   "start": 33.68,
+   "end": 34.18
   },
   {
    "text": "Il",
-   "start": 33.207,
-   "end": 33.407
+   "start": 34.54,
+   "end": 34.64
   },
   {
    "text": "est",
-   "start": 33.407,
-   "end": 33.432
+   "start": 34.64,
+   "end": 34.78
   },
   {
    "text": "moins",
-   "start": 33.432,
-   "end": 33.582
+   "start": 34.78,
+   "end": 34.98
   },
   {
    "text": "fréquent",
-   "start": 33.582,
-   "end": 33.932
+   "start": 34.98,
+   "end": 35.28
   },
   {
    "text": "que",
-   "start": 33.932,
-   "end": 34.057
+   "start": 35.28,
+   "end": 35.44
   },
   {
    "text": "d'autres",
-   "start": 34.057,
-   "end": 34.345
+   "start": 35.44,
+   "end": 35.74
   },
   {
    "text": "cancers…",
-   "start": 34.345,
-   "end": 34.895
+   "start": 35.74,
+   "end": 36.22
   },
   {
    "text": "mais",
-   "start": 35.332,
-   "end": 35.407
+   "start": 36.54,
+   "end": 36.66
   },
   {
    "text": "c'est",
-   "start": 35.407,
-   "end": 35.532
+   "start": 36.66,
+   "end": 36.8
   },
   {
    "text": "l'un",
-   "start": 35.532,
-   "end": 35.657
+   "start": 36.8,
+   "end": 36.98
   },
   {
    "text": "des",
-   "start": 35.657,
-   "end": 35.745
+   "start": 36.98,
+   "end": 37.12
   },
   {
    "text": "plus",
-   "start": 35.745,
-   "end": 35.883
+   "start": 37.12,
+   "end": 37.32
   },
   {
    "text": "graves,",
-   "start": 35.883,
-   "end": 36.307
+   "start": 37.32,
+   "end": 37.68
   },
   {
    "text": "car",
-   "start": 36.52,
-   "end": 36.67
+   "start": 37.84,
+   "end": 37.96
   },
   {
    "text": "on",
-   "start": 36.67,
-   "end": 36.707
+   "start": 37.96,
+   "end": 38.1
   },
   {
    "text": "le",
-   "start": 36.707,
-   "end": 36.782
+   "start": 38.1,
+   "end": 38.28
   },
   {
    "text": "découvre",
-   "start": 36.782,
-   "end": 37.22
+   "start": 38.28,
+   "end": 38.6
   },
   {
    "text": "souvent",
-   "start": 37.22,
-   "end": 37.457
+   "start": 38.6,
+   "end": 39.0
   },
   {
    "text": "tard.",
-   "start": 37.457,
-   "end": 37.883
+   "start": 39.0,
+   "end": 39.269
   },
   {
    "text": "Pourquoi",
-   "start": 38.889,
-   "end": 39.202
+   "start": 40.085,
+   "end": 40.38
   },
   {
    "text": "ce",
-   "start": 39.202,
-   "end": 39.352
+   "start": 40.38,
+   "end": 40.62
   },
   {
-   "text": "jaune ?",
-   "start": 39.352,
-   "end": 39.777
+   "text": "jaune ?",
+   "start": 40.62,
+   "end": 40.92
   },
   {
    "text": "La",
-   "start": 40.164,
-   "end": 40.327
+   "start": 41.44,
+   "end": 41.72
   },
   {
    "text": "bile,",
-   "start": 40.327,
-   "end": 40.69
+   "start": 41.72,
+   "end": 41.92
   },
   {
    "text": "fabriquée",
-   "start": 40.902,
-   "end": 41.315
+   "start": 42.28,
+   "end": 42.54
   },
   {
    "text": "par",
-   "start": 41.315,
-   "end": 41.452
+   "start": 42.54,
+   "end": 42.76
   },
   {
    "text": "le",
-   "start": 41.452,
-   "end": 41.552
+   "start": 42.76,
+   "end": 43.0
   },
   {
    "text": "foie,",
-   "start": 41.552,
-   "end": 41.889
+   "start": 43.0,
+   "end": 43.32
   },
   {
    "text": "descend",
-   "start": 42.239,
-   "end": 42.489
+   "start": 43.6,
+   "end": 43.74
   },
   {
    "text": "par",
-   "start": 42.489,
-   "end": 42.639
+   "start": 43.74,
+   "end": 43.98
   },
   {
    "text": "un",
-   "start": 42.639,
-   "end": 42.69
+   "start": 43.98,
+   "end": 44.18
   },
   {
    "text": "petit",
-   "start": 42.69,
-   "end": 42.94
+   "start": 44.18,
+   "end": 44.46
   },
   {
    "text": "canal",
-   "start": 42.94,
-   "end": 43.364
+   "start": 44.46,
+   "end": 44.78
   },
   {
    "text": "qui",
-   "start": 43.364,
-   "end": 43.477
+   "start": 44.78,
+   "end": 45.12
   },
   {
    "text": "traverse",
-   "start": 43.477,
-   "end": 43.877
+   "start": 45.12,
+   "end": 45.48
   },
   {
    "text": "le",
-   "start": 43.877,
-   "end": 43.989
+   "start": 45.48,
+   "end": 45.7
   },
   {
    "text": "pancréas.",
-   "start": 43.989,
-   "end": 44.739
+   "start": 45.7,
+   "end": 46.28
   },
   {
    "text": "Si",
-   "start": 45.077,
-   "end": 45.277
+   "start": 46.74,
+   "end": 46.92
   },
   {
    "text": "la",
-   "start": 45.277,
-   "end": 45.364
+   "start": 46.92,
+   "end": 47.12
   },
   {
    "text": "tumeur",
-   "start": 45.364,
-   "end": 45.739
+   "start": 47.12,
+   "end": 47.42
   },
   {
    "text": "appuie",
-   "start": 45.739,
-   "end": 45.94
+   "start": 47.42,
+   "end": 47.66
   },
   {
    "text": "dessus,",
-   "start": 45.94,
-   "end": 46.389
+   "start": 47.66,
+   "end": 48.06
   },
   {
    "text": "la",
-   "start": 46.69,
-   "end": 46.764
+   "start": 48.38,
+   "end": 48.5
   },
   {
    "text": "bile",
-   "start": 46.764,
-   "end": 46.939
+   "start": 48.5,
+   "end": 48.64
   },
   {
    "text": "ne",
-   "start": 46.939,
-   "end": 47.027
+   "start": 48.64,
+   "end": 48.8
   },
   {
    "text": "passe",
-   "start": 47.027,
-   "end": 47.252
+   "start": 48.8,
+   "end": 49.02
   },
   {
-   "text": "plus :",
-   "start": 47.252,
-   "end": 47.54
+   "text": "plus :",
+   "start": 49.02,
+   "end": 49.26
   },
   {
    "text": "elle",
-   "start": 47.852,
-   "end": 47.965
+   "start": 49.52,
+   "end": 49.72
   },
   {
    "text": "repart",
-   "start": 47.965,
-   "end": 48.302
+   "start": 49.72,
+   "end": 50.02
   },
   {
    "text": "dans",
-   "start": 48.302,
-   "end": 48.415
+   "start": 50.02,
+   "end": 50.2
   },
   {
    "text": "le",
-   "start": 48.415,
-   "end": 48.514
+   "start": 50.2,
+   "end": 50.38
   },
   {
    "text": "sang.",
-   "start": 48.514,
-   "end": 48.827
+   "start": 50.38,
+   "end": 50.54
   },
   {
    "text": "La",
-   "start": 49.215,
-   "end": 49.34
+   "start": 51.02,
+   "end": 51.2
   },
   {
    "text": "peau",
-   "start": 49.34,
-   "end": 49.552
+   "start": 51.2,
+   "end": 51.38
   },
   {
    "text": "et",
-   "start": 49.552,
-   "end": 49.59
+   "start": 51.38,
+   "end": 51.5
   },
   {
    "text": "les",
-   "start": 49.59,
-   "end": 49.702
+   "start": 51.5,
+   "end": 51.66
   },
   {
    "text": "yeux",
-   "start": 49.702,
-   "end": 49.852
+   "start": 51.66,
+   "end": 51.8
   },
   {
    "text": "jaunissent,",
-   "start": 49.852,
-   "end": 50.415
+   "start": 51.8,
+   "end": 52.38
   },
   {
    "text": "les",
-   "start": 50.665,
-   "end": 50.752
+   "start": 52.58,
+   "end": 52.8
   },
   {
    "text": "urines",
-   "start": 50.752,
-   "end": 51.052
+   "start": 52.8,
+   "end": 53.08
   },
   {
    "text": "foncent,",
-   "start": 51.052,
-   "end": 51.527
+   "start": 53.08,
+   "end": 53.52
   },
   {
    "text": "et",
-   "start": 51.802,
-   "end": 51.827
+   "start": 53.8,
+   "end": 53.92
   },
   {
    "text": "les",
-   "start": 51.827,
-   "end": 51.939
+   "start": 53.92,
+   "end": 54.14
   },
   {
    "text": "selles",
-   "start": 51.939,
-   "end": 52.165
+   "start": 54.14,
+   "end": 54.32
   },
   {
    "text": "deviennent",
-   "start": 52.165,
-   "end": 52.477
+   "start": 54.32,
+   "end": 54.7
   },
   {
    "text": "claires.",
-   "start": 52.477,
-   "end": 52.952
+   "start": 54.7,
+   "end": 55.1
   },
   {
    "text": "Les",
-   "start": 53.959,
-   "end": 54.072
+   "start": 55.91,
+   "end": 56.14
   },
   {
    "text": "autres",
-   "start": 54.072,
-   "end": 54.372
+   "start": 56.14,
+   "end": 56.44
   },
   {
-   "text": "signes :",
-   "start": 54.372,
-   "end": 54.76
+   "text": "signes :",
+   "start": 56.44,
+   "end": 56.98
   },
   {
    "text": "une",
-   "start": 55.147,
-   "end": 55.234
+   "start": 56.98,
+   "end": 57.28
   },
   {
    "text": "perte",
-   "start": 55.234,
-   "end": 55.51
+   "start": 57.28,
+   "end": 57.66
   },
   {
    "text": "de",
-   "start": 55.51,
-   "end": 55.609
+   "start": 57.66,
+   "end": 57.84
   },
   {
    "text": "poids",
-   "start": 55.609,
-   "end": 55.785
+   "start": 57.84,
+   "end": 58.0
   },
   {
    "text": "sans",
-   "start": 55.785,
-   "end": 55.934
+   "start": 58.0,
+   "end": 58.2
   },
   {
    "text": "raison,",
-   "start": 55.934,
-   "end": 56.322
+   "start": 58.2,
+   "end": 58.66
   },
   {
    "text": "une",
-   "start": 56.684,
-   "end": 56.747
+   "start": 59.02,
+   "end": 59.12
   },
   {
    "text": "douleur",
-   "start": 56.747,
-   "end": 57.022
+   "start": 59.12,
+   "end": 59.44
   },
   {
    "text": "au",
-   "start": 57.022,
-   "end": 57.059
+   "start": 59.44,
+   "end": 59.6
   },
   {
    "text": "ventre",
-   "start": 57.059,
-   "end": 57.385
+   "start": 59.6,
+   "end": 59.88
   },
   {
    "text": "qui",
-   "start": 57.385,
-   "end": 57.522
+   "start": 59.88,
+   "end": 60.12
   },
   {
    "text": "part",
-   "start": 57.522,
-   "end": 57.672
+   "start": 60.12,
+   "end": 60.26
   },
   {
    "text": "dans",
-   "start": 57.672,
-   "end": 57.785
+   "start": 60.26,
+   "end": 60.42
   },
   {
    "text": "le",
-   "start": 57.785,
-   "end": 57.885
+   "start": 60.42,
+   "end": 60.62
   },
   {
    "text": "dos,",
-   "start": 57.885,
-   "end": 58.135
+   "start": 60.62,
+   "end": 60.76
   },
   {
    "text": "une",
-   "start": 58.51,
-   "end": 58.572
+   "start": 61.18,
+   "end": 61.36
   },
   {
    "text": "grande",
-   "start": 58.572,
-   "end": 58.797
+   "start": 61.36,
+   "end": 61.62
   },
   {
    "text": "fatigue,",
-   "start": 58.797,
-   "end": 59.309
+   "start": 61.62,
+   "end": 62.08
   },
   {
    "text": "ou",
-   "start": 59.635,
-   "end": 59.672
+   "start": 62.08,
+   "end": 62.5
   },
   {
    "text": "un",
-   "start": 59.672,
-   "end": 59.734
+   "start": 62.5,
+   "end": 62.74
   },
   {
    "text": "diabète",
-   "start": 59.734,
-   "end": 60.135
+   "start": 62.74,
+   "end": 63.0
   },
   {
    "text": "qui",
-   "start": 60.135,
-   "end": 60.247
+   "start": 63.0,
+   "end": 63.22
   },
   {
    "text": "apparaît",
-   "start": 60.247,
-   "end": 60.522
+   "start": 63.22,
+   "end": 63.44
   },
   {
    "text": "d'un",
-   "start": 60.522,
-   "end": 60.672
+   "start": 63.44,
+   "end": 63.74
   },
   {
    "text": "coup.",
-   "start": 60.672,
-   "end": 60.972
+   "start": 63.74,
+   "end": 63.941
   },
   {
    "text": "Le",
-   "start": 61.962,
-   "end": 62.087
+   "start": 64.741,
+   "end": 64.94
   },
   {
    "text": "risque",
-   "start": 62.087,
-   "end": 62.312
+   "start": 64.94,
+   "end": 65.16
   },
   {
    "text": "augmente",
-   "start": 62.312,
-   "end": 62.65
+   "start": 65.16,
+   "end": 65.56
   },
   {
    "text": "avec",
-   "start": 62.65,
-   "end": 62.875
+   "start": 65.56,
+   "end": 65.9
   },
   {
    "text": "l'âge,",
-   "start": 62.875,
-   "end": 63.287
+   "start": 65.9,
+   "end": 66.38
   },
   {
    "text": "le",
-   "start": 63.487,
-   "end": 63.55
+   "start": 66.56,
+   "end": 66.74
   },
   {
    "text": "tabac,",
-   "start": 63.55,
-   "end": 63.937
+   "start": 66.74,
+   "end": 67.08
   },
   {
    "text": "le",
-   "start": 64.137,
-   "end": 64.2
+   "start": 67.34,
+   "end": 67.54
   },
   {
    "text": "surpoids,",
-   "start": 64.2,
-   "end": 64.687
+   "start": 67.54,
+   "end": 68.14
   },
   {
    "text": "l'alcool",
-   "start": 64.999,
-   "end": 65.299
+   "start": 68.36,
+   "end": 68.7
   },
   {
    "text": "en",
-   "start": 65.299,
-   "end": 65.35
+   "start": 68.7,
+   "end": 68.9
   },
   {
    "text": "excès,",
-   "start": 65.35,
-   "end": 65.799
+   "start": 68.9,
+   "end": 69.28
   },
   {
    "text": "un",
-   "start": 66.137,
-   "end": 66.225
+   "start": 69.52,
+   "end": 69.7
   },
   {
    "text": "diabète",
-   "start": 66.225,
-   "end": 66.575
+   "start": 69.7,
+   "end": 70.0
   },
   {
    "text": "ancien,",
-   "start": 66.575,
-   "end": 66.987
+   "start": 70.0,
+   "end": 70.54
   },
   {
    "text": "ou",
-   "start": 67.362,
-   "end": 67.412
+   "start": 70.54,
+   "end": 70.72
   },
   {
    "text": "une",
-   "start": 67.412,
-   "end": 67.487
+   "start": 70.72,
+   "end": 70.88
   },
   {
    "text": "pancréatite",
-   "start": 67.487,
-   "end": 68.049
+   "start": 70.88,
+   "end": 71.52
   },
   {
    "text": "qui",
-   "start": 68.049,
-   "end": 68.174
+   "start": 71.52,
+   "end": 71.8
   },
   {
-   "text": "dure :",
-   "start": 68.174,
-   "end": 68.487
-  },
-  {
-   "text": "une",
-   "start": 68.874,
-   "end": 68.95
-  },
-  {
-   "text": "inflammation",
-   "start": 68.95,
-   "end": 69.475
-  },
-  {
-   "text": "du",
-   "start": 69.475,
-   "end": 69.587
-  },
-  {
-   "text": "pancréas.",
-   "start": 69.587,
-   "end": 70.325
-  },
-  {
-   "text": "Pour",
-   "start": 71.27,
-   "end": 71.407
-  },
-  {
-   "text": "le",
-   "start": 71.407,
-   "end": 71.47
-  },
-  {
-   "text": "trouver :",
-   "start": 71.47,
-   "end": 71.92
+   "text": "dure :",
+   "start": 71.8,
+   "end": 72.06
   },
   {
    "text": "une",
-   "start": 72.233,
-   "end": 72.308
-  },
-  {
-   "text": "prise",
-   "start": 72.308,
+   "start": 72.3,
    "end": 72.52
   },
   {
-   "text": "de",
+   "text": "inflammation",
    "start": 72.52,
-   "end": 72.657
+   "end": 72.96
   },
   {
-   "text": "sang,",
-   "start": 72.657,
-   "end": 72.983
+   "text": "du",
+   "start": 72.96,
+   "end": 73.18
   },
   {
-   "text": "puis",
-   "start": 73.282,
-   "end": 73.445
-  },
-  {
-   "text": "un",
-   "start": 73.445,
-   "end": 73.507
-  },
-  {
-   "text": "scanner.",
-   "start": 73.507,
-   "end": 74.082
-  },
-  {
-   "text": "Et",
-   "start": 74.42,
-   "end": 74.558
-  },
-  {
-   "text": "parfois,",
-   "start": 74.558,
-   "end": 75.045
-  },
-  {
-   "text": "une",
-   "start": 75.358,
-   "end": 75.445
-  },
-  {
-   "text": "petite",
-   "start": 75.445,
-   "end": 75.695
-  },
-  {
-   "text": "caméra",
-   "start": 75.695,
-   "end": 76.058
-  },
-  {
-   "text": "passe",
-   "start": 76.058,
-   "end": 76.295
-  },
-  {
-   "text": "par",
-   "start": 76.295,
-   "end": 76.433
-  },
-  {
-   "text": "la",
-   "start": 76.433,
-   "end": 76.532
-  },
-  {
-   "text": "bouche",
-   "start": 76.532,
-   "end": 76.82
-  },
-  {
-   "text": "jusqu'à",
-   "start": 76.82,
-   "end": 77.108
-  },
-  {
-   "text": "l'estomac,",
-   "start": 77.108,
-   "end": 77.62
-  },
-  {
-   "text": "pour",
-   "start": 77.895,
-   "end": 78.02
-  },
-  {
-   "text": "regarder",
-   "start": 78.02,
-   "end": 78.358
-  },
-  {
-   "text": "le",
-   "start": 78.358,
-   "end": 78.445
-  },
-  {
-   "text": "pancréas",
-   "start": 78.445,
-   "end": 78.907
-  },
-  {
-   "text": "de",
-   "start": 78.907,
-   "end": 78.995
-  },
-  {
-   "text": "tout",
-   "start": 78.995,
-   "end": 79.12
-  },
-  {
-   "text": "près,",
-   "start": 79.12,
-   "end": 79.445
-  },
-  {
-   "text": "et",
-   "start": 79.82,
-   "end": 79.907
-  },
-  {
-   "text": "faire",
-   "start": 79.907,
-   "end": 80.082
-  },
-  {
-   "text": "une",
-   "start": 80.082,
-   "end": 80.17
-  },
-  {
-   "text": "biopsie,",
-   "start": 80.17,
-   "end": 80.707
-  },
-  {
-   "text": "un",
-   "start": 80.933,
-   "end": 81.032
-  },
-  {
-   "text": "petit",
-   "start": 81.032,
-   "end": 81.295
-  },
-  {
-   "text": "prélèvement.",
-   "start": 81.295,
-   "end": 81.895
+   "text": "pancréas.",
+   "start": 73.18,
+   "end": 73.72
   },
   {
    "text": "Pour",
-   "start": 82.886,
-   "end": 82.986
+   "start": 74.542,
+   "end": 74.68
   },
   {
    "text": "le",
-   "start": 82.986,
-   "end": 83.073
+   "start": 74.68,
+   "end": 74.92
   },
   {
-   "text": "soigner :",
-   "start": 83.073,
-   "end": 83.499
-  },
-  {
-   "text": "la",
-   "start": 83.823,
-   "end": 83.886
-  },
-  {
-   "text": "chirurgie",
-   "start": 83.886,
-   "end": 84.361
-  },
-  {
-   "text": "quand",
-   "start": 84.361,
-   "end": 84.474
-  },
-  {
-   "text": "c'est",
-   "start": 84.474,
-   "end": 84.586
-  },
-  {
-   "text": "possible,",
-   "start": 84.586,
-   "end": 85.136
-  },
-  {
-   "text": "la",
-   "start": 85.424,
-   "end": 85.486
-  },
-  {
-   "text": "chimiothérapie,",
-   "start": 85.486,
-   "end": 86.336
-  },
-  {
-   "text": "parfois",
-   "start": 86.599,
-   "end": 86.898
-  },
-  {
-   "text": "la",
-   "start": 86.898,
-   "end": 86.974
-  },
-  {
-   "text": "radiothérapie.",
-   "start": 86.974,
-   "end": 87.786
-  },
-  {
-   "text": "Et",
-   "start": 88.148,
-   "end": 88.286
-  },
-  {
-   "text": "si",
-   "start": 88.286,
-   "end": 88.411
-  },
-  {
-   "text": "la",
-   "start": 88.411,
-   "end": 88.499
-  },
-  {
-   "text": "bile",
-   "start": 88.499,
-   "end": 88.686
-  },
-  {
-   "text": "est",
-   "start": 88.686,
-   "end": 88.724
-  },
-  {
-   "text": "bloquée,",
-   "start": 88.724,
-   "end": 89.211
-  },
-  {
-   "text": "on",
-   "start": 89.499,
-   "end": 89.536
-  },
-  {
-   "text": "pose",
-   "start": 89.536,
-   "end": 89.736
+   "text": "trouver :",
+   "start": 74.92,
+   "end": 75.22
   },
   {
    "text": "une",
-   "start": 89.736,
-   "end": 89.823
+   "start": 75.7,
+   "end": 75.78
   },
   {
-   "text": "prothèse,",
-   "start": 89.823,
-   "end": 90.386
+   "text": "prise",
+   "start": 75.78,
+   "end": 76.0
+  },
+  {
+   "text": "de",
+   "start": 76.0,
+   "end": 76.28
+  },
+  {
+   "text": "sang,",
+   "start": 76.28,
+   "end": 76.5
+  },
+  {
+   "text": "puis",
+   "start": 76.66,
+   "end": 76.8
   },
   {
    "text": "un",
-   "start": 90.624,
-   "end": 90.698
+   "start": 76.8,
+   "end": 76.98
   },
   {
-   "text": "petit",
-   "start": 90.698,
-   "end": 90.986
-  },
-  {
-   "text": "tube",
-   "start": 90.986,
-   "end": 91.286
-  },
-  {
-   "text": "qui",
-   "start": 91.286,
-   "end": 91.411
-  },
-  {
-   "text": "la",
-   "start": 91.411,
-   "end": 91.486
-  },
-  {
-   "text": "laisse",
-   "start": 91.486,
-   "end": 91.698
-  },
-  {
-   "text": "passer.",
-   "start": 91.698,
-   "end": 92.174
-  },
-  {
-   "text": "Alors,",
-   "start": 93.154,
-   "end": 93.509
-  },
-  {
-   "text": "va",
-   "start": 93.73,
-   "end": 93.803
-  },
-  {
-   "text": "lui",
-   "start": 93.803,
-   "end": 93.926
-  },
-  {
-   "text": "en",
-   "start": 93.926,
-   "end": 93.987
-  },
-  {
-   "text": "parler :",
-   "start": 93.987,
-   "end": 94.428
-  },
-  {
-   "text": "des",
-   "start": 94.71,
-   "end": 94.808
-  },
-  {
-   "text": "yeux",
-   "start": 94.808,
-   "end": 94.955
-  },
-  {
-   "text": "jaunes,",
-   "start": 94.955,
-   "end": 95.274
-  },
-  {
-   "text": "ou",
-   "start": 95.555,
-   "end": 95.592
-  },
-  {
-   "text": "une",
-   "start": 95.592,
-   "end": 95.678
-  },
-  {
-   "text": "perte",
-   "start": 95.678,
-   "end": 95.948
-  },
-  {
-   "text": "de",
-   "start": 95.948,
-   "end": 96.033
-  },
-  {
-   "text": "poids",
-   "start": 96.033,
-   "end": 96.229
-  },
-  {
-   "text": "sans",
-   "start": 96.23,
-   "end": 96.377
-  },
-  {
-   "text": "raison,",
-   "start": 96.377,
-   "end": 96.744
-  },
-  {
-   "text": "on",
-   "start": 96.928,
-   "end": 96.953
-  },
-  {
-   "text": "consulte",
-   "start": 96.953,
-   "end": 97.418
-  },
-  {
-   "text": "vite.",
-   "start": 97.418,
-   "end": 97.81
+   "text": "scanner.",
+   "start": 76.98,
+   "end": 77.4
   },
   {
    "text": "Et",
-   "start": 98.142,
-   "end": 98.314
+   "start": 77.84,
+   "end": 78.1
   },
   {
-   "text": "arrêter",
-   "start": 98.314,
-   "end": 98.608
+   "text": "parfois,",
+   "start": 78.1,
+   "end": 78.32
+  },
+  {
+   "text": "une",
+   "start": 78.62,
+   "end": 78.7
+  },
+  {
+   "text": "petite",
+   "start": 78.7,
+   "end": 79.04
+  },
+  {
+   "text": "caméra",
+   "start": 79.04,
+   "end": 79.48
+  },
+  {
+   "text": "passe",
+   "start": 79.48,
+   "end": 79.74
+  },
+  {
+   "text": "par",
+   "start": 79.74,
+   "end": 79.96
+  },
+  {
+   "text": "la",
+   "start": 79.96,
+   "end": 80.18
+  },
+  {
+   "text": "bouche",
+   "start": 80.18,
+   "end": 80.42
+  },
+  {
+   "text": "jusqu'à",
+   "start": 80.42,
+   "end": 80.88
+  },
+  {
+   "text": "l'estomac,",
+   "start": 80.88,
+   "end": 81.54
+  },
+  {
+   "text": "pour",
+   "start": 81.54,
+   "end": 81.76
+  },
+  {
+   "text": "regarder",
+   "start": 81.76,
+   "end": 82.16
+  },
+  {
+   "text": "le",
+   "start": 82.16,
+   "end": 82.36
+  },
+  {
+   "text": "pancréas",
+   "start": 82.36,
+   "end": 82.78
   },
   {
    "text": "de",
-   "start": 98.608,
-   "end": 98.73
+   "start": 82.78,
+   "end": 83.04
+  },
+  {
+   "text": "tout",
+   "start": 83.04,
+   "end": 83.26
+  },
+  {
+   "text": "près,",
+   "start": 83.26,
+   "end": 83.42
+  },
+  {
+   "text": "et",
+   "start": 83.42,
+   "end": 83.78
+  },
+  {
+   "text": "faire",
+   "start": 83.78,
+   "end": 83.98
+  },
+  {
+   "text": "une",
+   "start": 83.98,
+   "end": 84.2
+  },
+  {
+   "text": "biopsie,",
+   "start": 84.2,
+   "end": 85.24
+  },
+  {
+   "text": "un",
+   "start": 85.46,
+   "end": 85.66
+  },
+  {
+   "text": "petit",
+   "start": 85.66,
+   "end": 85.92
+  },
+  {
+   "text": "prélèvement.",
+   "start": 85.92,
+   "end": 84.578
+  },
+  {
+   "text": "Pour",
+   "start": 85.378,
+   "end": 86.8
+  },
+  {
+   "text": "le",
+   "start": 86.8,
+   "end": 87.06
+  },
+  {
+   "text": "soigner :",
+   "start": 87.06,
+   "end": 87.54
+  },
+  {
+   "text": "la",
+   "start": 87.92,
+   "end": 88.08
+  },
+  {
+   "text": "chirurgie",
+   "start": 88.08,
+   "end": 88.54
+  },
+  {
+   "text": "quand",
+   "start": 88.54,
+   "end": 88.68
+  },
+  {
+   "text": "c'est",
+   "start": 88.68,
+   "end": 88.98
+  },
+  {
+   "text": "possible,",
+   "start": 88.98,
+   "end": 89.32
+  },
+  {
+   "text": "la",
+   "start": 89.68,
+   "end": 89.82
+  },
+  {
+   "text": "chimiothérapie,",
+   "start": 89.82,
+   "end": 90.8
+  },
+  {
+   "text": "parfois",
+   "start": 91.1,
+   "end": 91.3
+  },
+  {
+   "text": "la",
+   "start": 91.3,
+   "end": 91.62
+  },
+  {
+   "text": "radiothérapie.",
+   "start": 91.62,
+   "end": 92.44
+  },
+  {
+   "text": "Et",
+   "start": 92.8,
+   "end": 92.94
+  },
+  {
+   "text": "si",
+   "start": 92.94,
+   "end": 93.08
+  },
+  {
+   "text": "la",
+   "start": 93.08,
+   "end": 93.22
+  },
+  {
+   "text": "bile",
+   "start": 93.22,
+   "end": 93.32
+  },
+  {
+   "text": "est",
+   "start": 93.32,
+   "end": 93.52
+  },
+  {
+   "text": "bloquée,",
+   "start": 93.52,
+   "end": 93.94
+  },
+  {
+   "text": "on",
+   "start": 94.12,
+   "end": 94.18
+  },
+  {
+   "text": "pose",
+   "start": 94.18,
+   "end": 94.34
+  },
+  {
+   "text": "une",
+   "start": 94.34,
+   "end": 94.6
+  },
+  {
+   "text": "prothèse,",
+   "start": 94.6,
+   "end": 95.08
+  },
+  {
+   "text": "un",
+   "start": 95.34,
+   "end": 95.44
+  },
+  {
+   "text": "petit",
+   "start": 95.44,
+   "end": 95.76
+  },
+  {
+   "text": "tube",
+   "start": 95.76,
+   "end": 95.92
+  },
+  {
+   "text": "qui",
+   "start": 95.92,
+   "end": 96.14
+  },
+  {
+   "text": "la",
+   "start": 96.14,
+   "end": 96.24
+  },
+  {
+   "text": "laisse",
+   "start": 96.24,
+   "end": 96.4
+  },
+  {
+   "text": "passer.",
+   "start": 96.4,
+   "end": 96.746
+  },
+  {
+   "text": "Alors,",
+   "start": 97.589,
+   "end": 98.08
+  },
+  {
+   "text": "va",
+   "start": 98.26,
+   "end": 98.38
+  },
+  {
+   "text": "lui",
+   "start": 98.38,
+   "end": 98.52
+  },
+  {
+   "text": "en",
+   "start": 98.52,
+   "end": 98.72
+  },
+  {
+   "text": "parler :",
+   "start": 98.72,
+   "end": 99.02
+  },
+  {
+   "text": "des",
+   "start": 99.44,
+   "end": 99.62
+  },
+  {
+   "text": "yeux",
+   "start": 99.62,
+   "end": 99.84
+  },
+  {
+   "text": "jaunes,",
+   "start": 99.84,
+   "end": 100.22
+  },
+  {
+   "text": "ou",
+   "start": 100.22,
+   "end": 100.42
+  },
+  {
+   "text": "une",
+   "start": 100.42,
+   "end": 100.54
+  },
+  {
+   "text": "perte",
+   "start": 100.54,
+   "end": 100.88
+  },
+  {
+   "text": "de",
+   "start": 100.88,
+   "end": 101.04
+  },
+  {
+   "text": "poids",
+   "start": 101.04,
+   "end": 101.16
+  },
+  {
+   "text": "sans",
+   "start": 101.16,
+   "end": 101.36
+  },
+  {
+   "text": "raison,",
+   "start": 101.36,
+   "end": 101.66
+  },
+  {
+   "text": "on",
+   "start": 102.0,
+   "end": 102.16
+  },
+  {
+   "text": "consulte",
+   "start": 102.16,
+   "end": 102.64
+  },
+  {
+   "text": "vite.",
+   "start": 102.64,
+   "end": 102.92
+  },
+  {
+   "text": "Et",
+   "start": 103.42,
+   "end": 103.6
+  },
+  {
+   "text": "arrêter",
+   "start": 103.6,
+   "end": 103.84
+  },
+  {
+   "text": "de",
+   "start": 103.84,
+   "end": 104.02
   },
   {
    "text": "fumer",
-   "start": 98.73,
-   "end": 99.012
+   "start": 104.02,
+   "end": 104.22
   },
   {
    "text": "protège",
-   "start": 99.025,
-   "end": 99.417
+   "start": 104.22,
+   "end": 104.62
   },
   {
    "text": "aussi",
-   "start": 99.417,
-   "end": 99.637
+   "start": 104.62,
+   "end": 104.94
   },
   {
    "text": "son",
-   "start": 99.637,
-   "end": 99.76
+   "start": 104.94,
+   "end": 105.1
   },
   {
-   "text": "pancréas !",
-   "start": 99.76,
-   "end": 100.471
+   "text": "pancréas !",
+   "start": 105.1,
+   "end": 105.64
   }
  ]
 }
