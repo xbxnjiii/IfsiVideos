@@ -1,0 +1,42 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Chaque soir, ton père se sert un verre… puis un deuxième. Depuis des années. Il se sent très bien : aucune douleur. Mais le foie ne se plaint presque jamais. En silence, il s'abîme… et c'est là que peut naître le cancer du foie."
+ },
+ {
+  "id": "foie",
+  "rate": "+0%",
+  "text": "Le foie est le plus gros organe du ventre, sous les côtes, à droite. Il a deux lobes : le droit, le plus gros, et le gauche. Il filtre le sang et élimine les toxines. Et il fabrique la bile, qui aide à digérer : elle est stockée dans la vésicule biliaire, puis descend vers l'intestin."
+ },
+ {
+  "id": "cancer",
+  "rate": "+0%",
+  "text": "Le cancer du foie, ce sont des cellules du foie qui se multiplient sans contrôle. Elles forment une tumeur. Et le plus souvent, il naît sur un foie déjà malade : une cirrhose, un foie abîmé et durci par des années d'agression."
+ },
+ {
+  "id": "causes",
+  "rate": "+0%",
+  "text": "Ce qui abîme le foie : l'alcool, les virus des hépatites B et C, et le gras qui s'accumule dans le foie, avec le surpoids et le diabète."
+ },
+ {
+  "id": "signes",
+  "rate": "+0%",
+  "text": "Au début, il ne donne souvent aucun signe. Puis viennent : une grande fatigue, une perte de poids, une douleur à droite, juste sous les côtes, la peau et les yeux qui jaunissent, ou un ventre qui gonfle."
+ },
+ {
+  "id": "examens",
+  "rate": "+0%",
+  "text": "Quand on a une cirrhose, on fait une échographie du foie tous les six mois, pour le trouver tôt. Puis, un scanner ou une {IRM|I R M}, une prise de sang, et parfois une biopsie, un petit prélèvement."
+ },
+ {
+  "id": "traitement",
+  "rate": "+0%",
+  "text": "Pour le soigner : on peut retirer la partie malade, car le foie repousse ! Parfois, on remplace le foie : c'est la greffe. On peut aussi détruire la tumeur par la chaleur, lui couper l'arrivée de sang, ou donner des médicaments."
+ },
+ {
+  "id": "fin",
+  "rate": "+2%",
+  "text": "Alors, va lui en parler : moins d'alcool, le vaccin contre l'hépatite B, le dépistage de l'hépatite C, qui se guérit, et un poids normal. Ça protège son foie !"
+ }
+]

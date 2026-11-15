@@ -548,6 +548,22 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   hypertension, dialyse, maladie de famille), le scanner (+ biopsie), les traitements (chirurgie partielle ou totale, on vit
   très bien avec un seul rein, froid / chaleur, surveillance, médicaments), chute « du sang dans les urines : on consulte ».
   Briques `src/brand/kidney.tsx`. Storyboard `docs/lpi/storyboard-cancer-rein.md`.
+- `Cancer-Foie` (n° 57, ≈ 1 min 37, format « pathologie », voix gratuite d'abord, sans barre de progression) : demandé
+  « pareil, à l'aide de ce schéma, sans les annotations ». Schéma fourni `public/images/foie/foie-cancer.webp` (foie, lobes,
+  vésicule biliaire, voie biliaire + « focus » foie sain / avec cancer) nettoyé par `scripts/brand/clean_foie_diagram.py`
+  → `-anatomie.png`, `-sain.png`, `-cancer.png`. Les pastilles « Lobe droit » et « Foie » mordaient sur le bord du foie :
+  bord ajusté par un polynôme (vertical à gauche, horizontal en haut), pixels repris à la même distance du bord, **liseré
+  sombre compris** (sinon le bord reste pâle) ; les points des traits ont un **anneau blanc** à prendre dans le masque
+  (et ne pas le repasser en blanc après coup). Accroche **« un verre… puis un deuxième »** avec **« ton père »** : cuisine
+  le soir (`NightWindow`, lampe), le vin se verse (`WineBottleG`, `WineGlassG`, vraies couleurs), le calendrier de
+  `Kitchen` défile de 2006 à 2026, bulle « Je vais très bien ! », plongée vers son foie : loupe, nodules de cirrhose
+  (`Cirrhosis`) puis la tumeur. Puis le foie (lobes, filtre le sang, bile → vésicule → intestin), le cancer (le plus
+  souvent sur une cirrhose), les causes (alcool, hépatites B et C, foie gras), les signes, les examens (échographie tous
+  les 6 mois si cirrhose, scanner / IRM, prise de sang, biopsie), les traitements (le foie repousse, greffe, chaleur,
+  couper l'arrivée de sang, médicaments), chute « moins d'alcool, vaccin hépatite B, dépistage hépatite C… ça protège son
+  foie ». Briques `src/brand/liver.tsx`. Voix : « sous les côtes à droite » était entendu « sous les côtés droites » →
+  « à droite, juste sous les côtes » ; « greffe » entendu « grève » → « on remplace le foie : c'est la greffe ».
+  Storyboard `docs/lpi/storyboard-cancer-foie.md`.
 
 ## Voix ElevenLabs « Laura » (choisie par le propriétaire pour les nouvelles vidéos)
 

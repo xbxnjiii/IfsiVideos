@@ -67,6 +67,7 @@ pas de logiciel de montage, pas de banque d'images.
 | 54 | Pathologie : le cancer du pancréas (voix Laura, accroche « le jaune dans le miroir », schéma fourni sans annotations) | `Cancer-Pancreas` | [voix/54-cancer-pancreas.script.json](voix/54-cancer-pancreas.script.json) | [storyboard](docs/lpi/storyboard-cancer-pancreas.md) |
 | 55 | Pathologie : le cancer de l'estomac (voix Laura, accroche « l'assiette repoussée », schéma fourni sans annotations) | `Cancer-Estomac` | [voix/55-cancer-estomac.script.json](voix/55-cancer-estomac.script.json) | [storyboard](docs/lpi/storyboard-cancer-estomac.md) |
 | 56 | Pathologie : le cancer du rein (voix Laura, accroche « découvert par hasard », schéma fourni sans annotations) | `Cancer-Rein` | [voix/56-cancer-rein.script.json](voix/56-cancer-rein.script.json) | [storyboard](docs/lpi/storyboard-cancer-rein.md) |
+| 57 | Pathologie : le cancer du foie (voix gratuite, accroche « un verre… puis un deuxième », schéma fourni sans annotations) | `Cancer-Foie` | [voix/57-cancer-foie.script.json](voix/57-cancer-foie.script.json) | [storyboard](docs/lpi/storyboard-cancer-foie.md) |
 
 ## Utilisation
 
