@@ -578,7 +578,7 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   puis liquide…), les risques, la fibroscopie (+ biopsies, scanner), les traitements (chirurgie, chimio + radiothérapie,
   par la caméra si très tôt, prothèse), chute « du mal à avaler qui dure, on consulte vite ». Briques
   `src/brand/oesophagus.tsx`. Storyboard `docs/lpi/storyboard-cancer-oesophage.md`.
-- `Cancer-Anus` (n° 59, ≈ 1 min 58, format « pathologie », voix gratuite d'abord, sans barre de progression) : demandé
+- `Cancer-Anus` (n° 59, ≈ 2 min 02, format « pathologie », voix Laura après validation (2 263 crédits), sans barre de progression) : demandé
   « pareil, à l'aide de ce schéma, sans les annotations ». Schéma fourni `public/images/anus/anus-cancer.webp` nettoyé par
   `scripts/brand/clean_anus_diagram.py` → `-anatomie.png`, `-sain.png`, `-cancer.png`. Étiquettes posées sur la graisse et
   les muscles des côtés : on garde **la bande centrale** (rectum, canal, sphincters, anus), en fondu sur les côtés.
