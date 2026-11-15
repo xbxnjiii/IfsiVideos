@@ -534,6 +534,20 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   (+ biopsies, scanner), les traitements (chirurgie, chimiothérapie avant / après ; très tôt : retrait par la caméra, sans
   opérer), chute « on consulte… au lieu de prendre des pansements pendant des mois ». Briques `src/brand/stomach.tsx`.
   Voix : « {Helicobacter pylori|hélicobactère pilori} ». Storyboard `docs/lpi/storyboard-cancer-estomac.md`.
+- `Cancer-Rein` (n° 56, ≈ 1 min 38, format « pathologie », voix gratuite d'abord, sans barre de progression) : demandé
+  « pareil, à l'aide de ce schéma, sans les annotations ». Schéma fourni `public/images/rein/rein-cancer.webp` (rein en
+  coupe, surrénale, artère / veine rénales, uretère + « focus » rein sain / avec cancer) nettoyé par
+  `scripts/brand/clean_rein_diagram.py` → `-anatomie.png`, `-sain.png`, `-cancer.png`. **Piège** : la veine rénale est
+  bleue comme les traits des étiquettes → traits reconnus à leur bleu saturé (rouge < 40, le contour de la veine est à ≈ 50) ;
+  pastilles qui mordaient sur le bord du rein : même méthode que l'estomac (bord ajusté par un polynôme, pixels repris à la
+  même distance du bord). Accroche **« découvert par hasard »** avec **« ton père »** : mal au dos (éclairs au flanc), à
+  l'échographie (`EchoScreen`, vraies couleurs : écran noir, image en éventail grise) une boule apparaît sur le rein,
+  mesure « 3,2 cm », loupe, tampon PAR HASARD (plus de la moitié des cancers du rein sont découverts ainsi). Puis le rein
+  (artère, veine, urine, bassinet, uretère, surrénale), le cancer (après 60 ans, ×2 chez les hommes), les signes (souvent
+  aucun ; sang dans les urines, douleur au flanc, boule, fatigue, fièvre, perte de poids), les risques (tabac, surpoids,
+  hypertension, dialyse, maladie de famille), le scanner (+ biopsie), les traitements (chirurgie partielle ou totale, on vit
+  très bien avec un seul rein, froid / chaleur, surveillance, médicaments), chute « du sang dans les urines : on consulte ».
+  Briques `src/brand/kidney.tsx`. Storyboard `docs/lpi/storyboard-cancer-rein.md`.
 
 ## Voix ElevenLabs « Laura » (choisie par le propriétaire pour les nouvelles vidéos)
 

@@ -1,0 +1,42 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Ton père a mal au dos. Pour en être sûr, le médecin lui fait passer une échographie… et là, sur l'écran : une boule, sur le rein ! Son mal de dos n'avait rien à voir. Sans cet examen, personne ne l'aurait trouvée. C'est souvent comme ça qu'on découvre le cancer du rein : par hasard."
+ },
+ {
+  "id": "rein",
+  "rate": "+0%",
+  "text": "Les reins filtrent le sang. L'artère rénale l'apporte, la veine rénale le ramène, propre. Les déchets partent dans l'urine : elle se recueille dans le bassinet, puis descend par l'uretère. Et au-dessus, la glande surrénale fabrique des hormones."
+ },
+ {
+  "id": "cancer",
+  "rate": "+0%",
+  "text": "Le cancer du rein, ce sont des cellules du rein qui se multiplient sans contrôle. Elles forment une tumeur. Il touche surtout après soixante ans, et deux fois plus souvent les hommes."
+ },
+ {
+  "id": "signes",
+  "rate": "+0%",
+  "text": "Le piège : souvent, il ne donne aucun signe. Plus tard, il peut y avoir du sang dans les urines, une douleur dans le flanc, ou une boule qu'on sent dans le ventre. Parfois aussi : une grande fatigue, de la fièvre, une perte de poids."
+ },
+ {
+  "id": "risques",
+  "rate": "+0%",
+  "text": "Le risque augmente avec le tabac, le surpoids, l'hypertension artérielle, une dialyse depuis des années, et plus rarement, une maladie de famille."
+ },
+ {
+  "id": "examens",
+  "rate": "+0%",
+  "text": "Pour le confirmer : un scanner. Il mesure la tumeur et regarde si elle s'est étendue. Parfois, on fait aussi une biopsie, un petit prélèvement."
+ },
+ {
+  "id": "traitement",
+  "rate": "+0%",
+  "text": "Pour le soigner : souvent, la chirurgie. On retire seulement la tumeur, ou tout le rein. Et on vit très bien avec un seul rein ! Les petites tumeurs peuvent aussi être détruites par le froid ou la chaleur, ou simplement surveillées. Et s'il s'est étendu, il existe des médicaments."
+ },
+ {
+  "id": "fin",
+  "rate": "+2%",
+  "text": "Alors, va lui en parler : du sang dans les urines, on consulte. Et arrêter de fumer, garder un poids normal et surveiller sa tension, ça protège aussi ses reins !"
+ }
+]

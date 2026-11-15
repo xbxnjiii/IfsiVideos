@@ -69,7 +69,8 @@
     "render:cancer-colorectal": "remotion render Cancer-Colorectal out/52-cancer-colorectal.mp4",
     "render:cancer-vessie": "remotion render Cancer-Vessie out/53-cancer-vessie.mp4",
     "render:cancer-pancreas": "remotion render Cancer-Pancreas out/54-cancer-pancreas.mp4",
-    "render:cancer-estomac": "remotion render Cancer-Estomac out/55-cancer-estomac.mp4"
+    "render:cancer-estomac": "remotion render Cancer-Estomac out/55-cancer-estomac.mp4",
+    "render:cancer-rein": "remotion render Cancer-Rein out/56-cancer-rein.mp4"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.532",
