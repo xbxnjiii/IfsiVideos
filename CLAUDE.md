@@ -548,7 +548,7 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   hypertension, dialyse, maladie de famille), le scanner (+ biopsie), les traitements (chirurgie partielle ou totale, on vit
   très bien avec un seul rein, froid / chaleur, surveillance, médicaments), chute « du sang dans les urines : on consulte ».
   Briques `src/brand/kidney.tsx`. Storyboard `docs/lpi/storyboard-cancer-rein.md`.
-- `Cancer-Foie` (n° 57, ≈ 1 min 37, format « pathologie », voix gratuite d'abord, sans barre de progression) : demandé
+- `Cancer-Foie` (n° 57, ≈ 1 min 41, format « pathologie », voix Laura après validation (1 809 crédits), sans barre de progression) : demandé
   « pareil, à l'aide de ce schéma, sans les annotations ». Schéma fourni `public/images/foie/foie-cancer.webp` (foie, lobes,
   vésicule biliaire, voie biliaire + « focus » foie sain / avec cancer) nettoyé par `scripts/brand/clean_foie_diagram.py`
   → `-anatomie.png`, `-sain.png`, `-cancer.png`. Les pastilles « Lobe droit » et « Foie » mordaient sur le bord du foie :
