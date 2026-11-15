@@ -1,1843 +1,1843 @@
 {
- "voice": "voix.wav (tts_voix.py)",
- "duration": 115.4,
+ "voice": "pad-cancer-voies-biliaires.wav",
+ "duration": 119.061,
  "sections": [
   {
    "id": "intro",
-   "start": 0.048,
-   "end": 14.269
+   "start": 0.0,
+   "end": 15.027
   },
   {
    "id": "voies",
-   "start": 15.192,
-   "end": 31.942
+   "start": 15.868,
+   "end": 33.28
   },
   {
    "id": "cancer",
-   "start": 32.878,
-   "end": 43.691
+   "start": 34.132,
+   "end": 45.198
   },
   {
    "id": "types",
-   "start": 44.636,
-   "end": 53.486
+   "start": 46.048,
+   "end": 54.53
   },
   {
    "id": "signes",
-   "start": 54.426,
-   "end": 69.413
+   "start": 55.351,
+   "end": 71.025
   },
   {
    "id": "risques",
-   "start": 70.36,
-   "end": 80.972
+   "start": 71.843,
+   "end": 83.66
   },
   {
    "id": "examens",
-   "start": 81.964,
-   "end": 92.826
+   "start": 84.567,
+   "end": 96.046
   },
   {
    "id": "traitement",
-   "start": 93.78,
-   "end": 108.58
+   "start": 96.855,
+   "end": 111.735
   },
   {
    "id": "fin",
-   "start": 109.594,
-   "end": 115.047
+   "start": 112.539,
+   "end": 118.88
   }
  ],
  "words": [
   {
    "text": "Une",
-   "start": 0.048,
-   "end": 0.252
+   "start": 0.0,
+   "end": 0.36
   },
   {
    "text": "heure,",
-   "start": 0.252,
-   "end": 0.541
+   "start": 0.36,
+   "end": 0.7
   },
   {
    "text": "trois",
-   "start": 0.757,
-   "end": 0.949
+   "start": 0.8,
+   "end": 1.16
   },
   {
    "text": "heures…",
-   "start": 0.95,
-   "end": 1.298
+   "start": 1.16,
+   "end": 1.54
   },
   {
    "text": "ton",
-   "start": 1.623,
-   "end": 1.755
+   "start": 1.9,
+   "end": 2.06
   },
   {
    "text": "père",
-   "start": 1.755,
-   "end": 1.959
+   "start": 2.06,
+   "end": 2.26
   },
   {
    "text": "se",
-   "start": 1.959,
-   "end": 2.055
+   "start": 2.26,
+   "end": 2.48
   },
   {
    "text": "gratte",
-   "start": 2.055,
-   "end": 2.284
+   "start": 2.48,
+   "end": 2.72
   },
   {
    "text": "partout,",
-   "start": 2.284,
-   "end": 2.704
+   "start": 2.72,
+   "end": 3.18
   },
   {
    "text": "et",
-   "start": 3.041,
-   "end": 3.065
+   "start": 3.18,
+   "end": 3.5
   },
   {
    "text": "il",
-   "start": 3.065,
-   "end": 3.125
+   "start": 3.5,
+   "end": 3.64
   },
   {
    "text": "n'arrive",
-   "start": 3.125,
-   "end": 3.425
+   "start": 3.64,
+   "end": 3.88
   },
   {
    "text": "plus",
-   "start": 3.425,
-   "end": 3.57
+   "start": 3.88,
+   "end": 4.12
   },
   {
    "text": "à",
-   "start": 3.57,
-   "end": 3.678
+   "start": 4.12,
+   "end": 4.3
   },
   {
    "text": "dormir.",
-   "start": 3.678,
-   "end": 4.207
+   "start": 4.3,
+   "end": 4.62
   },
   {
    "text": "Le",
-   "start": 4.567,
-   "end": 4.687
+   "start": 5.04,
+   "end": 5.24
   },
   {
    "text": "matin,",
-   "start": 4.688,
-   "end": 5.096
+   "start": 5.24,
+   "end": 5.54
   },
   {
    "text": "ses",
-   "start": 5.373,
-   "end": 5.505
+   "start": 5.78,
+   "end": 5.9
   },
   {
    "text": "urines",
-   "start": 5.505,
-   "end": 5.817
+   "start": 5.9,
+   "end": 6.16
   },
   {
    "text": "sont",
-   "start": 5.817,
-   "end": 5.949
+   "start": 6.16,
+   "end": 6.42
   },
   {
    "text": "foncées…",
-   "start": 5.949,
-   "end": 6.442
+   "start": 6.42,
+   "end": 7.08
   },
   {
    "text": "et",
-   "start": 6.791,
-   "end": 6.863
+   "start": 7.08,
+   "end": 7.3
   },
   {
    "text": "dans",
-   "start": 6.863,
-   "end": 6.971
+   "start": 7.3,
+   "end": 7.44
   },
   {
    "text": "le",
-   "start": 6.971,
-   "end": 7.043
+   "start": 7.44,
+   "end": 7.62
   },
   {
    "text": "miroir,",
-   "start": 7.043,
-   "end": 7.5
+   "start": 7.62,
+   "end": 8.04
   },
   {
    "text": "le",
-   "start": 7.764,
-   "end": 7.824
+   "start": 8.24,
+   "end": 8.38
   },
   {
    "text": "blanc",
-   "start": 7.824,
-   "end": 7.993
+   "start": 8.38,
+   "end": 8.56
   },
   {
    "text": "de",
-   "start": 7.993,
-   "end": 8.089
+   "start": 8.56,
+   "end": 8.74
   },
   {
    "text": "ses",
-   "start": 8.089,
-   "end": 8.233
+   "start": 8.74,
+   "end": 8.86
   },
   {
    "text": "yeux",
-   "start": 8.233,
-   "end": 8.425
+   "start": 8.86,
+   "end": 9.0
   },
   {
    "text": "est",
-   "start": 8.425,
-   "end": 8.474
+   "start": 9.0,
+   "end": 9.2
   },
   {
    "text": "devenu",
-   "start": 8.474,
-   "end": 8.762
+   "start": 9.2,
+   "end": 9.5
   },
   {
    "text": "jaune.",
-   "start": 8.762,
-   "end": 9.171
+   "start": 9.5,
+   "end": 9.98
   },
   {
    "text": "Ce",
-   "start": 9.507,
-   "end": 9.663
+   "start": 10.26,
+   "end": 10.38
   },
   {
    "text": "n'est",
-   "start": 9.663,
-   "end": 9.76
+   "start": 10.38,
+   "end": 10.52
   },
   {
    "text": "pas",
-   "start": 9.76,
-   "end": 9.88
+   "start": 10.52,
+   "end": 10.68
   },
   {
    "text": "la",
-   "start": 9.88,
-   "end": 9.988
+   "start": 10.68,
+   "end": 10.88
   },
   {
-   "text": "peau :",
-   "start": 9.988,
-   "end": 10.264
+   "text": "peau :",
+   "start": 10.88,
+   "end": 11.14
   },
   {
    "text": "c'est",
-   "start": 10.601,
-   "end": 10.721
+   "start": 11.3,
+   "end": 11.48
   },
   {
    "text": "la",
-   "start": 10.721,
-   "end": 10.805
+   "start": 11.48,
+   "end": 11.78
   },
   {
    "text": "bile",
-   "start": 10.805,
-   "end": 11.058
+   "start": 11.78,
+   "end": 11.9
   },
   {
    "text": "qui",
-   "start": 11.058,
-   "end": 11.178
+   "start": 11.9,
+   "end": 12.08
   },
   {
    "text": "ne",
-   "start": 11.178,
-   "end": 11.286
+   "start": 12.08,
+   "end": 12.2
   },
   {
    "text": "s'écoule",
-   "start": 11.286,
-   "end": 11.611
+   "start": 12.2,
+   "end": 12.48
   },
   {
    "text": "plus.",
-   "start": 11.611,
-   "end": 11.935
+   "start": 12.48,
+   "end": 12.82
   },
   {
    "text": "Et",
-   "start": 12.262,
-   "end": 12.418
+   "start": 13.08,
+   "end": 13.28
   },
   {
    "text": "ça,",
-   "start": 12.418,
-   "end": 12.694
+   "start": 13.28,
+   "end": 13.72
   },
   {
    "text": "ça",
-   "start": 13.031,
-   "end": 13.139
+   "start": 13.72,
+   "end": 13.86
   },
   {
    "text": "se",
-   "start": 13.139,
-   "end": 13.247
+   "start": 13.86,
+   "end": 14.0
   },
   {
    "text": "montre",
-   "start": 13.247,
-   "end": 13.524
+   "start": 14.0,
+   "end": 14.24
   },
   {
    "text": "vite",
-   "start": 13.524,
-   "end": 13.728
+   "start": 14.24,
+   "end": 14.5
   },
   {
    "text": "à",
-   "start": 13.728,
-   "end": 13.764
+   "start": 14.5,
+   "end": 14.64
   },
   {
    "text": "un",
-   "start": 13.764,
-   "end": 13.8
+   "start": 14.64,
+   "end": 14.78
   },
   {
    "text": "médecin.",
-   "start": 13.8,
-   "end": 14.269
+   "start": 14.78,
+   "end": 15.027
   },
   {
    "text": "Le",
-   "start": 15.192,
-   "end": 15.38
+   "start": 15.868,
+   "end": 16.16
   },
   {
    "text": "foie",
-   "start": 15.38,
-   "end": 15.567
+   "start": 16.16,
+   "end": 16.4
   },
   {
    "text": "fabrique",
-   "start": 15.567,
-   "end": 15.892
+   "start": 16.4,
+   "end": 16.84
   },
   {
    "text": "la",
-   "start": 15.892,
-   "end": 16.005
+   "start": 16.84,
+   "end": 17.08
   },
   {
    "text": "bile,",
-   "start": 16.005,
-   "end": 16.329
+   "start": 17.08,
+   "end": 17.28
   },
   {
    "text": "un",
-   "start": 16.654,
-   "end": 16.692
+   "start": 17.58,
+   "end": 17.8
   },
   {
    "text": "liquide",
-   "start": 16.692,
-   "end": 17.104
+   "start": 17.8,
+   "end": 18.12
   },
   {
    "text": "qui",
-   "start": 17.104,
-   "end": 17.255
+   "start": 18.12,
+   "end": 18.36
   },
   {
    "text": "aide",
-   "start": 17.255,
-   "end": 17.354
+   "start": 18.36,
+   "end": 18.5
   },
   {
    "text": "à",
-   "start": 17.354,
-   "end": 17.404
+   "start": 18.5,
+   "end": 18.74
   },
   {
    "text": "digérer",
-   "start": 17.404,
-   "end": 17.755
+   "start": 18.74,
+   "end": 18.98
   },
   {
    "text": "les",
-   "start": 17.755,
-   "end": 17.842
+   "start": 18.98,
+   "end": 19.2
   },
   {
    "text": "graisses.",
-   "start": 17.842,
-   "end": 18.392
+   "start": 19.2,
+   "end": 19.58
   },
   {
    "text": "Elle",
-   "start": 18.729,
-   "end": 18.93
+   "start": 19.9,
+   "end": 20.1
   },
   {
    "text": "circule",
-   "start": 18.93,
-   "end": 19.367
+   "start": 20.1,
+   "end": 20.48
   },
   {
    "text": "dans",
-   "start": 19.367,
-   "end": 19.48
+   "start": 20.48,
+   "end": 20.62
   },
   {
    "text": "de",
-   "start": 19.48,
-   "end": 19.567
+   "start": 20.62,
+   "end": 20.88
   },
   {
    "text": "petits",
-   "start": 19.567,
-   "end": 19.829
+   "start": 20.88,
+   "end": 21.12
   },
   {
-   "text": "canaux :",
-   "start": 19.829,
-   "end": 20.242
+   "text": "canaux :",
+   "start": 21.12,
+   "end": 21.54
   },
   {
    "text": "les",
-   "start": 20.605,
-   "end": 20.654
+   "start": 21.76,
+   "end": 21.92
   },
   {
    "text": "voies",
-   "start": 20.654,
-   "end": 20.817
+   "start": 21.92,
+   "end": 22.16
   },
   {
    "text": "biliaires.",
-   "start": 20.817,
-   "end": 21.404
+   "start": 22.16,
+   "end": 22.74
   },
   {
    "text": "D'abord",
-   "start": 21.755,
-   "end": 22.142
+   "start": 23.06,
+   "end": 23.36
   },
   {
    "text": "dans",
-   "start": 22.142,
-   "end": 22.255
+   "start": 23.36,
+   "end": 23.52
   },
   {
    "text": "le",
-   "start": 22.255,
-   "end": 22.355
+   "start": 23.52,
+   "end": 23.74
   },
   {
    "text": "foie,",
-   "start": 22.355,
-   "end": 22.717
+   "start": 23.74,
+   "end": 24.08
   },
   {
    "text": "puis",
-   "start": 23.054,
-   "end": 23.204
+   "start": 24.1,
+   "end": 24.36
   },
   {
    "text": "ils",
-   "start": 23.204,
-   "end": 23.304
+   "start": 24.36,
+   "end": 24.58
   },
   {
    "text": "se",
-   "start": 23.304,
-   "end": 23.417
+   "start": 24.58,
+   "end": 24.84
   },
   {
    "text": "rejoignent.",
-   "start": 23.417,
-   "end": 24.054
+   "start": 24.84,
+   "end": 25.24
   },
   {
    "text": "La",
-   "start": 24.429,
-   "end": 24.542
+   "start": 25.62,
+   "end": 25.82
   },
   {
    "text": "vésicule",
-   "start": 24.542,
-   "end": 25.029
+   "start": 25.82,
+   "end": 26.26
   },
   {
    "text": "biliaire",
-   "start": 25.029,
-   "end": 25.38
+   "start": 26.26,
+   "end": 26.66
   },
   {
    "text": "la",
-   "start": 25.38,
-   "end": 25.48
+   "start": 26.66,
+   "end": 26.96
   },
   {
    "text": "stocke",
-   "start": 25.48,
-   "end": 25.817
+   "start": 26.96,
+   "end": 27.2
   },
   {
    "text": "entre",
-   "start": 25.817,
-   "end": 26.017
+   "start": 27.2,
+   "end": 27.5
   },
   {
    "text": "les",
-   "start": 26.017,
-   "end": 26.105
+   "start": 27.5,
+   "end": 27.68
   },
   {
    "text": "repas.",
-   "start": 26.105,
-   "end": 26.529
+   "start": 27.68,
+   "end": 28.04
   },
   {
    "text": "Et",
-   "start": 26.867,
-   "end": 27.005
+   "start": 28.04,
+   "end": 28.44
   },
   {
    "text": "le",
-   "start": 27.005,
-   "end": 27.092
+   "start": 28.44,
+   "end": 28.66
   },
   {
    "text": "cholédoque,",
-   "start": 27.092,
-   "end": 27.667
+   "start": 28.66,
+   "end": 29.22
   },
   {
    "text": "le",
-   "start": 27.892,
-   "end": 27.942
+   "start": 29.32,
+   "end": 29.5
   },
   {
    "text": "canal",
-   "start": 27.942,
-   "end": 28.242
+   "start": 29.5,
+   "end": 29.68
   },
   {
    "text": "principal,",
-   "start": 28.242,
-   "end": 28.917
+   "start": 29.68,
+   "end": 30.34
   },
   {
    "text": "la",
-   "start": 29.23,
-   "end": 29.317
+   "start": 30.76,
+   "end": 30.94
   },
   {
    "text": "verse",
-   "start": 29.317,
-   "end": 29.667
+   "start": 30.94,
+   "end": 31.12
   },
   {
    "text": "dans",
-   "start": 29.667,
-   "end": 29.779
+   "start": 31.12,
+   "end": 31.3
   },
   {
    "text": "le",
-   "start": 29.779,
-   "end": 29.88
+   "start": 31.3,
+   "end": 31.54
   },
   {
    "text": "duodénum,",
-   "start": 29.88,
-   "end": 30.554
+   "start": 31.54,
+   "end": 32.1
   },
   {
    "text": "le",
-   "start": 30.88,
-   "end": 30.942
+   "start": 32.34,
+   "end": 32.56
   },
   {
    "text": "début",
-   "start": 30.942,
-   "end": 31.192
+   "start": 32.56,
+   "end": 32.72
   },
   {
    "text": "de",
-   "start": 31.192,
-   "end": 31.292
+   "start": 32.72,
+   "end": 32.86
   },
   {
    "text": "l'intestin.",
-   "start": 31.292,
-   "end": 31.942
+   "start": 32.86,
+   "end": 33.28
   },
   {
    "text": "Le",
-   "start": 32.878,
-   "end": 33.053
+   "start": 34.132,
+   "end": 34.32
   },
   {
    "text": "cancer",
-   "start": 33.053,
-   "end": 33.403
+   "start": 34.32,
+   "end": 34.68
   },
   {
    "text": "des",
-   "start": 33.403,
-   "end": 33.491
+   "start": 34.68,
+   "end": 34.86
   },
   {
    "text": "voies",
-   "start": 33.491,
-   "end": 33.628
+   "start": 34.86,
+   "end": 35.04
   },
   {
    "text": "biliaires,",
-   "start": 33.628,
-   "end": 34.116
+   "start": 35.04,
+   "end": 35.6
   },
   {
    "text": "ce",
-   "start": 34.478,
-   "end": 34.578
+   "start": 35.66,
+   "end": 35.82
   },
   {
    "text": "sont",
-   "start": 34.578,
-   "end": 34.691
+   "start": 35.82,
+   "end": 35.98
   },
   {
    "text": "des",
-   "start": 34.691,
-   "end": 34.778
+   "start": 35.98,
+   "end": 36.22
   },
   {
    "text": "cellules",
-   "start": 34.778,
-   "end": 35.091
+   "start": 36.22,
+   "end": 36.56
   },
   {
    "text": "de",
-   "start": 35.091,
-   "end": 35.166
+   "start": 36.56,
+   "end": 36.72
   },
   {
    "text": "la",
-   "start": 35.166,
-   "end": 35.253
+   "start": 36.72,
+   "end": 36.96
   },
   {
    "text": "paroi",
-   "start": 35.253,
-   "end": 35.541
+   "start": 36.96,
+   "end": 37.12
   },
   {
    "text": "de",
-   "start": 35.541,
-   "end": 35.641
+   "start": 37.12,
+   "end": 37.34
   },
   {
    "text": "ces",
-   "start": 35.641,
-   "end": 35.766
+   "start": 37.34,
+   "end": 37.5
   },
   {
    "text": "canaux",
-   "start": 35.766,
-   "end": 36.141
+   "start": 37.5,
+   "end": 37.76
   },
   {
    "text": "qui",
-   "start": 36.141,
-   "end": 36.278
+   "start": 37.76,
+   "end": 37.96
   },
   {
    "text": "se",
-   "start": 36.278,
-   "end": 36.403
+   "start": 37.96,
+   "end": 38.22
   },
   {
    "text": "multiplient",
-   "start": 36.403,
-   "end": 36.928
+   "start": 38.22,
+   "end": 38.84
   },
   {
    "text": "sans",
-   "start": 36.928,
-   "end": 37.091
+   "start": 38.84,
+   "end": 39.14
   },
   {
    "text": "contrôle.",
-   "start": 37.091,
-   "end": 37.728
+   "start": 39.14,
+   "end": 39.6
   },
   {
    "text": "Elles",
-   "start": 38.066,
-   "end": 38.278
+   "start": 40.0,
+   "end": 40.24
   },
   {
    "text": "forment",
-   "start": 38.278,
-   "end": 38.528
+   "start": 40.24,
+   "end": 40.4
   },
   {
    "text": "une",
-   "start": 38.528,
-   "end": 38.628
+   "start": 40.4,
+   "end": 40.64
   },
   {
    "text": "tumeur,",
-   "start": 38.628,
-   "end": 39.153
+   "start": 40.64,
+   "end": 41.08
   },
   {
    "text": "qui",
-   "start": 39.416,
-   "end": 39.541
+   "start": 41.08,
+   "end": 41.28
   },
   {
    "text": "rétrécit",
-   "start": 39.541,
-   "end": 39.991
+   "start": 41.28,
+   "end": 41.76
   },
   {
    "text": "le",
-   "start": 39.991,
-   "end": 40.078
+   "start": 41.76,
+   "end": 41.94
   },
   {
    "text": "canal.",
-   "start": 40.078,
-   "end": 40.616
+   "start": 41.94,
+   "end": 42.18
   },
   {
    "text": "C'est",
-   "start": 40.953,
-   "end": 41.153
+   "start": 42.72,
+   "end": 42.88
   },
   {
    "text": "un",
-   "start": 41.153,
-   "end": 41.291
+   "start": 42.88,
+   "end": 43.04
   },
   {
    "text": "cancer",
-   "start": 41.291,
-   "end": 41.703
+   "start": 43.04,
+   "end": 43.3
   },
   {
    "text": "rare,",
-   "start": 41.703,
-   "end": 42.091
+   "start": 43.3,
+   "end": 43.72
   },
   {
    "text": "mais",
-   "start": 42.453,
-   "end": 42.528
+   "start": 43.98,
+   "end": 44.12
   },
   {
    "text": "souvent",
-   "start": 42.528,
-   "end": 42.828
+   "start": 44.12,
+   "end": 44.4
   },
   {
    "text": "découvert",
-   "start": 42.828,
-   "end": 43.241
+   "start": 44.4,
+   "end": 44.88
   },
   {
    "text": "tard.",
-   "start": 43.241,
-   "end": 43.691
+   "start": 44.88,
+   "end": 45.198
   },
   {
    "text": "Il",
-   "start": 44.636,
-   "end": 44.836
+   "start": 46.048,
+   "end": 46.2
   },
   {
    "text": "en",
-   "start": 44.836,
-   "end": 44.873
+   "start": 46.2,
+   "end": 46.48
   },
   {
    "text": "existe",
-   "start": 44.873,
-   "end": 45.423
+   "start": 46.48,
+   "end": 46.76
   },
   {
    "text": "deux",
-   "start": 45.423,
-   "end": 45.548
+   "start": 46.76,
+   "end": 47.06
   },
   {
    "text": "grands",
-   "start": 45.548,
-   "end": 45.748
+   "start": 47.06,
+   "end": 47.32
   },
   {
    "text": "types.",
-   "start": 45.748,
-   "end": 46.186
+   "start": 47.32,
+   "end": 47.58
   },
   {
    "text": "Le",
-   "start": 46.586,
-   "end": 46.698
+   "start": 47.82,
+   "end": 48.06
   },
   {
    "text": "cholangiocarcinome,",
-   "start": 46.698,
-   "end": 47.798
+   "start": 48.06,
+   "end": 49.08
   },
   {
    "text": "la",
-   "start": 48.161,
-   "end": 48.224
+   "start": 49.26,
+   "end": 49.5
   },
   {
    "text": "tumeur",
-   "start": 48.224,
-   "end": 48.523
+   "start": 49.5,
+   "end": 49.76
   },
   {
    "text": "des",
-   "start": 48.523,
-   "end": 48.611
+   "start": 49.76,
+   "end": 49.94
   },
   {
    "text": "canaux",
-   "start": 48.611,
-   "end": 48.849
+   "start": 49.94,
+   "end": 50.16
   },
   {
-   "text": "biliaires :",
-   "start": 48.849,
-   "end": 49.323
+   "text": "biliaires :",
+   "start": 50.16,
+   "end": 50.64
   },
   {
    "text": "c'est",
-   "start": 49.661,
-   "end": 49.773
+   "start": 50.88,
+   "end": 51.02
   },
   {
    "text": "le",
-   "start": 49.773,
-   "end": 49.861
+   "start": 51.02,
+   "end": 51.2
   },
   {
    "text": "plus",
-   "start": 49.861,
-   "end": 50.011
+   "start": 51.2,
+   "end": 51.32
   },
   {
    "text": "fréquent.",
-   "start": 50.011,
-   "end": 50.498
+   "start": 51.32,
+   "end": 51.76
   },
   {
    "text": "Et",
-   "start": 50.836,
-   "end": 50.974
+   "start": 52.02,
+   "end": 52.2
   },
   {
    "text": "le",
-   "start": 50.974,
-   "end": 51.048
+   "start": 52.2,
+   "end": 52.36
   },
   {
    "text": "cancer",
-   "start": 51.048,
-   "end": 51.448
+   "start": 52.36,
+   "end": 52.64
   },
   {
    "text": "de",
-   "start": 51.448,
-   "end": 51.523
+   "start": 52.64,
+   "end": 52.82
   },
   {
    "text": "la",
-   "start": 51.523,
-   "end": 51.599
+   "start": 52.82,
+   "end": 52.98
   },
   {
    "text": "vésicule",
-   "start": 51.599,
-   "end": 52.048
+   "start": 52.98,
+   "end": 53.38
   },
   {
    "text": "biliaire,",
-   "start": 52.048,
-   "end": 52.599
+   "start": 53.38,
+   "end": 53.92
   },
   {
    "text": "plus",
-   "start": 52.886,
-   "end": 53.048
+   "start": 54.08,
+   "end": 54.22
   },
   {
    "text": "rare.",
-   "start": 53.048,
-   "end": 53.486
+   "start": 54.22,
+   "end": 54.53
   },
   {
    "text": "Quand",
-   "start": 54.426,
-   "end": 54.551
+   "start": 55.351,
+   "end": 55.46
   },
   {
    "text": "la",
-   "start": 54.551,
-   "end": 54.639
+   "start": 55.46,
+   "end": 55.7
   },
   {
    "text": "tumeur",
-   "start": 54.639,
-   "end": 55.063
+   "start": 55.7,
+   "end": 56.04
   },
   {
    "text": "bouche",
-   "start": 55.063,
-   "end": 55.276
+   "start": 56.04,
+   "end": 56.32
   },
   {
    "text": "le",
-   "start": 55.276,
-   "end": 55.363
+   "start": 56.32,
+   "end": 56.54
   },
   {
    "text": "canal,",
-   "start": 55.363,
-   "end": 55.813
+   "start": 56.54,
+   "end": 56.84
   },
   {
    "text": "la",
-   "start": 56.163,
-   "end": 56.251
+   "start": 57.18,
+   "end": 57.36
   },
   {
    "text": "bile",
-   "start": 56.251,
-   "end": 56.451
+   "start": 57.36,
+   "end": 57.5
   },
   {
    "text": "repart",
-   "start": 56.451,
-   "end": 56.776
+   "start": 57.5,
+   "end": 57.98
   },
   {
    "text": "dans",
-   "start": 56.776,
-   "end": 56.889
+   "start": 57.98,
+   "end": 58.22
   },
   {
    "text": "le",
-   "start": 56.889,
-   "end": 56.988
+   "start": 58.22,
+   "end": 58.22
   },
   {
    "text": "sang.",
-   "start": 56.988,
-   "end": 57.326
+   "start": 58.22,
+   "end": 58.54
   },
   {
    "text": "La",
-   "start": 57.713,
-   "end": 57.851
+   "start": 58.88,
+   "end": 59.08
   },
   {
    "text": "peau",
-   "start": 57.851,
-   "end": 58.051
+   "start": 59.08,
+   "end": 59.22
   },
   {
    "text": "et",
-   "start": 58.051,
-   "end": 58.088
+   "start": 59.22,
+   "end": 59.34
   },
   {
    "text": "les",
-   "start": 58.088,
-   "end": 58.201
+   "start": 59.34,
+   "end": 59.56
   },
   {
    "text": "yeux",
-   "start": 58.201,
-   "end": 58.363
+   "start": 59.56,
+   "end": 59.68
   },
   {
-   "text": "jaunissent :",
-   "start": 58.363,
-   "end": 58.963
+   "text": "jaunissent :",
+   "start": 59.68,
+   "end": 60.18
   },
   {
    "text": "c'est",
-   "start": 59.213,
-   "end": 59.351
+   "start": 60.4,
+   "end": 60.64
   },
   {
    "text": "l'ictère.",
-   "start": 59.351,
-   "end": 59.963
+   "start": 60.64,
+   "end": 61.26
   },
   {
    "text": "Les",
-   "start": 60.313,
-   "end": 60.514
+   "start": 61.64,
+   "end": 61.86
   },
   {
    "text": "urines",
-   "start": 60.514,
-   "end": 60.851
+   "start": 61.86,
+   "end": 62.1
   },
   {
    "text": "deviennent",
-   "start": 60.851,
-   "end": 61.139
+   "start": 62.1,
+   "end": 62.44
   },
   {
    "text": "foncées,",
-   "start": 61.139,
-   "end": 61.626
+   "start": 62.44,
+   "end": 63.0
   },
   {
    "text": "les",
-   "start": 61.901,
-   "end": 61.976
+   "start": 63.2,
+   "end": 63.38
   },
   {
    "text": "selles",
-   "start": 61.976,
-   "end": 62.188
+   "start": 63.38,
+   "end": 63.62
   },
   {
    "text": "claires,",
-   "start": 62.188,
-   "end": 62.626
+   "start": 63.62,
+   "end": 64.16
   },
   {
    "text": "et",
-   "start": 62.851,
-   "end": 62.864
+   "start": 64.16,
+   "end": 64.4
   },
   {
    "text": "la",
-   "start": 62.864,
-   "end": 62.951
+   "start": 64.4,
+   "end": 64.58
   },
   {
    "text": "peau",
-   "start": 62.951,
-   "end": 63.088
+   "start": 64.58,
+   "end": 64.82
   },
   {
    "text": "gratte.",
-   "start": 63.088,
-   "end": 63.588
+   "start": 64.82,
+   "end": 65.42
   },
   {
    "text": "Parfois",
-   "start": 63.938,
-   "end": 64.239
+   "start": 65.7,
+   "end": 66.04
   },
   {
-   "text": "aussi :",
-   "start": 64.239,
-   "end": 64.651
+   "text": "aussi :",
+   "start": 66.04,
+   "end": 66.48
   },
   {
    "text": "une",
-   "start": 65.076,
-   "end": 65.151
+   "start": 66.48,
+   "end": 66.84
   },
   {
    "text": "douleur",
-   "start": 65.151,
-   "end": 65.426
+   "start": 66.84,
+   "end": 67.18
   },
   {
    "text": "à",
-   "start": 65.426,
-   "end": 65.463
+   "start": 67.18,
+   "end": 67.38
   },
   {
    "text": "droite",
-   "start": 65.463,
-   "end": 65.739
+   "start": 67.38,
+   "end": 67.5
   },
   {
    "text": "sous",
-   "start": 65.739,
-   "end": 65.838
+   "start": 67.5,
+   "end": 67.72
   },
   {
    "text": "les",
-   "start": 65.838,
-   "end": 65.951
+   "start": 67.72,
+   "end": 67.92
   },
   {
    "text": "côtes,",
-   "start": 65.951,
-   "end": 66.376
+   "start": 67.92,
+   "end": 68.18
   },
   {
    "text": "de",
-   "start": 66.601,
-   "end": 66.663
+   "start": 68.34,
+   "end": 68.48
   },
   {
    "text": "la",
-   "start": 66.663,
-   "end": 66.763
+   "start": 68.48,
+   "end": 68.66
   },
   {
    "text": "fatigue,",
-   "start": 66.763,
-   "end": 67.263
+   "start": 68.66,
+   "end": 69.02
   },
   {
    "text": "une",
-   "start": 67.576,
-   "end": 67.651
+   "start": 69.4,
+   "end": 69.46
   },
   {
    "text": "perte",
-   "start": 67.651,
-   "end": 67.926
+   "start": 69.46,
+   "end": 69.76
   },
   {
    "text": "de",
-   "start": 67.926,
-   "end": 68.038
+   "start": 69.76,
+   "end": 70.02
   },
   {
    "text": "poids,",
-   "start": 68.038,
-   "end": 68.364
+   "start": 70.02,
+   "end": 70.22
   },
   {
    "text": "ou",
-   "start": 68.689,
-   "end": 68.739
+   "start": 70.22,
+   "end": 70.4
   },
   {
    "text": "de",
-   "start": 68.739,
-   "end": 68.826
+   "start": 70.4,
+   "end": 70.56
   },
   {
    "text": "la",
-   "start": 68.826,
-   "end": 68.926
+   "start": 70.56,
+   "end": 70.76
   },
   {
    "text": "fièvre.",
-   "start": 68.926,
-   "end": 69.413
+   "start": 70.76,
+   "end": 71.025
   },
   {
    "text": "Le",
-   "start": 70.36,
-   "end": 70.547
+   "start": 71.843,
+   "end": 72.04
   },
   {
    "text": "risque",
-   "start": 70.547,
-   "end": 70.773
+   "start": 72.04,
+   "end": 72.26
   },
   {
    "text": "augmente",
-   "start": 70.773,
-   "end": 71.135
+   "start": 72.26,
+   "end": 72.66
   },
   {
    "text": "avec",
-   "start": 71.135,
-   "end": 71.297
+   "start": 72.66,
+   "end": 72.98
   },
   {
    "text": "des",
-   "start": 71.297,
-   "end": 71.36
+   "start": 72.98,
+   "end": 73.24
   },
   {
    "text": "calculs",
-   "start": 71.36,
-   "end": 71.735
+   "start": 73.24,
+   "end": 73.52
   },
   {
    "text": "biliaires",
-   "start": 71.735,
-   "end": 72.097
+   "start": 73.52,
+   "end": 73.88
   },
   {
    "text": "qui",
-   "start": 72.097,
-   "end": 72.248
+   "start": 73.88,
+   "end": 74.18
   },
   {
    "text": "durent,",
-   "start": 72.248,
-   "end": 72.597
+   "start": 74.18,
+   "end": 74.58
   },
   {
    "text": "une",
-   "start": 72.948,
-   "end": 73.035
+   "start": 74.68,
+   "end": 74.86
   },
   {
    "text": "inflammation",
-   "start": 73.035,
-   "end": 73.51
+   "start": 74.86,
+   "end": 75.24
   },
   {
    "text": "chronique",
-   "start": 73.51,
-   "end": 73.847
+   "start": 75.24,
+   "end": 75.72
   },
   {
    "text": "des",
-   "start": 73.847,
-   "end": 73.922
+   "start": 75.72,
+   "end": 75.92
   },
   {
    "text": "canaux,",
-   "start": 73.922,
-   "end": 74.335
+   "start": 75.92,
+   "end": 76.28
   },
   {
    "text": "une",
-   "start": 74.685,
-   "end": 74.748
+   "start": 76.64,
+   "end": 76.76
   },
   {
    "text": "maladie",
-   "start": 74.748,
-   "end": 75.06
+   "start": 76.76,
+   "end": 77.06
   },
   {
    "text": "du",
-   "start": 75.06,
-   "end": 75.16
+   "start": 77.06,
+   "end": 77.34
   },
   {
    "text": "foie",
-   "start": 75.16,
-   "end": 75.385
+   "start": 77.34,
+   "end": 77.46
   },
   {
    "text": "comme",
-   "start": 75.385,
-   "end": 75.547
+   "start": 77.46,
+   "end": 77.7
   },
   {
    "text": "la",
-   "start": 75.547,
-   "end": 75.623
+   "start": 77.7,
+   "end": 77.94
   },
   {
    "text": "cirrhose",
-   "start": 75.623,
-   "end": 76.097
+   "start": 77.94,
+   "end": 78.26
   },
   {
    "text": "ou",
-   "start": 76.097,
-   "end": 76.135
+   "start": 78.26,
+   "end": 78.42
   },
   {
    "text": "une",
-   "start": 76.135,
-   "end": 76.222
+   "start": 78.42,
+   "end": 78.56
   },
   {
    "text": "hépatite,",
-   "start": 76.222,
-   "end": 76.773
+   "start": 78.56,
+   "end": 79.12
   },
   {
    "text": "certaines",
-   "start": 77.035,
-   "end": 77.373
+   "start": 79.62,
+   "end": 79.76
   },
   {
    "text": "maladies",
-   "start": 77.373,
-   "end": 77.672
+   "start": 79.76,
+   "end": 80.18
   },
   {
    "text": "inflammatoires",
-   "start": 77.672,
-   "end": 78.21
+   "start": 80.18,
+   "end": 80.7
   },
   {
    "text": "de",
-   "start": 78.21,
-   "end": 78.285
+   "start": 80.7,
+   "end": 80.84
   },
   {
    "text": "l'intestin,",
-   "start": 78.285,
-   "end": 78.873
+   "start": 80.84,
+   "end": 81.48
   },
   {
    "text": "et",
-   "start": 79.26,
-   "end": 79.335
+   "start": 81.48,
+   "end": 81.86
   },
   {
    "text": "parfois",
-   "start": 79.335,
-   "end": 79.623
+   "start": 81.86,
+   "end": 82.26
   },
   {
    "text": "une",
-   "start": 79.623,
-   "end": 79.685
+   "start": 82.26,
+   "end": 82.52
   },
   {
    "text": "prédisposition",
-   "start": 79.685,
-   "end": 80.398
+   "start": 82.52,
+   "end": 83.22
   },
   {
    "text": "de",
-   "start": 80.398,
-   "end": 80.485
+   "start": 83.22,
+   "end": 83.44
   },
   {
    "text": "famille.",
-   "start": 80.485,
-   "end": 80.972
+   "start": 83.44,
+   "end": 83.66
   },
   {
    "text": "Pour",
-   "start": 81.964,
-   "end": 82.064
+   "start": 84.567,
+   "end": 84.7
   },
   {
    "text": "le",
-   "start": 82.064,
-   "end": 82.126
+   "start": 84.7,
+   "end": 84.94
   },
   {
-   "text": "trouver :",
-   "start": 82.126,
-   "end": 82.551
+   "text": "trouver :",
+   "start": 84.94,
+   "end": 85.18
   },
   {
    "text": "une",
-   "start": 82.889,
-   "end": 82.951
+   "start": 85.6,
+   "end": 85.7
   },
   {
    "text": "prise",
-   "start": 82.964,
-   "end": 83.163
+   "start": 85.7,
+   "end": 85.94
   },
   {
    "text": "de",
-   "start": 83.163,
-   "end": 83.301
+   "start": 85.94,
+   "end": 86.24
   },
   {
    "text": "sang,",
-   "start": 83.301,
-   "end": 83.626
+   "start": 86.24,
+   "end": 86.48
   },
   {
    "text": "puis",
-   "start": 83.939,
-   "end": 84.051
+   "start": 86.7,
+   "end": 86.78
   },
   {
    "text": "une",
-   "start": 84.051,
-   "end": 84.139
+   "start": 86.78,
+   "end": 86.92
   },
   {
    "text": "échographie,",
-   "start": 84.139,
-   "end": 84.814
+   "start": 86.92,
+   "end": 87.62
   },
   {
    "text": "un",
-   "start": 85.101,
-   "end": 85.214
+   "start": 87.84,
+   "end": 87.98
   },
   {
    "text": "scanner",
-   "start": 85.214,
-   "end": 85.651
+   "start": 87.98,
+   "end": 88.38
   },
   {
    "text": "et",
-   "start": 85.651,
-   "end": 85.676
+   "start": 88.38,
+   "end": 88.66
   },
   {
    "text": "une",
-   "start": 85.676,
-   "end": 85.801
+   "start": 88.66,
+   "end": 88.84
   },
   {
    "text": "IRM",
-   "start": 85.801,
-   "end": 86.189
+   "start": 88.84,
+   "end": 89.22
   },
   {
    "text": "des",
-   "start": 86.189,
-   "end": 86.264
+   "start": 89.22,
+   "end": 89.38
   },
   {
    "text": "voies",
-   "start": 86.264,
-   "end": 86.401
+   "start": 89.38,
+   "end": 89.56
   },
   {
    "text": "biliaires.",
-   "start": 86.401,
-   "end": 86.951
+   "start": 89.56,
+   "end": 90.32
   },
   {
    "text": "Et",
-   "start": 87.288,
-   "end": 87.426
+   "start": 90.46,
+   "end": 90.66
   },
   {
    "text": "parfois,",
-   "start": 87.426,
-   "end": 87.913
+   "start": 90.66,
+   "end": 90.92
   },
   {
    "text": "une",
-   "start": 88.201,
-   "end": 88.288
+   "start": 91.14,
+   "end": 91.22
   },
   {
    "text": "petite",
-   "start": 88.288,
-   "end": 88.551
+   "start": 91.22,
+   "end": 91.52
   },
   {
    "text": "caméra",
-   "start": 88.551,
-   "end": 88.901
+   "start": 91.52,
+   "end": 91.92
   },
   {
    "text": "passe",
-   "start": 88.901,
-   "end": 89.139
+   "start": 91.92,
+   "end": 92.16
   },
   {
    "text": "par",
-   "start": 89.139,
-   "end": 89.264
+   "start": 92.16,
+   "end": 92.38
   },
   {
    "text": "la",
-   "start": 89.264,
-   "end": 89.364
+   "start": 92.38,
+   "end": 92.58
   },
   {
    "text": "bouche",
-   "start": 89.364,
-   "end": 89.626
+   "start": 92.58,
+   "end": 92.86
   },
   {
    "text": "jusqu'au",
-   "start": 89.626,
-   "end": 89.864
+   "start": 92.86,
+   "end": 93.3
   },
   {
    "text": "cholédoque,",
-   "start": 89.864,
-   "end": 90.464
+   "start": 93.3,
+   "end": 93.8
   },
   {
    "text": "pour",
-   "start": 90.714,
-   "end": 90.851
+   "start": 93.8,
+   "end": 94.04
   },
   {
    "text": "faire",
-   "start": 90.851,
-   "end": 91.014
+   "start": 94.04,
+   "end": 94.24
   },
   {
    "text": "une",
-   "start": 91.014,
-   "end": 91.101
+   "start": 94.24,
+   "end": 94.46
   },
   {
    "text": "biopsie,",
-   "start": 91.101,
-   "end": 91.639
+   "start": 94.46,
+   "end": 95.06
   },
   {
    "text": "un",
-   "start": 91.901,
-   "end": 91.989
+   "start": 95.22,
+   "end": 95.38
   },
   {
    "text": "petit",
-   "start": 91.989,
-   "end": 92.251
+   "start": 95.38,
+   "end": 95.58
   },
   {
    "text": "prélèvement.",
-   "start": 92.251,
-   "end": 92.826
+   "start": 95.58,
+   "end": 96.046
   },
   {
    "text": "Pour",
-   "start": 93.78,
-   "end": 93.993
+   "start": 96.855,
+   "end": 96.98
   },
   {
    "text": "le",
-   "start": 93.993,
-   "end": 94.068
+   "start": 96.98,
+   "end": 97.22
   },
   {
-   "text": "soigner :",
-   "start": 94.068,
-   "end": 94.517
+   "text": "soigner :",
+   "start": 97.22,
+   "end": 97.6
   },
   {
    "text": "la",
-   "start": 94.918,
-   "end": 94.98
+   "start": 97.9,
+   "end": 98.1
   },
   {
    "text": "chirurgie",
-   "start": 94.98,
-   "end": 95.443
+   "start": 98.1,
+   "end": 98.56
   },
   {
    "text": "quand",
-   "start": 95.443,
-   "end": 95.568
+   "start": 98.56,
+   "end": 98.7
   },
   {
    "text": "c'est",
-   "start": 95.568,
-   "end": 95.693
+   "start": 98.7,
+   "end": 98.96
   },
   {
    "text": "possible,",
-   "start": 95.693,
-   "end": 96.243
+   "start": 98.96,
+   "end": 99.3
   },
   {
    "text": "qui",
-   "start": 96.48,
-   "end": 96.593
+   "start": 99.56,
+   "end": 99.66
   },
   {
    "text": "retire",
-   "start": 96.593,
-   "end": 96.892
+   "start": 99.66,
+   "end": 99.92
   },
   {
    "text": "la",
-   "start": 96.892,
-   "end": 96.968
+   "start": 99.92,
+   "end": 100.12
   },
   {
    "text": "tumeur",
-   "start": 96.968,
-   "end": 97.355
+   "start": 100.12,
+   "end": 100.5
   },
   {
    "text": "avec",
-   "start": 97.355,
-   "end": 97.568
+   "start": 100.5,
+   "end": 100.7
   },
   {
    "text": "une",
-   "start": 97.568,
-   "end": 97.655
+   "start": 100.7,
+   "end": 100.9
   },
   {
    "text": "partie",
-   "start": 97.655,
-   "end": 97.918
+   "start": 100.9,
+   "end": 101.16
   },
   {
    "text": "du",
-   "start": 97.918,
-   "end": 98.017
+   "start": 101.16,
+   "end": 101.44
   },
   {
    "text": "foie",
-   "start": 98.017,
-   "end": 98.343
+   "start": 101.44,
+   "end": 101.62
   },
   {
    "text": "ou",
-   "start": 98.343,
-   "end": 98.43
+   "start": 101.62,
+   "end": 101.8
   },
   {
    "text": "la",
-   "start": 98.43,
-   "end": 98.517
+   "start": 101.8,
+   "end": 101.96
   },
   {
    "text": "vésicule.",
-   "start": 98.517,
-   "end": 99.218
+   "start": 101.96,
+   "end": 102.8
   },
   {
    "text": "Sinon,",
-   "start": 99.555,
-   "end": 100.093
+   "start": 103.04,
+   "end": 103.4
   },
   {
    "text": "la",
-   "start": 100.43,
-   "end": 100.517
+   "start": 103.54,
+   "end": 103.7
   },
   {
    "text": "chimiothérapie,",
-   "start": 100.517,
-   "end": 101.38
+   "start": 103.7,
+   "end": 104.54
   },
   {
    "text": "parfois",
-   "start": 101.693,
-   "end": 102.005
+   "start": 104.7,
+   "end": 105.02
   },
   {
    "text": "la",
-   "start": 102.005,
-   "end": 102.093
+   "start": 105.02,
+   "end": 105.28
   },
   {
    "text": "radiothérapie.",
-   "start": 102.093,
-   "end": 102.93
+   "start": 105.28,
+   "end": 106.06
   },
   {
    "text": "Et",
-   "start": 103.267,
-   "end": 103.405
+   "start": 106.38,
+   "end": 106.56
   },
   {
    "text": "si",
-   "start": 103.405,
-   "end": 103.53
+   "start": 106.56,
+   "end": 106.72
   },
   {
    "text": "la",
-   "start": 103.53,
-   "end": 103.618
+   "start": 106.72,
+   "end": 106.9
   },
   {
    "text": "bile",
-   "start": 103.618,
-   "end": 103.805
+   "start": 106.9,
+   "end": 106.98
   },
   {
    "text": "est",
-   "start": 103.805,
-   "end": 103.843
+   "start": 106.98,
+   "end": 107.18
   },
   {
    "text": "bloquée,",
-   "start": 103.843,
-   "end": 104.343
+   "start": 107.18,
+   "end": 107.62
   },
   {
    "text": "on",
-   "start": 104.63,
-   "end": 104.668
+   "start": 107.76,
+   "end": 107.92
   },
   {
    "text": "pose",
-   "start": 104.668,
-   "end": 104.88
+   "start": 107.92,
+   "end": 108.06
   },
   {
    "text": "une",
-   "start": 104.88,
-   "end": 104.968
+   "start": 108.06,
+   "end": 108.34
   },
   {
    "text": "prothèse,",
-   "start": 104.968,
-   "end": 105.53
+   "start": 108.34,
+   "end": 108.8
   },
   {
    "text": "un",
-   "start": 105.767,
-   "end": 105.83
+   "start": 108.98,
+   "end": 109.14
   },
   {
    "text": "petit",
-   "start": 105.83,
-   "end": 106.105
+   "start": 109.14,
+   "end": 109.42
   },
   {
    "text": "tube",
-   "start": 106.105,
-   "end": 106.368
+   "start": 109.42,
+   "end": 109.56
   },
   {
    "text": "qui",
-   "start": 106.368,
-   "end": 106.48
+   "start": 109.56,
+   "end": 109.78
   },
   {
    "text": "la",
-   "start": 106.48,
-   "end": 106.568
+   "start": 109.78,
+   "end": 109.88
   },
   {
    "text": "laisse",
-   "start": 106.568,
-   "end": 106.793
+   "start": 109.88,
+   "end": 110.06
   },
   {
-   "text": "passer :",
-   "start": 106.793,
-   "end": 107.205
+   "text": "passer :",
+   "start": 110.06,
+   "end": 110.42
   },
   {
    "text": "la",
-   "start": 107.555,
-   "end": 107.605
+   "start": 110.72,
+   "end": 110.9
   },
   {
    "text": "jaunisse",
-   "start": 107.605,
-   "end": 107.98
+   "start": 110.9,
+   "end": 111.24
   },
   {
    "text": "disparaît.",
-   "start": 107.98,
-   "end": 108.58
+   "start": 111.24,
+   "end": 111.735
   },
   {
    "text": "Alors,",
-   "start": 109.594,
-   "end": 109.925
+   "start": 112.539,
+   "end": 112.96
   },
   {
    "text": "va",
-   "start": 110.121,
-   "end": 110.195
+   "start": 113.14,
+   "end": 113.28
   },
   {
    "text": "lui",
-   "start": 110.195,
-   "end": 110.305
+   "start": 113.28,
+   "end": 113.46
   },
   {
    "text": "en",
-   "start": 110.305,
-   "end": 110.354
+   "start": 113.46,
+   "end": 113.64
   },
   {
-   "text": "parler :",
-   "start": 110.354,
-   "end": 110.795
+   "text": "parler :",
+   "start": 113.64,
+   "end": 114.0
   },
   {
    "text": "des",
-   "start": 111.126,
-   "end": 111.236
+   "start": 114.34,
+   "end": 114.5
   },
   {
    "text": "yeux",
-   "start": 111.236,
-   "end": 111.383
+   "start": 114.5,
+   "end": 114.72
   },
   {
    "text": "jaunes,",
-   "start": 111.383,
-   "end": 111.739
+   "start": 114.72,
+   "end": 115.1
   },
   {
    "text": "des",
-   "start": 111.996,
-   "end": 112.082
+   "start": 115.28,
+   "end": 115.4
   },
   {
    "text": "urines",
-   "start": 112.082,
-   "end": 112.388
+   "start": 115.4,
+   "end": 115.66
   },
   {
    "text": "foncées",
-   "start": 112.388,
-   "end": 112.805
+   "start": 115.66,
+   "end": 116.18
   },
   {
    "text": "ou",
-   "start": 112.805,
-   "end": 112.878
+   "start": 116.18,
+   "end": 116.3
   },
   {
    "text": "une",
-   "start": 112.878,
-   "end": 112.989
+   "start": 116.3,
+   "end": 116.48
   },
   {
    "text": "peau",
-   "start": 112.989,
-   "end": 113.111
+   "start": 116.48,
+   "end": 116.66
   },
   {
    "text": "qui",
-   "start": 113.111,
-   "end": 113.234
+   "start": 116.66,
+   "end": 116.9
   },
   {
    "text": "gratte",
-   "start": 113.234,
-   "end": 113.479
+   "start": 116.9,
+   "end": 117.12
   },
   {
    "text": "sans",
-   "start": 113.479,
-   "end": 113.589
+   "start": 117.12,
+   "end": 117.32
   },
   {
    "text": "raison,",
-   "start": 113.589,
-   "end": 113.957
+   "start": 117.32,
+   "end": 117.62
   },
   {
    "text": "on",
-   "start": 114.141,
-   "end": 114.165
+   "start": 118.0,
+   "end": 118.16
   },
   {
    "text": "consulte",
-   "start": 114.165,
-   "end": 114.631
+   "start": 118.16,
+   "end": 118.6
   },
   {
-   "text": "vite !",
-   "start": 114.631,
-   "end": 115.047
+   "text": "vite !",
+   "start": 118.6,
+   "end": 118.88
   }
  ]
 }
