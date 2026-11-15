@@ -1,1798 +1,1798 @@
 {
- "voice": "voix.wav (tts_voix.py)",
- "duration": 115.904,
+ "voice": "pad-cancer-anus.wav",
+ "duration": 118.179,
  "sections": [
   {
    "id": "intro",
-   "start": 0.05,
-   "end": 13.45
+   "start": 0.0,
+   "end": 13.79
   },
   {
    "id": "anus",
-   "start": 14.426,
-   "end": 30.764
+   "start": 14.826,
+   "end": 30.947
   },
   {
    "id": "cancer",
-   "start": 31.763,
-   "end": 42.576
+   "start": 31.859,
+   "end": 42.609
   },
   {
    "id": "hpv",
-   "start": 43.532,
-   "end": 56.669
+   "start": 43.584,
+   "end": 56.682
   },
   {
    "id": "signes",
-   "start": 57.63,
-   "end": 67.805
+   "start": 57.556,
+   "end": 68.06
   },
   {
    "id": "risques",
-   "start": 68.764,
-   "end": 79.752
+   "start": 68.943,
+   "end": 80.882
   },
   {
    "id": "examens",
-   "start": 80.74,
-   "end": 91.915
+   "start": 81.727,
+   "end": 93.983
   },
   {
    "id": "traitement",
-   "start": 92.88,
-   "end": 104.781
+   "start": 94.806,
+   "end": 106.736
   },
   {
    "id": "fin",
-   "start": 105.766,
-   "end": 115.558
+   "start": 107.655,
+   "end": 117.94
   }
  ],
  "words": [
   {
    "text": "Depuis",
-   "start": 0.05,
-   "end": 0.374
+   "start": 0.0,
+   "end": 0.36
   },
   {
    "text": "des",
-   "start": 0.374,
-   "end": 0.482
+   "start": 0.36,
+   "end": 0.72
   },
   {
    "text": "semaines,",
-   "start": 0.482,
-   "end": 0.939
+   "start": 0.72,
+   "end": 1.12
   },
   {
    "text": "ta",
-   "start": 1.227,
-   "end": 1.324
+   "start": 1.42,
+   "end": 1.58
   },
   {
    "text": "mère",
-   "start": 1.324,
-   "end": 1.528
+   "start": 1.58,
+   "end": 1.72
   },
   {
    "text": "voit",
-   "start": 1.528,
-   "end": 1.672
+   "start": 1.72,
+   "end": 1.88
   },
   {
    "text": "un",
-   "start": 1.672,
-   "end": 1.708
+   "start": 1.88,
+   "end": 2.0
   },
   {
    "text": "peu",
-   "start": 1.708,
-   "end": 1.84
+   "start": 2.0,
+   "end": 2.14
   },
   {
    "text": "de",
-   "start": 1.84,
-   "end": 1.961
+   "start": 2.14,
+   "end": 2.3
   },
   {
    "text": "sang",
-   "start": 1.961,
-   "end": 2.153
+   "start": 2.3,
+   "end": 2.36
   },
   {
    "text": "sur",
-   "start": 2.153,
-   "end": 2.297
+   "start": 2.36,
+   "end": 2.56
   },
   {
    "text": "le",
-   "start": 2.297,
-   "end": 2.369
+   "start": 2.56,
+   "end": 2.7
   },
   {
    "text": "papier",
-   "start": 2.369,
-   "end": 2.622
+   "start": 2.7,
+   "end": 2.92
   },
   {
    "text": "toilette.",
-   "start": 2.622,
-   "end": 3.187
+   "start": 2.92,
+   "end": 3.36
   },
   {
    "text": "Ça",
-   "start": 3.51,
-   "end": 3.69
+   "start": 3.64,
+   "end": 3.86
   },
   {
    "text": "gratte,",
-   "start": 3.69,
-   "end": 4.135
+   "start": 3.86,
+   "end": 4.36
   },
   {
    "text": "ça",
-   "start": 4.351,
-   "end": 4.483
+   "start": 4.42,
+   "end": 4.6
   },
   {
    "text": "fait",
-   "start": 4.483,
-   "end": 4.615
+   "start": 4.6,
+   "end": 4.82
   },
   {
    "text": "mal…",
-   "start": 4.615,
-   "end": 5.012
+   "start": 4.82,
+   "end": 5.16
   },
   {
    "text": "Elle",
-   "start": 5.351,
-   "end": 5.543
+   "start": 5.56,
+   "end": 5.72
   },
   {
    "text": "se",
-   "start": 5.543,
-   "end": 5.687
+   "start": 5.72,
+   "end": 5.98
   },
   {
-   "text": "dit :",
-   "start": 5.687,
-   "end": 5.963
+   "text": "dit :",
+   "start": 5.98,
+   "end": 6.22
   },
   {
    "text": "ce",
-   "start": 6.228,
-   "end": 6.348
+   "start": 6.44,
+   "end": 6.58
   },
   {
    "text": "sont",
-   "start": 6.348,
-   "end": 6.48
+   "start": 6.58,
+   "end": 6.74
   },
   {
    "text": "des",
-   "start": 6.48,
-   "end": 6.588
+   "start": 6.74,
+   "end": 6.92
   },
   {
    "text": "hémorroïdes.",
-   "start": 6.588,
-   "end": 7.322
+   "start": 6.92,
+   "end": 7.48
   },
   {
    "text": "Et",
-   "start": 7.658,
-   "end": 7.79
+   "start": 7.72,
+   "end": 7.92
   },
   {
    "text": "surtout,",
-   "start": 7.79,
-   "end": 8.271
+   "start": 7.92,
+   "end": 8.24
   },
   {
    "text": "elle",
-   "start": 8.523,
-   "end": 8.595
+   "start": 8.46,
+   "end": 8.62
   },
   {
    "text": "n'ose",
-   "start": 8.595,
-   "end": 8.775
+   "start": 8.62,
+   "end": 8.78
   },
   {
    "text": "pas",
-   "start": 8.775,
-   "end": 8.872
+   "start": 8.78,
+   "end": 8.94
   },
   {
    "text": "en",
-   "start": 8.872,
-   "end": 8.968
+   "start": 8.94,
+   "end": 9.16
   },
   {
-   "text": "parler :",
-   "start": 8.968,
-   "end": 9.328
+   "text": "parler :",
+   "start": 9.16,
+   "end": 9.44
   },
   {
    "text": "c'est",
-   "start": 9.629,
-   "end": 9.749
+   "start": 9.7,
+   "end": 9.96
   },
   {
    "text": "gênant.",
-   "start": 9.749,
-   "end": 10.146
+   "start": 9.96,
+   "end": 10.7
   },
   {
    "text": "Pourtant,",
-   "start": 10.505,
-   "end": 10.925
+   "start": 10.92,
+   "end": 11.36
   },
   {
    "text": "un",
-   "start": 11.238,
-   "end": 11.346
+   "start": 11.64,
+   "end": 11.7
   },
   {
    "text": "saignement",
-   "start": 11.346,
-   "end": 11.659
+   "start": 11.7,
+   "end": 12.0
   },
   {
    "text": "qui",
-   "start": 11.659,
-   "end": 11.815
+   "start": 12.0,
+   "end": 12.28
   },
   {
    "text": "dure,",
-   "start": 11.815,
-   "end": 12.151
+   "start": 12.28,
+   "end": 12.56
   },
   {
    "text": "ça",
-   "start": 12.428,
-   "end": 12.524
+   "start": 12.68,
+   "end": 12.86
   },
   {
    "text": "se",
-   "start": 12.524,
-   "end": 12.656
+   "start": 12.86,
+   "end": 13.1
   },
   {
    "text": "montre",
-   "start": 12.656,
-   "end": 12.921
+   "start": 13.1,
+   "end": 13.32
   },
   {
    "text": "à",
-   "start": 12.921,
-   "end": 12.945
+   "start": 13.32,
+   "end": 13.44
   },
   {
    "text": "un",
-   "start": 12.945,
-   "end": 12.981
+   "start": 13.44,
+   "end": 13.58
   },
   {
    "text": "médecin.",
-   "start": 12.981,
-   "end": 13.45
+   "start": 13.58,
+   "end": 13.79
   },
   {
    "text": "L'anus,",
-   "start": 14.426,
-   "end": 15.014
+   "start": 14.826,
+   "end": 15.36
   },
   {
    "text": "c'est",
-   "start": 15.239,
-   "end": 15.376
+   "start": 15.44,
+   "end": 15.7
   },
   {
    "text": "la",
-   "start": 15.376,
-   "end": 15.476
+   "start": 15.7,
+   "end": 15.92
   },
   {
    "text": "toute",
-   "start": 15.476,
-   "end": 15.664
+   "start": 15.92,
+   "end": 16.14
   },
   {
    "text": "fin",
-   "start": 15.664,
-   "end": 15.826
+   "start": 16.14,
+   "end": 16.26
   },
   {
    "text": "du",
-   "start": 15.826,
-   "end": 15.926
+   "start": 16.26,
+   "end": 16.48
   },
   {
    "text": "tube",
-   "start": 15.926,
-   "end": 16.176
+   "start": 16.48,
+   "end": 16.66
   },
   {
    "text": "digestif.",
-   "start": 16.176,
-   "end": 16.976
+   "start": 16.66,
+   "end": 17.42
   },
   {
    "text": "Au-dessus,",
-   "start": 17.314,
-   "end": 17.901
+   "start": 17.58,
+   "end": 18.0
   },
   {
    "text": "le",
-   "start": 18.239,
-   "end": 18.288
+   "start": 18.14,
+   "end": 18.34
   },
   {
    "text": "rectum",
-   "start": 18.288,
-   "end": 18.701
+   "start": 18.34,
+   "end": 18.72
   },
   {
    "text": "garde",
-   "start": 18.701,
-   "end": 18.939
+   "start": 18.72,
+   "end": 19.0
   },
   {
    "text": "les",
-   "start": 18.939,
-   "end": 19.051
+   "start": 19.0,
+   "end": 19.26
   },
   {
    "text": "selles.",
-   "start": 19.051,
-   "end": 19.501
+   "start": 19.26,
+   "end": 19.48
   },
   {
    "text": "Puis",
-   "start": 19.838,
-   "end": 20.026
+   "start": 19.86,
+   "end": 20.02
   },
   {
    "text": "le",
-   "start": 20.026,
-   "end": 20.101
+   "start": 20.02,
+   "end": 20.2
   },
   {
    "text": "canal",
-   "start": 20.101,
-   "end": 20.389
+   "start": 20.2,
+   "end": 20.48
   },
   {
    "text": "anal,",
-   "start": 20.389,
-   "end": 20.801
+   "start": 20.48,
+   "end": 20.82
   },
   {
    "text": "long",
-   "start": 21.088,
-   "end": 21.189
+   "start": 21.08,
+   "end": 21.16
   },
   {
    "text": "de",
-   "start": 21.189,
-   "end": 21.288
+   "start": 21.16,
+   "end": 21.4
   },
   {
    "text": "trois",
-   "start": 21.288,
-   "end": 21.489
+   "start": 21.4,
+   "end": 21.64
   },
   {
    "text": "à",
-   "start": 21.489,
-   "end": 21.514
+   "start": 21.64,
+   "end": 21.76
   },
   {
    "text": "quatre",
-   "start": 21.514,
-   "end": 21.826
+   "start": 21.76,
+   "end": 22.2
   },
   {
    "text": "centimètres,",
-   "start": 21.826,
-   "end": 22.439
+   "start": 22.2,
+   "end": 22.66
   },
   {
    "text": "les",
-   "start": 22.689,
-   "end": 22.751
+   "start": 22.84,
+   "end": 23.06
   },
   {
    "text": "conduit",
-   "start": 22.751,
-   "end": 23.051
+   "start": 23.06,
+   "end": 23.3
   },
   {
    "text": "vers",
-   "start": 23.051,
-   "end": 23.189
+   "start": 23.3,
+   "end": 23.46
   },
   {
    "text": "l'extérieur.",
-   "start": 23.189,
-   "end": 23.876
+   "start": 23.46,
+   "end": 24.08
   },
   {
    "text": "Autour,",
-   "start": 24.213,
-   "end": 24.764
+   "start": 24.66,
+   "end": 25.08
   },
   {
    "text": "deux",
-   "start": 25.126,
-   "end": 25.239
+   "start": 25.34,
+   "end": 25.44
   },
   {
    "text": "muscles",
-   "start": 25.239,
-   "end": 25.526
+   "start": 25.44,
+   "end": 25.7
   },
   {
    "text": "en",
-   "start": 25.526,
-   "end": 25.576
+   "start": 25.7,
+   "end": 25.94
   },
   {
    "text": "anneau,",
-   "start": 25.576,
-   "end": 25.963
+   "start": 25.94,
+   "end": 26.2
   },
   {
    "text": "les",
-   "start": 26.239,
-   "end": 26.314
+   "start": 26.3,
+   "end": 26.5
   },
   {
    "text": "sphincters,",
-   "start": 26.314,
-   "end": 26.926
+   "start": 26.5,
+   "end": 27.04
   },
   {
    "text": "le",
-   "start": 27.288,
-   "end": 27.338
+   "start": 27.22,
+   "end": 27.36
   },
   {
    "text": "gardent",
-   "start": 27.338,
-   "end": 27.614
+   "start": 27.36,
+   "end": 27.72
   },
   {
-   "text": "fermé :",
-   "start": 27.614,
-   "end": 28.051
+   "text": "fermé :",
+   "start": 27.72,
+   "end": 28.26
   },
   {
    "text": "l'un",
-   "start": 28.451,
-   "end": 28.576
+   "start": 28.26,
+   "end": 28.68
   },
   {
    "text": "sans",
-   "start": 28.576,
-   "end": 28.701
+   "start": 28.68,
+   "end": 28.88
   },
   {
    "text": "qu'on",
-   "start": 28.701,
-   "end": 28.826
+   "start": 28.88,
+   "end": 29.1
   },
   {
    "text": "y",
-   "start": 28.826,
-   "end": 28.926
+   "start": 29.1,
+   "end": 29.22
   },
   {
    "text": "pense,",
-   "start": 28.926,
-   "end": 29.351
+   "start": 29.22,
+   "end": 29.56
   },
   {
    "text": "l'autre",
-   "start": 29.576,
-   "end": 29.851
+   "start": 29.72,
+   "end": 30.1
   },
   {
    "text": "quand",
-   "start": 29.851,
-   "end": 29.963
+   "start": 30.1,
+   "end": 30.34
   },
   {
    "text": "on",
-   "start": 29.963,
-   "end": 30.076
+   "start": 30.34,
+   "end": 30.46
   },
   {
    "text": "le",
-   "start": 30.076,
-   "end": 30.176
+   "start": 30.46,
+   "end": 30.68
   },
   {
    "text": "décide.",
-   "start": 30.176,
-   "end": 30.764
+   "start": 30.68,
+   "end": 30.947
   },
   {
    "text": "Le",
-   "start": 31.763,
-   "end": 31.888
+   "start": 31.859,
+   "end": 32.06
   },
   {
    "text": "cancer",
-   "start": 31.888,
-   "end": 32.213
+   "start": 32.06,
+   "end": 32.32
   },
   {
    "text": "de",
-   "start": 32.213,
-   "end": 32.301
+   "start": 32.32,
+   "end": 32.5
   },
   {
    "text": "l'anus,",
-   "start": 32.301,
-   "end": 32.813
+   "start": 32.5,
+   "end": 32.92
   },
   {
    "text": "ce",
-   "start": 33.076,
-   "end": 33.226
+   "start": 33.18,
+   "end": 33.18
   },
   {
    "text": "sont",
-   "start": 33.226,
-   "end": 33.338
+   "start": 33.18,
+   "end": 33.32
   },
   {
    "text": "des",
-   "start": 33.338,
-   "end": 33.438
+   "start": 33.32,
+   "end": 33.56
   },
   {
    "text": "cellules",
-   "start": 33.438,
-   "end": 33.751
+   "start": 33.56,
+   "end": 33.78
   },
   {
    "text": "de",
-   "start": 33.751,
-   "end": 33.826
+   "start": 33.78,
+   "end": 33.94
   },
   {
    "text": "la",
-   "start": 33.826,
-   "end": 33.926
+   "start": 33.94,
+   "end": 34.18
   },
   {
    "text": "paroi",
-   "start": 33.926,
-   "end": 34.201
+   "start": 34.18,
+   "end": 34.38
   },
   {
    "text": "du",
-   "start": 34.201,
-   "end": 34.301
+   "start": 34.38,
+   "end": 34.54
   },
   {
    "text": "canal",
-   "start": 34.301,
-   "end": 34.588
+   "start": 34.54,
+   "end": 34.86
   },
   {
    "text": "anal",
-   "start": 34.588,
-   "end": 34.963
+   "start": 34.86,
+   "end": 35.1
   },
   {
    "text": "qui",
-   "start": 34.963,
-   "end": 35.101
+   "start": 35.1,
+   "end": 35.34
   },
   {
    "text": "se",
-   "start": 35.101,
-   "end": 35.226
+   "start": 35.34,
+   "end": 35.58
   },
   {
    "text": "multiplient",
-   "start": 35.226,
-   "end": 35.713
+   "start": 35.58,
+   "end": 36.08
   },
   {
    "text": "sans",
-   "start": 35.713,
-   "end": 35.864
+   "start": 36.08,
+   "end": 36.32
   },
   {
    "text": "contrôle.",
-   "start": 35.864,
-   "end": 36.489
+   "start": 36.32,
+   "end": 36.74
   },
   {
    "text": "Elles",
-   "start": 36.826,
-   "end": 37.038
+   "start": 37.14,
+   "end": 37.38
   },
   {
    "text": "forment",
-   "start": 37.038,
-   "end": 37.288
+   "start": 37.38,
+   "end": 37.56
   },
   {
    "text": "une",
-   "start": 37.288,
-   "end": 37.389
+   "start": 37.56,
+   "end": 37.82
   },
   {
    "text": "tumeur.",
-   "start": 37.389,
-   "end": 37.938
+   "start": 37.82,
+   "end": 38.32
   },
   {
    "text": "C'est",
-   "start": 38.288,
-   "end": 38.451
+   "start": 38.7,
+   "end": 38.86
   },
   {
    "text": "un",
-   "start": 38.451,
-   "end": 38.601
+   "start": 38.86,
+   "end": 38.96
   },
   {
    "text": "cancer",
-   "start": 38.601,
-   "end": 39.001
+   "start": 38.96,
+   "end": 39.26
   },
   {
    "text": "rare,",
-   "start": 39.001,
-   "end": 39.364
+   "start": 39.26,
+   "end": 39.68
   },
   {
    "text": "mais",
-   "start": 39.701,
-   "end": 39.764
+   "start": 39.86,
+   "end": 39.98
   },
   {
    "text": "de",
-   "start": 39.764,
-   "end": 39.851
+   "start": 39.98,
+   "end": 40.22
   },
   {
    "text": "plus",
-   "start": 39.851,
-   "end": 40.001
+   "start": 40.22,
+   "end": 40.32
   },
   {
    "text": "en",
-   "start": 40.001,
-   "end": 40.126
+   "start": 40.32,
+   "end": 40.46
   },
   {
    "text": "plus",
-   "start": 40.126,
-   "end": 40.264
+   "start": 40.46,
+   "end": 40.62
   },
   {
    "text": "fréquent,",
-   "start": 40.264,
-   "end": 40.713
+   "start": 40.62,
+   "end": 41.04
   },
   {
    "text": "surtout",
-   "start": 41.014,
-   "end": 41.288
+   "start": 41.24,
+   "end": 41.46
   },
   {
    "text": "chez",
-   "start": 41.288,
-   "end": 41.401
+   "start": 41.46,
+   "end": 41.66
   },
   {
    "text": "les",
-   "start": 41.401,
-   "end": 41.501
+   "start": 41.66,
+   "end": 41.82
   },
   {
    "text": "femmes",
-   "start": 41.501,
-   "end": 41.713
+   "start": 41.82,
+   "end": 41.94
   },
   {
    "text": "après",
-   "start": 41.713,
-   "end": 41.938
+   "start": 41.94,
+   "end": 42.2
   },
   {
    "text": "cinquante",
-   "start": 41.938,
-   "end": 42.376
+   "start": 42.2,
+   "end": 42.46
   },
   {
    "text": "ans.",
-   "start": 42.376,
-   "end": 42.576
+   "start": 42.46,
+   "end": 42.609
   },
   {
    "text": "Sa",
-   "start": 43.532,
-   "end": 43.732
+   "start": 43.584,
+   "end": 43.8
   },
   {
    "text": "cause",
-   "start": 43.732,
-   "end": 43.969
+   "start": 43.8,
+   "end": 44.0
   },
   {
-   "text": "principale :",
-   "start": 43.969,
-   "end": 44.582
+   "text": "principale :",
+   "start": 44.0,
+   "end": 44.62
   },
   {
    "text": "un",
-   "start": 44.969,
-   "end": 45.032
+   "start": 44.78,
+   "end": 44.96
   },
   {
    "text": "virus,",
-   "start": 45.032,
-   "end": 45.607
+   "start": 44.96,
+   "end": 45.4
   },
   {
    "text": "le",
-   "start": 45.844,
-   "end": 45.907
+   "start": 45.64,
+   "end": 45.82
   },
   {
    "text": "papillomavirus.",
-   "start": 45.907,
-   "end": 46.932
+   "start": 45.82,
+   "end": 46.58
   },
   {
    "text": "Il",
-   "start": 47.27,
-   "end": 47.444
+   "start": 47.28,
+   "end": 47.4
   },
   {
    "text": "se",
-   "start": 47.444,
-   "end": 47.532
+   "start": 47.4,
+   "end": 47.68
   },
   {
    "text": "transmet",
-   "start": 47.532,
-   "end": 47.957
+   "start": 47.68,
+   "end": 47.92
   },
   {
    "text": "lors",
-   "start": 47.957,
-   "end": 48.094
+   "start": 47.92,
+   "end": 48.08
   },
   {
    "text": "des",
-   "start": 48.107,
-   "end": 48.182
+   "start": 48.08,
+   "end": 48.24
   },
   {
    "text": "relations",
-   "start": 48.182,
-   "end": 48.544
+   "start": 48.24,
+   "end": 48.6
   },
   {
    "text": "intimes,",
-   "start": 48.544,
-   "end": 48.957
+   "start": 48.6,
+   "end": 49.1
   },
   {
    "text": "il",
-   "start": 49.282,
-   "end": 49.344
+   "start": 49.22,
+   "end": 49.36
   },
   {
    "text": "est",
-   "start": 49.344,
-   "end": 49.382
+   "start": 49.36,
+   "end": 49.5
   },
   {
    "text": "très",
-   "start": 49.382,
-   "end": 49.557
+   "start": 49.5,
+   "end": 49.78
   },
   {
    "text": "fréquent,",
-   "start": 49.557,
-   "end": 50.02
+   "start": 49.78,
+   "end": 50.2
   },
   {
    "text": "et",
-   "start": 50.357,
-   "end": 50.382
+   "start": 50.44,
+   "end": 50.58
   },
   {
    "text": "le",
-   "start": 50.382,
-   "end": 50.457
+   "start": 50.58,
+   "end": 50.72
   },
   {
    "text": "plus",
-   "start": 50.457,
-   "end": 50.607
+   "start": 50.72,
+   "end": 50.84
   },
   {
    "text": "souvent,",
-   "start": 50.607,
-   "end": 51.007
+   "start": 50.84,
+   "end": 51.18
   },
   {
    "text": "le",
-   "start": 51.194,
-   "end": 51.257
+   "start": 51.34,
+   "end": 51.46
   },
   {
    "text": "corps",
-   "start": 51.257,
-   "end": 51.469
+   "start": 51.46,
+   "end": 51.58
   },
   {
    "text": "l'élimine",
-   "start": 51.469,
-   "end": 51.87
+   "start": 51.58,
+   "end": 52.06
   },
   {
    "text": "tout",
-   "start": 51.87,
-   "end": 52.007
+   "start": 52.06,
+   "end": 52.32
   },
   {
    "text": "seul.",
-   "start": 52.007,
-   "end": 52.457
+   "start": 52.32,
+   "end": 52.54
   },
   {
    "text": "Mais",
-   "start": 52.807,
-   "end": 52.919
+   "start": 52.88,
+   "end": 53.06
   },
   {
    "text": "parfois,",
-   "start": 52.919,
-   "end": 53.444
+   "start": 53.06,
+   "end": 53.5
   },
   {
    "text": "il",
-   "start": 53.757,
-   "end": 53.882
+   "start": 53.68,
+   "end": 53.88
   },
   {
    "text": "reste…",
-   "start": 53.882,
-   "end": 54.282
+   "start": 53.88,
+   "end": 54.28
   },
   {
    "text": "et",
-   "start": 54.607,
-   "end": 54.632
+   "start": 54.6,
+   "end": 54.8
   },
   {
    "text": "pendant",
-   "start": 54.632,
-   "end": 54.882
+   "start": 54.8,
+   "end": 55.0
   },
   {
    "text": "des",
-   "start": 54.882,
-   "end": 54.982
+   "start": 55.0,
+   "end": 55.3
   },
   {
    "text": "années,",
-   "start": 54.982,
-   "end": 55.37
+   "start": 55.3,
+   "end": 55.54
   },
   {
    "text": "il",
-   "start": 55.657,
-   "end": 55.782
+   "start": 55.7,
+   "end": 55.94
   },
   {
    "text": "abîme",
-   "start": 55.782,
-   "end": 56.032
+   "start": 55.94,
+   "end": 56.14
   },
   {
    "text": "les",
-   "start": 56.032,
-   "end": 56.12
+   "start": 56.14,
+   "end": 56.36
   },
   {
    "text": "cellules.",
-   "start": 56.12,
-   "end": 56.669
+   "start": 56.36,
+   "end": 56.682
   },
   {
    "text": "Les",
-   "start": 57.63,
-   "end": 57.78
+   "start": 57.556,
+   "end": 57.76
   },
   {
    "text": "signes",
-   "start": 57.78,
-   "end": 58.081
+   "start": 57.76,
+   "end": 58.06
   },
   {
    "text": "ressemblent",
-   "start": 58.081,
-   "end": 58.443
+   "start": 58.06,
+   "end": 58.44
   },
   {
    "text": "à",
-   "start": 58.443,
-   "end": 58.493
+   "start": 58.44,
+   "end": 58.52
   },
   {
    "text": "ceux",
-   "start": 58.493,
-   "end": 58.63
+   "start": 58.52,
+   "end": 58.66
   },
   {
    "text": "des",
-   "start": 58.63,
-   "end": 58.73
+   "start": 58.66,
+   "end": 58.82
   },
   {
-   "text": "hémorroïdes :",
-   "start": 58.73,
-   "end": 59.38
+   "text": "hémorroïdes :",
+   "start": 58.82,
+   "end": 59.5
   },
   {
    "text": "du",
-   "start": 59.618,
-   "end": 59.693
+   "start": 59.72,
+   "end": 59.84
   },
   {
    "text": "sang",
-   "start": 59.693,
-   "end": 59.831
+   "start": 59.84,
+   "end": 60.04
   },
   {
    "text": "sur",
-   "start": 59.831,
-   "end": 59.98
+   "start": 60.04,
+   "end": 60.24
   },
   {
    "text": "le",
-   "start": 59.98,
-   "end": 60.068
+   "start": 60.24,
+   "end": 60.42
   },
   {
    "text": "papier",
-   "start": 60.068,
-   "end": 60.48
+   "start": 60.42,
+   "end": 60.72
   },
   {
    "text": "ou",
-   "start": 60.48,
-   "end": 60.505
+   "start": 60.72,
+   "end": 60.88
   },
   {
    "text": "dans",
-   "start": 60.505,
-   "end": 60.63
+   "start": 60.88,
+   "end": 61.02
   },
   {
    "text": "les",
-   "start": 60.63,
-   "end": 60.73
+   "start": 61.02,
+   "end": 61.28
   },
   {
    "text": "selles,",
-   "start": 60.73,
-   "end": 61.093
+   "start": 61.28,
+   "end": 61.5
   },
   {
    "text": "une",
-   "start": 61.48,
-   "end": 61.568
+   "start": 61.84,
+   "end": 62.0
   },
   {
    "text": "douleur,",
-   "start": 61.568,
-   "end": 62.005
+   "start": 62.0,
+   "end": 62.5
   },
   {
    "text": "des",
-   "start": 62.331,
-   "end": 62.405
+   "start": 62.62,
+   "end": 62.8
   },
   {
    "text": "démangeaisons,",
-   "start": 62.405,
-   "end": 63.043
+   "start": 62.8,
+   "end": 63.46
   },
   {
    "text": "une",
-   "start": 63.43,
-   "end": 63.505
+   "start": 63.8,
+   "end": 63.88
   },
   {
    "text": "petite",
-   "start": 63.505,
-   "end": 63.805
+   "start": 63.88,
+   "end": 64.2
   },
   {
    "text": "boule",
-   "start": 63.805,
-   "end": 63.993
+   "start": 64.2,
+   "end": 64.38
   },
   {
    "text": "près",
-   "start": 63.993,
-   "end": 64.156
+   "start": 64.38,
+   "end": 64.54
   },
   {
    "text": "de",
-   "start": 64.156,
-   "end": 64.23
+   "start": 64.54,
+   "end": 64.66
   },
   {
    "text": "l'anus,",
-   "start": 64.23,
-   "end": 64.706
+   "start": 64.66,
+   "end": 65.1
   },
   {
    "text": "ou",
-   "start": 64.906,
-   "end": 64.93
+   "start": 65.1,
+   "end": 65.32
   },
   {
    "text": "un",
-   "start": 64.93,
-   "end": 64.98
+   "start": 65.32,
+   "end": 65.48
   },
   {
    "text": "écoulement.",
-   "start": 64.98,
-   "end": 65.543
+   "start": 65.48,
+   "end": 65.84
   },
   {
    "text": "C'est",
-   "start": 65.88,
-   "end": 66.081
+   "start": 66.32,
+   "end": 66.42
   },
   {
    "text": "pour",
-   "start": 66.081,
-   "end": 66.255
+   "start": 66.42,
+   "end": 66.64
   },
   {
    "text": "ça",
-   "start": 66.255,
-   "end": 66.38
+   "start": 66.64,
+   "end": 66.76
   },
   {
    "text": "qu'on",
-   "start": 66.38,
-   "end": 66.518
+   "start": 66.76,
+   "end": 66.92
   },
   {
    "text": "le",
-   "start": 66.518,
-   "end": 66.593
+   "start": 66.92,
+   "end": 67.08
   },
   {
    "text": "découvre",
-   "start": 66.593,
-   "end": 67.043
+   "start": 67.08,
+   "end": 67.38
   },
   {
    "text": "parfois",
-   "start": 67.043,
-   "end": 67.368
+   "start": 67.38,
+   "end": 67.74
   },
   {
    "text": "tard.",
-   "start": 67.368,
-   "end": 67.805
+   "start": 67.74,
+   "end": 68.06
   },
   {
    "text": "Le",
-   "start": 68.764,
-   "end": 68.927
+   "start": 68.943,
+   "end": 69.14
   },
   {
    "text": "risque",
-   "start": 68.927,
-   "end": 69.152
+   "start": 69.14,
+   "end": 69.36
   },
   {
    "text": "augmente",
-   "start": 69.152,
-   "end": 69.514
+   "start": 69.36,
+   "end": 69.74
   },
   {
    "text": "avec",
-   "start": 69.514,
-   "end": 69.715
+   "start": 69.74,
+   "end": 70.04
   },
   {
    "text": "le",
-   "start": 69.715,
-   "end": 69.777
+   "start": 70.04,
+   "end": 70.22
   },
   {
    "text": "papillomavirus,",
-   "start": 69.777,
-   "end": 70.752
+   "start": 70.22,
+   "end": 70.98
   },
   {
    "text": "le",
-   "start": 71.002,
-   "end": 71.077
+   "start": 71.38,
+   "end": 71.6
   },
   {
    "text": "tabac,",
-   "start": 71.077,
-   "end": 71.489
+   "start": 71.6,
+   "end": 71.92
   },
   {
    "text": "des",
-   "start": 71.715,
-   "end": 71.79
+   "start": 72.16,
+   "end": 72.34
   },
   {
    "text": "défenses",
-   "start": 71.79,
-   "end": 72.139
+   "start": 72.34,
+   "end": 72.62
   },
   {
    "text": "immunitaires",
-   "start": 72.139,
-   "end": 72.564
+   "start": 72.62,
+   "end": 73.24
   },
   {
    "text": "affaiblies,",
-   "start": 72.564,
-   "end": 73.077
+   "start": 73.24,
+   "end": 73.84
   },
   {
    "text": "par",
-   "start": 73.34,
-   "end": 73.477
+   "start": 73.94,
+   "end": 74.1
   },
   {
    "text": "exemple",
-   "start": 73.477,
-   "end": 73.802
+   "start": 74.1,
+   "end": 74.4
   },
   {
    "text": "avec",
-   "start": 73.802,
-   "end": 73.989
+   "start": 74.4,
+   "end": 74.66
   },
   {
    "text": "le",
-   "start": 73.989,
-   "end": 74.077
+   "start": 74.66,
+   "end": 74.9
   },
   {
    "text": "VIH",
-   "start": 74.077,
-   "end": 74.665
+   "start": 74.9,
+   "end": 75.36
   },
   {
    "text": "ou",
-   "start": 74.665,
-   "end": 74.739
+   "start": 75.36,
+   "end": 75.6
   },
   {
    "text": "après",
-   "start": 74.739,
-   "end": 74.965
+   "start": 75.6,
+   "end": 75.76
   },
   {
    "text": "une",
-   "start": 74.965,
-   "end": 75.04
+   "start": 75.76,
+   "end": 76.0
   },
   {
    "text": "greffe,",
-   "start": 75.04,
-   "end": 75.452
+   "start": 76.0,
+   "end": 76.32
   },
   {
    "text": "de",
-   "start": 75.752,
-   "end": 75.827
+   "start": 76.78,
+   "end": 76.92
   },
   {
    "text": "nombreux",
-   "start": 75.827,
-   "end": 76.102
+   "start": 76.92,
+   "end": 77.14
   },
   {
    "text": "partenaires",
-   "start": 76.102,
-   "end": 76.577
+   "start": 77.14,
+   "end": 77.64
   },
   {
    "text": "sans",
-   "start": 76.577,
-   "end": 76.689
+   "start": 77.64,
+   "end": 77.86
   },
   {
    "text": "préservatif,",
-   "start": 76.689,
-   "end": 77.427
+   "start": 77.86,
+   "end": 78.58
   },
   {
    "text": "et",
-   "start": 77.84,
-   "end": 77.877
+   "start": 78.58,
+   "end": 79.04
   },
   {
    "text": "certaines",
-   "start": 77.877,
-   "end": 78.189
+   "start": 79.04,
+   "end": 79.34
   },
   {
    "text": "maladies",
-   "start": 78.189,
-   "end": 78.489
+   "start": 79.34,
+   "end": 79.76
   },
   {
    "text": "inflammatoires",
-   "start": 78.489,
-   "end": 79.052
+   "start": 79.76,
+   "end": 80.3
   },
   {
    "text": "de",
-   "start": 79.052,
-   "end": 79.139
+   "start": 80.3,
+   "end": 80.44
   },
   {
    "text": "l'intestin.",
-   "start": 79.139,
-   "end": 79.752
+   "start": 80.44,
+   "end": 80.882
   },
   {
    "text": "Pour",
-   "start": 80.74,
-   "end": 80.852
+   "start": 81.727,
+   "end": 81.86
   },
   {
    "text": "le",
-   "start": 80.852,
-   "end": 80.915
+   "start": 81.86,
+   "end": 82.08
   },
   {
-   "text": "trouver :",
-   "start": 80.915,
-   "end": 81.34
+   "text": "trouver :",
+   "start": 82.08,
+   "end": 82.4
   },
   {
    "text": "le",
-   "start": 81.715,
-   "end": 81.764
+   "start": 82.8,
+   "end": 82.9
   },
   {
    "text": "médecin",
-   "start": 81.764,
-   "end": 82.115
+   "start": 82.9,
+   "end": 83.18
   },
   {
    "text": "fait",
-   "start": 82.115,
-   "end": 82.227
+   "start": 83.18,
+   "end": 83.36
   },
   {
    "text": "un",
-   "start": 82.227,
-   "end": 82.302
+   "start": 83.36,
+   "end": 83.58
   },
   {
    "text": "toucher",
-   "start": 82.302,
-   "end": 82.577
+   "start": 83.58,
+   "end": 83.82
   },
   {
    "text": "rectal,",
-   "start": 82.577,
-   "end": 83.139
+   "start": 83.82,
+   "end": 84.36
   },
   {
    "text": "puis",
-   "start": 83.389,
-   "end": 83.49
+   "start": 84.36,
+   "end": 84.6
   },
   {
    "text": "il",
-   "start": 83.49,
-   "end": 83.615
+   "start": 84.6,
+   "end": 84.84
   },
   {
    "text": "regarde",
-   "start": 83.615,
-   "end": 83.939
+   "start": 84.84,
+   "end": 85.14
   },
   {
    "text": "le",
-   "start": 83.939,
-   "end": 84.014
+   "start": 85.14,
+   "end": 85.36
   },
   {
    "text": "canal",
-   "start": 84.014,
-   "end": 84.365
+   "start": 85.36,
+   "end": 85.62
   },
   {
    "text": "avec",
-   "start": 84.365,
-   "end": 84.59
+   "start": 85.62,
+   "end": 85.86
   },
   {
    "text": "un",
-   "start": 84.59,
-   "end": 84.652
+   "start": 85.86,
+   "end": 86.12
   },
   {
    "text": "petit",
-   "start": 84.652,
-   "end": 84.902
+   "start": 86.12,
+   "end": 86.36
   },
   {
    "text": "tube",
-   "start": 84.902,
-   "end": 85.115
+   "start": 86.36,
+   "end": 86.5
   },
   {
-   "text": "éclairé :",
-   "start": 85.115,
-   "end": 85.577
+   "text": "éclairé :",
+   "start": 86.5,
+   "end": 87.08
   },
   {
    "text": "c'est",
-   "start": 85.852,
-   "end": 85.952
+   "start": 87.28,
+   "end": 87.4
   },
   {
    "text": "l'anuscopie.",
-   "start": 85.952,
-   "end": 86.727
+   "start": 87.4,
+   "end": 88.28
   },
   {
    "text": "Il",
-   "start": 87.064,
-   "end": 87.264
+   "start": 88.6,
+   "end": 88.72
   },
   {
    "text": "fait",
-   "start": 87.264,
-   "end": 87.377
+   "start": 88.72,
+   "end": 88.88
   },
   {
    "text": "une",
-   "start": 87.377,
-   "end": 87.465
+   "start": 88.88,
+   "end": 89.12
   },
   {
    "text": "biopsie,",
-   "start": 87.465,
-   "end": 88.027
+   "start": 89.12,
+   "end": 89.68
   },
   {
    "text": "un",
-   "start": 88.327,
-   "end": 88.415
+   "start": 89.9,
+   "end": 90.0
   },
   {
    "text": "petit",
-   "start": 88.415,
-   "end": 88.665
+   "start": 90.0,
+   "end": 90.2
   },
   {
    "text": "prélèvement.",
-   "start": 88.665,
-   "end": 89.264
+   "start": 90.2,
+   "end": 90.76
   },
   {
    "text": "Puis",
-   "start": 89.639,
-   "end": 89.777
+   "start": 91.16,
+   "end": 91.4
   },
   {
    "text": "une",
-   "start": 89.777,
-   "end": 89.889
+   "start": 91.4,
+   "end": 91.7
   },
   {
    "text": "IRM",
-   "start": 89.889,
-   "end": 90.377
+   "start": 91.7,
+   "end": 92.2
   },
   {
    "text": "et",
-   "start": 90.377,
-   "end": 90.452
+   "start": 92.2,
+   "end": 92.36
   },
   {
    "text": "un",
-   "start": 90.452,
-   "end": 90.514
+   "start": 92.36,
+   "end": 92.56
   },
   {
    "text": "scanner",
-   "start": 90.514,
-   "end": 90.977
+   "start": 92.56,
+   "end": 92.92
   },
   {
    "text": "montrent",
-   "start": 90.977,
-   "end": 91.277
+   "start": 92.92,
+   "end": 93.36
   },
   {
    "text": "son",
-   "start": 91.277,
-   "end": 91.389
+   "start": 93.36,
+   "end": 93.54
   },
   {
    "text": "étendue.",
-   "start": 91.389,
-   "end": 91.915
+   "start": 93.54,
+   "end": 93.983
   },
   {
    "text": "Pour",
-   "start": 92.88,
-   "end": 93.005
+   "start": 94.806,
+   "end": 94.94
   },
   {
    "text": "le",
-   "start": 93.005,
-   "end": 93.093
+   "start": 94.94,
+   "end": 95.18
   },
   {
-   "text": "soigner :",
-   "start": 93.093,
-   "end": 93.555
+   "text": "soigner :",
+   "start": 95.18,
+   "end": 95.56
   },
   {
    "text": "le",
-   "start": 93.93,
-   "end": 93.993
+   "start": 95.98,
+   "end": 96.08
   },
   {
    "text": "plus",
-   "start": 93.993,
-   "end": 94.156
+   "start": 96.08,
+   "end": 96.28
   },
   {
    "text": "souvent,",
-   "start": 94.156,
-   "end": 94.593
+   "start": 96.28,
+   "end": 96.58
   },
   {
    "text": "la",
-   "start": 94.906,
-   "end": 94.968
+   "start": 96.8,
+   "end": 96.94
   },
   {
    "text": "radiothérapie,",
-   "start": 94.968,
-   "end": 95.793
+   "start": 96.94,
+   "end": 97.74
   },
   {
    "text": "associée",
-   "start": 96.105,
-   "end": 96.555
+   "start": 98.0,
+   "end": 98.3
   },
   {
    "text": "à",
-   "start": 96.555,
-   "end": 96.605
+   "start": 98.3,
+   "end": 98.38
   },
   {
    "text": "une",
-   "start": 96.605,
-   "end": 96.706
+   "start": 98.38,
+   "end": 98.54
   },
   {
    "text": "chimiothérapie.",
-   "start": 96.706,
-   "end": 97.555
+   "start": 98.54,
+   "end": 99.46
   },
   {
    "text": "Elle",
-   "start": 97.906,
-   "end": 98.105
+   "start": 99.74,
+   "end": 99.9
   },
   {
    "text": "guérit",
-   "start": 98.105,
-   "end": 98.368
+   "start": 99.9,
+   "end": 100.18
   },
   {
    "text": "souvent",
-   "start": 98.368,
-   "end": 98.63
+   "start": 100.18,
+   "end": 100.5
   },
   {
    "text": "ce",
-   "start": 98.63,
-   "end": 98.755
+   "start": 100.5,
+   "end": 100.7
   },
   {
    "text": "cancer,",
-   "start": 98.755,
-   "end": 99.343
+   "start": 100.7,
+   "end": 101.08
   },
   {
    "text": "tout",
-   "start": 99.618,
-   "end": 99.718
+   "start": 101.08,
+   "end": 101.42
   },
   {
    "text": "en",
-   "start": 99.718,
-   "end": 99.831
+   "start": 101.42,
+   "end": 101.56
   },
   {
    "text": "gardant",
-   "start": 99.831,
-   "end": 100.143
+   "start": 101.56,
+   "end": 101.8
   },
   {
    "text": "le",
-   "start": 100.143,
-   "end": 100.23
+   "start": 101.8,
+   "end": 101.98
   },
   {
    "text": "sphincter.",
-   "start": 100.23,
-   "end": 100.918
+   "start": 101.98,
+   "end": 102.48
   },
   {
    "text": "La",
-   "start": 101.305,
-   "end": 101.418
+   "start": 103.0,
+   "end": 103.18
   },
   {
    "text": "chirurgie",
-   "start": 101.418,
-   "end": 101.93
+   "start": 103.18,
+   "end": 103.76
   },
   {
    "text": "est",
-   "start": 101.93,
-   "end": 101.968
+   "start": 103.76,
+   "end": 103.94
   },
   {
    "text": "réservée",
-   "start": 101.968,
-   "end": 102.393
+   "start": 103.94,
+   "end": 104.28
   },
   {
    "text": "aux",
-   "start": 102.393,
-   "end": 102.43
+   "start": 104.28,
+   "end": 104.5
   },
   {
    "text": "petites",
-   "start": 102.43,
-   "end": 102.718
+   "start": 104.5,
+   "end": 104.82
   },
   {
    "text": "tumeurs,",
-   "start": 102.718,
-   "end": 103.193
+   "start": 104.82,
+   "end": 105.34
   },
   {
    "text": "ou",
-   "start": 103.543,
-   "end": 103.568
+   "start": 105.34,
+   "end": 105.56
   },
   {
    "text": "quand",
-   "start": 103.568,
-   "end": 103.706
+   "start": 105.56,
+   "end": 105.7
   },
   {
    "text": "ce",
-   "start": 103.706,
-   "end": 103.818
+   "start": 105.7,
+   "end": 105.88
   },
   {
    "text": "traitement",
-   "start": 103.818,
-   "end": 104.168
+   "start": 105.88,
+   "end": 106.16
   },
   {
    "text": "ne",
-   "start": 104.168,
-   "end": 104.255
+   "start": 106.16,
+   "end": 106.4
   },
   {
    "text": "suffit",
-   "start": 104.255,
-   "end": 104.531
+   "start": 106.4,
+   "end": 106.6
   },
   {
    "text": "pas.",
-   "start": 104.531,
-   "end": 104.781
+   "start": 106.6,
+   "end": 106.736
   },
   {
    "text": "Alors,",
-   "start": 105.766,
-   "end": 106.133
+   "start": 107.655,
+   "end": 108.12
   },
   {
    "text": "va",
-   "start": 106.415,
-   "end": 106.489
+   "start": 108.22,
+   "end": 108.4
   },
   {
    "text": "lui",
-   "start": 106.489,
-   "end": 106.636
+   "start": 108.4,
+   "end": 108.54
   },
   {
    "text": "en",
-   "start": 106.636,
-   "end": 106.697
+   "start": 108.54,
+   "end": 108.72
   },
   {
-   "text": "parler :",
-   "start": 106.697,
-   "end": 107.151
+   "text": "parler :",
+   "start": 108.72,
+   "end": 108.98
   },
   {
    "text": "du",
-   "start": 107.432,
-   "end": 107.53
+   "start": 109.4,
+   "end": 109.56
   },
   {
    "text": "sang",
-   "start": 107.531,
-   "end": 107.69
+   "start": 109.56,
+   "end": 109.78
   },
   {
    "text": "qui",
-   "start": 107.69,
-   "end": 107.849
+   "start": 109.78,
+   "end": 110.02
   },
   {
    "text": "dure,",
-   "start": 107.849,
-   "end": 108.156
+   "start": 110.02,
+   "end": 110.26
   },
   {
    "text": "ce",
-   "start": 108.45,
-   "end": 108.535
+   "start": 110.34,
+   "end": 110.5
   },
   {
    "text": "n'est",
-   "start": 108.535,
-   "end": 108.621
+   "start": 110.5,
+   "end": 110.66
   },
   {
    "text": "pas",
-   "start": 108.621,
-   "end": 108.731
+   "start": 110.66,
+   "end": 110.9
   },
   {
    "text": "toujours",
-   "start": 108.731,
-   "end": 109.013
+   "start": 110.9,
+   "end": 111.14
   },
   {
    "text": "des",
-   "start": 109.013,
-   "end": 109.099
+   "start": 111.14,
+   "end": 111.34
   },
   {
    "text": "hémorroïdes,",
-   "start": 109.099,
-   "end": 109.675
+   "start": 111.34,
+   "end": 111.9
   },
   {
    "text": "on",
-   "start": 109.847,
-   "end": 109.871
+   "start": 111.98,
+   "end": 112.28
   },
   {
    "text": "consulte.",
-   "start": 109.871,
-   "end": 110.533
+   "start": 112.28,
+   "end": 112.88
   },
   {
    "text": "Et",
-   "start": 110.865,
-   "end": 110.987
+   "start": 112.88,
+   "end": 113.24
   },
   {
    "text": "le",
-   "start": 110.987,
-   "end": 111.061
+   "start": 113.24,
+   "end": 113.4
   },
   {
    "text": "vaccin",
-   "start": 111.061,
-   "end": 111.392
+   "start": 113.4,
+   "end": 113.66
   },
   {
    "text": "contre",
-   "start": 111.392,
-   "end": 111.661
+   "start": 113.66,
+   "end": 113.94
   },
   {
    "text": "le",
-   "start": 111.661,
-   "end": 111.747
+   "start": 113.94,
+   "end": 114.14
   },
   {
    "text": "papillomavirus,",
-   "start": 111.747,
-   "end": 112.691
+   "start": 114.14,
+   "end": 114.94
   },
   {
    "text": "pour",
-   "start": 112.948,
-   "end": 113.07
+   "start": 115.3,
+   "end": 115.36
   },
   {
    "text": "les",
-   "start": 113.07,
-   "end": 113.168
+   "start": 115.36,
+   "end": 115.62
   },
   {
    "text": "filles",
-   "start": 113.169,
-   "end": 113.365
+   "start": 115.62,
+   "end": 115.84
   },
   {
    "text": "comme",
-   "start": 113.365,
-   "end": 113.524
+   "start": 115.84,
+   "end": 116.02
   },
   {
    "text": "pour",
-   "start": 113.524,
-   "end": 113.634
+   "start": 116.02,
+   "end": 116.2
   },
   {
    "text": "les",
-   "start": 113.634,
-   "end": 113.695
+   "start": 116.2,
+   "end": 116.34
   },
   {
    "text": "garçons,",
-   "start": 113.695,
-   "end": 114.124
+   "start": 116.34,
+   "end": 116.74
   },
   {
    "text": "protège",
-   "start": 114.419,
-   "end": 114.786
+   "start": 117.1,
+   "end": 117.32
   },
   {
    "text": "de",
-   "start": 114.786,
-   "end": 114.884
+   "start": 117.32,
+   "end": 117.5
   },
   {
    "text": "ce",
-   "start": 114.884,
-   "end": 114.982
+   "start": 117.5,
+   "end": 117.6
   },
   {
-   "text": "cancer !",
-   "start": 114.982,
-   "end": 115.558
+   "text": "cancer !",
+   "start": 117.6,
+   "end": 117.94
   }
  ]
 }
