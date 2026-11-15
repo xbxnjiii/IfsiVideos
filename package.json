@@ -71,7 +71,8 @@
     "render:cancer-pancreas": "remotion render Cancer-Pancreas out/54-cancer-pancreas.mp4",
     "render:cancer-estomac": "remotion render Cancer-Estomac out/55-cancer-estomac.mp4",
     "render:cancer-rein": "remotion render Cancer-Rein out/56-cancer-rein.mp4",
-    "render:cancer-foie": "remotion render Cancer-Foie out/57-cancer-foie.mp4"
+    "render:cancer-foie": "remotion render Cancer-Foie out/57-cancer-foie.mp4",
+    "render:cancer-oesophage": "remotion render Cancer-Oesophage out/58-cancer-oesophage.mp4"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.532",

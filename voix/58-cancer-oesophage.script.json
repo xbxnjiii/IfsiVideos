@@ -1,0 +1,52 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Au repas, ton grand-père avale… et ça coince. Il boit un grand verre d'eau pour faire passer. Depuis des semaines, il coupe tout en petits morceaux… et maintenant, il ne mange plus que de la soupe. Pourtant, avoir du mal à avaler, ça se montre à un médecin."
+ },
+ {
+  "id": "oesophage",
+  "rate": "+0%",
+  "text": "L'œsophage, c'est un tube d'environ vingt-cinq centimètres, qui va du fond de la gorge jusqu'à l'estomac. Ses muscles se contractent en vague pour faire descendre les aliments. Et en bas, un anneau de muscle se ferme : il empêche l'acide de l'estomac de remonter."
+ },
+ {
+  "id": "paroi",
+  "rate": "+0%",
+  "text": "Sa paroi a trois couches : la muqueuse, à l'intérieur, puis le muscle, et une enveloppe qui l'attache aux organes voisins."
+ },
+ {
+  "id": "cancer",
+  "rate": "+0%",
+  "text": "Le cancer de l'œsophage, ce sont des cellules de la paroi qui se multiplient sans contrôle. Elles forment une tumeur qui rétrécit le tube… et les aliments passent de plus en plus mal."
+ },
+ {
+  "id": "types",
+  "rate": "+0%",
+  "text": "Il en existe deux types principaux. Le carcinome épidermoïde, souvent en haut et au milieu, lié surtout au tabac et à l'alcool. Et l'adénocarcinome, en bas, près de l'estomac, lié au reflux d'acide qui dure depuis des années."
+ },
+ {
+  "id": "signes",
+  "rate": "+0%",
+  "text": "Au début, il ne donne souvent aucun signe. Puis viennent : du mal à avaler, d'abord les aliments solides, puis les liquides, une douleur en avalant, une perte de poids, une voix enrouée, ou une toux en mangeant."
+ },
+ {
+  "id": "risques",
+  "rate": "+0%",
+  "text": "Le risque augmente avec le tabac, l'alcool, surtout les deux ensemble, le reflux qui dure, le surpoids, et une alimentation pauvre en fruits et légumes."
+ },
+ {
+  "id": "examens",
+  "rate": "+0%",
+  "text": "Pour le trouver : la fibroscopie. Une petite caméra passe par la bouche et regarde l'intérieur de l'œsophage. Elle fait des biopsies, de petits prélèvements. Puis un scanner montre s'il s'est étendu."
+ },
+ {
+  "id": "traitement",
+  "rate": "+0%",
+  "text": "Pour le soigner : la chirurgie, qui retire une partie de l'œsophage, la chimiothérapie et la radiothérapie, souvent associées. Pris très tôt, on peut parfois retirer la tumeur avec la caméra. Et si le tube est trop étroit, une prothèse le garde ouvert."
+ },
+ {
+  "id": "fin",
+  "rate": "+2%",
+  "text": "Alors, va lui en parler : du mal à avaler qui dure, on consulte vite. Et moins de tabac, moins d'alcool, et soigner son reflux, ça protège son œsophage !"
+ }
+]

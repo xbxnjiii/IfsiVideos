@@ -564,6 +564,20 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   foie ». Briques `src/brand/liver.tsx`. Voix : « sous les côtes à droite » était entendu « sous les côtés droites » →
   « à droite, juste sous les côtes » ; « greffe » entendu « grève » → « on remplace le foie : c'est la greffe ».
   Storyboard `docs/lpi/storyboard-cancer-foie.md`.
+- `Cancer-Oesophage` (n° 58, ≈ 1 min 56, format « pathologie », voix gratuite d'abord, sans barre de progression) : demandé
+  « pareil, à l'aide de ce schéma, sans les annotations ». Schéma fourni `public/images/oesophage/oesophage-cancer.webp`
+  nettoyé par `scripts/brand/clean_oesophage_diagram.py` → `-anatomie.png`, `-coupe.png` (le tube en coupe), `-sain.png`,
+  `-cancer.png`. **Étiquettes posées sur la silhouette couleur peau** (impossible à reconstruire proprement) : on garde la
+  coupe de la tête et le tube digestif (masque des organes par teinte HSV : rouges / roses / jaunes saturés) et la peau
+  s'efface en fondu ; partie d'organe cachée = reprise **en aller-retour dans la seule partie visible** du même organe
+  (un miroir plus large recopiait la paroi voisine). Accroche **« ça coince »** avec **« ton grand-père »** : au repas il
+  avale, tousse, boit un grand verre d'eau (`WaterGlassG`), l'assiette en tout petits morceaux (`CutPlateG`), puis la soupe
+  (`SoupBowlG`), loupe sur l'intérieur de l'œsophage. Puis l'œsophage (25 cm, la bouchée descend en vague, le sphincter
+  retient l'acide), la paroi (muqueuse, muscle, enveloppe), le cancer (la tumeur rétrécit le tube), les 2 types
+  (carcinome épidermoïde : haut / milieu, tabac + alcool ; adénocarcinome : bas, reflux), les signes (mal à avaler, solide
+  puis liquide…), les risques, la fibroscopie (+ biopsies, scanner), les traitements (chirurgie, chimio + radiothérapie,
+  par la caméra si très tôt, prothèse), chute « du mal à avaler qui dure, on consulte vite ». Briques
+  `src/brand/oesophagus.tsx`. Storyboard `docs/lpi/storyboard-cancer-oesophage.md`.
 
 ## Voix ElevenLabs « Laura » (choisie par le propriétaire pour les nouvelles vidéos)
 
