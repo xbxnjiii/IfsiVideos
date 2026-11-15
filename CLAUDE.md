@@ -519,7 +519,7 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   traitements (chirurgie, chimio, radiothérapie, prothèse biliaire), chute « des yeux jaunes, maigrir sans raison : on
   consulte vite ». Briques `src/brand/pancreas.tsx` (`TumorBlob`, `Stent`, `Sparkle`, pictos). Voix : « un suc » était
   entendu « un sucre » → « un liquide qui aide à digérer ». Storyboard `docs/lpi/storyboard-cancer-pancreas.md`.
-- `Cancer-Estomac` (n° 55, ≈ 1 min 47, format « pathologie », voix gratuite d'abord, sans barre de progression) : demandé
+- `Cancer-Estomac` (n° 55, ≈ 1 min 51, format « pathologie », voix Laura après validation (2 046 crédits), sans barre de progression) : demandé
   « pareil, à l'aide de ce schéma, sans les annotations ». Schéma fourni `public/images/estomac/estomac-cancer.webp`
   (œsophage, estomac, duodénum + « focus » paroi saine / avec cancer) nettoyé par `scripts/brand/clean_estomac_diagram.py`
   → `-anatomie.png`, `-sain.png`, `-cancer.png`. Méthode nouvelle : **cône rose posé sur une paroi courbe** = bord
