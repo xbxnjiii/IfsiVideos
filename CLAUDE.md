@@ -590,7 +590,7 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   MICI), les examens (toucher rectal, anuscopie, biopsie, IRM + scanner), les traitements (radiochimiothérapie qui garde le
   sphincter, chirurgie), chute « du sang qui dure, on consulte… le vaccin HPV, filles et garçons ». Briques
   `src/brand/anal.tsx`. Storyboard `docs/lpi/storyboard-cancer-anus.md`.
-- `Cancer-Voies-Biliaires` (n° 60, ≈ 1 min 59, format « pathologie », voix gratuite d'abord, sans barre de progression) :
+- `Cancer-Voies-Biliaires` (n° 60, ≈ 2 min 03, format « pathologie », voix Laura après validation (2 264 crédits), sans barre de progression) :
   demandé « pareil, à l'aide de ce schéma, sans les annotations ». Schéma fourni `public/images/biliaire/biliaire-cancer.webp`
   nettoyé par `scripts/brand/clean_biliaire_diagram.py` → `-anatomie.png`, `-sain.png`, `-cancer.png`. 5 étiquettes
   cachaient un bord d'organe : chaque bord ajusté (polynôme, ou droite entre deux coins visibles), pixels repris à la même

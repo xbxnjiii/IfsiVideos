@@ -70,7 +70,7 @@ pas de logiciel de montage, pas de banque d'images.
 | 57 | Pathologie : le cancer du foie (voix Laura, accroche « un verre… puis un deuxième », schéma fourni sans annotations) | `Cancer-Foie` | [voix/57-cancer-foie.script.json](voix/57-cancer-foie.script.json) | [storyboard](docs/lpi/storyboard-cancer-foie.md) |
 | 58 | Pathologie : le cancer de l'œsophage (voix Laura, accroche « ça coince », schéma fourni sans annotations) | `Cancer-Oesophage` | [voix/58-cancer-oesophage.script.json](voix/58-cancer-oesophage.script.json) | [storyboard](docs/lpi/storyboard-cancer-oesophage.md) |
 | 59 | Pathologie : le cancer de l'anus (voix Laura, accroche « le papier toilette », schéma fourni sans annotations) | `Cancer-Anus` | [voix/59-cancer-anus.script.json](voix/59-cancer-anus.script.json) | [storyboard](docs/lpi/storyboard-cancer-anus.md) |
-| 60 | Pathologie : le cancer des voies biliaires (voix gratuite, accroche « il se gratte la nuit », schéma fourni sans annotations) | `Cancer-Voies-Biliaires` | [voix/60-cancer-voies-biliaires.script.json](voix/60-cancer-voies-biliaires.script.json) | [storyboard](docs/lpi/storyboard-cancer-voies-biliaires.md) |
+| 60 | Pathologie : le cancer des voies biliaires (voix Laura, accroche « il se gratte la nuit », schéma fourni sans annotations) | `Cancer-Voies-Biliaires` | [voix/60-cancer-voies-biliaires.script.json](voix/60-cancer-voies-biliaires.script.json) | [storyboard](docs/lpi/storyboard-cancer-voies-biliaires.md) |
 
 ## Utilisation
 
