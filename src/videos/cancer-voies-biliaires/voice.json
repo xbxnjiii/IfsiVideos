@@ -1,0 +1,1843 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 115.4,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.048,
+   "end": 14.269
+  },
+  {
+   "id": "voies",
+   "start": 15.192,
+   "end": 31.942
+  },
+  {
+   "id": "cancer",
+   "start": 32.878,
+   "end": 43.691
+  },
+  {
+   "id": "types",
+   "start": 44.636,
+   "end": 53.486
+  },
+  {
+   "id": "signes",
+   "start": 54.426,
+   "end": 69.413
+  },
+  {
+   "id": "risques",
+   "start": 70.36,
+   "end": 80.972
+  },
+  {
+   "id": "examens",
+   "start": 81.964,
+   "end": 92.826
+  },
+  {
+   "id": "traitement",
+   "start": 93.78,
+   "end": 108.58
+  },
+  {
+   "id": "fin",
+   "start": 109.594,
+   "end": 115.047
+  }
+ ],
+ "words": [
+  {
+   "text": "Une",
+   "start": 0.048,
+   "end": 0.252
+  },
+  {
+   "text": "heure,",
+   "start": 0.252,
+   "end": 0.541
+  },
+  {
+   "text": "trois",
+   "start": 0.757,
+   "end": 0.949
+  },
+  {
+   "text": "heures…",
+   "start": 0.95,
+   "end": 1.298
+  },
+  {
+   "text": "ton",
+   "start": 1.623,
+   "end": 1.755
+  },
+  {
+   "text": "père",
+   "start": 1.755,
+   "end": 1.959
+  },
+  {
+   "text": "se",
+   "start": 1.959,
+   "end": 2.055
+  },
+  {
+   "text": "gratte",
+   "start": 2.055,
+   "end": 2.284
+  },
+  {
+   "text": "partout,",
+   "start": 2.284,
+   "end": 2.704
+  },
+  {
+   "text": "et",
+   "start": 3.041,
+   "end": 3.065
+  },
+  {
+   "text": "il",
+   "start": 3.065,
+   "end": 3.125
+  },
+  {
+   "text": "n'arrive",
+   "start": 3.125,
+   "end": 3.425
+  },
+  {
+   "text": "plus",
+   "start": 3.425,
+   "end": 3.57
+  },
+  {
+   "text": "à",
+   "start": 3.57,
+   "end": 3.678
+  },
+  {
+   "text": "dormir.",
+   "start": 3.678,
+   "end": 4.207
+  },
+  {
+   "text": "Le",
+   "start": 4.567,
+   "end": 4.687
+  },
+  {
+   "text": "matin,",
+   "start": 4.688,
+   "end": 5.096
+  },
+  {
+   "text": "ses",
+   "start": 5.373,
+   "end": 5.505
+  },
+  {
+   "text": "urines",
+   "start": 5.505,
+   "end": 5.817
+  },
+  {
+   "text": "sont",
+   "start": 5.817,
+   "end": 5.949
+  },
+  {
+   "text": "foncées…",
+   "start": 5.949,
+   "end": 6.442
+  },
+  {
+   "text": "et",
+   "start": 6.791,
+   "end": 6.863
+  },
+  {
+   "text": "dans",
+   "start": 6.863,
+   "end": 6.971
+  },
+  {
+   "text": "le",
+   "start": 6.971,
+   "end": 7.043
+  },
+  {
+   "text": "miroir,",
+   "start": 7.043,
+   "end": 7.5
+  },
+  {
+   "text": "le",
+   "start": 7.764,
+   "end": 7.824
+  },
+  {
+   "text": "blanc",
+   "start": 7.824,
+   "end": 7.993
+  },
+  {
+   "text": "de",
+   "start": 7.993,
+   "end": 8.089
+  },
+  {
+   "text": "ses",
+   "start": 8.089,
+   "end": 8.233
+  },
+  {
+   "text": "yeux",
+   "start": 8.233,
+   "end": 8.425
+  },
+  {
+   "text": "est",
+   "start": 8.425,
+   "end": 8.474
+  },
+  {
+   "text": "devenu",
+   "start": 8.474,
+   "end": 8.762
+  },
+  {
+   "text": "jaune.",
+   "start": 8.762,
+   "end": 9.171
+  },
+  {
+   "text": "Ce",
+   "start": 9.507,
+   "end": 9.663
+  },
+  {
+   "text": "n'est",
+   "start": 9.663,
+   "end": 9.76
+  },
+  {
+   "text": "pas",
+   "start": 9.76,
+   "end": 9.88
+  },
+  {
+   "text": "la",
+   "start": 9.88,
+   "end": 9.988
+  },
+  {
+   "text": "peau :",
+   "start": 9.988,
+   "end": 10.264
+  },
+  {
+   "text": "c'est",
+   "start": 10.601,
+   "end": 10.721
+  },
+  {
+   "text": "la",
+   "start": 10.721,
+   "end": 10.805
+  },
+  {
+   "text": "bile",
+   "start": 10.805,
+   "end": 11.058
+  },
+  {
+   "text": "qui",
+   "start": 11.058,
+   "end": 11.178
+  },
+  {
+   "text": "ne",
+   "start": 11.178,
+   "end": 11.286
+  },
+  {
+   "text": "s'écoule",
+   "start": 11.286,
+   "end": 11.611
+  },
+  {
+   "text": "plus.",
+   "start": 11.611,
+   "end": 11.935
+  },
+  {
+   "text": "Et",
+   "start": 12.262,
+   "end": 12.418
+  },
+  {
+   "text": "ça,",
+   "start": 12.418,
+   "end": 12.694
+  },
+  {
+   "text": "ça",
+   "start": 13.031,
+   "end": 13.139
+  },
+  {
+   "text": "se",
+   "start": 13.139,
+   "end": 13.247
+  },
+  {
+   "text": "montre",
+   "start": 13.247,
+   "end": 13.524
+  },
+  {
+   "text": "vite",
+   "start": 13.524,
+   "end": 13.728
+  },
+  {
+   "text": "à",
+   "start": 13.728,
+   "end": 13.764
+  },
+  {
+   "text": "un",
+   "start": 13.764,
+   "end": 13.8
+  },
+  {
+   "text": "médecin.",
+   "start": 13.8,
+   "end": 14.269
+  },
+  {
+   "text": "Le",
+   "start": 15.192,
+   "end": 15.38
+  },
+  {
+   "text": "foie",
+   "start": 15.38,
+   "end": 15.567
+  },
+  {
+   "text": "fabrique",
+   "start": 15.567,
+   "end": 15.892
+  },
+  {
+   "text": "la",
+   "start": 15.892,
+   "end": 16.005
+  },
+  {
+   "text": "bile,",
+   "start": 16.005,
+   "end": 16.329
+  },
+  {
+   "text": "un",
+   "start": 16.654,
+   "end": 16.692
+  },
+  {
+   "text": "liquide",
+   "start": 16.692,
+   "end": 17.104
+  },
+  {
+   "text": "qui",
+   "start": 17.104,
+   "end": 17.255
+  },
+  {
+   "text": "aide",
+   "start": 17.255,
+   "end": 17.354
+  },
+  {
+   "text": "à",
+   "start": 17.354,
+   "end": 17.404
+  },
+  {
+   "text": "digérer",
+   "start": 17.404,
+   "end": 17.755
+  },
+  {
+   "text": "les",
+   "start": 17.755,
+   "end": 17.842
+  },
+  {
+   "text": "graisses.",
+   "start": 17.842,
+   "end": 18.392
+  },
+  {
+   "text": "Elle",
+   "start": 18.729,
+   "end": 18.93
+  },
+  {
+   "text": "circule",
+   "start": 18.93,
+   "end": 19.367
+  },
+  {
+   "text": "dans",
+   "start": 19.367,
+   "end": 19.48
+  },
+  {
+   "text": "de",
+   "start": 19.48,
+   "end": 19.567
+  },
+  {
+   "text": "petits",
+   "start": 19.567,
+   "end": 19.829
+  },
+  {
+   "text": "canaux :",
+   "start": 19.829,
+   "end": 20.242
+  },
+  {
+   "text": "les",
+   "start": 20.605,
+   "end": 20.654
+  },
+  {
+   "text": "voies",
+   "start": 20.654,
+   "end": 20.817
+  },
+  {
+   "text": "biliaires.",
+   "start": 20.817,
+   "end": 21.404
+  },
+  {
+   "text": "D'abord",
+   "start": 21.755,
+   "end": 22.142
+  },
+  {
+   "text": "dans",
+   "start": 22.142,
+   "end": 22.255
+  },
+  {
+   "text": "le",
+   "start": 22.255,
+   "end": 22.355
+  },
+  {
+   "text": "foie,",
+   "start": 22.355,
+   "end": 22.717
+  },
+  {
+   "text": "puis",
+   "start": 23.054,
+   "end": 23.204
+  },
+  {
+   "text": "ils",
+   "start": 23.204,
+   "end": 23.304
+  },
+  {
+   "text": "se",
+   "start": 23.304,
+   "end": 23.417
+  },
+  {
+   "text": "rejoignent.",
+   "start": 23.417,
+   "end": 24.054
+  },
+  {
+   "text": "La",
+   "start": 24.429,
+   "end": 24.542
+  },
+  {
+   "text": "vésicule",
+   "start": 24.542,
+   "end": 25.029
+  },
+  {
+   "text": "biliaire",
+   "start": 25.029,
+   "end": 25.38
+  },
+  {
+   "text": "la",
+   "start": 25.38,
+   "end": 25.48
+  },
+  {
+   "text": "stocke",
+   "start": 25.48,
+   "end": 25.817
+  },
+  {
+   "text": "entre",
+   "start": 25.817,
+   "end": 26.017
+  },
+  {
+   "text": "les",
+   "start": 26.017,
+   "end": 26.105
+  },
+  {
+   "text": "repas.",
+   "start": 26.105,
+   "end": 26.529
+  },
+  {
+   "text": "Et",
+   "start": 26.867,
+   "end": 27.005
+  },
+  {
+   "text": "le",
+   "start": 27.005,
+   "end": 27.092
+  },
+  {
+   "text": "cholédoque,",
+   "start": 27.092,
+   "end": 27.667
+  },
+  {
+   "text": "le",
+   "start": 27.892,
+   "end": 27.942
+  },
+  {
+   "text": "canal",
+   "start": 27.942,
+   "end": 28.242
+  },
+  {
+   "text": "principal,",
+   "start": 28.242,
+   "end": 28.917
+  },
+  {
+   "text": "la",
+   "start": 29.23,
+   "end": 29.317
+  },
+  {
+   "text": "verse",
+   "start": 29.317,
+   "end": 29.667
+  },
+  {
+   "text": "dans",
+   "start": 29.667,
+   "end": 29.779
+  },
+  {
+   "text": "le",
+   "start": 29.779,
+   "end": 29.88
+  },
+  {
+   "text": "duodénum,",
+   "start": 29.88,
+   "end": 30.554
+  },
+  {
+   "text": "le",
+   "start": 30.88,
+   "end": 30.942
+  },
+  {
+   "text": "début",
+   "start": 30.942,
+   "end": 31.192
+  },
+  {
+   "text": "de",
+   "start": 31.192,
+   "end": 31.292
+  },
+  {
+   "text": "l'intestin.",
+   "start": 31.292,
+   "end": 31.942
+  },
+  {
+   "text": "Le",
+   "start": 32.878,
+   "end": 33.053
+  },
+  {
+   "text": "cancer",
+   "start": 33.053,
+   "end": 33.403
+  },
+  {
+   "text": "des",
+   "start": 33.403,
+   "end": 33.491
+  },
+  {
+   "text": "voies",
+   "start": 33.491,
+   "end": 33.628
+  },
+  {
+   "text": "biliaires,",
+   "start": 33.628,
+   "end": 34.116
+  },
+  {
+   "text": "ce",
+   "start": 34.478,
+   "end": 34.578
+  },
+  {
+   "text": "sont",
+   "start": 34.578,
+   "end": 34.691
+  },
+  {
+   "text": "des",
+   "start": 34.691,
+   "end": 34.778
+  },
+  {
+   "text": "cellules",
+   "start": 34.778,
+   "end": 35.091
+  },
+  {
+   "text": "de",
+   "start": 35.091,
+   "end": 35.166
+  },
+  {
+   "text": "la",
+   "start": 35.166,
+   "end": 35.253
+  },
+  {
+   "text": "paroi",
+   "start": 35.253,
+   "end": 35.541
+  },
+  {
+   "text": "de",
+   "start": 35.541,
+   "end": 35.641
+  },
+  {
+   "text": "ces",
+   "start": 35.641,
+   "end": 35.766
+  },
+  {
+   "text": "canaux",
+   "start": 35.766,
+   "end": 36.141
+  },
+  {
+   "text": "qui",
+   "start": 36.141,
+   "end": 36.278
+  },
+  {
+   "text": "se",
+   "start": 36.278,
+   "end": 36.403
+  },
+  {
+   "text": "multiplient",
+   "start": 36.403,
+   "end": 36.928
+  },
+  {
+   "text": "sans",
+   "start": 36.928,
+   "end": 37.091
+  },
+  {
+   "text": "contrôle.",
+   "start": 37.091,
+   "end": 37.728
+  },
+  {
+   "text": "Elles",
+   "start": 38.066,
+   "end": 38.278
+  },
+  {
+   "text": "forment",
+   "start": 38.278,
+   "end": 38.528
+  },
+  {
+   "text": "une",
+   "start": 38.528,
+   "end": 38.628
+  },
+  {
+   "text": "tumeur,",
+   "start": 38.628,
+   "end": 39.153
+  },
+  {
+   "text": "qui",
+   "start": 39.416,
+   "end": 39.541
+  },
+  {
+   "text": "rétrécit",
+   "start": 39.541,
+   "end": 39.991
+  },
+  {
+   "text": "le",
+   "start": 39.991,
+   "end": 40.078
+  },
+  {
+   "text": "canal.",
+   "start": 40.078,
+   "end": 40.616
+  },
+  {
+   "text": "C'est",
+   "start": 40.953,
+   "end": 41.153
+  },
+  {
+   "text": "un",
+   "start": 41.153,
+   "end": 41.291
+  },
+  {
+   "text": "cancer",
+   "start": 41.291,
+   "end": 41.703
+  },
+  {
+   "text": "rare,",
+   "start": 41.703,
+   "end": 42.091
+  },
+  {
+   "text": "mais",
+   "start": 42.453,
+   "end": 42.528
+  },
+  {
+   "text": "souvent",
+   "start": 42.528,
+   "end": 42.828
+  },
+  {
+   "text": "découvert",
+   "start": 42.828,
+   "end": 43.241
+  },
+  {
+   "text": "tard.",
+   "start": 43.241,
+   "end": 43.691
+  },
+  {
+   "text": "Il",
+   "start": 44.636,
+   "end": 44.836
+  },
+  {
+   "text": "en",
+   "start": 44.836,
+   "end": 44.873
+  },
+  {
+   "text": "existe",
+   "start": 44.873,
+   "end": 45.423
+  },
+  {
+   "text": "deux",
+   "start": 45.423,
+   "end": 45.548
+  },
+  {
+   "text": "grands",
+   "start": 45.548,
+   "end": 45.748
+  },
+  {
+   "text": "types.",
+   "start": 45.748,
+   "end": 46.186
+  },
+  {
+   "text": "Le",
+   "start": 46.586,
+   "end": 46.698
+  },
+  {
+   "text": "cholangiocarcinome,",
+   "start": 46.698,
+   "end": 47.798
+  },
+  {
+   "text": "la",
+   "start": 48.161,
+   "end": 48.224
+  },
+  {
+   "text": "tumeur",
+   "start": 48.224,
+   "end": 48.523
+  },
+  {
+   "text": "des",
+   "start": 48.523,
+   "end": 48.611
+  },
+  {
+   "text": "canaux",
+   "start": 48.611,
+   "end": 48.849
+  },
+  {
+   "text": "biliaires :",
+   "start": 48.849,
+   "end": 49.323
+  },
+  {
+   "text": "c'est",
+   "start": 49.661,
+   "end": 49.773
+  },
+  {
+   "text": "le",
+   "start": 49.773,
+   "end": 49.861
+  },
+  {
+   "text": "plus",
+   "start": 49.861,
+   "end": 50.011
+  },
+  {
+   "text": "fréquent.",
+   "start": 50.011,
+   "end": 50.498
+  },
+  {
+   "text": "Et",
+   "start": 50.836,
+   "end": 50.974
+  },
+  {
+   "text": "le",
+   "start": 50.974,
+   "end": 51.048
+  },
+  {
+   "text": "cancer",
+   "start": 51.048,
+   "end": 51.448
+  },
+  {
+   "text": "de",
+   "start": 51.448,
+   "end": 51.523
+  },
+  {
+   "text": "la",
+   "start": 51.523,
+   "end": 51.599
+  },
+  {
+   "text": "vésicule",
+   "start": 51.599,
+   "end": 52.048
+  },
+  {
+   "text": "biliaire,",
+   "start": 52.048,
+   "end": 52.599
+  },
+  {
+   "text": "plus",
+   "start": 52.886,
+   "end": 53.048
+  },
+  {
+   "text": "rare.",
+   "start": 53.048,
+   "end": 53.486
+  },
+  {
+   "text": "Quand",
+   "start": 54.426,
+   "end": 54.551
+  },
+  {
+   "text": "la",
+   "start": 54.551,
+   "end": 54.639
+  },
+  {
+   "text": "tumeur",
+   "start": 54.639,
+   "end": 55.063
+  },
+  {
+   "text": "bouche",
+   "start": 55.063,
+   "end": 55.276
+  },
+  {
+   "text": "le",
+   "start": 55.276,
+   "end": 55.363
+  },
+  {
+   "text": "canal,",
+   "start": 55.363,
+   "end": 55.813
+  },
+  {
+   "text": "la",
+   "start": 56.163,
+   "end": 56.251
+  },
+  {
+   "text": "bile",
+   "start": 56.251,
+   "end": 56.451
+  },
+  {
+   "text": "repart",
+   "start": 56.451,
+   "end": 56.776
+  },
+  {
+   "text": "dans",
+   "start": 56.776,
+   "end": 56.889
+  },
+  {
+   "text": "le",
+   "start": 56.889,
+   "end": 56.988
+  },
+  {
+   "text": "sang.",
+   "start": 56.988,
+   "end": 57.326
+  },
+  {
+   "text": "La",
+   "start": 57.713,
+   "end": 57.851
+  },
+  {
+   "text": "peau",
+   "start": 57.851,
+   "end": 58.051
+  },
+  {
+   "text": "et",
+   "start": 58.051,
+   "end": 58.088
+  },
+  {
+   "text": "les",
+   "start": 58.088,
+   "end": 58.201
+  },
+  {
+   "text": "yeux",
+   "start": 58.201,
+   "end": 58.363
+  },
+  {
+   "text": "jaunissent :",
+   "start": 58.363,
+   "end": 58.963
+  },
+  {
+   "text": "c'est",
+   "start": 59.213,
+   "end": 59.351
+  },
+  {
+   "text": "l'ictère.",
+   "start": 59.351,
+   "end": 59.963
+  },
+  {
+   "text": "Les",
+   "start": 60.313,
+   "end": 60.514
+  },
+  {
+   "text": "urines",
+   "start": 60.514,
+   "end": 60.851
+  },
+  {
+   "text": "deviennent",
+   "start": 60.851,
+   "end": 61.139
+  },
+  {
+   "text": "foncées,",
+   "start": 61.139,
+   "end": 61.626
+  },
+  {
+   "text": "les",
+   "start": 61.901,
+   "end": 61.976
+  },
+  {
+   "text": "selles",
+   "start": 61.976,
+   "end": 62.188
+  },
+  {
+   "text": "claires,",
+   "start": 62.188,
+   "end": 62.626
+  },
+  {
+   "text": "et",
+   "start": 62.851,
+   "end": 62.864
+  },
+  {
+   "text": "la",
+   "start": 62.864,
+   "end": 62.951
+  },
+  {
+   "text": "peau",
+   "start": 62.951,
+   "end": 63.088
+  },
+  {
+   "text": "gratte.",
+   "start": 63.088,
+   "end": 63.588
+  },
+  {
+   "text": "Parfois",
+   "start": 63.938,
+   "end": 64.239
+  },
+  {
+   "text": "aussi :",
+   "start": 64.239,
+   "end": 64.651
+  },
+  {
+   "text": "une",
+   "start": 65.076,
+   "end": 65.151
+  },
+  {
+   "text": "douleur",
+   "start": 65.151,
+   "end": 65.426
+  },
+  {
+   "text": "à",
+   "start": 65.426,
+   "end": 65.463
+  },
+  {
+   "text": "droite",
+   "start": 65.463,
+   "end": 65.739
+  },
+  {
+   "text": "sous",
+   "start": 65.739,
+   "end": 65.838
+  },
+  {
+   "text": "les",
+   "start": 65.838,
+   "end": 65.951
+  },
+  {
+   "text": "côtes,",
+   "start": 65.951,
+   "end": 66.376
+  },
+  {
+   "text": "de",
+   "start": 66.601,
+   "end": 66.663
+  },
+  {
+   "text": "la",
+   "start": 66.663,
+   "end": 66.763
+  },
+  {
+   "text": "fatigue,",
+   "start": 66.763,
+   "end": 67.263
+  },
+  {
+   "text": "une",
+   "start": 67.576,
+   "end": 67.651
+  },
+  {
+   "text": "perte",
+   "start": 67.651,
+   "end": 67.926
+  },
+  {
+   "text": "de",
+   "start": 67.926,
+   "end": 68.038
+  },
+  {
+   "text": "poids,",
+   "start": 68.038,
+   "end": 68.364
+  },
+  {
+   "text": "ou",
+   "start": 68.689,
+   "end": 68.739
+  },
+  {
+   "text": "de",
+   "start": 68.739,
+   "end": 68.826
+  },
+  {
+   "text": "la",
+   "start": 68.826,
+   "end": 68.926
+  },
+  {
+   "text": "fièvre.",
+   "start": 68.926,
+   "end": 69.413
+  },
+  {
+   "text": "Le",
+   "start": 70.36,
+   "end": 70.547
+  },
+  {
+   "text": "risque",
+   "start": 70.547,
+   "end": 70.773
+  },
+  {
+   "text": "augmente",
+   "start": 70.773,
+   "end": 71.135
+  },
+  {
+   "text": "avec",
+   "start": 71.135,
+   "end": 71.297
+  },
+  {
+   "text": "des",
+   "start": 71.297,
+   "end": 71.36
+  },
+  {
+   "text": "calculs",
+   "start": 71.36,
+   "end": 71.735
+  },
+  {
+   "text": "biliaires",
+   "start": 71.735,
+   "end": 72.097
+  },
+  {
+   "text": "qui",
+   "start": 72.097,
+   "end": 72.248
+  },
+  {
+   "text": "durent,",
+   "start": 72.248,
+   "end": 72.597
+  },
+  {
+   "text": "une",
+   "start": 72.948,
+   "end": 73.035
+  },
+  {
+   "text": "inflammation",
+   "start": 73.035,
+   "end": 73.51
+  },
+  {
+   "text": "chronique",
+   "start": 73.51,
+   "end": 73.847
+  },
+  {
+   "text": "des",
+   "start": 73.847,
+   "end": 73.922
+  },
+  {
+   "text": "canaux,",
+   "start": 73.922,
+   "end": 74.335
+  },
+  {
+   "text": "une",
+   "start": 74.685,
+   "end": 74.748
+  },
+  {
+   "text": "maladie",
+   "start": 74.748,
+   "end": 75.06
+  },
+  {
+   "text": "du",
+   "start": 75.06,
+   "end": 75.16
+  },
+  {
+   "text": "foie",
+   "start": 75.16,
+   "end": 75.385
+  },
+  {
+   "text": "comme",
+   "start": 75.385,
+   "end": 75.547
+  },
+  {
+   "text": "la",
+   "start": 75.547,
+   "end": 75.623
+  },
+  {
+   "text": "cirrhose",
+   "start": 75.623,
+   "end": 76.097
+  },
+  {
+   "text": "ou",
+   "start": 76.097,
+   "end": 76.135
+  },
+  {
+   "text": "une",
+   "start": 76.135,
+   "end": 76.222
+  },
+  {
+   "text": "hépatite,",
+   "start": 76.222,
+   "end": 76.773
+  },
+  {
+   "text": "certaines",
+   "start": 77.035,
+   "end": 77.373
+  },
+  {
+   "text": "maladies",
+   "start": 77.373,
+   "end": 77.672
+  },
+  {
+   "text": "inflammatoires",
+   "start": 77.672,
+   "end": 78.21
+  },
+  {
+   "text": "de",
+   "start": 78.21,
+   "end": 78.285
+  },
+  {
+   "text": "l'intestin,",
+   "start": 78.285,
+   "end": 78.873
+  },
+  {
+   "text": "et",
+   "start": 79.26,
+   "end": 79.335
+  },
+  {
+   "text": "parfois",
+   "start": 79.335,
+   "end": 79.623
+  },
+  {
+   "text": "une",
+   "start": 79.623,
+   "end": 79.685
+  },
+  {
+   "text": "prédisposition",
+   "start": 79.685,
+   "end": 80.398
+  },
+  {
+   "text": "de",
+   "start": 80.398,
+   "end": 80.485
+  },
+  {
+   "text": "famille.",
+   "start": 80.485,
+   "end": 80.972
+  },
+  {
+   "text": "Pour",
+   "start": 81.964,
+   "end": 82.064
+  },
+  {
+   "text": "le",
+   "start": 82.064,
+   "end": 82.126
+  },
+  {
+   "text": "trouver :",
+   "start": 82.126,
+   "end": 82.551
+  },
+  {
+   "text": "une",
+   "start": 82.889,
+   "end": 82.951
+  },
+  {
+   "text": "prise",
+   "start": 82.964,
+   "end": 83.163
+  },
+  {
+   "text": "de",
+   "start": 83.163,
+   "end": 83.301
+  },
+  {
+   "text": "sang,",
+   "start": 83.301,
+   "end": 83.626
+  },
+  {
+   "text": "puis",
+   "start": 83.939,
+   "end": 84.051
+  },
+  {
+   "text": "une",
+   "start": 84.051,
+   "end": 84.139
+  },
+  {
+   "text": "échographie,",
+   "start": 84.139,
+   "end": 84.814
+  },
+  {
+   "text": "un",
+   "start": 85.101,
+   "end": 85.214
+  },
+  {
+   "text": "scanner",
+   "start": 85.214,
+   "end": 85.651
+  },
+  {
+   "text": "et",
+   "start": 85.651,
+   "end": 85.676
+  },
+  {
+   "text": "une",
+   "start": 85.676,
+   "end": 85.801
+  },
+  {
+   "text": "IRM",
+   "start": 85.801,
+   "end": 86.189
+  },
+  {
+   "text": "des",
+   "start": 86.189,
+   "end": 86.264
+  },
+  {
+   "text": "voies",
+   "start": 86.264,
+   "end": 86.401
+  },
+  {
+   "text": "biliaires.",
+   "start": 86.401,
+   "end": 86.951
+  },
+  {
+   "text": "Et",
+   "start": 87.288,
+   "end": 87.426
+  },
+  {
+   "text": "parfois,",
+   "start": 87.426,
+   "end": 87.913
+  },
+  {
+   "text": "une",
+   "start": 88.201,
+   "end": 88.288
+  },
+  {
+   "text": "petite",
+   "start": 88.288,
+   "end": 88.551
+  },
+  {
+   "text": "caméra",
+   "start": 88.551,
+   "end": 88.901
+  },
+  {
+   "text": "passe",
+   "start": 88.901,
+   "end": 89.139
+  },
+  {
+   "text": "par",
+   "start": 89.139,
+   "end": 89.264
+  },
+  {
+   "text": "la",
+   "start": 89.264,
+   "end": 89.364
+  },
+  {
+   "text": "bouche",
+   "start": 89.364,
+   "end": 89.626
+  },
+  {
+   "text": "jusqu'au",
+   "start": 89.626,
+   "end": 89.864
+  },
+  {
+   "text": "cholédoque,",
+   "start": 89.864,
+   "end": 90.464
+  },
+  {
+   "text": "pour",
+   "start": 90.714,
+   "end": 90.851
+  },
+  {
+   "text": "faire",
+   "start": 90.851,
+   "end": 91.014
+  },
+  {
+   "text": "une",
+   "start": 91.014,
+   "end": 91.101
+  },
+  {
+   "text": "biopsie,",
+   "start": 91.101,
+   "end": 91.639
+  },
+  {
+   "text": "un",
+   "start": 91.901,
+   "end": 91.989
+  },
+  {
+   "text": "petit",
+   "start": 91.989,
+   "end": 92.251
+  },
+  {
+   "text": "prélèvement.",
+   "start": 92.251,
+   "end": 92.826
+  },
+  {
+   "text": "Pour",
+   "start": 93.78,
+   "end": 93.993
+  },
+  {
+   "text": "le",
+   "start": 93.993,
+   "end": 94.068
+  },
+  {
+   "text": "soigner :",
+   "start": 94.068,
+   "end": 94.517
+  },
+  {
+   "text": "la",
+   "start": 94.918,
+   "end": 94.98
+  },
+  {
+   "text": "chirurgie",
+   "start": 94.98,
+   "end": 95.443
+  },
+  {
+   "text": "quand",
+   "start": 95.443,
+   "end": 95.568
+  },
+  {
+   "text": "c'est",
+   "start": 95.568,
+   "end": 95.693
+  },
+  {
+   "text": "possible,",
+   "start": 95.693,
+   "end": 96.243
+  },
+  {
+   "text": "qui",
+   "start": 96.48,
+   "end": 96.593
+  },
+  {
+   "text": "retire",
+   "start": 96.593,
+   "end": 96.892
+  },
+  {
+   "text": "la",
+   "start": 96.892,
+   "end": 96.968
+  },
+  {
+   "text": "tumeur",
+   "start": 96.968,
+   "end": 97.355
+  },
+  {
+   "text": "avec",
+   "start": 97.355,
+   "end": 97.568
+  },
+  {
+   "text": "une",
+   "start": 97.568,
+   "end": 97.655
+  },
+  {
+   "text": "partie",
+   "start": 97.655,
+   "end": 97.918
+  },
+  {
+   "text": "du",
+   "start": 97.918,
+   "end": 98.017
+  },
+  {
+   "text": "foie",
+   "start": 98.017,
+   "end": 98.343
+  },
+  {
+   "text": "ou",
+   "start": 98.343,
+   "end": 98.43
+  },
+  {
+   "text": "la",
+   "start": 98.43,
+   "end": 98.517
+  },
+  {
+   "text": "vésicule.",
+   "start": 98.517,
+   "end": 99.218
+  },
+  {
+   "text": "Sinon,",
+   "start": 99.555,
+   "end": 100.093
+  },
+  {
+   "text": "la",
+   "start": 100.43,
+   "end": 100.517
+  },
+  {
+   "text": "chimiothérapie,",
+   "start": 100.517,
+   "end": 101.38
+  },
+  {
+   "text": "parfois",
+   "start": 101.693,
+   "end": 102.005
+  },
+  {
+   "text": "la",
+   "start": 102.005,
+   "end": 102.093
+  },
+  {
+   "text": "radiothérapie.",
+   "start": 102.093,
+   "end": 102.93
+  },
+  {
+   "text": "Et",
+   "start": 103.267,
+   "end": 103.405
+  },
+  {
+   "text": "si",
+   "start": 103.405,
+   "end": 103.53
+  },
+  {
+   "text": "la",
+   "start": 103.53,
+   "end": 103.618
+  },
+  {
+   "text": "bile",
+   "start": 103.618,
+   "end": 103.805
+  },
+  {
+   "text": "est",
+   "start": 103.805,
+   "end": 103.843
+  },
+  {
+   "text": "bloquée,",
+   "start": 103.843,
+   "end": 104.343
+  },
+  {
+   "text": "on",
+   "start": 104.63,
+   "end": 104.668
+  },
+  {
+   "text": "pose",
+   "start": 104.668,
+   "end": 104.88
+  },
+  {
+   "text": "une",
+   "start": 104.88,
+   "end": 104.968
+  },
+  {
+   "text": "prothèse,",
+   "start": 104.968,
+   "end": 105.53
+  },
+  {
+   "text": "un",
+   "start": 105.767,
+   "end": 105.83
+  },
+  {
+   "text": "petit",
+   "start": 105.83,
+   "end": 106.105
+  },
+  {
+   "text": "tube",
+   "start": 106.105,
+   "end": 106.368
+  },
+  {
+   "text": "qui",
+   "start": 106.368,
+   "end": 106.48
+  },
+  {
+   "text": "la",
+   "start": 106.48,
+   "end": 106.568
+  },
+  {
+   "text": "laisse",
+   "start": 106.568,
+   "end": 106.793
+  },
+  {
+   "text": "passer :",
+   "start": 106.793,
+   "end": 107.205
+  },
+  {
+   "text": "la",
+   "start": 107.555,
+   "end": 107.605
+  },
+  {
+   "text": "jaunisse",
+   "start": 107.605,
+   "end": 107.98
+  },
+  {
+   "text": "disparaît.",
+   "start": 107.98,
+   "end": 108.58
+  },
+  {
+   "text": "Alors,",
+   "start": 109.594,
+   "end": 109.925
+  },
+  {
+   "text": "va",
+   "start": 110.121,
+   "end": 110.195
+  },
+  {
+   "text": "lui",
+   "start": 110.195,
+   "end": 110.305
+  },
+  {
+   "text": "en",
+   "start": 110.305,
+   "end": 110.354
+  },
+  {
+   "text": "parler :",
+   "start": 110.354,
+   "end": 110.795
+  },
+  {
+   "text": "des",
+   "start": 111.126,
+   "end": 111.236
+  },
+  {
+   "text": "yeux",
+   "start": 111.236,
+   "end": 111.383
+  },
+  {
+   "text": "jaunes,",
+   "start": 111.383,
+   "end": 111.739
+  },
+  {
+   "text": "des",
+   "start": 111.996,
+   "end": 112.082
+  },
+  {
+   "text": "urines",
+   "start": 112.082,
+   "end": 112.388
+  },
+  {
+   "text": "foncées",
+   "start": 112.388,
+   "end": 112.805
+  },
+  {
+   "text": "ou",
+   "start": 112.805,
+   "end": 112.878
+  },
+  {
+   "text": "une",
+   "start": 112.878,
+   "end": 112.989
+  },
+  {
+   "text": "peau",
+   "start": 112.989,
+   "end": 113.111
+  },
+  {
+   "text": "qui",
+   "start": 113.111,
+   "end": 113.234
+  },
+  {
+   "text": "gratte",
+   "start": 113.234,
+   "end": 113.479
+  },
+  {
+   "text": "sans",
+   "start": 113.479,
+   "end": 113.589
+  },
+  {
+   "text": "raison,",
+   "start": 113.589,
+   "end": 113.957
+  },
+  {
+   "text": "on",
+   "start": 114.141,
+   "end": 114.165
+  },
+  {
+   "text": "consulte",
+   "start": 114.165,
+   "end": 114.631
+  },
+  {
+   "text": "vite !",
+   "start": 114.631,
+   "end": 115.047
+  }
+ ]
+}

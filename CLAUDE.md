@@ -590,6 +590,17 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   MICI), les examens (toucher rectal, anuscopie, biopsie, IRM + scanner), les traitements (radiochimiothérapie qui garde le
   sphincter, chirurgie), chute « du sang qui dure, on consulte… le vaccin HPV, filles et garçons ». Briques
   `src/brand/anal.tsx`. Storyboard `docs/lpi/storyboard-cancer-anus.md`.
+- `Cancer-Voies-Biliaires` (n° 60, ≈ 1 min 59, format « pathologie », voix gratuite d'abord, sans barre de progression) :
+  demandé « pareil, à l'aide de ce schéma, sans les annotations ». Schéma fourni `public/images/biliaire/biliaire-cancer.webp`
+  nettoyé par `scripts/brand/clean_biliaire_diagram.py` → `-anatomie.png`, `-sain.png`, `-cancer.png`. 5 étiquettes
+  cachaient un bord d'organe : chaque bord ajusté (polynôme, ou droite entre deux coins visibles), pixels repris à la même
+  distance du bord, sources prises du bon côté du canal jaune. Accroche **« il se gratte la nuit »** avec **« ton
+  père »** : chambre la nuit (`Bedroom`, réveil 01:00 → 03:00, griffures `ScratchMarks`), urines foncées, yeux jaunes dans
+  le miroir (`DadBalcony` `jaundice`), loupe sur la voie biliaire. Puis la bile et les voies biliaires, le cancer (rare,
+  souvent tard), les 2 types (cholangiocarcinome, vésicule), les signes (la bile repart : ictère, urines foncées, selles
+  claires, démangeaisons), les risques, les examens, les traitements (prothèse : la jaunisse disparaît), chute « on
+  consulte vite ». Briques `src/brand/biliary.tsx`. Voix : « cholédoque » est bien lu (Whisper écrit « collédoque »).
+  Storyboard `docs/lpi/storyboard-cancer-voies-biliaires.md`.
 
 ## Voix ElevenLabs « Laura » (choisie par le propriétaire pour les nouvelles vidéos)
 

@@ -1,0 +1,47 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Une heure, trois heures… ton père se gratte partout, et il n'arrive plus à dormir. Le matin, ses urines sont foncées… et dans le miroir, le blanc de ses yeux est devenu jaune. Ce n'est pas la peau : c'est la bile qui ne s'écoule plus. Et ça, ça se montre vite à un médecin."
+ },
+ {
+  "id": "voies",
+  "rate": "+0%",
+  "text": "Le foie fabrique la bile, un liquide qui aide à digérer les graisses. Elle circule dans de petits canaux : les voies biliaires. D'abord dans le foie, puis ils se rejoignent. La vésicule biliaire la stocke entre les repas. Et le cholédoque, le canal principal, la verse dans le duodénum, le début de l'intestin."
+ },
+ {
+  "id": "cancer",
+  "rate": "+0%",
+  "text": "Le cancer des voies biliaires, ce sont des cellules de la paroi de ces canaux qui se multiplient sans contrôle. Elles forment une tumeur, qui rétrécit le canal. C'est un cancer rare, mais souvent découvert tard."
+ },
+ {
+  "id": "types",
+  "rate": "+0%",
+  "text": "Il en existe deux grands types. Le cholangiocarcinome, la tumeur des canaux biliaires : c'est le plus fréquent. Et le cancer de la vésicule biliaire, plus rare."
+ },
+ {
+  "id": "signes",
+  "rate": "+0%",
+  "text": "Quand la tumeur bouche le canal, la bile repart dans le sang. La peau et les yeux jaunissent : c'est l'ictère. Les urines deviennent foncées, les selles claires, et la peau gratte. Parfois aussi : une douleur à droite sous les côtes, de la fatigue, une perte de poids, ou de la fièvre."
+ },
+ {
+  "id": "risques",
+  "rate": "+0%",
+  "text": "Le risque augmente avec des calculs biliaires qui durent, une inflammation chronique des canaux, une maladie du foie comme la cirrhose ou une hépatite, certaines maladies inflammatoires de l'intestin, et parfois une prédisposition de famille."
+ },
+ {
+  "id": "examens",
+  "rate": "+0%",
+  "text": "Pour le trouver : une prise de sang, puis une échographie, un scanner et une {IRM|I R M} des voies biliaires. Et parfois, une petite caméra passe par la bouche jusqu'au cholédoque, pour faire une biopsie, un petit prélèvement."
+ },
+ {
+  "id": "traitement",
+  "rate": "+0%",
+  "text": "Pour le soigner : la chirurgie quand c'est possible, qui retire la tumeur avec une partie du foie ou la vésicule. Sinon, la chimiothérapie, parfois la radiothérapie. Et si la bile est bloquée, on pose une prothèse, un petit tube qui la laisse passer : la jaunisse disparaît."
+ },
+ {
+  "id": "fin",
+  "rate": "+2%",
+  "text": "Alors, va lui en parler : des yeux jaunes, des urines foncées ou une peau qui gratte sans raison, on consulte vite !"
+ }
+]
