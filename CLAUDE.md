@@ -534,7 +534,7 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   (+ biopsies, scanner), les traitements (chirurgie, chimiothérapie avant / après ; très tôt : retrait par la caméra, sans
   opérer), chute « on consulte… au lieu de prendre des pansements pendant des mois ». Briques `src/brand/stomach.tsx`.
   Voix : « {Helicobacter pylori|hélicobactère pilori} ». Storyboard `docs/lpi/storyboard-cancer-estomac.md`.
-- `Cancer-Rein` (n° 56, ≈ 1 min 38, format « pathologie », voix gratuite d'abord, sans barre de progression) : demandé
+- `Cancer-Rein` (n° 56, ≈ 1 min 40, format « pathologie », voix Laura après validation (1 830 crédits), sans barre de progression) : demandé
   « pareil, à l'aide de ce schéma, sans les annotations ». Schéma fourni `public/images/rein/rein-cancer.webp` (rein en
   coupe, surrénale, artère / veine rénales, uretère + « focus » rein sain / avec cancer) nettoyé par
   `scripts/brand/clean_rein_diagram.py` → `-anatomie.png`, `-sain.png`, `-cancer.png`. **Piège** : la veine rénale est

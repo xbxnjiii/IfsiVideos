@@ -66,7 +66,7 @@ pas de logiciel de montage, pas de banque d'images.
 | 53 | Pathologie : le cancer de la vessie (voix Laura, accroche « l'eau qui rougit », schéma fourni sans annotations) | `Cancer-Vessie` | [voix/53-cancer-vessie.script.json](voix/53-cancer-vessie.script.json) | [storyboard](docs/lpi/storyboard-cancer-vessie.md) |
 | 54 | Pathologie : le cancer du pancréas (voix Laura, accroche « le jaune dans le miroir », schéma fourni sans annotations) | `Cancer-Pancreas` | [voix/54-cancer-pancreas.script.json](voix/54-cancer-pancreas.script.json) | [storyboard](docs/lpi/storyboard-cancer-pancreas.md) |
 | 55 | Pathologie : le cancer de l'estomac (voix Laura, accroche « l'assiette repoussée », schéma fourni sans annotations) | `Cancer-Estomac` | [voix/55-cancer-estomac.script.json](voix/55-cancer-estomac.script.json) | [storyboard](docs/lpi/storyboard-cancer-estomac.md) |
-| 56 | Pathologie : le cancer du rein (voix gratuite, accroche « découvert par hasard », schéma fourni sans annotations) | `Cancer-Rein` | [voix/56-cancer-rein.script.json](voix/56-cancer-rein.script.json) | [storyboard](docs/lpi/storyboard-cancer-rein.md) |
+| 56 | Pathologie : le cancer du rein (voix Laura, accroche « découvert par hasard », schéma fourni sans annotations) | `Cancer-Rein` | [voix/56-cancer-rein.script.json](voix/56-cancer-rein.script.json) | [storyboard](docs/lpi/storyboard-cancer-rein.md) |
 
 ## Utilisation
 
