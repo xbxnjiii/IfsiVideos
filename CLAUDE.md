@@ -564,7 +564,7 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   foie ». Briques `src/brand/liver.tsx`. Voix : « sous les côtes à droite » était entendu « sous les côtés droites » →
   « à droite, juste sous les côtes » ; « greffe » entendu « grève » → « on remplace le foie : c'est la greffe ».
   Storyboard `docs/lpi/storyboard-cancer-foie.md`.
-- `Cancer-Oesophage` (n° 58, ≈ 1 min 56, format « pathologie », voix gratuite d'abord, sans barre de progression) : demandé
+- `Cancer-Oesophage` (n° 58, ≈ 2 min 04, format « pathologie », voix Laura après validation (2 213 crédits), sans barre de progression) : demandé
   « pareil, à l'aide de ce schéma, sans les annotations ». Schéma fourni `public/images/oesophage/oesophage-cancer.webp`
   nettoyé par `scripts/brand/clean_oesophage_diagram.py` → `-anatomie.png`, `-coupe.png` (le tube en coupe), `-sain.png`,
   `-cancer.png`. **Étiquettes posées sur la silhouette couleur peau** (impossible à reconstruire proprement) : on garde la
