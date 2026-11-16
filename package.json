@@ -74,7 +74,8 @@
     "render:cancer-foie": "remotion render Cancer-Foie out/57-cancer-foie.mp4",
     "render:cancer-oesophage": "remotion render Cancer-Oesophage out/58-cancer-oesophage.mp4",
     "render:cancer-anus": "remotion render Cancer-Anus out/59-cancer-anus.mp4",
-    "render:cancer-voies-biliaires": "remotion render Cancer-Voies-Biliaires out/60-cancer-voies-biliaires.mp4"
+    "render:cancer-voies-biliaires": "remotion render Cancer-Voies-Biliaires out/60-cancer-voies-biliaires.mp4",
+    "render:tubes-prelevement": "remotion render Tubes-Prelevement out/61-tubes-prelevement.mp4"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.532",

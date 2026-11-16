@@ -122,6 +122,8 @@ import {CancerAnus, CancerAnusProps} from './videos/cancer-anus/CancerAnus';
 import {TL as CANCER_ANUS_TL} from './videos/cancer-anus/timeline';
 import {CancerVoiesBiliaires, CancerVoiesBiliairesProps} from './videos/cancer-voies-biliaires/CancerVoiesBiliaires';
 import {TL as CANCER_VOIES_BILIAIRES_TL} from './videos/cancer-voies-biliaires/timeline';
+import {TubesPrelevement, TubesPrelevementProps} from './videos/tubes-prelevement/TubesPrelevement';
+import {TL as TUBES_PRELEVEMENT_TL} from './videos/tubes-prelevement/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -718,6 +720,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies CancerVoiesBiliairesProps}
+		/>
+		{/* 61 · Tubes-Prelevement */}
+		<Composition
+			id="Tubes-Prelevement"
+			component={TubesPrelevement}
+			durationInFrames={TUBES_PRELEVEMENT_TL.total}
+			fps={TUBES_PRELEVEMENT_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies TubesPrelevementProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition

@@ -1,0 +1,2028 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 137.814,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.049,
+   "end": 8.054
+  },
+  {
+   "id": "pourquoi",
+   "start": 9.0,
+   "end": 23.875
+  },
+  {
+   "id": "hemoc",
+   "start": 24.863,
+   "end": 37.063
+  },
+  {
+   "id": "citrate",
+   "start": 38.025,
+   "end": 56.0
+  },
+  {
+   "id": "sec",
+   "start": 56.983,
+   "end": 71.683
+  },
+  {
+   "id": "hepar",
+   "start": 72.678,
+   "end": 87.14
+  },
+  {
+   "id": "edta",
+   "start": 88.094,
+   "end": 104.756
+  },
+  {
+   "id": "fluor",
+   "start": 105.721,
+   "end": 113.421
+  },
+  {
+   "id": "gestes",
+   "start": 114.37,
+   "end": 127.42
+  },
+  {
+   "id": "fin",
+   "start": 128.432,
+   "end": 137.476
+  }
+ ],
+ "words": [
+  {
+   "text": "Ton",
+   "start": 0.049,
+   "end": 0.193
+  },
+  {
+   "text": "patient",
+   "start": 0.193,
+   "end": 0.506
+  },
+  {
+   "text": "va",
+   "start": 0.506,
+   "end": 0.59
+  },
+  {
+   "text": "très",
+   "start": 0.59,
+   "end": 0.77
+  },
+  {
+   "text": "bien…",
+   "start": 0.77,
+   "end": 1.035
+  },
+  {
+   "text": "mais",
+   "start": 1.431,
+   "end": 1.503
+  },
+  {
+   "text": "le",
+   "start": 1.503,
+   "end": 1.575
+  },
+  {
+   "text": "labo",
+   "start": 1.575,
+   "end": 1.804
+  },
+  {
+   "text": "t'appelle :",
+   "start": 1.804,
+   "end": 2.273
+  },
+  {
+   "text": "son",
+   "start": 2.537,
+   "end": 2.657
+  },
+  {
+   "text": "potassium",
+   "start": 2.657,
+   "end": 3.162
+  },
+  {
+   "text": "est",
+   "start": 3.162,
+   "end": 3.198
+  },
+  {
+   "text": "à",
+   "start": 3.198,
+   "end": 3.33
+  },
+  {
+   "text": "sept !",
+   "start": 3.33,
+   "end": 3.775
+  },
+  {
+   "text": "Une",
+   "start": 4.112,
+   "end": 4.292
+  },
+  {
+   "text": "urgence ?",
+   "start": 4.292,
+   "end": 4.929
+  },
+  {
+   "text": "Non.",
+   "start": 5.266,
+   "end": 5.747
+  },
+  {
+   "text": "Une",
+   "start": 6.071,
+   "end": 6.275
+  },
+  {
+   "text": "erreur…",
+   "start": 6.275,
+   "end": 6.708
+  },
+  {
+   "text": "dans",
+   "start": 7.08,
+   "end": 7.2
+  },
+  {
+   "text": "l'ordre",
+   "start": 7.2,
+   "end": 7.501
+  },
+  {
+   "text": "des",
+   "start": 7.501,
+   "end": 7.597
+  },
+  {
+   "text": "tubes.",
+   "start": 7.597,
+   "end": 8.054
+  },
+  {
+   "text": "Chaque",
+   "start": 9.0,
+   "end": 9.337
+  },
+  {
+   "text": "tube",
+   "start": 9.337,
+   "end": 9.65
+  },
+  {
+   "text": "contient",
+   "start": 9.65,
+   "end": 10.0
+  },
+  {
+   "text": "un",
+   "start": 10.0,
+   "end": 10.037
+  },
+  {
+   "text": "produit,",
+   "start": 10.037,
+   "end": 10.562
+  },
+  {
+   "text": "un",
+   "start": 10.825,
+   "end": 10.925
+  },
+  {
+   "text": "additif.",
+   "start": 10.925,
+   "end": 11.712
+  },
+  {
+   "text": "Quand",
+   "start": 12.062,
+   "end": 12.175
+  },
+  {
+   "text": "tu",
+   "start": 12.175,
+   "end": 12.3
+  },
+  {
+   "text": "passes",
+   "start": 12.3,
+   "end": 12.512
+  },
+  {
+   "text": "d'un",
+   "start": 12.512,
+   "end": 12.65
+  },
+  {
+   "text": "tube",
+   "start": 12.65,
+   "end": 12.85
+  },
+  {
+   "text": "à",
+   "start": 12.85,
+   "end": 12.9
+  },
+  {
+   "text": "l'autre,",
+   "start": 12.9,
+   "end": 13.287
+  },
+  {
+   "text": "l'aiguille",
+   "start": 13.55,
+   "end": 13.787
+  },
+  {
+   "text": "traverse",
+   "start": 13.787,
+   "end": 14.175
+  },
+  {
+   "text": "chaque",
+   "start": 14.175,
+   "end": 14.462
+  },
+  {
+   "text": "bouchon…",
+   "start": 14.462,
+   "end": 14.912
+  },
+  {
+   "text": "et",
+   "start": 15.325,
+   "end": 15.4
+  },
+  {
+   "text": "emporte",
+   "start": 15.4,
+   "end": 15.712
+  },
+  {
+   "text": "une",
+   "start": 15.712,
+   "end": 15.787
+  },
+  {
+   "text": "micro-goutte",
+   "start": 15.787,
+   "end": 16.237
+  },
+  {
+   "text": "d'additif",
+   "start": 16.237,
+   "end": 16.8
+  },
+  {
+   "text": "dans",
+   "start": 16.8,
+   "end": 16.9
+  },
+  {
+   "text": "le",
+   "start": 16.9,
+   "end": 16.987
+  },
+  {
+   "text": "tube",
+   "start": 16.987,
+   "end": 17.175
+  },
+  {
+   "text": "suivant.",
+   "start": 17.175,
+   "end": 17.663
+  },
+  {
+   "text": "Si",
+   "start": 18.038,
+   "end": 18.262
+  },
+  {
+   "text": "ce",
+   "start": 18.262,
+   "end": 18.375
+  },
+  {
+   "text": "tube-là",
+   "start": 18.375,
+   "end": 18.712
+  },
+  {
+   "text": "n'aime",
+   "start": 18.712,
+   "end": 18.9
+  },
+  {
+   "text": "pas",
+   "start": 18.9,
+   "end": 19.012
+  },
+  {
+   "text": "ce",
+   "start": 19.012,
+   "end": 19.125
+  },
+  {
+   "text": "produit,",
+   "start": 19.125,
+   "end": 19.6
+  },
+  {
+   "text": "le",
+   "start": 19.913,
+   "end": 19.975
+  },
+  {
+   "text": "résultat",
+   "start": 19.975,
+   "end": 20.4
+  },
+  {
+   "text": "est",
+   "start": 20.4,
+   "end": 20.462
+  },
+  {
+   "text": "faux.",
+   "start": 20.462,
+   "end": 20.812
+  },
+  {
+   "text": "C'est",
+   "start": 21.15,
+   "end": 21.337
+  },
+  {
+   "text": "pour",
+   "start": 21.337,
+   "end": 21.512
+  },
+  {
+   "text": "ça",
+   "start": 21.512,
+   "end": 21.637
+  },
+  {
+   "text": "qu'on",
+   "start": 21.637,
+   "end": 21.8
+  },
+  {
+   "text": "suit",
+   "start": 21.8,
+   "end": 22.012
+  },
+  {
+   "text": "un",
+   "start": 22.012,
+   "end": 22.062
+  },
+  {
+   "text": "ordre",
+   "start": 22.062,
+   "end": 22.387
+  },
+  {
+   "text": "précis,",
+   "start": 22.387,
+   "end": 22.9
+  },
+  {
+   "text": "toujours",
+   "start": 23.15,
+   "end": 23.425
+  },
+  {
+   "text": "le",
+   "start": 23.425,
+   "end": 23.5
+  },
+  {
+   "text": "même.",
+   "start": 23.5,
+   "end": 23.875
+  },
+  {
+   "text": "En",
+   "start": 24.863,
+   "end": 24.951
+  },
+  {
+   "text": "premier :",
+   "start": 24.951,
+   "end": 25.425
+  },
+  {
+   "text": "les",
+   "start": 25.738,
+   "end": 25.813
+  },
+  {
+   "text": "hémocultures,",
+   "start": 25.813,
+   "end": 26.613
+  },
+  {
+   "text": "ces",
+   "start": 27.0,
+   "end": 27.113
+  },
+  {
+   "text": "flacons",
+   "start": 27.113,
+   "end": 27.463
+  },
+  {
+   "text": "qui",
+   "start": 27.463,
+   "end": 27.613
+  },
+  {
+   "text": "cherchent",
+   "start": 27.613,
+   "end": 27.851
+  },
+  {
+   "text": "des",
+   "start": 27.851,
+   "end": 27.938
+  },
+  {
+   "text": "microbes",
+   "start": 27.938,
+   "end": 28.338
+  },
+  {
+   "text": "dans",
+   "start": 28.338,
+   "end": 28.451
+  },
+  {
+   "text": "le",
+   "start": 28.451,
+   "end": 28.538
+  },
+  {
+   "text": "sang.",
+   "start": 28.538,
+   "end": 28.851
+  },
+  {
+   "text": "Elles",
+   "start": 29.188,
+   "end": 29.401
+  },
+  {
+   "text": "passent",
+   "start": 29.401,
+   "end": 29.626
+  },
+  {
+   "text": "avant",
+   "start": 29.626,
+   "end": 29.838
+  },
+  {
+   "text": "tout,",
+   "start": 29.838,
+   "end": 30.126
+  },
+  {
+   "text": "pour",
+   "start": 30.388,
+   "end": 30.513
+  },
+  {
+   "text": "rester",
+   "start": 30.513,
+   "end": 30.788
+  },
+  {
+   "text": "stériles.",
+   "start": 30.788,
+   "end": 31.388
+  },
+  {
+   "text": "D'abord",
+   "start": 31.738,
+   "end": 32.088
+  },
+  {
+   "text": "le",
+   "start": 32.088,
+   "end": 32.175
+  },
+  {
+   "text": "flacon",
+   "start": 32.175,
+   "end": 32.513
+  },
+  {
+   "text": "aérobie,",
+   "start": 32.513,
+   "end": 33.113
+  },
+  {
+   "text": "pour",
+   "start": 33.363,
+   "end": 33.488
+  },
+  {
+   "text": "les",
+   "start": 33.488,
+   "end": 33.563
+  },
+  {
+   "text": "microbes",
+   "start": 33.563,
+   "end": 33.988
+  },
+  {
+   "text": "qui",
+   "start": 33.988,
+   "end": 34.138
+  },
+  {
+   "text": "aiment",
+   "start": 34.138,
+   "end": 34.225
+  },
+  {
+   "text": "l'oxygène,",
+   "start": 34.225,
+   "end": 34.863
+  },
+  {
+   "text": "puis",
+   "start": 35.151,
+   "end": 35.288
+  },
+  {
+   "text": "l'anaérobie,",
+   "start": 35.288,
+   "end": 36.013
+  },
+  {
+   "text": "pour",
+   "start": 36.213,
+   "end": 36.363
+  },
+  {
+   "text": "ceux",
+   "start": 36.363,
+   "end": 36.463
+  },
+  {
+   "text": "qui",
+   "start": 36.463,
+   "end": 36.563
+  },
+  {
+   "text": "n'en",
+   "start": 36.563,
+   "end": 36.651
+  },
+  {
+   "text": "veulent",
+   "start": 36.651,
+   "end": 36.813
+  },
+  {
+   "text": "pas.",
+   "start": 36.813,
+   "end": 37.063
+  },
+  {
+   "text": "Ensuite,",
+   "start": 38.025,
+   "end": 38.612
+  },
+  {
+   "text": "le",
+   "start": 38.912,
+   "end": 38.975
+  },
+  {
+   "text": "bouchon",
+   "start": 38.975,
+   "end": 39.275
+  },
+  {
+   "text": "bleu",
+   "start": 39.275,
+   "end": 39.412
+  },
+  {
+   "text": "clair :",
+   "start": 39.412,
+   "end": 39.837
+  },
+  {
+   "text": "le",
+   "start": 40.237,
+   "end": 40.312
+  },
+  {
+   "text": "citrate.",
+   "start": 40.312,
+   "end": 41.0
+  },
+  {
+   "text": "C'est",
+   "start": 41.337,
+   "end": 41.537
+  },
+  {
+   "text": "le",
+   "start": 41.537,
+   "end": 41.625
+  },
+  {
+   "text": "tube",
+   "start": 41.625,
+   "end": 41.812
+  },
+  {
+   "text": "de",
+   "start": 41.812,
+   "end": 41.887
+  },
+  {
+   "text": "la",
+   "start": 41.887,
+   "end": 41.975
+  },
+  {
+   "text": "coagulation,",
+   "start": 41.975,
+   "end": 42.8
+  },
+  {
+   "text": "le",
+   "start": 43.087,
+   "end": 43.175
+  },
+  {
+   "text": "TP",
+   "start": 43.175,
+   "end": 43.6
+  },
+  {
+   "text": "et",
+   "start": 43.6,
+   "end": 43.7
+  },
+  {
+   "text": "le",
+   "start": 43.7,
+   "end": 43.825
+  },
+  {
+   "text": "TCA.",
+   "start": 43.825,
+   "end": 44.462
+  },
+  {
+   "text": "Il",
+   "start": 44.8,
+   "end": 45.0
+  },
+  {
+   "text": "se",
+   "start": 45.0,
+   "end": 45.112
+  },
+  {
+   "text": "remplit",
+   "start": 45.112,
+   "end": 45.387
+  },
+  {
+   "text": "jusqu'au",
+   "start": 45.387,
+   "end": 45.662
+  },
+  {
+   "text": "trait,",
+   "start": 45.662,
+   "end": 46.0
+  },
+  {
+   "text": "ni",
+   "start": 46.325,
+   "end": 46.425
+  },
+  {
+   "text": "plus,",
+   "start": 46.425,
+   "end": 46.712
+  },
+  {
+   "text": "ni",
+   "start": 46.975,
+   "end": 47.087
+  },
+  {
+   "text": "moins :",
+   "start": 47.087,
+   "end": 47.337
+  },
+  {
+   "text": "le",
+   "start": 47.7,
+   "end": 47.75
+  },
+  {
+   "text": "résultat",
+   "start": 47.75,
+   "end": 48.137
+  },
+  {
+   "text": "dépend",
+   "start": 48.137,
+   "end": 48.425
+  },
+  {
+   "text": "du",
+   "start": 48.425,
+   "end": 48.512
+  },
+  {
+   "text": "mélange",
+   "start": 48.512,
+   "end": 48.812
+  },
+  {
+   "text": "exact",
+   "start": 48.812,
+   "end": 49.225
+  },
+  {
+   "text": "entre",
+   "start": 49.225,
+   "end": 49.425
+  },
+  {
+   "text": "le",
+   "start": 49.425,
+   "end": 49.525
+  },
+  {
+   "text": "sang",
+   "start": 49.525,
+   "end": 49.725
+  },
+  {
+   "text": "et",
+   "start": 49.725,
+   "end": 49.787
+  },
+  {
+   "text": "le",
+   "start": 49.787,
+   "end": 49.875
+  },
+  {
+   "text": "citrate.",
+   "start": 49.875,
+   "end": 50.562
+  },
+  {
+   "text": "Et",
+   "start": 50.912,
+   "end": 51.012
+  },
+  {
+   "text": "avec",
+   "start": 51.012,
+   "end": 51.237
+  },
+  {
+   "text": "une",
+   "start": 51.237,
+   "end": 51.325
+  },
+  {
+   "text": "aiguille",
+   "start": 51.325,
+   "end": 51.6
+  },
+  {
+   "text": "à",
+   "start": 51.6,
+   "end": 51.662
+  },
+  {
+   "text": "ailettes,",
+   "start": 51.662,
+   "end": 52.05
+  },
+  {
+   "text": "la",
+   "start": 52.3,
+   "end": 52.375
+  },
+  {
+   "text": "tubulure",
+   "start": 52.375,
+   "end": 52.837
+  },
+  {
+   "text": "est",
+   "start": 52.837,
+   "end": 52.875
+  },
+  {
+   "text": "pleine",
+   "start": 52.875,
+   "end": 53.162
+  },
+  {
+   "text": "d'air :",
+   "start": 53.162,
+   "end": 53.475
+  },
+  {
+   "text": "on",
+   "start": 53.875,
+   "end": 53.9
+  },
+  {
+   "text": "remplit",
+   "start": 53.9,
+   "end": 54.15
+  },
+  {
+   "text": "d'abord",
+   "start": 54.15,
+   "end": 54.45
+  },
+  {
+   "text": "un",
+   "start": 54.45,
+   "end": 54.5
+  },
+  {
+   "text": "tube",
+   "start": 54.5,
+   "end": 54.687
+  },
+  {
+   "text": "de",
+   "start": 54.687,
+   "end": 54.787
+  },
+  {
+   "text": "purge,",
+   "start": 54.787,
+   "end": 55.237
+  },
+  {
+   "text": "qu'on",
+   "start": 55.375,
+   "end": 55.475
+  },
+  {
+   "text": "jette.",
+   "start": 55.475,
+   "end": 56.0
+  },
+  {
+   "text": "Puis",
+   "start": 56.983,
+   "end": 57.121
+  },
+  {
+   "text": "le",
+   "start": 57.121,
+   "end": 57.209
+  },
+  {
+   "text": "tube",
+   "start": 57.209,
+   "end": 57.421
+  },
+  {
+   "text": "sec,",
+   "start": 57.421,
+   "end": 57.834
+  },
+  {
+   "text": "à",
+   "start": 58.071,
+   "end": 58.096
+  },
+  {
+   "text": "bouchon",
+   "start": 58.096,
+   "end": 58.396
+  },
+  {
+   "text": "rouge,",
+   "start": 58.396,
+   "end": 58.746
+  },
+  {
+   "text": "ou",
+   "start": 59.059,
+   "end": 59.084
+  },
+  {
+   "text": "jaune",
+   "start": 59.084,
+   "end": 59.321
+  },
+  {
+   "text": "avec",
+   "start": 59.321,
+   "end": 59.546
+  },
+  {
+   "text": "un",
+   "start": 59.546,
+   "end": 59.633
+  },
+  {
+   "text": "gel.",
+   "start": 59.633,
+   "end": 60.071
+  },
+  {
+   "text": "Lui,",
+   "start": 60.459,
+   "end": 60.809
+  },
+  {
+   "text": "au",
+   "start": 61.034,
+   "end": 61.071
+  },
+  {
+   "text": "contraire,",
+   "start": 61.071,
+   "end": 61.696
+  },
+  {
+   "text": "aide",
+   "start": 62.008,
+   "end": 62.096
+  },
+  {
+   "text": "le",
+   "start": 62.096,
+   "end": 62.209
+  },
+  {
+   "text": "sang",
+   "start": 62.209,
+   "end": 62.434
+  },
+  {
+   "text": "à",
+   "start": 62.434,
+   "end": 62.496
+  },
+  {
+   "text": "faire",
+   "start": 62.496,
+   "end": 62.684
+  },
+  {
+   "text": "un",
+   "start": 62.684,
+   "end": 62.746
+  },
+  {
+   "text": "caillot.",
+   "start": 62.746,
+   "end": 63.196
+  },
+  {
+   "text": "On",
+   "start": 63.546,
+   "end": 63.646
+  },
+  {
+   "text": "récupère",
+   "start": 63.646,
+   "end": 64.096
+  },
+  {
+   "text": "le",
+   "start": 64.096,
+   "end": 64.183
+  },
+  {
+   "text": "sérum,",
+   "start": 64.183,
+   "end": 64.671
+  },
+  {
+   "text": "le",
+   "start": 64.984,
+   "end": 65.034
+  },
+  {
+   "text": "liquide",
+   "start": 65.034,
+   "end": 65.359
+  },
+  {
+   "text": "au-dessus,",
+   "start": 65.359,
+   "end": 65.846
+  },
+  {
+   "text": "pour",
+   "start": 66.159,
+   "end": 66.271
+  },
+  {
+   "text": "la",
+   "start": 66.271,
+   "end": 66.346
+  },
+  {
+   "text": "biochimie",
+   "start": 66.346,
+   "end": 66.946
+  },
+  {
+   "text": "et",
+   "start": 66.946,
+   "end": 67.046
+  },
+  {
+   "text": "les",
+   "start": 67.046,
+   "end": 67.159
+  },
+  {
+   "text": "sérologies.",
+   "start": 67.159,
+   "end": 67.834
+  },
+  {
+   "text": "S'il",
+   "start": 68.196,
+   "end": 68.471
+  },
+  {
+   "text": "passait",
+   "start": 68.471,
+   "end": 68.771
+  },
+  {
+   "text": "avant",
+   "start": 68.771,
+   "end": 68.959
+  },
+  {
+   "text": "le",
+   "start": 68.959,
+   "end": 69.058
+  },
+  {
+   "text": "bleu,",
+   "start": 69.058,
+   "end": 69.346
+  },
+  {
+   "text": "son",
+   "start": 69.659,
+   "end": 69.784
+  },
+  {
+   "text": "activateur",
+   "start": 69.784,
+   "end": 70.396
+  },
+  {
+   "text": "fausserait",
+   "start": 70.396,
+   "end": 70.771
+  },
+  {
+   "text": "la",
+   "start": 70.771,
+   "end": 70.859
+  },
+  {
+   "text": "coagulation.",
+   "start": 70.859,
+   "end": 71.683
+  },
+  {
+   "text": "Ensuite,",
+   "start": 72.678,
+   "end": 73.24
+  },
+  {
+   "text": "le",
+   "start": 73.502,
+   "end": 73.59
+  },
+  {
+   "text": "tube",
+   "start": 73.59,
+   "end": 73.815
+  },
+  {
+   "text": "vert :",
+   "start": 73.815,
+   "end": 74.203
+  },
+  {
+   "text": "l'héparine.",
+   "start": 74.54,
+   "end": 75.228
+  },
+  {
+   "text": "Elle",
+   "start": 75.578,
+   "end": 75.79
+  },
+  {
+   "text": "empêche",
+   "start": 75.79,
+   "end": 76.165
+  },
+  {
+   "text": "le",
+   "start": 76.165,
+   "end": 76.278
+  },
+  {
+   "text": "sang",
+   "start": 76.278,
+   "end": 76.453
+  },
+  {
+   "text": "de",
+   "start": 76.453,
+   "end": 76.565
+  },
+  {
+   "text": "coaguler.",
+   "start": 76.565,
+   "end": 77.203
+  },
+  {
+   "text": "C'est",
+   "start": 77.54,
+   "end": 77.715
+  },
+  {
+   "text": "le",
+   "start": 77.715,
+   "end": 77.803
+  },
+  {
+   "text": "tube",
+   "start": 77.803,
+   "end": 78.015
+  },
+  {
+   "text": "de",
+   "start": 78.015,
+   "end": 78.103
+  },
+  {
+   "text": "l'ionogramme,",
+   "start": 78.103,
+   "end": 78.728
+  },
+  {
+   "text": "le",
+   "start": 79.002,
+   "end": 79.053
+  },
+  {
+   "text": "potassium",
+   "start": 79.053,
+   "end": 79.59
+  },
+  {
+   "text": "et",
+   "start": 79.59,
+   "end": 79.615
+  },
+  {
+   "text": "le",
+   "start": 79.615,
+   "end": 79.703
+  },
+  {
+   "text": "sodium,",
+   "start": 79.703,
+   "end": 80.178
+  },
+  {
+   "text": "et",
+   "start": 80.653,
+   "end": 80.715
+  },
+  {
+   "text": "aussi",
+   "start": 80.715,
+   "end": 80.915
+  },
+  {
+   "text": "de",
+   "start": 80.915,
+   "end": 81.002
+  },
+  {
+   "text": "la",
+   "start": 81.002,
+   "end": 81.078
+  },
+  {
+   "text": "créatinine,",
+   "start": 81.078,
+   "end": 81.803
+  },
+  {
+   "text": "pour",
+   "start": 82.002,
+   "end": 82.14
+  },
+  {
+   "text": "les",
+   "start": 82.14,
+   "end": 82.24
+  },
+  {
+   "text": "reins.",
+   "start": 82.24,
+   "end": 82.54
+  },
+  {
+   "text": "Une",
+   "start": 82.94,
+   "end": 83.103
+  },
+  {
+   "text": "goutte",
+   "start": 83.103,
+   "end": 83.303
+  },
+  {
+   "text": "d'héparine",
+   "start": 83.303,
+   "end": 83.765
+  },
+  {
+   "text": "dans",
+   "start": 83.765,
+   "end": 83.853
+  },
+  {
+   "text": "le",
+   "start": 83.853,
+   "end": 83.953
+  },
+  {
+   "text": "tube",
+   "start": 83.953,
+   "end": 84.165
+  },
+  {
+   "text": "bleu",
+   "start": 84.165,
+   "end": 84.428
+  },
+  {
+   "text": "fausserait",
+   "start": 84.428,
+   "end": 84.815
+  },
+  {
+   "text": "aussi",
+   "start": 84.815,
+   "end": 85.04
+  },
+  {
+   "text": "la",
+   "start": 85.04,
+   "end": 85.127
+  },
+  {
+   "text": "coagulation :",
+   "start": 85.127,
+   "end": 85.94
+  },
+  {
+   "text": "il",
+   "start": 86.265,
+   "end": 86.353
+  },
+  {
+   "text": "vient",
+   "start": 86.353,
+   "end": 86.502
+  },
+  {
+   "text": "donc",
+   "start": 86.502,
+   "end": 86.703
+  },
+  {
+   "text": "après.",
+   "start": 86.703,
+   "end": 87.14
+  },
+  {
+   "text": "Puis",
+   "start": 88.094,
+   "end": 88.269
+  },
+  {
+   "text": "le",
+   "start": 88.269,
+   "end": 88.344
+  },
+  {
+   "text": "violet :",
+   "start": 88.344,
+   "end": 88.806
+  },
+  {
+   "text": "l'EDTA.",
+   "start": 89.169,
+   "end": 90.007
+  },
+  {
+   "text": "Il",
+   "start": 90.344,
+   "end": 90.519
+  },
+  {
+   "text": "garde",
+   "start": 90.519,
+   "end": 90.744
+  },
+  {
+   "text": "les",
+   "start": 90.744,
+   "end": 90.856
+  },
+  {
+   "text": "cellules",
+   "start": 90.856,
+   "end": 91.156
+  },
+  {
+   "text": "du",
+   "start": 91.156,
+   "end": 91.257
+  },
+  {
+   "text": "sang",
+   "start": 91.257,
+   "end": 91.444
+  },
+  {
+   "text": "intactes :",
+   "start": 91.444,
+   "end": 91.944
+  },
+  {
+   "text": "c'est",
+   "start": 92.382,
+   "end": 92.494
+  },
+  {
+   "text": "le",
+   "start": 92.494,
+   "end": 92.581
+  },
+  {
+   "text": "tube",
+   "start": 92.581,
+   "end": 92.781
+  },
+  {
+   "text": "de",
+   "start": 92.781,
+   "end": 92.856
+  },
+  {
+   "text": "la",
+   "start": 92.856,
+   "end": 92.931
+  },
+  {
+   "text": "numération",
+   "start": 92.931,
+   "end": 93.419
+  },
+  {
+   "text": "formule",
+   "start": 93.419,
+   "end": 93.769
+  },
+  {
+   "text": "sanguine,",
+   "start": 93.769,
+   "end": 94.269
+  },
+  {
+   "text": "la",
+   "start": 94.556,
+   "end": 94.644
+  },
+  {
+   "text": "NFS.",
+   "start": 94.644,
+   "end": 95.269
+  },
+  {
+   "text": "Mais",
+   "start": 95.269,
+   "end": 95.394
+  },
+  {
+   "text": "l'EDTA",
+   "start": 95.394,
+   "end": 95.894
+  },
+  {
+   "text": "contient",
+   "start": 95.894,
+   "end": 96.206
+  },
+  {
+   "text": "du",
+   "start": 96.206,
+   "end": 96.294
+  },
+  {
+   "text": "potassium,",
+   "start": 96.294,
+   "end": 96.906
+  },
+  {
+   "text": "et",
+   "start": 97.231,
+   "end": 97.257
+  },
+  {
+   "text": "il",
+   "start": 97.257,
+   "end": 97.331
+  },
+  {
+   "text": "capture",
+   "start": 97.331,
+   "end": 97.669
+  },
+  {
+   "text": "le",
+   "start": 97.669,
+   "end": 97.731
+  },
+  {
+   "text": "calcium.",
+   "start": 97.731,
+   "end": 98.369
+  },
+  {
+   "text": "Une",
+   "start": 98.706,
+   "end": 98.894
+  },
+  {
+   "text": "micro-goutte",
+   "start": 98.894,
+   "end": 99.444
+  },
+  {
+   "text": "dans",
+   "start": 99.444,
+   "end": 99.544
+  },
+  {
+   "text": "le",
+   "start": 99.544,
+   "end": 99.632
+  },
+  {
+   "text": "tube",
+   "start": 99.632,
+   "end": 99.831
+  },
+  {
+   "text": "vert…",
+   "start": 99.831,
+   "end": 100.206
+  },
+  {
+   "text": "et",
+   "start": 100.644,
+   "end": 100.669
+  },
+  {
+   "text": "le",
+   "start": 100.669,
+   "end": 100.757
+  },
+  {
+   "text": "potassium",
+   "start": 100.757,
+   "end": 101.269
+  },
+  {
+   "text": "monte,",
+   "start": 101.269,
+   "end": 101.656
+  },
+  {
+   "text": "le",
+   "start": 101.919,
+   "end": 101.994
+  },
+  {
+   "text": "calcium",
+   "start": 101.994,
+   "end": 102.419
+  },
+  {
+   "text": "chute.",
+   "start": 102.419,
+   "end": 102.919
+  },
+  {
+   "text": "Voilà",
+   "start": 103.294,
+   "end": 103.544
+  },
+  {
+   "text": "l'erreur",
+   "start": 103.544,
+   "end": 103.906
+  },
+  {
+   "text": "de",
+   "start": 103.906,
+   "end": 103.994
+  },
+  {
+   "text": "notre",
+   "start": 103.994,
+   "end": 104.256
+  },
+  {
+   "text": "patient !",
+   "start": 104.256,
+   "end": 104.756
+  },
+  {
+   "text": "En",
+   "start": 105.721,
+   "end": 105.833
+  },
+  {
+   "text": "dernier :",
+   "start": 105.833,
+   "end": 106.32
+  },
+  {
+   "text": "le",
+   "start": 106.671,
+   "end": 106.758
+  },
+  {
+   "text": "gris,",
+   "start": 106.758,
+   "end": 107.083
+  },
+  {
+   "text": "le",
+   "start": 107.421,
+   "end": 107.496
+  },
+  {
+   "text": "fluorure.",
+   "start": 107.496,
+   "end": 108.195
+  },
+  {
+   "text": "Il",
+   "start": 108.533,
+   "end": 108.733
+  },
+  {
+   "text": "empêche",
+   "start": 108.733,
+   "end": 109.033
+  },
+  {
+   "text": "les",
+   "start": 109.033,
+   "end": 109.121
+  },
+  {
+   "text": "globules",
+   "start": 109.121,
+   "end": 109.57
+  },
+  {
+   "text": "de",
+   "start": 109.57,
+   "end": 109.671
+  },
+  {
+   "text": "manger",
+   "start": 109.671,
+   "end": 109.933
+  },
+  {
+   "text": "le",
+   "start": 109.933,
+   "end": 110.046
+  },
+  {
+   "text": "sucre",
+   "start": 110.046,
+   "end": 110.358
+  },
+  {
+   "text": "du",
+   "start": 110.358,
+   "end": 110.471
+  },
+  {
+   "text": "tube.",
+   "start": 110.471,
+   "end": 110.933
+  },
+  {
+   "text": "C'est",
+   "start": 111.283,
+   "end": 111.496
+  },
+  {
+   "text": "le",
+   "start": 111.496,
+   "end": 111.596
+  },
+  {
+   "text": "tube",
+   "start": 111.596,
+   "end": 111.82
+  },
+  {
+   "text": "de",
+   "start": 111.82,
+   "end": 111.908
+  },
+  {
+   "text": "la",
+   "start": 111.908,
+   "end": 112.008
+  },
+  {
+   "text": "glycémie",
+   "start": 112.008,
+   "end": 112.558
+  },
+  {
+   "text": "et",
+   "start": 112.558,
+   "end": 112.658
+  },
+  {
+   "text": "des",
+   "start": 112.658,
+   "end": 112.746
+  },
+  {
+   "text": "lactates.",
+   "start": 112.746,
+   "end": 113.421
+  },
+  {
+   "text": "Après",
+   "start": 114.37,
+   "end": 114.707
+  },
+  {
+   "text": "chaque",
+   "start": 114.707,
+   "end": 114.932
+  },
+  {
+   "text": "tube,",
+   "start": 114.932,
+   "end": 115.307
+  },
+  {
+   "text": "retourne-le",
+   "start": 115.645,
+   "end": 116.07
+  },
+  {
+   "text": "doucement,",
+   "start": 116.07,
+   "end": 116.607
+  },
+  {
+   "text": "plusieurs",
+   "start": 116.707,
+   "end": 117.032
+  },
+  {
+   "text": "fois,",
+   "start": 117.032,
+   "end": 117.357
+  },
+  {
+   "text": "sans",
+   "start": 117.595,
+   "end": 117.745
+  },
+  {
+   "text": "secouer :",
+   "start": 117.745,
+   "end": 118.245
+  },
+  {
+   "text": "l'additif",
+   "start": 118.557,
+   "end": 118.957
+  },
+  {
+   "text": "se",
+   "start": 118.957,
+   "end": 119.057
+  },
+  {
+   "text": "mélange,",
+   "start": 119.057,
+   "end": 119.532
+  },
+  {
+   "text": "et",
+   "start": 119.87,
+   "end": 119.882
+  },
+  {
+   "text": "les",
+   "start": 119.882,
+   "end": 119.957
+  },
+  {
+   "text": "globules",
+   "start": 119.957,
+   "end": 120.282
+  },
+  {
+   "text": "ne",
+   "start": 120.282,
+   "end": 120.37
+  },
+  {
+   "text": "cassent",
+   "start": 120.37,
+   "end": 120.57
+  },
+  {
+   "text": "pas.",
+   "start": 120.57,
+   "end": 120.695
+  },
+  {
+   "text": "Étiquette",
+   "start": 120.695,
+   "end": 121.095
+  },
+  {
+   "text": "les",
+   "start": 121.095,
+   "end": 121.17
+  },
+  {
+   "text": "tubes",
+   "start": 121.17,
+   "end": 121.407
+  },
+  {
+   "text": "devant",
+   "start": 121.407,
+   "end": 121.595
+  },
+  {
+   "text": "le",
+   "start": 121.595,
+   "end": 121.682
+  },
+  {
+   "text": "patient.",
+   "start": 121.682,
+   "end": 122.17
+  },
+  {
+   "text": "Et",
+   "start": 122.52,
+   "end": 122.62
+  },
+  {
+   "text": "attention :",
+   "start": 122.62,
+   "end": 123.195
+  },
+  {
+   "text": "les",
+   "start": 123.532,
+   "end": 123.582
+  },
+  {
+   "text": "couleurs",
+   "start": 123.582,
+   "end": 123.907
+  },
+  {
+   "text": "peuvent",
+   "start": 123.907,
+   "end": 124.095
+  },
+  {
+   "text": "changer",
+   "start": 124.095,
+   "end": 124.445
+  },
+  {
+   "text": "selon",
+   "start": 124.445,
+   "end": 124.67
+  },
+  {
+   "text": "les",
+   "start": 124.67,
+   "end": 124.77
+  },
+  {
+   "text": "marques.",
+   "start": 124.77,
+   "end": 125.22
+  },
+  {
+   "text": "Suis",
+   "start": 125.557,
+   "end": 125.845
+  },
+  {
+   "text": "toujours",
+   "start": 125.845,
+   "end": 126.157
+  },
+  {
+   "text": "le",
+   "start": 126.157,
+   "end": 126.232
+  },
+  {
+   "text": "protocole",
+   "start": 126.232,
+   "end": 126.745
+  },
+  {
+   "text": "de",
+   "start": 126.745,
+   "end": 126.857
+  },
+  {
+   "text": "ton",
+   "start": 126.857,
+   "end": 126.995
+  },
+  {
+   "text": "labo.",
+   "start": 126.995,
+   "end": 127.42
+  },
+  {
+   "text": "Alors,",
+   "start": 128.432,
+   "end": 128.775
+  },
+  {
+   "text": "on",
+   "start": 128.935,
+   "end": 128.959
+  },
+  {
+   "text": "récapitule :",
+   "start": 128.959,
+   "end": 129.67
+  },
+  {
+   "text": "hémocultures,",
+   "start": 129.89,
+   "end": 130.613
+  },
+  {
+   "text": "bleu,",
+   "start": 130.993,
+   "end": 131.275
+  },
+  {
+   "text": "rouge",
+   "start": 131.667,
+   "end": 131.888
+  },
+  {
+   "text": "ou",
+   "start": 131.888,
+   "end": 131.912
+  },
+  {
+   "text": "jaune,",
+   "start": 131.912,
+   "end": 132.292
+  },
+  {
+   "text": "vert,",
+   "start": 132.599,
+   "end": 132.954
+  },
+  {
+   "text": "violet,",
+   "start": 133.187,
+   "end": 133.579
+  },
+  {
+   "text": "et",
+   "start": 133.898,
+   "end": 133.971
+  },
+  {
+   "text": "gris.",
+   "start": 133.971,
+   "end": 134.339
+  },
+  {
+   "text": "Respecte",
+   "start": 134.694,
+   "end": 135.16
+  },
+  {
+   "text": "l'ordre…",
+   "start": 135.16,
+   "end": 135.552
+  },
+  {
+   "text": "et",
+   "start": 135.871,
+   "end": 135.895
+  },
+  {
+   "text": "le",
+   "start": 135.895,
+   "end": 135.969
+  },
+  {
+   "text": "labo",
+   "start": 135.969,
+   "end": 136.238
+  },
+  {
+   "text": "n'aura",
+   "start": 136.238,
+   "end": 136.447
+  },
+  {
+   "text": "plus",
+   "start": 136.447,
+   "end": 136.618
+  },
+  {
+   "text": "besoin",
+   "start": 136.618,
+   "end": 136.912
+  },
+  {
+   "text": "de",
+   "start": 136.912,
+   "end": 137.01
+  },
+  {
+   "text": "t'appeler !",
+   "start": 137.01,
+   "end": 137.476
+  }
+ ]
+}
