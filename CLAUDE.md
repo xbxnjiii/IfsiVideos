@@ -601,23 +601,23 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   claires, démangeaisons), les risques, les examens, les traitements (prothèse : la jaunisse disparaît), chute « on
   consulte vite ». Briques `src/brand/biliary.tsx`. Voix : « cholédoque » est bien lu (Whisper écrit « collédoque »).
   Storyboard `docs/lpi/storyboard-cancer-voies-biliaires.md`.
-- `Tubes-Prelevement` (n° 61, ≈ 2 min 21, format « inventaire », voix gratuite d'abord, sans barre de progression) : demandé « les
-  différents tubes pour un bilan sanguin, l'ordre, les couleurs, et pourquoi respecter l'ordre ». **Bouchons aux vraies couleurs**
-  (exception à la palette, nécessaire : `CAP` de `src/brand/tubes.tsx` : bleu clair, rouge / jaune, vert, violet, gris ; sang
-  rouge) ; la vidéo dit que les couleurs peuvent varier selon les marques (suivre le protocole du labo). Accroche **« le labo
-  appelle »** : le patient va très bien dans son lit, le téléphone sonne, fiche de résultat « potassium 7,0 » qui clignote,
-  « Une urgence ? » → tampon NON !, « une erreur… dans l'ordre des tubes » (le tube violet avant le vert, le vert se teinte).
-  Puis pourquoi (l'aiguille traverse les bouchons et emporte une micro-goutte d'additif dans le tube suivant → résultat faux),
-  un tube par scène avec la frise `OrderRail` en bas (case en cours en rose, cases passées cochées) : hémocultures (stériles,
-  aérobie puis anaérobie), citrate (TP, TCA, jusqu'au trait, 9 : 1, tube de purge avec une aiguille à ailettes), sec rouge /
-  jaune à gel (caillot, sérum ; avant le bleu = coagulation faussée), héparine (ionogramme, créatinine ; une goutte dans le bleu
-  fausse la coagulation), EDTA (NFS ; potassium + capture du calcium : fausse hyperkaliémie, fausse hypocalcémie dans le vert =
-  l'erreur de l'accroche, tampon FAUSSE ALERTE), fluorure (les globules ne mangent plus le sucre : glycémie, lactates), gestes
-  (retourner doucement sans secouer, étiqueter devant le patient, couleurs selon la marque), récap (la frise se remplit au mot,
-  résultat normal 4,2). Briques `src/brand/tubes.tsx` : `Tube` (`level`, `serum` + `gel`, `mark`, `additive`, `taint`, `bad`),
-  `HemoFlask` (`o2`, `noO2`), `OrderRail`, `SlotArt`, `NeedleUp` (micro-goutte), `RedCell` (`mouth`, `broken`), `WhiteCell`,
-  `Platelet`, `SugarCube`, `Ion`, `LabSheet` (`alarm`, `fake`), `ORDER`. Voix : « le vert » était entendu « le verre » → « le
-  tube vert ». Storyboard `docs/lpi/storyboard-tubes-prelevement.md`.
+- `Tubes-Prelevement` (n° 61, ≈ 1 min 42, format « inventaire », voix gratuite d'abord, sans barre de progression) : demandé « les
+  différents tubes pour un bilan sanguin, l'ordre, les couleurs, et pourquoi respecter l'ordre ». **v2 sur retour du
+  propriétaire** (avec son image de référence « Ordre de remplissage ») : **on ne dit pas à quoi sert chaque tube, seulement
+  l'ordre** ; pas d'exemple « s'il passait avant… » tube par tube ; plus de « 9 sang : 1 citrate » ni de « globules qui mangent
+  le sucre ». Ordre : hémocultures (aérobie **bouchon vert**, anaérobie **bouchon orange**) — ou, avec une aiguille à ailettes
+  sans hémocultures, le **tube de purge à bouchon blanc**, jeté ; avec une aiguille simple, on commence au bleu — puis bleu
+  citraté (jusqu'au trait), **jaune à gel puis rouge**, vert hépariné, violet EDTA, gris fluorure. **Bouchons aux vraies
+  couleurs** (exception à la palette, nécessaire : `CAP`, `HEMO_CAP` de `src/brand/tubes.tsx`) ; la vidéo dit que les couleurs
+  peuvent varier selon les marques. Accroche **« le labo appelle »** : le patient va très bien, le téléphone sonne, fiche
+  « potassium 7,0 » qui clignote, « Une urgence ? » → tampon NON !, « une erreur… dans l'ordre des tubes » (violet avant
+  jaune, le jaune se teinte). Puis pourquoi (l'aiguille traverse les bouchons, micro-goutte d'additif ; le violet contient du
+  potassium : s'il passe avant le jaune, le potassium monte dans le tube seulement → l'erreur du patient, tampon FAUSSE
+  ALERTE), puis l'ordre case par case avec la frise `OrderRail` de 7 cases en bas (`first` : flacons / purge / les deux),
+  gestes (retourner doucement sans secouer, étiqueter devant le patient, protocole du labo), récap (la frise se remplit au
+  mot, résultat normal 4,2). Briques `src/brand/tubes.tsx` : `Tube` (`level`, `serum` + `gel`, `mark`, `additive`, `taint`,
+  `bad`), `HemoFlask`, `OrderRail`, `SlotArt`, `NeedleUp` (micro-goutte), `Ion`, `LabSheet` (`alarm`, `fake`), `ORDER` (+ `RedCell`,
+  `WhiteCell`, `Platelet`, `SugarCube` de la v1, plus utilisés). Storyboard `docs/lpi/storyboard-tubes-prelevement.md`.
 
 ## Voix ElevenLabs « Laura » (choisie par le propriétaire pour les nouvelles vidéos)
 

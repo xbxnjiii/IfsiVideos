@@ -16,7 +16,10 @@ export const CAP = {
 	hepar: '#3FA34D',
 	edta: '#8E5CC0',
 	fluor: '#9AA0A6',
+	purge: '#F1F1EC',
 };
+/** Flacons d'hémoculture : aérobie bouchon vert, anaérobie bouchon orange (vraies couleurs). */
+export const HEMO_CAP = {aero: '#2F9E6E', anaero: '#EE7A2B'};
 export const BLOOD = '#A3172B';
 export const BLOOD_DARK = '#6E0E1C';
 export const SERUM = '#F1CF6E';
@@ -24,15 +27,16 @@ export type TubeKind = keyof typeof CAP;
 
 /** L'ordre, case par case (0 = hémocultures). */
 export const ORDER: {key: 'hemoc' | TubeKind; name: string; additive: string}[] = [
-	{key: 'hemoc', name: 'Hémocultures', additive: 'flacons'},
-	{key: 'citrate', name: 'Bleu clair', additive: 'citrate'},
-	{key: 'sec', name: 'Rouge / jaune', additive: 'sec'},
-	{key: 'hepar', name: 'Vert', additive: 'héparine'},
-	{key: 'edta', name: 'Violet', additive: 'EDTA'},
-	{key: 'fluor', name: 'Gris', additive: 'fluorure'},
+	{key: 'hemoc', name: 'Hémocultures', additive: 'hémoc.'},
+	{key: 'citrate', name: 'Bleu', additive: 'bleu'},
+	{key: 'gel', name: 'Jaune', additive: 'jaune'},
+	{key: 'sec', name: 'Rouge', additive: 'rouge'},
+	{key: 'hepar', name: 'Vert', additive: 'vert'},
+	{key: 'edta', name: 'Violet', additive: 'violet'},
+	{key: 'fluor', name: 'Gris', additive: 'gris'},
 ];
 
-const darker = (hex: string, k = 0.22) => {
+export const darker = (hex: string, k = 0.22) => {
 	const n = parseInt(hex.slice(1), 16);
 	const f = (v: number) => Math.round(v * (1 - k));
 	return `rgb(${f(n >> 16)}, ${f((n >> 8) & 255)}, ${f(n & 255)})`;
@@ -93,6 +97,7 @@ export const Tube: React.FC<{
 						{serum <= 0 ? <rect x={0} y={top + 6} width={100} height={400} fill={BLOOD_DARK} opacity={0.18} /> : null}
 					</>
 				) : null}
+				{gel && level <= 0 ? <path d="M16 330 Q50 316 84 330 V400 H16 Z" fill="#E4E9EE" stroke={alpha(N, 0.35)} strokeWidth={2} /> : null}
 				{taint > 0
 					? [...Array(16)].map((_, i) => {
 							const a = (i / 16) * Math.PI * 2;
@@ -193,19 +198,13 @@ export const HemoFlask: React.FC<{size?: number; cap?: string; label: string; o2
 };
 
 /** Petit tube ou paire de flacons pour une case de la frise (repère libre, hauteur ≈ 150). */
-export const SlotArt: React.FC<{k: number}> = ({k}) => {
+export const SlotArt: React.FC<{k: number; first?: 'hemoc' | 'purge' | 'both'}> = ({k, first = 'hemoc'}) => {
 	if (k === 0)
 		return (
-			<div style={{display: 'flex', gap: 4, alignItems: 'flex-end'}}>
-				<HemoFlask size={50} label="" cap={LPI.blue} />
-				<HemoFlask size={50} label="" cap={N} />
-			</div>
-		);
-	if (k === 2)
-		return (
-			<div style={{display: 'flex', gap: 6}}>
-				<Tube size={34} cap={CAP.sec} />
-				<Tube size={34} cap={CAP.gel} />
+			<div style={{display: 'flex', gap: 3, alignItems: 'flex-end'}}>
+				{first !== 'purge' ? <HemoFlask size={first === 'both' ? 34 : 46} label="" cap={HEMO_CAP.aero} /> : null}
+				{first !== 'purge' ? <HemoFlask size={first === 'both' ? 34 : 46} label="" cap={HEMO_CAP.anaero} /> : null}
+				{first !== 'hemoc' ? <Tube size={first === 'both' ? 26 : 36} cap={CAP.purge} /> : null}
 			</div>
 		);
 	const key = ORDER[k].key as TubeKind;
@@ -216,13 +215,13 @@ export const SlotArt: React.FC<{k: number}> = ({k}) => {
  * La frise de l'ordre (6 cases numérotées) : chaque case se remplit à `fill[i]` (pop), la case `cur` est surlignée en rose,
  * les cases passées se cochent. Centrée sur `y`.
  */
-export const OrderRail: React.FC<{y: number; at: number; fill: number[]; cur?: number; check?: number[]; scale?: number; out?: number; labels?: number[]}> = ({y, at: t0, fill, cur = -1, check = [], scale = 1, out = 1e9, labels = []}) => {
+export const OrderRail: React.FC<{y: number; at: number; fill: number[]; cur?: number; check?: number[]; scale?: number; out?: number; labels?: number[]; first?: 'hemoc' | 'purge' | 'both'}> = ({y, at: t0, fill, cur = -1, check = [], scale = 1, out = 1e9, labels = [], first = 'hemoc'}) => {
 	const frame = useCurrentFrame();
 	if (frame < t0 || frame > out + 8) return null;
 	const o = Math.min(1, (frame - t0) / 6) * Math.max(0, Math.min(1, (out + 8 - frame) / 8));
-	const W = 150;
-	const G = 14;
-	const x0 = 540 - (6 * W + 5 * G) / 2;
+	const W = 130;
+	const G = 10;
+	const x0 = 540 - (7 * W + 6 * G) / 2;
 	const pop = (t: number) => (frame < t ? 0 : 1 + 0.12 * Math.exp(-(frame - t) / 3) * Math.cos((frame - t) * 0.9) - Math.exp(-(frame - t) / 2));
 	return (
 		<div style={{position: 'absolute', left: 0, top: y - 125, width: 1080, height: 250, opacity: o, transform: `scale(${scale})`, transformOrigin: '540px 125px'}}>
@@ -251,10 +250,10 @@ export const OrderRail: React.FC<{y: number; at: number; fill: number[]; cur?: n
 						<div style={{position: 'absolute', left: 8, top: 8, width: 44, height: 44, borderRadius: 22, background: on ? LPI.pink : alpha(LPI.paper, 0.8), border: `4px solid ${N}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FONT.title, fontWeight: 900, fontSize: 28, color: N, zIndex: 2}}>{i + 1}</div>
 						{on ? (
 							<div style={{position: 'absolute', left: 0, right: 0, top: 26, height: 160, display: 'flex', alignItems: 'center', justifyContent: 'center', transform: `scale(${pop(f)})`}}>
-								<SlotArt k={i} />
+								<SlotArt k={i} first={first} />
 							</div>
 						) : null}
-						{lab ? <div style={{position: 'absolute', left: -10, right: -10, bottom: -50, textAlign: 'center', fontFamily: FONT.body, fontWeight: 900, fontSize: 25, color: N, whiteSpace: 'nowrap', transform: `scale(${pop(labels[i])})`}}>{it.additive}</div> : null}
+						{lab ? <div style={{position: 'absolute', left: -10, right: -10, bottom: -50, textAlign: 'center', fontFamily: FONT.body, fontWeight: 900, fontSize: 26, color: N, whiteSpace: 'nowrap', transform: `scale(${pop(labels[i])})`}}>{it.additive}</div> : null}
 						{ck ? (
 							<div style={{position: 'absolute', right: -12, top: -14, width: 50, height: 50, borderRadius: 25, background: LPI.blue, border: `4px solid ${N}`, display: 'flex', alignItems: 'center', justifyContent: 'center', transform: `scale(${pop(check[i])})`}}>
 								<svg width={30} height={30} viewBox="0 0 100 100">

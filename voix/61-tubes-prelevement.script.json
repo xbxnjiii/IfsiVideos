@@ -7,46 +7,41 @@
  {
   "id": "pourquoi",
   "rate": "+0%",
-  "text": "Chaque tube contient un produit, un additif. Quand tu passes d'un tube à l'autre, l'aiguille traverse chaque bouchon… et emporte une micro-goutte d'additif dans le tube suivant. Si ce tube-là n'aime pas ce produit, le résultat est faux. C'est pour ça qu'on suit un ordre précis, toujours le même."
+  "text": "Chaque tube contient un produit, un additif. Quand tu passes d'un tube à l'autre, l'aiguille traverse chaque bouchon… et emporte une micro-goutte d'additif dans le tube suivant. Le tube violet, par exemple, contient du potassium. S'il passe avant le jaune, le potassium monte… mais seulement dans le tube. Voilà l'erreur de notre patient ! C'est pour ça qu'on suit un ordre précis, toujours le même."
  },
  {
   "id": "hemoc",
   "rate": "+0%",
-  "text": "En premier : les hémocultures, ces flacons qui cherchent des microbes dans le sang. Elles passent avant tout, pour rester stériles. D'abord le flacon aérobie, pour les microbes qui aiment l'oxygène, puis l'anaérobie, pour ceux qui n'en veulent pas."
+  "text": "En premier, s'il y en a : les hémocultures. Elles passent avant tout, pour rester stériles. D'abord le flacon aérobie, au bouchon vert, puis le flacon anaérobie, au bouchon orange."
  },
  {
-  "id": "citrate",
+  "id": "purge",
   "rate": "+0%",
-  "text": "Ensuite, le bouchon bleu clair : le citrate. C'est le tube de la coagulation, le {TP|T P} et le {TCA|T C A}. Il se remplit jusqu'au trait, ni plus, ni moins : le résultat dépend du mélange exact entre le sang et le citrate. Et avec une aiguille à ailettes, la tubulure est pleine d'air : on remplit d'abord un tube de purge, qu'on jette."
+  "text": "Pas d'hémocultures, mais une aiguille à ailettes ? La tubulure est pleine d'air : on commence par un tube de purge, au bouchon blanc, et on le jette. Avec une aiguille simple, pas besoin : on commence directement par le bleu."
  },
  {
-  "id": "sec",
+  "id": "bleu",
   "rate": "+0%",
-  "text": "Puis le tube sec, à bouchon rouge, ou jaune avec un gel. Lui, au contraire, aide le sang à faire un caillot. On récupère le sérum, le liquide au-dessus, pour la biochimie et les sérologies. S'il passait avant le bleu, son activateur fausserait la coagulation."
+  "text": "Ensuite, le tube bleu, citraté. Il se remplit jusqu'au trait, ni plus, ni moins."
  },
  {
-  "id": "hepar",
+  "id": "secs",
   "rate": "+0%",
-  "text": "Ensuite, le tube vert : l'héparine. Elle empêche le sang de coaguler. C'est le tube de l'ionogramme, le potassium et le sodium, et aussi de la créatinine, pour les reins. Une goutte d'héparine dans le tube bleu fausserait aussi la coagulation : il vient donc après."
+  "text": "Puis les tubes secs : d'abord le jaune, avec son gel… puis le rouge."
  },
  {
-  "id": "edta",
+  "id": "suite",
   "rate": "+0%",
-  "text": "Puis le violet : l'{EDTA|É D T A}. Il garde les cellules du sang intactes : c'est le tube de la numération formule sanguine, la {NFS|N F S}. Mais l'{EDTA|É D T A} contient du potassium, et il capture le calcium. Une micro-goutte dans le tube vert… et le potassium monte, le calcium chute. Voilà l'erreur de notre patient !"
- },
- {
-  "id": "fluor",
-  "rate": "+0%",
-  "text": "En dernier : le gris, le fluorure. Il empêche les globules de manger le sucre du tube. C'est le tube de la glycémie et des lactates."
+  "text": "Ensuite, le tube vert, hépariné. Puis le violet, l'{EDTA|É D T A}. Et en dernier, le tube gris, au fluorure."
  },
  {
   "id": "gestes",
   "rate": "+0%",
-  "text": "Après chaque tube, retourne-le doucement, plusieurs fois, sans secouer : l'additif se mélange, et les globules ne cassent pas. Étiquette les tubes devant le patient. Et attention : les couleurs peuvent changer selon les marques. Suis toujours le protocole de ton labo."
+  "text": "Après chaque tube, retourne-le doucement, plusieurs fois, sans secouer. Étiquette les tubes devant le patient. Et attention : les couleurs peuvent changer selon les marques. Suis toujours le protocole de ton labo."
  },
  {
   "id": "fin",
   "rate": "+2%",
-  "text": "Alors, on récapitule : hémocultures, bleu, rouge ou jaune, vert, violet, et gris. Respecte l'ordre… et le labo n'aura plus besoin de t'appeler !"
+  "text": "Alors, on récapitule : les hémocultures, ou le tube de purge… puis bleu, jaune, rouge, vert, violet, et gris. Respecte l'ordre… et le labo n'aura plus besoin de t'appeler !"
  }
 ]
