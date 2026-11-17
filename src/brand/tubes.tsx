@@ -300,11 +300,23 @@ export const RedCell: React.FC<{size?: number; mouth?: number; broken?: number}>
 	</svg>
 );
 
-/** Globule blanc et plaquette (pour la NFS). */
-export const WhiteCell: React.FC<{size?: number}> = ({size = 120}) => (
-	<svg width={size} height={size} viewBox="0 0 120 120">
+/** Globule blanc (pour la NFS) ; `kind` : noyau d'un polynucléaire (en lobes), d'un lymphocyte (rond, gros) ou d'un monocyte (en haricot). */
+export const WhiteCell: React.FC<{size?: number; kind?: 'pnn' | 'lympho' | 'mono'}> = ({size = 120, kind = 'pnn'}) => (
+	<svg width={size} height={size} viewBox="0 0 120 120" style={{overflow: 'visible'}}>
 		<circle cx={60} cy={60} r={50} fill="#F4F1FA" stroke={N} strokeWidth={5} />
-		<path d="M40 52 Q46 34 62 42 Q76 30 82 50 Q90 66 72 72 Q60 84 46 72 Q32 66 40 52 Z" fill="#9C7BD0" stroke={N} strokeWidth={3} />
+		{kind === 'pnn' ? (
+			<g fill="#9C7BD0" stroke={N} strokeWidth={3}>
+				<circle cx={40} cy={52} r={13} />
+				<circle cx={62} cy={42} r={13} />
+				<circle cx={80} cy={60} r={13} />
+				<circle cx={58} cy={74} r={12} />
+				<path d="M48 50 L56 46 M72 50 L76 56 M66 70 L74 66" stroke="#9C7BD0" strokeWidth={6} />
+			</g>
+		) : kind === 'lympho' ? (
+			<circle cx={60} cy={60} r={36} fill="#8A68C2" stroke={N} strokeWidth={3} />
+		) : (
+			<path d="M34 46 Q50 30 74 38 Q88 44 84 60 Q78 70 66 62 Q56 58 52 72 Q40 82 32 66 Q28 56 34 46 Z" fill="#9C7BD0" stroke={N} strokeWidth={3} />
+		)}
 	</svg>
 );
 export const Platelet: React.FC<{size?: number}> = ({size = 80}) => (
@@ -333,10 +345,10 @@ export const Ion: React.FC<{label: string; tone?: string; size?: number}> = ({la
 );
 
 /** Fiche de résultat du labo : une ligne « K⁺ 7,0 mmol/L » qui clignote en rose ; `fake` tampon FAUX barré. */
-export const LabSheet: React.FC<{width?: number; value: string; alarm?: number; fake?: number}> = ({width = 520, value, alarm = 0, fake = 0}) => {
+export const LabSheet: React.FC<{width?: number; value?: string; alarm?: number; fake?: number; lines?: string[][]; hot?: number}> = ({width = 520, value = '', alarm = 0, fake = 0, lines, hot = 1}) => {
 	const frame = useCurrentFrame();
 	const blink = alarm > 0 ? 0.5 + 0.5 * Math.sin(frame / 2.2) : 0;
-	const rows = [
+	const rows = lines ?? [
 		['Sodium', '140', 'mmol/L'],
 		['Potassium', value, 'mmol/L'],
 		['Créatinine', '75', 'µmol/L'],
@@ -345,14 +357,14 @@ export const LabSheet: React.FC<{width?: number; value: string; alarm?: number; 
 		<div style={{width, boxSizing: 'border-box', borderRadius: 30, background: '#fff', border: `6px solid ${N}`, padding: '22px 26px', boxShadow: `0 14px 0 ${alpha(N, 0.15)}`}}>
 			<div style={{fontFamily: FONT.body, fontWeight: 900, fontSize: 26, letterSpacing: '0.14em', color: alpha(N, 0.7)}}>LABORATOIRE · RÉSULTATS</div>
 			{rows.map(([a, b, c], i) => {
-				const hot = i === 1 && alarm > 0;
+				const isHot = i === hot && alarm > 0;
 				return (
-					<div key={a} style={{marginTop: 14, display: 'flex', alignItems: 'baseline', gap: 12, padding: '8px 14px', borderRadius: 16, background: hot ? alpha(LPI.pink, 0.35 + 0.5 * blink) : alpha(LPI.sky, 0.35), position: 'relative'}}>
+					<div key={a} style={{marginTop: 14, display: 'flex', alignItems: 'baseline', gap: 12, padding: '8px 14px', borderRadius: 16, background: isHot ? alpha(LPI.pink, 0.35 + 0.5 * blink) : alpha(LPI.sky, 0.35), position: 'relative'}}>
 						<div style={{flex: 1, fontFamily: FONT.body, fontWeight: 800, fontSize: 32, color: N}}>{a}</div>
-						<div style={{fontFamily: FONT.title, fontWeight: 900, fontSize: hot ? 52 : 36, color: N}}>{b}</div>
+						<div style={{fontFamily: FONT.title, fontWeight: 900, fontSize: isHot ? 52 : 36, color: N}}>{b}</div>
 						<div style={{fontFamily: FONT.body, fontWeight: 800, fontSize: 22, color: alpha(N, 0.7)}}>{c}</div>
-						{hot ? <div style={{position: 'absolute', right: -16, top: -16, width: 44, height: 44, borderRadius: 22, background: LPI.pink, border: `4px solid ${N}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FONT.title, fontWeight: 900, fontSize: 30, color: N}}>!</div> : null}
-						{i === 1 && fake > 0 ? <div style={{position: 'absolute', left: 8, right: 8, top: '50%', height: 8, borderRadius: 4, background: LPI.pink, transform: `scaleX(${fake})`, transformOrigin: 'left'}} /> : null}
+						{isHot ? <div style={{position: 'absolute', right: -16, top: -16, width: 44, height: 44, borderRadius: 22, background: LPI.pink, border: `4px solid ${N}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FONT.title, fontWeight: 900, fontSize: 30, color: N}}>!</div> : null}
+						{i === hot && fake > 0 ? <div style={{position: 'absolute', left: 8, right: 8, top: '50%', height: 8, borderRadius: 4, background: LPI.pink, transform: `scaleX(${fake})`, transformOrigin: 'left'}} /> : null}
 					</div>
 				);
 			})}

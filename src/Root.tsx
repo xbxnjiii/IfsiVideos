@@ -124,6 +124,8 @@ import {CancerVoiesBiliaires, CancerVoiesBiliairesProps} from './videos/cancer-v
 import {TL as CANCER_VOIES_BILIAIRES_TL} from './videos/cancer-voies-biliaires/timeline';
 import {TubesPrelevement, TubesPrelevementProps} from './videos/tubes-prelevement/TubesPrelevement';
 import {TL as TUBES_PRELEVEMENT_TL} from './videos/tubes-prelevement/timeline';
+import {TubeViolet, TubeVioletProps} from './videos/tube-violet/TubeViolet';
+import {TL as TUBE_VIOLET_TL} from './videos/tube-violet/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -730,6 +732,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies TubesPrelevementProps}
+		/>
+		{/* 62 · Tube-Violet */}
+		<Composition
+			id="Tube-Violet"
+			component={TubeViolet}
+			durationInFrames={TUBE_VIOLET_TL.total}
+			fps={TUBE_VIOLET_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies TubeVioletProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition
