@@ -2,12 +2,12 @@
  {
   "id": "intro",
   "rate": "+4%",
-  "text": "Ton patient va très bien… mais le labo t'appelle : son potassium est à sept ! Une urgence ? Non. Une erreur… dans l'ordre des tubes."
+  "text": "Voici sept tubes… tu les remplis dans quel ordre ? [pause 2.2] Si tu te trompes, ton patient, en pleine forme, peut se retrouver avec un potassium à sept ! Alors, quel est le bon ordre… et pourquoi ?"
  },
  {
   "id": "pourquoi",
   "rate": "+0%",
-  "text": "Chaque tube contient un produit, un additif. Quand tu passes d'un tube à l'autre, l'aiguille traverse chaque bouchon… et emporte une micro-goutte d'additif dans le tube suivant. Le tube violet, par exemple, contient du potassium. S'il passe avant le jaune, le potassium monte… mais seulement dans le tube. Voilà l'erreur de notre patient ! C'est pour ça qu'on suit un ordre précis, toujours le même."
+  "text": "Chaque tube contient un produit, un additif. Quand tu passes d'un tube à l'autre, l'aiguille traverse chaque bouchon… et emporte une micro-goutte d'additif dans le tube suivant. Le tube violet, par exemple, contient du potassium. S'il passe avant le jaune, le potassium monte… mais seulement dans le tube. Et voilà ton faux potassium à sept ! C'est pour ça qu'on suit un ordre précis, toujours le même."
  },
  {
   "id": "hemoc",

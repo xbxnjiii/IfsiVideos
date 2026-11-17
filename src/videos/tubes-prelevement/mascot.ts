@@ -8,8 +8,9 @@ const {L, R} = SPOT;
 const LOW = {y: 1790, size: 300};
 
 export const MASCOT: Beat[] = [
-	{at: abs('intro', 'urgence'), via: 'pop', key: 'expressions/surprise', ...R, ...LOW},
-	{at: abs('intro', 'erreur…'), via: 'cut', key: 'gestes/attention', ...R, ...LOW},
+	{at: abs('intro', 'ordre'), via: 'pop', key: 'expressions/reflechit', ...R, ...LOW},
+	{at: abs('intro', 'trompes,'), via: 'cut', key: 'gestes/attention', ...R, ...LOW},
+	{at: abs('intro', 'sept', 2), via: 'cut', key: 'expressions/surprise', ...R, ...LOW},
 	{at: start('pourquoi') + 8, via: 'hop', dur: 18, key: 'gestes/presente', ...L, ...LOW},
 	{at: abs('pourquoi', 'voilà'), via: 'cut', key: 'expressions/surprise', ...L, ...LOW},
 	{at: start('hemoc') + 8, via: 'hop', dur: 18, key: 'gestes/important', ...R, ...LOW},

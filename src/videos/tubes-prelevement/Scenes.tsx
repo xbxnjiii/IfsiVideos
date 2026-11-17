@@ -6,8 +6,7 @@
 import React from 'react';
 import {AbsoluteFill, interpolate, useCurrentFrame} from 'remotion';
 import {Big, fadeIn, Flash, FlatBg, Fly, Live, Note, PointTag as PTag, popAt, ease} from '../../brand/bold';
-import {Phone} from '../../brand/devices';
-import {Bed, Sparkles} from '../../brand/hands';
+import {Sparkles} from '../../brand/hands';
 import {Stamp} from '../../brand/kit';
 import {Camera, Confetti} from '../../brand/motion3';
 import {Patient} from '../../brand/patient';
@@ -135,72 +134,119 @@ const Check: React.FC<{at: number; x: number; y: number; size?: number; to?: num
 };
 
 /* ═══════════════════════════════ ACCROCHE ═══════════════════════════════ */
-const HOOK_TUBES = [CAP.citrate, CAP.edta, CAP.gel, CAP.sec, CAP.hepar];
+// Les 7 « cases » de l'ordre, mélangées sur le portoir dès l'image 0 (violet juste avant jaune : l'erreur de l'accroche).
+const SHUFFLE = [6, 5, 2, 0, 1, 4, 3];
+const SHUFFLE2 = [3, 0, 4, 6, 5, 1, 2];
+const slotX = (slot: number) => 560 + (slot - 3) * 138;
+const RACK_Y = 960;
+
+const RackItem: React.FC<{k: number; taint?: number; bad?: number}> = ({k, taint = 0, bad = 0}) =>
+	k === 0 ? (
+		<div style={{position: 'relative', width: 150, height: 380}}>
+			<div style={{position: 'absolute', left: 0, bottom: 0}}>
+				<HemoFlask size={84} label="" cap={HEMO_CAP.aero} />
+			</div>
+			<div style={{position: 'absolute', left: 70, bottom: 0}}>
+				<HemoFlask size={84} label="" cap={HEMO_CAP.anaero} />
+			</div>
+		</div>
+	) : (
+		<Tube size={95} cap={CAP[(['', 'citrate', 'gel', 'sec', 'hepar', 'edta', 'fluor'] as const)[k] as keyof typeof CAP]} gel={k === 2} level={0.72} taint={taint} taintColor={CAP.edta} bad={bad} />
+	);
 
 export const Hook: React.FC = () => {
 	const frame = useCurrentFrame();
-	const BIEN = at('intro', 'bien…');
-	const LABO = at('intro', 'labo');
 	const SEPT = at('intro', 'sept');
-	const URG = at('intro', 'urgence');
-	const NON = at('intro', 'non.');
-	const ERR = at('intro', 'erreur…');
-	const TUB = at('intro', 'tubes.');
-	const away = ERR - 4;
+	const REMP = at('intro', 'remplis');
+	const ORDRE = at('intro', 'ordre');
+	const SI = at('intro', 'si');
+	const TROMP = at('intro', 'trompes,');
+	const PAT = at('intro', 'patient,');
+	const K = at('intro', 'potassium');
+	const K7 = at('intro', 'sept', 2);
+	const ALORS = at('intro', 'alors,');
+	const BON = at('intro', 'ordre', 2);
+	const POURQ = at('intro', 'pourquoi');
+	const away = ALORS - 2;
+	// position (case) de chaque élément k au fil du temps : mélange → re-mélange → mélange → bon ordre
+	const slotOf = (k: number, f: number) => {
+		const a = SHUFFLE.indexOf(k);
+		const b = SHUFFLE2.indexOf(k);
+		const m = interpolate(f, [REMP, REMP + 9, REMP + 16, REMP + 25], [0, 1, 1, 0], ease);
+		const sorted = interpolate(f, [ALORS + 4, BON + 6], [0, 1], ease);
+		return (a + (b - a) * m) * (1 - sorted) + k * sorted;
+	};
 	return (
 		<AbsoluteFill>
 			<Bg tone={LPI.sky} />
-			<Camera punches={[LABO + 1, SEPT + 1, NON + 1, ERR + 1]} shakes={[SEPT + 2]} strength={0.03}>
-				{/* le patient, dans son lit, va très bien */}
-				<Fly at={-2} out={away} x={360} y={900} from="bottom" to="left" move={[{at: LABO - 2, x: 300, s: 0.92, dur: 12}]}>
-					<div style={{position: 'relative', width: 720, height: 900}}>
-						<div style={{position: 'absolute', left: 30, top: 470}}>
-							<Bed width={660} rail={1} />
-						</div>
-						<div style={{position: 'absolute', left: 130, top: 0}}>
-							<Patient size={460} mood="content" />
-						</div>
-					</div>
-				</Fly>
-				<Sparkles at={BIEN} x={370} y={560} r={190} />
-				{/* le labo appelle */}
-				<Fly at={LABO - 6} out={away} x={830} y={520} from="right" to="right">
-					<Live render={(f) => <Phone digits="" ring={interpolate(f, [LABO - 6, LABO, SEPT + 20, SEPT + 30], [0, 1, 1, 0], clamp)} size={250} />} />
-				</Fly>
-				<Fly at={SEPT - 10} out={away} x={540} y={1330} from="bottom" to="bottom">
-					<Live render={(f) => <LabSheet width={760} value="7,0" alarm={fadeIn(f, SEPT, 4)} fake={interpolate(f, [NON + 2, NON + 12], [0, 1], ease)} />} />
-				</Fly>
-				<Big from={URG - 2} to={NON - 4} text={'Une *urgence* ?'} size={110} y={170} />
-				<Stamp at={NON} x={540} y={300} text="NON !" size={90} out={away} />
-				{/* une erreur dans l'ordre des tubes */}
-				<Big from={ERR} text={'Une *erreur*…\ndans *l\'ordre*\ndes tubes'} size={118} y={190} />
-				{HOOK_TUBES.map((c, i) => (
-					<Fly key={i} at={TUB - 14 + i * 3} x={540 + (i - 2) * 190} y={1240} from="top" to="bottom">
-						<Live
-							render={(f) => {
-								const hot = i === 1 || i === 2;
-								const j = hot && f > TUB + 12 ? Math.sin(f / 1.6) * 5 : 0;
-								return (
-									<div style={{transform: `translateX(${j}px)`}}>
-										<Tube size={118} cap={c} level={0.72} bad={i === 2 ? fadeIn(f, TUB + 16, 6) : 0} taint={i === 2 ? interpolate(f, [TUB + 8, TUB + 26], [0, 0.8], ease) : 0} taintColor={CAP.edta} />
-									</div>
-								);
-							}}
-						/>
-					</Fly>
+			<Camera punches={[SEPT + 1, ORDRE + 1, TROMP + 1, K7 + 1, BON + 1]} shakes={[K7 + 2]} strength={0.03}>
+				<Big from={ORDRE - 4} to={SI - 4} text={'Dans quel\n*ordre* ?'} size={130} />
+				<Big from={BON - 2} text={'Le bon *ordre*…\net *pourquoi* ?'} size={110} />
+				{/* les tubes sur le portoir */}
+				{[0, 1, 2, 3, 4, 5, 6].map((k) => (
+					<Live
+						key={k}
+						render={(f) => {
+							const hop = f >= SEPT - 4 + k * 3 && f < SEPT + 8 + k * 3 ? -40 * Math.sin(((f - SEPT + 4 - k * 3) / 12) * Math.PI) : 0;
+							const hot = (k === 5 || k === 2) && f >= TROMP && f < away;
+							const lift = hot ? -30 * Math.min(1, (f - TROMP) / 6) : 0;
+							const shake = hot && f > TROMP + 8 ? Math.sin(f / 1.6) * 4 : 0;
+							const x = slotX(slotOf(k, f));
+							const swapLift = -60 * Math.sin(Math.PI * interpolate(f, [REMP, REMP + 9], [0, 1], clamp)) * (k % 2 ? 1 : -0.4);
+							return (
+								<div style={{position: 'absolute', left: x, top: RACK_Y + hop + lift + swapLift, transform: `translate(-50%, -50%) translateX(${shake}px)`}}>
+									<RackItem k={k} taint={k === 2 ? interpolate(f, [TROMP + 6, TROMP + 26, away, away + 8], [0, 0.8, 0.8, 0], clamp) : 0} bad={k === 2 ? interpolate(f, [TROMP + 18, TROMP + 24, away, away + 6], [0, 1, 1, 0], clamp) : 0} />
+								</div>
+							);
+						}}
+					/>
 				))}
-				<Arrow at={TUB + 2} x1={350} y1={940} x2={510} y2={970} />
+				{/* le portoir */}
+				<div style={{position: 'absolute', left: 50, top: RACK_Y + 70, width: 980, height: 70, borderRadius: 18, background: '#E6EBF1', border: `6px solid ${N}`, boxShadow: SHADOW}} />
+				<div style={{position: 'absolute', left: 80, top: RACK_Y + 140, width: 30, height: 70, background: '#C9D2DC', border: `5px solid ${N}`, borderTop: 'none'}} />
+				<div style={{position: 'absolute', left: 970, top: RACK_Y + 140, width: 30, height: 70, background: '#C9D2DC', border: `5px solid ${N}`, borderTop: 'none'}} />
+				{/* numéros du bon ordre */}
+				{[0, 1, 2, 3, 4, 5, 6].map((k) =>
+					frame >= BON + 4 + k * 3 ? (
+						<div key={k} style={{position: 'absolute', left: slotX(k) - 34, top: RACK_Y + 225, width: 68, height: 68, borderRadius: 34, background: LPI.pink, border: `5px solid ${N}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FONT.title, fontWeight: 900, fontSize: 40, color: N, transform: `scale(${popAt(frame, BON + 4 + k * 3)})`}}>
+							{k + 1}
+						</div>
+					) : null,
+				)}
+				{/* le temps de répondre : 3 · 2 · 1 */}
+				{[0, 1, 2].map((i) => {
+					const t0 = ORDRE + 14 + i * 26;
+					if (frame < t0 || frame >= t0 + 26 || frame >= SI - 2) return null;
+					return (
+						<div key={i} style={{position: 'absolute', left: 540 - 90, top: 1300, width: 180, height: 180, borderRadius: 90, background: LPI.paper, border: `8px solid ${N}`, boxShadow: SHADOW, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FONT.title, fontWeight: 900, fontSize: 110, color: N, transform: `scale(${popAt(frame, t0)})`}}>
+							{3 - i}
+						</div>
+					);
+				})}
+				{/* si tu te trompes : le violet avant le jaune */}
+				<Arrow at={TROMP + 2} to={away} x1={slotX(1) - 20} y1={RACK_Y - 270} x2={slotX(2) + 10} y2={RACK_Y - 250} />
+				<Fly at={PAT - 4} out={away} x={250} y={1450} from="left" to="left">
+					<Patient size={300} mood="content" />
+				</Fly>
+				<Fly at={K - 6} out={away} x={700} y={1430} from="right" to="right">
+					<Live render={(f) => <LabSheet width={560} value="7,0" alarm={fadeIn(f, K7, 4)} />} />
+				</Fly>
 			</Camera>
-			<Flash at={SEPT} max={0.4} />
-			<Sfx name="ring" at={LABO - 4} volume={0.5} />
-			<Sfx name="impact" at={SEPT} volume={0.5} />
-			<Sfx name="buzz" at={SEPT + 4} volume={0.25} />
-			<Sfx name="stamp" at={NON} volume={0.5} />
-			<Sfx name="whoosh" at={away} volume={0.2} />
-			{HOOK_TUBES.map((_, i) => (
-				<Sfx key={i} name="pop" at={TUB - 12 + i * 3} volume={0.18} />
+			<Flash at={K7} max={0.4} />
+			{[0, 1, 2, 3, 4, 5, 6].map((k) => (
+				<Sfx key={k} name="pop" at={SEPT - 4 + k * 3} volume={0.12} />
 			))}
-			<Sfx name="buzz" at={TUB + 16} volume={0.2} />
+			<Sfx name="whoosh" at={REMP} volume={0.2} />
+			{[0, 1, 2].map((i) => (
+				<Sfx key={i} name="tick" at={ORDRE + 14 + i * 26} volume={0.3} />
+			))}
+			<Sfx name="buzz" at={TROMP + 18} volume={0.2} />
+			<Sfx name="impact" at={K7} volume={0.5} />
+			<Sfx name="whoosh" at={ALORS + 4} volume={0.2} />
+			{[0, 1, 2, 3, 4, 5, 6].map((k) => (
+				<Sfx key={k} name="pop" at={BON + 4 + k * 3} volume={0.12} />
+			))}
+			<Sfx name="ding" at={POURQ} volume={0.2} />
 		</AbsoluteFill>
 	);
 };
@@ -221,7 +267,7 @@ export const Pourquoi: React.FC = () => {
 	const MONTE = at('pourquoi', 'monte…');
 	const SEUL = at('pourquoi', 'seulement');
 	const VOILA = at('pourquoi', 'voilà');
-	const PAT = at('pourquoi', 'patient');
+	const PAT = at('pourquoi', 'sept');
 	const CEST = at('pourquoi', "c'est");
 	const ORDRE = at('pourquoi', 'ordre');
 	const TOUJ = at('pourquoi', 'toujours');
@@ -310,7 +356,7 @@ export const Pourquoi: React.FC = () => {
 					dans le tube… pas chez le patient !
 				</Note>
 				{/* voilà l'erreur */}
-				<Big from={VOILA} to={CEST - 4} text={'*L\'erreur*\ndu patient !'} size={110} />
+				<Big from={VOILA} to={CEST - 4} text={'Un *faux*\npotassium !'} size={110} />
 				<Fly at={VOILA} out={CEST - 4} x={540} y={900} from="bottom" to="bottom">
 					<Live render={(f) => <LabSheet width={760} value="7,0" alarm={1} fake={interpolate(f, [PAT, PAT + 10], [0, 1], ease)} />} />
 				</Fly>

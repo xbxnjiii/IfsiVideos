@@ -35,6 +35,11 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   musique dans l'export (ajoutée sur TikTok). Une accroche par vidéo. Termes techniques toujours
   accompagnés d'une explication courte.
 
+- **Marge de sécurité de l'appli** (demandé : « une fois postées, des textes passent sous les boutons de l'appli ») :
+  `Episode` réduit toute l'image à `SAFE_SCALE` = 86 % (carte aux coins arrondis, centrée sur le fond `bg`), prop `safe`
+  (1 = plein cadre). Vaut pour tout nouveau rendu à partir de la vidéo n° 61. Un calque ajouté **hors** d'`Episode` dans une
+  composition (ex. `TopBar` de `PriseDeSang.tsx`) n'est pas réduit : le mettre dans une scène ou le réduire aussi.
+
 ## Ce qu'on garde du pilote (à réutiliser tel quel)
 
 - **Tempo** : chaque mouvement part d'un mot de la voix (`at(scène, mot)`, 3 frames d'avance) ;
@@ -609,11 +614,14 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   sans hémocultures, le **tube de purge à bouchon blanc**, jeté ; avec une aiguille simple, on commence au bleu — puis bleu
   citraté (jusqu'au trait), **jaune à gel puis rouge**, vert hépariné, violet EDTA, gris fluorure. **Bouchons aux vraies
   couleurs** (exception à la palette, nécessaire : `CAP`, `HEMO_CAP` de `src/brand/tubes.tsx`) ; la vidéo dit que les couleurs
-  peuvent varier selon les marques. Accroche **« le labo appelle »** : le patient va très bien, le téléphone sonne, fiche
-  « potassium 7,0 » qui clignote, « Une urgence ? » → tampon NON !, « une erreur… dans l'ordre des tubes » (violet avant
-  jaune, le jaune se teinte). Puis pourquoi (l'aiguille traverse les bouchons, micro-goutte d'additif ; le violet contient du
-  potassium : s'il passe avant le jaune, le potassium monte dans le tube seulement → l'erreur du patient, tampon FAUSSE
-  ALERTE), puis l'ordre case par case avec la frise `OrderRail` de 7 cases en bas (`first` : flacons / purge / les deux),
+  peuvent varier selon les marques. Accroche v3 **« les 7 tubes mélangés »** (demandé :
+  « parler directement du sujet, afficher tous les tubes ») : image 0 = les 7 cases de l'ordre sur un portoir, mélangées,
+  sans texte ; « Voici sept tubes… tu les remplis dans quel ordre ? » (ils se mélangent) puis `[pause 2.2]` avec chrono
+  3 · 2 · 1 pour répondre dans sa tête ; « si tu te trompes » (violet juste avant jaune, le jaune se teinte ✕), le patient en
+  pleine forme + fiche « potassium 7,0 » qui clignote ; « le bon ordre… et pourquoi ? » (les tubes se rangent, numéros 1 → 7).
+  (L'accroche « le labo appelle » de la v1 / v2 reste dans l'historique git.) Puis pourquoi (l'aiguille traverse les
+  bouchons, micro-goutte d'additif ; le violet contient du potassium : s'il passe avant le jaune, le potassium monte dans le
+  tube seulement → « Et voilà ton faux potassium à sept ! », tampon FAUSSE ALERTE), puis l'ordre case par case avec la frise `OrderRail` de 7 cases en bas (`first` : flacons / purge / les deux),
   gestes (retourner doucement sans secouer, étiqueter devant le patient, protocole du labo), récap (la frise se remplit au
   mot, résultat normal 4,2). Briques `src/brand/tubes.tsx` : `Tube` (`level`, `serum` + `gel`, `mark`, `additive`, `taint`,
   `bad`), `HemoFlask`, `OrderRail`, `SlotArt`, `NeedleUp` (micro-goutte), `Ion`, `LabSheet` (`alarm`, `fake`), `ORDER` (+ `RedCell`,

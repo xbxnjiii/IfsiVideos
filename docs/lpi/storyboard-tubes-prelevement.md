@@ -6,8 +6,8 @@ propriétaire. Bouchons aux vraies couleurs (exception à la palette) ; les code
 
 | Scène | Voix (résumé) | Image |
 | --- | --- | --- |
-| intro | Le patient va très bien… le labo appelle : potassium à sept ! Une urgence ? Non : une erreur dans l'ordre des tubes. | Patient souriant dans son lit, téléphone qui sonne, fiche qui clignote (7,0), tampon NON !, 5 tubes : violet avant jaune, le jaune se teinte ✕. |
-| pourquoi | Chaque tube a un additif ; l'aiguille emporte une micro-goutte dans le tube suivant ; le violet contient du potassium : avant le jaune, le potassium monte dans le tube → l'erreur du patient → un ordre précis. | Tube EDTA et son additif ; aiguille pointe en haut, tube violet puis tube jaune, micro-goutte, K⁺ ↑, fiche barrée + FAUSSE ALERTE ; frise de 7 cases. |
+| intro | Voici sept tubes… tu les remplis dans quel ordre ? [pause] Si tu te trompes, ton patient en pleine forme peut se retrouver avec un potassium à sept ! Alors, quel est le bon ordre… et pourquoi ? | Image 0 : les 7 cases sur un portoir, mélangées, sans texte ; elles sautent, se mélangent, chrono 3 · 2 · 1 ; violet avant jaune ✕, patient souriant + fiche 7,0 ; les tubes se rangent dans le bon ordre, numéros 1 → 7. |
+| pourquoi | Chaque tube a un additif ; l'aiguille emporte une micro-goutte dans le tube suivant ; le violet contient du potassium : avant le jaune, le potassium monte dans le tube → « voilà ton faux potassium à sept » → un ordre précis. | Tube EDTA et son additif ; aiguille pointe en haut, tube violet puis tube jaune, micro-goutte, K⁺ ↑, fiche barrée + FAUSSE ALERTE ; frise de 7 cases. |
 | hemoc | 1 · hémocultures (stériles) : aérobie bouchon vert, puis anaérobie bouchon orange. | Deux flacons, étincelles, étiquettes « vert » / « orange ». |
 | purge | Aiguille à ailettes sans hémocultures : tube de purge bouchon blanc, jeté ; aiguille simple : on commence au bleu. | Ailettes + tubulure pleine d'air, tube blanc qui file à la poubelle, aiguille simple → tube bleu. |
 | bleu | 2 · tube bleu citraté, jusqu'au trait, ni plus ni moins. | Le tube se remplit jusqu'au trait ; deux mini-tubes trop / pas assez remplis ✕. |

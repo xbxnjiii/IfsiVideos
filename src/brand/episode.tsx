@@ -350,6 +350,12 @@ export type EpisodeTransition = {p: TransitionPresentation<any>; sfx: SfxName};
  * Vidéo complète : scènes enchaînées par leurs transitions (jamais deux fois la même d'affilée),
  * progression des notions (toutes les scènes entre l'accroche et le récap), mascotte, voix, bruitages.
  */
+/**
+ * Marge de sécurité (demandé : « une fois postée, des textes passent sous les boutons de l'appli ») : toute l'image est
+ * réduite à 86 % et centrée, sur le fond `bg` ; les titres, la mascotte et les chiffres restent hors des zones de l'appli.
+ */
+export const SAFE_SCALE = 0.86;
+
 export const Episode = <Id extends string>({
 	tl,
 	ids,
@@ -360,6 +366,7 @@ export const Episode = <Id extends string>({
 	sfx,
 	progress = true,
 	bg = LPI.paper,
+	safe = SAFE_SCALE,
 }: {
 	tl: Timeline;
 	ids: readonly Id[];
@@ -373,11 +380,14 @@ export const Episode = <Id extends string>({
 	progress?: boolean;
 	/** fond derrière les scènes, visible pendant les transitions (bleu nuit pour une vidéo « histoire ») */
 	bg?: string;
+	/** échelle de tout l'image (1 = plein cadre) : < 1 laisse une marge que les boutons de TikTok / Reels ne cachent pas */
+	safe?: number;
 }) => {
 	const tr = transitions as Record<string, EpisodeTransition>;
 	return (
 		<SfxEnabled.Provider value={sfx}>
 			<AbsoluteFill style={{backgroundColor: bg}}>
+				<AbsoluteFill style={safe < 1 ? {transform: `scale(${safe})`, borderRadius: 56, overflow: 'hidden', boxShadow: `0 24px 60px ${alpha(LPI.navy, 0.18)}`, backgroundColor: bg} : undefined}>
 				<TransitionSeries>
 					{ids.map((id, i) => {
 						const Scene = scenes[id] as React.FC;
@@ -393,6 +403,7 @@ export const Episode = <Id extends string>({
 				</TransitionSeries>
 				{progress ? <Progress tl={tl} count={ids.length - 3} /> : null}
 				<MascotActor beats={mascot} busts="free" />
+				</AbsoluteFill>
 				{voice ? (
 					<Sequence from={tl.offset} layout="none">
 						<Html5Audio src={staticFile(voice)} />
