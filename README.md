@@ -71,7 +71,8 @@ pas de logiciel de montage, pas de banque d'images.
 | 58 | Pathologie : le cancer de l'œsophage (voix Laura, accroche « ça coince », schéma fourni sans annotations) | `Cancer-Oesophage` | [voix/58-cancer-oesophage.script.json](voix/58-cancer-oesophage.script.json) | [storyboard](docs/lpi/storyboard-cancer-oesophage.md) |
 | 59 | Pathologie : le cancer de l'anus (voix Laura, accroche « le papier toilette », schéma fourni sans annotations) | `Cancer-Anus` | [voix/59-cancer-anus.script.json](voix/59-cancer-anus.script.json) | [storyboard](docs/lpi/storyboard-cancer-anus.md) |
 | 60 | Pathologie : le cancer des voies biliaires (voix Laura, accroche « il se gratte la nuit », schéma fourni sans annotations) | `Cancer-Voies-Biliaires` | [voix/60-cancer-voies-biliaires.script.json](voix/60-cancer-voies-biliaires.script.json) | [storyboard](docs/lpi/storyboard-cancer-voies-biliaires.md) |
-| 61 | Inventaire : l'ordre des tubes de prélèvement (voix gratuite, accroche « le labo appelle : potassium à 7 », l'ordre seul) | `Tubes-Prelevement` | [voix/61-tubes-prelevement.script.json](voix/61-tubes-prelevement.script.json) | [storyboard](docs/lpi/storyboard-tubes-prelevement.md) |
+| 61 | Inventaire : l'ordre des tubes de prélèvement (voix Laura, accroche « le labo appelle : potassium à 7 », l'ordre seul) | `Tubes-Prelevement` | [voix/61-tubes-prelevement.script.json](voix/61-tubes-prelevement.script.json) | [storyboard](docs/lpi/storyboard-tubes-prelevement.md) |
+| 62 | Série les tubes : le tube violet, hématologie (voix gratuite, accroche « un seul tube va te dire pourquoi ») | `Tube-Violet` | [voix/62-tube-violet.script.json](voix/62-tube-violet.script.json) | [storyboard](docs/lpi/storyboard-tube-violet.md) |
 
 ## Utilisation
 

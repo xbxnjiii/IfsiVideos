@@ -606,7 +606,9 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   claires, démangeaisons), les risques, les examens, les traitements (prothèse : la jaunisse disparaît), chute « on
   consulte vite ». Briques `src/brand/biliary.tsx`. Voix : « cholédoque » est bien lu (Whisper écrit « collédoque »).
   Storyboard `docs/lpi/storyboard-cancer-voies-biliaires.md`.
-- `Tubes-Prelevement` (n° 61, ≈ 1 min 42, format « inventaire », voix gratuite d'abord, sans barre de progression) : demandé « les
+- `Tubes-Prelevement` (n° 61, ≈ 1 min 49, format « inventaire », voix Laura après validation (1 813 crédits ; le silence
+  de réponse de l'accroche est inséré à la main dans le wav (1,8 s après « ordre ? »), puis réalignement avec un script sans
+  « [pause 2.2] »), sans barre de progression) : demandé « les
   différents tubes pour un bilan sanguin, l'ordre, les couleurs, et pourquoi respecter l'ordre ». **v2 sur retour du
   propriétaire** (avec son image de référence « Ordre de remplissage ») : **on ne dit pas à quoi sert chaque tube, seulement
   l'ordre** ; pas d'exemple « s'il passait avant… » tube par tube ; plus de « 9 sang : 1 citrate » ni de « globules qui mangent
@@ -626,6 +628,22 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   mot, résultat normal 4,2). Briques `src/brand/tubes.tsx` : `Tube` (`level`, `serum` + `gel`, `mark`, `additive`, `taint`,
   `bad`), `HemoFlask`, `OrderRail`, `SlotArt`, `NeedleUp` (micro-goutte), `Ion`, `LabSheet` (`alarm`, `fake`), `ORDER` (+ `RedCell`,
   `WhiteCell`, `Platelet`, `SugarCube` de la v1, plus utilisés). Storyboard `docs/lpi/storyboard-tubes-prelevement.md`.
+- **Série « les tubes »** (demandée : « une série de vidéos sur tous les tubes, on commence par le violet » ; chaque vidéo
+  tient seule, pas de carte de partie ; à la fin, la rangée des 7 tubes avec celui de la vidéo coché, les autres « ? »,
+  « le prochain arrive bientôt »). `Tube-Violet` (n° 62, ≈ 2 min 09, voix gratuite d'abord, sans barre de progression) :
+  à quoi il sert et ce qu'on y mesure. Accroche **« un seul tube va te dire pourquoi »** : image 0 = le patient pâle et
+  le tube violet, sans texte ; pâle / essoufflé / épuisé au mot (`Patient` `pale`, `breath`, `sweat`), « le tube violet »,
+  fiche NFS « hémoglobine 8,0 g/dL » qui clignote (`LabSheet` `lines` / `hot`), tampon ANÉMIE !. Puis l'EDTA (la pince
+  rose attrape le calcium → pas de caillot → sang liquide, cellules entières → hématologie), la NFS (N · F · S, numération
+  = compter, formule = les familles de globules blancs), globules rouges (oxygène, hémoglobine, jauge 12 – 17 g/dL →
+  anémie, VGM = taille), globules blancs (défenseurs ; trop nombreux → infection ? trop peu → se défend mal ;
+  polynucléaires, lymphocytes), plaquettes (bouchent la brèche ; trop peu → bleus, nez, gencives), aussi le groupe sanguin
+  (avant une transfusion) et l'hémoglobine glyquée (sucre des 3 derniers mois), le piège (jamais d'ionogramme : potassium ;
+  après le vert, avant le gris), les gestes (8 à 10 retournements sans secouer, sinon micro-caillots → plaquettes
+  faussement basses ; vite au labo), récap. `WhiteCell` a maintenant `kind` (`pnn` / `lympho` / `mono`). Voix gratuite : la
+  partie `edta` a été **coupée net** par edge-tts (« Or, sans calcium… ») : `voice.json` avait deux parties qui se
+  chevauchaient → phrase reformulée (« Et sans calcium… ») ; vérifier que les parties ne se chevauchent pas après
+  `npm run voice`. Storyboard `docs/lpi/storyboard-tube-violet.md`.
 
 ## Voix ElevenLabs « Laura » (choisie par le propriétaire pour les nouvelles vidéos)
 

@@ -1,0 +1,52 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Ton patient est pâle, essoufflé, épuisé au moindre effort… Un seul tube peut te dire pourquoi : le tube violet. Et le verdict tombe : son hémoglobine est à huit. C'est une anémie !"
+ },
+ {
+  "id": "edta",
+  "rate": "+0%",
+  "text": "Dans ce tube, il y a un additif : l'{EDTA|É D T A}. Il capture le calcium du sang. Et sans calcium, le sang ne peut pas coaguler. Résultat : le sang reste liquide, et ses cellules restent bien entières, comme dans les vaisseaux. C'est pour ça que c'est le tube de l'hématologie : l'étude des cellules du sang."
+ },
+ {
+  "id": "nfs",
+  "rate": "+0%",
+  "text": "Son examen star : la {NFS|N F S}, la numération formule sanguine. La numération, c'est compter les cellules du sang. La formule, c'est regarder quelles familles de globules blancs on trouve."
+ },
+ {
+  "id": "rouges",
+  "rate": "+0%",
+  "text": "D'abord, les globules rouges. Ils transportent l'oxygène, grâce à l'hémoglobine. Si elle est trop basse, c'est une anémie : le patient est pâle, fatigué, essoufflé. On regarde aussi la taille des globules rouges : c'est le {VGM|V G M}, le volume globulaire moyen."
+ },
+ {
+  "id": "blancs",
+  "rate": "+0%",
+  "text": "Ensuite, les globules blancs : les défenseurs du corps. Trop nombreux, on pense à une infection. Trop peu, et le patient se défend mal contre les microbes. La formule détaille chaque famille : les polynucléaires, les lymphocytes…"
+ },
+ {
+  "id": "plaquettes",
+  "rate": "+0%",
+  "text": "Et enfin, les plaquettes : elles bouchent les petites brèches des vaisseaux. Trop peu de plaquettes, et le patient saigne plus facilement : des bleus, le nez, les gencives."
+ },
+ {
+  "id": "autres",
+  "rate": "+0%",
+  "text": "Le tube violet sert aussi au groupe sanguin, avant une transfusion. Et à l'hémoglobine glyquée, chez le diabétique : elle montre le sucre des trois derniers mois."
+ },
+ {
+  "id": "piege",
+  "rate": "+0%",
+  "text": "Attention : jamais d'ionogramme dans ce tube ! L'{EDTA|É D T A} contient du potassium : le résultat serait faux. Et dans l'ordre des tubes, le violet passe après le vert… juste avant le gris."
+ },
+ {
+  "id": "gestes",
+  "rate": "+0%",
+  "text": "Après le prélèvement, retourne-le doucement, huit à dix fois, sans secouer. Sinon, de petits caillots se forment… et les plaquettes paraissent trop basses. Puis il part vite au labo."
+ },
+ {
+  "id": "fin",
+  "rate": "+2%",
+  "text": "Alors, on récapitule : le tube violet, avec son {EDTA|É D T A}, c'est l'hématologie. La {NFS|N F S} : globules rouges, globules blancs, plaquettes. Mais aussi le groupe sanguin et l'hémoglobine glyquée. Le prochain tube de la série arrive bientôt !"
+ }
+]
