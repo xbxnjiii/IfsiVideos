@@ -630,20 +630,27 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   `WhiteCell`, `Platelet`, `SugarCube` de la v1, plus utilisés). Storyboard `docs/lpi/storyboard-tubes-prelevement.md`.
 - **Série « les tubes »** (demandée : « une série de vidéos sur tous les tubes, on commence par le violet » ; chaque vidéo
   tient seule, pas de carte de partie ; à la fin, la rangée des 7 tubes avec celui de la vidéo coché, les autres « ? »,
-  « le prochain arrive bientôt »). `Tube-Violet` (n° 62, ≈ 2 min 09, voix gratuite d'abord, sans barre de progression) :
-  à quoi il sert et ce qu'on y mesure. Accroche **« un seul tube va te dire pourquoi »** : image 0 = le patient pâle et
-  le tube violet, sans texte ; pâle / essoufflé / épuisé au mot (`Patient` `pale`, `breath`, `sweat`), « le tube violet »,
-  fiche NFS « hémoglobine 8,0 g/dL » qui clignote (`LabSheet` `lines` / `hot`), tampon ANÉMIE !. Puis l'EDTA (la pince
-  rose attrape le calcium → pas de caillot → sang liquide, cellules entières → hématologie), la NFS (N · F · S, numération
-  = compter, formule = les familles de globules blancs), globules rouges (oxygène, hémoglobine, jauge 12 – 17 g/dL →
-  anémie, VGM = taille), globules blancs (défenseurs ; trop nombreux → infection ? trop peu → se défend mal ;
-  polynucléaires, lymphocytes), plaquettes (bouchent la brèche ; trop peu → bleus, nez, gencives), aussi le groupe sanguin
-  (avant une transfusion) et l'hémoglobine glyquée (sucre des 3 derniers mois), le piège (jamais d'ionogramme : potassium ;
-  après le vert, avant le gris), les gestes (8 à 10 retournements sans secouer, sinon micro-caillots → plaquettes
-  faussement basses ; vite au labo), récap. `WhiteCell` a maintenant `kind` (`pnn` / `lympho` / `mono`). Voix gratuite : la
-  partie `edta` a été **coupée net** par edge-tts (« Or, sans calcium… ») : `voice.json` avait deux parties qui se
-  chevauchaient → phrase reformulée (« Et sans calcium… ») ; vérifier que les parties ne se chevauchent pas après
-  `npm run voice`. Storyboard `docs/lpi/storyboard-tube-violet.md`.
+  « le prochain arrive bientôt »). `Tube-Violet` (n° 62, ≈ 2 min 20, voix gratuite d'abord, sans barre de progression) :
+  **v2 refaite sur le contenu et le tableau de normes fournis par le propriétaire** (demandé : « parle directement du sujet
+  au début »). Accroche : le tube violet en grand dès l'image 0 (sans texte), il tremble, les cellules en sortent au mot
+  (rouges, blancs, plaquettes), « tout ça, c'est la NFS », la fiche NFS se déroule (11 lignes) et se lit ligne par ligne.
+  Puis la NFS (N · F · S, compte et étudie les cellules, diagnostic + suivi, l'EDTA : pas de caillot, cellules intactes),
+  et chaque ligne avec une **carte NORMES** (`NormCard` de `tubes.tsx`, valeurs du tableau du propriétaire) : hématies
+  (= globules rouges = érythrocytes, O₂ des poumons vers le corps, ≈ 120 jours ; H 4,2 – 5,7 / F 4,0 – 5,3 millions/mm³),
+  hémoglobine (protéine qui transporte l'O₂, trop basse = anémie ; H 14 – 18 / F 12 – 15 g/dL), hématocrite (place des
+  globules rouges dans le sang, tube tassé `Tube` `split` ; trop haut = polyglobulie ; H 40 – 52 / F 37 – 46 %), VGM (taille
+  moyenne, repère des anémies ; 80 – 100 fL), plaquettes (thrombocytes, morceaux de mégacaryocytes `Megakaryocyte`, caillot,
+  ≈ 9 jours ; thrombopénie = risque d'hémorragie, thrombocytose = peut faire penser à un saignement qui dure ; 150 000 –
+  400 000/mm³), leucocytes (défenses contre virus, bactéries, champignons ; trop = infection, leucopénie = immunodéprimé ;
+  4 000 – 10 000/mm³), la formule (PNN phagocytose 1 500 – 7 000, PNE allergie / parasites 50 – 500, PNB allergies /
+  inflammation 0 – 200), lymphocytes (défenses sur mesure ; lymphocytose = d'abord infection virale, parfois maladie du sang ;
+  1 500 – 4 000) et monocytes (phagocytes, règlent la réponse immunitaire ; 200 – 950), récap + la série des tubes.
+  **Correction faite dans le texte fourni** : « un déficit (lymphocytose) évoque une infection virale » → c'est l'**excès**
+  (lymphocytose) qui évoque d'abord une infection virale. `WhiteCell` `kind` : `pnn` / `eo` / `baso` / `lympho` / `mono`.
+  Voix gratuite : la partie `edta` de la v1 avait été **coupée net** par edge-tts (deux parties qui se chevauchaient dans
+  `voice.json`) → vérifier que les parties ne se chevauchent pas après `npm run voice` ; « C'est la NFS. » seul n'était pas
+  reconnu comme du français → « Tout ça, c'est la NFS… ». La v1 (EDTA, NFS, groupe sanguin, HbA1c, piège, gestes) reste
+  dans l'historique git. Storyboard `docs/lpi/storyboard-tube-violet.md`.
 
 ## Voix ElevenLabs « Laura » (choisie par le propriétaire pour les nouvelles vidéos)
 

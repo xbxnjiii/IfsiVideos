@@ -61,13 +61,15 @@ export const Tube: React.FC<{
 	taintColor?: string;
 	label?: string;
 	bad?: number;
-}> = ({size = 100, cap, level = 0, serum = 0, gel = false, mark = 0, markAt = 0.72, additive = 0, taint = 0, taintColor = CAP.edta, label, bad = 0}) => {
+	/** part du sérum (plasma) au-dessus des globules quand `serum` = 1 (0,48 ≈ hématocrite de 52 %) */
+	split?: number;
+}> = ({size = 100, cap, level = 0, serum = 0, gel = false, split = 0.48, mark = 0, markAt = 0.72, additive = 0, taint = 0, taintColor = CAP.edta, label, bad = 0}) => {
 	const frame = useCurrentFrame();
 	const id = React.useId().replace(/:/g, '');
 	const body = 'M16 80 H84 V350 Q84 392 50 392 Q16 392 16 350 Z';
 	const H = 300;
 	const top = 392 - H * level;
-	const clotTop = 392 - H * level * (1 - 0.48 * serum);
+	const clotTop = 392 - H * level * (1 - split * serum);
 	const gelH = gel ? 20 * serum : 0;
 	const wob = 3 * Math.sin(frame / 4);
 	return (
@@ -301,7 +303,7 @@ export const RedCell: React.FC<{size?: number; mouth?: number; broken?: number}>
 );
 
 /** Globule blanc (pour la NFS) ; `kind` : noyau d'un polynucléaire (en lobes), d'un lymphocyte (rond, gros) ou d'un monocyte (en haricot). */
-export const WhiteCell: React.FC<{size?: number; kind?: 'pnn' | 'lympho' | 'mono'}> = ({size = 120, kind = 'pnn'}) => (
+export const WhiteCell: React.FC<{size?: number; kind?: 'pnn' | 'lympho' | 'mono' | 'eo' | 'baso'}> = ({size = 120, kind = 'pnn'}) => (
 	<svg width={size} height={size} viewBox="0 0 120 120" style={{overflow: 'visible'}}>
 		<circle cx={60} cy={60} r={50} fill="#F4F1FA" stroke={N} strokeWidth={5} />
 		{kind === 'pnn' ? (
@@ -311,6 +313,21 @@ export const WhiteCell: React.FC<{size?: number; kind?: 'pnn' | 'lympho' | 'mono
 				<circle cx={80} cy={60} r={13} />
 				<circle cx={58} cy={74} r={12} />
 				<path d="M48 50 L56 46 M72 50 L76 56 M66 70 L74 66" stroke="#9C7BD0" strokeWidth={6} />
+			</g>
+		) : kind === 'eo' ? (
+			<g>
+				{[[34, 40], [50, 82], [84, 44], [86, 76], [62, 30], [30, 70], [70, 90]].map(([x, y], i) => (
+					<circle key={i} cx={x} cy={y} r={7} fill="#F0A07E" stroke={N} strokeWidth={1.5} />
+				))}
+				<circle cx={46} cy={58} r={16} fill="#9C7BD0" stroke={N} strokeWidth={3} />
+				<circle cx={74} cy={60} r={16} fill="#9C7BD0" stroke={N} strokeWidth={3} />
+			</g>
+		) : kind === 'baso' ? (
+			<g>
+				<path d="M40 50 Q50 36 66 44 Q82 52 74 68 Q62 80 46 70 Q34 62 40 50 Z" fill="#9C7BD0" stroke={N} strokeWidth={3} />
+				{[[34, 36], [56, 30], [82, 40], [90, 64], [72, 86], [44, 86], [28, 62], [60, 58], [50, 66], [70, 54]].map(([x, y], i) => (
+					<circle key={i} cx={x} cy={y} r={6} fill={N} />
+				))}
 			</g>
 		) : kind === 'lympho' ? (
 			<circle cx={60} cy={60} r={36} fill="#8A68C2" stroke={N} strokeWidth={3} />
@@ -371,3 +388,40 @@ export const LabSheet: React.FC<{width?: number; value?: string; alarm?: number;
 		</div>
 	);
 };
+
+/** Mégacaryocyte (très grosse cellule de la moelle) : noyau en lobes ; `shed` 0 → 1 : des plaquettes s'en détachent à droite. */
+export const Megakaryocyte: React.FC<{size?: number; shed?: number}> = ({size = 320, shed = 0}) => (
+	<svg width={size * 1.6} height={size} viewBox="0 0 480 300" style={{overflow: 'visible'}}>
+		<path d="M150 20 Q240 14 270 90 Q300 160 262 230 Q220 292 140 282 Q50 272 26 190 Q6 110 60 56 Q96 22 150 20 Z" fill="#EBD3F0" stroke={N} strokeWidth={6} />
+		{[[90, 90], [200, 80], [110, 220], [210, 210], [70, 160], [240, 150], [160, 260]].map(([x, y], i) => (
+			<circle key={i} cx={x} cy={y} r={4} fill="#C17BB0" />
+		))}
+		<g fill="#8A68C2" stroke={N} strokeWidth={4}>
+			<circle cx={120} cy={130} r={34} />
+			<circle cx={170} cy={110} r={30} />
+			<circle cx={180} cy={170} r={34} />
+			<circle cx={128} cy={186} r={28} />
+		</g>
+		{[0, 1, 2, 3, 4].map((k) => {
+			const t = Math.min(1, Math.max(0, shed * 5 - k));
+			if (t <= 0) return null;
+			return <ellipse key={k} cx={270 + t * (60 + k * 32)} cy={70 + k * 42 + Math.sin(k) * 10} rx={24} ry={16} fill="#E9B7C9" stroke={N} strokeWidth={3} />;
+		})}
+	</svg>
+);
+
+/** Carte des normes adultes (repère discret mais visible) : lignes [qui, valeur]. */
+export const NormCard: React.FC<{rows: string[][]; width?: number; note?: string}> = ({rows, width = 900, note}) => (
+	<div style={{width, boxSizing: 'border-box', borderRadius: 30, background: LPI.paper, border: `5px solid ${N}`, boxShadow: `0 10px 0 ${alpha(N, 0.12)}`, padding: '14px 24px', display: 'flex', alignItems: 'center', gap: 20}}>
+		<div style={{padding: '8px 16px', borderRadius: 999, background: LPI.sky, border: `4px solid ${N}`, fontFamily: FONT.body, fontWeight: 900, fontSize: 24, letterSpacing: '0.08em', color: N, whiteSpace: 'nowrap'}}>NORMES</div>
+		<div style={{flex: 1}}>
+			{rows.map(([who, v]) => (
+				<div key={who + v} style={{display: 'flex', alignItems: 'baseline', gap: 14, fontFamily: FONT.title, fontWeight: 900, fontSize: 38, color: N, lineHeight: 1.25}}>
+					{who ? <span style={{fontFamily: FONT.body, fontSize: 28, color: alpha(N, 0.75), minWidth: 110}}>{who}</span> : null}
+					<span>{v}</span>
+				</div>
+			))}
+			{note ? <div style={{fontFamily: FONT.body, fontWeight: 800, fontSize: 24, color: alpha(N, 0.7)}}>{note}</div> : null}
+		</div>
+	</div>
+);

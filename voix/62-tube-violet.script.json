@@ -2,51 +2,56 @@
  {
   "id": "intro",
   "rate": "+4%",
-  "text": "Ton patient est pâle, essoufflé, épuisé au moindre effort… Un seul tube peut te dire pourquoi : le tube violet. Et le verdict tombe : son hémoglobine est à huit. C'est une anémie !"
- },
- {
-  "id": "edta",
-  "rate": "+0%",
-  "text": "Dans ce tube, il y a un additif : l'{EDTA|É D T A}. Il capture le calcium du sang. Et sans calcium, le sang ne peut pas coaguler. Résultat : le sang reste liquide, et ses cellules restent bien entières, comme dans les vaisseaux. C'est pour ça que c'est le tube de l'hématologie : l'étude des cellules du sang."
+  "text": "Un seul tube violet… et toutes les cellules de ton sang passées au crible : les globules rouges, les globules blancs, les plaquettes. Tout ça, c'est la {NFS|N F S}… et tu vas enfin savoir lire chaque ligne !"
  },
  {
   "id": "nfs",
   "rate": "+0%",
-  "text": "Son examen star : la {NFS|N F S}, la numération formule sanguine. La numération, c'est compter les cellules du sang. La formule, c'est regarder quelles familles de globules blancs on trouve."
+  "text": "La {NFS|N F S}, c'est la numération formule sanguine. Elle compte et étudie les cellules du sang : les globules rouges, les globules blancs, et les plaquettes. Elle est essentielle pour poser un diagnostic… et pour suivre un patient. Dans le tube violet, l'{EDTA|É D T A} empêche le sang de coaguler : les cellules restent intactes."
  },
  {
-  "id": "rouges",
+  "id": "hematies",
   "rate": "+0%",
-  "text": "D'abord, les globules rouges. Ils transportent l'oxygène, grâce à l'hémoglobine. Si elle est trop basse, c'est une anémie : le patient est pâle, fatigué, essoufflé. On regarde aussi la taille des globules rouges : c'est le {VGM|V G M}, le volume globulaire moyen."
+  "text": "D'abord, les hématies : ce sont les globules rouges, qu'on appelle aussi érythrocytes. Elles transportent l'oxygène, des poumons vers tout le reste du corps. Et elles vivent environ cent vingt jours."
  },
  {
-  "id": "blancs",
+  "id": "hemoglobine",
   "rate": "+0%",
-  "text": "Ensuite, les globules blancs : les défenseurs du corps. Trop nombreux, on pense à une infection. Trop peu, et le patient se défend mal contre les microbes. La formule détaille chaque famille : les polynucléaires, les lymphocytes…"
+  "text": "Dans chaque globule rouge, il y a l'hémoglobine : c'est la protéine qui transporte l'oxygène. Quand elle est trop basse, on parle d'anémie."
+ },
+ {
+  "id": "hematocrite",
+  "rate": "+0%",
+  "text": "L'hématocrite, c'est la place que prennent les globules rouges dans le volume total du sang. Trop haut, on pense à une polyglobulie : il y a trop de globules rouges."
+ },
+ {
+  "id": "vgm",
+  "rate": "+0%",
+  "text": "Le {VGM|V G M}, le volume globulaire moyen, c'est la taille moyenne des globules rouges. C'est un repère essentiel pour comprendre une anémie."
  },
  {
   "id": "plaquettes",
   "rate": "+0%",
-  "text": "Et enfin, les plaquettes : elles bouchent les petites brèches des vaisseaux. Trop peu de plaquettes, et le patient saigne plus facilement : des bleus, le nez, les gencives."
+  "text": "Les plaquettes, ou thrombocytes, sont des morceaux de très grosses cellules : les mégacaryocytes. Elles forment le caillot qui arrête un saignement, et vivent environ neuf jours. Trop peu, c'est une thrombopénie : le risque d'hémorragie augmente. Trop, c'est une thrombocytose : elle peut faire penser à un saignement qui dure."
  },
  {
-  "id": "autres",
+  "id": "leucocytes",
   "rate": "+0%",
-  "text": "Le tube violet sert aussi au groupe sanguin, avant une transfusion. Et à l'hémoglobine glyquée, chez le diabétique : elle montre le sucre des trois derniers mois."
+  "text": "Les leucocytes, ce sont les globules blancs : les défenseurs du corps contre les virus, les bactéries et les champignons. Trop nombreux, on pense souvent à une infection. Trop peu, c'est une leucopénie : le patient est immunodéprimé, il se défend mal."
  },
  {
-  "id": "piege",
+  "id": "formule",
   "rate": "+0%",
-  "text": "Attention : jamais d'ionogramme dans ce tube ! L'{EDTA|É D T A} contient du potassium : le résultat serait faux. Et dans l'ordre des tubes, le violet passe après le vert… juste avant le gris."
+  "text": "La formule détaille les familles de globules blancs. Les polynucléaires neutrophiles avalent les microbes : c'est la phagocytose. Les éosinophiles augmentent en cas d'allergie ou de parasites. Et les basophiles participent aux allergies et à l'inflammation."
  },
  {
-  "id": "gestes",
+  "id": "lymphocytes",
   "rate": "+0%",
-  "text": "Après le prélèvement, retourne-le doucement, huit à dix fois, sans secouer. Sinon, de petits caillots se forment… et les plaquettes paraissent trop basses. Puis il part vite au labo."
+  "text": "Les lymphocytes, ce sont les défenses sur mesure : ils reconnaissent chaque microbe. Trop nombreux, c'est une lymphocytose : on pense d'abord à une infection virale… et parfois à une maladie du sang. Enfin, les monocytes avalent eux aussi les microbes, et ils règlent la réponse immunitaire."
  },
  {
   "id": "fin",
   "rate": "+2%",
-  "text": "Alors, on récapitule : le tube violet, avec son {EDTA|É D T A}, c'est l'hématologie. La {NFS|N F S} : globules rouges, globules blancs, plaquettes. Mais aussi le groupe sanguin et l'hémoglobine glyquée. Le prochain tube de la série arrive bientôt !"
+  "text": "Alors, on récapitule : les globules rouges et l'hémoglobine pour l'oxygène, les plaquettes pour le caillot, les globules blancs pour se défendre. Et tout ça… dans un seul tube violet ! Le prochain tube de la série arrive bientôt."
  }
 ]
