@@ -630,7 +630,7 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   `WhiteCell`, `Platelet`, `SugarCube` de la v1, plus utilisés). Storyboard `docs/lpi/storyboard-tubes-prelevement.md`.
 - **Série « les tubes »** (demandée : « une série de vidéos sur tous les tubes, on commence par le violet » ; chaque vidéo
   tient seule, pas de carte de partie ; à la fin, la rangée des 7 tubes avec celui de la vidéo coché, les autres « ? »,
-  « le prochain arrive bientôt »). `Tube-Violet` (n° 62, ≈ 2 min 20, voix gratuite d'abord, sans barre de progression) :
+  « le prochain arrive bientôt »). `Tube-Violet` (n° 62, ≈ 2 min 28, voix Laura après validation (2 722 crédits), sans barre de progression) :
   **v2 refaite sur le contenu et le tableau de normes fournis par le propriétaire** (demandé : « parle directement du sujet
   au début »). Accroche : le tube violet en grand dès l'image 0 (sans texte), il tremble, les cellules en sortent au mot
   (rouges, blancs, plaquettes), « tout ça, c'est la NFS », la fiche NFS se déroule (11 lignes) et se lit ligne par ligne.
@@ -651,7 +651,7 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   `voice.json`) → vérifier que les parties ne se chevauchent pas après `npm run voice` ; « C'est la NFS. » seul n'était pas
   reconnu comme du français → « Tout ça, c'est la NFS… ». La v1 (EDTA, NFS, groupe sanguin, HbA1c, piège, gestes) reste
   dans l'historique git. Storyboard `docs/lpi/storyboard-tube-violet.md`.
-  `Tube-Jaune` (n° 63, ≈ 2 min 44, voix gratuite d'abord, sans barre de progression) : l'ionogramme, sur le contenu et le
+  `Tube-Jaune` (n° 63, ≈ 2 min 52, voix Laura après validation (3 048 crédits ; Laura enchaînait « trop acide. Le phosphore » sans blanc : le blanc ajouté entre les parties est tombé au milieu de la phrase, déplacé à la main après « acide » puis réalignement), sans barre de progression) : l'ionogramme, sur le contenu et le
   tableau de normes fournis par le propriétaire. Accroche directe : le tube jaune en grand dès l'image 0, les 7 ions
   tournent autour, « cœur · muscles · nerfs », « un seul chiffre de travers… peut arrêter un cœur » (`EcgMonitor` qui devient
   plat). Puis le tube (sec + gel, caillot, centrifugé : caillot / gel / sérum), un ion (minéral dissous chargé ; cation +,
