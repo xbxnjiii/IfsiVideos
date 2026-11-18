@@ -76,7 +76,8 @@
     "render:cancer-anus": "remotion render Cancer-Anus out/59-cancer-anus.mp4",
     "render:cancer-voies-biliaires": "remotion render Cancer-Voies-Biliaires out/60-cancer-voies-biliaires.mp4",
     "render:tubes-prelevement": "remotion render Tubes-Prelevement out/61-tubes-prelevement.mp4",
-    "render:tube-violet": "remotion render Tube-Violet out/62-tube-violet.mp4"
+    "render:tube-violet": "remotion render Tube-Violet out/62-tube-violet.mp4",
+    "render:tube-jaune": "remotion render Tube-Jaune out/63-tube-jaune.mp4"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.532",

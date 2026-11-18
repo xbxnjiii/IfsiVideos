@@ -1,0 +1,57 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Un tube jaune… et sept minéraux qui font battre ton cœur, bouger tes muscles et fonctionner tes nerfs. C'est l'ionogramme ! Et un seul chiffre de travers… peut arrêter un cœur."
+ },
+ {
+  "id": "jaune",
+  "rate": "+0%",
+  "text": "Le tube jaune, c'est un tube sec, avec un gel. Dedans, le sang fait un caillot. Une fois centrifugé, le gel sépare le caillot du sérum : le liquide jaune au-dessus. C'est dans ce sérum qu'on mesure l'ionogramme."
+ },
+ {
+  "id": "ions",
+  "rate": "+0%",
+  "text": "Un ion, c'est un minéral dissous dans le sang, avec une petite charge électrique. Les cations sont chargés plus, les anions sont chargés moins. Certains vivent surtout hors des cellules : c'est le milieu extracellulaire. D'autres vivent dans les cellules : c'est le milieu intracellulaire."
+ },
+ {
+  "id": "sodium",
+  "rate": "+0%",
+  "text": "Le sodium, {Na⁺|N A plus}, c'est le principal cation hors des cellules. Il tient la pression artérielle, l'hydratation et l'équilibre des minéraux. Trop de sodium, c'est une hypernatrémie : les cellules se déshydratent. Pas assez, c'est une hyponatrémie : les cellules se gorgent d'eau."
+ },
+ {
+  "id": "potassium",
+  "rate": "+0%",
+  "text": "Le potassium, {K⁺|K plus}, c'est le principal cation dans les cellules. Il fait travailler les nerfs, les muscles… et le cœur. Trop de potassium, c'est une hyperkaliémie : à cause d'une insuffisance rénale, de cellules détruites qui le libèrent, ou d'une acidose, un sang trop acide. Pas assez, c'est une hypokaliémie : souvent des pertes digestives ou par les reins. Dans les deux cas, le cœur peut se dérégler, jusqu'à s'arrêter : ça se voit à l'{ECG|É C G}. C'est une urgence !"
+ },
+ {
+  "id": "chlore",
+  "rate": "+0%",
+  "text": "Le chlore, qu'on appelle aussi chlorure, c'est le principal anion hors des cellules. Il aide à garder l'équilibre entre l'acide et la base, et la pression osmotique : la force qui fait passer l'eau entre les cellules et le sang."
+ },
+ {
+  "id": "bicar",
+  "rate": "+0%",
+  "text": "Les bicarbonates règlent l'équilibre entre l'acide et la base. Trop hauts, on pense à une alcalose métabolique, un sang pas assez acide… ou à une acidose respiratoire. Trop bas, à une acidose métabolique : un sang trop acide."
+ },
+ {
+  "id": "phosphore",
+  "rate": "+0%",
+  "text": "Le phosphore, sous forme de phosphate, rend les os solides… et aide les cellules à fabriquer leur énergie."
+ },
+ {
+  "id": "magnesium",
+  "rate": "+0%",
+  "text": "Le magnésium participe à plus de trois cents réactions dans le corps. Il est essentiel aux nerfs, aux muscles, au rythme du cœur… et aux défenses de l'organisme."
+ },
+ {
+  "id": "calcium",
+  "rate": "+0%",
+  "text": "Et le calcium : il rend le squelette solide, aide le sang à coaguler, transmet l'influx nerveux et fait contracter les muscles. Trop de calcium : trop d'apports ou de vitamine D, des parathyroïdes, ces petites glandes du cou, qui travaillent trop, ou certains cancers qui abîment les os, comme le myélome. Pas assez : un manque de vitamine D, des parathyroïdes trop lentes, ou une insuffisance rénale chronique."
+ },
+ {
+  "id": "fin",
+  "rate": "+2%",
+  "text": "Alors, on récapitule : dans le tube jaune, le sérum. Le sodium et le chlore hors des cellules, le potassium dedans, les bicarbonates pour l'acidité, le phosphore pour les os, le magnésium et le calcium pour les nerfs et les muscles. Le prochain tube de la série arrive bientôt."
+ }
+]

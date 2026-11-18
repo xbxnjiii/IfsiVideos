@@ -651,6 +651,25 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   `voice.json`) → vérifier que les parties ne se chevauchent pas après `npm run voice` ; « C'est la NFS. » seul n'était pas
   reconnu comme du français → « Tout ça, c'est la NFS… ». La v1 (EDTA, NFS, groupe sanguin, HbA1c, piège, gestes) reste
   dans l'historique git. Storyboard `docs/lpi/storyboard-tube-violet.md`.
+  `Tube-Jaune` (n° 63, ≈ 2 min 44, voix gratuite d'abord, sans barre de progression) : l'ionogramme, sur le contenu et le
+  tableau de normes fournis par le propriétaire. Accroche directe : le tube jaune en grand dès l'image 0, les 7 ions
+  tournent autour, « cœur · muscles · nerfs », « un seul chiffre de travers… peut arrêter un cœur » (`EcgMonitor` qui devient
+  plat). Puis le tube (sec + gel, caillot, centrifugé : caillot / gel / sérum), un ion (minéral dissous chargé ; cation +,
+  anion − ; extra / intracellulaire sur le schéma `CellMap` : une cellule dans le sang, ions dehors / dedans, la cellule
+  rétrécit ou gonfle, l'eau qui passe), puis un ion par scène avec sa carte NORMES : sodium (pression artérielle,
+  hydratation ; hypernatrémie = cellules déshydratées, hyponatrémie = cellules gorgées d'eau ; 133 – 150), potassium (nerfs,
+  muscles, cœur ; hyper : insuffisance rénale, cellules détruites, acidose ; hypo : pertes digestives ou rénales ; ECG qui se
+  dérègle puis plat, tampon URGENCE ! ; 3,5 – 5), chlore = chlorure (acide / base, pression osmotique = la force qui fait
+  passer l'eau ; 95 – 105), bicarbonates (bascule ACIDE / BASE `Seesaw` ; trop hauts : alcalose métabolique ou acidose
+  respiratoire ; trop bas : acidose métabolique ; 22 – 30), phosphore (os, énergie des cellules ; 0,8 – 1,3), magnésium
+  (+ 300 réactions, nerfs, muscles, rythme du cœur, défenses ; 0,75 – 1), calcium (squelette, coagulation, influx nerveux,
+  contraction ; hyper : apports / vitamine D, parathyroïdes (petites glandes du cou) qui travaillent trop, cancers des os
+  comme le myélome ; hypo : manque de vitamine D, parathyroïdes trop lentes, insuffisance rénale chronique ; 2,2 – 2,6),
+  récap + la série (violet et jaune cochés). La sarcoïdose de la liste fournie n'est pas dite (liste raccourcie à l'oral).
+  Voix : le symbole « Cl⁻ » lu « C L moins » était entendu « c'est elle moins » → « le chlore, qu'on appelle aussi
+  chlorure » (symbole à l'écran seulement) ; « un myélome » entendu « un miel » → « certains cancers qui abîment les os,
+  comme le myélome ». Attention : `at(scène, 'dans')` prend le **premier** « dans » de la partie (« dans les cellules ») →
+  `at(scène, 'dans', 2)`. Storyboard `docs/lpi/storyboard-tube-jaune.md`.
 
 ## Voix ElevenLabs « Laura » (choisie par le propriétaire pour les nouvelles vidéos)
 

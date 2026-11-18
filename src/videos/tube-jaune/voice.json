@@ -1,0 +1,2373 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 159.94,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.049,
+   "end": 8.932
+  },
+  {
+   "id": "jaune",
+   "start": 9.914,
+   "end": 22.139
+  },
+  {
+   "id": "ions",
+   "start": 23.111,
+   "end": 37.949
+  },
+  {
+   "id": "sodium",
+   "start": 38.9,
+   "end": 54.6
+  },
+  {
+   "id": "potassium",
+   "start": 55.566,
+   "end": 81.716
+  },
+  {
+   "id": "chlore",
+   "start": 82.722,
+   "end": 93.085
+  },
+  {
+   "id": "bicar",
+   "start": 94.022,
+   "end": 106.509
+  },
+  {
+   "id": "phosphore",
+   "start": 107.46,
+   "end": 112.972
+  },
+  {
+   "id": "magnesium",
+   "start": 113.914,
+   "end": 121.526
+  },
+  {
+   "id": "calcium",
+   "start": 122.48,
+   "end": 144.192
+  },
+  {
+   "id": "fin",
+   "start": 145.182,
+   "end": 159.582
+  }
+ ],
+ "words": [
+  {
+   "text": "Un",
+   "start": 0.049,
+   "end": 0.193
+  },
+  {
+   "text": "tube",
+   "start": 0.193,
+   "end": 0.398
+  },
+  {
+   "text": "jaune…",
+   "start": 0.398,
+   "end": 0.758
+  },
+  {
+   "text": "et",
+   "start": 1.167,
+   "end": 1.203
+  },
+  {
+   "text": "sept",
+   "start": 1.203,
+   "end": 1.395
+  },
+  {
+   "text": "minéraux",
+   "start": 1.395,
+   "end": 1.756
+  },
+  {
+   "text": "qui",
+   "start": 1.756,
+   "end": 1.888
+  },
+  {
+   "text": "font",
+   "start": 1.888,
+   "end": 2.032
+  },
+  {
+   "text": "battre",
+   "start": 2.032,
+   "end": 2.309
+  },
+  {
+   "text": "ton",
+   "start": 2.309,
+   "end": 2.465
+  },
+  {
+   "text": "cœur,",
+   "start": 2.465,
+   "end": 2.813
+  },
+  {
+   "text": "bouger",
+   "start": 3.186,
+   "end": 3.402
+  },
+  {
+   "text": "tes",
+   "start": 3.402,
+   "end": 3.523
+  },
+  {
+   "text": "muscles",
+   "start": 3.523,
+   "end": 3.871
+  },
+  {
+   "text": "et",
+   "start": 3.871,
+   "end": 3.895
+  },
+  {
+   "text": "fonctionner",
+   "start": 3.895,
+   "end": 4.28
+  },
+  {
+   "text": "tes",
+   "start": 4.28,
+   "end": 4.388
+  },
+  {
+   "text": "nerfs.",
+   "start": 4.388,
+   "end": 4.761
+  },
+  {
+   "text": "C'est",
+   "start": 5.096,
+   "end": 5.264
+  },
+  {
+   "text": "l'ionogramme !",
+   "start": 5.264,
+   "end": 5.998
+  },
+  {
+   "text": "Et",
+   "start": 6.324,
+   "end": 6.504
+  },
+  {
+   "text": "un",
+   "start": 6.504,
+   "end": 6.6
+  },
+  {
+   "text": "seul",
+   "start": 6.601,
+   "end": 6.769
+  },
+  {
+   "text": "chiffre",
+   "start": 6.769,
+   "end": 7.093
+  },
+  {
+   "text": "de",
+   "start": 7.093,
+   "end": 7.177
+  },
+  {
+   "text": "travers…",
+   "start": 7.177,
+   "end": 7.682
+  },
+  {
+   "text": "peut",
+   "start": 7.947,
+   "end": 8.031
+  },
+  {
+   "text": "arrêter",
+   "start": 8.031,
+   "end": 8.403
+  },
+  {
+   "text": "un",
+   "start": 8.403,
+   "end": 8.488
+  },
+  {
+   "text": "cœur.",
+   "start": 8.488,
+   "end": 8.932
+  },
+  {
+   "text": "Le",
+   "start": 9.914,
+   "end": 10.039
+  },
+  {
+   "text": "tube",
+   "start": 10.039,
+   "end": 10.239
+  },
+  {
+   "text": "jaune,",
+   "start": 10.239,
+   "end": 10.639
+  },
+  {
+   "text": "c'est",
+   "start": 10.927,
+   "end": 11.052
+  },
+  {
+   "text": "un",
+   "start": 11.052,
+   "end": 11.189
+  },
+  {
+   "text": "tube",
+   "start": 11.189,
+   "end": 11.414
+  },
+  {
+   "text": "sec,",
+   "start": 11.414,
+   "end": 11.802
+  },
+  {
+   "text": "avec",
+   "start": 11.964,
+   "end": 12.189
+  },
+  {
+   "text": "un",
+   "start": 12.189,
+   "end": 12.277
+  },
+  {
+   "text": "gel.",
+   "start": 12.277,
+   "end": 12.726
+  },
+  {
+   "text": "Dedans,",
+   "start": 13.076,
+   "end": 13.601
+  },
+  {
+   "text": "le",
+   "start": 13.927,
+   "end": 14.014
+  },
+  {
+   "text": "sang",
+   "start": 14.014,
+   "end": 14.177
+  },
+  {
+   "text": "fait",
+   "start": 14.177,
+   "end": 14.326
+  },
+  {
+   "text": "un",
+   "start": 14.326,
+   "end": 14.414
+  },
+  {
+   "text": "caillot.",
+   "start": 14.414,
+   "end": 14.851
+  },
+  {
+   "text": "Une",
+   "start": 15.201,
+   "end": 15.402
+  },
+  {
+   "text": "fois",
+   "start": 15.402,
+   "end": 15.589
+  },
+  {
+   "text": "centrifugé,",
+   "start": 15.589,
+   "end": 16.326
+  },
+  {
+   "text": "le",
+   "start": 16.651,
+   "end": 16.727
+  },
+  {
+   "text": "gel",
+   "start": 16.727,
+   "end": 16.951
+  },
+  {
+   "text": "sépare",
+   "start": 16.951,
+   "end": 17.264
+  },
+  {
+   "text": "le",
+   "start": 17.264,
+   "end": 17.339
+  },
+  {
+   "text": "caillot",
+   "start": 17.339,
+   "end": 17.589
+  },
+  {
+   "text": "du",
+   "start": 17.589,
+   "end": 17.701
+  },
+  {
+   "text": "sérum :",
+   "start": 17.701,
+   "end": 18.177
+  },
+  {
+   "text": "le",
+   "start": 18.589,
+   "end": 18.639
+  },
+  {
+   "text": "liquide",
+   "start": 18.639,
+   "end": 18.989
+  },
+  {
+   "text": "jaune",
+   "start": 18.989,
+   "end": 19.214
+  },
+  {
+   "text": "au-dessus.",
+   "start": 19.214,
+   "end": 19.727
+  },
+  {
+   "text": "C'est",
+   "start": 20.064,
+   "end": 20.264
+  },
+  {
+   "text": "dans",
+   "start": 20.264,
+   "end": 20.377
+  },
+  {
+   "text": "ce",
+   "start": 20.377,
+   "end": 20.514
+  },
+  {
+   "text": "sérum",
+   "start": 20.514,
+   "end": 20.927
+  },
+  {
+   "text": "qu'on",
+   "start": 20.927,
+   "end": 21.064
+  },
+  {
+   "text": "mesure",
+   "start": 21.064,
+   "end": 21.401
+  },
+  {
+   "text": "l'ionogramme.",
+   "start": 21.401,
+   "end": 22.139
+  },
+  {
+   "text": "Un",
+   "start": 23.111,
+   "end": 23.274
+  },
+  {
+   "text": "ion,",
+   "start": 23.274,
+   "end": 23.661
+  },
+  {
+   "text": "c'est",
+   "start": 24.036,
+   "end": 24.161
+  },
+  {
+   "text": "un",
+   "start": 24.161,
+   "end": 24.286
+  },
+  {
+   "text": "minéral",
+   "start": 24.286,
+   "end": 24.699
+  },
+  {
+   "text": "dissous",
+   "start": 24.699,
+   "end": 24.998
+  },
+  {
+   "text": "dans",
+   "start": 24.998,
+   "end": 25.111
+  },
+  {
+   "text": "le",
+   "start": 25.111,
+   "end": 25.224
+  },
+  {
+   "text": "sang,",
+   "start": 25.224,
+   "end": 25.536
+  },
+  {
+   "text": "avec",
+   "start": 25.811,
+   "end": 26.036
+  },
+  {
+   "text": "une",
+   "start": 26.036,
+   "end": 26.136
+  },
+  {
+   "text": "petite",
+   "start": 26.136,
+   "end": 26.436
+  },
+  {
+   "text": "charge",
+   "start": 26.436,
+   "end": 26.699
+  },
+  {
+   "text": "électrique.",
+   "start": 26.699,
+   "end": 27.349
+  },
+  {
+   "text": "Les",
+   "start": 27.686,
+   "end": 27.861
+  },
+  {
+   "text": "cations",
+   "start": 27.861,
+   "end": 28.211
+  },
+  {
+   "text": "sont",
+   "start": 28.211,
+   "end": 28.349
+  },
+  {
+   "text": "chargés",
+   "start": 28.349,
+   "end": 28.661
+  },
+  {
+   "text": "plus,",
+   "start": 28.661,
+   "end": 29.123
+  },
+  {
+   "text": "les",
+   "start": 29.399,
+   "end": 29.474
+  },
+  {
+   "text": "anions",
+   "start": 29.474,
+   "end": 29.799
+  },
+  {
+   "text": "sont",
+   "start": 29.799,
+   "end": 29.936
+  },
+  {
+   "text": "chargés",
+   "start": 29.936,
+   "end": 30.286
+  },
+  {
+   "text": "moins.",
+   "start": 30.286,
+   "end": 30.599
+  },
+  {
+   "text": "Certains",
+   "start": 30.936,
+   "end": 31.386
+  },
+  {
+   "text": "vivent",
+   "start": 31.386,
+   "end": 31.586
+  },
+  {
+   "text": "surtout",
+   "start": 31.586,
+   "end": 31.949
+  },
+  {
+   "text": "hors",
+   "start": 31.949,
+   "end": 32.099
+  },
+  {
+   "text": "des",
+   "start": 32.099,
+   "end": 32.199
+  },
+  {
+   "text": "cellules :",
+   "start": 32.199,
+   "end": 32.661
+  },
+  {
+   "text": "c'est",
+   "start": 32.961,
+   "end": 33.086
+  },
+  {
+   "text": "le",
+   "start": 33.086,
+   "end": 33.174
+  },
+  {
+   "text": "milieu",
+   "start": 33.174,
+   "end": 33.536
+  },
+  {
+   "text": "extracellulaire.",
+   "start": 33.536,
+   "end": 34.523
+  },
+  {
+   "text": "D'autres",
+   "start": 34.861,
+   "end": 35.286
+  },
+  {
+   "text": "vivent",
+   "start": 35.286,
+   "end": 35.523
+  },
+  {
+   "text": "dans",
+   "start": 35.523,
+   "end": 35.623
+  },
+  {
+   "text": "les",
+   "start": 35.623,
+   "end": 35.724
+  },
+  {
+   "text": "cellules :",
+   "start": 35.724,
+   "end": 36.174
+  },
+  {
+   "text": "c'est",
+   "start": 36.461,
+   "end": 36.586
+  },
+  {
+   "text": "le",
+   "start": 36.586,
+   "end": 36.674
+  },
+  {
+   "text": "milieu",
+   "start": 36.674,
+   "end": 36.998
+  },
+  {
+   "text": "intracellulaire.",
+   "start": 36.998,
+   "end": 37.949
+  },
+  {
+   "text": "Le",
+   "start": 38.9,
+   "end": 39.087
+  },
+  {
+   "text": "sodium,",
+   "start": 39.087,
+   "end": 39.6
+  },
+  {
+   "text": "Na⁺,",
+   "start": 39.825,
+   "end": 40.475
+  },
+  {
+   "text": "c'est",
+   "start": 40.75,
+   "end": 40.875
+  },
+  {
+   "text": "le",
+   "start": 40.875,
+   "end": 40.938
+  },
+  {
+   "text": "principal",
+   "start": 40.938,
+   "end": 41.425
+  },
+  {
+   "text": "cation",
+   "start": 41.425,
+   "end": 41.875
+  },
+  {
+   "text": "hors",
+   "start": 41.875,
+   "end": 42.025
+  },
+  {
+   "text": "des",
+   "start": 42.025,
+   "end": 42.125
+  },
+  {
+   "text": "cellules.",
+   "start": 42.125,
+   "end": 42.663
+  },
+  {
+   "text": "Il",
+   "start": 43.0,
+   "end": 43.188
+  },
+  {
+   "text": "tient",
+   "start": 43.188,
+   "end": 43.375
+  },
+  {
+   "text": "la",
+   "start": 43.375,
+   "end": 43.45
+  },
+  {
+   "text": "pression",
+   "start": 43.45,
+   "end": 43.75
+  },
+  {
+   "text": "artérielle,",
+   "start": 43.75,
+   "end": 44.325
+  },
+  {
+   "text": "l'hydratation",
+   "start": 44.613,
+   "end": 45.3
+  },
+  {
+   "text": "et",
+   "start": 45.3,
+   "end": 45.375
+  },
+  {
+   "text": "l'équilibre",
+   "start": 45.375,
+   "end": 45.888
+  },
+  {
+   "text": "des",
+   "start": 45.888,
+   "end": 45.962
+  },
+  {
+   "text": "minéraux.",
+   "start": 45.962,
+   "end": 46.488
+  },
+  {
+   "text": "Trop",
+   "start": 46.825,
+   "end": 47.05
+  },
+  {
+   "text": "de",
+   "start": 47.05,
+   "end": 47.163
+  },
+  {
+   "text": "sodium,",
+   "start": 47.163,
+   "end": 47.688
+  },
+  {
+   "text": "c'est",
+   "start": 48.038,
+   "end": 48.15
+  },
+  {
+   "text": "une",
+   "start": 48.15,
+   "end": 48.325
+  },
+  {
+   "text": "hypernatrémie :",
+   "start": 48.325,
+   "end": 49.1
+  },
+  {
+   "text": "les",
+   "start": 49.425,
+   "end": 49.5
+  },
+  {
+   "text": "cellules",
+   "start": 49.5,
+   "end": 49.888
+  },
+  {
+   "text": "se",
+   "start": 49.888,
+   "end": 50.0
+  },
+  {
+   "text": "déshydratent.",
+   "start": 50.0,
+   "end": 50.737
+  },
+  {
+   "text": "Pas",
+   "start": 51.1,
+   "end": 51.213
+  },
+  {
+   "text": "assez,",
+   "start": 51.213,
+   "end": 51.65
+  },
+  {
+   "text": "c'est",
+   "start": 52.025,
+   "end": 52.138
+  },
+  {
+   "text": "une",
+   "start": 52.138,
+   "end": 52.338
+  },
+  {
+   "text": "hyponatrémie :",
+   "start": 52.338,
+   "end": 53.1
+  },
+  {
+   "text": "les",
+   "start": 53.4,
+   "end": 53.475
+  },
+  {
+   "text": "cellules",
+   "start": 53.475,
+   "end": 53.838
+  },
+  {
+   "text": "se",
+   "start": 53.838,
+   "end": 53.975
+  },
+  {
+   "text": "gorgent",
+   "start": 53.975,
+   "end": 54.3
+  },
+  {
+   "text": "d'eau.",
+   "start": 54.3,
+   "end": 54.6
+  },
+  {
+   "text": "Le",
+   "start": 55.566,
+   "end": 55.716
+  },
+  {
+   "text": "potassium,",
+   "start": 55.716,
+   "end": 56.454
+  },
+  {
+   "text": "K⁺,",
+   "start": 56.679,
+   "end": 56.779
+  },
+  {
+   "text": "c'est",
+   "start": 57.554,
+   "end": 57.679
+  },
+  {
+   "text": "le",
+   "start": 57.679,
+   "end": 57.754
+  },
+  {
+   "text": "principal",
+   "start": 57.754,
+   "end": 58.241
+  },
+  {
+   "text": "cation",
+   "start": 58.241,
+   "end": 58.604
+  },
+  {
+   "text": "dans",
+   "start": 58.604,
+   "end": 58.704
+  },
+  {
+   "text": "les",
+   "start": 58.704,
+   "end": 58.804
+  },
+  {
+   "text": "cellules.",
+   "start": 58.804,
+   "end": 59.341
+  },
+  {
+   "text": "Il",
+   "start": 59.679,
+   "end": 59.866
+  },
+  {
+   "text": "fait",
+   "start": 59.866,
+   "end": 59.954
+  },
+  {
+   "text": "travailler",
+   "start": 59.954,
+   "end": 60.329
+  },
+  {
+   "text": "les",
+   "start": 60.329,
+   "end": 60.429
+  },
+  {
+   "text": "nerfs,",
+   "start": 60.429,
+   "end": 60.804
+  },
+  {
+   "text": "les",
+   "start": 61.116,
+   "end": 61.191
+  },
+  {
+   "text": "muscles…",
+   "start": 61.191,
+   "end": 61.566
+  },
+  {
+   "text": "et",
+   "start": 61.791,
+   "end": 61.816
+  },
+  {
+   "text": "le",
+   "start": 61.816,
+   "end": 61.916
+  },
+  {
+   "text": "cœur.",
+   "start": 61.916,
+   "end": 62.366
+  },
+  {
+   "text": "Trop",
+   "start": 62.704,
+   "end": 62.941
+  },
+  {
+   "text": "de",
+   "start": 62.941,
+   "end": 63.029
+  },
+  {
+   "text": "potassium,",
+   "start": 63.029,
+   "end": 63.716
+  },
+  {
+   "text": "c'est",
+   "start": 64.016,
+   "end": 64.117
+  },
+  {
+   "text": "une",
+   "start": 64.117,
+   "end": 64.304
+  },
+  {
+   "text": "hyperkaliémie :",
+   "start": 64.304,
+   "end": 65.117
+  },
+  {
+   "text": "à",
+   "start": 65.379,
+   "end": 65.479
+  },
+  {
+   "text": "cause",
+   "start": 65.479,
+   "end": 65.691
+  },
+  {
+   "text": "d'une",
+   "start": 65.691,
+   "end": 65.829
+  },
+  {
+   "text": "insuffisance",
+   "start": 65.829,
+   "end": 66.391
+  },
+  {
+   "text": "rénale,",
+   "start": 66.391,
+   "end": 66.854
+  },
+  {
+   "text": "de",
+   "start": 67.166,
+   "end": 67.242
+  },
+  {
+   "text": "cellules",
+   "start": 67.242,
+   "end": 67.541
+  },
+  {
+   "text": "détruites",
+   "start": 67.541,
+   "end": 67.904
+  },
+  {
+   "text": "qui",
+   "start": 67.904,
+   "end": 68.004
+  },
+  {
+   "text": "le",
+   "start": 68.004,
+   "end": 68.079
+  },
+  {
+   "text": "libèrent,",
+   "start": 68.079,
+   "end": 68.529
+  },
+  {
+   "text": "ou",
+   "start": 68.891,
+   "end": 68.929
+  },
+  {
+   "text": "d'une",
+   "start": 68.929,
+   "end": 69.079
+  },
+  {
+   "text": "acidose,",
+   "start": 69.079,
+   "end": 69.629
+  },
+  {
+   "text": "un",
+   "start": 69.791,
+   "end": 69.867
+  },
+  {
+   "text": "sang",
+   "start": 69.867,
+   "end": 70.004
+  },
+  {
+   "text": "trop",
+   "start": 70.004,
+   "end": 70.191
+  },
+  {
+   "text": "acide.",
+   "start": 70.191,
+   "end": 70.766
+  },
+  {
+   "text": "Pas",
+   "start": 71.117,
+   "end": 71.229
+  },
+  {
+   "text": "assez,",
+   "start": 71.229,
+   "end": 71.666
+  },
+  {
+   "text": "c'est",
+   "start": 72.016,
+   "end": 72.129
+  },
+  {
+   "text": "une",
+   "start": 72.129,
+   "end": 72.341
+  },
+  {
+   "text": "hypokaliémie :",
+   "start": 72.341,
+   "end": 73.117
+  },
+  {
+   "text": "souvent",
+   "start": 73.454,
+   "end": 73.729
+  },
+  {
+   "text": "des",
+   "start": 73.729,
+   "end": 73.829
+  },
+  {
+   "text": "pertes",
+   "start": 73.829,
+   "end": 74.141
+  },
+  {
+   "text": "digestives",
+   "start": 74.141,
+   "end": 74.804
+  },
+  {
+   "text": "ou",
+   "start": 74.804,
+   "end": 74.841
+  },
+  {
+   "text": "par",
+   "start": 74.841,
+   "end": 75.004
+  },
+  {
+   "text": "les",
+   "start": 75.004,
+   "end": 75.091
+  },
+  {
+   "text": "reins.",
+   "start": 75.091,
+   "end": 75.379
+  },
+  {
+   "text": "Dans",
+   "start": 75.716,
+   "end": 75.916
+  },
+  {
+   "text": "les",
+   "start": 75.916,
+   "end": 76.004
+  },
+  {
+   "text": "deux",
+   "start": 76.004,
+   "end": 76.141
+  },
+  {
+   "text": "cas,",
+   "start": 76.141,
+   "end": 76.429
+  },
+  {
+   "text": "le",
+   "start": 76.754,
+   "end": 76.829
+  },
+  {
+   "text": "cœur",
+   "start": 76.829,
+   "end": 77.041
+  },
+  {
+   "text": "peut",
+   "start": 77.041,
+   "end": 77.154
+  },
+  {
+   "text": "se",
+   "start": 77.154,
+   "end": 77.279
+  },
+  {
+   "text": "dérégler,",
+   "start": 77.279,
+   "end": 77.816
+  },
+  {
+   "text": "jusqu'à",
+   "start": 78.104,
+   "end": 78.379
+  },
+  {
+   "text": "s'arrêter :",
+   "start": 78.379,
+   "end": 78.916
+  },
+  {
+   "text": "ça",
+   "start": 79.291,
+   "end": 79.429
+  },
+  {
+   "text": "se",
+   "start": 79.429,
+   "end": 79.566
+  },
+  {
+   "text": "voit",
+   "start": 79.566,
+   "end": 79.742
+  },
+  {
+   "text": "à",
+   "start": 79.742,
+   "end": 79.766
+  },
+  {
+   "text": "l'ECG.",
+   "start": 79.766,
+   "end": 80.379
+  },
+  {
+   "text": "C'est",
+   "start": 80.716,
+   "end": 80.904
+  },
+  {
+   "text": "une",
+   "start": 80.904,
+   "end": 81.091
+  },
+  {
+   "text": "urgence !",
+   "start": 81.091,
+   "end": 81.716
+  },
+  {
+   "text": "Le",
+   "start": 82.722,
+   "end": 82.835
+  },
+  {
+   "text": "chlore,",
+   "start": 82.835,
+   "end": 83.297
+  },
+  {
+   "text": "qu'on",
+   "start": 83.46,
+   "end": 83.547
+  },
+  {
+   "text": "appelle",
+   "start": 83.547,
+   "end": 83.835
+  },
+  {
+   "text": "aussi",
+   "start": 83.835,
+   "end": 84.034
+  },
+  {
+   "text": "chlorure,",
+   "start": 84.034,
+   "end": 84.534
+  },
+  {
+   "text": "c'est",
+   "start": 84.885,
+   "end": 84.984
+  },
+  {
+   "text": "le",
+   "start": 84.984,
+   "end": 85.047
+  },
+  {
+   "text": "principal",
+   "start": 85.047,
+   "end": 85.572
+  },
+  {
+   "text": "anion",
+   "start": 85.572,
+   "end": 85.909
+  },
+  {
+   "text": "hors",
+   "start": 85.909,
+   "end": 86.059
+  },
+  {
+   "text": "des",
+   "start": 86.059,
+   "end": 86.159
+  },
+  {
+   "text": "cellules.",
+   "start": 86.159,
+   "end": 86.697
+  },
+  {
+   "text": "Il",
+   "start": 87.047,
+   "end": 87.21
+  },
+  {
+   "text": "aide",
+   "start": 87.21,
+   "end": 87.322
+  },
+  {
+   "text": "à",
+   "start": 87.322,
+   "end": 87.372
+  },
+  {
+   "text": "garder",
+   "start": 87.372,
+   "end": 87.647
+  },
+  {
+   "text": "l'équilibre",
+   "start": 87.647,
+   "end": 88.135
+  },
+  {
+   "text": "entre",
+   "start": 88.135,
+   "end": 88.335
+  },
+  {
+   "text": "l'acide",
+   "start": 88.335,
+   "end": 88.71
+  },
+  {
+   "text": "et",
+   "start": 88.71,
+   "end": 88.734
+  },
+  {
+   "text": "la",
+   "start": 88.734,
+   "end": 88.835
+  },
+  {
+   "text": "base,",
+   "start": 88.835,
+   "end": 89.222
+  },
+  {
+   "text": "et",
+   "start": 89.51,
+   "end": 89.522
+  },
+  {
+   "text": "la",
+   "start": 89.522,
+   "end": 89.609
+  },
+  {
+   "text": "pression",
+   "start": 89.609,
+   "end": 89.96
+  },
+  {
+   "text": "osmotique :",
+   "start": 89.96,
+   "end": 90.572
+  },
+  {
+   "text": "la",
+   "start": 90.909,
+   "end": 91.01
+  },
+  {
+   "text": "force",
+   "start": 91.01,
+   "end": 91.247
+  },
+  {
+   "text": "qui",
+   "start": 91.247,
+   "end": 91.347
+  },
+  {
+   "text": "fait",
+   "start": 91.347,
+   "end": 91.447
+  },
+  {
+   "text": "passer",
+   "start": 91.447,
+   "end": 91.722
+  },
+  {
+   "text": "l'eau",
+   "start": 91.722,
+   "end": 91.934
+  },
+  {
+   "text": "entre",
+   "start": 91.934,
+   "end": 92.184
+  },
+  {
+   "text": "les",
+   "start": 92.184,
+   "end": 92.297
+  },
+  {
+   "text": "cellules",
+   "start": 92.297,
+   "end": 92.622
+  },
+  {
+   "text": "et",
+   "start": 92.622,
+   "end": 92.647
+  },
+  {
+   "text": "le",
+   "start": 92.647,
+   "end": 92.772
+  },
+  {
+   "text": "sang.",
+   "start": 92.772,
+   "end": 93.085
+  },
+  {
+   "text": "Les",
+   "start": 94.022,
+   "end": 94.184
+  },
+  {
+   "text": "bicarbonates",
+   "start": 94.184,
+   "end": 94.859
+  },
+  {
+   "text": "règlent",
+   "start": 94.859,
+   "end": 95.109
+  },
+  {
+   "text": "l'équilibre",
+   "start": 95.109,
+   "end": 95.622
+  },
+  {
+   "text": "entre",
+   "start": 95.622,
+   "end": 95.834
+  },
+  {
+   "text": "l'acide",
+   "start": 95.834,
+   "end": 96.247
+  },
+  {
+   "text": "et",
+   "start": 96.247,
+   "end": 96.272
+  },
+  {
+   "text": "la",
+   "start": 96.272,
+   "end": 96.372
+  },
+  {
+   "text": "base.",
+   "start": 96.372,
+   "end": 96.834
+  },
+  {
+   "text": "Trop",
+   "start": 97.209,
+   "end": 97.484
+  },
+  {
+   "text": "hauts,",
+   "start": 97.484,
+   "end": 97.697
+  },
+  {
+   "text": "on",
+   "start": 98.009,
+   "end": 98.059
+  },
+  {
+   "text": "pense",
+   "start": 98.059,
+   "end": 98.322
+  },
+  {
+   "text": "à",
+   "start": 98.322,
+   "end": 98.372
+  },
+  {
+   "text": "une",
+   "start": 98.372,
+   "end": 98.472
+  },
+  {
+   "text": "alcalose",
+   "start": 98.472,
+   "end": 98.922
+  },
+  {
+   "text": "métabolique,",
+   "start": 98.922,
+   "end": 99.559
+  },
+  {
+   "text": "un",
+   "start": 99.922,
+   "end": 99.972
+  },
+  {
+   "text": "sang",
+   "start": 99.972,
+   "end": 100.097
+  },
+  {
+   "text": "pas",
+   "start": 100.097,
+   "end": 100.197
+  },
+  {
+   "text": "assez",
+   "start": 100.197,
+   "end": 100.397
+  },
+  {
+   "text": "acide…",
+   "start": 100.397,
+   "end": 100.847
+  },
+  {
+   "text": "ou",
+   "start": 101.272,
+   "end": 101.372
+  },
+  {
+   "text": "à",
+   "start": 101.372,
+   "end": 101.434
+  },
+  {
+   "text": "une",
+   "start": 101.434,
+   "end": 101.522
+  },
+  {
+   "text": "acidose",
+   "start": 101.522,
+   "end": 101.922
+  },
+  {
+   "text": "respiratoire.",
+   "start": 101.922,
+   "end": 102.747
+  },
+  {
+   "text": "Trop",
+   "start": 103.109,
+   "end": 103.309
+  },
+  {
+   "text": "bas,",
+   "start": 103.309,
+   "end": 103.584
+  },
+  {
+   "text": "à",
+   "start": 103.909,
+   "end": 103.997
+  },
+  {
+   "text": "une",
+   "start": 103.997,
+   "end": 104.097
+  },
+  {
+   "text": "acidose",
+   "start": 104.097,
+   "end": 104.534
+  },
+  {
+   "text": "métabolique :",
+   "start": 104.534,
+   "end": 105.222
+  },
+  {
+   "text": "un",
+   "start": 105.534,
+   "end": 105.609
+  },
+  {
+   "text": "sang",
+   "start": 105.609,
+   "end": 105.759
+  },
+  {
+   "text": "trop",
+   "start": 105.759,
+   "end": 105.959
+  },
+  {
+   "text": "acide.",
+   "start": 105.959,
+   "end": 106.509
+  },
+  {
+   "text": "Le",
+   "start": 107.46,
+   "end": 107.647
+  },
+  {
+   "text": "phosphore,",
+   "start": 107.647,
+   "end": 108.21
+  },
+  {
+   "text": "sous",
+   "start": 108.572,
+   "end": 108.672
+  },
+  {
+   "text": "forme",
+   "start": 108.672,
+   "end": 108.922
+  },
+  {
+   "text": "de",
+   "start": 108.922,
+   "end": 109.022
+  },
+  {
+   "text": "phosphate,",
+   "start": 109.022,
+   "end": 109.623
+  },
+  {
+   "text": "rend",
+   "start": 109.935,
+   "end": 110.06
+  },
+  {
+   "text": "les",
+   "start": 110.06,
+   "end": 110.16
+  },
+  {
+   "text": "os",
+   "start": 110.16,
+   "end": 110.322
+  },
+  {
+   "text": "solides…",
+   "start": 110.322,
+   "end": 110.785
+  },
+  {
+   "text": "et",
+   "start": 111.21,
+   "end": 111.272
+  },
+  {
+   "text": "aide",
+   "start": 111.272,
+   "end": 111.46
+  },
+  {
+   "text": "les",
+   "start": 111.46,
+   "end": 111.56
+  },
+  {
+   "text": "cellules",
+   "start": 111.56,
+   "end": 111.873
+  },
+  {
+   "text": "à",
+   "start": 111.873,
+   "end": 111.922
+  },
+  {
+   "text": "fabriquer",
+   "start": 111.922,
+   "end": 112.322
+  },
+  {
+   "text": "leur",
+   "start": 112.322,
+   "end": 112.472
+  },
+  {
+   "text": "énergie.",
+   "start": 112.472,
+   "end": 112.972
+  },
+  {
+   "text": "Le",
+   "start": 113.914,
+   "end": 114.089
+  },
+  {
+   "text": "magnésium",
+   "start": 114.089,
+   "end": 114.639
+  },
+  {
+   "text": "participe",
+   "start": 114.639,
+   "end": 115.102
+  },
+  {
+   "text": "à",
+   "start": 115.102,
+   "end": 115.151
+  },
+  {
+   "text": "plus",
+   "start": 115.151,
+   "end": 115.314
+  },
+  {
+   "text": "de",
+   "start": 115.314,
+   "end": 115.414
+  },
+  {
+   "text": "trois",
+   "start": 115.414,
+   "end": 115.627
+  },
+  {
+   "text": "cents",
+   "start": 115.627,
+   "end": 115.764
+  },
+  {
+   "text": "réactions",
+   "start": 115.764,
+   "end": 116.151
+  },
+  {
+   "text": "dans",
+   "start": 116.151,
+   "end": 116.264
+  },
+  {
+   "text": "le",
+   "start": 116.264,
+   "end": 116.352
+  },
+  {
+   "text": "corps.",
+   "start": 116.352,
+   "end": 116.789
+  },
+  {
+   "text": "Il",
+   "start": 117.139,
+   "end": 117.314
+  },
+  {
+   "text": "est",
+   "start": 117.314,
+   "end": 117.352
+  },
+  {
+   "text": "essentiel",
+   "start": 117.352,
+   "end": 117.839
+  },
+  {
+   "text": "aux",
+   "start": 117.839,
+   "end": 117.889
+  },
+  {
+   "text": "nerfs,",
+   "start": 117.889,
+   "end": 118.276
+  },
+  {
+   "text": "aux",
+   "start": 118.489,
+   "end": 118.514
+  },
+  {
+   "text": "muscles,",
+   "start": 118.514,
+   "end": 118.914
+  },
+  {
+   "text": "au",
+   "start": 119.151,
+   "end": 119.177
+  },
+  {
+   "text": "rythme",
+   "start": 119.177,
+   "end": 119.464
+  },
+  {
+   "text": "du",
+   "start": 119.464,
+   "end": 119.577
+  },
+  {
+   "text": "cœur…",
+   "start": 119.577,
+   "end": 119.952
+  },
+  {
+   "text": "et",
+   "start": 120.252,
+   "end": 120.302
+  },
+  {
+   "text": "aux",
+   "start": 120.302,
+   "end": 120.339
+  },
+  {
+   "text": "défenses",
+   "start": 120.339,
+   "end": 120.702
+  },
+  {
+   "text": "de",
+   "start": 120.702,
+   "end": 120.776
+  },
+  {
+   "text": "l'organisme.",
+   "start": 120.776,
+   "end": 121.526
+  },
+  {
+   "text": "Et",
+   "start": 122.48,
+   "end": 122.605
+  },
+  {
+   "text": "le",
+   "start": 122.605,
+   "end": 122.68
+  },
+  {
+   "text": "calcium :",
+   "start": 122.68,
+   "end": 123.218
+  },
+  {
+   "text": "il",
+   "start": 123.893,
+   "end": 123.955
+  },
+  {
+   "text": "rend",
+   "start": 123.955,
+   "end": 124.093
+  },
+  {
+   "text": "le",
+   "start": 124.093,
+   "end": 124.18
+  },
+  {
+   "text": "squelette",
+   "start": 124.18,
+   "end": 124.48
+  },
+  {
+   "text": "solide,",
+   "start": 124.48,
+   "end": 124.905
+  },
+  {
+   "text": "aide",
+   "start": 125.105,
+   "end": 125.205
+  },
+  {
+   "text": "le",
+   "start": 125.205,
+   "end": 125.318
+  },
+  {
+   "text": "sang",
+   "start": 125.318,
+   "end": 125.518
+  },
+  {
+   "text": "à",
+   "start": 125.518,
+   "end": 125.58
+  },
+  {
+   "text": "coaguler,",
+   "start": 125.58,
+   "end": 126.205
+  },
+  {
+   "text": "transmet",
+   "start": 126.543,
+   "end": 126.893
+  },
+  {
+   "text": "l'influx",
+   "start": 126.893,
+   "end": 127.168
+  },
+  {
+   "text": "nerveux",
+   "start": 127.168,
+   "end": 127.568
+  },
+  {
+   "text": "et",
+   "start": 127.568,
+   "end": 127.643
+  },
+  {
+   "text": "fait",
+   "start": 127.643,
+   "end": 127.73
+  },
+  {
+   "text": "contracter",
+   "start": 127.73,
+   "end": 128.143
+  },
+  {
+   "text": "les",
+   "start": 128.143,
+   "end": 128.243
+  },
+  {
+   "text": "muscles.",
+   "start": 128.243,
+   "end": 128.768
+  },
+  {
+   "text": "Trop",
+   "start": 129.105,
+   "end": 129.33
+  },
+  {
+   "text": "de",
+   "start": 129.33,
+   "end": 129.38
+  },
+  {
+   "text": "calcium :",
+   "start": 129.38,
+   "end": 129.955
+  },
+  {
+   "text": "trop",
+   "start": 130.192,
+   "end": 130.355
+  },
+  {
+   "text": "d'apports",
+   "start": 130.355,
+   "end": 130.73
+  },
+  {
+   "text": "ou",
+   "start": 130.73,
+   "end": 130.768
+  },
+  {
+   "text": "de",
+   "start": 130.768,
+   "end": 130.855
+  },
+  {
+   "text": "vitamine",
+   "start": 130.855,
+   "end": 131.33
+  },
+  {
+   "text": "D,",
+   "start": 131.33,
+   "end": 131.593
+  },
+  {
+   "text": "des",
+   "start": 131.993,
+   "end": 132.08
+  },
+  {
+   "text": "parathyroïdes,",
+   "start": 132.08,
+   "end": 132.942
+  },
+  {
+   "text": "ces",
+   "start": 133.18,
+   "end": 133.305
+  },
+  {
+   "text": "petites",
+   "start": 133.305,
+   "end": 133.605
+  },
+  {
+   "text": "glandes",
+   "start": 133.605,
+   "end": 133.817
+  },
+  {
+   "text": "du",
+   "start": 133.817,
+   "end": 133.93
+  },
+  {
+   "text": "cou,",
+   "start": 133.93,
+   "end": 134.23
+  },
+  {
+   "text": "qui",
+   "start": 134.543,
+   "end": 134.618
+  },
+  {
+   "text": "travaillent",
+   "start": 134.618,
+   "end": 134.942
+  },
+  {
+   "text": "trop,",
+   "start": 134.942,
+   "end": 135.293
+  },
+  {
+   "text": "ou",
+   "start": 135.63,
+   "end": 135.668
+  },
+  {
+   "text": "certains",
+   "start": 135.668,
+   "end": 135.955
+  },
+  {
+   "text": "cancers",
+   "start": 135.955,
+   "end": 136.343
+  },
+  {
+   "text": "qui",
+   "start": 136.343,
+   "end": 136.493
+  },
+  {
+   "text": "abîment",
+   "start": 136.493,
+   "end": 136.718
+  },
+  {
+   "text": "les",
+   "start": 136.718,
+   "end": 136.83
+  },
+  {
+   "text": "os,",
+   "start": 136.83,
+   "end": 137.218
+  },
+  {
+   "text": "comme",
+   "start": 137.43,
+   "end": 137.567
+  },
+  {
+   "text": "le",
+   "start": 137.567,
+   "end": 137.643
+  },
+  {
+   "text": "myélome.",
+   "start": 137.643,
+   "end": 138.205
+  },
+  {
+   "text": "Pas",
+   "start": 138.543,
+   "end": 138.705
+  },
+  {
+   "text": "assez :",
+   "start": 138.705,
+   "end": 139.105
+  },
+  {
+   "text": "un",
+   "start": 139.518,
+   "end": 139.63
+  },
+  {
+   "text": "manque",
+   "start": 139.643,
+   "end": 139.83
+  },
+  {
+   "text": "de",
+   "start": 139.83,
+   "end": 139.905
+  },
+  {
+   "text": "vitamine",
+   "start": 139.905,
+   "end": 140.368
+  },
+  {
+   "text": "D,",
+   "start": 140.368,
+   "end": 140.63
+  },
+  {
+   "text": "des",
+   "start": 140.98,
+   "end": 141.055
+  },
+  {
+   "text": "parathyroïdes",
+   "start": 141.055,
+   "end": 141.68
+  },
+  {
+   "text": "trop",
+   "start": 141.68,
+   "end": 141.843
+  },
+  {
+   "text": "lentes,",
+   "start": 141.843,
+   "end": 142.18
+  },
+  {
+   "text": "ou",
+   "start": 142.53,
+   "end": 142.58
+  },
+  {
+   "text": "une",
+   "start": 142.58,
+   "end": 142.68
+  },
+  {
+   "text": "insuffisance",
+   "start": 142.68,
+   "end": 143.293
+  },
+  {
+   "text": "rénale",
+   "start": 143.293,
+   "end": 143.58
+  },
+  {
+   "text": "chronique.",
+   "start": 143.58,
+   "end": 144.192
+  },
+  {
+   "text": "Alors,",
+   "start": 145.182,
+   "end": 145.55
+  },
+  {
+   "text": "on",
+   "start": 145.709,
+   "end": 145.733
+  },
+  {
+   "text": "récapitule :",
+   "start": 145.733,
+   "end": 146.506
+  },
+  {
+   "text": "dans",
+   "start": 146.812,
+   "end": 146.885
+  },
+  {
+   "text": "le",
+   "start": 146.885,
+   "end": 146.959
+  },
+  {
+   "text": "tube",
+   "start": 146.959,
+   "end": 147.155
+  },
+  {
+   "text": "jaune,",
+   "start": 147.155,
+   "end": 147.523
+  },
+  {
+   "text": "le",
+   "start": 147.829,
+   "end": 147.915
+  },
+  {
+   "text": "sérum.",
+   "start": 147.915,
+   "end": 148.491
+  },
+  {
+   "text": "Le",
+   "start": 148.823,
+   "end": 149.007
+  },
+  {
+   "text": "sodium",
+   "start": 149.007,
+   "end": 149.35
+  },
+  {
+   "text": "et",
+   "start": 149.35,
+   "end": 149.386
+  },
+  {
+   "text": "le",
+   "start": 149.386,
+   "end": 149.46
+  },
+  {
+   "text": "chlore",
+   "start": 149.46,
+   "end": 149.742
+  },
+  {
+   "text": "hors",
+   "start": 149.742,
+   "end": 149.84
+  },
+  {
+   "text": "des",
+   "start": 149.84,
+   "end": 149.926
+  },
+  {
+   "text": "cellules,",
+   "start": 149.926,
+   "end": 150.391
+  },
+  {
+   "text": "le",
+   "start": 150.784,
+   "end": 150.845
+  },
+  {
+   "text": "potassium",
+   "start": 150.845,
+   "end": 151.359
+  },
+  {
+   "text": "dedans,",
+   "start": 151.359,
+   "end": 151.727
+  },
+  {
+   "text": "les",
+   "start": 152.009,
+   "end": 152.058
+  },
+  {
+   "text": "bicarbonates",
+   "start": 152.058,
+   "end": 152.671
+  },
+  {
+   "text": "pour",
+   "start": 152.671,
+   "end": 152.769
+  },
+  {
+   "text": "l'acidité,",
+   "start": 152.769,
+   "end": 153.369
+  },
+  {
+   "text": "le",
+   "start": 153.712,
+   "end": 153.774
+  },
+  {
+   "text": "phosphore",
+   "start": 153.774,
+   "end": 154.154
+  },
+  {
+   "text": "pour",
+   "start": 154.154,
+   "end": 154.288
+  },
+  {
+   "text": "les",
+   "start": 154.288,
+   "end": 154.374
+  },
+  {
+   "text": "os,",
+   "start": 154.386,
+   "end": 154.779
+  },
+  {
+   "text": "le",
+   "start": 155.024,
+   "end": 155.109
+  },
+  {
+   "text": "magnésium",
+   "start": 155.109,
+   "end": 155.587
+  },
+  {
+   "text": "et",
+   "start": 155.587,
+   "end": 155.612
+  },
+  {
+   "text": "le",
+   "start": 155.612,
+   "end": 155.673
+  },
+  {
+   "text": "calcium",
+   "start": 155.673,
+   "end": 156.163
+  },
+  {
+   "text": "pour",
+   "start": 156.163,
+   "end": 156.274
+  },
+  {
+   "text": "les",
+   "start": 156.274,
+   "end": 156.347
+  },
+  {
+   "text": "nerfs",
+   "start": 156.347,
+   "end": 156.568
+  },
+  {
+   "text": "et",
+   "start": 156.568,
+   "end": 156.592
+  },
+  {
+   "text": "les",
+   "start": 156.592,
+   "end": 156.678
+  },
+  {
+   "text": "muscles.",
+   "start": 156.678,
+   "end": 157.168
+  },
+  {
+   "text": "Le",
+   "start": 157.511,
+   "end": 157.683
+  },
+  {
+   "text": "prochain",
+   "start": 157.683,
+   "end": 158.001
+  },
+  {
+   "text": "tube",
+   "start": 158.001,
+   "end": 158.185
+  },
+  {
+   "text": "de",
+   "start": 158.185,
+   "end": 158.259
+  },
+  {
+   "text": "la",
+   "start": 158.259,
+   "end": 158.345
+  },
+  {
+   "text": "série",
+   "start": 158.345,
+   "end": 158.737
+  },
+  {
+   "text": "arrive",
+   "start": 158.737,
+   "end": 159.068
+  },
+  {
+   "text": "bientôt.",
+   "start": 159.068,
+   "end": 159.582
+  }
+ ]
+}

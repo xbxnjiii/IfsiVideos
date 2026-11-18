@@ -73,6 +73,7 @@ pas de logiciel de montage, pas de banque d'images.
 | 60 | Pathologie : le cancer des voies biliaires (voix Laura, accroche « il se gratte la nuit », schéma fourni sans annotations) | `Cancer-Voies-Biliaires` | [voix/60-cancer-voies-biliaires.script.json](voix/60-cancer-voies-biliaires.script.json) | [storyboard](docs/lpi/storyboard-cancer-voies-biliaires.md) |
 | 61 | Inventaire : l'ordre des tubes de prélèvement (voix Laura, accroche « le labo appelle : potassium à 7 », l'ordre seul) | `Tubes-Prelevement` | [voix/61-tubes-prelevement.script.json](voix/61-tubes-prelevement.script.json) | [storyboard](docs/lpi/storyboard-tubes-prelevement.md) |
 | 62 | Série les tubes : le tube violet, la NFS ligne par ligne avec les normes (voix gratuite) | `Tube-Violet` | [voix/62-tube-violet.script.json](voix/62-tube-violet.script.json) | [storyboard](docs/lpi/storyboard-tube-violet.md) |
+| 63 | Série les tubes : le tube jaune, l'ionogramme ion par ion avec les normes (voix gratuite) | `Tube-Jaune` | [voix/63-tube-jaune.script.json](voix/63-tube-jaune.script.json) | [storyboard](docs/lpi/storyboard-tube-jaune.md) |
 
 ## Utilisation
 
