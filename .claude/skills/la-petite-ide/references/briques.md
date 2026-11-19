@@ -46,6 +46,26 @@ Planche de contrôle : toutes les expressions en cartes-réactions (vérifier qu
 - `SfxEnabled` — Permet de couper tous les bruitages d'une vidéo (ex. version « voix seule »).
 - `Sfx` — Joue un bruitage à une frame donnée (relative à la scène).
 
+## `anal.tsx`
+Briques « cancer de l'anus » (vidéo n° 59). Mise en situation réaliste (vraies couleurs) : le rouleau de papier toilette sur le mur carrelé, la feuille tirée et la petite tache de sang. Explications aux couleurs de la marque : le papillomavirus (HPV), les cellules de la paroi qu'il abîme, pictos (sang sur le papier, démangeaisons, écoulement, défenses affaiblies, partenaires, intestin enflammé, toucher rectal, anuscopie, prélèvement, sphincter gardé, vaccin).
+
+- `ToiletPaperWall` — Le rouleau de papier toilette en très gros plan (repère 1080 × 1920, vraies couleurs) : mur carrelé, dérouleur chromé, le rouleau, la feuille tirée (`pull` 0 → 1) et la tache de sang qui apparaît dessus (`blood` 0 → 1).
+- `Hpv` — Le papillomavirus (HPV) aux couleurs de la marque : capside ronde à boutons ; `s` taille, `o` opacité.
+- `WallCell` — Une cellule de la paroi (vue simple, couleurs de la marque) : `sick` 0 → 1 la rend irrégulière et rose.
+- `HpvIcon` — Le papillomavirus (picto).
+- `BloodPaperIcon` — Du sang sur le papier toilette.
+- `ItchIcon` — Des démangeaisons : des traits de grattage.
+- `DischargeIcon` — Un écoulement : des gouttes.
+- `ShieldLowIcon` — Des défenses immunitaires affaiblies : un bouclier fêlé.
+- `PartnersIcon` — De nombreux partenaires : plusieurs silhouettes.
+- `GutInflamIcon` — Une maladie inflammatoire de l'intestin : l'intestin et des éclairs.
+- `GloveFingerIcon` — Le toucher rectal : un doigt ganté.
+- `AnoscopeIcon` — L'anuscopie : un petit tube éclairé.
+- `ForcepsIcon` — Une biopsie : une petite pince qui prend un fragment.
+- `SphincterKeepIcon` — On garde le sphincter : un anneau de muscle et une coche.
+- `HpvVaccineIcon` — Le vaccin contre le papillomavirus.
+- `GirlBoyIcon` — Une fille et un garçon (pictos).
+
 ## `ankle.tsx`
 « Entorse de la cheville » : bas de jambe + pied de profil (côté extérieur, orteils vers la droite), en vraies couleurs (mise en situation réaliste, demandé) : peau couleur chair, malléole, chaussette, basket blanche ; le pied se tord (`roll`), bouge (`flex`), la cheville gonfle (`swell`) et bleuit (`bruise`) ; vue radio (`xray`) avec l'os fêlé (`crack`) ; poche de glace dans un linge (`ice`), bande de contention en huit (`wrap`), doigt qui appuie sur l'os (`press`), sol de terre + racine (`ground`). Jambe surélevée sur des coussins (`LegRest`), pictos 4 pas et radio.
 
@@ -96,6 +116,32 @@ Briques « arrêt cardiaque » réutilisables : moniteur ECG (rythme normal, fib
 - `SwellFaceIcon` — Visage qui gonfle (lèvres et paupières).
 - `BreathAlertIcon` — Respirer difficilement : poumons + « ! ».
 - `MouthStingIcon` — Piqûre dans la bouche : bouche ouverte + petite abeille.
+
+## `biliary.tsx`
+Briques « cancer des voies biliaires » (vidéo n° 60). Pictos aux couleurs de la marque : un canal biliaire, la vésicule, les calculs, des selles claires, des griffures (la peau qui gratte).
+
+- `DuctIcon` — Les canaux biliaires : un arbre de petits canaux qui se rejoignent.
+- `GallbladderIcon` — La vésicule biliaire (poire verte).
+- `GallstoneIcon` — Des calculs biliaires dans la vésicule.
+- `PaleStoolIcon` — Des selles claires (décolorées).
+- `ScratchMarks` — Des griffures sur la peau (vraies couleurs : peau chair, traits rouges), centrées en (x, y) ; `k` 0 → 1.
+
+## `bladder.tsx`
+Briques « cancer de la vessie » (vidéo n° 53). Mise en situation réaliste (demandé) : les toilettes vues d'en haut, comme on les voit debout (carrelage, réservoir, abattant relevé, cuvette en céramique), l'eau qui se teinte de rouge (du sang dans les urines). Explications aux couleurs de la marque : pictos des signes (sang dans les urines, qui disparaît puis revient, envies fréquentes, brûlures), des examens (analyse d'urine, cystoscopie), des risques (produits chimiques au travail) et des traitements (résection par l'urètre, lavages de la vessie, ablation de la vessie).
+
+- `LOO` — Vraies couleurs des toilettes (mise en situation réaliste).
+- `LOO_WATER` — Centre de l'eau de la cuvette (repère 1080 × 1920).
+- `ToiletTop` — Les toilettes vues d'en haut (repère 1080 × 1920, plein cadre, vraies couleurs) : mur carrelé et réservoir en haut, abattant relevé, cuvette en céramique, eau au fond ; `tint` 0 → 1 : l'eau se teinte de rouge depuis le centre (du sang…
+- `BloodUrineIcon` — Du sang dans les urines : un flacon d'urine teinté de rose, une goutte.
+- `ComeBackIcon` — Il peut disparaître… puis revenir : la goutte qui s'efface et revient (flèche en boucle).
+- `UrgeIcon` — Envie d'uriner souvent, envie pressante : la cuvette et un réveil.
+- `BurningIcon` — Des brûlures en urinant : une goutte et une flamme.
+- `ChemicalIcon` — Produits chimiques au travail : un bidon (peinture, teintures, caoutchouc) et des gouttes.
+- `UrineTestIcon` — L'analyse d'urine : un pot et une bandelette.
+- `ScopeIcon` — La cystoscopie / la résection par l'urètre : une fine caméra souple, sa lumière.
+- `InstillIcon` — Les lavages de la vessie avec un médicament : une sonde, des gouttes qui remplissent la vessie.
+- `BladderOutIcon` — Retirer toute la vessie : la vessie et un bistouri.
+- `MaleIcon` — Surtout les hommes : symbole masculin.
 
 ## `body.tsx`
 Corps (trait bleu nuit, aplats de la palette) : poignet paume vers le haut avec artère radiale, doigts de l'examinateur qui prennent le pouls, pouce barré. Réutilisés d'une vidéo à l'autre.
@@ -316,7 +362,8 @@ Kit « une vidéo par constante » : mise en page, titres, pastilles, chronomèt
 - `RecapScene` — Scène récap complète : titre, lignes (≤ 6) au mot près, confettis (+ tampon facultatif) sur `done`.
 - `EndCard` — Carte de fin : logo principal qui rebondit + éclats.
 - `EpisodeTransition`
-- `Episode` — Vidéo complète : scènes enchaînées par leurs transitions (jamais deux fois la même d'affilée), progression des notions (toutes les scènes entre l'accroche et le récap), mascotte, voix, bruitages.
+- `SAFE_SCALE` — Marge de sécurité (demandé : « une fois postée, des textes passent sous les boutons de l'appli ») : toute l'image est réduite à 86 % et centrée, sur le fond `bg` ; les titres, la mascotte et les chiffres restent hors des zones de l'appli.
+- `Episode`
 - `SPOT`
 - `runAcross` — Sortie à gauche puis traversée en courant pendant le rideau `runWipe` qui ouvre la scène `start`.
 
@@ -446,6 +493,15 @@ Série courte « Les plaies » (30 – 40 s par vidéo, une situation vécue en 
 - `walkerLegs`
 - `Walker` — Adulte de profil (vers la droite), repère 300 × 600 (pieds au sol à y ≈ 590).
 
+## `kidney.tsx`
+Briques « cancer du rein » (vidéo n° 56). Mise en situation réaliste (vraies couleurs) : l'écran d'échographie (image en éventail, grains gris, le rein avec sa capsule claire, la masse qui apparaît sur le pôle supérieur, la mesure). Pictos aux couleurs de la marque : dialyse, vivre avec un seul rein, froid / chaleur (destruction des petites tumeurs).
+
+- `EchoScreen` — L'échographe (repère 1080 × 1920, vraies couleurs) : mur de la salle, écran noir avec l'image en éventail, le rein en coupe, `mass` 0 → 1 la boule qui apparaît sur le pôle supérieur, `measure` 0 → 1 la mesure (pointillés + « 3,2 cm »),…
+- `DialysisIcon` — La dialyse : le rein et la machine (tuyaux).
+- `OneKidneyIcon` — On vit très bien avec un seul rein : un rein + une coche.
+- `ColdHeatIcon` — Détruire une petite tumeur par le froid ou la chaleur : un flocon et une flamme.
+- `FlankLumpIcon` — Une boule qu'on sent dans le ventre (le flanc) : silhouette et main.
+
 ## `kids.tsx`
 Constantes de l'enfant : bébé assis de face (`Baby` : respiration avec le ventre, signes de lutte, nez bouché, tremblements, hypotonie, bonnet, stéthoscope, capteur au pied, fièvre), plante du pied avec les zones de la piqûre au talon (`BabyFoot`), couche et balance (`Diaper`, `KitchenScale`), brassards de trois tailles (`Cuff`), courbes « le cœur accélère d'abord, la tension baisse en dernier » (`CompChart`), thermomètre électronique (`ThermoStick`), biberon (`Bottle`), courbe de pouls du saturomètre (`Pleth`), moniteur (`KidMonitor`), cartes des 3 âges (`AgeTable`). Couleurs de la marque uniquement.
 
@@ -482,6 +538,28 @@ Briques pédagogiques La Petite IDE : numéro de partie, carte « terme techniqu
 
 - `SignKind`
 - `Sign`
+
+## `liver.tsx`
+Briques « cancer du foie » (vidéo n° 57). Mise en situation réaliste (vraies couleurs) : le soir, la fenêtre de nuit, la bouteille et le verre de vin rouge qui se remplit. Explications aux couleurs de la marque : pictos (virus des hépatites, foie gras, ventre qui gonfle, douleur sous les côtes à droite, le foie qui repousse, la greffe, la chaleur, couper l'arrivée de sang, vaccin, dépistage), nodules de la cirrhose.
+
+- `WINE` — Vraies couleurs du vin et du verre.
+- `WineGlassG` — Verre à pied (repère libre, pied posé en (0, 0), hauteur ≈ 260 × `s`) : `fill` 0 → 1 le vin dans le verre.
+- `WineBottleG` — Bouteille de vin rouge (repère libre, posée en (0, 0), hauteur ≈ 420 × `s`) ; `tilt` en degrés (on se sert).
+- `NightWindow` — La fenêtre de la cuisine la nuit (même place que dans `Kitchen` : x 40, y 300, 300 × 380) : ciel de nuit, lune.
+- `Cirrhosis` — Les nodules de la cirrhose posés sur un foie (repère libre) : petites bosses claires cernées, cicatrices ; `k` 0 → 1 (nombre de nodules qui apparaissent), placés dans le polygone `poly`.
+- `LiverShape` — Un foie (repère 100 × 100), centré en (x, 50).
+- `VirusIcon` — Les virus des hépatites B et C.
+- `FattyLiverIcon` — Le gras qui s'accumule dans le foie : le foie avec des gouttes de graisse.
+- `SwollenBellyIcon` — Un ventre qui gonfle (ascite).
+- `RibPainIcon` — Une douleur à droite, sous les côtes (là où est le foie).
+- `RegrowIcon` — Le foie qui repousse : un foie et une flèche qui tourne.
+- `TransplantIcon` — La greffe : un nouveau foie dans une glacière de transport.
+- `HeatIcon` — Détruire la tumeur par la chaleur : une aiguille et une flamme.
+- `BloodCutIcon` — Couper l'arrivée de sang à la tumeur : un vaisseau bouché devant une tumeur.
+- `VaccineIcon` — Le vaccin contre l'hépatite B.
+- `ScreenCIcon` — Le dépistage de l'hépatite C : une goutte de sang et une coche.
+- `LessAlcoholIcon` — Moins d'alcool : un verre et un signe moins.
+- `BiopsyIcon` — La biopsie : une fine aiguille qui entre dans le foie.
 
 ## `lungcancer.tsx`
 Briques « cancer du poumon » (vidéo n° 51). Mise en situation réaliste (demandé) : le balcon le soir (ciel du crépuscule, immeubles aux fenêtres allumées, rambarde en métal, plante, cendrier) et le père, vu de face, qui fume, tousse dans son mouchoir et découvre un peu de sang. Explications aux couleurs de la marque : pictos (perte de poids, radon, travail / amiante, immunothérapie, thérapie ciblée, tabagisme passif, cigarette barrée), fibroscope.
@@ -565,6 +643,21 @@ Format « histoire » (mystérieux) : fond bleu nuit qui respire, grille et pous
 - `BloodDrop` — Goutte de sang (repère centré, hauteur ≈ 2,4 r).
 - `BlowIcon` — Pictogramme « se moucher » : mouchoir + petit souffle.
 
+## `oesophagus.tsx`
+Briques « cancer de l'œsophage » (vidéo n° 58). Mise en situation réaliste (vraies couleurs) : le verre d'eau, l'assiette coupée en tout petits morceaux, le bol de soupe. Explications aux couleurs de la marque : pictos (mal à avaler, douleur en avalant, voix enrouée, reflux, fruits et légumes, prothèse, les deux types de cellules), la bouchée qui descend.
+
+- `WaterGlassG` — Verre d'eau (repère libre, posé en (0, 0), hauteur ≈ 200 × `s`, vraies couleurs) : `fill` 0 → 1.
+- `CutPlateG` — Assiette vue en plongée (centrée en (0, 0), largeur ≈ 2 × `r`) : la viande coupée en tout petits morceaux, de la purée.
+- `SoupBowlG` — Bol de soupe vu un peu de haut (centré en (0, 0), largeur ≈ 2 × `r`, vraies couleurs), avec la cuillère.
+- `SwallowIcon` — Du mal à avaler : la bouchée qui coince dans l'œsophage.
+- `PainSwallowIcon` — Une douleur en avalant.
+- `HoarseIcon` — Une voix enrouée : une bouche et des ondes cassées.
+- `RefluxIcon` — Le reflux : l'acide de l'estomac qui remonte dans l'œsophage.
+- `FruitVegIcon` — Des fruits et des légumes (une pomme et une carotte).
+- `StentIcon` — La prothèse : un petit tube grillagé qui garde l'œsophage ouvert.
+- `SquamousIcon` — Le carcinome épidermoïde : des cellules plates, empilées comme des pavés.
+- `GlandIcon` — L'adénocarcinome : des cellules de glande, en cercle autour d'un petit canal.
+
 ## `oxygen.tsx`
 Briques « SpO₂ » réutilisables : normes, saturomètre en gros plan (pince au bout du doigt : écran, courbe de pouls, lumière qui traverse le doigt, vernis, doigt froid, ongle bleuté), vaisseau sanguin vu de près (globules rouges dont l'hémoglobine se charge en O₂ au contact du poumon) et grille de 100 hémoglobines (le pourcentage).
 
@@ -590,6 +683,19 @@ Série « La douleur : échelles d'évaluation » : échelle numérique 0 → 10
 - `Carer` — Soignant (buste dans un rond) : tunique `tone`, coiffure `hair` 0 → 2.
 - `PainBars` — Échelle numérique en barres (plein cadre) : 11 barres de plus en plus hautes, de 0 à 10, la case du chiffre dessous.
 - `ObsRow` — Ligne d'une grille d'observation, en plein cadre (look 2026) : picto, ce qu'on observe, puis la réponse à `answerAt` — `yesno` : oui / non (Algoplus) ; `points` : 0 → `max` points (EVENDOL).
+
+## `pancreas.tsx`
+Briques « cancer du pancréas » (vidéo n° 54). Calques à poser sur le schéma fourni (tumeur de la tête du pancréas, prothèse biliaire) et pictos aux couleurs de la marque (œil jaune, douleur du ventre vers le dos, scanner, alcool, pancréatite, selles claires).
+
+- `TumorBlob` — Tumeur (grappe de cellules rouges, comme celle du schéma fourni), centrée en (x, y), rayon `r`, qui pousse avec `grow` 0 → 1.
+- `Stent` — Prothèse biliaire (petit tube grillagé) posée le long d'une ligne brisée, qui apparaît avec `k` 0 → 1.
+- `Sparkle` — Des points qui scintillent (insuline), autour de (x, y).
+- `JaundiceEyeIcon` — Un œil dont le blanc est jaune (jaunisse).
+- `BackPainIcon` — Une douleur au ventre qui part dans le dos : le tronc de profil, une flèche du ventre vers le dos.
+- `ScannerIcon` — Le scanner : l'anneau et la table.
+- `WineIcon` — L'alcool en excès : un verre de vin et une bouteille.
+- `InflamIcon` — La pancréatite : le pancréas enflammé.
+- `DarkUrineIcon` — Urines foncées, selles claires : deux flacons (foncé / clair).
 
 ## `patient.tsx`
 Modèle de corps humain réutilisable : patient vu de face, de la tête aux hanches (bas en fondu). Style plat de la marque (trait bleu nuit, tenue bleue, peau = rose 30 % sur blanc cassé), visage simple qui cligne, et des calques à doser 0 → 1 : cœur qui bat (ou tremble), artères (sang qui s'arrête), cerveau vu à travers le crâne (privé d'oxygène), poumons, lèvres bleutées (cyanose), brassard, rougeur, pâleur, sueurs, maux de tête, vertiges. Les points du corps (PATIENT_PTS) servent à poser repères, traits et loupes.
@@ -673,6 +779,19 @@ Briques « cancer de la prostate » (vidéo n° 49). Mise en situation réaliste
 - `RayIcon` — Radiothérapie (repère 100 × 100) : faisceaux qui convergent sur une cible.
 - `WatchIcon` — Surveillance active (repère 100 × 100) : un œil sur un calendrier coché (on surveille, sans traiter tout de suite).
 
+## `renal.tsx`
+Briques « bilan rénal » (série les tubes, n° 64) : le rein qui filtre le sang (déchets qui partent dans l'urine ou qui restent dans le sang), l'échelle des stades du DFG, les deux jauges créatinine ↑ / DFG ↓, la courbe aiguë / chronique, le muscle et la chaîne de protéine. Couleurs de la marque seulement.
+
+- `KidneyFilter` — Le rein qui filtre (920 × 700) : le sang traverse le rein de gauche à droite avec des globules (blanc cassé, gardés) et des déchets (points bleu nuit).
+- `DFG_STAGES` — Les stades du DFG (mL/min/1,73 m²), du meilleur au pire.
+- `StageLadder` — L'échelle des 5 stades (largeur 940) : chaque ligne apparaît à son temps `lit[i]` ; `cur` = ligne en surbrillance (index, peut être fractionnaire pour glisser).
+- `InverseGauges` — Deux jauges côte à côte : la créatinine monte quand le DFG baisse (`k` 0 → 1).
+- `TrendCurve` — Petite courbe (500 × 300) : `mode` « aigue » = la valeur saute d'un coup, « chronique » = elle monte lentement ; `k` 0 → 1 trace.
+- `MuscleArm` — Un biceps contracté (icône, repère 200 × 200).
+- `ProteinChain` — Chaîne de protéine qui se défait en acides aminés (`split` 0 → 1).
+- `Molecule` — Pastille « molécule » ronde avec un texte (NH₃, urée…).
+- `DialysisMachine` — La machine de dialyse (icône 260 × 220) : le sang sort du bras, passe dans la machine et revient.
+
 ## `sampling.tsx`
 Matériel de soins (prise de sang) : aiguille Vacutainer (2 pointes, manchon), corps de pompe (porte-tube), unité à ailettes (épicrânienne), tube sous vide (bouchon coloré, sang qui monte), solution hydroalcoolique, main (nue ou gantée), flacon d'antiseptique, compresse (stérile : sachet), pansement, collecteur à OPCT, sac DASRI, et le bras (veine, garrot, point de ponction, désinfection, compresse qui appuie, aiguille, pansement). Couleurs de la marque uniquement (le sang = rose, les bouchons = bleu, bleu clair, rose, bleu nuit).
 
@@ -723,6 +842,19 @@ Vidéos en série (« partie 1 / 3 ») : carte de la série juste après l'accro
 - `PullArrowG` — Flèche pointillée qui montre le sens de sortie (dans l'axe de l'écharde, vers l'extérieur).
 - `DeepSplinterIcon` — Petite écharde sous la peau, en coupe (icône 160 × 110) : la peau, l'écharde cassée en dessous.
 
+## `stomach.tsx`
+Briques « cancer de l'estomac » (vidéo n° 55). Mise en situation réaliste (vraies couleurs) : l'assiette du repas (viande, haricots verts, purée) et le sachet de pansement gastrique. Explications aux couleurs de la marque : la bactérie Helicobacter pylori (spirale à flagelles), pictos des signes (vite rassasié, vomissements, selles noires), du sel et de la bactérie.
+
+- `DinnerPlate` — L'assiette du repas vue en plongée (repère libre, centrée en (0, 0), largeur ≈ 2 × `r`), vraies couleurs.
+- `GelSachet` — Le sachet de pansement gastrique (vraies couleurs : blanc et vert), largeur `w`.
+- `Bacterium` — La bactérie Helicobacter pylori (couleurs de la marque) : corps en spirale, flagelles qui ondulent ; `angle`.
+- `PainBolts` — Éclairs de douleur (repère libre, centrés en (x, y)), qui clignotent ; `k` 0 → 1.
+- `FullIcon` — Se sentir vite rassasié : l'estomac déjà plein.
+- `VomitIcon` — Des vomissements : un visage et un jet.
+- `BlackStoolIcon` — Des selles noires.
+- `BacteriumIcon` — La bactérie (picto).
+- `SaltIcon` — Une alimentation trop salée : la salière.
+
 ## `suppo.tsx`
 Vidéo courte « Comment mettre un suppositoire » : le suppositoire (`Suppo` : torpille blanc cassé, pointe arrondie à droite, base plate à gauche, petit visage, mode fusée avec ailerons + flamme), la notice (`Notice`, ligne surlignée), le patient couché sur le côté gauche (`SideLying`, jambe du dessus pliée), l'anneau du sphincter (`Sphincter`), les fesses qui se serrent (`Squeeze`), un commentaire de réseau social (`Comment`). Couleurs de la marque uniquement.
 
@@ -769,6 +901,31 @@ Timeline générique « voix → scènes → animations » pour les vidéos La P
 - `makeTimeline`
 - `Timeline`
 - `episodeTimeline` — Timeline d'un épisode « une vidéo par constante » : scènes = parties de la voix + carte logo.
+
+## `tubes.tsx`
+Briques « l'ordre des tubes » (vidéo n° 61). Les bouchons sont aux VRAIES couleurs des tubes de laboratoire (exception à la palette, nécessaire : on apprend justement ces couleurs) et le sang est rouge (objet réel). Codes couleur les plus courants en France (ils peuvent varier selon les fabricants : la vidéo le dit).
+
+- `CAP` — Vraies couleurs des bouchons.
+- `HEMO_CAP` — Flacons d'hémoculture : aérobie bouchon vert, anaérobie bouchon orange (vraies couleurs).
+- `BLOOD`
+- `BLOOD_DARK`
+- `SERUM`
+- `TubeKind`
+- `ORDER` — L'ordre, case par case (0 = hémocultures).
+- `darker`
+- `Tube` — Tube sous vide (repère 100 × 400) : bouchon de couleur réelle, verre, étiquette.
+- `HemoFlask` — Flacon d'hémoculture (repère 160 × 340) : bouillon jaune clair, capsule, étiquette ; `o2` bulles d'oxygène, `noO2` O₂ barré.
+- `SlotArt` — Petit tube ou paire de flacons pour une case de la frise (repère libre, hauteur ≈ 150).
+- `OrderRail` — La frise de l'ordre (6 cases numérotées) : chaque case se remplit à `fill[i]` (pop), la case `cur` est surlignée en rose, les cases passées se cochent.
+- `NeedleUp` — Aiguille de prélèvement vue de profil, pointe vers le haut (repère 60 × 300), avec gaine de caoutchouc ; `drop` micro-goutte.
+- `RedCell` — Globule rouge (disque biconcave) ; `mouth` 0 → 1 bouche ouverte qui croque ; `blocked` cadenas.
+- `WhiteCell` — Globule blanc (pour la NFS) ; `kind` : noyau d'un polynucléaire (en lobes), d'un lymphocyte (rond, gros) ou d'un monocyte (en haricot).
+- `Platelet`
+- `SugarCube` — Morceau de sucre.
+- `Ion` — Ion en pastille (« K⁺ », « Ca²⁺ », « Na⁺ »).
+- `LabSheet` — Fiche de résultat du labo : une ligne « K⁺ 7,0 mmol/L » qui clignote en rose ; `fake` tampon FAUX barré.
+- `Megakaryocyte` — Mégacaryocyte (très grosse cellule de la moelle) : noyau en lobes ; `shed` 0 → 1 : des plaquettes s'en détachent à droite.
+- `NormCard` — Carte des normes adultes (repère discret mais visible) : lignes [qui, valeur].
 
 ## `ui.tsx`
 

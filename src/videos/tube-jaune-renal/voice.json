@@ -1,0 +1,2123 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 134.988,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.05,
+   "end": 13.138
+  },
+  {
+   "id": "reins",
+   "start": 14.064,
+   "end": 25.276
+  },
+  {
+   "id": "uree",
+   "start": 26.23,
+   "end": 46.03
+  },
+  {
+   "id": "creat",
+   "start": 46.988,
+   "end": 67.826
+  },
+  {
+   "id": "dfg",
+   "start": 68.778,
+   "end": 86.628
+  },
+  {
+   "id": "stades",
+   "start": 87.618,
+   "end": 116.943
+  },
+  {
+   "id": "fin",
+   "start": 117.902,
+   "end": 134.652
+  }
+ ],
+ "words": [
+  {
+   "text": "Tes",
+   "start": 0.05,
+   "end": 0.218
+  },
+  {
+   "text": "reins",
+   "start": 0.218,
+   "end": 0.387
+  },
+  {
+   "text": "nettoient",
+   "start": 0.387,
+   "end": 0.663
+  },
+  {
+   "text": "tout",
+   "start": 0.663,
+   "end": 0.795
+  },
+  {
+   "text": "ton",
+   "start": 0.795,
+   "end": 0.963
+  },
+  {
+   "text": "sang…",
+   "start": 0.963,
+   "end": 1.276
+  },
+  {
+   "text": "plus",
+   "start": 1.576,
+   "end": 1.721
+  },
+  {
+   "text": "de",
+   "start": 1.721,
+   "end": 1.817
+  },
+  {
+   "text": "trente",
+   "start": 1.817,
+   "end": 2.033
+  },
+  {
+   "text": "fois",
+   "start": 2.033,
+   "end": 2.153
+  },
+  {
+   "text": "par",
+   "start": 2.153,
+   "end": 2.322
+  },
+  {
+   "text": "jour.",
+   "start": 2.322,
+   "end": 2.67
+  },
+  {
+   "text": "Mais",
+   "start": 2.994,
+   "end": 3.151
+  },
+  {
+   "text": "quand",
+   "start": 3.151,
+   "end": 3.271
+  },
+  {
+   "text": "ils",
+   "start": 3.271,
+   "end": 3.427
+  },
+  {
+   "text": "commencent",
+   "start": 3.427,
+   "end": 3.739
+  },
+  {
+   "text": "à",
+   "start": 3.739,
+   "end": 3.799
+  },
+  {
+   "text": "fatiguer,",
+   "start": 3.8,
+   "end": 4.34
+  },
+  {
+   "text": "ça",
+   "start": 4.665,
+   "end": 4.761
+  },
+  {
+   "text": "ne",
+   "start": 4.761,
+   "end": 4.845
+  },
+  {
+   "text": "se",
+   "start": 4.845,
+   "end": 4.941
+  },
+  {
+   "text": "voit",
+   "start": 4.941,
+   "end": 5.062
+  },
+  {
+   "text": "pas.",
+   "start": 5.062,
+   "end": 5.326
+  },
+  {
+   "text": "Alors,",
+   "start": 5.697,
+   "end": 6.118
+  },
+  {
+   "text": "comment",
+   "start": 6.334,
+   "end": 6.562
+  },
+  {
+   "text": "le",
+   "start": 6.562,
+   "end": 6.647
+  },
+  {
+   "text": "savoir ?",
+   "start": 6.647,
+   "end": 7.199
+  },
+  {
+   "text": "Un",
+   "start": 7.536,
+   "end": 7.644
+  },
+  {
+   "text": "tube",
+   "start": 7.644,
+   "end": 7.849
+  },
+  {
+   "text": "jaune…",
+   "start": 7.849,
+   "end": 8.197
+  },
+  {
+   "text": "et",
+   "start": 8.377,
+   "end": 8.413
+  },
+  {
+   "text": "trois",
+   "start": 8.413,
+   "end": 8.606
+  },
+  {
+   "text": "résultats :",
+   "start": 8.606,
+   "end": 9.099
+  },
+  {
+   "text": "l'urée,",
+   "start": 9.567,
+   "end": 9.976
+  },
+  {
+   "text": "la",
+   "start": 10.264,
+   "end": 10.312
+  },
+  {
+   "text": "créatinine",
+   "start": 10.312,
+   "end": 10.95
+  },
+  {
+   "text": "et",
+   "start": 10.95,
+   "end": 10.986
+  },
+  {
+   "text": "le",
+   "start": 10.986,
+   "end": 11.094
+  },
+  {
+   "text": "DFG.",
+   "start": 11.094,
+   "end": 11.743
+  },
+  {
+   "text": "C'est",
+   "start": 12.069,
+   "end": 12.261
+  },
+  {
+   "text": "le",
+   "start": 12.261,
+   "end": 12.345
+  },
+  {
+   "text": "bilan",
+   "start": 12.345,
+   "end": 12.598
+  },
+  {
+   "text": "rénal !",
+   "start": 12.598,
+   "end": 13.138
+  },
+  {
+   "text": "Les",
+   "start": 14.064,
+   "end": 14.276
+  },
+  {
+   "text": "reins",
+   "start": 14.276,
+   "end": 14.464
+  },
+  {
+   "text": "sont",
+   "start": 14.464,
+   "end": 14.601
+  },
+  {
+   "text": "des",
+   "start": 14.601,
+   "end": 14.714
+  },
+  {
+   "text": "filtres.",
+   "start": 14.714,
+   "end": 15.276
+  },
+  {
+   "text": "Ils",
+   "start": 15.614,
+   "end": 15.826
+  },
+  {
+   "text": "gardent",
+   "start": 15.826,
+   "end": 16.127
+  },
+  {
+   "text": "dans",
+   "start": 16.127,
+   "end": 16.239
+  },
+  {
+   "text": "le",
+   "start": 16.239,
+   "end": 16.351
+  },
+  {
+   "text": "sang",
+   "start": 16.351,
+   "end": 16.564
+  },
+  {
+   "text": "ce",
+   "start": 16.564,
+   "end": 16.689
+  },
+  {
+   "text": "qui",
+   "start": 16.689,
+   "end": 16.802
+  },
+  {
+   "text": "est",
+   "start": 16.802,
+   "end": 16.826
+  },
+  {
+   "text": "utile…",
+   "start": 16.826,
+   "end": 17.314
+  },
+  {
+   "text": "et",
+   "start": 17.752,
+   "end": 17.776
+  },
+  {
+   "text": "ils",
+   "start": 17.776,
+   "end": 17.864
+  },
+  {
+   "text": "rejettent",
+   "start": 17.864,
+   "end": 18.201
+  },
+  {
+   "text": "les",
+   "start": 18.201,
+   "end": 18.276
+  },
+  {
+   "text": "déchets",
+   "start": 18.276,
+   "end": 18.551
+  },
+  {
+   "text": "dans",
+   "start": 18.551,
+   "end": 18.664
+  },
+  {
+   "text": "l'urine.",
+   "start": 18.664,
+   "end": 19.189
+  },
+  {
+   "text": "Mais",
+   "start": 19.526,
+   "end": 19.676
+  },
+  {
+   "text": "quand",
+   "start": 19.676,
+   "end": 19.789
+  },
+  {
+   "text": "ils",
+   "start": 19.789,
+   "end": 19.964
+  },
+  {
+   "text": "filtrent",
+   "start": 19.964,
+   "end": 20.289
+  },
+  {
+   "text": "mal,",
+   "start": 20.289,
+   "end": 20.614
+  },
+  {
+   "text": "les",
+   "start": 20.939,
+   "end": 21.002
+  },
+  {
+   "text": "déchets",
+   "start": 21.002,
+   "end": 21.276
+  },
+  {
+   "text": "restent",
+   "start": 21.276,
+   "end": 21.589
+  },
+  {
+   "text": "dans",
+   "start": 21.589,
+   "end": 21.701
+  },
+  {
+   "text": "le",
+   "start": 21.701,
+   "end": 21.814
+  },
+  {
+   "text": "sang",
+   "start": 21.814,
+   "end": 22.026
+  },
+  {
+   "text": "et",
+   "start": 22.026,
+   "end": 22.102
+  },
+  {
+   "text": "s'accumulent.",
+   "start": 22.102,
+   "end": 22.776
+  },
+  {
+   "text": "Et",
+   "start": 23.114,
+   "end": 23.264
+  },
+  {
+   "text": "c'est",
+   "start": 23.264,
+   "end": 23.401
+  },
+  {
+   "text": "justement",
+   "start": 23.401,
+   "end": 23.814
+  },
+  {
+   "text": "ce",
+   "start": 23.814,
+   "end": 23.926
+  },
+  {
+   "text": "qu'on",
+   "start": 23.926,
+   "end": 24.051
+  },
+  {
+   "text": "mesure",
+   "start": 24.051,
+   "end": 24.439
+  },
+  {
+   "text": "dans",
+   "start": 24.439,
+   "end": 24.539
+  },
+  {
+   "text": "le",
+   "start": 24.539,
+   "end": 24.627
+  },
+  {
+   "text": "tube",
+   "start": 24.627,
+   "end": 24.826
+  },
+  {
+   "text": "jaune.",
+   "start": 24.826,
+   "end": 25.276
+  },
+  {
+   "text": "D'abord,",
+   "start": 26.23,
+   "end": 26.855
+  },
+  {
+   "text": "l'urée.",
+   "start": 27.23,
+   "end": 27.655
+  },
+  {
+   "text": "C'est",
+   "start": 27.992,
+   "end": 28.205
+  },
+  {
+   "text": "le",
+   "start": 28.205,
+   "end": 28.293
+  },
+  {
+   "text": "déchet",
+   "start": 28.293,
+   "end": 28.567
+  },
+  {
+   "text": "final",
+   "start": 28.567,
+   "end": 28.992
+  },
+  {
+   "text": "des",
+   "start": 28.992,
+   "end": 29.08
+  },
+  {
+   "text": "protéines.",
+   "start": 29.08,
+   "end": 29.78
+  },
+  {
+   "text": "Les",
+   "start": 30.13,
+   "end": 30.293
+  },
+  {
+   "text": "protéines",
+   "start": 30.293,
+   "end": 30.767
+  },
+  {
+   "text": "sont",
+   "start": 30.767,
+   "end": 30.93
+  },
+  {
+   "text": "faites",
+   "start": 30.93,
+   "end": 31.117
+  },
+  {
+   "text": "d'acides",
+   "start": 31.117,
+   "end": 31.43
+  },
+  {
+   "text": "aminés :",
+   "start": 31.43,
+   "end": 31.905
+  },
+  {
+   "text": "en",
+   "start": 32.218,
+   "end": 32.305
+  },
+  {
+   "text": "les",
+   "start": 32.305,
+   "end": 32.392
+  },
+  {
+   "text": "utilisant,",
+   "start": 32.392,
+   "end": 33.005
+  },
+  {
+   "text": "le",
+   "start": 33.292,
+   "end": 33.355
+  },
+  {
+   "text": "corps",
+   "start": 33.355,
+   "end": 33.542
+  },
+  {
+   "text": "produit",
+   "start": 33.542,
+   "end": 33.855
+  },
+  {
+   "text": "de",
+   "start": 33.855,
+   "end": 33.943
+  },
+  {
+   "text": "l'ammoniac.",
+   "start": 33.943,
+   "end": 34.605
+  },
+  {
+   "text": "Le",
+   "start": 34.942,
+   "end": 35.13
+  },
+  {
+   "text": "foie",
+   "start": 35.13,
+   "end": 35.317
+  },
+  {
+   "text": "le",
+   "start": 35.317,
+   "end": 35.38
+  },
+  {
+   "text": "transforme",
+   "start": 35.38,
+   "end": 35.855
+  },
+  {
+   "text": "en",
+   "start": 35.855,
+   "end": 35.905
+  },
+  {
+   "text": "urée…",
+   "start": 35.905,
+   "end": 36.317
+  },
+  {
+   "text": "et",
+   "start": 36.68,
+   "end": 36.767
+  },
+  {
+   "text": "les",
+   "start": 36.767,
+   "end": 36.867
+  },
+  {
+   "text": "reins",
+   "start": 36.867,
+   "end": 37.055
+  },
+  {
+   "text": "l'éliminent",
+   "start": 37.055,
+   "end": 37.492
+  },
+  {
+   "text": "dans",
+   "start": 37.492,
+   "end": 37.605
+  },
+  {
+   "text": "l'urine.",
+   "start": 37.605,
+   "end": 38.142
+  },
+  {
+   "text": "Une",
+   "start": 38.48,
+   "end": 38.705
+  },
+  {
+   "text": "urée",
+   "start": 38.705,
+   "end": 38.855
+  },
+  {
+   "text": "trop",
+   "start": 38.855,
+   "end": 39.08
+  },
+  {
+   "text": "haute",
+   "start": 39.08,
+   "end": 39.267
+  },
+  {
+   "text": "peut",
+   "start": 39.267,
+   "end": 39.367
+  },
+  {
+   "text": "faire",
+   "start": 39.367,
+   "end": 39.517
+  },
+  {
+   "text": "penser",
+   "start": 39.517,
+   "end": 39.83
+  },
+  {
+   "text": "à",
+   "start": 39.83,
+   "end": 39.88
+  },
+  {
+   "text": "une",
+   "start": 39.88,
+   "end": 39.955
+  },
+  {
+   "text": "déshydratation,",
+   "start": 39.955,
+   "end": 40.793
+  },
+  {
+   "text": "à",
+   "start": 41.08,
+   "end": 41.168
+  },
+  {
+   "text": "une",
+   "start": 41.168,
+   "end": 41.255
+  },
+  {
+   "text": "insuffisance",
+   "start": 41.255,
+   "end": 41.805
+  },
+  {
+   "text": "rénale…",
+   "start": 41.805,
+   "end": 42.218
+  },
+  {
+   "text": "ou",
+   "start": 42.655,
+   "end": 42.718
+  },
+  {
+   "text": "à",
+   "start": 42.718,
+   "end": 42.78
+  },
+  {
+   "text": "une",
+   "start": 42.78,
+   "end": 42.88
+  },
+  {
+   "text": "hémorragie",
+   "start": 42.88,
+   "end": 43.293
+  },
+  {
+   "text": "digestive :",
+   "start": 43.293,
+   "end": 43.942
+  },
+  {
+   "text": "un",
+   "start": 44.392,
+   "end": 44.442
+  },
+  {
+   "text": "saignement",
+   "start": 44.442,
+   "end": 44.83
+  },
+  {
+   "text": "dans",
+   "start": 44.83,
+   "end": 44.93
+  },
+  {
+   "text": "le",
+   "start": 44.93,
+   "end": 45.017
+  },
+  {
+   "text": "tube",
+   "start": 45.017,
+   "end": 45.23
+  },
+  {
+   "text": "digestif.",
+   "start": 45.23,
+   "end": 46.03
+  },
+  {
+   "text": "Ensuite,",
+   "start": 46.988,
+   "end": 47.576
+  },
+  {
+   "text": "la",
+   "start": 47.813,
+   "end": 47.901
+  },
+  {
+   "text": "créatinine.",
+   "start": 47.901,
+   "end": 48.713
+  },
+  {
+   "text": "C'est",
+   "start": 49.05,
+   "end": 49.238
+  },
+  {
+   "text": "un",
+   "start": 49.238,
+   "end": 49.388
+  },
+  {
+   "text": "déchet",
+   "start": 49.388,
+   "end": 49.663
+  },
+  {
+   "text": "des",
+   "start": 49.663,
+   "end": 49.763
+  },
+  {
+   "text": "muscles :",
+   "start": 49.763,
+   "end": 50.175
+  },
+  {
+   "text": "elle",
+   "start": 50.601,
+   "end": 50.663
+  },
+  {
+   "text": "vient",
+   "start": 50.663,
+   "end": 50.813
+  },
+  {
+   "text": "de",
+   "start": 50.813,
+   "end": 50.888
+  },
+  {
+   "text": "la",
+   "start": 50.888,
+   "end": 50.963
+  },
+  {
+   "text": "créatine,",
+   "start": 50.963,
+   "end": 51.663
+  },
+  {
+   "text": "qui",
+   "start": 51.925,
+   "end": 52.088
+  },
+  {
+   "text": "aide",
+   "start": 52.088,
+   "end": 52.188
+  },
+  {
+   "text": "les",
+   "start": 52.188,
+   "end": 52.3
+  },
+  {
+   "text": "muscles",
+   "start": 52.3,
+   "end": 52.588
+  },
+  {
+   "text": "à",
+   "start": 52.588,
+   "end": 52.626
+  },
+  {
+   "text": "produire",
+   "start": 52.626,
+   "end": 53.013
+  },
+  {
+   "text": "leur",
+   "start": 53.013,
+   "end": 53.163
+  },
+  {
+   "text": "énergie.",
+   "start": 53.163,
+   "end": 53.688
+  },
+  {
+   "text": "Ce",
+   "start": 54.038,
+   "end": 54.251
+  },
+  {
+   "text": "sont",
+   "start": 54.251,
+   "end": 54.376
+  },
+  {
+   "text": "surtout",
+   "start": 54.376,
+   "end": 54.688
+  },
+  {
+   "text": "les",
+   "start": 54.688,
+   "end": 54.8
+  },
+  {
+   "text": "reins",
+   "start": 54.8,
+   "end": 54.988
+  },
+  {
+   "text": "qui",
+   "start": 54.988,
+   "end": 55.126
+  },
+  {
+   "text": "l'éliminent.",
+   "start": 55.126,
+   "end": 55.751
+  },
+  {
+   "text": "Et",
+   "start": 56.088,
+   "end": 56.226
+  },
+  {
+   "text": "plus",
+   "start": 56.226,
+   "end": 56.401
+  },
+  {
+   "text": "on",
+   "start": 56.401,
+   "end": 56.501
+  },
+  {
+   "text": "a",
+   "start": 56.501,
+   "end": 56.588
+  },
+  {
+   "text": "de",
+   "start": 56.588,
+   "end": 56.701
+  },
+  {
+   "text": "muscles,",
+   "start": 56.701,
+   "end": 57.175
+  },
+  {
+   "text": "plus",
+   "start": 57.363,
+   "end": 57.513
+  },
+  {
+   "text": "on",
+   "start": 57.513,
+   "end": 57.613
+  },
+  {
+   "text": "en",
+   "start": 57.613,
+   "end": 57.713
+  },
+  {
+   "text": "fabrique :",
+   "start": 57.713,
+   "end": 58.213
+  },
+  {
+   "text": "c'est",
+   "start": 58.626,
+   "end": 58.726
+  },
+  {
+   "text": "pour",
+   "start": 58.726,
+   "end": 58.901
+  },
+  {
+   "text": "ça",
+   "start": 58.901,
+   "end": 59.026
+  },
+  {
+   "text": "que",
+   "start": 59.026,
+   "end": 59.138
+  },
+  {
+   "text": "les",
+   "start": 59.138,
+   "end": 59.213
+  },
+  {
+   "text": "normes",
+   "start": 59.213,
+   "end": 59.488
+  },
+  {
+   "text": "sont",
+   "start": 59.488,
+   "end": 59.626
+  },
+  {
+   "text": "plus",
+   "start": 59.626,
+   "end": 59.788
+  },
+  {
+   "text": "hautes",
+   "start": 59.788,
+   "end": 59.951
+  },
+  {
+   "text": "chez",
+   "start": 59.951,
+   "end": 60.063
+  },
+  {
+   "text": "l'homme.",
+   "start": 60.063,
+   "end": 60.451
+  },
+  {
+   "text": "Une",
+   "start": 60.788,
+   "end": 60.938
+  },
+  {
+   "text": "créatinine",
+   "start": 60.938,
+   "end": 61.513
+  },
+  {
+   "text": "qui",
+   "start": 61.513,
+   "end": 61.651
+  },
+  {
+   "text": "monte,",
+   "start": 61.651,
+   "end": 62.026
+  },
+  {
+   "text": "c'est",
+   "start": 62.251,
+   "end": 62.363
+  },
+  {
+   "text": "le",
+   "start": 62.363,
+   "end": 62.451
+  },
+  {
+   "text": "reflet",
+   "start": 62.451,
+   "end": 62.726
+  },
+  {
+   "text": "d'une",
+   "start": 62.726,
+   "end": 62.863
+  },
+  {
+   "text": "insuffisance",
+   "start": 62.863,
+   "end": 63.438
+  },
+  {
+   "text": "rénale :",
+   "start": 63.438,
+   "end": 63.826
+  },
+  {
+   "text": "aiguë,",
+   "start": 64.038,
+   "end": 64.363
+  },
+  {
+   "text": "quand",
+   "start": 64.638,
+   "end": 64.738
+  },
+  {
+   "text": "elle",
+   "start": 64.738,
+   "end": 64.888
+  },
+  {
+   "text": "arrive",
+   "start": 64.888,
+   "end": 65.101
+  },
+  {
+   "text": "d'un",
+   "start": 65.101,
+   "end": 65.275
+  },
+  {
+   "text": "coup,",
+   "start": 65.275,
+   "end": 65.55
+  },
+  {
+   "text": "ou",
+   "start": 65.838,
+   "end": 65.863
+  },
+  {
+   "text": "chronique,",
+   "start": 65.863,
+   "end": 66.451
+  },
+  {
+   "text": "quand",
+   "start": 66.675,
+   "end": 66.775
+  },
+  {
+   "text": "elle",
+   "start": 66.775,
+   "end": 66.951
+  },
+  {
+   "text": "s'installe",
+   "start": 66.951,
+   "end": 67.363
+  },
+  {
+   "text": "lentement.",
+   "start": 67.363,
+   "end": 67.826
+  },
+  {
+   "text": "Et",
+   "start": 68.778,
+   "end": 68.941
+  },
+  {
+   "text": "le",
+   "start": 68.941,
+   "end": 69.053
+  },
+  {
+   "text": "DFG,",
+   "start": 69.053,
+   "end": 69.703
+  },
+  {
+   "text": "c'est",
+   "start": 70.04,
+   "end": 70.178
+  },
+  {
+   "text": "le",
+   "start": 70.178,
+   "end": 70.265
+  },
+  {
+   "text": "débit",
+   "start": 70.265,
+   "end": 70.49
+  },
+  {
+   "text": "de",
+   "start": 70.49,
+   "end": 70.59
+  },
+  {
+   "text": "filtration",
+   "start": 70.59,
+   "end": 71.09
+  },
+  {
+   "text": "glomérulaire :",
+   "start": 71.09,
+   "end": 71.753
+  },
+  {
+   "text": "la",
+   "start": 72.191,
+   "end": 72.24
+  },
+  {
+   "text": "quantité",
+   "start": 72.24,
+   "end": 72.615
+  },
+  {
+   "text": "de",
+   "start": 72.615,
+   "end": 72.728
+  },
+  {
+   "text": "sang",
+   "start": 72.728,
+   "end": 72.865
+  },
+  {
+   "text": "que",
+   "start": 72.865,
+   "end": 72.99
+  },
+  {
+   "text": "tes",
+   "start": 72.99,
+   "end": 73.115
+  },
+  {
+   "text": "reins",
+   "start": 73.115,
+   "end": 73.278
+  },
+  {
+   "text": "arrivent",
+   "start": 73.278,
+   "end": 73.515
+  },
+  {
+   "text": "à",
+   "start": 73.515,
+   "end": 73.566
+  },
+  {
+   "text": "filtrer…",
+   "start": 73.566,
+   "end": 74.028
+  },
+  {
+   "text": "chaque",
+   "start": 74.303,
+   "end": 74.553
+  },
+  {
+   "text": "minute.",
+   "start": 74.553,
+   "end": 75.078
+  },
+  {
+   "text": "C'est",
+   "start": 75.415,
+   "end": 75.628
+  },
+  {
+   "text": "le",
+   "start": 75.628,
+   "end": 75.715
+  },
+  {
+   "text": "meilleur",
+   "start": 75.715,
+   "end": 76.003
+  },
+  {
+   "text": "reflet",
+   "start": 76.003,
+   "end": 76.39
+  },
+  {
+   "text": "du",
+   "start": 76.39,
+   "end": 76.49
+  },
+  {
+   "text": "travail",
+   "start": 76.49,
+   "end": 76.853
+  },
+  {
+   "text": "des",
+   "start": 76.853,
+   "end": 76.965
+  },
+  {
+   "text": "reins.",
+   "start": 76.965,
+   "end": 77.278
+  },
+  {
+   "text": "On",
+   "start": 77.64,
+   "end": 77.74
+  },
+  {
+   "text": "ne",
+   "start": 77.74,
+   "end": 77.816
+  },
+  {
+   "text": "le",
+   "start": 77.816,
+   "end": 77.89
+  },
+  {
+   "text": "mesure",
+   "start": 77.89,
+   "end": 78.203
+  },
+  {
+   "text": "pas",
+   "start": 78.203,
+   "end": 78.34
+  },
+  {
+   "text": "directement :",
+   "start": 78.34,
+   "end": 78.978
+  },
+  {
+   "text": "on",
+   "start": 79.378,
+   "end": 79.403
+  },
+  {
+   "text": "le",
+   "start": 79.403,
+   "end": 79.478
+  },
+  {
+   "text": "calcule",
+   "start": 79.478,
+   "end": 79.853
+  },
+  {
+   "text": "à",
+   "start": 79.853,
+   "end": 79.89
+  },
+  {
+   "text": "partir",
+   "start": 79.89,
+   "end": 80.203
+  },
+  {
+   "text": "de",
+   "start": 80.203,
+   "end": 80.265
+  },
+  {
+   "text": "la",
+   "start": 80.265,
+   "end": 80.34
+  },
+  {
+   "text": "créatinine.",
+   "start": 80.34,
+   "end": 81.115
+  },
+  {
+   "text": "Et",
+   "start": 81.453,
+   "end": 81.59
+  },
+  {
+   "text": "retiens",
+   "start": 81.59,
+   "end": 81.865
+  },
+  {
+   "text": "bien",
+   "start": 81.865,
+   "end": 82.066
+  },
+  {
+   "text": "ça :",
+   "start": 82.066,
+   "end": 82.353
+  },
+  {
+   "text": "quand",
+   "start": 82.653,
+   "end": 82.753
+  },
+  {
+   "text": "les",
+   "start": 82.753,
+   "end": 82.84
+  },
+  {
+   "text": "reins",
+   "start": 82.84,
+   "end": 83.015
+  },
+  {
+   "text": "filtrent",
+   "start": 83.015,
+   "end": 83.378
+  },
+  {
+   "text": "moins",
+   "start": 83.378,
+   "end": 83.553
+  },
+  {
+   "text": "bien,",
+   "start": 83.553,
+   "end": 83.828
+  },
+  {
+   "text": "la",
+   "start": 84.115,
+   "end": 84.191
+  },
+  {
+   "text": "créatinine",
+   "start": 84.191,
+   "end": 84.753
+  },
+  {
+   "text": "monte…",
+   "start": 84.753,
+   "end": 85.09
+  },
+  {
+   "text": "et",
+   "start": 85.44,
+   "end": 85.465
+  },
+  {
+   "text": "le",
+   "start": 85.465,
+   "end": 85.565
+  },
+  {
+   "text": "DFG",
+   "start": 85.565,
+   "end": 86.128
+  },
+  {
+   "text": "baisse.",
+   "start": 86.128,
+   "end": 86.628
+  },
+  {
+   "text": "Le",
+   "start": 87.618,
+   "end": 87.755
+  },
+  {
+   "text": "DFG",
+   "start": 87.755,
+   "end": 88.331
+  },
+  {
+   "text": "sert",
+   "start": 88.331,
+   "end": 88.543
+  },
+  {
+   "text": "à",
+   "start": 88.543,
+   "end": 88.581
+  },
+  {
+   "text": "classer",
+   "start": 88.581,
+   "end": 88.906
+  },
+  {
+   "text": "la",
+   "start": 88.906,
+   "end": 88.993
+  },
+  {
+   "text": "maladie",
+   "start": 88.993,
+   "end": 89.331
+  },
+  {
+   "text": "rénale",
+   "start": 89.331,
+   "end": 89.618
+  },
+  {
+   "text": "chronique",
+   "start": 89.618,
+   "end": 90.055
+  },
+  {
+   "text": "en",
+   "start": 90.055,
+   "end": 90.106
+  },
+  {
+   "text": "cinq",
+   "start": 90.106,
+   "end": 90.318
+  },
+  {
+   "text": "stades.",
+   "start": 90.318,
+   "end": 90.793
+  },
+  {
+   "text": "Stade",
+   "start": 91.13,
+   "end": 91.468
+  },
+  {
+   "text": "un :",
+   "start": 91.468,
+   "end": 91.693
+  },
+  {
+   "text": "quatre-vingt-dix",
+   "start": 91.956,
+   "end": 92.531
+  },
+  {
+   "text": "ou",
+   "start": 92.531,
+   "end": 92.581
+  },
+  {
+   "text": "plus,",
+   "start": 92.581,
+   "end": 93.031
+  },
+  {
+   "text": "le",
+   "start": 93.206,
+   "end": 93.281
+  },
+  {
+   "text": "débit",
+   "start": 93.281,
+   "end": 93.555
+  },
+  {
+   "text": "est",
+   "start": 93.555,
+   "end": 93.581
+  },
+  {
+   "text": "normal,",
+   "start": 93.581,
+   "end": 94.106
+  },
+  {
+   "text": "mais",
+   "start": 94.43,
+   "end": 94.505
+  },
+  {
+   "text": "les",
+   "start": 94.505,
+   "end": 94.606
+  },
+  {
+   "text": "reins",
+   "start": 94.606,
+   "end": 94.768
+  },
+  {
+   "text": "montrent",
+   "start": 94.768,
+   "end": 95.055
+  },
+  {
+   "text": "des",
+   "start": 95.055,
+   "end": 95.168
+  },
+  {
+   "text": "signes",
+   "start": 95.168,
+   "end": 95.406
+  },
+  {
+   "text": "d'atteinte,",
+   "start": 95.406,
+   "end": 95.943
+  },
+  {
+   "text": "comme",
+   "start": 96.156,
+   "end": 96.305
+  },
+  {
+   "text": "des",
+   "start": 96.305,
+   "end": 96.38
+  },
+  {
+   "text": "protéines",
+   "start": 96.38,
+   "end": 96.831
+  },
+  {
+   "text": "dans",
+   "start": 96.831,
+   "end": 96.918
+  },
+  {
+   "text": "les",
+   "start": 96.918,
+   "end": 97.005
+  },
+  {
+   "text": "urines.",
+   "start": 97.005,
+   "end": 97.555
+  },
+  {
+   "text": "Stade",
+   "start": 97.906,
+   "end": 98.268
+  },
+  {
+   "text": "deux :",
+   "start": 98.268,
+   "end": 98.555
+  },
+  {
+   "text": "de",
+   "start": 98.906,
+   "end": 99.005
+  },
+  {
+   "text": "soixante",
+   "start": 99.005,
+   "end": 99.38
+  },
+  {
+   "text": "à",
+   "start": 99.38,
+   "end": 99.418
+  },
+  {
+   "text": "quatre-vingt-neuf,",
+   "start": 99.418,
+   "end": 100.18
+  },
+  {
+   "text": "c'est",
+   "start": 100.393,
+   "end": 100.518
+  },
+  {
+   "text": "une",
+   "start": 100.518,
+   "end": 100.693
+  },
+  {
+   "text": "légère",
+   "start": 100.693,
+   "end": 101.005
+  },
+  {
+   "text": "baisse.",
+   "start": 101.005,
+   "end": 101.493
+  },
+  {
+   "text": "Stade",
+   "start": 101.843,
+   "end": 102.156
+  },
+  {
+   "text": "trois :",
+   "start": 102.156,
+   "end": 102.543
+  },
+  {
+   "text": "de",
+   "start": 102.918,
+   "end": 102.993
+  },
+  {
+   "text": "trente",
+   "start": 102.993,
+   "end": 103.243
+  },
+  {
+   "text": "à",
+   "start": 103.243,
+   "end": 103.293
+  },
+  {
+   "text": "cinquante-neuf,",
+   "start": 103.293,
+   "end": 104.031
+  },
+  {
+   "text": "la",
+   "start": 104.281,
+   "end": 104.368
+  },
+  {
+   "text": "baisse",
+   "start": 104.368,
+   "end": 104.618
+  },
+  {
+   "text": "est",
+   "start": 104.618,
+   "end": 104.656
+  },
+  {
+   "text": "modérée.",
+   "start": 104.656,
+   "end": 105.18
+  },
+  {
+   "text": "Stade",
+   "start": 105.518,
+   "end": 105.88
+  },
+  {
+   "text": "quatre :",
+   "start": 105.88,
+   "end": 106.331
+  },
+  {
+   "text": "de",
+   "start": 106.693,
+   "end": 106.768
+  },
+  {
+   "text": "quinze",
+   "start": 106.768,
+   "end": 107.018
+  },
+  {
+   "text": "à",
+   "start": 107.018,
+   "end": 107.055
+  },
+  {
+   "text": "vingt-neuf,",
+   "start": 107.055,
+   "end": 107.606
+  },
+  {
+   "text": "la",
+   "start": 107.868,
+   "end": 107.956
+  },
+  {
+   "text": "baisse",
+   "start": 107.956,
+   "end": 108.193
+  },
+  {
+   "text": "est",
+   "start": 108.193,
+   "end": 108.243
+  },
+  {
+   "text": "sévère.",
+   "start": 108.243,
+   "end": 108.831
+  },
+  {
+   "text": "Et",
+   "start": 109.168,
+   "end": 109.318
+  },
+  {
+   "text": "stade",
+   "start": 109.318,
+   "end": 109.593
+  },
+  {
+   "text": "cinq :",
+   "start": 109.593,
+   "end": 109.981
+  },
+  {
+   "text": "sous",
+   "start": 110.356,
+   "end": 110.518
+  },
+  {
+   "text": "quinze,",
+   "start": 110.518,
+   "end": 110.956
+  },
+  {
+   "text": "c'est",
+   "start": 111.218,
+   "end": 111.356
+  },
+  {
+   "text": "l'insuffisance",
+   "start": 111.356,
+   "end": 112.031
+  },
+  {
+   "text": "rénale",
+   "start": 112.031,
+   "end": 112.331
+  },
+  {
+   "text": "terminale.",
+   "start": 112.331,
+   "end": 113.005
+  },
+  {
+   "text": "Il",
+   "start": 113.343,
+   "end": 113.543
+  },
+  {
+   "text": "faut",
+   "start": 113.543,
+   "end": 113.656
+  },
+  {
+   "text": "souvent",
+   "start": 113.656,
+   "end": 113.956
+  },
+  {
+   "text": "une",
+   "start": 113.956,
+   "end": 114.031
+  },
+  {
+   "text": "dialyse :",
+   "start": 114.031,
+   "end": 114.518
+  },
+  {
+   "text": "une",
+   "start": 114.906,
+   "end": 114.956
+  },
+  {
+   "text": "machine",
+   "start": 114.956,
+   "end": 115.356
+  },
+  {
+   "text": "qui",
+   "start": 115.356,
+   "end": 115.481
+  },
+  {
+   "text": "filtre",
+   "start": 115.481,
+   "end": 115.818
+  },
+  {
+   "text": "le",
+   "start": 115.818,
+   "end": 115.93
+  },
+  {
+   "text": "sang",
+   "start": 115.93,
+   "end": 116.156
+  },
+  {
+   "text": "à",
+   "start": 116.156,
+   "end": 116.193
+  },
+  {
+   "text": "la",
+   "start": 116.193,
+   "end": 116.281
+  },
+  {
+   "text": "place",
+   "start": 116.281,
+   "end": 116.531
+  },
+  {
+   "text": "des",
+   "start": 116.531,
+   "end": 116.643
+  },
+  {
+   "text": "reins.",
+   "start": 116.643,
+   "end": 116.943
+  },
+  {
+   "text": "Alors,",
+   "start": 117.902,
+   "end": 118.34
+  },
+  {
+   "text": "on",
+   "start": 118.502,
+   "end": 118.527
+  },
+  {
+   "text": "récapitule :",
+   "start": 118.527,
+   "end": 119.327
+  },
+  {
+   "text": "dans",
+   "start": 119.677,
+   "end": 119.764
+  },
+  {
+   "text": "le",
+   "start": 119.764,
+   "end": 119.84
+  },
+  {
+   "text": "tube",
+   "start": 119.84,
+   "end": 120.014
+  },
+  {
+   "text": "jaune,",
+   "start": 120.014,
+   "end": 120.377
+  },
+  {
+   "text": "le",
+   "start": 120.702,
+   "end": 120.777
+  },
+  {
+   "text": "bilan",
+   "start": 120.777,
+   "end": 121.027
+  },
+  {
+   "text": "rénal.",
+   "start": 121.027,
+   "end": 121.577
+  },
+  {
+   "text": "L'urée,",
+   "start": 121.965,
+   "end": 122.427
+  },
+  {
+   "text": "le",
+   "start": 122.764,
+   "end": 122.84
+  },
+  {
+   "text": "déchet",
+   "start": 122.84,
+   "end": 123.127
+  },
+  {
+   "text": "des",
+   "start": 123.127,
+   "end": 123.215
+  },
+  {
+   "text": "protéines.",
+   "start": 123.215,
+   "end": 123.889
+  },
+  {
+   "text": "La",
+   "start": 124.227,
+   "end": 124.402
+  },
+  {
+   "text": "créatinine,",
+   "start": 124.402,
+   "end": 125.139
+  },
+  {
+   "text": "le",
+   "start": 125.465,
+   "end": 125.527
+  },
+  {
+   "text": "déchet",
+   "start": 125.527,
+   "end": 125.79
+  },
+  {
+   "text": "des",
+   "start": 125.79,
+   "end": 125.889
+  },
+  {
+   "text": "muscles.",
+   "start": 125.889,
+   "end": 126.427
+  },
+  {
+   "text": "Et",
+   "start": 126.764,
+   "end": 126.915
+  },
+  {
+   "text": "le",
+   "start": 126.915,
+   "end": 127.014
+  },
+  {
+   "text": "DFG,",
+   "start": 127.014,
+   "end": 127.665
+  },
+  {
+   "text": "calculé",
+   "start": 127.965,
+   "end": 128.352
+  },
+  {
+   "text": "à",
+   "start": 128.352,
+   "end": 128.415
+  },
+  {
+   "text": "partir",
+   "start": 128.415,
+   "end": 128.727
+  },
+  {
+   "text": "de",
+   "start": 128.727,
+   "end": 128.79
+  },
+  {
+   "text": "la",
+   "start": 128.79,
+   "end": 128.864
+  },
+  {
+   "text": "créatinine,",
+   "start": 128.864,
+   "end": 129.614
+  },
+  {
+   "text": "qui",
+   "start": 129.889,
+   "end": 130.002
+  },
+  {
+   "text": "dit",
+   "start": 130.002,
+   "end": 130.139
+  },
+  {
+   "text": "si",
+   "start": 130.139,
+   "end": 130.277
+  },
+  {
+   "text": "les",
+   "start": 130.277,
+   "end": 130.364
+  },
+  {
+   "text": "reins",
+   "start": 130.364,
+   "end": 130.552
+  },
+  {
+   "text": "filtrent",
+   "start": 130.552,
+   "end": 130.927
+  },
+  {
+   "text": "bien.",
+   "start": 130.927,
+   "end": 131.264
+  },
+  {
+   "text": "Et",
+   "start": 131.602,
+   "end": 131.727
+  },
+  {
+   "text": "le",
+   "start": 131.727,
+   "end": 131.815
+  },
+  {
+   "text": "tube",
+   "start": 131.815,
+   "end": 132.002
+  },
+  {
+   "text": "jaune",
+   "start": 132.002,
+   "end": 132.252
+  },
+  {
+   "text": "n'a",
+   "start": 132.252,
+   "end": 132.352
+  },
+  {
+   "text": "pas",
+   "start": 132.352,
+   "end": 132.465
+  },
+  {
+   "text": "fini",
+   "start": 132.465,
+   "end": 132.702
+  },
+  {
+   "text": "de",
+   "start": 132.702,
+   "end": 132.802
+  },
+  {
+   "text": "parler :",
+   "start": 132.802,
+   "end": 133.215
+  },
+  {
+   "text": "la",
+   "start": 133.602,
+   "end": 133.677
+  },
+  {
+   "text": "suite",
+   "start": 133.677,
+   "end": 133.927
+  },
+  {
+   "text": "arrive",
+   "start": 133.927,
+   "end": 134.152
+  },
+  {
+   "text": "bientôt !",
+   "start": 134.152,
+   "end": 134.652
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Tes reins nettoient tout ton sang… plus de trente fois par jour. Mais quand ils commencent à fatiguer, ça ne se voit pas. Alors, comment le savoir ? Un tube jaune… et trois résultats : l'urée, la créatinine et le {DFG|D F G}. C'est le bilan rénal !"
+ },
+ {
+  "id": "reins",
+  "rate": "+0%",
+  "text": "Les reins sont des filtres. Ils gardent dans le sang ce qui est utile… et ils rejettent les déchets dans l'urine. Mais quand ils filtrent mal, les déchets restent dans le sang et s'accumulent. Et c'est justement ce qu'on mesure dans le tube jaune."
+ },
+ {
+  "id": "uree",
+  "rate": "+0%",
+  "text": "D'abord, l'urée. C'est le déchet final des protéines. Les protéines sont faites d'acides aminés : en les utilisant, le corps produit de l'ammoniac. Le foie le transforme en urée… et les reins l'éliminent dans l'urine. Une urée trop haute peut faire penser à une déshydratation, à une insuffisance rénale… ou à une hémorragie digestive : un saignement dans le tube digestif."
+ },
+ {
+  "id": "creat",
+  "rate": "+0%",
+  "text": "Ensuite, la créatinine. C'est un déchet des muscles : elle vient de la créatine, qui aide les muscles à produire leur énergie. Ce sont surtout les reins qui l'éliminent. Et plus on a de muscles, plus on en fabrique : c'est pour ça que les normes sont plus hautes chez l'homme. Une créatinine qui monte, c'est le reflet d'une insuffisance rénale : aiguë, quand elle arrive d'un coup, ou chronique, quand elle s'installe lentement."
+ },
+ {
+  "id": "dfg",
+  "rate": "+0%",
+  "text": "Et le {DFG|D F G}, c'est le débit de filtration glomérulaire : la quantité de sang que tes reins arrivent à filtrer… chaque minute. C'est le meilleur reflet du travail des reins. On ne le mesure pas directement : on le calcule à partir de la créatinine. Et retiens bien ça : quand les reins filtrent moins bien, la créatinine monte… et le {DFG|D F G} baisse."
+ },
+ {
+  "id": "stades",
+  "rate": "+0%",
+  "text": "Le {DFG|D F G} sert à classer la maladie rénale chronique en cinq stades. Stade un : quatre-vingt-dix ou plus, le débit est normal, mais les reins montrent des signes d'atteinte, comme des protéines dans les urines. Stade deux : de soixante à quatre-vingt-neuf, c'est une légère baisse. Stade trois : de trente à cinquante-neuf, la baisse est modérée. Stade quatre : de quinze à vingt-neuf, la baisse est sévère. Et stade cinq : sous quinze, c'est l'insuffisance rénale terminale. Il faut souvent une dialyse : une machine qui filtre le sang à la place des reins."
+ },
+ {
+  "id": "fin",
+  "rate": "+0%",
+  "text": "Alors, on récapitule : dans le tube jaune, le bilan rénal. L'urée, le déchet des protéines. La créatinine, le déchet des muscles. Et le {DFG|D F G}, calculé à partir de la créatinine, qui dit si les reins filtrent bien. Et le tube jaune n'a pas fini de parler : la suite arrive bientôt !"
+ }
+]

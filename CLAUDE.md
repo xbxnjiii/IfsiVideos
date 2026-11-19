@@ -670,6 +670,20 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   chlorure » (symbole à l'écran seulement) ; « un myélome » entendu « un miel » → « certains cancers qui abîment les os,
   comme le myélome ». Attention : `at(scène, 'dans')` prend le **premier** « dans » de la partie (« dans les cellules ») →
   `at(scène, 'dans', 2)`. Storyboard `docs/lpi/storyboard-tube-jaune.md`.
+  `Tube-Jaune-Renal` (n° 64, ≈ 2 min 18, voix gratuite d'abord, sans barre de progression) : demandé « pareil, toujours un
+  tube jaune car il y a beaucoup d'examens dans ce tube » → le **bilan rénal**, sur le contenu et le tableau de normes
+  fournis (urée 2,5 – 7,5 mmol/L ; créatinine H 88 – 150 / F 53 – 115 µmol/L ; DFG en 5 stades : ≥ 90 avec signes
+  d'atteinte, 60 – 89, 3a 45 – 59 / 3b 30 – 44, 15 – 29, < 15 ou dialyse). Accroche directe : le tube jaune + le rein qui
+  filtre dès l'image 0, « plus de trente fois par jour », le rein fatigue sans que ça se voie, 3 résultats. Puis les reins
+  (filtres), l'urée (protéines → acides aminés → ammoniac → foie → urée → reins ; trop haute : déshydratation, IR,
+  hémorragie digestive), la créatinine (déchet des muscles, + de muscles = normes plus hautes chez l'homme, IR aiguë « d'un
+  coup » / chronique « lentement »), le DFG (débit **par minute**, calculé à partir de la créatinine ; créatinine ↑ =
+  DFG ↓), les 5 stades, récap + « le tube jaune n'a pas fini de parler » (pas de rangée des 7 tubes : la série du jaune
+  continue). **Correction du texte fourni** : le DFG n'est pas « en 24 heures » mais par minute (mL/min/1,73 m²). Briques
+  `src/brand/renal.tsx` : `KidneyFilter` (le sang traverse le rein : déchets qui partent dans l'urine `filter`, qui
+  restent `pile`, rein qui pâlit `tired`), `StageLadder` + `DFG_STAGES`, `InverseGauges`, `TrendCurve` (aiguë /
+  chronique), `MuscleArm`, `ProteinChain`, `Molecule`, `DialysisMachine`. Storyboard
+  `docs/lpi/storyboard-tube-jaune-renal.md`.
 
 ## Voix ElevenLabs « Laura » (choisie par le propriétaire pour les nouvelles vidéos)
 

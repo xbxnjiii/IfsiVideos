@@ -128,6 +128,8 @@ import {TubeViolet, TubeVioletProps} from './videos/tube-violet/TubeViolet';
 import {TL as TUBE_VIOLET_TL} from './videos/tube-violet/timeline';
 import {TubeJaune, TubeJauneProps} from './videos/tube-jaune/TubeJaune';
 import {TL as TUBE_JAUNE_TL} from './videos/tube-jaune/timeline';
+import {TubeJauneRenal, TubeJauneRenalProps} from './videos/tube-jaune-renal/TubeJauneRenal';
+import {TL as TUBE_JAUNE_RENAL_TL} from './videos/tube-jaune-renal/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -754,6 +756,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies TubeJauneProps}
+		/>
+		{/* 64 · Tube-Jaune-Renal */}
+		<Composition
+			id="Tube-Jaune-Renal"
+			component={TubeJauneRenal}
+			durationInFrames={TUBE_JAUNE_RENAL_TL.total}
+			fps={TUBE_JAUNE_RENAL_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies TubeJauneRenalProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition
