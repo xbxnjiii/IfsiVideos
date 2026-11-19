@@ -2,10 +2,13 @@
 // violet en grand dès l'image 0, les cellules en sortent (rouges, blancs, plaquettes), « c'est la NFS », la fiche se
 // déroule ligne par ligne. Puis la NFS (compter et étudier, diagnostic et suivi, l'EDTA), et chaque ligne avec sa carte
 // de normes adultes (tableau fourni par le propriétaire) : hématies, hémoglobine, hématocrite, VGM, plaquettes,
-// leucocytes, formule (PNN, PNE, PNB), lymphocytes et monocytes ; récap + la série des tubes.
+// leucocytes, formule (PNN, PNE, PNB), lymphocytes et monocytes ; puis, hors NFS, l'HbA1c (hémoglobine glyquée,
+// objectifs du diabétique) et le BNP (insuffisance cardiaque) ; récap + la série des tubes.
 import React from 'react';
 import {AbsoluteFill, interpolate, useCurrentFrame} from 'remotion';
 import {Big, fadeIn, FlatBg, Fly, Live, Note, PointTag as PTag, popAt, RowCard, ease} from '../../brand/bold';
+import {BeatingHeart} from '../../brand/cardio';
+import {GlycatedCell, InsulinPen} from '../../brand/diabetes';
 import {Microbe, Sparkles} from '../../brand/hands';
 import {Camera, Confetti} from '../../brand/motion3';
 import {Patient} from '../../brand/patient';
@@ -673,6 +676,165 @@ export const Lymphocytes: React.FC = () => {
 };
 
 /* ═══════════════════════════════ RÉCAP + LA SÉRIE ═══════════════════════════════ */
+/* ═══════════════════════════════ HbA1c ═══════════════════════════════ */
+/** Carte « OBJECTIF » (même gabarit que NormCard, l'étiquette change : ce sont des cibles de traitement, pas des normes). */
+const ObjCard: React.FC<{rows: string[][]}> = ({rows}) => (
+	<div style={{width: 900, boxSizing: 'border-box', borderRadius: 30, background: LPI.paper, border: `5px solid ${N}`, boxShadow: `0 10px 0 ${alpha(N, 0.12)}`, padding: '14px 24px', display: 'flex', alignItems: 'center', gap: 20}}>
+		<div style={{padding: '8px 16px', borderRadius: 999, background: LPI.pink, border: `4px solid ${N}`, fontFamily: FONT.body, fontWeight: 900, fontSize: 24, letterSpacing: '0.08em', color: N, whiteSpace: 'nowrap'}}>OBJECTIF</div>
+		<div style={{flex: 1}}>
+			{rows.map(([who, v]) => (
+				<div key={who} style={{display: 'flex', alignItems: 'baseline', gap: 14, fontFamily: FONT.title, fontWeight: 900, fontSize: 38, color: N, lineHeight: 1.25}}>
+					<span style={{fontFamily: FONT.body, fontSize: 28, color: alpha(N, 0.75), minWidth: 190}}>{who}</span>
+					<span>{v}</span>
+				</div>
+			))}
+		</div>
+	</div>
+);
+
+export const Hba1c: React.FC = () => {
+	const NFS = at('hba1c', 'nfs');
+	const GLYQ = at('hba1c', 'glyquee');
+	const HBA = at('hba1c', 'hba1c');
+	const SUCRE = at('hba1c', 'sucre');
+	const COLLE = at('hba1c', 'colle');
+	const ROUGES = at('hba1c', 'rouges');
+	const MOY = at('hba1c', 'moyenne');
+	const MOIS = at('hba1c', 'mois');
+	const SURV = at('hba1c', 'surveiller');
+	const AJUST = at('hba1c', 'ajuster');
+	const OBJ = at('hba1c', "l'objectif");
+	const T2 = at('hba1c', 'deux', 2);
+	const T1 = at('hba1c', 'un');
+	const cellOut = SURV - 6;
+	return (
+		<AbsoluteFill>
+			<Bg tone={alpha(LPI.pink, 0.5)} />
+			<Camera punches={[NFS + 1, HBA + 1, COLLE + 1, MOY + 1, SURV + 1, OBJ + 1]} strength={0.03}>
+				<Chip at={-2} to={GLYQ - 6} x={540} y={300} size={40}>
+					pas que la NFS…
+				</Chip>
+				<Big from={GLYQ - 4} text={"*L'HbA1c*"} size={130} />
+				<Note at={HBA} y={330} size={42} tone={LPI.pink}>
+					l'hémoglobine glyquée
+				</Note>
+				<Pop at={-2} to={cellOut} x={540} y={820}>
+					<Live render={(f) => <div style={{transform: `rotate(${Math.sin(f / 12) * 4}deg)`}}><GlycatedCell width={520} coat={interpolate(f, [COLLE - 4, ROUGES + 20], [0, 1], clamp)} /></div>} />
+				</Pop>
+				<Chip at={SUCRE} to={cellOut} x={540} y={1110} size={38}>
+					le sucre se colle à l'hémoglobine
+				</Chip>
+				<Pop at={MOY - 2} to={cellOut} x={540} y={1260}>
+					<Live
+						render={(f) => (
+							<div style={{display: 'flex', gap: 16}}>
+								{['M − 3', 'M − 2', 'M − 1'].map((m, i) => {
+									const k = interpolate(f, [MOY + i * 6, MOY + i * 6 + 10], [0, 1], clamp);
+									return (
+										<div key={m} style={{width: 220, height: 96, borderRadius: 24, border: `6px solid ${N}`, background: `linear-gradient(90deg, ${LPI.blue} ${k * 100}%, ${LPI.paper} ${k * 100}%)`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FONT.title, fontWeight: 900, fontSize: 40, color: k > 0.5 ? LPI.paper : N}}>
+											{m}
+										</div>
+									);
+								})}
+							</div>
+						)}
+					/>
+				</Pop>
+				<Note at={MOIS} to={cellOut} y={1390} size={36} tone={LPI.sky}>
+					la glycémie moyenne des 2 – 3 derniers mois
+				</Note>
+				{/* suivi du diabète */}
+				<Pop at={SURV - 2} x={290} y={760}>
+					<InsulinPen width={500} />
+				</Pop>
+				<Chip at={SURV} x={760} y={680} tone={LPI.sky} size={38}>
+					suivi du diabète
+				</Chip>
+				<Chip at={AJUST} x={760} y={800} size={38}>
+					ajuster le traitement
+				</Chip>
+				<Pop at={T2 - 4} x={540} y={1060}>
+					<Live render={(f) => <ObjCard rows={[['Type 2', '< 7 %'], ['Type 1', '7 – 7,5 %']].filter((_, i) => f >= (i ? T1 : T2) - 4)} />} />
+				</Pop>
+				<Note at={OBJ + 4} y={1210} size={28}>
+					cibles du diabétique, à adapter à chaque patient
+				</Note>
+			</Camera>
+			<Sfx name="pop" at={HBA} volume={0.15} />
+			<Sfx name="ding" at={COLLE} volume={0.12} />
+			{[0, 1, 2].map((i) => (
+				<Sfx key={i} name="tick" at={MOY + i * 6} volume={0.1} />
+			))}
+			<Sfx name="pop" at={SURV} volume={0.15} />
+			<Sfx name="pop" at={OBJ} volume={0.15} />
+		</AbsoluteFill>
+	);
+};
+
+/* ═══════════════════════════════ BNP ═══════════════════════════════ */
+const BEATS = Array.from({length: 40}, (_, i) => 6 + i * 22);
+
+export const Bnp: React.FC = () => {
+	const frame = useCurrentFrame();
+	const HORM = at('bnp', 'hormone');
+	const LIB = at('bnp', 'libere');
+	const ETIRE = at('bnp', 'etire');
+	const FORCE = at('bnp', 'force');
+	const REP = at('bnp', 'reperer');
+	const IC = at('bnp', 'insuffisance');
+	const NORMAL = at('bnp', 'normal');
+	const MOINS = at('bnp', 'moins');
+	const stretch = interpolate(frame, [ETIRE - 4, ETIRE + 14], [0, 1], ease);
+	return (
+		<AbsoluteFill>
+			<Bg tone={LPI.sky} />
+			<Camera punches={[HORM + 1, ETIRE + 1, IC + 1, NORMAL + 1]} strength={0.03}>
+				<Big from={-2} text={'Le *BNP*'} size={140} />
+				<Pop at={2} x={540} y={780}>
+					<div style={{transform: `scale(${1 + 0.18 * stretch}, ${1 + 0.08 * stretch})`}}>
+						<BeatingHeart beats={BEATS} size={380} />
+					</div>
+				</Pop>
+				{/* l'hormone qui s'échappe du cœur */}
+				{Array.from({length: 7}).map((_, i) => (
+					<Live
+						key={i}
+						render={(f) => {
+							const t0 = LIB + i * 7;
+							if (f < t0) return null;
+							const p = ((f - t0) / 70) % 1;
+							const a = (i / 7) * Math.PI * 2 + 0.4;
+							const r = 170 + p * 260;
+							return (
+								<div style={{position: 'absolute', left: 540 + Math.cos(a) * r - 46, top: 780 + Math.sin(a) * r * 0.8 - 46, opacity: Math.sin(p * Math.PI)}}>
+									<div style={{width: 92, height: 92, borderRadius: 46, background: LPI.pink, border: `5px solid ${N}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FONT.title, fontWeight: 900, fontSize: 26, color: N}}>BNP</div>
+								</div>
+							);
+						}}
+					/>
+				))}
+				<Note at={HORM} y={330} size={40} tone={LPI.pink}>
+					une hormone libérée par le cœur
+				</Note>
+				<Chip at={ETIRE} x={270} y={1120} size={38}>
+					trop étiré
+				</Chip>
+				<Chip at={FORCE} x={800} y={1120} size={38}>
+					il force
+				</Chip>
+				<Chip at={REP} x={540} y={1240} tone={LPI.blue} size={42}>
+					insuffisance cardiaque ?
+				</Chip>
+				<Norms at={MOINS - 2} rows={[['', '< 100 pg/mL']]} />
+			</Camera>
+			<Sfx name="heartbeat" at={ETIRE} volume={0.25} />
+			<Sfx name="pop" at={HORM} volume={0.15} />
+			<Sfx name="buzz" at={IC} volume={0.15} />
+			<Sfx name="ding" at={NORMAL} volume={0.2} />
+		</AbsoluteFill>
+	);
+};
+
 const SERIES_CAPS = [HEMO_CAP.aero, CAP.citrate, CAP.gel, CAP.sec, CAP.hepar, CAP.edta, CAP.fluor];
 
 export const Fin: React.FC = () => {
@@ -684,6 +846,8 @@ export const Fin: React.FC = () => {
 	const CAIL = at('fin', 'caillot,');
 	const GB = at('fin', 'globules', 2);
 	const DEF = at('fin', 'défendre.');
+	const GLYQ = at('fin', 'glyquee');
+	const COEUR = at('fin', 'cœur');
 	const TUBE = at('fin', 'tube');
 	const PROCH = at('fin', 'prochain');
 	const SERIE = at('fin', 'série');
@@ -692,6 +856,7 @@ export const Fin: React.FC = () => {
 		{t: GR, title: 'Globules rouges + hémoglobine', sub: "l'oxygène", subAt: OXY, art: <RedCell size={120} />},
 		{t: PLAQ, title: 'Plaquettes', sub: 'le caillot', subAt: CAIL, art: <Platelet size={100} />},
 		{t: GB, title: 'Globules blancs', sub: 'les défenses', subAt: DEF, art: <WhiteCell size={120} />},
+		{t: GLYQ, title: 'HbA1c + BNP', sub: 'le diabète · le cœur', subAt: COEUR, art: <GlycatedCell width={130} coat={1} />},
 	];
 	return (
 		<AbsoluteFill>
@@ -699,7 +864,7 @@ export const Fin: React.FC = () => {
 			<Camera punches={[REC + 1, ...rows.map((r) => r.t + 1), TUBE + 1, SERIE + 1]} strength={0.025}>
 				<Big from={-2} to={out} text={'On *récapitule*'} size={116} />
 				{rows.map((r, i) => (
-					<Live key={r.title} render={(f) => (f > out + 10 ? null : <div style={{opacity: interpolate(f, [out, out + 8], [1, 0], clamp)}}><RowCard at={r.t - 2} y={420 + i * 250} h={220} title={r.title} sub={r.sub} subAt={r.subAt} check={r.subAt + 8} art={150} size={46}>{r.art}</RowCard></div>)} />
+					<Live key={r.title} render={(f) => (f > out + 10 ? null : <div style={{opacity: interpolate(f, [out, out + 8], [1, 0], clamp)}}><RowCard at={r.t - 2} y={400 + i * 235} h={210} title={r.title} sub={r.sub} subAt={r.subAt} check={r.subAt + 8} art={150} size={46}>{r.art}</RowCard></div>)} />
 				))}
 				<Big from={TUBE} text={'Dans un seul\ntube *violet* !'} size={110} />
 				{SERIES_CAPS.map((c, i) => {

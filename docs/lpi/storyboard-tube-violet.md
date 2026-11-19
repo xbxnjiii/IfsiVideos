@@ -17,3 +17,12 @@ carte NORMES (adulte).
 | formule | PNN (phagocytose), PNE (allergie, parasites), PNB (allergies, inflammation). | 3 cartes avec cellule dessinée et normes. |
 | lymphocytes | Lymphocytes (sur mesure ; lymphocytose = infection virale, parfois maladie du sang) ; monocytes. | 2 cartes + flèche ↑. |
 | fin | Récap + le prochain tube de la série. | 3 cartes cochées ; la série des 7 tubes, violet coché, confettis. |
+
+## Ajout : HbA1c et BNP (demandé après la v2)
+
+| Scène | Voix (résumé) | Image |
+| --- | --- | --- |
+| hba1c | Pas que la NFS : l'hémoglobine glyquée (HbA1c), le sucre se colle à l'hémoglobine, moyenne des 2 – 3 derniers mois ; suivi du diabète, ajuster le traitement ; objectif < 7 % (type 2), 7 – 7,5 % (type 1). | Globule rouge qui se couvre de sucres, frise M − 3 · M − 2 · M − 1 ; stylo à insuline ; carte OBJECTIF. |
+| bnp | Hormone libérée par le cœur trop étiré, qui force ; repérer une insuffisance cardiaque ; < 100 pg/mL. | Cœur qui bat et se dilate, pastilles « BNP » qui s'en échappent ; carte NORMES. |
+| fin | Récap + « l'hémoglobine glyquée pour le diabète, le BNP pour le cœur ». | 4e ligne « HbA1c + BNP ». |
+

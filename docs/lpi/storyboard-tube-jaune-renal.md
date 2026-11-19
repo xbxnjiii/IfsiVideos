@@ -1,6 +1,6 @@
 # Storyboard — « Le tube jaune : le bilan rénal » (n° 64, `Tube-Jaune-Renal`, série « les tubes »)
 
-≈ 2 min 18, voix gratuite edge-tts d'abord (`voix/64-tube-jaune-renal.script.json`), sans barre de progression, look 2026,
+≈ 2 min 27, voix Laura après validation (2 598 crédits ; voix gratuite edge-tts d'abord) (`voix/64-tube-jaune-renal.script.json`), sans barre de progression, look 2026,
 image réduite à 86 %. Contenu et normes fournis par le propriétaire (urée, créatinine, DFG + stades). Le tube jaune a
 plusieurs vidéos : après l'ionogramme (n° 63), le bilan rénal.
 

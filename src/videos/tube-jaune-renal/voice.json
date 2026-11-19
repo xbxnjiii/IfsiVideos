@@ -1,2123 +1,2123 @@
 {
- "voice": "voix.wav (tts_voix.py)",
- "duration": 134.988,
+ "voice": "pad-tube-jaune-renal.wav",
+ "duration": 145.84,
  "sections": [
   {
    "id": "intro",
-   "start": 0.05,
-   "end": 13.138
+   "start": 0.0,
+   "end": 14.584
   },
   {
    "id": "reins",
-   "start": 14.064,
-   "end": 25.276
+   "start": 15.839,
+   "end": 28.0
   },
   {
    "id": "uree",
-   "start": 26.23,
-   "end": 46.03
+   "start": 28.58,
+   "end": 50.276
   },
   {
    "id": "creat",
-   "start": 46.988,
-   "end": 67.826
+   "start": 51.253,
+   "end": 73.68
   },
   {
    "id": "dfg",
-   "start": 68.778,
-   "end": 86.628
+   "start": 73.68,
+   "end": 94.114
   },
   {
    "id": "stades",
-   "start": 87.618,
-   "end": 116.943
+   "start": 95.157,
+   "end": 127.52
   },
   {
    "id": "fin",
-   "start": 117.902,
-   "end": 134.652
+   "start": 128.499,
+   "end": 145.62
   }
  ],
  "words": [
   {
    "text": "Tes",
-   "start": 0.05,
-   "end": 0.218
+   "start": 0.0,
+   "end": 0.42
   },
   {
    "text": "reins",
-   "start": 0.218,
-   "end": 0.387
+   "start": 0.42,
+   "end": 0.46
   },
   {
    "text": "nettoient",
-   "start": 0.387,
-   "end": 0.663
+   "start": 0.46,
+   "end": 0.92
   },
   {
    "text": "tout",
-   "start": 0.663,
-   "end": 0.795
+   "start": 0.92,
+   "end": 1.14
   },
   {
    "text": "ton",
-   "start": 0.795,
-   "end": 0.963
+   "start": 1.14,
+   "end": 1.4
   },
   {
    "text": "sang…",
-   "start": 0.963,
-   "end": 1.276
+   "start": 1.4,
+   "end": 1.64
   },
   {
    "text": "plus",
-   "start": 1.576,
-   "end": 1.721
+   "start": 1.92,
+   "end": 2.08
   },
   {
    "text": "de",
-   "start": 1.721,
-   "end": 1.817
+   "start": 2.08,
+   "end": 2.5
   },
   {
    "text": "trente",
-   "start": 1.817,
-   "end": 2.033
+   "start": 2.5,
+   "end": 2.68
   },
   {
    "text": "fois",
-   "start": 2.033,
-   "end": 2.153
+   "start": 2.68,
+   "end": 2.92
   },
   {
    "text": "par",
-   "start": 2.153,
-   "end": 2.322
+   "start": 2.92,
+   "end": 3.2
   },
   {
    "text": "jour.",
-   "start": 2.322,
-   "end": 2.67
+   "start": 3.2,
+   "end": 3.54
   },
   {
    "text": "Mais",
-   "start": 2.994,
-   "end": 3.151
+   "start": 3.86,
+   "end": 4.02
   },
   {
    "text": "quand",
-   "start": 3.151,
-   "end": 3.271
+   "start": 4.02,
+   "end": 4.2
   },
   {
    "text": "ils",
-   "start": 3.271,
-   "end": 3.427
-  },
-  {
-   "text": "commencent",
-   "start": 3.427,
-   "end": 3.739
-  },
-  {
-   "text": "à",
-   "start": 3.739,
-   "end": 3.799
-  },
-  {
-   "text": "fatiguer,",
-   "start": 3.8,
+   "start": 4.2,
    "end": 4.34
   },
   {
+   "text": "commencent",
+   "start": 4.34,
+   "end": 4.68
+  },
+  {
+   "text": "à",
+   "start": 4.68,
+   "end": 4.88
+  },
+  {
+   "text": "fatiguer,",
+   "start": 4.88,
+   "end": 5.34
+  },
+  {
    "text": "ça",
-   "start": 4.665,
-   "end": 4.761
+   "start": 5.5,
+   "end": 5.62
   },
   {
    "text": "ne",
-   "start": 4.761,
-   "end": 4.845
+   "start": 5.62,
+   "end": 5.74
   },
   {
    "text": "se",
-   "start": 4.845,
-   "end": 4.941
+   "start": 5.74,
+   "end": 5.88
   },
   {
    "text": "voit",
-   "start": 4.941,
-   "end": 5.062
+   "start": 5.88,
+   "end": 6.02
   },
   {
    "text": "pas.",
-   "start": 5.062,
-   "end": 5.326
+   "start": 6.02,
+   "end": 6.42
   },
   {
    "text": "Alors,",
-   "start": 5.697,
-   "end": 6.118
+   "start": 6.66,
+   "end": 7.02
   },
   {
    "text": "comment",
-   "start": 6.334,
-   "end": 6.562
+   "start": 7.26,
+   "end": 7.4
   },
   {
    "text": "le",
-   "start": 6.562,
-   "end": 6.647
+   "start": 7.4,
+   "end": 7.56
   },
   {
-   "text": "savoir ?",
-   "start": 6.647,
-   "end": 7.199
+   "text": "savoir ?",
+   "start": 7.56,
+   "end": 7.84
   },
   {
    "text": "Un",
-   "start": 7.536,
-   "end": 7.644
+   "start": 8.44,
+   "end": 8.62
   },
   {
    "text": "tube",
-   "start": 7.644,
-   "end": 7.849
+   "start": 8.62,
+   "end": 8.8
   },
   {
    "text": "jaune…",
-   "start": 7.849,
-   "end": 8.197
+   "start": 8.8,
+   "end": 9.28
   },
   {
    "text": "et",
-   "start": 8.377,
-   "end": 8.413
+   "start": 9.28,
+   "end": 9.6
   },
   {
    "text": "trois",
-   "start": 8.413,
-   "end": 8.606
+   "start": 9.6,
+   "end": 9.8
   },
   {
-   "text": "résultats :",
-   "start": 8.606,
-   "end": 9.099
+   "text": "résultats :",
+   "start": 9.8,
+   "end": 10.58
   },
   {
    "text": "l'urée,",
-   "start": 9.567,
-   "end": 9.976
+   "start": 10.8,
+   "end": 11.2
   },
   {
    "text": "la",
-   "start": 10.264,
-   "end": 10.312
+   "start": 11.42,
+   "end": 11.62
   },
   {
    "text": "créatinine",
-   "start": 10.312,
-   "end": 10.95
+   "start": 11.62,
+   "end": 12.12
   },
   {
    "text": "et",
-   "start": 10.95,
-   "end": 10.986
+   "start": 12.12,
+   "end": 12.4
   },
   {
    "text": "le",
-   "start": 10.986,
-   "end": 11.094
+   "start": 12.4,
+   "end": 12.74
   },
   {
    "text": "DFG.",
-   "start": 11.094,
-   "end": 11.743
+   "start": 12.74,
+   "end": 13.24
   },
   {
    "text": "C'est",
-   "start": 12.069,
-   "end": 12.261
+   "start": 13.64,
+   "end": 13.74
   },
   {
    "text": "le",
-   "start": 12.261,
-   "end": 12.345
+   "start": 13.74,
+   "end": 13.9
   },
   {
    "text": "bilan",
-   "start": 12.345,
-   "end": 12.598
+   "start": 13.9,
+   "end": 14.14
   },
   {
-   "text": "rénal !",
-   "start": 12.598,
-   "end": 13.138
+   "text": "rénal !",
+   "start": 14.14,
+   "end": 14.584
   },
   {
    "text": "Les",
-   "start": 14.064,
-   "end": 14.276
+   "start": 15.839,
+   "end": 16.08
   },
   {
    "text": "reins",
-   "start": 14.276,
-   "end": 14.464
+   "start": 16.08,
+   "end": 16.24
   },
   {
    "text": "sont",
-   "start": 14.464,
-   "end": 14.601
+   "start": 16.24,
+   "end": 16.46
   },
   {
    "text": "des",
-   "start": 14.601,
-   "end": 14.714
+   "start": 16.46,
+   "end": 16.76
   },
   {
    "text": "filtres.",
-   "start": 14.714,
-   "end": 15.276
+   "start": 16.76,
+   "end": 17.14
   },
   {
    "text": "Ils",
-   "start": 15.614,
-   "end": 15.826
+   "start": 17.38,
+   "end": 17.58
   },
   {
    "text": "gardent",
-   "start": 15.826,
-   "end": 16.127
+   "start": 17.58,
+   "end": 17.9
   },
   {
    "text": "dans",
-   "start": 16.127,
-   "end": 16.239
+   "start": 17.9,
+   "end": 18.06
   },
   {
    "text": "le",
-   "start": 16.239,
-   "end": 16.351
+   "start": 18.06,
+   "end": 18.24
   },
   {
    "text": "sang",
-   "start": 16.351,
-   "end": 16.564
+   "start": 18.24,
+   "end": 18.34
   },
   {
    "text": "ce",
-   "start": 16.564,
-   "end": 16.689
+   "start": 18.34,
+   "end": 18.56
   },
   {
    "text": "qui",
-   "start": 16.689,
-   "end": 16.802
+   "start": 18.56,
+   "end": 18.68
   },
   {
    "text": "est",
-   "start": 16.802,
-   "end": 16.826
+   "start": 18.68,
+   "end": 18.86
   },
   {
    "text": "utile…",
-   "start": 16.826,
-   "end": 17.314
+   "start": 18.86,
+   "end": 19.34
   },
   {
    "text": "et",
-   "start": 17.752,
-   "end": 17.776
+   "start": 19.34,
+   "end": 19.58
   },
   {
    "text": "ils",
-   "start": 17.776,
-   "end": 17.864
+   "start": 19.58,
+   "end": 19.82
   },
   {
    "text": "rejettent",
-   "start": 17.864,
-   "end": 18.201
+   "start": 19.82,
+   "end": 20.08
   },
   {
    "text": "les",
-   "start": 18.201,
-   "end": 18.276
+   "start": 20.08,
+   "end": 20.32
   },
   {
    "text": "déchets",
-   "start": 18.276,
-   "end": 18.551
+   "start": 20.32,
+   "end": 20.52
   },
   {
    "text": "dans",
-   "start": 18.551,
-   "end": 18.664
+   "start": 20.52,
+   "end": 20.66
   },
   {
    "text": "l'urine.",
-   "start": 18.664,
-   "end": 19.189
+   "start": 20.66,
+   "end": 21.14
   },
   {
    "text": "Mais",
-   "start": 19.526,
-   "end": 19.676
+   "start": 21.58,
+   "end": 21.72
   },
   {
    "text": "quand",
-   "start": 19.676,
-   "end": 19.789
+   "start": 21.72,
+   "end": 21.92
   },
   {
    "text": "ils",
-   "start": 19.789,
-   "end": 19.964
+   "start": 21.92,
+   "end": 22.08
   },
   {
    "text": "filtrent",
-   "start": 19.964,
-   "end": 20.289
+   "start": 22.08,
+   "end": 22.44
   },
   {
    "text": "mal,",
-   "start": 20.289,
-   "end": 20.614
+   "start": 22.44,
+   "end": 22.74
   },
   {
    "text": "les",
-   "start": 20.939,
-   "end": 21.002
+   "start": 23.02,
+   "end": 23.16
   },
   {
    "text": "déchets",
-   "start": 21.002,
-   "end": 21.276
+   "start": 23.16,
+   "end": 23.46
   },
   {
    "text": "restent",
-   "start": 21.276,
-   "end": 21.589
+   "start": 23.46,
+   "end": 23.84
   },
   {
    "text": "dans",
-   "start": 21.589,
-   "end": 21.701
+   "start": 23.84,
+   "end": 24.0
   },
   {
    "text": "le",
-   "start": 21.701,
-   "end": 21.814
+   "start": 24.0,
+   "end": 24.2
   },
   {
    "text": "sang",
-   "start": 21.814,
-   "end": 22.026
+   "start": 24.2,
+   "end": 24.36
   },
   {
    "text": "et",
-   "start": 22.026,
-   "end": 22.102
+   "start": 24.36,
+   "end": 24.58
   },
   {
    "text": "s'accumulent.",
-   "start": 22.102,
-   "end": 22.776
+   "start": 24.58,
+   "end": 25.36
   },
   {
    "text": "Et",
-   "start": 23.114,
-   "end": 23.264
+   "start": 25.68,
+   "end": 25.74
   },
   {
    "text": "c'est",
-   "start": 23.264,
-   "end": 23.401
+   "start": 25.74,
+   "end": 26.02
   },
   {
    "text": "justement",
-   "start": 23.401,
-   "end": 23.814
+   "start": 26.02,
+   "end": 26.54
   },
   {
    "text": "ce",
-   "start": 23.814,
-   "end": 23.926
+   "start": 26.54,
+   "end": 26.68
   },
   {
    "text": "qu'on",
-   "start": 23.926,
-   "end": 24.051
+   "start": 26.68,
+   "end": 26.92
   },
   {
    "text": "mesure",
-   "start": 24.051,
-   "end": 24.439
+   "start": 26.92,
+   "end": 27.12
   },
   {
    "text": "dans",
-   "start": 24.439,
-   "end": 24.539
+   "start": 27.12,
+   "end": 27.26
   },
   {
    "text": "le",
-   "start": 24.539,
-   "end": 24.627
+   "start": 27.26,
+   "end": 27.44
   },
   {
    "text": "tube",
-   "start": 24.627,
-   "end": 24.826
+   "start": 27.44,
+   "end": 27.58
   },
   {
    "text": "jaune.",
-   "start": 24.826,
-   "end": 25.276
+   "start": 27.58,
+   "end": 28.0
   },
   {
    "text": "D'abord,",
-   "start": 26.23,
-   "end": 26.855
+   "start": 28.58,
+   "end": 29.5
   },
   {
    "text": "l'urée.",
-   "start": 27.23,
-   "end": 27.655
+   "start": 29.74,
+   "end": 30.3
   },
   {
    "text": "C'est",
-   "start": 27.992,
-   "end": 28.205
+   "start": 30.58,
+   "end": 30.7
   },
   {
    "text": "le",
-   "start": 28.205,
-   "end": 28.293
+   "start": 30.7,
+   "end": 30.84
   },
   {
    "text": "déchet",
-   "start": 28.293,
-   "end": 28.567
+   "start": 30.84,
+   "end": 31.12
   },
   {
    "text": "final",
-   "start": 28.567,
-   "end": 28.992
+   "start": 31.12,
+   "end": 31.48
   },
   {
    "text": "des",
-   "start": 28.992,
-   "end": 29.08
+   "start": 31.48,
+   "end": 31.74
   },
   {
    "text": "protéines.",
-   "start": 29.08,
-   "end": 29.78
+   "start": 31.74,
+   "end": 32.3
   },
   {
    "text": "Les",
-   "start": 30.13,
-   "end": 30.293
+   "start": 32.74,
+   "end": 32.92
   },
   {
    "text": "protéines",
-   "start": 30.293,
-   "end": 30.767
+   "start": 32.92,
+   "end": 33.28
   },
   {
    "text": "sont",
-   "start": 30.767,
-   "end": 30.93
+   "start": 33.28,
+   "end": 33.48
   },
   {
    "text": "faites",
-   "start": 30.93,
-   "end": 31.117
+   "start": 33.48,
+   "end": 33.76
   },
   {
    "text": "d'acides",
-   "start": 31.117,
-   "end": 31.43
+   "start": 33.76,
+   "end": 34.28
   },
   {
-   "text": "aminés :",
-   "start": 31.43,
-   "end": 31.905
+   "text": "aminés :",
+   "start": 34.28,
+   "end": 34.78
   },
   {
    "text": "en",
-   "start": 32.218,
-   "end": 32.305
+   "start": 34.98,
+   "end": 35.04
   },
   {
    "text": "les",
-   "start": 32.305,
-   "end": 32.392
+   "start": 35.04,
+   "end": 35.42
   },
   {
    "text": "utilisant,",
-   "start": 32.392,
-   "end": 33.005
+   "start": 35.42,
+   "end": 35.82
   },
   {
    "text": "le",
-   "start": 33.292,
-   "end": 33.355
+   "start": 35.82,
+   "end": 36.16
   },
   {
    "text": "corps",
-   "start": 33.355,
-   "end": 33.542
+   "start": 36.16,
+   "end": 36.44
   },
   {
    "text": "produit",
-   "start": 33.542,
-   "end": 33.855
+   "start": 36.44,
+   "end": 36.76
   },
   {
    "text": "de",
-   "start": 33.855,
-   "end": 33.943
+   "start": 36.76,
+   "end": 36.92
   },
   {
    "text": "l'ammoniac.",
-   "start": 33.943,
-   "end": 34.605
+   "start": 36.92,
+   "end": 37.7
   },
   {
    "text": "Le",
-   "start": 34.942,
-   "end": 35.13
+   "start": 38.06,
+   "end": 38.34
   },
   {
    "text": "foie",
-   "start": 35.13,
-   "end": 35.317
+   "start": 38.34,
+   "end": 38.44
   },
   {
    "text": "le",
-   "start": 35.317,
-   "end": 35.38
+   "start": 38.44,
+   "end": 38.8
   },
   {
    "text": "transforme",
-   "start": 35.38,
-   "end": 35.855
+   "start": 38.8,
+   "end": 39.1
   },
   {
    "text": "en",
-   "start": 35.855,
-   "end": 35.905
+   "start": 39.1,
+   "end": 39.32
   },
   {
    "text": "urée…",
-   "start": 35.905,
-   "end": 36.317
+   "start": 39.32,
+   "end": 39.66
   },
   {
    "text": "et",
-   "start": 36.68,
-   "end": 36.767
+   "start": 39.66,
+   "end": 40.0
   },
   {
    "text": "les",
-   "start": 36.767,
-   "end": 36.867
+   "start": 40.0,
+   "end": 40.18
   },
   {
    "text": "reins",
-   "start": 36.867,
-   "end": 37.055
+   "start": 40.18,
+   "end": 40.26
   },
   {
    "text": "l'éliminent",
-   "start": 37.055,
-   "end": 37.492
+   "start": 40.26,
+   "end": 40.74
   },
   {
    "text": "dans",
-   "start": 37.492,
-   "end": 37.605
+   "start": 40.74,
+   "end": 40.9
   },
   {
    "text": "l'urine.",
-   "start": 37.605,
-   "end": 38.142
+   "start": 40.9,
+   "end": 41.5
   },
   {
    "text": "Une",
-   "start": 38.48,
-   "end": 38.705
+   "start": 41.94,
+   "end": 42.1
   },
   {
    "text": "urée",
-   "start": 38.705,
-   "end": 38.855
+   "start": 42.1,
+   "end": 42.36
   },
   {
    "text": "trop",
-   "start": 38.855,
-   "end": 39.08
+   "start": 42.36,
+   "end": 42.68
   },
   {
    "text": "haute",
-   "start": 39.08,
-   "end": 39.267
+   "start": 42.68,
+   "end": 42.92
   },
   {
    "text": "peut",
-   "start": 39.267,
-   "end": 39.367
+   "start": 42.92,
+   "end": 43.1
   },
   {
    "text": "faire",
-   "start": 39.367,
-   "end": 39.517
+   "start": 43.1,
+   "end": 43.28
   },
   {
    "text": "penser",
-   "start": 39.517,
-   "end": 39.83
+   "start": 43.28,
+   "end": 43.62
   },
   {
    "text": "à",
-   "start": 39.83,
-   "end": 39.88
+   "start": 43.62,
+   "end": 43.76
   },
   {
    "text": "une",
-   "start": 39.88,
-   "end": 39.955
+   "start": 43.76,
+   "end": 43.92
   },
   {
    "text": "déshydratation,",
-   "start": 39.955,
-   "end": 40.793
+   "start": 43.92,
+   "end": 44.82
   },
   {
    "text": "à",
-   "start": 41.08,
-   "end": 41.168
+   "start": 45.14,
+   "end": 45.22
   },
   {
    "text": "une",
-   "start": 41.168,
-   "end": 41.255
+   "start": 45.22,
+   "end": 45.38
   },
   {
    "text": "insuffisance",
-   "start": 41.255,
-   "end": 41.805
+   "start": 45.38,
+   "end": 45.9
   },
   {
    "text": "rénale…",
-   "start": 41.805,
-   "end": 42.218
+   "start": 45.9,
+   "end": 46.38
   },
   {
    "text": "ou",
-   "start": 42.655,
-   "end": 42.718
+   "start": 46.38,
+   "end": 46.82
   },
   {
    "text": "à",
-   "start": 42.718,
-   "end": 42.78
+   "start": 46.82,
+   "end": 46.96
   },
   {
    "text": "une",
-   "start": 42.78,
-   "end": 42.88
+   "start": 46.96,
+   "end": 47.08
   },
   {
    "text": "hémorragie",
-   "start": 42.88,
-   "end": 43.293
+   "start": 47.08,
+   "end": 47.52
   },
   {
-   "text": "digestive :",
-   "start": 43.293,
-   "end": 43.942
+   "text": "digestive :",
+   "start": 47.52,
+   "end": 48.06
   },
   {
    "text": "un",
-   "start": 44.392,
-   "end": 44.442
+   "start": 48.48,
+   "end": 48.7
   },
   {
    "text": "saignement",
-   "start": 44.442,
-   "end": 44.83
+   "start": 48.7,
+   "end": 49.12
   },
   {
    "text": "dans",
-   "start": 44.83,
-   "end": 44.93
+   "start": 49.12,
+   "end": 49.3
   },
   {
    "text": "le",
-   "start": 44.93,
-   "end": 45.017
+   "start": 49.3,
+   "end": 49.48
   },
   {
    "text": "tube",
-   "start": 45.017,
-   "end": 45.23
+   "start": 49.48,
+   "end": 49.62
   },
   {
    "text": "digestif.",
-   "start": 45.23,
-   "end": 46.03
+   "start": 49.62,
+   "end": 50.276
   },
   {
    "text": "Ensuite,",
-   "start": 46.988,
-   "end": 47.576
+   "start": 51.253,
+   "end": 51.72
   },
   {
    "text": "la",
-   "start": 47.813,
-   "end": 47.901
+   "start": 52.0,
+   "end": 52.14
   },
   {
    "text": "créatinine.",
-   "start": 47.901,
-   "end": 48.713
+   "start": 52.14,
+   "end": 52.68
   },
   {
    "text": "C'est",
-   "start": 49.05,
-   "end": 49.238
+   "start": 53.16,
+   "end": 53.38
   },
   {
    "text": "un",
-   "start": 49.238,
-   "end": 49.388
+   "start": 53.38,
+   "end": 53.5
   },
   {
    "text": "déchet",
-   "start": 49.388,
-   "end": 49.663
+   "start": 53.5,
+   "end": 53.76
   },
   {
    "text": "des",
-   "start": 49.663,
-   "end": 49.763
+   "start": 53.76,
+   "end": 53.98
   },
   {
-   "text": "muscles :",
-   "start": 49.763,
-   "end": 50.175
+   "text": "muscles :",
+   "start": 53.98,
+   "end": 54.3
   },
   {
    "text": "elle",
-   "start": 50.601,
-   "end": 50.663
+   "start": 54.64,
+   "end": 54.78
   },
   {
    "text": "vient",
-   "start": 50.663,
-   "end": 50.813
+   "start": 54.78,
+   "end": 54.94
   },
   {
    "text": "de",
-   "start": 50.813,
-   "end": 50.888
+   "start": 54.94,
+   "end": 55.12
   },
   {
    "text": "la",
-   "start": 50.888,
-   "end": 50.963
+   "start": 55.12,
+   "end": 55.34
   },
   {
    "text": "créatine,",
-   "start": 50.963,
-   "end": 51.663
+   "start": 55.34,
+   "end": 55.92
   },
   {
    "text": "qui",
-   "start": 51.925,
-   "end": 52.088
+   "start": 55.92,
+   "end": 56.26
   },
   {
    "text": "aide",
-   "start": 52.088,
-   "end": 52.188
+   "start": 56.26,
+   "end": 56.46
   },
   {
    "text": "les",
-   "start": 52.188,
-   "end": 52.3
+   "start": 56.46,
+   "end": 56.68
   },
   {
    "text": "muscles",
-   "start": 52.3,
-   "end": 52.588
+   "start": 56.68,
+   "end": 56.9
   },
   {
    "text": "à",
-   "start": 52.588,
-   "end": 52.626
+   "start": 56.9,
+   "end": 57.22
   },
   {
    "text": "produire",
-   "start": 52.626,
-   "end": 53.013
+   "start": 57.22,
+   "end": 57.44
   },
   {
    "text": "leur",
-   "start": 53.013,
-   "end": 53.163
+   "start": 57.44,
+   "end": 57.6
   },
   {
    "text": "énergie.",
-   "start": 53.163,
-   "end": 53.688
+   "start": 57.6,
+   "end": 58.22
   },
   {
    "text": "Ce",
-   "start": 54.038,
-   "end": 54.251
+   "start": 58.62,
+   "end": 58.7
   },
   {
    "text": "sont",
-   "start": 54.251,
-   "end": 54.376
+   "start": 58.7,
+   "end": 58.92
   },
   {
    "text": "surtout",
-   "start": 54.376,
-   "end": 54.688
+   "start": 58.92,
+   "end": 59.3
   },
   {
    "text": "les",
-   "start": 54.688,
-   "end": 54.8
+   "start": 59.3,
+   "end": 59.5
   },
   {
    "text": "reins",
-   "start": 54.8,
-   "end": 54.988
+   "start": 59.5,
+   "end": 59.62
   },
   {
    "text": "qui",
-   "start": 54.988,
-   "end": 55.126
+   "start": 59.62,
+   "end": 59.8
   },
   {
    "text": "l'éliminent.",
-   "start": 55.126,
-   "end": 55.751
+   "start": 59.8,
+   "end": 60.4
   },
   {
    "text": "Et",
-   "start": 56.088,
-   "end": 56.226
+   "start": 60.76,
+   "end": 61.0
   },
   {
    "text": "plus",
-   "start": 56.226,
-   "end": 56.401
+   "start": 61.0,
+   "end": 61.1
   },
   {
    "text": "on",
-   "start": 56.401,
-   "end": 56.501
+   "start": 61.1,
+   "end": 61.2
   },
   {
    "text": "a",
-   "start": 56.501,
-   "end": 56.588
+   "start": 61.2,
+   "end": 61.36
   },
   {
    "text": "de",
-   "start": 56.588,
-   "end": 56.701
+   "start": 61.36,
+   "end": 61.5
   },
   {
    "text": "muscles,",
-   "start": 56.701,
-   "end": 57.175
+   "start": 61.5,
+   "end": 61.92
   },
   {
    "text": "plus",
-   "start": 57.363,
-   "end": 57.513
+   "start": 62.08,
+   "end": 62.3
   },
   {
    "text": "on",
-   "start": 57.513,
-   "end": 57.613
+   "start": 62.3,
+   "end": 62.46
   },
   {
    "text": "en",
-   "start": 57.613,
-   "end": 57.713
+   "start": 62.46,
+   "end": 62.6
   },
   {
-   "text": "fabrique :",
-   "start": 57.713,
-   "end": 58.213
+   "text": "fabrique :",
+   "start": 62.6,
+   "end": 63.02
   },
   {
    "text": "c'est",
-   "start": 58.626,
-   "end": 58.726
+   "start": 63.3,
+   "end": 63.46
   },
   {
    "text": "pour",
-   "start": 58.726,
-   "end": 58.901
+   "start": 63.46,
+   "end": 63.72
   },
   {
    "text": "ça",
-   "start": 58.901,
-   "end": 59.026
+   "start": 63.72,
+   "end": 63.84
   },
   {
    "text": "que",
-   "start": 59.026,
-   "end": 59.138
+   "start": 63.84,
+   "end": 63.98
   },
   {
    "text": "les",
-   "start": 59.138,
-   "end": 59.213
+   "start": 63.98,
+   "end": 64.12
   },
   {
    "text": "normes",
-   "start": 59.213,
-   "end": 59.488
+   "start": 64.12,
+   "end": 64.36
   },
   {
    "text": "sont",
-   "start": 59.488,
-   "end": 59.626
+   "start": 64.36,
+   "end": 64.6
   },
   {
    "text": "plus",
-   "start": 59.626,
-   "end": 59.788
+   "start": 64.6,
+   "end": 64.88
   },
   {
    "text": "hautes",
-   "start": 59.788,
-   "end": 59.951
+   "start": 64.88,
+   "end": 65.08
   },
   {
    "text": "chez",
-   "start": 59.951,
-   "end": 60.063
+   "start": 65.08,
+   "end": 65.24
   },
   {
    "text": "l'homme.",
-   "start": 60.063,
-   "end": 60.451
+   "start": 65.24,
+   "end": 65.7
   },
   {
    "text": "Une",
-   "start": 60.788,
-   "end": 60.938
+   "start": 66.08,
+   "end": 66.22
   },
   {
    "text": "créatinine",
-   "start": 60.938,
-   "end": 61.513
+   "start": 66.22,
+   "end": 66.7
   },
   {
    "text": "qui",
-   "start": 61.513,
-   "end": 61.651
+   "start": 66.7,
+   "end": 67.0
   },
   {
    "text": "monte,",
-   "start": 61.651,
-   "end": 62.026
+   "start": 67.0,
+   "end": 67.28
   },
   {
    "text": "c'est",
-   "start": 62.251,
-   "end": 62.363
+   "start": 67.44,
+   "end": 67.64
   },
   {
    "text": "le",
-   "start": 62.363,
-   "end": 62.451
+   "start": 67.64,
+   "end": 67.8
   },
   {
    "text": "reflet",
-   "start": 62.451,
-   "end": 62.726
+   "start": 67.8,
+   "end": 68.1
   },
   {
    "text": "d'une",
-   "start": 62.726,
-   "end": 62.863
+   "start": 68.1,
+   "end": 68.38
   },
   {
    "text": "insuffisance",
-   "start": 62.863,
-   "end": 63.438
+   "start": 68.38,
+   "end": 68.94
   },
   {
-   "text": "rénale :",
-   "start": 63.438,
-   "end": 63.826
+   "text": "rénale :",
+   "start": 68.94,
+   "end": 69.66
   },
   {
    "text": "aiguë,",
-   "start": 64.038,
-   "end": 64.363
+   "start": 69.96,
+   "end": 70.26
   },
   {
    "text": "quand",
-   "start": 64.638,
-   "end": 64.738
+   "start": 70.26,
+   "end": 70.44
   },
   {
    "text": "elle",
-   "start": 64.738,
-   "end": 64.888
+   "start": 70.44,
+   "end": 70.62
   },
   {
    "text": "arrive",
-   "start": 64.888,
-   "end": 65.101
+   "start": 70.62,
+   "end": 70.86
   },
   {
    "text": "d'un",
-   "start": 65.101,
-   "end": 65.275
+   "start": 70.86,
+   "end": 71.16
   },
   {
    "text": "coup,",
-   "start": 65.275,
-   "end": 65.55
+   "start": 71.16,
+   "end": 71.32
   },
   {
    "text": "ou",
-   "start": 65.838,
-   "end": 65.863
+   "start": 71.32,
+   "end": 71.82
   },
   {
    "text": "chronique,",
-   "start": 65.863,
-   "end": 66.451
+   "start": 71.82,
+   "end": 72.36
   },
   {
    "text": "quand",
-   "start": 66.675,
-   "end": 66.775
+   "start": 72.36,
+   "end": 72.58
   },
   {
    "text": "elle",
-   "start": 66.775,
-   "end": 66.951
+   "start": 72.58,
+   "end": 72.74
   },
   {
    "text": "s'installe",
-   "start": 66.951,
-   "end": 67.363
+   "start": 72.74,
+   "end": 73.14
   },
   {
    "text": "lentement.",
-   "start": 67.363,
-   "end": 67.826
+   "start": 73.14,
+   "end": 73.68
   },
   {
    "text": "Et",
-   "start": 68.778,
-   "end": 68.941
+   "start": 73.68,
+   "end": 74.6
   },
   {
    "text": "le",
-   "start": 68.941,
-   "end": 69.053
+   "start": 74.6,
+   "end": 74.88
   },
   {
    "text": "DFG,",
-   "start": 69.053,
-   "end": 69.703
+   "start": 74.88,
+   "end": 75.36
   },
   {
    "text": "c'est",
-   "start": 70.04,
-   "end": 70.178
+   "start": 75.64,
+   "end": 75.76
   },
   {
    "text": "le",
-   "start": 70.178,
-   "end": 70.265
+   "start": 75.76,
+   "end": 75.96
   },
   {
    "text": "débit",
-   "start": 70.265,
-   "end": 70.49
+   "start": 75.96,
+   "end": 76.22
   },
   {
    "text": "de",
-   "start": 70.49,
-   "end": 70.59
+   "start": 76.22,
+   "end": 76.46
   },
   {
    "text": "filtration",
-   "start": 70.59,
-   "end": 71.09
+   "start": 76.46,
+   "end": 76.98
   },
   {
-   "text": "glomérulaire :",
-   "start": 71.09,
-   "end": 71.753
+   "text": "glomérulaire :",
+   "start": 76.98,
+   "end": 77.9
   },
   {
    "text": "la",
-   "start": 72.191,
-   "end": 72.24
+   "start": 78.2,
+   "end": 78.22
   },
   {
    "text": "quantité",
-   "start": 72.24,
-   "end": 72.615
+   "start": 78.22,
+   "end": 78.66
   },
   {
    "text": "de",
-   "start": 72.615,
-   "end": 72.728
+   "start": 78.66,
+   "end": 78.88
   },
   {
    "text": "sang",
-   "start": 72.728,
-   "end": 72.865
+   "start": 78.88,
+   "end": 79.0
   },
   {
    "text": "que",
-   "start": 72.865,
-   "end": 72.99
+   "start": 79.0,
+   "end": 79.2
   },
   {
    "text": "tes",
-   "start": 72.99,
-   "end": 73.115
+   "start": 79.2,
+   "end": 79.36
   },
   {
    "text": "reins",
-   "start": 73.115,
-   "end": 73.278
+   "start": 79.36,
+   "end": 79.46
   },
   {
    "text": "arrivent",
-   "start": 73.278,
-   "end": 73.515
+   "start": 79.46,
+   "end": 79.88
   },
   {
    "text": "à",
-   "start": 73.515,
-   "end": 73.566
+   "start": 79.88,
+   "end": 80.06
   },
   {
    "text": "filtrer…",
-   "start": 73.566,
-   "end": 74.028
+   "start": 80.06,
+   "end": 80.6
   },
   {
    "text": "chaque",
-   "start": 74.303,
-   "end": 74.553
+   "start": 80.6,
+   "end": 80.94
   },
   {
    "text": "minute.",
-   "start": 74.553,
-   "end": 75.078
+   "start": 80.94,
+   "end": 81.34
   },
   {
    "text": "C'est",
-   "start": 75.415,
-   "end": 75.628
+   "start": 81.9,
+   "end": 82.08
   },
   {
    "text": "le",
-   "start": 75.628,
-   "end": 75.715
+   "start": 82.08,
+   "end": 82.28
   },
   {
    "text": "meilleur",
-   "start": 75.715,
-   "end": 76.003
+   "start": 82.28,
+   "end": 82.72
   },
   {
    "text": "reflet",
-   "start": 76.003,
-   "end": 76.39
+   "start": 82.72,
+   "end": 83.06
   },
   {
    "text": "du",
-   "start": 76.39,
-   "end": 76.49
+   "start": 83.06,
+   "end": 83.26
   },
   {
    "text": "travail",
-   "start": 76.49,
-   "end": 76.853
+   "start": 83.26,
+   "end": 83.54
   },
   {
    "text": "des",
-   "start": 76.853,
-   "end": 76.965
+   "start": 83.54,
+   "end": 83.72
   },
   {
    "text": "reins.",
-   "start": 76.965,
-   "end": 77.278
+   "start": 83.72,
+   "end": 83.86
   },
   {
    "text": "On",
-   "start": 77.64,
-   "end": 77.74
+   "start": 84.36,
+   "end": 84.48
   },
   {
    "text": "ne",
-   "start": 77.74,
-   "end": 77.816
+   "start": 84.48,
+   "end": 84.62
   },
   {
    "text": "le",
-   "start": 77.816,
-   "end": 77.89
+   "start": 84.62,
+   "end": 84.74
   },
   {
    "text": "mesure",
-   "start": 77.89,
-   "end": 78.203
+   "start": 84.74,
+   "end": 84.9
   },
   {
    "text": "pas",
-   "start": 78.203,
-   "end": 78.34
+   "start": 84.9,
+   "end": 85.18
   },
   {
-   "text": "directement :",
-   "start": 78.34,
-   "end": 78.978
+   "text": "directement :",
+   "start": 85.18,
+   "end": 85.62
   },
   {
    "text": "on",
-   "start": 79.378,
-   "end": 79.403
+   "start": 85.92,
+   "end": 86.06
   },
   {
    "text": "le",
-   "start": 79.403,
-   "end": 79.478
+   "start": 86.06,
+   "end": 86.32
   },
   {
    "text": "calcule",
-   "start": 79.478,
-   "end": 79.853
+   "start": 86.32,
+   "end": 86.64
   },
   {
    "text": "à",
-   "start": 79.853,
-   "end": 79.89
+   "start": 86.64,
+   "end": 86.84
   },
   {
    "text": "partir",
-   "start": 79.89,
-   "end": 80.203
+   "start": 86.84,
+   "end": 87.2
   },
   {
    "text": "de",
-   "start": 80.203,
-   "end": 80.265
+   "start": 87.2,
+   "end": 87.38
   },
   {
    "text": "la",
-   "start": 80.265,
-   "end": 80.34
+   "start": 87.38,
+   "end": 87.56
   },
   {
    "text": "créatinine.",
-   "start": 80.34,
-   "end": 81.115
+   "start": 87.56,
+   "end": 87.96
   },
   {
    "text": "Et",
-   "start": 81.453,
-   "end": 81.59
+   "start": 88.42,
+   "end": 88.8
   },
   {
    "text": "retiens",
-   "start": 81.59,
-   "end": 81.865
+   "start": 88.8,
+   "end": 89.08
   },
   {
    "text": "bien",
-   "start": 81.865,
-   "end": 82.066
+   "start": 89.08,
+   "end": 89.32
   },
   {
-   "text": "ça :",
-   "start": 82.066,
-   "end": 82.353
+   "text": "ça :",
+   "start": 89.32,
+   "end": 89.68
   },
   {
    "text": "quand",
-   "start": 82.653,
-   "end": 82.753
+   "start": 89.9,
+   "end": 90.06
   },
   {
    "text": "les",
-   "start": 82.753,
-   "end": 82.84
+   "start": 90.06,
+   "end": 90.26
   },
   {
    "text": "reins",
-   "start": 82.84,
-   "end": 83.015
+   "start": 90.26,
+   "end": 90.4
   },
   {
    "text": "filtrent",
-   "start": 83.015,
-   "end": 83.378
+   "start": 90.4,
+   "end": 90.8
   },
   {
    "text": "moins",
-   "start": 83.378,
-   "end": 83.553
+   "start": 90.8,
+   "end": 91.04
   },
   {
    "text": "bien,",
-   "start": 83.553,
-   "end": 83.828
+   "start": 91.04,
+   "end": 91.34
   },
   {
    "text": "la",
-   "start": 84.115,
-   "end": 84.191
+   "start": 91.62,
+   "end": 91.74
   },
   {
    "text": "créatinine",
-   "start": 84.191,
-   "end": 84.753
+   "start": 91.74,
+   "end": 92.26
   },
   {
    "text": "monte…",
-   "start": 84.753,
-   "end": 85.09
+   "start": 92.26,
+   "end": 92.7
   },
   {
    "text": "et",
-   "start": 85.44,
-   "end": 85.465
+   "start": 92.7,
+   "end": 93.08
   },
   {
    "text": "le",
-   "start": 85.465,
-   "end": 85.565
+   "start": 93.08,
+   "end": 93.3
   },
   {
    "text": "DFG",
-   "start": 85.565,
-   "end": 86.128
+   "start": 93.3,
+   "end": 93.68
   },
   {
    "text": "baisse.",
-   "start": 86.128,
-   "end": 86.628
+   "start": 93.68,
+   "end": 94.114
   },
   {
    "text": "Le",
-   "start": 87.618,
-   "end": 87.755
+   "start": 95.157,
+   "end": 95.34
   },
   {
    "text": "DFG",
-   "start": 87.755,
-   "end": 88.331
+   "start": 95.34,
+   "end": 95.92
   },
   {
    "text": "sert",
-   "start": 88.331,
-   "end": 88.543
+   "start": 95.92,
+   "end": 96.1
   },
   {
    "text": "à",
-   "start": 88.543,
-   "end": 88.581
+   "start": 96.1,
+   "end": 96.28
   },
   {
    "text": "classer",
-   "start": 88.581,
-   "end": 88.906
+   "start": 96.28,
+   "end": 96.64
   },
   {
    "text": "la",
-   "start": 88.906,
-   "end": 88.993
+   "start": 96.64,
+   "end": 96.82
   },
   {
    "text": "maladie",
-   "start": 88.993,
-   "end": 89.331
+   "start": 96.82,
+   "end": 97.18
   },
   {
    "text": "rénale",
-   "start": 89.331,
-   "end": 89.618
+   "start": 97.18,
+   "end": 97.5
   },
   {
    "text": "chronique",
-   "start": 89.618,
-   "end": 90.055
+   "start": 97.5,
+   "end": 97.94
   },
   {
    "text": "en",
-   "start": 90.055,
-   "end": 90.106
+   "start": 97.94,
+   "end": 98.2
   },
   {
    "text": "cinq",
-   "start": 90.106,
-   "end": 90.318
+   "start": 98.2,
+   "end": 98.54
   },
   {
    "text": "stades.",
-   "start": 90.318,
-   "end": 90.793
+   "start": 98.54,
+   "end": 99.12
   },
   {
    "text": "Stade",
-   "start": 91.13,
-   "end": 91.468
+   "start": 99.12,
+   "end": 99.62
   },
   {
-   "text": "un :",
-   "start": 91.468,
-   "end": 91.693
+   "text": "un :",
+   "start": 99.62,
+   "end": 100.04
   },
   {
    "text": "quatre-vingt-dix",
-   "start": 91.956,
-   "end": 92.531
+   "start": 100.42,
+   "end": 100.8
   },
   {
    "text": "ou",
-   "start": 92.531,
-   "end": 92.581
+   "start": 100.8,
+   "end": 101.1
   },
   {
    "text": "plus,",
-   "start": 92.581,
-   "end": 93.031
+   "start": 101.1,
+   "end": 101.48
   },
   {
    "text": "le",
-   "start": 93.206,
-   "end": 93.281
+   "start": 101.62,
+   "end": 101.8
   },
   {
    "text": "débit",
-   "start": 93.281,
-   "end": 93.555
+   "start": 101.8,
+   "end": 102.02
   },
   {
    "text": "est",
-   "start": 93.555,
-   "end": 93.581
+   "start": 102.02,
+   "end": 102.24
   },
   {
    "text": "normal,",
-   "start": 93.581,
-   "end": 94.106
+   "start": 102.24,
+   "end": 102.62
   },
   {
    "text": "mais",
-   "start": 94.43,
-   "end": 94.505
+   "start": 102.62,
+   "end": 102.96
   },
   {
    "text": "les",
-   "start": 94.505,
-   "end": 94.606
+   "start": 102.96,
+   "end": 103.18
   },
   {
    "text": "reins",
-   "start": 94.606,
-   "end": 94.768
+   "start": 103.18,
+   "end": 103.24
   },
   {
    "text": "montrent",
-   "start": 94.768,
-   "end": 95.055
+   "start": 103.24,
+   "end": 103.6
   },
   {
    "text": "des",
-   "start": 95.055,
-   "end": 95.168
+   "start": 103.6,
+   "end": 103.84
   },
   {
    "text": "signes",
-   "start": 95.168,
-   "end": 95.406
+   "start": 103.84,
+   "end": 104.06
   },
   {
    "text": "d'atteinte,",
-   "start": 95.406,
-   "end": 95.943
+   "start": 104.06,
+   "end": 104.62
   },
   {
    "text": "comme",
-   "start": 96.156,
-   "end": 96.305
+   "start": 104.84,
+   "end": 104.9
   },
   {
    "text": "des",
-   "start": 96.305,
-   "end": 96.38
-  },
-  {
-   "text": "protéines",
-   "start": 96.38,
-   "end": 96.831
-  },
-  {
-   "text": "dans",
-   "start": 96.831,
-   "end": 96.918
-  },
-  {
-   "text": "les",
-   "start": 96.918,
-   "end": 97.005
-  },
-  {
-   "text": "urines.",
-   "start": 97.005,
-   "end": 97.555
-  },
-  {
-   "text": "Stade",
-   "start": 97.906,
-   "end": 98.268
-  },
-  {
-   "text": "deux :",
-   "start": 98.268,
-   "end": 98.555
-  },
-  {
-   "text": "de",
-   "start": 98.906,
-   "end": 99.005
-  },
-  {
-   "text": "soixante",
-   "start": 99.005,
-   "end": 99.38
-  },
-  {
-   "text": "à",
-   "start": 99.38,
-   "end": 99.418
-  },
-  {
-   "text": "quatre-vingt-neuf,",
-   "start": 99.418,
-   "end": 100.18
-  },
-  {
-   "text": "c'est",
-   "start": 100.393,
-   "end": 100.518
-  },
-  {
-   "text": "une",
-   "start": 100.518,
-   "end": 100.693
-  },
-  {
-   "text": "légère",
-   "start": 100.693,
-   "end": 101.005
-  },
-  {
-   "text": "baisse.",
-   "start": 101.005,
-   "end": 101.493
-  },
-  {
-   "text": "Stade",
-   "start": 101.843,
-   "end": 102.156
-  },
-  {
-   "text": "trois :",
-   "start": 102.156,
-   "end": 102.543
-  },
-  {
-   "text": "de",
-   "start": 102.918,
-   "end": 102.993
-  },
-  {
-   "text": "trente",
-   "start": 102.993,
-   "end": 103.243
-  },
-  {
-   "text": "à",
-   "start": 103.243,
-   "end": 103.293
-  },
-  {
-   "text": "cinquante-neuf,",
-   "start": 103.293,
-   "end": 104.031
-  },
-  {
-   "text": "la",
-   "start": 104.281,
-   "end": 104.368
-  },
-  {
-   "text": "baisse",
-   "start": 104.368,
-   "end": 104.618
-  },
-  {
-   "text": "est",
-   "start": 104.618,
-   "end": 104.656
-  },
-  {
-   "text": "modérée.",
-   "start": 104.656,
+   "start": 104.9,
    "end": 105.18
   },
   {
-   "text": "Stade",
-   "start": 105.518,
-   "end": 105.88
-  },
-  {
-   "text": "quatre :",
-   "start": 105.88,
-   "end": 106.331
-  },
-  {
-   "text": "de",
-   "start": 106.693,
-   "end": 106.768
-  },
-  {
-   "text": "quinze",
-   "start": 106.768,
-   "end": 107.018
-  },
-  {
-   "text": "à",
-   "start": 107.018,
-   "end": 107.055
-  },
-  {
-   "text": "vingt-neuf,",
-   "start": 107.055,
-   "end": 107.606
-  },
-  {
-   "text": "la",
-   "start": 107.868,
-   "end": 107.956
-  },
-  {
-   "text": "baisse",
-   "start": 107.956,
-   "end": 108.193
-  },
-  {
-   "text": "est",
-   "start": 108.193,
-   "end": 108.243
-  },
-  {
-   "text": "sévère.",
-   "start": 108.243,
-   "end": 108.831
-  },
-  {
-   "text": "Et",
-   "start": 109.168,
-   "end": 109.318
-  },
-  {
-   "text": "stade",
-   "start": 109.318,
-   "end": 109.593
-  },
-  {
-   "text": "cinq :",
-   "start": 109.593,
-   "end": 109.981
-  },
-  {
-   "text": "sous",
-   "start": 110.356,
-   "end": 110.518
-  },
-  {
-   "text": "quinze,",
-   "start": 110.518,
-   "end": 110.956
-  },
-  {
-   "text": "c'est",
-   "start": 111.218,
-   "end": 111.356
-  },
-  {
-   "text": "l'insuffisance",
-   "start": 111.356,
-   "end": 112.031
-  },
-  {
-   "text": "rénale",
-   "start": 112.031,
-   "end": 112.331
-  },
-  {
-   "text": "terminale.",
-   "start": 112.331,
-   "end": 113.005
-  },
-  {
-   "text": "Il",
-   "start": 113.343,
-   "end": 113.543
-  },
-  {
-   "text": "faut",
-   "start": 113.543,
-   "end": 113.656
-  },
-  {
-   "text": "souvent",
-   "start": 113.656,
-   "end": 113.956
-  },
-  {
-   "text": "une",
-   "start": 113.956,
-   "end": 114.031
-  },
-  {
-   "text": "dialyse :",
-   "start": 114.031,
-   "end": 114.518
-  },
-  {
-   "text": "une",
-   "start": 114.906,
-   "end": 114.956
-  },
-  {
-   "text": "machine",
-   "start": 114.956,
-   "end": 115.356
-  },
-  {
-   "text": "qui",
-   "start": 115.356,
-   "end": 115.481
-  },
-  {
-   "text": "filtre",
-   "start": 115.481,
-   "end": 115.818
-  },
-  {
-   "text": "le",
-   "start": 115.818,
-   "end": 115.93
-  },
-  {
-   "text": "sang",
-   "start": 115.93,
-   "end": 116.156
-  },
-  {
-   "text": "à",
-   "start": 116.156,
-   "end": 116.193
-  },
-  {
-   "text": "la",
-   "start": 116.193,
-   "end": 116.281
-  },
-  {
-   "text": "place",
-   "start": 116.281,
-   "end": 116.531
-  },
-  {
-   "text": "des",
-   "start": 116.531,
-   "end": 116.643
-  },
-  {
-   "text": "reins.",
-   "start": 116.643,
-   "end": 116.943
-  },
-  {
-   "text": "Alors,",
-   "start": 117.902,
-   "end": 118.34
-  },
-  {
-   "text": "on",
-   "start": 118.502,
-   "end": 118.527
-  },
-  {
-   "text": "récapitule :",
-   "start": 118.527,
-   "end": 119.327
+   "text": "protéines",
+   "start": 105.18,
+   "end": 105.52
   },
   {
    "text": "dans",
-   "start": 119.677,
-   "end": 119.764
-  },
-  {
-   "text": "le",
-   "start": 119.764,
-   "end": 119.84
-  },
-  {
-   "text": "tube",
-   "start": 119.84,
-   "end": 120.014
-  },
-  {
-   "text": "jaune,",
-   "start": 120.014,
-   "end": 120.377
-  },
-  {
-   "text": "le",
-   "start": 120.702,
-   "end": 120.777
-  },
-  {
-   "text": "bilan",
-   "start": 120.777,
-   "end": 121.027
-  },
-  {
-   "text": "rénal.",
-   "start": 121.027,
-   "end": 121.577
-  },
-  {
-   "text": "L'urée,",
-   "start": 121.965,
-   "end": 122.427
-  },
-  {
-   "text": "le",
-   "start": 122.764,
-   "end": 122.84
-  },
-  {
-   "text": "déchet",
-   "start": 122.84,
-   "end": 123.127
-  },
-  {
-   "text": "des",
-   "start": 123.127,
-   "end": 123.215
-  },
-  {
-   "text": "protéines.",
-   "start": 123.215,
-   "end": 123.889
-  },
-  {
-   "text": "La",
-   "start": 124.227,
-   "end": 124.402
-  },
-  {
-   "text": "créatinine,",
-   "start": 124.402,
-   "end": 125.139
-  },
-  {
-   "text": "le",
-   "start": 125.465,
-   "end": 125.527
-  },
-  {
-   "text": "déchet",
-   "start": 125.527,
-   "end": 125.79
-  },
-  {
-   "text": "des",
-   "start": 125.79,
-   "end": 125.889
-  },
-  {
-   "text": "muscles.",
-   "start": 125.889,
-   "end": 126.427
-  },
-  {
-   "text": "Et",
-   "start": 126.764,
-   "end": 126.915
-  },
-  {
-   "text": "le",
-   "start": 126.915,
-   "end": 127.014
-  },
-  {
-   "text": "DFG,",
-   "start": 127.014,
-   "end": 127.665
-  },
-  {
-   "text": "calculé",
-   "start": 127.965,
-   "end": 128.352
-  },
-  {
-   "text": "à",
-   "start": 128.352,
-   "end": 128.415
-  },
-  {
-   "text": "partir",
-   "start": 128.415,
-   "end": 128.727
-  },
-  {
-   "text": "de",
-   "start": 128.727,
-   "end": 128.79
-  },
-  {
-   "text": "la",
-   "start": 128.79,
-   "end": 128.864
-  },
-  {
-   "text": "créatinine,",
-   "start": 128.864,
-   "end": 129.614
-  },
-  {
-   "text": "qui",
-   "start": 129.889,
-   "end": 130.002
-  },
-  {
-   "text": "dit",
-   "start": 130.002,
-   "end": 130.139
-  },
-  {
-   "text": "si",
-   "start": 130.139,
-   "end": 130.277
+   "start": 105.52,
+   "end": 105.66
   },
   {
    "text": "les",
-   "start": 130.277,
-   "end": 130.364
+   "start": 105.66,
+   "end": 105.88
   },
   {
-   "text": "reins",
-   "start": 130.364,
-   "end": 130.552
+   "text": "urines.",
+   "start": 105.88,
+   "end": 106.14
   },
   {
-   "text": "filtrent",
-   "start": 130.552,
-   "end": 130.927
+   "text": "Stade",
+   "start": 106.96,
+   "end": 107.16
   },
   {
-   "text": "bien.",
-   "start": 130.927,
-   "end": 131.264
-  },
-  {
-   "text": "Et",
-   "start": 131.602,
-   "end": 131.727
-  },
-  {
-   "text": "le",
-   "start": 131.727,
-   "end": 131.815
-  },
-  {
-   "text": "tube",
-   "start": 131.815,
-   "end": 132.002
-  },
-  {
-   "text": "jaune",
-   "start": 132.002,
-   "end": 132.252
-  },
-  {
-   "text": "n'a",
-   "start": 132.252,
-   "end": 132.352
-  },
-  {
-   "text": "pas",
-   "start": 132.352,
-   "end": 132.465
-  },
-  {
-   "text": "fini",
-   "start": 132.465,
-   "end": 132.702
+   "text": "deux :",
+   "start": 107.16,
+   "end": 107.48
   },
   {
    "text": "de",
-   "start": 132.702,
-   "end": 132.802
+   "start": 107.78,
+   "end": 107.92
   },
   {
-   "text": "parler :",
-   "start": 132.802,
-   "end": 133.215
+   "text": "soixante",
+   "start": 107.92,
+   "end": 108.36
+  },
+  {
+   "text": "à",
+   "start": 108.36,
+   "end": 108.56
+  },
+  {
+   "text": "quatre-vingt-neuf,",
+   "start": 108.56,
+   "end": 109.22
+  },
+  {
+   "text": "c'est",
+   "start": 109.58,
+   "end": 109.76
+  },
+  {
+   "text": "une",
+   "start": 109.76,
+   "end": 109.96
+  },
+  {
+   "text": "légère",
+   "start": 109.96,
+   "end": 110.34
+  },
+  {
+   "text": "baisse.",
+   "start": 110.34,
+   "end": 110.68
+  },
+  {
+   "text": "Stade",
+   "start": 111.34,
+   "end": 111.58
+  },
+  {
+   "text": "trois :",
+   "start": 111.58,
+   "end": 111.98
+  },
+  {
+   "text": "de",
+   "start": 112.24,
+   "end": 112.4
+  },
+  {
+   "text": "trente",
+   "start": 112.4,
+   "end": 112.72
+  },
+  {
+   "text": "à",
+   "start": 112.72,
+   "end": 112.96
+  },
+  {
+   "text": "cinquante-neuf,",
+   "start": 112.96,
+   "end": 113.62
   },
   {
    "text": "la",
-   "start": 133.602,
-   "end": 133.677
+   "start": 113.88,
+   "end": 114.04
+  },
+  {
+   "text": "baisse",
+   "start": 114.04,
+   "end": 114.22
+  },
+  {
+   "text": "est",
+   "start": 114.22,
+   "end": 114.48
+  },
+  {
+   "text": "modérée.",
+   "start": 114.48,
+   "end": 115.12
+  },
+  {
+   "text": "Stade",
+   "start": 115.58,
+   "end": 115.76
+  },
+  {
+   "text": "quatre :",
+   "start": 115.76,
+   "end": 116.18
+  },
+  {
+   "text": "de",
+   "start": 116.44,
+   "end": 116.56
+  },
+  {
+   "text": "quinze",
+   "start": 116.56,
+   "end": 116.92
+  },
+  {
+   "text": "à",
+   "start": 116.92,
+   "end": 117.1
+  },
+  {
+   "text": "vingt-neuf,",
+   "start": 117.1,
+   "end": 117.64
+  },
+  {
+   "text": "la",
+   "start": 117.92,
+   "end": 118.08
+  },
+  {
+   "text": "baisse",
+   "start": 118.08,
+   "end": 118.36
+  },
+  {
+   "text": "est",
+   "start": 118.36,
+   "end": 118.7
+  },
+  {
+   "text": "sévère.",
+   "start": 118.7,
+   "end": 119.28
+  },
+  {
+   "text": "Et",
+   "start": 119.6,
+   "end": 119.76
+  },
+  {
+   "text": "stade",
+   "start": 119.76,
+   "end": 119.98
+  },
+  {
+   "text": "cinq :",
+   "start": 119.98,
+   "end": 120.46
+  },
+  {
+   "text": "sous",
+   "start": 120.72,
+   "end": 120.86
+  },
+  {
+   "text": "quinze,",
+   "start": 120.86,
+   "end": 121.28
+  },
+  {
+   "text": "c'est",
+   "start": 121.52,
+   "end": 121.66
+  },
+  {
+   "text": "l'insuffisance",
+   "start": 121.66,
+   "end": 122.28
+  },
+  {
+   "text": "rénale",
+   "start": 122.28,
+   "end": 122.72
+  },
+  {
+   "text": "terminale.",
+   "start": 122.72,
+   "end": 123.38
+  },
+  {
+   "text": "Il",
+   "start": 123.68,
+   "end": 123.82
+  },
+  {
+   "text": "faut",
+   "start": 123.82,
+   "end": 124.0
+  },
+  {
+   "text": "souvent",
+   "start": 124.0,
+   "end": 124.26
+  },
+  {
+   "text": "une",
+   "start": 124.26,
+   "end": 124.46
+  },
+  {
+   "text": "dialyse :",
+   "start": 124.46,
+   "end": 124.92
+  },
+  {
+   "text": "une",
+   "start": 125.16,
+   "end": 125.38
+  },
+  {
+   "text": "machine",
+   "start": 125.38,
+   "end": 125.7
+  },
+  {
+   "text": "qui",
+   "start": 125.7,
+   "end": 126.06
+  },
+  {
+   "text": "filtre",
+   "start": 126.06,
+   "end": 126.32
+  },
+  {
+   "text": "le",
+   "start": 126.32,
+   "end": 126.58
+  },
+  {
+   "text": "sang",
+   "start": 126.58,
+   "end": 126.7
+  },
+  {
+   "text": "à",
+   "start": 126.7,
+   "end": 126.94
+  },
+  {
+   "text": "la",
+   "start": 126.94,
+   "end": 127.08
+  },
+  {
+   "text": "place",
+   "start": 127.08,
+   "end": 127.2
+  },
+  {
+   "text": "des",
+   "start": 127.2,
+   "end": 127.4
+  },
+  {
+   "text": "reins.",
+   "start": 127.4,
+   "end": 127.52
+  },
+  {
+   "text": "Alors,",
+   "start": 128.499,
+   "end": 128.84
+  },
+  {
+   "text": "on",
+   "start": 129.1,
+   "end": 129.2
+  },
+  {
+   "text": "récapitule :",
+   "start": 129.2,
+   "end": 129.98
+  },
+  {
+   "text": "dans",
+   "start": 130.24,
+   "end": 130.36
+  },
+  {
+   "text": "le",
+   "start": 130.36,
+   "end": 130.56
+  },
+  {
+   "text": "tube",
+   "start": 130.56,
+   "end": 130.7
+  },
+  {
+   "text": "jaune,",
+   "start": 130.7,
+   "end": 131.08
+  },
+  {
+   "text": "le",
+   "start": 131.32,
+   "end": 131.48
+  },
+  {
+   "text": "bilan",
+   "start": 131.48,
+   "end": 131.72
+  },
+  {
+   "text": "rénal.",
+   "start": 131.72,
+   "end": 132.24
+  },
+  {
+   "text": "L'urée,",
+   "start": 132.52,
+   "end": 132.98
+  },
+  {
+   "text": "le",
+   "start": 133.26,
+   "end": 133.38
+  },
+  {
+   "text": "déchet",
+   "start": 133.38,
+   "end": 133.6
+  },
+  {
+   "text": "des",
+   "start": 133.6,
+   "end": 133.82
+  },
+  {
+   "text": "protéines.",
+   "start": 133.82,
+   "end": 134.3
+  },
+  {
+   "text": "La",
+   "start": 134.76,
+   "end": 134.92
+  },
+  {
+   "text": "créatinine,",
+   "start": 134.92,
+   "end": 135.44
+  },
+  {
+   "text": "le",
+   "start": 135.66,
+   "end": 135.96
+  },
+  {
+   "text": "déchet",
+   "start": 135.96,
+   "end": 136.26
+  },
+  {
+   "text": "des",
+   "start": 136.26,
+   "end": 136.46
+  },
+  {
+   "text": "muscles.",
+   "start": 136.46,
+   "end": 136.8
+  },
+  {
+   "text": "Et",
+   "start": 137.1,
+   "end": 137.24
+  },
+  {
+   "text": "le",
+   "start": 137.24,
+   "end": 137.48
+  },
+  {
+   "text": "DFG,",
+   "start": 137.48,
+   "end": 138.34
+  },
+  {
+   "text": "calculé",
+   "start": 138.68,
+   "end": 138.86
+  },
+  {
+   "text": "à",
+   "start": 138.86,
+   "end": 139.0
+  },
+  {
+   "text": "partir",
+   "start": 139.0,
+   "end": 139.26
+  },
+  {
+   "text": "de",
+   "start": 139.26,
+   "end": 139.44
+  },
+  {
+   "text": "la",
+   "start": 139.44,
+   "end": 139.62
+  },
+  {
+   "text": "créatinine,",
+   "start": 139.62,
+   "end": 140.16
+  },
+  {
+   "text": "qui",
+   "start": 140.5,
+   "end": 140.72
+  },
+  {
+   "text": "dit",
+   "start": 140.72,
+   "end": 140.86
+  },
+  {
+   "text": "si",
+   "start": 140.86,
+   "end": 141.06
+  },
+  {
+   "text": "les",
+   "start": 141.06,
+   "end": 141.22
+  },
+  {
+   "text": "reins",
+   "start": 141.22,
+   "end": 141.38
+  },
+  {
+   "text": "filtrent",
+   "start": 141.38,
+   "end": 141.86
+  },
+  {
+   "text": "bien.",
+   "start": 141.86,
+   "end": 142.06
+  },
+  {
+   "text": "Et",
+   "start": 142.54,
+   "end": 142.66
+  },
+  {
+   "text": "le",
+   "start": 142.66,
+   "end": 142.82
+  },
+  {
+   "text": "tube",
+   "start": 142.82,
+   "end": 143.0
+  },
+  {
+   "text": "jaune",
+   "start": 143.0,
+   "end": 143.22
+  },
+  {
+   "text": "n'a",
+   "start": 143.22,
+   "end": 143.44
+  },
+  {
+   "text": "pas",
+   "start": 143.44,
+   "end": 143.64
+  },
+  {
+   "text": "fini",
+   "start": 143.64,
+   "end": 143.82
+  },
+  {
+   "text": "de",
+   "start": 143.82,
+   "end": 144.02
+  },
+  {
+   "text": "parler :",
+   "start": 144.02,
+   "end": 144.26
+  },
+  {
+   "text": "la",
+   "start": 144.66,
+   "end": 144.88
   },
   {
    "text": "suite",
-   "start": 133.677,
-   "end": 133.927
+   "start": 144.88,
+   "end": 145.02
   },
   {
    "text": "arrive",
-   "start": 133.927,
-   "end": 134.152
+   "start": 145.02,
+   "end": 145.3
   },
   {
-   "text": "bientôt !",
-   "start": 134.152,
-   "end": 134.652
+   "text": "bientôt !",
+   "start": 145.3,
+   "end": 145.62
   }
  ]
 }

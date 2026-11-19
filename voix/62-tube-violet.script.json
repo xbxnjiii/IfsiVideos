@@ -50,8 +50,18 @@
   "text": "Les lymphocytes, ce sont les défenses sur mesure : ils reconnaissent chaque microbe. Trop nombreux, c'est une lymphocytose : on pense d'abord à une infection virale… et parfois à une maladie du sang. Enfin, les monocytes avalent eux aussi les microbes, et ils règlent la réponse immunitaire."
  },
  {
+  "id": "hba1c",
+  "rate": "+0%",
+  "text": "Mais le tube violet ne sert pas qu'à la {NFS|NFS}. On y mesure aussi l'hémoglobine glyquée, qu'on appelle {HbA1c|HBA1C} : le sucre du sang se colle peu à peu à l'hémoglobine des globules rouges. Elle reflète donc la glycémie moyenne… sur les deux à trois derniers mois. Elle sert à surveiller le diabète sur le long terme, et à ajuster le traitement. L'objectif, en général : moins de sept pour cent dans le diabète de type deux, et entre sept et sept et demi pour cent dans le type un."
+ },
+ {
+  "id": "bnp",
+  "rate": "+0%",
+  "text": "Et enfin, le {BNP|BNP}. C'est une hormone que le cœur libère quand il est trop étiré, quand il force. Elle aide à repérer une insuffisance cardiaque. En général, moins de cent picogrammes par millilitre, c'est normal."
+ },
+ {
   "id": "fin",
   "rate": "+2%",
-  "text": "Alors, on récapitule : les globules rouges et l'hémoglobine pour l'oxygène, les plaquettes pour le caillot, les globules blancs pour se défendre. Et tout ça… dans un seul tube violet ! Le prochain tube de la série arrive bientôt."
+  "text": "Alors, on récapitule : les globules rouges et l'hémoglobine pour l'oxygène, les plaquettes pour le caillot, les globules blancs pour se défendre. Et en plus, l'hémoglobine glyquée pour le diabète, et le {BNP|BNP} pour le cœur. Et tout ça… dans un seul tube violet ! Le prochain tube de la série arrive bientôt."
  }
 ]

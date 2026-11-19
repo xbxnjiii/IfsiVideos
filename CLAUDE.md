@@ -630,7 +630,7 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   `WhiteCell`, `Platelet`, `SugarCube` de la v1, plus utilisés). Storyboard `docs/lpi/storyboard-tubes-prelevement.md`.
 - **Série « les tubes »** (demandée : « une série de vidéos sur tous les tubes, on commence par le violet » ; chaque vidéo
   tient seule, pas de carte de partie ; à la fin, la rangée des 7 tubes avec celui de la vidéo coché, les autres « ? »,
-  « le prochain arrive bientôt »). `Tube-Violet` (n° 62, ≈ 2 min 28, voix Laura après validation (2 722 crédits), sans barre de progression) :
+  « le prochain arrive bientôt »). `Tube-Violet` (n° 62, ≈ 3 min 17, voix Laura après validation (2 722 crédits + 1 038 pour l'ajout HbA1c / BNP), sans barre de progression) :
   **v2 refaite sur le contenu et le tableau de normes fournis par le propriétaire** (demandé : « parle directement du sujet
   au début »). Accroche : le tube violet en grand dès l'image 0 (sans texte), il tremble, les cellules en sortent au mot
   (rouges, blancs, plaquettes), « tout ça, c'est la NFS », la fiche NFS se déroule (11 lignes) et se lit ligne par ligne.
@@ -651,6 +651,14 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   `voice.json`) → vérifier que les parties ne se chevauchent pas après `npm run voice` ; « C'est la NFS. » seul n'était pas
   reconnu comme du français → « Tout ça, c'est la NFS… ». La v1 (EDTA, NFS, groupe sanguin, HbA1c, piège, gestes) reste
   dans l'historique git. Storyboard `docs/lpi/storyboard-tube-violet.md`.
+  **Ajout demandé après coup : HbA1c et BNP** (aussi dosés sur le tube violet, hors NFS) : scènes `hba1c` (hémoglobine
+  glyquée : le sucre se colle à l'hémoglobine `GlycatedCell`, moyenne des 2 – 3 derniers mois, suivi du diabète et
+  ajustement du traitement ; carte **OBJECTIF** (pas « NORMES » : ce sont des cibles du diabétique) type 2 < 7 %, type 1
+  7 – 7,5 %) et `bnp` (hormone libérée par le cœur trop étiré, insuffisance cardiaque ; < 100 pg/mL), récap avec une 4e
+  ligne. Voix : seules les parties `hba1c`, `bnp` et `fin` ont été générées avec Laura (1 038 crédits) puis **recollées**
+  à la place de l'ancienne fin : prise passée par le même `loudnorm` qu'`align_voice.py` (sinon −16 dB : le wav calé est
+  déjà normalisé), blancs coupés, collée après `lymphocytes`, puis `laura.sh` (alignement, blancs à 0,8 s, réalignement).
+  Laura lit bien « HBA1C » (sigle collé en majuscules) et « BNP ».
   `Tube-Jaune` (n° 63, ≈ 2 min 52, voix Laura après validation (3 048 crédits ; Laura enchaînait « trop acide. Le phosphore » sans blanc : le blanc ajouté entre les parties est tombé au milieu de la phrase, déplacé à la main après « acide » puis réalignement), sans barre de progression) : l'ionogramme, sur le contenu et le
   tableau de normes fournis par le propriétaire. Accroche directe : le tube jaune en grand dès l'image 0, les 7 ions
   tournent autour, « cœur · muscles · nerfs », « un seul chiffre de travers… peut arrêter un cœur » (`EcgMonitor` qui devient
@@ -670,7 +678,7 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
   chlorure » (symbole à l'écran seulement) ; « un myélome » entendu « un miel » → « certains cancers qui abîment les os,
   comme le myélome ». Attention : `at(scène, 'dans')` prend le **premier** « dans » de la partie (« dans les cellules ») →
   `at(scène, 'dans', 2)`. Storyboard `docs/lpi/storyboard-tube-jaune.md`.
-  `Tube-Jaune-Renal` (n° 64, ≈ 2 min 18, voix gratuite d'abord, sans barre de progression) : demandé « pareil, toujours un
+  `Tube-Jaune-Renal` (n° 64, ≈ 2 min 27, voix Laura après validation (2 598 crédits), sans barre de progression) : demandé « pareil, toujours un
   tube jaune car il y a beaucoup d'examens dans ce tube » → le **bilan rénal**, sur le contenu et le tableau de normes
   fournis (urée 2,5 – 7,5 mmol/L ; créatinine H 88 – 150 / F 53 – 115 µmol/L ; DFG en 5 stades : ≥ 90 avec signes
   d'atteinte, 60 – 89, 3a 45 – 59 / 3b 30 – 44, 15 – 29, < 15 ou dialyse). Accroche directe : le tube jaune + le rein qui
