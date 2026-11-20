@@ -18,7 +18,7 @@ ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
 `docs/lpi/directives-instagram.md` (propriétaire + agent d'analyse des statistiques) : **cible = étudiants infirmiers**, la
 1re phrase nomme le sujet + un chiffre ou un enjeu (≤ 3 s), accroche ≤ 25 mots, **texte et mouvement dès l'image 0** (les
 accroches « scène sans texte » ne se font plus), info clé avant 15 s, compteur visible (0/N, série n/N), **45 – 60 s**
-(au-delà : série), un seul appel à l'action (« Enregistre-la pour tes partiels »), chiffres sourcés (source notée dans le
+(au-delà : série), **pas** d'appel à l'action « Enregistre-la pour tes partiels » (retiré à la demande du propriétaire, vidéo n° 65), chiffres sourcés (source notée dans le
 script), « en France » / « le 15 (ou le numéro d'urgence de ton pays) ». Cancers et sujets grand public en pause.
 
 ## Règles de marque (non négociables)
@@ -700,9 +700,9 @@ script), « en France » / « le 15 (ou le numéro d'urgence de ton pays) ». Ca
   restent `pile`, rein qui pâlit `tired`), `StageLadder` + `DFG_STAGES`, `InverseGauges`, `TrendCurve` (aiguë /
   chronique), `MuscleArm`, `ProteinChain`, `Molecule`, `DialysisMachine`. Storyboard
   `docs/lpi/storyboard-tube-jaune-renal.md`.
-  `Tube-Purge` (n° 65, ≈ 53 s de voix, voix gratuite d'abord, sans barre de progression) : **1re vidéo selon les
+  `Tube-Purge` (n° 65, ≈ 55 s, voix gratuite d'abord, sans barre de progression) : **1re vidéo selon les
   directives Instagram** (titre + enjeu dès l'image 0, accroche de 24 mots, info clé avant 15 s, compteur 0/3, un seul
-  appel à l'action « Enregistre-la pour tes partiels ! », sources dans l'en-tête de `Scenes.tsx` et le storyboard : CLSI
+  appel à l'action **retiré à la demande** (« enlève le enregistre-la pour tes partiels » : ne plus le mettre), sources dans l'en-tête de `Scenes.tsx` et le storyboard : CLSI
   GP41 / H21-A5). Pourquoi : avec une aiguille à ailettes, la tubulure pleine d'air fait mal remplir le 1er tube ; le tube
   bleu (coagulation) doit arriver au trait. Quand : aiguille à ailettes + tube bleu en 1er + pas d'hémocultures (sinon les
   flacons purgent ; aiguille simple : pas de purge). Fin : pas besoin de le remplir, jamais analysé, jeté en DASRI. On ne

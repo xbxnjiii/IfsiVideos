@@ -2,14 +2,14 @@
 // l'image 0 (« Le tube de purge », le tube blanc, « bilan faux ? »), ≈ 53 s, info clé avant 15 s. Pourquoi : avec une
 // aiguille à ailettes, la tubulure est pleine d'air, le 1er tube aspire cet air et le tube bleu (coagulation) n'arrive
 // pas au trait → résultat faux. La purge aspire l'air, puis le bleu se remplit jusqu'au trait. Quand : 3 conditions
-// (compteur 0/3). Fin : pas besoin de le remplir, jamais analysé, jeté en DASRI ; « Enregistre-la pour tes partiels ».
+// (compteur 0/3). Fin : pas besoin de le remplir, jamais analysé, jeté en DASRI (pas d'appel à l'action : retiré à la demande).
 // Sources : CLSI GP41 (7e éd., 2017) et H21-A5 (2008) — tube de purge avec unité à ailettes quand le citrate est le
 // 1er tube ; ordre de remplissage (hémocultures en 1er) : recommandations SFBC / CLSI GP41.
 import React from 'react';
 import {AbsoluteFill, interpolate, useCurrentFrame} from 'remotion';
-import {Big, ease, FlatBg, Fly, Live, Note, PointTag as PTag, popAt, RowCard} from '../../brand/bold';
+import {Big, ease, FlatBg, Live, Note, PointTag as PTag, popAt, RowCard} from '../../brand/bold';
 import {Stamp} from '../../brand/kit';
-import {Camera, Confetti} from '../../brand/motion3';
+import {Camera} from '../../brand/motion3';
 import {DasriBag} from '../../brand/sampling';
 import {Sfx} from '../../brand/Sfx';
 import {alpha, FONT, LPI, SHADOW} from '../../brand/theme';
@@ -265,14 +265,13 @@ export const Fin: React.FC = () => {
 	const ANAL = at('fin', 'analyse');
 	const JETTE = at('fin', 'jette');
 	const DECH = at('fin', 'dechets');
-	const ENR = at('fin', 'enregistrela');
 	const drop = interpolate(frame, [JETTE - 2, JETTE + 16], [0, 1], ease);
-	const out = ENR - 6;
+	const out = 1e9;
 	return (
 		<AbsoluteFill>
 			<Bg tone={LPI.sky} />
 			<SeriesPill />
-			<Camera punches={[REMP + 1, ANAL + 1, JETTE + 1, ENR + 1]} strength={0.03}>
+			<Camera punches={[REMP + 1, ANAL + 1, JETTE + 1]} strength={0.03}>
 				<Big from={-2} to={out} text={'Et *après* ?'} size={120} y={190} />
 				<Live
 					render={(f) => {
@@ -296,21 +295,10 @@ export const Fin: React.FC = () => {
 				<Note at={DECH} to={out} y={1400} size={34}>
 					déchets à risque infectieux (DASRI)
 				</Note>
-				{/* appel à l'action */}
-				<Big from={ENR - 2} text={'Enregistre-la\npour tes *partiels* !'} size={100} y={560} />
-				<Fly at={ENR} x={540} y={1050} from="bottom" to="bottom">
-					<div style={{display: 'flex', gap: 30, alignItems: 'flex-end'}}>
-						<Tube size={130} cap={WHITE} level={0.2} />
-						<div style={{fontFamily: FONT.title, fontWeight: 900, fontSize: 90, color: N, marginBottom: 120}}>→</div>
-						<Tube size={130} cap={BLUE} level={0.82} mark={1} />
-					</div>
-				</Fly>
 			</Camera>
-			<Confetti at={ENR + 4} />
 			<Sfx name="pop" at={REMP} volume={0.15} />
 			<Sfx name="pop" at={ANAL} volume={0.15} />
 			<Sfx name="whoosh" at={JETTE - 2} volume={0.2} />
-			<Sfx name="ding" at={ENR} volume={0.25} />
 		</AbsoluteFill>
 	);
 };

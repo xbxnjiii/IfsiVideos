@@ -1,6 +1,6 @@
 {
  "voice": "voix.wav (tts_voix.py)",
- "duration": 53.104,
+ "duration": 51.204,
  "sections": [
   {
    "id": "intro",
@@ -25,7 +25,7 @@
   {
    "id": "fin",
    "start": 46.122,
-   "end": 52.747
+   "end": 50.86
   }
  ],
  "words": [
@@ -752,117 +752,97 @@
   {
    "text": "Pas",
    "start": 46.122,
-   "end": 46.297
+   "end": 46.285
   },
   {
    "text": "besoin",
-   "start": 46.297,
-   "end": 46.572
+   "start": 46.285,
+   "end": 46.559
   },
   {
    "text": "de",
-   "start": 46.572,
-   "end": 46.647
+   "start": 46.559,
+   "end": 46.635
   },
   {
    "text": "le",
-   "start": 46.647,
-   "end": 46.71
+   "start": 46.635,
+   "end": 46.697
   },
   {
    "text": "remplir,",
-   "start": 46.71,
+   "start": 46.697,
    "end": 47.235
   },
   {
    "text": "et",
-   "start": 47.572,
-   "end": 47.597
+   "start": 47.585,
+   "end": 47.61
   },
   {
    "text": "il",
-   "start": 47.597,
-   "end": 47.66
+   "start": 47.61,
+   "end": 47.672
   },
   {
    "text": "n'est",
-   "start": 47.66,
-   "end": 47.747
+   "start": 47.672,
+   "end": 47.76
   },
   {
    "text": "jamais",
-   "start": 47.747,
-   "end": 48.01
+   "start": 47.76,
+   "end": 48.035
   },
   {
    "text": "analysé :",
-   "start": 48.01,
-   "end": 48.585
+   "start": 48.035,
+   "end": 48.61
   },
   {
    "text": "on",
-   "start": 48.96,
-   "end": 48.997
+   "start": 48.997,
+   "end": 49.022
   },
   {
    "text": "le",
-   "start": 48.997,
-   "end": 49.11
+   "start": 49.022,
+   "end": 49.135
   },
   {
    "text": "jette",
-   "start": 49.11,
-   "end": 49.422
+   "start": 49.135,
+   "end": 49.434
   },
   {
    "text": "dans",
-   "start": 49.422,
-   "end": 49.51
+   "start": 49.434,
+   "end": 49.535
   },
   {
    "text": "les",
-   "start": 49.51,
-   "end": 49.597
+   "start": 49.535,
+   "end": 49.61
   },
   {
    "text": "déchets",
-   "start": 49.597,
-   "end": 49.91
+   "start": 49.61,
+   "end": 49.922
   },
   {
    "text": "à",
-   "start": 49.91,
-   "end": 49.985
+   "start": 49.922,
+   "end": 50.01
   },
   {
    "text": "risque",
-   "start": 49.985,
-   "end": 50.222
+   "start": 50.01,
+   "end": 50.247
   },
   {
    "text": "infectieux.",
-   "start": 50.222,
-   "end": 50.822
-  },
-  {
-   "text": "Enregistre-la",
-   "start": 51.16,
-   "end": 51.847
-  },
-  {
-   "text": "pour",
-   "start": 51.847,
-   "end": 52.01
-  },
-  {
-   "text": "tes",
-   "start": 52.01,
-   "end": 52.097
-  },
-  {
-   "text": "partiels !",
-   "start": 52.097,
-   "end": 52.747
+   "start": 50.247,
+   "end": 50.86
   }
  ]
 }

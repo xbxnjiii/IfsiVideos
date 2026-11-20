@@ -14,8 +14,7 @@ export const MASCOT: Beat[] = [
 	{at: start('purge') + 8, via: 'hop', dur: 18, key: 'gestes/astuce', ...L, ...LOW},
 	{at: abs('purge', 'trait'), via: 'cut', key: 'gestes/ok', ...L, ...LOW},
 	{at: start('quand') + 8, via: 'hop', dur: 18, key: 'gestes/important', ...R, ...LOW},
-	{at: start('fin') + 8, via: 'hop', dur: 18, key: 'gestes/presente', ...L, ...LOW},
-	{at: abs('fin', 'enregistrela'), via: 'cut', key: 'gestes/ok', ...L, ...LOW},
+	{at: start('fin') + 8, via: 'hop', dur: 18, key: 'gestes/ok', ...L, ...LOW},
 	{at: start('end') - 6, via: 'pop', key: 'poses/course', x: 640, y: 1890, size: 480},
 	{at: start('end') + 10, via: 'run', dur: 16, key: 'poses/course', x: 1460, y: 1890, size: 480},
 ];
