@@ -700,7 +700,7 @@ script), « en France » / « le 15 (ou le numéro d'urgence de ton pays) ». Ca
   restent `pile`, rein qui pâlit `tired`), `StageLadder` + `DFG_STAGES`, `InverseGauges`, `TrendCurve` (aiguë /
   chronique), `MuscleArm`, `ProteinChain`, `Molecule`, `DialysisMachine`. Storyboard
   `docs/lpi/storyboard-tube-jaune-renal.md`.
-  `Tube-Purge` (n° 65, ≈ 55 s, voix gratuite d'abord, sans barre de progression) : **1re vidéo selon les
+  `Tube-Purge` (n° 65, ≈ 55 s, voix Laura après validation (973 crédits ; « aiguille » de la partie `pourquoi` entendu « éduite » par Whisper, les deux autres « aiguille » sont nets), sans barre de progression) : **1re vidéo selon les
   directives Instagram** (titre + enjeu dès l'image 0, accroche de 24 mots, info clé avant 15 s, compteur 0/3, un seul
   appel à l'action **retiré à la demande** (« enlève le enregistre-la pour tes partiels » : ne plus le mettre), sources dans l'en-tête de `Scenes.tsx` et le storyboard : CLSI
   GP41 / H21-A5). Pourquoi : avec une aiguille à ailettes, la tubulure pleine d'air fait mal remplir le 1er tube ; le tube

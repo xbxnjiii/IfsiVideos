@@ -75,7 +75,7 @@ pas de logiciel de montage, pas de banque d'images.
 | 62 | Série les tubes : le tube violet, la NFS ligne par ligne avec les normes, + HbA1c et BNP (voix Laura) | `Tube-Violet` | [voix/62-tube-violet.script.json](voix/62-tube-violet.script.json) | [storyboard](docs/lpi/storyboard-tube-violet.md) |
 | 63 | Série les tubes : le tube jaune, l'ionogramme ion par ion avec les normes (voix Laura) | `Tube-Jaune` | [voix/63-tube-jaune.script.json](voix/63-tube-jaune.script.json) | [storyboard](docs/lpi/storyboard-tube-jaune.md) |
 | 64 | Série les tubes : le tube jaune (2), le bilan rénal : urée, créatinine, DFG et ses stades (voix Laura) | `Tube-Jaune-Renal` | [voix/64-tube-jaune-renal.script.json](voix/64-tube-jaune-renal.script.json) | [storyboard](docs/lpi/storyboard-tube-jaune-renal.md) |
-| 65 | Série les tubes : le tube de purge (bouchon blanc), pourquoi et quand (voix gratuite, directives Instagram) | `Tube-Purge` | [voix/65-tube-purge.script.json](voix/65-tube-purge.script.json) | [storyboard](docs/lpi/storyboard-tube-purge.md) |
+| 65 | Série les tubes : le tube de purge (bouchon blanc), pourquoi et quand (voix Laura, directives Instagram) | `Tube-Purge` | [voix/65-tube-purge.script.json](voix/65-tube-purge.script.json) | [storyboard](docs/lpi/storyboard-tube-purge.md) |
 
 ## Utilisation
 
