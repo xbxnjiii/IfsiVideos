@@ -78,7 +78,8 @@
     "render:tubes-prelevement": "remotion render Tubes-Prelevement out/61-tubes-prelevement.mp4",
     "render:tube-violet": "remotion render Tube-Violet out/62-tube-violet.mp4",
     "render:tube-jaune": "remotion render Tube-Jaune out/63-tube-jaune.mp4",
-    "render:tube-jaune-renal": "remotion render Tube-Jaune-Renal out/64-tube-jaune-renal.mp4"
+    "render:tube-jaune-renal": "remotion render Tube-Jaune-Renal out/64-tube-jaune-renal.mp4",
+    "render:tube-purge": "remotion render Tube-Purge out/65-tube-purge.mp4"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.532",

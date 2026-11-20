@@ -926,6 +926,8 @@ Briques « l'ordre des tubes » (vidéo n° 61). Les bouchons sont aux VRAIES co
 - `LabSheet` — Fiche de résultat du labo : une ligne « K⁺ 7,0 mmol/L » qui clignote en rose ; `fake` tampon FAUX barré.
 - `Megakaryocyte` — Mégacaryocyte (très grosse cellule de la moelle) : noyau en lobes ; `shed` 0 → 1 : des plaquettes s'en détachent à droite.
 - `NormCard` — Carte des normes adultes (repère discret mais visible) : lignes [qui, valeur].
+- `LINE_PTS` — Points de la tubulure (repère 1100 × 520), de l'aiguille (début) au corps de pompe (fin).
+- `WingedLine` — Prélèvement avec une aiguille à ailettes (repère 1100 × 520) : la peau et la veine à gauche, les ailettes, la longue tubulure et, à droite, le corps de pompe avec un tube couché.
 
 ## `ui.tsx`
 

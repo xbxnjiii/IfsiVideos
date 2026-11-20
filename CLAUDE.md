@@ -700,6 +700,16 @@ script), « en France » / « le 15 (ou le numéro d'urgence de ton pays) ». Ca
   restent `pile`, rein qui pâlit `tired`), `StageLadder` + `DFG_STAGES`, `InverseGauges`, `TrendCurve` (aiguë /
   chronique), `MuscleArm`, `ProteinChain`, `Molecule`, `DialysisMachine`. Storyboard
   `docs/lpi/storyboard-tube-jaune-renal.md`.
+  `Tube-Purge` (n° 65, ≈ 53 s de voix, voix gratuite d'abord, sans barre de progression) : **1re vidéo selon les
+  directives Instagram** (titre + enjeu dès l'image 0, accroche de 24 mots, info clé avant 15 s, compteur 0/3, un seul
+  appel à l'action « Enregistre-la pour tes partiels ! », sources dans l'en-tête de `Scenes.tsx` et le storyboard : CLSI
+  GP41 / H21-A5). Pourquoi : avec une aiguille à ailettes, la tubulure pleine d'air fait mal remplir le 1er tube ; le tube
+  bleu (coagulation) doit arriver au trait. Quand : aiguille à ailettes + tube bleu en 1er + pas d'hémocultures (sinon les
+  flacons purgent ; aiguille simple : pas de purge). Fin : pas besoin de le remplir, jamais analysé, jeté en DASRI. On ne
+  dit pas « 9 sang : 1 citrate » (retiré à la demande dans la n° 61) : « rempli jusqu'au trait » suffit. Pastille de série
+  `SeriesPill` (« LES TUBES · LA PURGE ») dès l'image 0. Brique `WingedLine` + `LINE_PTS` dans `tubes.tsx` (peau + veine,
+  ailettes, tubulure où le sang avance, bulles d'air, corps de pompe et tube couché avec trait, croix). Storyboard
+  `docs/lpi/storyboard-tube-purge.md`.
 
 ## Voix ElevenLabs « Laura » (choisie par le propriétaire pour les nouvelles vidéos)
 

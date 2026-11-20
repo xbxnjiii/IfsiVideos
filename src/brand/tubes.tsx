@@ -425,3 +425,96 @@ export const NormCard: React.FC<{rows: string[][]; width?: number; note?: string
 		</div>
 	</div>
 );
+
+/* ───────────── aiguille à ailettes + tubulure (vidéo n° 65, le tube de purge) ───────────── */
+
+const cubic = (p: number[][], t: number) => {
+	const u = 1 - t;
+	return [0, 1].map((k) => u * u * u * p[0][k] + 3 * u * u * t * p[1][k] + 3 * u * t * t * p[2][k] + t * t * t * p[3][k]);
+};
+/** Points de la tubulure (repère 1100 × 520), de l'aiguille (début) au corps de pompe (fin). */
+export const LINE_PTS: number[][] = (() => {
+	const a = [
+		[250, 262],
+		[400, 262],
+		[390, 450],
+		[560, 450],
+	];
+	const b = [
+		[560, 450],
+		[730, 450],
+		[700, 262],
+		[830, 262],
+	];
+	const out: number[][] = [];
+	for (let i = 0; i <= 60; i++) out.push(cubic(a, i / 60));
+	for (let i = 1; i <= 60; i++) out.push(cubic(b, i / 60));
+	return out;
+})();
+
+/**
+ * Prélèvement avec une aiguille à ailettes (repère 1100 × 520) : la peau et la veine à gauche, les ailettes, la longue
+ * tubulure et, à droite, le corps de pompe avec un tube couché. `blood` 0 → 1 : le sang avance dans la tubulure ;
+ * `bubbles` : bulles d'air poussées vers le tube ; `tubeCap` / `tubeLevel` / `tubeMark` (trait de remplissage) /
+ * `tubeIn` (le tube glisse dans le corps de pompe) ; `tubeBad` : croix rose sur le tube mal rempli.
+ */
+export const WingedLine: React.FC<{width?: number; blood?: number; bubbles?: number; tubeCap?: string; tubeLevel?: number; tubeMark?: number; tubeIn?: number; tubeBad?: number}> = ({
+	width = 1000,
+	blood = 0,
+	bubbles = 0,
+	tubeCap = CAP.purge,
+	tubeLevel = 0,
+	tubeMark = 0,
+	tubeIn = 1,
+	tubeBad = 0,
+}) => {
+	const frame = useCurrentFrame();
+	const n = LINE_PTS.length;
+	const k = Math.max(0, Math.min(n, Math.round(blood * n)));
+	const pts = (arr: number[][]) => arr.map((p) => p.join(',')).join(' ');
+	const tx = 880 + (1 - tubeIn) * 160;
+	const len = 200;
+	return (
+		<svg width={width} height={(width / 1100) * 520} viewBox="0 0 1100 520" style={{overflow: 'visible'}}>
+			{/* peau + veine */}
+			<rect x={0} y={150} width={250} height={230} rx={60} fill="#F1C9A5" stroke={N} strokeWidth={6} />
+			<path d="M0 262 H250" stroke="#7E97C6" strokeWidth={30} strokeLinecap="round" />
+			<path d="M0 262 H250" stroke={BLOOD} strokeWidth={14} strokeLinecap="round" opacity={0.75} />
+			{/* tubulure : air (clair) puis sang qui avance */}
+			<polyline points={pts(LINE_PTS)} fill="none" stroke={N} strokeWidth={26} strokeLinecap="round" strokeLinejoin="round" />
+			<polyline points={pts(LINE_PTS)} fill="none" stroke={alpha(LPI.paper, 0.95)} strokeWidth={14} strokeLinecap="round" strokeLinejoin="round" />
+			{k > 1 ? <polyline points={pts(LINE_PTS.slice(0, k))} fill="none" stroke={BLOOD} strokeWidth={14} strokeLinecap="round" strokeLinejoin="round" /> : null}
+			{bubbles > 0
+				? [0, 1, 2, 3, 4].map((i) => {
+						const span = n - k;
+						if (span < 4) return null;
+						const idx = Math.min(n - 1, k + Math.floor((((frame * 0.9 + i * span) / 5) % span)));
+						const [x, y] = LINE_PTS[idx];
+						return <circle key={i} cx={x} cy={y} r={6} fill={LPI.sky} stroke={N} strokeWidth={2.5} opacity={bubbles} />;
+					})
+				: null}
+			{/* aiguille + ailettes */}
+			<path d="M120 262 H250" stroke="#9AA4B5" strokeWidth={6} strokeLinecap="round" />
+			<g transform="translate(250 262)">
+				<path d="M0 -10 L-40 -70 Q-10 -84 26 -66 L22 -10 Z" fill={LPI.blue} stroke={N} strokeWidth={5} strokeLinejoin="round" />
+				<path d="M0 10 L-40 70 Q-10 84 26 66 L22 10 Z" fill={LPI.blue} stroke={N} strokeWidth={5} strokeLinejoin="round" />
+				<rect x={-10} y={-14} width={42} height={28} rx={10} fill={LPI.sky} stroke={N} strokeWidth={5} />
+			</g>
+			{/* corps de pompe */}
+			<rect x={830} y={222} width={130} height={80} rx={16} fill={alpha(LPI.sky, 0.6)} stroke={N} strokeWidth={6} />
+			{/* le tube couché, bouchon à gauche dans le corps de pompe */}
+			<g transform={`translate(${tx} 262)`} opacity={Math.min(1, tubeIn * 2)}>
+				<rect x={0} y={-30} width={50} height={60} rx={10} fill={tubeCap} stroke={N} strokeWidth={5} />
+				<path d={`M50 -24 H${50 + len - 24} Q${50 + len} -24 ${50 + len} 0 Q${50 + len} 24 ${50 + len - 24} 24 H50 Z`} fill={alpha('#FFFFFF', 0.85)} stroke={N} strokeWidth={5} />
+				{tubeLevel > 0 ? <path d={`M${50 + len - len * tubeLevel} -18 H${50 + len - 24} Q${50 + len - 6} -18 ${50 + len - 6} 0 Q${50 + len - 6} 18 ${50 + len - 24} 18 H${50 + len - len * tubeLevel} Z`} fill={BLOOD} /> : null}
+				{tubeMark > 0 ? <path d={`M${50 + len * 0.18} -32 V32`} stroke={N} strokeWidth={5} strokeDasharray="8 6" opacity={tubeMark} /> : null}
+				{tubeBad > 0 ? (
+					<g transform={`translate(${50 + len / 2} -70) scale(${tubeBad})`}>
+						<circle r={30} fill={LPI.pink} stroke={N} strokeWidth={5} />
+						<path d="M-12 -12 L12 12 M12 -12 L-12 12" stroke={N} strokeWidth={7} strokeLinecap="round" />
+					</g>
+				) : null}
+			</g>
+		</svg>
+	);
+};

@@ -1,0 +1,27 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Le tube de purge, au bouchon blanc : on le remplit… puis on le jette. Pourtant, sans lui, ton bilan de coagulation peut être faux !"
+ },
+ {
+  "id": "pourquoi",
+  "rate": "+0%",
+  "text": "Avec une aiguille à ailettes, il y a un long tuyau entre la veine et le tube. Au départ, ce tuyau est plein d'air. Le premier tube aspire cet air… et se remplit mal. Or, le tube bleu de la coagulation doit être rempli jusqu'au trait. Sinon, le résultat est faux."
+ },
+ {
+  "id": "purge",
+  "rate": "+0%",
+  "text": "La solution : le tube de purge. Il aspire l'air du tuyau, et le sang arrive jusqu'au bout. Ensuite, le tube bleu se remplit bien… jusqu'au trait."
+ },
+ {
+  "id": "quand",
+  "rate": "+0%",
+  "text": "Il te faut une purge si trois conditions sont réunies : une aiguille à ailettes, le tube bleu en premier, et pas d'hémocultures. S'il y a des hémocultures, ce sont les flacons qui purgent le tuyau. Et avec une aiguille simple, pas de purge."
+ },
+ {
+  "id": "fin",
+  "rate": "+0%",
+  "text": "Pas besoin de le remplir, et il n'est jamais analysé : on le jette dans les déchets à risque infectieux. Enregistre-la pour tes partiels !"
+ }
+]
