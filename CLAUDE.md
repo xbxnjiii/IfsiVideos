@@ -13,6 +13,14 @@ Charte complète (couleurs, tempo, physique, mascotte, transitions) : `docs/lpi/
 accroches, voix, catalogue des briques `references/briques.md`, recette et contrôle). Le charger avant toute vidéo ;
 ce fichier garde le journal des choix du propriétaire vidéo par vidéo.
 
+## Directives Instagram (20 novembre 2026, priment sur ce qui suit)
+
+`docs/lpi/directives-instagram.md` (propriétaire + agent d'analyse des statistiques) : **cible = étudiants infirmiers**, la
+1re phrase nomme le sujet + un chiffre ou un enjeu (≤ 3 s), accroche ≤ 25 mots, **texte et mouvement dès l'image 0** (les
+accroches « scène sans texte » ne se font plus), info clé avant 15 s, compteur visible (0/N, série n/N), **45 – 60 s**
+(au-delà : série), un seul appel à l'action (« Enregistre-la pour tes partiels »), chiffres sourcés (source notée dans le
+script), « en France » / « le 15 (ou le numéro d'urgence de ton pays) ». Cancers et sujets grand public en pause.
+
 ## Règles de marque (non négociables)
 
 - Couleurs uniquement : `#4E7AC7` bleu, `#C5D8F4` bleu clair, `#F8F9FC` fond blanc cassé, `#EAA7C1` rose,
