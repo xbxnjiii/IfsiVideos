@@ -134,6 +134,8 @@ import * as ordretubes from '../../src/videos/ordre-tubes/mascot';
 import * as ordretubesTL from '../../src/videos/ordre-tubes/timeline';
 import * as nfsglobulesrouges from '../../src/videos/nfs-globules-rouges/mascot';
 import * as nfsglobulesrougesTL from '../../src/videos/nfs-globules-rouges/timeline';
+import * as nfsglobulesblancs from '../../src/videos/nfs-globules-blancs/mascot';
+import * as nfsglobulesblancsTL from '../../src/videos/nfs-globules-blancs/timeline';
 
 const VIDEOS: Record<string, [typeof constantes.MASCOT, typeof constantesTL.TL]> = {
 	constantes: [constantes.MASCOT, constantesTL.TL],
@@ -202,6 +204,7 @@ const VIDEOS: Record<string, [typeof constantes.MASCOT, typeof constantesTL.TL]>
 	'tube-purge': [tubepurge.MASCOT, tubepurgeTL.TL],
 	'ordre-tubes': [ordretubes.MASCOT, ordretubesTL.TL],
 	'nfs-globules-rouges': [nfsglobulesrouges.MASCOT, nfsglobulesrougesTL.TL],
+	'nfs-globules-blancs': [nfsglobulesblancs.MASCOT, nfsglobulesblancsTL.TL],
 };
 const name = process.argv[2] ?? 'constantes';
 const [MASCOT, TL] = VIDEOS[name];

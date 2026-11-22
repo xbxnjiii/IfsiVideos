@@ -1,0 +1,32 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "La {NFS|N F S}, partie deux : sept lignes pour les globules blancs et les plaquettes. Une seule de travers peut cacher une infection… ou une hémorragie."
+ },
+ {
+  "id": "plaquettes",
+  "rate": "+0%",
+  "text": "Un : les plaquettes. Elles forment le caillot qui arrête un saignement. Trop peu, on parle de thrombopénie : le risque d'hémorragie augmente."
+ },
+ {
+  "id": "leucocytes",
+  "rate": "+0%",
+  "text": "Deux : les leucocytes, les globules blancs. Ils défendent le corps contre les microbes. Trop nombreux, on pense à une infection. Trop peu, c'est une leucopénie : le patient se défend mal."
+ },
+ {
+  "id": "formule",
+  "rate": "+0%",
+  "text": "Ensuite, la formule. Trois : les neutrophiles avalent les microbes. Quatre : les éosinophiles montent avec les allergies et les parasites. Cinq : les basophiles participent aux allergies."
+ },
+ {
+  "id": "lymphocytes",
+  "rate": "+0%",
+  "text": "Six : les lymphocytes, les défenses sur mesure. Trop nombreux, on pense d'abord à un virus. Et sept : les monocytes, qui avalent eux aussi les microbes."
+ },
+ {
+  "id": "fin",
+  "rate": "+2%",
+  "text": "Plaquettes, globules blancs, cinq familles : c'est fait ! Prochaine vidéo : l'hémoglobine glyquée."
+ }
+]

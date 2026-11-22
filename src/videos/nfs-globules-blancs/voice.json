@@ -1,0 +1,718 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 56.822,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.096,
+   "end": 7.274
+  },
+  {
+   "id": "plaquettes",
+   "start": 8.208,
+   "end": 16.008
+  },
+  {
+   "id": "leucocytes",
+   "start": 16.979,
+   "end": 27.529
+  },
+  {
+   "id": "formule",
+   "start": 28.484,
+   "end": 39.621
+  },
+  {
+   "id": "lymphocytes",
+   "start": 40.59,
+   "end": 49.516
+  },
+  {
+   "id": "fin",
+   "start": 50.512,
+   "end": 56.492
+  }
+ ],
+ "words": [
+  {
+   "text": "La",
+   "start": 0.096,
+   "end": 0.24
+  },
+  {
+   "text": "NFS,",
+   "start": 0.24,
+   "end": 0.974
+  },
+  {
+   "text": "partie",
+   "start": 1.166,
+   "end": 1.478
+  },
+  {
+   "text": "deux :",
+   "start": 1.478,
+   "end": 1.743
+  },
+  {
+   "text": "sept",
+   "start": 2.031,
+   "end": 2.26
+  },
+  {
+   "text": "lignes",
+   "start": 2.26,
+   "end": 2.488
+  },
+  {
+   "text": "pour",
+   "start": 2.488,
+   "end": 2.608
+  },
+  {
+   "text": "les",
+   "start": 2.608,
+   "end": 2.668
+  },
+  {
+   "text": "globules",
+   "start": 2.668,
+   "end": 2.957
+  },
+  {
+   "text": "blancs",
+   "start": 2.957,
+   "end": 3.185
+  },
+  {
+   "text": "et",
+   "start": 3.185,
+   "end": 3.269
+  },
+  {
+   "text": "les",
+   "start": 3.269,
+   "end": 3.341
+  },
+  {
+   "text": "plaquettes.",
+   "start": 3.341,
+   "end": 3.942
+  },
+  {
+   "text": "Une",
+   "start": 4.269,
+   "end": 4.473
+  },
+  {
+   "text": "seule",
+   "start": 4.473,
+   "end": 4.689
+  },
+  {
+   "text": "de",
+   "start": 4.689,
+   "end": 4.762
+  },
+  {
+   "text": "travers",
+   "start": 4.762,
+   "end": 5.086
+  },
+  {
+   "text": "peut",
+   "start": 5.086,
+   "end": 5.182
+  },
+  {
+   "text": "cacher",
+   "start": 5.194,
+   "end": 5.459
+  },
+  {
+   "text": "une",
+   "start": 5.459,
+   "end": 5.543
+  },
+  {
+   "text": "infection…",
+   "start": 5.543,
+   "end": 6.108
+  },
+  {
+   "text": "ou",
+   "start": 6.492,
+   "end": 6.588
+  },
+  {
+   "text": "une",
+   "start": 6.588,
+   "end": 6.685
+  },
+  {
+   "text": "hémorragie.",
+   "start": 6.685,
+   "end": 7.274
+  },
+  {
+   "text": "Un :",
+   "start": 8.208,
+   "end": 8.545
+  },
+  {
+   "text": "les",
+   "start": 8.883,
+   "end": 8.97
+  },
+  {
+   "text": "plaquettes.",
+   "start": 8.97,
+   "end": 9.633
+  },
+  {
+   "text": "Elles",
+   "start": 9.97,
+   "end": 10.195
+  },
+  {
+   "text": "forment",
+   "start": 10.195,
+   "end": 10.445
+  },
+  {
+   "text": "le",
+   "start": 10.445,
+   "end": 10.533
+  },
+  {
+   "text": "caillot",
+   "start": 10.546,
+   "end": 10.933
+  },
+  {
+   "text": "qui",
+   "start": 10.933,
+   "end": 11.083
+  },
+  {
+   "text": "arrête",
+   "start": 11.083,
+   "end": 11.358
+  },
+  {
+   "text": "un",
+   "start": 11.358,
+   "end": 11.421
+  },
+  {
+   "text": "saignement.",
+   "start": 11.421,
+   "end": 11.921
+  },
+  {
+   "text": "Trop",
+   "start": 12.27,
+   "end": 12.458
+  },
+  {
+   "text": "peu,",
+   "start": 12.458,
+   "end": 12.77
+  },
+  {
+   "text": "on",
+   "start": 13.033,
+   "end": 13.083
+  },
+  {
+   "text": "parle",
+   "start": 13.083,
+   "end": 13.345
+  },
+  {
+   "text": "de",
+   "start": 13.345,
+   "end": 13.433
+  },
+  {
+   "text": "thrombopénie :",
+   "start": 13.433,
+   "end": 14.171
+  },
+  {
+   "text": "le",
+   "start": 14.533,
+   "end": 14.608
+  },
+  {
+   "text": "risque",
+   "start": 14.608,
+   "end": 14.908
+  },
+  {
+   "text": "d'hémorragie",
+   "start": 14.908,
+   "end": 15.433
+  },
+  {
+   "text": "augmente.",
+   "start": 15.433,
+   "end": 16.008
+  },
+  {
+   "text": "Deux :",
+   "start": 16.979,
+   "end": 17.354
+  },
+  {
+   "text": "les",
+   "start": 17.741,
+   "end": 17.816
+  },
+  {
+   "text": "leucocytes,",
+   "start": 17.816,
+   "end": 18.479
+  },
+  {
+   "text": "les",
+   "start": 18.678,
+   "end": 18.741
+  },
+  {
+   "text": "globules",
+   "start": 18.741,
+   "end": 19.079
+  },
+  {
+   "text": "blancs.",
+   "start": 19.079,
+   "end": 19.391
+  },
+  {
+   "text": "Ils",
+   "start": 19.729,
+   "end": 19.954
+  },
+  {
+   "text": "défendent",
+   "start": 19.954,
+   "end": 20.266
+  },
+  {
+   "text": "le",
+   "start": 20.266,
+   "end": 20.378
+  },
+  {
+   "text": "corps",
+   "start": 20.378,
+   "end": 20.654
+  },
+  {
+   "text": "contre",
+   "start": 20.654,
+   "end": 20.891
+  },
+  {
+   "text": "les",
+   "start": 20.891,
+   "end": 20.966
+  },
+  {
+   "text": "microbes.",
+   "start": 20.966,
+   "end": 21.566
+  },
+  {
+   "text": "Trop",
+   "start": 21.904,
+   "end": 22.104
+  },
+  {
+   "text": "nombreux,",
+   "start": 22.104,
+   "end": 22.566
+  },
+  {
+   "text": "on",
+   "start": 22.891,
+   "end": 22.928
+  },
+  {
+   "text": "pense",
+   "start": 22.928,
+   "end": 23.178
+  },
+  {
+   "text": "à",
+   "start": 23.178,
+   "end": 23.229
+  },
+  {
+   "text": "une",
+   "start": 23.229,
+   "end": 23.328
+  },
+  {
+   "text": "infection.",
+   "start": 23.328,
+   "end": 23.916
+  },
+  {
+   "text": "Trop",
+   "start": 24.279,
+   "end": 24.466
+  },
+  {
+   "text": "peu,",
+   "start": 24.466,
+   "end": 24.766
+  },
+  {
+   "text": "c'est",
+   "start": 25.041,
+   "end": 25.154
+  },
+  {
+   "text": "une",
+   "start": 25.154,
+   "end": 25.341
+  },
+  {
+   "text": "leucopénie :",
+   "start": 25.341,
+   "end": 25.966
+  },
+  {
+   "text": "le",
+   "start": 26.291,
+   "end": 26.354
+  },
+  {
+   "text": "patient",
+   "start": 26.354,
+   "end": 26.691
+  },
+  {
+   "text": "se",
+   "start": 26.691,
+   "end": 26.816
+  },
+  {
+   "text": "défend",
+   "start": 26.816,
+   "end": 27.116
+  },
+  {
+   "text": "mal.",
+   "start": 27.116,
+   "end": 27.529
+  },
+  {
+   "text": "Ensuite,",
+   "start": 28.484,
+   "end": 29.122
+  },
+  {
+   "text": "la",
+   "start": 29.384,
+   "end": 29.509
+  },
+  {
+   "text": "formule.",
+   "start": 29.509,
+   "end": 30.122
+  },
+  {
+   "text": "Trois :",
+   "start": 30.484,
+   "end": 30.847
+  },
+  {
+   "text": "les",
+   "start": 31.209,
+   "end": 31.271
+  },
+  {
+   "text": "neutrophiles",
+   "start": 31.271,
+   "end": 31.847
+  },
+  {
+   "text": "avalent",
+   "start": 31.847,
+   "end": 32.084
+  },
+  {
+   "text": "les",
+   "start": 32.084,
+   "end": 32.172
+  },
+  {
+   "text": "microbes.",
+   "start": 32.172,
+   "end": 32.772
+  },
+  {
+   "text": "Quatre :",
+   "start": 33.121,
+   "end": 33.547
+  },
+  {
+   "text": "les",
+   "start": 33.922,
+   "end": 34.009
+  },
+  {
+   "text": "éosinophiles",
+   "start": 34.009,
+   "end": 34.784
+  },
+  {
+   "text": "montent",
+   "start": 34.784,
+   "end": 35.009
+  },
+  {
+   "text": "avec",
+   "start": 35.009,
+   "end": 35.209
+  },
+  {
+   "text": "les",
+   "start": 35.209,
+   "end": 35.284
+  },
+  {
+   "text": "allergies",
+   "start": 35.284,
+   "end": 35.809
+  },
+  {
+   "text": "et",
+   "start": 35.809,
+   "end": 35.871
+  },
+  {
+   "text": "les",
+   "start": 35.871,
+   "end": 35.947
+  },
+  {
+   "text": "parasites.",
+   "start": 35.947,
+   "end": 36.659
+  },
+  {
+   "text": "Cinq :",
+   "start": 37.009,
+   "end": 37.509
+  },
+  {
+   "text": "les",
+   "start": 37.822,
+   "end": 37.897
+  },
+  {
+   "text": "basophiles",
+   "start": 37.897,
+   "end": 38.434
+  },
+  {
+   "text": "participent",
+   "start": 38.434,
+   "end": 38.971
+  },
+  {
+   "text": "aux",
+   "start": 38.971,
+   "end": 39.009
+  },
+  {
+   "text": "allergies.",
+   "start": 39.009,
+   "end": 39.621
+  },
+  {
+   "text": "Six :",
+   "start": 40.59,
+   "end": 40.978
+  },
+  {
+   "text": "les",
+   "start": 41.34,
+   "end": 41.416
+  },
+  {
+   "text": "lymphocytes,",
+   "start": 41.416,
+   "end": 42.115
+  },
+  {
+   "text": "les",
+   "start": 42.316,
+   "end": 42.378
+  },
+  {
+   "text": "défenses",
+   "start": 42.378,
+   "end": 42.778
+  },
+  {
+   "text": "sur",
+   "start": 42.778,
+   "end": 42.916
+  },
+  {
+   "text": "mesure.",
+   "start": 42.916,
+   "end": 43.441
+  },
+  {
+   "text": "Trop",
+   "start": 43.816,
+   "end": 43.953
+  },
+  {
+   "text": "nombreux,",
+   "start": 43.953,
+   "end": 44.403
+  },
+  {
+   "text": "on",
+   "start": 44.703,
+   "end": 44.74
+  },
+  {
+   "text": "pense",
+   "start": 44.74,
+   "end": 44.953
+  },
+  {
+   "text": "d'abord",
+   "start": 44.953,
+   "end": 45.303
+  },
+  {
+   "text": "à",
+   "start": 45.303,
+   "end": 45.365
+  },
+  {
+   "text": "un",
+   "start": 45.365,
+   "end": 45.416
+  },
+  {
+   "text": "virus.",
+   "start": 45.416,
+   "end": 45.99
+  },
+  {
+   "text": "Et",
+   "start": 46.378,
+   "end": 46.478
+  },
+  {
+   "text": "sept :",
+   "start": 46.478,
+   "end": 46.903
+  },
+  {
+   "text": "les",
+   "start": 47.203,
+   "end": 47.278
+  },
+  {
+   "text": "monocytes,",
+   "start": 47.278,
+   "end": 47.965
+  },
+  {
+   "text": "qui",
+   "start": 48.203,
+   "end": 48.328
+  },
+  {
+   "text": "avalent",
+   "start": 48.328,
+   "end": 48.54
+  },
+  {
+   "text": "eux",
+   "start": 48.54,
+   "end": 48.578
+  },
+  {
+   "text": "aussi",
+   "start": 48.578,
+   "end": 48.828
+  },
+  {
+   "text": "les",
+   "start": 48.828,
+   "end": 48.915
+  },
+  {
+   "text": "microbes.",
+   "start": 48.915,
+   "end": 49.516
+  },
+  {
+   "text": "Plaquettes,",
+   "start": 50.512,
+   "end": 51.088
+  },
+  {
+   "text": "globules",
+   "start": 51.284,
+   "end": 51.627
+  },
+  {
+   "text": "blancs,",
+   "start": 51.627,
+   "end": 51.921
+  },
+  {
+   "text": "cinq",
+   "start": 52.179,
+   "end": 52.424
+  },
+  {
+   "text": "familles :",
+   "start": 52.424,
+   "end": 52.877
+  },
+  {
+   "text": "c'est",
+   "start": 53.147,
+   "end": 53.306
+  },
+  {
+   "text": "fait !",
+   "start": 53.306,
+   "end": 53.637
+  },
+  {
+   "text": "Prochaine",
+   "start": 54.005,
+   "end": 54.397
+  },
+  {
+   "text": "vidéo :",
+   "start": 54.397,
+   "end": 54.899
+  },
+  {
+   "text": "l'hémoglobine",
+   "start": 55.353,
+   "end": 55.953
+  },
+  {
+   "text": "glyquée.",
+   "start": 55.953,
+   "end": 56.492
+  }
+ ]
+}

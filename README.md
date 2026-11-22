@@ -78,6 +78,7 @@ pas de logiciel de montage, pas de banque d'images.
 | 65 | Série les tubes : le tube de purge (bouchon blanc), pourquoi et quand (voix Laura, directives Instagram) | `Tube-Purge` | [voix/65-tube-purge.script.json](voix/65-tube-purge.script.json) | [storyboard](docs/lpi/storyboard-tube-purge.md) |
 | 66 | Série les tubes : l'ordre des tubes en 47 s (l'ordre seul, aiguille, retournements ; voix Laura, directives Instagram) | `Ordre-Tubes` | [voix/66-ordre-tubes.script.json](voix/66-ordre-tubes.script.json) | [storyboard](docs/lpi/storyboard-ordre-tubes.md) |
 | 67 | Série le tube violet : la NFS 1/2, les globules rouges en 54 s (hématies, hémoglobine, hématocrite, VGM + normes ; voix gratuite, directives Instagram) | `NFS-Globules-Rouges` | [voix/67-nfs-globules-rouges.script.json](voix/67-nfs-globules-rouges.script.json) | [storyboard](docs/lpi/storyboard-tube-violet-serie.md) |
+| 68 | Série le tube violet : la NFS 2/2, globules blancs et plaquettes en 60 s (7 lignes + normes ; voix gratuite, directives Instagram) | `NFS-Globules-Blancs` | [voix/68-nfs-globules-blancs.script.json](voix/68-nfs-globules-blancs.script.json) | [storyboard](docs/lpi/storyboard-tube-violet-serie.md) |
 
 ## Utilisation
 

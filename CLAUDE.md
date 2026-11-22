@@ -724,6 +724,10 @@ script), « en France » / « le 15 (ou le numéro d'urgence de ton pays) ». Ca
   (n° 67, ≈ 54 s, voix gratuite d'abord) : « Le tube violet, c'est la NFS. Quatre lignes parlent des globules rouges… et une
   anémie peut s'y cacher. Tu sais les lire ? », puis « Un : les hématies… Quatre : le VGM » (scènes de la n° 62 recalées,
   cartes NORMES), ajout : VGM bas = souvent un manque de fer ; fin = fiche cochée + carte « À SUIVRE · NFS 2/2 ».
+  `NFS-Globules-Blancs` (n° 68, ≈ 60 s, voix gratuite d'abord) : « La NFS, partie deux : sept lignes… une infection… ou une
+  hémorragie », plaquettes, leucocytes, formule (PNN, PNE, PNB), lymphocytes, monocytes (compteur `steps` qui avance au mot
+  dans une même scène), fin = fiche cochée + « prochaine vidéo : l'hémoglobine glyquée ». Voix : `check:voice` entend
+  « thrombopénie » comme « trombe au pénis » : c'est Whisper (amorcé avec du vocabulaire médical, il l'entend bien), pas la voix.
   **Correction à signaler dans le texte fourni** : c'est l'excès de lymphocytes (lymphocytose) qui évoque une infection
   virale ; la lymphopénie se voit dans l'immunodépression (VIH, corticoïdes…).
 
