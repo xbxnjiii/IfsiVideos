@@ -710,6 +710,15 @@ script), « en France » / « le 15 (ou le numéro d'urgence de ton pays) ». Ca
   `SeriesPill` (« LES TUBES · LA PURGE ») dès l'image 0. Brique `WingedLine` + `LINE_PTS` dans `tubes.tsx` (peau + veine,
   ailettes, tubulure où le sang avance, bulles d'air, corps de pompe et tube couché avec trait, croix). Storyboard
   `docs/lpi/storyboard-tube-purge.md`.
+  `Ordre-Tubes` (n° 66, ≈ 57 s, voix gratuite d'abord, sans barre de progression) : **l'ordre des tubes refait selon les
+  directives Instagram**, avec les deux tableaux du propriétaire (ordre selon l'aiguille ; bouchon / additif / analyses /
+  retournements) : accroche de 21 mots « Sept tubes, un seul bon ordre… Tu le connais vraiment ? » (image 0 : titre +
+  compteur 0/7 + les 7 tubes mélangés), puis une carte par tube (additif → analyse : hémocultures bactéries, bleu citrate
+  coagulation, jaune gel biochimie, rouge sérologies, vert héparine ionogramme, violet EDTA NFS, gris fluorure glycémie) et
+  la frise `OrderRail` n/7, aiguille simple → bleu / ailettes → purge puis bleu, retournements (bleu 3 – 4, jaune 5,
+  vert / violet / gris 8 – 10 ; rouge et hémocultures à l'écran seulement), « suis le protocole de ton établissement ».
+  Ici on dit à quoi sert chaque tube (demandé : « à l'aide de toutes les informations »), contrairement à la n° 61.
+  Storyboard `docs/lpi/storyboard-ordre-tubes.md`.
 
 ## Voix ElevenLabs « Laura » (choisie par le propriétaire pour les nouvelles vidéos)
 

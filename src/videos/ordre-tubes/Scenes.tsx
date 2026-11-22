@@ -1,0 +1,314 @@
+// « L'ordre des tubes » (n° 66, série « les tubes », directives Instagram) : refaite à la demande avec les tableaux du
+// propriétaire (ordre de remplissage selon l'aiguille ; additif, analyses et retournements de chaque tube). Image 0 :
+// pastille de série, titre, compteur 0/7, les 7 tubes mélangés ; le violet passe avant le jaune → le jaune est faussé ;
+// les tubes se rangent. Puis l'ordre, une carte par tube (additif + analyse) et la frise qui se remplit (n/7) ; sans
+// hémocultures : aiguille simple → bleu, ailettes → purge puis bleu ; les retournements ; « suis le protocole ».
+// Sources : CLSI GP41 (7e éd., 2017) pour l'ordre et la purge ; tableau « bouchon / additif / analyses / retournements »
+// fourni par le propriétaire (nombre de retournements selon le fabricant : à vérifier avec la notice de l'établissement).
+import React from 'react';
+import {AbsoluteFill, interpolate, useCurrentFrame} from 'remotion';
+import {Big, ease, FlatBg, Fly, Live, Note, popAt} from '../../brand/bold';
+import {Stamp} from '../../brand/kit';
+import {Camera, Confetti} from '../../brand/motion3';
+import {Butterfly, VacuNeedle} from '../../brand/sampling';
+import {Sfx} from '../../brand/Sfx';
+import {alpha, FONT, LPI, SHADOW} from '../../brand/theme';
+import {CAP, HEMO_CAP, HemoFlask, OrderRail, Tube} from '../../brand/tubes';
+import {clamp} from '../../brand/ui';
+import {at} from './timeline';
+
+const N = LPI.navy;
+const CAPS = [HEMO_CAP.aero, CAP.citrate, CAP.gel, CAP.sec, CAP.hepar, CAP.edta, CAP.fluor];
+
+const Bg: React.FC<{tone?: string}> = ({tone = LPI.sky}) => (
+	<>
+		<AbsoluteFill style={{background: LPI.paper}} />
+		<FlatBg tone={tone} light={0.24} />
+	</>
+);
+
+const Pop: React.FC<{at: number; to?: number; x: number; y: number; children: React.ReactNode}> = ({at: t0, to = 1e9, x, y, children}) => {
+	const frame = useCurrentFrame();
+	if (frame < t0 || frame > to + 8) return null;
+	return <div style={{position: 'absolute', left: x, top: y, transform: `translate(-50%, -50%) scale(${popAt(frame, t0) * interpolate(frame, [to, to + 7], [1, 0], clamp)})`}}>{children}</div>;
+};
+
+const Chip: React.FC<{at: number; to?: number; x: number; y: number; children: React.ReactNode; tone?: string; size?: number}> = ({at: t0, to, x, y, children, tone = LPI.paper, size = 40}) => (
+	<Pop at={t0} to={to} x={x} y={y}>
+		<div style={{padding: `${size * 0.28}px ${size * 0.6}px`, borderRadius: 999, background: tone, border: `6px solid ${N}`, boxShadow: SHADOW, fontFamily: FONT.title, fontWeight: 900, fontSize: size, color: tone === LPI.blue ? LPI.paper : N, whiteSpace: 'nowrap'}}>{children}</div>
+	</Pop>
+);
+
+const SeriesPill: React.FC = () => (
+	<div style={{position: 'absolute', left: 540, top: 96, transform: 'translateX(-50%)', display: 'flex', alignItems: 'center', gap: 8, padding: '10px 26px', borderRadius: 999, background: LPI.paper, border: `5px solid ${N}`, fontFamily: FONT.body, fontWeight: 900, fontSize: 28, letterSpacing: '0.1em', color: N, whiteSpace: 'nowrap'}}>
+		{CAPS.map((c) => (
+			<div key={c} style={{width: 16, height: 22, borderRadius: 5, background: c, border: `3px solid ${N}`}} />
+		))}
+		<span style={{marginLeft: 8}}>LES TUBES · L'ORDRE</span>
+	</div>
+);
+
+/** Compteur « n / 7 » en haut à droite. */
+const Counter: React.FC<{n: number | string; done?: boolean}> = ({n, done}) => (
+	<div style={{position: 'absolute', left: 880, top: 250, transform: 'translate(-50%, -50%)', padding: '10px 26px', borderRadius: 30, background: done ? LPI.blue : LPI.paper, border: `6px solid ${N}`, boxShadow: SHADOW, fontFamily: FONT.title, fontWeight: 900, fontSize: 60, color: done ? LPI.paper : N, fontVariantNumeric: 'tabular-nums', whiteSpace: 'nowrap'}}>
+		{n} / 7
+	</div>
+);
+
+/** Un tube (ou le flacon d'hémoculture) de l'ordre `k`, à la taille `size`. */
+const Art: React.FC<{k: number; size?: number; taint?: number; bad?: number}> = ({k, size = 80, taint = 0, bad = 0}) =>
+	k === 0 ? <HemoFlask size={size * 0.95} label="" cap={HEMO_CAP.aero} /> : <Tube size={size} cap={CAPS[k]} gel={k === 2} taint={taint} bad={bad} />;
+
+/* ═══════════════════════════════ ACCROCHE ═══════════════════════════════ */
+const SHUFFLE = [5, 2, 6, 1, 4, 0, 3];
+
+export const Hook: React.FC = () => {
+	const frame = useCurrentFrame();
+	const TROMPES = at('intro', 'trompes');
+	const ADD = at('intro', "l'additif");
+	const FAUSS = at('intro', 'fausser');
+	const CONN = at('intro', 'connais');
+	const sortK = interpolate(frame, [CONN - 2, CONN + 18], [0, 1], ease);
+	return (
+		<AbsoluteFill>
+			<Bg tone={alpha(LPI.sky, 0.9)} />
+			<SeriesPill />
+			<Camera punches={[TROMPES + 1, FAUSS + 1, CONN + 1]} shakes={[FAUSS + 3]} strength={0.03}>
+				<Big from={-12} text={"L'ordre\ndes *tubes*"} size={130} y={190} />
+				<Counter n={frame >= CONN + 18 ? '?' : 0} />
+				{/* les 7 tubes : mélangés, qui s'échangent, puis rangés */}
+				{SHUFFLE.map((k, slot) => (
+					<Live
+						key={k}
+						render={(f) => {
+							const swap = Math.floor(f / 26) % 2 === 1 && f < TROMPES ? (slot % 2 ? -1 : 1) : 0;
+							const mixSlot = slot + swap * interpolate(f % 26, [0, 10], [0, 1], clamp);
+							const xs = 540 + (mixSlot - 3) * 140;
+							const xo = 540 + (k - 3) * 140;
+							const x = xs + (xo - xs) * sortK;
+							const bob = Math.sin(f / 7 + k) * 10 * (1 - sortK);
+							const violetBeforeYellow = k === 2 && f >= FAUSS - 2 && f < CONN;
+							return (
+								<div style={{position: 'absolute', left: x, top: 900 + bob, transform: 'translate(-50%, -50%)'}}>
+									<Art k={k} size={100} taint={violetBeforeYellow ? interpolate(f, [FAUSS - 2, FAUSS + 8], [0, 1], clamp) : 0} bad={violetBeforeYellow ? popAt(f, FAUSS + 4) : 0} />
+									{sortK > 0.5 ? (
+										<div style={{position: 'absolute', left: '50%', top: -70, transform: `translateX(-50%) scale(${popAt(f, CONN + 12 + k * 2)})`, width: 54, height: 54, borderRadius: 27, background: LPI.pink, border: `4px solid ${N}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FONT.title, fontWeight: 900, fontSize: 30, color: N}}>{k + 1}</div>
+									) : null}
+								</div>
+							);
+						}}
+					/>
+				))}
+				<Note at={TROMPES} to={CONN - 4} y={1220} size={40} tone={LPI.pink}>
+					si tu te trompes…
+				</Note>
+				<Chip at={ADD} to={CONN - 4} x={540} y={1340} size={38}>
+					l'additif d'un tube fausse le suivant
+				</Chip>
+				<Stamp at={FAUSS + 4} out={CONN - 4} x={760} y={1150} text="FAUSSÉ !" size={70} />
+			</Camera>
+			<Sfx name="whoosh" at={6} volume={0.15} />
+			<Sfx name="buzz" at={FAUSS + 4} volume={0.25} />
+			<Sfx name="stamp" at={FAUSS + 4} volume={0.35} />
+			<Sfx name="whoosh" at={CONN} volume={0.2} />
+		</AbsoluteFill>
+	);
+};
+
+/* ═══════════════════════════════ L'ORDRE, TUBE PAR TUBE ═══════════════════════════════ */
+const CARDS = [
+	{num: 'un', name: 'Hémocultures', add: 'milieu de culture', use: 'bactéries', useWord: 'bacteries'},
+	{num: 'deux', name: 'Bleu', add: 'citrate', use: 'coagulation', useWord: 'coagulation'},
+	{num: 'trois', name: 'Jaune', add: 'gel séparateur', use: 'biochimie', useWord: 'biochimie'},
+	{num: 'quatre', name: 'Rouge', add: 'sec', use: 'sérologies', useWord: 'serologies'},
+	{num: 'cinq', name: 'Vert', add: 'héparine', use: 'ionogramme', useWord: "l'ionogramme"},
+	{num: 'six', name: 'Violet', add: 'EDTA', use: 'NFS', useWord: 'nfs'},
+	{num: 'sept', name: 'Gris', add: 'fluorure', use: 'glycémie', useWord: 'glycemie'},
+];
+
+export const Ordre: React.FC = () => {
+	const frame = useCurrentFrame();
+	const T = CARDS.map((c) => at('ordre', c.num));
+	const U = CARDS.map((c) => at('ordre', c.useWord));
+	const cur = T.reduce((acc, t, i) => (frame >= t - 4 ? i : acc), -1);
+	return (
+		<AbsoluteFill>
+			<Bg tone={alpha(LPI.pink, 0.5)} />
+			<SeriesPill />
+			<Camera punches={T.map((t) => t + 1)} strength={0.025}>
+				<Big from={-2} text={"*L'ordre*"} size={130} y={190} />
+				<Counter n={cur + 1} done={cur === 6} />
+				{CARDS.map((c, i) => {
+					const t0 = T[i] - 4;
+					const out = i < 6 ? T[i + 1] - 6 : 1e9;
+					return (
+						<Fly key={c.name} at={t0} out={out} x={540} y={760} from="right" to="left">
+							<div style={{width: 860, height: 520, boxSizing: 'border-box', borderRadius: 48, background: LPI.paper, border: `7px solid ${N}`, boxShadow: SHADOW, display: 'flex', alignItems: 'center', gap: 40, padding: '0 50px'}}>
+								<div style={{width: 230, display: 'flex', justifyContent: 'center'}}>
+									{i === 0 ? (
+										<div style={{display: 'flex', gap: 10, alignItems: 'flex-end'}}>
+											<HemoFlask size={100} label="" cap={HEMO_CAP.aero} />
+											<HemoFlask size={100} label="" cap={HEMO_CAP.anaero} />
+										</div>
+									) : (
+										<Tube size={150} cap={CAPS[i]} gel={i === 2} level={0.74} serum={i === 2 || i === 3 ? 1 : 0} />
+									)}
+								</div>
+								<div style={{flex: 1}}>
+									<div style={{width: 84, height: 84, borderRadius: 42, background: LPI.pink, border: `5px solid ${N}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FONT.title, fontWeight: 900, fontSize: 52, color: N}}>{i + 1}</div>
+									<div style={{marginTop: 14, fontFamily: FONT.title, fontWeight: 900, fontSize: i === 0 ? 62 : 84, color: N, lineHeight: 1}}>{c.name}</div>
+									<div style={{marginTop: 16, display: 'inline-block', padding: '8px 22px', borderRadius: 999, background: alpha(LPI.sky, 0.8), border: `4px solid ${N}`, fontFamily: FONT.body, fontWeight: 900, fontSize: 32, color: N}}>{c.add}</div>
+									<Live
+										render={(f) =>
+											f >= U[i] - 6 ? (
+												<div style={{marginTop: 14, display: 'inline-block', padding: '10px 24px', borderRadius: 999, background: LPI.pink, border: `5px solid ${N}`, fontFamily: FONT.title, fontWeight: 900, fontSize: 42, color: N, transform: `scale(${popAt(f, U[i] - 6)})`, transformOrigin: 'left center'}}>→ {c.use}</div>
+											) : null
+										}
+									/>
+								</div>
+							</div>
+						</Fly>
+					);
+				})}
+				<OrderRail y={1330} at={0} fill={T.map((t) => t)} cur={cur} check={T.map((t, i) => (i < 6 ? T[i + 1] : U[6] + 10))} scale={0.92} />
+			</Camera>
+			{T.map((t) => (
+				<Sfx key={t} name="pop" at={t} volume={0.15} />
+			))}
+			<Sfx name="ding" at={U[6] + 10} volume={0.25} />
+		</AbsoluteFill>
+	);
+};
+
+/* ═══════════════════════════════ SANS HÉMOCULTURES : L'AIGUILLE ═══════════════════════════════ */
+const Lane: React.FC<{at: number; y: number; icon: React.ReactNode; label: string; tubes: number[]; purge?: boolean}> = ({at: t0, y, icon, label, tubes, purge}) => (
+	<Pop at={t0} x={540} y={y}>
+		<div style={{width: 900, height: 290, boxSizing: 'border-box', borderRadius: 40, background: LPI.paper, border: `6px solid ${N}`, boxShadow: SHADOW, display: 'flex', alignItems: 'center', gap: 26, padding: '0 34px'}}>
+			<div style={{width: 230, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6}}>
+				{icon}
+				<div style={{fontFamily: FONT.body, fontWeight: 900, fontSize: 28, color: N, textAlign: 'center'}}>{label}</div>
+			</div>
+			<div style={{fontFamily: FONT.title, fontWeight: 900, fontSize: 70, color: N}}>→</div>
+			<div style={{display: 'flex', gap: 22, alignItems: 'flex-end'}}>
+				{purge ? (
+					<div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+						<Tube size={54} cap={CAP.purge} />
+						<div style={{fontFamily: FONT.body, fontWeight: 900, fontSize: 24, color: N}}>purge</div>
+					</div>
+				) : null}
+				{tubes.map((k) => (
+					<div key={k} style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+						<Tube size={54} cap={CAPS[k]} gel={k === 2} />
+						<div style={{fontFamily: FONT.body, fontWeight: 900, fontSize: 24, color: N}}>{k === 1 ? 'bleu' : k === 2 ? 'jaune' : '…'}</div>
+					</div>
+				))}
+			</div>
+		</div>
+	</Pop>
+);
+
+export const Aiguille: React.FC = () => {
+	const SANS = at('aiguille', 'sans');
+	const SIMPLE = at('aiguille', 'simple');
+	const AIL = at('aiguille', 'ailettes');
+	const PURGE = at('aiguille', 'purge');
+	return (
+		<AbsoluteFill>
+			<Bg tone={LPI.sky} />
+			<SeriesPill />
+			<Camera punches={[SANS + 1, SIMPLE + 1, AIL + 1, PURGE + 1]} strength={0.03}>
+				<Big from={-2} text={'Sans\n*hémocultures* ?'} size={110} y={190} />
+				<Lane at={SIMPLE - 4} y={620} icon={<VacuNeedle size={250} />} label="aiguille simple" tubes={[1, 2]} />
+				<Lane at={AIL - 4} y={970} icon={<Butterfly size={250} />} label="aiguille à ailettes" tubes={[1, 2]} purge />
+				<Note at={PURGE} y={1220} size={36} tone={LPI.pink}>
+					le tube de purge : jeté, jamais analysé
+				</Note>
+			</Camera>
+			<Sfx name="pop" at={SIMPLE} volume={0.15} />
+			<Sfx name="pop" at={AIL} volume={0.15} />
+			<Sfx name="ding" at={PURGE} volume={0.2} />
+		</AbsoluteFill>
+	);
+};
+
+/* ═══════════════════════════════ RETOURNER LES TUBES ═══════════════════════════════ */
+const FlipRow: React.FC<{at: number; y: number; tubes: number[]; times: string}> = ({at: t0, y, tubes, times}) => (
+	<Pop at={t0} x={540} y={y}>
+		<div style={{width: 800, height: 150, boxSizing: 'border-box', borderRadius: 34, background: LPI.paper, border: `6px solid ${N}`, boxShadow: SHADOW, display: 'flex', alignItems: 'center', gap: 18, padding: '0 30px'}}>
+			<div style={{display: 'flex', gap: 10, width: 260}}>
+				{tubes.map((k) => (
+					<Tube key={k} size={30} cap={CAPS[k]} gel={k === 2} />
+				))}
+			</div>
+			<div style={{flex: 1, textAlign: 'right', fontFamily: FONT.title, fontWeight: 900, fontSize: 64, color: N}}>{times}</div>
+		</div>
+	</Pop>
+);
+
+export const Retourner: React.FC = () => {
+	const frame = useCurrentFrame();
+	const RET = at('retourner', 'retourne');
+	const SEC = at('retourner', 'secouer');
+	const TROIS = at('retourner', 'trois');
+	const CINQ = at('retourner', 'cinq');
+	const HUIT = at('retourner', 'huit');
+	const GRIS = at('retourner', 'gris');
+	const flip = Math.max(0, frame - RET);
+	const angle = 180 * (0.5 - 0.5 * Math.cos((flip / 18) * Math.PI));
+	return (
+		<AbsoluteFill>
+			<Bg tone={alpha(LPI.pink, 0.5)} />
+			<SeriesPill />
+			<Camera punches={[RET + 1, TROIS + 1, CINQ + 1, HUIT + 1]} strength={0.03}>
+				<Big from={-2} text={'On *retourne*'} size={120} y={190} />
+				<Pop at={RET - 4} x={540} y={540}>
+					<div style={{transform: `rotate(${frame >= RET ? angle : 0}deg)`}}>
+						<Tube size={80} cap={CAP.citrate} level={0.74} />
+					</div>
+				</Pop>
+				<Chip at={RET + 4} to={TROIS - 6} x={540} y={820} tone={LPI.sky} size={40}>
+					doucement, de haut en bas
+				</Chip>
+				<Chip at={SEC - 2} to={TROIS - 6} x={540} y={940} tone={LPI.pink} size={40}>
+					sans secouer ✕
+				</Chip>
+				<FlipRow at={TROIS - 2} y={830} tubes={[1]} times="3 – 4 ×" />
+				<FlipRow at={CINQ - 2} y={1000} tubes={[2]} times="5 ×" />
+				<FlipRow at={HUIT - 2} y={1170} tubes={[4, 5, 6]} times="8 – 10 ×" />
+				<Note at={GRIS + 6} y={1330} x={540} size={28}>
+					rouge : 0 à 6 selon le tube · hémocultures : selon la notice
+				</Note>
+			</Camera>
+			<Sfx name="whoosh" at={RET} volume={0.15} />
+			<Sfx name="pop" at={TROIS} volume={0.15} />
+			<Sfx name="pop" at={CINQ} volume={0.15} />
+			<Sfx name="pop" at={HUIT} volume={0.15} />
+		</AbsoluteFill>
+	);
+};
+
+/* ═══════════════════════════════ FIN ═══════════════════════════════ */
+export const Fin: React.FC = () => {
+	const COUL = at('fin', 'couleurs');
+	const PROT = at('fin', 'protocole');
+	return (
+		<AbsoluteFill>
+			<Bg tone={LPI.sky} />
+			<SeriesPill />
+			<Camera punches={[COUL + 1, PROT + 1]} strength={0.03}>
+				<Big from={-2} text={"L'ordre\ndes *tubes*"} size={120} y={190} />
+				<Counter n={7} done />
+				<OrderRail y={760} at={-2} fill={[0, 2, 4, 6, 8, 10, 12]} check={[16, 18, 20, 22, 24, 26, 28]} labels={[4, 6, 8, 10, 12, 14, 16]} />
+				<Note at={COUL - 2} y={1080} size={40} tone={LPI.pink}>
+					les couleurs peuvent changer selon les marques
+				</Note>
+				<Chip at={PROT - 2} x={540} y={1240} tone={LPI.blue} size={42}>
+					suis le protocole de ton établissement
+				</Chip>
+			</Camera>
+			<Confetti at={PROT + 6} />
+			<Sfx name="pop" at={COUL} volume={0.15} />
+			<Sfx name="ding" at={PROT} volume={0.2} />
+		</AbsoluteFill>
+	);
+};
