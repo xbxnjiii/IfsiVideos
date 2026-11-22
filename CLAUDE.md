@@ -759,6 +759,16 @@ script), « en France » / « le 15 (ou le numéro d'urgence de ton pays) ». Ca
   France (0,5 g/L ; 0,2 en permis probatoire ; Code de la route R234-1), élimination ≈ 0,10 – 0,15 g/L/h, > 3 g/L coma,
   hypoglycémie. Voix : Whisper entend « fluorure » « flux aurure » (amorcé, il l'entend bien) ; « amaigrissement » entendu
   « amélioration » → « une perte de poids ».
+- **Le tube bleu (citrate)** (demandé : « la vidéo pour le tube bleu comme les précédentes », contenu complété par l'agent ;
+  une seule vidéo dépassait 60 s → 2 vidéos ; storyboard `docs/lpi/storyboard-tube-bleu.md`). `Tube-Bleu-TP-INR` (n° 75,
+  ≈ 62 s, voix gratuite d'abord) : « Le tube bleu, c'est la coagulation. S'il est mal rempli, le résultat est faux… et ton
+  patient peut saigner. », remplissage jusqu'au trait (citrate, sinon temps faussement allongés), TP 70 – 100 % (bas : foie,
+  anticoagulant), INR (AVK, ≈ 1 sans traitement, cible le plus souvent 2 – 3 ; valve mécanique plus haute à l'écran).
+  `Tube-Bleu-TCA` (n° 76, ≈ 57 s, voix gratuite d'abord) : « Sous héparine, un seul chiffre dit si la dose est bonne : le
+  TCA… », TCA (rapport patient / témoin < 1,2 ; héparine souvent 1,5 – 2,5 selon le protocole ; HBPM → anti-Xa à l'écran),
+  fibrinogène 2 – 4 g/L, D-dimères < 500 µg/L (seuil âge × 10 après 50 ans à l'écran). Voix : « autour de un. » était entendu
+  « autour de temps » → « autour de un virgule zéro ». `BloodDrop` de `nose.tsx` n'est qu'un `<path>` : l'envelopper dans un
+  `<svg>` (`Drop` local) ; les flèches « ↓ ↑ » dans une légende d'icône ne s'affichent pas : écrire « trop bas / trop haut ».
 
 ## Voix ElevenLabs « Laura » (choisie par le propriétaire pour les nouvelles vidéos)
 

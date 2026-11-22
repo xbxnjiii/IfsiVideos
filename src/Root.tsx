@@ -150,6 +150,10 @@ import {TubeGrisGlycemie, TubeGrisGlycemieProps} from './videos/tube-gris-glycem
 import {TL as TUBE_GRIS_GLYCEMIE_TL} from './videos/tube-gris-glycemie/timeline';
 import {TubeGrisAlcoolemie, TubeGrisAlcoolemieProps} from './videos/tube-gris-alcoolemie/TubeGrisAlcoolemie';
 import {TL as TUBE_GRIS_ALCOOLEMIE_TL} from './videos/tube-gris-alcoolemie/timeline';
+import {TubeBleuTpInr, TubeBleuTpInrProps} from './videos/tube-bleu-tp-inr/TubeBleuTpInr';
+import {TL as TUBE_BLEU_TP_INR_TL} from './videos/tube-bleu-tp-inr/timeline';
+import {TubeBleuTca, TubeBleuTcaProps} from './videos/tube-bleu-tca/TubeBleuTca';
+import {TL as TUBE_BLEU_TCA_TL} from './videos/tube-bleu-tca/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -886,6 +890,26 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies TubeGrisAlcoolemieProps}
+		/>
+		{/* 75 · Tube-Bleu-TP-INR */}
+		<Composition
+			id="Tube-Bleu-TP-INR"
+			component={TubeBleuTpInr}
+			durationInFrames={TUBE_BLEU_TP_INR_TL.total}
+			fps={TUBE_BLEU_TP_INR_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies TubeBleuTpInrProps}
+		/>
+		{/* 76 · Tube-Bleu-TCA */}
+		<Composition
+			id="Tube-Bleu-TCA"
+			component={TubeBleuTca}
+			durationInFrames={TUBE_BLEU_TCA_TL.total}
+			fps={TUBE_BLEU_TCA_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies TubeBleuTcaProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition

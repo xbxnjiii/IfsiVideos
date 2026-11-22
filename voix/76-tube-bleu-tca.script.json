@@ -1,0 +1,27 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Sous héparine, un seul chiffre dit si la dose est bonne : le {TCA|T C A}. Et le même tube bleu peut aussi trahir un caillot caché. Tu les connais ?"
+ },
+ {
+  "id": "tca",
+  "rate": "+0%",
+  "text": "Un : le {TCA|T C A}, le temps de céphaline activée. On compare le temps du patient à celui d'un témoin. Normal : un rapport inférieur à un virgule deux. Sous héparine, on vise souvent entre un virgule cinq et deux virgule cinq, selon le protocole de ton service."
+ },
+ {
+  "id": "fibrinogene",
+  "rate": "+0%",
+  "text": "Deux : le fibrinogène, la protéine qui forme le filet du caillot. La norme : de deux à quatre grammes par litre. Trop bas : risque d'hémorragie. Trop haut : c'est souvent une inflammation."
+ },
+ {
+  "id": "ddimeres",
+  "rate": "+0%",
+  "text": "Trois : les {D-dimères|dé-dimères}, des morceaux de caillot en train de se dissoudre. Sous cinq cents microgrammes par litre, une phlébite ou une embolie est très peu probable. Au-dessus, ça ne prouve rien : il faut d'autres examens."
+ },
+ {
+  "id": "fin",
+  "rate": "+2%",
+  "text": "Le {TCA|T C A}, le fibrinogène, les {D-dimères|dé-dimères} : et voilà, le tube bleu n'a plus de secret pour toi !"
+ }
+]

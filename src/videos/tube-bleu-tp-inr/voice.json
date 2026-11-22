@@ -1,0 +1,853 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 58.72,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.05,
+   "end": 7.007
+  },
+  {
+   "id": "remplir",
+   "start": 7.944,
+   "end": 20.686
+  },
+  {
+   "id": "tp",
+   "start": 21.621,
+   "end": 33.732
+  },
+  {
+   "id": "inr",
+   "start": 34.652,
+   "end": 50.609
+  },
+  {
+   "id": "fin",
+   "start": 51.522,
+   "end": 58.384
+  }
+ ],
+ "words": [
+  {
+   "text": "Le",
+   "start": 0.05,
+   "end": 0.242
+  },
+  {
+   "text": "tube",
+   "start": 0.242,
+   "end": 0.446
+  },
+  {
+   "text": "bleu,",
+   "start": 0.446,
+   "end": 0.735
+  },
+  {
+   "text": "c'est",
+   "start": 1.023,
+   "end": 1.143
+  },
+  {
+   "text": "la",
+   "start": 1.143,
+   "end": 1.227
+  },
+  {
+   "text": "coagulation.",
+   "start": 1.227,
+   "end": 2.045
+  },
+  {
+   "text": "S'il",
+   "start": 2.369,
+   "end": 2.609
+  },
+  {
+   "text": "est",
+   "start": 2.609,
+   "end": 2.645
+  },
+  {
+   "text": "mal",
+   "start": 2.645,
+   "end": 2.825
+  },
+  {
+   "text": "rempli,",
+   "start": 2.825,
+   "end": 3.318
+  },
+  {
+   "text": "le",
+   "start": 3.607,
+   "end": 3.655
+  },
+  {
+   "text": "résultat",
+   "start": 3.655,
+   "end": 4.075
+  },
+  {
+   "text": "est",
+   "start": 4.075,
+   "end": 4.148
+  },
+  {
+   "text": "faux…",
+   "start": 4.148,
+   "end": 4.484
+  },
+  {
+   "text": "et",
+   "start": 4.821,
+   "end": 4.845
+  },
+  {
+   "text": "ton",
+   "start": 4.845,
+   "end": 4.965
+  },
+  {
+   "text": "patient",
+   "start": 4.965,
+   "end": 5.277
+  },
+  {
+   "text": "peut",
+   "start": 5.277,
+   "end": 5.41
+  },
+  {
+   "text": "saigner.",
+   "start": 5.41,
+   "end": 5.854
+  },
+  {
+   "text": "Tu",
+   "start": 6.226,
+   "end": 6.322
+  },
+  {
+   "text": "sais",
+   "start": 6.322,
+   "end": 6.466
+  },
+  {
+   "text": "le",
+   "start": 6.466,
+   "end": 6.574
+  },
+  {
+   "text": "lire ?",
+   "start": 6.574,
+   "end": 7.007
+  },
+  {
+   "text": "Un :",
+   "start": 7.944,
+   "end": 8.272
+  },
+  {
+   "text": "le",
+   "start": 8.587,
+   "end": 8.66
+  },
+  {
+   "text": "remplissage.",
+   "start": 8.66,
+   "end": 9.425
+  },
+  {
+   "text": "Le",
+   "start": 9.799,
+   "end": 9.921
+  },
+  {
+   "text": "tube",
+   "start": 9.921,
+   "end": 10.127
+  },
+  {
+   "text": "bleu",
+   "start": 10.127,
+   "end": 10.37
+  },
+  {
+   "text": "contient",
+   "start": 10.37,
+   "end": 10.697
+  },
+  {
+   "text": "un",
+   "start": 10.697,
+   "end": 10.734
+  },
+  {
+   "text": "liquide,",
+   "start": 10.734,
+   "end": 11.219
+  },
+  {
+   "text": "le",
+   "start": 11.413,
+   "end": 11.486
+  },
+  {
+   "text": "citrate,",
+   "start": 11.486,
+   "end": 12.093
+  },
+  {
+   "text": "qui",
+   "start": 12.311,
+   "end": 12.457
+  },
+  {
+   "text": "empêche",
+   "start": 12.457,
+   "end": 12.773
+  },
+  {
+   "text": "le",
+   "start": 12.773,
+   "end": 12.882
+  },
+  {
+   "text": "sang",
+   "start": 12.882,
+   "end": 13.052
+  },
+  {
+   "text": "de",
+   "start": 13.052,
+   "end": 13.149
+  },
+  {
+   "text": "coaguler.",
+   "start": 13.149,
+   "end": 13.756
+  },
+  {
+   "text": "Sa",
+   "start": 14.084,
+   "end": 14.279
+  },
+  {
+   "text": "dose",
+   "start": 14.279,
+   "end": 14.497
+  },
+  {
+   "text": "est",
+   "start": 14.497,
+   "end": 14.533
+  },
+  {
+   "text": "prévue",
+   "start": 14.533,
+   "end": 14.849
+  },
+  {
+   "text": "pour",
+   "start": 14.849,
+   "end": 15.019
+  },
+  {
+   "text": "un",
+   "start": 15.019,
+   "end": 15.043
+  },
+  {
+   "text": "tube",
+   "start": 15.043,
+   "end": 15.262
+  },
+  {
+   "text": "plein :",
+   "start": 15.262,
+   "end": 15.577
+  },
+  {
+   "text": "on",
+   "start": 15.929,
+   "end": 15.953
+  },
+  {
+   "text": "le",
+   "start": 15.953,
+   "end": 16.05
+  },
+  {
+   "text": "remplit",
+   "start": 16.05,
+   "end": 16.378
+  },
+  {
+   "text": "jusqu'au",
+   "start": 16.378,
+   "end": 16.645
+  },
+  {
+   "text": "trait.",
+   "start": 16.645,
+   "end": 17.009
+  },
+  {
+   "text": "Sinon,",
+   "start": 17.337,
+   "end": 17.822
+  },
+  {
+   "text": "il",
+   "start": 18.138,
+   "end": 18.211
+  },
+  {
+   "text": "y",
+   "start": 18.211,
+   "end": 18.247
+  },
+  {
+   "text": "a",
+   "start": 18.247,
+   "end": 18.271
+  },
+  {
+   "text": "trop",
+   "start": 18.271,
+   "end": 18.429
+  },
+  {
+   "text": "de",
+   "start": 18.429,
+   "end": 18.502
+  },
+  {
+   "text": "citrate…",
+   "start": 18.502,
+   "end": 19.036
+  },
+  {
+   "text": "et",
+   "start": 19.4,
+   "end": 19.424
+  },
+  {
+   "text": "les",
+   "start": 19.424,
+   "end": 19.521
+  },
+  {
+   "text": "temps",
+   "start": 19.521,
+   "end": 19.679
+  },
+  {
+   "text": "sont",
+   "start": 19.679,
+   "end": 19.825
+  },
+  {
+   "text": "faussement",
+   "start": 19.825,
+   "end": 20.189
+  },
+  {
+   "text": "allongés.",
+   "start": 20.189,
+   "end": 20.686
+  },
+  {
+   "text": "Deux :",
+   "start": 21.621,
+   "end": 22.046
+  },
+  {
+   "text": "le",
+   "start": 22.398,
+   "end": 22.483
+  },
+  {
+   "text": "TP,",
+   "start": 22.483,
+   "end": 22.932
+  },
+  {
+   "text": "le",
+   "start": 23.272,
+   "end": 23.345
+  },
+  {
+   "text": "taux",
+   "start": 23.345,
+   "end": 23.478
+  },
+  {
+   "text": "de",
+   "start": 23.478,
+   "end": 23.575
+  },
+  {
+   "text": "prothrombine.",
+   "start": 23.575,
+   "end": 24.303
+  },
+  {
+   "text": "Il",
+   "start": 24.632,
+   "end": 24.85
+  },
+  {
+   "text": "dit",
+   "start": 24.85,
+   "end": 24.996
+  },
+  {
+   "text": "si",
+   "start": 24.996,
+   "end": 25.129
+  },
+  {
+   "text": "le",
+   "start": 25.129,
+   "end": 25.238
+  },
+  {
+   "text": "sang",
+   "start": 25.238,
+   "end": 25.408
+  },
+  {
+   "text": "coagule",
+   "start": 25.408,
+   "end": 25.833
+  },
+  {
+   "text": "assez",
+   "start": 25.833,
+   "end": 26.052
+  },
+  {
+   "text": "vite.",
+   "start": 26.052,
+   "end": 26.488
+  },
+  {
+   "text": "La",
+   "start": 26.863,
+   "end": 26.985
+  },
+  {
+   "text": "norme :",
+   "start": 26.985,
+   "end": 27.397
+  },
+  {
+   "text": "de",
+   "start": 27.773,
+   "end": 27.871
+  },
+  {
+   "text": "soixante-dix",
+   "start": 27.871,
+   "end": 28.55
+  },
+  {
+   "text": "à",
+   "start": 28.55,
+   "end": 28.623
+  },
+  {
+   "text": "cent",
+   "start": 28.623,
+   "end": 28.781
+  },
+  {
+   "text": "pour",
+   "start": 28.781,
+   "end": 28.975
+  },
+  {
+   "text": "cent.",
+   "start": 28.975,
+   "end": 29.254
+  },
+  {
+   "text": "Trop",
+   "start": 29.618,
+   "end": 29.788
+  },
+  {
+   "text": "bas,",
+   "start": 29.788,
+   "end": 30.019
+  },
+  {
+   "text": "le",
+   "start": 30.298,
+   "end": 30.383
+  },
+  {
+   "text": "sang",
+   "start": 30.383,
+   "end": 30.54
+  },
+  {
+   "text": "coagule",
+   "start": 30.54,
+   "end": 30.941
+  },
+  {
+   "text": "mal :",
+   "start": 30.941,
+   "end": 31.281
+  },
+  {
+   "text": "quand",
+   "start": 31.548,
+   "end": 31.669
+  },
+  {
+   "text": "le",
+   "start": 31.669,
+   "end": 31.766
+  },
+  {
+   "text": "foie",
+   "start": 31.766,
+   "end": 31.948
+  },
+  {
+   "text": "est",
+   "start": 31.948,
+   "end": 31.985
+  },
+  {
+   "text": "malade,",
+   "start": 31.985,
+   "end": 32.422
+  },
+  {
+   "text": "ou",
+   "start": 32.676,
+   "end": 32.713
+  },
+  {
+   "text": "sous",
+   "start": 32.713,
+   "end": 32.822
+  },
+  {
+   "text": "anticoagulant.",
+   "start": 32.822,
+   "end": 33.732
+  },
+  {
+   "text": "Trois :",
+   "start": 34.652,
+   "end": 35.089
+  },
+  {
+   "text": "l'INR.",
+   "start": 35.465,
+   "end": 36.217
+  },
+  {
+   "text": "Il",
+   "start": 36.545,
+   "end": 36.751
+  },
+  {
+   "text": "sert",
+   "start": 36.752,
+   "end": 36.934
+  },
+  {
+   "text": "à",
+   "start": 36.934,
+   "end": 36.982
+  },
+  {
+   "text": "surveiller",
+   "start": 36.982,
+   "end": 37.395
+  },
+  {
+   "text": "les",
+   "start": 37.395,
+   "end": 37.492
+  },
+  {
+   "text": "AVK,",
+   "start": 37.492,
+   "end": 38.05
+  },
+  {
+   "text": "des",
+   "start": 38.39,
+   "end": 38.463
+  },
+  {
+   "text": "anticoagulants",
+   "start": 38.463,
+   "end": 39.276
+  },
+  {
+   "text": "comme",
+   "start": 39.276,
+   "end": 39.434
+  },
+  {
+   "text": "la",
+   "start": 39.434,
+   "end": 39.518
+  },
+  {
+   "text": "warfarine.",
+   "start": 39.518,
+   "end": 40.247
+  },
+  {
+   "text": "Sans",
+   "start": 40.585,
+   "end": 40.767
+  },
+  {
+   "text": "traitement,",
+   "start": 40.767,
+   "end": 41.301
+  },
+  {
+   "text": "il",
+   "start": 41.629,
+   "end": 41.738
+  },
+  {
+   "text": "est",
+   "start": 41.738,
+   "end": 41.762
+  },
+  {
+   "text": "autour",
+   "start": 41.762,
+   "end": 42.102
+  },
+  {
+   "text": "de",
+   "start": 42.102,
+   "end": 42.248
+  },
+  {
+   "text": "un",
+   "start": 42.248,
+   "end": 42.393
+  },
+  {
+   "text": "virgule",
+   "start": 42.393,
+   "end": 42.684
+  },
+  {
+   "text": "zéro.",
+   "start": 42.685,
+   "end": 43.073
+  },
+  {
+   "text": "Sous",
+   "start": 43.402,
+   "end": 43.644
+  },
+  {
+   "text": "AVK,",
+   "start": 43.644,
+   "end": 44.166
+  },
+  {
+   "text": "la",
+   "start": 44.506,
+   "end": 44.627
+  },
+  {
+   "text": "cible",
+   "start": 44.627,
+   "end": 44.894
+  },
+  {
+   "text": "est",
+   "start": 44.894,
+   "end": 44.919
+  },
+  {
+   "text": "le",
+   "start": 44.919,
+   "end": 44.991
+  },
+  {
+   "text": "plus",
+   "start": 44.991,
+   "end": 45.113
+  },
+  {
+   "text": "souvent",
+   "start": 45.113,
+   "end": 45.477
+  },
+  {
+   "text": "entre",
+   "start": 45.477,
+   "end": 45.768
+  },
+  {
+   "text": "deux",
+   "start": 45.768,
+   "end": 45.926
+  },
+  {
+   "text": "et",
+   "start": 45.926,
+   "end": 45.999
+  },
+  {
+   "text": "trois.",
+   "start": 45.999,
+   "end": 46.387
+  },
+  {
+   "text": "Trop",
+   "start": 46.786,
+   "end": 47.029
+  },
+  {
+   "text": "haut :",
+   "start": 47.029,
+   "end": 47.248
+  },
+  {
+   "text": "risque",
+   "start": 47.575,
+   "end": 47.854
+  },
+  {
+   "text": "d'hémorragie.",
+   "start": 47.854,
+   "end": 48.51
+  },
+  {
+   "text": "Trop",
+   "start": 48.886,
+   "end": 49.068
+  },
+  {
+   "text": "bas :",
+   "start": 49.068,
+   "end": 49.311
+  },
+  {
+   "text": "risque",
+   "start": 49.76,
+   "end": 50.039
+  },
+  {
+   "text": "de",
+   "start": 50.039,
+   "end": 50.148
+  },
+  {
+   "text": "caillot.",
+   "start": 50.148,
+   "end": 50.609
+  },
+  {
+   "text": "Le",
+   "start": 51.522,
+   "end": 51.706
+  },
+  {
+   "text": "trait,",
+   "start": 51.706,
+   "end": 52.073
+  },
+  {
+   "text": "le",
+   "start": 52.343,
+   "end": 52.478
+  },
+  {
+   "text": "TP,",
+   "start": 52.478,
+   "end": 52.931
+  },
+  {
+   "text": "l'INR :",
+   "start": 53.238,
+   "end": 53.936
+  },
+  {
+   "text": "tu",
+   "start": 54.255,
+   "end": 54.39
+  },
+  {
+   "text": "as",
+   "start": 54.39,
+   "end": 54.426
+  },
+  {
+   "text": "les",
+   "start": 54.426,
+   "end": 54.512
+  },
+  {
+   "text": "bases.",
+   "start": 54.512,
+   "end": 54.941
+  },
+  {
+   "text": "Prochaine",
+   "start": 55.308,
+   "end": 55.663
+  },
+  {
+   "text": "vidéo :",
+   "start": 55.663,
+   "end": 56.153
+  },
+  {
+   "text": "le",
+   "start": 56.472,
+   "end": 56.546
+  },
+  {
+   "text": "TCA,",
+   "start": 56.546,
+   "end": 57.097
+  },
+  {
+   "text": "toujours",
+   "start": 57.416,
+   "end": 57.722
+  },
+  {
+   "text": "dans",
+   "start": 57.722,
+   "end": 57.82
+  },
+  {
+   "text": "le",
+   "start": 57.82,
+   "end": 57.906
+  },
+  {
+   "text": "tube",
+   "start": 57.906,
+   "end": 58.09
+  },
+  {
+   "text": "bleu.",
+   "start": 58.09,
+   "end": 58.384
+  }
+ ]
+}

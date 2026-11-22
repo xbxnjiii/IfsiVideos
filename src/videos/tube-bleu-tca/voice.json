@@ -1,0 +1,808 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 53.752,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.048,
+   "end": 7.308
+  },
+  {
+   "id": "tca",
+   "start": 8.256,
+   "end": 22.544
+  },
+  {
+   "id": "fibrinogene",
+   "start": 23.494,
+   "end": 34.856
+  },
+  {
+   "id": "ddimeres",
+   "start": 35.829,
+   "end": 47.091
+  },
+  {
+   "id": "fin",
+   "start": 48.102,
+   "end": 53.409
+  }
+ ],
+ "words": [
+  {
+   "text": "Sous",
+   "start": 0.048,
+   "end": 0.204
+  },
+  {
+   "text": "héparine,",
+   "start": 0.204,
+   "end": 0.769
+  },
+  {
+   "text": "un",
+   "start": 1.058,
+   "end": 1.178
+  },
+  {
+   "text": "seul",
+   "start": 1.178,
+   "end": 1.346
+  },
+  {
+   "text": "chiffre",
+   "start": 1.346,
+   "end": 1.695
+  },
+  {
+   "text": "dit",
+   "start": 1.695,
+   "end": 1.851
+  },
+  {
+   "text": "si",
+   "start": 1.851,
+   "end": 1.983
+  },
+  {
+   "text": "la",
+   "start": 1.983,
+   "end": 2.055
+  },
+  {
+   "text": "dose",
+   "start": 2.055,
+   "end": 2.26
+  },
+  {
+   "text": "est",
+   "start": 2.26,
+   "end": 2.308
+  },
+  {
+   "text": "bonne :",
+   "start": 2.308,
+   "end": 2.656
+  },
+  {
+   "text": "le",
+   "start": 2.945,
+   "end": 3.017
+  },
+  {
+   "text": "TCA.",
+   "start": 3.017,
+   "end": 3.618
+  },
+  {
+   "text": "Et",
+   "start": 3.944,
+   "end": 4.088
+  },
+  {
+   "text": "le",
+   "start": 4.088,
+   "end": 4.184
+  },
+  {
+   "text": "même",
+   "start": 4.184,
+   "end": 4.352
+  },
+  {
+   "text": "tube",
+   "start": 4.352,
+   "end": 4.569
+  },
+  {
+   "text": "bleu",
+   "start": 4.569,
+   "end": 4.821
+  },
+  {
+   "text": "peut",
+   "start": 4.821,
+   "end": 4.941
+  },
+  {
+   "text": "aussi",
+   "start": 4.941,
+   "end": 5.194
+  },
+  {
+   "text": "trahir",
+   "start": 5.194,
+   "end": 5.542
+  },
+  {
+   "text": "un",
+   "start": 5.542,
+   "end": 5.59
+  },
+  {
+   "text": "caillot",
+   "start": 5.59,
+   "end": 5.843
+  },
+  {
+   "text": "caché.",
+   "start": 5.843,
+   "end": 6.348
+  },
+  {
+   "text": "Tu",
+   "start": 6.707,
+   "end": 6.791
+  },
+  {
+   "text": "les",
+   "start": 6.791,
+   "end": 6.887
+  },
+  {
+   "text": "connais ?",
+   "start": 6.887,
+   "end": 7.308
+  },
+  {
+   "text": "Un :",
+   "start": 8.256,
+   "end": 8.569
+  },
+  {
+   "text": "le",
+   "start": 8.831,
+   "end": 8.918
+  },
+  {
+   "text": "TCA,",
+   "start": 8.918,
+   "end": 9.506
+  },
+  {
+   "text": "le",
+   "start": 9.843,
+   "end": 9.918
+  },
+  {
+   "text": "temps",
+   "start": 9.918,
+   "end": 10.056
+  },
+  {
+   "text": "de",
+   "start": 10.056,
+   "end": 10.168
+  },
+  {
+   "text": "céphaline",
+   "start": 10.168,
+   "end": 10.618
+  },
+  {
+   "text": "activée.",
+   "start": 10.618,
+   "end": 11.156
+  },
+  {
+   "text": "On",
+   "start": 11.493,
+   "end": 11.643
+  },
+  {
+   "text": "compare",
+   "start": 11.643,
+   "end": 11.993
+  },
+  {
+   "text": "le",
+   "start": 11.993,
+   "end": 12.093
+  },
+  {
+   "text": "temps",
+   "start": 12.093,
+   "end": 12.231
+  },
+  {
+   "text": "du",
+   "start": 12.231,
+   "end": 12.331
+  },
+  {
+   "text": "patient",
+   "start": 12.331,
+   "end": 12.781
+  },
+  {
+   "text": "à",
+   "start": 12.781,
+   "end": 12.868
+  },
+  {
+   "text": "celui",
+   "start": 12.868,
+   "end": 13.118
+  },
+  {
+   "text": "d'un",
+   "start": 13.118,
+   "end": 13.243
+  },
+  {
+   "text": "témoin.",
+   "start": 13.243,
+   "end": 13.694
+  },
+  {
+   "text": "Normal :",
+   "start": 14.069,
+   "end": 14.606
+  },
+  {
+   "text": "un",
+   "start": 15.069,
+   "end": 15.106
+  },
+  {
+   "text": "rapport",
+   "start": 15.106,
+   "end": 15.431
+  },
+  {
+   "text": "inférieur",
+   "start": 15.431,
+   "end": 15.944
+  },
+  {
+   "text": "à",
+   "start": 15.944,
+   "end": 16.044
+  },
+  {
+   "text": "un",
+   "start": 16.044,
+   "end": 16.169
+  },
+  {
+   "text": "virgule",
+   "start": 16.169,
+   "end": 16.544
+  },
+  {
+   "text": "deux.",
+   "start": 16.544,
+   "end": 16.819
+  },
+  {
+   "text": "Sous",
+   "start": 17.156,
+   "end": 17.356
+  },
+  {
+   "text": "héparine,",
+   "start": 17.356,
+   "end": 17.919
+  },
+  {
+   "text": "on",
+   "start": 18.268,
+   "end": 18.306
+  },
+  {
+   "text": "vise",
+   "start": 18.306,
+   "end": 18.481
+  },
+  {
+   "text": "souvent",
+   "start": 18.481,
+   "end": 18.819
+  },
+  {
+   "text": "entre",
+   "start": 18.819,
+   "end": 19.081
+  },
+  {
+   "text": "un",
+   "start": 19.081,
+   "end": 19.118
+  },
+  {
+   "text": "virgule",
+   "start": 19.118,
+   "end": 19.431
+  },
+  {
+   "text": "cinq",
+   "start": 19.431,
+   "end": 19.694
+  },
+  {
+   "text": "et",
+   "start": 19.694,
+   "end": 19.731
+  },
+  {
+   "text": "deux",
+   "start": 19.731,
+   "end": 19.831
+  },
+  {
+   "text": "virgule",
+   "start": 19.831,
+   "end": 20.169
+  },
+  {
+   "text": "cinq,",
+   "start": 20.169,
+   "end": 20.556
+  },
+  {
+   "text": "selon",
+   "start": 20.831,
+   "end": 21.093
+  },
+  {
+   "text": "le",
+   "start": 21.093,
+   "end": 21.169
+  },
+  {
+   "text": "protocole",
+   "start": 21.169,
+   "end": 21.643
+  },
+  {
+   "text": "de",
+   "start": 21.643,
+   "end": 21.743
+  },
+  {
+   "text": "ton",
+   "start": 21.743,
+   "end": 21.881
+  },
+  {
+   "text": "service.",
+   "start": 21.881,
+   "end": 22.544
+  },
+  {
+   "text": "Deux :",
+   "start": 23.494,
+   "end": 23.906
+  },
+  {
+   "text": "le",
+   "start": 24.331,
+   "end": 24.394
+  },
+  {
+   "text": "fibrinogène,",
+   "start": 24.394,
+   "end": 25.181
+  },
+  {
+   "text": "la",
+   "start": 25.531,
+   "end": 25.594
+  },
+  {
+   "text": "protéine",
+   "start": 25.594,
+   "end": 26.094
+  },
+  {
+   "text": "qui",
+   "start": 26.094,
+   "end": 26.219
+  },
+  {
+   "text": "forme",
+   "start": 26.219,
+   "end": 26.494
+  },
+  {
+   "text": "le",
+   "start": 26.494,
+   "end": 26.581
+  },
+  {
+   "text": "filet",
+   "start": 26.581,
+   "end": 26.831
+  },
+  {
+   "text": "du",
+   "start": 26.831,
+   "end": 26.944
+  },
+  {
+   "text": "caillot.",
+   "start": 26.944,
+   "end": 27.381
+  },
+  {
+   "text": "La",
+   "start": 27.782,
+   "end": 27.907
+  },
+  {
+   "text": "norme :",
+   "start": 27.907,
+   "end": 28.331
+  },
+  {
+   "text": "de",
+   "start": 28.731,
+   "end": 28.844
+  },
+  {
+   "text": "deux",
+   "start": 28.844,
+   "end": 28.981
+  },
+  {
+   "text": "à",
+   "start": 28.981,
+   "end": 29.032
+  },
+  {
+   "text": "quatre",
+   "start": 29.032,
+   "end": 29.319
+  },
+  {
+   "text": "grammes",
+   "start": 29.319,
+   "end": 29.581
+  },
+  {
+   "text": "par",
+   "start": 29.581,
+   "end": 29.744
+  },
+  {
+   "text": "litre.",
+   "start": 29.744,
+   "end": 30.181
+  },
+  {
+   "text": "Trop",
+   "start": 30.532,
+   "end": 30.731
+  },
+  {
+   "text": "bas :",
+   "start": 30.731,
+   "end": 30.981
+  },
+  {
+   "text": "risque",
+   "start": 31.394,
+   "end": 31.694
+  },
+  {
+   "text": "d'hémorragie.",
+   "start": 31.694,
+   "end": 32.382
+  },
+  {
+   "text": "Trop",
+   "start": 32.719,
+   "end": 33.019
+  },
+  {
+   "text": "haut :",
+   "start": 33.019,
+   "end": 33.231
+  },
+  {
+   "text": "c'est",
+   "start": 33.556,
+   "end": 33.681
+  },
+  {
+   "text": "souvent",
+   "start": 33.681,
+   "end": 34.007
+  },
+  {
+   "text": "une",
+   "start": 34.007,
+   "end": 34.106
+  },
+  {
+   "text": "inflammation.",
+   "start": 34.106,
+   "end": 34.856
+  },
+  {
+   "text": "Trois :",
+   "start": 35.829,
+   "end": 36.154
+  },
+  {
+   "text": "les",
+   "start": 36.454,
+   "end": 36.541
+  },
+  {
+   "text": "D-dimères,",
+   "start": 36.541,
+   "end": 37.154
+  },
+  {
+   "text": "des",
+   "start": 37.554,
+   "end": 37.629
+  },
+  {
+   "text": "morceaux",
+   "start": 37.629,
+   "end": 37.916
+  },
+  {
+   "text": "de",
+   "start": 37.916,
+   "end": 38.029
+  },
+  {
+   "text": "caillot",
+   "start": 38.029,
+   "end": 38.392
+  },
+  {
+   "text": "en",
+   "start": 38.392,
+   "end": 38.466
+  },
+  {
+   "text": "train",
+   "start": 38.466,
+   "end": 38.654
+  },
+  {
+   "text": "de",
+   "start": 38.654,
+   "end": 38.741
+  },
+  {
+   "text": "se",
+   "start": 38.741,
+   "end": 38.854
+  },
+  {
+   "text": "dissoudre.",
+   "start": 38.854,
+   "end": 39.466
+  },
+  {
+   "text": "Sous",
+   "start": 39.829,
+   "end": 40.017
+  },
+  {
+   "text": "cinq",
+   "start": 40.017,
+   "end": 40.204
+  },
+  {
+   "text": "cents",
+   "start": 40.204,
+   "end": 40.329
+  },
+  {
+   "text": "microgrammes",
+   "start": 40.329,
+   "end": 40.791
+  },
+  {
+   "text": "par",
+   "start": 40.791,
+   "end": 40.966
+  },
+  {
+   "text": "litre,",
+   "start": 40.966,
+   "end": 41.304
+  },
+  {
+   "text": "une",
+   "start": 41.642,
+   "end": 41.716
+  },
+  {
+   "text": "phlébite",
+   "start": 41.716,
+   "end": 42.166
+  },
+  {
+   "text": "ou",
+   "start": 42.166,
+   "end": 42.216
+  },
+  {
+   "text": "une",
+   "start": 42.216,
+   "end": 42.304
+  },
+  {
+   "text": "embolie",
+   "start": 42.304,
+   "end": 42.716
+  },
+  {
+   "text": "est",
+   "start": 42.716,
+   "end": 42.816
+  },
+  {
+   "text": "très",
+   "start": 42.816,
+   "end": 43.017
+  },
+  {
+   "text": "peu",
+   "start": 43.017,
+   "end": 43.142
+  },
+  {
+   "text": "probable.",
+   "start": 43.142,
+   "end": 43.741
+  },
+  {
+   "text": "Au-dessus,",
+   "start": 44.091,
+   "end": 44.629
+  },
+  {
+   "text": "ça",
+   "start": 44.941,
+   "end": 45.041
+  },
+  {
+   "text": "ne",
+   "start": 45.041,
+   "end": 45.129
+  },
+  {
+   "text": "prouve",
+   "start": 45.129,
+   "end": 45.404
+  },
+  {
+   "text": "rien :",
+   "start": 45.404,
+   "end": 45.691
+  },
+  {
+   "text": "il",
+   "start": 46.004,
+   "end": 46.104
+  },
+  {
+   "text": "faut",
+   "start": 46.104,
+   "end": 46.242
+  },
+  {
+   "text": "d'autres",
+   "start": 46.242,
+   "end": 46.529
+  },
+  {
+   "text": "examens.",
+   "start": 46.529,
+   "end": 47.091
+  },
+  {
+   "text": "Le",
+   "start": 48.102,
+   "end": 48.237
+  },
+  {
+   "text": "TCA,",
+   "start": 48.237,
+   "end": 48.813
+  },
+  {
+   "text": "le",
+   "start": 49.119,
+   "end": 49.193
+  },
+  {
+   "text": "fibrinogène,",
+   "start": 49.193,
+   "end": 49.953
+  },
+  {
+   "text": "les",
+   "start": 50.124,
+   "end": 50.186
+  },
+  {
+   "text": "D-dimères :",
+   "start": 50.186,
+   "end": 50.725
+  },
+  {
+   "text": "et",
+   "start": 51.129,
+   "end": 51.154
+  },
+  {
+   "text": "voilà,",
+   "start": 51.154,
+   "end": 51.521
+  },
+  {
+   "text": "le",
+   "start": 51.84,
+   "end": 51.901
+  },
+  {
+   "text": "tube",
+   "start": 51.901,
+   "end": 52.097
+  },
+  {
+   "text": "bleu",
+   "start": 52.097,
+   "end": 52.269
+  },
+  {
+   "text": "n'a",
+   "start": 52.269,
+   "end": 52.367
+  },
+  {
+   "text": "plus",
+   "start": 52.367,
+   "end": 52.502
+  },
+  {
+   "text": "de",
+   "start": 52.502,
+   "end": 52.612
+  },
+  {
+   "text": "secret",
+   "start": 52.612,
+   "end": 52.918
+  },
+  {
+   "text": "pour",
+   "start": 52.918,
+   "end": 53.09
+  },
+  {
+   "text": "toi !",
+   "start": 53.09,
+   "end": 53.409
+  }
+ ]
+}

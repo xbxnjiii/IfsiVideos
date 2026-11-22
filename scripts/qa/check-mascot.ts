@@ -148,6 +148,10 @@ import * as tubegrisglycemie from '../../src/videos/tube-gris-glycemie/mascot';
 import * as tubegrisglycemieTL from '../../src/videos/tube-gris-glycemie/timeline';
 import * as tubegrisalcoolemie from '../../src/videos/tube-gris-alcoolemie/mascot';
 import * as tubegrisalcoolemieTL from '../../src/videos/tube-gris-alcoolemie/timeline';
+import * as tubebleutpinr from '../../src/videos/tube-bleu-tp-inr/mascot';
+import * as tubebleutpinrTL from '../../src/videos/tube-bleu-tp-inr/timeline';
+import * as tubebleutca from '../../src/videos/tube-bleu-tca/mascot';
+import * as tubebleutcaTL from '../../src/videos/tube-bleu-tca/timeline';
 
 const VIDEOS: Record<string, [typeof constantes.MASCOT, typeof constantesTL.TL]> = {
 	constantes: [constantes.MASCOT, constantesTL.TL],
@@ -223,6 +227,8 @@ const VIDEOS: Record<string, [typeof constantes.MASCOT, typeof constantesTL.TL]>
 	'anti-rejet': [antirejet.MASCOT, antirejetTL.TL],
 	'tube-gris-glycemie': [tubegrisglycemie.MASCOT, tubegrisglycemieTL.TL],
 	'tube-gris-alcoolemie': [tubegrisalcoolemie.MASCOT, tubegrisalcoolemieTL.TL],
+	'tube-bleu-tp-inr': [tubebleutpinr.MASCOT, tubebleutpinrTL.TL],
+	'tube-bleu-tca': [tubebleutca.MASCOT, tubebleutcaTL.TL],
 };
 const name = process.argv[2] ?? 'constantes';
 const [MASCOT, TL] = VIDEOS[name];

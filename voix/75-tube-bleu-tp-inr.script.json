@@ -1,0 +1,27 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Le tube bleu, c'est la coagulation. S'il est mal rempli, le résultat est faux… et ton patient peut saigner. Tu sais le lire ?"
+ },
+ {
+  "id": "remplir",
+  "rate": "+3%",
+  "text": "Un : le remplissage. Le tube bleu contient un liquide, le citrate, qui empêche le sang de coaguler. Sa dose est prévue pour un tube plein : on le remplit jusqu'au trait. Sinon, il y a trop de citrate… et les temps sont faussement allongés."
+ },
+ {
+  "id": "tp",
+  "rate": "+3%",
+  "text": "Deux : le {TP|T P}, le taux de prothrombine. Il dit si le sang coagule assez vite. La norme : de soixante-dix à cent pour cent. Trop bas, le sang coagule mal : quand le foie est malade, ou sous anticoagulant."
+ },
+ {
+  "id": "inr",
+  "rate": "+3%",
+  "text": "Trois : l'{INR|I N R}. Il sert à surveiller les {AVK|A V K}, des anticoagulants comme la warfarine. Sans traitement, il est autour de un virgule zéro. Sous {AVK|A V K}, la cible est le plus souvent entre deux et trois. Trop haut : risque d'hémorragie. Trop bas : risque de caillot."
+ },
+ {
+  "id": "fin",
+  "rate": "+2%",
+  "text": "Le trait, le {TP|T P}, l'{INR|I N R} : tu as les bases. Prochaine vidéo : le {TCA|T C A}, toujours dans le tube bleu."
+ }
+]
