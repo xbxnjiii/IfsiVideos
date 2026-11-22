@@ -1,718 +1,718 @@
 {
- "voice": "voix.wav (tts_voix.py)",
- "duration": 56.822,
+ "voice": "pad-nfs-globules-blancs.wav",
+ "duration": 55.894,
  "sections": [
   {
    "id": "intro",
-   "start": 0.096,
-   "end": 7.274
+   "start": 0.0,
+   "end": 7.831
   },
   {
    "id": "plaquettes",
-   "start": 8.208,
-   "end": 16.008
+   "start": 8.633,
+   "end": 16.297
   },
   {
    "id": "leucocytes",
-   "start": 16.979,
-   "end": 27.529
+   "start": 17.109,
+   "end": 27.36
   },
   {
    "id": "formule",
-   "start": 28.484,
-   "end": 39.621
+   "start": 28.161,
+   "end": 39.46
   },
   {
    "id": "lymphocytes",
-   "start": 40.59,
-   "end": 49.516
+   "start": 40.28,
+   "end": 49.557
   },
   {
    "id": "fin",
-   "start": 50.512,
-   "end": 56.492
+   "start": 50.364,
+   "end": 55.7
   }
  ],
  "words": [
   {
    "text": "La",
-   "start": 0.096,
-   "end": 0.24
+   "start": 0.0,
+   "end": 55.7
   },
   {
    "text": "NFS,",
-   "start": 0.24,
-   "end": 0.974
+   "start": 0.0,
+   "end": 0.88
   },
   {
    "text": "partie",
-   "start": 1.166,
-   "end": 1.478
+   "start": 1.26,
+   "end": 1.36
   },
   {
-   "text": "deux :",
-   "start": 1.478,
-   "end": 1.743
+   "text": "deux :",
+   "start": 1.36,
+   "end": 1.8
   },
   {
    "text": "sept",
-   "start": 2.031,
-   "end": 2.26
+   "start": 2.08,
+   "end": 2.22
   },
   {
    "text": "lignes",
-   "start": 2.26,
-   "end": 2.488
+   "start": 2.22,
+   "end": 2.54
   },
   {
    "text": "pour",
-   "start": 2.488,
-   "end": 2.608
+   "start": 2.54,
+   "end": 2.74
   },
   {
    "text": "les",
-   "start": 2.608,
-   "end": 2.668
+   "start": 2.74,
+   "end": 2.96
   },
   {
    "text": "globules",
-   "start": 2.668,
-   "end": 2.957
+   "start": 2.96,
+   "end": 3.24
   },
   {
    "text": "blancs",
-   "start": 2.957,
-   "end": 3.185
+   "start": 3.24,
+   "end": 3.52
   },
   {
    "text": "et",
-   "start": 3.185,
-   "end": 3.269
+   "start": 3.52,
+   "end": 3.62
   },
   {
    "text": "les",
-   "start": 3.269,
-   "end": 3.341
+   "start": 3.62,
+   "end": 3.8
   },
   {
    "text": "plaquettes.",
-   "start": 3.341,
-   "end": 3.942
+   "start": 3.8,
+   "end": 4.34
   },
   {
    "text": "Une",
-   "start": 4.269,
-   "end": 4.473
+   "start": 4.62,
+   "end": 4.8
   },
   {
    "text": "seule",
-   "start": 4.473,
-   "end": 4.689
+   "start": 4.8,
+   "end": 4.98
   },
   {
    "text": "de",
-   "start": 4.689,
-   "end": 4.762
+   "start": 4.98,
+   "end": 5.2
   },
   {
    "text": "travers",
-   "start": 4.762,
-   "end": 5.086
+   "start": 5.2,
+   "end": 5.44
   },
   {
    "text": "peut",
-   "start": 5.086,
-   "end": 5.182
+   "start": 5.44,
+   "end": 5.62
   },
   {
    "text": "cacher",
-   "start": 5.194,
-   "end": 5.459
+   "start": 5.62,
+   "end": 5.92
   },
   {
    "text": "une",
-   "start": 5.459,
-   "end": 5.543
+   "start": 5.92,
+   "end": 6.12
   },
   {
    "text": "infection…",
-   "start": 5.543,
-   "end": 6.108
+   "start": 6.12,
+   "end": 6.54
   },
   {
    "text": "ou",
-   "start": 6.492,
-   "end": 6.588
+   "start": 6.54,
+   "end": 7.12
   },
   {
    "text": "une",
-   "start": 6.588,
-   "end": 6.685
+   "start": 7.12,
+   "end": 7.26
   },
   {
    "text": "hémorragie.",
-   "start": 6.685,
-   "end": 7.274
+   "start": 7.26,
+   "end": 7.831
   },
   {
-   "text": "Un :",
-   "start": 8.208,
-   "end": 8.545
+   "text": "Un :",
+   "start": 8.633,
+   "end": 8.94
   },
   {
    "text": "les",
-   "start": 8.883,
-   "end": 8.97
+   "start": 9.2,
+   "end": 9.46
   },
   {
    "text": "plaquettes.",
-   "start": 8.97,
-   "end": 9.633
+   "start": 9.46,
+   "end": 10.06
   },
   {
    "text": "Elles",
-   "start": 9.97,
-   "end": 10.195
+   "start": 10.24,
+   "end": 10.48
   },
   {
    "text": "forment",
-   "start": 10.195,
-   "end": 10.445
+   "start": 10.48,
+   "end": 10.7
   },
   {
    "text": "le",
-   "start": 10.445,
-   "end": 10.533
+   "start": 10.7,
+   "end": 10.96
   },
   {
    "text": "caillot",
-   "start": 10.546,
-   "end": 10.933
+   "start": 10.96,
+   "end": 11.22
   },
   {
    "text": "qui",
-   "start": 10.933,
-   "end": 11.083
+   "start": 11.22,
+   "end": 11.5
   },
   {
    "text": "arrête",
-   "start": 11.083,
-   "end": 11.358
+   "start": 11.5,
+   "end": 11.74
   },
   {
    "text": "un",
-   "start": 11.358,
-   "end": 11.421
+   "start": 11.74,
+   "end": 11.94
   },
   {
    "text": "saignement.",
-   "start": 11.421,
-   "end": 11.921
+   "start": 11.94,
+   "end": 12.44
   },
   {
    "text": "Trop",
-   "start": 12.27,
-   "end": 12.458
+   "start": 12.7,
+   "end": 12.92
   },
   {
    "text": "peu,",
-   "start": 12.458,
-   "end": 12.77
+   "start": 12.92,
+   "end": 13.16
   },
   {
    "text": "on",
-   "start": 13.033,
-   "end": 13.083
+   "start": 13.26,
+   "end": 13.42
   },
   {
    "text": "parle",
-   "start": 13.083,
-   "end": 13.345
+   "start": 13.42,
+   "end": 13.64
   },
   {
    "text": "de",
-   "start": 13.345,
-   "end": 13.433
+   "start": 13.64,
+   "end": 13.84
   },
   {
-   "text": "thrombopénie :",
-   "start": 13.433,
-   "end": 14.171
+   "text": "thrombopénie :",
+   "start": 13.84,
+   "end": 14.52
   },
   {
    "text": "le",
-   "start": 14.533,
-   "end": 14.608
+   "start": 14.76,
+   "end": 14.88
   },
   {
    "text": "risque",
-   "start": 14.608,
-   "end": 14.908
+   "start": 14.88,
+   "end": 15.14
   },
   {
    "text": "d'hémorragie",
-   "start": 14.908,
-   "end": 15.433
+   "start": 15.14,
+   "end": 15.8
   },
   {
    "text": "augmente.",
-   "start": 15.433,
-   "end": 16.008
+   "start": 15.8,
+   "end": 16.297
   },
   {
-   "text": "Deux :",
-   "start": 16.979,
-   "end": 17.354
+   "text": "Deux :",
+   "start": 17.109,
+   "end": 17.6
   },
   {
    "text": "les",
-   "start": 17.741,
-   "end": 17.816
+   "start": 17.84,
+   "end": 18.06
   },
   {
    "text": "leucocytes,",
-   "start": 17.816,
-   "end": 18.479
+   "start": 18.06,
+   "end": 18.64
   },
   {
    "text": "les",
-   "start": 18.678,
-   "end": 18.741
+   "start": 18.74,
+   "end": 18.94
   },
   {
    "text": "globules",
-   "start": 18.741,
-   "end": 19.079
+   "start": 18.94,
+   "end": 19.26
   },
   {
    "text": "blancs.",
-   "start": 19.079,
-   "end": 19.391
+   "start": 19.26,
+   "end": 19.76
   },
   {
    "text": "Ils",
-   "start": 19.729,
-   "end": 19.954
+   "start": 19.92,
+   "end": 20.14
   },
   {
    "text": "défendent",
-   "start": 19.954,
-   "end": 20.266
+   "start": 20.14,
+   "end": 20.5
   },
   {
    "text": "le",
-   "start": 20.266,
-   "end": 20.378
+   "start": 20.5,
+   "end": 20.7
   },
   {
    "text": "corps",
-   "start": 20.378,
-   "end": 20.654
+   "start": 20.7,
+   "end": 20.86
   },
   {
    "text": "contre",
-   "start": 20.654,
-   "end": 20.891
+   "start": 20.86,
+   "end": 21.16
   },
   {
    "text": "les",
-   "start": 20.891,
-   "end": 20.966
+   "start": 21.16,
+   "end": 21.34
   },
   {
    "text": "microbes.",
-   "start": 20.966,
-   "end": 21.566
+   "start": 21.34,
+   "end": 21.7
   },
   {
    "text": "Trop",
-   "start": 21.904,
-   "end": 22.104
+   "start": 22.1,
+   "end": 22.3
   },
   {
    "text": "nombreux,",
-   "start": 22.104,
-   "end": 22.566
+   "start": 22.3,
+   "end": 22.6
   },
   {
    "text": "on",
-   "start": 22.891,
-   "end": 22.928
+   "start": 22.92,
+   "end": 23.0
   },
   {
    "text": "pense",
-   "start": 22.928,
-   "end": 23.178
+   "start": 23.0,
+   "end": 23.24
   },
   {
    "text": "à",
-   "start": 23.178,
-   "end": 23.229
+   "start": 23.24,
+   "end": 23.32
   },
   {
    "text": "une",
-   "start": 23.229,
-   "end": 23.328
+   "start": 23.32,
+   "end": 23.46
   },
   {
    "text": "infection.",
-   "start": 23.328,
-   "end": 23.916
+   "start": 23.46,
+   "end": 23.86
   },
   {
    "text": "Trop",
-   "start": 24.279,
-   "end": 24.466
+   "start": 24.26,
+   "end": 24.52
   },
   {
    "text": "peu,",
-   "start": 24.466,
-   "end": 24.766
+   "start": 24.52,
+   "end": 24.72
   },
   {
    "text": "c'est",
-   "start": 25.041,
-   "end": 25.154
+   "start": 25.02,
+   "end": 25.16
   },
   {
    "text": "une",
-   "start": 25.154,
-   "end": 25.341
+   "start": 25.16,
+   "end": 25.36
   },
   {
-   "text": "leucopénie :",
-   "start": 25.341,
-   "end": 25.966
+   "text": "leucopénie :",
+   "start": 25.36,
+   "end": 25.96
   },
   {
    "text": "le",
-   "start": 26.291,
-   "end": 26.354
+   "start": 26.14,
+   "end": 26.3
   },
   {
    "text": "patient",
-   "start": 26.354,
-   "end": 26.691
+   "start": 26.3,
+   "end": 26.6
   },
   {
    "text": "se",
-   "start": 26.691,
-   "end": 26.816
+   "start": 26.6,
+   "end": 26.88
   },
   {
    "text": "défend",
-   "start": 26.816,
-   "end": 27.116
+   "start": 26.88,
+   "end": 27.06
   },
   {
    "text": "mal.",
-   "start": 27.116,
-   "end": 27.529
+   "start": 27.06,
+   "end": 27.36
   },
   {
    "text": "Ensuite,",
-   "start": 28.484,
-   "end": 29.122
+   "start": 28.161,
+   "end": 28.68
   },
   {
    "text": "la",
-   "start": 29.384,
-   "end": 29.509
+   "start": 28.84,
+   "end": 29.1
   },
   {
    "text": "formule.",
-   "start": 29.509,
-   "end": 30.122
+   "start": 29.1,
+   "end": 29.52
   },
   {
-   "text": "Trois :",
-   "start": 30.484,
-   "end": 30.847
+   "text": "Trois :",
+   "start": 29.52,
+   "end": 30.14
   },
   {
    "text": "les",
-   "start": 31.209,
-   "end": 31.271
+   "start": 30.5,
+   "end": 30.76
   },
   {
    "text": "neutrophiles",
-   "start": 31.271,
-   "end": 31.847
+   "start": 30.76,
+   "end": 31.42
   },
   {
    "text": "avalent",
-   "start": 31.847,
-   "end": 32.084
+   "start": 31.42,
+   "end": 31.82
   },
   {
    "text": "les",
-   "start": 32.084,
-   "end": 32.172
+   "start": 31.82,
+   "end": 32.06
   },
   {
    "text": "microbes.",
-   "start": 32.172,
-   "end": 32.772
+   "start": 32.06,
+   "end": 32.38
   },
   {
-   "text": "Quatre :",
-   "start": 33.121,
-   "end": 33.547
+   "text": "Quatre :",
+   "start": 32.76,
+   "end": 33.22
   },
   {
    "text": "les",
-   "start": 33.922,
-   "end": 34.009
+   "start": 33.42,
+   "end": 33.64
   },
   {
    "text": "éosinophiles",
-   "start": 34.009,
-   "end": 34.784
+   "start": 33.64,
+   "end": 34.48
   },
   {
    "text": "montent",
-   "start": 34.784,
-   "end": 35.009
+   "start": 34.48,
+   "end": 34.84
   },
   {
    "text": "avec",
-   "start": 35.009,
-   "end": 35.209
+   "start": 34.84,
+   "end": 35.04
   },
   {
    "text": "les",
-   "start": 35.209,
-   "end": 35.284
+   "start": 35.04,
+   "end": 35.28
   },
   {
    "text": "allergies",
-   "start": 35.284,
-   "end": 35.809
+   "start": 35.28,
+   "end": 35.62
   },
   {
    "text": "et",
-   "start": 35.809,
-   "end": 35.871
+   "start": 35.62,
+   "end": 35.86
   },
   {
    "text": "les",
-   "start": 35.871,
-   "end": 35.947
+   "start": 35.86,
+   "end": 36.08
   },
   {
    "text": "parasites.",
-   "start": 35.947,
-   "end": 36.659
+   "start": 36.08,
+   "end": 36.46
   },
   {
-   "text": "Cinq :",
-   "start": 37.009,
-   "end": 37.509
+   "text": "Cinq :",
+   "start": 37.04,
+   "end": 37.36
   },
   {
    "text": "les",
-   "start": 37.822,
-   "end": 37.897
+   "start": 37.56,
+   "end": 37.8
   },
   {
    "text": "basophiles",
-   "start": 37.897,
-   "end": 38.434
+   "start": 37.8,
+   "end": 38.36
   },
   {
    "text": "participent",
-   "start": 38.434,
-   "end": 38.971
+   "start": 38.36,
+   "end": 38.96
   },
   {
    "text": "aux",
-   "start": 38.971,
-   "end": 39.009
+   "start": 38.96,
+   "end": 39.08
   },
   {
    "text": "allergies.",
-   "start": 39.009,
-   "end": 39.621
+   "start": 39.08,
+   "end": 39.46
   },
   {
-   "text": "Six :",
-   "start": 40.59,
-   "end": 40.978
+   "text": "Six :",
+   "start": 40.28,
+   "end": 40.86
   },
   {
    "text": "les",
-   "start": 41.34,
-   "end": 41.416
+   "start": 41.12,
+   "end": 41.32
   },
   {
    "text": "lymphocytes,",
-   "start": 41.416,
-   "end": 42.115
+   "start": 41.32,
+   "end": 41.98
   },
   {
    "text": "les",
-   "start": 42.316,
-   "end": 42.378
+   "start": 42.16,
+   "end": 42.4
   },
   {
    "text": "défenses",
-   "start": 42.378,
-   "end": 42.778
+   "start": 42.4,
+   "end": 42.88
   },
   {
    "text": "sur",
-   "start": 42.778,
-   "end": 42.916
+   "start": 42.88,
+   "end": 43.16
   },
   {
    "text": "mesure.",
-   "start": 42.916,
-   "end": 43.441
+   "start": 43.16,
+   "end": 43.52
   },
   {
    "text": "Trop",
-   "start": 43.816,
-   "end": 43.953
+   "start": 43.92,
+   "end": 44.06
   },
   {
    "text": "nombreux,",
-   "start": 43.953,
-   "end": 44.403
+   "start": 44.06,
+   "end": 44.4
   },
   {
    "text": "on",
-   "start": 44.703,
+   "start": 44.58,
    "end": 44.74
   },
   {
    "text": "pense",
    "start": 44.74,
-   "end": 44.953
+   "end": 44.96
   },
   {
    "text": "d'abord",
-   "start": 44.953,
-   "end": 45.303
+   "start": 44.96,
+   "end": 45.32
   },
   {
    "text": "à",
-   "start": 45.303,
-   "end": 45.365
+   "start": 45.32,
+   "end": 45.5
   },
   {
    "text": "un",
-   "start": 45.365,
-   "end": 45.416
+   "start": 45.5,
+   "end": 45.66
   },
   {
    "text": "virus.",
-   "start": 45.416,
-   "end": 45.99
+   "start": 45.66,
+   "end": 45.96
   },
   {
    "text": "Et",
-   "start": 46.378,
-   "end": 46.478
+   "start": 46.36,
+   "end": 46.6
   },
   {
-   "text": "sept :",
-   "start": 46.478,
-   "end": 46.903
+   "text": "sept :",
+   "start": 46.6,
+   "end": 46.9
   },
   {
    "text": "les",
-   "start": 47.203,
-   "end": 47.278
+   "start": 47.14,
+   "end": 47.34
   },
   {
    "text": "monocytes,",
-   "start": 47.278,
-   "end": 47.965
+   "start": 47.34,
+   "end": 47.92
   },
   {
    "text": "qui",
-   "start": 48.203,
-   "end": 48.328
+   "start": 48.1,
+   "end": 48.28
   },
   {
    "text": "avalent",
-   "start": 48.328,
-   "end": 48.54
+   "start": 48.28,
+   "end": 48.58
   },
   {
    "text": "eux",
-   "start": 48.54,
-   "end": 48.578
+   "start": 48.58,
+   "end": 48.74
   },
   {
    "text": "aussi",
-   "start": 48.578,
-   "end": 48.828
+   "start": 48.74,
+   "end": 48.98
   },
   {
    "text": "les",
-   "start": 48.828,
-   "end": 48.915
+   "start": 48.98,
+   "end": 49.16
   },
   {
    "text": "microbes.",
-   "start": 48.915,
-   "end": 49.516
+   "start": 49.16,
+   "end": 49.557
   },
   {
    "text": "Plaquettes,",
-   "start": 50.512,
-   "end": 51.088
+   "start": 50.364,
+   "end": 51.0
   },
   {
    "text": "globules",
-   "start": 51.284,
-   "end": 51.627
+   "start": 51.18,
+   "end": 51.44
   },
   {
    "text": "blancs,",
-   "start": 51.627,
-   "end": 51.921
+   "start": 51.44,
+   "end": 51.92
   },
   {
    "text": "cinq",
-   "start": 52.179,
-   "end": 52.424
+   "start": 52.02,
+   "end": 52.16
   },
   {
-   "text": "familles :",
-   "start": 52.424,
-   "end": 52.877
+   "text": "familles :",
+   "start": 52.16,
+   "end": 52.68
   },
   {
    "text": "c'est",
-   "start": 53.147,
-   "end": 53.306
+   "start": 52.94,
+   "end": 53.14
   },
   {
-   "text": "fait !",
-   "start": 53.306,
-   "end": 53.637
+   "text": "fait !",
+   "start": 53.14,
+   "end": 53.36
   },
   {
    "text": "Prochaine",
-   "start": 54.005,
-   "end": 54.397
+   "start": 53.74,
+   "end": 54.0
   },
   {
-   "text": "vidéo :",
-   "start": 54.397,
-   "end": 54.899
+   "text": "vidéo :",
+   "start": 54.0,
+   "end": 54.38
   },
   {
    "text": "l'hémoglobine",
-   "start": 55.353,
-   "end": 55.953
+   "start": 54.72,
+   "end": 55.36
   },
   {
    "text": "glyquée.",
-   "start": 55.953,
-   "end": 56.492
+   "start": 55.36,
+   "end": 55.7
   }
  ]
 }

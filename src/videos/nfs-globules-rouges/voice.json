@@ -1,738 +1,738 @@
 {
- "voice": "voix.wav (tts_voix.py)",
- "duration": 50.558,
+ "voice": "pad-nfs-globules-rouges.wav",
+ "duration": 51.834,
  "sections": [
   {
    "id": "intro",
-   "start": 0.06,
-   "end": 5.925
+   "start": 0.0,
+   "end": 6.88
   },
   {
    "id": "hematies",
-   "start": 6.864,
-   "end": 14.089
+   "start": 7.777,
+   "end": 15.684
   },
   {
    "id": "hemoglobine",
-   "start": 15.046,
-   "end": 22.534
+   "start": 16.523,
+   "end": 23.86
   },
   {
    "id": "hematocrite",
-   "start": 23.505,
-   "end": 31.667
+   "start": 24.71,
+   "end": 32.898
   },
   {
    "id": "vgm",
-   "start": 32.623,
-   "end": 40.422
+   "start": 33.731,
+   "end": 42.057
   },
   {
    "id": "fin",
-   "start": 41.392,
-   "end": 50.216
+   "start": 42.863,
+   "end": 51.68
   }
  ],
  "words": [
   {
    "text": "Le",
-   "start": 0.06,
-   "end": 0.204
+   "start": 0.0,
+   "end": 0.26
   },
   {
    "text": "tube",
-   "start": 0.204,
-   "end": 0.397
+   "start": 0.26,
+   "end": 0.5
   },
   {
    "text": "violet,",
-   "start": 0.397,
-   "end": 0.769
+   "start": 0.5,
+   "end": 0.86
   },
   {
    "text": "c'est",
-   "start": 1.166,
-   "end": 1.286
+   "start": 1.18,
+   "end": 1.28
   },
   {
    "text": "la",
-   "start": 1.286,
-   "end": 1.358
+   "start": 1.28,
+   "end": 1.58
   },
   {
    "text": "NFS.",
-   "start": 1.358,
-   "end": 1.791
+   "start": 1.58,
+   "end": 2.3
   },
   {
    "text": "Quatre",
-   "start": 1.791,
-   "end": 2.079
+   "start": 2.52,
+   "end": 2.84
   },
   {
    "text": "lignes",
-   "start": 2.079,
-   "end": 2.344
+   "start": 2.84,
+   "end": 3.16
   },
   {
    "text": "parlent",
-   "start": 2.344,
-   "end": 2.536
+   "start": 3.16,
+   "end": 3.48
   },
   {
    "text": "des",
-   "start": 2.536,
-   "end": 2.608
+   "start": 3.48,
+   "end": 3.68
   },
   {
    "text": "globules",
-   "start": 2.608,
-   "end": 2.873
+   "start": 3.68,
+   "end": 4.0
   },
   {
    "text": "rouges…",
-   "start": 2.873,
-   "end": 3.209
+   "start": 4.0,
+   "end": 4.46
   },
   {
    "text": "et",
-   "start": 3.594,
-   "end": 3.618
+   "start": 4.46,
+   "end": 4.74
   },
   {
    "text": "une",
-   "start": 3.618,
-   "end": 3.726
+   "start": 4.74,
+   "end": 4.96
   },
   {
    "text": "anémie",
-   "start": 3.726,
-   "end": 4.038
-  },
-  {
-   "text": "peut",
-   "start": 4.038,
-   "end": 4.159
-  },
-  {
-   "text": "s'y",
-   "start": 4.159,
-   "end": 4.303
-  },
-  {
-   "text": "cacher.",
-   "start": 4.303,
-   "end": 4.772
-  },
-  {
-   "text": "Tu",
-   "start": 5.144,
+   "start": 4.96,
    "end": 5.24
   },
   {
-   "text": "sais",
+   "text": "peut",
    "start": 5.24,
-   "end": 5.373
+   "end": 5.5
+  },
+  {
+   "text": "s'y",
+   "start": 5.5,
+   "end": 5.68
+  },
+  {
+   "text": "cacher.",
+   "start": 5.68,
+   "end": 6.02
+  },
+  {
+   "text": "Tu",
+   "start": 6.24,
+   "end": 6.4
+  },
+  {
+   "text": "sais",
+   "start": 6.4,
+   "end": 6.52
   },
   {
    "text": "les",
-   "start": 5.373,
-   "end": 5.493
+   "start": 6.52,
+   "end": 6.7
   },
   {
-   "text": "lire ?",
-   "start": 5.493,
-   "end": 5.925
+   "text": "lire ?",
+   "start": 6.7,
+   "end": 6.88
   },
   {
-   "text": "Un :",
-   "start": 6.864,
-   "end": 7.202
+   "text": "Un :",
+   "start": 7.777,
+   "end": 8.06
   },
   {
    "text": "les",
-   "start": 7.539,
-   "end": 7.627
+   "start": 8.4,
+   "end": 8.68
   },
   {
    "text": "hématies.",
-   "start": 7.627,
-   "end": 8.264
+   "start": 8.68,
+   "end": 9.34
   },
   {
    "text": "Ce",
-   "start": 8.601,
-   "end": 8.826
+   "start": 9.62,
+   "end": 9.68
   },
   {
    "text": "sont",
-   "start": 8.826,
-   "end": 8.976
+   "start": 9.68,
+   "end": 9.86
   },
   {
    "text": "les",
-   "start": 8.976,
-   "end": 9.052
+   "start": 9.86,
+   "end": 10.04
   },
   {
    "text": "globules",
-   "start": 9.052,
-   "end": 9.364
+   "start": 10.04,
+   "end": 10.36
   },
   {
    "text": "rouges.",
-   "start": 9.364,
-   "end": 9.802
+   "start": 10.36,
+   "end": 10.82
   },
   {
    "text": "Elles",
-   "start": 10.139,
-   "end": 10.314
+   "start": 11.0,
+   "end": 11.34
   },
   {
    "text": "transportent",
-   "start": 10.314,
-   "end": 10.764
+   "start": 11.34,
+   "end": 11.74
   },
   {
    "text": "l'oxygène",
-   "start": 10.764,
-   "end": 11.264
+   "start": 11.74,
+   "end": 12.34
   },
   {
    "text": "des",
-   "start": 11.264,
-   "end": 11.339
+   "start": 12.34,
+   "end": 12.54
   },
   {
    "text": "poumons",
-   "start": 11.339,
-   "end": 11.639
+   "start": 12.54,
+   "end": 12.84
   },
   {
    "text": "vers",
-   "start": 11.639,
-   "end": 11.789
+   "start": 12.84,
+   "end": 13.12
   },
   {
    "text": "tout",
-   "start": 11.789,
-   "end": 11.914
+   "start": 13.12,
+   "end": 13.32
   },
   {
    "text": "le",
-   "start": 11.914,
-   "end": 11.976
+   "start": 13.32,
+   "end": 13.56
   },
   {
    "text": "corps,",
-   "start": 11.976,
-   "end": 12.314
+   "start": 13.56,
+   "end": 13.8
   },
   {
    "text": "et",
-   "start": 12.664,
-   "end": 12.714
+   "start": 13.8,
+   "end": 14.12
   },
   {
    "text": "elles",
-   "start": 12.714,
-   "end": 12.789
+   "start": 14.12,
+   "end": 14.36
   },
   {
    "text": "vivent",
-   "start": 12.789,
-   "end": 12.976
+   "start": 14.36,
+   "end": 14.48
   },
   {
    "text": "environ",
-   "start": 12.976,
-   "end": 13.339
+   "start": 14.48,
+   "end": 14.98
   },
   {
    "text": "cent",
-   "start": 13.339,
-   "end": 13.527
+   "start": 14.98,
+   "end": 14.98
   },
   {
    "text": "vingt",
-   "start": 13.527,
-   "end": 13.701
+   "start": 14.98,
+   "end": 15.3
   },
   {
    "text": "jours.",
-   "start": 13.701,
-   "end": 14.089
+   "start": 15.3,
+   "end": 15.684
   },
   {
-   "text": "Deux :",
-   "start": 15.046,
-   "end": 15.459
+   "text": "Deux :",
+   "start": 16.523,
+   "end": 17.02
   },
   {
    "text": "l'hémoglobine.",
-   "start": 15.883,
-   "end": 16.733
+   "start": 17.3,
+   "end": 18.16
   },
   {
    "text": "C'est",
-   "start": 17.084,
-   "end": 17.271
+   "start": 18.48,
+   "end": 18.62
   },
   {
    "text": "la",
-   "start": 17.271,
-   "end": 17.346
+   "start": 18.62,
+   "end": 18.88
   },
   {
    "text": "protéine",
-   "start": 17.346,
-   "end": 17.846
+   "start": 18.88,
+   "end": 19.22
   },
   {
    "text": "qui",
-   "start": 17.846,
-   "end": 17.959
+   "start": 19.22,
+   "end": 19.54
   },
   {
    "text": "porte",
-   "start": 17.959,
-   "end": 18.221
+   "start": 19.54,
+   "end": 19.74
   },
   {
    "text": "l'oxygène,",
-   "start": 18.221,
-   "end": 18.934
+   "start": 19.74,
+   "end": 20.46
   },
   {
    "text": "dans",
-   "start": 19.209,
-   "end": 19.309
+   "start": 20.46,
+   "end": 20.84
   },
   {
    "text": "chaque",
-   "start": 19.309,
-   "end": 19.546
+   "start": 20.84,
+   "end": 21.02
   },
   {
    "text": "globule",
-   "start": 19.546,
-   "end": 19.821
+   "start": 21.02,
+   "end": 21.36
   },
   {
    "text": "rouge.",
-   "start": 19.821,
-   "end": 20.233
+   "start": 21.36,
+   "end": 21.62
   },
   {
    "text": "Quand",
-   "start": 20.571,
-   "end": 20.721
+   "start": 22.06,
+   "end": 22.22
   },
   {
    "text": "elle",
-   "start": 20.721,
-   "end": 20.871
+   "start": 22.22,
+   "end": 22.36
   },
   {
    "text": "est",
-   "start": 20.871,
-   "end": 20.909
+   "start": 22.36,
+   "end": 22.46
   },
   {
    "text": "trop",
-   "start": 20.909,
-   "end": 21.108
+   "start": 22.46,
+   "end": 22.66
   },
   {
    "text": "basse,",
-   "start": 21.108,
-   "end": 21.546
+   "start": 22.66,
+   "end": 23.1
   },
   {
    "text": "c'est",
-   "start": 21.784,
-   "end": 21.909
+   "start": 23.14,
+   "end": 23.36
   },
   {
    "text": "une",
-   "start": 21.909,
-   "end": 22.096
+   "start": 23.36,
+   "end": 23.52
   },
   {
    "text": "anémie.",
-   "start": 22.096,
-   "end": 22.534
+   "start": 23.52,
+   "end": 23.86
   },
   {
-   "text": "Trois :",
-   "start": 23.505,
-   "end": 23.892
+   "text": "Trois :",
+   "start": 24.71,
+   "end": 25.2
   },
   {
    "text": "l'hématocrite.",
-   "start": 24.305,
-   "end": 25.23
+   "start": 25.44,
+   "end": 26.28
   },
   {
    "text": "C'est",
-   "start": 25.579,
-   "end": 25.767
+   "start": 26.64,
+   "end": 26.82
   },
   {
    "text": "la",
-   "start": 25.767,
-   "end": 25.855
+   "start": 26.82,
+   "end": 27.0
   },
   {
    "text": "place",
-   "start": 25.855,
-   "end": 26.117
+   "start": 27.0,
+   "end": 27.14
   },
   {
    "text": "des",
-   "start": 26.117,
-   "end": 26.204
+   "start": 27.14,
+   "end": 27.34
   },
   {
    "text": "globules",
-   "start": 26.204,
-   "end": 26.505
+   "start": 27.34,
+   "end": 27.68
   },
   {
    "text": "rouges",
-   "start": 26.505,
-   "end": 26.88
+   "start": 27.68,
+   "end": 27.96
   },
   {
    "text": "dans",
-   "start": 26.88,
-   "end": 27.005
+   "start": 27.96,
+   "end": 28.12
   },
   {
    "text": "le",
-   "start": 27.005,
-   "end": 27.079
+   "start": 28.12,
+   "end": 28.32
   },
   {
    "text": "volume",
-   "start": 27.079,
-   "end": 27.38
+   "start": 28.32,
+   "end": 28.56
   },
   {
    "text": "du",
-   "start": 27.38,
-   "end": 27.505
+   "start": 28.56,
+   "end": 28.8
   },
   {
    "text": "sang.",
-   "start": 27.505,
-   "end": 27.855
+   "start": 28.8,
+   "end": 28.98
   },
   {
    "text": "Trop",
-   "start": 28.217,
-   "end": 28.467
+   "start": 28.98,
+   "end": 29.54
   },
   {
    "text": "haut,",
-   "start": 28.467,
-   "end": 28.654
+   "start": 29.54,
+   "end": 29.8
   },
   {
    "text": "on",
-   "start": 28.954,
-   "end": 28.992
+   "start": 30.04,
+   "end": 30.1
   },
   {
    "text": "pense",
-   "start": 28.992,
-   "end": 29.242
+   "start": 30.1,
+   "end": 30.34
   },
   {
    "text": "à",
-   "start": 29.242,
-   "end": 29.292
+   "start": 30.34,
+   "end": 30.46
   },
   {
    "text": "une",
-   "start": 29.292,
-   "end": 29.404
+   "start": 30.46,
+   "end": 30.62
   },
   {
-   "text": "polyglobulie :",
-   "start": 29.404,
-   "end": 30.167
+   "text": "polyglobulie :",
+   "start": 30.62,
+   "end": 31.46
   },
   {
    "text": "il",
-   "start": 30.529,
-   "end": 30.617
+   "start": 31.66,
+   "end": 31.7
   },
   {
    "text": "y",
-   "start": 30.617,
-   "end": 30.654
+   "start": 31.7,
+   "end": 31.86
   },
   {
    "text": "a",
-   "start": 30.654,
-   "end": 30.692
+   "start": 31.86,
+   "end": 32.0
   },
   {
    "text": "trop",
-   "start": 30.692,
-   "end": 30.892
+   "start": 32.0,
+   "end": 32.16
   },
   {
    "text": "de",
-   "start": 30.892,
-   "end": 30.98
+   "start": 32.16,
+   "end": 32.4
   },
   {
    "text": "globules",
-   "start": 30.98,
-   "end": 31.255
+   "start": 32.4,
+   "end": 32.64
   },
   {
    "text": "rouges.",
-   "start": 31.255,
-   "end": 31.667
+   "start": 32.64,
+   "end": 32.898
   },
   {
-   "text": "Quatre :",
-   "start": 32.623,
-   "end": 33.023
+   "text": "Quatre :",
+   "start": 33.731,
+   "end": 34.1
   },
   {
    "text": "le",
-   "start": 33.31,
-   "end": 33.385
+   "start": 34.38,
+   "end": 34.7
   },
   {
    "text": "VGM,",
-   "start": 33.385,
-   "end": 34.035
+   "start": 34.7,
+   "end": 35.26
   },
   {
    "text": "le",
-   "start": 34.41,
-   "end": 34.473
+   "start": 35.64,
+   "end": 35.88
   },
   {
    "text": "volume",
-   "start": 34.473,
-   "end": 34.785
+   "start": 35.88,
+   "end": 36.16
   },
   {
    "text": "globulaire",
-   "start": 34.785,
-   "end": 35.273
+   "start": 36.16,
+   "end": 36.82
   },
   {
    "text": "moyen.",
-   "start": 35.273,
-   "end": 35.685
+   "start": 36.82,
+   "end": 37.16
   },
   {
    "text": "C'est",
-   "start": 36.023,
-   "end": 36.223
+   "start": 37.66,
+   "end": 37.78
   },
   {
    "text": "la",
-   "start": 36.223,
-   "end": 36.31
+   "start": 37.78,
+   "end": 37.9
   },
   {
    "text": "taille",
-   "start": 36.31,
-   "end": 36.498
+   "start": 37.9,
+   "end": 38.14
   },
   {
    "text": "moyenne",
-   "start": 36.498,
-   "end": 36.91
+   "start": 38.14,
+   "end": 38.52
   },
   {
    "text": "des",
-   "start": 36.91,
-   "end": 36.985
+   "start": 38.52,
+   "end": 38.7
   },
   {
    "text": "globules",
-   "start": 36.985,
-   "end": 37.297
+   "start": 38.7,
+   "end": 39.02
   },
   {
    "text": "rouges.",
-   "start": 37.297,
-   "end": 37.735
+   "start": 39.02,
+   "end": 39.48
   },
   {
    "text": "Trop",
-   "start": 38.11,
-   "end": 38.26
+   "start": 39.66,
+   "end": 39.8
   },
   {
    "text": "petits,",
-   "start": 38.26,
-   "end": 38.685
+   "start": 39.8,
+   "end": 40.16
   },
   {
    "text": "on",
-   "start": 38.998,
-   "end": 39.035
+   "start": 40.46,
+   "end": 40.54
   },
   {
    "text": "pense",
-   "start": 39.035,
-   "end": 39.26
+   "start": 40.54,
+   "end": 40.72
   },
   {
    "text": "souvent",
-   "start": 39.26,
-   "end": 39.573
+   "start": 40.72,
+   "end": 41.1
   },
   {
    "text": "à",
-   "start": 39.573,
-   "end": 39.61
+   "start": 41.1,
+   "end": 41.26
   },
   {
    "text": "un",
-   "start": 39.61,
-   "end": 39.66
+   "start": 41.26,
+   "end": 41.38
   },
   {
    "text": "manque",
-   "start": 39.66,
-   "end": 39.873
+   "start": 41.38,
+   "end": 41.56
   },
   {
    "text": "de",
-   "start": 39.873,
-   "end": 39.985
+   "start": 41.56,
+   "end": 41.82
   },
   {
    "text": "fer.",
-   "start": 39.985,
-   "end": 40.422
+   "start": 41.82,
+   "end": 42.057
   },
   {
    "text": "Hématies,",
-   "start": 41.392,
-   "end": 42.004
+   "start": 42.863,
+   "end": 44.12
   },
   {
    "text": "hémoglobine,",
-   "start": 42.311,
-   "end": 43.034
+   "start": 44.12,
+   "end": 44.6
   },
   {
    "text": "hématocrite,",
-   "start": 43.377,
-   "end": 44.1
+   "start": 44.74,
+   "end": 45.48
   },
   {
-   "text": "VGM :",
-   "start": 44.406,
-   "end": 44.994
+   "text": "VGM :",
+   "start": 45.84,
+   "end": 46.24
   },
   {
    "text": "voilà",
-   "start": 45.472,
-   "end": 45.644
+   "start": 46.68,
+   "end": 46.86
   },
   {
    "text": "les",
-   "start": 45.644,
-   "end": 45.742
+   "start": 46.86,
+   "end": 47.12
   },
   {
    "text": "quatre",
-   "start": 45.742,
-   "end": 46.036
+   "start": 47.12,
+   "end": 47.36
   },
   {
    "text": "lignes",
-   "start": 46.036,
-   "end": 46.257
+   "start": 47.36,
+   "end": 47.68
   },
   {
    "text": "des",
-   "start": 46.257,
-   "end": 46.342
+   "start": 47.68,
+   "end": 47.86
   },
   {
    "text": "globules",
-   "start": 46.343,
-   "end": 46.624
+   "start": 47.86,
+   "end": 48.2
   },
   {
    "text": "rouges.",
-   "start": 46.624,
-   "end": 47.029
+   "start": 48.2,
+   "end": 48.76
   },
   {
    "text": "Dans",
-   "start": 47.36,
-   "end": 47.532
+   "start": 48.96,
+   "end": 49.02
   },
   {
    "text": "la",
-   "start": 47.532,
-   "end": 47.618
+   "start": 49.02,
+   "end": 49.18
   },
   {
    "text": "partie",
-   "start": 47.618,
-   "end": 47.949
+   "start": 49.18,
+   "end": 49.42
   },
   {
    "text": "deux,",
-   "start": 47.949,
-   "end": 48.218
+   "start": 49.42,
+   "end": 49.66
   },
   {
    "text": "on",
-   "start": 48.561,
-   "end": 48.598
+   "start": 49.88,
+   "end": 49.94
   },
   {
    "text": "passe",
-   "start": 48.598,
-   "end": 48.831
+   "start": 49.94,
+   "end": 50.14
   },
   {
    "text": "aux",
-   "start": 48.831,
-   "end": 48.88
+   "start": 50.14,
+   "end": 50.32
   },
   {
    "text": "globules",
-   "start": 48.88,
-   "end": 49.186
+   "start": 50.32,
+   "end": 50.66
   },
   {
    "text": "blancs",
-   "start": 49.186,
-   "end": 49.444
+   "start": 50.66,
+   "end": 50.98
   },
   {
    "text": "et",
-   "start": 49.444,
-   "end": 49.542
+   "start": 50.98,
+   "end": 51.14
   },
   {
    "text": "aux",
-   "start": 49.542,
-   "end": 49.579
+   "start": 51.14,
+   "end": 51.3
   },
   {
    "text": "plaquettes.",
-   "start": 49.579,
-   "end": 50.216
+   "start": 51.3,
+   "end": 51.68
   }
  ]
 }

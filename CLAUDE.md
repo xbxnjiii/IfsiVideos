@@ -721,26 +721,26 @@ script), « en France » / « le 15 (ou le numéro d'urgence de ton pays) ». Ca
 - **Série « Le tube violet » courte** (demandée : la NFS, l'HbA1c, le groupe, la charge virale « et complète si j'ai oublié » ;
   directives Instagram : 45 – 60 s, pastille « LE TUBE VIOLET · … » + compteur n/N dès l'image 0, sans appel à l'action ;
   storyboard `docs/lpi/storyboard-tube-violet-serie.md`). La NFS ne tient pas en 60 s → **2 parties**. `NFS-Globules-Rouges`
-  (n° 67, ≈ 54 s, voix gratuite d'abord) : « Le tube violet, c'est la NFS. Quatre lignes parlent des globules rouges… et une
+  (n° 67, ≈ 56 s, voix Laura après validation (964 crédits)) : « Le tube violet, c'est la NFS. Quatre lignes parlent des globules rouges… et une
   anémie peut s'y cacher. Tu sais les lire ? », puis « Un : les hématies… Quatre : le VGM » (scènes de la n° 62 recalées,
   cartes NORMES), ajout : VGM bas = souvent un manque de fer ; fin = fiche cochée + carte « À SUIVRE · NFS 2/2 ».
-  `NFS-Globules-Blancs` (n° 68, ≈ 60 s, voix gratuite d'abord) : « La NFS, partie deux : sept lignes… une infection… ou une
+  `NFS-Globules-Blancs` (n° 68, ≈ 60 s, voix Laura après validation (1 021 crédits)) : « La NFS, partie deux : sept lignes… une infection… ou une
   hémorragie », plaquettes, leucocytes, formule (PNN, PNE, PNB), lymphocytes, monocytes (compteur `steps` qui avance au mot
   dans une même scène), fin = fiche cochée + « prochaine vidéo : l'hémoglobine glyquée ». Voix : `check:voice` entend
   « thrombopénie » comme « trombe au pénis » : c'est Whisper (amorcé avec du vocabulaire médical, il l'entend bien), pas la voix.
-  `HbA1c` (n° 69, ≈ 57 s, voix gratuite d'abord) : accroche **« photo ou film »** (« Ta glycémie, c'est une photo.
+  `HbA1c` (n° 69, ≈ 55 s, voix Laura après validation (1 015 crédits)) : accroche **« photo ou film »** (« Ta glycémie, c'est une photo.
   L'hémoglobine glyquée, c'est le film de tes trois derniers mois… elle guide tout le traitement »), puis c'est quoi, pourquoi
   3 mois (120 jours), objectifs (type 2 < 7 %, type 1 7 – 7,5 %, complications), en pratique (pas à jeun, ≈ tous les 3 mois),
   fin + « prochaine vidéo : le groupe sanguin ». Titre : `*3* *mois*` (pas `*3 mois*`) ; « collé » = « colle » pour `at()`.
-  `Groupe-Sanguin` (n° 70, ≈ 59 s, voix gratuite d'abord) : « Une seule erreur de groupe sanguin pendant une transfusion…
+  `Groupe-Sanguin` (n° 70, ≈ 61 s, voix Laura après validation (1 031 crédits)) : « Une seule erreur de groupe sanguin pendant une transfusion…
   peut être mortelle. Alors pourquoi deux prises de sang, et c'est quoi les RAI ? », ABO, rhésus, 2 déterminations (+ identité,
   étiquette devant le patient), RAI (en général valables 3 jours), fin « transfusion sécurisée » + « prochaine vidéo : la charge
   virale ». Briques locales `TypedCell` (marqueurs A / B / D), `Antibody`, `BloodBag`, `Bracelet`.
-  `Charge-Virale` (n° 71, ≈ 60 s, voix gratuite d'abord) : « Charge virale indétectable : avec le VIH, ça veut dire que le
+  `Charge-Virale` (n° 71, ≈ 60 s, voix Laura après validation (1 029 crédits)) : « Charge virale indétectable : avec le VIH, ça veut dire que le
   virus ne se transmet plus sexuellement… » (écran qui descend jusqu'à INDÉTECTABLE, tampon I = I), c'est quoi (copies/mL ≠
   sérologie), VIH (< 50 copies/mL), hépatite B, hépatite C (guérison), fin + « prochaine vidéo : les médicaments anti-rejet ».
   Voix : un mot seul en début de phrase (« Indétectable. ») part en anglais ; « La charge virale répond. » part en espagnol.
-  `Anti-Rejet` (n° 72, ≈ 54 s, voix gratuite d'abord, ajout de l'agent sur les médicaments cités par le propriétaire) : « Quand
+  `Anti-Rejet` (n° 72, ≈ 55 s, voix Laura après validation (962 crédits ; **Laura a sauté « Trop bas : » dans l'accroche** : à recoller si le propriétaire valide ≈ 50 crédits), ajout de l'agent sur les médicaments cités par le propriétaire) : « Quand
   on a reçu le rein d'un donneur, l'anti-rejet se prend à vie. Trop bas : le corps rejette le greffon. Trop haut : il abîme les
   reins. », pourquoi (immunosuppresseur), ciclosporine / tacrolimus / évérolimus (sang entier → tube violet), marge étroite,
   taux résiduel (juste avant la prise, noter l'heure), bonus pamplemousse, **série terminée** (les 6 vidéos cochées).
@@ -751,7 +751,9 @@ script), « en France » / « le 15 (ou le numéro d'urgence de ton pays) ». Ca
 ## Voix ElevenLabs « Laura » (choisie par le propriétaire pour les nouvelles vidéos)
 
 - Connecteur ElevenLabs : voix `Laura` (`MmafIMKg28Wr0yMh8CEB`), modèle `eleven_v4` ; l'ancien flow `6O4tHaBowSG52722wkdC` n'est plus accessible
-  (« You do not have access to this template », rien de facturé) → flow `BrySoMOS2i2Sgfputx9I` (n° 66).
+  (« You do not have access to this template », rien de facturé) → flow `BrySoMOS2i2Sgfputx9I` (n° 66 à 72). Les 6 prises
+  du tube violet ont été lancées d'un coup (une par vidéo, 6 022 crédits) ; `check:voice` coupe parfois le début d'une
+  partie (« Un : c'est quoi ? » absent) : transcrire la prise brute avant de conclure qu'un mot manque.
   `creative_generate_speech` avec **tout le texte en une fois**. Balises de jeu `[amused]`, `[sarcastic]`,
   `[confident]`, `[warmly]`, `[excited]`. `[pause]` entre les parties. Nombres en lettres.
 - Puis `creative_get_flow_run_status` pour récupérer la prise, et `curl` de `content_url`. Alignement :

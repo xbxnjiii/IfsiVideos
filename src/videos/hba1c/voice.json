@@ -1,788 +1,788 @@
 {
- "voice": "voix.wav (tts_voix.py)",
- "duration": 52.91,
+ "voice": "pad-hba1c.wav",
+ "duration": 51.118,
  "sections": [
   {
    "id": "intro",
-   "start": 0.049,
-   "end": 7.598
+   "start": 0.0,
+   "end": 7.545
   },
   {
    "id": "quoi",
-   "start": 8.533,
-   "end": 16.645
+   "start": 8.344,
+   "end": 16.164
   },
   {
    "id": "mois",
-   "start": 17.614,
-   "end": 26.664
+   "start": 16.964,
+   "end": 26.518
   },
   {
    "id": "objectif",
-   "start": 27.62,
-   "end": 38.145
+   "start": 27.323,
+   "end": 37.736
   },
   {
    "id": "pratique",
-   "start": 39.09,
-   "end": 45.19
+   "start": 38.542,
+   "end": 44.104
   },
   {
    "id": "fin",
-   "start": 46.144,
-   "end": 52.589
+   "start": 44.924,
+   "end": 50.92
   }
  ],
  "words": [
   {
    "text": "Ta",
-   "start": 0.049,
-   "end": 0.193
+   "start": 0.0,
+   "end": 0.28
   },
   {
    "text": "glycémie,",
-   "start": 0.193,
-   "end": 0.782
+   "start": 0.28,
+   "end": 0.8
   },
   {
    "text": "c'est",
-   "start": 1.059,
-   "end": 1.167
+   "start": 1.04,
+   "end": 1.16
   },
   {
    "text": "une",
-   "start": 1.167,
-   "end": 1.347
+   "start": 1.16,
+   "end": 1.34
   },
   {
    "text": "photo.",
-   "start": 1.347,
-   "end": 1.792
+   "start": 1.34,
+   "end": 1.7
   },
   {
    "text": "L'hémoglobine",
-   "start": 2.175,
-   "end": 2.776
+   "start": 2.1,
+   "end": 2.74
   },
   {
    "text": "glyquée,",
-   "start": 2.776,
-   "end": 3.221
+   "start": 2.74,
+   "end": 3.14
   },
   {
    "text": "c'est",
-   "start": 3.582,
-   "end": 3.69
+   "start": 3.22,
+   "end": 3.42
   },
   {
    "text": "le",
-   "start": 3.69,
-   "end": 3.798
+   "start": 3.42,
+   "end": 3.66
   },
   {
    "text": "film",
-   "start": 3.798,
-   "end": 4.087
+   "start": 3.66,
+   "end": 3.9
   },
   {
    "text": "de",
-   "start": 4.087,
-   "end": 4.171
+   "start": 3.9,
+   "end": 4.1
   },
   {
    "text": "tes",
-   "start": 4.171,
-   "end": 4.267
+   "start": 4.1,
+   "end": 4.3
   },
   {
    "text": "trois",
-   "start": 4.267,
-   "end": 4.447
+   "start": 4.3,
+   "end": 4.46
   },
   {
    "text": "derniers",
-   "start": 4.447,
-   "end": 4.724
+   "start": 4.46,
+   "end": 4.82
   },
   {
    "text": "mois.",
-   "start": 4.724,
-   "end": 5.036
+   "start": 4.82,
+   "end": 4.96
   },
   {
    "text": "Et",
-   "start": 5.362,
-   "end": 5.495
+   "start": 5.28,
+   "end": 5.4
   },
   {
    "text": "pour",
-   "start": 5.495,
-   "end": 5.663
+   "start": 5.4,
+   "end": 5.56
   },
   {
    "text": "un",
-   "start": 5.663,
-   "end": 5.699
+   "start": 5.56,
+   "end": 5.74
   },
   {
    "text": "diabétique,",
-   "start": 5.699,
-   "end": 6.312
+   "start": 5.74,
+   "end": 6.22
   },
   {
    "text": "elle",
-   "start": 6.564,
-   "end": 6.649
+   "start": 6.34,
+   "end": 6.54
   },
   {
    "text": "guide",
-   "start": 6.649,
-   "end": 6.913
+   "start": 6.54,
+   "end": 6.82
   },
   {
    "text": "tout",
-   "start": 6.913,
-   "end": 7.033
+   "start": 6.82,
+   "end": 7.12
   },
   {
    "text": "le",
-   "start": 7.033,
-   "end": 7.093
+   "start": 7.12,
+   "end": 7.3
   },
   {
    "text": "traitement.",
-   "start": 7.093,
-   "end": 7.598
+   "start": 7.3,
+   "end": 7.545
   },
   {
-   "text": "Un :",
-   "start": 8.533,
-   "end": 8.783
+   "text": "Un :",
+   "start": 8.344,
+   "end": 8.64
   },
   {
    "text": "c'est",
-   "start": 9.07,
-   "end": 9.22
+   "start": 8.92,
+   "end": 9.18
   },
   {
-   "text": "quoi ?",
-   "start": 9.22,
-   "end": 9.57
+   "text": "quoi ?",
+   "start": 9.18,
+   "end": 9.36
   },
   {
    "text": "Le",
-   "start": 9.945,
-   "end": 10.083
+   "start": 9.86,
+   "end": 10.06
   },
   {
    "text": "sucre",
-   "start": 10.083,
-   "end": 10.395
+   "start": 10.06,
+   "end": 10.34
   },
   {
    "text": "du",
-   "start": 10.395,
-   "end": 10.495
+   "start": 10.34,
+   "end": 10.54
   },
   {
    "text": "sang",
-   "start": 10.495,
-   "end": 10.645
+   "start": 10.54,
+   "end": 10.7
   },
   {
    "text": "se",
-   "start": 10.645,
-   "end": 10.783
+   "start": 10.7,
+   "end": 11.02
   },
   {
    "text": "colle,",
-   "start": 10.783,
-   "end": 11.183
+   "start": 11.02,
+   "end": 11.26
   },
   {
    "text": "peu",
-   "start": 11.433,
-   "end": 11.533
+   "start": 11.48,
+   "end": 11.58
   },
   {
    "text": "à",
-   "start": 11.533,
-   "end": 11.633
+   "start": 11.58,
+   "end": 11.78
   },
   {
    "text": "peu,",
-   "start": 11.633,
-   "end": 11.957
+   "start": 11.78,
+   "end": 11.94
   },
   {
    "text": "à",
-   "start": 12.27,
-   "end": 12.358
+   "start": 12.12,
+   "end": 12.2
   },
   {
    "text": "l'hémoglobine",
-   "start": 12.358,
-   "end": 12.957
+   "start": 12.2,
+   "end": 12.8
   },
   {
    "text": "des",
-   "start": 12.957,
-   "end": 13.033
+   "start": 12.8,
+   "end": 13.0
   },
   {
    "text": "globules",
-   "start": 13.033,
-   "end": 13.32
+   "start": 13.0,
+   "end": 13.26
   },
   {
    "text": "rouges.",
-   "start": 13.32,
-   "end": 13.745
+   "start": 13.26,
+   "end": 13.86
   },
   {
    "text": "Ce",
-   "start": 14.082,
-   "end": 14.308
+   "start": 14.08,
+   "end": 14.18
   },
   {
    "text": "sucre",
-   "start": 14.308,
-   "end": 14.645
+   "start": 14.18,
+   "end": 14.54
   },
   {
    "text": "collé,",
-   "start": 14.645,
-   "end": 15.045
+   "start": 14.54,
+   "end": 14.9
   },
   {
    "text": "c'est",
-   "start": 15.408,
-   "end": 15.545
+   "start": 14.98,
+   "end": 15.18
   },
   {
    "text": "l'hémoglobine",
-   "start": 15.545,
-   "end": 16.133
+   "start": 15.18,
+   "end": 15.8
   },
   {
    "text": "glyquée.",
-   "start": 16.133,
-   "end": 16.645
+   "start": 15.8,
+   "end": 16.164
   },
   {
-   "text": "Deux :",
-   "start": 17.614,
-   "end": 18.026
+   "text": "Deux :",
+   "start": 16.964,
+   "end": 17.38
   },
   {
    "text": "pourquoi",
-   "start": 18.314,
-   "end": 18.627
+   "start": 17.72,
+   "end": 18.04
   },
   {
    "text": "trois",
-   "start": 18.627,
-   "end": 18.839
+   "start": 18.04,
+   "end": 18.32
   },
   {
-   "text": "mois ?",
-   "start": 18.839,
-   "end": 19.139
+   "text": "mois ?",
+   "start": 18.32,
+   "end": 18.5
   },
   {
    "text": "Parce",
-   "start": 19.502,
-   "end": 19.677
+   "start": 18.9,
+   "end": 19.12
   },
   {
    "text": "qu'un",
-   "start": 19.677,
-   "end": 19.814
+   "start": 19.12,
+   "end": 19.36
   },
   {
    "text": "globule",
-   "start": 19.814,
-   "end": 20.139
+   "start": 19.36,
+   "end": 19.62
   },
   {
    "text": "rouge",
-   "start": 20.139,
-   "end": 20.489
+   "start": 19.62,
+   "end": 19.9
   },
   {
    "text": "vit",
-   "start": 20.489,
-   "end": 20.614
+   "start": 19.9,
+   "end": 20.08
   },
   {
    "text": "environ",
-   "start": 20.614,
-   "end": 20.939
+   "start": 20.08,
+   "end": 20.56
   },
   {
    "text": "cent",
-   "start": 20.939,
-   "end": 21.127
+   "start": 20.56,
+   "end": 20.56
   },
   {
    "text": "vingt",
-   "start": 21.127,
-   "end": 21.302
+   "start": 20.56,
+   "end": 20.84
   },
   {
    "text": "jours,",
-   "start": 21.302,
-   "end": 21.639
+   "start": 20.84,
+   "end": 21.24
   },
   {
    "text": "et",
-   "start": 21.977,
-   "end": 22.002
+   "start": 21.36,
+   "end": 21.52
   },
   {
    "text": "il",
-   "start": 22.002,
-   "end": 22.089
+   "start": 21.52,
+   "end": 21.66
   },
   {
    "text": "garde",
-   "start": 22.089,
-   "end": 22.364
+   "start": 21.66,
+   "end": 21.84
   },
   {
    "text": "son",
-   "start": 22.364,
-   "end": 22.489
+   "start": 21.84,
+   "end": 22.1
   },
   {
    "text": "sucre",
-   "start": 22.489,
-   "end": 22.852
+   "start": 22.1,
+   "end": 22.46
   },
   {
    "text": "jusqu'au",
-   "start": 22.852,
-   "end": 23.139
+   "start": 22.46,
+   "end": 22.92
   },
   {
    "text": "bout.",
-   "start": 23.139,
-   "end": 23.389
+   "start": 22.92,
+   "end": 23.04
   },
   {
    "text": "Elle",
-   "start": 23.727,
-   "end": 23.914
+   "start": 23.4,
+   "end": 23.6
   },
   {
    "text": "reflète",
-   "start": 23.914,
-   "end": 24.364
+   "start": 23.6,
+   "end": 23.88
   },
   {
    "text": "donc",
-   "start": 24.364,
-   "end": 24.576
+   "start": 23.88,
+   "end": 24.16
   },
   {
    "text": "la",
-   "start": 24.576,
-   "end": 24.677
+   "start": 24.16,
+   "end": 24.34
   },
   {
    "text": "glycémie",
-   "start": 24.677,
-   "end": 25.089
+   "start": 24.34,
+   "end": 24.7
   },
   {
    "text": "moyenne",
-   "start": 25.089,
-   "end": 25.539
+   "start": 24.7,
+   "end": 25.18
   },
   {
    "text": "des",
-   "start": 25.539,
-   "end": 25.651
+   "start": 25.18,
+   "end": 25.42
   },
   {
    "text": "deux",
-   "start": 25.651,
-   "end": 25.826
+   "start": 25.42,
+   "end": 25.66
   },
   {
    "text": "à",
-   "start": 25.826,
-   "end": 25.889
+   "start": 25.66,
+   "end": 25.86
   },
   {
    "text": "trois",
-   "start": 25.889,
-   "end": 26.076
+   "start": 25.86,
+   "end": 26.1
   },
   {
    "text": "derniers",
-   "start": 26.076,
-   "end": 26.339
+   "start": 26.1,
+   "end": 26.42
   },
   {
    "text": "mois.",
-   "start": 26.339,
-   "end": 26.664
+   "start": 26.42,
+   "end": 26.518
   },
   {
-   "text": "Trois :",
-   "start": 27.62,
-   "end": 28.032
+   "text": "Trois :",
+   "start": 27.323,
+   "end": 27.68
   },
   {
    "text": "l'objectif.",
-   "start": 28.445,
-   "end": 29.282
+   "start": 28.04,
+   "end": 29.02
   },
   {
    "text": "En",
-   "start": 29.633,
-   "end": 29.745
+   "start": 29.16,
+   "end": 29.38
   },
   {
    "text": "général,",
-   "start": 29.745,
-   "end": 30.295
+   "start": 29.38,
+   "end": 29.82
   },
   {
    "text": "moins",
-   "start": 30.657,
-   "end": 30.808
+   "start": 30.08,
+   "end": 30.18
   },
   {
    "text": "de",
-   "start": 30.808,
-   "end": 30.92
+   "start": 30.18,
+   "end": 30.48
   },
   {
    "text": "sept",
-   "start": 30.92,
-   "end": 31.108
+   "start": 30.48,
+   "end": 30.64
   },
   {
    "text": "pour",
-   "start": 31.108,
-   "end": 31.295
+   "start": 30.64,
+   "end": 30.64
   },
   {
    "text": "cent",
-   "start": 31.295,
-   "end": 31.445
+   "start": 30.64,
+   "end": 31.02
   },
   {
    "text": "dans",
-   "start": 31.445,
-   "end": 31.545
+   "start": 31.02,
+   "end": 31.16
   },
   {
    "text": "le",
-   "start": 31.545,
-   "end": 31.62
+   "start": 31.16,
+   "end": 31.34
   },
   {
    "text": "diabète",
-   "start": 31.62,
-   "end": 31.933
+   "start": 31.34,
+   "end": 31.58
   },
   {
    "text": "de",
-   "start": 31.933,
-   "end": 32.02
+   "start": 31.58,
+   "end": 31.8
   },
   {
    "text": "type",
-   "start": 32.02,
-   "end": 32.245
+   "start": 31.8,
+   "end": 31.88
   },
   {
    "text": "deux,",
-   "start": 32.245,
-   "end": 32.495
+   "start": 31.88,
+   "end": 32.2
   },
   {
    "text": "et",
-   "start": 32.858,
-   "end": 32.92
+   "start": 32.2,
+   "end": 32.46
   },
   {
    "text": "entre",
-   "start": 32.92,
-   "end": 33.145
+   "start": 32.46,
+   "end": 32.74
   },
   {
    "text": "sept",
-   "start": 33.145,
-   "end": 33.333
+   "start": 32.74,
+   "end": 33.1
   },
   {
    "text": "et",
-   "start": 33.333,
-   "end": 33.383
+   "start": 33.1,
+   "end": 33.24
   },
   {
    "text": "sept",
-   "start": 33.383,
-   "end": 33.62
+   "start": 33.24,
+   "end": 33.54
   },
   {
    "text": "et",
-   "start": 33.62,
-   "end": 33.657
+   "start": 33.54,
+   "end": 33.54
   },
   {
    "text": "demi",
-   "start": 33.657,
-   "end": 33.858
+   "start": 33.54,
+   "end": 33.76
   },
   {
    "text": "pour",
-   "start": 33.858,
-   "end": 34.057
+   "start": 33.76,
+   "end": 34.12
   },
   {
    "text": "cent",
-   "start": 34.057,
-   "end": 34.195
+   "start": 33.76,
+   "end": 34.12
   },
   {
    "text": "dans",
-   "start": 34.195,
-   "end": 34.282
+   "start": 34.12,
+   "end": 34.24
   },
   {
    "text": "le",
-   "start": 34.282,
-   "end": 34.37
+   "start": 34.24,
+   "end": 34.42
   },
   {
    "text": "type",
-   "start": 34.37,
-   "end": 34.608
+   "start": 34.42,
+   "end": 34.56
   },
   {
    "text": "un.",
-   "start": 34.608,
-   "end": 34.807
+   "start": 34.56,
+   "end": 34.94
   },
   {
    "text": "Plus",
-   "start": 35.145,
-   "end": 35.345
+   "start": 35.22,
+   "end": 35.38
   },
   {
    "text": "elle",
-   "start": 35.345,
-   "end": 35.532
+   "start": 35.38,
+   "end": 35.56
   },
   {
    "text": "monte,",
-   "start": 35.532,
-   "end": 35.97
+   "start": 35.56,
+   "end": 35.82
   },
   {
    "text": "plus",
-   "start": 36.258,
-   "end": 36.483
+   "start": 36.02,
+   "end": 36.18
   },
   {
    "text": "le",
-   "start": 36.483,
-   "end": 36.582
+   "start": 36.18,
+   "end": 36.36
   },
   {
    "text": "risque",
-   "start": 36.582,
-   "end": 36.883
+   "start": 36.36,
+   "end": 36.56
   },
   {
    "text": "de",
-   "start": 36.883,
-   "end": 36.97
+   "start": 36.56,
+   "end": 36.88
   },
   {
    "text": "complications",
-   "start": 36.97,
-   "end": 37.582
+   "start": 36.88,
+   "end": 37.24
   },
   {
    "text": "augmente.",
-   "start": 37.582,
-   "end": 38.145
+   "start": 37.24,
+   "end": 37.736
   },
   {
-   "text": "Quatre :",
-   "start": 39.09,
-   "end": 39.49
+   "text": "Quatre :",
+   "start": 38.542,
+   "end": 38.86
   },
   {
    "text": "en",
-   "start": 39.84,
-   "end": 39.865
+   "start": 39.22,
+   "end": 39.4
   },
   {
    "text": "pratique,",
-   "start": 39.865,
-   "end": 40.49
+   "start": 39.4,
+   "end": 39.84
   },
   {
    "text": "pas",
-   "start": 40.703,
-   "end": 40.815
+   "start": 40.16,
+   "end": 40.28
   },
   {
    "text": "besoin",
-   "start": 40.815,
-   "end": 41.127
+   "start": 40.28,
+   "end": 40.48
   },
   {
    "text": "d'être",
-   "start": 41.127,
-   "end": 41.352
+   "start": 40.48,
+   "end": 40.78
   },
   {
    "text": "à",
-   "start": 41.352,
-   "end": 41.377
+   "start": 40.78,
+   "end": 40.9
   },
   {
    "text": "jeun.",
-   "start": 41.377,
-   "end": 41.79
+   "start": 40.9,
+   "end": 41.06
   },
   {
    "text": "On",
-   "start": 42.127,
-   "end": 42.265
+   "start": 41.36,
+   "end": 41.46
   },
   {
    "text": "la",
-   "start": 42.265,
-   "end": 42.352
+   "start": 41.46,
+   "end": 41.7
   },
   {
    "text": "contrôle",
-   "start": 42.352,
-   "end": 42.727
+   "start": 41.7,
+   "end": 41.88
   },
   {
    "text": "environ",
-   "start": 42.727,
-   "end": 43.14
+   "start": 41.88,
+   "end": 42.32
   },
   {
    "text": "tous",
-   "start": 43.14,
-   "end": 43.265
+   "start": 42.32,
+   "end": 42.54
   },
   {
    "text": "les",
-   "start": 43.265,
-   "end": 43.352
+   "start": 42.54,
+   "end": 42.72
   },
   {
    "text": "trois",
-   "start": 43.352,
-   "end": 43.565
+   "start": 42.72,
+   "end": 42.86
   },
   {
    "text": "mois,",
-   "start": 43.565,
-   "end": 43.852
+   "start": 42.86,
+   "end": 43.06
   },
   {
    "text": "pour",
-   "start": 44.14,
-   "end": 44.29
+   "start": 43.06,
+   "end": 43.36
   },
   {
    "text": "ajuster",
-   "start": 44.29,
-   "end": 44.602
+   "start": 43.36,
+   "end": 43.74
   },
   {
    "text": "le",
-   "start": 44.602,
-   "end": 44.69
+   "start": 43.74,
+   "end": 43.88
   },
   {
    "text": "traitement.",
-   "start": 44.69,
-   "end": 45.19
+   "start": 43.88,
+   "end": 44.104
   },
   {
    "text": "La",
-   "start": 46.144,
-   "end": 46.34
+   "start": 44.924,
+   "end": 45.18
   },
   {
    "text": "glycémie,",
-   "start": 46.34,
-   "end": 46.879
+   "start": 45.18,
+   "end": 45.68
   },
   {
    "text": "c'est",
-   "start": 47.185,
-   "end": 47.308
+   "start": 46.0,
+   "end": 46.08
   },
   {
    "text": "l'instant.",
-   "start": 47.308,
-   "end": 47.81
+   "start": 46.08,
+   "end": 46.52
   },
   {
    "text": "L'hémoglobine",
-   "start": 48.202,
-   "end": 48.79
+   "start": 46.94,
+   "end": 47.52
   },
   {
    "text": "glyquée,",
-   "start": 48.79,
-   "end": 49.243
+   "start": 47.52,
+   "end": 47.92
   },
   {
    "text": "c'est",
-   "start": 49.587,
-   "end": 49.709
+   "start": 48.18,
+   "end": 48.34
   },
   {
    "text": "trois",
-   "start": 49.709,
-   "end": 49.942
+   "start": 48.34,
+   "end": 48.58
   },
   {
    "text": "mois.",
-   "start": 49.942,
-   "end": 50.273
+   "start": 48.58,
+   "end": 48.76
   },
   {
    "text": "Prochaine",
-   "start": 50.616,
-   "end": 50.984
+   "start": 49.28,
+   "end": 49.54
   },
   {
-   "text": "vidéo :",
-   "start": 50.984,
-   "end": 51.449
+   "text": "vidéo :",
+   "start": 49.54,
+   "end": 49.9
   },
   {
    "text": "le",
-   "start": 51.842,
-   "end": 51.891
+   "start": 50.24,
+   "end": 50.38
   },
   {
    "text": "groupe",
-   "start": 51.891,
-   "end": 52.123
+   "start": 50.38,
+   "end": 50.6
   },
   {
    "text": "sanguin.",
-   "start": 52.123,
-   "end": 52.589
+   "start": 50.6,
+   "end": 50.92
   }
  ]
 }
