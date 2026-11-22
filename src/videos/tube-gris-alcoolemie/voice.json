@@ -1,0 +1,838 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 53.15,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.05,
+   "end": 6.478
+  },
+  {
+   "id": "quand",
+   "start": 7.454,
+   "end": 15.791
+  },
+  {
+   "id": "geste",
+   "start": 16.75,
+   "end": 25.462
+  },
+  {
+   "id": "seuils",
+   "start": 26.47,
+   "end": 34.545
+  },
+  {
+   "id": "corps",
+   "start": 35.49,
+   "end": 45.94
+  },
+  {
+   "id": "fin",
+   "start": 46.888,
+   "end": 52.807
+  }
+ ],
+ "words": [
+  {
+   "text": "Pour",
+   "start": 0.05,
+   "end": 0.242
+  },
+  {
+   "text": "une",
+   "start": 0.242,
+   "end": 0.326
+  },
+  {
+   "text": "alcoolémie,",
+   "start": 0.326,
+   "end": 0.879
+  },
+  {
+   "text": "une",
+   "start": 1.216,
+   "end": 1.288
+  },
+  {
+   "text": "seule",
+   "start": 1.288,
+   "end": 1.48
+  },
+  {
+   "text": "erreur",
+   "start": 1.48,
+   "end": 1.757
+  },
+  {
+   "text": "peut",
+   "start": 1.757,
+   "end": 1.865
+  },
+  {
+   "text": "fausser",
+   "start": 1.865,
+   "end": 2.141
+  },
+  {
+   "text": "le",
+   "start": 2.141,
+   "end": 2.213
+  },
+  {
+   "text": "résultat :",
+   "start": 2.213,
+   "end": 2.694
+  },
+  {
+   "text": "désinfecter",
+   "start": 3.043,
+   "end": 3.512
+  },
+  {
+   "text": "la",
+   "start": 3.512,
+   "end": 3.608
+  },
+  {
+   "text": "peau",
+   "start": 3.608,
+   "end": 3.788
+  },
+  {
+   "text": "avec",
+   "start": 3.788,
+   "end": 3.968
+  },
+  {
+   "text": "de",
+   "start": 3.968,
+   "end": 4.04
+  },
+  {
+   "text": "l'alcool.",
+   "start": 4.04,
+   "end": 4.581
+  },
+  {
+   "text": "Alors,",
+   "start": 4.952,
+   "end": 5.385
+  },
+  {
+   "text": "comment",
+   "start": 5.577,
+   "end": 5.805
+  },
+  {
+   "text": "on",
+   "start": 5.805,
+   "end": 5.853
+  },
+  {
+   "text": "la",
+   "start": 5.853,
+   "end": 5.938
+  },
+  {
+   "text": "prélève ?",
+   "start": 5.938,
+   "end": 6.478
+  },
+  {
+   "text": "Un :",
+   "start": 7.454,
+   "end": 7.678
+  },
+  {
+   "text": "quand",
+   "start": 7.916,
+   "end": 8.028
+  },
+  {
+   "text": "la",
+   "start": 8.028,
+   "end": 8.116
+  },
+  {
+   "text": "demande-t-on ?",
+   "start": 8.116,
+   "end": 8.753
+  },
+  {
+   "text": "Aux",
+   "start": 9.091,
+   "end": 9.253
+  },
+  {
+   "text": "urgences,",
+   "start": 9.253,
+   "end": 9.891
+  },
+  {
+   "text": "devant",
+   "start": 10.166,
+   "end": 10.378
+  },
+  {
+   "text": "un",
+   "start": 10.378,
+   "end": 10.416
+  },
+  {
+   "text": "malaise,",
+   "start": 10.416,
+   "end": 10.916
+  },
+  {
+   "text": "un",
+   "start": 11.104,
+   "end": 11.153
+  },
+  {
+   "text": "coma",
+   "start": 11.153,
+   "end": 11.479
+  },
+  {
+   "text": "ou",
+   "start": 11.479,
+   "end": 11.579
+  },
+  {
+   "text": "un",
+   "start": 11.579,
+   "end": 11.628
+  },
+  {
+   "text": "patient",
+   "start": 11.628,
+   "end": 11.991
+  },
+  {
+   "text": "très",
+   "start": 11.991,
+   "end": 12.178
+  },
+  {
+   "text": "agité.",
+   "start": 12.178,
+   "end": 12.766
+  },
+  {
+   "text": "Et",
+   "start": 13.104,
+   "end": 13.266
+  },
+  {
+   "text": "sur",
+   "start": 13.266,
+   "end": 13.428
+  },
+  {
+   "text": "réquisition,",
+   "start": 13.428,
+   "end": 14.178
+  },
+  {
+   "text": "après",
+   "start": 14.479,
+   "end": 14.741
+  },
+  {
+   "text": "un",
+   "start": 14.741,
+   "end": 14.778
+  },
+  {
+   "text": "accident",
+   "start": 14.778,
+   "end": 15.178
+  },
+  {
+   "text": "de",
+   "start": 15.178,
+   "end": 15.266
+  },
+  {
+   "text": "la",
+   "start": 15.266,
+   "end": 15.354
+  },
+  {
+   "text": "route.",
+   "start": 15.354,
+   "end": 15.791
+  },
+  {
+   "text": "Deux :",
+   "start": 16.75,
+   "end": 17.15
+  },
+  {
+   "text": "le",
+   "start": 17.537,
+   "end": 17.637
+  },
+  {
+   "text": "geste.",
+   "start": 17.637,
+   "end": 18.188
+  },
+  {
+   "text": "On",
+   "start": 18.525,
+   "end": 18.637
+  },
+  {
+   "text": "prélève",
+   "start": 18.637,
+   "end": 19.0
+  },
+  {
+   "text": "dans",
+   "start": 19.0,
+   "end": 19.1
+  },
+  {
+   "text": "le",
+   "start": 19.1,
+   "end": 19.188
+  },
+  {
+   "text": "tube",
+   "start": 19.188,
+   "end": 19.387
+  },
+  {
+   "text": "gris,",
+   "start": 19.387,
+   "end": 19.738
+  },
+  {
+   "text": "et",
+   "start": 20.037,
+   "end": 20.125
+  },
+  {
+   "text": "on",
+   "start": 20.125,
+   "end": 20.175
+  },
+  {
+   "text": "désinfecte",
+   "start": 20.175,
+   "end": 20.762
+  },
+  {
+   "text": "avec",
+   "start": 20.762,
+   "end": 20.975
+  },
+  {
+   "text": "un",
+   "start": 20.975,
+   "end": 21.012
+  },
+  {
+   "text": "antiseptique",
+   "start": 21.012,
+   "end": 21.712
+  },
+  {
+   "text": "sans",
+   "start": 21.712,
+   "end": 21.85
+  },
+  {
+   "text": "alcool.",
+   "start": 21.85,
+   "end": 22.462
+  },
+  {
+   "text": "Sinon,",
+   "start": 22.825,
+   "end": 23.337
+  },
+  {
+   "text": "l'alcool",
+   "start": 23.675,
+   "end": 24.0
+  },
+  {
+   "text": "de",
+   "start": 24.0,
+   "end": 24.075
+  },
+  {
+   "text": "la",
+   "start": 24.075,
+   "end": 24.175
+  },
+  {
+   "text": "peau",
+   "start": 24.175,
+   "end": 24.375
+  },
+  {
+   "text": "peut",
+   "start": 24.375,
+   "end": 24.5
+  },
+  {
+   "text": "passer",
+   "start": 24.5,
+   "end": 24.788
+  },
+  {
+   "text": "dans",
+   "start": 24.788,
+   "end": 24.9
+  },
+  {
+   "text": "le",
+   "start": 24.9,
+   "end": 25.0
+  },
+  {
+   "text": "tube.",
+   "start": 25.0,
+   "end": 25.462
+  },
+  {
+   "text": "Trois :",
+   "start": 26.47,
+   "end": 26.795
+  },
+  {
+   "text": "en",
+   "start": 27.045,
+   "end": 27.133
+  },
+  {
+   "text": "France,",
+   "start": 27.133,
+   "end": 27.608
+  },
+  {
+   "text": "au",
+   "start": 27.758,
+   "end": 27.783
+  },
+  {
+   "text": "volant,",
+   "start": 27.783,
+   "end": 28.183
+  },
+  {
+   "text": "la",
+   "start": 28.595,
+   "end": 28.658
+  },
+  {
+   "text": "limite",
+   "start": 28.658,
+   "end": 28.983
+  },
+  {
+   "text": "est",
+   "start": 28.983,
+   "end": 29.02
+  },
+  {
+   "text": "de",
+   "start": 29.02,
+   "end": 29.133
+  },
+  {
+   "text": "zéro",
+   "start": 29.133,
+   "end": 29.383
+  },
+  {
+   "text": "virgule",
+   "start": 29.383,
+   "end": 29.695
+  },
+  {
+   "text": "cinq",
+   "start": 29.695,
+   "end": 29.895
+  },
+  {
+   "text": "gramme",
+   "start": 29.895,
+   "end": 30.207
+  },
+  {
+   "text": "par",
+   "start": 30.207,
+   "end": 30.358
+  },
+  {
+   "text": "litre",
+   "start": 30.358,
+   "end": 30.62
+  },
+  {
+   "text": "de",
+   "start": 30.62,
+   "end": 30.745
+  },
+  {
+   "text": "sang.",
+   "start": 30.745,
+   "end": 31.058
+  },
+  {
+   "text": "Et",
+   "start": 31.407,
+   "end": 31.558
+  },
+  {
+   "text": "de",
+   "start": 31.558,
+   "end": 31.657
+  },
+  {
+   "text": "zéro",
+   "start": 31.657,
+   "end": 31.92
+  },
+  {
+   "text": "virgule",
+   "start": 31.92,
+   "end": 32.295
+  },
+  {
+   "text": "deux",
+   "start": 32.295,
+   "end": 32.52
+  },
+  {
+   "text": "pour",
+   "start": 32.52,
+   "end": 32.67
+  },
+  {
+   "text": "les",
+   "start": 32.67,
+   "end": 32.77
+  },
+  {
+   "text": "jeunes",
+   "start": 32.77,
+   "end": 32.945
+  },
+  {
+   "text": "conducteurs",
+   "start": 32.945,
+   "end": 33.508
+  },
+  {
+   "text": "en",
+   "start": 33.508,
+   "end": 33.545
+  },
+  {
+   "text": "permis",
+   "start": 33.545,
+   "end": 33.808
+  },
+  {
+   "text": "probatoire.",
+   "start": 33.808,
+   "end": 34.545
+  },
+  {
+   "text": "Quatre :",
+   "start": 35.49,
+   "end": 35.902
+  },
+  {
+   "text": "le",
+   "start": 36.44,
+   "end": 36.502
+  },
+  {
+   "text": "corps",
+   "start": 36.502,
+   "end": 36.715
+  },
+  {
+   "text": "élimine",
+   "start": 36.715,
+   "end": 37.052
+  },
+  {
+   "text": "environ",
+   "start": 37.052,
+   "end": 37.377
+  },
+  {
+   "text": "zéro",
+   "start": 37.377,
+   "end": 37.64
+  },
+  {
+   "text": "virgule",
+   "start": 37.64,
+   "end": 37.977
+  },
+  {
+   "text": "dix",
+   "start": 37.977,
+   "end": 38.215
+  },
+  {
+   "text": "à",
+   "start": 38.215,
+   "end": 38.277
+  },
+  {
+   "text": "zéro",
+   "start": 38.277,
+   "end": 38.502
+  },
+  {
+   "text": "virgule",
+   "start": 38.502,
+   "end": 38.802
+  },
+  {
+   "text": "quinze",
+   "start": 38.802,
+   "end": 39.015
+  },
+  {
+   "text": "gramme",
+   "start": 39.015,
+   "end": 39.265
+  },
+  {
+   "text": "par",
+   "start": 39.265,
+   "end": 39.44
+  },
+  {
+   "text": "litre,",
+   "start": 39.44,
+   "end": 39.765
+  },
+  {
+   "text": "chaque",
+   "start": 40.015,
+   "end": 40.277
+  },
+  {
+   "text": "heure.",
+   "start": 40.277,
+   "end": 40.627
+  },
+  {
+   "text": "Au-delà",
+   "start": 40.965,
+   "end": 41.34
+  },
+  {
+   "text": "de",
+   "start": 41.34,
+   "end": 41.44
+  },
+  {
+   "text": "trois",
+   "start": 41.44,
+   "end": 41.627
+  },
+  {
+   "text": "grammes,",
+   "start": 41.627,
+   "end": 42.027
+  },
+  {
+   "text": "le",
+   "start": 42.34,
+   "end": 42.415
+  },
+  {
+   "text": "risque",
+   "start": 42.415,
+   "end": 42.715
+  },
+  {
+   "text": "de",
+   "start": 42.715,
+   "end": 42.815
+  },
+  {
+   "text": "coma",
+   "start": 42.815,
+   "end": 43.09
+  },
+  {
+   "text": "est",
+   "start": 43.09,
+   "end": 43.165
+  },
+  {
+   "text": "grand.",
+   "start": 43.165,
+   "end": 43.552
+  },
+  {
+   "text": "Et",
+   "start": 43.902,
+   "end": 44.052
+  },
+  {
+   "text": "l'alcool",
+   "start": 44.052,
+   "end": 44.44
+  },
+  {
+   "text": "peut",
+   "start": 44.44,
+   "end": 44.54
+  },
+  {
+   "text": "aussi",
+   "start": 44.54,
+   "end": 44.79
+  },
+  {
+   "text": "faire",
+   "start": 44.79,
+   "end": 44.977
+  },
+  {
+   "text": "chuter",
+   "start": 44.977,
+   "end": 45.24
+  },
+  {
+   "text": "la",
+   "start": 45.24,
+   "end": 45.34
+  },
+  {
+   "text": "glycémie.",
+   "start": 45.34,
+   "end": 45.94
+  },
+  {
+   "text": "Un",
+   "start": 46.888,
+   "end": 47.035
+  },
+  {
+   "text": "antiseptique",
+   "start": 47.035,
+   "end": 47.672
+  },
+  {
+   "text": "sans",
+   "start": 47.672,
+   "end": 47.794
+  },
+  {
+   "text": "alcool,",
+   "start": 47.794,
+   "end": 48.334
+  },
+  {
+   "text": "le",
+   "start": 48.554,
+   "end": 48.615
+  },
+  {
+   "text": "tube",
+   "start": 48.615,
+   "end": 48.812
+  },
+  {
+   "text": "gris,",
+   "start": 48.812,
+   "end": 49.13
+  },
+  {
+   "text": "et",
+   "start": 49.388,
+   "end": 49.461
+  },
+  {
+   "text": "les",
+   "start": 49.461,
+   "end": 49.571
+  },
+  {
+   "text": "seuils",
+   "start": 49.571,
+   "end": 49.792
+  },
+  {
+   "text": "en",
+   "start": 49.792,
+   "end": 49.878
+  },
+  {
+   "text": "tête :",
+   "start": 49.878,
+   "end": 50.196
+  },
+  {
+   "text": "et",
+   "start": 50.576,
+   "end": 50.601
+  },
+  {
+   "text": "voilà,",
+   "start": 50.601,
+   "end": 50.919
+  },
+  {
+   "text": "le",
+   "start": 51.25,
+   "end": 51.324
+  },
+  {
+   "text": "tube",
+   "start": 51.324,
+   "end": 51.508
+  },
+  {
+   "text": "gris",
+   "start": 51.508,
+   "end": 51.691
+  },
+  {
+   "text": "n'a",
+   "start": 51.691,
+   "end": 51.789
+  },
+  {
+   "text": "plus",
+   "start": 51.789,
+   "end": 51.924
+  },
+  {
+   "text": "de",
+   "start": 51.924,
+   "end": 52.035
+  },
+  {
+   "text": "secret",
+   "start": 52.035,
+   "end": 52.316
+  },
+  {
+   "text": "pour",
+   "start": 52.316,
+   "end": 52.476
+  },
+  {
+   "text": "toi !",
+   "start": 52.476,
+   "end": 52.807
+  }
+ ]
+}

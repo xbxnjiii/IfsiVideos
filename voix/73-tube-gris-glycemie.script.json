@@ -1,0 +1,32 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Le tube gris mesure la glycémie. Et un seul chiffre décide : normal, prédiabète… ou diabète. Tu connais les seuils ?"
+ },
+ {
+  "id": "pourquoi",
+  "rate": "+0%",
+  "text": "Un : pourquoi le tube gris ? Dans un tube ordinaire, les globules rouges continuent de manger le sucre, et la glycémie baisse. Le fluorure du tube gris les en empêche : le résultat reste juste."
+ },
+ {
+  "id": "jeun",
+  "rate": "+0%",
+  "text": "Deux : le patient doit être à {jeun|jun}, sans manger depuis au moins huit heures. Un verre d'eau, c'est permis."
+ },
+ {
+  "id": "normes",
+  "rate": "+0%",
+  "text": "Trois : à {jeun|jun}, la glycémie normale va de zéro virgule soixante-dix à un virgule dix gramme par litre. Entre un virgule dix et un virgule vingt-cinq, on parle de prédiabète."
+ },
+ {
+  "id": "diabete",
+  "rate": "+0%",
+  "text": "Quatre : le diabète. À {jeun|jun}, un virgule vingt-six gramme par litre ou plus, retrouvé sur deux prises de sang. Ou deux grammes, à n'importe quel moment, avec des signes : une soif intense, beaucoup d'urines, une perte de poids."
+ },
+ {
+  "id": "fin",
+  "rate": "+2%",
+  "text": "Normal, prédiabète, diabète : tu as les trois seuils. Prochaine vidéo : l'alcoolémie, dans le même tube gris."
+ }
+]

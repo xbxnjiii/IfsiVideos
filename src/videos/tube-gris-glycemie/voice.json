@@ -1,0 +1,813 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 56.078,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.096,
+   "end": 6.971
+  },
+  {
+   "id": "pourquoi",
+   "start": 7.896,
+   "end": 18.396
+  },
+  {
+   "id": "jeun",
+   "start": 19.355,
+   "end": 24.755
+  },
+  {
+   "id": "normes",
+   "start": 25.712,
+   "end": 34.7
+  },
+  {
+   "id": "diabete",
+   "start": 35.658,
+   "end": 47.87
+  },
+  {
+   "id": "fin",
+   "start": 48.832,
+   "end": 55.743
+  }
+ ],
+ "words": [
+  {
+   "text": "Le",
+   "start": 0.096,
+   "end": 0.216
+  },
+  {
+   "text": "tube",
+   "start": 0.216,
+   "end": 0.457
+  },
+  {
+   "text": "gris",
+   "start": 0.457,
+   "end": 0.673
+  },
+  {
+   "text": "mesure",
+   "start": 0.673,
+   "end": 0.998
+  },
+  {
+   "text": "la",
+   "start": 0.998,
+   "end": 1.082
+  },
+  {
+   "text": "glycémie.",
+   "start": 1.082,
+   "end": 1.647
+  },
+  {
+   "text": "Et",
+   "start": 1.983,
+   "end": 2.103
+  },
+  {
+   "text": "un",
+   "start": 2.103,
+   "end": 2.2
+  },
+  {
+   "text": "seul",
+   "start": 2.2,
+   "end": 2.356
+  },
+  {
+   "text": "chiffre",
+   "start": 2.356,
+   "end": 2.68
+  },
+  {
+   "text": "décide :",
+   "start": 2.68,
+   "end": 3.173
+  },
+  {
+   "text": "normal,",
+   "start": 3.438,
+   "end": 3.954
+  },
+  {
+   "text": "prédiabète…",
+   "start": 4.183,
+   "end": 4.796
+  },
+  {
+   "text": "ou",
+   "start": 5.096,
+   "end": 5.132
+  },
+  {
+   "text": "diabète.",
+   "start": 5.132,
+   "end": 5.745
+  },
+  {
+   "text": "Tu",
+   "start": 6.106,
+   "end": 6.202
+  },
+  {
+   "text": "connais",
+   "start": 6.202,
+   "end": 6.43
+  },
+  {
+   "text": "les",
+   "start": 6.43,
+   "end": 6.538
+  },
+  {
+   "text": "seuils ?",
+   "start": 6.538,
+   "end": 6.971
+  },
+  {
+   "text": "Un :",
+   "start": 7.896,
+   "end": 8.159
+  },
+  {
+   "text": "pourquoi",
+   "start": 8.409,
+   "end": 8.721
+  },
+  {
+   "text": "le",
+   "start": 8.721,
+   "end": 8.821
+  },
+  {
+   "text": "tube",
+   "start": 8.821,
+   "end": 9.034
+  },
+  {
+   "text": "gris ?",
+   "start": 9.034,
+   "end": 9.409
+  },
+  {
+   "text": "Dans",
+   "start": 9.758,
+   "end": 9.946
+  },
+  {
+   "text": "un",
+   "start": 9.946,
+   "end": 10.084
+  },
+  {
+   "text": "tube",
+   "start": 10.084,
+   "end": 10.296
+  },
+  {
+   "text": "ordinaire,",
+   "start": 10.296,
+   "end": 10.846
+  },
+  {
+   "text": "les",
+   "start": 11.171,
+   "end": 11.233
+  },
+  {
+   "text": "globules",
+   "start": 11.233,
+   "end": 11.534
+  },
+  {
+   "text": "rouges",
+   "start": 11.534,
+   "end": 11.784
+  },
+  {
+   "text": "continuent",
+   "start": 11.784,
+   "end": 12.171
+  },
+  {
+   "text": "de",
+   "start": 12.171,
+   "end": 12.271
+  },
+  {
+   "text": "manger",
+   "start": 12.271,
+   "end": 12.496
+  },
+  {
+   "text": "le",
+   "start": 12.496,
+   "end": 12.596
+  },
+  {
+   "text": "sucre,",
+   "start": 12.596,
+   "end": 12.971
+  },
+  {
+   "text": "et",
+   "start": 13.246,
+   "end": 13.258
+  },
+  {
+   "text": "la",
+   "start": 13.258,
+   "end": 13.346
+  },
+  {
+   "text": "glycémie",
+   "start": 13.346,
+   "end": 13.809
+  },
+  {
+   "text": "baisse.",
+   "start": 13.809,
+   "end": 14.296
+  },
+  {
+   "text": "Le",
+   "start": 14.684,
+   "end": 14.821
+  },
+  {
+   "text": "fluorure",
+   "start": 14.821,
+   "end": 15.246
+  },
+  {
+   "text": "du",
+   "start": 15.246,
+   "end": 15.371
+  },
+  {
+   "text": "tube",
+   "start": 15.371,
+   "end": 15.746
+  },
+  {
+   "text": "gris",
+   "start": 15.746,
+   "end": 15.946
+  },
+  {
+   "text": "les",
+   "start": 15.946,
+   "end": 16.034
+  },
+  {
+   "text": "en",
+   "start": 16.034,
+   "end": 16.146
+  },
+  {
+   "text": "empêche :",
+   "start": 16.146,
+   "end": 16.709
+  },
+  {
+   "text": "le",
+   "start": 17.059,
+   "end": 17.121
+  },
+  {
+   "text": "résultat",
+   "start": 17.121,
+   "end": 17.559
+  },
+  {
+   "text": "reste",
+   "start": 17.559,
+   "end": 17.846
+  },
+  {
+   "text": "juste.",
+   "start": 17.846,
+   "end": 18.396
+  },
+  {
+   "text": "Deux :",
+   "start": 19.355,
+   "end": 19.73
+  },
+  {
+   "text": "le",
+   "start": 20.092,
+   "end": 20.155
+  },
+  {
+   "text": "patient",
+   "start": 20.155,
+   "end": 20.467
+  },
+  {
+   "text": "doit",
+   "start": 20.467,
+   "end": 20.58
+  },
+  {
+   "text": "être",
+   "start": 20.58,
+   "end": 20.817
+  },
+  {
+   "text": "à",
+   "start": 20.817,
+   "end": 20.842
+  },
+  {
+   "text": "jeun,",
+   "start": 20.842,
+   "end": 21.205
+  },
+  {
+   "text": "sans",
+   "start": 21.455,
+   "end": 21.617
+  },
+  {
+   "text": "manger",
+   "start": 21.617,
+   "end": 21.917
+  },
+  {
+   "text": "depuis",
+   "start": 21.917,
+   "end": 22.155
+  },
+  {
+   "text": "au",
+   "start": 22.155,
+   "end": 22.205
+  },
+  {
+   "text": "moins",
+   "start": 22.205,
+   "end": 22.38
+  },
+  {
+   "text": "huit",
+   "start": 22.38,
+   "end": 22.505
+  },
+  {
+   "text": "heures.",
+   "start": 22.505,
+   "end": 22.917
+  },
+  {
+   "text": "Un",
+   "start": 23.255,
+   "end": 23.405
+  },
+  {
+   "text": "verre",
+   "start": 23.405,
+   "end": 23.592
+  },
+  {
+   "text": "d'eau,",
+   "start": 23.592,
+   "end": 23.855
+  },
+  {
+   "text": "c'est",
+   "start": 24.155,
+   "end": 24.28
+  },
+  {
+   "text": "permis.",
+   "start": 24.28,
+   "end": 24.755
+  },
+  {
+   "text": "Trois :",
+   "start": 25.712,
+   "end": 26.037
+  },
+  {
+   "text": "à",
+   "start": 26.375,
+   "end": 26.475
+  },
+  {
+   "text": "jeun,",
+   "start": 26.475,
+   "end": 26.862
+  },
+  {
+   "text": "la",
+   "start": 27.162,
+   "end": 27.237
+  },
+  {
+   "text": "glycémie",
+   "start": 27.237,
+   "end": 27.625
+  },
+  {
+   "text": "normale",
+   "start": 27.625,
+   "end": 28.062
+  },
+  {
+   "text": "va",
+   "start": 28.062,
+   "end": 28.15
+  },
+  {
+   "text": "de",
+   "start": 28.15,
+   "end": 28.25
+  },
+  {
+   "text": "zéro",
+   "start": 28.25,
+   "end": 28.5
+  },
+  {
+   "text": "virgule",
+   "start": 28.5,
+   "end": 28.8
+  },
+  {
+   "text": "soixante-dix",
+   "start": 28.8,
+   "end": 29.412
+  },
+  {
+   "text": "à",
+   "start": 29.412,
+   "end": 29.512
+  },
+  {
+   "text": "un",
+   "start": 29.512,
+   "end": 29.637
+  },
+  {
+   "text": "virgule",
+   "start": 29.637,
+   "end": 29.938
+  },
+  {
+   "text": "dix",
+   "start": 29.938,
+   "end": 30.037
+  },
+  {
+   "text": "gramme",
+   "start": 30.037,
+   "end": 30.3
+  },
+  {
+   "text": "par",
+   "start": 30.3,
+   "end": 30.462
+  },
+  {
+   "text": "litre.",
+   "start": 30.462,
+   "end": 30.875
+  },
+  {
+   "text": "Entre",
+   "start": 31.212,
+   "end": 31.5
+  },
+  {
+   "text": "un",
+   "start": 31.5,
+   "end": 31.562
+  },
+  {
+   "text": "virgule",
+   "start": 31.562,
+   "end": 31.9
+  },
+  {
+   "text": "dix",
+   "start": 31.9,
+   "end": 32.137
+  },
+  {
+   "text": "et",
+   "start": 32.137,
+   "end": 32.212
+  },
+  {
+   "text": "un",
+   "start": 32.212,
+   "end": 32.3
+  },
+  {
+   "text": "virgule",
+   "start": 32.3,
+   "end": 32.587
+  },
+  {
+   "text": "vingt-cinq,",
+   "start": 32.587,
+   "end": 33.163
+  },
+  {
+   "text": "on",
+   "start": 33.475,
+   "end": 33.525
+  },
+  {
+   "text": "parle",
+   "start": 33.525,
+   "end": 33.812
+  },
+  {
+   "text": "de",
+   "start": 33.812,
+   "end": 33.912
+  },
+  {
+   "text": "prédiabète.",
+   "start": 33.912,
+   "end": 34.7
+  },
+  {
+   "text": "Quatre :",
+   "start": 35.658,
+   "end": 36.12
+  },
+  {
+   "text": "le",
+   "start": 36.458,
+   "end": 36.533
+  },
+  {
+   "text": "diabète.",
+   "start": 36.533,
+   "end": 37.183
+  },
+  {
+   "text": "À",
+   "start": 37.52,
+   "end": 37.633
+  },
+  {
+   "text": "jeun,",
+   "start": 37.633,
+   "end": 38.02
+  },
+  {
+   "text": "un",
+   "start": 38.32,
+   "end": 38.395
+  },
+  {
+   "text": "virgule",
+   "start": 38.395,
+   "end": 38.683
+  },
+  {
+   "text": "vingt-six",
+   "start": 38.683,
+   "end": 38.97
+  },
+  {
+   "text": "gramme",
+   "start": 38.97,
+   "end": 39.245
+  },
+  {
+   "text": "par",
+   "start": 39.245,
+   "end": 39.408
+  },
+  {
+   "text": "litre",
+   "start": 39.408,
+   "end": 39.658
+  },
+  {
+   "text": "ou",
+   "start": 39.658,
+   "end": 39.683
+  },
+  {
+   "text": "plus,",
+   "start": 39.683,
+   "end": 40.145
+  },
+  {
+   "text": "retrouvé",
+   "start": 40.42,
+   "end": 40.82
+  },
+  {
+   "text": "sur",
+   "start": 40.82,
+   "end": 41.008
+  },
+  {
+   "text": "deux",
+   "start": 41.008,
+   "end": 41.133
+  },
+  {
+   "text": "prises",
+   "start": 41.133,
+   "end": 41.345
+  },
+  {
+   "text": "de",
+   "start": 41.345,
+   "end": 41.47
+  },
+  {
+   "text": "sang.",
+   "start": 41.47,
+   "end": 41.783
+  },
+  {
+   "text": "Ou",
+   "start": 42.158,
+   "end": 42.245
+  },
+  {
+   "text": "deux",
+   "start": 42.245,
+   "end": 42.37
+  },
+  {
+   "text": "grammes,",
+   "start": 42.37,
+   "end": 42.708
+  },
+  {
+   "text": "à",
+   "start": 42.908,
+   "end": 42.933
+  },
+  {
+   "text": "n'importe",
+   "start": 42.933,
+   "end": 43.333
+  },
+  {
+   "text": "quel",
+   "start": 43.333,
+   "end": 43.495
+  },
+  {
+   "text": "moment,",
+   "start": 43.495,
+   "end": 43.87
+  },
+  {
+   "text": "avec",
+   "start": 44.12,
+   "end": 44.333
+  },
+  {
+   "text": "des",
+   "start": 44.333,
+   "end": 44.445
+  },
+  {
+   "text": "signes :",
+   "start": 44.445,
+   "end": 44.833
+  },
+  {
+   "text": "une",
+   "start": 45.195,
+   "end": 45.258
+  },
+  {
+   "text": "soif",
+   "start": 45.258,
+   "end": 45.495
+  },
+  {
+   "text": "intense,",
+   "start": 45.495,
+   "end": 46.058
+  },
+  {
+   "text": "beaucoup",
+   "start": 46.233,
+   "end": 46.471
+  },
+  {
+   "text": "d'urines,",
+   "start": 46.471,
+   "end": 46.895
+  },
+  {
+   "text": "une",
+   "start": 47.108,
+   "end": 47.183
+  },
+  {
+   "text": "perte",
+   "start": 47.183,
+   "end": 47.445
+  },
+  {
+   "text": "de",
+   "start": 47.445,
+   "end": 47.545
+  },
+  {
+   "text": "poids.",
+   "start": 47.545,
+   "end": 47.87
+  },
+  {
+   "text": "Normal,",
+   "start": 48.832,
+   "end": 49.469
+  },
+  {
+   "text": "prédiabète,",
+   "start": 49.665,
+   "end": 50.339
+  },
+  {
+   "text": "diabète :",
+   "start": 50.645,
+   "end": 51.233
+  },
+  {
+   "text": "tu",
+   "start": 51.503,
+   "end": 51.613
+  },
+  {
+   "text": "as",
+   "start": 51.613,
+   "end": 51.638
+  },
+  {
+   "text": "les",
+   "start": 51.638,
+   "end": 51.724
+  },
+  {
+   "text": "trois",
+   "start": 51.724,
+   "end": 51.907
+  },
+  {
+   "text": "seuils.",
+   "start": 51.908,
+   "end": 52.361
+  },
+  {
+   "text": "Prochaine",
+   "start": 52.729,
+   "end": 53.084
+  },
+  {
+   "text": "vidéo :",
+   "start": 53.084,
+   "end": 53.562
+  },
+  {
+   "text": "l'alcoolémie,",
+   "start": 53.893,
+   "end": 54.555
+  },
+  {
+   "text": "dans",
+   "start": 54.824,
+   "end": 54.91
+  },
+  {
+   "text": "le",
+   "start": 54.91,
+   "end": 54.996
+  },
+  {
+   "text": "même",
+   "start": 54.996,
+   "end": 55.192
+  },
+  {
+   "text": "tube",
+   "start": 55.192,
+   "end": 55.4
+  },
+  {
+   "text": "gris.",
+   "start": 55.4,
+   "end": 55.743
+  }
+ ]
+}

@@ -83,6 +83,8 @@ pas de logiciel de montage, pas de banque d'images.
 | 70 | Série le tube violet : le groupe sanguin et les RAI en 59 s (ABO, rhésus, 2 déterminations, RAI ; voix Laura, directives Instagram) | `Groupe-Sanguin` | [voix/70-groupe-sanguin.script.json](voix/70-groupe-sanguin.script.json) | [storyboard](docs/lpi/storyboard-tube-violet-serie.md) |
 | 71 | Série le tube violet : la charge virale en 60 s (copies/mL, VIH et I = I, hépatites B et C ; voix Laura, directives Instagram) | `Charge-Virale` | [voix/71-charge-virale.script.json](voix/71-charge-virale.script.json) | [storyboard](docs/lpi/storyboard-tube-violet-serie.md) |
 | 72 | Série le tube violet : les anti-rejet en 54 s (immunosuppresseurs, marge étroite, taux résiduel, pamplemousse ; voix Laura, directives Instagram) | `Anti-Rejet` | [voix/72-anti-rejet.script.json](voix/72-anti-rejet.script.json) | [storyboard](docs/lpi/storyboard-tube-violet-serie.md) |
+| 73 | Série les tubes : le tube gris, la glycémie en 60 s (fluorure, à jeun, normes, diabète ; voix gratuite, directives Instagram) | `Tube-Gris-Glycemie` | [voix/73-tube-gris-glycemie.script.json](voix/73-tube-gris-glycemie.script.json) | [storyboard](docs/lpi/storyboard-tube-gris.md) |
+| 74 | Série les tubes : le tube gris, l'alcoolémie en 57 s (antiseptique sans alcool, seuils au volant, élimination ; voix gratuite, directives Instagram) | `Tube-Gris-Alcoolemie` | [voix/74-tube-gris-alcoolemie.script.json](voix/74-tube-gris-alcoolemie.script.json) | [storyboard](docs/lpi/storyboard-tube-gris.md) |
 
 ## Utilisation
 

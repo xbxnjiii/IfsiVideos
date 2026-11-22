@@ -144,6 +144,10 @@ import * as chargevirale from '../../src/videos/charge-virale/mascot';
 import * as chargeviraleTL from '../../src/videos/charge-virale/timeline';
 import * as antirejet from '../../src/videos/anti-rejet/mascot';
 import * as antirejetTL from '../../src/videos/anti-rejet/timeline';
+import * as tubegrisglycemie from '../../src/videos/tube-gris-glycemie/mascot';
+import * as tubegrisglycemieTL from '../../src/videos/tube-gris-glycemie/timeline';
+import * as tubegrisalcoolemie from '../../src/videos/tube-gris-alcoolemie/mascot';
+import * as tubegrisalcoolemieTL from '../../src/videos/tube-gris-alcoolemie/timeline';
 
 const VIDEOS: Record<string, [typeof constantes.MASCOT, typeof constantesTL.TL]> = {
 	constantes: [constantes.MASCOT, constantesTL.TL],
@@ -217,6 +221,8 @@ const VIDEOS: Record<string, [typeof constantes.MASCOT, typeof constantesTL.TL]>
 	'groupe-sanguin': [groupesanguin.MASCOT, groupesanguinTL.TL],
 	'charge-virale': [chargevirale.MASCOT, chargeviraleTL.TL],
 	'anti-rejet': [antirejet.MASCOT, antirejetTL.TL],
+	'tube-gris-glycemie': [tubegrisglycemie.MASCOT, tubegrisglycemieTL.TL],
+	'tube-gris-alcoolemie': [tubegrisalcoolemie.MASCOT, tubegrisalcoolemieTL.TL],
 };
 const name = process.argv[2] ?? 'constantes';
 const [MASCOT, TL] = VIDEOS[name];

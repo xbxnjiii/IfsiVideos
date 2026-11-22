@@ -146,6 +146,10 @@ import {ChargeVirale, ChargeViraleProps} from './videos/charge-virale/ChargeVira
 import {TL as CHARGE_VIRALE_TL} from './videos/charge-virale/timeline';
 import {AntiRejet, AntiRejetProps} from './videos/anti-rejet/AntiRejet';
 import {TL as ANTI_REJET_TL} from './videos/anti-rejet/timeline';
+import {TubeGrisGlycemie, TubeGrisGlycemieProps} from './videos/tube-gris-glycemie/TubeGrisGlycemie';
+import {TL as TUBE_GRIS_GLYCEMIE_TL} from './videos/tube-gris-glycemie/timeline';
+import {TubeGrisAlcoolemie, TubeGrisAlcoolemieProps} from './videos/tube-gris-alcoolemie/TubeGrisAlcoolemie';
+import {TL as TUBE_GRIS_ALCOOLEMIE_TL} from './videos/tube-gris-alcoolemie/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -862,6 +866,26 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies AntiRejetProps}
+		/>
+		{/* 73 · Tube-Gris-Glycemie */}
+		<Composition
+			id="Tube-Gris-Glycemie"
+			component={TubeGrisGlycemie}
+			durationInFrames={TUBE_GRIS_GLYCEMIE_TL.total}
+			fps={TUBE_GRIS_GLYCEMIE_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies TubeGrisGlycemieProps}
+		/>
+		{/* 74 · Tube-Gris-Alcoolemie */}
+		<Composition
+			id="Tube-Gris-Alcoolemie"
+			component={TubeGrisAlcoolemie}
+			durationInFrames={TUBE_GRIS_ALCOOLEMIE_TL.total}
+			fps={TUBE_GRIS_ALCOOLEMIE_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies TubeGrisAlcoolemieProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition

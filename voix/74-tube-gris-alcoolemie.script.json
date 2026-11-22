@@ -1,0 +1,32 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Pour une alcoolémie, une seule erreur peut fausser le résultat : désinfecter la peau avec de l'alcool. Alors, comment on la prélève ?"
+ },
+ {
+  "id": "quand",
+  "rate": "+0%",
+  "text": "Un : quand la demande-t-on ? Aux urgences, devant un malaise, un coma ou un patient très agité. Et sur réquisition, après un accident de la route."
+ },
+ {
+  "id": "geste",
+  "rate": "+0%",
+  "text": "Deux : le geste. On prélève dans le tube gris, et on désinfecte avec un antiseptique sans alcool. Sinon, l'alcool de la peau peut passer dans le tube."
+ },
+ {
+  "id": "seuils",
+  "rate": "+0%",
+  "text": "Trois : en France, au volant, la limite est de zéro virgule cinq gramme par litre de sang. Et de zéro virgule deux pour les jeunes conducteurs en permis probatoire."
+ },
+ {
+  "id": "corps",
+  "rate": "+0%",
+  "text": "Quatre : le corps élimine environ zéro virgule dix à zéro virgule quinze gramme par litre, chaque heure. Au-delà de trois grammes, le risque de coma est grand. Et l'alcool peut aussi faire chuter la glycémie."
+ },
+ {
+  "id": "fin",
+  "rate": "+2%",
+  "text": "Un antiseptique sans alcool, le tube gris, et les seuils en tête : et voilà, le tube gris n'a plus de secret pour toi !"
+ }
+]

@@ -747,6 +747,17 @@ script), « en France » / « le 15 (ou le numéro d'urgence de ton pays) ». Ca
   Voix : « greffe » est entendu « grève », « greffé du rein » « greffé d'urin » → éviter le mot.
   **Correction à signaler dans le texte fourni** : c'est l'excès de lymphocytes (lymphocytose) qui évoque une infection
   virale ; la lymphopénie se voit dans l'immunodépression (VIH, corticoïdes…).
+- **Le tube gris (fluorure)** (demandé : la glycémie et l'alcoolémie, « je te laisse compléter » ; storyboard
+  `docs/lpi/storyboard-tube-gris.md`). **Kit commun `src/brand/short.tsx`** pour les vidéos courtes suivantes (`ShortBg`,
+  `PINK_BG`, `Pop`, `Chip`, `Arrow`, `SeriesPill` (cap, label), `Counter` (steps, total), `NextCard`, `ZoneGauge`).
+  `Tube-Gris-Glycemie` (n° 73, ≈ 60 s, voix gratuite d'abord) : « Le tube gris mesure la glycémie. Et un seul chiffre décide :
+  normal, prédiabète… ou diabète. », pourquoi le fluorure (les globules rouges mangent le sucre du tube), à jeun 8 h (eau
+  permise), normes 0,70 – 1,10 g/L (tableau du propriétaire) + prédiabète 1,10 – 1,25, diabète (≥ 1,26 × 2 ou ≥ 2 g/L + signes).
+  `Tube-Gris-Alcoolemie` (n° 74, ≈ 57 s, voix gratuite d'abord, contenu complété par l'agent) : l'erreur qui fausse
+  (désinfecter avec de l'alcool), quand (urgences, réquisition), le geste (antiseptique sans alcool), seuils au volant en
+  France (0,5 g/L ; 0,2 en permis probatoire ; Code de la route R234-1), élimination ≈ 0,10 – 0,15 g/L/h, > 3 g/L coma,
+  hypoglycémie. Voix : Whisper entend « fluorure » « flux aurure » (amorcé, il l'entend bien) ; « amaigrissement » entendu
+  « amélioration » → « une perte de poids ».
 
 ## Voix ElevenLabs « Laura » (choisie par le propriétaire pour les nouvelles vidéos)
 
