@@ -1,6 +1,6 @@
 {
  "voice": "voix.wav (tts_voix.py)",
- "duration": 53.752,
+ "duration": 55.696,
  "sections": [
   {
    "id": "intro",
@@ -24,8 +24,8 @@
   },
   {
    "id": "fin",
-   "start": 48.102,
-   "end": 53.409
+   "start": 48.09,
+   "end": 55.357
   }
  ],
  "words": [
@@ -721,88 +721,88 @@
   },
   {
    "text": "Le",
-   "start": 48.102,
-   "end": 48.237
+   "start": 48.09,
+   "end": 48.225
   },
   {
    "text": "TCA,",
-   "start": 48.237,
-   "end": 48.813
+   "start": 48.225,
+   "end": 48.789
   },
   {
    "text": "le",
-   "start": 49.119,
-   "end": 49.193
+   "start": 49.156,
+   "end": 49.217
   },
   {
    "text": "fibrinogène,",
-   "start": 49.193,
-   "end": 49.953
+   "start": 49.217,
+   "end": 49.99
   },
   {
    "text": "les",
-   "start": 50.124,
-   "end": 50.186
+   "start": 50.271,
+   "end": 50.357
   },
   {
    "text": "D-dimères :",
-   "start": 50.186,
-   "end": 50.725
+   "start": 50.357,
+   "end": 50.921
+  },
+  {
+   "text": "c'est",
+   "start": 51.227,
+   "end": 51.374
+  },
+  {
+   "text": "fait.",
+   "start": 51.374,
+   "end": 51.693
+  },
+  {
+   "text": "Prochaine",
+   "start": 52.048,
+   "end": 52.441
+  },
+  {
+   "text": "vidéo :",
+   "start": 52.441,
+   "end": 52.931
+  },
+  {
+   "text": "l'anti-Xa",
+   "start": 53.347,
+   "end": 53.862
   },
   {
    "text": "et",
-   "start": 51.129,
-   "end": 51.154
+   "start": 53.862,
+   "end": 53.899
   },
   {
-   "text": "voilà,",
-   "start": 51.154,
-   "end": 51.521
+   "text": "les",
+   "start": 53.899,
+   "end": 53.985
   },
   {
-   "text": "le",
-   "start": 51.84,
-   "end": 51.901
-  },
-  {
-   "text": "tube",
-   "start": 51.901,
-   "end": 52.097
-  },
-  {
-   "text": "bleu",
-   "start": 52.097,
-   "end": 52.269
-  },
-  {
-   "text": "n'a",
-   "start": 52.269,
-   "end": 52.367
-  },
-  {
-   "text": "plus",
-   "start": 52.367,
-   "end": 52.502
+   "text": "facteurs",
+   "start": 53.985,
+   "end": 54.389
   },
   {
    "text": "de",
-   "start": 52.502,
-   "end": 52.612
+   "start": 54.389,
+   "end": 54.463
   },
   {
-   "text": "secret",
-   "start": 52.612,
-   "end": 52.918
+   "text": "la",
+   "start": 54.463,
+   "end": 54.548
   },
   {
-   "text": "pour",
-   "start": 52.918,
-   "end": 53.09
-  },
-  {
-   "text": "toi !",
-   "start": 53.09,
-   "end": 53.409
+   "text": "coagulation.",
+   "start": 54.548,
+   "end": 55.357
   }
  ]
 }

@@ -1,0 +1,883 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 60.134,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.06,
+   "end": 6.887
+  },
+  {
+   "id": "antixa",
+   "start": 7.824,
+   "end": 19.06
+  },
+  {
+   "id": "antithrombine",
+   "start": 20.001,
+   "end": 30.425
+  },
+  {
+   "id": "proteines",
+   "start": 31.399,
+   "end": 41.692
+  },
+  {
+   "id": "facteurs",
+   "start": 42.642,
+   "end": 53.055
+  },
+  {
+   "id": "fin",
+   "start": 53.979,
+   "end": 59.776
+  }
+ ],
+ "words": [
+  {
+   "text": "Une",
+   "start": 0.06,
+   "end": 0.216
+  },
+  {
+   "text": "phlébite",
+   "start": 0.216,
+   "end": 0.613
+  },
+  {
+   "text": "à",
+   "start": 0.613,
+   "end": 0.661
+  },
+  {
+   "text": "vingt-cinq",
+   "start": 0.661,
+   "end": 1.106
+  },
+  {
+   "text": "ans,",
+   "start": 1.106,
+   "end": 1.286
+  },
+  {
+   "text": "sans",
+   "start": 1.562,
+   "end": 1.707
+  },
+  {
+   "text": "raison ?",
+   "start": 1.707,
+   "end": 2.091
+  },
+  {
+   "text": "Le",
+   "start": 2.417,
+   "end": 2.597
+  },
+  {
+   "text": "tube",
+   "start": 2.597,
+   "end": 2.813
+  },
+  {
+   "text": "bleu",
+   "start": 2.813,
+   "end": 3.018
+  },
+  {
+   "text": "peut",
+   "start": 3.018,
+   "end": 3.138
+  },
+  {
+   "text": "chercher",
+   "start": 3.138,
+   "end": 3.438
+  },
+  {
+   "text": "la",
+   "start": 3.438,
+   "end": 3.535
+  },
+  {
+   "text": "cause :",
+   "start": 3.535,
+   "end": 3.931
+  },
+  {
+   "text": "un",
+   "start": 4.316,
+   "end": 4.388
+  },
+  {
+   "text": "frein",
+   "start": 4.388,
+   "end": 4.604
+  },
+  {
+   "text": "de",
+   "start": 4.604,
+   "end": 4.664
+  },
+  {
+   "text": "la",
+   "start": 4.664,
+   "end": 4.749
+  },
+  {
+   "text": "coagulation",
+   "start": 4.749,
+   "end": 5.349
+  },
+  {
+   "text": "qui",
+   "start": 5.349,
+   "end": 5.506
+  },
+  {
+   "text": "manque.",
+   "start": 5.506,
+   "end": 5.938
+  },
+  {
+   "text": "Tu",
+   "start": 6.298,
+   "end": 6.382
+  },
+  {
+   "text": "les",
+   "start": 6.382,
+   "end": 6.466
+  },
+  {
+   "text": "connais ?",
+   "start": 6.466,
+   "end": 6.887
+  },
+  {
+   "text": "Un :",
+   "start": 7.824,
+   "end": 8.14
+  },
+  {
+   "text": "l'anti-Xa.",
+   "start": 8.552,
+   "end": 9.207
+  },
+  {
+   "text": "Il",
+   "start": 9.547,
+   "end": 9.741
+  },
+  {
+   "text": "surveille",
+   "start": 9.741,
+   "end": 10.045
+  },
+  {
+   "text": "l'héparine,",
+   "start": 10.045,
+   "end": 10.579
+  },
+  {
+   "text": "surtout",
+   "start": 10.809,
+   "end": 11.101
+  },
+  {
+   "text": "les",
+   "start": 11.101,
+   "end": 11.21
+  },
+  {
+   "text": "HBPM,",
+   "start": 11.21,
+   "end": 12.011
+  },
+  {
+   "text": "chez",
+   "start": 12.363,
+   "end": 12.484
+  },
+  {
+   "text": "l'insuffisant",
+   "start": 12.484,
+   "end": 12.994
+  },
+  {
+   "text": "rénal",
+   "start": 12.994,
+   "end": 13.37
+  },
+  {
+   "text": "ou",
+   "start": 13.37,
+   "end": 13.407
+  },
+  {
+   "text": "la",
+   "start": 13.407,
+   "end": 13.516
+  },
+  {
+   "text": "femme",
+   "start": 13.516,
+   "end": 13.698
+  },
+  {
+   "text": "enceinte.",
+   "start": 13.698,
+   "end": 14.232
+  },
+  {
+   "text": "On",
+   "start": 14.57,
+   "end": 14.667
+  },
+  {
+   "text": "prélève",
+   "start": 14.667,
+   "end": 15.007
+  },
+  {
+   "text": "au",
+   "start": 15.007,
+   "end": 15.056
+  },
+  {
+   "text": "pic,",
+   "start": 15.056,
+   "end": 15.48
+  },
+  {
+   "text": "trois",
+   "start": 15.711,
+   "end": 15.905
+  },
+  {
+   "text": "à",
+   "start": 15.905,
+   "end": 15.941
+  },
+  {
+   "text": "quatre",
+   "start": 15.941,
+   "end": 16.245
+  },
+  {
+   "text": "heures",
+   "start": 16.245,
+   "end": 16.378
+  },
+  {
+   "text": "après",
+   "start": 16.378,
+   "end": 16.56
+  },
+  {
+   "text": "l'injection,",
+   "start": 16.56,
+   "end": 17.167
+  },
+  {
+   "text": "et",
+   "start": 17.495,
+   "end": 17.556
+  },
+  {
+   "text": "la",
+   "start": 17.556,
+   "end": 17.665
+  },
+  {
+   "text": "cible",
+   "start": 17.665,
+   "end": 17.98
+  },
+  {
+   "text": "dépend",
+   "start": 17.98,
+   "end": 18.259
+  },
+  {
+   "text": "de",
+   "start": 18.259,
+   "end": 18.344
+  },
+  {
+   "text": "la",
+   "start": 18.344,
+   "end": 18.417
+  },
+  {
+   "text": "molécule.",
+   "start": 18.417,
+   "end": 19.06
+  },
+  {
+   "text": "Deux :",
+   "start": 20.001,
+   "end": 20.365
+  },
+  {
+   "text": "l'antithrombine,",
+   "start": 20.777,
+   "end": 21.542
+  },
+  {
+   "text": "le",
+   "start": 21.87,
+   "end": 21.942
+  },
+  {
+   "text": "frein",
+   "start": 21.942,
+   "end": 22.112
+  },
+  {
+   "text": "principal",
+   "start": 22.112,
+   "end": 22.658
+  },
+  {
+   "text": "de",
+   "start": 22.658,
+   "end": 22.731
+  },
+  {
+   "text": "la",
+   "start": 22.731,
+   "end": 22.816
+  },
+  {
+   "text": "coagulation.",
+   "start": 22.816,
+   "end": 23.654
+  },
+  {
+   "text": "La",
+   "start": 24.03,
+   "end": 24.151
+  },
+  {
+   "text": "norme :",
+   "start": 24.151,
+   "end": 24.564
+  },
+  {
+   "text": "de",
+   "start": 24.952,
+   "end": 25.013
+  },
+  {
+   "text": "quatre-vingts",
+   "start": 25.013,
+   "end": 25.547
+  },
+  {
+   "text": "à",
+   "start": 25.547,
+   "end": 25.668
+  },
+  {
+   "text": "cent",
+   "start": 25.668,
+   "end": 25.838
+  },
+  {
+   "text": "vingt",
+   "start": 25.838,
+   "end": 25.972
+  },
+  {
+   "text": "pour",
+   "start": 25.972,
+   "end": 26.154
+  },
+  {
+   "text": "cent.",
+   "start": 26.154,
+   "end": 26.433
+  },
+  {
+   "text": "L'héparine",
+   "start": 26.797,
+   "end": 27.234
+  },
+  {
+   "text": "agit",
+   "start": 27.234,
+   "end": 27.464
+  },
+  {
+   "text": "grâce",
+   "start": 27.464,
+   "end": 27.719
+  },
+  {
+   "text": "à",
+   "start": 27.719,
+   "end": 27.792
+  },
+  {
+   "text": "elle :",
+   "start": 27.792,
+   "end": 28.047
+  },
+  {
+   "text": "s'il",
+   "start": 28.411,
+   "end": 28.629
+  },
+  {
+   "text": "en",
+   "start": 28.629,
+   "end": 28.69
+  },
+  {
+   "text": "manque,",
+   "start": 28.69,
+   "end": 29.03
+  },
+  {
+   "text": "l'héparine",
+   "start": 29.236,
+   "end": 29.661
+  },
+  {
+   "text": "marche",
+   "start": 29.661,
+   "end": 29.916
+  },
+  {
+   "text": "moins",
+   "start": 29.916,
+   "end": 30.086
+  },
+  {
+   "text": "bien.",
+   "start": 30.086,
+   "end": 30.425
+  },
+  {
+   "text": "Trois :",
+   "start": 31.399,
+   "end": 31.702
+  },
+  {
+   "text": "les",
+   "start": 32.091,
+   "end": 32.151
+  },
+  {
+   "text": "protéines",
+   "start": 32.151,
+   "end": 32.576
+  },
+  {
+   "text": "C",
+   "start": 32.576,
+   "end": 32.782
+  },
+  {
+   "text": "et",
+   "start": 32.782,
+   "end": 32.904
+  },
+  {
+   "text": "S,",
+   "start": 32.904,
+   "end": 33.304
+  },
+  {
+   "text": "deux",
+   "start": 33.608,
+   "end": 33.729
+  },
+  {
+   "text": "autres",
+   "start": 33.729,
+   "end": 34.02
+  },
+  {
+   "text": "freins.",
+   "start": 34.02,
+   "end": 34.372
+  },
+  {
+   "text": "S'il",
+   "start": 34.7,
+   "end": 34.955
+  },
+  {
+   "text": "en",
+   "start": 34.955,
+   "end": 35.028
+  },
+  {
+   "text": "manque,",
+   "start": 35.028,
+   "end": 35.428
+  },
+  {
+   "text": "des",
+   "start": 35.61,
+   "end": 35.683
+  },
+  {
+   "text": "caillots",
+   "start": 35.683,
+   "end": 35.926
+  },
+  {
+   "text": "se",
+   "start": 35.926,
+   "end": 36.071
+  },
+  {
+   "text": "forment,",
+   "start": 36.071,
+   "end": 36.496
+  },
+  {
+   "text": "même",
+   "start": 36.787,
+   "end": 36.921
+  },
+  {
+   "text": "chez",
+   "start": 36.921,
+   "end": 37.066
+  },
+  {
+   "text": "un",
+   "start": 37.066,
+   "end": 37.224
+  },
+  {
+   "text": "jeune.",
+   "start": 37.224,
+   "end": 37.649
+  },
+  {
+   "text": "On",
+   "start": 37.978,
+   "end": 38.112
+  },
+  {
+   "text": "les",
+   "start": 38.112,
+   "end": 38.209
+  },
+  {
+   "text": "dose",
+   "start": 38.209,
+   "end": 38.403
+  },
+  {
+   "text": "à",
+   "start": 38.403,
+   "end": 38.451
+  },
+  {
+   "text": "distance",
+   "start": 38.451,
+   "end": 38.815
+  },
+  {
+   "text": "d'une",
+   "start": 38.815,
+   "end": 38.937
+  },
+  {
+   "text": "thrombose,",
+   "start": 38.937,
+   "end": 39.483
+  },
+  {
+   "text": "et",
+   "start": 39.798,
+   "end": 39.835
+  },
+  {
+   "text": "pas",
+   "start": 39.835,
+   "end": 39.98
+  },
+  {
+   "text": "sous",
+   "start": 39.98,
+   "end": 40.126
+  },
+  {
+   "text": "AVK,",
+   "start": 40.126,
+   "end": 40.587
+  },
+  {
+   "text": "qui",
+   "start": 40.891,
+   "end": 40.988
+  },
+  {
+   "text": "les",
+   "start": 40.988,
+   "end": 41.073
+  },
+  {
+   "text": "font",
+   "start": 41.073,
+   "end": 41.243
+  },
+  {
+   "text": "baisser.",
+   "start": 41.243,
+   "end": 41.692
+  },
+  {
+   "text": "Quatre :",
+   "start": 42.642,
+   "end": 43.091
+  },
+  {
+   "text": "les",
+   "start": 43.419,
+   "end": 43.491
+  },
+  {
+   "text": "facteurs",
+   "start": 43.492,
+   "end": 43.892
+  },
+  {
+   "text": "de",
+   "start": 43.892,
+   "end": 43.965
+  },
+  {
+   "text": "la",
+   "start": 43.965,
+   "end": 44.05
+  },
+  {
+   "text": "coagulation.",
+   "start": 44.05,
+   "end": 44.875
+  },
+  {
+   "text": "La",
+   "start": 45.25,
+   "end": 45.383
+  },
+  {
+   "text": "norme :",
+   "start": 45.383,
+   "end": 45.759
+  },
+  {
+   "text": "environ",
+   "start": 46.184,
+   "end": 46.512
+  },
+  {
+   "text": "cinquante",
+   "start": 46.512,
+   "end": 46.9
+  },
+  {
+   "text": "à",
+   "start": 46.9,
+   "end": 46.961
+  },
+  {
+   "text": "cent",
+   "start": 46.961,
+   "end": 47.119
+  },
+  {
+   "text": "cinquante",
+   "start": 47.119,
+   "end": 47.471
+  },
+  {
+   "text": "pour",
+   "start": 47.471,
+   "end": 47.641
+  },
+  {
+   "text": "cent.",
+   "start": 47.641,
+   "end": 47.932
+  },
+  {
+   "text": "Si",
+   "start": 48.261,
+   "end": 48.479
+  },
+  {
+   "text": "le",
+   "start": 48.479,
+   "end": 48.576
+  },
+  {
+   "text": "facteur",
+   "start": 48.576,
+   "end": 48.952
+  },
+  {
+   "text": "huit",
+   "start": 48.952,
+   "end": 49.086
+  },
+  {
+   "text": "manque,",
+   "start": 49.086,
+   "end": 49.462
+  },
+  {
+   "text": "c'est",
+   "start": 49.717,
+   "end": 49.862
+  },
+  {
+   "text": "l'hémophilie",
+   "start": 49.862,
+   "end": 50.348
+  },
+  {
+   "text": "de",
+   "start": 50.348,
+   "end": 50.457
+  },
+  {
+   "text": "type",
+   "start": 50.457,
+   "end": 50.676
+  },
+  {
+   "text": "A.",
+   "start": 50.676,
+   "end": 50.906
+  },
+  {
+   "text": "Si",
+   "start": 51.234,
+   "end": 51.465
+  },
+  {
+   "text": "c'est",
+   "start": 51.465,
+   "end": 51.574
+  },
+  {
+   "text": "le",
+   "start": 51.574,
+   "end": 51.671
+  },
+  {
+   "text": "neuf,",
+   "start": 51.671,
+   "end": 52.072
+  },
+  {
+   "text": "c'est",
+   "start": 52.29,
+   "end": 52.424
+  },
+  {
+   "text": "le",
+   "start": 52.424,
+   "end": 52.521
+  },
+  {
+   "text": "type",
+   "start": 52.521,
+   "end": 52.763
+  },
+  {
+   "text": "B.",
+   "start": 52.763,
+   "end": 53.055
+  },
+  {
+   "text": "Anti-Xa,",
+   "start": 53.979,
+   "end": 54.604
+  },
+  {
+   "text": "antithrombine,",
+   "start": 54.862,
+   "end": 55.572
+  },
+  {
+   "text": "protéines",
+   "start": 55.793,
+   "end": 56.21
+  },
+  {
+   "text": "C",
+   "start": 56.21,
+   "end": 56.43
+  },
+  {
+   "text": "et",
+   "start": 56.43,
+   "end": 56.553
+  },
+  {
+   "text": "S,",
+   "start": 56.553,
+   "end": 56.945
+  },
+  {
+   "text": "facteurs :",
+   "start": 57.19,
+   "end": 57.692
+  },
+  {
+   "text": "le",
+   "start": 58.232,
+   "end": 58.293
+  },
+  {
+   "text": "tube",
+   "start": 58.293,
+   "end": 58.477
+  },
+  {
+   "text": "bleu",
+   "start": 58.477,
+   "end": 58.648
+  },
+  {
+   "text": "n'a",
+   "start": 58.648,
+   "end": 58.746
+  },
+  {
+   "text": "plus",
+   "start": 58.746,
+   "end": 58.881
+  },
+  {
+   "text": "de",
+   "start": 58.881,
+   "end": 58.992
+  },
+  {
+   "text": "secret",
+   "start": 58.992,
+   "end": 59.273
+  },
+  {
+   "text": "pour",
+   "start": 59.273,
+   "end": 59.433
+  },
+  {
+   "text": "toi !",
+   "start": 59.433,
+   "end": 59.776
+  }
+ ]
+}

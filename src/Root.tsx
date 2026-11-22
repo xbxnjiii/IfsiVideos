@@ -154,6 +154,8 @@ import {TubeBleuTpInr, TubeBleuTpInrProps} from './videos/tube-bleu-tp-inr/TubeB
 import {TL as TUBE_BLEU_TP_INR_TL} from './videos/tube-bleu-tp-inr/timeline';
 import {TubeBleuTca, TubeBleuTcaProps} from './videos/tube-bleu-tca/TubeBleuTca';
 import {TL as TUBE_BLEU_TCA_TL} from './videos/tube-bleu-tca/timeline';
+import {TubeBleuFacteurs, TubeBleuFacteursProps} from './videos/tube-bleu-facteurs/TubeBleuFacteurs';
+import {TL as TUBE_BLEU_FACTEURS_TL} from './videos/tube-bleu-facteurs/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -910,6 +912,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies TubeBleuTcaProps}
+		/>
+		{/* 77 · Tube-Bleu-Facteurs */}
+		<Composition
+			id="Tube-Bleu-Facteurs"
+			component={TubeBleuFacteurs}
+			durationInFrames={TUBE_BLEU_FACTEURS_TL.total}
+			fps={TUBE_BLEU_FACTEURS_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies TubeBleuFacteursProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition

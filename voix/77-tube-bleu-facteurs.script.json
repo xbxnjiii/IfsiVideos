@@ -1,0 +1,32 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Une phlébite à vingt-cinq ans, sans raison ? Le tube bleu peut chercher la cause : un frein de la coagulation qui manque. Tu les connais ?"
+ },
+ {
+  "id": "antixa",
+  "rate": "+3%",
+  "text": "Un : l'anti-Xa. Il surveille l'héparine, surtout les {HBPM|H B P M}, chez l'insuffisant rénal ou la femme enceinte. On prélève au pic, trois à quatre heures après l'injection, et la cible dépend de la molécule."
+ },
+ {
+  "id": "antithrombine",
+  "rate": "+3%",
+  "text": "Deux : l'antithrombine, le frein principal de la coagulation. La norme : de quatre-vingts à cent vingt pour cent. L'héparine agit grâce à elle : s'il en manque, l'héparine marche moins bien."
+ },
+ {
+  "id": "proteines",
+  "rate": "+3%",
+  "text": "Trois : les protéines C et S, deux autres freins. S'il en manque, des caillots se forment, même chez un jeune. On les dose à distance d'une thrombose, et pas sous {AVK|A V K}, qui les font baisser."
+ },
+ {
+  "id": "facteurs",
+  "rate": "+3%",
+  "text": "Quatre : les facteurs de la coagulation. La norme : environ cinquante à cent cinquante pour cent. Si le facteur huit manque, c'est l'hémophilie de type A. Si c'est le neuf, c'est le type B."
+ },
+ {
+  "id": "fin",
+  "rate": "+2%",
+  "text": "Anti-Xa, antithrombine, protéines C et S, facteurs : le tube bleu n'a plus de secret pour toi !"
+ }
+]

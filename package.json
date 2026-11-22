@@ -90,7 +90,8 @@
     "render:tube-gris-glycemie": "remotion render Tube-Gris-Glycemie out/73-tube-gris-glycemie.mp4",
     "render:tube-gris-alcoolemie": "remotion render Tube-Gris-Alcoolemie out/74-tube-gris-alcoolemie.mp4",
     "render:tube-bleu-tp-inr": "remotion render Tube-Bleu-TP-INR out/75-tube-bleu-tp-inr.mp4",
-    "render:tube-bleu-tca": "remotion render Tube-Bleu-TCA out/76-tube-bleu-tca.mp4"
+    "render:tube-bleu-tca": "remotion render Tube-Bleu-TCA out/76-tube-bleu-tca.mp4",
+    "render:tube-bleu-facteurs": "remotion render Tube-Bleu-Facteurs out/77-tube-bleu-facteurs.mp4"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.532",

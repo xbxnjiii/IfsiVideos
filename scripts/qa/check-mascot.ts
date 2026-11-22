@@ -152,6 +152,8 @@ import * as tubebleutpinr from '../../src/videos/tube-bleu-tp-inr/mascot';
 import * as tubebleutpinrTL from '../../src/videos/tube-bleu-tp-inr/timeline';
 import * as tubebleutca from '../../src/videos/tube-bleu-tca/mascot';
 import * as tubebleutcaTL from '../../src/videos/tube-bleu-tca/timeline';
+import * as tubebleufacteurs from '../../src/videos/tube-bleu-facteurs/mascot';
+import * as tubebleufacteursTL from '../../src/videos/tube-bleu-facteurs/timeline';
 
 const VIDEOS: Record<string, [typeof constantes.MASCOT, typeof constantesTL.TL]> = {
 	constantes: [constantes.MASCOT, constantesTL.TL],
@@ -229,6 +231,7 @@ const VIDEOS: Record<string, [typeof constantes.MASCOT, typeof constantesTL.TL]>
 	'tube-gris-alcoolemie': [tubegrisalcoolemie.MASCOT, tubegrisalcoolemieTL.TL],
 	'tube-bleu-tp-inr': [tubebleutpinr.MASCOT, tubebleutpinrTL.TL],
 	'tube-bleu-tca': [tubebleutca.MASCOT, tubebleutcaTL.TL],
+	'tube-bleu-facteurs': [tubebleufacteurs.MASCOT, tubebleufacteursTL.TL],
 };
 const name = process.argv[2] ?? 'constantes';
 const [MASCOT, TL] = VIDEOS[name];

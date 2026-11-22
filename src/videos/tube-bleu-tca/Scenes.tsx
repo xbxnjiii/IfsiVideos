@@ -4,7 +4,7 @@
 // 1,5 – 2,5 selon le protocole ; HBPM : on dose l'anti-Xa, à l'écran) ; 2 · le fibrinogène (la protéine qui forme le filet du
 // caillot, 2 – 4 g/L ; bas : hémorragie ; haut : inflammation) ; 3 · les D-dimères (morceaux de caillot qui se dissout ;
 // < 500 µg/L : phlébite / embolie très peu probable ; au-dessus : d'autres examens ; seuil = âge × 10 après 50 ans, à
-// l'écran). Fin : le tube bleu terminé. Pas d'appel à l'action.
+// l'écran). Fin : prochaine vidéo, l'anti-Xa et les facteurs (n° 77). Pas d'appel à l'action.
 // Sources : référentiels de biologie médicale (TCA rapport < 1,2 ; fibrinogène 2 – 4 g/L) ; HAS / ANSM (héparines : TCA
 // 1,5 – 2,5 × témoin ou anti-Xa selon le protocole) ; ESC 2019 embolie pulmonaire (D-dimères < 500 µg/L, seuil ajusté à l'âge).
 import React from 'react';
@@ -13,7 +13,7 @@ import {Big, Live, Note, RowCard, ease} from '../../brand/bold';
 import {FeverIcon, LegIcon, SyringeIcon} from '../../brand/icons';
 import {Camera, Confetti} from '../../brand/motion3';
 import {BloodDrop} from '../../brand/nose';
-import {Chip, Counter, PINK_BG, Pop, SeriesPill, ShortBg} from '../../brand/short';
+import {Chip, Counter, NextCard, PINK_BG, Pop, SeriesPill, ShortBg} from '../../brand/short';
 import {Sfx} from '../../brand/Sfx';
 import {alpha, FONT, LPI, SHADOW} from '../../brand/theme';
 import {CAP, NormCard, RedCell, Tube} from '../../brand/tubes';
@@ -322,8 +322,9 @@ export const Fin: React.FC = () => {
 	const TCA = at('fin', 'tca,');
 	const FIB = at('fin', 'fibrinogène,');
 	const DD = at('fin', 'd-dimères');
-	const VOILA = at('fin', 'voilà,');
-	const SECRET = at('fin', 'secret');
+	const FAIT = at('fin', 'fait.');
+	const PROCH = at('fin', 'prochaine');
+	const AXA = at('fin', "l'anti-xa");
 	const rows = [
 		{t: TCA, title: 'TCA', sub: '< 1,2 · héparine : 1,5 – 2,5'},
 		{t: FIB, title: 'fibrinogène', sub: '2 – 4 g/L'},
@@ -334,25 +335,33 @@ export const Fin: React.FC = () => {
 			<ShortBg tone={LPI.sky} />
 			<Pill />
 			<Counter steps={[[0, 3]]} total={3} done />
-			<Camera punches={[...rows.map((r) => r.t + 1), VOILA + 1]} strength={0.025}>
+			<Camera punches={[...rows.map((r) => r.t + 1), PROCH + 1]} strength={0.025}>
 				<Big from={-2} text={'Le tube *bleu*'} size={110} y={190} />
 				{rows.map((r, i) => (
-					<RowCard key={r.title} at={r.t - 4} y={440 + i * 190} h={170} badge={String(i + 1)} badgeTone={i ? LPI.pink : LPI.sky} title={r.title} sub={r.sub} subAt={r.t + 4} check={VOILA} size={50} />
+					<RowCard key={r.title} at={r.t - 4} y={440 + i * 190} h={170} badge={String(i + 1)} badgeTone={i ? LPI.pink : LPI.sky} title={r.title} sub={r.sub} subAt={r.t + 4} check={FAIT} size={50} />
 				))}
-				<Pop at={SECRET - 6} x={540} y={1180}>
-					<div style={{display: 'flex', alignItems: 'center', gap: 24, padding: '20px 36px', borderRadius: 34, background: LPI.navy, border: `6px solid ${N}`, boxShadow: SHADOW}}>
-						<Tube size={60} cap={BLEU} level={0.72} />
-						<div style={{fontFamily: FONT.title, fontWeight: 900, fontSize: 52, color: LPI.paper, whiteSpace: 'nowrap'}}>
-							tube bleu : <span style={{color: LPI.pink}}>✓</span>
-						</div>
-					</div>
+				<Confetti at={FAIT} />
+				<Pop at={PROCH - 2} x={540} y={1180}>
+					<NextCard
+						art={
+							<Live
+								render={(f) => (
+									<div style={{transform: `scale(${f >= AXA - 4 ? 1 : 0.0001}) rotate(${Math.sin(f / 6) * 5}deg)`}}>
+										<Tube size={60} cap={BLEU} level={0.72} />
+									</div>
+								)}
+							/>
+						}
+					>
+						l'<span style={{color: LPI.pink}}>anti-Xa</span> et les facteurs
+					</NextCard>
 				</Pop>
-				<Confetti at={SECRET} />
 			</Camera>
 			{rows.map((r) => (
 				<Sfx key={r.title} name="pop" at={r.t} volume={0.18} />
 			))}
-			<Sfx name="ding" at={VOILA} volume={0.22} />
+			<Sfx name="ding" at={FAIT} volume={0.22} />
+			<Sfx name="whoosh" at={PROCH - 2} volume={0.15} />
 		</AbsoluteFill>
 	);
 };

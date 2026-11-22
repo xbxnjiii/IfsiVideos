@@ -86,7 +86,8 @@ pas de logiciel de montage, pas de banque d'images.
 | 73 | Série les tubes : le tube gris, la glycémie en 58 s (fluorure, à jeun, normes, diabète ; voix Laura, directives Instagram) | `Tube-Gris-Glycemie` | [voix/73-tube-gris-glycemie.script.json](voix/73-tube-gris-glycemie.script.json) | [storyboard](docs/lpi/storyboard-tube-gris.md) |
 | 74 | Série les tubes : le tube gris, l'alcoolémie en 57 s (antiseptique sans alcool, seuils au volant, élimination ; voix Laura, directives Instagram) | `Tube-Gris-Alcoolemie` | [voix/74-tube-gris-alcoolemie.script.json](voix/74-tube-gris-alcoolemie.script.json) | [storyboard](docs/lpi/storyboard-tube-gris.md) |
 | 75 | Série les tubes : le tube bleu, TP et INR en 62 s (remplissage jusqu'au trait, TP, INR / AVK ; voix gratuite, directives Instagram) | `Tube-Bleu-TP-INR` | [voix/75-tube-bleu-tp-inr.script.json](voix/75-tube-bleu-tp-inr.script.json) | [storyboard](docs/lpi/storyboard-tube-bleu.md) |
-| 76 | Série les tubes : le tube bleu, TCA, fibrinogène et D-dimères en 57 s (voix gratuite, directives Instagram) | `Tube-Bleu-TCA` | [voix/76-tube-bleu-tca.script.json](voix/76-tube-bleu-tca.script.json) | [storyboard](docs/lpi/storyboard-tube-bleu.md) |
+| 76 | Série les tubes : le tube bleu, TCA, fibrinogène et D-dimères en 59 s (voix gratuite, directives Instagram) | `Tube-Bleu-TCA` | [voix/76-tube-bleu-tca.script.json](voix/76-tube-bleu-tca.script.json) | [storyboard](docs/lpi/storyboard-tube-bleu.md) |
+| 77 | Série les tubes : le tube bleu, anti-Xa, antithrombine, protéines C et S, facteurs en 64 s (voix gratuite, directives Instagram) | `Tube-Bleu-Facteurs` | [voix/77-tube-bleu-facteurs.script.json](voix/77-tube-bleu-facteurs.script.json) | [storyboard](docs/lpi/storyboard-tube-bleu.md) |
 
 ## Utilisation
 

@@ -760,13 +760,20 @@ script), « en France » / « le 15 (ou le numéro d'urgence de ton pays) ». Ca
   hypoglycémie. Voix : Whisper entend « fluorure » « flux aurure » (amorcé, il l'entend bien) ; « amaigrissement » entendu
   « amélioration » → « une perte de poids ».
 - **Le tube bleu (citrate)** (demandé : « la vidéo pour le tube bleu comme les précédentes », contenu complété par l'agent ;
-  une seule vidéo dépassait 60 s → 2 vidéos ; storyboard `docs/lpi/storyboard-tube-bleu.md`). `Tube-Bleu-TP-INR` (n° 75,
+  une seule vidéo dépassait 60 s → 3 vidéos ; storyboard `docs/lpi/storyboard-tube-bleu.md`). `Tube-Bleu-TP-INR` (n° 75,
   ≈ 62 s, voix gratuite d'abord) : « Le tube bleu, c'est la coagulation. S'il est mal rempli, le résultat est faux… et ton
   patient peut saigner. », remplissage jusqu'au trait (citrate, sinon temps faussement allongés), TP 70 – 100 % (bas : foie,
   anticoagulant), INR (AVK, ≈ 1 sans traitement, cible le plus souvent 2 – 3 ; valve mécanique plus haute à l'écran).
   `Tube-Bleu-TCA` (n° 76, ≈ 57 s, voix gratuite d'abord) : « Sous héparine, un seul chiffre dit si la dose est bonne : le
   TCA… », TCA (rapport patient / témoin < 1,2 ; héparine souvent 1,5 – 2,5 selon le protocole ; HBPM → anti-Xa à l'écran),
-  fibrinogène 2 – 4 g/L, D-dimères < 500 µg/L (seuil âge × 10 après 50 ans à l'écran). Voix : « autour de un. » était entendu
+  fibrinogène 2 – 4 g/L, D-dimères < 500 µg/L (seuil âge × 10 après 50 ans à l'écran). Fin : « Prochaine vidéo : l'anti-Xa et les facteurs
+  de la coagulation » (≈ 59 s). `Tube-Bleu-Facteurs` (n° 77, ≈ 64 s, voix gratuite d'abord, demandée : « il manque anti-Xa, les
+  protéines C et S, antithrombine et facteurs de coagulation ») : « Une phlébite à vingt-cinq ans, sans raison ? … un frein de
+  la coagulation qui manque. », anti-Xa (HBPM, insuffisant rénal / grossesse, au pic 3 – 4 h après l'injection, cible selon la
+  molécule), antithrombine (frein principal, 80 – 120 %, l'héparine agit grâce à elle), protéines C et S (freins ; déficit →
+  caillots même jeune ; à distance d'une thrombose, pas sous AVK), facteurs (≈ 50 – 150 % ; VIII bas = hémophilie A, IX = B).
+  Briques locales `Brake` (frein qui s'efface) + `ClotFlow` (caillots arrêtés ou non), `PeakCurve`. Voix : « Facteur huit trop
+  bas : hémophilie A » était entendu « huit au bas… hémophilie à » → « Si le facteur huit manque, c'est l'hémophilie de type A ». Voix : « autour de un. » était entendu
   « autour de temps » → « autour de un virgule zéro ». `BloodDrop` de `nose.tsx` n'est qu'un `<path>` : l'envelopper dans un
   `<svg>` (`Drop` local) ; les flèches « ↓ ↑ » dans une légende d'icône ne s'affichent pas : écrire « trop bas / trop haut ».
 
