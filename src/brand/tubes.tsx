@@ -217,17 +217,19 @@ export const SlotArt: React.FC<{k: number; first?: 'hemoc' | 'purge' | 'both'}> 
  * La frise de l'ordre (6 cases numérotées) : chaque case se remplit à `fill[i]` (pop), la case `cur` est surlignée en rose,
  * les cases passées se cochent. Centrée sur `y`.
  */
-export const OrderRail: React.FC<{y: number; at: number; fill: number[]; cur?: number; check?: number[]; scale?: number; out?: number; labels?: number[]; first?: 'hemoc' | 'purge' | 'both'}> = ({y, at: t0, fill, cur = -1, check = [], scale = 1, out = 1e9, labels = [], first = 'hemoc'}) => {
+export const OrderRail: React.FC<{y: number; at: number; fill: number[]; cur?: number; check?: number[]; scale?: number; out?: number; labels?: number[]; first?: 'hemoc' | 'purge' | 'both'; only?: number[]}> = ({y, at: t0, fill, cur = -1, check = [], scale = 1, out = 1e9, labels = [], first = 'hemoc', only}) => {
 	const frame = useCurrentFrame();
 	if (frame < t0 || frame > out + 8) return null;
+	const keep = only ?? ORDER.map((_, i) => i);
 	const o = Math.min(1, (frame - t0) / 6) * Math.max(0, Math.min(1, (out + 8 - frame) / 8));
 	const W = 130;
 	const G = 10;
-	const x0 = 540 - (7 * W + 6 * G) / 2;
+	const x0 = 540 - (keep.length * W + (keep.length - 1) * G) / 2;
 	const pop = (t: number) => (frame < t ? 0 : 1 + 0.12 * Math.exp(-(frame - t) / 3) * Math.cos((frame - t) * 0.9) - Math.exp(-(frame - t) / 2));
 	return (
 		<div style={{position: 'absolute', left: 0, top: y - 125, width: 1080, height: 250, opacity: o, transform: `scale(${scale})`, transformOrigin: '540px 125px'}}>
-			{ORDER.map((it, i) => {
+			{keep.map((k, i) => {
+				const it = ORDER[k];
 				const f = fill[i] ?? 1e9;
 				const on = frame >= f;
 				const isCur = i === cur;
@@ -252,7 +254,7 @@ export const OrderRail: React.FC<{y: number; at: number; fill: number[]; cur?: n
 						<div style={{position: 'absolute', left: 8, top: 8, width: 44, height: 44, borderRadius: 22, background: on ? LPI.pink : alpha(LPI.paper, 0.8), border: `4px solid ${N}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FONT.title, fontWeight: 900, fontSize: 28, color: N, zIndex: 2}}>{i + 1}</div>
 						{on ? (
 							<div style={{position: 'absolute', left: 0, right: 0, top: 26, height: 160, display: 'flex', alignItems: 'center', justifyContent: 'center', transform: `scale(${pop(f)})`}}>
-								<SlotArt k={i} first={first} />
+								<SlotArt k={k} first={first} />
 							</div>
 						) : null}
 						{lab ? <div style={{position: 'absolute', left: -10, right: -10, bottom: -50, textAlign: 'center', fontFamily: FONT.body, fontWeight: 900, fontSize: 26, color: N, whiteSpace: 'nowrap', transform: `scale(${pop(labels[i])})`}}>{it.additive}</div> : null}

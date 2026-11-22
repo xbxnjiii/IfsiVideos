@@ -10,7 +10,7 @@ export const MASCOT: Beat[] = [
 	{at: abs('intro', 'fausser'), via: 'pop', key: 'expressions/surprise', ...L, ...LOW},
 	{at: abs('intro', 'connais'), via: 'cut', key: 'expressions/questionnement', ...L, ...LOW},
 	{at: start('ordre') + 8, via: 'hop', dur: 18, key: 'gestes/presente', ...R, ...LOW},
-	{at: abs('ordre', 'sept'), via: 'cut', key: 'gestes/ok', ...R, ...LOW},
+	{at: abs('ordre', 'cinq'), via: 'cut', key: 'gestes/ok', ...R, ...LOW},
 	{at: start('aiguille') + 8, via: 'hop', dur: 18, key: 'gestes/astuce', ...L, ...LOW},
 	{at: start('retourner') + 8, via: 'hop', dur: 18, key: 'gestes/important', ...R, ...LOW},
 	{at: start('fin') + 8, via: 'hop', dur: 18, key: 'gestes/attention', ...L, ...LOW},

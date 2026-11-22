@@ -1,11 +1,12 @@
 // « L'ordre des tubes » (n° 66, série « les tubes », directives Instagram) : refaite à la demande avec les tableaux du
 // propriétaire (ordre de remplissage selon l'aiguille ; retournements). On ne dit pas à quoi sert chaque tube (demandé :
 // « dis juste l'ordre », chaque tube a sa vidéo). Image 0 :
-// pastille de série, titre, compteur 0/7, les 7 tubes mélangés ; le violet passe avant le jaune → le jaune est faussé ;
-// les tubes se rangent. Puis l'ordre, une carte par tube (numéro + nom) et la frise qui se remplit (n/7) ; sans
+// pastille de série, titre, compteur 0/5, les 5 tubes mélangés ; le violet passe avant le jaune → le jaune est faussé ;
+// les tubes se rangent. Puis l'ordre, une carte par tube (numéro + nom) et la frise qui se remplit (n/5) ; sans
 // hémocultures : aiguille simple → bleu, ailettes → purge puis bleu ; les retournements ; « suis le protocole ».
 // Sources : CLSI GP41 (7e éd., 2017) pour l'ordre et la purge ; tableau « bouchon / additif / analyses / retournements »
 // fourni par le propriétaire (nombre de retournements selon le fabricant : à vérifier avec la notice de l'établissement).
+// Le rouge (sec) et le vert (hépariné) ont été retirés à la demande : 5 tubes (hémocultures, bleu, jaune, violet, gris).
 import React from 'react';
 import {AbsoluteFill, interpolate, useCurrentFrame} from 'remotion';
 import {Big, ease, FlatBg, Fly, Live, Note, popAt} from '../../brand/bold';
@@ -20,6 +21,8 @@ import {at} from './timeline';
 
 const N = LPI.navy;
 const CAPS = [HEMO_CAP.aero, CAP.citrate, CAP.gel, CAP.sec, CAP.hepar, CAP.edta, CAP.fluor];
+/** Les cases de `ORDER` gardées dans cette vidéo (sans le rouge ni le vert). */
+const KEEP = [0, 1, 2, 5, 6];
 
 const Bg: React.FC<{tone?: string}> = ({tone = LPI.sky}) => (
 	<>
@@ -42,17 +45,17 @@ const Chip: React.FC<{at: number; to?: number; x: number; y: number; children: R
 
 const SeriesPill: React.FC = () => (
 	<div style={{position: 'absolute', left: 540, top: 96, transform: 'translateX(-50%)', display: 'flex', alignItems: 'center', gap: 8, padding: '10px 26px', borderRadius: 999, background: LPI.paper, border: `5px solid ${N}`, fontFamily: FONT.body, fontWeight: 900, fontSize: 28, letterSpacing: '0.1em', color: N, whiteSpace: 'nowrap'}}>
-		{CAPS.map((c) => (
+		{KEEP.map((k) => CAPS[k]).map((c) => (
 			<div key={c} style={{width: 16, height: 22, borderRadius: 5, background: c, border: `3px solid ${N}`}} />
 		))}
 		<span style={{marginLeft: 8}}>LES TUBES · L'ORDRE</span>
 	</div>
 );
 
-/** Compteur « n / 7 » en haut à droite. */
+/** Compteur « n / 5 » en haut à droite. */
 const Counter: React.FC<{n: number | string; done?: boolean}> = ({n, done}) => (
 	<div style={{position: 'absolute', left: 880, top: 250, transform: 'translate(-50%, -50%)', padding: '10px 26px', borderRadius: 30, background: done ? LPI.blue : LPI.paper, border: `6px solid ${N}`, boxShadow: SHADOW, fontFamily: FONT.title, fontWeight: 900, fontSize: 60, color: done ? LPI.paper : N, fontVariantNumeric: 'tabular-nums', whiteSpace: 'nowrap'}}>
-		{n} / 7
+		{n} / 5
 	</div>
 );
 
@@ -61,7 +64,8 @@ const Art: React.FC<{k: number; size?: number; taint?: number; bad?: number}> = 
 	k === 0 ? <HemoFlask size={size * 0.95} label="" cap={HEMO_CAP.aero} /> : <Tube size={size} cap={CAPS[k]} gel={k === 2} taint={taint} bad={bad} />;
 
 /* ═══════════════════════════════ ACCROCHE ═══════════════════════════════ */
-const SHUFFLE = [5, 2, 6, 1, 4, 0, 3];
+/** Positions dans `KEEP`, mélangées (le violet juste avant le jaune). */
+const SHUFFLE = [4, 3, 2, 0, 1];
 
 export const Hook: React.FC = () => {
 	const frame = useCurrentFrame();
@@ -77,23 +81,24 @@ export const Hook: React.FC = () => {
 			<Camera punches={[TROMPES + 1, FAUSS + 1, CONN + 1]} shakes={[FAUSS + 3]} strength={0.03}>
 				<Big from={-12} text={"L'ordre\ndes *tubes*"} size={130} y={190} />
 				<Counter n={frame >= CONN + 18 ? '?' : 0} />
-				{/* les 7 tubes : mélangés, qui s'échangent, puis rangés */}
-				{SHUFFLE.map((k, slot) => (
+				{/* les 5 tubes : mélangés, qui s'échangent, puis rangés */}
+				{SHUFFLE.map((j, slot) => (
 					<Live
-						key={k}
+						key={j}
 						render={(f) => {
 							const swap = Math.floor(f / 26) % 2 === 1 && f < TROMPES ? (slot % 2 ? -1 : 1) : 0;
 							const mixSlot = slot + swap * interpolate(f % 26, [0, 10], [0, 1], clamp);
-							const xs = 540 + (mixSlot - 3) * 140;
-							const xo = 540 + (k - 3) * 140;
+							const k = KEEP[j];
+							const xs = 540 + (mixSlot - 2) * 170;
+							const xo = 540 + (j - 2) * 170;
 							const x = xs + (xo - xs) * sortK;
-							const bob = Math.sin(f / 7 + k) * 10 * (1 - sortK);
+							const bob = Math.sin(f / 7 + j) * 10 * (1 - sortK);
 							const violetBeforeYellow = k === 2 && f >= FAUSS - 2 && f < CONN;
 							return (
 								<div style={{position: 'absolute', left: x, top: 900 + bob, transform: 'translate(-50%, -50%)'}}>
 									<Art k={k} size={100} taint={violetBeforeYellow ? interpolate(f, [FAUSS - 2, FAUSS + 8], [0, 1], clamp) : 0} bad={violetBeforeYellow ? popAt(f, FAUSS + 4) : 0} />
 									{sortK > 0.5 ? (
-										<div style={{position: 'absolute', left: '50%', top: -70, transform: `translateX(-50%) scale(${popAt(f, CONN + 12 + k * 2)})`, width: 54, height: 54, borderRadius: 27, background: LPI.pink, border: `4px solid ${N}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FONT.title, fontWeight: 900, fontSize: 30, color: N}}>{k + 1}</div>
+										<div style={{position: 'absolute', left: '50%', top: -70, transform: `translateX(-50%) scale(${popAt(f, CONN + 12 + j * 2)})`, width: 54, height: 54, borderRadius: 27, background: LPI.pink, border: `4px solid ${N}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FONT.title, fontWeight: 900, fontSize: 30, color: N}}>{j + 1}</div>
 									) : null}
 								</div>
 							);
@@ -121,10 +126,8 @@ const CARDS = [
 	{num: 'un', name: 'Hémocultures'},
 	{num: 'deux', name: 'Bleu'},
 	{num: 'trois', name: 'Jaune'},
-	{num: 'quatre', name: 'Rouge'},
-	{num: 'cinq', name: 'Vert'},
-	{num: 'six', name: 'Violet'},
-	{num: 'sept', name: 'Gris'},
+	{num: 'quatre', name: 'Violet'},
+	{num: 'cinq', name: 'Gris'},
 ];
 
 export const Ordre: React.FC = () => {
@@ -137,10 +140,10 @@ export const Ordre: React.FC = () => {
 			<SeriesPill />
 			<Camera punches={T.map((t) => t + 1)} strength={0.025}>
 				<Big from={-2} text={"*L'ordre*"} size={130} y={190} />
-				<Counter n={cur + 1} done={cur === 6} />
+				<Counter n={cur + 1} done={cur === 4} />
 				{CARDS.map((c, i) => {
 					const t0 = T[i] - 4;
-					const out = i < 6 ? T[i + 1] - 6 : 1e9;
+					const out = i < 4 ? T[i + 1] - 6 : 1e9;
 					return (
 						<Fly key={c.name} at={t0} out={out} x={540} y={760} from="right" to="left">
 							<div style={{width: 860, height: 520, boxSizing: 'border-box', borderRadius: 48, background: LPI.paper, border: `7px solid ${N}`, boxShadow: SHADOW, display: 'flex', alignItems: 'center', gap: 40, padding: '0 50px'}}>
@@ -151,7 +154,7 @@ export const Ordre: React.FC = () => {
 											<HemoFlask size={100} label="" cap={HEMO_CAP.anaero} />
 										</div>
 									) : (
-										<Tube size={150} cap={CAPS[i]} gel={i === 2} level={0.74} serum={i === 2 || i === 3 ? 1 : 0} />
+										<Tube size={150} cap={CAPS[KEEP[i]]} gel={i === 2} level={0.74} serum={i === 2 ? 1 : 0} />
 									)}
 								</div>
 								<div style={{flex: 1}}>
@@ -162,12 +165,12 @@ export const Ordre: React.FC = () => {
 						</Fly>
 					);
 				})}
-				<OrderRail y={1330} at={0} fill={T.map((t) => t)} cur={cur} check={T.map((t, i) => (i < 6 ? T[i + 1] : T[6] + 24))} scale={0.92} />
+				<OrderRail y={1330} at={0} only={KEEP} fill={T.map((t) => t)} cur={cur} check={T.map((t, i) => (i < 4 ? T[i + 1] : T[4] + 24))} scale={1.15} />
 			</Camera>
 			{T.map((t) => (
 				<Sfx key={t} name="pop" at={t} volume={0.15} />
 			))}
-			<Sfx name="ding" at={T[6] + 24} volume={0.25} />
+			<Sfx name="ding" at={T[4] + 24} volume={0.25} />
 		</AbsoluteFill>
 	);
 };
@@ -266,9 +269,9 @@ export const Retourner: React.FC = () => {
 				</Chip>
 				<FlipRow at={TROIS - 2} y={830} tubes={[1]} times="3 – 4 ×" />
 				<FlipRow at={CINQ - 2} y={1000} tubes={[2]} times="5 ×" />
-				<FlipRow at={HUIT - 2} y={1170} tubes={[4, 5, 6]} times="8 – 10 ×" />
-				<Note at={GRIS + 6} y={1330} x={540} size={28}>
-					rouge : 0 à 6 selon le tube · hémocultures : selon la notice
+				<FlipRow at={HUIT - 2} y={1170} tubes={[5, 6]} times="8 – 10 ×" />
+				<Note at={GRIS + 6} y={1330} x={540} size={32}>
+					hémocultures : selon la notice
 				</Note>
 			</Camera>
 			<Sfx name="whoosh" at={RET} volume={0.15} />
@@ -289,9 +292,9 @@ export const Fin: React.FC = () => {
 			<SeriesPill />
 			<Camera punches={[COUL + 1, PROT + 1]} strength={0.03}>
 				<Big from={-2} text={"L'ordre\ndes *tubes*"} size={120} y={190} />
-				<Counter n={7} done />
-				<OrderRail y={760} at={-2} fill={[0, 2, 4, 6, 8, 10, 12]} check={[16, 18, 20, 22, 24, 26, 28]} labels={[4, 6, 8, 10, 12, 14, 16]} />
-				<Note at={COUL - 2} y={1080} size={40} tone={LPI.pink}>
+				<Counter n={5} done />
+				<OrderRail y={760} at={-2} only={KEEP} fill={[0, 2, 4, 6, 8]} check={[16, 18, 20, 22, 24]} labels={[4, 6, 8, 10, 12]} scale={1.3} />
+				<Note at={COUL - 2} y={1100} size={36} tone={LPI.pink}>
 					les couleurs peuvent changer selon les marques
 				</Note>
 				<Chip at={PROT - 2} x={540} y={1240} tone={LPI.blue} size={42}>

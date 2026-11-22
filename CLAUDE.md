@@ -710,12 +710,13 @@ script), « en France » / « le 15 (ou le numéro d'urgence de ton pays) ». Ca
   `SeriesPill` (« LES TUBES · LA PURGE ») dès l'image 0. Brique `WingedLine` + `LINE_PTS` dans `tubes.tsx` (peau + veine,
   ailettes, tubulure où le sang avance, bulles d'air, corps de pompe et tube couché avec trait, croix). Storyboard
   `docs/lpi/storyboard-tube-purge.md`.
-  `Ordre-Tubes` (n° 66, ≈ 47 s, voix Laura après validation (752 crédits), sans barre de progression) : **l'ordre des tubes refait selon les
+  `Ordre-Tubes` (n° 66, ≈ 42 s, **v3 à 5 tubes : le rouge et le vert retirés à la demande** (hémocultures · bleu · jaune ·
+  violet · gris ; `OrderRail` `only`), voix gratuite (la voix Laura de la v2, 752 crédits, ne correspond plus), sans barre de progression) : **l'ordre des tubes refait selon les
   directives Instagram**, avec les deux tableaux du propriétaire (ordre selon l'aiguille ; retournements) : accroche de
-  21 mots « Sept tubes, un seul bon ordre… Tu le connais vraiment ? » (image 0 : titre + compteur 0/7 + les 7 tubes
-  mélangés), puis **seulement l'ordre** (« Un : les hémocultures. Deux : le bleu… Et sept : le gris. », une carte numéro +
-  nom par tube, frise `OrderRail` n/7), aiguille simple → bleu / ailettes → purge puis bleu, retournements (bleu 3 – 4,
-  jaune 5, vert / violet / gris 8 – 10 ; rouge et hémocultures à l'écran seulement), « suis le protocole de ton
+  21 mots « Cinq tubes, un seul bon ordre… Tu le connais vraiment ? » (image 0 : titre + compteur 0/5 + les 5 tubes
+  mélangés), puis **seulement l'ordre** (« Un : les hémocultures. Deux : le bleu… Et cinq : le gris. », une carte numéro +
+  nom par tube, frise `OrderRail` n/5), aiguille simple → bleu / ailettes → purge puis bleu, retournements (bleu 3 – 4,
+  jaune 5, violet / gris 8 – 10 ; hémocultures à l'écran seulement), « suis le protocole de ton
   établissement ». **On ne dit pas à quoi sert chaque tube** (demandé : « dis juste l'ordre », chaque tube a sa vidéo).
   Storyboard `docs/lpi/storyboard-ordre-tubes.md`.
 - **Série « Le tube violet » courte** (demandée : la NFS, l'HbA1c, le groupe, la charge virale « et complète si j'ai oublié » ;

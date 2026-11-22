@@ -2,12 +2,12 @@
  {
   "id": "intro",
   "rate": "+4%",
-  "text": "Sept tubes, un seul bon ordre. Si tu te trompes, l'additif d'un tube peut fausser le suivant. Tu le connais vraiment ?"
+  "text": "Cinq tubes, un seul bon ordre. Si tu te trompes, l'additif d'un tube peut fausser le suivant. Tu le connais vraiment ?"
  },
  {
   "id": "ordre",
   "rate": "+0%",
-  "text": "Un : les hémocultures. Deux : le bleu. Trois : le jaune. Quatre : le rouge. Cinq : le vert. Six : le violet. Et sept : le gris."
+  "text": "Un : les hémocultures. Deux : le bleu. Trois : le jaune. Quatre : le violet. Et cinq : le gris."
  },
  {
   "id": "aiguille",
@@ -17,7 +17,7 @@
  {
   "id": "retourner",
   "rate": "+0%",
-  "text": "Ensuite, on retourne doucement chaque tube, sans le secouer : trois à quatre fois le bleu, cinq fois le jaune, et huit à dix fois le vert, le violet et le gris."
+  "text": "Ensuite, on retourne doucement chaque tube, sans le secouer : trois à quatre fois le bleu, cinq fois le jaune, et huit à dix fois le violet et le gris."
  },
  {
   "id": "fin",
