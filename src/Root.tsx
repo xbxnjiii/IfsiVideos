@@ -156,6 +156,8 @@ import {TubeBleuTca, TubeBleuTcaProps} from './videos/tube-bleu-tca/TubeBleuTca'
 import {TL as TUBE_BLEU_TCA_TL} from './videos/tube-bleu-tca/timeline';
 import {TubeBleuFacteurs, TubeBleuFacteursProps} from './videos/tube-bleu-facteurs/TubeBleuFacteurs';
 import {TL as TUBE_BLEU_FACTEURS_TL} from './videos/tube-bleu-facteurs/timeline';
+import {TubeJauneReins, TubeJauneReinsProps} from './videos/tube-jaune-reins/TubeJauneReins';
+import {TL as TUBE_JAUNE_REINS_TL} from './videos/tube-jaune-reins/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -922,6 +924,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies TubeBleuFacteursProps}
+		/>
+		{/* 78 · Tube-Jaune-Reins */}
+		<Composition
+			id="Tube-Jaune-Reins"
+			component={TubeJauneReins}
+			durationInFrames={TUBE_JAUNE_REINS_TL.total}
+			fps={TUBE_JAUNE_REINS_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies TubeJauneReinsProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition

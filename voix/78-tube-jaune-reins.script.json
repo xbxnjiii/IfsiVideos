@@ -1,0 +1,27 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Le tube jaune surveille les reins. Trois chiffres disent s'ils filtrent bien… souvent bien avant le moindre symptôme. Tu les connais ?"
+ },
+ {
+  "id": "uree",
+  "rate": "+3%",
+  "text": "Un : l'urée, le déchet des protéines, fabriqué par le foie. La norme : de deux virgule cinq à sept virgule cinq millimoles par litre. Trop haute : les reins filtrent mal, ou le patient est déshydraté."
+ },
+ {
+  "id": "creat",
+  "rate": "+3%",
+  "text": "Deux : le déchet des muscles, c'est la créatinine. Plus on a de muscles, plus on en fabrique : la norme est plus haute chez l'homme. Si elle monte, les reins filtrent moins bien. On en calcule le {DFG|D F G}, le débit de filtration : normal au-dessus de quatre-vingt-dix."
+ },
+ {
+  "id": "urique",
+  "rate": "+3%",
+  "text": "Trois : l'acide urique, le déchet des purines, qu'on trouve dans la viande rouge, les abats ou la bière. Trop haut, il forme des cristaux : c'est la crise de goutte, souvent au gros orteil, ou des calculs dans les reins."
+ },
+ {
+  "id": "fin",
+  "rate": "+2%",
+  "text": "Urée, créatinine, acide urique : tu as le bilan rénal. Prochaine vidéo : le fer et la ferritine."
+ }
+]

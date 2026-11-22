@@ -88,6 +88,7 @@ pas de logiciel de montage, pas de banque d'images.
 | 75 | Série les tubes : le tube bleu, TP et INR en 62 s (remplissage jusqu'au trait, TP, INR / AVK ; voix Laura, directives Instagram) | `Tube-Bleu-TP-INR` | [voix/75-tube-bleu-tp-inr.script.json](voix/75-tube-bleu-tp-inr.script.json) | [storyboard](docs/lpi/storyboard-tube-bleu.md) |
 | 76 | Série les tubes : le tube bleu, TCA, fibrinogène et D-dimères en 59 s (voix Laura, directives Instagram) | `Tube-Bleu-TCA` | [voix/76-tube-bleu-tca.script.json](voix/76-tube-bleu-tca.script.json) | [storyboard](docs/lpi/storyboard-tube-bleu.md) |
 | 77 | Série les tubes : le tube bleu, anti-Xa, antithrombine, protéines C et S, facteurs en 64 s (voix Laura, directives Instagram) | `Tube-Bleu-Facteurs` | [voix/77-tube-bleu-facteurs.script.json](voix/77-tube-bleu-facteurs.script.json) | [storyboard](docs/lpi/storyboard-tube-bleu.md) |
+| 78 | Série les tubes : le tube jaune, les reins en 56 s (urée, créatinine + DFG, acide urique ; voix gratuite, directives Instagram) | `Tube-Jaune-Reins` | [voix/78-tube-jaune-reins.script.json](voix/78-tube-jaune-reins.script.json) | [plan](docs/lpi/plan-tube-jaune-serie.md) |
 
 ## Utilisation
 

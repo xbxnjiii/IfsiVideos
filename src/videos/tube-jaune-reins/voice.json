@@ -1,0 +1,808 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 52.552,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.096,
+   "end": 6.382
+  },
+  {
+   "id": "uree",
+   "start": 7.367,
+   "end": 18.12
+  },
+  {
+   "id": "creat",
+   "start": 19.054,
+   "end": 33.033
+  },
+  {
+   "id": "urique",
+   "start": 33.98,
+   "end": 44.707
+  },
+  {
+   "id": "fin",
+   "start": 45.642,
+   "end": 52.222
+  }
+ ],
+ "words": [
+  {
+   "text": "Le",
+   "start": 0.096,
+   "end": 0.216
+  },
+  {
+   "text": "tube",
+   "start": 0.216,
+   "end": 0.409
+  },
+  {
+   "text": "jaune",
+   "start": 0.409,
+   "end": 0.721
+  },
+  {
+   "text": "surveille",
+   "start": 0.721,
+   "end": 1.07
+  },
+  {
+   "text": "les",
+   "start": 1.07,
+   "end": 1.178
+  },
+  {
+   "text": "reins.",
+   "start": 1.178,
+   "end": 1.49
+  },
+  {
+   "text": "Trois",
+   "start": 1.839,
+   "end": 1.995
+  },
+  {
+   "text": "chiffres",
+   "start": 1.995,
+   "end": 2.368
+  },
+  {
+   "text": "disent",
+   "start": 2.368,
+   "end": 2.56
+  },
+  {
+   "text": "s'ils",
+   "start": 2.56,
+   "end": 2.74
+  },
+  {
+   "text": "filtrent",
+   "start": 2.74,
+   "end": 3.065
+  },
+  {
+   "text": "bien…",
+   "start": 3.065,
+   "end": 3.353
+  },
+  {
+   "text": "souvent",
+   "start": 3.738,
+   "end": 4.014
+  },
+  {
+   "text": "bien",
+   "start": 4.014,
+   "end": 4.183
+  },
+  {
+   "text": "avant",
+   "start": 4.183,
+   "end": 4.447
+  },
+  {
+   "text": "le",
+   "start": 4.447,
+   "end": 4.531
+  },
+  {
+   "text": "moindre",
+   "start": 4.531,
+   "end": 4.832
+  },
+  {
+   "text": "symptôme.",
+   "start": 4.832,
+   "end": 5.421
+  },
+  {
+   "text": "Tu",
+   "start": 5.793,
+   "end": 5.877
+  },
+  {
+   "text": "les",
+   "start": 5.877,
+   "end": 5.962
+  },
+  {
+   "text": "connais ?",
+   "start": 5.962,
+   "end": 6.382
+  },
+  {
+   "text": "Un :",
+   "start": 7.367,
+   "end": 7.598
+  },
+  {
+   "text": "l'urée,",
+   "start": 7.78,
+   "end": 8.192
+  },
+  {
+   "text": "le",
+   "start": 8.496,
+   "end": 8.556
+  },
+  {
+   "text": "déchet",
+   "start": 8.556,
+   "end": 8.799
+  },
+  {
+   "text": "des",
+   "start": 8.799,
+   "end": 8.884
+  },
+  {
+   "text": "protéines,",
+   "start": 8.884,
+   "end": 9.454
+  },
+  {
+   "text": "fabriqué",
+   "start": 9.758,
+   "end": 10.146
+  },
+  {
+   "text": "par",
+   "start": 10.146,
+   "end": 10.292
+  },
+  {
+   "text": "le",
+   "start": 10.292,
+   "end": 10.377
+  },
+  {
+   "text": "foie.",
+   "start": 10.377,
+   "end": 10.729
+  },
+  {
+   "text": "La",
+   "start": 11.105,
+   "end": 11.214
+  },
+  {
+   "text": "norme :",
+   "start": 11.214,
+   "end": 11.627
+  },
+  {
+   "text": "de",
+   "start": 12.003,
+   "end": 12.112
+  },
+  {
+   "text": "deux",
+   "start": 12.112,
+   "end": 12.221
+  },
+  {
+   "text": "virgule",
+   "start": 12.221,
+   "end": 12.525
+  },
+  {
+   "text": "cinq",
+   "start": 12.525,
+   "end": 12.816
+  },
+  {
+   "text": "à",
+   "start": 12.816,
+   "end": 12.865
+  },
+  {
+   "text": "sept",
+   "start": 12.865,
+   "end": 13.035
+  },
+  {
+   "text": "virgule",
+   "start": 13.035,
+   "end": 13.314
+  },
+  {
+   "text": "cinq",
+   "start": 13.314,
+   "end": 13.52
+  },
+  {
+   "text": "millimoles",
+   "start": 13.52,
+   "end": 13.945
+  },
+  {
+   "text": "par",
+   "start": 13.945,
+   "end": 14.115
+  },
+  {
+   "text": "litre.",
+   "start": 14.115,
+   "end": 14.539
+  },
+  {
+   "text": "Trop",
+   "start": 14.903,
+   "end": 15.11
+  },
+  {
+   "text": "haute :",
+   "start": 15.11,
+   "end": 15.413
+  },
+  {
+   "text": "les",
+   "start": 15.729,
+   "end": 15.802
+  },
+  {
+   "text": "reins",
+   "start": 15.802,
+   "end": 15.959
+  },
+  {
+   "text": "filtrent",
+   "start": 15.959,
+   "end": 16.287
+  },
+  {
+   "text": "mal,",
+   "start": 16.287,
+   "end": 16.578
+  },
+  {
+   "text": "ou",
+   "start": 16.882,
+   "end": 16.906
+  },
+  {
+   "text": "le",
+   "start": 16.906,
+   "end": 16.991
+  },
+  {
+   "text": "patient",
+   "start": 16.991,
+   "end": 17.355
+  },
+  {
+   "text": "est",
+   "start": 17.355,
+   "end": 17.403
+  },
+  {
+   "text": "déshydraté.",
+   "start": 17.404,
+   "end": 18.12
+  },
+  {
+   "text": "Deux :",
+   "start": 19.054,
+   "end": 19.454
+  },
+  {
+   "text": "le",
+   "start": 19.83,
+   "end": 19.891
+  },
+  {
+   "text": "déchet",
+   "start": 19.891,
+   "end": 20.146
+  },
+  {
+   "text": "des",
+   "start": 20.146,
+   "end": 20.255
+  },
+  {
+   "text": "muscles,",
+   "start": 20.255,
+   "end": 20.631
+  },
+  {
+   "text": "c'est",
+   "start": 20.862,
+   "end": 20.983
+  },
+  {
+   "text": "la",
+   "start": 20.983,
+   "end": 21.068
+  },
+  {
+   "text": "créatinine.",
+   "start": 21.068,
+   "end": 21.881
+  },
+  {
+   "text": "Plus",
+   "start": 22.22,
+   "end": 22.354
+  },
+  {
+   "text": "on",
+   "start": 22.354,
+   "end": 22.451
+  },
+  {
+   "text": "a",
+   "start": 22.451,
+   "end": 22.536
+  },
+  {
+   "text": "de",
+   "start": 22.536,
+   "end": 22.645
+  },
+  {
+   "text": "muscles,",
+   "start": 22.645,
+   "end": 23.118
+  },
+  {
+   "text": "plus",
+   "start": 23.288,
+   "end": 23.421
+  },
+  {
+   "text": "on",
+   "start": 23.421,
+   "end": 23.519
+  },
+  {
+   "text": "en",
+   "start": 23.519,
+   "end": 23.616
+  },
+  {
+   "text": "fabrique :",
+   "start": 23.616,
+   "end": 24.113
+  },
+  {
+   "text": "la",
+   "start": 24.441,
+   "end": 24.526
+  },
+  {
+   "text": "norme",
+   "start": 24.526,
+   "end": 24.805
+  },
+  {
+   "text": "est",
+   "start": 24.805,
+   "end": 24.841
+  },
+  {
+   "text": "plus",
+   "start": 24.841,
+   "end": 25.011
+  },
+  {
+   "text": "haute",
+   "start": 25.011,
+   "end": 25.145
+  },
+  {
+   "text": "chez",
+   "start": 25.145,
+   "end": 25.254
+  },
+  {
+   "text": "l'homme.",
+   "start": 25.254,
+   "end": 25.63
+  },
+  {
+   "text": "Si",
+   "start": 25.959,
+   "end": 26.202
+  },
+  {
+   "text": "elle",
+   "start": 26.202,
+   "end": 26.287
+  },
+  {
+   "text": "monte,",
+   "start": 26.287,
+   "end": 26.675
+  },
+  {
+   "text": "les",
+   "start": 26.942,
+   "end": 27.027
+  },
+  {
+   "text": "reins",
+   "start": 27.027,
+   "end": 27.197
+  },
+  {
+   "text": "filtrent",
+   "start": 27.197,
+   "end": 27.561
+  },
+  {
+   "text": "moins",
+   "start": 27.561,
+   "end": 27.719
+  },
+  {
+   "text": "bien.",
+   "start": 27.719,
+   "end": 28.046
+  },
+  {
+   "text": "On",
+   "start": 28.373,
+   "end": 28.47
+  },
+  {
+   "text": "en",
+   "start": 28.47,
+   "end": 28.567
+  },
+  {
+   "text": "calcule",
+   "start": 28.567,
+   "end": 28.943
+  },
+  {
+   "text": "le",
+   "start": 28.943,
+   "end": 29.065
+  },
+  {
+   "text": "DFG,",
+   "start": 29.065,
+   "end": 29.732
+  },
+  {
+   "text": "le",
+   "start": 30.048,
+   "end": 30.12
+  },
+  {
+   "text": "débit",
+   "start": 30.12,
+   "end": 30.339
+  },
+  {
+   "text": "de",
+   "start": 30.339,
+   "end": 30.436
+  },
+  {
+   "text": "filtration :",
+   "start": 30.436,
+   "end": 31.079
+  },
+  {
+   "text": "normal",
+   "start": 31.455,
+   "end": 31.747
+  },
+  {
+   "text": "au-dessus",
+   "start": 31.747,
+   "end": 32.111
+  },
+  {
+   "text": "de",
+   "start": 32.111,
+   "end": 32.196
+  },
+  {
+   "text": "quatre-vingt-dix.",
+   "start": 32.196,
+   "end": 33.033
+  },
+  {
+   "text": "Trois :",
+   "start": 33.98,
+   "end": 34.344
+  },
+  {
+   "text": "l'acide",
+   "start": 34.757,
+   "end": 35.048
+  },
+  {
+   "text": "urique,",
+   "start": 35.048,
+   "end": 35.436
+  },
+  {
+   "text": "le",
+   "start": 35.643,
+   "end": 35.715
+  },
+  {
+   "text": "déchet",
+   "start": 35.715,
+   "end": 35.97
+  },
+  {
+   "text": "des",
+   "start": 35.97,
+   "end": 36.055
+  },
+  {
+   "text": "purines,",
+   "start": 36.055,
+   "end": 36.529
+  },
+  {
+   "text": "qu'on",
+   "start": 36.747,
+   "end": 36.856
+  },
+  {
+   "text": "trouve",
+   "start": 36.856,
+   "end": 37.075
+  },
+  {
+   "text": "dans",
+   "start": 37.075,
+   "end": 37.16
+  },
+  {
+   "text": "la",
+   "start": 37.16,
+   "end": 37.232
+  },
+  {
+   "text": "viande",
+   "start": 37.232,
+   "end": 37.439
+  },
+  {
+   "text": "rouge,",
+   "start": 37.439,
+   "end": 37.779
+  },
+  {
+   "text": "les",
+   "start": 37.985,
+   "end": 38.058
+  },
+  {
+   "text": "abats",
+   "start": 38.058,
+   "end": 38.373
+  },
+  {
+   "text": "ou",
+   "start": 38.373,
+   "end": 38.422
+  },
+  {
+   "text": "la",
+   "start": 38.422,
+   "end": 38.519
+  },
+  {
+   "text": "bière.",
+   "start": 38.519,
+   "end": 38.944
+  },
+  {
+   "text": "Trop",
+   "start": 39.318,
+   "end": 39.549
+  },
+  {
+   "text": "haut,",
+   "start": 39.549,
+   "end": 39.755
+  },
+  {
+   "text": "il",
+   "start": 40.059,
+   "end": 40.156
+  },
+  {
+   "text": "forme",
+   "start": 40.156,
+   "end": 40.386
+  },
+  {
+   "text": "des",
+   "start": 40.386,
+   "end": 40.447
+  },
+  {
+   "text": "cristaux :",
+   "start": 40.447,
+   "end": 40.932
+  },
+  {
+   "text": "c'est",
+   "start": 41.357,
+   "end": 41.454
+  },
+  {
+   "text": "la",
+   "start": 41.454,
+   "end": 41.527
+  },
+  {
+   "text": "crise",
+   "start": 41.527,
+   "end": 41.746
+  },
+  {
+   "text": "de",
+   "start": 41.746,
+   "end": 41.855
+  },
+  {
+   "text": "goutte,",
+   "start": 41.855,
+   "end": 42.195
+  },
+  {
+   "text": "souvent",
+   "start": 42.413,
+   "end": 42.704
+  },
+  {
+   "text": "au",
+   "start": 42.704,
+   "end": 42.753
+  },
+  {
+   "text": "gros",
+   "start": 42.753,
+   "end": 42.898
+  },
+  {
+   "text": "orteil,",
+   "start": 42.898,
+   "end": 43.42
+  },
+  {
+   "text": "ou",
+   "start": 43.724,
+   "end": 43.748
+  },
+  {
+   "text": "des",
+   "start": 43.748,
+   "end": 43.845
+  },
+  {
+   "text": "calculs",
+   "start": 43.845,
+   "end": 44.221
+  },
+  {
+   "text": "dans",
+   "start": 44.221,
+   "end": 44.33
+  },
+  {
+   "text": "les",
+   "start": 44.331,
+   "end": 44.428
+  },
+  {
+   "text": "reins.",
+   "start": 44.428,
+   "end": 44.707
+  },
+  {
+   "text": "Urée,",
+   "start": 45.642,
+   "end": 46.156
+  },
+  {
+   "text": "créatinine,",
+   "start": 46.389,
+   "end": 47.076
+  },
+  {
+   "text": "acide",
+   "start": 47.37,
+   "end": 47.639
+  },
+  {
+   "text": "urique :",
+   "start": 47.639,
+   "end": 48.093
+  },
+  {
+   "text": "tu",
+   "start": 48.375,
+   "end": 48.497
+  },
+  {
+   "text": "as",
+   "start": 48.497,
+   "end": 48.534
+  },
+  {
+   "text": "le",
+   "start": 48.534,
+   "end": 48.632
+  },
+  {
+   "text": "bilan",
+   "start": 48.632,
+   "end": 48.877
+  },
+  {
+   "text": "rénal.",
+   "start": 48.877,
+   "end": 49.441
+  },
+  {
+   "text": "Prochaine",
+   "start": 49.808,
+   "end": 50.175
+  },
+  {
+   "text": "vidéo :",
+   "start": 50.175,
+   "end": 50.641
+  },
+  {
+   "text": "le",
+   "start": 50.996,
+   "end": 51.082
+  },
+  {
+   "text": "fer",
+   "start": 51.082,
+   "end": 51.401
+  },
+  {
+   "text": "et",
+   "start": 51.401,
+   "end": 51.425
+  },
+  {
+   "text": "la",
+   "start": 51.425,
+   "end": 51.523
+  },
+  {
+   "text": "ferritine.",
+   "start": 51.523,
+   "end": 52.222
+  }
+ ]
+}

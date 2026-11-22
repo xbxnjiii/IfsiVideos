@@ -760,7 +760,14 @@ script), « en France » / « le 15 (ou le numéro d'urgence de ton pays) ». Ca
   hypoglycémie. Voix : Whisper entend « fluorure » « flux aurure » (amorcé, il l'entend bien) ; « amaigrissement » entendu
   « amélioration » → « une perte de poids ».
 - **Le tube jaune en série courte** (demandé : « pareil pour le tube jaune » + la liste complète des analyses) : plan de 21
-  vidéos proposé dans `docs/lpi/plan-tube-jaune-serie.md`, à valider.
+  vidéos dans `docs/lpi/plan-tube-jaune-serie.md`, **validé** (« oui ajoute le bilan lipidique, c'est bien les ANCA, go ») :
+  22 vidéos à partir du n° 78, voix gratuite d'abord. `Tube-Jaune-Reins` (n° 78, ≈ 56 s) : « Le tube jaune surveille les
+  reins. Trois chiffres… souvent bien avant le moindre symptôme. », urée (déchet des protéines, foie, 2,5 – 7,5 mmol/L ;
+  haute : reins / déshydratation), créatinine (déchet des muscles, H 88 – 150 / F 53 – 115 µmol/L, DFG ≥ 90), acide urique
+  (purines : viande rouge, abats, bière ; cristaux → goutte au gros orteil, calculs ; normes à l'écran), fin « prochaine
+  vidéo : le fer et la ferritine ». Voix : « la créatinine, le déchet » était lu « créatine » → « le déchet des muscles,
+  c'est la créatinine » (le mot en fin de phrase est bien dit). Briques locales `GoutFoot`, `Beer` ; `Molecule` est trop
+  petite pour un mot long (pastille à la place).
 - **Le tube bleu (citrate)** (demandé : « la vidéo pour le tube bleu comme les précédentes », contenu complété par l'agent ;
   une seule vidéo dépassait 60 s → 3 vidéos ; storyboard `docs/lpi/storyboard-tube-bleu.md`). `Tube-Bleu-TP-INR` (n° 75,
   ≈ 63 s, voix Laura après validation (1 009 crédits)) : « Le tube bleu, c'est la coagulation. S'il est mal rempli, le résultat est faux… et ton

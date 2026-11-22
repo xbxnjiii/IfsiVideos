@@ -1,4 +1,4 @@
-# Plan — série courte « Le tube jaune » (proposition, à valider)
+# Plan — série courte « Le tube jaune » (validé le 22/11/2026)
 
 Demandé : « pareil pour le tube jaune » avec la liste fournie par le propriétaire (chimie, enzymes, électrolytes,
 protéines, marqueurs tumoraux, cardiologie, hormones, sérologie, allergologie, médicaments, auto-immunité, divers).
@@ -13,7 +13,8 @@ Règle : 3 à 4 notions par vidéo au maximum pour tenir en 60 s.
 | 1 | Les reins | urée, créatinine (+ DFG), acide urique |
 | 2 | Le fer | fer, ferritine, transferrine |
 | 3 | Le foie | ASAT (GOT), ALAT (GPT), GGT, PAL |
-| 4 | Les autres enzymes | LDH, CPK, lipase |
+| 4 | Le bilan lipidique | cholestérol total, LDL, HDL, triglycérides (ajouté à la demande) |
+| 4 bis | Les autres enzymes | LDH, CPK, lipase |
 | 5 | Les ions (1) | sodium, potassium, chlore |
 | 6 | Les ions (2) | calcium, phosphore, magnésium, bicarbonates |
 | 7 | L'inflammation | CRP, procalcitonine |
@@ -32,8 +33,7 @@ Règle : 3 à 4 notions par vidéo au maximum pour tenir en 60 s.
 | 20 | L'auto-immunité (2) | anti-CCP, facteur rhumatoïde, anti-TPO, anti-TG |
 | 21 | Divers | vitamine D, B12, acide folique, CDT |
 
-Points à confirmer avec le propriétaire :
-- « bilan lipidique » est annoncé mais la liste ne donne que des enzymes : ajouter une vidéo cholestérol total, HDL, LDL,
-  triglycérides ?
-- « ACAN » : sans doute les ANCA (anticorps anti-cytoplasme des polynucléaires).
-- « CI » = Cl (chlore) ; « ASD » = antistreptodornase ; « CDT » = transferrine carboxy-déficiente (alcool chronique).
+Réponses du propriétaire : bilan lipidique ajouté ; « ACAN » = ANCA ; plan validé (« go »). Numéros : n° 78 = vidéo 1,
+puis dans l'ordre du tableau (22 vidéos).
+
+Notes : « CI » = Cl (chlore) ; « ASD » = antistreptodornase ; « CDT » = transferrine carboxy-déficiente (alcool chronique).
