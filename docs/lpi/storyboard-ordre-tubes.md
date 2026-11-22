@@ -1,6 +1,6 @@
 # Storyboard — « L'ordre des tubes » (n° 66, `Ordre-Tubes`, série « les tubes »)
 
-≈ 42 s avec le logo (v3 : **5 tubes**, le rouge et le vert retirés à la demande), voix gratuite edge-tts d'abord (la voix Laura de la v2 ne correspond plus), sans barre de progression, image réduite à 86 %. Refaite selon les
+≈ 42 s avec le logo (v3 : **5 tubes**, le rouge et le vert retirés à la demande), voix Laura (711 crédits, partie `aiguille` reprise de la prise v2), sans barre de progression, image réduite à 86 %. Refaite selon les
 directives Instagram (`docs/lpi/directives-instagram.md`) avec les deux tableaux fournis par le propriétaire (ordre selon
 l'aiguille ; bouchon / additif / analyses / retournements). La n° 61 (`Tubes-Prelevement`, 1 min 49) reste dans le dépôt.
 

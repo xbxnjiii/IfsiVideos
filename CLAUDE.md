@@ -711,7 +711,7 @@ script), « en France » / « le 15 (ou le numéro d'urgence de ton pays) ». Ca
   ailettes, tubulure où le sang avance, bulles d'air, corps de pompe et tube couché avec trait, croix). Storyboard
   `docs/lpi/storyboard-tube-purge.md`.
   `Ordre-Tubes` (n° 66, ≈ 42 s, **v3 à 5 tubes : le rouge et le vert retirés à la demande** (hémocultures · bleu · jaune ·
-  violet · gris ; `OrderRail` `only`), voix gratuite (la voix Laura de la v2, 752 crédits, ne correspond plus), sans barre de progression) : **l'ordre des tubes refait selon les
+  violet · gris ; `OrderRail` `only`), voix Laura (711 crédits ; dans cette prise « aiguille » était dit « éduit » : la partie `aiguille`, au texte inchangé, a été reprise de la prise v2 au même niveau puis tout a été réaligné), sans barre de progression) : **l'ordre des tubes refait selon les
   directives Instagram**, avec les deux tableaux du propriétaire (ordre selon l'aiguille ; retournements) : accroche de
   21 mots « Cinq tubes, un seul bon ordre… Tu le connais vraiment ? » (image 0 : titre + compteur 0/5 + les 5 tubes
   mélangés), puis **seulement l'ordre** (« Un : les hémocultures. Deux : le bleu… Et cinq : le gris. », une carte numéro +
@@ -751,10 +751,10 @@ script), « en France » / « le 15 (ou le numéro d'urgence de ton pays) ». Ca
 - **Le tube gris (fluorure)** (demandé : la glycémie et l'alcoolémie, « je te laisse compléter » ; storyboard
   `docs/lpi/storyboard-tube-gris.md`). **Kit commun `src/brand/short.tsx`** pour les vidéos courtes suivantes (`ShortBg`,
   `PINK_BG`, `Pop`, `Chip`, `Arrow`, `SeriesPill` (cap, label), `Counter` (steps, total), `NextCard`, `ZoneGauge`).
-  `Tube-Gris-Glycemie` (n° 73, ≈ 60 s, voix gratuite d'abord) : « Le tube gris mesure la glycémie. Et un seul chiffre décide :
+  `Tube-Gris-Glycemie` (n° 73, ≈ 58 s, voix Laura après validation (1 035 crédits ; Whisper entend « Tu connais les seuils ? » comme « l'essai », le même mot est net à la fin)) : « Le tube gris mesure la glycémie. Et un seul chiffre décide :
   normal, prédiabète… ou diabète. », pourquoi le fluorure (les globules rouges mangent le sucre du tube), à jeun 8 h (eau
   permise), normes 0,70 – 1,10 g/L (tableau du propriétaire) + prédiabète 1,10 – 1,25, diabète (≥ 1,26 × 2 ou ≥ 2 g/L + signes).
-  `Tube-Gris-Alcoolemie` (n° 74, ≈ 57 s, voix gratuite d'abord, contenu complété par l'agent) : l'erreur qui fausse
+  `Tube-Gris-Alcoolemie` (n° 74, ≈ 57 s, voix Laura après validation (1 032 crédits), contenu complété par l'agent) : l'erreur qui fausse
   (désinfecter avec de l'alcool), quand (urgences, réquisition), le geste (antiseptique sans alcool), seuils au volant en
   France (0,5 g/L ; 0,2 en permis probatoire ; Code de la route R234-1), élimination ≈ 0,10 – 0,15 g/L/h, > 3 g/L coma,
   hypoglycémie. Voix : Whisper entend « fluorure » « flux aurure » (amorcé, il l'entend bien) ; « amaigrissement » entendu
@@ -763,7 +763,7 @@ script), « en France » / « le 15 (ou le numéro d'urgence de ton pays) ». Ca
 ## Voix ElevenLabs « Laura » (choisie par le propriétaire pour les nouvelles vidéos)
 
 - Connecteur ElevenLabs : voix `Laura` (`MmafIMKg28Wr0yMh8CEB`), modèle `eleven_v4` ; l'ancien flow `6O4tHaBowSG52722wkdC` n'est plus accessible
-  (« You do not have access to this template », rien de facturé) → flow `BrySoMOS2i2Sgfputx9I` (n° 66 à 72). Les 6 prises
+  (« You do not have access to this template », rien de facturé) → flow `BrySoMOS2i2Sgfputx9I` (n° 66 à 74). Les 6 prises
   du tube violet ont été lancées d'un coup (une par vidéo, 6 022 crédits) ; `check:voice` coupe parfois le début d'une
   partie (« Un : c'est quoi ? » absent) : transcrire la prise brute avant de conclure qu'un mot manque.
   `creative_generate_speech` avec **tout le texte en une fois**. Balises de jeu `[amused]`, `[sarcastic]`,
