@@ -1,7 +1,8 @@
 // « L'ordre des tubes » (n° 66, série « les tubes », directives Instagram) : refaite à la demande avec les tableaux du
-// propriétaire (ordre de remplissage selon l'aiguille ; additif, analyses et retournements de chaque tube). Image 0 :
+// propriétaire (ordre de remplissage selon l'aiguille ; retournements). On ne dit pas à quoi sert chaque tube (demandé :
+// « dis juste l'ordre », chaque tube a sa vidéo). Image 0 :
 // pastille de série, titre, compteur 0/7, les 7 tubes mélangés ; le violet passe avant le jaune → le jaune est faussé ;
-// les tubes se rangent. Puis l'ordre, une carte par tube (additif + analyse) et la frise qui se remplit (n/7) ; sans
+// les tubes se rangent. Puis l'ordre, une carte par tube (numéro + nom) et la frise qui se remplit (n/7) ; sans
 // hémocultures : aiguille simple → bleu, ailettes → purge puis bleu ; les retournements ; « suis le protocole ».
 // Sources : CLSI GP41 (7e éd., 2017) pour l'ordre et la purge ; tableau « bouchon / additif / analyses / retournements »
 // fourni par le propriétaire (nombre de retournements selon le fabricant : à vérifier avec la notice de l'établissement).
@@ -117,19 +118,18 @@ export const Hook: React.FC = () => {
 
 /* ═══════════════════════════════ L'ORDRE, TUBE PAR TUBE ═══════════════════════════════ */
 const CARDS = [
-	{num: 'un', name: 'Hémocultures', add: 'milieu de culture', use: 'bactéries', useWord: 'bacteries'},
-	{num: 'deux', name: 'Bleu', add: 'citrate', use: 'coagulation', useWord: 'coagulation'},
-	{num: 'trois', name: 'Jaune', add: 'gel séparateur', use: 'biochimie', useWord: 'biochimie'},
-	{num: 'quatre', name: 'Rouge', add: 'sec', use: 'sérologies', useWord: 'serologies'},
-	{num: 'cinq', name: 'Vert', add: 'héparine', use: 'ionogramme', useWord: "l'ionogramme"},
-	{num: 'six', name: 'Violet', add: 'EDTA', use: 'NFS', useWord: 'nfs'},
-	{num: 'sept', name: 'Gris', add: 'fluorure', use: 'glycémie', useWord: 'glycemie'},
+	{num: 'un', name: 'Hémocultures'},
+	{num: 'deux', name: 'Bleu'},
+	{num: 'trois', name: 'Jaune'},
+	{num: 'quatre', name: 'Rouge'},
+	{num: 'cinq', name: 'Vert'},
+	{num: 'six', name: 'Violet'},
+	{num: 'sept', name: 'Gris'},
 ];
 
 export const Ordre: React.FC = () => {
 	const frame = useCurrentFrame();
 	const T = CARDS.map((c) => at('ordre', c.num));
-	const U = CARDS.map((c) => at('ordre', c.useWord));
 	const cur = T.reduce((acc, t, i) => (frame >= t - 4 ? i : acc), -1);
 	return (
 		<AbsoluteFill>
@@ -156,26 +156,18 @@ export const Ordre: React.FC = () => {
 								</div>
 								<div style={{flex: 1}}>
 									<div style={{width: 84, height: 84, borderRadius: 42, background: LPI.pink, border: `5px solid ${N}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FONT.title, fontWeight: 900, fontSize: 52, color: N}}>{i + 1}</div>
-									<div style={{marginTop: 14, fontFamily: FONT.title, fontWeight: 900, fontSize: i === 0 ? 62 : 84, color: N, lineHeight: 1}}>{c.name}</div>
-									<div style={{marginTop: 16, display: 'inline-block', padding: '8px 22px', borderRadius: 999, background: alpha(LPI.sky, 0.8), border: `4px solid ${N}`, fontFamily: FONT.body, fontWeight: 900, fontSize: 32, color: N}}>{c.add}</div>
-									<Live
-										render={(f) =>
-											f >= U[i] - 6 ? (
-												<div style={{marginTop: 14, display: 'inline-block', padding: '10px 24px', borderRadius: 999, background: LPI.pink, border: `5px solid ${N}`, fontFamily: FONT.title, fontWeight: 900, fontSize: 42, color: N, transform: `scale(${popAt(f, U[i] - 6)})`, transformOrigin: 'left center'}}>→ {c.use}</div>
-											) : null
-										}
-									/>
+									<div style={{marginTop: 14, fontFamily: FONT.title, fontWeight: 900, fontSize: i === 0 ? 70 : 110, color: N, lineHeight: 1}}>{c.name}</div>
 								</div>
 							</div>
 						</Fly>
 					);
 				})}
-				<OrderRail y={1330} at={0} fill={T.map((t) => t)} cur={cur} check={T.map((t, i) => (i < 6 ? T[i + 1] : U[6] + 10))} scale={0.92} />
+				<OrderRail y={1330} at={0} fill={T.map((t) => t)} cur={cur} check={T.map((t, i) => (i < 6 ? T[i + 1] : T[6] + 24))} scale={0.92} />
 			</Camera>
 			{T.map((t) => (
 				<Sfx key={t} name="pop" at={t} volume={0.15} />
 			))}
-			<Sfx name="ding" at={U[6] + 10} volume={0.25} />
+			<Sfx name="ding" at={T[6] + 24} volume={0.25} />
 		</AbsoluteFill>
 	);
 };

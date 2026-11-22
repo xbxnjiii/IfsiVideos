@@ -1,6 +1,6 @@
 {
  "voice": "voix.wav (tts_voix.py)",
- "duration": 53.056,
+ "duration": 42.544,
  "sections": [
   {
    "id": "intro",
@@ -9,23 +9,23 @@
   },
   {
    "id": "ordre",
-   "start": 7.176,
-   "end": 29.566
+   "start": 7.128,
+   "end": 19.041
   },
   {
    "id": "aiguille",
-   "start": 30.502,
-   "end": 38.252
+   "start": 19.99,
+   "end": 27.74
   },
   {
    "id": "retourner",
-   "start": 39.188,
-   "end": 46.85
+   "start": 28.676,
+   "end": 36.339
   },
   {
    "id": "fin",
-   "start": 47.802,
-   "end": 52.702
+   "start": 37.29,
+   "end": 42.19
   }
  ],
  "words": [
@@ -136,633 +136,473 @@
   },
   {
    "text": "Un :",
-   "start": 7.176,
-   "end": 7.409
+   "start": 7.128,
+   "end": 7.478
   },
   {
    "text": "les",
-   "start": 7.728,
-   "end": 7.801
+   "start": 7.841,
+   "end": 7.928
   },
   {
-   "text": "hémocultures,",
-   "start": 7.801,
-   "end": 8.622
-  },
-  {
-   "text": "pour",
-   "start": 8.867,
-   "end": 9.027
-  },
-  {
-   "text": "chercher",
-   "start": 9.027,
-   "end": 9.308
-  },
-  {
-   "text": "des",
-   "start": 9.308,
-   "end": 9.406
-  },
-  {
-   "text": "bactéries.",
-   "start": 9.406,
-   "end": 9.97
+   "text": "hémocultures.",
+   "start": 7.928,
+   "end": 8.816
   },
   {
    "text": "Deux :",
-   "start": 10.302,
-   "end": 10.694
+   "start": 9.153,
+   "end": 9.578
   },
   {
    "text": "le",
-   "start": 10.939,
-   "end": 11.037
+   "start": 9.966,
+   "end": 10.066
   },
   {
-   "text": "bleu,",
-   "start": 11.037,
-   "end": 11.343
-  },
-  {
-   "text": "au",
-   "start": 11.637,
-   "end": 11.674
-  },
-  {
-   "text": "citrate,",
-   "start": 11.674,
-   "end": 12.324
-  },
-  {
-   "text": "pour",
-   "start": 12.544,
-   "end": 12.667
-  },
-  {
-   "text": "la",
-   "start": 12.667,
-   "end": 12.752
-  },
-  {
-   "text": "coagulation.",
-   "start": 12.753,
-   "end": 13.574
+   "text": "bleu.",
+   "start": 10.066,
+   "end": 10.415
   },
   {
    "text": "Trois :",
-   "start": 13.941,
-   "end": 14.235
+   "start": 10.753,
+   "end": 11.178
   },
   {
    "text": "le",
-   "start": 14.602,
-   "end": 14.701
+   "start": 11.591,
+   "end": 11.691
   },
   {
-   "text": "jaune,",
-   "start": 14.701,
-   "end": 15.056
-  },
-  {
-   "text": "avec",
-   "start": 15.227,
-   "end": 15.436
-  },
-  {
-   "text": "un",
-   "start": 15.436,
-   "end": 15.522
-  },
-  {
-   "text": "gel,",
-   "start": 15.522,
-   "end": 15.865
-  },
-  {
-   "text": "pour",
-   "start": 16.098,
-   "end": 16.208
-  },
-  {
-   "text": "la",
-   "start": 16.208,
-   "end": 16.294
-  },
-  {
-   "text": "biochimie.",
-   "start": 16.294,
-   "end": 16.906
+   "text": "jaune.",
+   "start": 11.691,
+   "end": 12.153
   },
   {
    "text": "Quatre :",
-   "start": 17.237,
-   "end": 17.629
+   "start": 12.491,
+   "end": 12.953
   },
   {
    "text": "le",
-   "start": 17.875,
-   "end": 17.948
+   "start": 13.278,
+   "end": 13.366
   },
   {
-   "text": "rouge,",
-   "start": 17.948,
-   "end": 18.365
-  },
-  {
-   "text": "pour",
-   "start": 18.622,
-   "end": 18.732
-  },
-  {
-   "text": "les",
-   "start": 18.732,
-   "end": 18.806
-  },
-  {
-   "text": "sérologies.",
-   "start": 18.806,
-   "end": 19.48
+   "text": "rouge.",
+   "start": 13.366,
+   "end": 13.828
   },
   {
    "text": "Cinq :",
-   "start": 19.835,
-   "end": 20.289
+   "start": 14.166,
+   "end": 14.728
   },
   {
    "text": "le",
-   "start": 20.509,
-   "end": 20.607
+   "start": 15.015,
+   "end": 15.116
   },
   {
-   "text": "vert,",
-   "start": 20.607,
-   "end": 20.987
-  },
-  {
-   "text": "à",
-   "start": 21.257,
-   "end": 21.281
-  },
-  {
-   "text": "l'héparine,",
-   "start": 21.281,
-   "end": 21.906
-  },
-  {
-   "text": "pour",
-   "start": 22.127,
-   "end": 22.262
-  },
-  {
-   "text": "l'ionogramme.",
-   "start": 22.262,
-   "end": 22.96
+   "text": "vert.",
+   "start": 15.116,
+   "end": 15.566
   },
   {
    "text": "Six :",
-   "start": 23.316,
-   "end": 23.708
+   "start": 15.903,
+   "end": 16.366
   },
   {
    "text": "le",
-   "start": 24.002,
-   "end": 24.076
+   "start": 16.753,
+   "end": 16.828
   },
   {
-   "text": "violet,",
-   "start": 24.076,
-   "end": 24.504
-  },
-  {
-   "text": "à",
-   "start": 24.737,
-   "end": 24.811
-  },
-  {
-   "text": "l'EDTA,",
-   "start": 24.811,
-   "end": 25.448
-  },
-  {
-   "text": "pour",
-   "start": 25.754,
-   "end": 25.877
-  },
-  {
-   "text": "la",
-   "start": 25.877,
-   "end": 25.951
-  },
-  {
-   "text": "NFS.",
-   "start": 25.951,
-   "end": 26.416
+   "text": "violet.",
+   "start": 16.828,
+   "end": 17.303
   },
   {
    "text": "Et",
-   "start": 26.416,
-   "end": 26.465
+   "start": 17.64,
+   "end": 17.803
   },
   {
    "text": "sept :",
-   "start": 26.465,
-   "end": 26.882
+   "start": 17.803,
+   "end": 18.241
   },
   {
    "text": "le",
-   "start": 27.213,
-   "end": 27.311
-  },
-  {
-   "text": "gris,",
-   "start": 27.311,
-   "end": 27.642
-  },
-  {
-   "text": "au",
-   "start": 27.936,
-   "end": 27.973
-  },
-  {
-   "text": "fluorure,",
-   "start": 27.973,
-   "end": 28.61
-  },
-  {
-   "text": "pour",
-   "start": 28.806,
-   "end": 28.916
-  },
-  {
-   "text": "la",
-   "start": 28.916,
-   "end": 29.002
-  },
-  {
-   "text": "glycémie.",
-   "start": 29.002,
-   "end": 29.566
-  },
-  {
-   "text": "Et",
-   "start": 30.502,
-   "end": 30.652
-  },
-  {
-   "text": "sans",
-   "start": 30.652,
-   "end": 30.84
-  },
-  {
-   "text": "hémocultures ?",
-   "start": 30.84,
-   "end": 31.69
-  },
-  {
-   "text": "Avec",
-   "start": 32.027,
-   "end": 32.352
-  },
-  {
-   "text": "une",
-   "start": 32.352,
-   "end": 32.452
-  },
-  {
-   "text": "aiguille",
-   "start": 32.452,
-   "end": 32.69
-  },
-  {
-   "text": "simple,",
-   "start": 32.69,
-   "end": 33.202
-  },
-  {
-   "text": "tu",
-   "start": 33.452,
-   "end": 33.565
-  },
-  {
-   "text": "commences",
-   "start": 33.565,
-   "end": 33.927
-  },
-  {
-   "text": "au",
-   "start": 33.927,
-   "end": 33.989
-  },
-  {
-   "text": "bleu.",
-   "start": 33.989,
-   "end": 34.327
-  },
-  {
-   "text": "Avec",
-   "start": 34.677,
-   "end": 34.977
-  },
-  {
-   "text": "une",
-   "start": 34.977,
-   "end": 35.077
-  },
-  {
-   "text": "aiguille",
-   "start": 35.077,
-   "end": 35.377
-  },
-  {
-   "text": "à",
-   "start": 35.377,
-   "end": 35.44
-  },
-  {
-   "text": "ailettes,",
-   "start": 35.44,
-   "end": 35.915
-  },
-  {
-   "text": "tu",
-   "start": 36.19,
-   "end": 36.315
-  },
-  {
-   "text": "mets",
-   "start": 36.315,
-   "end": 36.389
-  },
-  {
-   "text": "d'abord",
-   "start": 36.389,
-   "end": 36.677
-  },
-  {
-   "text": "un",
-   "start": 36.677,
-   "end": 36.727
-  },
-  {
-   "text": "tube",
-   "start": 36.727,
-   "end": 36.94
-  },
-  {
-   "text": "de",
-   "start": 36.94,
-   "end": 37.052
-  },
-  {
-   "text": "purge,",
-   "start": 37.052,
-   "end": 37.502
-  },
-  {
-   "text": "puis",
-   "start": 37.702,
-   "end": 37.852
-  },
-  {
-   "text": "le",
-   "start": 37.852,
-   "end": 37.94
-  },
-  {
-   "text": "bleu.",
-   "start": 37.94,
-   "end": 38.252
-  },
-  {
-   "text": "Ensuite,",
-   "start": 39.188,
-   "end": 39.663
-  },
-  {
-   "text": "on",
-   "start": 39.825,
-   "end": 39.85
-  },
-  {
-   "text": "retourne",
-   "start": 39.85,
-   "end": 40.225
-  },
-  {
-   "text": "doucement",
-   "start": 40.225,
-   "end": 40.513
-  },
-  {
-   "text": "chaque",
-   "start": 40.513,
-   "end": 40.738
-  },
-  {
-   "text": "tube,",
-   "start": 40.738,
-   "end": 41.1
-  },
-  {
-   "text": "sans",
-   "start": 41.3,
-   "end": 41.475
-  },
-  {
-   "text": "le",
-   "start": 41.475,
-   "end": 41.563
-  },
-  {
-   "text": "secouer :",
-   "start": 41.563,
-   "end": 42.05
-  },
-  {
-   "text": "trois",
-   "start": 42.413,
-   "end": 42.6
-  },
-  {
-   "text": "à",
-   "start": 42.6,
-   "end": 42.625
-  },
-  {
-   "text": "quatre",
-   "start": 42.625,
-   "end": 42.875
-  },
-  {
-   "text": "fois",
-   "start": 42.875,
-   "end": 43.013
-  },
-  {
-   "text": "le",
-   "start": 43.013,
-   "end": 43.088
-  },
-  {
-   "text": "bleu,",
-   "start": 43.088,
-   "end": 43.363
-  },
-  {
-   "text": "cinq",
-   "start": 43.7,
-   "end": 43.875
-  },
-  {
-   "text": "fois",
-   "start": 43.875,
-   "end": 43.988
-  },
-  {
-   "text": "le",
-   "start": 43.988,
-   "end": 44.075
-  },
-  {
-   "text": "jaune,",
-   "start": 44.075,
-   "end": 44.388
-  },
-  {
-   "text": "et",
-   "start": 44.8,
-   "end": 44.838
-  },
-  {
-   "text": "huit",
-   "start": 44.838,
-   "end": 45.026
-  },
-  {
-   "text": "à",
-   "start": 45.026,
-   "end": 45.063
-  },
-  {
-   "text": "dix",
-   "start": 45.063,
-   "end": 45.175
-  },
-  {
-   "text": "fois",
-   "start": 45.175,
-   "end": 45.313
-  },
-  {
-   "text": "le",
-   "start": 45.313,
-   "end": 45.388
-  },
-  {
-   "text": "vert,",
-   "start": 45.388,
-   "end": 45.7
-  },
-  {
-   "text": "le",
-   "start": 45.925,
-   "end": 45.975
-  },
-  {
-   "text": "violet",
-   "start": 45.975,
-   "end": 46.313
-  },
-  {
-   "text": "et",
-   "start": 46.313,
-   "end": 46.401
-  },
-  {
-   "text": "le",
-   "start": 46.401,
-   "end": 46.488
+   "start": 18.553,
+   "end": 18.653
   },
   {
    "text": "gris.",
-   "start": 46.488,
-   "end": 46.85
+   "start": 18.666,
+   "end": 19.041
   },
   {
-   "text": "Attention,",
-   "start": 47.802,
-   "end": 48.465
+   "text": "Et",
+   "start": 19.99,
+   "end": 20.14
   },
   {
-   "text": "les",
-   "start": 48.739,
-   "end": 48.79
+   "text": "sans",
+   "start": 20.14,
+   "end": 20.328
   },
   {
-   "text": "couleurs",
-   "start": 48.79,
-   "end": 49.102
+   "text": "hémocultures ?",
+   "start": 20.328,
+   "end": 21.178
   },
   {
-   "text": "peuvent",
-   "start": 49.102,
-   "end": 49.29
+   "text": "Avec",
+   "start": 21.515,
+   "end": 21.84
   },
   {
-   "text": "changer",
-   "start": 49.29,
-   "end": 49.627
+   "text": "une",
+   "start": 21.84,
+   "end": 21.94
   },
   {
-   "text": "selon",
-   "start": 49.627,
-   "end": 49.852
+   "text": "aiguille",
+   "start": 21.94,
+   "end": 22.178
   },
   {
-   "text": "les",
-   "start": 49.852,
-   "end": 49.952
+   "text": "simple,",
+   "start": 22.178,
+   "end": 22.69
   },
   {
-   "text": "marques :",
-   "start": 49.952,
-   "end": 50.34
+   "text": "tu",
+   "start": 22.94,
+   "end": 23.053
   },
   {
-   "text": "suis",
-   "start": 50.739,
-   "end": 50.915
+   "text": "commences",
+   "start": 23.053,
+   "end": 23.415
   },
   {
-   "text": "toujours",
-   "start": 50.915,
-   "end": 51.215
+   "text": "au",
+   "start": 23.415,
+   "end": 23.478
   },
   {
-   "text": "le",
-   "start": 51.215,
-   "end": 51.277
+   "text": "bleu.",
+   "start": 23.478,
+   "end": 23.815
   },
   {
-   "text": "protocole",
-   "start": 51.277,
-   "end": 51.765
+   "text": "Avec",
+   "start": 24.165,
+   "end": 24.465
+  },
+  {
+   "text": "une",
+   "start": 24.465,
+   "end": 24.565
+  },
+  {
+   "text": "aiguille",
+   "start": 24.565,
+   "end": 24.865
+  },
+  {
+   "text": "à",
+   "start": 24.865,
+   "end": 24.928
+  },
+  {
+   "text": "ailettes,",
+   "start": 24.928,
+   "end": 25.403
+  },
+  {
+   "text": "tu",
+   "start": 25.678,
+   "end": 25.803
+  },
+  {
+   "text": "mets",
+   "start": 25.803,
+   "end": 25.878
+  },
+  {
+   "text": "d'abord",
+   "start": 25.878,
+   "end": 26.165
+  },
+  {
+   "text": "un",
+   "start": 26.165,
+   "end": 26.215
+  },
+  {
+   "text": "tube",
+   "start": 26.215,
+   "end": 26.428
   },
   {
    "text": "de",
-   "start": 51.765,
-   "end": 51.864
+   "start": 26.428,
+   "end": 26.54
+  },
+  {
+   "text": "purge,",
+   "start": 26.54,
+   "end": 26.99
+  },
+  {
+   "text": "puis",
+   "start": 27.19,
+   "end": 27.34
+  },
+  {
+   "text": "le",
+   "start": 27.34,
+   "end": 27.428
+  },
+  {
+   "text": "bleu.",
+   "start": 27.428,
+   "end": 27.74
+  },
+  {
+   "text": "Ensuite,",
+   "start": 28.676,
+   "end": 29.151
+  },
+  {
+   "text": "on",
+   "start": 29.314,
+   "end": 29.338
+  },
+  {
+   "text": "retourne",
+   "start": 29.338,
+   "end": 29.713
+  },
+  {
+   "text": "doucement",
+   "start": 29.713,
+   "end": 30.001
+  },
+  {
+   "text": "chaque",
+   "start": 30.001,
+   "end": 30.226
+  },
+  {
+   "text": "tube,",
+   "start": 30.226,
+   "end": 30.588
+  },
+  {
+   "text": "sans",
+   "start": 30.789,
+   "end": 30.963
+  },
+  {
+   "text": "le",
+   "start": 30.963,
+   "end": 31.051
+  },
+  {
+   "text": "secouer :",
+   "start": 31.051,
+   "end": 31.539
+  },
+  {
+   "text": "trois",
+   "start": 31.901,
+   "end": 32.089
+  },
+  {
+   "text": "à",
+   "start": 32.089,
+   "end": 32.114
+  },
+  {
+   "text": "quatre",
+   "start": 32.114,
+   "end": 32.364
+  },
+  {
+   "text": "fois",
+   "start": 32.364,
+   "end": 32.501
+  },
+  {
+   "text": "le",
+   "start": 32.501,
+   "end": 32.576
+  },
+  {
+   "text": "bleu,",
+   "start": 32.576,
+   "end": 32.851
+  },
+  {
+   "text": "cinq",
+   "start": 33.189,
+   "end": 33.364
+  },
+  {
+   "text": "fois",
+   "start": 33.364,
+   "end": 33.476
+  },
+  {
+   "text": "le",
+   "start": 33.476,
+   "end": 33.564
+  },
+  {
+   "text": "jaune,",
+   "start": 33.564,
+   "end": 33.876
+  },
+  {
+   "text": "et",
+   "start": 34.288,
+   "end": 34.326
+  },
+  {
+   "text": "huit",
+   "start": 34.326,
+   "end": 34.514
+  },
+  {
+   "text": "à",
+   "start": 34.514,
+   "end": 34.551
+  },
+  {
+   "text": "dix",
+   "start": 34.551,
+   "end": 34.663
+  },
+  {
+   "text": "fois",
+   "start": 34.663,
+   "end": 34.801
+  },
+  {
+   "text": "le",
+   "start": 34.801,
+   "end": 34.876
+  },
+  {
+   "text": "vert,",
+   "start": 34.876,
+   "end": 35.189
+  },
+  {
+   "text": "le",
+   "start": 35.413,
+   "end": 35.464
+  },
+  {
+   "text": "violet",
+   "start": 35.464,
+   "end": 35.801
+  },
+  {
+   "text": "et",
+   "start": 35.801,
+   "end": 35.889
+  },
+  {
+   "text": "le",
+   "start": 35.889,
+   "end": 35.976
+  },
+  {
+   "text": "gris.",
+   "start": 35.976,
+   "end": 36.339
+  },
+  {
+   "text": "Attention,",
+   "start": 37.29,
+   "end": 37.953
+  },
+  {
+   "text": "les",
+   "start": 38.227,
+   "end": 38.278
+  },
+  {
+   "text": "couleurs",
+   "start": 38.278,
+   "end": 38.59
+  },
+  {
+   "text": "peuvent",
+   "start": 38.59,
+   "end": 38.778
+  },
+  {
+   "text": "changer",
+   "start": 38.778,
+   "end": 39.115
+  },
+  {
+   "text": "selon",
+   "start": 39.115,
+   "end": 39.34
+  },
+  {
+   "text": "les",
+   "start": 39.34,
+   "end": 39.44
+  },
+  {
+   "text": "marques :",
+   "start": 39.44,
+   "end": 39.828
+  },
+  {
+   "text": "suis",
+   "start": 40.227,
+   "end": 40.403
+  },
+  {
+   "text": "toujours",
+   "start": 40.403,
+   "end": 40.703
+  },
+  {
+   "text": "le",
+   "start": 40.703,
+   "end": 40.765
+  },
+  {
+   "text": "protocole",
+   "start": 40.765,
+   "end": 41.253
+  },
+  {
+   "text": "de",
+   "start": 41.253,
+   "end": 41.352
   },
   {
    "text": "ton",
-   "start": 51.864,
-   "end": 51.977
+   "start": 41.352,
+   "end": 41.465
   },
   {
    "text": "établissement.",
-   "start": 51.977,
-   "end": 52.702
+   "start": 41.465,
+   "end": 42.19
   }
  ]
 }

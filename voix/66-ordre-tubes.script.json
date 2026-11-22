@@ -6,8 +6,8 @@
  },
  {
   "id": "ordre",
-  "rate": "+2%",
-  "text": "Un : les hémocultures, pour chercher des bactéries. Deux : le bleu, au citrate, pour la coagulation. Trois : le jaune, avec un gel, pour la biochimie. Quatre : le rouge, pour les sérologies. Cinq : le vert, à l'héparine, pour l'ionogramme. Six : le violet, à l'{EDTA|É D T A}, pour la {NFS|N F S}. Et sept : le gris, au fluorure, pour la glycémie."
+  "rate": "+0%",
+  "text": "Un : les hémocultures. Deux : le bleu. Trois : le jaune. Quatre : le rouge. Cinq : le vert. Six : le violet. Et sept : le gris."
  },
  {
   "id": "aiguille",
