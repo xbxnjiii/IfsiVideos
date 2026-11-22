@@ -1,0 +1,32 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Ta glycémie, c'est une photo. L'hémoglobine glyquée, c'est le film de tes trois derniers mois. Et pour un diabétique, elle guide tout le traitement."
+ },
+ {
+  "id": "quoi",
+  "rate": "+0%",
+  "text": "Un : c'est quoi ? Le sucre du sang se colle, peu à peu, à l'hémoglobine des globules rouges. Ce sucre collé, c'est l'hémoglobine glyquée."
+ },
+ {
+  "id": "mois",
+  "rate": "+0%",
+  "text": "Deux : pourquoi trois mois ? Parce qu'un globule rouge vit environ cent vingt jours, et il garde son sucre jusqu'au bout. Elle reflète donc la glycémie moyenne des deux à trois derniers mois."
+ },
+ {
+  "id": "objectif",
+  "rate": "+0%",
+  "text": "Trois : l'objectif. En général, moins de sept pour cent dans le diabète de type deux, et entre sept et sept et demi pour cent dans le type un. Plus elle monte, plus le risque de complications augmente."
+ },
+ {
+  "id": "pratique",
+  "rate": "+0%",
+  "text": "Quatre : en pratique, pas besoin d'être à {jeun|jun}. On la contrôle environ tous les trois mois, pour ajuster le traitement."
+ },
+ {
+  "id": "fin",
+  "rate": "+2%",
+  "text": "La glycémie, c'est l'instant. L'hémoglobine glyquée, c'est trois mois. Prochaine vidéo : le groupe sanguin."
+ }
+]

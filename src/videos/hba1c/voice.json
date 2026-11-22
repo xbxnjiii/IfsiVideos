@@ -1,0 +1,788 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 52.91,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.049,
+   "end": 7.598
+  },
+  {
+   "id": "quoi",
+   "start": 8.533,
+   "end": 16.645
+  },
+  {
+   "id": "mois",
+   "start": 17.614,
+   "end": 26.664
+  },
+  {
+   "id": "objectif",
+   "start": 27.62,
+   "end": 38.145
+  },
+  {
+   "id": "pratique",
+   "start": 39.09,
+   "end": 45.19
+  },
+  {
+   "id": "fin",
+   "start": 46.144,
+   "end": 52.589
+  }
+ ],
+ "words": [
+  {
+   "text": "Ta",
+   "start": 0.049,
+   "end": 0.193
+  },
+  {
+   "text": "glycémie,",
+   "start": 0.193,
+   "end": 0.782
+  },
+  {
+   "text": "c'est",
+   "start": 1.059,
+   "end": 1.167
+  },
+  {
+   "text": "une",
+   "start": 1.167,
+   "end": 1.347
+  },
+  {
+   "text": "photo.",
+   "start": 1.347,
+   "end": 1.792
+  },
+  {
+   "text": "L'hémoglobine",
+   "start": 2.175,
+   "end": 2.776
+  },
+  {
+   "text": "glyquée,",
+   "start": 2.776,
+   "end": 3.221
+  },
+  {
+   "text": "c'est",
+   "start": 3.582,
+   "end": 3.69
+  },
+  {
+   "text": "le",
+   "start": 3.69,
+   "end": 3.798
+  },
+  {
+   "text": "film",
+   "start": 3.798,
+   "end": 4.087
+  },
+  {
+   "text": "de",
+   "start": 4.087,
+   "end": 4.171
+  },
+  {
+   "text": "tes",
+   "start": 4.171,
+   "end": 4.267
+  },
+  {
+   "text": "trois",
+   "start": 4.267,
+   "end": 4.447
+  },
+  {
+   "text": "derniers",
+   "start": 4.447,
+   "end": 4.724
+  },
+  {
+   "text": "mois.",
+   "start": 4.724,
+   "end": 5.036
+  },
+  {
+   "text": "Et",
+   "start": 5.362,
+   "end": 5.495
+  },
+  {
+   "text": "pour",
+   "start": 5.495,
+   "end": 5.663
+  },
+  {
+   "text": "un",
+   "start": 5.663,
+   "end": 5.699
+  },
+  {
+   "text": "diabétique,",
+   "start": 5.699,
+   "end": 6.312
+  },
+  {
+   "text": "elle",
+   "start": 6.564,
+   "end": 6.649
+  },
+  {
+   "text": "guide",
+   "start": 6.649,
+   "end": 6.913
+  },
+  {
+   "text": "tout",
+   "start": 6.913,
+   "end": 7.033
+  },
+  {
+   "text": "le",
+   "start": 7.033,
+   "end": 7.093
+  },
+  {
+   "text": "traitement.",
+   "start": 7.093,
+   "end": 7.598
+  },
+  {
+   "text": "Un :",
+   "start": 8.533,
+   "end": 8.783
+  },
+  {
+   "text": "c'est",
+   "start": 9.07,
+   "end": 9.22
+  },
+  {
+   "text": "quoi ?",
+   "start": 9.22,
+   "end": 9.57
+  },
+  {
+   "text": "Le",
+   "start": 9.945,
+   "end": 10.083
+  },
+  {
+   "text": "sucre",
+   "start": 10.083,
+   "end": 10.395
+  },
+  {
+   "text": "du",
+   "start": 10.395,
+   "end": 10.495
+  },
+  {
+   "text": "sang",
+   "start": 10.495,
+   "end": 10.645
+  },
+  {
+   "text": "se",
+   "start": 10.645,
+   "end": 10.783
+  },
+  {
+   "text": "colle,",
+   "start": 10.783,
+   "end": 11.183
+  },
+  {
+   "text": "peu",
+   "start": 11.433,
+   "end": 11.533
+  },
+  {
+   "text": "à",
+   "start": 11.533,
+   "end": 11.633
+  },
+  {
+   "text": "peu,",
+   "start": 11.633,
+   "end": 11.957
+  },
+  {
+   "text": "à",
+   "start": 12.27,
+   "end": 12.358
+  },
+  {
+   "text": "l'hémoglobine",
+   "start": 12.358,
+   "end": 12.957
+  },
+  {
+   "text": "des",
+   "start": 12.957,
+   "end": 13.033
+  },
+  {
+   "text": "globules",
+   "start": 13.033,
+   "end": 13.32
+  },
+  {
+   "text": "rouges.",
+   "start": 13.32,
+   "end": 13.745
+  },
+  {
+   "text": "Ce",
+   "start": 14.082,
+   "end": 14.308
+  },
+  {
+   "text": "sucre",
+   "start": 14.308,
+   "end": 14.645
+  },
+  {
+   "text": "collé,",
+   "start": 14.645,
+   "end": 15.045
+  },
+  {
+   "text": "c'est",
+   "start": 15.408,
+   "end": 15.545
+  },
+  {
+   "text": "l'hémoglobine",
+   "start": 15.545,
+   "end": 16.133
+  },
+  {
+   "text": "glyquée.",
+   "start": 16.133,
+   "end": 16.645
+  },
+  {
+   "text": "Deux :",
+   "start": 17.614,
+   "end": 18.026
+  },
+  {
+   "text": "pourquoi",
+   "start": 18.314,
+   "end": 18.627
+  },
+  {
+   "text": "trois",
+   "start": 18.627,
+   "end": 18.839
+  },
+  {
+   "text": "mois ?",
+   "start": 18.839,
+   "end": 19.139
+  },
+  {
+   "text": "Parce",
+   "start": 19.502,
+   "end": 19.677
+  },
+  {
+   "text": "qu'un",
+   "start": 19.677,
+   "end": 19.814
+  },
+  {
+   "text": "globule",
+   "start": 19.814,
+   "end": 20.139
+  },
+  {
+   "text": "rouge",
+   "start": 20.139,
+   "end": 20.489
+  },
+  {
+   "text": "vit",
+   "start": 20.489,
+   "end": 20.614
+  },
+  {
+   "text": "environ",
+   "start": 20.614,
+   "end": 20.939
+  },
+  {
+   "text": "cent",
+   "start": 20.939,
+   "end": 21.127
+  },
+  {
+   "text": "vingt",
+   "start": 21.127,
+   "end": 21.302
+  },
+  {
+   "text": "jours,",
+   "start": 21.302,
+   "end": 21.639
+  },
+  {
+   "text": "et",
+   "start": 21.977,
+   "end": 22.002
+  },
+  {
+   "text": "il",
+   "start": 22.002,
+   "end": 22.089
+  },
+  {
+   "text": "garde",
+   "start": 22.089,
+   "end": 22.364
+  },
+  {
+   "text": "son",
+   "start": 22.364,
+   "end": 22.489
+  },
+  {
+   "text": "sucre",
+   "start": 22.489,
+   "end": 22.852
+  },
+  {
+   "text": "jusqu'au",
+   "start": 22.852,
+   "end": 23.139
+  },
+  {
+   "text": "bout.",
+   "start": 23.139,
+   "end": 23.389
+  },
+  {
+   "text": "Elle",
+   "start": 23.727,
+   "end": 23.914
+  },
+  {
+   "text": "reflète",
+   "start": 23.914,
+   "end": 24.364
+  },
+  {
+   "text": "donc",
+   "start": 24.364,
+   "end": 24.576
+  },
+  {
+   "text": "la",
+   "start": 24.576,
+   "end": 24.677
+  },
+  {
+   "text": "glycémie",
+   "start": 24.677,
+   "end": 25.089
+  },
+  {
+   "text": "moyenne",
+   "start": 25.089,
+   "end": 25.539
+  },
+  {
+   "text": "des",
+   "start": 25.539,
+   "end": 25.651
+  },
+  {
+   "text": "deux",
+   "start": 25.651,
+   "end": 25.826
+  },
+  {
+   "text": "à",
+   "start": 25.826,
+   "end": 25.889
+  },
+  {
+   "text": "trois",
+   "start": 25.889,
+   "end": 26.076
+  },
+  {
+   "text": "derniers",
+   "start": 26.076,
+   "end": 26.339
+  },
+  {
+   "text": "mois.",
+   "start": 26.339,
+   "end": 26.664
+  },
+  {
+   "text": "Trois :",
+   "start": 27.62,
+   "end": 28.032
+  },
+  {
+   "text": "l'objectif.",
+   "start": 28.445,
+   "end": 29.282
+  },
+  {
+   "text": "En",
+   "start": 29.633,
+   "end": 29.745
+  },
+  {
+   "text": "général,",
+   "start": 29.745,
+   "end": 30.295
+  },
+  {
+   "text": "moins",
+   "start": 30.657,
+   "end": 30.808
+  },
+  {
+   "text": "de",
+   "start": 30.808,
+   "end": 30.92
+  },
+  {
+   "text": "sept",
+   "start": 30.92,
+   "end": 31.108
+  },
+  {
+   "text": "pour",
+   "start": 31.108,
+   "end": 31.295
+  },
+  {
+   "text": "cent",
+   "start": 31.295,
+   "end": 31.445
+  },
+  {
+   "text": "dans",
+   "start": 31.445,
+   "end": 31.545
+  },
+  {
+   "text": "le",
+   "start": 31.545,
+   "end": 31.62
+  },
+  {
+   "text": "diabète",
+   "start": 31.62,
+   "end": 31.933
+  },
+  {
+   "text": "de",
+   "start": 31.933,
+   "end": 32.02
+  },
+  {
+   "text": "type",
+   "start": 32.02,
+   "end": 32.245
+  },
+  {
+   "text": "deux,",
+   "start": 32.245,
+   "end": 32.495
+  },
+  {
+   "text": "et",
+   "start": 32.858,
+   "end": 32.92
+  },
+  {
+   "text": "entre",
+   "start": 32.92,
+   "end": 33.145
+  },
+  {
+   "text": "sept",
+   "start": 33.145,
+   "end": 33.333
+  },
+  {
+   "text": "et",
+   "start": 33.333,
+   "end": 33.383
+  },
+  {
+   "text": "sept",
+   "start": 33.383,
+   "end": 33.62
+  },
+  {
+   "text": "et",
+   "start": 33.62,
+   "end": 33.657
+  },
+  {
+   "text": "demi",
+   "start": 33.657,
+   "end": 33.858
+  },
+  {
+   "text": "pour",
+   "start": 33.858,
+   "end": 34.057
+  },
+  {
+   "text": "cent",
+   "start": 34.057,
+   "end": 34.195
+  },
+  {
+   "text": "dans",
+   "start": 34.195,
+   "end": 34.282
+  },
+  {
+   "text": "le",
+   "start": 34.282,
+   "end": 34.37
+  },
+  {
+   "text": "type",
+   "start": 34.37,
+   "end": 34.608
+  },
+  {
+   "text": "un.",
+   "start": 34.608,
+   "end": 34.807
+  },
+  {
+   "text": "Plus",
+   "start": 35.145,
+   "end": 35.345
+  },
+  {
+   "text": "elle",
+   "start": 35.345,
+   "end": 35.532
+  },
+  {
+   "text": "monte,",
+   "start": 35.532,
+   "end": 35.97
+  },
+  {
+   "text": "plus",
+   "start": 36.258,
+   "end": 36.483
+  },
+  {
+   "text": "le",
+   "start": 36.483,
+   "end": 36.582
+  },
+  {
+   "text": "risque",
+   "start": 36.582,
+   "end": 36.883
+  },
+  {
+   "text": "de",
+   "start": 36.883,
+   "end": 36.97
+  },
+  {
+   "text": "complications",
+   "start": 36.97,
+   "end": 37.582
+  },
+  {
+   "text": "augmente.",
+   "start": 37.582,
+   "end": 38.145
+  },
+  {
+   "text": "Quatre :",
+   "start": 39.09,
+   "end": 39.49
+  },
+  {
+   "text": "en",
+   "start": 39.84,
+   "end": 39.865
+  },
+  {
+   "text": "pratique,",
+   "start": 39.865,
+   "end": 40.49
+  },
+  {
+   "text": "pas",
+   "start": 40.703,
+   "end": 40.815
+  },
+  {
+   "text": "besoin",
+   "start": 40.815,
+   "end": 41.127
+  },
+  {
+   "text": "d'être",
+   "start": 41.127,
+   "end": 41.352
+  },
+  {
+   "text": "à",
+   "start": 41.352,
+   "end": 41.377
+  },
+  {
+   "text": "jeun.",
+   "start": 41.377,
+   "end": 41.79
+  },
+  {
+   "text": "On",
+   "start": 42.127,
+   "end": 42.265
+  },
+  {
+   "text": "la",
+   "start": 42.265,
+   "end": 42.352
+  },
+  {
+   "text": "contrôle",
+   "start": 42.352,
+   "end": 42.727
+  },
+  {
+   "text": "environ",
+   "start": 42.727,
+   "end": 43.14
+  },
+  {
+   "text": "tous",
+   "start": 43.14,
+   "end": 43.265
+  },
+  {
+   "text": "les",
+   "start": 43.265,
+   "end": 43.352
+  },
+  {
+   "text": "trois",
+   "start": 43.352,
+   "end": 43.565
+  },
+  {
+   "text": "mois,",
+   "start": 43.565,
+   "end": 43.852
+  },
+  {
+   "text": "pour",
+   "start": 44.14,
+   "end": 44.29
+  },
+  {
+   "text": "ajuster",
+   "start": 44.29,
+   "end": 44.602
+  },
+  {
+   "text": "le",
+   "start": 44.602,
+   "end": 44.69
+  },
+  {
+   "text": "traitement.",
+   "start": 44.69,
+   "end": 45.19
+  },
+  {
+   "text": "La",
+   "start": 46.144,
+   "end": 46.34
+  },
+  {
+   "text": "glycémie,",
+   "start": 46.34,
+   "end": 46.879
+  },
+  {
+   "text": "c'est",
+   "start": 47.185,
+   "end": 47.308
+  },
+  {
+   "text": "l'instant.",
+   "start": 47.308,
+   "end": 47.81
+  },
+  {
+   "text": "L'hémoglobine",
+   "start": 48.202,
+   "end": 48.79
+  },
+  {
+   "text": "glyquée,",
+   "start": 48.79,
+   "end": 49.243
+  },
+  {
+   "text": "c'est",
+   "start": 49.587,
+   "end": 49.709
+  },
+  {
+   "text": "trois",
+   "start": 49.709,
+   "end": 49.942
+  },
+  {
+   "text": "mois.",
+   "start": 49.942,
+   "end": 50.273
+  },
+  {
+   "text": "Prochaine",
+   "start": 50.616,
+   "end": 50.984
+  },
+  {
+   "text": "vidéo :",
+   "start": 50.984,
+   "end": 51.449
+  },
+  {
+   "text": "le",
+   "start": 51.842,
+   "end": 51.891
+  },
+  {
+   "text": "groupe",
+   "start": 51.891,
+   "end": 52.123
+  },
+  {
+   "text": "sanguin.",
+   "start": 52.123,
+   "end": 52.589
+  }
+ ]
+}

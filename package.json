@@ -82,7 +82,8 @@
     "render:tube-purge": "remotion render Tube-Purge out/65-tube-purge.mp4",
     "render:ordre-tubes": "remotion render Ordre-Tubes out/66-ordre-tubes.mp4",
     "render:nfs-globules-rouges": "remotion render NFS-Globules-Rouges out/67-nfs-globules-rouges.mp4",
-    "render:nfs-globules-blancs": "remotion render NFS-Globules-Blancs out/68-nfs-globules-blancs.mp4"
+    "render:nfs-globules-blancs": "remotion render NFS-Globules-Blancs out/68-nfs-globules-blancs.mp4",
+    "render:hba1c": "remotion render HbA1c out/69-hba1c.mp4"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.532",

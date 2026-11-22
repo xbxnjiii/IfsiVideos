@@ -9,7 +9,7 @@ l'image 0, sans appel à l'action. La v2 longue (n° 62, 3 min 17) reste dans le
 |---|---|---|
 | 67 | `NFS-Globules-Rouges` (≈ 54 s) | NFS 1/2 : hématies (H 4,2 – 5,7 / F 4,0 – 5,3 M/mm³), hémoglobine (H 14 – 18 / F 12 – 15 g/dL, basse = anémie), hématocrite (H 40 – 52 / F 37 – 46 %, haut = polyglobulie), VGM (80 – 100 fL ; petits = souvent manque de fer) ; récap + « à suivre : NFS 2/2 ». |
 | 68 | `NFS-Globules-Blancs` (≈ 60 s) | NFS 2/2 : plaquettes (150 000 – 400 000, thrombopénie = risque d'hémorragie), leucocytes (4 000 – 10 000 ; trop = infection, leucopénie = se défend mal), PNN 1 500 – 7 000, PNE 50 – 500, PNB 0 – 200, lymphocytes 1 500 – 4 000 (lymphocytose = d'abord un virus), monocytes 200 – 950 ; récap + « prochaine vidéo : l'hémoglobine glyquée ». |
-| 69 | HbA1c (à faire) | moyenne sur 2 – 3 mois, objectifs type 2 < 7 % / type 1 7 – 7,5 %. |
+| 69 | `HbA1c` (≈ 57 s) | la glycémie = une photo, l'HbA1c = le film de 3 mois ; le sucre se colle à l'hémoglobine ; globule rouge ≈ 120 jours → moyenne des 2 – 3 derniers mois ; objectif type 2 < 7 %, type 1 7 – 7,5 %, complications (yeux, reins, pieds) ; pas à jeun, ≈ tous les 3 mois, ajuster le traitement. |
 | 70 | Groupe + RAI (à faire) | ABO / Rhésus, 2 déterminations, RAI avant transfusion. |
 | 71 | Charge virale (à faire) | VIH, hépatite B, hépatite C. |
 
@@ -39,3 +39,17 @@ Sources : tableau de normes adultes du propriétaire ; HAS (2011) bilan martial 
 
 Voix : Whisper entend « thrombopénie » comme « trombe au pénis » sans amorce, mais correctement avec une amorce de
 vocabulaire médical : la voix est bonne (le mot sort aussi tel quel dans la n° 62).
+
+## 69 · L'HbA1c
+
+| Partie | Voix | Image |
+|---|---|---|
+| intro | Ta glycémie, c'est une photo. L'hémoglobine glyquée, c'est le film de tes trois derniers mois. Et pour un diabétique, elle guide tout le traitement. | Image 0 : pastille, titre « L'HbA1c : le film de 3 mois », 0/4, polaroid du lecteur (1,05) ; flash sur « photo », la pellicule mois 1 · 2 · 3 entre sur « film », stylo à insuline. |
+| quoi | Un : c'est quoi ? Le sucre… se colle… à l'hémoglobine… | 1/4, globule rouge, morceaux de sucre qui viennent se coller (`GlycatedCell`), = hémoglobine glyquée, HbA1c. |
+| mois | Deux : pourquoi trois mois ? … cent vingt jours… moyenne… | 2/4, frise 0 → 120 jours, le globule avance et se charge de sucre, bande rose « 2 – 3 derniers mois ». |
+| objectif | Trois : l'objectif… type deux… type un… complications. | 3/4, carte OBJECTIF (type 2 < 7 %, type 1 7 – 7,5 %), échelle 5 – 11 % dont le curseur monte, yeux · reins · pieds. |
+| pratique | Quatre : pas besoin d'être à jeun… tous les trois mois… ajuster le traitement. | 4/4, deux cartes (assiette, calendrier), bandeau stylo → ajuster le traitement. |
+| fin | La glycémie, c'est l'instant. L'hémoglobine glyquée, c'est trois mois. Prochaine vidéo : le groupe sanguin. | Photo / film côte à côte, confettis, carte PROCHAINE VIDÉO + goutte ABO. |
+
+Sources : HAS 2013 (cible ≤ 7 % dans le type 2, en général) ; HAS, parcours du diabète de type 2 (HbA1c tous les 3 mois) ;
+type 1 : texte du propriétaire.

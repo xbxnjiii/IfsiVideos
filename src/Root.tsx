@@ -138,6 +138,8 @@ import {NfsGlobulesRouges, NfsGlobulesRougesProps} from './videos/nfs-globules-r
 import {TL as NFS_GLOBULES_ROUGES_TL} from './videos/nfs-globules-rouges/timeline';
 import {NfsGlobulesBlancs, NfsGlobulesBlancsProps} from './videos/nfs-globules-blancs/NfsGlobulesBlancs';
 import {TL as NFS_GLOBULES_BLANCS_TL} from './videos/nfs-globules-blancs/timeline';
+import {Hba1cVideo, Hba1cVideoProps} from './videos/hba1c/Hba1cVideo';
+import {TL as HBA1C_TL} from './videos/hba1c/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -814,6 +816,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies NfsGlobulesBlancsProps}
+		/>
+		{/* 69 · HbA1c */}
+		<Composition
+			id="HbA1c"
+			component={Hba1cVideo}
+			durationInFrames={HBA1C_TL.total}
+			fps={HBA1C_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies Hba1cVideoProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition

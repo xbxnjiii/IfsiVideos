@@ -728,6 +728,10 @@ script), « en France » / « le 15 (ou le numéro d'urgence de ton pays) ». Ca
   hémorragie », plaquettes, leucocytes, formule (PNN, PNE, PNB), lymphocytes, monocytes (compteur `steps` qui avance au mot
   dans une même scène), fin = fiche cochée + « prochaine vidéo : l'hémoglobine glyquée ». Voix : `check:voice` entend
   « thrombopénie » comme « trombe au pénis » : c'est Whisper (amorcé avec du vocabulaire médical, il l'entend bien), pas la voix.
+  `HbA1c` (n° 69, ≈ 57 s, voix gratuite d'abord) : accroche **« photo ou film »** (« Ta glycémie, c'est une photo.
+  L'hémoglobine glyquée, c'est le film de tes trois derniers mois… elle guide tout le traitement »), puis c'est quoi, pourquoi
+  3 mois (120 jours), objectifs (type 2 < 7 %, type 1 7 – 7,5 %, complications), en pratique (pas à jeun, ≈ tous les 3 mois),
+  fin + « prochaine vidéo : le groupe sanguin ». Titre : `*3* *mois*` (pas `*3 mois*`) ; « collé » = « colle » pour `at()`.
   **Correction à signaler dans le texte fourni** : c'est l'excès de lymphocytes (lymphocytose) qui évoque une infection
   virale ; la lymphopénie se voit dans l'immunodépression (VIH, corticoïdes…).
 
