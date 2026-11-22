@@ -1,853 +1,853 @@
 {
- "voice": "voix.wav (tts_voix.py)",
- "duration": 58.72,
+ "voice": "pad-tube-bleu-tp-inr.wav",
+ "duration": 58.717,
  "sections": [
   {
    "id": "intro",
-   "start": 0.05,
-   "end": 7.007
+   "start": 0.0,
+   "end": 7.0
   },
   {
    "id": "remplir",
-   "start": 7.944,
-   "end": 20.686
+   "start": 7.844,
+   "end": 21.222
   },
   {
    "id": "tp",
-   "start": 21.621,
-   "end": 33.732
+   "start": 22.031,
+   "end": 34.698
   },
   {
    "id": "inr",
-   "start": 34.652,
-   "end": 50.609
+   "start": 35.496,
+   "end": 51.423
   },
   {
    "id": "fin",
-   "start": 51.522,
-   "end": 58.384
+   "start": 52.26,
+   "end": 58.58
   }
  ],
  "words": [
   {
    "text": "Le",
-   "start": 0.05,
-   "end": 0.242
+   "start": 0.0,
+   "end": 0.26
   },
   {
    "text": "tube",
-   "start": 0.242,
-   "end": 0.446
+   "start": 0.26,
+   "end": 0.44
   },
   {
    "text": "bleu,",
-   "start": 0.446,
-   "end": 0.735
+   "start": 0.44,
+   "end": 0.88
   },
   {
    "text": "c'est",
-   "start": 1.023,
-   "end": 1.143
+   "start": 1.0,
+   "end": 1.16
   },
   {
    "text": "la",
-   "start": 1.143,
-   "end": 1.227
+   "start": 1.16,
+   "end": 1.4
   },
   {
    "text": "coagulation.",
-   "start": 1.227,
-   "end": 2.045
+   "start": 1.4,
+   "end": 2.06
   },
   {
    "text": "S'il",
-   "start": 2.369,
-   "end": 2.609
+   "start": 2.48,
+   "end": 2.62
   },
   {
    "text": "est",
-   "start": 2.609,
-   "end": 2.645
+   "start": 2.62,
+   "end": 2.72
   },
   {
    "text": "mal",
-   "start": 2.645,
-   "end": 2.825
+   "start": 2.72,
+   "end": 2.92
   },
   {
    "text": "rempli,",
-   "start": 2.825,
-   "end": 3.318
+   "start": 2.92,
+   "end": 3.38
   },
   {
    "text": "le",
-   "start": 3.607,
-   "end": 3.655
+   "start": 3.52,
+   "end": 3.66
   },
   {
    "text": "résultat",
-   "start": 3.655,
-   "end": 4.075
+   "start": 3.66,
+   "end": 4.08
   },
   {
    "text": "est",
-   "start": 4.075,
-   "end": 4.148
+   "start": 4.08,
+   "end": 4.38
   },
   {
    "text": "faux…",
-   "start": 4.148,
-   "end": 4.484
+   "start": 4.38,
+   "end": 4.52
   },
   {
    "text": "et",
-   "start": 4.821,
-   "end": 4.845
+   "start": 4.52,
+   "end": 4.92
   },
   {
    "text": "ton",
-   "start": 4.845,
-   "end": 4.965
+   "start": 4.92,
+   "end": 5.08
   },
   {
    "text": "patient",
-   "start": 4.965,
-   "end": 5.277
+   "start": 5.08,
+   "end": 5.4
   },
   {
    "text": "peut",
-   "start": 5.277,
-   "end": 5.41
+   "start": 5.4,
+   "end": 5.64
   },
   {
    "text": "saigner.",
-   "start": 5.41,
-   "end": 5.854
+   "start": 5.64,
+   "end": 5.96
   },
   {
    "text": "Tu",
-   "start": 6.226,
-   "end": 6.322
+   "start": 6.34,
+   "end": 6.52
   },
   {
    "text": "sais",
-   "start": 6.322,
-   "end": 6.466
+   "start": 6.52,
+   "end": 6.64
   },
   {
    "text": "le",
-   "start": 6.466,
-   "end": 6.574
+   "start": 6.64,
+   "end": 6.82
   },
   {
-   "text": "lire ?",
-   "start": 6.574,
-   "end": 7.007
+   "text": "lire ?",
+   "start": 6.82,
+   "end": 7.0
   },
   {
-   "text": "Un :",
-   "start": 7.944,
-   "end": 8.272
+   "text": "Un :",
+   "start": 7.844,
+   "end": 8.1
   },
   {
    "text": "le",
-   "start": 8.587,
-   "end": 8.66
+   "start": 8.48,
+   "end": 8.76
   },
   {
    "text": "remplissage.",
-   "start": 8.66,
-   "end": 9.425
+   "start": 8.76,
+   "end": 9.46
   },
   {
    "text": "Le",
-   "start": 9.799,
-   "end": 9.921
+   "start": 9.86,
+   "end": 9.98
   },
   {
    "text": "tube",
-   "start": 9.921,
-   "end": 10.127
+   "start": 9.98,
+   "end": 10.2
   },
   {
    "text": "bleu",
-   "start": 10.127,
-   "end": 10.37
+   "start": 10.2,
+   "end": 10.46
   },
   {
    "text": "contient",
-   "start": 10.37,
-   "end": 10.697
+   "start": 10.46,
+   "end": 10.78
   },
   {
    "text": "un",
-   "start": 10.697,
-   "end": 10.734
+   "start": 10.78,
+   "end": 11.04
   },
   {
    "text": "liquide,",
-   "start": 10.734,
-   "end": 11.219
+   "start": 11.04,
+   "end": 11.38
   },
   {
    "text": "le",
-   "start": 11.413,
-   "end": 11.486
+   "start": 11.52,
+   "end": 11.76
   },
   {
    "text": "citrate,",
-   "start": 11.486,
-   "end": 12.093
+   "start": 11.76,
+   "end": 12.14
   },
   {
    "text": "qui",
-   "start": 12.311,
-   "end": 12.457
+   "start": 12.3,
+   "end": 12.58
   },
   {
    "text": "empêche",
-   "start": 12.457,
-   "end": 12.773
+   "start": 12.58,
+   "end": 12.94
   },
   {
    "text": "le",
-   "start": 12.773,
-   "end": 12.882
+   "start": 12.94,
+   "end": 13.18
   },
   {
    "text": "sang",
-   "start": 12.882,
-   "end": 13.052
+   "start": 13.18,
+   "end": 13.26
   },
   {
    "text": "de",
-   "start": 13.052,
-   "end": 13.149
+   "start": 13.26,
+   "end": 13.48
   },
   {
    "text": "coaguler.",
-   "start": 13.149,
-   "end": 13.756
+   "start": 13.48,
+   "end": 13.96
   },
   {
    "text": "Sa",
-   "start": 14.084,
-   "end": 14.279
+   "start": 14.38,
+   "end": 14.58
   },
   {
    "text": "dose",
-   "start": 14.279,
-   "end": 14.497
+   "start": 14.58,
+   "end": 14.74
   },
   {
    "text": "est",
-   "start": 14.497,
-   "end": 14.533
+   "start": 14.74,
+   "end": 14.98
   },
   {
    "text": "prévue",
-   "start": 14.533,
-   "end": 14.849
+   "start": 14.98,
+   "end": 15.2
   },
   {
    "text": "pour",
-   "start": 14.849,
-   "end": 15.019
+   "start": 15.2,
+   "end": 15.36
   },
   {
    "text": "un",
-   "start": 15.019,
-   "end": 15.043
+   "start": 15.36,
+   "end": 15.54
   },
   {
    "text": "tube",
-   "start": 15.043,
-   "end": 15.262
+   "start": 15.54,
+   "end": 15.72
   },
   {
-   "text": "plein :",
-   "start": 15.262,
-   "end": 15.577
+   "text": "plein :",
+   "start": 15.72,
+   "end": 16.04
   },
   {
    "text": "on",
-   "start": 15.929,
-   "end": 15.953
+   "start": 16.28,
+   "end": 16.42
   },
   {
    "text": "le",
-   "start": 15.953,
-   "end": 16.05
+   "start": 16.42,
+   "end": 16.6
   },
   {
    "text": "remplit",
-   "start": 16.05,
-   "end": 16.378
+   "start": 16.6,
+   "end": 16.92
   },
   {
    "text": "jusqu'au",
-   "start": 16.378,
-   "end": 16.645
+   "start": 16.92,
+   "end": 17.4
   },
   {
    "text": "trait.",
-   "start": 16.645,
-   "end": 17.009
+   "start": 17.4,
+   "end": 17.66
   },
   {
    "text": "Sinon,",
-   "start": 17.337,
-   "end": 17.822
+   "start": 17.9,
+   "end": 18.32
   },
   {
    "text": "il",
-   "start": 18.138,
-   "end": 18.211
+   "start": 18.46,
+   "end": 18.56
   },
   {
    "text": "y",
-   "start": 18.211,
-   "end": 18.247
+   "start": 18.56,
+   "end": 18.66
   },
   {
    "text": "a",
-   "start": 18.247,
-   "end": 18.271
+   "start": 18.66,
+   "end": 18.74
   },
   {
    "text": "trop",
-   "start": 18.271,
-   "end": 18.429
+   "start": 18.74,
+   "end": 18.9
   },
   {
    "text": "de",
-   "start": 18.429,
-   "end": 18.502
+   "start": 18.9,
+   "end": 19.14
   },
   {
    "text": "citrate…",
-   "start": 18.502,
-   "end": 19.036
+   "start": 19.14,
+   "end": 19.46
   },
   {
    "text": "et",
-   "start": 19.4,
-   "end": 19.424
+   "start": 19.46,
+   "end": 19.86
   },
   {
    "text": "les",
-   "start": 19.424,
-   "end": 19.521
+   "start": 19.86,
+   "end": 20.06
   },
   {
    "text": "temps",
-   "start": 19.521,
-   "end": 19.679
+   "start": 20.06,
+   "end": 20.18
   },
   {
    "text": "sont",
-   "start": 19.679,
-   "end": 19.825
+   "start": 20.18,
+   "end": 20.48
   },
   {
    "text": "faussement",
-   "start": 19.825,
-   "end": 20.189
+   "start": 20.48,
+   "end": 20.9
   },
   {
    "text": "allongés.",
-   "start": 20.189,
-   "end": 20.686
+   "start": 20.9,
+   "end": 21.222
   },
   {
-   "text": "Deux :",
-   "start": 21.621,
-   "end": 22.046
+   "text": "Deux :",
+   "start": 22.031,
+   "end": 22.52
   },
   {
    "text": "le",
-   "start": 22.398,
-   "end": 22.483
+   "start": 22.66,
+   "end": 22.98
   },
   {
    "text": "TP,",
-   "start": 22.483,
-   "end": 22.932
+   "start": 22.98,
+   "end": 23.28
   },
   {
    "text": "le",
-   "start": 23.272,
-   "end": 23.345
+   "start": 23.52,
+   "end": 23.82
   },
   {
    "text": "taux",
-   "start": 23.345,
-   "end": 23.478
+   "start": 23.82,
+   "end": 23.94
   },
   {
    "text": "de",
-   "start": 23.478,
-   "end": 23.575
+   "start": 23.94,
+   "end": 24.2
   },
   {
    "text": "prothrombine.",
-   "start": 23.575,
-   "end": 24.303
+   "start": 24.2,
+   "end": 24.84
   },
   {
    "text": "Il",
-   "start": 24.632,
-   "end": 24.85
+   "start": 25.16,
+   "end": 25.44
   },
   {
    "text": "dit",
-   "start": 24.85,
-   "end": 24.996
+   "start": 25.44,
+   "end": 25.56
   },
   {
    "text": "si",
-   "start": 24.996,
-   "end": 25.129
+   "start": 25.56,
+   "end": 25.72
   },
   {
    "text": "le",
-   "start": 25.129,
-   "end": 25.238
+   "start": 25.72,
+   "end": 25.96
   },
   {
    "text": "sang",
-   "start": 25.238,
-   "end": 25.408
+   "start": 25.96,
+   "end": 26.06
   },
   {
    "text": "coagule",
-   "start": 25.408,
-   "end": 25.833
+   "start": 26.06,
+   "end": 26.54
   },
   {
    "text": "assez",
-   "start": 25.833,
-   "end": 26.052
+   "start": 26.54,
+   "end": 26.94
   },
   {
    "text": "vite.",
-   "start": 26.052,
-   "end": 26.488
+   "start": 26.94,
+   "end": 27.18
   },
   {
    "text": "La",
-   "start": 26.863,
-   "end": 26.985
+   "start": 27.18,
+   "end": 27.64
   },
   {
-   "text": "norme :",
-   "start": 26.985,
-   "end": 27.397
+   "text": "norme :",
+   "start": 27.64,
+   "end": 28.24
   },
   {
    "text": "de",
-   "start": 27.773,
-   "end": 27.871
+   "start": 28.24,
+   "end": 28.46
   },
   {
    "text": "soixante-dix",
-   "start": 27.871,
-   "end": 28.55
+   "start": 28.46,
+   "end": 29.08
   },
   {
    "text": "à",
-   "start": 28.55,
-   "end": 28.623
+   "start": 29.08,
+   "end": 29.34
   },
   {
    "text": "cent",
-   "start": 28.623,
-   "end": 28.781
+   "start": 29.34,
+   "end": 29.66
   },
   {
    "text": "pour",
-   "start": 28.781,
-   "end": 28.975
+   "start": 29.66,
+   "end": 29.66
   },
   {
    "text": "cent.",
-   "start": 28.975,
-   "end": 29.254
+   "start": 29.66,
+   "end": 30.34
   },
   {
    "text": "Trop",
-   "start": 29.618,
-   "end": 29.788
+   "start": 30.34,
+   "end": 30.6
   },
   {
    "text": "bas,",
-   "start": 29.788,
-   "end": 30.019
+   "start": 30.6,
+   "end": 30.9
   },
   {
    "text": "le",
-   "start": 30.298,
-   "end": 30.383
+   "start": 31.18,
+   "end": 31.3
   },
   {
    "text": "sang",
-   "start": 30.383,
-   "end": 30.54
+   "start": 31.3,
+   "end": 31.46
   },
   {
    "text": "coagule",
-   "start": 30.54,
-   "end": 30.941
+   "start": 31.46,
+   "end": 31.92
   },
   {
-   "text": "mal :",
-   "start": 30.941,
-   "end": 31.281
+   "text": "mal :",
+   "start": 31.92,
+   "end": 32.24
   },
   {
    "text": "quand",
-   "start": 31.548,
-   "end": 31.669
+   "start": 32.48,
+   "end": 32.58
   },
   {
    "text": "le",
-   "start": 31.669,
-   "end": 31.766
+   "start": 32.58,
+   "end": 32.82
   },
   {
    "text": "foie",
-   "start": 31.766,
-   "end": 31.948
+   "start": 32.82,
+   "end": 32.9
   },
   {
    "text": "est",
-   "start": 31.948,
-   "end": 31.985
+   "start": 32.9,
+   "end": 33.08
   },
   {
    "text": "malade,",
-   "start": 31.985,
-   "end": 32.422
+   "start": 33.08,
+   "end": 33.52
   },
   {
    "text": "ou",
-   "start": 32.676,
-   "end": 32.713
+   "start": 33.52,
+   "end": 33.78
   },
   {
    "text": "sous",
-   "start": 32.713,
-   "end": 32.822
+   "start": 33.78,
+   "end": 34.02
   },
   {
    "text": "anticoagulant.",
-   "start": 32.822,
-   "end": 33.732
+   "start": 34.02,
+   "end": 34.698
   },
   {
-   "text": "Trois :",
-   "start": 34.652,
-   "end": 35.089
+   "text": "Trois :",
+   "start": 35.496,
+   "end": 35.82
   },
   {
    "text": "l'INR.",
-   "start": 35.465,
-   "end": 36.217
+   "start": 36.14,
+   "end": 36.86
   },
   {
    "text": "Il",
-   "start": 36.545,
-   "end": 36.751
+   "start": 37.4,
+   "end": 37.4
   },
   {
    "text": "sert",
-   "start": 36.752,
-   "end": 36.934
+   "start": 37.4,
+   "end": 37.6
   },
   {
    "text": "à",
-   "start": 36.934,
-   "end": 36.982
+   "start": 37.6,
+   "end": 37.78
   },
   {
    "text": "surveiller",
-   "start": 36.982,
-   "end": 37.395
+   "start": 37.78,
+   "end": 38.18
   },
   {
    "text": "les",
-   "start": 37.395,
-   "end": 37.492
+   "start": 38.18,
+   "end": 38.52
   },
   {
    "text": "AVK,",
-   "start": 37.492,
-   "end": 38.05
+   "start": 38.52,
+   "end": 38.9
   },
   {
    "text": "des",
-   "start": 38.39,
-   "end": 38.463
+   "start": 39.08,
+   "end": 39.36
   },
   {
    "text": "anticoagulants",
-   "start": 38.463,
-   "end": 39.276
+   "start": 39.36,
+   "end": 40.1
   },
   {
    "text": "comme",
-   "start": 39.276,
-   "end": 39.434
+   "start": 40.1,
+   "end": 40.3
   },
   {
    "text": "la",
-   "start": 39.434,
-   "end": 39.518
+   "start": 40.3,
+   "end": 40.42
   },
   {
    "text": "warfarine.",
-   "start": 39.518,
-   "end": 40.247
+   "start": 40.42,
+   "end": 40.92
   },
   {
    "text": "Sans",
-   "start": 40.585,
-   "end": 40.767
+   "start": 41.38,
+   "end": 41.6
   },
   {
    "text": "traitement,",
-   "start": 40.767,
-   "end": 41.301
+   "start": 41.6,
+   "end": 42.1
   },
   {
    "text": "il",
-   "start": 41.629,
-   "end": 41.738
+   "start": 42.26,
+   "end": 42.42
   },
   {
    "text": "est",
-   "start": 41.738,
-   "end": 41.762
+   "start": 42.42,
+   "end": 42.62
   },
   {
    "text": "autour",
-   "start": 41.762,
-   "end": 42.102
+   "start": 42.62,
+   "end": 42.84
   },
   {
    "text": "de",
-   "start": 42.102,
-   "end": 42.248
+   "start": 42.84,
+   "end": 43.12
   },
   {
    "text": "un",
-   "start": 42.248,
-   "end": 42.393
+   "start": 43.12,
+   "end": 43.3
   },
   {
    "text": "virgule",
-   "start": 42.393,
-   "end": 42.684
+   "start": 43.3,
+   "end": 43.3
   },
   {
    "text": "zéro.",
-   "start": 42.685,
-   "end": 43.073
+   "start": 43.3,
+   "end": 43.92
   },
   {
    "text": "Sous",
-   "start": 43.402,
-   "end": 43.644
+   "start": 44.26,
+   "end": 44.54
   },
   {
    "text": "AVK,",
-   "start": 43.644,
-   "end": 44.166
+   "start": 44.54,
+   "end": 45.0
   },
   {
    "text": "la",
-   "start": 44.506,
-   "end": 44.627
+   "start": 45.28,
+   "end": 45.5
   },
   {
    "text": "cible",
-   "start": 44.627,
-   "end": 44.894
+   "start": 45.5,
+   "end": 45.72
   },
   {
    "text": "est",
-   "start": 44.894,
-   "end": 44.919
+   "start": 45.72,
+   "end": 45.86
   },
   {
    "text": "le",
-   "start": 44.919,
-   "end": 44.991
+   "start": 45.86,
+   "end": 46.02
   },
   {
    "text": "plus",
-   "start": 44.991,
-   "end": 45.113
+   "start": 46.02,
+   "end": 46.2
   },
   {
    "text": "souvent",
-   "start": 45.113,
-   "end": 45.477
+   "start": 46.2,
+   "end": 46.5
   },
   {
    "text": "entre",
-   "start": 45.477,
-   "end": 45.768
+   "start": 46.5,
+   "end": 46.8
   },
   {
    "text": "deux",
-   "start": 45.768,
-   "end": 45.926
+   "start": 46.8,
+   "end": 47.12
   },
   {
    "text": "et",
-   "start": 45.926,
-   "end": 45.999
+   "start": 47.12,
+   "end": 47.26
   },
   {
    "text": "trois.",
-   "start": 45.999,
-   "end": 46.387
+   "start": 47.26,
+   "end": 47.76
   },
   {
    "text": "Trop",
-   "start": 46.786,
-   "end": 47.029
+   "start": 48.06,
+   "end": 48.28
   },
   {
-   "text": "haut :",
-   "start": 47.029,
-   "end": 47.248
+   "text": "haut :",
+   "start": 48.28,
+   "end": 48.58
   },
   {
    "text": "risque",
-   "start": 47.575,
-   "end": 47.854
+   "start": 48.92,
+   "end": 49.08
   },
   {
    "text": "d'hémorragie.",
-   "start": 47.854,
-   "end": 48.51
+   "start": 49.08,
+   "end": 49.76
   },
   {
    "text": "Trop",
-   "start": 48.886,
-   "end": 49.068
+   "start": 50.04,
+   "end": 50.28
   },
   {
-   "text": "bas :",
-   "start": 49.068,
-   "end": 49.311
+   "text": "bas :",
+   "start": 50.28,
+   "end": 50.52
   },
   {
    "text": "risque",
-   "start": 49.76,
-   "end": 50.039
+   "start": 50.88,
+   "end": 51.0
   },
   {
    "text": "de",
-   "start": 50.039,
-   "end": 50.148
+   "start": 51.0,
+   "end": 51.26
   },
   {
    "text": "caillot.",
-   "start": 50.148,
-   "end": 50.609
+   "start": 51.26,
+   "end": 51.423
   },
   {
    "text": "Le",
-   "start": 51.522,
-   "end": 51.706
+   "start": 52.26,
+   "end": 52.62
   },
   {
    "text": "trait,",
-   "start": 51.706,
-   "end": 52.073
+   "start": 52.62,
+   "end": 52.88
   },
   {
    "text": "le",
-   "start": 52.343,
-   "end": 52.478
+   "start": 53.04,
+   "end": 53.26
   },
   {
    "text": "TP,",
-   "start": 52.478,
-   "end": 52.931
+   "start": 53.26,
+   "end": 53.58
   },
   {
-   "text": "l'INR :",
-   "start": 53.238,
-   "end": 53.936
+   "text": "l'INR :",
+   "start": 53.8,
+   "end": 54.56
   },
   {
    "text": "tu",
-   "start": 54.255,
-   "end": 54.39
+   "start": 54.78,
+   "end": 54.96
   },
   {
    "text": "as",
-   "start": 54.39,
-   "end": 54.426
+   "start": 54.96,
+   "end": 55.02
   },
   {
    "text": "les",
-   "start": 54.426,
-   "end": 54.512
+   "start": 55.02,
+   "end": 55.14
   },
   {
    "text": "bases.",
-   "start": 54.512,
-   "end": 54.941
+   "start": 55.14,
+   "end": 55.4
   },
   {
    "text": "Prochaine",
-   "start": 55.308,
-   "end": 55.663
+   "start": 55.74,
+   "end": 56.12
   },
   {
-   "text": "vidéo :",
-   "start": 55.663,
-   "end": 56.153
+   "text": "vidéo :",
+   "start": 56.12,
+   "end": 56.5
   },
   {
    "text": "le",
-   "start": 56.472,
-   "end": 56.546
+   "start": 56.8,
+   "end": 57.0
   },
   {
    "text": "TCA,",
-   "start": 56.546,
-   "end": 57.097
+   "start": 57.0,
+   "end": 57.42
   },
   {
    "text": "toujours",
-   "start": 57.416,
-   "end": 57.722
+   "start": 57.82,
+   "end": 57.94
   },
   {
    "text": "dans",
-   "start": 57.722,
-   "end": 57.82
+   "start": 57.94,
+   "end": 58.08
   },
   {
    "text": "le",
-   "start": 57.82,
-   "end": 57.906
+   "start": 58.08,
+   "end": 58.22
   },
   {
    "text": "tube",
-   "start": 57.906,
-   "end": 58.09
+   "start": 58.22,
+   "end": 58.32
   },
   {
    "text": "bleu.",
-   "start": 58.09,
-   "end": 58.384
+   "start": 58.32,
+   "end": 58.58
   }
  ]
 }

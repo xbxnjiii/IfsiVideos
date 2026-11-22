@@ -2,7 +2,7 @@
 
 Demandé : « la vidéo pour le tube bleu comme les précédentes » (contenu complété par l'agent, pas de tableau fourni). Une
 seule vidéo aurait dépassé 60 s → 2 vidéos qui tiennent seules (directives Instagram : sujet + enjeu dès l'image 0,
-pastille LE TUBE BLEU, compteur n/3, sans appel à l'action, sans barre de progression). Voix gratuite edge-tts d'abord.
+pastille LE TUBE BLEU, compteur n/3, sans appel à l'action, sans barre de progression). Voix Laura après validation (1 009 · 1 008 · 1 113 crédits).
 On ne dit pas « 9 sang : 1 citrate » (retiré à la demande dans la n° 61) : « jusqu'au trait » suffit.
 
 ## n° 75 — TP et INR (≈ 62 s)

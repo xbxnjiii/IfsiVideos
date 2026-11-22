@@ -759,15 +759,17 @@ script), « en France » / « le 15 (ou le numéro d'urgence de ton pays) ». Ca
   France (0,5 g/L ; 0,2 en permis probatoire ; Code de la route R234-1), élimination ≈ 0,10 – 0,15 g/L/h, > 3 g/L coma,
   hypoglycémie. Voix : Whisper entend « fluorure » « flux aurure » (amorcé, il l'entend bien) ; « amaigrissement » entendu
   « amélioration » → « une perte de poids ».
+- **Le tube jaune en série courte** (demandé : « pareil pour le tube jaune » + la liste complète des analyses) : plan de 21
+  vidéos proposé dans `docs/lpi/plan-tube-jaune-serie.md`, à valider.
 - **Le tube bleu (citrate)** (demandé : « la vidéo pour le tube bleu comme les précédentes », contenu complété par l'agent ;
   une seule vidéo dépassait 60 s → 3 vidéos ; storyboard `docs/lpi/storyboard-tube-bleu.md`). `Tube-Bleu-TP-INR` (n° 75,
-  ≈ 62 s, voix gratuite d'abord) : « Le tube bleu, c'est la coagulation. S'il est mal rempli, le résultat est faux… et ton
+  ≈ 63 s, voix Laura après validation (1 009 crédits)) : « Le tube bleu, c'est la coagulation. S'il est mal rempli, le résultat est faux… et ton
   patient peut saigner. », remplissage jusqu'au trait (citrate, sinon temps faussement allongés), TP 70 – 100 % (bas : foie,
   anticoagulant), INR (AVK, ≈ 1 sans traitement, cible le plus souvent 2 – 3 ; valve mécanique plus haute à l'écran).
-  `Tube-Bleu-TCA` (n° 76, ≈ 57 s, voix gratuite d'abord) : « Sous héparine, un seul chiffre dit si la dose est bonne : le
+  `Tube-Bleu-TCA` (n° 76, ≈ 58 s, voix Laura après validation (1 008 crédits ; Whisper entend « sous héparine » comme « sous Zéparine » sans amorce, net avec)) : « Sous héparine, un seul chiffre dit si la dose est bonne : le
   TCA… », TCA (rapport patient / témoin < 1,2 ; héparine souvent 1,5 – 2,5 selon le protocole ; HBPM → anti-Xa à l'écran),
   fibrinogène 2 – 4 g/L, D-dimères < 500 µg/L (seuil âge × 10 après 50 ans à l'écran). Fin : « Prochaine vidéo : l'anti-Xa et les facteurs
-  de la coagulation » (≈ 59 s). `Tube-Bleu-Facteurs` (n° 77, ≈ 64 s, voix gratuite d'abord, demandée : « il manque anti-Xa, les
+  de la coagulation » (≈ 59 s). `Tube-Bleu-Facteurs` (n° 77, ≈ 64 s, voix Laura après validation (1 113 crédits), demandée : « il manque anti-Xa, les
   protéines C et S, antithrombine et facteurs de coagulation ») : « Une phlébite à vingt-cinq ans, sans raison ? … un frein de
   la coagulation qui manque. », anti-Xa (HBPM, insuffisant rénal / grossesse, au pic 3 – 4 h après l'injection, cible selon la
   molécule), antithrombine (frein principal, 80 – 120 %, l'héparine agit grâce à elle), protéines C et S (freins ; déficit →
@@ -780,7 +782,7 @@ script), « en France » / « le 15 (ou le numéro d'urgence de ton pays) ». Ca
 ## Voix ElevenLabs « Laura » (choisie par le propriétaire pour les nouvelles vidéos)
 
 - Connecteur ElevenLabs : voix `Laura` (`MmafIMKg28Wr0yMh8CEB`), modèle `eleven_v4` ; l'ancien flow `6O4tHaBowSG52722wkdC` n'est plus accessible
-  (« You do not have access to this template », rien de facturé) → flow `BrySoMOS2i2Sgfputx9I` (n° 66 à 74). Les 6 prises
+  (« You do not have access to this template », rien de facturé) → flow `BrySoMOS2i2Sgfputx9I` (n° 66 à 77). Les 6 prises
   du tube violet ont été lancées d'un coup (une par vidéo, 6 022 crédits) ; `check:voice` coupe parfois le début d'une
   partie (« Un : c'est quoi ? » absent) : transcrire la prise brute avant de conclure qu'un mot manque.
   `creative_generate_speech` avec **tout le texte en une fois**. Balises de jeu `[amused]`, `[sarcastic]`,
