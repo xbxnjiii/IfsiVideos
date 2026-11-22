@@ -77,6 +77,7 @@ pas de logiciel de montage, pas de banque d'images.
 | 64 | Série les tubes : le tube jaune (2), le bilan rénal : urée, créatinine, DFG et ses stades (voix Laura) | `Tube-Jaune-Renal` | [voix/64-tube-jaune-renal.script.json](voix/64-tube-jaune-renal.script.json) | [storyboard](docs/lpi/storyboard-tube-jaune-renal.md) |
 | 65 | Série les tubes : le tube de purge (bouchon blanc), pourquoi et quand (voix Laura, directives Instagram) | `Tube-Purge` | [voix/65-tube-purge.script.json](voix/65-tube-purge.script.json) | [storyboard](docs/lpi/storyboard-tube-purge.md) |
 | 66 | Série les tubes : l'ordre des tubes en 46 s (l'ordre seul, aiguille, retournements ; voix gratuite, directives Instagram) | `Ordre-Tubes` | [voix/66-ordre-tubes.script.json](voix/66-ordre-tubes.script.json) | [storyboard](docs/lpi/storyboard-ordre-tubes.md) |
+| 67 | Série le tube violet : la NFS 1/2, les globules rouges en 54 s (hématies, hémoglobine, hématocrite, VGM + normes ; voix gratuite, directives Instagram) | `NFS-Globules-Rouges` | [voix/67-nfs-globules-rouges.script.json](voix/67-nfs-globules-rouges.script.json) | [storyboard](docs/lpi/storyboard-tube-violet-serie.md) |
 
 ## Utilisation
 

@@ -1,0 +1,32 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Le tube violet, c'est la {NFS|N F S}. Quatre lignes parlent des globules rouges… et une anémie peut s'y cacher. Tu sais les lire ?"
+ },
+ {
+  "id": "hematies",
+  "rate": "+0%",
+  "text": "Un : les hématies. Ce sont les globules rouges. Elles transportent l'oxygène des poumons vers tout le corps, et elles vivent environ cent vingt jours."
+ },
+ {
+  "id": "hemoglobine",
+  "rate": "+0%",
+  "text": "Deux : l'hémoglobine. C'est la protéine qui porte l'oxygène, dans chaque globule rouge. Quand elle est trop basse, c'est une anémie."
+ },
+ {
+  "id": "hematocrite",
+  "rate": "+0%",
+  "text": "Trois : l'hématocrite. C'est la place des globules rouges dans le volume du sang. Trop haut, on pense à une polyglobulie : il y a trop de globules rouges."
+ },
+ {
+  "id": "vgm",
+  "rate": "+0%",
+  "text": "Quatre : le {VGM|V G M}, le volume globulaire moyen. C'est la taille moyenne des globules rouges. Trop petits, on pense souvent à un manque de fer."
+ },
+ {
+  "id": "fin",
+  "rate": "+2%",
+  "text": "Hématies, hémoglobine, hématocrite, {VGM|V G M} : voilà les quatre lignes des globules rouges. Dans la partie deux, on passe aux globules blancs et aux plaquettes."
+ }
+]

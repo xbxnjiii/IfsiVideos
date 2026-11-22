@@ -718,6 +718,14 @@ script), « en France » / « le 15 (ou le numéro d'urgence de ton pays) ». Ca
   jaune 5, vert / violet / gris 8 – 10 ; rouge et hémocultures à l'écran seulement), « suis le protocole de ton
   établissement ». **On ne dit pas à quoi sert chaque tube** (demandé : « dis juste l'ordre », chaque tube a sa vidéo).
   Storyboard `docs/lpi/storyboard-ordre-tubes.md`.
+- **Série « Le tube violet » courte** (demandée : la NFS, l'HbA1c, le groupe, la charge virale « et complète si j'ai oublié » ;
+  directives Instagram : 45 – 60 s, pastille « LE TUBE VIOLET · … » + compteur n/N dès l'image 0, sans appel à l'action ;
+  storyboard `docs/lpi/storyboard-tube-violet-serie.md`). La NFS ne tient pas en 60 s → **2 parties**. `NFS-Globules-Rouges`
+  (n° 67, ≈ 54 s, voix gratuite d'abord) : « Le tube violet, c'est la NFS. Quatre lignes parlent des globules rouges… et une
+  anémie peut s'y cacher. Tu sais les lire ? », puis « Un : les hématies… Quatre : le VGM » (scènes de la n° 62 recalées,
+  cartes NORMES), ajout : VGM bas = souvent un manque de fer ; fin = fiche cochée + carte « À SUIVRE · NFS 2/2 ».
+  **Correction à signaler dans le texte fourni** : c'est l'excès de lymphocytes (lymphocytose) qui évoque une infection
+  virale ; la lymphopénie se voit dans l'immunodépression (VIH, corticoïdes…).
 
 ## Voix ElevenLabs « Laura » (choisie par le propriétaire pour les nouvelles vidéos)
 

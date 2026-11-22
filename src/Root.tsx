@@ -134,6 +134,8 @@ import {TubePurge, TubePurgeProps} from './videos/tube-purge/TubePurge';
 import {TL as TUBE_PURGE_TL} from './videos/tube-purge/timeline';
 import {OrdreTubes, OrdreTubesProps} from './videos/ordre-tubes/OrdreTubes';
 import {TL as ORDRE_TUBES_TL} from './videos/ordre-tubes/timeline';
+import {NfsGlobulesRouges, NfsGlobulesRougesProps} from './videos/nfs-globules-rouges/NfsGlobulesRouges';
+import {TL as NFS_GLOBULES_ROUGES_TL} from './videos/nfs-globules-rouges/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -790,6 +792,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies OrdreTubesProps}
+		/>
+		{/* 67 · NFS-Globules-Rouges */}
+		<Composition
+			id="NFS-Globules-Rouges"
+			component={NfsGlobulesRouges}
+			durationInFrames={NFS_GLOBULES_ROUGES_TL.total}
+			fps={NFS_GLOBULES_ROUGES_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies NfsGlobulesRougesProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition
