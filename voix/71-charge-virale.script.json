@@ -1,0 +1,32 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Charge virale indétectable : avec le {VIH|V I H}, ça veut dire que le virus ne se transmet plus sexuellement. Et c'est le tube violet qui la mesure."
+ },
+ {
+  "id": "quoi",
+  "rate": "+0%",
+  "text": "Un : la charge virale, c'est la quantité de virus dans le sang. On la compte en copies par millilitre. À ne pas confondre avec la sérologie, qui cherche les anticorps."
+ },
+ {
+  "id": "vih",
+  "rate": "+0%",
+  "text": "Deux : le {VIH|V I H}. La charge virale montre si le traitement marche. Le but : qu'elle soit indétectable, sous cinquante copies par millilitre. Et indétectable, ça veut dire intransmissible."
+ },
+ {
+  "id": "vhb",
+  "rate": "+0%",
+  "text": "Trois : l'hépatite B. La charge virale permet de décider s'il faut traiter, puis de vérifier que le traitement marche."
+ },
+ {
+  "id": "vhc",
+  "rate": "+0%",
+  "text": "Quatre : l'hépatite C. Si la sérologie est positive, la charge virale montre si le virus est encore là. Et après le traitement, elle confirme la guérison."
+ },
+ {
+  "id": "fin",
+  "rate": "+2%",
+  "text": "Le virus est-il là ? Le traitement marche-t-il ? Est-ce guéri ? C'est la charge virale qui répond à tout ça. Prochaine vidéo : les médicaments anti-rejet."
+ }
+]

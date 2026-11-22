@@ -1,0 +1,788 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 56.798,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.05,
+   "end": 7.333
+  },
+  {
+   "id": "quoi",
+   "start": 8.306,
+   "end": 17.093
+  },
+  {
+   "id": "vih",
+   "start": 18.046,
+   "end": 29.558
+  },
+  {
+   "id": "vhb",
+   "start": 30.512,
+   "end": 36.875
+  },
+  {
+   "id": "vhc",
+   "start": 37.842,
+   "end": 46.83
+  },
+  {
+   "id": "fin",
+   "start": 47.824,
+   "end": 56.464
+  }
+ ],
+ "words": [
+  {
+   "text": "Charge",
+   "start": 0.05,
+   "end": 0.447
+  },
+  {
+   "text": "virale",
+   "start": 0.447,
+   "end": 0.735
+  },
+  {
+   "text": "indétectable :",
+   "start": 0.735,
+   "end": 1.42
+  },
+  {
+   "text": "avec",
+   "start": 1.733,
+   "end": 1.901
+  },
+  {
+   "text": "le",
+   "start": 1.901,
+   "end": 2.009
+  },
+  {
+   "text": "VIH,",
+   "start": 2.009,
+   "end": 2.742
+  },
+  {
+   "text": "ça",
+   "start": 3.055,
+   "end": 3.175
+  },
+  {
+   "text": "veut",
+   "start": 3.175,
+   "end": 3.271
+  },
+  {
+   "text": "dire",
+   "start": 3.271,
+   "end": 3.427
+  },
+  {
+   "text": "que",
+   "start": 3.427,
+   "end": 3.524
+  },
+  {
+   "text": "le",
+   "start": 3.524,
+   "end": 3.596
+  },
+  {
+   "text": "virus",
+   "start": 3.596,
+   "end": 3.932
+  },
+  {
+   "text": "ne",
+   "start": 3.932,
+   "end": 4.028
+  },
+  {
+   "text": "se",
+   "start": 4.028,
+   "end": 4.112
+  },
+  {
+   "text": "transmet",
+   "start": 4.112,
+   "end": 4.473
+  },
+  {
+   "text": "plus",
+   "start": 4.473,
+   "end": 4.653
+  },
+  {
+   "text": "sexuellement.",
+   "start": 4.653,
+   "end": 5.351
+  },
+  {
+   "text": "Et",
+   "start": 5.687,
+   "end": 5.819
+  },
+  {
+   "text": "c'est",
+   "start": 5.819,
+   "end": 5.927
+  },
+  {
+   "text": "le",
+   "start": 5.927,
+   "end": 6.023
+  },
+  {
+   "text": "tube",
+   "start": 6.023,
+   "end": 6.287
+  },
+  {
+   "text": "violet",
+   "start": 6.287,
+   "end": 6.6
+  },
+  {
+   "text": "qui",
+   "start": 6.6,
+   "end": 6.732
+  },
+  {
+   "text": "la",
+   "start": 6.732,
+   "end": 6.816
+  },
+  {
+   "text": "mesure.",
+   "start": 6.816,
+   "end": 7.333
+  },
+  {
+   "text": "Un :",
+   "start": 8.306,
+   "end": 8.531
+  },
+  {
+   "text": "la",
+   "start": 8.831,
+   "end": 8.906
+  },
+  {
+   "text": "charge",
+   "start": 8.906,
+   "end": 9.206
+  },
+  {
+   "text": "virale,",
+   "start": 9.206,
+   "end": 9.656
+  },
+  {
+   "text": "c'est",
+   "start": 9.931,
+   "end": 10.043
+  },
+  {
+   "text": "la",
+   "start": 10.043,
+   "end": 10.118
+  },
+  {
+   "text": "quantité",
+   "start": 10.118,
+   "end": 10.518
+  },
+  {
+   "text": "de",
+   "start": 10.518,
+   "end": 10.606
+  },
+  {
+   "text": "virus",
+   "start": 10.606,
+   "end": 10.956
+  },
+  {
+   "text": "dans",
+   "start": 10.956,
+   "end": 11.069
+  },
+  {
+   "text": "le",
+   "start": 11.069,
+   "end": 11.156
+  },
+  {
+   "text": "sang.",
+   "start": 11.156,
+   "end": 11.468
+  },
+  {
+   "text": "On",
+   "start": 11.831,
+   "end": 11.918
+  },
+  {
+   "text": "la",
+   "start": 11.918,
+   "end": 12.031
+  },
+  {
+   "text": "compte",
+   "start": 12.031,
+   "end": 12.268
+  },
+  {
+   "text": "en",
+   "start": 12.268,
+   "end": 12.331
+  },
+  {
+   "text": "copies",
+   "start": 12.331,
+   "end": 12.668
+  },
+  {
+   "text": "par",
+   "start": 12.668,
+   "end": 12.868
+  },
+  {
+   "text": "millilitre.",
+   "start": 12.868,
+   "end": 13.569
+  },
+  {
+   "text": "À",
+   "start": 13.906,
+   "end": 14.043
+  },
+  {
+   "text": "ne",
+   "start": 14.043,
+   "end": 14.143
+  },
+  {
+   "text": "pas",
+   "start": 14.143,
+   "end": 14.243
+  },
+  {
+   "text": "confondre",
+   "start": 14.243,
+   "end": 14.731
+  },
+  {
+   "text": "avec",
+   "start": 14.731,
+   "end": 14.918
+  },
+  {
+   "text": "la",
+   "start": 14.918,
+   "end": 15.006
+  },
+  {
+   "text": "sérologie,",
+   "start": 15.006,
+   "end": 15.656
+  },
+  {
+   "text": "qui",
+   "start": 15.944,
+   "end": 16.056
+  },
+  {
+   "text": "cherche",
+   "start": 16.056,
+   "end": 16.331
+  },
+  {
+   "text": "les",
+   "start": 16.331,
+   "end": 16.431
+  },
+  {
+   "text": "anticorps.",
+   "start": 16.431,
+   "end": 17.093
+  },
+  {
+   "text": "Deux :",
+   "start": 18.046,
+   "end": 18.458
+  },
+  {
+   "text": "le",
+   "start": 18.821,
+   "end": 18.958
+  },
+  {
+   "text": "VIH.",
+   "start": 18.958,
+   "end": 19.746
+  },
+  {
+   "text": "La",
+   "start": 20.133,
+   "end": 20.258
+  },
+  {
+   "text": "charge",
+   "start": 20.258,
+   "end": 20.596
+  },
+  {
+   "text": "virale",
+   "start": 20.596,
+   "end": 20.996
+  },
+  {
+   "text": "montre",
+   "start": 20.996,
+   "end": 21.346
+  },
+  {
+   "text": "si",
+   "start": 21.346,
+   "end": 21.446
+  },
+  {
+   "text": "le",
+   "start": 21.446,
+   "end": 21.521
+  },
+  {
+   "text": "traitement",
+   "start": 21.521,
+   "end": 21.909
+  },
+  {
+   "text": "marche.",
+   "start": 21.909,
+   "end": 22.396
+  },
+  {
+   "text": "Le",
+   "start": 22.783,
+   "end": 22.946
+  },
+  {
+   "text": "but :",
+   "start": 22.946,
+   "end": 23.221
+  },
+  {
+   "text": "qu'elle",
+   "start": 23.446,
+   "end": 23.596
+  },
+  {
+   "text": "soit",
+   "start": 23.596,
+   "end": 23.746
+  },
+  {
+   "text": "indétectable,",
+   "start": 23.746,
+   "end": 24.596
+  },
+  {
+   "text": "sous",
+   "start": 24.883,
+   "end": 25.033
+  },
+  {
+   "text": "cinquante",
+   "start": 25.033,
+   "end": 25.446
+  },
+  {
+   "text": "copies",
+   "start": 25.446,
+   "end": 25.746
+  },
+  {
+   "text": "par",
+   "start": 25.746,
+   "end": 25.921
+  },
+  {
+   "text": "millilitre.",
+   "start": 25.921,
+   "end": 26.571
+  },
+  {
+   "text": "Et",
+   "start": 26.921,
+   "end": 27.108
+  },
+  {
+   "text": "indétectable,",
+   "start": 27.108,
+   "end": 27.946
+  },
+  {
+   "text": "ça",
+   "start": 28.233,
+   "end": 28.358
+  },
+  {
+   "text": "veut",
+   "start": 28.358,
+   "end": 28.459
+  },
+  {
+   "text": "dire",
+   "start": 28.459,
+   "end": 28.646
+  },
+  {
+   "text": "intransmissible.",
+   "start": 28.646,
+   "end": 29.558
+  },
+  {
+   "text": "Trois :",
+   "start": 30.512,
+   "end": 30.875
+  },
+  {
+   "text": "l'hépatite",
+   "start": 31.238,
+   "end": 31.775
+  },
+  {
+   "text": "B.",
+   "start": 31.775,
+   "end": 32.087
+  },
+  {
+   "text": "La",
+   "start": 32.425,
+   "end": 32.612
+  },
+  {
+   "text": "charge",
+   "start": 32.612,
+   "end": 32.9
+  },
+  {
+   "text": "virale",
+   "start": 32.9,
+   "end": 33.3
+  },
+  {
+   "text": "permet",
+   "start": 33.3,
+   "end": 33.575
+  },
+  {
+   "text": "de",
+   "start": 33.575,
+   "end": 33.675
+  },
+  {
+   "text": "décider",
+   "start": 33.675,
+   "end": 34.087
+  },
+  {
+   "text": "s'il",
+   "start": 34.087,
+   "end": 34.263
+  },
+  {
+   "text": "faut",
+   "start": 34.263,
+   "end": 34.362
+  },
+  {
+   "text": "traiter,",
+   "start": 34.362,
+   "end": 34.825
+  },
+  {
+   "text": "puis",
+   "start": 35.163,
+   "end": 35.288
+  },
+  {
+   "text": "de",
+   "start": 35.288,
+   "end": 35.375
+  },
+  {
+   "text": "vérifier",
+   "start": 35.375,
+   "end": 35.837
+  },
+  {
+   "text": "que",
+   "start": 35.837,
+   "end": 35.938
+  },
+  {
+   "text": "le",
+   "start": 35.938,
+   "end": 36.0
+  },
+  {
+   "text": "traitement",
+   "start": 36.013,
+   "end": 36.388
+  },
+  {
+   "text": "marche.",
+   "start": 36.388,
+   "end": 36.875
+  },
+  {
+   "text": "Quatre :",
+   "start": 37.842,
+   "end": 38.317
+  },
+  {
+   "text": "l'hépatite",
+   "start": 38.605,
+   "end": 39.08
+  },
+  {
+   "text": "C.",
+   "start": 39.08,
+   "end": 39.442
+  },
+  {
+   "text": "Si",
+   "start": 39.792,
+   "end": 39.992
+  },
+  {
+   "text": "la",
+   "start": 39.992,
+   "end": 40.092
+  },
+  {
+   "text": "sérologie",
+   "start": 40.092,
+   "end": 40.642
+  },
+  {
+   "text": "est",
+   "start": 40.642,
+   "end": 40.68
+  },
+  {
+   "text": "positive,",
+   "start": 40.68,
+   "end": 41.342
+  },
+  {
+   "text": "la",
+   "start": 41.654,
+   "end": 41.73
+  },
+  {
+   "text": "charge",
+   "start": 41.73,
+   "end": 42.055
+  },
+  {
+   "text": "virale",
+   "start": 42.055,
+   "end": 42.392
+  },
+  {
+   "text": "montre",
+   "start": 42.392,
+   "end": 42.742
+  },
+  {
+   "text": "si",
+   "start": 42.742,
+   "end": 42.855
+  },
+  {
+   "text": "le",
+   "start": 42.855,
+   "end": 42.917
+  },
+  {
+   "text": "virus",
+   "start": 42.917,
+   "end": 43.255
+  },
+  {
+   "text": "est",
+   "start": 43.255,
+   "end": 43.292
+  },
+  {
+   "text": "encore",
+   "start": 43.292,
+   "end": 43.642
+  },
+  {
+   "text": "là.",
+   "start": 43.642,
+   "end": 43.892
+  },
+  {
+   "text": "Et",
+   "start": 44.242,
+   "end": 44.404
+  },
+  {
+   "text": "après",
+   "start": 44.404,
+   "end": 44.63
+  },
+  {
+   "text": "le",
+   "start": 44.63,
+   "end": 44.717
+  },
+  {
+   "text": "traitement,",
+   "start": 44.717,
+   "end": 45.255
+  },
+  {
+   "text": "elle",
+   "start": 45.567,
+   "end": 45.705
+  },
+  {
+   "text": "confirme",
+   "start": 45.705,
+   "end": 46.154
+  },
+  {
+   "text": "la",
+   "start": 46.154,
+   "end": 46.242
+  },
+  {
+   "text": "guérison.",
+   "start": 46.242,
+   "end": 46.83
+  },
+  {
+   "text": "Le",
+   "start": 47.824,
+   "end": 47.934
+  },
+  {
+   "text": "virus",
+   "start": 47.934,
+   "end": 48.302
+  },
+  {
+   "text": "est-il",
+   "start": 48.302,
+   "end": 48.547
+  },
+  {
+   "text": "là ?",
+   "start": 48.547,
+   "end": 48.792
+  },
+  {
+   "text": "Le",
+   "start": 49.136,
+   "end": 49.332
+  },
+  {
+   "text": "traitement",
+   "start": 49.332,
+   "end": 49.712
+  },
+  {
+   "text": "marche-t-il ?",
+   "start": 49.712,
+   "end": 50.362
+  },
+  {
+   "text": "Est-ce",
+   "start": 50.692,
+   "end": 50.913
+  },
+  {
+   "text": "guéri ?",
+   "start": 50.913,
+   "end": 51.342
+  },
+  {
+   "text": "C'est",
+   "start": 51.673,
+   "end": 51.857
+  },
+  {
+   "text": "la",
+   "start": 51.857,
+   "end": 51.943
+  },
+  {
+   "text": "charge",
+   "start": 51.943,
+   "end": 52.249
+  },
+  {
+   "text": "virale",
+   "start": 52.249,
+   "end": 52.641
+  },
+  {
+   "text": "qui",
+   "start": 52.641,
+   "end": 52.776
+  },
+  {
+   "text": "répond",
+   "start": 52.776,
+   "end": 53.033
+  },
+  {
+   "text": "à",
+   "start": 53.033,
+   "end": 53.095
+  },
+  {
+   "text": "tout",
+   "start": 53.095,
+   "end": 53.229
+  },
+  {
+   "text": "ça.",
+   "start": 53.229,
+   "end": 53.536
+  },
+  {
+   "text": "Prochaine",
+   "start": 53.915,
+   "end": 54.319
+  },
+  {
+   "text": "vidéo :",
+   "start": 54.319,
+   "end": 54.809
+  },
+  {
+   "text": "les",
+   "start": 55.226,
+   "end": 55.287
+  },
+  {
+   "text": "médicaments",
+   "start": 55.287,
+   "end": 55.777
+  },
+  {
+   "text": "anti-rejet.",
+   "start": 55.777,
+   "end": 56.464
+  }
+ ]
+}

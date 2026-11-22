@@ -142,6 +142,8 @@ import {Hba1cVideo, Hba1cVideoProps} from './videos/hba1c/Hba1cVideo';
 import {TL as HBA1C_TL} from './videos/hba1c/timeline';
 import {GroupeSanguin, GroupeSanguinProps} from './videos/groupe-sanguin/GroupeSanguin';
 import {TL as GROUPE_SANGUIN_TL} from './videos/groupe-sanguin/timeline';
+import {ChargeVirale, ChargeViraleProps} from './videos/charge-virale/ChargeVirale';
+import {TL as CHARGE_VIRALE_TL} from './videos/charge-virale/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -838,6 +840,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies GroupeSanguinProps}
+		/>
+		{/* 71 · Charge-Virale */}
+		<Composition
+			id="Charge-Virale"
+			component={ChargeVirale}
+			durationInFrames={CHARGE_VIRALE_TL.total}
+			fps={CHARGE_VIRALE_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies ChargeViraleProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition

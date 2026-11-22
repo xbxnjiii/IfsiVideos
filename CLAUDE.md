@@ -736,6 +736,10 @@ script), « en France » / « le 15 (ou le numéro d'urgence de ton pays) ». Ca
   peut être mortelle. Alors pourquoi deux prises de sang, et c'est quoi les RAI ? », ABO, rhésus, 2 déterminations (+ identité,
   étiquette devant le patient), RAI (en général valables 3 jours), fin « transfusion sécurisée » + « prochaine vidéo : la charge
   virale ». Briques locales `TypedCell` (marqueurs A / B / D), `Antibody`, `BloodBag`, `Bracelet`.
+  `Charge-Virale` (n° 71, ≈ 60 s, voix gratuite d'abord) : « Charge virale indétectable : avec le VIH, ça veut dire que le
+  virus ne se transmet plus sexuellement… » (écran qui descend jusqu'à INDÉTECTABLE, tampon I = I), c'est quoi (copies/mL ≠
+  sérologie), VIH (< 50 copies/mL), hépatite B, hépatite C (guérison), fin + « prochaine vidéo : les médicaments anti-rejet ».
+  Voix : un mot seul en début de phrase (« Indétectable. ») part en anglais ; « La charge virale répond. » part en espagnol.
   **Correction à signaler dans le texte fourni** : c'est l'excès de lymphocytes (lymphocytose) qui évoque une infection
   virale ; la lymphopénie se voit dans l'immunodépression (VIH, corticoïdes…).
 

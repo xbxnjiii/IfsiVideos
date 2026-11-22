@@ -11,7 +11,8 @@ l'image 0, sans appel à l'action. La v2 longue (n° 62, 3 min 17) reste dans le
 | 68 | `NFS-Globules-Blancs` (≈ 60 s) | NFS 2/2 : plaquettes (150 000 – 400 000, thrombopénie = risque d'hémorragie), leucocytes (4 000 – 10 000 ; trop = infection, leucopénie = se défend mal), PNN 1 500 – 7 000, PNE 50 – 500, PNB 0 – 200, lymphocytes 1 500 – 4 000 (lymphocytose = d'abord un virus), monocytes 200 – 950 ; récap + « prochaine vidéo : l'hémoglobine glyquée ». |
 | 69 | `HbA1c` (≈ 57 s) | la glycémie = une photo, l'HbA1c = le film de 3 mois ; le sucre se colle à l'hémoglobine ; globule rouge ≈ 120 jours → moyenne des 2 – 3 derniers mois ; objectif type 2 < 7 %, type 1 7 – 7,5 %, complications (yeux, reins, pieds) ; pas à jeun, ≈ tous les 3 mois, ajuster le traitement. |
 | 70 | `Groupe-Sanguin` (≈ 59 s) | une erreur de groupe peut être mortelle ; ABO (antigènes, anticorps contre ceux qu'on n'a pas), rhésus (transfusion, grossesse), 2 déterminations sur 2 prélèvements + identité / étiquette devant le patient, RAI (anticorps après transfusion / grossesse, en général valables 3 jours). |
-| 71 | Charge virale (à faire) | VIH, hépatite B, hépatite C. |
+| 71 | `Charge-Virale` (≈ 60 s) | charge virale indétectable = I = I ; quantité de virus en copies/mL ≠ sérologie (anticorps) ; VIH (traitement, < 50 copies/mL, I = I) ; hépatite B (décider de traiter, vérifier) ; hépatite C (virus encore là ? guérison). |
+| 72 | Anti-rejet (à faire) | ciclosporine, tacrolimus, évérolimus : dosage avant la prise suivante. |
 
 ## 67 · NFS 1/2 : les globules rouges
 
@@ -66,3 +67,19 @@ type 1 : texte du propriétaire.
 | fin | Groupe, rhésus, deux déterminations et des RAI récentes : la transfusion est sécurisée. Prochaine vidéo : la charge virale. | Liste cochée, tampon SÉCURISÉE, carte PROCHAINE VIDÉO. |
 
 Sources : arrêté du 15 mai 2018 (bonnes pratiques d'immuno-hématologie) ; HAS 2014 (transfusion de globules rouges).
+
+## 71 · La charge virale
+
+| Partie | Voix | Image |
+|---|---|---|
+| intro | Charge virale indétectable : avec le VIH, ça veut dire que le virus ne se transmet plus sexuellement. Et c'est le tube violet qui la mesure. | Image 0 : pastille, titre, 0/4, écran CHARGE VIRALE qui descend de 120 000 copies/mL à INDÉTECTABLE, virus qui disparaissent ; VIH, tampon I = I, tube violet. |
+| quoi | Un : la charge virale… copies par millilitre… ≠ sérologie… anticorps. | 1/4, goutte grossie où les virus se comptent, cartes « charge virale → le virus » ≠ « sérologie → les anticorps ». |
+| vih | Deux : le VIH… traitement… sous cinquante copies… intransmissible. | 2/4, courbe qui chute sous la ligne des 50 copies/mL, gélule, carte I = I. |
+| vhb | Trois : l'hépatite B… décider s'il faut traiter… vérifier. | 3/4, foie avec virus B, 2 cartes. |
+| vhc | Quatre : l'hépatite C… sérologie positive… encore là… guérison. | 4/4, foie dont les virus C disparaissent, 3 cartes, tampon GUÉRI. |
+| fin | Le virus est-il là ? Le traitement marche-t-il ? Est-ce guéri ? … Prochaine vidéo : les médicaments anti-rejet. | 3 questions cochées, carte PROCHAINE VIDÉO. |
+
+Sources : CNS / ANRS-MIE (VIH, < 50 copies/mL ; avis du CNS 2015 sur le traitement comme prévention) ; AFEF (hépatites B et C).
+Voix : « Indétectable. » seul en début d'accroche partait en anglais → « Charge virale indétectable : … » ; « aide à » était
+entendu « est à » → « permet de » ; « dit si » → « montre si » ; « La charge virale répond. » (espagnol) → « C'est la charge
+virale qui répond à tout ça. »
