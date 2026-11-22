@@ -140,6 +140,8 @@ import {NfsGlobulesBlancs, NfsGlobulesBlancsProps} from './videos/nfs-globules-b
 import {TL as NFS_GLOBULES_BLANCS_TL} from './videos/nfs-globules-blancs/timeline';
 import {Hba1cVideo, Hba1cVideoProps} from './videos/hba1c/Hba1cVideo';
 import {TL as HBA1C_TL} from './videos/hba1c/timeline';
+import {GroupeSanguin, GroupeSanguinProps} from './videos/groupe-sanguin/GroupeSanguin';
+import {TL as GROUPE_SANGUIN_TL} from './videos/groupe-sanguin/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -826,6 +828,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies Hba1cVideoProps}
+		/>
+		{/* 70 · Groupe-Sanguin */}
+		<Composition
+			id="Groupe-Sanguin"
+			component={GroupeSanguin}
+			durationInFrames={GROUPE_SANGUIN_TL.total}
+			fps={GROUPE_SANGUIN_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies GroupeSanguinProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition

@@ -1,0 +1,32 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Une seule erreur de groupe sanguin pendant une transfusion… et elle peut être mortelle. Alors pourquoi deux prises de sang, et c'est quoi les {RAI|R A I} ?"
+ },
+ {
+  "id": "abo",
+  "rate": "+0%",
+  "text": "Un : le groupe A, B, AB ou O. Il dépend des marqueurs à la surface des globules rouges, les antigènes. Et le sang a des anticorps contre ceux qu'il n'a pas."
+ },
+ {
+  "id": "rhesus",
+  "rate": "+0%",
+  "text": "Deux : le rhésus, positif ou négatif. Il compte pour la transfusion, et aussi pendant la grossesse."
+ },
+ {
+  "id": "deux",
+  "rate": "+0%",
+  "text": "Trois : en France, il faut deux déterminations, sur deux prélèvements faits à deux moments différents. Et à chaque fois, tu vérifies l'identité du patient, et tu étiquettes devant lui."
+ },
+ {
+  "id": "rai",
+  "rate": "+0%",
+  "text": "Quatre : les {RAI|R A I}, la recherche d'agglutinines irrégulières. Elles cherchent d'autres anticorps, apparus après une transfusion ou une grossesse. En général, elles sont valables trois jours avant une transfusion."
+ },
+ {
+  "id": "fin",
+  "rate": "+2%",
+  "text": "Groupe, rhésus, deux déterminations et des {RAI|R A I} récentes : la transfusion est sécurisée. Prochaine vidéo : la charge virale."
+ }
+]

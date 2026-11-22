@@ -10,7 +10,7 @@ l'image 0, sans appel à l'action. La v2 longue (n° 62, 3 min 17) reste dans le
 | 67 | `NFS-Globules-Rouges` (≈ 54 s) | NFS 1/2 : hématies (H 4,2 – 5,7 / F 4,0 – 5,3 M/mm³), hémoglobine (H 14 – 18 / F 12 – 15 g/dL, basse = anémie), hématocrite (H 40 – 52 / F 37 – 46 %, haut = polyglobulie), VGM (80 – 100 fL ; petits = souvent manque de fer) ; récap + « à suivre : NFS 2/2 ». |
 | 68 | `NFS-Globules-Blancs` (≈ 60 s) | NFS 2/2 : plaquettes (150 000 – 400 000, thrombopénie = risque d'hémorragie), leucocytes (4 000 – 10 000 ; trop = infection, leucopénie = se défend mal), PNN 1 500 – 7 000, PNE 50 – 500, PNB 0 – 200, lymphocytes 1 500 – 4 000 (lymphocytose = d'abord un virus), monocytes 200 – 950 ; récap + « prochaine vidéo : l'hémoglobine glyquée ». |
 | 69 | `HbA1c` (≈ 57 s) | la glycémie = une photo, l'HbA1c = le film de 3 mois ; le sucre se colle à l'hémoglobine ; globule rouge ≈ 120 jours → moyenne des 2 – 3 derniers mois ; objectif type 2 < 7 %, type 1 7 – 7,5 %, complications (yeux, reins, pieds) ; pas à jeun, ≈ tous les 3 mois, ajuster le traitement. |
-| 70 | Groupe + RAI (à faire) | ABO / Rhésus, 2 déterminations, RAI avant transfusion. |
+| 70 | `Groupe-Sanguin` (≈ 59 s) | une erreur de groupe peut être mortelle ; ABO (antigènes, anticorps contre ceux qu'on n'a pas), rhésus (transfusion, grossesse), 2 déterminations sur 2 prélèvements + identité / étiquette devant le patient, RAI (anticorps après transfusion / grossesse, en général valables 3 jours). |
 | 71 | Charge virale (à faire) | VIH, hépatite B, hépatite C. |
 
 ## 67 · NFS 1/2 : les globules rouges
@@ -53,3 +53,16 @@ vocabulaire médical : la voix est bonne (le mot sort aussi tel quel dans la n°
 
 Sources : HAS 2013 (cible ≤ 7 % dans le type 2, en général) ; HAS, parcours du diabète de type 2 (HbA1c tous les 3 mois) ;
 type 1 : texte du propriétaire.
+
+## 70 · Le groupe sanguin et les RAI
+
+| Partie | Voix | Image |
+|---|---|---|
+| intro | Une seule erreur de groupe sanguin pendant une transfusion… et elle peut être mortelle. Alors pourquoi deux prises de sang, et c'est quoi les RAI ? | Image 0 : pastille, titre, 0/4, poche A+ et globule du patient A+ ; la poche devient B+, barrée, tampon MORTELLE + flash ; tubes 1 et 2 ; « RAI ? ». |
+| abo | Un : le groupe A, B, AB ou O… antigènes… anticorps contre ceux qu'il n'a pas. | 1/4, 4 globules avec leurs marqueurs (A triangles roses, B carrés bleus, O sans), exemple « groupe A → anti-B ». |
+| rhesus | Deux : le rhésus… transfusion… grossesse. | 2/4, globule + (marqueur D) / −, poche O−, future maman. |
+| deux | Trois : en France, deux déterminations… identité… étiquettes devant lui. | 3/4, 2 tubes à 8 h et 14 h, bracelet vérifié, étiquette qui vole sur le tube. |
+| rai | Quatre : les RAI… d'autres anticorps… valables trois jours. | 4/4, anticorps qui s'accrochent au globule, transfusion / grossesse, carte « 3 j valables avant une transfusion », « en général (72 h) ». |
+| fin | Groupe, rhésus, deux déterminations et des RAI récentes : la transfusion est sécurisée. Prochaine vidéo : la charge virale. | Liste cochée, tampon SÉCURISÉE, carte PROCHAINE VIDÉO. |
+
+Sources : arrêté du 15 mai 2018 (bonnes pratiques d'immuno-hématologie) ; HAS 2014 (transfusion de globules rouges).

@@ -732,6 +732,10 @@ script), « en France » / « le 15 (ou le numéro d'urgence de ton pays) ». Ca
   L'hémoglobine glyquée, c'est le film de tes trois derniers mois… elle guide tout le traitement »), puis c'est quoi, pourquoi
   3 mois (120 jours), objectifs (type 2 < 7 %, type 1 7 – 7,5 %, complications), en pratique (pas à jeun, ≈ tous les 3 mois),
   fin + « prochaine vidéo : le groupe sanguin ». Titre : `*3* *mois*` (pas `*3 mois*`) ; « collé » = « colle » pour `at()`.
+  `Groupe-Sanguin` (n° 70, ≈ 59 s, voix gratuite d'abord) : « Une seule erreur de groupe sanguin pendant une transfusion…
+  peut être mortelle. Alors pourquoi deux prises de sang, et c'est quoi les RAI ? », ABO, rhésus, 2 déterminations (+ identité,
+  étiquette devant le patient), RAI (en général valables 3 jours), fin « transfusion sécurisée » + « prochaine vidéo : la charge
+  virale ». Briques locales `TypedCell` (marqueurs A / B / D), `Antibody`, `BloodBag`, `Bracelet`.
   **Correction à signaler dans le texte fourni** : c'est l'excès de lymphocytes (lymphocytose) qui évoque une infection
   virale ; la lymphopénie se voit dans l'immunodépression (VIH, corticoïdes…).
 

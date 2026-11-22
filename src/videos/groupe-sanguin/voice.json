@@ -1,0 +1,768 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 55.094,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.05,
+   "end": 6.755
+  },
+  {
+   "id": "abo",
+   "start": 7.68,
+   "end": 16.343
+  },
+  {
+   "id": "rhesus",
+   "start": 17.291,
+   "end": 23.591
+  },
+  {
+   "id": "deux",
+   "start": 24.585,
+   "end": 33.886
+  },
+  {
+   "id": "rai",
+   "start": 34.842,
+   "end": 46.08
+  },
+  {
+   "id": "fin",
+   "start": 47.032,
+   "end": 54.752
+  }
+ ],
+ "words": [
+  {
+   "text": "Une",
+   "start": 0.05,
+   "end": 0.254
+  },
+  {
+   "text": "seule",
+   "start": 0.254,
+   "end": 0.446
+  },
+  {
+   "text": "erreur",
+   "start": 0.446,
+   "end": 0.674
+  },
+  {
+   "text": "de",
+   "start": 0.674,
+   "end": 0.759
+  },
+  {
+   "text": "groupe",
+   "start": 0.759,
+   "end": 0.987
+  },
+  {
+   "text": "sanguin",
+   "start": 0.987,
+   "end": 1.372
+  },
+  {
+   "text": "pendant",
+   "start": 1.372,
+   "end": 1.6
+  },
+  {
+   "text": "une",
+   "start": 1.6,
+   "end": 1.66
+  },
+  {
+   "text": "transfusion…",
+   "start": 1.66,
+   "end": 2.297
+  },
+  {
+   "text": "et",
+   "start": 2.73,
+   "end": 2.826
+  },
+  {
+   "text": "elle",
+   "start": 2.826,
+   "end": 2.898
+  },
+  {
+   "text": "peut",
+   "start": 2.898,
+   "end": 3.006
+  },
+  {
+   "text": "être",
+   "start": 3.006,
+   "end": 3.223
+  },
+  {
+   "text": "mortelle.",
+   "start": 3.223,
+   "end": 3.787
+  },
+  {
+   "text": "Alors",
+   "start": 4.159,
+   "end": 4.375
+  },
+  {
+   "text": "pourquoi",
+   "start": 4.375,
+   "end": 4.699
+  },
+  {
+   "text": "deux",
+   "start": 4.699,
+   "end": 4.832
+  },
+  {
+   "text": "prises",
+   "start": 4.832,
+   "end": 5.048
+  },
+  {
+   "text": "de",
+   "start": 5.048,
+   "end": 5.18
+  },
+  {
+   "text": "sang,",
+   "start": 5.18,
+   "end": 5.493
+  },
+  {
+   "text": "et",
+   "start": 5.817,
+   "end": 5.877
+  },
+  {
+   "text": "c'est",
+   "start": 5.877,
+   "end": 5.986
+  },
+  {
+   "text": "quoi",
+   "start": 5.986,
+   "end": 6.154
+  },
+  {
+   "text": "les",
+   "start": 6.154,
+   "end": 6.286
+  },
+  {
+   "text": "RAI ?",
+   "start": 6.286,
+   "end": 6.755
+  },
+  {
+   "text": "Un :",
+   "start": 7.68,
+   "end": 7.942
+  },
+  {
+   "text": "le",
+   "start": 8.13,
+   "end": 8.192
+  },
+  {
+   "text": "groupe",
+   "start": 8.192,
+   "end": 8.48
+  },
+  {
+   "text": "A,",
+   "start": 8.48,
+   "end": 8.717
+  },
+  {
+   "text": "B,",
+   "start": 9.03,
+   "end": 9.317
+  },
+  {
+   "text": "AB",
+   "start": 9.58,
+   "end": 9.893
+  },
+  {
+   "text": "ou",
+   "start": 9.893,
+   "end": 9.967
+  },
+  {
+   "text": "O.",
+   "start": 9.967,
+   "end": 10.23
+  },
+  {
+   "text": "Il",
+   "start": 10.567,
+   "end": 10.755
+  },
+  {
+   "text": "dépend",
+   "start": 10.755,
+   "end": 11.018
+  },
+  {
+   "text": "des",
+   "start": 11.018,
+   "end": 11.105
+  },
+  {
+   "text": "marqueurs",
+   "start": 11.105,
+   "end": 11.518
+  },
+  {
+   "text": "à",
+   "start": 11.518,
+   "end": 11.543
+  },
+  {
+   "text": "la",
+   "start": 11.543,
+   "end": 11.63
+  },
+  {
+   "text": "surface",
+   "start": 11.63,
+   "end": 12.043
+  },
+  {
+   "text": "des",
+   "start": 12.043,
+   "end": 12.13
+  },
+  {
+   "text": "globules",
+   "start": 12.13,
+   "end": 12.418
+  },
+  {
+   "text": "rouges,",
+   "start": 12.418,
+   "end": 12.793
+  },
+  {
+   "text": "les",
+   "start": 13.08,
+   "end": 13.143
+  },
+  {
+   "text": "antigènes.",
+   "start": 13.143,
+   "end": 13.867
+  },
+  {
+   "text": "Et",
+   "start": 14.205,
+   "end": 14.355
+  },
+  {
+   "text": "le",
+   "start": 14.355,
+   "end": 14.468
+  },
+  {
+   "text": "sang",
+   "start": 14.468,
+   "end": 14.68
+  },
+  {
+   "text": "a",
+   "start": 14.68,
+   "end": 14.718
+  },
+  {
+   "text": "des",
+   "start": 14.718,
+   "end": 14.805
+  },
+  {
+   "text": "anticorps",
+   "start": 14.805,
+   "end": 15.33
+  },
+  {
+   "text": "contre",
+   "start": 15.33,
+   "end": 15.655
+  },
+  {
+   "text": "ceux",
+   "start": 15.655,
+   "end": 15.793
+  },
+  {
+   "text": "qu'il",
+   "start": 15.793,
+   "end": 15.955
+  },
+  {
+   "text": "n'a",
+   "start": 15.955,
+   "end": 16.067
+  },
+  {
+   "text": "pas.",
+   "start": 16.067,
+   "end": 16.343
+  },
+  {
+   "text": "Deux :",
+   "start": 17.291,
+   "end": 17.666
+  },
+  {
+   "text": "le",
+   "start": 18.028,
+   "end": 18.103
+  },
+  {
+   "text": "rhésus,",
+   "start": 18.103,
+   "end": 18.728
+  },
+  {
+   "text": "positif",
+   "start": 18.966,
+   "end": 19.528
+  },
+  {
+   "text": "ou",
+   "start": 19.528,
+   "end": 19.553
+  },
+  {
+   "text": "négatif.",
+   "start": 19.553,
+   "end": 20.291
+  },
+  {
+   "text": "Il",
+   "start": 20.628,
+   "end": 20.841
+  },
+  {
+   "text": "compte",
+   "start": 20.841,
+   "end": 21.103
+  },
+  {
+   "text": "pour",
+   "start": 21.103,
+   "end": 21.203
+  },
+  {
+   "text": "la",
+   "start": 21.203,
+   "end": 21.278
+  },
+  {
+   "text": "transfusion,",
+   "start": 21.278,
+   "end": 21.953
+  },
+  {
+   "text": "et",
+   "start": 22.291,
+   "end": 22.366
+  },
+  {
+   "text": "aussi",
+   "start": 22.366,
+   "end": 22.616
+  },
+  {
+   "text": "pendant",
+   "start": 22.616,
+   "end": 22.828
+  },
+  {
+   "text": "la",
+   "start": 22.828,
+   "end": 22.916
+  },
+  {
+   "text": "grossesse.",
+   "start": 22.916,
+   "end": 23.591
+  },
+  {
+   "text": "Trois :",
+   "start": 24.585,
+   "end": 24.911
+  },
+  {
+   "text": "en",
+   "start": 25.236,
+   "end": 25.335
+  },
+  {
+   "text": "France,",
+   "start": 25.335,
+   "end": 25.811
+  },
+  {
+   "text": "il",
+   "start": 26.085,
+   "end": 26.173
+  },
+  {
+   "text": "faut",
+   "start": 26.173,
+   "end": 26.323
+  },
+  {
+   "text": "deux",
+   "start": 26.323,
+   "end": 26.473
+  },
+  {
+   "text": "déterminations,",
+   "start": 26.473,
+   "end": 27.286
+  },
+  {
+   "text": "sur",
+   "start": 27.611,
+   "end": 27.773
+  },
+  {
+   "text": "deux",
+   "start": 27.773,
+   "end": 27.898
+  },
+  {
+   "text": "prélèvements",
+   "start": 27.898,
+   "end": 28.361
+  },
+  {
+   "text": "faits",
+   "start": 28.361,
+   "end": 28.523
+  },
+  {
+   "text": "à",
+   "start": 28.523,
+   "end": 28.623
+  },
+  {
+   "text": "deux",
+   "start": 28.623,
+   "end": 28.748
+  },
+  {
+   "text": "moments",
+   "start": 28.748,
+   "end": 28.973
+  },
+  {
+   "text": "différents.",
+   "start": 28.973,
+   "end": 29.498
+  },
+  {
+   "text": "Et",
+   "start": 29.848,
+   "end": 29.948
+  },
+  {
+   "text": "à",
+   "start": 29.948,
+   "end": 29.998
+  },
+  {
+   "text": "chaque",
+   "start": 29.998,
+   "end": 30.211
+  },
+  {
+   "text": "fois,",
+   "start": 30.211,
+   "end": 30.535
+  },
+  {
+   "text": "tu",
+   "start": 30.823,
+   "end": 30.948
+  },
+  {
+   "text": "vérifies",
+   "start": 30.948,
+   "end": 31.311
+  },
+  {
+   "text": "l'identité",
+   "start": 31.311,
+   "end": 31.773
+  },
+  {
+   "text": "du",
+   "start": 31.773,
+   "end": 31.873
+  },
+  {
+   "text": "patient,",
+   "start": 31.873,
+   "end": 32.386
+  },
+  {
+   "text": "et",
+   "start": 32.698,
+   "end": 32.723
+  },
+  {
+   "text": "tu",
+   "start": 32.723,
+   "end": 32.848
+  },
+  {
+   "text": "étiquettes",
+   "start": 32.848,
+   "end": 33.336
+  },
+  {
+   "text": "devant",
+   "start": 33.336,
+   "end": 33.573
+  },
+  {
+   "text": "lui.",
+   "start": 33.573,
+   "end": 33.886
+  },
+  {
+   "text": "Quatre :",
+   "start": 34.842,
+   "end": 35.317
+  },
+  {
+   "text": "les",
+   "start": 35.73,
+   "end": 35.867
+  },
+  {
+   "text": "RAI,",
+   "start": 35.867,
+   "end": 36.48
+  },
+  {
+   "text": "la",
+   "start": 36.792,
+   "end": 36.904
+  },
+  {
+   "text": "recherche",
+   "start": 36.904,
+   "end": 37.255
+  },
+  {
+   "text": "d'agglutinines",
+   "start": 37.255,
+   "end": 37.855
+  },
+  {
+   "text": "irrégulières.",
+   "start": 37.855,
+   "end": 38.667
+  },
+  {
+   "text": "Elles",
+   "start": 39.005,
+   "end": 39.18
+  },
+  {
+   "text": "cherchent",
+   "start": 39.18,
+   "end": 39.505
+  },
+  {
+   "text": "d'autres",
+   "start": 39.505,
+   "end": 39.779
+  },
+  {
+   "text": "anticorps,",
+   "start": 39.779,
+   "end": 40.43
+  },
+  {
+   "text": "apparus",
+   "start": 40.742,
+   "end": 41.067
+  },
+  {
+   "text": "après",
+   "start": 41.067,
+   "end": 41.279
+  },
+  {
+   "text": "une",
+   "start": 41.279,
+   "end": 41.33
+  },
+  {
+   "text": "transfusion",
+   "start": 41.33,
+   "end": 41.955
+  },
+  {
+   "text": "ou",
+   "start": 41.955,
+   "end": 42.042
+  },
+  {
+   "text": "une",
+   "start": 42.042,
+   "end": 42.117
+  },
+  {
+   "text": "grossesse.",
+   "start": 42.117,
+   "end": 42.792
+  },
+  {
+   "text": "En",
+   "start": 43.13,
+   "end": 43.242
+  },
+  {
+   "text": "général,",
+   "start": 43.242,
+   "end": 43.779
+  },
+  {
+   "text": "elles",
+   "start": 44.117,
+   "end": 44.18
+  },
+  {
+   "text": "sont",
+   "start": 44.18,
+   "end": 44.317
+  },
+  {
+   "text": "valables",
+   "start": 44.317,
+   "end": 44.692
+  },
+  {
+   "text": "trois",
+   "start": 44.692,
+   "end": 44.904
+  },
+  {
+   "text": "jours",
+   "start": 44.904,
+   "end": 45.192
+  },
+  {
+   "text": "avant",
+   "start": 45.192,
+   "end": 45.342
+  },
+  {
+   "text": "une",
+   "start": 45.342,
+   "end": 45.404
+  },
+  {
+   "text": "transfusion.",
+   "start": 45.404,
+   "end": 46.08
+  },
+  {
+   "text": "Groupe,",
+   "start": 47.032,
+   "end": 47.461
+  },
+  {
+   "text": "rhésus,",
+   "start": 47.755,
+   "end": 48.331
+  },
+  {
+   "text": "deux",
+   "start": 48.711,
+   "end": 48.809
+  },
+  {
+   "text": "déterminations",
+   "start": 48.809,
+   "end": 49.52
+  },
+  {
+   "text": "et",
+   "start": 49.52,
+   "end": 49.606
+  },
+  {
+   "text": "des",
+   "start": 49.606,
+   "end": 49.753
+  },
+  {
+   "text": "RAI",
+   "start": 49.753,
+   "end": 50.096
+  },
+  {
+   "text": "récentes :",
+   "start": 50.096,
+   "end": 50.61
+  },
+  {
+   "text": "la",
+   "start": 50.892,
+   "end": 50.966
+  },
+  {
+   "text": "transfusion",
+   "start": 50.966,
+   "end": 51.53
+  },
+  {
+   "text": "est",
+   "start": 51.53,
+   "end": 51.579
+  },
+  {
+   "text": "sécurisée.",
+   "start": 51.579,
+   "end": 52.253
+  },
+  {
+   "text": "Prochaine",
+   "start": 52.607,
+   "end": 52.975
+  },
+  {
+   "text": "vidéo :",
+   "start": 52.975,
+   "end": 53.44
+  },
+  {
+   "text": "la",
+   "start": 53.832,
+   "end": 53.906
+  },
+  {
+   "text": "charge",
+   "start": 53.906,
+   "end": 54.212
+  },
+  {
+   "text": "virale.",
+   "start": 54.212,
+   "end": 54.752
+  }
+ ]
+}

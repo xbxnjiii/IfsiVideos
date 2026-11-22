@@ -80,6 +80,7 @@ pas de logiciel de montage, pas de banque d'images.
 | 67 | Série le tube violet : la NFS 1/2, les globules rouges en 54 s (hématies, hémoglobine, hématocrite, VGM + normes ; voix gratuite, directives Instagram) | `NFS-Globules-Rouges` | [voix/67-nfs-globules-rouges.script.json](voix/67-nfs-globules-rouges.script.json) | [storyboard](docs/lpi/storyboard-tube-violet-serie.md) |
 | 68 | Série le tube violet : la NFS 2/2, globules blancs et plaquettes en 60 s (7 lignes + normes ; voix gratuite, directives Instagram) | `NFS-Globules-Blancs` | [voix/68-nfs-globules-blancs.script.json](voix/68-nfs-globules-blancs.script.json) | [storyboard](docs/lpi/storyboard-tube-violet-serie.md) |
 | 69 | Série le tube violet : l'HbA1c en 57 s (photo ou film, 120 jours, objectifs, en pratique ; voix gratuite, directives Instagram) | `HbA1c` | [voix/69-hba1c.script.json](voix/69-hba1c.script.json) | [storyboard](docs/lpi/storyboard-tube-violet-serie.md) |
+| 70 | Série le tube violet : le groupe sanguin et les RAI en 59 s (ABO, rhésus, 2 déterminations, RAI ; voix gratuite, directives Instagram) | `Groupe-Sanguin` | [voix/70-groupe-sanguin.script.json](voix/70-groupe-sanguin.script.json) | [storyboard](docs/lpi/storyboard-tube-violet-serie.md) |
 
 ## Utilisation
 
