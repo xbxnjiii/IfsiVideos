@@ -710,7 +710,7 @@ script), « en France » / « le 15 (ou le numéro d'urgence de ton pays) ». Ca
   `SeriesPill` (« LES TUBES · LA PURGE ») dès l'image 0. Brique `WingedLine` + `LINE_PTS` dans `tubes.tsx` (peau + veine,
   ailettes, tubulure où le sang avance, bulles d'air, corps de pompe et tube couché avec trait, croix). Storyboard
   `docs/lpi/storyboard-tube-purge.md`.
-  `Ordre-Tubes` (n° 66, ≈ 46 s, voix gratuite d'abord, sans barre de progression) : **l'ordre des tubes refait selon les
+  `Ordre-Tubes` (n° 66, ≈ 47 s, voix Laura après validation (752 crédits), sans barre de progression) : **l'ordre des tubes refait selon les
   directives Instagram**, avec les deux tableaux du propriétaire (ordre selon l'aiguille ; retournements) : accroche de
   21 mots « Sept tubes, un seul bon ordre… Tu le connais vraiment ? » (image 0 : titre + compteur 0/7 + les 7 tubes
   mélangés), puis **seulement l'ordre** (« Un : les hémocultures. Deux : le bleu… Et sept : le gris. », une carte numéro +
@@ -729,7 +729,8 @@ script), « en France » / « le 15 (ou le numéro d'urgence de ton pays) ». Ca
 
 ## Voix ElevenLabs « Laura » (choisie par le propriétaire pour les nouvelles vidéos)
 
-- Connecteur ElevenLabs : voix `Laura` (`MmafIMKg28Wr0yMh8CEB`), modèle `eleven_v4`, flow `6O4tHaBowSG52722wkdC`.
+- Connecteur ElevenLabs : voix `Laura` (`MmafIMKg28Wr0yMh8CEB`), modèle `eleven_v4` ; l'ancien flow `6O4tHaBowSG52722wkdC` n'est plus accessible
+  (« You do not have access to this template », rien de facturé) → flow `BrySoMOS2i2Sgfputx9I` (n° 66).
   `creative_generate_speech` avec **tout le texte en une fois**. Balises de jeu `[amused]`, `[sarcastic]`,
   `[confident]`, `[warmly]`, `[excited]`. `[pause]` entre les parties. Nombres en lettres.
 - Puis `creative_get_flow_run_status` pour récupérer la prise, et `curl` de `content_url`. Alignement :
