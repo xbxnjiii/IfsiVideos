@@ -144,6 +144,8 @@ import {GroupeSanguin, GroupeSanguinProps} from './videos/groupe-sanguin/GroupeS
 import {TL as GROUPE_SANGUIN_TL} from './videos/groupe-sanguin/timeline';
 import {ChargeVirale, ChargeViraleProps} from './videos/charge-virale/ChargeVirale';
 import {TL as CHARGE_VIRALE_TL} from './videos/charge-virale/timeline';
+import {AntiRejet, AntiRejetProps} from './videos/anti-rejet/AntiRejet';
+import {TL as ANTI_REJET_TL} from './videos/anti-rejet/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -850,6 +852,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies ChargeViraleProps}
+		/>
+		{/* 72 · Anti-Rejet */}
+		<Composition
+			id="Anti-Rejet"
+			component={AntiRejet}
+			durationInFrames={ANTI_REJET_TL.total}
+			fps={ANTI_REJET_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies AntiRejetProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition

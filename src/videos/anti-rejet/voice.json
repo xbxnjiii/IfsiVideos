@@ -1,0 +1,743 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 50.39,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.049,
+   "end": 7.308
+  },
+  {
+   "id": "pourquoi",
+   "start": 8.27,
+   "end": 16.319
+  },
+  {
+   "id": "lesquels",
+   "start": 17.278,
+   "end": 25.791
+  },
+  {
+   "id": "marge",
+   "start": 26.756,
+   "end": 36.444
+  },
+  {
+   "id": "moment",
+   "start": 37.386,
+   "end": 43.261
+  },
+  {
+   "id": "fin",
+   "start": 44.224,
+   "end": 50.044
+  }
+ ],
+ "words": [
+  {
+   "text": "Quand",
+   "start": 0.049,
+   "end": 0.181
+  },
+  {
+   "text": "on",
+   "start": 0.181,
+   "end": 0.289
+  },
+  {
+   "text": "a",
+   "start": 0.289,
+   "end": 0.374
+  },
+  {
+   "text": "reçu",
+   "start": 0.374,
+   "end": 0.638
+  },
+  {
+   "text": "le",
+   "start": 0.638,
+   "end": 0.746
+  },
+  {
+   "text": "rein",
+   "start": 0.746,
+   "end": 0.878
+  },
+  {
+   "text": "d'un",
+   "start": 0.878,
+   "end": 0.987
+  },
+  {
+   "text": "donneur,",
+   "start": 0.987,
+   "end": 1.431
+  },
+  {
+   "text": "l'anti-rejet",
+   "start": 1.792,
+   "end": 2.345
+  },
+  {
+   "text": "se",
+   "start": 2.345,
+   "end": 2.477
+  },
+  {
+   "text": "prend",
+   "start": 2.477,
+   "end": 2.693
+  },
+  {
+   "text": "à",
+   "start": 2.693,
+   "end": 2.741
+  },
+  {
+   "text": "vie.",
+   "start": 2.741,
+   "end": 3.042
+  },
+  {
+   "text": "Trop",
+   "start": 3.413,
+   "end": 3.594
+  },
+  {
+   "text": "bas :",
+   "start": 3.594,
+   "end": 3.834
+  },
+  {
+   "text": "le",
+   "start": 4.231,
+   "end": 4.291
+  },
+  {
+   "text": "corps",
+   "start": 4.291,
+   "end": 4.507
+  },
+  {
+   "text": "rejette",
+   "start": 4.507,
+   "end": 4.82
+  },
+  {
+   "text": "le",
+   "start": 4.82,
+   "end": 4.904
+  },
+  {
+   "text": "greffon.",
+   "start": 4.904,
+   "end": 5.397
+  },
+  {
+   "text": "Trop",
+   "start": 5.757,
+   "end": 6.01
+  },
+  {
+   "text": "haut :",
+   "start": 6.01,
+   "end": 6.226
+  },
+  {
+   "text": "il",
+   "start": 6.526,
+   "end": 6.623
+  },
+  {
+   "text": "abîme",
+   "start": 6.623,
+   "end": 6.887
+  },
+  {
+   "text": "les",
+   "start": 6.887,
+   "end": 6.995
+  },
+  {
+   "text": "reins.",
+   "start": 6.995,
+   "end": 7.308
+  },
+  {
+   "text": "Un :",
+   "start": 8.27,
+   "end": 8.495
+  },
+  {
+   "text": "pourquoi",
+   "start": 8.732,
+   "end": 9.082
+  },
+  {
+   "text": "un",
+   "start": 9.082,
+   "end": 9.12
+  },
+  {
+   "text": "traitement ?",
+   "start": 9.12,
+   "end": 9.632
+  },
+  {
+   "text": "Pour",
+   "start": 9.982,
+   "end": 10.095
+  },
+  {
+   "text": "les",
+   "start": 10.095,
+   "end": 10.157
+  },
+  {
+   "text": "défenses",
+   "start": 10.157,
+   "end": 10.507
+  },
+  {
+   "text": "du",
+   "start": 10.507,
+   "end": 10.632
+  },
+  {
+   "text": "corps,",
+   "start": 10.632,
+   "end": 11.007
+  },
+  {
+   "text": "le",
+   "start": 11.395,
+   "end": 11.445
+  },
+  {
+   "text": "greffon",
+   "start": 11.445,
+   "end": 11.832
+  },
+  {
+   "text": "est",
+   "start": 11.832,
+   "end": 11.882
+  },
+  {
+   "text": "un",
+   "start": 11.882,
+   "end": 12.02
+  },
+  {
+   "text": "intrus.",
+   "start": 12.02,
+   "end": 12.507
+  },
+  {
+   "text": "L'anti-rejet",
+   "start": 12.907,
+   "end": 13.532
+  },
+  {
+   "text": "freine",
+   "start": 13.532,
+   "end": 13.794
+  },
+  {
+   "text": "ces",
+   "start": 13.794,
+   "end": 13.895
+  },
+  {
+   "text": "défenses :",
+   "start": 13.895,
+   "end": 14.507
+  },
+  {
+   "text": "c'est",
+   "start": 14.857,
+   "end": 14.982
+  },
+  {
+   "text": "un",
+   "start": 14.982,
+   "end": 15.107
+  },
+  {
+   "text": "immunosuppresseur.",
+   "start": 15.107,
+   "end": 16.319
+  },
+  {
+   "text": "Deux :",
+   "start": 17.278,
+   "end": 17.691
+  },
+  {
+   "text": "on",
+   "start": 18.091,
+   "end": 18.166
+  },
+  {
+   "text": "dose",
+   "start": 18.166,
+   "end": 18.428
+  },
+  {
+   "text": "surtout",
+   "start": 18.428,
+   "end": 18.728
+  },
+  {
+   "text": "la",
+   "start": 18.728,
+   "end": 18.841
+  },
+  {
+   "text": "ciclosporine,",
+   "start": 18.841,
+   "end": 19.678
+  },
+  {
+   "text": "le",
+   "start": 20.078,
+   "end": 20.141
+  },
+  {
+   "text": "tacrolimus",
+   "start": 20.141,
+   "end": 20.803
+  },
+  {
+   "text": "et",
+   "start": 20.803,
+   "end": 20.916
+  },
+  {
+   "text": "l'évérolimus.",
+   "start": 20.916,
+   "end": 21.841
+  },
+  {
+   "text": "On",
+   "start": 22.178,
+   "end": 22.316
+  },
+  {
+   "text": "les",
+   "start": 22.316,
+   "end": 22.416
+  },
+  {
+   "text": "mesure",
+   "start": 22.416,
+   "end": 22.766
+  },
+  {
+   "text": "dans",
+   "start": 22.766,
+   "end": 22.878
+  },
+  {
+   "text": "le",
+   "start": 22.878,
+   "end": 22.978
+  },
+  {
+   "text": "sang",
+   "start": 22.978,
+   "end": 23.166
+  },
+  {
+   "text": "entier,",
+   "start": 23.166,
+   "end": 23.641
+  },
+  {
+   "text": "et",
+   "start": 23.991,
+   "end": 24.078
+  },
+  {
+   "text": "c'est",
+   "start": 24.078,
+   "end": 24.178
+  },
+  {
+   "text": "pour",
+   "start": 24.178,
+   "end": 24.353
+  },
+  {
+   "text": "ça",
+   "start": 24.353,
+   "end": 24.478
+  },
+  {
+   "text": "qu'on",
+   "start": 24.478,
+   "end": 24.616
+  },
+  {
+   "text": "utilise",
+   "start": 24.616,
+   "end": 25.028
+  },
+  {
+   "text": "le",
+   "start": 25.028,
+   "end": 25.116
+  },
+  {
+   "text": "tube",
+   "start": 25.116,
+   "end": 25.353
+  },
+  {
+   "text": "violet.",
+   "start": 25.353,
+   "end": 25.791
+  },
+  {
+   "text": "Trois :",
+   "start": 26.756,
+   "end": 27.156
+  },
+  {
+   "text": "leur",
+   "start": 27.581,
+   "end": 27.731
+  },
+  {
+   "text": "marge",
+   "start": 27.731,
+   "end": 28.006
+  },
+  {
+   "text": "est",
+   "start": 28.006,
+   "end": 28.043
+  },
+  {
+   "text": "étroite.",
+   "start": 28.043,
+   "end": 28.718
+  },
+  {
+   "text": "Trop",
+   "start": 29.106,
+   "end": 29.281
+  },
+  {
+   "text": "bas,",
+   "start": 29.281,
+   "end": 29.531
+  },
+  {
+   "text": "il",
+   "start": 29.869,
+   "end": 29.944
+  },
+  {
+   "text": "y",
+   "start": 29.944,
+   "end": 30.006
+  },
+  {
+   "text": "a",
+   "start": 30.006,
+   "end": 30.031
+  },
+  {
+   "text": "un",
+   "start": 30.031,
+   "end": 30.081
+  },
+  {
+   "text": "risque",
+   "start": 30.081,
+   "end": 30.369
+  },
+  {
+   "text": "de",
+   "start": 30.369,
+   "end": 30.468
+  },
+  {
+   "text": "rejet.",
+   "start": 30.468,
+   "end": 30.881
+  },
+  {
+   "text": "Trop",
+   "start": 31.231,
+   "end": 31.493
+  },
+  {
+   "text": "haut,",
+   "start": 31.493,
+   "end": 31.681
+  },
+  {
+   "text": "ils",
+   "start": 31.956,
+   "end": 32.019
+  },
+  {
+   "text": "deviennent",
+   "start": 32.019,
+   "end": 32.319
+  },
+  {
+   "text": "toxiques :",
+   "start": 32.319,
+   "end": 32.894
+  },
+  {
+   "text": "les",
+   "start": 33.394,
+   "end": 33.468
+  },
+  {
+   "text": "reins",
+   "start": 33.468,
+   "end": 33.631
+  },
+  {
+   "text": "s'abîment,",
+   "start": 33.631,
+   "end": 34.144
+  },
+  {
+   "text": "les",
+   "start": 34.406,
+   "end": 34.468
+  },
+  {
+   "text": "mains",
+   "start": 34.468,
+   "end": 34.606
+  },
+  {
+   "text": "tremblent,",
+   "start": 34.606,
+   "end": 35.069
+  },
+  {
+   "text": "les",
+   "start": 35.269,
+   "end": 35.331
+  },
+  {
+   "text": "infections",
+   "start": 35.331,
+   "end": 35.831
+  },
+  {
+   "text": "augmentent.",
+   "start": 35.831,
+   "end": 36.444
+  },
+  {
+   "text": "Quatre :",
+   "start": 37.386,
+   "end": 37.798
+  },
+  {
+   "text": "on",
+   "start": 38.224,
+   "end": 38.248
+  },
+  {
+   "text": "prélève",
+   "start": 38.248,
+   "end": 38.636
+  },
+  {
+   "text": "juste",
+   "start": 38.636,
+   "end": 38.873
+  },
+  {
+   "text": "avant",
+   "start": 38.873,
+   "end": 39.036
+  },
+  {
+   "text": "la",
+   "start": 39.036,
+   "end": 39.123
+  },
+  {
+   "text": "prise",
+   "start": 39.123,
+   "end": 39.336
+  },
+  {
+   "text": "suivante,",
+   "start": 39.336,
+   "end": 39.873
+  },
+  {
+   "text": "c'est",
+   "start": 40.111,
+   "end": 40.236
+  },
+  {
+   "text": "le",
+   "start": 40.236,
+   "end": 40.336
+  },
+  {
+   "text": "taux",
+   "start": 40.336,
+   "end": 40.474
+  },
+  {
+   "text": "résiduel.",
+   "start": 40.474,
+   "end": 41.186
+  },
+  {
+   "text": "Et",
+   "start": 41.523,
+   "end": 41.661
+  },
+  {
+   "text": "tu",
+   "start": 41.661,
+   "end": 41.811
+  },
+  {
+   "text": "notes",
+   "start": 41.811,
+   "end": 42.011
+  },
+  {
+   "text": "l'heure",
+   "start": 42.011,
+   "end": 42.248
+  },
+  {
+   "text": "de",
+   "start": 42.248,
+   "end": 42.336
+  },
+  {
+   "text": "la",
+   "start": 42.336,
+   "end": 42.411
+  },
+  {
+   "text": "dernière",
+   "start": 42.411,
+   "end": 42.736
+  },
+  {
+   "text": "prise.",
+   "start": 42.736,
+   "end": 43.261
+  },
+  {
+   "text": "Petit",
+   "start": 44.224,
+   "end": 44.493
+  },
+  {
+   "text": "bonus :",
+   "start": 44.493,
+   "end": 45.02
+  },
+  {
+   "text": "le",
+   "start": 45.314,
+   "end": 45.376
+  },
+  {
+   "text": "pamplemousse",
+   "start": 45.376,
+   "end": 45.89
+  },
+  {
+   "text": "peut",
+   "start": 45.89,
+   "end": 46.001
+  },
+  {
+   "text": "faire",
+   "start": 46.001,
+   "end": 46.185
+  },
+  {
+   "text": "monter",
+   "start": 46.185,
+   "end": 46.417
+  },
+  {
+   "text": "leur",
+   "start": 46.417,
+   "end": 46.564
+  },
+  {
+   "text": "taux.",
+   "start": 46.564,
+   "end": 46.895
+  },
+  {
+   "text": "Et",
+   "start": 47.25,
+   "end": 47.336
+  },
+  {
+   "text": "voilà,",
+   "start": 47.336,
+   "end": 47.654
+  },
+  {
+   "text": "tu",
+   "start": 47.949,
+   "end": 48.059
+  },
+  {
+   "text": "connais",
+   "start": 48.059,
+   "end": 48.255
+  },
+  {
+   "text": "maintenant",
+   "start": 48.255,
+   "end": 48.635
+  },
+  {
+   "text": "tous",
+   "start": 48.635,
+   "end": 48.77
+  },
+  {
+   "text": "les",
+   "start": 48.77,
+   "end": 48.868
+  },
+  {
+   "text": "examens",
+   "start": 48.868,
+   "end": 49.297
+  },
+  {
+   "text": "du",
+   "start": 49.297,
+   "end": 49.407
+  },
+  {
+   "text": "tube",
+   "start": 49.407,
+   "end": 49.615
+  },
+  {
+   "text": "violet !",
+   "start": 49.615,
+   "end": 50.044
+  }
+ ]
+}

@@ -82,6 +82,7 @@ pas de logiciel de montage, pas de banque d'images.
 | 69 | Série le tube violet : l'HbA1c en 57 s (photo ou film, 120 jours, objectifs, en pratique ; voix gratuite, directives Instagram) | `HbA1c` | [voix/69-hba1c.script.json](voix/69-hba1c.script.json) | [storyboard](docs/lpi/storyboard-tube-violet-serie.md) |
 | 70 | Série le tube violet : le groupe sanguin et les RAI en 59 s (ABO, rhésus, 2 déterminations, RAI ; voix gratuite, directives Instagram) | `Groupe-Sanguin` | [voix/70-groupe-sanguin.script.json](voix/70-groupe-sanguin.script.json) | [storyboard](docs/lpi/storyboard-tube-violet-serie.md) |
 | 71 | Série le tube violet : la charge virale en 60 s (copies/mL, VIH et I = I, hépatites B et C ; voix gratuite, directives Instagram) | `Charge-Virale` | [voix/71-charge-virale.script.json](voix/71-charge-virale.script.json) | [storyboard](docs/lpi/storyboard-tube-violet-serie.md) |
+| 72 | Série le tube violet : les anti-rejet en 54 s (immunosuppresseurs, marge étroite, taux résiduel, pamplemousse ; voix gratuite, directives Instagram) | `Anti-Rejet` | [voix/72-anti-rejet.script.json](voix/72-anti-rejet.script.json) | [storyboard](docs/lpi/storyboard-tube-violet-serie.md) |
 
 ## Utilisation
 

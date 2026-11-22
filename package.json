@@ -85,7 +85,8 @@
     "render:nfs-globules-blancs": "remotion render NFS-Globules-Blancs out/68-nfs-globules-blancs.mp4",
     "render:hba1c": "remotion render HbA1c out/69-hba1c.mp4",
     "render:groupe-sanguin": "remotion render Groupe-Sanguin out/70-groupe-sanguin.mp4",
-    "render:charge-virale": "remotion render Charge-Virale out/71-charge-virale.mp4"
+    "render:charge-virale": "remotion render Charge-Virale out/71-charge-virale.mp4",
+    "render:anti-rejet": "remotion render Anti-Rejet out/72-anti-rejet.mp4"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.532",

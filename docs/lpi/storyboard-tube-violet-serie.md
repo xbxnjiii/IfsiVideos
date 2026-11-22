@@ -12,7 +12,7 @@ l'image 0, sans appel à l'action. La v2 longue (n° 62, 3 min 17) reste dans le
 | 69 | `HbA1c` (≈ 57 s) | la glycémie = une photo, l'HbA1c = le film de 3 mois ; le sucre se colle à l'hémoglobine ; globule rouge ≈ 120 jours → moyenne des 2 – 3 derniers mois ; objectif type 2 < 7 %, type 1 7 – 7,5 %, complications (yeux, reins, pieds) ; pas à jeun, ≈ tous les 3 mois, ajuster le traitement. |
 | 70 | `Groupe-Sanguin` (≈ 59 s) | une erreur de groupe peut être mortelle ; ABO (antigènes, anticorps contre ceux qu'on n'a pas), rhésus (transfusion, grossesse), 2 déterminations sur 2 prélèvements + identité / étiquette devant le patient, RAI (anticorps après transfusion / grossesse, en général valables 3 jours). |
 | 71 | `Charge-Virale` (≈ 60 s) | charge virale indétectable = I = I ; quantité de virus en copies/mL ≠ sérologie (anticorps) ; VIH (traitement, < 50 copies/mL, I = I) ; hépatite B (décider de traiter, vérifier) ; hépatite C (virus encore là ? guérison). |
-| 72 | Anti-rejet (à faire) | ciclosporine, tacrolimus, évérolimus : dosage avant la prise suivante. |
+| 72 | `Anti-Rejet` (≈ 54 s) | trop bas = rejet, trop haut = toxique ; immunosuppresseur ; ciclosporine, tacrolimus, évérolimus dans le sang entier ; marge étroite (reins, tremblements, infections) ; taux résiduel juste avant la prise, heure de la dernière prise ; bonus pamplemousse ; série terminée. |
 
 ## 67 · NFS 1/2 : les globules rouges
 
@@ -83,3 +83,18 @@ Sources : CNS / ANRS-MIE (VIH, < 50 copies/mL ; avis du CNS 2015 sur le traiteme
 Voix : « Indétectable. » seul en début d'accroche partait en anglais → « Charge virale indétectable : … » ; « aide à » était
 entendu « est à » → « permet de » ; « dit si » → « montre si » ; « La charge virale répond. » (espagnol) → « C'est la charge
 virale qui répond à tout ça. »
+
+## 72 · Les anti-rejet (dernière vidéo de la série)
+
+| Partie | Voix | Image |
+|---|---|---|
+| intro | Quand on a reçu le rein d'un donneur, l'anti-rejet se prend à vie. Trop bas : le corps rejette le greffon. Trop haut : il abîme les reins. | Image 0 : pastille, titre, 0/4, rein greffé (sutures), jauge rejet / efficace / toxique ; défenses qui attaquent + REJET, rein abîmé + TOXIQUE. |
+| pourquoi | Un : pourquoi un traitement ? … un intrus… immunosuppresseur. | 1/4, les défenses entourent le greffon puis se calment ; = immunosuppresseur. |
+| lesquels | Deux : ciclosporine, tacrolimus, évérolimus… sang entier… tube violet. | 2/4, 3 cartes, tube violet. |
+| marge | Trois : leur marge est étroite… rejet… toxiques… | 3/4, jauge, reins · tremblements · infections. |
+| moment | Quatre : juste avant la prise suivante, c'est le taux résiduel… l'heure de la dernière prise. | 4/4, courbe du taux entre 2 prises, « on prélève ici » au creux, carte dernière prise 20 h / prélèvement 8 h. |
+| fin | Petit bonus : le pamplemousse peut faire monter leur taux. Et voilà, tu connais maintenant tous les examens du tube violet ! | Pamplemousse (vraies couleurs) + ↑, puis « Le tube violet · série terminée ! » : les 6 vidéos se cochent. |
+
+Sources : RCP (ANSM / EMA) de la ciclosporine, du tacrolimus, de l'évérolimus (concentrations résiduelles sur sang total,
+interaction avec le pamplemousse) ; HAS, suivi du transplanté rénal. Voix : « greffe » est entendu « grève » → « le rein
+d'un donneur » ; « greffé du rein » était entendu « greffé d'urin ».

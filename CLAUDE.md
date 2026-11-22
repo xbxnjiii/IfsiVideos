@@ -740,6 +740,11 @@ script), « en France » / « le 15 (ou le numéro d'urgence de ton pays) ». Ca
   virus ne se transmet plus sexuellement… » (écran qui descend jusqu'à INDÉTECTABLE, tampon I = I), c'est quoi (copies/mL ≠
   sérologie), VIH (< 50 copies/mL), hépatite B, hépatite C (guérison), fin + « prochaine vidéo : les médicaments anti-rejet ».
   Voix : un mot seul en début de phrase (« Indétectable. ») part en anglais ; « La charge virale répond. » part en espagnol.
+  `Anti-Rejet` (n° 72, ≈ 54 s, voix gratuite d'abord, ajout de l'agent sur les médicaments cités par le propriétaire) : « Quand
+  on a reçu le rein d'un donneur, l'anti-rejet se prend à vie. Trop bas : le corps rejette le greffon. Trop haut : il abîme les
+  reins. », pourquoi (immunosuppresseur), ciclosporine / tacrolimus / évérolimus (sang entier → tube violet), marge étroite,
+  taux résiduel (juste avant la prise, noter l'heure), bonus pamplemousse, **série terminée** (les 6 vidéos cochées).
+  Voix : « greffe » est entendu « grève », « greffé du rein » « greffé d'urin » → éviter le mot.
   **Correction à signaler dans le texte fourni** : c'est l'excès de lymphocytes (lymphocytose) qui évoque une infection
   virale ; la lymphopénie se voit dans l'immunodépression (VIH, corticoïdes…).
 

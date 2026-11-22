@@ -1,0 +1,32 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Quand on a reçu le rein d'un donneur, l'anti-rejet se prend à vie. Trop bas : le corps rejette le greffon. Trop haut : il abîme les reins."
+ },
+ {
+  "id": "pourquoi",
+  "rate": "+0%",
+  "text": "Un : pourquoi un traitement ? Pour les défenses du corps, le greffon est un intrus. L'anti-rejet freine ces défenses : c'est un immunosuppresseur."
+ },
+ {
+  "id": "lesquels",
+  "rate": "+0%",
+  "text": "Deux : on dose surtout la ciclosporine, le tacrolimus et l'évérolimus. On les mesure dans le sang entier, et c'est pour ça qu'on utilise le tube violet."
+ },
+ {
+  "id": "marge",
+  "rate": "+0%",
+  "text": "Trois : leur marge est étroite. Trop bas, il y a un risque de rejet. Trop haut, ils deviennent toxiques : les reins s'abîment, les mains tremblent, les infections augmentent."
+ },
+ {
+  "id": "moment",
+  "rate": "+0%",
+  "text": "Quatre : on prélève juste avant la prise suivante, c'est le taux résiduel. Et tu notes l'heure de la dernière prise."
+ },
+ {
+  "id": "fin",
+  "rate": "+2%",
+  "text": "Petit bonus : le pamplemousse peut faire monter leur taux. Et voilà, tu connais maintenant tous les examens du tube violet !"
+ }
+]
