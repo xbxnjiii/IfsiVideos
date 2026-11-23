@@ -200,6 +200,8 @@ import {TubeJauneAutoImmunite2, TubeJauneAutoImmunite2Props} from './videos/tube
 import {TL as TUBE_JAUNE_AUTO_IMMUNITE_2_TL} from './videos/tube-jaune-auto-immunite-2/timeline';
 import {TubeJauneVitamines, TubeJauneVitaminesProps} from './videos/tube-jaune-vitamines/TubeJauneVitamines';
 import {TL as TUBE_JAUNE_VITAMINES_TL} from './videos/tube-jaune-vitamines/timeline';
+import {Hemocultures, HemoculturesProps} from './videos/hemocultures/Hemocultures';
+import {TL as HEMOCULTURES_TL} from './videos/hemocultures/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -1186,6 +1188,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies TubeJauneVitaminesProps}
+		/>
+		{/* 100 · Hemocultures */}
+		<Composition
+			id="Hemocultures"
+			component={Hemocultures}
+			durationInFrames={HEMOCULTURES_TL.total}
+			fps={HEMOCULTURES_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies HemoculturesProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition

@@ -45,7 +45,9 @@ export const LabHook: React.FC<{
 	extra?: React.ReactNode;
 	tone?: string;
 	titleSize?: number;
-}> = ({series, title, art, chips, notes = [], punches = [], shakes = [], extra, tone = LPI.sky, titleSize = 100}) => (
+	/** remplace le tube de gauche (ex. un flacon d'hémoculture) */
+	lead?: React.ReactNode;
+}> = ({series, title, art, chips, notes = [], punches = [], shakes = [], extra, tone = LPI.sky, titleSize = 100, lead}) => (
 	<AbsoluteFill>
 		<ShortBg tone={tone} />
 		<SeriesPill cap={series.cap} label={series.label} />
@@ -53,7 +55,7 @@ export const LabHook: React.FC<{
 		<Camera punches={punches} shakes={shakes} strength={0.03}>
 			<Big from={-60} text={title} size={titleSize} y={190} />
 			<Pop at={-12} x={170} y={760}>
-				<SwayTube cap={series.cap} />
+				{lead ?? <SwayTube cap={series.cap} />}
 			</Pop>
 			<Pop at={-12} x={630} y={760}>
 				{art}

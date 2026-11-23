@@ -1,808 +1,808 @@
 {
- "voice": "voix.wav (tts_voix.py)",
- "duration": 52.552,
+ "voice": "pad-tube-jaune-reins.wav",
+ "duration": 53.522,
  "sections": [
   {
    "id": "intro",
-   "start": 0.096,
-   "end": 6.382
+   "start": 0.0,
+   "end": 6.78
   },
   {
    "id": "uree",
-   "start": 7.367,
-   "end": 18.12
+   "start": 7.631,
+   "end": 19.039
   },
   {
    "id": "creat",
-   "start": 19.054,
-   "end": 33.033
+   "start": 19.843,
+   "end": 34.22
   },
   {
    "id": "urique",
-   "start": 33.98,
-   "end": 44.707
+   "start": 35.133,
+   "end": 46.252
   },
   {
    "id": "fin",
-   "start": 45.642,
-   "end": 52.222
+   "start": 47.051,
+   "end": 53.32
   }
  ],
  "words": [
   {
    "text": "Le",
-   "start": 0.096,
-   "end": 0.216
+   "start": 0.0,
+   "end": 0.26
   },
   {
    "text": "tube",
-   "start": 0.216,
-   "end": 0.409
+   "start": 0.26,
+   "end": 0.5
   },
   {
    "text": "jaune",
-   "start": 0.409,
-   "end": 0.721
+   "start": 0.5,
+   "end": 0.86
   },
   {
    "text": "surveille",
-   "start": 0.721,
-   "end": 1.07
+   "start": 0.86,
+   "end": 1.3
   },
   {
    "text": "les",
-   "start": 1.07,
-   "end": 1.178
+   "start": 1.3,
+   "end": 1.5
   },
   {
    "text": "reins.",
-   "start": 1.178,
-   "end": 1.49
+   "start": 1.5,
+   "end": 1.68
   },
   {
    "text": "Trois",
-   "start": 1.839,
-   "end": 1.995
+   "start": 2.04,
+   "end": 2.28
   },
   {
    "text": "chiffres",
-   "start": 1.995,
-   "end": 2.368
+   "start": 2.28,
+   "end": 2.62
   },
   {
    "text": "disent",
-   "start": 2.368,
-   "end": 2.56
+   "start": 2.62,
+   "end": 2.86
   },
   {
    "text": "s'ils",
-   "start": 2.56,
-   "end": 2.74
+   "start": 2.86,
+   "end": 3.14
   },
   {
    "text": "filtrent",
-   "start": 2.74,
-   "end": 3.065
+   "start": 3.14,
+   "end": 3.54
   },
   {
    "text": "bien…",
-   "start": 3.065,
-   "end": 3.353
+   "start": 3.54,
+   "end": 3.78
   },
   {
    "text": "souvent",
-   "start": 3.738,
-   "end": 4.014
+   "start": 4.12,
+   "end": 4.3
   },
   {
    "text": "bien",
-   "start": 4.014,
-   "end": 4.183
+   "start": 4.3,
+   "end": 4.74
   },
   {
    "text": "avant",
-   "start": 4.183,
-   "end": 4.447
+   "start": 4.74,
+   "end": 4.98
   },
   {
    "text": "le",
-   "start": 4.447,
-   "end": 4.531
+   "start": 4.98,
+   "end": 5.24
   },
   {
    "text": "moindre",
-   "start": 4.531,
-   "end": 4.832
+   "start": 5.24,
+   "end": 5.62
   },
   {
    "text": "symptôme.",
-   "start": 4.832,
-   "end": 5.421
+   "start": 5.62,
+   "end": 6.12
   },
   {
    "text": "Tu",
-   "start": 5.793,
-   "end": 5.877
+   "start": 6.3,
+   "end": 6.44
   },
   {
    "text": "les",
-   "start": 5.877,
-   "end": 5.962
+   "start": 6.44,
+   "end": 6.66
   },
   {
-   "text": "connais ?",
-   "start": 5.962,
-   "end": 6.382
+   "text": "connais ?",
+   "start": 6.66,
+   "end": 6.78
   },
   {
-   "text": "Un :",
-   "start": 7.367,
-   "end": 7.598
+   "text": "Un :",
+   "start": 7.631,
+   "end": 7.92
   },
   {
    "text": "l'urée,",
-   "start": 7.78,
-   "end": 8.192
+   "start": 8.2,
+   "end": 8.72
   },
   {
    "text": "le",
-   "start": 8.496,
-   "end": 8.556
+   "start": 8.88,
+   "end": 9.08
   },
   {
    "text": "déchet",
-   "start": 8.556,
-   "end": 8.799
+   "start": 9.08,
+   "end": 9.28
   },
   {
    "text": "des",
-   "start": 8.799,
-   "end": 8.884
+   "start": 9.28,
+   "end": 9.52
   },
   {
    "text": "protéines,",
-   "start": 8.884,
-   "end": 9.454
+   "start": 9.52,
+   "end": 10.02
   },
   {
    "text": "fabriqué",
-   "start": 9.758,
-   "end": 10.146
+   "start": 10.02,
+   "end": 10.58
   },
   {
    "text": "par",
-   "start": 10.146,
-   "end": 10.292
+   "start": 10.58,
+   "end": 10.78
   },
   {
    "text": "le",
-   "start": 10.292,
-   "end": 10.377
+   "start": 10.78,
+   "end": 11.0
   },
   {
    "text": "foie.",
-   "start": 10.377,
-   "end": 10.729
+   "start": 11.0,
+   "end": 11.48
   },
   {
    "text": "La",
-   "start": 11.105,
-   "end": 11.214
+   "start": 11.8,
+   "end": 11.8
   },
   {
-   "text": "norme :",
-   "start": 11.214,
-   "end": 11.627
+   "text": "norme :",
+   "start": 11.8,
+   "end": 12.28
   },
   {
    "text": "de",
-   "start": 12.003,
-   "end": 12.112
+   "start": 12.28,
+   "end": 12.52
   },
   {
    "text": "deux",
-   "start": 12.112,
-   "end": 12.221
+   "start": 12.52,
+   "end": 12.8
   },
   {
    "text": "virgule",
-   "start": 12.221,
-   "end": 12.525
+   "start": 12.8,
+   "end": 12.85
   },
   {
    "text": "cinq",
-   "start": 12.525,
-   "end": 12.816
+   "start": 12.8,
+   "end": 13.46
   },
   {
    "text": "à",
-   "start": 12.816,
-   "end": 12.865
+   "start": 13.46,
+   "end": 13.6
   },
   {
    "text": "sept",
-   "start": 12.865,
-   "end": 13.035
+   "start": 13.6,
+   "end": 13.94
   },
   {
    "text": "virgule",
-   "start": 13.035,
-   "end": 13.314
+   "start": 13.94,
+   "end": 13.99
   },
   {
    "text": "cinq",
-   "start": 13.314,
-   "end": 13.52
+   "start": 13.94,
+   "end": 14.58
   },
   {
    "text": "millimoles",
-   "start": 13.52,
-   "end": 13.945
+   "start": 14.58,
+   "end": 14.92
   },
   {
    "text": "par",
-   "start": 13.945,
-   "end": 14.115
+   "start": 14.92,
+   "end": 15.14
   },
   {
    "text": "litre.",
-   "start": 14.115,
-   "end": 14.539
+   "start": 15.14,
+   "end": 15.74
   },
   {
    "text": "Trop",
-   "start": 14.903,
-   "end": 15.11
+   "start": 15.94,
+   "end": 16.1
   },
   {
-   "text": "haute :",
-   "start": 15.11,
-   "end": 15.413
+   "text": "haute :",
+   "start": 16.1,
+   "end": 16.48
   },
   {
    "text": "les",
-   "start": 15.729,
-   "end": 15.802
+   "start": 16.76,
+   "end": 16.88
   },
   {
    "text": "reins",
-   "start": 15.802,
-   "end": 15.959
+   "start": 16.88,
+   "end": 17.0
   },
   {
    "text": "filtrent",
-   "start": 15.959,
-   "end": 16.287
+   "start": 17.0,
+   "end": 17.48
   },
   {
    "text": "mal,",
-   "start": 16.287,
-   "end": 16.578
+   "start": 17.48,
+   "end": 17.7
   },
   {
    "text": "ou",
-   "start": 16.882,
-   "end": 16.906
+   "start": 17.7,
+   "end": 17.94
   },
   {
    "text": "le",
-   "start": 16.906,
-   "end": 16.991
+   "start": 17.94,
+   "end": 18.1
   },
   {
    "text": "patient",
-   "start": 16.991,
-   "end": 17.355
+   "start": 18.1,
+   "end": 18.34
   },
   {
    "text": "est",
-   "start": 17.355,
-   "end": 17.403
+   "start": 18.34,
+   "end": 18.54
   },
   {
    "text": "déshydraté.",
-   "start": 17.404,
-   "end": 18.12
+   "start": 18.54,
+   "end": 19.039
   },
   {
-   "text": "Deux :",
-   "start": 19.054,
-   "end": 19.454
+   "text": "Deux :",
+   "start": 19.843,
+   "end": 20.22
   },
   {
    "text": "le",
-   "start": 19.83,
-   "end": 19.891
+   "start": 20.52,
+   "end": 20.74
   },
   {
    "text": "déchet",
-   "start": 19.891,
-   "end": 20.146
+   "start": 20.74,
+   "end": 21.04
   },
   {
    "text": "des",
-   "start": 20.146,
-   "end": 20.255
+   "start": 21.04,
+   "end": 21.24
   },
   {
    "text": "muscles,",
-   "start": 20.255,
-   "end": 20.631
+   "start": 21.24,
+   "end": 21.54
   },
   {
    "text": "c'est",
-   "start": 20.862,
-   "end": 20.983
+   "start": 21.7,
+   "end": 21.86
   },
   {
    "text": "la",
-   "start": 20.983,
-   "end": 21.068
+   "start": 21.86,
+   "end": 22.1
   },
   {
    "text": "créatinine.",
-   "start": 21.068,
-   "end": 21.881
+   "start": 22.1,
+   "end": 22.74
   },
   {
    "text": "Plus",
-   "start": 22.22,
-   "end": 22.354
+   "start": 23.16,
+   "end": 23.34
   },
   {
    "text": "on",
-   "start": 22.354,
-   "end": 22.451
+   "start": 23.34,
+   "end": 23.46
   },
   {
    "text": "a",
-   "start": 22.451,
-   "end": 22.536
+   "start": 23.46,
+   "end": 23.6
   },
   {
    "text": "de",
-   "start": 22.536,
-   "end": 22.645
+   "start": 23.6,
+   "end": 23.74
   },
   {
    "text": "muscles,",
-   "start": 22.645,
-   "end": 23.118
+   "start": 23.74,
+   "end": 24.06
   },
   {
    "text": "plus",
-   "start": 23.288,
-   "end": 23.421
+   "start": 24.16,
+   "end": 24.38
   },
   {
    "text": "on",
-   "start": 23.421,
-   "end": 23.519
+   "start": 24.38,
+   "end": 24.56
   },
   {
    "text": "en",
-   "start": 23.519,
-   "end": 23.616
+   "start": 24.56,
+   "end": 24.68
   },
   {
-   "text": "fabrique :",
-   "start": 23.616,
-   "end": 24.113
+   "text": "fabrique :",
+   "start": 24.68,
+   "end": 25.1
   },
   {
    "text": "la",
-   "start": 24.441,
-   "end": 24.526
+   "start": 25.3,
+   "end": 25.54
   },
   {
    "text": "norme",
-   "start": 24.526,
-   "end": 24.805
+   "start": 25.54,
+   "end": 25.88
   },
   {
    "text": "est",
-   "start": 24.805,
-   "end": 24.841
+   "start": 25.88,
+   "end": 26.12
   },
   {
    "text": "plus",
-   "start": 24.841,
-   "end": 25.011
+   "start": 26.12,
+   "end": 26.26
   },
   {
    "text": "haute",
-   "start": 25.011,
-   "end": 25.145
+   "start": 26.26,
+   "end": 26.4
   },
   {
    "text": "chez",
-   "start": 25.145,
-   "end": 25.254
+   "start": 26.4,
+   "end": 26.52
   },
   {
    "text": "l'homme.",
-   "start": 25.254,
-   "end": 25.63
+   "start": 26.52,
+   "end": 26.78
   },
   {
    "text": "Si",
-   "start": 25.959,
-   "end": 26.202
+   "start": 27.22,
+   "end": 27.4
   },
   {
    "text": "elle",
-   "start": 26.202,
-   "end": 26.287
+   "start": 27.4,
+   "end": 27.56
   },
   {
    "text": "monte,",
-   "start": 26.287,
-   "end": 26.675
+   "start": 27.56,
+   "end": 27.82
   },
   {
    "text": "les",
-   "start": 26.942,
-   "end": 27.027
+   "start": 28.0,
+   "end": 28.2
   },
   {
    "text": "reins",
-   "start": 27.027,
-   "end": 27.197
+   "start": 28.2,
+   "end": 28.3
   },
   {
    "text": "filtrent",
-   "start": 27.197,
-   "end": 27.561
+   "start": 28.3,
+   "end": 28.8
   },
   {
    "text": "moins",
-   "start": 27.561,
-   "end": 27.719
+   "start": 28.8,
+   "end": 29.0
   },
   {
    "text": "bien.",
-   "start": 27.719,
-   "end": 28.046
+   "start": 29.0,
+   "end": 29.18
   },
   {
    "text": "On",
-   "start": 28.373,
-   "end": 28.47
+   "start": 29.18,
+   "end": 29.68
   },
   {
    "text": "en",
-   "start": 28.47,
-   "end": 28.567
+   "start": 29.68,
+   "end": 29.9
   },
   {
    "text": "calcule",
-   "start": 28.567,
-   "end": 28.943
+   "start": 29.9,
+   "end": 30.18
   },
   {
    "text": "le",
-   "start": 28.943,
-   "end": 29.065
+   "start": 30.18,
+   "end": 30.48
   },
   {
    "text": "DFG,",
-   "start": 29.065,
-   "end": 29.732
+   "start": 30.48,
+   "end": 31.02
   },
   {
    "text": "le",
-   "start": 30.048,
-   "end": 30.12
+   "start": 31.16,
+   "end": 31.34
   },
   {
    "text": "débit",
-   "start": 30.12,
-   "end": 30.339
+   "start": 31.34,
+   "end": 31.5
   },
   {
    "text": "de",
-   "start": 30.339,
-   "end": 30.436
+   "start": 31.5,
+   "end": 31.68
   },
   {
-   "text": "filtration :",
-   "start": 30.436,
-   "end": 31.079
+   "text": "filtration :",
+   "start": 31.68,
+   "end": 32.18
   },
   {
    "text": "normal",
-   "start": 31.455,
-   "end": 31.747
+   "start": 32.54,
+   "end": 32.92
   },
   {
    "text": "au-dessus",
-   "start": 31.747,
-   "end": 32.111
+   "start": 32.92,
+   "end": 33.42
   },
   {
    "text": "de",
-   "start": 32.111,
-   "end": 32.196
+   "start": 33.42,
+   "end": 33.64
   },
   {
    "text": "quatre-vingt-dix.",
-   "start": 32.196,
-   "end": 33.033
+   "start": 33.64,
+   "end": 34.22
   },
   {
-   "text": "Trois :",
-   "start": 33.98,
-   "end": 34.344
+   "text": "Trois :",
+   "start": 35.133,
+   "end": 35.48
   },
   {
    "text": "l'acide",
-   "start": 34.757,
-   "end": 35.048
+   "start": 35.88,
+   "end": 36.24
   },
   {
    "text": "urique,",
-   "start": 35.048,
-   "end": 35.436
+   "start": 36.24,
+   "end": 36.54
   },
   {
    "text": "le",
-   "start": 35.643,
-   "end": 35.715
+   "start": 36.84,
+   "end": 36.98
   },
   {
    "text": "déchet",
-   "start": 35.715,
-   "end": 35.97
+   "start": 36.98,
+   "end": 37.22
   },
   {
    "text": "des",
-   "start": 35.97,
-   "end": 36.055
+   "start": 37.22,
+   "end": 37.4
   },
   {
    "text": "purines,",
-   "start": 36.055,
-   "end": 36.529
+   "start": 37.4,
+   "end": 37.84
   },
   {
    "text": "qu'on",
-   "start": 36.747,
-   "end": 36.856
+   "start": 37.84,
+   "end": 38.12
   },
   {
    "text": "trouve",
-   "start": 36.856,
-   "end": 37.075
+   "start": 38.12,
+   "end": 38.28
   },
   {
    "text": "dans",
-   "start": 37.075,
-   "end": 37.16
+   "start": 38.28,
+   "end": 38.46
   },
   {
    "text": "la",
-   "start": 37.16,
-   "end": 37.232
+   "start": 38.46,
+   "end": 38.62
   },
   {
    "text": "viande",
-   "start": 37.232,
-   "end": 37.439
+   "start": 38.62,
+   "end": 38.82
   },
   {
    "text": "rouge,",
-   "start": 37.439,
-   "end": 37.779
+   "start": 38.82,
+   "end": 39.14
   },
   {
    "text": "les",
-   "start": 37.985,
-   "end": 38.058
+   "start": 39.36,
+   "end": 39.56
   },
   {
    "text": "abats",
-   "start": 38.058,
-   "end": 38.373
+   "start": 39.56,
+   "end": 39.88
   },
   {
    "text": "ou",
-   "start": 38.373,
-   "end": 38.422
+   "start": 39.88,
+   "end": 40.06
   },
   {
    "text": "la",
-   "start": 38.422,
-   "end": 38.519
+   "start": 40.06,
+   "end": 40.3
   },
   {
    "text": "bière.",
-   "start": 38.519,
-   "end": 38.944
+   "start": 40.3,
+   "end": 40.7
   },
   {
    "text": "Trop",
-   "start": 39.318,
-   "end": 39.549
+   "start": 41.1,
+   "end": 41.28
   },
   {
    "text": "haut,",
-   "start": 39.549,
-   "end": 39.755
+   "start": 41.28,
+   "end": 41.48
   },
   {
    "text": "il",
-   "start": 40.059,
-   "end": 40.156
+   "start": 41.58,
+   "end": 41.72
   },
   {
    "text": "forme",
-   "start": 40.156,
-   "end": 40.386
+   "start": 41.72,
+   "end": 42.04
   },
   {
    "text": "des",
-   "start": 40.386,
-   "end": 40.447
+   "start": 42.04,
+   "end": 42.32
   },
   {
-   "text": "cristaux :",
-   "start": 40.447,
-   "end": 40.932
+   "text": "cristaux :",
+   "start": 42.32,
+   "end": 42.7
   },
   {
    "text": "c'est",
-   "start": 41.357,
-   "end": 41.454
+   "start": 42.92,
+   "end": 43.08
   },
   {
    "text": "la",
-   "start": 41.454,
-   "end": 41.527
+   "start": 43.08,
+   "end": 43.22
   },
   {
    "text": "crise",
-   "start": 41.527,
-   "end": 41.746
+   "start": 43.22,
+   "end": 43.36
   },
   {
    "text": "de",
-   "start": 41.746,
-   "end": 41.855
+   "start": 43.36,
+   "end": 43.62
   },
   {
    "text": "goutte,",
-   "start": 41.855,
-   "end": 42.195
+   "start": 43.62,
+   "end": 43.92
   },
   {
    "text": "souvent",
-   "start": 42.413,
-   "end": 42.704
+   "start": 43.92,
+   "end": 44.22
   },
   {
    "text": "au",
-   "start": 42.704,
-   "end": 42.753
+   "start": 44.22,
+   "end": 44.46
   },
   {
    "text": "gros",
-   "start": 42.753,
-   "end": 42.898
+   "start": 44.46,
+   "end": 44.58
   },
   {
    "text": "orteil,",
-   "start": 42.898,
-   "end": 43.42
+   "start": 44.58,
+   "end": 45.12
   },
   {
    "text": "ou",
-   "start": 43.724,
-   "end": 43.748
+   "start": 45.3,
+   "end": 45.4
   },
   {
    "text": "des",
-   "start": 43.748,
-   "end": 43.845
+   "start": 45.4,
+   "end": 45.58
   },
   {
    "text": "calculs",
-   "start": 43.845,
-   "end": 44.221
+   "start": 45.58,
+   "end": 45.92
   },
   {
    "text": "dans",
-   "start": 44.221,
-   "end": 44.33
+   "start": 45.92,
+   "end": 46.02
   },
   {
    "text": "les",
-   "start": 44.331,
-   "end": 44.428
+   "start": 46.02,
+   "end": 46.16
   },
   {
    "text": "reins.",
-   "start": 44.428,
-   "end": 44.707
+   "start": 46.16,
+   "end": 46.252
   },
   {
    "text": "Urée,",
-   "start": 45.642,
-   "end": 46.156
+   "start": 47.051,
+   "end": 48.02
   },
   {
    "text": "créatinine,",
-   "start": 46.389,
-   "end": 47.076
+   "start": 48.02,
+   "end": 48.46
   },
   {
    "text": "acide",
-   "start": 47.37,
-   "end": 47.639
+   "start": 48.66,
+   "end": 48.92
   },
   {
-   "text": "urique :",
-   "start": 47.639,
-   "end": 48.093
+   "text": "urique :",
+   "start": 48.92,
+   "end": 49.24
   },
   {
    "text": "tu",
-   "start": 48.375,
-   "end": 48.497
+   "start": 49.56,
+   "end": 49.64
   },
   {
    "text": "as",
-   "start": 48.497,
-   "end": 48.534
+   "start": 49.64,
+   "end": 49.78
   },
   {
    "text": "le",
-   "start": 48.534,
-   "end": 48.632
+   "start": 49.78,
+   "end": 49.86
   },
   {
    "text": "bilan",
-   "start": 48.632,
-   "end": 48.877
+   "start": 49.86,
+   "end": 50.06
   },
   {
    "text": "rénal.",
-   "start": 48.877,
-   "end": 49.441
+   "start": 50.06,
+   "end": 50.88
   },
   {
    "text": "Prochaine",
-   "start": 49.808,
-   "end": 50.175
+   "start": 50.88,
+   "end": 51.22
   },
   {
-   "text": "vidéo :",
-   "start": 50.175,
-   "end": 50.641
+   "text": "vidéo :",
+   "start": 51.22,
+   "end": 51.64
   },
   {
    "text": "le",
-   "start": 50.996,
-   "end": 51.082
+   "start": 51.94,
+   "end": 52.18
   },
   {
    "text": "fer",
-   "start": 51.082,
-   "end": 51.401
+   "start": 52.18,
+   "end": 52.38
   },
   {
    "text": "et",
-   "start": 51.401,
-   "end": 51.425
+   "start": 52.38,
+   "end": 52.64
   },
   {
    "text": "la",
-   "start": 51.425,
-   "end": 51.523
+   "start": 52.64,
+   "end": 52.82
   },
   {
    "text": "ferritine.",
-   "start": 51.523,
-   "end": 52.222
+   "start": 52.82,
+   "end": 53.32
   }
  ]
 }

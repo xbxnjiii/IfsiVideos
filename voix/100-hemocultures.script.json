@@ -1,0 +1,32 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Une hémoculture mal prélevée, et ton patient reçoit des antibiotiques pour une bactérie… venue de sa peau. Quatre règles pour la réussir. Tu les connais ?"
+ },
+ {
+  "id": "quand",
+  "rate": "+3%",
+  "text": "Un : le bon moment. Devant une fièvre, des frissons, ou au contraire une température trop basse. Et toujours avant la première dose d'antibiotique, sinon les bactéries ne poussent plus."
+ },
+ {
+  "id": "volume",
+  "rate": "+3%",
+  "text": "Deux : le volume. C'est lui qui trouve la bactérie. Chez l'adulte, on remplit chaque flacon de huit à dix millilitres, et on prélève en général quatre à six flacons en une seule fois."
+ },
+ {
+  "id": "ordre",
+  "rate": "+3%",
+  "text": "Trois : l'ordre. Le flacon aérobie, au bouchon vert, d'abord, puis l'anaérobie, au bouchon orange. Avec une aiguille à ailettes, l'air de la tubulure part ainsi dans le premier."
+ },
+ {
+  "id": "asepsie",
+  "rate": "+3%",
+  "text": "Quatre : l'asepsie. Friction des mains, antiseptique alcoolique sur la peau, on laisse sécher, et on ne touche plus la veine. On désinfecte aussi le haut des flacons."
+ },
+ {
+  "id": "fin",
+  "rate": "+2%",
+  "text": "Avant l'antibiotique, des flacons bien remplis, d'abord le vert, ensuite l'orange, et une asepsie parfaite. Puis on étiquette, et on envoie vite au laboratoire."
+ }
+]
