@@ -1,0 +1,32 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Des doigts raides et gonflés tous les matins ? Ou une thyroïde qui se dérègle ? Le tube jaune cherche quatre anticorps de plus. Tu les connais ?"
+ },
+ {
+  "id": "ccp",
+  "rate": "+3%",
+  "text": "Un : les anti-C C P. Ils sont très spécifiques de la polyarthrite rhumatoïde, une inflammation des articulations, surtout des mains. Ils peuvent même apparaître avant les premières douleurs."
+ },
+ {
+  "id": "fr",
+  "rate": "+3%",
+  "text": "Deux : le facteur rhumatoïde. Il accompagne souvent les anti-C C P, mais il est moins précis : on le trouve aussi dans des infections, d'autres maladies, et chez des personnes âgées en bonne santé."
+ },
+ {
+  "id": "tpo",
+  "rate": "+3%",
+  "text": "Trois : les anti-T P O. Ils attaquent la thyroïde, et signent une thyroïdite auto-immune : la maladie de Hashimoto, qui mène souvent à l'hypothyroïdie."
+ },
+ {
+  "id": "tg",
+  "rate": "+3%",
+  "text": "Quatre : les anti-thyroglobuline. Ils complètent les anti-T P O, et servent aussi dans le suivi de certains cancers de la thyroïde."
+ },
+ {
+  "id": "fin",
+  "rate": "+2%",
+  "text": "Les articulations avec les anti-C C P, la thyroïde avec les anti-T P O. Prochaine vidéo, la dernière de la série : les vitamines."
+ }
+]

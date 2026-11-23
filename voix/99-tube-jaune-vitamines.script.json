@@ -1,0 +1,27 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Fatigue, fourmillements, anémie… et si c'était un manque de vitamines ? Dernière vidéo de la série du tube jaune : vitamine D, B douze, folates, et un marqueur de l'alcool."
+ },
+ {
+  "id": "vitd",
+  "rate": "+3%",
+  "text": "Un : la vitamine D, fabriquée par la peau au soleil. Elle fixe le calcium dans les os. En France, beaucoup de personnes en manquent, surtout en hiver, chez les personnes âgées et les peaux foncées."
+ },
+ {
+  "id": "b12",
+  "rate": "+3%",
+  "text": "Deux : la vitamine B douze et les folates, aussi appelés vitamine B neuf. Il en faut pour fabriquer les globules rouges. S'ils manquent, les globules rouges sont trop gros : c'est une anémie. Et la B douze protège aussi les nerfs."
+ },
+ {
+  "id": "cdt",
+  "rate": "+3%",
+  "text": "Trois : la C D T, la transferrine carboxy-déficiente. Elle augmente quand on boit beaucoup d'alcool, tous les jours, pendant au moins deux semaines. Elle sert à repérer et à suivre une consommation excessive."
+ },
+ {
+  "id": "fin",
+  "rate": "+2%",
+  "text": "Vitamine D, B douze, folates, C D T : la série du tube jaune est terminée. Bravo, tu sais lire le tube jaune !"
+ }
+]

@@ -108,6 +108,8 @@ pas de logiciel de montage, pas de banque d'images.
 | 95 | Série les tubes : le tube jaune, l'allergologie (Phadiatop, Trophatop, IgE spécifiques) ; voix gratuite, directives Instagram | `Tube-Jaune-Allergologie` | [voix/95-tube-jaune-allergologie.script.json](voix/95-tube-jaune-allergologie.script.json) | [plan](docs/lpi/plan-tube-jaune-serie.md) |
 | 96 | Série les tubes : le tube jaune, les médicaments (digoxine, lithium) ; voix gratuite, directives Instagram | `Tube-Jaune-Medicaments` | [voix/96-tube-jaune-medicaments.script.json](voix/96-tube-jaune-medicaments.script.json) | [plan](docs/lpi/plan-tube-jaune-serie.md) |
 | 97 | Série les tubes : le tube jaune, l'auto-immunité 1/2 (AAN, anti-ADN, ENA, ANCA) ; voix gratuite, directives Instagram | `Tube-Jaune-Auto-Immunite` | [voix/97-tube-jaune-auto-immunite.script.json](voix/97-tube-jaune-auto-immunite.script.json) | [plan](docs/lpi/plan-tube-jaune-serie.md) |
+| 98 | Série les tubes : le tube jaune, l'auto-immunité 2/2 (anti-CCP, facteur rhumatoïde, anti-TPO, anti-Tg) ; voix gratuite, directives Instagram | `Tube-Jaune-Auto-Immunite-2` | [voix/98-tube-jaune-auto-immunite-2.script.json](voix/98-tube-jaune-auto-immunite-2.script.json) | [plan](docs/lpi/plan-tube-jaune-serie.md) |
+| 99 | Série les tubes : le tube jaune, les vitamines (D, B12, folates) et la CDT, fin de la série ; voix gratuite, directives Instagram | `Tube-Jaune-Vitamines` | [voix/99-tube-jaune-vitamines.script.json](voix/99-tube-jaune-vitamines.script.json) | [plan](docs/lpi/plan-tube-jaune-serie.md) |
 
 ## Utilisation
 

@@ -196,6 +196,10 @@ import {TubeJauneMedicaments, TubeJauneMedicamentsProps} from './videos/tube-jau
 import {TL as TUBE_JAUNE_MEDICAMENTS_TL} from './videos/tube-jaune-medicaments/timeline';
 import {TubeJauneAutoImmunite, TubeJauneAutoImmuniteProps} from './videos/tube-jaune-auto-immunite/TubeJauneAutoImmunite';
 import {TL as TUBE_JAUNE_AUTO_IMMUNITE_TL} from './videos/tube-jaune-auto-immunite/timeline';
+import {TubeJauneAutoImmunite2, TubeJauneAutoImmunite2Props} from './videos/tube-jaune-auto-immunite-2/TubeJauneAutoImmunite2';
+import {TL as TUBE_JAUNE_AUTO_IMMUNITE_2_TL} from './videos/tube-jaune-auto-immunite-2/timeline';
+import {TubeJauneVitamines, TubeJauneVitaminesProps} from './videos/tube-jaune-vitamines/TubeJauneVitamines';
+import {TL as TUBE_JAUNE_VITAMINES_TL} from './videos/tube-jaune-vitamines/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -1162,6 +1166,26 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies TubeJauneAutoImmuniteProps}
+		/>
+		{/* 98 · Tube-Jaune-Auto-Immunite-2 */}
+		<Composition
+			id="Tube-Jaune-Auto-Immunite-2"
+			component={TubeJauneAutoImmunite2}
+			durationInFrames={TUBE_JAUNE_AUTO_IMMUNITE_2_TL.total}
+			fps={TUBE_JAUNE_AUTO_IMMUNITE_2_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies TubeJauneAutoImmunite2Props}
+		/>
+		{/* 99 · Tube-Jaune-Vitamines */}
+		<Composition
+			id="Tube-Jaune-Vitamines"
+			component={TubeJauneVitamines}
+			durationInFrames={TUBE_JAUNE_VITAMINES_TL.total}
+			fps={TUBE_JAUNE_VITAMINES_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies TubeJauneVitaminesProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition

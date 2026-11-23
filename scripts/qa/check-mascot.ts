@@ -194,6 +194,10 @@ import * as tubejaunemedicaments from '../../src/videos/tube-jaune-medicaments/m
 import * as tubejaunemedicamentsTL from '../../src/videos/tube-jaune-medicaments/timeline';
 import * as tubejauneautoimmunite from '../../src/videos/tube-jaune-auto-immunite/mascot';
 import * as tubejauneautoimmuniteTL from '../../src/videos/tube-jaune-auto-immunite/timeline';
+import * as tubejauneautoimmunite2 from '../../src/videos/tube-jaune-auto-immunite-2/mascot';
+import * as tubejauneautoimmunite2TL from '../../src/videos/tube-jaune-auto-immunite-2/timeline';
+import * as tubejaunevitamines from '../../src/videos/tube-jaune-vitamines/mascot';
+import * as tubejaunevitaminesTL from '../../src/videos/tube-jaune-vitamines/timeline';
 
 const VIDEOS: Record<string, [typeof constantes.MASCOT, typeof constantesTL.TL]> = {
 	constantes: [constantes.MASCOT, constantesTL.TL],
@@ -292,6 +296,8 @@ const VIDEOS: Record<string, [typeof constantes.MASCOT, typeof constantesTL.TL]>
 	'tube-jaune-allergologie': [tubejauneallergologie.MASCOT, tubejauneallergologieTL.TL],
 	'tube-jaune-medicaments': [tubejaunemedicaments.MASCOT, tubejaunemedicamentsTL.TL],
 	'tube-jaune-auto-immunite': [tubejauneautoimmunite.MASCOT, tubejauneautoimmuniteTL.TL],
+	'tube-jaune-auto-immunite-2': [tubejauneautoimmunite2.MASCOT, tubejauneautoimmunite2TL.TL],
+	'tube-jaune-vitamines': [tubejaunevitamines.MASCOT, tubejaunevitaminesTL.TL],
 };
 const name = process.argv[2] ?? 'constantes';
 const [MASCOT, TL] = VIDEOS[name];

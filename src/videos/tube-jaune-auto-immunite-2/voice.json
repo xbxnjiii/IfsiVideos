@@ -1,0 +1,803 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 52.958,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.05,
+   "end": 6.911
+  },
+  {
+   "id": "ccp",
+   "start": 7.859,
+   "end": 16.537
+  },
+  {
+   "id": "fr",
+   "start": 17.47,
+   "end": 27.324
+  },
+  {
+   "id": "tpo",
+   "start": 28.243,
+   "end": 36.387
+  },
+  {
+   "id": "tg",
+   "start": 37.314,
+   "end": 44.11
+  },
+  {
+   "id": "fin",
+   "start": 45.04,
+   "end": 52.613
+  }
+ ],
+ "words": [
+  {
+   "text": "Des",
+   "start": 0.05,
+   "end": 0.23
+  },
+  {
+   "text": "doigts",
+   "start": 0.23,
+   "end": 0.422
+  },
+  {
+   "text": "raides",
+   "start": 0.422,
+   "end": 0.687
+  },
+  {
+   "text": "et",
+   "start": 0.687,
+   "end": 0.723
+  },
+  {
+   "text": "gonflés",
+   "start": 0.723,
+   "end": 1.095
+  },
+  {
+   "text": "tous",
+   "start": 1.095,
+   "end": 1.191
+  },
+  {
+   "text": "les",
+   "start": 1.191,
+   "end": 1.263
+  },
+  {
+   "text": "matins ?",
+   "start": 1.263,
+   "end": 1.696
+  },
+  {
+   "text": "Ou",
+   "start": 2.021,
+   "end": 2.177
+  },
+  {
+   "text": "une",
+   "start": 2.177,
+   "end": 2.274
+  },
+  {
+   "text": "thyroïde",
+   "start": 2.274,
+   "end": 2.742
+  },
+  {
+   "text": "qui",
+   "start": 2.742,
+   "end": 2.862
+  },
+  {
+   "text": "se",
+   "start": 2.862,
+   "end": 2.971
+  },
+  {
+   "text": "dérègle ?",
+   "start": 2.971,
+   "end": 3.499
+  },
+  {
+   "text": "Le",
+   "start": 3.87,
+   "end": 3.99
+  },
+  {
+   "text": "tube",
+   "start": 3.99,
+   "end": 4.183
+  },
+  {
+   "text": "jaune",
+   "start": 4.183,
+   "end": 4.507
+  },
+  {
+   "text": "cherche",
+   "start": 4.507,
+   "end": 4.82
+  },
+  {
+   "text": "quatre",
+   "start": 4.82,
+   "end": 5.06
+  },
+  {
+   "text": "anticorps",
+   "start": 5.06,
+   "end": 5.397
+  },
+  {
+   "text": "de",
+   "start": 5.397,
+   "end": 5.481
+  },
+  {
+   "text": "plus.",
+   "start": 5.481,
+   "end": 5.949
+  },
+  {
+   "text": "Tu",
+   "start": 6.322,
+   "end": 6.406
+  },
+  {
+   "text": "les",
+   "start": 6.406,
+   "end": 6.49
+  },
+  {
+   "text": "connais ?",
+   "start": 6.49,
+   "end": 6.911
+  },
+  {
+   "text": "Un :",
+   "start": 7.859,
+   "end": 8.126
+  },
+  {
+   "text": "les",
+   "start": 8.441,
+   "end": 8.526
+  },
+  {
+   "text": "anti-C",
+   "start": 8.526,
+   "end": 8.878
+  },
+  {
+   "text": "C",
+   "start": 8.878,
+   "end": 9.012
+  },
+  {
+   "text": "P.",
+   "start": 9.012,
+   "end": 9.23
+  },
+  {
+   "text": "Ils",
+   "start": 9.23,
+   "end": 9.351
+  },
+  {
+   "text": "sont",
+   "start": 9.351,
+   "end": 9.473
+  },
+  {
+   "text": "très",
+   "start": 9.473,
+   "end": 9.643
+  },
+  {
+   "text": "spécifiques",
+   "start": 9.643,
+   "end": 10.152
+  },
+  {
+   "text": "de",
+   "start": 10.152,
+   "end": 10.225
+  },
+  {
+   "text": "la",
+   "start": 10.225,
+   "end": 10.298
+  },
+  {
+   "text": "polyarthrite",
+   "start": 10.298,
+   "end": 10.808
+  },
+  {
+   "text": "rhumatoïde,",
+   "start": 10.808,
+   "end": 11.39
+  },
+  {
+   "text": "une",
+   "start": 11.791,
+   "end": 11.851
+  },
+  {
+   "text": "inflammation",
+   "start": 11.851,
+   "end": 12.349
+  },
+  {
+   "text": "des",
+   "start": 12.349,
+   "end": 12.422
+  },
+  {
+   "text": "articulations,",
+   "start": 12.422,
+   "end": 13.198
+  },
+  {
+   "text": "surtout",
+   "start": 13.441,
+   "end": 13.696
+  },
+  {
+   "text": "des",
+   "start": 13.696,
+   "end": 13.817
+  },
+  {
+   "text": "mains.",
+   "start": 13.817,
+   "end": 14.109
+  },
+  {
+   "text": "Ils",
+   "start": 14.45,
+   "end": 14.644
+  },
+  {
+   "text": "peuvent",
+   "start": 14.644,
+   "end": 14.863
+  },
+  {
+   "text": "même",
+   "start": 14.863,
+   "end": 15.02
+  },
+  {
+   "text": "apparaître",
+   "start": 15.02,
+   "end": 15.506
+  },
+  {
+   "text": "avant",
+   "start": 15.506,
+   "end": 15.651
+  },
+  {
+   "text": "les",
+   "start": 15.651,
+   "end": 15.724
+  },
+  {
+   "text": "premières",
+   "start": 15.724,
+   "end": 16.04
+  },
+  {
+   "text": "douleurs.",
+   "start": 16.04,
+   "end": 16.537
+  },
+  {
+   "text": "Deux :",
+   "start": 17.47,
+   "end": 17.858
+  },
+  {
+   "text": "le",
+   "start": 18.246,
+   "end": 18.319
+  },
+  {
+   "text": "facteur",
+   "start": 18.319,
+   "end": 18.744
+  },
+  {
+   "text": "rhumatoïde.",
+   "start": 18.744,
+   "end": 19.472
+  },
+  {
+   "text": "Il",
+   "start": 19.8,
+   "end": 19.97
+  },
+  {
+   "text": "accompagne",
+   "start": 19.97,
+   "end": 20.383
+  },
+  {
+   "text": "souvent",
+   "start": 20.383,
+   "end": 20.65
+  },
+  {
+   "text": "les",
+   "start": 20.65,
+   "end": 20.735
+  },
+  {
+   "text": "anti-C",
+   "start": 20.735,
+   "end": 21.135
+  },
+  {
+   "text": "C",
+   "start": 21.135,
+   "end": 21.269
+  },
+  {
+   "text": "P,",
+   "start": 21.269,
+   "end": 21.523
+  },
+  {
+   "text": "mais",
+   "start": 21.863,
+   "end": 21.936
+  },
+  {
+   "text": "il",
+   "start": 21.936,
+   "end": 22.082
+  },
+  {
+   "text": "est",
+   "start": 22.082,
+   "end": 22.106
+  },
+  {
+   "text": "moins",
+   "start": 22.106,
+   "end": 22.252
+  },
+  {
+   "text": "précis :",
+   "start": 22.252,
+   "end": 22.725
+  },
+  {
+   "text": "on",
+   "start": 23.065,
+   "end": 23.089
+  },
+  {
+   "text": "le",
+   "start": 23.089,
+   "end": 23.162
+  },
+  {
+   "text": "trouve",
+   "start": 23.162,
+   "end": 23.392
+  },
+  {
+   "text": "aussi",
+   "start": 23.392,
+   "end": 23.647
+  },
+  {
+   "text": "dans",
+   "start": 23.647,
+   "end": 23.756
+  },
+  {
+   "text": "des",
+   "start": 23.756,
+   "end": 23.841
+  },
+  {
+   "text": "infections,",
+   "start": 23.841,
+   "end": 24.46
+  },
+  {
+   "text": "d'autres",
+   "start": 24.703,
+   "end": 24.958
+  },
+  {
+   "text": "maladies,",
+   "start": 24.958,
+   "end": 25.455
+  },
+  {
+   "text": "et",
+   "start": 25.759,
+   "end": 25.832
+  },
+  {
+   "text": "chez",
+   "start": 25.832,
+   "end": 25.929
+  },
+  {
+   "text": "des",
+   "start": 25.929,
+   "end": 26.014
+  },
+  {
+   "text": "personnes",
+   "start": 26.014,
+   "end": 26.353
+  },
+  {
+   "text": "âgées",
+   "start": 26.354,
+   "end": 26.608
+  },
+  {
+   "text": "en",
+   "start": 26.608,
+   "end": 26.681
+  },
+  {
+   "text": "bonne",
+   "start": 26.681,
+   "end": 26.851
+  },
+  {
+   "text": "santé.",
+   "start": 26.851,
+   "end": 27.324
+  },
+  {
+   "text": "Trois :",
+   "start": 28.243,
+   "end": 28.643
+  },
+  {
+   "text": "les",
+   "start": 28.971,
+   "end": 29.08
+  },
+  {
+   "text": "anti-T",
+   "start": 29.08,
+   "end": 29.529
+  },
+  {
+   "text": "P",
+   "start": 29.529,
+   "end": 29.735
+  },
+  {
+   "text": "O.",
+   "start": 29.735,
+   "end": 29.966
+  },
+  {
+   "text": "Ils",
+   "start": 30.295,
+   "end": 30.477
+  },
+  {
+   "text": "attaquent",
+   "start": 30.477,
+   "end": 30.78
+  },
+  {
+   "text": "la",
+   "start": 30.78,
+   "end": 30.853
+  },
+  {
+   "text": "thyroïde,",
+   "start": 30.853,
+   "end": 31.399
+  },
+  {
+   "text": "et",
+   "start": 31.642,
+   "end": 31.678
+  },
+  {
+   "text": "signent",
+   "start": 31.678,
+   "end": 31.933
+  },
+  {
+   "text": "une",
+   "start": 31.933,
+   "end": 31.994
+  },
+  {
+   "text": "thyroïdite",
+   "start": 31.994,
+   "end": 32.528
+  },
+  {
+   "text": "auto-immune :",
+   "start": 32.528,
+   "end": 33.098
+  },
+  {
+   "text": "la",
+   "start": 33.426,
+   "end": 33.475
+  },
+  {
+   "text": "maladie",
+   "start": 33.475,
+   "end": 33.827
+  },
+  {
+   "text": "de",
+   "start": 33.827,
+   "end": 33.911
+  },
+  {
+   "text": "Hashimoto,",
+   "start": 33.911,
+   "end": 34.579
+  },
+  {
+   "text": "qui",
+   "start": 34.834,
+   "end": 34.943
+  },
+  {
+   "text": "mène",
+   "start": 34.943,
+   "end": 35.077
+  },
+  {
+   "text": "souvent",
+   "start": 35.077,
+   "end": 35.416
+  },
+  {
+   "text": "à",
+   "start": 35.416,
+   "end": 35.465
+  },
+  {
+   "text": "l'hypothyroïdie.",
+   "start": 35.465,
+   "end": 36.387
+  },
+  {
+   "text": "Quatre :",
+   "start": 37.314,
+   "end": 37.763
+  },
+  {
+   "text": "les",
+   "start": 38.115,
+   "end": 38.188
+  },
+  {
+   "text": "anti-thyroglobuline.",
+   "start": 38.188,
+   "end": 39.462
+  },
+  {
+   "text": "Ils",
+   "start": 39.802,
+   "end": 39.984
+  },
+  {
+   "text": "complètent",
+   "start": 39.984,
+   "end": 40.348
+  },
+  {
+   "text": "les",
+   "start": 40.348,
+   "end": 40.421
+  },
+  {
+   "text": "anti-T",
+   "start": 40.421,
+   "end": 40.809
+  },
+  {
+   "text": "P",
+   "start": 40.809,
+   "end": 41.052
+  },
+  {
+   "text": "O,",
+   "start": 41.052,
+   "end": 41.295
+  },
+  {
+   "text": "et",
+   "start": 41.622,
+   "end": 41.671
+  },
+  {
+   "text": "servent",
+   "start": 41.671,
+   "end": 41.901
+  },
+  {
+   "text": "aussi",
+   "start": 41.901,
+   "end": 42.108
+  },
+  {
+   "text": "dans",
+   "start": 42.108,
+   "end": 42.217
+  },
+  {
+   "text": "le",
+   "start": 42.217,
+   "end": 42.29
+  },
+  {
+   "text": "suivi",
+   "start": 42.29,
+   "end": 42.581
+  },
+  {
+   "text": "de",
+   "start": 42.581,
+   "end": 42.678
+  },
+  {
+   "text": "certains",
+   "start": 42.678,
+   "end": 42.969
+  },
+  {
+   "text": "cancers",
+   "start": 42.969,
+   "end": 43.333
+  },
+  {
+   "text": "de",
+   "start": 43.333,
+   "end": 43.394
+  },
+  {
+   "text": "la",
+   "start": 43.394,
+   "end": 43.479
+  },
+  {
+   "text": "thyroïde.",
+   "start": 43.479,
+   "end": 44.11
+  },
+  {
+   "text": "Les",
+   "start": 45.04,
+   "end": 45.199
+  },
+  {
+   "text": "articulations",
+   "start": 45.199,
+   "end": 45.947
+  },
+  {
+   "text": "avec",
+   "start": 45.947,
+   "end": 46.155
+  },
+  {
+   "text": "les",
+   "start": 46.155,
+   "end": 46.216
+  },
+  {
+   "text": "anti-C",
+   "start": 46.216,
+   "end": 46.633
+  },
+  {
+   "text": "C",
+   "start": 46.633,
+   "end": 46.792
+  },
+  {
+   "text": "P,",
+   "start": 46.792,
+   "end": 47.111
+  },
+  {
+   "text": "la",
+   "start": 47.393,
+   "end": 47.515
+  },
+  {
+   "text": "thyroïde",
+   "start": 47.515,
+   "end": 48.005
+  },
+  {
+   "text": "avec",
+   "start": 48.005,
+   "end": 48.201
+  },
+  {
+   "text": "les",
+   "start": 48.202,
+   "end": 48.263
+  },
+  {
+   "text": "anti-T",
+   "start": 48.263,
+   "end": 48.679
+  },
+  {
+   "text": "P",
+   "start": 48.679,
+   "end": 48.912
+  },
+  {
+   "text": "O.",
+   "start": 48.912,
+   "end": 49.145
+  },
+  {
+   "text": "Prochaine",
+   "start": 49.512,
+   "end": 49.867
+  },
+  {
+   "text": "vidéo,",
+   "start": 49.867,
+   "end": 50.345
+  },
+  {
+   "text": "la",
+   "start": 50.652,
+   "end": 50.725
+  },
+  {
+   "text": "dernière",
+   "start": 50.725,
+   "end": 51.056
+  },
+  {
+   "text": "de",
+   "start": 51.056,
+   "end": 51.13
+  },
+  {
+   "text": "la",
+   "start": 51.13,
+   "end": 51.215
+  },
+  {
+   "text": "série :",
+   "start": 51.216,
+   "end": 51.62
+  },
+  {
+   "text": "les",
+   "start": 51.889,
+   "end": 51.951
+  },
+  {
+   "text": "vitamines.",
+   "start": 51.951,
+   "end": 52.613
+  }
+ ]
+}

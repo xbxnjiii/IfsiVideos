@@ -38,4 +38,4 @@ puis dans l'ordre du tableau (22 vidéos).
 
 Notes : « CI » = Cl (chlore) ; « ASD » = antistreptodornase ; « CDT » = transferrine carboxy-déficiente (alcool chronique).
 
-Avancement : vidéos 1 à 19 faites (n° 78 à 97, voix gratuite). Gabarit `src/brand/labshort.tsx` + `labart.tsx`.
+Avancement : **série terminée**, les 22 vidéos faites (n° 78 à 99, voix gratuite). Gabarit `src/brand/labshort.tsx` + `labart.tsx`.

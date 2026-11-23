@@ -111,7 +111,9 @@
     "render:tube-jaune-serologies-3": "remotion render Tube-Jaune-Serologies-3 out/94-tube-jaune-serologies-3.mp4",
     "render:tube-jaune-allergologie": "remotion render Tube-Jaune-Allergologie out/95-tube-jaune-allergologie.mp4",
     "render:tube-jaune-medicaments": "remotion render Tube-Jaune-Medicaments out/96-tube-jaune-medicaments.mp4",
-    "render:tube-jaune-auto-immunite": "remotion render Tube-Jaune-Auto-Immunite out/97-tube-jaune-auto-immunite.mp4"
+    "render:tube-jaune-auto-immunite": "remotion render Tube-Jaune-Auto-Immunite out/97-tube-jaune-auto-immunite.mp4",
+    "render:tube-jaune-auto-immunite-2": "remotion render Tube-Jaune-Auto-Immunite-2 out/98-tube-jaune-auto-immunite-2.mp4",
+    "render:tube-jaune-vitamines": "remotion render Tube-Jaune-Vitamines out/99-tube-jaune-vitamines.mp4"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.532",
