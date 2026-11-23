@@ -1,0 +1,798 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 49.264,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.06,
+   "end": 7.488
+  },
+  {
+   "id": "aslo",
+   "start": 8.471,
+   "end": 20.026
+  },
+  {
+   "id": "lyme",
+   "start": 20.95,
+   "end": 32.004
+  },
+  {
+   "id": "covid",
+   "start": 32.947,
+   "end": 42.352
+  },
+  {
+   "id": "fin",
+   "start": 43.29,
+   "end": 48.939
+  }
+ ],
+ "words": [
+  {
+   "text": "Une",
+   "start": 0.06,
+   "end": 0.204
+  },
+  {
+   "text": "piqûre",
+   "start": 0.204,
+   "end": 0.481
+  },
+  {
+   "text": "de",
+   "start": 0.481,
+   "end": 0.589
+  },
+  {
+   "text": "tique",
+   "start": 0.589,
+   "end": 0.829
+  },
+  {
+   "text": "il",
+   "start": 0.829,
+   "end": 0.889
+  },
+  {
+   "text": "y",
+   "start": 0.889,
+   "end": 0.925
+  },
+  {
+   "text": "a",
+   "start": 0.925,
+   "end": 0.962
+  },
+  {
+   "text": "trois",
+   "start": 0.962,
+   "end": 1.142
+  },
+  {
+   "text": "jours,",
+   "start": 1.142,
+   "end": 1.49
+  },
+  {
+   "text": "et",
+   "start": 1.863,
+   "end": 1.887
+  },
+  {
+   "text": "ton",
+   "start": 1.887,
+   "end": 2.007
+  },
+  {
+   "text": "patient",
+   "start": 2.007,
+   "end": 2.356
+  },
+  {
+   "text": "veut",
+   "start": 2.356,
+   "end": 2.44
+  },
+  {
+   "text": "déjà",
+   "start": 2.44,
+   "end": 2.668
+  },
+  {
+   "text": "une",
+   "start": 2.668,
+   "end": 2.74
+  },
+  {
+   "text": "prise",
+   "start": 2.74,
+   "end": 2.921
+  },
+  {
+   "text": "de",
+   "start": 2.921,
+   "end": 3.029
+  },
+  {
+   "text": "sang",
+   "start": 3.029,
+   "end": 3.233
+  },
+  {
+   "text": "pour",
+   "start": 3.233,
+   "end": 3.353
+  },
+  {
+   "text": "la",
+   "start": 3.353,
+   "end": 3.413
+  },
+  {
+   "text": "maladie",
+   "start": 3.413,
+   "end": 3.738
+  },
+  {
+   "text": "de",
+   "start": 3.738,
+   "end": 3.822
+  },
+  {
+   "text": "Lyme ?",
+   "start": 3.822,
+   "end": 4.159
+  },
+  {
+   "text": "Trop",
+   "start": 4.519,
+   "end": 4.688
+  },
+  {
+   "text": "tôt !",
+   "start": 4.688,
+   "end": 5.0
+  },
+  {
+   "text": "Voici",
+   "start": 5.349,
+   "end": 5.673
+  },
+  {
+   "text": "trois",
+   "start": 5.673,
+   "end": 5.841
+  },
+  {
+   "text": "sérologies,",
+   "start": 5.841,
+   "end": 6.49
+  },
+  {
+   "text": "et",
+   "start": 6.779,
+   "end": 6.851
+  },
+  {
+   "text": "leur",
+   "start": 6.851,
+   "end": 7.007
+  },
+  {
+   "text": "bon",
+   "start": 7.007,
+   "end": 7.139
+  },
+  {
+   "text": "moment.",
+   "start": 7.139,
+   "end": 7.488
+  },
+  {
+   "text": "Un :",
+   "start": 8.471,
+   "end": 8.726
+  },
+  {
+   "text": "les",
+   "start": 8.944,
+   "end": 9.041
+  },
+  {
+   "text": "A",
+   "start": 9.041,
+   "end": 9.175
+  },
+  {
+   "text": "S",
+   "start": 9.175,
+   "end": 9.357
+  },
+  {
+   "text": "L",
+   "start": 9.357,
+   "end": 9.515
+  },
+  {
+   "text": "O",
+   "start": 9.515,
+   "end": 9.624
+  },
+  {
+   "text": "et",
+   "start": 9.624,
+   "end": 9.66
+  },
+  {
+   "text": "les",
+   "start": 9.66,
+   "end": 9.77
+  },
+  {
+   "text": "A",
+   "start": 9.77,
+   "end": 9.927
+  },
+  {
+   "text": "S",
+   "start": 9.927,
+   "end": 10.158
+  },
+  {
+   "text": "D,",
+   "start": 10.158,
+   "end": 10.425
+  },
+  {
+   "text": "les",
+   "start": 10.728,
+   "end": 10.789
+  },
+  {
+   "text": "anticorps",
+   "start": 10.789,
+   "end": 11.214
+  },
+  {
+   "text": "contre",
+   "start": 11.214,
+   "end": 11.444
+  },
+  {
+   "text": "le",
+   "start": 11.444,
+   "end": 11.517
+  },
+  {
+   "text": "streptocoque,",
+   "start": 11.517,
+   "end": 12.197
+  },
+  {
+   "text": "la",
+   "start": 12.427,
+   "end": 12.488
+  },
+  {
+   "text": "bactérie",
+   "start": 12.488,
+   "end": 12.889
+  },
+  {
+   "text": "de",
+   "start": 12.889,
+   "end": 12.986
+  },
+  {
+   "text": "certaines",
+   "start": 12.986,
+   "end": 13.313
+  },
+  {
+   "text": "angines.",
+   "start": 13.313,
+   "end": 13.872
+  },
+  {
+   "text": "Ils",
+   "start": 14.213,
+   "end": 14.431
+  },
+  {
+   "text": "montent",
+   "start": 14.431,
+   "end": 14.65
+  },
+  {
+   "text": "plusieurs",
+   "start": 14.65,
+   "end": 14.989
+  },
+  {
+   "text": "semaines",
+   "start": 14.99,
+   "end": 15.269
+  },
+  {
+   "text": "après",
+   "start": 15.269,
+   "end": 15.463
+  },
+  {
+   "text": "l'infection :",
+   "start": 15.463,
+   "end": 16.057
+  },
+  {
+   "text": "on",
+   "start": 16.422,
+   "end": 16.446
+  },
+  {
+   "text": "les",
+   "start": 16.446,
+   "end": 16.531
+  },
+  {
+   "text": "demande",
+   "start": 16.531,
+   "end": 16.907
+  },
+  {
+   "text": "pour",
+   "start": 16.907,
+   "end": 17.028
+  },
+  {
+   "text": "une",
+   "start": 17.028,
+   "end": 17.113
+  },
+  {
+   "text": "complication,",
+   "start": 17.113,
+   "end": 17.817
+  },
+  {
+   "text": "comme",
+   "start": 18.072,
+   "end": 18.218
+  },
+  {
+   "text": "une",
+   "start": 18.218,
+   "end": 18.303
+  },
+  {
+   "text": "atteinte",
+   "start": 18.303,
+   "end": 18.618
+  },
+  {
+   "text": "des",
+   "start": 18.618,
+   "end": 18.727
+  },
+  {
+   "text": "reins",
+   "start": 18.727,
+   "end": 18.994
+  },
+  {
+   "text": "ou",
+   "start": 18.994,
+   "end": 19.079
+  },
+  {
+   "text": "des",
+   "start": 19.079,
+   "end": 19.176
+  },
+  {
+   "text": "articulations.",
+   "start": 19.176,
+   "end": 20.026
+  },
+  {
+   "text": "Deux :",
+   "start": 20.95,
+   "end": 21.363
+  },
+  {
+   "text": "la",
+   "start": 21.702,
+   "end": 21.775
+  },
+  {
+   "text": "maladie",
+   "start": 21.775,
+   "end": 22.115
+  },
+  {
+   "text": "de",
+   "start": 22.115,
+   "end": 22.224
+  },
+  {
+   "text": "Lyme.",
+   "start": 22.224,
+   "end": 22.637
+  },
+  {
+   "text": "Une",
+   "start": 22.964,
+   "end": 23.17
+  },
+  {
+   "text": "plaque",
+   "start": 23.17,
+   "end": 23.401
+  },
+  {
+   "text": "rouge",
+   "start": 23.401,
+   "end": 23.68
+  },
+  {
+   "text": "qui",
+   "start": 23.68,
+   "end": 23.802
+  },
+  {
+   "text": "s'étend",
+   "start": 23.802,
+   "end": 24.069
+  },
+  {
+   "text": "autour",
+   "start": 24.069,
+   "end": 24.263
+  },
+  {
+   "text": "de",
+   "start": 24.263,
+   "end": 24.336
+  },
+  {
+   "text": "la",
+   "start": 24.336,
+   "end": 24.408
+  },
+  {
+   "text": "piqûre",
+   "start": 24.408,
+   "end": 24.882
+  },
+  {
+   "text": "suffit",
+   "start": 24.882,
+   "end": 25.197
+  },
+  {
+   "text": "au",
+   "start": 25.197,
+   "end": 25.234
+  },
+  {
+   "text": "diagnostic :",
+   "start": 25.234,
+   "end": 25.974
+  },
+  {
+   "text": "pas",
+   "start": 26.265,
+   "end": 26.374
+  },
+  {
+   "text": "besoin",
+   "start": 26.374,
+   "end": 26.653
+  },
+  {
+   "text": "de",
+   "start": 26.653,
+   "end": 26.751
+  },
+  {
+   "text": "sérologie,",
+   "start": 26.751,
+   "end": 27.37
+  },
+  {
+   "text": "on",
+   "start": 27.564,
+   "end": 27.6
+  },
+  {
+   "text": "traite.",
+   "start": 27.6,
+   "end": 28.098
+  },
+  {
+   "text": "La",
+   "start": 28.449,
+   "end": 28.582
+  },
+  {
+   "text": "prise",
+   "start": 28.582,
+   "end": 28.8
+  },
+  {
+   "text": "de",
+   "start": 28.8,
+   "end": 28.934
+  },
+  {
+   "text": "sang",
+   "start": 28.934,
+   "end": 29.14
+  },
+  {
+   "text": "sert",
+   "start": 29.14,
+   "end": 29.334
+  },
+  {
+   "text": "plus",
+   "start": 29.334,
+   "end": 29.492
+  },
+  {
+   "text": "tard,",
+   "start": 29.492,
+   "end": 29.856
+  },
+  {
+   "text": "pour",
+   "start": 30.111,
+   "end": 30.22
+  },
+  {
+   "text": "les",
+   "start": 30.22,
+   "end": 30.281
+  },
+  {
+   "text": "atteintes",
+   "start": 30.281,
+   "end": 30.609
+  },
+  {
+   "text": "des",
+   "start": 30.609,
+   "end": 30.706
+  },
+  {
+   "text": "nerfs",
+   "start": 30.706,
+   "end": 31.021
+  },
+  {
+   "text": "ou",
+   "start": 31.021,
+   "end": 31.058
+  },
+  {
+   "text": "des",
+   "start": 31.058,
+   "end": 31.143
+  },
+  {
+   "text": "articulations.",
+   "start": 31.143,
+   "end": 32.004
+  },
+  {
+   "text": "Trois :",
+   "start": 32.947,
+   "end": 33.323
+  },
+  {
+   "text": "le",
+   "start": 33.723,
+   "end": 33.808
+  },
+  {
+   "text": "Covid.",
+   "start": 33.808,
+   "end": 34.391
+  },
+  {
+   "text": "Pour",
+   "start": 34.719,
+   "end": 34.889
+  },
+  {
+   "text": "savoir",
+   "start": 34.889,
+   "end": 35.217
+  },
+  {
+   "text": "si",
+   "start": 35.217,
+   "end": 35.338
+  },
+  {
+   "text": "on",
+   "start": 35.338,
+   "end": 35.362
+  },
+  {
+   "text": "est",
+   "start": 35.362,
+   "end": 35.447
+  },
+  {
+   "text": "malade",
+   "start": 35.447,
+   "end": 35.726
+  },
+  {
+   "text": "maintenant,",
+   "start": 35.726,
+   "end": 36.175
+  },
+  {
+   "text": "c'est",
+   "start": 36.491,
+   "end": 36.6
+  },
+  {
+   "text": "le",
+   "start": 36.6,
+   "end": 36.697
+  },
+  {
+   "text": "test",
+   "start": 36.697,
+   "end": 36.989
+  },
+  {
+   "text": "nasal.",
+   "start": 36.989,
+   "end": 37.571
+  },
+  {
+   "text": "La",
+   "start": 37.959,
+   "end": 38.08
+  },
+  {
+   "text": "sérologie,",
+   "start": 38.08,
+   "end": 38.76
+  },
+  {
+   "text": "elle,",
+   "start": 39.087,
+   "end": 39.379
+  },
+  {
+   "text": "dit",
+   "start": 39.67,
+   "end": 39.767
+  },
+  {
+   "text": "seulement",
+   "start": 39.767,
+   "end": 40.107
+  },
+  {
+   "text": "si",
+   "start": 40.107,
+   "end": 40.277
+  },
+  {
+   "text": "on",
+   "start": 40.277,
+   "end": 40.301
+  },
+  {
+   "text": "a",
+   "start": 40.301,
+   "end": 40.386
+  },
+  {
+   "text": "déjà",
+   "start": 40.386,
+   "end": 40.629
+  },
+  {
+   "text": "rencontré",
+   "start": 40.629,
+   "end": 41.005
+  },
+  {
+   "text": "le",
+   "start": 41.005,
+   "end": 41.065
+  },
+  {
+   "text": "virus,",
+   "start": 41.065,
+   "end": 41.551
+  },
+  {
+   "text": "ou",
+   "start": 41.757,
+   "end": 41.794
+  },
+  {
+   "text": "le",
+   "start": 41.794,
+   "end": 41.879
+  },
+  {
+   "text": "vaccin.",
+   "start": 41.879,
+   "end": 42.352
+  },
+  {
+   "text": "Une",
+   "start": 43.29,
+   "end": 43.486
+  },
+  {
+   "text": "sérologie",
+   "start": 43.486,
+   "end": 44.062
+  },
+  {
+   "text": "a",
+   "start": 44.062,
+   "end": 44.123
+  },
+  {
+   "text": "toujours",
+   "start": 44.123,
+   "end": 44.466
+  },
+  {
+   "text": "son",
+   "start": 44.466,
+   "end": 44.613
+  },
+  {
+   "text": "bon",
+   "start": 44.614,
+   "end": 44.736
+  },
+  {
+   "text": "moment.",
+   "start": 44.736,
+   "end": 45.116
+  },
+  {
+   "text": "Prochaine",
+   "start": 45.483,
+   "end": 45.85
+  },
+  {
+   "text": "vidéo :",
+   "start": 45.85,
+   "end": 46.34
+  },
+  {
+   "text": "l'allergologie,",
+   "start": 46.806,
+   "end": 47.615
+  },
+  {
+   "text": "avec",
+   "start": 47.872,
+   "end": 48.105
+  },
+  {
+   "text": "le",
+   "start": 48.105,
+   "end": 48.203
+  },
+  {
+   "text": "Phadiatop.",
+   "start": 48.203,
+   "end": 48.939
+  }
+ ]
+}

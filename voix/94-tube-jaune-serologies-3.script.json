@@ -1,0 +1,27 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Une piqûre de tique il y a trois jours, et ton patient veut déjà une prise de sang pour la maladie de Lyme ? Trop tôt ! Voici trois sérologies, et leur bon moment."
+ },
+ {
+  "id": "aslo",
+  "rate": "+3%",
+  "text": "Un : les A S L O et les A S D, les anticorps contre le streptocoque, la bactérie de certaines angines. Ils montent plusieurs semaines après l'infection : on les demande pour une complication, comme une atteinte des reins ou des articulations."
+ },
+ {
+  "id": "lyme",
+  "rate": "+3%",
+  "text": "Deux : la maladie de Lyme. Une plaque rouge qui s'étend autour de la piqûre suffit au diagnostic : pas besoin de sérologie, on traite. La prise de sang sert plus tard, pour les atteintes des nerfs ou des articulations."
+ },
+ {
+  "id": "covid",
+  "rate": "+3%",
+  "text": "Trois : le Covid. Pour savoir si on est malade maintenant, c'est le test nasal. La sérologie, elle, dit seulement si on a déjà rencontré le virus, ou le vaccin."
+ },
+ {
+  "id": "fin",
+  "rate": "+2%",
+  "text": "Une sérologie a toujours son bon moment. Prochaine vidéo : l'allergologie, avec le Phadiatop."
+ }
+]

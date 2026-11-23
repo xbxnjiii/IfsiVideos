@@ -1,0 +1,32 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Une femme enceinte mange un steak saignant… et son bébé peut en garder des séquelles. Quatre sérologies du tube jaune protègent la grossesse. Tu les connais ?"
+ },
+ {
+  "id": "toxo",
+  "rate": "+3%",
+  "text": "Un : la toxoplasmose, un parasite de la viande mal cuite, de la terre et des litières de chat. Si la femme enceinte n'est pas immunisée, on refait la sérologie tous les mois jusqu'à l'accouchement, avec les bons conseils : viande bien cuite, légumes bien lavés."
+ },
+ {
+  "id": "rubeole",
+  "rate": "+3%",
+  "text": "Deux : la rubéole. Au début de la grossesse, elle peut donner des malformations graves. Si la femme n'est pas immunisée, on la vaccine… mais après l'accouchement, jamais pendant."
+ },
+ {
+  "id": "cmv",
+  "rate": "+3%",
+  "text": "Trois : le cytomégalovirus, transmis par la salive et les urines des jeunes enfants. Pour s'en protéger : se laver les mains après avoir changé une couche, et ne pas partager les couverts."
+ },
+ {
+  "id": "ebv",
+  "rate": "+3%",
+  "text": "Quatre : le virus d'Epstein-Barr, celui de la mononucléose, la maladie du baiser. Des I G M positives, c'est une infection récente, avec fièvre, angine et grande fatigue."
+ },
+ {
+  "id": "fin",
+  "rate": "+2%",
+  "text": "Toxoplasmose, rubéole, cytomégalovirus, mononucléose : tu sais les lire. Prochaine vidéo : la dernière partie des sérologies."
+ }
+]

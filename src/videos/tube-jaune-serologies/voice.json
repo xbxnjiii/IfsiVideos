@@ -1,0 +1,893 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 62.414,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.048,
+   "end": 8.45
+  },
+  {
+   "id": "principe",
+   "start": 9.395,
+   "end": 19.99
+  },
+  {
+   "id": "hepb",
+   "start": 20.95,
+   "end": 37.103
+  },
+  {
+   "id": "vih",
+   "start": 38.06,
+   "end": 47.708
+  },
+  {
+   "id": "syphilis",
+   "start": 48.642,
+   "end": 55.085
+  },
+  {
+   "id": "fin",
+   "start": 56.032,
+   "end": 62.061
+  }
+ ],
+ "words": [
+  {
+   "text": "Ton",
+   "start": 0.048,
+   "end": 0.168
+  },
+  {
+   "text": "patient",
+   "start": 0.168,
+   "end": 0.505
+  },
+  {
+   "text": "a",
+   "start": 0.505,
+   "end": 0.541
+  },
+  {
+   "text": "été",
+   "start": 0.541,
+   "end": 0.697
+  },
+  {
+   "text": "vacciné",
+   "start": 0.697,
+   "end": 1.118
+  },
+  {
+   "text": "contre",
+   "start": 1.118,
+   "end": 1.37
+  },
+  {
+   "text": "l'hépatite",
+   "start": 1.37,
+   "end": 1.827
+  },
+  {
+   "text": "B…",
+   "start": 1.827,
+   "end": 2.091
+  },
+  {
+   "text": "ou",
+   "start": 2.404,
+   "end": 2.512
+  },
+  {
+   "text": "il",
+   "start": 2.512,
+   "end": 2.596
+  },
+  {
+   "text": "l'a",
+   "start": 2.596,
+   "end": 2.728
+  },
+  {
+   "text": "eue ?",
+   "start": 2.728,
+   "end": 2.957
+  },
+  {
+   "text": "Une",
+   "start": 3.283,
+   "end": 3.475
+  },
+  {
+   "text": "sérologie",
+   "start": 3.475,
+   "end": 4.004
+  },
+  {
+   "text": "le",
+   "start": 4.004,
+   "end": 4.124
+  },
+  {
+   "text": "dit.",
+   "start": 4.125,
+   "end": 4.425
+  },
+  {
+   "text": "Hépatites,",
+   "start": 4.772,
+   "end": 5.445
+  },
+  {
+   "text": "VIH,",
+   "start": 5.685,
+   "end": 6.286
+  },
+  {
+   "text": "syphilis :",
+   "start": 6.478,
+   "end": 7.163
+  },
+  {
+   "text": "voici",
+   "start": 7.5,
+   "end": 7.764
+  },
+  {
+   "text": "comment",
+   "start": 7.764,
+   "end": 7.969
+  },
+  {
+   "text": "les",
+   "start": 7.969,
+   "end": 8.065
+  },
+  {
+   "text": "lire.",
+   "start": 8.065,
+   "end": 8.45
+  },
+  {
+   "text": "Un :",
+   "start": 9.395,
+   "end": 9.637
+  },
+  {
+   "text": "une",
+   "start": 9.832,
+   "end": 9.917
+  },
+  {
+   "text": "sérologie",
+   "start": 9.917,
+   "end": 10.499
+  },
+  {
+   "text": "cherche",
+   "start": 10.499,
+   "end": 10.754
+  },
+  {
+   "text": "les",
+   "start": 10.754,
+   "end": 10.839
+  },
+  {
+   "text": "anticorps,",
+   "start": 10.839,
+   "end": 11.458
+  },
+  {
+   "text": "la",
+   "start": 11.846,
+   "end": 11.919
+  },
+  {
+   "text": "trace",
+   "start": 11.919,
+   "end": 12.174
+  },
+  {
+   "text": "que",
+   "start": 12.174,
+   "end": 12.259
+  },
+  {
+   "text": "le",
+   "start": 12.259,
+   "end": 12.344
+  },
+  {
+   "text": "corps",
+   "start": 12.344,
+   "end": 12.55
+  },
+  {
+   "text": "a",
+   "start": 12.55,
+   "end": 12.586
+  },
+  {
+   "text": "rencontré",
+   "start": 12.586,
+   "end": 12.999
+  },
+  {
+   "text": "un",
+   "start": 12.999,
+   "end": 13.035
+  },
+  {
+   "text": "microbe,",
+   "start": 13.035,
+   "end": 13.497
+  },
+  {
+   "text": "ou",
+   "start": 13.739,
+   "end": 13.788
+  },
+  {
+   "text": "un",
+   "start": 13.788,
+   "end": 13.849
+  },
+  {
+   "text": "vaccin.",
+   "start": 13.849,
+   "end": 14.334
+  },
+  {
+   "text": "Les",
+   "start": 14.71,
+   "end": 14.856
+  },
+  {
+   "text": "I",
+   "start": 14.856,
+   "end": 15.001
+  },
+  {
+   "text": "G",
+   "start": 15.001,
+   "end": 15.159
+  },
+  {
+   "text": "M",
+   "start": 15.159,
+   "end": 15.329
+  },
+  {
+   "text": "disent :",
+   "start": 15.329,
+   "end": 15.717
+  },
+  {
+   "text": "c'est",
+   "start": 16.009,
+   "end": 16.13
+  },
+  {
+   "text": "récent.",
+   "start": 16.13,
+   "end": 16.555
+  },
+  {
+   "text": "Les",
+   "start": 16.883,
+   "end": 17.102
+  },
+  {
+   "text": "I",
+   "start": 17.102,
+   "end": 17.272
+  },
+  {
+   "text": "G",
+   "start": 17.272,
+   "end": 17.442
+  },
+  {
+   "text": "G",
+   "start": 17.442,
+   "end": 17.575
+  },
+  {
+   "text": "disent :",
+   "start": 17.575,
+   "end": 17.988
+  },
+  {
+   "text": "c'est",
+   "start": 18.267,
+   "end": 18.388
+  },
+  {
+   "text": "ancien,",
+   "start": 18.388,
+   "end": 18.91
+  },
+  {
+   "text": "ou",
+   "start": 19.189,
+   "end": 19.25
+  },
+  {
+   "text": "on",
+   "start": 19.25,
+   "end": 19.31
+  },
+  {
+   "text": "est",
+   "start": 19.31,
+   "end": 19.395
+  },
+  {
+   "text": "protégé.",
+   "start": 19.395,
+   "end": 19.99
+  },
+  {
+   "text": "Deux :",
+   "start": 20.95,
+   "end": 21.362
+  },
+  {
+   "text": "l'hépatite",
+   "start": 21.702,
+   "end": 22.212
+  },
+  {
+   "text": "B.",
+   "start": 22.212,
+   "end": 22.515
+  },
+  {
+   "text": "L'antigène",
+   "start": 22.902,
+   "end": 23.485
+  },
+  {
+   "text": "H",
+   "start": 23.485,
+   "end": 23.667
+  },
+  {
+   "text": "B",
+   "start": 23.667,
+   "end": 23.813
+  },
+  {
+   "text": "s,",
+   "start": 23.813,
+   "end": 24.237
+  },
+  {
+   "text": "c'est",
+   "start": 24.516,
+   "end": 24.65
+  },
+  {
+   "text": "le",
+   "start": 24.65,
+   "end": 24.723
+  },
+  {
+   "text": "virus",
+   "start": 24.723,
+   "end": 25.05
+  },
+  {
+   "text": "présent.",
+   "start": 25.05,
+   "end": 25.512
+  },
+  {
+   "text": "Les",
+   "start": 25.84,
+   "end": 26.022
+  },
+  {
+   "text": "anticorps",
+   "start": 26.022,
+   "end": 26.435
+  },
+  {
+   "text": "anti-H",
+   "start": 26.435,
+   "end": 26.896
+  },
+  {
+   "text": "B",
+   "start": 26.896,
+   "end": 27.042
+  },
+  {
+   "text": "s",
+   "start": 27.042,
+   "end": 27.212
+  },
+  {
+   "text": "seuls,",
+   "start": 27.212,
+   "end": 27.564
+  },
+  {
+   "text": "c'est",
+   "start": 27.843,
+   "end": 27.964
+  },
+  {
+   "text": "le",
+   "start": 27.964,
+   "end": 28.037
+  },
+  {
+   "text": "vaccin.",
+   "start": 28.037,
+   "end": 28.535
+  },
+  {
+   "text": "Avec",
+   "start": 28.863,
+   "end": 29.166
+  },
+  {
+   "text": "aussi",
+   "start": 29.166,
+   "end": 29.397
+  },
+  {
+   "text": "les",
+   "start": 29.397,
+   "end": 29.482
+  },
+  {
+   "text": "anti-H",
+   "start": 29.482,
+   "end": 29.931
+  },
+  {
+   "text": "B",
+   "start": 29.931,
+   "end": 30.052
+  },
+  {
+   "text": "c :",
+   "start": 30.052,
+   "end": 30.355
+  },
+  {
+   "text": "le",
+   "start": 30.659,
+   "end": 30.719
+  },
+  {
+   "text": "patient",
+   "start": 30.719,
+   "end": 31.059
+  },
+  {
+   "text": "a",
+   "start": 31.059,
+   "end": 31.108
+  },
+  {
+   "text": "eu",
+   "start": 31.108,
+   "end": 31.156
+  },
+  {
+   "text": "l'hépatite,",
+   "start": 31.156,
+   "end": 31.727
+  },
+  {
+   "text": "et",
+   "start": 31.982,
+   "end": 32.006
+  },
+  {
+   "text": "il",
+   "start": 32.006,
+   "end": 32.127
+  },
+  {
+   "text": "est",
+   "start": 32.127,
+   "end": 32.164
+  },
+  {
+   "text": "guéri.",
+   "start": 32.164,
+   "end": 32.552
+  },
+  {
+   "text": "Pour",
+   "start": 32.88,
+   "end": 33.074
+  },
+  {
+   "text": "l'hépatite",
+   "start": 33.074,
+   "end": 33.523
+  },
+  {
+   "text": "C,",
+   "start": 33.523,
+   "end": 33.814
+  },
+  {
+   "text": "si",
+   "start": 34.215,
+   "end": 34.336
+  },
+  {
+   "text": "les",
+   "start": 34.336,
+   "end": 34.409
+  },
+  {
+   "text": "anticorps",
+   "start": 34.409,
+   "end": 34.882
+  },
+  {
+   "text": "sont",
+   "start": 34.882,
+   "end": 34.991
+  },
+  {
+   "text": "positifs,",
+   "start": 34.991,
+   "end": 35.61
+  },
+  {
+   "text": "on",
+   "start": 35.865,
+   "end": 35.889
+  },
+  {
+   "text": "cherche",
+   "start": 35.889,
+   "end": 36.181
+  },
+  {
+   "text": "le",
+   "start": 36.181,
+   "end": 36.278
+  },
+  {
+   "text": "virus",
+   "start": 36.278,
+   "end": 36.605
+  },
+  {
+   "text": "lui-même.",
+   "start": 36.605,
+   "end": 37.103
+  },
+  {
+   "text": "Trois :",
+   "start": 38.06,
+   "end": 38.472
+  },
+  {
+   "text": "le",
+   "start": 38.873,
+   "end": 38.946
+  },
+  {
+   "text": "VIH.",
+   "start": 38.946,
+   "end": 39.613
+  },
+  {
+   "text": "Le",
+   "start": 39.988,
+   "end": 40.109
+  },
+  {
+   "text": "test",
+   "start": 40.109,
+   "end": 40.437
+  },
+  {
+   "text": "combiné",
+   "start": 40.437,
+   "end": 40.91
+  },
+  {
+   "text": "cherche",
+   "start": 40.91,
+   "end": 41.165
+  },
+  {
+   "text": "les",
+   "start": 41.165,
+   "end": 41.262
+  },
+  {
+   "text": "anticorps",
+   "start": 41.262,
+   "end": 41.845
+  },
+  {
+   "text": "et",
+   "start": 41.845,
+   "end": 41.906
+  },
+  {
+   "text": "un",
+   "start": 41.906,
+   "end": 41.954
+  },
+  {
+   "text": "morceau",
+   "start": 41.954,
+   "end": 42.221
+  },
+  {
+   "text": "du",
+   "start": 42.221,
+   "end": 42.318
+  },
+  {
+   "text": "virus.",
+   "start": 42.318,
+   "end": 42.877
+  },
+  {
+   "text": "Positif,",
+   "start": 43.241,
+   "end": 43.859
+  },
+  {
+   "text": "on",
+   "start": 44.175,
+   "end": 44.199
+  },
+  {
+   "text": "le",
+   "start": 44.199,
+   "end": 44.272
+  },
+  {
+   "text": "confirme",
+   "start": 44.272,
+   "end": 44.685
+  },
+  {
+   "text": "toujours",
+   "start": 44.685,
+   "end": 45.049
+  },
+  {
+   "text": "sur",
+   "start": 45.049,
+   "end": 45.207
+  },
+  {
+   "text": "un",
+   "start": 45.207,
+   "end": 45.255
+  },
+  {
+   "text": "deuxième",
+   "start": 45.255,
+   "end": 45.571
+  },
+  {
+   "text": "prélèvement.",
+   "start": 45.571,
+   "end": 46.129
+  },
+  {
+   "text": "Et",
+   "start": 46.458,
+   "end": 46.591
+  },
+  {
+   "text": "il",
+   "start": 46.591,
+   "end": 46.688
+  },
+  {
+   "text": "faut",
+   "start": 46.688,
+   "end": 46.797
+  },
+  {
+   "text": "l'accord",
+   "start": 46.797,
+   "end": 47.113
+  },
+  {
+   "text": "du",
+   "start": 47.113,
+   "end": 47.21
+  },
+  {
+   "text": "patient.",
+   "start": 47.21,
+   "end": 47.708
+  },
+  {
+   "text": "Quatre :",
+   "start": 48.642,
+   "end": 49.066
+  },
+  {
+   "text": "la",
+   "start": 49.358,
+   "end": 49.443
+  },
+  {
+   "text": "syphilis.",
+   "start": 49.443,
+   "end": 50.207
+  },
+  {
+   "text": "Un",
+   "start": 50.546,
+   "end": 50.667
+  },
+  {
+   "text": "premier",
+   "start": 50.667,
+   "end": 51.019
+  },
+  {
+   "text": "test",
+   "start": 51.019,
+   "end": 51.262
+  },
+  {
+   "text": "la",
+   "start": 51.262,
+   "end": 51.371
+  },
+  {
+   "text": "dépiste,",
+   "start": 51.371,
+   "end": 51.893
+  },
+  {
+   "text": "et",
+   "start": 52.184,
+   "end": 52.209
+  },
+  {
+   "text": "s'il",
+   "start": 52.209,
+   "end": 52.366
+  },
+  {
+   "text": "est",
+   "start": 52.366,
+   "end": 52.391
+  },
+  {
+   "text": "positif,",
+   "start": 52.391,
+   "end": 52.997
+  },
+  {
+   "text": "un",
+   "start": 53.276,
+   "end": 53.374
+  },
+  {
+   "text": "second",
+   "start": 53.374,
+   "end": 53.665
+  },
+  {
+   "text": "dit",
+   "start": 53.665,
+   "end": 53.823
+  },
+  {
+   "text": "si",
+   "start": 53.823,
+   "end": 53.944
+  },
+  {
+   "text": "l'infection",
+   "start": 53.944,
+   "end": 54.393
+  },
+  {
+   "text": "est",
+   "start": 54.393,
+   "end": 54.441
+  },
+  {
+   "text": "active.",
+   "start": 54.441,
+   "end": 55.085
+  },
+  {
+   "text": "I",
+   "start": 56.032,
+   "end": 56.166
+  },
+  {
+   "text": "G",
+   "start": 56.166,
+   "end": 56.35
+  },
+  {
+   "text": "M",
+   "start": 56.35,
+   "end": 56.497
+  },
+  {
+   "text": "récent,",
+   "start": 56.497,
+   "end": 56.975
+  },
+  {
+   "text": "I",
+   "start": 57.367,
+   "end": 57.429
+  },
+  {
+   "text": "G",
+   "start": 57.429,
+   "end": 57.576
+  },
+  {
+   "text": "G",
+   "start": 57.576,
+   "end": 57.735
+  },
+  {
+   "text": "ancien,",
+   "start": 57.735,
+   "end": 58.213
+  },
+  {
+   "text": "et",
+   "start": 58.519,
+   "end": 58.593
+  },
+  {
+   "text": "toujours",
+   "start": 58.593,
+   "end": 58.875
+  },
+  {
+   "text": "une",
+   "start": 58.875,
+   "end": 58.96
+  },
+  {
+   "text": "confirmation.",
+   "start": 58.96,
+   "end": 59.708
+  },
+  {
+   "text": "Prochaine",
+   "start": 60.076,
+   "end": 60.456
+  },
+  {
+   "text": "vidéo :",
+   "start": 60.456,
+   "end": 60.921
+  },
+  {
+   "text": "la",
+   "start": 61.313,
+   "end": 61.387
+  },
+  {
+   "text": "grossesse.",
+   "start": 61.387,
+   "end": 62.061
+  }
+ ]
+}

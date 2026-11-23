@@ -102,6 +102,9 @@ pas de logiciel de montage, pas de banque d'images.
 | 89 | Série les tubes : le tube jaune, les marqueurs tumoraux (AFP, CA 125, CA 15-3, CA 19-9, ACE, PSA) ; voix gratuite, directives Instagram | `Tube-Jaune-Marqueurs` | [voix/89-tube-jaune-marqueurs.script.json](voix/89-tube-jaune-marqueurs.script.json) | [plan](docs/lpi/plan-tube-jaune-serie.md) |
 | 90 | Série les tubes : le tube jaune, les hormones 1/2 (TSH, cortisol, prolactine) ; voix gratuite, directives Instagram | `Tube-Jaune-Hormones` | [voix/90-tube-jaune-hormones.script.json](voix/90-tube-jaune-hormones.script.json) | [plan](docs/lpi/plan-tube-jaune-serie.md) |
 | 91 | Série les tubes : le tube jaune, les hormones 2/2 (β-hCG, FSH, LH, progestérone, testostérone) ; voix gratuite, directives Instagram | `Tube-Jaune-Hormones-2` | [voix/91-tube-jaune-hormones-2.script.json](voix/91-tube-jaune-hormones-2.script.json) | [plan](docs/lpi/plan-tube-jaune-serie.md) |
+| 92 | Série les tubes : le tube jaune, les sérologies 1/3 (hépatites, VIH, syphilis) ; voix gratuite, directives Instagram | `Tube-Jaune-Serologies` | [voix/92-tube-jaune-serologies.script.json](voix/92-tube-jaune-serologies.script.json) | [plan](docs/lpi/plan-tube-jaune-serie.md) |
+| 93 | Série les tubes : le tube jaune, les sérologies 2/3 de la grossesse (toxoplasmose, rubéole, CMV, EBV) ; voix gratuite, directives Instagram | `Tube-Jaune-Serologies-2` | [voix/93-tube-jaune-serologies-2.script.json](voix/93-tube-jaune-serologies-2.script.json) | [plan](docs/lpi/plan-tube-jaune-serie.md) |
+| 94 | Série les tubes : le tube jaune, les sérologies 3/3 (ASLO / ASD, Lyme, Covid) ; voix gratuite, directives Instagram | `Tube-Jaune-Serologies-3` | [voix/94-tube-jaune-serologies-3.script.json](voix/94-tube-jaune-serologies-3.script.json) | [plan](docs/lpi/plan-tube-jaune-serie.md) |
 
 ## Utilisation
 

@@ -182,6 +182,12 @@ import * as tubejaunehormones from '../../src/videos/tube-jaune-hormones/mascot'
 import * as tubejaunehormonesTL from '../../src/videos/tube-jaune-hormones/timeline';
 import * as tubejaunehormones2 from '../../src/videos/tube-jaune-hormones-2/mascot';
 import * as tubejaunehormones2TL from '../../src/videos/tube-jaune-hormones-2/timeline';
+import * as tubejauneserologies from '../../src/videos/tube-jaune-serologies/mascot';
+import * as tubejauneserologiesTL from '../../src/videos/tube-jaune-serologies/timeline';
+import * as tubejauneserologies2 from '../../src/videos/tube-jaune-serologies-2/mascot';
+import * as tubejauneserologies2TL from '../../src/videos/tube-jaune-serologies-2/timeline';
+import * as tubejauneserologies3 from '../../src/videos/tube-jaune-serologies-3/mascot';
+import * as tubejauneserologies3TL from '../../src/videos/tube-jaune-serologies-3/timeline';
 
 const VIDEOS: Record<string, [typeof constantes.MASCOT, typeof constantesTL.TL]> = {
 	constantes: [constantes.MASCOT, constantesTL.TL],
@@ -274,6 +280,9 @@ const VIDEOS: Record<string, [typeof constantes.MASCOT, typeof constantesTL.TL]>
 	'tube-jaune-marqueurs': [tubejaunemarqueurs.MASCOT, tubejaunemarqueursTL.TL],
 	'tube-jaune-hormones': [tubejaunehormones.MASCOT, tubejaunehormonesTL.TL],
 	'tube-jaune-hormones-2': [tubejaunehormones2.MASCOT, tubejaunehormones2TL.TL],
+	'tube-jaune-serologies': [tubejauneserologies.MASCOT, tubejauneserologiesTL.TL],
+	'tube-jaune-serologies-2': [tubejauneserologies2.MASCOT, tubejauneserologies2TL.TL],
+	'tube-jaune-serologies-3': [tubejauneserologies3.MASCOT, tubejauneserologies3TL.TL],
 };
 const name = process.argv[2] ?? 'constantes';
 const [MASCOT, TL] = VIDEOS[name];

@@ -184,6 +184,12 @@ import {TubeJauneHormones, TubeJauneHormonesProps} from './videos/tube-jaune-hor
 import {TL as TUBE_JAUNE_HORMONES_TL} from './videos/tube-jaune-hormones/timeline';
 import {TubeJauneHormones2, TubeJauneHormones2Props} from './videos/tube-jaune-hormones-2/TubeJauneHormones2';
 import {TL as TUBE_JAUNE_HORMONES_2_TL} from './videos/tube-jaune-hormones-2/timeline';
+import {TubeJauneSerologies, TubeJauneSerologiesProps} from './videos/tube-jaune-serologies/TubeJauneSerologies';
+import {TL as TUBE_JAUNE_SEROLOGIES_TL} from './videos/tube-jaune-serologies/timeline';
+import {TubeJauneSerologies2, TubeJauneSerologies2Props} from './videos/tube-jaune-serologies-2/TubeJauneSerologies2';
+import {TL as TUBE_JAUNE_SEROLOGIES_2_TL} from './videos/tube-jaune-serologies-2/timeline';
+import {TubeJauneSerologies3, TubeJauneSerologies3Props} from './videos/tube-jaune-serologies-3/TubeJauneSerologies3';
+import {TL as TUBE_JAUNE_SEROLOGIES_3_TL} from './videos/tube-jaune-serologies-3/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -1090,6 +1096,36 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies TubeJauneHormones2Props}
+		/>
+		{/* 92 · Tube-Jaune-Serologies */}
+		<Composition
+			id="Tube-Jaune-Serologies"
+			component={TubeJauneSerologies}
+			durationInFrames={TUBE_JAUNE_SEROLOGIES_TL.total}
+			fps={TUBE_JAUNE_SEROLOGIES_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies TubeJauneSerologiesProps}
+		/>
+		{/* 93 · Tube-Jaune-Serologies-2 */}
+		<Composition
+			id="Tube-Jaune-Serologies-2"
+			component={TubeJauneSerologies2}
+			durationInFrames={TUBE_JAUNE_SEROLOGIES_2_TL.total}
+			fps={TUBE_JAUNE_SEROLOGIES_2_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies TubeJauneSerologies2Props}
+		/>
+		{/* 94 · Tube-Jaune-Serologies-3 */}
+		<Composition
+			id="Tube-Jaune-Serologies-3"
+			component={TubeJauneSerologies3}
+			durationInFrames={TUBE_JAUNE_SEROLOGIES_3_TL.total}
+			fps={TUBE_JAUNE_SEROLOGIES_3_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies TubeJauneSerologies3Props}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition

@@ -105,7 +105,10 @@
     "render:tube-jaune-coeur": "remotion render Tube-Jaune-Coeur out/88-tube-jaune-coeur.mp4",
     "render:tube-jaune-marqueurs": "remotion render Tube-Jaune-Marqueurs out/89-tube-jaune-marqueurs.mp4",
     "render:tube-jaune-hormones": "remotion render Tube-Jaune-Hormones out/90-tube-jaune-hormones.mp4",
-    "render:tube-jaune-hormones-2": "remotion render Tube-Jaune-Hormones-2 out/91-tube-jaune-hormones-2.mp4"
+    "render:tube-jaune-hormones-2": "remotion render Tube-Jaune-Hormones-2 out/91-tube-jaune-hormones-2.mp4",
+    "render:tube-jaune-serologies": "remotion render Tube-Jaune-Serologies out/92-tube-jaune-serologies.mp4",
+    "render:tube-jaune-serologies-2": "remotion render Tube-Jaune-Serologies-2 out/93-tube-jaune-serologies-2.mp4",
+    "render:tube-jaune-serologies-3": "remotion render Tube-Jaune-Serologies-3 out/94-tube-jaune-serologies-3.mp4"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.532",

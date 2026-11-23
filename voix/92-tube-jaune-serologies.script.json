@@ -1,0 +1,32 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Ton patient a été vacciné contre l'hépatite B… ou il l'a eue ? Une sérologie le dit. Hépatites, VIH, syphilis : voici comment les lire."
+ },
+ {
+  "id": "principe",
+  "rate": "+3%",
+  "text": "Un : une sérologie cherche les anticorps, la trace que le corps a rencontré un microbe, ou un vaccin. Les I G M disent : c'est récent. Les I G G disent : c'est ancien, ou on est protégé."
+ },
+ {
+  "id": "hepb",
+  "rate": "+3%",
+  "text": "Deux : l'hépatite B. L'antigène H B s, c'est le virus présent. Les anticorps anti-H B s seuls, c'est le vaccin. Avec aussi les anti-H B c : le patient a eu l'hépatite, et il est guéri. Pour l'hépatite C, si les anticorps sont positifs, on cherche le virus lui-même."
+ },
+ {
+  "id": "vih",
+  "rate": "+3%",
+  "text": "Trois : le VIH. Le test combiné cherche les anticorps et un morceau du virus. Positif, on le confirme toujours sur un deuxième prélèvement. Et il faut l'accord du patient."
+ },
+ {
+  "id": "syphilis",
+  "rate": "+3%",
+  "text": "Quatre : la syphilis. Un premier test la dépiste, et s'il est positif, un second dit si l'infection est active."
+ },
+ {
+  "id": "fin",
+  "rate": "+2%",
+  "text": "I G M récent, I G G ancien, et toujours une confirmation. Prochaine vidéo : la grossesse."
+ }
+]
