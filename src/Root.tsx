@@ -176,6 +176,8 @@ import {TubeJauneProteines, TubeJauneProteinesProps} from './videos/tube-jaune-p
 import {TL as TUBE_JAUNE_PROTEINES_TL} from './videos/tube-jaune-proteines/timeline';
 import {TubeJauneElectrophorese, TubeJauneElectrophoreseProps} from './videos/tube-jaune-electrophorese/TubeJauneElectrophorese';
 import {TL as TUBE_JAUNE_ELECTROPHORESE_TL} from './videos/tube-jaune-electrophorese/timeline';
+import {TubeJauneCoeur, TubeJauneCoeurProps} from './videos/tube-jaune-coeur/TubeJauneCoeur';
+import {TL as TUBE_JAUNE_COEUR_TL} from './videos/tube-jaune-coeur/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -1042,6 +1044,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies TubeJauneElectrophoreseProps}
+		/>
+		{/* 88 · Tube-Jaune-Coeur */}
+		<Composition
+			id="Tube-Jaune-Coeur"
+			component={TubeJauneCoeur}
+			durationInFrames={TUBE_JAUNE_COEUR_TL.total}
+			fps={TUBE_JAUNE_COEUR_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies TubeJauneCoeurProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition

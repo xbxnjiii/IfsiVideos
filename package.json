@@ -101,7 +101,8 @@
     "render:tube-jaune-ions-2": "remotion render Tube-Jaune-Ions-2 out/84-tube-jaune-ions-2.mp4",
     "render:tube-jaune-inflammation": "remotion render Tube-Jaune-Inflammation out/85-tube-jaune-inflammation.mp4",
     "render:tube-jaune-proteines": "remotion render Tube-Jaune-Proteines out/86-tube-jaune-proteines.mp4",
-    "render:tube-jaune-electrophorese": "remotion render Tube-Jaune-Electrophorese out/87-tube-jaune-electrophorese.mp4"
+    "render:tube-jaune-electrophorese": "remotion render Tube-Jaune-Electrophorese out/87-tube-jaune-electrophorese.mp4",
+    "render:tube-jaune-coeur": "remotion render Tube-Jaune-Coeur out/88-tube-jaune-coeur.mp4"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.532",

@@ -1,0 +1,32 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Un marqueur tumoral un peu élevé… et ton patient pense qu'il a un cancer. Pas si vite ! Il y a six marqueurs dans le tube jaune : à quoi servent-ils vraiment ?"
+ },
+ {
+  "id": "principe",
+  "rate": "+3%",
+  "text": "Un : le principe. Ce sont des substances que certaines tumeurs libèrent dans le sang. Mais elles montent aussi sans cancer : inflammation, tabac, foie malade. Alors on ne s'en sert pas pour dépister : on s'en sert pour suivre un cancer déjà connu."
+ },
+ {
+  "id": "liste1",
+  "rate": "+3%",
+  "text": "Deux : les marqueurs et leurs organes. L'A F P, pour le foie et les testicules. Le C A cent vingt-cinq, pour les ovaires. Le C A quinze trois, pour le sein."
+ },
+ {
+  "id": "liste2",
+  "rate": "+3%",
+  "text": "Le C A dix-neuf neuf, pour le pancréas. L'A C E, pour le côlon. Et le P S A, avec sa forme libre, pour la prostate : le seul dont le dosage se discute avec le médecin, après cinquante ans."
+ },
+ {
+  "id": "suivi",
+  "rate": "+3%",
+  "text": "Trois : le suivi. On le dose avant le traitement, puis on regarde comment il évolue. S'il baisse, le traitement marche. S'il remonte, on cherche une récidive."
+ },
+ {
+  "id": "fin",
+  "rate": "+2%",
+  "text": "Un marqueur seul ne fait pas un diagnostic : il suit la maladie. Prochaine vidéo : les hormones, avec la thyroïde."
+ }
+]

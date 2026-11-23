@@ -97,6 +97,8 @@ pas de logiciel de montage, pas de banque d'images.
 | 84 | Série les tubes : le tube jaune, les ions 2/2 (calcium, phosphore, magnésium, bicarbonates) ; voix gratuite, directives Instagram | `Tube-Jaune-Ions-2` | [voix/84-tube-jaune-ions-2.script.json](voix/84-tube-jaune-ions-2.script.json) | [plan](docs/lpi/plan-tube-jaune-serie.md) |
 | 85 | Série les tubes : le tube jaune, l'inflammation (CRP, procalcitonine) ; voix gratuite, directives Instagram | `Tube-Jaune-Inflammation` | [voix/85-tube-jaune-inflammation.script.json](voix/85-tube-jaune-inflammation.script.json) | [plan](docs/lpi/plan-tube-jaune-serie.md) |
 | 86 | Série les tubes : le tube jaune, les protéines (albumine, préalbumine, haptoglobine) ; voix gratuite, directives Instagram | `Tube-Jaune-Proteines` | [voix/86-tube-jaune-proteines.script.json](voix/86-tube-jaune-proteines.script.json) | [plan](docs/lpi/plan-tube-jaune-serie.md) |
+| 87 | Série les tubes : le tube jaune, l'électrophorèse et les immunoglobulines ; voix gratuite, directives Instagram | `Tube-Jaune-Electrophorese` | [voix/87-tube-jaune-electrophorese.script.json](voix/87-tube-jaune-electrophorese.script.json) | [plan](docs/lpi/plan-tube-jaune-serie.md) |
+| 88 | Série les tubes : le tube jaune, le cœur (troponine, NT-proBNP) ; voix gratuite, directives Instagram | `Tube-Jaune-Coeur` | [voix/88-tube-jaune-coeur.script.json](voix/88-tube-jaune-coeur.script.json) | [plan](docs/lpi/plan-tube-jaune-serie.md) |
 
 ## Utilisation
 
