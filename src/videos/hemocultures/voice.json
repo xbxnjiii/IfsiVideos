@@ -1,36 +1,36 @@
 {
  "voice": "voix.wav (tts_voix.py)",
- "duration": 59.03,
+ "duration": 60.806,
  "sections": [
   {
    "id": "intro",
    "start": 0.05,
-   "end": 7.873
+   "end": 9.387
   },
   {
-   "id": "quand",
-   "start": 8.867,
-   "end": 18.224
+   "id": "materiel",
+   "start": 10.32,
+   "end": 22.111
   },
   {
    "id": "volume",
-   "start": 19.15,
-   "end": 28.313
+   "start": 23.038,
+   "end": 33.924
   },
   {
    "id": "ordre",
-   "start": 29.252,
-   "end": 39.59
+   "start": 34.844,
+   "end": 45.182
   },
   {
    "id": "asepsie",
-   "start": 40.53,
-   "end": 49.316
+   "start": 46.121,
+   "end": 54.702
   },
   {
    "id": "fin",
-   "start": 50.259,
-   "end": 58.678
+   "start": 55.648,
+   "end": 60.475
   }
  ],
  "words": [
@@ -42,76 +42,76 @@
   {
    "text": "hémoculture",
    "start": 0.254,
-   "end": 0.831
+   "end": 0.819
   },
   {
    "text": "mal",
-   "start": 0.831,
-   "end": 1.036
+   "start": 0.819,
+   "end": 1.024
   },
   {
    "text": "prélevée,",
-   "start": 1.036,
+   "start": 1.024,
    "end": 1.54
   },
   {
    "text": "et",
-   "start": 1.889,
-   "end": 1.961
+   "start": 1.877,
+   "end": 1.949
   },
   {
    "text": "ton",
-   "start": 1.961,
-   "end": 2.081
+   "start": 1.949,
+   "end": 2.069
   },
   {
    "text": "patient",
-   "start": 2.081,
-   "end": 2.394
+   "start": 2.069,
+   "end": 2.382
   },
   {
    "text": "reçoit",
-   "start": 2.394,
-   "end": 2.658
+   "start": 2.382,
+   "end": 2.646
   },
   {
    "text": "des",
-   "start": 2.658,
-   "end": 2.742
+   "start": 2.646,
+   "end": 2.718
   },
   {
    "text": "antibiotiques",
-   "start": 2.742,
-   "end": 3.403
+   "start": 2.718,
+   "end": 3.367
   },
   {
    "text": "pour",
-   "start": 3.403,
-   "end": 3.536
+   "start": 3.367,
+   "end": 3.512
   },
   {
    "text": "une",
-   "start": 3.536,
-   "end": 3.62
+   "start": 3.512,
+   "end": 3.596
   },
   {
    "text": "bactérie…",
-   "start": 3.62,
-   "end": 4.124
+   "start": 3.596,
+   "end": 4.1
   },
   {
    "text": "venue",
-   "start": 4.281,
-   "end": 4.497
+   "start": 4.269,
+   "end": 4.473
   },
   {
    "text": "de",
-   "start": 4.497,
-   "end": 4.581
+   "start": 4.473,
+   "end": 4.569
   },
   {
    "text": "sa",
-   "start": 4.581,
+   "start": 4.569,
    "end": 4.701
   },
   {
@@ -120,749 +120,784 @@
    "end": 5.014
   },
   {
-   "text": "Quatre",
-   "start": 5.338,
-   "end": 5.699
+   "text": "Le",
+   "start": 5.397,
+   "end": 5.505
   },
   {
-   "text": "règles",
-   "start": 5.699,
-   "end": 6.048
+   "text": "matériel,",
+   "start": 5.505,
+   "end": 6.106
   },
   {
-   "text": "pour",
-   "start": 6.048,
-   "end": 6.18
+   "text": "le",
+   "start": 6.49,
+   "end": 6.562
   },
   {
-   "text": "la",
-   "start": 6.18,
-   "end": 6.252
+   "text": "volume,",
+   "start": 6.562,
+   "end": 7.031
   },
   {
-   "text": "réussir.",
-   "start": 6.252,
-   "end": 6.913
+   "text": "l'ordre,",
+   "start": 7.332,
+   "end": 7.728
   },
   {
-   "text": "Tu",
-   "start": 7.236,
-   "end": 7.356
+   "text": "l'asepsie :",
+   "start": 8.065,
+   "end": 8.654
   },
   {
-   "text": "les",
-   "start": 7.356,
-   "end": 7.452
+   "text": "tu",
+   "start": 8.906,
+   "end": 9.026
   },
   {
-   "text": "connais ?",
-   "start": 7.452,
-   "end": 7.873
+   "text": "sais",
+   "start": 9.026,
+   "end": 9.147
+  },
+  {
+   "text": "tout ?",
+   "start": 9.147,
+   "end": 9.387
   },
   {
    "text": "Un :",
-   "start": 8.867,
-   "end": 9.11
+   "start": 10.32,
+   "end": 10.644
   },
   {
    "text": "le",
-   "start": 9.449,
-   "end": 9.522
+   "start": 11.029,
+   "end": 11.101
   },
   {
-   "text": "bon",
-   "start": 9.522,
-   "end": 9.656
+   "text": "matériel.",
+   "start": 11.101,
+   "end": 11.762
   },
   {
-   "text": "moment.",
-   "start": 9.656,
-   "end": 10.032
+   "text": "Des",
+   "start": 12.087,
+   "end": 12.267
   },
   {
-   "text": "Devant",
-   "start": 10.361,
-   "end": 10.664
+   "text": "gants,",
+   "start": 12.267,
+   "end": 12.556
   },
   {
-   "text": "une",
-   "start": 10.664,
-   "end": 10.761
+   "text": "un",
+   "start": 12.748,
+   "end": 12.844
   },
   {
-   "text": "fièvre,",
-   "start": 10.761,
-   "end": 11.247
+   "text": "garrot,",
+   "start": 12.844,
+   "end": 13.277
   },
   {
    "text": "des",
-   "start": 11.502,
-   "end": 11.586
+   "start": 13.577,
+   "end": 13.625
   },
   {
-   "text": "frissons,",
-   "start": 11.587,
-   "end": 12.084
+   "text": "compresses",
+   "start": 13.625,
+   "end": 13.986
   },
   {
-   "text": "ou",
-   "start": 12.448,
-   "end": 12.497
+   "text": "stériles,",
+   "start": 13.986,
+   "end": 14.455
   },
   {
-   "text": "au",
-   "start": 12.497,
-   "end": 12.545
-  },
-  {
-   "text": "contraire",
-   "start": 12.545,
-   "end": 12.909
-  },
-  {
-   "text": "une",
-   "start": 12.909,
-   "end": 12.982
-  },
-  {
-   "text": "température",
-   "start": 12.982,
-   "end": 13.54
-  },
-  {
-   "text": "trop",
-   "start": 13.54,
-   "end": 13.722
-  },
-  {
-   "text": "basse.",
-   "start": 13.722,
-   "end": 14.184
-  },
-  {
-   "text": "Et",
-   "start": 14.511,
-   "end": 14.644
-  },
-  {
-   "text": "toujours",
-   "start": 14.644,
-   "end": 14.996
-  },
-  {
-   "text": "avant",
-   "start": 14.996,
-   "end": 15.178
-  },
-  {
-   "text": "la",
-   "start": 15.178,
-   "end": 15.263
-  },
-  {
-   "text": "première",
-   "start": 15.263,
-   "end": 15.567
-  },
-  {
-   "text": "dose",
-   "start": 15.567,
-   "end": 15.749
-  },
-  {
-   "text": "d'antibiotique,",
-   "start": 15.749,
-   "end": 16.513
-  },
-  {
-   "text": "sinon",
-   "start": 16.792,
-   "end": 17.072
-  },
-  {
-   "text": "les",
-   "start": 17.072,
-   "end": 17.156
-  },
-  {
-   "text": "bactéries",
-   "start": 17.157,
-   "end": 17.618
-  },
-  {
-   "text": "ne",
-   "start": 17.618,
-   "end": 17.727
-  },
-  {
-   "text": "poussent",
-   "start": 17.727,
-   "end": 17.933
-  },
-  {
-   "text": "plus.",
-   "start": 17.933,
-   "end": 18.224
-  },
-  {
-   "text": "Deux :",
-   "start": 19.15,
-   "end": 19.55
-  },
-  {
-   "text": "le",
-   "start": 19.89,
-   "end": 19.975
-  },
-  {
-   "text": "volume.",
-   "start": 19.975,
-   "end": 20.521
-  },
-  {
-   "text": "C'est",
-   "start": 20.861,
-   "end": 21.067
-  },
-  {
-   "text": "lui",
-   "start": 21.067,
-   "end": 21.225
-  },
-  {
-   "text": "qui",
-   "start": 21.225,
-   "end": 21.346
-  },
-  {
-   "text": "trouve",
-   "start": 21.346,
-   "end": 21.601
-  },
-  {
-   "text": "la",
-   "start": 21.601,
-   "end": 21.686
-  },
-  {
-   "text": "bactérie.",
-   "start": 21.686,
-   "end": 22.269
-  },
-  {
-   "text": "Chez",
-   "start": 22.597,
-   "end": 22.779
-  },
-  {
-   "text": "l'adulte,",
-   "start": 22.779,
-   "end": 23.24
-  },
-  {
-   "text": "on",
-   "start": 23.495,
-   "end": 23.531
-  },
-  {
-   "text": "remplit",
-   "start": 23.531,
-   "end": 23.859
-  },
-  {
-   "text": "chaque",
-   "start": 23.859,
-   "end": 24.041
-  },
-  {
-   "text": "flacon",
-   "start": 24.041,
-   "end": 24.368
-  },
-  {
-   "text": "de",
-   "start": 24.368,
-   "end": 24.478
-  },
-  {
-   "text": "huit",
-   "start": 24.478,
-   "end": 24.696
-  },
-  {
-   "text": "à",
-   "start": 24.696,
-   "end": 24.745
-  },
-  {
-   "text": "dix",
-   "start": 24.745,
-   "end": 24.89
-  },
-  {
-   "text": "millilitres,",
-   "start": 24.89,
-   "end": 25.412
-  },
-  {
-   "text": "et",
-   "start": 25.8,
-   "end": 25.849
-  },
-  {
-   "text": "on",
-   "start": 25.849,
-   "end": 25.885
-  },
-  {
-   "text": "prélève",
-   "start": 25.885,
-   "end": 26.201
-  },
-  {
-   "text": "en",
-   "start": 26.201,
-   "end": 26.237
-  },
-  {
-   "text": "général",
-   "start": 26.237,
-   "end": 26.699
-  },
-  {
-   "text": "quatre",
-   "start": 26.699,
-   "end": 26.929
-  },
-  {
-   "text": "à",
-   "start": 26.929,
-   "end": 26.966
-  },
-  {
-   "text": "six",
-   "start": 26.966,
-   "end": 27.123
-  },
-  {
-   "text": "flacons",
-   "start": 27.123,
-   "end": 27.536
-  },
-  {
-   "text": "en",
-   "start": 27.536,
-   "end": 27.633
-  },
-  {
-   "text": "une",
-   "start": 27.633,
-   "end": 27.767
-  },
-  {
-   "text": "seule",
-   "start": 27.767,
-   "end": 27.961
-  },
-  {
-   "text": "fois.",
-   "start": 27.961,
-   "end": 28.313
-  },
-  {
-   "text": "Trois :",
-   "start": 29.252,
-   "end": 29.677
-  },
-  {
-   "text": "l'ordre.",
-   "start": 30.077,
-   "end": 30.599
-  },
-  {
-   "text": "Le",
-   "start": 30.974,
-   "end": 31.095
-  },
-  {
-   "text": "flacon",
-   "start": 31.095,
-   "end": 31.423
-  },
-  {
-   "text": "aérobie,",
-   "start": 31.423,
-   "end": 32.018
-  },
-  {
-   "text": "au",
-   "start": 32.309,
-   "end": 32.345
-  },
-  {
-   "text": "bouchon",
-   "start": 32.345,
-   "end": 32.649
-  },
-  {
-   "text": "vert,",
-   "start": 32.649,
-   "end": 33.013
-  },
-  {
-   "text": "d'abord,",
-   "start": 33.231,
-   "end": 33.729
-  },
-  {
-   "text": "puis",
-   "start": 33.996,
-   "end": 34.129
-  },
-  {
-   "text": "l'anaérobie,",
-   "start": 34.129,
-   "end": 34.857
-  },
-  {
-   "text": "au",
-   "start": 35.1,
-   "end": 35.136
-  },
-  {
-   "text": "bouchon",
-   "start": 35.136,
-   "end": 35.452
-  },
-  {
-   "text": "orange.",
-   "start": 35.452,
-   "end": 35.95
-  },
-  {
-   "text": "Avec",
-   "start": 36.277,
-   "end": 36.544
-  },
-  {
-   "text": "une",
-   "start": 36.544,
-   "end": 36.641
-  },
-  {
-   "text": "aiguille",
-   "start": 36.641,
-   "end": 36.933
-  },
-  {
-   "text": "à",
-   "start": 36.933,
-   "end": 36.981
-  },
-  {
-   "text": "ailettes,",
-   "start": 36.981,
-   "end": 37.394
-  },
-  {
-   "text": "l'air",
-   "start": 37.685,
-   "end": 37.831
-  },
-  {
-   "text": "de",
-   "start": 37.831,
-   "end": 37.903
-  },
-  {
-   "text": "la",
-   "start": 37.903,
-   "end": 37.988
-  },
-  {
-   "text": "tubulure",
-   "start": 37.988,
-   "end": 38.486
-  },
-  {
-   "text": "part",
-   "start": 38.486,
-   "end": 38.656
-  },
-  {
-   "text": "ainsi",
-   "start": 38.656,
-   "end": 38.923
-  },
-  {
-   "text": "dans",
-   "start": 38.923,
-   "end": 39.02
-  },
-  {
-   "text": "le",
-   "start": 39.02,
-   "end": 39.093
-  },
-  {
-   "text": "premier.",
-   "start": 39.093,
-   "end": 39.59
-  },
-  {
-   "text": "Quatre :",
-   "start": 40.53,
-   "end": 41.003
-  },
-  {
-   "text": "l'asepsie.",
-   "start": 41.294,
-   "end": 41.986
-  },
-  {
-   "text": "Friction",
-   "start": 42.314,
-   "end": 42.739
-  },
-  {
-   "text": "des",
-   "start": 42.739,
-   "end": 42.872
-  },
-  {
-   "text": "mains,",
-   "start": 42.872,
-   "end": 43.139
+   "text": "un",
+   "start": 14.827,
+   "end": 14.863
   },
   {
    "text": "antiseptique",
-   "start": 43.479,
-   "end": 44.001
+   "start": 14.863,
+   "end": 15.452
   },
   {
    "text": "alcoolique",
-   "start": 44.001,
-   "end": 44.353
+   "start": 15.452,
+   "end": 15.813
   },
   {
-   "text": "sur",
-   "start": 44.353,
-   "end": 44.474
+   "text": "pour",
+   "start": 15.813,
+   "end": 15.933
   },
   {
    "text": "la",
-   "start": 44.474,
-   "end": 44.571
+   "start": 15.933,
+   "end": 16.017
   },
   {
    "text": "peau,",
-   "start": 44.571,
-   "end": 44.85
+   "start": 16.017,
+   "end": 16.294
   },
   {
-   "text": "on",
-   "start": 45.142,
-   "end": 45.166
+   "text": "de",
+   "start": 16.63,
+   "end": 16.69
   },
   {
-   "text": "laisse",
-   "start": 45.166,
-   "end": 45.372
+   "text": "l'alcool",
+   "start": 16.69,
+   "end": 17.027
   },
   {
-   "text": "sécher,",
-   "start": 45.372,
-   "end": 45.809
+   "text": "à",
+   "start": 17.027,
+   "end": 17.075
   },
   {
-   "text": "et",
-   "start": 46.113,
-   "end": 46.21
+   "text": "soixante-dix",
+   "start": 17.075,
+   "end": 17.447
   },
   {
-   "text": "on",
-   "start": 46.21,
-   "end": 46.246
+   "text": "degrés",
+   "start": 17.447,
+   "end": 17.724
   },
   {
-   "text": "ne",
-   "start": 46.246,
-   "end": 46.343
+   "text": "pour",
+   "start": 17.724,
+   "end": 17.844
   },
   {
-   "text": "touche",
-   "start": 46.343,
-   "end": 46.549
+   "text": "les",
+   "start": 17.844,
+   "end": 17.916
   },
   {
-   "text": "plus",
-   "start": 46.549,
-   "end": 46.707
-  },
-  {
-   "text": "la",
-   "start": 46.707,
-   "end": 46.816
-  },
-  {
-   "text": "veine.",
-   "start": 46.816,
-   "end": 47.229
-  },
-  {
-   "text": "On",
-   "start": 47.568,
-   "end": 47.714
-  },
-  {
-   "text": "désinfecte",
-   "start": 47.714,
-   "end": 48.248
-  },
-  {
-   "text": "aussi",
-   "start": 48.248,
-   "end": 48.491
-  },
-  {
-   "text": "le",
-   "start": 48.491,
-   "end": 48.612
-  },
-  {
-   "text": "haut",
-   "start": 48.612,
-   "end": 48.709
-  },
-  {
-   "text": "des",
-   "start": 48.709,
-   "end": 48.818
-  },
-  {
-   "text": "flacons.",
-   "start": 48.818,
-   "end": 49.316
-  },
-  {
-   "text": "Avant",
-   "start": 50.259,
-   "end": 50.517
-  },
-  {
-   "text": "l'antibiotique,",
-   "start": 50.517,
-   "end": 51.289
-  },
-  {
-   "text": "des",
-   "start": 51.509,
-   "end": 51.583
-  },
-  {
-   "text": "flacons",
-   "start": 51.583,
-   "end": 51.914
-  },
-  {
-   "text": "bien",
-   "start": 51.914,
-   "end": 52.085
-  },
-  {
-   "text": "remplis,",
-   "start": 52.085,
-   "end": 52.539
-  },
-  {
-   "text": "d'abord",
-   "start": 52.87,
-   "end": 53.115
-  },
-  {
-   "text": "le",
-   "start": 53.115,
-   "end": 53.2
-  },
-  {
-   "text": "vert,",
-   "start": 53.2,
-   "end": 53.507
-  },
-  {
-   "text": "ensuite",
-   "start": 53.691,
-   "end": 53.96
-  },
-  {
-   "text": "l'orange,",
-   "start": 53.96,
-   "end": 54.414
-  },
-  {
-   "text": "et",
-   "start": 54.696,
-   "end": 54.72
+   "text": "bouchons,",
+   "start": 17.916,
+   "end": 18.325
   },
   {
    "text": "une",
-   "start": 54.72,
-   "end": 54.818
+   "start": 18.758,
+   "end": 18.842
   },
   {
-   "text": "asepsie",
-   "start": 54.818,
-   "end": 55.161
+   "text": "aiguille",
+   "start": 18.842,
+   "end": 19.094
   },
   {
-   "text": "parfaite.",
-   "start": 55.161,
-   "end": 55.799
+   "text": "à",
+   "start": 19.094,
+   "end": 19.154
   },
   {
-   "text": "Puis",
-   "start": 56.129,
-   "end": 56.313
+   "text": "ailettes",
+   "start": 19.154,
+   "end": 19.443
   },
   {
-   "text": "on",
-   "start": 56.313,
-   "end": 56.362
+   "text": "avec",
+   "start": 19.443,
+   "end": 19.599
   },
   {
-   "text": "étiquette,",
-   "start": 56.362,
-   "end": 57.012
+   "text": "son",
+   "start": 19.599,
+   "end": 19.695
+  },
+  {
+   "text": "corps",
+   "start": 19.695,
+   "end": 19.851
+  },
+  {
+   "text": "de",
+   "start": 19.851,
+   "end": 19.947
+  },
+  {
+   "text": "pompe,",
+   "start": 19.947,
+   "end": 20.308
+  },
+  {
+   "text": "les",
+   "start": 20.512,
+   "end": 20.584
+  },
+  {
+   "text": "flacons,",
+   "start": 20.584,
+   "end": 21.017
   },
   {
    "text": "et",
-   "start": 57.343,
-   "end": 57.392
+   "start": 21.366,
+   "end": 21.39
+  },
+  {
+   "text": "du",
+   "start": 21.39,
+   "end": 21.486
+  },
+  {
+   "text": "sparadrap.",
+   "start": 21.486,
+   "end": 22.111
+  },
+  {
+   "text": "Deux :",
+   "start": 23.038,
+   "end": 23.438
+  },
+  {
+   "text": "le",
+   "start": 23.79,
+   "end": 23.863
+  },
+  {
+   "text": "volume.",
+   "start": 23.863,
+   "end": 24.397
+  },
+  {
+   "text": "Les",
+   "start": 24.725,
+   "end": 24.894
+  },
+  {
+   "text": "bactéries",
+   "start": 24.894,
+   "end": 25.283
+  },
+  {
+   "text": "ne",
+   "start": 25.283,
+   "end": 25.38
+  },
+  {
+   "text": "sont",
+   "start": 25.38,
+   "end": 25.501
+  },
+  {
+   "text": "pas",
+   "start": 25.501,
+   "end": 25.61
+  },
+  {
+   "text": "toujours",
+   "start": 25.61,
+   "end": 25.902
+  },
+  {
+   "text": "dans",
+   "start": 25.902,
+   "end": 25.999
+  },
+  {
+   "text": "le",
+   "start": 25.999,
+   "end": 26.084
+  },
+  {
+   "text": "sang :",
+   "start": 26.084,
+   "end": 26.363
+  },
+  {
+   "text": "plus",
+   "start": 26.666,
+   "end": 26.788
   },
   {
    "text": "on",
-   "start": 57.392,
-   "end": 57.428
+   "start": 26.788,
+   "end": 26.885
   },
   {
-   "text": "envoie",
-   "start": 57.428,
-   "end": 57.673
+   "text": "prélève,",
+   "start": 26.885,
+   "end": 27.419
   },
   {
-   "text": "vite",
-   "start": 57.674,
-   "end": 57.894
+   "text": "plus",
+   "start": 27.613,
+   "end": 27.746
+  },
+  {
+   "text": "on",
+   "start": 27.746,
+   "end": 27.843
+  },
+  {
+   "text": "les",
+   "start": 27.843,
+   "end": 27.928
+  },
+  {
+   "text": "trouve.",
+   "start": 27.928,
+   "end": 28.402
+  },
+  {
+   "text": "Chez",
+   "start": 28.742,
+   "end": 28.948
+  },
+  {
+   "text": "l'adulte,",
+   "start": 28.948,
+   "end": 29.409
+  },
+  {
+   "text": "il",
+   "start": 29.725,
+   "end": 29.81
+  },
+  {
+   "text": "faut",
+   "start": 29.81,
+   "end": 29.931
+  },
+  {
+   "text": "quarante",
+   "start": 29.931,
+   "end": 30.271
+  },
+  {
+   "text": "à",
+   "start": 30.271,
+   "end": 30.32
+  },
+  {
+   "text": "soixante",
+   "start": 30.32,
+   "end": 30.684
+  },
+  {
+   "text": "millilitres,",
+   "start": 30.684,
+   "end": 31.205
+  },
+  {
+   "text": "soit",
+   "start": 31.509,
+   "end": 31.679
+  },
+  {
+   "text": "deux",
+   "start": 31.679,
+   "end": 31.849
+  },
+  {
+   "text": "à",
+   "start": 31.849,
+   "end": 31.909
+  },
+  {
+   "text": "trois",
+   "start": 31.909,
+   "end": 32.091
+  },
+  {
+   "text": "paires",
+   "start": 32.091,
+   "end": 32.249
+  },
+  {
+   "text": "de",
+   "start": 32.249,
+   "end": 32.346
+  },
+  {
+   "text": "flacons,",
+   "start": 32.346,
+   "end": 32.747
+  },
+  {
+   "text": "sur",
+   "start": 33.05,
+   "end": 33.196
+  },
+  {
+   "text": "vingt-quatre",
+   "start": 33.196,
+   "end": 33.645
+  },
+  {
+   "text": "heures.",
+   "start": 33.645,
+   "end": 33.924
+  },
+  {
+   "text": "Trois :",
+   "start": 34.844,
+   "end": 35.269
+  },
+  {
+   "text": "l'ordre.",
+   "start": 35.669,
+   "end": 36.191
+  },
+  {
+   "text": "Le",
+   "start": 36.566,
+   "end": 36.687
+  },
+  {
+   "text": "flacon",
+   "start": 36.687,
+   "end": 37.015
+  },
+  {
+   "text": "aérobie,",
+   "start": 37.015,
+   "end": 37.61
   },
   {
    "text": "au",
-   "start": 57.894,
-   "end": 57.919
+   "start": 37.901,
+   "end": 37.937
+  },
+  {
+   "text": "bouchon",
+   "start": 37.937,
+   "end": 38.241
+  },
+  {
+   "text": "vert,",
+   "start": 38.241,
+   "end": 38.605
+  },
+  {
+   "text": "d'abord,",
+   "start": 38.823,
+   "end": 39.321
+  },
+  {
+   "text": "puis",
+   "start": 39.588,
+   "end": 39.721
+  },
+  {
+   "text": "l'anaérobie,",
+   "start": 39.721,
+   "end": 40.449
+  },
+  {
+   "text": "au",
+   "start": 40.692,
+   "end": 40.728
+  },
+  {
+   "text": "bouchon",
+   "start": 40.728,
+   "end": 41.044
+  },
+  {
+   "text": "orange.",
+   "start": 41.044,
+   "end": 41.542
+  },
+  {
+   "text": "Avec",
+   "start": 41.869,
+   "end": 42.136
+  },
+  {
+   "text": "une",
+   "start": 42.136,
+   "end": 42.233
+  },
+  {
+   "text": "aiguille",
+   "start": 42.233,
+   "end": 42.525
+  },
+  {
+   "text": "à",
+   "start": 42.525,
+   "end": 42.573
+  },
+  {
+   "text": "ailettes,",
+   "start": 42.573,
+   "end": 42.986
+  },
+  {
+   "text": "l'air",
+   "start": 43.277,
+   "end": 43.423
+  },
+  {
+   "text": "de",
+   "start": 43.423,
+   "end": 43.495
+  },
+  {
+   "text": "la",
+   "start": 43.495,
+   "end": 43.58
+  },
+  {
+   "text": "tubulure",
+   "start": 43.58,
+   "end": 44.078
+  },
+  {
+   "text": "part",
+   "start": 44.078,
+   "end": 44.248
+  },
+  {
+   "text": "ainsi",
+   "start": 44.248,
+   "end": 44.515
+  },
+  {
+   "text": "dans",
+   "start": 44.515,
+   "end": 44.612
+  },
+  {
+   "text": "le",
+   "start": 44.612,
+   "end": 44.685
+  },
+  {
+   "text": "premier.",
+   "start": 44.685,
+   "end": 45.182
+  },
+  {
+   "text": "Quatre :",
+   "start": 46.121,
+   "end": 46.57
+  },
+  {
+   "text": "l'asepsie.",
+   "start": 46.862,
+   "end": 47.541
+  },
+  {
+   "text": "Antiseptique",
+   "start": 47.905,
+   "end": 48.499
+  },
+  {
+   "text": "alcoolique",
+   "start": 48.499,
+   "end": 48.875
+  },
+  {
+   "text": "sur",
+   "start": 48.875,
+   "end": 48.985
+  },
+  {
+   "text": "la",
+   "start": 48.985,
+   "end": 49.082
+  },
+  {
+   "text": "peau,",
+   "start": 49.082,
+   "end": 49.385
+  },
+  {
+   "text": "on",
+   "start": 49.64,
+   "end": 49.664
+  },
+  {
+   "text": "laisse",
+   "start": 49.664,
+   "end": 49.871
+  },
+  {
+   "text": "sécher,",
+   "start": 49.871,
+   "end": 50.344
+  },
+  {
+   "text": "et",
+   "start": 50.635,
+   "end": 50.732
+  },
+  {
+   "text": "on",
+   "start": 50.732,
+   "end": 50.769
+  },
+  {
+   "text": "ne",
+   "start": 50.769,
+   "end": 50.854
+  },
+  {
+   "text": "touche",
+   "start": 50.854,
+   "end": 51.06
+  },
+  {
+   "text": "plus",
+   "start": 51.06,
+   "end": 51.206
+  },
+  {
+   "text": "la",
+   "start": 51.206,
+   "end": 51.315
+  },
+  {
+   "text": "veine.",
+   "start": 51.315,
+   "end": 51.715
+  },
+  {
+   "text": "Et",
+   "start": 52.044,
+   "end": 52.202
+  },
+  {
+   "text": "un",
+   "start": 52.202,
+   "end": 52.262
+  },
+  {
+   "text": "coup",
+   "start": 52.262,
+   "end": 52.372
+  },
+  {
+   "text": "d'alcool",
+   "start": 52.372,
+   "end": 52.796
+  },
+  {
+   "text": "à",
+   "start": 52.796,
+   "end": 52.845
+  },
+  {
+   "text": "soixante-dix",
+   "start": 52.845,
+   "end": 53.258
+  },
+  {
+   "text": "degrés",
+   "start": 53.258,
+   "end": 53.609
+  },
+  {
+   "text": "sur",
+   "start": 53.61,
+   "end": 53.767
+  },
+  {
+   "text": "le",
+   "start": 53.767,
+   "end": 53.852
+  },
+  {
+   "text": "bouchon",
+   "start": 53.852,
+   "end": 54.131
+  },
+  {
+   "text": "des",
+   "start": 54.131,
+   "end": 54.228
+  },
+  {
+   "text": "flacons.",
+   "start": 54.228,
+   "end": 54.702
+  },
+  {
+   "text": "Et",
+   "start": 55.648,
+   "end": 55.807
+  },
+  {
+   "text": "toujours",
+   "start": 55.807,
+   "end": 56.212
+  },
+  {
+   "text": "avant",
+   "start": 56.212,
+   "end": 56.396
+  },
+  {
+   "text": "le",
+   "start": 56.396,
+   "end": 56.469
+  },
+  {
+   "text": "premier",
+   "start": 56.469,
+   "end": 56.775
+  },
+  {
+   "text": "antibiotique.",
+   "start": 56.775,
+   "end": 57.609
+  },
+  {
+   "text": "Puis",
+   "start": 57.951,
+   "end": 58.135
+  },
+  {
+   "text": "on",
+   "start": 58.135,
+   "end": 58.172
+  },
+  {
+   "text": "étiquette,",
+   "start": 58.172,
+   "end": 58.809
+  },
+  {
+   "text": "et",
+   "start": 59.14,
+   "end": 59.189
+  },
+  {
+   "text": "on",
+   "start": 59.189,
+   "end": 59.225
+  },
+  {
+   "text": "envoie",
+   "start": 59.225,
+   "end": 59.483
+  },
+  {
+   "text": "vite",
+   "start": 59.483,
+   "end": 59.703
+  },
+  {
+   "text": "au",
+   "start": 59.703,
+   "end": 59.728
   },
   {
    "text": "laboratoire.",
-   "start": 57.919,
-   "end": 58.678
+   "start": 59.728,
+   "end": 60.475
   }
  ]
 }

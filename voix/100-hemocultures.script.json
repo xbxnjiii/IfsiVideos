@@ -2,17 +2,17 @@
  {
   "id": "intro",
   "rate": "+4%",
-  "text": "Une hémoculture mal prélevée, et ton patient reçoit des antibiotiques pour une bactérie… venue de sa peau. Quatre règles pour la réussir. Tu les connais ?"
+  "text": "Une hémoculture mal prélevée, et ton patient reçoit des antibiotiques pour une bactérie… venue de sa peau. Le matériel, le volume, l'ordre, l'asepsie : tu sais tout ?"
  },
  {
-  "id": "quand",
-  "rate": "+3%",
-  "text": "Un : le bon moment. Devant une fièvre, des frissons, ou au contraire une température trop basse. Et toujours avant la première dose d'antibiotique, sinon les bactéries ne poussent plus."
+  "id": "materiel",
+  "rate": "+4%",
+  "text": "Un : le matériel. Des gants, un garrot, des compresses stériles, un antiseptique alcoolique pour la peau, de l'alcool à soixante-dix degrés pour les bouchons, une aiguille à ailettes avec son corps de pompe, les flacons, et du sparadrap."
  },
  {
   "id": "volume",
   "rate": "+3%",
-  "text": "Deux : le volume. C'est lui qui trouve la bactérie. Chez l'adulte, on remplit chaque flacon de huit à dix millilitres, et on prélève en général quatre à six flacons en une seule fois."
+  "text": "Deux : le volume. Les bactéries ne sont pas toujours dans le sang : plus on prélève, plus on les trouve. Chez l'adulte, il faut quarante à soixante millilitres, soit deux à trois paires de flacons, sur vingt-quatre heures."
  },
  {
   "id": "ordre",
@@ -22,11 +22,11 @@
  {
   "id": "asepsie",
   "rate": "+3%",
-  "text": "Quatre : l'asepsie. Friction des mains, antiseptique alcoolique sur la peau, on laisse sécher, et on ne touche plus la veine. On désinfecte aussi le haut des flacons."
+  "text": "Quatre : l'asepsie. Antiseptique alcoolique sur la peau, on laisse sécher, et on ne touche plus la veine. Et un coup d'alcool à soixante-dix degrés sur le bouchon des flacons."
  },
  {
   "id": "fin",
   "rate": "+2%",
-  "text": "Avant l'antibiotique, des flacons bien remplis, d'abord le vert, ensuite l'orange, et une asepsie parfaite. Puis on étiquette, et on envoie vite au laboratoire."
+  "text": "Et toujours avant le premier antibiotique. Puis on étiquette, et on envoie vite au laboratoire."
  }
 ]

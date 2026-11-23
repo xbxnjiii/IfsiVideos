@@ -1,19 +1,21 @@
-// « Les hémocultures » (n° 100, série « les tubes » ; directives Instagram). Accroche : une hémoculture mal prélevée = une
-// bactérie de la peau dans le flacon et des antibiotiques pour rien. 1 · le bon moment (fièvre, frissons, hypothermie ;
-// toujours avant la 1re dose d'antibiotique) ; 2 · le volume (8 – 10 mL par flacon chez l'adulte, en général 4 à 6 flacons
-// en un seul prélèvement) ; 3 · l'ordre (aérobie bouchon vert puis anaérobie bouchon orange ; avec une aiguille à ailettes,
-// l'air de la tubulure part dans l'aérobie) ; 4 · l'asepsie (friction hydro-alcoolique, antiseptique alcoolique, séchage,
-// pas de palpation après, opercules désinfectés). Fin : étiqueter, acheminer vite au laboratoire.
-// Sources : REMIC 2022 (SFM : prélèvement unique de 4 à 6 flacons, 8 – 10 mL par flacon chez l'adulte, volume = 1er
-// facteur de sensibilité) ; SF2H 2020 (antisepsie alcoolique, temps de séchage) ; CLSI M47 (contamination < 3 %).
+// « Les hémocultures » (n° 100, v2 refaite à la demande avec deux documents du propriétaire : le matériel en 8 objets et
+// « combien de paires prélever »). Accroche : une hémoculture mal prélevée = une bactérie de la peau dans le flacon et des
+// antibiotiques pour rien. 1 · le matériel (gants, garrot, compresses stériles, antiseptique alcoolique pour la peau, alcool
+// à 70° pour les bouchons, aiguille à ailettes + corps de pompe, flacons aérobie / anaérobie, sparadrap) ; 2 · le volume
+// (bactéries pas toujours présentes dans le sang : 40 – 60 mL chez l'adulte par épisode = 2 à 3 paires (4 à 6 flacons) sur
+// 24 h ; ≈ 8 – 10 mL par flacon à l'écran) ; 3 · l'ordre (aérobie bouchon vert puis anaérobie bouchon orange ; ailettes :
+// l'air de la tubulure part dans l'aérobie) ; 4 · l'asepsie (antiseptique alcoolique, séchage, ne plus palper ; alcool à
+// 70° sur les bouchons). Fin : avant le 1er antibiotique, étiqueter, vite au labo.
+// Sources : documents du propriétaire ; REMIC 2022 (SFM : 40 – 60 mL par épisode, 8 – 10 mL par flacon) ; SF2H 2020
+// (antisepsie alcoolique, temps de séchage). Le visuel est dessiné par nous (l'image fournie n'est pas reprise).
 // Couleurs des bouchons : vraies couleurs (HEMO_CAP), elles peuvent varier selon les marques.
 import React from 'react';
 import {interpolate, useCurrentFrame} from 'remotion';
 import {Live} from '../../brand/bold';
 import {Microbe} from '../../brand/hands';
-import {FeverIcon, PillIcon, ShiverIcon} from '../../brand/icons';
+import {PillIcon} from '../../brand/icons';
 import {LabFin, LabHook, LabNotion} from '../../brand/labshort';
-import {AntisepticBottle, ShaBottle} from '../../brand/sampling';
+import {AntisepticBottle, Butterfly, Gauze, Hand, Holder, TourniquetStrap} from '../../brand/sampling';
 import {Pop} from '../../brand/short';
 import {alpha, FONT, LPI} from '../../brand/theme';
 import {HEMO_CAP, HemoFlask} from '../../brand/tubes';
@@ -24,17 +26,98 @@ const N = LPI.navy;
 const S = {cap: HEMO_CAP.aero, label: 'LES TUBES · LES HÉMOCULTURES', total: 4};
 
 /** Flacon qui oscille doucement. */
-const SwayFlask: React.FC<{cap: string; label?: string; size?: number; level?: number; o2?: number; noO2?: number}> = ({cap, label = '', size = 130, level = 0.6, o2, noO2}) => (
-	<Live render={(f) => <div style={{transform: `rotate(${Math.sin(f / 14) * 4}deg)`}}><HemoFlask size={size} cap={cap} label={label} level={level} o2={o2} noO2={noO2} /></div>} />
+const SwayFlask: React.FC<{cap: string; size?: number; level?: number}> = ({cap, size = 130, level = 0.6}) => (
+	<Live render={(f) => <div style={{transform: `rotate(${Math.sin(f / 14) * 4}deg)`}}><HemoFlask size={size} cap={cap} label="" level={level} /></div>} />
 );
+
+/** Flacon d'alcool à 70° (bouchons). */
+const AlcoholBottle: React.FC<{size?: number}> = ({size = 110}) => (
+	<svg width={size} height={size * 1.7} viewBox="0 0 140 240">
+		<rect x={50} y={4} width={40} height={28} rx={6} fill={LPI.blue} stroke={N} strokeWidth={5} />
+		<path d="M24 70 Q24 36 56 36 H84 Q116 36 116 70 V220 Q116 236 100 236 H40 Q24 236 24 220 Z" fill={LPI.paper} stroke={N} strokeWidth={5} />
+		<rect x={30} y={100} width={80} height={90} rx={10} fill={LPI.blue} />
+		<text x={70} y={158} textAnchor="middle" fontFamily={FONT.title} fontWeight={900} fontSize={40} fill={LPI.paper}>70°</text>
+	</svg>
+);
+
+/** Rouleau de sparadrap. */
+const TapeRoll: React.FC<{size?: number}> = ({size = 130}) => (
+	<svg width={size} height={size} viewBox="0 0 140 140">
+		<ellipse cx={70} cy={92} rx={58} ry={30} fill={alpha(N, 0.15)} />
+		<path d="M12 50 V88 Q12 116 70 116 Q128 116 128 88 V50" fill={LPI.paper} stroke={N} strokeWidth={5} />
+		<ellipse cx={70} cy={50} rx={58} ry={28} fill={LPI.paper} stroke={N} strokeWidth={5} />
+		<ellipse cx={70} cy={50} rx={26} ry={12} fill={LPI.sky} stroke={N} strokeWidth={4} />
+		<path d="M128 88 L136 128 L110 116" fill={LPI.paper} stroke={N} strokeWidth={4} strokeLinejoin="round" />
+	</svg>
+);
+
+const TRAY: {name: string; key: string; node: React.ReactNode}[] = [
+	{name: 'gants', key: 'gants,', node: <Hand size={120} gloved={1} />},
+	{name: 'garrot', key: 'garrot,', node: <TourniquetStrap size={170} />},
+	{name: 'compresses stériles', key: 'compresses', node: <Gauze size={110} sterile />},
+	{name: 'antiseptique (peau)', key: 'antiseptique', node: <AntisepticBottle size={70} />},
+	{name: 'alcool 70° (bouchons)', key: "l'alcool", node: <AlcoholBottle size={70} />},
+	{name: 'ailettes + corps de pompe', key: 'aiguille', node: <div style={{display: 'flex', alignItems: 'center', gap: 4}}><Butterfly size={130} /><Holder size={80} /></div>},
+	{name: 'flacons', key: 'flacons,', node: <div style={{display: 'flex', gap: 6}}><HemoFlask size={52} cap={HEMO_CAP.aero} label="" /><HemoFlask size={52} cap={HEMO_CAP.anaero} label="" /></div>},
+	{name: 'sparadrap', key: 'sparadrap.', node: <TapeRoll size={110} />},
+];
+
+/** Plateau des 8 objets ; `on[i]` (0 → 1) fait tomber l'objet i à sa place. */
+const Tray: React.FC<{on: number[]; hot?: number}> = ({on, hot = -1}) => (
+	<div style={{width: 900, padding: 24, borderRadius: 50, background: alpha(LPI.paper, 0.9), border: `7px solid ${N}`, boxShadow: `0 16px 40px ${alpha(N, 0.2)}`, display: 'grid', gridTemplateColumns: 'repeat(4, minmax(0, 1fr))', gap: 14, boxSizing: 'border-box'}}>
+		{TRAY.map((o, i) => {
+			const v = on[i] ?? 0;
+			return (
+				<div key={o.name} style={{height: 300, borderRadius: 26, background: i === hot ? alpha(LPI.pink, 0.45) : alpha(LPI.sky, 0.35), display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'space-between', padding: '12px 6px', boxSizing: 'border-box'}}>
+					<div style={{flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', opacity: v, transform: `translateY(${(1 - v) * -90}px) scale(${0.7 + 0.3 * v})`}}>{o.node}</div>
+					<div style={{fontFamily: FONT.title, fontWeight: 900, fontSize: 27, lineHeight: 1.1, color: N, textAlign: 'center', opacity: v, display: 'flex', gap: 6, alignItems: 'center', maxWidth: '100%'}}>
+						<span style={{display: 'inline-flex', width: 34, height: 34, borderRadius: 17, background: N, color: LPI.paper, alignItems: 'center', justifyContent: 'center', fontSize: 22, flexShrink: 0}}>{i + 1}</span>
+						{o.name}
+					</div>
+				</div>
+			);
+		})}
+	</div>
+);
+
+/** Frise de 24 h : paires de flacons qui s'ajoutent (`n` paires) et volume cumulé. */
+const Pairs24: React.FC<{n: number}> = ({n}) => {
+	const pairs = Math.max(1, Math.min(3, Math.floor(n + 0.001)));
+	return (
+		<div style={{width: 860, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16}}>
+			<div style={{display: 'flex', gap: 34, alignItems: 'flex-end', height: 240}}>
+				{[0, 1, 2].map((i) => {
+					const v = Math.max(0, Math.min(1, n - i));
+					return (
+						<div key={i} style={{display: 'flex', gap: 6, opacity: 0.15 + 0.85 * v, transform: `translateY(${(1 - v) * 30}px)`, border: i === 2 ? `5px dashed ${alpha(N, 0.5)}` : 'none', borderRadius: 26, padding: i === 2 ? 8 : 13}}>
+							<HemoFlask size={80} cap={HEMO_CAP.aero} label="" level={v} />
+							<HemoFlask size={80} cap={HEMO_CAP.anaero} label="" level={v} />
+						</div>
+					);
+				})}
+			</div>
+			<div style={{width: 820, height: 14, borderRadius: 7, background: alpha(N, 0.2), position: 'relative'}}>
+				<div style={{position: 'absolute', inset: 0, width: `${Math.min(1, n / 3) * 100}%`, borderRadius: 7, background: LPI.blue}} />
+			</div>
+			<div style={{display: 'flex', justifyContent: 'space-between', width: 820, fontFamily: FONT.title, fontWeight: 900, fontSize: 30, color: N}}>
+				<span>0 h</span>
+				<span style={{fontSize: 44}}>{pairs} paire{pairs > 1 ? 's' : ''}</span>
+				<span>24 h</span>
+			</div>
+		</div>
+	);
+};
 
 export const Hook: React.FC = () => {
 	const frame = useCurrentFrame();
 	const MAL = at('intro', 'mal');
 	const ANTI = at('intro', 'antibiotiques');
 	const PEAU = at('intro', 'peau.');
-	const QUATRE = at('intro', 'quatre');
-	const CONN = at('intro', 'connais ?');
+	const MAT = at('intro', 'matériel,');
+	const VOL = at('intro', 'volume,');
+	const ORD = at('intro', "l'ordre,");
+	const ASE = at('intro', "l'asepsie :");
+	const TOUT = at('intro', 'tout ?');
 	const jump = interpolate(frame, [PEAU - 30, PEAU], [0, 1], clamp);
 	return (
 		<LabHook
@@ -58,63 +141,38 @@ export const Hook: React.FC = () => {
 				/>
 			}
 			chips={[
-				{label: 'le bon moment', at: QUATRE},
-				{label: 'le volume', at: QUATRE + 5, tone: LPI.pink},
-				{label: "l'ordre", at: QUATRE + 10},
-				{label: "l'asepsie", at: QUATRE + 15, tone: LPI.pink},
+				{label: 'le matériel', at: MAT - 2},
+				{label: 'le volume', at: VOL - 2, tone: LPI.pink},
+				{label: "l'ordre", at: ORD - 2},
+				{label: "l'asepsie", at: ASE - 2, tone: LPI.pink},
 			]}
 			notes={[
 				{text: 'une bactérie… de sa peau', at: PEAU - 14},
-				{text: 'tu les connais ?', at: CONN - 6},
+				{text: 'tu sais tout ?', at: TOUT - 6},
 			]}
-			punches={[MAL + 1, ANTI + 1, PEAU + 1, QUATRE + 1]}
+			punches={[MAL + 1, ANTI + 1, PEAU + 1, MAT + 1, VOL + 1, ORD + 1, ASE + 1]}
 			shakes={[PEAU + 2]}
 		/>
 	);
 };
 
-export const Quand: React.FC = () => {
-	const UN = at('quand', 'un');
-	const FIEVRE = at('quand', 'fièvre,');
-	const FRISS = at('quand', 'frissons,');
-	const BASSE = at('quand', 'basse.');
-	const AVANT = at('quand', 'avant');
-	const POUSS = at('quand', 'poussent');
+export const Materiel: React.FC = () => {
+	const frame = useCurrentFrame();
+	const UN = at('materiel', 'un');
+	const MAT = at('materiel', 'matériel.');
+	const ts = TRAY.map((o) => at('materiel', o.key));
+	const on = ts.map((t) => interpolate(frame, [t - 6, t + 6], [0, 1], clamp));
+	const hot = ts.filter((t) => frame >= t - 6).length - 1;
 	return (
 		<LabNotion
 			series={S}
 			steps={[[UN, 1]]}
-			title={'Le bon *moment*'}
+			title={'Le *matériel*'}
 			titleAt={UN}
-			art={{
-				at: FIEVRE - 6,
-				node: (
-					<Live
-						render={(f) =>
-							f < AVANT - 8 ? (
-								<div style={{display: 'flex', gap: 30, alignItems: 'center'}}>
-									<FeverIcon size={150} />
-									<div style={{opacity: f >= FRISS - 6 ? 1 : 0.15}}><ShiverIcon size={150} /></div>
-								</div>
-							) : (
-								<div style={{display: 'flex', alignItems: 'center', gap: 26}}>
-									<HemoFlask size={110} cap={HEMO_CAP.aero} label="" level={0.6} />
-									<div style={{fontFamily: FONT.title, fontWeight: 900, fontSize: 60, color: N}}>puis</div>
-									<PillIcon size={150} />
-								</div>
-							)
-						}
-					/>
-				),
-			}}
-			chips={[
-				{label: 'fièvre', at: FIEVRE - 2},
-				{label: 'frissons', at: FRISS - 2, tone: LPI.pink},
-				{label: 'température basse', at: BASSE - 12},
-				{label: 'avant antibiotique', at: AVANT - 4, tone: LPI.navy},
-			]}
-			note={{text: 'sinon, les bactéries ne poussent plus', at: POUSS - 12, size: 36}}
-			punches={[FIEVRE + 1, FRISS + 1, BASSE + 1, AVANT + 1, POUSS + 1]}
+			art={{at: MAT - 4, node: <Live render={() => <Tray on={on} hot={hot} />} />}}
+			artY={960}
+			punches={ts.map((t) => t + 1)}
+			sfx={ts.map((t) => ({name: 'pop' as const, at: t, volume: 0.15}))}
 		/>
 	);
 };
@@ -122,12 +180,12 @@ export const Quand: React.FC = () => {
 export const Volume: React.FC = () => {
 	const frame = useCurrentFrame();
 	const DEUX = at('volume', 'deux');
-	const TROUVE = at('volume', 'trouve');
-	const REMPLIT = at('volume', 'remplit');
-	const HUIT = at('volume', 'huit');
-	const QUATRE = at('volume', 'quatre');
-	const FOIS = at('volume', 'fois.');
-	const fill = interpolate(frame, [REMPLIT - 4, HUIT + 14], [0.1, 1], clamp);
+	const BACT = at('volume', 'bactéries');
+	const PREL = at('volume', 'prélève,');
+	const QUAR = at('volume', 'quarante');
+	const PAIRES = at('volume', 'paires');
+	const H24 = at('volume', 'vingt-quatre');
+	const n = interpolate(frame, [PREL - 6, PAIRES + 20], [0.6, 3], clamp);
 	return (
 		<LabNotion
 			series={S}
@@ -135,39 +193,15 @@ export const Volume: React.FC = () => {
 			title={'Le *volume*'}
 			titleAt={DEUX}
 			pink
-			explain={{text: "c'est lui qui trouve la bactérie", at: TROUVE - 4}}
-			art={{
-				at: TROUVE - 4,
-				node: (
-					<Live
-						render={(f) =>
-							f < QUATRE - 6 ? (
-								<div style={{display: 'flex', alignItems: 'center', gap: 30}}>
-									<HemoFlask size={150} cap={HEMO_CAP.aero} label="" level={fill} />
-									<div style={{fontFamily: FONT.title, fontWeight: 900, color: N, textAlign: 'center', opacity: f >= HUIT - 6 ? 1 : 0}}>
-										<div style={{fontSize: 90, lineHeight: 1}}>8 – 10</div>
-										<div style={{fontSize: 40}}>mL par flacon</div>
-									</div>
-								</div>
-							) : (
-								<div style={{display: 'flex', gap: 10}}>
-									{Array.from({length: 6}).map((_, i) => (
-										<div key={i} style={{opacity: i < 4 ? 1 : 0.45}}>
-											<HemoFlask size={90} cap={i % 2 ? HEMO_CAP.anaero : HEMO_CAP.aero} label="" level={1} />
-										</div>
-									))}
-								</div>
-							)
-						}
-					/>
-				),
-			}}
-			artY={800}
+			explain={{text: 'plus on prélève, plus on la trouve', at: PREL - 6}}
+			art={{at: BACT - 4, node: <Live render={() => <Pairs24 n={n} />} />}}
+			artY={820}
+			norm={{rows: [['adulte', '40 – 60 mL']], at: QUAR - 4, y: 1120}}
 			chips={[
-				{label: 'adulte : 8 à 10 mL par flacon', at: HUIT - 4, tone: LPI.paper},
-				{label: 'en général 4 à 6 flacons, en une fois', at: QUATRE - 4, tone: LPI.navy},
+				{label: '2 à 3 paires, sur 24 h', at: PAIRES - 6, tone: LPI.navy},
+				{label: '≈ 8 – 10 mL par flacon', at: H24 + 4},
 			]}
-			punches={[TROUVE + 1, REMPLIT + 1, HUIT + 1, QUATRE + 1, FOIS + 1]}
+			punches={[BACT + 1, PREL + 1, QUAR + 1, PAIRES + 1, H24 + 1]}
 		/>
 	);
 };
@@ -223,11 +257,11 @@ export const Ordre: React.FC = () => {
 
 export const Asepsie: React.FC = () => {
 	const QUATRE = at('asepsie', 'quatre');
-	const FRIC = at('asepsie', 'friction');
 	const ANTIS = at('asepsie', 'antiseptique');
 	const SECHER = at('asepsie', 'sécher,');
 	const TOUCHE = at('asepsie', 'touche');
-	const DESINF = at('asepsie', 'désinfecte');
+	const ALC = at('asepsie', "d'alcool");
+	const BOUCHON = at('asepsie', 'bouchon');
 	return (
 		<LabNotion
 			series={S}
@@ -236,50 +270,56 @@ export const Asepsie: React.FC = () => {
 			titleAt={QUATRE}
 			pink
 			art={{
-				at: FRIC - 6,
+				at: ANTIS - 6,
 				node: (
 					<Live
 						render={(f) => (
-							<div style={{display: 'flex', alignItems: 'flex-end', gap: 40}}>
-								<ShaBottle size={140} press={f >= FRIC && f < FRIC + 20 ? 1 : 0} />
-								<div style={{opacity: f >= ANTIS - 6 ? 1 : 0.15}}><AntisepticBottle size={130} /></div>
-								<div style={{opacity: f >= DESINF - 6 ? 1 : 0.15}}><HemoFlask size={100} cap={HEMO_CAP.aero} label="" level={0} /></div>
+							<div style={{display: 'flex', alignItems: 'flex-end', gap: 50}}>
+								<div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8}}>
+									<AntisepticBottle size={120} />
+									<div style={{fontFamily: FONT.title, fontWeight: 900, fontSize: 32, color: N}}>la peau</div>
+								</div>
+								<div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, opacity: f >= ALC - 6 ? 1 : 0.15}}>
+									<div style={{display: 'flex', alignItems: 'flex-end', gap: 10}}>
+										<AlcoholBottle size={90} />
+										<HemoFlask size={90} cap={HEMO_CAP.aero} label="" />
+									</div>
+									<div style={{fontFamily: FONT.title, fontWeight: 900, fontSize: 32, color: N}}>les bouchons</div>
+								</div>
 							</div>
 						)}
 					/>
 				),
 			}}
+			artY={800}
 			chips={[
-				{label: 'friction des mains', at: FRIC - 2},
-				{label: 'antiseptique', at: ANTIS - 2, tone: LPI.pink},
-				{label: 'on laisse sécher', at: SECHER - 6},
-				{label: 'ne plus toucher', at: TOUCHE - 6, tone: LPI.navy},
-				{label: 'haut des flacons', at: DESINF - 2},
+				{label: 'antiseptique alcoolique', at: ANTIS - 2},
+				{label: 'on laisse sécher', at: SECHER - 6, tone: LPI.pink},
+				{label: 'on ne touche plus la veine', at: TOUCHE - 6, tone: LPI.navy},
+				{label: 'alcool à 70° sur les bouchons', at: BOUCHON - 10},
 			]}
-			punches={[FRIC + 1, ANTIS + 1, SECHER + 1, TOUCHE + 1, DESINF + 1]}
+			punches={[ANTIS + 1, SECHER + 1, TOUCHE + 1, ALC + 1, BOUCHON + 1]}
 		/>
 	);
 };
 
 export const Fin: React.FC = () => {
 	const AVANT = at('fin', 'avant');
-	const REMPLIS = at('fin', 'remplis,');
-	const VERT = at('fin', 'vert,');
-	const ASEP = at('fin', 'asepsie');
+	const ANTI = at('fin', 'antibiotique.');
 	const ETIQ = at('fin', 'étiquette,');
 	return (
 		<LabFin
 			series={S}
 			title={'*Hémocultures*'}
 			rows={[
-				{t: AVANT, title: "avant l'antibiotique", sub: 'fièvre, frissons, hypothermie'},
-				{t: REMPLIS, title: 'bien remplis', sub: '8 – 10 mL · 4 à 6 flacons'},
-				{t: VERT, title: 'vert puis orange', sub: 'aérobie puis anaérobie'},
-				{t: ASEP, title: 'asepsie parfaite', sub: 'sécher, ne plus toucher'},
+				{t: AVANT - 30, title: 'le matériel', sub: '8 objets, 2 antiseptiques'},
+				{t: AVANT - 20, title: '40 – 60 mL', sub: '2 à 3 paires sur 24 h'},
+				{t: AVANT - 10, title: 'vert puis orange', sub: 'aérobie puis anaérobie'},
+				{t: AVANT, title: "avant l'antibiotique", sub: 'peau sèche, ne plus toucher'},
 			]}
-			check={ETIQ}
+			check={ANTI}
 			done={
-				<Pop at={ETIQ + 6} x={540} y={1230}>
+				<Pop at={ETIQ - 4} x={540} y={1230}>
 					<div style={{fontFamily: FONT.title, fontWeight: 900, fontSize: 44, color: LPI.paper, background: N, borderRadius: 40, padding: '24px 40px', textAlign: 'center', lineHeight: 1.25, whiteSpace: 'nowrap', boxShadow: `0 10px 30px ${alpha(N, 0.25)}`}}>
 						étiqueter · vite au labo
 						<div style={{fontSize: 30, color: LPI.pink}}>couleurs selon les marques</div>
@@ -289,4 +329,3 @@ export const Fin: React.FC = () => {
 		/>
 	);
 };
-

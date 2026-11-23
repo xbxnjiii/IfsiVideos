@@ -9,7 +9,7 @@ const LOW = {y: 1790, size: 300};
 export const MASCOT: Beat[] = [
 	{at: start('intro') + 40, via: 'pop', key: 'expressions/surprise', ...R, ...LOW},
 	{at: start('intro') + 150, via: 'cut', key: 'expressions/reflechit', ...R, ...LOW},
-	{at: start('quand') + 8, via: 'hop', dur: 18, key: 'gestes/presente', ...L, ...LOW},
+	{at: start('materiel') + 8, via: 'hop', dur: 18, key: 'gestes/presente', ...L, ...LOW},
 	{at: start('volume') + 8, via: 'hop', dur: 18, key: 'gestes/astuce', ...R, ...LOW},
 	{at: start('ordre') + 8, via: 'hop', dur: 18, key: 'gestes/important', ...L, ...LOW},
 	{at: start('asepsie') + 8, via: 'hop', dur: 18, key: 'gestes/attention', ...R, ...LOW},
