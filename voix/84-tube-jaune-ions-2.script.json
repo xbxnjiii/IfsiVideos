@@ -1,0 +1,32 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Calcium, phosphore, magnésium, bicarbonates : quatre ions plus discrets… mais un seul de travers peut donner des crampes, ou pire. Tu les connais ?"
+ },
+ {
+  "id": "calcium",
+  "rate": "+3%",
+  "text": "Un : le calcium, pour les os, les muscles et le cœur. La norme : de deux virgule deux à deux virgule six millimoles par litre. Trop bas : des fourmillements et des crampes."
+ },
+ {
+  "id": "phosphore",
+  "rate": "+3%",
+  "text": "Deux : le phosphore, le partenaire du calcium dans les os. La norme : de zéro virgule huit à un virgule trois. Il monte quand les reins filtrent mal."
+ },
+ {
+  "id": "magnesium",
+  "rate": "+3%",
+  "text": "Trois : le magnésium, pour les nerfs, les muscles et le cœur. La norme : de zéro virgule soixante-quinze à un. Trop bas, il donne des crampes… et empêche le potassium de remonter."
+ },
+ {
+  "id": "bicar",
+  "rate": "+3%",
+  "text": "Quatre : les bicarbonates, le tampon contre l'acidité. La norme : de vingt-deux à trente. Trop bas, le sang devient trop acide, comme dans l'acidocétose du diabétique."
+ },
+ {
+  "id": "fin",
+  "rate": "+2%",
+  "text": "Calcium, phosphore, magnésium, bicarbonates : l'ionogramme est complet. Prochaine vidéo : la {CRP|C R P} et la procalcitonine."
+ }
+]

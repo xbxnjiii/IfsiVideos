@@ -768,6 +768,21 @@ script), « en France » / « le 15 (ou le numéro d'urgence de ton pays) ». Ca
   vidéo : le fer et la ferritine ». Voix : « la créatinine, le déchet » était lu « créatine » → « le déchet des muscles,
   c'est la créatinine » (le mot en fin de phrase est bien dit). Briques locales `GoutFoot`, `Beer` ; `Molecule` est trop
   petite pour un mot long (pastille à la place).
+  **Gabarit commun de la série** (« ce format me va, enchaîne ») : `src/brand/labshort.tsx` (`LabHook` : pastille de série,
+  titre, tube + dessin, pastilles et notes au mot ; `LabNotion` : compteur n/N, titre, explication, dessin, carte NORMES,
+  pastilles (une par ligne si > 18 caractères), note, bruitages ; `LabFin` : fiche cochée + `NextCard` ; `IconDot`,
+  `NextTitle`), dessins `src/brand/labart.tsx` (`FeBall`, `Pantry`, `IronTruck`, `LiverCells`, `BileDuct`, `BoneIcon`,
+  `Artery` plaque / nettoyage, `BurstCell` globule qui éclate) et `scripts/brand/lab_mascot.py <épisode>` (mascotte type :
+  un saut par scène, alternée). Chaque vidéo : script → `npm run voice` → `npm run new` → `minTotal: 0` + `progress={false}`
+  → `lab_mascot.py` → `Scenes.tsx` (normes et sources en tête). `Ion` a maintenant `fs` (taille du texte : « HCO₃⁻ »).
+  Faites (voix gratuite) : n° 79 `Tube-Jaune-Fer` (≈ 50 s : fer, ferritine = réserves, transferrine = camion),
+  n° 80 `Tube-Jaune-Foie` (≈ 54 s : ASAT / ALAT, gamma-GT, PAL), n° 81 `Tube-Jaune-Lipides` (≈ 58 s : total + LDL, HDL,
+  triglycérides ; HAS 2017), n° 82 `Tube-Jaune-Enzymes` (≈ 52 s : CPK, LDH, lipase), n° 83 `Tube-Jaune-Ions` (Na, K
+  (garrot trop long / tube hémolysé = faux potassium haut), Cl), n° 84 `Tube-Jaune-Ions-2` (Ca, P, Mg, bicarbonates ;
+  réutilise `CellMap` / `Seesaw` exportés de la n° 63), n° 85 `Tube-Jaune-Inflammation` (≈ 45 s : CRP (courbe 6 h → pic
+  48 h), procalcitonine), n° 86 `Tube-Jaune-Proteines` (albumine, préalbumine, haptoglobine). Voix : « Hépatite,
+  médicament, alcool… » (énumération courte) partait en anglais → phrase complète ; « et des œdèmes. » en fin de partie
+  mal lu → « avec parfois des œdèmes aux jambes ». `DinnerPlate` est un `<g>` SVG : l'envelopper dans un `<svg>`.
 - **Le tube bleu (citrate)** (demandé : « la vidéo pour le tube bleu comme les précédentes », contenu complété par l'agent ;
   une seule vidéo dépassait 60 s → 3 vidéos ; storyboard `docs/lpi/storyboard-tube-bleu.md`). `Tube-Bleu-TP-INR` (n° 75,
   ≈ 63 s, voix Laura après validation (1 009 crédits)) : « Le tube bleu, c'est la coagulation. S'il est mal rempli, le résultat est faux… et ton

@@ -1,0 +1,27 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Le manque de fer, c'est la première cause d'anémie dans le monde. Dans le tube jaune, trois chiffres le cherchent. Tu sais lequel regarder ?"
+ },
+ {
+  "id": "fer",
+  "rate": "+3%",
+  "text": "Un : le fer sérique, le fer qui circule dans le sang. Il varie beaucoup dans la journée et selon les repas : seul, il ne suffit pas. La norme : environ dix à trente micromoles par litre."
+ },
+ {
+  "id": "ferritine",
+  "rate": "+3%",
+  "text": "Deux : la ferritine, les réserves de fer, comme un garde-manger. C'est le chiffre le plus fiable : basse, il manque du fer. Mais attention, elle monte aussi avec une inflammation, un foie malade ou un excès de fer."
+ },
+ {
+  "id": "transferrine",
+  "rate": "+3%",
+  "text": "Trois : la transferrine, le camion qui transporte le fer dans le sang. Quand le fer manque, le corps fabrique plus de camions… mais ils roulent à moitié vides : le coefficient de saturation baisse."
+ },
+ {
+  "id": "fin",
+  "rate": "+2%",
+  "text": "Fer, ferritine, transferrine : tu sais lire le bilan du fer. Prochaine vidéo : le foie."
+ }
+]

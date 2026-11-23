@@ -1,0 +1,27 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Un pic sur une courbe de protéines… et ça peut cacher un cancer du sang, comme le myélome. L'électrophorèse du tube jaune trie tes protéines en cinq bandes. Tu sais la lire ?"
+ },
+ {
+  "id": "electro",
+  "rate": "+3%",
+  "text": "Un : l'électrophorèse. Un courant fait avancer les protéines du sérum : elles se séparent selon leur taille et leur charge. On obtient cinq bandes : l'albumine, puis les globulines alpha un, alpha deux, bêta et gamma."
+ },
+ {
+  "id": "pic",
+  "rate": "+3%",
+  "text": "Deux : ce qu'elle montre. Un dôme large dans les gammas, c'est une inflammation chronique. Mais un pic, étroit et bien pointu : une seule famille de cellules fabrique toujours la même protéine. Il faut alors chercher un myélome, un cancer de la moelle osseuse."
+ },
+ {
+  "id": "ig",
+  "rate": "+3%",
+  "text": "Trois : les immunoglobulines, ce sont les anticorps. Les I G G, les plus nombreuses, protègent sur la durée. Les I G A, elles, protègent le nez, la bouche et l'intestin. Et les I G M arrivent en premier, au début d'une infection. Trop basses : les défenses sont affaiblies."
+ },
+ {
+  "id": "fin",
+  "rate": "+2%",
+  "text": "Cinq bandes, un pic à surveiller, trois anticorps : tu sais lire l'électrophorèse. Prochaine vidéo : le cœur, avec la troponine."
+ }
+]

@@ -1,0 +1,27 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Un potassium de travers peut arrêter un cœur. Dans le tube jaune, l'ionogramme commence par trois ions. Tu les connais ?"
+ },
+ {
+  "id": "sodium",
+  "rate": "+3%",
+  "text": "Un : le sodium, le gardien de l'eau, autour des cellules. La norme : de cent trente-trois à cent cinquante millimoles par litre. Trop haut, les cellules se déshydratent. Trop bas, elles gonflent d'eau, même dans le cerveau."
+ },
+ {
+  "id": "potassium",
+  "rate": "+3%",
+  "text": "Deux : le potassium, surtout à l'intérieur des cellules. Il fait battre le cœur, et sa norme est étroite : de trois virgule cinq à cinq millimoles par litre. Trop haut ou trop bas, le cœur peut se dérégler. Et un garrot trop long, ou un tube abîmé, le fait monter à tort."
+ },
+ {
+  "id": "chlore",
+  "rate": "+3%",
+  "text": "Trois : le chlore, qu'on appelle aussi chlorure. Il suit le sodium, et il aide à garder l'équilibre entre l'acide et la base. La norme : de quatre-vingt-quinze à cent cinq millimoles par litre."
+ },
+ {
+  "id": "fin",
+  "rate": "+2%",
+  "text": "Sodium, potassium, chlore : tu as le début de l'ionogramme. Prochaine vidéo : le calcium, le phosphore, le magnésium et les bicarbonates."
+ }
+]

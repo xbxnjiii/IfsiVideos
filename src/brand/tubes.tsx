@@ -359,8 +359,8 @@ export const SugarCube: React.FC<{size?: number}> = ({size = 70}) => (
 );
 
 /** Ion en pastille (« K⁺ », « Ca²⁺ », « Na⁺ »). */
-export const Ion: React.FC<{label: string; tone?: string; size?: number}> = ({label, tone = LPI.sky, size = 90}) => (
-	<div style={{width: size, height: size, borderRadius: size / 2, background: tone, border: `5px solid ${N}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FONT.title, fontWeight: 900, fontSize: size * 0.36, color: N, boxSizing: 'border-box'}}>{label}</div>
+export const Ion: React.FC<{label: string; tone?: string; size?: number; fs?: number}> = ({label, tone = LPI.sky, size = 90, fs = 0.36}) => (
+	<div style={{width: size, height: size, borderRadius: size / 2, background: tone, border: `5px solid ${N}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FONT.title, fontWeight: 900, fontSize: size * fs, color: N, boxSizing: 'border-box'}}>{label}</div>
 );
 
 /** Fiche de résultat du labo : une ligne « K⁺ 7,0 mmol/L » qui clignote en rose ; `fake` tampon FAUX barré. */

@@ -1,0 +1,27 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Douleur dans la poitrine : c'est un infarctus, ou pas ? Le tube jaune répond avec deux dosages… et le temps compte. Tu les connais ?"
+ },
+ {
+  "id": "tropo",
+  "rate": "+3%",
+  "text": "Un : la troponine, c'est une protéine du muscle cardiaque. Quand des cellules du cœur meurent, elle passe dans le sang. Elle monte en quelques heures : on la dose à l'arrivée, puis on refait une prise de sang une à trois heures plus tard. Si elle augmente, on pense à l'infarctus."
+ },
+ {
+  "id": "seuil",
+  "rate": "+3%",
+  "text": "Deux : le seuil. Il dépend du laboratoire et de la technique, alors lis toujours la norme écrite sur le résultat. Et la troponine peut aussi monter dans une embolie pulmonaire, une insuffisance rénale ou une infection grave."
+ },
+ {
+  "id": "bnp",
+  "rate": "+3%",
+  "text": "Trois : le N T pro B N P. Il est libéré quand le cœur est trop étiré, parce qu'il pompe mal. Normal, il permet presque d'écarter une insuffisance cardiaque. Élevé, elle est probable : on fait une échographie du cœur. Le seuil augmente avec l'âge."
+ },
+ {
+  "id": "fin",
+  "rate": "+2%",
+  "text": "La troponine, pour le muscle qui souffre. Le N T pro B N P, pour le cœur qui fatigue. Prochaine vidéo : les marqueurs tumoraux."
+ }
+]

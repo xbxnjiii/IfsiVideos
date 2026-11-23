@@ -1,0 +1,748 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 48.664,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.096,
+   "end": 6.959
+  },
+  {
+   "id": "fer",
+   "start": 7.943,
+   "end": 18.028
+  },
+  {
+   "id": "ferritine",
+   "start": 18.969,
+   "end": 30.692
+  },
+  {
+   "id": "transferrine",
+   "start": 31.663,
+   "end": 41.47
+  },
+  {
+   "id": "fin",
+   "start": 42.401,
+   "end": 48.32
+  }
+ ],
+ "words": [
+  {
+   "text": "Le",
+   "start": 0.096,
+   "end": 0.228
+  },
+  {
+   "text": "manque",
+   "start": 0.228,
+   "end": 0.421
+  },
+  {
+   "text": "de",
+   "start": 0.421,
+   "end": 0.529
+  },
+  {
+   "text": "fer,",
+   "start": 0.529,
+   "end": 0.913
+  },
+  {
+   "text": "c'est",
+   "start": 1.262,
+   "end": 1.358
+  },
+  {
+   "text": "la",
+   "start": 1.358,
+   "end": 1.43
+  },
+  {
+   "text": "première",
+   "start": 1.43,
+   "end": 1.767
+  },
+  {
+   "text": "cause",
+   "start": 1.767,
+   "end": 1.983
+  },
+  {
+   "text": "d'anémie",
+   "start": 1.983,
+   "end": 2.344
+  },
+  {
+   "text": "dans",
+   "start": 2.344,
+   "end": 2.452
+  },
+  {
+   "text": "le",
+   "start": 2.452,
+   "end": 2.536
+  },
+  {
+   "text": "monde.",
+   "start": 2.536,
+   "end": 2.921
+  },
+  {
+   "text": "Dans",
+   "start": 3.247,
+   "end": 3.439
+  },
+  {
+   "text": "le",
+   "start": 3.439,
+   "end": 3.511
+  },
+  {
+   "text": "tube",
+   "start": 3.511,
+   "end": 3.703
+  },
+  {
+   "text": "jaune,",
+   "start": 3.703,
+   "end": 4.088
+  },
+  {
+   "text": "trois",
+   "start": 4.388,
+   "end": 4.557
+  },
+  {
+   "text": "chiffres",
+   "start": 4.557,
+   "end": 4.869
+  },
+  {
+   "text": "le",
+   "start": 4.869,
+   "end": 4.977
+  },
+  {
+   "text": "cherchent.",
+   "start": 4.977,
+   "end": 5.494
+  },
+  {
+   "text": "Tu",
+   "start": 5.865,
+   "end": 5.962
+  },
+  {
+   "text": "sais",
+   "start": 5.962,
+   "end": 6.082
+  },
+  {
+   "text": "lequel",
+   "start": 6.082,
+   "end": 6.37
+  },
+  {
+   "text": "regarder ?",
+   "start": 6.37,
+   "end": 6.959
+  },
+  {
+   "text": "Un :",
+   "start": 7.943,
+   "end": 8.162
+  },
+  {
+   "text": "le",
+   "start": 8.477,
+   "end": 8.55
+  },
+  {
+   "text": "fer",
+   "start": 8.55,
+   "end": 8.756
+  },
+  {
+   "text": "sérique,",
+   "start": 8.756,
+   "end": 9.217
+  },
+  {
+   "text": "le",
+   "start": 9.472,
+   "end": 9.545
+  },
+  {
+   "text": "fer",
+   "start": 9.545,
+   "end": 9.727
+  },
+  {
+   "text": "qui",
+   "start": 9.727,
+   "end": 9.836
+  },
+  {
+   "text": "circule",
+   "start": 9.836,
+   "end": 10.2
+  },
+  {
+   "text": "dans",
+   "start": 10.2,
+   "end": 10.31
+  },
+  {
+   "text": "le",
+   "start": 10.31,
+   "end": 10.407
+  },
+  {
+   "text": "sang.",
+   "start": 10.407,
+   "end": 10.722
+  },
+  {
+   "text": "Il",
+   "start": 11.062,
+   "end": 11.208
+  },
+  {
+   "text": "varie",
+   "start": 11.208,
+   "end": 11.438
+  },
+  {
+   "text": "beaucoup",
+   "start": 11.438,
+   "end": 11.705
+  },
+  {
+   "text": "dans",
+   "start": 11.705,
+   "end": 11.802
+  },
+  {
+   "text": "la",
+   "start": 11.802,
+   "end": 11.875
+  },
+  {
+   "text": "journée",
+   "start": 11.875,
+   "end": 12.336
+  },
+  {
+   "text": "et",
+   "start": 12.336,
+   "end": 12.47
+  },
+  {
+   "text": "selon",
+   "start": 12.47,
+   "end": 12.688
+  },
+  {
+   "text": "les",
+   "start": 12.688,
+   "end": 12.785
+  },
+  {
+   "text": "repas :",
+   "start": 12.785,
+   "end": 13.137
+  },
+  {
+   "text": "seul,",
+   "start": 13.501,
+   "end": 13.865
+  },
+  {
+   "text": "il",
+   "start": 14.12,
+   "end": 14.169
+  },
+  {
+   "text": "ne",
+   "start": 14.169,
+   "end": 14.266
+  },
+  {
+   "text": "suffit",
+   "start": 14.266,
+   "end": 14.557
+  },
+  {
+   "text": "pas.",
+   "start": 14.557,
+   "end": 14.788
+  },
+  {
+   "text": "La",
+   "start": 15.164,
+   "end": 15.297
+  },
+  {
+   "text": "norme :",
+   "start": 15.297,
+   "end": 15.662
+  },
+  {
+   "text": "environ",
+   "start": 16.098,
+   "end": 16.438
+  },
+  {
+   "text": "dix",
+   "start": 16.438,
+   "end": 16.669
+  },
+  {
+   "text": "à",
+   "start": 16.669,
+   "end": 16.717
+  },
+  {
+   "text": "trente",
+   "start": 16.717,
+   "end": 16.96
+  },
+  {
+   "text": "micromoles",
+   "start": 16.96,
+   "end": 17.409
+  },
+  {
+   "text": "par",
+   "start": 17.409,
+   "end": 17.579
+  },
+  {
+   "text": "litre.",
+   "start": 17.579,
+   "end": 18.028
+  },
+  {
+   "text": "Deux :",
+   "start": 18.969,
+   "end": 19.321
+  },
+  {
+   "text": "la",
+   "start": 19.758,
+   "end": 19.842
+  },
+  {
+   "text": "ferritine,",
+   "start": 19.842,
+   "end": 20.461
+  },
+  {
+   "text": "les",
+   "start": 20.753,
+   "end": 20.825
+  },
+  {
+   "text": "réserves",
+   "start": 20.825,
+   "end": 21.177
+  },
+  {
+   "text": "de",
+   "start": 21.177,
+   "end": 21.299
+  },
+  {
+   "text": "fer,",
+   "start": 21.299,
+   "end": 21.687
+  },
+  {
+   "text": "comme",
+   "start": 21.918,
+   "end": 22.075
+  },
+  {
+   "text": "un",
+   "start": 22.075,
+   "end": 22.112
+  },
+  {
+   "text": "garde-manger.",
+   "start": 22.112,
+   "end": 22.828
+  },
+  {
+   "text": "C'est",
+   "start": 23.157,
+   "end": 23.351
+  },
+  {
+   "text": "le",
+   "start": 23.351,
+   "end": 23.448
+  },
+  {
+   "text": "chiffre",
+   "start": 23.448,
+   "end": 23.751
+  },
+  {
+   "text": "le",
+   "start": 23.751,
+   "end": 23.824
+  },
+  {
+   "text": "plus",
+   "start": 23.824,
+   "end": 23.958
+  },
+  {
+   "text": "fiable :",
+   "start": 23.958,
+   "end": 24.382
+  },
+  {
+   "text": "basse,",
+   "start": 24.698,
+   "end": 25.074
+  },
+  {
+   "text": "il",
+   "start": 25.256,
+   "end": 25.341
+  },
+  {
+   "text": "manque",
+   "start": 25.341,
+   "end": 25.535
+  },
+  {
+   "text": "du",
+   "start": 25.535,
+   "end": 25.62
+  },
+  {
+   "text": "fer.",
+   "start": 25.62,
+   "end": 26.081
+  },
+  {
+   "text": "Mais",
+   "start": 26.432,
+   "end": 26.554
+  },
+  {
+   "text": "attention,",
+   "start": 26.554,
+   "end": 27.088
+  },
+  {
+   "text": "elle",
+   "start": 27.403,
+   "end": 27.524
+  },
+  {
+   "text": "monte",
+   "start": 27.525,
+   "end": 27.731
+  },
+  {
+   "text": "aussi",
+   "start": 27.731,
+   "end": 27.986
+  },
+  {
+   "text": "avec",
+   "start": 27.986,
+   "end": 28.192
+  },
+  {
+   "text": "une",
+   "start": 28.192,
+   "end": 28.265
+  },
+  {
+   "text": "inflammation,",
+   "start": 28.265,
+   "end": 28.92
+  },
+  {
+   "text": "un",
+   "start": 29.187,
+   "end": 29.284
+  },
+  {
+   "text": "foie",
+   "start": 29.284,
+   "end": 29.418
+  },
+  {
+   "text": "malade",
+   "start": 29.418,
+   "end": 29.794
+  },
+  {
+   "text": "ou",
+   "start": 29.794,
+   "end": 29.855
+  },
+  {
+   "text": "un",
+   "start": 29.855,
+   "end": 29.903
+  },
+  {
+   "text": "excès",
+   "start": 29.903,
+   "end": 30.158
+  },
+  {
+   "text": "de",
+   "start": 30.158,
+   "end": 30.267
+  },
+  {
+   "text": "fer.",
+   "start": 30.267,
+   "end": 30.692
+  },
+  {
+   "text": "Trois :",
+   "start": 31.663,
+   "end": 31.978
+  },
+  {
+   "text": "la",
+   "start": 32.391,
+   "end": 32.452
+  },
+  {
+   "text": "transferrine,",
+   "start": 32.452,
+   "end": 33.144
+  },
+  {
+   "text": "le",
+   "start": 33.52,
+   "end": 33.593
+  },
+  {
+   "text": "camion",
+   "start": 33.593,
+   "end": 33.884
+  },
+  {
+   "text": "qui",
+   "start": 33.884,
+   "end": 33.981
+  },
+  {
+   "text": "transporte",
+   "start": 33.981,
+   "end": 34.454
+  },
+  {
+   "text": "le",
+   "start": 34.454,
+   "end": 34.576
+  },
+  {
+   "text": "fer",
+   "start": 34.576,
+   "end": 34.806
+  },
+  {
+   "text": "dans",
+   "start": 34.806,
+   "end": 34.915
+  },
+  {
+   "text": "le",
+   "start": 34.915,
+   "end": 35.012
+  },
+  {
+   "text": "sang.",
+   "start": 35.012,
+   "end": 35.34
+  },
+  {
+   "text": "Quand",
+   "start": 35.669,
+   "end": 35.839
+  },
+  {
+   "text": "le",
+   "start": 35.839,
+   "end": 35.936
+  },
+  {
+   "text": "fer",
+   "start": 35.936,
+   "end": 36.13
+  },
+  {
+   "text": "manque,",
+   "start": 36.13,
+   "end": 36.507
+  },
+  {
+   "text": "le",
+   "start": 36.749,
+   "end": 36.822
+  },
+  {
+   "text": "corps",
+   "start": 36.822,
+   "end": 36.992
+  },
+  {
+   "text": "fabrique",
+   "start": 36.992,
+   "end": 37.344
+  },
+  {
+   "text": "plus",
+   "start": 37.344,
+   "end": 37.526
+  },
+  {
+   "text": "de",
+   "start": 37.526,
+   "end": 37.623
+  },
+  {
+   "text": "camions…",
+   "start": 37.623,
+   "end": 38.024
+  },
+  {
+   "text": "mais",
+   "start": 38.461,
+   "end": 38.533
+  },
+  {
+   "text": "ils",
+   "start": 38.533,
+   "end": 38.618
+  },
+  {
+   "text": "roulent",
+   "start": 38.618,
+   "end": 38.776
+  },
+  {
+   "text": "à",
+   "start": 38.776,
+   "end": 38.812
+  },
+  {
+   "text": "moitié",
+   "start": 38.812,
+   "end": 39.116
+  },
+  {
+   "text": "vides :",
+   "start": 39.116,
+   "end": 39.431
+  },
+  {
+   "text": "le",
+   "start": 39.711,
+   "end": 39.771
+  },
+  {
+   "text": "coefficient",
+   "start": 39.771,
+   "end": 40.354
+  },
+  {
+   "text": "de",
+   "start": 40.354,
+   "end": 40.451
+  },
+  {
+   "text": "saturation",
+   "start": 40.451,
+   "end": 41.009
+  },
+  {
+   "text": "baisse.",
+   "start": 41.009,
+   "end": 41.47
+  },
+  {
+   "text": "Fer,",
+   "start": 42.401,
+   "end": 42.842
+  },
+  {
+   "text": "ferritine,",
+   "start": 43.075,
+   "end": 43.725
+  },
+  {
+   "text": "transferrine :",
+   "start": 43.945,
+   "end": 44.668
+  },
+  {
+   "text": "tu",
+   "start": 44.938,
+   "end": 45.048
+  },
+  {
+   "text": "sais",
+   "start": 45.048,
+   "end": 45.171
+  },
+  {
+   "text": "lire",
+   "start": 45.171,
+   "end": 45.379
+  },
+  {
+   "text": "le",
+   "start": 45.379,
+   "end": 45.465
+  },
+  {
+   "text": "bilan",
+   "start": 45.465,
+   "end": 45.685
+  },
+  {
+   "text": "du",
+   "start": 45.685,
+   "end": 45.796
+  },
+  {
+   "text": "fer.",
+   "start": 45.796,
+   "end": 46.274
+  },
+  {
+   "text": "Prochaine",
+   "start": 46.617,
+   "end": 47.009
+  },
+  {
+   "text": "vidéo :",
+   "start": 47.009,
+   "end": 47.499
+  },
+  {
+   "text": "le",
+   "start": 47.879,
+   "end": 47.952
+  },
+  {
+   "text": "foie.",
+   "start": 47.953,
+   "end": 48.32
+  }
+ ]
+}

@@ -156,6 +156,24 @@ import * as tubebleufacteurs from '../../src/videos/tube-bleu-facteurs/mascot';
 import * as tubebleufacteursTL from '../../src/videos/tube-bleu-facteurs/timeline';
 import * as tubejaunereins from '../../src/videos/tube-jaune-reins/mascot';
 import * as tubejaunereinsTL from '../../src/videos/tube-jaune-reins/timeline';
+import * as tubejaunefer from '../../src/videos/tube-jaune-fer/mascot';
+import * as tubejauneferTL from '../../src/videos/tube-jaune-fer/timeline';
+import * as tubejaunefoie from '../../src/videos/tube-jaune-foie/mascot';
+import * as tubejaunefoieTL from '../../src/videos/tube-jaune-foie/timeline';
+import * as tubejaunelipides from '../../src/videos/tube-jaune-lipides/mascot';
+import * as tubejaunelipidesTL from '../../src/videos/tube-jaune-lipides/timeline';
+import * as tubejauneenzymes from '../../src/videos/tube-jaune-enzymes/mascot';
+import * as tubejauneenzymesTL from '../../src/videos/tube-jaune-enzymes/timeline';
+import * as tubejauneions from '../../src/videos/tube-jaune-ions/mascot';
+import * as tubejauneionsTL from '../../src/videos/tube-jaune-ions/timeline';
+import * as tubejauneions2 from '../../src/videos/tube-jaune-ions-2/mascot';
+import * as tubejauneions2TL from '../../src/videos/tube-jaune-ions-2/timeline';
+import * as tubejauneinflammation from '../../src/videos/tube-jaune-inflammation/mascot';
+import * as tubejauneinflammationTL from '../../src/videos/tube-jaune-inflammation/timeline';
+import * as tubejauneproteines from '../../src/videos/tube-jaune-proteines/mascot';
+import * as tubejauneproteinesTL from '../../src/videos/tube-jaune-proteines/timeline';
+import * as tubejauneelectrophorese from '../../src/videos/tube-jaune-electrophorese/mascot';
+import * as tubejauneelectrophoreseTL from '../../src/videos/tube-jaune-electrophorese/timeline';
 
 const VIDEOS: Record<string, [typeof constantes.MASCOT, typeof constantesTL.TL]> = {
 	constantes: [constantes.MASCOT, constantesTL.TL],
@@ -235,6 +253,15 @@ const VIDEOS: Record<string, [typeof constantes.MASCOT, typeof constantesTL.TL]>
 	'tube-bleu-tca': [tubebleutca.MASCOT, tubebleutcaTL.TL],
 	'tube-bleu-facteurs': [tubebleufacteurs.MASCOT, tubebleufacteursTL.TL],
 	'tube-jaune-reins': [tubejaunereins.MASCOT, tubejaunereinsTL.TL],
+	'tube-jaune-fer': [tubejaunefer.MASCOT, tubejauneferTL.TL],
+	'tube-jaune-foie': [tubejaunefoie.MASCOT, tubejaunefoieTL.TL],
+	'tube-jaune-lipides': [tubejaunelipides.MASCOT, tubejaunelipidesTL.TL],
+	'tube-jaune-enzymes': [tubejauneenzymes.MASCOT, tubejauneenzymesTL.TL],
+	'tube-jaune-ions': [tubejauneions.MASCOT, tubejauneionsTL.TL],
+	'tube-jaune-ions-2': [tubejauneions2.MASCOT, tubejauneions2TL.TL],
+	'tube-jaune-inflammation': [tubejauneinflammation.MASCOT, tubejauneinflammationTL.TL],
+	'tube-jaune-proteines': [tubejauneproteines.MASCOT, tubejauneproteinesTL.TL],
+	'tube-jaune-electrophorese': [tubejauneelectrophorese.MASCOT, tubejauneelectrophoreseTL.TL],
 };
 const name = process.argv[2] ?? 'constantes';
 const [MASCOT, TL] = VIDEOS[name];

@@ -1,0 +1,828 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 54.712,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.096,
+   "end": 6.779
+  },
+  {
+   "id": "ldl",
+   "start": 7.715,
+   "end": 22.63
+  },
+  {
+   "id": "hdl",
+   "start": 23.565,
+   "end": 33.844
+  },
+  {
+   "id": "tg",
+   "start": 34.772,
+   "end": 45.281
+  },
+  {
+   "id": "fin",
+   "start": 46.194,
+   "end": 54.379
+  }
+ ],
+ "words": [
+  {
+   "text": "Le",
+   "start": 0.096,
+   "end": 0.204
+  },
+  {
+   "text": "cholestérol",
+   "start": 0.204,
+   "end": 0.757
+  },
+  {
+   "text": "ne",
+   "start": 0.757,
+   "end": 0.853
+  },
+  {
+   "text": "fait",
+   "start": 0.853,
+   "end": 0.95
+  },
+  {
+   "text": "pas",
+   "start": 0.95,
+   "end": 1.082
+  },
+  {
+   "text": "mal…",
+   "start": 1.082,
+   "end": 1.382
+  },
+  {
+   "text": "mais",
+   "start": 1.791,
+   "end": 1.863
+  },
+  {
+   "text": "il",
+   "start": 1.863,
+   "end": 1.995
+  },
+  {
+   "text": "bouche",
+   "start": 1.995,
+   "end": 2.224
+  },
+  {
+   "text": "les",
+   "start": 2.224,
+   "end": 2.296
+  },
+  {
+   "text": "artères",
+   "start": 2.296,
+   "end": 2.668
+  },
+  {
+   "text": "en",
+   "start": 2.668,
+   "end": 2.716
+  },
+  {
+   "text": "silence.",
+   "start": 2.716,
+   "end": 3.329
+  },
+  {
+   "text": "Quatre",
+   "start": 3.668,
+   "end": 4.028
+  },
+  {
+   "text": "chiffres",
+   "start": 4.028,
+   "end": 4.341
+  },
+  {
+   "text": "le",
+   "start": 4.341,
+   "end": 4.425
+  },
+  {
+   "text": "surveillent",
+   "start": 4.425,
+   "end": 4.858
+  },
+  {
+   "text": "dans",
+   "start": 4.858,
+   "end": 4.954
+  },
+  {
+   "text": "le",
+   "start": 4.954,
+   "end": 5.038
+  },
+  {
+   "text": "tube",
+   "start": 5.038,
+   "end": 5.206
+  },
+  {
+   "text": "jaune.",
+   "start": 5.206,
+   "end": 5.639
+  },
+  {
+   "text": "Tu",
+   "start": 5.998,
+   "end": 6.094
+  },
+  {
+   "text": "sais",
+   "start": 6.094,
+   "end": 6.238
+  },
+  {
+   "text": "les",
+   "start": 6.238,
+   "end": 6.358
+  },
+  {
+   "text": "lire ?",
+   "start": 6.358,
+   "end": 6.779
+  },
+  {
+   "text": "Un",
+   "start": 7.715,
+   "end": 7.872
+  },
+  {
+   "text": "et",
+   "start": 7.872,
+   "end": 7.97
+  },
+  {
+   "text": "deux :",
+   "start": 7.97,
+   "end": 8.237
+  },
+  {
+   "text": "le",
+   "start": 8.588,
+   "end": 8.637
+  },
+  {
+   "text": "cholestérol",
+   "start": 8.637,
+   "end": 9.11
+  },
+  {
+   "text": "total,",
+   "start": 9.11,
+   "end": 9.584
+  },
+  {
+   "text": "et",
+   "start": 9.936,
+   "end": 9.96
+  },
+  {
+   "text": "le",
+   "start": 9.96,
+   "end": 10.057
+  },
+  {
+   "text": "LDL,",
+   "start": 10.057,
+   "end": 10.664
+  },
+  {
+   "text": "le",
+   "start": 10.967,
+   "end": 11.028
+  },
+  {
+   "text": "mauvais",
+   "start": 11.028,
+   "end": 11.246
+  },
+  {
+   "text": "cholestérol,",
+   "start": 11.246,
+   "end": 11.938
+  },
+  {
+   "text": "qui",
+   "start": 12.156,
+   "end": 12.253
+  },
+  {
+   "text": "se",
+   "start": 12.253,
+   "end": 12.363
+  },
+  {
+   "text": "dépose",
+   "start": 12.363,
+   "end": 12.69
+  },
+  {
+   "text": "dans",
+   "start": 12.69,
+   "end": 12.787
+  },
+  {
+   "text": "les",
+   "start": 12.787,
+   "end": 12.86
+  },
+  {
+   "text": "artères.",
+   "start": 12.86,
+   "end": 13.467
+  },
+  {
+   "text": "Le",
+   "start": 13.843,
+   "end": 13.953
+  },
+  {
+   "text": "total :",
+   "start": 13.953,
+   "end": 14.487
+  },
+  {
+   "text": "moins",
+   "start": 14.887,
+   "end": 15.033
+  },
+  {
+   "text": "de",
+   "start": 15.033,
+   "end": 15.142
+  },
+  {
+   "text": "deux",
+   "start": 15.142,
+   "end": 15.251
+  },
+  {
+   "text": "grammes",
+   "start": 15.251,
+   "end": 15.506
+  },
+  {
+   "text": "par",
+   "start": 15.506,
+   "end": 15.664
+  },
+  {
+   "text": "litre.",
+   "start": 15.664,
+   "end": 16.101
+  },
+  {
+   "text": "Le",
+   "start": 16.477,
+   "end": 16.622
+  },
+  {
+   "text": "LDL :",
+   "start": 16.622,
+   "end": 17.217
+  },
+  {
+   "text": "moins",
+   "start": 17.8,
+   "end": 17.933
+  },
+  {
+   "text": "d'un",
+   "start": 17.933,
+   "end": 18.054
+  },
+  {
+   "text": "virgule",
+   "start": 18.054,
+   "end": 18.334
+  },
+  {
+   "text": "six",
+   "start": 18.334,
+   "end": 18.467
+  },
+  {
+   "text": "gramme",
+   "start": 18.467,
+   "end": 18.734
+  },
+  {
+   "text": "par",
+   "start": 18.734,
+   "end": 18.892
+  },
+  {
+   "text": "litre",
+   "start": 18.892,
+   "end": 19.195
+  },
+  {
+   "text": "chez",
+   "start": 19.195,
+   "end": 19.28
+  },
+  {
+   "text": "l'adulte",
+   "start": 19.28,
+   "end": 19.693
+  },
+  {
+   "text": "sans",
+   "start": 19.693,
+   "end": 19.838
+  },
+  {
+   "text": "risque…",
+   "start": 19.838,
+   "end": 20.203
+  },
+  {
+   "text": "et",
+   "start": 20.603,
+   "end": 20.627
+  },
+  {
+   "text": "la",
+   "start": 20.627,
+   "end": 20.736
+  },
+  {
+   "text": "cible",
+   "start": 20.737,
+   "end": 21.064
+  },
+  {
+   "text": "baisse",
+   "start": 21.064,
+   "end": 21.258
+  },
+  {
+   "text": "quand",
+   "start": 21.258,
+   "end": 21.368
+  },
+  {
+   "text": "le",
+   "start": 21.368,
+   "end": 21.44
+  },
+  {
+   "text": "risque",
+   "start": 21.44,
+   "end": 21.707
+  },
+  {
+   "text": "pour",
+   "start": 21.707,
+   "end": 21.829
+  },
+  {
+   "text": "le",
+   "start": 21.829,
+   "end": 21.889
+  },
+  {
+   "text": "cœur",
+   "start": 21.889,
+   "end": 22.071
+  },
+  {
+   "text": "augmente.",
+   "start": 22.071,
+   "end": 22.63
+  },
+  {
+   "text": "Trois :",
+   "start": 23.565,
+   "end": 23.916
+  },
+  {
+   "text": "le",
+   "start": 24.293,
+   "end": 24.378
+  },
+  {
+   "text": "HDL,",
+   "start": 24.378,
+   "end": 25.009
+  },
+  {
+   "text": "le",
+   "start": 25.3,
+   "end": 25.361
+  },
+  {
+   "text": "bon",
+   "start": 25.361,
+   "end": 25.494
+  },
+  {
+   "text": "cholestérol.",
+   "start": 25.494,
+   "end": 26.271
+  },
+  {
+   "text": "Il",
+   "start": 26.6,
+   "end": 26.806
+  },
+  {
+   "text": "nettoie",
+   "start": 26.806,
+   "end": 27.049
+  },
+  {
+   "text": "les",
+   "start": 27.049,
+   "end": 27.134
+  },
+  {
+   "text": "artères",
+   "start": 27.134,
+   "end": 27.68
+  },
+  {
+   "text": "et",
+   "start": 27.68,
+   "end": 27.729
+  },
+  {
+   "text": "ramène",
+   "start": 27.729,
+   "end": 28.044
+  },
+  {
+   "text": "le",
+   "start": 28.044,
+   "end": 28.129
+  },
+  {
+   "text": "cholestérol",
+   "start": 28.129,
+   "end": 28.736
+  },
+  {
+   "text": "vers",
+   "start": 28.736,
+   "end": 28.882
+  },
+  {
+   "text": "le",
+   "start": 28.882,
+   "end": 28.966
+  },
+  {
+   "text": "foie.",
+   "start": 28.966,
+   "end": 29.343
+  },
+  {
+   "text": "Ici,",
+   "start": 29.681,
+   "end": 30.142
+  },
+  {
+   "text": "plus",
+   "start": 30.361,
+   "end": 30.506
+  },
+  {
+   "text": "c'est",
+   "start": 30.506,
+   "end": 30.713
+  },
+  {
+   "text": "haut,",
+   "start": 30.713,
+   "end": 30.907
+  },
+  {
+   "text": "mieux",
+   "start": 31.21,
+   "end": 31.368
+  },
+  {
+   "text": "c'est :",
+   "start": 31.368,
+   "end": 31.671
+  },
+  {
+   "text": "au",
+   "start": 31.975,
+   "end": 32.06
+  },
+  {
+   "text": "moins",
+   "start": 32.06,
+   "end": 32.217
+  },
+  {
+   "text": "zéro",
+   "start": 32.217,
+   "end": 32.448
+  },
+  {
+   "text": "virgule",
+   "start": 32.448,
+   "end": 32.751
+  },
+  {
+   "text": "quatre",
+   "start": 32.751,
+   "end": 33.018
+  },
+  {
+   "text": "gramme",
+   "start": 33.018,
+   "end": 33.261
+  },
+  {
+   "text": "par",
+   "start": 33.261,
+   "end": 33.419
+  },
+  {
+   "text": "litre.",
+   "start": 33.419,
+   "end": 33.844
+  },
+  {
+   "text": "Quatre :",
+   "start": 34.772,
+   "end": 35.184
+  },
+  {
+   "text": "les",
+   "start": 35.633,
+   "end": 35.694
+  },
+  {
+   "text": "triglycérides,",
+   "start": 35.694,
+   "end": 36.568
+  },
+  {
+   "text": "des",
+   "start": 36.871,
+   "end": 36.944
+  },
+  {
+   "text": "graisses",
+   "start": 36.944,
+   "end": 37.211
+  },
+  {
+   "text": "qui",
+   "start": 37.211,
+   "end": 37.32
+  },
+  {
+   "text": "viennent",
+   "start": 37.32,
+   "end": 37.478
+  },
+  {
+   "text": "du",
+   "start": 37.478,
+   "end": 37.575
+  },
+  {
+   "text": "sucre,",
+   "start": 37.575,
+   "end": 38.0
+  },
+  {
+   "text": "de",
+   "start": 38.194,
+   "end": 38.255
+  },
+  {
+   "text": "l'alcool",
+   "start": 38.255,
+   "end": 38.631
+  },
+  {
+   "text": "et",
+   "start": 38.631,
+   "end": 38.667
+  },
+  {
+   "text": "du",
+   "start": 38.667,
+   "end": 38.764
+  },
+  {
+   "text": "gras.",
+   "start": 38.764,
+   "end": 39.08
+  },
+  {
+   "text": "Normaux",
+   "start": 39.431,
+   "end": 39.88
+  },
+  {
+   "text": "sous",
+   "start": 39.88,
+   "end": 40.013
+  },
+  {
+   "text": "un",
+   "start": 40.013,
+   "end": 40.147
+  },
+  {
+   "text": "virgule",
+   "start": 40.147,
+   "end": 40.45
+  },
+  {
+   "text": "cinq",
+   "start": 40.45,
+   "end": 40.644
+  },
+  {
+   "text": "gramme",
+   "start": 40.644,
+   "end": 40.911
+  },
+  {
+   "text": "par",
+   "start": 40.911,
+   "end": 41.069
+  },
+  {
+   "text": "litre.",
+   "start": 41.069,
+   "end": 41.494
+  },
+  {
+   "text": "Ils",
+   "start": 41.823,
+   "end": 42.017
+  },
+  {
+   "text": "montent",
+   "start": 42.017,
+   "end": 42.223
+  },
+  {
+   "text": "juste",
+   "start": 42.223,
+   "end": 42.502
+  },
+  {
+   "text": "après",
+   "start": 42.502,
+   "end": 42.696
+  },
+  {
+   "text": "un",
+   "start": 42.696,
+   "end": 42.781
+  },
+  {
+   "text": "repas :",
+   "start": 42.781,
+   "end": 43.133
+  },
+  {
+   "text": "on",
+   "start": 43.522,
+   "end": 43.546
+  },
+  {
+   "text": "prélève",
+   "start": 43.546,
+   "end": 43.861
+  },
+  {
+   "text": "à",
+   "start": 43.861,
+   "end": 43.91
+  },
+  {
+   "text": "jeun,",
+   "start": 43.91,
+   "end": 44.274
+  },
+  {
+   "text": "depuis",
+   "start": 44.492,
+   "end": 44.735
+  },
+  {
+   "text": "douze",
+   "start": 44.735,
+   "end": 44.978
+  },
+  {
+   "text": "heures.",
+   "start": 44.978,
+   "end": 45.281
+  },
+  {
+   "text": "Total,",
+   "start": 46.194,
+   "end": 46.696
+  },
+  {
+   "text": "LDL,",
+   "start": 47.015,
+   "end": 47.566
+  },
+  {
+   "text": "HDL,",
+   "start": 47.946,
+   "end": 48.559
+  },
+  {
+   "text": "triglycérides :",
+   "start": 48.816,
+   "end": 49.613
+  },
+  {
+   "text": "tu",
+   "start": 49.87,
+   "end": 50.005
+  },
+  {
+   "text": "as",
+   "start": 50.005,
+   "end": 50.042
+  },
+  {
+   "text": "le",
+   "start": 50.042,
+   "end": 50.127
+  },
+  {
+   "text": "bilan",
+   "start": 50.127,
+   "end": 50.36
+  },
+  {
+   "text": "lipidique.",
+   "start": 50.36,
+   "end": 51.059
+  },
+  {
+   "text": "Prochaine",
+   "start": 51.426,
+   "end": 51.793
+  },
+  {
+   "text": "vidéo :",
+   "start": 51.793,
+   "end": 52.271
+  },
+  {
+   "text": "les",
+   "start": 52.676,
+   "end": 52.737
+  },
+  {
+   "text": "enzymes",
+   "start": 52.737,
+   "end": 53.08
+  },
+  {
+   "text": "des",
+   "start": 53.08,
+   "end": 53.178
+  },
+  {
+   "text": "muscles",
+   "start": 53.178,
+   "end": 53.546
+  },
+  {
+   "text": "et",
+   "start": 53.546,
+   "end": 53.57
+  },
+  {
+   "text": "du",
+   "start": 53.57,
+   "end": 53.668
+  },
+  {
+   "text": "pancréas.",
+   "start": 53.668,
+   "end": 54.379
+  }
+ ]
+}

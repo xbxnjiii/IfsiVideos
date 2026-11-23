@@ -1,0 +1,27 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Quand des cellules meurent, elles lâchent leurs enzymes dans le sang. Trois d'entre elles se dosent dans le tube jaune. Tu sais lesquelles ?"
+ },
+ {
+  "id": "cpk",
+  "rate": "+3%",
+  "text": "Un : les {CPK|C P K}, l'enzyme des muscles. Elles montent après un gros effort, une chute ou une injection dans le muscle… et énormément quand le muscle est détruit : c'est la rhabdomyolyse, dangereuse pour les reins."
+ },
+ {
+  "id": "ldh",
+  "rate": "+3%",
+  "text": "Deux : les {LDH|L D H}. On en trouve dans presque toutes les cellules : elles montent dès que des cellules meurent, comme les globules rouges, le foie ou certains cancers. Un bon signal d'alerte… mais pas très précis."
+ },
+ {
+  "id": "lipase",
+  "rate": "+3%",
+  "text": "Trois : la lipase, l'enzyme du pancréas. Plus de trois fois la normale, avec une douleur au ventre qui part dans le dos : c'est une pancréatite aiguë, le plus souvent due à un calcul ou à l'alcool."
+ },
+ {
+  "id": "fin",
+  "rate": "+2%",
+  "text": "{CPK|C P K}, {LDH|L D H}, lipase : tu sais lire les enzymes. Prochaine vidéo : le sodium, le potassium et le chlore."
+ }
+]

@@ -1,0 +1,27 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Ton patient mange mal depuis des semaines ? Deux protéines du tube jaune le montrent… et une troisième trahit des globules rouges détruits. Tu les connais ?"
+ },
+ {
+  "id": "albumine",
+  "rate": "+3%",
+  "text": "Un : l'albumine, la protéine la plus abondante du sang, fabriquée par le foie. Elle retient l'eau dans les vaisseaux. La norme : de trente-cinq à cinquante grammes par litre. Trop basse : dénutrition, foie malade, ou pertes par les reins, avec parfois des œdèmes aux jambes."
+ },
+ {
+  "id": "prealb",
+  "rate": "+3%",
+  "text": "Deux : la préalbumine. Elle ne vit que deux jours : c'est le meilleur témoin d'une dénutrition récente, ou d'une renutrition qui marche. La norme : environ zéro virgule deux à zéro virgule quatre gramme par litre."
+ },
+ {
+  "id": "hapto",
+  "rate": "+3%",
+  "text": "Trois : l'haptoglobine. Elle attrape l'hémoglobine libérée quand des globules rouges éclatent. Effondrée, elle signe une hémolyse. La norme : environ zéro virgule trois à deux grammes par litre."
+ },
+ {
+  "id": "fin",
+  "rate": "+2%",
+  "text": "Albumine, préalbumine, haptoglobine : tu sais lire les protéines. Prochaine vidéo : l'électrophorèse et les immunoglobulines."
+ }
+]

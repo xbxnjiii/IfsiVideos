@@ -1,0 +1,923 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 56.68,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.05,
+   "end": 6.923
+  },
+  {
+   "id": "tropo",
+   "start": 7.895,
+   "end": 21.331
+  },
+  {
+   "id": "seuil",
+   "start": 22.27,
+   "end": 33.107
+  },
+  {
+   "id": "bnp",
+   "start": 34.027,
+   "end": 47.498
+  },
+  {
+   "id": "fin",
+   "start": 48.474,
+   "end": 56.366
+  }
+ ],
+ "words": [
+  {
+   "text": "Douleur",
+   "start": 0.05,
+   "end": 0.458
+  },
+  {
+   "text": "dans",
+   "start": 0.458,
+   "end": 0.554
+  },
+  {
+   "text": "la",
+   "start": 0.554,
+   "end": 0.638
+  },
+  {
+   "text": "poitrine :",
+   "start": 0.638,
+   "end": 1.167
+  },
+  {
+   "text": "c'est",
+   "start": 1.48,
+   "end": 1.588
+  },
+  {
+   "text": "un",
+   "start": 1.588,
+   "end": 1.696
+  },
+  {
+   "text": "infarctus,",
+   "start": 1.696,
+   "end": 2.453
+  },
+  {
+   "text": "ou",
+   "start": 2.634,
+   "end": 2.682
+  },
+  {
+   "text": "pas ?",
+   "start": 2.682,
+   "end": 2.946
+  },
+  {
+   "text": "Le",
+   "start": 3.317,
+   "end": 3.425
+  },
+  {
+   "text": "tube",
+   "start": 3.425,
+   "end": 3.606
+  },
+  {
+   "text": "jaune",
+   "start": 3.606,
+   "end": 3.858
+  },
+  {
+   "text": "répond",
+   "start": 3.858,
+   "end": 4.147
+  },
+  {
+   "text": "avec",
+   "start": 4.147,
+   "end": 4.363
+  },
+  {
+   "text": "deux",
+   "start": 4.363,
+   "end": 4.471
+  },
+  {
+   "text": "dosages…",
+   "start": 4.471,
+   "end": 4.988
+  },
+  {
+   "text": "et",
+   "start": 5.264,
+   "end": 5.288
+  },
+  {
+   "text": "le",
+   "start": 5.288,
+   "end": 5.385
+  },
+  {
+   "text": "temps",
+   "start": 5.385,
+   "end": 5.541
+  },
+  {
+   "text": "compte.",
+   "start": 5.541,
+   "end": 5.974
+  },
+  {
+   "text": "Tu",
+   "start": 6.334,
+   "end": 6.418
+  },
+  {
+   "text": "les",
+   "start": 6.418,
+   "end": 6.514
+  },
+  {
+   "text": "connais ?",
+   "start": 6.514,
+   "end": 6.923
+  },
+  {
+   "text": "Un :",
+   "start": 7.895,
+   "end": 8.114
+  },
+  {
+   "text": "la",
+   "start": 8.453,
+   "end": 8.514
+  },
+  {
+   "text": "troponine,",
+   "start": 8.514,
+   "end": 9.157
+  },
+  {
+   "text": "c'est",
+   "start": 9.448,
+   "end": 9.57
+  },
+  {
+   "text": "une",
+   "start": 9.57,
+   "end": 9.728
+  },
+  {
+   "text": "protéine",
+   "start": 9.728,
+   "end": 10.165
+  },
+  {
+   "text": "du",
+   "start": 10.165,
+   "end": 10.249
+  },
+  {
+   "text": "muscle",
+   "start": 10.249,
+   "end": 10.565
+  },
+  {
+   "text": "cardiaque.",
+   "start": 10.565,
+   "end": 11.184
+  },
+  {
+   "text": "Quand",
+   "start": 11.525,
+   "end": 11.683
+  },
+  {
+   "text": "des",
+   "start": 11.683,
+   "end": 11.768
+  },
+  {
+   "text": "cellules",
+   "start": 11.768,
+   "end": 12.083
+  },
+  {
+   "text": "du",
+   "start": 12.083,
+   "end": 12.18
+  },
+  {
+   "text": "cœur",
+   "start": 12.181,
+   "end": 12.411
+  },
+  {
+   "text": "meurent,",
+   "start": 12.411,
+   "end": 12.763
+  },
+  {
+   "text": "elle",
+   "start": 12.994,
+   "end": 13.066
+  },
+  {
+   "text": "passe",
+   "start": 13.066,
+   "end": 13.309
+  },
+  {
+   "text": "dans",
+   "start": 13.309,
+   "end": 13.406
+  },
+  {
+   "text": "le",
+   "start": 13.406,
+   "end": 13.503
+  },
+  {
+   "text": "sang.",
+   "start": 13.503,
+   "end": 13.795
+  },
+  {
+   "text": "Elle",
+   "start": 14.134,
+   "end": 14.341
+  },
+  {
+   "text": "monte",
+   "start": 14.341,
+   "end": 14.559
+  },
+  {
+   "text": "en",
+   "start": 14.559,
+   "end": 14.608
+  },
+  {
+   "text": "quelques",
+   "start": 14.608,
+   "end": 14.875
+  },
+  {
+   "text": "heures :",
+   "start": 14.875,
+   "end": 15.202
+  },
+  {
+   "text": "on",
+   "start": 15.651,
+   "end": 15.676
+  },
+  {
+   "text": "la",
+   "start": 15.676,
+   "end": 15.773
+  },
+  {
+   "text": "dose",
+   "start": 15.773,
+   "end": 15.991
+  },
+  {
+   "text": "à",
+   "start": 15.991,
+   "end": 16.028
+  },
+  {
+   "text": "l'arrivée,",
+   "start": 16.028,
+   "end": 16.537
+  },
+  {
+   "text": "puis",
+   "start": 16.829,
+   "end": 16.974
+  },
+  {
+   "text": "on",
+   "start": 16.974,
+   "end": 16.998
+  },
+  {
+   "text": "refait",
+   "start": 16.998,
+   "end": 17.229
+  },
+  {
+   "text": "une",
+   "start": 17.229,
+   "end": 17.302
+  },
+  {
+   "text": "prise",
+   "start": 17.302,
+   "end": 17.496
+  },
+  {
+   "text": "de",
+   "start": 17.496,
+   "end": 17.617
+  },
+  {
+   "text": "sang",
+   "start": 17.617,
+   "end": 17.799
+  },
+  {
+   "text": "une",
+   "start": 17.799,
+   "end": 17.921
+  },
+  {
+   "text": "à",
+   "start": 17.921,
+   "end": 17.957
+  },
+  {
+   "text": "trois",
+   "start": 17.957,
+   "end": 18.139
+  },
+  {
+   "text": "heures",
+   "start": 18.139,
+   "end": 18.273
+  },
+  {
+   "text": "plus",
+   "start": 18.273,
+   "end": 18.394
+  },
+  {
+   "text": "tard.",
+   "start": 18.394,
+   "end": 18.77
+  },
+  {
+   "text": "Si",
+   "start": 19.098,
+   "end": 19.341
+  },
+  {
+   "text": "elle",
+   "start": 19.341,
+   "end": 19.414
+  },
+  {
+   "text": "augmente,",
+   "start": 19.414,
+   "end": 19.875
+  },
+  {
+   "text": "on",
+   "start": 20.142,
+   "end": 20.19
+  },
+  {
+   "text": "pense",
+   "start": 20.19,
+   "end": 20.445
+  },
+  {
+   "text": "à",
+   "start": 20.445,
+   "end": 20.494
+  },
+  {
+   "text": "l'infarctus.",
+   "start": 20.494,
+   "end": 21.331
+  },
+  {
+   "text": "Deux :",
+   "start": 22.27,
+   "end": 22.671
+  },
+  {
+   "text": "le",
+   "start": 23.035,
+   "end": 23.132
+  },
+  {
+   "text": "seuil.",
+   "start": 23.132,
+   "end": 23.617
+  },
+  {
+   "text": "Il",
+   "start": 23.944,
+   "end": 24.126
+  },
+  {
+   "text": "dépend",
+   "start": 24.126,
+   "end": 24.393
+  },
+  {
+   "text": "du",
+   "start": 24.393,
+   "end": 24.478
+  },
+  {
+   "text": "laboratoire",
+   "start": 24.478,
+   "end": 25.073
+  },
+  {
+   "text": "et",
+   "start": 25.073,
+   "end": 25.097
+  },
+  {
+   "text": "de",
+   "start": 25.097,
+   "end": 25.17
+  },
+  {
+   "text": "la",
+   "start": 25.17,
+   "end": 25.267
+  },
+  {
+   "text": "technique,",
+   "start": 25.267,
+   "end": 25.74
+  },
+  {
+   "text": "alors",
+   "start": 26.044,
+   "end": 26.226
+  },
+  {
+   "text": "lis",
+   "start": 26.226,
+   "end": 26.335
+  },
+  {
+   "text": "toujours",
+   "start": 26.335,
+   "end": 26.578
+  },
+  {
+   "text": "la",
+   "start": 26.578,
+   "end": 26.663
+  },
+  {
+   "text": "norme",
+   "start": 26.663,
+   "end": 26.869
+  },
+  {
+   "text": "écrite",
+   "start": 26.869,
+   "end": 27.185
+  },
+  {
+   "text": "sur",
+   "start": 27.185,
+   "end": 27.294
+  },
+  {
+   "text": "le",
+   "start": 27.294,
+   "end": 27.367
+  },
+  {
+   "text": "résultat.",
+   "start": 27.367,
+   "end": 27.937
+  },
+  {
+   "text": "Et",
+   "start": 28.265,
+   "end": 28.386
+  },
+  {
+   "text": "la",
+   "start": 28.386,
+   "end": 28.471
+  },
+  {
+   "text": "troponine",
+   "start": 28.471,
+   "end": 28.957
+  },
+  {
+   "text": "peut",
+   "start": 28.957,
+   "end": 29.054
+  },
+  {
+   "text": "aussi",
+   "start": 29.054,
+   "end": 29.272
+  },
+  {
+   "text": "monter",
+   "start": 29.272,
+   "end": 29.539
+  },
+  {
+   "text": "dans",
+   "start": 29.539,
+   "end": 29.624
+  },
+  {
+   "text": "une",
+   "start": 29.624,
+   "end": 29.794
+  },
+  {
+   "text": "embolie",
+   "start": 29.794,
+   "end": 30.073
+  },
+  {
+   "text": "pulmonaire,",
+   "start": 30.073,
+   "end": 30.692
+  },
+  {
+   "text": "une",
+   "start": 31.02,
+   "end": 31.093
+  },
+  {
+   "text": "insuffisance",
+   "start": 31.093,
+   "end": 31.663
+  },
+  {
+   "text": "rénale",
+   "start": 31.663,
+   "end": 32.076
+  },
+  {
+   "text": "ou",
+   "start": 32.076,
+   "end": 32.173
+  },
+  {
+   "text": "une",
+   "start": 32.173,
+   "end": 32.258
+  },
+  {
+   "text": "infection",
+   "start": 32.258,
+   "end": 32.634
+  },
+  {
+   "text": "grave.",
+   "start": 32.634,
+   "end": 33.107
+  },
+  {
+   "text": "Trois :",
+   "start": 34.027,
+   "end": 34.378
+  },
+  {
+   "text": "le",
+   "start": 34.791,
+   "end": 34.912
+  },
+  {
+   "text": "N",
+   "start": 34.912,
+   "end": 35.082
+  },
+  {
+   "text": "T",
+   "start": 35.082,
+   "end": 35.192
+  },
+  {
+   "text": "pro",
+   "start": 35.192,
+   "end": 35.41
+  },
+  {
+   "text": "B",
+   "start": 35.41,
+   "end": 35.544
+  },
+  {
+   "text": "N",
+   "start": 35.544,
+   "end": 35.701
+  },
+  {
+   "text": "P.",
+   "start": 35.701,
+   "end": 35.944
+  },
+  {
+   "text": "Il",
+   "start": 35.944,
+   "end": 36.078
+  },
+  {
+   "text": "est",
+   "start": 36.078,
+   "end": 36.102
+  },
+  {
+   "text": "libéré",
+   "start": 36.102,
+   "end": 36.429
+  },
+  {
+   "text": "quand",
+   "start": 36.429,
+   "end": 36.551
+  },
+  {
+   "text": "le",
+   "start": 36.551,
+   "end": 36.636
+  },
+  {
+   "text": "cœur",
+   "start": 36.636,
+   "end": 36.842
+  },
+  {
+   "text": "est",
+   "start": 36.842,
+   "end": 36.878
+  },
+  {
+   "text": "trop",
+   "start": 36.879,
+   "end": 37.085
+  },
+  {
+   "text": "étiré,",
+   "start": 37.085,
+   "end": 37.546
+  },
+  {
+   "text": "parce",
+   "start": 37.813,
+   "end": 37.959
+  },
+  {
+   "text": "qu'il",
+   "start": 37.959,
+   "end": 38.092
+  },
+  {
+   "text": "pompe",
+   "start": 38.092,
+   "end": 38.347
+  },
+  {
+   "text": "mal.",
+   "start": 38.347,
+   "end": 38.76
+  },
+  {
+   "text": "Normal,",
+   "start": 39.099,
+   "end": 39.621
+  },
+  {
+   "text": "il",
+   "start": 39.973,
+   "end": 40.034
+  },
+  {
+   "text": "permet",
+   "start": 40.034,
+   "end": 40.289
+  },
+  {
+   "text": "presque",
+   "start": 40.289,
+   "end": 40.628
+  },
+  {
+   "text": "d'écarter",
+   "start": 40.629,
+   "end": 41.053
+  },
+  {
+   "text": "une",
+   "start": 41.053,
+   "end": 41.15
+  },
+  {
+   "text": "insuffisance",
+   "start": 41.15,
+   "end": 41.709
+  },
+  {
+   "text": "cardiaque.",
+   "start": 41.709,
+   "end": 42.327
+  },
+  {
+   "text": "Élevé,",
+   "start": 42.656,
+   "end": 43.141
+  },
+  {
+   "text": "elle",
+   "start": 43.42,
+   "end": 43.542
+  },
+  {
+   "text": "est",
+   "start": 43.542,
+   "end": 43.578
+  },
+  {
+   "text": "probable :",
+   "start": 43.578,
+   "end": 44.088
+  },
+  {
+   "text": "on",
+   "start": 44.44,
+   "end": 44.476
+  },
+  {
+   "text": "fait",
+   "start": 44.476,
+   "end": 44.622
+  },
+  {
+   "text": "une",
+   "start": 44.622,
+   "end": 44.719
+  },
+  {
+   "text": "échographie",
+   "start": 44.719,
+   "end": 45.217
+  },
+  {
+   "text": "du",
+   "start": 45.217,
+   "end": 45.326
+  },
+  {
+   "text": "cœur.",
+   "start": 45.326,
+   "end": 45.751
+  },
+  {
+   "text": "Le",
+   "start": 46.079,
+   "end": 46.285
+  },
+  {
+   "text": "seuil",
+   "start": 46.285,
+   "end": 46.528
+  },
+  {
+   "text": "augmente",
+   "start": 46.528,
+   "end": 46.867
+  },
+  {
+   "text": "avec",
+   "start": 46.867,
+   "end": 47.074
+  },
+  {
+   "text": "l'âge.",
+   "start": 47.074,
+   "end": 47.498
+  },
+  {
+   "text": "La",
+   "start": 48.474,
+   "end": 48.584
+  },
+  {
+   "text": "troponine,",
+   "start": 48.584,
+   "end": 49.258
+  },
+  {
+   "text": "pour",
+   "start": 49.516,
+   "end": 49.65
+  },
+  {
+   "text": "le",
+   "start": 49.651,
+   "end": 49.724
+  },
+  {
+   "text": "muscle",
+   "start": 49.724,
+   "end": 50.055
+  },
+  {
+   "text": "qui",
+   "start": 50.055,
+   "end": 50.19
+  },
+  {
+   "text": "souffre.",
+   "start": 50.19,
+   "end": 50.68
+  },
+  {
+   "text": "Le",
+   "start": 51.06,
+   "end": 51.195
+  },
+  {
+   "text": "N",
+   "start": 51.195,
+   "end": 51.378
+  },
+  {
+   "text": "T",
+   "start": 51.378,
+   "end": 51.501
+  },
+  {
+   "text": "pro",
+   "start": 51.501,
+   "end": 51.709
+  },
+  {
+   "text": "B",
+   "start": 51.709,
+   "end": 51.844
+  },
+  {
+   "text": "N",
+   "start": 51.844,
+   "end": 52.04
+  },
+  {
+   "text": "P,",
+   "start": 52.04,
+   "end": 52.31
+  },
+  {
+   "text": "pour",
+   "start": 52.579,
+   "end": 52.702
+  },
+  {
+   "text": "le",
+   "start": 52.702,
+   "end": 52.775
+  },
+  {
+   "text": "cœur",
+   "start": 52.775,
+   "end": 52.972
+  },
+  {
+   "text": "qui",
+   "start": 52.972,
+   "end": 53.106
+  },
+  {
+   "text": "fatigue.",
+   "start": 53.106,
+   "end": 53.682
+  },
+  {
+   "text": "Prochaine",
+   "start": 54.05,
+   "end": 54.442
+  },
+  {
+   "text": "vidéo :",
+   "start": 54.442,
+   "end": 54.945
+  },
+  {
+   "text": "les",
+   "start": 55.361,
+   "end": 55.423
+  },
+  {
+   "text": "marqueurs",
+   "start": 55.423,
+   "end": 55.815
+  },
+  {
+   "text": "tumoraux.",
+   "start": 55.815,
+   "end": 56.366
+  }
+ ]
+}

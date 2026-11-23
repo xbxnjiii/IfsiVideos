@@ -1,0 +1,22 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Fièvre et frissons : un virus ou une bactérie ? Deux marqueurs du tube jaune aident à trancher… et à décider des antibiotiques. Tu les connais ?"
+ },
+ {
+  "id": "crp",
+  "rate": "+3%",
+  "text": "Un : la {CRP|C R P}, la protéine de l'inflammation, fabriquée par le foie. Normale sous cinq milligrammes par litre. Elle monte en six heures, culmine vers deux jours, puis redescend quand ça va mieux. Mais elle monte pour toute inflammation, pas seulement les infections."
+ },
+ {
+  "id": "pct",
+  "rate": "+3%",
+  "text": "Deux : la procalcitonine. Elle monte surtout avec les bactéries, beaucoup moins avec les virus. Sous zéro virgule cinq microgramme par litre, une infection bactérienne grave est peu probable. Elle aide à commencer, ou à arrêter, les antibiotiques."
+ },
+ {
+  "id": "fin",
+  "rate": "+2%",
+  "text": "La {CRP|C R P} et la procalcitonine : tu sais lire l'inflammation. Prochaine vidéo : l'albumine et les protéines du sang."
+ }
+]

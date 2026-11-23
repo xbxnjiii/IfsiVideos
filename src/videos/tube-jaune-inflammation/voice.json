@@ -1,0 +1,628 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 43.89,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.05,
+   "end": 7.512
+  },
+  {
+   "id": "crp",
+   "start": 8.471,
+   "end": 21.991
+  },
+  {
+   "id": "pct",
+   "start": 22.942,
+   "end": 36.146
+  },
+  {
+   "id": "fin",
+   "start": 37.124,
+   "end": 43.546
+  }
+ ],
+ "words": [
+  {
+   "text": "Fièvre",
+   "start": 0.05,
+   "end": 0.47
+  },
+  {
+   "text": "et",
+   "start": 0.47,
+   "end": 0.506
+  },
+  {
+   "text": "frissons :",
+   "start": 0.506,
+   "end": 0.987
+  },
+  {
+   "text": "un",
+   "start": 1.372,
+   "end": 1.468
+  },
+  {
+   "text": "virus",
+   "start": 1.468,
+   "end": 1.888
+  },
+  {
+   "text": "ou",
+   "start": 1.888,
+   "end": 1.924
+  },
+  {
+   "text": "une",
+   "start": 1.925,
+   "end": 1.997
+  },
+  {
+   "text": "bactérie ?",
+   "start": 1.997,
+   "end": 2.55
+  },
+  {
+   "text": "Deux",
+   "start": 2.909,
+   "end": 3.089
+  },
+  {
+   "text": "marqueurs",
+   "start": 3.089,
+   "end": 3.413
+  },
+  {
+   "text": "du",
+   "start": 3.413,
+   "end": 3.51
+  },
+  {
+   "text": "tube",
+   "start": 3.51,
+   "end": 3.714
+  },
+  {
+   "text": "jaune",
+   "start": 3.714,
+   "end": 4.062
+  },
+  {
+   "text": "aident",
+   "start": 4.062,
+   "end": 4.171
+  },
+  {
+   "text": "à",
+   "start": 4.171,
+   "end": 4.207
+  },
+  {
+   "text": "trancher…",
+   "start": 4.207,
+   "end": 4.748
+  },
+  {
+   "text": "et",
+   "start": 5.084,
+   "end": 5.156
+  },
+  {
+   "text": "à",
+   "start": 5.156,
+   "end": 5.204
+  },
+  {
+   "text": "décider",
+   "start": 5.204,
+   "end": 5.589
+  },
+  {
+   "text": "des",
+   "start": 5.589,
+   "end": 5.673
+  },
+  {
+   "text": "antibiotiques.",
+   "start": 5.673,
+   "end": 6.55
+  },
+  {
+   "text": "Tu",
+   "start": 6.911,
+   "end": 6.995
+  },
+  {
+   "text": "les",
+   "start": 6.995,
+   "end": 7.079
+  },
+  {
+   "text": "connais ?",
+   "start": 7.079,
+   "end": 7.512
+  },
+  {
+   "text": "Un :",
+   "start": 8.471,
+   "end": 8.714
+  },
+  {
+   "text": "la",
+   "start": 8.944,
+   "end": 9.078
+  },
+  {
+   "text": "CRP,",
+   "start": 9.078,
+   "end": 9.721
+  },
+  {
+   "text": "la",
+   "start": 10.049,
+   "end": 10.122
+  },
+  {
+   "text": "protéine",
+   "start": 10.122,
+   "end": 10.534
+  },
+  {
+   "text": "de",
+   "start": 10.534,
+   "end": 10.619
+  },
+  {
+   "text": "l'inflammation,",
+   "start": 10.619,
+   "end": 11.323
+  },
+  {
+   "text": "fabriquée",
+   "start": 11.614,
+   "end": 11.978
+  },
+  {
+   "text": "par",
+   "start": 11.978,
+   "end": 12.112
+  },
+  {
+   "text": "le",
+   "start": 12.112,
+   "end": 12.185
+  },
+  {
+   "text": "foie.",
+   "start": 12.185,
+   "end": 12.549
+  },
+  {
+   "text": "Normale",
+   "start": 12.901,
+   "end": 13.374
+  },
+  {
+   "text": "sous",
+   "start": 13.374,
+   "end": 13.52
+  },
+  {
+   "text": "cinq",
+   "start": 13.52,
+   "end": 13.75
+  },
+  {
+   "text": "milligrammes",
+   "start": 13.75,
+   "end": 14.187
+  },
+  {
+   "text": "par",
+   "start": 14.187,
+   "end": 14.345
+  },
+  {
+   "text": "litre.",
+   "start": 14.345,
+   "end": 14.782
+  },
+  {
+   "text": "Elle",
+   "start": 15.123,
+   "end": 15.305
+  },
+  {
+   "text": "monte",
+   "start": 15.305,
+   "end": 15.511
+  },
+  {
+   "text": "en",
+   "start": 15.511,
+   "end": 15.56
+  },
+  {
+   "text": "six",
+   "start": 15.56,
+   "end": 15.754
+  },
+  {
+   "text": "heures,",
+   "start": 15.754,
+   "end": 16.13
+  },
+  {
+   "text": "culmine",
+   "start": 16.349,
+   "end": 16.701
+  },
+  {
+   "text": "vers",
+   "start": 16.701,
+   "end": 16.834
+  },
+  {
+   "text": "deux",
+   "start": 16.834,
+   "end": 16.98
+  },
+  {
+   "text": "jours,",
+   "start": 16.98,
+   "end": 17.344
+  },
+  {
+   "text": "puis",
+   "start": 17.611,
+   "end": 17.744
+  },
+  {
+   "text": "redescend",
+   "start": 17.744,
+   "end": 18.121
+  },
+  {
+   "text": "quand",
+   "start": 18.121,
+   "end": 18.23
+  },
+  {
+   "text": "ça",
+   "start": 18.23,
+   "end": 18.351
+  },
+  {
+   "text": "va",
+   "start": 18.351,
+   "end": 18.448
+  },
+  {
+   "text": "mieux.",
+   "start": 18.448,
+   "end": 18.752
+  },
+  {
+   "text": "Mais",
+   "start": 19.091,
+   "end": 19.261
+  },
+  {
+   "text": "elle",
+   "start": 19.261,
+   "end": 19.358
+  },
+  {
+   "text": "monte",
+   "start": 19.358,
+   "end": 19.6
+  },
+  {
+   "text": "pour",
+   "start": 19.6,
+   "end": 19.746
+  },
+  {
+   "text": "toute",
+   "start": 19.746,
+   "end": 19.928
+  },
+  {
+   "text": "inflammation,",
+   "start": 19.928,
+   "end": 20.596
+  },
+  {
+   "text": "pas",
+   "start": 20.863,
+   "end": 20.96
+  },
+  {
+   "text": "seulement",
+   "start": 20.96,
+   "end": 21.263
+  },
+  {
+   "text": "les",
+   "start": 21.263,
+   "end": 21.348
+  },
+  {
+   "text": "infections.",
+   "start": 21.348,
+   "end": 21.991
+  },
+  {
+   "text": "Deux :",
+   "start": 22.942,
+   "end": 23.342
+  },
+  {
+   "text": "la",
+   "start": 23.694,
+   "end": 23.755
+  },
+  {
+   "text": "procalcitonine.",
+   "start": 23.755,
+   "end": 24.75
+  },
+  {
+   "text": "Elle",
+   "start": 25.078,
+   "end": 25.272
+  },
+  {
+   "text": "monte",
+   "start": 25.272,
+   "end": 25.454
+  },
+  {
+   "text": "surtout",
+   "start": 25.454,
+   "end": 25.781
+  },
+  {
+   "text": "avec",
+   "start": 25.781,
+   "end": 26.0
+  },
+  {
+   "text": "les",
+   "start": 26.0,
+   "end": 26.073
+  },
+  {
+   "text": "bactéries,",
+   "start": 26.073,
+   "end": 26.631
+  },
+  {
+   "text": "beaucoup",
+   "start": 26.922,
+   "end": 27.165
+  },
+  {
+   "text": "moins",
+   "start": 27.165,
+   "end": 27.323
+  },
+  {
+   "text": "avec",
+   "start": 27.323,
+   "end": 27.517
+  },
+  {
+   "text": "les",
+   "start": 27.517,
+   "end": 27.578
+  },
+  {
+   "text": "virus.",
+   "start": 27.578,
+   "end": 28.136
+  },
+  {
+   "text": "Sous",
+   "start": 28.475,
+   "end": 28.657
+  },
+  {
+   "text": "zéro",
+   "start": 28.657,
+   "end": 28.924
+  },
+  {
+   "text": "virgule",
+   "start": 28.924,
+   "end": 29.263
+  },
+  {
+   "text": "cinq",
+   "start": 29.263,
+   "end": 29.506
+  },
+  {
+   "text": "microgramme",
+   "start": 29.506,
+   "end": 29.991
+  },
+  {
+   "text": "par",
+   "start": 29.991,
+   "end": 30.161
+  },
+  {
+   "text": "litre,",
+   "start": 30.161,
+   "end": 30.477
+  },
+  {
+   "text": "une",
+   "start": 30.89,
+   "end": 30.95
+  },
+  {
+   "text": "infection",
+   "start": 30.95,
+   "end": 31.326
+  },
+  {
+   "text": "bactérienne",
+   "start": 31.326,
+   "end": 31.751
+  },
+  {
+   "text": "grave",
+   "start": 31.751,
+   "end": 32.042
+  },
+  {
+   "text": "est",
+   "start": 32.042,
+   "end": 32.079
+  },
+  {
+   "text": "peu",
+   "start": 32.079,
+   "end": 32.2
+  },
+  {
+   "text": "probable.",
+   "start": 32.2,
+   "end": 32.783
+  },
+  {
+   "text": "Elle",
+   "start": 33.112,
+   "end": 33.306
+  },
+  {
+   "text": "aide",
+   "start": 33.306,
+   "end": 33.427
+  },
+  {
+   "text": "à",
+   "start": 33.427,
+   "end": 33.464
+  },
+  {
+   "text": "commencer,",
+   "start": 33.464,
+   "end": 34.083
+  },
+  {
+   "text": "ou",
+   "start": 34.386,
+   "end": 34.471
+  },
+  {
+   "text": "à",
+   "start": 34.471,
+   "end": 34.544
+  },
+  {
+   "text": "arrêter,",
+   "start": 34.544,
+   "end": 35.005
+  },
+  {
+   "text": "les",
+   "start": 35.236,
+   "end": 35.296
+  },
+  {
+   "text": "antibiotiques.",
+   "start": 35.296,
+   "end": 36.146
+  },
+  {
+   "text": "La",
+   "start": 37.124,
+   "end": 37.283
+  },
+  {
+   "text": "CRP",
+   "start": 37.283,
+   "end": 37.896
+  },
+  {
+   "text": "et",
+   "start": 37.896,
+   "end": 38.006
+  },
+  {
+   "text": "la",
+   "start": 38.006,
+   "end": 38.092
+  },
+  {
+   "text": "procalcitonine :",
+   "start": 38.092,
+   "end": 39.073
+  },
+  {
+   "text": "tu",
+   "start": 39.354,
+   "end": 39.465
+  },
+  {
+   "text": "sais",
+   "start": 39.465,
+   "end": 39.587
+  },
+  {
+   "text": "lire",
+   "start": 39.587,
+   "end": 39.783
+  },
+  {
+   "text": "l'inflammation.",
+   "start": 39.783,
+   "end": 40.531
+  },
+  {
+   "text": "Prochaine",
+   "start": 40.899,
+   "end": 41.254
+  },
+  {
+   "text": "vidéo :",
+   "start": 41.254,
+   "end": 41.72
+  },
+  {
+   "text": "l'albumine",
+   "start": 42.112,
+   "end": 42.614
+  },
+  {
+   "text": "et",
+   "start": 42.614,
+   "end": 42.639
+  },
+  {
+   "text": "les",
+   "start": 42.639,
+   "end": 42.712
+  },
+  {
+   "text": "protéines",
+   "start": 42.712,
+   "end": 43.117
+  },
+  {
+   "text": "du",
+   "start": 43.117,
+   "end": 43.227
+  },
+  {
+   "text": "sang.",
+   "start": 43.227,
+   "end": 43.546
+  }
+ ]
+}

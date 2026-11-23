@@ -1,0 +1,27 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Le foie souffre souvent en silence. Dans le tube jaune, quatre enzymes donnent l'alerte, bien avant la jaunisse. Tu sais les lire ?"
+ },
+ {
+  "id": "transa",
+  "rate": "+3%",
+  "text": "Un et deux : les transaminases, l'{ASAT|A S A T} et l'{ALAT|A L A T}, qu'on appelait aussi {GOT|G O T} et {GPT|G P T}. Elles vivent dans les cellules du foie : quand ces cellules sont abîmées, elles passent dans le sang. Ça arrive avec une hépatite, certains médicaments ou l'alcool. L'{ALAT|A L A T} est la plus propre au foie."
+ },
+ {
+  "id": "ggt",
+  "rate": "+3%",
+  "text": "Trois : les gamma {GT|G T}. Elles montent avec l'alcool, avec certains médicaments… et quand la bile circule mal."
+ },
+ {
+  "id": "pal",
+  "rate": "+3%",
+  "text": "Quatre : les phosphatases alcalines, les {PAL|P A L}. Avec les gamma {GT|G T}, elles montent quand la bile ne s'écoule plus, à cause d'un calcul par exemple. Mais elles viennent aussi des os : elles sont plus hautes chez l'enfant qui grandit."
+ },
+ {
+  "id": "fin",
+  "rate": "+2%",
+  "text": "Transaminases, gamma {GT|G T}, phosphatases alcalines : tu as le bilan du foie. Prochaine vidéo : le cholestérol."
+ }
+]

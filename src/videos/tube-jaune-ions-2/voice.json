@@ -1,0 +1,788 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 59.342,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.05,
+   "end": 8.233
+  },
+  {
+   "id": "calcium",
+   "start": 9.179,
+   "end": 18.596
+  },
+  {
+   "id": "phosphore",
+   "start": 19.533,
+   "end": 27.726
+  },
+  {
+   "id": "magnesium",
+   "start": 28.723,
+   "end": 38.905
+  },
+  {
+   "id": "bicar",
+   "start": 39.833,
+   "end": 49.796
+  },
+  {
+   "id": "fin",
+   "start": 50.728,
+   "end": 58.999
+  }
+ ],
+ "words": [
+  {
+   "text": "Calcium,",
+   "start": 0.05,
+   "end": 0.711
+  },
+  {
+   "text": "phosphore,",
+   "start": 0.891,
+   "end": 1.444
+  },
+  {
+   "text": "magnésium,",
+   "start": 1.685,
+   "end": 2.322
+  },
+  {
+   "text": "bicarbonates :",
+   "start": 2.598,
+   "end": 3.379
+  },
+  {
+   "text": "quatre",
+   "start": 3.68,
+   "end": 3.944
+  },
+  {
+   "text": "ions",
+   "start": 3.944,
+   "end": 4.064
+  },
+  {
+   "text": "plus",
+   "start": 4.064,
+   "end": 4.197
+  },
+  {
+   "text": "discrets…",
+   "start": 4.197,
+   "end": 4.629
+  },
+  {
+   "text": "mais",
+   "start": 5.158,
+   "end": 5.218
+  },
+  {
+   "text": "un",
+   "start": 5.218,
+   "end": 5.314
+  },
+  {
+   "text": "seul",
+   "start": 5.314,
+   "end": 5.459
+  },
+  {
+   "text": "de",
+   "start": 5.459,
+   "end": 5.531
+  },
+  {
+   "text": "travers",
+   "start": 5.531,
+   "end": 5.855
+  },
+  {
+   "text": "peut",
+   "start": 5.855,
+   "end": 5.963
+  },
+  {
+   "text": "donner",
+   "start": 5.963,
+   "end": 6.156
+  },
+  {
+   "text": "des",
+   "start": 6.156,
+   "end": 6.252
+  },
+  {
+   "text": "crampes,",
+   "start": 6.252,
+   "end": 6.624
+  },
+  {
+   "text": "ou",
+   "start": 6.781,
+   "end": 6.817
+  },
+  {
+   "text": "pire.",
+   "start": 6.817,
+   "end": 7.286
+  },
+  {
+   "text": "Tu",
+   "start": 7.644,
+   "end": 7.728
+  },
+  {
+   "text": "les",
+   "start": 7.728,
+   "end": 7.812
+  },
+  {
+   "text": "connais ?",
+   "start": 7.812,
+   "end": 8.233
+  },
+  {
+   "text": "Un :",
+   "start": 9.179,
+   "end": 9.434
+  },
+  {
+   "text": "le",
+   "start": 9.628,
+   "end": 9.676
+  },
+  {
+   "text": "calcium,",
+   "start": 9.676,
+   "end": 10.307
+  },
+  {
+   "text": "pour",
+   "start": 10.55,
+   "end": 10.659
+  },
+  {
+   "text": "les",
+   "start": 10.659,
+   "end": 10.756
+  },
+  {
+   "text": "os,",
+   "start": 10.756,
+   "end": 11.193
+  },
+  {
+   "text": "les",
+   "start": 11.387,
+   "end": 11.484
+  },
+  {
+   "text": "muscles",
+   "start": 11.485,
+   "end": 11.812
+  },
+  {
+   "text": "et",
+   "start": 11.812,
+   "end": 11.836
+  },
+  {
+   "text": "le",
+   "start": 11.836,
+   "end": 11.934
+  },
+  {
+   "text": "cœur.",
+   "start": 11.934,
+   "end": 12.358
+  },
+  {
+   "text": "La",
+   "start": 12.747,
+   "end": 12.856
+  },
+  {
+   "text": "norme :",
+   "start": 12.856,
+   "end": 13.256
+  },
+  {
+   "text": "de",
+   "start": 13.608,
+   "end": 13.693
+  },
+  {
+   "text": "deux",
+   "start": 13.693,
+   "end": 13.802
+  },
+  {
+   "text": "virgule",
+   "start": 13.802,
+   "end": 14.142
+  },
+  {
+   "text": "deux",
+   "start": 14.142,
+   "end": 14.276
+  },
+  {
+   "text": "à",
+   "start": 14.276,
+   "end": 14.361
+  },
+  {
+   "text": "deux",
+   "start": 14.361,
+   "end": 14.555
+  },
+  {
+   "text": "virgule",
+   "start": 14.555,
+   "end": 14.87
+  },
+  {
+   "text": "six",
+   "start": 14.87,
+   "end": 15.028
+  },
+  {
+   "text": "millimoles",
+   "start": 15.028,
+   "end": 15.453
+  },
+  {
+   "text": "par",
+   "start": 15.453,
+   "end": 15.623
+  },
+  {
+   "text": "litre.",
+   "start": 15.623,
+   "end": 16.06
+  },
+  {
+   "text": "Trop",
+   "start": 16.4,
+   "end": 16.618
+  },
+  {
+   "text": "bas :",
+   "start": 16.618,
+   "end": 16.885
+  },
+  {
+   "text": "des",
+   "start": 17.285,
+   "end": 17.383
+  },
+  {
+   "text": "fourmillements",
+   "start": 17.383,
+   "end": 17.917
+  },
+  {
+   "text": "et",
+   "start": 17.917,
+   "end": 17.965
+  },
+  {
+   "text": "des",
+   "start": 17.965,
+   "end": 18.05
+  },
+  {
+   "text": "crampes.",
+   "start": 18.05,
+   "end": 18.596
+  },
+  {
+   "text": "Deux :",
+   "start": 19.533,
+   "end": 19.922
+  },
+  {
+   "text": "le",
+   "start": 20.261,
+   "end": 20.334
+  },
+  {
+   "text": "phosphore,",
+   "start": 20.334,
+   "end": 20.905
+  },
+  {
+   "text": "le",
+   "start": 21.269,
+   "end": 21.329
+  },
+  {
+   "text": "partenaire",
+   "start": 21.329,
+   "end": 21.742
+  },
+  {
+   "text": "du",
+   "start": 21.742,
+   "end": 21.827
+  },
+  {
+   "text": "calcium",
+   "start": 21.827,
+   "end": 22.264
+  },
+  {
+   "text": "dans",
+   "start": 22.264,
+   "end": 22.361
+  },
+  {
+   "text": "les",
+   "start": 22.361,
+   "end": 22.458
+  },
+  {
+   "text": "os.",
+   "start": 22.458,
+   "end": 22.895
+  },
+  {
+   "text": "La",
+   "start": 23.27,
+   "end": 23.38
+  },
+  {
+   "text": "norme :",
+   "start": 23.38,
+   "end": 23.792
+  },
+  {
+   "text": "de",
+   "start": 24.156,
+   "end": 24.229
+  },
+  {
+   "text": "zéro",
+   "start": 24.229,
+   "end": 24.484
+  },
+  {
+   "text": "virgule",
+   "start": 24.484,
+   "end": 24.8
+  },
+  {
+   "text": "huit",
+   "start": 24.8,
+   "end": 25.018
+  },
+  {
+   "text": "à",
+   "start": 25.018,
+   "end": 25.115
+  },
+  {
+   "text": "un",
+   "start": 25.115,
+   "end": 25.236
+  },
+  {
+   "text": "virgule",
+   "start": 25.236,
+   "end": 25.516
+  },
+  {
+   "text": "trois.",
+   "start": 25.516,
+   "end": 25.867
+  },
+  {
+   "text": "Il",
+   "start": 26.197,
+   "end": 26.403
+  },
+  {
+   "text": "monte",
+   "start": 26.403,
+   "end": 26.621
+  },
+  {
+   "text": "quand",
+   "start": 26.621,
+   "end": 26.731
+  },
+  {
+   "text": "les",
+   "start": 26.731,
+   "end": 26.816
+  },
+  {
+   "text": "reins",
+   "start": 26.816,
+   "end": 26.998
+  },
+  {
+   "text": "filtrent",
+   "start": 26.998,
+   "end": 27.337
+  },
+  {
+   "text": "mal.",
+   "start": 27.337,
+   "end": 27.726
+  },
+  {
+   "text": "Trois :",
+   "start": 28.723,
+   "end": 29.026
+  },
+  {
+   "text": "le",
+   "start": 29.476,
+   "end": 29.536
+  },
+  {
+   "text": "magnésium,",
+   "start": 29.536,
+   "end": 30.216
+  },
+  {
+   "text": "pour",
+   "start": 30.459,
+   "end": 30.568
+  },
+  {
+   "text": "les",
+   "start": 30.568,
+   "end": 30.653
+  },
+  {
+   "text": "nerfs,",
+   "start": 30.653,
+   "end": 30.98
+  },
+  {
+   "text": "les",
+   "start": 31.247,
+   "end": 31.308
+  },
+  {
+   "text": "muscles",
+   "start": 31.308,
+   "end": 31.624
+  },
+  {
+   "text": "et",
+   "start": 31.624,
+   "end": 31.648
+  },
+  {
+   "text": "le",
+   "start": 31.648,
+   "end": 31.757
+  },
+  {
+   "text": "cœur.",
+   "start": 31.757,
+   "end": 32.194
+  },
+  {
+   "text": "La",
+   "start": 32.558,
+   "end": 32.692
+  },
+  {
+   "text": "norme :",
+   "start": 32.692,
+   "end": 33.128
+  },
+  {
+   "text": "de",
+   "start": 33.541,
+   "end": 33.626
+  },
+  {
+   "text": "zéro",
+   "start": 33.626,
+   "end": 33.893
+  },
+  {
+   "text": "virgule",
+   "start": 33.893,
+   "end": 34.196
+  },
+  {
+   "text": "soixante-quinze",
+   "start": 34.196,
+   "end": 34.779
+  },
+  {
+   "text": "à",
+   "start": 34.779,
+   "end": 34.888
+  },
+  {
+   "text": "un.",
+   "start": 34.888,
+   "end": 35.119
+  },
+  {
+   "text": "Trop",
+   "start": 35.471,
+   "end": 35.653
+  },
+  {
+   "text": "bas,",
+   "start": 35.653,
+   "end": 35.895
+  },
+  {
+   "text": "il",
+   "start": 36.247,
+   "end": 36.344
+  },
+  {
+   "text": "donne",
+   "start": 36.344,
+   "end": 36.502
+  },
+  {
+   "text": "des",
+   "start": 36.502,
+   "end": 36.575
+  },
+  {
+   "text": "crampes…",
+   "start": 36.575,
+   "end": 36.988
+  },
+  {
+   "text": "et",
+   "start": 37.279,
+   "end": 37.327
+  },
+  {
+   "text": "empêche",
+   "start": 37.327,
+   "end": 37.643
+  },
+  {
+   "text": "le",
+   "start": 37.643,
+   "end": 37.716
+  },
+  {
+   "text": "potassium",
+   "start": 37.716,
+   "end": 38.25
+  },
+  {
+   "text": "de",
+   "start": 38.25,
+   "end": 38.335
+  },
+  {
+   "text": "remonter.",
+   "start": 38.335,
+   "end": 38.905
+  },
+  {
+   "text": "Quatre :",
+   "start": 39.833,
+   "end": 40.27
+  },
+  {
+   "text": "les",
+   "start": 40.634,
+   "end": 40.695
+  },
+  {
+   "text": "bicarbonates,",
+   "start": 40.695,
+   "end": 41.484
+  },
+  {
+   "text": "le",
+   "start": 41.775,
+   "end": 41.836
+  },
+  {
+   "text": "tampon",
+   "start": 41.836,
+   "end": 42.188
+  },
+  {
+   "text": "contre",
+   "start": 42.188,
+   "end": 42.455
+  },
+  {
+   "text": "l'acidité.",
+   "start": 42.455,
+   "end": 43.146
+  },
+  {
+   "text": "La",
+   "start": 43.498,
+   "end": 43.643
+  },
+  {
+   "text": "norme :",
+   "start": 43.643,
+   "end": 44.068
+  },
+  {
+   "text": "de",
+   "start": 44.468,
+   "end": 44.566
+  },
+  {
+   "text": "vingt-deux",
+   "start": 44.566,
+   "end": 44.857
+  },
+  {
+   "text": "à",
+   "start": 44.857,
+   "end": 44.93
+  },
+  {
+   "text": "trente.",
+   "start": 44.93,
+   "end": 45.464
+  },
+  {
+   "text": "Trop",
+   "start": 45.803,
+   "end": 45.998
+  },
+  {
+   "text": "bas,",
+   "start": 45.998,
+   "end": 46.228
+  },
+  {
+   "text": "le",
+   "start": 46.507,
+   "end": 46.604
+  },
+  {
+   "text": "sang",
+   "start": 46.604,
+   "end": 46.75
+  },
+  {
+   "text": "devient",
+   "start": 46.75,
+   "end": 46.981
+  },
+  {
+   "text": "trop",
+   "start": 46.981,
+   "end": 47.163
+  },
+  {
+   "text": "acide,",
+   "start": 47.163,
+   "end": 47.684
+  },
+  {
+   "text": "comme",
+   "start": 47.939,
+   "end": 48.085
+  },
+  {
+   "text": "dans",
+   "start": 48.085,
+   "end": 48.17
+  },
+  {
+   "text": "l'acidocétose",
+   "start": 48.17,
+   "end": 48.91
+  },
+  {
+   "text": "du",
+   "start": 48.91,
+   "end": 49.007
+  },
+  {
+   "text": "diabétique.",
+   "start": 49.007,
+   "end": 49.796
+  },
+  {
+   "text": "Calcium,",
+   "start": 50.728,
+   "end": 51.39
+  },
+  {
+   "text": "phosphore,",
+   "start": 51.61,
+   "end": 52.174
+  },
+  {
+   "text": "magnésium,",
+   "start": 52.603,
+   "end": 53.252
+  },
+  {
+   "text": "bicarbonates :",
+   "start": 53.596,
+   "end": 54.343
+  },
+  {
+   "text": "l'ionogramme",
+   "start": 54.65,
+   "end": 55.152
+  },
+  {
+   "text": "est",
+   "start": 55.152,
+   "end": 55.189
+  },
+  {
+   "text": "complet.",
+   "start": 55.189,
+   "end": 55.679
+  },
+  {
+   "text": "Prochaine",
+   "start": 56.009,
+   "end": 56.389
+  },
+  {
+   "text": "vidéo :",
+   "start": 56.389,
+   "end": 56.867
+  },
+  {
+   "text": "la",
+   "start": 57.21,
+   "end": 57.308
+  },
+  {
+   "text": "CRP",
+   "start": 57.308,
+   "end": 57.847
+  },
+  {
+   "text": "et",
+   "start": 57.847,
+   "end": 57.945
+  },
+  {
+   "text": "la",
+   "start": 57.945,
+   "end": 58.031
+  },
+  {
+   "text": "procalcitonine.",
+   "start": 58.031,
+   "end": 58.999
+  }
+ ]
+}

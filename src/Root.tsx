@@ -158,6 +158,24 @@ import {TubeBleuFacteurs, TubeBleuFacteursProps} from './videos/tube-bleu-facteu
 import {TL as TUBE_BLEU_FACTEURS_TL} from './videos/tube-bleu-facteurs/timeline';
 import {TubeJauneReins, TubeJauneReinsProps} from './videos/tube-jaune-reins/TubeJauneReins';
 import {TL as TUBE_JAUNE_REINS_TL} from './videos/tube-jaune-reins/timeline';
+import {TubeJauneFer, TubeJauneFerProps} from './videos/tube-jaune-fer/TubeJauneFer';
+import {TL as TUBE_JAUNE_FER_TL} from './videos/tube-jaune-fer/timeline';
+import {TubeJauneFoie, TubeJauneFoieProps} from './videos/tube-jaune-foie/TubeJauneFoie';
+import {TL as TUBE_JAUNE_FOIE_TL} from './videos/tube-jaune-foie/timeline';
+import {TubeJauneLipides, TubeJauneLipidesProps} from './videos/tube-jaune-lipides/TubeJauneLipides';
+import {TL as TUBE_JAUNE_LIPIDES_TL} from './videos/tube-jaune-lipides/timeline';
+import {TubeJauneEnzymes, TubeJauneEnzymesProps} from './videos/tube-jaune-enzymes/TubeJauneEnzymes';
+import {TL as TUBE_JAUNE_ENZYMES_TL} from './videos/tube-jaune-enzymes/timeline';
+import {TubeJauneIons, TubeJauneIonsProps} from './videos/tube-jaune-ions/TubeJauneIons';
+import {TL as TUBE_JAUNE_IONS_TL} from './videos/tube-jaune-ions/timeline';
+import {TubeJauneIons2, TubeJauneIons2Props} from './videos/tube-jaune-ions-2/TubeJauneIons2';
+import {TL as TUBE_JAUNE_IONS_2_TL} from './videos/tube-jaune-ions-2/timeline';
+import {TubeJauneInflammation, TubeJauneInflammationProps} from './videos/tube-jaune-inflammation/TubeJauneInflammation';
+import {TL as TUBE_JAUNE_INFLAMMATION_TL} from './videos/tube-jaune-inflammation/timeline';
+import {TubeJauneProteines, TubeJauneProteinesProps} from './videos/tube-jaune-proteines/TubeJauneProteines';
+import {TL as TUBE_JAUNE_PROTEINES_TL} from './videos/tube-jaune-proteines/timeline';
+import {TubeJauneElectrophorese, TubeJauneElectrophoreseProps} from './videos/tube-jaune-electrophorese/TubeJauneElectrophorese';
+import {TL as TUBE_JAUNE_ELECTROPHORESE_TL} from './videos/tube-jaune-electrophorese/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -934,6 +952,96 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies TubeJauneReinsProps}
+		/>
+		{/* 79 · Tube-Jaune-Fer */}
+		<Composition
+			id="Tube-Jaune-Fer"
+			component={TubeJauneFer}
+			durationInFrames={TUBE_JAUNE_FER_TL.total}
+			fps={TUBE_JAUNE_FER_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies TubeJauneFerProps}
+		/>
+		{/* 80 · Tube-Jaune-Foie */}
+		<Composition
+			id="Tube-Jaune-Foie"
+			component={TubeJauneFoie}
+			durationInFrames={TUBE_JAUNE_FOIE_TL.total}
+			fps={TUBE_JAUNE_FOIE_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies TubeJauneFoieProps}
+		/>
+		{/* 81 · Tube-Jaune-Lipides */}
+		<Composition
+			id="Tube-Jaune-Lipides"
+			component={TubeJauneLipides}
+			durationInFrames={TUBE_JAUNE_LIPIDES_TL.total}
+			fps={TUBE_JAUNE_LIPIDES_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies TubeJauneLipidesProps}
+		/>
+		{/* 82 · Tube-Jaune-Enzymes */}
+		<Composition
+			id="Tube-Jaune-Enzymes"
+			component={TubeJauneEnzymes}
+			durationInFrames={TUBE_JAUNE_ENZYMES_TL.total}
+			fps={TUBE_JAUNE_ENZYMES_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies TubeJauneEnzymesProps}
+		/>
+		{/* 83 · Tube-Jaune-Ions */}
+		<Composition
+			id="Tube-Jaune-Ions"
+			component={TubeJauneIons}
+			durationInFrames={TUBE_JAUNE_IONS_TL.total}
+			fps={TUBE_JAUNE_IONS_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies TubeJauneIonsProps}
+		/>
+		{/* 84 · Tube-Jaune-Ions-2 */}
+		<Composition
+			id="Tube-Jaune-Ions-2"
+			component={TubeJauneIons2}
+			durationInFrames={TUBE_JAUNE_IONS_2_TL.total}
+			fps={TUBE_JAUNE_IONS_2_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies TubeJauneIons2Props}
+		/>
+		{/* 85 · Tube-Jaune-Inflammation */}
+		<Composition
+			id="Tube-Jaune-Inflammation"
+			component={TubeJauneInflammation}
+			durationInFrames={TUBE_JAUNE_INFLAMMATION_TL.total}
+			fps={TUBE_JAUNE_INFLAMMATION_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies TubeJauneInflammationProps}
+		/>
+		{/* 86 · Tube-Jaune-Proteines */}
+		<Composition
+			id="Tube-Jaune-Proteines"
+			component={TubeJauneProteines}
+			durationInFrames={TUBE_JAUNE_PROTEINES_TL.total}
+			fps={TUBE_JAUNE_PROTEINES_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies TubeJauneProteinesProps}
+		/>
+		{/* 87 · Tube-Jaune-Electrophorese */}
+		<Composition
+			id="Tube-Jaune-Electrophorese"
+			component={TubeJauneElectrophorese}
+			durationInFrames={TUBE_JAUNE_ELECTROPHORESE_TL.total}
+			fps={TUBE_JAUNE_ELECTROPHORESE_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies TubeJauneElectrophoreseProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition

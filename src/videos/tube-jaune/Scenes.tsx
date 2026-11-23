@@ -64,7 +64,7 @@ const BigIon: React.FC<{at?: number; label: string; tone: string; size?: number}
  * Une cellule dans le sang : dehors = milieu extracellulaire, dedans = milieu intracellulaire. `out` / `inn` : étiquettes
  * des ions qui flottent dehors / dedans ; `swell` : taille de la cellule (déshydratée < 1 < gorgée d'eau) ; `labels`.
  */
-const CellMap: React.FC<{out?: string[]; inn?: string[]; swell?: number; labels?: number; flow?: number; w?: number}> = ({out = [], inn = [], swell = 1, labels = 1, flow = 0, w = 900}) => {
+export const CellMap: React.FC<{out?: string[]; inn?: string[]; swell?: number; labels?: number; flow?: number; w?: number}> = ({out = [], inn = [], swell = 1, labels = 1, flow = 0, w = 900}) => {
 	const frame = useCurrentFrame();
 	const H = 440;
 	const rx = 190 * swell;
@@ -116,7 +116,7 @@ const CellMap: React.FC<{out?: string[]; inn?: string[]; swell?: number; labels?
 };
 
 /** Bascule acide ↔ base : `tilt` −1 (côté acide en bas) → +1 (côté base en bas). */
-const Seesaw: React.FC<{tilt: number; width?: number}> = ({tilt, width = 760}) => (
+export const Seesaw: React.FC<{tilt: number; width?: number}> = ({tilt, width = 760}) => (
 	<svg width={width} height={360} viewBox="0 0 760 360" style={{overflow: 'visible'}}>
 		<path d="M380 220 L330 330 H430 Z" fill={LPI.blue} stroke={N} strokeWidth={6} strokeLinejoin="round" />
 		<g transform={`rotate(${tilt * 12} 380 220)`}>

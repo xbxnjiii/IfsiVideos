@@ -1,0 +1,828 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 55.72,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.05,
+   "end": 6.07
+  },
+  {
+   "id": "sodium",
+   "start": 7.019,
+   "end": 19.179
+  },
+  {
+   "id": "potassium",
+   "start": 20.11,
+   "end": 34.672
+  },
+  {
+   "id": "chlore",
+   "start": 35.635,
+   "end": 45.538
+  },
+  {
+   "id": "fin",
+   "start": 46.458,
+   "end": 55.379
+  }
+ ],
+ "words": [
+  {
+   "text": "Un",
+   "start": 0.05,
+   "end": 0.206
+  },
+  {
+   "text": "potassium",
+   "start": 0.206,
+   "end": 0.699
+  },
+  {
+   "text": "de",
+   "start": 0.699,
+   "end": 0.771
+  },
+  {
+   "text": "travers",
+   "start": 0.771,
+   "end": 1.144
+  },
+  {
+   "text": "peut",
+   "start": 1.144,
+   "end": 1.24
+  },
+  {
+   "text": "arrêter",
+   "start": 1.24,
+   "end": 1.564
+  },
+  {
+   "text": "un",
+   "start": 1.564,
+   "end": 1.649
+  },
+  {
+   "text": "cœur.",
+   "start": 1.649,
+   "end": 2.081
+  },
+  {
+   "text": "Dans",
+   "start": 2.416,
+   "end": 2.56
+  },
+  {
+   "text": "le",
+   "start": 2.56,
+   "end": 2.644
+  },
+  {
+   "text": "tube",
+   "start": 2.644,
+   "end": 2.825
+  },
+  {
+   "text": "jaune,",
+   "start": 2.825,
+   "end": 3.209
+  },
+  {
+   "text": "l'ionogramme",
+   "start": 3.51,
+   "end": 4.062
+  },
+  {
+   "text": "commence",
+   "start": 4.062,
+   "end": 4.459
+  },
+  {
+   "text": "par",
+   "start": 4.459,
+   "end": 4.603
+  },
+  {
+   "text": "trois",
+   "start": 4.603,
+   "end": 4.82
+  },
+  {
+   "text": "ions.",
+   "start": 4.82,
+   "end": 5.096
+  },
+  {
+   "text": "Tu",
+   "start": 5.421,
+   "end": 5.541
+  },
+  {
+   "text": "les",
+   "start": 5.541,
+   "end": 5.637
+  },
+  {
+   "text": "connais ?",
+   "start": 5.637,
+   "end": 6.07
+  },
+  {
+   "text": "Un :",
+   "start": 7.019,
+   "end": 7.262
+  },
+  {
+   "text": "le",
+   "start": 7.456,
+   "end": 7.541
+  },
+  {
+   "text": "sodium,",
+   "start": 7.541,
+   "end": 8.05
+  },
+  {
+   "text": "le",
+   "start": 8.354,
+   "end": 8.402
+  },
+  {
+   "text": "gardien",
+   "start": 8.402,
+   "end": 8.73
+  },
+  {
+   "text": "de",
+   "start": 8.73,
+   "end": 8.827
+  },
+  {
+   "text": "l'eau,",
+   "start": 8.827,
+   "end": 9.07
+  },
+  {
+   "text": "autour",
+   "start": 9.349,
+   "end": 9.58
+  },
+  {
+   "text": "des",
+   "start": 9.58,
+   "end": 9.677
+  },
+  {
+   "text": "cellules.",
+   "start": 9.677,
+   "end": 10.235
+  },
+  {
+   "text": "La",
+   "start": 10.611,
+   "end": 10.733
+  },
+  {
+   "text": "norme :",
+   "start": 10.733,
+   "end": 11.145
+  },
+  {
+   "text": "de",
+   "start": 11.534,
+   "end": 11.643
+  },
+  {
+   "text": "cent",
+   "start": 11.643,
+   "end": 11.788
+  },
+  {
+   "text": "trente-trois",
+   "start": 11.788,
+   "end": 12.262
+  },
+  {
+   "text": "à",
+   "start": 12.262,
+   "end": 12.322
+  },
+  {
+   "text": "cent",
+   "start": 12.322,
+   "end": 12.468
+  },
+  {
+   "text": "cinquante",
+   "start": 12.468,
+   "end": 12.832
+  },
+  {
+   "text": "millimoles",
+   "start": 12.832,
+   "end": 13.233
+  },
+  {
+   "text": "par",
+   "start": 13.233,
+   "end": 13.402
+  },
+  {
+   "text": "litre.",
+   "start": 13.402,
+   "end": 13.839
+  },
+  {
+   "text": "Trop",
+   "start": 14.179,
+   "end": 14.47
+  },
+  {
+   "text": "haut,",
+   "start": 14.47,
+   "end": 14.665
+  },
+  {
+   "text": "les",
+   "start": 14.944,
+   "end": 15.017
+  },
+  {
+   "text": "cellules",
+   "start": 15.017,
+   "end": 15.381
+  },
+  {
+   "text": "se",
+   "start": 15.381,
+   "end": 15.49
+  },
+  {
+   "text": "déshydratent.",
+   "start": 15.49,
+   "end": 16.218
+  },
+  {
+   "text": "Trop",
+   "start": 16.582,
+   "end": 16.764
+  },
+  {
+   "text": "bas,",
+   "start": 16.764,
+   "end": 17.007
+  },
+  {
+   "text": "elles",
+   "start": 17.322,
+   "end": 17.432
+  },
+  {
+   "text": "gonflent",
+   "start": 17.432,
+   "end": 17.796
+  },
+  {
+   "text": "d'eau,",
+   "start": 17.796,
+   "end": 18.038
+  },
+  {
+   "text": "même",
+   "start": 18.354,
+   "end": 18.536
+  },
+  {
+   "text": "dans",
+   "start": 18.536,
+   "end": 18.633
+  },
+  {
+   "text": "le",
+   "start": 18.633,
+   "end": 18.718
+  },
+  {
+   "text": "cerveau.",
+   "start": 18.718,
+   "end": 19.179
+  },
+  {
+   "text": "Deux :",
+   "start": 20.11,
+   "end": 20.522
+  },
+  {
+   "text": "le",
+   "start": 20.898,
+   "end": 20.959
+  },
+  {
+   "text": "potassium,",
+   "start": 20.959,
+   "end": 21.614
+  },
+  {
+   "text": "surtout",
+   "start": 21.894,
+   "end": 22.221
+  },
+  {
+   "text": "à",
+   "start": 22.221,
+   "end": 22.27
+  },
+  {
+   "text": "l'intérieur",
+   "start": 22.27,
+   "end": 22.707
+  },
+  {
+   "text": "des",
+   "start": 22.707,
+   "end": 22.804
+  },
+  {
+   "text": "cellules.",
+   "start": 22.804,
+   "end": 23.338
+  },
+  {
+   "text": "Il",
+   "start": 23.665,
+   "end": 23.86
+  },
+  {
+   "text": "fait",
+   "start": 23.86,
+   "end": 23.969
+  },
+  {
+   "text": "battre",
+   "start": 23.969,
+   "end": 24.236
+  },
+  {
+   "text": "le",
+   "start": 24.236,
+   "end": 24.345
+  },
+  {
+   "text": "cœur,",
+   "start": 24.345,
+   "end": 24.721
+  },
+  {
+   "text": "et",
+   "start": 25.0,
+   "end": 25.025
+  },
+  {
+   "text": "sa",
+   "start": 25.025,
+   "end": 25.146
+  },
+  {
+   "text": "norme",
+   "start": 25.146,
+   "end": 25.364
+  },
+  {
+   "text": "est",
+   "start": 25.364,
+   "end": 25.401
+  },
+  {
+   "text": "étroite :",
+   "start": 25.401,
+   "end": 25.971
+  },
+  {
+   "text": "de",
+   "start": 26.36,
+   "end": 26.42
+  },
+  {
+   "text": "trois",
+   "start": 26.42,
+   "end": 26.59
+  },
+  {
+   "text": "virgule",
+   "start": 26.59,
+   "end": 26.881
+  },
+  {
+   "text": "cinq",
+   "start": 26.881,
+   "end": 27.124
+  },
+  {
+   "text": "à",
+   "start": 27.124,
+   "end": 27.185
+  },
+  {
+   "text": "cinq",
+   "start": 27.185,
+   "end": 27.44
+  },
+  {
+   "text": "millimoles",
+   "start": 27.44,
+   "end": 27.864
+  },
+  {
+   "text": "par",
+   "start": 27.864,
+   "end": 28.034
+  },
+  {
+   "text": "litre.",
+   "start": 28.034,
+   "end": 28.471
+  },
+  {
+   "text": "Trop",
+   "start": 28.846,
+   "end": 29.089
+  },
+  {
+   "text": "haut",
+   "start": 29.089,
+   "end": 29.186
+  },
+  {
+   "text": "ou",
+   "start": 29.186,
+   "end": 29.247
+  },
+  {
+   "text": "trop",
+   "start": 29.247,
+   "end": 29.453
+  },
+  {
+   "text": "bas,",
+   "start": 29.453,
+   "end": 29.672
+  },
+  {
+   "text": "le",
+   "start": 30.024,
+   "end": 30.096
+  },
+  {
+   "text": "cœur",
+   "start": 30.096,
+   "end": 30.303
+  },
+  {
+   "text": "peut",
+   "start": 30.303,
+   "end": 30.412
+  },
+  {
+   "text": "se",
+   "start": 30.412,
+   "end": 30.521
+  },
+  {
+   "text": "dérégler.",
+   "start": 30.521,
+   "end": 31.079
+  },
+  {
+   "text": "Et",
+   "start": 31.408,
+   "end": 31.553
+  },
+  {
+   "text": "un",
+   "start": 31.553,
+   "end": 31.614
+  },
+  {
+   "text": "garrot",
+   "start": 31.614,
+   "end": 31.845
+  },
+  {
+   "text": "trop",
+   "start": 31.845,
+   "end": 32.039
+  },
+  {
+   "text": "long,",
+   "start": 32.039,
+   "end": 32.294
+  },
+  {
+   "text": "ou",
+   "start": 32.621,
+   "end": 32.694
+  },
+  {
+   "text": "un",
+   "start": 32.694,
+   "end": 32.743
+  },
+  {
+   "text": "tube",
+   "start": 32.743,
+   "end": 32.949
+  },
+  {
+   "text": "abîmé,",
+   "start": 32.949,
+   "end": 33.386
+  },
+  {
+   "text": "le",
+   "start": 33.701,
+   "end": 33.774
+  },
+  {
+   "text": "fait",
+   "start": 33.774,
+   "end": 33.884
+  },
+  {
+   "text": "monter",
+   "start": 33.884,
+   "end": 34.151
+  },
+  {
+   "text": "à",
+   "start": 34.151,
+   "end": 34.211
+  },
+  {
+   "text": "tort.",
+   "start": 34.211,
+   "end": 34.672
+  },
+  {
+   "text": "Trois :",
+   "start": 35.635,
+   "end": 35.938
+  },
+  {
+   "text": "le",
+   "start": 36.375,
+   "end": 36.46
+  },
+  {
+   "text": "chlore,",
+   "start": 36.46,
+   "end": 36.909
+  },
+  {
+   "text": "qu'on",
+   "start": 37.115,
+   "end": 37.212
+  },
+  {
+   "text": "appelle",
+   "start": 37.212,
+   "end": 37.492
+  },
+  {
+   "text": "aussi",
+   "start": 37.492,
+   "end": 37.698
+  },
+  {
+   "text": "chlorure.",
+   "start": 37.698,
+   "end": 38.244
+  },
+  {
+   "text": "Il",
+   "start": 38.585,
+   "end": 38.779
+  },
+  {
+   "text": "suit",
+   "start": 38.779,
+   "end": 38.937
+  },
+  {
+   "text": "le",
+   "start": 38.937,
+   "end": 39.046
+  },
+  {
+   "text": "sodium,",
+   "start": 39.046,
+   "end": 39.531
+  },
+  {
+   "text": "et",
+   "start": 39.871,
+   "end": 39.908
+  },
+  {
+   "text": "il",
+   "start": 39.908,
+   "end": 40.017
+  },
+  {
+   "text": "aide",
+   "start": 40.017,
+   "end": 40.126
+  },
+  {
+   "text": "à",
+   "start": 40.126,
+   "end": 40.163
+  },
+  {
+   "text": "garder",
+   "start": 40.163,
+   "end": 40.43
+  },
+  {
+   "text": "l'équilibre",
+   "start": 40.43,
+   "end": 40.915
+  },
+  {
+   "text": "entre",
+   "start": 40.915,
+   "end": 41.121
+  },
+  {
+   "text": "l'acide",
+   "start": 41.121,
+   "end": 41.522
+  },
+  {
+   "text": "et",
+   "start": 41.522,
+   "end": 41.546
+  },
+  {
+   "text": "la",
+   "start": 41.546,
+   "end": 41.643
+  },
+  {
+   "text": "base.",
+   "start": 41.643,
+   "end": 42.092
+  },
+  {
+   "text": "La",
+   "start": 42.455,
+   "end": 42.577
+  },
+  {
+   "text": "norme :",
+   "start": 42.577,
+   "end": 42.989
+  },
+  {
+   "text": "de",
+   "start": 43.378,
+   "end": 43.45
+  },
+  {
+   "text": "quatre-vingt-quinze",
+   "start": 43.45,
+   "end": 44.094
+  },
+  {
+   "text": "à",
+   "start": 44.094,
+   "end": 44.142
+  },
+  {
+   "text": "cent",
+   "start": 44.142,
+   "end": 44.288
+  },
+  {
+   "text": "cinq",
+   "start": 44.288,
+   "end": 44.53
+  },
+  {
+   "text": "millimoles",
+   "start": 44.53,
+   "end": 44.943
+  },
+  {
+   "text": "par",
+   "start": 44.943,
+   "end": 45.113
+  },
+  {
+   "text": "litre.",
+   "start": 45.113,
+   "end": 45.538
+  },
+  {
+   "text": "Sodium,",
+   "start": 46.458,
+   "end": 47.132
+  },
+  {
+   "text": "potassium,",
+   "start": 47.34,
+   "end": 48.051
+  },
+  {
+   "text": "chlore :",
+   "start": 48.284,
+   "end": 48.725
+  },
+  {
+   "text": "tu",
+   "start": 49.007,
+   "end": 49.129
+  },
+  {
+   "text": "as",
+   "start": 49.129,
+   "end": 49.154
+  },
+  {
+   "text": "le",
+   "start": 49.154,
+   "end": 49.24
+  },
+  {
+   "text": "début",
+   "start": 49.24,
+   "end": 49.497
+  },
+  {
+   "text": "de",
+   "start": 49.497,
+   "end": 49.583
+  },
+  {
+   "text": "l'ionogramme.",
+   "start": 49.583,
+   "end": 50.33
+  },
+  {
+   "text": "Prochaine",
+   "start": 50.697,
+   "end": 51.065
+  },
+  {
+   "text": "vidéo :",
+   "start": 51.065,
+   "end": 51.518
+  },
+  {
+   "text": "le",
+   "start": 51.959,
+   "end": 52.008
+  },
+  {
+   "text": "calcium,",
+   "start": 52.008,
+   "end": 52.609
+  },
+  {
+   "text": "le",
+   "start": 52.891,
+   "end": 52.952
+  },
+  {
+   "text": "phosphore,",
+   "start": 52.952,
+   "end": 53.516
+  },
+  {
+   "text": "le",
+   "start": 53.834,
+   "end": 53.883
+  },
+  {
+   "text": "magnésium",
+   "start": 53.883,
+   "end": 54.447
+  },
+  {
+   "text": "et",
+   "start": 54.447,
+   "end": 54.472
+  },
+  {
+   "text": "les",
+   "start": 54.472,
+   "end": 54.557
+  },
+  {
+   "text": "bicarbonates.",
+   "start": 54.558,
+   "end": 55.379
+  }
+ ]
+}

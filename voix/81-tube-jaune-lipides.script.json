@@ -1,0 +1,27 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Le cholestérol ne fait pas mal… mais il bouche les artères en silence. Quatre chiffres le surveillent dans le tube jaune. Tu sais les lire ?"
+ },
+ {
+  "id": "ldl",
+  "rate": "+3%",
+  "text": "Un et deux : le cholestérol total, et le {LDL|L D L}, le mauvais cholestérol, qui se dépose dans les artères. Le total : moins de deux grammes par litre. Le {LDL|L D L} : moins d'un virgule six gramme par litre chez l'adulte sans risque… et la cible baisse quand le risque pour le cœur augmente."
+ },
+ {
+  "id": "hdl",
+  "rate": "+3%",
+  "text": "Trois : le {HDL|H D L}, le bon cholestérol. Il nettoie les artères et ramène le cholestérol vers le foie. Ici, plus c'est haut, mieux c'est : au moins zéro virgule quatre gramme par litre."
+ },
+ {
+  "id": "tg",
+  "rate": "+3%",
+  "text": "Quatre : les triglycérides, des graisses qui viennent du sucre, de l'alcool et du gras. Normaux sous un virgule cinq gramme par litre. Ils montent juste après un repas : on prélève à {jeun|jun}, depuis douze heures."
+ },
+ {
+  "id": "fin",
+  "rate": "+2%",
+  "text": "Total, {LDL|L D L}, {HDL|H D L}, triglycérides : tu as le bilan lipidique. Prochaine vidéo : les enzymes des muscles et du pancréas."
+ }
+]
