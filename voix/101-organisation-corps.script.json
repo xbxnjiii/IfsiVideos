@@ -1,0 +1,37 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Trente-sept mille milliards de cellules… et pourtant, ton corps est parfaitement rangé, en cinq niveaux. Tu sais lesquels ?"
+ },
+ {
+  "id": "cellule",
+  "rate": "+3%",
+  "text": "Un : la cellule, la plus petite unité vivante. Une membrane autour, du cytoplasme dedans, et un noyau qui garde l'ADN. Prenons une cellule du muscle du cœur."
+ },
+ {
+  "id": "tissu",
+  "rate": "+3%",
+  "text": "Deux : le tissu, des cellules semblables qui travaillent ensemble. Il en existe quatre : l'épithélial, qui recouvre, le conjonctif, qui soutient, le musculaire, qui se contracte, et le nerveux, qui transmet les messages."
+ },
+ {
+  "id": "organe",
+  "rate": "+3%",
+  "text": "Trois : l'organe, plusieurs tissus réunis pour une même mission. Le cœur est surtout fait de muscle, mais aussi de tissu conjonctif et nerveux."
+ },
+ {
+  "id": "appareil",
+  "rate": "+3%",
+  "text": "Quatre : l'appareil, qu'on appelle aussi système : des organes qui coopèrent. Le cœur et les vaisseaux forment l'appareil cardiovasculaire."
+ },
+ {
+  "id": "organisme",
+  "rate": "+3%",
+  "text": "Cinq : l'organisme, tous les appareils réunis. Et l'organisme, c'est toi !"
+ },
+ {
+  "id": "fin",
+  "rate": "+2%",
+  "text": "Cellule, tissu, organe, appareil, organisme. Prochaine vidéo : la cellule, vue de près."
+ }
+]

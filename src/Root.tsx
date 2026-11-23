@@ -202,6 +202,8 @@ import {TubeJauneVitamines, TubeJauneVitaminesProps} from './videos/tube-jaune-v
 import {TL as TUBE_JAUNE_VITAMINES_TL} from './videos/tube-jaune-vitamines/timeline';
 import {Hemocultures, HemoculturesProps} from './videos/hemocultures/Hemocultures';
 import {TL as HEMOCULTURES_TL} from './videos/hemocultures/timeline';
+import {OrganisationCorps, OrganisationCorpsProps} from './videos/organisation-corps/OrganisationCorps';
+import {TL as ORGANISATION_CORPS_TL} from './videos/organisation-corps/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -1198,6 +1200,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies HemoculturesProps}
+		/>
+		{/* 101 · Organisation-Corps */}
+		<Composition
+			id="Organisation-Corps"
+			component={OrganisationCorps}
+			durationInFrames={ORGANISATION_CORPS_TL.total}
+			fps={ORGANISATION_CORPS_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies OrganisationCorpsProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition

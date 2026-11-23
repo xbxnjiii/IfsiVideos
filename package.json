@@ -114,7 +114,8 @@
     "render:tube-jaune-auto-immunite": "remotion render Tube-Jaune-Auto-Immunite out/97-tube-jaune-auto-immunite.mp4",
     "render:tube-jaune-auto-immunite-2": "remotion render Tube-Jaune-Auto-Immunite-2 out/98-tube-jaune-auto-immunite-2.mp4",
     "render:tube-jaune-vitamines": "remotion render Tube-Jaune-Vitamines out/99-tube-jaune-vitamines.mp4",
-    "render:hemocultures": "remotion render Hemocultures out/100-hemocultures.mp4"
+    "render:hemocultures": "remotion render Hemocultures out/100-hemocultures.mp4",
+    "render:organisation-corps": "remotion render Organisation-Corps out/101-organisation-corps.mp4"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.532",

@@ -796,6 +796,15 @@ script), « en France » / « le 15 (ou le numéro d'urgence de ton pays) ». Ca
   `AlcoholBottle`, `TapeRoll`, `Tray` ; `LabHook` a une prop `lead` (un flacon `HemoFlask` à la place du tube). Grille
   CSS à 4 colonnes : `minmax(0, 1fr)`, sinon les longues étiquettes font déborder les cases. Voix : « Un : quand ? »
   entendu « Un camp » (v1).
+- **Thème « l'anatomie »** (demandé : « le thème va être l'anatomie en général ») : `Organisation-Corps` (n° 101, ≈ 63 s,
+  voix gratuite d'abord, gabarit `labshort`, pastille « L'ANATOMIE · L'ORGANISATION », compteur 0/5) : accroche
+  chiffre-choc « Trente-sept mille milliards de cellules… et pourtant, ton corps est parfaitement rangé, en cinq niveaux »
+  (compteur qui roule jusqu'à 37 000, Bianconi 2013), puis les 5 niveaux sur **un même fil rouge, le cœur** : cellule
+  (membrane, cytoplasme, noyau + ADN ; cellule du muscle cardiaque striée), tissu (4 types : épithélial recouvre,
+  conjonctif soutient, musculaire se contracte, nerveux transmet), organe (le cœur : muscle + conjonctif + nerveux),
+  appareil ou système (cœur + vaisseaux = cardiovasculaire, `Patient` `flow`), organisme (`Patient` avec poumons et
+  cerveau : « c'est toi ! »), fin = fiche des 5 niveaux + « prochaine vidéo : la cellule ». Briques locales `Cell`,
+  `HeartCell`, `Tissues`, `Ladder` (escalier des 5 niveaux).
 - **Le tube bleu (citrate)** (demandé : « la vidéo pour le tube bleu comme les précédentes », contenu complété par l'agent ;
   une seule vidéo dépassait 60 s → 3 vidéos ; storyboard `docs/lpi/storyboard-tube-bleu.md`). `Tube-Bleu-TP-INR` (n° 75,
   ≈ 63 s, voix Laura après validation (1 009 crédits)) : « Le tube bleu, c'est la coagulation. S'il est mal rempli, le résultat est faux… et ton

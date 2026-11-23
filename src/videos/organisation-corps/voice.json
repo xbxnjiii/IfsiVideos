@@ -1,0 +1,743 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 59.58,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.05,
+   "end": 5.757
+  },
+  {
+   "id": "cellule",
+   "start": 6.743,
+   "end": 16.125
+  },
+  {
+   "id": "tissu",
+   "start": 17.061,
+   "end": 29.525
+  },
+  {
+   "id": "organe",
+   "start": 30.487,
+   "end": 37.768
+  },
+  {
+   "id": "appareil",
+   "start": 38.706,
+   "end": 45.683
+  },
+  {
+   "id": "organisme",
+   "start": 46.623,
+   "end": 51.357
+  },
+  {
+   "id": "fin",
+   "start": 52.285,
+   "end": 59.234
+  }
+ ],
+ "words": [
+  {
+   "text": "Trente-sept",
+   "start": 0.05,
+   "end": 0.494
+  },
+  {
+   "text": "mille",
+   "start": 0.494,
+   "end": 0.65
+  },
+  {
+   "text": "milliards",
+   "start": 0.65,
+   "end": 0.939
+  },
+  {
+   "text": "de",
+   "start": 0.939,
+   "end": 1.035
+  },
+  {
+   "text": "cellules…",
+   "start": 1.035,
+   "end": 1.468
+  },
+  {
+   "text": "et",
+   "start": 1.66,
+   "end": 1.696
+  },
+  {
+   "text": "pourtant,",
+   "start": 1.696,
+   "end": 2.165
+  },
+  {
+   "text": "ton",
+   "start": 2.441,
+   "end": 2.549
+  },
+  {
+   "text": "corps",
+   "start": 2.55,
+   "end": 2.742
+  },
+  {
+   "text": "est",
+   "start": 2.742,
+   "end": 2.778
+  },
+  {
+   "text": "parfaitement",
+   "start": 2.778,
+   "end": 3.271
+  },
+  {
+   "text": "rangé,",
+   "start": 3.271,
+   "end": 3.691
+  },
+  {
+   "text": "en",
+   "start": 3.908,
+   "end": 3.968
+  },
+  {
+   "text": "cinq",
+   "start": 3.968,
+   "end": 4.232
+  },
+  {
+   "text": "niveaux.",
+   "start": 4.232,
+   "end": 4.653
+  },
+  {
+   "text": "Tu",
+   "start": 4.976,
+   "end": 5.108
+  },
+  {
+   "text": "sais",
+   "start": 5.108,
+   "end": 5.24
+  },
+  {
+   "text": "lesquels ?",
+   "start": 5.24,
+   "end": 5.757
+  },
+  {
+   "text": "Un :",
+   "start": 6.743,
+   "end": 6.962
+  },
+  {
+   "text": "la",
+   "start": 7.229,
+   "end": 7.326
+  },
+  {
+   "text": "cellule,",
+   "start": 7.326,
+   "end": 7.811
+  },
+  {
+   "text": "la",
+   "start": 8.102,
+   "end": 8.163
+  },
+  {
+   "text": "plus",
+   "start": 8.163,
+   "end": 8.296
+  },
+  {
+   "text": "petite",
+   "start": 8.296,
+   "end": 8.636
+  },
+  {
+   "text": "unité",
+   "start": 8.636,
+   "end": 8.915
+  },
+  {
+   "text": "vivante.",
+   "start": 8.915,
+   "end": 9.51
+  },
+  {
+   "text": "Une",
+   "start": 9.838,
+   "end": 9.995
+  },
+  {
+   "text": "membrane",
+   "start": 9.995,
+   "end": 10.323
+  },
+  {
+   "text": "autour,",
+   "start": 10.323,
+   "end": 10.772
+  },
+  {
+   "text": "du",
+   "start": 11.051,
+   "end": 11.136
+  },
+  {
+   "text": "cytoplasme",
+   "start": 11.136,
+   "end": 11.779
+  },
+  {
+   "text": "dedans,",
+   "start": 11.779,
+   "end": 12.168
+  },
+  {
+   "text": "et",
+   "start": 12.508,
+   "end": 12.556
+  },
+  {
+   "text": "un",
+   "start": 12.556,
+   "end": 12.605
+  },
+  {
+   "text": "noyau",
+   "start": 12.605,
+   "end": 12.969
+  },
+  {
+   "text": "qui",
+   "start": 12.969,
+   "end": 13.114
+  },
+  {
+   "text": "garde",
+   "start": 13.114,
+   "end": 13.381
+  },
+  {
+   "text": "l'ADN.",
+   "start": 13.381,
+   "end": 13.988
+  },
+  {
+   "text": "Prenons",
+   "start": 14.317,
+   "end": 14.669
+  },
+  {
+   "text": "une",
+   "start": 14.669,
+   "end": 14.766
+  },
+  {
+   "text": "cellule",
+   "start": 14.766,
+   "end": 15.105
+  },
+  {
+   "text": "du",
+   "start": 15.105,
+   "end": 15.203
+  },
+  {
+   "text": "muscle",
+   "start": 15.203,
+   "end": 15.542
+  },
+  {
+   "text": "du",
+   "start": 15.542,
+   "end": 15.664
+  },
+  {
+   "text": "cœur.",
+   "start": 15.664,
+   "end": 16.125
+  },
+  {
+   "text": "Deux :",
+   "start": 17.061,
+   "end": 17.462
+  },
+  {
+   "text": "le",
+   "start": 17.814,
+   "end": 17.886
+  },
+  {
+   "text": "tissu,",
+   "start": 17.887,
+   "end": 18.36
+  },
+  {
+   "text": "des",
+   "start": 18.663,
+   "end": 18.748
+  },
+  {
+   "text": "cellules",
+   "start": 18.748,
+   "end": 19.064
+  },
+  {
+   "text": "semblables",
+   "start": 19.064,
+   "end": 19.573
+  },
+  {
+   "text": "qui",
+   "start": 19.573,
+   "end": 19.67
+  },
+  {
+   "text": "travaillent",
+   "start": 19.671,
+   "end": 20.022
+  },
+  {
+   "text": "ensemble.",
+   "start": 20.022,
+   "end": 20.617
+  },
+  {
+   "text": "Il",
+   "start": 20.945,
+   "end": 21.139
+  },
+  {
+   "text": "en",
+   "start": 21.139,
+   "end": 21.175
+  },
+  {
+   "text": "existe",
+   "start": 21.175,
+   "end": 21.6
+  },
+  {
+   "text": "quatre :",
+   "start": 21.6,
+   "end": 21.976
+  },
+  {
+   "text": "l'épithélial,",
+   "start": 22.268,
+   "end": 22.947
+  },
+  {
+   "text": "qui",
+   "start": 23.154,
+   "end": 23.275
+  },
+  {
+   "text": "recouvre,",
+   "start": 23.275,
+   "end": 23.797
+  },
+  {
+   "text": "le",
+   "start": 24.003,
+   "end": 24.064
+  },
+  {
+   "text": "conjonctif,",
+   "start": 24.064,
+   "end": 24.828
+  },
+  {
+   "text": "qui",
+   "start": 25.022,
+   "end": 25.132
+  },
+  {
+   "text": "soutient,",
+   "start": 25.132,
+   "end": 25.605
+  },
+  {
+   "text": "le",
+   "start": 25.908,
+   "end": 25.969
+  },
+  {
+   "text": "musculaire,",
+   "start": 25.969,
+   "end": 26.576
+  },
+  {
+   "text": "qui",
+   "start": 26.806,
+   "end": 26.891
+  },
+  {
+   "text": "se",
+   "start": 26.891,
+   "end": 26.988
+  },
+  {
+   "text": "contracte,",
+   "start": 26.988,
+   "end": 27.522
+  },
+  {
+   "text": "et",
+   "start": 27.717,
+   "end": 27.741
+  },
+  {
+   "text": "le",
+   "start": 27.741,
+   "end": 27.814
+  },
+  {
+   "text": "nerveux,",
+   "start": 27.814,
+   "end": 28.226
+  },
+  {
+   "text": "qui",
+   "start": 28.433,
+   "end": 28.53
+  },
+  {
+   "text": "transmet",
+   "start": 28.53,
+   "end": 28.894
+  },
+  {
+   "text": "les",
+   "start": 28.894,
+   "end": 28.967
+  },
+  {
+   "text": "messages.",
+   "start": 28.967,
+   "end": 29.525
+  },
+  {
+   "text": "Trois :",
+   "start": 30.487,
+   "end": 30.802
+  },
+  {
+   "text": "l'organe,",
+   "start": 31.154,
+   "end": 31.725
+  },
+  {
+   "text": "plusieurs",
+   "start": 32.004,
+   "end": 32.319
+  },
+  {
+   "text": "tissus",
+   "start": 32.319,
+   "end": 32.635
+  },
+  {
+   "text": "réunis",
+   "start": 32.635,
+   "end": 33.048
+  },
+  {
+   "text": "pour",
+   "start": 33.048,
+   "end": 33.218
+  },
+  {
+   "text": "une",
+   "start": 33.218,
+   "end": 33.302
+  },
+  {
+   "text": "même",
+   "start": 33.303,
+   "end": 33.448
+  },
+  {
+   "text": "mission.",
+   "start": 33.448,
+   "end": 33.946
+  },
+  {
+   "text": "Le",
+   "start": 34.322,
+   "end": 34.455
+  },
+  {
+   "text": "cœur",
+   "start": 34.455,
+   "end": 34.686
+  },
+  {
+   "text": "est",
+   "start": 34.686,
+   "end": 34.722
+  },
+  {
+   "text": "surtout",
+   "start": 34.722,
+   "end": 35.014
+  },
+  {
+   "text": "fait",
+   "start": 35.014,
+   "end": 35.135
+  },
+  {
+   "text": "de",
+   "start": 35.135,
+   "end": 35.244
+  },
+  {
+   "text": "muscle,",
+   "start": 35.244,
+   "end": 35.62
+  },
+  {
+   "text": "mais",
+   "start": 35.948,
+   "end": 36.009
+  },
+  {
+   "text": "aussi",
+   "start": 36.009,
+   "end": 36.215
+  },
+  {
+   "text": "de",
+   "start": 36.215,
+   "end": 36.324
+  },
+  {
+   "text": "tissu",
+   "start": 36.324,
+   "end": 36.628
+  },
+  {
+   "text": "conjonctif",
+   "start": 36.628,
+   "end": 37.271
+  },
+  {
+   "text": "et",
+   "start": 37.271,
+   "end": 37.307
+  },
+  {
+   "text": "nerveux.",
+   "start": 37.307,
+   "end": 37.768
+  },
+  {
+   "text": "Quatre :",
+   "start": 38.706,
+   "end": 39.106
+  },
+  {
+   "text": "l'appareil,",
+   "start": 39.325,
+   "end": 39.871
+  },
+  {
+   "text": "qu'on",
+   "start": 40.065,
+   "end": 40.15
+  },
+  {
+   "text": "appelle",
+   "start": 40.15,
+   "end": 40.429
+  },
+  {
+   "text": "aussi",
+   "start": 40.429,
+   "end": 40.636
+  },
+  {
+   "text": "système :",
+   "start": 40.636,
+   "end": 41.206
+  },
+  {
+   "text": "des",
+   "start": 41.57,
+   "end": 41.655
+  },
+  {
+   "text": "organes",
+   "start": 41.655,
+   "end": 42.092
+  },
+  {
+   "text": "qui",
+   "start": 42.092,
+   "end": 42.213
+  },
+  {
+   "text": "coopèrent.",
+   "start": 42.213,
+   "end": 42.832
+  },
+  {
+   "text": "Le",
+   "start": 43.159,
+   "end": 43.365
+  },
+  {
+   "text": "cœur",
+   "start": 43.365,
+   "end": 43.608
+  },
+  {
+   "text": "et",
+   "start": 43.608,
+   "end": 43.632
+  },
+  {
+   "text": "les",
+   "start": 43.632,
+   "end": 43.705
+  },
+  {
+   "text": "vaisseaux",
+   "start": 43.705,
+   "end": 44.069
+  },
+  {
+   "text": "forment",
+   "start": 44.069,
+   "end": 44.336
+  },
+  {
+   "text": "l'appareil",
+   "start": 44.336,
+   "end": 44.737
+  },
+  {
+   "text": "cardiovasculaire.",
+   "start": 44.737,
+   "end": 45.683
+  },
+  {
+   "text": "Cinq :",
+   "start": 46.623,
+   "end": 47.084
+  },
+  {
+   "text": "l'organisme,",
+   "start": 47.351,
+   "end": 48.067
+  },
+  {
+   "text": "tous",
+   "start": 48.346,
+   "end": 48.443
+  },
+  {
+   "text": "les",
+   "start": 48.443,
+   "end": 48.54
+  },
+  {
+   "text": "appareils",
+   "start": 48.54,
+   "end": 48.965
+  },
+  {
+   "text": "réunis.",
+   "start": 48.965,
+   "end": 49.462
+  },
+  {
+   "text": "Et",
+   "start": 49.804,
+   "end": 49.949
+  },
+  {
+   "text": "l'organisme,",
+   "start": 49.949,
+   "end": 50.641
+  },
+  {
+   "text": "c'est",
+   "start": 50.884,
+   "end": 51.017
+  },
+  {
+   "text": "toi !",
+   "start": 51.017,
+   "end": 51.357
+  },
+  {
+   "text": "Cellule,",
+   "start": 52.285,
+   "end": 52.849
+  },
+  {
+   "text": "tissu,",
+   "start": 53.106,
+   "end": 53.559
+  },
+  {
+   "text": "organe,",
+   "start": 54.001,
+   "end": 54.442
+  },
+  {
+   "text": "appareil,",
+   "start": 54.662,
+   "end": 55.165
+  },
+  {
+   "text": "organisme.",
+   "start": 55.471,
+   "end": 56.17
+  },
+  {
+   "text": "Prochaine",
+   "start": 56.537,
+   "end": 56.917
+  },
+  {
+   "text": "vidéo :",
+   "start": 56.917,
+   "end": 57.395
+  },
+  {
+   "text": "la",
+   "start": 57.751,
+   "end": 57.836
+  },
+  {
+   "text": "cellule,",
+   "start": 57.837,
+   "end": 58.314
+  },
+  {
+   "text": "vue",
+   "start": 58.621,
+   "end": 58.743
+  },
+  {
+   "text": "de",
+   "start": 58.743,
+   "end": 58.854
+  },
+  {
+   "text": "près.",
+   "start": 58.854,
+   "end": 59.234
+  }
+ ]
+}
