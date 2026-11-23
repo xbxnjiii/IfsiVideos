@@ -188,6 +188,12 @@ import * as tubejauneserologies2 from '../../src/videos/tube-jaune-serologies-2/
 import * as tubejauneserologies2TL from '../../src/videos/tube-jaune-serologies-2/timeline';
 import * as tubejauneserologies3 from '../../src/videos/tube-jaune-serologies-3/mascot';
 import * as tubejauneserologies3TL from '../../src/videos/tube-jaune-serologies-3/timeline';
+import * as tubejauneallergologie from '../../src/videos/tube-jaune-allergologie/mascot';
+import * as tubejauneallergologieTL from '../../src/videos/tube-jaune-allergologie/timeline';
+import * as tubejaunemedicaments from '../../src/videos/tube-jaune-medicaments/mascot';
+import * as tubejaunemedicamentsTL from '../../src/videos/tube-jaune-medicaments/timeline';
+import * as tubejauneautoimmunite from '../../src/videos/tube-jaune-auto-immunite/mascot';
+import * as tubejauneautoimmuniteTL from '../../src/videos/tube-jaune-auto-immunite/timeline';
 
 const VIDEOS: Record<string, [typeof constantes.MASCOT, typeof constantesTL.TL]> = {
 	constantes: [constantes.MASCOT, constantesTL.TL],
@@ -283,6 +289,9 @@ const VIDEOS: Record<string, [typeof constantes.MASCOT, typeof constantesTL.TL]>
 	'tube-jaune-serologies': [tubejauneserologies.MASCOT, tubejauneserologiesTL.TL],
 	'tube-jaune-serologies-2': [tubejauneserologies2.MASCOT, tubejauneserologies2TL.TL],
 	'tube-jaune-serologies-3': [tubejauneserologies3.MASCOT, tubejauneserologies3TL.TL],
+	'tube-jaune-allergologie': [tubejauneallergologie.MASCOT, tubejauneallergologieTL.TL],
+	'tube-jaune-medicaments': [tubejaunemedicaments.MASCOT, tubejaunemedicamentsTL.TL],
+	'tube-jaune-auto-immunite': [tubejauneautoimmunite.MASCOT, tubejauneautoimmuniteTL.TL],
 };
 const name = process.argv[2] ?? 'constantes';
 const [MASCOT, TL] = VIDEOS[name];

@@ -1,0 +1,27 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Il éternue chaque printemps, il a les yeux qui piquent… c'est une allergie ? Le tube jaune peut le dire, en trois tests. Tu les connais ?"
+ },
+ {
+  "id": "ige",
+  "rate": "+3%",
+  "text": "Un : le principe. Une allergie fabrique des anticorps spéciaux, les I G E. Le laboratoire les cherche contre ce qui déclenche l'allergie : pollens, acariens, poils de chat, aliments."
+ },
+ {
+  "id": "phadiatop",
+  "rate": "+3%",
+  "text": "Deux : le Phadiatop, un test de dépistage qui mélange les allergènes respirés : pollens, acariens, animaux. Négatif, une allergie respiratoire est peu probable. Le Trophatop fait la même chose pour les aliments."
+ },
+ {
+  "id": "rast",
+  "rate": "+3%",
+  "text": "Trois : les I G E spécifiques, autrefois appelées RAST. Elles cherchent un seul allergène à la fois, pour savoir lequel est en cause. Mais un résultat positif ne suffit pas : il doit coller aux symptômes du patient."
+ },
+ {
+  "id": "fin",
+  "rate": "+2%",
+  "text": "Phadiatop pour dépister, I G E spécifiques pour trouver le coupable. Prochaine vidéo : les médicaments, avec la digoxine et le lithium."
+ }
+]

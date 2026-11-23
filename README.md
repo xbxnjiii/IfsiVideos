@@ -105,6 +105,9 @@ pas de logiciel de montage, pas de banque d'images.
 | 92 | Série les tubes : le tube jaune, les sérologies 1/3 (hépatites, VIH, syphilis) ; voix gratuite, directives Instagram | `Tube-Jaune-Serologies` | [voix/92-tube-jaune-serologies.script.json](voix/92-tube-jaune-serologies.script.json) | [plan](docs/lpi/plan-tube-jaune-serie.md) |
 | 93 | Série les tubes : le tube jaune, les sérologies 2/3 de la grossesse (toxoplasmose, rubéole, CMV, EBV) ; voix gratuite, directives Instagram | `Tube-Jaune-Serologies-2` | [voix/93-tube-jaune-serologies-2.script.json](voix/93-tube-jaune-serologies-2.script.json) | [plan](docs/lpi/plan-tube-jaune-serie.md) |
 | 94 | Série les tubes : le tube jaune, les sérologies 3/3 (ASLO / ASD, Lyme, Covid) ; voix gratuite, directives Instagram | `Tube-Jaune-Serologies-3` | [voix/94-tube-jaune-serologies-3.script.json](voix/94-tube-jaune-serologies-3.script.json) | [plan](docs/lpi/plan-tube-jaune-serie.md) |
+| 95 | Série les tubes : le tube jaune, l'allergologie (Phadiatop, Trophatop, IgE spécifiques) ; voix gratuite, directives Instagram | `Tube-Jaune-Allergologie` | [voix/95-tube-jaune-allergologie.script.json](voix/95-tube-jaune-allergologie.script.json) | [plan](docs/lpi/plan-tube-jaune-serie.md) |
+| 96 | Série les tubes : le tube jaune, les médicaments (digoxine, lithium) ; voix gratuite, directives Instagram | `Tube-Jaune-Medicaments` | [voix/96-tube-jaune-medicaments.script.json](voix/96-tube-jaune-medicaments.script.json) | [plan](docs/lpi/plan-tube-jaune-serie.md) |
+| 97 | Série les tubes : le tube jaune, l'auto-immunité 1/2 (AAN, anti-ADN, ENA, ANCA) ; voix gratuite, directives Instagram | `Tube-Jaune-Auto-Immunite` | [voix/97-tube-jaune-auto-immunite.script.json](voix/97-tube-jaune-auto-immunite.script.json) | [plan](docs/lpi/plan-tube-jaune-serie.md) |
 
 ## Utilisation
 

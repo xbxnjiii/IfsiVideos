@@ -1,0 +1,32 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Et si le corps s'attaquait lui-même ? C'est l'auto-immunité. Le tube jaune permet de la repérer, grâce à des anticorps tournés contre nous. Voici les quatre premiers."
+ },
+ {
+  "id": "aan",
+  "rate": "+3%",
+  "text": "Un : les anticorps antinucléaires, les A A N. Ils visent le noyau de nos propres cellules. C'est le test de départ, mais attention : à petit taux, on en trouve aussi chez des personnes en bonne santé."
+ },
+ {
+  "id": "adn",
+  "rate": "+3%",
+  "text": "Deux : les anticorps anti-A D N. S'ils sont présents, ils orientent fortement vers le lupus, une maladie qui peut toucher la peau, les articulations et les reins."
+ },
+ {
+  "id": "ena",
+  "rate": "+3%",
+  "text": "Trois : les E N A. Quand les antinucléaires sont positifs, on cherche à préciser la cible, et la maladie : par exemple le syndrome de Gougerot-Sjögren, avec des yeux et une bouche très secs."
+ },
+ {
+  "id": "anca",
+  "rate": "+3%",
+  "text": "Quatre : les ANCA. Ils visent certains globules blancs, et signalent une inflammation des petits vaisseaux, une vascularite, qui peut abîmer les reins et les poumons."
+ },
+ {
+  "id": "fin",
+  "rate": "+2%",
+  "text": "Des anticorps contre soi : ils orientent, et le médecin conclut avec les signes. Prochaine vidéo : la suite de l'auto-immunité."
+ }
+]

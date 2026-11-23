@@ -190,6 +190,12 @@ import {TubeJauneSerologies2, TubeJauneSerologies2Props} from './videos/tube-jau
 import {TL as TUBE_JAUNE_SEROLOGIES_2_TL} from './videos/tube-jaune-serologies-2/timeline';
 import {TubeJauneSerologies3, TubeJauneSerologies3Props} from './videos/tube-jaune-serologies-3/TubeJauneSerologies3';
 import {TL as TUBE_JAUNE_SEROLOGIES_3_TL} from './videos/tube-jaune-serologies-3/timeline';
+import {TubeJauneAllergologie, TubeJauneAllergologieProps} from './videos/tube-jaune-allergologie/TubeJauneAllergologie';
+import {TL as TUBE_JAUNE_ALLERGOLOGIE_TL} from './videos/tube-jaune-allergologie/timeline';
+import {TubeJauneMedicaments, TubeJauneMedicamentsProps} from './videos/tube-jaune-medicaments/TubeJauneMedicaments';
+import {TL as TUBE_JAUNE_MEDICAMENTS_TL} from './videos/tube-jaune-medicaments/timeline';
+import {TubeJauneAutoImmunite, TubeJauneAutoImmuniteProps} from './videos/tube-jaune-auto-immunite/TubeJauneAutoImmunite';
+import {TL as TUBE_JAUNE_AUTO_IMMUNITE_TL} from './videos/tube-jaune-auto-immunite/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -1126,6 +1132,36 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies TubeJauneSerologies3Props}
+		/>
+		{/* 95 · Tube-Jaune-Allergologie */}
+		<Composition
+			id="Tube-Jaune-Allergologie"
+			component={TubeJauneAllergologie}
+			durationInFrames={TUBE_JAUNE_ALLERGOLOGIE_TL.total}
+			fps={TUBE_JAUNE_ALLERGOLOGIE_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies TubeJauneAllergologieProps}
+		/>
+		{/* 96 · Tube-Jaune-Medicaments */}
+		<Composition
+			id="Tube-Jaune-Medicaments"
+			component={TubeJauneMedicaments}
+			durationInFrames={TUBE_JAUNE_MEDICAMENTS_TL.total}
+			fps={TUBE_JAUNE_MEDICAMENTS_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies TubeJauneMedicamentsProps}
+		/>
+		{/* 97 · Tube-Jaune-Auto-Immunite */}
+		<Composition
+			id="Tube-Jaune-Auto-Immunite"
+			component={TubeJauneAutoImmunite}
+			durationInFrames={TUBE_JAUNE_AUTO_IMMUNITE_TL.total}
+			fps={TUBE_JAUNE_AUTO_IMMUNITE_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies TubeJauneAutoImmuniteProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition

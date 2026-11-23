@@ -1,0 +1,27 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Nausées, vision jaune, cœur qui ralentit : c'est peut-être un surdosage en digoxine. Deux médicaments se surveillent dans le tube jaune. Tu sais quand prélever ?"
+ },
+ {
+  "id": "principe",
+  "rate": "+3%",
+  "text": "Un : la marge de sécurité est étroite. Pour ces médicaments, la bonne dose et la dose toxique sont très proches. Alors on dose leur taux dans le sang, juste avant la prise suivante, et on note l'heure de la dernière prise."
+ },
+ {
+  "id": "digoxine",
+  "rate": "+3%",
+  "text": "Deux : la digoxine, pour le cœur. Le surdosage donne des nausées, une vision jaune et un cœur qui bat trop lentement. Le risque augmente chez la personne âgée, quand les reins filtrent mal ou quand le potassium est bas."
+ },
+ {
+  "id": "lithium",
+  "rate": "+3%",
+  "text": "Trois : le lithium, pour le trouble bipolaire. On le prélève douze heures après la dernière prise. Surdosé, il donne des tremblements, une confusion, une démarche instable. La déshydratation et certains médicaments le font monter."
+ },
+ {
+  "id": "fin",
+  "rate": "+2%",
+  "text": "Marge étroite, prélèvement à la bonne heure, heure notée sur le tube. Prochaine vidéo : l'auto-immunité."
+ }
+]

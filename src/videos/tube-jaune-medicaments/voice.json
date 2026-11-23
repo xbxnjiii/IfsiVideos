@@ -1,0 +1,798 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 52.528,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.072,
+   "end": 8.245
+  },
+  {
+   "id": "principe",
+   "start": 9.167,
+   "end": 20.017
+  },
+  {
+   "id": "digoxine",
+   "start": 20.95,
+   "end": 31.434
+  },
+  {
+   "id": "lithium",
+   "start": 32.371,
+   "end": 45.113
+  },
+  {
+   "id": "fin",
+   "start": 46.085,
+   "end": 52.188
+  }
+ ],
+ "words": [
+  {
+   "text": "Nausées,",
+   "start": 0.072,
+   "end": 0.589
+  },
+  {
+   "text": "vision",
+   "start": 0.781,
+   "end": 1.034
+  },
+  {
+   "text": "jaune,",
+   "start": 1.034,
+   "end": 1.454
+  },
+  {
+   "text": "cœur",
+   "start": 1.659,
+   "end": 1.827
+  },
+  {
+   "text": "qui",
+   "start": 1.827,
+   "end": 1.971
+  },
+  {
+   "text": "ralentit :",
+   "start": 1.971,
+   "end": 2.476
+  },
+  {
+   "text": "c'est",
+   "start": 2.825,
+   "end": 2.909
+  },
+  {
+   "text": "peut-être",
+   "start": 2.909,
+   "end": 3.257
+  },
+  {
+   "text": "un",
+   "start": 3.257,
+   "end": 3.293
+  },
+  {
+   "text": "surdosage",
+   "start": 3.293,
+   "end": 3.822
+  },
+  {
+   "text": "en",
+   "start": 3.822,
+   "end": 3.858
+  },
+  {
+   "text": "digoxine.",
+   "start": 3.858,
+   "end": 4.567
+  },
+  {
+   "text": "Deux",
+   "start": 4.893,
+   "end": 5.121
+  },
+  {
+   "text": "médicaments",
+   "start": 5.121,
+   "end": 5.638
+  },
+  {
+   "text": "se",
+   "start": 5.638,
+   "end": 5.77
+  },
+  {
+   "text": "surveillent",
+   "start": 5.77,
+   "end": 6.179
+  },
+  {
+   "text": "dans",
+   "start": 6.179,
+   "end": 6.275
+  },
+  {
+   "text": "le",
+   "start": 6.275,
+   "end": 6.359
+  },
+  {
+   "text": "tube",
+   "start": 6.359,
+   "end": 6.551
+  },
+  {
+   "text": "jaune.",
+   "start": 6.551,
+   "end": 7.008
+  },
+  {
+   "text": "Tu",
+   "start": 7.368,
+   "end": 7.464
+  },
+  {
+   "text": "sais",
+   "start": 7.464,
+   "end": 7.608
+  },
+  {
+   "text": "quand",
+   "start": 7.608,
+   "end": 7.728
+  },
+  {
+   "text": "prélever ?",
+   "start": 7.728,
+   "end": 8.245
+  },
+  {
+   "text": "Un :",
+   "start": 9.167,
+   "end": 9.446
+  },
+  {
+   "text": "la",
+   "start": 9.87,
+   "end": 9.943
+  },
+  {
+   "text": "marge",
+   "start": 9.943,
+   "end": 10.186
+  },
+  {
+   "text": "de",
+   "start": 10.186,
+   "end": 10.295
+  },
+  {
+   "text": "sécurité",
+   "start": 10.295,
+   "end": 10.878
+  },
+  {
+   "text": "est",
+   "start": 10.878,
+   "end": 10.963
+  },
+  {
+   "text": "étroite.",
+   "start": 10.963,
+   "end": 11.63
+  },
+  {
+   "text": "Pour",
+   "start": 11.994,
+   "end": 12.116
+  },
+  {
+   "text": "ces",
+   "start": 12.116,
+   "end": 12.213
+  },
+  {
+   "text": "médicaments,",
+   "start": 12.213,
+   "end": 12.819
+  },
+  {
+   "text": "la",
+   "start": 13.171,
+   "end": 13.244
+  },
+  {
+   "text": "bonne",
+   "start": 13.244,
+   "end": 13.475
+  },
+  {
+   "text": "dose",
+   "start": 13.475,
+   "end": 13.693
+  },
+  {
+   "text": "et",
+   "start": 13.693,
+   "end": 13.718
+  },
+  {
+   "text": "la",
+   "start": 13.718,
+   "end": 13.802
+  },
+  {
+   "text": "dose",
+   "start": 13.802,
+   "end": 14.009
+  },
+  {
+   "text": "toxique",
+   "start": 14.009,
+   "end": 14.409
+  },
+  {
+   "text": "sont",
+   "start": 14.409,
+   "end": 14.518
+  },
+  {
+   "text": "très",
+   "start": 14.518,
+   "end": 14.676
+  },
+  {
+   "text": "proches.",
+   "start": 14.676,
+   "end": 15.174
+  },
+  {
+   "text": "Alors",
+   "start": 15.502,
+   "end": 15.793
+  },
+  {
+   "text": "on",
+   "start": 15.794,
+   "end": 15.866
+  },
+  {
+   "text": "dose",
+   "start": 15.866,
+   "end": 16.109
+  },
+  {
+   "text": "leur",
+   "start": 16.109,
+   "end": 16.242
+  },
+  {
+   "text": "taux",
+   "start": 16.242,
+   "end": 16.364
+  },
+  {
+   "text": "dans",
+   "start": 16.364,
+   "end": 16.473
+  },
+  {
+   "text": "le",
+   "start": 16.473,
+   "end": 16.582
+  },
+  {
+   "text": "sang,",
+   "start": 16.582,
+   "end": 16.886
+  },
+  {
+   "text": "juste",
+   "start": 17.165,
+   "end": 17.371
+  },
+  {
+   "text": "avant",
+   "start": 17.371,
+   "end": 17.517
+  },
+  {
+   "text": "la",
+   "start": 17.517,
+   "end": 17.602
+  },
+  {
+   "text": "prise",
+   "start": 17.602,
+   "end": 17.808
+  },
+  {
+   "text": "suivante,",
+   "start": 17.808,
+   "end": 18.306
+  },
+  {
+   "text": "et",
+   "start": 18.585,
+   "end": 18.645
+  },
+  {
+   "text": "on",
+   "start": 18.645,
+   "end": 18.706
+  },
+  {
+   "text": "note",
+   "start": 18.706,
+   "end": 18.888
+  },
+  {
+   "text": "l'heure",
+   "start": 18.888,
+   "end": 19.094
+  },
+  {
+   "text": "de",
+   "start": 19.094,
+   "end": 19.167
+  },
+  {
+   "text": "la",
+   "start": 19.167,
+   "end": 19.24
+  },
+  {
+   "text": "dernière",
+   "start": 19.24,
+   "end": 19.531
+  },
+  {
+   "text": "prise.",
+   "start": 19.531,
+   "end": 20.017
+  },
+  {
+   "text": "Deux :",
+   "start": 20.95,
+   "end": 21.338
+  },
+  {
+   "text": "la",
+   "start": 21.678,
+   "end": 21.751
+  },
+  {
+   "text": "digoxine,",
+   "start": 21.751,
+   "end": 22.467
+  },
+  {
+   "text": "pour",
+   "start": 22.649,
+   "end": 22.782
+  },
+  {
+   "text": "le",
+   "start": 22.782,
+   "end": 22.867
+  },
+  {
+   "text": "cœur.",
+   "start": 22.867,
+   "end": 23.28
+  },
+  {
+   "text": "Le",
+   "start": 23.608,
+   "end": 23.79
+  },
+  {
+   "text": "surdosage",
+   "start": 23.79,
+   "end": 24.384
+  },
+  {
+   "text": "donne",
+   "start": 24.384,
+   "end": 24.554
+  },
+  {
+   "text": "des",
+   "start": 24.554,
+   "end": 24.627
+  },
+  {
+   "text": "nausées,",
+   "start": 24.627,
+   "end": 25.04
+  },
+  {
+   "text": "une",
+   "start": 25.355,
+   "end": 25.428
+  },
+  {
+   "text": "vision",
+   "start": 25.428,
+   "end": 25.683
+  },
+  {
+   "text": "jaune",
+   "start": 25.683,
+   "end": 25.95
+  },
+  {
+   "text": "et",
+   "start": 25.95,
+   "end": 25.999
+  },
+  {
+   "text": "un",
+   "start": 25.999,
+   "end": 26.083
+  },
+  {
+   "text": "cœur",
+   "start": 26.084,
+   "end": 26.326
+  },
+  {
+   "text": "qui",
+   "start": 26.326,
+   "end": 26.46
+  },
+  {
+   "text": "bat",
+   "start": 26.46,
+   "end": 26.545
+  },
+  {
+   "text": "trop",
+   "start": 26.545,
+   "end": 26.727
+  },
+  {
+   "text": "lentement.",
+   "start": 26.727,
+   "end": 27.176
+  },
+  {
+   "text": "Le",
+   "start": 27.55,
+   "end": 27.684
+  },
+  {
+   "text": "risque",
+   "start": 27.684,
+   "end": 27.939
+  },
+  {
+   "text": "augmente",
+   "start": 27.939,
+   "end": 28.279
+  },
+  {
+   "text": "chez",
+   "start": 28.279,
+   "end": 28.364
+  },
+  {
+   "text": "la",
+   "start": 28.364,
+   "end": 28.436
+  },
+  {
+   "text": "personne",
+   "start": 28.436,
+   "end": 28.776
+  },
+  {
+   "text": "âgée,",
+   "start": 28.776,
+   "end": 29.128
+  },
+  {
+   "text": "quand",
+   "start": 29.395,
+   "end": 29.492
+  },
+  {
+   "text": "les",
+   "start": 29.492,
+   "end": 29.577
+  },
+  {
+   "text": "reins",
+   "start": 29.577,
+   "end": 29.723
+  },
+  {
+   "text": "filtrent",
+   "start": 29.723,
+   "end": 30.063
+  },
+  {
+   "text": "mal",
+   "start": 30.063,
+   "end": 30.33
+  },
+  {
+   "text": "ou",
+   "start": 30.33,
+   "end": 30.366
+  },
+  {
+   "text": "quand",
+   "start": 30.366,
+   "end": 30.499
+  },
+  {
+   "text": "le",
+   "start": 30.499,
+   "end": 30.572
+  },
+  {
+   "text": "potassium",
+   "start": 30.572,
+   "end": 31.082
+  },
+  {
+   "text": "est",
+   "start": 31.082,
+   "end": 31.131
+  },
+  {
+   "text": "bas.",
+   "start": 31.131,
+   "end": 31.434
+  },
+  {
+   "text": "Trois :",
+   "start": 32.371,
+   "end": 32.735
+  },
+  {
+   "text": "le",
+   "start": 33.111,
+   "end": 33.184
+  },
+  {
+   "text": "lithium,",
+   "start": 33.184,
+   "end": 33.754
+  },
+  {
+   "text": "pour",
+   "start": 34.009,
+   "end": 34.142
+  },
+  {
+   "text": "le",
+   "start": 34.142,
+   "end": 34.215
+  },
+  {
+   "text": "trouble",
+   "start": 34.215,
+   "end": 34.543
+  },
+  {
+   "text": "bipolaire.",
+   "start": 34.543,
+   "end": 35.198
+  },
+  {
+   "text": "On",
+   "start": 35.527,
+   "end": 35.673
+  },
+  {
+   "text": "le",
+   "start": 35.673,
+   "end": 35.758
+  },
+  {
+   "text": "prélève",
+   "start": 35.758,
+   "end": 36.122
+  },
+  {
+   "text": "douze",
+   "start": 36.122,
+   "end": 36.389
+  },
+  {
+   "text": "heures",
+   "start": 36.389,
+   "end": 36.583
+  },
+  {
+   "text": "après",
+   "start": 36.583,
+   "end": 36.789
+  },
+  {
+   "text": "la",
+   "start": 36.789,
+   "end": 36.862
+  },
+  {
+   "text": "dernière",
+   "start": 36.862,
+   "end": 37.19
+  },
+  {
+   "text": "prise.",
+   "start": 37.19,
+   "end": 37.7
+  },
+  {
+   "text": "Surdosé,",
+   "start": 38.05,
+   "end": 38.766
+  },
+  {
+   "text": "il",
+   "start": 39.082,
+   "end": 39.191
+  },
+  {
+   "text": "donne",
+   "start": 39.191,
+   "end": 39.349
+  },
+  {
+   "text": "des",
+   "start": 39.349,
+   "end": 39.421
+  },
+  {
+   "text": "tremblements,",
+   "start": 39.422,
+   "end": 39.992
+  },
+  {
+   "text": "une",
+   "start": 40.21,
+   "end": 40.283
+  },
+  {
+   "text": "confusion,",
+   "start": 40.283,
+   "end": 40.902
+  },
+  {
+   "text": "une",
+   "start": 41.193,
+   "end": 41.278
+  },
+  {
+   "text": "démarche",
+   "start": 41.278,
+   "end": 41.618
+  },
+  {
+   "text": "instable.",
+   "start": 41.618,
+   "end": 42.225
+  },
+  {
+   "text": "La",
+   "start": 42.565,
+   "end": 42.722
+  },
+  {
+   "text": "déshydratation",
+   "start": 42.723,
+   "end": 43.523
+  },
+  {
+   "text": "et",
+   "start": 43.523,
+   "end": 43.596
+  },
+  {
+   "text": "certains",
+   "start": 43.596,
+   "end": 43.9
+  },
+  {
+   "text": "médicaments",
+   "start": 43.9,
+   "end": 44.409
+  },
+  {
+   "text": "le",
+   "start": 44.409,
+   "end": 44.506
+  },
+  {
+   "text": "font",
+   "start": 44.506,
+   "end": 44.64
+  },
+  {
+   "text": "monter.",
+   "start": 44.64,
+   "end": 45.113
+  },
+  {
+   "text": "Marge",
+   "start": 46.085,
+   "end": 46.379
+  },
+  {
+   "text": "étroite,",
+   "start": 46.379,
+   "end": 46.931
+  },
+  {
+   "text": "prélèvement",
+   "start": 47.237,
+   "end": 47.678
+  },
+  {
+   "text": "à",
+   "start": 47.678,
+   "end": 47.703
+  },
+  {
+   "text": "la",
+   "start": 47.703,
+   "end": 47.789
+  },
+  {
+   "text": "bonne",
+   "start": 47.789,
+   "end": 48.009
+  },
+  {
+   "text": "heure,",
+   "start": 48.009,
+   "end": 48.279
+  },
+  {
+   "text": "heure",
+   "start": 48.598,
+   "end": 48.696
+  },
+  {
+   "text": "notée",
+   "start": 48.696,
+   "end": 48.965
+  },
+  {
+   "text": "sur",
+   "start": 48.965,
+   "end": 49.112
+  },
+  {
+   "text": "le",
+   "start": 49.112,
+   "end": 49.198
+  },
+  {
+   "text": "tube.",
+   "start": 49.198,
+   "end": 49.627
+  },
+  {
+   "text": "Prochaine",
+   "start": 49.995,
+   "end": 50.374
+  },
+  {
+   "text": "vidéo :",
+   "start": 50.374,
+   "end": 50.852
+  },
+  {
+   "text": "l'auto-immunité.",
+   "start": 51.281,
+   "end": 52.188
+  }
+ ]
+}
