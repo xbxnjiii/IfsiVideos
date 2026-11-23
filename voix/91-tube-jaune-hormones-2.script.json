@@ -1,0 +1,32 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Avant un scanner chez une jeune femme, une question compte : est-elle enceinte ? Une prise de sang le dit. Voici les hormones de la grossesse et de la fertilité."
+ },
+ {
+  "id": "hcg",
+  "rate": "+3%",
+  "text": "Un : les bêta H C G, l'hormone de la grossesse, fabriquée par le placenta. Dans le sang, elle se voit dès dix jours après la fécondation, avant le retard de règles. Au début, la quantité double environ tous les deux jours."
+ },
+ {
+  "id": "fshlh",
+  "rate": "+3%",
+  "text": "Deux : la F S H et la L H, les hormones du cerveau qui commandent les ovaires et les testicules. Chez la femme, on les dose en début de cycle. Très hautes après cinquante ans : c'est la ménopause."
+ },
+ {
+  "id": "proges",
+  "rate": "+3%",
+  "text": "Trois : la progestérone. Elle monte après l'ovulation et prépare l'utérus à la grossesse. Dosée vers le vingt et unième jour du cycle, elle montre que l'ovulation a bien eu lieu."
+ },
+ {
+  "id": "testo",
+  "rate": "+3%",
+  "text": "Quatre : la testostérone, l'hormone masculine, présente aussi en petite quantité chez la femme. On la prélève le matin, quand elle est au plus haut."
+ },
+ {
+  "id": "fin",
+  "rate": "+2%",
+  "text": "Grossesse, cycle, ovulation, testostérone : tu connais les hormones du tube jaune. Prochaine vidéo : les sérologies."
+ }
+]

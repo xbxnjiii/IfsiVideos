@@ -1,0 +1,918 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 59.054,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.05,
+   "end": 7.704
+  },
+  {
+   "id": "hcg",
+   "start": 8.651,
+   "end": 20.52
+  },
+  {
+   "id": "fshlh",
+   "start": 21.454,
+   "end": 31.744
+  },
+  {
+   "id": "proges",
+   "start": 32.683,
+   "end": 41.566
+  },
+  {
+   "id": "testo",
+   "start": 42.497,
+   "end": 50.361
+  },
+  {
+   "id": "fin",
+   "start": 51.303,
+   "end": 58.705
+  }
+ ],
+ "words": [
+  {
+   "text": "Avant",
+   "start": 0.05,
+   "end": 0.338
+  },
+  {
+   "text": "un",
+   "start": 0.338,
+   "end": 0.386
+  },
+  {
+   "text": "scanner",
+   "start": 0.386,
+   "end": 0.795
+  },
+  {
+   "text": "chez",
+   "start": 0.795,
+   "end": 0.891
+  },
+  {
+   "text": "une",
+   "start": 0.891,
+   "end": 0.999
+  },
+  {
+   "text": "jeune",
+   "start": 0.999,
+   "end": 1.203
+  },
+  {
+   "text": "femme,",
+   "start": 1.203,
+   "end": 1.54
+  },
+  {
+   "text": "une",
+   "start": 1.937,
+   "end": 1.997
+  },
+  {
+   "text": "question",
+   "start": 1.997,
+   "end": 2.333
+  },
+  {
+   "text": "compte :",
+   "start": 2.333,
+   "end": 2.718
+  },
+  {
+   "text": "est-elle",
+   "start": 2.886,
+   "end": 3.078
+  },
+  {
+   "text": "enceinte ?",
+   "start": 3.078,
+   "end": 3.643
+  },
+  {
+   "text": "Une",
+   "start": 3.968,
+   "end": 4.161
+  },
+  {
+   "text": "prise",
+   "start": 4.161,
+   "end": 4.413
+  },
+  {
+   "text": "de",
+   "start": 4.413,
+   "end": 4.533
+  },
+  {
+   "text": "sang",
+   "start": 4.533,
+   "end": 4.677
+  },
+  {
+   "text": "le",
+   "start": 4.677,
+   "end": 4.786
+  },
+  {
+   "text": "dit.",
+   "start": 4.786,
+   "end": 5.074
+  },
+  {
+   "text": "Voici",
+   "start": 5.397,
+   "end": 5.733
+  },
+  {
+   "text": "les",
+   "start": 5.733,
+   "end": 5.829
+  },
+  {
+   "text": "hormones",
+   "start": 5.829,
+   "end": 6.19
+  },
+  {
+   "text": "de",
+   "start": 6.19,
+   "end": 6.25
+  },
+  {
+   "text": "la",
+   "start": 6.25,
+   "end": 6.322
+  },
+  {
+   "text": "grossesse",
+   "start": 6.322,
+   "end": 6.815
+  },
+  {
+   "text": "et",
+   "start": 6.815,
+   "end": 6.851
+  },
+  {
+   "text": "de",
+   "start": 6.851,
+   "end": 6.923
+  },
+  {
+   "text": "la",
+   "start": 6.923,
+   "end": 7.007
+  },
+  {
+   "text": "fertilité.",
+   "start": 7.007,
+   "end": 7.704
+  },
+  {
+   "text": "Un :",
+   "start": 8.651,
+   "end": 8.93
+  },
+  {
+   "text": "les",
+   "start": 9.197,
+   "end": 9.27
+  },
+  {
+   "text": "bêta",
+   "start": 9.27,
+   "end": 9.573
+  },
+  {
+   "text": "H",
+   "start": 9.573,
+   "end": 9.779
+  },
+  {
+   "text": "C",
+   "start": 9.779,
+   "end": 9.937
+  },
+  {
+   "text": "G,",
+   "start": 9.937,
+   "end": 10.228
+  },
+  {
+   "text": "l'hormone",
+   "start": 10.58,
+   "end": 10.884
+  },
+  {
+   "text": "de",
+   "start": 10.884,
+   "end": 10.944
+  },
+  {
+   "text": "la",
+   "start": 10.944,
+   "end": 11.017
+  },
+  {
+   "text": "grossesse,",
+   "start": 11.017,
+   "end": 11.6
+  },
+  {
+   "text": "fabriquée",
+   "start": 11.855,
+   "end": 12.255
+  },
+  {
+   "text": "par",
+   "start": 12.255,
+   "end": 12.376
+  },
+  {
+   "text": "le",
+   "start": 12.376,
+   "end": 12.449
+  },
+  {
+   "text": "placenta.",
+   "start": 12.449,
+   "end": 13.105
+  },
+  {
+   "text": "Dans",
+   "start": 13.444,
+   "end": 13.626
+  },
+  {
+   "text": "le",
+   "start": 13.626,
+   "end": 13.736
+  },
+  {
+   "text": "sang,",
+   "start": 13.736,
+   "end": 14.039
+  },
+  {
+   "text": "elle",
+   "start": 14.33,
+   "end": 14.452
+  },
+  {
+   "text": "se",
+   "start": 14.452,
+   "end": 14.573
+  },
+  {
+   "text": "voit",
+   "start": 14.573,
+   "end": 14.707
+  },
+  {
+   "text": "dès",
+   "start": 14.707,
+   "end": 14.816
+  },
+  {
+   "text": "dix",
+   "start": 14.816,
+   "end": 14.961
+  },
+  {
+   "text": "jours",
+   "start": 14.961,
+   "end": 15.216
+  },
+  {
+   "text": "après",
+   "start": 15.216,
+   "end": 15.398
+  },
+  {
+   "text": "la",
+   "start": 15.398,
+   "end": 15.483
+  },
+  {
+   "text": "fécondation,",
+   "start": 15.483,
+   "end": 16.175
+  },
+  {
+   "text": "avant",
+   "start": 16.43,
+   "end": 16.624
+  },
+  {
+   "text": "le",
+   "start": 16.624,
+   "end": 16.697
+  },
+  {
+   "text": "retard",
+   "start": 16.697,
+   "end": 16.964
+  },
+  {
+   "text": "de",
+   "start": 16.964,
+   "end": 17.049
+  },
+  {
+   "text": "règles.",
+   "start": 17.049,
+   "end": 17.474
+  },
+  {
+   "text": "Au",
+   "start": 17.802,
+   "end": 17.935
+  },
+  {
+   "text": "début,",
+   "start": 17.935,
+   "end": 18.336
+  },
+  {
+   "text": "la",
+   "start": 18.676,
+   "end": 18.736
+  },
+  {
+   "text": "quantité",
+   "start": 18.736,
+   "end": 19.161
+  },
+  {
+   "text": "double",
+   "start": 19.161,
+   "end": 19.416
+  },
+  {
+   "text": "environ",
+   "start": 19.416,
+   "end": 19.78
+  },
+  {
+   "text": "tous",
+   "start": 19.78,
+   "end": 19.901
+  },
+  {
+   "text": "les",
+   "start": 19.901,
+   "end": 19.998
+  },
+  {
+   "text": "deux",
+   "start": 19.998,
+   "end": 20.132
+  },
+  {
+   "text": "jours.",
+   "start": 20.132,
+   "end": 20.52
+  },
+  {
+   "text": "Deux :",
+   "start": 21.454,
+   "end": 21.83
+  },
+  {
+   "text": "la",
+   "start": 22.328,
+   "end": 22.401
+  },
+  {
+   "text": "F",
+   "start": 22.401,
+   "end": 22.607
+  },
+  {
+   "text": "S",
+   "start": 22.607,
+   "end": 22.825
+  },
+  {
+   "text": "H",
+   "start": 22.825,
+   "end": 23.08
+  },
+  {
+   "text": "et",
+   "start": 23.08,
+   "end": 23.117
+  },
+  {
+   "text": "la",
+   "start": 23.117,
+   "end": 23.226
+  },
+  {
+   "text": "L",
+   "start": 23.226,
+   "end": 23.408
+  },
+  {
+   "text": "H,",
+   "start": 23.408,
+   "end": 23.772
+  },
+  {
+   "text": "les",
+   "start": 24.003,
+   "end": 24.075
+  },
+  {
+   "text": "hormones",
+   "start": 24.075,
+   "end": 24.379
+  },
+  {
+   "text": "du",
+   "start": 24.379,
+   "end": 24.464
+  },
+  {
+   "text": "cerveau",
+   "start": 24.464,
+   "end": 24.84
+  },
+  {
+   "text": "qui",
+   "start": 24.84,
+   "end": 24.961
+  },
+  {
+   "text": "commandent",
+   "start": 24.961,
+   "end": 25.24
+  },
+  {
+   "text": "les",
+   "start": 25.24,
+   "end": 25.337
+  },
+  {
+   "text": "ovaires",
+   "start": 25.337,
+   "end": 25.702
+  },
+  {
+   "text": "et",
+   "start": 25.702,
+   "end": 25.726
+  },
+  {
+   "text": "les",
+   "start": 25.726,
+   "end": 25.811
+  },
+  {
+   "text": "testicules.",
+   "start": 25.811,
+   "end": 26.539
+  },
+  {
+   "text": "Chez",
+   "start": 26.867,
+   "end": 27.073
+  },
+  {
+   "text": "la",
+   "start": 27.073,
+   "end": 27.182
+  },
+  {
+   "text": "femme,",
+   "start": 27.182,
+   "end": 27.546
+  },
+  {
+   "text": "on",
+   "start": 27.862,
+   "end": 27.886
+  },
+  {
+   "text": "les",
+   "start": 27.886,
+   "end": 27.983
+  },
+  {
+   "text": "dose",
+   "start": 27.983,
+   "end": 28.214
+  },
+  {
+   "text": "en",
+   "start": 28.214,
+   "end": 28.262
+  },
+  {
+   "text": "début",
+   "start": 28.262,
+   "end": 28.469
+  },
+  {
+   "text": "de",
+   "start": 28.469,
+   "end": 28.578
+  },
+  {
+   "text": "cycle.",
+   "start": 28.578,
+   "end": 29.063
+  },
+  {
+   "text": "Très",
+   "start": 29.389,
+   "end": 29.596
+  },
+  {
+   "text": "hautes",
+   "start": 29.596,
+   "end": 29.766
+  },
+  {
+   "text": "après",
+   "start": 29.766,
+   "end": 29.996
+  },
+  {
+   "text": "cinquante",
+   "start": 29.996,
+   "end": 30.421
+  },
+  {
+   "text": "ans :",
+   "start": 30.421,
+   "end": 30.603
+  },
+  {
+   "text": "c'est",
+   "start": 30.882,
+   "end": 30.991
+  },
+  {
+   "text": "la",
+   "start": 30.991,
+   "end": 31.076
+  },
+  {
+   "text": "ménopause.",
+   "start": 31.076,
+   "end": 31.744
+  },
+  {
+   "text": "Trois :",
+   "start": 32.683,
+   "end": 33.084
+  },
+  {
+   "text": "la",
+   "start": 33.436,
+   "end": 33.496
+  },
+  {
+   "text": "progestérone.",
+   "start": 33.496,
+   "end": 34.37
+  },
+  {
+   "text": "Elle",
+   "start": 34.71,
+   "end": 34.904
+  },
+  {
+   "text": "monte",
+   "start": 34.904,
+   "end": 35.111
+  },
+  {
+   "text": "après",
+   "start": 35.111,
+   "end": 35.305
+  },
+  {
+   "text": "l'ovulation",
+   "start": 35.305,
+   "end": 35.924
+  },
+  {
+   "text": "et",
+   "start": 35.924,
+   "end": 36.021
+  },
+  {
+   "text": "prépare",
+   "start": 36.021,
+   "end": 36.361
+  },
+  {
+   "text": "l'utérus",
+   "start": 36.361,
+   "end": 36.822
+  },
+  {
+   "text": "à",
+   "start": 36.822,
+   "end": 36.858
+  },
+  {
+   "text": "la",
+   "start": 36.858,
+   "end": 36.943
+  },
+  {
+   "text": "grossesse.",
+   "start": 36.943,
+   "end": 37.599
+  },
+  {
+   "text": "Dosée",
+   "start": 37.937,
+   "end": 38.241
+  },
+  {
+   "text": "vers",
+   "start": 38.241,
+   "end": 38.386
+  },
+  {
+   "text": "le",
+   "start": 38.386,
+   "end": 38.471
+  },
+  {
+   "text": "vingt",
+   "start": 38.471,
+   "end": 38.653
+  },
+  {
+   "text": "et",
+   "start": 38.653,
+   "end": 38.714
+  },
+  {
+   "text": "unième",
+   "start": 38.714,
+   "end": 38.933
+  },
+  {
+   "text": "jour",
+   "start": 38.933,
+   "end": 39.09
+  },
+  {
+   "text": "du",
+   "start": 39.09,
+   "end": 39.187
+  },
+  {
+   "text": "cycle,",
+   "start": 39.187,
+   "end": 39.539
+  },
+  {
+   "text": "elle",
+   "start": 39.843,
+   "end": 39.916
+  },
+  {
+   "text": "montre",
+   "start": 39.916,
+   "end": 40.195
+  },
+  {
+   "text": "que",
+   "start": 40.195,
+   "end": 40.292
+  },
+  {
+   "text": "l'ovulation",
+   "start": 40.292,
+   "end": 40.85
+  },
+  {
+   "text": "a",
+   "start": 40.85,
+   "end": 40.947
+  },
+  {
+   "text": "bien",
+   "start": 40.947,
+   "end": 41.141
+  },
+  {
+   "text": "eu",
+   "start": 41.141,
+   "end": 41.238
+  },
+  {
+   "text": "lieu.",
+   "start": 41.238,
+   "end": 41.566
+  },
+  {
+   "text": "Quatre :",
+   "start": 42.497,
+   "end": 42.91
+  },
+  {
+   "text": "la",
+   "start": 43.468,
+   "end": 43.553
+  },
+  {
+   "text": "testostérone,",
+   "start": 43.553,
+   "end": 44.354
+  },
+  {
+   "text": "l'hormone",
+   "start": 44.645,
+   "end": 44.924
+  },
+  {
+   "text": "masculine,",
+   "start": 44.924,
+   "end": 45.519
+  },
+  {
+   "text": "présente",
+   "start": 45.81,
+   "end": 46.15
+  },
+  {
+   "text": "aussi",
+   "start": 46.15,
+   "end": 46.393
+  },
+  {
+   "text": "en",
+   "start": 46.393,
+   "end": 46.466
+  },
+  {
+   "text": "petite",
+   "start": 46.466,
+   "end": 46.757
+  },
+  {
+   "text": "quantité",
+   "start": 46.757,
+   "end": 47.17
+  },
+  {
+   "text": "chez",
+   "start": 47.17,
+   "end": 47.267
+  },
+  {
+   "text": "la",
+   "start": 47.267,
+   "end": 47.376
+  },
+  {
+   "text": "femme.",
+   "start": 47.376,
+   "end": 47.825
+  },
+  {
+   "text": "On",
+   "start": 48.188,
+   "end": 48.273
+  },
+  {
+   "text": "la",
+   "start": 48.273,
+   "end": 48.358
+  },
+  {
+   "text": "prélève",
+   "start": 48.358,
+   "end": 48.71
+  },
+  {
+   "text": "le",
+   "start": 48.71,
+   "end": 48.795
+  },
+  {
+   "text": "matin,",
+   "start": 48.795,
+   "end": 49.232
+  },
+  {
+   "text": "quand",
+   "start": 49.499,
+   "end": 49.608
+  },
+  {
+   "text": "elle",
+   "start": 49.608,
+   "end": 49.754
+  },
+  {
+   "text": "est",
+   "start": 49.754,
+   "end": 49.79
+  },
+  {
+   "text": "au",
+   "start": 49.79,
+   "end": 49.912
+  },
+  {
+   "text": "plus",
+   "start": 49.912,
+   "end": 50.142
+  },
+  {
+   "text": "haut.",
+   "start": 50.142,
+   "end": 50.361
+  },
+  {
+   "text": "Grossesse,",
+   "start": 51.303,
+   "end": 52.051
+  },
+  {
+   "text": "cycle,",
+   "start": 52.247,
+   "end": 52.651
+  },
+  {
+   "text": "ovulation,",
+   "start": 52.835,
+   "end": 53.46
+  },
+  {
+   "text": "testostérone :",
+   "start": 53.717,
+   "end": 54.538
+  },
+  {
+   "text": "tu",
+   "start": 54.845,
+   "end": 54.955
+  },
+  {
+   "text": "connais",
+   "start": 54.955,
+   "end": 55.176
+  },
+  {
+   "text": "les",
+   "start": 55.176,
+   "end": 55.261
+  },
+  {
+   "text": "hormones",
+   "start": 55.261,
+   "end": 55.641
+  },
+  {
+   "text": "du",
+   "start": 55.641,
+   "end": 55.715
+  },
+  {
+   "text": "tube",
+   "start": 55.715,
+   "end": 55.899
+  },
+  {
+   "text": "jaune.",
+   "start": 55.899,
+   "end": 56.352
+  },
+  {
+   "text": "Prochaine",
+   "start": 56.72,
+   "end": 57.087
+  },
+  {
+   "text": "vidéo :",
+   "start": 57.087,
+   "end": 57.565
+  },
+  {
+   "text": "les",
+   "start": 57.921,
+   "end": 57.994
+  },
+  {
+   "text": "sérologies.",
+   "start": 57.994,
+   "end": 58.705
+  }
+ ]
+}

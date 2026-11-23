@@ -99,6 +99,9 @@ pas de logiciel de montage, pas de banque d'images.
 | 86 | Série les tubes : le tube jaune, les protéines (albumine, préalbumine, haptoglobine) ; voix gratuite, directives Instagram | `Tube-Jaune-Proteines` | [voix/86-tube-jaune-proteines.script.json](voix/86-tube-jaune-proteines.script.json) | [plan](docs/lpi/plan-tube-jaune-serie.md) |
 | 87 | Série les tubes : le tube jaune, l'électrophorèse et les immunoglobulines ; voix gratuite, directives Instagram | `Tube-Jaune-Electrophorese` | [voix/87-tube-jaune-electrophorese.script.json](voix/87-tube-jaune-electrophorese.script.json) | [plan](docs/lpi/plan-tube-jaune-serie.md) |
 | 88 | Série les tubes : le tube jaune, le cœur (troponine, NT-proBNP) ; voix gratuite, directives Instagram | `Tube-Jaune-Coeur` | [voix/88-tube-jaune-coeur.script.json](voix/88-tube-jaune-coeur.script.json) | [plan](docs/lpi/plan-tube-jaune-serie.md) |
+| 89 | Série les tubes : le tube jaune, les marqueurs tumoraux (AFP, CA 125, CA 15-3, CA 19-9, ACE, PSA) ; voix gratuite, directives Instagram | `Tube-Jaune-Marqueurs` | [voix/89-tube-jaune-marqueurs.script.json](voix/89-tube-jaune-marqueurs.script.json) | [plan](docs/lpi/plan-tube-jaune-serie.md) |
+| 90 | Série les tubes : le tube jaune, les hormones 1/2 (TSH, cortisol, prolactine) ; voix gratuite, directives Instagram | `Tube-Jaune-Hormones` | [voix/90-tube-jaune-hormones.script.json](voix/90-tube-jaune-hormones.script.json) | [plan](docs/lpi/plan-tube-jaune-serie.md) |
+| 91 | Série les tubes : le tube jaune, les hormones 2/2 (β-hCG, FSH, LH, progestérone, testostérone) ; voix gratuite, directives Instagram | `Tube-Jaune-Hormones-2` | [voix/91-tube-jaune-hormones-2.script.json](voix/91-tube-jaune-hormones-2.script.json) | [plan](docs/lpi/plan-tube-jaune-serie.md) |
 
 ## Utilisation
 

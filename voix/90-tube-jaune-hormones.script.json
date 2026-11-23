@@ -1,0 +1,27 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Fatigue, prise de poids, toujours froid… ou au contraire le cœur qui s'emballe ? Trois hormones du tube jaune peuvent l'expliquer. Tu les connais ?"
+ },
+ {
+  "id": "tsh",
+  "rate": "+3%",
+  "text": "Un : la T S H. C'est le chef d'orchestre de la thyroïde : elle est fabriquée dans le cerveau. Attention, elle varie à l'envers. Une T S H haute, c'est une thyroïde qui travaille trop peu : l'hypothyroïdie. Une T S H basse, c'est une thyroïde qui s'emballe : l'hyperthyroïdie. La norme : environ zéro virgule quatre à quatre."
+ },
+ {
+  "id": "cortisol",
+  "rate": "+3%",
+  "text": "Deux : le cortisol, l'hormone du stress, fabriquée par les glandes surrénales. Il est au plus haut le matin et au plus bas le soir : alors on le prélève à huit heures, et on note l'heure sur le tube."
+ },
+ {
+  "id": "prolactine",
+  "rate": "+3%",
+  "text": "Trois : la prolactine, l'hormone de l'allaitement. En dehors de la grossesse, trop haute, elle peut arrêter les règles ou faire couler du lait. Certains médicaments et le stress la font monter : on la prélève au calme, après un peu de repos."
+ },
+ {
+  "id": "fin",
+  "rate": "+2%",
+  "text": "La T S H à l'envers, le cortisol à huit heures, la prolactine au calme. Prochaine vidéo : les hormones de la grossesse et de la fertilité."
+ }
+]

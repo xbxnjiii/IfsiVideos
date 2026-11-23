@@ -178,6 +178,12 @@ import {TubeJauneElectrophorese, TubeJauneElectrophoreseProps} from './videos/tu
 import {TL as TUBE_JAUNE_ELECTROPHORESE_TL} from './videos/tube-jaune-electrophorese/timeline';
 import {TubeJauneCoeur, TubeJauneCoeurProps} from './videos/tube-jaune-coeur/TubeJauneCoeur';
 import {TL as TUBE_JAUNE_COEUR_TL} from './videos/tube-jaune-coeur/timeline';
+import {TubeJauneMarqueurs, TubeJauneMarqueursProps} from './videos/tube-jaune-marqueurs/TubeJauneMarqueurs';
+import {TL as TUBE_JAUNE_MARQUEURS_TL} from './videos/tube-jaune-marqueurs/timeline';
+import {TubeJauneHormones, TubeJauneHormonesProps} from './videos/tube-jaune-hormones/TubeJauneHormones';
+import {TL as TUBE_JAUNE_HORMONES_TL} from './videos/tube-jaune-hormones/timeline';
+import {TubeJauneHormones2, TubeJauneHormones2Props} from './videos/tube-jaune-hormones-2/TubeJauneHormones2';
+import {TL as TUBE_JAUNE_HORMONES_2_TL} from './videos/tube-jaune-hormones-2/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -1054,6 +1060,36 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies TubeJauneCoeurProps}
+		/>
+		{/* 89 · Tube-Jaune-Marqueurs */}
+		<Composition
+			id="Tube-Jaune-Marqueurs"
+			component={TubeJauneMarqueurs}
+			durationInFrames={TUBE_JAUNE_MARQUEURS_TL.total}
+			fps={TUBE_JAUNE_MARQUEURS_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies TubeJauneMarqueursProps}
+		/>
+		{/* 90 · Tube-Jaune-Hormones */}
+		<Composition
+			id="Tube-Jaune-Hormones"
+			component={TubeJauneHormones}
+			durationInFrames={TUBE_JAUNE_HORMONES_TL.total}
+			fps={TUBE_JAUNE_HORMONES_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies TubeJauneHormonesProps}
+		/>
+		{/* 91 · Tube-Jaune-Hormones-2 */}
+		<Composition
+			id="Tube-Jaune-Hormones-2"
+			component={TubeJauneHormones2}
+			durationInFrames={TUBE_JAUNE_HORMONES_2_TL.total}
+			fps={TUBE_JAUNE_HORMONES_2_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies TubeJauneHormones2Props}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition

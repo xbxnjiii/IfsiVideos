@@ -1,0 +1,948 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 60.448,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.048,
+   "end": 7.452
+  },
+  {
+   "id": "tsh",
+   "start": 8.4,
+   "end": 28.338
+  },
+  {
+   "id": "cortisol",
+   "start": 29.253,
+   "end": 38.914
+  },
+  {
+   "id": "prolactine",
+   "start": 39.883,
+   "end": 51.571
+  },
+  {
+   "id": "fin",
+   "start": 52.554,
+   "end": 60.103
+  }
+ ],
+ "words": [
+  {
+   "text": "Fatigue,",
+   "start": 0.048,
+   "end": 0.697
+  },
+  {
+   "text": "prise",
+   "start": 0.865,
+   "end": 1.058
+  },
+  {
+   "text": "de",
+   "start": 1.058,
+   "end": 1.166
+  },
+  {
+   "text": "poids,",
+   "start": 1.166,
+   "end": 1.502
+  },
+  {
+   "text": "toujours",
+   "start": 1.815,
+   "end": 2.055
+  },
+  {
+   "text": "froid…",
+   "start": 2.055,
+   "end": 2.404
+  },
+  {
+   "text": "ou",
+   "start": 2.776,
+   "end": 2.824
+  },
+  {
+   "text": "au",
+   "start": 2.825,
+   "end": 2.897
+  },
+  {
+   "text": "contraire",
+   "start": 2.897,
+   "end": 3.257
+  },
+  {
+   "text": "le",
+   "start": 3.257,
+   "end": 3.341
+  },
+  {
+   "text": "cœur",
+   "start": 3.341,
+   "end": 3.534
+  },
+  {
+   "text": "qui",
+   "start": 3.534,
+   "end": 3.666
+  },
+  {
+   "text": "s'emballe ?",
+   "start": 3.666,
+   "end": 4.171
+  },
+  {
+   "text": "Trois",
+   "start": 4.507,
+   "end": 4.687
+  },
+  {
+   "text": "hormones",
+   "start": 4.688,
+   "end": 5.06
+  },
+  {
+   "text": "du",
+   "start": 5.06,
+   "end": 5.156
+  },
+  {
+   "text": "tube",
+   "start": 5.156,
+   "end": 5.349
+  },
+  {
+   "text": "jaune",
+   "start": 5.349,
+   "end": 5.685
+  },
+  {
+   "text": "peuvent",
+   "start": 5.685,
+   "end": 5.865
+  },
+  {
+   "text": "l'expliquer.",
+   "start": 5.865,
+   "end": 6.49
+  },
+  {
+   "text": "Tu",
+   "start": 6.851,
+   "end": 6.935
+  },
+  {
+   "text": "les",
+   "start": 6.935,
+   "end": 7.031
+  },
+  {
+   "text": "connais ?",
+   "start": 7.031,
+   "end": 7.452
+  },
+  {
+   "text": "Un :",
+   "start": 8.4,
+   "end": 8.74
+  },
+  {
+   "text": "la",
+   "start": 9.116,
+   "end": 9.237
+  },
+  {
+   "text": "T",
+   "start": 9.237,
+   "end": 9.419
+  },
+  {
+   "text": "S",
+   "start": 9.419,
+   "end": 9.65
+  },
+  {
+   "text": "H.",
+   "start": 9.65,
+   "end": 10.05
+  },
+  {
+   "text": "C'est",
+   "start": 10.378,
+   "end": 10.572
+  },
+  {
+   "text": "le",
+   "start": 10.572,
+   "end": 10.681
+  },
+  {
+   "text": "chef",
+   "start": 10.681,
+   "end": 10.887
+  },
+  {
+   "text": "d'orchestre",
+   "start": 10.887,
+   "end": 11.385
+  },
+  {
+   "text": "de",
+   "start": 11.385,
+   "end": 11.446
+  },
+  {
+   "text": "la",
+   "start": 11.446,
+   "end": 11.519
+  },
+  {
+   "text": "thyroïde :",
+   "start": 11.519,
+   "end": 12.065
+  },
+  {
+   "text": "elle",
+   "start": 12.404,
+   "end": 12.465
+  },
+  {
+   "text": "est",
+   "start": 12.465,
+   "end": 12.502
+  },
+  {
+   "text": "fabriquée",
+   "start": 12.502,
+   "end": 12.987
+  },
+  {
+   "text": "dans",
+   "start": 12.987,
+   "end": 13.096
+  },
+  {
+   "text": "le",
+   "start": 13.096,
+   "end": 13.181
+  },
+  {
+   "text": "cerveau.",
+   "start": 13.181,
+   "end": 13.667
+  },
+  {
+   "text": "Attention,",
+   "start": 13.994,
+   "end": 14.662
+  },
+  {
+   "text": "elle",
+   "start": 15.002,
+   "end": 15.123
+  },
+  {
+   "text": "varie",
+   "start": 15.123,
+   "end": 15.414
+  },
+  {
+   "text": "à",
+   "start": 15.414,
+   "end": 15.451
+  },
+  {
+   "text": "l'envers.",
+   "start": 15.451,
+   "end": 15.997
+  },
+  {
+   "text": "Une",
+   "start": 16.324,
+   "end": 16.555
+  },
+  {
+   "text": "T",
+   "start": 16.555,
+   "end": 16.749
+  },
+  {
+   "text": "S",
+   "start": 16.749,
+   "end": 16.955
+  },
+  {
+   "text": "H",
+   "start": 16.955,
+   "end": 17.161
+  },
+  {
+   "text": "haute,",
+   "start": 17.161,
+   "end": 17.501
+  },
+  {
+   "text": "c'est",
+   "start": 17.768,
+   "end": 17.89
+  },
+  {
+   "text": "une",
+   "start": 17.89,
+   "end": 18.047
+  },
+  {
+   "text": "thyroïde",
+   "start": 18.047,
+   "end": 18.448
+  },
+  {
+   "text": "qui",
+   "start": 18.448,
+   "end": 18.533
+  },
+  {
+   "text": "travaille",
+   "start": 18.533,
+   "end": 18.897
+  },
+  {
+   "text": "trop",
+   "start": 18.897,
+   "end": 19.115
+  },
+  {
+   "text": "peu :",
+   "start": 19.115,
+   "end": 19.407
+  },
+  {
+   "text": "l'hypothyroïdie.",
+   "start": 19.686,
+   "end": 20.596
+  },
+  {
+   "text": "Une",
+   "start": 20.936,
+   "end": 21.179
+  },
+  {
+   "text": "T",
+   "start": 21.179,
+   "end": 21.373
+  },
+  {
+   "text": "S",
+   "start": 21.373,
+   "end": 21.652
+  },
+  {
+   "text": "H",
+   "start": 21.652,
+   "end": 21.87
+  },
+  {
+   "text": "basse,",
+   "start": 21.87,
+   "end": 22.307
+  },
+  {
+   "text": "c'est",
+   "start": 22.574,
+   "end": 22.708
+  },
+  {
+   "text": "une",
+   "start": 22.708,
+   "end": 22.866
+  },
+  {
+   "text": "thyroïde",
+   "start": 22.866,
+   "end": 23.278
+  },
+  {
+   "text": "qui",
+   "start": 23.278,
+   "end": 23.4
+  },
+  {
+   "text": "s'emballe :",
+   "start": 23.4,
+   "end": 23.897
+  },
+  {
+   "text": "l'hyperthyroïdie.",
+   "start": 24.225,
+   "end": 25.196
+  },
+  {
+   "text": "La",
+   "start": 25.571,
+   "end": 25.704
+  },
+  {
+   "text": "norme :",
+   "start": 25.704,
+   "end": 26.068
+  },
+  {
+   "text": "environ",
+   "start": 26.542,
+   "end": 26.882
+  },
+  {
+   "text": "zéro",
+   "start": 26.882,
+   "end": 27.221
+  },
+  {
+   "text": "virgule",
+   "start": 27.221,
+   "end": 27.561
+  },
+  {
+   "text": "quatre",
+   "start": 27.561,
+   "end": 27.792
+  },
+  {
+   "text": "à",
+   "start": 27.792,
+   "end": 27.828
+  },
+  {
+   "text": "quatre.",
+   "start": 27.828,
+   "end": 28.338
+  },
+  {
+   "text": "Deux :",
+   "start": 29.253,
+   "end": 29.642
+  },
+  {
+   "text": "le",
+   "start": 30.054,
+   "end": 30.103
+  },
+  {
+   "text": "cortisol,",
+   "start": 30.103,
+   "end": 30.746
+  },
+  {
+   "text": "l'hormone",
+   "start": 31.037,
+   "end": 31.353
+  },
+  {
+   "text": "du",
+   "start": 31.353,
+   "end": 31.438
+  },
+  {
+   "text": "stress,",
+   "start": 31.438,
+   "end": 31.947
+  },
+  {
+   "text": "fabriquée",
+   "start": 32.227,
+   "end": 32.615
+  },
+  {
+   "text": "par",
+   "start": 32.615,
+   "end": 32.748
+  },
+  {
+   "text": "les",
+   "start": 32.748,
+   "end": 32.821
+  },
+  {
+   "text": "glandes",
+   "start": 32.821,
+   "end": 33.125
+  },
+  {
+   "text": "surrénales.",
+   "start": 33.125,
+   "end": 33.816
+  },
+  {
+   "text": "Il",
+   "start": 34.144,
+   "end": 34.326
+  },
+  {
+   "text": "est",
+   "start": 34.326,
+   "end": 34.363
+  },
+  {
+   "text": "au",
+   "start": 34.363,
+   "end": 34.472
+  },
+  {
+   "text": "plus",
+   "start": 34.472,
+   "end": 34.654
+  },
+  {
+   "text": "haut",
+   "start": 34.654,
+   "end": 34.703
+  },
+  {
+   "text": "le",
+   "start": 34.703,
+   "end": 34.775
+  },
+  {
+   "text": "matin",
+   "start": 34.776,
+   "end": 35.152
+  },
+  {
+   "text": "et",
+   "start": 35.152,
+   "end": 35.224
+  },
+  {
+   "text": "au",
+   "start": 35.224,
+   "end": 35.261
+  },
+  {
+   "text": "plus",
+   "start": 35.261,
+   "end": 35.394
+  },
+  {
+   "text": "bas",
+   "start": 35.394,
+   "end": 35.504
+  },
+  {
+   "text": "le",
+   "start": 35.504,
+   "end": 35.601
+  },
+  {
+   "text": "soir :",
+   "start": 35.601,
+   "end": 35.977
+  },
+  {
+   "text": "alors",
+   "start": 36.365,
+   "end": 36.535
+  },
+  {
+   "text": "on",
+   "start": 36.535,
+   "end": 36.572
+  },
+  {
+   "text": "le",
+   "start": 36.572,
+   "end": 36.632
+  },
+  {
+   "text": "prélève",
+   "start": 36.632,
+   "end": 36.936
+  },
+  {
+   "text": "à",
+   "start": 36.936,
+   "end": 36.972
+  },
+  {
+   "text": "huit",
+   "start": 36.972,
+   "end": 37.13
+  },
+  {
+   "text": "heures,",
+   "start": 37.13,
+   "end": 37.47
+  },
+  {
+   "text": "et",
+   "start": 37.809,
+   "end": 37.87
+  },
+  {
+   "text": "on",
+   "start": 37.87,
+   "end": 37.919
+  },
+  {
+   "text": "note",
+   "start": 37.919,
+   "end": 38.089
+  },
+  {
+   "text": "l'heure",
+   "start": 38.089,
+   "end": 38.271
+  },
+  {
+   "text": "sur",
+   "start": 38.271,
+   "end": 38.392
+  },
+  {
+   "text": "le",
+   "start": 38.392,
+   "end": 38.489
+  },
+  {
+   "text": "tube.",
+   "start": 38.489,
+   "end": 38.914
+  },
+  {
+   "text": "Trois :",
+   "start": 39.883,
+   "end": 40.211
+  },
+  {
+   "text": "la",
+   "start": 40.611,
+   "end": 40.672
+  },
+  {
+   "text": "prolactine,",
+   "start": 40.672,
+   "end": 41.364
+  },
+  {
+   "text": "l'hormone",
+   "start": 41.703,
+   "end": 42.08
+  },
+  {
+   "text": "de",
+   "start": 42.08,
+   "end": 42.152
+  },
+  {
+   "text": "l'allaitement.",
+   "start": 42.153,
+   "end": 42.735
+  },
+  {
+   "text": "En",
+   "start": 43.064,
+   "end": 43.234
+  },
+  {
+   "text": "dehors",
+   "start": 43.234,
+   "end": 43.465
+  },
+  {
+   "text": "de",
+   "start": 43.465,
+   "end": 43.525
+  },
+  {
+   "text": "la",
+   "start": 43.525,
+   "end": 43.598
+  },
+  {
+   "text": "grossesse,",
+   "start": 43.598,
+   "end": 44.229
+  },
+  {
+   "text": "trop",
+   "start": 44.496,
+   "end": 44.727
+  },
+  {
+   "text": "haute,",
+   "start": 44.727,
+   "end": 45.03
+  },
+  {
+   "text": "elle",
+   "start": 45.334,
+   "end": 45.382
+  },
+  {
+   "text": "peut",
+   "start": 45.382,
+   "end": 45.479
+  },
+  {
+   "text": "arrêter",
+   "start": 45.479,
+   "end": 45.758
+  },
+  {
+   "text": "les",
+   "start": 45.758,
+   "end": 45.868
+  },
+  {
+   "text": "règles",
+   "start": 45.868,
+   "end": 46.159
+  },
+  {
+   "text": "ou",
+   "start": 46.159,
+   "end": 46.183
+  },
+  {
+   "text": "faire",
+   "start": 46.183,
+   "end": 46.365
+  },
+  {
+   "text": "couler",
+   "start": 46.365,
+   "end": 46.584
+  },
+  {
+   "text": "du",
+   "start": 46.584,
+   "end": 46.693
+  },
+  {
+   "text": "lait.",
+   "start": 46.693,
+   "end": 46.948
+  },
+  {
+   "text": "Certains",
+   "start": 47.275,
+   "end": 47.664
+  },
+  {
+   "text": "médicaments",
+   "start": 47.664,
+   "end": 48.173
+  },
+  {
+   "text": "et",
+   "start": 48.173,
+   "end": 48.234
+  },
+  {
+   "text": "le",
+   "start": 48.234,
+   "end": 48.319
+  },
+  {
+   "text": "stress",
+   "start": 48.319,
+   "end": 48.647
+  },
+  {
+   "text": "la",
+   "start": 48.647,
+   "end": 48.744
+  },
+  {
+   "text": "font",
+   "start": 48.744,
+   "end": 48.889
+  },
+  {
+   "text": "monter :",
+   "start": 48.889,
+   "end": 49.29
+  },
+  {
+   "text": "on",
+   "start": 49.69,
+   "end": 49.715
+  },
+  {
+   "text": "la",
+   "start": 49.715,
+   "end": 49.8
+  },
+  {
+   "text": "prélève",
+   "start": 49.8,
+   "end": 50.103
+  },
+  {
+   "text": "au",
+   "start": 50.103,
+   "end": 50.152
+  },
+  {
+   "text": "calme,",
+   "start": 50.152,
+   "end": 50.528
+  },
+  {
+   "text": "après",
+   "start": 50.734,
+   "end": 50.916
+  },
+  {
+   "text": "un",
+   "start": 50.916,
+   "end": 50.965
+  },
+  {
+   "text": "peu",
+   "start": 50.965,
+   "end": 51.086
+  },
+  {
+   "text": "de",
+   "start": 51.086,
+   "end": 51.147
+  },
+  {
+   "text": "repos.",
+   "start": 51.147,
+   "end": 51.571
+  },
+  {
+   "text": "La",
+   "start": 52.554,
+   "end": 52.701
+  },
+  {
+   "text": "T",
+   "start": 52.701,
+   "end": 52.848
+  },
+  {
+   "text": "S",
+   "start": 52.848,
+   "end": 53.044
+  },
+  {
+   "text": "H",
+   "start": 53.044,
+   "end": 53.228
+  },
+  {
+   "text": "à",
+   "start": 53.228,
+   "end": 53.277
+  },
+  {
+   "text": "l'envers,",
+   "start": 53.277,
+   "end": 53.767
+  },
+  {
+   "text": "le",
+   "start": 54.147,
+   "end": 54.196
+  },
+  {
+   "text": "cortisol",
+   "start": 54.196,
+   "end": 54.674
+  },
+  {
+   "text": "à",
+   "start": 54.674,
+   "end": 54.723
+  },
+  {
+   "text": "huit",
+   "start": 54.723,
+   "end": 54.87
+  },
+  {
+   "text": "heures,",
+   "start": 54.87,
+   "end": 55.189
+  },
+  {
+   "text": "la",
+   "start": 55.52,
+   "end": 55.581
+  },
+  {
+   "text": "prolactine",
+   "start": 55.581,
+   "end": 56.071
+  },
+  {
+   "text": "au",
+   "start": 56.071,
+   "end": 56.12
+  },
+  {
+   "text": "calme.",
+   "start": 56.12,
+   "end": 56.61
+  },
+  {
+   "text": "Prochaine",
+   "start": 56.966,
+   "end": 57.358
+  },
+  {
+   "text": "vidéo :",
+   "start": 57.358,
+   "end": 57.824
+  },
+  {
+   "text": "les",
+   "start": 58.191,
+   "end": 58.253
+  },
+  {
+   "text": "hormones",
+   "start": 58.253,
+   "end": 58.583
+  },
+  {
+   "text": "de",
+   "start": 58.583,
+   "end": 58.657
+  },
+  {
+   "text": "la",
+   "start": 58.657,
+   "end": 58.731
+  },
+  {
+   "text": "grossesse",
+   "start": 58.731,
+   "end": 59.208
+  },
+  {
+   "text": "et",
+   "start": 59.208,
+   "end": 59.245
+  },
+  {
+   "text": "de",
+   "start": 59.245,
+   "end": 59.319
+  },
+  {
+   "text": "la",
+   "start": 59.319,
+   "end": 59.405
+  },
+  {
+   "text": "fertilité.",
+   "start": 59.405,
+   "end": 60.103
+  }
+ ]
+}

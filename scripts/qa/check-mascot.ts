@@ -176,6 +176,12 @@ import * as tubejauneelectrophorese from '../../src/videos/tube-jaune-electropho
 import * as tubejauneelectrophoreseTL from '../../src/videos/tube-jaune-electrophorese/timeline';
 import * as tubejaunecoeur from '../../src/videos/tube-jaune-coeur/mascot';
 import * as tubejaunecoeurTL from '../../src/videos/tube-jaune-coeur/timeline';
+import * as tubejaunemarqueurs from '../../src/videos/tube-jaune-marqueurs/mascot';
+import * as tubejaunemarqueursTL from '../../src/videos/tube-jaune-marqueurs/timeline';
+import * as tubejaunehormones from '../../src/videos/tube-jaune-hormones/mascot';
+import * as tubejaunehormonesTL from '../../src/videos/tube-jaune-hormones/timeline';
+import * as tubejaunehormones2 from '../../src/videos/tube-jaune-hormones-2/mascot';
+import * as tubejaunehormones2TL from '../../src/videos/tube-jaune-hormones-2/timeline';
 
 const VIDEOS: Record<string, [typeof constantes.MASCOT, typeof constantesTL.TL]> = {
 	constantes: [constantes.MASCOT, constantesTL.TL],
@@ -265,6 +271,9 @@ const VIDEOS: Record<string, [typeof constantes.MASCOT, typeof constantesTL.TL]>
 	'tube-jaune-proteines': [tubejauneproteines.MASCOT, tubejauneproteinesTL.TL],
 	'tube-jaune-electrophorese': [tubejauneelectrophorese.MASCOT, tubejauneelectrophoreseTL.TL],
 	'tube-jaune-coeur': [tubejaunecoeur.MASCOT, tubejaunecoeurTL.TL],
+	'tube-jaune-marqueurs': [tubejaunemarqueurs.MASCOT, tubejaunemarqueursTL.TL],
+	'tube-jaune-hormones': [tubejaunehormones.MASCOT, tubejaunehormonesTL.TL],
+	'tube-jaune-hormones-2': [tubejaunehormones2.MASCOT, tubejaunehormones2TL.TL],
 };
 const name = process.argv[2] ?? 'constantes';
 const [MASCOT, TL] = VIDEOS[name];
