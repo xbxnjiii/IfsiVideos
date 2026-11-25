@@ -1,0 +1,683 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 52.766,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.05,
+   "end": 5.819
+  },
+  {
+   "id": "enveloppe",
+   "start": 6.744,
+   "end": 16.052
+  },
+  {
+   "id": "noyau",
+   "start": 16.99,
+   "end": 26.456
+  },
+  {
+   "id": "fabrication",
+   "start": 27.38,
+   "end": 38.897
+  },
+  {
+   "id": "energie",
+   "start": 39.834,
+   "end": 47.612
+  },
+  {
+   "id": "fin",
+   "start": 48.58,
+   "end": 52.403
+  }
+ ],
+ "words": [
+  {
+   "text": "Douze",
+   "start": 0.05,
+   "end": 0.374
+  },
+  {
+   "text": "structures",
+   "start": 0.374,
+   "end": 0.927
+  },
+  {
+   "text": "dans",
+   "start": 0.927,
+   "end": 1.012
+  },
+  {
+   "text": "une",
+   "start": 1.012,
+   "end": 1.204
+  },
+  {
+   "text": "seule",
+   "start": 1.204,
+   "end": 1.396
+  },
+  {
+   "text": "cellule.",
+   "start": 1.396,
+   "end": 1.913
+  },
+  {
+   "text": "Voici",
+   "start": 2.249,
+   "end": 2.61
+  },
+  {
+   "text": "le",
+   "start": 2.61,
+   "end": 2.706
+  },
+  {
+   "text": "schéma",
+   "start": 2.706,
+   "end": 3.066
+  },
+  {
+   "text": "à",
+   "start": 3.066,
+   "end": 3.162
+  },
+  {
+   "text": "savoir",
+   "start": 3.163,
+   "end": 3.499
+  },
+  {
+   "text": "annoter",
+   "start": 3.499,
+   "end": 3.848
+  },
+  {
+   "text": "en",
+   "start": 3.848,
+   "end": 3.896
+  },
+  {
+   "text": "anatomie.",
+   "start": 3.896,
+   "end": 4.497
+  },
+  {
+   "text": "On",
+   "start": 4.834,
+   "end": 4.99
+  },
+  {
+   "text": "le",
+   "start": 4.99,
+   "end": 5.11
+  },
+  {
+   "text": "fait",
+   "start": 5.11,
+   "end": 5.242
+  },
+  {
+   "text": "ensemble ?",
+   "start": 5.242,
+   "end": 5.819
+  },
+  {
+   "text": "Un :",
+   "start": 6.744,
+   "end": 7.06
+  },
+  {
+   "text": "l'enveloppe.",
+   "start": 7.484,
+   "end": 8.103
+  },
+  {
+   "text": "La",
+   "start": 8.478,
+   "end": 8.587
+  },
+  {
+   "text": "membrane",
+   "start": 8.587,
+   "end": 8.939
+  },
+  {
+   "text": "plasmique",
+   "start": 8.939,
+   "end": 9.412
+  },
+  {
+   "text": "entoure",
+   "start": 9.412,
+   "end": 9.631
+  },
+  {
+   "text": "la",
+   "start": 9.631,
+   "end": 9.716
+  },
+  {
+   "text": "cellule",
+   "start": 9.716,
+   "end": 10.165
+  },
+  {
+   "text": "et",
+   "start": 10.165,
+   "end": 10.213
+  },
+  {
+   "text": "filtre",
+   "start": 10.213,
+   "end": 10.541
+  },
+  {
+   "text": "les",
+   "start": 10.541,
+   "end": 10.626
+  },
+  {
+   "text": "échanges.",
+   "start": 10.626,
+   "end": 11.221
+  },
+  {
+   "text": "Dedans,",
+   "start": 11.55,
+   "end": 12.072
+  },
+  {
+   "text": "le",
+   "start": 12.399,
+   "end": 12.472
+  },
+  {
+   "text": "cytoplasme,",
+   "start": 12.472,
+   "end": 13.249
+  },
+  {
+   "text": "tenu",
+   "start": 13.528,
+   "end": 13.746
+  },
+  {
+   "text": "par",
+   "start": 13.746,
+   "end": 13.892
+  },
+  {
+   "text": "un",
+   "start": 13.892,
+   "end": 13.965
+  },
+  {
+   "text": "squelette",
+   "start": 13.965,
+   "end": 14.268
+  },
+  {
+   "text": "de",
+   "start": 14.268,
+   "end": 14.39
+  },
+  {
+   "text": "fibres :",
+   "start": 14.39,
+   "end": 14.79
+  },
+  {
+   "text": "le",
+   "start": 15.118,
+   "end": 15.191
+  },
+  {
+   "text": "cytosquelette.",
+   "start": 15.191,
+   "end": 16.052
+  },
+  {
+   "text": "Deux :",
+   "start": 16.99,
+   "end": 17.402
+  },
+  {
+   "text": "le",
+   "start": 17.778,
+   "end": 17.851
+  },
+  {
+   "text": "noyau.",
+   "start": 17.851,
+   "end": 18.349
+  },
+  {
+   "text": "Il",
+   "start": 18.677,
+   "end": 18.859
+  },
+  {
+   "text": "est",
+   "start": 18.859,
+   "end": 18.883
+  },
+  {
+   "text": "entouré",
+   "start": 18.883,
+   "end": 19.296
+  },
+  {
+   "text": "d'une",
+   "start": 19.296,
+   "end": 19.49
+  },
+  {
+   "text": "double",
+   "start": 19.49,
+   "end": 19.696
+  },
+  {
+   "text": "enveloppe,",
+   "start": 19.696,
+   "end": 20.157
+  },
+  {
+   "text": "percée",
+   "start": 20.376,
+   "end": 20.655
+  },
+  {
+   "text": "de",
+   "start": 20.655,
+   "end": 20.764
+  },
+  {
+   "text": "pores.",
+   "start": 20.764,
+   "end": 21.225
+  },
+  {
+   "text": "Dedans,",
+   "start": 21.553,
+   "end": 22.05
+  },
+  {
+   "text": "la",
+   "start": 22.305,
+   "end": 22.366
+  },
+  {
+   "text": "chromatine,",
+   "start": 22.366,
+   "end": 23.058
+  },
+  {
+   "text": "c'est",
+   "start": 23.325,
+   "end": 23.458
+  },
+  {
+   "text": "l'ADN,",
+   "start": 23.458,
+   "end": 24.016
+  },
+  {
+   "text": "et",
+   "start": 24.235,
+   "end": 24.259
+  },
+  {
+   "text": "le",
+   "start": 24.259,
+   "end": 24.332
+  },
+  {
+   "text": "nucléole,",
+   "start": 24.332,
+   "end": 24.951
+  },
+  {
+   "text": "qui",
+   "start": 25.206,
+   "end": 25.327
+  },
+  {
+   "text": "fabrique",
+   "start": 25.327,
+   "end": 25.667
+  },
+  {
+   "text": "les",
+   "start": 25.667,
+   "end": 25.752
+  },
+  {
+   "text": "ribosomes.",
+   "start": 25.752,
+   "end": 26.456
+  },
+  {
+   "text": "Trois :",
+   "start": 27.38,
+   "end": 27.78
+  },
+  {
+   "text": "la",
+   "start": 28.132,
+   "end": 28.217
+  },
+  {
+   "text": "chaîne",
+   "start": 28.217,
+   "end": 28.46
+  },
+  {
+   "text": "de",
+   "start": 28.46,
+   "end": 28.557
+  },
+  {
+   "text": "fabrication.",
+   "start": 28.557,
+   "end": 29.346
+  },
+  {
+   "text": "Les",
+   "start": 29.733,
+   "end": 29.854
+  },
+  {
+   "text": "ribosomes",
+   "start": 29.854,
+   "end": 30.388
+  },
+  {
+   "text": "fabriquent",
+   "start": 30.388,
+   "end": 30.74
+  },
+  {
+   "text": "les",
+   "start": 30.74,
+   "end": 30.813
+  },
+  {
+   "text": "protéines,",
+   "start": 30.813,
+   "end": 31.359
+  },
+  {
+   "text": "souvent",
+   "start": 31.687,
+   "end": 31.954
+  },
+  {
+   "text": "collés",
+   "start": 31.954,
+   "end": 32.257
+  },
+  {
+   "text": "au",
+   "start": 32.257,
+   "end": 32.294
+  },
+  {
+   "text": "réticulum",
+   "start": 32.294,
+   "end": 32.864
+  },
+  {
+   "text": "rugueux.",
+   "start": 32.864,
+   "end": 33.313
+  },
+  {
+   "text": "Le",
+   "start": 33.689,
+   "end": 33.798
+  },
+  {
+   "text": "réticulum",
+   "start": 33.798,
+   "end": 34.357
+  },
+  {
+   "text": "lisse",
+   "start": 34.357,
+   "end": 34.684
+  },
+  {
+   "text": "fabrique",
+   "start": 34.684,
+   "end": 35.048
+  },
+  {
+   "text": "les",
+   "start": 35.048,
+   "end": 35.121
+  },
+  {
+   "text": "lipides.",
+   "start": 35.121,
+   "end": 35.704
+  },
+  {
+   "text": "Puis",
+   "start": 36.033,
+   "end": 36.215
+  },
+  {
+   "text": "l'appareil",
+   "start": 36.215,
+   "end": 36.591
+  },
+  {
+   "text": "de",
+   "start": 36.591,
+   "end": 36.676
+  },
+  {
+   "text": "Golgi",
+   "start": 36.676,
+   "end": 36.992
+  },
+  {
+   "text": "les",
+   "start": 36.992,
+   "end": 37.089
+  },
+  {
+   "text": "trie",
+   "start": 37.089,
+   "end": 37.404
+  },
+  {
+   "text": "et",
+   "start": 37.404,
+   "end": 37.501
+  },
+  {
+   "text": "les",
+   "start": 37.501,
+   "end": 37.598
+  },
+  {
+   "text": "emballe",
+   "start": 37.598,
+   "end": 38.011
+  },
+  {
+   "text": "dans",
+   "start": 38.011,
+   "end": 38.108
+  },
+  {
+   "text": "des",
+   "start": 38.108,
+   "end": 38.193
+  },
+  {
+   "text": "vésicules.",
+   "start": 38.193,
+   "end": 38.897
+  },
+  {
+   "text": "Quatre :",
+   "start": 39.834,
+   "end": 40.283
+  },
+  {
+   "text": "l'énergie",
+   "start": 40.623,
+   "end": 41.108
+  },
+  {
+   "text": "et",
+   "start": 41.108,
+   "end": 41.193
+  },
+  {
+   "text": "le",
+   "start": 41.193,
+   "end": 41.278
+  },
+  {
+   "text": "ménage.",
+   "start": 41.278,
+   "end": 41.849
+  },
+  {
+   "text": "Les",
+   "start": 42.211,
+   "end": 42.345
+  },
+  {
+   "text": "mitochondries",
+   "start": 42.345,
+   "end": 42.927
+  },
+  {
+   "text": "produisent",
+   "start": 42.927,
+   "end": 43.328
+  },
+  {
+   "text": "l'énergie,",
+   "start": 43.328,
+   "end": 43.862
+  },
+  {
+   "text": "les",
+   "start": 44.141,
+   "end": 44.201
+  },
+  {
+   "text": "lysosomes",
+   "start": 44.201,
+   "end": 44.687
+  },
+  {
+   "text": "digèrent",
+   "start": 44.687,
+   "end": 44.99
+  },
+  {
+   "text": "les",
+   "start": 44.99,
+   "end": 45.063
+  },
+  {
+   "text": "déchets,",
+   "start": 45.063,
+   "end": 45.5
+  },
+  {
+   "text": "et",
+   "start": 45.864,
+   "end": 45.925
+  },
+  {
+   "text": "le",
+   "start": 45.925,
+   "end": 46.01
+  },
+  {
+   "text": "centrosome",
+   "start": 46.01,
+   "end": 46.58
+  },
+  {
+   "text": "organise",
+   "start": 46.58,
+   "end": 46.993
+  },
+  {
+   "text": "la",
+   "start": 46.993,
+   "end": 47.066
+  },
+  {
+   "text": "division.",
+   "start": 47.066,
+   "end": 47.612
+  },
+  {
+   "text": "Voilà",
+   "start": 48.58,
+   "end": 48.849
+  },
+  {
+   "text": "le",
+   "start": 48.849,
+   "end": 48.947
+  },
+  {
+   "text": "schéma",
+   "start": 48.947,
+   "end": 49.205
+  },
+  {
+   "text": "complet",
+   "start": 49.205,
+   "end": 49.536
+  },
+  {
+   "text": "de",
+   "start": 49.536,
+   "end": 49.621
+  },
+  {
+   "text": "la",
+   "start": 49.621,
+   "end": 49.719
+  },
+  {
+   "text": "cellule !",
+   "start": 49.719,
+   "end": 50.259
+  },
+  {
+   "text": "Prochaine",
+   "start": 50.614,
+   "end": 50.969
+  },
+  {
+   "text": "vidéo :",
+   "start": 50.969,
+   "end": 51.46
+  },
+  {
+   "text": "les",
+   "start": 51.84,
+   "end": 51.913
+  },
+  {
+   "text": "tissus.",
+   "start": 51.913,
+   "end": 52.403
+  }
+ ]
+}

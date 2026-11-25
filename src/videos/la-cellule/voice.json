@@ -1,0 +1,808 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 54.086,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.06,
+   "end": 5.529
+  },
+  {
+   "id": "forme",
+   "start": 6.503,
+   "end": 15.181
+  },
+  {
+   "id": "parties",
+   "start": 16.126,
+   "end": 26.986
+  },
+  {
+   "id": "organites",
+   "start": 27.967,
+   "end": 36.73
+  },
+  {
+   "id": "division",
+   "start": 37.674,
+   "end": 45.975
+  },
+  {
+   "id": "fin",
+   "start": 46.936,
+   "end": 53.749
+  }
+ ],
+ "words": [
+  {
+   "text": "Trente-sept",
+   "start": 0.06,
+   "end": 0.469
+  },
+  {
+   "text": "mille",
+   "start": 0.469,
+   "end": 0.601
+  },
+  {
+   "text": "milliards",
+   "start": 0.601,
+   "end": 0.865
+  },
+  {
+   "text": "de",
+   "start": 0.865,
+   "end": 0.962
+  },
+  {
+   "text": "cellules",
+   "start": 0.962,
+   "end": 1.262
+  },
+  {
+   "text": "dans",
+   "start": 1.262,
+   "end": 1.346
+  },
+  {
+   "text": "ton",
+   "start": 1.346,
+   "end": 1.49
+  },
+  {
+   "text": "corps…",
+   "start": 1.49,
+   "end": 1.815
+  },
+  {
+   "text": "et",
+   "start": 2.2,
+   "end": 2.236
+  },
+  {
+   "text": "chacune",
+   "start": 2.236,
+   "end": 2.608
+  },
+  {
+   "text": "travaille",
+   "start": 2.608,
+   "end": 2.945
+  },
+  {
+   "text": "comme",
+   "start": 2.945,
+   "end": 3.101
+  },
+  {
+   "text": "une",
+   "start": 3.101,
+   "end": 3.197
+  },
+  {
+   "text": "petite",
+   "start": 3.197,
+   "end": 3.51
+  },
+  {
+   "text": "usine.",
+   "start": 3.51,
+   "end": 3.99
+  },
+  {
+   "text": "Tu",
+   "start": 4.351,
+   "end": 4.447
+  },
+  {
+   "text": "sais",
+   "start": 4.447,
+   "end": 4.579
+  },
+  {
+   "text": "comment",
+   "start": 4.579,
+   "end": 4.832
+  },
+  {
+   "text": "elle",
+   "start": 4.832,
+   "end": 4.916
+  },
+  {
+   "text": "fonctionne ?",
+   "start": 4.916,
+   "end": 5.529
+  },
+  {
+   "text": "Un :",
+   "start": 6.503,
+   "end": 6.758
+  },
+  {
+   "text": "la",
+   "start": 7.17,
+   "end": 7.243
+  },
+  {
+   "text": "cellule",
+   "start": 7.243,
+   "end": 7.595
+  },
+  {
+   "text": "est",
+   "start": 7.595,
+   "end": 7.619
+  },
+  {
+   "text": "la",
+   "start": 7.619,
+   "end": 7.704
+  },
+  {
+   "text": "plus",
+   "start": 7.704,
+   "end": 7.838
+  },
+  {
+   "text": "petite",
+   "start": 7.838,
+   "end": 8.178
+  },
+  {
+   "text": "unité",
+   "start": 8.178,
+   "end": 8.457
+  },
+  {
+   "text": "vivante.",
+   "start": 8.457,
+   "end": 9.039
+  },
+  {
+   "text": "Sa",
+   "start": 9.38,
+   "end": 9.611
+  },
+  {
+   "text": "forme",
+   "start": 9.611,
+   "end": 9.866
+  },
+  {
+   "text": "dépend",
+   "start": 9.866,
+   "end": 10.096
+  },
+  {
+   "text": "de",
+   "start": 10.096,
+   "end": 10.194
+  },
+  {
+   "text": "son",
+   "start": 10.194,
+   "end": 10.339
+  },
+  {
+   "text": "rôle :",
+   "start": 10.339,
+   "end": 10.643
+  },
+  {
+   "text": "ronde",
+   "start": 10.922,
+   "end": 11.14
+  },
+  {
+   "text": "et",
+   "start": 11.14,
+   "end": 11.177
+  },
+  {
+   "text": "plate",
+   "start": 11.177,
+   "end": 11.492
+  },
+  {
+   "text": "pour",
+   "start": 11.492,
+   "end": 11.601
+  },
+  {
+   "text": "le",
+   "start": 11.601,
+   "end": 11.65
+  },
+  {
+   "text": "globule",
+   "start": 11.65,
+   "end": 11.905
+  },
+  {
+   "text": "rouge,",
+   "start": 11.905,
+   "end": 12.281
+  },
+  {
+   "text": "très",
+   "start": 12.524,
+   "end": 12.694
+  },
+  {
+   "text": "longue",
+   "start": 12.694,
+   "end": 12.9
+  },
+  {
+   "text": "pour",
+   "start": 12.9,
+   "end": 13.021
+  },
+  {
+   "text": "le",
+   "start": 13.021,
+   "end": 13.082
+  },
+  {
+   "text": "neurone,",
+   "start": 13.082,
+   "end": 13.507
+  },
+  {
+   "text": "allongée",
+   "start": 13.846,
+   "end": 14.15
+  },
+  {
+   "text": "pour",
+   "start": 14.15,
+   "end": 14.259
+  },
+  {
+   "text": "la",
+   "start": 14.259,
+   "end": 14.332
+  },
+  {
+   "text": "cellule",
+   "start": 14.332,
+   "end": 14.599
+  },
+  {
+   "text": "du",
+   "start": 14.599,
+   "end": 14.684
+  },
+  {
+   "text": "muscle.",
+   "start": 14.684,
+   "end": 15.181
+  },
+  {
+   "text": "Deux :",
+   "start": 16.126,
+   "end": 16.526
+  },
+  {
+   "text": "trois",
+   "start": 16.866,
+   "end": 17.072
+  },
+  {
+   "text": "parties.",
+   "start": 17.072,
+   "end": 17.582
+  },
+  {
+   "text": "La",
+   "start": 17.91,
+   "end": 18.092
+  },
+  {
+   "text": "membrane,",
+   "start": 18.092,
+   "end": 18.662
+  },
+  {
+   "text": "qui",
+   "start": 18.929,
+   "end": 19.038
+  },
+  {
+   "text": "choisit",
+   "start": 19.038,
+   "end": 19.378
+  },
+  {
+   "text": "ce",
+   "start": 19.378,
+   "end": 19.487
+  },
+  {
+   "text": "qui",
+   "start": 19.487,
+   "end": 19.669
+  },
+  {
+   "text": "entre",
+   "start": 19.669,
+   "end": 19.9
+  },
+  {
+   "text": "et",
+   "start": 19.9,
+   "end": 19.936
+  },
+  {
+   "text": "ce",
+   "start": 19.936,
+   "end": 20.033
+  },
+  {
+   "text": "qui",
+   "start": 20.033,
+   "end": 20.167
+  },
+  {
+   "text": "sort.",
+   "start": 20.167,
+   "end": 20.604
+  },
+  {
+   "text": "Le",
+   "start": 20.931,
+   "end": 21.113
+  },
+  {
+   "text": "cytoplasme,",
+   "start": 21.114,
+   "end": 21.878
+  },
+  {
+   "text": "le",
+   "start": 22.181,
+   "end": 22.254
+  },
+  {
+   "text": "liquide",
+   "start": 22.254,
+   "end": 22.63
+  },
+  {
+   "text": "où",
+   "start": 22.631,
+   "end": 22.667
+  },
+  {
+   "text": "tout",
+   "start": 22.667,
+   "end": 22.788
+  },
+  {
+   "text": "se",
+   "start": 22.788,
+   "end": 22.897
+  },
+  {
+   "text": "passe.",
+   "start": 22.898,
+   "end": 23.371
+  },
+  {
+   "text": "Et",
+   "start": 23.697,
+   "end": 23.807
+  },
+  {
+   "text": "le",
+   "start": 23.807,
+   "end": 23.904
+  },
+  {
+   "text": "noyau,",
+   "start": 23.904,
+   "end": 24.365
+  },
+  {
+   "text": "qui",
+   "start": 24.608,
+   "end": 24.729
+  },
+  {
+   "text": "garde",
+   "start": 24.729,
+   "end": 25.008
+  },
+  {
+   "text": "l'ADN :",
+   "start": 25.008,
+   "end": 25.566
+  },
+  {
+   "text": "le",
+   "start": 25.918,
+   "end": 25.979
+  },
+  {
+   "text": "plan",
+   "start": 25.979,
+   "end": 26.173
+  },
+  {
+   "text": "de",
+   "start": 26.173,
+   "end": 26.27
+  },
+  {
+   "text": "construction.",
+   "start": 26.27,
+   "end": 26.986
+  },
+  {
+   "text": "Trois :",
+   "start": 27.967,
+   "end": 28.27
+  },
+  {
+   "text": "les",
+   "start": 28.574,
+   "end": 28.647
+  },
+  {
+   "text": "organites,",
+   "start": 28.647,
+   "end": 29.338
+  },
+  {
+   "text": "de",
+   "start": 29.533,
+   "end": 29.605
+  },
+  {
+   "text": "petits",
+   "start": 29.605,
+   "end": 29.86
+  },
+  {
+   "text": "organes.",
+   "start": 29.86,
+   "end": 30.455
+  },
+  {
+   "text": "Les",
+   "start": 30.783,
+   "end": 30.965
+  },
+  {
+   "text": "mitochondries",
+   "start": 30.965,
+   "end": 31.524
+  },
+  {
+   "text": "produisent",
+   "start": 31.524,
+   "end": 31.936
+  },
+  {
+   "text": "l'énergie,",
+   "start": 31.936,
+   "end": 32.458
+  },
+  {
+   "text": "les",
+   "start": 32.713,
+   "end": 32.773
+  },
+  {
+   "text": "ribosomes",
+   "start": 32.773,
+   "end": 33.283
+  },
+  {
+   "text": "fabriquent",
+   "start": 33.283,
+   "end": 33.611
+  },
+  {
+   "text": "les",
+   "start": 33.611,
+   "end": 33.672
+  },
+  {
+   "text": "protéines,",
+   "start": 33.672,
+   "end": 34.206
+  },
+  {
+   "text": "et",
+   "start": 34.594,
+   "end": 34.606
+  },
+  {
+   "text": "l'appareil",
+   "start": 34.606,
+   "end": 34.97
+  },
+  {
+   "text": "de",
+   "start": 34.97,
+   "end": 35.055
+  },
+  {
+   "text": "Golgi",
+   "start": 35.055,
+   "end": 35.358
+  },
+  {
+   "text": "les",
+   "start": 35.358,
+   "end": 35.456
+  },
+  {
+   "text": "emballe",
+   "start": 35.456,
+   "end": 35.844
+  },
+  {
+   "text": "pour",
+   "start": 35.844,
+   "end": 35.965
+  },
+  {
+   "text": "les",
+   "start": 35.965,
+   "end": 36.026
+  },
+  {
+   "text": "expédier.",
+   "start": 36.026,
+   "end": 36.73
+  },
+  {
+   "text": "Quatre :",
+   "start": 37.674,
+   "end": 38.087
+  },
+  {
+   "text": "elle",
+   "start": 38.341,
+   "end": 38.414
+  },
+  {
+   "text": "se",
+   "start": 38.414,
+   "end": 38.536
+  },
+  {
+   "text": "divise.",
+   "start": 38.536,
+   "end": 39.094
+  },
+  {
+   "text": "La",
+   "start": 39.421,
+   "end": 39.603
+  },
+  {
+   "text": "cellule",
+   "start": 39.603,
+   "end": 39.894
+  },
+  {
+   "text": "copie",
+   "start": 39.894,
+   "end": 40.161
+  },
+  {
+   "text": "son",
+   "start": 40.161,
+   "end": 40.27
+  },
+  {
+   "text": "ADN,",
+   "start": 40.27,
+   "end": 40.804
+  },
+  {
+   "text": "puis",
+   "start": 41.071,
+   "end": 41.205
+  },
+  {
+   "text": "se",
+   "start": 41.205,
+   "end": 41.314
+  },
+  {
+   "text": "coupe",
+   "start": 41.314,
+   "end": 41.508
+  },
+  {
+   "text": "en",
+   "start": 41.508,
+   "end": 41.593
+  },
+  {
+   "text": "deux",
+   "start": 41.593,
+   "end": 41.702
+  },
+  {
+   "text": "cellules",
+   "start": 41.702,
+   "end": 42.006
+  },
+  {
+   "text": "identiques :",
+   "start": 42.006,
+   "end": 42.588
+  },
+  {
+   "text": "c'est",
+   "start": 42.952,
+   "end": 43.062
+  },
+  {
+   "text": "la",
+   "start": 43.062,
+   "end": 43.134
+  },
+  {
+   "text": "mitose.",
+   "start": 43.134,
+   "end": 43.729
+  },
+  {
+   "text": "Elle",
+   "start": 44.058,
+   "end": 44.252
+  },
+  {
+   "text": "sert",
+   "start": 44.252,
+   "end": 44.47
+  },
+  {
+   "text": "à",
+   "start": 44.47,
+   "end": 44.519
+  },
+  {
+   "text": "grandir",
+   "start": 44.519,
+   "end": 45.016
+  },
+  {
+   "text": "et",
+   "start": 45.016,
+   "end": 45.077
+  },
+  {
+   "text": "à",
+   "start": 45.077,
+   "end": 45.113
+  },
+  {
+   "text": "réparer",
+   "start": 45.113,
+   "end": 45.453
+  },
+  {
+   "text": "le",
+   "start": 45.453,
+   "end": 45.538
+  },
+  {
+   "text": "corps.",
+   "start": 45.538,
+   "end": 45.975
+  },
+  {
+   "text": "Unité",
+   "start": 46.936,
+   "end": 47.291
+  },
+  {
+   "text": "vivante,",
+   "start": 47.291,
+   "end": 47.867
+  },
+  {
+   "text": "trois",
+   "start": 48.149,
+   "end": 48.32
+  },
+  {
+   "text": "parties,",
+   "start": 48.32,
+   "end": 48.811
+  },
+  {
+   "text": "des",
+   "start": 49.166,
+   "end": 49.239
+  },
+  {
+   "text": "organites",
+   "start": 49.239,
+   "end": 49.766
+  },
+  {
+   "text": "et",
+   "start": 49.766,
+   "end": 49.791
+  },
+  {
+   "text": "la",
+   "start": 49.791,
+   "end": 49.877
+  },
+  {
+   "text": "division.",
+   "start": 49.877,
+   "end": 50.465
+  },
+  {
+   "text": "Prochaine",
+   "start": 50.833,
+   "end": 51.188
+  },
+  {
+   "text": "vidéo :",
+   "start": 51.188,
+   "end": 51.678
+  },
+  {
+   "text": "le",
+   "start": 52.07,
+   "end": 52.144
+  },
+  {
+   "text": "schéma",
+   "start": 52.144,
+   "end": 52.389
+  },
+  {
+   "text": "de",
+   "start": 52.389,
+   "end": 52.475
+  },
+  {
+   "text": "la",
+   "start": 52.475,
+   "end": 52.561
+  },
+  {
+   "text": "cellule,",
+   "start": 52.561,
+   "end": 52.989
+  },
+  {
+   "text": "annoté.",
+   "start": 53.235,
+   "end": 53.749
+  }
+ ]
+}

@@ -204,6 +204,10 @@ import * as organisationcorps from '../../src/videos/organisation-corps/mascot';
 import * as organisationcorpsTL from '../../src/videos/organisation-corps/timeline';
 import * as organisationcorpsschema from '../../src/videos/organisation-corps-schema/mascot';
 import * as organisationcorpsschemaTL from '../../src/videos/organisation-corps-schema/timeline';
+import * as lacellule from '../../src/videos/la-cellule/mascot';
+import * as lacelluleTL from '../../src/videos/la-cellule/timeline';
+import * as lacelluleschema from '../../src/videos/la-cellule-schema/mascot';
+import * as lacelluleschemaTL from '../../src/videos/la-cellule-schema/timeline';
 
 const VIDEOS: Record<string, [typeof constantes.MASCOT, typeof constantesTL.TL]> = {
 	constantes: [constantes.MASCOT, constantesTL.TL],
@@ -307,6 +311,8 @@ const VIDEOS: Record<string, [typeof constantes.MASCOT, typeof constantesTL.TL]>
 	'hemocultures': [hemocultures.MASCOT, hemoculturesTL.TL],
 	'organisation-corps': [organisationcorps.MASCOT, organisationcorpsTL.TL],
 	'organisation-corps-schema': [organisationcorpsschema.MASCOT, organisationcorpsschemaTL.TL],
+	'la-cellule': [lacellule.MASCOT, lacelluleTL.TL],
+	'la-cellule-schema': [lacelluleschema.MASCOT, lacelluleschemaTL.TL],
 };
 const name = process.argv[2] ?? 'constantes';
 const [MASCOT, TL] = VIDEOS[name];

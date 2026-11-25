@@ -1,0 +1,8 @@
+[
+ {"id": "intro", "rate": "+4%", "text": "Trente-sept mille milliards de cellules dans ton corps… et chacune travaille comme une petite usine. Tu sais comment elle fonctionne ?"},
+ {"id": "forme", "rate": "+3%", "text": "Un : la cellule est la plus petite unité vivante. Sa forme dépend de son rôle : ronde et plate pour le globule rouge, très longue pour le neurone, allongée pour la cellule du muscle."},
+ {"id": "parties", "rate": "+3%", "text": "Deux : trois parties. La membrane, qui choisit ce qui entre et ce qui sort. Le cytoplasme, le liquide où tout se passe. Et le noyau, qui garde l'ADN : le plan de construction."},
+ {"id": "organites", "rate": "+3%", "text": "Trois : les organites, de petits organes. Les mitochondries produisent l'énergie, les ribosomes fabriquent les protéines, et l'appareil de Golgi les emballe pour les expédier."},
+ {"id": "division", "rate": "+3%", "text": "Quatre : elle se divise. La cellule copie son ADN, puis se coupe en deux cellules identiques : c'est la mitose. Elle sert à grandir et à réparer le corps."},
+ {"id": "fin", "rate": "+2%", "text": "Unité vivante, trois parties, des organites et la division. Prochaine vidéo : le schéma de la cellule, annoté."}
+]

@@ -206,6 +206,10 @@ import {OrganisationCorps, OrganisationCorpsProps} from './videos/organisation-c
 import {TL as ORGANISATION_CORPS_TL} from './videos/organisation-corps/timeline';
 import {OrganisationCorpsSchema, OrganisationCorpsSchemaProps} from './videos/organisation-corps-schema/OrganisationCorpsSchema';
 import {TL as ORGANISATION_CORPS_SCHEMA_TL} from './videos/organisation-corps-schema/timeline';
+import {LaCellule, LaCelluleProps} from './videos/la-cellule/LaCellule';
+import {TL as LA_CELLULE_TL} from './videos/la-cellule/timeline';
+import {LaCelluleSchema, LaCelluleSchemaProps} from './videos/la-cellule-schema/LaCelluleSchema';
+import {TL as LA_CELLULE_SCHEMA_TL} from './videos/la-cellule-schema/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -1222,6 +1226,26 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies OrganisationCorpsSchemaProps}
+		/>
+		{/* 103 · La-Cellule */}
+		<Composition
+			id="La-Cellule"
+			component={LaCellule}
+			durationInFrames={LA_CELLULE_TL.total}
+			fps={LA_CELLULE_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies LaCelluleProps}
+		/>
+		{/* 104 · La-Cellule-Schema */}
+		<Composition
+			id="La-Cellule-Schema"
+			component={LaCelluleSchema}
+			durationInFrames={LA_CELLULE_SCHEMA_TL.total}
+			fps={LA_CELLULE_SCHEMA_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies LaCelluleSchemaProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition

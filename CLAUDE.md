@@ -814,6 +814,22 @@ script), « en France » / « le 15 (ou le numéro d'urgence de ton pays) ». Ca
   vessie), fin = le schéma complet en 5 vignettes cochées. Couleurs de manuel (exception validée pour l'anatomie). Briques
   locales `Ann` / `Labels` / `SchemaCard` / `LevelScene` (réutilisables pour les prochaines vidéos d'anatomie annotées),
   `CellArt`, `TissuePanel`, `HeartFront`, `WallSection`, `Body` (silhouette par l'astuce du contour), `Vessels`, `Organs`, `Thumb`.
+  **Kit des schémas annotés : `src/brand/schema.tsx`** (sorti de la n° 102) : `Ann` (légende : `ax/ay` structure, `tx/ty`
+  texte, `end` texte aligné à droite, `size` ; le trait part du côté du texte tourné vers la structure), `Labels`,
+  `SchemaCard` (carte 960 × 1120), `LevelScene` (`series` {cap, label, total}, compteur n / N, titre, carte), `Defs`,
+  `ANAT_C` (couleurs de manuel).
+- **Les cellules** (demandé : « pareil pour ce thème, 2 vidéos : une générale explicative et une schématique ») :
+  `La-Cellule` (n° 103, ≈ 61 s, voix gratuite, gabarit `labshort`, compteur 0/4) : « Trente-sept mille milliards de
+  cellules… chacune comme une petite usine », 1 · unité vivante, la forme suit le rôle (globule rouge, neurone, cellule
+  du muscle), 2 · trois parties (membrane qui filtre : molécules qui entrent / sortent, cytoplasme, noyau + ADN = le plan),
+  3 · organites (mitochondries, ribosomes, Golgi qui expédie une vésicule), 4 · la mitose (`Mitosis` : l'ADN se copie, la
+  cellule s'étrangle, deux cellules) ; briques locales `SimpleCell` (`hl`, `swap`, `organ`, `hot`), `Neuron`, `MuscleCell`.
+  `La-Cellule-Schema` (n° 104, ≈ 61 s, voix gratuite) : accroche = **le schéma muet numéroté de 1 à 12** (comme à
+  l'examen) « Douze structures dans une seule cellule… On le fait ensemble ? », puis une cellule animale de manuel
+  (`BigCell`, `focus` = structures nettes, les autres s'estompent ; repères `P`) annotée en 4 temps : enveloppe (membrane
+  plasmique, cytoplasme, cytosquelette), noyau (double enveloppe, pore nucléaire, chromatine = ADN, nucléole), fabrication
+  (ribosome, réticulum rugueux, réticulum lisse, appareil de Golgi, vésicule), énergie (mitochondrie, lysosome,
+  centrosome) ; fin = le schéma complet, cellule réduite (×0,72) et 15 légendes autour, « prochaine vidéo : les tissus ».
 - **Le tube bleu (citrate)** (demandé : « la vidéo pour le tube bleu comme les précédentes », contenu complété par l'agent ;
   une seule vidéo dépassait 60 s → 3 vidéos ; storyboard `docs/lpi/storyboard-tube-bleu.md`). `Tube-Bleu-TP-INR` (n° 75,
   ≈ 63 s, voix Laura après validation (1 009 crédits)) : « Le tube bleu, c'est la coagulation. S'il est mal rempli, le résultat est faux… et ton
