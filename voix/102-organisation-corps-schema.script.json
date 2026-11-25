@@ -1,0 +1,37 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Trente-sept mille milliards de cellules… rangées en cinq niveaux. Voici le schéma à connaître. On le lit ensemble ?"
+ },
+ {
+  "id": "cellule",
+  "rate": "+3%",
+  "text": "Un : la cellule, la plus petite unité vivante. Une membrane autour, du cytoplasme avec ses mitochondries, qui font l'énergie, et un noyau qui garde l'ADN."
+ },
+ {
+  "id": "tissu",
+  "rate": "+3%",
+  "text": "Deux : le tissu, des cellules semblables. Il en existe quatre : l'épithélial, qui recouvre, le conjonctif, qui soutient, le musculaire, qui se contracte, et le nerveux, qui transmet."
+ },
+ {
+  "id": "organe",
+  "rate": "+3%",
+  "text": "Trois : l'organe, plusieurs tissus réunis. Le péricarde enveloppe le cœur, le myocarde est son muscle, l'endocarde tapisse l'intérieur, et des nerfs règlent son rythme."
+ },
+ {
+  "id": "appareil",
+  "rate": "+3%",
+  "text": "Quatre : l'appareil, qu'on appelle aussi système. Le cœur, les artères et les veines forment l'appareil cardiovasculaire."
+ },
+ {
+  "id": "organisme",
+  "rate": "+3%",
+  "text": "Cinq : l'organisme, tous les appareils réunis : nerveux, respiratoire, digestif, urinaire… Et l'organisme, c'est toi !"
+ },
+ {
+  "id": "fin",
+  "rate": "+2%",
+  "text": "Cellule, tissu, organe, appareil, organisme : voilà le schéma complet ! Prochaine vidéo : la cellule."
+ }
+]

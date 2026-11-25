@@ -204,6 +204,8 @@ import {Hemocultures, HemoculturesProps} from './videos/hemocultures/Hemoculture
 import {TL as HEMOCULTURES_TL} from './videos/hemocultures/timeline';
 import {OrganisationCorps, OrganisationCorpsProps} from './videos/organisation-corps/OrganisationCorps';
 import {TL as ORGANISATION_CORPS_TL} from './videos/organisation-corps/timeline';
+import {OrganisationCorpsSchema, OrganisationCorpsSchemaProps} from './videos/organisation-corps-schema/OrganisationCorpsSchema';
+import {TL as ORGANISATION_CORPS_SCHEMA_TL} from './videos/organisation-corps-schema/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -1210,6 +1212,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies OrganisationCorpsProps}
+		/>
+		{/* 102 · Organisation-Corps-Schema */}
+		<Composition
+			id="Organisation-Corps-Schema"
+			component={OrganisationCorpsSchema}
+			durationInFrames={ORGANISATION_CORPS_SCHEMA_TL.total}
+			fps={ORGANISATION_CORPS_SCHEMA_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies OrganisationCorpsSchemaProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition

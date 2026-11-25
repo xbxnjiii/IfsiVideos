@@ -805,6 +805,15 @@ script), « en France » / « le 15 (ou le numéro d'urgence de ton pays) ». Ca
   appareil ou système (cœur + vaisseaux = cardiovasculaire, `Patient` `flow`), organisme (`Patient` avec poumons et
   cerveau : « c'est toi ! »), fin = fiche des 5 niveaux + « prochaine vidéo : la cellule ». Briques locales `Cell`,
   `HeartCell`, `Tissues`, `Ladder` (escalier des 5 niveaux).
+  `Organisation-Corps-Schema` (n° 102, ≈ 64 s, voix gratuite d'abord) : demandé « la même avec un schéma et les
+  annotations ». Chaque niveau = un **schéma de manuel dessiné par nous** sur une carte blanche, avec des **légendes au mot**
+  (point sur la structure, trait de rappel qui se trace, nom + sous-titre bleu, la dernière légende pulse en rose) : cellule
+  (membrane, cytoplasme, mitochondrie, noyau, ADN), 4 tissus en vignettes, l'organe = cœur de face + **paroi en coupe**
+  (péricarde : conjonctif, myocarde : musculaire, endocarde : épithélial, nerfs : nerveux), appareil cardiovasculaire
+  (silhouette, artères rouges / veines bleues où le sang circule), organisme (cerveau, poumons, cœur, digestif, reins +
+  vessie), fin = le schéma complet en 5 vignettes cochées. Couleurs de manuel (exception validée pour l'anatomie). Briques
+  locales `Ann` / `Labels` / `SchemaCard` / `LevelScene` (réutilisables pour les prochaines vidéos d'anatomie annotées),
+  `CellArt`, `TissuePanel`, `HeartFront`, `WallSection`, `Body` (silhouette par l'astuce du contour), `Vessels`, `Organs`, `Thumb`.
 - **Le tube bleu (citrate)** (demandé : « la vidéo pour le tube bleu comme les précédentes », contenu complété par l'agent ;
   une seule vidéo dépassait 60 s → 3 vidéos ; storyboard `docs/lpi/storyboard-tube-bleu.md`). `Tube-Bleu-TP-INR` (n° 75,
   ≈ 63 s, voix Laura après validation (1 009 crédits)) : « Le tube bleu, c'est la coagulation. S'il est mal rempli, le résultat est faux… et ton

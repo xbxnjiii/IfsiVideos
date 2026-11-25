@@ -1,0 +1,728 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 62.508,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.06,
+   "end": 5.783
+  },
+  {
+   "id": "cellule",
+   "start": 6.731,
+   "end": 15.725
+  },
+  {
+   "id": "tissu",
+   "start": 16.654,
+   "end": 27.757
+  },
+  {
+   "id": "organe",
+   "start": 28.711,
+   "end": 37.716
+  },
+  {
+   "id": "appareil",
+   "start": 38.658,
+   "end": 44.956
+  },
+  {
+   "id": "organisme",
+   "start": 45.891,
+   "end": 54.072
+  },
+  {
+   "id": "fin",
+   "start": 55.009,
+   "end": 62.166
+  }
+ ],
+ "words": [
+  {
+   "text": "Trente-sept",
+   "start": 0.06,
+   "end": 0.469
+  },
+  {
+   "text": "mille",
+   "start": 0.469,
+   "end": 0.613
+  },
+  {
+   "text": "milliards",
+   "start": 0.613,
+   "end": 0.901
+  },
+  {
+   "text": "de",
+   "start": 0.901,
+   "end": 0.998
+  },
+  {
+   "text": "cellules…",
+   "start": 0.998,
+   "end": 1.43
+  },
+  {
+   "text": "rangées",
+   "start": 1.635,
+   "end": 2.019
+  },
+  {
+   "text": "en",
+   "start": 2.019,
+   "end": 2.091
+  },
+  {
+   "text": "cinq",
+   "start": 2.091,
+   "end": 2.332
+  },
+  {
+   "text": "niveaux.",
+   "start": 2.332,
+   "end": 2.74
+  },
+  {
+   "text": "Voici",
+   "start": 3.067,
+   "end": 3.439
+  },
+  {
+   "text": "le",
+   "start": 3.439,
+   "end": 3.548
+  },
+  {
+   "text": "schéma",
+   "start": 3.548,
+   "end": 3.836
+  },
+  {
+   "text": "à",
+   "start": 3.836,
+   "end": 3.896
+  },
+  {
+   "text": "connaître.",
+   "start": 3.896,
+   "end": 4.473
+  },
+  {
+   "text": "On",
+   "start": 4.798,
+   "end": 4.942
+  },
+  {
+   "text": "le",
+   "start": 4.942,
+   "end": 5.026
+  },
+  {
+   "text": "lit",
+   "start": 5.026,
+   "end": 5.17
+  },
+  {
+   "text": "ensemble ?",
+   "start": 5.17,
+   "end": 5.783
+  },
+  {
+   "text": "Un :",
+   "start": 6.731,
+   "end": 6.986
+  },
+  {
+   "text": "la",
+   "start": 7.301,
+   "end": 7.398
+  },
+  {
+   "text": "cellule,",
+   "start": 7.398,
+   "end": 7.871
+  },
+  {
+   "text": "la",
+   "start": 8.151,
+   "end": 8.223
+  },
+  {
+   "text": "plus",
+   "start": 8.223,
+   "end": 8.357
+  },
+  {
+   "text": "petite",
+   "start": 8.357,
+   "end": 8.697
+  },
+  {
+   "text": "unité",
+   "start": 8.697,
+   "end": 8.976
+  },
+  {
+   "text": "vivante.",
+   "start": 8.976,
+   "end": 9.583
+  },
+  {
+   "text": "Une",
+   "start": 9.912,
+   "end": 10.033
+  },
+  {
+   "text": "membrane",
+   "start": 10.033,
+   "end": 10.373
+  },
+  {
+   "text": "autour,",
+   "start": 10.373,
+   "end": 10.822
+  },
+  {
+   "text": "du",
+   "start": 11.113,
+   "end": 11.174
+  },
+  {
+   "text": "cytoplasme",
+   "start": 11.174,
+   "end": 11.817
+  },
+  {
+   "text": "avec",
+   "start": 11.817,
+   "end": 11.999
+  },
+  {
+   "text": "ses",
+   "start": 11.999,
+   "end": 12.096
+  },
+  {
+   "text": "mitochondries,",
+   "start": 12.096,
+   "end": 12.788
+  },
+  {
+   "text": "qui",
+   "start": 13.067,
+   "end": 13.176
+  },
+  {
+   "text": "font",
+   "start": 13.176,
+   "end": 13.31
+  },
+  {
+   "text": "l'énergie,",
+   "start": 13.31,
+   "end": 13.88
+  },
+  {
+   "text": "et",
+   "start": 14.171,
+   "end": 14.269
+  },
+  {
+   "text": "un",
+   "start": 14.269,
+   "end": 14.329
+  },
+  {
+   "text": "noyau",
+   "start": 14.329,
+   "end": 14.693
+  },
+  {
+   "text": "qui",
+   "start": 14.693,
+   "end": 14.827
+  },
+  {
+   "text": "garde",
+   "start": 14.827,
+   "end": 15.106
+  },
+  {
+   "text": "l'ADN.",
+   "start": 15.106,
+   "end": 15.725
+  },
+  {
+   "text": "Deux :",
+   "start": 16.654,
+   "end": 17.042
+  },
+  {
+   "text": "le",
+   "start": 17.418,
+   "end": 17.491
+  },
+  {
+   "text": "tissu,",
+   "start": 17.491,
+   "end": 17.964
+  },
+  {
+   "text": "des",
+   "start": 18.268,
+   "end": 18.353
+  },
+  {
+   "text": "cellules",
+   "start": 18.353,
+   "end": 18.668
+  },
+  {
+   "text": "semblables.",
+   "start": 18.668,
+   "end": 19.287
+  },
+  {
+   "text": "Il",
+   "start": 19.626,
+   "end": 19.784
+  },
+  {
+   "text": "en",
+   "start": 19.784,
+   "end": 19.82
+  },
+  {
+   "text": "existe",
+   "start": 19.82,
+   "end": 20.233
+  },
+  {
+   "text": "quatre :",
+   "start": 20.233,
+   "end": 20.597
+  },
+  {
+   "text": "l'épithélial,",
+   "start": 20.876,
+   "end": 21.568
+  },
+  {
+   "text": "qui",
+   "start": 21.762,
+   "end": 21.883
+  },
+  {
+   "text": "recouvre,",
+   "start": 21.883,
+   "end": 22.405
+  },
+  {
+   "text": "le",
+   "start": 22.587,
+   "end": 22.648
+  },
+  {
+   "text": "conjonctif,",
+   "start": 22.648,
+   "end": 23.437
+  },
+  {
+   "text": "qui",
+   "start": 23.631,
+   "end": 23.74
+  },
+  {
+   "text": "soutient,",
+   "start": 23.74,
+   "end": 24.213
+  },
+  {
+   "text": "le",
+   "start": 24.529,
+   "end": 24.589
+  },
+  {
+   "text": "musculaire,",
+   "start": 24.589,
+   "end": 25.208
+  },
+  {
+   "text": "qui",
+   "start": 25.463,
+   "end": 25.548
+  },
+  {
+   "text": "se",
+   "start": 25.548,
+   "end": 25.645
+  },
+  {
+   "text": "contracte,",
+   "start": 25.645,
+   "end": 26.179
+  },
+  {
+   "text": "et",
+   "start": 26.386,
+   "end": 26.41
+  },
+  {
+   "text": "le",
+   "start": 26.41,
+   "end": 26.495
+  },
+  {
+   "text": "nerveux,",
+   "start": 26.495,
+   "end": 26.92
+  },
+  {
+   "text": "qui",
+   "start": 27.089,
+   "end": 27.186
+  },
+  {
+   "text": "transmet.",
+   "start": 27.187,
+   "end": 27.757
+  },
+  {
+   "text": "Trois :",
+   "start": 28.711,
+   "end": 29.05
+  },
+  {
+   "text": "l'organe,",
+   "start": 29.402,
+   "end": 29.961
+  },
+  {
+   "text": "plusieurs",
+   "start": 30.216,
+   "end": 30.543
+  },
+  {
+   "text": "tissus",
+   "start": 30.543,
+   "end": 30.859
+  },
+  {
+   "text": "réunis.",
+   "start": 30.859,
+   "end": 31.368
+  },
+  {
+   "text": "Le",
+   "start": 31.769,
+   "end": 31.878
+  },
+  {
+   "text": "péricarde",
+   "start": 31.878,
+   "end": 32.339
+  },
+  {
+   "text": "enveloppe",
+   "start": 32.339,
+   "end": 32.631
+  },
+  {
+   "text": "le",
+   "start": 32.631,
+   "end": 32.728
+  },
+  {
+   "text": "cœur,",
+   "start": 32.728,
+   "end": 33.055
+  },
+  {
+   "text": "le",
+   "start": 33.419,
+   "end": 33.468
+  },
+  {
+   "text": "myocarde",
+   "start": 33.468,
+   "end": 33.856
+  },
+  {
+   "text": "est",
+   "start": 33.856,
+   "end": 33.893
+  },
+  {
+   "text": "son",
+   "start": 33.893,
+   "end": 34.026
+  },
+  {
+   "text": "muscle,",
+   "start": 34.026,
+   "end": 34.427
+  },
+  {
+   "text": "l'endocarde",
+   "start": 34.682,
+   "end": 35.191
+  },
+  {
+   "text": "tapisse",
+   "start": 35.191,
+   "end": 35.519
+  },
+  {
+   "text": "l'intérieur,",
+   "start": 35.519,
+   "end": 36.089
+  },
+  {
+   "text": "et",
+   "start": 36.453,
+   "end": 36.478
+  },
+  {
+   "text": "des",
+   "start": 36.478,
+   "end": 36.575
+  },
+  {
+   "text": "nerfs",
+   "start": 36.575,
+   "end": 36.817
+  },
+  {
+   "text": "règlent",
+   "start": 36.817,
+   "end": 37.109
+  },
+  {
+   "text": "son",
+   "start": 37.109,
+   "end": 37.254
+  },
+  {
+   "text": "rythme.",
+   "start": 37.254,
+   "end": 37.716
+  },
+  {
+   "text": "Quatre :",
+   "start": 38.658,
+   "end": 39.071
+  },
+  {
+   "text": "l'appareil,",
+   "start": 39.325,
+   "end": 39.896
+  },
+  {
+   "text": "qu'on",
+   "start": 40.102,
+   "end": 40.187
+  },
+  {
+   "text": "appelle",
+   "start": 40.187,
+   "end": 40.466
+  },
+  {
+   "text": "aussi",
+   "start": 40.466,
+   "end": 40.685
+  },
+  {
+   "text": "système.",
+   "start": 40.685,
+   "end": 41.34
+  },
+  {
+   "text": "Le",
+   "start": 41.667,
+   "end": 41.861
+  },
+  {
+   "text": "cœur,",
+   "start": 41.861,
+   "end": 42.225
+  },
+  {
+   "text": "les",
+   "start": 42.504,
+   "end": 42.565
+  },
+  {
+   "text": "artères",
+   "start": 42.565,
+   "end": 42.978
+  },
+  {
+   "text": "et",
+   "start": 42.978,
+   "end": 43.002
+  },
+  {
+   "text": "les",
+   "start": 43.002,
+   "end": 43.099
+  },
+  {
+   "text": "veines",
+   "start": 43.099,
+   "end": 43.402
+  },
+  {
+   "text": "forment",
+   "start": 43.402,
+   "end": 43.645
+  },
+  {
+   "text": "l'appareil",
+   "start": 43.645,
+   "end": 44.046
+  },
+  {
+   "text": "cardiovasculaire.",
+   "start": 44.046,
+   "end": 44.956
+  },
+  {
+   "text": "Cinq :",
+   "start": 45.891,
+   "end": 46.34
+  },
+  {
+   "text": "l'organisme,",
+   "start": 46.558,
+   "end": 47.25
+  },
+  {
+   "text": "tous",
+   "start": 47.505,
+   "end": 47.602
+  },
+  {
+   "text": "les",
+   "start": 47.602,
+   "end": 47.699
+  },
+  {
+   "text": "appareils",
+   "start": 47.699,
+   "end": 48.112
+  },
+  {
+   "text": "réunis :",
+   "start": 48.112,
+   "end": 48.536
+  },
+  {
+   "text": "nerveux,",
+   "start": 48.852,
+   "end": 49.301
+  },
+  {
+   "text": "respiratoire,",
+   "start": 49.689,
+   "end": 50.417
+  },
+  {
+   "text": "digestif,",
+   "start": 50.697,
+   "end": 51.352
+  },
+  {
+   "text": "urinaire…",
+   "start": 51.595,
+   "end": 52.129
+  },
+  {
+   "text": "Et",
+   "start": 52.458,
+   "end": 52.615
+  },
+  {
+   "text": "l'organisme,",
+   "start": 52.615,
+   "end": 53.331
+  },
+  {
+   "text": "c'est",
+   "start": 53.586,
+   "end": 53.72
+  },
+  {
+   "text": "toi !",
+   "start": 53.72,
+   "end": 54.072
+  },
+  {
+   "text": "Cellule,",
+   "start": 55.009,
+   "end": 55.573
+  },
+  {
+   "text": "tissu,",
+   "start": 55.757,
+   "end": 56.198
+  },
+  {
+   "text": "organe,",
+   "start": 56.578,
+   "end": 57.056
+  },
+  {
+   "text": "appareil,",
+   "start": 57.264,
+   "end": 57.779
+  },
+  {
+   "text": "organisme :",
+   "start": 57.975,
+   "end": 58.612
+  },
+  {
+   "text": "voilà",
+   "start": 58.931,
+   "end": 59.139
+  },
+  {
+   "text": "le",
+   "start": 59.139,
+   "end": 59.237
+  },
+  {
+   "text": "schéma",
+   "start": 59.237,
+   "end": 59.495
+  },
+  {
+   "text": "complet !",
+   "start": 59.495,
+   "end": 59.973
+  },
+  {
+   "text": "Prochaine",
+   "start": 60.303,
+   "end": 60.683
+  },
+  {
+   "text": "vidéo :",
+   "start": 60.683,
+   "end": 61.161
+  },
+  {
+   "text": "la",
+   "start": 61.517,
+   "end": 61.602
+  },
+  {
+   "text": "cellule.",
+   "start": 61.602,
+   "end": 62.166
+  }
+ ]
+}

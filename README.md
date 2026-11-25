@@ -112,6 +112,7 @@ pas de logiciel de montage, pas de banque d'images.
 | 99 | Série les tubes : le tube jaune, les vitamines (D, B12, folates) et la CDT, fin de la série ; voix gratuite, directives Instagram | `Tube-Jaune-Vitamines` | [voix/99-tube-jaune-vitamines.script.json](voix/99-tube-jaune-vitamines.script.json) | [plan](docs/lpi/plan-tube-jaune-serie.md) |
 | 100 | Série les tubes : les hémocultures v2 (matériel en 8 objets, 40 – 60 mL = 2 à 3 paires sur 24 h, ordre vert / orange, asepsie) ; voix gratuite, directives Instagram | `Hemocultures` | [voix/100-hemocultures.script.json](voix/100-hemocultures.script.json) | — |
 | 101 | L'anatomie : l'organisation du corps humain (cellule, tissu, organe, appareil, organisme ; fil rouge : le cœur) ; voix gratuite, directives Instagram | `Organisation-Corps` | [voix/101-organisation-corps.script.json](voix/101-organisation-corps.script.json) | — |
+| 102 | L'anatomie : l'organisation du corps humain, **version schéma annoté** (schémas de manuel dessinés, légendes au mot) ; voix gratuite, directives Instagram | `Organisation-Corps-Schema` | [voix/102-organisation-corps-schema.script.json](voix/102-organisation-corps-schema.script.json) | — |
 
 ## Utilisation
 
