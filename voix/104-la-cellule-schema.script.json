@@ -1,8 +1,8 @@
 [
- {"id": "intro", "rate": "+4%", "text": "Douze structures dans une seule cellule. Voici le schéma à savoir annoter en anatomie. On le fait ensemble ?"},
- {"id": "enveloppe", "rate": "+3%", "text": "Un : l'enveloppe. La membrane plasmique entoure la cellule et filtre les échanges. Dedans, le cytoplasme, tenu par un squelette de fibres : le cytosquelette."},
- {"id": "noyau", "rate": "+3%", "text": "Deux : le noyau. Il est entouré d'une double enveloppe, percée de pores. Dedans, la chromatine, c'est l'ADN, et le nucléole, qui fabrique les ribosomes."},
- {"id": "fabrication", "rate": "+3%", "text": "Trois : la chaîne de fabrication. Les ribosomes fabriquent les protéines, souvent collés au réticulum rugueux. Le réticulum lisse fabrique les lipides. Puis l'appareil de Golgi les trie et les emballe dans des vésicules."},
- {"id": "energie", "rate": "+3%", "text": "Quatre : l'énergie et le ménage. Les mitochondries produisent l'énergie, les lysosomes digèrent les déchets, et le centrosome organise la division."},
+ {"id": "intro", "rate": "+4%", "text": "Quinze structures dans une seule cellule. Voici le schéma à savoir annoter en anatomie. On le fait ensemble ?"},
+ {"id": "enveloppe", "rate": "+4%", "text": "Un : l'enveloppe. La membrane plasmique entoure la cellule. Dedans, le cytoplasme, tenu par le cytosquelette : les microtubules, les microfilaments et les filaments intermédiaires."},
+ {"id": "noyau", "rate": "+4%", "text": "Deux : le noyau. Il est entouré d'une double enveloppe, percée de pores. Dedans, la chromatine, c'est l'ADN, et le nucléole, qui fabrique les ribosomes."},
+ {"id": "fabrication", "rate": "+4%", "text": "Trois : la fabrication. Les ribosomes fabriquent les protéines, collés au réticulum rugueux. Le réticulum lisse fabrique les lipides. L'appareil de Golgi les emballe, et les vésicules de sécrétion les envoient hors de la cellule."},
+ {"id": "energie", "rate": "+4%", "text": "Quatre : l'énergie et le ménage. Les mitochondries produisent l'énergie, les lysosomes digèrent les déchets, les peroxysomes détruisent les produits toxiques, et le centrosome organise la division."},
  {"id": "fin", "rate": "+2%", "text": "Voilà le schéma complet de la cellule ! Prochaine vidéo : les tissus."}
 ]
