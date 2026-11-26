@@ -1,758 +1,758 @@
 {
- "voice": "voix.wav (tts_voix.py)",
- "duration": 47.8,
+ "voice": "pad-tube-jaune-enzymes.wav",
+ "duration": 50.873,
  "sections": [
   {
    "id": "intro",
-   "start": 0.049,
-   "end": 5.721
+   "start": 0.0,
+   "end": 5.916
   },
   {
    "id": "cpk",
-   "start": 6.647,
-   "end": 16.575
+   "start": 6.721,
+   "end": 18.105
   },
   {
    "id": "ldh",
-   "start": 17.494,
-   "end": 28.015
+   "start": 18.908,
+   "end": 30.887
   },
   {
    "id": "lipase",
-   "start": 28.963,
-   "end": 38.94
+   "start": 31.686,
+   "end": 42.465
   },
   {
    "id": "fin",
-   "start": 39.882,
-   "end": 47.455
+   "start": 43.255,
+   "end": 50.68
   }
  ],
  "words": [
   {
    "text": "Quand",
-   "start": 0.049,
-   "end": 0.181
+   "start": 0.0,
+   "end": 0.2
   },
   {
    "text": "des",
-   "start": 0.181,
-   "end": 0.265
+   "start": 0.2,
+   "end": 0.46
   },
   {
    "text": "cellules",
-   "start": 0.265,
-   "end": 0.59
+   "start": 0.46,
+   "end": 0.74
   },
   {
    "text": "meurent,",
-   "start": 0.59,
-   "end": 0.938
+   "start": 0.74,
+   "end": 1.22
   },
   {
    "text": "elles",
-   "start": 1.227,
-   "end": 1.287
+   "start": 1.4,
+   "end": 1.52
   },
   {
    "text": "lâchent",
-   "start": 1.287,
-   "end": 1.515
+   "start": 1.52,
+   "end": 1.78
   },
   {
    "text": "leurs",
-   "start": 1.515,
-   "end": 1.624
+   "start": 1.78,
+   "end": 2.04
   },
   {
    "text": "enzymes",
-   "start": 1.624,
-   "end": 2.008
+   "start": 2.04,
+   "end": 2.28
   },
   {
    "text": "dans",
-   "start": 2.008,
-   "end": 2.104
+   "start": 2.28,
+   "end": 2.52
   },
   {
    "text": "le",
-   "start": 2.104,
-   "end": 2.2
+   "start": 2.52,
+   "end": 2.66
   },
   {
    "text": "sang.",
-   "start": 2.2,
-   "end": 2.489
+   "start": 2.66,
+   "end": 2.84
   },
   {
    "text": "Trois",
-   "start": 2.813,
-   "end": 3.03
+   "start": 3.22,
+   "end": 3.44
   },
   {
    "text": "d'entre",
-   "start": 3.03,
-   "end": 3.318
+   "start": 3.44,
+   "end": 3.72
   },
   {
    "text": "elles",
-   "start": 3.318,
-   "end": 3.474
+   "start": 3.72,
+   "end": 3.84
   },
   {
    "text": "se",
-   "start": 3.474,
-   "end": 3.607
+   "start": 3.84,
+   "end": 4.06
   },
   {
    "text": "dosent",
-   "start": 3.607,
-   "end": 3.835
+   "start": 4.06,
+   "end": 4.26
   },
   {
    "text": "dans",
-   "start": 3.835,
-   "end": 3.931
+   "start": 4.26,
+   "end": 4.4
   },
   {
    "text": "le",
-   "start": 3.931,
-   "end": 4.015
+   "start": 4.4,
+   "end": 4.58
   },
   {
    "text": "tube",
-   "start": 4.015,
-   "end": 4.196
+   "start": 4.58,
+   "end": 4.7
   },
   {
    "text": "jaune.",
-   "start": 4.196,
-   "end": 4.628
+   "start": 4.7,
+   "end": 5.06
   },
   {
    "text": "Tu",
-   "start": 5.0,
-   "end": 5.096
+   "start": 5.28,
+   "end": 5.42
   },
   {
    "text": "sais",
-   "start": 5.096,
-   "end": 5.216
+   "start": 5.42,
+   "end": 5.58
   },
   {
-   "text": "lesquelles ?",
-   "start": 5.216,
-   "end": 5.721
+   "text": "lesquelles ?",
+   "start": 5.58,
+   "end": 5.916
   },
   {
-   "text": "Un :",
-   "start": 6.647,
-   "end": 6.914
+   "text": "Un :",
+   "start": 6.721,
+   "end": 6.96
   },
   {
    "text": "les",
-   "start": 7.241,
-   "end": 7.338
+   "start": 7.22,
+   "end": 7.58
   },
   {
    "text": "CPK,",
-   "start": 7.338,
-   "end": 7.884
+   "start": 7.58,
+   "end": 8.06
   },
   {
    "text": "l'enzyme",
-   "start": 8.248,
-   "end": 8.576
+   "start": 8.28,
+   "end": 8.7
   },
   {
    "text": "des",
-   "start": 8.576,
-   "end": 8.661
+   "start": 8.7,
+   "end": 8.94
   },
   {
    "text": "muscles.",
-   "start": 8.661,
-   "end": 9.134
+   "start": 8.94,
+   "end": 9.24
   },
   {
    "text": "Elles",
-   "start": 9.463,
-   "end": 9.657
+   "start": 9.66,
+   "end": 9.9
   },
   {
    "text": "montent",
-   "start": 9.657,
-   "end": 9.851
+   "start": 9.9,
+   "end": 10.02
   },
   {
    "text": "après",
-   "start": 9.851,
-   "end": 10.058
+   "start": 10.02,
+   "end": 10.28
   },
   {
    "text": "un",
-   "start": 10.058,
-   "end": 10.106
+   "start": 10.28,
+   "end": 10.54
   },
   {
    "text": "gros",
-   "start": 10.106,
-   "end": 10.24
+   "start": 10.54,
+   "end": 10.68
   },
   {
    "text": "effort,",
-   "start": 10.24,
-   "end": 10.725
+   "start": 10.68,
+   "end": 11.14
   },
   {
    "text": "une",
-   "start": 10.919,
-   "end": 10.992
+   "start": 11.38,
+   "end": 11.54
   },
   {
    "text": "chute",
-   "start": 10.992,
-   "end": 11.296
+   "start": 11.54,
+   "end": 11.86
   },
   {
    "text": "ou",
-   "start": 11.296,
-   "end": 11.344
+   "start": 11.86,
+   "end": 12.04
   },
   {
    "text": "une",
-   "start": 11.344,
-   "end": 11.441
+   "start": 12.04,
+   "end": 12.24
   },
   {
    "text": "injection",
-   "start": 11.441,
-   "end": 11.781
+   "start": 12.24,
+   "end": 12.6
   },
   {
    "text": "dans",
-   "start": 11.781,
-   "end": 11.878
+   "start": 12.6,
+   "end": 12.76
   },
   {
    "text": "le",
-   "start": 11.878,
-   "end": 11.963
+   "start": 12.76,
+   "end": 12.92
   },
   {
    "text": "muscle…",
-   "start": 11.963,
-   "end": 12.315
+   "start": 12.92,
+   "end": 13.18
   },
   {
    "text": "et",
-   "start": 12.788,
-   "end": 12.813
+   "start": 13.66,
+   "end": 13.84
   },
   {
    "text": "énormément",
-   "start": 12.813,
-   "end": 13.286
+   "start": 13.84,
+   "end": 14.4
   },
   {
    "text": "quand",
-   "start": 13.286,
-   "end": 13.407
+   "start": 14.4,
+   "end": 14.68
   },
   {
    "text": "le",
-   "start": 13.419,
-   "end": 13.504
+   "start": 14.68,
+   "end": 14.9
   },
   {
    "text": "muscle",
-   "start": 13.504,
-   "end": 13.759
+   "start": 14.9,
+   "end": 15.06
   },
   {
    "text": "est",
-   "start": 13.759,
-   "end": 13.784
+   "start": 15.06,
+   "end": 15.22
   },
   {
-   "text": "détruit :",
-   "start": 13.784,
-   "end": 14.196
+   "text": "détruit :",
+   "start": 15.22,
+   "end": 15.58
   },
   {
    "text": "c'est",
-   "start": 14.548,
-   "end": 14.633
+   "start": 15.9,
+   "end": 16.06
   },
   {
    "text": "la",
-   "start": 14.633,
-   "end": 14.718
+   "start": 16.06,
+   "end": 16.2
   },
   {
    "text": "rhabdomyolyse,",
-   "start": 14.718,
-   "end": 15.507
+   "start": 16.2,
+   "end": 17.06
   },
   {
    "text": "dangereuse",
-   "start": 15.677,
-   "end": 16.089
+   "start": 17.38,
+   "end": 17.68
   },
   {
    "text": "pour",
-   "start": 16.089,
-   "end": 16.223
+   "start": 17.68,
+   "end": 17.88
   },
   {
    "text": "les",
-   "start": 16.223,
-   "end": 16.296
+   "start": 17.88,
+   "end": 18.02
   },
   {
    "text": "reins.",
-   "start": 16.296,
-   "end": 16.575
+   "start": 18.02,
+   "end": 18.105
   },
   {
-   "text": "Deux :",
-   "start": 17.494,
-   "end": 17.882
+   "text": "Deux :",
+   "start": 18.908,
+   "end": 19.4
   },
   {
    "text": "les",
-   "start": 18.246,
-   "end": 18.356
+   "start": 19.62,
+   "end": 19.94
   },
   {
    "text": "LDH.",
-   "start": 18.356,
-   "end": 19.096
+   "start": 19.94,
+   "end": 20.54
   },
   {
    "text": "On",
-   "start": 19.423,
-   "end": 19.545
+   "start": 20.94,
+   "end": 21.08
   },
   {
    "text": "en",
-   "start": 19.545,
-   "end": 19.642
+   "start": 21.08,
+   "end": 21.24
   },
   {
    "text": "trouve",
-   "start": 19.642,
-   "end": 19.848
+   "start": 21.24,
+   "end": 21.36
   },
   {
    "text": "dans",
-   "start": 19.848,
-   "end": 19.957
+   "start": 21.36,
+   "end": 21.62
   },
   {
    "text": "presque",
-   "start": 19.957,
-   "end": 20.309
+   "start": 21.62,
+   "end": 22.08
   },
   {
    "text": "toutes",
-   "start": 20.309,
-   "end": 20.491
+   "start": 22.08,
+   "end": 22.3
   },
   {
    "text": "les",
-   "start": 20.491,
-   "end": 20.576
+   "start": 22.3,
+   "end": 22.54
   },
   {
-   "text": "cellules :",
-   "start": 20.576,
-   "end": 20.977
+   "text": "cellules :",
+   "start": 22.54,
+   "end": 22.88
   },
   {
    "text": "elles",
-   "start": 21.426,
-   "end": 21.498
+   "start": 23.2,
+   "end": 23.48
   },
   {
    "text": "montent",
-   "start": 21.498,
-   "end": 21.79
+   "start": 23.48,
+   "end": 23.78
   },
   {
    "text": "dès",
-   "start": 21.79,
-   "end": 21.935
+   "start": 23.78,
+   "end": 24.06
   },
   {
    "text": "que",
-   "start": 21.935,
-   "end": 22.045
+   "start": 24.06,
+   "end": 24.14
   },
   {
    "text": "des",
-   "start": 22.045,
-   "end": 22.142
+   "start": 24.14,
+   "end": 24.34
   },
   {
    "text": "cellules",
-   "start": 22.142,
-   "end": 22.457
+   "start": 24.34,
+   "end": 24.62
   },
   {
    "text": "meurent,",
-   "start": 22.457,
-   "end": 22.797
+   "start": 24.62,
+   "end": 25.02
   },
   {
    "text": "comme",
-   "start": 23.052,
-   "end": 23.185
+   "start": 25.12,
+   "end": 25.26
   },
   {
    "text": "les",
-   "start": 23.185,
-   "end": 23.246
+   "start": 25.26,
+   "end": 25.44
   },
   {
    "text": "globules",
-   "start": 23.246,
-   "end": 23.501
+   "start": 25.44,
+   "end": 25.76
   },
   {
    "text": "rouges,",
-   "start": 23.501,
-   "end": 23.865
+   "start": 25.76,
+   "end": 26.12
   },
   {
    "text": "le",
-   "start": 24.059,
-   "end": 24.132
+   "start": 26.24,
+   "end": 26.52
   },
   {
    "text": "foie",
-   "start": 24.132,
-   "end": 24.399
+   "start": 26.52,
+   "end": 26.8
   },
   {
    "text": "ou",
-   "start": 24.399,
-   "end": 24.46
+   "start": 26.8,
+   "end": 27.1
   },
   {
    "text": "certains",
-   "start": 24.46,
-   "end": 24.775
+   "start": 27.1,
+   "end": 27.38
   },
   {
    "text": "cancers.",
-   "start": 24.775,
-   "end": 25.37
+   "start": 27.38,
+   "end": 27.84
   },
   {
    "text": "Un",
-   "start": 25.697,
-   "end": 25.867
+   "start": 27.84,
+   "end": 28.5
   },
   {
    "text": "bon",
-   "start": 25.867,
-   "end": 26.013
+   "start": 28.5,
+   "end": 28.7
   },
   {
    "text": "signal",
-   "start": 26.013,
-   "end": 26.365
+   "start": 28.7,
+   "end": 28.98
   },
   {
    "text": "d'alerte…",
-   "start": 26.365,
-   "end": 26.887
+   "start": 28.98,
+   "end": 29.52
   },
   {
    "text": "mais",
-   "start": 27.178,
-   "end": 27.251
+   "start": 29.84,
+   "end": 30.02
   },
   {
    "text": "pas",
-   "start": 27.251,
-   "end": 27.36
+   "start": 30.02,
+   "end": 30.32
   },
   {
    "text": "très",
-   "start": 27.36,
-   "end": 27.518
+   "start": 30.32,
+   "end": 30.56
   },
   {
    "text": "précis.",
-   "start": 27.518,
-   "end": 28.015
+   "start": 30.56,
+   "end": 30.887
   },
   {
-   "text": "Trois :",
-   "start": 28.963,
-   "end": 29.339
+   "text": "Trois :",
+   "start": 31.686,
+   "end": 31.94
   },
   {
    "text": "la",
-   "start": 29.74,
-   "end": 29.801
+   "start": 32.32,
+   "end": 32.54
   },
   {
    "text": "lipase,",
-   "start": 29.801,
-   "end": 30.371
+   "start": 32.54,
+   "end": 33.1
   },
   {
    "text": "l'enzyme",
-   "start": 30.662,
-   "end": 31.038
+   "start": 33.34,
+   "end": 33.7
   },
   {
    "text": "du",
-   "start": 31.039,
-   "end": 31.123
+   "start": 33.7,
+   "end": 33.88
   },
   {
    "text": "pancréas.",
-   "start": 31.123,
-   "end": 31.852
+   "start": 33.88,
+   "end": 34.46
   },
   {
    "text": "Plus",
-   "start": 32.18,
-   "end": 32.398
+   "start": 34.84,
+   "end": 34.92
   },
   {
    "text": "de",
-   "start": 32.398,
-   "end": 32.483
+   "start": 34.92,
+   "end": 35.28
   },
   {
    "text": "trois",
-   "start": 32.483,
-   "end": 32.665
+   "start": 35.28,
+   "end": 35.42
   },
   {
    "text": "fois",
-   "start": 32.665,
-   "end": 32.811
+   "start": 35.42,
+   "end": 35.56
   },
   {
    "text": "la",
-   "start": 32.811,
-   "end": 32.872
+   "start": 35.56,
+   "end": 35.76
   },
   {
    "text": "normale,",
-   "start": 32.872,
-   "end": 33.321
+   "start": 35.76,
+   "end": 36.08
   },
   {
    "text": "avec",
-   "start": 33.636,
-   "end": 33.818
+   "start": 36.08,
+   "end": 36.5
   },
   {
    "text": "une",
-   "start": 33.818,
-   "end": 33.903
+   "start": 36.5,
+   "end": 36.72
   },
   {
    "text": "douleur",
-   "start": 33.903,
-   "end": 34.158
+   "start": 36.72,
+   "end": 37.04
   },
   {
    "text": "au",
-   "start": 34.158,
-   "end": 34.207
+   "start": 37.04,
+   "end": 37.16
   },
   {
    "text": "ventre",
-   "start": 34.207,
-   "end": 34.522
+   "start": 37.16,
+   "end": 37.4
   },
   {
    "text": "qui",
-   "start": 34.522,
-   "end": 34.656
+   "start": 37.4,
+   "end": 37.64
   },
   {
    "text": "part",
-   "start": 34.656,
-   "end": 34.826
+   "start": 37.64,
+   "end": 37.78
   },
   {
    "text": "dans",
-   "start": 34.826,
-   "end": 34.947
+   "start": 37.78,
+   "end": 37.94
   },
   {
    "text": "le",
-   "start": 34.947,
-   "end": 35.056
+   "start": 37.94,
+   "end": 38.08
   },
   {
-   "text": "dos :",
-   "start": 35.056,
-   "end": 35.299
+   "text": "dos :",
+   "start": 38.08,
+   "end": 38.16
   },
   {
    "text": "c'est",
-   "start": 35.76,
-   "end": 35.833
+   "start": 38.6,
+   "end": 38.78
   },
   {
    "text": "une",
-   "start": 35.833,
-   "end": 35.979
+   "start": 38.78,
+   "end": 38.9
   },
   {
    "text": "pancréatite",
-   "start": 35.979,
-   "end": 36.573
+   "start": 38.9,
+   "end": 39.6
   },
   {
    "text": "aiguë,",
-   "start": 36.573,
-   "end": 36.852
+   "start": 39.6,
+   "end": 40.14
   },
   {
    "text": "le",
-   "start": 37.144,
-   "end": 37.204
+   "start": 40.28,
+   "end": 40.36
   },
   {
    "text": "plus",
-   "start": 37.204,
-   "end": 37.338
+   "start": 40.36,
+   "end": 40.52
   },
   {
    "text": "souvent",
-   "start": 37.338,
-   "end": 37.593
+   "start": 40.52,
+   "end": 40.8
   },
   {
    "text": "due",
-   "start": 37.593,
-   "end": 37.75
+   "start": 40.8,
+   "end": 41.0
   },
   {
    "text": "à",
-   "start": 37.75,
-   "end": 37.811
+   "start": 41.0,
+   "end": 41.14
   },
   {
    "text": "un",
-   "start": 37.811,
-   "end": 37.847
+   "start": 41.14,
+   "end": 41.32
   },
   {
    "text": "calcul",
-   "start": 37.848,
-   "end": 38.284
+   "start": 41.32,
+   "end": 41.68
   },
   {
    "text": "ou",
-   "start": 38.284,
-   "end": 38.333
+   "start": 41.68,
+   "end": 41.94
   },
   {
    "text": "à",
-   "start": 38.333,
-   "end": 38.369
+   "start": 41.94,
+   "end": 42.04
   },
   {
    "text": "l'alcool.",
-   "start": 38.369,
-   "end": 38.94
+   "start": 42.04,
+   "end": 42.465
   },
   {
    "text": "CPK,",
-   "start": 39.882,
-   "end": 40.519
+   "start": 43.255,
+   "end": 44.46
   },
   {
    "text": "LDH,",
-   "start": 40.887,
-   "end": 41.597
+   "start": 44.46,
+   "end": 44.94
   },
   {
-   "text": "lipase :",
-   "start": 41.879,
-   "end": 42.468
+   "text": "lipase :",
+   "start": 45.06,
+   "end": 45.62
   },
   {
    "text": "tu",
-   "start": 42.749,
-   "end": 42.86
+   "start": 46.0,
+   "end": 46.08
   },
   {
    "text": "sais",
-   "start": 42.86,
-   "end": 42.982
+   "start": 46.08,
+   "end": 46.28
   },
   {
    "text": "lire",
-   "start": 42.982,
-   "end": 43.178
+   "start": 46.28,
+   "end": 46.46
   },
   {
    "text": "les",
-   "start": 43.178,
-   "end": 43.252
+   "start": 46.46,
+   "end": 46.7
   },
   {
    "text": "enzymes.",
-   "start": 43.252,
-   "end": 43.816
+   "start": 46.7,
+   "end": 47.0
   },
   {
    "text": "Prochaine",
-   "start": 44.183,
-   "end": 44.55
+   "start": 47.6,
+   "end": 47.82
   },
   {
-   "text": "vidéo :",
-   "start": 44.55,
-   "end": 45.028
+   "text": "vidéo :",
+   "start": 47.82,
+   "end": 48.16
   },
   {
    "text": "le",
-   "start": 45.383,
-   "end": 45.457
+   "start": 48.48,
+   "end": 48.64
   },
   {
    "text": "sodium,",
-   "start": 45.457,
-   "end": 45.972
+   "start": 48.64,
+   "end": 49.04
   },
   {
    "text": "le",
-   "start": 46.29,
-   "end": 46.352
+   "start": 49.3,
+   "end": 49.44
   },
   {
    "text": "potassium",
-   "start": 46.352,
-   "end": 46.879
+   "start": 49.44,
+   "end": 49.92
   },
   {
    "text": "et",
-   "start": 46.879,
-   "end": 46.915
+   "start": 49.92,
+   "end": 50.24
   },
   {
    "text": "le",
-   "start": 46.915,
-   "end": 47.001
+   "start": 50.24,
+   "end": 50.44
   },
   {
    "text": "chlore.",
-   "start": 47.001,
-   "end": 47.455
+   "start": 50.44,
+   "end": 50.68
   }
  ]
 }

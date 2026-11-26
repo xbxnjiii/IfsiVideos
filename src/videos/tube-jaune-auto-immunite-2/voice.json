@@ -1,803 +1,803 @@
 {
- "voice": "voix.wav (tts_voix.py)",
- "duration": 52.958,
+ "voice": "pad-tube-jaune-auto-immunite-2.wav",
+ "duration": 55.64,
  "sections": [
   {
    "id": "intro",
-   "start": 0.05,
-   "end": 6.911
+   "start": 0.0,
+   "end": 6.82
   },
   {
    "id": "ccp",
-   "start": 7.859,
-   "end": 16.537
+   "start": 7.675,
+   "end": 17.723
   },
   {
    "id": "fr",
-   "start": 17.47,
-   "end": 27.324
+   "start": 18.523,
+   "end": 29.035
   },
   {
    "id": "tpo",
-   "start": 28.243,
-   "end": 36.387
+   "start": 29.846,
+   "end": 38.837
   },
   {
    "id": "tg",
-   "start": 37.314,
-   "end": 44.11
+   "start": 39.639,
+   "end": 46.718
   },
   {
    "id": "fin",
-   "start": 45.04,
-   "end": 52.613
+   "start": 47.517,
+   "end": 55.5
   }
  ],
  "words": [
   {
    "text": "Des",
-   "start": 0.05,
-   "end": 0.23
+   "start": 0.0,
+   "end": 0.26
   },
   {
    "text": "doigts",
-   "start": 0.23,
-   "end": 0.422
+   "start": 0.26,
+   "end": 0.56
   },
   {
    "text": "raides",
-   "start": 0.422,
-   "end": 0.687
+   "start": 0.56,
+   "end": 0.76
   },
   {
    "text": "et",
-   "start": 0.687,
-   "end": 0.723
+   "start": 0.76,
+   "end": 0.92
   },
   {
    "text": "gonflés",
-   "start": 0.723,
-   "end": 1.095
+   "start": 0.92,
+   "end": 1.24
   },
   {
    "text": "tous",
-   "start": 1.095,
-   "end": 1.191
+   "start": 1.24,
+   "end": 1.4
   },
   {
    "text": "les",
-   "start": 1.191,
-   "end": 1.263
+   "start": 1.4,
+   "end": 1.58
   },
   {
-   "text": "matins ?",
-   "start": 1.263,
-   "end": 1.696
+   "text": "matins ?",
+   "start": 1.58,
+   "end": 1.96
   },
   {
    "text": "Ou",
-   "start": 2.021,
-   "end": 2.177
+   "start": 2.2,
+   "end": 2.38
   },
   {
    "text": "une",
-   "start": 2.177,
-   "end": 2.274
+   "start": 2.38,
+   "end": 2.58
   },
   {
    "text": "thyroïde",
-   "start": 2.274,
-   "end": 2.742
+   "start": 2.58,
+   "end": 2.96
   },
   {
    "text": "qui",
-   "start": 2.742,
-   "end": 2.862
+   "start": 2.96,
+   "end": 3.12
   },
   {
    "text": "se",
-   "start": 2.862,
-   "end": 2.971
+   "start": 3.12,
+   "end": 3.26
   },
   {
-   "text": "dérègle ?",
-   "start": 2.971,
-   "end": 3.499
+   "text": "dérègle ?",
+   "start": 3.26,
+   "end": 3.58
   },
   {
    "text": "Le",
-   "start": 3.87,
-   "end": 3.99
+   "start": 3.98,
+   "end": 4.2
   },
   {
    "text": "tube",
-   "start": 3.99,
-   "end": 4.183
+   "start": 4.2,
+   "end": 4.42
   },
   {
    "text": "jaune",
-   "start": 4.183,
-   "end": 4.507
+   "start": 4.42,
+   "end": 4.64
   },
   {
    "text": "cherche",
-   "start": 4.507,
-   "end": 4.82
+   "start": 4.64,
+   "end": 4.96
   },
   {
    "text": "quatre",
-   "start": 4.82,
-   "end": 5.06
+   "start": 4.96,
+   "end": 5.32
   },
   {
    "text": "anticorps",
-   "start": 5.06,
-   "end": 5.397
+   "start": 5.32,
+   "end": 5.7
   },
   {
    "text": "de",
-   "start": 5.397,
-   "end": 5.481
+   "start": 5.7,
+   "end": 5.94
   },
   {
    "text": "plus.",
-   "start": 5.481,
-   "end": 5.949
+   "start": 5.94,
+   "end": 6.14
   },
   {
    "text": "Tu",
-   "start": 6.322,
-   "end": 6.406
+   "start": 6.34,
+   "end": 6.48
   },
   {
    "text": "les",
-   "start": 6.406,
-   "end": 6.49
+   "start": 6.48,
+   "end": 6.7
   },
   {
-   "text": "connais ?",
-   "start": 6.49,
-   "end": 6.911
+   "text": "connais ?",
+   "start": 6.7,
+   "end": 6.82
   },
   {
-   "text": "Un :",
-   "start": 7.859,
-   "end": 8.126
+   "text": "Un :",
+   "start": 7.675,
+   "end": 7.92
   },
   {
    "text": "les",
-   "start": 8.441,
-   "end": 8.526
+   "start": 8.2,
+   "end": 8.66
   },
   {
    "text": "anti-C",
-   "start": 8.526,
-   "end": 8.878
+   "start": 8.66,
+   "end": 8.66
   },
   {
    "text": "C",
-   "start": 8.878,
-   "end": 9.012
+   "start": 8.66,
+   "end": 9.46
   },
   {
    "text": "P.",
-   "start": 9.012,
-   "end": 9.23
+   "start": 8.66,
+   "end": 9.46
   },
   {
    "text": "Ils",
-   "start": 9.23,
-   "end": 9.351
+   "start": 9.9,
+   "end": 9.92
   },
   {
    "text": "sont",
-   "start": 9.351,
-   "end": 9.473
+   "start": 9.92,
+   "end": 10.18
   },
   {
    "text": "très",
-   "start": 9.473,
-   "end": 9.643
+   "start": 10.18,
+   "end": 10.5
   },
   {
    "text": "spécifiques",
-   "start": 9.643,
-   "end": 10.152
+   "start": 10.5,
+   "end": 10.94
   },
   {
    "text": "de",
-   "start": 10.152,
-   "end": 10.225
+   "start": 10.94,
+   "end": 11.12
   },
   {
    "text": "la",
-   "start": 10.225,
-   "end": 10.298
+   "start": 11.12,
+   "end": 11.3
   },
   {
    "text": "polyarthrite",
-   "start": 10.298,
-   "end": 10.808
+   "start": 11.3,
+   "end": 11.84
   },
   {
    "text": "rhumatoïde,",
-   "start": 10.808,
-   "end": 11.39
+   "start": 11.84,
+   "end": 12.48
   },
   {
    "text": "une",
-   "start": 11.791,
-   "end": 11.851
+   "start": 12.68,
+   "end": 12.84
   },
   {
    "text": "inflammation",
-   "start": 11.851,
-   "end": 12.349
+   "start": 12.84,
+   "end": 13.26
   },
   {
    "text": "des",
-   "start": 12.349,
-   "end": 12.422
+   "start": 13.26,
+   "end": 13.54
   },
   {
    "text": "articulations,",
-   "start": 12.422,
-   "end": 13.198
+   "start": 13.54,
+   "end": 14.2
   },
   {
    "text": "surtout",
-   "start": 13.441,
-   "end": 13.696
+   "start": 14.5,
+   "end": 14.72
   },
   {
    "text": "des",
-   "start": 13.696,
-   "end": 13.817
+   "start": 14.72,
+   "end": 14.88
   },
   {
    "text": "mains.",
-   "start": 13.817,
-   "end": 14.109
+   "start": 14.88,
+   "end": 15.04
   },
   {
    "text": "Ils",
-   "start": 14.45,
-   "end": 14.644
+   "start": 15.4,
+   "end": 15.56
   },
   {
    "text": "peuvent",
-   "start": 14.644,
-   "end": 14.863
+   "start": 15.56,
+   "end": 15.78
   },
   {
    "text": "même",
-   "start": 14.863,
-   "end": 15.02
+   "start": 15.78,
+   "end": 16.06
   },
   {
    "text": "apparaître",
-   "start": 15.02,
-   "end": 15.506
+   "start": 16.06,
+   "end": 16.54
   },
   {
    "text": "avant",
-   "start": 15.506,
-   "end": 15.651
+   "start": 16.54,
+   "end": 16.88
   },
   {
    "text": "les",
-   "start": 15.651,
-   "end": 15.724
+   "start": 16.88,
+   "end": 17.1
   },
   {
    "text": "premières",
-   "start": 15.724,
-   "end": 16.04
+   "start": 17.1,
+   "end": 17.38
   },
   {
    "text": "douleurs.",
-   "start": 16.04,
-   "end": 16.537
+   "start": 17.38,
+   "end": 17.723
   },
   {
-   "text": "Deux :",
-   "start": 17.47,
-   "end": 17.858
+   "text": "Deux :",
+   "start": 18.523,
+   "end": 19.04
   },
   {
    "text": "le",
-   "start": 18.246,
-   "end": 18.319
+   "start": 19.2,
+   "end": 19.52
   },
   {
    "text": "facteur",
-   "start": 18.319,
-   "end": 18.744
+   "start": 19.52,
+   "end": 19.9
   },
   {
    "text": "rhumatoïde.",
-   "start": 18.744,
-   "end": 19.472
+   "start": 19.9,
+   "end": 20.16
   },
   {
    "text": "Il",
-   "start": 19.8,
-   "end": 19.97
+   "start": 20.98,
+   "end": 21.18
   },
   {
    "text": "accompagne",
-   "start": 19.97,
-   "end": 20.383
+   "start": 21.18,
+   "end": 21.52
   },
   {
    "text": "souvent",
-   "start": 20.383,
-   "end": 20.65
+   "start": 21.52,
+   "end": 21.92
   },
   {
    "text": "les",
-   "start": 20.65,
-   "end": 20.735
+   "start": 21.92,
+   "end": 22.16
   },
   {
    "text": "anti-C",
-   "start": 20.735,
-   "end": 21.135
+   "start": 22.16,
+   "end": 22.16
   },
   {
    "text": "C",
-   "start": 21.135,
-   "end": 21.269
+   "start": 22.16,
+   "end": 22.92
   },
   {
    "text": "P,",
-   "start": 21.269,
-   "end": 21.523
+   "start": 22.16,
+   "end": 22.92
   },
   {
    "text": "mais",
-   "start": 21.863,
-   "end": 21.936
+   "start": 23.02,
+   "end": 23.3
   },
   {
    "text": "il",
-   "start": 21.936,
-   "end": 22.082
+   "start": 23.3,
+   "end": 23.48
   },
   {
    "text": "est",
-   "start": 22.082,
-   "end": 22.106
+   "start": 23.48,
+   "end": 23.56
   },
   {
    "text": "moins",
-   "start": 22.106,
-   "end": 22.252
+   "start": 23.56,
+   "end": 23.76
   },
   {
-   "text": "précis :",
-   "start": 22.252,
-   "end": 22.725
+   "text": "précis :",
+   "start": 23.76,
+   "end": 24.12
   },
   {
    "text": "on",
-   "start": 23.065,
-   "end": 23.089
+   "start": 24.42,
+   "end": 24.58
   },
   {
    "text": "le",
-   "start": 23.089,
-   "end": 23.162
+   "start": 24.58,
+   "end": 24.76
   },
   {
    "text": "trouve",
-   "start": 23.162,
-   "end": 23.392
+   "start": 24.76,
+   "end": 24.88
   },
   {
    "text": "aussi",
-   "start": 23.392,
-   "end": 23.647
+   "start": 24.88,
+   "end": 25.16
   },
   {
    "text": "dans",
-   "start": 23.647,
-   "end": 23.756
+   "start": 25.16,
+   "end": 25.26
   },
   {
    "text": "des",
-   "start": 23.756,
-   "end": 23.841
+   "start": 25.26,
+   "end": 25.5
   },
   {
    "text": "infections,",
-   "start": 23.841,
-   "end": 24.46
+   "start": 25.5,
+   "end": 25.94
   },
   {
    "text": "d'autres",
-   "start": 24.703,
-   "end": 24.958
+   "start": 26.24,
+   "end": 26.5
   },
   {
    "text": "maladies,",
-   "start": 24.958,
-   "end": 25.455
+   "start": 26.5,
+   "end": 27.16
   },
   {
    "text": "et",
-   "start": 25.759,
-   "end": 25.832
+   "start": 27.16,
+   "end": 27.52
   },
   {
    "text": "chez",
-   "start": 25.832,
-   "end": 25.929
+   "start": 27.52,
+   "end": 27.66
   },
   {
    "text": "des",
-   "start": 25.929,
-   "end": 26.014
+   "start": 27.66,
+   "end": 27.9
   },
   {
    "text": "personnes",
-   "start": 26.014,
-   "end": 26.353
+   "start": 27.9,
+   "end": 28.14
   },
   {
    "text": "âgées",
-   "start": 26.354,
-   "end": 26.608
+   "start": 28.14,
+   "end": 28.4
   },
   {
    "text": "en",
-   "start": 26.608,
-   "end": 26.681
+   "start": 28.4,
+   "end": 28.58
   },
   {
    "text": "bonne",
-   "start": 26.681,
-   "end": 26.851
+   "start": 28.58,
+   "end": 28.74
   },
   {
    "text": "santé.",
-   "start": 26.851,
-   "end": 27.324
+   "start": 28.74,
+   "end": 29.035
   },
   {
-   "text": "Trois :",
-   "start": 28.243,
-   "end": 28.643
+   "text": "Trois :",
+   "start": 29.846,
+   "end": 30.28
   },
   {
    "text": "les",
-   "start": 28.971,
-   "end": 29.08
+   "start": 30.54,
+   "end": 30.92
   },
   {
    "text": "anti-T",
-   "start": 29.08,
-   "end": 29.529
+   "start": 30.92,
+   "end": 30.92
   },
   {
    "text": "P",
-   "start": 29.529,
-   "end": 29.735
+   "start": 30.92,
+   "end": 31.84
   },
   {
    "text": "O.",
-   "start": 29.735,
-   "end": 29.966
+   "start": 30.92,
+   "end": 31.84
   },
   {
    "text": "Ils",
-   "start": 30.295,
-   "end": 30.477
+   "start": 32.2,
+   "end": 32.4
   },
   {
    "text": "attaquent",
-   "start": 30.477,
-   "end": 30.78
+   "start": 32.4,
+   "end": 32.74
   },
   {
    "text": "la",
-   "start": 30.78,
-   "end": 30.853
+   "start": 32.74,
+   "end": 32.94
   },
   {
    "text": "thyroïde,",
-   "start": 30.853,
-   "end": 31.399
+   "start": 32.94,
+   "end": 33.42
   },
   {
    "text": "et",
-   "start": 31.642,
-   "end": 31.678
+   "start": 33.42,
+   "end": 33.64
   },
   {
    "text": "signent",
-   "start": 31.678,
-   "end": 31.933
+   "start": 33.64,
+   "end": 33.86
   },
   {
    "text": "une",
-   "start": 31.933,
-   "end": 31.994
+   "start": 33.86,
+   "end": 34.04
   },
   {
    "text": "thyroïdite",
-   "start": 31.994,
-   "end": 32.528
+   "start": 34.04,
+   "end": 34.72
   },
   {
-   "text": "auto-immune :",
-   "start": 32.528,
-   "end": 33.098
+   "text": "auto-immune :",
+   "start": 34.72,
+   "end": 35.32
   },
   {
    "text": "la",
-   "start": 33.426,
-   "end": 33.475
+   "start": 35.68,
+   "end": 35.88
   },
   {
    "text": "maladie",
-   "start": 33.475,
-   "end": 33.827
+   "start": 35.88,
+   "end": 36.18
   },
   {
    "text": "de",
-   "start": 33.827,
-   "end": 33.911
+   "start": 36.18,
+   "end": 36.4
   },
   {
    "text": "Hashimoto,",
-   "start": 33.911,
-   "end": 34.579
+   "start": 36.4,
+   "end": 36.88
   },
   {
    "text": "qui",
-   "start": 34.834,
-   "end": 34.943
+   "start": 36.88,
+   "end": 37.38
   },
   {
    "text": "mène",
-   "start": 34.943,
-   "end": 35.077
+   "start": 37.38,
+   "end": 37.54
   },
   {
    "text": "souvent",
-   "start": 35.077,
-   "end": 35.416
+   "start": 37.54,
+   "end": 37.9
   },
   {
    "text": "à",
-   "start": 35.416,
-   "end": 35.465
+   "start": 37.9,
+   "end": 38.06
   },
   {
    "text": "l'hypothyroïdie.",
-   "start": 35.465,
-   "end": 36.387
+   "start": 38.06,
+   "end": 38.837
   },
   {
-   "text": "Quatre :",
-   "start": 37.314,
-   "end": 37.763
+   "text": "Quatre :",
+   "start": 39.639,
+   "end": 40.16
   },
   {
    "text": "les",
-   "start": 38.115,
-   "end": 38.188
+   "start": 40.36,
+   "end": 40.76
   },
   {
    "text": "anti-thyroglobuline.",
-   "start": 38.188,
-   "end": 39.462
+   "start": 40.76,
+   "end": 41.26
   },
   {
    "text": "Ils",
-   "start": 39.802,
-   "end": 39.984
+   "start": 42.18,
+   "end": 42.4
   },
   {
    "text": "complètent",
-   "start": 39.984,
-   "end": 40.348
+   "start": 42.4,
+   "end": 42.78
   },
   {
    "text": "les",
-   "start": 40.348,
-   "end": 40.421
+   "start": 42.78,
+   "end": 43.0
   },
   {
    "text": "anti-T",
-   "start": 40.421,
-   "end": 40.809
+   "start": 43.0,
+   "end": 43.0
   },
   {
    "text": "P",
-   "start": 40.809,
-   "end": 41.052
+   "start": 43.0,
+   "end": 43.76
   },
   {
    "text": "O,",
-   "start": 41.052,
-   "end": 41.295
+   "start": 43.0,
+   "end": 43.76
   },
   {
    "text": "et",
-   "start": 41.622,
-   "end": 41.671
+   "start": 43.76,
+   "end": 43.92
   },
   {
    "text": "servent",
-   "start": 41.671,
-   "end": 41.901
+   "start": 43.92,
+   "end": 44.24
   },
   {
    "text": "aussi",
-   "start": 41.901,
-   "end": 42.108
+   "start": 44.24,
+   "end": 44.64
   },
   {
    "text": "dans",
-   "start": 42.108,
-   "end": 42.217
+   "start": 44.64,
+   "end": 44.8
   },
   {
    "text": "le",
-   "start": 42.217,
-   "end": 42.29
+   "start": 44.8,
+   "end": 44.98
   },
   {
    "text": "suivi",
-   "start": 42.29,
-   "end": 42.581
+   "start": 44.98,
+   "end": 45.18
   },
   {
    "text": "de",
-   "start": 42.581,
-   "end": 42.678
+   "start": 45.18,
+   "end": 45.46
   },
   {
    "text": "certains",
-   "start": 42.678,
-   "end": 42.969
+   "start": 45.46,
+   "end": 45.62
   },
   {
    "text": "cancers",
-   "start": 42.969,
-   "end": 43.333
+   "start": 45.62,
+   "end": 45.98
   },
   {
    "text": "de",
-   "start": 43.333,
-   "end": 43.394
+   "start": 45.98,
+   "end": 46.16
   },
   {
    "text": "la",
-   "start": 43.394,
-   "end": 43.479
+   "start": 46.16,
+   "end": 46.34
   },
   {
    "text": "thyroïde.",
-   "start": 43.479,
-   "end": 44.11
+   "start": 46.34,
+   "end": 46.718
   },
   {
    "text": "Les",
-   "start": 45.04,
-   "end": 45.199
+   "start": 47.517,
+   "end": 47.88
   },
   {
    "text": "articulations",
-   "start": 45.199,
-   "end": 45.947
+   "start": 47.88,
+   "end": 48.54
   },
   {
    "text": "avec",
-   "start": 45.947,
-   "end": 46.155
+   "start": 48.54,
+   "end": 48.78
   },
   {
    "text": "les",
-   "start": 46.155,
-   "end": 46.216
+   "start": 48.78,
+   "end": 49.02
   },
   {
    "text": "anti-C",
-   "start": 46.216,
-   "end": 46.633
+   "start": 49.02,
+   "end": 49.02
   },
   {
    "text": "C",
-   "start": 46.633,
-   "end": 46.792
+   "start": 49.02,
+   "end": 49.8
   },
   {
    "text": "P,",
-   "start": 46.792,
-   "end": 47.111
+   "start": 49.02,
+   "end": 49.8
   },
   {
    "text": "la",
-   "start": 47.393,
-   "end": 47.515
+   "start": 50.04,
+   "end": 50.2
   },
   {
    "text": "thyroïde",
-   "start": 47.515,
-   "end": 48.005
+   "start": 50.2,
+   "end": 50.8
   },
   {
    "text": "avec",
-   "start": 48.005,
-   "end": 48.201
+   "start": 50.8,
+   "end": 51.02
   },
   {
    "text": "les",
-   "start": 48.202,
-   "end": 48.263
+   "start": 51.02,
+   "end": 51.3
   },
   {
    "text": "anti-T",
-   "start": 48.263,
-   "end": 48.679
+   "start": 51.3,
+   "end": 51.3
   },
   {
    "text": "P",
-   "start": 48.679,
-   "end": 48.912
+   "start": 51.3,
+   "end": 52.16
   },
   {
    "text": "O.",
-   "start": 48.912,
-   "end": 49.145
+   "start": 51.3,
+   "end": 52.16
   },
   {
    "text": "Prochaine",
-   "start": 49.512,
-   "end": 49.867
+   "start": 52.46,
+   "end": 52.7
   },
   {
    "text": "vidéo,",
-   "start": 49.867,
-   "end": 50.345
+   "start": 52.7,
+   "end": 53.04
   },
   {
    "text": "la",
-   "start": 50.652,
-   "end": 50.725
+   "start": 53.32,
+   "end": 53.5
   },
   {
    "text": "dernière",
-   "start": 50.725,
-   "end": 51.056
+   "start": 53.5,
+   "end": 53.82
   },
   {
    "text": "de",
-   "start": 51.056,
-   "end": 51.13
+   "start": 53.82,
+   "end": 54.02
   },
   {
    "text": "la",
-   "start": 51.13,
-   "end": 51.215
+   "start": 54.02,
+   "end": 54.18
   },
   {
-   "text": "série :",
-   "start": 51.216,
-   "end": 51.62
+   "text": "série :",
+   "start": 54.18,
+   "end": 54.46
   },
   {
    "text": "les",
-   "start": 51.889,
-   "end": 51.951
+   "start": 54.46,
+   "end": 55.0
   },
   {
    "text": "vitamines.",
-   "start": 51.951,
-   "end": 52.613
+   "start": 55.0,
+   "end": 55.5
   }
  ]
 }

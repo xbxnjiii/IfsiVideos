@@ -1,823 +1,823 @@
 {
- "voice": "voix.wav (tts_voix.py)",
- "duration": 53.92,
+ "voice": "pad-tube-jaune-vitamines.wav",
+ "duration": 56.473,
  "sections": [
   {
    "id": "intro",
-   "start": 0.048,
-   "end": 9.978
+   "start": 0.0,
+   "end": 10.714
   },
   {
    "id": "vitd",
-   "start": 10.931,
-   "end": 21.04
+   "start": 11.498,
+   "end": 22.261
   },
   {
    "id": "b12",
-   "start": 21.957,
-   "end": 33.681
+   "start": 23.064,
+   "end": 35.601
   },
   {
    "id": "cdt",
-   "start": 34.603,
-   "end": 45.611
+   "start": 36.401,
+   "end": 47.92
   },
   {
    "id": "fin",
-   "start": 46.529,
-   "end": 53.576
+   "start": 48.729,
+   "end": 56.12
   }
  ],
  "words": [
   {
    "text": "Fatigue,",
-   "start": 0.048,
-   "end": 0.661
+   "start": 0.0,
+   "end": 0.78
   },
   {
    "text": "fourmillements,",
-   "start": 0.877,
-   "end": 1.466
+   "start": 0.98,
+   "end": 1.6
   },
   {
    "text": "anémie…",
-   "start": 1.779,
-   "end": 2.26
+   "start": 1.84,
+   "end": 2.5
   },
   {
    "text": "et",
-   "start": 2.656,
-   "end": 2.752
+   "start": 2.66,
+   "end": 2.84
   },
   {
    "text": "si",
-   "start": 2.752,
-   "end": 2.885
+   "start": 2.84,
+   "end": 3.0
   },
   {
    "text": "c'était",
-   "start": 2.885,
-   "end": 3.089
+   "start": 3.0,
+   "end": 3.32
   },
   {
    "text": "un",
-   "start": 3.089,
-   "end": 3.149
+   "start": 3.32,
+   "end": 3.48
   },
   {
    "text": "manque",
-   "start": 3.149,
-   "end": 3.341
+   "start": 3.48,
+   "end": 3.66
   },
   {
    "text": "de",
-   "start": 3.341,
-   "end": 3.413
+   "start": 3.66,
+   "end": 3.98
   },
   {
-   "text": "vitamines ?",
-   "start": 3.413,
-   "end": 3.966
+   "text": "vitamines ?",
+   "start": 3.98,
+   "end": 4.48
   },
   {
    "text": "Dernière",
-   "start": 4.293,
-   "end": 4.701
+   "start": 4.84,
+   "end": 5.18
   },
   {
    "text": "vidéo",
-   "start": 4.701,
-   "end": 5.014
+   "start": 5.18,
+   "end": 5.48
   },
   {
    "text": "de",
-   "start": 5.014,
-   "end": 5.098
+   "start": 5.48,
+   "end": 5.68
   },
   {
    "text": "la",
-   "start": 5.098,
-   "end": 5.194
+   "start": 5.68,
+   "end": 5.84
   },
   {
    "text": "série",
-   "start": 5.194,
-   "end": 5.459
+   "start": 5.84,
+   "end": 6.02
   },
   {
    "text": "du",
-   "start": 5.459,
-   "end": 5.555
+   "start": 6.02,
+   "end": 6.26
   },
   {
    "text": "tube",
-   "start": 5.555,
-   "end": 5.747
+   "start": 6.26,
+   "end": 6.44
   },
   {
-   "text": "jaune :",
-   "start": 5.747,
-   "end": 6.108
+   "text": "jaune :",
+   "start": 6.44,
+   "end": 6.94
   },
   {
    "text": "vitamine",
-   "start": 6.42,
-   "end": 6.865
+   "start": 7.3,
+   "end": 7.6
   },
   {
    "text": "D,",
-   "start": 6.865,
-   "end": 7.129
+   "start": 7.6,
+   "end": 7.94
   },
   {
    "text": "B",
-   "start": 7.466,
-   "end": 7.586
+   "start": 8.12,
+   "end": 8.68
   },
   {
    "text": "douze,",
-   "start": 7.586,
-   "end": 7.995
+   "start": 8.92,
+   "end": 8.68
   },
   {
    "text": "folates,",
-   "start": 8.187,
-   "end": 8.632
+   "start": 8.92,
+   "end": 9.34
   },
   {
    "text": "et",
-   "start": 8.92,
-   "end": 8.956
+   "start": 9.34,
+   "end": 9.66
   },
   {
    "text": "un",
-   "start": 8.956,
-   "end": 9.004
+   "start": 9.66,
+   "end": 9.9
   },
   {
    "text": "marqueur",
-   "start": 9.004,
-   "end": 9.317
+   "start": 9.9,
+   "end": 10.16
   },
   {
    "text": "de",
-   "start": 9.317,
-   "end": 9.401
+   "start": 10.16,
+   "end": 10.28
   },
   {
    "text": "l'alcool.",
-   "start": 9.401,
-   "end": 9.978
+   "start": 10.28,
+   "end": 10.714
   },
   {
-   "text": "Un :",
-   "start": 10.931,
-   "end": 11.198
+   "text": "Un :",
+   "start": 11.498,
+   "end": 11.76
   },
   {
    "text": "la",
-   "start": 11.416,
-   "end": 11.489
+   "start": 12.08,
+   "end": 12.42
   },
   {
    "text": "vitamine",
-   "start": 11.489,
-   "end": 11.95
+   "start": 12.42,
+   "end": 12.74
   },
   {
    "text": "D,",
-   "start": 11.95,
-   "end": 12.205
+   "start": 12.74,
+   "end": 13.08
   },
   {
    "text": "fabriquée",
-   "start": 12.63,
-   "end": 13.006
+   "start": 13.32,
+   "end": 13.62
   },
   {
    "text": "par",
-   "start": 13.006,
-   "end": 13.139
+   "start": 13.62,
+   "end": 13.82
   },
   {
    "text": "la",
-   "start": 13.139,
-   "end": 13.224
+   "start": 13.82,
+   "end": 14.04
   },
   {
    "text": "peau",
-   "start": 13.224,
-   "end": 13.382
+   "start": 14.04,
+   "end": 14.22
   },
   {
    "text": "au",
-   "start": 13.382,
-   "end": 13.443
+   "start": 14.22,
+   "end": 14.46
   },
   {
    "text": "soleil.",
-   "start": 13.443,
-   "end": 13.977
+   "start": 14.46,
+   "end": 15.1
   },
   {
    "text": "Elle",
-   "start": 14.306,
-   "end": 14.5
+   "start": 15.22,
+   "end": 15.44
   },
   {
    "text": "fixe",
-   "start": 14.5,
-   "end": 14.767
+   "start": 15.44,
+   "end": 15.78
   },
   {
    "text": "le",
-   "start": 14.767,
-   "end": 14.864
+   "start": 15.78,
+   "end": 15.98
   },
   {
    "text": "calcium",
-   "start": 14.864,
-   "end": 15.301
+   "start": 15.98,
+   "end": 16.3
   },
   {
    "text": "dans",
-   "start": 15.301,
-   "end": 15.386
+   "start": 16.3,
+   "end": 16.52
   },
   {
    "text": "les",
-   "start": 15.386,
-   "end": 15.495
+   "start": 16.52,
+   "end": 16.66
   },
   {
    "text": "os.",
-   "start": 15.495,
-   "end": 15.969
+   "start": 16.66,
+   "end": 16.8
   },
   {
    "text": "En",
-   "start": 16.295,
-   "end": 16.416
+   "start": 17.28,
+   "end": 17.5
   },
   {
    "text": "France,",
-   "start": 16.416,
-   "end": 16.902
+   "start": 17.5,
+   "end": 17.88
   },
   {
    "text": "beaucoup",
-   "start": 17.084,
-   "end": 17.302
+   "start": 18.18,
+   "end": 18.34
   },
   {
    "text": "de",
-   "start": 17.302,
-   "end": 17.387
+   "start": 18.34,
+   "end": 18.62
   },
   {
    "text": "personnes",
-   "start": 17.387,
-   "end": 17.703
+   "start": 18.62,
+   "end": 18.76
   },
   {
    "text": "en",
-   "start": 17.703,
-   "end": 17.775
+   "start": 18.76,
+   "end": 18.96
   },
   {
    "text": "manquent,",
-   "start": 17.775,
-   "end": 18.115
+   "start": 18.96,
+   "end": 19.22
   },
   {
    "text": "surtout",
-   "start": 18.334,
-   "end": 18.625
+   "start": 19.4,
+   "end": 19.7
   },
   {
    "text": "en",
-   "start": 18.625,
-   "end": 18.686
+   "start": 19.7,
+   "end": 19.98
   },
   {
    "text": "hiver,",
-   "start": 18.686,
-   "end": 19.098
+   "start": 19.98,
+   "end": 20.28
   },
   {
    "text": "chez",
-   "start": 19.402,
-   "end": 19.486
+   "start": 20.48,
+   "end": 20.6
   },
   {
    "text": "les",
-   "start": 19.486,
-   "end": 19.547
+   "start": 20.6,
+   "end": 20.86
   },
   {
    "text": "personnes",
-   "start": 19.547,
-   "end": 19.875
-  },
-  {
-   "text": "âgées",
-   "start": 19.875,
-   "end": 20.227
-  },
-  {
-   "text": "et",
-   "start": 20.227,
-   "end": 20.324
-  },
-  {
-   "text": "les",
-   "start": 20.324,
-   "end": 20.409
-  },
-  {
-   "text": "peaux",
-   "start": 20.409,
-   "end": 20.53
-  },
-  {
-   "text": "foncées.",
-   "start": 20.53,
+   "start": 20.86,
    "end": 21.04
   },
   {
-   "text": "Deux :",
-   "start": 21.957,
-   "end": 22.321
-  },
-  {
-   "text": "la",
-   "start": 22.758,
-   "end": 22.843
-  },
-  {
-   "text": "vitamine",
-   "start": 22.843,
-   "end": 23.256
-  },
-  {
-   "text": "B",
-   "start": 23.256,
-   "end": 23.377
-  },
-  {
-   "text": "douze",
-   "start": 23.377,
-   "end": 23.656
+   "text": "âgées",
+   "start": 21.04,
+   "end": 21.44
   },
   {
    "text": "et",
-   "start": 23.656,
-   "end": 23.681
+   "start": 21.44,
+   "end": 21.62
   },
   {
    "text": "les",
-   "start": 23.681,
-   "end": 23.778
+   "start": 21.62,
+   "end": 21.8
+  },
+  {
+   "text": "peaux",
+   "start": 21.8,
+   "end": 21.9
+  },
+  {
+   "text": "foncées.",
+   "start": 21.9,
+   "end": 22.261
+  },
+  {
+   "text": "Deux :",
+   "start": 23.064,
+   "end": 23.52
+  },
+  {
+   "text": "la",
+   "start": 23.76,
+   "end": 24.06
+  },
+  {
+   "text": "vitamine",
+   "start": 24.06,
+   "end": 24.34
+  },
+  {
+   "text": "B",
+   "start": 24.34,
+   "end": 24.34
+  },
+  {
+   "text": "douze",
+   "start": 24.34,
+   "end": 24.84
+  },
+  {
+   "text": "et",
+   "start": 24.84,
+   "end": 25.04
+  },
+  {
+   "text": "les",
+   "start": 25.04,
+   "end": 25.2
   },
   {
    "text": "folates,",
-   "start": 23.778,
-   "end": 24.215
+   "start": 25.2,
+   "end": 25.7
   },
   {
    "text": "aussi",
-   "start": 24.579,
-   "end": 24.785
+   "start": 25.96,
+   "end": 26.2
   },
   {
    "text": "appelés",
-   "start": 24.785,
-   "end": 25.003
+   "start": 26.2,
+   "end": 26.6
   },
   {
    "text": "vitamine",
-   "start": 25.003,
-   "end": 25.489
+   "start": 26.6,
+   "end": 27.1
   },
   {
    "text": "B",
-   "start": 25.489,
-   "end": 25.598
+   "start": 27.1,
+   "end": 27.1
   },
   {
    "text": "neuf.",
-   "start": 25.598,
-   "end": 26.059
+   "start": 27.1,
+   "end": 27.7
   },
   {
    "text": "Il",
-   "start": 26.388,
-   "end": 26.582
+   "start": 27.7,
+   "end": 28.2
   },
   {
    "text": "en",
-   "start": 26.582,
-   "end": 26.655
+   "start": 28.2,
+   "end": 28.4
   },
   {
    "text": "faut",
-   "start": 26.655,
-   "end": 26.861
+   "start": 28.4,
+   "end": 28.48
   },
   {
    "text": "pour",
-   "start": 26.861,
-   "end": 27.019
+   "start": 28.48,
+   "end": 28.66
   },
   {
    "text": "fabriquer",
-   "start": 27.019,
-   "end": 27.443
+   "start": 28.66,
+   "end": 29.06
   },
   {
    "text": "les",
-   "start": 27.443,
-   "end": 27.516
+   "start": 29.06,
+   "end": 29.3
   },
   {
    "text": "globules",
-   "start": 27.516,
-   "end": 27.808
+   "start": 29.3,
+   "end": 29.6
   },
   {
    "text": "rouges.",
-   "start": 27.808,
-   "end": 28.22
+   "start": 29.6,
+   "end": 30.1
   },
   {
    "text": "S'ils",
-   "start": 28.547,
-   "end": 28.85
+   "start": 30.3,
+   "end": 30.58
   },
   {
    "text": "manquent,",
-   "start": 28.85,
-   "end": 29.202
+   "start": 30.58,
+   "end": 30.82
   },
   {
    "text": "les",
-   "start": 29.409,
-   "end": 29.482
+   "start": 31.0,
+   "end": 31.12
   },
   {
    "text": "globules",
-   "start": 29.482,
-   "end": 29.749
+   "start": 31.12,
+   "end": 31.46
   },
   {
    "text": "rouges",
-   "start": 29.749,
-   "end": 30.016
+   "start": 31.46,
+   "end": 31.68
   },
   {
    "text": "sont",
-   "start": 30.016,
-   "end": 30.137
+   "start": 31.68,
+   "end": 31.9
   },
   {
    "text": "trop",
-   "start": 30.137,
-   "end": 30.331
+   "start": 31.9,
+   "end": 32.2
   },
   {
-   "text": "gros :",
-   "start": 30.331,
-   "end": 30.598
+   "text": "gros :",
+   "start": 32.2,
+   "end": 32.34
   },
   {
    "text": "c'est",
-   "start": 30.926,
-   "end": 31.023
+   "start": 32.66,
+   "end": 32.82
   },
   {
    "text": "une",
-   "start": 31.023,
-   "end": 31.205
+   "start": 32.82,
+   "end": 33.0
   },
   {
    "text": "anémie.",
-   "start": 31.205,
-   "end": 31.617
+   "start": 33.0,
+   "end": 33.32
   },
   {
    "text": "Et",
-   "start": 31.946,
-   "end": 32.079
+   "start": 33.82,
+   "end": 33.92
   },
   {
    "text": "la",
-   "start": 32.079,
-   "end": 32.189
+   "start": 33.92,
+   "end": 34.06
   },
   {
    "text": "B",
-   "start": 32.189,
-   "end": 32.346
+   "start": 34.06,
+   "end": 34.06
   },
   {
    "text": "douze",
-   "start": 32.346,
-   "end": 32.565
+   "start": 34.06,
+   "end": 34.38
   },
   {
    "text": "protège",
-   "start": 32.565,
-   "end": 32.965
+   "start": 34.38,
+   "end": 34.86
   },
   {
    "text": "aussi",
-   "start": 32.965,
-   "end": 33.172
+   "start": 34.86,
+   "end": 35.18
   },
   {
    "text": "les",
-   "start": 33.172,
-   "end": 33.269
+   "start": 35.18,
+   "end": 35.32
   },
   {
    "text": "nerfs.",
-   "start": 33.269,
-   "end": 33.681
+   "start": 35.32,
+   "end": 35.601
   },
   {
-   "text": "Trois :",
-   "start": 34.603,
-   "end": 34.954
+   "text": "Trois :",
+   "start": 36.401,
+   "end": 36.72
   },
   {
    "text": "la",
-   "start": 35.331,
-   "end": 35.44
+   "start": 37.04,
+   "end": 37.44
   },
   {
    "text": "C",
-   "start": 35.44,
-   "end": 35.573
+   "start": 37.44,
+   "end": 37.44
   },
   {
    "text": "D",
-   "start": 35.573,
-   "end": 35.707
+   "start": 37.44,
+   "end": 37.92
   },
   {
    "text": "T,",
-   "start": 35.707,
-   "end": 35.998
+   "start": 37.44,
+   "end": 37.92
   },
   {
    "text": "la",
-   "start": 36.411,
-   "end": 36.471
+   "start": 38.14,
+   "end": 38.46
   },
   {
    "text": "transferrine",
-   "start": 36.471,
-   "end": 37.066
+   "start": 38.46,
+   "end": 38.9
   },
   {
    "text": "carboxy-déficiente.",
-   "start": 37.066,
-   "end": 38.328
+   "start": 38.9,
+   "end": 39.98
   },
   {
    "text": "Elle",
-   "start": 38.657,
-   "end": 38.839
+   "start": 40.36,
+   "end": 40.62
   },
   {
    "text": "augmente",
-   "start": 38.839,
-   "end": 39.215
+   "start": 40.62,
+   "end": 40.96
   },
   {
    "text": "quand",
-   "start": 39.215,
-   "end": 39.324
+   "start": 40.96,
+   "end": 41.16
   },
   {
    "text": "on",
-   "start": 39.324,
-   "end": 39.458
+   "start": 41.16,
+   "end": 41.32
   },
   {
    "text": "boit",
-   "start": 39.458,
-   "end": 39.579
+   "start": 41.32,
+   "end": 41.5
   },
   {
    "text": "beaucoup",
-   "start": 39.579,
-   "end": 39.81
+   "start": 41.5,
+   "end": 41.78
   },
   {
    "text": "d'alcool,",
-   "start": 39.81,
-   "end": 40.356
+   "start": 41.78,
+   "end": 42.34
   },
   {
    "text": "tous",
-   "start": 40.611,
-   "end": 40.708
+   "start": 42.58,
+   "end": 42.7
   },
   {
    "text": "les",
-   "start": 40.708,
-   "end": 40.853
+   "start": 42.7,
+   "end": 42.9
   },
   {
    "text": "jours,",
-   "start": 40.853,
-   "end": 41.181
+   "start": 42.9,
+   "end": 43.16
   },
   {
    "text": "pendant",
-   "start": 41.412,
-   "end": 41.666
+   "start": 43.16,
+   "end": 43.5
   },
   {
    "text": "au",
-   "start": 41.666,
-   "end": 41.715
+   "start": 43.5,
+   "end": 43.7
   },
   {
    "text": "moins",
-   "start": 41.715,
-   "end": 41.885
+   "start": 43.7,
+   "end": 43.9
   },
   {
    "text": "deux",
-   "start": 41.885,
-   "end": 41.994
+   "start": 43.9,
+   "end": 44.14
   },
   {
    "text": "semaines.",
-   "start": 41.994,
-   "end": 42.516
+   "start": 44.14,
+   "end": 44.4
   },
   {
    "text": "Elle",
-   "start": 42.844,
-   "end": 43.038
+   "start": 44.86,
+   "end": 45.06
   },
   {
    "text": "sert",
-   "start": 43.038,
-   "end": 43.257
+   "start": 45.06,
+   "end": 45.24
   },
   {
    "text": "à",
-   "start": 43.257,
-   "end": 43.305
+   "start": 45.24,
+   "end": 45.5
   },
   {
    "text": "repérer",
-   "start": 43.305,
-   "end": 43.839
+   "start": 45.5,
+   "end": 45.92
   },
   {
    "text": "et",
-   "start": 43.839,
-   "end": 43.936
+   "start": 45.92,
+   "end": 46.16
   },
   {
    "text": "à",
-   "start": 43.937,
-   "end": 43.997
+   "start": 46.16,
+   "end": 46.28
   },
   {
    "text": "suivre",
-   "start": 43.997,
-   "end": 44.301
+   "start": 46.28,
+   "end": 46.5
   },
   {
    "text": "une",
-   "start": 44.301,
-   "end": 44.373
+   "start": 46.5,
+   "end": 46.72
   },
   {
    "text": "consommation",
-   "start": 44.373,
-   "end": 44.907
+   "start": 46.72,
+   "end": 47.36
   },
   {
    "text": "excessive.",
-   "start": 44.907,
-   "end": 45.611
+   "start": 47.36,
+   "end": 47.92
   },
   {
    "text": "Vitamine",
-   "start": 46.529,
-   "end": 47.093
+   "start": 48.729,
+   "end": 49.3
   },
   {
    "text": "D,",
-   "start": 47.093,
-   "end": 47.362
+   "start": 49.3,
+   "end": 49.64
   },
   {
    "text": "B",
-   "start": 47.693,
-   "end": 47.816
+   "start": 49.76,
+   "end": 49.64
   },
   {
    "text": "douze,",
-   "start": 47.816,
-   "end": 48.269
+   "start": 49.76,
+   "end": 50.4
   },
   {
    "text": "folates,",
-   "start": 48.453,
-   "end": 48.906
+   "start": 50.56,
+   "end": 51.04
   },
   {
    "text": "C",
-   "start": 49.139,
-   "end": 49.274
+   "start": 51.26,
+   "end": 51.04
   },
   {
    "text": "D",
-   "start": 49.274,
-   "end": 49.397
+   "start": 51.26,
+   "end": 51.04
   },
   {
-   "text": "T :",
-   "start": 49.397,
-   "end": 49.642
+   "text": "T :",
+   "start": 51.26,
+   "end": 51.82
   },
   {
    "text": "la",
-   "start": 49.997,
-   "end": 50.071
+   "start": 52.14,
+   "end": 52.26
   },
   {
    "text": "série",
-   "start": 50.071,
-   "end": 50.328
+   "start": 52.26,
+   "end": 52.48
   },
   {
    "text": "du",
-   "start": 50.328,
-   "end": 50.426
+   "start": 52.48,
+   "end": 52.72
   },
   {
    "text": "tube",
-   "start": 50.426,
-   "end": 50.61
+   "start": 52.72,
+   "end": 52.86
   },
   {
    "text": "jaune",
-   "start": 50.61,
-   "end": 50.806
+   "start": 52.86,
+   "end": 53.06
   },
   {
    "text": "est",
-   "start": 50.806,
-   "end": 50.843
+   "start": 53.06,
+   "end": 53.36
   },
   {
    "text": "terminée.",
-   "start": 50.843,
-   "end": 51.394
+   "start": 53.36,
+   "end": 53.94
   },
   {
    "text": "Bravo,",
-   "start": 51.762,
-   "end": 52.24
+   "start": 54.18,
+   "end": 54.52
   },
   {
    "text": "tu",
-   "start": 52.497,
-   "end": 52.607
+   "start": 54.78,
+   "end": 54.94
   },
   {
    "text": "sais",
-   "start": 52.607,
-   "end": 52.73
+   "start": 54.94,
+   "end": 55.16
   },
   {
    "text": "lire",
-   "start": 52.73,
-   "end": 52.926
+   "start": 55.16,
+   "end": 55.4
   },
   {
    "text": "le",
-   "start": 52.926,
-   "end": 53.0
+   "start": 55.4,
+   "end": 55.62
   },
   {
    "text": "tube",
-   "start": 53.0,
-   "end": 53.171
+   "start": 55.62,
+   "end": 55.78
   },
   {
-   "text": "jaune !",
-   "start": 53.171,
-   "end": 53.576
+   "text": "jaune !",
+   "start": 55.78,
+   "end": 56.12
   }
  ]
 }

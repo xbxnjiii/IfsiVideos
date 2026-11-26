@@ -1,923 +1,923 @@
 {
- "voice": "voix.wav (tts_voix.py)",
- "duration": 56.68,
+ "voice": "pad-tube-jaune-coeur.wav",
+ "duration": 58.079,
  "sections": [
   {
    "id": "intro",
-   "start": 0.05,
-   "end": 6.923
+   "start": 0.0,
+   "end": 6.72
   },
   {
    "id": "tropo",
-   "start": 7.895,
-   "end": 21.331
+   "start": 7.614,
+   "end": 21.46
   },
   {
    "id": "seuil",
-   "start": 22.27,
-   "end": 33.107
+   "start": 22.279,
+   "end": 34.19
   },
   {
    "id": "bnp",
-   "start": 34.027,
-   "end": 47.498
+   "start": 35.005,
+   "end": 49.265
   },
   {
    "id": "fin",
-   "start": 48.474,
-   "end": 56.366
+   "start": 50.071,
+   "end": 57.92
   }
  ],
  "words": [
   {
    "text": "Douleur",
-   "start": 0.05,
-   "end": 0.458
+   "start": 0.0,
+   "end": 0.44
   },
   {
    "text": "dans",
-   "start": 0.458,
-   "end": 0.554
+   "start": 0.44,
+   "end": 0.56
   },
   {
    "text": "la",
-   "start": 0.554,
-   "end": 0.638
+   "start": 0.56,
+   "end": 0.7
   },
   {
-   "text": "poitrine :",
-   "start": 0.638,
-   "end": 1.167
+   "text": "poitrine :",
+   "start": 0.7,
+   "end": 1.08
   },
   {
    "text": "c'est",
-   "start": 1.48,
-   "end": 1.588
+   "start": 1.32,
+   "end": 1.56
   },
   {
    "text": "un",
-   "start": 1.588,
-   "end": 1.696
+   "start": 1.56,
+   "end": 1.7
   },
   {
    "text": "infarctus,",
-   "start": 1.696,
-   "end": 2.453
+   "start": 1.7,
+   "end": 2.2
   },
   {
    "text": "ou",
-   "start": 2.634,
-   "end": 2.682
+   "start": 2.36,
+   "end": 2.52
   },
   {
-   "text": "pas ?",
-   "start": 2.682,
-   "end": 2.946
+   "text": "pas ?",
+   "start": 2.52,
+   "end": 2.78
   },
   {
    "text": "Le",
-   "start": 3.317,
-   "end": 3.425
+   "start": 3.12,
+   "end": 3.34
   },
   {
    "text": "tube",
-   "start": 3.425,
-   "end": 3.606
+   "start": 3.34,
+   "end": 3.46
   },
   {
    "text": "jaune",
-   "start": 3.606,
-   "end": 3.858
+   "start": 3.46,
+   "end": 3.7
   },
   {
    "text": "répond",
-   "start": 3.858,
-   "end": 4.147
+   "start": 3.7,
+   "end": 3.98
   },
   {
    "text": "avec",
-   "start": 4.147,
-   "end": 4.363
+   "start": 3.98,
+   "end": 4.22
   },
   {
    "text": "deux",
-   "start": 4.363,
-   "end": 4.471
+   "start": 4.22,
+   "end": 4.42
   },
   {
    "text": "dosages…",
-   "start": 4.471,
-   "end": 4.988
+   "start": 4.42,
+   "end": 4.96
   },
   {
    "text": "et",
-   "start": 5.264,
-   "end": 5.288
+   "start": 5.14,
+   "end": 5.26
   },
   {
    "text": "le",
-   "start": 5.288,
-   "end": 5.385
+   "start": 5.26,
+   "end": 5.42
   },
   {
    "text": "temps",
-   "start": 5.385,
-   "end": 5.541
+   "start": 5.42,
+   "end": 5.6
   },
   {
    "text": "compte.",
-   "start": 5.541,
-   "end": 5.974
+   "start": 5.6,
+   "end": 5.96
   },
   {
    "text": "Tu",
-   "start": 6.334,
-   "end": 6.418
+   "start": 6.24,
+   "end": 6.36
   },
   {
    "text": "les",
-   "start": 6.418,
-   "end": 6.514
+   "start": 6.36,
+   "end": 6.58
   },
   {
-   "text": "connais ?",
-   "start": 6.514,
-   "end": 6.923
+   "text": "connais ?",
+   "start": 6.58,
+   "end": 6.72
   },
   {
-   "text": "Un :",
-   "start": 7.895,
-   "end": 8.114
+   "text": "Un :",
+   "start": 7.614,
+   "end": 7.9
   },
   {
    "text": "la",
-   "start": 8.453,
-   "end": 8.514
+   "start": 8.22,
+   "end": 8.52
   },
   {
    "text": "troponine,",
-   "start": 8.514,
-   "end": 9.157
+   "start": 8.52,
+   "end": 9.08
   },
   {
    "text": "c'est",
-   "start": 9.448,
-   "end": 9.57
+   "start": 9.3,
+   "end": 9.38
   },
   {
    "text": "une",
-   "start": 9.57,
-   "end": 9.728
+   "start": 9.38,
+   "end": 9.58
   },
   {
    "text": "protéine",
-   "start": 9.728,
-   "end": 10.165
+   "start": 9.58,
+   "end": 10.0
   },
   {
    "text": "du",
-   "start": 10.165,
-   "end": 10.249
+   "start": 10.0,
+   "end": 10.18
   },
   {
    "text": "muscle",
-   "start": 10.249,
-   "end": 10.565
+   "start": 10.18,
+   "end": 10.48
   },
   {
    "text": "cardiaque.",
-   "start": 10.565,
-   "end": 11.184
+   "start": 10.48,
+   "end": 11.18
   },
   {
    "text": "Quand",
-   "start": 11.525,
-   "end": 11.683
+   "start": 11.38,
+   "end": 11.52
   },
   {
    "text": "des",
-   "start": 11.683,
-   "end": 11.768
+   "start": 11.52,
+   "end": 11.72
   },
   {
    "text": "cellules",
-   "start": 11.768,
-   "end": 12.083
+   "start": 11.72,
+   "end": 11.98
   },
   {
    "text": "du",
-   "start": 12.083,
-   "end": 12.18
+   "start": 11.98,
+   "end": 12.14
   },
   {
    "text": "cœur",
-   "start": 12.181,
-   "end": 12.411
+   "start": 12.14,
+   "end": 12.3
   },
   {
    "text": "meurent,",
-   "start": 12.411,
-   "end": 12.763
+   "start": 12.3,
+   "end": 12.78
   },
   {
    "text": "elle",
-   "start": 12.994,
-   "end": 13.066
+   "start": 12.86,
+   "end": 13.02
   },
   {
    "text": "passe",
-   "start": 13.066,
-   "end": 13.309
+   "start": 13.02,
+   "end": 13.26
   },
   {
    "text": "dans",
-   "start": 13.309,
-   "end": 13.406
+   "start": 13.26,
+   "end": 13.46
   },
   {
    "text": "le",
-   "start": 13.406,
-   "end": 13.503
+   "start": 13.46,
+   "end": 13.6
   },
   {
    "text": "sang.",
-   "start": 13.503,
-   "end": 13.795
+   "start": 13.6,
+   "end": 13.7
   },
   {
    "text": "Elle",
-   "start": 14.134,
-   "end": 14.341
+   "start": 14.08,
+   "end": 14.28
   },
   {
    "text": "monte",
-   "start": 14.341,
-   "end": 14.559
+   "start": 14.28,
+   "end": 14.4
   },
   {
    "text": "en",
-   "start": 14.559,
-   "end": 14.608
+   "start": 14.4,
+   "end": 14.62
   },
   {
    "text": "quelques",
-   "start": 14.608,
-   "end": 14.875
+   "start": 14.62,
+   "end": 14.94
   },
   {
-   "text": "heures :",
-   "start": 14.875,
-   "end": 15.202
+   "text": "heures :",
+   "start": 14.94,
+   "end": 15.18
   },
   {
    "text": "on",
-   "start": 15.651,
-   "end": 15.676
+   "start": 15.38,
+   "end": 15.5
   },
   {
    "text": "la",
-   "start": 15.676,
-   "end": 15.773
+   "start": 15.5,
+   "end": 15.7
   },
   {
    "text": "dose",
-   "start": 15.773,
-   "end": 15.991
+   "start": 15.7,
+   "end": 15.8
   },
   {
    "text": "à",
-   "start": 15.991,
-   "end": 16.028
+   "start": 15.8,
+   "end": 15.96
   },
   {
    "text": "l'arrivée,",
-   "start": 16.028,
-   "end": 16.537
+   "start": 15.96,
+   "end": 16.46
   },
   {
    "text": "puis",
-   "start": 16.829,
-   "end": 16.974
+   "start": 16.5,
+   "end": 16.76
   },
   {
    "text": "on",
-   "start": 16.974,
-   "end": 16.998
+   "start": 16.76,
+   "end": 17.04
   },
   {
    "text": "refait",
-   "start": 16.998,
-   "end": 17.229
+   "start": 17.04,
+   "end": 17.2
   },
   {
    "text": "une",
-   "start": 17.229,
-   "end": 17.302
+   "start": 17.2,
+   "end": 17.34
   },
   {
    "text": "prise",
-   "start": 17.302,
-   "end": 17.496
+   "start": 17.34,
+   "end": 17.5
   },
   {
    "text": "de",
-   "start": 17.496,
-   "end": 17.617
+   "start": 17.5,
+   "end": 17.76
   },
   {
    "text": "sang",
-   "start": 17.617,
-   "end": 17.799
+   "start": 17.76,
+   "end": 17.92
   },
   {
    "text": "une",
-   "start": 17.799,
-   "end": 17.921
+   "start": 17.92,
+   "end": 18.24
   },
   {
    "text": "à",
-   "start": 17.921,
-   "end": 17.957
+   "start": 18.24,
+   "end": 18.4
   },
   {
    "text": "trois",
-   "start": 17.957,
-   "end": 18.139
+   "start": 18.4,
+   "end": 18.64
   },
   {
    "text": "heures",
-   "start": 18.139,
-   "end": 18.273
+   "start": 18.64,
+   "end": 18.78
   },
   {
    "text": "plus",
-   "start": 18.273,
-   "end": 18.394
+   "start": 18.78,
+   "end": 19.02
   },
   {
    "text": "tard.",
-   "start": 18.394,
-   "end": 18.77
+   "start": 19.02,
+   "end": 19.22
   },
   {
    "text": "Si",
-   "start": 19.098,
-   "end": 19.341
+   "start": 19.56,
+   "end": 19.72
   },
   {
    "text": "elle",
-   "start": 19.341,
-   "end": 19.414
+   "start": 19.72,
+   "end": 19.86
   },
   {
    "text": "augmente,",
-   "start": 19.414,
-   "end": 19.875
+   "start": 19.86,
+   "end": 20.24
   },
   {
    "text": "on",
-   "start": 20.142,
-   "end": 20.19
+   "start": 20.4,
+   "end": 20.56
   },
   {
    "text": "pense",
-   "start": 20.19,
-   "end": 20.445
+   "start": 20.56,
+   "end": 20.76
   },
   {
    "text": "à",
-   "start": 20.445,
-   "end": 20.494
+   "start": 20.76,
+   "end": 20.86
   },
   {
    "text": "l'infarctus.",
-   "start": 20.494,
-   "end": 21.331
+   "start": 20.86,
+   "end": 21.46
   },
   {
-   "text": "Deux :",
-   "start": 22.27,
-   "end": 22.671
+   "text": "Deux :",
+   "start": 22.279,
+   "end": 22.68
   },
   {
    "text": "le",
-   "start": 23.035,
-   "end": 23.132
+   "start": 22.98,
+   "end": 23.26
   },
   {
    "text": "seuil.",
-   "start": 23.132,
-   "end": 23.617
+   "start": 23.26,
+   "end": 23.64
   },
   {
    "text": "Il",
-   "start": 23.944,
-   "end": 24.126
+   "start": 23.98,
+   "end": 24.16
   },
   {
    "text": "dépend",
-   "start": 24.126,
-   "end": 24.393
+   "start": 24.16,
+   "end": 24.4
   },
   {
    "text": "du",
-   "start": 24.393,
-   "end": 24.478
+   "start": 24.4,
+   "end": 24.56
   },
   {
    "text": "laboratoire",
-   "start": 24.478,
-   "end": 25.073
+   "start": 24.56,
+   "end": 25.14
   },
   {
    "text": "et",
-   "start": 25.073,
-   "end": 25.097
+   "start": 25.14,
+   "end": 25.26
   },
   {
    "text": "de",
-   "start": 25.097,
-   "end": 25.17
+   "start": 25.26,
+   "end": 25.4
   },
   {
    "text": "la",
-   "start": 25.17,
-   "end": 25.267
+   "start": 25.4,
+   "end": 25.58
   },
   {
    "text": "technique,",
-   "start": 25.267,
-   "end": 25.74
+   "start": 25.58,
+   "end": 25.9
   },
   {
    "text": "alors",
-   "start": 26.044,
-   "end": 26.226
+   "start": 26.16,
+   "end": 26.42
   },
   {
    "text": "lis",
-   "start": 26.226,
-   "end": 26.335
+   "start": 26.42,
+   "end": 26.7
   },
   {
    "text": "toujours",
-   "start": 26.335,
-   "end": 26.578
+   "start": 26.7,
+   "end": 27.22
   },
   {
    "text": "la",
-   "start": 26.578,
-   "end": 26.663
+   "start": 27.22,
+   "end": 27.38
   },
   {
    "text": "norme",
-   "start": 26.663,
-   "end": 26.869
+   "start": 27.38,
+   "end": 27.6
   },
   {
    "text": "écrite",
-   "start": 26.869,
-   "end": 27.185
+   "start": 27.6,
+   "end": 27.8
   },
   {
    "text": "sur",
-   "start": 27.185,
-   "end": 27.294
+   "start": 27.8,
+   "end": 28.02
   },
   {
    "text": "le",
-   "start": 27.294,
-   "end": 27.367
+   "start": 28.02,
+   "end": 28.2
   },
   {
    "text": "résultat.",
-   "start": 27.367,
-   "end": 27.937
+   "start": 28.2,
+   "end": 28.66
   },
   {
    "text": "Et",
-   "start": 28.265,
-   "end": 28.386
+   "start": 28.66,
+   "end": 29.12
   },
   {
    "text": "la",
-   "start": 28.386,
-   "end": 28.471
+   "start": 29.12,
+   "end": 29.3
   },
   {
    "text": "troponine",
-   "start": 28.471,
-   "end": 28.957
+   "start": 29.3,
+   "end": 29.68
   },
   {
    "text": "peut",
-   "start": 28.957,
-   "end": 29.054
+   "start": 29.68,
+   "end": 29.9
   },
   {
    "text": "aussi",
-   "start": 29.054,
-   "end": 29.272
+   "start": 29.9,
+   "end": 30.28
   },
   {
    "text": "monter",
-   "start": 29.272,
-   "end": 29.539
+   "start": 30.28,
+   "end": 30.5
   },
   {
    "text": "dans",
-   "start": 29.539,
-   "end": 29.624
+   "start": 30.5,
+   "end": 30.72
   },
   {
    "text": "une",
-   "start": 29.624,
-   "end": 29.794
+   "start": 30.72,
+   "end": 30.9
   },
   {
    "text": "embolie",
-   "start": 29.794,
-   "end": 30.073
+   "start": 30.9,
+   "end": 31.2
   },
   {
    "text": "pulmonaire,",
-   "start": 30.073,
-   "end": 30.692
+   "start": 31.2,
+   "end": 31.86
   },
   {
    "text": "une",
-   "start": 31.02,
-   "end": 31.093
+   "start": 32.06,
+   "end": 32.22
   },
   {
    "text": "insuffisance",
-   "start": 31.093,
-   "end": 31.663
+   "start": 32.22,
+   "end": 32.68
   },
   {
    "text": "rénale",
-   "start": 31.663,
-   "end": 32.076
+   "start": 32.68,
+   "end": 33.12
   },
   {
    "text": "ou",
-   "start": 32.076,
-   "end": 32.173
+   "start": 33.12,
+   "end": 33.3
   },
   {
    "text": "une",
-   "start": 32.173,
-   "end": 32.258
+   "start": 33.3,
+   "end": 33.48
   },
   {
    "text": "infection",
-   "start": 32.258,
-   "end": 32.634
+   "start": 33.48,
+   "end": 33.82
   },
   {
    "text": "grave.",
-   "start": 32.634,
-   "end": 33.107
+   "start": 33.82,
+   "end": 34.19
   },
   {
-   "text": "Trois :",
-   "start": 34.027,
-   "end": 34.378
+   "text": "Trois :",
+   "start": 35.005,
+   "end": 35.32
   },
   {
    "text": "le",
-   "start": 34.791,
-   "end": 34.912
+   "start": 35.58,
+   "end": 35.98
   },
   {
    "text": "N",
-   "start": 34.912,
-   "end": 35.082
+   "start": 35.98,
+   "end": 35.98
   },
   {
    "text": "T",
-   "start": 35.082,
-   "end": 35.192
+   "start": 35.98,
+   "end": 36.32
   },
   {
    "text": "pro",
-   "start": 35.192,
-   "end": 35.41
+   "start": 36.32,
+   "end": 36.72
   },
   {
    "text": "B",
-   "start": 35.41,
-   "end": 35.544
+   "start": 36.72,
+   "end": 36.72
   },
   {
    "text": "N",
-   "start": 35.544,
-   "end": 35.701
+   "start": 36.72,
+   "end": 37.6
   },
   {
    "text": "P.",
-   "start": 35.701,
-   "end": 35.944
+   "start": 36.72,
+   "end": 37.6
   },
   {
    "text": "Il",
-   "start": 35.944,
-   "end": 36.078
+   "start": 37.84,
+   "end": 37.86
   },
   {
    "text": "est",
-   "start": 36.078,
-   "end": 36.102
+   "start": 37.86,
+   "end": 38.06
   },
   {
    "text": "libéré",
-   "start": 36.102,
-   "end": 36.429
+   "start": 38.06,
+   "end": 38.34
   },
   {
    "text": "quand",
-   "start": 36.429,
-   "end": 36.551
+   "start": 38.34,
+   "end": 38.5
   },
   {
    "text": "le",
-   "start": 36.551,
-   "end": 36.636
+   "start": 38.5,
+   "end": 38.68
   },
   {
    "text": "cœur",
-   "start": 36.636,
-   "end": 36.842
+   "start": 38.68,
+   "end": 38.8
   },
   {
    "text": "est",
-   "start": 36.842,
-   "end": 36.878
+   "start": 38.8,
+   "end": 39.08
   },
   {
    "text": "trop",
-   "start": 36.879,
-   "end": 37.085
+   "start": 39.08,
+   "end": 39.24
   },
   {
    "text": "étiré,",
-   "start": 37.085,
-   "end": 37.546
+   "start": 39.24,
+   "end": 39.72
   },
   {
    "text": "parce",
-   "start": 37.813,
-   "end": 37.959
+   "start": 39.84,
+   "end": 39.98
   },
   {
    "text": "qu'il",
-   "start": 37.959,
-   "end": 38.092
+   "start": 39.98,
+   "end": 40.18
   },
   {
    "text": "pompe",
-   "start": 38.092,
-   "end": 38.347
+   "start": 40.18,
+   "end": 40.44
   },
   {
    "text": "mal.",
-   "start": 38.347,
-   "end": 38.76
+   "start": 40.44,
+   "end": 40.74
   },
   {
    "text": "Normal,",
-   "start": 39.099,
-   "end": 39.621
+   "start": 41.2,
+   "end": 41.54
   },
   {
    "text": "il",
-   "start": 39.973,
-   "end": 40.034
+   "start": 41.7,
+   "end": 41.9
   },
   {
    "text": "permet",
-   "start": 40.034,
-   "end": 40.289
+   "start": 41.9,
+   "end": 42.14
   },
   {
    "text": "presque",
-   "start": 40.289,
-   "end": 40.628
+   "start": 42.14,
+   "end": 42.58
   },
   {
    "text": "d'écarter",
-   "start": 40.629,
-   "end": 41.053
+   "start": 42.58,
+   "end": 43.02
   },
   {
    "text": "une",
-   "start": 41.053,
-   "end": 41.15
+   "start": 43.02,
+   "end": 43.22
   },
   {
    "text": "insuffisance",
-   "start": 41.15,
-   "end": 41.709
+   "start": 43.22,
+   "end": 43.66
   },
   {
    "text": "cardiaque.",
-   "start": 41.709,
-   "end": 42.327
+   "start": 43.66,
+   "end": 44.48
   },
   {
    "text": "Élevé,",
-   "start": 42.656,
-   "end": 43.141
+   "start": 44.68,
+   "end": 45.14
   },
   {
    "text": "elle",
-   "start": 43.42,
-   "end": 43.542
+   "start": 45.18,
+   "end": 45.32
   },
   {
    "text": "est",
-   "start": 43.542,
-   "end": 43.578
+   "start": 45.32,
+   "end": 45.5
   },
   {
-   "text": "probable :",
-   "start": 43.578,
-   "end": 44.088
+   "text": "probable :",
+   "start": 45.5,
+   "end": 45.82
   },
   {
    "text": "on",
-   "start": 44.44,
-   "end": 44.476
+   "start": 46.14,
+   "end": 46.28
   },
   {
    "text": "fait",
-   "start": 44.476,
-   "end": 44.622
+   "start": 46.28,
+   "end": 46.44
   },
   {
    "text": "une",
-   "start": 44.622,
-   "end": 44.719
+   "start": 46.44,
+   "end": 46.58
   },
   {
    "text": "échographie",
-   "start": 44.719,
-   "end": 45.217
+   "start": 46.58,
+   "end": 47.04
   },
   {
    "text": "du",
-   "start": 45.217,
-   "end": 45.326
+   "start": 47.04,
+   "end": 47.24
   },
   {
    "text": "cœur.",
-   "start": 45.326,
-   "end": 45.751
+   "start": 47.24,
+   "end": 47.46
   },
   {
    "text": "Le",
-   "start": 46.079,
-   "end": 46.285
+   "start": 47.8,
+   "end": 48.02
   },
   {
    "text": "seuil",
-   "start": 46.285,
-   "end": 46.528
+   "start": 48.02,
+   "end": 48.4
   },
   {
    "text": "augmente",
-   "start": 46.528,
-   "end": 46.867
+   "start": 48.4,
+   "end": 48.72
   },
   {
    "text": "avec",
-   "start": 46.867,
-   "end": 47.074
+   "start": 48.72,
+   "end": 48.98
   },
   {
    "text": "l'âge.",
-   "start": 47.074,
-   "end": 47.498
+   "start": 48.98,
+   "end": 49.265
   },
   {
    "text": "La",
-   "start": 48.474,
-   "end": 48.584
+   "start": 50.071,
+   "end": 50.3
   },
   {
    "text": "troponine,",
-   "start": 48.584,
-   "end": 49.258
+   "start": 50.3,
+   "end": 50.98
   },
   {
    "text": "pour",
-   "start": 49.516,
-   "end": 49.65
+   "start": 50.98,
+   "end": 51.24
   },
   {
    "text": "le",
-   "start": 49.651,
-   "end": 49.724
+   "start": 51.24,
+   "end": 51.46
   },
   {
    "text": "muscle",
-   "start": 49.724,
-   "end": 50.055
+   "start": 51.46,
+   "end": 51.68
   },
   {
    "text": "qui",
-   "start": 50.055,
-   "end": 50.19
+   "start": 51.68,
+   "end": 52.0
   },
   {
    "text": "souffre.",
-   "start": 50.19,
-   "end": 50.68
+   "start": 52.0,
+   "end": 52.4
   },
   {
    "text": "Le",
-   "start": 51.06,
-   "end": 51.195
+   "start": 52.68,
+   "end": 52.92
   },
   {
    "text": "N",
-   "start": 51.195,
-   "end": 51.378
+   "start": 52.92,
+   "end": 52.92
   },
   {
    "text": "T",
-   "start": 51.378,
-   "end": 51.501
+   "start": 52.92,
+   "end": 53.28
   },
   {
    "text": "pro",
-   "start": 51.501,
-   "end": 51.709
+   "start": 53.28,
+   "end": 53.54
   },
   {
    "text": "B",
-   "start": 51.709,
-   "end": 51.844
+   "start": 53.54,
+   "end": 53.54
   },
   {
    "text": "N",
-   "start": 51.844,
-   "end": 52.04
+   "start": 53.54,
+   "end": 54.2
   },
   {
    "text": "P,",
-   "start": 52.04,
-   "end": 52.31
+   "start": 53.54,
+   "end": 54.2
   },
   {
    "text": "pour",
-   "start": 52.579,
-   "end": 52.702
+   "start": 54.2,
+   "end": 54.42
   },
   {
    "text": "le",
-   "start": 52.702,
-   "end": 52.775
+   "start": 54.42,
+   "end": 54.62
   },
   {
    "text": "cœur",
-   "start": 52.775,
-   "end": 52.972
+   "start": 54.62,
+   "end": 54.76
   },
   {
    "text": "qui",
-   "start": 52.972,
-   "end": 53.106
+   "start": 54.76,
+   "end": 55.02
   },
   {
    "text": "fatigue.",
-   "start": 53.106,
-   "end": 53.682
+   "start": 55.02,
+   "end": 55.4
   },
   {
    "text": "Prochaine",
-   "start": 54.05,
-   "end": 54.442
+   "start": 55.98,
+   "end": 56.26
   },
   {
-   "text": "vidéo :",
-   "start": 54.442,
-   "end": 54.945
+   "text": "vidéo :",
+   "start": 56.26,
+   "end": 56.66
   },
   {
    "text": "les",
-   "start": 55.361,
-   "end": 55.423
+   "start": 56.92,
+   "end": 57.16
   },
   {
    "text": "marqueurs",
-   "start": 55.423,
-   "end": 55.815
+   "start": 57.16,
+   "end": 57.5
   },
   {
    "text": "tumoraux.",
-   "start": 55.815,
-   "end": 56.366
+   "start": 57.5,
+   "end": 57.92
   }
  ]
 }

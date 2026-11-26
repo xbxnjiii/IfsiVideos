@@ -1,828 +1,828 @@
 {
- "voice": "voix.wav (tts_voix.py)",
- "duration": 55.72,
+ "voice": "pad-tube-jaune-ions.wav",
+ "duration": 58.798,
  "sections": [
   {
    "id": "intro",
-   "start": 0.05,
-   "end": 6.07
+   "start": 0.0,
+   "end": 6.26
   },
   {
    "id": "sodium",
-   "start": 7.019,
-   "end": 19.179
+   "start": 7.123,
+   "end": 20.118
   },
   {
    "id": "potassium",
-   "start": 20.11,
-   "end": 34.672
+   "start": 20.916,
+   "end": 36.864
   },
   {
    "id": "chlore",
-   "start": 35.635,
-   "end": 45.538
+   "start": 37.674,
+   "end": 48.938
   },
   {
    "id": "fin",
-   "start": 46.458,
-   "end": 55.379
+   "start": 49.737,
+   "end": 58.58
   }
  ],
  "words": [
   {
    "text": "Un",
-   "start": 0.05,
-   "end": 0.206
+   "start": 0.0,
+   "end": 0.24
   },
   {
    "text": "potassium",
-   "start": 0.206,
-   "end": 0.699
+   "start": 0.24,
+   "end": 0.7
   },
   {
    "text": "de",
-   "start": 0.699,
-   "end": 0.771
+   "start": 0.7,
+   "end": 0.96
   },
   {
    "text": "travers",
-   "start": 0.771,
-   "end": 1.144
+   "start": 0.96,
+   "end": 1.16
   },
   {
    "text": "peut",
-   "start": 1.144,
-   "end": 1.24
+   "start": 1.16,
+   "end": 1.44
   },
   {
    "text": "arrêter",
-   "start": 1.24,
-   "end": 1.564
+   "start": 1.44,
+   "end": 1.88
   },
   {
    "text": "un",
-   "start": 1.564,
-   "end": 1.649
+   "start": 1.88,
+   "end": 2.12
   },
   {
    "text": "cœur.",
-   "start": 1.649,
-   "end": 2.081
+   "start": 2.12,
+   "end": 2.32
   },
   {
    "text": "Dans",
-   "start": 2.416,
-   "end": 2.56
+   "start": 2.8,
+   "end": 2.96
   },
   {
    "text": "le",
-   "start": 2.56,
-   "end": 2.644
+   "start": 2.96,
+   "end": 3.16
   },
   {
    "text": "tube",
-   "start": 2.644,
-   "end": 2.825
+   "start": 3.16,
+   "end": 3.28
   },
   {
    "text": "jaune,",
-   "start": 2.825,
-   "end": 3.209
+   "start": 3.28,
+   "end": 3.76
   },
   {
    "text": "l'ionogramme",
-   "start": 3.51,
-   "end": 4.062
+   "start": 3.84,
+   "end": 4.52
   },
   {
    "text": "commence",
-   "start": 4.062,
-   "end": 4.459
+   "start": 4.52,
+   "end": 4.8
   },
   {
    "text": "par",
-   "start": 4.459,
-   "end": 4.603
+   "start": 4.8,
+   "end": 5.12
   },
   {
    "text": "trois",
-   "start": 4.603,
-   "end": 4.82
+   "start": 5.12,
+   "end": 5.4
   },
   {
    "text": "ions.",
-   "start": 4.82,
-   "end": 5.096
+   "start": 5.4,
+   "end": 5.56
   },
   {
    "text": "Tu",
-   "start": 5.421,
-   "end": 5.541
+   "start": 5.76,
+   "end": 5.92
   },
   {
    "text": "les",
-   "start": 5.541,
-   "end": 5.637
+   "start": 5.92,
+   "end": 6.14
   },
   {
-   "text": "connais ?",
-   "start": 5.637,
-   "end": 6.07
+   "text": "connais ?",
+   "start": 6.14,
+   "end": 6.26
   },
   {
-   "text": "Un :",
-   "start": 7.019,
-   "end": 7.262
+   "text": "Un :",
+   "start": 7.123,
+   "end": 7.38
   },
   {
    "text": "le",
-   "start": 7.456,
-   "end": 7.541
+   "start": 7.7,
+   "end": 7.94
   },
   {
    "text": "sodium,",
-   "start": 7.541,
-   "end": 8.05
+   "start": 7.94,
+   "end": 8.4
   },
   {
    "text": "le",
-   "start": 8.354,
-   "end": 8.402
+   "start": 8.74,
+   "end": 8.9
   },
   {
    "text": "gardien",
-   "start": 8.402,
-   "end": 8.73
+   "start": 8.9,
+   "end": 9.24
   },
   {
    "text": "de",
-   "start": 8.73,
-   "end": 8.827
+   "start": 9.24,
+   "end": 9.44
   },
   {
    "text": "l'eau,",
-   "start": 8.827,
-   "end": 9.07
+   "start": 9.44,
+   "end": 9.64
   },
   {
    "text": "autour",
-   "start": 9.349,
-   "end": 9.58
+   "start": 9.64,
+   "end": 10.06
   },
   {
    "text": "des",
-   "start": 9.58,
-   "end": 9.677
+   "start": 10.06,
+   "end": 10.3
   },
   {
    "text": "cellules.",
-   "start": 9.677,
-   "end": 10.235
+   "start": 10.3,
+   "end": 10.86
   },
   {
    "text": "La",
-   "start": 10.611,
-   "end": 10.733
+   "start": 11.06,
+   "end": 11.26
   },
   {
-   "text": "norme :",
-   "start": 10.733,
-   "end": 11.145
+   "text": "norme :",
+   "start": 11.26,
+   "end": 11.84
   },
   {
    "text": "de",
-   "start": 11.534,
-   "end": 11.643
+   "start": 11.84,
+   "end": 12.16
   },
   {
    "text": "cent",
-   "start": 11.643,
-   "end": 11.788
+   "start": 12.16,
+   "end": 12.16
   },
   {
    "text": "trente-trois",
-   "start": 11.788,
-   "end": 12.262
+   "start": 12.16,
+   "end": 12.94
   },
   {
    "text": "à",
-   "start": 12.262,
-   "end": 12.322
+   "start": 12.94,
+   "end": 13.12
   },
   {
    "text": "cent",
-   "start": 12.322,
-   "end": 12.468
+   "start": 13.12,
+   "end": 13.12
   },
   {
    "text": "cinquante",
-   "start": 12.468,
-   "end": 12.832
+   "start": 13.12,
+   "end": 13.72
   },
   {
    "text": "millimoles",
-   "start": 12.832,
-   "end": 13.233
+   "start": 13.72,
+   "end": 14.12
   },
   {
    "text": "par",
-   "start": 13.233,
-   "end": 13.402
+   "start": 14.12,
+   "end": 14.36
   },
   {
    "text": "litre.",
-   "start": 13.402,
-   "end": 13.839
+   "start": 14.36,
+   "end": 14.94
   },
   {
    "text": "Trop",
-   "start": 14.179,
-   "end": 14.47
+   "start": 15.1,
+   "end": 15.28
   },
   {
    "text": "haut,",
-   "start": 14.47,
-   "end": 14.665
+   "start": 15.28,
+   "end": 15.58
   },
   {
    "text": "les",
-   "start": 14.944,
-   "end": 15.017
+   "start": 15.76,
+   "end": 15.94
   },
   {
    "text": "cellules",
-   "start": 15.017,
-   "end": 15.381
+   "start": 15.94,
+   "end": 16.22
   },
   {
    "text": "se",
-   "start": 15.381,
-   "end": 15.49
+   "start": 16.22,
+   "end": 16.46
   },
   {
    "text": "déshydratent.",
-   "start": 15.49,
-   "end": 16.218
+   "start": 16.46,
+   "end": 17.2
   },
   {
    "text": "Trop",
-   "start": 16.582,
-   "end": 16.764
+   "start": 17.36,
+   "end": 17.6
   },
   {
    "text": "bas,",
-   "start": 16.764,
-   "end": 17.007
+   "start": 17.6,
+   "end": 17.84
   },
   {
    "text": "elles",
-   "start": 17.322,
-   "end": 17.432
+   "start": 18.08,
+   "end": 18.36
   },
   {
    "text": "gonflent",
-   "start": 17.432,
-   "end": 17.796
+   "start": 18.36,
+   "end": 18.72
   },
   {
    "text": "d'eau,",
-   "start": 17.796,
-   "end": 18.038
+   "start": 18.72,
+   "end": 19.1
   },
   {
    "text": "même",
-   "start": 18.354,
-   "end": 18.536
+   "start": 19.1,
+   "end": 19.46
   },
   {
    "text": "dans",
-   "start": 18.536,
-   "end": 18.633
+   "start": 19.46,
+   "end": 19.66
   },
   {
    "text": "le",
-   "start": 18.633,
-   "end": 18.718
+   "start": 19.66,
+   "end": 19.84
   },
   {
    "text": "cerveau.",
-   "start": 18.718,
-   "end": 19.179
+   "start": 19.84,
+   "end": 20.118
   },
   {
-   "text": "Deux :",
-   "start": 20.11,
-   "end": 20.522
+   "text": "Deux :",
+   "start": 20.916,
+   "end": 21.4
   },
   {
    "text": "le",
-   "start": 20.898,
-   "end": 20.959
+   "start": 21.66,
+   "end": 21.88
   },
   {
    "text": "potassium,",
-   "start": 20.959,
-   "end": 21.614
+   "start": 21.88,
+   "end": 22.46
   },
   {
    "text": "surtout",
-   "start": 21.894,
-   "end": 22.221
+   "start": 22.88,
+   "end": 23.16
   },
   {
    "text": "à",
-   "start": 22.221,
-   "end": 22.27
+   "start": 23.16,
+   "end": 23.38
   },
   {
    "text": "l'intérieur",
-   "start": 22.27,
-   "end": 22.707
+   "start": 23.38,
+   "end": 23.82
   },
   {
    "text": "des",
-   "start": 22.707,
-   "end": 22.804
+   "start": 23.82,
+   "end": 24.04
   },
   {
    "text": "cellules.",
-   "start": 22.804,
-   "end": 23.338
+   "start": 24.04,
+   "end": 24.44
   },
   {
    "text": "Il",
-   "start": 23.665,
-   "end": 23.86
+   "start": 24.74,
+   "end": 24.94
   },
   {
    "text": "fait",
-   "start": 23.86,
-   "end": 23.969
+   "start": 24.94,
+   "end": 25.08
   },
   {
    "text": "battre",
-   "start": 23.969,
-   "end": 24.236
+   "start": 25.08,
+   "end": 25.42
   },
   {
    "text": "le",
-   "start": 24.236,
-   "end": 24.345
+   "start": 25.42,
+   "end": 25.62
   },
   {
    "text": "cœur,",
-   "start": 24.345,
-   "end": 24.721
+   "start": 25.62,
+   "end": 25.86
   },
   {
    "text": "et",
-   "start": 25.0,
-   "end": 25.025
+   "start": 25.86,
+   "end": 26.16
   },
   {
    "text": "sa",
-   "start": 25.025,
-   "end": 25.146
+   "start": 26.16,
+   "end": 26.36
   },
   {
    "text": "norme",
-   "start": 25.146,
-   "end": 25.364
+   "start": 26.36,
+   "end": 26.72
   },
   {
    "text": "est",
-   "start": 25.364,
-   "end": 25.401
+   "start": 26.72,
+   "end": 26.94
   },
   {
-   "text": "étroite :",
-   "start": 25.401,
-   "end": 25.971
+   "text": "étroite :",
+   "start": 26.94,
+   "end": 27.46
   },
   {
    "text": "de",
-   "start": 26.36,
-   "end": 26.42
+   "start": 27.46,
+   "end": 27.7
   },
   {
    "text": "trois",
-   "start": 26.42,
-   "end": 26.59
+   "start": 27.7,
+   "end": 28.02
   },
   {
    "text": "virgule",
-   "start": 26.59,
-   "end": 26.881
+   "start": 28.02,
+   "end": 28.07
   },
   {
    "text": "cinq",
-   "start": 26.881,
-   "end": 27.124
+   "start": 28.02,
+   "end": 28.7
   },
   {
    "text": "à",
-   "start": 27.124,
-   "end": 27.185
+   "start": 28.7,
+   "end": 28.84
   },
   {
    "text": "cinq",
-   "start": 27.185,
-   "end": 27.44
+   "start": 28.84,
+   "end": 29.32
   },
   {
    "text": "millimoles",
-   "start": 27.44,
-   "end": 27.864
+   "start": 29.32,
+   "end": 29.64
   },
   {
    "text": "par",
-   "start": 27.864,
-   "end": 28.034
+   "start": 29.64,
+   "end": 29.86
   },
   {
    "text": "litre.",
-   "start": 28.034,
-   "end": 28.471
+   "start": 29.86,
+   "end": 30.5
   },
   {
    "text": "Trop",
-   "start": 28.846,
-   "end": 29.089
+   "start": 30.7,
+   "end": 30.88
   },
   {
    "text": "haut",
-   "start": 29.089,
-   "end": 29.186
+   "start": 30.88,
+   "end": 31.14
   },
   {
    "text": "ou",
-   "start": 29.186,
-   "end": 29.247
+   "start": 31.14,
+   "end": 31.4
   },
   {
    "text": "trop",
-   "start": 29.247,
-   "end": 29.453
+   "start": 31.4,
+   "end": 31.68
   },
   {
    "text": "bas,",
-   "start": 29.453,
-   "end": 29.672
+   "start": 31.68,
+   "end": 31.84
   },
   {
    "text": "le",
-   "start": 30.024,
-   "end": 30.096
+   "start": 32.1,
+   "end": 32.24
   },
   {
    "text": "cœur",
-   "start": 30.096,
-   "end": 30.303
+   "start": 32.24,
+   "end": 32.4
   },
   {
    "text": "peut",
-   "start": 30.303,
-   "end": 30.412
+   "start": 32.4,
+   "end": 32.58
   },
   {
    "text": "se",
-   "start": 30.412,
-   "end": 30.521
+   "start": 32.58,
+   "end": 32.84
   },
   {
    "text": "dérégler.",
-   "start": 30.521,
-   "end": 31.079
+   "start": 32.84,
+   "end": 33.34
   },
   {
    "text": "Et",
-   "start": 31.408,
-   "end": 31.553
+   "start": 33.68,
+   "end": 33.76
   },
   {
    "text": "un",
-   "start": 31.553,
-   "end": 31.614
+   "start": 33.76,
+   "end": 33.94
   },
   {
    "text": "garrot",
-   "start": 31.614,
-   "end": 31.845
+   "start": 33.94,
+   "end": 34.16
   },
   {
    "text": "trop",
-   "start": 31.845,
-   "end": 32.039
+   "start": 34.16,
+   "end": 34.46
   },
   {
    "text": "long,",
-   "start": 32.039,
-   "end": 32.294
+   "start": 34.46,
+   "end": 34.62
   },
   {
    "text": "ou",
-   "start": 32.621,
-   "end": 32.694
+   "start": 34.76,
+   "end": 34.94
   },
   {
    "text": "un",
-   "start": 32.694,
-   "end": 32.743
+   "start": 34.94,
+   "end": 35.1
   },
   {
    "text": "tube",
-   "start": 32.743,
-   "end": 32.949
+   "start": 35.1,
+   "end": 35.22
   },
   {
    "text": "abîmé,",
-   "start": 32.949,
-   "end": 33.386
+   "start": 35.22,
+   "end": 35.84
   },
   {
    "text": "le",
-   "start": 33.701,
-   "end": 33.774
+   "start": 35.86,
+   "end": 36.04
   },
   {
    "text": "fait",
-   "start": 33.774,
-   "end": 33.884
+   "start": 36.04,
+   "end": 36.16
   },
   {
    "text": "monter",
-   "start": 33.884,
-   "end": 34.151
+   "start": 36.16,
+   "end": 36.4
   },
   {
    "text": "à",
-   "start": 34.151,
-   "end": 34.211
+   "start": 36.4,
+   "end": 36.68
   },
   {
    "text": "tort.",
-   "start": 34.211,
-   "end": 34.672
+   "start": 36.68,
+   "end": 36.864
   },
   {
-   "text": "Trois :",
-   "start": 35.635,
-   "end": 35.938
+   "text": "Trois :",
+   "start": 37.674,
+   "end": 37.98
   },
   {
    "text": "le",
-   "start": 36.375,
-   "end": 36.46
+   "start": 38.38,
+   "end": 38.64
   },
   {
    "text": "chlore,",
-   "start": 36.46,
-   "end": 36.909
+   "start": 38.64,
+   "end": 39.08
   },
   {
    "text": "qu'on",
-   "start": 37.115,
-   "end": 37.212
+   "start": 39.16,
+   "end": 39.44
   },
   {
    "text": "appelle",
-   "start": 37.212,
-   "end": 37.492
+   "start": 39.44,
+   "end": 39.6
   },
   {
    "text": "aussi",
-   "start": 37.492,
-   "end": 37.698
+   "start": 39.6,
+   "end": 40.04
   },
   {
    "text": "chlorure.",
-   "start": 37.698,
-   "end": 38.244
+   "start": 40.04,
+   "end": 40.7
   },
   {
    "text": "Il",
-   "start": 38.585,
-   "end": 38.779
+   "start": 41.08,
+   "end": 41.24
   },
   {
    "text": "suit",
-   "start": 38.779,
-   "end": 38.937
+   "start": 41.24,
+   "end": 41.44
   },
   {
    "text": "le",
-   "start": 38.937,
-   "end": 39.046
+   "start": 41.44,
+   "end": 41.68
   },
   {
    "text": "sodium,",
-   "start": 39.046,
-   "end": 39.531
+   "start": 41.68,
+   "end": 42.06
   },
   {
    "text": "et",
-   "start": 39.871,
-   "end": 39.908
+   "start": 42.06,
+   "end": 42.38
   },
   {
    "text": "il",
-   "start": 39.908,
-   "end": 40.017
+   "start": 42.38,
+   "end": 42.52
   },
   {
    "text": "aide",
-   "start": 40.017,
-   "end": 40.126
+   "start": 42.52,
+   "end": 42.66
   },
   {
    "text": "à",
-   "start": 40.126,
-   "end": 40.163
+   "start": 42.66,
+   "end": 42.82
   },
   {
    "text": "garder",
-   "start": 40.163,
-   "end": 40.43
+   "start": 42.82,
+   "end": 43.02
   },
   {
    "text": "l'équilibre",
-   "start": 40.43,
-   "end": 40.915
+   "start": 43.02,
+   "end": 43.56
   },
   {
    "text": "entre",
-   "start": 40.915,
-   "end": 41.121
+   "start": 43.56,
+   "end": 43.82
   },
   {
    "text": "l'acide",
-   "start": 41.121,
-   "end": 41.522
+   "start": 43.82,
+   "end": 44.36
   },
   {
    "text": "et",
-   "start": 41.522,
-   "end": 41.546
+   "start": 44.36,
+   "end": 44.5
   },
   {
    "text": "la",
-   "start": 41.546,
-   "end": 41.643
+   "start": 44.5,
+   "end": 44.76
   },
   {
    "text": "base.",
-   "start": 41.643,
-   "end": 42.092
+   "start": 44.76,
+   "end": 45.04
   },
   {
    "text": "La",
-   "start": 42.455,
-   "end": 42.577
+   "start": 45.44,
+   "end": 45.62
   },
   {
-   "text": "norme :",
-   "start": 42.577,
-   "end": 42.989
+   "text": "norme :",
+   "start": 45.62,
+   "end": 46.22
   },
   {
    "text": "de",
-   "start": 43.378,
-   "end": 43.45
+   "start": 46.22,
+   "end": 46.44
   },
   {
    "text": "quatre-vingt-quinze",
-   "start": 43.45,
-   "end": 44.094
+   "start": 46.44,
+   "end": 47.0
   },
   {
    "text": "à",
-   "start": 44.094,
-   "end": 44.142
+   "start": 47.0,
+   "end": 47.46
   },
   {
    "text": "cent",
-   "start": 44.142,
-   "end": 44.288
+   "start": 47.46,
+   "end": 47.46
   },
   {
    "text": "cinq",
-   "start": 44.288,
-   "end": 44.53
+   "start": 47.46,
+   "end": 47.96
   },
   {
    "text": "millimoles",
-   "start": 44.53,
-   "end": 44.943
+   "start": 47.96,
+   "end": 48.4
   },
   {
    "text": "par",
-   "start": 44.943,
-   "end": 45.113
+   "start": 48.4,
+   "end": 48.62
   },
   {
    "text": "litre.",
-   "start": 45.113,
-   "end": 45.538
+   "start": 48.62,
+   "end": 48.938
   },
   {
    "text": "Sodium,",
-   "start": 46.458,
-   "end": 47.132
+   "start": 49.737,
+   "end": 50.42
   },
   {
    "text": "potassium,",
-   "start": 47.34,
-   "end": 48.051
+   "start": 50.58,
+   "end": 51.14
   },
   {
-   "text": "chlore :",
-   "start": 48.284,
-   "end": 48.725
+   "text": "chlore :",
+   "start": 51.46,
+   "end": 51.98
   },
   {
    "text": "tu",
-   "start": 49.007,
-   "end": 49.129
+   "start": 52.06,
+   "end": 52.22
   },
   {
    "text": "as",
-   "start": 49.129,
-   "end": 49.154
+   "start": 52.22,
+   "end": 52.36
   },
   {
    "text": "le",
-   "start": 49.154,
-   "end": 49.24
+   "start": 52.36,
+   "end": 52.56
   },
   {
    "text": "début",
-   "start": 49.24,
-   "end": 49.497
+   "start": 52.56,
+   "end": 52.78
   },
   {
    "text": "de",
-   "start": 49.497,
-   "end": 49.583
+   "start": 52.78,
+   "end": 52.96
   },
   {
    "text": "l'ionogramme.",
-   "start": 49.583,
-   "end": 50.33
+   "start": 52.96,
+   "end": 53.86
   },
   {
    "text": "Prochaine",
-   "start": 50.697,
-   "end": 51.065
+   "start": 53.86,
+   "end": 54.34
   },
   {
-   "text": "vidéo :",
-   "start": 51.065,
-   "end": 51.518
+   "text": "vidéo :",
+   "start": 54.34,
+   "end": 54.68
   },
   {
    "text": "le",
-   "start": 51.959,
-   "end": 52.008
+   "start": 55.02,
+   "end": 55.2
   },
   {
    "text": "calcium,",
-   "start": 52.008,
-   "end": 52.609
+   "start": 55.2,
+   "end": 55.64
   },
   {
    "text": "le",
-   "start": 52.891,
-   "end": 52.952
+   "start": 55.98,
+   "end": 56.1
   },
   {
    "text": "phosphore,",
-   "start": 52.952,
-   "end": 53.516
+   "start": 56.1,
+   "end": 56.64
   },
   {
    "text": "le",
-   "start": 53.834,
-   "end": 53.883
+   "start": 56.84,
+   "end": 57.04
   },
   {
    "text": "magnésium",
-   "start": 53.883,
-   "end": 54.447
+   "start": 57.04,
+   "end": 57.5
   },
   {
    "text": "et",
-   "start": 54.447,
-   "end": 54.472
+   "start": 57.5,
+   "end": 57.74
   },
   {
    "text": "les",
-   "start": 54.472,
-   "end": 54.557
+   "start": 57.74,
+   "end": 57.92
   },
   {
    "text": "bicarbonates.",
-   "start": 54.558,
-   "end": 55.379
+   "start": 57.92,
+   "end": 58.58
   }
  ]
 }

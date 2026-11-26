@@ -1,913 +1,913 @@
 {
- "voice": "voix.wav (tts_voix.py)",
- "duration": 61.36,
+ "voice": "pad-tube-jaune-electrophorese.wav",
+ "duration": 64.321,
  "sections": [
   {
    "id": "intro",
-   "start": 0.05,
-   "end": 8.69
+   "start": 0.0,
+   "end": 9.1
   },
   {
    "id": "electro",
-   "start": 9.624,
-   "end": 21.455
+   "start": 9.923,
+   "end": 22.849
   },
   {
    "id": "pic",
-   "start": 22.39,
-   "end": 35.497
+   "start": 23.648,
+   "end": 37.955
   },
   {
    "id": "ig",
-   "start": 36.463,
-   "end": 52.495
+   "start": 38.761,
+   "end": 55.33
   },
   {
    "id": "fin",
-   "start": 53.442,
-   "end": 61.027
+   "start": 56.141,
+   "end": 64.1
   }
  ],
  "words": [
   {
    "text": "Un",
-   "start": 0.05,
-   "end": 0.206
+   "start": 0.0,
+   "end": 0.3
   },
   {
    "text": "pic",
-   "start": 0.206,
-   "end": 0.422
+   "start": 0.3,
+   "end": 0.48
   },
   {
    "text": "sur",
-   "start": 0.422,
-   "end": 0.554
+   "start": 0.48,
+   "end": 0.7
   },
   {
    "text": "une",
-   "start": 0.554,
-   "end": 0.662
+   "start": 0.7,
+   "end": 0.9
   },
   {
    "text": "courbe",
-   "start": 0.662,
-   "end": 0.939
+   "start": 0.9,
+   "end": 1.14
   },
   {
    "text": "de",
-   "start": 0.939,
-   "end": 1.023
+   "start": 1.14,
+   "end": 1.42
   },
   {
    "text": "protéines…",
-   "start": 1.023,
-   "end": 1.564
+   "start": 1.42,
+   "end": 1.78
   },
   {
    "text": "et",
-   "start": 2.033,
-   "end": 2.069
+   "start": 2.14,
+   "end": 2.26
   },
   {
    "text": "ça",
-   "start": 2.069,
-   "end": 2.177
+   "start": 2.26,
+   "end": 2.4
   },
   {
    "text": "peut",
-   "start": 2.177,
-   "end": 2.285
+   "start": 2.4,
+   "end": 2.56
   },
   {
    "text": "cacher",
-   "start": 2.285,
-   "end": 2.574
+   "start": 2.56,
+   "end": 2.82
   },
   {
    "text": "un",
-   "start": 2.574,
-   "end": 2.634
+   "start": 2.82,
+   "end": 3.04
   },
   {
    "text": "cancer",
-   "start": 2.634,
-   "end": 2.946
+   "start": 3.04,
+   "end": 3.3
   },
   {
    "text": "du",
-   "start": 2.946,
-   "end": 3.066
+   "start": 3.3,
+   "end": 3.54
   },
   {
    "text": "sang,",
-   "start": 3.066,
-   "end": 3.355
+   "start": 3.54,
+   "end": 3.74
   },
   {
    "text": "comme",
-   "start": 3.631,
-   "end": 3.763
+   "start": 3.94,
+   "end": 4.06
   },
   {
    "text": "le",
-   "start": 3.763,
-   "end": 3.836
+   "start": 4.06,
+   "end": 4.24
   },
   {
    "text": "myélome.",
-   "start": 3.836,
-   "end": 4.34
+   "start": 4.24,
+   "end": 5.12
   },
   {
    "text": "L'électrophorèse",
-   "start": 4.724,
-   "end": 5.457
+   "start": 5.12,
+   "end": 5.88
   },
   {
    "text": "du",
-   "start": 5.457,
-   "end": 5.565
+   "start": 5.88,
+   "end": 6.02
   },
   {
    "text": "tube",
-   "start": 5.565,
-   "end": 5.757
+   "start": 6.02,
+   "end": 6.18
   },
   {
    "text": "jaune",
-   "start": 5.757,
-   "end": 6.094
+   "start": 6.18,
+   "end": 6.56
   },
   {
    "text": "trie",
-   "start": 6.094,
-   "end": 6.274
+   "start": 6.56,
+   "end": 6.82
   },
   {
    "text": "tes",
-   "start": 6.274,
-   "end": 6.37
+   "start": 6.82,
+   "end": 7.0
   },
   {
    "text": "protéines",
-   "start": 6.37,
-   "end": 6.839
+   "start": 7.0,
+   "end": 7.4
   },
   {
    "text": "en",
-   "start": 6.839,
-   "end": 6.887
+   "start": 7.4,
+   "end": 7.68
   },
   {
    "text": "cinq",
-   "start": 6.887,
-   "end": 7.151
+   "start": 7.68,
+   "end": 7.9
   },
   {
    "text": "bandes.",
-   "start": 7.151,
-   "end": 7.56
+   "start": 7.9,
+   "end": 8.34
   },
   {
    "text": "Tu",
-   "start": 7.921,
-   "end": 8.017
+   "start": 8.48,
+   "end": 8.64
   },
   {
    "text": "sais",
-   "start": 8.017,
-   "end": 8.149
+   "start": 8.64,
+   "end": 8.76
   },
   {
    "text": "la",
-   "start": 8.149,
-   "end": 8.245
+   "start": 8.76,
+   "end": 8.92
   },
   {
-   "text": "lire ?",
-   "start": 8.245,
-   "end": 8.69
+   "text": "lire ?",
+   "start": 8.92,
+   "end": 9.1
   },
   {
-   "text": "Un :",
-   "start": 9.624,
-   "end": 9.964
+   "text": "Un :",
+   "start": 9.923,
+   "end": 10.18
   },
   {
    "text": "l'électrophorèse.",
-   "start": 10.364,
-   "end": 11.347
+   "start": 10.5,
+   "end": 11.84
   },
   {
    "text": "Un",
-   "start": 11.674,
-   "end": 11.807
+   "start": 12.06,
+   "end": 12.14
   },
   {
    "text": "courant",
-   "start": 11.807,
-   "end": 12.11
+   "start": 12.14,
+   "end": 12.48
   },
   {
    "text": "fait",
-   "start": 12.11,
-   "end": 12.22
+   "start": 12.48,
+   "end": 12.66
   },
   {
    "text": "avancer",
-   "start": 12.22,
-   "end": 12.584
+   "start": 12.66,
+   "end": 13.04
   },
   {
    "text": "les",
-   "start": 12.584,
-   "end": 12.657
+   "start": 13.04,
+   "end": 13.28
   },
   {
    "text": "protéines",
-   "start": 12.657,
-   "end": 13.033
+   "start": 13.28,
+   "end": 13.6
   },
   {
    "text": "du",
-   "start": 13.033,
-   "end": 13.118
+   "start": 13.6,
+   "end": 13.82
   },
   {
-   "text": "sérum :",
-   "start": 13.118,
-   "end": 13.567
+   "text": "sérum :",
+   "start": 13.82,
+   "end": 14.22
   },
   {
    "text": "elles",
-   "start": 14.052,
-   "end": 14.125
+   "start": 14.42,
+   "end": 14.56
   },
   {
    "text": "se",
-   "start": 14.125,
-   "end": 14.234
+   "start": 14.56,
+   "end": 14.8
   },
   {
    "text": "séparent",
-   "start": 14.234,
-   "end": 14.623
+   "start": 14.8,
+   "end": 15.12
   },
   {
    "text": "selon",
-   "start": 14.623,
-   "end": 14.829
+   "start": 15.12,
+   "end": 15.38
   },
   {
    "text": "leur",
-   "start": 14.829,
-   "end": 14.974
+   "start": 15.38,
+   "end": 15.64
   },
   {
    "text": "taille",
-   "start": 14.974,
-   "end": 15.241
+   "start": 15.64,
+   "end": 15.94
   },
   {
    "text": "et",
-   "start": 15.241,
-   "end": 15.266
+   "start": 15.94,
+   "end": 16.08
   },
   {
    "text": "leur",
-   "start": 15.266,
-   "end": 15.424
+   "start": 16.08,
+   "end": 16.28
   },
   {
    "text": "charge.",
-   "start": 15.424,
-   "end": 15.885
+   "start": 16.28,
+   "end": 16.62
   },
   {
    "text": "On",
-   "start": 16.212,
-   "end": 16.297
+   "start": 17.04,
+   "end": 17.2
   },
   {
    "text": "obtient",
-   "start": 16.297,
-   "end": 16.625
+   "start": 17.2,
+   "end": 17.62
   },
   {
    "text": "cinq",
-   "start": 16.625,
-   "end": 16.868
+   "start": 17.62,
+   "end": 17.92
   },
   {
-   "text": "bandes :",
-   "start": 16.868,
-   "end": 17.195
+   "text": "bandes :",
+   "start": 17.92,
+   "end": 18.42
   },
   {
    "text": "l'albumine,",
-   "start": 17.462,
-   "end": 18.057
+   "start": 18.56,
+   "end": 19.24
   },
   {
    "text": "puis",
-   "start": 18.288,
-   "end": 18.421
+   "start": 19.38,
+   "end": 19.56
   },
   {
    "text": "les",
-   "start": 18.421,
-   "end": 18.494
+   "start": 19.56,
+   "end": 19.76
   },
   {
    "text": "globulines",
-   "start": 18.494,
-   "end": 18.919
+   "start": 19.76,
+   "end": 20.24
   },
   {
    "text": "alpha",
-   "start": 18.919,
-   "end": 19.222
+   "start": 20.24,
+   "end": 20.6
   },
   {
    "text": "un,",
-   "start": 19.222,
-   "end": 19.489
+   "start": 20.6,
+   "end": 20.96
   },
   {
    "text": "alpha",
-   "start": 19.78,
-   "end": 20.084
+   "start": 21.08,
+   "end": 21.42
   },
   {
    "text": "deux,",
-   "start": 20.084,
-   "end": 20.375
+   "start": 21.42,
+   "end": 21.7
   },
   {
    "text": "bêta",
-   "start": 20.703,
-   "end": 21.018
+   "start": 21.88,
+   "end": 22.22
   },
   {
    "text": "et",
-   "start": 21.018,
-   "end": 21.055
+   "start": 22.22,
+   "end": 22.56
   },
   {
    "text": "gamma.",
-   "start": 21.055,
-   "end": 21.455
+   "start": 22.56,
+   "end": 22.849
   },
   {
-   "text": "Deux :",
-   "start": 22.39,
-   "end": 22.778
+   "text": "Deux :",
+   "start": 23.648,
+   "end": 24.14
   },
   {
    "text": "ce",
-   "start": 23.082,
-   "end": 23.203
+   "start": 24.32,
+   "end": 24.58
   },
   {
    "text": "qu'elle",
-   "start": 23.203,
-   "end": 23.385
+   "start": 24.58,
+   "end": 24.74
   },
   {
    "text": "montre.",
-   "start": 23.385,
-   "end": 23.846
+   "start": 24.74,
+   "end": 25.2
   },
   {
    "text": "Un",
-   "start": 24.174,
-   "end": 24.356
+   "start": 25.54,
+   "end": 25.74
   },
   {
    "text": "dôme",
-   "start": 24.356,
-   "end": 24.586
+   "start": 25.74,
+   "end": 26.02
   },
   {
    "text": "large",
-   "start": 24.586,
-   "end": 24.902
+   "start": 26.02,
+   "end": 26.34
   },
   {
    "text": "dans",
-   "start": 24.902,
-   "end": 25.011
+   "start": 26.34,
+   "end": 26.54
   },
   {
    "text": "les",
-   "start": 25.011,
-   "end": 25.096
+   "start": 26.54,
+   "end": 26.74
   },
   {
    "text": "gammas,",
-   "start": 25.096,
-   "end": 25.46
+   "start": 26.74,
+   "end": 27.0
   },
   {
    "text": "c'est",
-   "start": 25.836,
-   "end": 25.945
+   "start": 27.18,
+   "end": 27.4
   },
   {
    "text": "une",
-   "start": 25.945,
-   "end": 26.115
+   "start": 27.4,
+   "end": 27.6
   },
   {
    "text": "inflammation",
-   "start": 26.115,
-   "end": 26.613
+   "start": 27.6,
+   "end": 28.02
   },
   {
    "text": "chronique.",
-   "start": 26.613,
-   "end": 27.22
+   "start": 28.02,
+   "end": 28.68
   },
   {
    "text": "Mais",
-   "start": 27.547,
-   "end": 27.717
+   "start": 28.68,
+   "end": 29.16
   },
   {
    "text": "un",
-   "start": 27.717,
-   "end": 27.79
+   "start": 29.16,
+   "end": 29.42
   },
   {
    "text": "pic,",
-   "start": 27.79,
-   "end": 28.154
+   "start": 29.42,
+   "end": 29.7
   },
   {
    "text": "étroit",
-   "start": 28.312,
-   "end": 28.688
+   "start": 29.98,
+   "end": 30.26
   },
   {
    "text": "et",
-   "start": 28.688,
-   "end": 28.737
+   "start": 30.26,
+   "end": 30.52
   },
   {
    "text": "bien",
-   "start": 28.737,
-   "end": 28.907
+   "start": 30.52,
+   "end": 30.76
   },
   {
-   "text": "pointu :",
-   "start": 28.907,
-   "end": 29.356
+   "text": "pointu :",
+   "start": 30.76,
+   "end": 31.24
   },
   {
    "text": "une",
-   "start": 29.829,
-   "end": 29.902
+   "start": 31.8,
+   "end": 31.9
   },
   {
    "text": "seule",
-   "start": 29.902,
-   "end": 30.084
+   "start": 31.9,
+   "end": 32.08
   },
   {
    "text": "famille",
-   "start": 30.084,
-   "end": 30.351
+   "start": 32.08,
+   "end": 32.34
   },
   {
    "text": "de",
-   "start": 30.351,
-   "end": 30.448
+   "start": 32.34,
+   "end": 32.6
   },
   {
    "text": "cellules",
-   "start": 30.448,
-   "end": 30.751
+   "start": 32.6,
+   "end": 32.86
   },
   {
    "text": "fabrique",
-   "start": 30.751,
-   "end": 31.091
+   "start": 32.86,
+   "end": 33.24
   },
   {
    "text": "toujours",
-   "start": 31.091,
-   "end": 31.382
+   "start": 33.24,
+   "end": 33.68
   },
   {
    "text": "la",
-   "start": 31.382,
-   "end": 31.467
+   "start": 33.68,
+   "end": 33.84
   },
   {
    "text": "même",
-   "start": 31.467,
-   "end": 31.613
+   "start": 33.84,
+   "end": 34.02
   },
   {
    "text": "protéine.",
-   "start": 31.613,
-   "end": 32.232
+   "start": 34.02,
+   "end": 34.54
   },
   {
    "text": "Il",
-   "start": 32.56,
-   "end": 32.742
+   "start": 34.9,
+   "end": 35.04
   },
   {
    "text": "faut",
-   "start": 32.742,
-   "end": 32.839
+   "start": 35.04,
+   "end": 35.22
   },
   {
    "text": "alors",
-   "start": 32.839,
-   "end": 33.07
+   "start": 35.22,
+   "end": 35.42
   },
   {
    "text": "chercher",
-   "start": 33.07,
-   "end": 33.373
+   "start": 35.42,
+   "end": 35.74
   },
   {
    "text": "un",
-   "start": 33.373,
-   "end": 33.434
+   "start": 35.74,
+   "end": 35.98
   },
   {
    "text": "myélome,",
-   "start": 33.434,
-   "end": 33.907
+   "start": 35.98,
+   "end": 36.44
   },
   {
    "text": "un",
-   "start": 34.235,
-   "end": 34.283
+   "start": 36.58,
+   "end": 36.78
   },
   {
    "text": "cancer",
-   "start": 34.283,
-   "end": 34.647
+   "start": 36.78,
+   "end": 37.08
   },
   {
    "text": "de",
-   "start": 34.647,
-   "end": 34.732
+   "start": 37.08,
+   "end": 37.28
   },
   {
    "text": "la",
-   "start": 34.732,
-   "end": 34.817
+   "start": 37.28,
+   "end": 37.4
   },
   {
    "text": "moelle",
-   "start": 34.817,
-   "end": 34.987
+   "start": 37.4,
+   "end": 37.58
   },
   {
    "text": "osseuse.",
-   "start": 34.987,
-   "end": 35.497
+   "start": 37.58,
+   "end": 37.955
   },
   {
-   "text": "Trois :",
-   "start": 36.463,
-   "end": 36.766
+   "text": "Trois :",
+   "start": 38.761,
+   "end": 39.08
   },
   {
    "text": "les",
-   "start": 37.07,
-   "end": 37.167
+   "start": 39.46,
+   "end": 39.78
   },
   {
    "text": "immunoglobulines,",
-   "start": 37.167,
-   "end": 38.211
+   "start": 39.78,
+   "end": 40.66
   },
   {
    "text": "ce",
-   "start": 38.49,
-   "end": 38.623
+   "start": 40.82,
+   "end": 40.92
   },
   {
    "text": "sont",
-   "start": 38.623,
-   "end": 38.745
+   "start": 40.92,
+   "end": 41.1
   },
   {
    "text": "les",
-   "start": 38.745,
-   "end": 38.829
+   "start": 41.1,
+   "end": 41.42
   },
   {
    "text": "anticorps.",
-   "start": 38.829,
-   "end": 39.509
+   "start": 41.42,
+   "end": 42.24
   },
   {
    "text": "Les",
-   "start": 39.837,
-   "end": 40.019
+   "start": 42.46,
+   "end": 42.7
   },
   {
    "text": "I",
-   "start": 40.019,
-   "end": 40.152
+   "start": 42.7,
+   "end": 42.7
   },
   {
    "text": "G",
-   "start": 40.152,
-   "end": 40.322
+   "start": 42.7,
+   "end": 43.26
   },
   {
    "text": "G,",
-   "start": 40.322,
-   "end": 40.613
+   "start": 42.7,
+   "end": 43.26
   },
   {
    "text": "les",
-   "start": 40.929,
-   "end": 40.99
+   "start": 43.3,
+   "end": 43.5
   },
   {
    "text": "plus",
-   "start": 40.99,
-   "end": 41.123
+   "start": 43.5,
+   "end": 43.66
   },
   {
    "text": "nombreuses,",
-   "start": 41.123,
-   "end": 41.681
+   "start": 43.66,
+   "end": 44.18
   },
   {
    "text": "protègent",
-   "start": 41.924,
-   "end": 42.312
+   "start": 44.5,
+   "end": 44.74
   },
   {
    "text": "sur",
-   "start": 42.312,
-   "end": 42.458
+   "start": 44.74,
+   "end": 44.98
   },
   {
    "text": "la",
-   "start": 42.458,
-   "end": 42.555
+   "start": 44.98,
+   "end": 45.18
   },
   {
    "text": "durée.",
-   "start": 42.555,
-   "end": 42.943
+   "start": 45.18,
+   "end": 45.54
   },
   {
    "text": "Les",
-   "start": 43.295,
-   "end": 43.477
+   "start": 45.88,
+   "end": 46.18
   },
   {
    "text": "I",
-   "start": 43.477,
-   "end": 43.611
+   "start": 46.18,
+   "end": 46.18
   },
   {
    "text": "G",
-   "start": 43.611,
-   "end": 43.817
+   "start": 46.18,
+   "end": 46.68
   },
   {
    "text": "A,",
-   "start": 43.817,
-   "end": 44.048
+   "start": 46.18,
+   "end": 46.68
   },
   {
    "text": "elles,",
-   "start": 44.339,
-   "end": 44.691
+   "start": 46.76,
+   "end": 47.12
   },
   {
    "text": "protègent",
-   "start": 44.934,
-   "end": 45.286
+   "start": 47.44,
+   "end": 47.62
   },
   {
    "text": "le",
-   "start": 45.286,
-   "end": 45.371
+   "start": 47.62,
+   "end": 47.92
   },
   {
    "text": "nez,",
-   "start": 45.371,
-   "end": 45.626
+   "start": 47.92,
+   "end": 48.12
   },
   {
    "text": "la",
-   "start": 45.929,
-   "end": 46.014
+   "start": 48.26,
+   "end": 48.54
   },
   {
    "text": "bouche",
-   "start": 46.014,
-   "end": 46.293
+   "start": 48.54,
+   "end": 48.78
   },
   {
    "text": "et",
-   "start": 46.293,
-   "end": 46.317
+   "start": 48.78,
+   "end": 48.92
   },
   {
    "text": "l'intestin.",
-   "start": 46.317,
-   "end": 46.924
+   "start": 48.92,
+   "end": 49.56
   },
   {
    "text": "Et",
-   "start": 47.253,
-   "end": 47.398
+   "start": 49.88,
+   "end": 50.02
   },
   {
    "text": "les",
-   "start": 47.398,
-   "end": 47.508
+   "start": 50.02,
+   "end": 50.36
   },
   {
    "text": "I",
-   "start": 47.508,
-   "end": 47.653
+   "start": 50.36,
+   "end": 50.36
   },
   {
    "text": "G",
-   "start": 47.653,
-   "end": 47.835
+   "start": 50.36,
+   "end": 50.82
   },
   {
    "text": "M",
-   "start": 47.835,
-   "end": 48.005
+   "start": 50.36,
+   "end": 50.82
   },
   {
    "text": "arrivent",
-   "start": 48.005,
-   "end": 48.248
+   "start": 50.82,
+   "end": 51.16
   },
   {
    "text": "en",
-   "start": 48.248,
-   "end": 48.297
+   "start": 51.16,
+   "end": 51.46
   },
   {
    "text": "premier,",
-   "start": 48.297,
-   "end": 48.77
+   "start": 51.46,
+   "end": 51.68
   },
   {
    "text": "au",
-   "start": 49.073,
-   "end": 49.11
+   "start": 51.86,
+   "end": 52.02
   },
   {
    "text": "début",
-   "start": 49.11,
-   "end": 49.352
+   "start": 52.02,
+   "end": 52.24
   },
   {
    "text": "d'une",
-   "start": 49.352,
-   "end": 49.51
+   "start": 52.24,
+   "end": 52.48
   },
   {
    "text": "infection.",
-   "start": 49.51,
-   "end": 50.093
+   "start": 52.48,
+   "end": 52.86
   },
   {
    "text": "Trop",
-   "start": 50.444,
-   "end": 50.626
+   "start": 53.34,
+   "end": 53.54
   },
   {
-   "text": "basses :",
-   "start": 50.626,
-   "end": 51.062
+   "text": "basses :",
+   "start": 53.54,
+   "end": 54.08
   },
   {
    "text": "les",
-   "start": 51.342,
-   "end": 51.427
+   "start": 54.12,
+   "end": 54.34
   },
   {
    "text": "défenses",
-   "start": 51.427,
-   "end": 51.815
+   "start": 54.34,
+   "end": 54.62
   },
   {
    "text": "sont",
-   "start": 51.815,
-   "end": 51.912
+   "start": 54.62,
+   "end": 54.92
   },
   {
    "text": "affaiblies.",
-   "start": 51.912,
-   "end": 52.495
+   "start": 54.92,
+   "end": 55.33
   },
   {
    "text": "Cinq",
-   "start": 53.442,
-   "end": 53.76
+   "start": 56.141,
+   "end": 56.48
   },
   {
    "text": "bandes,",
-   "start": 53.76,
-   "end": 54.091
+   "start": 56.48,
+   "end": 57.0
   },
   {
    "text": "un",
-   "start": 54.275,
-   "end": 54.324
+   "start": 57.18,
+   "end": 57.34
   },
   {
    "text": "pic",
-   "start": 54.324,
-   "end": 54.532
+   "start": 57.34,
+   "end": 57.5
   },
   {
    "text": "à",
-   "start": 54.532,
-   "end": 54.581
+   "start": 57.5,
+   "end": 57.7
   },
   {
    "text": "surveiller,",
-   "start": 54.581,
-   "end": 55.157
+   "start": 57.7,
+   "end": 58.22
   },
   {
    "text": "trois",
-   "start": 55.439,
-   "end": 55.611
+   "start": 58.68,
+   "end": 58.68
   },
   {
-   "text": "anticorps :",
-   "start": 55.611,
-   "end": 56.211
+   "text": "anticorps :",
+   "start": 58.68,
+   "end": 59.0
   },
   {
    "text": "tu",
-   "start": 56.505,
-   "end": 56.603
+   "start": 59.6,
+   "end": 59.74
   },
   {
    "text": "sais",
-   "start": 56.603,
-   "end": 56.738
+   "start": 59.74,
+   "end": 59.94
   },
   {
    "text": "lire",
-   "start": 56.738,
-   "end": 56.959
+   "start": 59.94,
+   "end": 60.12
   },
   {
    "text": "l'électrophorèse.",
-   "start": 56.959,
-   "end": 57.841
+   "start": 60.12,
+   "end": 60.86
   },
   {
    "text": "Prochaine",
-   "start": 58.209,
-   "end": 58.564
+   "start": 61.36,
+   "end": 61.76
   },
   {
-   "text": "vidéo :",
-   "start": 58.564,
-   "end": 59.042
+   "text": "vidéo :",
+   "start": 61.76,
+   "end": 62.14
   },
   {
    "text": "le",
-   "start": 59.422,
-   "end": 59.508
+   "start": 62.46,
+   "end": 62.66
   },
   {
    "text": "cœur,",
-   "start": 59.508,
-   "end": 59.888
+   "start": 62.66,
+   "end": 62.98
   },
   {
    "text": "avec",
-   "start": 60.108,
-   "end": 60.28
+   "start": 62.98,
+   "end": 63.4
   },
   {
    "text": "la",
-   "start": 60.28,
-   "end": 60.353
+   "start": 63.4,
+   "end": 63.66
   },
   {
    "text": "troponine.",
-   "start": 60.353,
-   "end": 61.027
+   "start": 63.66,
+   "end": 64.1
   }
  ]
 }

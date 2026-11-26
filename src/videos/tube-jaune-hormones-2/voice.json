@@ -1,918 +1,918 @@
 {
- "voice": "voix.wav (tts_voix.py)",
- "duration": 59.054,
+ "voice": "pad-tube-jaune-hormones-2.wav",
+ "duration": 62.346,
  "sections": [
   {
    "id": "intro",
-   "start": 0.05,
-   "end": 7.704
+   "start": 0.0,
+   "end": 8.405
   },
   {
    "id": "hcg",
-   "start": 8.651,
-   "end": 20.52
+   "start": 9.216,
+   "end": 22.171
   },
   {
    "id": "fshlh",
-   "start": 21.454,
-   "end": 31.744
+   "start": 22.989,
+   "end": 34.518
   },
   {
    "id": "proges",
-   "start": 32.683,
-   "end": 41.566
+   "start": 35.314,
+   "end": 45.244
   },
   {
    "id": "testo",
-   "start": 42.497,
-   "end": 50.361
+   "start": 46.044,
+   "end": 53.906
   },
   {
    "id": "fin",
-   "start": 51.303,
-   "end": 58.705
+   "start": 54.713,
+   "end": 62.26
   }
  ],
  "words": [
   {
    "text": "Avant",
-   "start": 0.05,
-   "end": 0.338
+   "start": 0.0,
+   "end": 0.3
   },
   {
    "text": "un",
-   "start": 0.338,
-   "end": 0.386
+   "start": 0.3,
+   "end": 0.52
   },
   {
    "text": "scanner",
-   "start": 0.386,
-   "end": 0.795
+   "start": 0.52,
+   "end": 0.78
   },
   {
    "text": "chez",
-   "start": 0.795,
-   "end": 0.891
+   "start": 0.78,
+   "end": 1.0
   },
   {
    "text": "une",
-   "start": 0.891,
-   "end": 0.999
+   "start": 1.0,
+   "end": 1.2
   },
   {
    "text": "jeune",
-   "start": 0.999,
-   "end": 1.203
+   "start": 1.2,
+   "end": 1.38
   },
   {
    "text": "femme,",
-   "start": 1.203,
-   "end": 1.54
+   "start": 1.38,
+   "end": 1.66
   },
   {
    "text": "une",
-   "start": 1.937,
-   "end": 1.997
+   "start": 2.06,
+   "end": 2.18
   },
   {
    "text": "question",
-   "start": 1.997,
-   "end": 2.333
+   "start": 2.18,
+   "end": 2.54
   },
   {
-   "text": "compte :",
-   "start": 2.333,
-   "end": 2.718
+   "text": "compte :",
+   "start": 2.54,
+   "end": 2.9
   },
   {
    "text": "est-elle",
-   "start": 2.886,
-   "end": 3.078
+   "start": 3.24,
+   "end": 3.56
   },
   {
-   "text": "enceinte ?",
-   "start": 3.078,
-   "end": 3.643
+   "text": "enceinte ?",
+   "start": 3.56,
+   "end": 3.96
   },
   {
    "text": "Une",
-   "start": 3.968,
-   "end": 4.161
+   "start": 4.3,
+   "end": 4.5
   },
   {
    "text": "prise",
-   "start": 4.161,
-   "end": 4.413
+   "start": 4.5,
+   "end": 4.72
   },
   {
    "text": "de",
-   "start": 4.413,
-   "end": 4.533
+   "start": 4.72,
+   "end": 4.94
   },
   {
    "text": "sang",
-   "start": 4.533,
-   "end": 4.677
+   "start": 4.94,
+   "end": 4.98
   },
   {
    "text": "le",
-   "start": 4.677,
-   "end": 4.786
+   "start": 4.98,
+   "end": 5.22
   },
   {
    "text": "dit.",
-   "start": 4.786,
-   "end": 5.074
+   "start": 5.22,
+   "end": 5.4
   },
   {
    "text": "Voici",
-   "start": 5.397,
-   "end": 5.733
+   "start": 5.8,
+   "end": 6.1
   },
   {
    "text": "les",
-   "start": 5.733,
-   "end": 5.829
+   "start": 6.1,
+   "end": 6.36
   },
   {
    "text": "hormones",
-   "start": 5.829,
-   "end": 6.19
+   "start": 6.36,
+   "end": 6.56
   },
   {
    "text": "de",
-   "start": 6.19,
-   "end": 6.25
+   "start": 6.56,
+   "end": 6.76
   },
   {
    "text": "la",
-   "start": 6.25,
-   "end": 6.322
+   "start": 6.76,
+   "end": 6.94
   },
   {
    "text": "grossesse",
-   "start": 6.322,
-   "end": 6.815
+   "start": 6.94,
+   "end": 7.36
   },
   {
    "text": "et",
-   "start": 6.815,
-   "end": 6.851
+   "start": 7.36,
+   "end": 7.56
   },
   {
    "text": "de",
-   "start": 6.851,
-   "end": 6.923
+   "start": 7.56,
+   "end": 7.7
   },
   {
    "text": "la",
-   "start": 6.923,
-   "end": 7.007
+   "start": 7.7,
+   "end": 7.86
   },
   {
    "text": "fertilité.",
-   "start": 7.007,
-   "end": 7.704
+   "start": 7.86,
+   "end": 8.405
   },
   {
-   "text": "Un :",
-   "start": 8.651,
-   "end": 8.93
+   "text": "Un :",
+   "start": 9.216,
+   "end": 9.46
   },
   {
    "text": "les",
-   "start": 9.197,
-   "end": 9.27
+   "start": 9.9,
+   "end": 10.14
   },
   {
    "text": "bêta",
-   "start": 9.27,
-   "end": 9.573
+   "start": 10.14,
+   "end": 10.58
   },
   {
    "text": "H",
-   "start": 9.573,
-   "end": 9.779
+   "start": 10.58,
+   "end": 10.58
   },
   {
    "text": "C",
-   "start": 9.779,
-   "end": 9.937
+   "start": 10.58,
+   "end": 11.2
   },
   {
    "text": "G,",
-   "start": 9.937,
-   "end": 10.228
+   "start": 10.58,
+   "end": 11.2
   },
   {
    "text": "l'hormone",
-   "start": 10.58,
-   "end": 10.884
+   "start": 11.38,
+   "end": 11.74
   },
   {
    "text": "de",
-   "start": 10.884,
-   "end": 10.944
+   "start": 11.74,
+   "end": 11.92
   },
   {
    "text": "la",
-   "start": 10.944,
-   "end": 11.017
+   "start": 11.92,
+   "end": 12.1
   },
   {
    "text": "grossesse,",
-   "start": 11.017,
-   "end": 11.6
+   "start": 12.1,
+   "end": 12.54
   },
   {
    "text": "fabriquée",
-   "start": 11.855,
-   "end": 12.255
+   "start": 12.54,
+   "end": 13.14
   },
   {
    "text": "par",
-   "start": 12.255,
-   "end": 12.376
+   "start": 13.14,
+   "end": 13.36
   },
   {
    "text": "le",
-   "start": 12.376,
-   "end": 12.449
+   "start": 13.36,
+   "end": 13.56
   },
   {
    "text": "placenta.",
-   "start": 12.449,
-   "end": 13.105
+   "start": 13.56,
+   "end": 14.06
   },
   {
    "text": "Dans",
-   "start": 13.444,
-   "end": 13.626
+   "start": 14.56,
+   "end": 14.72
   },
   {
    "text": "le",
-   "start": 13.626,
-   "end": 13.736
+   "start": 14.72,
+   "end": 14.96
   },
   {
    "text": "sang,",
-   "start": 13.736,
-   "end": 14.039
+   "start": 14.96,
+   "end": 15.14
   },
   {
    "text": "elle",
-   "start": 14.33,
-   "end": 14.452
+   "start": 15.22,
+   "end": 15.42
   },
   {
    "text": "se",
-   "start": 14.452,
-   "end": 14.573
+   "start": 15.42,
+   "end": 15.64
   },
   {
    "text": "voit",
-   "start": 14.573,
-   "end": 14.707
+   "start": 15.64,
+   "end": 15.8
   },
   {
    "text": "dès",
-   "start": 14.707,
-   "end": 14.816
+   "start": 15.8,
+   "end": 16.1
   },
   {
    "text": "dix",
-   "start": 14.816,
-   "end": 14.961
+   "start": 16.1,
+   "end": 16.34
   },
   {
    "text": "jours",
-   "start": 14.961,
-   "end": 15.216
+   "start": 16.34,
+   "end": 16.54
   },
   {
    "text": "après",
-   "start": 15.216,
-   "end": 15.398
+   "start": 16.54,
+   "end": 16.76
   },
   {
    "text": "la",
-   "start": 15.398,
-   "end": 15.483
+   "start": 16.76,
+   "end": 16.96
   },
   {
    "text": "fécondation,",
-   "start": 15.483,
-   "end": 16.175
+   "start": 16.96,
+   "end": 17.62
   },
   {
    "text": "avant",
-   "start": 16.43,
-   "end": 16.624
+   "start": 17.82,
+   "end": 18.04
   },
   {
    "text": "le",
-   "start": 16.624,
-   "end": 16.697
+   "start": 18.04,
+   "end": 18.28
   },
   {
    "text": "retard",
-   "start": 16.697,
-   "end": 16.964
+   "start": 18.28,
+   "end": 18.5
   },
   {
    "text": "de",
-   "start": 16.964,
-   "end": 17.049
+   "start": 18.5,
+   "end": 18.7
   },
   {
    "text": "règles.",
-   "start": 17.049,
-   "end": 17.474
+   "start": 18.7,
+   "end": 18.98
   },
   {
    "text": "Au",
-   "start": 17.802,
-   "end": 17.935
+   "start": 19.4,
+   "end": 19.6
   },
   {
    "text": "début,",
-   "start": 17.935,
-   "end": 18.336
+   "start": 19.6,
+   "end": 19.9
   },
   {
    "text": "la",
-   "start": 18.676,
-   "end": 18.736
+   "start": 20.08,
+   "end": 20.18
   },
   {
    "text": "quantité",
-   "start": 18.736,
-   "end": 19.161
+   "start": 20.18,
+   "end": 20.64
   },
   {
    "text": "double",
-   "start": 19.161,
-   "end": 19.416
+   "start": 20.64,
+   "end": 20.88
   },
   {
    "text": "environ",
-   "start": 19.416,
-   "end": 19.78
+   "start": 20.88,
+   "end": 21.36
   },
   {
    "text": "tous",
-   "start": 19.78,
-   "end": 19.901
+   "start": 21.36,
+   "end": 21.56
   },
   {
    "text": "les",
-   "start": 19.901,
-   "end": 19.998
+   "start": 21.56,
+   "end": 21.74
   },
   {
    "text": "deux",
-   "start": 19.998,
-   "end": 20.132
+   "start": 21.74,
+   "end": 21.88
   },
   {
    "text": "jours.",
-   "start": 20.132,
-   "end": 20.52
+   "start": 21.88,
+   "end": 22.171
   },
   {
-   "text": "Deux :",
-   "start": 21.454,
-   "end": 21.83
+   "text": "Deux :",
+   "start": 22.989,
+   "end": 23.44
   },
   {
    "text": "la",
-   "start": 22.328,
-   "end": 22.401
+   "start": 23.78,
+   "end": 24.16
   },
   {
    "text": "F",
-   "start": 22.401,
-   "end": 22.607
+   "start": 24.16,
+   "end": 24.16
   },
   {
    "text": "S",
-   "start": 22.607,
-   "end": 22.825
+   "start": 24.16,
+   "end": 24.66
   },
   {
    "text": "H",
-   "start": 22.825,
-   "end": 23.08
+   "start": 24.16,
+   "end": 24.66
   },
   {
    "text": "et",
-   "start": 23.08,
-   "end": 23.117
+   "start": 24.66,
+   "end": 24.92
   },
   {
    "text": "la",
-   "start": 23.117,
-   "end": 23.226
+   "start": 24.92,
+   "end": 25.2
   },
   {
    "text": "L",
-   "start": 23.226,
-   "end": 23.408
+   "start": 25.2,
+   "end": 25.2
   },
   {
    "text": "H,",
-   "start": 23.408,
-   "end": 23.772
+   "start": 25.2,
+   "end": 25.64
   },
   {
    "text": "les",
-   "start": 24.003,
-   "end": 24.075
+   "start": 25.86,
+   "end": 26.16
   },
   {
    "text": "hormones",
-   "start": 24.075,
-   "end": 24.379
+   "start": 26.16,
+   "end": 26.38
   },
   {
    "text": "du",
-   "start": 24.379,
-   "end": 24.464
+   "start": 26.38,
+   "end": 26.6
   },
   {
    "text": "cerveau",
-   "start": 24.464,
-   "end": 24.84
+   "start": 26.6,
+   "end": 27.0
   },
   {
    "text": "qui",
-   "start": 24.84,
-   "end": 24.961
+   "start": 27.0,
+   "end": 27.34
   },
   {
    "text": "commandent",
-   "start": 24.961,
-   "end": 25.24
+   "start": 27.34,
+   "end": 27.58
   },
   {
    "text": "les",
-   "start": 25.24,
-   "end": 25.337
+   "start": 27.58,
+   "end": 27.78
   },
   {
    "text": "ovaires",
-   "start": 25.337,
-   "end": 25.702
+   "start": 27.78,
+   "end": 28.08
   },
   {
    "text": "et",
-   "start": 25.702,
-   "end": 25.726
+   "start": 28.08,
+   "end": 28.2
   },
   {
    "text": "les",
-   "start": 25.726,
-   "end": 25.811
+   "start": 28.2,
+   "end": 28.36
   },
   {
    "text": "testicules.",
-   "start": 25.811,
-   "end": 26.539
+   "start": 28.36,
+   "end": 28.96
   },
   {
    "text": "Chez",
-   "start": 26.867,
-   "end": 27.073
+   "start": 28.96,
+   "end": 29.6
   },
   {
    "text": "la",
-   "start": 27.073,
-   "end": 27.182
+   "start": 29.6,
+   "end": 29.82
   },
   {
    "text": "femme,",
-   "start": 27.182,
-   "end": 27.546
+   "start": 29.82,
+   "end": 30.0
   },
   {
    "text": "on",
-   "start": 27.862,
-   "end": 27.886
+   "start": 30.18,
+   "end": 30.28
   },
   {
    "text": "les",
-   "start": 27.886,
-   "end": 27.983
+   "start": 30.28,
+   "end": 30.48
   },
   {
    "text": "dose",
-   "start": 27.983,
-   "end": 28.214
+   "start": 30.48,
+   "end": 30.62
   },
   {
    "text": "en",
-   "start": 28.214,
-   "end": 28.262
+   "start": 30.62,
+   "end": 30.86
   },
   {
    "text": "début",
-   "start": 28.262,
-   "end": 28.469
+   "start": 30.86,
+   "end": 31.1
   },
   {
    "text": "de",
-   "start": 28.469,
-   "end": 28.578
+   "start": 31.1,
+   "end": 31.36
   },
   {
    "text": "cycle.",
-   "start": 28.578,
-   "end": 29.063
+   "start": 31.36,
+   "end": 31.62
   },
   {
    "text": "Très",
-   "start": 29.389,
-   "end": 29.596
+   "start": 32.0,
+   "end": 32.34
   },
   {
    "text": "hautes",
-   "start": 29.596,
-   "end": 29.766
+   "start": 32.34,
+   "end": 32.56
   },
   {
    "text": "après",
-   "start": 29.766,
-   "end": 29.996
+   "start": 32.56,
+   "end": 32.84
   },
   {
    "text": "cinquante",
-   "start": 29.996,
-   "end": 30.421
+   "start": 32.84,
+   "end": 33.16
   },
   {
-   "text": "ans :",
-   "start": 30.421,
-   "end": 30.603
+   "text": "ans :",
+   "start": 33.16,
+   "end": 33.5
   },
   {
    "text": "c'est",
-   "start": 30.882,
-   "end": 30.991
+   "start": 33.74,
+   "end": 33.88
   },
   {
    "text": "la",
-   "start": 30.991,
-   "end": 31.076
+   "start": 33.88,
+   "end": 34.0
   },
   {
    "text": "ménopause.",
-   "start": 31.076,
-   "end": 31.744
+   "start": 34.0,
+   "end": 34.518
   },
   {
-   "text": "Trois :",
-   "start": 32.683,
-   "end": 33.084
+   "text": "Trois :",
+   "start": 35.314,
+   "end": 35.6
   },
   {
    "text": "la",
-   "start": 33.436,
-   "end": 33.496
+   "start": 36.06,
+   "end": 36.4
   },
   {
    "text": "progestérone.",
-   "start": 33.496,
-   "end": 34.37
+   "start": 36.4,
+   "end": 37.2
   },
   {
    "text": "Elle",
-   "start": 34.71,
-   "end": 34.904
+   "start": 37.74,
+   "end": 37.74
   },
   {
    "text": "monte",
-   "start": 34.904,
-   "end": 35.111
+   "start": 37.74,
+   "end": 37.92
   },
   {
    "text": "après",
-   "start": 35.111,
-   "end": 35.305
+   "start": 37.92,
+   "end": 38.18
   },
   {
    "text": "l'ovulation",
-   "start": 35.305,
-   "end": 35.924
+   "start": 38.18,
+   "end": 38.82
   },
   {
    "text": "et",
-   "start": 35.924,
-   "end": 36.021
+   "start": 38.82,
+   "end": 39.14
   },
   {
    "text": "prépare",
-   "start": 36.021,
-   "end": 36.361
+   "start": 39.14,
+   "end": 39.46
   },
   {
    "text": "l'utérus",
-   "start": 36.361,
-   "end": 36.822
+   "start": 39.46,
+   "end": 39.92
   },
   {
    "text": "à",
-   "start": 36.822,
-   "end": 36.858
+   "start": 39.92,
+   "end": 40.06
   },
   {
    "text": "la",
-   "start": 36.858,
-   "end": 36.943
+   "start": 40.06,
+   "end": 40.24
   },
   {
    "text": "grossesse.",
-   "start": 36.943,
-   "end": 37.599
+   "start": 40.24,
+   "end": 40.7
   },
   {
    "text": "Dosée",
-   "start": 37.937,
-   "end": 38.241
+   "start": 41.22,
+   "end": 41.46
   },
   {
    "text": "vers",
-   "start": 38.241,
-   "end": 38.386
+   "start": 41.46,
+   "end": 41.68
   },
   {
    "text": "le",
-   "start": 38.386,
-   "end": 38.471
+   "start": 41.68,
+   "end": 41.86
   },
   {
    "text": "vingt",
-   "start": 38.471,
-   "end": 38.653
+   "start": 41.86,
+   "end": 41.86
   },
   {
    "text": "et",
-   "start": 38.653,
-   "end": 38.714
+   "start": 41.86,
+   "end": 42.4
   },
   {
    "text": "unième",
-   "start": 38.714,
-   "end": 38.933
+   "start": 41.86,
+   "end": 42.4
   },
   {
    "text": "jour",
-   "start": 38.933,
-   "end": 39.09
+   "start": 42.4,
+   "end": 42.54
   },
   {
    "text": "du",
-   "start": 39.09,
-   "end": 39.187
+   "start": 42.54,
+   "end": 42.86
   },
   {
    "text": "cycle,",
-   "start": 39.187,
-   "end": 39.539
+   "start": 42.86,
+   "end": 43.04
   },
   {
    "text": "elle",
-   "start": 39.843,
-   "end": 39.916
+   "start": 43.36,
+   "end": 43.56
   },
   {
    "text": "montre",
-   "start": 39.916,
-   "end": 40.195
+   "start": 43.56,
+   "end": 43.76
   },
   {
    "text": "que",
-   "start": 40.195,
-   "end": 40.292
+   "start": 43.76,
+   "end": 43.94
   },
   {
    "text": "l'ovulation",
-   "start": 40.292,
-   "end": 40.85
+   "start": 43.94,
+   "end": 44.56
   },
   {
    "text": "a",
-   "start": 40.85,
-   "end": 40.947
+   "start": 44.56,
+   "end": 44.76
   },
   {
    "text": "bien",
-   "start": 40.947,
-   "end": 41.141
+   "start": 44.76,
+   "end": 44.92
   },
   {
    "text": "eu",
-   "start": 41.141,
-   "end": 41.238
+   "start": 44.92,
+   "end": 45.14
   },
   {
    "text": "lieu.",
-   "start": 41.238,
-   "end": 41.566
+   "start": 45.14,
+   "end": 45.244
   },
   {
-   "text": "Quatre :",
-   "start": 42.497,
-   "end": 42.91
+   "text": "Quatre :",
+   "start": 46.044,
+   "end": 46.46
   },
   {
    "text": "la",
-   "start": 43.468,
-   "end": 43.553
+   "start": 46.78,
+   "end": 47.12
   },
   {
    "text": "testostérone,",
-   "start": 43.553,
-   "end": 44.354
+   "start": 47.12,
+   "end": 47.84
   },
   {
    "text": "l'hormone",
-   "start": 44.645,
-   "end": 44.924
+   "start": 48.08,
+   "end": 48.48
   },
   {
    "text": "masculine,",
-   "start": 44.924,
-   "end": 45.519
+   "start": 48.48,
+   "end": 49.06
   },
   {
    "text": "présente",
-   "start": 45.81,
-   "end": 46.15
+   "start": 49.54,
+   "end": 49.72
   },
   {
    "text": "aussi",
-   "start": 46.15,
-   "end": 46.393
+   "start": 49.72,
+   "end": 49.98
   },
   {
    "text": "en",
-   "start": 46.393,
-   "end": 46.466
+   "start": 49.98,
+   "end": 50.24
   },
   {
    "text": "petite",
-   "start": 46.466,
-   "end": 46.757
+   "start": 50.24,
+   "end": 50.46
   },
   {
    "text": "quantité",
-   "start": 46.757,
-   "end": 47.17
+   "start": 50.46,
+   "end": 50.88
   },
   {
    "text": "chez",
-   "start": 47.17,
-   "end": 47.267
+   "start": 50.88,
+   "end": 51.02
   },
   {
    "text": "la",
-   "start": 47.267,
-   "end": 47.376
+   "start": 51.02,
+   "end": 51.28
   },
   {
    "text": "femme.",
-   "start": 47.376,
-   "end": 47.825
+   "start": 51.28,
+   "end": 51.44
   },
   {
    "text": "On",
-   "start": 48.188,
-   "end": 48.273
+   "start": 51.84,
+   "end": 51.98
   },
   {
    "text": "la",
-   "start": 48.273,
-   "end": 48.358
+   "start": 51.98,
+   "end": 52.2
   },
   {
    "text": "prélève",
-   "start": 48.358,
-   "end": 48.71
+   "start": 52.2,
+   "end": 52.44
   },
   {
    "text": "le",
-   "start": 48.71,
-   "end": 48.795
+   "start": 52.44,
+   "end": 52.7
   },
   {
    "text": "matin,",
-   "start": 48.795,
-   "end": 49.232
+   "start": 52.7,
+   "end": 52.9
   },
   {
    "text": "quand",
-   "start": 49.499,
-   "end": 49.608
+   "start": 52.9,
+   "end": 53.22
   },
   {
    "text": "elle",
-   "start": 49.608,
-   "end": 49.754
+   "start": 53.22,
+   "end": 53.38
   },
   {
    "text": "est",
-   "start": 49.754,
-   "end": 49.79
+   "start": 53.38,
+   "end": 53.52
   },
   {
    "text": "au",
-   "start": 49.79,
-   "end": 49.912
+   "start": 53.52,
+   "end": 53.66
   },
   {
    "text": "plus",
-   "start": 49.912,
-   "end": 50.142
+   "start": 53.66,
+   "end": 53.84
   },
   {
    "text": "haut.",
-   "start": 50.142,
-   "end": 50.361
+   "start": 53.84,
+   "end": 53.906
   },
   {
    "text": "Grossesse,",
-   "start": 51.303,
-   "end": 52.051
+   "start": 54.713,
+   "end": 55.54
   },
   {
    "text": "cycle,",
-   "start": 52.247,
-   "end": 52.651
+   "start": 55.92,
+   "end": 56.1
   },
   {
    "text": "ovulation,",
-   "start": 52.835,
-   "end": 53.46
+   "start": 56.38,
+   "end": 56.98
   },
   {
-   "text": "testostérone :",
-   "start": 53.717,
-   "end": 54.538
+   "text": "testostérone :",
+   "start": 57.3,
+   "end": 57.98
   },
   {
    "text": "tu",
-   "start": 54.845,
-   "end": 54.955
+   "start": 58.46,
+   "end": 58.58
   },
   {
    "text": "connais",
-   "start": 54.955,
-   "end": 55.176
+   "start": 58.58,
+   "end": 58.84
   },
   {
    "text": "les",
-   "start": 55.176,
-   "end": 55.261
+   "start": 58.84,
+   "end": 59.12
   },
   {
    "text": "hormones",
-   "start": 55.261,
-   "end": 55.641
+   "start": 59.12,
+   "end": 59.3
   },
   {
    "text": "du",
-   "start": 55.641,
-   "end": 55.715
+   "start": 59.3,
+   "end": 59.52
   },
   {
    "text": "tube",
-   "start": 55.715,
-   "end": 55.899
+   "start": 59.52,
+   "end": 59.7
   },
   {
    "text": "jaune.",
-   "start": 55.899,
-   "end": 56.352
+   "start": 59.7,
+   "end": 60.22
   },
   {
    "text": "Prochaine",
-   "start": 56.72,
-   "end": 57.087
+   "start": 60.52,
+   "end": 60.74
   },
   {
-   "text": "vidéo :",
-   "start": 57.087,
-   "end": 57.565
+   "text": "vidéo :",
+   "start": 60.74,
+   "end": 61.14
   },
   {
    "text": "les",
-   "start": 57.921,
-   "end": 57.994
+   "start": 61.5,
+   "end": 61.64
   },
   {
    "text": "sérologies.",
-   "start": 57.994,
-   "end": 58.705
+   "start": 61.64,
+   "end": 62.26
   }
  ]
 }

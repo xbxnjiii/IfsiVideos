@@ -1,798 +1,798 @@
 {
- "voice": "voix.wav (tts_voix.py)",
- "duration": 52.528,
+ "voice": "pad-tube-jaune-medicaments.wav",
+ "duration": 52.285,
  "sections": [
   {
    "id": "intro",
-   "start": 0.072,
-   "end": 8.245
+   "start": 0.0,
+   "end": 8.0
   },
   {
    "id": "principe",
-   "start": 9.167,
-   "end": 20.017
+   "start": 8.862,
+   "end": 19.98
   },
   {
    "id": "digoxine",
-   "start": 20.95,
-   "end": 31.434
+   "start": 20.798,
+   "end": 32.346
   },
   {
    "id": "lithium",
-   "start": 32.371,
-   "end": 45.113
+   "start": 33.145,
+   "end": 45.584
   },
   {
    "id": "fin",
-   "start": 46.085,
-   "end": 52.188
+   "start": 46.384,
+   "end": 52.14
   }
  ],
  "words": [
   {
    "text": "Nausées,",
-   "start": 0.072,
-   "end": 0.589
+   "start": 0.0,
+   "end": 0.7
   },
   {
    "text": "vision",
-   "start": 0.781,
-   "end": 1.034
+   "start": 0.8,
+   "end": 1.18
   },
   {
    "text": "jaune,",
-   "start": 1.034,
-   "end": 1.454
+   "start": 1.18,
+   "end": 1.52
   },
   {
    "text": "cœur",
-   "start": 1.659,
-   "end": 1.827
+   "start": 1.68,
+   "end": 1.82
   },
   {
    "text": "qui",
-   "start": 1.827,
-   "end": 1.971
+   "start": 1.82,
+   "end": 2.04
   },
   {
-   "text": "ralentit :",
-   "start": 1.971,
-   "end": 2.476
+   "text": "ralentit :",
+   "start": 2.04,
+   "end": 2.74
   },
   {
    "text": "c'est",
-   "start": 2.825,
-   "end": 2.909
+   "start": 2.92,
+   "end": 3.16
   },
   {
    "text": "peut-être",
-   "start": 2.909,
-   "end": 3.257
+   "start": 3.16,
+   "end": 3.46
   },
   {
    "text": "un",
-   "start": 3.257,
-   "end": 3.293
+   "start": 3.46,
+   "end": 3.7
   },
   {
    "text": "surdosage",
-   "start": 3.293,
-   "end": 3.822
+   "start": 3.7,
+   "end": 4.16
   },
   {
    "text": "en",
-   "start": 3.822,
-   "end": 3.858
+   "start": 4.16,
+   "end": 4.3
   },
   {
    "text": "digoxine.",
-   "start": 3.858,
-   "end": 4.567
+   "start": 4.3,
+   "end": 4.86
   },
   {
    "text": "Deux",
-   "start": 4.893,
-   "end": 5.121
+   "start": 5.28,
+   "end": 5.52
   },
   {
    "text": "médicaments",
-   "start": 5.121,
-   "end": 5.638
+   "start": 5.52,
+   "end": 5.92
   },
   {
    "text": "se",
-   "start": 5.638,
-   "end": 5.77
+   "start": 5.92,
+   "end": 6.18
   },
   {
    "text": "surveillent",
-   "start": 5.77,
-   "end": 6.179
+   "start": 6.18,
+   "end": 6.46
   },
   {
    "text": "dans",
-   "start": 6.179,
-   "end": 6.275
+   "start": 6.46,
+   "end": 6.56
   },
   {
    "text": "le",
-   "start": 6.275,
-   "end": 6.359
+   "start": 6.56,
+   "end": 6.7
   },
   {
    "text": "tube",
-   "start": 6.359,
-   "end": 6.551
+   "start": 6.7,
+   "end": 6.82
   },
   {
    "text": "jaune.",
-   "start": 6.551,
-   "end": 7.008
+   "start": 6.82,
+   "end": 7.12
   },
   {
    "text": "Tu",
-   "start": 7.368,
-   "end": 7.464
+   "start": 7.24,
+   "end": 7.42
   },
   {
    "text": "sais",
-   "start": 7.464,
-   "end": 7.608
+   "start": 7.42,
+   "end": 7.54
   },
   {
    "text": "quand",
-   "start": 7.608,
-   "end": 7.728
+   "start": 7.54,
+   "end": 7.74
   },
   {
-   "text": "prélever ?",
-   "start": 7.728,
-   "end": 8.245
+   "text": "prélever ?",
+   "start": 7.74,
+   "end": 8.0
   },
   {
-   "text": "Un :",
-   "start": 9.167,
-   "end": 9.446
+   "text": "Un :",
+   "start": 8.862,
+   "end": 9.1
   },
   {
    "text": "la",
-   "start": 9.87,
-   "end": 9.943
+   "start": 9.48,
+   "end": 9.7
   },
   {
    "text": "marge",
-   "start": 9.943,
-   "end": 10.186
+   "start": 9.7,
+   "end": 9.9
   },
   {
    "text": "de",
-   "start": 10.186,
-   "end": 10.295
+   "start": 9.9,
+   "end": 10.1
   },
   {
    "text": "sécurité",
-   "start": 10.295,
-   "end": 10.878
+   "start": 10.1,
+   "end": 10.54
   },
   {
    "text": "est",
-   "start": 10.878,
-   "end": 10.963
+   "start": 10.54,
+   "end": 10.9
   },
   {
    "text": "étroite.",
-   "start": 10.963,
-   "end": 11.63
+   "start": 10.9,
+   "end": 11.48
   },
   {
    "text": "Pour",
-   "start": 11.994,
-   "end": 12.116
+   "start": 11.58,
+   "end": 11.74
   },
   {
    "text": "ces",
-   "start": 12.116,
-   "end": 12.213
+   "start": 11.74,
+   "end": 11.88
   },
   {
    "text": "médicaments,",
-   "start": 12.213,
-   "end": 12.819
+   "start": 11.88,
+   "end": 12.46
   },
   {
    "text": "la",
-   "start": 13.171,
-   "end": 13.244
+   "start": 12.7,
+   "end": 12.82
   },
   {
    "text": "bonne",
-   "start": 13.244,
-   "end": 13.475
+   "start": 12.82,
+   "end": 13.04
   },
   {
    "text": "dose",
-   "start": 13.475,
-   "end": 13.693
+   "start": 13.04,
+   "end": 13.24
   },
   {
    "text": "et",
-   "start": 13.693,
-   "end": 13.718
+   "start": 13.24,
+   "end": 13.34
   },
   {
    "text": "la",
-   "start": 13.718,
-   "end": 13.802
+   "start": 13.34,
+   "end": 13.5
   },
   {
    "text": "dose",
-   "start": 13.802,
-   "end": 14.009
+   "start": 13.5,
+   "end": 13.64
   },
   {
    "text": "toxique",
-   "start": 14.009,
-   "end": 14.409
+   "start": 13.64,
+   "end": 14.04
   },
   {
    "text": "sont",
-   "start": 14.409,
-   "end": 14.518
+   "start": 14.04,
+   "end": 14.26
   },
   {
    "text": "très",
-   "start": 14.518,
-   "end": 14.676
+   "start": 14.26,
+   "end": 14.6
   },
   {
    "text": "proches.",
-   "start": 14.676,
-   "end": 15.174
+   "start": 14.6,
+   "end": 15.18
   },
   {
    "text": "Alors",
-   "start": 15.502,
-   "end": 15.793
+   "start": 15.34,
+   "end": 15.5
   },
   {
    "text": "on",
-   "start": 15.794,
-   "end": 15.866
+   "start": 15.5,
+   "end": 15.7
   },
   {
    "text": "dose",
-   "start": 15.866,
-   "end": 16.109
+   "start": 15.7,
+   "end": 15.92
   },
   {
    "text": "leur",
-   "start": 16.109,
-   "end": 16.242
+   "start": 15.92,
+   "end": 16.12
   },
   {
    "text": "taux",
-   "start": 16.242,
-   "end": 16.364
+   "start": 16.12,
+   "end": 16.24
   },
   {
    "text": "dans",
-   "start": 16.364,
-   "end": 16.473
+   "start": 16.24,
+   "end": 16.5
   },
   {
    "text": "le",
-   "start": 16.473,
-   "end": 16.582
+   "start": 16.5,
+   "end": 16.56
   },
   {
    "text": "sang,",
-   "start": 16.582,
-   "end": 16.886
+   "start": 16.56,
+   "end": 16.74
   },
   {
    "text": "juste",
-   "start": 17.165,
-   "end": 17.371
+   "start": 16.98,
+   "end": 17.26
   },
   {
    "text": "avant",
-   "start": 17.371,
-   "end": 17.517
+   "start": 17.26,
+   "end": 17.44
   },
   {
    "text": "la",
-   "start": 17.517,
-   "end": 17.602
+   "start": 17.44,
+   "end": 17.62
   },
   {
    "text": "prise",
-   "start": 17.602,
-   "end": 17.808
+   "start": 17.62,
+   "end": 17.74
   },
   {
    "text": "suivante,",
-   "start": 17.808,
-   "end": 18.306
+   "start": 17.74,
+   "end": 18.28
   },
   {
    "text": "et",
-   "start": 18.585,
-   "end": 18.645
+   "start": 18.34,
+   "end": 18.56
   },
   {
    "text": "on",
-   "start": 18.645,
-   "end": 18.706
+   "start": 18.56,
+   "end": 18.74
   },
   {
    "text": "note",
-   "start": 18.706,
-   "end": 18.888
+   "start": 18.74,
+   "end": 18.9
   },
   {
    "text": "l'heure",
-   "start": 18.888,
-   "end": 19.094
+   "start": 18.9,
+   "end": 19.1
   },
   {
    "text": "de",
-   "start": 19.094,
-   "end": 19.167
+   "start": 19.1,
+   "end": 19.28
   },
   {
    "text": "la",
-   "start": 19.167,
-   "end": 19.24
+   "start": 19.28,
+   "end": 19.46
   },
   {
    "text": "dernière",
-   "start": 19.24,
-   "end": 19.531
+   "start": 19.46,
+   "end": 19.7
   },
   {
    "text": "prise.",
-   "start": 19.531,
-   "end": 20.017
+   "start": 19.7,
+   "end": 19.98
   },
   {
-   "text": "Deux :",
-   "start": 20.95,
-   "end": 21.338
+   "text": "Deux :",
+   "start": 20.798,
+   "end": 21.26
   },
   {
    "text": "la",
-   "start": 21.678,
-   "end": 21.751
+   "start": 21.56,
+   "end": 21.78
   },
   {
    "text": "digoxine,",
-   "start": 21.751,
-   "end": 22.467
+   "start": 21.78,
+   "end": 22.4
   },
   {
    "text": "pour",
-   "start": 22.649,
-   "end": 22.782
+   "start": 22.52,
+   "end": 22.7
   },
   {
    "text": "le",
-   "start": 22.782,
-   "end": 22.867
+   "start": 22.7,
+   "end": 22.9
   },
   {
    "text": "cœur.",
-   "start": 22.867,
-   "end": 23.28
+   "start": 22.9,
+   "end": 23.1
   },
   {
    "text": "Le",
-   "start": 23.608,
-   "end": 23.79
+   "start": 23.64,
+   "end": 23.78
   },
   {
    "text": "surdosage",
-   "start": 23.79,
-   "end": 24.384
+   "start": 23.78,
+   "end": 24.4
   },
   {
    "text": "donne",
-   "start": 24.384,
-   "end": 24.554
+   "start": 24.4,
+   "end": 24.58
   },
   {
    "text": "des",
-   "start": 24.554,
-   "end": 24.627
+   "start": 24.58,
+   "end": 24.82
   },
   {
    "text": "nausées,",
-   "start": 24.627,
-   "end": 25.04
+   "start": 24.82,
+   "end": 25.3
   },
   {
    "text": "une",
-   "start": 25.355,
-   "end": 25.428
+   "start": 25.42,
+   "end": 25.58
   },
   {
    "text": "vision",
-   "start": 25.428,
-   "end": 25.683
+   "start": 25.58,
+   "end": 25.92
   },
   {
    "text": "jaune",
-   "start": 25.683,
-   "end": 25.95
+   "start": 25.92,
+   "end": 26.28
   },
   {
    "text": "et",
-   "start": 25.95,
-   "end": 25.999
-  },
-  {
-   "text": "un",
-   "start": 25.999,
-   "end": 26.083
-  },
-  {
-   "text": "cœur",
-   "start": 26.084,
-   "end": 26.326
-  },
-  {
-   "text": "qui",
-   "start": 26.326,
+   "start": 26.28,
    "end": 26.46
   },
   {
-   "text": "bat",
+   "text": "un",
    "start": 26.46,
-   "end": 26.545
+   "end": 26.68
+  },
+  {
+   "text": "cœur",
+   "start": 26.68,
+   "end": 26.82
+  },
+  {
+   "text": "qui",
+   "start": 26.82,
+   "end": 27.06
+  },
+  {
+   "text": "bat",
+   "start": 27.06,
+   "end": 27.18
   },
   {
    "text": "trop",
-   "start": 26.545,
-   "end": 26.727
+   "start": 27.18,
+   "end": 27.48
   },
   {
    "text": "lentement.",
-   "start": 26.727,
-   "end": 27.176
+   "start": 27.48,
+   "end": 27.86
   },
   {
    "text": "Le",
-   "start": 27.55,
-   "end": 27.684
+   "start": 27.86,
+   "end": 28.44
   },
   {
    "text": "risque",
-   "start": 27.684,
-   "end": 27.939
+   "start": 28.44,
+   "end": 28.64
   },
   {
    "text": "augmente",
-   "start": 27.939,
-   "end": 28.279
+   "start": 28.64,
+   "end": 29.0
   },
   {
    "text": "chez",
-   "start": 28.279,
-   "end": 28.364
+   "start": 29.0,
+   "end": 29.16
   },
   {
    "text": "la",
-   "start": 28.364,
-   "end": 28.436
+   "start": 29.16,
+   "end": 29.4
   },
   {
    "text": "personne",
-   "start": 28.436,
-   "end": 28.776
+   "start": 29.4,
+   "end": 29.64
   },
   {
    "text": "âgée,",
-   "start": 28.776,
-   "end": 29.128
+   "start": 29.64,
+   "end": 30.02
   },
   {
    "text": "quand",
-   "start": 29.395,
-   "end": 29.492
+   "start": 30.14,
+   "end": 30.22
   },
   {
    "text": "les",
-   "start": 29.492,
-   "end": 29.577
+   "start": 30.22,
+   "end": 30.36
   },
   {
    "text": "reins",
-   "start": 29.577,
-   "end": 29.723
+   "start": 30.36,
+   "end": 30.48
   },
   {
    "text": "filtrent",
-   "start": 29.723,
-   "end": 30.063
+   "start": 30.48,
+   "end": 30.9
   },
   {
    "text": "mal",
-   "start": 30.063,
-   "end": 30.33
+   "start": 30.9,
+   "end": 31.14
   },
   {
    "text": "ou",
-   "start": 30.33,
-   "end": 30.366
+   "start": 31.14,
+   "end": 31.36
   },
   {
    "text": "quand",
-   "start": 30.366,
-   "end": 30.499
+   "start": 31.36,
+   "end": 31.48
   },
   {
    "text": "le",
-   "start": 30.499,
-   "end": 30.572
+   "start": 31.48,
+   "end": 31.66
   },
   {
    "text": "potassium",
-   "start": 30.572,
-   "end": 31.082
+   "start": 31.66,
+   "end": 32.02
   },
   {
    "text": "est",
-   "start": 31.082,
-   "end": 31.131
+   "start": 32.02,
+   "end": 32.24
   },
   {
    "text": "bas.",
-   "start": 31.131,
-   "end": 31.434
+   "start": 32.24,
+   "end": 32.346
   },
   {
-   "text": "Trois :",
-   "start": 32.371,
-   "end": 32.735
+   "text": "Trois :",
+   "start": 33.145,
+   "end": 33.46
   },
   {
    "text": "le",
-   "start": 33.111,
-   "end": 33.184
+   "start": 33.84,
+   "end": 34.06
   },
   {
    "text": "lithium,",
-   "start": 33.184,
-   "end": 33.754
+   "start": 34.06,
+   "end": 34.44
   },
   {
    "text": "pour",
-   "start": 34.009,
-   "end": 34.142
+   "start": 34.74,
+   "end": 34.82
   },
   {
    "text": "le",
-   "start": 34.142,
-   "end": 34.215
+   "start": 34.82,
+   "end": 35.0
   },
   {
    "text": "trouble",
-   "start": 34.215,
-   "end": 34.543
+   "start": 35.0,
+   "end": 35.18
   },
   {
    "text": "bipolaire.",
-   "start": 34.543,
-   "end": 35.198
+   "start": 35.18,
+   "end": 35.9
   },
   {
    "text": "On",
-   "start": 35.527,
-   "end": 35.673
+   "start": 36.24,
+   "end": 36.28
   },
   {
    "text": "le",
-   "start": 35.673,
-   "end": 35.758
+   "start": 36.28,
+   "end": 36.52
   },
   {
    "text": "prélève",
-   "start": 35.758,
-   "end": 36.122
+   "start": 36.52,
+   "end": 36.78
   },
   {
    "text": "douze",
-   "start": 36.122,
-   "end": 36.389
+   "start": 36.78,
+   "end": 37.08
   },
   {
    "text": "heures",
-   "start": 36.389,
-   "end": 36.583
+   "start": 37.08,
+   "end": 37.32
   },
   {
    "text": "après",
-   "start": 36.583,
-   "end": 36.789
+   "start": 37.32,
+   "end": 37.54
   },
   {
    "text": "la",
-   "start": 36.789,
-   "end": 36.862
+   "start": 37.54,
+   "end": 37.78
   },
   {
    "text": "dernière",
-   "start": 36.862,
-   "end": 37.19
+   "start": 37.78,
+   "end": 38.04
   },
   {
    "text": "prise.",
-   "start": 37.19,
-   "end": 37.7
+   "start": 38.04,
+   "end": 38.34
   },
   {
    "text": "Surdosé,",
-   "start": 38.05,
-   "end": 38.766
+   "start": 38.92,
+   "end": 39.4
   },
   {
    "text": "il",
-   "start": 39.082,
-   "end": 39.191
+   "start": 39.46,
+   "end": 39.62
   },
   {
    "text": "donne",
-   "start": 39.191,
-   "end": 39.349
+   "start": 39.62,
+   "end": 39.8
   },
   {
    "text": "des",
-   "start": 39.349,
-   "end": 39.421
+   "start": 39.8,
+   "end": 40.02
   },
   {
    "text": "tremblements,",
-   "start": 39.422,
-   "end": 39.992
+   "start": 40.02,
+   "end": 40.58
   },
   {
    "text": "une",
-   "start": 40.21,
-   "end": 40.283
+   "start": 40.82,
+   "end": 40.92
   },
   {
    "text": "confusion,",
-   "start": 40.283,
-   "end": 40.902
+   "start": 40.92,
+   "end": 41.34
   },
   {
    "text": "une",
-   "start": 41.193,
-   "end": 41.278
+   "start": 41.66,
+   "end": 41.76
   },
   {
    "text": "démarche",
-   "start": 41.278,
-   "end": 41.618
+   "start": 41.76,
+   "end": 42.16
   },
   {
    "text": "instable.",
-   "start": 41.618,
-   "end": 42.225
+   "start": 42.16,
+   "end": 42.58
   },
   {
    "text": "La",
-   "start": 42.565,
-   "end": 42.722
+   "start": 43.0,
+   "end": 43.18
   },
   {
    "text": "déshydratation",
-   "start": 42.723,
-   "end": 43.523
+   "start": 43.18,
+   "end": 43.94
   },
   {
    "text": "et",
-   "start": 43.523,
-   "end": 43.596
+   "start": 43.94,
+   "end": 44.22
   },
   {
    "text": "certains",
-   "start": 43.596,
-   "end": 43.9
+   "start": 44.22,
+   "end": 44.4
   },
   {
    "text": "médicaments",
-   "start": 43.9,
-   "end": 44.409
+   "start": 44.4,
+   "end": 44.9
   },
   {
    "text": "le",
-   "start": 44.409,
-   "end": 44.506
+   "start": 44.9,
+   "end": 45.14
   },
   {
    "text": "font",
-   "start": 44.506,
-   "end": 44.64
+   "start": 45.14,
+   "end": 45.24
   },
   {
    "text": "monter.",
-   "start": 44.64,
-   "end": 45.113
+   "start": 45.24,
+   "end": 45.584
   },
   {
    "text": "Marge",
-   "start": 46.085,
-   "end": 46.379
+   "start": 46.384,
+   "end": 46.8
   },
   {
    "text": "étroite,",
-   "start": 46.379,
-   "end": 46.931
+   "start": 46.8,
+   "end": 47.3
   },
   {
    "text": "prélèvement",
-   "start": 47.237,
-   "end": 47.678
+   "start": 47.58,
+   "end": 47.94
   },
   {
    "text": "à",
-   "start": 47.678,
-   "end": 47.703
+   "start": 47.94,
+   "end": 48.1
   },
   {
    "text": "la",
-   "start": 47.703,
-   "end": 47.789
+   "start": 48.1,
+   "end": 48.2
   },
   {
    "text": "bonne",
-   "start": 47.789,
-   "end": 48.009
+   "start": 48.2,
+   "end": 48.42
   },
   {
    "text": "heure,",
-   "start": 48.009,
-   "end": 48.279
+   "start": 48.42,
+   "end": 48.68
   },
   {
    "text": "heure",
-   "start": 48.598,
-   "end": 48.696
+   "start": 48.9,
+   "end": 49.06
   },
   {
    "text": "notée",
-   "start": 48.696,
-   "end": 48.965
+   "start": 49.06,
+   "end": 49.32
   },
   {
    "text": "sur",
-   "start": 48.965,
-   "end": 49.112
+   "start": 49.32,
+   "end": 49.52
   },
   {
    "text": "le",
-   "start": 49.112,
-   "end": 49.198
+   "start": 49.52,
+   "end": 49.72
   },
   {
    "text": "tube.",
-   "start": 49.198,
-   "end": 49.627
+   "start": 49.72,
+   "end": 49.92
   },
   {
    "text": "Prochaine",
-   "start": 49.995,
-   "end": 50.374
+   "start": 50.38,
+   "end": 50.62
   },
   {
-   "text": "vidéo :",
-   "start": 50.374,
-   "end": 50.852
+   "text": "vidéo :",
+   "start": 50.62,
+   "end": 50.98
   },
   {
    "text": "l'auto-immunité.",
-   "start": 51.281,
-   "end": 52.188
+   "start": 51.34,
+   "end": 52.14
   }
  ]
 }

@@ -1,893 +1,893 @@
 {
- "voice": "voix.wav (tts_voix.py)",
- "duration": 62.558,
+ "voice": "pad-tube-jaune-serologies-2.wav",
+ "duration": 64.46,
  "sections": [
   {
    "id": "intro",
-   "start": 0.05,
-   "end": 7.632
+   "start": 0.0,
+   "end": 8.1
   },
   {
    "id": "toxo",
-   "start": 8.615,
-   "end": 20.969
+   "start": 8.91,
+   "end": 23.137
   },
   {
    "id": "rubeole",
-   "start": 21.91,
-   "end": 31.302
+   "start": 23.936,
+   "end": 33.709
   },
   {
    "id": "cmv",
-   "start": 32.251,
-   "end": 41.559
+   "start": 34.507,
+   "end": 44.443
   },
   {
    "id": "ebv",
-   "start": 42.498,
-   "end": 52.679
+   "start": 45.243,
+   "end": 55.58
   },
   {
    "id": "fin",
-   "start": 53.608,
-   "end": 62.21
+   "start": 56.438,
+   "end": 64.32
   }
  ],
  "words": [
   {
    "text": "Une",
-   "start": 0.05,
-   "end": 0.254
+   "start": 0.0,
+   "end": 0.26
   },
   {
    "text": "femme",
-   "start": 0.254,
-   "end": 0.47
+   "start": 0.26,
+   "end": 0.6
   },
   {
    "text": "enceinte",
-   "start": 0.47,
-   "end": 0.855
+   "start": 0.6,
+   "end": 0.92
   },
   {
    "text": "mange",
-   "start": 0.855,
-   "end": 1.071
+   "start": 0.92,
+   "end": 1.16
   },
   {
    "text": "un",
-   "start": 1.071,
-   "end": 1.131
+   "start": 1.16,
+   "end": 1.34
   },
   {
    "text": "steak",
-   "start": 1.131,
-   "end": 1.372
+   "start": 1.34,
+   "end": 1.58
   },
   {
    "text": "saignant…",
-   "start": 1.372,
-   "end": 1.78
+   "start": 1.58,
+   "end": 2.08
   },
   {
    "text": "et",
-   "start": 2.141,
-   "end": 2.225
+   "start": 2.54,
+   "end": 2.7
   },
   {
    "text": "son",
-   "start": 2.225,
-   "end": 2.369
+   "start": 2.7,
+   "end": 2.88
   },
   {
    "text": "bébé",
-   "start": 2.369,
-   "end": 2.634
+   "start": 2.88,
+   "end": 3.2
   },
   {
    "text": "peut",
-   "start": 2.634,
-   "end": 2.754
+   "start": 3.2,
+   "end": 3.38
   },
   {
    "text": "en",
-   "start": 2.754,
-   "end": 2.838
+   "start": 3.38,
+   "end": 3.54
   },
   {
    "text": "garder",
-   "start": 2.838,
-   "end": 3.09
+   "start": 3.54,
+   "end": 3.72
   },
   {
    "text": "des",
-   "start": 3.09,
-   "end": 3.187
+   "start": 3.72,
+   "end": 4.0
   },
   {
    "text": "séquelles.",
-   "start": 3.187,
-   "end": 3.751
+   "start": 4.0,
+   "end": 4.68
   },
   {
    "text": "Quatre",
-   "start": 4.076,
-   "end": 4.449
+   "start": 4.82,
+   "end": 5.12
   },
   {
    "text": "sérologies",
-   "start": 4.449,
-   "end": 4.929
+   "start": 5.12,
+   "end": 5.7
   },
   {
    "text": "du",
-   "start": 4.929,
-   "end": 5.037
+   "start": 5.7,
+   "end": 5.88
   },
   {
    "text": "tube",
-   "start": 5.037,
-   "end": 5.23
+   "start": 5.88,
+   "end": 6.06
   },
   {
    "text": "jaune",
-   "start": 5.23,
-   "end": 5.542
+   "start": 6.06,
+   "end": 6.36
   },
   {
    "text": "protègent",
-   "start": 5.542,
-   "end": 5.927
+   "start": 6.36,
+   "end": 6.72
   },
   {
    "text": "la",
-   "start": 5.927,
-   "end": 5.999
+   "start": 6.72,
+   "end": 6.96
   },
   {
    "text": "grossesse.",
-   "start": 5.999,
-   "end": 6.684
+   "start": 6.96,
+   "end": 7.4
   },
   {
    "text": "Tu",
-   "start": 7.043,
-   "end": 7.127
+   "start": 7.6,
+   "end": 7.74
   },
   {
    "text": "les",
-   "start": 7.127,
-   "end": 7.212
+   "start": 7.74,
+   "end": 8.0
   },
   {
-   "text": "connais ?",
-   "start": 7.212,
-   "end": 7.632
+   "text": "connais ?",
+   "start": 8.0,
+   "end": 8.1
   },
   {
-   "text": "Un :",
-   "start": 8.615,
-   "end": 8.858
+   "text": "Un :",
+   "start": 8.91,
+   "end": 9.2
   },
   {
    "text": "la",
-   "start": 9.088,
-   "end": 9.173
+   "start": 9.5,
+   "end": 9.72
   },
   {
    "text": "toxoplasmose,",
-   "start": 9.173,
-   "end": 10.084
+   "start": 9.72,
+   "end": 10.66
   },
   {
    "text": "un",
-   "start": 10.351,
-   "end": 10.399
+   "start": 10.94,
+   "end": 10.96
   },
   {
    "text": "parasite",
-   "start": 10.399,
-   "end": 10.836
+   "start": 10.96,
+   "end": 11.38
   },
   {
    "text": "de",
-   "start": 10.836,
-   "end": 10.909
+   "start": 11.38,
+   "end": 11.58
   },
   {
    "text": "la",
-   "start": 10.909,
-   "end": 10.994
+   "start": 11.58,
+   "end": 11.72
   },
   {
    "text": "viande",
-   "start": 10.994,
-   "end": 11.224
+   "start": 11.72,
+   "end": 11.92
   },
   {
    "text": "mal",
-   "start": 11.224,
-   "end": 11.406
+   "start": 11.92,
+   "end": 12.24
   },
   {
    "text": "cuite,",
-   "start": 11.406,
-   "end": 11.831
+   "start": 12.24,
+   "end": 12.48
   },
   {
    "text": "de",
-   "start": 12.025,
-   "end": 12.086
+   "start": 12.66,
+   "end": 12.78
   },
   {
    "text": "la",
-   "start": 12.086,
-   "end": 12.195
+   "start": 12.78,
+   "end": 13.02
   },
   {
    "text": "terre",
-   "start": 12.195,
-   "end": 12.462
+   "start": 13.02,
+   "end": 13.24
   },
   {
    "text": "et",
-   "start": 12.462,
-   "end": 12.499
+   "start": 13.24,
+   "end": 13.44
   },
   {
    "text": "des",
-   "start": 12.499,
-   "end": 12.571
+   "start": 13.44,
+   "end": 13.6
   },
   {
    "text": "litières",
-   "start": 12.571,
-   "end": 12.887
+   "start": 13.6,
+   "end": 13.92
   },
   {
    "text": "de",
-   "start": 12.887,
-   "end": 12.996
+   "start": 13.92,
+   "end": 14.18
   },
   {
    "text": "chat.",
-   "start": 12.996,
-   "end": 13.312
+   "start": 14.18,
+   "end": 14.38
   },
   {
    "text": "Si",
-   "start": 13.639,
-   "end": 13.821
+   "start": 14.86,
+   "end": 14.96
   },
   {
    "text": "la",
-   "start": 13.821,
-   "end": 13.918
+   "start": 14.96,
+   "end": 15.14
   },
   {
    "text": "femme",
-   "start": 13.919,
-   "end": 14.101
+   "start": 15.14,
+   "end": 15.28
   },
   {
    "text": "enceinte",
-   "start": 14.101,
-   "end": 14.465
+   "start": 15.28,
+   "end": 15.62
   },
   {
    "text": "n'est",
-   "start": 14.465,
-   "end": 14.562
+   "start": 15.62,
+   "end": 15.82
   },
   {
    "text": "pas",
-   "start": 14.562,
-   "end": 14.683
+   "start": 15.82,
+   "end": 16.06
   },
   {
    "text": "immunisée,",
-   "start": 14.683,
-   "end": 15.314
+   "start": 16.06,
+   "end": 16.58
   },
   {
    "text": "on",
-   "start": 15.642,
-   "end": 15.666
+   "start": 16.74,
+   "end": 17.0
   },
   {
    "text": "refait",
-   "start": 15.666,
-   "end": 15.909
+   "start": 17.0,
+   "end": 17.2
   },
   {
    "text": "la",
-   "start": 15.909,
-   "end": 16.006
+   "start": 17.2,
+   "end": 17.34
   },
   {
    "text": "sérologie",
-   "start": 16.006,
-   "end": 16.479
+   "start": 17.34,
+   "end": 17.98
   },
   {
    "text": "tous",
-   "start": 16.479,
-   "end": 16.613
+   "start": 17.98,
+   "end": 18.18
   },
   {
    "text": "les",
-   "start": 16.613,
-   "end": 16.722
+   "start": 18.18,
+   "end": 18.36
   },
   {
    "text": "mois",
-   "start": 16.722,
-   "end": 16.867
+   "start": 18.36,
+   "end": 18.52
   },
   {
    "text": "jusqu'à",
-   "start": 16.867,
-   "end": 17.122
+   "start": 18.52,
+   "end": 18.96
   },
   {
    "text": "l'accouchement,",
-   "start": 17.122,
-   "end": 17.693
+   "start": 18.96,
+   "end": 19.5
   },
   {
    "text": "avec",
-   "start": 17.96,
-   "end": 18.19
+   "start": 19.78,
+   "end": 19.94
   },
   {
    "text": "les",
-   "start": 18.19,
-   "end": 18.263
+   "start": 19.94,
+   "end": 20.14
   },
   {
    "text": "bons",
-   "start": 18.263,
-   "end": 18.397
+   "start": 20.14,
+   "end": 20.3
   },
   {
-   "text": "conseils :",
-   "start": 18.397,
-   "end": 18.943
+   "text": "conseils :",
+   "start": 20.3,
+   "end": 20.92
   },
   {
    "text": "viande",
-   "start": 19.161,
-   "end": 19.355
+   "start": 21.08,
+   "end": 21.34
   },
   {
    "text": "bien",
-   "start": 19.355,
-   "end": 19.513
+   "start": 21.34,
+   "end": 21.64
   },
   {
    "text": "cuite,",
-   "start": 19.513,
-   "end": 19.901
+   "start": 21.64,
+   "end": 21.98
   },
   {
    "text": "légumes",
-   "start": 20.096,
-   "end": 20.399
+   "start": 22.14,
+   "end": 22.58
   },
   {
    "text": "bien",
-   "start": 20.399,
-   "end": 20.581
+   "start": 22.58,
+   "end": 22.88
   },
   {
    "text": "lavés.",
-   "start": 20.581,
-   "end": 20.969
+   "start": 22.88,
+   "end": 23.137
   },
   {
-   "text": "Deux :",
-   "start": 21.91,
-   "end": 22.31
+   "text": "Deux :",
+   "start": 23.936,
+   "end": 24.34
   },
   {
    "text": "la",
-   "start": 22.674,
-   "end": 22.759
+   "start": 24.68,
+   "end": 24.94
   },
   {
    "text": "rubéole.",
-   "start": 22.759,
-   "end": 23.39
+   "start": 24.94,
+   "end": 25.46
   },
   {
    "text": "Au",
-   "start": 23.718,
-   "end": 23.864
+   "start": 25.88,
+   "end": 26.04
   },
   {
    "text": "début",
-   "start": 23.864,
-   "end": 24.094
+   "start": 26.04,
+   "end": 26.18
   },
   {
    "text": "de",
-   "start": 24.094,
-   "end": 24.155
+   "start": 26.18,
+   "end": 26.36
   },
   {
    "text": "la",
-   "start": 24.155,
-   "end": 24.24
+   "start": 26.36,
+   "end": 26.48
   },
   {
    "text": "grossesse,",
-   "start": 24.24,
-   "end": 24.835
+   "start": 26.48,
+   "end": 26.92
   },
   {
    "text": "elle",
-   "start": 25.126,
-   "end": 25.187
+   "start": 26.98,
+   "end": 27.12
   },
   {
    "text": "peut",
-   "start": 25.187,
-   "end": 25.296
+   "start": 27.12,
+   "end": 27.32
   },
   {
    "text": "donner",
-   "start": 25.296,
-   "end": 25.514
+   "start": 27.32,
+   "end": 27.48
   },
   {
    "text": "des",
-   "start": 25.514,
-   "end": 25.611
+   "start": 27.48,
+   "end": 27.72
   },
   {
    "text": "malformations",
-   "start": 25.611,
-   "end": 26.206
+   "start": 27.72,
+   "end": 28.34
   },
   {
    "text": "graves.",
-   "start": 26.206,
-   "end": 26.679
+   "start": 28.34,
+   "end": 28.74
   },
   {
    "text": "Si",
-   "start": 27.03,
-   "end": 27.2
+   "start": 28.74,
+   "end": 29.3
   },
   {
    "text": "la",
-   "start": 27.2,
-   "end": 27.297
+   "start": 29.3,
+   "end": 29.5
   },
   {
    "text": "femme",
-   "start": 27.297,
-   "end": 27.491
+   "start": 29.5,
+   "end": 29.62
   },
   {
    "text": "n'est",
-   "start": 27.491,
-   "end": 27.576
+   "start": 29.62,
+   "end": 29.8
   },
   {
    "text": "pas",
-   "start": 27.576,
-   "end": 27.697
+   "start": 29.8,
+   "end": 30.06
   },
   {
    "text": "immunisée,",
-   "start": 27.697,
-   "end": 28.328
+   "start": 30.06,
+   "end": 30.54
   },
   {
    "text": "on",
-   "start": 28.583,
-   "end": 28.608
+   "start": 30.76,
+   "end": 30.84
   },
   {
    "text": "la",
-   "start": 28.608,
-   "end": 28.693
+   "start": 30.84,
+   "end": 31.06
   },
   {
    "text": "vaccine…",
-   "start": 28.693,
-   "end": 29.214
+   "start": 31.06,
+   "end": 31.46
   },
   {
    "text": "mais",
-   "start": 29.615,
-   "end": 29.676
+   "start": 31.72,
+   "end": 31.96
   },
   {
    "text": "après",
-   "start": 29.676,
-   "end": 29.87
+   "start": 31.96,
+   "end": 32.28
   },
   {
    "text": "l'accouchement,",
-   "start": 29.87,
-   "end": 30.428
+   "start": 32.28,
+   "end": 32.9
   },
   {
    "text": "jamais",
-   "start": 30.659,
-   "end": 30.877
+   "start": 33.16,
+   "end": 33.46
   },
   {
    "text": "pendant.",
-   "start": 30.877,
-   "end": 31.302
+   "start": 33.46,
+   "end": 33.709
   },
   {
-   "text": "Trois :",
-   "start": 32.251,
-   "end": 32.591
+   "text": "Trois :",
+   "start": 34.507,
+   "end": 34.8
   },
   {
    "text": "le",
-   "start": 33.004,
-   "end": 33.076
+   "start": 35.2,
+   "end": 35.36
   },
   {
    "text": "cytomégalovirus,",
-   "start": 33.076,
-   "end": 34.266
+   "start": 35.36,
+   "end": 36.56
   },
   {
    "text": "transmis",
-   "start": 34.569,
-   "end": 34.945
+   "start": 36.98,
+   "end": 37.1
   },
   {
    "text": "par",
-   "start": 34.945,
-   "end": 35.067
+   "start": 37.1,
+   "end": 37.3
   },
   {
    "text": "la",
-   "start": 35.067,
-   "end": 35.152
+   "start": 37.3,
+   "end": 37.54
   },
   {
    "text": "salive",
-   "start": 35.152,
-   "end": 35.528
+   "start": 37.54,
+   "end": 37.86
   },
   {
    "text": "et",
-   "start": 35.528,
-   "end": 35.552
+   "start": 37.86,
+   "end": 38.0
   },
   {
    "text": "les",
-   "start": 35.552,
-   "end": 35.649
+   "start": 38.0,
+   "end": 38.26
   },
   {
    "text": "urines",
-   "start": 35.649,
-   "end": 35.989
+   "start": 38.26,
+   "end": 38.52
   },
   {
    "text": "des",
-   "start": 35.989,
-   "end": 36.074
+   "start": 38.52,
+   "end": 38.74
   },
   {
    "text": "jeunes",
-   "start": 36.074,
-   "end": 36.232
+   "start": 38.74,
+   "end": 38.92
   },
   {
    "text": "enfants.",
-   "start": 36.232,
-   "end": 36.705
+   "start": 38.92,
+   "end": 39.3
   },
   {
    "text": "Pour",
-   "start": 37.032,
-   "end": 37.19
+   "start": 39.68,
+   "end": 39.82
   },
   {
    "text": "s'en",
-   "start": 37.19,
-   "end": 37.323
+   "start": 39.82,
+   "end": 40.08
   },
   {
-   "text": "protéger :",
-   "start": 37.323,
-   "end": 37.87
+   "text": "protéger :",
+   "start": 40.08,
+   "end": 40.52
   },
   {
    "text": "se",
-   "start": 38.331,
-   "end": 38.452
+   "start": 40.9,
+   "end": 41.06
   },
   {
    "text": "laver",
-   "start": 38.452,
-   "end": 38.646
+   "start": 41.06,
+   "end": 41.26
   },
   {
    "text": "les",
-   "start": 38.646,
-   "end": 38.743
+   "start": 41.26,
+   "end": 41.42
   },
   {
    "text": "mains",
-   "start": 38.743,
-   "end": 38.901
+   "start": 41.42,
+   "end": 41.58
   },
   {
    "text": "après",
-   "start": 38.901,
-   "end": 39.095
+   "start": 41.58,
+   "end": 41.9
   },
   {
    "text": "avoir",
-   "start": 39.095,
-   "end": 39.326
+   "start": 41.9,
+   "end": 42.2
   },
   {
    "text": "changé",
-   "start": 39.326,
-   "end": 39.568
+   "start": 42.2,
+   "end": 42.4
   },
   {
    "text": "une",
-   "start": 39.569,
-   "end": 39.69
+   "start": 42.4,
+   "end": 42.64
   },
   {
    "text": "couche,",
-   "start": 39.69,
-   "end": 40.078
+   "start": 42.64,
+   "end": 42.92
   },
   {
    "text": "et",
-   "start": 40.369,
-   "end": 40.394
+   "start": 42.92,
+   "end": 43.12
   },
   {
    "text": "ne",
-   "start": 40.394,
-   "end": 40.491
+   "start": 43.12,
+   "end": 43.36
   },
   {
    "text": "pas",
-   "start": 40.491,
-   "end": 40.6
+   "start": 43.36,
+   "end": 43.58
   },
   {
    "text": "partager",
-   "start": 40.6,
-   "end": 40.964
+   "start": 43.58,
+   "end": 43.86
   },
   {
    "text": "les",
-   "start": 40.964,
-   "end": 41.037
+   "start": 43.86,
+   "end": 44.04
   },
   {
    "text": "couverts.",
-   "start": 41.037,
-   "end": 41.559
+   "start": 44.04,
+   "end": 44.443
   },
   {
-   "text": "Quatre :",
-   "start": 42.498,
-   "end": 42.898
+   "text": "Quatre :",
+   "start": 45.243,
+   "end": 45.72
   },
   {
    "text": "le",
-   "start": 43.384,
-   "end": 43.432
+   "start": 45.92,
+   "end": 46.14
   },
   {
    "text": "virus",
-   "start": 43.432,
-   "end": 43.736
+   "start": 46.14,
+   "end": 46.44
   },
   {
    "text": "d'Epstein-Barr,",
-   "start": 43.736,
-   "end": 44.513
+   "start": 46.44,
+   "end": 47.26
   },
   {
    "text": "celui",
-   "start": 44.925,
-   "end": 45.18
+   "start": 47.56,
+   "end": 47.7
   },
   {
    "text": "de",
-   "start": 45.18,
-   "end": 45.265
+   "start": 47.7,
+   "end": 47.9
   },
   {
    "text": "la",
-   "start": 45.265,
-   "end": 45.35
+   "start": 47.9,
+   "end": 48.04
   },
   {
    "text": "mononucléose,",
-   "start": 45.35,
-   "end": 46.187
+   "start": 48.04,
+   "end": 48.8
   },
   {
    "text": "la",
-   "start": 46.454,
-   "end": 46.515
+   "start": 49.04,
+   "end": 49.22
   },
   {
    "text": "maladie",
-   "start": 46.515,
-   "end": 46.891
+   "start": 49.22,
+   "end": 49.52
   },
   {
    "text": "du",
-   "start": 46.891,
-   "end": 46.988
+   "start": 49.52,
+   "end": 49.74
   },
   {
    "text": "baiser.",
-   "start": 46.988,
-   "end": 47.437
+   "start": 49.74,
+   "end": 50.08
   },
   {
    "text": "Des",
-   "start": 47.776,
-   "end": 47.994
+   "start": 50.54,
+   "end": 50.78
   },
   {
    "text": "I",
-   "start": 47.994,
-   "end": 48.103
+   "start": 50.78,
+   "end": 50.78
   },
   {
    "text": "G",
-   "start": 48.103,
-   "end": 48.261
+   "start": 50.78,
+   "end": 51.16
   },
   {
    "text": "M",
-   "start": 48.261,
-   "end": 48.407
+   "start": 50.78,
+   "end": 51.16
   },
   {
    "text": "positives,",
-   "start": 48.407,
-   "end": 49.05
+   "start": 51.16,
+   "end": 51.78
   },
   {
    "text": "c'est",
-   "start": 49.402,
-   "end": 49.511
+   "start": 52.0,
+   "end": 52.14
   },
   {
    "text": "une",
-   "start": 49.511,
-   "end": 49.669
+   "start": 52.14,
+   "end": 52.24
   },
   {
    "text": "infection",
-   "start": 49.669,
-   "end": 50.033
+   "start": 52.24,
+   "end": 52.64
   },
   {
    "text": "récente,",
-   "start": 50.033,
-   "end": 50.555
+   "start": 52.64,
+   "end": 53.22
   },
   {
    "text": "avec",
-   "start": 50.725,
-   "end": 50.882
+   "start": 53.44,
+   "end": 53.66
   },
   {
    "text": "fièvre,",
-   "start": 50.882,
-   "end": 51.307
+   "start": 53.66,
+   "end": 54.08
   },
   {
    "text": "angine",
-   "start": 51.489,
-   "end": 51.829
+   "start": 54.26,
+   "end": 54.62
   },
   {
    "text": "et",
-   "start": 51.829,
-   "end": 51.865
+   "start": 54.62,
+   "end": 54.92
   },
   {
    "text": "grande",
-   "start": 51.865,
-   "end": 52.084
+   "start": 54.92,
+   "end": 55.16
   },
   {
    "text": "fatigue.",
-   "start": 52.084,
-   "end": 52.679
+   "start": 55.16,
+   "end": 55.58
   },
   {
    "text": "Toxoplasmose,",
-   "start": 53.608,
-   "end": 54.6
+   "start": 56.438,
+   "end": 57.46
   },
   {
    "text": "rubéole,",
-   "start": 54.98,
-   "end": 55.556
+   "start": 57.64,
+   "end": 58.14
   },
   {
    "text": "cytomégalovirus,",
-   "start": 55.85,
-   "end": 57.002
+   "start": 58.38,
+   "end": 59.38
   },
   {
-   "text": "mononucléose :",
-   "start": 57.358,
-   "end": 58.203
+   "text": "mononucléose :",
+   "start": 59.64,
+   "end": 60.38
   },
   {
    "text": "tu",
-   "start": 58.436,
-   "end": 58.546
+   "start": 60.72,
+   "end": 60.76
   },
   {
    "text": "sais",
-   "start": 58.547,
-   "end": 58.681
+   "start": 60.76,
+   "end": 60.94
   },
   {
    "text": "les",
-   "start": 58.681,
-   "end": 58.792
+   "start": 60.94,
+   "end": 61.1
   },
   {
    "text": "lire.",
-   "start": 58.792,
-   "end": 59.184
+   "start": 61.1,
+   "end": 61.36
   },
   {
    "text": "Prochaine",
-   "start": 59.538,
-   "end": 59.906
+   "start": 61.9,
+   "end": 62.14
   },
   {
-   "text": "vidéo :",
-   "start": 59.906,
-   "end": 60.384
+   "text": "vidéo :",
+   "start": 62.14,
+   "end": 62.52
   },
   {
    "text": "la",
-   "start": 60.752,
-   "end": 60.813
+   "start": 62.86,
+   "end": 63.0
   },
   {
    "text": "dernière",
-   "start": 60.813,
-   "end": 61.132
+   "start": 63.0,
+   "end": 63.26
   },
   {
    "text": "partie",
-   "start": 61.132,
-   "end": 61.475
+   "start": 63.26,
+   "end": 63.6
   },
   {
    "text": "des",
-   "start": 61.475,
-   "end": 61.573
+   "start": 63.6,
+   "end": 63.78
   },
   {
    "text": "sérologies.",
-   "start": 61.573,
-   "end": 62.21
+   "start": 63.78,
+   "end": 64.32
   }
  ]
 }
