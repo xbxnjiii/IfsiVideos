@@ -1,728 +1,728 @@
 {
- "voice": "voix.wav (tts_voix.py)",
- "duration": 50.488,
+ "voice": "pad-tube-jaune-foie.wav",
+ "duration": 53.071,
  "sections": [
   {
    "id": "intro",
-   "start": 0.05,
-   "end": 6.767
+   "start": 0.0,
+   "end": 6.92
   },
   {
    "id": "transa",
-   "start": 7.703,
-   "end": 23.238
+   "start": 7.737,
+   "end": 25.523
   },
   {
    "id": "ggt",
-   "start": 24.213,
-   "end": 30.015
+   "start": 26.311,
+   "end": 32.715
   },
   {
    "id": "pal",
-   "start": 30.955,
-   "end": 42.338
+   "start": 33.513,
+   "end": 45.287
   },
   {
    "id": "fin",
-   "start": 43.277,
-   "end": 50.152
+   "start": 46.087,
+   "end": 52.9
   }
  ],
  "words": [
   {
    "text": "Le",
-   "start": 0.05,
-   "end": 0.254
+   "start": 0.0,
+   "end": 0.34
   },
   {
    "text": "foie",
-   "start": 0.254,
-   "end": 0.458
+   "start": 0.34,
+   "end": 0.5
   },
   {
    "text": "souffre",
-   "start": 0.458,
-   "end": 0.807
+   "start": 0.5,
+   "end": 0.94
   },
   {
    "text": "souvent",
-   "start": 0.807,
-   "end": 1.083
+   "start": 0.94,
+   "end": 1.34
   },
   {
    "text": "en",
-   "start": 1.083,
-   "end": 1.143
+   "start": 1.34,
+   "end": 1.6
   },
   {
    "text": "silence.",
-   "start": 1.143,
-   "end": 1.756
+   "start": 1.6,
+   "end": 2.04
   },
   {
    "text": "Dans",
-   "start": 2.091,
-   "end": 2.248
+   "start": 2.44,
+   "end": 2.52
   },
   {
    "text": "le",
-   "start": 2.248,
-   "end": 2.32
+   "start": 2.52,
+   "end": 2.72
   },
   {
    "text": "tube",
-   "start": 2.32,
-   "end": 2.5
+   "start": 2.72,
+   "end": 2.86
   },
   {
    "text": "jaune,",
-   "start": 2.5,
-   "end": 2.909
+   "start": 2.86,
+   "end": 3.28
   },
   {
    "text": "quatre",
-   "start": 3.173,
-   "end": 3.413
+   "start": 3.44,
+   "end": 3.66
   },
   {
    "text": "enzymes",
-   "start": 3.413,
-   "end": 3.726
+   "start": 3.66,
+   "end": 3.96
   },
   {
    "text": "donnent",
-   "start": 3.726,
-   "end": 3.87
+   "start": 3.96,
+   "end": 4.24
   },
   {
    "text": "l'alerte,",
-   "start": 3.87,
-   "end": 4.363
+   "start": 4.24,
+   "end": 4.72
   },
   {
    "text": "bien",
-   "start": 4.567,
-   "end": 4.724
+   "start": 5.0,
+   "end": 5.22
   },
   {
    "text": "avant",
-   "start": 4.724,
-   "end": 4.94
+   "start": 5.22,
+   "end": 5.42
   },
   {
    "text": "la",
-   "start": 4.94,
-   "end": 5.012
+   "start": 5.42,
+   "end": 5.62
   },
   {
    "text": "jaunisse.",
-   "start": 5.012,
-   "end": 5.613
+   "start": 5.62,
+   "end": 6.0
   },
   {
    "text": "Tu",
-   "start": 5.949,
-   "end": 6.07
+   "start": 6.24,
+   "end": 6.42
   },
   {
    "text": "sais",
-   "start": 6.07,
-   "end": 6.214
+   "start": 6.42,
+   "end": 6.56
   },
   {
    "text": "les",
-   "start": 6.214,
-   "end": 6.334
+   "start": 6.56,
+   "end": 6.7
   },
   {
-   "text": "lire ?",
-   "start": 6.334,
-   "end": 6.767
+   "text": "lire ?",
+   "start": 6.7,
+   "end": 6.92
   },
   {
    "text": "Un",
-   "start": 7.703,
-   "end": 7.885
+   "start": 7.737,
+   "end": 8.02
   },
   {
    "text": "et",
-   "start": 7.885,
-   "end": 7.982
+   "start": 8.02,
+   "end": 8.22
   },
   {
-   "text": "deux :",
-   "start": 7.982,
-   "end": 8.249
+   "text": "deux :",
+   "start": 8.22,
+   "end": 8.62
   },
   {
    "text": "les",
-   "start": 8.674,
-   "end": 8.796
+   "start": 8.8,
+   "end": 9.02
   },
   {
    "text": "transaminases,",
-   "start": 8.796,
-   "end": 9.596
+   "start": 9.02,
+   "end": 9.88
   },
   {
    "text": "l'ASAT",
-   "start": 9.791,
-   "end": 10.507
+   "start": 10.1,
+   "end": 11.04
   },
   {
    "text": "et",
-   "start": 10.507,
-   "end": 10.604
+   "start": 11.04,
+   "end": 11.4
   },
   {
    "text": "l'ALAT,",
-   "start": 10.604,
-   "end": 11.247
+   "start": 11.4,
+   "end": 12.4
   },
   {
    "text": "qu'on",
-   "start": 11.514,
-   "end": 11.623
+   "start": 12.6,
+   "end": 12.88
   },
   {
    "text": "appelait",
-   "start": 11.623,
-   "end": 11.914
+   "start": 12.88,
+   "end": 13.06
   },
   {
    "text": "aussi",
-   "start": 11.914,
-   "end": 12.218
+   "start": 13.06,
+   "end": 13.64
   },
   {
    "text": "GOT",
-   "start": 12.218,
-   "end": 12.825
+   "start": 13.64,
+   "end": 14.08
   },
   {
    "text": "et",
-   "start": 12.825,
-   "end": 12.958
+   "start": 14.08,
+   "end": 14.48
   },
   {
    "text": "GPT.",
-   "start": 12.958,
-   "end": 13.553
+   "start": 14.48,
+   "end": 15.12
   },
   {
    "text": "Elles",
-   "start": 13.881,
-   "end": 14.087
+   "start": 15.5,
+   "end": 15.72
   },
   {
    "text": "vivent",
-   "start": 14.087,
-   "end": 14.306
+   "start": 15.72,
+   "end": 15.88
   },
   {
    "text": "dans",
-   "start": 14.306,
-   "end": 14.403
+   "start": 15.88,
+   "end": 16.04
   },
   {
    "text": "les",
-   "start": 14.403,
-   "end": 14.488
+   "start": 16.04,
+   "end": 16.2
   },
   {
    "text": "cellules",
-   "start": 14.488,
-   "end": 14.767
+   "start": 16.2,
+   "end": 16.42
   },
   {
    "text": "du",
-   "start": 14.767,
-   "end": 14.876
+   "start": 16.42,
+   "end": 16.62
   },
   {
-   "text": "foie :",
-   "start": 14.876,
-   "end": 15.24
+   "text": "foie :",
+   "start": 16.62,
+   "end": 17.04
   },
   {
    "text": "quand",
-   "start": 15.495,
-   "end": 15.592
+   "start": 17.14,
+   "end": 17.28
   },
   {
    "text": "ces",
-   "start": 15.592,
-   "end": 15.713
+   "start": 17.28,
+   "end": 17.5
   },
   {
    "text": "cellules",
-   "start": 15.713,
-   "end": 16.029
+   "start": 17.5,
+   "end": 17.78
   },
   {
    "text": "sont",
-   "start": 16.029,
-   "end": 16.15
+   "start": 17.78,
+   "end": 18.06
   },
   {
    "text": "abîmées,",
-   "start": 16.15,
-   "end": 16.648
+   "start": 18.06,
+   "end": 18.6
   },
   {
    "text": "elles",
-   "start": 16.903,
-   "end": 17.036
+   "start": 18.72,
+   "end": 18.88
   },
   {
    "text": "passent",
-   "start": 17.036,
-   "end": 17.242
+   "start": 18.88,
+   "end": 19.14
   },
   {
    "text": "dans",
-   "start": 17.242,
-   "end": 17.352
+   "start": 19.14,
+   "end": 19.32
   },
   {
    "text": "le",
-   "start": 17.352,
-   "end": 17.449
+   "start": 19.32,
+   "end": 19.44
   },
   {
    "text": "sang.",
-   "start": 17.449,
-   "end": 17.74
+   "start": 19.44,
+   "end": 19.58
   },
   {
    "text": "Ça",
-   "start": 18.092,
-   "end": 18.31
+   "start": 19.96,
+   "end": 20.12
   },
   {
    "text": "arrive",
-   "start": 18.31,
-   "end": 18.553
+   "start": 20.12,
+   "end": 20.38
   },
   {
    "text": "avec",
-   "start": 18.553,
-   "end": 18.759
+   "start": 20.38,
+   "end": 20.62
   },
   {
    "text": "une",
-   "start": 18.759,
-   "end": 18.844
+   "start": 20.62,
+   "end": 20.78
   },
   {
    "text": "hépatite,",
-   "start": 18.844,
-   "end": 19.414
+   "start": 20.78,
+   "end": 21.32
   },
   {
    "text": "certains",
-   "start": 19.669,
-   "end": 19.997
+   "start": 21.6,
+   "end": 21.76
   },
   {
    "text": "médicaments",
-   "start": 19.997,
-   "end": 20.482
+   "start": 21.76,
+   "end": 22.42
   },
   {
    "text": "ou",
-   "start": 20.482,
-   "end": 20.519
+   "start": 22.42,
+   "end": 22.64
   },
   {
    "text": "l'alcool.",
-   "start": 20.519,
-   "end": 21.113
+   "start": 22.64,
+   "end": 23.1
   },
   {
    "text": "L'ALAT",
-   "start": 21.454,
-   "end": 22.23
+   "start": 23.62,
+   "end": 24.3
   },
   {
    "text": "est",
-   "start": 22.23,
-   "end": 22.327
+   "start": 24.3,
+   "end": 24.5
   },
   {
    "text": "la",
-   "start": 22.327,
-   "end": 22.412
+   "start": 24.5,
+   "end": 24.72
   },
   {
    "text": "plus",
-   "start": 22.412,
-   "end": 22.546
+   "start": 24.72,
+   "end": 24.9
   },
   {
    "text": "propre",
-   "start": 22.546,
-   "end": 22.837
+   "start": 24.9,
+   "end": 25.16
   },
   {
    "text": "au",
-   "start": 22.837,
-   "end": 22.874
+   "start": 25.16,
+   "end": 25.38
   },
   {
    "text": "foie.",
-   "start": 22.874,
-   "end": 23.238
+   "start": 25.38,
+   "end": 25.523
   },
   {
-   "text": "Trois :",
-   "start": 24.213,
-   "end": 24.541
+   "text": "Trois :",
+   "start": 26.311,
+   "end": 26.88
   },
   {
    "text": "les",
-   "start": 24.881,
-   "end": 24.953
+   "start": 27.02,
+   "end": 27.3
   },
   {
    "text": "gamma",
-   "start": 24.953,
-   "end": 25.208
+   "start": 27.3,
+   "end": 27.3
   },
   {
    "text": "GT.",
-   "start": 25.208,
-   "end": 25.682
+   "start": 27.3,
+   "end": 28.06
   },
   {
    "text": "Elles",
-   "start": 26.01,
-   "end": 26.204
+   "start": 28.06,
+   "end": 28.54
   },
   {
    "text": "montent",
-   "start": 26.204,
-   "end": 26.411
+   "start": 28.54,
+   "end": 28.72
   },
   {
    "text": "avec",
-   "start": 26.411,
-   "end": 26.605
+   "start": 28.72,
+   "end": 28.94
   },
   {
    "text": "l'alcool,",
-   "start": 26.605,
-   "end": 27.09
+   "start": 28.94,
+   "end": 29.46
   },
   {
    "text": "avec",
-   "start": 27.369,
-   "end": 27.539
+   "start": 29.78,
+   "end": 29.98
   },
   {
    "text": "certains",
-   "start": 27.539,
-   "end": 27.806
+   "start": 29.98,
+   "end": 30.2
   },
   {
    "text": "médicaments…",
-   "start": 27.806,
-   "end": 28.377
+   "start": 30.2,
+   "end": 30.88
   },
   {
    "text": "et",
-   "start": 28.789,
-   "end": 28.862
+   "start": 30.88,
+   "end": 31.44
   },
   {
    "text": "quand",
-   "start": 28.862,
-   "end": 28.984
+   "start": 31.44,
+   "end": 31.6
   },
   {
    "text": "la",
-   "start": 28.984,
-   "end": 29.069
-  },
-  {
-   "text": "bile",
-   "start": 29.069,
-   "end": 29.263
-  },
-  {
-   "text": "circule",
-   "start": 29.263,
-   "end": 29.627
-  },
-  {
-   "text": "mal.",
-   "start": 29.627,
-   "end": 30.015
-  },
-  {
-   "text": "Quatre :",
-   "start": 30.955,
-   "end": 31.391
-  },
-  {
-   "text": "les",
-   "start": 31.768,
+   "start": 31.6,
    "end": 31.84
   },
   {
-   "text": "phosphatases",
+   "text": "bile",
    "start": 31.84,
-   "end": 32.326
+   "end": 31.92
+  },
+  {
+   "text": "circule",
+   "start": 31.92,
+   "end": 32.42
+  },
+  {
+   "text": "mal.",
+   "start": 32.42,
+   "end": 32.715
+  },
+  {
+   "text": "Quatre :",
+   "start": 33.513,
+   "end": 34.02
+  },
+  {
+   "text": "les",
+   "start": 34.22,
+   "end": 34.42
+  },
+  {
+   "text": "phosphatases",
+   "start": 34.42,
+   "end": 35.12
   },
   {
    "text": "alcalines,",
-   "start": 32.326,
-   "end": 32.921
+   "start": 35.12,
+   "end": 35.74
   },
   {
    "text": "les",
-   "start": 33.248,
-   "end": 33.333
+   "start": 35.88,
+   "end": 36.2
   },
   {
    "text": "PAL.",
-   "start": 33.333,
-   "end": 34.037
+   "start": 36.2,
+   "end": 36.62
   },
   {
    "text": "Avec",
-   "start": 34.366,
-   "end": 34.657
+   "start": 37.24,
+   "end": 37.44
   },
   {
    "text": "les",
-   "start": 34.657,
-   "end": 34.73
+   "start": 37.44,
+   "end": 37.62
   },
   {
    "text": "gamma",
-   "start": 34.73,
-   "end": 34.985
+   "start": 37.62,
+   "end": 37.62
   },
   {
    "text": "GT,",
-   "start": 34.985,
-   "end": 35.446
+   "start": 37.62,
+   "end": 38.24
   },
   {
    "text": "elles",
-   "start": 35.847,
-   "end": 35.98
+   "start": 38.46,
+   "end": 38.58
   },
   {
    "text": "montent",
-   "start": 35.98,
-   "end": 36.187
+   "start": 38.58,
+   "end": 38.84
   },
   {
    "text": "quand",
-   "start": 36.187,
-   "end": 36.296
+   "start": 38.84,
+   "end": 38.98
   },
   {
    "text": "la",
-   "start": 36.296,
-   "end": 36.381
+   "start": 38.98,
+   "end": 39.2
   },
   {
    "text": "bile",
-   "start": 36.381,
-   "end": 36.575
+   "start": 39.2,
+   "end": 39.3
   },
   {
    "text": "ne",
-   "start": 36.575,
-   "end": 36.672
+   "start": 39.3,
+   "end": 39.52
   },
   {
    "text": "s'écoule",
-   "start": 36.672,
-   "end": 36.975
+   "start": 39.52,
+   "end": 39.84
   },
   {
    "text": "plus,",
-   "start": 36.975,
-   "end": 37.279
+   "start": 39.84,
+   "end": 40.12
   },
   {
    "text": "à",
-   "start": 37.558,
-   "end": 37.643
+   "start": 40.36,
+   "end": 40.44
   },
   {
    "text": "cause",
-   "start": 37.643,
-   "end": 37.837
+   "start": 40.44,
+   "end": 40.52
   },
   {
    "text": "d'un",
-   "start": 37.837,
-   "end": 37.946
+   "start": 40.52,
+   "end": 40.8
   },
   {
    "text": "calcul",
-   "start": 37.946,
-   "end": 38.286
+   "start": 40.8,
+   "end": 41.06
   },
   {
    "text": "par",
-   "start": 38.286,
-   "end": 38.432
+   "start": 41.06,
+   "end": 41.36
   },
   {
    "text": "exemple.",
-   "start": 38.432,
-   "end": 38.941
+   "start": 41.36,
+   "end": 41.68
   },
   {
    "text": "Mais",
-   "start": 39.28,
-   "end": 39.377
+   "start": 42.06,
+   "end": 42.18
   },
   {
    "text": "elles",
-   "start": 39.377,
-   "end": 39.462
+   "start": 42.18,
+   "end": 42.32
   },
   {
    "text": "viennent",
-   "start": 39.462,
-   "end": 39.644
+   "start": 42.32,
+   "end": 42.48
   },
   {
    "text": "aussi",
-   "start": 39.644,
-   "end": 39.85
+   "start": 42.48,
+   "end": 42.78
   },
   {
    "text": "des",
-   "start": 39.85,
-   "end": 39.972
+   "start": 42.78,
+   "end": 42.98
   },
   {
-   "text": "os :",
-   "start": 39.972,
-   "end": 40.372
+   "text": "os :",
+   "start": 42.98,
+   "end": 43.18
   },
   {
    "text": "elles",
-   "start": 40.785,
-   "end": 40.857
+   "start": 43.44,
+   "end": 43.58
   },
   {
    "text": "sont",
-   "start": 40.857,
-   "end": 40.979
+   "start": 43.58,
+   "end": 43.82
   },
   {
    "text": "plus",
-   "start": 40.979,
-   "end": 41.149
+   "start": 43.82,
+   "end": 44.06
   },
   {
    "text": "hautes",
-   "start": 41.149,
-   "end": 41.331
+   "start": 44.06,
+   "end": 44.24
   },
   {
    "text": "chez",
-   "start": 41.331,
-   "end": 41.428
+   "start": 44.24,
+   "end": 44.38
   },
   {
    "text": "l'enfant",
-   "start": 41.428,
-   "end": 41.731
+   "start": 44.38,
+   "end": 44.7
   },
   {
    "text": "qui",
-   "start": 41.731,
-   "end": 41.853
+   "start": 44.7,
+   "end": 44.94
   },
   {
    "text": "grandit.",
-   "start": 41.853,
-   "end": 42.338
+   "start": 44.94,
+   "end": 45.287
   },
   {
    "text": "Transaminases,",
-   "start": 43.277,
-   "end": 44.086
+   "start": 46.087,
+   "end": 47.1
   },
   {
    "text": "gamma",
-   "start": 44.356,
-   "end": 44.576
+   "start": 47.24,
+   "end": 47.1
   },
   {
    "text": "GT,",
-   "start": 44.576,
-   "end": 45.03
+   "start": 47.24,
+   "end": 48.02
   },
   {
    "text": "phosphatases",
-   "start": 45.336,
-   "end": 45.802
+   "start": 48.26,
+   "end": 48.76
   },
   {
-   "text": "alcalines :",
-   "start": 45.802,
-   "end": 46.415
+   "text": "alcalines :",
+   "start": 48.76,
+   "end": 49.72
   },
   {
    "text": "tu",
-   "start": 46.684,
-   "end": 46.807
+   "start": 49.72,
+   "end": 49.76
   },
   {
    "text": "as",
-   "start": 46.807,
-   "end": 46.831
+   "start": 49.76,
+   "end": 49.88
   },
   {
    "text": "le",
-   "start": 46.831,
-   "end": 46.917
+   "start": 49.88,
+   "end": 50.06
   },
   {
    "text": "bilan",
-   "start": 46.917,
-   "end": 47.15
+   "start": 50.06,
+   "end": 50.24
   },
   {
    "text": "du",
-   "start": 47.15,
-   "end": 47.26
+   "start": 50.24,
+   "end": 50.48
   },
   {
    "text": "foie.",
-   "start": 47.26,
-   "end": 47.652
+   "start": 50.48,
+   "end": 50.78
   },
   {
    "text": "Prochaine",
-   "start": 48.032,
-   "end": 48.412
+   "start": 51.14,
+   "end": 51.4
   },
   {
-   "text": "vidéo :",
-   "start": 48.412,
-   "end": 48.902
+   "text": "vidéo :",
+   "start": 51.4,
+   "end": 51.74
   },
   {
    "text": "le",
-   "start": 49.294,
-   "end": 49.356
+   "start": 52.16,
+   "end": 52.36
   },
   {
    "text": "cholestérol.",
-   "start": 49.356,
-   "end": 50.152
+   "start": 52.36,
+   "end": 52.9
   }
  ]
 }
