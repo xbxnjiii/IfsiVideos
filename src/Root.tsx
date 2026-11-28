@@ -210,6 +210,8 @@ import {LaCellule, LaCelluleProps} from './videos/la-cellule/LaCellule';
 import {TL as LA_CELLULE_TL} from './videos/la-cellule/timeline';
 import {LaCelluleSchema, LaCelluleSchemaProps} from './videos/la-cellule-schema/LaCelluleSchema';
 import {TL as LA_CELLULE_SCHEMA_TL} from './videos/la-cellule-schema/timeline';
+import {EscarreMassage, EscarreMassageProps} from './videos/escarre-massage/EscarreMassage';
+import {TL as ESCARRE_MASSAGE_TL} from './videos/escarre-massage/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -1246,6 +1248,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies LaCelluleSchemaProps}
+		/>
+		{/* 105 · Escarre-Massage */}
+		<Composition
+			id="Escarre-Massage"
+			component={EscarreMassage}
+			durationInFrames={ESCARRE_MASSAGE_TL.total}
+			fps={ESCARRE_MASSAGE_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies EscarreMassageProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition

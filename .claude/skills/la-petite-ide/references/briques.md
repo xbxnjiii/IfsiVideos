@@ -533,6 +533,31 @@ La Petite IDE — kit « réseaux sociaux » : stickers, tampons, puces cochées
 - `GroupProgress` — Progression par étapes : un segment par élément, groupes séparés, élément courant allongé.
 - `TypingBubble` — Bulle de commentaire : « … » qui s'agite puis le texte s'écrit.
 
+## `labart.tsx`
+Petites illustrations de la série courte du tube jaune (n° 79 et suivantes) : fer (molécule Fe, garde-manger, camion de transferrine), foie (cellules qui lâchent leurs enzymes, canal de la bile bouché par un calcul, os), cholestérol (artère en coupe avec plaque), enzymes (cellule qui éclate). Palette de la marque ; le sang et les cellules restent en rose.
+
+- `FeBall` — Bille de fer « Fe ».
+- `Pantry` — Garde-manger (les réserves de fer) : étagères remplies de billes Fe ; `fill` 0 → 1.
+- `IronTruck` — Camion de transferrine qui roule ; `load` 0 → 1 = billes Fe dans la benne.
+- `LiverCells` — Cellules du foie en nid d'abeille ; `hurt` 0 → 1 : elles se fissurent et lâchent leurs enzymes (points) dans le sang.
+- `BileDuct` — Canal de la bile (vert) ; `block` 0 → 1 : un calcul le bouche, la bile s'arrête et s'accumule.
+- `BoneIcon` — Os long (icône).
+- `Artery` — Artère en coupe ; `plaque` 0 → 1 : le cholestérol se dépose et rétrécit le passage ; `clean` 0 → 1 : la plaque fond.
+- `BurstCell` — Cellule ronde qui éclate (`burst` 0 → 1) et lâche des enzymes (points bleu clair).
+
+## `labshort.tsx`
+Gabarit des vidéos courtes « une analyse de labo » (série courte du tube jaune, n° 79 et suivantes, directives Instagram) : une accroche (titre + tube + illustration + pastilles dès l'image 0), des scènes « notion » toutes construites pareil (titre, explication courte, illustration, carte NORMES, ce qui fait monter / descendre, note) et une fin (lignes cochées + carte « prochaine vidéo »). Chaque élément apparaît au mot (`at`), comme dans les vidéos faites à la main.
+
+- `IconDot` — Rond d'icône + légende.
+- `WordPill` — Grande pastille de mot (le nom de l'analyse), sans cercle trop petit pour un mot long.
+- `LabSeries`
+- `SwayTube` — Tube de la série qui se balance doucement.
+- `LabHook` — Tube de la série qui se balance doucement. */ export const SwayTube: React.FC<{cap: string; size?: number; gel?: boolean}> = ({cap, size = 110, gel = true}) => ( <Live render={(f) => <div style={{transform: `rotate(${Math.sin(f / 9) *…
+- `LabItem` — remplace le tube de gauche (ex. un flacon d'hémoculture) */ lead?: React.ReactNode; }> = ({series, title, art, chips, notes = [], punches = [], shakes = [], extra, tone = LPI.sky, titleSize = 100, lead}) => ( <AbsoluteFill> <ShortBg…
+- `LabNotion` — Une notion : titre (`titleAt`), pastille d'explication, illustration au centre (`art`), carte NORMES, rangée de pastilles (`chips`), note en bas.
+- `LabFin` — Une notion : titre (`titleAt`), pastille d'explication, illustration au centre (`art`), carte NORMES, rangée de pastilles (`chips`), note en bas.
+- `NextTitle` — Le texte « prochaine vidéo » avec un mot en rose.
+
 ## `learn.tsx`
 Briques pédagogiques La Petite IDE : numéro de partie, carte « terme technique », signes.
 
@@ -729,6 +754,31 @@ Modèle de corps humain réutilisable : patient vu de face, de la tête aux hanc
 - `Oximeter` — Saturomètre sur un doigt (doigt au trait, palette uniquement).
 - `Rbc` — Globule rouge (rose) qui porte éventuellement de l'O2 (points bleus).
 
+## `pixel.tsx`
+Fenêtre « console 8-bit » (série « Les plaies » en pixel art, kit de l'agent d'analyse Instagram, 28/11/2026). Principe : la scène se dessine pixel par pixel sur une toile de 160 × 160 « pixels logiques », agrandie × 6 SANS lissage (plus proche voisin) → 960 × 960. Elle s'anime à 12 images / s (saccadé voulu), le reste du reel à 30. Le cadre du reel (titre, compteur, mascotte, phrases clés) reste dans le style habituel du compte. Police pixel : Press Start 2P (SIL OFL, public/fonts/OFL-PressStart2P.txt), tailles 8 ou 16 seulement. Palette de la fenêtre (16 couleurs max) : fond et interface tirés des 5 couleurs de la marque, anatomie et code couleur des plaies en vraies couleurs (exception « couleurs de manuel » validée). Elle peut évoluer d'une vidéo à l'autre (choix laissé à Claude par le propriétaire).
+
+- `PX` — Palette de la fenêtre pixel (16 couleurs).
+- `dither` — true si le pixel (x, y) est « allumé » pour une densité k (0 → 1).
+- `PIXEL_FONT`
+- `px12` — Quantifie une image à 12 i/s (vidéo à 30 i/s : un pas toutes les 2,5 images).
+- `flowPhase` — Intègre une vitesse (0 → 1 par image à 12 i/s) jusqu'à `f` : phase d'un flux (sang qui circule) sans saut.
+- `PixelScreen` — Fenêtre pixel posée dans le reel : cadre bleu nuit arrondi façon console, toile × 6 sans lissage, lignes d'écran.
+- `pxBubble` — Bulle de dialogue rétro en haut de la fenêtre (y 3 → 31) : ligne 1 en blanc, ligne 2 (la question) en rose, 17 caractères max par ligne.
+- `typedAt` — Nombre de caractères affichés : machine à écrire à `speed` caractères par image depuis `t0`.
+- `pxGaugeTone` — Couleur d'une jauge selon la gravité (0 = normal, 1 = danger) : bleu → bleu clair → rose.
+- `pxGauge` — Jauge horizontale avec étiquette au-dessus.
+- `pxArrow` — Petite flèche pleine (3 à 6 px) : `dir` vers où elle pointe.
+- `pxCross` — Grosse croix rose (3 px d'épaisseur) : geste à proscrire.
+
+## `pixelplaies.tsx`
+Scènes pixel de la série « Les plaies » (fenêtre 160 × 160 de pixel.tsx) : patient allongé sur son lit, loupe reliée au sacrum, coupe de la peau RETOURNÉE (patient sur le dos : l'os en haut, la peau en bas contre le matelas). Exactitude : l'escarre commence en profondeur, à l'interface os / muscle, en cône dont la base est contre l'os et la pointe vers la peau ; la peau ne montre une rougeur qu'ensuite (NPIAP : « deep tissue pressure injury », pression et cisaillement à l'interface os-muscle). Jamais de photo de plaie : la lésion est un aplat tramé violacé.
+
+- `SacrumState` — État de la scène « escarre au sacrum » : chaque champ va de 0 à 1 sauf mention.
+- `SACRUM_DEFAULT`
+- `pxPatientBed` — Patient sur le dos, de profil, sur son lit ; `lift` le tourne sur le côté calé par un coussin.
+- `LOUPE` — Patient sur le dos, de profil, sur son lit ; `lift` le tourne sur le côté calé par un coussin.
+- `pxSacrumLoupe` — Coupe de la peau au sacrum, patient sur le dos : os (proéminence du sacrum) en haut, muscle, graisse, derme avec ses petits vaisseaux (artères rouges / veines bleues), épiderme, puis le matelas (ou la main, ou le vide si on décharge).
+
 ## `precautions.tsx`
 Précautions standard : équipements à « enfiler » sur le `Patient` (masque, lunettes, tablier ; même repère 400 × 560), gouttelettes de toux, objets du soin (seringue + capuchon, bassin, douchette, spray, sac de linge, mouchoir + poubelle, montre, bague), icônes des 6 réflexes et leur suivi. Couleurs de la marque uniquement.
 
@@ -810,6 +860,18 @@ Matériel de soins (prise de sang) : aiguille Vacutainer (2 pointes, manchon), c
 - `Arm`
 - `TourniquetStrap` — Garrot seul (260 × 90) : bande élastique et boucle à clip.
 
+## `schema.tsx`
+Schémas de manuel annotés au mot (modèle `Organisation-Corps-Schema`, n° 102) : carte blanche 960 × 1120, légendes (point sur la structure, trait de rappel qui se trace, nom + sous-titre bleu, la dernière pulse en rose), scène type `LevelScene` (pastille de série, compteur n / N, titre, carte), dégradés communs `Defs`, couleurs de manuel `ANAT_C` (exception à la palette validée pour l'anatomie).
+
+- `SchemaSeries`
+- `ANAT_C`
+- `Ann` — Une légende de manuel : point sur la structure (ax, ay), trait qui se trace, texte (tx, ty) + sous-titre.
+- `Label`
+- `Labels` — Toutes les légendes ; la dernière apparue pulse (cercle rose) jusqu'à la suivante.
+- `SchemaCard` — Carte blanche du schéma (960 × 1120) : dessin + légendes, dans le même repère.
+- `LevelScene` — Scène d'un niveau : pastille, compteur, titre, carte du schéma.
+- `Defs` — Définitions de dégradés communes (à poser une fois par svg).
+
 ## `series.tsx`
 Vidéos en série (« partie 1 / 3 ») : carte de la série juste après l'accroche (les parties déjà vues sont cochées, la partie en cours brille, les suivantes attendent avec un cadenas : donne envie de regarder la suite), étiquette de la série sur la ligne du sur-titre, carte « À suivre » de la fin du récap. Couleurs de la marque uniquement.
 
@@ -830,6 +892,19 @@ Vidéos en série (« partie 1 / 3 ») : carte de la série juste après l'accro
 - `Splinter` — Petite écharde (180 × 120) : un doigt avec une minuscule écharde en surface.
 - `Chair` — Chaise (160 × 200).
 - `ErIcon` — Hôpital (urgences) 200 × 180.
+
+## `short.tsx`
+Kit des vidéos courtes « directives Instagram » (série des tubes, n° 65 et suivantes) : fond en aplat, pop au ressort, pastilles, pastille de série visible dès l'image 0, compteur n/N qui avance au mot, carte « prochaine vidéo ». Les n° 65 à 72 ont leurs copies locales ; les nouvelles vidéos importent d'ici.
+
+- `ShortBg`
+- `PINK_BG`
+- `Pop` — Pop au ressort centré sur (x, y), sortie rapide à `to`.
+- `Chip` — Pastille de mot.
+- `Arrow` — Flèche ↑ / ↓ qui rebondit.
+- `SeriesPill` — Pastille de série en haut (dès l'image 0) : bouchon de la couleur du tube + libellé.
+- `Counter` — Compteur « n / total » en haut à droite ; `steps` = [image, n] : il passe à n et rebondit sur le mot du numéro.
+- `NextCard` — Carte bleu nuit « PROCHAINE VIDÉO » (ou autre sur-titre) + titre + illustration à droite.
+- `ZoneGauge` — Jauge horizontale en zones ; `v` dans [min, max], `ticks` = graduations affichées.
 
 ## `splinter.tsx`
 « Comment retirer une écharde ? » : vieille planche vue de dessus (veines, nœud, fente, fibres qui dépassent), écharde plantée dans le grand doigt (partie qui dépasse + partie vue par transparence sous la peau, poussée plus loin, cassée, retirée dans son axe), pince à écharde qui s'ouvre / se ferme. À dessiner dans le repère d'un `BigFinger`. Même rendu soigné que bandage.tsx. Couleurs de la marque, sauf le bois : brun naturel (demandé).

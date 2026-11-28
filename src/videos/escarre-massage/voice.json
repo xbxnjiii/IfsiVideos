@@ -1,0 +1,868 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 53.558,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.05,
+   "end": 6.408
+  },
+  {
+   "id": "regle",
+   "start": 7.344,
+   "end": 11.179
+  },
+  {
+   "id": "pression",
+   "start": 12.142,
+   "end": 25.592
+  },
+  {
+   "id": "massage",
+   "start": 26.54,
+   "end": 36.277
+  },
+  {
+   "id": "soulager",
+   "start": 37.268,
+   "end": 45.956
+  },
+  {
+   "id": "fin",
+   "start": 46.912,
+   "end": 53.2
+  }
+ ],
+ "words": [
+  {
+   "text": "Une",
+   "start": 0.05,
+   "end": 0.182
+  },
+  {
+   "text": "rougeur",
+   "start": 0.182,
+   "end": 0.519
+  },
+  {
+   "text": "au",
+   "start": 0.519,
+   "end": 0.567
+  },
+  {
+   "text": "sacrum :",
+   "start": 0.567,
+   "end": 1.096
+  },
+  {
+   "text": "la",
+   "start": 1.516,
+   "end": 1.588
+  },
+  {
+   "text": "peau",
+   "start": 1.588,
+   "end": 1.757
+  },
+  {
+   "text": "a",
+   "start": 1.757,
+   "end": 1.817
+  },
+  {
+   "text": "l'air",
+   "start": 1.817,
+   "end": 1.985
+  },
+  {
+   "text": "intacte…",
+   "start": 1.985,
+   "end": 2.478
+  },
+  {
+   "text": "mais",
+   "start": 2.778,
+   "end": 2.862
+  },
+  {
+   "text": "près",
+   "start": 2.862,
+   "end": 3.019
+  },
+  {
+   "text": "de",
+   "start": 3.019,
+   "end": 3.115
+  },
+  {
+   "text": "l'os,",
+   "start": 3.115,
+   "end": 3.475
+  },
+  {
+   "text": "une",
+   "start": 3.644,
+   "end": 3.704
+  },
+  {
+   "text": "escarre",
+   "start": 3.704,
+   "end": 4.016
+  },
+  {
+   "text": "commence",
+   "start": 4.016,
+   "end": 4.329
+  },
+  {
+   "text": "déjà.",
+   "start": 4.329,
+   "end": 4.737
+  },
+  {
+   "text": "Et",
+   "start": 5.062,
+   "end": 5.206
+  },
+  {
+   "text": "toi,",
+   "start": 5.206,
+   "end": 5.53
+  },
+  {
+   "text": "tu",
+   "start": 5.843,
+   "end": 5.975
+  },
+  {
+   "text": "masses ?",
+   "start": 5.975,
+   "end": 6.408
+  },
+  {
+   "text": "Surtout",
+   "start": 7.344,
+   "end": 7.773
+  },
+  {
+   "text": "pas !",
+   "start": 7.773,
+   "end": 8.067
+  },
+  {
+   "text": "On",
+   "start": 8.409,
+   "end": 8.507
+  },
+  {
+   "text": "ne",
+   "start": 8.507,
+   "end": 8.593
+  },
+  {
+   "text": "masse",
+   "start": 8.593,
+   "end": 8.777
+  },
+  {
+   "text": "jamais",
+   "start": 8.777,
+   "end": 9.083
+  },
+  {
+   "text": "une",
+   "start": 9.083,
+   "end": 9.193
+  },
+  {
+   "text": "zone",
+   "start": 9.194,
+   "end": 9.39
+  },
+  {
+   "text": "d'appui :",
+   "start": 9.39,
+   "end": 9.941
+  },
+  {
+   "text": "on",
+   "start": 10.272,
+   "end": 10.309
+  },
+  {
+   "text": "supprime",
+   "start": 10.309,
+   "end": 10.689
+  },
+  {
+   "text": "l'appui.",
+   "start": 10.689,
+   "end": 11.179
+  },
+  {
+   "text": "Regarde",
+   "start": 12.142,
+   "end": 12.68
+  },
+  {
+   "text": "sous",
+   "start": 12.68,
+   "end": 12.805
+  },
+  {
+   "text": "la",
+   "start": 12.805,
+   "end": 12.917
+  },
+  {
+   "text": "peau.",
+   "start": 12.917,
+   "end": 13.255
+  },
+  {
+   "text": "Le",
+   "start": 13.617,
+   "end": 13.767
+  },
+  {
+   "text": "patient",
+   "start": 13.767,
+   "end": 14.105
+  },
+  {
+   "text": "est",
+   "start": 14.105,
+   "end": 14.155
+  },
+  {
+   "text": "allongé",
+   "start": 14.155,
+   "end": 14.517
+  },
+  {
+   "text": "sur",
+   "start": 14.517,
+   "end": 14.68
+  },
+  {
+   "text": "le",
+   "start": 14.68,
+   "end": 14.792
+  },
+  {
+   "text": "dos :",
+   "start": 14.792,
+   "end": 15.042
+  },
+  {
+   "text": "son",
+   "start": 15.492,
+   "end": 15.63
+  },
+  {
+   "text": "poids",
+   "start": 15.63,
+   "end": 15.817
+  },
+  {
+   "text": "écrase",
+   "start": 15.817,
+   "end": 16.192
+  },
+  {
+   "text": "les",
+   "start": 16.192,
+   "end": 16.255
+  },
+  {
+   "text": "tissus",
+   "start": 16.255,
+   "end": 16.579
+  },
+  {
+   "text": "entre",
+   "start": 16.579,
+   "end": 16.842
+  },
+  {
+   "text": "l'os",
+   "start": 16.842,
+   "end": 17.117
+  },
+  {
+   "text": "et",
+   "start": 17.117,
+   "end": 17.142
+  },
+  {
+   "text": "le",
+   "start": 17.142,
+   "end": 17.23
+  },
+  {
+   "text": "matelas.",
+   "start": 17.23,
+   "end": 17.667
+  },
+  {
+   "text": "Le",
+   "start": 18.017,
+   "end": 18.242
+  },
+  {
+   "text": "sang",
+   "start": 18.242,
+   "end": 18.417
+  },
+  {
+   "text": "ne",
+   "start": 18.417,
+   "end": 18.505
+  },
+  {
+   "text": "passe",
+   "start": 18.505,
+   "end": 18.742
+  },
+  {
+   "text": "plus,",
+   "start": 18.742,
+   "end": 19.042
+  },
+  {
+   "text": "et",
+   "start": 19.367,
+   "end": 19.392
+  },
+  {
+   "text": "les",
+   "start": 19.392,
+   "end": 19.492
+  },
+  {
+   "text": "cellules",
+   "start": 19.492,
+   "end": 19.829
+  },
+  {
+   "text": "manquent",
+   "start": 19.829,
+   "end": 20.067
+  },
+  {
+   "text": "d'oxygène.",
+   "start": 20.067,
+   "end": 20.817
+  },
+  {
+   "text": "C'est",
+   "start": 21.154,
+   "end": 21.342
+  },
+  {
+   "text": "près",
+   "start": 21.342,
+   "end": 21.492
+  },
+  {
+   "text": "de",
+   "start": 21.492,
+   "end": 21.58
+  },
+  {
+   "text": "l'os",
+   "start": 21.58,
+   "end": 21.779
+  },
+  {
+   "text": "que",
+   "start": 21.779,
+   "end": 21.892
+  },
+  {
+   "text": "ça",
+   "start": 21.892,
+   "end": 22.005
+  },
+  {
+   "text": "s'abîme",
+   "start": 22.005,
+   "end": 22.342
+  },
+  {
+   "text": "en",
+   "start": 22.342,
+   "end": 22.38
+  },
+  {
+   "text": "premier…",
+   "start": 22.38,
+   "end": 22.855
+  },
+  {
+   "text": "la",
+   "start": 23.33,
+   "end": 23.442
+  },
+  {
+   "text": "peau,",
+   "start": 23.442,
+   "end": 23.755
+  },
+  {
+   "text": "elle,",
+   "start": 24.005,
+   "end": 24.305
+  },
+  {
+   "text": "ne",
+   "start": 24.492,
+   "end": 24.58
+  },
+  {
+   "text": "le",
+   "start": 24.58,
+   "end": 24.667
+  },
+  {
+   "text": "montre",
+   "start": 24.667,
+   "end": 24.98
+  },
+  {
+   "text": "qu'en",
+   "start": 24.98,
+   "end": 25.105
+  },
+  {
+   "text": "dernier.",
+   "start": 25.105,
+   "end": 25.592
+  },
+  {
+   "text": "Et",
+   "start": 26.54,
+   "end": 26.69
+  },
+  {
+   "text": "si",
+   "start": 26.69,
+   "end": 26.84
+  },
+  {
+   "text": "tu",
+   "start": 26.84,
+   "end": 26.977
+  },
+  {
+   "text": "masses ?",
+   "start": 26.977,
+   "end": 27.452
+  },
+  {
+   "text": "Tu",
+   "start": 27.827,
+   "end": 27.915
+  },
+  {
+   "text": "frottes…",
+   "start": 27.915,
+   "end": 28.365
+  },
+  {
+   "text": "et",
+   "start": 28.777,
+   "end": 28.802
+  },
+  {
+   "text": "tu",
+   "start": 28.802,
+   "end": 28.94
+  },
+  {
+   "text": "écrases",
+   "start": 28.94,
+   "end": 29.265
+  },
+  {
+   "text": "encore",
+   "start": 29.265,
+   "end": 29.515
+  },
+  {
+   "text": "plus",
+   "start": 29.515,
+   "end": 29.74
+  },
+  {
+   "text": "des",
+   "start": 29.74,
+   "end": 29.827
+  },
+  {
+   "text": "petits",
+   "start": 29.827,
+   "end": 30.102
+  },
+  {
+   "text": "vaisseaux",
+   "start": 30.102,
+   "end": 30.39
+  },
+  {
+   "text": "déjà",
+   "start": 30.39,
+   "end": 30.652
+  },
+  {
+   "text": "abîmés.",
+   "start": 30.652,
+   "end": 31.102
+  },
+  {
+   "text": "Les",
+   "start": 31.44,
+   "end": 31.627
+  },
+  {
+   "text": "massages",
+   "start": 31.627,
+   "end": 32.04
+  },
+  {
+   "text": "et",
+   "start": 32.04,
+   "end": 32.065
+  },
+  {
+   "text": "les",
+   "start": 32.065,
+   "end": 32.14
+  },
+  {
+   "text": "frictions",
+   "start": 32.14,
+   "end": 32.54
+  },
+  {
+   "text": "sont",
+   "start": 32.54,
+   "end": 32.665
+  },
+  {
+   "text": "à",
+   "start": 32.665,
+   "end": 32.777
+  },
+  {
+   "text": "proscrire.",
+   "start": 32.777,
+   "end": 33.49
+  },
+  {
+   "text": "Pareil",
+   "start": 33.828,
+   "end": 34.177
+  },
+  {
+   "text": "pour",
+   "start": 34.177,
+   "end": 34.302
+  },
+  {
+   "text": "les",
+   "start": 34.302,
+   "end": 34.377
+  },
+  {
+   "text": "glaçons,",
+   "start": 34.377,
+   "end": 34.877
+  },
+  {
+   "text": "ou",
+   "start": 35.227,
+   "end": 35.265
+  },
+  {
+   "text": "l'air",
+   "start": 35.265,
+   "end": 35.465
+  },
+  {
+   "text": "chaud",
+   "start": 35.465,
+   "end": 35.602
+  },
+  {
+   "text": "du",
+   "start": 35.602,
+   "end": 35.715
+  },
+  {
+   "text": "sèche-cheveux.",
+   "start": 35.715,
+   "end": 36.277
+  },
+  {
+   "text": "Le",
+   "start": 37.268,
+   "end": 37.393
+  },
+  {
+   "text": "bon",
+   "start": 37.393,
+   "end": 37.518
+  },
+  {
+   "text": "réflexe :",
+   "start": 37.518,
+   "end": 38.155
+  },
+  {
+   "text": "on",
+   "start": 38.493,
+   "end": 38.518
+  },
+  {
+   "text": "change",
+   "start": 38.518,
+   "end": 38.831
+  },
+  {
+   "text": "le",
+   "start": 38.831,
+   "end": 38.918
+  },
+  {
+   "text": "patient",
+   "start": 38.918,
+   "end": 39.23
+  },
+  {
+   "text": "de",
+   "start": 39.23,
+   "end": 39.318
+  },
+  {
+   "text": "position,",
+   "start": 39.318,
+   "end": 39.918
+  },
+  {
+   "text": "et",
+   "start": 40.268,
+   "end": 40.331
+  },
+  {
+   "text": "on",
+   "start": 40.331,
+   "end": 40.38
+  },
+  {
+   "text": "l'installe",
+   "start": 40.38,
+   "end": 40.843
+  },
+  {
+   "text": "sur",
+   "start": 40.843,
+   "end": 41.018
+  },
+  {
+   "text": "un",
+   "start": 41.018,
+   "end": 41.043
+  },
+  {
+   "text": "matelas",
+   "start": 41.043,
+   "end": 41.331
+  },
+  {
+   "text": "adapté.",
+   "start": 41.331,
+   "end": 41.893
+  },
+  {
+   "text": "L'appui",
+   "start": 42.318,
+   "end": 42.63
+  },
+  {
+   "text": "disparaît,",
+   "start": 42.63,
+   "end": 43.23
+  },
+  {
+   "text": "le",
+   "start": 43.518,
+   "end": 43.605
+  },
+  {
+   "text": "sang",
+   "start": 43.605,
+   "end": 43.78
+  },
+  {
+   "text": "revient…",
+   "start": 43.78,
+   "end": 44.23
+  },
+  {
+   "text": "et",
+   "start": 44.568,
+   "end": 44.643
+  },
+  {
+   "text": "les",
+   "start": 44.643,
+   "end": 44.718
+  },
+  {
+   "text": "tissus",
+   "start": 44.718,
+   "end": 45.043
+  },
+  {
+   "text": "respirent",
+   "start": 45.043,
+   "end": 45.443
+  },
+  {
+   "text": "de",
+   "start": 45.443,
+   "end": 45.531
+  },
+  {
+   "text": "nouveau.",
+   "start": 45.531,
+   "end": 45.956
+  },
+  {
+   "text": "Et",
+   "start": 46.912,
+   "end": 47.05
+  },
+  {
+   "text": "pour",
+   "start": 47.05,
+   "end": 47.212
+  },
+  {
+   "text": "savoir",
+   "start": 47.212,
+   "end": 47.512
+  },
+  {
+   "text": "si",
+   "start": 47.512,
+   "end": 47.612
+  },
+  {
+   "text": "cette",
+   "start": 47.612,
+   "end": 47.8
+  },
+  {
+   "text": "rougeur",
+   "start": 47.8,
+   "end": 48.175
+  },
+  {
+   "text": "est",
+   "start": 48.175,
+   "end": 48.212
+  },
+  {
+   "text": "déjà",
+   "start": 48.212,
+   "end": 48.45
+  },
+  {
+   "text": "une",
+   "start": 48.45,
+   "end": 48.537
+  },
+  {
+   "text": "escarre…",
+   "start": 48.537,
+   "end": 48.987
+  },
+  {
+   "text": "il",
+   "start": 49.425,
+   "end": 49.5
+  },
+  {
+   "text": "existe",
+   "start": 49.5,
+   "end": 49.849
+  },
+  {
+   "text": "un",
+   "start": 49.849,
+   "end": 49.925
+  },
+  {
+   "text": "test,",
+   "start": 49.925,
+   "end": 50.362
+  },
+  {
+   "text": "avec",
+   "start": 50.55,
+   "end": 50.762
+  },
+  {
+   "text": "un",
+   "start": 50.762,
+   "end": 50.837
+  },
+  {
+   "text": "seul",
+   "start": 50.837,
+   "end": 51.05
+  },
+  {
+   "text": "doigt.",
+   "start": 51.05,
+   "end": 51.387
+  },
+  {
+   "text": "On",
+   "start": 51.737,
+   "end": 51.837
+  },
+  {
+   "text": "le",
+   "start": 51.837,
+   "end": 51.937
+  },
+  {
+   "text": "voit",
+   "start": 51.937,
+   "end": 52.125
+  },
+  {
+   "text": "dans",
+   "start": 52.125,
+   "end": 52.212
+  },
+  {
+   "text": "la",
+   "start": 52.212,
+   "end": 52.3
+  },
+  {
+   "text": "prochaine",
+   "start": 52.3,
+   "end": 52.7
+  },
+  {
+   "text": "vidéo !",
+   "start": 52.7,
+   "end": 53.2
+  }
+ ]
+}

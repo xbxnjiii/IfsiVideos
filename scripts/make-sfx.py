@@ -123,7 +123,46 @@ def stamp(dur=0.25):
     return out
 
 
+def blip(dur=0.07, f0=880.0, f1=1320.0):
+    """Bip rétro 8-bit (onde carrée) : étape du compteur ou lettre de la bulle pixel."""
+    out = []
+    for i in range(n(dur)):
+        t = i / SR
+        f = f0 if t < dur / 2 else f1
+        sq = 1.0 if math.sin(2 * math.pi * f * t) >= 0 else -1.0
+        out.append(0.5 * sq * min(1.0, (dur - t) * 60))
+    return out
+
+
+def blip_down(dur=0.22):
+    """Jingle rétro descendant (alerte) : trois notes carrées."""
+    out = []
+    for i in range(n(dur)):
+        t = i / SR
+        f = (660.0, 494.0, 330.0)[min(2, int(t / (dur / 3)))]
+        sq = 1.0 if math.sin(2 * math.pi * f * t) >= 0 else -1.0
+        out.append(0.5 * sq * min(1.0, (dur - t) * 40))
+    return out
+
+
+def blip_up(dur=0.22):
+    """Jingle rétro montant (réussite) : trois notes carrées."""
+    out = []
+    for i in range(n(dur)):
+        t = i / SR
+        f = (523.0, 659.0, 988.0)[min(2, int(t / (dur / 3)))]
+        sq = 1.0 if math.sin(2 * math.pi * f * t) >= 0 else -1.0
+        out.append(0.5 * sq * min(1.0, (dur - t) * 40))
+    return out
+
+
 if __name__ == "__main__":
+    import sys
+    if sys.argv[1:] == ["--retro"]:
+        write("blip.wav", blip(), gain=0.5)
+        write("blip-down.wav", blip_down(), gain=0.5)
+        write("blip-up.wav", blip_up(), gain=0.5)
+        raise SystemExit(0)
     write("whoosh.wav", whoosh())
     write("pop.wav", pop())
     write("tick.wav", tick())

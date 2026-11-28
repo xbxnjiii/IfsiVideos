@@ -115,6 +115,7 @@ pas de logiciel de montage, pas de banque d'images.
 | 102 | L'anatomie : l'organisation du corps humain, **version schéma annoté** (schémas de manuel dessinés, légendes au mot) ; voix gratuite, directives Instagram | `Organisation-Corps-Schema` | [voix/102-organisation-corps-schema.script.json](voix/102-organisation-corps-schema.script.json) | — |
 | 103 | L'anatomie : la cellule (unité vivante, 3 parties, organites, mitose) ; voix gratuite, directives Instagram | `La-Cellule` | [voix/103-la-cellule.script.json](voix/103-la-cellule.script.json) | — |
 | 104 | L'anatomie : la cellule, **schéma annoté** (15 structures légendées au mot) ; voix gratuite, directives Instagram | `La-Cellule-Schema` | [voix/104-la-cellule-schema.script.json](voix/104-la-cellule-schema.script.json) | — |
+| 105 | Les plaies 1/10 (**fenêtre pixel 8-bit**, pilote) : escarre, tu masses ? (ça part de l'os, masser écrase, on soulage l'appui ; boucle) ; voix gratuite | `Escarre-Massage` | [voix/105-escarre-massage.script.json](voix/105-escarre-massage.script.json) | — |
 
 ## Utilisation
 

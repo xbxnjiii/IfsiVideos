@@ -1,0 +1,32 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Une rougeur au sacrum : la peau a l'air intacte… mais près de l'os, une escarre commence déjà. Et toi, tu masses ?"
+ },
+ {
+  "id": "regle",
+  "rate": "+2%",
+  "text": "Surtout pas ! On ne masse jamais une zone d'appui : on supprime l'appui."
+ },
+ {
+  "id": "pression",
+  "rate": "+0%",
+  "text": "Regarde sous la peau. Le patient est allongé sur le dos : son poids écrase les tissus entre l'os et le matelas. Le sang ne passe plus, et les cellules manquent d'oxygène. C'est près de l'os que ça s'abîme en premier… la peau, elle, ne le montre qu'en dernier."
+ },
+ {
+  "id": "massage",
+  "rate": "+0%",
+  "text": "Et si tu masses ? Tu frottes… et tu écrases encore plus des petits vaisseaux déjà abîmés. Les massages et les frictions sont à proscrire. Pareil pour les glaçons, ou l'air chaud du sèche-cheveux."
+ },
+ {
+  "id": "soulager",
+  "rate": "+0%",
+  "text": "Le bon réflexe : on change le patient de position, et on l'installe sur un matelas adapté. L'appui disparaît, le sang revient… et les tissus respirent de nouveau."
+ },
+ {
+  "id": "fin",
+  "rate": "+0%",
+  "text": "Et pour savoir si cette rougeur est déjà une escarre… il existe un test, avec un seul doigt. On le voit dans la prochaine vidéo !"
+ }
+]

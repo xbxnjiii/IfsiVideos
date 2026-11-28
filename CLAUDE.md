@@ -848,6 +848,26 @@ script), « en France » / « le 15 (ou le numéro d'urgence de ton pays) ». Ca
   « autour de temps » → « autour de un virgule zéro ». `BloodDrop` de `nose.tsx` n'est qu'un `<path>` : l'envelopper dans un
   `<svg>` (`Drop` local) ; les flèches « ↓ ↑ » dans une légende d'icône ne s'affichent pas : écrire « trop bas / trop haut ».
 
+- **Série « Les plaies » en fenêtre pixel 8-bit** (28 novembre 2026, kit `kit_pixel_plaies` de l'agent d'analyse Instagram :
+  guide + maquettes, revu par Claude ; plan de 10 vidéos **validé** : 1 escarre tu masses ? · 2 le test du doigt · 3 noir /
+  jaune / rouge / rose · 4 les 4 stades · 5 pied diabétique · 6 ulcère veineux / artériel · 7 tétanos · 8 cicatrisation ·
+  9 plaie chronique (4 – 6 semaines) · 10 Braden). Les vidéos plaies précédentes (n° 31 à 37, `Plaies-1/2/3`) n'ont
+  **jamais été publiées** (elles ne convenaient pas) : les sujets sont repris. Choix du propriétaire : la palette de la
+  fenêtre peut évoluer (laissée à Claude : fond et interface en bleu nuit / bleu / bleu clair / rose de la marque,
+  anatomie et code couleur des plaies en vraies couleurs, 16 couleurs max) ; **pas de sous-titres** mais une phrase clé
+  au mot sous la fenêtre ; **pas d'appel à l'action** ; marge `SAFE_SCALE` gardée. Cadre habituel autour (titre, compteur
+  0/N, pastille « LES PLAIES · n/10 », mascotte normale jamais pixelisée), la dernière image rejoint la première (boucle :
+  scène `end` = `Freeze` de l'image 0, `episodeTimeline(…, {minTotal: 0, tail: 0.7, endCard: 0.8})`). Briques
+  `src/brand/pixel.tsx` (`PixelScreen` : toile 160 × 160 dessinée au pixel dans un canvas, × 6 sans lissage, 12 i/s,
+  lignes d'écran ; `Px` (rect, disk, ring, line, texte Press Start 2P binarisé), `PX` palette, `dither`, `pxBubble`
+  (17 caractères max par ligne), `typedAt`, `pxGauge`, `pxArrow`, `pxCross`, `flowPhase`) et `src/brand/pixelplaies.tsx`
+  (`pxPatientBed`, `pxSacrumLoupe` : coupe retournée, lésion en cône contre l'os, vaisseaux qui circulent / pincés /
+  éclatent, main, doigt, décharge, matelas à air). Police `public/fonts/PressStart2P-Regular.ttf` (OFL). Bips rétro
+  `blip`, `blip-down`, `blip-up` (`python3 scripts/make-sfx.py --retro`). Pilote : `Escarre-Massage` (n° 105, ≈ 55 s, voix
+  gratuite, accroche B « la peau a l'air intacte… mais près de l'os » choisie par Claude). Storyboard
+  `docs/lpi/storyboard-escarre-massage.md`. PyAV 19 casse faster-whisper (`metadata_errors`) : `pip install
+  --break-system-packages --only-binary=:all: "av>=12,<16"`.
+
 ## Voix ElevenLabs « Laura » (choisie par le propriétaire pour les nouvelles vidéos)
 
 - Connecteur ElevenLabs : voix `Laura` (`MmafIMKg28Wr0yMh8CEB`), modèle `eleven_v4` ; l'ancien flow `6O4tHaBowSG52722wkdC` n'est plus accessible

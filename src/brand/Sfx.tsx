@@ -2,6 +2,8 @@ import React, {createContext, useContext} from 'react';
 import {Html5Audio, Sequence, staticFile} from 'remotion';
 
 export type SfxName = 'whoosh' | 'pop' | 'tick' | 'impact' | 'ding' | 'buzz' | 'heartbeat' | 'stamp' | 'hop' | 'run' | 'drumroll'
+	// bips rétro 8-bit (scripts/make-sfx.py --retro) pour la fenêtre pixel (pixel.tsx)
+	| 'blip' | 'blip-down' | 'blip-up'
 	// vrais enregistrements (La Sonothèque, scripts/import-sfx.py, public/sfx/SOURCES.md)
 	| 'cough' | 'cough-1' | 'cough-2' | 'gasp' | 'puff' | 'lighter' | 'smoke' | 'blow' | 'sigh' | 'stairs'
 	| 'dishes' | 'tap' | 'glass' | 'heart' | 'dtmf-1' | 'dtmf-5' | 'ring'
@@ -9,6 +11,9 @@ export type SfxName = 'whoosh' | 'pop' | 'tick' | 'impact' | 'ding' | 'buzz' | '
 
 const VOLUME: Record<SfxName, number> = {
 	whoosh: 0.35,
+	blip: 0.12,
+	'blip-down': 0.16,
+	'blip-up': 0.16,
 	pop: 0.4,
 	tick: 0.35,
 	impact: 0.7,
