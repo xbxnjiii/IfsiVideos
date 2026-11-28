@@ -875,7 +875,16 @@ script), « en France » / « le 15 (ou le numéro d'urgence de ton pays) ». Ca
   étiquettes à trait de rappel au mot (`pxLabel`), pastille de mode (`pxTag`, 12 caractères max), compteur pixel
   (`pxCounter`), jauges qui n'apparaissent qu'au mot qui les nomme ; transitions = fondu (même monde d'une scène à
   l'autre) ; mascotte en haut à gauche sur l'os ; phrase clé de la marque en bas ; la fin recule sur le plan large de
-  l'image 0 (boucle). Storyboard
+  l'image 0 (boucle).
+  **Retouche de l'ouverture** (demandée : « plan large plus détaillé, transition vers l'escarre plus rapide et plus
+  détaillée » ; « le plan large garde les couleurs d'habitude, et quand on rentre dans le corps on passe au thème
+  sombre ») : plan large **aux couleurs claires de la marque** (`pxBedScene` : moniteur dont la courbe défile,
+  perfusion qui goutte, nuages, rideau rose, table de chevet, carrelage, chaussons ; pas de lignes d'écran : prop `scan`
+  de `PixelFull`) ; dès « sacrum » (≈ 0,7 s) poussée rapide jusqu'au **gros plan clair de la peau contre le matelas**
+  (`pxHipClose` : blouse relevée, couverture soulevée par une main gantée, rougeur au point d'appui, l'os deviné en
+  pointillés) ; sur « mais », **cercle de scanner** qui part du point d'appui et ouvre la coupe (`pxReveal`) : on entre
+  dans le corps, le thème devient sombre. La fin fait le chemin inverse (la coupe se referme, recul sur le plan large).
+  Fond d'`Episode` = `LPI.paper`. Storyboard
   `docs/lpi/storyboard-escarre-massage.md`. PyAV 19 casse faster-whisper (`metadata_errors`) : `pip install
   --break-system-packages --only-binary=:all: "av>=12,<16"`.
 

@@ -215,7 +215,7 @@ export const PixelScreen: React.FC<{draw: (g: Px, f: number) => void; x?: number
  * Écran pixel plein cadre (format « 8bit », sans fenêtre autour) : toile `w` × `h` logiques agrandie × `scale` sans
  * lissage. `zoom` = poussée de caméra (s ≥ 1) vers le point logique (x, y) : les pixels grossissent, toujours nets.
  */
-export const PixelFull: React.FC<{draw: (g: Px, f: number) => void; hud?: (g: Px, f: number) => void; w?: number; h?: number; scale?: number; zoom?: {s: number; x: number; y: number}}> = ({draw, hud, w = 180, h = 320, scale = 6, zoom}) => {
+export const PixelFull: React.FC<{draw: (g: Px, f: number) => void; hud?: (g: Px, f: number) => void; w?: number; h?: number; scale?: number; zoom?: {s: number; x: number; y: number}; scan?: boolean}> = ({draw, hud, w = 180, h = 320, scale = 6, zoom, scan = true}) => {
 	const frame = useCurrentFrame();
 	const f = px12(frame);
 	const ref = useRef<HTMLCanvasElement>(null);
@@ -252,7 +252,7 @@ export const PixelFull: React.FC<{draw: (g: Px, f: number) => void; hud?: (g: Px
 				style={{width: w * scale, height: h * scale, imageRendering: 'pixelated', display: 'block', transformOrigin: z ? `${z.x * scale}px ${z.y * scale}px` : undefined, transform: z ? `scale(${z.s})` : undefined}}
 			/>
 			<canvas ref={hudRef} width={w} height={h} style={{position: 'absolute', left: 0, top: 0, width: w * scale, height: h * scale, imageRendering: 'pixelated'}} />
-			<div style={{position: 'absolute', inset: 0, background: `repeating-linear-gradient(to bottom, transparent 0 ${3 * scale}px, ${alpha(LPI.navy, 0.1)} ${3 * scale}px ${4 * scale}px)`, pointerEvents: 'none'}} />
+			{scan ? <div style={{position: 'absolute', inset: 0, background: `repeating-linear-gradient(to bottom, transparent 0 ${3 * scale}px, ${alpha(LPI.navy, 0.1)} ${3 * scale}px ${4 * scale}px)`, pointerEvents: 'none'}} /> : null}
 		</div>
 	);
 };

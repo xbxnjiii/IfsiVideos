@@ -3,7 +3,7 @@
 // puis la dernière image rejoint la première (boucle). Storyboard : docs/lpi/storyboard-escarre-massage.md.
 import React from 'react';
 import {Episode, EpisodeTransition} from '../../brand/episode';
-import {PX} from '../../brand/pixel';
+import {LPI} from '../../brand/theme';
 import {fade} from '@remotion/transitions/fade';
 import {MASCOT} from './mascot';
 import {Fin, Hook, Loop, Massage, Pression, Regle, Soulager} from './Scenes';
@@ -18,5 +18,5 @@ const T: EpisodeTransition = {p: fade(), sfx: 'blip'};
 const TRANSITIONS: Record<Exclude<SceneId, 'intro'>, EpisodeTransition> = {regle: T, pression: T, massage: T, soulager: T, fin: T, end: T};
 
 export const EscarreMassage: React.FC<EscarreMassageProps> = ({voice, sfx}) => (
-	<Episode tl={TL} ids={SCENE_IDS} scenes={SCENES} transitions={TRANSITIONS} mascot={MASCOT} progress={false} bg={PX.bg} voice={voice ? 'voix/escarre-massage/voix.wav' : null} sfx={sfx} />
+	<Episode tl={TL} ids={SCENE_IDS} scenes={SCENES} transitions={TRANSITIONS} mascot={MASCOT} progress={false} bg={LPI.paper} voice={voice ? 'voix/escarre-massage/voix.wav' : null} sfx={sfx} />
 );

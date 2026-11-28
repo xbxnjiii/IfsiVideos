@@ -14,14 +14,15 @@ import React from 'react';
 import {AbsoluteFill, Freeze, interpolate, useCurrentFrame} from 'remotion';
 import {ease, Note} from '../../brand/bold';
 import {Stamp} from '../../brand/kit';
-import {flowPhase, PixelFull, Px, PX, pxBubble, pxCounter, pxCross, pxGauge, pxLabel, pxTag, typedAt} from '../../brand/pixel';
-import {BED_SACRUM, pxBedScene, pxSacrumSection, SEC, SEC_D, SECTION_DEFAULT, SectionState, secY} from '../../brand/pixelplaies';
+import {flowPhase, PixelFull, Px as PxC, PX, pxBubble, pxCounter, pxCross, pxGauge, pxLabel, pxTag, typedAt} from '../../brand/pixel';
+import {BED_SACRUM, pxBedScene, pxHipClose, pxReveal, pxSacrumSection, SEC, SEC_D, SECTION_DEFAULT, SectionState, secY} from '../../brand/pixelplaies';
 import {NextCard} from '../../brand/short';
 import {Sfx} from '../../brand/Sfx';
 import {LPI} from '../../brand/theme';
 import {clamp} from '../../brand/ui';
 import {at} from './timeline';
 
+type Px = PxC;
 const TOTAL = 3;
 const NOTE_Y = 1792;
 
@@ -53,54 +54,81 @@ const label = (g: Px, f: number, t0: number, t1: number, text: string, tx: numbe
 	if (during(f, t0, t1)) pxLabel(g, text, tx, ty, ax, ay, typedAt(f, t0, 1.2), tone);
 };
 
-/** Poussée de caméra : du plan large au sacrum avant `t`, puis la coupe se pose (léger zoom qui se relâche). */
-const pushIn = (frame: number, t: number) => {
-	if (frame < t) return {wide: true, zoom: {s: 1 + 5 * interpolate(frame, [t - 12, t], [0, 1], {...clamp, easing: (x: number) => x * x * x}), ...BED_SACRUM}};
-	return {wide: false, zoom: {s: 1 + 0.8 * interpolate(frame, [t, t + 10], [1, 0], ease), x: SEC.cx, y: 190}};
+/** Coupe dessinée à part (pour le passage « scanner » dehors → dedans). */
+const sectionLayer = (st: SectionState) => {
+	const o = new PxC(180, 320);
+	o.fill(PX.bg);
+	pxSacrumSection(o, st);
+	return o;
 };
 
 /* ═══════════════════════════════ ACCROCHE ═══════════════════════════════ */
+// Plans : 1) plan large clair (chambre, réticule sur le sacrum) ; 2) dès « sacrum », poussée rapide jusqu'au gros plan
+// de la peau contre le matelas (toujours clair), on devine l'os en pointillés ; 3) sur « mais », le cercle du scanner
+// part du point d'appui et ouvre la coupe : on entre dans le corps, le thème devient sombre.
 export const Hook: React.FC = () => {
 	const frame = useCurrentFrame();
+	const SAC = at('intro', 'sacrum');
+	const PEAU = at('intro', 'peau');
 	const INTACTE = at('intro', 'intacte');
+	const MAIS = at('intro', 'mais');
 	const OS = at('intro', "l'os");
 	const ESC = at('intro', 'escarre');
 	const MASSES = at('intro', 'masses');
-	const cam = pushIn(frame, OS);
+	const CLOSE = SAC + 8; // fin de la poussée : gros plan
+	const IN = MAIS + 12; // fin du scanner : coupe
+	const plan = frame < CLOSE ? 'wide' : frame < MAIS ? 'close' : frame < IN ? 'reveal' : 'section';
+	const zoom =
+		plan === 'wide'
+			? {s: 1 + 6 * interpolate(frame, [SAC - 2, CLOSE], [0, 1], {...clamp, easing: (x: number) => x * x * x}), ...BED_SACRUM}
+			: plan === 'close'
+				? {s: 1 + 0.6 * interpolate(frame, [CLOSE, CLOSE + 8], [1, 0], ease), x: SEC.cx, y: 270}
+				: undefined;
+	const sec = (f: number): SectionState => {
+		const hand = ramp(f, MASSES, MASSES + 8);
+		return {...SECTION_DEFAULT, f, pulse: true, mattress: hand === 0, hand, shear: hand > 0 ? Math.round(Math.sin((f - MASSES) / 2.5) * 8) : 0};
+	};
 	return (
 		<AbsoluteFill>
 			<PixelFull
-				zoom={cam.zoom}
-				hud={(g, f) => {
-					if (cam.wide) pxBubble(g, 'ROUGEUR AU SACRUM', 'TU MASSES ?', Infinity, 30, 13);
-					else pxTag(g, 'SOUS LA PEAU');
+				zoom={zoom}
+				scan={plan === 'section' || plan === 'reveal'}
+				hud={(g) => {
+					if (plan === 'wide') pxBubble(g, 'ROUGEUR AU SACRUM', 'TU MASSES ?', Infinity, 30, 13);
+					else pxTag(g, plan === 'close' ? 'AU SACRUM' : 'SOUS LA PEAU', plan === 'reveal');
 					pxCounter(g, 0, TOTAL);
 				}}
 				draw={(g, f) => {
-					if (cam.wide) {
+					if (plan === 'wide') {
 						pxBedScene(g, f);
-						label(g, f, INTACTE, OS - 12, 'LA PEAU ?\nJUSTE ROUGE', 70, 270, BED_SACRUM.x, BED_SACRUM.y + 2);
 						return;
 					}
-					const hand = ramp(f, MASSES, MASSES + 8);
-					const s: SectionState = {...SECTION_DEFAULT, f, pulse: true, mattress: hand === 0, hand, shear: hand > 0 ? Math.round(Math.sin((f - MASSES) / 2.5) * 8) : 0};
+					if (plan === 'close' || plan === 'reveal') {
+						pxHipClose(g, f, ramp(f, INTACTE + 6, MAIS));
+						if (plan === 'close') label(g, f, PEAU, MAIS, 'LA PEAU ?\nJUSTE ROUGE', 22, 150, SEC.cx - 10, 254);
+						if (plan === 'reveal') pxReveal(g, sectionLayer(sec(f)), ramp(f, MAIS, IN));
+						return;
+					}
+					const s = sec(f);
 					pxSacrumSection(g, s);
 					label(g, f, OS + 10, ESC, 'OS', 6, 26, 40, 70);
 					label(g, f, ESC, MASSES, "L'ESCARRE\nCOMMENCE ICI", 6, 176, 62, secY(62, 0.12, s), PX.pink);
-					if (hand > 0) g.textS('?', SEC.cx + 56, secY(SEC.cx, 1, s) + 8, PX.pink, 16);
+					if (s.hand > 0) g.textS('?', SEC.cx + 56, secY(SEC.cx, 1, s) + 8, PX.pink, 16);
 				}}
 			/>
-			<Note at={INTACTE - 2} to={OS - 4} y={NOTE_Y} size={44}>
+			<Note at={INTACTE - 2} to={MAIS - 4} y={NOTE_Y} size={44}>
 				la peau a l'air intacte…
 			</Note>
-			<Note at={OS - 2} to={MASSES - 4} y={NOTE_Y} size={44} tone={LPI.pink}>
+			<Note at={MAIS - 2} to={MASSES - 4} y={NOTE_Y} size={44} tone={LPI.pink}>
 				…mais ça commence près de l'os
 			</Note>
 			<Note at={MASSES - 2} y={NOTE_Y} size={50}>
 				et toi, tu masses ?
 			</Note>
+			<Sfx name="whoosh" at={SAC - 2} volume={0.25} />
+			<Sfx name="blip" at={PEAU} />
 			<Sfx name="blip" at={INTACTE} />
-			<Sfx name="whoosh" at={OS - 10} volume={0.25} />
+			<Sfx name="blip-down" at={MAIS} />
 			<Sfx name="blip-down" at={ESC} />
 			<Sfx name="blip" at={MASSES} />
 		</AbsoluteFill>
@@ -370,14 +398,17 @@ export const Fin: React.FC = () => {
 	const DOIGT = at('fin', 'doigt');
 	const PROCH = at('fin', 'prochaine');
 	const VIDEO = at('fin', 'video');
-	// recul final jusqu'au plan large de l'image 0 (la vidéo boucle)
-	const OUT = VIDEO + 14;
-	const wide = frame >= OUT;
-	const zoom = wide ? {s: 1 + 5 * interpolate(frame, [OUT, OUT + 10], [1, 0], {...clamp, easing: (x: number) => 1 - (1 - x) ** 3}), ...BED_SACRUM} : undefined;
+	// recul final : la coupe se referme (scanner à l'envers) sur le gros plan clair, puis plan large de l'image 0 (boucle)
+	const OUT = VIDEO + 6;
+	const WIDE = OUT + 8;
+	const wide = frame >= WIDE;
+	const closing = frame >= OUT && !wide;
+	const zoom = wide ? {s: 1 + 6 * interpolate(frame, [WIDE, WIDE + 10], [1, 0], {...clamp, easing: (x: number) => 1 - (1 - x) ** 3}), ...BED_SACRUM} : undefined;
 	return (
 		<AbsoluteFill>
 			<PixelFull
 				zoom={zoom}
+				scan={!wide && !closing}
 				hud={(g, f) => {
 					if (wide) {
 						pxBubble(g, 'ROUGEUR AU SACRUM', 'TU MASSES ?', Infinity, 30, 13);
@@ -393,6 +424,11 @@ export const Fin: React.FC = () => {
 						return;
 					}
 					const s: SectionState = {...SECTION_DEFAULT, f, comp: 0.12, gap: 1, air: true, phase: flowPhase(() => 0.9, f), o2: 0.9, lesionK: 0.35, rougeur: 1, finger: ramp(f, DOIGT - 4, DOIGT + 10)};
+					if (closing) {
+						pxHipClose(g, f, 1);
+						pxReveal(g, sectionLayer(s), 1 - ramp(f, OUT, WIDE));
+						return;
+					}
 					pxSacrumSection(g, s);
 					if (during(f, ROUGEUR, DOIGT) && Math.floor(f / 5) % 2 === 0) g.textS('?', SEC.cx + 30, secY(SEC.cx + 30, 0.9, s) - 16, PX.pink, 16);
 					label(g, f, DOIGT, 1e9, 'LE TEST\nDU DOIGT', 112, 200, SEC.cx + 8, secY(SEC.cx + 8, 0.97, s));

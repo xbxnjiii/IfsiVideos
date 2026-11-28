@@ -779,8 +779,10 @@ Scènes pixel plein cadre de la série « Les plaies » (toile 180 × 320 de pix
 
 - `PX_REAL` — Couleurs « mise en situation » (vraies couleurs) en plus de la palette de la fenêtre.
 - `BED_SACRUM` — Point du sacrum dans le plan large (pour le réticule et la poussée de caméra).
-- `pxBedScene` — Plan large serré : patient allongé sur le dos, de profil, de la tête aux genoux, dans sa chambre (la caméra est proche : on voit surtout le corps contre le matelas).
-- `SectionState` — Plan large serré : patient allongé sur le dos, de profil, de la tête aux genoux, dans sa chambre (la caméra est proche : on voit surtout le corps contre le matelas).
+- `pxBedScene` — Plan large serré, aux couleurs habituelles du compte (fond clair) : chambre d'hôpital détaillée (moniteur dont la courbe défile, perfusion, fenêtre et rideau, table de chevet, carrelage), patient allongé sur le dos, de profil.
+- `pxHipClose` — Gros plan « dehors » au sacrum (même repère que la coupe : la peau contre le matelas en bas) : blouse relevée, peau du bas du dos, matelas, rougeur au point d'appui ; `xray` (0 → 1) fait deviner l'os en pointillés à travers la peau.
+- `pxReveal` — Passage « dehors → dedans » : un cercle de scanner part du point d'appui et grandit ; à l'intérieur, la coupe (thème sombre), à l'extérieur le gros plan clair ; bord tramé et anneau rose.
+- `SectionState` — Passage « dehors → dedans » : un cercle de scanner part du point d'appui et grandit ; à l'intérieur, la coupe (thème sombre), à l'extérieur le gros plan clair ; bord tramé et anneau rose.
 - `SECTION_DEFAULT`
 - `SEC` — Centre de la proéminence osseuse (sacrum) et repères de la coupe.
 - `secBone` — Repères pour poser les étiquettes : bas de l'os, surface de la peau, et y d'une profondeur d (0 = os, 1 = peau).

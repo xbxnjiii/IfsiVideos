@@ -9,6 +9,7 @@
 // Exactitude : l'escarre commence en profondeur à l'interface os / muscle (NPIAP, lésion des tissus profonds) et la
 // peau ne montre qu'ensuite une rougeur. Jamais de photo de plaie : aplats tramés stylisés.
 import {dither, PX, Px, pxArrow} from './pixel';
+import {LPI} from './theme';
 
 /** Couleurs « mise en situation » (vraies couleurs) en plus de la palette de la fenêtre. */
 export const PX_REAL = {hair: '#5A3E2B'} as const;
@@ -38,63 +39,226 @@ const cellEdge = (x: number, y: number, cell: number, seed: number) => {
 /** Point du sacrum dans le plan large (pour le réticule et la poussée de caméra). */
 export const BED_SACRUM = {x: 104, y: 205};
 
+/** Couleurs du plan large et du gros plan « dehors » : celles du format habituel (fond clair de la marque). */
+const OUT = {wall: LPI.paper, panel: LPI.sky, line: LPI.navy, blue: LPI.blue, pink: LPI.pink, sheet: LPI.paper};
+
 /**
- * Plan large serré : patient allongé sur le dos, de profil, de la tête aux genoux, dans sa chambre (la caméra est
- * proche : on voit surtout le corps contre le matelas). `ring` = réticule pointillé qui pulse sur le sacrum.
+ * Plan large serré, aux couleurs habituelles du compte (fond clair) : chambre d'hôpital détaillée (moniteur dont la
+ * courbe défile, perfusion, fenêtre et rideau, table de chevet, carrelage), patient allongé sur le dos, de profil.
+ * `ring` = réticule pointillé rose qui pulse sur le sacrum.
  */
 export const pxBedScene = (g: Px, f: number, ring = 1) => {
-	// mur à lattes, fenêtre, sol
-	g.rect(0, 0, 180, 262, PX.panel);
-	for (let y = 10; y < 262; y += 20) g.rect(0, y, 180, 1, PX.bg);
-	g.rect(110, 70, 62, 74, PX.line);
-	g.rect(114, 74, 54, 66, PX.sky);
-	g.rect(139, 74, 3, 66, PX.line);
-	g.rect(114, 105, 54, 3, PX.line);
-	g.rect(118, 78, 12, 3, PX.text);
-	g.rect(0, 262, 180, 58, PX.bg);
-	g.rect(0, 260, 180, 3, PX.line);
-	// matelas épais, drap, sommier, pieds
-	g.rect(0, 205, 180, 24, PX.sky);
-	g.rect(0, 205, 180, 2, PX.text);
-	for (let x = 6; x < 180; x += 22) g.rect(x, 210, 1, 18, PX.line);
-	g.rect(0, 229, 180, 7, PX.line);
-	g.rect(150, 236, 7, 24, PX.line);
-	g.rect(12, 236, 7, 24, PX.line);
+	const t = Math.floor(f / 2.5);
+	// mur clair, main courante, soubassement bleu clair
+	g.rect(0, 0, 180, 236, OUT.wall);
+	for (let x = 0; x < 180; x += 3) for (let y = (x * 7) % 11; y < 150; y += 11) if ((x + y) % 5 === 0) g.set(x, y, OUT.panel);
+	g.rect(0, 150, 180, 86, OUT.panel);
+	g.rect(0, 148, 180, 3, OUT.line);
+	g.rect(0, 151, 180, 1, OUT.blue);
+	// fenêtre : ciel, nuages qui glissent, croisillons, rideau rose
+	g.rect(104, 30, 66, 84, OUT.line);
+	g.rect(107, 33, 60, 78, OUT.panel);
+	for (let i = 0; i < 3; i++) {
+		const cx = 107 + ((i * 23 + Math.floor(t / 3)) % 66) - 4;
+		const cy = 44 + i * 18;
+		g.rect(cx, cy, 14, 3, OUT.wall);
+		g.rect(cx + 3, cy - 2, 7, 2, OUT.wall);
+	}
+	g.rect(135, 33, 3, 78, OUT.line);
+	g.rect(107, 70, 60, 3, OUT.line);
+	g.rect(100, 26, 80, 3, OUT.line); // tringle
+	for (let x = 160; x < 180; x++) g.rect(x, 29, 1, 92, (x + Math.floor(x / 4)) % 4 === 0 ? OUT.wall : OUT.pink);
+	// moniteur au mur : écran bleu nuit, courbe qui défile
+	const MY = 70;
+	g.rect(12, MY, 52, 38, OUT.line);
+	g.rect(15, MY + 3, 46, 26, LPI.navy);
+	g.rect(15, MY + 3, 46, 1, OUT.blue);
+	for (let x = 0; x < 42; x++) {
+		const p = (x + t * 2) % 21;
+		const y = p === 8 ? -7 : p === 9 ? 6 : p === 10 ? -2 : 0;
+		g.set(17 + x, MY + 17 + y, OUT.panel);
+		if (p === 8 || p === 9) g.set(17 + x, MY + 17 + Math.round(y / 2), OUT.panel);
+	}
+	g.rect(17, MY + 31, 6, 2, OUT.pink);
+	g.rect(27, MY + 31, 6, 2, OUT.blue);
+	g.rect(48, MY + 31, 10, 3, t % 4 < 2 ? OUT.pink : OUT.line); // voyant
+	g.rect(36, MY + 38, 2, 12, OUT.line); // bras du moniteur
+	// pied à perfusion, poche, tubulure jusqu'à la main
+	g.rect(78, 64, 2, 172, OUT.line);
+	g.rect(72, 64, 14, 2, OUT.line);
+	g.rect(72, 66, 10, 20, OUT.wall);
+	g.box(72, 66, 10, 20, OUT.line);
+	g.rect(74, 74, 6, 10, OUT.panel);
+	g.rect(76, 86, 1, 6, OUT.line);
+	if (t % 6 === 0) g.set(76, 89, OUT.blue); // goutte
+	for (let y = 92; y < 176; y += 2) g.set(77 + Math.round(((y - 92) / 84) * 22), y, OUT.line);
+	// sol carrelé
+	g.rect(0, 236, 180, 84, OUT.wall);
+	g.rect(0, 236, 180, 2, OUT.line);
+	for (let y = 250; y < 320; y += 16) g.rect(0, y, 180, 1, OUT.panel);
+	for (let x = 0; x < 180; x += 22) g.rect(x, 238, 1, 82, OUT.panel);
+	// ombre du lit sur le sol, chaussons roses
+	for (let y = 238; y < 300; y++) for (let x = 6; x < 150; x++) if (dither(x, y, 0.22 * G(y, 262, 26))) g.set(x, y, OUT.panel);
+	for (const sx of [58, 76]) {
+		g.rect(sx, 300, 15, 6, OUT.pink);
+		g.rect(sx + 8, 297, 7, 4, OUT.pink);
+		g.box(sx, 300, 15, 6, OUT.line);
+		g.rect(sx + 2, 301, 5, 1, OUT.wall);
+	}
+	// table de chevet
+	g.rect(150, 168, 30, 68, OUT.blue);
+	g.box(150, 168, 30, 68, OUT.line);
+	g.rect(155, 186, 20, 2, OUT.line);
+	g.rect(160, 158, 8, 10, OUT.wall); // verre
+	g.box(160, 158, 8, 10, OUT.line);
+	g.rect(161, 163, 6, 4, OUT.panel);
+	// lit : tête de lit, matelas, drap, cadre, roues
+	g.rect(0, 150, 7, 82, OUT.blue);
+	g.box(0, 150, 7, 82, OUT.line);
+	g.rect(0, 205, 150, 22, OUT.sheet);
+	for (let x = 4; x < 150; x += 8) g.rect(x, 209, 4, 1, OUT.panel);
+	for (let x = 8; x < 150; x += 8) g.rect(x, 216, 4, 1, OUT.panel);
+	g.rect(0, 205, 150, 1, OUT.line);
+	g.rect(0, 226, 150, 1, OUT.line);
+	g.rect(0, 227, 150, 6, OUT.line);
+	g.rect(20, 233, 4, 56, OUT.line);
+	g.rect(130, 233, 4, 56, OUT.line);
+	g.rect(14, 286, 18, 2, OUT.line);
+	for (const wx of [22, 132]) {
+		g.disk(wx, 293, 5, OUT.line);
+		g.disk(wx, 293, 2, OUT.panel);
+	}
 	// oreiller
-	g.rect(0, 182, 44, 23, PX.text);
-	g.rect(0, 200, 44, 5, PX.sky);
-	g.rect(40, 186, 4, 17, PX.sky);
+	g.rect(0, 183, 44, 22, OUT.sheet);
+	g.box(0, 183, 44, 22, OUT.line);
+	g.rect(2, 198, 40, 6, OUT.panel);
 	// tête de profil : visage, oreille, cheveux
-	g.disk(20, 172, 15, PX.epi);
-	g.rect(4, 156, 26, 9, PX_REAL.hair);
-	g.rect(4, 156, 9, 26, PX_REAL.hair);
-	g.disk(14, 174, 3, PX.derm); // oreille
-	g.rect(34, 170, 5, 4, PX.epi); // nez
-	g.rect(28, 166, 4, 1, PX.bg); // œil fermé
-	g.rect(29, 180, 5, 1, PX.derm); // bouche
-	// cou + blouse
+	g.disk(15, 168, 15, PX_REAL.hair); // chevelure (derrière)
+	g.disk(22, 174, 13, PX.epi); // visage
+	g.rect(20, 157, 12, 5, PX_REAL.hair); // mèche sur le front
+	g.disk(14, 175, 3, PX.derm); // oreille
+	g.rect(34, 170, 5, 4, PX.epi);
+	g.rect(28, 166, 4, 1, OUT.line);
+	g.rect(29, 180, 5, 1, PX.derm);
+	// cou, blouse à pois
 	g.rect(30, 182, 14, 10, PX.epi);
 	// corps sous la couverture : poitrine, ventre, bassin contre le matelas, cuisses
-	for (let x = 40; x < 180; x++) {
-		const top = Math.round(205 - (x < 92 ? 34 - Math.max(0, x - 70) * 0.15 : x < 120 ? 31 - (x - 92) * 0.3 : 22 + 7 * G(x, 160, 14)));
-		g.rect(x, top, 1, 205 - top, PX.blue);
-		g.set(x, top, PX.sky);
-		if ((x + 9) % 26 === 0) g.rect(x, top + 3, 1, 205 - top - 6, PX.line); // plis
+	for (let x = 40; x < 150; x++) {
+		const top = Math.round(205 - (x < 92 ? 34 - Math.max(0, x - 70) * 0.15 : x < 120 ? 31 - (x - 92) * 0.3 : 22 + 7 * G(x, 140, 12)));
+		g.rect(x, top, 1, 205 - top, OUT.blue);
+		g.set(x, top, OUT.line);
+		if ((x + 9) % 26 === 0) g.rect(x, top + 3, 1, 205 - top - 6, OUT.line); // plis
+		if ((x + 3) % 26 === 0) g.rect(x, top + 2, 1, 205 - top - 8, OUT.panel); // reflets
 	}
-	// bras posé sur la couverture
-	g.rect(52, 178, 48, 7, PX.epi);
-	g.rect(52, 184, 48, 1, PX.derm);
-	g.rect(100, 177, 11, 9, PX.epi);
+	// bras sur la couverture (manche de blouse à pois), main avec le cathéter
+	g.rect(48, 177, 34, 8, OUT.panel);
+	for (let x = 50; x < 82; x += 5) g.set(x, 180, OUT.blue);
+	g.box(48, 177, 34, 8, OUT.line);
+	g.rect(82, 178, 18, 6, PX.epi);
+	g.rect(100, 177, 10, 8, PX.epi);
+	g.rect(98, 176, 4, 2, OUT.wall); // pansement du cathéter
 	// réticule pointillé qui pulse sur le sacrum (zone d'appui)
 	if (ring > 0) {
-		const r = 14 + (Math.floor(f / 5) % 2) * 3;
+		const r = 14 + (t % 2) * 3;
 		for (let a = 0; a < 64; a++) {
 			if (a % 4 > 1) continue;
-			const t = (a / 64) * Math.PI * 2;
-			g.set(BED_SACRUM.x + Math.cos(t) * r, BED_SACRUM.y + Math.sin(t) * r, PX.pink);
+			const ang = (a / 64) * Math.PI * 2;
+			g.set(BED_SACRUM.x + Math.cos(ang) * r, BED_SACRUM.y + Math.sin(ang) * r, OUT.pink);
 		}
+		for (const [dx, dy] of [[-r - 4, 0], [r + 2, 0], [0, -r - 4], [0, r + 2]]) g.rect(BED_SACRUM.x + dx, BED_SACRUM.y + dy, dx ? 3 : 1, dy ? 3 : 1, PX.red);
 		g.rect(BED_SACRUM.x - 2, BED_SACRUM.y - 2, 5, 3, PX.red);
 	}
+};
+
+/**
+ * Gros plan « dehors » au sacrum (même repère que la coupe : la peau contre le matelas en bas) : blouse relevée, peau
+ * du bas du dos, matelas, rougeur au point d'appui ; `xray` (0 → 1) fait deviner l'os en pointillés à travers la peau.
+ */
+export const pxHipClose = (g: Px, f: number, xray = 0) => {
+	const s = {comp: 1, finger: 0};
+	const t = Math.floor(f / 2.5);
+	// bord de la blouse relevée (à gauche) et de la couverture soulevée (à droite)
+	const top = (x: number) => (x < 96 ? 92 + Math.round(6 * Math.sin(x / 11)) : 110 + Math.round(9 * Math.sin(x / 17 + 1)) + Math.round((x - 96) * 0.25));
+	for (let x = 0; x < 180; x++) {
+		const sf = Math.round(secSurface(x, s));
+		const tp = top(x);
+		for (let y = 0; y < 320; y++) {
+			let c: string;
+			if (y < tp) {
+				if (x < 96) {
+					// blouse bleu clair à pois, plis
+					c = OUT.panel;
+					if ((x + Math.floor(y / 9) * 4) % 9 === 0 && y % 9 === 4) c = OUT.blue;
+					if ((x * 3 + y) % 37 < 2) c = OUT.wall;
+				} else {
+					// couverture bleue soulevée, plis et reflets
+					c = OUT.blue;
+					const fold = (x + Math.round(y * 0.4)) % 23;
+					if (fold < 2) c = OUT.line;
+					else if (fold < 4) c = OUT.panel;
+				}
+				if (y >= tp - 2) c = OUT.line;
+			} else if (y < sf) {
+				// peau du bas du dos : reflet en haut, ombre propre vers le matelas, grain discret
+				c = PX.epi;
+				if (dither(x, y, 0.55 * G(y, tp + 14, 10))) c = PX.bone;
+				if (dither(x, y, 0.5 * Math.max(0, (y - (sf - 60)) / 60) ** 1.5)) c = PX.derm;
+				if (dither(x, y, 0.04)) c = PX.derm;
+				if (y > sf - 3) c = PX.derm;
+				if (dither(x, y, G(x, SEC.cx, 26) * G(y, sf - 6, 12))) c = PX.red; // rougeur au point d'appui
+				// creux de la taille (ombre courbe à gauche)
+				if (x < 40 && dither(x, y, 0.35 * G(x, 18, 10) * G(y, tp + 60, 40))) c = PX.derm;
+			} else {
+				// matelas : housse claire, coutil bleu clair, couture, ombre sous le corps
+				c = OUT.sheet;
+				if (y < sf + 1) c = OUT.line;
+				else if (y < sf + 4 && dither(x, y, 0.5)) c = OUT.panel;
+				else if ((x + 400) % 18 === 0 && y % 3 === 0) c = OUT.panel;
+				if (y === 306) c = OUT.line;
+				if (y > 306 && (x + y) % 6 === 0) c = OUT.panel;
+			}
+			g.set(x, y, c);
+		}
+	}
+	// main gantée qui soulève la couverture (gant bleu clair, contour bleu nuit), légère respiration
+	const hy = 92 + (t % 4 < 2 ? 0 : 1);
+	g.rect(124, hy, 26, 16, OUT.panel);
+	g.box(124, hy, 26, 16, OUT.line);
+	for (let i = 0; i < 4; i++) {
+		g.rect(126 + i * 6, hy + 15, 5, 9, OUT.panel);
+		g.box(126 + i * 6, hy + 15, 5, 9, OUT.line);
+	}
+	g.rect(150, hy + 2, 30, 12, OUT.panel); // poignet
+	g.rect(150, hy + 2, 30, 1, OUT.line);
+	g.rect(150, hy + 13, 30, 1, OUT.line);
+	g.rect(128, hy + 3, 8, 2, OUT.wall); // reflet du gant
+	// l'os qu'on devine à travers la peau (pointillés qui s'allument)
+	if (xray > 0) {
+		for (let x = 10; x < 170; x += 2) {
+			if ((x - 10) / 160 > xray) break;
+			g.set(x, Math.round(secBone(x)), OUT.line);
+			g.set(x + 1, Math.round(secBone(x)) - 1, OUT.blue);
+		}
+	}
+};
+
+/**
+ * Passage « dehors → dedans » : un cercle de scanner part du point d'appui et grandit ; à l'intérieur, la coupe (thème
+ * sombre), à l'extérieur le gros plan clair ; bord tramé et anneau rose. `k` 0 → 1.
+ */
+export const pxReveal = (g: Px, inside: Px, k: number, cx = SEC.cx, cy = SEC.skin - 20) => {
+	const R = k * 340;
+	for (let y = 0; y < g.h; y++)
+		for (let x = 0; x < g.w; x++) {
+			const d = Math.hypot(x - cx, (y - cy) * 0.8);
+			if (d < R - 6 || (d < R && dither(x, y, (R - d) / 6))) {
+				const i = (y * g.w + x) * 4;
+				g.data[i] = inside.data[i];
+				g.data[i + 1] = inside.data[i + 1];
+				g.data[i + 2] = inside.data[i + 2];
+				g.data[i + 3] = 255;
+			} else if (d < R + 2 && k < 1) g.set(x, y, d < R + 1 ? LPI.pink : LPI.paper);
+		}
 };
 
 /* ════════════════════════ très gros plan : la coupe au sacrum ════════════════════════ */
