@@ -14,7 +14,7 @@ export type EscarreMassageProps = {voice: boolean; sfx: boolean};
 const SCENES: Record<SceneId, React.FC> = {intro: Hook, regle: Regle, pression: Pression, massage: Massage, soulager: Soulager, fin: Fin, end: Loop};
 
 /** Transitions : un simple fondu (on reste dans le même monde pixel, le plan continue d'une scène à l'autre). */
-const T: EpisodeTransition = {p: fade(), sfx: 'blip'};
+const T: EpisodeTransition = {p: fade()}; // fondu silencieux (pas de bips d'arcade : refusés par le propriétaire)
 const TRANSITIONS: Record<Exclude<SceneId, 'intro'>, EpisodeTransition> = {regle: T, pression: T, massage: T, soulager: T, fin: T, end: T};
 
 export const EscarreMassage: React.FC<EscarreMassageProps> = ({voice, sfx}) => (

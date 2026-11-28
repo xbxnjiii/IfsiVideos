@@ -291,6 +291,11 @@ export type SectionState = {
 	arrows: number;
 	/** doigt qui appuie sur la peau (0 → 1) */
 	finger: number;
+	/** le doigt chasse le sang des petits vaisseaux du derme : la peau blanchit (0 → 1) */
+	blanch?: number;
+	/** profondeur (0 = os, 1 = peau) et taille (0 → 1) de la fuite de sang ; par défaut autour de l'artériole du derme */
+	leakD?: number;
+	leakR?: number;
 	f: number;
 };
 
@@ -355,8 +360,10 @@ export const pxSacrumSection = (g: Px, s: SectionState) => {
 					c = PX.epi;
 					if (y >= Math.round(sf) - 1) c = PX.derm;
 				}
-				// rougeur : le derme et l'épiderme rougissent au centre
-				if (d > SEC_D.fat && dither(xs, y, s.rougeur * G(xs, SEC.cx, 26) * (d > SEC_D.skin ? 1 : 0.7))) c = PX.red;
+				// rougeur : le derme et l'épiderme rougissent au centre ; sous le doigt, le sang est chassé (la peau blanchit)
+				const bl = (s.blanch ?? 0) * G(xs, SEC.cx, 15);
+				if (d > SEC_D.fat && dither(xs, y, s.rougeur * G(xs, SEC.cx, 26) * (d > SEC_D.skin ? 1 : 0.7) * (1 - bl))) c = PX.red;
+				if (d > SEC_D.skin && dither(xs, y, bl * 0.8)) c = PX.bone;
 				// vaisseaux : paroi + lumière + globules rouges qui avancent ; écrasés (paroi contre paroi) sous l'appui
 				const pinched = pinchAt(xs);
 				for (const [vc, wall, lumen] of vessels) {
@@ -364,6 +371,7 @@ export const pxSacrumSection = (g: Px, s: SectionState) => {
 					const half = pinched ? 0.5 : 2.4;
 					if (dd <= half + 0.6) {
 						if (pinched || dd > half - 0.6) c = wall;
+						else if (vc > SEC_D.fat && (s.blanch ?? 0) * G(xs, SEC.cx, 15) > 0.45) c = PX.epi; // vaisseau vidé par le doigt
 						else {
 							c = lumen;
 							const k = (((xs - Math.floor(s.phase)) % 7) + 700) % 7;
@@ -406,12 +414,13 @@ export const pxSacrumSection = (g: Px, s: SectionState) => {
 	}
 	// sang qui fuit : globules rouges en amas dans les tissus autour des vaisseaux abîmés
 	if (s.leak > 0) {
-		const n = Math.round(s.leak * 240);
+		const lr = s.leakR ?? 1;
+		const n = Math.round(s.leak * 240 * lr);
 		for (let i = 0; i < n; i++) {
 			const a = (hash(i, 3) / 1000) * Math.PI * 2;
-			const r = Math.sqrt(hash(i, 5) / 1000) * (8 + 30 * s.leak);
+			const r = Math.sqrt(hash(i, 5) / 1000) * (8 + 30 * s.leak) * lr;
 			const x = Math.round(SEC.cx - 6 + Math.cos(a) * r * 1.5 + s.shear * 0.6);
-			const y = secY(x, SEC_D.art, s) + Math.round(Math.sin(a) * r * 0.55);
+			const y = secY(x, s.leakD ?? SEC_D.art, s) + Math.round(Math.sin(a) * r * 0.55);
 			g.rect(x, y, 2, 2, i % 5 === 0 ? PX.red : PX.artery);
 		}
 	}
@@ -433,10 +442,152 @@ export const pxSacrumSection = (g: Px, s: SectionState) => {
 	}
 	// le doigt qui appuie sur la rougeur
 	if (s.finger > 0) {
+		// doigt ganté (bleu clair, contour bleu nuit) qui monte appuyer sur la peau
 		const fy = Math.round(at(surf, SEC.cx) + (1 - s.finger) * 30);
-		g.rect(SEC.cx - 8, fy, 17, 60, PX.epi);
-		g.rect(SEC.cx - 6, fy + 2, 13, 7, PX.text);
-		g.rect(SEC.cx - 8, fy + 18, 17, 1, PX.derm);
-		g.rect(SEC.cx - 8, fy, 1, 60, PX.derm);
+		g.rect(SEC.cx - 12, fy + 4, 25, 80, LPI.sky);
+		g.rect(SEC.cx - 9, fy, 19, 5, LPI.sky);
+		g.rect(SEC.cx - 12, fy + 4, 1, 80, LPI.navy);
+		g.rect(SEC.cx + 12, fy + 4, 1, 80, LPI.navy);
+		g.rect(SEC.cx - 9, fy, 19, 1, LPI.navy);
+		g.rect(SEC.cx - 11, fy + 1, 2, 3, LPI.navy);
+		g.rect(SEC.cx + 10, fy + 1, 2, 3, LPI.navy);
+		g.rect(SEC.cx - 6, fy + 6, 3, 40, LPI.paper);
+		g.rect(SEC.cx - 12, fy + 30, 25, 1, LPI.blue);
+	}
+};
+
+/* ════════════════════════ la peau vue de dessus (test du doigt) ════════════════════════ */
+/** Teintes de peau (vraies couleurs) : claire et foncée, chacune en 3 tons + la marque de la zone abîmée. */
+export const SKIN_TONES = {
+	light: {base: PX.epi, hi: PX.bone, lo: PX.derm, mark: PX.red},
+	dark: {base: '#8D5A3B', hi: '#A8714D', lo: '#6E4329', mark: '#5A3322'},
+} as const;
+
+/** Centre de la tache sur la peau vue de dessus. */
+export const TOP_SPOT = {x: 90, y: 176};
+
+export type SkinTopState = {
+	tone: keyof typeof SKIN_TONES;
+	/** rougeur (ou, sur peau foncée, zone plus foncée) */
+	redness: number;
+	/** doigt ganté : 0 = absent, 0.5 = posé au-dessus, 1 = appuie */
+	finger: number;
+	/** tache blanche laissée par le doigt (0 → 1) */
+	white: number;
+	/** chaleur (petites ondes roses) */
+	heat?: number;
+	/** zone indurée (contour en pointillés) */
+	hard?: number;
+	f: number;
+};
+
+/**
+ * Peau du bas du dos vue de dessus (patient tourné sur le côté), aux couleurs claires du dehors : drap, bord de la
+ * blouse, pli fessier, grain de la peau, rougeur au sacrum ; doigt ganté qui appuie ; tache blanche après l'appui.
+ */
+export const pxSkinTop = (g: Px, s: SkinTopState) => {
+	const T = SKIN_TONES[s.tone];
+	const {x: cx, y: cy} = TOP_SPOT;
+	// demi-largeur du dos : la taille plus étroite en haut, les hanches plus larges en bas
+	const half = (y: number) => 78 + 16 * G(y, 250, 80);
+	for (let y = 0; y < 320; y++)
+		for (let x = 0; x < 180; x++) {
+			const dx = Math.abs(x - 90);
+			const inSkin = dx < half(y);
+			let c: string;
+			if (!inSkin) {
+				// drap
+				c = OUT.sheet;
+				if ((x + y * 2) % 14 === 0) c = OUT.panel;
+				if (dx < half(y) + 3) c = OUT.panel; // ombre du corps sur le drap
+			} else if (y < 46 + Math.round(5 * Math.sin(x / 9))) {
+				// bord de la blouse relevée
+				c = OUT.panel;
+				if ((x + Math.floor(y / 7) * 3) % 8 === 0 && y % 7 === 3) c = OUT.blue;
+				if (y >= 44 + Math.round(5 * Math.sin(x / 9))) c = OUT.line;
+			} else {
+				c = T.base;
+				if (dither(x, y, 0.07)) c = T.lo;
+				if (dither(x, y, 0.32 * G(x, 64, 26) * G(y, 110, 50))) c = T.hi; // reflet
+				if (dither(x, y, 0.45 * Math.max(0, (dx - half(y) + 16) / 16))) c = T.lo; // le dos s'arrondit sur les côtés
+				// colonne : petites bosses des vertèbres, puis le sacrum et ses deux fossettes
+				if (Math.abs(x - 90) < 2 && y < 140 && (y % 14 < 3) && y > 52) c = T.lo;
+				for (const fx of [72, 108]) if (Math.hypot(x - fx, y - 146) < 2.2) c = T.lo;
+				// pli fessier en bas, au milieu
+				if (y > 232 && Math.abs(x - 90 - Math.round((y - 232) * 0.05)) < 1) c = T.lo;
+				if (y > 232 && Math.abs(x - 90 - Math.round((y - 232) * 0.05)) === 1 && dither(x, y, 0.5)) c = T.lo;
+				// rougeur (bord irrégulier)
+				const r = Math.hypot((x - cx) / 34, (y - cy) / 26) + ((hash(x >> 2, y >> 2) % 9) - 4) * 0.02;
+				if (dither(x, y, s.redness * Math.max(0, Math.min(1, (1.15 - r) * 2.2)))) c = T.mark;
+				// tache blanche laissée par le doigt
+				const w = Math.hypot(x - cx, y - cy);
+				if (s.white > 0 && w < 12 && dither(x, y, s.white * Math.min(1, (12 - w) / 4))) c = s.tone === 'light' ? OUT.wall : T.hi;
+				if (dx > half(y) - 1) c = T.lo; // bord du corps
+			}
+			g.set(x, y, c);
+		}
+	// chaleur : petites ondes roses qui montent
+	if ((s.heat ?? 0) > 0) {
+		const t = Math.floor(s.f / 2.5);
+		for (let i = 0; i < 5; i++) {
+			if (i / 5 > (s.heat ?? 0)) break;
+			const x0 = cx - 30 + i * 15;
+			const y0 = cy - 30 - ((t * 2 + i * 7) % 22);
+			for (let k = 0; k < 9; k++) g.set(x0 + Math.round(2 * Math.sin((k + t) / 1.6)), y0 + k, OUT.pink);
+		}
+	}
+	// zone dure : contour pointillé
+	if ((s.hard ?? 0) > 0) {
+		for (let a = 0; a < 80; a++) {
+			if (a / 80 > (s.hard ?? 0) || a % 3 === 2) continue;
+			const ang = (a / 80) * Math.PI * 2;
+			g.set(cx + Math.cos(ang) * 40, cy + Math.sin(ang) * 31, OUT.line);
+		}
+	}
+	// main gantée (vue de dessus) : l'index tendu vers la tache, les autres doigts repliés ; ombre quand elle est levée
+	if (s.finger > 0) {
+		const lift = s.finger < 1 ? 1 - s.finger : 0;
+		const away = Math.max(0, 0.5 - s.finger) * 2;
+		const tx = cx + 1 + Math.round(away * 70);
+		const ty = cy + 1 + Math.round(away * 110);
+		const sh = Math.round(lift * 9);
+		const ux = 0.42;
+		const uy = 0.91; // direction du doigt (vers le bas à droite)
+		const vx = uy;
+		const vy = -ux; // perpendiculaire
+		const shape = (k: number, j: number) => {
+			// index : bout arrondi, s'élargit un peu vers la main
+			if (k < 0) return false;
+			const w = 11 + Math.min(3, k / 20);
+			const tip = k < 11 ? Math.sqrt(Math.max(0, 1 - ((11 - k) / 11.5) ** 2)) : 1;
+			if (k < 92 && Math.abs(j) <= w * tip) return true;
+			// la main (poing) : un grand ovale au bout du doigt
+			return ((k - 120) / 36) ** 2 + ((j - 10) / 30) ** 2 < 1;
+		};
+		const paint = (ox: number, oy: number, shadow: boolean) => {
+			for (let y = 0; y < 320; y++)
+				for (let x = 0; x < 180; x++) {
+					const rx = x - ox;
+					const ry = y - oy;
+					const k = rx * ux + ry * uy;
+					const j = rx * vx + ry * vy;
+					if (!shape(k, j)) continue;
+					if (shadow) {
+						if (dither(x, y, 0.75)) g.set(x, y, s.tone === 'light' ? T.lo : '#4E2F1D');
+						continue;
+					}
+					let c: string = OUT.panel;
+					const edge = !shape(k - 1.2, j) || !shape(k + 1.2, j) || !shape(k, j - 1.2) || !shape(k, j + 1.2);
+					if (edge) c = OUT.line;
+					else if (k > 4 && k < 80 && j > 3 && j < 6) c = OUT.wall; // reflet du gant
+					else if (k < 20 && Math.abs(j) < 6 && ((k - 9) / 7) ** 2 + (j / 5) ** 2 < 1) c = OUT.wall; // ongle sous le gant
+					else if (Math.abs(k - 38) < 0.6 || Math.abs(k - 66) < 0.6) c = OUT.blue; // plis des phalanges
+					else if (k > 100 && k < 146 && j < 34 && Math.abs((((j + 42) % 13) + 13) % 13 - 6) < 0.7) c = OUT.line; // doigts repliés
+					else if (k > 96 && dither(x, y, 0.1)) c = OUT.blue;
+					g.set(x, y, c);
+				}
+		};
+		if (sh > 0) paint(tx + sh, ty + sh, true);
+		paint(tx, ty, false);
 	}
 };

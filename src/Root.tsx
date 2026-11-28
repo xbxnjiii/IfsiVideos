@@ -212,6 +212,8 @@ import {LaCelluleSchema, LaCelluleSchemaProps} from './videos/la-cellule-schema/
 import {TL as LA_CELLULE_SCHEMA_TL} from './videos/la-cellule-schema/timeline';
 import {EscarreMassage, EscarreMassageProps} from './videos/escarre-massage/EscarreMassage';
 import {TL as ESCARRE_MASSAGE_TL} from './videos/escarre-massage/timeline';
+import {EscarreTestDoigt, EscarreTestDoigtProps} from './videos/escarre-test-doigt/EscarreTestDoigt';
+import {TL as ESCARRE_TEST_DOIGT_TL} from './videos/escarre-test-doigt/timeline';
 
 // Format vertical 9:16 pour TikTok / Reels / Shorts.
 const W = 1080;
@@ -1258,6 +1260,16 @@ export const RemotionRoot: React.FC = () => (
 			width={W}
 			height={H}
 			defaultProps={{voice: true, sfx: true} satisfies EscarreMassageProps}
+		/>
+		{/* 106 · Escarre-Test-Doigt */}
+		<Composition
+			id="Escarre-Test-Doigt"
+			component={EscarreTestDoigt}
+			durationInFrames={ESCARRE_TEST_DOIGT_TL.total}
+			fps={ESCARRE_TEST_DOIGT_TL.fps}
+			width={W}
+			height={H}
+			defaultProps={{voice: true, sfx: true} satisfies EscarreTestDoigtProps}
 		/>
 		{/* contrôle : toutes les images d'une catégorie de la mascotte (cat = expressions, symptomes…) */}
 		<Composition

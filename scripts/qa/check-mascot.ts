@@ -210,6 +210,8 @@ import * as lacelluleschema from '../../src/videos/la-cellule-schema/mascot';
 import * as lacelluleschemaTL from '../../src/videos/la-cellule-schema/timeline';
 import * as escarremassage from '../../src/videos/escarre-massage/mascot';
 import * as escarremassageTL from '../../src/videos/escarre-massage/timeline';
+import * as escarretestdoigt from '../../src/videos/escarre-test-doigt/mascot';
+import * as escarretestdoigtTL from '../../src/videos/escarre-test-doigt/timeline';
 
 const VIDEOS: Record<string, [typeof constantes.MASCOT, typeof constantesTL.TL]> = {
 	constantes: [constantes.MASCOT, constantesTL.TL],
@@ -316,6 +318,7 @@ const VIDEOS: Record<string, [typeof constantes.MASCOT, typeof constantesTL.TL]>
 	'la-cellule': [lacellule.MASCOT, lacelluleTL.TL],
 	'la-cellule-schema': [lacelluleschema.MASCOT, lacelluleschemaTL.TL],
 	'escarre-massage': [escarremassage.MASCOT, escarremassageTL.TL],
+	'escarre-test-doigt': [escarretestdoigt.MASCOT, escarretestdoigtTL.TL],
 };
 const name = process.argv[2] ?? 'constantes';
 const [MASCOT, TL] = VIDEOS[name];

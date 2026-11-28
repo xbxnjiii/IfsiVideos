@@ -1,0 +1,32 @@
+[
+ {
+  "id": "intro",
+  "rate": "+4%",
+  "text": "Une rougeur au sacrum : escarre, ou pas ? Un seul doigt te le dit… en trois secondes."
+ },
+ {
+  "id": "geste",
+  "rate": "+0%",
+  "text": "Avec le bout du doigt, tu appuies sur la rougeur pendant trois secondes. Puis tu relâches… et tu regardes."
+ },
+ {
+  "id": "blanchit",
+  "rate": "+0%",
+  "text": "Si la peau devient blanche, puis rouge à nouveau : le sang circule encore dans les petits vaisseaux. Ce n'est pas encore une escarre : on soulage l'appui, et on surveille."
+ },
+ {
+  "id": "rouge",
+  "rate": "+0%",
+  "text": "Si elle reste rouge : le sang est sorti des petits vaisseaux abîmés, et ton doigt ne peut plus le chasser. C'est une escarre de {stade 1|stade un} : la peau est intacte, mais les tissus sont déjà touchés."
+ },
+ {
+  "id": "foncee",
+  "rate": "+0%",
+  "text": "Sur une peau foncée, la rougeur se voit mal. Cherche plutôt une zone plus foncée, plus chaude, ou plus dure que la peau autour."
+ },
+ {
+  "id": "fin",
+  "rate": "+0%",
+  "text": "Et si on ne fait rien ? L'escarre s'aggrave, en quatre stades. On les voit dans la prochaine vidéo !"
+ }
+]

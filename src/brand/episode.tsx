@@ -344,7 +344,8 @@ const MascotSfx: React.FC<{beats: Beat[]}> = ({beats}) => (
 );
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-export type EpisodeTransition = {p: TransitionPresentation<any>; sfx: SfxName};
+/** `sfx` absent = transition silencieuse. */
+export type EpisodeTransition = {p: TransitionPresentation<any>; sfx?: SfxName};
 
 /**
  * Vidéo complète : scènes enchaînées par leurs transitions (jamais deux fois la même d'affilée),
@@ -409,9 +410,10 @@ export const Episode = <Id extends string>({
 						<Html5Audio src={staticFile(voice)} />
 					</Sequence>
 				) : null}
-				{ids.slice(1).map((id, i) => (
-					<Sfx key={id} name={tr[id].sfx} at={tl.starts[i + 1]} volume={0.11} />
-				))}
+				{ids.slice(1).map((id, i) => {
+					const name = tr[id].sfx;
+					return name ? <Sfx key={id} name={name} at={tl.starts[i + 1]} volume={0.11} /> : null;
+				})}
 				<MascotSfx beats={mascot} />
 			</AbsoluteFill>
 		</SfxEnabled.Provider>

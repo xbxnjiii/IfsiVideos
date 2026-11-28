@@ -369,3 +369,12 @@ export const pxCounter = (g: Px, n: number, total: number, bump = false, right =
 	g.box(right - w, y + dy, w, 22, PX.text);
 	g.textS(t, right - w + 4, y + 3 + dy, PX.text, 16);
 };
+
+/** Chrono rétro « 3 · 2 · 1 » : grand chiffre dans une case, barre qui se vide (`p` 0 → 1 sur la seconde en cours). */
+export const pxTimer = (g: Px, n: number, p: number, x: number, y: number) => {
+	g.rect(x, y, 40, 36, PX.panel);
+	g.box(x, y, 40, 36, PX.text);
+	g.textS(String(n), x + 12, y + 6, n <= 1 ? PX.pink : PX.text, 16);
+	g.rect(x + 4, y + 28, 32, 4, PX.bg);
+	g.rect(x + 4, y + 28, Math.round(32 * (1 - p)), 4, n <= 1 ? PX.pink : PX.blue);
+};

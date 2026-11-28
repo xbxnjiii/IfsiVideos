@@ -1,0 +1,743 @@
+{
+ "voice": "voix.wav (tts_voix.py)",
+ "duration": 44.798,
+ "sections": [
+  {
+   "id": "intro",
+   "start": 0.05,
+   "end": 4.893
+  },
+  {
+   "id": "geste",
+   "start": 5.832,
+   "end": 11.232
+  },
+  {
+   "id": "blanchit",
+   "start": 12.19,
+   "end": 20.503
+  },
+  {
+   "id": "rouge",
+   "start": 21.452,
+   "end": 30.465
+  },
+  {
+   "id": "foncee",
+   "start": 31.41,
+   "end": 38.135
+  },
+  {
+   "id": "fin",
+   "start": 39.138,
+   "end": 44.45
+  }
+ ],
+ "words": [
+  {
+   "text": "Une",
+   "start": 0.05,
+   "end": 0.242
+  },
+  {
+   "text": "rougeur",
+   "start": 0.242,
+   "end": 0.578
+  },
+  {
+   "text": "au",
+   "start": 0.578,
+   "end": 0.626
+  },
+  {
+   "text": "sacrum :",
+   "start": 0.626,
+   "end": 1.131
+  },
+  {
+   "text": "escarre,",
+   "start": 1.432,
+   "end": 1.901
+  },
+  {
+   "text": "ou",
+   "start": 2.165,
+   "end": 2.201
+  },
+  {
+   "text": "pas ?",
+   "start": 2.201,
+   "end": 2.453
+  },
+  {
+   "text": "Un",
+   "start": 2.778,
+   "end": 2.958
+  },
+  {
+   "text": "seul",
+   "start": 2.958,
+   "end": 3.211
+  },
+  {
+   "text": "doigt",
+   "start": 3.211,
+   "end": 3.331
+  },
+  {
+   "text": "te",
+   "start": 3.331,
+   "end": 3.439
+  },
+  {
+   "text": "le",
+   "start": 3.439,
+   "end": 3.547
+  },
+  {
+   "text": "dit…",
+   "start": 3.547,
+   "end": 3.812
+  },
+  {
+   "text": "en",
+   "start": 4.124,
+   "end": 4.184
+  },
+  {
+   "text": "trois",
+   "start": 4.184,
+   "end": 4.364
+  },
+  {
+   "text": "secondes.",
+   "start": 4.364,
+   "end": 4.893
+  },
+  {
+   "text": "Avec",
+   "start": 5.832,
+   "end": 6.132
+  },
+  {
+   "text": "le",
+   "start": 6.132,
+   "end": 6.22
+  },
+  {
+   "text": "bout",
+   "start": 6.22,
+   "end": 6.332
+  },
+  {
+   "text": "du",
+   "start": 6.332,
+   "end": 6.457
+  },
+  {
+   "text": "doigt,",
+   "start": 6.457,
+   "end": 6.782
+  },
+  {
+   "text": "tu",
+   "start": 7.132,
+   "end": 7.245
+  },
+  {
+   "text": "appuies",
+   "start": 7.245,
+   "end": 7.495
+  },
+  {
+   "text": "sur",
+   "start": 7.495,
+   "end": 7.632
+  },
+  {
+   "text": "la",
+   "start": 7.632,
+   "end": 7.72
+  },
+  {
+   "text": "rougeur",
+   "start": 7.72,
+   "end": 8.132
+  },
+  {
+   "text": "pendant",
+   "start": 8.132,
+   "end": 8.345
+  },
+  {
+   "text": "trois",
+   "start": 8.345,
+   "end": 8.532
+  },
+  {
+   "text": "secondes.",
+   "start": 8.532,
+   "end": 9.082
+  },
+  {
+   "text": "Puis",
+   "start": 9.47,
+   "end": 9.557
+  },
+  {
+   "text": "tu",
+   "start": 9.557,
+   "end": 9.682
+  },
+  {
+   "text": "relâches…",
+   "start": 9.682,
+   "end": 10.207
+  },
+  {
+   "text": "et",
+   "start": 10.507,
+   "end": 10.532
+  },
+  {
+   "text": "tu",
+   "start": 10.532,
+   "end": 10.657
+  },
+  {
+   "text": "regardes.",
+   "start": 10.657,
+   "end": 11.232
+  },
+  {
+   "text": "Si",
+   "start": 12.19,
+   "end": 12.378
+  },
+  {
+   "text": "la",
+   "start": 12.378,
+   "end": 12.465
+  },
+  {
+   "text": "peau",
+   "start": 12.465,
+   "end": 12.615
+  },
+  {
+   "text": "devient",
+   "start": 12.615,
+   "end": 12.902
+  },
+  {
+   "text": "blanche,",
+   "start": 12.902,
+   "end": 13.39
+  },
+  {
+   "text": "puis",
+   "start": 13.603,
+   "end": 13.74
+  },
+  {
+   "text": "rouge",
+   "start": 13.74,
+   "end": 13.978
+  },
+  {
+   "text": "à",
+   "start": 13.978,
+   "end": 14.015
+  },
+  {
+   "text": "nouveau :",
+   "start": 14.015,
+   "end": 14.39
+  },
+  {
+   "text": "le",
+   "start": 14.853,
+   "end": 14.928
+  },
+  {
+   "text": "sang",
+   "start": 14.928,
+   "end": 15.065
+  },
+  {
+   "text": "circule",
+   "start": 15.065,
+   "end": 15.415
+  },
+  {
+   "text": "encore",
+   "start": 15.415,
+   "end": 15.74
+  },
+  {
+   "text": "dans",
+   "start": 15.74,
+   "end": 15.828
+  },
+  {
+   "text": "les",
+   "start": 15.828,
+   "end": 15.915
+  },
+  {
+   "text": "petits",
+   "start": 15.915,
+   "end": 16.178
+  },
+  {
+   "text": "vaisseaux.",
+   "start": 16.178,
+   "end": 16.628
+  },
+  {
+   "text": "Ce",
+   "start": 16.965,
+   "end": 17.14
+  },
+  {
+   "text": "n'est",
+   "start": 17.14,
+   "end": 17.227
+  },
+  {
+   "text": "pas",
+   "start": 17.227,
+   "end": 17.352
+  },
+  {
+   "text": "encore",
+   "start": 17.352,
+   "end": 17.665
+  },
+  {
+   "text": "une",
+   "start": 17.665,
+   "end": 17.753
+  },
+  {
+   "text": "escarre :",
+   "start": 17.753,
+   "end": 18.203
+  },
+  {
+   "text": "on",
+   "start": 18.59,
+   "end": 18.628
+  },
+  {
+   "text": "soulage",
+   "start": 18.628,
+   "end": 19.015
+  },
+  {
+   "text": "l'appui,",
+   "start": 19.015,
+   "end": 19.477
+  },
+  {
+   "text": "et",
+   "start": 19.753,
+   "end": 19.84
+  },
+  {
+   "text": "on",
+   "start": 19.84,
+   "end": 19.89
+  },
+  {
+   "text": "surveille.",
+   "start": 19.89,
+   "end": 20.503
+  },
+  {
+   "text": "Si",
+   "start": 21.452,
+   "end": 21.652
+  },
+  {
+   "text": "elle",
+   "start": 21.652,
+   "end": 21.715
+  },
+  {
+   "text": "reste",
+   "start": 21.715,
+   "end": 22.002
+  },
+  {
+   "text": "rouge :",
+   "start": 22.002,
+   "end": 22.402
+  },
+  {
+   "text": "le",
+   "start": 22.702,
+   "end": 22.79
+  },
+  {
+   "text": "sang",
+   "start": 22.79,
+   "end": 22.977
+  },
+  {
+   "text": "est",
+   "start": 22.977,
+   "end": 23.04
+  },
+  {
+   "text": "sorti",
+   "start": 23.04,
+   "end": 23.364
+  },
+  {
+   "text": "des",
+   "start": 23.364,
+   "end": 23.452
+  },
+  {
+   "text": "petits",
+   "start": 23.452,
+   "end": 23.715
+  },
+  {
+   "text": "vaisseaux",
+   "start": 23.715,
+   "end": 23.965
+  },
+  {
+   "text": "abîmés,",
+   "start": 23.965,
+   "end": 24.465
+  },
+  {
+   "text": "et",
+   "start": 24.765,
+   "end": 24.84
+  },
+  {
+   "text": "ton",
+   "start": 24.84,
+   "end": 24.965
+  },
+  {
+   "text": "doigt",
+   "start": 24.965,
+   "end": 25.09
+  },
+  {
+   "text": "ne",
+   "start": 25.09,
+   "end": 25.165
+  },
+  {
+   "text": "peut",
+   "start": 25.165,
+   "end": 25.265
+  },
+  {
+   "text": "plus",
+   "start": 25.265,
+   "end": 25.44
+  },
+  {
+   "text": "le",
+   "start": 25.44,
+   "end": 25.54
+  },
+  {
+   "text": "chasser.",
+   "start": 25.54,
+   "end": 26.027
+  },
+  {
+   "text": "C'est",
+   "start": 26.377,
+   "end": 26.565
+  },
+  {
+   "text": "une",
+   "start": 26.565,
+   "end": 26.727
+  },
+  {
+   "text": "escarre",
+   "start": 26.727,
+   "end": 27.065
+  },
+  {
+   "text": "de",
+   "start": 27.065,
+   "end": 27.165
+  },
+  {
+   "text": "stade 1 :",
+   "start": 27.165,
+   "end": 27.665
+  },
+  {
+   "text": "la",
+   "start": 28.015,
+   "end": 28.09
+  },
+  {
+   "text": "peau",
+   "start": 28.09,
+   "end": 28.239
+  },
+  {
+   "text": "est",
+   "start": 28.239,
+   "end": 28.29
+  },
+  {
+   "text": "intacte,",
+   "start": 28.29,
+   "end": 28.89
+  },
+  {
+   "text": "mais",
+   "start": 29.09,
+   "end": 29.177
+  },
+  {
+   "text": "les",
+   "start": 29.177,
+   "end": 29.252
+  },
+  {
+   "text": "tissus",
+   "start": 29.252,
+   "end": 29.59
+  },
+  {
+   "text": "sont",
+   "start": 29.59,
+   "end": 29.739
+  },
+  {
+   "text": "déjà",
+   "start": 29.739,
+   "end": 29.965
+  },
+  {
+   "text": "touchés.",
+   "start": 29.965,
+   "end": 30.465
+  },
+  {
+   "text": "Sur",
+   "start": 31.41,
+   "end": 31.672
+  },
+  {
+   "text": "une",
+   "start": 31.672,
+   "end": 31.773
+  },
+  {
+   "text": "peau",
+   "start": 31.773,
+   "end": 31.898
+  },
+  {
+   "text": "foncée,",
+   "start": 31.898,
+   "end": 32.422
+  },
+  {
+   "text": "la",
+   "start": 32.773,
+   "end": 32.847
+  },
+  {
+   "text": "rougeur",
+   "start": 32.847,
+   "end": 33.222
+  },
+  {
+   "text": "se",
+   "start": 33.222,
+   "end": 33.322
+  },
+  {
+   "text": "voit",
+   "start": 33.322,
+   "end": 33.46
+  },
+  {
+   "text": "mal.",
+   "start": 33.46,
+   "end": 33.873
+  },
+  {
+   "text": "Cherche",
+   "start": 34.21,
+   "end": 34.547
+  },
+  {
+   "text": "plutôt",
+   "start": 34.547,
+   "end": 34.81
+  },
+  {
+   "text": "une",
+   "start": 34.81,
+   "end": 34.898
+  },
+  {
+   "text": "zone",
+   "start": 34.898,
+   "end": 35.135
+  },
+  {
+   "text": "plus",
+   "start": 35.135,
+   "end": 35.26
+  },
+  {
+   "text": "foncée,",
+   "start": 35.26,
+   "end": 35.76
+  },
+  {
+   "text": "plus",
+   "start": 36.11,
+   "end": 36.26
+  },
+  {
+   "text": "chaude,",
+   "start": 36.26,
+   "end": 36.623
+  },
+  {
+   "text": "ou",
+   "start": 36.922,
+   "end": 36.947
+  },
+  {
+   "text": "plus",
+   "start": 36.947,
+   "end": 37.123
+  },
+  {
+   "text": "dure",
+   "start": 37.123,
+   "end": 37.31
+  },
+  {
+   "text": "que",
+   "start": 37.31,
+   "end": 37.41
+  },
+  {
+   "text": "la",
+   "start": 37.41,
+   "end": 37.51
+  },
+  {
+   "text": "peau",
+   "start": 37.51,
+   "end": 37.648
+  },
+  {
+   "text": "autour.",
+   "start": 37.648,
+   "end": 38.135
+  },
+  {
+   "text": "Et",
+   "start": 39.138,
+   "end": 39.213
+  },
+  {
+   "text": "si",
+   "start": 39.213,
+   "end": 39.425
+  },
+  {
+   "text": "on",
+   "start": 39.425,
+   "end": 39.475
+  },
+  {
+   "text": "ne",
+   "start": 39.475,
+   "end": 39.55
+  },
+  {
+   "text": "fait",
+   "start": 39.55,
+   "end": 39.688
+  },
+  {
+   "text": "rien ?",
+   "start": 39.688,
+   "end": 40.05
+  },
+  {
+   "text": "L'escarre",
+   "start": 40.4,
+   "end": 40.863
+  },
+  {
+   "text": "s'aggrave,",
+   "start": 40.863,
+   "end": 41.4
+  },
+  {
+   "text": "en",
+   "start": 41.725,
+   "end": 41.763
+  },
+  {
+   "text": "quatre",
+   "start": 41.763,
+   "end": 42.088
+  },
+  {
+   "text": "stades.",
+   "start": 42.088,
+   "end": 42.6
+  },
+  {
+   "text": "On",
+   "start": 42.938,
+   "end": 43.05
+  },
+  {
+   "text": "les",
+   "start": 43.05,
+   "end": 43.15
+  },
+  {
+   "text": "voit",
+   "start": 43.15,
+   "end": 43.363
+  },
+  {
+   "text": "dans",
+   "start": 43.363,
+   "end": 43.45
+  },
+  {
+   "text": "la",
+   "start": 43.45,
+   "end": 43.538
+  },
+  {
+   "text": "prochaine",
+   "start": 43.538,
+   "end": 43.938
+  },
+  {
+   "text": "vidéo !",
+   "start": 43.938,
+   "end": 44.45
+  }
+ ]
+}

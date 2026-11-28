@@ -126,11 +126,6 @@ export const Hook: React.FC = () => {
 				et toi, tu masses ?
 			</Note>
 			<Sfx name="whoosh" at={SAC - 2} volume={0.25} />
-			<Sfx name="blip" at={PEAU} />
-			<Sfx name="blip" at={INTACTE} />
-			<Sfx name="blip-down" at={MAIS} />
-			<Sfx name="blip-down" at={ESC} />
-			<Sfx name="blip" at={MASSES} />
 		</AbsoluteFill>
 	);
 };
@@ -181,9 +176,6 @@ export const Regle: React.FC = () => {
 				on supprime l'appui
 			</Note>
 			<Sfx name="stamp" at={PAS} volume={0.4} />
-			<Sfx name="blip-down" at={PAS + 2} />
-			<Sfx name="blip" at={ZONE} />
-			<Sfx name="blip-up" at={APPUI} />
 		</AbsoluteFill>
 	);
 };
@@ -243,13 +235,6 @@ export const Pression: React.FC = () => {
 			<Note at={PEAU2 - 2} y={NOTE_Y} size={44}>
 				la peau le montre en dernier
 			</Note>
-			<Sfx name="blip" at={0} />
-			<Sfx name="blip" at={SOUS} />
-			<Sfx name="blip" at={POIDS} />
-			<Sfx name="blip-down" at={SANG} />
-			<Sfx name="blip-down" at={OXY} />
-			<Sfx name="blip-down" at={PRES} />
-			<Sfx name="blip" at={PEAU2} />
 		</AbsoluteFill>
 	);
 };
@@ -325,13 +310,6 @@ export const Massage: React.FC = () => {
 			<Note at={GLACONS - 2} y={NOTE_Y} size={44}>
 				ni glaçons, ni air chaud
 			</Note>
-			<Sfx name="blip" at={0} />
-			<Sfx name="blip" at={MASSES} />
-			<Sfx name="blip-down" at={VAISS} />
-			<Sfx name="stamp" at={PROSC} volume={0.3} />
-			<Sfx name="blip-down" at={PROSC + 2} />
-			<Sfx name="blip" at={GLACONS + 4} />
-			<Sfx name="blip" at={CHAUD + 4} />
 		</AbsoluteFill>
 	);
 };
@@ -382,11 +360,6 @@ export const Soulager: React.FC = () => {
 			<Note at={REVIENT - 2} y={NOTE_Y} size={46} tone={LPI.blue}>
 				le sang revient
 			</Note>
-			<Sfx name="blip" at={0} />
-			<Sfx name="blip" at={CHANGE} />
-			<Sfx name="blip" at={MATELAS} />
-			<Sfx name="blip-up" at={REVIENT} />
-			<Sfx name="blip-up" at={RESPIRENT} />
 		</AbsoluteFill>
 	);
 };
@@ -437,9 +410,6 @@ export const Fin: React.FC = () => {
 			<div style={{position: 'absolute', left: 90, top: 1740, opacity: interpolate(frame, [PROCH - 4, PROCH + 4, OUT - 2, OUT + 4], [0, 1, 1, 0], clamp), transform: `translateY(${interpolate(frame, [PROCH - 4, PROCH + 6], [30, 0], ease)}px)`}}>
 				<NextCard>Le test du doigt</NextCard>
 			</div>
-			<Sfx name="blip" at={ROUGEUR} />
-			<Sfx name="blip" at={DOIGT} />
-			<Sfx name="blip-up" at={PROCH} />
 			<Sfx name="whoosh" at={OUT} volume={0.25} />
 		</AbsoluteFill>
 	);

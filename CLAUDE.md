@@ -862,8 +862,10 @@ script), « en France » / « le 15 (ou le numéro d'urgence de ton pays) ». Ca
   lignes d'écran ; `Px` (rect, disk, ring, line, texte Press Start 2P binarisé), `PX` palette, `dither`, `pxBubble`
   (17 caractères max par ligne), `typedAt`, `pxGauge`, `pxArrow`, `pxCross`, `flowPhase`) et `src/brand/pixelplaies.tsx`
   (`pxPatientBed`, `pxSacrumLoupe` : coupe retournée, lésion en cône contre l'os, vaisseaux qui circulent / pincés /
-  éclatent, main, doigt, décharge, matelas à air). Police `public/fonts/PressStart2P-Regular.ttf` (OFL). Bips rétro
-  `blip`, `blip-down`, `blip-up` (`python3 scripts/make-sfx.py --retro`). Pilote : `Escarre-Massage` (n° 105, ≈ 57 s, voix
+  éclatent, main, doigt, décharge, matelas à air). Police `public/fonts/PressStart2P-Regular.ttf` (OFL). **Pas de bruits
+  d'arcade** (demandé : « ce n'est pas notre style ») : les bips rétro ont été retirés du kit ; **on évite les bruitages
+  inutiles** (garder seulement ceux qui collent à une action : whoosh de la plongée, tampon, tic-tac d'un chrono) ;
+  transitions en fondu silencieux (`EpisodeTransition` sans `sfx`). Pilote : `Escarre-Massage` (n° 105, ≈ 57 s, voix
   Laura après validation (1 038 crédits, blancs allongés à 0,8 s), accroche B « la peau a l'air intacte… mais près de l'os » choisie par Claude).
   **v2 sur retour du propriétaire** (« pas mal pour un premier essai », avec un reel « 8bit » de référence : zoomer
   davantage sur ce qui se passe à l'escarre, **oublier tout ce qu'il y a autour**, **afficher les jauges « appui »,
@@ -884,7 +886,17 @@ script), « en France » / « le 15 (ou le numéro d'urgence de ton pays) ». Ca
   (`pxHipClose` : blouse relevée, couverture soulevée par une main gantée, rougeur au point d'appui, l'os deviné en
   pointillés) ; sur « mais », **cercle de scanner** qui part du point d'appui et ouvre la coupe (`pxReveal`) : on entre
   dans le corps, le thème devient sombre. La fin fait le chemin inverse (la coupe se referme, recul sur le plan large).
-  Fond d'`Episode` = `LPI.paper`. Storyboard
+  Fond d'`Episode` = `LPI.paper`.
+- `Escarre-Test-Doigt` (n° 106, Les plaies 2/10, ≈ 46 s, voix gratuite d'abord) : « Une rougeur au sacrum : escarre, ou
+  pas ? Un seul doigt te le dit… en trois secondes. » ; dehors = la peau du bas du dos **vue de dessus** (`pxSkinTop` :
+  colonne, fossettes du sacrum, pli fessier, rougeur, main gantée dont l'index appuie, tache blanche ; peau claire ou
+  foncée `SKIN_TONES`), chrono pixel 3 · 2 · 1 (`pxTimer`) ; 1 le geste (appuyer 3 s, relâcher, regarder) · 2 elle
+  blanchit (scanner → coupe : le doigt chasse le sang des petits vaisseaux, qui revient ; pas encore une escarre, on
+  soulage et on surveille) · 3 elle reste rouge (le sang est sorti des vaisseaux, `leak` près de la peau, le doigt ne le
+  chasse pas : stade 1, peau intacte, tissus touchés) · peau foncée (plus foncée, plus chaude, plus dure) · fin : la
+  lésion s'aggrave stade 1 → 4, prochaine vidéo « les 4 stades » (**ordre de la série : les stades passent en n° 3**,
+  avant le code couleur, pour enchaîner avec le stade 1). Sources : NPIAP 2016, EPUAP-NPIAP-PPPIA 2019, International
+  Guideline (doigt 3 secondes), Belrai, CHUV. Storyboard `docs/lpi/storyboard-escarre-test-doigt.md`. Storyboard
   `docs/lpi/storyboard-escarre-massage.md`. PyAV 19 casse faster-whisper (`metadata_errors`) : `pip install
   --break-system-packages --only-binary=:all: "av>=12,<16"`.
 

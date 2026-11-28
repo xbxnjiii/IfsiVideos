@@ -119,7 +119,8 @@
     "render:organisation-corps-schema": "remotion render Organisation-Corps-Schema out/102-organisation-corps-schema.mp4",
     "render:la-cellule": "remotion render La-Cellule out/103-la-cellule.mp4",
     "render:la-cellule-schema": "remotion render La-Cellule-Schema out/104-la-cellule-schema.mp4",
-    "render:escarre-massage": "remotion render Escarre-Massage out/105-escarre-massage.mp4"
+    "render:escarre-massage": "remotion render Escarre-Massage out/105-escarre-massage.mp4",
+    "render:escarre-test-doigt": "remotion render Escarre-Test-Doigt out/106-escarre-test-doigt.mp4"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.532",
