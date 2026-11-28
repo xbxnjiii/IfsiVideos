@@ -211,6 +211,52 @@ export const PixelScreen: React.FC<{draw: (g: Px, f: number) => void; x?: number
 	);
 };
 
+/**
+ * Écran pixel plein cadre (format « 8bit », sans fenêtre autour) : toile `w` × `h` logiques agrandie × `scale` sans
+ * lissage. `zoom` = poussée de caméra (s ≥ 1) vers le point logique (x, y) : les pixels grossissent, toujours nets.
+ */
+export const PixelFull: React.FC<{draw: (g: Px, f: number) => void; hud?: (g: Px, f: number) => void; w?: number; h?: number; scale?: number; zoom?: {s: number; x: number; y: number}}> = ({draw, hud, w = 180, h = 320, scale = 6, zoom}) => {
+	const frame = useCurrentFrame();
+	const f = px12(frame);
+	const ref = useRef<HTMLCanvasElement>(null);
+	const hudRef = useRef<HTMLCanvasElement>(null);
+	const [handle] = useState(() => delayRender('police pixel'));
+	const released = useRef(false);
+	const [ready, setReady] = useState(false);
+	useEffect(() => {
+		fontReady.then(() => setReady(true));
+	}, []);
+	useLayoutEffect(() => {
+		if (!ready || !ref.current) return;
+		const g = new Px(w, h);
+		g.fill(PX.bg);
+		draw(g, f);
+		ref.current.getContext('2d')!.putImageData(new ImageData(g.data, w, h), 0, 0);
+		if (hudRef.current) {
+			const o = new Px(w, h); // calque transparent, jamais zoomé : bulle, pastilles, compteur, jauges
+			if (hud) hud(o, f);
+			hudRef.current.getContext('2d')!.putImageData(new ImageData(o.data, w, h), 0, 0);
+		}
+		if (!released.current) {
+			released.current = true;
+			continueRender(handle);
+		}
+	});
+	const z = zoom && zoom.s > 1.001 ? zoom : null;
+	return (
+		<div style={{position: 'absolute', left: 0, top: 0, width: w * scale, height: h * scale, overflow: 'hidden', background: PX.bg}}>
+			<canvas
+				ref={ref}
+				width={w}
+				height={h}
+				style={{width: w * scale, height: h * scale, imageRendering: 'pixelated', display: 'block', transformOrigin: z ? `${z.x * scale}px ${z.y * scale}px` : undefined, transform: z ? `scale(${z.s})` : undefined}}
+			/>
+			<canvas ref={hudRef} width={w} height={h} style={{position: 'absolute', left: 0, top: 0, width: w * scale, height: h * scale, imageRendering: 'pixelated'}} />
+			<div style={{position: 'absolute', inset: 0, background: `repeating-linear-gradient(to bottom, transparent 0 ${3 * scale}px, ${alpha(LPI.navy, 0.1)} ${3 * scale}px ${4 * scale}px)`, pointerEvents: 'none'}} />
+		</div>
+	);
+};
+
 /* ───────────────────────────── briques d'interface (HUD) ───────────────────────────── */
 
 /**
@@ -218,16 +264,16 @@ export const PixelScreen: React.FC<{draw: (g: Px, f: number) => void; x?: number
  * 17 caractères max par ligne.
  * `typed` = nombre de caractères visibles (machine à écrire), Infinity = tout.
  */
-export const pxBubble = (g: Px, l1: string, l2: string, typed = Infinity, y = 3) => {
-	g.rect(3, y, 154, 28, PX.panel);
-	g.box(3, y, 154, 28, PX.text);
-	g.box(5, y + 2, 150, 24, PX.line);
+export const pxBubble = (g: Px, l1: string, l2: string, typed = Infinity, y = 3, x = 3) => {
+	g.rect(x, y, 154, 28, PX.panel);
+	g.box(x, y, 154, 28, PX.text);
+	g.box(x + 2, y + 2, 150, 24, PX.line);
 	const n1 = Math.min(l1.length, typed);
 	const n2 = Math.max(0, Math.min(l2.length, typed - l1.length));
-	g.textS(l1.slice(0, n1), 9, y + 6, PX.text);
-	g.textS(l2.slice(0, n2), 9, y + 17, PX.pink);
+	g.textS(l1.slice(0, n1), x + 6, y + 6, PX.text);
+	g.textS(l2.slice(0, n2), x + 6, y + 17, PX.pink);
 	// curseur qui clignote après la question
-	if (typed >= l1.length + l2.length && Math.floor(typed / 6) % 2 === 0) g.rect(9 + l2.length * 8 + 1, y + 17, 6, 8, PX.pink);
+	if (typed >= l1.length + l2.length && Math.floor(typed / 6) % 2 === 0) g.rect(x + 6 + l2.length * 8 + 1, y + 17, 6, 8, PX.pink);
 };
 
 /** Nombre de caractères affichés : machine à écrire à `speed` caractères par image depuis `t0`. */
@@ -247,7 +293,8 @@ export const pxGauge = (g: Px, label: string, x: number, y: number, w: number, v
 	g.box(x, by, w, 7, PX.line);
 	const fill = Math.round((w - 4) * Math.max(0, Math.min(1, v)));
 	const danger = bad === 'high' ? v : 1 - v;
-	if (!(blink && danger > 0.66 && Math.floor(f / 5) % 2 === 1)) g.rect(x + 2, by + 2, fill, 3, pxGaugeTone(danger));
+	const tone = blink && danger > 0.66 && Math.floor(f / 5) % 2 === 1 ? PX.red : pxGaugeTone(danger);
+	g.rect(x + 2, by + 2, fill, 3, tone);
 };
 
 /** Petite flèche pleine (3 à 6 px) : `dir` vers où elle pointe. */
@@ -273,4 +320,52 @@ export const pxCross = (g: Px, x0: number, y0: number, x1: number, y1: number, p
 	};
 	seg(x0, y0, x1, y1, p * 2);
 	seg(x1, y0, x0, y1, p * 2 - 1);
+};
+
+/**
+ * Étiquette avec trait de rappel (comme dans un schéma) : point sur la structure (ax, ay), trait pointillé, texte
+ * sur fond bleu nuit en (tx, ty). `typed` = caractères visibles (machine à écrire) ; le trait se trace d'abord.
+ */
+export const pxLabel = (g: Px, text: string, tx: number, ty: number, ax: number, ay: number, typed = Infinity, tone: string = PX.text) => {
+	if (typed <= 0) return;
+	const w = text.split('\n').reduce((m, l) => Math.max(m, l.length), 0) * 8;
+	const lines = text.split('\n');
+	const ex = ax < tx ? tx - 1 : ax > tx + w ? tx + w : ax;
+	const ey = ay < ty ? ty - 1 : ty + lines.length * 10;
+	const k = Math.min(1, typed / 3);
+	g.line(ax, ay, ax + (ex - ax) * k, ay + (ey - ay) * k, PX.text, true);
+	g.rect(ax - 1, ay - 1, 3, 3, PX.pink);
+	g.set(ax, ay, PX.text);
+	if (typed < 3) return;
+	let left = typed - 3;
+	lines.forEach((l, i) => {
+		const n = Math.max(0, Math.min(l.length, left));
+		left -= l.length;
+		if (n <= 0) return;
+		g.rect(tx - 2, ty - 2 + i * 10, n * 8 + 3, 11, PX.panel);
+		g.textS(l.slice(0, n), tx, ty + i * 10, tone);
+	});
+};
+
+/** Pastille de mode en haut à gauche (triangle « lecture » ou double triangle « accéléré ») + texte. */
+export const pxTag = (g: Px, text: string, fast = false, x = 4, y = 4) => {
+	const w = text.length * 8 + (fast ? 22 : 16);
+	g.rect(x, y, w, 14, PX.panel);
+	g.box(x, y, w, 14, PX.line);
+	const tri = (ox: number) => {
+		for (let i = 0; i < 4; i++) g.rect(ox + i, y + 3 + i, 1, 8 - 2 * i, PX.pink);
+	};
+	tri(x + 4);
+	if (fast) tri(x + 9);
+	g.textS(text, x + (fast ? 16 : 11), y + 3, PX.text);
+};
+
+/** Compteur « n/N » en haut à droite (police 16), qui rebondit d'un pixel quand il change. */
+export const pxCounter = (g: Px, n: number, total: number, bump = false, right = 176, y = 4) => {
+	const t = `${n}/${total}`;
+	const w = t.length * 16 + 8;
+	const dy = bump ? -1 : 0;
+	g.rect(right - w, y + dy, w, 22, n >= total ? PX.blue : PX.panel);
+	g.box(right - w, y + dy, w, 22, PX.text);
+	g.textS(t, right - w + 4, y + 3 + dy, PX.text, 16);
 };

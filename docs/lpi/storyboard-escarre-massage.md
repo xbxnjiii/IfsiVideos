@@ -1,4 +1,9 @@
-# Storyboard — « Escarre : tu masses ? » (n° 105, Les plaies 1/10, fenêtre pixel)
+# Storyboard — « Escarre : tu masses ? » (n° 105, Les plaies 1/10, pixel plein cadre)
+
+**v2 (retour du propriétaire)** : tout l'écran en pixel, plan large serré puis poussée de caméra jusqu'à la coupe au
+sacrum en très gros plan ; jauges affichées seulement quand la voix les nomme ; étiquettes à trait de rappel ; la fin
+recule sur le plan large (boucle). Le tableau ci-dessous garde le déroulé (voix inchangée) ; la colonne « cadre »
+décrit la v1 (fenêtre au centre d'un cadre), remplacée par la pastille de mode et le compteur pixel.
 
 Pilote du format « écran 8-bit » (kit de l'agent d'analyse Instagram, revu par Claude le 28/11/2026). Cadre habituel
 (fond bleu clair, titre, compteur 0/3, mascotte normale), fenêtre pixel 160 × 160 × 6 au centre (`src/brand/pixel.tsx`,

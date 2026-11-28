@@ -763,21 +763,31 @@ Fenêtre « console 8-bit » (série « Les plaies » en pixel art, kit de l'age
 - `px12` — Quantifie une image à 12 i/s (vidéo à 30 i/s : un pas toutes les 2,5 images).
 - `flowPhase` — Intègre une vitesse (0 → 1 par image à 12 i/s) jusqu'à `f` : phase d'un flux (sang qui circule) sans saut.
 - `PixelScreen` — Fenêtre pixel posée dans le reel : cadre bleu nuit arrondi façon console, toile × 6 sans lissage, lignes d'écran.
+- `PixelFull` — Écran pixel plein cadre (format « 8bit », sans fenêtre autour) : toile `w` × `h` logiques agrandie × `scale` sans lissage.
 - `pxBubble` — Bulle de dialogue rétro en haut de la fenêtre (y 3 → 31) : ligne 1 en blanc, ligne 2 (la question) en rose, 17 caractères max par ligne.
 - `typedAt` — Nombre de caractères affichés : machine à écrire à `speed` caractères par image depuis `t0`.
 - `pxGaugeTone` — Couleur d'une jauge selon la gravité (0 = normal, 1 = danger) : bleu → bleu clair → rose.
 - `pxGauge` — Jauge horizontale avec étiquette au-dessus.
 - `pxArrow` — Petite flèche pleine (3 à 6 px) : `dir` vers où elle pointe.
 - `pxCross` — Grosse croix rose (3 px d'épaisseur) : geste à proscrire.
+- `pxLabel` — Étiquette avec trait de rappel (comme dans un schéma) : point sur la structure (ax, ay), trait pointillé, texte sur fond bleu nuit en (tx, ty).
+- `pxTag` — Pastille de mode en haut à gauche (triangle « lecture » ou double triangle « accéléré ») + texte.
+- `pxCounter` — Compteur « n/N » en haut à droite (police 16), qui rebondit d'un pixel quand il change.
 
 ## `pixelplaies.tsx`
-Scènes pixel de la série « Les plaies » (fenêtre 160 × 160 de pixel.tsx) : patient allongé sur son lit, loupe reliée au sacrum, coupe de la peau RETOURNÉE (patient sur le dos : l'os en haut, la peau en bas contre le matelas). Exactitude : l'escarre commence en profondeur, à l'interface os / muscle, en cône dont la base est contre l'os et la pointe vers la peau ; la peau ne montre une rougeur qu'ensuite (NPIAP : « deep tissue pressure injury », pression et cisaillement à l'interface os-muscle). Jamais de photo de plaie : la lésion est un aplat tramé violacé.
+Scènes pixel plein cadre de la série « Les plaies » (toile 180 × 320 de pixel.tsx, × 6 = 1080 × 1920), dans l'esprit des comptes « 8bit » demandé par le propriétaire : on oublie tout autour et on plonge en très gros plan sur ce qui se passe. Deux plans : - `pxBedScene` : la situation (patient allongé dans sa chambre, réticule sur le sacrum) ; - `pxSacrumSection` : la coupe au sacrum, RETOURNÉE (patient sur le dos : l'os en haut, la peau en bas contre le matelas), dessinée pixel par pixel : os spongieux, muscle en fibres, graisse en lobules, derme, épiderme, vaisseaux où les globules rouges avancent, oxygène qui diffuse, lésion profonde en cône contre l'os, rougeur, cisaillement sous la main qui frotte, sang qui fuit des petits vaisseaux abîmés, décharge (le matelas s'éloigne), matelas à air. Exactitude : l'escarre commence en profondeur à l'interface os / muscle (NPIAP, lésion des tissus profonds) et la peau ne montre qu'ensuite une rougeur. Jamais de photo de plaie : aplats tramés stylisés.
 
-- `SacrumState` — État de la scène « escarre au sacrum » : chaque champ va de 0 à 1 sauf mention.
-- `SACRUM_DEFAULT`
-- `pxPatientBed` — Patient sur le dos, de profil, sur son lit ; `lift` le tourne sur le côté calé par un coussin.
-- `LOUPE` — Patient sur le dos, de profil, sur son lit ; `lift` le tourne sur le côté calé par un coussin.
-- `pxSacrumLoupe` — Coupe de la peau au sacrum, patient sur le dos : os (proéminence du sacrum) en haut, muscle, graisse, derme avec ses petits vaisseaux (artères rouges / veines bleues), épiderme, puis le matelas (ou la main, ou le vide si on décharge).
+- `PX_REAL` — Couleurs « mise en situation » (vraies couleurs) en plus de la palette de la fenêtre.
+- `BED_SACRUM` — Point du sacrum dans le plan large (pour le réticule et la poussée de caméra).
+- `pxBedScene` — Plan large serré : patient allongé sur le dos, de profil, de la tête aux genoux, dans sa chambre (la caméra est proche : on voit surtout le corps contre le matelas).
+- `SectionState` — Plan large serré : patient allongé sur le dos, de profil, de la tête aux genoux, dans sa chambre (la caméra est proche : on voit surtout le corps contre le matelas).
+- `SECTION_DEFAULT`
+- `SEC` — Centre de la proéminence osseuse (sacrum) et repères de la coupe.
+- `secBone` — Repères pour poser les étiquettes : bas de l'os, surface de la peau, et y d'une profondeur d (0 = os, 1 = peau).
+- `secSurface`
+- `secY`
+- `SEC_D` — Profondeurs des couches et des vaisseaux.
+- `pxSacrumSection`
 
 ## `precautions.tsx`
 Précautions standard : équipements à « enfiler » sur le `Patient` (masque, lunettes, tablier ; même repère 400 × 560), gouttelettes de toux, objets du soin (seringue + capuchon, bassin, douchette, spray, sac de linge, mouchoir + poubelle, montre, bague), icônes des 6 réflexes et leur suivi. Couleurs de la marque uniquement.

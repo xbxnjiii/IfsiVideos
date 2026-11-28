@@ -864,7 +864,18 @@ script), « en France » / « le 15 (ou le numéro d'urgence de ton pays) ». Ca
   (`pxPatientBed`, `pxSacrumLoupe` : coupe retournée, lésion en cône contre l'os, vaisseaux qui circulent / pincés /
   éclatent, main, doigt, décharge, matelas à air). Police `public/fonts/PressStart2P-Regular.ttf` (OFL). Bips rétro
   `blip`, `blip-down`, `blip-up` (`python3 scripts/make-sfx.py --retro`). Pilote : `Escarre-Massage` (n° 105, ≈ 55 s, voix
-  gratuite, accroche B « la peau a l'air intacte… mais près de l'os » choisie par Claude). Storyboard
+  gratuite, accroche B « la peau a l'air intacte… mais près de l'os » choisie par Claude).
+  **v2 sur retour du propriétaire** (« pas mal pour un premier essai », avec un reel « 8bit » de référence : zoomer
+  davantage sur ce qui se passe à l'escarre, **oublier tout ce qu'il y a autour**, **afficher les jauges « appui »,
+  « sang »… au moment où on en parle**) : plus de fenêtre ni de titre, **tout l'écran est en pixel** (`PixelFull`,
+  180 × 320 × 6, calque `hud` jamais zoomé pour la bulle, les pastilles et le compteur) ; plan large serré (patient au
+  lit, réticule qui pulse sur le sacrum, `pxBedScene`) puis **poussée de caméra** jusqu'à la coupe au sacrum en très gros
+  plan (`pxSacrumSection` : os spongieux et graisse en cellules de Voronoï, muscle en fibres, globules qui avancent dans
+  les vaisseaux, oxygène qui diffuse, vaisseaux écrasés, cisaillement sous la main, sang qui fuit, matelas à air) ;
+  étiquettes à trait de rappel au mot (`pxLabel`), pastille de mode (`pxTag`, 12 caractères max), compteur pixel
+  (`pxCounter`), jauges qui n'apparaissent qu'au mot qui les nomme ; transitions = fondu (même monde d'une scène à
+  l'autre) ; mascotte en haut à gauche sur l'os ; phrase clé de la marque en bas ; la fin recule sur le plan large de
+  l'image 0 (boucle). Storyboard
   `docs/lpi/storyboard-escarre-massage.md`. PyAV 19 casse faster-whisper (`metadata_errors`) : `pip install
   --break-system-packages --only-binary=:all: "av>=12,<16"`.
 
