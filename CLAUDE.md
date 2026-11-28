@@ -863,8 +863,8 @@ script), « en France » / « le 15 (ou le numéro d'urgence de ton pays) ». Ca
   (17 caractères max par ligne), `typedAt`, `pxGauge`, `pxArrow`, `pxCross`, `flowPhase`) et `src/brand/pixelplaies.tsx`
   (`pxPatientBed`, `pxSacrumLoupe` : coupe retournée, lésion en cône contre l'os, vaisseaux qui circulent / pincés /
   éclatent, main, doigt, décharge, matelas à air). Police `public/fonts/PressStart2P-Regular.ttf` (OFL). Bips rétro
-  `blip`, `blip-down`, `blip-up` (`python3 scripts/make-sfx.py --retro`). Pilote : `Escarre-Massage` (n° 105, ≈ 55 s, voix
-  gratuite, accroche B « la peau a l'air intacte… mais près de l'os » choisie par Claude).
+  `blip`, `blip-down`, `blip-up` (`python3 scripts/make-sfx.py --retro`). Pilote : `Escarre-Massage` (n° 105, ≈ 57 s, voix
+  Laura après validation (1 038 crédits, blancs allongés à 0,8 s), accroche B « la peau a l'air intacte… mais près de l'os » choisie par Claude).
   **v2 sur retour du propriétaire** (« pas mal pour un premier essai », avec un reel « 8bit » de référence : zoomer
   davantage sur ce qui se passe à l'escarre, **oublier tout ce qu'il y a autour**, **afficher les jauges « appui »,
   « sang »… au moment où on en parle**) : plus de fenêtre ni de titre, **tout l'écran est en pixel** (`PixelFull`,
